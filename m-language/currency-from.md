@@ -1,0 +1,47 @@
+---
+title: "Currency.From | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/28/2017"
+ms.prod: "powerbi"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "mlang"
+ms.tgt_pltfrm: ""
+ms.topic: "language-reference"
+ms.assetid: fc763c26-9989-46fb-ae7c-6fd367d5cf9e
+caps.latest.revision: 5
+author: "Minewiskan"
+ms.author: "owend"
+manager: "erikre"
+---
+# Currency.From
+This topic applies to the Power Query Formula Language which can be used with [Power Query](https://support.office.com/article/Introduction-to-Microsoft-Power-Query-for-Excel-6E92E2F4-2079-4E1F-BAD5-89F6269CD605) and [Power BI Desktop](http://go.microsoft.com/fwlink/p/?LinkId=618607) to build queries that mashup data. See the list of [function categories](https://msdn.microsoft.com/en-us/library/mt211003.aspx).  
+  
+## About  
+Returns a currency value from the given value.  
+  
+```  
+Currency.From(value as any, optional culture as nullable text, optional roundingMode as nullable number) as nullable number  
+```  
+  
+## Arguments  
+  
+|Argument|Description|  
+|------------|---------------|  
+|value|Value to convert.|  
+|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](http://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
+|optional roundingMode|Specifies rounding direction when there is a tie between the possible numbers to round to.|  
+  
+## Remarks  
+If a value is null, Currency.From returns null.  If a value is a number within range of currency, the fractional part of the value is rounded to 4 decimal digits and returned. The valid range for currency is -922,337,203,685,477.5808 to 922,337,203,685,477.5807. If value is of any other type or out of the range, an error is returned. See Number.FromText for converting it to a number value, then convert from a number to a 64-bit integer. See Number.Round for the available rounding modes, the default is RoundingMode.ToEven.  
+  
+## Examples  
+  
+```  
+Currency.From("1.23455") equals 1.2346  
+```  
+  
+```  
+Currency.From("1.23455", "en-Us", RoundingMode.Down) equals 1.2345  
+```  

@@ -1,0 +1,69 @@
+---
+title: "COUNTX Function (DAX) | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/28/2017"
+ms.prod: "powerbi"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "analysis-services"
+  - "daxlang"
+ms.tgt_pltfrm: ""
+ms.topic: "language-reference"
+f1_keywords: 
+  - "sql13.as.daxref.COUNTX.f1"
+helpviewer_keywords: 
+  - "COUNTX function"
+ms.assetid: 6a08a5df-fbef-4740-8a3f-56ca53a6b235
+caps.latest.revision: 5
+author: "Minewiskan"
+ms.author: "owend"
+manager: "mblythe"
+---
+# COUNTX Function (DAX)
+Counts the number of rows that contain a number or an expression that evaluates to a number, when evaluating an expression over a table.  
+  
+## Syntax  
+  
+```  
+COUNTX(<table>,<expression>)  
+```  
+  
+#### Parameters  
+  
+|Term|Definition|  
+|--------|--------------|  
+|**table**|The table containing the rows to be counted.|  
+|**expression**|An expression that returns the set of values that contains the values you want to count.|  
+  
+## Return Value  
+An integer.  
+  
+## Remarks  
+The COUNTX function takes two arguments. The first argument must always be a table, or any expression that returns a table. The second argument is the column or expression that is searched by COUNTX.  
+  
+The COUNTX function counts only numeric values, dates, or strings. Arguments that are logical values or text that cannot be translated into numbers are not counted. If the function finds no rows to count, it returns a blank.  When there are rows, but none meets the specified criteria, then the function returns 0.  
+  
+If you want to count logical values, or text, use the COUNTA or COUNTAX functions.  
+  
+## Example  
+The following formula returns a count of all rows in the Product table that have a list price.  
+  
+```  
+=COUNTX(Product,[ListPrice])  
+```  
+  
+## Example  
+The following formula illustrates how to pass a filtered table to COUNTX for the first argument. The formula uses a filter expression to get only the rows in the Product table that meet the condition, ProductSubCategory = "Caps", and then counts the rows in the resulting table that have a list price. The FILTER expression applies to the table Products but uses a value that you look up in the related table, ProductSubCategory.  
+  
+```  
+=COUNTX(FILTER(Product,RELATED(ProductSubcategory[EnglishProductSubcategoryName])="Caps", Product[ListPrice])  
+```  
+  
+## See Also  
+[COUNT Function &#40;DAX&#41;](../DAX/count-function-dax.md)  
+[COUNTA Function &#40;DAX&#41;](../DAX/counta-function-dax.md)  
+[COUNTAX Function &#40;DAX&#41;](../DAX/countax-function-dax.md)  
+[COUNTX Function &#40;DAX&#41;](../DAX/countx-function-dax.md)  
+[Statistical Functions &#40;DAX&#41;](../DAX/statistical-functions-dax.md)  
+  

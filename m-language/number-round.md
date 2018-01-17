@@ -1,0 +1,86 @@
+---
+title: "Number.Round | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/28/2017"
+ms.prod: "powerbi"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "mlang"
+ms.tgt_pltfrm: ""
+ms.topic: "language-reference"
+ms.assetid: 5779200b-0804-4f49-9da0-b133734d1e2a
+caps.latest.revision: 7
+author: "Minewiskan"
+ms.author: "owend"
+manager: "erikre"
+---
+# Number.Round
+This topic applies to the Power Query Formula Language which can be used with [Power Query](https://support.office.com/article/Introduction-to-Microsoft-Power-Query-for-Excel-6E92E2F4-2079-4E1F-BAD5-89F6269CD605) and [Power BI Desktop](http://go.microsoft.com/fwlink/p/?LinkId=618607) to build queries that mashup data. See the list of [function categories](https://msdn.microsoft.com/en-us/library/mt211003.aspx).  
+  
+## About  
+Returns a nullable number (n) if value is an integer.  
+  
+```  
+Number.Round(value as nullable number, digits as nullable number,  roundingMode as nullable number) as nullable number  
+```  
+  
+## Arguments  
+  
+|Argument|Description|  
+|------------|---------------|  
+|value|Integer value to round.|  
+|digits|Fractional part is rounded by digits.|  
+|roundingMode|Specifies rounding direction when there is a tie between the possible numbers to round to. For Example, when the last digit of the number being rounded is 5 such as. 1.5 or 2.345.|  
+  
+## <a name="__toc360788733"></a>Settings  
+  
+|Rounding mode|Description|  
+|-----------------|---------------|  
+|RoundingMode.Up = 0|Adds 5e-n to the number being rounded, where n is the number of fractional digits in the number.|  
+|RoundingMode.Down = 1|Subtracts 5e-n from the number being rounded, where n is the number of fractional digits in the number.|  
+|RoundingMode.AwayFromZero = 2|The same as **RoundingMode.Up** when the number being rounded is positive; otherwise, the same as<br /><br />**RoundingMode.Down**.|  
+|RoundingMode.TowardZero = 3|The same as **RoundingMode.Down** when the number being rounded is positive; otherwise, the same as **RoundingMode.Up**.|  
+|RoundingMode.ToEven = 4|Applies **RoundingMode.Up** or<br /><br />**RoundingMode.Down** to round the last digit to even.|  
+  
+## Remarks  
+  
+-   If **value** &gt;= 0, returns n with the fractional part rounded by **digits** using **roundingMode.**  
+  
+-   if **value** &lt; 0, it returns the integral part of n rounded to m-n decimal digits, using **roundingMode**, where m is the number of digits of n.  
+  
+-   If **roundingMode** is not specified, **RoundingMode.ToEven** is used.  
+  
+## Examples  
+  
+```  
+Number.Round(-1.249, 2) equals -1.25  
+```  
+  
+```  
+Number.Round(-1.245, 2) equals -1.24  
+```  
+  
+```  
+Number.Round(1.245, 2, RoundingMode.Up) equals 1.25  
+```  
+  
+```  
+Number.Round(1.245, 2, RoundingMode.Down) equals 1.24  
+```  
+  
+```  
+Number.Round(1.245, 2, RoundingMode.AwayFromZero) equals 1.25  
+```  
+  
+```  
+Number.Round(1.245, 2, RoundingMode.TowardZero) equals 1.24  
+```  
+  
+```  
+Number.Round(1.245, 2, RoundingMode.ToEven) equals 1.24  
+```  
+  
+```  
+Number.Round(-1.245, 2, RoundingMode.ToEven) equals -1.24  
+```  
