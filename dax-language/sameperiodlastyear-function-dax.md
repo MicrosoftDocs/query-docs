@@ -1,0 +1,74 @@
+---
+title: "SAMEPERIODLASTYEAR Function (DAX) | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/28/2017"
+ms.prod: "powerbi"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "analysis-services"
+  - "daxlang"
+ms.tgt_pltfrm: ""
+ms.topic: "language-reference"
+f1_keywords: 
+  - "sql13.as.daxref.SAMEPERIODLASTYEAR.f1"
+helpviewer_keywords: 
+  - "SAMEPERIODLASTYEAR function"
+ms.assetid: f5794021-8ca8-438e-b323-d9c2aaf3dc31
+caps.latest.revision: 7
+author: "Minewiskan"
+ms.author: "owend"
+manager: "mblythe"
+---
+# SAMEPERIODLASTYEAR Function (DAX)
+Returns a table that contains a column of dates shifted one year back in time from the dates in the specified **dates** column, in the current context.  
+  
+## Syntax  
+  
+```  
+SAMEPERIODLASTYEAR(<dates>)  
+```  
+  
+#### Parameters  
+  
+|||  
+|-|-|  
+|Term|Definition|  
+|**dates**|A column containing dates.|  
+  
+## Property Value/Return Value  
+A single-column table of date values.  
+  
+## Remarks  
+The **dates** argument can be any of the following:  
+  
+-   A reference to a date/time column,  
+  
+-   A table expression that returns a single column of date/time values,  
+  
+-   A Boolean expression that defines a single-column table of date/time values.  
+  
+> [!NOTE]  
+> Constraints on Boolean expressions are described in the topic, [CALCULATE Function &#40;DAX&#41;](../DAX/calculate-function-dax.md).  
+  
+The dates returned are the same as the dates returned by this equivalent formula:  
+  
+`DATEADD(dates, -1, year)`  
+  
+This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [http://go.microsoft.com/fwlink/?LinkId=219172](http://go.microsoft.com/fwlink/?LinkId=219172).  
+  
+## Example  
+The following sample formula creates a measure that calculates the previous year sales of the Reseller sales.  
+  
+To see how this works, create a PivotTable and add the fields, CalendarYear to the **Row Labels** area of the PivotTable. Then add a measure, named **Previous Year Sales**, using the formula defined in the code section, to the **Values** area of the PivotTable.  
+  
+```  
+=CALCULATE(SUM(ResellerSales_USD[SalesAmount_USD]), SAMEPERIODLASTYEAR(DateTime[DateKey]))  
+```  
+  
+## See Also  
+[Time Intelligence Functions &#40;DAX&#41;](../DAX/time-intelligence-functions-dax.md)  
+[Date and Time Functions &#40;DAX&#41;](../DAX/date-and-time-functions-dax.md)  
+[PREVIOUSYEAR Function &#40;DAX&#41;](../DAX/previousyear-function-dax.md)  
+[PARALLELPERIOD Function &#40;DAX&#41;](../DAX/parallelperiod-function-dax.md)  
+  
