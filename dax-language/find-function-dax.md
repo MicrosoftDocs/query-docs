@@ -33,7 +33,7 @@ FIND(<find_text>, <within_text>[, [<start_num>][, <NotFoundValue>]])
   
 |Term|Definition|  
 |--------|--------------|  
-|**find_text**|The text you want to find. Use double quotes (empty text) to match the first character in **within_text**.<br /><br />You can use wildcard characters — the question mark (?) and asterisk (\*) — in **find_text**. A question mark matches any single character; an asterisk matches any sequence of characters. If you want to find an actual question mark or asterisk, type a tilde (~) before the character.|  
+|**find_text**|The text you want to find. Use double quotes (empty text) to match the first character in **within_text**. |
 |**within_text**|The text containing the text you want to find.|  
 |**start_num**|(optional) The character at which to start the search; if omitted, **start_num** = 1. The first character in **within_text** is character number 1.|  
 |**NotFoundValue**|(optional) The value that should be returned when the operation does not find a matching substring, typically 0, -1, or BLANK().|  
@@ -45,6 +45,8 @@ Number that shows the starting point of the text string you want to find.
 Whereas Microsoft Excel has multiple versions of the FIND function to accommodate single-byte character set (SBCS) and double-byte character set (DBCS) languages, DAX uses Unicode and counts each character the same way; therefore, you do not need to use a different version depending on the character type.  
   
 This DAX function may return different results when used in a model that is deployed and then queried in DirectQuery mode. For more information about semantic differences in DirectQuery mode, see [http://go.microsoft.com/fwlink/?LinkId=219171](http://go.microsoft.com/fwlink/?LinkId=219171).  
+
+FIND does not support wildcards. To use wildcards, use [SEARCH](SEARCH%20Function%20\(DAX\).md).
   
 ## Example  
 The following formula finds the position of the first letter of the product designation, BMX, in the string that contains the product description.  
