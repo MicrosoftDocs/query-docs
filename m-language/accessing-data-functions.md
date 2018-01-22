@@ -16,7 +16,7 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # Accessing data functions
-[!INCLUDE[mIntroText](../includes/mintrotext-md.md)]  
+ 
   
 ## <a name="__toc360789771"></a>Accessing data  
 Functions in this section access data and return table values. Most of these functions return a table value that is called a **navigation table**. A **navigation table** is a two column table. The first column contains the name of an item and the corresponding second column contains the value of that item. This shape is primarily used by the Power Query user interface to provide navigation experience over the potentially large hierarchical data returned.  

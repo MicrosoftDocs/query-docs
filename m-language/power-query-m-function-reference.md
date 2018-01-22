@@ -20,11 +20,9 @@ The Power Query M formula language includes the following function categories.
 ## In this section
 
 * [Accessing data functions](accessing-data-functions.md)
-* [Action functions](Action-functions.md)
 * [Binary functions](binary-functions.md)
 * [Combiner functions](combiner-functions.md)
 * [Comparer functions](comparer-functions.md)     
-* [Compression functions](Compression-functions.md)
 * [Date functions](date-functions.md)  
 * [DateTime functions](datetime-functions.md)
 * [DateTimeZone functions](datetimezone-functions.md)  

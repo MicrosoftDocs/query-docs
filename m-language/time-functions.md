@@ -16,7 +16,7 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # Time functions
-[!INCLUDE[mIntroText](../includes/mintrotext-md.md)]  
+ 
   
 ## <a name="__toc348013456"></a>Time  
   

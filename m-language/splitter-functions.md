@@ -16,7 +16,7 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # Splitter functions
-[!INCLUDE[mIntroText](../includes/mintrotext-md.md)]  
+ 
   
 ## <a name="__toc360789908"></a>Splitter  
   

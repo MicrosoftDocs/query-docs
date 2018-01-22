@@ -16,7 +16,7 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # Type functions
-[!INCLUDE[mIntroText](../includes/mintrotext-md.md)]  
+ 
   
 ## <a name="__toc360789953"></a>Type  
   

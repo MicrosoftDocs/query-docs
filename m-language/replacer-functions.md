@@ -16,7 +16,7 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # Replacer functions
-[!INCLUDE[mIntroText](../includes/mintrotext-md.md)]  
+ 
   
 Replacer functions are used by other functions in the library to replace a given value in a structure.  
   

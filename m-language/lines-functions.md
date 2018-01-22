@@ -16,7 +16,7 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # Lines functions
-[!INCLUDE[mIntroText](../includes/mintrotext-md.md)]  
+ 
   
 ##  <a name="__toc360789866"></a> Lines  
   

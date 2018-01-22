@@ -16,7 +16,7 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # Number functions
-[!INCLUDE[mIntroText](../includes/mintrotext-md.md)]  
+ 
   
 ## Number  
   

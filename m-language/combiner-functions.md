@@ -16,7 +16,7 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # Combiner functions
-[!INCLUDE[mIntroText](../includes/mintrotext-md.md)]  
+ 
   
 Combiner functions are used by other library functions that merge values, such as Table.ToList and Table.CombineColumns. The function is applied to each row in the table to produce a single value for each row.  
   

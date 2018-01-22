@@ -16,7 +16,7 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # Error handling
-[!INCLUDE[mIntroText](../includes/mintrotext-md.md)]  
+ 
   
 ## <a name="__toc360789892"></a>Error  
   

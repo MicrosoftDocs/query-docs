@@ -16,7 +16,7 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # Expression functions
-[!INCLUDE[mIntroText](../includes/mintrotext-md.md)]  
+ 
   
 ## <a name="__toc360789877"></a>Expression  
   

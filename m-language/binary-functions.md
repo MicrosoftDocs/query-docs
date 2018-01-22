@@ -16,7 +16,7 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # Binary functions
-[!INCLUDE[mIntroText](../includes/mintrotext-md.md)]  
+ 
   
 ## <a name="__toc362450785"></a>Binary Formats  
   

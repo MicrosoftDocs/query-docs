@@ -16,7 +16,7 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # Comparer functions
-[!INCLUDE[mIntroText](../includes/mintrotext-md.md)]  
+ 
   
 ## <a name="__toc360789896"></a>Comparer  
   

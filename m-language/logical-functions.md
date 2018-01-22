@@ -16,7 +16,7 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # Logical functions
-[!INCLUDE[mIntroText](../includes/mintrotext-md.md)]  
+ 
   
 ## <a name="__toc360788924"></a>Logical  
   

@@ -16,7 +16,7 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # DateTimeZone functions
-[!INCLUDE[mIntroText](../includes/mintrotext-md.md)]  
+ 
   
 ## <a name="__toc360789069"></a>DateTimeZone  
   

@@ -16,7 +16,7 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # Function values
-[!INCLUDE[mIntroText](../includes/mintrotext-md.md)]  
+ 
   
 ## <a name="__toc360789887"></a>Function  
   

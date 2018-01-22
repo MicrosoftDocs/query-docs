@@ -16,7 +16,7 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # Uri functions
-[!INCLUDE[mIntroText](../includes/mintrotext-md.md)]  
+ 
   
 ## <a name="__toc360789843"></a>Uri  
   
