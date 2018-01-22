@@ -90,7 +90,6 @@ in
   
 ## See Also  
 [Expressions, values, and let expression](expressions-values-and-let-expression.md)  
-[Functions](Functions.md)  
 [Operators](operators.md)  
 [Type conversion](type-conversion.md)  
   
