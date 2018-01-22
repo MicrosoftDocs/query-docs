@@ -1,0 +1,79 @@
+---
+title: "Errors | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-18"
+ms.prod: "powerbi"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "mlang"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+ms.assetid: bcb7d7ed-9ce4-4c0e-af1c-19af8b161bfe
+caps.latest.revision: 7
+author: "Minewiskan"
+ms.author: "owend"
+manager: "kfile"
+---
+# Errors
+An **error** in Power Query M formula language is an indication that the process of evaluating an expression could not produce a value. Errors are raised by operators and functions encountering **error** conditions or by using the **error** expression. Errors are handled using the **try** expression. When an error is raised, a value is specified that can be used to indicate why the error occurred.  
+  
+## Try expression  
+A try expression converts values and errors into a record value that indicates whether the try expression handled an error, or not, and either the proper value or the error record it extracted when handling the error. For example, consider the following expression that raises an error and then handles it right away:  
+  
+```  
+try error "negative unit count"  
+```  
+This expression evaluates to the following nested record value, explaining the `[HasError], [Error]`, and `[Message]` field lookups in the unit-price example before.  
+  
+## Error record  
+  
+```  
+[  
+    HasError = true,  
+    Error =  
+        [  
+            Reason = "Expression.Error",  
+            Message = "negative unit count",  
+            Detail = null  
+        ]  
+]  
+```  
+A common case is to replace errors with default values. The try expression can be used with an optional otherwise clause to achieve just that in a compact form:  
+  
+```  
+try error "negative unit count" otherwise 42   
+// equals 42  
+```  
+  
+## Error example  
+  
+```  
+let Sales =  
+        [  
+        ProductName = "Fishing rod",   
+            Revenue = 2000,  
+            Units = 1000,  
+            UnitPrice = if Units = 0 then error "No Units"  
+                    else Revenue / Units  
+        ],  
+  
+    //Get UnitPrice from Sales record  
+        textUnitPrice = try Number.ToText(Sales[UnitPrice]),  
+    Label = "Unit Price: " &   
+        (if textUnitPrice[HasError] then textUnitPrice[Error][Message]  
+        //Continue expression flow   
+            else textUnitPrice[Value])  
+in  
+    Label  
+```  
+The above example accesses the `Sales[UnitPrice]` field and formats the value producing the result:  
+  
+```  
+"Unit Price: 2"  
+```  
+If the Units field had been zero, then the `UnitPrice` field would have raised an error which would have been handled by the try. The resulting value would then have been:  
+  
+```  
+"No Units"  
+```  
