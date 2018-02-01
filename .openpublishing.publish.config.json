@@ -1,22 +1,6 @@
 {
   "docsets_to_publish": [
     {
-      "docset_name": "dax-language",
-      "build_source_folder": "dax-language",
-      "build_output_subfolder": "dax-language",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "query-languages",
       "build_source_folder": "query-languages",
       "build_output_subfolder": "query-languages",
