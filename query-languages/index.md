@@ -1,6 +1,6 @@
 # Query and data modeling languages
 
-## DAX - Data Analysis Expressions
+## Data Analysis Expressions (DAX)
 Data Analysis Expressions (DAX) is a library of functions and operators that can be combined to build formulas and expressions in Microsoft SQL Server Analysis Services, Power Pivot in Excel, and Power BI Desktop.
 To learn more, see [DAX Reference](dax-language/data-analysis-expressions-dax-reference.md).
 
