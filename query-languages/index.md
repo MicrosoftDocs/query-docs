@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "DAX, Table queries"
 ms.assetid: c6b486ec-d258-44dd-a40e-b2b48361855a
 caps.latest.revision: 13
-author: ""
+author: "Minewiskan"
 ms.author: "owend"
 manager: "kfile"
 ---
