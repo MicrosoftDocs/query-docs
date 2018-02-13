@@ -18,7 +18,7 @@ helpviewer_keywords:
 ms.assetid: a7e0ab71-d83e-4463-bc77-9eb5dd73c6fc
 caps.latest.revision: 11
 author: "Minewiskan"
-ms.author: "owend"
+ms.author: ""
 manager: "kfile"
 ---
 # ALL Function (DAX)
