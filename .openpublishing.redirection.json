@@ -1,0 +1,14 @@
+{ 
+  "redirections": [ 
+    {
+       "source_path": "query-languages/dax/index.md",
+       "redirect_url": "query-bi/dax/data-analysis-expressions-dax-reference",
+       "redirect_document_id": true
+    },
+    {
+        "source_path": "query-languages/m/index.md",
+        "redirect_url": "power-query-m-reference",
+        "redirect_document_id": true
+     }
+  ] 
+} 
