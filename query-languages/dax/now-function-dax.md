@@ -35,8 +35,7 @@ NOW()
 A date (**datetime)**.  
   
 ## Remarks  
-In contrast to Microsoft Excel, which stores dates and times as serial numbers, DAX uses a **datetime** format to work with dates. Dates that are not in this format are implicitly converted when you use dates and times in a formula.  
-  
+
 The result of the NOW function changes only when the column that contains the formula is refreshed. It is not updated continuously.  
   
 The TODAY function returns the same date but is not precise with regard to time; the time returned is always 12:00:00 AM and only the date is updated.  
@@ -49,6 +48,6 @@ The following example returns the current date and time plus 3.5 days:
 ```  
   
 ## See Also  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+[UTCNOW Function](utcnow-function-dax.md)   
 [TODAY Function &#40;DAX&#41;](today-function-dax.md)  
   

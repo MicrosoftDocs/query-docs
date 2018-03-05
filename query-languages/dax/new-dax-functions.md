@@ -1,7 +1,7 @@
 ---
 title: "New DAX Functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/28/2017"
+ms.date: "03/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,34 +19,17 @@ DAX is continuously being improved with new functions and functionality to suppo
 
   
  ## New 
- The following functions (or functionality) have been added in 2017. 
+ The following functions (or functionality) have been added in 2018. 
  
- [ERROR Function](error-function.md)
-  
- [GENERATESERIES Function](generateseries-function.md)
- 
- [IN Operator / CONTAINSROW Function](https://msdn.microsoft.com/library/mt842621.aspx)
- 
- [SELECTEDVALUE Function](selectedvalue-function.md)
- 
- [TREATAS Function](treatas-function.md)
-  
- [Table Constructor](table-constructor.md)
- 
- [UNICHAR Function](unichar-function-dax.md)
+[UTCNOW Function](utcnow-function-dax.md)   
+[UTCTODAY Function](utctoday-function-dax.md)
   
  
  ## Updated
- The following functions now support string data types:
+
+None at this time
  
-  [MIN Function](min-function-dax.md)
-  
-  [MAX Function](max-function-dax.md)
-  
-  [MINX Function](minx-function-dax.md)
-  
-  [MAXX Function](maxx-function-dax.md)
-  
+
   
   
   
