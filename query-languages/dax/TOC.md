@@ -18,7 +18,7 @@
 #### [TIME Function](time-function-dax.md)
 #### [TIMEVALUE Function](timevalue-function-dax.md)
 #### [TODAY Function](today-function-dax.md)
-#### [UTCNOW Function](utcnow-function-dax-md)
+#### [UTCNOW Function](utcnow-function-dax.md)
 #### [UTCTODAY Function](utctoday-function-dax.md)
 #### [WEEKDAY Function](weekday-function-dax.md)
 #### [WEEKNUM Function](weeknum-function-dax.md)

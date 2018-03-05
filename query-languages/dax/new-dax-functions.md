@@ -21,7 +21,7 @@ DAX is continuously being improved with new functions and functionality to suppo
  ## New 
  The following functions (or functionality) have been added in 2018. 
  
-[UTCNOW Function](utcnow-function-dax-md)   
+[UTCNOW Function](utcnow-function-dax.md)   
 [UTCTODAY Function](utctoday-function-dax.md)
   
  
