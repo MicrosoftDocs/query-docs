@@ -36,5 +36,5 @@ manager: "kfile"
 |[DateTimeZone.ToUtc](datetimezone-toutc.md)|Returns a DateTime value to the Utc time zone.|  
 |[DateTimeZone.UtcNow](datetimezone-utcnow.md)|Returns a DateTime value set to the current system date and time in the Utc timezone.|  
 |[DateTimeZone.ZoneHours](datetimezone-zonehours.md)|Returns a time zone hour value from a DateTime value.|  
-|[DateTimeZone.ZoneMinutes](http://msdn.microsoft.com/en-us/e6823e72-7b35-418d-a93e-863afc1f192e)|Returns a time zone minute value from a DateTime value.|  
+|[DateTimeZone.ZoneMinutes](datetimezone-zoneminutes.md)|Returns a time zone minute value from a DateTime value.|  
   

@@ -1,7 +1,7 @@
 ---
 title: "Comments | Microsoft Docs"
 ms.custom: ""
-ms.date: "2015-07-18"
+ms.date: "03/07/2018"
 ms.prod: "powerbi"
 ms.reviewer: ""
 ms.suite: ""
