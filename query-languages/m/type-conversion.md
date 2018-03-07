@@ -1,7 +1,7 @@
 ---
 title: "Type conversion | Microsoft Docs"
 ms.custom: ""
-ms.date: "2015-07-18"
+ms.date: "03/07/2018"
 ms.prod: "powerbi"
 ms.reviewer: ""
 ms.suite: ""
@@ -44,7 +44,6 @@ The Power Query M formula language has formulas to convert between types. The fo
 |-------------------|---------------|  
 |Logical.FromText(text as text) as logical|Returns a logical value of true or false from a text value.|  
 |Logical.ToText(logical as logical) as text|Returns a text value from a logical value.|  
-|||  
 |Logical.From(value as any) as logical|Returns a logical value from a value.|  
   
 ## Date, Time, DateTime, and DateTimeZone  

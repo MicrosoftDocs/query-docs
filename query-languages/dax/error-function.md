@@ -2,6 +2,7 @@
 title: "ERROR Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/28/2017"
+ms.prod: "powerbi"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

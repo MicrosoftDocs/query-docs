@@ -2,6 +2,7 @@
 title: "New DAX Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/05/2018"
+ms.prod: "powerbi"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

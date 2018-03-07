@@ -9,7 +9,6 @@ ms.technology:
   - "analysis-services"
   - "daxlang"
 ms.topic: "language-reference"
-ms.assetid:
 author: "Minewiskan"
 ms.author: "owend"
 manager: "kfile"
