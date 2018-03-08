@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "home-page"
 ms.assetid: 6ef6e273-993f-45b6-8d9b-4e7b3327089b
 caps.latest.revision: 40
-author: ""
-ms.author: ""
+author: "kfile"
+ms.author: "kfile"
 manager: "kfile"
 ---
 # Power Query M Reference
