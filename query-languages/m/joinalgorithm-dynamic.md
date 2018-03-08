@@ -2,6 +2,7 @@
 title: "JoinAlgorithm.Dynamic | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2018"
+ms.prod: "powerbi"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
