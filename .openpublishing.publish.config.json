@@ -2,7 +2,7 @@
   "docsets_to_publish": [
     {
       "docset_name": "dax",
-      "build_source_folder": "dax",
+      "build_source_folder": "query-languages/dax",
       "build_output_subfolder": "dax",
       "locale": "en-us",
       "monikers": [],
@@ -13,12 +13,12 @@
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
-      "build_entry_point": "docs",
+      "build_entry_point": "op",
       "template_folder": "_themes"
     },
     {
       "docset_name": "m",
-      "build_source_folder": "m",
+      "build_source_folder": "query-languages/m",
       "build_output_subfolder": "m",
       "locale": "en-us",
       "monikers": [],
@@ -29,7 +29,7 @@
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
-      "build_entry_point": "docs",
+      "build_entry_point": "op",
       "template_folder": "_themes"
     },
     {
@@ -45,7 +45,7 @@
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
-      "build_entry_point": "docs",
+      "build_entry_point": "op",
       "template_folder": "_themes"
     }
   ],
