@@ -17,8 +17,7 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # PERCENTILE.EXC Function (DAX)
-> [!NOTE]  
-> This function is included in SQL Server 2016 Analysis Services (SSAS), Power Pivot in Excel 2016, and Power BI Desktop only. Information provided here is subject to change.  
+
   
 Returns the k-th percentile of values in a range, where k is in the range 0..1, exclusive.  
   

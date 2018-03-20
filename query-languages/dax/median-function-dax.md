@@ -17,8 +17,6 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # MEDIAN Function (DAX)
-> [!NOTE]  
-> This function is included in SQL Server 2016 Analysis Services (SSAS), Microsoft Power Pivot in Excel 2016 Preview editions, and Microsoft Power BI Designer Preview only. Information provided here is subject to change.  
   
 Returns the median of numbers in a column.  
   

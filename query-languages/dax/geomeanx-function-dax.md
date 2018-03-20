@@ -17,8 +17,6 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # GEOMEANX Function (DAX)
-> [!NOTE]  
-> This function is included in SQL Server 2016 Analysis Services (SSAS), Power Pivot in Excel 2016, and Power BI Desktop. Information provided here is subject to change.  
   
 Returns the geometric mean of an expression evaluated for each row in a table.  
   

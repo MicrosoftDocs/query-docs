@@ -17,8 +17,6 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # CALENDARAUTO Function (DAX)
-> [!NOTE]  
-> This function is included in SQL Server 2016 Analysis Services (SSAS), Power Pivot in Excel 2016, and Power BI Desktop only. Information provided here is subject to change.  
   
 Returns a table with a single column named “Date” that contains a contiguous set of dates. The range of dates is calculated automatically based on data in the model.  
   
