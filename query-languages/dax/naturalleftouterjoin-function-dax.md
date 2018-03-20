@@ -17,8 +17,6 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # NATURALLEFTOUTERJOIN Function (DAX)
-> [!NOTE]  
-> This function is included in SQL Server 2016 Analysis Services (SSAS), Power Pivot in Excel 2016, and Power BI Desktop only. Information provided here is subject to change.  
   
 Performs an inner join of a table with another table. The tables are joined on common columns (by name) in the two tables. If the two tables have no common column names, an error is returned.  
   

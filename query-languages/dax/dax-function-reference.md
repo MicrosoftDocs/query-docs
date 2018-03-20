@@ -23,6 +23,9 @@ manager: "kfile"
 ---
 # DAX Function Reference
 This function reference provides detailed information including syntax, parameters, return values, and examples for each of the over 200 functions used in Data Analysis Expression (DAX) formulas.  
+
+> [!IMPORTANT]
+> Not all DAX functions are supported or included in earlier versions of Power BI Desktop, Analysis Services, and Power Pivot in Excel.  
   
 ## In This Section  
 [Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md) - These functions in DAX are similar to date and time functions in Microsoft Excel. However, DAX functions are based on the datetime data types used by Microsoft SQL Server.  

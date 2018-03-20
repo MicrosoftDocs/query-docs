@@ -17,8 +17,6 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # XNPV Function (DAX)
-> [!NOTE]  
-> This function is included in SQL Server 2016 Analysis Services (SSAS), Power Pivot in Excel 2016, and Power BI Desktop only. Information provided here is subject to change.  
   
 Returns the present value for a schedule of cash flows that is not necessarily periodic.  
   
