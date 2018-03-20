@@ -17,8 +17,6 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # UNION Function (DAX)
-> [!NOTE]  
-> This function is included in SQL Server 2016 Analysis Services (SSAS), Power Pivot in Excel 2016, and Power BI Desktop only. Information provided here is subject to change.  
   
 Creates a union (join) table from a pair of tables.  
   

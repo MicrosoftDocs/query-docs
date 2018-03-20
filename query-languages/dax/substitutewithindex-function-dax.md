@@ -17,8 +17,6 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # SUBSTITUTEWITHINDEX Function (DAX)
-> [!NOTE]  
-> This function is included in SQL Server 2016 Analysis Services (SSAS), Microsoft Power Pivot in Excel 2016 Preview editions, and Microsoft Power BI Designer Preview only. Information provided here is subject to change.  
   
 Returns a table which represents a left semijoin of the two tables supplied as arguments. The semijoin is performed by using common columns, determined by common column names and common data type . The columns being joined on are replaced with a single column in the returned table which is of type integer and contains an index. The index is a reference into the right join table given a specified sort order.  
   

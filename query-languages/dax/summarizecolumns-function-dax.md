@@ -17,9 +17,7 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # SUMMARIZECOLUMNS Function (DAX)
-> [!NOTE]  
-> This function is included in SQL Server 2016 Analysis Services (SSAS), Power Pivot in Excel 2016, and Power BI Desktop only. Information provided here is subject to change.  
-  
+
 Returns a summary table over a set of groups.  
   
 ## Syntax  

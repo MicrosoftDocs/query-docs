@@ -17,8 +17,6 @@ ms.author: "owend"
 manager: "kfile"
 ---
 # ADDMISSINGITEMS Function (DAX)
-> [!NOTE]  
-> This function is included in SQL Server 2016 Analysis Services (SSAS), Power Pivot in Excel 2016, and Power BI Desktop nly. Information provided here is subject to change.  
   
 Adds combinations of items from multiple columns to a table if they do not already exist. The determination of which item combinations to add is based on referencing source columns which contain all the possible values for the columns.  
   
