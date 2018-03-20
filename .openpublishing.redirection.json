@@ -2,7 +2,7 @@
   "redirections": [ 
     {
        "source_path": "query-languages/dax/index.md",
-       "redirect_url": "query-bi/dax/data-analysis-expressions-dax-reference",
+       "redirect_url": "data-analysis-expressions-dax-reference",
        "redirect_document_id": true
     },
     {
