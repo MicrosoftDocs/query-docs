@@ -241,6 +241,7 @@
 ### [Text Functions](text-functions-dax.md)
 #### [BLANK Function](blank-function-dax.md)
 #### [CODE Function](code-function-dax.md)
+#### [COMBINEVALUES Function](combinevalues-function-dax.md)
 #### [CONCATENATE Function](concatenate-function-dax.md)
 #### [CONCATENATEX Function](concatenatex-function-dax.md)
 #### [EXACT Function](exact-function-dax.md)
