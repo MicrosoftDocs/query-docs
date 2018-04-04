@@ -30,7 +30,7 @@ DISTINCT(<table>)
 ## Return Value  
 A table containing only distinct rows.  
   
-## Remarks  
+## Related functions  
 There is another version of the DISTINCT function, [DISTINCT (column)](distinct-function-dax.md), that takes a column name as input parameter.
   
 ## Example  
