@@ -1,7 +1,7 @@
 ---
-title: "DISTINCT Function (DAX) | Microsoft Docs"
+title: "DISTINCT (column) Function (DAX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/28/2017"
+ms.date: "04/04/2018"
 ms.prod: "powerbi"
 ms.reviewer: ""
 ms.suite: ""
@@ -21,7 +21,7 @@ author: "Minewiskan"
 ms.author: "owend"
 manager: "kfile"
 ---
-# DISTINCT Function (DAX)
+# DISTINCT (column) Function
 Returns a one-column table that contains the distinct values from the specified column. In other words, duplicate values are removed and only unique values are returned.  
   
 > [!NOTE]  
@@ -46,6 +46,8 @@ A column of unique values.
 The results of DISTINCT are affected by the current filter context. For example, if you use the formula in the following example to create a measure, the results would change whenever the table was filtered to show only a particular region or a time period.  
   
 ## Related Functions  
+There is another version of the DISTINCT function, [DISTINCT (table)](distinct-table-function-dax.md), that returns a table by removing duplicate rows from another table or expression..
+
 The VALUES function is similar to DISTINCT; it can also be used to return a list of unique values, and generally will return exactly the same results as DISTINCT. However, in some context VALUES will return one additional special value. For more information, see [VALUES Function &#40;DAX&#41;](values-function-dax.md).  
   
 ## Example  
