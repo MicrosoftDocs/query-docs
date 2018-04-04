@@ -70,7 +70,7 @@
 #### [CALCULATETABLE Function](calculatetable-function-dax.md)
 #### [CROSSFILTER Function](crossfilter-function.md)
 #### [DISTINCT (column) Function](distinct-function-dax.md)
-#### [DISTINCT (table) Function](distinct-function-dax.md)
+#### [DISTINCT (table) Function](distinct-table-function-dax.md)
 #### [EARLIER Function](earlier-function-dax.md)
 #### [EARLIEST Function](earliest-function-dax.md)
 #### [FILTER Function](filter-function-dax.md)
