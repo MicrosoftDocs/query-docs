@@ -1,7 +1,7 @@
 ---
-title: "DISTINCT Function (DAX) | Microsoft Docs"
+title: "DISTINCT (column) Function (DAX) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/28/2017"
+ms.date: "04/04/2018"
 ms.prod: "powerbi"
 ms.reviewer: ""
 ms.suite: ""
@@ -21,7 +21,7 @@ author: "Minewiskan"
 ms.author: "owend"
 manager: "kfile"
 ---
-# DISTINCT Function (DAX)
+# DISTINCT (column) Function
 Returns a one-column table that contains the distinct values from the specified column. In other words, duplicate values are removed and only unique values are returned.  
   
 > [!NOTE]  
