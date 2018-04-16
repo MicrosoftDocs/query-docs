@@ -2,7 +2,7 @@
 title: "DAX Error: The calculation could not be completed. The formula for this calculation contains a time-intelligence function. Verify the column specified for the ‘date’ argument to the time-intelligence function contains a contiguous set of dates. | Microsoft Docs"
 ms.service: powerbi
 ms.date: 4/13/2018
-ms.reviewer: Minewiskan
+ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
