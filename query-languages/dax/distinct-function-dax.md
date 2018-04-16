@@ -1,25 +1,12 @@
 ---
 title: "DISTINCT (column) Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "04/04/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.DISTINCT.f1"
-helpviewer_keywords: 
-  - "DISTINCT function"
-  - "Unique values"
-ms.assetid: e4f1e082-873d-40a7-a7d3-5e231ce14053
-caps.latest.revision: 6
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # DISTINCT (column) Function
 Returns a one-column table that contains the distinct values from the specified column. In other words, duplicate values are removed and only unique values are returned.  

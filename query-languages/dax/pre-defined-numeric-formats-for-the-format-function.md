@@ -1,24 +1,12 @@
 ---
 title: "Pre-Defined Numeric Formats for the FORMAT Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.PreDefinedNumeric.f1"
-helpviewer_keywords: 
-  - "Pre-Defined Numeric Formats for the FORMAT Function"
-ms.assetid: 78e0ac9e-9e3a-45dd-991f-599a206b8c65
-caps.latest.revision: 5
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Pre-Defined Numeric Formats for the FORMAT Function
 The following table identifies the predefined numeric format names. These may be used by name as the style argument for the Format function.  

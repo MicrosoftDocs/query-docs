@@ -1,25 +1,12 @@
 ---
 title: "Date and Time Functions (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.DateandTimeFunctions.f1"
-helpviewer_keywords: 
-  - "Functions in DAX, Date and time"
-  - "Dates and times"
-ms.assetid: 9fc9214a-fcd6-40c0-bf51-0c95637c6ffb
-caps.latest.revision: 7
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Date and Time Functions (DAX)
 These functions help you create calculations based on dates and time. Many of the functions in DAX are similar to the Excel date and time functions. However, DAX functions use a **datetime** data type, and can take values from a column as an argument.  

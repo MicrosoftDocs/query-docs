@@ -1,17 +1,12 @@
 ---
 title: "Odbc.DataSource | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: e88e294c-3800-4757-850d-32fbd034e9c4
-caps.latest.revision: 6
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Odbc.DataSource
 <code>Odbc.DataSource(<b>connectionString</b> as any, optional <b>options</b> as nullable record) as table</code>

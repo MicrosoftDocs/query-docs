@@ -1,24 +1,12 @@
 ---
 title: "ALLNOBLANKROW Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.ALLNOBLANKROW.f1"
-helpviewer_keywords: 
-  - "ALLNOBLANKROW function"
-ms.assetid: a489432e-48e1-4754-a5a8-5bdd665f2ff1
-caps.latest.revision: 8
-author: "Minewiskan"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
 ms.author: "owend"
-manager: "kfile"
+manager: kfile
 ---
 # ALLNOBLANKROW Function (DAX)
 From the parent table of a relationship, returns all rows but the blank row, or all distinct values of a column but the blank row, and disregards any context filters that might exist.  

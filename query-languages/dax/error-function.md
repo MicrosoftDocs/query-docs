@@ -1,19 +1,12 @@
 ---
 title: "ERROR Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-ms.assetid: 0e22bdd5-42ce-44c9-a3b6-ccc64cf7d8d9
-caps.latest.revision: 4
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # ERROR Function
 Raises an error with an error message.  

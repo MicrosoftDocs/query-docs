@@ -1,24 +1,12 @@
 ---
 title: "PREVIOUSMONTH Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.PREVIOUSMONTH.f1"
-helpviewer_keywords: 
-  - "PREVIOUSMONTH function"
-ms.assetid: 8e54dfde-54b6-48ed-826e-c81bac3bf479
-caps.latest.revision: 8
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # PREVIOUSMONTH Function (DAX)
 Returns a table that contains a column of all dates from the previous month, based on the first date in the **dates** column, in the current context.  

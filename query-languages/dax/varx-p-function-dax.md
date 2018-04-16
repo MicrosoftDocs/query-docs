@@ -1,24 +1,12 @@
 ---
 title: "VARX.P Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.VARX.P.f1"
-helpviewer_keywords: 
-  - "VARX.P Function (DAX)"
-ms.assetid: c6fc739d-e51d-44d7-9d4d-e03283f0f435
-caps.latest.revision: 7
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # VARX.P Function (DAX)
 Returns the variance of the entire population.  

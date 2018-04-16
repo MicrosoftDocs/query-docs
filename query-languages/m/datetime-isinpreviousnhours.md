@@ -1,17 +1,12 @@
 ---
 title: "DateTime.IsInPreviousNHours | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: 252b9c80-c89f-4a05-8c04-f43550076024
-caps.latest.revision: 5
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # DateTime.IsInPreviousNHours
 DateTime.IsInPreviousNHours(dateTime as any, hours as number) as nullable logical  

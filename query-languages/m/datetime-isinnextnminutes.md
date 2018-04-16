@@ -1,17 +1,12 @@
 ---
 title: "DateTime.IsInNextNMinutes | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: e93fc934-a394-4a3f-994f-47b27330f4ee
-caps.latest.revision: 5
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # DateTime.IsInNextNMinutes
 DateTime.IsInNextNMinutes(dateTime as any, minutes as number) as nullable logical  

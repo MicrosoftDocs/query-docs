@@ -1,24 +1,12 @@
 ---
 title: "OPENINGBALANCEQUARTER Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.OPENINGBALANCEQUARTER.f1"
-helpviewer_keywords: 
-  - "OPENINGBALANCEQUARTER function"
-ms.assetid: e27141dd-1324-4aba-a94d-cc3364691ccc
-caps.latest.revision: 8
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # OPENINGBALANCEQUARTER Function (DAX)
 Evaluates the **expression** at the first date of the quarter, in the current context.  

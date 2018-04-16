@@ -1,17 +1,12 @@
 ---
 title: "SapHanaRangeOperator.GreaterThan | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: 8d945dab-d0af-4fa1-95fc-7a130d37f699
-caps.latest.revision: 4
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # SapHanaRangeOperator.GreaterThan
 SapHanaRangeOperator.GreaterThan  

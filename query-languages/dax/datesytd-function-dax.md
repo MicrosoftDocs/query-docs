@@ -1,24 +1,12 @@
 ---
 title: "DATESYTD Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.DATESYTD.f1"
-helpviewer_keywords: 
-  - "DATESYTD function"
-ms.assetid: 0e8147d2-e763-454f-aa5d-a706795f7fb7
-caps.latest.revision: 8
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # DATESYTD Function (DAX)
 Returns a table that contains a column of the dates for the year to date, in the current context.  

@@ -1,19 +1,12 @@
 ---
 title: "IN Operator / CONTAINSROW Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-ms.assetid: cddf7bf1-0862-4ea5-bc09-7c75d5c9a4db
-caps.latest.revision: 4
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # IN Operator / CONTAINSROW Function
 Returns TRUE if a row of values exists or contained in a table, otherwise returns FALSE.

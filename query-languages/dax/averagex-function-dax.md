@@ -1,26 +1,12 @@
 ---
 title: "AVERAGEX Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.AVERAGEX.f1"
-helpviewer_keywords: 
-  - "aggregates"
-  - "AVERAGEX function"
-  - "mean value"
-ms.assetid: 653a322c-e973-4333-a4c1-06e72e037282
-caps.latest.revision: 4
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # AVERAGEX Function (DAX)
 Calculates the average (arithmetic mean) of a set of expressions evaluated over a table.  

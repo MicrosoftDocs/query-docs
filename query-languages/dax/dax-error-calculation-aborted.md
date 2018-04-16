@@ -1,20 +1,12 @@
 ---
 title: "DAX Error: CALCULATION ABORTED: MdxScript(instance) (00, 0) Function ‘DATEADD’ only works with contiguous date selections. | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: d2c2b44d-f2ca-4ec5-9e6a-e090af0e8d64
-caps.latest.revision: 7
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # DAX Error: CALCULATION ABORTED: MdxScript(instance) (00, 0) Function ‘DATEADD’ only works with contiguous date selections.
 This error can occur when attempting to create (design-time) or use (run-time) a calculated field with a DAX time-intelligence function. In each case, an incontiguous date range is being passed to the time-intelligence function.  

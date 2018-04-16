@@ -1,24 +1,12 @@
 ---
 title: "STARTOFYEAR Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.STARTOFYEAR.f1"
-helpviewer_keywords: 
-  - "STARTOFYEAR function"
-ms.assetid: a78699ef-3ab3-4d37-a40c-1a1448b65da9
-caps.latest.revision: 9
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # STARTOFYEAR Function (DAX)
 Returns the first date of the year in the current context for the specified column of dates.  

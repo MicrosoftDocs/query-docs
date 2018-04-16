@@ -1,20 +1,12 @@
 ---
 title: "DATATABLE Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "04/04/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-applies_to: 
-  - "Power BI"
-  - "SQL Server 2016 Preview"
-ms.assetid: bd72f357-7f86-41ac-ac0a-d783c4af7567
-caps.latest.revision: 7
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # DATATABLE Function
 Provides a mechanism for declaring an inline set of data values.  

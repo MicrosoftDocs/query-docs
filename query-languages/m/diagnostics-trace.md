@@ -1,17 +1,12 @@
 ---
 title: "Diagnostics.Trace | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: bb118132-8db1-4c0f-ade5-c2e2e1bf081c
-caps.latest.revision: 3
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Diagnostics.Trace
 <code>Diagnostics.Trace(<b>traceLevel</b> as number, <b>message</b> as text, <b>value</b> as any, optional <b>delayed</b> as nullable logical) as any</code>  

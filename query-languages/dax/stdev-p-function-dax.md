@@ -1,24 +1,12 @@
 ---
 title: "STDEV.P Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.STDEV.P.f1"
-helpviewer_keywords: 
-  - "STDEV.P Function (DAX)"
-ms.assetid: e028e528-8201-4846-bf63-120c8982896a
-caps.latest.revision: 8
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # STDEV.P Function (DAX)
 Returns the standard deviation of the entire population.  

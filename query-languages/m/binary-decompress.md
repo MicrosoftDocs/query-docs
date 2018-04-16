@@ -1,19 +1,12 @@
 ---
 title: "Binary.Decompress | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: 1c093544-36ce-4c31-bed3-1580d8a41280
-caps.latest.revision: 2
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Binary.Decompress
 <code>Binary.Decompress(<b>binary</b> as nullable binary, <b>compressionType</b> as number) as nullable binary</code>

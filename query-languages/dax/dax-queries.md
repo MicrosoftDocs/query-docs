@@ -1,22 +1,12 @@
 ---
 title: "DAX Queries | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-helpviewer_keywords: 
-  - "DAX, Table queries"
-ms.assetid: c6b486ec-d258-44dd-a40e-b2b48361855a
-caps.latest.revision: 13
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # DAX Queries
  This topic describes how to pass parameter values in an XMLA structure to a DAX query statement.  

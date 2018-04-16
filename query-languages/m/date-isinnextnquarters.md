@@ -1,19 +1,12 @@
 ---
 title: "Date.IsInNextNQuarters | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: cc3a1da3-c8d9-4a69-bceb-ba67918ddd33
-caps.latest.revision: 2
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Date.IsInNextNQuarters
 <code>Date.IsInNextNQuarters(**dateTime** as any, **quarters** as number) as nullable logical</code>

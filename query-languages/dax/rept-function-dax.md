@@ -1,24 +1,12 @@
 ---
 title: "REPT Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.REPT.f1"
-helpviewer_keywords: 
-  - "REPT function"
-ms.assetid: d5cacc42-1403-4bf7-bc6d-2f508e39f76f
-caps.latest.revision: 4
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # REPT Function (DAX)
 Repeats text a given number of times. Use REPT to fill a cell with a number of instances of a text string.  

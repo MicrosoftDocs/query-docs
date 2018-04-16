@@ -1,19 +1,12 @@
 ---
 title: "AnalysisServices.Databases | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: b2b95afb-2b64-4b49-90f2-667d8adccbe3
-caps.latest.revision: 7
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # AnalysisServices.Databases
 <code>AnalysisServices.Databases(**server** as text, optional **options** as nullable record) as table</code>

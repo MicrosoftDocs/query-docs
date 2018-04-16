@@ -1,24 +1,12 @@
 ---
 title: "MINUTE Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.MINUTE.f1"
-helpviewer_keywords: 
-  - "MINUTE function"
-ms.assetid: 98c3c26d-001e-4f15-b557-6de75bf02ae8
-caps.latest.revision: 5
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # MINUTE Function (DAX)
 Returns the minute as a number from 0 to 59, given a date and time value.  

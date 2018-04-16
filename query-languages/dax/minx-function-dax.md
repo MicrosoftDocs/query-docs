@@ -1,25 +1,12 @@
 ---
 title: "MINX Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.MINX.f1"
-helpviewer_keywords: 
-  - "Minimum value, MINX"
-  - "MINX function"
-ms.assetid: 64fb26e3-f6bb-4220-9ff5-a75701431f0e
-caps.latest.revision: 3
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # MINX Function (DAX)
 Returns the smallest numeric value that results from evaluating an expression for each row of a table.  

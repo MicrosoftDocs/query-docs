@@ -1,19 +1,12 @@
 ---
 title: "Text.BeforeDelimiter | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: 2f1db106-903a-45eb-8d88-e586e1faef3f
-caps.latest.revision: 2
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Text.BeforeDelimiter
 <code>Text.BeforeDelimiter(**text** as nullable text, **delimiter** as text, optional **index** as any) as any</code>

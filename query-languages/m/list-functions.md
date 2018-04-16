@@ -1,19 +1,12 @@
 ---
 title: "List functions | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "index-page "
-ms.assetid: 26a1201b-0192-4111-8d42-50f0ea479a75
-caps.latest.revision: 12
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # List functions
 The Power Query Formula Language (informally known as "M") is a powerful **mashup query language** optimized for building queries that mashup data. It is a functional, case sensitive language similar to F#, which can be used with [Power Query](https://support.office.com/article/Introduction-to-Microsoft-Power-Query-for-Excel-6E92E2F4-2079-4E1F-BAD5-89F6269CD605) in Excel and [Power BI Desktop ](http://go.microsoft.com/fwlink/p/?LinkId=618607). To learn more, see the [Power Query Formula Language (informally known as "M")](https://msdn.microsoft.com/library/mt211003.aspx).  
