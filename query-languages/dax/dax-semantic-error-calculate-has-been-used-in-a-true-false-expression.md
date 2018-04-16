@@ -2,7 +2,7 @@
 title: "DAX Semantic error: A function ‘CALCULATE’ has been used in a true-false expression that is used as a table filter expression. This is not allowed. | Microsoft Docs"
 ms.service: powerbi
 ms.date: 4/13/2018
-ms.reviewer: minewiskan
+ms.reviewer: Minewiskan
 ms.topic: reference
 author: minewiskan
 ms.author: owend

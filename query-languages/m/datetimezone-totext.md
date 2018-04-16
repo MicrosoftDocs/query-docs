@@ -1,19 +1,12 @@
 ---
 title: "DateTimeZone.ToText | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: 5b162210-340b-43e8-9a3d-a934a493ec33
-caps.latest.revision: 6
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # DateTimeZone.ToText
 <code>DateTimeZone.ToText(**dateTimeZone** as nullable datetimezone, optional **format** as nullable text, optional **culture** as nullable text) as nullable text</code>

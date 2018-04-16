@@ -1,19 +1,12 @@
 ---
 title: "Uri.Combine | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: 8c928dd2-057f-4f6d-98fa-d1c24cb9c675
-caps.latest.revision: 5
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Uri.Combine
 

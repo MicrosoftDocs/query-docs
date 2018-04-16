@@ -1,19 +1,12 @@
 ---
 title: "Table.Schema | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: 3830c166-ced7-4831-8d4e-819e8883b5d3
-caps.latest.revision: 8
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Table.Schema
 <code>Table.Schema(<b>table</b> as table) as table</code>

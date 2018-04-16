@@ -1,19 +1,12 @@
 ---
 title: "List.DateTimes | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: da1803d7-fd0f-48d9-ae14-80bc282de909
-caps.latest.revision: 7
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # List.DateTimes
 <code>List.Times(**start** as time, **count** as number, **step** as duration) as list</code>

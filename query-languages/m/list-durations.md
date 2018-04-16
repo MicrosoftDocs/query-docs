@@ -1,19 +1,12 @@
 ---
 title: "List.Durations | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: 20888ac1-9947-440c-8ddf-4b501b537881
-caps.latest.revision: 8
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # List.Durations
 <code>List.Durations(**start** as duration, **count** as number, **step** as duration) as list</code>

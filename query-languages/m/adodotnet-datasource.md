@@ -1,21 +1,12 @@
 ---
 title: "AdoDotNet.DataSource | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-applies_to: 
-  - "Power BI"
-ms.assetid: 7eabb67c-8c42-4ba9-a38a-c89b70d5a084
-caps.latest.revision: 4
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # AdoDotNet.DataSource
 <code>AdoDotNet.DataSource(<b>providerName</b> as text, <b>connectionString</b> as any, optional <b>options</b> as nullable record) as table</code>

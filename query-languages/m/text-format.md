@@ -1,17 +1,12 @@
 ---
 title: "Text.Format | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: 098ac7d8-f0ef-4ef2-89ad-b6dee5e6ef5f
-caps.latest.revision: 4
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Text.Format
 Text.Format(formatString as text, arguments as any, optional culture as nullable text) as text  

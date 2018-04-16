@@ -1,19 +1,12 @@
 ---
 title: "Lines.FromBinary | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: f7b4d881-e51a-4dd4-8307-8dce8e5654fb
-caps.latest.revision: 6
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Lines.FromBinary
 <code>Lines.FromBinary(**binary** as binary, optional **quoteStyle** as nullable number, optional **includeLineSeparators** as nullable logical, optional **encoding** as nullable number) as list</code>

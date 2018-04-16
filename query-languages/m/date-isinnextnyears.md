@@ -1,19 +1,12 @@
 ---
 title: "Date.IsInNextNYears | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: 0d46381f-4378-4445-a3f4-507c841605ca
-caps.latest.revision: 2
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Date.IsInNextNYears
 <code>Date.IsInNextNYears(**dateTime** as any, **years** as number) as nullable logical</code>

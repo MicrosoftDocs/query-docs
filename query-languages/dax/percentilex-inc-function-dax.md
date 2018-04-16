@@ -2,7 +2,7 @@
 title: "PERCENTILEX.INC Function (DAX) | Microsoft Docs"
 ms.service: powerbi
 ms.date: 4/13/2018
-ms.reviewer: minewiskan
+ms.reviewer: Minewiskan
 ms.topic: reference
 author: minewiskan
 ms.author: owend

@@ -1,17 +1,12 @@
 ---
 title: "Cube.PropertyKey | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-ms.assetid: 39f7754a-4771-4bf8-b6c1-1137d013093a
-caps.latest.revision: 2
-author: "MarkMcGeeAtAquent"
-ms.author: "v-mamcge"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Cube.PropertyKey
 <code>Cube.PropertyKey(<b>property</b> as any) as any</code>

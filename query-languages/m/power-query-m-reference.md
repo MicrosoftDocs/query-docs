@@ -1,19 +1,12 @@
 ---
 title: "Power Query M Reference | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "home-page"
-ms.assetid: 6ef6e273-993f-45b6-8d9b-4e7b3327089b
-caps.latest.revision: 40
-author: "Minewiskan" 
-ms.author: "owend" 
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Power Query M Reference
 The Power Query M formula language is optimized for building highly flexible data mashup queries. It's a functional, case sensitive language similar to F#.

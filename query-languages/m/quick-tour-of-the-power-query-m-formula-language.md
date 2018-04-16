@@ -1,19 +1,12 @@
 ---
 title: "Quick tour | Microsoft Docs"
-ms.custom: ""
-ms.date: "03/07/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-ms.assetid: cec3976b-5a02-433e-b1dd-001ff8398593
-caps.latest.revision: 13
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Quick tour of the Power Query M formula language
 This quick tour applies to creating Power Query M formula language queries in Power BI Desktop, Power Query in Excel, and Get Data in Excel 2016.  

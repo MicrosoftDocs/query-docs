@@ -1,17 +1,12 @@
 ---
 title: "AdobeAnalytics.Cubes | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-ms.assetid: 75a1566c-f28e-4ad8-9292-c90e93884923
-caps.latest.revision: 4
-author: "MarkMcGeeAtAquent"
-ms.author: "v-mamcge"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # AdobeAnalytics.Cubes
 <code>AdobeAnalytics.Cubes(optional <b>options</b> as nullable record) as table</code>

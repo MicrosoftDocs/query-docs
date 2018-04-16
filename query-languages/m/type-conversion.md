@@ -1,19 +1,12 @@
 ---
 title: "Type conversion | Microsoft Docs"
-ms.custom: ""
-ms.date: "03/07/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-ms.assetid: baab7ca5-20ed-4401-bd00-5c87ce25bfb9
-caps.latest.revision: 8
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Type conversion
 The Power Query M formula language has formulas to convert between types. The following is a summary of conversion formulas in M. 
