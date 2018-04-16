@@ -1,24 +1,12 @@
 ---
 title: "LN Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.LN.f1"
-helpviewer_keywords: 
-  - "LN function"
-ms.assetid: 958ba661-7136-4029-b861-3430c50c8b81
-caps.latest.revision: 3
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # LN Function (DAX)
 Returns the natural logarithm of a number. Natural logarithms are based on the constant e (2.71828182845904).  

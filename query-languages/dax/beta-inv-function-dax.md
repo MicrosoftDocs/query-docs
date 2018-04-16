@@ -1,20 +1,12 @@
 ---
 title: "BETA.INV Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: e132ca4c-89b3-4879-8b80-9c9f584dfaae
-caps.latest.revision: 5
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # BETA.INV Function (DAX)
 Returns the inverse of the beta cumulative probability density function (BETA.DIST).  

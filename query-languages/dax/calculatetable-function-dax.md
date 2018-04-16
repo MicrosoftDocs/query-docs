@@ -1,24 +1,12 @@
 ---
 title: "CALCULATETABLE Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.CALCULATETABLE.f1"
-helpviewer_keywords: 
-  - "CALCULATETABLE function"
-ms.assetid: 8f0bb370-0ace-478d-9ea9-0f98c66db620
-caps.latest.revision: 5
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # CALCULATETABLE Function (DAX)
 Evaluates a table expression in a context modified by the given filters.  

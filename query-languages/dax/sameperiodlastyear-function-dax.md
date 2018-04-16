@@ -1,24 +1,12 @@
 ---
 title: "SAMEPERIODLASTYEAR Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.SAMEPERIODLASTYEAR.f1"
-helpviewer_keywords: 
-  - "SAMEPERIODLASTYEAR function"
-ms.assetid: f5794021-8ca8-438e-b323-d9c2aaf3dc31
-caps.latest.revision: 7
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # SAMEPERIODLASTYEAR Function (DAX)
 Returns a table that contains a column of dates shifted one year back in time from the dates in the specified **dates** column, in the current context.  

@@ -1,24 +1,12 @@
 ---
 title: "ISFILTERED Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.ISFILTERED.f1"
-helpviewer_keywords: 
-  - "ISFILTERED function"
-ms.assetid: 59d61661-9be1-4955-8aa5-e3dc40929d08
-caps.latest.revision: 7
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # ISFILTERED Function (DAX)
 Returns TRUE when *columnName* is being filtered directly. If there is no filter on the column or if the filtering happens because a different column in the same table or in a related table is being filtered then the function returns **FALSE**.  

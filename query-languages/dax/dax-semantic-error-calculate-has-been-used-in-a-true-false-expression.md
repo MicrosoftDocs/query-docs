@@ -1,20 +1,12 @@
 ---
 title: "DAX Semantic error: A function ‘CALCULATE’ has been used in a true-false expression that is used as a table filter expression. This is not allowed. | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: 7d54a775-f504-4124-bae0-c903d121a414
-caps.latest.revision: 3
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # DAX Semantic error: A function ‘CALCULATE’ has been used in a true-false expression that is used as a table filter expression. This is not allowed.
   

@@ -1,25 +1,12 @@
 ---
 title: "SUM Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.SUM.f1"
-helpviewer_keywords: 
-  - "aggregates"
-  - "SUM function"
-ms.assetid: 4710ea3c-024f-4b3e-9d9d-3ca19db1edd1
-caps.latest.revision: 4
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # SUM Function (DAX)
 Adds all the numbers in a column.  

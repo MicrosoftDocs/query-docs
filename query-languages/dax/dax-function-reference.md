@@ -1,25 +1,12 @@
 ---
 title: "DAX Function Reference | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.DAXFunctionReference.f1"
-helpviewer_keywords: 
-  - "Function reference (DAX)"
-  - "DAX, Functions"
-ms.assetid: 4dbb28a1-dd1a-4fca-bcd5-e90f74864a7b
-caps.latest.revision: 8
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # DAX Function Reference
 This function reference provides detailed information including syntax, parameters, return values, and examples for each of the over 200 functions used in Data Analysis Expression (DAX) formulas.  

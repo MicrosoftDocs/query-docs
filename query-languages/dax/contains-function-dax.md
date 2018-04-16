@@ -1,24 +1,12 @@
 ---
 title: "CONTAINS Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.CONTAINS.f1"
-helpviewer_keywords: 
-  - "CONTAINS Function (DAX)"
-ms.assetid: 7ebc0b4c-4988-490f-9983-8073e5d4527b
-caps.latest.revision: 5
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # CONTAINS Function (DAX)
 Returns true if values for all referred columns exist, or are contained, in those columns; otherwise, the function returns false.  

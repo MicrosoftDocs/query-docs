@@ -1,22 +1,12 @@
 ---
 title: "USERELATIONSHIP Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-helpviewer_keywords: 
-  - "sql.as.daxref.USERELATIONSHIP.f1"
-ms.assetid: 200484ab-9da1-4570-a100-7f9ed20d33af
-caps.latest.revision: 9
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # USERELATIONSHIP Function (DAX)
 Specifies the relationship to be used in a specific calculation as the one that exists between columnName1 and columnName2.  

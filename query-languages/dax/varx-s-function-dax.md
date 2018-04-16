@@ -1,24 +1,12 @@
 ---
 title: "VARX.S Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.VARX.S.f1"
-helpviewer_keywords: 
-  - "VARX.S Function (DAX)"
-ms.assetid: 05b9b08d-a2e4-4833-8929-cb722436c866
-caps.latest.revision: 7
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # VARX.S Function (DAX)
 Returns the variance of a sample population.  

@@ -1,24 +1,12 @@
 ---
 title: "CURRENCY Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.CURRENCY.f1"
-helpviewer_keywords: 
-  - "CURRENCY Function (DAX)"
-ms.assetid: a3e4cb9a-ca2c-4e8b-9ec2-e25d04957a05
-caps.latest.revision: 6
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # CURRENCY Function (DAX)
 Evaluates the argument and returns the result as currency data type.  

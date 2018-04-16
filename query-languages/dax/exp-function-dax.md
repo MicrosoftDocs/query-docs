@@ -1,24 +1,12 @@
 ---
 title: "EXP Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.EXP.f1"
-helpviewer_keywords: 
-  - "EXP function"
-ms.assetid: 05e48bd7-2c15-4fc7-890c-9c01c811f857
-caps.latest.revision: 3
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # EXP Function (DAX)
 Returns e raised to the power of a given number. The constant e equals 2.71828182845904, the base of the natural logarithm.  

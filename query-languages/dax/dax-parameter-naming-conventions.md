@@ -1,22 +1,12 @@
 ---
 title: "DAX Parameter-Naming Conventions | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-helpviewer_keywords: 
-  - "Parameter-Naming Conventions (DAX)"
-ms.assetid: e714bf61-2cc8-4bea-9198-7aa8c082c5c7
-caps.latest.revision: 9
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # DAX Parameter-Naming Conventions
 Parameter names are standardized in DAX reference to facilitate the usage and understanding of the functions.  

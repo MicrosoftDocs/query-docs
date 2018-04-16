@@ -1,24 +1,12 @@
 ---
 title: "TIMEVALUE Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.TIMEVALUE.f1"
-helpviewer_keywords: 
-  - "TIMEVALUE function"
-ms.assetid: fdb6bd3f-0403-4093-8837-ad8cf0bc87e5
-caps.latest.revision: 5
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # TIMEVALUE Function (DAX)
 Converts a time in text format to a time in datetime format.  

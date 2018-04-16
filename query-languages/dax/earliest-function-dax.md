@@ -1,24 +1,12 @@
 ---
 title: "EARLIEST Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.EARLIEST.f1"
-helpviewer_keywords: 
-  - "EARLIEST function"
-ms.assetid: 9befa04d-78db-492e-a463-80b8b77206d6
-caps.latest.revision: 4
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # EARLIEST Function (DAX)
 Returns the current value of the specified column in an outer evaluation pass of the specified column.  

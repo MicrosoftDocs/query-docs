@@ -1,24 +1,12 @@
 ---
 title: "NEXTDAY Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.NEXTDAY.f1"
-helpviewer_keywords: 
-  - "NEXTDAY function"
-ms.assetid: 5da56cde-aa0f-4c92-8c04-2c4becdb9a96
-caps.latest.revision: 7
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # NEXTDAY Function (DAX)
 Returns a table that contains a column of all dates from the next day, based on the first date specified in the **dates** column in the current context.  

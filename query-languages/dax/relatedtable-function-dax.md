@@ -1,24 +1,12 @@
 ---
 title: "RELATEDTABLE Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.RELATEDTABLE.f1"
-helpviewer_keywords: 
-  - "RELATEDTABLE function"
-ms.assetid: 0f741322-e125-4d17-8444-7d1941a332f8
-caps.latest.revision: 7
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # RELATEDTABLE Function (DAX)
 Evaluates a table expression in a context modified by the given filters.  

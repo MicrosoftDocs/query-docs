@@ -1,24 +1,12 @@
 ---
 title: "STARTOFMONTH Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.STARTOFMONTH.f1"
-helpviewer_keywords: 
-  - "STARTOFMONTH function"
-ms.assetid: e9b319b7-6c1b-4baa-862d-6bfc9c34e2dd
-caps.latest.revision: 7
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # STARTOFMONTH Function (DAX)
 Returns the first date of the month in the current context for the specified column of dates.  

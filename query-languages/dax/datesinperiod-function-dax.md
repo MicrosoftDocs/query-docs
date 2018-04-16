@@ -1,24 +1,12 @@
 ---
 title: "DATESINPERIOD Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.DATESINPERIOD.f1"
-helpviewer_keywords: 
-  - "DATESINPERIOD function"
-ms.assetid: 5ad4f524-e691-4623-8a65-dcf65f151f2c
-caps.latest.revision: 9
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # DATESINPERIOD Function (DAX)
 Returns a table that contains a column of dates that begins with the **start_date** and continues for the specified **number_of_intervals**.  

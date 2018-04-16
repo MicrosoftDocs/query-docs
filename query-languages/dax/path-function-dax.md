@@ -1,24 +1,12 @@
 ---
 title: "PATH Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.PATH.f1"
-helpviewer_keywords: 
-  - "PATH Function (DAX)"
-ms.assetid: 6215482d-b0ba-4fef-86e6-0f9ea898e9d8
-caps.latest.revision: 10
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # PATH Function (DAX)
 Returns a delimited text string with the identifiers of all the parents of the current identifier, starting with the oldest and continuing until current.  

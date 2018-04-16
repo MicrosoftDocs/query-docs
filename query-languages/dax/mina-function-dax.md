@@ -1,25 +1,12 @@
 ---
 title: "MINA Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.MINA.f1"
-helpviewer_keywords: 
-  - "MINA function"
-  - "Minimum value, MINA"
-ms.assetid: a108ef9d-01ec-42bf-beb6-acad2299046c
-caps.latest.revision: 3
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # MINA Function (DAX)
 Returns the smallest value in a column, including any logical values and numbers represented as text.  

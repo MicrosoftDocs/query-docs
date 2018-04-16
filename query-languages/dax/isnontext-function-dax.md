@@ -1,24 +1,12 @@
 ---
 title: "ISNONTEXT Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.ISNONTEXT.f1"
-helpviewer_keywords: 
-  - "ISNONTEXT function"
-ms.assetid: 7b041fd9-4531-4dff-8932-254a6fb09cae
-caps.latest.revision: 6
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # ISNONTEXT Function (DAX)
 Checks if a value is not text (blank cells are not text), and returns TRUE or FALSE.  

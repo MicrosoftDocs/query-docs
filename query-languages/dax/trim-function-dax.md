@@ -1,24 +1,12 @@
 ---
 title: "TRIM Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.TRIM.f1"
-helpviewer_keywords: 
-  - "TRIM function"
-ms.assetid: 75ebaccc-d758-4989-abf7-2149dfccc50f
-caps.latest.revision: 4
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # TRIM Function (DAX)
 Removes all spaces from text except for single spaces between words.  

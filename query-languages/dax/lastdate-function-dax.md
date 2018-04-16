@@ -1,24 +1,12 @@
 ---
 title: "LASTDATE Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.LASTDATE.f1"
-helpviewer_keywords: 
-  - "LASTDATE function"
-ms.assetid: 3e336a50-cd75-4543-9d2d-e1b0ff1db4f2
-caps.latest.revision: 8
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # LASTDATE Function (DAX)
 Returns the last date in the current context for the specified column of dates.  

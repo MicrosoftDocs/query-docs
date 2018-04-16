@@ -1,24 +1,12 @@
 ---
 title: "SECOND Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.SECOND.f1"
-helpviewer_keywords: 
-  - "SECOND function"
-ms.assetid: d4de0532-c174-4735-b378-cbd768b0b8ba
-caps.latest.revision: 5
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # SECOND Function (DAX)
 Returns the seconds of a time value, as a number from 0 to 59.  

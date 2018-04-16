@@ -1,24 +1,12 @@
 ---
 title: "VALUE Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.VALUE.f1"
-helpviewer_keywords: 
-  - "VALUE function"
-ms.assetid: 8d5640e2-4c3b-45d8-ac29-713b2ec87e85
-caps.latest.revision: 6
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # VALUE Function (DAX)
 Converts a text string that represents a number to a number.  

@@ -1,25 +1,12 @@
 ---
 title: "AVERAGE Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.AVERAGE.f1"
-helpviewer_keywords: 
-  - "AVERAGE function"
-  - "mean value"
-ms.assetid: 128bccd2-c07e-43f9-ab7e-af3016b9e4d0
-caps.latest.revision: 4
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # AVERAGE Function (DAX)
 Returns the average (arithmetic mean) of all the numbers in a column.  

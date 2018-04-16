@@ -1,24 +1,12 @@
 ---
 title: "CLOSINGBALANCEYEAR Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.CLOSINGBALANCEYEAR.f1"
-helpviewer_keywords: 
-  - "CLOSINGBALANCEYEAR function"
-ms.assetid: 790c1162-9ea9-4ce2-b2ab-850f9b70e96f
-caps.latest.revision: 8
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # CLOSINGBALANCEYEAR Function (DAX)
 Evaluates the **expression** at the last date of the year in the current context.  

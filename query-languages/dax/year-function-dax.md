@@ -1,24 +1,12 @@
 ---
 title: "YEAR Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.YEAR.f1"
-helpviewer_keywords: 
-  - "YEAR function"
-ms.assetid: 7ec0e0da-e209-4d7a-9f91-83540b43fb03
-caps.latest.revision: 5
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # YEAR Function (DAX)
 Returns the year of a date as a four digit integer in the range 1900-9999.  

@@ -1,24 +1,12 @@
 ---
 title: "MOD Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.MOD.f1"
-helpviewer_keywords: 
-  - "MOD function"
-ms.assetid: 93dc612d-55cb-4bfe-aadd-5b8277f5b54a
-caps.latest.revision: 4
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # MOD Function (DAX)
 Returns the remainder after a number is divided by a divisor. The result always has the same sign as the divisor.  

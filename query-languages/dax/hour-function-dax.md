@@ -1,24 +1,12 @@
 ---
 title: "HOUR Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.HOUR.f1"
-helpviewer_keywords: 
-  - "HOUR function"
-ms.assetid: a78dbb05-1a96-4a7c-b414-8e3973d47f01
-caps.latest.revision: 5
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # HOUR Function (DAX)
 Returns the hour as a number from 0 (12:00 A.M.) to 23 (11:00 P.M.).  

@@ -1,22 +1,12 @@
 ---
 title: "CUSTOMDATA Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql.as.daxref.CUSTOMDATA.f1"
-ms.assetid: 58235ad8-226c-43cc-8a69-5a52ac19dd4e
-caps.latest.revision: 5
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # CUSTOMDATA Function (DAX)
 Returns the content of the **CustomData** property in the connection string.  

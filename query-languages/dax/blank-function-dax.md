@@ -1,25 +1,12 @@
 ---
 title: "BLANK Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.BLANK.f1"
-helpviewer_keywords: 
-  - "BLANK function"
-  - "blanks"
-ms.assetid: b9c0c031-20d0-41ac-b5d3-840280affd93
-caps.latest.revision: 5
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # BLANK Function (DAX)
 Returns a blank.  

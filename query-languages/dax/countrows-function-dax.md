@@ -1,24 +1,12 @@
 ---
 title: "COUNTROWS Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.COUNTROWS.f1"
-helpviewer_keywords: 
-  - "COUNTROWS function"
-ms.assetid: 830dd659-5405-4e0a-8d26-01ae9d5e5e9a
-caps.latest.revision: 4
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # COUNTROWS Function (DAX)
 The COUNTROWS function counts the number of rows in the specified table, or in a table defined by an expression.  

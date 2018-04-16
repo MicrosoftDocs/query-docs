@@ -1,24 +1,12 @@
 ---
 title: "Pre-defined Date and Time formats for the FORMAT Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.PreDefinedDateandTime.f1"
-helpviewer_keywords: 
-  - "Pre-defined Date and Time formats for the FORMAT Function"
-ms.assetid: b37f6d2f-1f73-4daa-8e64-df475a3622b8
-caps.latest.revision: 6
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Pre-defined Date and Time formats for the FORMAT Function
 The following table identifies the predefined date and time format names. If you use strings other than these predefined strings, they will be interpreted as a custom date and time format.  

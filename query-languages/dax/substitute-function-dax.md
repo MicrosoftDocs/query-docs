@@ -1,24 +1,12 @@
 ---
 title: "SUBSTITUTE Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.SUBSTITUTE.f1"
-helpviewer_keywords: 
-  - "SUBSTITUTE function"
-ms.assetid: 12bbf54d-d844-4c27-8e4b-c75f9c854ae7
-caps.latest.revision: 6
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # SUBSTITUTE Function (DAX)
 Replaces existing text with new text in a text string.  

@@ -1,24 +1,12 @@
 ---
 title: "Custom Numeric Formats for the FORMAT Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.CustomNumeric.f1"
-helpviewer_keywords: 
-  - "Custom Numeric Formats for the FORMAT Function"
-ms.assetid: 0432d01e-d0b5-49a0-b93e-fb636e0a8274
-caps.latest.revision: 5
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Custom Numeric Formats for the FORMAT Function
 A user-defined format expression for numbers can have from one to three sections separated by semicolons. If the Style argument of the Format function contains one of the predefined numeric formats, only one section is allowed.  

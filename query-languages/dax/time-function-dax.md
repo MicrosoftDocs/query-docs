@@ -1,24 +1,12 @@
 ---
 title: "TIME Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.TIME.f1"
-helpviewer_keywords: 
-  - "TIME function"
-ms.assetid: 7dc334fe-9a86-4cbb-be50-f630c162e514
-caps.latest.revision: 6
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # TIME Function (DAX)
 Converts hours, minutes, and seconds given as numbers to a time in **datetime** format.  

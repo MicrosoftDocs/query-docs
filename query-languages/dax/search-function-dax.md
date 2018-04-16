@@ -1,24 +1,12 @@
 ---
 title: "SEARCH Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.SEARCH.f1"
-helpviewer_keywords: 
-  - "SEARCH function"
-ms.assetid: 138143b5-b358-4e92-a2a1-00e213ec79fa
-caps.latest.revision: 10
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # SEARCH Function (DAX)
 Returns the number of the character at which a specific character or text string is first found, reading left to right. Search is case-insensitive and accent sensitive.  

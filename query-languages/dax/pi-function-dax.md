@@ -1,24 +1,12 @@
 ---
 title: "PI Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.PI.f1"
-helpviewer_keywords: 
-  - "PI function"
-ms.assetid: b6bc04b3-d6f4-45f1-884a-f93af06f40d1
-caps.latest.revision: 4
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # PI Function (DAX)
 Returns the value of Pi, 3.14159265358979, accurate to 15 digits.  

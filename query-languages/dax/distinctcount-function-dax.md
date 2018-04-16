@@ -1,24 +1,12 @@
 ---
 title: "DISTINCTCOUNT Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.DISTINCTCOUNT.f1"
-helpviewer_keywords: 
-  - "DISTINCTCOUNT Function (DAX)"
-ms.assetid: 30edc4b8-d556-40e2-93eb-7b218d3c619f
-caps.latest.revision: 8
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # DISTINCTCOUNT Function (DAX)
 The DISTINCTCOUNT function counts the number of distinct values in a column.  

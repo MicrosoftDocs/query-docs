@@ -1,25 +1,12 @@
 ---
 title: "OR Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.OR.f1"
-helpviewer_keywords: 
-  - "OR function"
-  - "logical values"
-ms.assetid: e960f383-0908-42aa-9d7e-48584023c33f
-caps.latest.revision: 6
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # OR Function (DAX)
 Checks whether one of the arguments is TRUE to return TRUE. The function returns FALSE if both arguments are FALSE.  

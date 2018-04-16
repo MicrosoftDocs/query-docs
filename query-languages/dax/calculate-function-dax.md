@@ -1,25 +1,12 @@
 ---
 title: "CALCULATE Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.CALCULATE.f1"
-helpviewer_keywords: 
-  - "Measures, Creating"
-  - "CALCULATE function"
-ms.assetid: be778516-8858-4460-bb36-00a8965b5deb
-caps.latest.revision: 4
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # CALCULATE Function (DAX)
 Evaluates an expression in a context that is modified by the specified filters.  

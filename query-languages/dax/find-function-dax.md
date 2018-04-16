@@ -1,24 +1,12 @@
 ---
 title: "FIND Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.FIND.f1"
-helpviewer_keywords: 
-  - "FIND function"
-ms.assetid: ce86320e-f098-436b-8907-4f460090f8e3
-caps.latest.revision: 8
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # FIND Function (DAX)
 Returns the starting position of one text string within another text string. FIND is case-sensitive.  

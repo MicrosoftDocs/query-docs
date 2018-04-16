@@ -1,24 +1,12 @@
 ---
 title: "Custom Date and Time formats for the FORMAT Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.CustomDateandTime.f1"
-helpviewer_keywords: 
-  - "Custom Date and Time formats for the FORMAT Function"
-ms.assetid: 4dd49f41-05fe-474d-8678-31fe5f86a137
-caps.latest.revision: 6
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Custom Date and Time formats for the FORMAT Function
 The following table shows characters you can use to create user-defined date/time formats.  

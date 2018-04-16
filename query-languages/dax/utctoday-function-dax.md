@@ -1,17 +1,12 @@
 ---
 title: "UTCNOW Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "03/05/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.topic: "language-reference"
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: minewiskan
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # UTCTODAY Function (DAX)
 Returns the current UTC date.
