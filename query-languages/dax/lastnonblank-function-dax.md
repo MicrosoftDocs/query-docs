@@ -1,24 +1,12 @@
 ---
 title: "LASTNONBLANK Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.LASTNONBLANK.f1"
-helpviewer_keywords: 
-  - "LASTNONBLANK function"
-ms.assetid: 263e764b-e6e4-4b87-9ec4-0c40255abf0a
-caps.latest.revision: 8
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # LASTNONBLANK Function (DAX)
 Returns the last value in the column, **column**, filtered by the current context, where the expression is not blank.  

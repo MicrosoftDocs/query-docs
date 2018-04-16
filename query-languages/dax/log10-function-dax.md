@@ -1,25 +1,12 @@
 ---
 title: "LOG10 Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.LOG10.f1"
-helpviewer_keywords: 
-  - "LOG10 function"
-  - "logarithm"
-ms.assetid: 878879f7-8dac-4a1f-bc00-f9f1784db386
-caps.latest.revision: 4
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # LOG10 Function (DAX)
 Returns the base-10 logarithm of a number.  

@@ -1,20 +1,12 @@
 ---
 title: "LCM Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: 562842fe-e6df-4270-a47e-002970d4a62a
-caps.latest.revision: 4
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # LCM Function (DAX)
 Returns the least common multiple of integers. The least common multiple is the smallest positive integer that is a multiple of all integer arguments number1, number2, and so on. Use LCM to add fractions with different denominators.  

@@ -1,24 +1,12 @@
 ---
 title: "Math and Trig Functions (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.MathandTrigonometric.f1"
-helpviewer_keywords: 
-  - "Functions in DAX, Math"
-ms.assetid: 1f408ec1-e769-43d6-a68c-567bc30d893f
-caps.latest.revision: 9
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Math and Trig Functions (DAX)
 The mathematical functions in Data Analysis Expressions (DAX) are very similar to the Excel mathematical and trigonometric functions. This section lists the mathematical functions provided by DAX.  

@@ -1,24 +1,12 @@
 ---
 title: "DATEADD Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.DATEADD.f1"
-helpviewer_keywords: 
-  - "DATEADD function"
-ms.assetid: d896b83f-d122-47fd-897b-2f14232c59b6
-caps.latest.revision: 9
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # DATEADD Function (DAX)
 Returns a table that contains a column of dates, shifted either forward or backward in time by the specified number of intervals from the dates in the current context.  

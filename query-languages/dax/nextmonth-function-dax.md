@@ -1,24 +1,12 @@
 ---
 title: "NEXTMONTH Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.NEXTMONTH.f1"
-helpviewer_keywords: 
-  - "NEXTMONTH function"
-ms.assetid: 4a4e0a51-f692-464f-8c5a-07b39d9cf22d
-caps.latest.revision: 8
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # NEXTMONTH Function (DAX)
 Returns a table that contains a column of all dates from the next month, based on the first date in the **dates** column in the current context.  

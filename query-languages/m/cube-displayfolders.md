@@ -1,19 +1,12 @@
 ---
 title: "Cube.DisplayFolders | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: fc79e227-4bc4-4e5b-8f92-b34de1e635c4
-caps.latest.revision: 2
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Cube.DisplayFolders
 <code>Cube.DisplayFolders(**cube** as table) as table</code>

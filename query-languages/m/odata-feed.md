@@ -1,19 +1,12 @@
 ---
 title: "OData.Feed | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: 672019fd-f752-4b9e-add0-bb5b50eb6b8e
-caps.latest.revision: 12
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # OData.Feed
 <code>OData.Feed(**serviceUri** as text, optional **headers** as nullable record, optional **options** as any) as any</code>

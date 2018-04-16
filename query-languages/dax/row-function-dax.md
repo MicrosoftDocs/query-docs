@@ -1,24 +1,12 @@
 ---
 title: "ROW Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.ROW.f1"
-helpviewer_keywords: 
-  - "ROW Function (DAX)"
-ms.assetid: 8a26befc-e513-46ed-81df-ada827db65fc
-caps.latest.revision: 6
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # ROW Function (DAX)
 Returns a table with a single row containing values that result from the expressions given to each column.  

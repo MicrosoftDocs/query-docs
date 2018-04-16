@@ -1,24 +1,12 @@
 ---
 title: "ISBLANK Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.ISBLANK.f1"
-helpviewer_keywords: 
-  - "ISBLANK function"
-ms.assetid: 034fc4c7-0967-4304-ad1e-a5034835e6a0
-caps.latest.revision: 5
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # ISBLANK Function (DAX)
 Checks whether a value is blank, and returns TRUE or FALSE.  

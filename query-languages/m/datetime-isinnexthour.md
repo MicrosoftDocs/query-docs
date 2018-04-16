@@ -1,17 +1,12 @@
 ---
 title: "DateTime.IsInNextHour | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: 305d04b2-68f3-4e3d-a6cf-891c6ec04d9f
-caps.latest.revision: 6
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # DateTime.IsInNextHour
 DateTime.IsInNextHour(dateTime as any) as nullable logical  

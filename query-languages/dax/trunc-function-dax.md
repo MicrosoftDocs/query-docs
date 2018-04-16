@@ -1,24 +1,12 @@
 ---
 title: "TRUNC Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.TRUNC.f1"
-helpviewer_keywords: 
-  - "TRUNC function"
-ms.assetid: d9dbeaff-1af0-4396-9195-1ef4f53eb355
-caps.latest.revision: 5
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # TRUNC Function (DAX)
 Truncates a number to an integer by removing the decimal, or fractional, part of the number.  

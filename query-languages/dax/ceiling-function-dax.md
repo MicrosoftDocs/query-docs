@@ -1,24 +1,12 @@
 ---
 title: "CEILING Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.CEILING.f1"
-helpviewer_keywords: 
-  - "CEILING function"
-ms.assetid: 5d76fc78-8a1e-4dbb-a2fc-2feeb0db902e
-caps.latest.revision: 4
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # CEILING Function (DAX)
 Rounds a number up, to the nearest integer or to the nearest multiple of significance.  

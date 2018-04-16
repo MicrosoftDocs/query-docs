@@ -1,24 +1,12 @@
 ---
 title: "ADDCOLUMNS Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.ADDCOLUMNS.f1"
-helpviewer_keywords: 
-  - "ADDCOLUMNS Function (DAX)"
-ms.assetid: c77aeb05-9c85-494f-b8fa-9f007a120f31
-caps.latest.revision: 8
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # ADDCOLUMNS Function (DAX)
 Adds calculated columns to the given table or table expression.  

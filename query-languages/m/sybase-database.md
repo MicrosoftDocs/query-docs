@@ -1,19 +1,12 @@
 ---
 title: "Sybase.Database | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: 1ad4093d-53ba-4bcd-a3ba-eeada6c1c2f4
-caps.latest.revision: 9
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Sybase.Database
 <code>Sybase.Database(**server** as text, **database** as text, optional **options** as nullable record) as table</code>

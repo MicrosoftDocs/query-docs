@@ -1,24 +1,12 @@
 ---
 title: "ISTEXT Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.ISTEXT.f1"
-helpviewer_keywords: 
-  - "ISTEXT function"
-ms.assetid: 308af2eb-425c-4305-b3a7-323cc53198af
-caps.latest.revision: 6
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # ISTEXT Function (DAX)
 Checks if a value is text, and returns TRUE or FALSE.  

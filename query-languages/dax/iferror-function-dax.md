@@ -1,24 +1,12 @@
 ---
 title: "IFERROR Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.IFERROR.f1"
-helpviewer_keywords: 
-  - "IFERROR function"
-ms.assetid: 92d6189e-28dc-488a-b4c8-fc7fc71ab227
-caps.latest.revision: 7
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # IFERROR Function (DAX)
 Evaluates an expression and returns a specified value if the expression returns an error; otherwise returns the value of the expression itself.  

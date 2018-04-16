@@ -1,19 +1,12 @@
 ---
 title: "Date.IsInNextNDays | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: 0500e57f-4914-4203-b6b0-5143790e5b32
-caps.latest.revision: 2
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Date.IsInNextNDays
 <code>Date.IsInNextNDays(**dateTime** as any, **days** as number) as nullable logical</code>

@@ -1,19 +1,12 @@
 ---
 title: "Text.AfterDelimiter | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: 8d00106f-8d2c-4eec-8c23-848ba4ab45e6
-caps.latest.revision: 2
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Text.AfterDelimiter
 <code>Text.AfterDelimiter(**text** as nullable text, **delimiter** as text, optional **index** as any) as any</code>

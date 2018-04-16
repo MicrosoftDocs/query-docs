@@ -1,25 +1,12 @@
 ---
 title: "MAXA Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.MAXA.f1"
-helpviewer_keywords: 
-  - "MAXA function"
-  - "Maximum value, MAXA"
-ms.assetid: 8d17fc90-ccf0-4d0e-a926-b3406d3cee68
-caps.latest.revision: 3
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # MAXA Function (DAX)
 Returns the largest value in a column. Logical values and blanks are counted.  

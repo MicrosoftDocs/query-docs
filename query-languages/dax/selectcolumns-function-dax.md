@@ -1,19 +1,12 @@
 ---
 title: "SELECTCOLUMNS Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-ms.assetid: e4078799-66f6-49f1-8983-a84254e46f81
-caps.latest.revision: 3
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # SELECTCOLUMNS Function (DAX)
 Adds calculated columns to the given table or table expression.  

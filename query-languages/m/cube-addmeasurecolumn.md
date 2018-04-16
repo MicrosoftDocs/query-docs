@@ -1,19 +1,12 @@
 ---
 title: "Cube.AddMeasureColumn | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: 1660b9e9-3864-45c1-b887-94af4a72ee25
-caps.latest.revision: 2
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Cube.AddMeasureColumn
 <code>Cube.AddMeasureColumn(**cube** as table, **column** as text, **measureSelector** as any) as table</code>

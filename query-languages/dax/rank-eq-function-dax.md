@@ -1,24 +1,12 @@
 ---
 title: "RANK.EQ  Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.RANK.EQ.f1"
-helpviewer_keywords: 
-  - "RANK.EQ Function (DAX)"
-ms.assetid: 6f46f0c5-4d6f-4e62-8119-b53ea67d1563
-caps.latest.revision: 7
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # RANK.EQ  Function (DAX)
 Returns the ranking of a number in a list of numbers.  

@@ -1,24 +1,12 @@
 ---
 title: "FORMAT Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.FORMAT.f1"
-helpviewer_keywords: 
-  - "FORMAT function"
-ms.assetid: e14f430d-3c3a-46bd-911f-f4e2d6d0a9b6
-caps.latest.revision: 7
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # FORMAT Function (DAX)
 Converts a value to text according to the specified format.  

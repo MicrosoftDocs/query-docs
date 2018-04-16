@@ -1,24 +1,12 @@
 ---
 title: "LOOKUPVALUE Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.LOOKUPVALUE.f1"
-helpviewer_keywords: 
-  - "LOOKUPVALUE Function (DAX)"
-ms.assetid: 73a51c4d-131c-4c33-a139-b1342d10caab
-caps.latest.revision: 6
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # LOOKUPVALUE Function (DAX)
 Returns the value in *result_columnName* for the row that meets all criteria specified by *search_columnName* and *search_value*.  

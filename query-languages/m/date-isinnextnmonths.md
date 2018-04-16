@@ -1,19 +1,12 @@
 ---
 title: "Date.IsInNextNMonths | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/19/2018"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "mlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-ms.assetid: 282fc312-5be7-46a0-9665-c9cc43486f53
-caps.latest.revision: 2
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.date: 4/16/2018
+ms.service: powerbi
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # Date.IsInNextNMonths
 <code>Date.IsInNextNMonths(**dateTime** as any, **months** as number) as nullable logical</code>

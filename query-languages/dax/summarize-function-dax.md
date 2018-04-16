@@ -1,24 +1,12 @@
 ---
 title: "SUMMARIZE Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.SUMMARIZE.f1"
-helpviewer_keywords: 
-  - "SUMMARIZE Function (DAX)"
-ms.assetid: 7466e212-f1fa-4380-b6ed-1ef7c93b0e6f
-caps.latest.revision: 12
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # SUMMARIZE Function (DAX)
 Returns a summary table for the requested totals over a set of groups.  

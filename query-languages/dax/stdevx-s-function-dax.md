@@ -1,24 +1,12 @@
 ---
 title: "STDEVX.S Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.STDEVX.S.f1"
-helpviewer_keywords: 
-  - "STDEVX.S Function (DAX)"
-ms.assetid: d1524ed0-9377-4d4c-a17f-521c1d3e7bf6
-caps.latest.revision: 7
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # STDEVX.S Function (DAX)
 Returns the standard deviation of a sample population.  

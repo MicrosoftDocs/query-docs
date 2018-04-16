@@ -1,24 +1,12 @@
 ---
 title: "RANDBETWEEN Function (DAX) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/28/2017"
-ms.prod: "powerbi"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sql13.as.daxref.RANDBETWEEN.f1"
-helpviewer_keywords: 
-  - "RANDBETWEEN function"
-ms.assetid: 7ef4d08e-796b-41c4-a124-ad97da50e9a2
-caps.latest.revision: 6
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+ms.service: powerbi
+ms.date: 4/13/2018
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+manager: kfile
 ---
 # RANDBETWEEN Function (DAX)
 Returns a random number in the range between two numbers you specify.  
