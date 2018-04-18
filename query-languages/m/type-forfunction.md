@@ -1,6 +1,6 @@
 ---
 title: "Type.ForFunction | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 4/17/2018
 ms.service: powerbi
 ms.reviewer: owend
 ms.topic: reference
@@ -9,24 +9,13 @@ ms.author: owend
 manager: kfile
 ---
 # Type.ForFunction
+<code>Type.ForFunction(<b>signature</b> as record, <b>min</b> as number) as type</code>
+## About
+Creates a <code>function type</code> from <code>signature</code>, a record of <code>ReturnType</code> and <code>Parameters</code>, and <code>min</code>, the minimum number of arguments required to invoke the function.
 
-  
-## About  
-Creates a function type from the given Arguments.  
-  
-```  
-Type.ForFunction(signature as record,  min as number) as type  
-```  
-  
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|signature|A Record value that contains fields for ReturnType and Parameters. Parameters is itself a record with all the parameter values assigned to their expected types.|  
-|min|The minimum number of Arguments required to invoke the function.|  
-  
-## Example  
-  
-```  
-Type.ForFunction([ReturnType = number, Parameters = [X = number]], 1)  
-```  
+## Example 1
+Creates the type for a function that takes a number parameter named X and returns a number.
+
+<code>Type.ForFunction([ReturnType = type number, Parameters = [X = type number]], 1)</code>
+
+<code>type function (X as number) as number</code>
