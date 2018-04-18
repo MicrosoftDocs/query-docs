@@ -1,6 +1,6 @@
 ---
 title: "Text.PositionOf | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 4/17/2018
 ms.service: powerbi
 ms.reviewer: owend
 ms.topic: reference
@@ -9,49 +9,20 @@ ms.author: owend
 manager: kfile
 ---
 # Text.PositionOf
+<code>Text.PositionOf(<b>text</b> as text, <b>substring</b> as text, optional <b>occurrence</b> as nullable number, optional <b>comparer</b> as nullable function) as any</code>
+## About
+Returns the position of the specified occurrence of the text value <code>substring</code> found in <code>text</code>. An optional parameter <code>occurrence</code> may be used to specify which occurrence position to return (first occurrence by default). Returns -1 if <code>substring</code> was not found. <div> <code>comparer</code> is a <code>Comparer</code> which is used to control the comparison. Comparers can be used to provide case insensitive or culture and locale aware comparisons. </div> <div> The following built in comparers are available in the formula language: </div> <ul> <li><code>Comparer.Ordinal</code>: Used to perform an exact ordinal comparison</li> <li><code>Comparer.OrdinalIgnoreCase</code>: Used to perform an exact ordinal case-insensitive comparison</li> <li> <code>Comparer.FromCulture</code>: Used to perform a culture aware comparison</li> </ul>
 
-  
-## About  
-Returns the first occurrence of substring in a string and returns its position starting at startOffset.  
-  
-```  
-Text.PositionOf(string as nullable text, substring as text, optional occurrence as nullable number, optional comparer as nullable function) as nullable number  
-```  
-  
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|string|The text to parse.|  
-|substring|The text to string to search for.|  
-|optional occurrence|An enum that controls the scope of operation.|  
-|optional comparer|The optional culture aware comparer function can be provided.|  
-  
-## Occurrence Settings  
-  
-|Setting|Description|  
-|-----------|---------------|  
-|Occurrence.First or Occurrence.Last|A single position is returned.|  
-|Occurrence.All|A list of positions is returned for all occurrences.|  
-  
-## <a name="__toc360788876"></a>Remarks  
-  
--   If a text value is not found, -1 is returned.  
-  
-## Examples  
-  
-```  
-Text.PositionOf("ABCD", "C") equals 2  
-```  
-  
-```  
-Text.PositionOf("ABCBA", "A", Occurrence.First) equals 0  
-```  
-  
-```  
-Text.PositionOf("ABCBA", "A", Occurrence.Last) equals 4  
-```  
-  
-```  
-Text.PositionOf("ABCBA", "A", Occurrence.All) equals {0,4}  
-```  
+## Example 1
+Get the position of the first occurrence of "World" in the text "Hello, World! Hello, World!".
+
+<code>Text.PositionOf("Hello, World! Hello, World!", "World")</code>
+
+<code>7</code>
+
+## Example 2
+Get the position of last occurrence of "World" in "Hello, World! Hello, World!".
+
+<code>Text.PositionOf("Hello, World! Hello, World!", "World", Occurrence.Last)</code>
+
+<code>21</code>

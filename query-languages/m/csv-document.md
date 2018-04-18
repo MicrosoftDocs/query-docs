@@ -21,8 +21,6 @@ Process CSV text with column headers
 Table.PromoteHeaders(Csv.Document("OrderID,Item 1,Fishing rod 2,1 lb. worms"))
 ```
 
-
-
 |OrderID  |Item  |
 |---------|---------|
 |1     |   Fishing rod      |
