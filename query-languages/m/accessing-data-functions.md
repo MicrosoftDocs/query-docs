@@ -60,7 +60,6 @@ Functions in this section access data and return table values. Most of these fun
 |[Informix.Database](informix-database.md)|Returns a table of SQL tables and views available in an Informix database on server <code>server</code> in the database instance named <code>database</code>.|  
 |[Json.Document](json-document.md)|Returns the contents of a JSON document. The contents may be directly passed to the function as text, or it may be the binary value returned by a function like File.Contents.|  
 |[Json.FromValue](json-fromvalue.md)|Produces a JSON representation of a given value value with a text encoding specified by encoding.|
-|[Marketplace.Subscriptions](marketplace-subscriptions.md)|Returns feeds offered by the DataMarket subscribed by the current user as a table.|  
 |[MySQL.Database](mysql-database.md)|Returns a table with data relating to the tables in the specified MySQL Database.| 
 |[OData.Feed](odata-feed.md)|Returns a table of OData feeds offered by an OData serviceUri.|  
 |[Odbc.DataSource](odbc-datasource.md)|Returns a table of SQL tables and views from the ODBC data source specified by the connection string <code>connectionString</code>. |  

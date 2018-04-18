@@ -47,7 +47,6 @@
 #### [Hdfs.Files](hdfs-files.md)
 #### [Informix.Database](informix-database.md)
 #### [Json.Document](json-document.md)
-#### [Marketplace.Subscriptions](marketplace-subscriptions.md)
 #### [MySQL.Database](mysql-database.md)
 #### [OData.Feed](odata-feed.md)
 #### [Odbc.DataSource](odbc-datasource.md)
