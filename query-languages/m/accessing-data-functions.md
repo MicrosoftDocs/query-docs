@@ -38,7 +38,8 @@ Functions in this section access data and return table values. Most of these fun
 |[Cube.Dimensions](cube-dimensions.md)|Returns a table containing the set of available dimensions within the cube.|
 |[Cube.DisplayFolders](cube-displayfolders.md)|Returns a nested tree of tables representing the display folder hierarchy of the objects (e.g. dimensions and measures) available for use in the cube.
 |[Cube.Measures](cube-measures.md)|Returns a table containing the set of available measures within the cube.|
-|[Cube.Parameters](cube-parameters.md)|Returns a table containing the set of parameters that can be applied to cube.|
+|[Cube.Parameters](cube-parameters.md)|Returns a table containing the set of parameters that can be applied to cube.|   
+|[Cube.Properties](cube-properties.md)|Returns a table containing the set of available properties for dimensions that are expanded in the cube.|
 | [Cube.PropertyKey](cube-propertykey.md)  | Returns the key of property `property`.  |
 |[Cube.ReplaceDimensions](cube-replacedimensions.md)||
 |[Cube.Transform](cube-transform.md)|Applies the list cube functions, transforms, on the cube.|
@@ -92,6 +93,7 @@ Functions in this section access data and return table values. Most of these fun
 |[Sql.Databases](sql-databases.md)|Returns a table with references to databases located on a SQL Server instance. Returns a navigation table.|  
 |[Sybase.Database](sybase-database.md)|Returns a table with data relating to the tables in the specified Sybase Database.|  
 |[Teradata.Database](teradata-database.md)|Returns a table with data relating to the tables in the specified Teradata Database.|  
+|[WebAction.Request](webaction-request.md)|Creates an action that, when executed, will return the results of performing a method request against url using HTTP as a binary value.|  
 |[Web.Contents](web-contents.md)|Returns the contents downloaded from a web url as a binary value.| 
 |[Web.Page](web-page.md)|Returns the contents of an HTML webpage as a table.|  
 |[WebMethod.Delete](webmethod-delete.md) | Specifies the DELETE method for HTTP.|
