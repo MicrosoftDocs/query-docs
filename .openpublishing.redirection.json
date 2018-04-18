@@ -9,11 +9,11 @@
         "source_path": "query-languages/m/index.md",
         "redirect_url": "power-query-m-reference",
         "redirect_document_id": true
-     }
+     },
      {
       "source_path": "query-languages/m/marketplace.subscriptions.md",
       "redirect_url": "query-languages/m/power-query-m-reference",
       "redirect_document_id": false
-   }
+    }
   ] 
 } 
