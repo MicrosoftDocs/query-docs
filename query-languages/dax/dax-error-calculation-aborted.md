@@ -1,6 +1,6 @@
 ---
 title: "DAX Error: CALCULATION ABORTED: MdxScript(instance) (00, 0) Function ‘DATEADD’ only works with contiguous date selections. | Microsoft Docs"
-ms.service: powerbi
+ms.prod: dax
 ms.date: 4/13/2018
 ms.reviewer: owend
 ms.topic: reference

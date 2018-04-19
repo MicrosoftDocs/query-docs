@@ -1,6 +1,6 @@
 ---
 title: "DAX Operator Reference | Microsoft Docs"
-ms.service: powerbi
+ms.prod: dax
 ms.date: 4/13/2018
 ms.reviewer: owend
 ms.topic: reference
