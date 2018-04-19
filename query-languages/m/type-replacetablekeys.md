@@ -1,7 +1,7 @@
 ---
 title: "Type.ReplaceTableKeys | Microsoft Docs"
 ms.date: 4/16/2018
-ms.service: powerbi
+ms.prod: power-query
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan

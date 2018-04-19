@@ -1,6 +1,6 @@
 ---
 title: "Pre-Defined Numeric Formats for the FORMAT Function | Microsoft Docs"
-ms.service: powerbi
+ms.prod: dax
 ms.date: 4/13/2018
 ms.reviewer: owend
 ms.topic: reference
