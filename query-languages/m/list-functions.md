@@ -61,7 +61,8 @@ The Power Query Formula Language (informally known as "M") is a powerful **mashu
 |[List.RemoveNulls](list-removenulls.md)|Removes null values from a list.|  
 |[List.ReplaceMatchingItems](list-replacematchingitems.md)|Replaces occurrences of existing values in the list with new values using the provided equationCriteria. Old and new values are provided by the replacements parameters. An optional equation criteria value can be specified to control equality comparisons. For details of replacement operations and equation criteria, see Parameter Values.|  
 |[List.ReplaceValue](list-replacevalue.md)|Searches a list of values for the value and replaces each occurrence with the replacement value.|  
-|[List.Reverse](list-reverse.md)|Returns a list that reverses the items in a list.|
+|[List.Reverse](list-reverse.md)|Returns a list that reverses the items in a list.|   
+|[List.Split](list-split.md)|Splits the specified list into a list of lists using the specified page size.|
 |[List.Transform](list-transform.md)|Performs the function on each item in the list and returns the new list.|  
 |[List.TransformMany](list-transformmany.md)|Returns a list whose elements are projected from the input list.|
   
