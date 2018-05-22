@@ -1,6 +1,6 @@
 ---
 title: "Csv.Document | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 5/2/2018
 ms.prod: power-query
 ms.reviewer: owend
 ms.topic: reference
