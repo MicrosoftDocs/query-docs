@@ -1,6 +1,6 @@
 ---
 title: "AzureStorage.Blobs | Microsoft Docs"
-ms.date: 4/17/2018
+ms.date: 4/16/2018
 ms.prod: power-query
 ms.reviewer: owend
 ms.topic: reference
@@ -12,7 +12,6 @@ manager: kfile
 <code>AzureStorage.Blobs(<b>account</b> as text, optional <b>options</b> as nullable record) as table</code>
   
 ## About  
-Returns a navigational table containing all containers found in the Azure Storage account. Each row has the container name and a link to the container blobs.  
 
- 
+Returns a navigational table containing a row for each container found at the account URL, <code>account</code>, from an Azure storage vault. Each row contains a link to the container blobs.
   
