@@ -63,7 +63,7 @@ Functions in this section access data and return table values. Most of these fun
 |[MySQL.Database](mysql-database.md)|Returns a table with data relating to the tables in the specified MySQL Database.| 
 |[OData.Feed](odata-feed.md)|Returns a table of OData feeds offered by an OData serviceUri.|  
 |[Odbc.DataSource](odbc-datasource.md)|Returns a table of SQL tables and views from the ODBC data source specified by the connection string <code>connectionString</code>. |  
-|[Odbc.InferOptions](odbc-inferoptions.md)|Returns the result of trying to infer SQL capabilities for an ODBC driver.. |  
+|[Odbc.InferOptions](odbc-inferoptions.md)|Returns the result of trying to infer SQL capabilities for an ODBC driver. |  
 |[Odbc.Query](odbc-query.md)|Connects to a generic provider with the given connection string and returns the result of evaluating the query.|  
 |[OleDb.DataSource](oledb-datasource.md)|Returns a table of SQL tables and views from the OLE DB data source specified by the connection string.| 
 |[OleDb.Query](oledb-query.md)|Returns the result of running a native query on an OLE DB data source.| 
