@@ -1,6 +1,6 @@
 ---
 title: "Type.ForFunction | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 5/22/2018
 ms.prod: power-query
 ms.reviewer: owend
 ms.topic: reference
@@ -12,6 +12,7 @@ manager: kfile
 <code>Type.ForFunction(<b>signature</b> as record, <b>min</b> as number) as type</code>
 ## About
 Creates a <code>function type</code> from <code>signature</code>, a record of <code>ReturnType</code> and <code>Parameters</code>, and <code>min</code>, the minimum number of arguments required to invoke the function.
+
 
 ## Example 1
 Creates the type for a function that takes a number parameter named X and returns a number.

@@ -63,6 +63,7 @@ Functions in this section access data and return table values. Most of these fun
 |[MySQL.Database](mysql-database.md)|Returns a table with data relating to the tables in the specified MySQL Database.| 
 |[OData.Feed](odata-feed.md)|Returns a table of OData feeds offered by an OData serviceUri.|  
 |[Odbc.DataSource](odbc-datasource.md)|Returns a table of SQL tables and views from the ODBC data source specified by the connection string <code>connectionString</code>. |  
+|[Odbc.InferOptions](odbc-inferoptions.md)|Returns the result of trying to infer SQL capabilities for an ODBC driver.. |  
 |[Odbc.Query](odbc-query.md)|Connects to a generic provider with the given connection string and returns the result of evaluating the query.|  
 |[OleDb.DataSource](oledb-datasource.md)|Returns a table of SQL tables and views from the OLE DB data source specified by the connection string.| 
 |[OleDb.Query](oledb-query.md)|Returns the result of running a native query on an OLE DB data source.| 
@@ -73,6 +74,9 @@ Functions in this section access data and return table values. Most of these fun
 |[Salesforce.Reports](salesforce-reports.md)|Connects to the Salesforce Reports API and returns the set of available reports.|  
 |[SapBusinessObjects.Universes](sapbusinessobjects-universes.md)|Connects to the SAP BusinessObjects BI Universe at the specified URL and returns the set of available universes.|  
 |[SapBusinessWarehouse.Cubes](sapbusinesswarehouse-cubes.md)|Returns the InfoCubes and queries in an SAP Business Warehouse system grouped by InfoArea.| 
+|[SapBusinessWarehouseExecutionMode.DataStream](sapbusinesswarehouseexecutionmode.datastream.md)|'DataStream flattening mode' option for MDX execution in SAP Business Warehouse.| 
+|[SapBusinessWarehouseExecutionMode.BasXml](sapbusinesswarehouseexecutionmode.basxml.md)|'bXML flattening mode' option for MDX execution in SAP Business Warehouse.| 
+|[SapBusinessWarehouseExecutionMode.BasXmlGzip](sapbusinesswarehouseexecutionmode.basxmlgzip.md)|'Gzip compressed bXML flattening mode' option for MDX execution in SAP Business Warehouse. Recommended for low latency or high volume queries.| 
 |[SapHana.Database](saphana-database.md)|Returns the packages in an SAP HANA database.| 
 |[SapHanaDistribution.All](saphanadistribution-all.md)|Returns the packages in an SAP HANA database.|
 |[SapHanaDistribution.Connection](saphanadistribution-connection.md)|'Connection' distribution option for SAP HANA.|

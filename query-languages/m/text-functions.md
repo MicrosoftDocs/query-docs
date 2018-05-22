@@ -82,6 +82,7 @@ manager: kfile
 |[Text.PadStart](text-padstart.md)|Returns a text value padded at the beginning with pad to make it at least length characters. If pad is not specified, whitespace is used as pad.|  
 |[Text.Proper](text-proper.md)|Returns a text value with first letters of all words converted to uppercase.|  
 |[Text.Repeat](text-repeat.md)|Returns a text value composed of the input text value repeated a number of times.|  
+|[Text.Reverse](text-reverse.md)|Reverses the provided text.|  
 |[Text.Split](text-split.md)|Returns a list containing parts of a text value that are delimited by a separator text value.|  
 |[Text.SplitAny](text-splitany.md)|Returns a list containing parts of a text value that are delimited by any separator text values.|  
 |[Text.Trim](text-trim.md)|Removes any occurrences of characters in trimChars from text.|  
