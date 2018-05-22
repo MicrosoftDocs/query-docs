@@ -1,7 +1,7 @@
 ---
 title: "DAX Semantic error: One or more expressions defined as filter arguments cannot be used in this expression. Rewrite your filter expression using the FILTER function. | Microsoft Docs"
 ms.prod: dax
-ms.date: 4/13/2018
+ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
