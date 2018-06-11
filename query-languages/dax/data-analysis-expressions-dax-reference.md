@@ -1,7 +1,7 @@
 ---
 title: "Data Analysis Expressions (DAX) Reference | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/28/2017"
+ms.date: "06/11/2017"
 ms.prod: "powerbi"
 ms.reviewer: ""
 ms.suite: ""
@@ -23,8 +23,8 @@ manager: "kfile"
 # Data Analysis Expressions (DAX) Reference
 Data Analysis Expressions (DAX) is a library of functions and operators that can be combined to build formulas and expressions in Microsoft SQL Server Analysis Services, Power Pivot in Excel, and Power BI Desktop.  
   
-## In This Section  
-[New DAX Functions](new-dax-functions.md) - This article describes new DAX functions included in SQL Server 2016 Analysis Services, Power Pivot in Excel 2016, and Power BI Desktop.  
+## Sections  
+[New DAX Functions](new-dax-functions.md) - This article describes new DAX functions included in SQL Server Analysis Services, Power Pivot in Excel, and Power BI Desktop.  
   
 [DAX Function Reference](dax-function-reference.md) - Topics in this section provide in-depth technical reference information for each of the over 200 different DAX functions. Functions are divided into categories such as Statistical, Filter, Data and Time, etc.  
   
