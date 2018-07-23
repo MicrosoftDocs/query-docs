@@ -1,6 +1,6 @@
 ---
 title: "MySQL.Database | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/23/2018
 ms.prod: power-query
 ms.reviewer: owend
 ms.topic: reference
@@ -15,6 +15,7 @@ manager: kfile
 
 Returns a table of SQL tables, views, and stored scalar functions available in a MySQL database on server <code>server</code> in the database instance named <code>database</code>. The port may be optionally specified with the server, separated by a colon. An optional record parameter, <code>options</code>, may be specified to control the following options: 
 
+* <code>Encoding</code> : A TextEncoding value that specifies the character set used to encode all queries sent to the server (default is null).
 * <code>CreateNavigationProperties</code> : A logical (true/false) that sets whether to generate navigation properties on the returned values (default is true).
 * <code>NavigationPropertyNameGenerator</code> : A function that is used for the creation of names for navigation properties.
 * <code>Query</code> : A native SQL query used to retrieve data. If the query produces multiple result sets, only the first will be returned.
