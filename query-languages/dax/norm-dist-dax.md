@@ -28,7 +28,7 @@ NORM.DIST(X, Mean, Standard_dev, Cumulative)
 |**Cumulative**|A logical value that determines the form of the function. If cumulative is TRUE, NORM.DIST returns the cumulative distribution function; if FALSE, it returns the probability mass function.|
   
 ## Return Value  
-Returns the normal distribution for the specified mean and standard deviation.  
+The normal distribution for the specified mean and standard deviation.  
   
 ## Example  
   

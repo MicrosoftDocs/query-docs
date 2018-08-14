@@ -9,7 +9,7 @@ ms.author: owend
 manager: kfile
 ---
 # NORM.INV Function
-Returns the inverse of the normal cumulative distribution for the specified mean and standard deviation.
+The inverse of the normal cumulative distribution for the specified mean and standard deviation.
  
   
 ## Syntax  

@@ -76,13 +76,13 @@ Data Analysis Expressions (DAX) provides many functions for creating aggregation
   
 [MINX Function &#40;DAX&#41;](minx-function-dax.md)  
   
-[NORM.DIST Function](norm-dist-dax.md)  
+[NORM.DIST Function &#40;DAX&#41;](norm-dist-dax.md)  
   
-[NORM.INV Function](norm-inv-dax.md)  
+[NORM.INV Function &#40;DAX&#41;](norm-inv-dax.md)  
   
-[NORM.S.DIST Function](norm-s-dist-dax.md)  
+[NORM.S.DIST Function &#40;DAX&#41;](norm-s-dist-dax.md)  
   
-[NORM.S.INV](norm-s-inv-dax.md)  
+[NORM.S.INV &#40;DAX&#41;](norm-s-inv-dax.md)  
   
 [PERCENTILE.EXC Function &#40;DAX&#41;](percentile-exc-function-dax.md)  
   
@@ -120,15 +120,15 @@ Data Analysis Expressions (DAX) provides many functions for creating aggregation
   
 [SUMMARIZE Function &#40;DAX&#41;](summarize-function-dax.md)  
   
-[T.DIST Function](t-dist-dax.md) 
+[T.DIST Function &#40;DAX&#41;](t-dist-dax.md) 
   
-[T.DIST.2T Function](t-dist-2t-dax.md) 
+[T.DIST.2T Function &#40;DAX&#41;](t-dist-2t-dax.md) 
   
-[T.DIST.RT Function](t-dist-rt-dax.md) 
+[T.DIST.RT Function &#40;DAX&#41;](t-dist-rt-dax.md) 
   
-[T.INV Function](t-inv-dax.md) 
+[T.INV Function &#40;DAX&#41;](t-inv-dax.md) 
   
-[T.INV.2t Function](t-inv-2t-dax.md) 
+[T.INV.2t Function &#40;DAX&#41;](t-inv-2t-dax.md) 
   
 [TAN Function &#40;DAX&#41;](tan-function-dax.md)  
   

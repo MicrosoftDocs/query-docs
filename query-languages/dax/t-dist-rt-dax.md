@@ -26,7 +26,7 @@ T.DIST.RT(X,Deg_freedom)
 |**Deg_freedom** |An integer indicating the number of degrees of freedom.|
   
 ## Return Value  
-Returns the right-tailed Student's t-distribution.
+The right-tailed Student's t-distribution.
   
 ## Example  
   

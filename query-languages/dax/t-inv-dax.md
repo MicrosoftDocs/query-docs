@@ -26,7 +26,7 @@ T.INV(Probability,Deg_freedom)
 |**Deg_freedom** |The number of degrees of freedom with which to characterize the distribution.|
   
 ## Return Value  
-Returns the left-tailed inverse of the Student's t-distribution. 
+The left-tailed inverse of the Student's t-distribution. 
   
 ## Example  
   

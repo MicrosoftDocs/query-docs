@@ -26,7 +26,7 @@ T.DIST.2T(X,Deg_freedom)
 |**Deg_freedom** |An integer indicating the number of degrees of freedom.|
   
 ## Return Value  
-Returns the two-tailed Student's t-distribution.
+The two-tailed Student's t-distribution.
   
 ## Example  
   

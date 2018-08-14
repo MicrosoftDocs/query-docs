@@ -27,7 +27,7 @@ T.DIST(X,Deg_freedom,Cumulative)
 |**Cumulative**|A logical value that determines the form of the function. If cumulative is TRUE, T.DIST returns the cumulative distribution function; if FALSE, it returns the probability density function.|
   
 ## Return Value  
-Returns the Student's left-tailed t-distribution. 
+The Student's left-tailed t-distribution. 
   
 ## Example  
   

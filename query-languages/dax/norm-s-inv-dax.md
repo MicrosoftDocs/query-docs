@@ -25,7 +25,7 @@ NORM.S.INV(Probability)
 |**Probability**|A probability corresponding to the normal distribution.|  
   
 ## Return Value  
-Returns the inverse of the standard normal cumulative distribution. The distribution has a mean of zero and a standard deviation of one.
+The inverse of the standard normal cumulative distribution. The distribution has a mean of zero and a standard deviation of one.
   
 ## Example  
   
