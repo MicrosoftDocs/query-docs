@@ -33,7 +33,7 @@ DAX is continuously being improved with new functions and functionality to suppo
 [T.DIST.2T Function](t-dist-2t-dax.md)   
 [T.DIST.RT Function](t-dist-rt-dax.md)   
 [T.INV Function](t-inv-dax.md)   
-[T.INV.2t Function](t-inv-2t-dax.md)   
+[T.INV.2T Function](t-inv-2t-dax.md)   
   
  
  ## Updated
