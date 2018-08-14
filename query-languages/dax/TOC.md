@@ -238,7 +238,7 @@
 #### [T.DIST.2T Function](t-dist-2t-dax.md)
 #### [T.DIST.RT Function](t-dist-rt-dax.md)
 #### [T.INV Function](t-inv-dax.md)
-#### [T.INV.2t Function](t-inv-2t-dax.md)
+#### [T.INV.2T Function](t-inv-2t-dax.md)
 #### [TAN Function](tan-function-dax.md)
 #### [TANH Function](tanh-function-dax.md)
 #### [TOPN Function](topn-function-dax.md)
