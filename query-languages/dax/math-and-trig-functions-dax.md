@@ -67,7 +67,7 @@ The mathematical functions in Data Analysis Expressions (DAX) are very similar t
 [INT Function &#40;DAX&#41;](int-function-dax.md)  
   
 [MROUND Function &#40;DAX&#41;](mround-function-dax.md)  
-  
+
 [ODD Function &#40;DAX&#41;](odd-function-dax.md)  
   
 [PI Function &#40;DAX&#41;](pi-function-dax.md)  
