@@ -23,9 +23,10 @@ Functions in this section access data and return table values. Most of these fun
 |[AdoDotNet.Query](adodotnet-query.md)|Returns the result of running a native query on an ADO.NET data source.|
 |[AnalysisServices.Database](analysisservices-database.md)|Returns a table of multidimensional cubes or tabular models from the Analysis Services database.|  
 |[AnalysisServices.Databases](analysisservices-databases.md)|Returns the Analysis Services databases on a particular host.|
-| [AzureStorage.BlobContents](azurestorage-blobcontents.md) | Returns the content of the specified blob from an Azure storage vault. |  
+|[AzureStorage.BlobContents](azurestorage-blobcontents.md) | Returns the content of the specified blob from an Azure storage vault. |  
 |[AzureStorage.Blobs](azurestorage-blobs.md)|Returns a navigational table containing all containers found in the Azure Storage account. Each row has the container name and a link to the container blobs.|  
 |[AzureStorage.Tables](azurestorage-tables.md)|Returns a navigational table containing a row for each table found at the account URL from an Azure storage vault. Each row contains a link to the azure table.|  
+|[AzureStorage.DataLakeContents](azurestorage-datalakecontents.md)|Returns the content of the file at the URL from an Azure Data Lake Storage filesystem.|
 |[Csv.Document](csv-document.md)|Returns the contents of a CSV document as a table using the specified encoding.|
 |[CsvStyle.QuoteAfterDelimiter](csvstyle-quoteafterdelimiter.md)|Quotes in a field are only significant immediately following the delimiter.| 
 |[CsvStyle.QuoteAlways](csvstyle-quotealways.md)|Quotes in a field are always significant regardless of where they appear.
@@ -38,6 +39,8 @@ Functions in this section access data and return table values. Most of these fun
 |[Cube.Dimensions](cube-dimensions.md)|Returns a table containing the set of available dimensions within the cube.|
 |[Cube.DisplayFolders](cube-displayfolders.md)|Returns a nested tree of tables representing the display folder hierarchy of the objects (e.g. dimensions and measures) available for use in the cube.
 |[Cube.Measures](cube-measures.md)|Returns a table containing the set of available measures within the cube.|
+|[Cube.MeasureProperties](cube-measureproperties.md)|Returns a table containing the set of available properties for measures that are expanded in the cube.|
+|[Cube.MeasureProperty](cube-measureproperty.md)|Returns the property of a measure.|
 |[Cube.Parameters](cube-parameters.md)|Returns a table containing the set of parameters that can be applied to cube.|   
 |[Cube.Properties](cube-properties.md)|Returns a table containing the set of available properties for dimensions that are expanded in the cube.|
 | [Cube.PropertyKey](cube-propertykey.md)  | Returns the key of property `property`.  |
