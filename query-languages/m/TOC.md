@@ -292,6 +292,7 @@
 #### [Function.Invoke](function-invoke.md)
 #### [Function.InvokeAfter](function-invokeafter.md)
 #### [Function.IsDataSource](function-isdatasource.md)
+#### [Function.ScalarVector](function-scalarvector.md)
 ### [Lines functions](lines-functions.md)
 #### [Lines.FromBinary](lines-frombinary.md)
 #### [Lines.FromText](lines-fromtext.md)
