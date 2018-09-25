@@ -1,7 +1,7 @@
 ---
 title: "DATESINPERIOD Function (DAX) | Microsoft Docs"
 ms.prod: dax
-ms.date: 5/22/2018
+ms.date: 9/25/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -31,13 +31,7 @@ DATESINPERIOD(<dates>,<start_date>,<number_of_intervals>,<interval>)
 A table containing a single column of date values.  
   
 ## Remarks  
-The **dates** argument can be any of the following:  
-  
--   A reference to a date/time column,  
-  
--   A table expression that returns a single column of date/time values,  
-  
--   A Boolean expression that defines a single-column table of date/time values.  
+The **dates** argument can be a reference to a date/time column.  
   
 > [!NOTE]  
 > Constraints on Boolean expressions are described in the topic, [CALCULATE Function &#40;DAX&#41;](calculate-function-dax.md).  
