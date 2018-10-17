@@ -285,7 +285,7 @@
               href: occurrence-repeating.md
             - name: Occurrence.Required
               href: occurrence-required.md
-            - name: null
+            - name: #binary
               href: sharpbinary.md
         - name: Combiner functions
           items: 
@@ -447,7 +447,7 @@
               href: day-tuesday.md
             - name: Day.Wednesday
               href: day-wednesday.md
-            - name: null
+            - name: #date
               href: sharpdate.md
         - name: DateTime functions
           items: 
@@ -503,7 +503,7 @@
               href: datetime-torecord.md
             - name: DateTime.ToText
               href: datetime-totext.md
-            - name: null
+            - name: #datetime
               href: sharpdatetime.md
         - name: DateTimeZone functions
           items: 
@@ -539,7 +539,7 @@
               href: datetimezone-zonehours.md
             - name: DateTimeZone.ZoneMinutes
               href: datetimezone-zoneminutes.md
-            - name: null
+            - name: #datetimezone
               href: sharpdatetimezone.md
         - name: Duration functions
           items: 
@@ -567,7 +567,7 @@
               href: duration-totalseconds.md
             - name: Duration.ToText
               href: duration-totext.md
-            - name: null
+            - name: #duration
               href: sharpduration.md
             - name: Duration functions Overview
               href: duration-functions.md
@@ -1247,7 +1247,7 @@
               href: table-viewfunction.md
             - name: Tables.GetRelationships
               href: tables-getrelationships.md
-            - name: null
+            - name: #table
               href: sharptable.md
         - name: Text functions
           items: 
@@ -1377,7 +1377,7 @@
               href: time-torecord.md
             - name: Time.ToText
               href: time-totext.md
-            - name: null
+            - name: #time
               href: sharptime.md
         - name: Type functions
           items: 
