@@ -36,7 +36,8 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/dax/breadcrumb/toc.json",
-      "extendBreadcrumb": true
+      "extendBreadcrumb": true,
+      "titleSuffix": "DAX"
     },
     "fileMetadata": {},
     "template": [],
