@@ -23,7 +23,7 @@ DateTimeZone.From(value as any, optional culture as nullable text) as nullable d
 |Argument|Description|  
 |------------|---------------|  
 |value|Value to convert.|  
-|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](http://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
+|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
   
 ### Type to convert  
   

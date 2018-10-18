@@ -24,7 +24,7 @@ Number.ToText(number as number, optional format as nullable text, optional cultu
 |------------|---------------|  
 |number|Number value to convert to text.|  
 |optional format|An optional text value used to format common numeric values.|  
-|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](http://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
+|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
   
 ## <a name="__toc360788713"></a>Format Settings  
   
