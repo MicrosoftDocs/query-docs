@@ -23,7 +23,7 @@ Time.FromText(time as nullable text, optional culture as nullable text) as nulla
 |Argument|Description|  
 |------------|---------------|  
 |time|The text value representing the time.|  
-|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](http://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
+|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
   
 ### Time formats  
   
