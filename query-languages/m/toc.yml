@@ -1,12 +1,7 @@
 - name: Power Query M Reference
+  href: power-query-m-reference.md
   expanded: true
   items: 
-    - name: Power Query M Reference Overview
-      href: power-query-m-reference.md
-    - name: Power Query M language specification
-      href: power-query-m-language-specification.md
-    - name: Power Query M type system
-      href: power-query-m-type-system.md
     - name: Power Query M function reference
       items: 
         - name: Power Query M Function Reference Overview
@@ -1493,6 +1488,10 @@
               href: variable-value.md
     - name: Quick tour of the Power Query M formula language
       href: quick-tour-of-the-power-query-m-formula-language.md
+    - name: Power Query M language specification
+      href: power-query-m-language-specification.md
+    - name: Power Query M type system
+      href: power-query-m-type-system.md
     - name: Expressions, values, and let expression
       href: expressions-values-and-let-expression.md
     - name: Comments
