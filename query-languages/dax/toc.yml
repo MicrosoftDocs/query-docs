@@ -1,0 +1,589 @@
+- name: Data Analysis Expressions (DAX) Reference
+  href: data-analysis-expressions-dax-reference.md
+  expanded: true
+  items: 
+    - name: New DAX Functions
+      href: new-dax-functions.md
+    - name: DAX Function Reference
+      expanded: true
+      items: 
+        - name: DAX Function Reference Overview
+          href: dax-function-reference.md
+        - name: Date and Time Functions
+          items: 
+            - name: Date and Time Functions Overview
+              href: date-and-time-functions-dax.md
+            - name: CALENDAR Function
+              href: calendar-function-dax.md
+            - name: CALENDARAUTO Function
+              href: calendarauto-function-dax.md
+            - name: DATE Function
+              href: date-function-dax.md
+            - name: DATEDIFF Function
+              href: datediff-function-dax.md
+            - name: DATEVALUE Function
+              href: datevalue-function-dax.md
+            - name: DAY Function
+              href: day-function-dax.md
+            - name: EDATE Function
+              href: edate-function-dax.md
+            - name: EOMONTH Function
+              href: eomonth-function-dax.md
+            - name: HOUR Function
+              href: hour-function-dax.md
+            - name: MINUTE Function
+              href: minute-function-dax.md
+            - name: MONTH Function
+              href: month-function-dax.md
+            - name: NOW Function
+              href: now-function-dax.md
+            - name: SECOND Function
+              href: second-function-dax.md
+            - name: TIME Function
+              href: time-function-dax.md
+            - name: TIMEVALUE Function
+              href: timevalue-function-dax.md
+            - name: TODAY Function
+              href: today-function-dax.md
+            - name: UTCNOW Function
+              href: utcnow-function-dax.md
+            - name: UTCTODAY Function
+              href: utctoday-function-dax.md
+            - name: WEEKDAY Function
+              href: weekday-function-dax.md
+            - name: WEEKNUM Function
+              href: weeknum-function-dax.md
+            - name: YEAR Function
+              href: year-function-dax.md
+            - name: YEARFRAC Function
+              href: yearfrac-function-dax.md
+        - name: Time Intelligence Functions
+          items: 
+            - name: Time Intelligence Functions Overview
+              href: time-intelligence-functions-dax.md
+            - name: CLOSINGBALANCEMONTH Function
+              href: closingbalancemonth-function-dax.md
+            - name: CLOSINGBALANCEQUARTER Function
+              href: closingbalancequarter-function-dax.md
+            - name: CLOSINGBALANCEYEAR Function
+              href: closingbalanceyear-function-dax.md
+            - name: DATEADD Function
+              href: dateadd-function-dax.md
+            - name: DATESBETWEEN Function
+              href: datesbetween-function-dax.md
+            - name: DATESINPERIOD Function
+              href: datesinperiod-function-dax.md
+            - name: DATESMTD Function
+              href: datesmtd-function-dax.md
+            - name: DATESQTD Function
+              href: datesqtd-function-dax.md
+            - name: DATESYTD Function
+              href: datesytd-function-dax.md
+            - name: ENDOFMONTH Function
+              href: endofmonth-function-dax.md
+            - name: ENDOFQUARTER Function
+              href: endofquarter-function-dax.md
+            - name: ENDOFYEAR Function
+              href: endofyear-function-dax.md
+            - name: FIRSTDATE Function
+              href: firstdate-function-dax.md
+            - name: FIRSTNONBLANK Function
+              href: firstnonblank-function-dax.md
+            - name: LASTDATE Function
+              href: lastdate-function-dax.md
+            - name: LASTNONBLANK Function
+              href: lastnonblank-function-dax.md
+            - name: NEXTDAY Function
+              href: nextday-function-dax.md
+            - name: NEXTMONTH Function
+              href: nextmonth-function-dax.md
+            - name: NEXTQUARTER Function
+              href: nextquarter-function-dax.md
+            - name: NEXTYEAR Function
+              href: nextyear-function-dax.md
+            - name: OPENINGBALANCEMONTH Function
+              href: openingbalancemonth-function-dax.md
+            - name: OPENINGBALANCEQUARTER Function
+              href: openingbalancequarter-function-dax.md
+            - name: OPENINGBALANCEYEAR Function
+              href: openingbalanceyear-function-dax.md
+            - name: PARALLELPERIOD Function
+              href: parallelperiod-function-dax.md
+            - name: PREVIOUSDAY Function
+              href: previousday-function-dax.md
+            - name: PREVIOUSMONTH Function
+              href: previousmonth-function-dax.md
+            - name: PREVIOUSQUARTER Function
+              href: previousquarter-function-dax.md
+            - name: PREVIOUSYEAR Function
+              href: previousyear-function-dax.md
+            - name: SAMEPERIODLASTYEAR Function
+              href: sameperiodlastyear-function-dax.md
+            - name: STARTOFMONTH Function
+              href: startofmonth-function-dax.md
+            - name: STARTOFQUARTER Function
+              href: startofquarter-function-dax.md
+            - name: STARTOFYEAR Function
+              href: startofyear-function-dax.md
+            - name: TOTALMTD Function
+              href: totalmtd-function-dax.md
+            - name: TOTALQTD Function
+              href: totalqtd-function-dax.md
+            - name: TOTALYTD Function
+              href: totalytd-function-dax.md
+        - name: Filter Functions
+          items: 
+            - name: Filter Functions Overview
+              href: filter-functions-dax.md
+            - name: ADDMISSINGITEMS Function
+              href: addmissingitems-function-dax.md
+            - name: ALL Function
+              href: all-function-dax.md
+            - name: ALLEXCEPT Function
+              href: allexcept-function-dax.md
+            - name: ALLNOBLANKROW Function
+              href: allnoblankrow-function-dax.md
+            - name: ALLSELECTED Function
+              href: allselected-function-dax.md
+            - name: CALCULATE Function
+              href: calculate-function-dax.md
+            - name: CALCULATETABLE Function
+              href: calculatetable-function-dax.md
+            - name: CROSSFILTER Function
+              href: crossfilter-function.md
+            - name: DISTINCT (column) Function
+              href: distinct-function-dax.md
+            - name: DISTINCT (table) Function
+              href: distinct-table-function-dax.md
+            - name: EARLIER Function
+              href: earlier-function-dax.md
+            - name: EARLIEST Function
+              href: earliest-function-dax.md
+            - name: FILTER Function
+              href: filter-function-dax.md
+            - name: FILTERS Function
+              href: filters-function-dax.md
+            - name: HASONEFILTER Function
+              href: hasonefilter-function-dax.md
+            - name: HASONEVALUE Function
+              href: hasonevalue-function-dax.md
+            - name: ISCROSSFILTERED Function
+              href: iscrossfiltered-function-dax.md
+            - name: ISFILTERED Function
+              href: isfiltered-function-dax.md
+            - name: KEEPFILTERS Function
+              href: keepfilters-function-dax.md
+            - name: RELATED Function
+              href: related-function-dax.md
+            - name: RELATEDTABLE Function
+              href: relatedtable-function-dax.md
+            - name: SELECTEDVALUE Function
+              href: selectedvalue-function.md
+            - name: SUBSTITUTEWITHINDEX Function
+              href: substitutewithindex-function-dax.md
+            - name: USERELATIONSHIP Function
+              href: userelationship-function-dax.md
+            - name: VALUES Function
+              href: values-function-dax.md
+        - name: Information Functions
+          items: 
+            - name: Information Functions Overview
+              href: information-functions-dax.md
+            - name: CONTAINS Function
+              href: contains-function-dax.md
+            - name: CUSTOMDATA Function
+              href: customdata-function-dax.md
+            - name: IN Operator / CONTAINSROW Function
+              href: in-operator-containsrow-function.md
+            - name: ISBLANK Function
+              href: isblank-function-dax.md
+            - name: ISERROR Function
+              href: iserror-function-dax.md
+            - name: ISEVEN Function
+              href: iseven-function-dax.md
+            - name: ISLOGICAL Function
+              href: islogical-function-dax.md
+            - name: ISNONTEXT Function
+              href: isnontext-function-dax.md
+            - name: ISNUMBER Function
+              href: isnumber-function-dax.md
+            - name: ISODD Function
+              href: isodd-function-dax.md
+            - name: ISONORAFTER Function
+              href: isonorafter-function-dax.md
+            - name: ISTEXT Function
+              href: istext-function-dax.md
+            - name: LOOKUPVALUE Function
+              href: lookupvalue-function-dax.md
+            - name: USERNAME Function
+              href: username-function-dax.md
+        - name: Logical Functions
+          items: 
+            - name: Logical Functions Overview
+              href: logical-functions-dax.md
+            - name: AND Function
+              href: and-function-dax.md
+            - name: FALSE Function
+              href: false-function-dax.md
+            - name: IF Function
+              href: if-function-dax.md
+            - name: IFERROR Function
+              href: iferror-function-dax.md
+            - name: IN Function
+              href: in-function.md
+            - name: NOT Function
+              href: not-function-dax.md
+            - name: OR Function
+              href: or-function-dax.md
+            - name: SWITCH Function
+              href: switch-function-dax.md
+            - name: TRUE Function
+              href: true-function-dax.md
+        - name: Math and Trig Functions
+          items: 
+            - name: Math and Trig Functions Overview
+              href: math-and-trig-functions-dax.md
+            - name: ABS Function
+              href: abs-function-dax.md
+            - name: ACOS Function
+              href: acos-function-dax.md
+            - name: ACOSH Function
+              href: acosh-function-dax.md
+            - name: ASIN Function
+              href: asin-function-dax.md
+            - name: ASINH Function
+              href: asinh-function-dax.md
+            - name: ATAN Function
+              href: atan-function-dax.md
+            - name: ATANH Function
+              href: atanh-function-dax.md
+            - name: CEILING Function
+              href: ceiling-function-dax.md
+            - name: COMBIN Function
+              href: combin-function-dax.md
+            - name: COMBINA Function
+              href: combina-function-dax.md
+            - name: COS Function
+              href: cos-function-dax.md
+            - name: COSH Function
+              href: cosh-function-dax.md
+            - name: CURRENCY Function
+              href: currency-function-dax.md
+            - name: DEGREES Function
+              href: degrees-function-dax.md
+            - name: DIVIDE Function
+              href: divide-function-dax.md
+            - name: EVEN Function
+              href: even-function-dax.md
+            - name: EXP Function
+              href: exp-function-dax.md
+            - name: FACT Function
+              href: fact-function-dax.md
+            - name: FLOOR Function
+              href: floor-function-dax.md
+            - name: GCD Function
+              href: gcd-function-dax.md
+            - name: INT Function
+              href: int-function-dax.md
+            - name: ISO.CEILING Function
+              href: iso-ceiling-function-dax.md
+            - name: LCM Function
+              href: lcm-function-dax.md
+            - name: LN Function
+              href: ln-function-dax.md
+            - name: LOG Function
+              href: log-function-dax.md
+            - name: LOG10 Function
+              href: log10-function-dax.md
+            - name: MOD Function
+              href: mod-function-dax.md
+            - name: MROUND Function
+              href: mround-function-dax.md
+            - name: ODD Function
+              href: odd-function-dax.md
+            - name: PI Function
+              href: pi-function-dax.md
+            - name: POWER Function
+              href: power-function-dax.md
+            - name: PRODUCT Function
+              href: product-function-dax.md
+            - name: PRODUCTX Function
+              href: productx-function-dax.md
+            - name: QUOTIENT Function
+              href: quotient-function-dax.md
+            - name: RADIANS Function
+              href: radians-function-dax.md
+            - name: RAND Function
+              href: rand-function-dax.md
+            - name: RANDBETWEEN Function
+              href: randbetween-function-dax.md
+            - name: ROUND Function
+              href: round-function-dax.md
+            - name: ROUNDDOWN Function
+              href: rounddown-function-dax.md
+            - name: ROUNDUP Function
+              href: roundup-function-dax.md
+            - name: SIGN Function
+              href: sign-function-dax.md
+            - name: SQRT Function
+              href: sqrt-function-dax.md
+            - name: SUM Function
+              href: sum-function-dax.md
+            - name: SUMX Function
+              href: sumx-function-dax.md
+            - name: TRUNC Function
+              href: trunc-function-dax.md
+        - name: Other Functions
+          items: 
+            - name: Other Functions Overview
+              href: other-functions-dax.md
+            - name: DATATABLE Function
+              href: datatable-function.md
+            - name: ERROR Function
+              href: error-function.md
+            - name: EXCEPT Function
+              href: except-function-dax.md
+            - name: GENERATESERIES Function
+              href: generateseries-function.md
+            - name: GROUPBY Function
+              href: groupby-function-dax.md
+            - name: INTERSECT Function
+              href: intersect-function-dax.md
+            - name: ISEMPTY Function
+              href: isempty-function-dax.md
+            - name: NATURALINNERJOIN Function
+              href: naturalinnerjoin-function-dax.md
+            - name: NATURALLEFTOUTERJOIN Function
+              href: naturalleftouterjoin-function-dax.md
+            - name: SUMMARIZECOLUMNS Function
+              href: summarizecolumns-function-dax.md
+            - name: Table Constructor
+              href: table-constructor.md
+            - name: TREATAS Function
+              href: treatas-function.md
+            - name: UNION Function
+              href: union-function-dax.md
+            - name: VAR
+              href: var-dax.md
+        - name: Parent and Child Functions
+          items: 
+            - name: Parent and Child Functions Overview
+              href: parent-and-child-functions-dax.md
+            - name: Understanding Functions for Parent-Child Hierarchies
+              href: understanding-functions-for-parent-child-hierarchies-in-dax.md
+            - name: PATH Function
+              href: path-function-dax.md
+            - name: PATHCONTAINS Function
+              href: pathcontains-function-dax.md
+            - name: PATHITEM Function
+              href: pathitem-function-dax.md
+            - name: PATHITEMREVERSE Function
+              href: pathitemreverse-function-dax.md
+            - name: PATHLENGTH Function
+              href: pathlength-function-dax.md
+        - name: Statistical Functions
+          items: 
+            - name: Statistical Functions Overview
+              href: statistical-functions-dax.md
+            - name: ADDCOLUMNS Function
+              href: addcolumns-function-dax.md
+            - name: AVERAGE Function
+              href: average-function-dax.md
+            - name: AVERAGEA Function
+              href: averagea-function-dax.md
+            - name: AVERAGEX Function
+              href: averagex-function-dax.md
+            - name: BETA.DIST Function
+              href: beta-dist-function-dax.md
+            - name: BETA.INV Function
+              href: beta-inv-function-dax.md
+            - name: CHISQ.INV Function
+              href: chisq-inv-function-dax.md
+            - name: CHISQ.INV.RT Function
+              href: chisq-inv-rt-function-dax.md
+            - name: CONFIDENCE.NORM Function
+              href: confidence-norm-function-dax.md
+            - name: CONFIDENCE.T Function
+              href: confidence-t-function-dax.md
+            - name: COUNT Function
+              href: count-function-dax.md
+            - name: COUNTA Function
+              href: counta-function-dax.md
+            - name: COUNTAX Function
+              href: countax-function-dax.md
+            - name: COUNTBLANK Function
+              href: countblank-function-dax.md
+            - name: COUNTROWS Function
+              href: countrows-function-dax.md
+            - name: COUNTX Function
+              href: countx-function-dax.md
+            - name: CROSSJOIN  Function
+              href: crossjoin-function-dax.md
+            - name: DISTINCTCOUNT Function
+              href: distinctcount-function-dax.md
+            - name: EXPON.DIST Function
+              href: expon-dist-function-dax.md
+            - name: GENERATE  Function
+              href: generate-function-dax.md
+            - name: GENERATEALL Function
+              href: generateall-function-dax.md
+            - name: GEOMEAN Function
+              href: geomean-function-dax.md
+            - name: GEOMEANX Function
+              href: geomeanx-function-dax.md
+            - name: MAX Function
+              href: max-function-dax.md
+            - name: MAXA Function
+              href: maxa-function-dax.md
+            - name: MAXX Function
+              href: maxx-function-dax.md
+            - name: MEDIAN Function
+              href: median-function-dax.md
+            - name: MEDIANX Function
+              href: medianx-function-dax.md
+            - name: MIN Function
+              href: min-function-dax.md
+            - name: MINA Function
+              href: mina-function-dax.md
+            - name: MINX Function
+              href: minx-function-dax.md
+            - name: NORM.DIST Function
+              href: norm-dist-dax.md
+            - name: NORM.INV Function
+              href: norm-inv-dax.md
+            - name: NORM.S.DIST Function
+              href: norm-s-dist-dax.md
+            - name: NORM.S.INV
+              href: norm-s-inv-dax.md
+            - name: PERCENTILE.EXC Function
+              href: percentile-exc-function-dax.md
+            - name: PERCENTILE.INC Function
+              href: percentile-inc-function-dax.md
+            - name: PERCENTILEX.EXC Function
+              href: percentilex-exc-function-dax.md
+            - name: PERCENTILEX.INC Function
+              href: percentilex-inc-function-dax.md
+            - name: PERMUT Function
+              href: permut-function-dax.md
+            - name: POISSON.DIST Function
+              href: poisson-dist-function-dax.md
+            - name: RANK.EQ  Function
+              href: rank-eq-function-dax.md
+            - name: RANKX Function
+              href: rankx-function-dax.md
+            - name: ROW Function
+              href: row-function-dax.md
+            - name: SAMPLE Function
+              href: sample-function-dax.md
+            - name: SELECTCOLUMNS Function (DAX)
+              href: selectcolumns-function-dax.md
+            - name: SIN Function
+              href: sin-function-dax.md
+            - name: SINH Function
+              href: sinh-function-dax.md
+            - name: STDEV.S Function
+              href: stdev-s-function-dax.md
+            - name: STDEV.P Function
+              href: stdev-p-function-dax.md
+            - name: STDEVX.S Function
+              href: stdevx-s-function-dax.md
+            - name: STDEVX.P Function
+              href: stdevx-p-function-dax.md
+            - name: SQRTPI Function
+              href: sqrtpi-function-dax.md
+            - name: SUMMARIZE Function
+              href: summarize-function-dax.md
+            - name: T.DIST Function
+              href: t-dist-dax.md
+            - name: T.DIST.2T Function
+              href: t-dist-2t-dax.md
+            - name: T.DIST.RT Function
+              href: t-dist-rt-dax.md
+            - name: T.INV Function
+              href: t-inv-dax.md
+            - name: T.INV.2T Function
+              href: t-inv-2t-dax.md
+            - name: TAN Function
+              href: tan-function-dax.md
+            - name: TANH Function
+              href: tanh-function-dax.md
+            - name: TOPN Function
+              href: topn-function-dax.md
+            - name: VAR.S Function
+              href: var-s-function-dax.md
+            - name: VAR.P Function
+              href: var-p-function-dax.md
+            - name: VARX.S Function
+              href: varx-s-function-dax.md
+            - name: VARX.P Function
+              href: varx-p-function-dax.md
+            - name: XIRR Function
+              href: xirr-function-dax.md
+            - name: XNPV Function
+              href: xnpv-function-dax.md
+        - name: Text Functions
+          items: 
+            - name: Text Functions Overview
+              href: text-functions-dax.md
+            - name: BLANK Function
+              href: blank-function-dax.md
+            - name: CODE Function
+              href: code-function-dax.md
+            - name: COMBINEVALUES Function
+              href: combinevalues-function-dax.md
+            - name: CONCATENATE Function
+              href: concatenate-function-dax.md
+            - name: CONCATENATEX Function
+              href: concatenatex-function-dax.md
+            - name: EXACT Function
+              href: exact-function-dax.md
+            - name: FIND Function
+              href: find-function-dax.md
+            - name: FIXED Function
+              href: fixed-function-dax.md
+            - name: FORMAT Function
+              items: 
+                - name: FORMAT Function Overview
+                  href: format-function-dax.md
+                - name: Pre-Defined Numeric Formats for the FORMAT Function
+                  href: pre-defined-numeric-formats-for-the-format-function.md
+                - name: Custom Numeric Formats for the FORMAT Function
+                  href: custom-numeric-formats-for-the-format-function.md
+                - name: Pre-defined Date and Time formats for the FORMAT Function
+                  href: pre-defined-date-and-time-formats-for-the-format-function.md
+                - name: Custom Date and Time formats for the FORMAT Function
+                  href: custom-date-and-time-formats-for-the-format-function.md
+            - name: LEFT Function
+              href: left-function-dax.md
+            - name: LEN Function
+              href: len-function-dax.md
+            - name: LOWER Function
+              href: lower-function-dax.md
+            - name: MID Function
+              href: mid-function-dax.md
+            - name: REPLACE Function
+              href: replace-function-dax.md
+            - name: REPT Function
+              href: rept-function-dax.md
+            - name: RIGHT Function
+              href: right-function-dax.md
+            - name: SEARCH Function
+              href: search-function-dax.md
+            - name: SUBSTITUTE Function
+              href: substitute-function-dax.md
+            - name: TRIM Function
+              href: trim-function-dax.md
+            - name: UNICHAR Function (DAX)
+              href: unichar-function-dax.md
+            - name: UPPER Function
+              href: upper-function-dax.md
+            - name: VALUE Function
+              href: value-function-dax.md
+    - name: DAX Syntax Reference
+      href: dax-syntax-reference.md
+    - name: DAX Operator Reference
+      href: dax-operator-reference.md
+    - name: DAX Parameter-Naming Conventions
+      href: dax-parameter-naming-conventions.md
+    - name: DAX Queries
+      href: dax-queries.md
