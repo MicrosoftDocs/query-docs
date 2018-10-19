@@ -1,6 +1,6 @@
 ---
 title: "WebAction.Request | Microsoft Docs"
-ms.date: 4/17/2018
+ms.date: 10/19/2018
 ms.prod: power-query
 ms.reviewer: owend
 ms.topic: reference
@@ -8,7 +8,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# Cube.Properties
+# WebAction.Request
 <code>WebAction.Request(<b>method</b> as text, <b>url</b> as text, optional <b>options</b> as nullable record) as action</code>
   
 ## About  
