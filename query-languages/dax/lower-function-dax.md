@@ -13,9 +13,9 @@ Converts all letters in a text string to lowercase.
   
 ## Syntax  
   
-```  
+```dax
 LOWER(<text>)  
-```  
+```
   
 #### Parameters  
   
@@ -32,9 +32,9 @@ Characters that are not letters are not changed. For example, the formula `=LOWE
 ## Example  
 The following formula gets each row in the column, [ProductCode], and converts the value to all lowercase. Numbers in the column are not affected.  
   
-```  
+```dax
 =LOWER('New Products'[ProductCode])  
-```  
+```
   
 ## See Also  
 [Text Functions &#40;DAX&#41;](text-functions-dax.md)  

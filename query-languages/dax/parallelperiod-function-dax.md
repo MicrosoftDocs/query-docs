@@ -13,9 +13,9 @@ Returns a table that contains a column of dates that represents a period paralle
   
 ## Syntax  
   
-```  
+```dax
 PARALLELPERIOD(<dates>,<number_of_intervals>,<interval>)  
-```  
+```
   
 #### Parameters  
   
@@ -61,9 +61,9 @@ To see how this works, create a PivotTable and add the fields, CalendarYear and 
 > [!NOTE]  
 > The above example uses the table DateTime from the DAX sample workbook. For more information about samples, see [Get Sample Data](http://go.microsoft.com/fwlink/?LinkId=164474) .  
   
-```  
+```dax
 =CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PARALLELPERIOD(DateTime[DateKey],-1,year))  
-```  
+```
   
 ## See Also  
 [Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  

@@ -13,9 +13,9 @@ Returns the sine of the given angle.
   
 ## Syntax  
   
-```  
+```dax
 SIN(number)  
-```  
+```
   
 #### Parameters  
   

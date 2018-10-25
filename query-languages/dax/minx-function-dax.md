@@ -13,9 +13,9 @@ Returns the smallest numeric value that results from evaluating an expression fo
   
 ## Syntax  
   
-```  
+```dax
 MINX(<table>, < expression>)  
-```  
+```
   
 #### Parameters  
   
@@ -41,16 +41,16 @@ If you want to include logical values and text representations of numbers in a r
 ## Example  
 The following example filters the table, InternetSales, and returns only rows for a specific sales territory. The formula then finds the minimum value in the column, Freight.  
   
-```  
+```dax
 =MINX( FILTER(InternetSales, [SalesTerritoryKey] = 5),[Freight])  
-```  
+```
   
 ## Example  
 The following example uses the same filtered table as in the previous example, but instead of merely looking up values in the column for each row of the filtered table, the function calculates the sum of two columns, Freight and TaxAmt, and returns the smallest value resulting from that calculation.  
   
-```  
+```dax
 =MINX( FILTER(InternetSales, InternetSales[SalesTerritoryKey] = 5), InternetSales[Freight] + InternetSales[TaxAmt])  
-```  
+```
   
 ## Comments  
 In the first example, the names of the columns are unqualified. In the second example, the column names are fully qualified.  

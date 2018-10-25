@@ -14,9 +14,9 @@ Returns the two-tailed Student's t-distribution.
   
 ## Syntax  
   
-```  
+```dax
 T.DIST.2T(X,Deg_freedom)
-```  
+```
   
 #### Parameters  
   
@@ -30,9 +30,9 @@ The two-tailed Student's t-distribution.
   
 ## Example  
   
-```  
+```dax
 EVALUATE { T.DIST.2T(1.959999998, 60) }
-```  
+```dax
 Returns
 
 |[Value]  |

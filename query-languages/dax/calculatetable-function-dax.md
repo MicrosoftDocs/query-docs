@@ -13,9 +13,9 @@ Evaluates a table expression in a context modified by the given filters.
   
 ## Syntax  
   
-```  
+```dax
 CALCULATETABLE(<expression>,<filter1>,<filter2>,…)  
-```  
+```
   
 #### Parameters  
   
@@ -57,10 +57,10 @@ The following table shows the results from the following formula.
 |2008|$9,041,288.80|$5,681,440.58|1.59|  
 |Grand Total|$26,054,827.45|$5,681,440.58|4.59|  
   
-```  
+```dax
 =SUMX( CALCULATETABLE('InternetSales_USD', 'DateTime'[CalendarYear]=2006)  
      , [SalesAmount_USD])  
-```  
+```
   
 ## See Also  
 [RELATEDTABLE Function &#40;DAX&#41;](relatedtable-function-dax.md)  

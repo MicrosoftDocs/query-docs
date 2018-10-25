@@ -13,9 +13,9 @@ Returns the arctangent, or inverse tangent, of a number. The arctangent is the a
   
 ## Syntax  
   
-```  
+```dax
 ATAN(number)  
-```  
+```
   
 #### Parameters  
   

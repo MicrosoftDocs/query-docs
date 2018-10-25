@@ -13,9 +13,9 @@ From the parent table of a relationship, returns all rows but the blank row, or 
   
 ## Syntax  
   
-```  
+```dax
 ALLNOBLANKROW( {<table> | <column>[, <column>[, <column>[,…]]]} ) 
-```  
+```
   
 #### Parameters  
   
@@ -103,7 +103,7 @@ Create a new PivotTable, and drag the column, datetime.[Calendar Year], to the R
   
 Now the two measures have the same results. That is because the ALLNOBLANKROW function does not count truly blank rows in a table, but only handles the blank row that is a special case generated in a parent table, when one or more of the child tables in the relationship contain non-matching values or blank values.  
   
-```  
+```dax
 // Countrows ALLNOBLANK of datetime  
 = COUNTROWS(ALLNOBLANKROW('DateTime'))  
   
@@ -115,7 +115,7 @@ Now the two measures have the same results. That is because the ALLNOBLANKROW fu
   
 // Countrows ALL of ResellerSales_USD  
 =COUNTROWS(ALL('ResellerSales_USD'))  
-```  
+```
   
 ## See Also  
 [Filter Functions &#40;DAX&#41;](filter-functions-dax.md)  

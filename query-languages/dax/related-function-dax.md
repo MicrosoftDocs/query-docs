@@ -13,9 +13,9 @@ Returns a related value from another table.
   
 ## Syntax  
   
-```  
+```dax
 RELATED(<column>)  
-```  
+```
   
 #### Parameters  
   
@@ -52,13 +52,13 @@ This expression uses the RELATED function to lookup the country value in the Sal
 > [!NOTE]  
 > If the example does not work, you might need to create a relationship between the tables.  
   
-```  
+```dax
 = SUMX(FILTER( 'InternetSales_USD'  
             ,  RELATED('SalesTerritory'[SalesTerritoryCountry])  
                <>"United States"  
              )  
      ,'InternetSales_USD'[SalesAmount_USD])  
-```  
+```dax
 The following table shows only totals for each region, to prove that the filter expression in the measure, Non USA Internet Sales, works as intended.  
   
 |Row Labels|Internet Sales|Non USA Internet Sales|  

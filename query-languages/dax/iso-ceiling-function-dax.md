@@ -13,9 +13,9 @@ Rounds a number up, to the nearest integer or to the nearest multiple of signifi
   
 ## Syntax  
   
-```  
+```dax
 ISO.CEILING(<number>[, <significance>])  
-```  
+```
   
 #### Parameters  
   
@@ -53,9 +53,9 @@ The following formula returns 4.45. This might be useful if you want to avoid us
   
 ### Code  
   
-```  
+```dax
 =ISO.CEILING(4.42,0.05)  
-```  
+```
   
 ## Example: Negative Numbers  
   
@@ -64,9 +64,9 @@ The following formula returns the ISO ceiling value of -4.40.
   
 ### Code  
   
-```  
+```dax
 =ISO.CEILING(-4.42,0.05)  
-```  
+```
   
 ## See Also  
 [Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  

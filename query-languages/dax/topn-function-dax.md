@@ -13,9 +13,9 @@ Returns the top N rows of the specified table.
   
 ## Syntax  
   
-```  
+```dax
 TOPN(<n_value>, <table>, <orderBy_expression>, [<order>[, <orderBy_expression>, [<order>]]…])  
-```  
+```
   
 #### Parameters  
 n_value  
@@ -54,6 +54,6 @@ A table with the top N rows of *table* or an empty table if *n_value* is 0 (zero
 ## Example  
 The following sample creates a measure with the sales of the top 10 sold products.  
   
-```  
+```dax
 =SUMX(TOPN(10, SUMMARIZE(Product, [ProductKey], “TotalSales”, SUMX(RELATED(InternetSales_USD[SalesAmount_USD]), InternetSales_USD[SalesAmount_USD]) + SUMX(RELATED(ResellerSales_USD[SalesAmount_USD]), ResellerSales_USD[SalesAmount_USD]))  
-```  
+```

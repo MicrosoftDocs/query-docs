@@ -13,9 +13,9 @@ Returns the last date in the current context for the specified column of dates.
   
 ## Syntax  
   
-```  
+```dax
 LASTDATE(<dates>)  
-```  
+```
   
 #### Parameters  
   
@@ -49,9 +49,9 @@ The following sample formula creates a measure that obtains the last date, for t
   
 To see how this works, create a PivotTable and add the field CalendarYear to the **Row Labels** area of the PivotTable. Then add a measure, named **LastSaleDate**, using the formula defined in the code section, to the **Values** area of the PivotTable.  
   
-```  
+```dax
 =LASTDATE('InternetSales_USD'[SaleDateKey])  
-```  
+```
   
 ## See Also  
 [Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  

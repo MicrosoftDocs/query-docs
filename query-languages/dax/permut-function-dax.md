@@ -13,9 +13,9 @@ Returns the number of permutations for a given number of objects that can be sel
   
 ## Syntax  
   
-```  
+```dax
 PERMUT(number, number_chosen)  
-```  
+```
   
 #### Parameters  
   

@@ -13,9 +13,9 @@ Returns the hyperbolic tangent of a number.
   
 ## Syntax  
   
-```  
+```dax
 TANH(number)  
-```  
+```
   
 #### Parameters  
   

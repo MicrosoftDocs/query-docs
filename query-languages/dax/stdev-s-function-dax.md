@@ -13,9 +13,9 @@ Returns the standard deviation of a sample population.
   
 ## Syntax  
   
-```  
+```dax
 STDEV.S(<ColumnName>)  
-```  
+```
   
 #### Parameters  
 *columnName*  
@@ -47,6 +47,6 @@ This DAX function may return different results when used in a model that is depl
 ## Example  
 The following example shows the formula for a measure that calculates the standard deviation of the column, SalesAmount_USD, when the table InternetSales_USD is the sample population.  
   
-```  
+```dax
 =STDEV.S(InternetSales_USD[SalesAmount_USD])  
-```  
+```

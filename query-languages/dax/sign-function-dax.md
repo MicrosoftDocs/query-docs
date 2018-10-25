@@ -13,9 +13,9 @@ Determines the sign of a number, the result of a calculation, or a value in a co
   
 ## Syntax  
   
-```  
+```dax
 SIGN(<number>)  
-```  
+```
   
 #### Parameters  
   
@@ -35,9 +35,9 @@ A whole number. The possible return values are 1, 0, and -1.
 ## Example  
 The following formula returns the sign of the result of the expression that calculates sale price minus cost.  
   
-```  
+```dax
 =SIGN( ([Sale Price] - [Cost]) )  
-```  
+```
   
 ## See Also  
 [Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  

@@ -12,9 +12,9 @@ The COMBINEVALUES function joins two or more text strings into one text string. 
   
 ## Syntax  
   
-```  
+```dax
 COMBINEVALUES(<delimiter>, <expression>, <expression>[, <expression>]…)
-```  
+```
   
 #### Parameters  
   

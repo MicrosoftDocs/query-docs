@@ -13,9 +13,9 @@ Returns a delimited text string with the identifiers of all the parents of the c
   
 ## Syntax  
   
-```  
+```dax
 PATH(<ID_columnName>, <parent_columnName>)  
-```  
+```
   
 #### Parameters  
 ID_columnName  
@@ -51,6 +51,6 @@ This DAX function is not supported for use in DirectQuery mode. For more informa
 ## Example  
 The following example creates a calculated column that lists all the managers for each employee.  
   
-```  
+```dax
 =PATH(Employee[EmployeeKey], Employee[ParentEmployeeKey])  
-```  
+```

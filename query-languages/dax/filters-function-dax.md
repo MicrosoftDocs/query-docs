@@ -13,9 +13,9 @@ Returns the values that are directly applied as filters to *columnName*.
   
 ## Syntax  
   
-```  
+```dax
 FILTERS(<columnName>)  
-```  
+```
   
 #### Parameters  
 columnName  
@@ -29,8 +29,8 @@ The values that are directly applied as filters to *columnName*.
 ## Example  
 The following example shows how to determine the number of direct filters a column has.  
   
-```  
+```dax
 =COUNTROWS(FILTERS(ResellerSales_USD[ProductKey]))  
-```  
+```dax
 The example above lets you know how many direct filters on ResellerSales_USD[ProductKey] have been applied to the context where the expression is being evaluated.  
   

@@ -13,9 +13,9 @@ Returns a string of characters from the middle of a text string, given a startin
   
 ## Syntax  
   
-```  
+```dax
 MID(<text>, <start_num>, <num_chars>)  
-```  
+```
   
 #### Parameters  
   
@@ -34,10 +34,10 @@ Whereas Microsoft Excel has different functions for working with single-byte and
 ## Example  
 The following examples return the same results, the first 5 letters of the column, [ResellerName]. The first example uses the fully qualified name of the column and specifies the starting point; the second example omits the table name and the parameter, **num_chars**.  
   
-```  
+```dax
 =MID('Reseller'[ResellerName],5,1))  
 =MID([ResellerName,5])  
-```  
+```dax
 The results are the same if you use the following formula:  
   
 `=LEFT([ResellerName],5)`  

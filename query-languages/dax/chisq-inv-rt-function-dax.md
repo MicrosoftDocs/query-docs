@@ -15,9 +15,9 @@ If probability = CHISQ.DIST.RT(x,...), then CHISQ.INV.RT(probability,...) = x. U
   
 ## Syntax  
   
-```  
+```dax
 CHISQ.INV.RT(probability,deg_freedom)  
-```  
+```
   
 #### Parameters  
   

@@ -13,9 +13,9 @@ The COUNTA function counts the number of cells in a column that are not empty. I
   
 ## Syntax  
   
-```  
+```dax
 COUNTA(<column>)  
-```  
+```
   
 #### Parameters  
   
@@ -34,9 +34,9 @@ When the function does not find any rows to count, the function returns a blank.
 ## Example  
 The following example returns all rows in the `Reseller` table that have any kind of value in the column that stores phone numbers. Because the table name does not contain any spaces, the quotation marks are optional.  
   
-```  
+```dax
 =COUNTA('Reseller'[Phone])  
-```  
+```
   
 ## See Also  
 [COUNT Function &#40;DAX&#41;](count-function-dax.md)  

@@ -14,9 +14,9 @@ Returns the two-tailed inverse of the Student's t-distribution.
   
 ## Syntax  
   
-```  
+```dax
 T.INV.2T(Probability,Deg_freedom)
-```  
+```
   
 #### Parameters  
   
@@ -30,9 +30,9 @@ The two-tailed inverse of the Student's t-distribution.
   
 ## Example  
   
-```  
+```dax
 EVALUATE { T.INV.2T(0.546449, 60) }
-```  
+```dax
 Returns
 
 |[Value]  |

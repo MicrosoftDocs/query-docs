@@ -13,9 +13,9 @@ Returns a table that contains a column of all dates from the previous month, bas
   
 ## Syntax  
   
-```  
+```dax
 PREVIOUSMONTH(<dates>)  
-```  
+```
   
 #### Parameters  
   
@@ -48,9 +48,9 @@ The following sample formula creates a measure that calculates the 'previous mon
   
 To see how this works, create a PivotTable and add the fields, CalendarYear and MonthNumberOfYear, to the **Row Labels** area of the PivotTable. Then add a measure, named **Previous Month Sales**, using the formula defined in the code section, to the **Values** area of the PivotTable.  
   
-```  
+```dax
 =CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSMONTH('DateTime'[DateKey]))  
-```  
+```
   
 ## See Also  
 [Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  

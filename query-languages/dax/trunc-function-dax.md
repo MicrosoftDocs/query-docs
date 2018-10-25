@@ -13,9 +13,9 @@ Truncates a number to an integer by removing the decimal, or fractional, part of
   
 ## Syntax  
   
-```  
+```dax
 TRUNC(<number>,<num_digits>)  
-```  
+```
   
 #### Parameters  
   
@@ -33,16 +33,16 @@ TRUNC and INT are similar in that both return integers. TRUNC removes the fracti
 ## Example  
 The following formula returns 3, the integer part of pi.  
   
-```  
+```dax
 =TRUNC(PI())  
-```  
+```
   
 ## Example  
 The following formula returns -8, the integer part of -8.9.  
   
-```  
+```dax
 =TRUNC(-8.9)  
-```  
+```
   
 ## See Also  
 [Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  

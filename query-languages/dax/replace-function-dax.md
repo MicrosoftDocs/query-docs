@@ -13,9 +13,9 @@ REPLACE replaces part of a text string, based on the number of characters you sp
   
 ## Syntax  
   
-```  
+```dax
 REPLACE(<old_text>, <start_num>, <num_chars>, <new_text>)  
-```  
+```
   
 #### Parameters  
   
@@ -37,9 +37,9 @@ This DAX function may return different results when used in a model that is depl
 ## Example  
 The following formula creates a new calculated column that replaces the first two characters of the product code in column, [ProductCode], with a new two-letter code, OB.  
   
-```  
+```dax
 =REPLACE('New Products'[Product Code],1,2,"OB")  
-```  
+```
   
 ## See Also  
 [Text Functions &#40;DAX&#41;](text-functions-dax.md)  

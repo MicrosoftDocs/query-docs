@@ -13,9 +13,9 @@ Returns the number of the character at which a specific character or text string
   
 ## Syntax  
   
-```  
+```dax
 SEARCH(<find_text>, <within_text>[, [<start_num>][, <NotFoundValue>]])  
-```  
+```
   
 #### Parameters  
   
@@ -50,9 +50,9 @@ The following formula finds the position of the letter "n" in the word "printer"
   
 ### Code  
   
-```  
+```dax
 =SEARCH("n","printer")  
-```  
+```
   
 ### Comments  
 The formula returns 4 because "n" is the fourth character in the word "printer."  
@@ -64,9 +64,9 @@ You can use a column reference as an argument to SEARCH. The following formula f
   
 ### Code  
   
-```  
+```dax
 =SEARCH("-",[PostalCode])  
-```  
+```
   
 ### Comments  
 The return result is a column of numbers, indicating the index position of the hyphen.  
@@ -80,9 +80,9 @@ The following formula finds the position of the character "-" within the column,
   
 ### Code  
   
-```  
+```dax
 = IFERROR(SEARCH("-",[PostalCode]),-1)  
-```  
+```
   
 ### Comments  
 Note that the data type of the value that you use as an error output must match the data type of the non-error output type. In this case, you provide a numeric value to be output in case of an error because SEARCH returns an integer value.  

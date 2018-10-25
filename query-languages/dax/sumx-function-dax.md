@@ -13,9 +13,9 @@ Returns the sum of an expression evaluated for each row in a table.
   
 ## Syntax  
   
-```  
+```dax
 SUMX(<table>, <expression>)  
-```  
+```
   
 #### Parameters  
   
@@ -37,9 +37,9 @@ To see some more complex examples of SUMX in formulas, see [ALL Function &#40;DA
 ## Example  
 The following example first filters the table, InternetSales, on the expression, `ShippingTerritoryID = 5`, and then returns the sum of all values in the column, Freight. In other words, the expression returns the sum of freight charges for only the specified sales area.  
   
-```  
+```dax
 =SUMX(FILTER(InternetSales, InternetSales[SalesTerritoryID]=5),[Freight])  
-```  
+```dax
 If you do not need to filter the column, use the SUM function. The SUM function is similar to the Excel function of the same name, except that it takes a column as a reference.  
   
 ## See Also  

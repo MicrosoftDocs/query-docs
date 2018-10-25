@@ -13,9 +13,9 @@ Returns True if the scalar value shows up in at least one row of the input relat
   
 ## Syntax  
   
-```  
+```dax
 IN 
-```  
+```
   
 #### Parameters  
   
@@ -33,7 +33,7 @@ IN
   
 ## Example  
 
-```
+```dax
 Filtered Sales:=CALCULATE (
         [Internet Total Sales], 'Product'[Color] IN { "Red", "Blue", "Black" }
     )

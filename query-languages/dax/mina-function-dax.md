@@ -13,9 +13,9 @@ Returns the smallest value in a column, including any logical values and numbers
   
 ## Syntax  
   
-```  
+```dax
 MINA(<column>)  
-```  
+```
   
 #### Parameters  
   
@@ -40,16 +40,16 @@ If you do not want to include logical values and text as part of the calculation
 ## Example  
 The following expression returns the minimum freight charge from the table, InternetSales.  
   
-```  
+```dax
 =MINA(InternetSales[Freight])  
-```  
+```
   
 ## Example  
 The following expression returns the minimum value in the column, PostalCode. Because the data type of the column is text, the function does not find any numeric values, and the formula returns zero (0).  
   
-```  
+```dax
 =MINA([PostalCode])  
-```  
+```
   
 ## See Also  
 [MIN Function &#40;DAX&#41;](min-function-dax.md)  

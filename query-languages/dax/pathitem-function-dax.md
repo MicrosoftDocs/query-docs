@@ -13,9 +13,9 @@ Returns the item at the specified *position* from a string resulting from evalua
   
 ## Syntax  
   
-```  
+```dax
 PATHITEM(<path>, <position>[, <type>])  
-```  
+```
   
 #### Parameters  
 path  
@@ -49,6 +49,6 @@ This DAX function is not supported for use in DirectQuery mode. For more informa
 ## Example  
 The following example returns the third tier manager of the current employee; it takes the employee and manager IDs as the input to a PATH function that returns a string with the hierarchy of parents to current employee. From that string PATHITEM returns the third entry as an integer.  
   
-```  
+```dax
 =PATHITEM(PATH(Employee[EmployeeKey], Employee[ParentEmployeeKey]), 3, 1)  
-```  
+```

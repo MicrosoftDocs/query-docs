@@ -13,9 +13,9 @@ Changes FALSE to TRUE, or TRUE to FALSE.
   
 ## Syntax  
   
-```  
+```dax
 NOT(<logical>)  
-```  
+```
   
 #### Parameters  
   
@@ -33,9 +33,9 @@ The formula checks the value in the column, [Orders], and returns "true" if the 
   
 Now create a new calculated column, **Calculated Column2**, and type the following formula.  
   
-```  
+```dax
 =NOT([CalculatedColumn1])  
-```  
+```dax
 For each row in **Calculated Column1**, the values "true" and "false" are interpreted as the logical values TRUE or FALSE, and the NOT function returns the logical opposite of that value.  
   
 ## See Also  

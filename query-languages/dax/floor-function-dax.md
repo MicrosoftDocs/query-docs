@@ -13,9 +13,9 @@ Rounds a number down, toward zero, to the nearest multiple of significance.
   
 ## Syntax  
   
-```  
+```dax
 FLOOR(<number>, <significance>)  
-```  
+```
   
 #### Parameters  
   
@@ -37,9 +37,9 @@ Regardless of the sign of the number, a value is rounded down when adjusted away
 ## Example  
 The following formula takes the values in the [Total Product Cost] column from the table, InternetSales.and rounds down to the nearest multiple of .1.  
   
-```  
+```dax
 =FLOOR(InternetSales[Total Product Cost],.5)  
-```  
+```dax
 The following table shows the expected results for some sample values.  
   
 |Values|Expected Result|  

@@ -13,9 +13,9 @@ Checks whether a value is blank, and returns TRUE or FALSE.
   
 ## Syntax  
   
-```  
+```dax
 ISBLANK(<value>)  
-```  
+```
   
 #### Parameters  
   
@@ -37,14 +37,14 @@ This formula computes the increase or decrease ratio in sales compared to the pr
 |2008|$24,542,444.68|$39,248,847.52|-37.47%|  
 |Grand Total|$102,554,625.71|||  
   
-```  
+```dax
 //Sales to Previous Year Ratio  
   
 =IF( ISBLANK('CalculatedMeasures'[PreviousYearTotalSales])  
    , BLANK()  
    , ( 'CalculatedMeasures'[Total Sales]-'CalculatedMeasures'[PreviousYearTotalSales] )  
       /'CalculatedMeasures'[PreviousYearTotalSales])  
-```  
+```
   
 ## See Also  
 [Information Functions &#40;DAX&#41;](information-functions-dax.md)  

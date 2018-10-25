@@ -13,9 +13,9 @@ Returns the value of Pi, 3.14159265358979, accurate to 15 digits.
   
 ## Syntax  
   
-```  
+```dax
 PI()  
-```  
+```
   
 ## Return Value  
 A decimal number with the value of Pi, 3.14159265358979, accurate to 15 digits.  
@@ -26,9 +26,9 @@ Pi is a mathematical constant. In DAX, Pi is represented as a real number accura
 ## Example  
 The following formula calculates the area of a circle given the radius in the column, `[Radius]`.  
   
-```  
+```dax
 =PI()*([Radius]*2)  
-```  
+```
   
 ## See Also  
 [Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  

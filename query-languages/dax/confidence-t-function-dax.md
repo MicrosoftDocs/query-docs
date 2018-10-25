@@ -13,9 +13,9 @@ Returns the confidence interval for a population mean, using a Student's t distr
   
 ## Syntax  
   
-```  
+```dax
 CONFIDENCE.T(alpha,standard_dev,size)  
-```  
+```
   
 #### Parameters  
   

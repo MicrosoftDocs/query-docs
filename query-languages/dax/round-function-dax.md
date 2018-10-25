@@ -13,9 +13,9 @@ Rounds a number to the specified number of digits.
   
 ## Syntax  
   
-```  
+```dax
 ROUND(<number>, <num_digits>)  
-```  
+```
   
 #### Parameters  
   
@@ -46,16 +46,16 @@ You can use the functions TRUNC and INT to obtain the integer portion of the num
 ## Example  
 The following formula rounds 2.15 up, to one decimal place. The expected result is 2.2.  
   
-```  
+```dax
 =ROUND(2.15,1)  
-```  
+```
   
 ## Example  
 The following formula rounds 21.5 to one decimal place to the left of the decimal point. The expected result is 20.  
   
-```  
+```dax
 =ROUND(21.5,-1)  
-```  
+```
   
 ## See Also  
 [Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  

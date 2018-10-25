@@ -13,9 +13,9 @@ Returns TRUE when *columnName* is being filtered directly. If there is no filter
   
 ## Syntax  
   
-```  
+```dax
 ISFILTERED(<columnName>)  
-```  
+```
   
 #### Parameters  
 columnName  

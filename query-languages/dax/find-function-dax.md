@@ -13,9 +13,9 @@ Returns the starting position of one text string within another text string. FIN
   
 ## Syntax  
   
-```  
+```dax
 FIND(<find_text>, <within_text>[, [<start_num>][, <NotFoundValue>]])  
-```  
+```
   
 #### Parameters  
   
@@ -39,9 +39,9 @@ FIND does not support wildcards. To use wildcards, use [SEARCH](search-function-
 ## Example  
 The following formula finds the position of the first letter of the product designation, BMX, in the string that contains the product description.  
   
-```  
+```dax
 =FIND("BMX","line of BMX racing goods")  
-```  
+```
   
 ## See Also  
 [Text Functions &#40;DAX&#41;](text-functions-dax.md)  

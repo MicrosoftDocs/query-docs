@@ -13,9 +13,9 @@ Converts a date in the form of text to a date in datetime format.
   
 ## Syntax  
   
-```  
+```dax
 DATEVALUE(date_text)  
-```  
+```
   
 #### Parameters  
   
@@ -38,9 +38,9 @@ The following example returns a different **datetime** value depending on your c
   
 -   In date/time settings where the month precedes the day, the example returns a **datetime** value corresponding to August 1st of 2009.  
   
-```  
+```dax
 =DATEVALUE("8/1/2009")  
-```  
+```
   
 ## See Also  
 [Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  

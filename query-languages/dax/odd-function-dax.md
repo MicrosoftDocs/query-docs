@@ -13,9 +13,9 @@ Returns number rounded up to the nearest odd integer.
   
 ## Syntax  
   
-```  
+```dax
 ODD(number)  
-```  
+```
   
 #### Parameters  
   

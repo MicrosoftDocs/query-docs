@@ -13,9 +13,9 @@ Evaluates an expression in a context that is modified by the specified filters.
   
 ## Syntax  
   
-```  
+```dax
 CALCULATE(<expression>,<filter1>,<filter2>…)  
-```  
+```
   
 #### Parameters  
   
@@ -58,11 +58,11 @@ To see how this works, add the field, CalendarYear, to the **Row Labels** area o
 |2008|0.20%|16.95%|0.48%|2.63%|20.26%|  
 |Grand Total|0.70%|82.47%|2.18%|14.65%|100.00%|  
   
-```  
+```dax
 =( SUM('ResellerSales_USD'[SalesAmount_USD]))  
  /CALCULATE( SUM('ResellerSales_USD'[SalesAmount_USD])  
            ,ALL('ResellerSales_USD'))  
-```  
+```dax
 The CALCULATE expression in the denominator enables the sum expression to include all rows in the calculation. This overrides the implicit filters for CalendarYear and ProductCategoryName that exist for the numerator part of the expression.  
   
 ## Related Functions  

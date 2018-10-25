@@ -15,9 +15,9 @@ Returns the current UTC date.
   
 ## Syntax  
   
-```  
+```dax
 UTCTODAY()  
-```  
+```
   
 ## Return Value  
 A date.  
@@ -30,9 +30,9 @@ The UTCNOW function is similar but returns the exact time and date.
 ## Example  
 The following:
   
-```  
+```dax
 EVALUATE { FORMAT(UTCTODAY(), "General Date") } 
-```  
+```dax
 Returns:
 
 |[Value]  |

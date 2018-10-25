@@ -13,9 +13,9 @@ Rounds a number to the specified number of decimals and returns the result as te
   
 ## Syntax  
   
-```  
+```dax
 FIXED(<number>, <decimals>, <no_commas>)  
-```  
+```
   
 #### Parameters  
   
@@ -42,9 +42,9 @@ This DAX function is not supported for use in DirectQuery mode. For more informa
 ## Example  
 The following example gets the numeric value for the current row in column, PctCost, and returns it as text with 4 decimal places and no commas.  
   
-```  
+```dax
 =FIXED([PctCost],3,1)  
-```  
+```dax
 Numbers can never have more than 15 significant digits, but decimals can be as large as 127.  
   
 ## See Also  

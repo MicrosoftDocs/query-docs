@@ -13,9 +13,9 @@ Returns the remainder after a number is divided by a divisor. The result always 
   
 ## Syntax  
   
-```  
+```dax
 MOD(<number>, <divisor>)  
-```  
+```
   
 #### Parameters  
   
@@ -35,16 +35,16 @@ The MOD function can be expressed in terms of the INT function: MOD(n, d) = n - 
 ## Example  
 The following formula returns 1, the remainder of 3 divided by 2.  
   
-```  
+```dax
 =MOD(3,2)  
-```  
+```
   
 ## Example  
 The following formula returns -1, the remainder of 3 divided by 2. Note that the sign is always the same as the sign of the divisor.  
   
-```  
+```dax
 =MOD(-3,-2)  
-```  
+```
   
 ## See Also  
 [Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  

@@ -13,9 +13,9 @@ Returns the month as a number from 1 (January) to 12 (December).
   
 ## Syntax  
   
-```  
+```dax
 MONTH(<datetime>)  
-```  
+```
   
 #### Parameters  
   
@@ -38,16 +38,16 @@ If the text representation of the date cannot be correctly converted to a dateti
 ## Example  
 The following expression returns 3, which is the integer corresponding to March, the month in the **date** argument.  
   
-```  
+```dax
 =MONTH("March 3, 2008 3:45 PM")  
-```  
+```
   
 ## Example  
 The following expression returns the month from the date in the **TransactionDate** column of the **Orders** table.  
   
-```  
+```dax
 =MONTH(Orders[TransactionDate])  
-```  
+```
   
 ## See Also  
 [Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  

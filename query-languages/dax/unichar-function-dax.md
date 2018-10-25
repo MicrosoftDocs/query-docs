@@ -14,9 +14,9 @@ Returns the Unicode character referenced by the numeric value.
   
 ## Syntax  
   
-```  
+```dax
 UNICHAR(number)  
-```  
+```
   
 #### Parameters  
   
@@ -42,17 +42,17 @@ The Unicode character returned can be a string of characters, for example in UTF
 ## Example  
 
 The following example returns the character represented by the Unicode number 66 (uppercase A).  
-```
+```dax
 =UNICHAR(65)
 ```
 
 The following example returns the character represented by the Unicode number 32 (space character).
-```
+```dax
 =UNICHAR(32)
 ```
 
 The following example returns the character represented by the Unicode number 9733 (&#9733; character).
-```
+```dax
 =UNICHAR(9733)
 ```
 

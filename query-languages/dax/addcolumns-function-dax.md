@@ -13,9 +13,9 @@ Adds calculated columns to the given table or table expression.
   
 ## Syntax  
   
-```  
+```dax
 ADDCOLUMNS(<table>, <name>, <expression>[, <name>, <expression>]…)  
-```  
+```
   
 #### Parameters  
 *table*  
@@ -35,11 +35,11 @@ A table with all its original columns and the added ones.
 ## Example  
 The following example returns an extended version of the Product Category table that includes total sales values from the reseller channel and the internet sales.  
   
-```  
+```dax
 ADDCOLUMNS(ProductCategory,   
                , "Internet Sales", SUMX(RELATEDTABLE(InternetSales_USD), InternetSales_USD[SalesAmount_USD])  
                , "Reseller Sales", SUMX(RELATEDTABLE(ResellerSales_USD), ResellerSales_USD[SalesAmount_USD]))  
-```  
+```dax
 The following table shows a preview of the data as it would be received by any function expecting to receive a table:  
   
 ||||||  

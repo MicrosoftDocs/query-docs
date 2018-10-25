@@ -13,9 +13,9 @@ Returns the cosine of the given angle.
   
 ## Syntax  
   
-```  
+```dax
 COS(number)  
-```  
+```
   
 #### Parameters  
   

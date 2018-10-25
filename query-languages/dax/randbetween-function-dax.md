@@ -13,9 +13,9 @@ Returns a random number in the range between two numbers you specify.
   
 ## Syntax  
   
-```  
+```dax
 RANDBETWEEN(<bottom>,<top>)  
-```  
+```
   
 #### Parameters  
   
@@ -33,9 +33,9 @@ This DAX function is not supported for use in DirectQuery mode. For more informa
 ## Example  
 The following formula returns a random number between 1 and 10.  
   
-```  
+```dax
 =RANDBETWEEN(1,10)  
-```  
+```
   
 ## See Also  
 [Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  

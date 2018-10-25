@@ -14,9 +14,9 @@ Returns the Student's left-tailed t-distribution.
   
 ## Syntax  
   
-```  
+```dax
 T.DIST(X,Deg_freedom,Cumulative)
-```  
+```
   
 #### Parameters  
   
@@ -31,9 +31,9 @@ The Student's left-tailed t-distribution.
   
 ## Example  
   
-```  
+```dax
 EVALUATE { T.DIST(60, 1, TRUE) } 
-```  
+```dax
 Returns
 
 |[Value]  |

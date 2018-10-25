@@ -13,9 +13,9 @@ Returns the arccosine, or inverse cosine, of a number. The arccosine is the angl
   
 ## Syntax  
   
-```  
+```dax
 ACOS(number)  
-```  
+```
   
 #### Parameters  
   

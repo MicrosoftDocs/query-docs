@@ -13,9 +13,9 @@ Returns the tangent of the given angle.
   
 ## Syntax  
   
-```  
+```dax
 TAN(number)  
-```  
+```
   
 #### Parameters  
   

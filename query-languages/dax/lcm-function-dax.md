@@ -13,9 +13,9 @@ Returns the least common multiple of integers. The least common multiple is the 
   
 ## Syntax  
   
-```  
+```dax
 LCM(number1, [number2], ...)  
-```  
+```
   
 #### Parameters  
   

@@ -13,7 +13,7 @@ Returns the year of a date as a four digit integer in the range 1900-9999.
   
 ## Syntax  
   
-```  
+```dax
 YEAR(<date>)  
 ```  
   
@@ -38,7 +38,7 @@ When the date argument is a text representation of the date, the function uses t
 ## Example  
 The following example returns 2007.  
   
-```  
+```dax
 =YEAR("March 2007")  
 ```  
   
@@ -49,7 +49,7 @@ The following example returns the year for today's date.
   
 ### Code  
   
-```  
+```dax
 =YEAR(TODAY())  
 ```  
   

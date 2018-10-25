@@ -13,9 +13,9 @@ Returns the number of parents to the specified item in a given PATH result, incl
   
 ## Syntax  
   
-```  
+```dax
 PATHLENGTH(<path>)  
-```  
+```
   
 #### Parameters  
 path  
@@ -30,6 +30,6 @@ This DAX function is not supported for use in DirectQuery mode. For more informa
 ## Example  
 The following example takes an employee ID as input to a PATH function and returns a list of the managers above that employee in the hierarchy, The PATHLENGTH function takes that result and counts the different levels of employees and managers, including the employee you started with.  
   
-```  
+```dax
 =PATHLENGTH(PATH(Employee[EmployeeKey], Employee[ParentEmployeeKey]))  
-```  
+```

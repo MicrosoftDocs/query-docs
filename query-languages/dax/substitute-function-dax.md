@@ -13,9 +13,9 @@ Replaces existing text with new text in a text string.
   
 ## Syntax  
   
-```  
+```dax
 SUBSTITUTE(<text>, <old_text>, <new_text>, <instance_num>)  
-```  
+```
   
 #### Parameters  
   
@@ -43,9 +43,9 @@ The following formula creates a copy of the column [Product Code] that substitut
   
 ### Code  
   
-```  
+```dax
 =SUBSTITUTE([Product Code], "NW", "PA")  
-```  
+```
   
 ## See Also  
 [Text Functions &#40;DAX&#41;](text-functions-dax.md)  

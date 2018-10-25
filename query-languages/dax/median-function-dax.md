@@ -16,9 +16,9 @@ To return the median of an expresssion evaluated for each row in a table, use [M
   
 ## Syntax  
   
-```  
+```dax
 MEDIAN(<column>)  
-```  
+```
   
 #### Parameters  
   
@@ -37,9 +37,9 @@ MEDIAN( Table[Column] ) is equivalent to MEDIANX( Table, Table[Column] ).
 ## Example  
 The following computes the median of a column named Age in a table named Customers:  
   
-```  
+```dax
 =MEDIAN( Customers[Age] )  
-```  
+```
   
 ## See Also  
 [MEDIANX Function &#40;DAX&#41;](medianx-function-dax.md)  

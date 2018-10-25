@@ -13,9 +13,9 @@ Checks whether one of the arguments is TRUE to return TRUE. The function returns
   
 ## Syntax  
   
-```  
+```dax
 OR(<logical1>,<logical2>)  
-```  
+```
   
 #### Parameters  
   
@@ -58,14 +58,14 @@ The following example shows how to use the OR function to obtain the sales peopl
 |Varkey Chudukatil, Ranjit R||||||Circle of Excellence|  
 |Grand Total|Circle of Excellence|Circle of Excellence|Circle of Excellence|Circle of Excellence|Circle of Excellence|Circle of Excellence|  
   
-```  
+```dax
 IF(   OR(   CALCULATE(SUM('ResellerSales_USD'[SalesAmount_USD]), 'ProductSubcategory'[ProductSubcategoryName]="Touring Bikes") > 1000000  
          ,   CALCULATE(SUM('ResellerSales_USD'[SalesAmount_USD]), 'DateTime'[CalendarYear]=2007) > 2500000  
          )  
    , "Circle of Excellence"  
    , ""  
    )  
-```  
+```
   
 ## See Also  
 [Logical Functions &#40;DAX&#41;](logical-functions-dax.md)  

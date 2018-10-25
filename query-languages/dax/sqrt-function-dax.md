@@ -13,9 +13,9 @@ Returns the square root of a number.
   
 ## Syntax  
   
-```  
+```dax
 SQRT(<number>)  
-```  
+```
   
 #### Parameters  
   
@@ -32,9 +32,9 @@ If the number is negative, the SQRT function returns an error.
 ## Example  
 The following formula returns 5.  
   
-```  
+```dax
 =SQRT(25)  
-```  
+```
   
 ## See Also  
 [Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  

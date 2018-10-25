@@ -14,9 +14,9 @@ Performs an inner join of a table with another table. The tables are joined on c
   
 ## Syntax  
   
-```  
+```dax
 NATURALINNERJOIN(<leftJoinTable>, <rightJoinTable>)  
-```  
+```
   
 #### Parameters  
   

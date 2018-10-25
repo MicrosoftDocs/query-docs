@@ -13,9 +13,9 @@ Returns the absolute value of a number.
   
 ## Syntax  
   
-```  
+```dax
 ABS(<number>)  
-```  
+```
   
 #### Parameters  
   
@@ -32,9 +32,9 @@ The absolute value of a number is a decimal number, whole or decimal, without it
 ## Example  
 The following example returns the absolute value of the difference between the list price and the dealer price, which you might use in a new calculated column, **DealerMarkup**.  
   
-```  
+```dax
 =ABS([DealerPrice]-[ListPrice])  
-```  
+```
   
 ## See Also  
 [Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  

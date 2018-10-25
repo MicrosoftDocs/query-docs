@@ -13,9 +13,9 @@ Returns the natural logarithm of a number. Natural logarithms are based on the c
   
 ## Syntax  
   
-```  
+```dax
 LN(<number>)  
-```  
+```
   
 #### Parameters  
   
@@ -32,9 +32,9 @@ LN is the inverse of the EXP function.
 ## Example  
 The following example returns the natural logarithm of the number in the column, `[Values]`.  
   
-```  
+```dax
 =LN([Values])  
-```  
+```
   
 ## See Also  
 [Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  

@@ -18,9 +18,9 @@ Returns a numeric code for the first character in a text string. The returned co
   
 ## Syntax  
   
-```  
+```dax
 CODE(text)  
-```  
+```
   
 #### Parameters  
   

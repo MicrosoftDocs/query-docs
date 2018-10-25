@@ -13,9 +13,9 @@ Returns the inverse hyperbolic cosine of a number. The number must be greater th
   
 ## Syntax  
   
-```  
+```dax
 ACOSH(number)  
-```  
+```
   
 #### Parameters  
   

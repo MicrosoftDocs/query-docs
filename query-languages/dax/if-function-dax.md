@@ -13,9 +13,9 @@ Checks if a condition provided as the first argument is met. Returns one value i
   
 ## Syntax  
   
-```  
+```dax
 IF(logical_test>,<value_if_true>, value_if_false)  
-```  
+```
   
 #### Parameters  
   
@@ -38,16 +38,16 @@ The IF function attempts to return a single data type in a column. Therefore, if
 ## Example  
 The following example uses nested IF functions that evaluate the number in the column, Calls, from the table FactCallCenter. The function assigns a label as follows: **low** if the number of calls is less than 200, **medium** if the number of calls is less than 300 but not less than 200, and **high** for all other values.  
   
-```  
+```dax
 =IF([Calls]<200,"low",IF([Calls]<300,"medium","high"))  
-```  
+```
   
 ## Example  
 The following example gets a list of cities that contain potential customers in the California area by using columns from the table ProspectiveBuyer. Because the list is meant to plan for a campaign that will target married people or people with children at home, the condition in the IF function checks for the value of the columns [MaritalStatus] and [NumberChildrenAtHome], and outputs the city if either condition is met and if the customer is in California. Otherwise, it outputs the empty string.  
   
-```  
+```dax
 =IF([StateProvinceCode]= "CA" && ([MaritalStatus] = "M" || [NumberChildrenAtHome] >1),[City])  
-```  
+```dax
 Note that parentheses are used to control the order in which the AND (&amp;&amp;) and OR (||) operators are used. Also note that no value has been specified for **value_if_false**. Therefore, the function returns the default, which is an empty string.  
   
 ## See Also  

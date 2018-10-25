@@ -13,9 +13,9 @@ Joins two text strings into one text string.
   
 ## Syntax  
   
-```  
+```dax
 CONCATENATE(<text1>, <text2>)  
-```  
+```
   
 #### Parameters  
   
@@ -72,16 +72,16 @@ The following example demonstrates how to concatenate values in columns that hav
   
 ### Code  
   
-```  
+```dax
 =CONCATENATE('Products'[Product abbreviation],'Products'[Product number])  
-```  
+```
   
 ### Comments  
 The CONCATENATE function in DAX accepts only two arguments, whereas the Excel CONCATENATE function accepts up to 255 arguments. If you need to add more arguments, you can use the ampersand (&amp;) operator. For example, the following formula produces the results, MTN-40 and MTN-42.  
   
-```  
+```dax
 =[Product abbreviation] & "-" & [Product number]  
-```  
+```
   
 ## See Also  
 [Text Functions &#40;DAX&#41;](text-functions-dax.md)  

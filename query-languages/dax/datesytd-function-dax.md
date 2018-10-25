@@ -13,9 +13,9 @@ Returns a table that contains a column of the dates for the year to date, in the
   
 ## Syntax  
   
-```  
+```dax
 DATESYTD(<dates> [,<year_end_date>])  
-```  
+```
   
 #### Parameters  
   
@@ -49,9 +49,9 @@ The following sample formula creates a measure that calculates the 'Running Tota
   
 To see how this works, create a PivotTable and add the fields, CalendarYear and CalendarQuarter, to the **Row Labels** area of the PivotTable. Then add a measure named **Running Total**, using the formula defined in the code section, to the **Values** area of the PivotTable.  
   
-```  
+```dax
 =CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESYTD(DateTime[DateKey]))  
-```  
+```
   
 ## See Also  
 [Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  

@@ -13,9 +13,9 @@ Evaluates a table expression in a context modified by the given filters.
   
 ## Syntax  
   
-```  
+```dax
 RELATEDTABLE(<tableName>)  
-```  
+```
   
 #### Parameters  
   
@@ -44,10 +44,10 @@ The following table shows the results of using the code shown here.
 |3|3|Clothing|$339,772.61|  
 |4|4|Accessories|$700,759.96|  
   
-```  
+```dax
 = SUMX( RELATEDTABLE('InternetSales_USD')  
      , [SalesAmount_USD])  
-```  
+```
   
 ## See Also  
 [CALCULATETABLE Function &#40;DAX&#41;](calculatetable-function-dax.md)  

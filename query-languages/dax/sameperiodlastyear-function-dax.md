@@ -13,9 +13,9 @@ Returns a table that contains a column of dates shifted one year back in time fr
   
 ## Syntax  
   
-```  
+```dax
 SAMEPERIODLASTYEAR(<dates>)  
-```  
+```
   
 #### Parameters  
   
@@ -50,9 +50,9 @@ The following sample formula creates a measure that calculates the previous year
   
 To see how this works, create a PivotTable and add the fields, CalendarYear to the **Row Labels** area of the PivotTable. Then add a measure, named **Previous Year Sales**, using the formula defined in the code section, to the **Values** area of the PivotTable.  
   
-```  
+```dax
 =CALCULATE(SUM(ResellerSales_USD[SalesAmount_USD]), SAMEPERIODLASTYEAR(DateTime[DateKey]))  
-```  
+```
   
 ## See Also  
 [Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  

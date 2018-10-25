@@ -13,9 +13,9 @@ Returns the last date of the year in the current context for the specified colum
   
 ## Syntax  
   
-```  
+```dax
 ENDOFYEAR(<dates> [,<year_end_date>])  
-```  
+```
   
 #### Parameters  
   
@@ -49,9 +49,9 @@ The following sample formula creates a measure that returns the end of the fisca
   
 To see how this works, create a PivotTable and add the field CalendarYear to the **Row Labels** area of the PivotTable. Then add a measure, named **EndOfFiscalYear**, using the formula defined in the code section, to the **Values** area of the PivotTable.  
   
-```  
+```dax
 =ENDOFYEAR(DateTime[DateKey],"06/30/2004")  
-```  
+```
   
 ## See Also  
 [Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  

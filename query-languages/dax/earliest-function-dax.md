@@ -13,9 +13,9 @@ Returns the current value of the specified column in an outer evaluation pass of
   
 ## Syntax  
   
-```  
+```dax
 EARLIEST(<column>)  
-```  
+```
   
 #### Parameters  
   
@@ -32,9 +32,9 @@ The EARLIEST function is similar to EARLIER, but lets you specify one additional
 ## Example  
 The current sample data does not support this scenario.  
   
-```  
+```dax
 =EARLIEST(<column>)  
-```  
+```
   
 ## See Also  
 [EARLIER Function &#40;DAX&#41;](earlier-function-dax.md)  

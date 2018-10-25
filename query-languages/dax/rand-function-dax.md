@@ -13,9 +13,9 @@ Returns a random number greater than or equal to 0 and less than 1, evenly distr
   
 ## Syntax  
   
-```  
+```dax
 RAND()  
-```  
+```
   
 ## Return Value  
 A decimal number.  
@@ -34,9 +34,9 @@ This DAX function is not supported for use in DirectQuery mode. For more informa
 ## Example  
 To generate a random real number between two other numbers, you can use a formula like the following:  
   
-```  
+```dax
 = RAND()*(int1-int2)+int1  
-```  
+```
   
 ## See Also  
 [Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  

@@ -13,9 +13,9 @@ Returns the variance of the entire population.
   
 ## Syntax  
   
-```  
+```dax
 VARX.P(<table>, <expression>)  
-```  
+```
   
 #### Parameters  
 *table*  
@@ -50,6 +50,6 @@ This DAX function may return different results when used in a model that is depl
 ## Example  
 The following example shows the formula for a calculated column that calculates the variance of the unit price per product, when the formula is used in the Product table  
   
-```  
+```dax
 =VARX.P(InternetSales_USD, InternetSales_USD[UnitPrice_USD] –(InternetSales_USD[DiscountAmount_USD]/InternetSales_USD[OrderQuantity]))  
-```  
+```

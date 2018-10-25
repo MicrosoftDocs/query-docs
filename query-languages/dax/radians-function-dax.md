@@ -13,9 +13,9 @@ Converts degrees to radians.
   
 ## Syntax  
   
-```  
+```dax
 RADIANS(angle)  
-```  
+```
   
 #### Parameters  
   

@@ -14,9 +14,9 @@ Returns a table with a single column named “Date” that contains a contiguous
   
 ## Syntax  
   
-```  
+```dax
 CALENDARAUTO([fiscal_year_end_month])  
-```  
+```
   
 #### Parameters  
   

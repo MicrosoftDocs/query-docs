@@ -18,13 +18,13 @@ The ADDMISSINGITEMS function will return BLANK values for the IsSubtotal columns
   
 ## Syntax  
   
-```  
+```dax
 ADDMISSINGITEMS(<showAllColumn>[, <showAllColumn>]…, <table>, <groupingColumn>[, <groupingColumn>]…[, filterTable]…)  
-```  
+```
   
-```  
+```dax
 ADDMISSINGITEMS(<showAllColumn>[, <showAllColumn>]…, <table>, [ROLLUPISSUBTOTAL(]<groupingColumn>[, <isSubtotal_columnName>][, <groupingColumn>][, <isSubtotal_columnName>]…[)], [, filterTable]…)  
-```  
+```
   
 #### Parameters  
   
@@ -50,7 +50,7 @@ ROLLUPGROUP is used inside the ROLLUPISSUBTOTAL function to reflect ROLLUPGROUPs
 ## Example  
 Add blank rows for columns with "show items with no data" turned on. The ADDMISSINGITEMS function will return NULLs/BLANKs for the IsSubtotal columns of blank rows it adds.  
   
-```  
+```dax
 VAR 'RowHeadersShowAll' =   
 CALCULATETABLE   
 (  
@@ -72,10 +72,11 @@ ROLLUPISSUBTOTAL
 ),   
 'DateFilter','TerritoryFilter'   
 )  
-```  
+```
+
 Example with ROLLUPGROUP  
   
-```  
+```dax
 VAR 'RowHeadersShowAll' =   
 CALCULATETABLE   
 (  
@@ -97,4 +98,4 @@ ROLLUPGROUP
 ),   
 'RowHeaders'   
 )  
-```  
+```

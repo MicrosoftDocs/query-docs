@@ -13,9 +13,9 @@ Specifies the cross-filtering direction to be used in a calculation for a relati
   
 ## Syntax  
   
-```  
+```dax
 CROSSFILTER(<columnName1>, <columnName2>, <direction>)  
-```  
+```
   
 #### Parameters  
   

@@ -13,9 +13,9 @@ Rounds a number up, away from 0 (zero).
   
 ## Syntax  
   
-```  
+```dax
 ROUNDUP(<number>, <num_digits>)  
-```  
+```
   
 #### Parameters  
   
@@ -42,9 +42,9 @@ ROUNDUP behaves like ROUND, except that it always rounds a number up.
 ## Example  
 The following formula rounds Pi to four decimal places. The expected result is 3.1416.  
   
-```  
+```dax
 =ROUNDUP(PI(),4)  
-```  
+```
   
 ## Example: Decimals as Second Argument  
   
@@ -53,9 +53,9 @@ The following formula rounds 1.3 to the nearest multiple of 0.2. The expected re
   
 ### Code  
   
-```  
+```dax
 =ROUNDUP(1.3,0.2)  
-```  
+```
   
 ## Example: Negative Number as Second Argument  
   
@@ -64,9 +64,9 @@ The following formula rounds the value in the column, **FreightCost**, with the 
   
 ### Code  
   
-```  
+```dax
 =ROUNDUP([Values],-1)  
-```  
+```
   
 ### Comments  
 When **num_digits** is less than zero, the number of places to the left of the decimal sign is increased by the value you specify.  

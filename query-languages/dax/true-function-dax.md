@@ -13,9 +13,9 @@ Returns the logical value TRUE.
   
 ## Syntax  
   
-```  
+```dax
 TRUE()  
-```  
+```
   
 ## Return Value  
 Always TRUE.  
@@ -38,9 +38,9 @@ The following table shows the results when the example formula is used in a Pivo
 ||FALSE|FALSE|FALSE|FALSE|FALSE|FALSE|  
 |Grand Total|TRUE|TRUE|TRUE|TRUE|FALSE|TRUE|  
   
-```  
+```dax
 = IF(SUM('InternetSales_USD'[SalesAmount_USD]) >200000, TRUE(), false())  
-```  
+```
   
 ## See Also  
 [FALSE Function &#40;DAX&#41;](false-function-dax.md)  
