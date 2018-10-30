@@ -37,15 +37,15 @@ For information on how to use the **format_string** parameter, see the appropria
   
 |To Format|Follow these instructions|  
 |-------------|-----------------------------|  
-|Numbers|Use [predefined numeric formats](http://msdn.microsoft.com/en-us/78e0ac9e-9e3a-45dd-991f-599a206b8c65) or create [user-defined numeric formats](http://msdn.microsoft.com/en-us/0432d01e-d0b5-49a0-b93e-fb636e0a8274).|  
-|Dates and times|Use [predefined date/time formats](http://msdn.microsoft.com/en-us/b37f6d2f-1f73-4daa-8e64-df475a3622b8) or create [user-defined date/time formats](http://msdn.microsoft.com/en-us/4dd49f41-05fe-474d-8678-31fe5f86a137).|  
+|Numbers|Use [predefined numeric formats](https://msdn.microsoft.com/en-us/78e0ac9e-9e3a-45dd-991f-599a206b8c65) or create [user-defined numeric formats](https://msdn.microsoft.com/en-us/0432d01e-d0b5-49a0-b93e-fb636e0a8274).|  
+|Dates and times|Use [predefined date/time formats](https://msdn.microsoft.com/en-us/b37f6d2f-1f73-4daa-8e64-df475a3622b8) or create [user-defined date/time formats](https://msdn.microsoft.com/en-us/4dd49f41-05fe-474d-8678-31fe5f86a137).|  
   
 All predefined formatting strings use the current user locale when formatting the result.  
   
 > [!CAUTION]  
 > The format strings supported as an argument to the DAX FORMAT function are based on the format strings used by Visual Basic (OLE Automation), not on the format strings used by the .NET Framework. Therefore, you might get unexpected results or an error if the argument does not match any defined format strings. For example, “p” as an abbreviation for “Percent” is not supported. Strings that you provide as an argument to the FORMAT function that are not included in the list of predefined format strings are handled as part of a custom format string, or as a string literal.  
   
-This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [http://go.microsoft.com/fwlink/?LinkId=219172](http://go.microsoft.com/fwlink/?LinkId=219172).  
+This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
 ## See Also  
 [Pre-Defined Numeric Formats for the FORMAT Function](pre-defined-numeric-formats-for-the-format-function.md)  

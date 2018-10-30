@@ -42,11 +42,11 @@ The **column** argument can be any of the following:
   
 This function is typically used to return the last value of a column for which the expression is not blank. For example, you could get the last value for which there were sales of a product.  
   
-This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [http://go.microsoft.com/fwlink/?LinkId=219172](http://go.microsoft.com/fwlink/?LinkId=219172).  
+This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
 ## See Also  
 [FIRSTNONBLANK Function &#40;DAX&#41;](firstnonblank-function-dax.md)  
 [Statistical Functions &#40;DAX&#41;](statistical-functions-dax.md)  
 [DAX Function Reference](dax-function-reference.md)  
-[Get Sample Data](http://go.microsoft.com/fwlink/?LinkId=164474)  
+[Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
   

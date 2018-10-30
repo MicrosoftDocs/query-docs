@@ -39,7 +39,7 @@ The dates used as the **start_date** and **end_date** are inclusive: that is, if
 > [!NOTE]  
 > The DATESBETWEEN function is provided for working with custom date ranges. If you are working with common date intervals such as months, quarters, and years, we recommend that you use the appropriate function, such as DATESINPERIOD.  
   
-This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [http://go.microsoft.com/fwlink/?LinkId=219172](http://go.microsoft.com/fwlink/?LinkId=219172).  
+This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
 ## Example  
 The following sample formula creates a measure that calculates the 'Summer 2007 sales' for the Internet sales.  

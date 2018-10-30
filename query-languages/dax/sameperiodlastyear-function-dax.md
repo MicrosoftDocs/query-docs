@@ -43,7 +43,7 @@ The dates returned are the same as the dates returned by this equivalent formula
   
 `DATEADD(dates, -1, year)`  
   
-This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [http://go.microsoft.com/fwlink/?LinkId=219172](http://go.microsoft.com/fwlink/?LinkId=219172).  
+This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
 ## Example  
 The following sample formula creates a measure that calculates the previous year sales of the Reseller sales.  

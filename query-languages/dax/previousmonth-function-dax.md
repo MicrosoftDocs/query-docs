@@ -41,7 +41,7 @@ The **dates** argument can be any of the following:
 > [!NOTE]  
 > Constraints on Boolean expressions are described in the topic, [CALCULATE Function &#40;DAX&#41;](calculate-function-dax.md).  
   
-This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [http://go.microsoft.com/fwlink/?LinkId=219172](http://go.microsoft.com/fwlink/?LinkId=219172).  
+This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
 ## Example  
 The following sample formula creates a measure that calculates the 'previous month sales' for the Internet sales.  
@@ -58,5 +58,5 @@ To see how this works, create a PivotTable and add the fields, CalendarYear and 
 [PREVIOUSDAY Function &#40;DAX&#41;](previousday-function-dax.md)  
 [PREVIOUSQUARTER Function &#40;DAX&#41;](previousquarter-function-dax.md)  
 [PREVIOUSYEAR Function &#40;DAX&#41;](previousyear-function-dax.md)  
-[Get Sample Data](http://go.microsoft.com/fwlink/?LinkId=164474)  
+[Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
   

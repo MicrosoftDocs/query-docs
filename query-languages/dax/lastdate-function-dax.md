@@ -42,7 +42,7 @@ When the current context is a single date, the date returned by the FIRSTDATE an
   
 Technically, the return value is a table that contains a single column and single value. Therefore, this function can be used as an argument to any function that requires a table in its arguments. Also, the returned value can be used whenever a date value is required.  
   
-This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [http://go.microsoft.com/fwlink/?LinkId=219172](http://go.microsoft.com/fwlink/?LinkId=219172).  
+This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
 ## Example  
 The following sample formula creates a measure that obtains the last date, for the current context, when a sale was made in the Internet sales channel.  
@@ -58,5 +58,5 @@ To see how this works, create a PivotTable and add the field CalendarYear to the
 [Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
 [FIRSTDATE Function &#40;DAX&#41;](firstdate-function-dax.md)  
 [LASTNONBLANK Function &#40;DAX&#41;](lastnonblank-function-dax.md)  
-[Get Sample Data](http://go.microsoft.com/fwlink/?LinkId=164474)  
+[Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
   

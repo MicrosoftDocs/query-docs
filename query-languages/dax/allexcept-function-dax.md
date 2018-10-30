@@ -46,7 +46,7 @@ The following example presents a formula that you can use in a measure.
 The formula sums SalesAmount_USD and uses the ALLEXCEPT function to remove any context filters on the DateTime table except if the filter has been applied to the CalendarYear column.  
   
 > [!NOTE]  
-> The above example uses the tables, ResellerSales_USD and DateTime from the DAX sample workbook. For more information about samples, see [Get Sample Data](http://go.microsoft.com/fwlink/?LinkId=164474) .  
+> The above example uses the tables, ResellerSales_USD and DateTime from the DAX sample workbook. For more information about samples, see [Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474) .  
   
 ```dax
 =CALCULATE(SUM(ResellerSales_USD[SalesAmount_USD]), ALLEXCEPT(DateTime, DateTime[CalendarYear]))  

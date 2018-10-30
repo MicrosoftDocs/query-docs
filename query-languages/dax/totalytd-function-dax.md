@@ -53,7 +53,7 @@ For example, the following formula specifies a (fiscal) year_end_date of 6/30 in
 ```dax
 In this example, year_end_date can be specified as “6/30”, “Jun 30”, “30 June”, or any string that resolves to a month/day. However, it is recommended you specify year_end_date using “month/day” (as shown) to ensure the string resolves to a date.  
   
-This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [http://go.microsoft.com/fwlink/?LinkId=219172](http://go.microsoft.com/fwlink/?LinkId=219172).  
+This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
 ## Example  
 The following sample formula creates a measure that calculates the 'year running total' or 'year running sum' for the Internet sales.  
@@ -72,5 +72,5 @@ To see how this works, create a PivotTable and add the fields, CalendarYear, Cal
 [DATESYTD Function &#40;DAX&#41;](datesytd-function-dax.md)  
 [TOTALMTD Function &#40;DAX&#41;](totalmtd-function-dax.md)  
 [TOTALQTD Function &#40;DAX&#41;](totalqtd-function-dax.md)  
-[Get Sample Data](http://go.microsoft.com/fwlink/?LinkId=164474)  
+[Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
   

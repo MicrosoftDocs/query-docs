@@ -21,7 +21,7 @@ BLANK()
 A blank.  
   
 ## Remarks  
-Blanks are not equivalent to nulls. DAX uses blanks for both database nulls and for blank cells in Excel. For more information, see [Data Types Supported (SSAS Tabular)](http://msdn.microsoft.com/en-us/92993f7b-7243-4aec-906d-0b0379798242).  
+Blanks are not equivalent to nulls. DAX uses blanks for both database nulls and for blank cells in Excel. For more information, see [Data Types Supported (SSAS Tabular)](https://msdn.microsoft.com/en-us/92993f7b-7243-4aec-906d-0b0379798242).  
   
 Some DAX functions treat blank cells somewhat differently from Microsoft Excel. Blanks and empty strings ("") are not always equivalent, but some operations may treat them as such. For details on the behavior of an individual function or operator, see [DAX Function Reference](dax-function-reference.md).  
   

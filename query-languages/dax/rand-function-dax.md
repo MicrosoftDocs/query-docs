@@ -29,7 +29,7 @@ Moreover, RAND is always recalculated if the function is used in the definition 
   
 Also, in such contexts the RAND function cannot return a result of zero, to prevent errors such as division by zero.  
   
-This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [http://go.microsoft.com/fwlink/?LinkId=219172](http://go.microsoft.com/fwlink/?LinkId=219172).  
+This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
 ## Example  
 To generate a random real number between two other numbers, you can use a formula like the following:  

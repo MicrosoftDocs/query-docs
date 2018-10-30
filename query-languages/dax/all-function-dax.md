@@ -74,7 +74,7 @@ The formula is constructed as follows:
 3.  You then use the SUMX function to sum the values in the ResellerSales_USD[SalesAmount_USD] column. In other words, you get the sum of ResellerSales_USD[SalesAmount_USD] for all resellers sales.  
   
 > [!NOTE]  
-> The above example uses the tables, ResellerSales_USD, DateTime, and ProductCategory from the DAX sample workbook. For more information about samples, see [Get Sample Data](http://go.microsoft.com/fwlink/?LinkId=164474) .  
+> The above example uses the tables, ResellerSales_USD, DateTime, and ProductCategory from the DAX sample workbook. For more information about samples, see [Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474) .  
   
 ## Example: Calculate Ratio of Product Sales to Total Sales Through Current Year  
   
@@ -106,7 +106,7 @@ The formula is constructed as follows:
 2.  For the denominator, you remove the existing filter on CalendarYear by using the ALL(Column) function. This calculates the sum over the remaining rows on the ResellerSales_USD table, after applying the existing context filters from the column labels. The net effect is that for the denominator the sum is calculated over the selected ProductCategoryName (the implied context filter) and for all values in Year.  
   
 > [!NOTE]  
-> This example uses the tables, ResellerSales_USD, DateTime, and ProductCategory from the DAX sample workbook. For more information about samples, see [Get Sample Data](http://go.microsoft.com/fwlink/?LinkId=164474) .  
+> This example uses the tables, ResellerSales_USD, DateTime, and ProductCategory from the DAX sample workbook. For more information about samples, see [Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474) .  
   
 ## Example: Calculate Contribution of Product Categories to Total Sales Per Year  
   
@@ -138,7 +138,7 @@ The formula is constructed as follows:
 2.  For the denominator, you use the function, ALL(Column), to remove the filter on ProductCategoryName and calculate the sum over the remaining rows on the ResellerSales_USD table, after applying the existing context filters from the row labels. The net effect is that, for the denominator, the sum is calculated over the selected Year (the implied context filter) and for all values of ProductCategoryName.  
   
 > [!NOTE]  
-> This example uses the tables, ResellerSales_USD, DateTime, and ProductCategory from the DAX sample workbook. For more information about samples, see [Get Sample Data](http://go.microsoft.com/fwlink/?LinkId=164474).  
+> This example uses the tables, ResellerSales_USD, DateTime, and ProductCategory from the DAX sample workbook. For more information about samples, see [Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474).  
   
 ## See Also  
 [Filter Functions &#40;DAX&#41;](filter-functions-dax.md)  

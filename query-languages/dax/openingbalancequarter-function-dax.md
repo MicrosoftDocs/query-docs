@@ -44,7 +44,7 @@ The **dates** argument can be any of the following:
 > [!NOTE]  
 > The **filter** expression has restrictions described in the topic, [CALCULATE Function &#40;DAX&#41;](calculate-function-dax.md).  
 >   
-> This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [http://go.microsoft.com/fwlink/?LinkId=219172](http://go.microsoft.com/fwlink/?LinkId=219172).  
+> This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
 ## Example  
 The following sample formula creates a measure that calculates the 'Quarter Start Inventory Value' of the product inventory.  
@@ -62,5 +62,5 @@ To see how this works, create a PivotTable and add the fields, CalendarYear, Cal
 [OPENINGBALANCEMONTH Function &#40;DAX&#41;](openingbalancemonth-function-dax.md)  
 [Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
 [CLOSINGBALANCEQUARTER Function &#40;DAX&#41;](closingbalancequarter-function-dax.md)  
-[Get Sample Data](http://go.microsoft.com/fwlink/?LinkId=164474)  
+[Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
   
