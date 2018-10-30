@@ -13,9 +13,9 @@ Returns the first date of the year in the current context for the specified colu
   
 ## Syntax  
   
-```  
+```dax
 STARTOFYEAR(<dates>)  
-```  
+```
   
 #### Parameters  
   
@@ -46,9 +46,9 @@ The following sample formula creates a measure that returns the start of the yea
   
 To see how this works, create a PivotTable and add the fields CalendarYear and MonthNumberOfYear to the **Row Labels** area of the PivotTable. Then add a measure, named **StartOfYear**, using the formula defined in the code section, to the **Values** area of the PivotTable.  
   
-```  
+```dax
 =STARTOFYEAR(DateTime[DateKey])  
-```  
+```
   
 ## See Also  
 [Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  

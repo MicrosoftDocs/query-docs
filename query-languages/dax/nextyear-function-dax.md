@@ -13,9 +13,9 @@ Returns a table that contains a column of all dates in the next year, based on t
   
 ## Syntax  
   
-```  
+```dax
 NEXTYEAR(<dates>[,<year_end_date>])  
-```  
+```
   
 #### Parameters  
   
@@ -51,9 +51,9 @@ The following sample formula creates a measure that calculates the 'next year sa
   
 To see how this works, create a PivotTable and add the fields, CalendarYear and CalendarQuarter, to the **Row Labels** area of the PivotTable. Then add a measure, named **Next Year Sales**, using the formula defined in the code section, to the **Values** area of the PivotTable.  
   
-```  
+```dax
 =CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), NEXTYEAR('DateTime'[DateKey]))  
-```  
+```
   
 ## See Also  
 [Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  

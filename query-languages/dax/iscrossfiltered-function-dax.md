@@ -13,9 +13,9 @@ Returns TRUE when *columnName* or another column in the same or related table is
   
 ## Syntax  
   
-```  
+```dax
 ISCROSSFILTERED(<columnName>)  
-```  
+```
   
 #### Parameters  
 columnName  

@@ -13,9 +13,9 @@ Returns all the rows in a table, or all the values in a column, ignoring any fil
   
 ## Syntax  
   
-```  
+```dax
 ALL( {<table> | <column>[, <column>[, <column>[,…]]]} )  
-```  
+```
   
 #### Parameters  
   
@@ -60,9 +60,9 @@ The following table shows the results when a new measure, **All Reseller Sales R
   
 ### Code  
   
-```  
+```dax
 =SUMX(ResellerSales_USD, ResellerSales_USD[SalesAmount_USD])/SUMX(ALL(ResellerSales_USD), ResellerSales_USD[SalesAmount_USD])  
-```  
+```
   
 ### Comments  
 The formula is constructed as follows:  
@@ -94,9 +94,9 @@ The following table shows the results when a new measure, **Reseller Sales Year*
   
 ### Code  
   
-```  
+```dax
 =SUMX(ResellerSales_USD, ResellerSales_USD[SalesAmount_USD])/CALCULATE( SUM( ResellerSales_USD[SalesAmount_USD]), ALL(DateTime[CalendarYear]))  
-```  
+```
   
 ### Comments  
 The formula is constructed as follows:  
@@ -126,9 +126,9 @@ The following table shows the results when a new measure, **Reseller Sales Categ
   
 ### Code  
   
-```  
+```dax
 =SUMX(ResellerSales_USD, ResellerSales_USD[SalesAmount_USD])/CALCULATE( SUM( ResellerSales_USD[SalesAmount_USD]), ALL(ProductCategory[ProductCategoryName]))  
-```  
+```
   
 ### Comments  
 The formula is constructed as follows:  

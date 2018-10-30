@@ -13,9 +13,9 @@ Converts a value to text according to the specified format.
   
 ## Syntax  
   
-```  
+```dax
 FORMAT(<value>, <format_string>)  
-```  
+```
   
 #### Parameters  
   

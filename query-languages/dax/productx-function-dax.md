@@ -16,9 +16,9 @@ To return the product of the numbers in a column, use [PRODUCT Function &#40;DAX
   
 ## Syntax  
   
-```  
+```dax
 PRODUCTX(<table>, <expression>)  
-```  
+```
   
 #### Parameters  
   
@@ -38,9 +38,9 @@ Only the numbers in the column are counted. Blanks, logical values, and text are
 ## Example  
 The following computes the future value of an investment:  
   
-```  
+```dax
 = [PresentValue] * PRODUCTX( AnnuityPeriods, 1+[FixedInterestRate] )  
-```  
+```
   
 ## See Also  
 [PRODUCT Function &#40;DAX&#41;](product-function-dax.md)  

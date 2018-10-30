@@ -13,9 +13,9 @@ Raises an error with an error message.
   
 ## Syntax  
   
-```  
+```dax
 ERROR(<text>)  
-```  
+```
   
 #### Parameters  
   
@@ -34,7 +34,7 @@ The ERROR function can be placed in a DAX expression anywhere a scalar value is 
 ### Example 1
 
 The following DAX query:
-```
+```dax
 DEFINE
 MEASURE DimProduct[Measure] = 
 		IF(
@@ -52,7 +52,7 @@ Fails and raises and error message containing “red color encountered”.
 ### Example 2
 The following DAX query:
 
-```
+```dax
 DEFINE
 MEASURE DimProduct[Measure] = 
 		IF(

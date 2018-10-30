@@ -13,9 +13,9 @@ Returns a number rounded to the desired multiple.
   
 ## Syntax  
   
-```  
+```dax
 MROUND(<number>, <multiple>)  
-```  
+```
   
 #### Parameters  
   
@@ -37,9 +37,9 @@ The following expression rounds 1.3 to the nearest multiple of .2. The expected 
   
 ### Code  
   
-```  
+```dax
 =MROUND(1.3,0.2)  
-```  
+```
   
 ## Example: Negative Numbers  
   
@@ -48,9 +48,9 @@ The following expression rounds -10 to the nearest multiple of -3. The expected 
   
 ### Code  
   
-```  
+```dax
 =MROUND(-10,-3)  
-```  
+```
   
 ## Example: Error  
   
@@ -59,9 +59,9 @@ The following expression returns an error, because the numbers have different si
   
 ### Code  
   
-```  
+```dax
 =MROUND(5,-2)  
-```  
+```
   
 ## See Also  
 [Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  

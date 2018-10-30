@@ -13,9 +13,9 @@ Returns a table that contains a column of dates that begins with the **start_dat
   
 ## Syntax  
   
-```  
+```dax
 DATESBETWEEN(<dates>,<start_date>,<end_date>)  
-```  
+```
   
 #### Parameters  
   
@@ -46,12 +46,12 @@ The following sample formula creates a measure that calculates the 'Summer 2007 
   
 To see how this works, create a PivotTable and add the field, CalendarYear, to the **Row Labels** area of the PivotTable. Then add a measure, named **Summer 2007 Sales**, using the formula as defined in the code section, to the **Values** area of the PivotTable.  
   
-```  
+```dax
 =CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESBETWEEN(DateTime[DateKey],  
     DATE(2007,6,1),  
     DATE(2007,8,31)  
   ))  
-```  
+```
   
 ## See Also  
 [Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  

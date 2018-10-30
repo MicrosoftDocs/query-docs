@@ -13,9 +13,9 @@ Returns a table that contains a column of dates that begins with the **start_dat
   
 ## Syntax  
   
-```  
+```dax
 DATESINPERIOD(<dates>,<start_date>,<number_of_intervals>,<interval>)  
-```  
+```
   
 #### Parameters  
   
@@ -47,9 +47,9 @@ This DAX function is not supported for use in DirectQuery mode. For more informa
 ## Example  
 The following formula returns the Internet sales for the 21 days prior to August 24, 2007.  
   
-```  
+```dax
 = CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]),DATESINPERIOD(DateTime[DateKey],DATE(2007,08,24),-21,day))  
-```  
+```
   
 ## See Also  
 [Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  

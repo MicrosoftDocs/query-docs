@@ -13,9 +13,9 @@ Returns the hyperbolic sine of a number.
   
 ## Syntax  
   
-```  
+```dax
 SINH(number)  
-```  
+```
   
 #### Parameters  
   

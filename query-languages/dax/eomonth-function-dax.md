@@ -13,9 +13,9 @@ Returns the date in **datetime** format of the last day of the month, before or 
   
 ## Syntax  
   
-```  
+```dax
 EOMONTH(<start_date>, <months>)  
-```  
+```
   
 #### Parameters  
   
@@ -43,9 +43,9 @@ This DAX function may return different results when used in a model that is depl
 ## Example  
 The following expression returns May 31, 2008, because the **months** argument is rounded to 2.  
   
-```  
+```dax
 =EOMONTH("March 3, 2008",1.5)  
-```  
+```
   
 ## See Also  
 [EDATE Function &#40;DAX&#41;](edate-function-dax.md)  

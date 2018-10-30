@@ -13,9 +13,9 @@ Returns TRUE if number is odd, or FALSE if number is even.
   
 ## Syntax  
   
-```  
+```dax
 ISODD(number)  
-```  
+```
   
 #### Parameters  
   

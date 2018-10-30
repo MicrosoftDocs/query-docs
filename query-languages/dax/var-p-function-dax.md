@@ -13,9 +13,9 @@ Returns the variance of the entire population.
   
 ## Syntax  
   
-```  
+```dax
 VAR.P(<columnName>)  
-```  
+```
   
 #### Parameters  
 columnName  
@@ -45,6 +45,6 @@ This DAX function may return different results when used in a model that is depl
 ## Example  
 The following example shows the formula for a measure that estimates the variance of the SalesAmount_USD column from the InternetSales_USD table, for the entire population.  
   
-```  
+```dax
 =VAR.P(InternetSales_USD[SalesAmount_USD])  
-```  
+```

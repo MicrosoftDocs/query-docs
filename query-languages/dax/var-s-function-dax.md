@@ -13,9 +13,9 @@ Returns the variance of a sample population.
   
 ## Syntax  
   
-```  
+```dax
 VAR.S(<columnName>)  
-```  
+```
   
 #### Parameters  
 columnName  
@@ -47,6 +47,6 @@ This DAX function may return different results when used in a model that is depl
 ## Example  
 The following example shows the formula for a measure that calculates the variance of the SalesAmount_USD column from the InternetSales_USD for a sample population.  
   
-```  
+```dax
 =VAR.S(InternetSales_USD[SalesAmount_USD])  
-```  
+```

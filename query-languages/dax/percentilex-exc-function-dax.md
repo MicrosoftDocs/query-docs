@@ -16,9 +16,9 @@ To return the percentile of numbers in a column, use [PERCENTILE.EXC Function &#
   
 ## Syntax  
   
-```  
+```dax
 PERCENTILEX.EXC(<table>, <expression>, k)  
-```  
+```
   
 #### Parameters  
   

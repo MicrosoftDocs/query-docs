@@ -13,9 +13,9 @@ Returns a single column table containing the values of an arithmetic series, tha
   
 ## Syntax  
   
-```  
+```dax
 GENERATESERIES(<startValue>, <endValue>[, <incrementValue>])
-```  
+```
   
 #### Parameters  
   
@@ -39,9 +39,9 @@ The sequence stops at the last value that is less than or equal to endValue.
 ## Examples
 ### Example 1
 The following DAX query:
-```
+```dax
 EVALUATE GENERATESERIES(1, 5)
-```
+```dax
 Returns the following table with a single column:
 
 [Value]  | | 
@@ -54,9 +54,9 @@ Returns the following table with a single column:
 
 ### Example 2
 The following DAX query:
-```
+```dax
 EVALUATE GENERATESERIES(1.2, 2.4, 0.4)
-```
+```dax
 Returns the following table with a single column:
 
 [Value]  | | 
@@ -68,9 +68,9 @@ Returns the following table with a single column:
 
 ### Example 3
 The following DAX query:
-```
+```dax
 EVALUATE GENERATESERIES(CURRENCY(10), CURRENCY(12.4), CURRENCY(0.5))
-```
+```dax
 Returns the following table with a single column:
 
 [Value]  | | 

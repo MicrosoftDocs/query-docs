@@ -13,9 +13,9 @@ Calculates the fraction of the year represented by the number of whole days betw
   
 ## Syntax  
   
-```  
+```dax
 YEARFRAC(<start_date>, <end_date>, <basis>)  
-```  
+```
   
 #### Parameters  
   
@@ -38,16 +38,16 @@ If **basis** &lt; 0 or if **basis** &gt; 4, YEARFRAC returns an error.
 ## Example  
 The following example returns the fraction of a year represented by the difference between the dates in the two columns, `TransactionDate` and `ShippingDate`:  
   
-```  
+```dax
 =YEARFRAC(Orders[TransactionDate],Orders[ShippingDate])  
-```  
+```
   
 ## Example  
 The following example returns the fraction of a year represented by the difference between the dates, January 1 and March 1:  
   
-```  
+```dax
 =YEARFRAC("Jan 1 2007","Mar 1 2007")  
-```  
+```dax
 Use four-digit years whenever possible, to avoid getting unexpected results. When the year is truncated, the current year is assumed. When the date is or omitted, the first date of the month is assumed.  
   
 The second argument, **basis**, has also been omitted. Therefore, the year fraction is calculated according to the US (NASD) 30/360 standard.  

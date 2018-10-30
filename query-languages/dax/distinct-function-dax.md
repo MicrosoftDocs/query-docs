@@ -16,9 +16,9 @@ Returns a one-column table that contains the distinct values from the specified 
   
 ## Syntax  
   
-```  
+```dax
 DISTINCT(<column>)  
-```  
+```
   
 #### Parameters  
   
@@ -40,9 +40,9 @@ The VALUES function is similar to DISTINCT; it can also be used to return a list
 ## Example  
 The following formula counts the number of unique customers who have generated orders over the internet channel. The table that follows illustrates the possible results when the formula is added to a PivotTable.  
   
-```  
+```dax
 =COUNTROWS(DISTINCT(InternetSales_USD[CustomerKey]))  
-```  
+```dax
 Note that you cannot paste the list of values that DISTINCT returns directly into a column. Instead, you pass the results of the DISTINCT function to another function that counts, filters, or aggregates values by using the list. To make the example as simple as possible, here the table of distinct values has been passed to the COUNTROWS function.  
   
 |Unique Internet customers|Column Labels||||  

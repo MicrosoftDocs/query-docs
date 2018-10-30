@@ -13,9 +13,9 @@ Evaluates the **expression** at the last date of the quarter in the current cont
   
 ## Syntax  
   
-```  
+```dax
 CLOSINGBALANCEQUARTER(<expression>,<dates>[,<filter>])  
-```  
+```
   
 #### Parameters  
   
@@ -53,9 +53,9 @@ To see how this works, create a PivotTable and add the fields, CalendarYear, Cal
   
 ## Code  
   
-```  
+```dax
 =CLOSINGBALANCEQUARTER(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])  
-```  
+```
   
 ## See Also  
 [Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  

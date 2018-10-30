@@ -14,9 +14,9 @@ Concatenates the result of an expression evaluated for each row in a table.
   
 ## Syntax  
   
-```  
+```dax
 CONCATENATEX(<table>, <expression>, [delimiter])  
-```  
+```
   
 #### Parameters  
   

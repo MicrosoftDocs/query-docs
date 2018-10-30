@@ -16,9 +16,9 @@ To return the product of an expression evaluated for each row in a table, use [P
   
 ## Syntax  
   
-```  
+```dax
 PRODUCT(<column>)  
-```  
+```
   
 #### Parameters  
   
@@ -37,9 +37,9 @@ PRODUCT( Table[Column] ) is equivalent to PRODUCTX( Table, Table[Column] )
 ## Example  
 The following computes the product of the AdjustedRates column in an Annuity table:  
   
-```  
+```dax
 =PRODUCT( Annuity[AdjustedRates] )  
-```  
+```
   
 ## See Also  
 [PRODUCTX Function &#40;DAX&#41;](productx-function-dax.md)  

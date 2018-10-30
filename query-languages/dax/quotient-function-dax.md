@@ -13,9 +13,9 @@ Performs division and returns only the integer portion of the division result. U
   
 ## Syntax  
   
-```  
+```dax
 QUOTIENT(<numerator>, <denominator>)  
-```  
+```
   
 #### Parameters  
   
@@ -35,10 +35,10 @@ You can use a column reference instead of a literal value for either argument. H
 ## Example  
 The following formulas return the same result, 2.  
   
-```  
+```dax
 =QUOTIENT(5,2)  
 =QUOTIENT(10/2,2)  
-```  
+```
   
 ## See Also  
 [Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  

@@ -16,9 +16,9 @@ Returns a one-column table that contains the distinct values from the specified 
   
 ## Syntax  
   
-```  
+```dax
 VALUES(<TableNameOrColumnName>)  
-```  
+```
   
 #### Parameters  
   
@@ -61,9 +61,9 @@ The following formula counts the number of unique invoices (sales orders), and p
 |Clothing|7,461|  
 |Grand Total|27,659|  
   
-```  
+```dax
 =COUNTROWS(VALUES('InternetSales_USD'[SalesOrderNumber]))  
-```  
+```
   
 ## See Also  
 [FILTER Function &#40;DAX&#41;](filter-function-dax.md)  

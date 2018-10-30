@@ -20,7 +20,7 @@ Based on the sort order, the first parameter is compared with the second paramet
   
 ```vb  
 ISONORAFTER(<scalar_expression>, <scalar_expression>sort_order] [,scalar_expression>, <scalar_expression>, [sort_order][,…])  
-```  
+```
   
 #### Parameters  
   
@@ -43,6 +43,6 @@ Table name: ‘Info’
 |USA|CA|5|500|  
 |USA|WA|10|900|  
   
-```  
+```dax
 FILTER(Info, ISONORAFTER(Info[Country], “IND”, ASC, Info[State], “MH”, ASC))  
-```  
+```

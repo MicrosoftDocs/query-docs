@@ -13,9 +13,9 @@ Converts a text string to all uppercase letters
   
 ## Syntax  
   
-```  
+```dax
 UPPER (<text>)  
-```  
+```
   
 #### Parameters  
   
@@ -29,9 +29,9 @@ Same text, in uppercase.
 ## Example  
 The following formula converts the string in the column, [ProductCode], to all uppercase. Non-alphabetic characters are not affected.  
   
-```  
+```dax
 =UPPER(['New Products'[Product Code])  
-```  
+```
   
 ## See Also  
 [Text Functions &#40;DAX&#41;](text-functions-dax.md)  

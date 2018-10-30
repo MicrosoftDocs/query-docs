@@ -13,9 +13,9 @@ Returns the number of characters in a text string.
   
 ## Syntax  
   
-```  
+```dax
 LEN(<text>)  
-```  
+```
   
 #### Parameters  
   
@@ -38,6 +38,6 @@ If you use LEN with a column that contains non-text values, such as dates or Boo
 ## Example  
 The following formula sums the lengths of addresses in the columns, [AddressLine1] and [AddressLine2].  
   
-```  
+```dax
 =LEN([AddressLine1])+LEN([AddressLin2])  
   

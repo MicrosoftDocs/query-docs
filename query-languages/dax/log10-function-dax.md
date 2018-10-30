@@ -13,9 +13,9 @@ Returns the base-10 logarithm of a number.
   
 ## Syntax  
   
-```  
+```dax
 LOG10(<number>)  
-```  
+```
   
 #### Parameters  
   
@@ -32,11 +32,11 @@ The LOG function lets you change the base of the logarithm, instead of using the
 ## Example  
 The following formulas return the same result, 2:  
   
-```  
+```dax
 =LOG(100,10)  
 =LOG(100)  
 =LOG10(100)  
-```  
+```
   
 ## See Also  
 [Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  

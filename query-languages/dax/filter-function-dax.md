@@ -13,9 +13,9 @@ Returns a table that represents a subset of another table or expression.
   
 ## Syntax  
   
-```  
+```dax
 FILTER(<table>,<filter>)  
-```  
+```
   
 #### Parameters  
   
@@ -64,10 +64,10 @@ The final report table shows the results when you create a PivotTable by using t
 |2008|$228,159.45|$5,386,558.19|$102,675.04|$5,717,392.68|  
 |Grand Total|$384,639.63|$16,107,890.23|$172,817.81|$16,665,347.67|  
   
-```  
+```dax
 SUMX(FILTER('InternetSales_USD', RELATED('SalesTerritory'[SalesTerritoryCountry])<>"United States")  
      ,'InternetSales_USD'[SalesAmount_USD])  
-```  
+```
   
 ## See Also  
 [Filter Functions &#40;DAX&#41;](filter-functions-dax.md)  

@@ -13,9 +13,9 @@ Converts a text string that represents a number to a number.
   
 ## Syntax  
   
-```  
+```dax
 VALUE(<text>)  
-```  
+```
   
 #### Parameters  
   
@@ -36,9 +36,9 @@ You can also use column references. For example, if you have a column that conta
 ## Example  
 The following formula converts the typed string, "3", into the numeric value 3.  
   
-```  
+```dax
 =VALUE("3")  
-```  
+```
   
 ## See Also  
 [Text Functions &#40;DAX&#41;](text-functions-dax.md)  

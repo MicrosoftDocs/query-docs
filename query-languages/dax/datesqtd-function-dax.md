@@ -13,9 +13,9 @@ Returns a table that contains a column of the dates for the quarter to date, in 
   
 ## Syntax  
   
-```  
+```dax
 DATESQTD(<dates>)  
-```  
+```
   
 #### Parameters  
   
@@ -46,9 +46,9 @@ The following sample formula creates a measure that calculates the 'Quarterly Ru
   
 To see how this works, create a PivotTable and add the fields, CalendarYear, CalendarQuarter and MonthNumberOfYear to the **Row Labels** area of the PivotTable. Then add a measure, named **Quarterly Running Total**, using the formula defined in the code section, to the **Values** area of the PivotTable.  
   
-```  
+```dax
 =CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESQTD(DateTime[DateKey]))  
-```  
+```
   
 ## See Also  
 [Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  

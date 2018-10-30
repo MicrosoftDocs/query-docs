@@ -13,9 +13,9 @@ The COUNTAX function counts nonblank results when evaluating the result of an ex
   
 ## Syntax  
   
-```  
+```dax
 COUNTAX(<table>,<expression>)  
-```  
+```
   
 #### Parameters  
   
@@ -39,9 +39,9 @@ Whenever the function finds no rows to aggregate, the function returns a blank. 
 ## Example  
 The following example counts the number of nonblank rows in the column, Phone, using the table that results from filtering the Reseller table on [Status] = **Active**.  
   
-```  
+```dax
 =COUNTAX(FILTER('Reseller',[Status]="Active"),[Phone])  
-```  
+```
   
 ## See Also  
 [COUNT Function &#40;DAX&#41;](count-function-dax.md)  

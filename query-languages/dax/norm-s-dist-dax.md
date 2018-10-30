@@ -14,9 +14,9 @@ Returns the standard normal distribution (has a mean of zero and a standard devi
   
 ## Syntax  
   
-```  
+```dax
 NORM.S.DIST(Z, Cumulative)
-```  
+```
   
 #### Parameters  
   
@@ -30,9 +30,9 @@ The standard normal distribution (has a mean of zero and a standard deviation of
   
 ## Example  
   
-```  
+```dax
 EVALUATE { NORM.S.DIST(1.333333, TRUE) }
-```  
+```dax
 Returns
 
 |[Value]  |

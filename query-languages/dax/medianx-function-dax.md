@@ -16,9 +16,9 @@ To return the median of numbers in a column, use [MEDIAN Function &#40;DAX&#41;]
   
 ## Syntax  
   
-```  
+```dax
 MEDIANX(<table>, <expression>)  
-```  
+```
   
 #### Parameters  
   
@@ -42,9 +42,9 @@ MEDIANX does not ignore blanks; however, MEDIAN does ignore blanks
 ## Example  
 The following computes the median age of customers who live in the USA.  
   
-```  
+```dax
 =MEDIANX( FILTER(Customers, RELATED( Geography[Country]=”USA” ) ), Customers[Age] )  
-```  
+```
   
 ## See Also  
 [MEDIAN Function &#40;DAX&#41;](median-function-dax.md)  

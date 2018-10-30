@@ -13,9 +13,9 @@ Counts the number of blank cells in a column.
   
 ## Syntax  
   
-```  
+```dax
 COUNTBLANK(<column>)  
-```  
+```
   
 #### Parameters  
   
@@ -38,9 +38,9 @@ This DAX function is not supported for use in DirectQuery mode. For more informa
 ## Example  
 The following example shows how to count the number of rows in the table Reseller that have blank values for BankName.  
   
-```  
+```dax
 =COUNTBLANK(Reseller[BankName])  
-```  
+```dax
 To count logical values or text, use the COUNTA or COUNTAX functions.  
   
 ## See Also  

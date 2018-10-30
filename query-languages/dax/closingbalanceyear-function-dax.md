@@ -13,9 +13,9 @@ Evaluates the **expression** at the last date of the year in the current context
   
 ## Syntax  
   
-```  
+```dax
 CLOSINGBALANCEYEAR(<expression>,<dates>[,<filter>][,<year_end_date>])  
-```  
+```
   
 #### Parameters  
   
@@ -56,9 +56,9 @@ To see how this works, create a PivotTable and add the field, CalendarYear, to t
   
 ## Code  
   
-```  
+```dax
 =CLOSINGBALANCEYEAR(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])  
-```  
+```
   
 ## See Also  
 [Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  

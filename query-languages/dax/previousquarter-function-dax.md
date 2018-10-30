@@ -13,9 +13,9 @@ Returns a table that contains a column of all dates from the previous quarter, b
   
 ## Syntax  
   
-```  
+```dax
 PREVIOUSQUARTER(<dates>)  
-```  
+```
   
 #### Parameters  
   
@@ -48,9 +48,9 @@ The following sample formula creates a measure that calculates the 'previous qua
   
 To see how this works, create a PivotTable and add the fields, CalendarYear and CalendarQuarter, to the **Row Labels** area of the PivotTable. Then add a measure, named **Previous Quarter Sales**, using the formula defined in the code section, to the **Values** area of the PivotTable.  
   
-```  
+```dax
 =CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSQUARTER('DateTime'[DateKey]))  
-```  
+```
   
 ## See Also  
 [Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  

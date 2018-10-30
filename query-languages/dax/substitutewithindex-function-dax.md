@@ -18,9 +18,9 @@ The index starts at 0 (0-based) and is incremented by one for each additional ro
   
 ## Syntax  
   
-```  
+```dax
 SUBSTITUTEWITHINDEX(<table>, <indexColumnName>, <indexColumnsTable>, [<orderBy_expression>, [<order>][, <orderBy_expression>, [<order>]]…])  
-```  
+```
   
 #### Parameters  
   

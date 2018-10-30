@@ -13,9 +13,9 @@ Provides a mechanism for declaring an inline set of data values.
   
 ## Syntax  
   
-```  
+```dax
 DATATABLE (ColumnName1, DataType1, ColumnName2, DataType2..., {{Value1, Value2...}, {ValueN, ValueN+1...}...})  
-```  
+```
   
 #### Parameters  
   
@@ -34,7 +34,7 @@ Unlike DATATABLE, [Table Constructor](table-constructor.md) allows any scalar ex
   
 ## Example  
   
-```  
+```dax
 =DataTable("Name", STRING,  
                "Region", STRING  
                ,{  
@@ -45,4 +45,4 @@ Unlike DATATABLE, [Table Constructor](table-constructor.md) allows any scalar ex
                         {" User4","East"}  
                 }  
            )  
-```  
+```

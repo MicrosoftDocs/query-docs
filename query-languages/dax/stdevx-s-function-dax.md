@@ -13,9 +13,9 @@ Returns the standard deviation of a sample population.
   
 ## Syntax  
   
-```  
+```dax
 STDEVX.S(<table>, <expression>)  
-```  
+```
   
 #### Parameters  
 table  
@@ -50,6 +50,6 @@ This DAX function may return different results when used in a model that is depl
 ## Example  
 The following example shows the formula for a calculated column that estimates the standard deviation of the unit price per product for a sample population, when the formula is used in the Product table.  
   
-```  
+```dax
 =STDEVX.S(RELATEDTABLE(InternetSales_USD), InternetSales_USD[UnitPrice_USD] – (InternetSales_USD[DiscountAmount_USD]/InternetSales_USD[OrderQuantity]))  
-```  
+```

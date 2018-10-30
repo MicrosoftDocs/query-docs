@@ -13,9 +13,9 @@ Returns **TRUE** if the specified *item* exists within the specified *path*.
   
 ## Syntax  
   
-```  
+```dax
 PATHCONTAINS(<path>, <item>)  
-```  
+```
   
 #### Parameters  
 path  
@@ -35,6 +35,6 @@ This DAX function is not supported for use in DirectQuery mode. For more informa
 ## Example  
 The following example creates a calculated column that takes a manager ID and checks a set of employees. If the manager ID is among the list of managers returned by the PATH function, the PATHCONTAINS function returns true; otherwise it returns false.  
   
-```  
+```dax
 =PATHCONTAINS(PATH(Employee[EmployeeKey], Employee[ParentEmployeeKey]), "23")  
-```  
+```

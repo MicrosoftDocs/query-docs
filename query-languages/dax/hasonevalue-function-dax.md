@@ -15,7 +15,7 @@ Returns **TRUE** when the context for *columnName* has been filtered down to one
   
 ```html  
 HASONEVALUE(<columnName>)  
-```  
+```
   
 #### Parameters  
 columnName  
@@ -35,9 +35,9 @@ If you want to follow the scenario, you can download the spreadsheet with the mo
   
 Create a measure named [ResellerSales compared to 2007] using the following expression:  
   
-```  
+```dax
 =IF(HASONEVALUE(DateTime[CalendarYear]),SUM(ResellerSales_USD[SalesAmount_USD])/CALCULATE(SUM(ResellerSales_USD[SalesAmount_USD]),DateTime[CalendarYear]=2007),BLANK())  
-```  
+```
   
 1.  After creating the measure you should have an empty result under [ResellerSales compared to 2007]. The BLANK cell in the result is because you don't have single year filters anywhere in your context.  
   

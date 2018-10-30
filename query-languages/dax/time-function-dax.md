@@ -13,9 +13,9 @@ Converts hours, minutes, and seconds given as numbers to a time in **datetime** 
   
 ## Syntax  
   
-```  
+```dax
 TIME(hour, minute, second)  
-```  
+```
   
 #### Parameters  
   
@@ -50,25 +50,25 @@ This DAX function may return different results when used in a model that is depl
 ## Example  
 The following examples both return the time, 3:00 AM:  
   
-```  
+```dax
 =TIME(27,0,0)   
 =TIME(3,0,0)  
-```  
+```
   
 ## Example  
 The following examples both return the time, 12:30 PM:  
   
-```  
+```dax
 =TIME(0,750,0)   
 =TIME(12,30,0)  
-```  
+```
   
 ## Example  
 The following example creates a time based on the values in the columns, `intHours`, `intMinutes`, `intSeconds`:  
   
-```  
+```dax
 =TIME([intHours],[intMinutes],[intSeconds])  
-```  
+```
   
 ## See Also  
 [DATE Function &#40;DAX&#41;](date-function-dax.md)  

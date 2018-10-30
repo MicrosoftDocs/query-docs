@@ -13,9 +13,9 @@ Evaluates the **expression** at the first date of the year in the current contex
   
 ## Syntax  
   
-```  
+```dax
 OPENINGBALANCEYEAR(<expression>,<dates>[,<filter>][,<year_end_date>])  
-```  
+```
   
 #### Parameters  
   
@@ -56,9 +56,9 @@ To see how this works, create a PivotTable and add the field, CalendarYear, to t
   
 ## Code  
   
-```  
+```dax
 =OPENINGBALANCEYEAR(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])  
-```  
+```
   
 ## See Also  
 [OPENINGBALANCEQUARTER Function &#40;DAX&#41;](openingbalancequarter-function-dax.md)  

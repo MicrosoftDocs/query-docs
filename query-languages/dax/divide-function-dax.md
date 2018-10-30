@@ -13,9 +13,9 @@ Performs division and returns alternate result or BLANK() on division by 0.
   
 ## Syntax  
   
-```  
+```dax
 DIVIDE(<numerator>, <denominator> [,<alternateresult>])  
-```  
+```
   
 #### Parameters  
   
@@ -34,23 +34,23 @@ Alternate result on divide by 0 must be a constant.
 ## Example  
 The following example returns 2.5.  
   
-```  
+```dax
 =DIVIDE(5,2)  
-```  
+```
   
 ## Example  
 The following example returns BLANK.  
   
-```  
+```dax
 =DIVIDE(5,0)  
-```  
+```
   
 ## Example  
 The following example returns 1.  
   
-```  
+```dax
 =DIVIDE(5,0,1)  
-```  
+```
   
 ## See Also  
 [QUOTIENT Function &#40;DAX&#41;](quotient-function-dax.md)  

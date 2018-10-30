@@ -13,9 +13,9 @@ Returns the seconds of a time value, as a number from 0 to 59.
   
 ## Syntax  
   
-```  
+```dax
 SECOND(<time>)  
-```  
+```
   
 #### Parameters  
   
@@ -38,16 +38,16 @@ When the **time** argument is a text representation of a date and time, the func
 ## Example  
 The following formula returns the number of seconds in the time contained in the **TransactionTime** column of a table named **Orders**.  
   
-```  
+```dax
 =SECOND('Orders'[TransactionTime])  
-```  
+```
   
 ## Example  
 The following formula returns 3, which is the number of seconds in the time represented by the value, **March 3, 2008 12:00:03**.  
   
-```  
+```dax
 =SECOND("March 3, 2008 12:00:03")  
-```  
+```
   
 ## See Also  
 [Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  

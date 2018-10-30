@@ -13,9 +13,9 @@ Returns the greatest common divisor of two or more integers. The greatest common
   
 ## Syntax  
   
-```  
+```dax
 GCD(number1, [number2], ...)  
-```  
+```
   
 #### Parameters  
   

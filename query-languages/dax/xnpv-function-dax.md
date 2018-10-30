@@ -14,9 +14,9 @@ Returns the present value for a schedule of cash flows that is not necessarily p
   
 ## Syntax  
   
-```  
+```dax
 XNPV(<table>, <values>, <dates>, <rate>)  
-```  
+```
   
 #### Parameters  
   
@@ -40,9 +40,9 @@ The series of cash flow values must contain at least one positive number and one
 ## Example  
 The following calculates the present value of the CashFlows table:  
   
-```  
+```dax
 Present value := XNPV( CashFlows, [Payment], [Date], 0.09 )  
-```  
+```
   
 |Date|Payment|  
 |--------|-----------|  

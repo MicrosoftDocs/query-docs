@@ -13,9 +13,9 @@ Converts a time in text format to a time in datetime format.
   
 ## Syntax  
   
-```  
+```dax
 TIMEVALUE(time_text)  
-```  
+```
   
 #### Parameters  
   
@@ -34,9 +34,9 @@ When the **time_text** argument is a text representation of the date and time, t
   
 ## Example  
   
-```  
+```dax
 =TIMEVALUE("20:45:30")  
-```  
+```
   
 ## See Also  
 [Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  

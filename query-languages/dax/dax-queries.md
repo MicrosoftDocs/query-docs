@@ -14,22 +14,22 @@ With DAX queries, you can retrieve data defined by a table expression from the i
   
 ## Syntax  
   
-```  
+```dax
 [DEFINE {  MEASURE <tableName>[<name>] = <expression> } 
         {  VAR <name> = <expression>}]
-```  
+```
  
-```  
+```dax
 EVALUATE <table>  
-```  
+```
   
-```  
+```dax
 [ORDER BY {<expression> [{ASC | DESC}]}[, …]  
-```  
+```
   
-```  
+```dax
 [START AT {<value>|<parameter>} [, …]]]  
-```  
+```
   
 #### Parameters  
 **DEFINE** clause  

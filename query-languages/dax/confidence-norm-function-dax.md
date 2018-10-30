@@ -13,9 +13,9 @@ The confidence interval is a range of values. Your sample mean, x, is at the cen
   
 ## Syntax  
   
-```  
+```dax
 CONFIDENCE.NORM(alpha,standard_dev,size)  
-```  
+```
   
 #### Parameters  
   

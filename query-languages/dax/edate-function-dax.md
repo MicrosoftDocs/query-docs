@@ -13,9 +13,9 @@ Returns the date that is the indicated number of months before or after the star
   
 ## Syntax  
   
-```  
+```dax
 EDATE(<start_date>, <months>)  
-```  
+```
   
 #### Parameters  
   
@@ -43,9 +43,9 @@ This DAX function may return different results when used in a model that is depl
 ## Example  
 The following example returns the date three months after the order date, which is stored in the column [TransactionDate].  
   
-```  
+```dax
 =EDATE([TransactionDate],3)  
-```  
+```
   
 ## See Also  
 [EOMONTH Function &#40;DAX&#41;](eomonth-function-dax.md)  

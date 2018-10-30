@@ -14,9 +14,9 @@ Returns a table with a single column named “Date” that contains a contiguous
   
 ## Syntax  
   
-```  
+```dax
 CALENDAR(<start_date>, <end_date>)  
-```  
+```
   
 #### Parameters  
   

@@ -13,9 +13,9 @@ Adds calculated columns to the given table or table expression.
   
 ## Syntax  
   
-```  
+```dax
 SELECTCOLUMNS(<table>, <name>, <scalar_expression> [, <name>, <scalar_expression>]…) 
-```  
+```
   
 #### Parameters  
 *table*  
@@ -51,9 +51,9 @@ USA     |   WA      |    10     |  900
 
 
 
-```  
+```dax
 SELECTCOLUMNS(Info, “StateCountry”, [State]&”, ”&[Country])
-```  
+```
 
 Returns:
   

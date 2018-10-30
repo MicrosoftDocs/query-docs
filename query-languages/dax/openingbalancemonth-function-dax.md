@@ -13,9 +13,9 @@ Evaluates the **expression** at the first date of the month in the current conte
   
 ## Syntax  
   
-```  
+```dax
 OPENINGBALANCEMONTH(<expression>,<dates>[,<filter>])  
-```  
+```
   
 #### Parameters  
   
@@ -53,9 +53,9 @@ To see how this works, create a PivotTable and add the fields, CalendarYear, Mon
   
 ## Code  
   
-```  
+```dax
 =OPENINGBALANCEMONTH(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])  
-```  
+```
   
 ## See Also  
 [OPENINGBALANCEYEAR Function &#40;DAX&#41;](openingbalanceyear-function-dax.md)  

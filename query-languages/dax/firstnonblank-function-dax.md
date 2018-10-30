@@ -13,9 +13,9 @@ Returns the first value in the column, **column**, filtered by the current conte
   
 ## Syntax  
   
-```  
+```dax
 FIRSTNONBLANK(<column>,<expression>)  
-```  
+```
   
 #### Parameters  
   

@@ -13,9 +13,9 @@ Returns the first date in the current context for the specified column of dates.
   
 ## Syntax  
   
-```  
+```dax
 FIRSTDATE(<dates>)  
-```  
+```
   
 #### Parameters  
   
@@ -50,9 +50,9 @@ The following sample formula creates a measure that obtains the first date when 
   
 To see how this works, create a PivotTable and add the field CalendarYear to the **Row Labels** area of the PivotTable. Then add a measure, named **FirstSaleDate**, using the formula defined in the code section, to the **Values** area of the PivotTable.  
   
-```  
+```dax
 =FIRSTDATE('InternetSales_USD'[SaleDateKey])  
-```  
+```
   
 ## See Also  
 [Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  

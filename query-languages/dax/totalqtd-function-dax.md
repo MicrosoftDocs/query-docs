@@ -13,9 +13,9 @@ Evaluates the value of the **expression** for the dates in the quarter to date, 
   
 ## Syntax  
   
-```  
+```dax
 TOTALQTD(<expression>,<dates>[,<filter>])  
-```  
+```
   
 #### Parameters  
   
@@ -52,9 +52,9 @@ To see how this works, create a PivotTable and add the fields, CalendarYear, Cal
   
 ## Code  
   
-```  
+```dax
 =TOTALQTD(SUM(InternetSales_USD[SalesAmount_USD]),DateTime[DateKey])  
-```  
+```
   
 ## See Also  
 [ALL Function &#40;DAX&#41;](all-function-dax.md)  

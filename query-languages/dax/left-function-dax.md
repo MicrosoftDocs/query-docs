@@ -13,9 +13,9 @@ Returns the specified number of characters from the start of a text string.
   
 ## Syntax  
   
-```  
+```dax
 LEFT(<text>, <num_chars>)  
-```  
+```
   
 #### Parameters  
   
@@ -35,9 +35,9 @@ This DAX function may return different results when used in a model that is depl
 ## Example  
 The following example returns the first five characters of the company name in the column [ResellerName] and the first five letters of the geographical code in the column [GeographyKey] and concatenates them, to create an identifier.  
   
-```  
+```dax
 =CONCATENATE(LEFT('Reseller'[ResellerName],LEFT(GeographyKey,3))  
-```  
+```dax
 If the **num_chars** argument is a number that is larger than the number of characters available, the function returns the maximum characters available and does not raise an error. For example, the column [GeographyKey] contains numbers such as 1, 12 and 311; therefore the result also has variable length.  
   
 ## See Also  

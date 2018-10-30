@@ -13,9 +13,9 @@ RIGHT returns the last character or characters in a text string, based on the nu
   
 ## Syntax  
   
-```  
+```dax
 RIGHT(<text>, <num_chars>)  
-```  
+```
   
 #### Parameters  
   
@@ -41,9 +41,9 @@ The following formula returns the last two digits of the product code in the New
   
 ### Code  
   
-```  
+```dax
 =RIGHT('New Products'[ProductCode],2)  
-```  
+```
   
 ## Example: Using a Column Reference to Specify Character Count  
   
@@ -52,9 +52,9 @@ The following formula returns a variable number of digits from the product code 
   
 ### Code  
   
-```  
+```dax
 =RIGHT('New Products'[ProductCode],[MyCount])  
-```  
+```
   
 ## See Also  
 [Text Functions &#40;DAX&#41;](text-functions-dax.md)  

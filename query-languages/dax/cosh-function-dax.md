@@ -13,9 +13,9 @@ Returns the hyperbolic cosine of a number.
   
 ## Syntax  
   
-```  
+```dax
 COSH(number)  
-```  
+```
   
 #### Parameters  
   

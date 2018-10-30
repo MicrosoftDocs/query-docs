@@ -13,9 +13,9 @@ Returns the current UTC date and time
   
 ## Syntax  
   
-```  
+```dax
 UTCNOW()  
-```  
+```
   
 ## Return Value  
 A (**datetime)**.  
@@ -27,9 +27,9 @@ The result of the UTCNOW function changes only when the formula is refreshed. It
 ## Example  
 The following:
   
-```  
+```dax
 EVALUATE { FORMAT(UTCNOW(), "General Date") } 
-```  
+```
 
 Returns:
 

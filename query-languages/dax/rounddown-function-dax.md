@@ -13,9 +13,9 @@ Rounds a number down, toward zero.
   
 ## Syntax  
   
-```  
+```dax
 ROUNDDOWN(<number>, <num_digits>)  
-```  
+```
   
 #### Parameters  
   
@@ -40,16 +40,16 @@ ROUNDDOWN behaves like ROUND, except that it always rounds a number down. The IN
 ## Example  
 The following example rounds 3.14159 down to three decimal places. The expected result is 3.141.  
   
-```  
+```dax
 =ROUNDDOWN(3.14159,3)  
-```  
+```
   
 ## Example  
 The following example rounds the value of 31415.92654 down to 2 decimal places to the left of the decimal. The expected result is 31400.  
   
-```  
+```dax
 =ROUNDDOWN(31415.92654, -2)  
-```  
+```
   
 ## See Also  
 [Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  

@@ -14,9 +14,9 @@ Returns the right-tailed Student's t-distribution.
   
 ## Syntax  
   
-```  
+```dax
 T.DIST.RT(X,Deg_freedom)
-```  
+```
   
 #### Parameters  
   
@@ -30,9 +30,9 @@ The right-tailed Student's t-distribution.
   
 ## Example  
   
-```  
+```dax
 EVALUATE { T.DIST.RT(1.959999998, 60) }
-```  
+```dax
 Returns
 
 |[Value]  |

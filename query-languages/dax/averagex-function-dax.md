@@ -13,9 +13,9 @@ Calculates the average (arithmetic mean) of a set of expressions evaluated over 
   
 ## Syntax  
   
-```  
+```dax
 AVERAGEX(<table>,<expression>)  
-```  
+```
   
 #### Parameters  
   
@@ -37,9 +37,9 @@ When there are no rows to aggregate, the function returns a blank.  When there a
 ## Example  
 The following example calculates the average freight and tax on each order in the InternetSales table, by first summing Freight plus TaxAmt in each row, and then averaging those sums.  
   
-```  
+```dax
 =AVERAGEX(InternetSales, InternetSales[Freight]+ InternetSales[TaxAmt])  
-```  
+```dax
 If you use multiple operations in the expression used as the second argument, you must use parentheses to control the order of calculations. For more information, see [DAX Syntax Reference](dax-syntax-reference.md).  
   
 ## See Also  

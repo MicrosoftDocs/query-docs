@@ -14,9 +14,9 @@ Returns the normal distribution for the specified mean and standard deviation.
   
 ## Syntax  
   
-```  
+```dax
 NORM.DIST(X, Mean, Standard_dev, Cumulative)  
-```  
+```
   
 #### Parameters  
   
@@ -32,9 +32,9 @@ The normal distribution for the specified mean and standard deviation.
   
 ## Example  
   
-```  
+```dax
 EVALUATE { NORM.DIST(42, 40, 1.5, TRUE) }
-```  
+```dax
 Returns
 
 |[Value]  |

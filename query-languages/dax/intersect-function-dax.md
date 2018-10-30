@@ -13,9 +13,9 @@ Returns the row intersection of two tables, retaining duplicates.
   
 ## Syntax  
   
-```  
+```dax
 INTERSECT(<table_expression1>, <table_expression2>)  
-```  
+```
   
 #### Parameters  
   
