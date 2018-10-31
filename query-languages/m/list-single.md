@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the single item of the list or throws an Expression.Error if the list has more than one item.  
   
-```  
+## Syntax
+
+<pre>
 List.Single(list as list) as any  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,10 +28,10 @@ List.Single(list as list) as any
   
 ## Examples  
   
-```  
+```powerquery-m
 List.Single({1}) equals 1  
 ```  
   
-```  
+```powerquery-m
 List.Single({1, 2, 3}) equals error  
 ```  

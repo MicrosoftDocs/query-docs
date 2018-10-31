@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the contents of a JSON document.  The contents may be directly passed to the function as text, or it may be the binary value returned by a function like File.Contents.  
   
-```  
+## Syntax
+
+<pre>
 Json.Document(jsonText as any, optional encoding as nullable number) as any  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,7 +29,7 @@ Json.Document(jsonText as any, optional encoding as nullable number) as any
   
 ## Example  
   
-```  
+```powerquery-m
 Json.Document("{""glossary"": { ""title"": ""Example glossary"" } }")    
 equals  [glossary = [title = "Example glossary"]]  
 ```  

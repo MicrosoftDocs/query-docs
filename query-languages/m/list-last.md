@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the last set of items in the list by specifying how many items to return or a qualifying condition provided by **countOrCondition**.  
   
-```  
+## Syntax
+
+<pre>
 List.Last(list as list, optional defaultValue as any) as any  
-```  
+</pre>
   
 ## Arguments  
   
@@ -33,6 +35,6 @@ List.Last(list as list, optional defaultValue as any) as any
   
 ## Examples  
   
-```  
+```powerquery-m
 List.Last({1, 2, 3}) equals 3  
 ```  

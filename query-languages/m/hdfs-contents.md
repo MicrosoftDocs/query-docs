@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a table containing a row for each folder and file found at the folder **url**, {0}, from a Hadoop file system. Each row contains properties of the folder or file and a link to its content.  
   
-```  
+## Syntax
+
+<pre> 
 Hdfs.Contents(url as text) as table  
-```  
+</pre> 
   
 ## Arguments  
   

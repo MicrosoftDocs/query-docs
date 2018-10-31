@@ -10,7 +10,11 @@ manager: kfile
 ---
 # Function.ScalarVector
 
-`Function.ScalarVector(<b>scalarFunctionType</b> as type, <b>vectorFunction</b> as function) as function` 
+## Syntax
+
+<pre>
+Function.ScalarVector(<b>scalarFunctionType</b> as type, <b>vectorFunction</b> as function) as function
+</pre> 
   
 ## About  
 

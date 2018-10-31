@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Json.FromValue
+
+## Syntax
+
+<pre>
 Json.FromValue(value as any, optional encoding as nullable number) as binary  
+</pre>
   
 ## About  
 Produces a JSON representation of a given value value with a text encoding specified by encoding. If encoding is omitted, UTF8 is used. Values are represented as follows:  
@@ -28,10 +33,10 @@ Produces a JSON representation of a given value value with a text encoding speci
 ### Example 1  
 Convert a complex value to JSON.  
   
-```  
+```powerquery-m
 Text.FromBinary(Json.FromValue([A={1, true, "3"}, B=#date(2012, 3, 25)]))  
 ```  
   
-```  
+```powerquery-m
 Equals: "{""A"":[1,true,""3""],""B"":""2012-03-25""}"  
 ```  

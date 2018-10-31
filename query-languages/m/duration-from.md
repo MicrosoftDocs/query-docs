@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a duration value from a value.  
   
-```  
+## Syntax
+
+<pre>
 Duration.From(value as any) as nullable duration  
-```  
+</pre>
   
 ## Arguments  
   
@@ -40,6 +42,6 @@ Values of the following types can be converted to a duration value:
   
 ## Example  
   
-```  
+```powerquery-m
 Duration.From(2.525) equals #duration(2,12,36,0)  
 ```  

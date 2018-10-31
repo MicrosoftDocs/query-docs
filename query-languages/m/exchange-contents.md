@@ -14,6 +14,8 @@ manager: kfile
 ## About  
 Returns a table of contents from a Microsoft Exchange account.  
   
-```  
+## Syntax
+
+<pre>
 Exchange.Contents() as table  
-```  
+</pre>

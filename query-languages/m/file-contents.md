@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the binary contents of the file located at a path.  
   
-```  
+## Syntax
+
+<pre>
 File.Contents(path as text) as binary  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +28,6 @@ File.Contents(path as text) as binary
   
 ## Example  
   
-```  
+```powerquery-m
 File.Contents("c:\users\myuser\Desktop\file.txt")  
 ```  

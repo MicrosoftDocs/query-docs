@@ -14,9 +14,10 @@ manager: kfile
 ## About  
 Returns a DateTime value from a set of date formats and culture value.  
   
-```  
-DateTime.FromText(dateTime as nullable text, optional culture as nullable text) as nullable date  
-```  
+## Syntax
+
+<pre>
+DateTime.FromText(dateTime as nullable text, optional culture as nullable text) as nullable date </pre>
   
 ## Arguments  
   
@@ -57,6 +58,6 @@ DateTime.FromText(dateTime as nullable text, optional culture as nullable text) 
   
 ## Example  
   
-```  
+```powerquery-m
 DateTime.FromText("2010-12-31T01:30:00") equals YYYY-MM-DDThh:mm:ss  
 ```  

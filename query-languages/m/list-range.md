@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a count items starting at an offset.  
   
-```  
+## Syntax
+
+<pre>
 List.Range(list as list, offset as number, optional count as number) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -28,6 +30,6 @@ List.Range(list as list, offset as number, optional count as number) as list
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 List.Range({1..10}, 3, 5)  equals  {4, 5, 6, 7, 8}  
 ```  

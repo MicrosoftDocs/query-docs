@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Converts a list of text into a single text. The specified lineSeparator is appended to each line. If not specified then the carriage return and line feed characters are used.  
   
-```  
+## Syntax
+
+<pre>
 Lines.ToText (lines as list,  optional lineSeparator as nullable text) as text  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,7 +29,7 @@ Lines.ToText (lines as list,  optional lineSeparator as nullable text) as text
   
 ## Examples  
   
-```  
+```powerquery-m
 Lines.FromText("A,""B#(cr)C""#(cr)#(lf)1,2", true, null)  
 {  
 "A,""B#(cr)",  
@@ -36,7 +38,7 @@ Lines.FromText("A,""B#(cr)C""#(cr)#(lf)1,2", true, null)
 }  
 ```  
   
-```  
+```powerquery-m
 Lines.FromText("A,""B#(cr)C""#(cr)#(lf)1,2")  
 {  
 "A,""B",  
@@ -45,7 +47,7 @@ Lines.FromText("A,""B#(cr)C""#(cr)#(lf)1,2")
 }  
 ```  
   
-```  
+```powerquery-m
 Lines.FromText("A,""B#(cr)C""#(cr)#(lf)1,2", null, ",")  
 {  
 "A,""B#(cr)C""",  

@@ -10,7 +10,12 @@ manager: kfile
 ---
 # Logical.From
 
-`Logical.From(<b>value</b> as any) as nullable logical`
+## Syntax
+
+<pre>
+Logical.From(<b>value</b> as any) as nullable logical
+</pre>
+
 
 ## About
 
@@ -21,6 +26,8 @@ Values of the following types can be converted to a `logical` value: <ul> <li>`t
 ## Example 1
 Convert `2` to a `logical` value.
 
-`Logical.From(2)`
+```powerquery-m
+Logical.From(2)
+```
 
 `true`

@@ -14,7 +14,11 @@ manager: kfile
 ## About  
 Returns a DateTime value set to the current system date and time in the Utc timezone.  
   
-`DateTimeZone.UtcNow() as datetimezone`  
+## Syntax
+
+<pre>
+DateTimeZone.UtcNow() as datetimezone
+</pre>
   
 ## Remarks  
   
@@ -22,6 +26,6 @@ Returns a DateTime value set to the current system date and time in the Utc time
   
 ## Example  
   
-```  
+```powerquery-m
 DateTimeZone.UtcNow() equals 2011-02-21T06:25:51+00:00  
 ```  

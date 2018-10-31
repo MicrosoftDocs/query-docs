@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a record containing parts of a DateTime value.  
   
-```  
+## Syntax
+
+<pre>
 DateTime.ToRecord(dateTime as datetime) as record  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,7 +28,7 @@ DateTime.ToRecord(dateTime as datetime) as record
   
 ## Example  
   
-```  
+```powerquery-m
 DateTime.ToRecord(#datetime(2013,1,3,12,4,5)) equals  
 [             
 Year = 2013,   Month = 1,   Day = 3,         

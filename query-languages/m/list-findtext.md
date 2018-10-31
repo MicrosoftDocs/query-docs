@@ -14,10 +14,12 @@ manager: kfile
 ## About  
 Searches a list of values, including record fields, for a text value.  
   
-```  
+## Syntax
+
+<pre>
 List.FindText(list as list, text as text) as list  
-```  
-  
+</pre>
+
 ## Arguments  
   
 |Argument|Description|  
@@ -27,7 +29,7 @@ List.FindText(list as list, text as text) as list
   
 ## Example  
   
-```  
+```powerquery-m
 List.FindText(  
   
 {  

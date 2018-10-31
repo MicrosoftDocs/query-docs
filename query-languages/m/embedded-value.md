@@ -9,7 +9,13 @@ ms.author: owend
 manager: kfile
 ---
 # Embedded.Value
-`Embedded.Value(**value** as any, **path** as text) as any`
+
+## Syntax
+
+<pre>
+Embedded.Value(**value** as any, **path** as text) as any
+</pre>
+
 ## About
 Accesses a value by name in an embedded mashup.
 

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a DateTime value to the Utc time zone.  
   
-```  
+## Syntax
+
+<pre>
 DateTimeZone.ToUtc(dateTime as datetimezone) as nullable datetimezone  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,10 +28,10 @@ DateTimeZone.ToUtc(dateTime as datetimezone) as nullable datetimezone
   
 ## Example  
   
-```  
+```powerquery-m
 dateTime  = DateTimeZone.FromText("2011-02-20T22:19:27+03:00")  
 ```  
   
-```  
+```powerquery-m
 utcTime = DateTimeZone.ToUtc(dateTime)equals 2011-02-20T19:19:27+00:00  
 ```  

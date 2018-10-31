@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a record with parts of a Duration value.  
   
-```  
+## Syntax
+
+<pre>
 Duration.ToRecords(duration as duration) as record  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +28,6 @@ Duration.ToRecords(duration as duration) as record
   
 ## Example  
   
-```  
+```powerquery-m
 Duration.ToRecord(#duration(2, 5, 55, 20)) equals [Days=2, Hours=5, Minutes=55, Seconds=20]  
 ```  

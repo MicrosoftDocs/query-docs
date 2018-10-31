@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a minute component of a Duration value.  
   
-```  
+## Syntax
+
+<pre>
 Duration.Minutes(duration as nullable duration) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   

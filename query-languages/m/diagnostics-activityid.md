@@ -9,7 +9,14 @@ ms.author: owend
 manager: kfile
 ---
 # Diagnostics.ActivityId
-`Diagnostics.ActivityId() as nullable text`
+`
+
+## Syntax
+
+<pre>
+Diagnostics.ActivityId() as nullable text
+</pre>
+
 ## About
 Returns an opaque identifier for the currently-running evaluation.
 

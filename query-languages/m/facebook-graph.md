@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a table containing content from the Facebook graph .  
   
-```  
+## Syntax
+
+<pre>
 Facebook.Graph(url as text) as any  
-```  
+</pre>
   
 ## Arguments  
   

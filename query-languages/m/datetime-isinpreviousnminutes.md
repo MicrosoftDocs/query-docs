@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # DateTime.IsInPreviousNMinutes
+
+## Syntax
+
+<pre>
 DateTime.IsInPreviousNMinutes(dateTime as any, minutes as number) as nullable logical  
+</pre>
   
 ## About  
 Indicates whether the given datetime value occurs during the previous number of minutes, as determined by the current date and time on the system.  
@@ -22,10 +27,10 @@ Indicates whether the given datetime value occurs during the previous number of 
 ### Example 1  
 Determine if the minute before the current system time is in the previous two minutes.  
   
-```  
+```powerquery-m
 DateTime.IsInPreviousNMinutes(DateTime.LocalNow() - #duration(0,0,2,0), 2)  
-```  
-  
-```  
+``` 
+ 
+```powerquery-m
 Equals: true  
 ```  

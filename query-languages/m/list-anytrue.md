@@ -14,7 +14,11 @@ manager: kfile
 ## About  
 Returns true if any expression in a list in true  
   
-`List.AnyTrue(list as list) as logical`  
+## Syntax
+
+<pre>
+List.AnyTrue(list as list) as logical
+</pre>
   
 ## Arguments  
   
@@ -24,6 +28,6 @@ Returns true if any expression in a list in true
   
 ## Example  
   
-```  
+```powerquery-m
 List.AnyTrue({2=0, false, 1 < 0 }) equals false  
 ```  

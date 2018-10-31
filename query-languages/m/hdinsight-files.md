@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a table containing a row for each folder and file found at the container URL, and subfolders from an HDInsight account. Each row contains properties of the file/folder and a link to its content.  
   
-```  
+## Syntax
+
+<pre>
 HdInsight.Files(accountName as text,  containerName as text) as table  
-```  
+</pre>
   
 ## Arguments  
   

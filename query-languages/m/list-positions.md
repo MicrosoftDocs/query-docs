@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a list of positions for an input list.  
   
-```  
+## Syntax
+
+<pre>
 List.Positions(list as list) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -30,6 +32,6 @@ List.Positions(list as list) as list
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 List.Positions({4, 5, 6}) equals {0, 1, 2}  
 ```  

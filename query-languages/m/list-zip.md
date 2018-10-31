@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # List.Zip
-`List.Zip(<b>lists</b> as list) as list`
+
+## Syntax
+
+<pre>
+List.Zip(<b>lists</b> as list) as list
+</pre>
 
 ## About
 Takes a list of lists, `lists`, and returns a list of lists combining items at the same position.
@@ -17,13 +22,17 @@ Takes a list of lists, `lists`, and returns a list of lists combining items at t
 ## Example 1
 Zips the two simple lists {1, 2} and {3, 4}.
 
-`List.Zip({{1, 2}, {3, 4}})`
+```powerquery-m
+List.Zip({{1, 2}, {3, 4}})
+```
 
 <table> <tr><td>[List]</td></tr> <tr><td>[List]</td></tr> </table>
 
 ## Example 2
 Zips the two simple lists of different lengths {1, 2} and {3}.
 
-`List.Zip({{1, 2}, {3}})`
+```powerquery-m
+List.Zip({{1, 2}, {3}})
+```
 
 <table> <tr><td>[List]</td></tr> <tr><td>[List]</td></tr> </table> 

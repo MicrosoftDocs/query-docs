@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a list from a list of lists and unions the items in the individual lists. The returned list contains all items in any input lists. Duplicate values are matched as part of the Union.  
   
-```  
+## Syntax
+
+<pre>
 List.Union(list as list,optional equationCriteria as any) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,14 +29,14 @@ List.Union(list as list,optional equationCriteria as any) as list
   
 ## Examples  
   
-```  
+```powerquery-m
 List.Union({ {1..5}, {2..6}, {3..7} }) equals {1..7}  
 ```  
   
-```  
+```powerquery-m
 List.Union({ {1..5}, {4..8}, {7..11} }) equals {1..11}  
 ```  
   
-```  
+```powerquery-m
 List.Union({ {1, 1, 1, 2}, {1, 1, 2, 2} }) equals {1, 1, 1, 2, 2}  
 ```  

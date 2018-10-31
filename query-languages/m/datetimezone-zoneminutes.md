@@ -9,7 +9,13 @@ ms.author: owend
 manager: kfile
 ---
 # DateTimeZone.ZoneMinutes
-`DateTimeZone.ZoneHours(**dateTimeZone** as nullable datetimezone) as nullable number`
+
+## Syntax
+
+<pre>
+DateTimeZone.ZoneHours(**dateTimeZone** as nullable datetimezone) as nullable number
+</pre>
+
 ## About
 Changes the timezone of the value.
 

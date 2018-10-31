@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the covariance from two lists as a number.  
   
-```  
+## Syntax
+
+<pre>
 List.Covariance(list1 as list, list2 as list) as number  
-```  
+</pre>
   
 ## Arguments  
   

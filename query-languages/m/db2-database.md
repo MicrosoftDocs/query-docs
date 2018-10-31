@@ -10,7 +10,11 @@ manager: kfile
 ---
 # DB2.Database
 
-`DB2.Database(**server** as text, **database** as text, optional **options** as nullable record) as table`
+## Syntax
+
+<pre>
+DB2.Database(**server** as text, **database** as text, optional **options** as nullable record) as table
+</pre>
 
 ## About
 

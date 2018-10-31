@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns true if a value is found in a list.  
   
-```  
+## Syntax
+
+<pre>
 List.Contains(list as list, value as any, optional equationCriteria as any) as logical  
-```  
+</pre>
   
 ## Arguments  
   
@@ -28,10 +30,10 @@ List.Contains(list as list, value as any, optional equationCriteria as any) as l
   
 ## Examples  
   
-```  
+```powerquery-m
 List.Contains({1, 2, 3}, 2) equals true  
 ```  
   
-```  
+```powerquery-m
 List.Contains({1, 2, 3}, 4) equals false  
 ```  

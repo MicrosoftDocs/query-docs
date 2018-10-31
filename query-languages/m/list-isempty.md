@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns whether a list is empty.  
   
-```  
+## Syntax
+
+<pre>
 List.IsEmpty(list as list) as logical  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,10 +28,10 @@ List.IsEmpty(list as list) as logical
   
 ## Examples  
   
-```  
+```powerquery-m
 List.IsEmpty({}) equals true  
 ```  
   
-```  
+```powerquery-m
 List.IsEmpty({1, 2, 3}) equals false  
 ```  

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the number of items in a list.  
   
-```  
+## Syntax
+
+<pre>
 List.Count(list as list) as number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,10 +28,10 @@ List.Count(list as list) as number
   
 ## Examples  
   
-```  
+```powerquery-m
 List.Count({1,2,3}) equals 3  
 ```  
   
-```  
+```powerquery-m
 List.Count({}) equals 0  
 ```  

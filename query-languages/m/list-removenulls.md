@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Removes null values from a list.  
   
-```  
+## Syntax
+
+<pre>
 List.RemoveNulls(list as list) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +28,6 @@ List.RemoveNulls(list as list) as list
   
 ## Example  
   
-```  
+```powerquery-m
 List.RemoveNulls({1, null, 2}) equals {1, 2}  
 ```  

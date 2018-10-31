@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the total magnitude of seconds from a duration value.  
   
-```  
+## Syntax
+
+<pre>
 Duration.TotalSeconds(duration as nullable duration) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,7 +28,7 @@ Duration.TotalSeconds(duration as nullable duration) as nullable number
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 let  
 duration = #duration(2,22,120,20)  
 in  

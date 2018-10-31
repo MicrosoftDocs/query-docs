@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a datetime value from a value.  
   
-```  
+## Syntax
+
+<pre>
 DateTime.From(value as any, optional culture as nullable text) as nullable datetime  
-```  
+</pre>
   
 ## Arguments  
   
@@ -44,10 +46,10 @@ DateTime.From(value as any, optional culture as nullable text) as nullable datet
   
 ## Examples  
   
-```  
+```powerquery-m
 DateTime.From(#time(06, 45, 12)) equals #datetime(1899, 12, 30, 06, 45, 12)  
 ```  
   
-```  
+```powerquery-m
 DateTime.From(#date(1975, 4, 4)) equals #datetime(1975, 4, 4, 0, 0, 0)  
 ```  
