@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a Record type from a fields record.  
   
-```  
+## Syntax
+
+<pre>
 Type.ForRecord(fields as record, open as logical) as type  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,7 +29,7 @@ Type.ForRecord(fields as record, open as logical) as type
   
 ## Example  
   
-```  
+```powerquery-m
 Type.ForRecord(  
 [  
 X = [Type = type number, Optional = false],   

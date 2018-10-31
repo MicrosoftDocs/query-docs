@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Sorts the rows in a table using a comparisonCriteria or a default ordering if one is not specified.  
   
-```  
+## Syntax
+
+<pre>
 Table.Sort(table as table, optional comparisonCriteria as any) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,7 +33,7 @@ Table.Sort(table as table, optional comparisonCriteria as any) as table
   
 ## Examples  
   
-```  
+```powerquery-m 
 Table.Sort(  
   
     Table.FromRecords(  

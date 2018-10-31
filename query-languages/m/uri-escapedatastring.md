@@ -9,14 +9,22 @@ ms.author: owend
 manager: kfile
 ---
 # Uri.EscapeDataString
-`Uri.EscapeDataString(**data** as text) as text`
+
+## Syntax
+
+<pre>
+Uri.EscapeDataString(**data** as text) as text
+</pre>
+
 ## About
 Encodes special characters in the input `data` according to the rules of RFC 3986.
 
 ## Example 
 Encode the special characters in "+money$".
 
-`Uri.EscapeDataString("+money$")`
+```powerquery-m
+Uri.EscapeDataString("+money$")
+```
 
 `"%2Bmoney%24"`
 

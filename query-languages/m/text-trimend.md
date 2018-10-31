@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Removes any occurrences of the characters specified in trimChars from the end of the original text value.  
   
-```  
+## Syntax
+
+<pre>
 Text.TrimEnd(text as nullable text,  optional trimChars as nullable list) as nullable text  
-```  
+</pre>
   
 ## Arguments  
   

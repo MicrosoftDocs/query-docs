@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Type.Facets
+
+## Syntax
+
+<pre>
 Type.Facets(type as type) as record  
+</pre>
   
 ## About  
 Returns a record containing the facets of type.  

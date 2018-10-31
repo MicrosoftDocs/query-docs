@@ -14,12 +14,14 @@ manager: kfile
 ## About  
 Returns an opened version of a record type, or the same type, if it is already open.  
   
-```  
+## Syntax
+
+<pre>
 Type.OpenRecord(#"type" as type) as type  
-```  
+</pre>
   
 ## Example  
   
-```  
+```powerquery-m
 Type.OpenRecord( type [ A = number] ) equals type [ A = number, …]  
 ```  

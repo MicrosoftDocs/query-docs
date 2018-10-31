@@ -14,12 +14,14 @@ manager: kfile
 ## About  
 Returns an item type from a list type.  
   
-```  
+## Syntax
+
+<pre>
 Type.ListItem(#"type" as type) as type  
-```  
+</pre>
   
 ## Example  
   
-```  
+```powerquery-m
 Type.ListItem (type { number }) equals type number  
 ```  

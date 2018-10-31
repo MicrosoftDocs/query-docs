@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Table.Schema
-`Table.Schema(<b>table</b> as table) as table`
+
+## Syntax
+
+<pre>
+Table.Schema(<b>table</b> as table) as table
+</pre>
 
 ## About
 

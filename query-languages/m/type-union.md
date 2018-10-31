@@ -9,7 +9,14 @@ ms.author: owend
 manager: kfile
 ---
 # Type.Union
-`Type.Union(**types** as list) as type`
+
+## Syntax
+
+<pre>
+Type.Union(**types** as list) as type
+</pre>
+
+<pre>
 
 ## About
 Returns the union of the types in `types`.

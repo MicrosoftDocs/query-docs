@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a list containing parts of a text value that are delimited by a separator text value.  
   
-```  
+## Syntax
+
+<pre>
 Text.Split(string as text, separator as text) as list  
-```  
+</pre> 
   
 ## Arguments  
   

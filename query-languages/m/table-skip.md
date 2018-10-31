@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a table that does not contain the first row or rows of the table.  
   
-```  
+## Syntax
+
+<pre>
 Table.Skip(table as table, optional countOrCondition as any) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -35,7 +37,7 @@ Table.Skip(table as table, optional countOrCondition as any) as table
   
 ## Examples  
   
-```  
+```powerquery-m
 Table.Skip(Table.FromRecords(  
   
 {  

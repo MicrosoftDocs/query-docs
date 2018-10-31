@@ -14,16 +14,18 @@ manager: kfile
 ## About  
 Returns whether a record type is open.  
   
-```  
+## Syntax
+
+<pre>
 Type.IsOpenRecord(#"type" as type) as logical  
-```  
+</pre>
   
 ## Examples  
   
-```  
+```powerquery-m 
 Type.IsOpenRecord(type [ A = number,…]) equals true  
 ```  
   
-```  
+```powerquery-m
 Type.IsOpenRecord(type [ A = number]) equals false  
 ```  

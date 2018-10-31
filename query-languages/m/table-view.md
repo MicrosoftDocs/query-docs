@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Table.View
-`Table.View(<b>table</b> as nullable table, <b>handlers</b> as record) as table`
+
+## Syntax
+
+<pre>
+Table.View(<b>table</b> as nullable table, <b>handlers</b> as record) as table
+</pre>
 
 ## About
 

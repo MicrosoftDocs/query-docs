@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a DateTime value from the end of the hour.  
   
-```  
+## Syntax
+
+<pre>
 Time.EndOfHour(dateTime as datetime) as nullable datetime  
-```  
+</pre>
   
 ## Arguments  
   
@@ -32,7 +34,7 @@ Time.EndOfHour(dateTime as datetime) as nullable datetime
   
 ## Example  
   
-```  
+```powerquery-m
 dateTime = DateTimeZone.FromText("2011-02-21T12:30:00-08:00");   
 Time.EndOfHour(dateTime) equals 2011-02-21T12:59:59-08:00  
 ```  

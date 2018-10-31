@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Value.As is the function corresponding to the as operator in the formula language. The expression  value as type  asserts that the value of a value argument is compatible with type as per the is operator. If it is not compatible, an error is raised.  
   
-```  
+## Syntax
+
+<pre>
 Value.As(value as any, type as type) as any  
-```  
+</pre> 
   
 ## Arguments  
   

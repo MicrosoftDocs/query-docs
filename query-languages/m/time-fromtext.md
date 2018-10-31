@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a Time value from a set of date formats.  
   
-```  
+## Syntax
+
+<pre>
 Time.FromText(time as nullable text, optional culture as nullable text) as nullable date  
-```  
+</pre>
   
 ## Arguments  
   
@@ -45,10 +47,10 @@ Time.FromText(time as nullable text, optional culture as nullable text) as nulla
   
 ## Examples  
   
-```  
+```powerquery-m
 Time.FromText("12:34:12") equals Time,hh:mm:ss  
 ```  
   
-```  
+```powerquery-m
 Time.FromText("12:34:12.1254425") equals hh:mm:ss.nnnnnnn  
 ```  

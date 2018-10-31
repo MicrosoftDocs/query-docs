@@ -9,7 +9,13 @@ ms.author: owend
 manager: kfile
 ---
 # Type.Is
-`Type.Is(**type1** as type, **type2** as type) as logical`
+
+## Syntax
+
+<pre>
+Type.Is(**type1** as type, **type2** as type) as logical
+</pre>
+
 ## About
 Type.Is
 

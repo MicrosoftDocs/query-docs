@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a logical value indicating whether a text value substring was found at the end of a string.  
   
-```  
+## Syntax
+
+<pre>
 Text.EndsWith(string as nullable text, substring as text, optional comparer as nullable function) as nullable logical  
-```  
+</pre>
   
 ## Arguments  
   

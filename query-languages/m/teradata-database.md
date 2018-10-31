@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Teradata.Database
-`Teradata.Database(**server** as text, optional **options** as nullable record) as table`
+
+## Syntax
+
+<pre>
+Teradata.Database(**server** as text, optional **options** as nullable record) as table
+</pre>
 
 ## About
 Returns a table of SQL tables and views from the Teradata database on server `server`. The port may be optionally specified with the server, separated by a colon. An optional record parameter, `options`, may be specified to control the following options: 

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Transforms columns from a table using a function.  
   
-```  
+## Syntax
+
+<pre>
 Table.TransformColumns(table as table, transformOperations as list, optional defaultTransformation as nullable function, optional missingField as nullable number) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -33,14 +35,14 @@ Table.TransformColumns(table as table, transformOperations as list, optional def
   
 ## Examples  
   
-```  
+```powerquery-m 
 Table.TransformColumns(      
 Table.FromRecords({[A="1", B=2], [A="5", B=10]}),      
 {"A", Number.FromText})   
 equals  Table.FromRecords({[A=1,B=2], [A=5,B=10]})  
 ```  
   
-```  
+```powerquery-m
 Table.TransformColumns(     
 Table.FromRecords({[A="1",B=2], [A="5", B=10]}),      
 {{"A", Number.FromText},       
@@ -48,14 +50,14 @@ Table.FromRecords({[A="1",B=2], [A="5", B=10]}),
 equals  Table.FromRecords({[A=1,B=3], [A=5,B=11]})  
 ```  
   
-```  
+```powerquery-m 
 Table.TransformColumns(      
 Table.FromRecords({[A="1",B=2], [A="5", B=10]}),      
 {"X", Number.FromText})   
 equals  Expression.Error  
 ```  
   
-```  
+```powerquery-m 
 Table.TransformColumns(      
 Table.FromRecords({[A="1",B=2], [A="5", B=10]}),      
 {"X", Number.FromText},      
@@ -63,7 +65,7 @@ MissingField.Ignore)
 equals  Table.FromRecords({[A="1",B=2], [A="5",B=10]})  
 ```  
   
-```  
+```powerquery-m
 Table.TransformColumns(      
 Table.FromRecords({[A="1",B=2], [A="5", B=10]}),      
 {"X", Number.FromText},      

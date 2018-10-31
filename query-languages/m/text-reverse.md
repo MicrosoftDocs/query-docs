@@ -10,7 +10,11 @@ manager: kfile
 ---
 # Text.Reverse
 
-`Text.Reverse(<b>text</b> as nullable text) as nullable text`
+## Syntax
+
+<pre>
+Text.Reverse(<b>text</b> as nullable text) as nullable text
+</pre>
 
 ## About
 Reverses the provided `text`.
@@ -18,6 +22,8 @@ Reverses the provided `text`.
 ## Example 1
 Reverse the text "123".
 
-`Text.Reverse("123")`
+```powerquery-m
+Text.Reverse("123")
+```
 
 `"321"`

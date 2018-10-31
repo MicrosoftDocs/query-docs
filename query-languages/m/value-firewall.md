@@ -9,7 +9,13 @@ ms.author: owend
 manager: kfile
 ---
 # Value.Firewall
-`Value.Firewall(**key** as text) as any`
+
+## Syntax
+
+<pre>
+Value.Firewall(**key** as text) as any
+</pre>
+
 ## About
 Value.Firewall
 

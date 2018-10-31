@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a text value composed of the input text value repeated a number of times.  
   
-```  
+## Syntax
+
+<pre>
 Text.Repeat(string as text, repeatCount as number) as text  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,6 +29,6 @@ Text.Repeat(string as text, repeatCount as number) as text
   
 ## Example  
   
-```  
+```powerquery-m
 Text.Repeat("a",5) equals "aaaaa"  
 ```  

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a Uri based on the combination of the base and relative parts.  
   
-```  
+## Syntax
+
+<pre>
 Uri.Combine(baseUri as text, relativeUri as text) as text  
-```  
+</pre>
   
 ## Arguments  
   

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns true if a text value **substring** was found within a text value **string**; otherwise, false.  
   
-```  
+## Syntax
+
+<pre>
 Text.Contains(string as nullable text, substring as text, optional comparer as nullable function) as nullable logical  
-```  
+</pre>
   
 ## Arguments  
   
@@ -28,10 +30,10 @@ Text.Contains(string as nullable text, substring as text, optional comparer as n
   
 ## Examples  
   
-```  
+```powerquery-m
 Text.Contains("abc", "a") equals true  
 ```  
   
-```  
+```powerquery-m
 Text.Contains("abc", "d") equals false  
 ```  

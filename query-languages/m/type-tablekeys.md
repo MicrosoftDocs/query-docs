@@ -14,6 +14,8 @@ manager: kfile
 ## About  
 Returns keys from a table type.  
   
-```  
+## Syntax
+
+<pre>
 Type.TableKeys(tableType as type) as list  
-```  
+</pre>

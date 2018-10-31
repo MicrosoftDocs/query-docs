@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Value.NativeQuery
-`Value.NativeQuery(<b>target</b> as any, <b>query</b> as text, optional <b>parameters</b> as any, optional <b>options</b> as nullable record) as any`
+
+## Syntax
+
+<pre>Value.NativeQuery(<b>target</b> as any, <b>query</b> as text, optional <b>parameters</b> as any, optional <b>options</b> as nullable record) as any
+</pre>
+
 ## About
 
 Evaluates `query` against `target` using the parameters specified in `parameters` and the options specified in `options`.

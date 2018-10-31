@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a record containing parts of a Date value.  
   
-```  
+## Syntax
+
+<pre>
 Time.ToRecord(time as time) as record  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +28,6 @@ Time.ToRecord(time as time) as record
   
 ## Example  
   
-```  
+```powerquery-m
 Time.ToRecord(#time(12, 1, 2)) equals [Hour=12, Minute=1, Second=2]  
 ```  

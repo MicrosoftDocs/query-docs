@@ -13,9 +13,11 @@ manager: kfile
   
 ## About  
   
-```  
+## Syntax
+
+<pre>
 Value.Subtract(value1 as any,  value2 as any,  optional precision as nullable number) as any  
-```  
+</pre>
   
 ## Arguments  
   

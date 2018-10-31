@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Variable.Value
-`Variable.Value(**identifier** as text) as any`
+
+## Syntax
+
+<pre>
+Variable.Value(**identifier** as text) as any
+</pre>
 
 ## About
 Variable.Value

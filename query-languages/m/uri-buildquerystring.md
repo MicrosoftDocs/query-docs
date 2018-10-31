@@ -9,14 +9,22 @@ ms.author: owend
 manager: kfile
 ---
 # Uri.BuildQueryString
-`Uri.BuildQueryString(**query** as record) as text`
+
+## Syntax
+
+<pre>
+Uri.BuildQueryString(**query** as record) as text
+</pre>
+
 ## About
 Assemble the record `query` into a URI query string, escaping characters as necessary.
 
 ## Example 
 Encode a query string which contains some special characters.
 
-`Uri.BuildQueryString([a="1", b="+$"])`
+```powerquery-m
+Uri.BuildQueryString([a="1", b="+$"])
+```
 
 `"a=1&b=%2B%24"`
 

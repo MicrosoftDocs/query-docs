@@ -15,7 +15,7 @@ A **function** is a value just like a number or a text value, and can be include
   
 **Example – Explicit parameters and return value**  
   
-```  
+```powerquery-m 
 let  
     AddOne = (x as number) as number => x + 1,  
     //additional expression steps  
@@ -25,7 +25,7 @@ in
 ```  
 **Example – Implicit parameters and return value**  
   
-```  
+```powerquery-m
 let  
     Add = (x, y) => x + y,  
     AddResults =   
@@ -38,7 +38,7 @@ in
 ```  
 **Find the first element of a list greater than 5, or null otherwise**  
   
-```  
+```powerquery-m
 let  
     FirstGreaterThan5 = (list) =>   
         let   
@@ -56,7 +56,7 @@ in
 ```  
 Functions can be used recursively. In order to recursively reference the function, prefix the identifier with @.  
   
-```  
+```powerquery-m
 let   
     fact = (num) => if num = 0 then 1 else num * @fact (num-1)   
 in   
@@ -71,7 +71,7 @@ For example,  each [CustomerID] is the same as each \_[CustomerID], which is the
   
 **Example – Using each in table row filter**  
   
-```  
+```powerquery-m
 Table.SelectRows(  
       Table.FromRecords({  
             [CustomerID = 1, Name = "Bob", Phone = "123-4567"],  

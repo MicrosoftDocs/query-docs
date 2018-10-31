@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a table into a list by applying the specified combining function to each row of values in a table.  
   
-```  
+## Syntax
+
+<pre> 
 Table.ToList(table as table,  optional combiner as nullable function) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,7 +29,7 @@ Table.ToList(table as table,  optional combiner as nullable function) as list
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 let  
   
     input = Table.FromRows({  

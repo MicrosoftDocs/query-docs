@@ -14,12 +14,14 @@ manager: kfile
 ## About  
 The given type must be a record type returns a closed version of the given record type (or the same type, if it is already closed)  
   
-```  
+## Syntax
+
+<pre>
 Type.ClosedRecord(#"type" as type) as type  
-```  
+</pre>
   
 ## Example  
   
-```  
+```powerquery-m 
 Type.ClosedRecord( type [ A = number,…] ) equals type [A=number]  
 ```  

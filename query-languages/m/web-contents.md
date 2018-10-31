@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the contents downloaded from a web **url** as a binary value.  
   
-```  
+## Syntax
+
+<pre> 
 Web.Contents(url as text, optional options as nullable record) as binary  
-```  
+</pre>
   
 ## Arguments  
   
@@ -41,6 +43,6 @@ Web.Contents(url as text, optional options as nullable record) as binary
   
 ## Example  
   
-```  
+```powerquery-m 
 Web.Contents("www.microsoft.com") equals  The binary contents from the URL www.microsoft.com when accessed via HTTP  
 ```  

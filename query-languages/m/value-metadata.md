@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a record containing the input’s metadata.  
   
-```  
+## Syntax
+
+<pre>
 Value.Metadata(value as any) as record  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +28,6 @@ Value.Metadata(value as any) as record
   
 ## Example  
   
-```  
+```powerquery-m 
 Value.Metadata(1 meta [meta = 1]) equals [ meta = 1]  
 ```  

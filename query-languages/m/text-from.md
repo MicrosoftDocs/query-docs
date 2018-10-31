@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the text representation of a number, date, time, datetime, datetimezone, logical, duration or binary value. If a value is null, Text.From returns null. The optional culture parameter is used to format the text value according to the given culture.  
   
-```  
+## Syntax
+
+<pre>
 Text.From(value as any, optional culture as nullable text) as nullable text  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,14 +29,14 @@ Text.From(value as any, optional culture as nullable text) as nullable text
   
 ## Examples  
   
-```  
+```powerquery-m
 Text.From(1) equals "1"  
 ```  
   
-```  
+```powerquery-m
 Text.From(#date(2013,5,1)) equals "05/01/2013"  
 ```  
   
-```  
+```powerquery-m 
 Text.From(#date(2013,5,1),"fr-FR") equals "01/05/2013"  
 ```  

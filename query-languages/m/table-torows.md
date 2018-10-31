@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a nested list of row values from an input table.  
   
-```  
+## Syntax
+
+<pre>
 Table.ToRows(table as table) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,7 +28,7 @@ Table.ToRows(table as table) as list
   
 ## Example  
   
-```  
+```powerquery-m
 let  
   
     Source = Table.ToRows(Table.FromRecords({  
