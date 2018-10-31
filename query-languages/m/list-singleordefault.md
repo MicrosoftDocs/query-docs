@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a single item from a list.  
   
-```  
+## Syntax
+
+<pre>
 List.SingleOrDefault(list as list, optional default as any) as any  
-```  
+</pre>
   
 ## Arguments  
   
@@ -35,14 +37,14 @@ List.SingleOrDefault(list as list, optional default as any) as any
   
 ## Examples  
   
-```  
+```powerquery-m
 List.SingleOrDefault({1}) equals 1  
 ```  
   
-```  
+```powerquery-m
 List.SingleOrDefault({1, 2, 3}) equals error  
 ```  
   
-```  
+```powerquery-m
 List.SingleOrDefault({}, 0) equals 0  
 ```  

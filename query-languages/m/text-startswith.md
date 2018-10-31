@@ -16,9 +16,11 @@ Returns a logical value indicating whether a text value substring was found at t
   
 **Note**: Only comparer functions created through the library (Comparer.FromCulture) are supported.  
   
-```  
+## Syntax
+
+<pre>
 Text.StartsWith(string as nullable text, substring as text, optional comparer as nullable function) as nullable logical  
-```  
+</pre>
   
 ## Arguments  
   

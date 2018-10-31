@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a currency value from the given value.  
   
-```  
+## Syntax
+
+<pre> 
 Currency.From(value as any, optional culture as nullable text, optional roundingMode as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,10 +33,10 @@ If a value is null, Currency.From returns null.  If a value is a number within r
   
 ## Examples  
   
-```  
+```powerquery-m 
 Currency.From("1.23455") equals 1.2346  
 ```  
   
-```  
+```powerquery-m  
 Currency.From("1.23455", "en-Us", RoundingMode.Down) equals 1.2345  
 ```  

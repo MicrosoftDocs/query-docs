@@ -9,17 +9,22 @@ ms.author: owend
 manager: kfile
 ---
 # Table.Join
-<code>Table.Join(<b>table1</b> as table, <b>key1</b> as any, <b>table2</b> as table, <b>key2</b> as any, optional <b>joinKind</b> as nullable number, optional <b>joinAlgorithm</b> as nullable number, optional <b>keyEqualityComparers</b> as nullable list) as table</code>
+
+## Syntax
+
+<pre>
+Table.Join(<b>table1</b> as table, <b>key1</b> as any, <b>table2</b> as table, <b>key2</b> as any, optional <b>joinKind</b> as nullable number, optional <b>joinAlgorithm</b> as nullable number, optional <b>keyEqualityComparers</b> as nullable list) as table
+</pre>
 
 ## About
-Joins the rows of <code>table1</code> with the rows of <code>table2</code> based on the equality of the values of the key columns selected by <code>key1</code> (for <code>table1</code>) and <code>key2</code> (for <code>table2</code>).
+Joins the rows of `table1` with the rows of `table2` based on the equality of the values of the key columns selected by `key1` (for `table1`) and `key2` (for `table2`).
 
-By default, an inner join is performed, however an optional <code>joinKind</code> may be included to specify the type of join. Options include: <ul> <li><code>JoinKind.Inner</code></li> <li><code>JoinKind.LeftOuter</code></li> <li><code>JoinKind.RightOuter</code></li> <li><code>JoinKind.FullOuter</code></li> <li><code>JoinKind.LeftAnti</code></li> <li><code>JoinKind.RightAnti</code></li> </ul> </p> <p>An optional set of <code>keyEqualityComparers</code> may be included to specify how to compare the key columns.
+By default, an inner join is performed, however an optional `joinKind` may be included to specify the type of join. Options include: <ul> <li>`JoinKind.Inner`</li> <li>`JoinKind.LeftOuter`</li> <li>`JoinKind.RightOuter`</li> <li>`JoinKind.FullOuter`</li> <li>`JoinKind.LeftAnti`</li> <li>`JoinKind.RightAnti`</li> </ul> </p> <p>An optional set of `keyEqualityComparers` may be included to specify how to compare the key columns.
 
 ## Example 1
 Inner join the two tables on [CustomerID]
 
-```
+```powerquery-m
 Table.Join
 (Table.FromRecords({
 [CustomerID = 1, Name = "Bob", Phone = "123-4567"],

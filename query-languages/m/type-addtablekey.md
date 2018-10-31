@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Add a key to a table type.  
   
-```  
+## Syntax
+
+<pre>
 Type.AddTableKey (table as type, columns as list,  isPrimary as logical) as type  
-```  
+</pre>
   
 ## Arguments  
   
@@ -28,6 +30,6 @@ Type.AddTableKey (table as type, columns as list,  isPrimary as logical) as type
   
 ## Example  
   
-```  
+```powerquery-m
 Type.AddTableKey(tableType, {"A", "B"}, false) equals  add a non-primary key that combines values from columns A and B  
 ```  

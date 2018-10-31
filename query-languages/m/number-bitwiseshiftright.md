@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the result of a bitwise shift right operation on the operands.  
   
-```  
+## Syntax
+
+<pre>
 Number.BitwiseShiftRight(x as number, y as number) as number  
-```  
+</pre>
   
 ## Arguments  
   

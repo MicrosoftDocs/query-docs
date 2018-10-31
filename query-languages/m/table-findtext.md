@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a table containing only the rows that have the specified text within one of their cells or any part thereof.  
   
-```  
+## Syntax
+
+<pre>
 Table.FindText (table as table, text as text) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,7 +29,7 @@ Table.FindText (table as table, text as text) as table
   
 ## Example  
   
-```  
+```powerquery-m
 Table.FindText(Table.FromRecords(  
   
 {  

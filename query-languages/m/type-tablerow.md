@@ -14,13 +14,15 @@ manager: kfile
 ## About  
 Returns a row type from a table type.  
   
-```  
+## Syntax
+
+<pre>
 Type.TableRow(table as type) as type  
-```  
+</pre>
   
 ## Example  
   
-```  
+```powerquery-m 
 Type.TableRow(   
 Value.Type(     
 Value.ReplaceType(   

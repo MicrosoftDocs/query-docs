@@ -9,7 +9,13 @@ ms.author: owend
 manager: kfile
 ---
 # Type.TableColumn
-<code>Type.TableColumn(**tableType** as type, **column** as text) as type</code>
+
+## Syntax
+
+<pre>
+Type.TableColumn(**tableType** as type, **column** as text) as type
+</pre>
+
 ## About
-Returns the type of the column <code>column</code> in the table type <code>tableType</code>.
+Returns the type of the column `column` in the table type `tableType`.
 

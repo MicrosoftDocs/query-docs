@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Function.IsDataSource
-Function.IsDataSource(function as function) as logical  
+
+## Syntax
+
+<pre>
+Function.IsDataSource(function as function) as logical 
+</pre> 
   
 ## About  
 Returns whether or not function is considered a data source.  

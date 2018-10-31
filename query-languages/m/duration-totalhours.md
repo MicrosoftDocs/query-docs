@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the total magnitude of hours from a Duration value.  
   
-```  
+## Syntax
+
+<pre>
 Duration.TotalHours(duration as nullable duration) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   

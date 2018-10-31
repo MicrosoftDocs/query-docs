@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns information about how a table is partitioned.  
   
-```  
+## Syntax
+
+<pre>
 Table.PartitionValues(table as table) as table;  
-```  
+</pre>
   
 ## Arguments  
   

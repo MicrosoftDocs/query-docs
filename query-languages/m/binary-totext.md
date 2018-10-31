@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Encodes binary data into a text form.  
   
-```  
+## Syntax
+
+<pre>   
 Binary.ToText(binary as binary, encoding as number) as text  
-```  
+</pre> 
   
 ## Arguments  
   

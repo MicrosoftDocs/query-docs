@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 A binary format that reads a 64-bit unsigned integer that was encoded using a 7-bit variable-length encoding.  
   
-```  
+## Syntax
+
+<pre>   
 BinaryFormat.7BitEncodedUnsignedInteger(binary as binary) as any  
-```  
+</pre>  
   
 ## Arguments  
   

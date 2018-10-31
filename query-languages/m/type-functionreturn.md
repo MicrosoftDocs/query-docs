@@ -14,16 +14,18 @@ manager: kfile
 ## About  
 Returns a type returned by a function type.  
   
-```  
+## Syntax
+
+<pre>
 Type.FunctionReturn(type as type) as type  
-```  
+</pre>
   
 ## Examples  
   
-```  
+```powerquery-m
 Type.FunctionReturn(type function () as any) equals type any  
 ```  
   
-```  
+```powerquery-m
 Type.FunctionReturn(type function () as [A = number]) equals type [A = number]  
 ```  

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the day component of a Duration value.  
   
-```  
+## Syntax
+
+<pre>
 Duration.Days(duration as nullable duration) as nullable number  
-```  
+</pre> 
   
 ## Arguments  
   

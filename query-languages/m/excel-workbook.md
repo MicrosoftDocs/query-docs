@@ -10,7 +10,11 @@ manager: kfile
 ---
 # Excel.Workbook
   
-<code>Excel.Workbook(**workbook** as binary, optional **useHeaders** as nullable logical, optional **delayTypes** as nullable logical) as table </code>
+## Syntax
+
+<pre>
+Excel.Workbook(**workbook** as binary, optional **useHeaders** as nullable logical, optional **delayTypes** as nullable logical) as table
+</pre>
 
 ## About  
 Returns a table representing sheets in the given excel workbook.  
@@ -25,7 +29,7 @@ Returns a table representing sheets in the given excel workbook.
   
 ## Example  
   
-```  
+```powerquery-m
 Excel.Workbook(File.Contents("localExcelFile.xlsx"))  
   
       let  

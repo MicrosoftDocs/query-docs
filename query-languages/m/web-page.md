@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the contents of an HTML webpage as a table.  
   
-```  
+## Syntax
+
+<pre> 
 Web.Page(html as text) as table  
-```  
+</pre> 
   
 ## Arguments  
   

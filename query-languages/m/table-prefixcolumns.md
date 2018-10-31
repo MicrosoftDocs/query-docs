@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a table where the columns have all been prefixed with a text value.  
   
-```  
+## Syntax
+
+<pre>
 Table.PrefixColumns(table as table, prefix as text) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,7 +29,7 @@ Table.PrefixColumns(table as table, prefix as text) as table
   
 ## Example  
   
-```  
+```powerquery-m
 Table.PrefixColumns(Table.FromRecords(  
   
 {  

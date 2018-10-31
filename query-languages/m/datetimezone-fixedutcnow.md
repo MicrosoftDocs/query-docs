@@ -14,6 +14,8 @@ manager: kfile
 ## About  
 Returns the current date and time in UTC (the GMT timezone). This value is fixed and will not change with successive calls.  
   
-```  
+## Syntax
+
+<pre>
 DateTimeZone.FixedUtcNow() as datetimezone  
 ```  

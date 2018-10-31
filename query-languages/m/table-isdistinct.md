@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Determines whether a table contains only distinct rows.  
   
-```  
+## Syntax
+
+<pre>
 Table.IsDistinct(table as table, optional equationCriteria as any) as logical  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,7 +29,7 @@ Table.IsDistinct(table as table, optional equationCriteria as any) as logical
   
 ## Example  
   
-```  
+```powerquery-m 
 Table.IsDistinct  
   
 (  

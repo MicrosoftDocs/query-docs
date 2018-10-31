@@ -14,6 +14,8 @@ manager: kfile
 ## About  
 Returns the tables in the current Excel workbook  
   
-```  
+## Syntax
+
+<pre>
 Excel.CurrentWorkbook() as table  
-```  
+</pre>

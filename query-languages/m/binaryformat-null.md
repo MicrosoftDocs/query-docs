@@ -14,6 +14,8 @@ manager: kfile
 ## About  
 A binary format that reads zero bytes and returns null.  
   
-```  
+## Syntax
+
+<pre>   
 BinaryFormat.Null(binary as binary) as any  
-```  
+</pre>  

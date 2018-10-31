@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 A binary format that reads a 64-bit signed integer.  
   
-```  
+## Syntax
+
+<pre> 
 BinaryFormat.SignedInteger64(binary as binary) as any  
-```  
+</pre>
   
 ## Arguments  
   

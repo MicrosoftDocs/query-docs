@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Accumulates a result from the list. Starting from the initial value seed this function applies the **accumulator** function and returns the final result.  
   
-```  
+## Syntax
+
+<pre>
 List.Accumulate(list as list, seed as any, accumulator as function)as any  
-```  
+</pre>
   
 ## Arguments  
   
@@ -28,7 +30,7 @@ List.Accumulate(list as list, seed as any, accumulator as function)as any
   
 ## Example  
   
-```  
+```powerquery-m
 // This accumulates the sum of the numbers in the list provided.  
 List.Accumulate({1, 2, 3, 4, 5}, 0, (state, current) => state + current) equals 15  
 ```  

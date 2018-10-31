@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a 64-bit integer number value from the given value  
   
-```  
+## Syntax
+
+<pre>
 Int64.From(value as any, optional culture as nullable text, optional roundingMode as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,10 +33,10 @@ If the given value is null, Int64.From returns null. If the given value is numbe
   
 ## Examples  
   
-```  
+```powerquery-m
 Int64.From("4") equals 4  
 ```  
   
-```  
+```powerquery-m
 Int64.From("4.5", null, RoundingMode.AwayFromZero) equals 5  
 ```  

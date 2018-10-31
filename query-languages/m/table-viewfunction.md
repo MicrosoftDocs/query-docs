@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Table.ViewFunction
-<code>Table.ViewFunction(<b>function</b> as function) as function</code>
+
+## Syntax
+
+<pre>
+Table.ViewFunction(<b>function</b> as function) as function
+</pre>
 
 ## About
 Creates a view function based on `function` that can be handled in a view created by `Table.View`. 

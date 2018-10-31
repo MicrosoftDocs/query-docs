@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Decodes data from a text form into binary.  
   
-```  
+## Syntax
+
+<pre>   
 Binary.FromText (text as text, encoding as number) as Binary  
-```  
+</pre>  
   
 ## Arguments  
   

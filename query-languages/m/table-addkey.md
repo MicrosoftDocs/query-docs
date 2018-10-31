@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Add a key to table.  
   
-```  
+## Syntax
+
+<pre>
 Table.AddKey(table as table,  columns as list,  isPrimary as logical) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -28,7 +30,7 @@ Table.AddKey(table as table,  columns as list,  isPrimary as logical) as table
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 let  
   
         table = Table.FromRecords(  

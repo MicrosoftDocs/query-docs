@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the number of items in a list excluding null values  
   
-```  
+## Syntax
+
+<pre>
 List.NonNullCount(list as list) as number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +28,6 @@ List.NonNullCount(list as list) as number
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 List.NonNullCount({1, null}) equals 1  
 ```  

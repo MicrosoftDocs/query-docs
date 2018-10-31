@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Cube.PropertyKey
-<code>Cube.PropertyKey(<b>property</b> as any) as any</code>
+
+## Syntax
+
+<pre>
+Cube.PropertyKey(<b>property</b> as any) as any
+</pre>
 
 ## About
-Returns the key of property <code>property</code>.
+Returns the key of property `property`.

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the hyperbolic tangent of a number.  
   
-```  
+## Syntax
+
+<pre>
 Number.Tanh(angle as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   

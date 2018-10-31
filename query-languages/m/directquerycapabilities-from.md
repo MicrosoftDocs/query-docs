@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # DirectQueryCapabilities.From
-<code>DirectQueryCapabilities.From(**value** as any) as table</code>
+## Syntax
+
+<pre>
+DirectQueryCapabilities.From(**value** as any) as table
+</pre>
+
 ## About
 DirectQueryCapabilities.From
 

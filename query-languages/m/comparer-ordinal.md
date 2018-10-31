@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a comparer function which uses Ordinal rules to compare values.  
   
-```  
+## Syntax
+
+<pre> 
 Comparer.Ordinal(x as any, y as any) as number  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -27,6 +29,6 @@ Comparer.Ordinal(x as any, y as any) as number
   
 ## Examples  
   
-```  
+```powerquery-m 
 Comparer.Equals(Comparer.Ordinal, "a","A")equals false  
 ```  

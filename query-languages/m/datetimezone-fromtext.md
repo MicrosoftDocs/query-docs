@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a DateTimeZone value from a set of date formats and culture value.  
   
-```  
+## Syntax
+
+<pre>
 DateTimeZone.FromText(dateTimeZone as nullable text, optional culture as nullable text) as nullable datetimezone  
-```  
+</pre>
   
 ## Arguments  
   
@@ -83,10 +85,10 @@ DateTimeZone.FromText(dateTimeZone as nullable text, optional culture as nullabl
   
 ## Examples  
   
-```  
+```powerquery-m
 DateTime.FromText("2010-12-31T01:30:00") equals YYYY-MM-DDThh:mm:ss  
 ```  
   
-```  
+```powerquery-m
 DateTime.FromText("2010-12-31T01:30:00Z") equals 2010-12-31T01:30:00+00:00  
 ```  

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns true if the table does not contain any rows.  
   
-```  
+## Syntax
+
+<pre>
 Table.IsEmpty(table as table) as logical  
-```  
+</pre>
   
 ## Arguments  
   
@@ -25,8 +27,8 @@ Table.IsEmpty(table as table) as logical
 |table|The Table to check.|  
   
 ## Example  
-  
-```  
+
+```powerquery-m
 let  
   
     emptyTable = Table.FromRows({}),  

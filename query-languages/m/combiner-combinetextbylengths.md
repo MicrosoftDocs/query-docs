@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a function that merges a list of text into a single text.  
   
-```  
+## Syntax
+
+<pre> 
 Combiner.CombineTextByLengths(lengths as list, optional template as nullable text) as function  
-```  
+</pre> 
   
 ## Arguments  
   

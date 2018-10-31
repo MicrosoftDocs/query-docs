@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a list with the specified number of elements removed from the list starting at the last element. The number of elements removed depends on the optional countOrCondition parameter.  
   
-```  
+## Syntax
+
+<pre>
 List.RemoveRange(list as list, offset as number, optional count as nullable number) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -35,7 +37,7 @@ List.RemoveRange(list as list, offset as number, optional count as nullable numb
   
 ## Examples  
   
-```  
+```powerquery-m
 List.RemoveLastN  
   
     (  

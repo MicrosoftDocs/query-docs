@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the resulting table of a CSV file that can be accessed using the SODA 2.0 API.  The URL must point to a valid SODA-compliant source that ends in a .csv extension.  
   
-```  
+## Syntax
+
+<pre>
 Soda.Feed(url as text) as table  
-```  
+</pre>
   
 ## Arguments  
   

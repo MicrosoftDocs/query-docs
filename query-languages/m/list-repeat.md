@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a list that repeats the contents of an input list count times.  
   
-```  
+## Syntax
+
+<pre>
 List.Repeat(list as list, count as number) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,6 +29,6 @@ List.Repeat(list as list, count as number) as list
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 List.Repeat({1, 2, 3}, 3) equals {1, 2, 3, 1, 2, 3, 1, 2, 3}  
 ```  

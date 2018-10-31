@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a decimal number value from the given value.  
   
-```  
+## Syntax
+
+<pre>
 Decimal.From(value as any, optional culture as nullable text) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -30,6 +32,6 @@ Returns a Decimal number value from the given value. If the given value is null,
   
 ## Examples  
   
-```  
+```powerquery-m
 Decimal.From("4.5") equals 4.5  
 ```  

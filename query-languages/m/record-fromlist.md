@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a record from a list of field values and a set of field names.  
   
-```  
+## Syntax
+
+<pre>
 Record.FromList(list as list, fields as any) as record  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,7 +33,7 @@ Record.FromList(list as list, fields as any) as record
   
 ## Examples  
   
-```  
+```powerquery-m
 Record.FromList  
   
 (  

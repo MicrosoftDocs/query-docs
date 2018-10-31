@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the arctangent of a number.  
   
-```  
+## Syntax
+
+<pre>
 Number.Atan(angle as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   

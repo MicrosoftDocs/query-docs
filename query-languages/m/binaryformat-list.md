@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a binary format that reads a sequence of items and returns a list.  
   
-```  
+## Syntax
+
+<pre>  
 BinaryFormat.List(binaryFormat as function, optional countOrCondition as any) as function  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -37,7 +39,7 @@ There are three ways to determine the number of items read:
 ## Examples  
 `// Read bytes until the end of the data.letbinaryData = #binary({1, 2, 3}),listFormat = BinaryFormat.List(BinaryFormat.Byte)inlistFormat(binaryData) equals {1, 2, 3}`  
   
-```  
+```powerquery-m 
 // Read two bytes.  
 letbinaryData = #binary({1, 2, 3}),  
 listFormat = BinaryFormat.List(BinaryFormat.Byte, 2)  
@@ -46,7 +48,7 @@ listFormat(binaryData)
 equals {1, 2}  
 ```  
   
-```  
+```powerquery-m  
 // Read bytes until the byte value is greater than or equal to two.  
 let  
 binaryData = #binary({1, 2, 3}),  

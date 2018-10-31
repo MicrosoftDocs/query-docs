@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 The inverse of Table.SplitColumns,  Table.CombineColumns merge columns using a combiner function to produce a new column.  
   
-```  
+## Syntax
+
+<pre>
 Table.CombineColumns(table as table, sourceColumns as list, combiner as function, column as text) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -29,7 +31,7 @@ Table.CombineColumns(table as table, sourceColumns as list, combiner as function
   
 ## Example  
   
-```  
+```powerquery-m
 Table.CombineColumns(Table.FromRecords(  
   
 {  

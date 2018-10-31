@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the number of rows in a table.  
   
-```  
+## Syntax
+
+<pre>
 Table.RowCount(table as table) as number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,7 +28,7 @@ Table.RowCount(table as table) as number
   
 ## Example  
   
-```  
+```powerquery-m
 let  
   
     emptyTable = Table.FromRows({}),  

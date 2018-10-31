@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns an hour value from a DateTime value.  
   
-```  
+## Syntax
+
+<pre>
 Time.Hour(dateTime as datetime) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +28,6 @@ Time.Hour(dateTime as datetime) as nullable number
   
 ## Example  
   
-```  
+```powerquery-m  
 Time.Hour(DateTime.FromText("12:56:20")) equals 12  
 ```  

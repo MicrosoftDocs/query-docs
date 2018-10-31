@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a list of key column names from a table.  
   
-```  
+## Syntax
+
+<pre> 
 Table.Keys(table as table) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,7 +28,7 @@ Table.Keys(table as table) as list
   
 ## Example  
   
-```  
+```powerquery-m
 let  
   
     table = Table.FromRecords(  

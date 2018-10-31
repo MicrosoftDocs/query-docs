@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a datetimezone value from a value.  
   
-```  
+## Syntax
+
+<pre>
 DateTimeZone.From(value as any, optional culture as nullable text) as nullable datetimezone  
-```  
+</pre>
   
 ## Arguments  
   
@@ -43,5 +45,8 @@ DateTimeZone.From(value as any, optional culture as nullable text) as nullable d
 -   If a value is  datetimezone , the same value is returned.  
   
 ## Example  
-`DateTimeZone.From("2020-10-30T01:30:00-08:00") equals #datetimezone(2020, 10, 30, 01, 30, 00, -8, 00)`  
+
+```powerquery-m
+DateTimeZone.From("2020-10-30T01:30:00-08:00") equals #datetimezone(2020, 10, 30, 01, 30, 00, -8, 00)
+``` 
   

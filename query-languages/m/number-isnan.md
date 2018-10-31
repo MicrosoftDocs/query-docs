@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns true if a value is Number.NaN.  
   
-```  
+## Syntax
+
+<pre>
 Number.IsNaN(value as number) as logical  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,10 +28,10 @@ Number.IsNaN(value as number) as logical
   
 ## Examples  
   
-```  
+```powerquery-m  
 Number.IsNaN(1) equals false  
 ```  
   
-```  
+```powerquery-m
 Number.IsNaN(0/0) equals true  
 ```  

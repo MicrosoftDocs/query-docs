@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Removes all occurrences of a character or list of characters from a text value. The **removeChars** parameter can be a character value or a list of character values.  
   
-```  
+## Syntax
+
+<pre>
 Text.Remove(text as nullable text, removeChars as any) as nullable text  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,10 +29,10 @@ Text.Remove(text as nullable text, removeChars as any) as nullable text
   
 ## Examples  
   
-```  
+```powerquery-m
 Text.Remove("a,b,;c",",")equals "ab;c"  
 ```  
   
-```  
+```powerquery-m
 Text.Remove("a,b,;c",{",",";"}) equals "abc"  
 ```  

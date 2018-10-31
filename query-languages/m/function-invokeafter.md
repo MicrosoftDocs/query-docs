@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Function.InvokeAfter
+
+## Syntax
+
+<pre>
 Function.InvokeAfter(function as function, delay as duration) as any  
+</pre>
   
 ## About  
 Returns the result of invoking function after duration delay has passed.  

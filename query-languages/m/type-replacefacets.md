@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Type.ReplaceFacets
+
+## Syntax
+
+<pre>
 Type.ReplaceFacets(type as type, facets as record) as type  
+</pre>
   
 ## About  
 Replaces the facets of type with the facets contained in the record facets.  

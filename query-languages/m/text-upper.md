@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the uppercase of a text value.  
   
-```  
+## Syntax
+
+<pre> 
 Text.Upper(string as nullable text) as nullable text  
-```  
+</pre>  
   
 ## Arguments  
   

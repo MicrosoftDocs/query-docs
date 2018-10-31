@@ -10,5 +10,5 @@ manager: kfile
 ---
 # Precision.Double
 ## About
-An optional parameter for the built-in arthimetic operators to specify double precision.
+An optional parameter for the built-in arithmetic operators to specify double precision.
 

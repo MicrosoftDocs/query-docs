@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Given a column of lists in a table, create a copy of a row for each value in its list.  
   
-```  
+## Syntax
+
+<pre>
 Table.ExpandListColumn(table as table, column as text) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,7 +29,7 @@ Table.ExpandListColumn(table as table, column as text) as table
   
 ## Example  
   
-```  
+```powerquery-m
 Table.ExpandListColumn(  
   
     Table.FromRecords(  

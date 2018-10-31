@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Buffers the binary value in memory. The result of this call is a stable binary value, which means it will have a deterministic length and order of bytes.  
   
-```  
+## Syntax
+
+<pre> 
 Binary.Buffer(binary as nullable binary) as nullable binary  
-```  
+</pre>  
   
 ## Arguments  
   

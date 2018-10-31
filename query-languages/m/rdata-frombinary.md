@@ -9,8 +9,13 @@ ms.author: owend
 manager: kfile
 ---
 # RData.FromBinary
+
+## Syntax
+
+<pre>
 RData.FromBinary(stream as binary) as any  
-  
+</pre>
+
 ## About  
 Returns a record of data frames from the RData file.  
   

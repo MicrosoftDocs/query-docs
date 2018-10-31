@@ -9,10 +9,15 @@ ms.author: owend
 manager: kfile
 ---
 # AzureStorage.DataLakeContents
-<code>AzureStorage.DataLakeContents(<b>url</b> as text, optional <b>options</b> as nullable record) as binary</code>
+
+## Syntax
+
+<pre>  
+AzureStorage.DataLakeContents(<b>url</b> as text, optional <b>options</b> as nullable record) as binary
+</pre>
 
 ## About  
-Returns the content of the file at the URL, <code>url</code>, from an Azure Data Lake Storage filesystem.
+Returns the content of the file at the URL, `url`, from an Azure Data Lake Storage filesystem.
   
   
   

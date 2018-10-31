@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the maximum item in a list, or the optional default value if the list is empty.  
   
-```  
+## Syntax
+
+<pre>
 List.Max(list as list, optional default as any, optional comparisonCriteria as any, optional includeNulls as nullable logical) as any  
-```  
+</pre>
   
 ## Arguments  
   
@@ -29,6 +31,6 @@ List.Max(list as list, optional default as any, optional comparisonCriteria as a
   
 ## Example  
   
-```  
+```powerquery-m
 List.Max({1, 4, 7, 3, -2, 5}, 1) equals 7  
 ```  

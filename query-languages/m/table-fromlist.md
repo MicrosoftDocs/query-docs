@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Converts a list into a table by applying the specified splitting function to each item in the list.  
   
-```  
+## Syntax
+
+<pre>
 Table.FromList(list as list, optional splitter as nullable function, optional columns as any, optional default as any, optional extraValues as any) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -30,7 +32,7 @@ Table.FromList(list as list, optional splitter as nullable function, optional co
   
 ## Example  
   
-```  
+```powerquery-m
 Table.FromList(  
   
     {[CustomerID =1, Name ="Bob", Phone = "123-4567"] ,  

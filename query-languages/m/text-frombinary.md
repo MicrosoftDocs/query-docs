@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Decodes data from a binary value in to a text value using an encoding.  
   
-```  
+## Syntax
+
+<pre>
 Text.FromBinary(binary as nullable binary, optional encoding as nullable number) as nullable text  
-```  
+</pre>
   
 ## Arguments  
   

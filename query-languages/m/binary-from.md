@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a binary value from the given value.  
   
-```  
+## Syntax
+
+<pre>   
 Binary.From(Value as any, optional encoding as nullable number) as nullable binary  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -41,6 +43,6 @@ Binary.From(Value as any, optional encoding as nullable number) as nullable bina
   
 ## Example  
   
-```  
+```powerquery-m  
 Binary.From("1011")equals Binary.FromText("1011", BinaryEncoding.Base64)  
 ```  

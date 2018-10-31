@@ -16,9 +16,11 @@ Filters a list down by removing duplicates. An optional equation criteria value 
   
 For more information about equationCriteria, see Parameter Values.  
   
-```  
+## Syntax
+
+<pre>
 List.Distinct(list as list, optional equationCriteria as any, criteria as any) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -30,19 +32,19 @@ List.Distinct(list as list, optional equationCriteria as any, criteria as any) a
   
 ## Examples  
   
-```  
+```powerquery-m
 List.Distinct({1, 2, 3, 2, 3}) equals {1, 2, 3}  
 ```  
   
-```  
+```powerquery-m
 List.Distinct({"a","b","A"}, each _) equals {"a", "b", "A"}  
 ```  
   
-```  
+```powerquery-m
 List.Distinct({"a","b","A"}, Comparer.FromCulture("en",true)) equals {"a", "b"}  
 ```  
   
-```  
+```powerquery-m
 List.Distint({[a="a",b=2],[a="b",b=3],[a="A",b=4]},   
 { each [a] , Comparer.FromCulture("en", true) } )   
 equals { [ a = "a", b = 2 ],   

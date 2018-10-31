@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Decodes a value from a textual representation, value, and interprets it as a value with an appropriate type. Value.FromText takes a text value and returns a number, a logical value, a null value, a DateTime value, a Duration value, or a text value. The empty text value is interpreted as a null value.  
   
-```  
+## Syntax
+
+<pre> 
 Value.FromText(value as text, optional culture as nullable text)  
-```  
+</pre>  
   
 ## Arguments  
   
@@ -27,18 +29,18 @@ Value.FromText(value as text, optional culture as nullable text)
   
 ## Examples  
   
-```  
+```powerquery-m
 Value.FromText("1") equals 1  
 ```  
   
-```  
+```powerquery-m
 Value.FromText("2012/5/16") equals #date(2012,5,16)  
 ```  
   
-```  
+```powerquery-m
 Value.FromText("null") equals null  
 ```  
   
-```  
+```powerquery-m 
 Value.FromText("somevalue") equals "somevalue"  
 ```  

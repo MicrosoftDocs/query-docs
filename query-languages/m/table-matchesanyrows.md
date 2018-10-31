@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns true if any of the rows in a table meet a condition.  
   
-```  
+## Syntax
+
+<pre>
 Table.MatchesAnyRows( table as table, condition as function) as logical  
-```  
+</pre>
   
 ## Arguments  
   
@@ -30,8 +32,8 @@ Table.MatchesAnyRows( table as table, condition as function) as logical
 -   Table.MatchesAnyRows is similar to List.MatchesAny but requires a table argument.  
   
 ## Example  
-  
-```  
+
+```powerquery-m
 Table.MatchesAnyRows(Table.FromRecords (  
   
 {  

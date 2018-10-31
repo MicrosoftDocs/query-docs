@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a single row from a table.  
   
-```  
+## Syntax
+
+<pre>
 Table.SingleRow(table as table) as record  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -30,7 +32,7 @@ Table.SingleRow(table as table) as record
   
 ## Example  
   
-```  
+```powerquery-m
 Table.SingleRow(Table.FromRecords(  
   
 {  

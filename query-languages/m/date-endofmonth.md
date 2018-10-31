@@ -14,7 +14,9 @@ manager: kfile
 ## About  
 Returns a DateTime value for the end of the month.  
   
-```  
+## Syntax
+
+<pre>  
 Date.EndOfMonth(dateTime as nullable datetime) as nullable datetime  
 ```  
   
@@ -32,7 +34,7 @@ Date.EndOfMonth(dateTime as nullable datetime) as nullable datetime
   
 ## Example  
   
-```  
+```powerquery-m 
 dateTime = DateTimeZone.FromText("2011-02-21T12:30:00-08:00");   
 Date.EndOfMonth(dateTime) equals 2011-02-28T23:59:59-08:00  
 ```  

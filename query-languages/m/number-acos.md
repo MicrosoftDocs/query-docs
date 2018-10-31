@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the arccosine of a number.  
   
-```  
+## Syntax
+
+<pre>
 Number.Acos(angle as nullable number) as nullable number  
-```  
+</pre> 
   
 ## Arguments  
   

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Groups table rows by the values of key columns for each row.  
   
-```  
+## Syntax
+
+<pre>
 Table.Group(table as table, key as any, aggregatedColumns as list, optional groupKind as nullable number, optional comparer as nullable function) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -40,9 +42,9 @@ Table.Group(table as table, key as any, aggregatedColumns as list, optional grou
   
 -   The Table.Group function may also be used to nest the rows in a group.  
   
-## Examples  
+## Example 
   
-```  
+```powerquery-m
 let  
   
     Orders = Table.FromRecords({  

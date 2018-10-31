@@ -9,14 +9,23 @@ ms.author: owend
 manager: kfile
 ---
 # Comparer.OrdinalIgnoreCase
-<code>Comparer.OrdinalIgnoreCase(**x** as any, **y** as any) as number</code>
+
+## Syntax
+
+<pre> 
+Comparer.OrdinalIgnoreCase(**x** as any, **y** as any) as number
+</pre>
 
 ## About
-Returns a case-insensitive comparer function which uses Ordinal rules to compare the provided values <code>x</code> and <code>y</code>.
+Returns a case-insensitive comparer function which uses Ordinal rules to compare the provided values `x` and `y`.
 
 ## Example 
-Using case-insensitive Ordinal rules, compare "Abc" with "abc". Note "Abc" is less than "abc" using <code>Comparer.Ordinal</code>. 
+Using case-insensitive Ordinal rules, compare "Abc" with "abc". Note "Abc" is less than "abc" using `Comparer.Ordinal`. 
 
-<code>Comparer.OrdinalIgnoreCase("Abc", "abc")</code>
+```powerquery-m
+Comparer.OrdinalIgnoreCase("Abc", "abc")
+```
 
-<code>0</code>
+```powerquery-m
+0
+```

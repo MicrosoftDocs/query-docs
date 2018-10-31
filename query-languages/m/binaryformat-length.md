@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a binary format that limits the amount of data that can be read.  Both BinaryFormat.List and BinaryFormat.Binary can be used to read until end of the data.  BinaryFormat.Length can be used to limit the number of bytes that are read.  
   
-```  
+## Syntax
+
+<pre>  
 BinaryFormat.Length(binaryFormat as function, length as number) as function  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -28,7 +30,7 @@ BinaryFormat.Length(binaryFormat as function, length as number) as function
 ## Example  
 Limit the number of bytes read to 2 when reading a list of bytes.  
   
-```  
+```powerquery-m  
 let  
 binaryData = #binary({1, 2, 3}),  
 listFormat = BinaryFormat.Length(  

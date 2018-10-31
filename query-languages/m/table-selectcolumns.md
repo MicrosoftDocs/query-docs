@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a table that contains only specific columns.  
   
-```  
+## Syntax
+
+<pre>
 Table.SelectColumns(table as table, columns as any, optional missingField as any) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,8 +33,8 @@ Table.SelectColumns(table as table, columns as any, optional missingField as any
 -   Table.SelectColumns is similar to Record.SelectFields applied to every row in a table.  
   
 ## Examples  
-  
-```  
+
+```powerquery-m
 Table.SelectColumns(Table.FromRecords(  
   
 {  

@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # RowExpression.Row
-RowExpression.Row(function as function) as record  
+
+## Syntax
+
+<pre>
+RowExpression.Row(function as function) as record 
+</pre> 
   
 ## About  
 An AST node representing the row in a row expression.  

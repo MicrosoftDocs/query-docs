@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Transforms fields by applying **transformOperations**. For more more information about  values supported by **transformOperations**, see Parameter Values.  
   
-```  
+## Syntax
+
+<pre>
 Record.TransformFields(record as record,  transformOperations as list,  optional missingField as nullable number) as record  
-```  
+</pre>
   
 ## Arguments  
   
@@ -28,25 +30,19 @@ Record.TransformFields(record as record,  transformOperations as list,  optional
   
 ### MissingField enum  
   
-```  
-MissingField.Error = 0;  
-```  
+-   `MissingField.Error = 0;`  
   
-```  
-MissingField.Ignore = 1;  
-```  
+-   `MissingField.Ignore = 1;`  
   
-```  
-MissingField.UseNull = 2;  
-```  
+-   `MissingField.UseNull = 2;`  
   
 ## Examples  
   
-```  
+```powerquery-m
 Record.TransformFields([OrderID = 1, CustomerID= 1, Item = "Fishing rod", Price = "100.0"], {"Price", Number.FromText})  
 ```  
-  
-```  
+
+```powerquery-m 
 equals [OrderID =1, CustomerID  =1, Item = "Fishing rod", Price=100 ]  
 ```  
   
@@ -57,19 +53,19 @@ equals [OrderID =1, CustomerID  =1, Item = "Fishing rod", Price=100 ]
 |Item|Fishing rod|  
 |Price|100|  
   
-```  
+```powerquery-m
 Record.TransformFields(  
 ```  
   
-```  
+```powerquery-m
 [OrderID ="1", CustomerID= 1, Item = "Fishing rod", Price = "100.0"],  
 ```  
   
-```  
+```powerquery-m
 {{"OrderID", Number.FromText}, {"Price",Number.FromText}})  
 ```  
   
-```  
+```powerquery-m
 equals [OrderID =1, CustomerID  =1, Item = "Fishing rod", Price=100 ]  
 ```  
   

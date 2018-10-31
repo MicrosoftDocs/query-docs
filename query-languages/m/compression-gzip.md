@@ -9,8 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Compression.GZip
-<code>Compression.GZip
-</code>
+
+## Syntax
+
+<pre> 
+Compression.GZip
+</pre>
 
 ## About
 The compressed data is in the GZip format.

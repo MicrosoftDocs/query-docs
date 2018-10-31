@@ -13,13 +13,13 @@ manager: kfile
   
 A metadata record value is associated with a value x using the syntax value meta [record]. For example, the following associates a metadata record with Rating and Tags fields with the text value "Mozart":  
   
-```  
+```powerquery-m
 "Mozart" meta [ Rating = 5,   
 Tags = {"Classical"} ]  
 ```  
 A metadata record can be accessed for a value using the `Value.Metadata` function. In the following example, the expression in the ComposerRating field accesses the metadata record of the value in the Composer field, and then accesses the Rating field of the metadata record.  
   
-```  
+```powerquery-m
 [  
     Composer = "Mozart" meta [ Rating = 5, Tags = {"Classical"} ],  
     ComposerRating = Value.Metadata(Composer)[Rating]   // 5  

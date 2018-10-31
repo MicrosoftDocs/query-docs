@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a signed 8-bit integer number value from the given value.  
   
-```  
+## Syntax
+
+<pre>
 Int8.From(value as any, optional culture as nullable text, optional roundingMode as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,10 +33,10 @@ Returns a signed 8-bit integer number value from the given value. If the given v
   
 ## Examples  
   
-```  
+```powerquery-m
 Int8.From("4") equals 4  
 ```  
   
-```  
+```powerquery-m
 Int8.From("4.5", null, RoundingMode.AwayFromZero) equals 5  
 ```  

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a time value from a value.  
   
-```  
+## Syntax
+
+<pre> 
 Time.From(value as any, optional culture as nullable text) as nullable time  
-```  
+</pre>
   
 ## Arguments  
   
@@ -43,10 +45,10 @@ Type to convert
   
 ## Examples  
   
-```  
+```powerquery-m
 Time.From(0.7575) equals #time(18,10,48)  
 ```  
   
-```  
+```powerquery-m
 Time.From(#datetime(1899, 12, 30, 06, 45, 12)) equals #time(06,45,12)  
 ```  

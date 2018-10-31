@@ -13,6 +13,6 @@ manager: kfile
   
 ## Example  
   
-```  
+```powerquery-m 
 Value.Type(Value.ReplaceType( {1}, type {number}) equals type {number}  
 ```  

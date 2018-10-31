@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Converts a list of numbers into a binary value  
   
-```  
+## Syntax
+
+<pre>   
 Binary.FromList(list as list) as binary  
-```  
+</pre>  
   
 ## Arguments  
   

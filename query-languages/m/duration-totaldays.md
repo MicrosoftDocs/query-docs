@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the total magnitude of days from a Duration value.  
   
-```  
+## Syntax
+
+<pre>
 Duration.TotalDays(duration as nullable duration) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   

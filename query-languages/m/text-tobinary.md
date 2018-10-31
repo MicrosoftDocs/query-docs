@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Encodes a text value into binary value using an encoding.  
   
-```  
+## Syntax
+
+<pre>
 Text.ToBinary(text as nullable text,  optional encoding as nullable number,  optional includeByteOrderMark as nullable logical) as nullable binary  
-```  
+</pre>
   
 ## Arguments  
   

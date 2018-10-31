@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a function that combines a list of text into a single text using each specified delimiter in sequence.  
   
-```  
+## Syntax
+
+<pre>  
 Combiner.CombineTextByEachDelimiter(delimiters as list, optional quoteStyle as number) as function  
-```  
+</pre>  
   
 ## Arguments  
   

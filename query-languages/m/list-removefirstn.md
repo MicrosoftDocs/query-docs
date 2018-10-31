@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a list with the specified number of elements removed from the list starting at the first element. The number of elements removed depends on the optional countOrCondition parameter.  
   
-```  
+## Syntax
+
+<pre>
 List.RemoveFirstN( table as table, optional countOrCondition as any) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -35,7 +37,7 @@ List.RemoveFirstN( table as table, optional countOrCondition as any) as table
   
 ## Examples  
   
-```  
+```powerquery-m
 List.RemoveFirstN  
   
     (  

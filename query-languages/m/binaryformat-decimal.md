@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 A binary format that reads a .NET 16-byte decimal value.  
   
-```  
+## Syntax
+
+<pre>  
 BinaryFormat.Decimal(binary as binary) as any  
-```  
+</pre>  
   
 ## Arguments  
   

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the length of binary values.  
   
-```  
+## Syntax
+
+<pre>   
 Binary.Length(binary as binary) as number  
-```  
+</pre>  
   
 ## Arguments  
   

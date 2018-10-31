@@ -9,7 +9,11 @@ ms.author: owend
 manager: kfile
 ---
 # SapHanaRangeOperator.NotEquals
-SapHanaRangeOperator.NotEquals  
+## Syntax
+
+<pre>
+SapHanaRangeOperator.NotEquals
+</pre>  
   
 ## About  
 'NotEquals' range operator for SAP HANA input parameters.  

@@ -9,8 +9,13 @@ ms.author: owend
 manager: kfile
 ---
 # ByteOrder.BigEndian
-<code>ByteOrder.BigEndian
-</code>
+
+## Syntax
+
+<pre> 
+ByteOrder.BigEndian
+</pre>
 
 ## About
-A possible value for the <code>byteOrder</code> parameter in <code>BinaryFormat.ByteOrder</code>. The most signficant byte appears first in Big Endian byte order.
+
+A possible value for the `byteOrder` parameter in `BinaryFormat.ByteOrder`. The most signficant byte appears first in Big Endian byte order.

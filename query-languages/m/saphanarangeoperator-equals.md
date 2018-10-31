@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # SapHanaRangeOperator.Equals
-SapHanaRangeOperator.Equals  
+
+## Syntax
+
+<pre>
+SapHanaRangeOperator.Equals
+</pre>  
   
 ## About  
 'Equals' range operator for SAP HANA input parameters.  

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the lowercase of a text value.  
   
-```  
+## Syntax
+
+<pre> 
 Text.Lower(string as nullable text) as nullable text  
-```  
+</pre>
   
 ## Arguments  
   

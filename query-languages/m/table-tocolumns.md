@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a list of nested lists each representing a column of values in the input table.  
   
-```  
+## Syntax
+
+<pre>
 Table.ToColumns(table as table) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,7 +28,7 @@ Table.ToColumns(table as table) as list
   
 ## Example  
   
-```  
+```powerquery-m 
 let  
   
     Source = Table.ToColumns(Table.FromRecords(  

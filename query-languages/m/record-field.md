@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the value of the given field.  This function can be used to dynamically create field lookup syntax for a given record. In that way it is a dynamic verison of the record[field] syntax.  
   
-```  
+## Syntax
+
+<pre>
 Record.Field(record as record, field as text) as any  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -27,6 +29,6 @@ Record.Field(record as record, field as text) as any
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 Record.Field([CustomerID = 1, Name = "Bob", Phone = "123-4567"], "CustomerID") equals 1  
 ```  

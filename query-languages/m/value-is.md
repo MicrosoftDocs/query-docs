@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Value.Is is the function corresponding to the is operator in the formula language. The expression value is type  returns true if the ascribed type of value is compatible with type, and returns false if the ascribed type of value is incompatible with type.  
   
-```  
+## Syntax
+
+<pre>
 Value.Is(value as any, type as type) as logical  
-```  
+</pre> 
   
 ## Arguments  
   

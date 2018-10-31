@@ -9,21 +9,30 @@ ms.author: owend
 manager: kfile
 ---
 # #binary
-<code>#binary(<b>value</b> as any) as any</code>
+## Syntax
+
+<pre>
+#binary(<b>value</b> as any) as any
+</pre>
+
 ## About
 Creates a binary value from a list of numbers or a base 64 encoded text value.
 
 ## Example 1
 Create a binary value from a list of numbers.
 
-<code>#binary({0x30, 0x31, 0x32})</code>
+```powerquery-m
+#binary({0x30, 0x31, 0x32})
+```
 
-<code>Text.ToBinary("012")</code>
+`Text.ToBinary("012")`
 
 ## Example 2
 Create a binary value from a base 64 encoded text value.
 
-<code>#binary("1011")</code>
+```powerquery-m
+#binary("1011")
+```
 
-<code>Binary.FromText("1011", BinaryEncoding.Base64)</code>
+`Binary.FromText("1011", BinaryEncoding.Base64)`
   

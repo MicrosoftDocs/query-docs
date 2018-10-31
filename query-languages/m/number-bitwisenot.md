@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the result of a bitwise NOT operation on the provided operands.  
   
-```  
+## Syntax
+
+<pre>
 Number.BitwiseNot(x as number, y as number) as number  
-```  
+</pre>
   
 ## Arguments  
   

@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # CsvStyle.QuoteAlways
-<code>CsvStyle.QuoteAlways</code>
+
+## Syntax
+
+<pre> 
+CsvStyle.QuoteAlways
+</pre>
 
 ## About
 Quotes in a field are always significant regardless of where they appear.

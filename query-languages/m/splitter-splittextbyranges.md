@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a function that splits text according to the specified ranges.  
   
-```  
+## Syntax
+
+<pre>
 Splitter.SplitTextByRanges(ranges as list) as function  
-```  
+</pre>
   
 ## Arguments  
   

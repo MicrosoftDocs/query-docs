@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the value of a field from a record, or the default value if the field does not exist.  
   
-```  
+## Syntax
+
+<pre>
 Record.FieldOrDefault(record as record, field as text, optional defaultValue as any) as any  
-```  
+</pre>
   
 ## Arguments  
   
@@ -28,10 +30,10 @@ Record.FieldOrDefault(record as record, field as text, optional defaultValue as 
   
 ## Examples  
   
-```  
+```powerquery-m 
 Record.FieldOrDefault([CustomerID =1, Name="Bob"], "Phone") equals null  
 ```  
   
-```  
+```powerquery-m 
 Record.FieldOrDefault([CustomerID =1, Name="Bob"], "Phone", "123-4567") equals "123-4567"  
 ```  

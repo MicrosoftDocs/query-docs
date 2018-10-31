@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Cube.MeasureProperties
-<code>Cube.MeasureProperties(<b>cube</b> as table) as table</code>
+
+## Syntax
+
+<pre>
+Cube.MeasureProperties(<b>cube</b> as table) as table
+</pre>
   
 ## About  
 Returns a table containing the set of available properties for measures that are expanded in the cube.

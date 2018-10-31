@@ -9,8 +9,13 @@ ms.author: owend
 manager: kfile
 ---
 # ByteOrder.LittleEndian
-<code>ByteOrder.LittleEndian
-</code>
+
+## Syntax
+
+<pre> 
+ByteOrder.LittleEndian
+</pre>
 
 ## About
-A possible value for the <code>byteOrder</code> parameter in <code>BinaryFormat.ByteOrder</code>. The least signficant byte appears first in Little Endian byte order.
+
+A possible value for the `byteOrder` parameter in `BinaryFormat.ByteOrder`. The least signficant byte appears first in Little Endian byte order.

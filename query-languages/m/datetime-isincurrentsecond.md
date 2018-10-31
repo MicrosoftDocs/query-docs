@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # DateTime.IsInCurrentSecond
+
+## Syntax
+
+<pre>
 DateTime.IsInCurrentSecond(dateTime as any) as nullable logical  
+</pre>
   
 ## About  
 Indicates whether the given datetime value occurs during the current second, as determined by the current date and time on the system.  
@@ -21,10 +26,10 @@ Indicates whether the given datetime value occurs during the current second, as 
 ### Example 1  
 Determine if the current system time is in the current second.  
   
-```  
+```powerquery-m 
 DateTime.IsInCurrentSecond(DateTime.FixedLocalNow())  
 ```  
   
-```  
+```powerquery-m
 Equals: true  
 ```  

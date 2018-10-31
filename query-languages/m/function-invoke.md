@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Invokes the given function using the specified Arguments and returns the result.  
   
-```  
+## Syntax
+
+<pre>
 Function.Invoke(function as function, args as list) as any  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,6 +29,6 @@ Function.Invoke(function as function, args as list) as any
   
 ## Example  
   
-```  
+```powerquery-m
 Function.Invoke(Record.FieldNames, {[A=1,B=2]}) equals {"A", "B"}  
 ```  

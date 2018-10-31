@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a date part from a DateTime value  
   
-```  
+## Syntax
+
+<pre>
 DateTime.Date(dateTime as datetime) as nullable datetime  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +28,6 @@ DateTime.Date(dateTime as datetime) as nullable datetime
   
 ## Example  
   
-```  
+```powerquery-m
 DateTime.Date(#datetime(2010, 5, 4, 6, 5, 4)) equals #date(2010, 5, 4)  
 ```  

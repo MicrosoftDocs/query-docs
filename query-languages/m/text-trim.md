@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Removes any occurrence of character pattern in trimChars from text.  
   
-```  
+## Syntax
+
+<pre>
 Text.Trim(text as nullable text, optional trimChars as any) as nullable text  
-```  
+</pre>
   
 ## Arguments  
   
@@ -33,17 +35,17 @@ Text.Trim(text as nullable text, optional trimChars as any) as nullable text
   
 ## <a name="__toc360788913"></a>Examples  
   
-```  
+```powerquery-m
 Text.Trim("xyAyz", "x") equals "yAyz"  
 ```  
 **Where**: x is removed.  
   
-```  
+```powerquery-m 
 Text.Trim("xyAyz", {"x","y"}) equals "Ayz"  
 ```  
 **Where**: x and y are removed.  
   
-```  
+```powerquery-m 
 Text.Trim("xyAyz", {"x","y","z"}) equals "A"  
 ```  
 **Where**:  
@@ -52,6 +54,6 @@ Text.Trim("xyAyz", {"x","y","z"}) equals "A"
   
 2.  **AND** the second x, y and z pattern is removed  
   
-```  
+```powerquery-m
 Text.Trim("xyAyz", "xy") equals error  
 ```  

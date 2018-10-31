@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns true if the field name or field names are present in a record.  
   
-```  
+## Syntax
+
+<pre>
 Record.HasFields(record as record, fields as any) as logical  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,10 +29,10 @@ Record.HasFields(record as record, fields as any) as logical
   
 ## <a name="__toc360789150"></a>Examples:  
   
-```  
+```powerquery-m
 Record.HasFields([CustomerID = 1, Name = "Bob", Phone = "123-4567"],"CustomerID") equals true  
 ```  
   
-```  
+```powerquery-m
 Record.HasFields([CustomerID = 1, Name = "Bob", Phone = "123-4567"],{"CustomerID", "Address"}) equals false  
 ```  

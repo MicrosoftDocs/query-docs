@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a function that splits text according to whitespace.  
   
-```  
+## Syntax
+
+<pre>
 Splitter.SplitTextByWhitespace(optional quoteStyle as nullable number) as function  
-```  
+</pre>
   
 ## Arguments  
   

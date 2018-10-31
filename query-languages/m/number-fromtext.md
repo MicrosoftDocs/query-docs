@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a number value from a text value.  
   
-```  
+## Syntax
+
+<pre>
 Number.FromText(text as nullable text, optional culture as nullable text) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,10 +29,10 @@ Number.FromText(text as nullable text, optional culture as nullable text) as nul
   
 ## Examples  
   
-```  
+```powerquery-m 
 Number.FromText("1") equals 1  
 ```  
   
-```  
+```powerquery-m
 Number.FromText("a") equals error  
 ```  

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a logical value indicating whether the given Date/DateTime/DateTimeZone occurred during the next week, as determined by the next date and time on the system.  
   
-```  
+## Syntax
+
+<pre>
 Date.IsInNextWeek(dateTime) as logical  
-```  
+</pre> 
   
 ## Arguments  
   

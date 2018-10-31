@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the last row of a table.  
   
-```  
+## Syntax
+
+<pre>
 Table.Last(table as table, optional default as) as any  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,7 +33,7 @@ Table.Last(table as table, optional default as) as any
   
 ## Example  
   
-```  
+```powerquery-m
 Table.Last(Table.FromRecords({  
   
     [CustomerID = 1, Name = "Bob", Phone = "123-4567"],  

@@ -9,20 +9,29 @@ ms.author: owend
 manager: kfile
 ---
 # Binary.Decompress
-<code>Binary.Decompress(<b>binary</b> as nullable binary, <b>compressionType</b> as number) as nullable binary</code>
+
+## Syntax
+
+<pre> 
+Binary.Decompress(<b>binary</b> as nullable binary, <b>compressionType</b> as number) as nullable binary
+</pre>
 
 ## About
 Decompresses a binary value using the given compression type. The result of this call is a decompressed copy of the input. Compression types include: 
 
-*  <code>Compression.GZip</code>
+*  `Compression.GZip`
 
-*  <code>Compression.Deflate</code>
+*  `Compression.Deflate`
 
 ## Example 1
 Decompress the binary value.
 
-<code>Binary.Decompress(#binary({115, 103, 200, 7, 194, 20, 134, 36, 134, 74, 134, 84, 6, 0}), Compression.Deflate)</code>
+```powerquery-m
+Binary.Decompress(#binary({115, 103, 200, 7, 194, 20, 134, 36, 134, 74, 134, 84, 6, 0}), Compression.Deflate)
+```
 
-<code>#binary({71, 0, 111, 0, 111, 0, 100, 0, 98, 0, 121, 0, 101, 0})</code>
+```powerquery-m
+#binary({71, 0, 111, 0, 111, 0, 100, 0, 98, 0, 121, 0, 101, 0})
+```
 
   

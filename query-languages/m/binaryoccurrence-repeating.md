@@ -9,7 +9,13 @@ ms.author: owend
 manager: kfile
 ---
 # BinaryOccurrence.Repeating
-<code>BinaryOccurrence.Repeating</code>
+
+## Syntax
+
+<pre> 
+BinaryOccurrence.Repeating
+</pre>
 
 ## About
+
 The item is expected to appear zero or more times in the input.

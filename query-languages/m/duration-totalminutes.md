@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the total magnitude of minutes from a Duration value.  
   
-```  
+## Syntax
+
+<pre>
 Duration.TotalMinutes(duration as nullable duration) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   

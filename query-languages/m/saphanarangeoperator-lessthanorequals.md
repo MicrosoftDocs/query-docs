@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # SapHanaRangeOperator.LessThanOrEquals
-SapHanaRangeOperator.LessThanOrEquals  
+
+## Syntax
+
+<pre>
+SapHanaRangeOperator.LessThanOrEquals 
+</pre> 
   
 ## About  
 'LessThanOrEquals' range operator for SAP HANA input parameters.  

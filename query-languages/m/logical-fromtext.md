@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a logical value of true or false from a text value.  
   
-```  
+## Syntax
+
+<pre> 
 Logical.FromText(text as nullable text) as nullable logical  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,10 +28,10 @@ Logical.FromText(text as nullable text) as nullable logical
   
 ## Examples  
   
-```  
+```powerquery-m
 Logical.FromText("true") equals true  
 ```  
   
-```  
+```powerquery-m
 Logical.FromText("a") equals error  
 ```  

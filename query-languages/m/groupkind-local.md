@@ -10,5 +10,10 @@ manager: kfile
 ---
 # GroupKind.Local
 ## About
+
+## Syntax
+
+<pre>
 GroupKind.Local
+</pre>
 

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the first value of the hour from a time value.  
   
-```  
+## Syntax
+
+<pre>
 Time.StartOfHour(datetime as datetime) as nullable datetime  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +28,6 @@ Time.StartOfHour(datetime as datetime) as nullable datetime
   
 ## Example  
   
-```  
+```powerquery-m
 Time.StartOfHour(#datetime(2013, 4, 5, 1, 3, 45)) equals #datetime(2013, 4, 5, 1, 0, 0)  
 ```  

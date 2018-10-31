@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the sine of a number.  
   
-```  
+## Syntax
+
+<pre>
 Number.Sin (angle as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +28,6 @@ Number.Sin (angle as nullable number) as nullable number
   
 ## Example  
   
-```  
+```powerquery-m 
 Number.Sin(0) equals 0  
 ```  

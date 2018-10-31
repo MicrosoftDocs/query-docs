@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a character starting at a zero-based offset.  
   
-```  
+## Syntax
+
+<pre>
 Text.At(value as nullable text, index as number) as nullable text  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,10 +33,10 @@ Text.At(value as nullable text, index as number) as nullable text
   
 ## Examples  
   
-```  
+```powerquery-m
 Text.At("abcd", 0) equals "a"  
 ```  
   
-```  
+```powerquery-m
 Text.At("abcd", 5) equals error  
 ```  

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the original text value with non-printable characters removed.  
   
-```  
+## Syntax
+
+<pre>
 Text.Clean(string as nullable text) as nullable text  
-```  
+</pre>
   
 ## Arguments  
   

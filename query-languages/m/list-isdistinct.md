@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns whether a list is distinct.  
   
-```  
+## Syntax
+
+<pre>
 List.IsDistinct(list as list, optional equationCriteria as any) as logical  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,14 +29,14 @@ List.IsDistinct(list as list, optional equationCriteria as any) as logical
   
 ## Examples  
   
-```  
+```powerquery-m
 List.IsDistinct({1, 2, 3, 2, 3}) equals false  
 ```  
   
-```  
+```powerquery-m
 List.IsDistinct({"a","b","A"}, Comparer.FromCulture("en",false) equals true  
 ```  
   
-```  
+```powerquery-m
 List.IsDistinct({"a","b","A"}, Comparer.FromCulture("en",true) equals false  
 ```  

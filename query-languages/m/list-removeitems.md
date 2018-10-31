@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Removes items from list1 that are present in list2, and returns a new list.  
   
-```  
+## Syntax
+
+<pre>
 List.RemoveItems(list1 as list, list2 as list) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,6 +29,6 @@ List.RemoveItems(list1 as list, list2 as list) as list
   
 ## Example  
   
-```  
+```powerquery-m
 List.RemoveItems({1, 2, 3, 3}, {3}) equals { 1, 2}  
 ```  

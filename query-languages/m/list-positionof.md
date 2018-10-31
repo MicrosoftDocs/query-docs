@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Finds the first occurrence of a value in a list and returns its position.  
   
-```  
+## Syntax
+
+<pre>
 List.PositionOf(list as list, value as any, optional occurrence as nullable number,optional equationCriteria as any) as any  
-```  
+</pre>
   
 ## Arguments  
   
@@ -40,18 +42,18 @@ List.PositionOf(list as list, value as any, optional occurrence as nullable numb
   
 ## Examples  
   
-```  
+```powerquery-m
 List.PositionOf({"A", "B", "C", "D"}, "C") equals 2  
 ```  
-  
-```  
+
+```powerquery-m
 List.PositionOf({"A", "B", "C", "B", "A"}, "A", Occurrence.First)  equals 0  
 ```  
   
-```  
+```powerquery-m
 List.PositionOf({"A", "B", "C", "B", "A"}, "A", Occurrence.Last) equals 4  
 ```  
   
-```  
+```powerquery-m
 List.PositionOf({"A", "B", "C", "B", "A"}, "A", Occurrence.All) equals {0, 4}  
 ```  

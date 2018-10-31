@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a text value from a logical value.  
   
-```  
+## Syntax
+
+<pre>
 Logical.ToText(logical as nullable logical) as nullable text  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +28,6 @@ Logical.ToText(logical as nullable logical) as nullable text
   
 ## Example  
   
-```  
+```powerquery-m
 Logical.ToText(true) equals "true"  
 ```  

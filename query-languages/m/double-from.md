@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a Double number value from the given value.  
   
-```  
+## Syntax
+
+<pre>
 Double.From(value as any, optional culture as nullable text)  as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -30,6 +32,6 @@ If the given value is null, Double.From returns null. If the given value is numb
   
 ## Examples  
   
-```  
+```powerquery-m
 Double.From("4.5") equals 4.5  
 ```  

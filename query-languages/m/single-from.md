@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a Single number value from the given value.  
   
-```  
+## Syntax
+
+<pre>
 Single.From(value as any, optional culture as nullable text)  as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -30,6 +32,6 @@ If the given value is null, Single.From returns null. If the given value is numb
   
 ## Examples  
   
-```  
+```powerquery-m
 Single.From("1.5") equals 1.5  
 ```  

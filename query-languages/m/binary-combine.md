@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Combines a list of binaries into a single binary.  
   
-```  
+## Syntax
+
+<pre>  
 Binary.Combine(binaries as list) as binary  
-```  
+</pre>  
   
 ## Arguments  
   

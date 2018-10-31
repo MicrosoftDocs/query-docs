@@ -9,6 +9,11 @@ ms.author: owend
 manager: kfile
 ---
 # GroupKind.Global
-## About
-GroupKind.Global
 
+## About
+
+## Syntax
+
+<pre>
+GroupKind.Global
+</pre>

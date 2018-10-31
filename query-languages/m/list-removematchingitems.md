@@ -14,9 +14,10 @@ manager: kfile
 ## About  
 Removes all occurrences of the given values in the list.  
   
-```  
-List.RemoveMatchingItems(list as list, values as list, optional equationCriteria as any) as list  
-```  
+## Syntax
+
+<pre>
+List.RemoveMatchingItems(list as list, values as list, optional equationCriteria as any) as list </pre>
   
 ## Arguments  
   
@@ -28,6 +29,6 @@ List.RemoveMatchingItems(list as list, values as list, optional equationCriteria
   
 ## Example  
   
-```  
+```powerquery-m
 List.RemoveMatchingItems ({"A", "B", "C", "B", "A"}, {"A", "C"}) equals {"B", "B"}  
 ```  
