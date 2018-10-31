@@ -9,7 +9,7 @@ ms.author: owend
 manager: kfile
 ---
 # Guid.From
-<code>Guid.From(<b>value</b> as nullable text) as nullable text</code>
+`Guid.From(<b>value</b> as nullable text) as nullable text`
 
 ## About
 Returns a `Guid.Type` value from the given `value`. If the given `value` is `null`, `Guid.From` returns `null`. A check will be performed to see if the given `value` is in an acceptable format. Acceptable formats provided in the examples.

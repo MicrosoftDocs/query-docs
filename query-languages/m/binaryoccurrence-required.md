@@ -9,6 +9,7 @@ ms.author: owend
 manager: kfile
 ---
 # BinaryOccurrence.Required
+
 ## About
 The item is expected to appear once in the input.
 

@@ -9,7 +9,7 @@ ms.author: owend
 manager: kfile
 ---
 # Table.ReplaceRelationshipIdentity
-<code>Table.ReplaceRelationshipIdentity(**value** as any, **identity** as text) as any</code>
+`Table.ReplaceRelationshipIdentity(**value** as any, **identity** as text) as any`
 ## About
 Table.ReplaceRelationshipIdentity
 

@@ -10,16 +10,16 @@ manager: kfile
 ---
 # Date.MonthName
 
-<code>Date.MonthName(**date** as any, optional **culture** as nullable text)</code>
+`Date.MonthName(**date** as any, optional **culture** as nullable text)`
 
 ## About
-Returns the name of the month component for the provided <code>date</code> and, optionally, a culture <code>culture</code>.
+Returns the name of the month component for the provided `date` and, optionally, a culture `culture`.
 
 ## Example
 Get the month name.
 
-<code>Date.MonthName(#datetime(2011, 12, 31, 5, 0, 0), "en-US")</code>
+`Date.MonthName(#datetime(2011, 12, 31, 5, 0, 0), "en-US")`
 
-<code>"December"</code>
+`"December"`
 
   

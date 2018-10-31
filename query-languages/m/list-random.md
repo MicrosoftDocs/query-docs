@@ -12,7 +12,7 @@ manager: kfile
 
   
 ## About  
-Returns a list of random numbers between 0 and 1, given the number of values to generate and an optional seed value. <ul> <li><code>count</code>: The number of random values to generate.</li> <li><code>seed</code>: <i>[Optional]</i> A numeric value used to seed the random number generator. If omitted a unique list of random numbers is generated each time you call the function. If you specify the seed value with a number every call to the function generates the same list of random numbers.</li> </ul>  
+Returns a list of random numbers between 0 and 1, given the number of values to generate and an optional seed value. <ul> <li>`count`: The number of random values to generate.</li> <li>`seed`: <i>[Optional]</i> A numeric value used to seed the random number generator. If omitted a unique list of random numbers is generated each time you call the function. If you specify the seed value with a number every call to the function generates the same list of random numbers.</li> </ul>  
   
 ```  
 List.Random(count as number, optional seed as nullable number) as { Number }  

@@ -9,7 +9,7 @@ ms.author: owend
 manager: kfile
 ---
 # SqlExpression.ToExpression
-<code>SqlExpression.ToExpression(**sql** as text, **environment** as record) as text</code>
+`SqlExpression.ToExpression(**sql** as text, **environment** as record) as text`
 
 ## About
 

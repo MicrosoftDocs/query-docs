@@ -11,17 +11,17 @@ manager: kfile
 # Date.DayOfWeekName
  
 
-<code>Date.DayOfWeekName(**date** as any, optional **culture** as nullable text)</code>
+`Date.DayOfWeekName(**date** as any, optional **culture** as nullable text)`
 
 ## About
-Returns the day of the week name for the provided <code>date</code> and, optionally, a culture <code>culture</code>.
+Returns the day of the week name for the provided `date` and, optionally, a culture `culture`.
 
 ## Example
 Get the day of the week name.
 
-<code>Date.DayOfWeekName(#date(2011, 12, 31), "en-US")</code>
+`Date.DayOfWeekName(#date(2011, 12, 31), "en-US")`
 
-<code>"Saturday"</code>
+`"Saturday"`
 
 
   

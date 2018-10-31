@@ -9,7 +9,7 @@ ms.author: owend
 manager: kfile
 ---
 # Cube.AddMeasureColumn
-<code>Cube.AddMeasureColumn(**cube** as table, **column** as text, **measureSelector** as any) as table</code>
+`Cube.AddMeasureColumn(**cube** as table, **column** as text, **measureSelector** as any) as table`
 
 ## About
-Adds a column with the name <code>column</code> to the <code>cube</code> that contains the results of the measure <code>measureSelector</code> applied in the row context of each row. Measure application is affected by changes to dimension granularity and slicing. Measure values will be adjusted after certain cube operations are performed.
+Adds a column with the name `column` to the `cube` that contains the results of the measure `measureSelector` applied in the row context of each row. Measure application is affected by changes to dimension granularity and slicing. Measure values will be adjusted after certain cube operations are performed.

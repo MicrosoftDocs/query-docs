@@ -9,7 +9,7 @@ ms.author: owend
 manager: kfile
 ---
 # Table.FilterWithDataTable
-<code>Table.FilterWithDataTable(**table** as table, **dataTableIdentifier** as text) as any</code>
+`Table.FilterWithDataTable(**table** as table, **dataTableIdentifier** as text) as any`
 ## About
 Table.FilterWithDataTable
 

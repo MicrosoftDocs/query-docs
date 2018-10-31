@@ -9,7 +9,7 @@ ms.author: owend
 manager: kfile
 ---
 # ItemExpression.From
-<code>ItemExpression.From(<b>function</b> as function) as record</code>
+`ItemExpression.From(<b>function</b> as function) as record`
 
 ## About
 Returns the AST for the body of `function`, normalized into an *item expression*: 

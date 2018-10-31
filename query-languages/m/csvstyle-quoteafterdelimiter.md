@@ -9,8 +9,8 @@ ms.author: owend
 manager: kfile
 ---
 # CsvStyle.QuoteAfterDelimiter
-<code>CsvStyle.QuoteAfterDelimiter
-</code>
+`CsvStyle.QuoteAfterDelimiter
+`
 
 ## About
 Quotes in a field are only significant immediately following the delimiter.

@@ -9,10 +9,10 @@ ms.author: owend
 manager: kfile
 ---
 # Number.Log10
-<code>Number.Log10(**number** as nullable number) as nullable number</code>
+`Number.Log10(**number** as nullable number) as nullable number`
 
 ## About  
-Returns the Base 10 logarithm of a number, <code>number</code>. If <code>number</code> is null <code>Number.Log10</code> returns null.
+Returns the Base 10 logarithm of a number, `number`. If `number` is null `Number.Log10` returns null.
   
 ```  
 Number.Log10 (number as nullable number)  as nullable number  

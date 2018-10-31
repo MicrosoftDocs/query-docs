@@ -9,6 +9,13 @@ ms.author: owend
 manager: kfile
 ---
 # BinaryOccurrence.Optional
-<code>BinaryOccurrence.Optional</code>
+
+## Syntax
+
+<pre> 
+BinaryOccurrence.Optional
+</pre>
+
 ## About 
+
 The item is expected to appear zero or one time in the input.

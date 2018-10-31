@@ -9,10 +9,10 @@ ms.author: owend
 manager: kfile
 ---
 # Type.TableSchema
-<code>Type.TableSchema(<b>tableType</b> as type) as table</code>
+`Type.TableSchema(<b>tableType</b> as type) as table`
 
 ## About
 
-Returns a table describing the columns of <code>tableType</code>.
+Returns a table describing the columns of `tableType`.
   
   

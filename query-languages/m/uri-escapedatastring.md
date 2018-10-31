@@ -9,14 +9,14 @@ ms.author: owend
 manager: kfile
 ---
 # Uri.EscapeDataString
-<code>Uri.EscapeDataString(**data** as text) as text</code>
+`Uri.EscapeDataString(**data** as text) as text`
 ## About
-Encodes special characters in the input <code>data</code> according to the rules of RFC 3986.
+Encodes special characters in the input `data` according to the rules of RFC 3986.
 
 ## Example 
 Encode the special characters in "+money$".
 
-<code>Uri.EscapeDataString("+money$")</code>
+`Uri.EscapeDataString("+money$")`
 
-<code>"%2Bmoney%24"</code>
+`"%2Bmoney%24"`
 

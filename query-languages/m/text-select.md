@@ -9,7 +9,7 @@ ms.author: owend
 manager: kfile
 ---
 # Text.Select
-<code>Text.Select(<b>text</b> as nullable text, <b>selectChars</b> as any) as nullable text</code>
+`Text.Select(<b>text</b> as nullable text, <b>selectChars</b> as any) as nullable text`
 
 ## About
 Returns a copy of the text value `text` with all the characters not in `selectChars` removed. 

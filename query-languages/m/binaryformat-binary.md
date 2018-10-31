@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a binary format that reads a binary value.  
   
-```  
+## Syntax
+
+<pre>  
 BinaryFormat.Binary(optional length as nullable number) as function  
-```  
+</pre>
   
 ## Arguments  
   

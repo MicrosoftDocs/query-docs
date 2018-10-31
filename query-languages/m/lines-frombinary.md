@@ -9,7 +9,7 @@ ms.author: owend
 manager: kfile
 ---
 # Lines.FromBinary
-<code>Lines.FromBinary(**binary** as binary, optional **quoteStyle** as nullable number, optional **includeLineSeparators** as nullable logical, optional **encoding** as nullable number) as list</code>
+`Lines.FromBinary(**binary** as binary, optional **quoteStyle** as nullable number, optional **includeLineSeparators** as nullable logical, optional **encoding** as nullable number) as list`
 
 ## About
 Converts a binary value to a list of text values split at lines breaks. If a quote style is specified, then line breaks may appear within quotes. If includeLineSeparators is true, then the line break characters are included in the text.

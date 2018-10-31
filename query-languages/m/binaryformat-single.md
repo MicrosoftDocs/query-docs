@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 A binary format that reads a 4-byte IEEE single-precision floating point value.  
   
-```  
+## Syntax
+
+<pre>   
 BinaryFormat.Single(binary as binary) as any  
-```  
+</pre>  
   
 ## Arguments  
   

@@ -9,7 +9,7 @@ ms.author: owend
 manager: kfile
 ---
 # Cube.MeasureProperties
-<code>Cube.MeasureProperty(<b>measure</b> as any, <b>propertyName</b> as text) as any</code>
+`Cube.MeasureProperty(<b>measure</b> as any, <b>propertyName</b> as text) as any`
   
 ## About  
-Returns the property <code>propertyName</code> of measure <code>measure</code>.
+Returns the property `propertyName` of measure `measure`.

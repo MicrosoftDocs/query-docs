@@ -9,14 +9,14 @@ ms.author: owend
 manager: kfile
 ---
 # Uri.BuildQueryString
-<code>Uri.BuildQueryString(**query** as record) as text</code>
+`Uri.BuildQueryString(**query** as record) as text`
 ## About
-Assemble the record <code>query</code> into a URI query string, escaping characters as necessary.
+Assemble the record `query` into a URI query string, escaping characters as necessary.
 
 ## Example 
 Encode a query string which contains some special characters.
 
-<code>Uri.BuildQueryString([a="1", b="+$"])</code>
+`Uri.BuildQueryString([a="1", b="+$"])`
 
-<code>"a=1&b=%2B%24"</code>
+`"a=1&b=%2B%24"`
 

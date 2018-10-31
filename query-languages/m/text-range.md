@@ -12,7 +12,7 @@ manager: kfile
 
   
 ## About  
-Returns the substring from the text <code>text</code> found at the offset <code>offset</code>. An optional parameter, <code>count</code>, can be included to specify how many characters to return. Throws an error if there aren't enough characters.  
+Returns the substring from the text `text` found at the offset `offset`. An optional parameter, `count`, can be included to specify how many characters to return. Throws an error if there aren't enough characters.  
 ```  
 Text.Range(text as nullable text, offset as number, optional count as nullable number) as nullable text  
 ```  

@@ -9,6 +9,13 @@ ms.author: owend
 manager: kfile
 ---
 # BinaryEncoding.Hex
-<code>BinaryEncoding.Hex</code>
- ## About
+
+## Syntax
+
+<pre>
+BinaryEncoding.Hex
+</pre>
+
+## About
+
  Constant to use as the encoding type when hexadecimal encoding is required.

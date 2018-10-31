@@ -9,7 +9,7 @@ ms.author: owend
 manager: kfile
 ---
 # Function.From
-<code>Function.From(<b>functionType</b> as type, <b>function</b> as function) as function</code>
+`Function.From(<b>functionType</b> as type, <b>function</b> as function) as function`
 
 ## About
 Takes a unary function `function` and creates a new function with the type `functionType` that constructs a list out of its arguments and passes it to `function`.

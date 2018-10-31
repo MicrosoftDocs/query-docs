@@ -9,7 +9,7 @@ ms.author: owend
 manager: kfile
 ---
 # Splitter.SplitTextByRepeatedLengths
-<code>Splitter.SplitTextByRepeatedLengths(**length** as number, optional **startAtEnd** as nullable logical) as function</code>
+`Splitter.SplitTextByRepeatedLengths(**length** as number, optional **startAtEnd** as nullable logical) as function`
 ## About
 Returns a function that splits text into a list of text after the specified length repeatedly.
 

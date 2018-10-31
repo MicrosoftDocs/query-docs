@@ -12,7 +12,7 @@ manager: kfile
 
   
 ## About  
-Returns the arctangent of the division of the two numbers, <code>y</code> and <code>x</code>. The divison will be constructed as <code>y</code>/<code>x</code>.
+Returns the arctangent of the division of the two numbers, `y` and `x`. The divison will be constructed as `y`/`x`.
  
   
 ```  

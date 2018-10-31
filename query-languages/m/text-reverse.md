@@ -10,14 +10,14 @@ manager: kfile
 ---
 # Text.Reverse
 
-<code>Text.Reverse(<b>text</b> as nullable text) as nullable text</code>
+`Text.Reverse(<b>text</b> as nullable text) as nullable text`
 
 ## About
-Reverses the provided <code>text</code>.
+Reverses the provided `text`.
 
 ## Example 1
 Reverse the text "123".
 
-<code>Text.Reverse("123")</code>
+`Text.Reverse("123")`
 
-<code>"321"</code>
+`"321"`

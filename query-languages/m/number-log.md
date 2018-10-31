@@ -9,10 +9,10 @@ ms.author: owend
 manager: kfile
 ---
 # Number.Log
-<code>Number.Log(**number** as nullable number, optional **base** as nullable number) as nullable number</code>
+`Number.Log(**number** as nullable number, optional **base** as nullable number) as nullable number`
 
 ## About
-Returns the logarithm of a number, <code>number</code>, to the specified <code>base</code> base. If <code>base</code> is not specified, the default value is Number.E. If <code>number</code> is null <code>Number.Log</code> returns null.
+Returns the logarithm of a number, `number`, to the specified `base` base. If `base` is not specified, the default value is Number.E. If `number` is null `Number.Log` returns null.
 
 ## Example 1
 Get the base 10 logarithm of 2.

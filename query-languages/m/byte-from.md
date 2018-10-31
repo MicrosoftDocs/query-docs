@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a 8-bit integer number value from the given value.  
   
-```  
+## Syntax
+
+<pre>  
 Byte.From(value as any, optional culture as nullable text, optional roundingMode as nullable number) as nullable number  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -27,14 +29,15 @@ Byte.From(value as any, optional culture as nullable text, optional roundingMode
 |optional roundingMode|Specifies rounding direction when there is a tie between the possible numbers to round to.|  
   
 ## Remarks  
+
 If the given value is null, Byte.From returns null. If the given value is number within the range of 8-bit integer without a fractional part, value is returned. If it has fractional part, then the number is rounded with the rounding mode specified. The default rounding mode is RoundingMode.ToEven. If the given value is of any other type, see Number.FromText for converting it to number value, then the previous statement about converting number value to 8-bit integer number value applies. See Number.Round for the available rounding modes.  
   
 ## Examples  
   
-```  
+```powerquery-m  
 Byte.From("4") equals 4  
 ```  
   
-```  
+```powerquery-m 
 Byte.From("4.5", null, RoundingMode.AwayFromZero) equals 5  
 ```  

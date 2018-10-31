@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a binary format that reads a record.  Each field in the record can have a different binary format.  
   
-```  
+## Syntax
+
+<pre>  
 BinaryFormat.Record(record as record) as function  
-```  
+</pre>
   
 ## Arguments  
   
@@ -30,7 +32,7 @@ BinaryFormat.Record(record as record) as function
   
 ## Example  
   
-```  
+```powerquery-m  
 // Read a record containing one 16-bit integer and one 32-bit integer.  
 let  
 binaryData = #binary({  

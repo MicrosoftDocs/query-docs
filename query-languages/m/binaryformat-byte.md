@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 A binary format that reads an 8-bit unsigned integer.  
   
-```  
+## Syntax
+
+<pre>  
 BinaryFormat.Byte(binary as binary) as any  
-```  
+</pre>  
   
 ## Arguments  
   

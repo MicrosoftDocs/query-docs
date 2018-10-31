@@ -12,7 +12,7 @@ manager: kfile
 
   
 ## About  
-Returns the second component of the provided <code>time</code>, <code>datetime</code>, or <code>datetimezone</code> value, <code>dateTime</code>.
+Returns the second component of the provided `time`, `datetime`, or `datetimezone` value, `dateTime`.
 
   
   
@@ -20,6 +20,6 @@ Returns the second component of the provided <code>time</code>, <code>datetime</
 
 Find the second value from a datetime value.
 
-<code>Time.Second(#datetime(2011, 12, 31, 9, 15, 36.5))</code>
+`Time.Second(#datetime(2011, 12, 31, 9, 15, 36.5))`
 
-<code>36.5</code>
+`36.5`

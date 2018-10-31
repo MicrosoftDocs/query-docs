@@ -10,7 +10,7 @@ manager: kfile
 ---
 # Excel.Workbook
   
-<code>Excel.Workbook(**workbook** as binary, optional **useHeaders** as nullable logical, optional **delayTypes** as nullable logical) as table </code>
+`Excel.Workbook(**workbook** as binary, optional **useHeaders** as nullable logical, optional **delayTypes** as nullable logical) as table `
 
 ## About  
 Returns a table representing sheets in the given excel workbook.  

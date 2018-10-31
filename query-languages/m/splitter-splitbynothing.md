@@ -9,7 +9,7 @@ ms.author: owend
 manager: kfile
 ---
 # Splitter.SplitByNothing
-<code>Splitter.SplitByNothing() as function</code>
+`Splitter.SplitByNothing() as function`
 
 ## About
 Returns a function that does no splitting, returning its argument as a single element.

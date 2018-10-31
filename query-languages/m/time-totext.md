@@ -10,10 +10,10 @@ manager: kfile
 ---
 # Time.ToText
 
-<code>Time.ToText(**time** as nullable time, optional **format** as nullable text, optional **culture** as nullable text) as nullable text</code>
+`Time.ToText(**time** as nullable time, optional **format** as nullable text, optional **culture** as nullable text) as nullable text`
 
 ## About
-Returns a textual representation of <code>time</code>, the Time value, <code>time</code>. This function takes in an optional format parameter <code>format</code>. For a complete list of supported formats, please refer to the Library specification document.
+Returns a textual representation of `time`, the Time value, `time`. This function takes in an optional format parameter `format`. For a complete list of supported formats, please refer to the Library specification document.
 
 ## Example 1
 Get a textual representation of #time(11, 56, 2).

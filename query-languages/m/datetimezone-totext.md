@@ -9,10 +9,10 @@ ms.author: owend
 manager: kfile
 ---
 # DateTimeZone.ToText
-<code>DateTimeZone.ToText(**dateTimeZone** as nullable datetimezone, optional **format** as nullable text, optional **culture** as nullable text) as nullable text</code>
+`DateTimeZone.ToText(**dateTimeZone** as nullable datetimezone, optional **format** as nullable text, optional **culture** as nullable text) as nullable text`
   
 ## About  
-Returns a textual representation of <code>dateTimeZone</code>, the datetimezone value, <code>dateTimeZone</code>. This function takes in an optional format parameter <code>format</code>. For a complete list of supported formats, please refer to the Library specification document.
+Returns a textual representation of `dateTimeZone`, the datetimezone value, `dateTimeZone`. This function takes in an optional format parameter `format`. For a complete list of supported formats, please refer to the Library specification document.
   
 ## Example 1
 Get a textual representation of #datetimezone(2011, 12, 31, 11, 56, 2, 8, 0).

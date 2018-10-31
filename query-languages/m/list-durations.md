@@ -9,10 +9,10 @@ ms.author: owend
 manager: kfile
 ---
 # List.Durations
-<code>List.Durations(**start** as duration, **count** as number, **step** as duration) as list</code>
+`List.Durations(**start** as duration, **count** as number, **step** as duration) as list`
 
 ## About
-Returns a list of <code>count</code> <code>duration</code> values, starting at <code>start</code> and incremented by the given <code>duration</code> <code>step</code>.
+Returns a list of `count` `duration` values, starting at `start` and incremented by the given `duration` `step`.
 
 ## Example
 Create a list of 5 values starting 1 hour and incrementing by an hour.

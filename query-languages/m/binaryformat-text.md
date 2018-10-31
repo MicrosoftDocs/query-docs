@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a binary format that reads a text value.  The optional encoding value specifies the encoding of the text.  
   
-```  
+## Syntax
+
+<pre>   
 BinaryFormat.Text(length as number, optional encoding as nullable number) as function  
-```  
+</pre>
   
 ## Arguments  
   
@@ -33,7 +35,7 @@ BinaryFormat.Text(length as number, optional encoding as nullable number) as fun
   
 ## Example  
   
-```  
+```powerquery-m  
 // Decode two bytes as ASCII text.  
 let  
 binaryData = #binary({65, 66, 67}),  

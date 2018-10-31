@@ -9,7 +9,7 @@ ms.author: owend
 manager: kfile
 ---
 # Cube.AttributeMemberId
-<code>Cube.AttributeMemberId(<b>attribute</b> as any) as any</code>
+`Cube.AttributeMemberId(<b>attribute</b> as any) as any`
 
 ## About
-Returns the unique member identifier from a member property value. <code>attribute</code>. Returns null for any other values.
+Returns the unique member identifier from a member property value. `attribute`. Returns null for any other values.

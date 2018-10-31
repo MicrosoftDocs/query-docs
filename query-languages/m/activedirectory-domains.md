@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a table with Domain information available in the current domain or optional Active Directory forest.  
   
-```  
+## Syntax
+
+<pre>  
 ActiveDirectory.Domains(optional forestRootDomainName as nullable text) as table  
-```  
+</pre>
   
 ## Arguments  
   
