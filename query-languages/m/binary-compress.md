@@ -12,7 +12,7 @@ manager: kfile
 
 ## Syntax
 
-<pre> 
+<pre>
 Binary.Compress(binary as nullable binary, compressionType as number) as nullable binary  
 </pre> 
  
