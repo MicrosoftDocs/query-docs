@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a character to its number value.  
   
-```  
+## Syntax
+
+<pre>  
 Character.ToNumber(character as nullable text) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   

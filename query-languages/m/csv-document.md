@@ -10,7 +10,11 @@ manager: kfile
 ---
 # Csv.Document
 
-`Csv.Document(<b>source</b> as any, optional <b>columns</b> as any, optional <b>delimiter</b> as any, optional <b>extraValues</b> as nullable number, optional <b>encoding</b> as nullable number) as table`
+## Syntax
+
+<pre> 
+Csv.Document(<b>source</b> as any, optional <b>columns</b> as any, optional <b>delimiter</b> as any, optional <b>extraValues</b> as nullable number, optional <b>encoding</b> as nullable number) as table
+</pre>
 
 ## About
 
@@ -21,7 +25,9 @@ If a record is specified for `columns` (and `delimiter`, `extraValues`, and `enc
 ## Example 1
 Process CSV text with column headers.
 
-`Table.PromoteHeaders(Csv.Document("OrderID,Item 1,Fishing rod 2,1 lb. worms"))`
+```powerquery-m
+Table.PromoteHeaders(Csv.Document("OrderID,Item 1,Fishing rod 2,1 lb. worms"))
+```
 
 |OrderID  |Item |
 |---------|---------|

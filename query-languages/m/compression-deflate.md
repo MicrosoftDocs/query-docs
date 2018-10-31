@@ -9,8 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Compression.Deflate
-`Compression.Deflate
-`
+
+## Syntax
+
+<pre> 
+Compression.Deflate
+</pre>
 
 
 ## About

@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Cube.AttributeMemberProperty
-`Cube.AttributeMemberProperty(<b>attribute</b> as any, <b>propertyName</b> as text) as any`
+
+## Syntax
+
+<pre>
+Cube.AttributeMemberProperty(<b>attribute</b> as any, <b>propertyName</b> as text) as any
+</pre>
 
 ## About
 Returns the property `propertyName` of dimension attribute `attribute`.

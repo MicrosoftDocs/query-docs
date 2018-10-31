@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a logical value based on the equality check over the two given values.  
   
-```  
+## Syntax
+
+<pre> 
 Comparer.Equals(comparer as function, x as any, y as any) as logical  
-```  
+</pre>
   
 ## Arguments  
   
@@ -28,7 +30,7 @@ Comparer.Equals(comparer as function, x as any, y as any) as logical
   
 ## Example  
   
-```  
+```powerquery-m  
 let  
 comparer1 = Comparer.FromCulture("en-us", false),  
 comparer2 = Comparer.FromCulture("en-us", true)      

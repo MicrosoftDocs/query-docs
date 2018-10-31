@@ -16,6 +16,6 @@ Returns the current culture of the system.
   
 ## <a name="__toc360789907"></a>Example  
   
-```  
+```powerquery-m  
 Culture.Current default equals “en-US”  
 ```  

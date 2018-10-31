@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Cube.ReplaceDimensions
-`Cube.ReplaceDimensions(**cube** as table, **dimensions** as table) as table`
+
+## Syntax
+
+<pre>
+Cube.ReplaceDimensions(**cube** as table, **dimensions** as table) as table
+</pre>
 
 ## About
 Cube.ReplaceDimensions

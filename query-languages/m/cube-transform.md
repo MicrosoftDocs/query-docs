@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Cube.Transform
-`Cube.Transform(**cube** as table, **transforms** as list) as table`
+
+## Syntax
+
+<pre>
+Cube.Transform(**cube** as table, **transforms** as list) as table
+</pre>
 
 ## About
 Applies the list cube functions, `transforms`, on the `cube`.

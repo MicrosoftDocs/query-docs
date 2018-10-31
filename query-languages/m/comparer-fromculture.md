@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a comparer function given the culture and a logical value for case sensitivity for the comparison. The default value for ignoreCase is false. The value for culture are well known text representations of locales used in the .NET framework.  
   
-```  
+## Syntax
+
+<pre>  
 Comparer.FromCulture(culture as text, optional ignoreCase as nullable logical) as function  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,7 +29,7 @@ Comparer.FromCulture(culture as text, optional ignoreCase as nullable logical) a
   
 ## Example  
   
-```  
+```powerquery-m  
 let  
 comparer1 = Comparer.FromCulture("en-us", false),  
 comparer2 = Comparer.FromCulture("en-us", true)      
