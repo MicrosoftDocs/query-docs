@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Informix.Database
-`Informix.Database(**server** as text, **database** as text, optional **options** as nullable record) as table`  
+
+## Syntax
+
+<pre>
+Informix.Database(**server** as text, **database** as text, optional **options** as nullable record) as table
+</pre>
 
 ## About  
 Returns a table of SQL tables and views available in an Informix database on server `server` in the database instance named `database`. The port may be optionally specified with the server, separated by a colon. An optional record parameter, `options`, may be specified to control the following options: 
