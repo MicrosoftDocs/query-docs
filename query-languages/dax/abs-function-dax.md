@@ -9,6 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
+
 # ABS Function (DAX)
 Returns the absolute value of a number.  
   
