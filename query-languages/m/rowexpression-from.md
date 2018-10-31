@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # RowExpression.From
-`RowExpression.From(<b>function</b> as function) as record`  
+
+## Syntax
+
+<pre>
+RowExpression.From(<b>function</b> as function) as record
+</pre>  
   
 ## About  
 
@@ -32,6 +37,6 @@ Returns the AST for the body of `function`, normalized into a *row expression*:
 ### Example 1  
 Returns the AST for the body of the function each [CustomerID] = "ALFKI"  
   
-```  
+```powerquery-m
 RowExpression.From(each [CustomerName] = "ALFKI")  
 ```  

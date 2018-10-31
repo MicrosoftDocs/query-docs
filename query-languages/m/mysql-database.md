@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # MySQL.Database
-`MySQL.Database(**server** as text, **database** as text, optional **options** as nullable record) as table`
+
+## Syntax
+
+<pre>
+MySQL.Database(**server** as text, **database** as text, optional **options** as nullable record) as table
+</pre>
 
 ## About
 

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the factorial of a number.  
   
-```  
+## Syntax
+
+<pre>
 Number.Factorial(number as nullable number)  as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +28,6 @@ Number.Factorial(number as nullable number)  as nullable number
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 Number.Factorial(3) equals 6  
 ```  

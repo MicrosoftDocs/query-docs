@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the number of fields in a record.  
   
-```  
+## Syntax
+
+<pre>
 Record.FieldCount(record as record) as number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +28,6 @@ Record.FieldCount(record as record) as number
   
 ## Example  
   
-```  
+```powerquery-m
 Record.FieldCount([A=1, B=2]) equals 2  
 ```  

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns true if a value is an odd number.  
   
-```  
+## Syntax
+
+<pre>
 Number.IsOdd(value as number) as logical  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,10 +28,10 @@ Number.IsOdd(value as number) as logical
   
 ## Examples  
   
-```  
+```powerquery-m 
 Number.IsOdd(3) equals true  
 ```  
   
-```  
+```powerquery-m 
 Number.IsOdd(4) equals false  
 ```  

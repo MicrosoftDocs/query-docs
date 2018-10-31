@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the hyperbolic cosine of a number.  
   
-```  
+## Syntax
+
+<pre>
 Number.Cosh(angle as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   

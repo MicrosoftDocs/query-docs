@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a number raised by a power.  
   
-```  
+## Syntax
+
+<pre>
 Number.Power(number as nullable number, power as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,6 +29,6 @@ Number.Power(number as nullable number, power as nullable number) as nullable nu
   
 ## Example  
   
-```  
+```powerquery-m
 Number.Power(9, 3) equals 729  
 ```  

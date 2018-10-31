@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Connects to the SAP BusinessObjects BI Universe at the specified URL and returns the set of available universes.  
   
-```  
+## Syntax
+
+<pre> 
 SapBusinessObjects.Universes(url as text) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -32,6 +34,6 @@ The nested tree of display folder tables provides a user-friendly way to organiz
   
 ## Examples  
   
-```  
+```powerquery-m 
 SapBusinessObjects.Universes("http://sap.example.com:6405/biprws")  
 ```  

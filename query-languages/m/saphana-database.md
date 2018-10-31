@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # SapHana.Database
-`SapHana.Database(**server** as text, optional **options** as nullable record) as table`
+
+## Syntax
+
+<pre>
+SapHana.Database(**server** as text, optional **options** as nullable record) as table
+</pre>
 
 ## About
 Returns a table of multidimensional packages from the SAP HANA database `server`. An optional record parameter, `options`, may be specified to control the following options: 

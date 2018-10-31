@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 This function be provided to List.ReplaceValue or Table.ReplaceValue to do replace values in list and table values respectively.  
   
-```  
+## Syntax
+
+<pre>
 Replacer.ReplaceValue(value as any,  old as any,  new as any) as any  
-```  
+</pre> 
   
 ## Arguments  
   

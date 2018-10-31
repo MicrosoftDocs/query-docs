@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the absolute value of a number.  
   
-```  
+## Syntax
+
+<pre>  
 Number.Abs(number as nullable number) as nullable number  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -26,6 +28,6 @@ Number.Abs(number as nullable number) as nullable number
   
 ## Example  
   
-```  
+```powerquery-m 
 Number.Abs(-1) equals 1  
 ```  

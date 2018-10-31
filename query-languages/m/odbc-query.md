@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Odbc.Query
-`Odbc.Query(<b>connectionString</b> as any, <b>query</b> as text, optional <b>options</b> as nullable record) as table`
+
+## Syntax
+
+<pre>
+Odbc.Query(<b>connectionString</b> as any, <b>query</b> as text, optional <b>options</b> as nullable record) as table
+</pre>
 
 ## About
 Returns the result of running `query` with the connection string `connectionString` using ODBC. `connectionString` can be text or a record of property value pairs. Property values can either be text or number. An optional record parameter, `options`, may be provided to specify additional properties. The record can contain the following fields: 

@@ -14,6 +14,8 @@ manager: kfile
 ## About  
 Returns a random fractional number between 0 and 1.  
   
-```  
+## Syntax
+
+<pre>
 Number.Random() as number  
-```  
+</pre>

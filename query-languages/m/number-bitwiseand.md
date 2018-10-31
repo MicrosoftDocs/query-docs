@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the result of a bitwise AND operation on the provided operands.  
   
-```  
+## Syntax
+
+<pre>
 Number.BitwiseAnd (number1 as number,  number2 as number) as number  
-```  
+</pre>
   
 ## Arguments  
   

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Divides two numbers and returns the remainder of the resulting number.  
   
-```  
+## Syntax
+
+<pre>
 Number.Mod(number as nullable number, divisor as nullable number, optional precision as nullable number) as nullable number 
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,6 +29,6 @@ Number.Mod(number as nullable number, divisor as nullable number, optional preci
   
 ## Example  
   
-```  
+```powerquery-m
 Number.Mod(83, 9) equals 2  
 ```  

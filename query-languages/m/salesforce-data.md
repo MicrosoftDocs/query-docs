@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Salesforce.Data
-`Salesforce.Data(optional **loginUrl** as any, optional **options** as nullable record) as table`
+
+## Syntax
+
+<pre>
+Salesforce.Data(optional **loginUrl** as any, optional **options** as nullable record) as table
+</pre>
 
 ## About
 

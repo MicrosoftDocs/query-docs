@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # SapHanaRangeOperator.LessThan
+
+## Syntax
+
+<pre>
 SapHanaRangeOperator.LessThan  
+</pre>
   
 ## About  
 'LessThan' range operator for SAP HANA input parameters.  

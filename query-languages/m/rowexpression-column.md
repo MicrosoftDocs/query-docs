@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # RowExpression.Column
+
+## Syntax
+
+<pre>
 RowExpression.Column(columnName as text) as record  
+</pre>
   
 ## About  
 Returns an AST that represents access to column columnName of the row within a row expression.  
@@ -17,6 +22,6 @@ Returns an AST that represents access to column columnName of the row within a r
 ### Example 1  
 Creates an AST representing access of column "CustomerName".  
   
-```  
+```powerquery-m
 RowExpression.Column("CustomerName")  
 ```  

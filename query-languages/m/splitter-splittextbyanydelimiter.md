@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a function that splits text by any supported delimiter.  
   
-```  
+## Syntax
+
+<pre>
 Splitter.SplitTextByEachDelimiter(delimiters as list, optional quoteStyle as nullable number) as function  
-```  
+</pre>
   
 ## Arguments  
   

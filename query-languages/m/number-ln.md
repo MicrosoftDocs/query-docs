@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the natural logarithm of a number.  
   
-```  
+## Syntax
+
+<pre>
 Number.Ln(number as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +28,6 @@ Number.Ln(number as nullable number) as nullable number
   
 ## Example  
   
-```  
+```powerquery-m 
 Number.Ln(1) equals 0  
 ```  

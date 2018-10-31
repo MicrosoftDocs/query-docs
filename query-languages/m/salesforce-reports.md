@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Salesforce.Reports
-`Salesforce.Reports(optional **loginUrl** as nullable text, optional **options** as nullable record) as table`
+
+## Syntax
+
+<pre>
+Salesforce.Reports(optional **loginUrl** as nullable text, optional **options** as nullable record) as table
+</pre>
 
 ## About
 

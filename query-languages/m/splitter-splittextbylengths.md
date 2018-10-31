@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a function that splits text according to the specified lengths.  
   
-```  
+## Syntax
+
+<pre>
 Splitter.SplitTextByLengths(lengths as list) as function  
-```  
+</pre>
   
 ## Arguments  
   

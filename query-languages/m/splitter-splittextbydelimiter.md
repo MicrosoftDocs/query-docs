@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a function that will split text according to a delimiter.  
   
-```  
+## Syntax
+
+<pre>
 Splitter.SplitTextByDelimiter(delimiter as text, optional quoteStyle as nullable number) as function  
-```  
+</pre>
   
 ## Arguments  
   

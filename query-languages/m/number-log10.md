@@ -9,14 +9,15 @@ ms.author: owend
 manager: kfile
 ---
 # Number.Log10
-`Number.Log10(**number** as nullable number) as nullable number`
+
+## Syntax
+
+<pre>
+Number.Log10(**number** as nullable number) as nullable number
+</pre>
 
 ## About  
 Returns the Base 10 logarithm of a number, `number`. If `number` is null `Number.Log10` returns null.
-  
-```  
-Number.Log10 (number as nullable number)  as nullable number  
-```  
   
 ## Arguments  
   
@@ -28,12 +29,11 @@ Number.Log10 (number as nullable number)  as nullable number
 Get the base 10 logarithm of 2.
 
 
-```
+```powerquery-m
 Number.Log10(2)
 ```
 
-
-```
+```powerquery-m
 0.3010299956639812
 ```
 

@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # SharePoint.Files
-`SharePoint.Files(**url** as text, optional **options** as nullable record) as table`
+
+## Syntax
+
+<pre>
+SharePoint.Files(**url** as text, optional **options** as nullable record) as table
+</pre>
 
 ## About
 

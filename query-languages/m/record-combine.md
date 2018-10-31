@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Combines the records in a list.  
   
-```  
+## Syntax
+
+<pre>
 Record.Combine(list as list) as record  
-```  
+</pre>
   
 ## Arguments  
   
@@ -29,11 +31,11 @@ If the list contains non-record values, an error is returned.
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 Record.Combine({ [CustomerID =1], [Name ="Bob"] , [Phone =  "123-4567"] })  
 ```  
   
-```  
+```powerquery-m 
 equals [CustomerID=1, Name="Bob", Phone="123-4567"]  
 ```  
   

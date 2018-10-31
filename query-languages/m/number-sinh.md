@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the hyperbolic sine of a number.  
   
-```  
+## Syntax
+
+<pre>
 Number.Sinh(angle as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   

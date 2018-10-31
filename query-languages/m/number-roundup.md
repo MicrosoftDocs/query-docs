@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the larger integer greater than or equal to a number value.  
   
-```  
+## Syntax
+
+<pre>
 Number.RoundUp(value as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,10 +28,10 @@ Number.RoundUp(value as nullable number) as nullable number
   
 ## Examples  
   
-```  
+```powerquery-m
 Number.RoundUp(-1.2) equals -1  
 ```  
   
-```  
+```powerquery-m 
 Number.RoundUp(1.2) equals 2  
 ```  

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a text value from a number value.  
   
-```  
+## Syntax
+
+<pre>
 Number.ToText(number as number, optional format as nullable text, optional culture as nullable text) as nullable text  
-```  
+</pre>
   
 ## Arguments  
   
@@ -42,7 +44,7 @@ Number.ToText(number as number, optional format as nullable text, optional cultu
   
 Examples  
   
-```  
+```powerquery-m
 Number.ToText(10, "D", "") equals 10  
   
 Number.ToText(10, "E", "") equals 1.000000E+001  

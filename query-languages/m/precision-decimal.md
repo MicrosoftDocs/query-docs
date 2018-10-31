@@ -10,5 +10,5 @@ manager: kfile
 ---
 # Precision.Decimal
 ## About
-An optional parameter for the built-in arthimetic operators to specify decimal precision.
+An optional parameter for the built-in arithmetic operators to specify decimal precision.
 

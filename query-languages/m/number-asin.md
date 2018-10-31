@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the arcsine of a number.  
   
-```  
+## Syntax
+
+<pre>
 Number.Asin(angle as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   

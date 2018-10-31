@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Odbc.DataSource
-`Odbc.DataSource(<b>connectionString</b> as any, optional <b>options</b> as nullable record) as table`
+
+## Syntax
+
+<pre>
+Odbc.DataSource(<b>connectionString</b> as any, optional <b>options</b> as nullable record) as table
+</pre>
 
 ## About
 Returns a table of SQL tables and views from the ODBC data source specified by the connection string `connectionString`. `connectionString` can be text or a record of property value pairs. Property values can either be text or number. An optional record parameter, `options`, may be provided to specify additional properties. The record can contain the following fields: 

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the tangent of a number.  
   
-```  
+## Syntax
+
+<pre>
 Number.Tan (angle as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +28,6 @@ Number.Tan (angle as nullable number) as nullable number
   
 ## Example  
   
-```  
+```powerquery-m
 Number.Tan(1) equals 1.557  
 ```  

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the number of combinations of a given number of items for the optional combination size.  
   
-```  
+## Syntax
+
+<pre>
 Number.Combinations (setSize as nullable number,  combinationSize as nullable number)  as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,6 +29,6 @@ Number.Combinations (setSize as nullable number,  combinationSize as nullable nu
   
 ## Example  
   
-```  
+```powerquery-m
 Number.Combinations(5, 3) equals 10  
 ```  

@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Oracle.Database
-`Oracle.Database(**server** as text, optional **options** as nullable record) as table`
+
+## Syntax
+
+<pre>
+Oracle.Database(**server** as text, optional **options** as nullable record) as table
+</pre>
 
 ## About
 

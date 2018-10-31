@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a function that splits text according to the specified positions.  
   
-```  
+## Syntax
+
+<pre> 
 Splitter.SplitTextByPositions(positions as list) as function  
-```  
+</pre>
   
 ## Arguments  
   

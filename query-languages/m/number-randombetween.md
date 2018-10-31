@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a random number between the two given number values.  
   
-```  
+## Syntax
+
+<pre>
 Number.RandomBetween(bottom as number, top as number) as number  
-```  
+</pre>
   
 ## Arguments  
   

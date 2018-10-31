@@ -9,7 +9,13 @@ ms.author: owend
 manager: kfile
 ---
 # OleDb.DataSource
-`OleDb.DataSource(<b>connectionString</b> as any, optional <b>options</b> as nullable record) as table`
+
+## Syntax
+
+<pre>
+OleDb.DataSource(<b>connectionString</b> as any, optional <b>options</b> as nullable record) as table
+</pre>
+
 ## About
 Returns a table of SQL tables and views from the OLE DB data source specified by the connection string `connectionString`. `connectionString` can be text or a record of property value pairs. Property values can either be text or number. An optional record parameter, `options`, may be provided to specify additional properties. The record can contain the following fields: 
 *  `CreateNavigationProperties` : A logical (true/false) that sets whether to generate navigation properties on the returned values (default is true).
