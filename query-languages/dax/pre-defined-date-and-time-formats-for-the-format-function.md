@@ -1,6 +1,7 @@
 ---
 title: "Pre-defined Date and Time formats for the FORMAT Function | Microsoft Docs"
-ms.prod: dax
+ms.prod: powerbi 
+ms.technology: dax
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference

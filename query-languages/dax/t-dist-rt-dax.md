@@ -1,6 +1,7 @@
 ---
 title: "T.DIST.RT Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.prod: powerbi 
+ms.technology: dax
 ms.date: 8/14/2018
 ms.reviewer: owend
 ms.topic: reference
