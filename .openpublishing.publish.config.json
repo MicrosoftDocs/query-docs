@@ -48,6 +48,21 @@
       "template_folder": "_themes"
     },
     {
+      "docset_name": "m-msdn-redirects",
+      "build_source_folder": "m-msdn-redirects",
+      "build_output_subfolder": "m-msdn-redirects",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "op"
+    },
+    {
       "docset_name": "query-languages",
       "build_source_folder": "query-languages",
       "build_output_subfolder": "query-languages",
