@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Sql.Database
-`Sql.Database(**server** as text, **database** as text, optional **options** as nullable record) as table`
+
+## Syntax
+
+<pre>
+Sql.Database(**server** as text, **database** as text, optional **options** as nullable record) as table
+</pre>
 
 ## About
 

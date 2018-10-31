@@ -9,7 +9,13 @@ ms.author: owend
 manager: kfile
 ---
 # SqlExpression.SchemaFrom
-`SqlExpression.SchemaFrom(**schema** as any) as any`
+
+## Syntax
+
+<pre>
+SqlExpression.SchemaFrom(**schema** as any) as any
+</pre>
+
 ## About
 SqlExpression.SchemaFrom
 
