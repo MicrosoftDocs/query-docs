@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Table.Profile
+
+## Syntax
+
+<pre>
 Table.Profile(table as table) as table  
+</pre>
   
 ## About  
 Returns a profile for the columns in table.  

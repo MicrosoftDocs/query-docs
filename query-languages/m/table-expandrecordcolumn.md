@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Expands a column of records into columns with each of the values.  
   
-```  
+## Syntax
+
+<pre>
 Table.ExpandRecordColumn(table as table, column as text, fieldNames as list, optional newColumnNames as nullable list) as table  
-```  
+</pre>
   
 ## Arguments  
   

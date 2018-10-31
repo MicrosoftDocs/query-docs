@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Removes duplicate rows from a table, ensuring that all remaining rows are distinct.  
   
-```  
+## Syntax
+
+<pre>
 Table.Distinct(table as table, optional equationCriteria as any) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,7 +29,7 @@ Table.Distinct(table as table, optional equationCriteria as any) as table
   
 ## Examples  
   
-```  
+```powerquery-m
 Table.Distinct(  
   
     Table.FromRecords(  

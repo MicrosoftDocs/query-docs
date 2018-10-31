@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Determines whether all of the specified records appear as rows in the table.  
   
-```  
+## Syntax
+
+<pre>
 Table.ContainsAll(table as table, rows as list, optional equationCriteria as any) as logical  
-```  
+</pre>
   
 ## Arguments  
   
@@ -32,7 +34,7 @@ Table.ContainsAll(table as table, rows as list, optional equationCriteria as any
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 Table.ContainsAll(  
   
   Table.FromRecords(  

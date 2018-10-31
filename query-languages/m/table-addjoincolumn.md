@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Performs a nested join between table1 and table2 from specific columns and produces the join result as a newColumnName column for each row of table1.  
   
-```  
+## Syntax
+
+<pre>
 Table.AddJoinColumn(table1 as table, key1 as any, table2 as function, key2 as any, newColumnName as text) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -40,7 +42,7 @@ Table.AddJoinColumn(table1 as table, key1 as any, table2 as function, key2 as an
   
 ## Example  
   
-```  
+```powerquery-m 
 let  
   
     Query = let  

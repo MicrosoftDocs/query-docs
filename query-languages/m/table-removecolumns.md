@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a table without a specific column or columns.  
   
-```  
+## Syntax
+
+<pre>
 Table.RemoveColumns(table as table, columns as any, optional missingField as nullable number) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -32,7 +34,7 @@ Table.RemoveColumns(table as table, columns as any, optional missingField as nul
   
 ## Examples  
   
-```  
+```powerquery-m
 Table.RemoveColumns(Table.FromRecords({[CustomerID=1, Name="Bob", Phone = "123-4567"]}), "Phone")  
 ```  
   

@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Table.Join
-`Table.Join(<b>table1</b> as table, <b>key1</b> as any, <b>table2</b> as table, <b>key2</b> as any, optional <b>joinKind</b> as nullable number, optional <b>joinAlgorithm</b> as nullable number, optional <b>keyEqualityComparers</b> as nullable list) as table`
+
+## Syntax
+
+<pre>
+Table.Join(<b>table1</b> as table, <b>key1</b> as any, <b>table2</b> as table, <b>key2</b> as any, optional <b>joinKind</b> as nullable number, optional <b>joinAlgorithm</b> as nullable number, optional <b>keyEqualityComparers</b> as nullable list) as table
+</pre>
 
 ## About
 Joins the rows of `table1` with the rows of `table2` based on the equality of the values of the key columns selected by `key1` (for `table1`) and `key2` (for `table2`).
@@ -19,7 +24,7 @@ By default, an inner join is performed, however an optional `joinKind` may be in
 ## Example 1
 Inner join the two tables on [CustomerID]
 
-```
+```powerquery-m
 Table.Join
 (Table.FromRecords({
 [CustomerID = 1, Name = "Bob", Phone = "123-4567"],

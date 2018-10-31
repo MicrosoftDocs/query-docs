@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a table containing the rows of the table repeated the **count** number of times.  
   
-```  
+## Syntax
+
+<pre>
 Table.Repeat(table as table, count as number) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,7 +29,7 @@ Table.Repeat(table as table, count as number) as table
   
 ## Example  
   
-```  
+```powerquery-m
 Table.Repeat(Table.FromRecords({[Column1=1], [Column1=2]}), 2)  
 ```  
   

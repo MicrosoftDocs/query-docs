@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the smallest row or rows from a table using a comparisonCriteria.  
   
-```  
+## Syntax
+
+<pre>
 Table.Min(table as table, comparisonCriteria as any, optional default as any) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -32,7 +34,7 @@ Table.Min(table as table, comparisonCriteria as any, optional default as any) as
   
 ## Example  
   
-```  
+```powerquery-m
 let  
   
     Employees = Table.FromRecords(  

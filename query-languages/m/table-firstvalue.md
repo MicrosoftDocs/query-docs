@@ -9,7 +9,13 @@ ms.author: owend
 manager: kfile
 ---
 # Table.FirstValue
-`Table.FirstValue(**table** as table, optional **default** as any) as any`
+
+## Syntax
+
+<pre>
+Table.FirstValue(**table** as table, optional **default** as any) as any
+</pre>
+
 ## About
 Returns the first column of the first row of the table `table` or a specified default value.
 

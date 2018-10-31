@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a table with all rows removed from the table that contain an error in at least one of the cells in a row.  
   
-```  
+## Syntax
+
+<pre>
 Table.RemoveRowsWithErrors(table as table,  optional columns as nullable list) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,7 +33,7 @@ Table.RemoveRowsWithErrors(table as table,  optional columns as nullable list) a
   
 ## Example  
   
-```  
+```powerquery-m
 Table.RemoveRowsWithErrors(  
   
     Table.FromRecords({[Column1=...],[Column1=2], [Column1=3]}))  

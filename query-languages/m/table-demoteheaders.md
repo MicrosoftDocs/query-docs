@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Demotes the header row down into the first row of a table.  
   
-```  
+## Syntax
+
+<pre>
 Table.DemoteHeaders(table as table) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,7 +28,7 @@ Table.DemoteHeaders(table as table) as table
   
 ## Example  
   
-```  
+```powerquery-m
 Table.DemoteHeaders(Table.FromRecords(  
   
 {  

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the largest N rows from a table. After the rows are sorted, the countOrCondition parameter must be specified to further filter the result.  
   
-```  
+## Syntax
+
+<pre>
 Table.MaxN(table as table, comparisonCriteria as any, countOrCondition as any) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -35,7 +37,7 @@ The **countOrCondition** arument has two possible settings:
   
 ## Examples  
   
-```  
+```powerquery-m
 Table.MaxN(Employees, "Salary", 3)   
 equals  Table.FromRecords({[Name="Jeff", Level=10, Salary=200000]   
 [Name="Barb", Level=8,  Salary=150000]   

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a table that is the result of combining a set of partitioned tables into new columns. The type of the column can optionally be specified, the default is any.  
   
-```  
+## Syntax
+
+<pre>
 Table.FromPartitions ( partitionColumn as text, partitions as list, optional partitionColumnType as nullable type) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -28,7 +30,7 @@ Table.FromPartitions ( partitionColumn as text, partitions as list, optional par
   
 ## Example  
   
-```  
+```powerquery-m
 Table.FromPartitions("Year",  
   
 {{1994, Table.FromPartitions("Month", {  

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a new table with new key information set in the **keys** argument.  
   
-```  
+## Syntax
+
+<pre>
 Table.ReplaceKeys(table as table, keys as list) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,6 +29,6 @@ Table.ReplaceKeys(table as table, keys as list) as table
   
 ## Example  
   
-```  
+```powerquery-m
 Table.ReplaceKeys(Table.FromRecords({[A={[B=1], [B=2]}, C=1]}), {[Columns = {"C"}, Primary = true]})  
 ```  

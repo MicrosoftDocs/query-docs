@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the last row(s) from a table, depending on the **countOrCondition** parameter.  
   
-```  
+## Syntax
+
+<pre>
 Table.LastN(table as table, countOrCondition as any) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -33,7 +35,7 @@ Table.LastN(table as table, countOrCondition as any) as table
   
 ## Example  
   
-```  
+```powerquery-m
 Table.LastN(Table.FromRecords({  
   
     [CustomerID = 1, Name = "Bob", Phone = "123-4567"],  

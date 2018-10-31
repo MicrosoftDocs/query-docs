@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the names of columns from a table.  
   
-```  
+## Syntax
+
+<pre>
 Table.ColumnNames(table as table) as {Text}  
-```  
+</pre>
   
 ## Arguments  
   
@@ -30,7 +32,7 @@ Table.ColumnNames(table as table) as {Text}
   
 ## Example  
   
-```  
+```powerquery-m
 Table.ColumnNames(Table.FromRecords(  
   
 {  

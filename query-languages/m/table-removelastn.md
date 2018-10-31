@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a table with the specified number of rows removed from the table starting at the last row. The number of rows removed depends on the optional countOrCondition parameter.  
   
-```  
+## Syntax
+
+<pre>
 Table.RemoveLastN( table as table, optional countOrCondition as any) as table  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -35,7 +37,7 @@ Table.RemoveLastN( table as table, optional countOrCondition as any) as table
   
 ## Example  
   
-```  
+```powerquery-m 
 Table.RemoveLastN(  
   
     Table.FromRecords(  
@@ -61,7 +63,7 @@ Table.RemoveLastN(
 |2|Jim|987-6543|  
 |3|Paul|543-7890|  
   
-```  
+```powerquery-m
 Table.RemoveLastN(  
   
     Table.FromRecords(  

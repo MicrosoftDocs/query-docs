@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Adds a column named newColumnName to a table.  
   
-```  
+## Syntax
+
+<pre>
 Table.AddColumn(table as table, newColumnName as text, columnGenerator as function,  optional columnType as nullable type) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -32,7 +34,7 @@ The values for the column are computed using the specified function from each ro
   
 ## Example  
   
-```  
+```powerquery-m
 Table.AddColumn(Table.FromRecords(  
   
 {  

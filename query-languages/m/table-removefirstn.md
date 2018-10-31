@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a table with the specified number of rows removed from the table starting at the first row. The number of rows removed depends on the optional countOrCondition parameter.  
   
-```  
+## Syntax
+
+<pre>
 Table.RemoveFirstN( table as table, optional countOrCondition as any) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -35,7 +37,7 @@ Table.RemoveFirstN( table as table, optional countOrCondition as any) as table
   
 ## Example  
   
-```  
+```powerquery-m
 Table.RemoveFirstN(  
   
     Table.FromRecords(  
@@ -60,7 +62,7 @@ Table.RemoveFirstN(
 |3|Paul|543-7890|  
 |4|Ringo|232-1550|  
   
-```  
+```powerquery-m
 Table.RemoveFirstN(  
   
     Table.FromRecords(  

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Given a table and attribute column containing pivotValues, creates new columns for each of the pivot values and assigns them values from the valueColumn. An optional aggregationFunction can be provided to handle multiple occurrence of the same key value in the attribute column.  
   
-```  
+## Syntax
+
+<pre>
 Table.Pivot(table as table,  pivotValues as list,  attributeColumn as text,  valueColumn as text,  optional aggregationFunction as nullable function) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -30,7 +32,7 @@ Table.Pivot(table as table,  pivotValues as list,  attributeColumn as text,  val
   
 ## Examples  
   
-```  
+```powerquery-m
 // Simple input with no key + attribute conflicts.  In other words, (key,attribute) is unique.  
   
 Table.Pivot(  
@@ -53,7 +55,7 @@ Table.Pivot(
 |key1|1|null|3|  
 |key2|2|4|null|  
   
-```  
+```powerquery-m 
 // Same input as Example 2, but with an additional function specified to resolve the conflict – in this case, to take the minimum value.  Note that this resolution method is the same as the PIVOT clause in SQL Server and most other DBMS’s.  
   
 Table.Pivot(  

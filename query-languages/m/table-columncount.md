@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the number of columns in a table.  
   
-```  
+## Syntax
+
+<pre>
 Table.ColumnCount(table as table) as number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,7 +28,7 @@ Table.ColumnCount(table as table) as number
   
 ## Example  
   
-```  
+```powerquery-m 
 let  
   
     emptyTable = Table.FromRows({}),  

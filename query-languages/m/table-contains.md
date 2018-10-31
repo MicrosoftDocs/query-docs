@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Determines whether the a record appears as a row in the table.  
   
-```  
+## Syntax
+
+<pre>
 Table.Contains(table as table, row as record, optional equationCriteria as any) as logical  
-```  
+</pre>
   
 ## Arguments  
   
@@ -32,7 +34,7 @@ Table.Contains(table as table, row as record, optional equationCriteria as any) 
   
 ## Example  
   
-```  
+```powerquery-m
 Table.Contains(  
   
     Table.FromRecords(  
