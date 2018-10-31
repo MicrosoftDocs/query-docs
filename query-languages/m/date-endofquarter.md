@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a Date/DateTime/DateTimeZone value representing the end of the quarter. The date and time portions are reset to their terminating values for the quarter. The timezone information is persisted.  
   
-```  
+## Syntax
+
+<pre>  
 Date.EndOfQuarter(dateTime)  
-```  
+</pre> 
   
 ## Arguments  
   

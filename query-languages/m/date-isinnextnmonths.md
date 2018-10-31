@@ -9,7 +9,13 @@ ms.author: owend
 manager: kfile
 ---
 # Date.IsInNextNMonths
-`Date.IsInNextNMonths(**dateTime** as any, **months** as number) as nullable logical`
+
+## Syntax
+
+<pre>
+Date.IsInNextNMonths(**dateTime** as any, **months** as number) as nullable logical
+</pre>
+
 ## About
 Indicates whether the given datetime value `dateTime` occurs during the next number of months, as determined by the current date and time on the system. 
 - `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated. 
@@ -18,7 +24,9 @@ Indicates whether the given datetime value `dateTime` occurs during the next num
 ## Example 
 Determine if the month after the current system time is in the next two months.
 
-`Date.IsInNextNMonths(Date.AddMonths(DateTime.FixedLocalNow(), 1), 2)`
+```powerquery-m
+Date.IsInNextNMonths(Date.AddMonths(DateTime.FixedLocalNow(), 1), 2)
+```
 
 `true`
 

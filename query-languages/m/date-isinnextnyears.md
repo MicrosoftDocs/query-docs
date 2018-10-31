@@ -9,7 +9,10 @@ ms.author: owend
 manager: kfile
 ---
 # Date.IsInNextNYears
-`Date.IsInNextNYears(**dateTime** as any, **years** as number) as nullable logical`
+
+```powerquery-m
+Date.IsInNextNYears(**dateTime** as any, **years** as number) as nullable logical
+</pre>
 
 ## About
 Indicates whether the given datetime value `dateTime` occurs during the next number of years, as determined by the current date and time on the system. 
@@ -19,7 +22,9 @@ Indicates whether the given datetime value `dateTime` occurs during the next num
 ## Example 
 Determine if the year after the current system time is in the next two years.
 
-`Date.IsInNextNYears(Date.AddYears(DateTime.FixedLocalNow(), 1), 2)`
+```powerquery-m
+Date.IsInNextNYears(Date.AddYears(DateTime.FixedLocalNow(), 1), 2)
+```
 
 `true`
 

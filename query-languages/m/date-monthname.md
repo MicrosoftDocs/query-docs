@@ -10,7 +10,11 @@ manager: kfile
 ---
 # Date.MonthName
 
-`Date.MonthName(**date** as any, optional **culture** as nullable text)`
+## Syntax
+
+<pre>
+Date.MonthName(**date** as any, optional **culture** as nullable text)
+</pre>
 
 ## About
 Returns the name of the month component for the provided `date` and, optionally, a culture `culture`.
@@ -18,7 +22,9 @@ Returns the name of the month component for the provided `date` and, optionally,
 ## Example
 Get the month name.
 
-`Date.MonthName(#datetime(2011, 12, 31, 5, 0, 0), "en-US")`
+```powerquery-m
+Date.MonthName(#datetime(2011, 12, 31, 5, 0, 0), "en-US")
+```
 
 `"December"`
 

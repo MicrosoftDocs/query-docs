@@ -9,7 +9,11 @@ ms.author: owend
 manager: kfile
 ---
 # Date.IsInPreviousNWeeks
-`Date.IsInPreviousNWeeks(**dateTime** as any, **weeks** as number) as nullable logical`
+## Syntax
+
+<pre>
+Date.IsInPreviousNWeeks(**dateTime** as any, **weeks** as number) as nullable logical
+</pre>
 
 ## About
 Indicates whether the given datetime value `dateTime` occurs during the previous number of weeks, as determined by the current date and time on the system. 
@@ -19,7 +23,9 @@ Indicates whether the given datetime value `dateTime` occurs during the previous
 ## Example 
 Determine if the week before the current system time is in the previous two weeks.
 
-`Date.IsInPreviousNWeeks(Date.AddDays(DateTime.FixedLocalNow(), -7), 2)`
+```powerquery-m
+Date.IsInPreviousNWeeks(Date.AddDays(DateTime.FixedLocalNow(), -7), 2)
+```
 
 `true`
 

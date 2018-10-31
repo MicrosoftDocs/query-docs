@@ -9,7 +9,13 @@ ms.author: owend
 manager: kfile
 ---
 # Date.IsInPreviousDay
-`Date.IsInPreviousDay(**dateTime** as any) as nullable logical`
+
+## Syntax
+
+<pre>
+Date.IsInPreviousDay(**dateTime** as any) as nullable logical
+</pre>
+
 ## About
 Indicates whether the given datetime value `dateTime` occurs during the previous day, as determined by the current date and time on the system. 
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
@@ -17,7 +23,9 @@ Indicates whether the given datetime value `dateTime` occurs during the previous
 ## Example 
 Determine if the day before the current system time is in the previous day.
 
-`Date.IsInPreviousDay(Date.AddDays(DateTime.FixedLocalNow(), -1))`
+```powerquery-m
+Date.IsInPreviousDay(Date.AddDays(DateTime.FixedLocalNow(), -1))
+```
 
 `true`
 

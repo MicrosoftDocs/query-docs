@@ -13,10 +13,12 @@ manager: kfile
   
 ## About  
 Returns a Date/DateTime/DateTimeZone value representing the start of the quarter. The date and time portions are reset to their initial values for the quarter. The timezone information is persisted.  
-  
-```  
+
+## Syntax
+
+<pre>
 Date.StartOfQuarter(dateTime)  
-```  
+</pre>
   
 ## <a name="__goback"></a>Arguments  
   

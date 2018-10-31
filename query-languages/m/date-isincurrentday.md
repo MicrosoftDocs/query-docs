@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Date.IsInCurrentDay
-`Date.IsInCurrentDay(**dateTime** as any) as nullable logical`
+
+## Syntax
+
+<pre>
+Date.IsInCurrentDay(**dateTime** as any) as nullable logical
+</pre>
 
 ## About
 Indicates whether the given datetime value `dateTime` occurs during the current day, as determined by the current date and time on the system. 
@@ -18,7 +23,9 @@ Indicates whether the given datetime value `dateTime` occurs during the current 
 ## Example 
 Determine if the current system time is in the current day.
 
-`Date.IsInCurrentDay(DateTime.FixedLocalNow())`
+```powerquery-m
+Date.IsInCurrentDay(DateTime.FixedLocalNow())
+```
 
 `true`
 

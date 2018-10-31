@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a DateTime value representing the start of the year.  
   
-```  
+## Syntax
+
+<pre>
 Date.StartOfYear(dateTime as nullable datetime) as nullable datetime  
-```  
+</pre>
   
 ## Arguments  
   
@@ -32,7 +34,7 @@ Date.StartOfYear(dateTime as nullable datetime) as nullable datetime
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 dateTime=DateTimeZone.FromText("2011-02-21T12:30:00-08:00")   
 Date.StartOfYear(dateTime) equals 2011-01-01T00:00:00-08:00  
 ```  

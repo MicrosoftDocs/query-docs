@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a date value from a value.  
   
-```  
+## Syntax
+
+<pre>  
 Date.From(value as any, optional culture as nullable text) as nullable date  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -43,10 +45,10 @@ Values of the following types can be converted to a date value:
   
 ## Examples  
   
-```  
+```powerquery-m
 Date.From(43910) equals #date(2020,3,20)  
 ```  
   
-```  
+```powerquery-m
 Date.From(#datetime(1899, 12, 30, 6, 45, 12)) equals #date(1899,12,30)  
 ```  

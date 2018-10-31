@@ -9,7 +9,12 @@ ms.author: owend
 manager: kfile
 ---
 # Date.IsInNextNWeeks
-`Date.IsInNextNWeeks(**dateTime** as any, **weeks** as number) as nullable logical`
+
+## Syntax
+
+<pre>
+Date.IsInNextNWeeks(**dateTime** as any, **weeks** as number) as nullable logical
+</pre>
 
 ## About
 
@@ -20,7 +25,9 @@ Indicates whether the given datetime value `dateTime` occurs during the next num
 ## Example 
 Determine if the week after the current system time is in the next two weeks.
 
-`Date.IsInNextNWeeks(Date.AddDays(DateTime.FixedLocalNow(), 7), 2)`
+```powerquery-m
+Date.IsInNextNWeeks(Date.AddDays(DateTime.FixedLocalNow(), 7), 2)
+```
 
 `true`
 

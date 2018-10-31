@@ -13,10 +13,12 @@ manager: kfile
   
 ## About  
 Returns a Date value from a set of date formats and culture value, following ISO 8601 format standard.  
-  
-```  
+
+## Syntax
+
+<pre>
 Date.FromText(date as nullable text, optional culture as nullable text) as nullable date  
-```  
+</pre>
   
 ## Arguments  
   
@@ -47,6 +49,6 @@ Date.FromText(date as nullable text, optional culture as nullable text) as nulla
   
 ## Example  
   
-```  
+```powerquery-m 
 Date.FromText("2010-02-19") equals Date,yyyy-MM-dd  
 ```  

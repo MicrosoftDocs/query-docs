@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a logical value indicating whether the given Date/DateTime/DateTimeZone occurred during the current quarter, as determined by the current date and time on the system.  
   
-```  
+## Syntax
+
+<pre>
 Date.IsInCurrentQuarter(dateTime) as logical  
-```  
+</pre>
   
 ## Arguments  
   

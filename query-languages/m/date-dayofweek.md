@@ -10,7 +10,11 @@ manager: kfile
 ---
 # Date.DayOfWeek
 
-`Date.DayOfWeek(**dateTime** as any, optional **firstDayOfWeek** as nullable number) as nullable number`
+## Syntax
+
+<pre> 
+Date.DayOfWeek(**dateTime** as any, optional **firstDayOfWeek** as nullable number) as nullable number
+</pre>
 
 ## About
 
@@ -30,6 +34,8 @@ Get which the day of the week February 21st, 2011 falls on, with (default) Sunda
 ## Example 2
 Get which day of the week February 21st, 2011 falls on, with Monday being the first day of the week.
 
-`Date.DayOfWeek(#date(2011, 02, 21), Day.Monday)`
+```powerquery-m
+Date.DayOfWeek(#date(2011, 02, 21), Day.Monday)
+```
 
 `0`

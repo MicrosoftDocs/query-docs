@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a DateTime value representing the start of the week.  
   
-```  
+## Syntax
+
+<pre>
 Date.StartOfWeek(dateTime as nullable datetime, optional firstDay as nullable number) as nullable datetime  
-```  
+</pre>
   
 ## Arguments  
   
@@ -49,7 +51,7 @@ Date.StartOfWeek(dateTime as nullable datetime, optional firstDay as nullable nu
   
 ## Example  
   
-```  
+```powerquery-m 
 dateTime = DateTimeZone.FromText("2011-02-24T12:30:00-08:00");   
 Date.StartOfWeek(dateTime, Day.Monday) equals 2011-02-21T00:00:00-08:00  
 ```  

@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the number of days in the month from a DateTime value.  
   
-```  
+## Syntax
+
+<pre>  
 Date.DaysInMonth(dateTime as datetime) as nullable number  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -26,6 +28,6 @@ Date.DaysInMonth(dateTime as datetime) as nullable number
   
 ## Example  
   
-```  
+```powerquery-m  
 Date.DaysInMonth(DateTime.FromText("2012-03-01")) equals 31  
 ```  

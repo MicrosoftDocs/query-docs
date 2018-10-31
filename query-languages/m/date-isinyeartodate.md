@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns a logical value indicating whether the given Date/DateTime/DateTimeZone occurred in the period starting January 1st of the current year and ending on the current day, as determined by the current date and time on the system.  
   
-```  
+## Syntax
+
+<pre>
 Date. IsInYearToDate(dateTime) as logical  
-```  
+</pre> 
   
 ## Arguments  
   

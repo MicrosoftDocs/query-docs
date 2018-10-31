@@ -9,7 +9,13 @@ ms.author: owend
 manager: kfile
 ---
 # Date.IsInPreviousNYears
-`Date.IsInPreviousNYears(**dateTime** as any, **years** as number) as nullable logical`
+
+## Syntax
+
+<pre>
+Date.IsInPreviousNYears(**dateTime** as any, **years** as number) as nullable logical
+</pre>
+
 ## About
 Indicates whether the given datetime value `dateTime` occurs during the previous number of years, as determined by the current date and time on the system. 
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
@@ -18,7 +24,9 @@ Indicates whether the given datetime value `dateTime` occurs during the previous
 ## Example 
 Determine if the year before the current system time is in the previous two years.
 
-`Date.IsInPreviousNYears(Date.AddYears(DateTime.FixedLocalNow(), -1), 2)`
+```powerquery-m
+Date.IsInPreviousNYears(Date.AddYears(DateTime.FixedLocalNow(), -1), 2)
+```
 
 `true`
 

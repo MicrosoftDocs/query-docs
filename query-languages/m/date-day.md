@@ -14,9 +14,11 @@ manager: kfile
 ## About  
 Returns the day for a DateTime value.  
   
-```  
+## Syntax
+
+<pre> 
 Date.Day(dateTime as datetime) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +28,6 @@ Date.Day(dateTime as datetime) as nullable number
   
 ## Example  
   
-```  
+```powerquery-m 
 Date.Day(DateTime.FromText("2011-02-19")) equals 19  
 ```  
