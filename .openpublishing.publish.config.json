@@ -13,8 +13,23 @@
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
-      "build_entry_point": "docs",
+      "build_entry_point": "op",
       "template_folder": "_themes"
+    },
+    {
+      "docset_name": "dax-msdn-redirects",
+      "build_source_folder": "dax-msdn-redirects",
+      "build_output_subfolder": "dax-msdn-redirects",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "op"
     },
     {
       "docset_name": "m",
@@ -29,7 +44,7 @@
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
-      "build_entry_point": "docs",
+      "build_entry_point": "op",
       "template_folder": "_themes"
     },
     {
@@ -45,7 +60,7 @@
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
-      "build_entry_point": "docs",
+      "build_entry_point": "op",
       "template_folder": "_themes"
     }
   ],
