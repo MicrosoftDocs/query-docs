@@ -1,7 +1,7 @@
 ---
 title: "Data Analysis Expressions (DAX) Reference | Microsoft Docs"
-ms.prod: powerbi 
-ms.technology: dax
+ms.service: powerbi 
+
 ms.date: 6/11/2018
 ms.reviewer: owend
 ms.topic: reference

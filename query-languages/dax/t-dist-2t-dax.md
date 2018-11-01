@@ -1,7 +1,7 @@
 ---
 title: "T.DIST.2T Function (DAX) | Microsoft Docs"
-ms.prod: powerbi 
-ms.technology: dax
+ms.service: powerbi 
+
 ms.date: 8/14/2018
 ms.reviewer: owend
 ms.topic: reference

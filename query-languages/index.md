@@ -5,7 +5,7 @@ ms.date: "2/5/2018"
 ms.prod: "azure"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
+ 
   - "analysis-services"
   - "daxlang"
 ms.tgt_pltfrm: ""
