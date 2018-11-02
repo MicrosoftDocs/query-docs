@@ -1,6 +1,7 @@
 ---
 title: "DATESINPERIOD Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 9/25/2018
 ms.reviewer: owend
 ms.topic: reference

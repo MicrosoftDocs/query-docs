@@ -1,6 +1,7 @@
 ---
 title: "COMBINEVALUES Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.topic: reference
 author: minewiskan

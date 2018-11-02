@@ -1,7 +1,8 @@
 ---
 title: "AzureStorage.DataLakeContents | Microsoft Docs"
 ms.date: 8/17/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
