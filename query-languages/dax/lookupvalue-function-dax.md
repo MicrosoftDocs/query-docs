@@ -1,6 +1,7 @@
 ---
 title: "LOOKUPVALUE Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the value in *result_columnName* for the row that meets all criteria spe
   
 ## Syntax  
   
-```  
+```dax
 LOOKUPVALUE( <result_columnName>, <search_columnName>, <search_value>[, <search_columnName>, <search_value>]…)  
-```  
+```
   
 #### Parameters  
 result_columnName  
@@ -39,6 +40,6 @@ If multiple rows match the search values and in all cases *result_column* values
 ## Example  
 The following example returns the SafetyStocklLevel for the bike model "Mountain-400-W Silver, 46".  
   
-```  
+```dax
 =LOOKUPVALUE(Product[SafetyStockLevel], [ProductName], " Mountain-400-W Silver, 46")  
-```  
+```

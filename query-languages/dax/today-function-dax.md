@@ -1,6 +1,7 @@
 ---
 title: "TODAY Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the current date.
   
 ## Syntax  
   
-```  
+```dax
 TODAY()  
-```  
+```
   
 ## Return Value  
 A date (**datetime**).  
@@ -31,9 +32,9 @@ The NOW function is similar but returns the exact time, whereas TODAY returns th
 ## Example  
 If you know that someone was born in 1963, you might use the following formula to find that person's age as of this year's birthday:  
   
-```  
+```dax
 =YEAR(TODAY())-1963  
-```  
+```dax
 This formula uses the TODAY function as an argument for the YEAR function to obtain the current year, and then subtracts 1963, returning the person's age.  
   
 ## See Also  

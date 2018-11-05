@@ -1,7 +1,8 @@
 ---
 title: "Binary functions | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -64,8 +65,8 @@ Controlling byte order | Description
 |[BinaryOccurrence.Optional](binaryoccurrence-optional.md)|The item is expected to appear zero or one time in the input.|
 |[BinaryOccurrence.Repeating](binaryoccurrence-repeating.md)|The item is expected to appear zero or more times in the input.|
 |[BinaryOccurrence.Required](binaryoccurrence-required.md)|The item is expected to appear once in the input.|
-|[ByteOrder.BigEndian](byteorder-bigendian.md)|A possible value for the <code>byteOrder</code> parameter in <code>BinaryFormat.ByteOrder</code>. The most signficant byte appears first in Big Endian byte order.|
-|[ByteOrder.LittleEndian](byteorder-littleendian.md)|A possible value for the <code>byteOrder</code> parameter in <code>BinaryFormat.ByteOrder</code>. The least signficant byte appears first in Little Endian byte order.|
+|[ByteOrder.BigEndian](byteorder-bigendian.md)|A possible value for the `byteOrder` parameter in `BinaryFormat.ByteOrder`. The most signficant byte appears first in Big Endian byte order.|
+|[ByteOrder.LittleEndian](byteorder-littleendian.md)|A possible value for the `byteOrder` parameter in `BinaryFormat.ByteOrder`. The least signficant byte appears first in Little Endian byte order.|
 |[Compression.Deflate](compression-deflate.md)|The compressed data is in the 'Deflate' format.|
 |[Compression.GZip](compression-gzip.md)|The compressed data is in the 'GZip' format.|
 |[Occurrence.Optional](occurrence-optional.md) | The item is expected to appear zero or one time in the input.|

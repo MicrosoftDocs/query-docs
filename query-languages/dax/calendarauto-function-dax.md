@@ -1,6 +1,7 @@
 ---
 title: "CALENDARAUTO Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -14,9 +15,9 @@ Returns a table with a single column named “Date” that contains a contiguous
   
 ## Syntax  
   
-```  
+```dax
 CALENDARAUTO([fiscal_year_end_month])  
-```  
+```
   
 #### Parameters  
   

@@ -1,7 +1,8 @@
 ---
 title: "Text.Insert | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a text value with newValue inserted into a text value starting at a zero-based offset.  
   
-```  
+## Syntax
+
+<pre>
 Text.Insert(text as nullable text, offset as number, newText as text) as nullable text  
-```  
+</pre>
   
 ## Arguments  
   
@@ -32,6 +35,6 @@ Text.Insert(text as nullable text, offset as number, newText as text) as nullabl
   
 ## Example  
   
-```  
+```powerquery-m
 Text.Insert("abcdef",2,"X") equals "abXcdef"  
 ```  

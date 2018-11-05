@@ -1,6 +1,7 @@
 ---
 title: "GENERATE  Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns a table with the Cartesian product between each row in *table1* and the 
   
 ## Syntax  
   
-```  
+```dax
 GENERATE(<table1>, <table2>)  
-```  
+```
   
 #### Parameters  
 table1  
@@ -54,7 +55,7 @@ In the following example the user wants a summary table of the sales by Region a
   
 The following code produces the above table:  
   
-```  
+```dax
 GENERATE(  
 SUMMARIZE(SalesTerritory, SalesTerritory[SalesTerritoryGroup])  
 ,SUMMARIZE(ProductCategory   
@@ -62,7 +63,7 @@ SUMMARIZE(SalesTerritory, SalesTerritory[SalesTerritoryGroup])
 , "Reseller Sales", SUMX(RELATEDTABLE(ResellerSales_USD), ResellerSales_USD[SalesAmount_USD])  
 )  
 )  
-```  
+```
   
 1.  The first SUMMARIZE statement, `SUMMARIZE(SalesTerritory, SalesTerritory[SalesTerritoryGroup])`, produces a table of territory groups, where each row is a territory group, as shown below:  
   

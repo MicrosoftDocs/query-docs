@@ -1,6 +1,7 @@
 ---
 title: "SUMMARIZECOLUMNS Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -14,9 +15,9 @@ Returns a summary table over a set of groups.
   
 ## Syntax  
   
-```  
+```dax
 SUMMARIZECOLUMNS( <groupBy_columnName> [, < groupBy_columnName >]…, [<filterTable>]…[, <name>, <expression>]…)  
-```  
+```
   
 #### Parameters  
   

@@ -1,7 +1,8 @@
 ---
 title: "Power Query M Reference | Microsoft Docs"
-ms.date: 4/16/2018
-ms.prod: power-query
+ms.date: 10/18/2018
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,11 +15,14 @@ The Power Query M formula language is optimized for building highly flexible dat
 
 ## Sections and articles in this reference
 
- * [Power Query M language specification](power-query-m-language-specification.md)
  
  * [Power Query M function reference](power-query-m-function-reference.md)
 
  * [Quick tour](quick-tour-of-the-power-query-m-formula-language.md)
+ 
+ * [Power Query M language specification](power-query-m-language-specification.md)
+ 
+ * [Power Query M type system](power-query-m-type-system.md)
  
  * [Expressions, values, and let expression](expressions-values-and-let-expression.md)
  

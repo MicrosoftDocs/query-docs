@@ -1,7 +1,8 @@
 ---
 title: "Record.RemoveFields | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a record that removes all the fields specified in a list. If the field specified does not exist, an exception is thrown.  
   
-```  
+## Syntax
+
+<pre>
 Record.RemoveFields(record as record, fields as any, optional missingField as nullable number) as record  
-```  
+</pre>
   
 ## Arguments  
   
@@ -28,17 +31,15 @@ Record.RemoveFields(record as record, fields as any, optional missingField as nu
   
 ### MissingField enum  
   
-```  
-MissingField.Error = 0;  
+-   `MissingField.Error = 0;`  
   
-MissingField.Ignore = 1;  
+-   `MissingField.Ignore = 1;`  
   
-MissingField.UseNull = 2;  
-```  
+-   `MissingField.UseNull = 2;`  
   
 ## Examples  
   
-```  
+```powerquery-m
 Record.RemoveFields([CustomerID=1, Item = "Fishing rod", Price=18.00] , "Price")  
   
 equals [CustomerID=1, Item="Fishing rod"]  

@@ -1,7 +1,8 @@
 ---
 title: "Text.Replace | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Replaces all occurrences of a substring with a new text value.  
   
-```  
+## Syntax
+
+<pre>
 Text.Replace (text as nullable text, old as text, new as text) as nullable text  
-```  
+</pre>
   
 ## Arguments  
   
@@ -28,6 +31,6 @@ Text.Replace (text as nullable text, old as text, new as text) as nullable text
   
 ## Example  
   
-```  
+```powerquery-m
 Text.Replace("Thisisanorange", "orange", "apple") equals "Thisisanapple"  
 ```  

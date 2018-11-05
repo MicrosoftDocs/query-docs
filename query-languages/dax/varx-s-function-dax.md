@@ -1,6 +1,7 @@
 ---
 title: "VARX.S Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the variance of a sample population.
   
 ## Syntax  
   
-```  
+```dax
 VARX.S(<table>, <expression>)  
-```  
+```
   
 #### Parameters  
 table  
@@ -45,11 +46,11 @@ A number that represents the variance of a sample population.
   
 4.  An error is returned if *columnName* contains less than 2 non-blank rows.  
   
-This DAX function may return different results when used in a model that is deployed and then queried in DirectQuery mode. For more information about semantic differences in DirectQuery mode, see  [http://go.microsoft.com/fwlink/?LinkId=219171](http://go.microsoft.com/fwlink/?LinkId=219171).  
+This DAX function may return different results when used in a model that is deployed and then queried in DirectQuery mode. For more information about semantic differences in DirectQuery mode, see  [https://go.microsoft.com/fwlink/?LinkId=219171](https://go.microsoft.com/fwlink/?LinkId=219171).  
   
 ## Example  
 The following example shows the formula for a calculated column that estimates the variance of the unit price per product for a sample population, when the formula is used in the Product table.  
   
-```  
+```dax
 =VARX.S(InternetSales_USD, InternetSales_USD[UnitPrice_USD] – (InternetSales_USD[DiscountAmount_USD]/InternetSales_USD[OrderQuantity]))  
-```  
+```

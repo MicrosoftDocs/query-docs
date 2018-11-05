@@ -1,7 +1,8 @@
 ---
 title: "Record.ToTable | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a table of records containing field names and values from an input record.  
   
-```  
+## Syntax
+
+<pre>
 Record.ToTable(record as record) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -30,7 +33,7 @@ Record.ToTable(record as record) as table
   
 ## Example  
   
-```  
+```powerquery-m
 Record.ToTable([OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0] )  
   
 equals  

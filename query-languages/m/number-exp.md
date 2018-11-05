@@ -1,7 +1,8 @@
 ---
 title: "Number.Exp | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a number representing *e* raised to a power.  
   
-```  
+## Syntax
+
+<pre>
 Number.Exp(number as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,10 +29,10 @@ Number.Exp(number as nullable number) as nullable number
   
 ## Examples  
   
-```  
+```powerquery-m
 Number.Exp(0) equals 1  
 ```  
   
-```  
+```powerquery-m 
 Number.Exp(3) equals 20.085536923187668  
 ```  

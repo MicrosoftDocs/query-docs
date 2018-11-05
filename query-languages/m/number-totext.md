@@ -1,7 +1,8 @@
 ---
 title: "Number.ToText | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a text value from a number value.  
   
-```  
+## Syntax
+
+<pre>
 Number.ToText(number as number, optional format as nullable text, optional culture as nullable text) as nullable text  
-```  
+</pre>
   
 ## Arguments  
   
@@ -24,7 +27,7 @@ Number.ToText(number as number, optional format as nullable text, optional cultu
 |------------|---------------|  
 |number|Number value to convert to text.|  
 |optional format|An optional text value used to format common numeric values.|  
-|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](http://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
+|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
   
 ## <a name="__toc360788713"></a>Format Settings  
   
@@ -42,7 +45,7 @@ Number.ToText(number as number, optional format as nullable text, optional cultu
   
 Examples  
   
-```  
+```powerquery-m
 Number.ToText(10, "D", "") equals 10  
   
 Number.ToText(10, "E", "") equals 1.000000E+001  

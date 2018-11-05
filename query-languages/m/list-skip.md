@@ -1,7 +1,8 @@
 ---
 title: "List.Skip | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Skips the first item of the list.  Given an empty list, it returns an empty list. This function takes an optional parameter countOrCondition to support skipping multiple values.  
   
-```  
+## Syntax
+
+<pre>
 List.Skip(list as list, optional countOrCondition as any) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -35,30 +38,30 @@ List.Skip(list as list, optional countOrCondition as any) as list
   
 ## Examples  
   
-```  
+```powerquery-m
 List.Skip({3, 4, 5, -1, 7, 8, 2}) equals {4, 5, -1, 7, 8, 2}  
 ```  
   
-```  
+```powerquery-m
 List.Skip({}) equals {}  
 ```  
   
-```  
+```powerquery-m
 List.Skip({3, 4, 5, -1, 7, 8, 2}, 5) equals {8, 2}  
 ```  
   
-```  
+```powerquery-m
 List.Skip({3, 4, 5}, 5) equals {}  
 ```  
   
-```  
+```powerquery-m
 List.Skip({3, 4, 5, -1, 7, 8, 2}, each _ > 0) equals {-1, 7, 8, 2}  
 ```  
   
-```  
+```powerquery-m
 List.Skip({3, 4, 5}, each _ > 0) equals {}  
 ```  
   
-```  
+```powerquery-m
 List.Skip({3, 4, 5, -1, 7, 8, 2}, null) equals {4, 5, -1, 7, 8, 2}  
 ```  

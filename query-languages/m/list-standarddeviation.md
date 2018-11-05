@@ -1,7 +1,8 @@
 ---
 title: "List.StandardDeviation | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the standard deviation from a list of values.  List.StandardDeviation performs a sample based estimate. The result is a number for numbers, and a duration for DateTimes and Durations.  
   
-```  
+## Syntax
+
+<pre>
 List.StandardDeviation(list as list) as any  
-```  
+</pre>
   
 ## Arguments  
   
@@ -30,6 +33,6 @@ List.StandardDeviation(list as list) as any
   
 ## Example  
   
-```  
+```powerquery-m
 List.StandardDeviation({1..5}) equals 1.5811388300841898  
 ```  

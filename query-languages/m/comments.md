@@ -1,7 +1,8 @@
 ---
 title: "Comments | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -13,7 +14,7 @@ You can add comments to your code with single-line comments (//) or multi-line c
   
 **Example - Single-line comment**  
   
-```  
+```powerquery-m  
 let  
    \/\/Convert to proper case  
     Source \= Text.Proper("hello world")  
@@ -22,7 +23,7 @@ in
 ```  
 **Example - Multi-line comment**  
   
-```  
+```powerquery-m  
 \/\* Capitalize each word in the Item column in the Orders table. Text.Proper  
 is evaluated for each Item in each table row. \*\/  
 let  

@@ -1,6 +1,7 @@
 ---
 title: "COMBIN Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the number of combinations for a given number of items. Use COMBIN to de
   
 ## Syntax  
   
-```  
+```dax
 COMBIN(number, number_chosen)  
-```  
+```
   
 #### Parameters  
   

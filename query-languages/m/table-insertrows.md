@@ -1,7 +1,8 @@
 ---
 title: "Table.InsertRows | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a table with the list of rows inserted into the table at an index. Each row to insert must match the row type of the table..  
   
-```  
+## Syntax
+
+<pre> 
 Table.InsertRows(table as table, offset as number, rows as list) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -32,7 +35,7 @@ Table.InsertRows(table as table, offset as number, rows as list) as table
   
 ## Example  
   
-```  
+```powerquery-m
 Table.InsertRows(Table.FromRecords({  
   
     [CustomerID = 1, Name = "Bob", Phone = "123-4567"],  

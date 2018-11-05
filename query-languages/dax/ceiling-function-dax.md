@@ -1,6 +1,7 @@
 ---
 title: "CEILING Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Rounds a number up, to the nearest integer or to the nearest multiple of signifi
   
 ## Syntax  
   
-```  
+```dax
 CEILING(<number>, <significance>)  
-```  
+```
   
 #### Parameters  
   
@@ -47,16 +48,16 @@ The return type is usually of the same type of the significant argument, with th
 ## Example  
 The following formula returns 4.45. This might be useful if you want to avoid using smaller units in your pricing. If an existing product is priced at $4.42, you can use CEILING to round prices up to the nearest unit of five cents.  
   
-```  
+```dax
 =CEILING(4.42,0.05)  
-```  
+```
   
 ## Example  
 The following formula returns similar results as the previous example, but uses numeric values stored in the column, **ProductPrice**.  
   
-```  
+```dax
 =CEILING([ProductPrice],0.05)  
-```  
+```
   
 ## See Also  
 [Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  

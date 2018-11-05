@@ -1,6 +1,7 @@
 ---
 title: "T.DIST Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 8/14/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -14,9 +15,9 @@ Returns the Student's left-tailed t-distribution.
   
 ## Syntax  
   
-```  
+```dax
 T.DIST(X,Deg_freedom,Cumulative)
-```  
+```
   
 #### Parameters  
   
@@ -31,9 +32,9 @@ The Student's left-tailed t-distribution.
   
 ## Example  
   
-```  
+```dax
 EVALUATE { T.DIST(60, 1, TRUE) } 
-```  
+```dax
 Returns
 
 |[Value]  |

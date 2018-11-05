@@ -1,6 +1,7 @@
 ---
 title: "SAMPLE Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns a sample of N rows from the specified table.
   
 ## Syntax  
   
-```  
+```dax
 SAMPLE(<n_value>, <table>, <orderBy_expression>, [<order>[, <orderBy_expression>, [<order>]]…])  
-```  
+```
   
 #### Parameters  
 n_value  

@@ -1,7 +1,8 @@
 ---
 title: "Record.AddField | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Adds a field from a field name and value.  
   
-```  
+## Syntax
+
+<pre>
 Record.AddField (record as record, fieldName as text, value as any,optional delayed as nullable logical) as record  
-```  
+</pre>
   
 ## Arguments  
   
@@ -29,11 +32,11 @@ Record.AddField (record as record, fieldName as text, value as any,optional dela
   
 ## Example  
   
-```  
-Record.AddField( [CustomerID = 1, Name = "Bob", Phone = "123-4567"] , "Address", "123 Main St.")  
+```powerquery-m
+Record.AddField( [CustomerID = 1, Name = "Bob", Phone = "123-4567"] , "Address", "123 Main St.")
 ```  
   
-```  
+```powerquery-m
 equals [CustomerID=1, Name= "Bob", Phone="123-4567", Address="123 Main St."]  
 ```  
   

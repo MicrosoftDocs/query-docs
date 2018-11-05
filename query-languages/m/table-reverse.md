@@ -1,7 +1,8 @@
 ---
 title: "Table.Reverse | Microsoft Docs"
 ms.date: 5/22/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -10,15 +11,21 @@ manager: kfile
 ---
 # Table.Reverse
 
-<code>Text.Reverse(<b>text</b> as nullable text) as nullable text</code>
+## Syntax
+
+<pre>
+Text.Reverse(<b>text</b> as nullable text) as nullable text
+</pre>
 
 ## About
-Reverses the provided <code>text</code>.
+Reverses the provided `text`.
 
 ## Example 1
 Reverse the text "123".
 
-<code>Text.Reverse("123")</code>
+```powerquery-m
+Text.Reverse("123")
+```
 
-<code>"321"</code>
+`"321"`
 

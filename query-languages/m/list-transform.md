@@ -1,7 +1,8 @@
 ---
 title: "List.Transform | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Performs the function on each item in the list and returns the new list.  
   
-```  
+## Syntax
+
+<pre>
 List.Transform(list as list, transform as function)  as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,6 +30,6 @@ List.Transform(list as list, transform as function)  as list
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 List.Transform({1, 2}, each _ + 1) equals { 2, 3 }  
 ```  

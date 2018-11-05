@@ -1,7 +1,8 @@
 ---
 title: "Xml.Tables | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the contents of an XML document as a nested collection of flattened tables.  
   
-```  
+## Syntax
+
+<pre>
 Xml.Tables(contents as any, optional options as nullable record, optional encoding as nullable number) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -34,7 +37,7 @@ Xml.Tables(contents as any, optional options as nullable record, optional encodi
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 Xml.Tables("<books>  
   
     <book>  

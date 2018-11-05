@@ -1,7 +1,8 @@
 ---
 title: "Number.Sign | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns 1 for positive numbers, -1 for negative numbers or 0 for zero.  
   
-```  
+## Syntax
+
+<pre>
 Number.Sign(number as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,10 +29,10 @@ Number.Sign(number as nullable number) as nullable number
   
 ## Examples  
   
-```  
+```powerquery-m
 Number.Sign(-1) equals -1  
 ```  
   
-```  
+```powerquery-m
 Number.Sign(1) equals 1  
 ```  

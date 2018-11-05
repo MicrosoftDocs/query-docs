@@ -1,7 +1,8 @@
 ---
 title: "DateTimeZone.ZoneHours | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a time zone hour value from a DateTime value.  
   
-```  
+## Syntax
+
+<pre>
 DateTimeZone.ZoneHours(dateTime as datetimezone) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +29,6 @@ DateTimeZone.ZoneHours(dateTime as datetimezone) as nullable number
   
 ## Example  
   
-```  
+```powerquery-m
 DateTimeZone.ZoneHours(DateTime.FromText("12:56:20-08:00")) equals -8  
 ```  

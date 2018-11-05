@@ -1,7 +1,8 @@
 ---
 title: "DateTimeZone.From | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,16 +15,18 @@ manager: kfile
 ## About  
 Returns a datetimezone value from a value.  
   
-```  
+## Syntax
+
+<pre>
 DateTimeZone.From(value as any, optional culture as nullable text) as nullable datetimezone  
-```  
+</pre>
   
 ## Arguments  
   
 |Argument|Description|  
 |------------|---------------|  
 |value|Value to convert.|  
-|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](http://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
+|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
   
 ### Type to convert  
   
@@ -43,5 +46,8 @@ DateTimeZone.From(value as any, optional culture as nullable text) as nullable d
 -   If a value is  datetimezone , the same value is returned.  
   
 ## Example  
-`DateTimeZone.From("2020-10-30T01:30:00-08:00") equals #datetimezone(2020, 10, 30, 01, 30, 00, -8, 00)`  
+
+```powerquery-m
+DateTimeZone.From("2020-10-30T01:30:00-08:00") equals #datetimezone(2020, 10, 30, 01, 30, 00, -8, 00)
+``` 
   

@@ -1,6 +1,7 @@
 ---
 title: "DAX Operator Reference | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -80,29 +81,29 @@ If you combine several operators in a single formula, the operations are ordered
 ### Using Parentheses to Control Calculation Order  
 To change the order of evaluation, you should enclose in parentheses that part of the formula that must be calculated first. For example, the following formula produces 11 because multiplication is calculated before addition. The formula multiplies 2 by 3, and then adds 5 to the result.  
   
-```  
+```dax
 =5+2*3  
-```  
+```dax
 In contrast, if you use parentheses to change the syntax, the order is changed so that 5 and 2 are added together, and the result multiplied by 3 to produce 21.  
   
-```  
+```dax
 =(5+2)*3  
-```  
+```dax
 In the following example, the parentheses around the first part of the formula force the calculation to evaluate the expression `(3 + 0.25)` first and then divide the result by the result of the expression, (`3 - 0.25)`.  
   
-```  
+```dax
 =(3 + 0.25)/(3 - 0.25)  
-```  
+```dax
 In the following example, the exponentiation operator is applied first, according to the rules of precedence for operators, and then the sign operator is applied. The result for this expression is -4.  
   
-```  
+```dax
 =-2^2  
-```  
+```dax
 To ensure that the sign operator is applied to the numeric value first, you can use parentheses to control operators, as shown in the following example. The result for this expression is 4.  
   
-```  
+```dax
 = (-2)^2  
-```  
+```
   
 ## Compatibility Notes  
 DAX easily handles and compares various data types, much like Microsoft Excel. However, the underlying computation engine is based on SQL Server Analysis Services and provides additional advanced features of a relational data store, including richer support for date and time types. Therefore, in some cases the results of calculations or the behavior of functions may not be the same as in Excel. Moreover, DAX supports more data types than does Excel. This section describes the key differences.  

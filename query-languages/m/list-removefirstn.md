@@ -1,7 +1,8 @@
 ---
 title: "List.RemoveFirstN | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a list with the specified number of elements removed from the list starting at the first element. The number of elements removed depends on the optional countOrCondition parameter.  
   
-```  
+## Syntax
+
+<pre>
 List.RemoveFirstN( table as table, optional countOrCondition as any) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -35,7 +38,7 @@ List.RemoveFirstN( table as table, optional countOrCondition as any) as table
   
 ## Examples  
   
-```  
+```powerquery-m
 List.RemoveFirstN  
   
     (  

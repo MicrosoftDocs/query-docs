@@ -1,6 +1,7 @@
 ---
 title: "UPPER Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Converts a text string to all uppercase letters
   
 ## Syntax  
   
-```  
+```dax
 UPPER (<text>)  
-```  
+```
   
 #### Parameters  
   
@@ -29,9 +30,9 @@ Same text, in uppercase.
 ## Example  
 The following formula converts the string in the column, [ProductCode], to all uppercase. Non-alphabetic characters are not affected.  
   
-```  
+```dax
 =UPPER(['New Products'[Product Code])  
-```  
+```
   
 ## See Also  
 [Text Functions &#40;DAX&#41;](text-functions-dax.md)  

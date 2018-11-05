@@ -1,7 +1,8 @@
 ---
 title: "Record.FieldCount | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the number of fields in a record.  
   
-```  
+## Syntax
+
+<pre>
 Record.FieldCount(record as record) as number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +29,6 @@ Record.FieldCount(record as record) as number
   
 ## Example  
   
-```  
+```powerquery-m
 Record.FieldCount([A=1, B=2]) equals 2  
 ```  

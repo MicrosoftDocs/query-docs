@@ -1,7 +1,8 @@
 ---
 title: "List.Modes | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns all items that appear with the same maximum frequency.  
   
-```  
+## Syntax
+
+<pre>
 List.Modes(list as list, optional equationCriteria as any)as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,6 +34,6 @@ List.Modes(list as list, optional equationCriteria as any)as list
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 List.Modes({"A", 1, 4, 5, 2, "B", 3, 5, 5, "A", 4, 4, "A"}) equals {"A", 4, 5}  
 ```  

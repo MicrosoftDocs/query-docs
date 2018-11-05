@@ -1,7 +1,8 @@
 ---
 title: "Table.ExpandTableColumn | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Expands a column of records or a column of tables into multiple columns in the containing table.  
   
-```  
+## Syntax
+
+<pre>
 Table.ExpandTableColumn(table as table, column as text, columnNames as list, optional newColumnNames as nullable list) as table  
-```  
+</pre>
   
 ## Arguments  
   

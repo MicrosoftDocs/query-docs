@@ -1,7 +1,8 @@
 ---
 title: "Table.SelectRowsWithErrors | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a table with only the rows from table that contain an error in at least one of the cells in a row.  
   
-```  
+## Syntax
+
+<pre>
 Table.SelectRowsWithErrors(table as table, optional columns as nullable list) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,7 +34,7 @@ Table.SelectRowsWithErrors(table as table, optional columns as nullable list) as
   
 ## Example  
   
-```  
+```powerquery-m 
 Table.SelectRowsWithErrors(Table.FromRecords(  
   
 {  

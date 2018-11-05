@@ -1,7 +1,8 @@
 ---
 title: "Number.RandomBetween | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a random number between the two given number values.  
   
-```  
+## Syntax
+
+<pre>
 Number.RandomBetween(bottom as number, top as number) as number  
-```  
+</pre>
   
 ## Arguments  
   

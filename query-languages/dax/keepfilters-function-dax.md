@@ -1,6 +1,7 @@
 ---
 title: "KEEPFILTERS Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Modifies how filters are applied while evaluating a CALCULATE or CALCULATETABLE 
   
 ## Syntax  
   
-```  
+```dax
 KEEPFILTERS(<expression>)  
-```  
+```
   
 #### Parameters  
   
@@ -48,7 +49,7 @@ The fourth expression calculates Internet Sales for Washington and Oregon, while
   
 The next expression calculates Internet Sales for Washington and Oregon but uses KEEPFILTERS; the filter for Washington and British Columbia is part of the prior context.  
   
-```  
+```dax
 EVALUATE ROW(  
   "$$ in WA"  
     , CALCULATE('Internet Sales'[Internet Total Sales]  
@@ -84,7 +85,7 @@ EVALUATE ROW(
             || 'Geography'[State Province Code]="BC"  
       )  
 )  
-```  
+```dax
 When this expression is evaluated against the sample database AdventureWorks DW Tabular 2012, the following results are obtained.  
   
 |Column|Value|  

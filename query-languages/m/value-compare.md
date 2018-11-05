@@ -1,7 +1,8 @@
 ---
 title: "Value.Compare | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns 1, 0, or -1 based on **value1** being greater than, equal to, or less than the **value2**. An optional comparer function can be provided.  
   
-```  
+## Syntax
+
+<pre>
 Value.Compare(value1 as any, value2 as any, optional precision as nullable number) as  
-```  
+</pre>
   
 ## Arguments  
   

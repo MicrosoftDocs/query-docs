@@ -1,7 +1,8 @@
 ---
 title: "List.Mode | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns an item that appears most commonly in a list.  
   
-```  
+## Syntax
+
+<pre>
 List.Mode(list as list, optional equationCriteria as any)as any  
-```  
+</pre>
   
 ## Arguments  
   
@@ -33,6 +36,6 @@ List.Mode(list as list, optional equationCriteria as any)as any
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 List.Mode({"A", 1, 4, 5, 2, "B", 3, 5, 5, 4, 4}) equals 5  
 ```  

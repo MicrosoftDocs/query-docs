@@ -1,6 +1,7 @@
 ---
 title: "NORM.S.INV Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 8/14/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -14,9 +15,9 @@ Returns the inverse of the standard normal cumulative distribution. The distribu
   
 ## Syntax  
   
-```  
+```dax
 NORM.S.INV(Probability)
-```  
+```
   
 #### Parameters  
   
@@ -29,9 +30,9 @@ The inverse of the standard normal cumulative distribution. The distribution has
   
 ## Example  
   
-```  
+```dax
 EVALUATE { NORM.S.INV(0.908789) }
-```  
+```dax
 Returns
 
 |[Value]  |

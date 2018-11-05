@@ -1,7 +1,8 @@
 ---
 title: "Number.Ln | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the natural logarithm of a number.  
   
-```  
+## Syntax
+
+<pre>
 Number.Ln(number as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +29,6 @@ Number.Ln(number as nullable number) as nullable number
   
 ## Example  
   
-```  
+```powerquery-m 
 Number.Ln(1) equals 0  
 ```  

@@ -1,7 +1,8 @@
 ---
 title: "Number.BitwiseShiftLeft | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the result of a bitwise shift left operation on the operands.  
   
-```  
+## Syntax
+
+<pre>
 Number.BitwiseShiftLeft(x as number, y as number) as number  
-```  
+</pre>
   
 ## Arguments  
   

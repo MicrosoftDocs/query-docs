@@ -1,7 +1,8 @@
 ---
 title: "Table.Column | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the values from a column in a table.  
   
-```  
+## Syntax
+
+<pre>
 Table.Column(table as table, column as text) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,7 +34,7 @@ Table.Column(table as table, column as text) as list
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 Table.Column(Table.FromRecords(  
   
 {  

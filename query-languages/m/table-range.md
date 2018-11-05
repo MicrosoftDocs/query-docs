@@ -1,7 +1,8 @@
 ---
 title: "Table.Range | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the specified number of rows from a table starting at an offset.  
   
-```  
+## Syntax
+
+<pre>
 Table.Range( table as table, offset as number, optional count as nullable number) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -32,7 +35,7 @@ Table.Range( table as table, offset as number, optional count as nullable number
   
 ## Example  
   
-```  
+```powerquery-m 
 Table.Range(Table.FromRecords({  
   
     [CustomerID = 1, Name = "Bob", Phone = "123-4567"],  

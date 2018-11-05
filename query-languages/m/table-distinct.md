@@ -1,7 +1,8 @@
 ---
 title: "Table.Distinct | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Removes duplicate rows from a table, ensuring that all remaining rows are distinct.  
   
-```  
+## Syntax
+
+<pre>
 Table.Distinct(table as table, optional equationCriteria as any) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,7 +30,7 @@ Table.Distinct(table as table, optional equationCriteria as any) as table
   
 ## Examples  
   
-```  
+```powerquery-m
 Table.Distinct(  
   
     Table.FromRecords(  

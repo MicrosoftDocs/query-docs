@@ -1,7 +1,8 @@
 ---
 title: "Text.Length | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the number of characters in a text value.  
   
-```  
+## Syntax
+
+<pre>
 Text.Length(text as nullable text) as nullable number  
-```  
+</pre>
   
 ## <a name="__toc360788812"></a>Arguments  
   
@@ -26,7 +29,7 @@ Text.Length(text as nullable text) as nullable number
   
 ## Example  
   
-```  
+```powerquery-m
 Text.Length("abc") equals 3  
 ```  
   
@@ -35,7 +38,7 @@ Text comparisons are performed by obtaining a comparer from **Comparer.FromCultu
   
 ## Example  
   
-```  
+```powerquery-m
 let  
 comparer = Comparer.FromCulture("en-US", false)  
 in  

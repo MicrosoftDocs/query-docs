@@ -1,7 +1,8 @@
 ---
 title: "Date.FromText | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -13,17 +14,19 @@ manager: kfile
   
 ## About  
 Returns a Date value from a set of date formats and culture value, following ISO 8601 format standard.  
-  
-```  
+
+## Syntax
+
+<pre>
 Date.FromText(date as nullable text, optional culture as nullable text) as nullable date  
-```  
+</pre>
   
 ## Arguments  
   
 |Argument|Description|  
 |------------|---------------|  
 |date|A string value to transorm.|  
-|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](http://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
+|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
   
 ### Supported formats  
   
@@ -47,6 +50,6 @@ Date.FromText(date as nullable text, optional culture as nullable text) as nulla
   
 ## Example  
   
-```  
+```powerquery-m 
 Date.FromText("2010-02-19") equals Date,yyyy-MM-dd  
 ```  

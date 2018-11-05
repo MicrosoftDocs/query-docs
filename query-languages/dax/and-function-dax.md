@@ -1,6 +1,7 @@
 ---
 title: "AND Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Checks whether both arguments are TRUE, and returns TRUE if both arguments are T
   
 ## Syntax  
   
-```  
+```dax
 AND(<logical1>,<logical2>)  
-```  
+```
   
 #### Parameters  
   
@@ -32,9 +33,9 @@ The **AND** function in DAX accepts only two (2) arguments. If you need to perfo
 ## Example  
 The following formula shows the syntax of the AND function.  
   
-```  
+```dax
 =IF(AND(10 > 9, -10 < -1), "All true", "One or more false"  
-```  
+```dax
 Because both conditions, passed as arguments, to the AND function are true, the formula returns "All True".  
   
 ## Example  
@@ -83,7 +84,7 @@ The following sample uses the AND function with nested formulas to compare two s
 ||||||||  
 |Grand Total|||||||  
   
-```  
+```dax
 = IF( AND(  SUM( 'InternetSales_USD'[SalesAmount_USD])  
            >SUM('ResellerSales_USD'[SalesAmount_USD])  
           , CALCULATE(SUM('InternetSales_USD'[SalesAmount_USD]), PREVIOUSYEAR('DateTime'[DateKey] ))   
@@ -92,7 +93,7 @@ The following sample uses the AND function with nested formulas to compare two s
      , "Internet Hit"  
      , ""  
      )  
-```  
+```
   
 ## See Also  
 [Logical Functions &#40;DAX&#41;](logical-functions-dax.md)  

@@ -1,7 +1,8 @@
 ---
 title: "Duration.FromText | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a Duration value from a text value.  
   
-```  
+## Syntax
+
+<pre>
 Duration.FromText(duration as nullable text) as nullable duration  
-```  
+</pre>
   
 ## Arguments  
   
@@ -44,10 +47,10 @@ Duration.FromText(duration as nullable text) as nullable duration
   
 ## Examples  
   
-```  
+```powerquery-m
 Duration.FromText("15:35") equals 15 hours, 35 minutes  
 ```  
   
-```  
+```powerquery-m
 Duration.FromText("2.15:00") equals 2 days, 15 hours  
 ```  

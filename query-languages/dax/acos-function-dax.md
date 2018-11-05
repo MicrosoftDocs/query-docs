@@ -1,6 +1,7 @@
 ---
 title: "ACOS Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the arccosine, or inverse cosine, of a number. The arccosine is the angl
   
 ## Syntax  
   
-```  
+```dax
 ACOS(number)  
-```  
+```
   
 #### Parameters  
   

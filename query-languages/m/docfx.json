@@ -35,8 +35,9 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/m-language/breadcrumb/toc.json",
-      "extendBreadcrumb": true
+      "breadcrumb_path": "/powerquery-m/breadcrumb/toc.json",
+      "extendBreadcrumb": true,
+      "titleSuffix": "PowerQuery M"
     },
     "fileMetadata": {},
     "template": [],

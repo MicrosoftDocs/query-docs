@@ -1,7 +1,8 @@
 ---
 title: "DateTimeZone.FromFileTime | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a DateTimeZone from a number value.  
   
-```  
+## Syntax
+
+<pre>
 DateTimeZone.FromFileTime(fileTime as nullable number) as nullable datetimezone  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +29,6 @@ DateTimeZone.FromFileTime(fileTime as nullable number) as nullable datetimezone
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 DateTimeZone.FromFileTime(12987640252984224) equals #datetimezone(2012, 7, 24, 14, 50, 52.9842245, -7, 0)  
 ```  

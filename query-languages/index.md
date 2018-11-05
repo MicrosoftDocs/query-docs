@@ -1,22 +1,13 @@
 ---
 title: "Query and data modeling languages | Microsoft Docs"
-ms.custom: ""
 ms.date: "2/5/2018"
 ms.prod: "azure"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "analysis-services"
-  - "daxlang"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-helpviewer_keywords: 
-  - "DAX, Table queries"
-ms.assetid: c6b486ec-d258-44dd-a40e-b2b48361855a
+ms.reviewer: owend
+ms.topic: reference
 caps.latest.revision: 13
-author: "Minewiskan"
-ms.author: "owend"
-manager: "kfile"
+author: Minewiskan
+ms.author: owend
+manager: kfile
 ---
 
 # Query and data modeling languages

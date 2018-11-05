@@ -1,7 +1,8 @@
 ---
 title: "Record.FromList | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a record from a list of field values and a set of field names.  
   
-```  
+## Syntax
+
+<pre>
 Record.FromList(list as list, fields as any) as record  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,7 +34,7 @@ Record.FromList(list as list, fields as any) as record
   
 ## Examples  
   
-```  
+```powerquery-m
 Record.FromList  
   
 (  

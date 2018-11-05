@@ -1,6 +1,7 @@
 ---
 title: "EARLIER Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -17,9 +18,9 @@ EARLIER is mostly used in the context of calculated columns.
   
 ## Syntax  
   
-```  
+```dax
 EARLIER(<column>, <number>)  
-```  
+```
   
 #### Parameters  
   
@@ -94,9 +95,9 @@ One way to obtain a rank value for a given value in a row is to count the number
   
 A new calculated column, **SubCategorySalesRanking**, is created by using the following formula.  
   
-```  
+```dax
 = COUNTROWS(FILTER(ProductSubcategory, EARLIER(ProductSubcategory[TotalSubcategorySales])<ProductSubcategory[TotalSubcategorySales]))+1  
-```  
+```dax
 The following steps describe the method of calculation in more detail.  
   
 1.  The **EARLIER** function gets the value of *TotalSubcategorySales* for the current row in the table. In this case, because the process is starting, it is the first row in the table  

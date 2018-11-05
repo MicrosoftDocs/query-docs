@@ -1,6 +1,7 @@
 ---
 title: "DAY Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the day of the month, a number from 1 to 31.
   
 ## Syntax  
   
-```  
+```dax
 DAY(<date>)  
-```  
+```
   
 #### Parameters  
   
@@ -40,9 +41,9 @@ The following formula returns the day from the date in the column, [Birthdate].
   
 ### Code  
   
-```  
+```dax
 =DAY([Birthdate])  
-```  
+```
   
 ## Example: Getting the Day from a String Date  
   
@@ -51,10 +52,10 @@ The following formulas return the day, 4, using dates that have been supplied as
   
 ### Code  
   
-```  
+```dax
 =DAY("3-4-1007")  
 =DAY("March 4 2007")  
-```  
+```
   
 ## Example: Using a Day Value as a Condition  
   
@@ -63,9 +64,9 @@ The following expression returns the day that each sales order was placed, and f
   
 ### Code  
   
-```  
+```dax
 =IF( DAY([SalesDate])=10,"promotion","")  
-```  
+```
   
 ## See Also  
 [Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  

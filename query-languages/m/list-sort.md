@@ -1,7 +1,8 @@
 ---
 title: "List.Sort | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a sorted list using comparison criterion.  
   
-```  
+## Syntax
+
+<pre>
 List.Sort(list as list, optional comparisonCriteria as any ) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -37,26 +40,26 @@ List.Sort(list as list, optional comparisonCriteria as any ) as list
   
 ## Examples  
   
-```  
+```powerquery-m
 List.Sort({2, 1}) equals {1, 2}  
 ```  
   
-```  
+```powerquery-m
 List.Sort({1, 2}, Order.Descending) equals {2, 1}  
 ```  
   
-```  
+```powerquery-m
 List.Sort({1, 2}, Order.Ascending) equals {1, 2}  
 ```  
   
-```  
+```powerquery-m
 List.Sort({1, 2}, each 1/_) equals{2, 1}  
 ```  
   
-```  
+```powerquery-m
 List.Sort({2, 1}, {each 1/_, Order.Descending}) equals {1, 2}  
 ```  
   
-```  
+```powerquery-m
 List.Sort({1, 2}, (x, y) => Value.Compare(1/x, 1/y)) equals {2, 1}  
 ```  

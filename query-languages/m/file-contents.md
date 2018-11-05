@@ -1,7 +1,8 @@
 ---
 title: "File.Contents | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the binary contents of the file located at a path.  
   
-```  
+## Syntax
+
+<pre>
 File.Contents(path as text) as binary  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +29,6 @@ File.Contents(path as text) as binary
   
 ## Example  
   
-```  
+```powerquery-m
 File.Contents("c:\users\myuser\Desktop\file.txt")  
 ```  

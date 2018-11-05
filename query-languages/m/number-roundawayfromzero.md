@@ -1,7 +1,8 @@
 ---
 title: "Number.RoundAwayFromZero | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns Number.RoundUp(value) when value &gt;= 0 and Number.RoundDown(value) when value &lt; 0.  
   
-```  
+## Syntax
+
+<pre>
 Number.RoundAwayFromZero(value as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,10 +29,10 @@ Number.RoundAwayFromZero(value as nullable number) as nullable number
   
 ## Examples  
   
-```  
+```powerquery-m
 Number.RoundAwayFromZero(-1.2) equals -2  
 ```  
   
-```  
+```powerquery-m
 Number.RoundAwayFromZero(1.2) equals 2  
 ```  

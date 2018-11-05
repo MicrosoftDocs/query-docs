@@ -1,6 +1,7 @@
 ---
 title: "MIN Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,13 +14,13 @@ Returns the smallest numeric value in a column, or between two scalar expression
   
 ## Syntax  
   
-```  
+```dax
 MIN(<column>)  
-```  
+```
 
-```  
+```dax
 MIN(<expression1>, <expression2>)
-```  
+```
 
 #### Parameters  
   
@@ -49,23 +50,23 @@ When comparing expressions, blank is treated as 0 when comparing. That is, Min(1
 ## Example  
 The following example returns the smallest value from the calculated column, ResellerMargin.  
   
-```  
+```dax
 =MIN([ResellerMargin])  
-```  
+```
   
 ## Example  
 The following example returns the smallest value from a column that contains dates and times, TransactionDate. This formula therefore returns the date that is earliest.  
   
-```  
+```dax
 =MIN([TransactionDate])  
-```  
+```
 
 ## Example  
 The following example returns the smallest value from the result of two scalar expressions.  
   
-```  
+```dax
 =Min([TotalSales], [TotalPurchases]) 
-```  
+```
 
   
 ## See Also  

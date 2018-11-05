@@ -1,7 +1,8 @@
 ---
 title: "Table.Unpivot | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Given a list of table columns, transforms those columns into attribute-value pairs.  
   
-```  
+## Syntax
+
+<pre>
 Table.Unpivot(table as table, pivotColumns as list, attributeColumn as text, valueColumn as text) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -33,7 +36,7 @@ Table.Unpivot(table as table, pivotColumns as list, attributeColumn as text, val
   
 ## Examples  
   
-```  
+```powerquery-m
 Table.Unpivot(Table.FromRecords({  
   
     [ key = "key1", attribute1 = 1, attribute2 = null, attribute3 = 3 ]}),  

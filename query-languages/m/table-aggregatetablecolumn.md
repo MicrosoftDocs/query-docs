@@ -1,7 +1,8 @@
 ---
 title: "Table.AggregateTableColumn | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Aggregates tables nested in a specific column into multiple columns containing aggregate values for those tables.  
   
-```  
+## Syntax
+
+<pre>
 Table.AggregateTableColumn(table as table, column as text, aggregations as list) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -28,7 +31,7 @@ Table.AggregateTableColumn(table as table, column as text, aggregations as list)
   
 ## Example  
   
-```  
+```powerquery-m
 Table.AggregateTableColumn(  
   
     Table.FromRecords(  

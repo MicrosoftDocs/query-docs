@@ -1,7 +1,8 @@
 ---
 title: "Record.FromTable | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a record from a table of records containing field names and values.  
   
-```  
+## Syntax
+
+<pre>
 Record.FromTable(list as table) as record  
-```  
+</pre>
   
 ## Arguments  
   
@@ -30,7 +33,7 @@ Record.FromTable(list as table) as record
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 let  
   
     input = Table.FromRows({{"OrderID",1} , {"CustomerID", 1}, {"Item", "Fishing rod"}, {"Price" , 100.00}}, {"Name", "Value"})  

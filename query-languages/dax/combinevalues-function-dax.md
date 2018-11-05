@@ -1,6 +1,7 @@
 ---
 title: "COMBINEVALUES Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.topic: reference
 author: minewiskan
@@ -12,9 +13,9 @@ The COMBINEVALUES function joins two or more text strings into one text string. 
   
 ## Syntax  
   
-```  
+```dax
 COMBINEVALUES(<delimiter>, <expression>, <expression>[, <expression>]…)
-```  
+```
   
 #### Parameters  
   

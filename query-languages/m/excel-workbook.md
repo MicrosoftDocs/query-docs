@@ -1,7 +1,8 @@
 ---
 title: "Excel.Workbook | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -10,7 +11,11 @@ manager: kfile
 ---
 # Excel.Workbook
   
-<code>Excel.Workbook(**workbook** as binary, optional **useHeaders** as nullable logical, optional **delayTypes** as nullable logical) as table </code>
+## Syntax
+
+<pre>
+Excel.Workbook(**workbook** as binary, optional **useHeaders** as nullable logical, optional **delayTypes** as nullable logical) as table
+</pre>
 
 ## About  
 Returns a table representing sheets in the given excel workbook.  
@@ -25,7 +30,7 @@ Returns a table representing sheets in the given excel workbook.
   
 ## Example  
   
-```  
+```powerquery-m
 Excel.Workbook(File.Contents("localExcelFile.xlsx"))  
   
       let  

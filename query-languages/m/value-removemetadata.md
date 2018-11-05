@@ -1,7 +1,8 @@
 ---
 title: "Value.RemoveMetadata | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Removes the metadata on the value and returns the original value.  
   
-```  
+## Syntax
+
+<pre>
 Value.RemoveMetadata(value as any) as any  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -26,6 +29,6 @@ Value.RemoveMetadata(value as any) as any
   
 ## Example  
   
-```  
+```powerquery-m
 Value.RemoveMetadata(1 meta [meta = 1]) equals 1  
 ```  

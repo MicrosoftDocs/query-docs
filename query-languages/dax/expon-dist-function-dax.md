@@ -1,6 +1,7 @@
 ---
 title: "EXPON.DIST Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the exponential distribution. Use EXPON.DIST to model the time between e
   
 ## Syntax  
   
-```  
+```dax
 EXPON.DIST(x,lambda,cumulative)  
-```  
+```
   
 #### Parameters  
   

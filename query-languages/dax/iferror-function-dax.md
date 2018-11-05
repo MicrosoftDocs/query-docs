@@ -1,6 +1,7 @@
 ---
 title: "IFERROR Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Evaluates an expression and returns a specified value if the expression returns 
   
 ## Syntax  
   
-```  
+```dax
 IFERROR(value, value_if_error)  
-```  
+```
   
 #### Parameters  
   
@@ -41,9 +42,9 @@ Note that the values that are returned for A and B must be of the same data type
 ## Example  
 The following example returns 9999 if the expression 25/0 evaluates to an error. If the expression returns a value other than error, that value is passed to the invoking expression.  
   
-```  
+```dax
 =IFERROR(25/0,9999)  
-```  
+```
   
 ## See Also  
 [Logical Functions &#40;DAX&#41;](logical-functions-dax.md)  

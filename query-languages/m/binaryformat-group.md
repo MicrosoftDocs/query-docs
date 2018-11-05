@@ -1,7 +1,8 @@
 ---
 title: "BinaryFormat.Group | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a binary format that reads a group of items.  Each item value is preceded by a unique key value.  The result is a list of item values.  
   
-```  
+## Syntax
+
+<pre>  
 BinaryFormat.Group(binaryFormat as function, group as list, optional extra as nullable function, optional lastKey as any) as function  
-```  
+</pre>
   
 ## Arguments  
   
@@ -60,7 +63,7 @@ The following assumes a key value that is a single byte, with 4 expected items i
   
 -   Key 5 is not part of the group, but appears once with value 55.  The extra function is called with the key value 5, and returns the format corresponding to that value (BinaryFormat.Byte).  The value 55 is read and discarded.  
   
-    ```  
+    ```powerquery-m  
     let      
     b = #binary(      
     {           
@@ -86,7 +89,7 @@ The following assumes a key value that is a single byte, with 4 expected items i
   
 The following example illustrates the item value transform and default item value.   The repeating item with key 1 sums the list of values read using List.Sum.  The optional item with key 2 has a default value of 123 instead of null.  
   
-```  
+```powerquery-m  
 let      
 b = #binary(      
 {           

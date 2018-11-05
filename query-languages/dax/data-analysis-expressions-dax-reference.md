@@ -1,6 +1,7 @@
 ---
 title: "Data Analysis Expressions (DAX) Reference | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 6/11/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -22,7 +23,4 @@ Data Analysis Expressions (DAX) is a library of functions and operators that can
   
 [DAX Parameter-Naming Conventions](dax-parameter-naming-conventions.md) - This topic describes parameter naming conventions in DAX expressions.  
   
-[DAX Queries](dax-queries.md) - This topic describes syntax and parameters for returning table data from a DAX query.  
-  
-[DAX Error Reference](dax-error-reference.md) – This section includes topics for some of the most common errors returned from DAX.  
-  
+[DAX Queries](dax-queries.md) - This topic describes syntax and parameters for returning table data from a DAX query.    

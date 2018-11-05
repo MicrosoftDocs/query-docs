@@ -1,6 +1,7 @@
 ---
 title: "MAXA Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the largest value in a column. Logical values and blanks are counted.
   
 ## Syntax  
   
-```  
+```dax
 MAXA(<column>)  
-```  
+```
   
 #### Parameters  
   
@@ -42,16 +43,16 @@ If you do not want to include logical values and blanks as part of the calculati
 ## Example  
 The following example returns the greatest value from a calculated column, named **ResellerMargin**, that computes the difference between list price and reseller price.  
   
-```  
+```dax
 =MAXA([ResellerMargin])  
-```  
+```
   
 ## Example  
 The following example returns the largest value from a column that contains dates and times. Therefore, this formula gets the most recent transaction date.  
   
-```  
+```dax
 =MAXA([TransactionDate])  
-```  
+```
   
 ## See Also  
 [MAX Function &#40;DAX&#41;](max-function-dax.md)  

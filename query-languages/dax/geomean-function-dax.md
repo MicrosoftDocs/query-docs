@@ -1,6 +1,7 @@
 ---
 title: "GEOMEAN Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -16,9 +17,9 @@ To return the geometric mean of an expression evaluated for each row in a table,
   
 ## Syntax  
   
-```  
+```dax
 GEOMEAN(<column>)  
-```  
+```
   
 #### Parameters  
   
@@ -37,9 +38,9 @@ GEOMEAN( Table[Column] ) is equivalent to GEOMEANX( Table, Table[Column] )
 ## Example  
 The following computes the geometric mean of the Return column in the Investment table:  
   
-```  
+```dax
 =GEOMEAN( Investment[Return] )  
-```  
+```
   
 ## See Also  
 [GEOMEANX Function &#40;DAX&#41;](geomeanx-function-dax.md)  

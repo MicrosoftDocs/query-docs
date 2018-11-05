@@ -1,6 +1,7 @@
 ---
 title: "CROSSJOIN  Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns a table that contains the Cartesian product of all rows from all tables 
   
 ## Syntax  
   
-```  
+```dax
 CROSSJOIN(<table>, <table>[, <table>]…)  
-```  
+```
   
 #### Parameters  
 table  
@@ -50,9 +51,9 @@ The table **Stationery** contains fonts and presentation:
   
 The expression to generate the cross join is presented below:  
   
-```  
+```dax
 CROSSJOIN( Colors, Stationery)  
-```  
+```dax
 When the above expression is used wherever a table expression is expected, the results of the expression would be as follows:  
   
 |Color|Pattern|Font|Presentation|  

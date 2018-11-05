@@ -1,7 +1,8 @@
 ---
 title: "Table.AddKey | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Add a key to table.  
   
-```  
+## Syntax
+
+<pre>
 Table.AddKey(table as table,  columns as list,  isPrimary as logical) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -28,7 +31,7 @@ Table.AddKey(table as table,  columns as list,  isPrimary as logical) as table
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 let  
   
         table = Table.FromRecords(  

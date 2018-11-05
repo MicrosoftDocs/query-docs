@@ -1,6 +1,7 @@
 ---
 title: "IN Function | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns True if the scalar value shows up in at least one row of the input relat
   
 ## Syntax  
   
-```  
+```dax
 IN 
-```  
+```
   
 #### Parameters  
   
@@ -33,7 +34,7 @@ IN
   
 ## Example  
 
-```
+```dax
 Filtered Sales:=CALCULATE (
         [Internet Total Sales], 'Product'[Color] IN { "Red", "Blue", "Black" }
     )

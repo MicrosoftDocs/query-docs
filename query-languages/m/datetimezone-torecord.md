@@ -1,7 +1,8 @@
 ---
 title: "DateTimeZone.ToRecord | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a record containing parts of a DateTime value.  
   
-```  
+## Syntax
+
+<pre>
 DateTimeZone.ToRecord(dateTimeZone as datetimezone) as record  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -30,7 +33,7 @@ DateTimeZone.ToRecord(dateTimeZone as datetimezone) as record
   
 ## Example  
   
-```  
+```powerquery-m
 DateTime.ToRecord(DateTime.FromText("2011-02-02T11:56:02-08:00")) equals  
 Year = 2011, Month = 2, Day = 2,  
 Hour = 11, Minute = 56, Second = 2,  

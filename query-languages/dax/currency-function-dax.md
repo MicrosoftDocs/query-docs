@@ -1,6 +1,7 @@
 ---
 title: "CURRENCY Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Evaluates the argument and returns the result as currency data type.
   
 ## Syntax  
   
-```  
+```dax
 CURRENCY(<value>)  
-```  
+```
   
 #### Parameters  
 value  
@@ -37,8 +38,8 @@ The value of the expression evaluated and returned as a currency type value.
 ## Example  
 Convert number 1234.56 to currency data type.  
   
-```  
+```dax
 =CURRENCY(1234.56)  
-```  
+```dax
 Returns the value $1234.5600.  
   

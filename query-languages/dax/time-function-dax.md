@@ -1,6 +1,7 @@
 ---
 title: "TIME Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Converts hours, minutes, and seconds given as numbers to a time in **datetime** 
   
 ## Syntax  
   
-```  
+```dax
 TIME(hour, minute, second)  
-```  
+```
   
 #### Parameters  
   
@@ -45,30 +46,30 @@ You can supply the arguments to the TIME function as values that you type direct
   
 To improve readability of the time values returned by this function, we recommend that you format the column or PivotTable cell that contains the results of the formula by using one of the time formats provided by Microsoft Excel.  
   
-This DAX function may return different results when used in a model that is deployed and then queried in DirectQuery mode. For more information about semantic differences in DirectQuery mode, see  [http://go.microsoft.com/fwlink/?LinkId=219171](http://go.microsoft.com/fwlink/?LinkId=219171).  
+This DAX function may return different results when used in a model that is deployed and then queried in DirectQuery mode. For more information about semantic differences in DirectQuery mode, see  [https://go.microsoft.com/fwlink/?LinkId=219171](https://go.microsoft.com/fwlink/?LinkId=219171).  
   
 ## Example  
 The following examples both return the time, 3:00 AM:  
   
-```  
+```dax
 =TIME(27,0,0)   
 =TIME(3,0,0)  
-```  
+```
   
 ## Example  
 The following examples both return the time, 12:30 PM:  
   
-```  
+```dax
 =TIME(0,750,0)   
 =TIME(12,30,0)  
-```  
+```
   
 ## Example  
 The following example creates a time based on the values in the columns, `intHours`, `intMinutes`, `intSeconds`:  
   
-```  
+```dax
 =TIME([intHours],[intMinutes],[intSeconds])  
-```  
+```
   
 ## See Also  
 [DATE Function &#40;DAX&#41;](date-function-dax.md)  

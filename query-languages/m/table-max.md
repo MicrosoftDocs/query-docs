@@ -1,7 +1,8 @@
 ---
 title: "Table.Max | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the largest row or rows from a table using a comparisonCriteria.  
   
-```  
+## Syntax
+
+<pre> 
 Table.Max(table as table, comparisonCriteria as any, optional default as any) as any  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,7 +34,7 @@ Table.Max is similar to List.Max but requires a table as input.
   
 ## Example  
   
-```  
+```powerquery-m 
 Table.Max(Employees, "Salary") equals [Name="Jeff", Level=10, Salary=200000]  
 ```  
   

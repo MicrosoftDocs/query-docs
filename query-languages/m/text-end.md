@@ -1,7 +1,8 @@
 ---
 title: "Text.End | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the number of characters from the end of a text value.  
   
-```  
+## Syntax
+
+<pre>
 Text.End(string as nullable text, numChars as number) as nullable text  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -27,6 +30,6 @@ Text.End(string as nullable text, numChars as number) as nullable text
   
 ## Example  
   
-```  
+```powerquery-m 
 Text.End("abcd", 2) equals "cd"  
 ```  

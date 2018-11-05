@@ -1,7 +1,8 @@
 ---
 title: "Text.PadEnd | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a text value padded at the end with pad to make it at least length characters.  
   
-```  
+## Syntax
+
+<pre>
 Text.PadEnd(text as nullable text, length as number, pad as nullable text) as nullable text  
-```  
+</pre>
   
 ## Arguments  
   
@@ -32,6 +35,6 @@ Text.PadEnd(text as nullable text, length as number, pad as nullable text) as nu
   
 ## Example  
   
-```  
+```powerquery-m
 Text.PadEnd("abc", 5, "a") equals "abcaa"  
 ```  

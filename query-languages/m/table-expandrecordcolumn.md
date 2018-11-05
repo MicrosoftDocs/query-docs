@@ -1,7 +1,8 @@
 ---
 title: "Table.ExpandRecordColumn | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Expands a column of records into columns with each of the values.  
   
-```  
+## Syntax
+
+<pre>
 Table.ExpandRecordColumn(table as table, column as text, fieldNames as list, optional newColumnNames as nullable list) as table  
-```  
+</pre>
   
 ## Arguments  
   

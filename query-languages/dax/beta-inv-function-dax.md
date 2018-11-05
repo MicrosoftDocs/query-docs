@@ -1,6 +1,7 @@
 ---
 title: "BETA.INV Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -15,9 +16,9 @@ If probability = BETA.DIST(x,...TRUE), then BETA.INV(probability,...) = x. The b
   
 ## Syntax  
   
-```  
+```dax
 BETA.INV(probability,alpha,beta,[A],[B])  
-```  
+```
   
 #### Parameters  
   

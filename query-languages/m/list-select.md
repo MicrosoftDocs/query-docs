@@ -1,7 +1,8 @@
 ---
 title: "List.Select | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Selects the items that match a condition.  
   
-```  
+## Syntax
+
+<pre>
 List.Select(list as list, condition as function) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,6 +30,6 @@ List.Select(list as list, condition as function) as list
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 List.Select({1, 3, 5}, each _ > 2) equals {3 ,5}  
 ```  

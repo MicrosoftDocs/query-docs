@@ -1,7 +1,8 @@
 ---
 title: "BinaryFormat.Choice | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a binary format that chooses the next binary format based on a value that has already been read.  
   
-```  
+## Syntax
+
+<pre>  
 BinaryFormat.Choice(binaryFormat as function, choice as function, optional type as nullable type) as function  
-```  
+</pre>
   
 ## Arguments  
   
@@ -45,9 +48,9 @@ BinaryFormat.Choice(binaryFormat as function, choice as function, optional type 
 -   To preserve the first value read, a record binary format can be used to echo the value as a field.  
   
 ## Examples  
-// Read a list of bytes where number of elements is determined by the first byte.  
+Read a list of bytes where number of elements is determined by the first byte.  
   
-```  
+```powerquery-m  
 let      
 binaryData = #binary({2, 3, 4, 5}),      
 listFormat = BinaryFormat.Choice(          
@@ -57,9 +60,9 @@ in
 listFormat(binaryData)   
 equals {3, 4}  
 ```  
-// Read a list of bytes where the number of elements is determined by the first byte, and preserve the first byte read.  
+Read a list of bytes where the number of elements is determined by the first byte, and preserve the first byte read.  
   
-```  
+```powerquery-m  
 let      
 binaryData = #binary({2, 3, 4, 5}),   
 listFormat = BinaryFormat.Choice(          
@@ -72,9 +75,9 @@ in
 listFormat(binaryData)   
 equals [ length = 2, list = {3, 4} ]  
 ```  
-// Read a list of bytes where number of elements is determined by the first byte using a streaming list.  
+Read a list of bytes where number of elements is determined by the first byte using a streaming list.  
   
-```  
+```powerquery-m  
 let      
 binaryData = #binary({2, 3, 4, 5}),      
 listFormat = BinaryFormat.Choice(          

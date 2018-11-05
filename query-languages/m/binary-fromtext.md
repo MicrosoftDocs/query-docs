@@ -1,7 +1,8 @@
 ---
 title: "Binary.FromText | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Decodes data from a text form into binary.  
   
-```  
+## Syntax
+
+<pre>   
 Binary.FromText (text as text, encoding as number) as Binary  
-```  
+</pre>  
   
 ## Arguments  
   

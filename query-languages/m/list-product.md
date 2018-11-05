@@ -1,7 +1,8 @@
 ---
 title: "List.Product | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the product from a list of numbers.  
   
-```  
+## Syntax
+
+<pre>
 List.Product(list as list) as number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -30,10 +33,10 @@ List.Product(list as list) as number
   
 ## Examples  
   
-```  
+```powerquery-m 
 List.Product({2, 3, 4}) equals 24  
 ```  
   
-```  
+```powerquery-m
 List.Product({}) equals error  
 ```  

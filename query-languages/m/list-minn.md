@@ -1,7 +1,8 @@
 ---
 title: "List.MinN | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the minimum values in a list.  
   
-```  
+## Syntax
+
+<pre>
 List.MinN(list as list, countOrCondition as any,  optional comparisonCriteria as any, optional includeNulls as nullable logical) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -29,6 +32,6 @@ List.MinN(list as list, countOrCondition as any,  optional comparisonCriteria as
   
 ## Example  
   
-```  
+```powerquery-m
 List.MinN({3, 4, 5, -1, 7, 8, 2}, 5) equals {-1, 2, 3, 4, 5}  
 ```  

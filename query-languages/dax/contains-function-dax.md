@@ -1,6 +1,7 @@
 ---
 title: "CONTAINS Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns true if values for all referred columns exist, or are contained, in thos
   
 ## Syntax  
   
-```  
+```dax
 CONTAINS(<table>, <columnName>, <value>[, <columnName>, <value>]…)  
-```  
+```
   
 #### Parameters  
 table  
@@ -41,6 +42,6 @@ A value of **TRUE** if each specified *value* can be found in the corresponding 
 ## Example  
 The following example creates a calculated measure that tells you whether there were any Internet sales of the product 214 and to customer 11185 at the same time.  
   
-```  
+```dax
 =CONTAINS(InternetSales, [ProductKey], 214, [CustomerKey], 11185)  
-```  
+```

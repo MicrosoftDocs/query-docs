@@ -1,6 +1,7 @@
 ---
 title: "CROSSFILTER Function | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Specifies the cross-filtering direction to be used in a calculation for a relati
   
 ## Syntax  
   
-```  
+```dax
 CROSSFILTER(<columnName1>, <columnName2>, <direction>)  
-```  
+```
   
 #### Parameters  
   

@@ -1,6 +1,7 @@
 ---
 title: "SUBSTITUTEWITHINDEX Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -18,9 +19,9 @@ The index starts at 0 (0-based) and is incremented by one for each additional ro
   
 ## Syntax  
   
-```  
+```dax
 SUBSTITUTEWITHINDEX(<table>, <indexColumnName>, <indexColumnsTable>, [<orderBy_expression>, [<order>][, <orderBy_expression>, [<order>]]…])  
-```  
+```
   
 #### Parameters  
   

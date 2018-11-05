@@ -1,7 +1,8 @@
 ---
 title: "Table.Transpose | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a table with columns converted to rows and rows converted to columns from the input table.  
   
-```  
+## Syntax
+
+<pre>
 Table.Transpose(table as table, optional columns as any) as table  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -27,7 +30,7 @@ Table.Transpose(table as table, optional columns as any) as table
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 Table.PromoteHeaders(  
   
     Table.Transpose(  

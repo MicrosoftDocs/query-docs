@@ -1,6 +1,7 @@
 ---
 title: "CONCATENATE Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Joins two text strings into one text string.
   
 ## Syntax  
   
-```  
+```dax
 CONCATENATE(<text1>, <text2>)  
-```  
+```
   
 #### Parameters  
   
@@ -33,7 +34,7 @@ The CONCATENATE function in DAX accepts only two arguments, whereas the Excel CO
   
 If you want to use text strings directly, rather than using a column reference, you must enclose each string in double quotation marks.  
   
-This DAX function may return different results when used in a model that is deployed and then queried in DirectQuery mode. For more information about semantic differences in DirectQuery mode, see  [http://go.microsoft.com/fwlink/?LinkId=219171](http://go.microsoft.com/fwlink/?LinkId=219171).  
+This DAX function may return different results when used in a model that is deployed and then queried in DirectQuery mode. For more information about semantic differences in DirectQuery mode, see  [https://go.microsoft.com/fwlink/?LinkId=219171](https://go.microsoft.com/fwlink/?LinkId=219171).  
   
 ## Example: Concatenation of Literals  
   
@@ -72,16 +73,16 @@ The following example demonstrates how to concatenate values in columns that hav
   
 ### Code  
   
-```  
+```dax
 =CONCATENATE('Products'[Product abbreviation],'Products'[Product number])  
-```  
+```
   
 ### Comments  
 The CONCATENATE function in DAX accepts only two arguments, whereas the Excel CONCATENATE function accepts up to 255 arguments. If you need to add more arguments, you can use the ampersand (&amp;) operator. For example, the following formula produces the results, MTN-40 and MTN-42.  
   
-```  
+```dax
 =[Product abbreviation] & "-" & [Product number]  
-```  
+```
   
 ## See Also  
 [Text Functions &#40;DAX&#41;](text-functions-dax.md)  

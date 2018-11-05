@@ -1,7 +1,8 @@
 ---
 title: "Date.Month | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the month from a DateTime value.  
   
-```  
+## Syntax
+
+<pre>
 Date.Month(dateTime as datetime) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +29,6 @@ Date.Month(dateTime as datetime) as nullable number
   
 ## Example  
   
-```  
+```powerquery-m
 Date.Month(DateTime.FromText("2011-02-19")) equals 2  
 ```  

@@ -1,7 +1,8 @@
 ---
 title: "Record.SelectFields | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,7 +15,9 @@ manager: kfile
 ## About  
 Returns a new record that contains the fields selected from the input record. The original order of the fields is maintained.  
   
-```  
+## Syntax
+
+<pre>
 Record.SelectFields(record as record,  fields as any,  optional missingField as nullable number) as record  
 ```  
   
@@ -40,10 +43,10 @@ Record.SelectFields(record as record,  fields as any,  optional missingField as 
   
 ## Examples  
   
-```  
+```powerquery-m
 Record.SelectFields([A=1, B=2], "B") equals [B=2]  
 ```  
   
-```  
+```powerquery-m
 Record.SelectFields([A=1, B=2, C=3], {"C", "B"}) equals [B=2, C=3]  
 ```  

@@ -1,7 +1,8 @@
 ---
 title: "Record.ReorderFields | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a new record that reorders fields relative to each other.  Any fields not specified remain in their original locations. Requires two or more fields.  
   
-```  
+## Syntax
+
+<pre>
 Record.ReorderFields(record as record,  fieldOrder as list,  optional missingField as nullable number) as record  
-```  
+</pre>
   
 ## Arguments  
   
@@ -36,11 +39,11 @@ Record.ReorderFields(record as record,  fieldOrder as list,  optional missingFie
   
 ## Examples  
   
-```  
+```powerquery-m
 Record.ReorderFields( [CustomerID= 1, OrderID = 1, Item = "Fishing rod", Price = 100.0], { "OrderID", "CustomerID" })  
 ```  
   
-```  
+```powerquery-m
 equals [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0]  
 ```  
   

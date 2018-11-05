@@ -1,6 +1,7 @@
 ---
 title: "MINUTE Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the minute as a number from 0 to 59, given a date and time value.
   
 ## Syntax  
   
-```  
+```dax
 MINUTE(<datetime>)  
-```  
+```
   
 #### Parameters  
   
@@ -34,16 +35,16 @@ When the **datetime** argument is a text representation of the date and time, th
 ## Example  
 The following example returns the minute from the value stored in the **TransactionTime** column of the **Orders** table.  
   
-```  
+```dax
 =MINUTE(Orders[TransactionTime])  
-```  
+```
   
 ## Example  
 The following example returns 45, which is the number of minutes in the time 1:45 PM.  
   
-```  
+```dax
 =MINUTE("March 23, 2008 1:45 PM")  
-```  
+```
   
 ## See Also  
 [Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  

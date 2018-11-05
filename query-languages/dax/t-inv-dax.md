@@ -1,6 +1,7 @@
 ---
 title: "T.INV Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 8/14/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -14,9 +15,9 @@ Returns the left-tailed inverse of the Student's t-distribution.
   
 ## Syntax  
   
-```  
+```dax
 T.INV(Probability,Deg_freedom)
-```  
+```
   
 #### Parameters  
   
@@ -30,9 +31,9 @@ The left-tailed inverse of the Student's t-distribution.
   
 ## Example  
   
-```  
+```dax
 EVALUATE { T.INV(0.75, 2) }
-```  
+```dax
 Returns
 
 |[Value]  |

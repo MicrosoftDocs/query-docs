@@ -1,6 +1,7 @@
 ---
 title: "SUMMARIZE Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns a summary table for the requested totals over a set of groups.
   
 ## Syntax  
   
-```  
+```dax
 SUMMARIZE(<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, <name>, <expression>]…)  
-```  
+```
   
 #### Parameters  
 table  
@@ -46,14 +47,14 @@ A table with the selected columns for the *groupBy_columnName* arguments and the
 ## Example  
 The following example returns a summary of the reseller sales grouped around the calendar year and the product category name, this result table allows you to do analysis over the reseller sales by year and product category.  
   
-```  
+```dax
 SUMMARIZE(ResellerSales_USD  
       , DateTime[CalendarYear]  
       , ProductCategory[ProductCategoryName]  
       , "Sales Amount (USD)", SUM(ResellerSales_USD[SalesAmount_USD])  
       , "Discount Amount (USD)", SUM(ResellerSales_USD[DiscountAmount])  
       )  
-```  
+```dax
 The following table shows a preview of the data as it would be received by any function expecting to receive a table:  
       
 |**DateTime[CalendarYear]**|**ProductCategory[ProductCategoryName]**|**[Sales Amount (USD)]**|**[Discount Amount (USD)]**|  
@@ -80,9 +81,9 @@ The following table shows a preview of the data as it would be received by any f
 ### SUMMARIZE with ROLLUP  
 The addition of the ROLLUP() syntax modifies the behavior of the SUMMARIZE function by adding roll-up rows to the result on the groupBy_columnName columns.  
   
-```  
+```dax
 SUMMARIZE(<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, ROLLUP(<groupBy_columnName>[,< groupBy_columnName>…])][, <name>, <expression>]…)  
-```  
+```
   
 #### ROLLUP parameters  
 groupBy_columnName  
@@ -97,13 +98,13 @@ The qualified name of an existing column to be used to create summary groups bas
 #### Example  
 The following example adds roll-up rows to the Group-By columns of the SUMMARIZE function call.  
   
-```  
+```dax
 SUMMARIZE(ResellerSales_USD  
       , ROLLUP( DateTime[CalendarYear], ProductCategory[ProductCategoryName])  
       , "Sales Amount (USD)", SUM(ResellerSales_USD[SalesAmount_USD])  
       , "Discount Amount (USD)", SUM(ResellerSales_USD[DiscountAmount])  
 )  
-```  
+```dax
 The following table shows a preview of the data as it would be received by any function expecting to receive a table:  
   
 |**DateTime[CalendarYear]**|**ProductCategory[ProductCategoryName]**|**[Sales Amount (USD)]**|**[Discount Amount (USD)]**|  
@@ -135,13 +136,13 @@ ROLLUPGROUP() can be used to calculate groups of subtotals. If used in-place of 
   
 The following example shows only the grand total of all years and categories without the subtotal of each year with all categories:  
   
-```  
+```dax
 SUMMARIZE(ResellerSales_USD  
       , ROLLUP(ROLLUPGROUP( DateTime[CalendarYear], ProductCategory[ProductCategoryName]))  
       , "Sales Amount (USD)", SUM(ResellerSales_USD[SalesAmount_USD])  
       , "Discount Amount (USD)", SUM(ResellerSales_USD[DiscountAmount])  
 )  
-```  
+```dax
 The following table shows a preview of the data as it would be received by any function expecting to receive a table:  
   
 |**DateTime[CalendarYear]**|**ProductCategory[ProductCategoryName]**|**[Sales Amount (USD)]**|**[Discount Amount (USD)]**|  
@@ -167,9 +168,9 @@ The following table shows a preview of the data as it would be received by any f
 ### SUMMARIZE with ISSUBTOTAL  
 Enables the user to create another column, in the Summarize function, that returns True if the row contains sub-total values for the column given as argument to ISSUBTOTAL, otherwise returns False.  
   
-```  
+```dax
 SUMMARIZE(<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, ROLLUP(<groupBy_columnName>[,< groupBy_columnName>…])][, <name>, {<expression>|ISSUBTOTAL(<columnName>)}]…)  
-```  
+```
   
 #### ISSUBTOTAL parameters  
 columnName  
@@ -187,7 +188,7 @@ A **True** value if the row contains a sub-total value for the column given as a
 #### Example  
 The following sample generates an ISSUBTOTAL() column for each of the ROLLUP() columns in the given SUMMARIZE() function call.  
   
-```  
+```dax
 SUMMARIZE(ResellerSales_USD  
       , ROLLUP( DateTime[CalendarYear], ProductCategory[ProductCategoryName])  
       , "Sales Amount (USD)", SUM(ResellerSales_USD[SalesAmount_USD])  
@@ -195,7 +196,7 @@ SUMMARIZE(ResellerSales_USD
       , "Is Sub Total for DateTimeCalendarYear", ISSUBTOTAL(DateTime[CalendarYear])  
       , "Is Sub Total for ProductCategoryName", ISSUBTOTAL(ProductCategory[ProductCategoryName])  
 )  
-```  
+```dax
 The following table shows a preview of the data as it would be received by any function expecting to receive a table:  
   
   

@@ -1,7 +1,8 @@
 ---
 title: "Int8.From | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,16 +15,18 @@ manager: kfile
 ## About  
 Returns a signed 8-bit integer number value from the given value.  
   
-```  
+## Syntax
+
+<pre>
 Int8.From(value as any, optional culture as nullable text, optional roundingMode as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
 |Argument|Description|  
 |------------|---------------|  
 |value|Value to convert.|  
-|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](http://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
+|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
 |optional roundingMode|Specifies rounding direction when there is a tie between the possible numbers to round to.|  
   
 ## Remarks  
@@ -31,10 +34,10 @@ Returns a signed 8-bit integer number value from the given value. If the given v
   
 ## Examples  
   
-```  
+```powerquery-m
 Int8.From("4") equals 4  
 ```  
   
-```  
+```powerquery-m
 Int8.From("4.5", null, RoundingMode.AwayFromZero) equals 5  
 ```  

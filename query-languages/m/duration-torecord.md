@@ -1,7 +1,8 @@
 ---
 title: "Duration.ToRecord | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a record with parts of a Duration value.  
   
-```  
+## Syntax
+
+<pre>
 Duration.ToRecords(duration as duration) as record  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +29,6 @@ Duration.ToRecords(duration as duration) as record
   
 ## Example  
   
-```  
+```powerquery-m
 Duration.ToRecord(#duration(2, 5, 55, 20)) equals [Days=2, Hours=5, Minutes=55, Seconds=20]  
 ```  

@@ -1,6 +1,7 @@
 ---
 title: "PERCENTILE.INC Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -17,9 +18,9 @@ To return the percentile number of an expression evaluated for each row in a tab
   
 ## Syntax  
   
-```  
+```dax
 PERCENTILE.INC(<column>, <k>)  
-```  
+```
   
 #### Parameters  
   

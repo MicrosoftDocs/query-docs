@@ -1,7 +1,8 @@
 ---
 title: "Evaluation model | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -20,7 +21,7 @@ In M, an expression can reference previous expressions by name, and the evaluati
   
 Let’s use a record to produce an expression which is equivalent to the above spreadsheet example. When initializing the value of a field, you refer to other fields within the record by the name of the field, as follows:  
   
-```  
+```powerquery-m
 [   
     A1 = A2 * 2,   
     A2 = A3 + 1,   
@@ -29,7 +30,7 @@ Let’s use a record to produce an expression which is equivalent to the above s
 ```  
 The above expression evaluates to the following record:  
   
-```  
+```powerquery-m
 [   
     A1 = 4,   
     A2 = 2,   
@@ -38,7 +39,7 @@ The above expression evaluates to the following record:
 ```  
 Records can be contained within, or **nested**, within other records. You can use the **lookup operator** ([ ]) to access the fields of a record by name. For example, the following record has a field named Sales containing a record, and a field named Total that accesses the FirstHalf and SecondHalf fields of the Sales record:  
   
-```  
+```powerquery-m
 [   
     Sales = [ FirstHalf = 1000, SecondHalf = 1100 ],  
     Total = Sales[FirstHalf] + Sales[SecondHalf]  
@@ -46,7 +47,7 @@ Records can be contained within, or **nested**, within other records. You can us
 ```  
 The above expression evaluates to the following record:  
   
-```  
+```powerquery-m
 [   
     Sales = [ FirstHalf = 1000, SecondHalf = 1100 ],  
     Total = 2100  
@@ -54,7 +55,7 @@ The above expression evaluates to the following record:
 ```  
 You use the **positional index operator** ({ }) to access an item in a list by its numeric index. The values within a list are referred to using a zero-based index from the beginning of the list. For example, the indexes 0 and 1 are used to reference the first and second items in the list below:  
   
-```  
+```powerquery-m
 [  
     Sales =   
         {   

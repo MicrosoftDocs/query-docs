@@ -1,7 +1,8 @@
 ---
 title: "Table.SingleRow | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a single row from a table.  
   
-```  
+## Syntax
+
+<pre>
 Table.SingleRow(table as table) as record  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -30,7 +33,7 @@ Table.SingleRow(table as table) as record
   
 ## Example  
   
-```  
+```powerquery-m
 Table.SingleRow(Table.FromRecords(  
   
 {  

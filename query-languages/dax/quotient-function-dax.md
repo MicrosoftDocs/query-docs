@@ -1,6 +1,7 @@
 ---
 title: "QUOTIENT Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Performs division and returns only the integer portion of the division result. U
   
 ## Syntax  
   
-```  
+```dax
 QUOTIENT(<numerator>, <denominator>)  
-```  
+```
   
 #### Parameters  
   
@@ -35,10 +36,10 @@ You can use a column reference instead of a literal value for either argument. H
 ## Example  
 The following formulas return the same result, 2.  
   
-```  
+```dax
 =QUOTIENT(5,2)  
 =QUOTIENT(10/2,2)  
-```  
+```
   
 ## See Also  
 [Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  

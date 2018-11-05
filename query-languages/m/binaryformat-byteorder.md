@@ -1,7 +1,8 @@
 ---
 title: "BinaryFormat.ByteOrder | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a binary format with the specified byte order.  
   
-```  
+## Syntax
+
+<pre>   
 BinaryFormat.ByteOrder(binaryFormat as function, byteOrder as number) as function  
-```  
+</pre>  
   
 ## Arguments  
   
@@ -27,7 +30,7 @@ BinaryFormat.ByteOrder(binaryFormat as function, byteOrder as number) as functio
   
 ## Example  
   
-```  
+```powerquery-m  
 let  
 binaryData = #binary({0x01, 0x00}),  
 littleEndianFormat = BinaryFormat.ByteOrder(  

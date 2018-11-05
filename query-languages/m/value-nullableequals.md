@@ -1,7 +1,8 @@
 ---
 title: "Value.NullableEquals | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a logical value or null based on two values .  
   
-```  
+## Syntax
+
+<pre>  
 Value.NullableEquals(value1 as any, value2 as any) as any  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,6 +34,6 @@ Value.NullableEquals(value1 as any, value2 as any) as any
   
 ## Example  
   
-```  
+```powerquery-m
 Value.NullableEquals(1, null) equals null  
 ```  

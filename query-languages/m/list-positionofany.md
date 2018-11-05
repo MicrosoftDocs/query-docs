@@ -1,7 +1,8 @@
 ---
 title: "List.PositionOfAny | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Finds the first occurrence of any value in values and returns its position.  
   
-```  
+## Syntax
+
+<pre>
 List.PositionOfAny(list as list, values as list, optional occurrence as nullable number, optional equationCriteria as any) as any  
-```  
+</pre>
   
 ## Arguments  
   
@@ -40,15 +43,18 @@ List.PositionOfAny(list as list, values as list, optional occurrence as nullable
   
 ## Examples  
   
-```  
+```powerquery-m
 List.PositionOfAny({"A", "B", "C", "D"}, {"B", "C"}) equals 1  
 ```  
-`List.PositionOfAny({"A", "B", "C", "B", "A"}, {"A", "B"}, Occurrence.First) equals 0`  
+
+```powerquery-m
+List.PositionOfAny({"A", "B", "C", "B", "A"}, {"A", "B"}, Occurrence.First) equals 0
+``` 
   
-```  
+```powerquery-m
 List.PositionOfAny({"A", "B", "C", "B", "A"}, {"A", "B"}, Occurrence.Last) equals 4  
 ```  
   
-```  
+```powerquery-m
 List.PositionOfAny({"A", "B", "C", "B", "A"}, {"A", "B"}, Occurrence.All) equals {0, 1, 3, 4}  
 ```  

@@ -1,6 +1,7 @@
 ---
 title: "WEEKNUM Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the week number for the given date and year according to the **return_ty
   
 ## Syntax  
   
-```  
+```dax
 WEEKNUM(<date>, <return_type>)  
-```  
+```
   
 #### Parameters  
   
@@ -35,16 +36,16 @@ By default, the WEEKNUM function uses a calendar convention in which the week co
 ## Example  
 The following example returns the week number of the date February 14, 2010.  
   
-```  
+```dax
 =WEEKNUM("Feb 14, 2010", 2)  
-```  
+```
   
 ## Example  
 The following example returns the week number of the date stored in the column, **HireDate**, from the table, **Employees**.  
   
-```  
+```dax
 =WEEKNUM('Employees'[HireDate])  
-```  
+```
   
 ## See Also  
 [Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  

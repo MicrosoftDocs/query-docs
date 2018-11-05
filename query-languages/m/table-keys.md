@@ -1,7 +1,8 @@
 ---
 title: "Table.Keys | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a list of key column names from a table.  
   
-```  
+## Syntax
+
+<pre> 
 Table.Keys(table as table) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,7 +29,7 @@ Table.Keys(table as table) as list
   
 ## Example  
   
-```  
+```powerquery-m
 let  
   
     table = Table.FromRecords(  

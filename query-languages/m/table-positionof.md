@@ -1,7 +1,8 @@
 ---
 title: "Table.PositionOf | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Determines the position or positions of a row within a table.  
   
-```  
+## Syntax
+
+<pre>
 Table.PositionOf(table as table, row as record, optional occurrence as nullable number, optional equationCriteria as any) as any  
-```  
+</pre>
   
 ## Arguments  
   
@@ -41,7 +44,7 @@ Occurrence specification
   
 ## Examples  
   
-```  
+```powerquery-m
 Table.PositionOf(   
  Table.FromRecords({  
  [A=1, B=2], [A=3, B=4], [A=1 B=6]}),   
@@ -50,7 +53,7 @@ Table.PositionOf(
  equals 1  
 ```  
   
-```  
+```powerquery-m
 Table.PositionOf(  
  Table.FromRecords({  
  [A=1, B=2], [A=3, B=4], [A=1, B=6]}),   

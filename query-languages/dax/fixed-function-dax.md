@@ -1,6 +1,7 @@
 ---
 title: "FIXED Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Rounds a number to the specified number of decimals and returns the result as te
   
 ## Syntax  
   
-```  
+```dax
 FIXED(<number>, <decimals>, <no_commas>)  
-```  
+```
   
 #### Parameters  
   
@@ -37,14 +38,14 @@ If **no_commas** is 0 or is omitted, then the returned text includes commas as u
   
 The major difference between formatting a cell containing a number by using a command and formatting a number directly with the FIXED function is that FIXED converts its result to text. A number formatted with a command from the formatting menu is still a number.  
   
-This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [http://go.microsoft.com/fwlink/?LinkId=219172](http://go.microsoft.com/fwlink/?LinkId=219172).  
+This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
 ## Example  
 The following example gets the numeric value for the current row in column, PctCost, and returns it as text with 4 decimal places and no commas.  
   
-```  
+```dax
 =FIXED([PctCost],3,1)  
-```  
+```dax
 Numbers can never have more than 15 significant digits, but decimals can be as large as 127.  
   
 ## See Also  

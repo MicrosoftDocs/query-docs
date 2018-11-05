@@ -1,7 +1,8 @@
 ---
 title: "DateTimeZone.FromText | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,16 +15,18 @@ manager: kfile
 ## About  
 Returns a DateTimeZone value from a set of date formats and culture value.  
   
-```  
+## Syntax
+
+<pre>
 DateTimeZone.FromText(dateTimeZone as nullable text, optional culture as nullable text) as nullable datetimezone  
-```  
+</pre>
   
 ## Arguments  
   
 |Argument|Description|  
 |------------|---------------|  
 |dateTimeZone||  
-|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](http://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
+|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
   
 ### DateTimeZone formats  
   
@@ -83,10 +86,10 @@ DateTimeZone.FromText(dateTimeZone as nullable text, optional culture as nullabl
   
 ## Examples  
   
-```  
+```powerquery-m
 DateTime.FromText("2010-12-31T01:30:00") equals YYYY-MM-DDThh:mm:ss  
 ```  
   
-```  
+```powerquery-m
 DateTime.FromText("2010-12-31T01:30:00Z") equals 2010-12-31T01:30:00+00:00  
 ```  

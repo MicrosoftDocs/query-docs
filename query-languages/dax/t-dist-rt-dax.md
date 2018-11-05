@@ -1,6 +1,7 @@
 ---
 title: "T.DIST.RT Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 8/14/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -14,9 +15,9 @@ Returns the right-tailed Student's t-distribution.
   
 ## Syntax  
   
-```  
+```dax
 T.DIST.RT(X,Deg_freedom)
-```  
+```
   
 #### Parameters  
   
@@ -30,9 +31,9 @@ The right-tailed Student's t-distribution.
   
 ## Example  
   
-```  
+```dax
 EVALUATE { T.DIST.RT(1.959999998, 60) }
-```  
+```dax
 Returns
 
 |[Value]  |

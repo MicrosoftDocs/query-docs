@@ -1,6 +1,7 @@
 ---
 title: "TRIM Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Removes all spaces from text except for single spaces between words.
   
 ## Syntax  
   
-```  
+```dax
 TRIM(<text>)  
-```  
+```
   
 #### Parameters  
   
@@ -34,16 +35,16 @@ The TRIM function was originally designed to trim the 7-bit ASCII space characte
 ## Example  
 The following formula creates a new string that does not have trailing white space.  
   
-```  
+```dax
 =TRIM("A column with trailing spaces.   ")  
-```  
+```dax
 When you create the formula, the formula is propagated through the row just as you typed it, so that you see the original string in each formula and the results are not apparent. However, when the formula is evaluated the string is trimmed.  
   
 You can verify that the formula produces the correct result by checking the length of the calculated column created by the previous formula, as follows:  
   
-```  
+```dax
 =LEN([Calculated Column 1])  
-```  
+```
   
 ## See Also  
 [Text Functions &#40;DAX&#41;](text-functions-dax.md)  

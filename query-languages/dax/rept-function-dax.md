@@ -1,6 +1,7 @@
 ---
 title: "REPT Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Repeats text a given number of times. Use REPT to fill a cell with a number of i
   
 ## Syntax  
   
-```  
+```dax
 REPT(<text>, <num_times>)  
-```  
+```
   
 #### Parameters  
   
@@ -41,9 +42,9 @@ The following example returns the string, 85, repeated three times.
   
 ### Code  
   
-```  
+```dax
 =REPT("85",3)  
-```  
+```
   
 ## Example: Repeating Column Values  
   
@@ -52,9 +53,9 @@ The following example returns the string in the column, [MyText], repeated for t
   
 ### Code  
   
-```  
+```dax
 =REPT([MyText],[MyNumber])  
-```  
+```
   
 ### Comments  
   

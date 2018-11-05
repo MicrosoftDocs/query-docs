@@ -1,6 +1,7 @@
 ---
 title: "CHISQ.INV.RT Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -15,9 +16,9 @@ If probability = CHISQ.DIST.RT(x,...), then CHISQ.INV.RT(probability,...) = x. U
   
 ## Syntax  
   
-```  
+```dax
 CHISQ.INV.RT(probability,deg_freedom)  
-```  
+```
   
 #### Parameters  
   

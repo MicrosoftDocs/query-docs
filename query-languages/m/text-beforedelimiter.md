@@ -1,7 +1,8 @@
 ---
 title: "Text.BeforeDelimiter | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,31 +10,42 @@ ms.author: owend
 manager: kfile
 ---
 # Text.BeforeDelimiter
-<code>Text.BeforeDelimiter(**text** as nullable text, **delimiter** as text, optional **index** as any) as any</code>
+
+## Syntax
+
+<pre>
+Text.BeforeDelimiter(**text** as nullable text, **delimiter** as text, optional **index** as any) as any
+</pre>
 
 ## About
-Returns the portion of <code>text</code> before the specified <code>delimiter</code>. An optional numeric <code>index</code> indicates which occurrence of the <code>delimiter</code> should be considered. An optional list <code>index</code> indicates which occurrence of the <code>delimiter</code> should be considered, as well as whether indexing should be done from the start or end of the input.
+Returns the portion of `text` before the specified `delimiter`. An optional numeric `index` indicates which occurrence of the `delimiter` should be considered. An optional list `index` indicates which occurrence of the `delimiter` should be considered, as well as whether indexing should be done from the start or end of the input.
 
 ## Example 1
 Get the portion of "111-222-333" before the (first) hyphen.
 
-<code>Text.BeforeDelimiter("111-222-333", "-")</code>
+```powerquery-m
+Text.BeforeDelimiter("111-222-333", "-")
+```
 
-<code>"111"</code>
+`"111"`
 
 ## Example 2
 Get the portion of "111-222-333" before the second hyphen.
 
-<code>Text.BeforeDelimiter("111-222-333", "-", 1)</code>
+```powerquery-m
+Text.BeforeDelimiter("111-222-333", "-", 1)
+```
 
-<code>"111-222"</code>
+`"111-222"`
 
 ## Example 3
 Get the portion of "111-222-333" before the second hyphen from the end.
 
-<code>Text.BeforeDelimiter("111-222-333", "-", {1, RelativePosition.FromEnd})</code>
+```powerquery-m
+Text.BeforeDelimiter("111-222-333", "-", {1, RelativePosition.FromEnd})
+```
 
-<code>"111"</code>
+`"111"`
 
 
   

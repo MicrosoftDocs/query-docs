@@ -1,7 +1,8 @@
 ---
 title: "Date functions | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -32,7 +33,7 @@ manager: kfile
 |[Date.EndOfYear](date-endofyear.md)|Returns a DateTime value for the end of the year.|  
 |[Date.From](date-from.md)|Returns a date value from a value.|  
 |[Date.FromText](date-fromtext.md)|Returns a Date value from a set of date formats and culture value.|  
-|[Date.IsInCurrentDay](date-isincurrentday.md)|Indicates whether the given datetime value <code>dateTime</code> occurs during the current day, as determined by the current date and time on the system.|
+|[Date.IsInCurrentDay](date-isincurrentday.md)|Indicates whether the given datetime value `dateTime` occurs during the current day, as determined by the current date and time on the system.|
 |[Date.IsInCurrentMonth](date-isincurrentmonth.md)|Returns a logical value indicating whether the given Date/DateTime/DateTimeZone occurred during the current month, as determined by the current date and time on the system.|  
 |[Date.IsInCurrentQuarter](date-isincurrentquarter.md)|Returns a logical value indicating whether the given Date/DateTime/DateTimeZone occurred during the current quarter, as determined by the current date and time on the system.|  
 |[Date.IsInCurrentWeek](date-isincurrentweek.md)|Returns a logical value indicating whether the given Date/DateTime/DateTimeZone occurred during the current week, as determined by the current date and time on the system.|  

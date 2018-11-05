@@ -1,7 +1,8 @@
 ---
 title: "Table.RenameColumns | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a table with the columns renamed as specified.  
   
-```  
+## Syntax
+
+<pre>
 Table.RenameColumns(table as table, renames as list, optional missingField as nullable number) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -32,7 +35,7 @@ Table.RenameColumns(table as table, renames as list, optional missingField as nu
   
 ## Examples  
   
-```  
+```powerquery-m
 Table.RenameColumns(Table.FromRecords({  
   
     [CustomerNum=1, Name="Bob", Phone = "123-4567"]}),  
@@ -44,7 +47,7 @@ Table.RenameColumns(Table.FromRecords({
 |--------------|--------|---------|  
 |1|Bob|123-4567|  
   
-```  
+```powerquery-m
 Table.RenameColumns(Table.FromRecords({  
   
     [CustomerID=1, Name="Bob", Phone = "123-4567"]}), {"NewCol", "NewColumn"}, MissingField.UseNull)  

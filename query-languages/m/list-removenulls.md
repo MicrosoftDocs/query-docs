@@ -1,7 +1,8 @@
 ---
 title: "List.RemoveNulls | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Removes null values from a list.  
   
-```  
+## Syntax
+
+<pre>
 List.RemoveNulls(list as list) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +29,6 @@ List.RemoveNulls(list as list) as list
   
 ## Example  
   
-```  
+```powerquery-m
 List.RemoveNulls({1, null, 2}) equals {1, 2}  
 ```  

@@ -1,6 +1,7 @@
 ---
 title: "T.DIST.2T Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 8/14/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -14,9 +15,9 @@ Returns the two-tailed Student's t-distribution.
   
 ## Syntax  
   
-```  
+```dax
 T.DIST.2T(X,Deg_freedom)
-```  
+```
   
 #### Parameters  
   
@@ -30,9 +31,9 @@ The two-tailed Student's t-distribution.
   
 ## Example  
   
-```  
+```dax
 EVALUATE { T.DIST.2T(1.959999998, 60) }
-```  
+```dax
 Returns
 
 |[Value]  |

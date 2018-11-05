@@ -1,6 +1,7 @@
 ---
 title: "NATURALLEFTOUTERJOIN Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -14,9 +15,9 @@ Performs an inner join of a table with another table. The tables are joined on c
   
 ## Syntax  
   
-```  
+```dax
 NATURALLEFTOUTERJOIN(<leftJoinTable>, <rightJoinTable>)  
-```  
+```
   
 #### Parameters  
   

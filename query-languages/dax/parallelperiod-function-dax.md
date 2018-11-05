@@ -1,6 +1,7 @@
 ---
 title: "PARALLELPERIOD Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns a table that contains a column of dates that represents a period paralle
   
 ## Syntax  
   
-```  
+```dax
 PARALLELPERIOD(<dates>,<number_of_intervals>,<interval>)  
-```  
+```
   
 #### Parameters  
   
@@ -51,7 +52,7 @@ The result table includes only dates that appear in the values of the underlying
   
 The PARALLELPERIOD function is similar to the DATEADD function except that PARALLELPERIOD always returns full periods at the given granularity level instead of the partial periods that DATEADD returns. For example, if you have a selection of dates that starts at June 10 and finishes at June 21 of the same year, and you want to shift that selection forward by one month then the PARALLELPERIOD function will return all dates from the next month (July 1 to July 31); however, if DATEADD is used instead, then the result will include only dates from July 10 to July 21.  
   
-This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [http://go.microsoft.com/fwlink/?LinkId=219172](http://go.microsoft.com/fwlink/?LinkId=219172).  
+This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
 ## Example  
 The following sample formula creates a measure that calculates the previous year sales for Internet sales.  
@@ -59,15 +60,15 @@ The following sample formula creates a measure that calculates the previous year
 To see how this works, create a PivotTable and add the fields, CalendarYear and CalendarQuarter, to the **Row Labels** area of the PivotTable. Then add a measure, named **Previous Year Sales**, using the formula defined in the code section, to the **Values** area of the PivotTable.  
   
 > [!NOTE]  
-> The above example uses the table DateTime from the DAX sample workbook. For more information about samples, see [Get Sample Data](http://go.microsoft.com/fwlink/?LinkId=164474) .  
+> The above example uses the table DateTime from the DAX sample workbook. For more information about samples, see [Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474) .  
   
-```  
+```dax
 =CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PARALLELPERIOD(DateTime[DateKey],-1,year))  
-```  
+```
   
 ## See Also  
 [Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
 [Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
 [DATEADD Function &#40;DAX&#41;](dateadd-function-dax.md)  
-[Get Sample Data](http://go.microsoft.com/fwlink/?LinkId=164474)  
+[Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
   

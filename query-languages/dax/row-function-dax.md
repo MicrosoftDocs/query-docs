@@ -1,6 +1,7 @@
 ---
 title: "ROW Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns a table with a single row containing values that result from the express
   
 ## Syntax  
   
-```  
+```dax
 ROW(<name>, <expression>[[,<name>, <expression>]…])  
-```  
+```
   
 #### Parameters  
 *name*  
@@ -33,9 +34,9 @@ Arguments must always come in pairs of *name* and *expression*.
 ## Example  
 The following example returns a single row table with the total sales for internet and resellers channels.  
   
-```  
+```dax
 ROW("Internet Total Sales (USD)", SUM(InternetSales_USD[SalesAmount_USD]),  
          "Resellers Total Sales (USD)", SUM(ResellerSales_USD[SalesAmount_USD]))  
-```  
+```dax
 The code is split in two lines for readability purposes  
   

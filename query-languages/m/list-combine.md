@@ -1,7 +1,8 @@
 ---
 title: "List.Combine | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Merges a list of lists into single list.  
   
-```  
+## Syntax
+
+<pre> 
 List.Combine(list as list) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +29,6 @@ List.Combine(list as list) as list
   
 ## Example  
   
-```  
+```powerquery-m
 List.Combine({ {1, 2, 3, 4}, {5, 6, 7}, {8, 9} }) equals {1, 2, 3, 4, 5, 6, 7, 8, 9}  
 ```  

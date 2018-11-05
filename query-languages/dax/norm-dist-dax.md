@@ -1,6 +1,7 @@
 ---
 title: "NORM.DIST Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 8/14/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -14,9 +15,9 @@ Returns the normal distribution for the specified mean and standard deviation.
   
 ## Syntax  
   
-```  
+```dax
 NORM.DIST(X, Mean, Standard_dev, Cumulative)  
-```  
+```
   
 #### Parameters  
   
@@ -32,9 +33,9 @@ The normal distribution for the specified mean and standard deviation.
   
 ## Example  
   
-```  
+```dax
 EVALUATE { NORM.DIST(42, 40, 1.5, TRUE) }
-```  
+```dax
 Returns
 
 |[Value]  |

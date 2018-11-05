@@ -1,6 +1,7 @@
 ---
 title: "EXP Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns e raised to the power of a given number. The constant e equals 2.7182818
   
 ## Syntax  
   
-```  
+```dax
 EXP(<number>)  
-```  
+```
   
 #### Parameters  
   
@@ -36,9 +37,9 @@ To calculate powers of bases other than e, use the exponentiation operator (^). 
 ## Example  
 The following formula calculates e raised to the power of the number contained in the column, `[Power]`.  
   
-```  
+```dax
 =EXP([Power])  
-```  
+```
   
 ## See Also  
 [Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  

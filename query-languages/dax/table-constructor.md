@@ -1,6 +1,7 @@
 ---
 title: "Table Constructor | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,11 +14,11 @@ Returns a table of one or more columns.
   
 ## Syntax  
   
-```  
+```dax
 { <scalarExpr1>, <scalarExpr2>, … } 
 { ( <scalarExpr1>, <scalarExpr2>, … ), ( <scalarExpr1>, <scalarExpr2>, … ), … }
  
-```  
+```
   
 #### Parameters  
   
@@ -40,11 +41,13 @@ When the data types of the values for a column are different in different rows, 
 ### Example 1  
  
 The following DAX queries:
-```
+```dax
 EVALUATE { 1, 2, 3 }
 ```
+
 and
-```
+
+```dax
 EVALUATE { (1), (2), (3) }
 ```
 
@@ -59,7 +62,7 @@ Return the following table of a single column:
 
 ### Example 2 
 The following DAX query:
-```
+```dax
 EVALUATE
 	{
 		(1.5, DATE(2017, 1, 1), CURRENCY(199.99), "A"), 
@@ -78,9 +81,9 @@ Row3     |   1/3/2017      |    299.99     |         C
 
 ### Example 3
 The following DAX query:
-```
+```dax
 EVALUATE { 1, DATE(2017, 1, 1), TRUE, "A" }
-```
+```dax
 Returns the following table of a single column of String data type:
 
 [Value]  |  |

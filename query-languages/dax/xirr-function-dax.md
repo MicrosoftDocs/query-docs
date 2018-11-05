@@ -1,6 +1,7 @@
 ---
 title: "XIRR Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -14,9 +15,9 @@ Returns the internal rate of return for a schedule of cash flows that is not nec
   
 ## Syntax  
   
-```  
+```dax
 XIRR(<table>, <values>, <dates>, [guess])  
-```  
+```
   
 #### Parameters  
   
@@ -40,9 +41,9 @@ The series of cash flow values must contain at least one positive number and one
 ## Example  
 The following calculates the internal rate of return of the CashFlows table:  
   
-```  
+```dax
 Rate of return := XIRR( CashFlows, [Payment], [Date] )  
-```  
+```
   
 |Date|Payment|  
 |--------|-----------|  

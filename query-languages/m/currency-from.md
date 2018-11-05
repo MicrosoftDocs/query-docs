@@ -1,7 +1,8 @@
 ---
 title: "Currency.From | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,16 +15,18 @@ manager: kfile
 ## About  
 Returns a currency value from the given value.  
   
-```  
+## Syntax
+
+<pre> 
 Currency.From(value as any, optional culture as nullable text, optional roundingMode as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
 |Argument|Description|  
 |------------|---------------|  
 |value|Value to convert.|  
-|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](http://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
+|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
 |optional roundingMode|Specifies rounding direction when there is a tie between the possible numbers to round to.|  
   
 ## Remarks  
@@ -31,10 +34,10 @@ If a value is null, Currency.From returns null.  If a value is a number within r
   
 ## Examples  
   
-```  
+```powerquery-m 
 Currency.From("1.23455") equals 1.2346  
 ```  
   
-```  
+```powerquery-m  
 Currency.From("1.23455", "en-Us", RoundingMode.Down) equals 1.2345  
 ```  

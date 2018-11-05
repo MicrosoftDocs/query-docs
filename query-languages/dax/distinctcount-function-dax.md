@@ -1,6 +1,7 @@
 ---
 title: "DISTINCTCOUNT Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ The DISTINCTCOUNT function counts the number of distinct values in a column.
   
 ## Syntax  
   
-```  
+```dax
 DISTINCTCOUNT(<column>)  
-```  
+```
   
 #### Parameters  
 
@@ -33,9 +34,9 @@ The only argument allowed to this function is a column. You can use columns cont
 ## Example  
 The following example shows how to count the number of distinct sales orders in the column ResellerSales_USD[SalesOrderNumber].  
   
-```  
+```dax
 =DISTINCTCOUNT(ResellerSales_USD[SalesOrderNumber])  
-```  
+```dax
 Using the above measure in a table with calendar year in the side and product category on top gives the following results:  
   
 |**Distinct Reseller Orders count**|**Column Labels**||||||  

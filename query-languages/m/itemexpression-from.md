@@ -1,7 +1,8 @@
 ---
 title: "ItemExpression.From | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,7 +10,12 @@ ms.author: owend
 manager: kfile
 ---
 # ItemExpression.From
-<code>ItemExpression.From(<b>function</b> as function) as record</code>
+
+## Syntax
+
+<pre>
+ItemExpression.From(<b>function</b> as function) as record
+</pre>
 
 ## About
 Returns the AST for the body of `function`, normalized into an *item expression*: 
@@ -30,7 +36,9 @@ An error is raised if an item expression AST cannot be returned for the body of 
 ## Example 1
 Returns the AST for the body of the function `each _ <> null`
 
-`ItemExpression.From(each _ <> null)`
+```powerquery-m
+ItemExpression.From(each _ <> null)
+```
 
 
 <table> <tr> <th>Kind</th> <td>Binary</td> </tr> <tr> <th>Operator</th> <td>NotEquals</td> </tr> <tr> <th>Left</th> <td>[Record]</td> </tr> <tr> <th>Right</th> <td>[Record]</td> </tr> </table>

@@ -1,7 +1,8 @@
 ---
 title: "Table.ReplaceErrorValues | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Replaces the error values in the specified columns with the corresponding specified value.  
   
-```  
+## Syntax
+
+<pre>
 Table.ReplaceErrorValues(table as table, errorReplacement as list) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,7 +34,7 @@ Table.ReplaceErrorValues(table as table, errorReplacement as list) as table
   
 ## Example  
   
-```  
+```powerquery-m
 Table.ReplaceErrorValues(  
   
     Table.FromRows({{1,"hello"},{3,...}}, {"Column1","Column2"}),  

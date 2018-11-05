@@ -1,7 +1,8 @@
 ---
 title: "List.ReplaceValue | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -13,10 +14,11 @@ manager: kfile
   
 ## About  
 Searches a list of values for the value and replaces each occurrence with the replacement value.  
-  
-```  
+## Syntax
+
+<pre>
 List.ReplaceValue(list as list,  oldValue as any, newValue as any,  replacer as function) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -29,6 +31,6 @@ List.ReplaceValue(list as list,  oldValue as any, newValue as any,  replacer as 
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 List.ReplaceValue({"a", "B", "a", "a"}, "a", "A", Replacer.ReplaceText) equals {"A", "B", "A", "A"}  
 ```  

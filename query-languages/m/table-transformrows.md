@@ -1,7 +1,8 @@
 ---
 title: "Table.TransformRows | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Transforms the rows from a table using a transform function.  
   
-```  
+## Syntax
+
+<pre>
 Table.TransformRows(table as table, transform as function) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -30,5 +33,8 @@ Table.TransformRows(table as table, transform as function) as list
 -   Table.TransformRows is similar to List.Transform but requires a table as input.  
   
 ## <a name="__goback"></a>Example  
-`Table.TransformRows(    Table.FromRecords({[A=1], [A=2], [A=3], [A=4], [A=5]}),    each [A]) equals {1, 2, 3, 4, 5}`  
+
+```powerquery-m
+Table.TransformRows(    Table.FromRecords({[A=1], [A=2], [A=3], [A=4], [A=5]}),    each [A]) equals {1, 2, 3, 4, 5}
+``` 
   

@@ -1,7 +1,8 @@
 ---
 title: "Uri.BuildQueryString | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,14 +10,22 @@ ms.author: owend
 manager: kfile
 ---
 # Uri.BuildQueryString
-<code>Uri.BuildQueryString(**query** as record) as text</code>
+
+## Syntax
+
+<pre>
+Uri.BuildQueryString(**query** as record) as text
+</pre>
+
 ## About
-Assemble the record <code>query</code> into a URI query string, escaping characters as necessary.
+Assemble the record `query` into a URI query string, escaping characters as necessary.
 
 ## Example 
 Encode a query string which contains some special characters.
 
-<code>Uri.BuildQueryString([a="1", b="+$"])</code>
+```powerquery-m
+Uri.BuildQueryString([a="1", b="+$"])
+```
 
-<code>"a=1&b=%2B%24"</code>
+`"a=1&b=%2B%24"`
 

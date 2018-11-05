@@ -1,7 +1,8 @@
 ---
 title: "Table.AddIndexColumn | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a table with a new column with a specific name that, for each row, contains an index of the row in the table.  
   
-```  
+## Syntax
+
+<pre>
 Table.AddIndexColumn(table as table, newColumnName as text, optional initialValue as nullable number, optional increment as nullable number) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -29,7 +32,7 @@ Table.AddIndexColumn(table as table, newColumnName as text, optional initialValu
   
 ## Examples  
   
-```  
+```powerquery-m
 Table.AddIndexColumn(Table.FromRecords(  
   
 {  
@@ -54,7 +57,7 @@ Table.AddIndexColumn(Table.FromRecords(
 |3|Paul|543-7890|2|  
 |4|Ringo|232-1550|3|  
   
-```  
+```powerquery-m
 Table.AddIndexColumn(Table.FromRecords(  
   
 {  

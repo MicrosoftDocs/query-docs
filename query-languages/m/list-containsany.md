@@ -1,7 +1,8 @@
 ---
 title: "List.ContainsAny | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns true if any item in values is found in a list.  
   
-```  
+## Syntax
+
+<pre>
 List.ContainsAny(list as list, values as list,optional equationCriteria as any) as logical  
-```  
+</pre>
   
 ## Arguments  
   
@@ -28,10 +31,10 @@ List.ContainsAny(list as list, values as list,optional equationCriteria as any) 
   
 ## Examples  
   
-```  
+```powerquery-m
 List.ContainsAny({1, 2, 3}, {2, 4}) equals true  
 ```  
   
-```  
+```powerquery-m
 List.ContainsAny({1, 2, 3}, {4, 5}) equals false  
 ```  

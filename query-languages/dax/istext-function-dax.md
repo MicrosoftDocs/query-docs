@@ -1,6 +1,7 @@
 ---
 title: "ISTEXT Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Checks if a value is text, and returns TRUE or FALSE.
   
 ## Syntax  
   
-```  
+```dax
 ISTEXT(<value>)  
-```  
+```
   
 #### Parameters  
   
@@ -29,7 +30,7 @@ TRUE if the value is text; otherwise FALSE
 ## Example  
 The following examples show the behavior of the ISTEXT function.  
   
-```  
+```dax
 //RETURNS: Is Text  
 =IF(ISTEXT("text"), "Is Text", "Is Non-Text")  
   
@@ -41,7 +42,7 @@ The following examples show the behavior of the ISTEXT function.
   
 //RETURNS: Is Non-Text  
 =IF(ISTEXT(BLANK()), "Is Text", "Is Non-Text")  
-```  
+```
   
 ## See Also  
 [Information Functions &#40;DAX&#41;](information-functions-dax.md)  

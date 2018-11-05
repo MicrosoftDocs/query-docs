@@ -1,6 +1,7 @@
 ---
 title: "DAX Queries | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -14,22 +15,22 @@ With DAX queries, you can retrieve data defined by a table expression from the i
   
 ## Syntax  
   
-```  
+```dax
 [DEFINE {  MEASURE <tableName>[<name>] = <expression> } 
         {  VAR <name> = <expression>}]
-```  
+```
  
-```  
+```dax
 EVALUATE <table>  
-```  
+```
   
-```  
+```dax
 [ORDER BY {<expression> [{ASC | DESC}]}[, …]  
-```  
+```
   
-```  
+```dax
 [START AT {<value>|<parameter>} [, …]]]  
-```  
+```
   
 #### Parameters  
 **DEFINE** clause  
@@ -81,7 +82,7 @@ A table of data.
 ## Parameters in XMLA and DAX queries  
 A well-defined DAX query statement can be parameterized and then used over and over with just changes in the parameter values.  
   
-The [Execute Method (XMLA)](http://msdn.microsoft.com/en-us/0fff5221-7164-4bbc-ab58-49cf04c52664) method in XMLA has a [Parameters Element (XMLA)](http://msdn.microsoft.com/en-us/d46454a1-a1d1-4aa8-95ea-54be22a53e83) collection element that allows parameters to be defined and assigned a value; within the collection, each [Parameter Element (XMLA)](http://msdn.microsoft.com/en-us/fe31ac3d-a3e8-4f60-a81a-c43271ddbed4) element defines the name of the parameter and a value to it.  
+The [Execute Method (XMLA)](https://msdn.microsoft.com/en-us/0fff5221-7164-4bbc-ab58-49cf04c52664) method in XMLA has a [Parameters Element (XMLA)](https://msdn.microsoft.com/en-us/d46454a1-a1d1-4aa8-95ea-54be22a53e83) collection element that allows parameters to be defined and assigned a value; within the collection, each [Parameter Element (XMLA)](https://msdn.microsoft.com/en-us/fe31ac3d-a3e8-4f60-a81a-c43271ddbed4) element defines the name of the parameter and a value to it.  
   
 The DAX query syntax allows you to reference XMLA parameters by prefixing the name of the parameter with an **@** character. Hence, any place in the syntax where a value is allowed it can be replaced with a parameter call. Keep in-mind all XMLA parameters are typed as text.  
   
@@ -95,7 +96,7 @@ The DAX query syntax allows you to reference XMLA parameters by prefixing the na
   
 ## Reference  
   
--   [Execute Method (XMLA)](http://msdn.microsoft.com/en-us/0fff5221-7164-4bbc-ab58-49cf04c52664)  
+-   [Execute Method (XMLA)](https://msdn.microsoft.com/en-us/0fff5221-7164-4bbc-ab58-49cf04c52664)  
   
--   [Statement Element (XMLA)](http://msdn.microsoft.com/en-us/bfedc03c-d476-4d55-b5fd-36169f01351a)  
+-   [Statement Element (XMLA)](https://msdn.microsoft.com/en-us/bfedc03c-d476-4d55-b5fd-36169f01351a)  
   

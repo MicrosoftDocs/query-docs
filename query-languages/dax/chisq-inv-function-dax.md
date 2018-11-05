@@ -1,6 +1,7 @@
 ---
 title: "CHISQ.INV Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -15,9 +16,9 @@ The chi-squared distribution is commonly used to study variation in the percenta
   
 ## Syntax  
   
-```  
+```dax
 CHISQ.INV(probability,deg_freedom)  
-```  
+```
   
 #### Parameters  
   

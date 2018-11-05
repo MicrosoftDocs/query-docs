@@ -1,7 +1,8 @@
 ---
 title: "Binary.ToText | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Encodes binary data into a text form.  
   
-```  
+## Syntax
+
+<pre>   
 Binary.ToText(binary as binary, encoding as number) as text  
-```  
+</pre> 
   
 ## Arguments  
   

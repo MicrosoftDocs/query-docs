@@ -1,7 +1,8 @@
 ---
 title: "List.Buffer | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Buffers the list in memory.  The result of this call is a stable list, which means it will have a determinimic count, and order of items.  
   
-```  
+## Syntax
+
+<pre>
 List.Buffer(list as list) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +29,6 @@ List.Buffer(list as list) as list
   
 ## Example  
   
-```  
+```powerquery-m
 List.Buffer(Sql:Database("localhost","northwind")[Customers]) equals stable copy of table Customers  
 ```  

@@ -1,7 +1,8 @@
 ---
 title: "Table.Buffer | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Buffers a table into memory, isolating it from external changes during evaluation.  
   
-```  
+## Syntax
+
+<pre>
 Table.Buffer(table as table) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -28,8 +31,8 @@ Table.Buffer(table as table) as table
   
 -   Table.Buffer is similar to List.Buffer but requires a table as input.  
   
-## Example  
-  
-```  
+## Example 
+ 
+```powerquery-m
 Table.Buffer(Sql.Database("localhost", "Northwind")[Customers]) equals Buffered copy of the Customers table  
 ```  

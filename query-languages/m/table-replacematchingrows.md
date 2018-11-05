@@ -1,7 +1,8 @@
 ---
 title: "Table.ReplaceMatchingRows | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Replaces specific rows from a table with the new rows.  
   
-```  
+## Syntax
+
+<pre>
 Table.ReplaceMatchingRows(table as table, replacements as list, optional equationCriteria as any) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -34,7 +37,7 @@ Table.ReplaceMatchingRows(table as table, replacements as list, optional equatio
   
 ## Example  
   
-```  
+```powerquery-m
 Table.ReplaceMatchingRows(  
   
 Table.FromRecords(  

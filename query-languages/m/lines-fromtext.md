@@ -1,7 +1,8 @@
 ---
 title: "Lines.FromText | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Converts a text value to a list of text values split at lines breaks.  
   
-```  
+## Syntax
+
+<pre>
 Lines.FromText(text as text,  optional quoteStyle as nullable number,  optional includeLineSeparators as nullable logical) as list  
-```  
+</pre>
   
 ## <a name="__toc360789868"></a>Arguments  
   

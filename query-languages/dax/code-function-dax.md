@@ -1,6 +1,7 @@
 ---
 title: "CODE Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -18,9 +19,9 @@ Returns a numeric code for the first character in a text string. The returned co
   
 ## Syntax  
   
-```  
+```dax
 CODE(text)  
-```  
+```
   
 #### Parameters  
   

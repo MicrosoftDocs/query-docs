@@ -1,6 +1,7 @@
 ---
 title: "COUNTX Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Counts the number of rows that contain a number or an expression that evaluates 
   
 ## Syntax  
   
-```  
+```dax
 COUNTX(<table>,<expression>)  
-```  
+```
   
 #### Parameters  
   
@@ -37,16 +38,16 @@ If you want to count logical values, or text, use the COUNTA or COUNTAX function
 ## Example  
 The following formula returns a count of all rows in the Product table that have a list price.  
   
-```  
+```dax
 =COUNTX(Product,[ListPrice])  
-```  
+```
   
 ## Example  
 The following formula illustrates how to pass a filtered table to COUNTX for the first argument. The formula uses a filter expression to get only the rows in the Product table that meet the condition, ProductSubCategory = "Caps", and then counts the rows in the resulting table that have a list price. The FILTER expression applies to the table Products but uses a value that you look up in the related table, ProductSubCategory.  
   
-```  
+```dax
 =COUNTX(FILTER(Product,RELATED(ProductSubcategory[EnglishProductSubcategoryName])="Caps", Product[ListPrice])  
-```  
+```
   
 ## See Also  
 [COUNT Function &#40;DAX&#41;](count-function-dax.md)  

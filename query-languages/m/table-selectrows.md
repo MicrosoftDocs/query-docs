@@ -1,7 +1,8 @@
 ---
 title: "Table.SelectRows | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a table containing only the rows that match a condition.  
   
-```  
+## Syntax
+
+<pre>
 Table.SelectRows(table as table, condition as function) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,7 +34,7 @@ Table.SelectRows(table as table, condition as function) as table
   
 ## Examples  
   
-```  
+```powerquery-m
 Table.SelectRows(Table.FromRecords(  
   
 {  

@@ -1,7 +1,8 @@
 ---
 title: "Text.TrimEnd | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Removes any occurrences of the characters specified in trimChars from the end of the original text value.  
   
-```  
+## Syntax
+
+<pre>
 Text.TrimEnd(text as nullable text,  optional trimChars as nullable list) as nullable text  
-```  
+</pre>
   
 ## Arguments  
   

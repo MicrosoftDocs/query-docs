@@ -1,7 +1,8 @@
 ---
 title: "Table.Min | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the smallest row or rows from a table using a comparisonCriteria.  
   
-```  
+## Syntax
+
+<pre>
 Table.Min(table as table, comparisonCriteria as any, optional default as any) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -32,7 +35,7 @@ Table.Min(table as table, comparisonCriteria as any, optional default as any) as
   
 ## Example  
   
-```  
+```powerquery-m
 let  
   
     Employees = Table.FromRecords(  

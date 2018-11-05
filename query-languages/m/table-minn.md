@@ -1,7 +1,8 @@
 ---
 title: "Table.MinN | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the smallest N rows in the given table. After the rows are sorted, the countOrCondition parameter must be specified to further filter the result.  
   
-```  
+## Syntax
+
+<pre>
 Table.MinN(table as table, comparisonCriteria as any, countOrCondition as any) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -35,7 +38,7 @@ The **countOrCondition** argument has two possible settings:
   
 ## Examples  
   
-```  
+```powerquery-m
 Table.MinN(Employees, "Salary", 3) equals  
 ```  
   
@@ -45,7 +48,7 @@ Table.MinN(Employees, "Salary", 3) equals
 |Nikki|5|75000|  
 |Andrew|6|85000|  
   
-```  
+```powerquery-m
 Table.MinN(Employees, "Salary", each [Level] < 6) equals  
 ```  
   

@@ -1,7 +1,8 @@
 ---
 title: "Table.AlternateRows | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,10 @@ manager: kfile
 ## About  
 Returns a table containing an alternating pattern of the rows from a table.  
   
-```  
-Table.AlternateRows( table as table, offset as number, skip as number, take as number) as table  
-```  
+## Syntax
+
+<pre>
+Table.AlternateRows( table as table, offset as number, skip as number, take as number) as table </pre>
   
 ## <a name="__toc360789469"></a>Remarks  
   
@@ -24,7 +26,7 @@ Table.AlternateRows( table as table, offset as number, skip as number, take as n
   
 ## Example  
   
-```  
+```powerquery-m
 Table.AlternateRows(Table.FromRecords({  
   
     [CustomerID = 1, Name = "Bob", Phone = "123-4567"],  

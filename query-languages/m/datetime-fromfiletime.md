@@ -1,7 +1,8 @@
 ---
 title: "DateTime.FromFileTime | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a DateTime value from the supplied number.  
   
-```  
+## Syntax
+
+<pre>
 DateTime.FromFileTime(fileTime as nullable number) as nullable datetime  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +29,6 @@ DateTime.FromFileTime(fileTime as nullable number) as nullable datetime
   
 ## Example  
   
-```  
+```powerquery-m
 DateTime.FromFileTime(12987640252984224) equals #datetime(2012, 7, 24, 14, 50, 52.9842245)  
 ```  

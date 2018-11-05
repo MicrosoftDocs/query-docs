@@ -1,6 +1,7 @@
 ---
 title: "SWITCH Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Evaluates an expression against a list of values and returns one of multiple pos
   
 ## Syntax  
   
-```  
+```dax
 SWITCH(<expression>, <value>, <result>[, <value>, <result>]…[, <else>])  
-```  
+```
   
 #### Parameters  
 expression  
@@ -39,9 +40,9 @@ All result expressions and the else expression must be of the same data type.
 ## Example  
 The following example creates a calculated column of month names.  
   
-```  
+```dax
 =SWITCH([Month], 1, "January", 2, "February", 3, "March", 4, "April"  
                , 5, "May", 6, "June", 7, "July", 8, "August"  
                , 9, "September", 10, "October", 11, "November", 12, "December"  
                , "Unknown month number" )  
-```  
+```

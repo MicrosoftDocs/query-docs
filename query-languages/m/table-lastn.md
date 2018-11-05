@@ -1,7 +1,8 @@
 ---
 title: "Table.LastN | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the last row(s) from a table, depending on the **countOrCondition** parameter.  
   
-```  
+## Syntax
+
+<pre>
 Table.LastN(table as table, countOrCondition as any) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -33,7 +36,7 @@ Table.LastN(table as table, countOrCondition as any) as table
   
 ## Example  
   
-```  
+```powerquery-m
 Table.LastN(Table.FromRecords({  
   
     [CustomerID = 1, Name = "Bob", Phone = "123-4567"],  

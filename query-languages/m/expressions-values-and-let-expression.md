@@ -1,7 +1,8 @@
 ---
 title: "Expressions, values, and let expression | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -13,7 +14,7 @@ A Power Query M formula language query is composed of formula **expression** ste
   
 ## <a name="Let"></a>Let expression  
   
-```  
+```powerquery-m
 let  
     Source = Text.Proper("hello world")  
 in  
@@ -42,7 +43,7 @@ A **primitive** value is single-part value, such as a number, logical, text, or 
 ## <a name="Function"></a>Function value  
 A **Function** is a value   which, when invoked with arguments, produces a new value.  Functions are written by listing the function’s **parameters** in parentheses, followed by the goes-to symbol =&gt;, followed by the expression defining the function. For example, to create a function called “MyFunction” that has two parameters and performs a calculation on parameter1 and parameter2:  
   
-```  
+```powerquery-m
 let  
     MyFunction = (parameter1, parameter2) => (parameter1 + parameter2) / 2  
 in  
@@ -99,7 +100,7 @@ The following is a record containing fields named "OrderID", "CustomerID", "Item
   
 Here's an example record:  
   
-```  
+```powerquery-m
 let Source =   
         [  
               OrderID = 1,   
@@ -111,7 +112,7 @@ in Source
 ```  
 To get the value of  an Item, you use square brackets as Source[Item]:  
   
-```  
+```powerquery-m
 let Source =   
     [  
           OrderID = 1,   
@@ -127,7 +128,7 @@ A **Table** is a set of values organized into named columns and rows. The column
   
 #### Example 1 - Create a table with implicit column types  
   
-```  
+```powerquery-m
 let  
   Source = #table(   
     {"OrderID", "CustomerID", "Item", "Price"},   
@@ -141,7 +142,7 @@ in
   
 #### Example 2 – Create a table with explicit column types  
   
-```  
+```powerquery-m
 let  
     Source = #table(  
     type table [OrderID = number, CustomerID = number, Item = text, Price = number],   
@@ -162,7 +163,7 @@ Both of the examples above creates a table with the following shape:
   
 #### <a name="tableIndex"></a>Example 3 – Get a row from a table by index position  
   
-```  
+```powerquery-m
 let  
     Source = #table(  
     type table [OrderID = number, CustomerID = number, Item = text, Price = number],   
@@ -188,7 +189,7 @@ Structured data can contain any M value. Here are some examples:
   
 #### Example 1 - List with \[Primitive](#_Primitive_value_1) values, \[Function](#_Function_value), and \[Record](#_Record_value)  
   
-```  
+```powerquery-m
 let  
     Source =   
 {  
@@ -206,7 +207,7 @@ Evaluating this expression can be visualized as:
   
 ### Example 2 - Record containing Primitive values and nested Records  
   
-```  
+```powerquery-m
 let  
     Source = [CustomerID = 1, Name = "Bob", Phone = "123-4567", Orders =   
         {  
@@ -226,7 +227,7 @@ Evaluating this expression can be visualized as:
 ### <a name="If"></a>If expression  
 The **if** expression selects between two expressions based on a logical condition. For example:  
   
-```  
+```powerquery-m
 if 2 > 1 then  
     2 + 2   
 else   

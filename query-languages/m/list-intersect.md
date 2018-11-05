@@ -1,7 +1,8 @@
 ---
 title: "List.Intersect | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a list from a list of lists and intersects common items in individual lists. Duplicate values are supported.  
   
-```  
+## Syntax
+
+<pre>
 List.Intersect(list as list /* { List } */,optional equationCriteria as any) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,14 +34,14 @@ List.Intersect(list as list /* { List } */,optional equationCriteria as any) as 
   
 ## Examples  
   
-```  
+```powerquery-m
 List.Intersect({ {1..5}, {2..6}, {3..7} }) equals {3..5}  
 ```  
   
-```  
+```powerquery-m
 List.Intersect({ {1..5}, {4..8}, {7..11} }) equals {}  
 ```  
   
-```  
+```powerquery-m 
 List.Intersect({ {1, 1, 1, 2}, {1, 1, 2, 2} }) equals {1, 1, 2}  
 ```  

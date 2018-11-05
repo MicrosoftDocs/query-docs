@@ -1,7 +1,8 @@
 ---
 title: "Table.IsDistinct | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Determines whether a table contains only distinct rows.  
   
-```  
+## Syntax
+
+<pre>
 Table.IsDistinct(table as table, optional equationCriteria as any) as logical  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,7 +30,7 @@ Table.IsDistinct(table as table, optional equationCriteria as any) as logical
   
 ## Example  
   
-```  
+```powerquery-m 
 Table.IsDistinct  
   
 (  

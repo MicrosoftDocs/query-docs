@@ -1,7 +1,8 @@
 ---
 title: "Table.RemoveMatchingRows | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Removes all occurrences of rows from a table.  
   
-```  
+## Syntax
+
+<pre>
 Table.RemoveMatchingRows(table as table, rows as list, optional equationCriteria as any) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,7 +34,7 @@ Table.RemoveMatchingRows is similar to List.RemoveMatchingItems but requires a t
   
 ## Example  
   
-```  
+```powerquery-m
 Table.RemoveMatchingRows(Table.FromRecords(  
   
 {  

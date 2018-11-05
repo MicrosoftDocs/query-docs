@@ -1,7 +1,8 @@
 ---
 title: "Text.EndsWith | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a logical value indicating whether a text value substring was found at the end of a string.  
   
-```  
+## Syntax
+
+<pre>
 Text.EndsWith(string as nullable text, substring as text, optional comparer as nullable function) as nullable logical  
-```  
+</pre>
   
 ## Arguments  
   

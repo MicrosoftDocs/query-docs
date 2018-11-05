@@ -1,6 +1,7 @@
 ---
 title: "Pre-Defined Numeric Formats for the FORMAT Function | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -34,14 +35,14 @@ Note that format strings are based on Visual Basic (OLE Automation) and therefor
 ## Example  
 The following samples show the usage of different predefined formatting strings to format a numeric value.  
   
-```  
+```dax
 FORMAT( 12345.67, "General Number")  
 FORMAT( 12345.67, "Currency")  
 FORMAT( 12345.67, "Fixed")  
 FORMAT( 12345.67, "Standard")  
 FORMAT( 12345.67, "Percent")  
 FORMAT( 12345.67, "Scientific")  
-```  
+```dax
 The above expressions return the following results:  
   
 **12345.67** "General Number" displays the number with no formatting.  

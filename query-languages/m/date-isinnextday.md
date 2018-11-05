@@ -1,7 +1,8 @@
 ---
 title: "Date.IsInNextDay | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,16 +10,22 @@ ms.author: owend
 manager: kfile
 ---
 # Date.IsInNextDay
-<code>Date.IsInNextDay(**dateTime** as any) as nullable logical</code>
+
+## Syntax
+
+<pre>
+Date.IsInNextDay(**dateTime** as any) as nullable logical
+</pre>
 
 ## About
-Indicates whether the given datetime value <code>dateTime</code> occurs during the next day, as determined by the current date and time on the system. 
-- <code>dateTime</code>: A <code>date</code>, <code>datetime</code>, or <code>datetimezone</code> value to be evaluated.
+Indicates whether the given datetime value `dateTime` occurs during the next day, as determined by the current date and time on the system. 
+- `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
 
 ## Example 
 Determine if the day after the current system time is in the next day.
 
-<code>Date.IsInNextDay(Date.AddDays(DateTime.FixedLocalNow(), 1))</code>
+```powerquery-mDate.IsInNextDay(Date.AddDays(DateTime.FixedLocalNow(), 1))
+```
 
-<code>true</code>
+`true`
 

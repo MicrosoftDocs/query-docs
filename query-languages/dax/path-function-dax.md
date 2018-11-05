@@ -1,6 +1,7 @@
 ---
 title: "PATH Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns a delimited text string with the identifiers of all the parents of the c
   
 ## Syntax  
   
-```  
+```dax
 PATH(<ID_columnName>, <parent_columnName>)  
-```  
+```
   
 #### Parameters  
 ID_columnName  
@@ -46,11 +47,11 @@ The path is not constrained to a single level of parent-child relationships; it 
   
 -   If *ID_columnName* contains a vertical bar '|' then PATH() returns an error.  
   
-This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [http://go.microsoft.com/fwlink/?LinkId=219172](http://go.microsoft.com/fwlink/?LinkId=219172).  
+This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
 ## Example  
 The following example creates a calculated column that lists all the managers for each employee.  
   
-```  
+```dax
 =PATH(Employee[EmployeeKey], Employee[ParentEmployeeKey])  
-```  
+```

@@ -1,6 +1,7 @@
 ---
 title: "INT Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Rounds a number down to the nearest integer.
   
 ## Syntax  
   
-```  
+```dax
 INT(<number>)  
-```  
+```
   
 #### Parameters  
   
@@ -32,9 +33,9 @@ TRUNC and INT are similar in that both return integers. TRUNC removes the fracti
 ## Example  
 The following expression rounds the value to 1. If you use the ROUND function, the result would be 2.  
   
-```  
+```dax
 =INT(1.5)  
-```  
+```
   
 ## See Also  
 [Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  

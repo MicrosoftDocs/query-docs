@@ -1,7 +1,8 @@
 ---
 title: "Table.MatchesAnyRows | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns true if any of the rows in a table meet a condition.  
   
-```  
+## Syntax
+
+<pre>
 Table.MatchesAnyRows( table as table, condition as function) as logical  
-```  
+</pre>
   
 ## Arguments  
   
@@ -30,8 +33,8 @@ Table.MatchesAnyRows( table as table, condition as function) as logical
 -   Table.MatchesAnyRows is similar to List.MatchesAny but requires a table argument.  
   
 ## Example  
-  
-```  
+
+```powerquery-m
 Table.MatchesAnyRows(Table.FromRecords (  
   
 {  

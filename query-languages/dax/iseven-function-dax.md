@@ -1,6 +1,7 @@
 ---
 title: "ISEVEN Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns TRUE if number is even, or FALSE if number is odd.
   
 ## Syntax  
   
-```  
+```dax
 ISEVEN(number)  
-```  
+```
   
 #### Parameters  
   

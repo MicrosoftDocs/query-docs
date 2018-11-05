@@ -1,7 +1,8 @@
 ---
 title: "Number.Round | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a nullable number (n) if value is an integer.  
   
-```  
+## Syntax
+
+<pre>
 Number.Round(value as nullable number, digits as nullable number,  roundingMode as nullable number) as nullable number  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -46,34 +49,34 @@ Number.Round(value as nullable number, digits as nullable number,  roundingMode 
   
 ## Examples  
   
-```  
+```powerquery-m
 Number.Round(-1.249, 2) equals -1.25  
 ```  
   
-```  
+```powerquery-m
 Number.Round(-1.245, 2) equals -1.24  
 ```  
   
-```  
+```powerquery-m
 Number.Round(1.245, 2, RoundingMode.Up) equals 1.25  
 ```  
   
-```  
+```powerquery-m
 Number.Round(1.245, 2, RoundingMode.Down) equals 1.24  
 ```  
   
-```  
+```powerquery-m
 Number.Round(1.245, 2, RoundingMode.AwayFromZero) equals 1.25  
 ```  
   
-```  
+```powerquery-m
 Number.Round(1.245, 2, RoundingMode.TowardZero) equals 1.24  
 ```  
   
-```  
+```powerquery-m
 Number.Round(1.245, 2, RoundingMode.ToEven) equals 1.24  
 ```  
   
-```  
+```powerquery-m
 Number.Round(-1.245, 2, RoundingMode.ToEven) equals -1.24  
 ```  

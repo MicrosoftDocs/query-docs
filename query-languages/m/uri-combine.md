@@ -1,7 +1,8 @@
 ---
 title: "Uri.Combine | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a Uri based on the combination of the base and relative parts.  
   
-```  
+## Syntax
+
+<pre>
 Uri.Combine(baseUri as text, relativeUri as text) as text  
-```  
+</pre>
   
 ## Arguments  
   

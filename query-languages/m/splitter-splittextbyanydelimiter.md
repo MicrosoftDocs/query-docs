@@ -1,7 +1,8 @@
 ---
 title: "Splitter.SplitTextByAnyDelimiter | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a function that splits text by any supported delimiter.  
   
-```  
+## Syntax
+
+<pre>
 Splitter.SplitTextByEachDelimiter(delimiters as list, optional quoteStyle as nullable number) as function  
-```  
+</pre>
   
 ## Arguments  
   

@@ -1,7 +1,8 @@
 ---
 title: "Type.ReplaceTableKeys | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Replaces the keys in a table type.  
   
-```  
+## Syntax
+
+<pre>  
 Type.ReplaceTableKeys(tableType as type,  keys as list) as type  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,6 +30,6 @@ Type.ReplaceTableKeys(tableType as type,  keys as list) as type
   
 ## Example  
   
-```  
+```powerquery-m
 Type.ReplaceTableKeys(tableType, {}) equals  returns type value with all keys removed  
 ```  

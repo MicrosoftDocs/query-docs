@@ -1,6 +1,7 @@
 ---
 title: "ASIN Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the arcsine, or inverse sine, of a number. The arcsine is the angle whos
   
 ## Syntax  
   
-```  
+```dax
 ASIN(number)  
-```  
+```
   
 #### Parameters  
   

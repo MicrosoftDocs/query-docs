@@ -1,7 +1,8 @@
 ---
 title: "Number.Sin | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the sine of a number.  
   
-```  
+## Syntax
+
+<pre>
 Number.Sin (angle as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +29,6 @@ Number.Sin (angle as nullable number) as nullable number
   
 ## Example  
   
-```  
+```powerquery-m 
 Number.Sin(0) equals 0  
 ```  

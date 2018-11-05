@@ -1,6 +1,7 @@
 ---
 title: "IN Operator / CONTAINSROW Function | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -15,11 +16,11 @@ Except syntax, the IN operator and CONTAINSROW function are functionally equival
 ## IN Operator 
 ### Syntax  
   
-```  
+```dax
 <scalarExpr> IN <tableExpr> 
 ( <scalarExpr1>, <scalarExpr2>, … ) IN <tableExpr>
 
-```  
+```
 
 ## CONTAINSROW Function
 ### Syntax
@@ -51,21 +52,21 @@ NOT IN is not an operator in DAX. To perform the logical negation of the IN oper
 ### Example 1
 The following equivalent DAX queries:
 
-```
+```dax
 EVALUATE FILTER(ALL(DimProduct[Color]), [Color] IN { "Red", "Yellow", "Blue" })
 ORDER BY [Color]
 ```
 
 and
 
-```
+```dax
 EVALUATE FILTER(ALL(DimProduct[Color]), ([Color]) IN { "Red", "Yellow", "Blue" })
 ORDER BY [Color]
 ```
 
 and
 
-```
+```dax
 EVALUATE FILTER(ALL(DimProduct[Color]), CONTAINSROW({ "Red", "Yellow", "Blue" }, [Color]))
 ORDER BY [Color]
 ```
@@ -81,13 +82,13 @@ Yellow  |
 ### Example 2
 The following equivalent DAX queries:
 
-```
+```dax
 EVALUATE FILTER(SUMMARIZE(DimProduct, [Color], [Size]), ([Color], [Size]) IN { ("Black", "L") }) 
 ```
 
 and
 
-```
+```dax
 EVALUATE FILTER(SUMMARIZE(DimProduct, [Color], [Size]), CONTAINSROW({ ("Black", "L") }, [Color], [Size]))
 ```
 
@@ -101,14 +102,14 @@ Black     |  L
 ### Example 3
 The following equivalent DAX queries:
 
-```
+```dax
 EVALUATE FILTER(ALL(DimProduct[Color]), NOT [Color] IN { "Red", "Yellow", "Blue" })
 ORDER BY [Color] 
 ```
 
 and
 
-```
+```dax
 EVALUATE FILTER(ALL(DimProduct[Color]), NOT CONTAINSROW({ "Red", "Yellow", "Blue" }, [Color]))
 ORDER BY [Color]
 ```

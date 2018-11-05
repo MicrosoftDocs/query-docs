@@ -1,7 +1,8 @@
 ---
 title: "SharePoint.Contents | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,11 +10,16 @@ ms.author: owend
 manager: kfile
 ---
 # SharePoint.Contents
-<code>SharePoint.Contents(**url** as text, optional **options **as nullable record) as table</code>
+
+## Syntax
+
+<pre>
+SharePoint.Contents(**url** as text, optional **options **as nullable record) as table
+</pre>
 
 ## About
 
-Returns a table containing a row for each folder and document found at the specified SharePoint site, <code>url</code>. Each row contains properties of the folder or file and a link to its content. <code>options</code> may be specified to control the following options: 
+Returns a table containing a row for each folder and document found at the specified SharePoint site, `url`. Each row contains properties of the folder or file and a link to its content. `options` may be specified to control the following options: 
 
-* <code>ApiVersion</code> : A number (14 or 15) or the text &quot;Auto&quot; that specifies the SharePoint API version to use for this site. When not specified, API version 14 is used. When Auto is specified, the server version will be automatically discovered if possible, otherwise version defaults to 14. Non-English SharePoint sites require at least version 15.
+* `ApiVersion` : A number (14 or 15) or the text &quot;Auto&quot; that specifies the SharePoint API version to use for this site. When not specified, API version 14 is used. When Auto is specified, the server version will be automatically discovered if possible, otherwise version defaults to 14. Non-English SharePoint sites require at least version 15.
   

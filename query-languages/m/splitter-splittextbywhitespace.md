@@ -1,7 +1,8 @@
 ---
 title: "Splitter.SplitTextByWhitespace | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a function that splits text according to whitespace.  
   
-```  
+## Syntax
+
+<pre>
 Splitter.SplitTextByWhitespace(optional quoteStyle as nullable number) as function  
-```  
+</pre>
   
 ## Arguments  
   

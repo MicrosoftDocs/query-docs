@@ -1,7 +1,8 @@
 ---
 title: "Table.FromColumns | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a table from a list containing nested lists with the column names and values.  
   
-```  
+## Syntax
+
+<pre> 
 Table.FromColumns(lists as list, optional columns as any) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,7 +34,7 @@ Table.FromColumns(lists as list, optional columns as any) as table
   
 ## Examples  
   
-```  
+```powerquery-m 
 Table.FromColumns({  
   
     {1, "Bob", "123-4567"} , {2, "Jim", "987-6543"}, {3, "Paul", "543-7890"} })  

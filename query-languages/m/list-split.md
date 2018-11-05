@@ -1,7 +1,8 @@
 ---
 title: "List.Split | Microsoft Docs"
 ms.date: 5/22/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -10,7 +11,11 @@ manager: kfile
 ---
 # List.Split
 
-<code>List.Split(<b>list</b> as list, <b>pageSize</b> as number) as list</code>
+## Syntax
+
+<pre>
+List.Split(<b>list</b> as list, <b>pageSize</b> as number) as list
+</pre>
 
 ## About
-Splits <code>list</code> into a list of lists where the first element of the output list is a list containing the first <code>pageSize</code> elements from the source list, the next element of the output list is a list containing the next <code>pageSize</code> elements from the source list, etc.
+Splits `list` into a list of lists where the first element of the output list is a list containing the first `pageSize` elements from the source list, the next element of the output list is a list containing the next `pageSize` elements from the source list, etc.

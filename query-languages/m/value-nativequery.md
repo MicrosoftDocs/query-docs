@@ -1,7 +1,8 @@
 ---
 title: "Value.NativeQuery | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,20 +10,25 @@ ms.author: owend
 manager: kfile
 ---
 # Value.NativeQuery
-<code>Value.NativeQuery(<b>target</b> as any, <b>query</b> as text, optional <b>parameters</b> as any, optional <b>options</b> as nullable record) as any</code>
+
+## Syntax
+
+<pre>Value.NativeQuery(<b>target</b> as any, <b>query</b> as text, optional <b>parameters</b> as any, optional <b>options</b> as nullable record) as any
+</pre>
+
 ## About
 
-Evaluates <code>query</code> against <code>target</code> using the parameters specified in <code>parameters</code> and the options specified in <code>options</code>.
+Evaluates `query` against `target` using the parameters specified in `parameters` and the options specified in `options`.
 
-The output of the query is defined by <code>target</code>.
+The output of the query is defined by `target`.
 
-<code>target</code> provides the context for the operation described by <code>query</code>.
+`target` provides the context for the operation described by `query`.
 
-<code>query</code> describes the query to be executed against <code>target</code>. <code>query</code> is expressed in a manner specific to <code>target</code> (e.g. a T-SQL statement).
+`query` describes the query to be executed against `target`. `query` is expressed in a manner specific to `target` (e.g. a T-SQL statement).
 
-The optional <code>parameters</code> value may contain either a list or record as appropriate to supply the parameter values expected by <code>query</code>.
+The optional `parameters` value may contain either a list or record as appropriate to supply the parameter values expected by `query`.
 
-The optional <code>options</code> record may contain options that affect the evaluation behavior of <code>query</code> against <code>target</code>. These options are specific to <code>target</code>.
+The optional `options` record may contain options that affect the evaluation behavior of `query` against `target`. These options are specific to `target`.
 
 
 

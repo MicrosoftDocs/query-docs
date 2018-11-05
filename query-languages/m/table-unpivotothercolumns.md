@@ -1,7 +1,8 @@
 ---
 title: "Table.UnpivotOtherColumns | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Translates all columns other than a specified set into attribute-value pairs, combined with the rest of the values in each row.  
   
-```  
+## Syntax
+
+<pre>
 Table.UnpivotOtherColumns(table as table, pivotColumns as list, attributeColumn as text,  valueColumn as text) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -33,7 +36,7 @@ Table.UnpivotOtherColumns(table as table, pivotColumns as list, attributeColumn 
   
 ## Example  
   
-```  
+```powerquery-m
 Table.UnpivotOtherColumns(Table.FromRecords({   [ key = "key1", attribute1 = 1, attribute2 = 2, attribute3 = 3 ],   [ key = "key2", attribute1 = 4, attribute2 = 5, attribute3 = 6 ]  }), { "key" }, "column1", "column2")  
 ```  
   

@@ -1,7 +1,8 @@
 ---
 title: "Type.ForRecord | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a Record type from a fields record.  
   
-```  
+## Syntax
+
+<pre>
 Type.ForRecord(fields as record, open as logical) as type  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,7 +30,7 @@ Type.ForRecord(fields as record, open as logical) as type
   
 ## Example  
   
-```  
+```powerquery-m
 Type.ForRecord(  
 [  
 X = [Type = type number, Optional = false],   

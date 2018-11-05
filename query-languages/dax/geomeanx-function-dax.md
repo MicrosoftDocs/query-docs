@@ -1,6 +1,7 @@
 ---
 title: "GEOMEANX Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -16,9 +17,9 @@ To return the geometric mean of the numbers in a column, use [GEOMEAN Function &
   
 ## Syntax  
   
-```  
+```dax
 GEOMEANX(<table>, <expression>)  
-```  
+```
   
 #### Parameters  
   
@@ -38,9 +39,9 @@ Only the numbers in the column are counted. Blanks, logical values, and text are
 ## Example  
 The following computes the geometric mean of the ReturnPct column in the Investments table:  
   
-```  
+```dax
 =GEOMEANX( Investments, Investments[ReturnPct] + 1 )  
-```  
+```
   
 ## See Also  
 [GEOMEAN Function &#40;DAX&#41;](geomean-function-dax.md)  

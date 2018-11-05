@@ -1,6 +1,7 @@
 ---
 title: "EXCEPT Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the rows of one table which do not appear in another table.
   
 ## Syntax  
   
-```  
+```dax
 EXCEPT(<table_expression1>, <table_expression2>  
-```  
+```
   
 #### Parameters  
   

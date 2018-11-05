@@ -1,6 +1,7 @@
 ---
 title: "ISNONTEXT Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Checks if a value is not text (blank cells are not text), and returns TRUE or FA
   
 ## Syntax  
   
-```  
+```dax
 ISNONTEXT(<value>)  
-```  
+```
   
 #### Parameters  
   
@@ -32,7 +33,7 @@ An empty string is considered text.
 ## Example  
 The following examples show the behavior of the ISNONTEXT function.  
   
-```  
+```dax
 //RETURNS: Is Non-Text  
 =IF(ISNONTEXT(1), "Is Non-Text", "Is Text")  
   
@@ -41,7 +42,7 @@ The following examples show the behavior of the ISNONTEXT function.
   
 //RETURNS: Is Text  
 =IF(ISNONTEXT(""), "Is Non-Text", "Is Text")  
-```  
+```
   
 ## See Also  
 [Information Functions &#40;DAX&#41;](information-functions-dax.md)  

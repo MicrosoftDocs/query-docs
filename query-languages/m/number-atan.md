@@ -1,7 +1,8 @@
 ---
 title: "Number.Atan | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the arctangent of a number.  
   
-```  
+## Syntax
+
+<pre>
 Number.Atan(angle as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   

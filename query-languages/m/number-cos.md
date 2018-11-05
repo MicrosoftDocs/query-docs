@@ -1,7 +1,8 @@
 ---
 title: "Number.Cos | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the cosine of a number.  
   
-```  
+## Syntax
+
+<pre>
 Number.Cos (angle as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +29,6 @@ Number.Cos (angle as nullable number) as nullable number
   
 ## Example  
   
-```  
+```powerquery-m
 Number.Cos(0) equals 1  
 ```  

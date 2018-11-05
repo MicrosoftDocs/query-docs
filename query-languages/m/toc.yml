@@ -1,0 +1,1508 @@
+- name: Power Query M Reference
+  href: power-query-m-reference.md
+  expanded: true
+  items: 
+    - name: Power Query M function reference
+      items: 
+        - name: Power Query M Function Reference Overview
+          href: power-query-m-function-reference.md
+        - name: Understanding Power Query M functions
+          href: understanding-power-query-m-functions.md
+        - name: Accessing data functions
+          items: 
+            - name: Accessing data functions Overview
+              href: accessing-data-functions.md
+            - name: Access.Database
+              href: access-database.md
+            - name: ActiveDirectory.Domains
+              href: activedirectory-domains.md
+            - name: AdobeAnalytics.Cubes
+              href: adobeanalytics-cubes.md
+            - name: AdoDotNet.DataSource
+              href: adodotnet-datasource.md
+            - name: AdoDotNet.Query
+              href: adodotnet-query.md
+            - name: AnalysisServices.Database
+              href: analysisservices-database.md
+            - name: AnalysisServices.Databases
+              href: analysisservices-databases.md
+            - name: AzureStorage.BlobContents
+              href: azurestorage-blobcontents.md
+            - name: AzureStorage.Blobs
+              href: azurestorage-blobs.md
+            - name: AzureStorage.Tables
+              href: azurestorage-tables.md
+            - name: Csv.Document
+              href: csv-document.md
+            - name: CsvStyle.QuoteAfterDelimiter
+              href: csvstyle-quoteafterdelimiter.md
+            - name: CsvStyle.QuoteAlways
+              href: csvstyle-quotealways.md
+            - name: Cube.AddAndExpandDimensionColumn
+              href: cube-addandexpanddimensioncolumn.md
+            - name: Cube.AddMeasureColumn
+              href: cube-addmeasurecolumn.md
+            - name: Cube.ApplyParameter
+              href: cube-applyparameter.md
+            - name: Cube.AttributeMemberId
+              href: cube-attributememberid.md
+            - name: Cube.AttributeMemberProperty
+              href: cube-attributememberproperty.md
+            - name: Cube.CollapseAndRemoveColumns
+              href: cube-collapseandremovecolumns.md
+            - name: Cube.Dimensions
+              href: cube-dimensions.md
+            - name: Cube.DisplayFolders
+              href: cube-displayfolders.md
+            - name: Cube.Measures
+              href: cube-measures.md
+            - name: Cube.Parameters
+              href: cube-parameters.md
+            - name: Cube.Properties
+              href: cube-properties.md
+            - name: Cube.PropertyKey
+              href: cube-propertykey.md
+            - name: Cube.ReplaceDimensions
+              href: cube-replacedimensions.md
+            - name: Cube.Transform
+              href: cube-transform.md
+            - name: DB2.Database
+              href: db2-database.md
+            - name: Excel.CurrentWorkbook
+              href: excel-currentworkbook.md
+            - name: Excel.Workbook
+              href: excel-workbook.md
+            - name: Exchange.Contents
+              href: exchange-contents.md
+            - name: Facebook.Graph
+              href: facebook-graph.md
+            - name: File.Contents
+              href: file-contents.md
+            - name: Folder.Contents
+              href: folder-contents.md
+            - name: Folder.Files
+              href: folder-files.md
+            - name: GoogleAnalytics.Accounts
+              href: googleanalytics-accounts.md
+            - name: Hdfs.Contents
+              href: hdfs-contents.md
+            - name: HdInsight.Files
+              href: hdinsight-files.md
+            - name: HdInsight.Containers
+              href: hdinsight-containers.md
+            - name: HdInsight.Contents
+              href: hdinsight-contents.md
+            - name: Hdfs.Files
+              href: hdfs-files.md
+            - name: Informix.Database
+              href: informix-database.md
+            - name: Json.Document
+              href: json-document.md
+            - name: MySQL.Database
+              href: mysql-database.md
+            - name: OData.Feed
+              href: odata-feed.md
+            - name: Odbc.DataSource
+              href: odbc-datasource.md
+            - name: Odbc.Query
+              href: odbc-query.md
+            - name: OleDb.DataSource
+              href: oledb-datasource.md
+            - name: OleDb.Query
+              href: oledb-query.md
+            - name: Oracle.Database
+              href: oracle-database.md
+            - name: PostgreSQL.Database
+              href: postgresql-database.md
+            - name: RData.FromBinary
+              href: rdata-frombinary.md
+            - name: Salesforce.Data
+              href: salesforce-data.md
+            - name: Salesforce.Reports
+              href: salesforce-reports.md
+            - name: SapBusinessObjects.Universes
+              href: sapbusinessobjects-universes.md
+            - name: SapBusinessWarehouse.Cubes
+              href: sapbusinesswarehouse-cubes.md
+            - name: SapHana.Database
+              href: saphana-database.md
+            - name: SapHanaDistribution.All
+              href: saphanadistribution-all.md
+            - name: SapHanaDistribution.Connection
+              href: saphanadistribution-connection.md
+            - name: SapHanaDistribution.Off
+              href: saphanadistribution-off.md
+            - name: SapHanaDistribution.Statement
+              href: saphanadistribution-statement.md
+            - name: SapHanaRangeOperator.Equals
+              href: saphanarangeoperator-equals.md
+            - name: SapHanaRangeOperator.GreaterThan
+              href: saphanarangeoperator-greaterthan.md
+            - name: SapHanaRangeOperator.GreaterThanOrEquals
+              href: saphanarangeoperator-greaterthanorequals.md
+            - name: SapHanaRangeOperator.LessThan
+              href: saphanarangeoperator-lessthan.md
+            - name: SapHanaRangeOperator.LessThanOrEquals
+              href: saphanarangeoperator-lessthanorequals.md
+            - name: SapHanaRangeOperator.NotEquals
+              href: saphanarangeoperator-notequals.md
+            - name: SharePoint.Contents
+              href: sharepoint-contents.md
+            - name: SharePoint.Files
+              href: sharepoint-files.md
+            - name: SharePoint.Tables
+              href: sharepoint-tables.md
+            - name: Soda.Feed
+              href: soda-feed.md
+            - name: Sql.Database
+              href: sql-database.md
+            - name: Sql.Databases
+              href: sql-databases.md
+            - name: Sybase.Database
+              href: sybase-database.md
+            - name: Teradata.Database
+              href: teradata-database.md
+            - name: WebAction.Request
+              href: webaction-request.md
+            - name: Web.Contents
+              href: web-contents.md
+            - name: Web.Page
+              href: web-page.md
+            - name: WebMethod.Delete
+              href: webmethod-delete.md
+            - name: WebMethod.Get
+              href: webmethod-get.md
+            - name: WebMethod.Head
+              href: webmethod-head.md
+            - name: WebMethod.Patch
+              href: webmethod-patch.md
+            - name: WebMethod.Post
+              href: webmethod-post.md
+            - name: WebMethod.Put
+              href: webmethod-put.md
+            - name: Xml.Document
+              href: xml-document.md
+            - name: Xml.Tables
+              href: xml-tables.md
+            - name: Cube.PropertyKey
+              href: cube-propertykey.md
+        - name: Binary functions
+          items: 
+            - name: Binary functions Overview
+              href: binary-functions.md
+            - name: Binary.Buffer
+              href: binary-buffer.md
+            - name: Binary.Combine
+              href: binary-combine.md
+            - name: Binary.Compress
+              href: binary-compress.md
+            - name: Binary.Decompress
+              href: binary-decompress.md
+            - name: Binary.From
+              href: binary-from.md
+            - name: Binary.FromList
+              href: binary-fromlist.md
+            - name: Binary.FromText
+              href: binary-fromtext.md
+            - name: Binary.InferContentType
+              href: binary-infercontenttype.md
+            - name: Binary.Length
+              href: binary-length.md
+            - name: Binary.ToList
+              href: binary-tolist.md
+            - name: Binary.ToText
+              href: binary-totext.md
+            - name: BinaryEncoding.Base64
+              href: binaryencoding-base64.md
+            - name: BinaryEncoding.Hex
+              href: binaryencoding-hex.md
+            - name: BinaryFormat.7BitEncodedSignedInteger
+              href: binaryformat-7bitencodedsignedinteger.md
+            - name: BinaryFormat.7BitEncodedUnsignedInteger
+              href: binaryformat-7bitencodedunsignedinteger.md
+            - name: BinaryFormat.Binary
+              href: binaryformat-binary.md
+            - name: BinaryFormat.Byte
+              href: binaryformat-byte.md
+            - name: BinaryFormat.ByteOrder
+              href: binaryformat-byteorder.md
+            - name: BinaryFormat.Choice
+              href: binaryformat-choice.md
+            - name: BinaryFormat.Decimal
+              href: binaryformat-decimal.md
+            - name: BinaryFormat.Double
+              href: binaryformat-double.md
+            - name: BinaryFormat.Group
+              href: binaryformat-group.md
+            - name: BinaryFormat.Length
+              href: binaryformat-length.md
+            - name: BinaryFormat.List
+              href: binaryformat-list.md
+            - name: BinaryFormat.Null
+              href: binaryformat-null.md
+            - name: BinaryFormat.Record
+              href: binaryformat-record.md
+            - name: BinaryFormat.SignedInteger16
+              href: binaryformat-signedinteger16.md
+            - name: BinaryFormat.SignedInteger32
+              href: binaryformat-signedinteger32.md
+            - name: BinaryFormat.SignedInteger64
+              href: binaryformat-signedinteger64.md
+            - name: BinaryFormat.Single
+              href: binaryformat-single.md
+            - name: BinaryFormat.Text
+              href: binaryformat-text.md
+            - name: BinaryFormat.Transform
+              href: binaryformat-transform.md
+            - name: BinaryFormat.UnsignedInteger16
+              href: binaryformat-unsignedinteger16.md
+            - name: BinaryFormat.UnsignedInteger32
+              href: binaryformat-unsignedinteger32.md
+            - name: BinaryFormat.UnsignedInteger64
+              href: binaryformat-unsignedinteger64.md
+            - name: BinaryOccurrence.Optional
+              href: binaryoccurrence-optional.md
+            - name: BinaryOccurrence.Repeating
+              href: binaryoccurrence-repeating.md
+            - name: BinaryOccurrence.Required
+              href: binaryoccurrence-required.md
+            - name: ByteOrder.BigEndian
+              href: byteorder-bigendian.md
+            - name: ByteOrder.LittleEndian
+              href: byteorder-littleendian.md
+            - name: Compression.Deflate
+              href: compression-deflate.md
+            - name: Compression.GZip
+              href: compression-gzip.md
+            - name: Occurrence.Optional
+              href: occurrence-optional.md
+            - name: Occurrence.Repeating
+              href: occurrence-repeating.md
+            - name: Occurrence.Required
+              href: occurrence-required.md
+            - name: '#binary'
+              href: sharpbinary.md
+        - name: Combiner functions
+          items: 
+            - name: Combiner functions Overview
+              href: combiner-functions.md
+            - name: Combiner.CombineTextByDelimiter
+              href: combiner-combinetextbydelimiter.md
+            - name: Combiner.CombineTextByEachDelimiter
+              href: combiner-combinetextbyeachdelimiter.md
+            - name: Combiner.CombineTextByLengths
+              href: combiner-combinetextbylengths.md
+            - name: Combiner.CombineTextByPositions
+              href: combiner-combinetextbypositions.md
+            - name: Combiner.CombineTextByRanges
+              href: combiner-combinetextbyranges.md
+        - name: Comparer functions
+          items: 
+            - name: Comparer functions Overview
+              href: comparer-functions.md
+            - name: Comparer.Equals
+              href: comparer-equals.md
+            - name: Comparer.FromCulture
+              href: comparer-fromculture.md
+            - name: Comparer.Ordinal
+              href: comparer-ordinal.md
+            - name: Comparer.OrdinalIgnoreCase
+              href: comparer-ordinalignorecase.md
+            - name: Culture.Current
+              href: culture-current.md
+        - name: Date functions
+          items: 
+            - name: Date functions Overview
+              href: date-functions.md
+            - name: Date.AddDays
+              href: date-adddays.md
+            - name: Date.AddMonths
+              href: date-addmonths.md
+            - name: Date.AddQuarters
+              href: date-addquarters.md
+            - name: Date.AddWeeks
+              href: date-addweeks.md
+            - name: Date.AddYears
+              href: date-addyears.md
+            - name: Date.Day
+              href: date-day.md
+            - name: Date.DayOfWeek
+              href: date-dayofweek.md
+            - name: Date.DayOfWeekName
+              href: date-dayofweekname.md
+            - name: Date.DayOfYear
+              href: date-dayofyear.md
+            - name: Date.DaysInMonth
+              href: date-daysinmonth.md
+            - name: Date.EndOfDay
+              href: date-endofday.md
+            - name: Date.EndOfMonth
+              href: date-endofmonth.md
+            - name: Date.EndOfQuarter
+              href: date-endofquarter.md
+            - name: Date.EndOfWeek
+              href: date-endofweek.md
+            - name: Date.EndOfYear
+              href: date-endofyear.md
+            - name: Date.From
+              href: date-from.md
+            - name: Date.FromText
+              href: date-fromtext.md
+            - name: Date.IsInCurrentDay
+              href: date-isincurrentday.md
+            - name: Date.IsInCurrentMonth
+              href: date-isincurrentmonth.md
+            - name: Date.IsInCurrentQuarter
+              href: date-isincurrentquarter.md
+            - name: Date.IsInCurrentWeek
+              href: date-isincurrentweek.md
+            - name: Date.IsInCurrentYear
+              href: date-isincurrentyear.md
+            - name: Date.IsInNextDay
+              href: date-isinnextday.md
+            - name: Date.IsInNextMonth
+              href: date-isinnextmonth.md
+            - name: Date.IsInNextNDays
+              href: date-isinnextndays.md
+            - name: Date.IsInNextNMonths
+              href: date-isinnextnmonths.md
+            - name: Date.IsInNextNQuarters
+              href: date-isinnextnquarters.md
+            - name: Date.IsInNextNWeeks
+              href: date-isinnextnweeks.md
+            - name: Date.IsInNextNYears
+              href: date-isinnextnyears.md
+            - name: Date.IsInNextQuarter
+              href: date-isinnextquarter.md
+            - name: Date.IsInNextWeek
+              href: date-isinnextweek.md
+            - name: Date.IsInNextYear
+              href: date-isinnextyear.md
+            - name: Date.IsInPreviousDay
+              href: date-isinpreviousday.md
+            - name: Date.IsInPreviousMonth
+              href: date-isinpreviousmonth.md
+            - name: Date.IsInPreviousNDays
+              href: date-isinpreviousndays.md
+            - name: Date.IsInPreviousNMonths
+              href: date-isinpreviousnmonths.md
+            - name: Date.IsInPreviousNQuarters
+              href: date-isinpreviousnquarters.md
+            - name: Date.IsInPreviousNWeeks
+              href: date-isinpreviousnweeks.md
+            - name: Date.IsInPreviousNYears
+              href: date-isinpreviousnyears.md
+            - name: Date.IsInPreviousQuarter
+              href: date-isinpreviousquarter.md
+            - name: Date.IsInPreviousWeek
+              href: date-isinpreviousweek.md
+            - name: Date.IsInPreviousYear
+              href: date-isinpreviousyear.md
+            - name: Date.IsInYearToDate
+              href: date-isinyeartodate.md
+            - name: Date.IsLeapYear
+              href: date-isleapyear.md
+            - name: Date.Month
+              href: date-month.md
+            - name: Date.MonthName
+              href: date-monthname.md
+            - name: Date.QuarterOfYear
+              href: date-quarterofyear.md
+            - name: Date.StartOfDay
+              href: date-startofday.md
+            - name: Date.StartOfMonth
+              href: date-startofmonth.md
+            - name: Date.StartOfWeek
+              href: date-startofweek.md
+            - name: Date.StartOfQuarter
+              href: date-startofquarter.md
+            - name: Date.StartOfYear
+              href: date-startofyear.md
+            - name: Date.ToRecord
+              href: date-torecord.md
+            - name: Date.ToText
+              href: date-totext.md
+            - name: Date.WeekOfMonth
+              href: date-weekofmonth.md
+            - name: Date.WeekOfYear
+              href: date-weekofyear.md
+            - name: Date.Year
+              href: date-year.md
+            - name: Day.Friday
+              href: day-friday.md
+            - name: Day.Monday
+              href: day-monday.md
+            - name: Day.Saturday
+              href: day-saturday.md
+            - name: Day.Sunday
+              href: day-sunday.md
+            - name: Day.Thursday
+              href: day-thursday.md
+            - name: Day.Tuesday
+              href: day-tuesday.md
+            - name: Day.Wednesday
+              href: day-wednesday.md
+            - name: '#date'
+              href: sharpdate.md
+        - name: DateTime functions
+          items: 
+            - name: DateTime functions Overview
+              href: datetime-functions.md
+            - name: DateTime.AddZone
+              href: datetime-addzone.md
+            - name: DateTime.Date
+              href: datetime-date.md
+            - name: DateTime.FixedLocalNow
+              href: datetime-fixedlocalnow.md
+            - name: DateTime.From
+              href: datetime-from.md
+            - name: DateTime.FromFileTime
+              href: datetime-fromfiletime.md
+            - name: DateTime.FromText
+              href: datetime-fromtext.md
+            - name: DateTime.IsInCurrentHour
+              href: datetime-isincurrenthour.md
+            - name: DateTime.IsInCurrentMinute
+              href: datetime-isincurrentminute.md
+            - name: DateTime.IsInCurrentSecond
+              href: datetime-isincurrentsecond.md
+            - name: DateTime.IsInNextHour
+              href: datetime-isinnexthour.md
+            - name: DateTime.IsInNextMinute
+              href: datetime-isinnextminute.md
+            - name: DateTime.IsInNextNHours
+              href: datetime-isinnextnhours.md
+            - name: DateTime.IsInNextNMinutes
+              href: datetime-isinnextnminutes.md
+            - name: DateTime.IsInNextNSeconds
+              href: datetime-isinnextnseconds.md
+            - name: DateTime.IsInNextSecond
+              href: datetime-isinnextsecond.md
+            - name: DateTime.IsInPreviousHour
+              href: datetime-isinprevioushour.md
+            - name: DateTime.IsInPreviousMinute
+              href: datetime-isinpreviousminute.md
+            - name: DateTime.IsInPreviousNHours
+              href: datetime-isinpreviousnhours.md
+            - name: DateTime.IsInPreviousNMinutes
+              href: datetime-isinpreviousnminutes.md
+            - name: DateTime.IsInPreviousNSeconds
+              href: datetime-isinpreviousnseconds.md
+            - name: DateTime.IsInPreviousSecond
+              href: datetime-isinprevioussecond.md
+            - name: DateTime.LocalNow
+              href: datetime-localnow.md
+            - name: DateTime.Time
+              href: datetime-time.md
+            - name: DateTime.ToRecord
+              href: datetime-torecord.md
+            - name: DateTime.ToText
+              href: datetime-totext.md
+            - name: '#datetime'
+              href: sharpdatetime.md
+        - name: DateTimeZone functions
+          items: 
+            - name: DateTimeZone functions Overview
+              href: datetimezone-functions.md
+            - name: DateTimeZone.FixedLocalNow
+              href: datetimezone-fixedlocalnow.md
+            - name: DateTimeZone.FixedUtcNow
+              href: datetimezone-fixedutcnow.md
+            - name: DateTimeZone.From
+              href: datetimezone-from.md
+            - name: DateTimeZone.FromFileTime
+              href: datetimezone-fromfiletime.md
+            - name: DateTimeZone.FromText
+              href: datetimezone-fromtext.md
+            - name: DateTimeZone.LocalNow
+              href: datetimezone-localnow.md
+            - name: DateTimeZone.RemoveZone
+              href: datetimezone-removezone.md
+            - name: DateTimeZone.SwitchZone
+              href: datetimezone-switchzone.md
+            - name: DateTimeZone.ToLocal
+              href: datetimezone-tolocal.md
+            - name: DateTimeZone.ToRecord
+              href: datetimezone-torecord.md
+            - name: DateTimeZone.ToText
+              href: datetimezone-totext.md
+            - name: DateTimeZone.ToUtc
+              href: datetimezone-toutc.md
+            - name: DateTimeZone.UtcNow
+              href: datetimezone-utcnow.md
+            - name: DateTimeZone.ZoneHours
+              href: datetimezone-zonehours.md
+            - name: DateTimeZone.ZoneMinutes
+              href: datetimezone-zoneminutes.md
+            - name: '#datetimezone'
+              href: sharpdatetimezone.md
+        - name: Duration functions
+          items: 
+            - name: Duration.Days
+              href: duration-days.md
+            - name: Duration.From
+              href: duration-from.md
+            - name: Duration.FromText
+              href: duration-fromtext.md
+            - name: Duration.Hours
+              href: duration-hours.md
+            - name: Duration.Minutes
+              href: duration-minutes.md
+            - name: Duration.Seconds
+              href: duration-seconds.md
+            - name: Duration.ToRecord
+              href: duration-torecord.md
+            - name: Duration.TotalDays
+              href: duration-totaldays.md
+            - name: Duration.TotalHours
+              href: duration-totalhours.md
+            - name: Duration.TotalMinutes
+              href: duration-totalminutes.md
+            - name: Duration.TotalSeconds
+              href: duration-totalseconds.md
+            - name: Duration.ToText
+              href: duration-totext.md
+            - name: '#duration'
+              href: sharpduration.md
+            - name: Duration functions Overview
+              href: duration-functions.md
+        - name: Error handling
+          items: 
+            - name: Error handling Overview
+              href: error-handling.md
+            - name: Diagnostics.ActivityId
+              href: diagnostics-activityid.md
+            - name: Diagnostics.Trace
+              href: diagnostics-trace.md
+            - name: Error.Record
+              href: error-record.md
+            - name: TraceLevel.Critical
+              href: tracelevel-critical.md
+            - name: TraceLevel.Error
+              href: tracelevel-error.md
+            - name: TraceLevel.Information
+              href: tracelevel-information.md
+            - name: TraceLevel.Verbose
+              href: tracelevel-verbose.md
+            - name: TraceLevel.Warning
+              href: tracelevel-warning.md
+        - name: Expression functions
+          items: 
+            - name: Expression functions Overview
+              href: expression-functions.md
+            - name: Expression.Constant
+              href: expression-constant.md
+            - name: Expression.Evaluate
+              href: expression-evaluate.md
+            - name: Expression.Identifier
+              href: expression-identifier.md
+        - name: Function values
+          items: 
+            - name: Function values Overview
+              href: function-values.md
+            - name: Function.From
+              href: function-from.md
+            - name: Function.Invoke
+              href: function-invoke.md
+            - name: Function.InvokeAfter
+              href: function-invokeafter.md
+            - name: Function.IsDataSource
+              href: function-isdatasource.md
+            - name: Function.ScalarVector
+              href: function-scalarvector.md
+        - name: Lines functions
+          items: 
+            - name: Lines functions Overview
+              href: lines-functions.md
+            - name: Lines.FromBinary
+              href: lines-frombinary.md
+            - name: Lines.FromText
+              href: lines-fromtext.md
+            - name: Lines.ToBinary
+              href: lines-tobinary.md
+            - name: Lines.ToText
+              href: lines-totext.md
+        - name: List functions
+          items: 
+            - name: List functions Overview
+              href: list-functions.md
+            - name: List.Accumulate
+              href: list-accumulate.md
+            - name: List.AllTrue
+              href: list-alltrue.md
+            - name: List.Alternate
+              href: list-alternate.md
+            - name: List.AnyTrue
+              href: list-anytrue.md
+            - name: List.Average
+              href: list-average.md
+            - name: List.Buffer
+              href: list-buffer.md
+            - name: List.Combine
+              href: list-combine.md
+            - name: List.Contains
+              href: list-contains.md
+            - name: List.ContainsAll
+              href: list-containsall.md
+            - name: List.ContainsAny
+              href: list-containsany.md
+            - name: List.Count
+              href: list-count.md
+            - name: List.Covariance
+              href: list-covariance.md
+            - name: List.Dates
+              href: list-dates.md
+            - name: List.DateTimes
+              href: list-datetimes.md
+            - name: List.DateTimeZones
+              href: list-datetimezones.md
+            - name: List.Difference
+              href: list-difference.md
+            - name: List.Distinct
+              href: list-distinct.md
+            - name: List.Durations
+              href: list-durations.md
+            - name: List.FindText
+              href: list-findtext.md
+            - name: List.First
+              href: list-first.md
+            - name: List.FirstN
+              href: list-firstn.md
+            - name: List.Generate
+              href: list-generate.md
+            - name: List.InsertRange
+              href: list-insertrange.md
+            - name: List.Intersect
+              href: list-intersect.md
+            - name: List.IsDistinct
+              href: list-isdistinct.md
+            - name: List.IsEmpty
+              href: list-isempty.md
+            - name: List.Last
+              href: list-last.md
+            - name: List.LastN
+              href: list-lastn.md
+            - name: List.MatchesAll
+              href: list-matchesall.md
+            - name: List.MatchesAny
+              href: list-matchesany.md
+            - name: List.Max
+              href: list-max.md
+            - name: List.MaxN
+              href: list-maxn.md
+            - name: List.Median
+              href: list-median.md
+            - name: List.Min
+              href: list-min.md
+            - name: List.MinN
+              href: list-minn.md
+            - name: List.Mode
+              href: list-mode.md
+            - name: List.Modes
+              href: list-modes.md
+            - name: List.NonNullCount
+              href: list-nonnullcount.md
+            - name: List.Numbers
+              href: list-numbers.md
+            - name: List.PositionOf
+              href: list-positionof.md
+            - name: List.PositionOfAny
+              href: list-positionofany.md
+            - name: List.Positions
+              href: list-positions.md
+            - name: List.Product
+              href: list-product.md
+            - name: List.Random
+              href: list-random.md
+            - name: List.Range
+              href: list-range.md
+            - name: List.RemoveFirstN
+              href: list-removefirstn.md
+            - name: List.RemoveItems
+              href: list-removeitems.md
+            - name: List.RemoveLastN
+              href: list-removelastn.md
+            - name: List.RemoveMatchingItems
+              href: list-removematchingitems.md
+            - name: List.RemoveNulls
+              href: list-removenulls.md
+            - name: List.RemoveRange
+              href: list-removerange.md
+            - name: List.Repeat
+              href: list-repeat.md
+            - name: List.ReplaceMatchingItems
+              href: list-replacematchingitems.md
+            - name: List.ReplaceRange
+              href: list-replacerange.md
+            - name: List.ReplaceValue
+              href: list-replacevalue.md
+            - name: List.Reverse
+              href: list-reverse.md
+            - name: List.Select
+              href: list-select.md
+            - name: List.Single
+              href: list-single.md
+            - name: List.SingleOrDefault
+              href: list-singleordefault.md
+            - name: List.Skip
+              href: list-skip.md
+            - name: List.Sort
+              href: list-sort.md
+            - name: List.StandardDeviation
+              href: list-standarddeviation.md
+            - name: List.Sum
+              href: list-sum.md
+            - name: List.Times
+              href: list-times.md
+            - name: List.Transform
+              href: list-transform.md
+            - name: List.TransformMany
+              href: list-transformmany.md
+            - name: List.Union
+              href: list-union.md
+            - name: List.Zip
+              href: list-zip.md
+        - name: Logical functions
+          items: 
+            - name: Logical functions Overview
+              href: logical-functions.md
+            - name: Logical.From
+              href: logical-from.md
+            - name: Logical.FromText
+              href: logical-fromtext.md
+            - name: Logical.ToText
+              href: logical-totext.md
+        - name: Number functions
+          items: 
+            - name: Byte.From
+              href: byte-from.md
+            - name: Currency.From
+              href: currency-from.md
+            - name: Decimal.From
+              href: decimal-from.md
+            - name: Double.From
+              href: double-from.md
+            - name: Int8.From
+              href: int8-from.md
+            - name: Int16.From
+              href: int16-from.md
+            - name: Int32.From
+              href: int32-from.md
+            - name: Int64.From
+              href: int64-from.md
+            - name: Number.Abs
+              href: number-abs.md
+            - name: Number.Acos
+              href: number-acos.md
+            - name: Number.Asin
+              href: number-asin.md
+            - name: Number.Atan
+              href: number-atan.md
+            - name: Number.Atan2
+              href: number-atan2.md
+            - name: Number.BitwiseAnd
+              href: number-bitwiseand.md
+            - name: Number.BitwiseNot
+              href: number-bitwisenot.md
+            - name: Number.BitwiseOr
+              href: number-bitwiseor.md
+            - name: Number.BitwiseShiftLeft
+              href: number-bitwiseshiftleft.md
+            - name: Number.BitwiseShiftRight
+              href: number-bitwiseshiftright.md
+            - name: Number.BitwiseXor
+              href: number-bitwisexor.md
+            - name: Number.Combinations
+              href: number-combinations.md
+            - name: Number.Cos
+              href: number-cos.md
+            - name: Number.Cosh
+              href: number-cosh.md
+            - name: Number.E
+              href: number-e.md
+            - name: Number.Epsilon
+              href: number-epsilon.md
+            - name: Number.Exp
+              href: number-exp.md
+            - name: Number.Factorial
+              href: number-factorial.md
+            - name: Number.From
+              href: number-from.md
+            - name: Number.FromText
+              href: number-fromtext.md
+            - name: Number.IntegerDivide
+              href: number-integerdivide.md
+            - name: Number.IsEven
+              href: number-iseven.md
+            - name: Number.IsNaN
+              href: number-isnan.md
+            - name: Number.IsOdd
+              href: number-isodd.md
+            - name: Number.Ln
+              href: number-ln.md
+            - name: Number.Log
+              href: number-log.md
+            - name: Number.Log10
+              href: number-log10.md
+            - name: Number.Mod
+              href: number-mod.md
+            - name: Number.NaN
+              href: number-nan.md
+            - name: Number.NegativeInfinity
+              href: number-negativeinfinity.md
+            - name: Number.Permutations
+              href: number-permutations.md
+            - name: Number.PI
+              href: number-pi.md
+            - name: Number.PositiveInfinity
+              href: number-positiveinfinity.md
+            - name: Number.Power
+              href: number-power.md
+            - name: Number.Random
+              href: number-random.md
+            - name: Number.RandomBetween
+              href: number-randombetween.md
+            - name: Number.Round
+              href: number-round.md
+            - name: Number.RoundAwayFromZero
+              href: number-roundawayfromzero.md
+            - name: Number.RoundDown
+              href: number-rounddown.md
+            - name: Number.RoundTowardZero
+              href: number-roundtowardzero.md
+            - name: Number.RoundUp
+              href: number-roundup.md
+            - name: Number.Sign
+              href: number-sign.md
+            - name: Number.Sin
+              href: number-sin.md
+            - name: Number.Sinh
+              href: number-sinh.md
+            - name: Number.Sqrt
+              href: number-sqrt.md
+            - name: Number.Tan
+              href: number-tan.md
+            - name: Number.Tanh
+              href: number-tanh.md
+            - name: Number.ToText
+              href: number-totext.md
+            - name: Percentage.From
+              href: percentage-from.md
+            - name: RoundingMode.AwayFromZero
+              href: roundingmode-awayfromzero.md
+            - name: RoundingMode.Down
+              href: roundingmode-down.md
+            - name: RoundingMode.ToEven
+              href: roundingmode-toeven.md
+            - name: RoundingMode.TowardZero
+              href: roundingmode-towardzero.md
+            - name: RoundingMode.Up
+              href: roundingmode-up.md
+            - name: Single.From
+              href: single-from.md
+            - name: Number functions Overview
+              href: number-functions.md
+        - name: Record functions
+          items: 
+            - name: Record functions Overview
+              href: record-functions.md
+            - name: MissingField.Error
+              href: missingfield-error.md
+            - name: MissingField.Ignore
+              href: missingfield-ignore.md
+            - name: MissingField.UseNull
+              href: missingfield-usenull.md
+            - name: Record.AddField
+              href: record-addfield.md
+            - name: Record.Combine
+              href: record-combine.md
+            - name: Record.Field
+              href: record-field.md
+            - name: Record.FieldCount
+              href: record-fieldcount.md
+            - name: Record.FieldNames
+              href: record-fieldnames.md
+            - name: Record.FieldOrDefault
+              href: record-fieldordefault.md
+            - name: Record.FieldValues
+              href: record-fieldvalues.md
+            - name: Record.FromList
+              href: record-fromlist.md
+            - name: Record.FromTable
+              href: record-fromtable.md
+            - name: Record.HasFields
+              href: record-hasfields.md
+            - name: Record.RemoveFields
+              href: record-removefields.md
+            - name: Record.RenameFields
+              href: record-renamefields.md
+            - name: Record.ReorderFields
+              href: record-reorderfields.md
+            - name: Record.SelectFields
+              href: record-selectfields.md
+            - name: Record.ToList
+              href: record-tolist.md
+            - name: Record.ToTable
+              href: record-totable.md
+            - name: Record.TransformFields
+              href: record-transformfields.md
+        - name: Replacer functions
+          items: 
+            - name: Replacer functions Overview
+              href: replacer-functions.md
+            - name: Replacer.ReplaceText
+              href: replacer-replacetext.md
+            - name: Replacer.ReplaceValue
+              href: replacer-replacevalue.md
+        - name: Splitter functions
+          items: 
+            - name: Splitter functions Overview
+              href: splitter-functions.md
+            - name: QuoteStyle.Csv
+              href: quotestyle-csv.md
+            - name: QuoteStyle.None
+              href: quotestyle-none.md
+            - name: Splitter.SplitByNothing
+              href: splitter-splitbynothing.md
+            - name: Splitter.SplitTextByAnyDelimiter
+              href: splitter-splittextbyanydelimiter.md
+            - name: Splitter.SplitTextByDelimiter
+              href: splitter-splittextbydelimiter.md
+            - name: Splitter.SplitTextByEachDelimiter
+              href: splitter-splittextbyeachdelimiter.md
+            - name: Splitter.SplitTextByLengths
+              href: splitter-splittextbylengths.md
+            - name: Splitter.SplitTextByPositions
+              href: splitter-splittextbypositions.md
+            - name: Splitter.SplitTextByRanges
+              href: splitter-splittextbyranges.md
+            - name: Splitter.SplitTextByRepeatedLengths
+              href: splitter-splittextbyrepeatedlengths.md
+            - name: Splitter.SplitTextByWhitespace
+              href: splitter-splittextbywhitespace.md
+        - name: Table functions
+          items: 
+            - name: Table functions Overview
+              href: table-functions.md
+            - name: ExtraValues.Error
+              href: extravalues-error.md
+            - name: ExtraValues.Ignore
+              href: extravalues-ignore.md
+            - name: ExtraValues.List
+              href: extravalues-list.md
+            - name: GroupKind.Global
+              href: groupkind-global.md
+            - name: GroupKind.Local
+              href: groupkind-local.md
+            - name: ItemExpression.From
+              href: itemexpression-from.md
+            - name: ItemExpression.Item
+              href: itemexpression-item.md
+            - name: JoinAlgorithm.Dynamic
+              href: joinalgorithm-dynamic.md
+            - name: JoinAlgorithm.LeftHash
+              href: joinalgorithm-lefthash.md
+            - name: JoinAlgorithm.LeftIndex
+              href: joinalgorithm-leftindex.md
+            - name: JoinAlgorithm.PairwiseHash
+              href: joinalgorithm-pairwisehash.md
+            - name: JoinAlgorithm.RightHash
+              href: joinalgorithm-righthash.md
+            - name: JoinAlgorithm.RightIndex
+              href: joinalgorithm-rightindex.md
+            - name: JoinAlgorithm.SortMerge
+              href: joinalgorithm-sortmerge.md
+            - name: JoinKind.FullOuter
+              href: joinkind-fullouter.md
+            - name: JoinKind.Inner
+              href: joinkind-inner.md
+            - name: JoinKind.LeftAnti
+              href: joinkind-leftanti.md
+            - name: JoinKind.LeftOuter
+              href: joinkind-leftouter.md
+            - name: JoinKind.RightAnti
+              href: joinkind-rightanti.md
+            - name: JoinKind.RightOuter
+              href: joinkind-rightouter.md
+            - name: JoinSide.Left
+              href: joinside-left.md
+            - name: JoinSide.Right
+              href: joinside-right.md
+            - name: Occurrence.All
+              href: occurrence-all.md
+            - name: Occurrence.First
+              href: occurrence-first.md
+            - name: Occurrence.Last
+              href: occurrence-last.md
+            - name: Order.Ascending
+              href: order-ascending.md
+            - name: Order.Descending
+              href: order-descending.md
+            - name: RowExpression.Column
+              href: rowexpression-column.md
+            - name: RowExpression.From
+              href: rowexpression-from.md
+            - name: RowExpression.Row
+              href: rowexpression-row.md
+            - name: Table.AddColumn
+              href: table-addcolumn.md
+            - name: Table.AddIndexColumn
+              href: table-addindexcolumn.md
+            - name: Table.AddJoinColumn
+              href: table-addjoincolumn.md
+            - name: Table.AddKey
+              href: table-addkey.md
+            - name: Table.AggregateTableColumn
+              href: table-aggregatetablecolumn.md
+            - name: Table.AlternateRows
+              href: table-alternaterows.md
+            - name: Table.Buffer
+              href: table-buffer.md
+            - name: Table.Column
+              href: table-column.md
+            - name: Table.ColumnCount
+              href: table-columncount.md
+            - name: Table.ColumnNames
+              href: table-columnnames.md
+            - name: Table.ColumnsOfType
+              href: table-columnsoftype.md
+            - name: Table.Combine
+              href: table-combine.md
+            - name: Table.CombineColumns
+              href: table-combinecolumns.md
+            - name: Table.Contains
+              href: table-contains.md
+            - name: Table.ContainsAll
+              href: table-containsall.md
+            - name: Table.ContainsAny
+              href: table-containsany.md
+            - name: Table.DemoteHeaders
+              href: table-demoteheaders.md
+            - name: Table.Distinct
+              href: table-distinct.md
+            - name: Table.DuplicateColumn
+              href: table-duplicatecolumn.md
+            - name: Table.ExpandListColumn
+              href: table-expandlistcolumn.md
+            - name: Table.ExpandRecordColumn
+              href: table-expandrecordcolumn.md
+            - name: Table.ExpandTableColumn
+              href: table-expandtablecolumn.md
+            - name: Table.FillDown
+              href: table-filldown.md
+            - name: Table.FillUp
+              href: table-fillup.md
+            - name: Table.FilterWithDataTable
+              href: table-filterwithdatatable.md
+            - name: Table.FindText
+              href: table-findtext.md
+            - name: Table.First
+              href: table-first.md
+            - name: Table.FirstN
+              href: table-firstn.md
+            - name: Table.FirstValue
+              href: table-firstvalue.md
+            - name: Table.FromColumns
+              href: table-fromcolumns.md
+            - name: Table.FromList
+              href: table-fromlist.md
+            - name: Table.FromPartitions
+              href: table-frompartitions.md
+            - name: Table.FromRecords
+              href: table-fromrecords.md
+            - name: Table.FromRows
+              href: table-fromrows.md
+            - name: Table.FromValue
+              href: table-fromvalue.md
+            - name: Table.Group
+              href: table-group.md
+            - name: Table.HasColumns
+              href: table-hascolumns.md
+            - name: Table.InsertRows
+              href: table-insertrows.md
+            - name: Table.IsDistinct
+              href: table-isdistinct.md
+            - name: Table.IsEmpty
+              href: table-isempty.md
+            - name: Table.Join
+              href: table-join.md
+            - name: Table.Keys
+              href: table-keys.md
+            - name: Table.Last
+              href: table-last.md
+            - name: Table.LastN
+              href: table-lastn.md
+            - name: Table.MatchesAllRows
+              href: table-matchesallrows.md
+            - name: Table.MatchesAnyRows
+              href: table-matchesanyrows.md
+            - name: Table.Max
+              href: table-max.md
+            - name: Table.MaxN
+              href: table-maxn.md
+            - name: Table.Min
+              href: table-min.md
+            - name: Table.MinN
+              href: table-minn.md
+            - name: Table.NestedJoin
+              href: table-nestedjoin.md
+            - name: Table.Partition
+              href: table-partition.md
+            - name: Table.PartitionValues
+              href: table-partitionvalues.md
+            - name: Table.Pivot
+              href: table-pivot.md
+            - name: Table.PositionOf
+              href: table-positionof.md
+            - name: Table.PositionOfAny
+              href: table-positionofany.md
+            - name: Table.Profile
+              href: table-profile.md
+            - name: Table.PrefixColumns
+              href: table-prefixcolumns.md
+            - name: Table.PromoteHeaders
+              href: table-promoteheaders.md
+            - name: Table.Range
+              href: table-range.md
+            - name: Table.RemoveColumns
+              href: table-removecolumns.md
+            - name: Table.RemoveFirstN
+              href: table-removefirstn.md
+            - name: Table.RemoveLastN
+              href: table-removelastn.md
+            - name: Table.RemoveMatchingRows
+              href: table-removematchingrows.md
+            - name: Table.RemoveRows
+              href: table-removerows.md
+            - name: Table.RemoveRowsWithErrors
+              href: table-removerowswitherrors.md
+            - name: Table.RenameColumns
+              href: table-renamecolumns.md
+            - name: Table.ReorderColumns
+              href: table-reordercolumns.md
+            - name: Table.Repeat
+              href: table-repeat.md
+            - name: Table.ReplaceErrorValues
+              href: table-replaceerrorvalues.md
+            - name: Table.ReplaceKeys
+              href: table-replacekeys.md
+            - name: Table.ReplaceMatchingRows
+              href: table-replacematchingrows.md
+            - name: Table.ReplaceRelationshipIdentity
+              href: table-replacerelationshipidentity.md
+            - name: Table.ReplaceRows
+              href: table-replacerows.md
+            - name: Table.ReplaceValue
+              href: table-replacevalue.md
+            - name: Table.ReverseRows
+              href: table-reverserows.md
+            - name: Table.RowCount
+              href: table-rowcount.md
+            - name: Table.Schema
+              href: table-schema.md
+            - name: Table.SelectColumns
+              href: table-selectcolumns.md
+            - name: Table.SelectRows
+              href: table-selectrows.md
+            - name: Table.SelectRowsWithErrors
+              href: table-selectrowswitherrors.md
+            - name: Table.SingleRow
+              href: table-singlerow.md
+            - name: Table.Skip
+              href: table-skip.md
+            - name: Table.Sort
+              href: table-sort.md
+            - name: Table.SplitColumn
+              href: table-splitcolumn.md
+            - name: Table.ToColumns
+              href: table-tocolumns.md
+            - name: Table.ToList
+              href: table-tolist.md
+            - name: Table.ToRecords
+              href: table-torecords.md
+            - name: Table.ToRows
+              href: table-torows.md
+            - name: Table.TransformColumnNames
+              href: table-transformcolumnnames.md
+            - name: Table.TransformColumns
+              href: table-transformcolumns.md
+            - name: Table.TransformColumnTypes
+              href: table-transformcolumntypes.md
+            - name: Table.TransformRows
+              href: table-transformrows.md
+            - name: Table.Transpose
+              href: table-transpose.md
+            - name: Table.Unpivot
+              href: table-unpivot.md
+            - name: Table.UnpivotOtherColumns
+              href: table-unpivotothercolumns.md
+            - name: Table.View
+              href: table-view.md
+            - name: Table.ViewFunction
+              href: table-viewfunction.md
+            - name: Tables.GetRelationships
+              href: tables-getrelationships.md
+            - name: '#table'
+              href: sharptable.md
+        - name: Text functions
+          items: 
+            - name: Text functions Overview
+              href: text-functions.md
+            - name: Character.FromNumber
+              href: character-fromnumber.md
+            - name: Character.ToNumber
+              href: character-tonumber.md
+            - name: Guid.From
+              href: guid-from.md
+            - name: Json.FromValue
+              href: json-fromvalue.md
+            - name: RelativePosition.FromEnd
+              href: relativeposition-fromend.md
+            - name: RelativePosition.FromStart
+              href: relativeposition-fromstart.md
+            - name: Text.AfterDelimiter
+              href: text-afterdelimiter.md
+            - name: Text.At
+              href: text-at.md
+            - name: Text.BeforeDelimiter
+              href: text-beforedelimiter.md
+            - name: Text.BetweenDelimiters
+              href: text-betweendelimiters.md
+            - name: Text.Clean
+              href: text-clean.md
+            - name: Text.Combine
+              href: text-combine.md
+            - name: Text.Contains
+              href: text-contains.md
+            - name: Text.End
+              href: text-end.md
+            - name: Text.EndsWith
+              href: text-endswith.md
+            - name: Text.Format
+              href: text-format.md
+            - name: Text.From
+              href: text-from.md
+            - name: Text.FromBinary
+              href: text-frombinary.md
+            - name: Text.Insert
+              href: text-insert.md
+            - name: Text.Length
+              href: text-length.md
+            - name: Text.Lower
+              href: text-lower.md
+            - name: Text.Middle
+              href: text-middle.md
+            - name: Text.NewGuid
+              href: text-newguid.md
+            - name: Text.PadEnd
+              href: text-padend.md
+            - name: Text.PadStart
+              href: text-padstart.md
+            - name: Text.PositionOf
+              href: text-positionof.md
+            - name: Text.PositionOfAny
+              href: text-positionofany.md
+            - name: Text.Proper
+              href: text-proper.md
+            - name: Text.Range
+              href: text-range.md
+            - name: Text.Remove
+              href: text-remove.md
+            - name: Text.RemoveRange
+              href: text-removerange.md
+            - name: Text.Repeat
+              href: text-repeat.md
+            - name: Text.Replace
+              href: text-replace.md
+            - name: Text.ReplaceRange
+              href: text-replacerange.md
+            - name: Text.Select
+              href: text-select.md
+            - name: Text.Split
+              href: text-split.md
+            - name: Text.SplitAny
+              href: text-splitany.md
+            - name: Text.Start
+              href: text-start.md
+            - name: Text.StartsWith
+              href: text-startswith.md
+            - name: Text.ToBinary
+              href: text-tobinary.md
+            - name: Text.ToList
+              href: text-tolist.md
+            - name: Text.Trim
+              href: text-trim.md
+            - name: Text.TrimEnd
+              href: text-trimend.md
+            - name: Text.TrimStart
+              href: text-trimstart.md
+            - name: Text.Upper
+              href: text-upper.md
+            - name: TextEncoding.Ascii
+              href: textencoding-ascii.md
+            - name: TextEncoding.BigEndianUnicode
+              href: textencoding-bigendianunicode.md
+            - name: TextEncoding.Unicode
+              href: textencoding-unicode.md
+            - name: TextEncoding.Utf8
+              href: textencoding-utf8.md
+            - name: TextEncoding.Utf16
+              href: textencoding-utf16.md
+            - name: TextEncoding.Windows
+              href: textencoding-windows.md
+        - name: Time functions
+          items: 
+            - name: Time functions Overview
+              href: time-functions.md
+            - name: Time.EndOfHour
+              href: time-endofhour.md
+            - name: Time.From
+              href: time-from.md
+            - name: Time.FromText
+              href: time-fromtext.md
+            - name: Time.Hour
+              href: time-hour.md
+            - name: Time.Minute
+              href: time-minute.md
+            - name: Time.Second
+              href: time-second.md
+            - name: Time.StartOfHour
+              href: time-startofhour.md
+            - name: Time.ToRecord
+              href: time-torecord.md
+            - name: Time.ToText
+              href: time-totext.md
+            - name: '#time'
+              href: sharptime.md
+        - name: Type functions
+          items: 
+            - name: Type.AddTableKey
+              href: type-addtablekey.md
+            - name: Type.ClosedRecord
+              href: type-closedrecord.md
+            - name: Type.Facets
+              href: type-facets.md
+            - name: Type.ForFunction
+              href: type-forfunction.md
+            - name: Type.ForRecord
+              href: type-forrecord.md
+            - name: Type.FunctionParameters
+              href: type-functionparameters.md
+            - name: Type.FunctionRequiredParameters
+              href: type-functionrequiredparameters.md
+            - name: Type.FunctionReturn
+              href: type-functionreturn.md
+            - name: Type.Is
+              href: type-is.md
+            - name: Type.IsNullable
+              href: type-isnullable.md
+            - name: Type.IsOpenRecord
+              href: type-isopenrecord.md
+            - name: Type.ListItem
+              href: type-listitem.md
+            - name: Type.NonNullable
+              href: type-nonnullable.md
+            - name: Type.OpenRecord
+              href: type-openrecord.md
+            - name: Type.RecordFields
+              href: type-recordfields.md
+            - name: Type.ReplaceFacets
+              href: type-replacefacets.md
+            - name: Type.ReplaceTableKeys
+              href: type-replacetablekeys.md
+            - name: Type.TableColumn
+              href: type-tablecolumn.md
+            - name: Type.TableKeys
+              href: type-tablekeys.md
+            - name: Type.TableRow
+              href: type-tablerow.md
+            - name: Type.TableSchema
+              href: type-tableschema.md
+            - name: Type.Union
+              href: type-union.md
+            - name: Type functions Overview
+              href: type-functions.md
+        - name: Uri functions
+          items: 
+            - name: Uri functions Overview
+              href: uri-functions.md
+            - name: Uri.BuildQueryString
+              href: uri-buildquerystring.md
+            - name: Uri.Combine
+              href: uri-combine.md
+            - name: Uri.EscapeDataString
+              href: uri-escapedatastring.md
+            - name: Uri.Parts
+              href: uri-parts.md
+        - name: Value functions
+          items: 
+            - name: Value functions Overview
+              href: value-functions.md
+            - name: DirectQueryCapabilities.From
+              href: directquerycapabilities-from.md
+            - name: Embedded.Value
+              href: embedded-value.md
+            - name: Precision.Decimal
+              href: precision-decimal.md
+            - name: Precision.Double
+              href: precision-double.md
+            - name: SqlExpression.SchemaFrom
+              href: sqlexpression-schemafrom.md
+            - name: SqlExpression.ToExpression
+              href: sqlexpression-toexpression.md
+            - name: Value.As
+              href: value-as.md
+            - name: Value.Add
+              href: value-add.md
+            - name: Value.Compare
+              href: value-compare.md
+            - name: Value.Divide
+              href: value-divide.md
+            - name: Value.Equals
+              href: value-equals.md
+            - name: Value.Firewall
+              href: value-firewall.md
+            - name: Value.FromText
+              href: value-fromtext.md
+            - name: Value.Is
+              href: value-is.md
+            - name: Value.Metadata
+              href: value-metadata.md
+            - name: Value.Multiply
+              href: value-multiply.md
+            - name: Value.NullableEquals
+              href: value-nullableequals.md
+            - name: Value.NativeQuery
+              href: value-nativequery.md
+            - name: Value.RemoveMetadata
+              href: value-removemetadata.md
+            - name: Value.ReplaceMetadata
+              href: value-replacemetadata.md
+            - name: Value.ReplaceType
+              href: value-replacetype.md
+            - name: Value.Subtract
+              href: value-subtract.md
+            - name: Value.Type
+              href: value-type.md
+            - name: Variable.Value
+              href: variable-value.md
+    - name: Quick tour of the Power Query M formula language
+      href: quick-tour-of-the-power-query-m-formula-language.md
+    - name: Power Query M language specification
+      href: power-query-m-language-specification.md
+    - name: Power Query M type system
+      href: power-query-m-type-system.md
+    - name: Expressions, values, and let expression
+      href: expressions-values-and-let-expression.md
+    - name: Comments
+      href: comments.md
+    - name: Evaluation model
+      href: evaluation-model.md
+    - name: Operators
+      href: operators.md
+    - name: Type conversion
+      href: type-conversion.md
+    - name: Metadata
+      href: metadata.md
+    - name: Errors
+      href: errors.md

@@ -1,7 +1,8 @@
 ---
 title: "Duration.Hours | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns an hour component of a Duration value.  
   
-```  
+## Syntax
+
+<pre>
 Duration.Hours(duration as nullable duration) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   

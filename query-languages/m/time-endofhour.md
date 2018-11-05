@@ -1,7 +1,8 @@
 ---
 title: "Time.EndOfHour | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a DateTime value from the end of the hour.  
   
-```  
+## Syntax
+
+<pre>
 Time.EndOfHour(dateTime as datetime) as nullable datetime  
-```  
+</pre>
   
 ## Arguments  
   
@@ -32,7 +35,7 @@ Time.EndOfHour(dateTime as datetime) as nullable datetime
   
 ## Example  
   
-```  
+```powerquery-m
 dateTime = DateTimeZone.FromText("2011-02-21T12:30:00-08:00");   
 Time.EndOfHour(dateTime) equals 2011-02-21T12:59:59-08:00  
 ```  

@@ -1,7 +1,8 @@
 ---
 title: "Table.ColumnCount | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the number of columns in a table.  
   
-```  
+## Syntax
+
+<pre>
 Table.ColumnCount(table as table) as number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,7 +29,7 @@ Table.ColumnCount(table as table) as number
   
 ## Example  
   
-```  
+```powerquery-m 
 let  
   
     emptyTable = Table.FromRows({}),  

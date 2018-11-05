@@ -1,7 +1,8 @@
 ---
 title: "Table.Skip | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a table that does not contain the first row or rows of the table.  
   
-```  
+## Syntax
+
+<pre>
 Table.Skip(table as table, optional countOrCondition as any) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -35,7 +38,7 @@ Table.Skip(table as table, optional countOrCondition as any) as table
   
 ## Examples  
   
-```  
+```powerquery-m
 Table.Skip(Table.FromRecords(  
   
 {  

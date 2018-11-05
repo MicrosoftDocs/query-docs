@@ -1,6 +1,7 @@
 ---
 title: "UNION Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -14,9 +15,9 @@ Creates a union (join) table from a pair of tables.
   
 ## Syntax  
   
-```  
+```dax
 UNION(<table_expression1>, <table_expression2> [,<table_expression>]…)  
-```  
+```
   
 #### Parameters  
   
@@ -45,7 +46,7 @@ The returned table will not contain columns from related tables.
 ## Example  
 The following expression creates a union by combining the USAInventory table and the INDInventory table into a single table:  
 
-```
+```dax
 UNION(UsaInventory, IndInventory)
 ```
 

@@ -1,7 +1,8 @@
 ---
 title: "Binary.Combine | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Combines a list of binaries into a single binary.  
   
-```  
+## Syntax
+
+<pre>  
 Binary.Combine(binaries as list) as binary  
-```  
+</pre>  
   
 ## Arguments  
   

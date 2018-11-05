@@ -1,7 +1,8 @@
 ---
 title: "List.LastN | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the last set of items in a list by specifying how many items to return or a qualifying condition.  
   
-```  
+## Syntax
+
+<pre>
 List.LastN(list as list, optional countOrCondition as any) as any  
-```  
+</pre>
   
 ## Arguments  
   
@@ -35,6 +38,6 @@ List.LastN(list as list, optional countOrCondition as any) as any
   
 ## Example  
   
-```  
+```powerquery-m
 List.LastN({3, 4, 5, -1, 7, 8, 2},1) equals  { 2 }  
 ```  

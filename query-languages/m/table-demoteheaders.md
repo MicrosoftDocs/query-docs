@@ -1,7 +1,8 @@
 ---
 title: "Table.DemoteHeaders | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Demotes the header row down into the first row of a table.  
   
-```  
+## Syntax
+
+<pre>
 Table.DemoteHeaders(table as table) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,7 +29,7 @@ Table.DemoteHeaders(table as table) as table
   
 ## Example  
   
-```  
+```powerquery-m
 Table.DemoteHeaders(Table.FromRecords(  
   
 {  

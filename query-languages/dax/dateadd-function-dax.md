@@ -1,6 +1,7 @@
 ---
 title: "DATEADD Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns a table that contains a column of dates, shifted either forward or backw
   
 ## Syntax  
   
-```  
+```dax
 DATEADD(<dates>,<number_of_intervals>,<interval>)  
-```  
+```
   
 #### Parameters  
   
@@ -49,7 +50,7 @@ The result table includes only dates that exist in the **dates** column.
 
 If the dates in the current context do not form a contiguous interval, the function returns an error.
   
-This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [http://go.microsoft.com/fwlink/?LinkId=219172](http://go.microsoft.com/fwlink/?LinkId=219172).  
+This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
 ## Example: Shifting a Set of Dates  
   
@@ -58,12 +59,12 @@ The following formula calculates dates that are one year before the dates in the
   
 ### Code  
   
-```  
+```dax
 =DATEADD(DateTime[DateKey],-1,year)  
-```  
+```
   
 ## See Also  
 [Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
 [Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[Get Sample Data](http://go.microsoft.com/fwlink/?LinkId=164474)  
+[Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
   

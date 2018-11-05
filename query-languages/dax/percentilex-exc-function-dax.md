@@ -1,6 +1,7 @@
 ---
 title: "PERCENTILEX.EXC Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -16,9 +17,9 @@ To return the percentile of numbers in a column, use [PERCENTILE.EXC Function &#
   
 ## Syntax  
   
-```  
+```dax
 PERCENTILEX.EXC(<table>, <expression>, k)  
-```  
+```
   
 #### Parameters  
   

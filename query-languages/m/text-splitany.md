@@ -1,7 +1,8 @@
 ---
 title: "Text.SplitAny | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a list containing parts of a text value that are delimited by any separator text values.  
   
-```  
+## Syntax
+
+<pre> 
 Text.SplitAny(string as text,  separator as text) as list  
-```  
+</pre> 
   
 ## Arguments  
   

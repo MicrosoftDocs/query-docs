@@ -1,6 +1,7 @@
 ---
 title: "TREATAS Function | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Applies the result of a table expression as filters to columns from an unrelated
   
 ## Syntax  
   
-```  
+```dax
 TREATAS(table_expression, <column>[, <column>[, <column>[,…]]]} )  
-```  
+```
   
 #### Parameters  
   
@@ -40,7 +41,7 @@ Best for use when a relationship does not exist between the tables.
 In the following example, the model contains two unrelated product tables. If a user applies a filter to DimProduct1[ProductCategory] selecting Bikes, Seats, Tires, the same filter, Bikes, Seats, Tires is applied to DimProduct2[ProductCategory].
 
 
-```
+```dax
 CALCULATE(
 SUM(Sales[Amount]), 
 TREATAS(VALUES(DimProduct1[ProductCategory]), DimProduct2[ProductCategory])

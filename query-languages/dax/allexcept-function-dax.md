@@ -1,6 +1,7 @@
 ---
 title: "ALLEXCEPT Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Removes all context filters in the table except filters that have been applied t
   
 ## Syntax  
   
-```  
+```dax
 ALLEXCEPT(<table>,<column>[,<column>[,…]])  
-```  
+```
   
 #### Parameters  
   
@@ -46,11 +47,11 @@ The following example presents a formula that you can use in a measure.
 The formula sums SalesAmount_USD and uses the ALLEXCEPT function to remove any context filters on the DateTime table except if the filter has been applied to the CalendarYear column.  
   
 > [!NOTE]  
-> The above example uses the tables, ResellerSales_USD and DateTime from the DAX sample workbook. For more information about samples, see [Get Sample Data](http://go.microsoft.com/fwlink/?LinkId=164474) .  
+> The above example uses the tables, ResellerSales_USD and DateTime from the DAX sample workbook. For more information about samples, see [Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474) .  
   
-```  
+```dax
 =CALCULATE(SUM(ResellerSales_USD[SalesAmount_USD]), ALLEXCEPT(DateTime, DateTime[CalendarYear]))  
-```  
+```dax
 Because the formula uses ALLEXCEPT, whenever any column but CalendarYear from the table DateTime is used to slice the PivotTable, the formula will remove any slicer filters, providing a value equal to the sum of SalesAmount_USD for the column label value, as shown in Table 1.  
   
 However, if the column CalendarYear is used to slice the PivotTable, the results are different. Because CalendarYear is specified as the argument to ALLEXCEPT, when the data is sliced on the year, a filter will be applied on years at the row level, as shown in Table 2. The user is encouraged to compare these tables to understand the behavior of ALLEXCEPT().  

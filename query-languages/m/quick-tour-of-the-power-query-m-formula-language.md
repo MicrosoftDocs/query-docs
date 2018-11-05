@@ -1,7 +1,8 @@
 ---
 title: "Quick tour | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -19,7 +20,7 @@ To create an advanced query, you use the **Query Editor**. A mashup query is com
   
 A **let** expression follows this structure:  
   
-```  
+```powerquery-m
 Let  
    Variablename = expression,  
    #"Variable name" = expression2  
@@ -64,7 +65,7 @@ Let's assume you created the following transform in the **Query Editor** to conv
   
 Here's the code you can paste into **Query Editor**:  
   
-```  
+```powerquery-m
 let Orders = Table.FromRecords({  
     [OrderID = 1, CustomerID = 1, Item = "fishing rod", Price = 100.0],  
     [OrderID = 2, CustomerID = 1, Item = "1 lb. worms", Price = 5.0],  

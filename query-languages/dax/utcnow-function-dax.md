@@ -1,6 +1,7 @@
 ---
 title: "UTCNOW Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the current UTC date and time
   
 ## Syntax  
   
-```  
+```dax
 UTCNOW()  
-```  
+```
   
 ## Return Value  
 A (**datetime)**.  
@@ -27,9 +28,9 @@ The result of the UTCNOW function changes only when the formula is refreshed. It
 ## Example  
 The following:
   
-```  
+```dax
 EVALUATE { FORMAT(UTCNOW(), "General Date") } 
-```  
+```
 
 Returns:
 

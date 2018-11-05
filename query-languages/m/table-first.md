@@ -1,7 +1,8 @@
 ---
 title: "Table.First | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the first row from a table.  
   
-```  
+## Syntax
+
+<pre>
 Table.First(table as table, optional default as any) as any  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,7 +34,7 @@ Table.First(table as table, optional default as any) as any
   
 ## Example  
   
-```  
+```powerquery-m
 Table.First(Table.FromRecords({  
   
     [CustomerID = 1, Name = "Bob", Phone = "123-4567"],  

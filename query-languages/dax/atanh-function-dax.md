@@ -1,6 +1,7 @@
 ---
 title: "ATANH Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the inverse hyperbolic tangent of a number. Number must be between -1 an
   
 ## Syntax  
   
-```  
+```dax
 ATANH(number)  
-```  
+```
   
 #### Parameters  
   

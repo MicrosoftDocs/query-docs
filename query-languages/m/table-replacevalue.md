@@ -1,7 +1,8 @@
 ---
 title: "Table.ReplaceValue | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Replaces oldValue with newValue in specific columns of a table, using the provided replacer function, such as text.Replace or Value.Replace.  
   
-```  
+## Syntax
+
+<pre>
 Table.ReplaceValue(table as table, oldValue as any, newValue as any,replacer as function, columnsToSearch as {Text}) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -30,7 +33,7 @@ Table.ReplaceValue(table as table, oldValue as any, newValue as any,replacer as 
   
 ## Examples  
   
-```  
+```powerquery-m
 Table.ReplaceValue(  
   
     Table.FromRecords(  

@@ -1,7 +1,8 @@
 ---
 title: "DateTimeZone.FixedUtcNow | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,6 +15,8 @@ manager: kfile
 ## About  
 Returns the current date and time in UTC (the GMT timezone). This value is fixed and will not change with successive calls.  
   
-```  
+## Syntax
+
+<pre>
 DateTimeZone.FixedUtcNow() as datetimezone  
 ```  

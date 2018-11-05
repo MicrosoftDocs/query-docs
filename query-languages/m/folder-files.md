@@ -1,7 +1,8 @@
 ---
 title: "Folder.Files | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a table containing a row for each file found at a folder path, and subfolders. Each row contains properties of the folder or file and a link to its content.  
   
-```  
+## Syntax
+
+<pre>
 Folder.Files(path as text) as table  
-```  
+</pre>
   
 ## Arguments  
   

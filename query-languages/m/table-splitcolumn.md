@@ -1,7 +1,8 @@
 ---
 title: "Table.SplitColumn | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a new set of columns from a single column applying a splitter function to each value.  
   
-```  
+## Syntax
+
+<pre> 
 Table.SplitColumn(table as table, sourceColumn as text, splitter as function, optional columnNamesOrNumber as any, optional default as any, optional extraValues as any) as record  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -31,7 +34,7 @@ Table.SplitColumn(table as table, sourceColumn as text, splitter as function, op
   
 ## Example  
   
-```  
+```powerquery-m
 let  
   
     Customers = Table.FromRecords({  

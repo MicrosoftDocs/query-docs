@@ -1,7 +1,8 @@
 ---
 title: "List.InsertRange | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Inserts items from values at the given index in the input list.  
   
-```  
+## Syntax
+
+<pre>
 List.InsertRange(list as list, offset as number, values as list) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -28,6 +31,6 @@ List.InsertRange(list as list, offset as number, values as list) as list
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 List.InsertRange({"A", "B", "D"}, 2, {"C"}) equals {"A", "B", "C", "D"}  
 ```  

@@ -1,7 +1,8 @@
 ---
 title: "Date.AddMonths | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a DateTime value with the month portion incremented by n months.  
   
-```  
+## Syntax
+
+<pre>   
 Date.AddMonths(dateTime as datetime, numberOfMonths as number) as nullable datetime  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -31,10 +34,10 @@ Date.AddMonths(dateTime as datetime, numberOfMonths as number) as nullable datet
   
 ## Examples  
   
-```  
+```powerquery-m 
 Date.AddMonths(DateTime.FromText("2011-02-19"), 5) equals 2011-07-19  
 ```  
   
-```  
+```powerquery-m 
 Date.AddMonths(DateTime.FromText("2010-12-01"), 2) equals 2011-02-01  
 ```  

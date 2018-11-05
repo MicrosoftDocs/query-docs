@@ -1,7 +1,8 @@
 ---
 title: "Date.StartOfMonth | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a DateTime value representing the start of the month.  
   
-```  
+## Syntax
+
+<pre>
 Date.StartOfMonth(dateTime as nullable datetime) as nullable datetime  
-```  
+</pre>
   
 ## Arguments  
   
@@ -32,7 +35,7 @@ Date.StartOfMonth(dateTime as nullable datetime) as nullable datetime
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 dateTime = DateTimeZone.FromText("2011-02-21T12:30:00-08:00");  
 Date.StartOfMonth(dateTime) equals 2011-02-01T00:00:00-08:00  
 ```  

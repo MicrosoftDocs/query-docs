@@ -1,6 +1,7 @@
 ---
 title: "AVERAGE Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the average (arithmetic mean) of all the numbers in a column.
   
 ## Syntax  
   
-```  
+```dax
 AVERAGE(<column>)  
-```  
+```
   
 #### Parameters  
   
@@ -44,9 +45,9 @@ Whenever there are no rows to aggregate, the function returns a blank. However, 
 ## Example  
 The following formula returns the average of the values in the column, ExtendedSalesAmount, in the table, InternetSales.  
   
-```  
+```dax
 =AVERAGE(InternetSales[ExtendedSalesAmount])  
-```  
+```
   
 ## Related Functions  
 The AVERAGEX function can take as its argument an expression that is evaluated for each row in a table. This enables you to perform calculations and then take the average of the calculated values.  

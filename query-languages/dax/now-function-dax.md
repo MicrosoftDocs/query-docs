@@ -1,6 +1,7 @@
 ---
 title: "NOW Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -15,9 +16,9 @@ The NOW function is useful when you need to display the current date and time on
   
 ## Syntax  
   
-```  
+```dax
 NOW()  
-```  
+```
   
 ## Return Value  
 A date (**datetime)**.  
@@ -31,9 +32,9 @@ The TODAY function returns the same date but is not precise with regard to time;
 ## Example  
 The following example returns the current date and time plus 3.5 days:  
   
-```  
+```dax
 =NOW()+3.5  
-```  
+```
   
 ## See Also  
 [UTCNOW Function](utcnow-function-dax.md)   

@@ -1,7 +1,8 @@
 ---
 title: "List.TransformMany | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a list whose elements are projected from the input list.  
   
-```  
+## Syntax
+
+<pre>
 List.TransformMany(list as list, collectionTransform as Function, resultTransform as Function) as list  
-```  
+</pre>
   
 ## Arguments  
   
@@ -28,6 +31,6 @@ List.TransformMany(list as list, collectionTransform as Function, resultTransfor
   
 ## Example  
   
-```  
+```powerquery-m
 List.TransformMany({1, 2}, (value) => {value + 1}, (oldValue, newValue) => oldValue * newValue) equals { 2, 6 }  
 ```  

@@ -1,6 +1,7 @@
 ---
 title: "T.INV.2T Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 8/14/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -14,9 +15,9 @@ Returns the two-tailed inverse of the Student's t-distribution.
   
 ## Syntax  
   
-```  
+```dax
 T.INV.2T(Probability,Deg_freedom)
-```  
+```
   
 #### Parameters  
   
@@ -30,9 +31,9 @@ The two-tailed inverse of the Student's t-distribution.
   
 ## Example  
   
-```  
+```dax
 EVALUATE { T.INV.2T(0.546449, 60) }
-```  
+```dax
 Returns
 
 |[Value]  |

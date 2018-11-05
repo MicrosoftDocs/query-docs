@@ -1,7 +1,8 @@
 ---
 title: "DateTime.LocalNow | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a datetime value set to the current date and time on the system.  
   
-```  
+## Syntax
+
+<pre>
 DateTime.LocalNow() as datetime  
-```  
+</pre>
   
 ## Remarks  
   
@@ -24,6 +27,6 @@ DateTime.LocalNow() as datetime
   
 ## Example  
   
-```  
+```powerquery-m 
 DateTime.LocalNow()equals 2013-03-08T14:22:42  
 ```  

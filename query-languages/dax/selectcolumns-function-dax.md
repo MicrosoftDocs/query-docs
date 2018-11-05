@@ -1,6 +1,7 @@
 ---
 title: "SELECTCOLUMNS Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Adds calculated columns to the given table or table expression.
   
 ## Syntax  
   
-```  
+```dax
 SELECTCOLUMNS(<table>, <name>, <scalar_expression> [, <name>, <scalar_expression>]…) 
-```  
+```
   
 #### Parameters  
 *table*  
@@ -51,9 +52,9 @@ USA     |   WA      |    10     |  900
 
 
 
-```  
+```dax
 SELECTCOLUMNS(Info, “StateCountry”, [State]&”, ”&[Country])
-```  
+```
 
 Returns:
   

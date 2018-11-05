@@ -1,6 +1,7 @@
 ---
 title: "GROUPBY Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -14,9 +15,9 @@ The GROUPBY function is similar to the SUMMARIZE function. However, GROUPBY does
   
 ## Syntax  
   
-```  
+```dax
 GROUPBY (<table>, [<groupBy_columnName1>], [<name>, <expression>]… )  
-```  
+```
   
 #### Parameters  
   
@@ -59,14 +60,14 @@ CURRENTGROUP can only be used in an expression that defines a column within the 
 #### Example  
 Assume a data model has four tables:  Sales, Customer, Product, Geography where Sales is on the “many” side of a relationship to each of the other three tables.  
   
-```  
+```dax
 GROUPBY (  
 Sales,   
 Geography[Country],   
 Product[Category],   
 “Total Sales”, SUMX( CURRENTGROUP(), Sales[Price] * Sales[Qty])  
 )  
-```  
+```dax
 This will start with the Sales table, extended with all the columns from all the related tables.Then it will build a result with three columns.  
   
 -   The first column is each of the countries for which there is a sale.  
@@ -77,7 +78,7 @@ This will start with the Sales table, extended with all the columns from all the
   
 Suppose we’ve built the previous result.  We can use GROUPBY again, to find the maximum category sales figure within each country as shown here.  
   
-```  
+```dax
 DEFINE  
 VAR SalesByCountryAndCategory =  
 GROUPBY (  
@@ -92,7 +93,7 @@ SalesByCountryAndCategory,
 Geography[Country],   
  “Max Sales”, MAXX( CURRENTGROUP(), [Total Sales])  
 )  
-```  
+```
   
 ## See Also  
 [SUMMARIZE Function &#40;DAX&#41;](summarize-function-dax.md)  

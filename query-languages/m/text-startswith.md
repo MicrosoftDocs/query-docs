@@ -1,7 +1,8 @@
 ---
 title: "Text.StartsWith | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -16,9 +17,11 @@ Returns a logical value indicating whether a text value substring was found at t
   
 **Note**: Only comparer functions created through the library (Comparer.FromCulture) are supported.  
   
-```  
+## Syntax
+
+<pre>
 Text.StartsWith(string as nullable text, substring as text, optional comparer as nullable function) as nullable logical  
-```  
+</pre>
   
 ## Arguments  
   

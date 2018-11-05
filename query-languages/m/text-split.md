@@ -1,7 +1,8 @@
 ---
 title: "Text.Split | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a list containing parts of a text value that are delimited by a separator text value.  
   
-```  
+## Syntax
+
+<pre>
 Text.Split(string as text, separator as text) as list  
-```  
+</pre> 
   
 ## Arguments  
   

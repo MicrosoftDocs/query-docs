@@ -1,7 +1,8 @@
 ---
 title: "Date.AddDays | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a Date/DateTime/DateTimeZone value with the day portion incremented by the number of days provided. It also handles incrementing the month and year potions of the value as appropriate.  
   
-```  
+## Syntax
+
+<pre>   
 Date.AddDays(dateTime, days as number)  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -27,14 +30,14 @@ Date.AddDays(dateTime, days as number)
   
 ## Examples  
   
-```  
+```powerquery-m  
 Date.AddDays(DateTime.FromText("2011-02-19"), 5) equals 2011-02-24  
 ```  
   
-```  
+```powerquery-m  
 Date.AddDays(DateTime.FromText("2011-02-19"), -2) equals 2011-02-17  
 ```  
   
-```  
+```powerquery-m 
 Date.AddDays(DateTime.FromText("2011-12-31"), 1) equals 2012-01-01  
 ```  

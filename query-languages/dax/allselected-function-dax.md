@@ -1,6 +1,7 @@
 ---
 title: "ALLSELECTED Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -15,9 +16,9 @@ The ALLSELECTED function gets the context that represents all rows and columns i
   
 ## Syntax  
   
-```  
+```dax
 ALLSELECTED([<tableName> | <columnName>])  
-```  
+```
   
 #### Parameters  
 tableName  
@@ -40,7 +41,7 @@ The context of the query without any column and row filters.
 ## Example  
 The following example shows how to generate different levels of visual totals in a table report using DAX expressions. In the report two (2) previous filters have been applied to the Reseller Sales data; one on Sales Territory Group = *Europe* and the other on Promotion Type = *Volume Discount*. Once filters have been applied, visual totals can be calculated for the entire report, for All Years, or for All Product Categories. Also, for illustration purposes the grand total for All Reseller Sales is obtained too, removing all filters in the report. Evaluating the following DAX expression results in a table with all the information needed to build a table with Visual Totals.  
   
-```  
+```dax
 define  
 measure 'Reseller Sales'[Reseller Sales Amount]=sum('Reseller Sales'[Sales Amount])  
 measure 'Reseller Sales'[Reseller Grand Total]=calculate(sum('Reseller Sales'[Sales Amount]), ALL('Reseller Sales'))  
@@ -68,7 +69,7 @@ crossjoin(distinct('Product Category'[Product Category Name]), distinct('Date'[C
 , 'Sales Territory'[Sales Territory Group]="Europe", 'Promotion'[Promotion Type]="Volume Discount"  
 )  
 order by [Product Category Name], [Calendar Year]  
-```  
+```dax
 After executing the above expression in SQL Server Management Studio against AdventureWorks DW Tabular Model 2012 you obtain the following results:  
   
 |[Product Category Name]|[Calendar Year]|[Reseller Sales Amount]|[Reseller Grand Total]|[Reseller Visual Total]|[Reseller Visual Total for All of Calendar Year]|[Reseller Visual Total for All of Product Category Name]|  

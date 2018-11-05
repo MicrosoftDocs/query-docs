@@ -1,7 +1,8 @@
 ---
 title: "Number.IntegerDivide | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Divides two numbers and returns the whole part of the resulting number.  
   
-```  
+## Syntax
+
+<pre>
 Number.IntegerDivide (number1 as nullable number,  number2 as nullable number,  optional precision as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -28,6 +31,6 @@ Number.IntegerDivide (number1 as nullable number,  number2 as nullable number,  
   
 ## Example  
   
-```  
+```powerquery-m
 Number.IntegerDivide(9.2, 3.1) equals 2  
 ```  

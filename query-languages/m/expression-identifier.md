@@ -1,7 +1,8 @@
 ---
 title: "Expression.Identifier | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a text value that can be used as an identifier from a text value.  
   
-```  
+## Syntax
+
+<pre>
 Expression.Identifier(name as text) as text  
-```  
+</pre>
   
 ## Arguments  
   
@@ -25,35 +28,41 @@ Expression.Identifier(name as text) as text
 |name|The text to identify.|  
   
 ## Examples  
+
+```powerquery-m
+Expression.Identifier("foo") 
+```  
+equals "foo" 
+ 
+```powerquery-m
+Expression.Identifier("10 lbs")  
+```  
+equals "#""10 lbs""" 
+
+```powerquery-m
+Expression.Identifier("try")
+``` 
+equals "#""try"""  
   
+```powerquery-m
+Expression.Identifier("")
 ```  
-Expression.Identifier("foo") equals "foo"  
+equals "#"""""   
+
+```powerquery-m
+Expression.Identifier(null) 
 ```  
-  
-```  
-Expression.Identifier("10 lbs") equals "#""10 lbs"""  
-```  
-  
-```  
-Expression.Identifier("try") equals "#""try"""  
-```  
-  
-```  
-Expression.Identifier("") equals "#"""""  
-```  
-  
-```  
-Expression.Identifier(null) equals Error  
-```  
-  
+equals Error  
+
 ## Example of combined use  
   
-```  
+```powerquery-m
 Expression.Evaluate(  
 // "let x = 1 in x"  
 "let " &  
 Expression.Identifier("x") & " = " & Expression.Constant(1) &  
 " in " &  
 Expression.Identifier("x")  
-) equals 1  
+)   
 ```  
+equals 1

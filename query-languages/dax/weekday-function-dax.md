@@ -1,6 +1,7 @@
 ---
 title: "WEEKDAY Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns a number from 1 to 7 identifying the day of the week of a date. By defau
   
 ## Syntax  
   
-```  
+```dax
 WEEKDAY(<date>, <return_type>)  
-```  
+```
   
 #### Parameters  
   
@@ -37,9 +38,9 @@ When the date argument is a text representation of the date, the function uses t
 ## Example  
 The following example gets the date from the [HireDate] column, adds 1, and displays the weekday corresponding to that date. Because the **return_type** argument has been omitted, the default format is used, in which 1 is Sunday and 7 is Saturday. If the result is 4, the day would be Wednesday.  
   
-```  
+```dax
 =WEEKDAY([HireDate]+1)  
-```  
+```
   
 ## See Also  
 [Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  

@@ -1,7 +1,8 @@
 ---
 title: "Number.Factorial | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the factorial of a number.  
   
-```  
+## Syntax
+
+<pre>
 Number.Factorial(number as nullable number)  as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +29,6 @@ Number.Factorial(number as nullable number)  as nullable number
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 Number.Factorial(3) equals 6  
 ```  

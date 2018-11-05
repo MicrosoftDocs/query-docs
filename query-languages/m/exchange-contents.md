@@ -1,7 +1,8 @@
 ---
 title: "Exchange.Contents | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,6 +15,8 @@ manager: kfile
 ## About  
 Returns a table of contents from a Microsoft Exchange account.  
   
-```  
+## Syntax
+
+<pre>
 Exchange.Contents() as table  
-```  
+</pre>

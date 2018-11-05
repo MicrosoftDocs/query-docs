@@ -1,7 +1,8 @@
 ---
 title: "Value.Add | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -13,9 +14,11 @@ manager: kfile
   
 ## About  
   
-```  
+## Syntax
+
+<pre>
 Value.Add(value1 as any, value2 as any, optional precision as nullable number) as any  
-```  
+</pre>
   
 ## Arguments  
   

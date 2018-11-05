@@ -1,6 +1,7 @@
 ---
 title: "PATHITEMREVERSE Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the item at the specified *position* from a string resulting from evalua
   
 ## Syntax  
   
-```  
+```dax
 PATHITEMREVERSE(<path>, <position>[, <type>])  
-```  
+```
   
 #### Parameters  
 path  
@@ -46,11 +47,11 @@ The n-position ascendant in the given path, counting from current to the oldest.
   
 -   If *type* is not a valid enumeration element an error is returned.  
   
-This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [http://go.microsoft.com/fwlink/?LinkId=219172](http://go.microsoft.com/fwlink/?LinkId=219172).  
+This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
 ## Example  
 The following example takes an employee ID column as the input to a PATH function, and reverses the list of grandparent elements that are returned. The position specified is 3 and the return type is 1; therefore, the PATHITEMREVERSE function returns an integer representing the manager two levels up from the employee.  
   
-```  
+```dax
 =PATHITEMREVERSE(PATH(Employee[EmployeeKey], Employee[ParentEmployeeKey]), 3, 1)  
-```  
+```

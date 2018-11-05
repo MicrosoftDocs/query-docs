@@ -1,6 +1,7 @@
 ---
 title: "CONCATENATEX Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -14,9 +15,9 @@ Concatenates the result of an expression evaluated for each row in a table.
   
 ## Syntax  
   
-```  
+```dax
 CONCATENATEX(<table>, <expression>, [delimiter])  
-```  
+```
   
 #### Parameters  
   

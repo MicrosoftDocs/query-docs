@@ -1,7 +1,8 @@
 ---
 title: "Number.RoundDown | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the largest integer less than or equal to a number value.  
   
-```  
+## Syntax
+
+<pre>
 Number.RoundDown(value as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,10 +29,10 @@ Number.RoundDown(value as nullable number) as nullable number
   
 ## Examples  
   
-```  
+```powerquery-m
 Number.RoundDown(-1.2) equals -2  
 ```  
   
-```  
+```powerquery-m
 Number.RoundDown(1.2) equals 1  
 ```  

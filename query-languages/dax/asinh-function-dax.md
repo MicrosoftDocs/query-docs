@@ -1,6 +1,7 @@
 ---
 title: "ASINH Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the inverse hyperbolic sine of a number. The inverse hyperbolic sine is 
   
 ## Syntax  
   
-```  
+```dax
 ASINH(number)  
-```  
+```
   
 #### Parameters  
   

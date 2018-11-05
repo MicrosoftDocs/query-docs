@@ -1,7 +1,8 @@
 ---
 title: "Record.RenameFields | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a new record that renames the fields specified. The resultant fields will retain their original order. This function supports swapping and chaining field names. However, all target names plus remaining field names must constitute a unique set or an error will occur.  
   
-```  
+## Syntax
+
+<pre>
 Record.RenameFields(record as record,  renames as list,  optional missingField as nullable number) as record  
-```  
+</pre>
   
 ## Arguments  
   
@@ -40,11 +43,11 @@ Record.RenameFields(record as record,  renames as list,  optional missingField a
   
 ## Examples  
   
-```  
+```powerquery-m
 Record.RenameFields([OrderID = 1, CustomerID = 1, Item = "Fishing rod", UnitPrice = 100.0], {"UnitPrice","Price"})  
 ```  
   
-```  
+```powerquery-m
 equals [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0]  
 ```  
   

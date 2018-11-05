@@ -1,7 +1,8 @@
 ---
 title: "Table.MatchesAllRows | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns true if all of the rows in a table meet a condition.  
   
-```  
+## Syntax
+
+<pre>
 Table.MatchesAllRows(table as table, condition as function) as logical  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,7 +34,7 @@ Table.MatchesAllRows(table as table, condition as function) as logical
   
 ## Example  
   
-```  
+```powerquery-m
 Table.MatchesAllRows(Table.FromRecords (  
   
 {  

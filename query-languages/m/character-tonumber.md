@@ -1,7 +1,8 @@
 ---
 title: "Character.ToNumber | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a character to its number value.  
   
-```  
+## Syntax
+
+<pre>  
 Character.ToNumber(character as nullable text) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   

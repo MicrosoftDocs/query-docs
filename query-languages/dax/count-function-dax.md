@@ -1,6 +1,7 @@
 ---
 title: "COUNT Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ The COUNT function counts the number of cells in a column that contain numbers.
   
 ## Syntax  
   
-```  
+```dax
 COUNT(<column>)  
-```  
+```
   
 #### Parameters  
   
@@ -42,9 +43,9 @@ When the function finds no rows to count, it returns a blank.  When there are ro
 ## Example  
 The following example shows how to count the number of numeric values in the column, ShipDate.  
   
-```  
+```dax
 =COUNT([ShipDate])  
-```  
+```dax
 To count logical values or text, use the COUNTA or COUNTAX functions.  
   
 ## See Also  

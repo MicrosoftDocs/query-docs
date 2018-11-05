@@ -1,6 +1,7 @@
 ---
 title: "ENDOFYEAR Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the last date of the year in the current context for the specified colum
   
 ## Syntax  
   
-```  
+```dax
 ENDOFYEAR(<dates> [,<year_end_date>])  
-```  
+```
   
 #### Parameters  
   
@@ -42,16 +43,16 @@ The **dates** argument can be any of the following:
   
 The **year_end_date** parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is ignored.  
   
-This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [http://go.microsoft.com/fwlink/?LinkId=219172](http://go.microsoft.com/fwlink/?LinkId=219172).  
+This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
 ## Example  
 The following sample formula creates a measure that returns the end of the fiscal year that ends on June 30, for the current context.  
   
 To see how this works, create a PivotTable and add the field CalendarYear to the **Row Labels** area of the PivotTable. Then add a measure, named **EndOfFiscalYear**, using the formula defined in the code section, to the **Values** area of the PivotTable.  
   
-```  
+```dax
 =ENDOFYEAR(DateTime[DateKey],"06/30/2004")  
-```  
+```
   
 ## See Also  
 [Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  

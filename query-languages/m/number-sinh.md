@@ -1,7 +1,8 @@
 ---
 title: "Number.Sinh | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the hyperbolic sine of a number.  
   
-```  
+## Syntax
+
+<pre>
 Number.Sinh(angle as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   

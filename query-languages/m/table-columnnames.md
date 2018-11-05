@@ -1,7 +1,8 @@
 ---
 title: "Table.ColumnNames | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the names of columns from a table.  
   
-```  
+## Syntax
+
+<pre>
 Table.ColumnNames(table as table) as {Text}  
-```  
+</pre>
   
 ## Arguments  
   
@@ -30,7 +33,7 @@ Table.ColumnNames(table as table) as {Text}
   
 ## Example  
   
-```  
+```powerquery-m
 Table.ColumnNames(Table.FromRecords(  
   
 {  

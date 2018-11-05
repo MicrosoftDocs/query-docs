@@ -1,7 +1,8 @@
 ---
 title: "Combiner.CombineTextByEachDelimiter | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a function that combines a list of text into a single text using each specified delimiter in sequence.  
   
-```  
+## Syntax
+
+<pre>  
 Combiner.CombineTextByEachDelimiter(delimiters as list, optional quoteStyle as number) as function  
-```  
+</pre>  
   
 ## Arguments  
   

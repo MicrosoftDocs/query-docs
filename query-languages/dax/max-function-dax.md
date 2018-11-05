@@ -1,6 +1,7 @@
 ---
 title: "MAX Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,13 +14,13 @@ Returns the largest numeric value in a column, or between two scalar expressions
   
 ## Syntax  
   
-```  
+```dax
 MAX(<column>)  
-```  
+```
 
-```  
+```dax
 MAX(<expression1>, <expression2>)
-```  
+```
   
 #### Parameters  
   
@@ -39,16 +40,16 @@ When comparing two expressions, blank is treated as 0 when comparing. That is, M
 ## Example  
 The following example returns the largest value found in the ExtendedAmount column of the InternetSales table.  
   
-```  
+```dax
 =MAX(InternetSales[ExtendedAmount])  
-```  
+```
 
 ## Example  
 The following example returns the largest value between the result of two expressions.  
   
-```  
+```dax
 =Max([TotalSales], [TotalPurchases])
-```  
+```
 
   
 ## See Also  

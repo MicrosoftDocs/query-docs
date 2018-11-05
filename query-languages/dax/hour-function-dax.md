@@ -1,6 +1,7 @@
 ---
 title: "HOUR Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the hour as a number from 0 (12:00 A.M.) to 23 (11:00 P.M.).
   
 ## Syntax  
   
-```  
+```dax
 HOUR(<datetime>)  
-```  
+```
   
 #### Parameters  
   
@@ -34,16 +35,16 @@ When the **datetime** argument is a text representation of the date and time, th
 ## Example  
 The following example returns the hour from the **TransactionTime** column of a table named **Orders**.  
   
-```  
+```dax
 =HOUR('Orders'[TransactionTime])  
-```  
+```
   
 ## Example  
 The following example returns 15, meaning the hour corresponding to 3 PM in a 24-hour clock. The text value is automatically parsed and converted to a date/time value.  
   
-```  
+```dax
 =HOUR("March 3, 2008 3:00 PM")  
-```  
+```
   
 ## See Also  
 [Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  

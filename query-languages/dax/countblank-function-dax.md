@@ -1,6 +1,7 @@
 ---
 title: "COUNTBLANK Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Counts the number of blank cells in a column.
   
 ## Syntax  
   
-```  
+```dax
 COUNTBLANK(<column>)  
-```  
+```
   
 #### Parameters  
   
@@ -33,14 +34,14 @@ Whenever there are no rows to aggregate, the function returns a blank.  However,
   
 In other words, if the COUNTBLANK function finds no blanks, the result will be zero, but if there are no rows to check, the result will be blank.  
   
-This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [http://go.microsoft.com/fwlink/?LinkId=219172](http://go.microsoft.com/fwlink/?LinkId=219172).  
+This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
 ## Example  
 The following example shows how to count the number of rows in the table Reseller that have blank values for BankName.  
   
-```  
+```dax
 =COUNTBLANK(Reseller[BankName])  
-```  
+```dax
 To count logical values or text, use the COUNTA or COUNTAX functions.  
   
 ## See Also  

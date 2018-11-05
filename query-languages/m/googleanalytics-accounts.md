@@ -1,7 +1,8 @@
 ---
 title: "GoogleAnalytics.Accounts | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -10,12 +11,11 @@ manager: kfile
 ---
 # GoogleAnalytics.Accounts
 
-  
-## About  
-Returns the Google Analytics accounts for the current credential.  
-  
-Note this is only available in the Power BI Designer Preview.  
-  
-```  
-GoogleAnalytics.Accounts() as table  
-```  
+## Syntax
+
+<pre>
+GoogleAnalytics.Accounts() as table
+</pre>
+
+## About
+Returns Google Analytics accounts that are accessible from the current credential.

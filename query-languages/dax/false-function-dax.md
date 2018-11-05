@@ -1,6 +1,7 @@
 ---
 title: "FALSE Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the logical value FALSE.
   
 ## Syntax  
   
-```  
+```dax
 FALSE()  
-```  
+```
   
 ## Return Value  
 Always FALSE.  
@@ -38,9 +39,9 @@ The following table shows the results when the example formula is used with 'Pro
 ||FALSE|FALSE|FALSE|FALSE|FALSE|FALSE|  
 |Grand Total|TRUE|TRUE|TRUE|TRUE|FALSE|TRUE|  
   
-```  
+```dax
 =IF(SUM('InternetSales_USD'[SalesAmount_USD]) >200000, TRUE(), false())  
-```  
+```
   
 ## See Also  
 [TRUE Function &#40;DAX&#41;](true-function-dax.md)  

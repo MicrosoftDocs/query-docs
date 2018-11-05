@@ -1,6 +1,7 @@
 ---
 title: "RAND Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns a random number greater than or equal to 0 and less than 1, evenly distr
   
 ## Syntax  
   
-```  
+```dax
 RAND()  
-```  
+```
   
 ## Return Value  
 A decimal number.  
@@ -29,14 +30,14 @@ Moreover, RAND is always recalculated if the function is used in the definition 
   
 Also, in such contexts the RAND function cannot return a result of zero, to prevent errors such as division by zero.  
   
-This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [http://go.microsoft.com/fwlink/?LinkId=219172](http://go.microsoft.com/fwlink/?LinkId=219172).  
+This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
 ## Example  
 To generate a random real number between two other numbers, you can use a formula like the following:  
   
-```  
+```dax
 = RAND()*(int1-int2)+int1  
-```  
+```
   
 ## See Also  
 [Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  

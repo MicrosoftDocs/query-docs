@@ -1,6 +1,7 @@
 ---
 title: "ATAN Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the arctangent, or inverse tangent, of a number. The arctangent is the a
   
 ## Syntax  
   
-```  
+```dax
 ATAN(number)  
-```  
+```
   
 #### Parameters  
   

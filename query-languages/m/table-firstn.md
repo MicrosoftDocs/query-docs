@@ -1,7 +1,8 @@
 ---
 title: "Table.FirstN | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the first  row(s) of a table, depending on the countOrCondition parameter.  
   
-```  
+## Syntax
+
+<pre>
 Table.FirstN( table as table, optional countOrCondition as any) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -33,7 +36,7 @@ Table.FirstN( table as table, optional countOrCondition as any) as table
   
 ## Example  
   
-```  
+```powerquery-m
 Table.FirstN(Table.FromRecords({  
   
     [CustomerID = 1, Name = "Bob", Phone = "123-4567"],  

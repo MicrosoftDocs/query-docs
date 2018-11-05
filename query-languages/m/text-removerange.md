@@ -1,7 +1,8 @@
 ---
 title: "Text.RemoveRange | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Removes count characters at a zero-based offset from a text value.  
   
-```  
+## Syntax
+
+<pre>
 Text.RemoveRange(text as nullable text, offset as number, count as number) as nullable text  
-```  
+</pre>
   
 ## Arguments  
   
@@ -34,10 +37,10 @@ Text.RemoveRange(text as nullable text, offset as number, count as number) as nu
   
 ## Examples  
   
-```  
+```powerquery-m
 Text.RemoveRange("abcdef", 2) equals "abdef"  
 ```  
   
-```  
+```powerquery-m
 Text.RemoveRange("abcdef", 2, 2) equals "abef"  
 ```  

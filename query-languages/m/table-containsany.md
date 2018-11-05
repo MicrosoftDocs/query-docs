@@ -1,7 +1,8 @@
 ---
 title: "Table.ContainsAny | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Determines whether any of the specified records appear as rows in the table.  
   
-```  
+## Syntax
+
+<pre>
 Table.ContainsAny(table as table, rows as list, optional equationCriteria as any) as logical  
-```  
+</pre>
   
 ## Arguments  
   
@@ -32,7 +35,7 @@ Table.ContainsAny(table as table, rows as list, optional equationCriteria as any
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m
 Table.ContainsAny(  
   
     Table.FromRecords( {[A=1, B=2],[A=2, B=3],[A=3, B=4]}),  

@@ -1,6 +1,7 @@
 ---
 title: "RANK.EQ  Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the ranking of a number in a list of numbers.
   
 ## Syntax  
   
-```  
+```dax
 RANK.EQ(<value>, <columnName>[, <order>])  
-```  
+```
   
 #### Parameters  
 value  
@@ -49,13 +50,13 @@ A number indicating the rank of *value* among the numbers in *columnName*.
 ## Example  
 The following example creates a calculated column that ranks the values in SalesAmount_USD, from the *InternetSales_USD* table, against all numbers in the same column.  
   
-```  
+```dax
 =RANK.EQ(InternetSales_USD[SalesAmount_USD], InternetSales_USD[SalesAmount_USD])  
-```  
+```
   
 ## Example  
 The following example ranks a subset of values against a given sample. Assume that you have a table of local students with their performance in a specific national test and, also, you have the entire set of scores in that national test. The following calculated column will give you the national ranking for each of the local students.  
   
-```  
+```dax
 =RANK.EQ(Students[Test_Score], NationalScores[Test_Score])  
-```  
+```

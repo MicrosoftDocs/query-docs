@@ -1,7 +1,8 @@
 ---
 title: "Binary.From | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a binary value from the given value.  
   
-```  
+## Syntax
+
+<pre>   
 Binary.From(Value as any, optional encoding as nullable number) as nullable binary  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -41,6 +44,6 @@ Binary.From(Value as any, optional encoding as nullable number) as nullable bina
   
 ## Example  
   
-```  
+```powerquery-m  
 Binary.From("1011")equals Binary.FromText("1011", BinaryEncoding.Base64)  
 ```  

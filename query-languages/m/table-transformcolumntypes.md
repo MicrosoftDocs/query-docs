@@ -1,7 +1,8 @@
 ---
 title: "Table.TransformColumnTypes | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Transforms the column types from a table using a type.  
   
-```  
+## Syntax
+
+<pre>
 Table.TransformColumnTypes(table as table, typeTransformations as list, optional culture as nullable text) as table  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -24,11 +27,11 @@ Table.TransformColumnTypes(table as table, typeTransformations as list, optional
 |------------|---------------|  
 |table|The Table to modify.|  
 |typeTransformations|The List of typeTransofrmations to make.|  
-|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](http://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
+|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
   
 ## Examples  
   
-```  
+```powerquery-m 
 Table.TransformColumnTypes(  
  Table.FromRecords({  
  [A="1",B=2], [A="5", B=10]}),   
@@ -38,7 +41,7 @@ Table.TransformColumnTypes(
  [A=1,B=2], [A=5,B=10]})  
 ```  
   
-```  
+```powerquery-m
 Table.TransformColumnTypes(  
  Table.FromRecords({  
  [A="1",B=2],   
@@ -48,7 +51,7 @@ Table.TransformColumnTypes(
  equals Expression.Error  
 ```  
   
-```  
+```powerquery-m  
 Table.TransformColumnTypes(  
  Table.FromRecords({  
  [A="1/10/1990",B="29,000"],   

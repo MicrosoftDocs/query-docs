@@ -1,7 +1,8 @@
 ---
 title: "Type.TableKeys | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,6 +15,8 @@ manager: kfile
 ## About  
 Returns keys from a table type.  
   
-```  
+## Syntax
+
+<pre>
 Type.TableKeys(tableType as type) as list  
-```  
+</pre>

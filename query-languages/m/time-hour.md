@@ -1,7 +1,8 @@
 ---
 title: "Time.Hour | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns an hour value from a DateTime value.  
   
-```  
+## Syntax
+
+<pre>
 Time.Hour(dateTime as datetime) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +29,6 @@ Time.Hour(dateTime as datetime) as nullable number
   
 ## Example  
   
-```  
+```powerquery-m  
 Time.Hour(DateTime.FromText("12:56:20")) equals 12  
 ```  

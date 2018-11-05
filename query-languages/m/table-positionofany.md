@@ -1,7 +1,8 @@
 ---
 title: "Table.PositionOfAny | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Determines the position or positions of any of the specified rows within the table.  
   
-```  
+## Syntax
+
+<pre> 
 Table.PositionOfAny(table as table, rows as list, optional occurrence as nullable number, optional equationCriteria as any) as any  
-```  
+</pre>
   
 ## Arguments  
   
@@ -41,14 +44,14 @@ Occurrence specification
   
 ## Examples  
   
-```  
+```powerquery-m  
 Table.PositionOfAny(      
 Table.FromRecords({[A=1, B=2],[A=3, B=4],[A=1, B=6]}),      
 {[A=2, B=6],[A=3, B=4]})   
 equals 1  
 ```  
   
-```  
+```powerquery-m
 Table.PositionOfAny(      
 Table.FromRecords({[A=1, B=2],[A=3, B=4],[A=1, B=6]}),      
 {[A=3, B=7],[A=1, B=6]},      

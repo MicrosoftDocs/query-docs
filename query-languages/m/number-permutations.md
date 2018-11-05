@@ -1,7 +1,8 @@
 ---
 title: "Number.Permutations | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the number of total permutatons of a given number of items for the optional permutation size.  
   
-```  
+## Syntax
+
+<pre>
 Number.Permutations(setSize as nullable number, permutationSize as nullable number)  as nullable number  
-```  
+</pre>
   
 ## Arguments  
   
@@ -27,6 +30,6 @@ Number.Permutations(setSize as nullable number, permutationSize as nullable numb
   
 ## Example  
   
-```  
+```powerquery-m
 Number.Permutations(5, 3) equals 60  
 ```  

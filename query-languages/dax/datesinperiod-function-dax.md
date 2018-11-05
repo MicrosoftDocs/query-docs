@@ -1,6 +1,7 @@
 ---
 title: "DATESINPERIOD Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 9/25/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns a table that contains a column of dates that begins with the **start_dat
   
 ## Syntax  
   
-```  
+```dax
 DATESINPERIOD(<dates>,<start_date>,<number_of_intervals>,<interval>)  
-```  
+```
   
 #### Parameters  
   
@@ -42,18 +43,18 @@ The **interval** parameter is an enumeration, not a set of strings; therefore va
   
 The result table includes only dates that appear in the values of the underlying table column.  
   
-This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [http://go.microsoft.com/fwlink/?LinkId=219172](http://go.microsoft.com/fwlink/?LinkId=219172).  
+This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
 ## Example  
 The following formula returns the Internet sales for the 21 days prior to August 24, 2007.  
   
-```  
+```dax
 = CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]),DATESINPERIOD(DateTime[DateKey],DATE(2007,08,24),-21,day))  
-```  
+```
   
 ## See Also  
 [Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
 [Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
 [DATESBETWEEN Function &#40;DAX&#41;](datesbetween-function-dax.md)  
-[Get Sample Data](http://go.microsoft.com/fwlink/?LinkId=164474)  
+[Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
   

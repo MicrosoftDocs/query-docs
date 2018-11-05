@@ -1,6 +1,7 @@
 ---
 title: "FACT Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the factorial of a number, equal to the series 1*2\*3\*...\* , ending in
   
 ## Syntax  
   
-```  
+```dax
 FACT(<number>)  
-```  
+```
   
 #### Parameters  
   
@@ -32,9 +33,9 @@ If the number is not an integer, it is truncated and an error is returned. If th
 ## Example  
 The following formula returns the factorial for the series of integers in the column, `[Values]`.  
   
-```  
+```dax
 =FACT([Values])  
-```  
+```dax
 The following table shows the expected results:  
   
 |Values|Results|  

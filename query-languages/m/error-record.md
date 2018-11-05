@@ -1,7 +1,8 @@
 ---
 title: "Error.Record | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a record containing fields “Reason”, “Message”, and “Detail” set to the provided values. The record can be used to raise or throw an error.  
   
-```  
+## Syntax
+
+<pre>
 Error.Record(reason as text, message as text, detail as any) as record  
-```  
+</pre>
   
 ## Arguments  
   
@@ -28,7 +31,7 @@ Error.Record(reason as text, message as text, detail as any) as record
   
 ## Example  
   
-```  
+```powerquery-m
 error Error.Record("InvalidCondition","An error has occured", null)  
 equals  error with Reason: “InvalidCondition” and Message “An error has occurred”  
 ```  

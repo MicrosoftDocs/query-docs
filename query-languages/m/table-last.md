@@ -1,7 +1,8 @@
 ---
 title: "Table.Last | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the last row of a table.  
   
-```  
+## Syntax
+
+<pre>
 Table.Last(table as table, optional default as) as any  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,7 +34,7 @@ Table.Last(table as table, optional default as) as any
   
 ## Example  
   
-```  
+```powerquery-m
 Table.Last(Table.FromRecords({  
   
     [CustomerID = 1, Name = "Bob", Phone = "123-4567"],  

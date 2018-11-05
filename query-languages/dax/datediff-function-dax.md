@@ -1,6 +1,7 @@
 ---
 title: "DATEDIFF Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -14,9 +15,9 @@ Returns the count of interval boundaries crossed between two dates.
   
 ## Syntax  
   
-```  
+```dax
 DATEDIFF(<start_date>, <end_date>, <interval>)  
-```  
+```
   
 #### Parameters  
   
@@ -41,7 +42,7 @@ An error is returned if start_date is larger than end_date.
   
 The following all return 1:  
   
-```  
+```dax
 DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date], second ) )  
   
 DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date], minute ) )  
@@ -57,4 +58,4 @@ DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date], month ) )
 DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date], quarter ) )  
   
 DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date], year ) )  
-```  
+```

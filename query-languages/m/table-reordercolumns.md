@@ -1,7 +1,8 @@
 ---
 title: "Table.ReorderColumns | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a table with specific columns in an order relative to one another, without changing the order of the columns that aren’t specified.  
   
-```  
+## Syntax
+
+<pre>
 Table.ReorderColumns(table as table, columnOrder as list, optional missingField as nullable number) as table  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -34,7 +37,7 @@ Table.ReorderColumns(table as table, columnOrder as list, optional missingField 
   
 ## Examples  
   
-```  
+```powerquery-m
 Table.ReorderColumns(Table.FromRecords({[CustomerID=1, Phone = "123-4567", Name ="Bob"] }), {"Name","Phone"})  
 ```  
   
@@ -43,8 +46,8 @@ Table.ReorderColumns(Table.FromRecords({[CustomerID=1, Phone = "123-4567", Name 
 |1|Bob|123-4567|  
 |CustomerID|Name|Phone|  
 |1|Bob|123-4567|  
-  
-```  
+
+```powerquery-m 
 Table.ReorderColumns(Table.FromRecords({  
   
     [CustomerID=1, Name = "Bob", Phone = "123-4567"]  

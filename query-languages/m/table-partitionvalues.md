@@ -1,7 +1,8 @@
 ---
 title: "Table.PartitionValues | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns information about how a table is partitioned.  
   
-```  
+## Syntax
+
+<pre>
 Table.PartitionValues(table as table) as table;  
-```  
+</pre>
   
 ## Arguments  
   

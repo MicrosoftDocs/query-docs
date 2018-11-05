@@ -1,6 +1,7 @@
 ---
 title: "DISTINCT (table) Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -14,9 +15,9 @@ Returns a table by removing duplicate rows from another table or expression.
   
 ## Syntax  
   
-```  
+```dax
 DISTINCT(<table>)  
-```  
+```
   
 #### Parameters  
   
@@ -33,7 +34,7 @@ There is another version of the DISTINCT function, [DISTINCT (column)](distinct-
 ## Example  
 
 The following query:
-```
+```dax
 EVALUATE DISTINCT( { (1, "A"), (2, "B"), (1, "A") } )
 ```
 

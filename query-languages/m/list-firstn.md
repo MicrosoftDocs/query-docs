@@ -1,7 +1,8 @@
 ---
 title: "List.FirstN | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the first set of items in the list by specifying how many items to return or a qualifying condition provided by **countOrCondition**.  
   
-```  
+## Syntax
+
+<pre>
 List.FirstN(list as list, countOrCondition as any) as any  
-```  
+</pre>
   
 ## Arguments  
   
@@ -35,10 +38,10 @@ List.FirstN(list as list, countOrCondition as any) as any
   
 ## Examples  
   
-```  
+```powerquery-m
 List.FirstN({3, 4, 5, -1, 7, 8, 2}, 2) equals {3, 4}  
 ```  
   
-```  
+```powerquery-m
 List.FirstN({3, 4, 5, -1 ,7, 8, 2}, each_ > 2) equals {3, 4, 5}  
 ```  

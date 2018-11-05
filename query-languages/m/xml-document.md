@@ -1,7 +1,8 @@
 ---
 title: "Xml.Document | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the contents of an XML document as a hierarchical table (list of records).  
   
-```  
+## Syntax
+
+<pre>
 Xml.Document(contents as any, optional options as nullable record, optional encoding as nullable number) as table  
-```  
+</pre>
   
 ## Arguments  
   
@@ -32,7 +35,7 @@ Xml.Document(contents as any, optional options as nullable record, optional enco
   
 The precise shape of the output table is as follows:  
   
-```  
+```powerquery-m
 Value.Type(Xml.Document("<a></a>")) =  
   
 type {[  
@@ -58,7 +61,7 @@ type {[
   
 ## Example  
   
-```  
+```powerquery-m
 Xml.Document("<a></a>")  
   
     equals  { [  

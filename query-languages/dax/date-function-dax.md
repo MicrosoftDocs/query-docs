@@ -1,6 +1,7 @@
 ---
 title: "DATE Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the specified date in **datetime** format.
   
 ## Syntax  
   
-```  
+```dax
 DATE(<year>, <month>, <day>)  
-```  
+```
   
 #### Parameters  
   
@@ -33,7 +34,7 @@ The DATE function takes the integers that are input as arguments, and generates 
   
 In contrast to Microsoft Excel, which stores dates as a serial number, DAX date functions always return a **datetime** data type. However, you can use formatting to display dates as serial numbers if you want.  
   
-This DAX function may return different results when used in a model that is deployed and then queried in DirectQuery mode. For more information about semantic differences in DirectQuery mode, see  [http://go.microsoft.com/fwlink/?LinkId=219171](http://go.microsoft.com/fwlink/?LinkId=219171).  
+This DAX function may return different results when used in a model that is deployed and then queried in DirectQuery mode. For more information about semantic differences in DirectQuery mode, see  [https://go.microsoft.com/fwlink/?LinkId=219171](https://go.microsoft.com/fwlink/?LinkId=219171).  
   
 ## Example: Returning a Simple Date  
   
@@ -42,9 +43,9 @@ The following formula returns the date July 8, 2009:
   
 ### Code  
   
-```  
+```dax
 =DATE(2009,7,8)  
-```  
+```
   
 ## Example: Years before 1899  
   
@@ -53,9 +54,9 @@ If the value that you enter for the **year** argument is between 0 (zero) and 18
   
 ### Code  
   
-```  
+```dax
 =DATE(08,1,2)  
-```  
+```
   
 ## Example: Years before 1899  
   
@@ -64,9 +65,9 @@ If the value that you enter for the **year** argument is between 0 (zero) and 18
   
 ### Code  
   
-```  
+```dax
 =DATE(1800,1,2)  
-```  
+```
   
 ## Example: Years after 1899  
   
@@ -75,9 +76,9 @@ If **year** is between 1900 and 9999 (inclusive), that value is used as the year
   
 ### Code  
   
-```  
+```dax
 =DATE(2008,1,2)  
-```  
+```
   
 ## Example: Working with Months  
   
@@ -86,16 +87,16 @@ If **month** is greater than 12, **month** adds that number of months to the fir
   
 ### Code  
   
-```  
+```dax
 =DATE(2008,14,2)  
-```  
+```
   
 ### Comment  
 If the **month** value is less than 1, the DATE function subtracts the magnitude of that number of months, plus 1, from the first month in the year specified. The following formula returns September 2, 2007:  
   
-```  
+```dax
 =DATE(2008,-3,2)  
-```  
+```
   
 ## Example: Working with Days  
   
@@ -104,16 +105,16 @@ If **day** is greater than the number of days in the month specified, **day** ad
   
 ### Code  
   
-```  
+```dax
 =DATE(2008,1,35)  
-```  
+```
   
 ### Comment  
 If **day** is less than 1, **day** subtracts the magnitude that number of days, plus one, from the first day of the month specified. The following formula returns December 16, 2007:  
   
-```  
+```dax
 =DATE(2008,1,-15)  
-```  
+```
   
 ## See Also  
 [Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  

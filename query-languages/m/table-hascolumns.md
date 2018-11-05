@@ -1,7 +1,8 @@
 ---
 title: "Table.HasColumns | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -13,10 +14,12 @@ manager: kfile
   
 ## About  
 Returns true if a table has the specified column or columns.  
-  
-```  
+
+## Syntax
+
+<pre> 
 Table.HasColumns(table as table, columns as any) as logical  
-```  
+</pre>
   
 ## Arguments  
   
@@ -31,7 +34,7 @@ Table.HasColumns(table as table, columns as any) as logical
   
 ## Examples  
   
-```  
+```powerquery-m
 Table.HasColumns(Table.FromRecords(  
   
 {  

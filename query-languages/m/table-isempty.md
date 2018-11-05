@@ -1,7 +1,8 @@
 ---
 title: "Table.IsEmpty | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns true if the table does not contain any rows.  
   
-```  
+## Syntax
+
+<pre>
 Table.IsEmpty(table as table) as logical  
-```  
+</pre>
   
 ## Arguments  
   
@@ -25,8 +28,8 @@ Table.IsEmpty(table as table) as logical
 |table|The Table to check.|  
   
 ## Example  
-  
-```  
+
+```powerquery-m
 let  
   
     emptyTable = Table.FromRows({}),  

@@ -1,7 +1,8 @@
 ---
 title: "BinaryFormat.Transform | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns a binary format that will transform the values read by another binary format.  
   
-```  
+## Syntax
+
+<pre>   
 BinaryFormat.Transform(binaryFormat as function, transform as function) as function  
-```  
+</pre> 
   
 ## Arguments  
   
@@ -27,7 +30,7 @@ BinaryFormat.Transform(binaryFormat as function, transform as function) as funct
   
 ## <a name="__goback"></a>Example  
   
-```  
+```powerquery-m  
 // Read a byte and add one to it.  
 let      
 binaryData = #binary({1}),      

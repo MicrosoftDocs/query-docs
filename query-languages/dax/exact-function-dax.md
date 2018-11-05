@@ -1,6 +1,7 @@
 ---
 title: "EXACT Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Compares two text strings and returns TRUE if they are exactly the same, FALSE o
   
 ## Syntax  
   
-```  
+```dax
 EXACT(<text1>,<text2>)  
-```  
+```
   
 #### Parameters  
   
@@ -30,9 +31,9 @@ True or false. (Boolean)
 ## Example  
 The following formula checks the value of Column1 for the current row against the value of Column2 for the current row, and returns TRUE if they are the same, and returns FALSE if they are different.  
   
-```  
+```dax
 =EXACT([Column1],[Column2])  
-```  
+```
   
 ## See Also  
 [Text Functions &#40;DAX&#41;](text-functions-dax.md)  

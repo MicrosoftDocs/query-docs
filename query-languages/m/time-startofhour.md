@@ -1,7 +1,8 @@
 ---
 title: "Time.StartOfHour | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the first value of the hour from a time value.  
   
-```  
+## Syntax
+
+<pre>
 Time.StartOfHour(datetime as datetime) as nullable datetime  
-```  
+</pre>
   
 ## Arguments  
   
@@ -26,6 +29,6 @@ Time.StartOfHour(datetime as datetime) as nullable datetime
   
 ## Example  
   
-```  
+```powerquery-m
 Time.StartOfHour(#datetime(2013, 4, 5, 1, 3, 45)) equals #datetime(2013, 4, 5, 1, 0, 0)  
 ```  

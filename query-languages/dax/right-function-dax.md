@@ -1,6 +1,7 @@
 ---
 title: "RIGHT Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ RIGHT returns the last character or characters in a text string, based on the nu
   
 ## Syntax  
   
-```  
+```dax
 RIGHT(<text>, <num_chars>)  
-```  
+```
   
 #### Parameters  
   
@@ -32,7 +33,7 @@ A text string containing the specified right-most characters.
 ## Remarks  
 RIGHT always counts each character, whether single-byte or double-byte, as 1, no matter what the default language setting is.  
   
-This DAX function may return different results when used in a model that is deployed and then queried in DirectQuery mode. For more information about semantic differences in DirectQuery mode, see [http://go.microsoft.com/fwlink/?LinkId=219171](http://go.microsoft.com/fwlink/?LinkId=219171)  
+This DAX function may return different results when used in a model that is deployed and then queried in DirectQuery mode. For more information about semantic differences in DirectQuery mode, see [https://go.microsoft.com/fwlink/?LinkId=219171](https://go.microsoft.com/fwlink/?LinkId=219171)  
   
 ## Example: Returning a Fixed Number of Characters  
   
@@ -41,9 +42,9 @@ The following formula returns the last two digits of the product code in the New
   
 ### Code  
   
-```  
+```dax
 =RIGHT('New Products'[ProductCode],2)  
-```  
+```
   
 ## Example: Using a Column Reference to Specify Character Count  
   
@@ -52,9 +53,9 @@ The following formula returns a variable number of digits from the product code 
   
 ### Code  
   
-```  
+```dax
 =RIGHT('New Products'[ProductCode],[MyCount])  
-```  
+```
   
 ## See Also  
 [Text Functions &#40;DAX&#41;](text-functions-dax.md)  

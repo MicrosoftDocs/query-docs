@@ -1,7 +1,8 @@
 ---
 title: "Number.Log10 | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,14 +10,15 @@ ms.author: owend
 manager: kfile
 ---
 # Number.Log10
-<code>Number.Log10(**number** as nullable number) as nullable number</code>
+
+## Syntax
+
+<pre>
+Number.Log10(**number** as nullable number) as nullable number
+</pre>
 
 ## About  
-Returns the Base 10 logarithm of a number, <code>number</code>. If <code>number</code> is null <code>Number.Log10</code> returns null.
-  
-```  
-Number.Log10 (number as nullable number)  as nullable number  
-```  
+Returns the Base 10 logarithm of a number, `number`. If `number` is null `Number.Log10` returns null.
   
 ## Arguments  
   
@@ -28,12 +30,11 @@ Number.Log10 (number as nullable number)  as nullable number
 Get the base 10 logarithm of 2.
 
 
-```
+```powerquery-m
 Number.Log10(2)
 ```
 
-
-```
+```powerquery-m
 0.3010299956639812
 ```
 

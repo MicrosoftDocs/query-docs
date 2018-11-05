@@ -1,7 +1,8 @@
 ---
 title: "Lines.ToBinary | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Converts a list of text into a binary value using the specified encoding and lineSeparator.The specified lineSeparator is appended to each line. If not specified then the carriage return and line feed characters are used.  
   
-```  
+## Syntax
+
+<pre>
 Lines.ToBinary(lines as list, optional lineSeparator as nullable text,  optional encoding as nullable number, optional includeByteOrderMark as nullable logical)as binary  
-```  
+</pre>
   
 ## Arguments  
   

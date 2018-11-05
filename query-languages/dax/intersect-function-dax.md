@@ -1,6 +1,7 @@
 ---
 title: "INTERSECT Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Returns the row intersection of two tables, retaining duplicates.
   
 ## Syntax  
   
-```  
+```dax
 INTERSECT(<table_expression1>, <table_expression2>)  
-```  
+```
   
 #### Parameters  
   

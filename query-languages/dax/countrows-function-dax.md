@@ -1,6 +1,7 @@
 ---
 title: "COUNTROWS Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ The COUNTROWS function counts the number of rows in the specified table, or in a
   
 ## Syntax  
   
-```  
+```dax
 COUNTROWS(<table>)  
-```  
+```
   
 #### Parameters  
   
@@ -34,18 +35,18 @@ Whenever there are no rows to aggregate, the function returns a blank.  However,
 ## Example  
 The following example shows how to count the number of rows in the table Orders. The expected result is 52761.  
   
-```  
+```dax
 =COUNTROWS('Orders')  
-```  
+```
   
 ## Example  
 The following example demonstrates how to use COUNTROWS with a row context. In this scenario, there are two sets of data that are related by order number. The table Reseller contains one row for each reseller; the table ResellerSales contains multiple rows for each order, each row containing one order for a particular reseller. The tables are connected by a relationship on the column, ResellerKey.  
   
 The formula gets the value of ResellerKey and then counts the number of rows in the related table that have the same reseller ID. The result is output in the column, **CalculatedColumn1**.  
   
-```  
+```dax
 =COUNTROWS(RELATEDTABLE(ResellerSales))  
-```  
+```dax
 The following table shows a portion of the expected results:  
   
 |ResellerKey|CalculatedColumn1|  

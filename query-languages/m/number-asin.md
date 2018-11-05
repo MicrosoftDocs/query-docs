@@ -1,7 +1,8 @@
 ---
 title: "Number.Asin | Microsoft Docs"
 ms.date: 4/16/2018
-ms.prod: power-query
+ms.service: powerquery
+
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,9 +15,11 @@ manager: kfile
 ## About  
 Returns the arcsine of a number.  
   
-```  
+## Syntax
+
+<pre>
 Number.Asin(angle as nullable number) as nullable number  
-```  
+</pre>
   
 ## Arguments  
   

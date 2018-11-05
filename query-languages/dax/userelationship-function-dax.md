@@ -1,6 +1,7 @@
 ---
 title: "USERELATIONSHIP Function (DAX) | Microsoft Docs"
-ms.prod: dax
+ms.service: powerbi 
+
 ms.date: 5/22/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -13,9 +14,9 @@ Specifies the relationship to be used in a specific calculation as the one that 
   
 ## Syntax  
   
-```  
+```dax
 USERELATIONSHIP(<columnName1>,<columnName2>)  
-```  
+```
   
 #### Parameters  
 columnName1  
@@ -48,9 +49,9 @@ The following sample shows how to override the default, active, relationship bet
   
 To calculate the sum of internet sales and allow slicing by ShippingDate instead of the traditional OrderDate you need to create a measure, [InternetSales by ShippingDate] using the following expression:  
   
-```  
+```dax
 =CALCULATE(SUM(InternetSales[SalesAmount]), USERELATIONSHIP(InternetSales[ShippingDate], DateTime[Date]))  
-```  
+```dax
 In Power Pivot: drag your new measure to the **Values** area in the right pane, drag the InternetSales[ShippingDate] column to the **Row Labels** area; you now have Internet Sales sliced by shipping date instead of by order date as is usually shown in these examples.  
   
 For this example to work the relationships between InternetSales[ShipmentDate] and DateTime[Date] must exist and should not be the active relationship; also, the relationship between InternetSales[OrderDate] and DateTime[Date] should exist and should be the active relationship.  
