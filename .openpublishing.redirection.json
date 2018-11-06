@@ -16,9 +16,9 @@
       "redirect_document_id": false
     },
     {
-			"source_path": "dax-msdn/abs-function-dax.md",
-			"redirect_url": "https://docs.microsoft.com/dax/abs-function-dax",
-			"redirect_document_id": true
-		}
+      "source_path": "dax-msdn/abs-function-dax.md",
+      "redirect_url": "https://docs.microsoft.com/dax/abs-function-dax",
+      "redirect_document_id": true
+    }
   ] 
 } 
