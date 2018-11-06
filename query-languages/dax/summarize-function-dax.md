@@ -2,7 +2,7 @@
 title: "SUMMARIZE Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -54,7 +54,8 @@ SUMMARIZE(ResellerSales_USD
       , "Sales Amount (USD)", SUM(ResellerSales_USD[SalesAmount_USD])  
       , "Discount Amount (USD)", SUM(ResellerSales_USD[DiscountAmount])  
       )  
-```dax
+```
+
 The following table shows a preview of the data as it would be received by any function expecting to receive a table:  
       
 |**DateTime[CalendarYear]**|**ProductCategory[ProductCategoryName]**|**[Sales Amount (USD)]**|**[Discount Amount (USD)]**|  
@@ -104,7 +105,8 @@ SUMMARIZE(ResellerSales_USD
       , "Sales Amount (USD)", SUM(ResellerSales_USD[SalesAmount_USD])  
       , "Discount Amount (USD)", SUM(ResellerSales_USD[DiscountAmount])  
 )  
-```dax
+```
+
 The following table shows a preview of the data as it would be received by any function expecting to receive a table:  
   
 |**DateTime[CalendarYear]**|**ProductCategory[ProductCategoryName]**|**[Sales Amount (USD)]**|**[Discount Amount (USD)]**|  
@@ -142,7 +144,8 @@ SUMMARIZE(ResellerSales_USD
       , "Sales Amount (USD)", SUM(ResellerSales_USD[SalesAmount_USD])  
       , "Discount Amount (USD)", SUM(ResellerSales_USD[DiscountAmount])  
 )  
-```dax
+```
+
 The following table shows a preview of the data as it would be received by any function expecting to receive a table:  
   
 |**DateTime[CalendarYear]**|**ProductCategory[ProductCategoryName]**|**[Sales Amount (USD)]**|**[Discount Amount (USD)]**|  
@@ -196,7 +199,8 @@ SUMMARIZE(ResellerSales_USD
       , "Is Sub Total for DateTimeCalendarYear", ISSUBTOTAL(DateTime[CalendarYear])  
       , "Is Sub Total for ProductCategoryName", ISSUBTOTAL(ProductCategory[ProductCategoryName])  
 )  
-```dax
+```
+
 The following table shows a preview of the data as it would be received by any function expecting to receive a table:  
   
   

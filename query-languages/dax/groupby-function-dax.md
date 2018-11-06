@@ -2,7 +2,7 @@
 title: "GROUPBY Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -67,7 +67,8 @@ Geography[Country],
 Product[Category],   
 “Total Sales”, SUMX( CURRENTGROUP(), Sales[Price] * Sales[Qty])  
 )  
-```dax
+```
+
 This will start with the Sales table, extended with all the columns from all the related tables.Then it will build a result with three columns.  
   
 -   The first column is each of the countries for which there is a sale.  

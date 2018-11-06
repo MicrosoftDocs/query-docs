@@ -34,7 +34,8 @@ The Student's left-tailed t-distribution.
   
 ```dax
 EVALUATE { T.DIST(60, 1, TRUE) } 
-```dax
+```
+
 Returns
 
 |[Value]  |

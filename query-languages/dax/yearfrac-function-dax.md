@@ -2,7 +2,7 @@
 title: "YEARFRAC Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -48,7 +48,8 @@ The following example returns the fraction of a year represented by the differen
   
 ```dax
 =YEARFRAC("Jan 1 2007","Mar 1 2007")  
-```dax
+```
+
 Use four-digit years whenever possible, to avoid getting unexpected results. When the year is truncated, the current year is assumed. When the date is or omitted, the first date of the month is assumed.  
   
 The second argument, **basis**, has also been omitted. Therefore, the year fraction is calculated according to the US (NASD) 30/360 standard.  

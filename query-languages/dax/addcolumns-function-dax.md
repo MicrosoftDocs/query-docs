@@ -2,7 +2,7 @@
 title: "ADDCOLUMNS Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -40,7 +40,8 @@ The following example returns an extended version of the Product Category table 
 ADDCOLUMNS(ProductCategory,   
                , "Internet Sales", SUMX(RELATEDTABLE(InternetSales_USD), InternetSales_USD[SalesAmount_USD])  
                , "Reseller Sales", SUMX(RELATEDTABLE(ResellerSales_USD), ResellerSales_USD[SalesAmount_USD]))  
-```dax
+```
+
 The following table shows a preview of the data as it would be received by any function expecting to receive a table:  
   
 ||||||  

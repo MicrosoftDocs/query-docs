@@ -2,7 +2,7 @@
 title: "GENERATESERIES Function | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -42,7 +42,8 @@ The sequence stops at the last value that is less than or equal to endValue.
 The following DAX query:
 ```dax
 EVALUATE GENERATESERIES(1, 5)
-```dax
+```
+
 Returns the following table with a single column:
 
 [Value]  | | 
@@ -57,7 +58,8 @@ Returns the following table with a single column:
 The following DAX query:
 ```dax
 EVALUATE GENERATESERIES(1.2, 2.4, 0.4)
-```dax
+```
+
 Returns the following table with a single column:
 
 [Value]  | | 
@@ -71,7 +73,7 @@ Returns the following table with a single column:
 The following DAX query:
 ```dax
 EVALUATE GENERATESERIES(CURRENCY(10), CURRENCY(12.4), CURRENCY(0.5))
-```dax
+```
 Returns the following table with a single column:
 
 [Value]  | | 

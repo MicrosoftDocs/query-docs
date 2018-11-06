@@ -33,7 +33,8 @@ The left-tailed inverse of the Student's t-distribution.
   
 ```dax
 EVALUATE { T.INV(0.75, 2) }
-```dax
+```
+
 Returns
 
 |[Value]  |
