@@ -14,6 +14,11 @@
       "source_path": "query-languages/m/marketplace.subscriptions.md",
       "redirect_url": "query-languages/m/power-query-m-reference",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "dax-msdn/abs-function-dax.md",
+      "redirect_url": "https://docs.microsoft.com/dax/abs-function-dax",
+      "redirect_document_id": true
     }
   ] 
 } 
