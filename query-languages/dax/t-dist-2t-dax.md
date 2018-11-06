@@ -33,7 +33,8 @@ The two-tailed Student's t-distribution.
   
 ```dax
 EVALUATE { T.DIST.2T(1.959999998, 60) }
-```dax
+```
+
 Returns
 
 |[Value]  |

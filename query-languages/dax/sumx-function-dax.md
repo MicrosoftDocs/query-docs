@@ -2,7 +2,7 @@
 title: "SUMX Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -40,7 +40,8 @@ The following example first filters the table, InternetSales, on the expression,
   
 ```dax
 =SUMX(FILTER(InternetSales, InternetSales[SalesTerritoryID]=5),[Freight])  
-```dax
+```
+
 If you do not need to filter the column, use the SUM function. The SUM function is similar to the Excel function of the same name, except that it takes a column as a reference.  
   
 ## See Also  

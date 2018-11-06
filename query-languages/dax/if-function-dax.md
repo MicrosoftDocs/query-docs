@@ -2,7 +2,7 @@
 title: "IF Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -48,7 +48,8 @@ The following example gets a list of cities that contain potential customers in 
   
 ```dax
 =IF([StateProvinceCode]= "CA" && ([MaritalStatus] = "M" || [NumberChildrenAtHome] >1),[City])  
-```dax
+```
+
 Note that parentheses are used to control the order in which the AND (&amp;&amp;) and OR (||) operators are used. Also note that no value has been specified for **value_if_false**. Therefore, the function returns the default, which is an empty string.  
   
 ## See Also  

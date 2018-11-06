@@ -2,7 +2,7 @@
 title: "RELATED Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -59,7 +59,8 @@ This expression uses the RELATED function to lookup the country value in the Sal
                <>"United States"  
              )  
      ,'InternetSales_USD'[SalesAmount_USD])  
-```dax
+```
+
 The following table shows only totals for each region, to prove that the filter expression in the measure, Non USA Internet Sales, works as intended.  
   
 |Row Labels|Internet Sales|Non USA Internet Sales|  

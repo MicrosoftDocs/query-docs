@@ -2,7 +2,7 @@
 title: "AVERAGEX Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -40,7 +40,8 @@ The following example calculates the average freight and tax on each order in th
   
 ```dax
 =AVERAGEX(InternetSales, InternetSales[Freight]+ InternetSales[TaxAmt])  
-```dax
+```
+
 If you use multiple operations in the expression used as the second argument, you must use parentheses to control the order of calculations. For more information, see [DAX Syntax Reference](dax-syntax-reference.md).  
   
 ## See Also  

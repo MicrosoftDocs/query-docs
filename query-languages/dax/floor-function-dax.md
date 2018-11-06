@@ -2,7 +2,7 @@
 title: "FLOOR Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -40,7 +40,8 @@ The following formula takes the values in the [Total Product Cost] column from t
   
 ```dax
 =FLOOR(InternetSales[Total Product Cost],.5)  
-```dax
+```
+
 The following table shows the expected results for some sample values.  
   
 |Values|Expected Result|  

@@ -201,6 +201,8 @@
               href: iserror-function-dax.md
             - name: ISEVEN Function
               href: iseven-function-dax.md
+            - name: ISINSCOPE Function
+              href: isinscope-function-dax.md
             - name: ISLOGICAL Function
               href: islogical-function-dax.md
             - name: ISNONTEXT Function

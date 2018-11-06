@@ -2,7 +2,7 @@
 title: "Table Constructor | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -83,7 +83,8 @@ Row3     |   1/3/2017      |    299.99     |         C
 The following DAX query:
 ```dax
 EVALUATE { 1, DATE(2017, 1, 1), TRUE, "A" }
-```dax
+```
+
 Returns the following table of a single column of String data type:
 
 [Value]  |  |

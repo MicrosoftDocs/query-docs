@@ -2,7 +2,7 @@
 title: "Pre-Defined Numeric Formats for the FORMAT Function | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -42,7 +42,8 @@ FORMAT( 12345.67, "Fixed")
 FORMAT( 12345.67, "Standard")  
 FORMAT( 12345.67, "Percent")  
 FORMAT( 12345.67, "Scientific")  
-```dax
+```
+
 The above expressions return the following results:  
   
 **12345.67** "General Number" displays the number with no formatting.  

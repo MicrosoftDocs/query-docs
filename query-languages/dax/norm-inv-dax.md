@@ -34,7 +34,8 @@ Returns the inverse of the normal cumulative distribution for the specified mean
   
 ```dax
 EVALUATE { NORM.INV(0.908789, 40, 1.5) }
-```dax
+```
+
 Returns
 
 |[Value]  |
