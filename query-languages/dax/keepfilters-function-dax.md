@@ -25,7 +25,7 @@ KEEPFILTERS(<expression>)
 |**expression**|Any expression.|  
   
 ## Return Value  
-No return value.  
+A table of values.  
   
 ## Remarks  
 You use KEEPFILTERS within the context CALCULATE and CALCULATETABLE functions, to override the standard behavior of those functions.  
