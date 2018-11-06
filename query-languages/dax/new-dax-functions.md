@@ -2,7 +2,7 @@
 title: "New DAX Functions | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 8/14/2018
+ms.date: 11/06/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
