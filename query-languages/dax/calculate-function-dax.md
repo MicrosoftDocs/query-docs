@@ -2,7 +2,7 @@
 title: "CALCULATE Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -63,7 +63,8 @@ To see how this works, add the field, CalendarYear, to the **Row Labels** area o
 =( SUM('ResellerSales_USD'[SalesAmount_USD]))  
  /CALCULATE( SUM('ResellerSales_USD'[SalesAmount_USD])  
            ,ALL('ResellerSales_USD'))  
-```dax
+```
+
 The CALCULATE expression in the denominator enables the sum expression to include all rows in the calculation. This overrides the implicit filters for CalendarYear and ProductCategoryName that exist for the numerator part of the expression.  
   
 ## Related Functions  

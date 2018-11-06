@@ -2,7 +2,7 @@
 title: "Information Functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,6 +22,8 @@ DAX information functions look at the cell or row that is provided as an argumen
 [ISERROR Function &#40;DAX&#41;](iserror-function-dax.md)  
   
 [ISEVEN Function &#40;DAX&#41;](iseven-function-dax.md)  
+
+[ISINSCOPE Function &#40;DAX&#41;](isinscope-function-dax.md)  
   
 [ISLOGICAL Function &#40;DAX&#41;](islogical-function-dax.md)  
   

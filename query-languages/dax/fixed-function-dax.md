@@ -2,7 +2,7 @@
 title: "FIXED Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -45,7 +45,8 @@ The following example gets the numeric value for the current row in column, PctC
   
 ```dax
 =FIXED([PctCost],3,1)  
-```dax
+```
+
 Numbers can never have more than 15 significant digits, but decimals can be as large as 127.  
   
 ## See Also  

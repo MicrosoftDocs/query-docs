@@ -2,7 +2,7 @@
 title: "TODAY Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -34,7 +34,8 @@ If you know that someone was born in 1963, you might use the following formula t
   
 ```dax
 =YEAR(TODAY())-1963  
-```dax
+```
+
 This formula uses the TODAY function as an argument for the YEAR function to obtain the current year, and then subtracts 1963, returning the person's age.  
   
 ## See Also  

@@ -2,7 +2,7 @@
 title: "DAX Operator Reference | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -83,22 +83,26 @@ To change the order of evaluation, you should enclose in parentheses that part o
   
 ```dax
 =5+2*3  
-```dax
+```
+
 In contrast, if you use parentheses to change the syntax, the order is changed so that 5 and 2 are added together, and the result multiplied by 3 to produce 21.  
   
 ```dax
 =(5+2)*3  
-```dax
+```
+
 In the following example, the parentheses around the first part of the formula force the calculation to evaluate the expression `(3 + 0.25)` first and then divide the result by the result of the expression, (`3 - 0.25)`.  
   
 ```dax
 =(3 + 0.25)/(3 - 0.25)  
-```dax
+```
+
 In the following example, the exponentiation operator is applied first, according to the rules of precedence for operators, and then the sign operator is applied. The result for this expression is -4.  
   
 ```dax
 =-2^2  
-```dax
+```
+
 To ensure that the sign operator is applied to the numeric value first, you can use parentheses to control operators, as shown in the following example. The result for this expression is 4.  
   
 ```dax

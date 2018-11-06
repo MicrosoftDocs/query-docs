@@ -2,7 +2,7 @@
 title: "NOT Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -36,7 +36,8 @@ Now create a new calculated column, **Calculated Column2**, and type the followi
   
 ```dax
 =NOT([CalculatedColumn1])  
-```dax
+```
+
 For each row in **Calculated Column1**, the values "true" and "false" are interpreted as the logical values TRUE or FALSE, and the NOT function returns the logical opposite of that value.  
   
 ## See Also  

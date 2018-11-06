@@ -2,7 +2,7 @@
 title: "BLANK Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -31,7 +31,8 @@ The following example illustrates how you can work with blanks in formulas. The 
   
 ```dax
 =IF( SUM(InternetSales_USD[SalesAmount_USD])= 0   , BLANK()   , SUM(ResellerSales_USD[SalesAmount_USD])/SUM(InternetSales_USD[SalesAmount_USD])   )  
-```dax
+```
+
 The table shows the expected results when this formula is used to create a PivotTable.  
   
 |Reseller to Internet sales ratio|Column Labels||||  

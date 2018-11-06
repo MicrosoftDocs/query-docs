@@ -32,7 +32,8 @@ The inverse of the standard normal cumulative distribution. The distribution has
   
 ```dax
 EVALUATE { NORM.S.INV(0.908789) }
-```dax
+```
+
 Returns
 
 |[Value]  |

@@ -33,7 +33,8 @@ The right-tailed Student's t-distribution.
   
 ```dax
 EVALUATE { T.DIST.RT(1.959999998, 60) }
-```dax
+```
+
 Returns
 
 |[Value]  |

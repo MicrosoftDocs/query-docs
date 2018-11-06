@@ -2,7 +2,7 @@
 title: "CROSSJOIN  Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -53,7 +53,8 @@ The expression to generate the cross join is presented below:
   
 ```dax
 CROSSJOIN( Colors, Stationery)  
-```dax
+```
+
 When the above expression is used wherever a table expression is expected, the results of the expression would be as follows:  
   
 |Color|Pattern|Font|Presentation|  

@@ -2,7 +2,7 @@
 title: "ALLSELECTED Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -69,7 +69,8 @@ crossjoin(distinct('Product Category'[Product Category Name]), distinct('Date'[C
 , 'Sales Territory'[Sales Territory Group]="Europe", 'Promotion'[Promotion Type]="Volume Discount"  
 )  
 order by [Product Category Name], [Calendar Year]  
-```dax
+```
+
 After executing the above expression in SQL Server Management Studio against AdventureWorks DW Tabular Model 2012 you obtain the following results:  
   
 |[Product Category Name]|[Calendar Year]|[Reseller Sales Amount]|[Reseller Grand Total]|[Reseller Visual Total]|[Reseller Visual Total for All of Calendar Year]|[Reseller Visual Total for All of Product Category Name]|  

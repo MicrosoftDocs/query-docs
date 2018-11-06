@@ -2,7 +2,7 @@
 title: "TOTALYTD Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -51,7 +51,8 @@ For example, the following formula specifies a (fiscal) year_end_date of 6/30 in
   
 ```dax
 =TOTALYTD(SUM(InternetSales_USD[SalesAmount_USD]),DateTime[DateKey], ALL(‘DateTime’), “6/30”)  
-```dax
+```
+
 In this example, year_end_date can be specified as “6/30”, “Jun 30”, “30 June”, or any string that resolves to a month/day. However, it is recommended you specify year_end_date using “month/day” (as shown) to ensure the string resolves to a date.  
   
 This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  

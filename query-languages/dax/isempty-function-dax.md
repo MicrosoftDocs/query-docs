@@ -2,7 +2,7 @@
 title: "ISEMPTY Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -42,6 +42,7 @@ For the below table named ‘Info’:
 ```dax
 EVALUATE   
 ROW(“Any countries with count > 25?”, NOT(ISEMPTY(FILTER(Info, [Count]>25)))  
-```dax
+```
+
 Return value: **FALSE**  
   

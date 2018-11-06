@@ -2,7 +2,7 @@
 title: "VAR Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -51,24 +51,28 @@ To calculate a percentage of year-over-year growth without using a variable, you
   
 ```dax
 Sum of SalesAmount = SUM(SalesTable[SalesAmount])  
-```dax
+```
+
 A second measure calculates the sales amount for the previous year:  
   
 ```dax
 SalesAmount PreviousYear=CALCULATE([Sum of SalesAmount], SAMEPERIODLASTYEAR(Calendar[Date]))  
-```dax
+```
+
 You can then create a third measure that combines the other two measures to calculate a growth percentage. Notice the Sum of SalesAmount measure is used in two places; first to determine if there is a sale, then again to calculate a percentage.  
   
 ```dax
 Sum of SalesAmount YoY%:=IF([Sum of SalesAmount] ,  
 DIVIDE(([Sum of SalesAmount] – [SalesAmount PreviousYear]), [Sum of SalesAmount]))  
-```dax
+```
+
 By using a variable, you can create a single measure that calculates the same result:  
   
 ```dax
 YoY% = var Sales = SUM(SalesTable[SalesAmount])  
 var SalesLastYear=CALCULATE(Sales, SAMEPERIODLASTYEAR(‘Calendar'[Date]))  
 return if(Sales, DIVIDE(Sales – SalesLastYear, Sales))  
-```dax
+```
+
 By using a variable, you can get the same outcome, but in a more readable way. In addition, the result of the expression is stored in the variable upon declaration. It doesn’t have to be recalculated each time it is used, as it would without using a variable. This can improve the measure’s performance.  
   

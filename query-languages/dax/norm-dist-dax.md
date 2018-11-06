@@ -35,7 +35,8 @@ The normal distribution for the specified mean and standard deviation.
   
 ```dax
 EVALUATE { NORM.DIST(42, 40, 1.5, TRUE) }
-```dax
+```
+
 Returns
 
 |[Value]  |
