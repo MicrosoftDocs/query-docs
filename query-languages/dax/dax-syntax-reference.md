@@ -12,16 +12,6 @@ manager: kfile
 # DAX Syntax Reference
 This topic provides details about the syntax and requirements of the DAX language.   
   
-[Syntax Requirements](#bkmk_SyntaxReqs)  
-  
-[Naming Requirements](#bkmk_NamingConventions)  
-  
-[Functions](#bkmk_FunctionList)  
-  
-[Operators and Constants](#bkmk_Operators)  
-  
-[Data Types](#bkmk_DataTypes)  
-  
 ## <a name="bkmk_SyntaxReqs"></a>Syntax Requirements  
 DAX formulas are very similar to the formulas you type in Excel tables, but there are some key differences.  
   

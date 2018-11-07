@@ -22,10 +22,10 @@ IFERROR(value, value_if_error)
   
 |Term|Definition|  
 |--------|--------------|  
-|**value**|Any value or expression.|  
-|**value_if_error**|Any value or expression.|  
+|value|Any value or expression.|  
+|value_if_error|Any value or expression.|  
   
-## Return Value  
+## Return value  
 A scalar of the same type as **value**  
   
 ## Remarks  

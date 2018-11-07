@@ -22,9 +22,9 @@ COUNTROWS(<table>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**table**|The name of the table that contains the rows to be counted, or an expression that returns a table.|  
+|table|The name of the table that contains the rows to be counted, or an expression that returns a table.|  
   
-## Return Value  
+## Return value  
 A whole number.  
   
 ## Remarks  

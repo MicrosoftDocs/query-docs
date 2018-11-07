@@ -23,9 +23,9 @@ NEXTMONTH(<dates>)
 |||  
 |-|-|  
 |Term|Definition|  
-|**dates**|A column containing dates.|  
+|dates|A column containing dates.|  
   
-## Return Value  
+## Return value  
 A table containing a single column of date values.  
   
 ## Remarks  

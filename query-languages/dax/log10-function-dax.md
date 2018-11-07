@@ -22,9 +22,9 @@ LOG10(<number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**number**|A positive number for which you want the base-10 logarithm.|  
+|number|A positive number for which you want the base-10 logarithm.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  

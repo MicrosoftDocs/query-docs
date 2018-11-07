@@ -22,9 +22,9 @@ SUM(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**column**|The column that contains the numbers to sum.|  
+|column|The column that contains the numbers to sum.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  

@@ -24,7 +24,7 @@ TAN(number)
 |--------|--------------|  
 |number|Required. The angle in radians for which you want the tangent.|  
   
-## Return Value  
+## Return value  
 Returns the tangent of the given angle.  
   
 ## Remarks  

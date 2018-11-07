@@ -19,10 +19,12 @@ HASONEFILTER(<columnName>)
 ```
   
 #### Parameters  
-columnName  
-The name of an existing column, using standard DAX syntax. It cannot be an expression.  
+
+|Term|Definition|  
+|--------|--------------|  
+| columnName   |  The name of an existing column, using standard DAX syntax. It cannot be an expression.  |  
   
-## Return Value  
+## Return value  
 **TRUE** when the number of directly filtered values on *columnName* is one; otherwise returns **FALSE**.  
   
 ## Remarks  

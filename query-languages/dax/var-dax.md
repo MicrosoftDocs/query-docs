@@ -28,7 +28,7 @@ VAR <name> = <expression>
 |name|The name of the variable (identifier).<br /><br /><ul><li>Delimiters are not supported. For example, ‘varName’ or [varName] will result in an error.</li><li>Supported character set: a-z, A-Z, 0-9.<br /><br /><ul><li>0-9 are not valid as first character.</li><li>__ (double underscore) is allowed as a prefix to the identifier name. No other special characters are supported.</li></ul></li></ul>Reserved keywords not allowed.<br /><br />Names of existing tables are not allowed.<br /><br />Empty spaces are not allowed.|  
 |expression|A DAX expression which returns a scalar or table value.|  
   
-## Return Value  
+## Return value  
 A named variable containing the result of the expression argument.  
   
 ## Exceptions  

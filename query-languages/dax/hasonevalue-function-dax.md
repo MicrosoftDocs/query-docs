@@ -19,10 +19,12 @@ HASONEVALUE(<columnName>)
 ```
   
 #### Parameters  
-columnName  
-The name of an existing column, using standard DAX syntax. It cannot be an expression.  
-  
-## Return Value  
+
+|Term|Definition|  
+|--------|--------------|  
+| columnName   |  The name of an existing column, using standard DAX syntax. It cannot be an expression.  |  
+
+## Return value  
 **TRUE** when the context for *columnName* has been filtered down to one distinct value only. Otherwise is **FALSE**.  
   
 ## Remarks  

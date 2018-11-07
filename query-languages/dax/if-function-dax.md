@@ -22,11 +22,11 @@ IF(logical_test>,<value_if_true>, value_if_false)
   
 |Term|Definition|  
 |--------|--------------|  
-|**logical_test**|Any value or expression that can be evaluated to TRUE or FALSE.|  
-|**value_if_true**|The value that is returned if the logical test is TRUE. If omitted, TRUE is returned.|  
-|**value_if_false**|The value that is returned if the logical test is FALSE. If omitted, FALSE is returned.|  
+|logical_test|Any value or expression that can be evaluated to TRUE or FALSE.|  
+|value_if_true|The value that is returned if the logical test is TRUE. If omitted, TRUE is returned.|  
+|value_if_false|The value that is returned if the logical test is FALSE. If omitted, FALSE is returned.|  
   
-## Return Value  
+## Return value  
 Any type of value that can be returned by an expression.  
   
 ## Remarks  

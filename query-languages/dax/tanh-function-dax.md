@@ -24,7 +24,7 @@ TANH(number)
 |--------|--------------|  
 |number|Required. Any real number.|  
   
-## Return Value  
+## Return value  
 Returns the hyperbolic tangent of a number.  
   
 ## Remarks  

@@ -23,9 +23,9 @@ DATESMTD(<dates>)
 |||  
 |-|-|  
 |Term|Definition|  
-|**dates**|A column that contains dates.|  
+|dates|A column that contains dates.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 A table containing a single column of date values.  
   
 ## Remarks  

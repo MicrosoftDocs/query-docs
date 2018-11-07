@@ -23,11 +23,11 @@ NORM.INV(Probability, Mean, Standard_dev)
   
 |Term|Definition|  
 |--------|--------------|  
-|**Probability**|A probability corresponding to the normal distribution.|  
-|**Mean**|The arithmetic mean of the distribution.|
-|**Standard_dev**|The standard deviation of the distribution.|
+|Probability|A probability corresponding to the normal distribution.|  
+|Mean|The arithmetic mean of the distribution.|
+|Standard_dev|The standard deviation of the distribution.|
   
-## Return Value  
+## Return value  
 Returns the inverse of the normal cumulative distribution for the specified mean and standard deviation.    
   
 ## Example  

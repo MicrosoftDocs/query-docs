@@ -27,7 +27,7 @@ GEOMEAN(<column>)
 |--------|--------------|  
 |column|The column that contains the numbers for which the geometric mean is to be computed.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  

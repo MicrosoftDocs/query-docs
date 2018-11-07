@@ -24,7 +24,7 @@ EVEN(number)
 |--------|--------------|  
 |number|The value to round.|  
   
-## Return Value  
+## Return value  
 Returns number rounded up to the nearest even integer.  
   
 ## Remarks  

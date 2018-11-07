@@ -29,7 +29,7 @@ CODE(text)
 |--------|--------------|  
 |text|The text for which you want the code of the first character.|  
   
-## Return Value  
+## Return value  
 A numeric code for the first character in a text string.  
   
 ## Example  

@@ -22,9 +22,9 @@ DATEVALUE(date_text)
   
 |Term|Definition|  
 |--------|--------------|  
-|**date_text**|Text that represents a date.|  
+|date_text|Text that represents a date.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 A date in **datetime** format.  
   
 ## Remarks  

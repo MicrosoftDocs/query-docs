@@ -23,9 +23,9 @@ DISTINCT(<table>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**table**|The table from which unique rows are to be returned. The table can also be an expression that results in a table.|  
+|table|The table from which unique rows are to be returned. The table can also be an expression that results in a table.|  
   
-## Return Value  
+## Return value  
 A table containing only distinct rows.  
   
 ## Related functions  

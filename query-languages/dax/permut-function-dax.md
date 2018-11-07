@@ -25,7 +25,7 @@ PERMUT(number, number_chosen)
 |number|Required. An integer that describes the number of objects.|  
 |number_chosen|Required. An integer that describes the number of objects in each permutation.|  
   
-## Return Value  
+## Return value  
 Returns the number of permutations for a given number of objects that can be selected from number objects  
   
 ## Remarks  

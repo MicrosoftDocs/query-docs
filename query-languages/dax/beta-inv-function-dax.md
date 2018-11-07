@@ -30,7 +30,7 @@ BETA.INV(probability,alpha,beta,[A],[B])
 |A|Optional. A lower bound to the interval of x.|  
 |B|Optional. An upper bound to the interval of x.|  
   
-## Return Value  
+## Return value  
 Returns the inverse of the beta cumulative probability density function (BETA.DIST).  
   
 ## Remarks  

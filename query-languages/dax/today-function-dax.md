@@ -18,7 +18,7 @@ Returns the current date.
 TODAY()  
 ```
   
-## Return Value  
+## Return value  
 A date (**datetime**).  
   
 ## Remarks  

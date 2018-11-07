@@ -22,9 +22,9 @@ VALUE(<text>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**text**|The text to be converted.|  
+|text|The text to be converted.|  
   
-## Return Value  
+## Return value  
 The converted number in decimal data type.  
   
 ## Remarks  

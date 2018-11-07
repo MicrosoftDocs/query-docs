@@ -22,9 +22,9 @@ MINA(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**column**|The column for which you want to find the minimum value.|  
+|column|The column for which you want to find the minimum value.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  

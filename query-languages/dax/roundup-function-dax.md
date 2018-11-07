@@ -22,10 +22,10 @@ ROUNDUP(<number>, <num_digits>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**number**|A real number that you want to round up.|  
-|**num_digits**|The number of digits to which you want to round. A negative value for **num_digits** rounds to the left of the decimal point; if **num_digits** is zero or is omitted, **number** is rounded to the nearest integer.|  
+|number|A real number that you want to round up.|  
+|num_digits|The number of digits to which you want to round. A negative value for **num_digits** rounds to the left of the decimal point; if **num_digits** is zero or is omitted, **number** is rounded to the nearest integer.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  

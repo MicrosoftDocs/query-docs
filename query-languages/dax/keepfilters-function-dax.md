@@ -22,9 +22,9 @@ KEEPFILTERS(<expression>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**expression**|Any expression.|  
+|expression|Any expression.|  
   
-## Return Value  
+## Return value  
 A table of values.  
   
 ## Remarks  

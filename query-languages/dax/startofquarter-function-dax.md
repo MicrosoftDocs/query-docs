@@ -22,9 +22,9 @@ STARTOFQUARTER(<dates>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**dates**|A column that contains dates.|  
+|dates|A column that contains dates.|  
   
-## Return Value  
+## Return value  
 A table containing a single column and single row with a date value.  
   
 ## Remarks  

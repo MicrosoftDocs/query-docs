@@ -24,7 +24,7 @@ ATAN(number)
 |--------|--------------|  
 |number|The tangent of the angle you want.|  
   
-## Return Value  
+## Return value  
 Returns the inverse hyperbolic tangent of a number.  
   
 ## Remarks  

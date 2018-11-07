@@ -28,7 +28,7 @@ GROUPBY (<table>, [<groupBy_columnName1>], [<name>, <expression>]… )
 |name|The name given to a new column that is being added to the list of GroupBy columns, enclosed in double quotes.|  
 |expression|Any DAX expression that returns a single scalar value, where the expression is to be evaluated for each set of GroupBy values.<br /><br />**Note:** The expression used in GroupBy may include any of the “X” aggregation functions, such as SUMX, AVERAGEX, MINX, MAXX, etc. and when one of these function is used in this way, we allow the table argument (which normally must be a table expression) to be replaced by a special CURRENTGROUP() function as described elsewhere in this document.<br /><br />Restrictions on expression:<br /><br />-   The CALCULATE function (and therefore measures) are not allowed in the expression.<br />-   The CURRENTGROUP function may only be used at the top level of table scans in the expression. That is, SUMX(&lt;table&gt;,SUMX(CURRENTGROUP(…), …)) is not allowed. ABS( SUMX(CURRENTGROUP(), [Column] ) ) is allowed, since ABS does not perform a scan.|  
   
-## Return Value  
+## Return value  
 A table with the selected columns for the groupBy_columnName arguments and the grouped by columns designated by the name arguments.  
   
 ## Remarks  

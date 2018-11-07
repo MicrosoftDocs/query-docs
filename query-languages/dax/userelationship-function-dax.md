@@ -19,13 +19,13 @@ USERELATIONSHIP(<columnName1>,<columnName2>)
 ```
   
 #### Parameters  
-columnName1  
-The name of an existing column, using standard DAX syntax and fully qualified, that usually represents the many side of the relationship to be used; if the arguments are given in reverse order the function will swap them before using them. This argument cannot be an expression.  
-  
-columnName2  
-The name of an existing column, using standard DAX syntax and fully qualified, that usually represents the one side or lookup side of the relationship to be used; if the arguments are given in reverse order the function will swap them before using them. This argument cannot be an expression.  
-  
-## Return Value  
+
+|Term|Definition|  
+|--------|--------------|  
+| columnName1  |  The name of an existing column, using standard DAX syntax and fully qualified, that usually represents the many side of the relationship to be used; if the arguments are given in reverse order the function will swap them before using them. This argument cannot be an expression.  |  
+|  columnName2 | The name of an existing column, using standard DAX syntax and fully qualified, that usually represents the one side or lookup side of the relationship to be used; if the arguments are given in reverse order the function will swap them before using them. This argument cannot be an expression.   |
+
+## Return value  
 The function returns no value; the function only enables the indicated relationship for the duration of the calculation.  
   
 ## Remarks  

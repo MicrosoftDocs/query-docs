@@ -22,10 +22,10 @@ AVERAGEX(<table>,<expression>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**table**|Name of a table, or an expression that specifies the table over which the aggregation can be performed.|  
-|**expression**|An expression with a scalar result, which will be evaluated for each row of the table in the first argument.|  
+|table|Name of a table, or an expression that specifies the table over which the aggregation can be performed.|  
+|expression|An expression with a scalar result, which will be evaluated for each row of the table in the first argument.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  

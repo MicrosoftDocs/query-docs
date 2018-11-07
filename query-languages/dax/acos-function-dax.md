@@ -24,7 +24,7 @@ ACOS(number)
 |--------|--------------|  
 |Number|The cosine of the angle you want and must be from -1 to 1.|  
   
-## Return Value  
+## Return value  
 Returns the arccosine, or inverse cosine, of a number.  
   
 ## Remarks  

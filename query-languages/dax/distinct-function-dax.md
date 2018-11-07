@@ -13,7 +13,7 @@ manager: kfile
 Returns a one-column table that contains the distinct values from the specified column. In other words, duplicate values are removed and only unique values are returned.  
   
 > [!NOTE]  
-> This function cannot be used to return values into a cell or column on a worksheet; rather, you nest the DISTINCT function within a formula, to get a list of distinct values that can be passed to another function and then counted, summed, or used for other operations.  
+> This function cannot be used to Return values into a cell or column on a worksheet; rather, you nest the DISTINCT function within a formula, to get a list of distinct values that can be passed to another function and then counted, summed, or used for other operations.  
   
 ## Syntax  
   
@@ -25,9 +25,9 @@ DISTINCT(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**column**|The column from which unique values are to be returned. Or, an expression that returns a column.|  
+|column|The column from which unique values are to be returned. Or, an expression that returns a column.|  
   
-## Return Value  
+## Return value  
 A column of unique values.  
   
 ## Remarks  

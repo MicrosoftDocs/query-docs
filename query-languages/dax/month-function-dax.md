@@ -22,9 +22,9 @@ MONTH(<datetime>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**date**|A date in **datetime** or text format.|  
+|date|A date in **datetime** or text format.|  
   
-## Return Value  
+## Return value  
 An integer number from 1 to 12.  
   
 ## Remarks  

@@ -22,9 +22,9 @@ COUNT(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**column**|The column that contains the numbers to be counted|  
+|column|The column that contains the numbers to be counted|  
   
-## Return Value  
+## Return value  
 A whole number.  
   
 ## Remarks  

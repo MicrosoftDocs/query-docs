@@ -18,7 +18,7 @@ Returns a random number greater than or equal to 0 and less than 1, evenly distr
 RAND()  
 ```
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  

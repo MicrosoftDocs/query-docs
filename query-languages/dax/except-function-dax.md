@@ -24,7 +24,7 @@ EXCEPT(<table_expression1>, <table_expression2>
 |--------|--------------|  
 |Table_expression|Any DAX expression that returns a table.|  
   
-## Return Value  
+## Return value  
 A table that contains the rows of one table minus all the rows of another table.  
   
 ## Remarks  

@@ -24,7 +24,7 @@ ACOSH(number)
 |--------|--------------|  
 |number|Any real number equal to or greater than 1.|  
   
-## Return Value  
+## Return value  
 Returns the inverse hyperbolic cosine of a number.  
   
 ## Example  

@@ -28,7 +28,7 @@ XIRR(<table>, <values>, <dates>, [guess])
 |dates|An expression that returns the cash flow date for each row of the table.|  
 |guess|(Optional) An initial guess for the internal rate of return. If omitted, the default guess of 0.1 is used.|  
   
-## Return Value  
+## Return value  
 Internal rate of return for the given inputs. If the calculation fails to return a valid result, an error is returned.  
   
 ## Remarks  

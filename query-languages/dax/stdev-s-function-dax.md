@@ -19,10 +19,13 @@ STDEV.S(<ColumnName>)
 ```
   
 #### Parameters  
-*columnName*  
-The name of an existing column using standard DAX syntax, usually fully qualified. It cannot be an expression.  
+
+|Term|Definition|  
+|--------|--------------|  
+| columnName | The name of an existing column using standard DAX syntax, usually fully qualified. It cannot be an expression.   |  
+
   
-## Return Value  
+## Return value  
 A number that represents the standard deviation of a sample population.  
   
 ## Exceptions  

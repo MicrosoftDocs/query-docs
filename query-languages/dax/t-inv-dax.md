@@ -23,10 +23,10 @@ T.INV(Probability,Deg_freedom)
   
 |Term|Definition|  
 |--------|--------------|  
-|**Probability**|The probability associated with the Student's t-distribution.|  
-|**Deg_freedom** |The number of degrees of freedom with which to characterize the distribution.|
+|Probability|The probability associated with the Student's t-distribution.|  
+|Deg_freedom|The number of degrees of freedom with which to characterize the distribution.|
   
-## Return Value  
+## Return value  
 The left-tailed inverse of the Student's t-distribution. 
   
 ## Example  

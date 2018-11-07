@@ -22,9 +22,9 @@ ISNONTEXT(<value>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**value**|The value you want to check.|  
+|value|The value you want to check.|  
   
-## Return Value  
+## Return value  
 TRUE if the value is not text or blank; FALSE if the value is text.  
   
 ## Remarks  

@@ -26,7 +26,7 @@ GENERATESERIES(<startValue>, <endValue>[, <incrementValue>])
 |endValue|The end value used to generate the sequence.|  
 |incrementValue|(Optional) The increment value of the sequence. When not provided, the default value is 1.|    
   
-## Return Value  
+## Return value  
 A single column table containing the values of an arithmetic series. The name of the column is Value.
   
 ## Remarks  

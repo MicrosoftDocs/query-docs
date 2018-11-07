@@ -48,7 +48,7 @@ ties
 |Skip|The next rank value, after a tie, is the rank value of the tie plus the count of tied values. For example if five (5) values are tied with a rank of 11 then the next value will receive a rank of 16 (11 + 5).<br /><br />This is the default value when *ties* parameter is omitted.|  
 |Dense|The next rank value, after a tie, is the next rank value. For example if five (5) values are tied with a rank of 11 then the next value will receive a rank of 12.|  
   
-## Return Value  
+## Return value  
 The rank number of *value* among all possible values of *expression* evaluated for all rows of *table* numbers.  
   
 ## Exceptions  

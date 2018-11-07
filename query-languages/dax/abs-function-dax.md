@@ -23,9 +23,9 @@ ABS(<number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**number**|The number for which you want the absolute value.|  
+|number|The number for which you want the absolute value.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  

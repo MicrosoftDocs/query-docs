@@ -24,7 +24,7 @@ SINH(number)
 |--------|--------------|  
 |number|Required. Any real number.|  
   
-## Return Value  
+## Return value  
 Returns the hyperbolic sine of a number.  
   
 ## Remarks  

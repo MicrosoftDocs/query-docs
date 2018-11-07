@@ -18,7 +18,7 @@ Returns the current UTC date and time
 UTCNOW()  
 ```
   
-## Return Value  
+## Return value  
 A (**datetime)**.  
   
 ## Remarks  

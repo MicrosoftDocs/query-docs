@@ -21,6 +21,8 @@ DAX is continuously being improved with new functions and functionality to suppo
 
  The following functions (or functionality) have been added in 2018. 
 
+[ISINSCOPE Function](isinscope-function-dax.md)  Nov. 2018
+
 [COMBINEVALUES Function](combinevalues-function-dax.md)   
 [UTCNOW Function](utcnow-function-dax.md)   
 [UTCTODAY Function](utctoday-function-dax.md)
@@ -35,8 +37,6 @@ DAX is continuously being improved with new functions and functionality to suppo
 [T.DIST.RT Function](t-dist-rt-dax.md)   
 [T.INV Function](t-inv-dax.md)   
 [T.INV.2T Function](t-inv-2t-dax.md)   
-
-[ISINSCOPE Function](isinscope-function-dax.md)  Nov. 2018
 
  ## Updated
 

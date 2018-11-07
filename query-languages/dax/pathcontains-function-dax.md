@@ -25,7 +25,7 @@ A string created as the result of evaluating a PATH function.
 item  
 A text expression to look for in the path result.  
   
-## Return Value  
+## Return value  
 A value of **TRUE** if *item* exists in *path*; otherwise **FALSE**.  
   
 ## Remarks  

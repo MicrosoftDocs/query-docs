@@ -19,10 +19,12 @@ FILTERS(<columnName>)
 ```
   
 #### Parameters  
-columnName  
-The name of an existing column, using standard DAX syntax. It cannot be an expression.  
-  
-## Return Value  
+
+|Term  |Description|  
+|---------|---------|
+|columnName      | The name of an existing column, using standard DAX syntax. It cannot be an expression.  |
+
+## Return value  
 The values that are directly applied as filters to *columnName*.  
   
 ## Remarks  
