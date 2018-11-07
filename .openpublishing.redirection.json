@@ -19,6 +19,1441 @@
       "source_path": "dax-msdn/abs-function-dax.md",
       "redirect_url": "https://docs.microsoft.com/dax/abs-function-dax",
       "redirect_document_id": true
-    }
+    },
+    		{
+			"source_path": "dax-msdn/abs-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/abs-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/acos-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/acos-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/acosh-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/acosh-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/addcolumns-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/addcolumns-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/addmissingitems-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/addmissingitems-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/allexcept-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/allexcept-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/all-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/all-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/allnoblankrow-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/allnoblankrow-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/allselected-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/allselected-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/and-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/and-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/asin-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/asin-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/asinh-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/asinh-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/atan-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/atan-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/atanh-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/atanh-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/averagea-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/averagea-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/average-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/average-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/averagex-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/averagex-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/beta-dist-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/beta-dist-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/beta-inv-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/beta-inv-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/blank-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/blank-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/calculate-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/calculate-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/calculatetable-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/calculatetable-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/calendarauto-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/calendarauto-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/calendar-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/calendar-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/ceiling-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/ceiling-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/chisq-inv-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/chisq-inv-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/chisq-inv-rt-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/chisq-inv-rt-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/closingbalancemonth-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/closingbalancemonth-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/closingbalancequarter-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/closingbalancequarter-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/closingbalanceyear-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/closingbalanceyear-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/code-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/code-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/combina-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/combina-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/combinevalues-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/combinevalues-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/combin-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/combin-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/concatenate-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/concatenate-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/concatenatex-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/concatenatex-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/confidence-norm-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/confidence-norm-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/confidence-t-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/confidence-t-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/contains-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/contains-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/cos-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/cos-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/cosh-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/cosh-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/counta-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/counta-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/countax-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/countax-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/countblank-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/countblank-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/count-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/count-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/countrows-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/countrows-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/countx-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/countx-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/crossfilter-function.md",
+			"redirect_url": "https://docs.microsoft.com/dax/crossfilter-function",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/crossjoin-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/crossjoin-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/currency-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/currency-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/customdata-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/customdata-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/custom-date-and-time-formats-for-the-format-function.md",
+			"redirect_url": "https://docs.microsoft.com/dax/custom-date-and-time-formats-for-the-format-function",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/custom-numeric-formats-for-the-format-function.md",
+			"redirect_url": "https://docs.microsoft.com/dax/custom-numeric-formats-for-the-format-function",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/data-analysis-expressions-dax-reference.md",
+			"redirect_url": "https://docs.microsoft.com/dax/data-analysis-expressions-dax-reference",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/datatable-function.md",
+			"redirect_url": "https://docs.microsoft.com/dax/datatable-function",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/dateadd-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/dateadd-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/date-and-time-functions-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/date-and-time-functions-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/datediff-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/datediff-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/date-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/date-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/datesbetween-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/datesbetween-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/datesinperiod-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/datesinperiod-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/datesmtd-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/datesmtd-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/datesqtd-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/datesqtd-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/datesytd-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/datesytd-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/datevalue-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/datevalue-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/dax-error-calculation-aborted.md",
+			"redirect_url": "https://docs.microsoft.com/dax/dax-error-calculation-aborted",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/dax-error-reference.md",
+			"redirect_url": "https://docs.microsoft.com/dax/dax-error-reference",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/dax-error-the-calculation-could-not-be-completed.md",
+			"redirect_url": "https://docs.microsoft.com/dax/dax-error-the-calculation-could-not-be-completed",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/dax-function-reference.md",
+			"redirect_url": "https://docs.microsoft.com/dax/dax-function-reference",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/dax-operator-reference.md",
+			"redirect_url": "https://docs.microsoft.com/dax/dax-operator-reference",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/dax-parameter-naming-conventions.md",
+			"redirect_url": "https://docs.microsoft.com/dax/dax-parameter-naming-conventions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/dax-queries.md",
+			"redirect_url": "https://docs.microsoft.com/dax/dax-queries",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/dax-semantic-error-calculate-has-been-used-in-a-true-false-expression.md",
+			"redirect_url": "https://docs.microsoft.com/dax/dax-semantic-error-calculate-has-been-used-in-a-true-false-expression",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/dax-semantic-error-filter-arguments-cannot-be-used-in-this-expression.md",
+			"redirect_url": "https://docs.microsoft.com/dax/dax-semantic-error-filter-arguments-cannot-be-used-in-this-expression",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/dax-syntax-reference.md",
+			"redirect_url": "https://docs.microsoft.com/dax/dax-syntax-reference",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/day-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/day-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/degrees-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/degrees-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/distinctcount-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/distinctcount-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/distinct-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/distinct-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/distinct-table-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/distinct-table-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/divide-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/divide-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/earlier-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/earlier-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/earliest-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/earliest-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/edate-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/edate-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/endofmonth-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/endofmonth-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/endofquarter-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/endofquarter-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/endofyear-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/endofyear-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/eomonth-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/eomonth-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/error-function.md",
+			"redirect_url": "https://docs.microsoft.com/dax/error-function",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/even-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/even-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/exact-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/exact-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/except-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/except-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/exp-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/exp-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/expon-dist-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/expon-dist-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/fact-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/fact-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/false-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/false-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/filter-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/filter-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/filter-functions-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/filter-functions-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/filters-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/filters-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/find-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/find-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/firstdate-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/firstdate-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/firstnonblank-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/firstnonblank-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/fixed-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/fixed-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/floor-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/floor-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/format-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/format-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/gcd-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/gcd-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/generateall-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/generateall-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/generate-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/generate-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/generateseries-function.md",
+			"redirect_url": "https://docs.microsoft.com/dax/generateseries-function",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/geomean-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/geomean-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/geomeanx-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/geomeanx-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/groupby-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/groupby-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/hasonefilter-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/hasonefilter-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/hasonevalue-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/hasonevalue-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/hour-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/hour-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/iferror-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/iferror-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/if-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/if-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/index.md",
+			"redirect_url": "https://docs.microsoft.com/dax/index",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/information-functions-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/information-functions-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/in-function.md",
+			"redirect_url": "https://docs.microsoft.com/dax/in-function",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/in-operator-containsrow-function.md",
+			"redirect_url": "https://docs.microsoft.com/dax/in-operator-containsrow-function",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/intersect-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/intersect-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/int-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/int-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/isblank-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/isblank-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/iscrossfiltered-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/iscrossfiltered-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/isempty-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/isempty-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/iserror-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/iserror-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/iseven-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/iseven-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/isfiltered-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/isfiltered-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/islogical-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/islogical-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/isnontext-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/isnontext-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/isnumber-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/isnumber-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/iso-ceiling-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/iso-ceiling-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/isodd-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/isodd-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/isonorafter-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/isonorafter-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/istext-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/istext-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/keepfilters-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/keepfilters-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/lastdate-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/lastdate-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/lastnonblank-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/lastnonblank-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/lcm-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/lcm-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/left-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/left-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/len-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/len-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/ln-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/ln-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/log10-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/log10-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/log-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/log-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/logical-functions-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/logical-functions-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/lookupvalue-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/lookupvalue-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/lower-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/lower-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/math-and-trig-functions-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/math-and-trig-functions-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/maxa-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/maxa-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/max-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/max-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/maxx-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/maxx-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/median-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/median-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/medianx-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/medianx-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/mid-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/mid-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/mina-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/mina-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/min-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/min-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/minute-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/minute-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/minx-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/minx-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/mod-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/mod-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/month-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/month-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/mround-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/mround-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/naturalinnerjoin-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/naturalinnerjoin-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/naturalleftouterjoin-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/naturalleftouterjoin-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/new-dax-functions.md",
+			"redirect_url": "https://docs.microsoft.com/dax/new-dax-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/nextday-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/nextday-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/nextmonth-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/nextmonth-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/nextquarter-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/nextquarter-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/nextyear-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/nextyear-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/norm-dist-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/norm-dist-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/norm-inv-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/norm-inv-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/norm-s-dist-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/norm-s-dist-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/norm-s-inv-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/norm-s-inv-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/not-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/not-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/now-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/now-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/odd-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/odd-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/openingbalancemonth-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/openingbalancemonth-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/openingbalancequarter-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/openingbalancequarter-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/openingbalanceyear-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/openingbalanceyear-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/or-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/or-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/other-functions-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/other-functions-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/parallelperiod-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/parallelperiod-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/parent-and-child-functions-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/parent-and-child-functions-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/pathcontains-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/pathcontains-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/path-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/path-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/pathitem-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/pathitem-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/pathitemreverse-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/pathitemreverse-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/pathlength-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/pathlength-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/percentile-exc-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/percentile-exc-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/percentile-inc-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/percentile-inc-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/percentilex-exc-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/percentilex-exc-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/percentilex-inc-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/percentilex-inc-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/permut-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/permut-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/pi-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/pi-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/poisson-dist-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/poisson-dist-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/power-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/power-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/pre-defined-date-and-time-formats-for-the-format-function.md",
+			"redirect_url": "https://docs.microsoft.com/dax/pre-defined-date-and-time-formats-for-the-format-function",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/pre-defined-numeric-formats-for-the-format-function.md",
+			"redirect_url": "https://docs.microsoft.com/dax/pre-defined-numeric-formats-for-the-format-function",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/previousday-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/previousday-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/previousmonth-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/previousmonth-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/previousquarter-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/previousquarter-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/previousyear-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/previousyear-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/product-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/product-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/productx-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/productx-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/quotient-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/quotient-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/radians-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/radians-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/randbetween-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/randbetween-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/rand-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/rand-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/rank-eq-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/rank-eq-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/rankx-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/rankx-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/related-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/related-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/relatedtable-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/relatedtable-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/replace-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/replace-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/rept-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/rept-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/right-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/right-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/rounddown-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/rounddown-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/round-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/round-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/roundup-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/roundup-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/row-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/row-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/sameperiodlastyear-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/sameperiodlastyear-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/sample-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/sample-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/search-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/search-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/second-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/second-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/selectcolumns-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/selectcolumns-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/selectedvalue-function.md",
+			"redirect_url": "https://docs.microsoft.com/dax/selectedvalue-function",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/sign-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/sign-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/sin-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/sin-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/sinh-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/sinh-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/sqrt-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/sqrt-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/sqrtpi-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/sqrtpi-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/startofmonth-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/startofmonth-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/startofquarter-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/startofquarter-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/startofyear-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/startofyear-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/statistical-functions-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/statistical-functions-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/stdev-p-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/stdev-p-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/stdev-s-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/stdev-s-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/stdevx-p-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/stdevx-p-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/stdevx-s-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/stdevx-s-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/substitute-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/substitute-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/substitutewithindex-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/substitutewithindex-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/sum-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/sum-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/summarizecolumns-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/summarizecolumns-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/summarize-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/summarize-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/sumx-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/sumx-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/switch-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/switch-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/table-constructor.md",
+			"redirect_url": "https://docs.microsoft.com/dax/table-constructor",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/tan-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/tan-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/tanh-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/tanh-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/t-dist-2t-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/t-dist-2t-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/t-dist-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/t-dist-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/t-dist-rt-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/t-dist-rt-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/text-functions-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/text-functions-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/time-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/time-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/time-intelligence-functions-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/time-intelligence-functions-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/timevalue-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/timevalue-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/t-inv-2t-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/t-inv-2t-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/t-inv-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/t-inv-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/today-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/today-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/topn-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/topn-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/totalmtd-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/totalmtd-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/totalqtd-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/totalqtd-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/totalytd-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/totalytd-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/treatas-function.md",
+			"redirect_url": "https://docs.microsoft.com/dax/treatas-function",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/trim-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/trim-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/true-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/true-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/trunc-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/trunc-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/understanding-functions-for-parent-child-hierarchies-in-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/understanding-functions-for-parent-child-hierarchies-in-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/unichar-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/unichar-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/union-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/union-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/upper-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/upper-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/userelationship-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/userelationship-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/username-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/username-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/utcnow-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/utcnow-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/utctoday-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/utctoday-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/value-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/value-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/values-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/values-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/var-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/var-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/var-p-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/var-p-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/var-s-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/var-s-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/varx-p-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/varx-p-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/varx-s-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/varx-s-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/weekday-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/weekday-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/weeknum-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/weeknum-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/xirr-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/xirr-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/xnpv-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/xnpv-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/yearfrac-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/yearfrac-function-dax",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "dax-msdn/year-function-dax.md",
+			"redirect_url": "https://docs.microsoft.com/dax/year-function-dax",
+			"redirect_document_id": true
+		}
   ] 
 } 
