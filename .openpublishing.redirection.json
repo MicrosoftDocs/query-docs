@@ -1,5 +1,6 @@
 {
-	"redirections": [{
+	"redirections": [
+		{
 			"source_path": "query-languages/dax/index.md",
 			"redirect_url": "data-analysis-expressions-dax-reference",
 			"redirect_document_id": true
@@ -9,11 +10,11 @@
 			"redirect_url": "power-query-m-reference",
 			"redirect_document_id": true
 		},
-    {
-      "source_path": "query-languages/index.md",
-      "redirect_url": "https://docs.microsoft.com",
-      "redirect_document_id": false
-    },              
+		{
+			"source_path": "query-languages/index.md",
+			"redirect_url": "https://docs.microsoft.com",
+			"redirect_document_id": false
+		},
 		{
 			"source_path": "query-languages/m/marketplace.subscriptions.md",
 			"redirect_url": "query-languages/m/power-query-m-reference",
@@ -1453,7 +1454,3727 @@
 			"source_path": "dax-msdn-redirects/year-function-dax.md",
 			"redirect_url": "https://docs.microsoft.com/dax/year-function-dax",
 			"redirect_document_id": true
-		}
+		},
+		{
+			"source_path": "m-msdn-redirects/access-database.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/access-database",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/accessing-data-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/accessing-data-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/activedirectory-domains.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/activedirectory-domains",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/adobeanalytics-cubes.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/adobeanalytics-cubes",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/adodotnet-datasource.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/adodotnet-datasource",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/adodotnet-query.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/adodotnet-query",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/analysisservices-database.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/analysisservices-database",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/analysisservices-databases.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/analysisservices-databases",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/azurestorage-blobcontents.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/azurestorage-blobcontents",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/azurestorage-blobs.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/azurestorage-blobs",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/azurestorage-datalakecontents.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/azurestorage-datalakecontents",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/azurestorage-tables.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/azurestorage-tables",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binary-buffer.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binary-buffer",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binary-combine.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binary-combine",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binary-compress.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binary-compress",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binary-decompress.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binary-decompress",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryencoding-base64.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryencoding-base64",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryencoding-hex.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryencoding-hex",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryformat-7bitencodedsignedinteger.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryformat-7bitencodedsignedinteger",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryformat-7bitencodedunsignedinteger.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryformat-7bitencodedunsignedinteger",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryformat-binary.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryformat-binary",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryformat-byte.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryformat-byte",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryformat-byteorder.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryformat-byteorder",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryformat-choice.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryformat-choice",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryformat-decimal.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryformat-decimal",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryformat-double.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryformat-double",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryformat-group.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryformat-group",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryformat-length.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryformat-length",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryformat-list.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryformat-list",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryformat-null.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryformat-null",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryformat-record.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryformat-record",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryformat-signedinteger16.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryformat-signedinteger16",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryformat-signedinteger32.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryformat-signedinteger32",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryformat-signedinteger64.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryformat-signedinteger64",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryformat-single.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryformat-single",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryformat-text.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryformat-text",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryformat-transform.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryformat-transform",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryformat-unsignedinteger16.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryformat-unsignedinteger16",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryformat-unsignedinteger32.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryformat-unsignedinteger32",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryformat-unsignedinteger64.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryformat-unsignedinteger64",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binary-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binary-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binary-fromlist.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binary-fromlist",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binary-fromtext.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binary-fromtext",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binary-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binary-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binary-infercontenttype.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binary-infercontenttype",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binary-length.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binary-length",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryoccurrence-optional.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryoccurrence-optional",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryoccurrence-repeating.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryoccurrence-repeating",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binaryoccurrence-required.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binaryoccurrence-required",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binary-tolist.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binary-tolist",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/binary-totext.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/binary-totext",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/byte-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/byte-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/byteorder-bigendian.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/byteorder-bigendian",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/byteorder-littleendian.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/byteorder-littleendian",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/character-fromnumber.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/character-fromnumber",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/character-tonumber.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/character-tonumber",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/combiner-combinetextbydelimiter.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/combiner-combinetextbydelimiter",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/combiner-combinetextbyeachdelimiter.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/combiner-combinetextbyeachdelimiter",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/combiner-combinetextbylengths.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/combiner-combinetextbylengths",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/combiner-combinetextbypositions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/combiner-combinetextbypositions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/combiner-combinetextbyranges.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/combiner-combinetextbyranges",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/combiner-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/combiner-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/comments.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/comments",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/comparer-equals.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/comparer-equals",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/comparer-fromculture.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/comparer-fromculture",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/comparer-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/comparer-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/comparer-ordinal.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/comparer-ordinal",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/comparer-ordinalignorecase.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/comparer-ordinalignorecase",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/compression-deflate.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/compression-deflate",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/compression-gzip.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/compression-gzip",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/csv-document.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/csv-document",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/csvstyle-quoteafterdelimiter.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/csvstyle-quoteafterdelimiter",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/csvstyle-quotealways.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/csvstyle-quotealways",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/cube-addandexpanddimensioncolumn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/cube-addandexpanddimensioncolumn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/cube-addmeasurecolumn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/cube-addmeasurecolumn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/cube-applyparameter.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/cube-applyparameter",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/cube-attributememberid.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/cube-attributememberid",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/cube-attributememberproperty.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/cube-attributememberproperty",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/cube-collapseandremovecolumns.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/cube-collapseandremovecolumns",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/cube-dimensions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/cube-dimensions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/cube-displayfolders.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/cube-displayfolders",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/cube-measureproperties.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/cube-measureproperties",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/cube-measureproperty.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/cube-measureproperty",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/cube-measures.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/cube-measures",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/cube-parameters.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/cube-parameters",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/cube-properties.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/cube-properties",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/cube-propertykey.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/cube-propertykey",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/cube-replacedimensions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/cube-replacedimensions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/cube-transform.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/cube-transform",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/culture-current.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/culture-current",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/currency-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/currency-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-adddays.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-adddays",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-addmonths.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-addmonths",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-addquarters.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-addquarters",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-addweeks.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-addweeks",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-addyears.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-addyears",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-day.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-day",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-dayofweek.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-dayofweek",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-dayofweekname.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-dayofweekname",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-dayofyear.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-dayofyear",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-daysinmonth.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-daysinmonth",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-endofday.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-endofday",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-endofmonth.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-endofmonth",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-endofquarter.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-endofquarter",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-endofweek.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-endofweek",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-endofyear.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-endofyear",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-fromtext.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-fromtext",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isincurrentday.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isincurrentday",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isincurrentmonth.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isincurrentmonth",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isincurrentquarter.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isincurrentquarter",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isincurrentweek.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isincurrentweek",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isincurrentyear.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isincurrentyear",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isinnextday.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isinnextday",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isinnextmonth.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isinnextmonth",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isinnextndays.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isinnextndays",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isinnextnmonths.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isinnextnmonths",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isinnextnquarters.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isinnextnquarters",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isinnextnweeks.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isinnextnweeks",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isinnextnyears.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isinnextnyears",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isinnextquarter.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isinnextquarter",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isinnextweek.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isinnextweek",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isinnextyear.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isinnextyear",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isinpreviousday.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isinpreviousday",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isinpreviousmonth.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isinpreviousmonth",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isinpreviousndays.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isinpreviousndays",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isinpreviousnmonths.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isinpreviousnmonths",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isinpreviousnquarters.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isinpreviousnquarters",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isinpreviousnweeks.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isinpreviousnweeks",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isinpreviousnyears.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isinpreviousnyears",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isinpreviousquarter.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isinpreviousquarter",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isinpreviousweek.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isinpreviousweek",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isinpreviousyear.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isinpreviousyear",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isinyeartodate.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isinyeartodate",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-isleapyear.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-isleapyear",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-month.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-month",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-monthname.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-monthname",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-quarterofyear.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-quarterofyear",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-startofday.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-startofday",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-startofmonth.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-startofmonth",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-startofquarter.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-startofquarter",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-startofweek.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-startofweek",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-startofyear.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-startofyear",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-addzone.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-addzone",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-date.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-date",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-fixedlocalnow.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-fixedlocalnow",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-fromfiletime.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-fromfiletime",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-fromtext.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-fromtext",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-isincurrenthour.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-isincurrenthour",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-isincurrentminute.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-isincurrentminute",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-isincurrentsecond.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-isincurrentsecond",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-isinnexthour.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-isinnexthour",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-isinnextminute.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-isinnextminute",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-isinnextnhours.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-isinnextnhours",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-isinnextnminutes.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-isinnextnminutes",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-isinnextnseconds.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-isinnextnseconds",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-isinnextsecond.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-isinnextsecond",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-isinprevioushour.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-isinprevioushour",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-isinpreviousminute.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-isinpreviousminute",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-isinpreviousnhours.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-isinpreviousnhours",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-isinpreviousnminutes.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-isinpreviousnminutes",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-isinpreviousnseconds.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-isinpreviousnseconds",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-isinprevioussecond.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-isinprevioussecond",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-localnow.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-localnow",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-time.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-time",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-torecord.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-torecord",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetime-totext.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetime-totext",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetimezone-fixedlocalnow.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetimezone-fixedlocalnow",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetimezone-fixedutcnow.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetimezone-fixedutcnow",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetimezone-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetimezone-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetimezone-fromfiletime.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetimezone-fromfiletime",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetimezone-fromtext.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetimezone-fromtext",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetimezone-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetimezone-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetimezone-localnow.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetimezone-localnow",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetimezone-removezone.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetimezone-removezone",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetimezone-switchzone.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetimezone-switchzone",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetimezone-tolocal.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetimezone-tolocal",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetimezone-torecord.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetimezone-torecord",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetimezone-totext.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetimezone-totext",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetimezone-toutc.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetimezone-toutc",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetimezone-utcnow.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetimezone-utcnow",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetimezone-zonehours.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetimezone-zonehours",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/datetimezone-zoneminutes.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/datetimezone-zoneminutes",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-torecord.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-torecord",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-totext.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-totext",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-weekofmonth.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-weekofmonth",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-weekofyear.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-weekofyear",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/date-year.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/date-year",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/day-friday.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/day-friday",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/day-monday.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/day-monday",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/day-saturday.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/day-saturday",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/day-sunday.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/day-sunday",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/day-thursday.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/day-thursday",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/day-tuesday.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/day-tuesday",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/day-wednesday.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/day-wednesday",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/db2-database.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/db2-database",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/decimal-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/decimal-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/diagnostics-activityid.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/diagnostics-activityid",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/diagnostics-trace.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/diagnostics-trace",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/directquerycapabilities-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/directquerycapabilities-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/double-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/double-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/duration-days.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/duration-days",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/duration-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/duration-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/duration-fromtext.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/duration-fromtext",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/duration-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/duration-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/duration-hours.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/duration-hours",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/duration-minutes.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/duration-minutes",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/duration-seconds.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/duration-seconds",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/duration-torecord.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/duration-torecord",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/duration-totaldays.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/duration-totaldays",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/duration-totalhours.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/duration-totalhours",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/duration-totalminutes.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/duration-totalminutes",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/duration-totalseconds.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/duration-totalseconds",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/duration-totext.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/duration-totext",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/embedded-value.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/embedded-value",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/error-handling.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/error-handling",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/error-record.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/error-record",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/errors.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/errors",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/evaluation-model.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/evaluation-model",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/excel-currentworkbook.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/excel-currentworkbook",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/excel-workbook.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/excel-workbook",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/exchange-contents.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/exchange-contents",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/expression-constant.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/expression-constant",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/expression-evaluate.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/expression-evaluate",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/expression-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/expression-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/expression-identifier.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/expression-identifier",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/expressions-values-and-let-expression.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/expressions-values-and-let-expression",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/extravalues-error.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/extravalues-error",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/extravalues-ignore.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/extravalues-ignore",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/extravalues-list.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/extravalues-list",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/facebook-graph.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/facebook-graph",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/file-contents.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/file-contents",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/folder-contents.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/folder-contents",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/folder-files.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/folder-files",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/function-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/function-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/function-invoke.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/function-invoke",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/function-invokeafter.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/function-invokeafter",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/function-isdatasource.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/function-isdatasource",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/function-scalarvector.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/function-scalarvector",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/function-values.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/function-values",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/googleanalytics-accounts.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/googleanalytics-accounts",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/groupkind-global.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/groupkind-global",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/groupkind-local.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/groupkind-local",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/guid-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/guid-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/hdfs-contents.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/hdfs-contents",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/hdfs-files.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/hdfs-files",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/hdinsight-containers.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/hdinsight-containers",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/hdinsight-contents.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/hdinsight-contents",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/hdinsight-files.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/hdinsight-files",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/index.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/index",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/informix-database.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/informix-database",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/int16-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/int16-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/int32-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/int32-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/int64-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/int64-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/int8-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/int8-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/itemexpression-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/itemexpression-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/itemexpression-item.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/itemexpression-item",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/joinalgorithm-dynamic.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/joinalgorithm-dynamic",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/joinalgorithm-lefthash.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/joinalgorithm-lefthash",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/joinalgorithm-leftindex.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/joinalgorithm-leftindex",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/joinalgorithm-pairwisehash.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/joinalgorithm-pairwisehash",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/joinalgorithm-righthash.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/joinalgorithm-righthash",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/joinalgorithm-rightindex.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/joinalgorithm-rightindex",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/joinalgorithm-sortmerge.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/joinalgorithm-sortmerge",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/joinkind-fullouter.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/joinkind-fullouter",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/joinkind-inner.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/joinkind-inner",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/joinkind-leftanti.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/joinkind-leftanti",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/joinkind-leftouter.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/joinkind-leftouter",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/joinkind-rightanti.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/joinkind-rightanti",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/joinkind-rightouter.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/joinkind-rightouter",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/joinside-left.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/joinside-left",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/joinside-right.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/joinside-right",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/json-document.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/json-document",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/json-fromvalue.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/json-fromvalue",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/limitclausekind.limitoffset.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/limitclausekind.limitoffset",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/limitclausekind.none.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/limitclausekind.none",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/limitclausekind.top.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/limitclausekind.top",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/limitclausekind-ansisql2008.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/limitclausekind-ansisql2008",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/limitclausekind-limit.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/limitclausekind-limit",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/lines-frombinary.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/lines-frombinary",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/lines-fromtext.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/lines-fromtext",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/lines-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/lines-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/lines-tobinary.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/lines-tobinary",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/lines-totext.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/lines-totext",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-accumulate.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-accumulate",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-alltrue.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-alltrue",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-alternate.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-alternate",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-anytrue.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-anytrue",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-average.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-average",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-buffer.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-buffer",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-combine.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-combine",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-contains.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-contains",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-containsall.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-containsall",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-containsany.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-containsany",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-count.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-count",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-covariance.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-covariance",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-dates.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-dates",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-datetimes.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-datetimes",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-datetimezones.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-datetimezones",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-difference.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-difference",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-distinct.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-distinct",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-durations.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-durations",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-findtext.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-findtext",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-first.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-first",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-firstn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-firstn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-generate.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-generate",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-insertrange.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-insertrange",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-intersect.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-intersect",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-isdistinct.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-isdistinct",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-isempty.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-isempty",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-last.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-last",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-lastn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-lastn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-matchesall.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-matchesall",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-matchesany.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-matchesany",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-max.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-max",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-maxn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-maxn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-median.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-median",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-min.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-min",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-minn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-minn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-mode.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-mode",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-modes.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-modes",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-nonnullcount.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-nonnullcount",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-numbers.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-numbers",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-positionof.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-positionof",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-positionofany.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-positionofany",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-positions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-positions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-product.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-product",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-random.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-random",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-range.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-range",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-removefirstn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-removefirstn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-removeitems.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-removeitems",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-removelastn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-removelastn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-removematchingitems.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-removematchingitems",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-removenulls.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-removenulls",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-removerange.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-removerange",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-repeat.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-repeat",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-replacematchingitems.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-replacematchingitems",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-replacerange.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-replacerange",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-replacevalue.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-replacevalue",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-reverse.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-reverse",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-select.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-select",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-single.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-single",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-singleordefault.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-singleordefault",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-skip.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-skip",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-sort.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-sort",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-split.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-split",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-standarddeviation.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-standarddeviation",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-sum.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-sum",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-times.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-times",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-transform.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-transform",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-transformmany.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-transformmany",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-union.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-union",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/list-zip.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/list-zip",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/logical-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/logical-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/logical-fromtext.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/logical-fromtext",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/logical-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/logical-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/logical-totext.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/logical-totext",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/metadata.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/metadata",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/missingfield-error.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/missingfield-error",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/missingfield-ignore.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/missingfield-ignore",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/missingfield-usenull.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/missingfield-usenull",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/mysql-database.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/mysql-database",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-abs.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-abs",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-acos.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-acos",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-asin.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-asin",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-atan.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-atan",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-atan2.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-atan2",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-bitwiseand.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-bitwiseand",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-bitwisenot.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-bitwisenot",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-bitwiseor.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-bitwiseor",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-bitwiseshiftleft.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-bitwiseshiftleft",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-bitwiseshiftright.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-bitwiseshiftright",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-bitwisexor.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-bitwisexor",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-combinations.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-combinations",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-cos.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-cos",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-cosh.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-cosh",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-e.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-e",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-epsilon.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-epsilon",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-exp.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-exp",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-factorial.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-factorial",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-fromtext.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-fromtext",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-integerdivide.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-integerdivide",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-iseven.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-iseven",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-isnan.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-isnan",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-isodd.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-isodd",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-ln.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-ln",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-log.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-log",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-log10.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-log10",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-mod.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-mod",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-nan.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-nan",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-negativeinfinity.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-negativeinfinity",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-permutations.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-permutations",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-pi.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-pi",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-positiveinfinity.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-positiveinfinity",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-power.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-power",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-random.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-random",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-randombetween.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-randombetween",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-round.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-round",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-roundawayfromzero.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-roundawayfromzero",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-rounddown.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-rounddown",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-roundtowardzero.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-roundtowardzero",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-roundup.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-roundup",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-sign.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-sign",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-sin.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-sin",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-sinh.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-sinh",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-sqrt.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-sqrt",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-tan.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-tan",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-tanh.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-tanh",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/number-totext.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/number-totext",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/occurrence-all.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/occurrence-all",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/occurrence-first.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/occurrence-first",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/occurrence-last.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/occurrence-last",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/occurrence-optional.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/occurrence-optional",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/occurrence-repeating.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/occurrence-repeating",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/occurrence-required.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/occurrence-required",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/odata-feed.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/odata-feed",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/odbc-datasource.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/odbc-datasource",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/odbc-inferoptions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/odbc-inferoptions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/odbc-query.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/odbc-query",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/oledb-datasource.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/oledb-datasource",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/oledb-query.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/oledb-query",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/operators.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/operators",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/oracle-database.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/oracle-database",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/order-ascending.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/order-ascending",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/order-descending.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/order-descending",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/percentage-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/percentage-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/postgresql-database.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/postgresql-database",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/power-query-m-function-reference.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/power-query-m-function-reference",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/power-query-m-language-specification.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/power-query-m-language-specification",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/power-query-m-reference.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/power-query-m-reference",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/power-query-m-type-system.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/power-query-m-type-system",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/precision-decimal.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/precision-decimal",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/precision-double.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/precision-double",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/quick-tour-of-the-power-query-m-formula-language.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/quick-tour-of-the-power-query-m-formula-language",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/quotestyle-csv.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/quotestyle-csv",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/quotestyle-none.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/quotestyle-none",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/rdata-frombinary.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/rdata-frombinary",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/record-addfield.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/record-addfield",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/record-combine.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/record-combine",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/record-field.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/record-field",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/record-fieldcount.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/record-fieldcount",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/record-fieldnames.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/record-fieldnames",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/record-fieldordefault.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/record-fieldordefault",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/record-fieldvalues.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/record-fieldvalues",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/record-fromlist.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/record-fromlist",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/record-fromtable.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/record-fromtable",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/record-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/record-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/record-hasfields.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/record-hasfields",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/record-removefields.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/record-removefields",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/record-renamefields.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/record-renamefields",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/record-reorderfields.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/record-reorderfields",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/record-selectfields.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/record-selectfields",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/record-tolist.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/record-tolist",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/record-totable.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/record-totable",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/record-transformfields.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/record-transformfields",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/relativeposition-fromend.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/relativeposition-fromend",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/relativeposition-fromstart.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/relativeposition-fromstart",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/replacer-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/replacer-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/replacer-replacetext.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/replacer-replacetext",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/replacer-replacevalue.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/replacer-replacevalue",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/roundingmode-awayfromzero.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/roundingmode-awayfromzero",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/roundingmode-down.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/roundingmode-down",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/roundingmode-toeven.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/roundingmode-toeven",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/roundingmode-towardzero.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/roundingmode-towardzero",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/roundingmode-up.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/roundingmode-up",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/rowexpression-column.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/rowexpression-column",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/rowexpression-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/rowexpression-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/rowexpression-row.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/rowexpression-row",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/salesforce-data.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/salesforce-data",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/salesforce-reports.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/salesforce-reports",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/sapbusinessobjects-universes.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/sapbusinessobjects-universes",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/sapbusinesswarehouse-cubes.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/sapbusinesswarehouse-cubes",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/sapbusinesswarehouseexecutionmode.basxml.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/sapbusinesswarehouseexecutionmode.basxml",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/sapbusinesswarehouseexecutionmode.basxmlgzip.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/sapbusinesswarehouseexecutionmode.basxmlgzip",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/sapbusinesswarehouseexecutionmode.datastream.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/sapbusinesswarehouseexecutionmode.datastream",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/saphana-database.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/saphana-database",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/saphanadistribution-all.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/saphanadistribution-all",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/saphanadistribution-connection.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/saphanadistribution-connection",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/saphanadistribution-off.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/saphanadistribution-off",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/saphanadistribution-statement.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/saphanadistribution-statement",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/saphanarangeoperator-equals.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/saphanarangeoperator-equals",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/saphanarangeoperator-greaterthan.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/saphanarangeoperator-greaterthan",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/saphanarangeoperator-greaterthanorequals.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/saphanarangeoperator-greaterthanorequals",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/saphanarangeoperator-lessthan.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/saphanarangeoperator-lessthan",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/saphanarangeoperator-lessthanorequals.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/saphanarangeoperator-lessthanorequals",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/saphanarangeoperator-notequals.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/saphanarangeoperator-notequals",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/sharepoint-contents.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/sharepoint-contents",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/sharepoint-files.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/sharepoint-files",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/sharepoint-tables.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/sharepoint-tables",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/sharpbinary.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/sharpbinary",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/sharpdate.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/sharpdate",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/sharpdatetime.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/sharpdatetime",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/sharpdatetimezone.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/sharpdatetimezone",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/sharpduration.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/sharpduration",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/sharptable.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/sharptable",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/sharptime.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/sharptime",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/single-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/single-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/soda-feed.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/soda-feed",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/splitter-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/splitter-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/splitter-splitbynothing.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/splitter-splitbynothing",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/splitter-splittextbyanydelimiter.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/splitter-splittextbyanydelimiter",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/splitter-splittextbydelimiter.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/splitter-splittextbydelimiter",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/splitter-splittextbyeachdelimiter.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/splitter-splittextbyeachdelimiter",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/splitter-splittextbylengths.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/splitter-splittextbylengths",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/splitter-splittextbypositions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/splitter-splittextbypositions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/splitter-splittextbyranges.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/splitter-splittextbyranges",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/splitter-splittextbyrepeatedlengths.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/splitter-splittextbyrepeatedlengths",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/splitter-splittextbywhitespace.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/splitter-splittextbywhitespace",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/sql-database.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/sql-database",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/sql-databases.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/sql-databases",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/sqlexpression-schemafrom.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/sqlexpression-schemafrom",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/sqlexpression-toexpression.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/sqlexpression-toexpression",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/sybase-database.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/sybase-database",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-addcolumn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-addcolumn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-addindexcolumn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-addindexcolumn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-addjoincolumn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-addjoincolumn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-addkey.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-addkey",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-aggregatetablecolumn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-aggregatetablecolumn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-alternaterows.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-alternaterows",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-buffer.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-buffer",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-column.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-column",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-columncount.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-columncount",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-columnnames.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-columnnames",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-columnsoftype.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-columnsoftype",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-combine.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-combine",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-combinecolumns.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-combinecolumns",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-contains.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-contains",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-containsall.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-containsall",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-containsany.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-containsany",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-demoteheaders.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-demoteheaders",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-distinct.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-distinct",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-duplicatecolumn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-duplicatecolumn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-expandlistcolumn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-expandlistcolumn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-expandrecordcolumn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-expandrecordcolumn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-expandtablecolumn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-expandtablecolumn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-filldown.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-filldown",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-fillup.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-fillup",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-filterwithdatatable.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-filterwithdatatable",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-findtext.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-findtext",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-first.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-first",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-firstn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-firstn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-firstvalue.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-firstvalue",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-fromcolumns.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-fromcolumns",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-fromlist.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-fromlist",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-frompartitions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-frompartitions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-fromrecords.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-fromrecords",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-fromrows.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-fromrows",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-fromvalue.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-fromvalue",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-group.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-group",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-hascolumns.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-hascolumns",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-insertrows.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-insertrows",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-isdistinct.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-isdistinct",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-isempty.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-isempty",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-join.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-join",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-keys.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-keys",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-last.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-last",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-lastn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-lastn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-matchesallrows.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-matchesallrows",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-matchesanyrows.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-matchesanyrows",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-max.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-max",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-maxn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-maxn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-min.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-min",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-minn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-minn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-nestedjoin.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-nestedjoin",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-partition.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-partition",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-partitionvalues.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-partitionvalues",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-pivot.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-pivot",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-positionof.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-positionof",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-positionofany.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-positionofany",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-prefixcolumns.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-prefixcolumns",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-profile.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-profile",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-promoteheaders.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-promoteheaders",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-range.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-range",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-removecolumns.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-removecolumns",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-removefirstn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-removefirstn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-removelastn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-removelastn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-removematchingrows.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-removematchingrows",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-removerows.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-removerows",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-removerowswitherrors.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-removerowswitherrors",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-renamecolumns.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-renamecolumns",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-reordercolumns.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-reordercolumns",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-repeat.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-repeat",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-replaceerrorvalues.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-replaceerrorvalues",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-replacekeys.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-replacekeys",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-replacematchingrows.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-replacematchingrows",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-replacerelationshipidentity.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-replacerelationshipidentity",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-replacerows.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-replacerows",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-replacevalue.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-replacevalue",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-reverse.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-reverse",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-reverserows.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-reverserows",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-rowcount.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-rowcount",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-schema.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-schema",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-selectcolumns.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-selectcolumns",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-selectrows.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-selectrows",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-selectrowswitherrors.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-selectrowswitherrors",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/tables-getrelationships.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/tables-getrelationships",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-singlerow.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-singlerow",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-skip.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-skip",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-sort.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-sort",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-split.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-split",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-splitcolumn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-splitcolumn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-tocolumns.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-tocolumns",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-tolist.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-tolist",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-torecords.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-torecords",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-torows.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-torows",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-transformcolumnnames.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-transformcolumnnames",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-transformcolumns.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-transformcolumns",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-transformcolumntypes.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-transformcolumntypes",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-transformrows.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-transformrows",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-transpose.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-transpose",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-unpivot.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-unpivot",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-unpivotothercolumns.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-unpivotothercolumns",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-view.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-view",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/table-viewfunction.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/table-viewfunction",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/teradata-database.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/teradata-database",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-afterdelimiter.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-afterdelimiter",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-at.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-at",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-beforedelimiter.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-beforedelimiter",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-betweendelimiters.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-betweendelimiters",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-clean.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-clean",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-combine.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-combine",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-contains.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-contains",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/textencoding-ascii.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/textencoding-ascii",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/textencoding-bigendianunicode.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/textencoding-bigendianunicode",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/textencoding-unicode.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/textencoding-unicode",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/textencoding-utf16.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/textencoding-utf16",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/textencoding-utf8.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/textencoding-utf8",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/textencoding-windows.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/textencoding-windows",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-end.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-end",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-endswith.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-endswith",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-format.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-format",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-frombinary.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-frombinary",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-insert.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-insert",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-length.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-length",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-lower.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-lower",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-middle.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-middle",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-newguid.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-newguid",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-padend.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-padend",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-padstart.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-padstart",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-positionof.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-positionof",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-positionofany.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-positionofany",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-proper.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-proper",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-range.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-range",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-remove.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-remove",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-removerange.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-removerange",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-repeat.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-repeat",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-replace.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-replace",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-replacerange.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-replacerange",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-reverse.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-reverse",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-select.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-select",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-split.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-split",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-splitany.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-splitany",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-start.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-start",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-startswith.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-startswith",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-tobinary.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-tobinary",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-tolist.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-tolist",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-trim.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-trim",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-trimend.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-trimend",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-trimstart.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-trimstart",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/text-upper.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/text-upper",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/time-endofhour.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/time-endofhour",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/time-from.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/time-from",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/time-fromtext.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/time-fromtext",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/time-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/time-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/time-hour.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/time-hour",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/time-minute.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/time-minute",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/time-second.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/time-second",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/time-startofhour.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/time-startofhour",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/time-torecord.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/time-torecord",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/time-totext.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/time-totext",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/tracelevel-critical.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/tracelevel-critical",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/tracelevel-error.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/tracelevel-error",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/tracelevel-information.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/tracelevel-information",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/tracelevel-verbose.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/tracelevel-verbose",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/tracelevel-warning.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/tracelevel-warning",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-addtablekey.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-addtablekey",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-closedrecord.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-closedrecord",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-conversion.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-conversion",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-facets.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-facets",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-forfunction.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-forfunction",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-forrecord.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-forrecord",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-functionparameters.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-functionparameters",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-functionrequiredparameters.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-functionrequiredparameters",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-functionreturn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-functionreturn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-is.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-is",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-isnullable.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-isnullable",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-isopenrecord.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-isopenrecord",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-listitem.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-listitem",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-nonnullable.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-nonnullable",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-openrecord.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-openrecord",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-recordfields.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-recordfields",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-replacefacets.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-replacefacets",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-replacetablekeys.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-replacetablekeys",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-tablecolumn.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-tablecolumn",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-tablekeys.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-tablekeys",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-tablerow.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-tablerow",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-tableschema.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-tableschema",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/type-union.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/type-union",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/understanding-power-query-m-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/understanding-power-query-m-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/uri-buildquerystring.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/uri-buildquerystring",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/uri-combine.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/uri-combine",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/uri-escapedatastring.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/uri-escapedatastring",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/uri-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/uri-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/uri-parts.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/uri-parts",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/value-add.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/value-add",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/value-as.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/value-as",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/value-compare.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/value-compare",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/value-divide.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/value-divide",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/value-equals.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/value-equals",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/value-firewall.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/value-firewall",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/value-fromtext.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/value-fromtext",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/value-functions.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/value-functions",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/value-is.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/value-is",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/value-metadata.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/value-metadata",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/value-multiply.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/value-multiply",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/value-nativequery.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/value-nativequery",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/value-nullableequals.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/value-nullableequals",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/value-removemetadata.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/value-removemetadata",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/value-replacemetadata.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/value-replacemetadata",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/value-replacetype.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/value-replacetype",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/value-subtract.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/value-subtract",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/value-type.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/value-type",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/variable-value.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/variable-value",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/webaction-request.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/webaction-request",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/web-contents.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/web-contents",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/webmethod-delete.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/webmethod-delete",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/webmethod-get.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/webmethod-get",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/webmethod-head.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/webmethod-head",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/webmethod-patch.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/webmethod-patch",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/webmethod-post.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/webmethod-post",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/webmethod-put.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/webmethod-put",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/web-page.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/web-page",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/xml-document.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/xml-document",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "m-msdn-redirects/xml-tables.md",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/xml-tables",
+			"redirect_document_id": true
+    	}
 	]
 }
 
