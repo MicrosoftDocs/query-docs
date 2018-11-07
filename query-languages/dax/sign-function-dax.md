@@ -2,7 +2,7 @@
 title: "SIGN Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,12 +22,12 @@ SIGN(<number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**number**|Any real number, a column that contains numbers, or an expression that evaluates to a number.|  
+|number|Any real number, a column that contains numbers, or an expression that evaluates to a number.|  
   
-## Return Value  
-A whole number. The possible return values are 1, 0, and -1.  
+## Return value  
+A whole number. The possible Return values are 1, 0, and -1.  
   
-|Return Value|Description|  
+|Return value|Description|  
 |----------------|---------------|  
 |1|The number is positive|  
 |0|The number is zero|  

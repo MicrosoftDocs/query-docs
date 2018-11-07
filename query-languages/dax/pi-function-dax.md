@@ -2,7 +2,7 @@
 title: "PI Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -18,7 +18,7 @@ Returns the value of Pi, 3.14159265358979, accurate to 15 digits.
 PI()  
 ```
   
-## Return Value  
+## Return value  
 A decimal number with the value of Pi, 3.14159265358979, accurate to 15 digits.  
   
 ## Remarks  

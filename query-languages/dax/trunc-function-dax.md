@@ -2,7 +2,7 @@
 title: "TRUNC Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,10 +22,10 @@ TRUNC(<number>,<num_digits>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**number**|The number you want to truncate.|  
-|**num_digits**|A number specifying the precision of the truncation; if omitted, 0 (zero)|  
+|number|The number you want to truncate.|  
+|num_digits|A number specifying the precision of the truncation; if omitted, 0 (zero)|  
   
-## Return Value  
+## Return value  
 A whole number.  
   
 ## Remarks  

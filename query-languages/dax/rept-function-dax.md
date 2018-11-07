@@ -2,7 +2,7 @@
 title: "REPT Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,10 +22,10 @@ REPT(<text>, <num_times>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**text**|The text you want to repeat.|  
-|**num_times**|A positive number specifying the number of times to repeat text.|  
+|text|The text you want to repeat.|  
+|num_times|A positive number specifying the number of times to repeat text.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 A string containing the changes.  
   
 ## Remarks  

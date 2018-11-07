@@ -2,7 +2,7 @@
 title: "SUMMARIZE Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -19,19 +19,15 @@ SUMMARIZE(<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, <name>, <ex
 ```
   
 #### Parameters  
-table  
-Any DAX expression that returns a table of data.  
-  
-groupBy_columnName  
-(Optional) The qualified name of an existing column to be used to create summary groups based on the values found in it. This parameter cannot be an expression.  
-  
-name  
-The name given to a total or summarize column, enclosed in double quotes.  
-  
-expression  
-Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context).  
-  
-## Return Value  
+
+|Term|Definition|  
+|--------|--------------|  
+|  table |  Any DAX expression that returns a table of data.  |  
+| groupBy_columnName | (Optional) The qualified name of an existing column to be used to create summary groups based on the values found in it. This parameter cannot be an expression.  |
+|name|The name given to a total or summarize column, enclosed in double quotes. |
+|expression |Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context). |
+
+## Return value  
 A table with the selected columns for the *groupBy_columnName* arguments and the summarized columns designed by the name arguments.  
   
 ## Remarks  
@@ -54,7 +50,8 @@ SUMMARIZE(ResellerSales_USD
       , "Sales Amount (USD)", SUM(ResellerSales_USD[SalesAmount_USD])  
       , "Discount Amount (USD)", SUM(ResellerSales_USD[DiscountAmount])  
       )  
-```dax
+```
+
 The following table shows a preview of the data as it would be received by any function expecting to receive a table:  
       
 |**DateTime[CalendarYear]**|**ProductCategory[ProductCategoryName]**|**[Sales Amount (USD)]**|**[Discount Amount (USD)]**|  
@@ -104,7 +101,8 @@ SUMMARIZE(ResellerSales_USD
       , "Sales Amount (USD)", SUM(ResellerSales_USD[SalesAmount_USD])  
       , "Discount Amount (USD)", SUM(ResellerSales_USD[DiscountAmount])  
 )  
-```dax
+```
+
 The following table shows a preview of the data as it would be received by any function expecting to receive a table:  
   
 |**DateTime[CalendarYear]**|**ProductCategory[ProductCategoryName]**|**[Sales Amount (USD)]**|**[Discount Amount (USD)]**|  
@@ -142,7 +140,8 @@ SUMMARIZE(ResellerSales_USD
       , "Sales Amount (USD)", SUM(ResellerSales_USD[SalesAmount_USD])  
       , "Discount Amount (USD)", SUM(ResellerSales_USD[DiscountAmount])  
 )  
-```dax
+```
+
 The following table shows a preview of the data as it would be received by any function expecting to receive a table:  
   
 |**DateTime[CalendarYear]**|**ProductCategory[ProductCategoryName]**|**[Sales Amount (USD)]**|**[Discount Amount (USD)]**|  
@@ -176,7 +175,7 @@ SUMMARIZE(<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, ROLLUP(<gro
 columnName  
 The name of any column in table of the SUMMARIZE function or any column in a related table to table.  
   
-#### Return Value  
+#### Return value  
 A **True** value if the row contains a sub-total value for the column given as argument, otherwise returns **False**  
   
 #### Remarks  
@@ -196,7 +195,8 @@ SUMMARIZE(ResellerSales_USD
       , "Is Sub Total for DateTimeCalendarYear", ISSUBTOTAL(DateTime[CalendarYear])  
       , "Is Sub Total for ProductCategoryName", ISSUBTOTAL(ProductCategory[ProductCategoryName])  
 )  
-```dax
+```
+
 The following table shows a preview of the data as it would be received by any function expecting to receive a table:  
   
   

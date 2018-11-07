@@ -2,7 +2,7 @@
 title: "FACT Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,9 +22,9 @@ FACT(<number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**number**|The non-negative number for which you want to calculate the factorial.|  
+|number|The non-negative number for which you want to calculate the factorial.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  
@@ -35,7 +35,8 @@ The following formula returns the factorial for the series of integers in the co
   
 ```dax
 =FACT([Values])  
-```dax
+```
+
 The following table shows the expected results:  
   
 |Values|Results|  

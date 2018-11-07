@@ -2,7 +2,7 @@
 title: "POISSON.DIST Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -26,7 +26,7 @@ POISSON.DIST(x,mean,cumulative)
 |mean|Required. The expected numeric value.|  
 |cumulative|Required. A logical value that determines the form of the probability distribution returned. If cumulative is TRUE, POISSON.DIST returns the cumulative Poisson probability that the number of random events occurring will be between zero and x inclusive; if FALSE, it returns the Poisson probability mass function that the number of events occurring will be exactly x.|  
   
-## Return Value  
+## Return value  
 Returns the Poisson distribution.  
   
 ## Remarks  

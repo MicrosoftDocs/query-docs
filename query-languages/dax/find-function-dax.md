@@ -2,7 +2,7 @@
 title: "FIND Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,12 +22,12 @@ FIND(<find_text>, <within_text>[, [<start_num>][, <NotFoundValue>]])
   
 |Term|Definition|  
 |--------|--------------|  
-|**find_text**|The text you want to find. Use double quotes (empty text) to match the first character in **within_text**. |
-|**within_text**|The text containing the text you want to find.|  
-|**start_num**|(optional) The character at which to start the search; if omitted, **start_num** = 1. The first character in **within_text** is character number 1.|  
-|**NotFoundValue**|(optional) The value that should be returned when the operation does not find a matching substring, typically 0, -1, or BLANK().|  
+|find_text|The text you want to find. Use double quotes (empty text) to match the first character in **within_text**. |
+|within_text|The text containing the text you want to find.|  
+|start_num|(optional) The character at which to start the search; if omitted, **start_num** = 1. The first character in **within_text** is character number 1.|  
+|NotFoundValue|(optional) The value that should be returned when the operation does not find a matching substring, typically 0, -1, or BLANK().|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 Number that shows the starting point of the text string you want to find.  
   
 ## Remarks  

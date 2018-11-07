@@ -2,7 +2,7 @@
 title: "LOOKUPVALUE Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -19,16 +19,14 @@ LOOKUPVALUE( <result_columnName>, <search_columnName>, <search_value>[, <search_
 ```
   
 #### Parameters  
-result_columnName  
-The name of an existing column that contains the value you want to return. The column must be named using standard DAX syntax, usually, fully qualified. It cannot be an expression.  
-  
-search_columnName  
-The name of an existing column, in the same table as result_columnName or in a related table, over which the look-up is performed. The column must be named using standard DAX syntax, usually, fully qualified. It cannot be an expression.  
-  
-search_value  
-A scalar expression that does not refer to any column in the same table being searched.  
-  
-## Return Value  
+
+|Term|Definition|  
+|--------|--------------|  
+| result_columnName  |  The name of an existing column that contains the value you want to return. The column must be named using standard DAX syntax, usually, fully qualified. It cannot be an expression.  |  
+| search_columnName  | The name of an existing column, in the same table as result_columnName or in a related table, over which the look-up is performed. The column must be named using standard DAX syntax, usually, fully qualified. It cannot be an expression.   |
+|  search_value | A scalar expression that does not refer to any column in the same table being searched.   |
+
+## Return value  
 The value of *result_column* at the row where all pairs of *search_column* and *search_value* have a match.  
   
 If there is no match that satisfies all the search values, a BLANK is returned. In other words, the function will not return a lookup value if only some of the criteria match.  

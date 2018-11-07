@@ -2,7 +2,7 @@
 title: "YEAR Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,9 +22,9 @@ YEAR(<date>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**date**|A date in **datetime** or text format, containing the year you want to find.|  
+|date|A date in **datetime** or text format, containing the year you want to find.|  
   
-## Return Value  
+## Return value  
 An integer in the range 1900-9999.  
   
 ## Remarks  

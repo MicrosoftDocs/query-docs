@@ -2,7 +2,7 @@
 title: "NOW Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -20,7 +20,7 @@ The NOW function is useful when you need to display the current date and time on
 NOW()  
 ```
   
-## Return Value  
+## Return value  
 A date (**datetime)**.  
   
 ## Remarks  

@@ -2,7 +2,7 @@
 title: "DAX Function Reference | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -10,7 +10,7 @@ ms.author: owend
 manager: kfile
 ---
 # DAX Function Reference
-This function reference provides detailed information including syntax, parameters, return values, and examples for each of the over 200 functions used in Data Analysis Expression (DAX) formulas.  
+This function reference provides detailed information including syntax, parameters, Return values, and examples for each of the over 200 functions used in Data Analysis Expression (DAX) formulas.  
 
 > [!IMPORTANT]
 > Not all DAX functions are supported or included in earlier versions of Power BI Desktop, Analysis Services, and Power Pivot in Excel.  

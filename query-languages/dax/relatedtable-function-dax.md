@@ -2,7 +2,7 @@
 title: "RELATEDTABLE Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,9 +22,9 @@ RELATEDTABLE(<tableName>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**tableName**|The name of an existing table using standard DAX syntax. It cannot be an expression.|  
+|tableName|The name of an existing table using standard DAX syntax. It cannot be an expression.|  
   
-## Return Value  
+## Return value  
 A table of values.  
   
 ## Remarks  

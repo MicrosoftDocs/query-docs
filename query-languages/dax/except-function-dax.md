@@ -2,7 +2,7 @@
 title: "EXCEPT Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -24,7 +24,7 @@ EXCEPT(<table_expression1>, <table_expression2>
 |--------|--------------|  
 |Table_expression|Any DAX expression that returns a table.|  
   
-## Return Value  
+## Return value  
 A table that contains the rows of one table minus all the rows of another table.  
   
 ## Remarks  

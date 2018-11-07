@@ -2,7 +2,7 @@
 title: "PERCENTILE.INC Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -29,7 +29,7 @@ PERCENTILE.INC(<column>, <k>)
 |column|A column containing the values that define relative standing.|  
 |k|The percentile value in the range 0..1, inclusive.|  
   
-## Return Value  
+## Return value  
 The k-th percentile of values in a range, where k is in the range 0..1, inclusive.  
   
 ## Remarks  

@@ -2,7 +2,7 @@
 title: "CUSTOMDATA Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -18,7 +18,7 @@ Returns the content of the **CustomData** property in the connection string.
 CUSTOMDATA()  
 ```
   
-## Return Value  
+## Return value  
 The content of the **CustomData** property in the connection string.  
   
 Blank, if **CustomData** property was not defined at connection time.  

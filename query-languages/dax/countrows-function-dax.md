@@ -2,7 +2,7 @@
 title: "COUNTROWS Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,9 +22,9 @@ COUNTROWS(<table>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**table**|The name of the table that contains the rows to be counted, or an expression that returns a table.|  
+|table|The name of the table that contains the rows to be counted, or an expression that returns a table.|  
   
-## Return Value  
+## Return value  
 A whole number.  
   
 ## Remarks  
@@ -46,7 +46,8 @@ The formula gets the value of ResellerKey and then counts the number of rows in 
   
 ```dax
 =COUNTROWS(RELATEDTABLE(ResellerSales))  
-```dax
+```
+
 The following table shows a portion of the expected results:  
   
 |ResellerKey|CalculatedColumn1|  

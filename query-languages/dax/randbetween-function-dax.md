@@ -2,7 +2,7 @@
 title: "RANDBETWEEN Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,10 +22,10 @@ RANDBETWEEN(<bottom>,<top>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**Bottom**|The smallest integer the function will return.|  
-|**Top**|The largest integer the function will return.|  
+|Bottom|The smallest integer the function will return.|  
+|Top|The largest integer the function will return.|  
   
-## Return Value  
+## Return value  
 A whole number.  
   
 ## Remarks  

@@ -2,7 +2,7 @@
 title: "EXACT Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,10 +22,10 @@ EXACT(<text1>,<text2>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**text1**|The first text string or column that contains text.|  
-|**text2**|The second text string or column that contains text.|  
+|text1|The first text string or column that contains text.|  
+|text2|The second text string or column that contains text.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 True or false. (Boolean)  
   
 ## Example  

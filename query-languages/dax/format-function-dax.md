@@ -2,7 +2,7 @@
 title: "FORMAT Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,10 +22,10 @@ FORMAT(<value>, <format_string>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**value**|A value or expression that evaluates to a single value.|  
-|**format_string**|A string with the formatting template.|  
+|value|A value or expression that evaluates to a single value.|  
+|format_string|A string with the formatting template.|  
   
-## Return Value  
+## Return value  
 A string containing **value** formatted as defined by **format_string**.  
   
 > [!IMPORTANT]  

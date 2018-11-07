@@ -2,7 +2,7 @@
 title: "ASIN Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -24,7 +24,7 @@ ASIN(number)
 |--------|--------------|  
 |number|The sine of the angle you want and must be from -1 to 1.|  
   
-## Return Value  
+## Return value  
 Returns the arcsine, or inverse sine, of a number.  
   
 ## Remarks  

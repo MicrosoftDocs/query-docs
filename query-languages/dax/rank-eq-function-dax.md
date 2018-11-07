@@ -2,7 +2,7 @@
 title: "RANK.EQ  Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -34,7 +34,7 @@ order
 |0 (zero)|FALSE|Ranks in descending order of *columnName*. If *value* is equal to the highest number in *columnName* then **RANK.EQ** is 1.|  
 |1|TRUE|Ranks in ascending order of *columnName*. If *value* is equal to the lowest number in *columnName* then **RANK.EQ** is 1.|  
   
-## Return Value  
+## Return value  
 A number indicating the rank of *value* among the numbers in *columnName*.  
   
 ## Exceptions  

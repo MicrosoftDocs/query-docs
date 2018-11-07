@@ -2,7 +2,7 @@
 title: "CALENDAR Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -23,10 +23,10 @@ CALENDAR(<start_date>, <end_date>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**start_date**|Any DAX expression that returns a datetime value.|  
-|**end_date**|Any DAX expression that returns a datetime value.|  
+|start_date|Any DAX expression that returns a datetime value.|  
+|end_date|Any DAX expression that returns a datetime value.|  
   
-## Return Value  
+## Return value  
 Returns a table with a single column named “Date” containing a contiguous set of dates. The range of dates is from the specified start date to the specified end date, inclusive of those two dates.  
   
 ## Remarks  

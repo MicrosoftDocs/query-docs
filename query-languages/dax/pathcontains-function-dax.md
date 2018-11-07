@@ -2,7 +2,7 @@
 title: "PATHCONTAINS Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -25,7 +25,7 @@ A string created as the result of evaluating a PATH function.
 item  
 A text expression to look for in the path result.  
   
-## Return Value  
+## Return value  
 A value of **TRUE** if *item* exists in *path*; otherwise **FALSE**.  
   
 ## Remarks  

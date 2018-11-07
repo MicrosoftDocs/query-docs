@@ -2,7 +2,7 @@
 title: "ROW Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -19,13 +19,13 @@ ROW(<name>, <expression>[[,<name>, <expression>]…])
 ```
   
 #### Parameters  
-*name*  
-The name given to the column, enclosed in double quotes.  
-  
-*expression*  
-Any DAX expression that returns a single scalar value to populate. *name*.  
-  
-## Return Value  
+
+|Term|Definition|  
+|--------|--------------|  
+|  name|  The name given to the column, enclosed in double quotes. |  
+|  expression| Any DAX expression that returns a single scalar value to populate. *name*.  |
+
+## Return value  
 A single row table  
   
 ## Remarks  
@@ -37,6 +37,7 @@ The following example returns a single row table with the total sales for intern
 ```dax
 ROW("Internet Total Sales (USD)", SUM(InternetSales_USD[SalesAmount_USD]),  
          "Resellers Total Sales (USD)", SUM(ResellerSales_USD[SalesAmount_USD]))  
-```dax
+```
+
 The code is split in two lines for readability purposes  
   

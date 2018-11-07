@@ -2,7 +2,7 @@
 title: "MINA Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,9 +22,9 @@ MINA(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**column**|The column for which you want to find the minimum value.|  
+|column|The column for which you want to find the minimum value.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  

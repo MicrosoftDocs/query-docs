@@ -2,7 +2,7 @@
 title: "MID Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,11 +22,11 @@ MID(<text>, <start_num>, <num_chars>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**text**|The text string from which you want to extract the characters, or a column that contains text.|  
-|**start_num**|The position of the first character you want to extract. Positions start at 1.|  
-|**num_chars**|The number of characters to return.|  
+|text|The text string from which you want to extract the characters, or a column that contains text.|  
+|start_num|The position of the first character you want to extract. Positions start at 1.|  
+|num_chars|The number of characters to return.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 A string of text of the specified length.  
   
 ## Remarks  
@@ -38,7 +38,8 @@ The following examples return the same results, the first 5 letters of the colum
 ```dax
 =MID('Reseller'[ResellerName],5,1))  
 =MID([ResellerName,5])  
-```dax
+```
+
 The results are the same if you use the following formula:  
   
 `=LEFT([ResellerName],5)`  

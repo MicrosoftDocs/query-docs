@@ -2,7 +2,7 @@
 title: "NATURALINNERJOIN Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -23,10 +23,10 @@ NATURALINNERJOIN(<leftJoinTable>, <rightJoinTable>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**leftJoinTable**|A table expression defining the table on the left side of the join.|  
-|**rightJoinTable**|A table expression defining the table on the right side of the join.|  
+|leftJoinTable|A table expression defining the table on the left side of the join.|  
+|rightJoinTable|A table expression defining the table on the right side of the join.|  
   
-## Return Value  
+## Return value  
 A table which includes only rows for which the values in the common columns specified are present in both tables. The table returned will have the common columns from the left table and other columns from both the tables.  
   
 ## Remarks  

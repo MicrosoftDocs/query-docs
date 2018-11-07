@@ -2,7 +2,7 @@
 title: "DAX Syntax Reference | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -11,16 +11,6 @@ manager: kfile
 ---
 # DAX Syntax Reference
 This topic provides details about the syntax and requirements of the DAX language.   
-  
-[Syntax Requirements](#bkmk_SyntaxReqs)  
-  
-[Naming Requirements](#bkmk_NamingConventions)  
-  
-[Functions](#bkmk_FunctionList)  
-  
-[Operators and Constants](#bkmk_Operators)  
-  
-[Data Types](#bkmk_DataTypes)  
   
 ## <a name="bkmk_SyntaxReqs"></a>Syntax Requirements  
 DAX formulas are very similar to the formulas you type in Excel tables, but there are some key differences.  
@@ -39,7 +29,7 @@ A DAX formula always starts with an equal sign (=). After the equals sign, you c
   
 -   The result of a function and its required arguments. Some DAX functions return a table instead of a scalar, and must be wrapped in a function that evaluates the table and returns a scalar; unless the table is a single column, single row table, then it is treated as a scalar value.  
   
-    Most Power Pivot functions require one or more arguments, which can include tables, columns, expressions, and values. However, some functions, such as PI, do not require any arguments, but always require parentheses to indicate the null argument. For example, you must always type PI(), not PI. You can also nest functions within other functions.  
+    Most DAX functions require one or more arguments, which can include tables, columns, expressions, and values. However, some functions, such as PI, do not require any arguments, but always require parentheses to indicate the null argument. For example, you must always type PI(), not PI. You can also nest functions within other functions.  
   
 -   Expressions. An expression can contain any or all of the following: operators, constants, or references to columns.  
   
@@ -57,9 +47,9 @@ For example, the following are all valid formulas.
 > Formulas can behave differently depending on whether they are used in a calculated column, or in a measure within a PivotTable. You must always be aware of the context and how the data that you use in the formula is related to other data that might be used in the calculation.  
   
 ## <a name="bkmk_NamingConventions"></a>Naming Requirements  
-A Power Pivot window can contain multiple tables, each on its own tab. Together the tables and their columns comprise a database stored in the Power Pivot xVelocity in-memory analytics engine (VertiPaq). Within that database, all tables must have unique names. The names of columns must also be unique within each table. All object names are case-insensitive; for example, the names **SALES** and **Sales** would represent the same table.  
+A data model window can contain multiple tables, each on its own tab. Together the tables and their columns comprise a database stored in the in-memory analytics engine (VertiPaq). Within that database, all tables must have unique names. The names of columns must also be unique within each table. All object names are case-insensitive; for example, the names **SALES** and **Sales** would represent the same table.  
   
-Each column and measure that you add to an existing Power Pivot database must belong to a specific table. You specify the table that contains the column either implicitly, when you create a calculated column within a table, or explicitly, when you create a measure and specify the name of the table where the measure definition should be stored.  
+Each column and measure that you add to an existing data model must belong to a specific table. You specify the table that contains the column either implicitly, when you create a calculated column within a table, or explicitly, when you create a measure and specify the name of the table where the measure definition should be stored.  
   
 When you use a table or column as an input to a function, you must generally *qualify* the column name. The *fully qualified* name of a column is the table name, followed by the column name in square brackets: for examples, 'U.S. Sales'[Products]. A fully qualified name is always required when you reference a column in the following contexts:  
   
@@ -112,7 +102,7 @@ The following characters and character types are not valid in the names of table
   
 -   Control characters  
   
--   The following characters that are not valid in the names of Power Pivot objects:  
+-   The following characters that are not valid in the names of objects:  
   
     .,;':/\\*|?&%$!+=()[]{}<>  
   

@@ -2,7 +2,7 @@
 title: "ALLNOBLANKROW Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,12 +22,12 @@ ALLNOBLANKROW( {<table> | <column>[, <column>[, <column>[,…]]]} )
   
 |Term|Definition|  
 |--------|--------------|  
-|**table**|The table over which all context filters are removed.|  
-|**column**|A column over which all context filters are removed.|  
+|table|The table over which all context filters are removed.|  
+|column|A column over which all context filters are removed.|  
   
 Only one parameter must be passed; the parameter is either a table or a column.  
   
-## Return Value  
+## Return value  
 A table, when the passed parameter was a table, or a column of values, when the passed parameter was a column.  
   
 ## Remarks  
@@ -47,11 +47,11 @@ For a general description of how the ALL function works, together with step-by-s
 ## Example  
 In the sample data, the ResellerSales_USD table contains one row that has no values and therefore cannot be related to any of the parent tables in the relationships within the workbook. You will use this table in a PivotTable so that you can see the blank row behavior and how to handle counts on unrelated data.  
   
-**Step 1: Verify the unrelated data**  
+Step 1: Verify the unrelated data 
   
 Open the **Power Pivot window**, then select the ResellerSales_USD table. In the ProductKey column, filter for blank values. One row will remain. In that row, all column values should be blank except for SalesOrderLineNumber.  
   
-**Step 2: Create a PivotTable**  
+Step 2: Create a PivotTable  
   
 Create a new PivotTable, then drag the column, datetime.[Calendar Year], to the Row Labels pane. The following table shows the expected results:  
   
@@ -70,7 +70,7 @@ When you see this blank label in the PivotTable, you know that in some of the ta
   
 The rows that get added to this blank label group are either values that do not match any value in the parent table-- for example, a date that does not exist in the datetime table-- or null values, meaning no value for date at all. In this example we have placed a blank value in all columns of the child sales table. Having more values in the parent table than in the children tables does not cause a problem.  
   
-**Step 3: Count rows using ALL and ALLNONBLANK**  
+Step 3: Count rows using ALL and ALLNONBLANK 
   
 Add the following two measures to the datetime table, to count the table rows: **Countrows ALLNOBLANK of datetime**, **Countrows ALL of datetime**. The formulas that you can use to define these measures are given in the code section following.  
   
@@ -87,7 +87,7 @@ On a blank PivotTable add datetime.[Calendar Year] column to the row labels, and
   
 The results show a difference of 1 row in the table rows count. However, if you open the **Power Pivot window** and select the datetime table, you cannot find any blank row in the table because the special blank row mentioned here is the Unknown member.  
   
-**Step 4: Verify that the count is accurate**  
+Step 4: Verify that the count is accurate 
   
 In order to prove that the ALLNOBLANKROW does not count any truly blank rows, and only handles the special blank row on the parent table only, add the following two measures to the ResellerSales_USD table: **Countrows ALLNOBLANKROW of ResellerSales_USD**, **Countrows ALL of ResellerSales_USD**.  
   

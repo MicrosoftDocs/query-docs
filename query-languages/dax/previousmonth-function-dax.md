@@ -2,7 +2,7 @@
 title: "PREVIOUSMONTH Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -23,9 +23,9 @@ PREVIOUSMONTH(<dates>)
 |||  
 |-|-|  
 |Term|Definition|  
-|**Dates**|A column containing dates.|  
+|Dates|A column containing dates.|  
   
-## Return Value  
+## Return value  
 A table containing a single column of date values.  
   
 ## Remarks  

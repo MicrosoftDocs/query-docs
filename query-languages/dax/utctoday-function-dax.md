@@ -2,7 +2,7 @@
 title: "UTCNOW Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -20,7 +20,7 @@ Returns the current UTC date.
 UTCTODAY()  
 ```
   
-## Return Value  
+## Return value  
 A date.  
   
 ## Remarks  
@@ -33,7 +33,8 @@ The following:
   
 ```dax
 EVALUATE { FORMAT(UTCTODAY(), "General Date") } 
-```dax
+```
+
 Returns:
 
 |[Value]  |

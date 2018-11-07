@@ -2,7 +2,7 @@
 title: "CLOSINGBALANCEYEAR Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -23,12 +23,12 @@ CLOSINGBALANCEYEAR(<expression>,<dates>[,<filter>][,<year_end_date>])
 |||  
 |-|-|  
 |Parameter|Definition|  
-|**expression**|An expression that returns a scalar value.|  
-|**dates**|A column that contains dates.|  
-|**filter**|(optional) An expression that specifies a filter to apply to the current context.|  
-|**year_end_date**|(optional) A literal string with a date that defines the year-end date. The default is December 31.|  
+|expression|An expression that returns a scalar value.|  
+|dates|A column that contains dates.|  
+|filter|(optional) An expression that specifies a filter to apply to the current context.|  
+|year_end_date|(optional) A literal string with a date that defines the year-end date. The default is December 31.|  
   
-## Return Value  
+## Return value  
 A scalar value that represents the **expression** evaluated at the last date of the year in the current context.  
   
 ## Remarks  

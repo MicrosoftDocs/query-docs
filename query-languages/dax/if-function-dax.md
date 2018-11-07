@@ -2,7 +2,7 @@
 title: "IF Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,11 +22,11 @@ IF(logical_test>,<value_if_true>, value_if_false)
   
 |Term|Definition|  
 |--------|--------------|  
-|**logical_test**|Any value or expression that can be evaluated to TRUE or FALSE.|  
-|**value_if_true**|The value that is returned if the logical test is TRUE. If omitted, TRUE is returned.|  
-|**value_if_false**|The value that is returned if the logical test is FALSE. If omitted, FALSE is returned.|  
+|logical_test|Any value or expression that can be evaluated to TRUE or FALSE.|  
+|value_if_true|The value that is returned if the logical test is TRUE. If omitted, TRUE is returned.|  
+|value_if_false|The value that is returned if the logical test is FALSE. If omitted, FALSE is returned.|  
   
-## Return Value  
+## Return value  
 Any type of value that can be returned by an expression.  
   
 ## Remarks  
@@ -48,7 +48,8 @@ The following example gets a list of cities that contain potential customers in 
   
 ```dax
 =IF([StateProvinceCode]= "CA" && ([MaritalStatus] = "M" || [NumberChildrenAtHome] >1),[City])  
-```dax
+```
+
 Note that parentheses are used to control the order in which the AND (&amp;&amp;) and OR (||) operators are used. Also note that no value has been specified for **value_if_false**. Therefore, the function returns the default, which is an empty string.  
   
 ## See Also  

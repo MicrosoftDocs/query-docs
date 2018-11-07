@@ -2,7 +2,7 @@
 title: "MIN Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -26,10 +26,10 @@ MIN(<expression1>, <expression2>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**column**|The column in which you want to find the smallest numeric value.|  
-|**expression**|Any DAX expression which returns a single numeric value.|  
+|column|The column in which you want to find the smallest numeric value.|  
+|expression|Any DAX expression which returns a single numeric value.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  

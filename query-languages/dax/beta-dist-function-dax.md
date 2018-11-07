@@ -2,7 +2,7 @@
 title: "BETA.DIST Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -28,7 +28,7 @@ BETA.DIST(x,alpha,beta,cumulative,[A],[B])
 |A|Optional. A lower bound to the interval of x.|  
 |B|Optional. An upper bound to the interval of x.|  
   
-## Return Value  
+## Return value  
 Returns the beta distribution.  
   
 ## Remarks  

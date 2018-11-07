@@ -2,7 +2,7 @@
 title: "SUBSTITUTE Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,12 +22,12 @@ SUBSTITUTE(<text>, <old_text>, <new_text>, <instance_num>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**text**|The text in which you want to substitute characters, or a reference to a column containing text.|  
-|**old_text**|The existing text that you want to replace.|  
-|**new_text**|The text you want to replace **old_text** with.|  
-|**instance_num**|(optional) The occurrence of **old_text** you want to replace. If omitted, every instance of **old_text** is replaced|  
+|text|The text in which you want to substitute characters, or a reference to a column containing text.|  
+|old_text|The existing text that you want to replace.|  
+|new_text|The text you want to replace **old_text** with.|  
+|instance_num|(optional) The occurrence of **old_text** you want to replace. If omitted, every instance of **old_text** is replaced|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 A string of text.  
   
 ## Remarks  

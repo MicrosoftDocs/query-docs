@@ -2,7 +2,7 @@
 title: "ADDMISSINGITEMS Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -31,11 +31,11 @@ ADDMISSINGITEMS(<showAllColumn>[, <showAllColumn>]…, <table>, [ROLLUPISSUBTOTA
   
 |Term|Definition|  
 |--------|--------------|  
-|**showAllColumn**|A column for which to return items with no data for the measures used.|  
-|**table**|A table containing all items with data (NON EMPTY) for the measures used.|  
-|**groupingColumn**|A column which is used to group by in the supplied table argument.|  
-|**isSubtotal_columnName**|A Boolean column in the supplied table argument which contains ISSUBTOTAL values for the corresponding groupingColumn column.|  
-|**filterTable**|A table representing filters to include in the logic for determining whether to add specific combinations of items with no data. Used to avoid having ADDMISSINGITEMS add in item combinations which are not present because they were removed by a filter.|  
+|showAllColumn|A column for which to return items with no data for the measures used.|  
+|table|A table containing all items with data (NON EMPTY) for the measures used.|  
+|groupingColumn|A column which is used to group by in the supplied table argument.|  
+|isSubtotal_columnName|A Boolean column in the supplied table argument which contains ISSUBTOTAL values for the corresponding groupingColumn column.|  
+|filterTable|A table representing filters to include in the logic for determining whether to add specific combinations of items with no data. Used to avoid having ADDMISSINGITEMS add in item combinations which are not present because they were removed by a filter.|  
   
 ## ADDMISSINGITEMS with ROLLUPGROUP  
 ROLLUPGROUP is used inside the ROLLUPISSUBTOTAL function to reflect ROLLUPGROUPs present in the supplied table argument.  

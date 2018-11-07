@@ -2,7 +2,7 @@
 title: "MROUND Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,10 +22,10 @@ MROUND(<number>, <multiple>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**number**|The number to round.|  
-|**multiple**|The multiple of significance to which you want to round the number.|  
+|number|The number to round.|  
+|multiple|The multiple of significance to which you want to round the number.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  

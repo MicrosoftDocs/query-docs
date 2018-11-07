@@ -2,7 +2,7 @@
 title: "COSH Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -24,7 +24,7 @@ COSH(number)
 |--------|--------------|  
 |number|Required. Any real number for which you want to find the hyperbolic cosine.|  
   
-## Return Value  
+## Return value  
 The hyperbolic cosine of a number.  
   
 ## Remarks  

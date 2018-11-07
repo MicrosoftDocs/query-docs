@@ -2,7 +2,7 @@
 title: "MONTH Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,9 +22,9 @@ MONTH(<datetime>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**date**|A date in **datetime** or text format.|  
+|date|A date in **datetime** or text format.|  
   
-## Return Value  
+## Return value  
 An integer number from 1 to 12.  
   
 ## Remarks  

@@ -2,7 +2,7 @@
 title: "ACOS Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -24,7 +24,7 @@ ACOS(number)
 |--------|--------------|  
 |Number|The cosine of the angle you want and must be from -1 to 1.|  
   
-## Return Value  
+## Return value  
 Returns the arccosine, or inverse cosine, of a number.  
   
 ## Remarks  

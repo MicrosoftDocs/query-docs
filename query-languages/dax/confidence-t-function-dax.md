@@ -2,7 +2,7 @@
 title: "CONFIDENCE.T Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -26,7 +26,7 @@ CONFIDENCE.T(alpha,standard_dev,size)
 |standard_dev|The population standard deviation for the data range and is assumed to be known.|  
 |size|The sample size.|  
   
-## Return Value  
+## Return value  
 Returns the confidence interval for a population mean, using a Student's t distribution.  
   
 ## Remarks  

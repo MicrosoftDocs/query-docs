@@ -2,7 +2,7 @@
 title: "MEDIAN Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -27,7 +27,7 @@ MEDIAN(<column>)
 |--------|--------------|  
 |column|The column that contains the numbers for which the median is to be computed.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  

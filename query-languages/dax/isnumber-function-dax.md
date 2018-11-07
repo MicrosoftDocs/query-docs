@@ -2,7 +2,7 @@
 title: "ISNUMBER Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,9 +22,9 @@ ISNUMBER(<value>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**value**|The value you want to test.|  
+|value|The value you want to test.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 TRUE if the value is numeric; otherwise FALSE.  
   
 ## Example  

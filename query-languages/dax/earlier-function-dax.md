@@ -2,7 +2,7 @@
 title: "EARLIER Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -26,10 +26,10 @@ EARLIER(<column>, <number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**column**|A column or expression that resolves to a column.|  
-|**num**|(Optional) A positive number to the outer evaluation pass.<br /><br />The next evaluation level out is represented by 1; two levels out is represented by 2 and so on.<br /><br />When omitted default value is 1.|  
+|column|A column or expression that resolves to a column.|  
+|num|(Optional) A positive number to the outer evaluation pass.<br /><br />The next evaluation level out is represented by 1; two levels out is represented by 2 and so on.<br /><br />When omitted default value is 1.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 The current value of row, from **column**, at **number** of outer evaluation passes.  
   
 ## Exceptions  
@@ -97,7 +97,8 @@ A new calculated column, **SubCategorySalesRanking**, is created by using the fo
   
 ```dax
 = COUNTROWS(FILTER(ProductSubcategory, EARLIER(ProductSubcategory[TotalSubcategorySales])<ProductSubcategory[TotalSubcategorySales]))+1  
-```dax
+```
+
 The following steps describe the method of calculation in more detail.  
   
 1.  The **EARLIER** function gets the value of *TotalSubcategorySales* for the current row in the table. In this case, because the process is starting, it is the first row in the table  

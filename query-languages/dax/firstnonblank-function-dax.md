@@ -2,7 +2,7 @@
 title: "FIRSTNONBLANK Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,10 +22,10 @@ FIRSTNONBLANK(<column>,<expression>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**column**|A column expression.|  
-|**expression**|An expression evaluated for blanks for each value of **column**.|  
+|column|A column expression.|  
+|expression|An expression evaluated for blanks for each value of **column**.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 A table containing a single column and single row with the computed first value.  
   
 ## Remarks  

@@ -2,7 +2,7 @@
 title: "ALLSELECTED Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -21,16 +21,14 @@ ALLSELECTED([<tableName> | <columnName>])
 ```
   
 #### Parameters  
-tableName  
-The name of an existing table, using standard DAX syntax. This parameter cannot be an expression. This parameter is optional.  
+
+|Term|Definition|  
+|--------|--------------|  
+|tableName|The name of an existing table, using standard DAX syntax. This parameter cannot be an expression. This parameter is optional.  | 
+|columnName|The name of an existing column using standard DAX syntax, usually fully qualified. It cannot be an expression. This parameter is optional.    |
   
-columnName  
-The name of an existing column using standard DAX syntax, usually fully qualified. It cannot be an expression. This parameter is optional.  
-  
-## Return Value  
+## Return value  
 The context of the query without any column and row filters.  
-  
-## Exceptions  
   
 ## Remarks  
   
@@ -69,8 +67,9 @@ crossjoin(distinct('Product Category'[Product Category Name]), distinct('Date'[C
 , 'Sales Territory'[Sales Territory Group]="Europe", 'Promotion'[Promotion Type]="Volume Discount"  
 )  
 order by [Product Category Name], [Calendar Year]  
-```dax
-After executing the above expression in SQL Server Management Studio against AdventureWorks DW Tabular Model 2012 you obtain the following results:  
+```
+
+After executing the above expression in SQL Server Management Studio against AdventureWorks DW Tabular Model, you obtain the following results:  
   
 |[Product Category Name]|[Calendar Year]|[Reseller Sales Amount]|[Reseller Grand Total]|[Reseller Visual Total]|[Reseller Visual Total for All of Calendar Year]|[Reseller Visual Total for All of Product Category Name]|  
 |----------------------------|--------------------|----------------------------|---------------------------|----------------------------|-----------------------------------------------------|-------------------------------------------------------------|  
@@ -120,6 +119,5 @@ The total value for all years and product categories. This value usually appears
 Reseller Grand Total  
 This is the grand total for all reseller sales, before any filter has been applied; you should notice the difference with [Reseller Visual Total]. You do remember that this report includes two (2) filters, one on Product Category Group and the other in Promotion Type.  
   
-  
-    **Note**: if you have explicit filters in your expression, those filters are also applied to the expression.  
-  
+ > [!NOTE]
+> if you have explicit filters in your expression, those filters are also applied to the expression.  

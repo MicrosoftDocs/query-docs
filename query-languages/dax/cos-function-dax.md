@@ -2,7 +2,7 @@
 title: "COS Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -24,7 +24,7 @@ COS(number)
 |--------|--------------|  
 |number|Required. The angle in radians for which you want the cosine.|  
   
-## Return Value  
+## Return value  
 Returns the cosine of the given angle.  
   
 ## Remarks  

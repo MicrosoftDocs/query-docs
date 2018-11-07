@@ -2,7 +2,7 @@
 title: "STDEVX.P Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -19,13 +19,13 @@ STDEVX.P(<table>, <expression>)
 ```
   
 #### Parameters  
-*table*  
-Any DAX expression that returns a table of data.  
+
+|Term|Definition|  
+|--------|--------------|  
+| table  | Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context).  |  
+|expression   | Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context).   |
   
-*expression*  
-Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context).  
-  
-## Return Value  
+## Return value  
 A number that represents the standard deviation of the entire population.  
   
 ## Remarks  

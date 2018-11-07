@@ -2,7 +2,7 @@
 title: "COMBINEVALUES Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.topic: reference
 author: minewiskan
 ms.author: owend
@@ -24,7 +24,7 @@ COMBINEVALUES(<delimiter>, <expression>, <expression>[, <expression>]…)
 |delimiter|A separator to use during concatenation. Must be a constant value.|  
 |expression|A DAX expression whose value will be be joined into a single text string.|  
   
-## Return Value  
+## Return value  
 The concatenated string.  
   
 ## Remarks  

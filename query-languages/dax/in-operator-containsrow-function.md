@@ -2,7 +2,7 @@
 title: "IN Operator / CONTAINSROW Function | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -37,7 +37,7 @@ Except syntax, the IN operator and CONTAINSROW function are functionally equival
 |tableExpr|Any valid DAX expression that returns a table of data.|  
 
   
-## Return Value  
+## Return value  
 TRUE or FALSE.
   
 ## Remarks  

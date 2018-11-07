@@ -2,7 +2,7 @@
 title: "ISODD Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -24,7 +24,7 @@ ISODD(number)
 |--------|--------------|  
 |number|The value to test. If number is not an integer, it is truncated.|  
   
-## Return Value  
+## Return value  
 Returns TRUE if number is odd, or FALSE if number is even.  
   
 ## Remarks  

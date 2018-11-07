@@ -2,7 +2,7 @@
 title: "PERCENTILEX.EXC Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -29,7 +29,7 @@ PERCENTILEX.EXC(<table>, <expression>, k)
 |expression|The expression to be evaluated for each row of the table.|  
 |k|The desired percentile value in the range 0 to 1 exclusive.|  
   
-## Return Value  
+## Return value  
 The percentile number of an expression evaluated for each row in a table.  
   
 ## Remarks  

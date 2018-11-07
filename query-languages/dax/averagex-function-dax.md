@@ -2,7 +2,7 @@
 title: "AVERAGEX Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,10 +22,10 @@ AVERAGEX(<table>,<expression>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**table**|Name of a table, or an expression that specifies the table over which the aggregation can be performed.|  
-|**expression**|An expression with a scalar result, which will be evaluated for each row of the table in the first argument.|  
+|table|Name of a table, or an expression that specifies the table over which the aggregation can be performed.|  
+|expression|An expression with a scalar result, which will be evaluated for each row of the table in the first argument.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  
@@ -40,7 +40,8 @@ The following example calculates the average freight and tax on each order in th
   
 ```dax
 =AVERAGEX(InternetSales, InternetSales[Freight]+ InternetSales[TaxAmt])  
-```dax
+```
+
 If you use multiple operations in the expression used as the second argument, you must use parentheses to control the order of calculations. For more information, see [DAX Syntax Reference](dax-syntax-reference.md).  
   
 ## See Also  

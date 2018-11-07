@@ -2,7 +2,7 @@
 title: "COMBINA Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -25,7 +25,7 @@ COMBINA(number, number_chosen)
 |number|Must be greater than or equal to 0, and greater than or equal to Number_chosen. Non-integer values are truncated.|  
 |number_chosen|Must be greater than or equal to 0. Non-integer values are truncated.|  
   
-## Return Value  
+## Return value  
 Returns the number of combinations (with repetitions) for a given number of items.  
   
 ## Remarks  

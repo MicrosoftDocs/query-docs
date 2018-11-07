@@ -2,7 +2,7 @@
 title: "PARALLELPERIOD Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -23,11 +23,11 @@ PARALLELPERIOD(<dates>,<number_of_intervals>,<interval>)
 |||  
 |-|-|  
 |Term|Definition|  
-|**dates**|A column that contains dates.|  
-|**number_of_intervals**|An integer that specifies the number of intervals to add to or subtract from the dates.|  
-|**interval**|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`.|  
+|dates|A column that contains dates.|  
+|number_of_intervals|An integer that specifies the number of intervals to add to or subtract from the dates.|  
+|interval|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`.|  
   
-## Return Value  
+## Return value  
 A table containing a single column of date values.  
   
 ## Remarks  

@@ -2,7 +2,7 @@
 title: "ISO.CEILING Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,10 +22,10 @@ ISO.CEILING(<number>[, <significance>])
   
 |Term|Definition|  
 |--------|--------------|  
-|**number**|The number you want to round, or a reference to a column that contains numbers.|  
-|**significance**|(optional) The multiple of significance to which you want to round. For example, to round to the nearest integer, type 1. If the unit of significance is not specified, the number is rounded up to the nearest integer.|  
+|number|The number you want to round, or a reference to a column that contains numbers.|  
+|significance|(optional) The multiple of significance to which you want to round. For example, to round to the nearest integer, type 1. If the unit of significance is not specified, the number is rounded up to the nearest integer.|  
   
-## Return Value  
+## Return value  
 A number, of the same type as the *number* argument, rounded as specified.  
   
 ## Remarks  

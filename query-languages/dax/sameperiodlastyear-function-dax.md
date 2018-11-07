@@ -2,7 +2,7 @@
 title: "SAMEPERIODLASTYEAR Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -25,7 +25,7 @@ SAMEPERIODLASTYEAR(<dates>)
 |Term|Definition|  
 |**dates**|A column containing dates.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 A single-column table of date values.  
   
 ## Remarks  

@@ -2,7 +2,7 @@
 title: "EDATE Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,10 +22,10 @@ EDATE(<start_date>, <months>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**start_date**|A date in **datetime** or **text** format that represents the start date.|  
-|**months**|An integer that represents the number of months before or after **start_date**.|  
+|start_date|A date in **datetime** or **text** format that represents the start date.|  
+|months|An integer that represents the number of months before or after **start_date**.|  
   
-## Return Value  
+## Return value  
 A date (**datetime**).  
   
 ## Remarks  

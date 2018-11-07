@@ -2,7 +2,7 @@
 title: "Table Constructor | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -26,7 +26,7 @@ Returns a table of one or more columns.
 |--------|--------------|  
 |scalarExprN|Any DAX expression that returns a scalar value.|  
   
-## Return Value  
+## Return value  
 A table of one or more columns. When there is only one column, the name of the column is Value. When there are N columns where N > 1, the names of the columns from left to right are Value1, Value2, …, ValueN. 
   
 ## Remarks  
@@ -83,7 +83,8 @@ Row3     |   1/3/2017      |    299.99     |         C
 The following DAX query:
 ```dax
 EVALUATE { 1, DATE(2017, 1, 1), TRUE, "A" }
-```dax
+```
+
 Returns the following table of a single column of String data type:
 
 [Value]  |  |

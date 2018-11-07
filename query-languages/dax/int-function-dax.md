@@ -2,7 +2,7 @@
 title: "INT Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,9 +22,9 @@ INT(<number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**number**|The number you want to round down to an integer|  
+|number|The number you want to round down to an integer|  
   
-## Return Value  
+## Return value  
 A whole number.  
   
 ## Remarks  

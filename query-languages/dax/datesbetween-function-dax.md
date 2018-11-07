@@ -2,7 +2,7 @@
 title: "DATESBETWEEN Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -23,11 +23,11 @@ DATESBETWEEN(<dates>,<start_date>,<end_date>)
 |||  
 |-|-|  
 |Term|Definition|  
-|**dates**|A reference to a date/time column.|  
-|**start_date**|A date expression.|  
-|**end_date**|A date expression.|  
+|dates|A reference to a date/time column.|  
+|start_date|A date expression.|  
+|end_date|A date expression.|  
   
-## Return Value  
+## Return value  
 A table containing a single column of date values.  
   
 ## Remarks  

@@ -2,7 +2,7 @@
 title: "CHISQ.INV.RT Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -27,7 +27,7 @@ CHISQ.INV.RT(probability,deg_freedom)
 |Probability|A probability associated with the chi-squared distribution.|  
 |Deg_freedom|The number of degrees of freedom.|  
   
-## Return Value  
+## Return value  
 Returns the inverse of the right-tailed probability of the chi-squared distribution.  
   
 ## Remarks  

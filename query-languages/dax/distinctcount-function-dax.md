@@ -2,7 +2,7 @@
 title: "DISTINCTCOUNT Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -20,12 +20,12 @@ DISTINCTCOUNT(<column>)
   
 #### Parameters  
 
-Term  |Description  
----------|---------
-column     | The column that contains the values to be counted         
+|Term  |Description|  
+|---------|---------|
+|column     | The column that contains the values to be counted |        
 
   
-## Return Value  
+## Return value  
 The number of distinct values in *column*.  
   
 ## Remarks  

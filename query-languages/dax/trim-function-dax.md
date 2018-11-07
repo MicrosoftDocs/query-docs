@@ -2,7 +2,7 @@
 title: "TRIM Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -24,7 +24,7 @@ TRIM(<text>)
 |--------|--------------|  
 |**text**|The text from which you want spaces removed, or a column that contains text.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 The string with spaces removed.  
   
 ## Remarks  
@@ -37,7 +37,8 @@ The following formula creates a new string that does not have trailing white spa
   
 ```dax
 =TRIM("A column with trailing spaces.   ")  
-```dax
+```
+
 When you create the formula, the formula is propagated through the row just as you typed it, so that you see the original string in each formula and the results are not apparent. However, when the formula is evaluated the string is trimmed.  
   
 You can verify that the formula produces the correct result by checking the length of the calculated column created by the previous formula, as follows:  

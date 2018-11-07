@@ -2,7 +2,7 @@
 title: "UNICHAR Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -25,7 +25,7 @@ UNICHAR(number)
 |--------|--------------|  
 |number|The Unicode number that represents the character.|  
   
-## Return Value  
+## Return value  
 A character represented by the Unicode number 
   
 ## Remarks  

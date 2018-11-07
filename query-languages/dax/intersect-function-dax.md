@@ -2,7 +2,7 @@
 title: "INTERSECT Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -24,7 +24,7 @@ INTERSECT(<table_expression1>, <table_expression2>)
 |--------|--------------|  
 |Table_expression|Any DAX expression that returns a table.|  
   
-## Return Value  
+## Return value  
 A table that contains all the rows in table_expression1 that are also in table_expression2  
   
 ## Exceptions  

@@ -2,7 +2,7 @@
 title: "ASINH Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -24,7 +24,7 @@ ASINH(number)
 |--------|--------------|  
 |number|Any real number.|  
   
-## Return Value  
+## Return value  
 Returns the inverse hyperbolic sine of a number.  
   
 ## Example  

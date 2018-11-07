@@ -2,7 +2,7 @@
 title: "MAXX Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,10 +22,10 @@ MAXX(<table>,<expression>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**table**|The table containing the rows for which the expression will be evaluated.|  
-|**expression**|The expression to be evaluated for each row of the table.|  
+|table|The table containing the rows for which the expression will be evaluated.|  
+|expression|The expression to be evaluated for each row of the table.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  

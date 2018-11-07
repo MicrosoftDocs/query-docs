@@ -2,7 +2,7 @@
 title: "COUNTA Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,9 +22,9 @@ COUNTA(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**column**|The column that contains the values to be counted|  
+|column|The column that contains the values to be counted|  
   
-## Return Value  
+## Return value  
 A whole number.  
   
 ## Remarks  

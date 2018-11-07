@@ -2,7 +2,7 @@
 title: "PATH Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -19,13 +19,13 @@ PATH(<ID_columnName>, <parent_columnName>)
 ```
   
 #### Parameters  
-ID_columnName  
-The name of an existing column containing the unique identifier for rows in the table. This cannot be an expression. The data type of the value in *ID_columnName* must be text or integer, and must also be the same data type as the column referenced in *parent_columnName*.  
+
+|Term|Definition|  
+|--------|--------------|  
+|  ID_columnName  |  The name of an existing column containing the unique identifier for rows in the table. This cannot be an expression. The data type of the value in *ID_columnName* must be text or integer, and must also be the same data type as the column referenced in *parent_columnName*.|  
+| parent_columnName | The name of an existing column containing the unique identifier for the parent of the current row. This cannot be an expression. The data type of the value in *parent_columnName* data type must be text or integer, and must be the same data type as the value in *ID_columnName*.   |
   
-parent_columnName  
-The name of an existing column containing the unique identifier for the parent of the current row. This cannot be an expression. The data type of the value in *parent_columnName* data type must be text or integer, and must be the same data type as the value in *ID_columnName*.  
-  
-## Return Value  
+## Return value  
 A delimited text string containing the identifiers of all the parents to the current identifier.  
   
 ## Remarks  

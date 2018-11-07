@@ -2,7 +2,7 @@
 title: "PATHITEMREVERSE Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -34,7 +34,7 @@ type
 |TEXT|0|Results are returned with the data type of text. (default)|  
 |INTEGER|1|Results are returned with the data type of integer.|  
   
-## Return Value  
+## Return value  
 The n-position ascendant in the given path, counting from current to the oldest.  
   
 ## Remarks  

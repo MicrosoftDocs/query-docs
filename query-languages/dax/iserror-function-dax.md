@@ -2,7 +2,7 @@
 title: "ISERROR Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,9 +22,9 @@ ISERROR(<value>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**value**|The value you want to test.|  
+|value|The value you want to test.|  
   
-## Return Value  
+## Return value  
 A Boolean value of TRUE if the value is an error; otherwise FALSE.  
   
 ## Example  

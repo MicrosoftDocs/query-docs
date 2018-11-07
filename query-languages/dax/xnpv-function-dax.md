@@ -2,7 +2,7 @@
 title: "XNPV Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -28,7 +28,7 @@ XNPV(<table>, <values>, <dates>, <rate>)
 |dates|An expression that returns the cash flow date for each row of the table.|  
 |rate|The discount rate to apply to the cash flow for each row of the table.|  
   
-## Return Value  
+## Return value  
 Net present value.  
   
 ## Remarks  

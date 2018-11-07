@@ -2,7 +2,7 @@
 title: "COUNTX Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,10 +22,10 @@ COUNTX(<table>,<expression>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**table**|The table containing the rows to be counted.|  
-|**expression**|An expression that returns the set of values that contains the values you want to count.|  
+|table|The table containing the rows to be counted.|  
+|expression|An expression that returns the set of values that contains the values you want to count.|  
   
-## Return Value  
+## Return value  
 An integer.  
   
 ## Remarks  

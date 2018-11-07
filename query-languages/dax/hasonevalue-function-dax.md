@@ -2,7 +2,7 @@
 title: "HASONEVALUE Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -19,10 +19,12 @@ HASONEVALUE(<columnName>)
 ```
   
 #### Parameters  
-columnName  
-The name of an existing column, using standard DAX syntax. It cannot be an expression.  
-  
-## Return Value  
+
+|Term|Definition|  
+|--------|--------------|  
+| columnName   |  The name of an existing column, using standard DAX syntax. It cannot be an expression.  |  
+
+## Return value  
 **TRUE** when the context for *columnName* has been filtered down to one distinct value only. Otherwise is **FALSE**.  
   
 ## Remarks  
@@ -30,9 +32,7 @@ The name of an existing column, using standard DAX syntax. It cannot be an expre
 -   An equivalent expression for HASONEVALUE() is `COUNTROWS(VALUES(<columnName>)) = 1`.  
   
 ## Example  
-In the following example you want to create a formula that verifies if the context is being sliced by one value in order to estimate a percentage against a predefined scenario; in this case you want to compare Reseller Sales against sales in 2007, then you need to know if the context is filtered by single years. Also, if the comparison is meaningless you want to return BLANK.  
-  
-If you want to follow the scenario, you can download the spreadsheet with the model from [Power Pivot Sample Data](https://powerpivotsampledata.codeplex.com/releases/view/35434) spreadsheet.  
+In the following example, you want to create a formula that verifies if the context is being sliced by one value in order to estimate a percentage against a predefined scenario; in this case you want to compare Reseller Sales against sales in 2007, then you need to know if the context is filtered by single years. Also, if the comparison is meaningless you want to return BLANK.
   
 Create a measure named [ResellerSales compared to 2007] using the following expression:  
   

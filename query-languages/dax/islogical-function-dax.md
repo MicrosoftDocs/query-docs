@@ -2,7 +2,7 @@
 title: "ISLOGICAL Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,9 +22,9 @@ ISLOGICAL(<value>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**value**|The value that you want to test.|  
+|value|The value that you want to test.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 TRUE if the value is a logical value; FALSE if any value other than TRUE OR FALSE.  
   
 ## Example  

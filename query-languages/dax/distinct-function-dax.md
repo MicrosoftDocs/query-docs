@@ -2,7 +2,7 @@
 title: "DISTINCT (column) Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -13,7 +13,7 @@ manager: kfile
 Returns a one-column table that contains the distinct values from the specified column. In other words, duplicate values are removed and only unique values are returned.  
   
 > [!NOTE]  
-> This function cannot be used to return values into a cell or column on a worksheet; rather, you nest the DISTINCT function within a formula, to get a list of distinct values that can be passed to another function and then counted, summed, or used for other operations.  
+> This function cannot be used to Return values into a cell or column on a worksheet; rather, you nest the DISTINCT function within a formula, to get a list of distinct values that can be passed to another function and then counted, summed, or used for other operations.  
   
 ## Syntax  
   
@@ -25,9 +25,9 @@ DISTINCT(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**column**|The column from which unique values are to be returned. Or, an expression that returns a column.|  
+|column|The column from which unique values are to be returned. Or, an expression that returns a column.|  
   
-## Return Value  
+## Return value  
 A column of unique values.  
   
 ## Remarks  
@@ -43,8 +43,9 @@ The following formula counts the number of unique customers who have generated o
   
 ```dax
 =COUNTROWS(DISTINCT(InternetSales_USD[CustomerKey]))  
-```dax
-Note that you cannot paste the list of values that DISTINCT returns directly into a column. Instead, you pass the results of the DISTINCT function to another function that counts, filters, or aggregates values by using the list. To make the example as simple as possible, here the table of distinct values has been passed to the COUNTROWS function.  
+```
+
+You cannot paste the list of values that DISTINCT returns directly into a column. Instead, you pass the results of the DISTINCT function to another function that counts, filters, or aggregates values by using the list. To make the example as simple as possible, here the table of distinct values has been passed to the COUNTROWS function.  
   
 |Unique Internet customers|Column Labels||||  
 |-----------------------------|-----------------|----|----|----|  

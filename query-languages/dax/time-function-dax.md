@@ -2,7 +2,7 @@
 title: "TIME Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,11 +22,11 @@ TIME(hour, minute, second)
   
 |Term|Definition|  
 |--------|--------------|  
-|**hour**|A number from 0 to 23 representing the hour.<br /><br />Any value greater than 23 will be divided by 24 and the remainder will be treated as the hour value.|  
-|**minute**|A number from 0 to 59 representing the minute.<br /><br />Any value greater than 59 will be converted to hours and minutes.|  
-|**second**|A number from 0 to 59 representing the second.<br /><br />Any value greater than 59 will be converted to hours, minutes, and seconds.|  
+|hour|A number from 0 to 23 representing the hour.<br /><br />Any value greater than 23 will be divided by 24 and the remainder will be treated as the hour value.|  
+|minute|A number from 0 to 59 representing the minute.<br /><br />Any value greater than 59 will be converted to hours and minutes.|  
+|second|A number from 0 to 59 representing the second.<br /><br />Any value greater than 59 will be converted to hours, minutes, and seconds.|  
   
-## Return Value  
+## Return value  
 A time (**datetime**).  
   
 ## Remarks  

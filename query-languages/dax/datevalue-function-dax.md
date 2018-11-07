@@ -2,7 +2,7 @@
 title: "DATEVALUE Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,9 +22,9 @@ DATEVALUE(date_text)
   
 |Term|Definition|  
 |--------|--------------|  
-|**date_text**|Text that represents a date.|  
+|date_text|Text that represents a date.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 A date in **datetime** format.  
   
 ## Remarks  

@@ -2,7 +2,7 @@
 title: "TREATAS Function | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -25,7 +25,7 @@ TREATAS(table_expression, <column>[, <column>[, <column>[,…]]]} )
 |table_expression|An expression that results in a table.| 
 |column|One or more existing columns. It cannot be an expression. |  
 
-## Return Value  
+## Return value  
 
 A table that contains all the rows in column(s) that are also in table_expression.
   

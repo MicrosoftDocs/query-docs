@@ -2,7 +2,7 @@
 title: "DISTINCT (table) Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -23,9 +23,9 @@ DISTINCT(<table>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**table**|The table from which unique rows are to be returned. The table can also be an expression that results in a table.|  
+|table|The table from which unique rows are to be returned. The table can also be an expression that results in a table.|  
   
-## Return Value  
+## Return value  
 A table containing only distinct rows.  
   
 ## Related functions  

@@ -2,7 +2,7 @@
 title: "EXP Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,9 +22,9 @@ EXP(<number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**number**|The exponent applied to the base e. The constant e equals 2.71828182845904, the base of the natural logarithm.|  
+|number|The exponent applied to the base e. The constant e equals 2.71828182845904, the base of the natural logarithm.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Exceptions  

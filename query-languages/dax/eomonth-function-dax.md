@@ -2,7 +2,7 @@
 title: "EOMONTH Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,10 +22,10 @@ EOMONTH(<start_date>, <months>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**start_date**|The start date in **datetime** format, or in an accepted text representation of a date.|  
-|**months**|A number representing the number of months before or after the **start_date**. **Note:** If you enter a number that is not an integer, the number is rounded up or down to the nearest integer.|  
+|start_date|The start date in **datetime** format, or in an accepted text representation of a date.|  
+|months|A number representing the number of months before or after the **start_date**. **Note:** If you enter a number that is not an integer, the number is rounded up or down to the nearest integer.|  
   
-## Return Value  
+## Return value  
 A date (**datetime**).  
   
 ## Remarks  

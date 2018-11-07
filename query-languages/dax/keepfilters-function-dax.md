@@ -2,7 +2,7 @@
 title: "KEEPFILTERS Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,10 +22,10 @@ KEEPFILTERS(<expression>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**expression**|Any expression.|  
+|expression|Any expression.|  
   
-## Return Value  
-No return value.  
+## Return value  
+A table of values.  
   
 ## Remarks  
 You use KEEPFILTERS within the context CALCULATE and CALCULATETABLE functions, to override the standard behavior of those functions.  
@@ -85,7 +85,8 @@ EVALUATE ROW(
             || 'Geography'[State Province Code]="BC"  
       )  
 )  
-```dax
+```
+
 When this expression is evaluated against the sample database AdventureWorks DW Tabular 2012, the following results are obtained.  
   
 |Column|Value|  

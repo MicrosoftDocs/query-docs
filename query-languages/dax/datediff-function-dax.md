@@ -2,7 +2,7 @@
 title: "DATEDIFF Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -24,10 +24,10 @@ DATEDIFF(<start_date>, <end_date>, <interval>)
 |Term|Definition|  
 |--------|--------------|  
 |start_date|A scalar datetime value.|  
-|end_date|A scalar datetime value Return Value.|  
+|end_date|A scalar datetime value Return value.|  
 |interval|The interval to use when comparing dates. The value can be one of the following:<br /><br />-   SECOND<br />-   MINUTE<br />-   HOUR<br />-   DAY<br />-   WEEK<br />-   MONTH<br />-   QUARTER<br />-   YEAR|  
   
-## Return Value  
+## Return value  
 The count of interval boundaries crossed between two dates.  
   
 ## Remarks  

@@ -2,7 +2,7 @@
 title: "UPPER Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,9 +22,9 @@ UPPER (<text>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**text**|The text you want converted to uppercase, or a reference to a column that contains text.|  
+|text|The text you want converted to uppercase, or a reference to a column that contains text.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 Same text, in uppercase.  
   
 ## Example  

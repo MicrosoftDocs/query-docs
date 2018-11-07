@@ -2,7 +2,7 @@
 title: "SELECTCOLUMNS Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -19,16 +19,14 @@ SELECTCOLUMNS(<table>, <name>, <scalar_expression> [, <name>, <scalar_expression
 ```
   
 #### Parameters  
-*table*  
-Any DAX expression that returns a table.  
+
+|Term|Definition|  
+|--------|--------------|  
+|  table|  Any DAX expression that returns a table. |  
+| name |  The name given to the column, enclosed in double quotes. |
+|expression|Any expression that returns a scalar value like a column reference, integer, or string value.|
   
-*name*  
-The name given to the column, enclosed in double quotes.  
-  
-*expression*  
-Any expression that returns a scalar value like a column reference, integer, or string value.  
-  
-## Return Value  
+## Return value  
 A table with the same number of rows as the table specified as the first argument. The returned table has one column for each pair of \<name>, \<scalar_expression> arguments, and each expression is evaluated in the context of a row from the specified \<table> argument. 
   
 ## Remarks  

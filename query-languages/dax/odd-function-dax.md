@@ -2,7 +2,7 @@
 title: "ODD Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -24,7 +24,7 @@ ODD(number)
 |--------|--------------|  
 |number|Required. The value to round.|  
   
-## Return Value  
+## Return value  
 Returns number rounded up to the nearest odd integer.  
   
 ## Remarks  

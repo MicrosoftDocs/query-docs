@@ -2,7 +2,7 @@
 title: "VAR.S Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -19,10 +19,12 @@ VAR.S(<columnName>)
 ```
   
 #### Parameters  
-columnName  
-The name of an existing column using standard DAX syntax, usually fully qualified. It cannot be an expression.  
-  
-## Return Value  
+
+|Term|Definition|  
+|--------|--------------|  
+|  columnName  |  The name of an existing column using standard DAX syntax, usually fully qualified. It cannot be an expression.  |  
+
+## Return value  
 A number with the variance of a sample population.  
   
 ## Exceptions  

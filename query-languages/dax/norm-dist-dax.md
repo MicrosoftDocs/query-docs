@@ -23,19 +23,20 @@ NORM.DIST(X, Mean, Standard_dev, Cumulative)
   
 |Term|Definition|  
 |--------|--------------|  
-|**X**|The value for which you want the distribution.|  
-|**Mean** |The arithmetic mean of the distribution.|
-|**Standard_dev**|The standard deviation of the distribution.|
-|**Cumulative**|A logical value that determines the form of the function. If cumulative is TRUE, NORM.DIST returns the cumulative distribution function; if FALSE, it returns the probability mass function.|
+|X|The value for which you want the distribution.|  
+|Mean |The arithmetic mean of the distribution.|
+|Standard_dev|The standard deviation of the distribution.|
+|Cumulative*|A logical value that determines the form of the function. If cumulative is TRUE, NORM.DIST returns the cumulative distribution function; if FALSE, it returns the probability mass function.|
   
-## Return Value  
+## Return value  
 The normal distribution for the specified mean and standard deviation.  
   
 ## Example  
   
 ```dax
 EVALUATE { NORM.DIST(42, 40, 1.5, TRUE) }
-```dax
+```
+
 Returns
 
 |[Value]  |

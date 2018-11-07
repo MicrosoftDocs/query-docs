@@ -2,7 +2,7 @@
 title: "OPENINGBALANCEQUARTER Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -23,11 +23,11 @@ OPENINGBALANCEQUARTER(<expression>,<dates>[,<filter>])
 |||  
 |-|-|  
 |Parameter|Definition|  
-|**expression**|An expression that returns a scalar value.|  
-|**dates**|A column that contains dates.|  
-|**filter**|(optional) An expression that specifies a filter to apply to the current context.|  
+|expression|An expression that returns a scalar value.|  
+|dates|A column that contains dates.|  
+|filte*|(optional) An expression that specifies a filter to apply to the current context.|  
   
-## Return Value  
+## Return value  
 A scalar value that represents the **expression** evaluated at the first date of the quarter in the current context.  
   
 ## Remarks  

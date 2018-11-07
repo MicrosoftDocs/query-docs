@@ -2,7 +2,7 @@
 title: "ABS Function (DAX) | Microsoft Docs"
 ms.service: powerbi
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -23,9 +23,9 @@ ABS(<number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**number**|The number for which you want the absolute value.|  
+|number|The number for which you want the absolute value.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  

@@ -2,7 +2,7 @@
 title: "COUNTBLANK Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,9 +22,9 @@ COUNTBLANK(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**column**|The column that contains the blank cells to be counted.|  
+|column|The column that contains the blank cells to be counted.|  
   
-## Return Value  
+## Return value  
 A whole number. If no rows are found that meet the condition, blanks are returned.  
   
 ## Remarks  
@@ -41,7 +41,8 @@ The following example shows how to count the number of rows in the table Reselle
   
 ```dax
 =COUNTBLANK(Reseller[BankName])  
-```dax
+```
+
 To count logical values or text, use the COUNTA or COUNTAX functions.  
   
 ## See Also  

@@ -23,16 +23,17 @@ NORM.S.INV(Probability)
   
 |Term|Definition|  
 |--------|--------------|  
-|**Probability**|A probability corresponding to the normal distribution.|  
+|Probability|A probability corresponding to the normal distribution.|  
   
-## Return Value  
+## Return value  
 The inverse of the standard normal cumulative distribution. The distribution has a mean of zero and a standard deviation of one.
   
 ## Example  
   
 ```dax
 EVALUATE { NORM.S.INV(0.908789) }
-```dax
+```
+
 Returns
 
 |[Value]  |

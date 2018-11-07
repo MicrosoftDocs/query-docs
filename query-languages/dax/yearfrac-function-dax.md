@@ -2,7 +2,7 @@
 title: "YEARFRAC Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,11 +22,11 @@ YEARFRAC(<start_date>, <end_date>, <basis>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**start_date**|The start date in **datetime** format.|  
-|**end_date**|The end date in **datetime** format.|  
-|**basis**|(Optional) The type of day count basis to use. All arguments are truncated to integers.<br /><br />Basis - Description<br /><br />0 - US (NASD) 30/360<br /><br />1 -  Actual/actual<br /><br />2 - Actual/360<br /><br />3 -   Actual/365<br /><br />4 - European 30/360|  
+|start_date|The start date in **datetime** format.|  
+|end_date|The end date in **datetime** format.|  
+|basis|(Optional) The type of day count basis to use. All arguments are truncated to integers.<br /><br />Basis - Description<br /><br />0 - US (NASD) 30/360<br /><br />1 -  Actual/actual<br /><br />2 - Actual/360<br /><br />3 -   Actual/365<br /><br />4 - European 30/360|  
   
-## Return Value  
+## Return value  
 A decimal number. The internal data type is a signed IEEE 64-bit (8-byte) double-precision floating-point number.  
   
 ## Remarks  
@@ -48,7 +48,8 @@ The following example returns the fraction of a year represented by the differen
   
 ```dax
 =YEARFRAC("Jan 1 2007","Mar 1 2007")  
-```dax
+```
+
 Use four-digit years whenever possible, to avoid getting unexpected results. When the year is truncated, the current year is assumed. When the date is or omitted, the first date of the month is assumed.  
   
 The second argument, **basis**, has also been omitted. Therefore, the year fraction is calculated according to the US (NASD) 30/360 standard.  

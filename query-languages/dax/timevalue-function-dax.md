@@ -2,7 +2,7 @@
 title: "TIMEVALUE Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -23,9 +23,9 @@ TIMEVALUE(time_text)
 |||  
 |-|-|  
 |Term|Definition|  
-|**time_text**|A text string that that represents a certain time of the day. Any date information included in the **time_text** argument is ignored.|  
+|time_text|A text string that that represents a certain time of the day. Any date information included in the **time_text** argument is ignored.|  
   
-## Return Value  
+## Return value  
 A date (**datetime**).  
   
 ## Remarks  

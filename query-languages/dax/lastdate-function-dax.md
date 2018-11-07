@@ -2,7 +2,7 @@
 title: "LASTDATE Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,9 +22,9 @@ LASTDATE(<dates>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**dates**|A column that contains dates.|  
+|dates|A column that contains dates.|  
   
-## Return Value  
+## Return value  
 A table containing a single column and single row with a date value.  
   
 ## Remarks  
@@ -41,7 +41,7 @@ The **dates** argument can be any of the following:
   
 When the current context is a single date, the date returned by the FIRSTDATE and LASTDATE functions will be equal.  
   
-Technically, the return value is a table that contains a single column and single value. Therefore, this function can be used as an argument to any function that requires a table in its arguments. Also, the returned value can be used whenever a date value is required.  
+Technically, the Return value is a table that contains a single column and single value. Therefore, this function can be used as an argument to any function that requires a table in its arguments. Also, the returned value can be used whenever a date value is required.  
   
 This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   

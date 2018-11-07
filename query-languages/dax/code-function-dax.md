@@ -2,7 +2,7 @@
 title: "CODE Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -29,7 +29,7 @@ CODE(text)
 |--------|--------------|  
 |text|The text for which you want the code of the first character.|  
   
-## Return Value  
+## Return value  
 A numeric code for the first character in a text string.  
   
 ## Example  

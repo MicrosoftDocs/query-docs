@@ -2,7 +2,7 @@
 title: "VALUE Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,15 +22,15 @@ VALUE(<text>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**text**|The text to be converted.|  
+|text|The text to be converted.|  
   
-## Return Value  
+## Return value  
 The converted number in decimal data type.  
   
 ## Remarks  
-The value passed as the **text** parameter can be in any of the constant, number, date, or time formats recognized by Microsoft Excel and the Power Pivot Add-in. If **text** is not in one of these formats, an error is returned. For more information about Power Pivot data types, see [Data Types Supported (SSAS Tabular)](https://msdn.microsoft.com/en-us/92993f7b-7243-4aec-906d-0b0379798242).  
+The value passed as the **text** parameter can be in any of the constant, number, date, or time formats recognized by the application or services you are using. If **text** is not in one of these formats, an error is returned. 
   
-You do not generally need to use the VALUE function in a formula because the Power Pivot add-in implicitly converts text to numbers as necessary.  
+You do not generally need to use the VALUE function in a formula because the engine implicitly converts text to numbers as necessary.  
   
 You can also use column references. For example, if you have a column that contains mixed number types, VALUE can be used to convert all values to a single numeric data type. However, if you use the VALUE function with a column that contains mixed numbers and text, the entire column is flagged with an error, because not all values in all rows can be converted to numbers.  
   

@@ -2,7 +2,7 @@
 title: "AND Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,9 +22,9 @@ AND(<logical1>,<logical2>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**logical_1***,* **logical_2**|The logical values you want to test.|  
+|logical_1, logical_2|The logical values you want to test.|  
   
-## Return Value  
+## Return value  
 Returns true or false depending on the combination of values that you test.  
   
 ## Remarks  
@@ -35,7 +35,8 @@ The following formula shows the syntax of the AND function.
   
 ```dax
 =IF(AND(10 > 9, -10 < -1), "All true", "One or more false"  
-```dax
+```
+
 Because both conditions, passed as arguments, to the AND function are true, the formula returns "All True".  
   
 ## Example  

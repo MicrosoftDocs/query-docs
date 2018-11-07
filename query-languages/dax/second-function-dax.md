@@ -2,7 +2,7 @@
 title: "SECOND Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,9 +22,9 @@ SECOND(<time>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**time**|A time in **datetime** format, such as 16:48:23 or 4:48:47 PM.|  
+|time|A time in **datetime** format, such as 16:48:23 or 4:48:47 PM.|  
   
-## Return Value  
+## Return value  
 An integer number from 0 to 59.  
   
 ## Remarks  

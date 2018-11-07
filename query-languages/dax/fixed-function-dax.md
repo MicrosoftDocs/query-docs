@@ -2,7 +2,7 @@
 title: "FIXED Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,11 +22,11 @@ FIXED(<number>, <decimals>, <no_commas>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**number**|The number you want to round and convert to text, or a column containing a number.|  
-|**decimals**|(optional) The number of digits to the right of the decimal point; if omitted, 2.|  
-|**no_commas**|(optional) A logical value: if 1, do not display commas in the returned text; if 0 or omitted, display commas in the returned text.|  
+|number|The number you want to round and convert to text, or a column containing a number.|  
+|decimals|(optional) The number of digits to the right of the decimal point; if omitted, 2.|  
+|no_commas|(optional) A logical value: if 1, do not display commas in the returned text; if 0 or omitted, display commas in the returned text.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 A number represented as text.  
   
 ## Remarks  
@@ -45,7 +45,8 @@ The following example gets the numeric value for the current row in column, PctC
   
 ```dax
 =FIXED([PctCost],3,1)  
-```dax
+```
+
 Numbers can never have more than 15 significant digits, but decimals can be as large as 127.  
   
 ## See Also  

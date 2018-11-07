@@ -2,7 +2,7 @@
 title: "CALCULATE Function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 5/22/2018
+ms.date: 11/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,8 +22,8 @@ CALCULATE(<expression>,<filter1>,<filter2>…)
   
 |Term|Definition|  
 |--------|--------------|  
-|**expression**|The expression to be evaluated.|  
-|**filter1***,***filter2***,…*|(optional) A comma separated list of Boolean expression or a table expression that defines a filter.|  
+|expression|The expression to be evaluated.|  
+|filter1, filter2,…|(optional) A comma separated list of Boolean expression or a table expression that defines a filter.|  
   
 The expression used as the first parameter is essentially the same as a measure.  
   
@@ -37,7 +37,7 @@ The following restrictions apply to Boolean expressions that are used as argumen
   
 However, a Boolean expression can use any function that looks up a single value, or that calculate a scalar value.  
   
-## Return Value  
+## Return value  
 The value that is the result of the expression.  
   
 ## Remarks  
@@ -63,7 +63,8 @@ To see how this works, add the field, CalendarYear, to the **Row Labels** area o
 =( SUM('ResellerSales_USD'[SalesAmount_USD]))  
  /CALCULATE( SUM('ResellerSales_USD'[SalesAmount_USD])  
            ,ALL('ResellerSales_USD'))  
-```dax
+```
+
 The CALCULATE expression in the denominator enables the sum expression to include all rows in the calculation. This overrides the implicit filters for CalendarYear and ProductCategoryName that exist for the numerator part of the expression.  
   
 ## Related Functions  
