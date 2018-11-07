@@ -19,10 +19,12 @@ ISCROSSFILTERED(<columnName>)
 ```
   
 #### Parameters  
-columnName  
-The name of an existing column, using standard DAX syntax. It cannot be an expression.  
+
+|Term|Definition|  
+|--------|--------------|  
+|columnName|The name of an existing column, using standard DAX syntax. It cannot be an expression.| 
   
-## Return Value  
+## Return value  
 **TRUE** when *columnName* or another column in the same or related table is being filtered. Otherwise returns **FALSE**.  
   
 ## Remarks  

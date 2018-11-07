@@ -22,9 +22,9 @@ MINUTE(<datetime>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**datetime**|A **datetime** value or text in an accepted time format, such as 16:48:00 or 4:48 PM.|  
+|datetime|A **datetime** value or text in an accepted time format, such as 16:48:00 or 4:48 PM.|  
   
-## Return Value  
+## Return value  
 An integer number from 0 to 59.  
   
 ## Remarks  

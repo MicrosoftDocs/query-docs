@@ -22,9 +22,9 @@ DAY(<date>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**date**|A date in **datetime** format, or a text representation of a date.|  
+|date|A date in **datetime** format, or a text representation of a date.|  
   
-## Return Value  
+## Return value  
 An integer number indicating the day of the month.  
   
 ## Remarks  

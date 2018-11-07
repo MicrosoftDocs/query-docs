@@ -25,7 +25,7 @@ ISEMPTY(<table_expression>)
 |--------|--------------|  
 |table_expression|A table reference or a DAX expression that returns a table.|  
   
-## Return Value  
+## Return value  
 True if the table is empty (has no rows), if else, False.  
   
 ## Example  

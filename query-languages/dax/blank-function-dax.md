@@ -18,7 +18,7 @@ Returns a blank.
 BLANK()  
 ```
   
-## Return Value  
+## Return value  
 A blank.  
   
 ## Remarks  

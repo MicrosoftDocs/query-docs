@@ -23,9 +23,9 @@ PREVIOUSMONTH(<dates>)
 |||  
 |-|-|  
 |Term|Definition|  
-|**Dates**|A column containing dates.|  
+|Dates|A column containing dates.|  
   
-## Return Value  
+## Return value  
 A table containing a single column of date values.  
   
 ## Remarks  

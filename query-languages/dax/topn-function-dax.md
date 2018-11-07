@@ -41,7 +41,7 @@ order
 |0 (zero)|FALSE|Sorts in descending order of values of *order_by*.<br /><br />This is the default value when *order* parameter is omitted.|  
 |1|TRUE|Ranks in ascending order of *order_by*.|  
   
-## Return Value  
+## Return value  
 A table with the top N rows of *table* or an empty table if *n_value* is 0 (zero) or less. Rows are not necessarily sorted in any particular order.  
   
 ## Remarks  

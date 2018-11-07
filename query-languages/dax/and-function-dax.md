@@ -22,9 +22,9 @@ AND(<logical1>,<logical2>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**logical_1***,* **logical_2**|The logical values you want to test.|  
+|logical_1, logical_2|The logical values you want to test.|  
   
-## Return Value  
+## Return value  
 Returns true or false depending on the combination of values that you test.  
   
 ## Remarks  

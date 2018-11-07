@@ -19,10 +19,12 @@ VAR.S(<columnName>)
 ```
   
 #### Parameters  
-columnName  
-The name of an existing column using standard DAX syntax, usually fully qualified. It cannot be an expression.  
-  
-## Return Value  
+
+|Term|Definition|  
+|--------|--------------|  
+|  columnName  |  The name of an existing column using standard DAX syntax, usually fully qualified. It cannot be an expression.  |  
+
+## Return value  
 A number with the variance of a sample population.  
   
 ## Exceptions  

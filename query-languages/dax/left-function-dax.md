@@ -22,10 +22,10 @@ LEFT(<text>, <num_chars>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**text**|The text string containing the characters you want to extract, or a reference to a column that contains text.|  
-|**num_chars**|(optional) The number of characters you want LEFT to extract; if omitted, 1.|  
+|text|The text string containing the characters you want to extract, or a reference to a column that contains text.|  
+|num_chars|(optional) The number of characters you want LEFT to extract; if omitted, 1.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 A text string.  
   
 ## Remarks  

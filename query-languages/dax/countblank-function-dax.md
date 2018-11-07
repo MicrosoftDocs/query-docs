@@ -22,9 +22,9 @@ COUNTBLANK(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**column**|The column that contains the blank cells to be counted.|  
+|column|The column that contains the blank cells to be counted.|  
   
-## Return Value  
+## Return value  
 A whole number. If no rows are found that meet the condition, blanks are returned.  
   
 ## Remarks  

@@ -34,7 +34,7 @@ type
 |TEXT|0|Results are returned with the data type text. (default).|  
 |INTEGER|1|Results are returned as integers.|  
   
-## Return Value  
+## Return value  
 The identifier returned by the PATH function at the specified position in the list of identifiers. Items returned by the PATH function are ordered by most distant to current.  
   
 ## Remarks  

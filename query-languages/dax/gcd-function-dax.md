@@ -24,7 +24,7 @@ GCD(number1, [number2], ...)
 |--------|--------------|  
 |number1, number2, ...|Number1 is required, subsequent numbers are optional. 1 to 255 values. If any value is not an integer, it is truncated.|  
   
-## Return Value  
+## Return value  
 The greatest common divisor of two or more integers.  
   
 ## Remarks  

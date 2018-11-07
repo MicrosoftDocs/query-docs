@@ -22,11 +22,11 @@ IN
   
 |Term|Definition|  
 |--------|--------------|  
-|**scalar expression**||  
-|**table expression**||  
+|scalar expression||  
+|table expression||  
 
   
-## Return Value  
+## Return value  
 
   
 ## Remarks  

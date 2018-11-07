@@ -18,7 +18,7 @@ Returns the logical value FALSE.
 FALSE()  
 ```
   
-## Return Value  
+## Return value  
 Always FALSE.  
   
 ## Remarks  

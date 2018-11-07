@@ -24,7 +24,7 @@ ASINH(number)
 |--------|--------------|  
 |number|Any real number.|  
   
-## Return Value  
+## Return value  
 Returns the inverse hyperbolic sine of a number.  
   
 ## Example  

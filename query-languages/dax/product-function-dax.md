@@ -27,7 +27,7 @@ PRODUCT(<column>)
 |--------|--------------|  
 |column|The column that contains the numbers for which the product is to be computed.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  

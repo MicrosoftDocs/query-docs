@@ -25,7 +25,7 @@ UNION(<table_expression1>, <table_expression2> [,<table_expression>]…)
 |--------|--------------|  
 |table_expression|Any DAX expression that returns a table.|  
   
-## Return Value  
+## Return value  
 A table that contains all the rows from each of the two table expressions.  
   
 ## Remarks  

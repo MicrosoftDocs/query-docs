@@ -19,10 +19,12 @@ PATHLENGTH(<path>)
 ```
   
 #### Parameters  
-path  
-A text expression resulting from evaluation of a PATH function.  
+
+|Term|Definition|  
+|--------|--------------|  
+| path |  A text expression resulting from evaluation of a PATH function. |  
   
-## Return Value  
+## Return value  
 The number of items that are parents to the specified item in a given PATH result, including the specified item.  
   
 ## Remarks  

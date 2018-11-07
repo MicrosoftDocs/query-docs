@@ -22,9 +22,9 @@ ISNUMBER(<value>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**value**|The value you want to test.|  
+|value|The value you want to test.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 TRUE if the value is numeric; otherwise FALSE.  
   
 ## Example  

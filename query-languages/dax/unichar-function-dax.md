@@ -25,7 +25,7 @@ UNICHAR(number)
 |--------|--------------|  
 |number|The Unicode number that represents the character.|  
   
-## Return Value  
+## Return value  
 A character represented by the Unicode number 
   
 ## Remarks  

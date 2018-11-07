@@ -22,9 +22,9 @@ MAXA(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**column**|The column in which you want to find the largest value.|  
+|column|The column in which you want to find the largest value.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  

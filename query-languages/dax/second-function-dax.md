@@ -22,9 +22,9 @@ SECOND(<time>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**time**|A time in **datetime** format, such as 16:48:23 or 4:48:47 PM.|  
+|time|A time in **datetime** format, such as 16:48:23 or 4:48:47 PM.|  
   
-## Return Value  
+## Return value  
 An integer number from 0 to 59.  
   
 ## Remarks  

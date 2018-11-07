@@ -22,9 +22,9 @@ ISTEXT(<value>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**value**|The value you want to check.|  
+|value|The value you want to check.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 TRUE if the value is text; otherwise FALSE  
   
 ## Example  

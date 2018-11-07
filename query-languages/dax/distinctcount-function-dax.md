@@ -20,12 +20,12 @@ DISTINCTCOUNT(<column>)
   
 #### Parameters  
 
-Term  |Description  
----------|---------
-column     | The column that contains the values to be counted         
+|Term  |Description|  
+|---------|---------|
+|column     | The column that contains the values to be counted |        
 
   
-## Return Value  
+## Return value  
 The number of distinct values in *column*.  
   
 ## Remarks  

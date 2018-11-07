@@ -26,7 +26,7 @@ CROSSFILTER(<columnName1>, <columnName2>, <direction>)
 |columnName2|The name of an existing column, using standard DAX syntax and fully qualified, that usually represents the one side or lookup side of the relationship to be used; if the arguments are given in reverse order the function will swap them before using them. This argument cannot be an expression.|  
 |Direction|The cross-filter direction to be used. Must be one of the following:<br />none<br />No cross-filtering occurs along this relationship<br /><br />**one** - Filters on the one or lookup side of the side of the relationship filter the many side.<br /><br />**both** - <br />Filters on either side filter the other<br /><br />**none** - No cross-filtering occurs along this relationship|  
   
-## Return Value  
+## Return value  
 The function returns no value; the function only sets the cross-filtering direction for the indicated relationship, for the duration of the query.  
   
 ## Remarks  

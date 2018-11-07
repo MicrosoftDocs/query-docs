@@ -29,7 +29,7 @@ PERCENTILEX.INC(<table>, <expression>;, k)
 |expression|The expression to be evaluated for each row of the table.|  
 |k|The desired percentile value in the range 0 to 1 inclusive.|  
   
-## Return Value  
+## Return value  
 The percentile number of an expression evaluated for each row in a table.  
   
 ## Remarks  

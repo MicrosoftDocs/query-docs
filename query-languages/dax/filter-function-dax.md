@@ -22,10 +22,10 @@ FILTER(<table>,<filter>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**table**|The table to be filtered. The table can also be an expression that results in a table.|  
-|**filter**|A Boolean expression that is to be evaluated for each row of the table. For example, `[Amount] > 0` or `[Region] = "France"`|  
+|table|The table to be filtered. The table can also be an expression that results in a table.|  
+|filter|A Boolean expression that is to be evaluated for each row of the table. For example, `[Amount] > 0` or `[Region] = "France"`|  
   
-## Return Value  
+## Return value  
 A table containing only the filtered rows.  
   
 ## Remarks  

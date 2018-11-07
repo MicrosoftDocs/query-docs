@@ -22,9 +22,9 @@ ISERROR(<value>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**value**|The value you want to test.|  
+|value|The value you want to test.|  
   
-## Return Value  
+## Return value  
 A Boolean value of TRUE if the value is an error; otherwise FALSE.  
   
 ## Example  

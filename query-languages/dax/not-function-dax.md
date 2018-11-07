@@ -22,9 +22,9 @@ NOT(<logical>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**logical**|A value or expression that can be evaluated to TRUE or FALSE.|  
+|logical|A value or expression that can be evaluated to TRUE or FALSE.|  
   
-## Return Value  
+## Return value  
 TRUE OR FALSE.  
   
 ## Example  

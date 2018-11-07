@@ -27,7 +27,7 @@ CHISQ.INV(probability,deg_freedom)
 |Probability|A probability associated with the chi-squared distribution.|  
 |Deg_freedom|The number of degrees of freedom.|  
   
-## Return Value  
+## Return value  
 Returns the inverse of the left-tailed probability of the chi-squared distribution.  
   
 ## Remarks  

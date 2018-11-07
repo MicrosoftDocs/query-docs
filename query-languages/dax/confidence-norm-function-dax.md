@@ -26,7 +26,7 @@ CONFIDENCE.NORM(alpha,standard_dev,size)
 |standard_dev|The population standard deviation for the data range and is assumed to be known.|  
 |standard_dev,size|The sample size.|  
   
-## Return Value  
+## Return value  
 A range of values  
   
 ## Remarks  

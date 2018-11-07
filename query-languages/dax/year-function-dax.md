@@ -22,9 +22,9 @@ YEAR(<date>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**date**|A date in **datetime** or text format, containing the year you want to find.|  
+|date|A date in **datetime** or text format, containing the year you want to find.|  
   
-## Return Value  
+## Return value  
 An integer in the range 1900-9999.  
   
 ## Remarks  

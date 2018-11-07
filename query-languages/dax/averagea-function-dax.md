@@ -22,9 +22,9 @@ AVERAGEA(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**column**|A column that contains the values for which you want the average.|  
+|column|A column that contains the values for which you want the average.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  

@@ -22,9 +22,9 @@ UPPER (<text>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**text**|The text you want converted to uppercase, or a reference to a column that contains text.|  
+|text|The text you want converted to uppercase, or a reference to a column that contains text.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 Same text, in uppercase.  
   
 ## Example  

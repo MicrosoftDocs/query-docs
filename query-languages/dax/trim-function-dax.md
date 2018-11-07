@@ -24,7 +24,7 @@ TRIM(<text>)
 |--------|--------------|  
 |**text**|The text from which you want spaces removed, or a column that contains text.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 The string with spaces removed.  
   
 ## Remarks  

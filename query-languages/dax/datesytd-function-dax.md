@@ -23,10 +23,10 @@ DATESYTD(<dates> [,<year_end_date>])
 |||  
 |-|-|  
 |Term|Definition|  
-|**dates**|A column that contains dates.|  
-|**year_end_date**|(optional) A literal string with a date that defines the year-end date. The default is December 31.|  
+|dates|A column that contains dates.|  
+|year_end_date|(optional) A literal string with a date that defines the year-end date. The default is December 31.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 A table containing a single column of date values.  
   
 ## Remarks  

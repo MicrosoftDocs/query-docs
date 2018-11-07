@@ -23,10 +23,10 @@ LASTNONBLANK(<column>,<expression>)
 |||  
 |-|-|  
 |Term|Definition|  
-|**column**|A column expression.|  
-|**expression**|An expression evaluated for blanks for each value of **column**.|  
+|column|A column expression.|  
+|expression|An expression evaluated for blanks for each value of **column**.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 A table containing a single column and single row with the computed last value.  
   
 ## Remarks  

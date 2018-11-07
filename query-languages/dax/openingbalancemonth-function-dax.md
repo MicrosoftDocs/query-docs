@@ -23,11 +23,11 @@ OPENINGBALANCEMONTH(<expression>,<dates>[,<filter>])
 |||  
 |-|-|  
 |Parameter|Definition|  
-|**expression**|An expression that returns a scalar value.|  
-|**dates**|A column that contains dates.|  
-|**filter**|(optional) An expression that specifies a filter to apply to the current context.|  
+|expression|An expression that returns a scalar value.|  
+|dates|A column that contains dates.|  
+|filter|(optional) An expression that specifies a filter to apply to the current context.|  
   
-## Return Value  
+## Return value  
 A scalar value that represents the **expression** evaluated at the first date of the month in the current context.  
   
 ## Remarks  

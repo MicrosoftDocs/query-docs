@@ -24,7 +24,7 @@ ISEVEN(number)
 |--------|--------------|  
 |number|The value to test. If number is not an integer, it is truncated.|  
   
-## Return Value  
+## Return value  
 Returns TRUE if number is even, or FALSE if number is odd.  
   
 ## Remarks  

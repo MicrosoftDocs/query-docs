@@ -25,7 +25,7 @@ SELECTEDVALUE(<columnName>[, <alternateResult>])
 | columnName |The name of an existing column, using standard DAX syntax. It cannot be an expression. |  
 | alternateResult |(Optional) The value returned when the context for columnName has been filtered down to zero or more than one distinct value. When not provided, the default value is BLANK().| 
  
-## Return Value  
+## Return value  
 The value when the context for columnName has been filtered down to one distinct value only. Else, alternateResult. 
   
   

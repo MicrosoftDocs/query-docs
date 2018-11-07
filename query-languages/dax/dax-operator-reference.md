@@ -58,7 +58,7 @@ Use logical operators (&amp;&amp;) and (||) to combine expressions to produce a 
 |IN|Creates a logical OR condition between each row being compared to a table. Note: the table constructor syntax uses curly braces.|'Product'[Color] IN { "Red", "Blue", "Black" }|   
   
 ## Operators and Precedence Order  
-In some cases, the order in which calculation is performed can affect the return value; therefore, it is important to understand how the order is determined and how you can change the order to obtain the desired results.  
+In some cases, the order in which calculation is performed can affect the Return value; therefore, it is important to understand how the order is determined and how you can change the order to obtain the desired results.  
   
 ### Calculation Order  
 An expression evaluates the operators and values in a specific order. All expressions always begin with an equal sign (=). The equal sign indicates that the succeeding characters constitute an expression.  

@@ -28,7 +28,7 @@ XNPV(<table>, <values>, <dates>, <rate>)
 |dates|An expression that returns the cash flow date for each row of the table.|  
 |rate|The discount rate to apply to the cash flow for each row of the table.|  
   
-## Return Value  
+## Return value  
 Net present value.  
   
 ## Remarks  

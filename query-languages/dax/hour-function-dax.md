@@ -22,9 +22,9 @@ HOUR(<datetime>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**datetime**|A **datetime** value, such as 16:48:00 or 4:48 PM.|  
+|datetime|A **datetime** value, such as 16:48:00 or 4:48 PM.|  
   
-## Return Value  
+## Return value  
 An integer number from 0 to 23.  
   
 ## Remarks  

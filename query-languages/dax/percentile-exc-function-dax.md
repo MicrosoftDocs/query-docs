@@ -29,7 +29,7 @@ PERCENTILE.EXC(<column>, <k>)
 |column|A column containing the values that define relative standing.|  
 |k|The percentile value in the range 0..1, exclusive.|  
   
-## Return Value  
+## Return value  
 The k-th percentile of values in a range, where k is in the range 0..1, exclusive.  
   
 ## Remarks  

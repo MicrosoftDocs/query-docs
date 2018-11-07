@@ -22,9 +22,9 @@ EARLIEST(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**column**|A reference to a column.|  
+|column|A reference to a column.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 A column with filters removed.  
   
 ## Remarks  

@@ -22,9 +22,9 @@ LN(<number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**number**|The positive number for which you want the natural logarithm.|  
+|number|The positive number for which you want the natural logarithm.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  

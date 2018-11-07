@@ -26,10 +26,10 @@ EARLIER(<column>, <number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**column**|A column or expression that resolves to a column.|  
-|**num**|(Optional) A positive number to the outer evaluation pass.<br /><br />The next evaluation level out is represented by 1; two levels out is represented by 2 and so on.<br /><br />When omitted default value is 1.|  
+|column|A column or expression that resolves to a column.|  
+|num|(Optional) A positive number to the outer evaluation pass.<br /><br />The next evaluation level out is represented by 1; two levels out is represented by 2 and so on.<br /><br />When omitted default value is 1.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 The current value of row, from **column**, at **number** of outer evaluation passes.  
   
 ## Exceptions  

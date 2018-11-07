@@ -19,19 +19,15 @@ SUMMARIZE(<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, <name>, <ex
 ```
   
 #### Parameters  
-table  
-Any DAX expression that returns a table of data.  
-  
-groupBy_columnName  
-(Optional) The qualified name of an existing column to be used to create summary groups based on the values found in it. This parameter cannot be an expression.  
-  
-name  
-The name given to a total or summarize column, enclosed in double quotes.  
-  
-expression  
-Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context).  
-  
-## Return Value  
+
+|Term|Definition|  
+|--------|--------------|  
+|  table |  Any DAX expression that returns a table of data.  |  
+| groupBy_columnName | (Optional) The qualified name of an existing column to be used to create summary groups based on the values found in it. This parameter cannot be an expression.  |
+|name|The name given to a total or summarize column, enclosed in double quotes. |
+|expression |Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context). |
+
+## Return value  
 A table with the selected columns for the *groupBy_columnName* arguments and the summarized columns designed by the name arguments.  
   
 ## Remarks  
@@ -179,7 +175,7 @@ SUMMARIZE(<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, ROLLUP(<gro
 columnName  
 The name of any column in table of the SUMMARIZE function or any column in a related table to table.  
   
-#### Return Value  
+#### Return value  
 A **True** value if the row contains a sub-total value for the column given as argument, otherwise returns **False**  
   
 #### Remarks  

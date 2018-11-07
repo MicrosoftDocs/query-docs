@@ -24,7 +24,7 @@ ATANH(number)
 |--------|--------------|  
 |number|Any real number between 1 and -1.|  
   
-## Return Value  
+## Return value  
 Returns the inverse hyperbolic tangent of a number.  
   
 ## Example  

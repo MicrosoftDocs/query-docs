@@ -19,10 +19,12 @@ CROSSJOIN(<table>, <table>[, <table>]…)
 ```
   
 #### Parameters  
-table  
-Any DAX expression that returns a table of data  
+
+|Term|Definition|  
+|--------|--------------|  
+|table|Any DAX expression that returns a table of data|  
   
-## Return Value  
+## Return value  
 A table that contains the Cartesian product of all rows from all tables in the arguments.  
   
 ## Remarks  

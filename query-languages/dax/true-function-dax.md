@@ -18,7 +18,7 @@ Returns the logical value TRUE.
 TRUE()  
 ```
   
-## Return Value  
+## Return value  
 Always TRUE.  
   
 ## Remarks  
