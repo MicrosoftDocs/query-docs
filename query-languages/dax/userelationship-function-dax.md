@@ -32,7 +32,7 @@ The function returns no value; the function only enables the indicated relations
   
 - USERELATIONSHIP can only be used in functions that take a filter as an argument, for example: CALCULATE, CALCULATETABLE, CLOSINGBALANCEMONTH, CLOSINGBALANCEQUARTER, CLOSINGBALANCEYEAR, OPENINGBALANCEMONTH, OPENINGBALANCEQUARTER, OPENINGBALANCEYEAR, TOTALMTD, TOTALQTD and TOTALYTD functions.  
 
-- USERELATIONSHIP cannot be used when row level security is defined for the table in which the measure is included. For example, `CALCULATE(SUM([SalesAmount]), USERELATIONSHIP(FactInternetSales[CustomerKey], DimCustomer[CustomerKey]))` will return an error if row level security id defined for DimCustomer.
+- USERELATIONSHIP cannot be used when row level security is defined for the table in which the measure is included. For example, `CALCULATE(SUM([SalesAmount]), USERELATIONSHIP(FactInternetSales[CustomerKey], DimCustomer[CustomerKey]))` will return an error if row level security is defined for DimCustomer.
   
 - USERELATIONSHIP uses existing relationships in the model, identifying  relationships by their ending point columns.  
   

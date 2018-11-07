@@ -10,8 +10,6 @@ ms.author: owend
 manager: kfile
 ---
 # VAR (DAX)
-> [!NOTE]  
-> This feature is included in SQL Server 2016 Analysis Services (SSAS), Power Pivot in Excel 2016, and Power BI Desktop only. Information provided here is subject to change.  
   
 Stores the result of an expression as a named variable, which can then be passed as an argument to other measure expressions. Once resultant values have been calculated for a variable expression, those values do not change, even if the variable is referenced in another expression.  
 
