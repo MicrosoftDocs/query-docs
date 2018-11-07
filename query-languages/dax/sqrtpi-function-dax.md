@@ -24,7 +24,7 @@ SQRTPI(number)
 |--------|--------------|  
 |number|Required. The number by which pi is multiplied.|  
   
-## Return Value  
+## Return value  
 Returns the square root of (number * pi).  
   
 ## Remarks  

@@ -22,11 +22,11 @@ FIXED(<number>, <decimals>, <no_commas>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**number**|The number you want to round and convert to text, or a column containing a number.|  
-|**decimals**|(optional) The number of digits to the right of the decimal point; if omitted, 2.|  
-|**no_commas**|(optional) A logical value: if 1, do not display commas in the returned text; if 0 or omitted, display commas in the returned text.|  
+|number|The number you want to round and convert to text, or a column containing a number.|  
+|decimals|(optional) The number of digits to the right of the decimal point; if omitted, 2.|  
+|no_commas|(optional) A logical value: if 1, do not display commas in the returned text; if 0 or omitted, display commas in the returned text.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 A number represented as text.  
   
 ## Remarks  

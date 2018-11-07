@@ -37,7 +37,7 @@ Except syntax, the IN operator and CONTAINSROW function are functionally equival
 |tableExpr|Any valid DAX expression that returns a table of data.|  
 
   
-## Return Value  
+## Return value  
 TRUE or FALSE.
   
 ## Remarks  

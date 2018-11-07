@@ -19,13 +19,13 @@ ROW(<name>, <expression>[[,<name>, <expression>]…])
 ```
   
 #### Parameters  
-*name*  
-The name given to the column, enclosed in double quotes.  
-  
-*expression*  
-Any DAX expression that returns a single scalar value to populate. *name*.  
-  
-## Return Value  
+
+|Term|Definition|  
+|--------|--------------|  
+|  name|  The name given to the column, enclosed in double quotes. |  
+|  expression| Any DAX expression that returns a single scalar value to populate. *name*.  |
+
+## Return value  
 A single row table  
   
 ## Remarks  

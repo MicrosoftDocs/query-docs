@@ -28,7 +28,7 @@ BETA.DIST(x,alpha,beta,cumulative,[A],[B])
 |A|Optional. A lower bound to the interval of x.|  
 |B|Optional. An upper bound to the interval of x.|  
   
-## Return Value  
+## Return value  
 Returns the beta distribution.  
   
 ## Remarks  

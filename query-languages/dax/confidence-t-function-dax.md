@@ -26,7 +26,7 @@ CONFIDENCE.T(alpha,standard_dev,size)
 |standard_dev|The population standard deviation for the data range and is assumed to be known.|  
 |size|The sample size.|  
   
-## Return Value  
+## Return value  
 Returns the confidence interval for a population mean, using a Student's t distribution.  
   
 ## Remarks  

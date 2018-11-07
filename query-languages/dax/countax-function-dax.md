@@ -22,10 +22,10 @@ COUNTAX(<table>,<expression>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**table**|The table containing the rows for which the expression will be evaluated.|  
-|**expression**|The expression to be evaluated for each row of the table.|  
+|table|The table containing the rows for which the expression will be evaluated.|  
+|expression|The expression to be evaluated for each row of the table.|  
   
-## Return Value  
+## Return value  
 A whole number.  
   
 ## Remarks  

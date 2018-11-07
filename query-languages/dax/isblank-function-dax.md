@@ -22,9 +22,9 @@ ISBLANK(<value>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**value**|The value or expression you want to test.|  
+|value|The value or expression you want to test.|  
   
-## Return Value  
+## Return value  
 A Boolean value of TRUE if the value is blank; otherwise FALSE.  
   
 ## Example  

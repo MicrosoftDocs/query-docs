@@ -24,7 +24,7 @@ SIN(number)
 |--------|--------------|  
 |number|Required. The angle in radians for which you want the sine.|  
   
-## Return Value  
+## Return value  
 Returns the sine of the given angle.  
   
 ## Remarks  

@@ -24,7 +24,7 @@ COS(number)
 |--------|--------------|  
 |number|Required. The angle in radians for which you want the cosine.|  
   
-## Return Value  
+## Return value  
 Returns the cosine of the given angle.  
   
 ## Remarks  

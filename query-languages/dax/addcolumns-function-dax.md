@@ -19,16 +19,14 @@ ADDCOLUMNS(<table>, <name>, <expression>[, <name>, <expression>]…)
 ```
   
 #### Parameters  
-*table*  
-Any DAX expression that returns a table of data.  
+
+|Term|Definition|  
+|--------|--------------|  
+|table|Any DAX expression that returns a table of data.| 
+|name|The name given to the column, enclosed in double quotes.  |
+|expression|Any DAX expression that returns a scalar expression, evaluated for each row of *table*. | 
   
-*name*  
-The name given to the column, enclosed in double quotes.  
-  
-*expression*  
-Any DAX expression that returns a scalar expression, evaluated for each row of *table*.  
-  
-## Return Value  
+## Return value  
 A table with all its original columns and the added ones.  
   
 ## Remarks  

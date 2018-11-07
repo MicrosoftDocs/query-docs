@@ -24,7 +24,7 @@ COSH(number)
 |--------|--------------|  
 |number|Required. Any real number for which you want to find the hyperbolic cosine.|  
   
-## Return Value  
+## Return value  
 The hyperbolic cosine of a number.  
   
 ## Remarks  

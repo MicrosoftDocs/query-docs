@@ -19,13 +19,13 @@ VARX.S(<table>, <expression>)
 ```
   
 #### Parameters  
-table  
-Any DAX expression that returns a table of data.  
-  
-expression  
-Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context).  
-  
-## Return Value  
+
+|Term|Definition|  
+|--------|--------------|  
+|  table | Any DAX expression that returns a table of data. |  
+| expression  |  Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context).  |
+
+## Return value  
 A number that represents the variance of a sample population.  
   
 ## Exceptions  

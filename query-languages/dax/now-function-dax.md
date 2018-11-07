@@ -20,7 +20,7 @@ The NOW function is useful when you need to display the current date and time on
 NOW()  
 ```
   
-## Return Value  
+## Return value  
 A date (**datetime)**.  
   
 ## Remarks  

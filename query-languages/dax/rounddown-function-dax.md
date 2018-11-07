@@ -22,10 +22,10 @@ ROUNDDOWN(<number>, <num_digits>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**number**|A real number that you want rounded down.|  
-|**num_digits**|The number of digits to which you want to round. Negative rounds to the left of the decimal point; zero to the nearest integer.|  
+|number|A real number that you want rounded down.|  
+|num_digits|The number of digits to which you want to round. Negative rounds to the left of the decimal point; zero to the nearest integer.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  

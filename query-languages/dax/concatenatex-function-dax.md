@@ -27,7 +27,7 @@ CONCATENATEX(<table>, <expression>, [delimiter])
 |expression|The expression to be evaluated for each row of the table.|  
 |delimiter|(optional) A separator to use during concatenation.|  
   
-## Return Value  
+## Return value  
 A text string.  
   
 ## Remarks  

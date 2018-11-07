@@ -22,10 +22,10 @@ FORMAT(<value>, <format_string>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**value**|A value or expression that evaluates to a single value.|  
-|**format_string**|A string with the formatting template.|  
+|value|A value or expression that evaluates to a single value.|  
+|format_string|A string with the formatting template.|  
   
-## Return Value  
+## Return value  
 A string containing **value** formatted as defined by **format_string**.  
   
 > [!IMPORTANT]  

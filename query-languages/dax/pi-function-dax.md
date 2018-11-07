@@ -18,7 +18,7 @@ Returns the value of Pi, 3.14159265358979, accurate to 15 digits.
 PI()  
 ```
   
-## Return Value  
+## Return value  
 A decimal number with the value of Pi, 3.14159265358979, accurate to 15 digits.  
   
 ## Remarks  

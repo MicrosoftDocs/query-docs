@@ -13,7 +13,7 @@ manager: kfile
 Returns a one-column table that contains the distinct values from the specified table or column. In other words, duplicate values are removed and only unique values are returned.  
   
 > [!NOTE]  
-> This function cannot be used to return values into a cell or column on a worksheet; rather, you use it as an intermediate function, nested in a formula, to get a list of distinct values that can be counted, or used to filter or sum other values.  
+> This function cannot be used to Return values into a cell or column on a worksheet; rather, you use it as an intermediate function, nested in a formula, to get a list of distinct values that can be counted, or used to filter or sum other values.  
   
 ## Syntax  
   
@@ -25,9 +25,9 @@ VALUES(<TableNameOrColumnName>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**Table or column**|The table or column from which unique values are to be returned.|  
+|TableName or ColumnName|The table or column from which unique values are to be returned.|  
   
-## Return Value  
+## Return value  
 A column of unique values.  
   
 ## Remarks  

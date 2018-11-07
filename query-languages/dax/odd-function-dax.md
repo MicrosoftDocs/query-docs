@@ -24,7 +24,7 @@ ODD(number)
 |--------|--------------|  
 |number|Required. The value to round.|  
   
-## Return Value  
+## Return value  
 Returns number rounded up to the nearest odd integer.  
   
 ## Remarks  

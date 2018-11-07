@@ -24,7 +24,7 @@ ERROR(<text>)
 |--------|--------------|  
 |text|A text string containing an error message.|  
   
-## Return Value  
+## Return value  
 None 
   
 ## Remarks  

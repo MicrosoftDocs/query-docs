@@ -26,10 +26,10 @@ MIN(<expression1>, <expression2>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**column**|The column in which you want to find the smallest numeric value.|  
-|**expression**|Any DAX expression which returns a single numeric value.|  
+|column|The column in which you want to find the smallest numeric value.|  
+|expression|Any DAX expression which returns a single numeric value.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  

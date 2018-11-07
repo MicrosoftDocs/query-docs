@@ -22,10 +22,10 @@ CEILING(<number>, <significance>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**number**|The number you want to round, or a reference to a column that contains numbers.|  
-|**significance**|The multiple of significance to which you want to round. For example, to round to the nearest integer, type 1.|  
+|number|The number you want to round, or a reference to a column that contains numbers.|  
+|significance|The multiple of significance to which you want to round. For example, to round to the nearest integer, type 1.|  
   
-## Return Value  
+## Return value  
 A number rounded as specified.  
   
 ## Remarks  

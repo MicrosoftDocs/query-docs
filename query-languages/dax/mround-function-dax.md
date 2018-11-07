@@ -22,10 +22,10 @@ MROUND(<number>, <multiple>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**number**|The number to round.|  
-|**multiple**|The multiple of significance to which you want to round the number.|  
+|number|The number to round.|  
+|multiple|The multiple of significance to which you want to round the number.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  

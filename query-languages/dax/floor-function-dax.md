@@ -22,10 +22,10 @@ FLOOR(<number>, <significance>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**number**|The numeric value you want to round.|  
-|**significance**|The multiple to which you want to round. The arguments**number** and **significance** must either both be positive, or both be negative.|  
+|number|The numeric value you want to round.|  
+|significance|The multiple to which you want to round. The arguments**number** and **significance** must either both be positive, or both be negative.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Remarks  

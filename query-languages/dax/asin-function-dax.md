@@ -24,7 +24,7 @@ ASIN(number)
 |--------|--------------|  
 |number|The sine of the angle you want and must be from -1 to 1.|  
   
-## Return Value  
+## Return value  
 Returns the arcsine, or inverse sine, of a number.  
   
 ## Remarks  

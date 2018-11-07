@@ -22,12 +22,12 @@ ALLEXCEPT(<table>,<column>[,<column>[,…]])
   
 |Term|Definition|  
 |--------|--------------|  
-|**table**|The table over which all context filters are removed, except filters on those columns that are specified in subsequent arguments.|  
-|**column**|The column for which context filters must be preserved.|  
+|table|The table over which all context filters are removed, except filters on those columns that are specified in subsequent arguments.|  
+|column|The column for which context filters must be preserved.|  
   
 The first argument to the ALLEXCEPT function must be a reference to a base table; all subsequent arguments must be references to base columns. You cannot use table expressions or column expressions with the ALLEXCEPT function.  
   
-## Return Value  
+## Return value  
 A table with all filters removed except for the filters on the specified columns.  
   
 ## Remarks  

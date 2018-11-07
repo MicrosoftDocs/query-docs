@@ -25,7 +25,7 @@ CALENDARAUTO([fiscal_year_end_month])
 |--------|--------------|  
 |fiscal_year_end_month|Any DAX expression that returns an integer from 1 to 12. If omitted, defaults to the value specified in the calendar table template for the current user, if present; otherwise, defaults to 12.|  
   
-## Return Value  
+## Return value  
 Returns a table with a single column named “Date” that contains a contiguous set of dates. The range of dates is calculated automatically based on data in the model.  
   
 ## Remarks  

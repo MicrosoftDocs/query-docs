@@ -20,7 +20,7 @@ USERNAME()
   
 #### Parameters  
   
-## Return Value  
+## Return value  
 The username from the credentials given to the system at connection time  
   
   

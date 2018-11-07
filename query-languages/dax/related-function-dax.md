@@ -22,9 +22,9 @@ RELATED(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**column**|The column that contains the values you want to retrieve.|  
+|column|The column that contains the values you want to retrieve.|  
   
-## Return Value  
+## Return value  
 A single value that is related to the current row.  
   
 ## Remarks  

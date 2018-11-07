@@ -24,7 +24,7 @@ COMBINEVALUES(<delimiter>, <expression>, <expression>[, <expression>]…)
 |delimiter|A separator to use during concatenation. Must be a constant value.|  
 |expression|A DAX expression whose value will be be joined into a single text string.|  
   
-## Return Value  
+## Return value  
 The concatenated string.  
   
 ## Remarks  

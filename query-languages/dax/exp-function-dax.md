@@ -22,9 +22,9 @@ EXP(<number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**number**|The exponent applied to the base e. The constant e equals 2.71828182845904, the base of the natural logarithm.|  
+|number|The exponent applied to the base e. The constant e equals 2.71828182845904, the base of the natural logarithm.|  
   
-## Return Value  
+## Return value  
 A decimal number.  
   
 ## Exceptions  

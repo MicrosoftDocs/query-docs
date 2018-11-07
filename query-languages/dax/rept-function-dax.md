@@ -22,10 +22,10 @@ REPT(<text>, <num_times>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**text**|The text you want to repeat.|  
-|**num_times**|A positive number specifying the number of times to repeat text.|  
+|text|The text you want to repeat.|  
+|num_times|A positive number specifying the number of times to repeat text.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 A string containing the changes.  
   
 ## Remarks  

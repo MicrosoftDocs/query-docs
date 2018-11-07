@@ -26,7 +26,7 @@ Returns a table of one or more columns.
 |--------|--------------|  
 |scalarExprN|Any DAX expression that returns a scalar value.|  
   
-## Return Value  
+## Return value  
 A table of one or more columns. When there is only one column, the name of the column is Value. When there are N columns where N > 1, the names of the columns from left to right are Value1, Value2, …, ValueN. 
   
 ## Remarks  

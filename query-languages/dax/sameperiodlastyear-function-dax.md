@@ -25,7 +25,7 @@ SAMEPERIODLASTYEAR(<dates>)
 |Term|Definition|  
 |**dates**|A column containing dates.|  
   
-## Property Value/Return Value  
+## Property Value/Return value  
 A single-column table of date values.  
   
 ## Remarks  

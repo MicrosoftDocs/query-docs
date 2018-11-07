@@ -22,10 +22,10 @@ QUOTIENT(<numerator>, <denominator>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**numerator**|The dividend, or number to divide.|  
-|**denominator**|The divisor, or number to divide by.|  
+|numerator|The dividend, or number to divide.|  
+|denominator|The divisor, or number to divide by.|  
   
-## Return Value  
+## Return value  
 A whole number.  
   
 ## Remarks  

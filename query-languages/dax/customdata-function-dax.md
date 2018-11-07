@@ -18,7 +18,7 @@ Returns the content of the **CustomData** property in the connection string.
 CUSTOMDATA()  
 ```
   
-## Return Value  
+## Return value  
 The content of the **CustomData** property in the connection string.  
   
 Blank, if **CustomData** property was not defined at connection time.  

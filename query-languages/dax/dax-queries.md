@@ -76,7 +76,7 @@ The name of a parameter in the XMLA statement prefixed with an **@** character.
 
 
 
-### Return Value  
+### Return value  
 A table of data.  
   
 ## Parameters in XMLA and DAX queries  

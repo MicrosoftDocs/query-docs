@@ -22,10 +22,10 @@ WEEKNUM(<date>, <return_type>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**date**|The date in **datetime** format.|  
-|**return_type**|A number that determines the return value: use 1 when the week begins on Sunday; use 2 when the week begins on Monday. The default is 1.<br /><br />Return type: **1**, week begins on Sunday. Weekdays are numbered 1 through 7.<br /><br />Return type: **2**, week begins on Monday. Weekdays are numbered 1 through 7.|  
+|date|The date in **datetime** format.|  
+|return_type|A number that determines the Return value: use 1 when the week begins on Sunday; use 2 when the week begins on Monday. The default is 1.<br /><br />Return type: **1**, week begins on Sunday. Weekdays are numbered 1 through 7.<br /><br />Return type: **2**, week begins on Monday. Weekdays are numbered 1 through 7.|  
   
-## Return Value  
+## Return value  
 An integer number.  
   
 ## Remarks  

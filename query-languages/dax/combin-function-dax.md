@@ -25,7 +25,7 @@ COMBIN(number, number_chosen)
 |number|The number of items.|  
 |number_chosen|The number of items in each combination.|  
   
-## Return Value  
+## Return value  
 Returns the number of combinations for a given number of items.  
   
 ## Remarks  

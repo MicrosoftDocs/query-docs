@@ -22,9 +22,9 @@ OR(<logical1>,<logical2>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**logical_1***,* **logical_2**|The logical values you want to test.|  
+|logical_1, logical_2|The logical values you want to test.|  
   
-## Return Value  
+## Return value  
 A Boolean value. The value is TRUE if any of the two arguments is TRUE; the value is FALSE if both the arguments are FALSE.  
   
 ## Remarks  

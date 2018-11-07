@@ -23,12 +23,12 @@ DATESINPERIOD(<dates>,<start_date>,<number_of_intervals>,<interval>)
 |||  
 |-|-|  
 |Term|Definition|  
-|**dates**|A column that contains dates.|  
-|**start_date**|A date expression.|  
-|**number_of_intervals**|An integer that specifies the number of intervals to add to or subtract from the dates.|  
-|**interval**|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`, `day`|  
+|dates|A column that contains dates.|  
+|start_date|A date expression.|  
+|number_of_intervals|An integer that specifies the number of intervals to add to or subtract from the dates.|  
+|interval|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`, `day`|  
   
-## Return Value  
+## Return value  
 A table containing a single column of date values.  
   
 ## Remarks  

@@ -24,7 +24,7 @@ LCM(number1, [number2], ...)
 |--------|--------------|  
 |number1, number2,...|Number1 is required, subsequent numbers are optional. 1 to 255 values for which you want the least common multiple. If value is not an integer, it is truncated.|  
   
-## Return Value  
+## Return value  
 Returns the least common multiple of integers.  
   
 ## Remarks  

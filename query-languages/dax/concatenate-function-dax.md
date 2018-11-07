@@ -22,9 +22,9 @@ CONCATENATE(<text1>, <text2>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**text1**, **text2**|The text strings to be joined into a single text string. Strings can include text or numbers.<br /><br />You can also use column references.|  
+|text1, text2|The text strings to be joined into a single text string. Strings can include text or numbers.<br /><br />You can also use column references.|  
   
-## Return Value  
+## Return value  
 The concatenated string.  
   
 ## Remarks  

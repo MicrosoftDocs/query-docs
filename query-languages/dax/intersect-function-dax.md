@@ -24,7 +24,7 @@ INTERSECT(<table_expression1>, <table_expression2>)
 |--------|--------------|  
 |Table_expression|Any DAX expression that returns a table.|  
   
-## Return Value  
+## Return value  
 A table that contains all the rows in table_expression1 that are also in table_expression2  
   
 ## Exceptions  

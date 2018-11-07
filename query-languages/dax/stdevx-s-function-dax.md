@@ -19,13 +19,13 @@ STDEVX.S(<table>, <expression>)
 ```
   
 #### Parameters  
-table  
-Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context).  
-  
-expression  
-Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context).  
-  
-## Return Value  
+
+|Term|Definition|  
+|--------|--------------|  
+| table  | Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context).  |  
+|expression   | Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context).   |
+
+## Return value  
 A number with the standard deviation of a sample population.  
   
 ## Exceptions  

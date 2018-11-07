@@ -28,7 +28,7 @@ SUMMARIZECOLUMNS( <groupBy_columnName> [, < groupBy_columnName >]…, [<filterTa
 |name|A string representing the column name to use for the subsequent expression specified.|  
 |expression|Any DAX expression that returns a single value (not a table).|  
   
-## Return Value  
+## Return value  
 A table which includes combinations of values from the supplied columns, based on the grouping specified. Only rows for which at least one of the supplied expressions return a non-blank value are included in the table returned. If all expressions evaluate to BLANK/NULL for a row, that row is not included in the table returned.  
   
 ## Remarks  
@@ -199,7 +199,7 @@ ROLLUPADDISSUBTOTAL ( [<filter> …, ] <groupBy_columnName>, <isSubtotal_columnN
 |isSubtotal_columnName|The name of the Boolean column to be added to the result, indicating whether or not a row is a subtotal over the groupBy column (or columns when used with ROLLUPGROUP). This value is calculated using the ISSUBTOTAL function.|  
 |filter    | A table expression which is added to the filter context at the current grouping level. A filter before the first group-by column is applied at the grand total level.
   
-#### Return Value  
+#### Return value  
 The function does not return a value. It only specifies the set of columns to be subtotaled.  
   
 #### Example  
@@ -285,7 +285,7 @@ ROLLUPADDISSUBTOTAL( ROLLUPGROUP(…), isSubtotal_columnName[, <groupBy_columnNa
 |--------|--------------|  
 |groupBy_columnName|The qualified name of an existing column to be used to create summary groups based on the values found in it. The set of group by columns supplied to ROLLUPGROUP function will define the granularity to return subtotal rows for (same behavior as when ROLLUP and ROLLUPGROUP are used with the SUMMARIZE function). This parameter  cannot be an expression.|  
   
-#### Return Value  
+#### Return value  
 The function does not return a value. It marks a set of columns to be grouped during subtotaling by ROLLUPADDISSUBTOTAL.  
   
 #### Remarks  

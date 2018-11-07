@@ -26,7 +26,7 @@ EXPON.DIST(x,lambda,cumulative)
 |lambda|Required. The parameter value.|  
 |cumulative|Required. A logical value that indicates which form of the exponential function to provide. If cumulative is TRUE, EXPON.DIST returns the cumulative distribution function; if FALSE, it returns the probability density function.|  
   
-## Return Value  
+## Return value  
 Returns the exponential distribution.  
   
 ## Remarks  

@@ -20,7 +20,7 @@ Returns the current UTC date.
 UTCTODAY()  
 ```
   
-## Return Value  
+## Return value  
 A date.  
   
 ## Remarks  

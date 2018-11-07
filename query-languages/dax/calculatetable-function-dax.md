@@ -22,8 +22,8 @@ CALCULATETABLE(<expression>,<filter1>,<filter2>,…)
   
 |Term|Definition|  
 |--------|--------------|  
-|**Expression**|The table expression to be evaluated|  
-|**filter1***,***filter2***,…*|A Boolean expression or a table expression that defines a filter|  
+|Expression**|The table expression to be evaluated|  
+|filter1, filter2,…|A Boolean expression or a table expression that defines a filter|  
   
 The expression used as the first parameter must be a function that returns a table.  
   
@@ -37,7 +37,7 @@ The following restrictions apply to Boolean expressions that are used as argumen
   
 However, a Boolean expression can use any function that looks up a single value, or that calculates a scalar value.  
   
-## Return Value  
+## Return value  
 A table of values.  
   
 ## Remarks  
