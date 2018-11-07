@@ -55,7 +55,7 @@ To calculate the sum of internet sales and allow slicing by ShippingDate instead
 =CALCULATE(SUM(InternetSales[SalesAmount]), USERELATIONSHIP(InternetSales[ShippingDate], DateTime[Date]))  
 ```
 
-In Power Pivot: drag your new measure to the Values area in the right pane, drag the InternetSales[ShippingDate] column to the Row Labels area; you now have Internet Sales sliced by shipping date instead of by order date as is usually shown in these examples.  
+Drag your new measure to the Values area in the right pane, drag the InternetSales[ShippingDate] column to the Row Labels area; you now have Internet Sales sliced by shipping date instead of by order date as is usually shown in these examples.  
   
 For this example to work the relationships between InternetSales[ShipmentDate] and DateTime[Date] must exist and should not be the active relationship; also, the relationship between InternetSales[OrderDate] and DateTime[Date] should exist and should be the active relationship.  
   
