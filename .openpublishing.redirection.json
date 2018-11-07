@@ -280,7 +280,7 @@
 			"redirect_document_id": true
 		},
 		{
-			"source_path": "dax-msdn/data-analysis-expressions-dax-reference.md",
+			"source_path": "dax-msdn-redirects/data-analysis-expressions-dax-reference.md",
 			"redirect_url": "https://docs.microsoft.com/dax/data-analysis-expressions-dax-reference",
 			"redirect_document_id": true
 		},
