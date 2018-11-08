@@ -16,9 +16,9 @@ The Power Query M formula language is optimized for building highly flexible dat
 ## Sections and articles in this reference
 
  
- * [Power Query M function reference](power-query-m-function-reference.md)
+ * [Power Query M functions](power-query-m-function-reference.md)
 
- * [Quick tour](quick-tour-of-the-power-query-m-formula-language.md)
+ * [Quick tour of the Power Query M formula language](quick-tour-of-the-power-query-m-formula-language.md)
  
  * [Power Query M language specification](power-query-m-language-specification.md)
  
