@@ -2,9 +2,9 @@
   href: power-query-m-reference.md
   expanded: true
   items: 
-    - name: Power Query M function reference
+    - name: Power Query M functions
       items: 
-        - name: Power Query M Function Reference Overview
+        - name: Power Query M functions overview
           href: power-query-m-function-reference.md
         - name: Understanding Power Query M functions
           href: understanding-power-query-m-functions.md
