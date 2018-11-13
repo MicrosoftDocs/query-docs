@@ -61,6 +61,7 @@ Functions in this section access data and return table values. Most of these fun
 |[HdInsight.Containers](hdinsight-containers.md)|Returns a navigational table containing all containers found in the HDInsight account. Each row has the container name and table containing its files.|  
 |[HdInsight.Contents](hdinsight-contents.md)|Returns a navigational table containing all containers found in the HDInsight account. Each row has the container name and table containing its files.|  
 |[HdInsight.Files](hdinsight-files.md)|Returns a table containing a row for each folder and file found at the container URL, and subfolders from an HDInsight account. Each row contains properties of the file/folder and a link to its content.|  
+|[Html.Table](html-table.md)|Returns a table containing the results of running the specified CSS selectors against the provided html|  
 |[Informix.Database](informix-database.md)|Returns a table of SQL tables and views available in an Informix database on server `server` in the database instance named `database`.|  
 |[Json.Document](json-document.md)|Returns the contents of a JSON document. The contents may be directly passed to the function as text, or it may be the binary value returned by a function like File.Contents.|  
 |[Json.FromValue](json-fromvalue.md)|Produces a JSON representation of a given value value with a text encoding specified by encoding.|
@@ -72,6 +73,7 @@ Functions in this section access data and return table values. Most of these fun
 |[OleDb.DataSource](oledb-datasource.md)|Returns a table of SQL tables and views from the OLE DB data source specified by the connection string.| 
 |[OleDb.Query](oledb-query.md)|Returns the result of running a native query on an OLE DB data source.| 
 |[Oracle.Database](oracle-database.md)|Returns a table with data relating to the tables in the specified Oracle Database.| 
+|[Pdf.Tables](pdf-tables.md)|Returns any tables found in pdf.| 
 |[PostgreSQL.Database](postgresql-database.md)|Returns a table with data relating to the tables in the specified PostgreSQL Database.|
 |[RData.FromBinary](rdata-frombinary.md)|Returns a record of data frames from the RData file.|  
 |[Salesforce.Data](salesforce-data.md)|Connects to the Salesforce Objects API and returns the set of available objects (i.e. Accounts).|  
@@ -101,6 +103,7 @@ Functions in this section access data and return table values. Most of these fun
 |[Sybase.Database](sybase-database.md)|Returns a table with data relating to the tables in the specified Sybase Database.|  
 |[Teradata.Database](teradata-database.md)|Returns a table with data relating to the tables in the specified Teradata Database.|  
 |[WebAction.Request](webaction-request.md)|Creates an action that, when executed, will return the results of performing a method request against url using HTTP as a binary value.|  
+|[Web.BrowserContents](web-browsercontents.md)|Returns the HTML for the specified url, as viewed by a web browser.|  
 |[Web.Contents](web-contents.md)|Returns the contents downloaded from a web url as a binary value.| 
 |[Web.Page](web-page.md)|Returns the contents of an HTML webpage as a table.|  
 |[WebMethod.Delete](webmethod-delete.md) | Specifies the DELETE method for HTTP.|

@@ -1,6 +1,6 @@
 ---
 title: "Text.Lower | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 11/13/2018
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -13,17 +13,21 @@ manager: kfile
 
   
 ## About  
-Returns the lowercase of a text value.  
+Returns the result of converting all characters in `text` to lowercase.
   
 ## Syntax
 
 <pre> 
-Text.Lower(string as nullable text) as nullable text  
+Text.Lower(**text** as nullable text, optional **culture** as nullable text) as nullable text 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|string|The string to transform.|  
+## Example  
+
+Get the lowercase version of "AbCd".
+
+```powerquery-m
+Text.Lower("AbCd")
+```
+
+`"abcd"`
   
