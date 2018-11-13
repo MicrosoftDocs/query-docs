@@ -94,6 +94,8 @@
               href: hdinsight-contents.md
             - name: Hdfs.Files
               href: hdfs-files.md
+            - name: Html.Table
+              href: html-table.md
             - name: Informix.Database
               href: informix-database.md
             - name: Json.Document
@@ -112,6 +114,8 @@
               href: oledb-query.md
             - name: Oracle.Database
               href: oracle-database.md
+            - name: Pdf.Tables
+              href: pdf-tables.md
             - name: PostgreSQL.Database
               href: postgresql-database.md
             - name: RData.FromBinary
@@ -164,6 +168,8 @@
               href: teradata-database.md
             - name: WebAction.Request
               href: webaction-request.md
+            - name: Web.BrowserContents
+              href: web-browsercontents.md
             - name: Web.Contents
               href: web-contents.md
             - name: Web.Page
@@ -1316,6 +1322,8 @@
               href: text-replace.md
             - name: Text.ReplaceRange
               href: text-replacerange.md
+            - name: Text.Reverse
+              href: text-reverse.md
             - name: Text.Select
               href: text-select.md
             - name: Text.Split
