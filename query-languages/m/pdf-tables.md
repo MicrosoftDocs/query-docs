@@ -32,4 +32,4 @@ Returns the tables contained in sample.pdf.
 Pdf.Tables(File.Contents("c:\sample.pdf"))
 ```
 
-`#table({"Name", "Kind", "Data"}, ...)'
+`#table({"Name", "Kind", "Data"}, ...)`
