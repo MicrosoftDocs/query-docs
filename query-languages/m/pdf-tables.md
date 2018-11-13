@@ -21,7 +21,7 @@ Returns any tables found in `pdf`. An optional record parameter, `options`, may 
 ## Syntax
 
 <pre>
-Pdf.Tables(**pdf** as binary, optional **options** as nullable record) as table
+Pdf.Tables(<b>pdf</b> as binary, optional <b>options</b> as nullable record) as table
 </pre>
   
 ## Example 1

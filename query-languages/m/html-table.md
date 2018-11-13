@@ -19,7 +19,7 @@ Returns a table containing the results of running the specified CSS selectors ag
 ## Syntax
 
 <pre>
-Html.Table(**html** as any, **columnNameSelectorPairs** as list, optional **options** as nullable record) as table
+Html.Table(<b>html</b> as any, <b>columnNameSelectorPairs</b> as list, optional <b>options</b> as nullable record) as table
 </pre>
   
 ## Example 1

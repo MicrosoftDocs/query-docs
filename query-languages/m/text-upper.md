@@ -18,7 +18,7 @@ Returns the result of converting all characters in `text` to uppercase.
 ## Syntax
 
 <pre> 
-Text.Upper(**text** as nullable text, optional **culture** as nullable text) as nullable text
+Text.Upper(<b>text</b> as nullable text, optional <b>culture</b> as nullable text) as nullable text
 </pre>  
   
 ## Example

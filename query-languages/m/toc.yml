@@ -1322,6 +1322,8 @@
               href: text-replace.md
             - name: Text.ReplaceRange
               href: text-replacerange.md
+            - name: Text.Reverse
+              href: text-reverse.md
             - name: Text.Select
               href: text-select.md
             - name: Text.Split

@@ -18,7 +18,7 @@ Returns a text value with first letters of all words converted to uppercase.
 ## Syntax
 
 <pre>
-Text.Proper(string as nullable text) as nullable text  
+Text.Proper(<b>string</b> as nullable text) as nullable text  
 </pre> 
   
 ## Example  

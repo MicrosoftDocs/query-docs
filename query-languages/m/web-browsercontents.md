@@ -20,7 +20,7 @@ Returns the HTML for the specified `url`, as viewed by a web browser. An optiona
 ## Syntax
 
 <pre>
-Web.BrowserContents(**url** as text, optional **options** as nullable record) as text
+Web.BrowserContents(<b>url</b> as text, optional <b>options</b> as nullable record) as text
 </pre>
   
 ## Example 1
