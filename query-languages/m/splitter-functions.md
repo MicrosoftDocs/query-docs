@@ -17,6 +17,7 @@ manager: kfile
 |Function|Description|  
 |------------|---------------|  
 |[Splitter.SplitByNothing](splitter-splitbynothing.md)|Returns a function that does no splitting, returning its argument as a single element list.| 
+|[Splitter.SplitTextByCharacterTransition](splitter-splittextbycharactertransition.md)|Returns a function that splits text into a list of text according to a transition from one kind of character to another.| 
 |[Splitter.SplitTextByAnyDelimiter](splitter-splittextbyanydelimiter.md)|Returns a function that splits text by any supported delimiter.|
 |[Splitter.SplitTextByDelimiter](splitter-splittextbydelimiter.md)|Returns a function that will split text according to a delimiter.|  
 |[Splitter.SplitTextByEachDelimiter](splitter-splittextbyeachdelimiter.md)|Returns a function that splits text by each delimiter in turn.|  
