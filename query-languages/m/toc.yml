@@ -10,7 +10,7 @@
           href: understanding-power-query-m-functions.md
         - name: Accessing data functions
           items: 
-            - name: Accessing data functions Overview
+            - name: Accessing data functions overview
               href: accessing-data-functions.md
             - name: Access.Database
               href: access-database.md
@@ -194,7 +194,7 @@
               href: cube-propertykey.md
         - name: Binary functions
           items: 
-            - name: Binary functions Overview
+            - name: Binary functions overview
               href: binary-functions.md
             - name: Binary.Buffer
               href: binary-buffer.md
@@ -290,7 +290,7 @@
               href: sharpbinary.md
         - name: Combiner functions
           items: 
-            - name: Combiner functions Overview
+            - name: Combiner functions overview
               href: combiner-functions.md
             - name: Combiner.CombineTextByDelimiter
               href: combiner-combinetextbydelimiter.md
@@ -304,7 +304,7 @@
               href: combiner-combinetextbyranges.md
         - name: Comparer functions
           items: 
-            - name: Comparer functions Overview
+            - name: Comparer functions overview
               href: comparer-functions.md
             - name: Comparer.Equals
               href: comparer-equals.md
@@ -318,7 +318,7 @@
               href: culture-current.md
         - name: Date functions
           items: 
-            - name: Date functions Overview
+            - name: Date functions overview
               href: date-functions.md
             - name: Date.AddDays
               href: date-adddays.md
@@ -452,7 +452,7 @@
               href: sharpdate.md
         - name: DateTime functions
           items: 
-            - name: DateTime functions Overview
+            - name: DateTime functions overview
               href: datetime-functions.md
             - name: DateTime.AddZone
               href: datetime-addzone.md
@@ -508,7 +508,7 @@
               href: sharpdatetime.md
         - name: DateTimeZone functions
           items: 
-            - name: DateTimeZone functions Overview
+            - name: DateTimeZone functions overview
               href: datetimezone-functions.md
             - name: DateTimeZone.FixedLocalNow
               href: datetimezone-fixedlocalnow.md
@@ -544,6 +544,8 @@
               href: sharpdatetimezone.md
         - name: Duration functions
           items: 
+            - name: Duration functions overview
+              href: duration-functions.md
             - name: Duration.Days
               href: duration-days.md
             - name: Duration.From
@@ -570,11 +572,9 @@
               href: duration-totext.md
             - name: '#duration'
               href: sharpduration.md
-            - name: Duration functions Overview
-              href: duration-functions.md
         - name: Error handling
           items: 
-            - name: Error handling Overview
+            - name: Error handling overview
               href: error-handling.md
             - name: Diagnostics.ActivityId
               href: diagnostics-activityid.md
@@ -594,7 +594,7 @@
               href: tracelevel-warning.md
         - name: Expression functions
           items: 
-            - name: Expression functions Overview
+            - name: Expression functions overview
               href: expression-functions.md
             - name: Expression.Constant
               href: expression-constant.md
@@ -604,7 +604,7 @@
               href: expression-identifier.md
         - name: Function values
           items: 
-            - name: Function values Overview
+            - name: Function values overview
               href: function-values.md
             - name: Function.From
               href: function-from.md
@@ -618,7 +618,7 @@
               href: function-scalarvector.md
         - name: Lines functions
           items: 
-            - name: Lines functions Overview
+            - name: Lines functions overview
               href: lines-functions.md
             - name: Lines.FromBinary
               href: lines-frombinary.md
@@ -630,7 +630,7 @@
               href: lines-totext.md
         - name: List functions
           items: 
-            - name: List functions Overview
+            - name: List functions overview
               href: list-functions.md
             - name: List.Accumulate
               href: list-accumulate.md
@@ -770,7 +770,7 @@
               href: list-zip.md
         - name: Logical functions
           items: 
-            - name: Logical functions Overview
+            - name: Logical functions overview
               href: logical-functions.md
             - name: Logical.From
               href: logical-from.md
@@ -780,6 +780,8 @@
               href: logical-totext.md
         - name: Number functions
           items: 
+            - name: Number functions overview
+              href: number-functions.md
             - name: Byte.From
               href: byte-from.md
             - name: Currency.From
@@ -906,11 +908,9 @@
               href: roundingmode-up.md
             - name: Single.From
               href: single-from.md
-            - name: Number functions Overview
-              href: number-functions.md
         - name: Record functions
           items: 
-            - name: Record functions Overview
+            - name: Record functions overview
               href: record-functions.md
             - name: MissingField.Error
               href: missingfield-error.md
@@ -954,7 +954,7 @@
               href: record-transformfields.md
         - name: Replacer functions
           items: 
-            - name: Replacer functions Overview
+            - name: Replacer functions overview
               href: replacer-functions.md
             - name: Replacer.ReplaceText
               href: replacer-replacetext.md
@@ -962,7 +962,7 @@
               href: replacer-replacevalue.md
         - name: Splitter functions
           items: 
-            - name: Splitter functions Overview
+            - name: Splitter functions overview
               href: splitter-functions.md
             - name: QuoteStyle.Csv
               href: quotestyle-csv.md
@@ -988,7 +988,7 @@
               href: splitter-splittextbywhitespace.md
         - name: Table functions
           items: 
-            - name: Table functions Overview
+            - name: Table functions overview
               href: table-functions.md
             - name: ExtraValues.Error
               href: extravalues-error.md
@@ -1252,7 +1252,7 @@
               href: sharptable.md
         - name: Text functions
           items: 
-            - name: Text functions Overview
+            - name: Text functions overview
               href: text-functions.md
             - name: Character.FromNumber
               href: character-fromnumber.md
@@ -1360,7 +1360,7 @@
               href: textencoding-windows.md
         - name: Time functions
           items: 
-            - name: Time functions Overview
+            - name: Time functions overview
               href: time-functions.md
             - name: Time.EndOfHour
               href: time-endofhour.md
@@ -1384,6 +1384,8 @@
               href: sharptime.md
         - name: Type functions
           items: 
+            - name: Type functions overview
+              href: type-functions.md
             - name: Type.AddTableKey
               href: type-addtablekey.md
             - name: Type.ClosedRecord
@@ -1428,11 +1430,9 @@
               href: type-tableschema.md
             - name: Type.Union
               href: type-union.md
-            - name: Type functions Overview
-              href: type-functions.md
         - name: Uri functions
           items: 
-            - name: Uri functions Overview
+            - name: Uri functions overview
               href: uri-functions.md
             - name: Uri.BuildQueryString
               href: uri-buildquerystring.md
@@ -1444,7 +1444,7 @@
               href: uri-parts.md
         - name: Value functions
           items: 
-            - name: Value functions Overview
+            - name: Value functions overview
               href: value-functions.md
             - name: DirectQueryCapabilities.From
               href: directquerycapabilities-from.md

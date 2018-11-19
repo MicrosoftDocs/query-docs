@@ -11,19 +11,12 @@ manager: kfile
 ---
 # ActiveDirectory.Domains
 
-  
-## About  
-Returns a table with Domain information available in the current domain or optional Active Directory forest.  
-  
 ## Syntax
 
 <pre>  
-ActiveDirectory.Domains(optional forestRootDomainName as nullable text) as table  
+ActiveDirectory.Domains(optional <b>forestRootDomainName</b> as nullable text) as table
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|optional forestRootDomainName|**Optional** Active Directory forest.|  
-  
+## About
+
+Returns a list of Active Directory domains in the same forest as the specified domain or of the current machine's domain if none is specified.
