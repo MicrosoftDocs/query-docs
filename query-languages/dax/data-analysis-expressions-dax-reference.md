@@ -22,12 +22,12 @@ Data Analysis Expressions (DAX) is a library of functions and operators that can
                     <div class="card">
                         <div class="cardImageOuter">
                             <div class="cardImage"> 
-                                <img src="media/rocket.png" alt="DAX function reference" />
+                                <img src="media/page.png" alt="DAX function reference" />
                             </div>
                         </div>
                         <div class="cardText">
                             <h3>DAX function reference</h3>
-                            <p>Get detailed information for any of the over 200 DAX functions.</p>
+                            <p>Get detailed information for any of the over 200 DAX functions. Functions are divided by category, making the function you need easy to find.</p>
                         </div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@ Data Analysis Expressions (DAX) is a library of functions and operators that can
                         </div>
                         <div class="cardText">
                             <h3>Learn DAX videos</h3>
-                            <p>Learn quickly with introductory and advanced videos.</p>
+                            <p>Get started quickly with introductory and advanced videos from leading DAX pros.</p>
                         </div>
                     </div>
                 </div>
@@ -60,12 +60,12 @@ Data Analysis Expressions (DAX) is a library of functions and operators that can
                     <div class="card">
                         <div class="cardImageOuter">
                             <div class="cardImage"> 
-                                <img src="media/rocket.png" alt="DAX operators" />
+                                <img src="media/machine.png" alt="DAX operators" />
                             </div>
                         </div>
                         <div class="cardText">
                             <h3>DAX operators</h3>
-                            <p>DAX operators are used in expressions that compare values.</p>
+                            <p>DAX operators are used in expressions that compare values, perform arithmetic calculations, or work with strings.</p>
                         </div>
                     </div>
                 </div>
