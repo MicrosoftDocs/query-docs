@@ -2,6 +2,7 @@
 title: "Data Analysis Expressions (DAX) Reference | Microsoft Docs"
 ms.service: powerbi 
 ms.topic: reference
+layout: LandingPage
 ms.date: 11/27/2018
 ms.reviewer: owend
 ms.article: reference
@@ -22,12 +23,12 @@ Data Analysis Expressions (DAX) is a library of functions and operators that can
                     <div class="card">
                         <div class="cardImageOuter">
                             <div class="cardImage"> 
-                                <img src="https://docs.microsoft.com/media/common/i_article.svg" alt="Power Query Overview" />
+                                <img src="https://docs.microsoft.com/media/common/i_article.svg" alt="DAX function reference" />
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Power Query Overview</h3>
-                            <p>Learn about Power Query, and how it can help you connect, transform, and use data from many different sources.</p>
+                            <h3>DAX function reference</h3>
+                            <p>Get detailed information for any of the over 200 DAX functions.</p>
                         </div>
                     </div>
                 </div>
@@ -35,18 +36,18 @@ Data Analysis Expressions (DAX) is a library of functions and operators that can
         </a>
     </li>
     <li>
-        <a href="dax-function-reference.md">
+        <a href="dax-learn-videos.md">
             <div class="cardSize">
                 <div class="cardPadding">
                     <div class="card">
                         <div class="cardImageOuter">
                             <div class="cardImage"> 
-                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Use Power Query in Power BI Desktop" />
+                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Learn quickly with introductory and advanced videos." />
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Use Power Query in Power BI Desktop</h3>
-                            <p>Quickly get started using Power Query by seeing it in action in Power BI Desktop.</p>
+                            <h3>Learn DAX videos</h3>
+                            <p>Learn quickly with introductory and advanced videos.</p>
                         </div>
                     </div>
                 </div>
@@ -54,75 +55,18 @@ Data Analysis Expressions (DAX) is a library of functions and operators that can
         </a>
     </li>
     <li>
-        <a href="dax-function-reference.md">
+        <a href="dax-operator-reference.md">
             <div class="cardSize">
                 <div class="cardPadding">
                     <div class="card">
                         <div class="cardImageOuter">
                             <div class="cardImage"> 
-                                <img src="https://docs.microsoft.com/media/common/i_code-automate.svg" alt="Connector Development" />
+                                <img src="https://docs.microsoft.com/media/common/i_code-automate.svg" alt="DAX operators" />
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Develop your own connector</h3>
-                            <p>You can develop your own custom connector for Power Query, and enable connecting to your data source of choice.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li>
-        <a href="dax-function-reference.md">
-            <div class="cardSize">
-                <div class="cardPadding">
-                    <div class="card">
-                        <div class="cardImageOuter">
-                            <div class="cardImage"> 
-                                <img src="https://docs.microsoft.com/media/common/i_tasks.svg" alt="Common tasks using Power Query" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Common tasks using Power Query</h3>
-                            <p>See how to perform common tasks using Power Query, including connecting, shaping, and modeling data.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li>
-        <a href="dax-function-reference.md">
-            <div class="cardSize">
-                <div class="cardPadding">
-                    <div class="card">
-                        <div class="cardImageOuter">
-                            <div class="cardImage"> 
-                                <img src="https://docs.microsoft.com/media/common/i_article.svg" alt="M Language Reference" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>M language reference</h3>
-                            <p>Gain access to the reference content for the M language, used by Power Query.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li>
-        <a href="dax-function-reference.md">
-            <div class="cardSize">
-                <div class="cardPadding">
-                    <div class="card">
-                        <div class="cardImageOuter">
-                            <div class="cardImage"> 
-                                <img src="https://docs.microsoft.com/media/common/i_code-quality.svg" alt="Certify your connectors" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Certify your connectors</h3>
-                            <p>Learn about the process required for your connector to become a certified connector for Microsoft Power Query.</p>
+                            <h3>DAX operators</h3>
+                            <p>DAX operators are used in expressions that compare values, perform arithmetic calculations, or work with strings. This article describes the operator and how they can be used.</p>
                         </div>
                     </div>
                 </div>
