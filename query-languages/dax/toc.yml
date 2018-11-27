@@ -2,13 +2,17 @@
   href: data-analysis-expressions-dax-reference.md
   expanded: true
   items: 
-    - name: New DAX Functions
-      href: new-dax-functions.md
+    - name: Learn
+      items:
+        - name: Videos
+          href: dax-learn-videos.md
     - name: DAX Function Reference
       expanded: true
       items: 
         - name: DAX Function Reference Overview
           href: dax-function-reference.md
+        - name: New DAX Functions
+          href: new-dax-functions.md
         - name: Date and Time Functions
           items: 
             - name: Date and Time Functions Overview
