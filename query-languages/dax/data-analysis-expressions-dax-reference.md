@@ -27,7 +27,7 @@ Data Analysis Expressions (DAX) is a library of functions and operators that can
                         </div>
                         <div class="cardText">
                             <h3>DAX function reference</h3>
-                            <p>Get detailed information for any of the over 200 DAX functions. Functions are divided by category, making the function you need easy to find.</p>
+                            <p>Get detailed information about any of the over 200 DAX functions, including syntax, parameters, remarks, and examples.</p>
                         </div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@ Data Analysis Expressions (DAX) is a library of functions and operators that can
                         </div>
                         <div class="cardText">
                             <h3>Learn DAX videos</h3>
-                            <p>Get started quickly with introductory and advanced videos from leading DAX pros.</p>
+                            <p>Learn quickly with introductory and advanced videos from leading DAX pros.<br></p>
                         </div>
                     </div>
                 </div>
