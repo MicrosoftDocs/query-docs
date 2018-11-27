@@ -42,6 +42,7 @@
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "dax-language"
+    "dest": "dax-language",
+    "markdownEngineName": "markdig"
   }
 }
