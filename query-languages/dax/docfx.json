@@ -22,7 +22,8 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -41,6 +42,7 @@
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "dax-language"
+    "dest": "dax-language",
+    "markdownEngineName": "markdig"
   }
 }

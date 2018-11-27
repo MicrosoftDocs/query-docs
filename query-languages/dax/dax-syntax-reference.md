@@ -1,5 +1,5 @@
 ---
-title: "DAX Syntax Reference | Microsoft Docs"
+title: "DAX syntax | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,10 +9,10 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# DAX Syntax Reference
-This topic provides details about the syntax and requirements of the DAX language.   
+# DAX syntax
+This article describes syntax and requirements for the DAX formula expression language.   
   
-## <a name="bkmk_SyntaxReqs"></a>Syntax Requirements  
+## Syntax requirements  
 DAX formulas are very similar to the formulas you type in Excel tables, but there are some key differences.  
   
 -   In Microsoft Excel you can reference individual cells or arrays; in Power Pivot you can reference only complete tables or columns of data. However, If you need to work with only part of a column, or with unique values from a column, you can achieve similar behavior by using DAX functions that filter the column or return unique values.  
@@ -46,7 +46,7 @@ For example, the following are all valid formulas.
 > [!NOTE]  
 > Formulas can behave differently depending on whether they are used in a calculated column, or in a measure within a PivotTable. You must always be aware of the context and how the data that you use in the formula is related to other data that might be used in the calculation.  
   
-## <a name="bkmk_NamingConventions"></a>Naming Requirements  
+## Naming requirements  
 A data model window can contain multiple tables, each on its own tab. Together the tables and their columns comprise a database stored in the in-memory analytics engine (VertiPaq). Within that database, all tables must have unique names. The names of columns must also be unique within each table. All object names are case-insensitive; for example, the names **SALES** and **Sales** would represent the same table.  
   
 Each column and measure that you add to an existing data model must belong to a specific table. You specify the table that contains the column either implicitly, when you create a calculated column within a table, or explicitly, when you create a measure and specify the name of the table where the measure definition should be stored.  
@@ -89,13 +89,13 @@ Column names must be unique in the context of a table; however, multiple tables 
   
 In general, columns can be referenced without referencing the base table that they belong to, except when there might be a name conflict to resolve or with certain functions that require column names to be fully qualified.  
   
-#### Reserved Keywords  
+#### Reserved keywords  
 If the name that you use for a table is the same as an Analysis Services reserved keyword, an error is raised, and you must rename the table. However, you can use keywords in object names if the object name is enclosed in brackets (for columns) or quotation marks (for tables).  
   
 > [!NOTE]  
 > Note that quotation marks can be represented by several different characters, depending on the application. If you paste formulas from an external document or Web page, make sure to check the ASCII code of the character that is used for opening and closing quotes, to ensure that they are the same. Otherwise DAX may be unable to recognize the symbols as quotation marks, making the reference invalid.  
   
-#### Special Characters  
+#### Special characters  
 The following characters and character types are not valid in the names of tables, columns, or measures:  
   
 -   Leading or trailing spaces; unless the spaces are enclosed by name delimiters, brackets, or single apostrophes.  
@@ -106,7 +106,7 @@ The following characters and character types are not valid in the names of table
   
     .,;':/\\*|?&%$!+=()[]{}<>  
   
-#### Examples of Object Names  
+#### Examples of object names  
 The following table shows examples of some object names:  
   
 ||||  
@@ -122,7 +122,7 @@ The following table shows examples of some object names:
 > [!NOTE]  
 > To make it easier to enter the fully qualified names of columns, we recommend that you use the AutoComplete feature when building formulas.  
   
-### Miscellaneous Restrictions  
+### Other restrictions  
 The syntax required for each function, and the type of operation it can perform, varies greatly depending on the function. In general, however, the following rules apply to all formulas and expressions:  
   
 -   DAX formulas and expressions cannot modify or insert individual values in tables.  
@@ -133,24 +133,8 @@ The syntax required for each function, and the type of operation it can perform,
   
 -   DAX has several functions that return a table. Typically, you use the values returned by these functions as input to other functions, which require a table as input.  
   
-## <a name="bkmk_FunctionList"></a>Functions in DAX  
-DAX provides the following types of functions.  
   
--   [Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-  
--   [Filter Functions &#40;DAX&#41;](filter-functions-dax.md)  
-  
--   [Information Functions &#40;DAX&#41;](information-functions-dax.md)  
-  
--   [Logical Functions &#40;DAX&#41;](logical-functions-dax.md)  
-  
--   [Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
-  
--   [Statistical Functions &#40;DAX&#41;](statistical-functions-dax.md)  
-  
--   [Text Functions &#40;DAX&#41;](text-functions-dax.md)  
-  
-## <a name="bkmk_Operators"></a>DAX Operators and Constants  
+## </a>DAX operators and constants  
 The following table lists the operators that are supported by DAX. In general, operators in DAX behave the same way that they do in Microsoft Excel, with some minor exceptions. For more information about the syntax of individual operators, see [DAX Operator Reference](dax-operator-reference.md).  
   
 |Operator Type|Symbol and Use|  
@@ -161,7 +145,7 @@ The following table lists the operators that are supported by DAX. In general, o
 |Text concatenation operator|& (concatenation)|  
 |Logic operators|&& (and)<br /><br />&#124;&#124; (or)|  
   
-## <a name="bkmk_DataTypes"></a>Data Types in DAX  
+## </a>Data types  
 You do not need to cast, convert, or otherwise specify the data type of a column or value that you use in a DAX formula. When you use data in a DAX formula, DAX automatically identifies the data types in referenced columns and of the values that you type in, and performs implicit conversions where necessary to complete the specified operation.  
   
 For example, if you try to add a number to a date value, Power Pivot will interpret the operation in the context of the function, like Excel does, and convert the numbers to a common data type, and then present the result in the intended format, a date.  
