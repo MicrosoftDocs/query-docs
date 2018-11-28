@@ -1,17 +1,16 @@
 ---
 title: "DAX Queries | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 11/27/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# DAX Queries
- This topic describes how to pass parameter values in an XMLA structure to a DAX query statement.  
-With DAX queries, you can retrieve data defined by a table expression from the in-memory analytics engine (VertiPaq). You can create measures as part of the query; these measures exist only for the duration of the query.  
+# DAX queries
+
+With DAX queries, you can retrieve data defined by a table expression from the in-memory analytics engine (VertiPaq). You can create measures as part of the query; these measures exist only for the duration of the query. DAX queries can be created and run in SQL Server Management Studio and open-source tools like DAX Studio (daxstudio.org).
   
 ## Syntax  
   
@@ -33,6 +32,7 @@ EVALUATE <table>
 ```
   
 #### Parameters  
+
 **DEFINE** clause  
 An optional clause of the query statement that allows the user to define measures for the duration of the query. Definitions can reference other definitions that appear before or after the current definition.  
   
@@ -73,13 +73,12 @@ A constant value; it cannot be an expression.
 **parameter**  
 The name of a parameter in the XMLA statement prefixed with an **@** character. 
 
-
-
-
 ### Return value  
+
 A table of data.  
   
 ## Parameters in XMLA and DAX queries  
+
 A well-defined DAX query statement can be parameterized and then used over and over with just changes in the parameter values.  
   
 The [Execute Method (XMLA)](https://msdn.microsoft.com/en-us/0fff5221-7164-4bbc-ab58-49cf04c52664) method in XMLA has a [Parameters Element (XMLA)](https://msdn.microsoft.com/en-us/d46454a1-a1d1-4aa8-95ea-54be22a53e83) collection element that allows parameters to be defined and assigned a value; within the collection, each [Parameter Element (XMLA)](https://msdn.microsoft.com/en-us/fe31ac3d-a3e8-4f60-a81a-c43271ddbed4) element defines the name of the parameter and a value to it.  

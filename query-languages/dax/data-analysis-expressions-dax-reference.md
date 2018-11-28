@@ -103,7 +103,7 @@ Data Analysis Expressions (DAX) is a library of functions and operators that can
                         </div>
                         <div class="cardText">
                             <h3>DAX queries</h3>
-                            <p>Learn how to use SQL Server Management Studio to create an *evaluate* statement that queries your Analysis Services data model.</p>
+                            <p>Use SQL Server Management Studio to create an evaluate statement that queries your Analysis Services data model.</p>
                         </div>
                     </div>
                 </div>
