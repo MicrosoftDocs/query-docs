@@ -11,7 +11,7 @@ manager: kfile
 ---
 # New DAX functions
 
-DAX is continuously being improved with new functions and functionality to support new features in Power BI, Analysis Services, and Excel. New functions are included Power BI Desktop, Analysis Services (SSDT, SSMS), and Power Pivot in Excel updates. To get the latest, make sure you update to the latest version.  
+DAX is continuously being improved with new functions and functionality to support new features. New functions and updates are included Power BI Desktop, Analysis Services (SSDT, SSMS), and Power Pivot in Excel product updates. To get the latest, make sure you're using the latest version.  
 
 > [!IMPORTANT]
 > Not all functions are supported or included in earlier versions of Power BI Desktop, Analysis Services, and Power Pivot in Excel.  
