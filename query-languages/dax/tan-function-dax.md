@@ -1,5 +1,5 @@
 ---
-title: "TAN Function (DAX) | Microsoft Docs"
+title: "TAN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# TAN Function (DAX)
+# TAN function (DAX)
 Returns the tangent of the given angle.  
   
 ## Syntax  

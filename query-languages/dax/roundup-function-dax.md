@@ -1,5 +1,5 @@
 ---
-title: "ROUNDUP Function (DAX) | Microsoft Docs"
+title: "ROUNDUP function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ROUNDUP Function (DAX)
+# ROUNDUP function (DAX)
 Rounds a number up, away from 0 (zero).  
   
 ## Syntax  
@@ -37,7 +37,7 @@ ROUNDUP behaves like ROUND, except that it always rounds a number up.
   
 -   If **num_digits** is less than 0, then number is rounded up to the left of the decimal point.  
   
-## Related Functions  
+## Related functions  
 ROUNDUP behaves like ROUND, except that it always rounds a number up.  
   
 ## Example  
@@ -80,10 +80,10 @@ When **num_digits** is less than zero, the number of places to the left of the d
 |1.34|10|  
 |345.01|350|  
   
-## See Also  
-[Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
-[ROUND Function &#40;DAX&#41;](round-function-dax.md)  
-[ROUNDDOWN Function &#40;DAX&#41;](rounddown-function-dax.md)  
-[MROUND Function &#40;DAX&#41;](mround-function-dax.md)  
-[INT Function &#40;DAX&#41;](int-function-dax.md)  
+## See also  
+[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+[ROUND function &#40;DAX&#41;](round-function-dax.md)  
+[ROUNDDOWN function &#40;DAX&#41;](rounddown-function-dax.md)  
+[MROUND function &#40;DAX&#41;](mround-function-dax.md)  
+[INT function &#40;DAX&#41;](int-function-dax.md)  
   

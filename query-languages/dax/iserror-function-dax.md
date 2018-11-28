@@ -1,5 +1,5 @@
 ---
-title: "ISERROR Function (DAX) | Microsoft Docs"
+title: "ISERROR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ISERROR Function (DAX)
+# ISERROR function (DAX)
 Checks whether a value is an error, and returns TRUE or FALSE.  
   
 ## Syntax  
@@ -41,8 +41,8 @@ The following example calculates the ratio of total Internet sales to total rese
     )  
 ```
   
-## See Also  
-[Information Functions &#40;DAX&#41;](information-functions-dax.md)  
-[IFERROR Function &#40;DAX&#41;](iferror-function-dax.md)  
-[IF Function &#40;DAX&#41;](if-function-dax.md)  
+## See also  
+[Information functions &#40;DAX&#41;](information-functions-dax.md)  
+[IFERROR function &#40;DAX&#41;](iferror-function-dax.md)  
+[IF function &#40;DAX&#41;](if-function-dax.md)  
   

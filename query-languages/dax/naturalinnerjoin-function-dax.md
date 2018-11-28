@@ -1,5 +1,5 @@
 ---
-title: "NATURALINNERJOIN Function (DAX) | Microsoft Docs"
+title: "NATURALINNERJOIN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# NATURALINNERJOIN Function (DAX)
+# NATURALINNERJOIN function (DAX)
   
 Performs an inner join of a table with another table. The tables are joined on common columns (by name) in the two tables. If the two tables have no common column names, an error is returned.  
   

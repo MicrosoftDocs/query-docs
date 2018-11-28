@@ -1,5 +1,5 @@
 ---
-title: "FACT Function (DAX) | Microsoft Docs"
+title: "FACT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# FACT Function (DAX)
+# FACT function (DAX)
 Returns the factorial of a number, equal to the series 1*2\*3\*...\* , ending in the given number.  
   
 ## Syntax  
@@ -49,7 +49,7 @@ The following table shows the expected results:
 |5|120|  
 |170|7.257415615308E+306|  
   
-## See Also  
-[Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
-[TRUNC Function &#40;DAX&#41;](trunc-function-dax.md)  
+## See also  
+[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+[TRUNC function &#40;DAX&#41;](trunc-function-dax.md)  
   

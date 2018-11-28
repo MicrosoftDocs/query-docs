@@ -1,5 +1,5 @@
 ---
-title: "ISODD Function (DAX) | Microsoft Docs"
+title: "ISODD function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ISODD Function (DAX)
+# ISODD function (DAX)
 Returns TRUE if number is odd, or FALSE if number is even.  
   
 ## Syntax  

@@ -1,5 +1,5 @@
 ---
-title: "ATAN Function (DAX) | Microsoft Docs"
+title: "ATAN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ATAN Function (DAX)
+# ATAN function (DAX)
 Returns the arctangent, or inverse tangent, of a number. The arctangent is the angle whose tangent is *number*. The returned angle is given in radians in the range -pi/2 to pi/2.  
   
 ## Syntax  

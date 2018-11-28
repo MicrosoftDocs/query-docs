@@ -1,5 +1,5 @@
 ---
-title: "COMBINEVALUES Function (DAX) | Microsoft Docs"
+title: "COMBINEVALUES function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -8,7 +8,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# COMBINEVALUES Function (DAX)
+# COMBINEVALUES function (DAX)
 The COMBINEVALUES function joins two or more text strings into one text string. The primary purpose of this function is to support multi-column relationships in DirectQuery models, see **Remarks** for details.  
   
 ## Syntax  

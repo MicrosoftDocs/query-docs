@@ -1,5 +1,5 @@
 ---
-title: "LN Function (DAX) | Microsoft Docs"
+title: "LN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# LN Function (DAX)
+# LN function (DAX)
 Returns the natural logarithm of a number. Natural logarithms are based on the constant e (2.71828182845904).  
   
 ## Syntax  
@@ -37,7 +37,7 @@ The following example returns the natural logarithm of the number in the column,
 =LN([Values])  
 ```
   
-## See Also  
-[Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
-[EXP Function &#40;DAX&#41;](exp-function-dax.md)  
+## See also  
+[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+[EXP function &#40;DAX&#41;](exp-function-dax.md)  
   

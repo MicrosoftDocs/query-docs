@@ -1,5 +1,5 @@
 ---
-title: "ISNUMBER Function (DAX) | Microsoft Docs"
+title: "ISNUMBER function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ISNUMBER Function (DAX)
+# ISNUMBER function (DAX)
 Checks whether a value is a number, and returns TRUE or FALSE.  
   
 ## Syntax  
@@ -41,6 +41,6 @@ The following three samples show the behavior of ISNUMBER.
 =IF(ISNUMBER("123"), "Is number", "Is Not number")  
 ```
   
-## See Also  
-[Information Functions &#40;DAX&#41;](information-functions-dax.md)  
+## See also  
+[Information functions &#40;DAX&#41;](information-functions-dax.md)  
   

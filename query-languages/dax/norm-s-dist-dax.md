@@ -1,5 +1,5 @@
 ---
-title: "NORM.S.DIST Function (DAX) | Microsoft Docs"
+title: "NORM.S.DIST function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 8/14/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# NORM.S.DIST Function
+# NORM.S.DIST function
 Returns the standard normal distribution (has a mean of zero and a standard deviation of one).
  
   
@@ -42,9 +42,9 @@ Returns
 |0.908788725604095    |
 
 
-## See Also  
+## See also  
 
-[NORM.INV Function](norm-inv-dax.md)  
-[NORM.DIST Function](norm-dist-dax.md)   
+[NORM.INV function](norm-inv-dax.md)  
+[NORM.DIST function](norm-dist-dax.md)   
 [NORM.S.INV](norm-s-inv-dax.md)   
   

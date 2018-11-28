@@ -1,5 +1,5 @@
 ---
-title: "ISTEXT Function (DAX) | Microsoft Docs"
+title: "ISTEXT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ISTEXT Function (DAX)
+# ISTEXT function (DAX)
 Checks if a value is text, and returns TRUE or FALSE.  
   
 ## Syntax  
@@ -44,6 +44,6 @@ The following examples show the behavior of the ISTEXT function.
 =IF(ISTEXT(BLANK()), "Is Text", "Is Non-Text")  
 ```
   
-## See Also  
-[Information Functions &#40;DAX&#41;](information-functions-dax.md)  
+## See also  
+[Information functions &#40;DAX&#41;](information-functions-dax.md)  
   

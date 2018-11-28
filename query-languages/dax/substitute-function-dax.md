@@ -1,5 +1,5 @@
 ---
-title: "SUBSTITUTE Function (DAX) | Microsoft Docs"
+title: "SUBSTITUTE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# SUBSTITUTE Function (DAX)
+# SUBSTITUTE function (DAX)
 Replaces existing text with new text in a text string.  
   
 ## Syntax  
@@ -48,7 +48,7 @@ The following formula creates a copy of the column [Product Code] that substitut
 =SUBSTITUTE([Product Code], "NW", "PA")  
 ```
   
-## See Also  
-[Text Functions &#40;DAX&#41;](text-functions-dax.md)  
-[REPLACE Function &#40;DAX&#41;](replace-function-dax.md)  
+## See also  
+[Text functions &#40;DAX&#41;](text-functions-dax.md)  
+[REPLACE function &#40;DAX&#41;](replace-function-dax.md)  
   

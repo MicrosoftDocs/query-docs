@@ -1,5 +1,5 @@
 ---
-title: "CROSSJOIN  Function (DAX) | Microsoft Docs"
+title: "CROSSJOIN  function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# CROSSJOIN  Function (DAX)
+# CROSSJOIN  function (DAX)
 Returns a table that contains the Cartesian product of all rows from all tables in the arguments. The columns in the new table are all the columns in all the argument tables.  
   
 ## Syntax  

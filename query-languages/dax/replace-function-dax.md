@@ -1,5 +1,5 @@
 ---
-title: "REPLACE Function (DAX) | Microsoft Docs"
+title: "REPLACE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# REPLACE Function (DAX)
+# REPLACE function (DAX)
 REPLACE replaces part of a text string, based on the number of characters you specify, with a different text string.  
   
 ## Syntax  
@@ -42,7 +42,7 @@ The following formula creates a new calculated column that replaces the first tw
 =REPLACE('New Products'[Product Code],1,2,"OB")  
 ```
   
-## See Also  
-[Text Functions &#40;DAX&#41;](text-functions-dax.md)  
-[SUBSTITUTE Function &#40;DAX&#41;](substitute-function-dax.md)  
+## See also  
+[Text functions &#40;DAX&#41;](text-functions-dax.md)  
+[SUBSTITUTE function &#40;DAX&#41;](substitute-function-dax.md)  
   

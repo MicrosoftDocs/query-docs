@@ -1,5 +1,5 @@
 ---
-title: "TOTALQTD Function (DAX) | Microsoft Docs"
+title: "TOTALQTD function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# TOTALQTD Function (DAX)
+# TOTALQTD function (DAX)
 Evaluates the value of the **expression** for the dates in the quarter to date, in the current context.  
   
 ## Syntax  
@@ -39,10 +39,10 @@ The **dates** argument can be any of the following:
 -   A Boolean expression that defines a single-column table of date/time values.  
   
 > [!NOTE]  
-> Constraints on Boolean expressions are described in the topic, [CALCULATE Function &#40;DAX&#41;](calculate-function-dax.md).  
+> Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
   
 > [!NOTE]  
-> The **filter** expression has restrictions described in the topic, [CALCULATE Function &#40;DAX&#41;](calculate-function-dax.md).  
+> The **filter** expression has restrictions described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
 >   
 > This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
@@ -57,10 +57,10 @@ To see how this works, create a PivotTable and add the fields, CalendarYear, Cal
 =TOTALQTD(SUM(InternetSales_USD[SalesAmount_USD]),DateTime[DateKey])  
 ```
   
-## See Also  
-[ALL Function &#40;DAX&#41;](all-function-dax.md)  
-[CALCULATE Function &#40;DAX&#41;](calculate-function-dax.md)  
-[TOTALYTD Function &#40;DAX&#41;](totalytd-function-dax.md)  
-[TOTALMTD Function &#40;DAX&#41;](totalmtd-function-dax.md)  
+## See also  
+[ALL function &#40;DAX&#41;](all-function-dax.md)  
+[CALCULATE function &#40;DAX&#41;](calculate-function-dax.md)  
+[TOTALYTD function &#40;DAX&#41;](totalytd-function-dax.md)  
+[TOTALMTD function &#40;DAX&#41;](totalmtd-function-dax.md)  
 [Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
   

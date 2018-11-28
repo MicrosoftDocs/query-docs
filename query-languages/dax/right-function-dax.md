@@ -1,5 +1,5 @@
 ---
-title: "RIGHT Function (DAX) | Microsoft Docs"
+title: "RIGHT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# RIGHT Function (DAX)
+# RIGHT function (DAX)
 RIGHT returns the last character or characters in a text string, based on the number of characters you specify.  
   
 ## Syntax  
@@ -57,8 +57,8 @@ The following formula returns a variable number of digits from the product code 
 =RIGHT('New Products'[ProductCode],[MyCount])  
 ```
   
-## See Also  
-[Text Functions &#40;DAX&#41;](text-functions-dax.md)  
-[LEFT Function &#40;DAX&#41;](left-function-dax.md)  
-[MID Function &#40;DAX&#41;](mid-function-dax.md)  
+## See also  
+[Text functions &#40;DAX&#41;](text-functions-dax.md)  
+[LEFT function &#40;DAX&#41;](left-function-dax.md)  
+[MID function &#40;DAX&#41;](mid-function-dax.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: "ISINSCOPE Function (DAX) | Microsoft Docs"
+title: "ISINSCOPE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ISINSCOPE Function (DAX)
+# ISINSCOPE function (DAX)
 Returns true when the specified column is the level in a hierarchy of levels.
   
 ## Syntax  
@@ -85,8 +85,8 @@ Returns
 |Bikes     |   Touring Bikes     |   FALSE     |    FALSE     |     3,844,801.05    |     13.58    |
 
   
-## See Also  
-[SUMMARIZECOLUMNS Function &#40;DAX&#41;](summarizecolumns-function-dax.md)  
-[CALCULATE Function &#40;DAX&#41;](calculate-function-dax.md)  
+## See also  
+[SUMMARIZECOLUMNS function &#40;DAX&#41;](summarizecolumns-function-dax.md)  
+[CALCULATE function &#40;DAX&#41;](calculate-function-dax.md)  
 
   

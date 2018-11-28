@@ -1,5 +1,5 @@
 ---
-title: "REPT Function (DAX) | Microsoft Docs"
+title: "REPT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# REPT Function (DAX)
+# REPT function (DAX)
 Repeats text a given number of times. Use REPT to fill a cell with a number of instances of a text string.  
   
 ## Syntax  
@@ -65,6 +65,6 @@ The following example returns the string in the column, [MyText], repeated for t
 |Number|0||  
 |85|3|858585|  
   
-## See Also  
-[Text Functions &#40;DAX&#41;](text-functions-dax.md)  
+## See also  
+[Text functions &#40;DAX&#41;](text-functions-dax.md)  
   

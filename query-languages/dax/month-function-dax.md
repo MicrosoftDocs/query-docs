@@ -1,5 +1,5 @@
 ---
-title: "MONTH Function (DAX) | Microsoft Docs"
+title: "MONTH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# MONTH Function (DAX)
+# MONTH function (DAX)
 Returns the month as a number from 1 (January) to 12 (December).  
   
 ## Syntax  
@@ -50,10 +50,10 @@ The following expression returns the month from the date in the **TransactionDat
 =MONTH(Orders[TransactionDate])  
 ```
   
-## See Also  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[HOUR Function &#40;DAX&#41;](hour-function-dax.md)  
-[MINUTE Function &#40;DAX&#41;](minute-function-dax.md)  
-[YEAR Function &#40;DAX&#41;](year-function-dax.md)  
-[SECOND Function &#40;DAX&#41;](second-function-dax.md)  
+## See also  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+[HOUR function &#40;DAX&#41;](hour-function-dax.md)  
+[MINUTE function &#40;DAX&#41;](minute-function-dax.md)  
+[YEAR function &#40;DAX&#41;](year-function-dax.md)  
+[SECOND function &#40;DAX&#41;](second-function-dax.md)  
   

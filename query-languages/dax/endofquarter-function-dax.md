@@ -1,5 +1,5 @@
 ---
-title: "ENDOFQUARTER Function (DAX) | Microsoft Docs"
+title: "ENDOFQUARTER function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ENDOFQUARTER Function (DAX)
+# ENDOFQUARTER function (DAX)
 Returns the last date of the quarter in the current context for the specified column of dates.  
   
 ## Syntax  
@@ -38,7 +38,7 @@ The **dates** argument can be any of the following:
 -   A Boolean expression that defines a single-column table of date/time values.  
   
 > [!NOTE]  
-> Constraints on Boolean expressions are described in the topic, [CALCULATE Function &#40;DAX&#41;](calculate-function-dax.md).  
+> Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
   
 This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
@@ -51,9 +51,9 @@ To see how this works, create a PivotTable and add the fields CalendarYear and M
 =ENDOFQUARTER(DateTime[DateKey])  
 ```
   
-## See Also  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
-[ENDOFYEAR Function &#40;DAX&#41;](endofyear-function-dax.md)  
-[ENDOFMONTH Function &#40;DAX&#41;](endofmonth-function-dax.md)  
+## See also  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
+[ENDOFYEAR function &#40;DAX&#41;](endofyear-function-dax.md)  
+[ENDOFMONTH function &#40;DAX&#41;](endofmonth-function-dax.md)  
   

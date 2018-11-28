@@ -1,5 +1,5 @@
 ---
-title: "TRUNC Function (DAX) | Microsoft Docs"
+title: "TRUNC function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# TRUNC Function (DAX)
+# TRUNC function (DAX)
 Truncates a number to an integer by removing the decimal, or fractional, part of the number.  
   
 ## Syntax  
@@ -45,11 +45,11 @@ The following formula returns -8, the integer part of -8.9.
 =TRUNC(-8.9)  
 ```
   
-## See Also  
-[Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
-[ROUND Function &#40;DAX&#41;](round-function-dax.md)  
-[ROUNDUP Function &#40;DAX&#41;](roundup-function-dax.md)  
-[ROUNDDOWN Function &#40;DAX&#41;](rounddown-function-dax.md)  
-[MROUND Function &#40;DAX&#41;](mround-function-dax.md)  
-[INT Function &#40;DAX&#41;](int-function-dax.md)  
+## See also  
+[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+[ROUND function &#40;DAX&#41;](round-function-dax.md)  
+[ROUNDUP function &#40;DAX&#41;](roundup-function-dax.md)  
+[ROUNDDOWN function &#40;DAX&#41;](rounddown-function-dax.md)  
+[MROUND function &#40;DAX&#41;](mround-function-dax.md)  
+[INT function &#40;DAX&#41;](int-function-dax.md)  
   

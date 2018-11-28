@@ -1,5 +1,5 @@
 ---
-title: "NOW Function (DAX) | Microsoft Docs"
+title: "NOW function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# NOW Function (DAX)
+# NOW function (DAX)
 Returns the current date and time in **datetime** format.  
   
 The NOW function is useful when you need to display the current date and time on a worksheet or calculate a value based on the current date and time, and have that value updated each time you open the worksheet.  
@@ -36,7 +36,7 @@ The following example returns the current date and time plus 3.5 days:
 =NOW()+3.5  
 ```
   
-## See Also  
-[UTCNOW Function](utcnow-function-dax.md)   
-[TODAY Function &#40;DAX&#41;](today-function-dax.md)  
+## See also  
+[UTCNOW function](utcnow-function-dax.md)   
+[TODAY function &#40;DAX&#41;](today-function-dax.md)  
   

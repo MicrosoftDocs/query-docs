@@ -1,5 +1,5 @@
 ---
-title: "T.DIST.2T Function (DAX) | Microsoft Docs"
+title: "T.DIST.2T function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 8/14/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# T.DIST.2T Function
+# T.DIST.2T function
 Returns the two-tailed Student's t-distribution.
  
   
@@ -42,10 +42,10 @@ Returns
 |0.054644929975921     |
 
 
-## See Also  
+## See also  
 
-[T.DIST Function](t-dist-dax.md)   
-[T.DIST.RT Function](t-dist-rt-dax.md)   
-[T.INV Function](t-inv-dax.md)   
-[T.INV.2t Function](t-inv-2t-dax.md)   
+[T.DIST function](t-dist-dax.md)   
+[T.DIST.RT function](t-dist-rt-dax.md)   
+[T.INV function](t-inv-dax.md)   
+[T.INV.2t function](t-inv-2t-dax.md)   
   

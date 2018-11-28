@@ -1,5 +1,5 @@
 ---
-title: "CALENDAR Function (DAX) | Microsoft Docs"
+title: "CALENDAR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# CALENDAR Function (DAX)
+# CALENDAR function (DAX)
   
 Returns a table with a single column named “Date” that contains a contiguous set of dates. The range of dates is from the specified start date to the specified end date, inclusive of those two dates.  
   

@@ -1,5 +1,5 @@
 ---
-title: "DATEADD Function (DAX) | Microsoft Docs"
+title: "DATEADD function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# DATEADD Function (DAX)
+# DATEADD function (DAX)
 Returns a table that contains a column of dates, shifted either forward or backward in time by the specified number of intervals from the dates in the current context.  
   
 ## Syntax  
@@ -40,7 +40,7 @@ The **dates** argument can be any of the following:
 -   A Boolean expression that defines a single-column table of date/time values.  
   
 > [!NOTE]  
-> Constraints on Boolean expressions are described in the topic, [CALCULATE Function &#40;DAX&#41;](calculate-function-dax.md).  
+> Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
   
 If the number specified for **number_of_intervals** is positive, the dates in **dates** are moved forward in time; if the number is negative, the dates in **dates** are shifted back in time.  
   
@@ -63,8 +63,8 @@ The following formula calculates dates that are one year before the dates in the
 =DATEADD(DateTime[DateKey],-1,year)  
 ```
   
-## See Also  
-[Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+## See also  
+[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
 [Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
   

@@ -1,5 +1,5 @@
 ---
-title: "ERROR Function | Microsoft Docs"
+title: "ERROR function | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ERROR Function
+# ERROR function
 Raises an error with an error message.  
   
 ## Syntax  

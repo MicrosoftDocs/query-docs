@@ -1,5 +1,5 @@
 ---
-title: "GEOMEAN Function (DAX) | Microsoft Docs"
+title: "GEOMEAN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,11 +9,11 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# GEOMEAN Function (DAX)
+# GEOMEAN function (DAX)
   
 Returns the geometric mean of the numbers in a column.  
   
-To return the geometric mean of an expression evaluated for each row in a table, use [GEOMEANX Function &#40;DAX&#41;](geomeanx-function-dax.md).  
+To return the geometric mean of an expression evaluated for each row in a table, use [GEOMEANX function &#40;DAX&#41;](geomeanx-function-dax.md).  
   
 ## Syntax  
   
@@ -42,6 +42,6 @@ The following computes the geometric mean of the Return column in the Investment
 =GEOMEAN( Investment[Return] )  
 ```
   
-## See Also  
-[GEOMEANX Function &#40;DAX&#41;](geomeanx-function-dax.md)  
+## See also  
+[GEOMEANX function &#40;DAX&#41;](geomeanx-function-dax.md)  
   

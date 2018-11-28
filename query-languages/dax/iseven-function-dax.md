@@ -1,5 +1,5 @@
 ---
-title: "ISEVEN Function (DAX) | Microsoft Docs"
+title: "ISEVEN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ISEVEN Function (DAX)
+# ISEVEN function (DAX)
 Returns TRUE if number is even, or FALSE if number is odd.  
   
 ## Syntax  

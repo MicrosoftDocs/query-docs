@@ -1,5 +1,5 @@
 ---
-title: "OR Function (DAX) | Microsoft Docs"
+title: "OR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# OR Function (DAX)
+# OR function (DAX)
 Checks whether one of the arguments is TRUE to return TRUE. The function returns FALSE if both arguments are FALSE.  
   
 ## Syntax  
@@ -68,6 +68,6 @@ IF(   OR(   CALCULATE(SUM('ResellerSales_USD'[SalesAmount_USD]), 'ProductSubcate
    )  
 ```
   
-## See Also  
-[Logical Functions &#40;DAX&#41;](logical-functions-dax.md)  
+## See also  
+[Logical functions &#40;DAX&#41;](logical-functions-dax.md)  
   

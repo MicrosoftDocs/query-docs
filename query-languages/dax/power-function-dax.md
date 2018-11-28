@@ -1,5 +1,5 @@
 ---
-title: "POWER Function (DAX) | Microsoft Docs"
+title: "POWER function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# POWER Function (DAX)
+# POWER function (DAX)
 Returns the result of a number raised to a power.  
   
 ## Syntax  
@@ -35,6 +35,6 @@ The following example returns 25.
 =POWER(5,2)  
 ```
   
-## See Also  
-[Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+## See also  
+[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
   

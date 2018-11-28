@@ -1,5 +1,5 @@
 ---
-title: "VAR Function (DAX) | Microsoft Docs"
+title: "VAR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018

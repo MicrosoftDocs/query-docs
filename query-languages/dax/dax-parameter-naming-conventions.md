@@ -1,5 +1,5 @@
 ---
-title: "DAX Parameter-Naming Conventions | Microsoft Docs"
+title: "DAX parameter-naming conventions | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,10 +9,10 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# DAX Parameter-Naming Conventions
+# DAX parameter-naming conventions
 Parameter names are standardized in DAX reference to facilitate the usage and understanding of the functions.  
   
-## Parameter Names  
+## Parameter names  
   
 |Paramter|Description|  
 |-|-|  

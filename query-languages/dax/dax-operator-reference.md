@@ -1,5 +1,5 @@
 ---
-title: "DAX Operator Reference | Microsoft Docs"
+title: "DAX operators | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,13 +9,13 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# DAX Operator Reference
+# DAX operators
 The Data Analysis Expression (DAX) language uses operators to create expressions that compare values, perform arithmetic calculations, or work with strings. This section describes the use of each operator.  
   
-## Types of Operators  
+## Types of operators  
 There are four different types of calculation operators: arithmetic, comparison, text concatenation, and logical.  
   
-### Arithmetic Operators  
+### Arithmetic operators  
 To perform basic mathematical operations such as addition, subtraction, or multiplication; combine numbers; and produce numeric results, use the following arithmetic operators.  
   
 |Arithmetic operator|Meaning|Example|  
@@ -29,7 +29,7 @@ To perform basic mathematical operations such as addition, subtraction, or multi
 > [!NOTE]  
 > The plus sign can function both as a *binary operator* and as a *unary operator*. A binary operator requires numbers on both sides of the operator and performs addition. When you use values in a DAX formula on both sides of the binary operator, DAX tries to cast the values to numeric data types if they are not already numbers. In contrast, the unary operator can be applied to any type of argument. The plus symbol does not affect the type or value and is simply ignored, whereas the minus operator creates a negative value, if applied to a numeric value.  
   
-### Comparison Operators  
+### Comparison operators  
 You can compare two values with the following operators. When two values are compared by using these operators, the result is a logical value, either TRUE or FALSE.  
   
 |Comparison operator|Meaning|Example|  
@@ -41,14 +41,14 @@ You can compare two values with the following operators. When two values are com
 |&lt;=|Less than or equal to|[Amount] &lt;= 100|  
 |&lt;&gt;|Not equal to|[Region] &lt;&gt; "USA"|  
   
-### Text Concatenation Operator  
+### Text concatenation operator  
 Use the ampersand (&amp;) to join, or concatenate, two or more text strings to produce a single piece of text.  
   
 |Text operator|Meaning|Example|  
 |-----------------|-----------|-----------|  
 |&amp; (ampersand)|Connects, or concatenates, two values to produce one continuous text value|[Region] &amp; ", " &amp; [City]|  
   
-### Logical Operators  
+### Logical operators  
 Use logical operators (&amp;&amp;) and (||) to combine expressions to produce a single result.  
   
 |Text operator|Meaning|Examples|  
@@ -57,15 +57,15 @@ Use logical operators (&amp;&amp;) and (||) to combine expressions to produce a 
 |&#124;&#124; (double pipe symbol)|Creates an OR condition between two logical expressions. If either expression returns TRUE, the result is TRUE; only when both expressions are FALSE is the result FALSE.|(([Region] = "France") &#124;&#124; ([BikeBuyer] = "yes"))| 
 |IN|Creates a logical OR condition between each row being compared to a table. Note: the table constructor syntax uses curly braces.|'Product'[Color] IN { "Red", "Blue", "Black" }|   
   
-## Operators and Precedence Order  
+## Operators and precedence order  
 In some cases, the order in which calculation is performed can affect the Return value; therefore, it is important to understand how the order is determined and how you can change the order to obtain the desired results.  
   
-### Calculation Order  
+### Calculation order  
 An expression evaluates the operators and values in a specific order. All expressions always begin with an equal sign (=). The equal sign indicates that the succeeding characters constitute an expression.  
   
 Following the equal sign are the elements to be calculated (the operands), which are separated by calculation operators. Expressions are always read from left to right, but the order in which the elements are grouped can be controlled to some degree by using parentheses.  
   
-### Operator Precedence  
+### Operator precedence  
 If you combine several operators in a single formula, the operations are ordered according to the following table. If the operators have equal precedence value, they are ordered from left to right. For example, if an expression contains both a multiplication and division operator, they are evaluated in the order that they appear in the expression, from left to right.  
   
 |Operator|Description|  
@@ -78,7 +78,7 @@ If you combine several operators in a single formula, the operations are ordered
 |&amp;|Connects two strings of text (concatenation)|  
 |=&lt; &gt;&lt;=&gt;=&lt;&gt;|Comparison|  
   
-### Using Parentheses to Control Calculation Order  
+### Using parentheses to control calculation order  
 To change the order of evaluation, you should enclose in parentheses that part of the formula that must be calculated first. For example, the following formula produces 11 because multiplication is calculated before addition. The formula multiplies 2 by 3, and then adds 5 to the result.  
   
 ```dax
@@ -109,10 +109,10 @@ To ensure that the sign operator is applied to the numeric value first, you can 
 = (-2)^2  
 ```
   
-## Compatibility Notes  
+## Compatibility  
 DAX easily handles and compares various data types, much like Microsoft Excel. However, the underlying computation engine is based on SQL Server Analysis Services and provides additional advanced features of a relational data store, including richer support for date and time types. Therefore, in some cases the results of calculations or the behavior of functions may not be the same as in Excel. Moreover, DAX supports more data types than does Excel. This section describes the key differences.  
   
-### Coercing Data Types of Operands  
+### Coercing data types of operands  
 In general, the two operands on the left and right sides of any operator should be the same data type. However, if the data types are different, DAX will convert them to a common data type to apply the operator in some cases:  
   
 1.  First, both operands are converted to the largest possible common data type.  
@@ -141,11 +141,11 @@ Other mixed data-type comparisons will return an error. For example, a formula s
 |--------------------------|----------------------------|  
 |Numbers (I8, R8)<br /><br />Boolean<br /><br />String<br /><br />DateTime<br /><br />Currency|Numbers (R8)<br /><br />Boolean<br /><br />String<br /><br />Variant<br /><br />Currency|  
   
-### Differences in Precedence Order  
+### Differences in precedence order  
 The precedence order of operations in DAX formulas is basically the same as that used by Microsoft Excel, but some Excel operators are not supported, such as percent. Also, ranges are not supported.  
   
 Therefore, whenever you copy and paste formulas from Excel, be sure to review the formula carefully, as some operators or elements in the formulas may not be valid. When there is any doubt about the order in which operations are performed, we recommend you use parentheses to control the order of operations and remove any ambiguity about the result.  
   
-## See Also  
+## See also  
 [DAX Syntax Reference](dax-syntax-reference.md)  
   

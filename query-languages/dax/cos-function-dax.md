@@ -1,5 +1,5 @@
 ---
-title: "COS Function (DAX) | Microsoft Docs"
+title: "COS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# COS Function (DAX)
+# COS function (DAX)
 Returns the cosine of the given angle.  
   
 ## Syntax  

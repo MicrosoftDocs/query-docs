@@ -1,5 +1,5 @@
 ---
-title: "RANDBETWEEN Function (DAX) | Microsoft Docs"
+title: "RANDBETWEEN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# RANDBETWEEN Function (DAX)
+# RANDBETWEEN function (DAX)
 Returns a random number in the range between two numbers you specify.  
   
 ## Syntax  
@@ -38,7 +38,7 @@ The following formula returns a random number between 1 and 10.
 =RANDBETWEEN(1,10)  
 ```
   
-## See Also  
-[Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
-[Statistical Functions &#40;DAX&#41;](statistical-functions-dax.md)  
+## See also  
+[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
   

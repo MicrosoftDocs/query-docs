@@ -1,5 +1,5 @@
 ---
-title: "IN Function | Microsoft Docs"
+title: "IN function | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# IN Function
+# IN function
 Returns True if the scalar value shows up in at least one row of the input relation.
   
 ## Syntax  
@@ -40,6 +40,6 @@ Filtered Sales:=CALCULATE (
     )
 ```
   
-## See Also  
+## See also  
 
   

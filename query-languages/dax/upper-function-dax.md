@@ -1,5 +1,5 @@
 ---
-title: "UPPER Function (DAX) | Microsoft Docs"
+title: "UPPER function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# UPPER Function (DAX)
+# UPPER function (DAX)
 Converts a text string to all uppercase letters  
   
 ## Syntax  
@@ -34,7 +34,7 @@ The following formula converts the string in the column, [ProductCode], to all u
 =UPPER(['New Products'[Product Code])  
 ```
   
-## See Also  
-[Text Functions &#40;DAX&#41;](text-functions-dax.md)  
-[LOWER Function &#40;DAX&#41;](lower-function-dax.md)  
+## See also  
+[Text functions &#40;DAX&#41;](text-functions-dax.md)  
+[LOWER function &#40;DAX&#41;](lower-function-dax.md)  
   

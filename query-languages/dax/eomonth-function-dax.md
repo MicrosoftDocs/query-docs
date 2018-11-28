@@ -1,5 +1,5 @@
 ---
-title: "EOMONTH Function (DAX) | Microsoft Docs"
+title: "EOMONTH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# EOMONTH Function (DAX)
+# EOMONTH function (DAX)
 Returns the date in **datetime** format of the last day of the month, before or after a specified number of months. Use EOMONTH to calculate maturity dates or due dates that fall on the last day of the month.  
   
 ## Syntax  
@@ -48,7 +48,7 @@ The following expression returns May 31, 2008, because the **months** argument i
 =EOMONTH("March 3, 2008",1.5)  
 ```
   
-## See Also  
-[EDATE Function &#40;DAX&#41;](edate-function-dax.md)  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+## See also  
+[EDATE function &#40;DAX&#41;](edate-function-dax.md)  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
   

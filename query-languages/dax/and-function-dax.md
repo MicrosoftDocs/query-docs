@@ -1,5 +1,5 @@
 ---
-title: "AND Function (DAX) | Microsoft Docs"
+title: "AND function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# AND Function (DAX)
+# AND function (DAX)
 Checks whether both arguments are TRUE, and returns TRUE if both arguments are TRUE. Otherwise returns false.  
   
 ## Syntax  
@@ -96,6 +96,6 @@ The following sample uses the AND function with nested formulas to compare two s
      )  
 ```
   
-## See Also  
-[Logical Functions &#40;DAX&#41;](logical-functions-dax.md)  
+## See also  
+[Logical functions &#40;DAX&#41;](logical-functions-dax.md)  
   

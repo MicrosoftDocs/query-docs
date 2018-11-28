@@ -1,5 +1,5 @@
 ---
-title: "YEAR Function (DAX) | Microsoft Docs"
+title: "YEAR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# YEAR Function (DAX)
+# YEAR function (DAX)
 Returns the year of a date as a four digit integer in the range 1900-9999.  
   
 ## Syntax  
@@ -54,10 +54,10 @@ The following example returns the year for today's date.
 =YEAR(TODAY())  
 ```  
   
-## See Also  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[HOUR Function &#40;DAX&#41;](hour-function-dax.md)  
-[MINUTE Function &#40;DAX&#41;](minute-function-dax.md)  
-[YEAR Function &#40;DAX&#41;](year-function-dax.md)  
-[SECOND Function &#40;DAX&#41;](second-function-dax.md)  
+## See also  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+[HOUR function &#40;DAX&#41;](hour-function-dax.md)  
+[MINUTE function &#40;DAX&#41;](minute-function-dax.md)  
+[YEAR function &#40;DAX&#41;](year-function-dax.md)  
+[SECOND function &#40;DAX&#41;](second-function-dax.md)  
   

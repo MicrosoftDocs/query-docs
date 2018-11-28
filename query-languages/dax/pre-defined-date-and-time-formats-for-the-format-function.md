@@ -1,5 +1,5 @@
 ---
-title: "Pre-defined Date and Time formats for the FORMAT Function | Microsoft Docs"
+title: "Pre-defined date and time formats for the FORMAT function | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# Pre-defined Date and Time formats for the FORMAT Function
+# Pre-defined date and time formats for the FORMAT function
 The following table identifies the predefined date and time format names. If you use strings other than these predefined strings, they will be interpreted as a custom date and time format.  
   
 |Format specification|Description|  
@@ -29,6 +29,6 @@ The formatting strings are based on Visual Basic (OLE Automation) and not the .N
 >   
 > If *format_string* is BLANK(), the value is formatted with a "General Date" format.  
   
-## See Also  
-[Custom Date and Time formats for the FORMAT Function](custom-date-and-time-formats-for-the-format-function.md)  
+## See also  
+[Custom date and time formats for the FORMAT function](custom-date-and-time-formats-for-the-format-function.md)  
   

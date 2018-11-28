@@ -1,5 +1,5 @@
 ---
-title: "KEEPFILTERS Function (DAX) | Microsoft Docs"
+title: "KEEPFILTERS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# KEEPFILTERS Function (DAX)
+# KEEPFILTERS function (DAX)
 Modifies how filters are applied while evaluating a CALCULATE or CALCULATETABLE function.  
   
 ## Syntax  
@@ -104,8 +104,8 @@ First, examine the expression, **[$$ in WA and OR ??]**. You might wonder how th
   
 Next, examine the expression, **[$$ in WA !!]**. You might wonder how this formula could return the value for sales in Washington and nothing else, since the argument filter includes Oregon and the outer CALCULATE expression includes a filter in Washington and British Columbia. The answer is that KEEPFILTERS modifies the default behavior of CALCULATE and adds an additional filter. Because the intersection of filters is used, now the outer filter **'Geography'[State Province Code]="WA" || 'Geography'[State Province Code]="BC")** is added to the filter argument **'Geography'[State Province Code]="WA" || 'Geography'[State Province Code]="OR"**,. Because both filters apply to the same column, the resulting filter **'Geography'[State Province Code]="WA"** is the filter that is applied when evaluating the expression.  
   
-## See Also  
-[Filter Functions &#40;DAX&#41;](filter-functions-dax.md)  
-[CALCULATE Function &#40;DAX&#41;](calculate-function-dax.md)  
-[CALCULATETABLE Function &#40;DAX&#41;](calculatetable-function-dax.md)  
+## See also  
+[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
+[CALCULATE function &#40;DAX&#41;](calculate-function-dax.md)  
+[CALCULATETABLE function &#40;DAX&#41;](calculatetable-function-dax.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: "NEXTQUARTER Function (DAX) | Microsoft Docs"
+title: "NEXTQUARTER function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# NEXTQUARTER Function (DAX)
+# NEXTQUARTER function (DAX)
 Returns a table that contains a column of all dates in the next quarter, based on the first date specified in the **dates** column, in the current context.  
   
 ## Syntax  
@@ -40,7 +40,7 @@ The **dates** argument can be any of the following:
 -   A Boolean expression that defines a single-column table of date/time values.  
   
 > [!NOTE]  
-> Constraints on Boolean expressions are described in the topic, [CALCULATE Function &#40;DAX&#41;](calculate-function-dax.md).  
+> Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
   
 This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
@@ -53,11 +53,11 @@ To see how this works, create a PivotTable and add the fields, CalendarYear and 
 =CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), NEXTQUARTER('DateTime'[DateKey]))  
 ```
   
-## See Also  
-[Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[NEXTDAY Function &#40;DAX&#41;](nextday-function-dax.md)  
-[NEXTMONTH Function &#40;DAX&#41;](nextmonth-function-dax.md)  
-[NEXTYEAR Function &#40;DAX&#41;](nextyear-function-dax.md)  
+## See also  
+[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+[NEXTDAY function &#40;DAX&#41;](nextday-function-dax.md)  
+[NEXTMONTH function &#40;DAX&#41;](nextmonth-function-dax.md)  
+[NEXTYEAR function &#40;DAX&#41;](nextyear-function-dax.md)  
 [Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
   

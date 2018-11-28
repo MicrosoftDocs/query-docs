@@ -1,5 +1,5 @@
 ---
-title: "UNICHAR Function (DAX) | Microsoft Docs"
+title: "UNICHAR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# UNICHAR Function (DAX)
+# UNICHAR function (DAX)
 
 Returns the Unicode character referenced by the numeric value.
   

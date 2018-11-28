@@ -1,5 +1,5 @@
 ---
-title: "CONCATENATEX Function (DAX) | Microsoft Docs"
+title: "CONCATENATEX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# CONCATENATEX Function (DAX)
+# CONCATENATEX function (DAX)
   
 Concatenates the result of an expression evaluated for each row in a table.  
   

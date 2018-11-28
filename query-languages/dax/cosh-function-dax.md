@@ -1,5 +1,5 @@
 ---
-title: "COSH Function (DAX) | Microsoft Docs"
+title: "COSH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# COSH Function (DAX)
+# COSH function (DAX)
 Returns the hyperbolic cosine of a number.  
   
 ## Syntax  

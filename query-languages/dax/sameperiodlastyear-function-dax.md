@@ -1,5 +1,5 @@
 ---
-title: "SAMEPERIODLASTYEAR Function (DAX) | Microsoft Docs"
+title: "SAMEPERIODLASTYEAR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# SAMEPERIODLASTYEAR Function (DAX)
+# SAMEPERIODLASTYEAR function (DAX)
 Returns a table that contains a column of dates shifted one year back in time from the dates in the specified **dates** column, in the current context.  
   
 ## Syntax  
@@ -38,7 +38,7 @@ The **dates** argument can be any of the following:
 -   A Boolean expression that defines a single-column table of date/time values.  
   
 > [!NOTE]  
-> Constraints on Boolean expressions are described in the topic, [CALCULATE Function &#40;DAX&#41;](calculate-function-dax.md).  
+> Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
   
 The dates returned are the same as the dates returned by this equivalent formula:  
   
@@ -55,9 +55,9 @@ To see how this works, create a PivotTable and add the fields, CalendarYear to t
 =CALCULATE(SUM(ResellerSales_USD[SalesAmount_USD]), SAMEPERIODLASTYEAR(DateTime[DateKey]))  
 ```
   
-## See Also  
-[Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[PREVIOUSYEAR Function &#40;DAX&#41;](previousyear-function-dax.md)  
-[PARALLELPERIOD Function &#40;DAX&#41;](parallelperiod-function-dax.md)  
+## See also  
+[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+[PREVIOUSYEAR function &#40;DAX&#41;](previousyear-function-dax.md)  
+[PARALLELPERIOD function &#40;DAX&#41;](parallelperiod-function-dax.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: "EARLIEST Function (DAX) | Microsoft Docs"
+title: "EARLIEST function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# EARLIEST Function (DAX)
+# EARLIEST function (DAX)
 Returns the current value of the specified column in an outer evaluation pass of the specified column.  
   
 ## Syntax  
@@ -37,7 +37,7 @@ The current sample data does not support this scenario.
 =EARLIEST(<column>)  
 ```
   
-## See Also  
-[EARLIER Function &#40;DAX&#41;](earlier-function-dax.md)  
-[Filter Functions &#40;DAX&#41;](filter-functions-dax.md)  
+## See also  
+[EARLIER function &#40;DAX&#41;](earlier-function-dax.md)  
+[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
   

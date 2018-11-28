@@ -1,5 +1,5 @@
 ---
-title: "YEARFRAC Function (DAX) | Microsoft Docs"
+title: "YEARFRAC function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# YEARFRAC Function (DAX)
+# YEARFRAC function (DAX)
 Calculates the fraction of the year represented by the number of whole days between two dates. Use the YEARFRAC worksheet function to identify the proportion of a whole year's benefits or obligations to assign to a specific term.  
   
 ## Syntax  
@@ -54,9 +54,9 @@ Use four-digit years whenever possible, to avoid getting unexpected results. Whe
   
 The second argument, **basis**, has also been omitted. Therefore, the year fraction is calculated according to the US (NASD) 30/360 standard.  
   
-## See Also  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[WEEKNUM Function &#40;DAX&#41;](weeknum-function-dax.md)  
-[YEARFRAC Function &#40;DAX&#41;](yearfrac-function-dax.md)  
-[WEEKDAY Function &#40;DAX&#41;](weekday-function-dax.md)  
+## See also  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+[WEEKNUM function &#40;DAX&#41;](weeknum-function-dax.md)  
+[YEARFRAC function &#40;DAX&#41;](yearfrac-function-dax.md)  
+[WEEKDAY function &#40;DAX&#41;](weekday-function-dax.md)  
   

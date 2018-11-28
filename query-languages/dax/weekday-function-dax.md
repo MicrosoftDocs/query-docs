@@ -1,5 +1,5 @@
 ---
-title: "WEEKDAY Function (DAX) | Microsoft Docs"
+title: "WEEKDAY function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# WEEKDAY Function (DAX)
+# WEEKDAY function (DAX)
 Returns a number from 1 to 7 identifying the day of the week of a date. By default the day ranges from 1 (Sunday) to 7 (Saturday).  
   
 ## Syntax  
@@ -42,8 +42,8 @@ The following example gets the date from the [HireDate] column, adds 1, and disp
 =WEEKDAY([HireDate]+1)  
 ```
   
-## See Also  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[WEEKNUM Function &#40;DAX&#41;](weeknum-function-dax.md)  
-[YEARFRAC Function &#40;DAX&#41;](yearfrac-function-dax.md)  
+## See also  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+[WEEKNUM function &#40;DAX&#41;](weeknum-function-dax.md)  
+[YEARFRAC function &#40;DAX&#41;](yearfrac-function-dax.md)  
   

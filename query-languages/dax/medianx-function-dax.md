@@ -1,5 +1,5 @@
 ---
-title: "MEDIANX Function (DAX) | Microsoft Docs"
+title: "MEDIANX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,11 +9,11 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# MEDIANX Function (DAX)
+# MEDIANX function (DAX)
   
 Returns the median number of an expression evaluated for each row in a table.  
   
-To return the median of numbers in a column, use [MEDIAN Function &#40;DAX&#41;](median-function-dax.md).  
+To return the median of numbers in a column, use [MEDIAN function &#40;DAX&#41;](median-function-dax.md).  
   
 ## Syntax  
   
@@ -47,6 +47,6 @@ The following computes the median age of customers who live in the USA.
 =MEDIANX( FILTER(Customers, RELATED( Geography[Country]=”USA” ) ), Customers[Age] )  
 ```
   
-## See Also  
-[MEDIAN Function &#40;DAX&#41;](median-function-dax.md)  
+## See also  
+[MEDIAN function &#40;DAX&#41;](median-function-dax.md)  
   

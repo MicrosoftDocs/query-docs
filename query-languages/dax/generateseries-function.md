@@ -1,5 +1,5 @@
 ---
-title: "GENERATESERIES Function | Microsoft Docs"
+title: "GENERATESERIES function | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# GENERATESERIES Function
+# GENERATESERIES function
 Returns a single column table containing the values of an arithmetic series, that is, a sequence of values in which each differs from the preceding by a constant quantity. The name of the column returned is Value.  
   
 ## Syntax  

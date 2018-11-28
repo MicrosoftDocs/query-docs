@@ -1,5 +1,5 @@
 ---
-title: "TRUE Function (DAX) | Microsoft Docs"
+title: "TRUE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# TRUE Function (DAX)
+# TRUE function (DAX)
 Returns the logical value TRUE.  
   
 ## Syntax  
@@ -43,9 +43,9 @@ The following table shows the results when the example formula is used in a Pivo
 = IF(SUM('InternetSales_USD'[SalesAmount_USD]) >200000, TRUE(), false())  
 ```
   
-## See Also  
-[FALSE Function &#40;DAX&#41;](false-function-dax.md)  
-[NOT Function &#40;DAX&#41;](not-function-dax.md)  
-[IF Function &#40;DAX&#41;](if-function-dax.md)  
-[DAX Function Reference](dax-function-reference.md)  
+## See also  
+[FALSE function &#40;DAX&#41;](false-function-dax.md)  
+[NOT function &#40;DAX&#41;](not-function-dax.md)  
+[IF function &#40;DAX&#41;](if-function-dax.md)  
+[DAX function reference](dax-function-reference.md)  
   

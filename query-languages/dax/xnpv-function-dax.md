@@ -1,5 +1,5 @@
 ---
-title: "XNPV Function (DAX) | Microsoft Docs"
+title: "XNPV function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# XNPV Function (DAX)
+# XNPV function (DAX)
   
 Returns the present value for a schedule of cash flows that is not necessarily periodic.  
   

@@ -1,5 +1,5 @@
 ---
-title: "NORM.INV Function (DAX) | Microsoft Docs"
+title: "NORM.INV function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 8/14/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# NORM.INV Function
+# NORM.INV function
 The inverse of the normal cumulative distribution for the specified mean and standard deviation.
  
   
@@ -43,10 +43,10 @@ Returns
 |42.00000200956628780274132    |
 
 
-## See Also  
+## See also  
 
 [NORM.S.INV](norm-s-inv-dax.md)   
-[NORM.S.DIST Function](norm-s-dist-dax.md)   
-[NORM.DIST Function](norm-dist-dax.md)   
+[NORM.S.DIST function](norm-s-dist-dax.md)   
+[NORM.DIST function](norm-dist-dax.md)   
 
   

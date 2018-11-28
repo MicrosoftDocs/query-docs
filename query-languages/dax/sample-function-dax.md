@@ -1,5 +1,5 @@
 ---
-title: "SAMPLE Function (DAX) | Microsoft Docs"
+title: "SAMPLE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# SAMPLE Function (DAX)
+# SAMPLE function (DAX)
 Returns a sample of N rows from the specified table.  
   
 ## Syntax  

@@ -1,5 +1,5 @@
 ---
-title: "Custom Date and Time formats for the FORMAT Function | Microsoft Docs"
+title: "Custom date and time formats for the FORMAT function | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# Custom Date and Time formats for the FORMAT Function
+# Custom date and time formats for the FORMAT function
 The following table shows characters you can use to create user-defined date/time formats.  
   
 |Format specification|Description|  
@@ -52,8 +52,8 @@ Formatting strings are case sensitive. Different formatting can be obtained by u
   
 Date/Time formatting uses the current user locale to determine the ultimate format of the string. For example, to format the date March 18, 1995, with the following format string "M/d/yyyy", if the user locale is set to the United States of America (en-us) the result is '3/12/1995', but if the user locale is set to Germany (de-de) the result is '18.03.1995'.  
   
-## See Also  
-[FORMAT Function &#40;DAX&#41;](format-function-dax.md)  
-[Custom Numeric Formats for the FORMAT Function](custom-numeric-formats-for-the-format-function.md)  
-[Pre-defined Date and Time formats for the FORMAT Function](pre-defined-date-and-time-formats-for-the-format-function.md)  
+## See also  
+[FORMAT function &#40;DAX&#41;](format-function-dax.md)  
+[Custom numeric formats for the FORMAT function](custom-numeric-formats-for-the-format-function.md)  
+[Pre-defined date and time formats for the FORMAT function](pre-defined-date-and-time-formats-for-the-format-function.md)  
   

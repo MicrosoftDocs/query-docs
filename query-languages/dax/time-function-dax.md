@@ -1,5 +1,5 @@
 ---
-title: "TIME Function (DAX) | Microsoft Docs"
+title: "TIME function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# TIME Function (DAX)
+# TIME function (DAX)
 Converts hours, minutes, and seconds given as numbers to a time in **datetime** format.  
   
 ## Syntax  
@@ -71,7 +71,7 @@ The following example creates a time based on the values in the columns, `intHou
 =TIME([intHours],[intMinutes],[intSeconds])  
 ```
   
-## See Also  
-[DATE Function &#40;DAX&#41;](date-function-dax.md)  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+## See also  
+[DATE function &#40;DAX&#41;](date-function-dax.md)  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
   

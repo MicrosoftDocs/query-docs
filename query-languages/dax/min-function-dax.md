@@ -1,5 +1,5 @@
 ---
-title: "MIN Function (DAX) | Microsoft Docs"
+title: "MIN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# MIN Function (DAX)
+# MIN function (DAX)
 Returns the smallest numeric value in a column, or between two scalar expressions. Ignores logical values and text.  
   
 ## Syntax  
@@ -69,9 +69,9 @@ The following example returns the smallest value from the result of two scalar e
 ```
 
   
-## See Also  
-[MIN Function &#40;DAX&#41;](min-function-dax.md)  
-[MINA Function &#40;DAX&#41;](mina-function-dax.md)  
-[MINX Function &#40;DAX&#41;](minx-function-dax.md)  
-[Statistical Functions &#40;DAX&#41;](statistical-functions-dax.md)  
+## See also  
+[MIN function &#40;DAX&#41;](min-function-dax.md)  
+[MINA function &#40;DAX&#41;](mina-function-dax.md)  
+[MINX function &#40;DAX&#41;](minx-function-dax.md)  
+[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
   

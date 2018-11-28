@@ -1,5 +1,5 @@
 ---
-title: "XIRR Function (DAX) | Microsoft Docs"
+title: "XIRR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# XIRR Function (DAX)
+# XIRR function (DAX)
   
 Returns the internal rate of return for a schedule of cash flows that is not necessarily periodic.  
   

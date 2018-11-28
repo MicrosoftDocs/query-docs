@@ -1,5 +1,5 @@
 ---
-title: "CALENDARAUTO Function (DAX) | Microsoft Docs"
+title: "CALENDARAUTO function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# CALENDARAUTO Function (DAX)
+# CALENDARAUTO function (DAX)
   
 Returns a table with a single column named “Date” that contains a contiguous set of dates. The range of dates is calculated automatically based on data in the model.  
   

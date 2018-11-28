@@ -1,5 +1,5 @@
 ---
-title: "COUNTROWS Function (DAX) | Microsoft Docs"
+title: "COUNTROWS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# COUNTROWS Function (DAX)
+# COUNTROWS function (DAX)
 The COUNTROWS function counts the number of rows in the specified table, or in a table defined by an expression.  
   
 ## Syntax  
@@ -56,10 +56,10 @@ The following table shows a portion of the expected results:
 |2|70|  
 |3|394|  
   
-## See Also  
-[COUNT Function &#40;DAX&#41;](count-function-dax.md)  
-[COUNTA Function &#40;DAX&#41;](counta-function-dax.md)  
-[COUNTAX Function &#40;DAX&#41;](countax-function-dax.md)  
-[COUNTX Function &#40;DAX&#41;](countx-function-dax.md)  
-[Statistical Functions &#40;DAX&#41;](statistical-functions-dax.md)  
+## See also  
+[COUNT function &#40;DAX&#41;](count-function-dax.md)  
+[COUNTA function &#40;DAX&#41;](counta-function-dax.md)  
+[COUNTAX function &#40;DAX&#41;](countax-function-dax.md)  
+[COUNTX function &#40;DAX&#41;](countx-function-dax.md)  
+[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
   

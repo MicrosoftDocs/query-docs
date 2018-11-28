@@ -1,5 +1,5 @@
 ---
-title: "PI Function (DAX) | Microsoft Docs"
+title: "PI function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# PI Function (DAX)
+# PI function (DAX)
 Returns the value of Pi, 3.14159265358979, accurate to 15 digits.  
   
 ## Syntax  
@@ -31,6 +31,6 @@ The following formula calculates the area of a circle given the radius in the co
 =PI()*([Radius]*2)  
 ```
   
-## See Also  
-[Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+## See also  
+[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
   

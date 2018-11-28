@@ -1,5 +1,5 @@
 ---
-title: "ASIN Function (DAX) | Microsoft Docs"
+title: "ASIN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ASIN Function (DAX)
+# ASIN function (DAX)
 Returns the arcsine, or inverse sine, of a number. The arcsine is the angle whose sine is *number*. The returned angle is given in radians in the range -pi/2 to pi/2.  
   
 ## Syntax  

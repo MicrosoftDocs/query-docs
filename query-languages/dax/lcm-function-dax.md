@@ -1,5 +1,5 @@
 ---
-title: "LCM Function (DAX) | Microsoft Docs"
+title: "LCM function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# LCM Function (DAX)
+# LCM function (DAX)
 Returns the least common multiple of integers. The least common multiple is the smallest positive integer that is a multiple of all integer arguments number1, number2, and so on. Use LCM to add fractions with different denominators.  
   
 ## Syntax  

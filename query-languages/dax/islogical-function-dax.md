@@ -1,5 +1,5 @@
 ---
-title: "ISLOGICAL Function (DAX) | Microsoft Docs"
+title: "ISLOGICAL function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ISLOGICAL Function (DAX)
+# ISLOGICAL function (DAX)
 Checks whether a value is a logical value, (TRUE or FALSE), and returns TRUE or FALSE.  
   
 ## Syntax  
@@ -41,6 +41,6 @@ The following three samples show the behavior of ISLOGICAL.
 =IF(ISLOGICAL(25), "Is Boolean type or Logical", "Is different type")  
 ```
   
-## See Also  
-[Information Functions &#40;DAX&#41;](information-functions-dax.md)  
+## See also  
+[Information functions &#40;DAX&#41;](information-functions-dax.md)  
   

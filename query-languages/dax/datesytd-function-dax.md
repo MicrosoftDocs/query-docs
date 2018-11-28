@@ -1,5 +1,5 @@
 ---
-title: "DATESYTD Function (DAX) | Microsoft Docs"
+title: "DATESYTD function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# DATESYTD Function (DAX)
+# DATESYTD function (DAX)
 Returns a table that contains a column of the dates for the year to date, in the current context.  
   
 ## Syntax  
@@ -39,7 +39,7 @@ The **dates** argument can be any of the following:
 -   A Boolean expression that defines a single-column table of date/time values.  
   
 > [!NOTE]  
-> Constraints on Boolean expressions are described in the topic, [CALCULATE Function &#40;DAX&#41;](calculate-function-dax.md).  
+> Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
   
 The **year_end_date** parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is ignored.  
   
@@ -54,10 +54,10 @@ To see how this works, create a PivotTable and add the fields, CalendarYear and 
 =CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESYTD(DateTime[DateKey]))  
 ```
   
-## See Also  
-[Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[DATESMTD Function &#40;DAX&#41;](datesmtd-function-dax.md)  
-[DATESQTD Function &#40;DAX&#41;](datesqtd-function-dax.md)  
+## See also  
+[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+[DATESMTD function &#40;DAX&#41;](datesmtd-function-dax.md)  
+[DATESQTD function &#40;DAX&#41;](datesqtd-function-dax.md)  
 [Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
   

@@ -1,5 +1,5 @@
 ---
-title: "RELATEDTABLE Function (DAX) | Microsoft Docs"
+title: "RELATEDTABLE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# RELATEDTABLE Function (DAX)
+# RELATEDTABLE function (DAX)
 Evaluates a table expression in a context modified by the given filters.  
   
 ## Syntax  
@@ -50,7 +50,7 @@ The following table shows the results of using the code shown here.
      , [SalesAmount_USD])  
 ```
   
-## See Also  
-[CALCULATETABLE Function &#40;DAX&#41;](calculatetable-function-dax.md)  
-[Filter Functions &#40;DAX&#41;](filter-functions-dax.md)  
+## See also  
+[CALCULATETABLE function &#40;DAX&#41;](calculatetable-function-dax.md)  
+[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
   

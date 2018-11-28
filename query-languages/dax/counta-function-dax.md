@@ -1,5 +1,5 @@
 ---
-title: "COUNTA Function (DAX) | Microsoft Docs"
+title: "COUNTA function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# COUNTA Function (DAX)
+# COUNTA function (DAX)
 The COUNTA function counts the number of cells in a column that are not empty. It counts not just rows that contain numeric values, but also rows that contain nonblank values, including text, dates, and logical values.  
   
 ## Syntax  
@@ -39,10 +39,10 @@ The following example returns all rows in the `Reseller` table that have any kin
 =COUNTA('Reseller'[Phone])  
 ```
   
-## See Also  
-[COUNT Function &#40;DAX&#41;](count-function-dax.md)  
-[COUNTA Function &#40;DAX&#41;](counta-function-dax.md)  
-[COUNTAX Function &#40;DAX&#41;](countax-function-dax.md)  
-[COUNTX Function &#40;DAX&#41;](countx-function-dax.md)  
-[Statistical Functions &#40;DAX&#41;](statistical-functions-dax.md)  
+## See also  
+[COUNT function &#40;DAX&#41;](count-function-dax.md)  
+[COUNTA function &#40;DAX&#41;](counta-function-dax.md)  
+[COUNTAX function &#40;DAX&#41;](countax-function-dax.md)  
+[COUNTX function &#40;DAX&#41;](countx-function-dax.md)  
+[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: "AVERAGEX Function (DAX) | Microsoft Docs"
+title: "AVERAGEX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# AVERAGEX Function (DAX)
+# AVERAGEX function (DAX)
 Calculates the average (arithmetic mean) of a set of expressions evaluated over a table.  
   
 ## Syntax  
@@ -44,8 +44,8 @@ The following example calculates the average freight and tax on each order in th
 
 If you use multiple operations in the expression used as the second argument, you must use parentheses to control the order of calculations. For more information, see [DAX Syntax Reference](dax-syntax-reference.md).  
   
-## See Also  
-[AVERAGE Function &#40;DAX&#41;](average-function-dax.md)  
-[AVERAGEA Function &#40;DAX&#41;](averagea-function-dax.md)  
-[Statistical Functions &#40;DAX&#41;](statistical-functions-dax.md)  
+## See also  
+[AVERAGE function &#40;DAX&#41;](average-function-dax.md)  
+[AVERAGEA function &#40;DAX&#41;](averagea-function-dax.md)  
+[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: "COUNTBLANK Function (DAX) | Microsoft Docs"
+title: "COUNTBLANK function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# COUNTBLANK Function (DAX)
+# COUNTBLANK function (DAX)
 Counts the number of blank cells in a column.  
   
 ## Syntax  
@@ -45,10 +45,10 @@ The following example shows how to count the number of rows in the table Reselle
 
 To count logical values or text, use the COUNTA or COUNTAX functions.  
   
-## See Also  
-[COUNT Function &#40;DAX&#41;](count-function-dax.md)  
-[COUNTA Function &#40;DAX&#41;](counta-function-dax.md)  
-[COUNTAX Function &#40;DAX&#41;](countax-function-dax.md)  
-[COUNTX Function &#40;DAX&#41;](countx-function-dax.md)  
-[Statistical Functions &#40;DAX&#41;](statistical-functions-dax.md)  
+## See also  
+[COUNT function &#40;DAX&#41;](count-function-dax.md)  
+[COUNTA function &#40;DAX&#41;](counta-function-dax.md)  
+[COUNTAX function &#40;DAX&#41;](countax-function-dax.md)  
+[COUNTX function &#40;DAX&#41;](countx-function-dax.md)  
+[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
   

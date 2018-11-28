@@ -1,5 +1,5 @@
 ---
-title: "AVERAGEA Function (DAX) | Microsoft Docs"
+title: "AVERAGEA function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# AVERAGEA Function (DAX)
+# AVERAGEA function (DAX)
 Returns the average (arithmetic mean) of the values in a column. Handles text and non-numeric values.  
   
 ## Syntax  
@@ -57,8 +57,8 @@ The following example returns the average of non-blank cells in the referenced c
 =AVERAGEA([Amount])  
 ```
   
-## See Also  
-[AVERAGE Function &#40;DAX&#41;](average-function-dax.md)  
-[AVERAGEX Function &#40;DAX&#41;](averagex-function-dax.md)  
-[Statistical Functions &#40;DAX&#41;](statistical-functions-dax.md)  
+## See also  
+[AVERAGE function &#40;DAX&#41;](average-function-dax.md)  
+[AVERAGEX function &#40;DAX&#41;](averagex-function-dax.md)  
+[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
   

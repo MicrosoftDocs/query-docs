@@ -1,5 +1,5 @@
 ---
-title: "MAXA Function (DAX) | Microsoft Docs"
+title: "MAXA function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# MAXA Function (DAX)
+# MAXA function (DAX)
 Returns the largest value in a column. Logical values and blanks are counted.  
   
 ## Syntax  
@@ -54,9 +54,9 @@ The following example returns the largest value from a column that contains date
 =MAXA([TransactionDate])  
 ```
   
-## See Also  
-[MAX Function &#40;DAX&#41;](max-function-dax.md)  
-[MAXA Function &#40;DAX&#41;](maxa-function-dax.md)  
-[MAXX Function &#40;DAX&#41;](maxx-function-dax.md)  
-[Statistical Functions &#40;DAX&#41;](statistical-functions-dax.md)  
+## See also  
+[MAX function &#40;DAX&#41;](max-function-dax.md)  
+[MAXA function &#40;DAX&#41;](maxa-function-dax.md)  
+[MAXX function &#40;DAX&#41;](maxx-function-dax.md)  
+[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
   

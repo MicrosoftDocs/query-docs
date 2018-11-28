@@ -1,5 +1,5 @@
 ---
-title: "T.INV.2T Function (DAX) | Microsoft Docs"
+title: "T.INV.2T function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 8/14/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# T.INV.2T Function
+# T.INV.2T function
 Returns the two-tailed inverse of the Student's t-distribution.
  
   
@@ -42,12 +42,12 @@ Returns
 |0.606533075825759    |
 
 
-## See Also  
+## See also  
 
-[T.INV Function](t-inv-dax.md)   
-[T.DIST Function](t-dist-dax.md)   
-[T.DIST.2T Function](t-dist-2t-dax.md)   
-[T.DIST.RT Function](t-dist-rt-dax.md)   
+[T.INV function](t-inv-dax.md)   
+[T.DIST function](t-dist-dax.md)   
+[T.DIST.2T function](t-dist-2t-dax.md)   
+[T.DIST.RT function](t-dist-rt-dax.md)   
 
 
   

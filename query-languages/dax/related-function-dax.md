@@ -1,5 +1,5 @@
 ---
-title: "RELATED Function (DAX) | Microsoft Docs"
+title: "RELATED function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# RELATED Function (DAX)
+# RELATED function (DAX)
 Returns a related value from another table.  
   
 ## Syntax  
@@ -84,7 +84,7 @@ The following table shows the final report that you might get if you used this m
 |2008|$228,159.45|$5,386,558.19|$102,675.04|$5,717,392.68|  
 |Grand Total|$384,639.63|$16,107,890.23|$172,817.81|$16,665,347.67|  
   
-## See Also  
-[RELATEDTABLE Function &#40;DAX&#41;](relatedtable-function-dax.md)  
-[Filter Functions &#40;DAX&#41;](filter-functions-dax.md)  
+## See also  
+[RELATEDTABLE function &#40;DAX&#41;](relatedtable-function-dax.md)  
+[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
   

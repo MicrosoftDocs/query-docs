@@ -1,5 +1,5 @@
 ---
-title: "STDEVX.P Function (DAX) | Microsoft Docs"
+title: "STDEVX.P function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# STDEVX.P Function (DAX)
+# STDEVX.P function (DAX)
 Returns the standard deviation of the entire population.  
   
 ## Syntax  

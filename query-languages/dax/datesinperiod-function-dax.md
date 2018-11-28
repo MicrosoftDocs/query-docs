@@ -1,5 +1,5 @@
 ---
-title: "DATESINPERIOD Function (DAX) | Microsoft Docs"
+title: "DATESINPERIOD function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 9/25/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# DATESINPERIOD Function (DAX)
+# DATESINPERIOD function (DAX)
 Returns a table that contains a column of dates that begins with the **start_date** and continues for the specified **number_of_intervals**.  
   
 ## Syntax  
@@ -35,7 +35,7 @@ A table containing a single column of date values.
 The **dates** argument can be a reference to a date/time column.  
   
 > [!NOTE]  
-> Constraints on Boolean expressions are described in the topic, [CALCULATE Function &#40;DAX&#41;](calculate-function-dax.md).  
+> Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
   
 If the number specified for **number_of_intervals** is positive, the dates are moved forward in time; if the number is negative, the dates are shifted back in time.  
   
@@ -52,9 +52,9 @@ The following formula returns the Internet sales for the 21 days prior to August
 = CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]),DATESINPERIOD(DateTime[DateKey],DATE(2007,08,24),-21,day))  
 ```
   
-## See Also  
-[Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[DATESBETWEEN Function &#40;DAX&#41;](datesbetween-function-dax.md)  
+## See also  
+[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+[DATESBETWEEN function &#40;DAX&#41;](datesbetween-function-dax.md)  
 [Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
   

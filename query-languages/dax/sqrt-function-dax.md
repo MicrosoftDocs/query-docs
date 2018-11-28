@@ -1,5 +1,5 @@
 ---
-title: "SQRT Function (DAX) | Microsoft Docs"
+title: "SQRT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# SQRT Function (DAX)
+# SQRT function (DAX)
 Returns the square root of a number.  
   
 ## Syntax  
@@ -37,6 +37,6 @@ The following formula returns 5.
 =SQRT(25)  
 ```
   
-## See Also  
-[Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+## See also  
+[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
   

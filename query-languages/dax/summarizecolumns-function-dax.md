@@ -1,5 +1,5 @@
 ---
-title: "SUMMARIZECOLUMNS Function (DAX) | Microsoft Docs"
+title: "SUMMARIZECOLUMNS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# SUMMARIZECOLUMNS Function (DAX)
+# SUMMARIZECOLUMNS function (DAX)
 
 Returns a summary table over a set of groups.  
   
@@ -317,6 +317,6 @@ Still grouped by City and State, but rolled together when reporting a subtotal.
 ||C|FALSE|3||TRUE|  
 |||TRUE|11||TRUE|  
   
-## See Also  
-[SUMMARIZE Function &#40;DAX&#41;](summarize-function-dax.md)  
+## See also  
+[SUMMARIZE function &#40;DAX&#41;](summarize-function-dax.md)  
   

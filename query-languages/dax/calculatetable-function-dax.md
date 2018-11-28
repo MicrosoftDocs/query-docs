@@ -1,5 +1,5 @@
 ---
-title: "CALCULATETABLE Function (DAX) | Microsoft Docs"
+title: "CALCULATETABLE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# CALCULATETABLE Function (DAX)
+# CALCULATETABLE function (DAX)
 Evaluates a table expression in a context modified by the given filters.  
   
 ## Syntax  
@@ -63,7 +63,7 @@ The following table shows the results from the following formula.
      , [SalesAmount_USD])  
 ```
   
-## See Also  
-[RELATEDTABLE Function &#40;DAX&#41;](relatedtable-function-dax.md)  
-[Filter Functions &#40;DAX&#41;](filter-functions-dax.md)  
+## See also  
+[RELATEDTABLE function &#40;DAX&#41;](relatedtable-function-dax.md)  
+[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
   

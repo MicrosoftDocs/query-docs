@@ -1,5 +1,5 @@
 ---
-title: "PRODUCTX Function (DAX) | Microsoft Docs"
+title: "PRODUCTX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,11 +9,11 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# PRODUCTX Function (DAX)
+# PRODUCTX function (DAX)
   
 Returns the product of an expression evaluated for each row in a table.  
   
-To return the product of the numbers in a column, use [PRODUCT Function &#40;DAX&#41;](product-function-dax.md).  
+To return the product of the numbers in a column, use [PRODUCT function &#40;DAX&#41;](product-function-dax.md).  
   
 ## Syntax  
   
@@ -43,6 +43,6 @@ The following computes the future value of an investment:
 = [PresentValue] * PRODUCTX( AnnuityPeriods, 1+[FixedInterestRate] )  
 ```
   
-## See Also  
-[PRODUCT Function &#40;DAX&#41;](product-function-dax.md)  
+## See also  
+[PRODUCT function &#40;DAX&#41;](product-function-dax.md)  
   

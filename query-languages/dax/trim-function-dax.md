@@ -1,5 +1,5 @@
 ---
-title: "TRIM Function (DAX) | Microsoft Docs"
+title: "TRIM function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# TRIM Function (DAX)
+# TRIM function (DAX)
 Removes all spaces from text except for single spaces between words.  
   
 ## Syntax  
@@ -47,6 +47,6 @@ You can verify that the formula produces the correct result by checking the leng
 =LEN([Calculated Column 1])  
 ```
   
-## See Also  
-[Text Functions &#40;DAX&#41;](text-functions-dax.md)  
+## See also  
+[Text functions &#40;DAX&#41;](text-functions-dax.md)  
   

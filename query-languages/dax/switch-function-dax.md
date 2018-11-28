@@ -1,5 +1,5 @@
 ---
-title: "SWITCH Function (DAX) | Microsoft Docs"
+title: "SWITCH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# SWITCH Function (DAX)
+# SWITCH function (DAX)
 Evaluates an expression against a list of values and returns one of multiple possible result expressions.  
   
 ## Syntax  

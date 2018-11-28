@@ -1,5 +1,5 @@
 ---
-title: "VARX.P Function (DAX) | Microsoft Docs"
+title: "VARX.P function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# VARX.P Function (DAX)
+# VARX.P function (DAX)
 Returns the variance of the entire population.  
   
 ## Syntax  

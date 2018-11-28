@@ -1,5 +1,5 @@
 ---
-title: "New DAX Functions | Microsoft Docs"
+title: "New DAX functions | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/06/2018
@@ -9,9 +9,9 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# New DAX Functions
+# New DAX functions
 
-DAX is continuously being improved with new functions and functionality to support new features in Power BI, Analysis Services, and Excel. New functions are included Power BI Desktop, Analysis Services (SSDT, SSMS), and Power Pivot in Excel updates. To get the latest, make sure you update to the latest version.  
+DAX is continuously being improved with new functions and functionality to support new features. New functions and updates are included Power BI Desktop, Analysis Services (SSDT, SSMS), and Power Pivot in Excel product updates. To get the latest, make sure you're using the latest version.  
 
 > [!IMPORTANT]
 > Not all functions are supported or included in earlier versions of Power BI Desktop, Analysis Services, and Power Pivot in Excel.  
@@ -21,26 +21,26 @@ DAX is continuously being improved with new functions and functionality to suppo
 
  The following functions (or functionality) have been added in 2018. 
 
-[ISINSCOPE Function](isinscope-function-dax.md)  Nov. 2018
+[ISINSCOPE function](isinscope-function-dax.md)  Nov. 2018
 
-[COMBINEVALUES Function](combinevalues-function-dax.md)   
-[UTCNOW Function](utcnow-function-dax.md)   
-[UTCTODAY Function](utctoday-function-dax.md)
+[COMBINEVALUES function](combinevalues-function-dax.md)   
+[UTCNOW function](utcnow-function-dax.md)   
+[UTCTODAY function](utctoday-function-dax.md)
 
-[NORM.DIST Function](norm-dist-dax.md)   
-[NORM.INV Function](norm-inv-dax.md)     
-[NORM.S.DIST Function](norm-s-dist-dax.md)   
+[NORM.DIST function](norm-dist-dax.md)   
+[NORM.INV function](norm-inv-dax.md)     
+[NORM.S.DIST function](norm-s-dist-dax.md)   
 [NORM.S.INV](norm-s-inv-dax.md)   
 
-[T.DIST Function](t-dist-dax.md)   
-[T.DIST.2T Function](t-dist-2t-dax.md)   
-[T.DIST.RT Function](t-dist-rt-dax.md)   
-[T.INV Function](t-inv-dax.md)   
-[T.INV.2T Function](t-inv-2t-dax.md)   
+[T.DIST function](t-dist-dax.md)   
+[T.DIST.2T function](t-dist-2t-dax.md)   
+[T.DIST.RT function](t-dist-rt-dax.md)   
+[T.INV function](t-inv-dax.md)   
+[T.INV.2T function](t-inv-2t-dax.md)   
 
  ## Updated
 
-[SUMMARIZECOLUMNS Function](summarizecolumns-function-dax.md) Nov. 2018
+[SUMMARIZECOLUMNS function](summarizecolumns-function-dax.md) Nov. 2018
  
 
   

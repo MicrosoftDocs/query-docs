@@ -1,5 +1,5 @@
 ---
-title: "VALUES Function (DAX) | Microsoft Docs"
+title: "VALUES function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# VALUES Function (DAX)
+# VALUES function (DAX)
 Returns a one-column table that contains the distinct values from the specified table or column. In other words, duplicate values are removed and only unique values are returned.  
   
 > [!NOTE]  
@@ -33,7 +33,7 @@ A column of unique values.
 ## Remarks  
 When you use the VALUES function in a context that has been filtered, such as in a PivotTable, the unique values returned by VALUES are affected by the filter. For example, if you filter by Region, and return a list of the values for City, the list will include only those cities in the regions permitted by the filter. To return all of the cities, regardless of existing filters, you must use the ALL function to remove filters from the table. The second example demonstrates use of ALL with VALUES.  
   
-## Related Functions  
+## Related functions  
 In most scenarios, when the argument is a column name, the results of the VALUES function are identical to those of the **DISTINCT** function. Both functions remove duplicates and return a list of the possible values in the specified column. However, the VALUES function can also return a blank value. This blank value is useful in cases where you are looking up distinct values from a related table, but a value used in the relationship is missing from one table. In database terminology, this is termed a violation of referential integrity. Such mismatches in data can occur when one table is being updated and the related table is not. 
 
 When the argument is a table name, the result of the VALUES function returns all rows in the specified table plus a blank row, if there is a violation of referential integrity. The DISTINCT function removes duplicate rows and returns unique rows in the specified table.
@@ -66,8 +66,8 @@ The following formula counts the number of unique invoices (sales orders), and p
 =COUNTROWS(VALUES('InternetSales_USD'[SalesOrderNumber]))  
 ```
   
-## See Also  
-[FILTER Function &#40;DAX&#41;](filter-function-dax.md)  
-[COUNTROWS Function &#40;DAX&#41;](countrows-function-dax.md)  
-[Filter Functions &#40;DAX&#41;](filter-functions-dax.md)  
+## See also  
+[FILTER function &#40;DAX&#41;](filter-function-dax.md)  
+[COUNTROWS function &#40;DAX&#41;](countrows-function-dax.md)  
+[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
   

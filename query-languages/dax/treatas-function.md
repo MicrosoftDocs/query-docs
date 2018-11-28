@@ -1,5 +1,5 @@
 ---
-title: "TREATAS Function | Microsoft Docs"
+title: "TREATAS function | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# TREATAS Function
+# TREATAS function
 Applies the result of a table expression as filters to columns from an unrelated table. 
   
 ## Syntax  
@@ -48,10 +48,10 @@ TREATAS(VALUES(DimProduct1[ProductCategory]), DimProduct2[ProductCategory])
 )
 ```
 
-## See Also  
- [INTERSECT Function](intersect-function-dax.md)
+## See also  
+ [INTERSECT function](intersect-function-dax.md)
  
-[FILTER Function](filter-function-dax.md)
+[FILTER function](filter-function-dax.md)
 
   
 

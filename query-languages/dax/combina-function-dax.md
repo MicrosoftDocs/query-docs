@@ -1,5 +1,5 @@
 ---
-title: "COMBINA Function (DAX) | Microsoft Docs"
+title: "COMBINA function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# COMBINA Function (DAX)
+# COMBINA function (DAX)
 Returns the number of combinations (with repetitions) for a given number of items.  
   
 ## Syntax  

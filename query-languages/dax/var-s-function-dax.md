@@ -1,5 +1,5 @@
 ---
-title: "VAR.S Function (DAX) | Microsoft Docs"
+title: "VAR.S function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# VAR.S Function (DAX)
+# VAR.S function (DAX)
 Returns the variance of a sample population.  
   
 ## Syntax  

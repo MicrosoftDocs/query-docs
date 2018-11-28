@@ -1,5 +1,5 @@
 ---
-title: "EDATE Function (DAX) | Microsoft Docs"
+title: "EDATE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# EDATE Function (DAX)
+# EDATE function (DAX)
 Returns the date that is the indicated number of months before or after the start date. Use EDATE to calculate maturity dates or due dates that fall on the same day of the month as the date of issue.  
   
 ## Syntax  
@@ -48,7 +48,7 @@ The following example returns the date three months after the order date, which 
 =EDATE([TransactionDate],3)  
 ```
   
-## See Also  
-[EOMONTH Function &#40;DAX&#41;](eomonth-function-dax.md)  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+## See also  
+[EOMONTH function &#40;DAX&#41;](eomonth-function-dax.md)  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
   

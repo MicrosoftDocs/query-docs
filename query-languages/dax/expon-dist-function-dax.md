@@ -1,5 +1,5 @@
 ---
-title: "EXPON.DIST Function (DAX) | Microsoft Docs"
+title: "EXPON.DIST function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# EXPON.DIST Function (DAX)
+# EXPON.DIST function (DAX)
 Returns the exponential distribution. Use EXPON.DIST to model the time between events, such as how long an automated bank teller takes to deliver cash. For example, you can use EXPON.DIST to determine the probability that the process takes at most 1 minute.  
   
 ## Syntax  

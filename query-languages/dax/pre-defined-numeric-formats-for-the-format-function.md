@@ -1,5 +1,5 @@
 ---
-title: "Pre-Defined Numeric Formats for the FORMAT Function | Microsoft Docs"
+title: "Pre-Defined Numeric Formats for the FORMAT function | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# Pre-Defined Numeric Formats for the FORMAT Function
+# Pre-Defined Numeric Formats for the FORMAT function
 The following table identifies the predefined numeric format names. These may be used by name as the style argument for the Format function.  
   
 |Format specification|Description|  
@@ -58,8 +58,8 @@ The above expressions return the following results:
   
 **1.23E+04** "Scientific" displays the number in scientific notation with two decimal digits.  
   
-## See Also  
-[FORMAT Function &#40;DAX&#41;](format-function-dax.md)  
-[Pre-defined Date and Time formats for the FORMAT Function](pre-defined-date-and-time-formats-for-the-format-function.md)  
-[Custom Numeric Formats for the FORMAT Function](custom-numeric-formats-for-the-format-function.md)  
+## See also  
+[FORMAT function &#40;DAX&#41;](format-function-dax.md)  
+[Pre-defined date and time formats for the FORMAT function](pre-defined-date-and-time-formats-for-the-format-function.md)  
+[Custom Numeric Formats for the FORMAT function](custom-numeric-formats-for-the-format-function.md)  
   
