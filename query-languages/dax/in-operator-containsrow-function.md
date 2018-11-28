@@ -1,5 +1,5 @@
 ---
-title: "IN Operator / CONTAINSROW Function | Microsoft Docs"
+title: "IN Operator / CONTAINSROW function | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# IN Operator / CONTAINSROW Function
+# IN Operator / CONTAINSROW function
 Returns TRUE if a row of values exists or contained in a table, otherwise returns FALSE.
 Except syntax, the IN operator and CONTAINSROW function are functionally equivalent.
 
@@ -22,7 +22,7 @@ Except syntax, the IN operator and CONTAINSROW function are functionally equival
 
 ```
 
-## CONTAINSROW Function
+## CONTAINSROW function
 ### Syntax
  
  ```

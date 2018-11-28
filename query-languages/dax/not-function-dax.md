@@ -1,5 +1,5 @@
 ---
-title: "NOT Function (DAX) | Microsoft Docs"
+title: "NOT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# NOT Function (DAX)
+# NOT function (DAX)
 Changes FALSE to TRUE, or TRUE to FALSE.  
   
 ## Syntax  
@@ -40,9 +40,9 @@ Now create a new calculated column, **Calculated Column2**, and type the followi
 
 For each row in **Calculated Column1**, the values "true" and "false" are interpreted as the logical values TRUE or FALSE, and the NOT function returns the logical opposite of that value.  
   
-## See Also  
-[TRUE Function &#40;DAX&#41;](true-function-dax.md)  
-[FALSE Function &#40;DAX&#41;](false-function-dax.md)  
-[IF Function &#40;DAX&#41;](if-function-dax.md)  
-[DAX Function Reference](dax-function-reference.md)  
+## See also  
+[TRUE function &#40;DAX&#41;](true-function-dax.md)  
+[FALSE function &#40;DAX&#41;](false-function-dax.md)  
+[IF function &#40;DAX&#41;](if-function-dax.md)  
+[DAX function reference](dax-function-reference.md)  
   

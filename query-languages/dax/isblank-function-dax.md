@@ -1,5 +1,5 @@
 ---
-title: "ISBLANK Function (DAX) | Microsoft Docs"
+title: "ISBLANK function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ISBLANK Function (DAX)
+# ISBLANK function (DAX)
 Checks whether a value is blank, and returns TRUE or FALSE.  
   
 ## Syntax  
@@ -47,6 +47,6 @@ This formula computes the increase or decrease ratio in sales compared to the pr
       /'CalculatedMeasures'[PreviousYearTotalSales])  
 ```
   
-## See Also  
-[Information Functions &#40;DAX&#41;](information-functions-dax.md)  
+## See also  
+[Information functions &#40;DAX&#41;](information-functions-dax.md)  
   

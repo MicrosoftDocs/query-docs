@@ -1,5 +1,5 @@
 ---
-title: "FIND Function (DAX) | Microsoft Docs"
+title: "FIND function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# FIND Function (DAX)
+# FIND function (DAX)
 Returns the starting position of one text string within another text string. FIND is case-sensitive.  
   
 ## Syntax  
@@ -44,6 +44,6 @@ The following formula finds the position of the first letter of the product desi
 =FIND("BMX","line of BMX racing goods")  
 ```
   
-## See Also  
-[Text Functions &#40;DAX&#41;](text-functions-dax.md)  
+## See also  
+[Text functions &#40;DAX&#41;](text-functions-dax.md)  
   

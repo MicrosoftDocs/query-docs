@@ -1,5 +1,5 @@
 ---
-title: "DAY Function (DAX) | Microsoft Docs"
+title: "DAY function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# DAY Function (DAX)
+# DAY function (DAX)
 Returns the day of the month, a number from 1 to 31.  
   
 ## Syntax  
@@ -68,8 +68,8 @@ The following expression returns the day that each sales order was placed, and f
 =IF( DAY([SalesDate])=10,"promotion","")  
 ```
   
-## See Also  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[TODAY Function &#40;DAX&#41;](today-function-dax.md)  
-[DATE Function &#40;DAX&#41;](date-function-dax.md)  
+## See also  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+[TODAY function &#40;DAX&#41;](today-function-dax.md)  
+[DATE function &#40;DAX&#41;](date-function-dax.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: "FIXED Function (DAX) | Microsoft Docs"
+title: "FIXED function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# FIXED Function (DAX)
+# FIXED function (DAX)
 Rounds a number to the specified number of decimals and returns the result as text. You can specify that the result be returned with or without commas.  
   
 ## Syntax  
@@ -49,7 +49,7 @@ The following example gets the numeric value for the current row in column, PctC
 
 Numbers can never have more than 15 significant digits, but decimals can be as large as 127.  
   
-## See Also  
-[Text Functions &#40;DAX&#41;](text-functions-dax.md)  
-[Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+## See also  
+[Text functions &#40;DAX&#41;](text-functions-dax.md)  
+[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
   

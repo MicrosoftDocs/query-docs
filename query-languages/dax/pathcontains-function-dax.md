@@ -1,5 +1,5 @@
 ---
-title: "PATHCONTAINS Function (DAX) | Microsoft Docs"
+title: "PATHCONTAINS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# PATHCONTAINS Function (DAX)
+# PATHCONTAINS function (DAX)
 Returns **TRUE** if the specified *item* exists within the specified *path*.  
   
 ## Syntax  

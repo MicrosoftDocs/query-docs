@@ -1,5 +1,5 @@
 ---
-title: "EARLIER Function (DAX) | Microsoft Docs"
+title: "EARLIER function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# EARLIER Function (DAX)
+# EARLIER function (DAX)
 Returns the current value of the specified column in an outer evaluation pass of the mentioned column.  
   
 EARLIER is useful for nested calculations where you want to use a certain value as an input and produce calculations based on that input. In Microsoft Excel, you can do such calculations only within the context of the current row; however, in DAX you can store the value of the input and then make calculation using data from the entire table.  
@@ -113,7 +113,7 @@ The following steps describe the method of calculation in more detail.
   
 The **EARLIER** function will always get the value of the column prior to the current table operation. If you need to get a value from the loop before that, set the second argument to 2.  
   
-## See Also  
-[EARLIEST Function &#40;DAX&#41;](earliest-function-dax.md)  
-[Filter Functions &#40;DAX&#41;](filter-functions-dax.md)  
+## See also  
+[EARLIEST function &#40;DAX&#41;](earliest-function-dax.md)  
+[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
   

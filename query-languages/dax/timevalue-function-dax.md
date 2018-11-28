@@ -1,5 +1,5 @@
 ---
-title: "TIMEVALUE Function (DAX) | Microsoft Docs"
+title: "TIMEVALUE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# TIMEVALUE Function (DAX)
+# TIMEVALUE function (DAX)
 Converts a time in text format to a time in datetime format.  
   
 ## Syntax  
@@ -39,6 +39,6 @@ When the **time_text** argument is a text representation of the date and time, t
 =TIMEVALUE("20:45:30")  
 ```
   
-## See Also  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+## See also  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
   

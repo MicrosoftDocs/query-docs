@@ -1,5 +1,5 @@
 ---
-title: "DIVIDE Function (DAX) | Microsoft Docs"
+title: "DIVIDE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# DIVIDE Function (DAX)
+# DIVIDE function (DAX)
 Performs division and returns alternate result or BLANK() on division by 0.  
   
 ## Syntax  
@@ -53,7 +53,7 @@ The following example returns 1.
 =DIVIDE(5,0,1)  
 ```
   
-## See Also  
-[QUOTIENT Function &#40;DAX&#41;](quotient-function-dax.md)  
-[Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+## See also  
+[QUOTIENT function &#40;DAX&#41;](quotient-function-dax.md)  
+[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
   

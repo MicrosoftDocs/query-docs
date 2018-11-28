@@ -1,5 +1,5 @@
 ---
-title: "TANH Function (DAX) | Microsoft Docs"
+title: "TANH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# TANH Function (DAX)
+# TANH function (DAX)
 Returns the hyperbolic tangent of a number.  
   
 ## Syntax  

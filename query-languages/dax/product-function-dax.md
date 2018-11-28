@@ -1,5 +1,5 @@
 ---
-title: "PRODUCT Function (DAX) | Microsoft Docs"
+title: "PRODUCT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,11 +9,11 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# PRODUCT Function (DAX)
+# PRODUCT function (DAX)
   
 Returns the product of the numbers in a column.  
   
-To return the product of an expression evaluated for each row in a table, use [PRODUCTX Function &#40;DAX&#41;](productx-function-dax.md).  
+To return the product of an expression evaluated for each row in a table, use [PRODUCTX function &#40;DAX&#41;](productx-function-dax.md).  
   
 ## Syntax  
   
@@ -42,6 +42,6 @@ The following computes the product of the AdjustedRates column in an Annuity tab
 =PRODUCT( Annuity[AdjustedRates] )  
 ```
   
-## See Also  
-[PRODUCTX Function &#40;DAX&#41;](productx-function-dax.md)  
+## See also  
+[PRODUCTX function &#40;DAX&#41;](productx-function-dax.md)  
   

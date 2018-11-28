@@ -1,5 +1,5 @@
 ---
-title: "CHISQ.INV Function (DAX) | Microsoft Docs"
+title: "CHISQ.INV function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# CHISQ.INV Function (DAX)
+# CHISQ.INV function (DAX)
 Returns the inverse of the left-tailed probability of the chi-squared distribution.  
   
 The chi-squared distribution is commonly used to study variation in the percentage of something across samples, such as the fraction of the day people spend watching television.  

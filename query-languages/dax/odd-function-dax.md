@@ -1,5 +1,5 @@
 ---
-title: "ODD Function (DAX) | Microsoft Docs"
+title: "ODD function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ODD Function (DAX)
+# ODD function (DAX)
 Returns number rounded up to the nearest odd integer.  
   
 ## Syntax  

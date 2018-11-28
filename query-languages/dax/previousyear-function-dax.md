@@ -1,5 +1,5 @@
 ---
-title: "PREVIOUSYEAR Function (DAX) | Microsoft Docs"
+title: "PREVIOUSYEAR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# PREVIOUSYEAR Function (DAX)
+# PREVIOUSYEAR function (DAX)
 Returns a table that contains a column of all dates from the previous year, given the last date in the **dates** column, in the current context.  
   
 ## Syntax  
@@ -41,7 +41,7 @@ The **dates** argument can be any of the following:
 -   A Boolean expression that defines a single-column table of date/time values.  
   
 > [!NOTE]  
-> Constraints on Boolean expressions are described in the topic, [CALCULATE Function &#40;DAX&#41;](calculate-function-dax.md).  
+> Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
   
 The **year_end_date** parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is ignored.  
   
@@ -56,10 +56,10 @@ To see how this works, create a PivotTable and add the fields, CalendarYear and 
 =CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSYEAR('DateTime'[DateKey]))  
 ```
   
-## See Also  
-[Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[PREVIOUSMONTH Function &#40;DAX&#41;](previousmonth-function-dax.md)  
-[PREVIOUSDAY Function &#40;DAX&#41;](previousday-function-dax.md)  
-[PREVIOUSQUARTER Function &#40;DAX&#41;](previousquarter-function-dax.md)  
+## See also  
+[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+[PREVIOUSMONTH function &#40;DAX&#41;](previousmonth-function-dax.md)  
+[PREVIOUSDAY function &#40;DAX&#41;](previousday-function-dax.md)  
+[PREVIOUSQUARTER function &#40;DAX&#41;](previousquarter-function-dax.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: "DATE Function (DAX) | Microsoft Docs"
+title: "DATE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# DATE Function (DAX)
+# DATE function (DAX)
 Returns the specified date in **datetime** format.  
   
 ## Syntax  
@@ -116,8 +116,8 @@ If **day** is less than 1, **day** subtracts the magnitude that number of days, 
 =DATE(2008,1,-15)  
 ```
   
-## See Also  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[DAY Function &#40;DAX&#41;](day-function-dax.md)  
-[TODAY Function &#40;DAX&#41;](today-function-dax.md)  
+## See also  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+[DAY function &#40;DAX&#41;](day-function-dax.md)  
+[TODAY function &#40;DAX&#41;](today-function-dax.md)  
   

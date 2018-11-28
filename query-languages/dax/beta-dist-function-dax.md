@@ -1,5 +1,5 @@
 ---
-title: "BETA.DIST Function (DAX) | Microsoft Docs"
+title: "BETA.DIST function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# BETA.DIST Function (DAX)
+# BETA.DIST function (DAX)
 Returns the beta distribution. The beta distribution is commonly used to study variation in the percentage of something across samples, such as the fraction of the day people spend watching television.  
   
 ## Syntax  

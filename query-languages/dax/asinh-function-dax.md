@@ -1,5 +1,5 @@
 ---
-title: "ASINH Function (DAX) | Microsoft Docs"
+title: "ASINH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ASINH Function (DAX)
+# ASINH function (DAX)
 Returns the inverse hyperbolic sine of a number. The inverse hyperbolic sine is the value whose hyperbolic sine is *number*, so ASINH(SINH(number)) equals *number*.  
   
 ## Syntax  

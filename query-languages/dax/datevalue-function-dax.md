@@ -1,5 +1,5 @@
 ---
-title: "DATEVALUE Function (DAX) | Microsoft Docs"
+title: "DATEVALUE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# DATEVALUE Function (DAX)
+# DATEVALUE function (DAX)
 Converts a date in the form of text to a date in datetime format.  
   
 ## Syntax  
@@ -43,6 +43,6 @@ The following example returns a different **datetime** value depending on your c
 =DATEVALUE("8/1/2009")  
 ```
   
-## See Also  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+## See also  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
   

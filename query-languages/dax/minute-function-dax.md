@@ -1,5 +1,5 @@
 ---
-title: "MINUTE Function (DAX) | Microsoft Docs"
+title: "MINUTE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# MINUTE Function (DAX)
+# MINUTE function (DAX)
 Returns the minute as a number from 0 to 59, given a date and time value.  
   
 ## Syntax  
@@ -46,9 +46,9 @@ The following example returns 45, which is the number of minutes in the time 1:4
 =MINUTE("March 23, 2008 1:45 PM")  
 ```
   
-## See Also  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[HOUR Function &#40;DAX&#41;](hour-function-dax.md)  
-[YEAR Function &#40;DAX&#41;](year-function-dax.md)  
-[SECOND Function &#40;DAX&#41;](second-function-dax.md)  
+## See also  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+[HOUR function &#40;DAX&#41;](hour-function-dax.md)  
+[YEAR function &#40;DAX&#41;](year-function-dax.md)  
+[SECOND function &#40;DAX&#41;](second-function-dax.md)  
   

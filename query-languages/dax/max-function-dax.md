@@ -1,5 +1,5 @@
 ---
-title: "MAX Function (DAX) | Microsoft Docs"
+title: "MAX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# MAX Function (DAX)
+# MAX function (DAX)
 Returns the largest numeric value in a column, or between two scalar expressions.  
   
 ## Syntax  
@@ -52,9 +52,9 @@ The following example returns the largest value between the result of two expres
 ```
 
   
-## See Also  
-[MAX Function &#40;DAX&#41;](max-function-dax.md)  
-[MAXA Function &#40;DAX&#41;](maxa-function-dax.md)  
-[MAXX Function &#40;DAX&#41;](maxx-function-dax.md)  
-[Statistical Functions &#40;DAX&#41;](statistical-functions-dax.md)  
+## See also  
+[MAX function &#40;DAX&#41;](max-function-dax.md)  
+[MAXA function &#40;DAX&#41;](maxa-function-dax.md)  
+[MAXX function &#40;DAX&#41;](maxx-function-dax.md)  
+[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
   

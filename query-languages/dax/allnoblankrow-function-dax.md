@@ -1,5 +1,5 @@
 ---
-title: "ALLNOBLANKROW Function (DAX) | Microsoft Docs"
+title: "ALLNOBLANKROW function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: "owend"
 manager: kfile
 ---
-# ALLNOBLANKROW Function (DAX)
+# ALLNOBLANKROW function (DAX)
 From the parent table of a relationship, returns all rows but the blank row, or all distinct values of a column but the blank row, and disregards any context filters that might exist.  
   
 ## Syntax  
@@ -35,14 +35,14 @@ The ALLNOBLANKROW function only filters the blank row that a parent table, in a 
   
 The following table summarizes the variations of ALL that are provided in DAX, and their differences:  
   
-|Function and Usage|Description|  
+|Function and usage|Description|  
 |----------------------|---------------|  
 |ALL(Column)|Removes all filters from the specified column in the table; all other filters in the table, over other columns, still apply.|  
 |ALL(Table)|Removes all filters from the specified table.|  
 |ALLEXCEPT(Table,Col1,Col2...)|Overrides all context filters in the table except over the specified columns.|  
 |ALLNOBLANK(table&#124;column)|From the parent table of a relationship, returns all rows but the blank row, or all distinct values of a column but the blank row, and disregards any context filters that might exist|  
   
-For a general description of how the ALL function works, together with step-by-step examples that use ALL(Table) and ALL(Column), see [ALL Function &#40;DAX&#41;](all-function-dax.md).  
+For a general description of how the ALL function works, together with step-by-step examples that use ALL(Table) and ALL(Column), see [ALL function &#40;DAX&#41;](all-function-dax.md).  
   
 ## Example  
 In the sample data, the ResellerSales_USD table contains one row that has no values and therefore cannot be related to any of the parent tables in the relationships within the workbook. You will use this table in a PivotTable so that you can see the blank row behavior and how to handle counts on unrelated data.  
@@ -70,7 +70,7 @@ When you see this blank label in the PivotTable, you know that in some of the ta
   
 The rows that get added to this blank label group are either values that do not match any value in the parent table-- for example, a date that does not exist in the datetime table-- or null values, meaning no value for date at all. In this example we have placed a blank value in all columns of the child sales table. Having more values in the parent table than in the children tables does not cause a problem.  
   
-Step 3: Count rows using ALL and ALLNONBLANK 
+Step 3: Count rows using ALL and ALLNOBLANK 
   
 Add the following two measures to the datetime table, to count the table rows: **Countrows ALLNOBLANK of datetime**, **Countrows ALL of datetime**. The formulas that you can use to define these measures are given in the code section following.  
   
@@ -118,8 +118,8 @@ Now the two measures have the same results. That is because the ALLNOBLANKROW fu
 =COUNTROWS(ALL('ResellerSales_USD'))  
 ```
   
-## See Also  
-[Filter Functions &#40;DAX&#41;](filter-functions-dax.md)  
-[ALL Function &#40;DAX&#41;](all-function-dax.md)  
-[FILTER Function &#40;DAX&#41;](filter-function-dax.md)  
+## See also  
+[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
+[ALL function &#40;DAX&#41;](all-function-dax.md)  
+[FILTER function &#40;DAX&#41;](filter-function-dax.md)  
   

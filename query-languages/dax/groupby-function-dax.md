@@ -1,5 +1,5 @@
 ---
-title: "GROUPBY Function (DAX) | Microsoft Docs"
+title: "GROUPBY function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# GROUPBY Function (DAX)
+# GROUPBY function (DAX)
   
 The GROUPBY function is similar to the SUMMARIZE function. However, GROUPBY does not do an implicit CALCULATE for any extension columns that it adds. GROUPBY permits a new function, CURRENTGROUP(), to be used inside aggregation functions in the extension columns that it adds. GROUPBY attempts to reuse the data that has been grouped making it highly performant.  
   
@@ -96,7 +96,7 @@ Geography[Country],
 )  
 ```
   
-## See Also  
-[SUMMARIZE Function &#40;DAX&#41;](summarize-function-dax.md)  
-[SUMMARIZECOLUMNS Function &#40;DAX&#41;](summarizecolumns-function-dax.md)  
+## See also  
+[SUMMARIZE function &#40;DAX&#41;](summarize-function-dax.md)  
+[SUMMARIZECOLUMNS function &#40;DAX&#41;](summarizecolumns-function-dax.md)  
   

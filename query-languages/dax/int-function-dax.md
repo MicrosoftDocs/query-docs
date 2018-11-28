@@ -1,5 +1,5 @@
 ---
-title: "INT Function (DAX) | Microsoft Docs"
+title: "INT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# INT Function (DAX)
+# INT function (DAX)
 Rounds a number down to the nearest integer.  
   
 ## Syntax  
@@ -37,10 +37,10 @@ The following expression rounds the value to 1. If you use the ROUND function, t
 =INT(1.5)  
 ```
   
-## See Also  
-[Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
-[ROUND Function &#40;DAX&#41;](round-function-dax.md)  
-[ROUNDUP Function &#40;DAX&#41;](roundup-function-dax.md)  
-[ROUNDDOWN Function &#40;DAX&#41;](rounddown-function-dax.md)  
-[MROUND Function &#40;DAX&#41;](mround-function-dax.md)  
+## See also  
+[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+[ROUND function &#40;DAX&#41;](round-function-dax.md)  
+[ROUNDUP function &#40;DAX&#41;](roundup-function-dax.md)  
+[ROUNDDOWN function &#40;DAX&#41;](rounddown-function-dax.md)  
+[MROUND function &#40;DAX&#41;](mround-function-dax.md)  
   

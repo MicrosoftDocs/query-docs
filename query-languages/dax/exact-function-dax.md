@@ -1,5 +1,5 @@
 ---
-title: "EXACT Function (DAX) | Microsoft Docs"
+title: "EXACT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# EXACT Function (DAX)
+# EXACT function (DAX)
 Compares two text strings and returns TRUE if they are exactly the same, FALSE otherwise. EXACT is case-sensitive but ignores formatting differences. You can use EXACT to test text being entered into a document.  
   
 ## Syntax  
@@ -35,6 +35,6 @@ The following formula checks the value of Column1 for the current row against th
 =EXACT([Column1],[Column2])  
 ```
   
-## See Also  
-[Text Functions &#40;DAX&#41;](text-functions-dax.md)  
+## See also  
+[Text functions &#40;DAX&#41;](text-functions-dax.md)  
   

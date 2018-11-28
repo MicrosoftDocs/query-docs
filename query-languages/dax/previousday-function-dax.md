@@ -1,5 +1,5 @@
 ---
-title: "PREVIOUSDAY Function (DAX) | Microsoft Docs"
+title: "PREVIOUSDAY function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# PREVIOUSDAY Function (DAX)
+# PREVIOUSDAY function (DAX)
 Returns a table that contains a column of all dates representing the day that is previous to the first date in the **dates** column, in the current context.  
   
 ## Syntax  
@@ -40,7 +40,7 @@ The **dates** argument can be any of the following:
 -   A Boolean expression that defines a single-column table of date/time values.  
   
 > [!NOTE]  
-> Constraints on Boolean expressions are described in the topic, [CALCULATE Function &#40;DAX&#41;](calculate-function-dax.md).  
+> Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
   
 This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
@@ -53,10 +53,10 @@ To see how this works, create a PivotTable and add the fields, CalendarYear and 
 =CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSDAY('DateTime'[DateKey]))  
 ```
   
-## See Also  
-[Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[PREVIOUSMONTH Function &#40;DAX&#41;](previousmonth-function-dax.md)  
-[PREVIOUSQUARTER Function &#40;DAX&#41;](previousquarter-function-dax.md)  
-[PREVIOUSYEAR Function &#40;DAX&#41;](previousyear-function-dax.md)  
+## See also  
+[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+[PREVIOUSMONTH function &#40;DAX&#41;](previousmonth-function-dax.md)  
+[PREVIOUSQUARTER function &#40;DAX&#41;](previousquarter-function-dax.md)  
+[PREVIOUSYEAR function &#40;DAX&#41;](previousyear-function-dax.md)  
   

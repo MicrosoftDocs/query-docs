@@ -1,5 +1,5 @@
 ---
-title: "ISO.CEILING Function (DAX) | Microsoft Docs"
+title: "ISO.CEILING function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ISO.CEILING Function (DAX)
+# ISO.CEILING function (DAX)
 Rounds a number up, to the nearest integer or to the nearest multiple of significance.  
   
 ## Syntax  
@@ -69,9 +69,9 @@ The following formula returns the ISO ceiling value of -4.40.
 =ISO.CEILING(-4.42,0.05)  
 ```
   
-## See Also  
-[Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
-[FLOOR Function &#40;DAX&#41;](floor-function-dax.md)  
-[CEILING Function &#40;DAX&#41;](ceiling-function-dax.md)  
-[ROUNDUP Function &#40;DAX&#41;](roundup-function-dax.md)  
+## See also  
+[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+[FLOOR function &#40;DAX&#41;](floor-function-dax.md)  
+[CEILING function &#40;DAX&#41;](ceiling-function-dax.md)  
+[ROUNDUP function &#40;DAX&#41;](roundup-function-dax.md)  
   

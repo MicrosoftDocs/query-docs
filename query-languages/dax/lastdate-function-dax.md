@@ -1,5 +1,5 @@
 ---
-title: "LASTDATE Function (DAX) | Microsoft Docs"
+title: "LASTDATE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# LASTDATE Function (DAX)
+# LASTDATE function (DAX)
 Returns the last date in the current context for the specified column of dates.  
   
 ## Syntax  
@@ -37,7 +37,7 @@ The **dates** argument can be any of the following:
 -   A Boolean expression that defines a single-column table of date/time values.  
   
 > [!NOTE]  
-> Constraints on Boolean expressions are described in the topic, [CALCULATE Function &#40;DAX&#41;](calculate-function-dax.md).  
+> Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
   
 When the current context is a single date, the date returned by the FIRSTDATE and LASTDATE functions will be equal.  
   
@@ -54,10 +54,10 @@ To see how this works, create a PivotTable and add the field CalendarYear to the
 =LASTDATE('InternetSales_USD'[SaleDateKey])  
 ```
   
-## See Also  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
-[FIRSTDATE Function &#40;DAX&#41;](firstdate-function-dax.md)  
-[LASTNONBLANK Function &#40;DAX&#41;](lastnonblank-function-dax.md)  
+## See also  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
+[FIRSTDATE function &#40;DAX&#41;](firstdate-function-dax.md)  
+[LASTNONBLANK function &#40;DAX&#41;](lastnonblank-function-dax.md)  
 [Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
   

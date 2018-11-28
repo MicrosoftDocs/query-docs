@@ -1,5 +1,5 @@
 ---
-title: "OPENINGBALANCEQUARTER Function (DAX) | Microsoft Docs"
+title: "OPENINGBALANCEQUARTER function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# OPENINGBALANCEQUARTER Function (DAX)
+# OPENINGBALANCEQUARTER function (DAX)
 Evaluates the **expression** at the first date of the quarter, in the current context.  
   
 ## Syntax  
@@ -40,10 +40,10 @@ The **dates** argument can be any of the following:
 -   A Boolean expression that defines a single-column table of date/time values.  
   
 > [!NOTE]  
-> Constraints on Boolean expressions are described in the topic, [CALCULATE Function &#40;DAX&#41;](calculate-function-dax.md).  
+> Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
   
 > [!NOTE]  
-> The **filter** expression has restrictions described in the topic, [CALCULATE Function &#40;DAX&#41;](calculate-function-dax.md).  
+> The **filter** expression has restrictions described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
 >   
 > This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
@@ -58,10 +58,10 @@ To see how this works, create a PivotTable and add the fields, CalendarYear, Cal
 =OPENINGBALANCEQUARTER(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])  
 ```
   
-## See Also  
-[OPENINGBALANCEYEAR Function &#40;DAX&#41;](openingbalanceyear-function-dax.md)  
-[OPENINGBALANCEMONTH Function &#40;DAX&#41;](openingbalancemonth-function-dax.md)  
-[Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
-[CLOSINGBALANCEQUARTER Function &#40;DAX&#41;](closingbalancequarter-function-dax.md)  
+## See also  
+[OPENINGBALANCEYEAR function &#40;DAX&#41;](openingbalanceyear-function-dax.md)  
+[OPENINGBALANCEMONTH function &#40;DAX&#41;](openingbalancemonth-function-dax.md)  
+[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
+[CLOSINGBALANCEQUARTER function &#40;DAX&#41;](closingbalancequarter-function-dax.md)  
 [Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
   

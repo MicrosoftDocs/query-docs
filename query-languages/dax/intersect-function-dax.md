@@ -1,5 +1,5 @@
 ---
-title: "INTERSECT Function (DAX) | Microsoft Docs"
+title: "INTERSECT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# INTERSECT Function (DAX)
+# INTERSECT function (DAX)
 Returns the row intersection of two tables, retaining duplicates.  
   
 ## Syntax  

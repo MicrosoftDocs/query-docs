@@ -1,5 +1,5 @@
 ---
-title: "CALCULATE Function (DAX) | Microsoft Docs"
+title: "CALCULATE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# CALCULATE Function (DAX)
+# CALCULATE function (DAX)
 Evaluates an expression in a context that is modified by the specified filters.  
   
 ## Syntax  
@@ -67,10 +67,10 @@ To see how this works, add the field, CalendarYear, to the **Row Labels** area o
 
 The CALCULATE expression in the denominator enables the sum expression to include all rows in the calculation. This overrides the implicit filters for CalendarYear and ProductCategoryName that exist for the numerator part of the expression.  
   
-## Related Functions  
+## Related functions  
 Whereas the CALCULATE function requires as its first argument an expression that returns a single value, the CALCULATETABLE function takes a table of values.  
   
-## See Also  
-[CALCULATETABLE Function &#40;DAX&#41;](calculatetable-function-dax.md)  
-[Filter Functions &#40;DAX&#41;](filter-functions-dax.md)  
+## See also  
+[CALCULATETABLE function &#40;DAX&#41;](calculatetable-function-dax.md)  
+[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
   

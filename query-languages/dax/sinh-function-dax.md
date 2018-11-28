@@ -1,5 +1,5 @@
 ---
-title: "SINH Function (DAX) | Microsoft Docs"
+title: "SINH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# SINH Function (DAX)
+# SINH function (DAX)
 Returns the hyperbolic sine of a number.  
   
 ## Syntax  

@@ -1,5 +1,5 @@
 ---
-title: "SUMX Function (DAX) | Microsoft Docs"
+title: "SUMX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# SUMX Function (DAX)
+# SUMX function (DAX)
 Returns the sum of an expression evaluated for each row in a table.  
   
 ## Syntax  
@@ -33,7 +33,7 @@ The SUMX function takes as its first argument a table, or an expression that ret
   
 Only the numbers in the column are counted. Blanks, logical values, and text are ignored.  
   
-To see some more complex examples of SUMX in formulas, see [ALL Function &#40;DAX&#41;](all-function-dax.md) and [CALCULATETABLE Function &#40;DAX&#41;](calculatetable-function-dax.md).  
+To see some more complex examples of SUMX in formulas, see [ALL function &#40;DAX&#41;](all-function-dax.md) and [CALCULATETABLE function &#40;DAX&#41;](calculatetable-function-dax.md).  
   
 ## Example  
 The following example first filters the table, InternetSales, on the expression, `ShippingTerritoryID = 5`, and then returns the sum of all values in the column, Freight. In other words, the expression returns the sum of freight charges for only the specified sales area.  
@@ -44,7 +44,7 @@ The following example first filters the table, InternetSales, on the expression,
 
 If you do not need to filter the column, use the SUM function. The SUM function is similar to the Excel function of the same name, except that it takes a column as a reference.  
   
-## See Also  
-[SUM Function &#40;DAX&#41;](sum-function-dax.md)  
-[Statistical Functions &#40;DAX&#41;](statistical-functions-dax.md)  
+## See also  
+[SUM function &#40;DAX&#41;](sum-function-dax.md)  
+[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
   

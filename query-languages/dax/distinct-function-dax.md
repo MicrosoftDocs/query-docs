@@ -1,5 +1,5 @@
 ---
-title: "DISTINCT (column) Function (DAX) | Microsoft Docs"
+title: "DISTINCT (column) function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# DISTINCT (column) Function
+# DISTINCT (column) function
 Returns a one-column table that contains the distinct values from the specified column. In other words, duplicate values are removed and only unique values are returned.  
   
 > [!NOTE]  
@@ -33,10 +33,10 @@ A column of unique values.
 ## Remarks  
 The results of DISTINCT are affected by the current filter context. For example, if you use the formula in the following example to create a measure, the results would change whenever the table was filtered to show only a particular region or a time period.  
   
-## Related Functions  
+## Related functions  
 There is another version of the DISTINCT function, [DISTINCT (table)](distinct-table-function-dax.md), that returns a table by removing duplicate rows from another table or expression..
 
-The VALUES function is similar to DISTINCT; it can also be used to return a list of unique values, and generally will return exactly the same results as DISTINCT. However, in some context VALUES will return one additional special value. For more information, see [VALUES Function &#40;DAX&#41;](values-function-dax.md).  
+The VALUES function is similar to DISTINCT; it can also be used to return a list of unique values, and generally will return exactly the same results as DISTINCT. However, in some context VALUES will return one additional special value. For more information, see [VALUES function &#40;DAX&#41;](values-function-dax.md).  
   
 ## Example  
 The following formula counts the number of unique customers who have generated orders over the internet channel. The table that follows illustrates the possible results when the formula is added to a PivotTable.  
@@ -58,9 +58,9 @@ You cannot paste the list of values that DISTINCT returns directly into a column
   
 Also, note that the results are not additive. That is to say, the total number of unique customers in *2007* is not the sum of unique customers of *Accessories*, *Bikes* and *Clothing* for that year. The reason is that a customer can be counted in multiple groups.  
   
-## See Also  
-[Filter Functions &#40;DAX&#41;](filter-functions-dax.md)  
-[FILTER Function &#40;DAX&#41;](filter-function-dax.md)  
-[RELATED Function &#40;DAX&#41;](related-function-dax.md)  
-[VALUES Function &#40;DAX&#41;](values-function-dax.md)  
+## See also  
+[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
+[FILTER function &#40;DAX&#41;](filter-function-dax.md)  
+[RELATED function &#40;DAX&#41;](related-function-dax.md)  
+[VALUES function &#40;DAX&#41;](values-function-dax.md)  
   

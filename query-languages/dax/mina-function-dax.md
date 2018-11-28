@@ -1,5 +1,5 @@
 ---
-title: "MINA Function (DAX) | Microsoft Docs"
+title: "MINA function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# MINA Function (DAX)
+# MINA function (DAX)
 Returns the smallest value in a column, including any logical values and numbers represented as text.  
   
 ## Syntax  
@@ -52,9 +52,9 @@ The following expression returns the minimum value in the column, PostalCode. Be
 =MINA([PostalCode])  
 ```
   
-## See Also  
-[MIN Function &#40;DAX&#41;](min-function-dax.md)  
-[MINA Function &#40;DAX&#41;](mina-function-dax.md)  
-[MINX Function &#40;DAX&#41;](minx-function-dax.md)  
-[Statistical Functions &#40;DAX&#41;](statistical-functions-dax.md)  
+## See also  
+[MIN function &#40;DAX&#41;](min-function-dax.md)  
+[MINA function &#40;DAX&#41;](mina-function-dax.md)  
+[MINX function &#40;DAX&#41;](minx-function-dax.md)  
+[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
   

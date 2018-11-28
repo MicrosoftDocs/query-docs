@@ -1,5 +1,5 @@
 ---
-title: "DATEDIFF Function (DAX) | Microsoft Docs"
+title: "DATEDIFF function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# DATEDIFF Function (DAX)
+# DATEDIFF function (DAX)
   
 Returns the count of interval boundaries crossed between two dates.  
   

@@ -1,5 +1,5 @@
 ---
-title: "LOWER Function (DAX) | Microsoft Docs"
+title: "LOWER function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# LOWER Function (DAX)
+# LOWER function (DAX)
 Converts all letters in a text string to lowercase.  
   
 ## Syntax  
@@ -37,6 +37,6 @@ The following formula gets each row in the column, [ProductCode], and converts t
 =LOWER('New Products'[ProductCode])  
 ```
   
-## See Also  
-[Text Functions &#40;DAX&#41;](text-functions-dax.md)  
+## See also  
+[Text functions &#40;DAX&#41;](text-functions-dax.md)  
   

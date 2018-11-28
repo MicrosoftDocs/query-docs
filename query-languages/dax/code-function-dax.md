@@ -1,5 +1,5 @@
 ---
-title: "CODE Function (DAX) | Microsoft Docs"
+title: "CODE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# CODE Function (DAX)
+# CODE function (DAX)
 Returns a numeric code for the first character in a text string. The returned code corresponds to the character set used by your computer.  
   
 |Operating environment|Character set|  

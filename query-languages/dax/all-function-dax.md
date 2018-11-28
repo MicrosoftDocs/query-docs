@@ -1,5 +1,5 @@
 ---
-title: "ALL Function (DAX) | Microsoft Docs"
+title: "ALL function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ALL Function (DAX)
+# ALL function (DAX)
 Returns all the rows in a table, or all the values in a column, ignoring any filters that might have been applied. This function is useful for clearing filters and creating calculations on all the rows in a table.  
   
 ## Syntax  
@@ -37,7 +37,7 @@ This function is not used by itself, but serves as an intermediate function that
   
 As described in the following table, you can use the ALL and ALLEXCEPT functions in different scenarios.  
   
-|Function and Usage|Description|  
+|Function and usage|Description|  
 |----------------------|---------------|  
 |ALL(Table)|Removes all filters from the specified table. In effect, ALL(Table) returns all of the values in the table, removing any filters from the context that otherwise might have been applied.<br /><br />This function is useful when you are working with many levels of grouping, and want to create a calculation that creates a ratio of an aggregated value to the total value. The first example demonstrates this scenario.|  
 |ALL (Column[, Column[, …]])|Removes all filters from the specified columns in the table; all other filters on other columns in the table still apply. All column arguments must come from the same table.<br /><br />The ALL(Column) variant is useful when you want to remove the context filters for one or more specific columns and to keep all other context filters.<br /><br />The second and third examples demonstrate this scenario.|  
@@ -143,9 +143,9 @@ The formula is constructed as follows:
 > [!NOTE]  
 > This example uses the tables, ResellerSales_USD, DateTime, and ProductCategory from the DAX sample workbook. For more information about samples, see [Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474).  
   
-## See Also  
-[Filter Functions &#40;DAX&#41;](filter-functions-dax.md)  
-[ALL Function &#40;DAX&#41;](all-function-dax.md)  
-[ALLEXCEPT Function &#40;DAX&#41;](allexcept-function-dax.md)  
-[FILTER Function &#40;DAX&#41;](filter-function-dax.md)  
+## See also  
+[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
+[ALL function &#40;DAX&#41;](all-function-dax.md)  
+[ALLEXCEPT function &#40;DAX&#41;](allexcept-function-dax.md)  
+[FILTER function &#40;DAX&#41;](filter-function-dax.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: "COUNTAX Function (DAX) | Microsoft Docs"
+title: "COUNTAX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# COUNTAX Function (DAX)
+# COUNTAX function (DAX)
 The COUNTAX function counts nonblank results when evaluating the result of an expression over a table. That is, it works just like the COUNTA function, but is used to iterate through the rows in a table and count rows where the specified expressions results in a nonblank result.  
   
 ## Syntax  
@@ -44,10 +44,10 @@ The following example counts the number of nonblank rows in the column, Phone, u
 =COUNTAX(FILTER('Reseller',[Status]="Active"),[Phone])  
 ```
   
-## See Also  
-[COUNT Function &#40;DAX&#41;](count-function-dax.md)  
-[COUNTA Function &#40;DAX&#41;](counta-function-dax.md)  
-[COUNTAX Function &#40;DAX&#41;](countax-function-dax.md)  
-[COUNTX Function &#40;DAX&#41;](countx-function-dax.md)  
-[Statistical Functions &#40;DAX&#41;](statistical-functions-dax.md)  
+## See also  
+[COUNT function &#40;DAX&#41;](count-function-dax.md)  
+[COUNTA function &#40;DAX&#41;](counta-function-dax.md)  
+[COUNTAX function &#40;DAX&#41;](countax-function-dax.md)  
+[COUNTX function &#40;DAX&#41;](countx-function-dax.md)  
+[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
   

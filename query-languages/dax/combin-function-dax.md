@@ -1,5 +1,5 @@
 ---
-title: "COMBIN Function (DAX) | Microsoft Docs"
+title: "COMBIN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# COMBIN Function (DAX)
+# COMBIN function (DAX)
 Returns the number of combinations for a given number of items. Use COMBIN to determine the total possible number of groups for a given number of items.  
   
 ## Syntax  

@@ -1,5 +1,5 @@
 ---
-title: "UTCNOW Function (DAX) | Microsoft Docs"
+title: "UTCNOW function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# UTCTODAY Function (DAX)
+# UTCTODAY function (DAX)
 Returns the current UTC date.
   
 
@@ -42,7 +42,7 @@ Returns:
 |2/2/2018    |
 
 
-## See Also  
-[NOW Function &#40;DAX&#41;](now-function-dax.md)  
-[UTCNOW Function &#40;DAX&#41;](utcnow-function-dax.md)  
+## See also  
+[NOW function &#40;DAX&#41;](now-function-dax.md)  
+[UTCNOW function &#40;DAX&#41;](utcnow-function-dax.md)  
   

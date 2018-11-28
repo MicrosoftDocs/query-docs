@@ -1,5 +1,5 @@
 ---
-title: "SELECTEDVALUE Function | Microsoft Docs"
+title: "SELECTEDVALUE function | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# SELECTEDVALUE Function
+# SELECTEDVALUE function
 Returns the value when the context for columnName has been filtered down to one distinct value only. Otherwise returns alternateResult.  
   
 ## Syntax  

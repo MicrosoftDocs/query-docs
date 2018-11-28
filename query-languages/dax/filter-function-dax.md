@@ -1,5 +1,5 @@
 ---
-title: "FILTER Function (DAX) | Microsoft Docs"
+title: "FILTER function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# FILTER Function (DAX)
+# FILTER function (DAX)
 Returns a table that represents a subset of another table or expression.  
   
 ## Syntax  
@@ -70,8 +70,8 @@ SUMX(FILTER('InternetSales_USD', RELATED('SalesTerritory'[SalesTerritoryCountry]
      ,'InternetSales_USD'[SalesAmount_USD])  
 ```
   
-## See Also  
-[Filter Functions &#40;DAX&#41;](filter-functions-dax.md)  
-[ALL Function &#40;DAX&#41;](all-function-dax.md)  
-[ALLEXCEPT Function &#40;DAX&#41;](allexcept-function-dax.md)  
+## See also  
+[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
+[ALL function &#40;DAX&#41;](all-function-dax.md)  
+[ALLEXCEPT function &#40;DAX&#41;](allexcept-function-dax.md)  
   

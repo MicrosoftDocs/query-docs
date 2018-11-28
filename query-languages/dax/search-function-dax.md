@@ -1,5 +1,5 @@
 ---
-title: "SEARCH Function (DAX) | Microsoft Docs"
+title: "SEARCH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# SEARCH Function (DAX)
+# SEARCH function (DAX)
 Returns the number of the character at which a specific character or text string is first found, reading left to right. Search is case-insensitive and accent sensitive.  
   
 ## Syntax  
@@ -90,8 +90,8 @@ Note that the data type of the value that you use as an error output must match 
   
 However, you could also return a blank (empty string) by using `BLANK()` as the second argument to IFERROR.  
   
-## See Also  
-[MID Function &#40;DAX&#41;](mid-function-dax.md)  
-[REPLACE Function &#40;DAX&#41;](replace-function-dax.md)  
-[Text Functions &#40;DAX&#41;](text-functions-dax.md)  
+## See also  
+[MID function &#40;DAX&#41;](mid-function-dax.md)  
+[REPLACE function &#40;DAX&#41;](replace-function-dax.md)  
+[Text functions &#40;DAX&#41;](text-functions-dax.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: "CHISQ.INV.RT Function (DAX) | Microsoft Docs"
+title: "CHISQ.INV.RT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# CHISQ.INV.RT Function (DAX)
+# CHISQ.INV.RT function (DAX)
 Returns the inverse of the right-tailed probability of the chi-squared distribution.  
   
 If probability = CHISQ.DIST.RT(x,...), then CHISQ.INV.RT(probability,...) = x. Use this function to compare observed results with expected ones in order to decide whether your original hypothesis is valid.  

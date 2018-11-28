@@ -1,5 +1,5 @@
 ---
-title: "Statistical Functions (DAX) | Microsoft Docs"
+title: "Statistical functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 8/14/2018
@@ -9,146 +9,146 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# Statistical Functions (DAX)
+# Statistical functions (DAX)
 Data Analysis Expressions (DAX) provides many functions for creating aggregations such as sums, counts, and averages. These functions are very similar to aggregation functions used by Microsoft Excel. This section lists the statistical and aggregation functions provided in DAX.  
   
-## In This Section  
-[ADDCOLUMNS Function &#40;DAX&#41;](addcolumns-function-dax.md)  
+## In this section  
+[ADDCOLUMNS function &#40;DAX&#41;](addcolumns-function-dax.md)  
   
-[AVERAGE Function &#40;DAX&#41;](average-function-dax.md)  
+[AVERAGE function &#40;DAX&#41;](average-function-dax.md)  
   
-[AVERAGEA Function &#40;DAX&#41;](averagea-function-dax.md)  
+[AVERAGEA function &#40;DAX&#41;](averagea-function-dax.md)  
   
-[AVERAGEX Function &#40;DAX&#41;](averagex-function-dax.md)  
+[AVERAGEX function &#40;DAX&#41;](averagex-function-dax.md)  
   
-[BETA.DIST Function &#40;DAX&#41;](beta-dist-function-dax.md)  
+[BETA.DIST function &#40;DAX&#41;](beta-dist-function-dax.md)  
   
-[BETA.INV Function &#40;DAX&#41;](beta-inv-function-dax.md)  
+[BETA.INV function &#40;DAX&#41;](beta-inv-function-dax.md)  
   
-[CHISQ.INV Function &#40;DAX&#41;](chisq-inv-function-dax.md)  
+[CHISQ.INV function &#40;DAX&#41;](chisq-inv-function-dax.md)  
   
-[CHISQ.INV.RT Function &#40;DAX&#41;](chisq-inv-rt-function-dax.md)  
+[CHISQ.INV.RT function &#40;DAX&#41;](chisq-inv-rt-function-dax.md)  
   
-[CONFIDENCE.NORM Function &#40;DAX&#41;](confidence-norm-function-dax.md)  
+[CONFIDENCE.NORM function &#40;DAX&#41;](confidence-norm-function-dax.md)  
   
-[CONFIDENCE.T Function &#40;DAX&#41;](confidence-t-function-dax.md)  
+[CONFIDENCE.T function &#40;DAX&#41;](confidence-t-function-dax.md)  
   
-[COUNT Function &#40;DAX&#41;](count-function-dax.md)  
+[COUNT function &#40;DAX&#41;](count-function-dax.md)  
   
-[COUNTA Function &#40;DAX&#41;](counta-function-dax.md)  
+[COUNTA function &#40;DAX&#41;](counta-function-dax.md)  
   
-[COUNTAX Function &#40;DAX&#41;](countax-function-dax.md)  
+[COUNTAX function &#40;DAX&#41;](countax-function-dax.md)  
   
-[COUNTBLANK Function &#40;DAX&#41;](countblank-function-dax.md)  
+[COUNTBLANK function &#40;DAX&#41;](countblank-function-dax.md)  
   
-[COUNTROWS Function &#40;DAX&#41;](countrows-function-dax.md)  
+[COUNTROWS function &#40;DAX&#41;](countrows-function-dax.md)  
   
-[COUNTX Function &#40;DAX&#41;](countx-function-dax.md)  
+[COUNTX function &#40;DAX&#41;](countx-function-dax.md)  
   
-[CROSSJOIN  Function &#40;DAX&#41;](crossjoin-function-dax.md)  
+[CROSSJOIN  function &#40;DAX&#41;](crossjoin-function-dax.md)  
   
-[DATATABLE Function](datatable-function.md)  
+[DATATABLE function](datatable-function.md)  
   
-[DISTINCTCOUNT Function &#40;DAX&#41;](distinctcount-function-dax.md)  
+[DISTINCTCOUNT function &#40;DAX&#41;](distinctcount-function-dax.md)  
   
-[EXPON.DIST Function &#40;DAX&#41;](expon-dist-function-dax.md)  
+[EXPON.DIST function &#40;DAX&#41;](expon-dist-function-dax.md)  
   
-[GENERATE  Function &#40;DAX&#41;](generate-function-dax.md)  
+[GENERATE  function &#40;DAX&#41;](generate-function-dax.md)  
   
-[GENERATEALL Function &#40;DAX&#41;](generateall-function-dax.md)  
+[GENERATEALL function &#40;DAX&#41;](generateall-function-dax.md)  
   
-[GEOMEAN Function &#40;DAX&#41;](geomean-function-dax.md)  
+[GEOMEAN function &#40;DAX&#41;](geomean-function-dax.md)  
   
-[GEOMEANX Function &#40;DAX&#41;](geomeanx-function-dax.md)  
+[GEOMEANX function &#40;DAX&#41;](geomeanx-function-dax.md)  
   
-[MAX Function &#40;DAX&#41;](max-function-dax.md)  
+[MAX function &#40;DAX&#41;](max-function-dax.md)  
   
-[MAXA Function &#40;DAX&#41;](maxa-function-dax.md)  
+[MAXA function &#40;DAX&#41;](maxa-function-dax.md)  
   
-[MAXX Function &#40;DAX&#41;](maxx-function-dax.md)  
+[MAXX function &#40;DAX&#41;](maxx-function-dax.md)  
   
-[MEDIAN Function &#40;DAX&#41;](median-function-dax.md)  
+[MEDIAN function &#40;DAX&#41;](median-function-dax.md)  
   
-[MEDIANX Function &#40;DAX&#41;](medianx-function-dax.md)  
+[MEDIANX function &#40;DAX&#41;](medianx-function-dax.md)  
   
-[MIN Function &#40;DAX&#41;](min-function-dax.md)  
+[MIN function &#40;DAX&#41;](min-function-dax.md)  
   
-[MINA Function &#40;DAX&#41;](mina-function-dax.md)  
+[MINA function &#40;DAX&#41;](mina-function-dax.md)  
   
-[MINX Function &#40;DAX&#41;](minx-function-dax.md)  
+[MINX function &#40;DAX&#41;](minx-function-dax.md)  
   
-[NORM.DIST Function &#40;DAX&#41;](norm-dist-dax.md)  
+[NORM.DIST function &#40;DAX&#41;](norm-dist-dax.md)  
   
-[NORM.INV Function &#40;DAX&#41;](norm-inv-dax.md)  
+[NORM.INV function &#40;DAX&#41;](norm-inv-dax.md)  
   
-[NORM.S.DIST Function &#40;DAX&#41;](norm-s-dist-dax.md)  
+[NORM.S.DIST function &#40;DAX&#41;](norm-s-dist-dax.md)  
   
 [NORM.S.INV &#40;DAX&#41;](norm-s-inv-dax.md)  
   
-[PERCENTILE.EXC Function &#40;DAX&#41;](percentile-exc-function-dax.md)  
+[PERCENTILE.EXC function &#40;DAX&#41;](percentile-exc-function-dax.md)  
   
-[PERCENTILE.INC Function &#40;DAX&#41;](percentile-inc-function-dax.md)  
+[PERCENTILE.INC function &#40;DAX&#41;](percentile-inc-function-dax.md)  
   
-[PERCENTILEX.EXC Function &#40;DAX&#41;](percentilex-exc-function-dax.md)  
+[PERCENTILEX.EXC function &#40;DAX&#41;](percentilex-exc-function-dax.md)  
   
-[PERCENTILEX.INC Function &#40;DAX&#41;](percentilex-inc-function-dax.md)  
+[PERCENTILEX.INC function &#40;DAX&#41;](percentilex-inc-function-dax.md)  
   
-[POISSON.DIST Function &#40;DAX&#41;](poisson-dist-function-dax.md)  
+[POISSON.DIST function &#40;DAX&#41;](poisson-dist-function-dax.md)  
   
-[RANK.EQ  Function &#40;DAX&#41;](rank-eq-function-dax.md)  
+[RANK.EQ  function &#40;DAX&#41;](rank-eq-function-dax.md)  
   
-[RANKX Function &#40;DAX&#41;](rankx-function-dax.md)  
+[RANKX function &#40;DAX&#41;](rankx-function-dax.md)  
   
-[ROW Function &#40;DAX&#41;](row-function-dax.md)  
+[ROW function &#40;DAX&#41;](row-function-dax.md)  
   
-[SAMPLE Function &#40;DAX&#41;](sample-function-dax.md)  
+[SAMPLE function &#40;DAX&#41;](sample-function-dax.md)  
 
-[SELECTCOLUMNS Function &#40;DAX&#41;](selectcolumns-function-dax.md)
+[SELECTCOLUMNS function &#40;DAX&#41;](selectcolumns-function-dax.md)
   
-[SIN Function &#40;DAX&#41;](sin-function-dax.md)  
+[SIN function &#40;DAX&#41;](sin-function-dax.md)  
   
-[SINH Function &#40;DAX&#41;](sinh-function-dax.md)  
+[SINH function &#40;DAX&#41;](sinh-function-dax.md)  
   
-[STDEV.P Function &#40;DAX&#41;](stdev-p-function-dax.md)  
+[STDEV.P function &#40;DAX&#41;](stdev-p-function-dax.md)  
   
-[STDEV.S Function &#40;DAX&#41;](stdev-s-function-dax.md)  
+[STDEV.S function &#40;DAX&#41;](stdev-s-function-dax.md)  
   
-[STDEVX.P Function &#40;DAX&#41;](stdevx-p-function-dax.md)  
+[STDEVX.P function &#40;DAX&#41;](stdevx-p-function-dax.md)  
   
-[STDEVX.S Function &#40;DAX&#41;](stdevx-s-function-dax.md)  
+[STDEVX.S function &#40;DAX&#41;](stdevx-s-function-dax.md)  
   
-[SQRTPI Function &#40;DAX&#41;](sqrtpi-function-dax.md)  
+[SQRTPI function &#40;DAX&#41;](sqrtpi-function-dax.md)  
   
-[SUMMARIZE Function &#40;DAX&#41;](summarize-function-dax.md)  
+[SUMMARIZE function &#40;DAX&#41;](summarize-function-dax.md)  
   
-[T.DIST Function &#40;DAX&#41;](t-dist-dax.md) 
+[T.DIST function &#40;DAX&#41;](t-dist-dax.md) 
   
-[T.DIST.2T Function &#40;DAX&#41;](t-dist-2t-dax.md) 
+[T.DIST.2T function &#40;DAX&#41;](t-dist-2t-dax.md) 
   
-[T.DIST.RT Function &#40;DAX&#41;](t-dist-rt-dax.md) 
+[T.DIST.RT function &#40;DAX&#41;](t-dist-rt-dax.md) 
   
-[T.INV Function &#40;DAX&#41;](t-inv-dax.md) 
+[T.INV function &#40;DAX&#41;](t-inv-dax.md) 
   
-[T.INV.2t Function &#40;DAX&#41;](t-inv-2t-dax.md) 
+[T.INV.2t function &#40;DAX&#41;](t-inv-2t-dax.md) 
   
-[TAN Function &#40;DAX&#41;](tan-function-dax.md)  
+[TAN function &#40;DAX&#41;](tan-function-dax.md)  
   
-[TANH Function &#40;DAX&#41;](tanh-function-dax.md)  
+[TANH function &#40;DAX&#41;](tanh-function-dax.md)  
   
-[TOPN Function &#40;DAX&#41;](topn-function-dax.md)  
+[TOPN function &#40;DAX&#41;](topn-function-dax.md)  
   
-[VAR.P Function &#40;DAX&#41;](var-p-function-dax.md)  
+[VAR.P function &#40;DAX&#41;](var-p-function-dax.md)  
   
-[VAR.S Function &#40;DAX&#41;](var-s-function-dax.md)  
+[VAR.S function &#40;DAX&#41;](var-s-function-dax.md)  
   
-[VARX.P Function &#40;DAX&#41;](varx-p-function-dax.md)  
+[VARX.P function &#40;DAX&#41;](varx-p-function-dax.md)  
   
-[VARX.S Function &#40;DAX&#41;](varx-s-function-dax.md)  
+[VARX.S function &#40;DAX&#41;](varx-s-function-dax.md)  
   
-[XIRR Function &#40;DAX&#41;](xirr-function-dax.md)  
+[XIRR function &#40;DAX&#41;](xirr-function-dax.md)  
   
-[XNPV Function &#40;DAX&#41;](xnpv-function-dax.md)  
+[XNPV function &#40;DAX&#41;](xnpv-function-dax.md)  
   
-## Related Sections  
-[DAX Function Reference](dax-function-reference.md)  
+## Related sections  
+[DAX function reference](dax-function-reference.md)  
   

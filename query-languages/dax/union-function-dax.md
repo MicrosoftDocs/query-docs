@@ -1,5 +1,5 @@
 ---
-title: "UNION Function (DAX) | Microsoft Docs"
+title: "UNION function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# UNION Function (DAX)
+# UNION function (DAX)
   
 Creates a union (join) table from a pair of tables.  
   

@@ -1,5 +1,5 @@
 ---
-title: "AVERAGE Function (DAX) | Microsoft Docs"
+title: "AVERAGE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# AVERAGE Function (DAX)
+# AVERAGE function (DAX)
 Returns the average (arithmetic mean) of all the numbers in a column.  
   
 ## Syntax  
@@ -49,13 +49,13 @@ The following formula returns the average of the values in the column, ExtendedS
 =AVERAGE(InternetSales[ExtendedSalesAmount])  
 ```
   
-## Related Functions  
+## Related functions  
 The AVERAGEX function can take as its argument an expression that is evaluated for each row in a table. This enables you to perform calculations and then take the average of the calculated values.  
   
 The AVERAGEA function takes a column as its argument, but otherwise is like the Excel function of the same name. By using the AVERAGEA function, you can calculate a mean on a column that contains empty values.  
   
-## See Also  
-[AVERAGEA Function &#40;DAX&#41;](averagea-function-dax.md)  
-[AVERAGEX Function &#40;DAX&#41;](averagex-function-dax.md)  
-[Statistical Functions &#40;DAX&#41;](statistical-functions-dax.md)  
+## See also  
+[AVERAGEA function &#40;DAX&#41;](averagea-function-dax.md)  
+[AVERAGEX function &#40;DAX&#41;](averagex-function-dax.md)  
+[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
   

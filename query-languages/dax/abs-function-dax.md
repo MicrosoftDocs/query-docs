@@ -1,5 +1,5 @@
 ---
-title: "ABS Function (DAX) | Microsoft Docs"
+title: "ABS function (DAX) | Microsoft Docs"
 ms.service: powerbi
 
 ms.date: 11/07/2018
@@ -10,7 +10,7 @@ ms.author: owend
 manager: kfile
 ---
 
-# ABS Function (DAX)
+# ABS function (DAX)
 Returns the absolute value of a number.  
   
 ## Syntax  
@@ -38,7 +38,7 @@ The following example returns the absolute value of the difference between the l
 =ABS([DealerPrice]-[ListPrice])  
 ```
   
-## See Also  
-[Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
-[SIGN Function &#40;DAX&#41;](sign-function-dax.md)  
+## See also  
+[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+[SIGN function &#40;DAX&#41;](sign-function-dax.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: "PERCENTILEX.INC Function (DAX) | Microsoft Docs"
+title: "PERCENTILEX.INC function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,11 +9,11 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# PERCENTILEX.INC Function (DAX)
+# PERCENTILEX.INC function (DAX)
   
 Returns the percentile number of an expression evaluated for each row in a table.  
   
-To return the percentile of numbers in a column, use [PERCENTILE.INC Function &#40;DAX&#41;](percentile-inc-function-dax.md).  
+To return the percentile of numbers in a column, use [PERCENTILE.INC function &#40;DAX&#41;](percentile-inc-function-dax.md).  
   
 ## Syntax  
   
@@ -41,6 +41,6 @@ If k is not a multiple of 1/(n - 1), PERCENTILEX.EXC will interpolate to determi
   
 PERCENTILEX.INC will interpolate when the value for the specified percentile is between two values in the array. If it cannot interpolate for the k percentile specified, an error is returned.  
   
-## See Also  
-[PERCENTILE.INC Function &#40;DAX&#41;](percentile-inc-function-dax.md)  
+## See also  
+[PERCENTILE.INC function &#40;DAX&#41;](percentile-inc-function-dax.md)  
   

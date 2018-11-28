@@ -1,5 +1,5 @@
 ---
-title: "HASONEVALUE Function (DAX) | Microsoft Docs"
+title: "HASONEVALUE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# HASONEVALUE Function (DAX)
+# HASONEVALUE function (DAX)
 Returns **TRUE** when the context for *columnName* has been filtered down to one distinct value only. Otherwise is **FALSE**.  
   
 ## Syntax  

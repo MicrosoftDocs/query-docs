@@ -1,5 +1,5 @@
 ---
-title: "ROUND Function (DAX) | Microsoft Docs"
+title: "ROUND function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ROUND Function (DAX)
+# ROUND function (DAX)
 Rounds a number to the specified number of digits.  
   
 ## Syntax  
@@ -35,7 +35,7 @@ If **num_digits** is 0, the number is rounded to the nearest integer.
   
 If **num_digits** is less than 0, the number is rounded to the left of the decimal point.  
   
-## Related Functions  
+## Related functions  
 To always round up (away from zero), use the ROUNDUP function.  
   
 To always round down (toward zero), use the ROUNDDOWN function.  
@@ -58,11 +58,11 @@ The following formula rounds 21.5 to one decimal place to the left of the decima
 =ROUND(21.5,-1)  
 ```
   
-## See Also  
-[Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
-[ROUND Function &#40;DAX&#41;](round-function-dax.md)  
-[ROUNDDOWN Function &#40;DAX&#41;](rounddown-function-dax.md)  
-[MROUND Function &#40;DAX&#41;](mround-function-dax.md)  
-[INT Function &#40;DAX&#41;](int-function-dax.md)  
-[TRUNC Function &#40;DAX&#41;](trunc-function-dax.md)  
+## See also  
+[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+[ROUND function &#40;DAX&#41;](round-function-dax.md)  
+[ROUNDDOWN function &#40;DAX&#41;](rounddown-function-dax.md)  
+[MROUND function &#40;DAX&#41;](mround-function-dax.md)  
+[INT function &#40;DAX&#41;](int-function-dax.md)  
+[TRUNC function &#40;DAX&#41;](trunc-function-dax.md)  
   

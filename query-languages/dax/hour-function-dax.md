@@ -1,5 +1,5 @@
 ---
-title: "HOUR Function (DAX) | Microsoft Docs"
+title: "HOUR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# HOUR Function (DAX)
+# HOUR function (DAX)
 Returns the hour as a number from 0 (12:00 A.M.) to 23 (11:00 P.M.).  
   
 ## Syntax  
@@ -46,9 +46,9 @@ The following example returns 15, meaning the hour corresponding to 3 PM in a 24
 =HOUR("March 3, 2008 3:00 PM")  
 ```
   
-## See Also  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[MINUTE Function &#40;DAX&#41;](minute-function-dax.md)  
-[YEAR Function &#40;DAX&#41;](year-function-dax.md)  
-[SECOND Function &#40;DAX&#41;](second-function-dax.md)  
+## See also  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+[MINUTE function &#40;DAX&#41;](minute-function-dax.md)  
+[YEAR function &#40;DAX&#41;](year-function-dax.md)  
+[SECOND function &#40;DAX&#41;](second-function-dax.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: "RADIANS Function (DAX) | Microsoft Docs"
+title: "RADIANS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# RADIANS Function (DAX)
+# RADIANS function (DAX)
 Converts degrees to radians.  
   
 ## Syntax  

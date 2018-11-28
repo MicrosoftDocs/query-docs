@@ -1,5 +1,5 @@
 ---
-title: "DATESBETWEEN Function (DAX) | Microsoft Docs"
+title: "DATESBETWEEN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# DATESBETWEEN Function (DAX)
+# DATESBETWEEN function (DAX)
 Returns a table that contains a column of dates that begins with the **start_date** and continues until the **end_date**.  
   
 ## Syntax  
@@ -54,8 +54,8 @@ To see how this works, create a PivotTable and add the field, CalendarYear, to t
   ))  
 ```
   
-## See Also  
-[Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[DATESINPERIOD Function &#40;DAX&#41;](datesinperiod-function-dax.md)  
+## See also  
+[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+[DATESINPERIOD function &#40;DAX&#41;](datesinperiod-function-dax.md)  
   

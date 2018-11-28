@@ -1,5 +1,5 @@
 ---
-title: "EXP Function (DAX) | Microsoft Docs"
+title: "EXP function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# EXP Function (DAX)
+# EXP function (DAX)
 Returns e raised to the power of a given number. The constant e equals 2.71828182845904, the base of the natural logarithm.  
   
 ## Syntax  
@@ -41,10 +41,10 @@ The following formula calculates e raised to the power of the number contained i
 =EXP([Power])  
 ```
   
-## See Also  
-[Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
-[LN Function &#40;DAX&#41;](ln-function-dax.md)  
-[EXP Function &#40;DAX&#41;](exp-function-dax.md)  
-[LOG Function &#40;DAX&#41;](log-function-dax.md)  
-[LOG Function &#40;DAX&#41;](log-function-dax.md)  
+## See also  
+[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+[LN function &#40;DAX&#41;](ln-function-dax.md)  
+[EXP function &#40;DAX&#41;](exp-function-dax.md)  
+[LOG function &#40;DAX&#41;](log-function-dax.md)  
+[LOG function &#40;DAX&#41;](log-function-dax.md)  
   

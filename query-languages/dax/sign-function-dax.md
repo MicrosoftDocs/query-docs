@@ -1,5 +1,5 @@
 ---
-title: "SIGN Function (DAX) | Microsoft Docs"
+title: "SIGN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# SIGN Function (DAX)
+# SIGN function (DAX)
 Determines the sign of a number, the result of a calculation, or a value in a column. The function returns 1 if the number is positive, 0 (zero) if the number is zero, or -1 if the number is negative.  
   
 ## Syntax  
@@ -40,6 +40,6 @@ The following formula returns the sign of the result of the expression that calc
 =SIGN( ([Sale Price] - [Cost]) )  
 ```
   
-## See Also  
-[Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+## See also  
+[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
   

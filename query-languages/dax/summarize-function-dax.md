@@ -1,5 +1,5 @@
 ---
-title: "SUMMARIZE Function (DAX) | Microsoft Docs"
+title: "SUMMARIZE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# SUMMARIZE Function (DAX)
+# SUMMARIZE function (DAX)
 Returns a summary table for the requested totals over a set of groups.  
   
 ## Syntax  

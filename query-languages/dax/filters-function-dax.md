@@ -1,5 +1,5 @@
 ---
-title: "FILTERS Function (DAX) | Microsoft Docs"
+title: "FILTERS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# FILTERS Function (DAX)
+# FILTERS function (DAX)
 Returns the values that are directly applied as filters to *columnName*.  
   
 ## Syntax  

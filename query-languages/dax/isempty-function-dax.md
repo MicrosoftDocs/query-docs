@@ -1,5 +1,5 @@
 ---
-title: "ISEMPTY Function (DAX) | Microsoft Docs"
+title: "ISEMPTY function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ISEMPTY Function (DAX)
+# ISEMPTY function (DAX)
   
 Checks if a table is empty.  
   

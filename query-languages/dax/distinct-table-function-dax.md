@@ -1,5 +1,5 @@
 ---
-title: "DISTINCT (table) Function (DAX) | Microsoft Docs"
+title: "DISTINCT (table) function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# DISTINCT (table) Function
+# DISTINCT (table) function
 
 Returns a table by removing duplicate rows from another table or expression.
   
@@ -47,10 +47,10 @@ Returns table:
 
 
   
-## See Also  
-[Filter Functions &#40;DAX&#41;](filter-functions-dax.md)  
+## See also  
+[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
 [DISTINCT (column) &#40;DAX&#41;](distinct-function-dax.md)   
-[FILTER Function &#40;DAX&#41;](filter-function-dax.md)  
-[RELATED Function &#40;DAX&#41;](related-function-dax.md)  
-[VALUES Function &#40;DAX&#41;](values-function-dax.md)  
+[FILTER function &#40;DAX&#41;](filter-function-dax.md)  
+[RELATED function &#40;DAX&#41;](related-function-dax.md)  
+[VALUES function &#40;DAX&#41;](values-function-dax.md)  
   

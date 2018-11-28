@@ -1,5 +1,5 @@
 ---
-title: "FLOOR Function (DAX) | Microsoft Docs"
+title: "FLOOR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# FLOOR Function (DAX)
+# FLOOR function (DAX)
 Rounds a number down, toward zero, to the nearest multiple of significance.  
   
 ## Syntax  
@@ -50,6 +50,6 @@ The following table shows the expected results for some sample values.
 |8.0373|8|  
 |2.9733|2.9|  
   
-## See Also  
-[Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+## See also  
+[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
   

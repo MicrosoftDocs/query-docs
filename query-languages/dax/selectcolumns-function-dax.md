@@ -1,5 +1,5 @@
 ---
-title: "SELECTCOLUMNS Function (DAX) | Microsoft Docs"
+title: "SELECTCOLUMNS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# SELECTCOLUMNS Function (DAX)
+# SELECTCOLUMNS function (DAX)
 Adds calculated columns to the given table or table expression.  
   
 ## Syntax  

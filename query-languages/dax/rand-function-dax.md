@@ -1,5 +1,5 @@
 ---
-title: "RAND Function (DAX) | Microsoft Docs"
+title: "RAND function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# RAND Function (DAX)
+# RAND function (DAX)
 Returns a random number greater than or equal to 0 and less than 1, evenly distributed. The number that is returned changes each time the cell containing this function is recalculated.  
   
 ## Syntax  
@@ -39,7 +39,7 @@ To generate a random real number between two other numbers, you can use a formul
 = RAND()*(int1-int2)+int1  
 ```
   
-## See Also  
-[Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
-[Statistical Functions &#40;DAX&#41;](statistical-functions-dax.md)  
+## See also  
+[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: "DATATABLE Function | Microsoft Docs"
+title: "DATATABLE function | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# DATATABLE Function
+# DATATABLE function
 Provides a mechanism for declaring an inline set of data values.  
   
 ## Syntax  

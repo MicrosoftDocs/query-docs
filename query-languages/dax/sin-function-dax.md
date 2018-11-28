@@ -1,5 +1,5 @@
 ---
-title: "SIN Function (DAX) | Microsoft Docs"
+title: "SIN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# SIN Function (DAX)
+# SIN function (DAX)
 Returns the sine of the given angle.  
   
 ## Syntax  

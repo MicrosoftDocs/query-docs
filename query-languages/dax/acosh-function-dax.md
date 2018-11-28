@@ -1,5 +1,5 @@
 ---
-title: "ACOSH Function (DAX) | Microsoft Docs"
+title: "ACOSH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ACOSH Function (DAX)
+# ACOSH function (DAX)
 Returns the inverse hyperbolic cosine of a number. The number must be greater than or equal to 1. The inverse hyperbolic cosine is the value whose hyperbolic cosine is *number*, so ACOSH(COSH(number)) equals number.  
   
 ## Syntax  

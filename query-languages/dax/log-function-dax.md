@@ -1,5 +1,5 @@
 ---
-title: "LOG Function (DAX) | Microsoft Docs"
+title: "LOG function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# LOG Function (DAX)
+# LOG function (DAX)
 Returns the logarithm of a number to the base you specify.  
   
 ## Syntax  
@@ -42,9 +42,9 @@ The following formulas return the same result, 2.
 =LOG10(100)  
 ```
   
-## See Also  
-[Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
-[EXP Function &#40;DAX&#41;](exp-function-dax.md)  
-[LOG Function &#40;DAX&#41;](log-function-dax.md)  
-[LOG Function &#40;DAX&#41;](log-function-dax.md)  
+## See also  
+[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+[EXP function &#40;DAX&#41;](exp-function-dax.md)  
+[LOG function &#40;DAX&#41;](log-function-dax.md)  
+[LOG function &#40;DAX&#41;](log-function-dax.md)  
   

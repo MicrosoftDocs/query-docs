@@ -1,5 +1,5 @@
 ---
-title: "CEILING Function (DAX) | Microsoft Docs"
+title: "CEILING function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# CEILING Function (DAX)
+# CEILING function (DAX)
 Rounds a number up, to the nearest integer or to the nearest multiple of significance.  
   
 ## Syntax  
@@ -59,9 +59,9 @@ The following formula returns similar results as the previous example, but uses 
 =CEILING([ProductPrice],0.05)  
 ```
   
-## See Also  
-[Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
-[FLOOR Function &#40;DAX&#41;](floor-function-dax.md)  
-[ISO.CEILING Function &#40;DAX&#41;](iso-ceiling-function-dax.md)  
-[ROUNDUP Function &#40;DAX&#41;](roundup-function-dax.md)  
+## See also  
+[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+[FLOOR function &#40;DAX&#41;](floor-function-dax.md)  
+[ISO.CEILING function &#40;DAX&#41;](iso-ceiling-function-dax.md)  
+[ROUNDUP function &#40;DAX&#41;](roundup-function-dax.md)  
   

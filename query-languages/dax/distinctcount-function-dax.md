@@ -1,5 +1,5 @@
 ---
-title: "DISTINCTCOUNT Function (DAX) | Microsoft Docs"
+title: "DISTINCTCOUNT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# DISTINCTCOUNT Function (DAX)
+# DISTINCTCOUNT function (DAX)
 The DISTINCTCOUNT function counts the number of distinct values in a column.  
   
 ## Syntax  
@@ -51,10 +51,10 @@ Using the above measure in a table with calendar year in the side and product ca
   
 In the above example, note that the rows Grand Total numbers do not add up, this happens because the same order might contain line items, in the same order, from different product categories.  
   
-## See Also  
-[COUNT Function &#40;DAX&#41;](count-function-dax.md)  
-[COUNTA Function &#40;DAX&#41;](counta-function-dax.md)  
-[COUNTAX Function &#40;DAX&#41;](countax-function-dax.md)  
-[COUNTX Function &#40;DAX&#41;](countx-function-dax.md)  
-[Statistical Functions &#40;DAX&#41;](statistical-functions-dax.md)  
+## See also  
+[COUNT function &#40;DAX&#41;](count-function-dax.md)  
+[COUNTA function &#40;DAX&#41;](counta-function-dax.md)  
+[COUNTAX function &#40;DAX&#41;](countax-function-dax.md)  
+[COUNTX function &#40;DAX&#41;](countx-function-dax.md)  
+[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
   

@@ -61,9 +61,9 @@
               href: year-function-dax.md
             - name: YEARFRAC function
               href: yearfrac-function-dax.md
-        - name: Time Intelligence functions
+        - name: Time-intelligence functions
           items: 
-            - name: Time Intelligence functions overview
+            - name: Time-intelligence functions overview
               href: time-intelligence-functions-dax.md
             - name: CLOSINGBALANCEMONTH function
               href: closingbalancemonth-function-dax.md
@@ -555,9 +555,9 @@
                   href: pre-defined-numeric-formats-for-the-format-function.md
                 - name: Custom Numeric Formats for the FORMAT function
                   href: custom-numeric-formats-for-the-format-function.md
-                - name: Pre-defined Date and Time formats for the FORMAT function
+                - name: Pre-defined date and time formats for the FORMAT function
                   href: pre-defined-date-and-time-formats-for-the-format-function.md
-                - name: Custom Date and Time formats for the FORMAT function
+                - name: Custom date and time formats for the FORMAT function
                   href: custom-date-and-time-formats-for-the-format-function.md
             - name: LEFT function
               href: left-function-dax.md

@@ -1,5 +1,5 @@
 ---
-title: "CONCATENATE Function (DAX) | Microsoft Docs"
+title: "CONCATENATE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# CONCATENATE Function (DAX)
+# CONCATENATE function (DAX)
 Joins two text strings into one text string.  
   
 ## Syntax  
@@ -84,6 +84,6 @@ The CONCATENATE function in DAX accepts only two arguments, whereas the Excel CO
 =[Product abbreviation] & "-" & [Product number]  
 ```
   
-## See Also  
-[Text Functions &#40;DAX&#41;](text-functions-dax.md)  
+## See also  
+[Text functions &#40;DAX&#41;](text-functions-dax.md)  
   

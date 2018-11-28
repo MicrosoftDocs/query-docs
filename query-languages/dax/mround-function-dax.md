@@ -1,5 +1,5 @@
 ---
-title: "MROUND Function (DAX) | Microsoft Docs"
+title: "MROUND function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# MROUND Function (DAX)
+# MROUND function (DAX)
 Returns a number rounded to the desired multiple.  
   
 ## Syntax  
@@ -64,11 +64,11 @@ The following expression returns an error, because the numbers have different si
 =MROUND(5,-2)  
 ```
   
-## See Also  
-[Math and Trig Functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
-[ROUND Function &#40;DAX&#41;](round-function-dax.md)  
-[ROUNDUP Function &#40;DAX&#41;](roundup-function-dax.md)  
-[ROUNDDOWN Function &#40;DAX&#41;](rounddown-function-dax.md)  
-[MROUND Function &#40;DAX&#41;](mround-function-dax.md)  
-[INT Function &#40;DAX&#41;](int-function-dax.md)  
+## See also  
+[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+[ROUND function &#40;DAX&#41;](round-function-dax.md)  
+[ROUNDUP function &#40;DAX&#41;](roundup-function-dax.md)  
+[ROUNDDOWN function &#40;DAX&#41;](rounddown-function-dax.md)  
+[MROUND function &#40;DAX&#41;](mround-function-dax.md)  
+[INT function &#40;DAX&#41;](int-function-dax.md)  
   

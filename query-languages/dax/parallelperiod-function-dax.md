@@ -1,5 +1,5 @@
 ---
-title: "PARALLELPERIOD Function (DAX) | Microsoft Docs"
+title: "PARALLELPERIOD function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# PARALLELPERIOD Function (DAX)
+# PARALLELPERIOD function (DAX)
 Returns a table that contains a column of dates that represents a period parallel to the dates in the specified **dates** column, in the current context, with the dates shifted a number of intervals either forward in time or back in time.  
   
 ## Syntax  
@@ -42,7 +42,7 @@ The **dates** argument can be any of the following:
 -   A Boolean expression that defines a single-column table of date/time values.  
   
 > [!NOTE]  
-> Constraints on Boolean expressions are described in the topic, [CALCULATE Function &#40;DAX&#41;](calculate-function-dax.md).  
+> Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
   
 If the number specified for **number_of_intervals** is positive, the dates in **dates** are moved forward in time; if the number is negative, the dates in **dates** are shifted back in time.  
   
@@ -66,9 +66,9 @@ To see how this works, create a PivotTable and add the fields, CalendarYear and 
 =CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PARALLELPERIOD(DateTime[DateKey],-1,year))  
 ```
   
-## See Also  
-[Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[DATEADD Function &#40;DAX&#41;](dateadd-function-dax.md)  
+## See also  
+[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+[DATEADD function &#40;DAX&#41;](dateadd-function-dax.md)  
 [Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
   

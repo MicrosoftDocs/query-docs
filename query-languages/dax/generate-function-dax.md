@@ -1,5 +1,5 @@
 ---
-title: "GENERATE  Function (DAX) | Microsoft Docs"
+title: "GENERATE  function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# GENERATE  Function (DAX)
+# GENERATE  function (DAX)
 Returns a table with the Cartesian product between each row in *table1* and the table that results from evaluating *table2* in the context of the current row from *table1*.  
   
 ## Syntax  

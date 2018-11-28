@@ -1,5 +1,5 @@
 ---
-title: "STDEV.S Function (DAX) | Microsoft Docs"
+title: "STDEV.S function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# STDEV.S Function (DAX)
+# STDEV.S function (DAX)
 Returns the standard deviation of a sample population.  
   
 ## Syntax  

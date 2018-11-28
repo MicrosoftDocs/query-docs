@@ -1,5 +1,5 @@
 ---
-title: "EVEN Function (DAX) | Microsoft Docs"
+title: "EVEN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# EVEN Function (DAX)
+# EVEN function (DAX)
 Returns number rounded up to the nearest even integer. You can use this function for processing items that come in twos. For example, a packing crate accepts rows of one or two items. The crate is full when the number of items, rounded up to the nearest two, matches the crate's capacity.  
   
 ## Syntax  

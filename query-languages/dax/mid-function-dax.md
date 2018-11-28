@@ -1,5 +1,5 @@
 ---
-title: "MID Function (DAX) | Microsoft Docs"
+title: "MID function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# MID Function (DAX)
+# MID function (DAX)
 Returns a string of characters from the middle of a text string, given a starting position and length.  
   
 ## Syntax  
@@ -44,6 +44,6 @@ The results are the same if you use the following formula:
   
 `=LEFT([ResellerName],5)`  
   
-## See Also  
-[Text Functions &#40;DAX&#41;](text-functions-dax.md)  
+## See also  
+[Text functions &#40;DAX&#41;](text-functions-dax.md)  
   

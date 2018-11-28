@@ -1,5 +1,5 @@
 ---
-title: "PATHITEM Function (DAX) | Microsoft Docs"
+title: "PATHITEM function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# PATHITEM Function (DAX)
+# PATHITEM function (DAX)
 Returns the item at the specified *position* from a string resulting from evaluation of a PATH function. Positions are counted from left to right.  
   
 ## Syntax  

@@ -1,5 +1,5 @@
 ---
-title: "BLANK Function (DAX) | Microsoft Docs"
+title: "BLANK function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# BLANK Function (DAX)
+# BLANK function (DAX)
 Returns a blank.  
   
 ## Syntax  
@@ -24,7 +24,7 @@ A blank.
 ## Remarks  
 Blanks are not equivalent to nulls. DAX uses blanks for both database nulls and for blank cells in Excel. For more information, see [Data Types Supported (SSAS Tabular)](https://msdn.microsoft.com/en-us/92993f7b-7243-4aec-906d-0b0379798242).  
   
-Some DAX functions treat blank cells somewhat differently from Microsoft Excel. Blanks and empty strings ("") are not always equivalent, but some operations may treat them as such. For details on the behavior of an individual function or operator, see [DAX Function Reference](dax-function-reference.md).  
+Some DAX functions treat blank cells somewhat differently from Microsoft Excel. Blanks and empty strings ("") are not always equivalent, but some operations may treat them as such. For details on the behavior of an individual function or operator, see [DAX function reference](dax-function-reference.md).  
   
 ## Example  
 The following example illustrates how you can work with blanks in formulas. The formula calculates the ratio of sales between the Resellers and the Internet channels. However, before attempting to calculate the ratio the denominator should be checked for zero values. If the denominator is zero then a blank value should be returned; otherwise, the ratio is calculated.  
@@ -46,7 +46,7 @@ The table shows the expected results when this formula is used to create a Pivot
   
 Note that, in the original data source, the column evaluated by the BLANK function might have included text, empty strings, or nulls. If the original data source was a SQL Server database, nulls and empty strings are different kinds of data. However, for this operation an implicit type cast is performed and DAX treats them as the same.  
   
-## See Also  
-[Text Functions &#40;DAX&#41;](text-functions-dax.md)  
-[ISBLANK Function &#40;DAX&#41;](isblank-function-dax.md)  
+## See also  
+[Text functions &#40;DAX&#41;](text-functions-dax.md)  
+[ISBLANK function &#40;DAX&#41;](isblank-function-dax.md)  
   

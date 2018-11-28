@@ -1,5 +1,5 @@
 ---
-title: "SECOND Function (DAX) | Microsoft Docs"
+title: "SECOND function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# SECOND Function (DAX)
+# SECOND function (DAX)
 Returns the seconds of a time value, as a number from 0 to 59.  
   
 ## Syntax  
@@ -50,9 +50,9 @@ The following formula returns 3, which is the number of seconds in the time repr
 =SECOND("March 3, 2008 12:00:03")  
 ```
   
-## See Also  
-[Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[HOUR Function &#40;DAX&#41;](hour-function-dax.md)  
-[MINUTE Function &#40;DAX&#41;](minute-function-dax.md)  
-[YEAR Function &#40;DAX&#41;](year-function-dax.md)  
+## See also  
+[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+[HOUR function &#40;DAX&#41;](hour-function-dax.md)  
+[MINUTE function &#40;DAX&#41;](minute-function-dax.md)  
+[YEAR function &#40;DAX&#41;](year-function-dax.md)  
   

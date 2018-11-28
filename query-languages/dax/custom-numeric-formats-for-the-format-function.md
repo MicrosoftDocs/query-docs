@@ -1,5 +1,5 @@
 ---
-title: "Custom Numeric Formats for the FORMAT Function | Microsoft Docs"
+title: "Custom numeric formats for the FORMAT function | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# Custom Numeric Formats for the FORMAT Function
+# Custom numeric formats for the FORMAT function
 A user-defined format expression for numbers can have from one to three sections separated by semicolons. If the Style argument of the Format function contains one of the predefined numeric formats, only one section is allowed.  
   
 |If you use|This is the result|  
@@ -18,7 +18,7 @@ A user-defined format expression for numbers can have from one to three sections
 |Two sections|The first section applies to positive values and zeros; the second applies to negative values.|  
 |Three sections|The first section applies to positive values, the second applies to negative values, and the third applies to zeros.|  
   
-## Format Specifications  
+## Format specifications  
 The following table identifies characters you can use to create user-defined number formats.  
   
 |Format specification|Description|  
@@ -55,8 +55,8 @@ The following table contains some sample format expressions for numbers. (These 
 ## Remarks  
 If you include semicolons with nothing between them, the missing section is printed using the format of the positive value.  
   
-## See Also  
-[FORMAT Function &#40;DAX&#41;](format-function-dax.md)  
-[Pre-Defined Numeric Formats for the FORMAT Function](pre-defined-numeric-formats-for-the-format-function.md)  
-[Custom Date and Time formats for the FORMAT Function](custom-date-and-time-formats-for-the-format-function.md)  
+## See also  
+[FORMAT function &#40;DAX&#41;](format-function-dax.md)  
+[Pre-Defined Numeric Formats for the FORMAT function](pre-defined-numeric-formats-for-the-format-function.md)  
+[Custom date and time formats for the FORMAT function](custom-date-and-time-formats-for-the-format-function.md)  
   

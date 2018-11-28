@@ -1,5 +1,5 @@
 ---
-title: "MEDIAN Function (DAX) | Microsoft Docs"
+title: "MEDIAN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,11 +9,11 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# MEDIAN Function (DAX)
+# MEDIAN function (DAX)
   
 Returns the median of numbers in a column.  
   
-To return the median of an expresssion evaluated for each row in a table, use [MEDIANX Function &#40;DAX&#41;](medianx-function-dax.md).  
+To return the median of an expresssion evaluated for each row in a table, use [MEDIANX function &#40;DAX&#41;](medianx-function-dax.md).  
   
 ## Syntax  
   
@@ -42,6 +42,6 @@ The following computes the median of a column named Age in a table named Custome
 =MEDIAN( Customers[Age] )  
 ```
   
-## See Also  
-[MEDIANX Function &#40;DAX&#41;](medianx-function-dax.md)  
+## See also  
+[MEDIANX function &#40;DAX&#41;](medianx-function-dax.md)  
   

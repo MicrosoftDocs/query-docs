@@ -1,5 +1,5 @@
 ---
-title: "SUM Function (DAX) | Microsoft Docs"
+title: "SUM function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 9/25/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# SUM Function (DAX)
+# SUM function (DAX)
 Adds all the numbers in a column.  
   
 ## Syntax  
@@ -38,7 +38,7 @@ The following example adds all the numbers that are contained in the column, Amt
 =SUM(Sales[Amt])  
 ```
   
-## See Also  
-[SUMX Function &#40;DAX&#41;](sumx-function-dax.md)  
-[Statistical Functions &#40;DAX&#41;](statistical-functions-dax.md)  
+## See also  
+[SUMX function &#40;DAX&#41;](sumx-function-dax.md)  
+[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
   

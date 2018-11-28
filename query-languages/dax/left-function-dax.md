@@ -1,5 +1,5 @@
 ---
-title: "LEFT Function (DAX) | Microsoft Docs"
+title: "LEFT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# LEFT Function (DAX)
+# LEFT function (DAX)
 Returns the specified number of characters from the start of a text string.  
   
 ## Syntax  
@@ -42,6 +42,6 @@ The following example returns the first five characters of the company name in t
 
 If the **num_chars** argument is a number that is larger than the number of characters available, the function returns the maximum characters available and does not raise an error. For example, the column [GeographyKey] contains numbers such as 1, 12 and 311; therefore the result also has variable length.  
   
-## See Also  
-[Text Functions &#40;DAX&#41;](text-functions-dax.md)  
+## See also  
+[Text functions &#40;DAX&#41;](text-functions-dax.md)  
   

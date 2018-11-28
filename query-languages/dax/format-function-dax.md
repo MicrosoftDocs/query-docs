@@ -1,5 +1,5 @@
 ---
-title: "FORMAT Function (DAX) | Microsoft Docs"
+title: "FORMAT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# FORMAT Function (DAX)
+# FORMAT function (DAX)
 Converts a value to text according to the specified format.  
   
 ## Syntax  
@@ -48,10 +48,10 @@ All predefined formatting strings use the current user locale when formatting th
   
 This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
-## See Also  
-[Pre-Defined Numeric Formats for the FORMAT Function](pre-defined-numeric-formats-for-the-format-function.md)  
-[Custom Numeric Formats for the FORMAT Function](custom-numeric-formats-for-the-format-function.md)  
-[Pre-defined Date and Time formats for the FORMAT Function](pre-defined-date-and-time-formats-for-the-format-function.md)  
-[Custom Date and Time formats for the FORMAT Function](custom-date-and-time-formats-for-the-format-function.md)  
-[VALUE Function &#40;DAX&#41;](value-function-dax.md)  
+## See also  
+[Pre-Defined Numeric Formats for the FORMAT function](pre-defined-numeric-formats-for-the-format-function.md)  
+[Custom Numeric Formats for the FORMAT function](custom-numeric-formats-for-the-format-function.md)  
+[Pre-defined date and time formats for the FORMAT function](pre-defined-date-and-time-formats-for-the-format-function.md)  
+[Custom date and time formats for the FORMAT function](custom-date-and-time-formats-for-the-format-function.md)  
+[VALUE function &#40;DAX&#41;](value-function-dax.md)  
   

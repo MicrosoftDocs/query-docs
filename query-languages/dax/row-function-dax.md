@@ -1,5 +1,5 @@
 ---
-title: "ROW Function (DAX) | Microsoft Docs"
+title: "ROW function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ROW Function (DAX)
+# ROW function (DAX)
 Returns a table with a single row containing values that result from the expressions given to each column.  
   
 ## Syntax  

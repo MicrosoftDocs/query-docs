@@ -1,5 +1,5 @@
 ---
-title: "LEN Function (DAX) | Microsoft Docs"
+title: "LEN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# LEN Function (DAX)
+# LEN function (DAX)
 Returns the number of characters in a text string.  
   
 ## Syntax  

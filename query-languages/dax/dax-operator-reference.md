@@ -146,6 +146,6 @@ The precedence order of operations in DAX formulas is basically the same as that
   
 Therefore, whenever you copy and paste formulas from Excel, be sure to review the formula carefully, as some operators or elements in the formulas may not be valid. When there is any doubt about the order in which operations are performed, we recommend you use parentheses to control the order of operations and remove any ambiguity about the result.  
   
-## See Also  
+## See also  
 [DAX Syntax Reference](dax-syntax-reference.md)  
   

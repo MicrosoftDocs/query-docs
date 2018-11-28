@@ -1,5 +1,5 @@
 ---
-title: "SQRTPI Function (DAX) | Microsoft Docs"
+title: "SQRTPI function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# SQRTPI Function (DAX)
+# SQRTPI function (DAX)
 Returns the square root of (number * pi).  
   
 ## Syntax  

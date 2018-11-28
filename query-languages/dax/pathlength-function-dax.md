@@ -1,5 +1,5 @@
 ---
-title: "PATHLENGTH Function (DAX) | Microsoft Docs"
+title: "PATHLENGTH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# PATHLENGTH Function (DAX)
+# PATHLENGTH function (DAX)
 Returns the number of parents to the specified item in a given PATH result, including self.  
   
 ## Syntax  

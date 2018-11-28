@@ -1,5 +1,5 @@
 ---
-title: "VALUE Function (DAX) | Microsoft Docs"
+title: "VALUE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# VALUE Function (DAX)
+# VALUE function (DAX)
 Converts a text string that represents a number to a number.  
   
 ## Syntax  
@@ -41,6 +41,6 @@ The following formula converts the typed string, "3", into the numeric value 3.
 =VALUE("3")  
 ```
   
-## See Also  
-[Text Functions &#40;DAX&#41;](text-functions-dax.md)  
+## See also  
+[Text functions &#40;DAX&#41;](text-functions-dax.md)  
   

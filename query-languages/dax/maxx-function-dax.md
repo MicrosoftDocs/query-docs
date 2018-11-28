@@ -1,5 +1,5 @@
 ---
-title: "MAXX Function (DAX) | Microsoft Docs"
+title: "MAXX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# MAXX Function (DAX)
+# MAXX function (DAX)
 Evaluates an expression for each row of a table and returns the largest numeric value.  
   
 ## Syntax  
@@ -55,9 +55,9 @@ The following formula first filters the table InternetSales, by using a FILTER e
 =MAXX(FILTER(InternetSales,[SalesTerritoryCode]="5"), InternetSales[TaxAmt]+ InternetSales[Freight])  
 ```
   
-## See Also  
-[MAX Function &#40;DAX&#41;](max-function-dax.md)  
-[MAXA Function &#40;DAX&#41;](maxa-function-dax.md)  
-[MAXX Function &#40;DAX&#41;](maxx-function-dax.md)  
-[Statistical Functions &#40;DAX&#41;](statistical-functions-dax.md)  
+## See also  
+[MAX function &#40;DAX&#41;](max-function-dax.md)  
+[MAXA function &#40;DAX&#41;](maxa-function-dax.md)  
+[MAXX function &#40;DAX&#41;](maxx-function-dax.md)  
+[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
   

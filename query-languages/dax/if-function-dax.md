@@ -1,5 +1,5 @@
 ---
-title: "IF Function (DAX) | Microsoft Docs"
+title: "IF function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
 ms.date: 11/07/2018
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# IF Function (DAX)
+# IF function (DAX)
 Checks if a condition provided as the first argument is met. Returns one value if the condition is TRUE, and returns another value if the condition is FALSE.  
   
 ## Syntax  
@@ -52,10 +52,10 @@ The following example gets a list of cities that contain potential customers in 
 
 Note that parentheses are used to control the order in which the AND (&amp;&amp;) and OR (||) operators are used. Also note that no value has been specified for **value_if_false**. Therefore, the function returns the default, which is an empty string.  
   
-## See Also  
-[TRUE Function &#40;DAX&#41;](true-function-dax.md)  
-[FALSE Function &#40;DAX&#41;](false-function-dax.md)  
-[NOT Function &#40;DAX&#41;](not-function-dax.md)  
-[IF Function &#40;DAX&#41;](if-function-dax.md)  
-[DAX Function Reference](dax-function-reference.md)  
+## See also  
+[TRUE function &#40;DAX&#41;](true-function-dax.md)  
+[FALSE function &#40;DAX&#41;](false-function-dax.md)  
+[NOT function &#40;DAX&#41;](not-function-dax.md)  
+[IF function &#40;DAX&#41;](if-function-dax.md)  
+[DAX function reference](dax-function-reference.md)  
   
