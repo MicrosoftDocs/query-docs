@@ -5,6 +5,7 @@ ms.topic: reference
 ms.date: 11/28/2018
 ms.reviewer: owend
 ms.article: reference
+layout: LandingPage
 author: minewiskan
 ms.author: owend
 manager: kfile
@@ -13,7 +14,7 @@ manager: kfile
 
 Data Analysis Expressions (DAX) is a library of functions and operators that can be combined to build formulas and expressions in Power BI Desktop, Azure Analysis Services, SQL Server Analysis Services, and Power Pivot in Excel.  
 
-<ul class="cardsA panelContent">
+<ul class="cardsF panelContent">
     <li>
         <a href="dax-function-reference.md">
             <div class="cardSize">
