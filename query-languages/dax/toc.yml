@@ -6,7 +6,7 @@
       items:
         - name: Videos
           href: dax-learn-videos.md
-    - name: DAX Functions
+    - name: DAX functions
       expanded: true
       items: 
         - name: DAX Function Reference Overview
@@ -585,12 +585,12 @@
               href: upper-function-dax.md
             - name: VALUE Function
               href: value-function-dax.md
-    - name: DAX Syntax
+    - name: DAX syntax
       href: dax-syntax-reference.md
-    - name: DAX Operators
+    - name: DAX operators
       href: dax-operator-reference.md
-    - name: DAX Queries
+    - name: DAX queries
       href: dax-queries.md
-    - name: DAX Parameter naming conventions
+    - name: DAX parameter naming conventions
       href: dax-parameter-naming-conventions.md
 
