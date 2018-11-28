@@ -2,7 +2,7 @@
 title: "DAX Function Reference | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 11/07/2018
+ms.date: 11/28/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -16,6 +16,9 @@ This function reference provides detailed information including syntax, paramete
 > Not all DAX functions are supported or included in earlier versions of Power BI Desktop, Analysis Services, and Power Pivot in Excel.  
   
 ## In This Section  
+
+[New DAX functions](new-dax-functions.md) - These functions are new or are existing functions that have been significantly updated.  
+
 [Date and Time Functions &#40;DAX&#41;](date-and-time-functions-dax.md) - These functions in DAX are similar to date and time functions in Microsoft Excel. However, DAX functions are based on the datetime data types used by Microsoft SQL Server.  
   
 [Time Intelligence Functions &#40;DAX&#41;](time-intelligence-functions-dax.md) - These functions help you create calculations that use built-in knowledge about calendars and dates. By using time and date ranges in combination with aggregations or calculations, you can build meaningful comparisons across comparable time periods for sales, inventory, and so on.  
