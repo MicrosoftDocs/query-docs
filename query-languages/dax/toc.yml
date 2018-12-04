@@ -393,6 +393,8 @@
               href: statistical-functions-dax.md
             - name: ADDCOLUMNS function
               href: addcolumns-function-dax.md
+            - name: APPROXIMATEDISTINCTCOUNT function
+              href: approximate-distinctcount-function-dax.md
             - name: AVERAGE function
               href: average-function-dax.md
             - name: AVERAGEA function
