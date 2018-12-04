@@ -19,8 +19,9 @@ DAX is continuously being improved with new functions and functionality to suppo
   
  ## New 
 
- The following functions (or functionality) have been added in 2018. 
+ The following functions (or functionality) were added in 2018. 
 
+[APPROXIMATEDISTINCTCOUNT function ](approximate-distinctcount-function-dax.md)  Dec. 2018   
 [ISINSCOPE function](isinscope-function-dax.md)  Nov. 2018
 
 [COMBINEVALUES function](combinevalues-function-dax.md)   
