@@ -11,37 +11,42 @@ manager: kfile
 ---
 # New DAX functions
 
-DAX is continuously being improved with new functions and functionality to support new features. New functions and updates are included Power BI Desktop, Analysis Services (SSDT, SSMS), and Power Pivot in Excel product updates. To get the latest, make sure you're using the latest version.  
+DAX is continuously being improved with new functions and functionality to support new features. New functions and updates are included in service, application, and tool updates which in most cases are monthly. SQL Server Analysis Services and Excel are updated in the next  cumulative update. To get the latest, make sure you're using the latest version.
 
 > [!IMPORTANT]
-> Not all functions are supported or included in earlier versions of Power BI Desktop, Analysis Services, and Power Pivot in Excel.  
+> Not all functions are supported in all versions of Power BI Desktop, Analysis Services, and Power Pivot in Excel.  
 
   
- ## New 
+ ## New functions
 
- The following functions (or functionality) were added in 2018. 
+|Function  |Month  |
+|---------|---------|
+|[APPROXIMATEDISTINCTCOUNT (Preview) ](approximate-distinctcount-function-dax.md)    |  Dec. 2018       |
+|[ISINSCOPE](isinscope-function-dax.md)     |   Nov. 2018      |
+|[NORM.DIST](norm-dist-dax.md)     |   August 2018      |
+|[NORM.INV](norm-inv-dax.md)     |    August 2018     |
+|[NORM.S.DIST](norm-s-dist-dax.md)     |    August 2018    |
+|[NORM.S.INV](norm-s-inv-dax.md)     |    August 2018     |
+|[T.DIST](t-dist-dax.md)     |    August 2018     |
+|[T.DIST.2T](t-dist-2t-dax.md)     |    August 2018     |
+|[T.DIST.RT](t-dist-rt-dax.md)     |    August 2018     |
+|[T.INV](t-inv-dax.md)     |   August 2018      |
+|[T.INV.2T](t-inv-2t-dax.md)     |    August 2018     |
+|[DISTINCT (table)](distinct-table.md)     |   April 2018      |
+|[COMBINEVALUES](combinevalues-function-dax.md)     |   March 2018       |
+|[UTCNOW](utcnow-function-dax.md)    |    March 2018      |
+|[UTCTODAY](utctoday-function-dax.md)     |     March 2018     |
 
-[APPROXIMATEDISTINCTCOUNT function ](approximate-distinctcount-function-dax.md)  Dec. 2018   
-[ISINSCOPE function](isinscope-function-dax.md)  Nov. 2018
 
-[COMBINEVALUES function](combinevalues-function-dax.md)   
-[UTCNOW function](utcnow-function-dax.md)   
-[UTCTODAY function](utctoday-function-dax.md)
 
-[NORM.DIST function](norm-dist-dax.md)   
-[NORM.INV function](norm-inv-dax.md)     
-[NORM.S.DIST function](norm-s-dist-dax.md)   
-[NORM.S.INV](norm-s-inv-dax.md)   
 
-[T.DIST function](t-dist-dax.md)   
-[T.DIST.2T function](t-dist-2t-dax.md)   
-[T.DIST.RT function](t-dist-rt-dax.md)   
-[T.INV function](t-inv-dax.md)   
-[T.INV.2T function](t-inv-2t-dax.md)   
+ ## Updated functions
 
- ## Updated
 
-[SUMMARIZECOLUMNS function](summarizecolumns-function-dax.md) Nov. 2018
+|Function  | Month  |
+|---------|---------|
+|[SUMMARIZECOLUMNS function](summarizecolumns-function-dax.md)      |     Nov. 2018    |
+
  
 
   
