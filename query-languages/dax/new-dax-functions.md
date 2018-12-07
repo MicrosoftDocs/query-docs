@@ -2,7 +2,7 @@
 title: "New DAX functions | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 11/06/2018
+ms.date: 12/07/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -32,7 +32,7 @@ DAX is continuously being improved with new functions and functionality to suppo
 |[T.DIST.RT](t-dist-rt-dax.md)     |    August 2018     |
 |[T.INV](t-inv-dax.md)     |   August 2018      |
 |[T.INV.2T](t-inv-2t-dax.md)     |    August 2018     |
-|[DISTINCT (table)](distinct-table.md)     |   April 2018      |
+|[DISTINCT (table)](distinct-table-function-dax.md)     |   April 2018      |
 |[COMBINEVALUES](combinevalues-function-dax.md)     |   March 2018       |
 |[UTCNOW](utcnow-function-dax.md)    |    March 2018      |
 |[UTCTODAY](utctoday-function-dax.md)     |     March 2018     |
