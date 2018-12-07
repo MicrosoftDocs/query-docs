@@ -33,7 +33,7 @@ The approximate number of distinct values in *column*.
   
 ## Remarks  
 
-The only argument allowed to this function is a column. You can use columns containing any type of data. When the function finds no rows to count, it returns a BLANK, otherwise it returns the count of distinct values.
+The only argument to this function is a column. You can use columns containing any type of data. When the function finds no rows to count, it returns a BLANK, otherwise it returns the count of distinct values.
 
 This function is **preview**. The following limitations apply:
 
