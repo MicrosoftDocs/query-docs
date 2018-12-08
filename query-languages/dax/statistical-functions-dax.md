@@ -14,6 +14,8 @@ Data Analysis Expressions (DAX) provides many functions for creating aggregation
   
 ## In this section  
 [ADDCOLUMNS function &#40;DAX&#41;](addcolumns-function-dax.md)  
+
+[APPROXIMATEDISTINCTCOUNT function &#40;DAX&#41;](approximate-distinctcount-function-dax.md)
   
 [AVERAGE function &#40;DAX&#41;](average-function-dax.md)  
   
