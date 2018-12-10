@@ -1,15 +1,14 @@
 ---
 title: "ALLNOBLANKROW function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: "owend"
 manager: kfile
 ---
-# ALLNOBLANKROW function (DAX)
+# ALLNOBLANKROW
 From the parent table of a relationship, returns all rows but the blank row, or all distinct values of a column but the blank row, and disregards any context filters that might exist.  
   
 ## Syntax  

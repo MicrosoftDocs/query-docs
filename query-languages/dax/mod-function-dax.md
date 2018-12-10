@@ -1,15 +1,14 @@
 ---
 title: "MOD function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# MOD function (DAX)
+# MOD
 Returns the remainder after a number is divided by a divisor. The result always has the same sign as the divisor.  
   
 ## Syntax  

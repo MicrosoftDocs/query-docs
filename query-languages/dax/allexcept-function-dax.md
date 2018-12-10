@@ -1,15 +1,14 @@
 ---
 title: "ALLEXCEPT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ALLEXCEPT function (DAX)
+# ALLEXCEPT
 Removes all context filters in the table except filters that have been applied to the specified columns.  
   
 ## Syntax  

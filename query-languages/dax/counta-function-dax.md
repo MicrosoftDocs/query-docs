@@ -1,15 +1,14 @@
 ---
 title: "COUNTA function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# COUNTA function (DAX)
+# COUNTA
 The COUNTA function counts the number of cells in a column that are not empty. It counts not just rows that contain numeric values, but also rows that contain nonblank values, including text, dates, and logical values.  
   
 ## Syntax  

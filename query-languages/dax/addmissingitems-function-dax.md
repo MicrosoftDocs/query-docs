@@ -1,15 +1,14 @@
 ---
 title: "ADDMISSINGITEMS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ADDMISSINGITEMS function (DAX)
+# ADDMISSINGITEMS
   
 Adds combinations of items from multiple columns to a table if they do not already exist. The determination of which item combinations to add is based on referencing source columns which contain all the possible values for the columns.  
   

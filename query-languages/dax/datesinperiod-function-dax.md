@@ -1,15 +1,14 @@
 ---
 title: "DATESINPERIOD function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 9/25/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# DATESINPERIOD function (DAX)
+# DATESINPERIOD
 Returns a table that contains a column of dates that begins with the **start_date** and continues for the specified **number_of_intervals**.  
   
 ## Syntax  

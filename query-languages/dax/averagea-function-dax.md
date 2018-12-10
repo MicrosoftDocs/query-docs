@@ -1,15 +1,14 @@
 ---
 title: "AVERAGEA function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# AVERAGEA function (DAX)
+# AVERAGEA
 Returns the average (arithmetic mean) of the values in a column. Handles text and non-numeric values.  
   
 ## Syntax  

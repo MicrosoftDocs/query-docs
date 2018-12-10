@@ -8,7 +8,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# APPROXIMATEDISTINCTCOUNT function (DAX)
+# APPROXIMATEDISTINCTCOUNT
 
 > [!IMPORTANT]
 > This function is **preview**. It is currently not supported by Microsoft Support. For additional limitations, see [Remarks](#remarks).

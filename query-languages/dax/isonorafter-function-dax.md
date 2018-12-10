@@ -1,15 +1,14 @@
 ---
 title: "ISONORAFTER function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ISONORAFTER function (DAX)
+# ISONORAFTER
   
 A boolean function that emulates the behavior of a ‘Start At’ clause and returns true for a row that meets all of the condition parameters.  
   

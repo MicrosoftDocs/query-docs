@@ -1,15 +1,14 @@
 ---
 title: "QUOTIENT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# QUOTIENT function (DAX)
+# QUOTIENT
 Performs division and returns only the integer portion of the division result. Use this function when you want to discard the remainder of division.  
   
 ## Syntax  

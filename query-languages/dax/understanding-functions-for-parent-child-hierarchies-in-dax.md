@@ -1,18 +1,17 @@
 ---
 title: "Understanding functions for Parent-Child Hierarchies in DAX | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# Understanding functions for Parent-Child Hierarchies in DAX
+# Understanding functions for parent-child hierarchies in DAX
 DAX provides five functions to help users manage data that is presented as a parent-child hierarchy in their models. With this functions a user can obtain the entire lineage of parents a row has, how many levels has the lineage to the top parent, who is the parent n-levels above the current row, who is the n-descendant from the top of the current row hierarchy and is certain parent a parent in the current row hierarchy?  
   
-## Parent-Child functions in DAX  
+## Parent-child functions in DAX  
 The following table contains a Parent-Child hierarchy on the columns: **EmployeeKey** and **ParentEmployeeKey** that is used in all the functions examples.  
   
   
@@ -102,6 +101,6 @@ The following table presents the available functions, a brief description of the
 |162|3|112&#124;14&#124;3&#124;162|TRUE|  
 |117|162|112&#124;14&#124;3&#124;162&#124;117|TRUE|  
   
-> [!WARNING]  
-> In SQL Server 2012 Analysis Services, the xVelocity in-memory analytics engine (VertiPaq) does not support the definition of parent-child hierarchies; however, the DAX language provides a set of functions that allows users to explore parent-child hierarchies and to use these hierarchies in formulas.  
+> [!IMPORTANT]  
+> In SQL Server 2012 Analysis Services, the Vertipaq in-memory analytics engine does not support the definition of parent-child hierarchies; however, the DAX language provides a set of functions that allows users to explore parent-child hierarchies and to use these hierarchies in formulas.  
   

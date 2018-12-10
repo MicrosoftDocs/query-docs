@@ -1,15 +1,14 @@
 ---
 title: "SUM function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 9/25/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# SUM function (DAX)
+# SUM
 Adds all the numbers in a column.  
   
 ## Syntax  

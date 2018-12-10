@@ -1,15 +1,14 @@
 ---
 title: "ISCROSSFILTERED function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ISCROSSFILTERED function (DAX)
+# ISCROSSFILTERED
 Returns TRUE when *columnName* or another column in the same or related table is being filtered.  
   
 ## Syntax  

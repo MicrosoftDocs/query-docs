@@ -1,15 +1,14 @@
 ---
 title: "SECOND function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# SECOND function (DAX)
+# SECOND
 Returns the seconds of a time value, as a number from 0 to 59.  
   
 ## Syntax  

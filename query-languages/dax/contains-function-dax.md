@@ -1,15 +1,14 @@
 ---
 title: "CONTAINS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# CONTAINS function (DAX)
+# CONTAINS
 Returns true if values for all referred columns exist, or are contained, in those columns; otherwise, the function returns false.  
   
 ## Syntax  

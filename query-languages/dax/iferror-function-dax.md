@@ -1,15 +1,14 @@
 ---
 title: "IFERROR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# IFERROR function (DAX)
+# IFERROR
 Evaluates an expression and returns a specified value if the expression returns an error; otherwise returns the value of the expression itself.  
   
 ## Syntax  

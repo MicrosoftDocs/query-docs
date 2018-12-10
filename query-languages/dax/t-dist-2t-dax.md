@@ -1,7 +1,6 @@
 ---
 title: "T.DIST.2T function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
 ms.date: 8/14/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -9,7 +8,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# T.DIST.2T function
+# T.DIST.2T
 Returns the two-tailed Student's t-distribution.
  
   

@@ -1,15 +1,14 @@
 ---
 title: "DATATABLE function | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# DATATABLE function
+# DATATABLE
 Provides a mechanism for declaring an inline set of data values.  
   
 ## Syntax  

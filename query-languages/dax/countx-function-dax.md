@@ -1,15 +1,14 @@
 ---
 title: "COUNTX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# COUNTX function (DAX)
+# COUNTX
 Counts the number of rows that contain a number or an expression that evaluates to a number, when evaluating an expression over a table.  
   
 ## Syntax  

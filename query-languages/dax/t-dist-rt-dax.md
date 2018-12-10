@@ -1,7 +1,6 @@
 ---
 title: "T.DIST.RT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
 ms.date: 8/14/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -9,7 +8,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# T.DIST.RT function
+# T.DIST.RT
 Returns the right-tailed Student's t-distribution.
  
   

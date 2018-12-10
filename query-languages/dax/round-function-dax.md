@@ -1,15 +1,14 @@
 ---
 title: "ROUND function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ROUND function (DAX)
+# ROUND
 Rounds a number to the specified number of digits.  
   
 ## Syntax  

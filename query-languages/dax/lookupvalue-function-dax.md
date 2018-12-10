@@ -1,15 +1,14 @@
 ---
 title: "LOOKUPVALUE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# LOOKUPVALUE function (DAX)
+# LOOKUPVALUE
 Returns the value in *result_columnName* for the row that meets all criteria specified by *search_columnName* and *search_value*.  
   
 ## Syntax  
