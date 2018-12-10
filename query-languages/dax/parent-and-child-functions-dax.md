@@ -9,7 +9,7 @@ ms.author: owend
 manager: kfile
 ---
 # Parent and Child functions
-These Data Analysis Expressions (DAX) functions help users manage data that is presented as a parent/child hierarchy in their data models. To learn more, see [Understanding functions for Parent-Child Hierarchies in DAX](understanding-functions-for-parent-child-hierarchies-in-dax.md).  
+These functions manage data that is presented as parent/child hierarchies. To learn more, see [Understanding functions for Parent-Child Hierarchies in DAX](understanding-functions-for-parent-child-hierarchies-in-dax.md).  
   
 ## In this section  
 [PATH](path-function-dax.md)  

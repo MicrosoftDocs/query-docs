@@ -483,7 +483,7 @@
               href: row-function-dax.md
             - name: SAMPLE
               href: sample-function-dax.md
-            - name: SELECTCOLUMNS (DAX)
+            - name: SELECTCOLUMNS
               href: selectcolumns-function-dax.md
             - name: SIN
               href: sin-function-dax.md
@@ -581,7 +581,7 @@
               href: substitute-function-dax.md
             - name: TRIM
               href: trim-function-dax.md
-            - name: UNICHAR (DAX)
+            - name: UNICHAR
               href: unichar-function-dax.md
             - name: UPPER
               href: upper-function-dax.md
