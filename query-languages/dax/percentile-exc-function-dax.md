@@ -1,16 +1,14 @@
 ---
 title: "PERCENTILE.EXC function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# PERCENTILE.EXC function (DAX)
-
+# PERCENTILE.EXC
   
 Returns the k-th percentile of values in a range, where k is in the range 0..1, exclusive.  
   

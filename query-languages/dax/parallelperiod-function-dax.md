@@ -1,15 +1,14 @@
 ---
 title: "PARALLELPERIOD function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# PARALLELPERIOD function (DAX)
+# PARALLELPERIOD
 Returns a table that contains a column of dates that represents a period parallel to the dates in the specified **dates** column, in the current context, with the dates shifted a number of intervals either forward in time or back in time.  
   
 ## Syntax  

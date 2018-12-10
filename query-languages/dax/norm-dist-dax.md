@@ -1,7 +1,6 @@
 ---
 title: "NORM.DIST function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
 ms.date: 8/14/2018
 ms.reviewer: owend
 ms.topic: reference
@@ -9,7 +8,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# NORM.DIST function
+# NORM.DIST
 Returns the normal distribution for the specified mean and standard deviation. 
  
   

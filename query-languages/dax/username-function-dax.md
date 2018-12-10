@@ -1,15 +1,14 @@
 ---
 title: "USERNAME function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# USERNAME function (DAX)
+# USERNAME
 Returns the domain name and username from the credentials given to the system at connection time  
   
 ## Syntax  

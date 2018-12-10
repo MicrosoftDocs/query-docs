@@ -85,13 +85,11 @@ The [Execute Method (XMLA)](https://msdn.microsoft.com/en-us/0fff5221-7164-4bbc-
   
 The DAX query syntax allows you to reference XMLA parameters by prefixing the name of the parameter with an **@** character. Hence, any place in the syntax where a value is allowed it can be replaced with a parameter call. Keep in-mind all XMLA parameters are typed as text.  
   
-> [!WARNING]  
+> [!IMPORTANT]  
 > Parameters defined in the parameters section and not used in the **&lt;STATEMENT&gt;** element generate an error response in XMLA.  
   
-> [!WARNING]  
+> [!IMPORTANT]  
 > Parameters used and not defined in the **&lt;Parameters&gt;** element generate an error response in XMLA.  
-  
-
   
 ## Reference  
   

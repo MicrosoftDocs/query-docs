@@ -1,15 +1,14 @@
 ---
 title: "MAXA function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# MAXA function (DAX)
+# MAXA
 Returns the largest value in a column. Logical values and blanks are counted.  
   
 ## Syntax  

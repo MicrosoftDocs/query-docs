@@ -1,15 +1,14 @@
 ---
 title: "ROUNDUP function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ROUNDUP function (DAX)
+# ROUNDUP
 Rounds a number up, away from 0 (zero).  
   
 ## Syntax  

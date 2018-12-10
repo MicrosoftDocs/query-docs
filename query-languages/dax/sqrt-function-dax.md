@@ -1,15 +1,14 @@
 ---
 title: "SQRT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# SQRT function (DAX)
+# SQRT
 Returns the square root of a number.  
   
 ## Syntax  

@@ -1,15 +1,14 @@
 ---
 title: "ISINSCOPE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ISINSCOPE function (DAX)
+# ISINSCOPE
 Returns true when the specified column is the level in a hierarchy of levels.
   
 ## Syntax  

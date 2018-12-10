@@ -1,15 +1,14 @@
 ---
 title: "USERELATIONSHIP function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# USERELATIONSHIP function (DAX)
+# USERELATIONSHIP
 Specifies the relationship to be used in a specific calculation as the one that exists between columnName1 and columnName2.  
   
 ## Syntax  

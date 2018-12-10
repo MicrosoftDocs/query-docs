@@ -1,15 +1,14 @@
 ---
 title: "DATESYTD function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# DATESYTD function (DAX)
+# DATESYTD
 Returns a table that contains a column of the dates for the year to date, in the current context.  
   
 ## Syntax  

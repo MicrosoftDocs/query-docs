@@ -1,15 +1,14 @@
 ---
 title: "CONFIDENCE.T function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# CONFIDENCE.T function (DAX)
+# CONFIDENCE.T
 Returns the confidence interval for a population mean, using a Student's t distribution.  
   
 ## Syntax  

@@ -1,15 +1,14 @@
 ---
 title: "TRIM function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# TRIM function (DAX)
+# TRIM
 Removes all spaces from text except for single spaces between words.  
   
 ## Syntax  

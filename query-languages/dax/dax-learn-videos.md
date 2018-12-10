@@ -1,7 +1,6 @@
 ---
 title: "Learn DAX videos | Microsoft Docs"
 ms.service: powerbi 
-
 ms.date: 11/27/2018
 ms.reviewer: owend
 ms.topic: reference

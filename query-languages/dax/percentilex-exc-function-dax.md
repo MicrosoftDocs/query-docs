@@ -1,15 +1,14 @@
 ---
 title: "PERCENTILEX.EXC function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# PERCENTILEX.EXC function (DAX)
+# PERCENTILEX.EXC
   
 Returns the percentile number of an expression evaluated for each row in a table.  
   

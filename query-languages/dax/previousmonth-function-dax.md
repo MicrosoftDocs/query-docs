@@ -1,15 +1,14 @@
 ---
 title: "PREVIOUSMONTH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# PREVIOUSMONTH function (DAX)
+# PREVIOUSMONTH
 Returns a table that contains a column of all dates from the previous month, based on the first date in the **dates** column, in the current context.  
   
 ## Syntax  

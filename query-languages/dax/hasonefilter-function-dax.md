@@ -1,15 +1,14 @@
 ---
 title: "HASONEFILTER function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# HASONEFILTER function (DAX)
+# HASONEFILTER
 Returns **TRUE** when the number of directly filtered values on *columnName* is one; otherwise returns **FALSE**.  
   
 ## Syntax  

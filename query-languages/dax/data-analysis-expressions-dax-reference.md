@@ -2,7 +2,7 @@
 title: "Data Analysis Expressions (DAX) Reference | Microsoft Docs"
 ms.service: powerbi 
 ms.topic: reference
-ms.date: 11/28/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.article: reference
 layout: LandingPage

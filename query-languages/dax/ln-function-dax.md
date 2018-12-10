@@ -1,15 +1,14 @@
 ---
 title: "LN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# LN function (DAX)
+# LN
 Returns the natural logarithm of a number. Natural logarithms are based on the constant e (2.71828182845904).  
   
 ## Syntax  

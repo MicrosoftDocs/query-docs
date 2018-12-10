@@ -1,16 +1,15 @@
 ---
 title: "PRODUCTX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# PRODUCTX function (DAX)
-  
+# PRODUCTX
+
 Returns the product of an expression evaluated for each row in a table.  
   
 To return the product of the numbers in a column, use [PRODUCT function &#40;DAX&#41;](product-function-dax.md).  

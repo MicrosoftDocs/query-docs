@@ -1,15 +1,14 @@
 ---
 title: "ADDCOLUMNS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ADDCOLUMNS function (DAX)
+# ADDCOLUMNS
 Adds calculated columns to the given table or table expression.  
   
 ## Syntax  

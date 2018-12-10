@@ -1,15 +1,14 @@
 ---
 title: "DATESBETWEEN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# DATESBETWEEN function (DAX)
+# DATESBETWEEN
 Returns a table that contains a column of dates that begins with the **start_date** and continues until the **end_date**.  
   
 ## Syntax  

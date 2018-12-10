@@ -1,15 +1,14 @@
 ---
 title: "PI function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# PI function (DAX)
+# PI
 Returns the value of Pi, 3.14159265358979, accurate to 15 digits.  
   
 ## Syntax  

@@ -1,15 +1,14 @@
 ---
 title: "CROSSFILTER function | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 11/07/2018
+ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# CROSSFILTER function
+# CROSSFILTER
 Specifies the cross-filtering direction to be used in a calculation for a relationship that exists between two columns.  
   
 ## Syntax  
