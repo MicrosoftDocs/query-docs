@@ -56,7 +56,7 @@ The mathematical functions in Data Analysis Expressions (DAX) are very similar t
   
 [ISO.CEILING](iso-ceiling-function-dax.md)  
   
-[LCM](lcm-function-dax.md)LCM  
+[LCM](lcm-function-dax.md)
   
 [LN](ln-function-dax.md)  
   

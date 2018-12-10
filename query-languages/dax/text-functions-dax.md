@@ -9,7 +9,7 @@ ms.author: owend
 manager: kfile
 ---
 # Text functions
-Data Analysis Expressions (DAX) includes a set of text functions that is based on the library of string functions in Excel, but which has been modified to work with tables and columns. This section lists all text functions available in the DAX language.  
+Data Analysis Expressions (DAX) includes a set of text functions based on the library of string functions in Excel, but which have been modified to work with tables and columns in tabular models. This section describes text functions available in the DAX language.  
   
 ## In this section  
 [BLANK](blank-function-dax.md)  

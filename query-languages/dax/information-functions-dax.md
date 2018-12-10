@@ -37,7 +37,5 @@ DAX information functions look at the cell or row that is provided as an argumen
 [LOOKUPVALUE](lookupvalue-function-dax.md)  
   
 [USERNAME](username-function-dax.md)  
-  
-## Related sections  
-[DAX function reference](dax-function-reference.md)  
+
   

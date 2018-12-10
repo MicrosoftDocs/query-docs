@@ -82,6 +82,4 @@ Data Analysis Expressions (DAX) includes time intelligence functions to support 
   
 [TOTALYTD](totalytd-function-dax.md)  
   
-## Related sections  
-[DAX function reference](dax-function-reference.md)  
   
