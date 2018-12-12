@@ -1,8 +1,7 @@
 ---
 title: "AnalysisServices.Database | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 12/12/2018
 ms.service: powerquery
-
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,13 +13,11 @@ manager: kfile
 ## Syntax
 
 <pre>  
-AnalysisServices.Database(**server** as text, **database** as text, optional **options **as nullable record) as table
+AnalysisServices.Database(<b>server</b> as text, <b>database</b> as text, optional <b>options</b> as nullable record) as table
 </pre>
 
 ## About
 Returns a table of multidimensional cubes or tabular models from the Analysis Services database `database` on server `server`. An optional record parameter, `options`, may be specified to control the following options: 
-
-
 
 * `Query` : A native MDX query used to retrieve data.
 * `TypedMeasureColumns` : A logical value indicating if the types specified in the multidimensional or tabular model will be used for the types of the added measure columns. When set to false, the type &quot;number&quot; will be used for all measure columns. The default value for this option is false.

@@ -1,8 +1,7 @@
 ---
 title: "AzureStorage.Tables | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 12/12/2018
 ms.service: powerquery
-
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -11,19 +10,12 @@ manager: kfile
 ---
 # AzureStorage.Tables
 
-  
-## About  
-Returns a navigational table containing a row for each table found at the account URL from an Azure storage vault. Each row contains a link to the azure table.  
-  
 ## Syntax
 
-<pre>   
-AzureStorage.Tables(accountName as text) as table  
+<pre>
+AzureStorage.Tables(<b>account</b> as text) as table
 </pre>
-  
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|accountName|The name of the Azure Storage account to access.|  
-  
+
+## About
+
+Returns a navigational table containing a row for each table found at the account URL, `account`, from an Azure storage vault. Each row contains a link to the azure table.
