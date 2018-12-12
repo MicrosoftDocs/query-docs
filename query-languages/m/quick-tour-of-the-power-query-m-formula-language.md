@@ -1,8 +1,7 @@
 ---
 title: "Quick tour | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 12/12/2018
 ms.service: powerquery
-
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -10,23 +9,26 @@ ms.author: owend
 manager: kfile
 ---
 # Quick tour of the Power Query M formula language
-This quick tour applies to creating Power Query M formula language queries in Power BI Desktop, Power Query in Excel, and Get Data in Excel 2016.  
+
+This quick tour describes creating Power Query M formula language queries.  
   
 > [!NOTE]  
 > M is a case-sensitive language.  
   
 ## Create a query with Query Editor  
+
 To create an advanced query, you use the **Query Editor**. A mashup query is composed of variables, expressions, and values encapsulated by a **let** expression. A variable can contain spaces by using the # identifier with the name in quotes as in #"Variable name".  
   
 A **let** expression follows this structure:  
   
 ```powerquery-m
-Let  
+let  
    Variablename = expression,  
    #"Variable name" = expression2  
-In   
+in   
    Variablename  
 ```  
+
 To create an M query in the **Query Editor**, you follow this basic process:  
   
 -   Create a series of query formula steps that start with the **let** statement. Each step is defined by a step variable name. An M **variable** can included spaces by using the # character as #"Step Name". A formula step can be a custom formula. Please note that the Power Query Formula Language is case sensitive.  
@@ -39,6 +41,7 @@ To create an M query in the **Query Editor**, you follow this basic process:
 To learn more about expressions and values, see [Expressions, values, and let expression](expressions-values-and-let-expression.md).  
   
 ## Simple Power Query M formula steps  
+
 Let's assume you created the following transform in the **Query Editor** to convert product names to proper case.  
   
 ![Intro to M Step 1](media/mstep1.png "Intro to M Step 1")  
@@ -74,6 +77,7 @@ let Orders = Table.FromRecords({
 in  
     #"Capitalized Each Word"  
 ```  
+
 **Let’s review each formula step.**  
   
 1.  **Orders** – Create a \[Table](#_Table_value) with data for Orders.  
@@ -82,7 +86,8 @@ in
   
 3.  **in #"Capitalized Each Word"** – Output the table with each word capitalized.  
   
-## See Also  
+## See also  
+
 [Expressions, values, and let expression](expressions-values-and-let-expression.md)  
 [Operators](operators.md)  
 [Type conversion](type-conversion.md)  
