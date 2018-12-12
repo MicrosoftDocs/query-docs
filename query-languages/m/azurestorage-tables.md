@@ -10,6 +10,8 @@ manager: kfile
 ---
 # AzureStorage.Tables
 
+## Syntax
+
 <pre>
 AzureStorage.Tables(<b>account</b> as text) as table
 </pre>

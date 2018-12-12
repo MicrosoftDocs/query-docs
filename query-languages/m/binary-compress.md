@@ -10,6 +10,8 @@ manager: kfile
 ---
 # Binary.Compress
 
+## Syntax
+
 <pre>
 Binary.Compress(<b>binary</b> as nullable binary, <b>compressionType</b> as number) as nullable binary
 </pre>

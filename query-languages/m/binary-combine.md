@@ -10,7 +10,8 @@ manager: kfile
 ---
 # Binary.Combine
 
-  
+## Syntax
+
 <pre>
 Binary.Combine(<b>binaries</b> as list) as binary
 </pre>

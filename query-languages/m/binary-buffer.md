@@ -11,6 +11,8 @@ manager: kfile
 ---
 # Binary.Buffer
 
+## Syntax
+
 <pre>
 Binary.Buffer(<b>binary</b> as nullable binary) as nullable binary
 </pre>

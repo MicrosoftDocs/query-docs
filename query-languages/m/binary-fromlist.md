@@ -10,7 +10,8 @@ manager: kfile
 ---
 # Binary.FromList
 
-  
+## Syntax
+
 <pre>
 Binary.FromList(<b>list</b> as list) as binary
 </pre>

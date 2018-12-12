@@ -10,7 +10,8 @@ manager: kfile
 ---
 # Binary.From
 
-  
+## Syntax  
+
 <pre>
 Binary.From(<b>value</b> as any, optional <b>encoding</b> as nullable number) as nullable binary
 </pre>
