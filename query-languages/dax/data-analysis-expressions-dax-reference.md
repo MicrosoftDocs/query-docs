@@ -122,7 +122,7 @@ Data Analysis Expressions (DAX) is a library of functions and operators that can
                         </div>
                         <div class="cardText">
                             <h3>DAX queries</h3>
-                            <p>Use query tools to create an *evaluate* statement that queries your data model.</p>
+                            <p>Use query tools to create an evaluate statement that queries your data model.</p>
                         </div>
                     </div>
                 </div>
