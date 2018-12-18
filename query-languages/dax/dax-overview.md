@@ -35,7 +35,7 @@ Total Sales:=SUM([Sales Amount])
 
 When a user places the TotalSales measure in the Values window in a PivotTable, and then places the Product Category column from a Product table into the Filters window, the sum of Sales Amount is calculated and displayed for each product category.  
   
-Unlike calculated columns and row filters, the syntax for a measure includes the measure's name preceding the formula. In the example just provided, the name **Total Sales:** appears preceding the formula. After you've created a measure, the name and its definition appear in the reporting client application Field List, and depending on perspectives and roles is available to all users of the model.  
+Unlike calculated columns and row filters, the syntax for a measure includes the measure's name preceding the formula. In the example just provided, the name **Total Sales** appears preceding the formula. After you've created a measure, the name and its definition appear in the reporting client application Field List, and depending on perspectives and roles is available to all users of the model.  
 
 To learn more, see:   
 [Measures in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-measures)   
@@ -44,7 +44,7 @@ To learn more, see:
   
 ### Calculated columns  
 
- A calculated column is a column that you add to an existing table (in the model designer) and then create a DAX formula that defines the column's values. Because a calculated column is created in a table in the data model,they are not supported in models that retrieve data from a exclusively from a relational data source using DirectQuery mode.  
+ A calculated column is a column that you add to an existing table (in the model designer) and then create a DAX formula that defines the column's values. Because a calculated column is created in a table in the data model, they're not supported in models that retrieve data exclusively from a relational data source using DirectQuery mode.  
   
  When a calculated column contains a valid DAX formula, values are calculated for each row as soon as the formula is entered. Values are then stored in the in-memory data model. For example, in a Date table, when the formula is entered into the formula bar:
 
@@ -52,7 +52,7 @@ To learn more, see:
 =[Calendar Year] & " Q" & [Calendar Quarter]
 ```
 
-A value for each row in the table is calculated by taking values from the Calendar Year column (in the same Date table), adding a space and the capital letter Q, and then adding the values from the Calendar Quarter column (in the same Date table). The result for each row in the calculated column is calculated immediately and appears, for example, as **2017 Q1**. Column values are only recalculated if the data is re-processed or the model is unloaded from memory and then re-loaded, like when closing and reopening a Power BI Desktop file.  
+A value for each row in the table is calculated by taking values from the Calendar Year column (in the same Date table), adding a space and the capital letter Q, and then adding the values from the Calendar Quarter column (in the same Date table). The result for each row in the calculated column is calculated immediately and appears, for example, as **2017 Q1**. Column values are only recalculated if the table or any related table  is processed (refresh) or the model is unloaded from memory and then reloaded, like when closing and reopening a Power BI Desktop file.  
   
  To learn more, see:   
 [Calculated columns in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-calculated-columns)   
@@ -61,7 +61,7 @@ A value for each row in the table is calculated by taking values from the Calend
   
 ### Calculated tables 
   
-A calculated table is a computed object, based on either a DAX query or formula expression, derived from all or part of other tables in the same model. Instead of querying and loading values into your new table's columns from a data source, a DAX formula defines the table’s values. Calculated tables are not available in Power Pivot in Excel.
+A calculated table is a computed object, based on either a DAX query or formula expression, derived from all or part of other tables in the same model. Instead of querying and loading values into your new table's columns from a data source, a DAX formula defines the table’s values. 
 
 Calculated tables can be helpful in a role-playing dimension. An example is the Date table, as OrderDate, ShipDate, or DueDate, depending on the foreign key relationship. By creating a calculated table for ShipDate explicitly, you get a standalone table that is available for queries, as fully operable as any other table. Calculated tables are also useful when configuring a filtered rowset, or a subset or superset of columns from other existing tables. This allows you to keep the original table intact while creating variations of that table to support specific scenarios.
 
@@ -92,21 +92,20 @@ To learn more, see:
 
 ## Queries
 
-DAX queries can be created and run in SQL Server Management Studio and open-source tools like DAX Studio (daxstudio.org). Unlike DAX calculation formulas, which can only be created in tabular data models, DAX queries can also be run against Analysis Services Multidimensional models. DAX queries are often easier to write and more efficient than Multidimensional Data Expressions (MDX) queries. 
+DAX queries can be created and run in SQL Server Management Studio (SSMS) and open-source tools like DAX Studio (daxstudio.org). Unlike DAX calculation formulas, which can only be created in tabular data models, DAX queries can also be run against Analysis Services Multidimensional models. DAX queries are often easier to write and more efficient than Multidimensional Data Expressions (MDX) queries. 
 
 A DAX query is a statement, similar to a SELECT statement in T-SQL. The most basic type of DAX query is an *evaluate* statement. For example,
 
 ```dax
-evaluate
-  (
-   'Geography'
-  )
+EVALUATE
+ ( FILTER ( 'DimProduct', [SafetyStockLevel] < 200 ) )
+ORDER BY [EnglishProductName] ASC
 ```
-Returns in Results the Geography table from the model.
+Returns in Results a table listing only those products with a SafetyStockLevel less than 200, in ascending order by EnglishProductName.
 
-You can create measures as part of the query; these measures exist only for the duration of the query. To learn more, see [DAX queries](dax-queries.md).
+You can create measures as part of the query. Measures exist only for the duration of the query. 
+To learn more, see [DAX queries](dax-queries.md).
  
-  
 ## Formulas  
 
 DAX formulas are essential for creating calculations in calculated columns and measures, and securing your data by using row level filters. To create formulas for calculated columns and measures, you will use the formula bar along the top of the model designer window or the DAX Editor. To create formulas for row filters, you will use the Role Manager dialog box. Information in this section is meant to get you started with understanding the basics of DAX formulas.  
@@ -285,11 +284,9 @@ While data types are typically automatically set, it is important to understand 
 Formulas in tabular models can be evaluated in a different context, depending on other design elements:  
   
 -   Filters applied in a PivotTable or report  
-  
 -   Filters defined within a formula  
-  
 -   Relationships specified by using special functions within a formula  
-  
+
 There are different types of context: *row context*, *query context*, and *filter context*.  
   
 ### Row context  
