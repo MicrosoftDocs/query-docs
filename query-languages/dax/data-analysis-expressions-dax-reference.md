@@ -60,11 +60,11 @@ Data Analysis Expressions (DAX) is a library of functions and operators that can
                     <div class="card">
                         <div class="cardImageOuter">
                             <div class="cardImage"> 
-                                <img src="https://docs.microsoft.com/media/common/i_overview.svg" alt="DAX Overview" />
+                                <img src="https://docs.microsoft.com/media/common/i_overview.svg" alt="DAX overview" />
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Parameter naming</h3>
+                            <h3>DAX overview</h3>
                             <p>Get the big picture. This article describes the most essential concepts in DAX.</p>
                         </div>
                     </div>
@@ -122,7 +122,7 @@ Data Analysis Expressions (DAX) is a library of functions and operators that can
                         </div>
                         <div class="cardText">
                             <h3>DAX queries</h3>
-                            <p>Use SQL Server Management Studio to create an evaluate statement that queries your Analysis Services data model.</p>
+                            <p>Use query tools to create an *evaluate* statement that queries your data model.</p>
                         </div>
                     </div>
                 </div>
