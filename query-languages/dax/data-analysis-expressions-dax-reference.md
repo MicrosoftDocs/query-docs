@@ -2,7 +2,7 @@
 title: "Data Analysis Expressions (DAX) Reference | Microsoft Docs"
 ms.service: powerbi 
 ms.topic: reference
-ms.date: 12/18/2018
+ms.date: 01/08/2019
 ms.reviewer: owend
 ms.article: reference
 layout: LandingPage
@@ -22,7 +22,7 @@ Data Analysis Expressions (DAX) is a library of functions and operators that can
                     <div class="card">
                         <div class="cardImageOuter">
                             <div class="cardImage"> 
-                                <img src="https://docs.microsoft.com/media/common/i_form.svg" alt="DAX function reference" />
+                                <img src="https://docs.microsoft.com/media/common/i_code-samples.svg" alt="DAX function reference" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -41,7 +41,7 @@ Data Analysis Expressions (DAX) is a library of functions and operators that can
                     <div class="card">
                         <div class="cardImageOuter">
                             <div class="cardImage"> 
-                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Learn quickly with introductory and advanced videos." />
+                                <img src="https://docs.microsoft.com/media/common/i_video.svg" alt="Learn quickly with introductory and advanced videos." />
                             </div>
                         </div>
                         <div class="cardText">
@@ -79,7 +79,7 @@ Data Analysis Expressions (DAX) is a library of functions and operators that can
                     <div class="card">
                         <div class="cardImageOuter">
                             <div class="cardImage"> 
-                                <img src="https://docs.microsoft.com/media/common/i_article.svg" alt="DAX Syntax" />
+                                <img src="https://docs.microsoft.com/media/common/i_formula.svg" alt="DAX Syntax" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -117,7 +117,7 @@ Data Analysis Expressions (DAX) is a library of functions and operators that can
                     <div class="card">
                         <div class="cardImageOuter">
                             <div class="cardImage"> 
-                                <img src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="DAX Queries" />
+                                <img src="https://docs.microsoft.com/media/common/i_queries.svg.svg" alt="DAX Queries" />
                             </div>
                         </div>
                         <div class="cardText">
