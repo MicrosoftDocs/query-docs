@@ -43,7 +43,7 @@ DAX is continuously being improved with new functions and functionality to suppo
 |[SUMMARIZECOLUMNS function](summarizecolumns-function-dax.md)      |     Nov. 2018    |
 
 > [!NOTE]
-> While functions and functionality are being updated all the time, only those updates that have a visible and functional change exposed to users are described in documentation. 
+> While functions and functionality are being updated all the time, only those updates that have a visible and functional change exposed to users are described in documentation.
 
   
   
