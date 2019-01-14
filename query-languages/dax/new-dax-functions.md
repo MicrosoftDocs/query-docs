@@ -1,7 +1,7 @@
 ---
 title: "New DAX functions | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/07/2018
+ms.date: 01/14/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -10,11 +10,10 @@ manager: kfile
 ---
 # New DAX functions
 
-DAX is continuously being improved with new functions and functionality to support new features. New functions and updates are included in service, application, and tool updates which in most cases are monthly. SQL Server Analysis Services and Excel are updated in the next cumulative update. To get the latest, make sure you're using the latest version.
+DAX is continuously being improved with new functions and functionality to support new features. New functions and updates are included in service, application, and tool updates which in most cases are monthly. SQL Server Analysis Services and Excel are updated in the next cumulative update. To get the latest, make sure you're using the latest version. 
 
 > [!IMPORTANT]
 > Not all functions are supported in all versions of Power BI Desktop, Analysis Services, and Power Pivot in Excel.  
-
   
  ## New functions
 
@@ -37,16 +36,14 @@ DAX is continuously being improved with new functions and functionality to suppo
 |[UTCTODAY](utctoday-function-dax.md)     |     March 2018     |
 
 
-
-
  ## Updated functions
-
 
 |Function  | Month  |
 |---------|---------|
 |[SUMMARIZECOLUMNS function](summarizecolumns-function-dax.md)      |     Nov. 2018    |
 
- 
+> [!NOTE]
+> While functions and functionality are being updated all the time, only those updates that have a visible and functional change exposed to users are described in documentation. 
 
   
   
