@@ -1,7 +1,7 @@
 ---
 title: "ISONORAFTER function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 01/16/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -18,8 +18,8 @@ Based on the sort order, the first parameter is compared with the second paramet
   
 ## Syntax  
   
-```vb  
-ISONORAFTER(<scalar_expression>, <scalar_expression>sort_order] [,scalar_expression>, <scalar_expression>, [sort_order][,…])  
+```DAX  
+ISONORAFTER(<scalar_expression>, <scalar_expression>[, sort_order [, <scalar_expression>, <scalar_expression>[, sort_order]]…)  
 ```
   
 #### Parameters  
