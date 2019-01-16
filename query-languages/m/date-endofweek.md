@@ -1,6 +1,6 @@
 ---
 title: "Date.EndOfWeek | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 01/16/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -18,7 +18,7 @@ Returns a date, datetime, or datetimezone value for the end of the week.
 ## Syntax
 
 <pre>
-Date.StartOfWeek(dateTime as any, optional firstDayOfWeek as nullable number) as any   
+Date.EndOfWeek(dateTime as any, optional firstDayOfWeek as nullable number) as any   
 </pre>  
   
 ## Arguments  
