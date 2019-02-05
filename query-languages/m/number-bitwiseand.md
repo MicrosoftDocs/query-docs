@@ -1,6 +1,6 @@
 ---
 title: "Number.BitwiseAnd | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 2/05/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -13,18 +13,12 @@ manager: kfile
 
   
 ## About  
-Returns the result of a bitwise AND operation on the provided operands.  
+
+Returns the result of performing a bitwise And operation between <code>number1</code> and <code>number2</code>.
   
 ## Syntax
 
 <pre>
-Number.BitwiseAnd (number1 as number,  number2 as number) as number  
+Number.BitwiseAnd(<b>number1</b> as nullable number, <b>number2</b> as nullable number) as nullable number
 </pre>
-  
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|number1|First operand.|  
-|number2|Second operand.|  
-  
+
