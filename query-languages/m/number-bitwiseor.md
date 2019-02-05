@@ -13,18 +13,13 @@ manager: kfile
 
   
 ## About  
-Returns the result of a bitwise OR operation on the provided operands.  
+
+Returns the result of performing a bitwise Or between <code>number1</code> and <code>number2</code>.
   
 ## Syntax
 
 <pre>
-Number.BitwiseOr(x as number, y as number) as number  
+Number.BitwiseOr(<b>number1</b> as nullable number, <b>number2</b> as nullable number) as nullable number 
 </pre>
-  
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|x|The number to shift.|  
-|y|The number of bits to shift.|  
+
   

@@ -1,6 +1,6 @@
 ---
 title: "Number.BitwiseNot | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 2/05/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -13,18 +13,13 @@ manager: kfile
 
   
 ## About  
-Returns the result of a bitwise NOT operation on the provided operands.  
+
+Returns the result of performing a bitwise Not operation on <code>number</code>.
+
   
 ## Syntax
 
 <pre>
-Number.BitwiseNot(x as number, y as number) as number  
+Number.BitwiseNot(<b>number</b> as any) as any
 </pre>
-  
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|x|The number to shift.|  
-|y|The number of bits to shift.|  
   

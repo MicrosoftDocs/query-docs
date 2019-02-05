@@ -1,6 +1,6 @@
 ---
 title: "Number.BitwiseXor | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 2/05/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -13,18 +13,13 @@ manager: kfile
 
   
 ## About  
-Returns the result of a bitwise XOR operation on the provided operands.  
+
+Returns the result of performing a bitwise XOR (Exclusive-OR) between <code>number1</code> and <code>number2</code>.
   
 ## Syntax
 
 <pre>
-Number.BitwiseXor(x as number, y as number) as number  
+Number.BitwiseXor(<b>number1</b> as nullable number, <b>number2</b> as nullable number) as nullable number
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|x|The number to shift.|  
-|y|The number of bits to shift.|  
   
