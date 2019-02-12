@@ -66,7 +66,8 @@ Functions in this section access data and return table values. Most of these fun
 |[Json.Document](json-document.md)|Returns the contents of a JSON document. The contents may be directly passed to the function as text, or it may be the binary value returned by a function like File.Contents.|  
 |[Json.FromValue](json-fromvalue.md)|Produces a JSON representation of a given value value with a text encoding specified by encoding.|
 |[MySQL.Database](mysql-database.md)|Returns a table with data relating to the tables in the specified MySQL Database.| 
-|[OData.Feed](odata-feed.md)|Returns a table of OData feeds offered by an OData serviceUri.|  
+|[OData.Feed](odata-feed.md)|Returns a table of OData feeds offered by an OData serviceUri.| 
+|[ODataOmitValues.Nulls](odataomitvalues-nulls.md)|Allows the OData service to omit null values.| 
 |[Odbc.DataSource](odbc-datasource.md)|Returns a table of SQL tables and views from the ODBC data source specified by the connection string `connectionString`. |  
 |[Odbc.InferOptions](odbc-inferoptions.md)|Returns the result of trying to infer SQL capabilities for an ODBC driver. |  
 |[Odbc.Query](odbc-query.md)|Connects to a generic provider with the given connection string and returns the result of evaluating the query.|  
