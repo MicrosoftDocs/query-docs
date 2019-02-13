@@ -17,17 +17,8 @@ With DAX queries, you can retrieve data defined by a table expression from the i
 ```dax
 [DEFINE {  MEASURE <tableName>[<name>] = <expression> } 
         {  VAR <name> = <expression>}]
-```
- 
-```dax
 EVALUATE <table>  
-```
-  
-```dax
 [ORDER BY {<expression> [{ASC | DESC}]}[, …]  
-```
-  
-```dax
 [START AT {<value>|<parameter>} [, …]]]  
 ```
   
@@ -48,8 +39,6 @@ The name of a new measure. It cannot be an expression.
 **expression**  
 Any DAX expression that returns a single scalar value. 
 
-
-  
 **EVALUATE** clause  
 Contains the table expression that generates the results of the query. The expression can use any of the defined measures.  
   
