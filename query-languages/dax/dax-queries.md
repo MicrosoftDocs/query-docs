@@ -22,23 +22,22 @@ EVALUATE <table>
 [START AT {<value>|<parameter>} [, …]]]  
 ```
   
-#### Parameters  
+## Parameters 
 
-**DEFINE** clause  
-An optional clause of the query statement that allows the user to define measures for the duration of the query. Definitions can reference other definitions that appear before or after the current definition.  
-  
-**tableName**  
-The name of an existing table using standard DAX syntax. It cannot be an expression.  
-  
-**VAR**   
-An optional expression as a named variable. A VAR can be passed as an argument to other expressions.       
+**DEFINE** - clause
+An optional clause that defines measures for the duration of the query. Definitions can reference other definitions that appear before or after the current definition.  
+ 
+Arguments
 
-**name**  
-The name of a new measure. It cannot be an expression.  
-  
-**expression**  
-Any DAX expression that returns a single scalar value. 
 
+|Term  |Definition  |
+|---------|---------|
+|tableName     |   The name of an existing table using standard DAX syntax. It cannot be an expression.       |
+|name     |   The name of a new measure. It cannot be an expression.      |
+|VAR     |   An optional expression as a named variable. A VAR can be passed as an argument to other expressions.      |
+|  expression  |  Any DAX expression that returns a single scalar value. |
+
+  
 **EVALUATE** clause  
 Contains the table expression that generates the results of the query. The expression can use any of the defined measures.  
   
@@ -62,10 +61,43 @@ A constant value; it cannot be an expression.
 **parameter**  
 The name of a parameter in the XMLA statement prefixed with an **@** character. 
 
+**summarize** - function
+The DAX [SUMMARIZE](summarize-function-dax.md) function is similar to the T-SQL GROUP BY 
+
+
 ### Return value  
 
 A table of data.  
-  
+
+## Examples
+
+### Example 1
+```DAX
+EVALUATE(
+    FactInternetSales
+    )
+```
+### Returns    
+All rows and columns from the FactInternetSales table, as a table.
+
+![DAX Evaluate statement](media/dax-queries/dax-evaluate.png)
+
+### Example 2
+```DAX
+EVALUATE(
+FILTER(
+DimGeography
+, DimGeography[StateProvinceName]="California")
+)
+order by
+DimGeography[GeographyKey]
+```
+
+### Returns    
+All rows and columns from the DimGeography table, where StateProvinceName is equal to California, ordered by GeographyKey, as a table.
+
+![DAX Evaluate order by statement](media/dax-queries/dax-evaluate-orderby.png)
+
 ## Parameters in XMLA and DAX queries  
 
 A well-defined DAX query statement can be parameterized and then used over and over with just changes in the parameter values.  
