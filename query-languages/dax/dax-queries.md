@@ -10,28 +10,30 @@ manager: kfile
 ---
 # DAX queries
 
-With DAX queries, you can query and retrieve data defined by a table expression from the in-memory analytics engine (VertiPaq). Reporting clients construct DAX queries whenever a field is placed on a report surface, or a whenever a filter or calculation is applied. DAX queries can also be created and run in [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) and open-source tools like DAX Studio (daxstudio.org). 
+With DAX queries, you can query and retrieve data defined by a table expression from the in-memory analytics engine (VertiPaq). Reporting clients construct DAX queries whenever a field is placed on a report surface, or a whenever a filter or calculation is applied. DAX queries can also be created and run in [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) (SSMS) and open-source tools like [DAX Studio](daxstudio.org). Creating and executing DAX queries in SSMS and DAX Studio can be useful when testing query formulas or needing to query model data without using a reporting client.
 
 Examples shown use the [adventureworks sample model](https://docs.microsoft.com/azure/analysis-services/analysis-services-create-sample-model) database on an Azure Analysis Services server resource.
 
 
-## EVALUATE  
+## Statements  
 
-At the most basic level, a DAX query contains an **EVALUATE** statement containing a `<table>` expression that queries the engine and returns the results of the query.  
+### EVALUATE
 
-### Syntax  
+At the most basic level, a DAX query contains a required **EVALUATE** statement containing a `<table>` expression that queries the engine and returns the results of the query.  
+
+#### Syntax  
   
 ```dax
 EVALUATE <table>  
 ```
 
-### Arguments
+#### Arguments
 |Term  |Definition  |
 |---------|---------|
 |  table     |   A table expression.  |
 
 
-### Example
+#### Example
 
 ```dax
 EVALUATE(
@@ -43,22 +45,22 @@ Returns all rows and columns from the Internet Sales table, as a table.
 
 ![DAX Evaluate statement](media/dax-queries/dax-evaluate.png)
 
-## Order results 
+### ORDER BY 
 
-**ORDER BY** is an optional clause that defines the expression(s) used to sort query results. Any expression that can be evaluated for each row of the result is valid.  
+The optional **ORDER BY** keyword defines the expression(s) used to sort query results. Any expression that can be evaluated for each row of the result is valid.  
 
-### Syntax
+#### Syntax
 ```dax
 EVALUATE <table>  
 [ORDER BY {<expression> [{ASC | DESC}]}[, …]  
 ```
 
-### Arguments
+#### Arguments
 |Term  |Definition  |
 |---------|---------|
 |  expression     |   Any DAX expression that returns a single scalar value.  |
 
-### Example
+#### Example
 
 ```dax
 EVALUATE(
@@ -72,11 +74,11 @@ Returns all rows and columns from the Internet Sales table, ordered by Order Dat
 
 ![DAX Evaluate order by statement](media/dax-queries/dax-evaluate-orderby.png)
 
-## Start at a specific value
+### START AT
 
-**START AT** is an optional clause, inside an **ORDER BY** clause, that defines the values at which the query results will begin. The START AT clause is part of the ORDER BY clause and cannot be used outside it.
+The optional **START AT** keyword is used inside an **ORDER BY** clause that defines the values at which the query results will begin. The START AT clause is part of the ORDER BY clause and cannot be used outside it.
 
-### Syntax
+#### Syntax
 
 ```dax
 EVALUATE <table>  
@@ -84,7 +86,7 @@ EVALUATE <table>
 [START AT {<value>|<parameter>} [, …]]]  
 ```
 
-### Arguments
+#### Arguments
 
 |Term  |Definition  |
 |---------|---------|
@@ -95,11 +97,42 @@ START AT arguments have a one-to-one correspondence with the columns in the ORDE
 
 Multiple **EVALUATE**/**ORDER BY**/**START AT** clauses can be specified in a single query.
 
-## Filter results
+### DEFINE
+
+The optional **DEFINE** keyword can define measures for the duration of the query. Definitions can reference other definitions that appear before or after the current definition. 
+
+### Syntax  
+  
+```dax
+[DEFINE {  MEASURE <tableName>[<name>] = <expression> } 
+        {  VAR <name> = <expression>}]
+EVALUATE <table>  
+```
+
+### Arguments
+|Term  |Definition  |
+|---------|---------|
+|tableName     |   The name of an existing table using standard DAX syntax. It cannot be an expression.       |
+|name     |   The name of a new measure. It cannot be an expression.      |
+|  expression  |  Any DAX expression that returns a single scalar value. The expression can use any of the defined measures. The expression must return a table. If a scalar value is required, wrap the scalar inside a ROW() function to produce a table.  |
+|VAR     |   An optional expression as a named variable. A VAR can be passed as an argument to other expressions.      |
+
+#### Example
+
+```dax
+DEFINE
+    VAR SalesCount =
+        COUNT ()
+EVALUATE(
+    'Internet Sales'
+    )
+```
+
+## Filtering results
 
 Use the [FILTER](filter-function-dax.md) function to return a subset of rows containing a specified value.
 
-### Example
+#### Example
 
 ```dax
 EVALUATE(
@@ -115,7 +148,7 @@ Returns all rows and columns from the Internet Sales table, filtered by a produc
 
 Use the [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md)  function to return a summary table over a set of groups. 
 
-### Example
+#### Example
 
 ```dax
 EVALUATE
@@ -137,25 +170,7 @@ Returns all rows from the product table by product name, and calculates an aggre
 ![DAX Evaluate summarizecolumns statement](media/dax-queries/dax-evaluate-summarizecolumns.png)
 
 
-## Define measures
 
-**DEFINE** is an optional clause that defines measures for the duration of the query. Definitions can reference other definitions that appear before or after the current definition. 
-
-### Syntax  
-  
-```dax
-[DEFINE {  MEASURE <tableName>[<name>] = <expression> } 
-        {  VAR <name> = <expression>}]
-EVALUATE <table>  
-```
-
-### Arguments
-|Term  |Definition  |
-|---------|---------|
-|tableName     |   The name of an existing table using standard DAX syntax. It cannot be an expression.       |
-|name     |   The name of a new measure. It cannot be an expression.      |
-|  expression  |  Any DAX expression that returns a single scalar value. The expression can use any of the defined measures. The expression must return a table. If a scalar value is required, wrap the scalar inside a ROW() function to produce a table.  |
-|VAR     |   An optional expression as a named variable. A VAR can be passed as an argument to other expressions.      |
 
 ## Parameters in DAX queries  
 
