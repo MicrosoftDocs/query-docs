@@ -106,8 +106,6 @@ EVALUATE <table>
   
 START AT arguments have a one-to-one correspondence with the columns in the ORDER BY clause. There can be as many arguments in the START AT clause as there are in the ORDER BY clause, but not more. The first argument in the START AT defines the starting value in column 1 of the ORDER BY columns. The second argument in the START AT defines the starting value in column 2 of the ORDER BY columns within the rows that meet the first value for column 1.  
 
-Multiple **EVALUATE**/**ORDER BY**/**START AT** clauses can be specified in a single query.
-
 #### Example
 
 ```dax
@@ -122,6 +120,10 @@ START AT "SO7000"
 Returns all rows and columns from the Internet Sales table, ordered by Sales Order Number, beginning at SO7000.
 
 ![DAX Evaluate order by statement](media/dax-queries/dax-evaluate-startat.png)
+
+
+Multiple **EVALUATE**/**ORDER BY**/**START AT** clauses can be specified in a single query.
+
 
 ### DEFINE (Optional)
 
@@ -183,7 +185,7 @@ Reference XMLA parameters by prefixing the name of the parameter with an `@` cha
 
 [FILTER](filter-function-dax.md)   
 [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md)   
-[TREATAS](treatas-function.md)
+[TREATAS](treatas-function.md)   
 [VAR](var-dax.md)
 
   
