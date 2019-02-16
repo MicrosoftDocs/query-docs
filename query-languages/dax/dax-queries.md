@@ -10,7 +10,7 @@ manager: kfile
 ---
 # DAX queries
 
-With DAX queries, you can query and retrieve data defined by a table expression from the in-memory analytics engine (VertiPaq). Reporting clients construct DAX queries whenever a field is placed on a report surface, or a whenever a filter or calculation is applied. DAX queries can also be created and run in [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) (SSMS) and open-source tools like [DAX Studio](daxstudio.org). 
+With DAX queries, you can query and retrieve data defined by a table expression from the in-memory analytics engine (VertiPaq). Reporting clients construct DAX queries whenever a field is placed on a report surface, or a whenever a filter or calculation is applied. DAX queries can also be created and run in [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) (SSMS) and open-source tools like [DAX Studio](https://daxstudio.org). 
 
 ## Syntax
 
