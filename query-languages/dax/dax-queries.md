@@ -52,41 +52,9 @@ Returns all rows and columns from the Internet Sales table, as a table.
 
 ![DAX Evaluate statement](media/dax-queries/dax-evaluate.png)
 
-### DEFINE (Optional)
-
-The optional **DEFINE** keyword defines entities that exist only for the duration of the query. Definitions are valid for all EVALUATE statements. Entities can be variables, measures, tables, and columns. Definitions can reference other definitions that appear before or after the current definition. Definitions typically precede the EVALUATE statement. 
-
-#### Syntax  
-  
-```dax
-[DEFINE {  MEASURE <tableName>[<name>] = <expression> } 
-        {  VAR <name> = <expression>}]
-EVALUATE <table>  
-```
-
-#### Arguments
-
-|Term  |Definition  |
-|---------|---------|
-|   tableName     |   The name of an existing table using standard DAX syntax. It cannot be an expression.       |
-|   name     |   The name of a new measure. It cannot be an expression.      |
-|  expression  |  Any DAX expression that returns a single scalar value. The expression can use any of the defined measures. The expression must return a table. If a scalar value is required, wrap the scalar inside a ROW() function to produce a table.  |
-|VAR     |   An optional expression as a named variable. A VAR can be passed as an argument to other expressions.      |
-
-#### Example
-
-```dax
-DEFINE
-    VAR SalesCount =
-        COUNT ()
-EVALUATE(
-    'Internet Sales'
-    )
-```
-
 ### ORDER BY (Optional)
 
-The optional **ORDER BY** keyword defines one or more expression used to sort query results. Any expression that can be evaluated for each row of the result is valid.  
+The optional **ORDER BY** keyword defines one or more expressions used to sort query results. Any expression that can be evaluated for each row of the result is valid.  
 
 #### Syntax
 
@@ -155,6 +123,47 @@ Returns all rows and columns from the Internet Sales table, ordered by Sales Ord
 
 ![DAX Evaluate order by statement](media/dax-queries/dax-evaluate-startat.png)
 
+### DEFINE (Optional)
+
+The optional **DEFINE** keyword defines entities that exist only for the duration of the query. Definitions are valid for all EVALUATE statements. Entities can be variables, measures, tables, and columns. Definitions can reference other definitions that appear before or after the current definition. Definitions typically precede the EVALUATE statement. 
+
+#### Syntax  
+  
+```dax
+[DEFINE {  MEASURE <tableName>[<name>] = <expression> } 
+        {  VAR <name> = <expression>}]
+EVALUATE <table>  
+```
+
+#### Arguments
+
+|Term  |Definition  |
+|---------|---------|
+|   tableName     |   The name of an existing table using standard DAX syntax. It cannot be an expression.       |
+|   name     |   The name of a new measure. It cannot be an expression.      |
+|  expression  |  Any DAX expression that returns a single scalar value. The expression can use any of the defined measures. The expression must return a table. If a scalar value is required, wrap the scalar inside a ROW() function to produce a table.  |
+|   VAR     |   An optional expression as a named variable. A [VAR](var-dax.md) can be passed as an argument to other expressions.      |
+
+#### Example
+
+```dax
+DEFINE
+MEASURE 'Internet Sales'[Internet Total Sales] = SUM('Internet Sales'[Sales Amount])
+EVALUATE
+SUMMARIZECOLUMNS
+(
+	'Date'[Calendar Year],
+	TREATAS({2013, 2014}, 'Date'[Calendar Year]),
+	"Total Sales", [Internet Total Sales],
+	"Combined Years Total Sales", CALCULATE([Internet Total Sales], ALLSELECTED('Date'[Calendar Year]))
+)
+ORDER BY [Calendar Year]
+```
+
+Returns the calculated total sales for years 2013 and 2014, and combined calculated total sales for years 2013 and 2014, as a table.
+
+![DAX Evaluate with measure defnition](media/dax-queries/dax-evaluate-define.png)
+
 
 ## Parameters in DAX queries  
 
@@ -172,7 +181,9 @@ Reference XMLA parameters by prefixing the name of the parameter with an `@` cha
   
 ## See also
 
-[DAX function reference](dax-function-reference.md)   
-[DAX overview](dax-overview.md)
+[FILTER](filter-function-dax.md)   
+[SUMMARIZECOLUMNS](summarizecolumns-function-dax.md)   
+[TREATAS](treatas-function.md)
+[VAR](var-dax.md)
 
   
