@@ -1,7 +1,7 @@
 ---
 title: "ALL function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 03/01/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,7 +14,7 @@ Returns all the rows in a table, or all the values in a column, ignoring any fil
 ## Syntax  
   
 ```dax
-ALL( {<table> | <column>[, <column>[, <column>[,…]]]} )  
+ALL( [<table> | <column>[, <column>[, <column>[,…]]]] )  
 ```
   
 #### Parameters  
@@ -38,6 +38,7 @@ As described in the following table, you can use the ALL and ALLEXCEPT functions
   
 |Function and usage|Description|  
 |----------------------|---------------|  
+|ALL()|Removes all filters everywhere. ALL() can only be used to clear filters but not to return a table.|
 |ALL(Table)|Removes all filters from the specified table. In effect, ALL(Table) returns all of the values in the table, removing any filters from the context that otherwise might have been applied.<br /><br />This function is useful when you are working with many levels of grouping, and want to create a calculation that creates a ratio of an aggregated value to the total value. The first example demonstrates this scenario.|  
 |ALL (Column[, Column[, …]])|Removes all filters from the specified columns in the table; all other filters on other columns in the table still apply. All column arguments must come from the same table.<br /><br />The ALL(Column) variant is useful when you want to remove the context filters for one or more specific columns and to keep all other context filters.<br /><br />The second and third examples demonstrate this scenario.|  
 |ALLEXCEPT(Table, Column1 [,Column2]...)|Removes all context filters in the table except filters that are applied to the specified columns.<br /><br />This is a convenient shortcut for situations in which you want to remove the filters on many, but not all, columns in a table.|  

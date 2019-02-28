@@ -1,7 +1,7 @@
 ---
 title: "New DAX functions | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 01/14/2019
+ms.date: 03/01/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -19,6 +19,9 @@ DAX is continuously being improved with new functions and functionality to suppo
 
 |Function  |Month  |
 |---------|---------|
+|[CONTAINSSTRING](containsstring-function-dax.md)| Feb. 2019 |
+|[CONTAINSSTRINGEXACT](containsstringexact-function-dax.md)| Feb. 2019 |
+|[DISTINCTCOUNTNOBLANK](distinctcountnoblank-function-dax.md)  | Feb. 2019  |
 |[APPROXIMATEDISTINCTCOUNT (Preview) ](approximate-distinctcount-function-dax.md)    |  Dec. 2018       |
 |[ISINSCOPE](isinscope-function-dax.md)     |   Nov. 2018      |
 |[NORM.DIST](norm-dist-dax.md)     |   August 2018      |
@@ -40,6 +43,8 @@ DAX is continuously being improved with new functions and functionality to suppo
 
 |Function  | Month  |
 |---------|---------|
+|[ALL](all-function-dax.md)| Feb. 2019 |
+|[LOOKUPVALUE](lookupvalue-function-dax.md)| Feb. 2019 |
 |[SUMMARIZECOLUMNS function](summarizecolumns-function-dax.md)      |     Nov. 2018    |
 
 > [!NOTE]
