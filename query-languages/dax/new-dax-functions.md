@@ -13,7 +13,7 @@ manager: kfile
 DAX is continuously being improved with new functions and functionality to support new features. New functions and updates are included in service, application, and tool updates which in most cases are monthly. SQL Server Analysis Services and Excel are updated in the next cumulative update. To get the latest, make sure you're using the latest version. 
 
 > [!IMPORTANT]
-> Not all functions are supported in all versions of Power BI Desktop, Analysis Services, and Power Pivot in Excel.  
+> Not all functions are supported in all versions of Power BI Desktop, Analysis Services, and Power Pivot in Excel. New and updated functions are typically first introduced in Power BI Desktop. 
   
  ## New functions
 
