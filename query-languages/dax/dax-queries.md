@@ -162,7 +162,7 @@ SUMMARIZECOLUMNS
 ORDER BY [Calendar Year]
 ```
 
-Returns the calculated total sales for years 2013 and 2014, and combined calculated total sales for years 2013 and 2014, as a table.
+Returns the calculated total sales for years 2013 and 2014, and combined calculated total sales for years 2013 and 2014, as a table. The measure in the DEFINE statement, Internet Total Sales, is used in both Total Sales and Combined Years Total Sales expressions.
 
 ![DAX Evaluate with measure defnition](media/dax-queries/dax-evaluate-define.png)
 
