@@ -1,7 +1,7 @@
 ---
 title: "Statistical functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 8/14/2018
+ms.date: 03/01/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -48,9 +48,11 @@ Data Analysis Expressions (DAX) provides many functions for creating aggregation
   
 [CROSSJOIN ](crossjoin-function-dax.md)  
   
-[DATATABLE function](datatable-function.md)  
+[DATATABLE](datatable-function.md)  
   
 [DISTINCTCOUNT](distinctcount-function-dax.md)  
+
+[DISTINCTCOUNTNOBLANK](distinctcountnoblank-function-dax.md) 
   
 [EXPON.DIST](expon-dist-function-dax.md)  
   
@@ -84,7 +86,7 @@ Data Analysis Expressions (DAX) provides many functions for creating aggregation
   
 [NORM.S.DIST](norm-s-dist-dax.md)  
   
-[NORM.S.INV &#40;DAX&#41;](norm-s-inv-dax.md)  
+[NORM.S.INV](norm-s-inv-dax.md)  
   
 [PERCENTILE.EXC](percentile-exc-function-dax.md)  
   

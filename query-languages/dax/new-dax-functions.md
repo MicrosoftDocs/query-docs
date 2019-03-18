@@ -1,7 +1,7 @@
 ---
 title: "New DAX functions | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 01/14/2019
+ms.date: 03/01/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -13,12 +13,15 @@ manager: kfile
 DAX is continuously being improved with new functions and functionality to support new features. New functions and updates are included in service, application, and tool updates which in most cases are monthly. SQL Server Analysis Services and Excel are updated in the next cumulative update. To get the latest, make sure you're using the latest version. 
 
 > [!IMPORTANT]
-> Not all functions are supported in all versions of Power BI Desktop, Analysis Services, and Power Pivot in Excel.  
+> Not all functions are supported in all versions of Power BI Desktop, Analysis Services, and Power Pivot in Excel. New and updated functions are typically first introduced in Power BI Desktop. 
   
  ## New functions
 
 |Function  |Month  |
 |---------|---------|
+|[CONTAINSSTRING](containsstring-function-dax.md)| Feb. 2019 |
+|[CONTAINSSTRINGEXACT](containsstringexact-function-dax.md)| Feb. 2019 |
+|[DISTINCTCOUNTNOBLANK](distinctcountnoblank-function-dax.md)  | Feb. 2019  |
 |[APPROXIMATEDISTINCTCOUNT (Preview) ](approximate-distinctcount-function-dax.md)    |  Dec. 2018       |
 |[ISINSCOPE](isinscope-function-dax.md)     |   Nov. 2018      |
 |[NORM.DIST](norm-dist-dax.md)     |   August 2018      |
@@ -40,6 +43,8 @@ DAX is continuously being improved with new functions and functionality to suppo
 
 |Function  | Month  |
 |---------|---------|
+|[ALL](all-function-dax.md)| Feb. 2019 |
+|[LOOKUPVALUE](lookupvalue-function-dax.md)| Feb. 2019 |
 |[SUMMARIZECOLUMNS function](summarizecolumns-function-dax.md)      |     Nov. 2018    |
 
 > [!NOTE]

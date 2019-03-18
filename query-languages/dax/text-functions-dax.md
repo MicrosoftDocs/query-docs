@@ -1,7 +1,7 @@
 ---
 title: "Text functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 03/01/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -19,6 +19,10 @@ Data Analysis Expressions (DAX) includes a set of text functions based on the li
 [CONCATENATE](concatenate-function-dax.md)  
   
 [CONCATENATEX](concatenatex-function-dax.md)  
+
+[CONTAINSSTRING](containsstring-function-dax.md)   
+
+[CONTAINSSTRINGEXACT](containsstringexact-function-dax.md)   
   
 [EXACT](exact-function-dax.md)  
   
