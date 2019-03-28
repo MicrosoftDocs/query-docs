@@ -1,6 +1,6 @@
 ---
 title: "Table.Profile | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 3/28/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-Table.Profile(table as table) as table  
+Table.Profile(<b>table</b> as table, optional <b>additionalAggregates</b> as nullable list) as table
 </pre>
   
 ## About  

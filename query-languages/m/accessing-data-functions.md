@@ -1,6 +1,6 @@
 ---
 title: "Accessing data functions | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 3/28/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -17,6 +17,9 @@ Functions in this section access data and return table values. Most of these fun
   
 |Function|Description|  
 |------------|---------------|  
+|[AccessControlEntry.ConditionToIdentities](accesscontrolentry-conditiontoidentities.md)|Returns a list of identities that the condition will accept.|
+|[AccessControlKind.Allow](accesscontrolkind-allow.md)|Access is allowed.|
+|[AccessControlKind.Deny](accesscontrolkind-deny.md)|Access is denied.|
 |[Access.Database](access-database.md)|Returns a structural representation of an Microsoft Access database. |  
 |[ActiveDirectory.Domains](activedirectory-domains.md)|Returns a table with Domain information available in the current domain or optional Active Directory forest.|  
 |[AdobeAnalytics.Cubes](adobeanalytics-cubes.md)   | Returns a table of multidimensional packages from Adobe Analyics.  |
@@ -62,6 +65,9 @@ Functions in this section access data and return table values. Most of these fun
 |[HdInsight.Contents](hdinsight-contents.md)|Returns a navigational table containing all containers found in the HDInsight account. Each row has the container name and table containing its files.|  
 |[HdInsight.Files](hdinsight-files.md)|Returns a table containing a row for each folder and file found at the container URL, and subfolders from an HDInsight account. Each row contains properties of the file/folder and a link to its content.|  
 |[Html.Table](html-table.md)|Returns a table containing the results of running the specified CSS selectors against the provided html|  
+|[Identity.From](identity.from.md)|Creates an identity.|
+|[Identity.IsMemberOf](identity-ismemberof.md)|Determines whether an identity is a member of an identity collection.|
+|[IdentityProvider.Default](identityprovider-default.md)|The default identity provider for the current host.|
 |[Informix.Database](informix-database.md)|Returns a table of SQL tables and views available in an Informix database on server `server` in the database instance named `database`.|  
 |[Json.Document](json-document.md)|Returns the contents of a JSON document. The contents may be directly passed to the function as text, or it may be the binary value returned by a function like File.Contents.|  
 |[Json.FromValue](json-fromvalue.md)|Produces a JSON representation of a given value value with a text encoding specified by encoding.|
