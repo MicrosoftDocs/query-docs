@@ -16,8 +16,9 @@ This function reference provides detailed information including syntax, paramete
 
 ## Sample data
 
-Most reference articles contain examples showing formulas and results created in an Excel workbook with a Power Pivot for Excel data model connected to an AdventureWorksDW sample database as a datasource. This sample workbook is no longer available. However, the AdventureWorksDW sample database can be downloaded [here](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks). 
+Most reference articles contain examples showing formulas and results created in an Excel workbook with a Power Pivot for Excel data model. The data model is connected to an AdventureWorksDW sample database as a datasource. The sample workbook is no longer available. 
 
+You can [download the AdventureWorksDW sample database](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks), or you can create a free [Azure SQL data warehouse](https://docs.microsoft.com/en-us/azure/sql-data-warehouse/create-data-warehouse-portal) with the AdventureWorksDW sample database to use as a datasource for Power BI Desktop, Excel, and Analysis Services tabular models. This DAX reference is not intended to provide guidance on connecting to sample data or creating data models.
 
 ## In this section  
 
