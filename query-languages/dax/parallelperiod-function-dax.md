@@ -58,8 +58,6 @@ The following sample formula creates a measure that calculates the previous year
   
 To see how this works, create a PivotTable and add the fields, CalendarYear and CalendarQuarter, to the **Row Labels** area of the PivotTable. Then add a measure, named **Previous Year Sales**, using the formula defined in the code section, to the **Values** area of the PivotTable.  
   
-> [!NOTE]  
-> The above example uses the table DateTime from the DAX sample workbook. For more information about samples, see [Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474) .  
   
 ```dax
 =CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PARALLELPERIOD(DateTime[DateKey],-1,year))  
@@ -69,5 +67,5 @@ To see how this works, create a PivotTable and add the fields, CalendarYear and 
 [Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
 [Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
 [DATEADD function &#40;DAX&#41;](dateadd-function-dax.md)  
-[Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
+ 
   

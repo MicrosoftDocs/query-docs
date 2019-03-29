@@ -55,5 +55,5 @@ The following formula returns the Internet sales for the 21 days prior to August
 [Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
 [Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
 [DATESBETWEEN function &#40;DAX&#41;](datesbetween-function-dax.md)  
-[Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
+ 
   

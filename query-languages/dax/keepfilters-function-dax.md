@@ -86,7 +86,7 @@ EVALUATE ROW(
 )  
 ```
 
-When this expression is evaluated against the sample database AdventureWorks DW Tabular 2012, the following results are obtained.  
+When this expression is evaluated against the sample database AdventureWorks DW, the following results are obtained.  
   
 |Column|Value|  
 |----------|---------|  

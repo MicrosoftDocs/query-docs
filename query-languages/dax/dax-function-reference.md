@@ -1,7 +1,7 @@
 ---
 title: "DAX function reference | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 03/13/2019
+ms.date: 03/29/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -13,7 +13,13 @@ This function reference provides detailed information including syntax, paramete
 
 > [!IMPORTANT]
 > Not all DAX functions are supported or included in earlier versions of Power BI Desktop, Analysis Services, and Power Pivot in Excel.  
-  
+
+## Examples
+
+Most reference articles contain examples showing formulas and results created in an Excel workbook with a Power Pivot for Excel data model. The data model is connected to an AdventureWorksDW sample database as a datasource. The sample workbook is no longer available. 
+
+This reference is not intended to serve as a tutorial or provide in-depth guidance on how to create formulas for data models connected to a specific datasource. 
+
 ## In this section  
 
 [New DAX functions](new-dax-functions.md) - These functions are new or are existing functions that have been significantly updated.  
@@ -28,7 +34,7 @@ This function reference provides detailed information including syntax, paramete
   
 [Logical functions &#40;DAX&#41;](logical-functions-dax.md) - These functions return information about values in an expression. For example, the TRUE function lets you know whether an expression that you are evaluating returns a TRUE value.  
   
-[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md) - Mathematical functions in DAX are similar to Excel's mathematical and trigonometric functions. However, there are some differences in the numeric data types used by DAX functions.  
+[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md) - Mathematical functions in DAX are similar to Excel's mathematical and trigonometric functions. However, t99[ are](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks) some differences in the numeric data types used by DAX functions.  
   
 [Other functions &#40;DAX&#41;](other-functions-dax.md) - These functions perform unique actions that cannot be defined by any of the categories most other functions belong to.  
   

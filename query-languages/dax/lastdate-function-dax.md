@@ -58,5 +58,5 @@ To see how this works, create a PivotTable and add the field CalendarYear to the
 [Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
 [FIRSTDATE function &#40;DAX&#41;](firstdate-function-dax.md)  
 [LASTNONBLANK function &#40;DAX&#41;](lastnonblank-function-dax.md)  
-[Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
+ 
   

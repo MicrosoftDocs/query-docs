@@ -73,5 +73,5 @@ To see how this works, create a PivotTable and add the fields, CalendarYear, Cal
 [DATESYTD function &#40;DAX&#41;](datesytd-function-dax.md)  
 [TOTALMTD function &#40;DAX&#41;](totalmtd-function-dax.md)  
 [TOTALQTD function &#40;DAX&#41;](totalqtd-function-dax.md)  
-[Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
+ 
   
