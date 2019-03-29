@@ -58,5 +58,5 @@ To see how this works, create a PivotTable and add the fields, CalendarYear and 
 [PREVIOUSMONTH function &#40;DAX&#41;](previousmonth-function-dax.md)  
 [PREVIOUSDAY function &#40;DAX&#41;](previousday-function-dax.md)  
 [PREVIOUSYEAR function &#40;DAX&#41;](previousyear-function-dax.md)  
-[Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
+ 
   

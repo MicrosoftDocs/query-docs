@@ -65,5 +65,5 @@ To see how this works, create a PivotTable and add the field, CalendarYear, to t
 [OPENINGBALANCEMONTH function &#40;DAX&#41;](openingbalancemonth-function-dax.md)  
 [Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
 [CLOSINGBALANCEYEAR function &#40;DAX&#41;](closingbalanceyear-function-dax.md)  
-[Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
+ 
   

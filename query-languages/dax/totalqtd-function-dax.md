@@ -61,5 +61,5 @@ To see how this works, create a PivotTable and add the fields, CalendarYear, Cal
 [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md)  
 [TOTALYTD function &#40;DAX&#41;](totalytd-function-dax.md)  
 [TOTALMTD function &#40;DAX&#41;](totalmtd-function-dax.md)  
-[Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
+ 
   

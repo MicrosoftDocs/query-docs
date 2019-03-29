@@ -48,5 +48,5 @@ This DAX function is not supported for use in DirectQuery mode. For more informa
 [FIRSTNONBLANK function &#40;DAX&#41;](firstnonblank-function-dax.md)  
 [Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
 [DAX function reference](dax-function-reference.md)  
-[Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
+ 
   

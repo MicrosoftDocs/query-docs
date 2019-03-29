@@ -101,6 +101,5 @@ The following table presents the available functions, a brief description of the
 |162|3|112&#124;14&#124;3&#124;162|TRUE|  
 |117|162|112&#124;14&#124;3&#124;162&#124;117|TRUE|  
   
-> [!IMPORTANT]  
-> In SQL Server 2012 Analysis Services, the Vertipaq in-memory analytics engine does not support the definition of parent-child hierarchies; however, the DAX language provides a set of functions that allows users to explore parent-child hierarchies and to use these hierarchies in formulas.  
+
   

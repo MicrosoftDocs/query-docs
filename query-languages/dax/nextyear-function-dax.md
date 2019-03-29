@@ -61,5 +61,5 @@ To see how this works, create a PivotTable and add the fields, CalendarYear and 
 [NEXTDAY function &#40;DAX&#41;](nextday-function-dax.md)  
 [NEXTQUARTER function &#40;DAX&#41;](nextquarter-function-dax.md)  
 [NEXTMONTH function &#40;DAX&#41;](nextmonth-function-dax.md)  
-[Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
+ 
   

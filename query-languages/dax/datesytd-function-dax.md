@@ -58,5 +58,5 @@ To see how this works, create a PivotTable and add the fields, CalendarYear and 
 [Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
 [DATESMTD function &#40;DAX&#41;](datesmtd-function-dax.md)  
 [DATESQTD function &#40;DAX&#41;](datesqtd-function-dax.md)  
-[Get Sample Data](https://go.microsoft.com/fwlink/?LinkId=164474)  
+ 
   
