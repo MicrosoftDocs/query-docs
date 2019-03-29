@@ -12,6 +12,12 @@
           items: 
             - name: Accessing data functions overview
               href: accessing-data-functions.md
+            - name: AccessControlEntry.ConditionToIdentities
+              href: accesscontrolentry-conditiontoidentities.md
+            - name: AccessControlKind.Allow
+              href: accesscontrolkind-allow.md
+            - name: AccessControlKind.Deny
+              href: accesscontrolkind-deny.md
             - name: Access.Database
               href: access-database.md
             - name: ActiveDirectory.Domains
@@ -96,6 +102,12 @@
               href: hdfs-files.md
             - name: Html.Table
               href: html-table.md
+            - name: Identity.From
+              href: identity.from.md
+            - name: Identity.IsMemberOf
+              href: identity-ismemberof.md
+            - name: IdentityProvider.Default
+              href: identityprovider-default.md
             - name: Informix.Database
               href: informix-database.md
             - name: Json.Document

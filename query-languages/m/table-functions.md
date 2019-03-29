@@ -32,7 +32,7 @@ manager: kfile
 |[Table.FuzzyJoin](table-fuzzyjoin.md)|Joins the rows from the two tables that fuzzy match based on the given keys.|
 |[Table.FuzzyNestedJoin](table-fuzzynestedjoin.md)|Performs a fuzzy join between tables on supplied columns and produces the join result in a new column.|
 |[Table.View](table-view.md)|Creates or extends a table with user-defined handlers for query and action operations.| 
-| [Table.ViewFunction](table-viewfunction.md) | Creates a function that can be intercepted by a handler defined on a view (via `Table.View`).| 
+|[Table.ViewFunction](table-viewfunction.md) | Creates a function that can be intercepted by a handler defined on a view (via `Table.View`).| 
   
 ### <a name="__toc360789443"></a>Conversions  
   
