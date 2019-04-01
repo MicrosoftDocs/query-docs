@@ -145,6 +145,8 @@
               href: addmissingitems-function-dax.md
             - name: ALL
               href: all-function-dax.md
+            - name: ALLCROSSFILTERED
+              href: allcrossfiltered-function-dax.md
             - name: ALLEXCEPT
               href: allexcept-function-dax.md
             - name: ALLNOBLANKROW
@@ -223,6 +225,8 @@
               href: istext-function-dax.md
             - name: LOOKUPVALUE
               href: lookupvalue-function-dax.md
+            - name: USERCULTURE
+              href: userculture-function-dax.md
             - name: USERNAME
               href: username-function-dax.md
         - name: Logical functions
