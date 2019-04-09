@@ -1,7 +1,7 @@
 ---
 title: "Information functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 04/01/2019
+ms.date: 04/08/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -35,8 +35,6 @@ DAX information functions look at the cell or row that is provided as an argumen
 [ISTEXT](istext-function-dax.md)  
   
 [LOOKUPVALUE](lookupvalue-function-dax.md)  
-
-[USERCULTURE](userculture-function-dax.md)
   
 [USERNAME](username-function-dax.md)  
 
