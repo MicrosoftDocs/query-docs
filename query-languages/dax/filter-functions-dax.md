@@ -2,7 +2,7 @@
 title: "Filter functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 12/10/2018
+ms.date: 04/08/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
