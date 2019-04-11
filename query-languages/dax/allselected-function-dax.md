@@ -1,14 +1,14 @@
 ---
 title: "ALLSELECTED function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 04/02/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# ALLSELECTEDAX)
+# ALLSELECTED
 Removes context filters from columns and rows in the current query, while retaining all other context filters or explicit filters.  
   
 The ALLSELECTED function gets the context that represents all rows and columns in the query, while keeping explicit filters and contexts other than row and column filters. This function can be used to obtain visual totals in queries.  
