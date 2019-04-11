@@ -145,8 +145,6 @@
               href: addmissingitems-function-dax.md
             - name: ALL
               href: all-function-dax.md
-            - name: ALLCROSSFILTERED
-              href: allcrossfiltered-function-dax.md
             - name: ALLEXCEPT
               href: allexcept-function-dax.md
             - name: ALLNOBLANKROW
