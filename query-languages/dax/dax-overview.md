@@ -3,6 +3,7 @@ title: "DAX overview | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 12/17/2018
 ms.reviewer: owend
+ms.topic: overview
 ms.article: reference
 author: minewiskan
 ms.author: owend
