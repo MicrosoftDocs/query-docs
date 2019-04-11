@@ -16,6 +16,8 @@ The filter and value functions in DAX are some of the most complex and powerful,
 [ADDMISSINGITEMS](addmissingitems-function-dax.md)  
   
 [ALL](all-function-dax.md)  
+
+[ALLCROSSFILTERED](allcrossfiltered-function-dax.md)
   
 [ALLEXCEPT](allexcept-function-dax.md)  
   
