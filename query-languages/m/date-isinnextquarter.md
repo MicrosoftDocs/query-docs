@@ -1,6 +1,6 @@
 ---
 title: "Date.IsInNextQuarter | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 4/16/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,21 @@ manager: kfile
 ---
 # Date.IsInNextQuarter
 
-  
 ## About  
-Returns a logical value indicating whether the given Date/DateTime/DateTimeZone occurred during the next quarter, as determined by the next date and time on the system.  
+
+Indicates whether the given datetime value <code>dateTime</code> occurs during the next quarter, as determined by the current date and time on the system. Note that this function will return false when passed a value that occurs within the current quarter. <ul> <li><code>dateTime</code>: A <code>date</code>, <code>datetime</code>, or <code>datetimezone</code> value to be evaluated.</li> </ul>  
   
 ## Syntax
 
 <pre> 
-Date.IsInNextQuarter(dateTime) as logical  
+Date.IsInNextQuarter(<b>dateTime</b> as any) as nullable logical
 </pre>  
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|Check whether this DateTime occurred during the next quarter.|  
+## Example 1
+
+Determine if the quarter after the current system time is in the next quarter.
+
+<code>Date.IsInNextQuarter(Date.AddQuarters(DateTime.FixedLocalNow(), 1))</code>
+
+<code>true</code>
   

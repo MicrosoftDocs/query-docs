@@ -51,6 +51,7 @@ Functions in this section access data and return table values. Most of these fun
 |[Cube.ReplaceDimensions](cube-replacedimensions.md)||
 |[Cube.Transform](cube-transform.md)|Applies the list cube functions, transforms, on the cube.|
 |[DB2.Database](db2-database.md)|Returns a table with data relating to the tables in the specified DB2 Database.|  
+|[Essbase.Cubes](essbase-cubes.md)|Returns the cubes in an Essbase instance grouped by Essbase server.|
 |[Excel.CurrentWorkbook](excel-currentworkbook.md)|Returns the tables in the current Excel workbook|
 |[Excel.Workbook](excel-workbook.md)|Returns a table representing sheets in the given excel workbook.|  
 |[Exchange.Contents](exchange-contents.md)|Returns a table of contents from a Microsoft Exchange account.| 

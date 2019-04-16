@@ -1,6 +1,6 @@
 ---
 title: "Date.EndOfMonth | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 4/16/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -19,7 +19,7 @@ Returns a DateTime value for the end of the month.
 
 <pre>  
 Date.EndOfMonth(dateTime as nullable datetime) as nullable datetime  
-```  
+</pre>
   
 ## Arguments  
   

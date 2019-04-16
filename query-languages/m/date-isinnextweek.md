@@ -1,6 +1,6 @@
 ---
 title: "Date.IsInNextWeek | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 4/16/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,23 @@ manager: kfile
 ---
 # Date.IsInNextWeek
 
-  
-## About  
-Returns a logical value indicating whether the given Date/DateTime/DateTimeZone occurred during the next week, as determined by the next date and time on the system.  
+## About
+
+Indicates whether the given datetime value <code>dateTime</code> occurs during the next week, as determined by the current date and time on the system. Note that this function will return false when passed a value that occurs within the current week. <ul> <li><code>dateTime</code>: A <code>date</code>, <code>datetime</code>, or <code>datetimezone</code> value to be evaluated.</li> </ul>
   
 ## Syntax
 
 <pre>
-Date.IsInNextWeek(dateTime) as logical  
+Date.IsInNextWeek(<b>dateTime</b> as any) as nullable logical
 </pre> 
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|Check whether this DateTime occurred during the next week.|  
+## Example 1
+
+Determine if the week after the current system time is in the next week.
+
+```powerquery-m
+Date.IsInNextWeek(Date.AddDays(DateTime.FixedLocalNow(), 7))
+```
+
+`true`
   
