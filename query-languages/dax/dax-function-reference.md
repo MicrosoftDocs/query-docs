@@ -1,7 +1,7 @@
 ---
 title: "DAX function reference | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 03/29/2019
+ms.date: 04/19/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -16,9 +16,9 @@ This function reference provides detailed information including syntax, paramete
 
 ## Examples
 
-Most reference articles contain examples showing formulas and results created in an Excel workbook with a Power Pivot for Excel data model. The data model is connected to an AdventureWorksDW sample database as a datasource. The sample workbook is no longer available. 
+Most reference articles contain examples showing formulas and results created in an Excel workbook with a Power Pivot in Excel data model. The data model contains data imported from the AdventureWorksDW sample database. The sample workbook is no longer available. 
 
-This reference is not intended to serve as a tutorial or provide in-depth guidance on how to create formulas for data models connected to a specific datasource. 
+This reference is not intended to serve as a tutorial or provide in-depth guidance on how to create formulas for data models containing data from a specific datasource.
 
 ## In this section  
 

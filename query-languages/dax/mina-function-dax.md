@@ -1,7 +1,7 @@
 ---
 title: "MINA function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 04/19/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,7 +9,8 @@ ms.author: owend
 manager: kfile
 ---
 # MINA
-Returns the smallest value in a column, including any logical values and numbers represented as text.  
+
+Returns the smallest value in a column.
   
 ## Syntax  
   
@@ -17,43 +18,47 @@ Returns the smallest value in a column, including any logical values and numbers
 MINA(<column>)  
 ```
   
-#### Parameters  
+#### Parameters
   
 |Term|Definition|  
 |--------|--------------|  
 |column|The column for which you want to find the minimum value.|  
   
-## Return value  
-A decimal number.  
+## Return value
+
+The smallest value.  
   
-## Remarks  
+## Remarks
+
 The MINA function takes as argument a column that contains numbers, and determines the smallest value as follows:  
   
--   If the column contains no numeric values, MINA returns 0 (zero).  
+- If the column contains no values, MINA returns 0 (zero).  
   
--   Rows in the column that evaluates to logical values, such as TRUE and FALSE are treated as 1 if TRUE and 0 (zero) if FALSE.  
+- Rows in the column that evaluates to logical values, such as TRUE and FALSE are treated as 1 if TRUE and 0 (zero) if FALSE.  
   
--   Empty cells are ignored.  
+- Empty cells are ignored.  
   
-If you do not want to include logical values and text as part of the calculation, use the MIN function instead.  
+If you want to compare text values, use the MIN function.
   
-## Example  
+## Example 1
+
 The following expression returns the minimum freight charge from the table, InternetSales.  
   
 ```dax
 =MINA(InternetSales[Freight])  
 ```
   
-## Example  
-The following expression returns the minimum value in the column, PostalCode. Because the data type of the column is text, the function does not find any numeric values, and the formula returns zero (0).  
+## Example 2
+
+The following expression returns the minimum value in the column, PostalCode. Because the data type of the column is text, the function does not find any values, and the formula returns zero (0).  
   
 ```dax
 =MINA([PostalCode])  
 ```
   
-## See also  
+## See also
+
 [MIN function &#40;DAX&#41;](min-function-dax.md)  
-[MINA function &#40;DAX&#41;](mina-function-dax.md)  
 [MINX function &#40;DAX&#41;](minx-function-dax.md)  
 [Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
   
