@@ -1,7 +1,7 @@
 ---
 title: "Math and Trig functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 04/22/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,96 +9,55 @@ ms.author: owend
 manager: kfile
 ---
 # Math and Trig functions
+
 The mathematical functions in Data Analysis Expressions (DAX) are very similar to the Excel mathematical and trigonometric functions. This section lists the mathematical functions provided by DAX.  
   
 ## In this section  
-[ABS](abs-function-dax.md)  
-  
-[ACOS](acos-function-dax.md)  
-  
-[ACOSH](acosh-function-dax.md)  
-  
-[ASIN](asin-function-dax.md)  
-  
-[ASINH](asinh-function-dax.md)  
-  
-[ATAN](atan-function-dax.md)  
-  
-[ATANH](atanh-function-dax.md)  
-  
-[CEILING](ceiling-function-dax.md)  
-  
-[COMBIN](combin-function-dax.md)  
-  
-[COMBINA](combina-function-dax.md)  
-  
-[COS](cos-function-dax.md)  
-  
-[COSH](cosh-function-dax.md)  
-  
-[CURRENCY](currency-function-dax.md)  
-  
-[DEGREES](degrees-function-dax.md)  
-  
-[DIVIDE](divide-function-dax.md)  
-  
-[EVEN](even-function-dax.md)  
-  
-[EXP](exp-function-dax.md)  
-  
-[FACT](fact-function-dax.md)  
-  
-[FLOOR](floor-function-dax.md)  
-  
-[GCD](gcd-function-dax.md)  
-  
-[INT](int-function-dax.md)  
-  
-[ISO.CEILING](iso-ceiling-function-dax.md)  
-  
-[LCM](lcm-function-dax.md)
-  
-[LN](ln-function-dax.md)  
-  
-[LOG](log-function-dax.md)  
-  
-[LOG10](log10-function-dax.md)  
-  
-[INT](int-function-dax.md)  
-  
-[MROUND](mround-function-dax.md)  
 
-[ODD](odd-function-dax.md)  
-  
-[PI](pi-function-dax.md)  
-  
-[POWER](power-function-dax.md)  
-  
-[PRODUCT](product-function-dax.md)  
-  
-[PRODUCTX](productx-function-dax.md)  
-  
-[QUOTIENT](quotient-function-dax.md)  
-  
-[RADIANS](radians-function-dax.md)  
-  
-[RAND](rand-function-dax.md)  
-  
-[RANDBETWEEN](randbetween-function-dax.md)  
-  
-[ROUND](round-function-dax.md)  
-  
-[ROUNDDOWN](rounddown-function-dax.md)  
-  
-[ROUNDUP](roundup-function-dax.md)  
-  
-[SIGN](sign-function-dax.md)  
-  
-[SQRT](sqrt-function-dax.md)  
-  
-[SUM](sum-function-dax.md)  
-  
-[SUMX](sumx-function-dax.md)  
-  
-[TRUNC](trunc-function-dax.md)  
-  
+
+|Function   |Description  |
+|---------|---------|
+|[ABS](abs-function-dax.md)       | Returns the absolute value of a number.        |
+|[ACOS](acos-function-dax.md)     |  Returns the arccosine, or inverse cosine, of a number.       |
+|[ACOSH](acosh-function-dax.md)     | Returns the inverse hyperbolic cosine of a number.        |
+|[ASIN](asin-function-dax.md)     |  Returns the arcsine, or inverse sine, of a number.       |
+|[ASINH](asinh-function-dax.md)     | Returns the inverse hyperbolic sine of a number.         |
+|[ATAN](atan-function-dax.md)     | Returns the arctangent, or inverse tangent, of a number.         |
+|[ATANH](atanh-function-dax.md)     | Returns the inverse hyperbolic tangent of a number.        |
+|[CEILING](ceiling-function-dax.md)     |  Rounds a number up, to the nearest integer or to the nearest multiple of significance.        |
+|[COMBIN](combin-function-dax.md)     | Returns the number of combinations for a given number of items.        |
+|[COMBINA](combina-function-dax.md)     |  Returns the number of combinations (with repetitions) for a given number of items.        |
+|[COS](cos-function-dax.md)     |  Returns the cosine of the given angle.        |
+|[COSH](cosh-function-dax.md)     |  Returns the hyperbolic cosine of a number.        |
+|[CURRENCY](currency-function-dax.md)     | Evaluates the argument and returns the result as currency data type.         |
+|[DEGREES](degrees-function-dax.md)     | Converts radians into degrees.        |
+|[DIVIDE](divide-function-dax.md)      | Performs division and returns alternate result or BLANK() on division by 0.        |
+|[EVEN](even-function-dax.md)       | Returns number rounded up to the nearest even integer.        |
+|[EXP](exp-function-dax.md)     |  Returns e raised to the power of a given number.       |
+|[FACT](fact-function-dax.md)     |  Returns the factorial of a number, equal to the series 1*2\*3\*...\* , ending in the given number.       |
+|[FLOOR](floor-function-dax.md)      |  Rounds a number down, toward zero, to the nearest multiple of significance.         |
+|[GCD](gcd-function-dax.md)     |  Returns the greatest common divisor of two or more integers.        |
+|[INT](int-function-dax.md)     |  Rounds a number down to the nearest integer.        |
+|[ISO.CEILING](iso-ceiling-function-dax.md)      | Rounds a number up, to the nearest integer or to the nearest multiple of significance.        |
+|[LCM](lcm-function-dax.md)     | Returns the least common multiple of integers.        |
+|[LN](ln-function-dax.md)     | Returns the natural logarithm of a number.        |
+|[LOG](log-function-dax.md)     |  Returns the logarithm of a number to the base you specify.        |
+|[LOG10](log10-function-dax.md)      |  Returns the base-10 logarithm of a number.         |
+|[MROUND](mround-function-dax.md)     |  Returns a number rounded to the desired multiple.         |
+|[ODD](odd-function-dax.md)      | Returns number rounded up to the nearest odd integer.          |
+|[PI](pi-function-dax.md)     | Returns the value of Pi, 3.14159265358979, accurate to 15 digits.        |
+|[POWER](power-function-dax.md)      |  Returns the result of a number raised to a power.        |
+|[PRODUCT](product-function-dax.md)      | Returns the product of the numbers in a column.         |
+|[PRODUCTX](productx-function-dax.md)      | Returns the product of an expression evaluated for each row in a table.         |
+|[QUOTIENT](quotient-function-dax.md)     | Performs division and returns only the integer portion of the division result.        |
+|[RADIANS](radians-function-dax.md)      |  Converts degrees to radians.       |
+|[RAND](rand-function-dax.md)     |  Returns a random number greater than or equal to 0 and less than 1, evenly distributed.       |
+|[RANDBETWEEN](randbetween-function-dax.md)     |  Returns a random number in the range between two numbers you specify.        |
+|[ROUND](round-function-dax.md)      | Rounds a number to the specified number of digits.          |
+|[ROUNDDOWN](rounddown-function-dax.md)     |  Rounds a number down, toward zero.       |
+|[ROUNDUP](roundup-function-dax.md)      |  Rounds a number up, away from 0 (zero).        |
+|[SIGN](sign-function-dax.md)      | Determines the sign of a number, the result of a calculation, or a value in a column.        |
+|[SQRT](sqrt-function-dax.md)      |  Returns the square root of a number.         |
+|[SUM](sum-function-dax.md)     |  Adds all the numbers in a column.        |
+|[SUMX](sumx-function-dax.md)     |   Returns the sum of an expression evaluated for each row in a table.       |
+|[TRUNC](trunc-function-dax.md)      | Truncates a number to an integer by removing the decimal, or fractional, part of the number.          |

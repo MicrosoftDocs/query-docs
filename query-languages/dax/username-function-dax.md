@@ -9,7 +9,7 @@ ms.author: owend
 manager: kfile
 ---
 # USERNAME
-Returns the domain name and username from the credentials given to the system at connection time  
+Returns the domain name and username from the credentials given to the system at connection time.  
   
 ## Syntax  
   
