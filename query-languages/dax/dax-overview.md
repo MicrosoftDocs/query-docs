@@ -1,7 +1,7 @@
 ---
 title: "DAX overview | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/17/2018
+ms.date: 04/19/2019
 ms.reviewer: owend
 ms.topic: overview
 ms.article: reference
@@ -479,5 +479,3 @@ When learning DAX, it's best to use the application you'll be using to create yo
 The [Definitive Guide to DAX](https://www.sqlbi.com/books/the-definitive-guide-to-dax/) by Alberto Ferrari and Marco Russo (Microsoft Press). This extensive guide provides basics to innovative high-performance techniques for beginning data modelers and BI professionals.
 
 ![DAX Studio](media/dax-overview-book.png)
-
-
