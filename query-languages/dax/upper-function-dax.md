@@ -9,7 +9,7 @@ ms.author: owend
 manager: kfile
 ---
 # UPPER
-Converts a text string to all uppercase letters  
+Converts a text string to all uppercase letters.  
   
 ## Syntax  
   

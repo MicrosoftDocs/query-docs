@@ -1,7 +1,7 @@
 ---
 title: "DISTINCTCOUNT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 04/22/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,7 +9,7 @@ ms.author: owend
 manager: kfile
 ---
 # DISTINCTCOUNT
-The DISTINCTCOUNT function counts the number of distinct values in a column.  
+Counts the number of distinct values in a column.  
   
 ## Syntax  
   
