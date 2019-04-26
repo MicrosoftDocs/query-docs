@@ -13,7 +13,7 @@ manager: kfile
 Used by expressions for calculation items to determine the measure that is in context is one of those specified in a list of measures. 
 
 > [!NOTE]
-> This measure currently applies to [SQL Server 2019 Analysis Services CTP 2.3](https://docs.microsoft.com/sql/sql-server/what-s-new-in-sql-server-ver15?view=sqlallproducts-allversions#calc-ctp24) and later only.
+> This function currently applies only to [SQL Server 2019 Analysis Services CTP 2.3](https://docs.microsoft.com/sql/sql-server/what-s-new-in-sql-server-ver15?view=sqlallproducts-allversions#calc-ctp24) and later.
   
 ## Syntax  
   
