@@ -1,7 +1,7 @@
 ---
 title: "New DAX functions | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 04/15/2019
+ms.date: 04/25/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -25,6 +25,9 @@ While functions and functionality are being updated all the time, only those upd
 |[CONTAINSSTRING](containsstring-function-dax.md)| March 2019 |
 |[CONTAINSSTRINGEXACT](containsstringexact-function-dax.md)| March 2019 |
 |[DISTINCTCOUNTNOBLANK](distinctcountnoblank-function-dax.md)  | March 2019  |
+|[ISSELECTEDSMEASURE](isselectedmeasure-function-dax.md)| March 2019|
+|[SELECTEDSMEASURE](selectedmeasure-function-dax.md)| March 2019|
+|[SELECTEDSMEASURENAME](selectedmeasurename-function-dax.md)| March 2019|
 |[APPROXIMATEDISTINCTCOUNT (Preview) ](approximate-distinctcount-function-dax.md)    |  Dec. 2018       |
 |[ISINSCOPE](isinscope-function-dax.md)     |   Nov. 2018      |
 |[NORM.DIST](norm-dist-dax.md)     |   August 2018      |
