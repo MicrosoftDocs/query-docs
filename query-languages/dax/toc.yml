@@ -361,10 +361,16 @@
               href: intersect-function-dax.md
             - name: ISEMPTY
               href: isempty-function-dax.md
+            - name: ISSELECTEDMEASURE
+              href: isselectedmeasure-function-dax.md
             - name: NATURALINNERJOIN
               href: naturalinnerjoin-function-dax.md
             - name: NATURALLEFTOUTERJOIN
               href: naturalleftouterjoin-function-dax.md
+            - name: SELECTEDSMEASURE
+              href: selectedmeasure-function-dax.md
+            - name: SELECTEDSMEASURENAME
+              href: selectedmeasurename-function-dax.md
             - name: SUMMARIZECOLUMNS
               href: summarizecolumns-function-dax.md
             - name: Table Constructor
