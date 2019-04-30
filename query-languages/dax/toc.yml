@@ -561,7 +561,7 @@
               href: fixed-function-dax.md
             - name: FORMAT
               items: 
-                - name: FORMAT function overview
+                - name: FORMAT
                   href: format-function-dax.md
                 - name: Pre-Defined Numeric Formats for FORMAT
                   href: pre-defined-numeric-formats-for-the-format-function.md
