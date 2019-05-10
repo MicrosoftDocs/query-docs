@@ -34,7 +34,7 @@
 			"breadcrumb_path": "/query-languages/breadcrumb/toc.json",
 			"extendBreadcrumb": true,
 			"contributors_to_exclude": [
-				"mikki"
+				"mikekinsman"
 			]
 		},
 		"fileMetadata": {},
