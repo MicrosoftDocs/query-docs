@@ -1,45 +1,44 @@
 {
-  "build": {
-    "content": [
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "_themes/**",
-          "_themes.pdf/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
-        ]
-      }
-    ],
-    "resource": [
-      {
-        "files": [
-          "**/*.png",
-          "**/*.jpg"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "_themes/**",
-          "_themes.pdf/**"
-        ]
-      }
-    ],
-    "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {
-      "breadcrumb_path": "/query-languages/breadcrumb/toc.json",
-      "extendBreadcrumb": true
-    },
-    "fileMetadata": {},
-    "template": [],
-    "dest": "query-languages"
-  }
+	"build": {
+		"content": [{
+			"files": [
+				"**/*.md",
+				"**/*.yml"
+			],
+			"exclude": [
+				"**/obj/**",
+				"**/includes/**",
+				"_themes/**",
+				"_themes.pdf/**",
+				"README.md",
+				"LICENSE",
+				"LICENSE-CODE",
+				"ThirdPartyNotices"
+			]
+		}],
+		"resource": [{
+			"files": [
+				"**/*.png",
+				"**/*.jpg"
+			],
+			"exclude": [
+				"**/obj/**",
+				"**/includes/**",
+				"_themes/**",
+				"_themes.pdf/**"
+			]
+		}],
+		"overwrite": [],
+		"externalReference": [],
+		"globalMetadata": {
+			"breadcrumb_path": "/query-languages/breadcrumb/toc.json",
+			"extendBreadcrumb": true,
+			"contributors_to_exclude": [
+				"mikki"
+			]
+		},
+		"fileMetadata": {},
+		"template": [],
+		"dest": "query-languages"
+	}
 }
