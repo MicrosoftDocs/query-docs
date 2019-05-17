@@ -1308,6 +1308,8 @@
               href: text-from.md
             - name: Text.FromBinary
               href: text-frombinary.md
+            - name: Text.InferNumberType
+              href: text-infernumbertype.md
             - name: Text.Insert
               href: text-insert.md
             - name: Text.Length

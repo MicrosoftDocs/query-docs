@@ -1,6 +1,6 @@
 ---
 title: "Type.RecordFields | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 5/17/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,22 +11,24 @@ manager: kfile
 ---
 # Type.RecordFields
 
-  
-## About  
-Returns a record describing the fields of a record type with each field of the returned record type having a corresponding name and a value that is a record of the form [ Type = type, Opional = logical ].  
-  
+
 ## Syntax
 
 <pre>
-Type.RecordFields(#"type" as type) as record  
+Type.RecordFields(<b>type</b> as type) as record
 </pre> 
+
+
+## About  
+Returns a record describing the fields of a record <code>type</code>. Each field of the returned record type has a corresponding name and a value, in the form of a record <code>[ Type = type, Optional = logical ]</code>.
+  
+
   
 ## Example  
-  
+
+Find the name and value of the record <code>[ A = number, optional B = any]</code>.   
+
 ```powerquery-m
-Type.RecordFields(type [ A = number, optional B = any])  
-equals [  
-A = [Type = number, Optional = false],  
-B = [Type = any, Optional = true]  
-]  
-```  
+Type.RecordFields(type [ A = number, optional B = any])
+```   
+<code>[ A = [Type = type number, Optional = false], B = [Type = type any, Optional = true] ] </code>

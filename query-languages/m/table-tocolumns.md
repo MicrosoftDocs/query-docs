@@ -1,6 +1,6 @@
 ---
 title: "Table.ToColumns | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 5/17/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,50 +11,22 @@ manager: kfile
 ---
 # Table.ToColumns
 
-  
-## About  
-Returns a list of nested lists each representing a column of values in the input table.  
-  
 ## Syntax
 
 <pre>
-Table.ToColumns(table as table) as list  
+Table.ToColumns(<b>table</b> as table) as list 
 </pre>
   
-## Arguments  
+## About  
+Creates a list of nested lists from the table, <code>table</code>. Each list item is an inner list that contains the column values.  
   
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to convert.|  
   
 ## Example  
-  
+
+Create a list of the column values from the table.
+
 ```powerquery-m 
-let  
-  
-    Source = Table.ToColumns(Table.FromRecords(  
-  
-{  
-  
-    [CustomerID = 1, Name = "Bob", Phone = "123-4567"],  
-  
-      [CustomerID = 2, Name = "Jim", Phone = "987-6543"]  
-  
-}))  
-  
-in  
-  
-    Source  
-  
-equals  
-  
-{  
-  
-    {1, 2},  
-  
-    {"Bob",  "Jim"},  
-  
-    { "123-4567", "987-6543"}  
-  
-}  
+Table.ToColumns(Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"], [CustomerID = 2, Name = "Jim", Phone = "987-6543"] })) 
 ```  
+
+<code>{{1, 2},{"Bob", "Jim"},{ "123-4567", "987-6543"}}</code>

@@ -1,6 +1,6 @@
 ---
 title: "RowExpression.Column | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 5/17/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-RowExpression.Column(columnName as text) as record  
+RowExpression.Column(<b>columnName</b> as text) as record
 </pre>
   
 ## About  
@@ -26,3 +26,5 @@ Creates an AST representing access of column "CustomerName".
 ```powerquery-m
 RowExpression.Column("CustomerName")  
 ```  
+
+<code>[ Kind = "FieldAccess", Expression = RowExpression.Row, MemberName = "CustomerName" ]</code>
