@@ -1,6 +1,6 @@
 ---
 title: "Text functions | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 5/17/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -13,11 +13,12 @@ manager: kfile
  
   
 ## Text  
-  
+
 ### <a name="__toc360788809"></a>Information  
   
 |Function|Description|  
 |------------|---------------|  
+|[Text.InferNumberType](text-infernumbertype.md)|Infers the granular number type (Int64.Type, Double.Type, etc.) of a number encoded in text|  
 |[Text.Length](text-length.md)|Returns the number of characters in a text value.|  
   
 ### <a name="__toc360788813"></a>Text Comparisons  

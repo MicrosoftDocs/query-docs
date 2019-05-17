@@ -1,6 +1,6 @@
 ---
 title: "List.Combine | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 5/17/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,24 +11,31 @@ manager: kfile
 ---
 # List.Combine
 
-  
-## About  
-Merges a list of lists into single list.  
-  
 ## Syntax
 
 <pre> 
-List.Combine(list as list) as list  
+List.Combine(<b>lists</b> as list) as list 
 </pre>
-  
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List of lists to merge.|  
-  
-## Example  
-  
+
+## About  
+Takes a list of lists, <code>lists</code>, and merges them into a single new list. 
+
+## Example 1
+
+Combine the two simple lists {1, 2} and {3, 4}.
+
 ```powerquery-m
-List.Combine({ {1, 2, 3, 4}, {5, 6, 7}, {8, 9} }) equals {1, 2, 3, 4, 5, 6, 7, 8, 9}  
+List.Combine({{1, 2}, {3, 4}})
 ```  
+
+<table> <tr><td>1</td></tr> <tr><td>2</td></tr> <tr><td>3</td></tr> <tr><td>4</td></tr> </table>
+
+## Example 2
+
+Combine the two lists, {1, 2} and {3, {4, 5}}, one of which contains a nested list.
+
+```powerquery-m
+List.Combine({{1, 2}, {3, {4, 5}}})
+```
+
+`{ 1, 2, 3, {4, 5} }`

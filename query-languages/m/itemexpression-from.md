@@ -1,6 +1,6 @@
 ---
 title: "ItemExpression.From | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 5/17/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -41,5 +41,5 @@ ItemExpression.From(each _ <> null)
 ```
 
 
-<table> <tr> <th>Kind</th> <td>Binary</td> </tr> <tr> <th>Operator</th> <td>NotEquals</td> </tr> <tr> <th>Left</th> <td>[Record]</td> </tr> <tr> <th>Right</th> <td>[Record]</td> </tr> </table>
+`[ Kind = "Binary", Operator = "NotEquals", Left = ItemExpression.Item, Right = [ Kind = "Constant", Value = null ] ]`
 
