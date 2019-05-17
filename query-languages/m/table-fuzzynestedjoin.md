@@ -1,6 +1,6 @@
 ---
 title: "Table.FuzzyNestedJoin | Microsoft Docs"
-ms.date: 3/28/2019
+ms.date: 5/17/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -25,7 +25,10 @@ Table.FuzzyNestedJoin(<b>table1</b> as table, <b>key1</b> as any, <b>table2</b> 
 
 Left inner fuzzy join of two tables based on [FirstName]
 
-<code> Table.FuzzyNestedJoin( Table.FromRecords({ [CustomerID = 1, FirstName1 = "Bob", Phone = "555-1234"], [CustomerID = 2, FirstName1 = "Robert", Phone = "555-4567"] }, type table [CustomerID = nullable number, FirstName1 = nullable text, Phone = nullable text]), {"FirstName1"}, Table.FromRecords({ [CustomerStateID = 1, FirstName2 = "Bob", State = "TX"], [CustomerStateID = 2, FirstName2 = "bOB", State = "CA"] }, type table [CustomerStateID = nullable number, FirstName2 = nullable text, State = nullable text]), {"FirstName2"}, "NestedTable", JoinKind.LeftOuter, [IgnoreCase = true, IgnoreSpace = false] ) </code>
+```powerquery-m
+Table.FuzzyNestedJoin( Table.FromRecords({ [CustomerID = 1, FirstName1 = "Bob", Phone = "555-1234"], [CustomerID = 2, FirstName1 = "Robert", Phone = "555-4567"] }, type table [CustomerID = nullable number, FirstName1 = nullable text, Phone = nullable text]), {"FirstName1"}, Table.FromRecords({ [CustomerStateID = 1, FirstName2 = "Bob", State = "TX"], [CustomerStateID = 2, FirstName2 = "bOB", State = "CA"] }, type table [CustomerStateID = nullable number, FirstName2 = nullable text, State = nullable text]), {"FirstName2"}, "NestedTable", JoinKind.LeftOuter, [IgnoreCase = true, IgnoreSpace = false] ) 
+```   
 
-<table> <tr> <th>CustomerID</th> <th>FirstName1</th> <th>Phone</th> <th>NestedTable</th> </tr> <tr> <td>1</td> <td>Bob</td> <td>555-1234</td> <td>[Table]</td> </tr> <tr> <td>2</td> <td>Robert</td> <td>555-4567</td> <td>[Table]</td> </tr> </table>
+
+<code> Table.FromRecords({ [ CustomerID = 1, FirstName1 = "Bob", Phone = "555-1234", NestedTable =Table.FromRecords({ [ CustomerStateID = 1, FirstName2 = "Bob", State = "TX" ], [ CustomerStateID = 2, FirstName2 = "bOB", State = "CA" ] }, { "CustomerStateID", "FirstName2", "State" }) ], [ CustomerID = 2, FirstName1 = "Robert", Phone = "555-4567", NestedTable =Table.FromRecords({}, {}) ] }, { "CustomerID", "FirstName1", "Phone", "NestedTable" }) </code>
   

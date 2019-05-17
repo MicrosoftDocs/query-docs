@@ -1,6 +1,6 @@
 ---
 title: "Table.Partition | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 5/17/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,29 +11,23 @@ manager: kfile
 ---
 # Table.Partition
 
-  
-## About  
-Partitions the table into a list of groups number of tables, based on the value of the column of each row and a hash function. The hash function is applied to the value of the column of a row to obtain a hash value for the row.  The hash value modulo groups determines in which of the returned tables the row will be placed.  
-  
 ## Syntax
 
 <pre>  
-Table.Partition ( table as table, column as text, groups as number, hash as function) as list  
+Table.Partition(<b>table</b> as table, <b>column</b> as text, <b>groups</b> as number, <b>hash</b> as function) as list 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to modify.|  
-|column|The column to apply hash to.|  
-|groups|The number of groups to make.|  
-|hash|The hash function to apply.|  
+## About  
+Partitions the <code>table</code> into a list of <code>groups</code> number of tables, based on the value of the <code>column</code> and a <code>hash</code> function. The <code>hash</code> function is applied to the value of the <code>column</code> row to obtain a hash value for the row. The hash value modulo <code>groups</code> determines in which of the returned tables the row will be placed. <ul> <li><code>table</code>: The table to partition.</li> <li><code>column</code>: The column to hash to determine which returned table the row is in.</li> <li><code>groups</code>: The number of tables the input table will be partitioned into.</li> <li><code>hash</code>: The function applied to obtain a hash value.</li> </ul>  
   
 ## Example  
-  
+
+Partition the table <code>({[a = 2, b = 4], [a = 6, b = 8], [a = 2, b = 4], [a = 1, b = 4]})</code> into 2 tables on column [a], using the value of the columns as the hash function.
+
 ```powerquery-m
-Table.Partition(Table.FromRecords({[A=1], [A=2], [A=3], [A=4], [A=5], [A=6]}),"A", 2, each _)  
-  
-equals Table.FromRecords({[A=2], [A=4], [A=6]})  
-```  
+Table.Partition(Table.FromRecords({[a = 2, b = 4], [a = 1, b = 4], [a = 2, b = 4], [a = 1, b = 4]}), "a", 2, each _)
+```
+
+```
+{ Table.FromRecords({[a = 2, b = 4], [a = 2, b = 4]}, { "a", "b" }), Table.FromRecords({[a = 1, b = 4], [a = 1, b = 4]}, { "a", "b" }) }
+```

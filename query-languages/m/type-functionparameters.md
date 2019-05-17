@@ -1,6 +1,6 @@
 ---
 title: "Type.FunctionParameters | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 5/17/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,28 +11,24 @@ manager: kfile
 ---
 # Type.FunctionParameters
 
-  
-## About  
-Returns a record with field values set to the name of the parameters of a function type, and their values set to their corresponding types.  
-  
+
 ## Syntax
 
 <pre>
-Type.FunctionParameters(functionType as type) as record  
+Type.FunctionParameters(<b>type</b> as type) as record
 </pre>
   
-## Arguments  
+
+## About  
+Returns a record with field values set to the name of the parameters of <code>type</code>, and their values set to their corresponding types.
+
   
-|Argument|Description|  
-|------------|---------------|  
-|functionType|The function type to check.|  
-  
-## Examples  
-  
+## Example  
+
+Find the types of the parameters to the function <code>(x as number, y as text)</code>.
+
 ```powerquery-m 
-Type.FunctionParameters(type function () as any) equals []  
-```  
-  
-```powerquery-m 
-Type.FunctionParameters(type function (x as number, y as text) as any) equals [ x = number, y = text ]  
-```  
+Type.FunctionParameters(type function (x as number, y as text) as any)
+```   
+
+<code>[x = type number, y = type text]</code>

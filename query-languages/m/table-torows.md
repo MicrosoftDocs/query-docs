@@ -1,6 +1,6 @@
 ---
 title: "Table.ToRows | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 5/17/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,50 +11,22 @@ manager: kfile
 ---
 # Table.ToRows
 
-  
-## About  
-Returns a nested list of row values from an input table.  
-  
 ## Syntax
 
 <pre>
-Table.ToRows(table as table) as list  
+Table.ToRows(<b>table</b> as table) as list 
 </pre>
   
-## Arguments  
+## About  
+Creates a list of nested lists from the table, <code>table</code>. Each list item is an inner list that contains the row values.  
   
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to check.|  
   
 ## Example  
-  
+
+Create a list of the row values from the table.
+
 ```powerquery-m
-let  
-  
-    Source = Table.ToRows(Table.FromRecords({  
-  
-    [CustomerID =1, Name ="Bob", Phone = "123-4567"],  
-  
-    [CustomerID =2, Name ="Jim", Phone = "987-6543"],  
-  
-    [CustomerID =3, Name ="Paul", Phone = "543-7890"]  
-  
-}))  
-  
-in  
-  
-    Source  
-  
-equals  
-  
-{  
-  
-    {1, "Bob", "123-4567"},  
-  
-    {2, "Jim", "987-6543"},  
-  
-    {3,  "Paul", "543-7890"}  
-  
-}  
-```  
+Table.ToRows(Table.FromRecords({[CustomerID =1, Name ="Bob", Phone = "123-4567"],[CustomerID =2, Name ="Jim", Phone = "987-6543"],[CustomerID =3, Name ="Paul", Phone = "543-7890"]}))
+```
+
+<code>{{1, "Bob", "123-4567"},{2, "Jim", "987-6543"},{3, "Paul", "543-7890"}}</code>
