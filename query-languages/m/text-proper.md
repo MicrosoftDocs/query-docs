@@ -1,6 +1,6 @@
 ---
 title: "Text.Proper | Microsoft Docs"
-ms.date: 05/18/2018
+ms.date: 05/17/2019
 ms.service: powerquery
 
 ms.reviewer: owend
