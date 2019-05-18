@@ -1,7 +1,7 @@
 ---
 title: "ALLSELECTED function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 04/02/2019
+ms.date: 05/18/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -16,7 +16,7 @@ The ALLSELECTED function gets the context that represents all rows and columns i
 ## Syntax  
   
 ```dax
-ALLSELECTED([<tableName> | <columnName>])  
+ALLSELECTED([<tableName> | <columnName>[, <columnName>[, <columnName>[,…]]]] )   
 ```
   
 #### Parameters  
@@ -31,7 +31,7 @@ The context of the query without any column and row filters.
   
 ## Remarks  
   
--   This function takes one or no arguments. If there is one argument, the argument is either *tableName* or *columnName*.  
+-  If there is one argument, the argument is either *tableName* or *columnName*. If there is more than one argument, they must be columns from the same table.  
   
 -   This function is different from ALL() because it retains all filters explicitly set within the query, and it retains all context filters other than row and column filters.  
   
