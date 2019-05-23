@@ -1,7 +1,7 @@
 ---
 title: "VAR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 05/24/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -53,22 +53,30 @@ Sum of SalesAmount = SUM(SalesTable[SalesAmount])
 A second measure calculates the sales amount for the previous year:  
   
 ```dax
-SalesAmount PreviousYear=CALCULATE([Sum of SalesAmount], SAMEPERIODLASTYEAR(Calendar[Date]))  
+SalesAmount PreviousYear = 
+    CALCULATE([Sum of SalesAmount], 
+    SAMEPERIODLASTYEAR(Calendar[Date])
+    )  
 ```
 
 You can then create a third measure that combines the other two measures to calculate a growth percentage. Notice the Sum of SalesAmount measure is used in two places; first to determine if there is a sale, then again to calculate a percentage.  
   
 ```dax
-Sum of SalesAmount YoY%:=IF([Sum of SalesAmount] ,  
-DIVIDE(([Sum of SalesAmount] – [SalesAmount PreviousYear]), [Sum of SalesAmount]))  
+Sum of SalesAmount YoY%: = 
+    IF([Sum of SalesAmount] ,  
+        DIVIDE(([Sum of SalesAmount] – [SalesAmount PreviousYear]), [Sum of SalesAmount])
+    )  
 ```
 
 By using a variable, you can create a single measure that calculates the same result:  
   
 ```dax
-YoY% = var Sales = SUM(SalesTable[SalesAmount])  
-var SalesLastYear=CALCULATE(Sales, SAMEPERIODLASTYEAR(‘Calendar'[Date]))  
-return if(Sales, DIVIDE(Sales – SalesLastYear, Sales))  
+YoY% = VAR Sales = SUM(SalesTable[SalesAmount])  
+
+VAR SalesLastYear =
+    CALCULATE ( SUM ( SalesTable[SalesAmount] ), SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
+
+    return if(Sales, DIVIDE(Sales – SalesLastYear, Sales))  
 ```
 
 By using a variable, you can get the same outcome, but in a more readable way. In addition, the result of the expression is stored in the variable upon declaration. It doesn’t have to be recalculated each time it is used, as it would without using a variable. This can improve the measure’s performance.  
