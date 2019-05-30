@@ -1,7 +1,7 @@
 ---
 title: "Other functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 04/225/2019
+ms.date: 05/31/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -26,6 +26,7 @@ These functions perform unique actions that cannot be defined by any of the cate
 |[NATURALINNERJOIN](naturalinnerjoin-function-dax.md)     |  Performs an inner join of a table with another table.        |
 |[NATURALLEFTOUTERJOIN](naturalleftouterjoin-function-dax.md)     |  Performs an inner join of a table with another table.       |
 |[SELECTEDSMEASURE](selectedmeasure-function-dax.md) |   Used by expressions for calculation items to reference the measure that is in context.   |
+|[SELECTEDSMEASUREFORMATSTRING](selectedmeasureformatstring-function-dax.md) |   Used by expressions for calculation items to retrieve the format string of the measure that is in context.   |
 |[SELECTEDSMEASURENAME](selectedmeasurename-function-dax.md) |   Used by expressions for calculation items to determine the measure that is in context by name.   |
 |[SUMMARIZECOLUMNS](summarizecolumns-function-dax.md)      |  Returns a summary table over a set of groups.        |
 |[Table Constructor &#40;DAX&#41;](table-Constructor.md)    |  Returns a table of one or more columns.       |

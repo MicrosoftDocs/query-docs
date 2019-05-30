@@ -369,6 +369,8 @@
               href: naturalleftouterjoin-function-dax.md
             - name: SELECTEDSMEASURE
               href: selectedmeasure-function-dax.md
+            - name: SELECTEDMEASUREFORMATSTRING
+              href: selectedmeasureformatstring-function-dax.md
             - name: SELECTEDSMEASURENAME
               href: selectedmeasurename-function-dax.md
             - name: SUMMARIZECOLUMNS
