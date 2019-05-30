@@ -21,7 +21,7 @@ While functions and functionality are being updated all the time, only those upd
 
 |Function  |Month  |
 |---------|---------|
-|[SELECTEDSMEASUREFORMATSTRING](selectedmeasureformatstring-function-dax.md) |  May 2019 |
+|[SELECTEDMEASUREFORMATSTRING](selectedmeasureformatstring-function-dax.md) |  May 2019 |
 |[ALLCROSSFILTERED](allcrossfiltered-function-dax.md)| April 2019 |
 |[CONTAINSSTRING](containsstring-function-dax.md)| March 2019 |
 |[CONTAINSSTRINGEXACT](containsstringexact-function-dax.md)| March 2019 |
