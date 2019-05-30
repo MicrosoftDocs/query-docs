@@ -1,7 +1,7 @@
 ---
 title: "New DAX functions | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 04/25/2019
+ms.date: 5/31/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -21,6 +21,7 @@ While functions and functionality are being updated all the time, only those upd
 
 |Function  |Month  |
 |---------|---------|
+|[SELECTEDMEASUREFORMATSTRING](selectedmeasureformatstring-function-dax.md) |  May 2019 |
 |[ALLCROSSFILTERED](allcrossfiltered-function-dax.md)| April 2019 |
 |[CONTAINSSTRING](containsstring-function-dax.md)| March 2019 |
 |[CONTAINSSTRINGEXACT](containsstringexact-function-dax.md)| March 2019 |
@@ -39,7 +40,6 @@ While functions and functionality are being updated all the time, only those upd
 |[T.DIST.RT](t-dist-rt-dax.md)     |    August 2018     |
 |[T.INV](t-inv-dax.md)     |   August 2018      |
 |[T.INV.2T](t-inv-2t-dax.md)     |    August 2018     |
-|[DISTINCT (table)](distinct-table-function-dax.md)     |   April 2018      |
 
 ## Updated functions
 
