@@ -1,7 +1,7 @@
 ---
 title: "DAX operators | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 06/04/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -33,13 +33,16 @@ You can compare two values with the following operators. When two values are com
   
 |Comparison operator|Meaning|Example|  
 |-----------------------|-----------|-----------|  
-|=|Equal to|[Region] = "USA"|  
+|=|Equal to|[Region] = "USA"| 
+|==|Strict equal to|[Region] == "USA"|  
 |&gt;|Greater than|[Sales Date] &gt; "Jan 2009"|  
 |&lt;|Less than|[Sales Date] &lt; "Jan 1 2009"|  
 |&gt;=|Greater than or equal to|[Amount] &gt;= 20000|  
 |&lt;=|Less than or equal to|[Amount] &lt;= 100|  
-|&lt;&gt;|Not equal to|[Region] &lt;&gt; "USA"|  
-  
+|&lt;&gt;|Not equal to|[Region] &lt;&gt; "USA"| 
+
+All comparison operators except == treat BLANK as equal to number 0, empty string "", DATE(1899, 12, 30), or FALSE. As a result, [Column] = 0 will be true when the value of [Column] is either 0 or BLANK. In contrast, [Column] == 0 is true only when the value of [Column] is 0.
+
 ### Text concatenation operator  
 Use the ampersand (&amp;) to join, or concatenate, two or more text strings to produce a single piece of text.  
   
@@ -75,7 +78,7 @@ If you combine several operators in a single formula, the operations are ordered
 |!|NOT (unary operator)|  
 |+ and –|Addition and subtraction|  
 |&amp;|Connects two strings of text (concatenation)|  
-|=&lt; &gt;&lt;=&gt;=&lt;&gt;|Comparison|  
+|=,==,<,>,<=,>=,<>|Comparison|  
   
 ### Using parentheses to control calculation order  
 To change the order of evaluation, you should enclose in parentheses that part of the formula that must be calculated first. For example, the following formula produces 11 because multiplication is calculated before addition. The formula multiplies 2 by 3, and then adds 5 to the result.  
