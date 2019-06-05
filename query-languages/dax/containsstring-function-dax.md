@@ -1,7 +1,7 @@
 ---
 title: "CONTAINSSTRING function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 03/13/2019
+ms.date: 06/05/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -54,7 +54,7 @@ Returns
 
 |[Case 1]  |[Case 2]  |[Case 3]  |[Case 4]  |
 |---------|---------|---------|---------|
-|TRUE     | TRUE         | TRUE         |TRUE          |
+|TRUE     | TRUE         | TRUE         |FALSE          |
 
 
 
