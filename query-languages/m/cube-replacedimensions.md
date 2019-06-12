@@ -1,6 +1,6 @@
 ---
 title: "Cube.ReplaceDimensions | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 6/13/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-Cube.ReplaceDimensions(**cube** as table, **dimensions** as table) as table
+Cube.ReplaceDimensions(<b>cube</b> as table, <b>dimensions</b> as table) as table
 </pre>
 
 ## About

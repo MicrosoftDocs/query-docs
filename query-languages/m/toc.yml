@@ -36,6 +36,10 @@
               href: azurestorage-blobcontents.md
             - name: AzureStorage.Blobs
               href: azurestorage-blobs.md
+            - name: AzureStorage.DataLake
+              href: azurestorage-datalake.md
+            - name: AzureStorage.DataLakeContents
+              href: azurestorage-datalakecontents.md
             - name: AzureStorage.Tables
               href: azurestorage-tables.md
             - name: Csv.Document

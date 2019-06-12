@@ -1,6 +1,6 @@
 ---
 title: "Date functions | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 5/13/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -22,7 +22,7 @@ manager: kfile
 |[Date.AddWeeks](date-addweeks.md)|Returns a Date/DateTime/DateTimeZone value incremented by the number of weeks provided. Each week is defined as a duration of seven days. It also handles incrementing the month and year potions of the value as appropriate.|  
 |[Date.AddYears](date-addyears.md)|Returns a DateTime value with the year portion incremented by n years.|  
 |[Date.Day](date-day.md)|Returns the day for a DateTime value.|  
-|[Date.DayOfWeek](date-dayofweek.md)|Returns a number between 0 and 6 representing the day of the week from a DateTime value.| 
+|[Date.DayOfWeek](date-dayofweek.md)|Returns a number (from 0 to 6) indicating the day of the week of the provided value.| 
 |[Date.DayOfWeekName](date-dayofweekname.md)|Returns the day of the week name.|  
 |[Date.DayOfYear](date-dayofyear.md)|Returns a number that represents the day of the year from a DateTime value.|  
 |[Date.DaysInMonth](date-daysinmonth.md)|Returns the number of days in the month from a DateTime value.|  

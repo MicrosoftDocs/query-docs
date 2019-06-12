@@ -1,6 +1,6 @@
 ---
 title: "Accessing data functions | Microsoft Docs"
-ms.date: 3/28/2019
+ms.date: 6/13/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -30,7 +30,8 @@ Functions in this section access data and return table values. Most of these fun
 |[AzureStorage.BlobContents](azurestorage-blobcontents.md) | Returns the content of the specified blob from an Azure storage vault. |  
 |[AzureStorage.Blobs](azurestorage-blobs.md)|Returns a navigational table containing all containers found in the Azure Storage account. Each row has the container name and a link to the container blobs.|  
 |[AzureStorage.Tables](azurestorage-tables.md)|Returns a navigational table containing a row for each table found at the account URL from an Azure storage vault. Each row contains a link to the azure table.|  
-|[AzureStorage.DataLakeContents](azurestorage-datalakecontents.md)|Returns the content of the file at the URL from an Azure Data Lake Storage filesystem.|
+|[AzureStorage.DataLake](azurestorage-datalake.md)|Returns a navigational table containing the documents found in the specified container and its subfolders from Azure Data Lake Storage.|
+|[AzureStorage.DataLakeContents](azurestorage-datalakecontents.md)|Returns the content of the specified file from an Azure Data Lake Storage filesystem.|
 |[Csv.Document](csv-document.md)|Returns the contents of a CSV document as a table using the specified encoding.|
 |[CsvStyle.QuoteAfterDelimiter](csvstyle-quoteafterdelimiter.md)|Quotes in a field are only significant immediately following the delimiter.| 
 |[CsvStyle.QuoteAlways](csvstyle-quotealways.md)|Quotes in a field are always significant regardless of where they appear.
