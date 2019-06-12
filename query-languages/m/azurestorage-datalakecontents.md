@@ -1,6 +1,6 @@
 ---
 title: "AzureStorage.DataLakeContents | Microsoft Docs"
-ms.date: 4/16/2019
+ms.date: 6/13/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -18,7 +18,7 @@ AzureStorage.DataLakeContents(<b>url</b> as text, optional <b>options</b> as nul
 </pre>
 
 ## About  
-Returns a navigational table containing the documents found in the specified container at the account URL, `url`, from an Azure Data Lake Storage filesystem.
+Returns the content of the file at the URL, `url`, from an Azure Data Lake Storage filesystem.
   
   
   

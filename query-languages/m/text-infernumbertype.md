@@ -1,6 +1,6 @@
 ---
 title: "Text.InferNumberType | Microsoft Docs"
-ms.date: 5/19/2019
+ms.date: 6/13/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -18,5 +18,5 @@ Text.InferNumberType(<b>text</b> as text, optional <b>culture</b> as nullable te
 </pre>
   
 ## About  
-Inters granular number type (Int64.Type, Double.Type, etc.) of, <code>text</code> using <code>culture</code>. Exception is raised if <code>text</code> is not a number  
+Inters granular number type (Int64.Type, Double.Type, etc.) of <code>text</code> using <code>culture</code>. Exception is raised if <code>text</code> is not a number  
   
