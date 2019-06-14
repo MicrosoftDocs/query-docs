@@ -1,6 +1,6 @@
 ---
 title: "Record.TransformFields | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 6/15/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,69 +11,32 @@ manager: kfile
 ---
 # Record.TransformFields
 
-  
-## About  
-Transforms fields by applying **transformOperations**. For more more information about  values supported by **transformOperations**, see Parameter Values.  
-  
+## About
+
+Returns a record after applying transformations specified in list <code>transformOperations</code> to <code>record</code>. One or more fields may be transformed at a given time. <div>In the case of a single field being transformed, <code>transformOperations</code> is expected to be a list with two items. The first item in <code>transformOperations</code> specifies a field name, and the second item in <code>transformOperations</code> specifies the function to be used for transformation. For example, <code>{"Quantity", Number.FromText}</code></div> <div>In the case of a multiple fields being transformed, <code>transformOperations</code> is expected to be a list of lists, where each inner list is a pair of field name and transformation operation. For example, <code>{{"Quantity",Number.FromText},{"UnitPrice", Number.FromText}}</code></div>
+
 ## Syntax
 
 <pre>
-Record.TransformFields(record as record,  transformOperations as list,  optional missingField as nullable number) as record  
+Record.TransformFields(<b>record</b> as record, <b>transformOperations</b> as list, optional <b>missingField</b> as nullable number) as record 
 </pre>
-  
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|record|The Record to modify.|  
-|transformOperations|The list of transformations to make.|  
-|optional missingField|A **MissingField** enum value to handle missing fields. The default value is MissingField.Error.|  
-  
-### MissingField enum  
-  
--   `MissingField.Error = 0;`  
-  
--   `MissingField.Ignore = 1;`  
-  
--   `MissingField.UseNull = 2;`  
-  
-## Examples  
-  
-```powerquery-m
-Record.TransformFields([OrderID = 1, CustomerID= 1, Item = "Fishing rod", Price = "100.0"], {"Price", Number.FromText})  
-```  
 
-```powerquery-m 
-equals [OrderID =1, CustomerID  =1, Item = "Fishing rod", Price=100 ]  
-```  
-  
-|||  
-|-|-|  
-|OrderID|1|  
-|CustomerID|1|  
-|Item|Fishing rod|  
-|Price|100|  
-  
+## Example 1
+Convert "Price" field to number.
+
 ```powerquery-m
-Record.TransformFields(  
-```  
-  
+Record.TransformFields([OrderID = 1, CustomerID= 1, Item = "Fishing rod", Price = "100.0"], {"Price", Number.FromText})
+```
+
+<table> <tr> <th>OrderID</th> <td>1</td> </tr> <tr> <th>CustomerID</th> <td>1</td> </tr> <tr> <th>Item</th> <td>Fishing rod</td> </tr> <tr> <th>Price</th> <td>100</td> </tr> </table>
+
+## Example 2
+
+Convert "OrderID" and "Price" fields to numbers.
+
 ```powerquery-m
-[OrderID ="1", CustomerID= 1, Item = "Fishing rod", Price = "100.0"],  
-```  
-  
-```powerquery-m
-{{"OrderID", Number.FromText}, {"Price",Number.FromText}})  
-```  
-  
-```powerquery-m
-equals [OrderID =1, CustomerID  =1, Item = "Fishing rod", Price=100 ]  
-```  
-  
-|||  
-|-|-|  
-|OrderID|1|  
-|CustomerID|1|  
-|Item|Fishing rod|  
-|Price|100|  
+Record.TransformFields( [OrderID ="1", CustomerID= 1, Item = "Fishing rod", Price = "100.0"], {{"OrderID", Number.FromText}, {"Price",Number.FromText}})
+```
+
+<table> <tr> <th>OrderID</th> <td>1</td> </tr> <tr> <th>CustomerID</th> <td>1</td> </tr> <tr> <th>Item</th> <td>Fishing rod</td> </tr> <tr> <th>Price</th> <td>100</td> </tr> </table>
   
