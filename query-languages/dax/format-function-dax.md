@@ -1,7 +1,7 @@
 ---
 title: "FORMAT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 06/17/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -37,8 +37,8 @@ For information on how to use the **format_string** parameter, see the appropria
   
 |To Format|Follow these instructions|  
 |-------------|-----------------------------|  
-|Numbers|Use [predefined numeric formats](https://msdn.microsoft.com/en-us/78e0ac9e-9e3a-45dd-991f-599a206b8c65) or create [user-defined numeric formats](https://msdn.microsoft.com/en-us/0432d01e-d0b5-49a0-b93e-fb636e0a8274).|  
-|Dates and times|Use [predefined date/time formats](https://msdn.microsoft.com/en-us/b37f6d2f-1f73-4daa-8e64-df475a3622b8) or create [user-defined date/time formats](https://msdn.microsoft.com/en-us/4dd49f41-05fe-474d-8678-31fe5f86a137).|  
+|Numbers|Use predefined numeric formats or create user-defined numeric formats.|  
+|Dates and times|Use predefined date/time formats or create user-defined date/time formats.|  
   
 All predefined formatting strings use the current user locale when formatting the result.  
   
