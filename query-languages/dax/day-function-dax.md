@@ -1,7 +1,7 @@
 ---
 title: "DAY function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 06/26/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -33,35 +33,26 @@ Values returned by the YEAR, MONTH and DAY functions will be Gregorian values re
   
 When the date argument is a text representation of the date, the day function uses the locale and date/time settings of the client computer to understand the text value in order to perform the conversion. If the current date/time settings represent dates in the format of Month/Day/Year, then the string, "1/8/2009", is interpreted as a **datetime** value equivalent to January 8th of 2009, and the function returns 8. However, if the current date/time settings represent dates in the format of Day/Month/Year, the same string would be interpreted as a **datetime** value equivalent to August 1st of 2009, and the function returns 1.  
   
-## Example: Getting the Day from a Date Column  
-  
-### Description  
+## Example: Getting the day from a date column  
+
 The following formula returns the day from the date in the column, [Birthdate].  
-  
-### Code  
   
 ```dax
 =DAY([Birthdate])  
 ```
   
-## Example: Getting the Day from a String Date  
-  
-### Description  
+## Example - Getting the day from a string date  
+
 The following formulas return the day, 4, using dates that have been supplied as strings in an accepted text format.  
-  
-### Code  
   
 ```dax
 =DAY("3-4-1007")  
 =DAY("March 4 2007")  
 ```
   
-## Example: Using a Day Value as a Condition  
-  
-### Description  
+## Example - Using a day value as a condition  
+
 The following expression returns the day that each sales order was placed, and flags the row as a promotional sale item if the order was placed on the 10th of the month.  
-  
-### Code  
   
 ```dax
 =IF( DAY([SalesDate])=10,"promotion","")  

@@ -1,7 +1,7 @@
 ---
 title: "DATEADD function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 06/26/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -51,13 +51,11 @@ If the dates in the current context do not form a contiguous interval, the funct
   
 This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
-## Example: Shifting a Set of Dates  
+## Example - Shifting a set of dates  
   
 ### Description  
 The following formula calculates dates that are one year before the dates in the current context.  
-  
-### Code  
-  
+
 ```dax
 =DATEADD(DateTime[DateKey],-1,year)  
 ```

@@ -1,7 +1,7 @@
 ---
 title: "ENDOFYEAR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 06/26/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -46,9 +46,7 @@ This DAX function is not supported for use in DirectQuery mode. For more informa
   
 ## Example  
 The following sample formula creates a measure that returns the end of the fiscal year that ends on June 30, for the current context.  
-  
-To see how this works, create a PivotTable and add the field CalendarYear to the **Row Labels** area of the PivotTable. Then add a measure, named **EndOfFiscalYear**, using the formula defined in the code section, to the **Values** area of the PivotTable.  
-  
+
 ```dax
 =ENDOFYEAR(DateTime[DateKey],"06/30/2004")  
 ```

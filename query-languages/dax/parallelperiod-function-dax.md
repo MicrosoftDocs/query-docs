@@ -1,7 +1,7 @@
 ---
 title: "PARALLELPERIOD function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 06/26/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -55,9 +55,6 @@ This DAX function is not supported for use in DirectQuery mode. For more informa
   
 ## Example  
 The following sample formula creates a measure that calculates the previous year sales for Internet sales.  
-  
-To see how this works, create a PivotTable and add the fields, CalendarYear and CalendarQuarter, to the **Row Labels** area of the PivotTable. Then add a measure, named **Previous Year Sales**, using the formula defined in the code section, to the **Values** area of the PivotTable.  
-  
   
 ```dax
 =CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PARALLELPERIOD(DateTime[DateKey],-1,year))  
