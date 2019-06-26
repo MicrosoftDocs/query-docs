@@ -1,7 +1,7 @@
 ---
 title: "ALLNOBLANKROW function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 06/26/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -71,7 +71,21 @@ The rows that get added to this blank label group are either values that do not 
   
 Step 3: Count rows using ALL and ALLNOBLANK 
   
-Add the following two measures to the datetime table, to count the table rows: **Countrows ALLNOBLANK of datetime**, **Countrows ALL of datetime**. The formulas that you can use to define these measures are given in the code section following.  
+Add the following two measures to the datetime table, to count the table rows: **Countrows ALLNOBLANK of datetime**, **Countrows ALL of datetime**. The formulas that you can use to define these measures are:  
+
+```dax
+// Countrows ALLNOBLANK of datetime  
+= COUNTROWS(ALLNOBLANKROW('DateTime'))  
+  
+// Countrows ALL of datetime  
+= COUNTROWS(ALL('DateTime'))  
+  
+// Countrows ALLNOBLANKROW of ResellerSales_USD  
+=COUNTROWS(ALLNOBLANKROW('ResellerSales_USD'))  
+  
+// Countrows ALL of ResellerSales_USD  
+=COUNTROWS(ALL('ResellerSales_USD'))  
+```
   
 On a blank PivotTable add datetime.[Calendar Year] column to the row labels, and then add the newly created measures.  The results should look like the following table:  
   
@@ -103,19 +117,7 @@ Create a new PivotTable, and drag the column, datetime.[Calendar Year], to the R
   
 Now the two measures have the same results. That is because the ALLNOBLANKROW function does not count truly blank rows in a table, but only handles the blank row that is a special case generated in a parent table, when one or more of the child tables in the relationship contain non-matching values or blank values.  
   
-```dax
-// Countrows ALLNOBLANK of datetime  
-= COUNTROWS(ALLNOBLANKROW('DateTime'))  
-  
-// Countrows ALL of datetime  
-= COUNTROWS(ALL('DateTime'))  
-  
-// Countrows ALLNOBLANKROW of ResellerSales_USD  
-=COUNTROWS(ALLNOBLANKROW('ResellerSales_USD'))  
-  
-// Countrows ALL of ResellerSales_USD  
-=COUNTROWS(ALL('ResellerSales_USD'))  
-```
+
   
 ## See also  
 [Filter functions &#40;DAX&#41;](filter-functions-dax.md)  

@@ -1,7 +1,7 @@
 ---
 title: "DATESQTD function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 06/26/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -42,9 +42,7 @@ The **dates** argument can be any of the following:
 This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
 ## Example  
-The following sample formula creates a measure that calculates the 'Quarterly Running Total' of the internet sales.  
-  
-To see how this works, create a PivotTable and add the fields, CalendarYear, CalendarQuarter and MonthNumberOfYear to the **Row Labels** area of the PivotTable. Then add a measure, named **Quarterly Running Total**, using the formula defined in the code section, to the **Values** area of the PivotTable.  
+The following sample formula creates a measure that calculates the 'Quarterly Running Total' of Internet Sales.  
   
 ```dax
 =CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESQTD(DateTime[DateKey]))  

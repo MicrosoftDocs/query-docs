@@ -1,7 +1,7 @@
 ---
 title: "CALCULATETABLE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 06/26/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -45,10 +45,18 @@ The CALCULATETABLE function changes the context in which the data is filtered, a
 This function is a synonym for the RELATEDTABLE function.  
   
 ## Example  
+
 The following example uses the CALCULATETABLE function to get the sum of Internet sales for 2006. This value is later used to calculate the ratio of Internet sales compared to all sales for the year 2006.  
   
-The following table shows the results from the following formula.  
-  
+The following formula:  
+
+```dax
+=SUMX( CALCULATETABLE('InternetSales_USD', 'DateTime'[CalendarYear]=2006)  
+     , [SalesAmount_USD])  
+```
+
+Results in the following table:
+
 |Row Labels|Internet SalesAmount_USD|CalculateTable 2006 Internet Sales|Internet Sales to 2006 ratio|  
 |--------------|-----------------------------|--------------------------------------|--------------------------------|  
 |2005|$2,627,031.40|$5,681,440.58|0.46|  
@@ -57,10 +65,7 @@ The following table shows the results from the following formula.
 |2008|$9,041,288.80|$5,681,440.58|1.59|  
 |Grand Total|$26,054,827.45|$5,681,440.58|4.59|  
   
-```dax
-=SUMX( CALCULATETABLE('InternetSales_USD', 'DateTime'[CalendarYear]=2006)  
-     , [SalesAmount_USD])  
-```
+
   
 ## See also  
 [RELATEDTABLE function &#40;DAX&#41;](relatedtable-function-dax.md)  

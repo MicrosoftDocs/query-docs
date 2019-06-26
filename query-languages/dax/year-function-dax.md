@@ -1,7 +1,7 @@
 ---
 title: "YEAR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 06/26/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -42,12 +42,10 @@ The following example returns 2007.
 =YEAR("March 2007")  
 ```  
   
-## Example: Date as Result of Expression  
+## Example - Date as result of expression  
   
 ### Description  
 The following example returns the year for today's date.  
-  
-### Code  
   
 ```dax
 =YEAR(TODAY())  

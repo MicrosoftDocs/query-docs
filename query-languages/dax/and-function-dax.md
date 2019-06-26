@@ -1,7 +1,7 @@
 ---
 title: "AND function (DAX) | Microsoft Docs"
 ms.service: powerbi
-ms.date: 12/10/2018
+ms.date: 06/26/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -40,6 +40,19 @@ Because both conditions, passed as arguments, to the AND function are true, the 
   
 ## Example  
 The following sample uses the AND function with nested formulas to compare two sets of calculations at the same time. For each product category, the formula determines if the current year sales and previous year sales of the Internet channel are larger than the Reseller channel for the same periods. If both conditions are true, for each category the formula returns the value, "Internet hit".  
+
+```dax
+= IF( AND(  SUM( 'InternetSales_USD'[SalesAmount_USD])  
+           >SUM('ResellerSales_USD'[SalesAmount_USD])  
+          , CALCULATE(SUM('InternetSales_USD'[SalesAmount_USD]), PREVIOUSYEAR('DateTime'[DateKey] ))   
+           >CALCULATE(SUM('ResellerSales_USD'[SalesAmount_USD]), PREVIOUSYEAR('DateTime'[DateKey] ))  
+          )  
+     , "Internet Hit"  
+     , ""  
+     )  
+```
+
+Returns
   
 |AND function|Column Labels||||||  
 |----------------|-----------------|----|----|----|----|----|  
@@ -84,16 +97,7 @@ The following sample uses the AND function with nested formulas to compare two s
 ||||||||  
 |Grand Total|||||||  
   
-```dax
-= IF( AND(  SUM( 'InternetSales_USD'[SalesAmount_USD])  
-           >SUM('ResellerSales_USD'[SalesAmount_USD])  
-          , CALCULATE(SUM('InternetSales_USD'[SalesAmount_USD]), PREVIOUSYEAR('DateTime'[DateKey] ))   
-           >CALCULATE(SUM('ResellerSales_USD'[SalesAmount_USD]), PREVIOUSYEAR('DateTime'[DateKey] ))  
-          )  
-     , "Internet Hit"  
-     , ""  
-     )  
-```
+
   
 ## See also  
 [Logical functions &#40;DAX&#41;](logical-functions-dax.md)  

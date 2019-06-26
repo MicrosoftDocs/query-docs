@@ -1,7 +1,7 @@
 ---
 title: "DATESBETWEEN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 06/26/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -42,9 +42,7 @@ The dates used as the **start_date** and **end_date** are inclusive: that is, if
 This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
   
 ## Example  
-The following sample formula creates a measure that calculates the 'Summer 2007 sales' for the Internet sales.  
-  
-To see how this works, create a PivotTable and add the field, CalendarYear, to the **Row Labels** area of the PivotTable. Then add a measure, named **Summer 2007 Sales**, using the formula as defined in the code section, to the **Values** area of the PivotTable.  
+The following sample formula creates a measure that calculates the 'Summer 2007 sales' for Internet Sales.  
   
 ```dax
 =CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESBETWEEN(DateTime[DateKey],  
