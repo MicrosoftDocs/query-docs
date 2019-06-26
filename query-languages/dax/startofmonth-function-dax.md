@@ -1,7 +1,7 @@
 ---
 title: "STARTOFMONTH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 06/26/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -43,8 +43,6 @@ This DAX function is not supported for use in DirectQuery mode. For more informa
   
 ## Example  
 The following sample formula creates a measure that returns the start of the month, for the current context.  
-  
-To see how this works, create a PivotTable and add the fields CalendarYear and MonthNumberOfYear to the **Row Labels** area of the PivotTable. Then add a measure, named **StartOfMonth**, using the formula defined in the code section, to the **Values** area of the PivotTable.  
   
 ```dax
 =STARTOFMONTH(DateTime[DateKey])  

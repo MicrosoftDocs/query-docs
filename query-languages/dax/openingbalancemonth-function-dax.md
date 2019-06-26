@@ -1,7 +1,7 @@
 ---
 title: "OPENINGBALANCEMONTH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 06/26/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -48,10 +48,6 @@ The **dates** argument can be any of the following:
   
 ## Example  
 The following sample formula creates a measure that calculates the 'Month Start Inventory Value' of the product inventory.  
-  
-To see how this works, create a PivotTable and add the fields, CalendarYear, MonthNumberOfYear and DayNumberOfMonth, to the **Row Labels** area of the PivotTable. Then add a measure, named **Month Start Inventory Value**, using the formula defined in the code section, to the **Values** area of the PivotTable.  
-  
-## Code  
   
 ```dax
 =OPENINGBALANCEMONTH(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])  

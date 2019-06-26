@@ -1,7 +1,7 @@
 ---
 title: "ALL function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 03/13/2019
+ms.date: 06/26/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -32,8 +32,6 @@ The table or column with filters removed.
 ## Remarks  
 This function is not used by itself, but serves as an intermediate function that can be used to change the set of results over which some other calculation is performed.  
   
-&lt;**Topic Status:** Some information in this topic is pre\-release and subject to change in future releases. Pre\-release information describes new features or changes to existing features in Microsoft SQL Server 2016.In cases where [Column] is marked as Date column by using Mark as Date table  
-  
 As described in the following table, you can use the ALL and ALLEXCEPT functions in different scenarios.  
   
 |Function and usage|Description|  
@@ -44,7 +42,7 @@ As described in the following table, you can use the ALL and ALLEXCEPT functions
 |ALLEXCEPT(Table, Column1 [,Column2]...)|Removes all context filters in the table except filters that are applied to the specified columns.<br /><br />This is a convenient shortcut for situations in which you want to remove the filters on many, but not all, columns in a table.|  
   
 ## Example 
-Calculate Ratio of Category Sales to Total Sales  
+Calculate ratio of Category Sales to Total Sales  
 
 Assume that you want to find the amount of sales for the current cell, in your PivotTable, divided by the total sales for all resellers. To ensure that the denominator is the same regardless of how the PivotTable user might be filtering or grouping the data, you define a formula that uses ALL to create the correct grand total.  
   
@@ -64,8 +62,7 @@ The following table shows the results when a new measure, **All Reseller Sales R
 ```dax
 =SUMX(ResellerSales_USD, ResellerSales_USD[SalesAmount_USD])/SUMX(ALL(ResellerSales_USD), ResellerSales_USD[SalesAmount_USD])  
 ```
-  
-### Comments  
+
 The formula is constructed as follows:  
   
 1.  The numerator, `SUMX(ResellerSales_USD, ResellerSales_USD[SalesAmount_USD])`, is the sum of the values in ResellerSales_USD[SalesAmount_USD] for the current cell in the PivotTable, with context filters applied on CalendarYear and ProductCategoryName.  
@@ -96,8 +93,7 @@ The following table shows the results when a new measure, **Reseller Sales Year*
 ```dax
 =SUMX(ResellerSales_USD, ResellerSales_USD[SalesAmount_USD])/CALCULATE( SUM( ResellerSales_USD[SalesAmount_USD]), ALL(DateTime[CalendarYear]))  
 ```
-  
-### Comments  
+
 The formula is constructed as follows:  
   
 1.  The numerator, `SUMX(ResellerSales_USD, ResellerSales_USD[SalesAmount_USD])`, is the sum of the values in ResellerSales_USD[SalesAmount_USD] for the current cell in the pivot table, with context filters applied on the columns CalendarYear and ProductCategoryName.  
@@ -127,8 +123,7 @@ The following table shows the results when a new measure, **Reseller Sales Categ
 ```dax
 =SUMX(ResellerSales_USD, ResellerSales_USD[SalesAmount_USD])/CALCULATE( SUM( ResellerSales_USD[SalesAmount_USD]), ALL(ProductCategory[ProductCategoryName]))  
 ```
-  
-### Comments  
+
 The formula is constructed as follows:  
   
 1.  The numerator, `SUMX(ResellerSales_USD, ResellerSales_USD[SalesAmount_USD])`, is the sum of the values in ResellerSales_USD[SalesAmount_USD] for the current cell in the PivotTable, with context filters applied on the fields, CalendarYear and ProductCategoryName.  

@@ -1,7 +1,7 @@
 ---
 title: "OR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 06/26/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -33,6 +33,17 @@ The function evaluates the arguments until the first TRUE argument, then returns
   
 ## Example  
 The following example shows how to use the OR function to obtain the sales people that belong to the Circle of Excellence. The Circle of Excellence recognizes those who have achieved more than a million dollars in Touring Bikes sales or sales of over two and a half million dollars in 2007.  
+
+```dax
+IF(   OR(   CALCULATE(SUM('ResellerSales_USD'[SalesAmount_USD]), 'ProductSubcategory'[ProductSubcategoryName]="Touring Bikes") > 1000000  
+         ,   CALCULATE(SUM('ResellerSales_USD'[SalesAmount_USD]), 'DateTime'[CalendarYear]=2007) > 2500000  
+         )  
+   , "Circle of Excellence"  
+   , ""  
+   )  
+```
+
+Returns
   
 |SalesPersonFlag|True||||||  
 |-------------------|--------|----|----|----|----|----|  
@@ -58,14 +69,7 @@ The following example shows how to use the OR function to obtain the sales peopl
 |Varkey Chudukatil, Ranjit R||||||Circle of Excellence|  
 |Grand Total|Circle of Excellence|Circle of Excellence|Circle of Excellence|Circle of Excellence|Circle of Excellence|Circle of Excellence|  
   
-```dax
-IF(   OR(   CALCULATE(SUM('ResellerSales_USD'[SalesAmount_USD]), 'ProductSubcategory'[ProductSubcategoryName]="Touring Bikes") > 1000000  
-         ,   CALCULATE(SUM('ResellerSales_USD'[SalesAmount_USD]), 'DateTime'[CalendarYear]=2007) > 2500000  
-         )  
-   , "Circle of Excellence"  
-   , ""  
-   )  
-```
+
   
 ## See also  
 [Logical functions &#40;DAX&#41;](logical-functions-dax.md)  
