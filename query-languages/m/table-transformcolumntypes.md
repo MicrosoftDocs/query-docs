@@ -1,6 +1,6 @@
 ---
 title: "Table.TransformColumnTypes | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 6/27/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -13,52 +13,22 @@ manager: kfile
 
   
 ## About  
-Transforms the column types from a table using a type.  
+Returns a table from the input <code>table</code> by applying the transform operation to the columns specified in the parameter <code>typeTransformations</code> (where format is { column name, type name}), using the specified culture in the parameter <code>culture</code>. If the column doesn't exist, an exception is thrown.  
   
 ## Syntax
 
 <pre>
-Table.TransformColumnTypes(table as table, typeTransformations as list, optional culture as nullable text) as table  
+Table.TransformColumnTypes(<b>table</b> as table, <b>typeTransformations</b> as list, optional <b>culture</b> as nullable text) as table 
 </pre> 
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to modify.|  
-|typeTransformations|The List of typeTransofrmations to make.|  
-|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
-  
-## Examples  
-  
-```powerquery-m 
-Table.TransformColumnTypes(  
- Table.FromRecords({  
- [A="1",B=2], [A="5", B=10]}),   
- {"A", type number})  
-  
- equals Table.FromRecords({  
- [A=1,B=2], [A=5,B=10]})  
-```  
+## Example  
+
+Transform the number values in column [a] to text values from the table `({[a = 1, b = 2], [a = 3, b = 4]})`
   
 ```powerquery-m
-Table.TransformColumnTypes(  
- Table.FromRecords({  
- [A="1",B=2],   
- [A="5", B=10]}),  
- {"X", type number})  
-  
- equals Expression.Error  
+Table.TransformColumnTypes(Table.FromRecords({[a = 1, b = 2], [a = 3, b = 4]}), {"a", type text}, "en-US")
 ```  
-  
-```powerquery-m  
-Table.TransformColumnTypes(  
- Table.FromRecords({  
- [A="1/10/1990",B="29,000"],   
- [A="2/10/1990", B="29.000"]}),   
- {{"A", type date}, {"B", type number}}, "en-US")  
-  
- equals Table.FromRecords({  
- [A=#date(1990, 10, 1),B=29000],   
- [A=#date(1990, 10, 2),B=29]})  
-```  
+
+<table> <tr> <th>a</th> <th>b</th> </tr> <tr> <td>1</td> <td>2</td> </tr> <tr> <td>3</td> <td>4</td> </tr> </table>
+ 
+
