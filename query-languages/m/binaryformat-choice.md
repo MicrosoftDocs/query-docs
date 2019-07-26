@@ -1,6 +1,6 @@
 ---
 title: "BinaryFormat.Choice | Microsoft Docs"
-ms.date: 5/17/2019
+ms.date: 7/17/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -39,7 +39,7 @@ Read a list of bytes where the number of elements is determined by the first byt
 let binaryData = #binary({2, 3, 4, 5}), listFormat = BinaryFormat.Choice( BinaryFormat.Byte, (length) => BinaryFormat.Record([ length = length, list = BinaryFormat.List(BinaryFormat.Byte, length) ])) in listFormat(binaryData)
 ```
 
-<code>[ length = 2, list = {3, 4} ]</code>
+<table> <tr> <th>length</th> <td>2</td> </tr> <tr> <th>list</th> <td>[List]</td> </tr> </table>
 
 #### Example 3
 
