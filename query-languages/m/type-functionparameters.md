@@ -1,6 +1,6 @@
 ---
 title: "Type.FunctionParameters | Microsoft Docs"
-ms.date: 5/17/2019
+ms.date: 7/26/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -31,4 +31,4 @@ Find the types of the parameters to the function <code>(x as number, y as text)<
 Type.FunctionParameters(type function (x as number, y as text) as any)
 ```   
 
-<code>[x = type number, y = type text]</code>
+<table> <tr> <th>x</th> <td>[Type]</td> </tr> <tr> <th>y</th> <td>[Type]</td> </tr> </table>

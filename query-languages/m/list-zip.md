@@ -1,6 +1,6 @@
 ---
 title: "List.Zip | Microsoft Docs"
-ms.date: 5/17/2019
+ms.date: 7/26/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -27,7 +27,8 @@ Zips the two simple lists {1, 2} and {3, 4}.
 List.Zip({{1, 2}, {3, 4}})
 ```
 
-<code>{ { 1, 3 }, { 2, 4 } }</code>
+<table> <tr><td>[List]</td></tr> <tr><td>[List]</td></tr> </table>
+
 
 ## Example 2
 Zips the two simple lists of different lengths {1, 2} and {3}.
@@ -36,4 +37,5 @@ Zips the two simple lists of different lengths {1, 2} and {3}.
 List.Zip({{1, 2}, {3}})
 ```
 
-<code>{ { 1, 3 }, { 2, null } }</code> 
+<table> <tr><td>[List]</td></tr> <tr><td>[List]</td></tr> </table>
+
