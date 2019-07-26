@@ -1,6 +1,6 @@
 ---
 title: "List.Combine | Microsoft Docs"
-ms.date: 5/17/2019
+ms.date: 7/26/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -38,4 +38,4 @@ Combine the two lists, {1, 2} and {3, {4, 5}}, one of which contains a nested li
 List.Combine({{1, 2}, {3, {4, 5}}})
 ```
 
-`{ 1, 2, 3, {4, 5} }`
+<table> <tr><td>1</td></tr> <tr><td>2</td></tr> <tr><td>3</td></tr> <tr><td>[List]</td></tr> </table>
