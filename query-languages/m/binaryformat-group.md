@@ -1,6 +1,6 @@
 ---
 title: "BinaryFormat.Group | Microsoft Docs"
-ms.date: 5/17/2019
+ms.date: 7/17/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -29,7 +29,7 @@ The following assumes a key value that is a single byte, with 4 expected items i
 let b = #binary( { 1, 11, 2, 22, 2, 22, 5, 55, 1, 11 }), f = BinaryFormat.Group( BinaryFormat.Byte, { { 1, BinaryFormat.Byte, BinaryOccurrence.Required }, { 2, BinaryFormat.Byte, BinaryOccurrence.Repeating }, { 3, BinaryFormat.Byte, BinaryOccurrence.Optional }, { 4, BinaryFormat.Byte, BinaryOccurrence.Repeating } }, (extra) => BinaryFormat.Byte) in f(b)
 ```
 
-`{ 11, { 22, 22 }, null, { } }`
+<table> <tr><td>11</td></tr> <tr><td>[List]</td></tr> <tr><td></td></tr> <tr><td>[List]</td></tr> </table>
 
 ## Example 2
 
