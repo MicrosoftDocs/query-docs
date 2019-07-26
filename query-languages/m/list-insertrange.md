@@ -1,6 +1,6 @@
 ---
 title: "List.InsertRange | Microsoft Docs"
-ms.date: 5/17/2019
+ms.date: 7/26/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -29,6 +29,7 @@ List.InsertRange({1, 2, 5}, 2, {3, 4})
 
 <table> <tr><td>1</td></tr> <tr><td>2</td></tr> <tr><td>3</td></tr> <tr><td>4</td></tr> <tr><td>5</td></tr> </table>
 
+
 ## Example 2
 Insert a list with a nested list ({1, {1.1, 1.2}}) into a target list ({2, 3, 4}) at index 0.
 
@@ -36,4 +37,8 @@ Insert a list with a nested list ({1, {1.1, 1.2}}) into a target list ({2, 3, 4}
 List.InsertRange({2, 3, 4}, 0, {1, {1.1, 1.2}})
 ```
 
-<code>{ 1, { 1.1, 1.2 }, 2, 3, 4 }</code>
+<table> <tr><td>1</td></tr> <tr><td>[List]</td></tr> <tr><td>2</td></tr> <tr><td>3</td></tr> <tr><td>4</td></tr> </table>
+
+
+
+

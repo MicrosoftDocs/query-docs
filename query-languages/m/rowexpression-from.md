@@ -1,6 +1,6 @@
 ---
 title: "RowExpression.From | Microsoft Docs"
-ms.date: 5/17/2019
+ms.date: 7/26/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -28,4 +28,5 @@ Returns the AST for the body of the function each [CustomerID] = "ALFKI"
 RowExpression.From(each [CustomerName] = "ALFKI")  
 ```  
 
-`[ Kind = "Binary", Operator = "Equals", Left = RowExpression.Column("CustomerName"), Right = [ Kind = "Constant", Value = "ALFKI" ] ]`
+<table> <tr> <th>Kind</th> <td>Binary</td> </tr> <tr> <th>Operator</th> <td>Equals</td> </tr> <tr> <th>Left</th> <td>[Record]</td> </tr> <tr> <th>Right</th> <td>[Record]</td> </tr> </table>
+

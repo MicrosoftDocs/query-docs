@@ -39,3 +39,4 @@ List.Combine({{1, 2}, {3, {4, 5}}})
 ```
 
 <table> <tr><td>1</td></tr> <tr><td>2</td></tr> <tr><td>3</td></tr> <tr><td>[List]</td></tr> </table>
+
