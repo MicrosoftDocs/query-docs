@@ -1,6 +1,6 @@
 ---
 title: "Table.AddJoinColumn | Microsoft Docs"
-ms.date: 5/17/2019
+ms.date: 7/26/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -29,7 +29,4 @@ Add a join column to ({[saleID = 1, item = "Shirt"], [saleID = 2, item = "Hat"]}
 Table.AddJoinColumn(Table.FromRecords({[saleID = 1, item = "Shirt"], [saleID = 2, item = "Hat"]}), "saleID", () => Table.FromRecords({[saleID = 1, price = 20, stock = 1234], [saleID = 2, price = 10, stock = 5643]}), "saleID", "price")
 ```
 
-```
-Table.FromRecords({ [ saleID = 1, item = "Shirt", price =Table.FromRecords({ [ saleID = 1, price = 20, stock = 1234 ] }, { "saleID", "price", "stock" }) ], [ saleID = 2, item = "Hat", price =Table.FromRecords({ [ saleID = 2, price = 10, stock = 5643 ] }, { "saleID", "price", "stock" }) ] }, { "saleID", "item", "price" })
-```
-
+<table> <tr> <th>saleID</th> <th>item</th> <th>price</th> </tr> <tr> <td>1</td> <td>Shirt</td> <td>[Table]</td> </tr> <tr> <td>2</td> <td>Hat</td> <td>[Table]</td> </tr> </table>

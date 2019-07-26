@@ -1,6 +1,6 @@
 ---
 title: "Uri.Parts | Microsoft Docs"
-ms.date: 5/17/2019
+ms.date: 7/26/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -28,7 +28,8 @@ Find the parts of the absolute URI "www.adventure-works.com".
 Uri.Parts("www.adventure-works.com")
 ```  
 
-<code>[ Scheme = "http", Host = "www.adventure-works.com", Port = 80, Path = "/", Query = [], Fragment = "", UserName = "", Password = "" ]</code>
+<table> <tr> <th>Scheme</th> <td>http</td> </tr> <tr> <th>Host</th> <td>www.adventure-works.com</td> </tr> <tr> <th>Port</th> <td>80</td> </tr> <tr> <th>Path</th> <td>/</td> </tr> <tr> <th>Query</th> <td>[Record]</td> </tr> <tr> <th>Fragment</th> <td></td> </tr> <tr> <th>UserName</th> <td></td> </tr> <tr> <th>Password</th> <td></td> </tr> </table>
+
   
 ## Example 2  
 

@@ -1,6 +1,6 @@
 ---
 title: "Table.TransformRows | Microsoft Docs"
-ms.date: 5/17/2019
+ms.date: 7/26/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -40,5 +40,6 @@ Transform the rows in column [A] into text values in a column [B] from the table
 Table.TransformRows(Table.FromRecords({[a = 1], [a = 2], [a = 3], [a = 4], [a = 5]}), (row) as record => [B = Number.ToText(row[a])])
 ```
 
-<code>{ [ B = "1" ], [ B = "2" ], [ B = "3" ], [ B = "4" ], [ B = "5" ] }</code>
+<table> <tr><td>[Record]</td></tr> <tr><td>[Record]</td></tr> <tr><td>[Record]</td></tr> <tr><td>[Record]</td></tr> <tr><td>[Record]</td></tr> </table>
+
   
