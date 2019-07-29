@@ -1,6 +1,6 @@
 ---
 title: "Comparer.Ordinal | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,25 +11,20 @@ manager: kfile
 ---
 # Comparer.Ordinal
 
-  
-## About  
-Returns a comparer function which uses Ordinal rules to compare values.  
-  
 ## Syntax
 
-<pre> 
-Comparer.Ordinal(x as any, y as any) as number  
+<pre>
+Comparer.Ordinal(<b>x</b> as any, <b>y</b> as any) as number 
 </pre> 
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|x|The left value to compare.|  
-|y|The right value to compare.|  
-  
-## Examples  
-  
-```powerquery-m 
-Comparer.Equals(Comparer.Ordinal, "a","A")equals false  
-```  
+## About  
+Returns a comparer function which uses Ordinal rules to compare the provided values `x` and `y`.
+
+## Example 1
+Using Ordinal rules, compare if "encyclopædia" and "encyclopaedia" are equivalent. Note these are equivalent using `Comparer.FromCulture("en-us")`. 
+
+```powerquery-m
+Comparer.Equals(Comparer.Ordinal, "encyclopædia", "encyclopaedia")
+```
+
+`false`

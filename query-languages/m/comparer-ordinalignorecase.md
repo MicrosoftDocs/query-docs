@@ -1,6 +1,6 @@
 ---
 title: "Comparer.OrdinalIgnoreCase | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -13,8 +13,8 @@ manager: kfile
 
 ## Syntax
 
-<pre> 
-Comparer.OrdinalIgnoreCase(**x** as any, **y** as any) as number
+<pre>
+Comparer.OrdinalIgnoreCase(<b>x</b> as any, <b>y</b> as any) as number
 </pre>
 
 ## About
