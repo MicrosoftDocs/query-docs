@@ -1,6 +1,6 @@
 ---
 title: "SapBusinessWarehouse.Cubes | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-SapBusinessWarehouse.Cubes(**server** as text, **systemNumberOrSystemId** as text, **sclientId**s as text, optional **soptionsOrLogonGroup**s as any, optional **soptions**s as nullable record) as table
+SapBusinessWarehouse.Cubes(<b>server</b> as text, <b>systemNumberOrSystemId</b> as text, <b>clientId</b> as text, optional <b>optionsOrLogonGroup</b> as any, optional <b>options</b> as nullable record) as table
 </pre>
 
 ## About

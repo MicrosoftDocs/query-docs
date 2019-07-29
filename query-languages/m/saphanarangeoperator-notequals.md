@@ -1,6 +1,6 @@
 ---
 title: "SapHanaRangeOperator.NotEquals | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -10,12 +10,7 @@ ms.author: owend
 manager: kfile
 ---
 # SapHanaRangeOperator.NotEquals
-## Syntax
 
-<pre>
-SapHanaRangeOperator.NotEquals
-</pre>  
-  
 ## About  
-'NotEquals' range operator for SAP HANA input parameters.  
+'Not equals' range operator for SAP HANA input parameters.  
   

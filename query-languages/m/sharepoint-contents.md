@@ -1,6 +1,6 @@
 ---
 title: "SharePoint.Contents | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-SharePoint.Contents(**url** as text, optional **options **as nullable record) as table
+SharePoint.Contents(<b>url</b> as text, optional <b>options</b> as nullable record) as table
 </pre>
 
 ## About

@@ -1,6 +1,6 @@
 ---
 title: "HdInsight.Contents | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,11 @@ manager: kfile
 ---
 # HdInsight.Contents
 
-  
-## About  
-Returns a navigational table containing all containers found in the HDInsight account. Each row has the container name and table containing its files.  
-  
 ## Syntax
 
 <pre>
-HdInsight.Contents(accountName as text) as table  
+HdInsight.Contents(<b>account</b> as text) as table
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|accountName|The name of the HDInsight account to check.|  
-  
+## About  
+Returns a navigational table containing a row for each container found at the account URL, `account`, from an Azure storage vault. Each row contains a link to the container blobs.
