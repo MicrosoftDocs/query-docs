@@ -18,6 +18,6 @@ Cube.ApplyParameter(cube as table, parameter as any, optional arguments as nulla
 </pre>
   
 ## About  
-Returns a cube after applying parameter with arguments to cube.  
+  
 Returns a cube after applying `parameter` with `arguments` to `cube`.
   
