@@ -1,6 +1,6 @@
 ---
 title: "Comparer.FromCulture | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,32 +11,29 @@ manager: kfile
 ---
 # Comparer.FromCulture
 
-  
-## About  
-Returns a comparer function given the culture and a logical value for case sensitivity for the comparison. The default value for ignoreCase is false. The value for culture are well known text representations of locales used in the .NET framework.  
-  
 ## Syntax
 
-<pre>  
-Comparer.FromCulture(culture as text, optional ignoreCase as nullable logical) as function  
+<pre>
+Comparer.FromCulture(<b>culture</b> as text, optional <b>ignoreCase</b> as nullable logical) as function
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
-|optional ignoreCase|Logical value whether or not to ignore the case.|  
-  
-## Example  
-  
-```powerquery-m  
-let  
-comparer1 = Comparer.FromCulture("en-us", false),  
-comparer2 = Comparer.FromCulture("en-us", true)      
-in       
-[         
-Test1 =  comparer1("a","A"), equals  -1   
-Test2 =  comparer2("a","A") equals  0    
-]  
-```  
+## About  
+Returns a comparer function given the `culture` and a logical value `ignoreCase` for case sensitivity for the comparison. The default value for `ignoreCase` is false. The value for culture are well known text representations of locales used in the .NET framework.
+
+## Example 1
+Compare "a" and "A" using "en-US" locale to determine if the values are equal.
+
+```powerquery-m
+Comparer.FromCulture("en-us")("a", "A")
+```
+
+`-1`
+
+## Example 2
+Compare "a" and "A" using "en-US" locale ignoring the case to determine if the values are equal.
+
+```powerquery-m
+Comparer.FromCulture("en-us", true)("a", "A")
+```
+
+`0`
