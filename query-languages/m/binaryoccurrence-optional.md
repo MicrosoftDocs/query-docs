@@ -1,6 +1,6 @@
 ---
 title: "BinaryOccurrence.Optional | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -10,12 +10,6 @@ ms.author: owend
 manager: kfile
 ---
 # BinaryOccurrence.Optional
-
-## Syntax
-
-<pre> 
-BinaryOccurrence.Optional
-</pre>
 
 ## About 
 

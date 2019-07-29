@@ -1,6 +1,6 @@
 ---
 title: "BinaryFormat.Decimal | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,11 @@ manager: kfile
 ---
 # BinaryFormat.Decimal
 
-  
-## About  
-A binary format that reads a .NET 16-byte decimal value.  
-  
 ## Syntax
 
-<pre>  
-BinaryFormat.Decimal(binary as binary) as any  
-</pre>  
+<pre>
+BinaryFormat.Decimal(<b>binary</b> as binary) as any 
+</pre> 
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|binary|A .NET 16-byte decimal value|  
-  
+## About  
+A binary format that reads a .NET 16-byte decimal value.

@@ -1,6 +1,6 @@
 ---
 title: "BinaryFormat.Single | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,12 @@ manager: kfile
 ---
 # BinaryFormat.Single
 
-  
-## About  
-A binary format that reads a 4-byte IEEE single-precision floating point value.  
-  
 ## Syntax
 
-<pre>   
-BinaryFormat.Single(binary as binary) as any  
+<pre>
+BinaryFormat.Single(<b>binary</b> as binary) as any
 </pre>  
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|binary|A 4-byte IEEE single-precision floating point value|  
+## About  
+A binary format that reads a 4-byte IEEE single-precision floating point value.
   

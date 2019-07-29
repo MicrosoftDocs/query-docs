@@ -1,6 +1,6 @@
 ---
 title: "Compression.GZip | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,11 +11,6 @@ manager: kfile
 ---
 # Compression.GZip
 
-## Syntax
-
-<pre> 
-Compression.GZip
-</pre>
 
 ## About
-The compressed data is in the GZip format.
+The compressed data is in the 'GZip' format.

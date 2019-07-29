@@ -1,6 +1,6 @@
 ---
 title: "ByteOrder.BigEndian | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,12 +11,7 @@ manager: kfile
 ---
 # ByteOrder.BigEndian
 
-## Syntax
-
-<pre> 
-ByteOrder.BigEndian
-</pre>
 
 ## About
 
-A possible value for the `byteOrder` parameter in `BinaryFormat.ByteOrder`. The most signficant byte appears first in Big Endian byte order.
+A possible value for the `byteOrder` parameter in `BinaryFormat.ByteOrder`. The most significant byte appears first in Big Endian byte order.
