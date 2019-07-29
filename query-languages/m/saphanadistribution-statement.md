@@ -1,6 +1,6 @@
 ---
 title: "SapHanaDistribution.Statement | Microsoft Docs"
-ms.date: 5/22/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -12,5 +12,5 @@ manager: kfile
 # SapHanaDistribution.Statement
 
 ## About
-'DataStream flattening mode' option for MDX execution in SAP Business Warehouse.
+'Statement' distribution option for SAP HANA.
 

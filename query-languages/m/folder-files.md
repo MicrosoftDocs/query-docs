@@ -1,6 +1,6 @@
 ---
 title: "Folder.Files | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -10,20 +10,13 @@ ms.author: owend
 manager: kfile
 ---
 # Folder.Files
-
-  
-## About  
-Returns a table containing a row for each file found at a folder path, and subfolders. Each row contains properties of the folder or file and a link to its content.  
   
 ## Syntax
 
 <pre>
-Folder.Files(path as text) as table  
+Folder.Files(<b>path</b> as text) as table
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|path|The path to the folder to retrieve files for.|  
+## About  
+Returns a table containing a row for each file found at the folder path, `path`, and subfolders. Each row contains properties of the file and a link to its content. 
   

@@ -1,6 +1,6 @@
 ---
 title: "MySQL.Database | Microsoft Docs"
-ms.date: 7/23/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-MySQL.Database(**server** as text, **database** as text, optional **options** as nullable record) as table
+MySQL.Database(<b>server</b> as text, <b>database</b> as text, optional <b>options</b> as nullable record) as table
 </pre>
 
 ## About

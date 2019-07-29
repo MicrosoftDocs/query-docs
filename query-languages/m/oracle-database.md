@@ -1,6 +1,6 @@
 ---
 title: "Oracle.Database | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-Oracle.Database(**server** as text, optional **options** as nullable record) as table
+Oracle.Database(<b>server</b> as text, optional <b>options</b> as nullable record) as table
 </pre>
 
 ## About

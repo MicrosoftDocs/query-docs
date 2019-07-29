@@ -1,6 +1,6 @@
 ---
 title: "Xml.Tables | Microsoft Docs"
-ms.date: 7/26/2019
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -10,6 +10,8 @@ ms.author: owend
 manager: kfile
 ---
 # Xml.Tables
+
+## Syntax
 
 <pre>
 Xml.Tables(<b>contents</b> as any, optional <b>options</b> as nullable record, optional <b>encoding</b> as nullable number) as table

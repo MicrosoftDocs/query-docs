@@ -1,6 +1,6 @@
 ---
 title: "HdInsight.Files | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,20 +11,11 @@ manager: kfile
 ---
 # HdInsight.Files
 
-  
-## About  
-Returns a table containing a row for each folder and file found at the container URL, and subfolders from an HDInsight account. Each row contains properties of the file/folder and a link to its content.  
-  
 ## Syntax
 
 <pre>
-HdInsight.Files(accountName as text,  containerName as text) as table  
+HdInsight.Files(<b>account</b> as text, <b>containerName</b> as text) as table
 </pre>
-  
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|accountName|The name of the HDInsight account to check.|  
-|containerName|The name of the table.|  
-  
+
+## About  
+Returns a table containing a row for each blob file found at the container URL, `account`, from an Azure storage vault. Each row contains properties of the file and a link to its content.

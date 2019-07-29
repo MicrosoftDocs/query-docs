@@ -1,6 +1,6 @@
 ---
 title: "Web.Page | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 47/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,12 @@ manager: kfile
 ---
 # Web.Page
 
-  
-## About  
-Returns the contents of an HTML webpage as a table.  
-  
 ## Syntax
 
-<pre> 
-Web.Page(html as text) as table  
+<pre>
+Web.Page(<b>html</b> as any) as table
 </pre> 
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|html|HTML elements.|  
-  
+## About  
+Returns the contents of the HTML document broken into its constituent structures, as well as a representation of the full document and its text after removing tags.  
+

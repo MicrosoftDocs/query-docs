@@ -1,6 +1,6 @@
 ---
 title: "Cube.Transform | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-Cube.Transform(**cube** as table, **transforms** as list) as table
+Cube.Transform(<b>cube</b> as table, <b>transforms</b> as list) as table
 </pre>
 
 ## About
