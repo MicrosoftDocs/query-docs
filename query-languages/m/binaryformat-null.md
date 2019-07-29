@@ -1,6 +1,6 @@
 ---
 title: "BinaryFormat.Null | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,12 +11,11 @@ manager: kfile
 ---
 # BinaryFormat.Null
 
-  
-## About  
-A binary format that reads zero bytes and returns null.  
-  
 ## Syntax
 
 <pre>   
-BinaryFormat.Null(binary as binary) as any  
+BinaryFormat.Null(<b>binary</b> as binary) as any 
 </pre>  
+  
+## About  
+A binary format that reads zero bytes and returns null. 

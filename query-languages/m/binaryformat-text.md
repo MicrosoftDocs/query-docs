@@ -1,6 +1,6 @@
 ---
 title: "BinaryFormat.Text | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,37 +11,29 @@ manager: kfile
 ---
 # BinaryFormat.Text
 
-  
-## About  
-Returns a binary format that reads a text value.  The optional encoding value specifies the encoding of the text.  
-  
 ## Syntax
 
-<pre>   
-BinaryFormat.Text(length as number, optional encoding as nullable number) as function  
+<pre>
+BinaryFormat.Text(<b>length</b> as any, optional <b>encoding</b> as nullable number) as function 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|length|The number of bytes to decode.|  
-|optional encoding|The encoding of the text.|  
-  
-## Remarks  
-  
--   If the encoding is not specified, then the encoding is determined from the Unicode byte order marks.  
-  
--   If no byte order marks are present, then TextEncoding.Utf8 is used.  
-  
-## Example  
-  
-```powerquery-m  
-// Decode two bytes as ASCII text.  
-let  
-binaryData = #binary({65, 66, 67}),  
-textFormat = BinaryFormat.Text(2, TextEncoding.Ascii)  
-in  
-textFormat(binaryData)   
-equals "AB"  
-```  
+## About  
+Returns a binary format that reads a text value. The `length` specifies the number of bytes to decode, or the binary format of the length that precedes the text. The optional `encoding` value specifies the encoding of the text. If the `encoding` is not specified, then the encoding is determined from the Unicode byte order marks. If no byte order marks are present, then `TextEncoding.Utf8` is used.
+
+## Example 1
+Decode two bytes as ASCII text.
+
+```powerquery-m
+let binaryData = #binary({65, 66, 67}), textFormat = BinaryFormat.Text(2, TextEncoding.Ascii) in textFormat(binaryData)
+```
+
+`"AB"`
+
+## Example 2
+Decode ASCII text where the length of the text in bytes appears before the text as a byte.
+
+```powerquery-m
+let binaryData = #binary({2, 65, 66}), textFormat = BinaryFormat.Text(BinaryFormat.Byte, TextEncoding.Ascii) in textFormat(binaryData)
+```
+
+`"AB"`

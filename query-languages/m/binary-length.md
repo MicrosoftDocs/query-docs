@@ -1,6 +1,6 @@
 ---
 title: "Binary.Length | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,11 @@ manager: kfile
 ---
 # Binary.Length
 
-  
-## About  
-Returns the length of binary values.  
-  
 ## Syntax
 
-<pre>   
-Binary.Length(binary as binary) as number  
+<pre>
+Binary.Length(<b>binary</b> as nullable binary) as nullable number
 </pre>  
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|binary|The binary value to check.|  
-  
+## About  
+Returns the number of characters.  

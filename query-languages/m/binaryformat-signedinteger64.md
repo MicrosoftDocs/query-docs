@@ -1,6 +1,6 @@
 ---
 title: "BinaryFormat.SignedInteger64 | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,12 @@ manager: kfile
 ---
 # BinaryFormat.SignedInteger64
 
+## Syntax
+
+<pre>
+BinaryFormat.SignedInteger64(<b>binary</b> as binary) as any  
+</pre>
   
 ## About  
 A binary format that reads a 64-bit signed integer.  
-  
-## Syntax
-
-<pre> 
-BinaryFormat.SignedInteger64(binary as binary) as any  
-</pre>
-  
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|binary|A 64-bit signed integer|  
-  
+ 

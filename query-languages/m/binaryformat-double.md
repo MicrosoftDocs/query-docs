@@ -1,6 +1,6 @@
 ---
 title: "BinaryFormat.Double | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,11 @@ manager: kfile
 ---
 # BinaryFormat.Double
 
-  
-## About  
-A binary format that reads an 8-byte IEEE double-precision floating point value.  
-  
 ## Syntax
 
 <pre>  
-BinaryFormat.Double(binary as binary) as any  
+BinaryFormat.Double(<b>binary</b> as binary) as any 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|binary|An 8-byte IEEE double-precision floating point value|  
-  
+## About  
+A binary format that reads an 8-byte IEEE double-precision floating point value. 

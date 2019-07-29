@@ -1,6 +1,6 @@
 ---
 title: "BinaryEncoding.Base64 | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,12 +11,6 @@ manager: kfile
 ---
 # BinaryEncoding.Base64
 
-## Syntax
-
-<pre> 
-BinaryEncoding.Base64
-</pre>
-
 ## About
 
- Constant to use as the encoding type when base-64 encoding is required.
+Constant to use as the encoding type when base-64 encoding is required.
