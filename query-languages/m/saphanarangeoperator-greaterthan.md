@@ -1,6 +1,6 @@
 ---
 title: "SapHanaRangeOperator.GreaterThan | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,12 +11,6 @@ manager: kfile
 ---
 # SapHanaRangeOperator.GreaterThan
 
-## Syntax
-
-<pre>
-SapHanaRangeOperator.GreaterThan  
-</pre>
-  
 ## About  
 'Greater than' range operator for SAP HANA input parameters.  
   

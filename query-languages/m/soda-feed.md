@@ -1,6 +1,6 @@
 ---
 title: "Soda.Feed | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -10,20 +10,12 @@ ms.author: owend
 manager: kfile
 ---
 # Soda.Feed
-
-  
-## About  
-Returns the resulting table of a CSV file that can be accessed using the SODA 2.0 API.  The URL must point to a valid SODA-compliant source that ends in a .csv extension.  
   
 ## Syntax
 
 <pre>
-Soda.Feed(url as text) as table  
+Soda.Feed(<b>url</b> as text) as table
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|url|The URL pointing to the SODA compliant .csv source|  
-  
+## About  
+Returns a table from the contents at the specified URL `url` formatted according to the SODA 2.0 API. The URL must point to a valid SODA-compliant source that ends in a .csv extension.

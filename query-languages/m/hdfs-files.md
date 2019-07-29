@@ -1,6 +1,6 @@
 ---
 title: "Hdfs.Files | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,11 @@ manager: kfile
 ---
 # Hdfs.Files
 
-  
-## About  
-Returns a table containing a row for each file found at the folder **url**, {0}, and subfolders from a Hadoop file system. Each row contains properties of the file and a link to its content.  
-  
 ## Syntax
 
 <pre>
-Hdfs.Files(url as text) as table  
+Hdfs.Files(<b>url</b> as text) as table
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|url|The URL to check the files of.|  
-  
+## About  
+Returns a table containing a row for each file found at the folder URL, `url`, and subfolders from a Hadoop file system. Each row contains properties of the file and a link to its content.

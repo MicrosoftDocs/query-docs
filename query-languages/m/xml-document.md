@@ -1,6 +1,6 @@
 ---
 title: "Xml.Document | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -13,66 +13,10 @@ manager: kfile
 
   
 ## About  
-Returns the contents of an XML document as a hierarchical table (list of records).  
+Returns the contents of the XML document as a hierarchical table.
   
 ## Syntax
 
 <pre>
-Xml.Document(contents as any, optional options as nullable record, optional encoding as nullable number) as table  
+Xml.Document(<b>contents</b> as any, optional <b>encoding</b> as nullable number) as table
 </pre>
-  
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|contents|The contents may be directly passed to the function as text, or it may be the binary value returned by a function like File.Contents or Web.Contents.|  
-|options|Xml document options.|  
-|encoding|Encoding value.|  
-  
-## <a name="__toc360789833"></a>Remarks  
-  
--   The output of the function has a tabular shape.  Each row in the table corresponds to a node at the current level of depth.  Descending into the XML tree is done through accessing the “Value” property of a given row.  
-  
-The precise shape of the output table is as follows:  
-  
-```powerquery-m
-Value.Type(Xml.Document("<a></a>")) =  
-  
-type {[  
-  
-    Name = text,  
-  
-    Namespace = text,  
-  
-    Value = any,  
-  
-    Attributes = {[  
-  
-        Name = text,  
-  
-        Namespace = text,  
-  
-        Value = text  
-  
-    ]}  
-  
-]}  
-```  
-  
-## Example  
-  
-```powerquery-m
-Xml.Document("<a></a>")  
-  
-    equals  { [  
-  
-    Name = "a",  
-  
-    Namespace = "",  
-  
-    Value = {},  
-  
-    Attributes = {}  
-  
-] }  
-```  

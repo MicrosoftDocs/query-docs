@@ -1,6 +1,6 @@
 ---
 title: "Folder.Contents | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,11 @@ manager: kfile
 ---
 # Folder.Contents
 
-  
-## About  
-Returns a table containing the properties and contents of the files and folders found at **path**.  
-  
 ## Syntax
 
 <pre>
-Folder.Contents(path as text) as table  
+Folder.Contents(<b>path</b> as text) as table
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|path|The path to the folder to retrieve contents for.|  
-  
+## About  
+Returns a table containing a row for each folder and file found at the folder path, `path`. Each row contains properties of the folder or file and a link to its content.

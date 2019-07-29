@@ -1,6 +1,6 @@
 ---
 title: "SapHanaRangeOperator.LessThan | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -10,13 +10,7 @@ ms.author: owend
 manager: kfile
 ---
 # SapHanaRangeOperator.LessThan
-
-## Syntax
-
-<pre>
-SapHanaRangeOperator.LessThan  
-</pre>
   
 ## About  
-'LessThan' range operator for SAP HANA input parameters.  
+'Less than' range operator for SAP HANA input parameters.  
   

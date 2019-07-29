@@ -1,6 +1,6 @@
 ---
 title: "SapHanaRangeOperator.GreaterThanOrEquals | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -10,13 +10,7 @@ ms.author: owend
 manager: kfile
 ---
 # SapHanaRangeOperator.GreaterThanOrEquals
-
-## Syntax
-
-<pre>
-SapHanaRangeOperator.GreaterThanOrEquals  
-</pre>
   
 ## About  
-'GreaterThanOrEquals' range operator for SAP HANA input parameters.  
+'Greater than or equals' range operator for SAP HANA input parameters.  
   

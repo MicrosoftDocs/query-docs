@@ -1,6 +1,6 @@
 ---
 title: "Cube.ApplyParameter | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -19,4 +19,5 @@ Cube.ApplyParameter(cube as table, parameter as any, optional arguments as nulla
   
 ## About  
 Returns a cube after applying parameter with arguments to cube.  
+Returns a cube after applying `parameter` with `arguments` to `cube`.
   
