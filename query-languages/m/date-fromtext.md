@@ -27,9 +27,7 @@ Convert `"December 31, 2010"` into a date value.
 Date.FromText("2010-12-31")
 ```
 
-```powerquery-m
-#date(2010, 12, 31)
-```
+`#date(2010, 12, 31)`
 
 ## Example 2
 Convert `"December 31, 2010"` into a date value, with a different format
@@ -38,9 +36,7 @@ Convert `"December 31, 2010"` into a date value, with a different format
 Date.FromText("2010, 12, 31")
 ```
 
-```powerquery-m
-#date(2010, 12, 31)
-```
+`#date(2010, 12, 31)`
 
 ## Example 3
 Convert `"December, 2010"` into a date value.
@@ -49,9 +45,7 @@ Convert `"December, 2010"` into a date value.
 Date.FromText("2010, 12")
 ```
 
-```powerquery-m
-#date(2010, 12, 1)
-```
+`#date(2010, 12, 1)`
 
 ## Example 4
 Convert `"2010"` into a date value.
@@ -60,6 +54,4 @@ Convert `"2010"` into a date value.
 Date.FromText("2010")
 ```
 
-```powerquery-m
->#date(2010, 1, 1)
-```
+`#date(2010, 1, 1)`
