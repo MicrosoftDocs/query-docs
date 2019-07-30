@@ -27,9 +27,8 @@ Convert `43910` to a `date` value.
 Date.From(43910)
 ```
 
-```powerquery-m
-#date(2020, 3, 20)
-```
+`#date(2020, 3, 20)`
+
 
 ## Example 2
 Convert `#datetime(1899, 12, 30, 06, 45, 12)` to a `date` value.
@@ -38,6 +37,4 @@ Convert `#datetime(1899, 12, 30, 06, 45, 12)` to a `date` value.
 Date.From(#datetime(1899, 12, 30, 06, 45, 12))
 ```
 
-```powerquery-m
-#date(1899, 12, 30)
-```
+`#date(1899, 12, 30)`
