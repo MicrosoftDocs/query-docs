@@ -1,6 +1,6 @@
 ---
 title: "DateTimeZone.FromText | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,85 +11,48 @@ manager: kfile
 ---
 # DateTimeZone.FromText
 
-  
-## About  
-Returns a DateTimeZone value from a set of date formats and culture value.  
-  
 ## Syntax
 
 <pre>
-DateTimeZone.FromText(dateTimeZone as nullable text, optional culture as nullable text) as nullable datetimezone  
+DateTimeZone.FromText(<b>text</b> as nullable text, optional <b>culture</b> as nullable text) as nullable datetimezone
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTimeZone||  
-|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
-  
-### DateTimeZone formats  
-  
--   YYYY-MM-DDThh:mmhh:mm  
-  
--   YYYYMMDDThh:mmhh:mm  
-  
--   YYYY-MM-DDThh:mm:sshh:mm  
-  
--   YYYYMMDDThh:mm:sshh:mm  
-  
--   YYYY-MM-DDThh:mm:ss.nnnnnnnhh:mm  
-  
--   YYYYMMDDThh:mm:ss.nnnnnnnhh:mm  
-  
--   YYYY-MM-DDThh:mm-hh:mm  
-  
--   YYYYMMDDThh:mm-hh:mm  
-  
--   YYYY-MM-DDThh:mm:ss-hh:mm  
-  
--   YYYYMMDDThh:mm:ss-hh:mm  
-  
--   YYYY-MM-DDThh:mm:ss.nnnnnnn-hh:mm  
-  
--   YYYYMMDDThh:mm:ss.nnnnnnn-hh:mm  
-  
--   YYYY-MM-DDThh:mmZ  
-  
--   YYYYMMDDThh:mmZ  
-  
--   YYYY-MM-DDThh:mm:ssZ  
-  
--   YYYYMMDDThh:mm:ssZ  
-  
--   YYYY-MM-DDThh:mm:ss.nnnnnnnZ  
-  
--   YYYYMMDDThh:mm:ss.nnnnnnnZ  
-  
-### Terms  
-  
--   Y = years  
-  
--   M = months  
-  
--   D = days  
-  
--   h = hours  
-  
--   m = minutes  
-  
--   s = seconds  
-  
--   n = fractional seconds  
-  
--   TZD = time zone designator  
-  
-## Examples  
-  
+## About  
+Creates a `datetimezone` value from a textual representation, `text`, following ISO 8601 format standard. <ul> <li> <code>DateTimeZone.FromText("2010-12-31T01:30:00-08:00") </code> // yyyy-MM-ddThh:mm:ssZ </li> </ul>
+
+## Example 1
+Convert `"2010-12-31T01:30:00-08:00"` into a datetimezone value.
+
 ```powerquery-m
-DateTime.FromText("2010-12-31T01:30:00") equals YYYY-MM-DDThh:mm:ss  
-```  
-  
+DateTimeZone.FromText("2010-12-31T01:30:00-08:00")
+```
+
+`#datetimezone(2010, 12, 31, 1, 30, 0, -8, 0)`
+
+## Example 2
+Convert `"2010-12-31T01:30:00.121212-08:00"` into a datetimezone value.
+
 ```powerquery-m
-DateTime.FromText("2010-12-31T01:30:00Z") equals 2010-12-31T01:30:00+00:00  
-```  
+DateTimeZone.FromText("2010-12-31T01:30:00.121212-08:00")
+```
+
+`#datetimezone(2010, 12, 31, 1, 30, 0.121212, -8, 0)`
+
+## Example 3
+Convert `"2010-12-31T01:30:00Z"`into a datetimezone value.
+
+```powerquery-m
+DateTimeZone.FromText("2010-12-31T01:30:00Z")
+```
+
+`#datetimezone(2010, 12, 31, 1, 30, 0, 0, 0)`
+
+## Example 4
+Convert `"20101231T013000+0800"` into a datetimezone value.
+
+```powerquery-m
+DateTimeZone.FromText("20101231T013000+0800")
+```
+
+`#datetimezone(2010, 12, 31, 1, 30, 0, 8, 0)`
+

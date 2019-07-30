@@ -1,6 +1,6 @@
 ---
 title: "DateTimeZone.FromFileTime | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,24 +11,20 @@ manager: kfile
 ---
 # DateTimeZone.FromFileTime
 
-  
-## About  
-Returns a DateTimeZone from a number value.  
-  
 ## Syntax
 
 <pre>
-DateTimeZone.FromFileTime(fileTime as nullable number) as nullable datetimezone  
+DateTimeZone.FromFileTime(<b>fileTime</b> as nullable number) as nullable datetimezone  
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|fileTime|The fileTime is a Windows file time value that represents the number of 100-nanoseconds intervals that have elapsed since 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).|  
-  
-## <a name="__goback"></a>Example  
-  
+## About  
+Creates a `datetimezone` value from the `fileTime` value and converts it to the local time zone. The filetime is a Windows file time value that represents the number of 100-nanosecond intervals that have elapsed since 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC). 
+
+## Example 1
+Convert `129876402529842245` into a datetimezone value.
+
 ```powerquery-m
-DateTimeZone.FromFileTime(12987640252984224) equals #datetimezone(2012, 7, 24, 14, 50, 52.9842245, -7, 0)  
-```  
+DateTimeZone.FromFileTime(129876402529842245)
+```
+
+`#datetimezone(2012, 7, 24, 14, 50, 52.9842245, -7, 0)`
