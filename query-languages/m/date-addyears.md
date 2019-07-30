@@ -27,9 +27,7 @@ Add 4 years to the `date`, `datetime`, or `datetimezone` value representing the 
 Date.AddYears(#date(2011, 5, 14), 4)
 ```
 
-```powerquery-m
-#date(2015, 5, 14)
-```
+`#date(2015, 5, 14)`
 
 ## Example 2
 Add 10 years to the `date`, `datetime`, or `datetimezone` value representing the date and time of 5/14/2011 08:15:22 AM.
@@ -38,6 +36,4 @@ Add 10 years to the `date`, `datetime`, or `datetimezone` value representing the
 Date.AddYears(#datetime(2011, 5, 14, 8, 15, 22), 10)
 ```
 
-```powerquery-m
-#datetime(2021, 5, 14, 8, 15, 22)
-```
+`#datetime(2021, 5, 14, 8, 15, 22)`
