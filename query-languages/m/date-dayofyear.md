@@ -1,6 +1,6 @@
 ---
 title: "Date.DayOfYear | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,28 +11,20 @@ manager: kfile
 ---
 # Date.DayOfYear
 
-  
-## About  
-Returns a number that represents the day of the year from a DateTime value.  
-  
 ## Syntax
 
-<pre>  
-Date.DayOfYear(dateTime as datetime) as nullable number  
+<pre>
+Date.DayOfYear(<b>dateTime</b> as any) as nullable number
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|The DateTime to check against.|  
-  
-## Examples  
-  
-```powerquery-m  
-Date.DayOfYear(DateTime.FromText("2011-03-01")) equals 60  
-```  
-  
-```powerquery-m  
-Date.DayOfYear(DateTime.FromText("2012-03-01")) equals 61  
-```  
+## About  
+Returns a number representing the day of the year in the provided `date`, `datetime`, or `datetimezone` value, `dateTime`.
+
+## Example 1
+The number of the day March 1st, 2011 (`#date(2011, 03, 01)`).
+
+```powerquery-m
+Date.DayOfYear(#date(2011, 03, 01))
+```
+
+`60`

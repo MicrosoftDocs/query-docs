@@ -1,6 +1,6 @@
 ---
 title: "Date.MonthName | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-Date.MonthName(**date** as any, optional **culture** as nullable text)
+Date.MonthName(<b>date</b> as any, optional <b>culture</b> as nullable text) as nullable text
 </pre>
 
 ## About

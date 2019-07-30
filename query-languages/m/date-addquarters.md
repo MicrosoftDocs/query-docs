@@ -1,6 +1,6 @@
 ---
 title: "Date.AddQuarters | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,29 +11,20 @@ manager: kfile
 ---
 # Date.AddQuarters
 
-  
-## About  
-Returns a Date/DateTime/DateTimeZone value incremented by the number of quarters provided. Each quarter is defined as a duration of three months. It also handles incrementing the year potion of the value as appropriate.  
-  
 ## Syntax
 
-<pre>  
-Date.AddQuarters(dateTime, quarters as number)  
+<pre>
+Date.AddQuarters(<b>dateTime</b> as any, <b>numberOfQuarters</b> as number) as any  
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|The DateTime to add quarters to.|  
-|quarters|The number of quarters to add.|  
-  
-## Examples  
-  
-```powerquery-m  
-Date.AddQuarters(DateTime.FromText("2011-02-19"), 1) equals 2011-05-19  
-```  
-  
-```powerquery-m  
-Date.AddQuarters(DateTime.FromText("2011-11-30"), 1) equals 2012-02-29  
-```  
+## About  
+Returns the `date`, `datetime`, or `datetimezone` result from adding `numberOfQuarters` quarters to the `datetime` value `dateTime`. <ul> <li><code>dateTime</code>: The <code>date</code>, <code>datetime</code>, or <code>datetimezone</code> value to which quarters are being added.</li> <li><code>numberOfQuarters</code>: The number of quarters to add.</li> </ul>
+
+## Example 1
+Add 1 quarter to the `date`, `datetime`, or `datetimezone` value representing the date 5/14/2011.
+
+```powerquery-m
+Date.AddQuarters(#date(2011, 5, 14), 1)
+```
+
+`#date(2011, 8, 14)`

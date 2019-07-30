@@ -1,6 +1,6 @@
 ---
 title: "Date.StartOfDay | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,31 +11,20 @@ manager: kfile
 ---
 # Date.StartOfDay
 
-  
-## About  
-Returns a DateTime value for the start of the day.  
-  
 ## Syntax
 
 <pre> 
-Date.StartOfDay(dateTime as nullable datetime) as nullable datetime  
+Date.StartOfDay(<b>dateTime</b> as any) as any
 </pre> 
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|The DateTime to check against.|  
-  
-## Remarks  
-  
--   The date and time portions are reset to their initial values for the day.  
-  
--   The timezone information is persisted.  
-  
-## <a name="__goback"></a>Example  
-  
+## About  
+Returns the first value of the day `dateTime`. `dateTime` must be a `date`, `datetime`, or `datetimezone` value.
+
+## Example 1
+Find the start of the day for October 10th, 2011, 8:00AM (`#datetime(2011, 10, 10, 8, 0, 0)`).
+
 ```powerquery-m
-dateTime = DateTimeZone.FromText("2011-02-21T12:30:00-08:00");   
-Date.StartOfDay(dateTime) equals 2011-02-21T00:00:00-08:00  
-```  
+Date.StartOfDay(#datetime(2011, 10, 10, 8, 0, 0))
+```
+
+`#datetime(2011, 10, 10, 0, 0, 0)`

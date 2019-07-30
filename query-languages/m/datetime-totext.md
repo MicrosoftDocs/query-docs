@@ -1,6 +1,6 @@
 ---
 title: "DateTime.ToText | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -13,7 +13,8 @@ manager: kfile
 
 ## Syntax
 
-<pre>DateTime.ToText(**dateTime** as nullable datetime, optional **format** as nullable text, optional **culture** as nullable text) as nullable text
+<pre>
+DateTime.ToText(<b>dateTime</b> as nullable datetime, optional <b>format</b> as nullable text, optional <b>culture</b> as nullable text) as nullable text
 </pre>
 
 ## About

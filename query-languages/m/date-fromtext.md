@@ -1,6 +1,6 @@
 ---
 title: "Date.FromText | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,45 +11,47 @@ manager: kfile
 ---
 # Date.FromText
 
-  
-## About  
-Returns a Date value from a set of date formats and culture value, following ISO 8601 format standard.  
-
 ## Syntax
 
 <pre>
-Date.FromText(date as nullable text, optional culture as nullable text) as nullable date  
+Date.FromText(<b>text</b> as nullable text, optional <b>culture</b> as nullable text) as nullable date 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|date|A string value to transorm.|  
-|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
-  
-### Supported formats  
-  
--   yyyy-MM-dd  
-  
--   YYYYMMDD  
-  
--   M/d/yyyy  
-  
-### Terms  
-  
--   Y = years  
-  
--   M = months  
-  
--   D = days  
-  
-## <a name="__toc360788938"></a>Remarks  
-  
--   If the culture is not specified, the current user culture is used.  
-  
-## Example  
-  
-```powerquery-m 
-Date.FromText("2010-02-19") equals Date,yyyy-MM-dd  
-```  
+## About  
+Creates a `date` value from a textual representation, `text`, following ISO 8601 format standard. <ul> <li> <code>Date.FromText("2010-02-19") </code> // Date, yyyy-MM-dd </li> </ul>
+
+## Example 1
+Convert `"December 31, 2010"` into a date value.
+
+```powerquery-m
+Date.FromText("2010-12-31")
+```
+
+`#date(2010, 12, 31)`
+
+## Example 2
+Convert `"December 31, 2010"` into a date value, with a different format
+
+```powerquery-m
+Date.FromText("2010, 12, 31")
+```
+
+`#date(2010, 12, 31)`
+
+## Example 3
+Convert `"December, 2010"` into a date value.
+
+```powerquery-m
+Date.FromText("2010, 12")
+```
+
+`#date(2010, 12, 1)`
+
+## Example 4
+Convert `"2010"` into a date value.
+
+```powerquery-m
+Date.FromText("2010")
+```
+
+`#date(2010, 1, 1)`

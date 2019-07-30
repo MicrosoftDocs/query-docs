@@ -1,6 +1,6 @@
 ---
 title: "DateTimeZone.ZoneMinutes | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-DateTimeZone.ZoneHours(**dateTimeZone** as nullable datetimezone) as nullable number
+DateTimeZone.ZoneMinutes(<b>dateTimeZone</b> as nullable datetimezone) as nullable number
 </pre>
 
 ## About

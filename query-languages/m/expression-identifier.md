@@ -1,6 +1,6 @@
 ---
 title: "Expression.Identifier | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,16 +11,16 @@ manager: kfile
 ---
 # Expression.Identifier
 
+## Syntax
+
+<pre>
+Expression.Identifier(<b>name</b> as text) as text
+</pre>
   
 ## About  
 Returns a text value that can be used as an identifier from a text value.  
   
-## Syntax
 
-<pre>
-Expression.Identifier(name as text) as text  
-</pre>
-  
 ## Arguments  
   
 |Argument|Description|  

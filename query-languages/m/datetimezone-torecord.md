@@ -1,6 +1,6 @@
 ---
 title: "DateTimeZone.ToRecord | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,37 +11,20 @@ manager: kfile
 ---
 # DateTimeZone.ToRecord
 
-  
-## About  
-Returns a record containing parts of a DateTime value.  
-  
 ## Syntax
 
 <pre>
-DateTimeZone.ToRecord(dateTimeZone as datetimezone) as record  
+DateTimeZone.ToRecord(<b>dateTimeZone</b> as datetimezone) as record
 </pre> 
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTimeZone|The DateTimeZone to convert.|  
-  
-## <a name="__toc360789084"></a>Remarks  
-  
--   If a portion of the DateTime value is not specified with date, time or timezone, the corresponding part in the output record is not present.  
-  
-## Example  
-  
+## About  
+Returns a record containing the parts of the given datetimezone value, `dateTimeZone`. <ul> <li><code>dateTimeZone</code>: A <code>datetimezone</code> value for from which the record of its parts is to be calculated.</li> </ul>
+
+## Example 1
+Convert the `#datetimezone(2011, 12, 31, 11, 56, 2, 8, 0)` value into a record containing Date, Time, and Zone values.
+
 ```powerquery-m
-DateTime.ToRecord(DateTime.FromText("2011-02-02T11:56:02-08:00")) equals  
-Year = 2011, Month = 2, Day = 2,  
-Hour = 11, Minute = 56, Second = 2,  
-Hours = -8, Minutes = 0  
-]  
-DateTime.ToParts(DateTime.From("11:56:02-05"))  
-[  
-Time = [Hour = 11, Minute = 56, Second = 2],  
-Timezone = [Hours = -5]  
-]  
-```  
+DateTimeZone.ToRecord(#datetimezone(2011, 12, 31, 11, 56, 2, 8, 0))
+```
+
+<table> <tr> <th>Year</th> <td>2011</td> </tr> <tr> <th>Month</th> <td>12</td> </tr> <tr> <th>Day</th> <td>31</td> </tr> <tr> <th>Hour</th> <td>11</td> </tr> <tr> <th>Minute</th> <td>56</td> </tr> <tr> <th>Second</th> <td>2</td> </tr> <tr> <th>ZoneHours</th> <td>8</td> </tr> <tr> <th>ZoneMinutes</th> <td>0</td> </tr> </table>

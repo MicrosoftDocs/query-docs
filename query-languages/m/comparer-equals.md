@@ -1,6 +1,6 @@
 ---
 title: "Comparer.Equals | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,33 +11,20 @@ manager: kfile
 ---
 # Comparer.Equals
 
-  
-## About  
-Returns a logical value based on the equality check over the two given values.  
-  
 ## Syntax
 
-<pre> 
+<pre>
 Comparer.Equals(comparer as function, x as any, y as any) as logical  
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|comparer|The comparer function is used to perform the operation.|  
-|x|The left value to compare.|  
-|y|The right value to compare.|  
-  
-## Example  
-  
-```powerquery-m  
-let  
-comparer1 = Comparer.FromCulture("en-us", false),  
-comparer2 = Comparer.FromCulture("en-us", true)      
-in       
-[         
-Test1 =  Comparer.Equals(comparer1,"a","A"), equals false   
-Test2 = Comparer.Equals(comparer2,"a","A") equals true       
-]  
-```  
+## About  
+Returns a `logical` value based on the equality check over the two given values, `x` and `y`, using the provided `comparer`. <div> `comparer` is a `Comparer` which is used to control the comparison. Comparers can be used to provide case insensitive or culture and locale aware comparisons. </div> <div> The following built in comparers are available in the formula language: </div> <ul> <li><code>Comparer.Ordinal</code>: Used to perform an exact ordinal comparison</li> <li><code>Comparer.OrdinalIgnoreCase</code>: Used to perform an exact ordinal case-insensitive comparison</li> <li> <code>Comparer.FromCulture</code>: Used to perform a culture aware comparison</li> </ul>
+
+## Example 1
+Compare "1" and "A" using "en-US" locale to determine if the values are equal.
+
+```powerquery-m
+Comparer.Equals(Comparer.FromCulture("en-us"), "1", "A")
+```
+
+`false`

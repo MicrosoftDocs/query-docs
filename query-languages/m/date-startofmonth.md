@@ -1,6 +1,6 @@
 ---
 title: "Date.StartOfMonth | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,31 +11,20 @@ manager: kfile
 ---
 # Date.StartOfMonth
 
-  
-## About  
-Returns a DateTime value representing the start of the month.  
-  
 ## Syntax
 
 <pre>
-Date.StartOfMonth(dateTime as nullable datetime) as nullable datetime  
+Date.StartOfMonth(<b>dateTime</b> as any) as any
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|The DateTime to check against.|  
-  
-## Remarks  
-  
--   The date and time portions are reset to their initial values for the month.  
-  
--   The timezone information is persisted.  
-  
-## <a name="__goback"></a>Example  
-  
+## About  
+Returns the first value of the month given a `date` or `datetime` type.
+
+## Example 1
+Find the start of the month for October 10th, 2011, 8:10:32AM (`#datetime(2011, 10, 10, 8, 10, 32)`).
+
 ```powerquery-m
-dateTime = DateTimeZone.FromText("2011-02-21T12:30:00-08:00");  
-Date.StartOfMonth(dateTime) equals 2011-02-01T00:00:00-08:00  
-```  
+Date.StartOfMonth(#datetime(2011, 10, 10, 8, 10, 32))
+```
+
+`#datetime(2011, 10, 1, 0, 0, 0)`

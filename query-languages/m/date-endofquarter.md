@@ -1,6 +1,6 @@
 ---
 title: "Date.EndOfQuarter | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,20 @@ manager: kfile
 ---
 # Date.EndOfQuarter
 
-  
-## About  
-Returns a Date/DateTime/DateTimeZone value representing the end of the quarter. The date and time portions are reset to their terminating values for the quarter. The timezone information is persisted.  
-  
 ## Syntax
 
-<pre>  
-Date.EndOfQuarter(dateTime)  
+<pre>
+Date.EndOfQuarter(<b>dateTime</b> as any) as any 
 </pre> 
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|The DateTime whose date and time portions are to be reset to their terminating values for the quarter.|  
-  
+## About  
+Returns a `date`, `datetime`, or `datetimezone` value representing the end of the quarter in `dateTime`. Time zone information is preserved. <ul> <li><code>dateTime</code>: A <code>date</code>, <code>datetime</code>, or <code>datetimezone</code> value from which the end of the quarter is calculated.</li> </ul>
+
+## Example 1
+Find the end of the quarter for October 10th, 2011, 8:00AM (`#datetime(2011, 10, 10, 8, 0, 0)`).
+
+```powerquery-m
+Date.EndOfQuarter(#datetime(2011, 10, 10, 8, 0, 0))
+```
+
+`#datetime(2011, 12, 31, 23, 59, 59.9999999)`

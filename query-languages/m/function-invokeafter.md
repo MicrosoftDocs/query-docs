@@ -1,6 +1,6 @@
 ---
 title: "Function.InvokeAfter | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,9 +14,9 @@ manager: kfile
 ## Syntax
 
 <pre>
-Function.InvokeAfter(function as function, delay as duration) as any  
+Function.InvokeAfter(<b>function</b> as function, <b>delay</b> as duration) as any 
 </pre>
   
 ## About  
-Returns the result of invoking function after duration delay has passed.  
+Returns the result of invoking `function` after duration `delay` has passed.
   

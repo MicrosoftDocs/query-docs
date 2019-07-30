@@ -1,6 +1,6 @@
 ---
 title: "Date.DayOfWeekName | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -13,14 +13,14 @@ manager: kfile
 
 ## Syntax
 
-<pre>  
-Date.DayOfWeekName(**date** as any, optional **culture** as nullable text)
+<pre>
+Date.DayOfWeekName(<b>date</b> as any, optional <b>culture</b> as nullable text)
 </pre>
 
 ## About
 Returns the day of the week name for the provided `date` and, optionally, a culture `culture`.
 
-## Example
+## Example 1
 Get the day of the week name.
 
 ```powerquery-m

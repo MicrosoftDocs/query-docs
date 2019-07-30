@@ -1,6 +1,6 @@
 ---
 title: "Duration.TotalSeconds | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,32 +11,20 @@ manager: kfile
 ---
 # Duration.TotalSeconds
 
-  
-## About  
-Returns the total magnitude of seconds from a duration value.  
-  
 ## Syntax
 
 <pre>
-Duration.TotalSeconds(duration as nullable duration) as nullable number  
+Duration.TotalSeconds(<b>duration</b> as nullable duration) as nullable number
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|duration|The Duration to parse.|  
-  
-## <a name="__goback"></a>Example  
-  
+## About  
+Returns the total seconds spanned by the provided `duration` value, `duration`.
+
+## Example 1
+Find the total seconds spanned in #duration(5, 4, 3, 2).
+
 ```powerquery-m
-let  
-duration = #duration(2,22,120,20)  
-in  
-[  
-totaldays= Duration.TotalDays(duration) equals 3.0002  
-totalhours= Duration.TotalHours(duration) equals 72.005  
-totalminutes= Duration.TotalMinutes(duration) equals 4320.33  
-totalseconds=Duration.TotalSeconds(duration) equals 259220  
-]  
-```  
+Duration.TotalSeconds(#duration(5, 4, 3, 2))
+```
+
+`446582`

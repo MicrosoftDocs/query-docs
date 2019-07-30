@@ -1,6 +1,6 @@
 ---
 title: "DateTimeZone.RemoveZone | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,24 +11,21 @@ manager: kfile
 ---
 # DateTimeZone.RemoveZone
 
-  
-## About  
-Returns a datetime value with the zone information removed from the input datetimezone value.  
-  
 ## Syntax
 
 <pre>
-DateTimeZone.RemoveZone(dateTimeZone as datetimezone) as nullable datetime  
+DateTimeZone.RemoveZone(<b>dateTimeZone</b> as nullable datetimezone) as nullable datetime
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTimeZone|The DateTimeZone to modify.|  
-  
-## Example  
-  
+## About  
+Returns a #datetime value from `dateTimeZone` with timezone information removed.
+
+## Example 1
+Remove timezone information from the value #datetimezone(2011, 12, 31, 9, 15, 36, -7, 0).
+
 ```powerquery-m
-DateTimeZone.RemoveZone(#datetimezone(2010, 5, 4, 14, 5, 5, 8, 0)) equals #datetime(2010, 5, 4, 14, 5, 5)  
-```  
+DateTimeZone.RemoveZone( #datetimezone(2011, 12, 31, 9, 15, 36,-7, 0))
+```
+
+`#datetime(2011, 12, 31, 9, 15, 36)`
+

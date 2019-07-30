@@ -1,6 +1,6 @@
 ---
 title: "Date.StartOfYear | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,31 +11,20 @@ manager: kfile
 ---
 # Date.StartOfYear
 
-  
-## About  
-Returns a DateTime value representing the start of the year.  
-  
 ## Syntax
 
 <pre>
-Date.StartOfYear(dateTime as nullable datetime) as nullable datetime  
+Date.StartOfYear(<b>dateTime</b> as any) as any
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|The DateTime to check against.|  
-  
-## Remarks  
-  
--   The date and time portions are reset to their initial values for the year.  
-  
--   The timezone information is persisted.  
-  
-## <a name="__goback"></a>Example  
-  
+## About  
+Returns the first value of the year given a `date`, `datetime`, or `datetimezone` value.
+
+## Example 1
+Find the start of the year for October 10th, 2011, 8:10:32AM (`#datetime(2011, 10, 10, 8, 10, 32)`).
+
 ```powerquery-m
-dateTime=DateTimeZone.FromText("2011-02-21T12:30:00-08:00")   
-Date.StartOfYear(dateTime) equals 2011-01-01T00:00:00-08:00  
-```  
+Date.StartOfYear(#datetime(2011, 10, 10, 8, 10, 32))
+```
+
+`#datetime(2011, 1, 1, 0, 0, 0)`

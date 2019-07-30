@@ -1,6 +1,6 @@
 ---
 title: "DateTimeZone.FixedLocalNow | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,12 +11,11 @@ manager: kfile
 ---
 # DateTimeZone.FixedLocalNow
 
-  
-## About  
-Returns a DateTimeZone value set to the current date, time, and timezone offset on the system. This value is fixed and will not change with successive calls, unlike DateTime.LocalNow, which may return different values over the course of execution of an expression.  
-  
 ## Syntax
 
-<pre> 
-DateTimeZone.FixedLocalNow() as datetimezone  
-```  
+<pre>
+DateTimeZone.FixedLocalNow() as datetimezone
+</pre>
+  
+## About  
+Returns a `datetime` value set to the current date and time on the system. The returned value contains timezone information representing the local timezone. This value is fixed and will not change with successive calls, unlike DateTimeZone.LocalNow, which may return different values over the course of execution of an expression.

@@ -1,6 +1,6 @@
 ---
 title: "DateTimeZone.ToUtc | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,28 +11,20 @@ manager: kfile
 ---
 # DateTimeZone.ToUtc
 
-  
-## About  
-Returns a DateTime value to the Utc time zone.  
-  
 ## Syntax
 
 <pre>
-DateTimeZone.ToUtc(dateTime as datetimezone) as nullable datetimezone  
+DateTimeZone.ToUtc(<b>dateTimeZone</b> as nullable datetimezone) as nullable datetimezone
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|The DateTimeZone to convert.|  
-  
-## Example  
-  
+## About  
+Changes timezone information of the datetime value `dateTimeZone` to the UTC or Universal Time timezone information. If `dateTimeZone` does not have a timezone component, the UTC timezone information is added.
+
+## Example 1
+Change timezone information for #datetimezone(2010, 12, 31, 11, 56, 02, 7, 30) to UTC timezone.
+
 ```powerquery-m
-dateTime  = DateTimeZone.FromText("2011-02-20T22:19:27+03:00")  
-```  
-  
-```powerquery-m
-utcTime = DateTimeZone.ToUtc(dateTime)equals 2011-02-20T19:19:27+00:00  
-```  
+DateTimeZone.ToUtc(#datetimezone(2010, 12, 31, 11, 56, 02, 7, 30))
+```
+
+`#datetimezone(2010, 12, 31, 4, 26, 2, 0, 0)`

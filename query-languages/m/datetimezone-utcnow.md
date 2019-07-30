@@ -1,6 +1,6 @@
 ---
 title: "DateTimeZone.UtcNow | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,22 +11,20 @@ manager: kfile
 ---
 # DateTimeZone.UtcNow
 
-  
-## About  
-Returns a DateTime value set to the current system date and time in the Utc timezone.  
-  
 ## Syntax
 
 <pre>
 DateTimeZone.UtcNow() as datetimezone
 </pre>
   
-## Remarks  
-  
--   The return value contains timezone information for the Utc timezone (00:00).  
-  
-## Example  
-  
+## About  
+Returns the current date and time in UTC (the GMT timezone).
+
+## Example 1
+Get the current date & time in UTC.
+
 ```powerquery-m
-DateTimeZone.UtcNow() equals 2011-02-21T06:25:51+00:00  
-```  
+DateTimeZone.UtcNow()
+```
+
+`#datetimezone(2011, 8, 16, 23, 34, 37.745, 0, 0)`

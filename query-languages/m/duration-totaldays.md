@@ -1,6 +1,6 @@
 ---
 title: "Duration.TotalDays | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,20 @@ manager: kfile
 ---
 # Duration.TotalDays
 
-  
-## About  
-Returns the total magnitude of days from a Duration value.  
-  
 ## Syntax
 
 <pre>
-Duration.TotalDays(duration as nullable duration) as nullable number  
+Duration.TotalDays(<b>duration</b> as nullable duration) as nullable number
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|duration|The Duration to parse.|  
-  
+## About  
+Returns the total days spanned by the provided `duration` value, `duration`.
+
+## Example 1
+Find the total days spanned in #duration(5, 4, 3, 2).
+
+```powerquery-m
+Duration.TotalDays(#duration(5, 4, 3, 2))
+```
+
+`5.1687731481481478`

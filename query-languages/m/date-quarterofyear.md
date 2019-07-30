@@ -1,6 +1,6 @@
 ---
 title: "Date.QuarterOfYear | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,28 +11,20 @@ manager: kfile
 ---
 # Date.QuarterOfYear
 
-  
-## About  
-Returns a number between 1 and 4 for the quarter of the year from a DateTime value.  
-  
 ## Syntax
 
 <pre>
-Date.QuarterOfYear(dateTime as datetime) as nullable number  
+Date.QuarterOfYear(<b>dateTime</b> as any) as nullable number
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|The DateTime to check against.|  
-  
-## Examples  
-  
-```powerquery-m  
-Date.QuarterOfYear(DateTime.FromText("2011-03-21")) equals 1  
-```  
-  
+## About  
+Returns a number from 1 to 4 indicating which quarter of the year the date `dateTime` falls in. `dateTime` can be a `date`, `datetime`, or `datetimezone` value.
+
+## Example 1
+Find which quarter of the year the date #date(2011, 12, 31) falls in.
+
 ```powerquery-m
-Date.QuarterOfYear(DateTime.FromText("2011-11-21")) equals 4  
-```  
+Date.QuarterOfYear(#date(2011, 12, 31))
+```
+
+`4`
