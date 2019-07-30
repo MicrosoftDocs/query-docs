@@ -27,4 +27,4 @@ Find the total minutes spanned in #duration(5, 4, 3, 2).
 Duration.TotalMinutes(#duration(5, 4, 3, 2))
 ```
 
-7443.0333333333338`
+`7443.0333333333338`
