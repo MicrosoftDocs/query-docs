@@ -27,6 +27,4 @@ Add 5 days to the `date`, `datetime`, or `datetimezone` value representing the d
 Date.AddDays(#date(2011, 5, 14), 5)
 ```
 
-```powerquery-m
-#date(2011, 5, 19)
-```
+`#date(2011, 5, 19)`
