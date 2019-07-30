@@ -27,9 +27,7 @@ Get the end of the week for 5/14/2011.
 Date.EndOfWeek(#date(2011, 5, 14))
 ```
 
-```powerquery-m
-#date(2011, 5, 14)
-```
+`#date(2011, 5, 14)`
 
 ## Example 2
 Get the end of the week for 5/17/2011 05:00:00 PM -7:00, with Sunday as the first day of the week.
@@ -38,7 +36,5 @@ Get the end of the week for 5/17/2011 05:00:00 PM -7:00, with Sunday as the firs
 Date.EndOfWeek(#datetimezone(2011, 5, 17, 5, 0, 0, -7, 0), Day.Sunday)
 ```
 
-```powerquery-m
-#datetimezone(2011, 5, 21, 23, 59, 59.9999999, -7, 0)
-```
+`#datetimezone(2011, 5, 21, 23, 59, 59.9999999, -7, 0)`
 
