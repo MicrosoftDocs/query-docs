@@ -27,6 +27,4 @@ Set timezone information for #datetime(2010, 12, 31, 11, 56, 02) to 7 hours, 30 
 DateTime.AddZone(#datetime(2010, 12, 31, 11, 56, 02), 7, 30)
 ```
 
-```powerquery-m
-#datetimezone(2010, 12, 31, 11, 56, 2, 7, 30)
-```
+`#datetimezone(2010, 12, 31, 11, 56, 2, 7, 30)`
