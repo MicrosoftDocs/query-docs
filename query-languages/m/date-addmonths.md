@@ -27,9 +27,7 @@ Add 5 months to the `date`, `datetime`, or `datetimezone` value representing the
 Date.AddMonths(#date(2011, 5, 14), 5)
 ```
 
-```powerquery-m
-#date(2011, 10, 14)
-```
+`#date(2011, 10, 14)`
 
 ## Example 2
 Add 18 months to the `date`, `datetime`, or `datetimezone` value representing the date and time of 5/14/2011 08:15:22 AM.
@@ -38,6 +36,4 @@ Add 18 months to the `date`, `datetime`, or `datetimezone` value representing th
 Date.AddMonths(#datetime(2011, 5, 14, 8, 15, 22), 18)
 ```
 
-```powerquery-m
-#datetime(2012, 11, 14, 8, 15, 22)
-```
+`#datetime(2012, 11, 14, 8, 15, 22)`
