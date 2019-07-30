@@ -1,6 +1,6 @@
 ---
 title: "Duration.FromText | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,46 +11,21 @@ manager: kfile
 ---
 # Duration.FromText
 
-  
-## About  
-Returns a Duration value from a text value.  
-  
 ## Syntax
 
 <pre>
-Duration.FromText(duration as nullable text) as nullable duration  
+Duration.FromText(<b>text</b> as nullable text) as nullable duration
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|Duration|The text to convert.|  
-  
-## Duration settings  
-  
-|**Format**|  
-|--------------|  
-|[-]hh:mm[:ss]|  
-|[-]ddd.hh:mm[:ss]|  
-  
-**Note**: The values within brackets [] are optional.  
-  
-### Format parts  
-  
-|**Part**|**Description**|  
-|------------|-------------------|  
-|[-]|The text value is prepended with an optional negative sign [-] to indicate a negative duration value.|  
-|[d]|The [d] part represents the day portion of the duration value.|  
-|[m]|The [m] part represents the minute portion of the duration value.|  
-|[s]|The [s] part represents the second portion of the duration value.|  
-  
-## Examples  
-  
+## About  
+Returns a duration value from the specified text, `text`. The following formats can be parsed by this function: <ul> <li>(-)hh:mm(:ss(.ff)) </li> <li>(-)ddd(.hh:mm(:ss(.ff))) </li> </ul> <br> (All ranges are inclusive)<br> ddd: Number of days.<br> hh: Number of hours, between 0 and 23.<br> mm: Number of minutes, between 0 and 59.<br> ss: Number of seconds, between 0 and 59.<br> ff: Fraction of seconds, between 0 and 9999999.
+
+## Example 1
+Convert `"2.05:55:20"` into a `duration` value.
+
 ```powerquery-m
-Duration.FromText("15:35") equals 15 hours, 35 minutes  
-```  
-  
-```powerquery-m
-Duration.FromText("2.15:00") equals 2 days, 15 hours  
-```  
+Duration.FromText("2.05:55:20")
+```
+
+`#duration(2, 5, 55, 20)`
+

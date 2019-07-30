@@ -1,6 +1,6 @@
 ---
 title: "Duration.TotalHours | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,20 @@ manager: kfile
 ---
 # Duration.TotalHours
 
-  
-## About  
-Returns the total magnitude of hours from a Duration value.  
-  
 ## Syntax
 
 <pre>
-Duration.TotalHours(duration as nullable duration) as nullable number  
+Duration.TotalHours(<b>duration</b> as nullable duration) as nullable number
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|duration|The Duration to parse.|  
-  
+## About  
+Returns the total hours spanned by the provided `duration` value, `duration`.
+
+## Example 1
+Find the total hours spanned in #duration(5, 4, 3, 2).
+
+```powerquery-m
+Duration.TotalHours(#duration(5, 4, 3, 2))
+```
+
+`124.05055555555555`

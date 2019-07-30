@@ -1,6 +1,6 @@
 ---
 title: "Duration.Seconds | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,48 +11,20 @@ manager: kfile
 ---
 # Duration.Seconds
 
-  
-## About  
-Returns a second component of a Duration value.  
-  
 ## Syntax
 
 <pre>
-Duration.Seconds(duration as nullable duration) as nullable number  
+Duration.Seconds(<b>duration</b> as nullable duration) as nullable number
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|duration|The Duration to parse.|  
-  
-## Examples  
-  
+## About  
+Returns the seconds component of the provided `duration` value, `duration`.
+
+## Example 1
+Find the seconds in #duration(5, 4, 3, 2).
+
 ```powerquery-m
-duration1 = Duration.FromText("2.05:55:20")  
-```  
-  
-```powerquery-m
-duration2 = Duration.FromText("15:50")  
-```  
-  
-```powerquery-m
-Duration.Days(duration1) equals 2  
-```  
-  
-```powerquery-m
-Duration.Hours(duration1) equals 5  
-```  
-  
-```powerquery-m
-Duration.Minutes(duration1) equals 55  
-```  
-  
-```powerquery-m
-Duration.Seconds(duration1) equals 20  
-```  
-  
-```powerquery-m
-Duration.Seconds(duration2) equals 0  
-```  
+Duration.Seconds(#duration(5, 4, 3, 2))
+```
+
+`2`
