@@ -27,6 +27,4 @@ Find the end of the quarter for October 10th, 2011, 8:00AM (`#datetime(2011, 10,
 Date.EndOfQuarter(#datetime(2011, 10, 10, 8, 0, 0))
 ```
 
-```powerquery-m
-#datetime(2011, 12, 31, 23, 59, 59.9999999)
-```
+`#datetime(2011, 12, 31, 23, 59, 59.9999999)`
