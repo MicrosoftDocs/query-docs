@@ -27,9 +27,7 @@ Get the end of the month for 5/14/2011.
 Date.EndOfMonth(#date(2011, 5, 14))
 ```
 
-```powerquery-m
-#date(2011, 5, 31)
-```
+`#date(2011, 5, 31)`
 
 ## Example 2
 Get the end of the month for 5/17/2011 05:00:00 PM -7:00.
@@ -38,6 +36,4 @@ Get the end of the month for 5/17/2011 05:00:00 PM -7:00.
 Date.EndOfMonth(#datetimezone(2011, 5, 17, 5, 0, 0, -7, 0))
 ```
 
-```powerquery-m
-#datetimezone(2011, 5, 31, 23, 59, 59.9999999, -7, 0)
-```
+`#datetimezone(2011, 5, 31, 23, 59, 59.9999999, -7, 0)`
