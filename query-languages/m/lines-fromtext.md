@@ -1,6 +1,6 @@
 ---
 title: "Lines.FromText | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,21 +11,11 @@ manager: kfile
 ---
 # Lines.FromText
 
-  
-## About  
-Converts a text value to a list of text values split at lines breaks.  
-  
 ## Syntax
 
 <pre>
-Lines.FromText(text as text,  optional quoteStyle as nullable number,  optional includeLineSeparators as nullable logical) as list  
+Lines.FromText(<b>text</b> as text, optional <b>quoteStyle</b> as nullable number, optional <b>includeLineSeparators</b> as nullable logical) as list
 </pre>
   
-## <a name="__toc360789868"></a>Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|text|The text to parse.|  
-|optional quoteStyle|Style of quote.|  
-|optional includeLineSeparators|If includeLineSeparators is true, then the line break characters are included in the text. If a delimiter is specified, then line breaks may appear within quotes|  
-  
+## About  
+Converts a text value to a list of text values split at lines breaks. If includeLineSeparators is true, then the line break characters are included in the text. <div> <ul> <li><code>QuoteStyle.None:</code> (default) No quoting behavior is needed.</li> <li><code>QuoteStyle.Csv:</code> Quoting is as per Csv. A double quote character is used to demarcate such regions, and a pair of double quote characters is used to indicate a single double quote character within such a region. </li> </ul> </div> 
