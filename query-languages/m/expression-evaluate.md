@@ -1,6 +1,6 @@
 ---
 title: "Expression.Evaluate | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -10,15 +10,16 @@ ms.author: owend
 manager: kfile
 ---
 # Expression.Evaluate
+
+## Syntax
+
+<pre>
+Expression.Evaluate(<b>document</b> as text, optional <b>environment</b> as nullable record) as any 
+</pre>
   
 ## About  
 Evaluates a Text expression and returns the evaluated value.  
   
-## Syntax
-
-<pre>
-Expression.Evaluate(expression as text, optional environment as [...]) as any  
-</pre>
   
 ## Arguments  
   

@@ -1,6 +1,6 @@
 ---
 title: "Expression.Constant | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,15 +11,16 @@ manager: kfile
 ---
 # Expression.Constant
 
-  
-## About  
-Returns a constant text literal from a value.  
-  
+
 ## Syntax
 
 <pre>
-Expression.Constant(value as any) as text  
+Expression.Constant(<b>value</b> as any) as text  
 </pre>
+  
+## About  
+Returns a constant text literal from a value.  
+
   
 ## Arguments  
   
