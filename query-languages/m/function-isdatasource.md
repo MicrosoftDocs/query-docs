@@ -1,6 +1,6 @@
 ---
 title: "Function.IsDataSource | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,9 +14,9 @@ manager: kfile
 ## Syntax
 
 <pre>
-Function.IsDataSource(function as function) as logical 
+Function.IsDataSource(<b>function</b> as function) as logical
 </pre> 
   
 ## About  
-Returns whether or not function is considered a data source.  
+Returns whether or not `function` is considered a data source.
   
