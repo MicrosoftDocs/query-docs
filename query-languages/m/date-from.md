@@ -1,6 +1,6 @@
 ---
 title: "Date.From | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,45 +11,30 @@ manager: kfile
 ---
 # Date.From
 
-  
-## About  
-Returns a date value from a value.  
-  
 ## Syntax
 
-<pre>  
-Date.From(value as any, optional culture as nullable text) as nullable date  
-</pre> 
+<pre>
+Date.From(<b>value</b> as any, optional <b>culture</b> as nullable text) as nullable date 
+</pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|value|Value to convert.|  
-|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
-  
-Values of the following types can be converted to a date value:  
-  
-|**Type**|**Description**|  
-|------------|-------------------|  
-|text|Returns a Date value from a text value. For more details, see Date.FromText.|  
-|datetime|The Date component of a value.|  
-|datetimezone|The Date component of the local date and time equivalent of a value.|  
-|number|The Date component of the datetime equivalent of the OLE Automation Date of  a value.|  
-|any other type|An Expression.Error is thrown.|  
-  
-## <a name="__toc360788945"></a>Remarks  
-  
--   If a value is null, Date.From returns null.  
-  
--   If a value is date, the same value is returned.  
-  
-## Examples  
-  
+## About  
+Returns a `date` value from the given `value`. If the given `value` is `null`, `Date.From` returns `null`. If the given `value` is `date`, `value` is returned. Values of the following types can be converted to a `date` value: <ul> <li><code>text</code>: A <code>date</code> value from textual representation. See <code>Date.FromText</code> for details.</li> <li><code>datetime</code>: The date component of the <code>value</code>.</li> <li><code>datetimezone</code>: The date component of the local datetime equivalent of <code>value</code>.</li> <li><code>number</code>: The date component of the datetime equivalent the OLE Automation Date expressed by <code>value</code>.</li> </ul> If <code>value</code> is of any other type, an error is returned.
+
+## Example 1
+Convert `43910` to a `date` value.
+
 ```powerquery-m
-Date.From(43910) equals #date(2020,3,20)  
-```  
-  
+Date.From(43910)
+```
+
+`#date(2020, 3, 20)`
+
+
+## Example 2
+Convert `#datetime(1899, 12, 30, 06, 45, 12)` to a `date` value.
+
 ```powerquery-m
-Date.From(#datetime(1899, 12, 30, 6, 45, 12)) equals #date(1899,12,30)  
-```  
+Date.From(#datetime(1899, 12, 30, 06, 45, 12))
+```
+
+`#date(1899, 12, 30)`

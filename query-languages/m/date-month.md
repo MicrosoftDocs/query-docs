@@ -1,6 +1,6 @@
 ---
 title: "Date.Month | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,24 +11,20 @@ manager: kfile
 ---
 # Date.Month
 
-  
-## About  
-Returns the month from a DateTime value.  
-  
 ## Syntax
 
 <pre>
-Date.Month(dateTime as datetime) as nullable number  
+Date.Month(<b>dateTime</b> as any) as nullable number
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|date|The Date to retrieve the month for.|  
-  
-## Example  
-  
+## About  
+Returns the month component of the provided `datetime` value, `dateTime`.
+
+## Example 1
+Find the month in #datetime(2011, 12, 31, 9, 15, 36).
+
 ```powerquery-m
-Date.Month(DateTime.FromText("2011-02-19")) equals 2  
-```  
+Date.Month(#datetime(2011, 12, 31, 9, 15, 36))
+```
+
+`12`

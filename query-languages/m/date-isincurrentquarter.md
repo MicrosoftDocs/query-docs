@@ -1,6 +1,6 @@
 ---
 title: "Date.IsInCurrentQuarter | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,20 @@ manager: kfile
 ---
 # Date.IsInCurrentQuarter
 
-  
-## About  
-Returns a logical value indicating whether the given Date/DateTime/DateTimeZone occurred during the current quarter, as determined by the current date and time on the system.  
-  
 ## Syntax
 
 <pre>
-Date.IsInCurrentQuarter(dateTime) as logical  
+Date.IsInCurrentQuarter(<b>dateTime</b> as any) as nullable logical 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|Check whether this DateTime occurred during the current quarter.|  
-  
+## About  
+Indicates whether the given datetime value `dateTime` occurs during the current quarter, as determined by the current date and time on the system. <ul> <li><code>dateTime</code>: A <code>date</code>, <code>datetime</code>, or <code>datetimezone</code> value to be evaluated.</li> </ul>
+
+## Example 1
+Determine if the current system time is in the current quarter.
+
+```powerquery-m
+Date.IsInCurrentQuarter(DateTime.FixedLocalNow())
+```
+
+`true`

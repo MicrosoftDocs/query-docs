@@ -1,6 +1,6 @@
 ---
 title: "Date.IsLeapYear | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,28 +11,20 @@ manager: kfile
 ---
 # Date.IsLeapYear
 
-  
-## About  
-Returns a logical value indicating whether the year portion of a DateTime value is a leap year.  
-  
 ## Syntax
 
 <pre>  
-Date.IsLeapYear(dateTime as nullable datetime) as nullable logical  
+Date.IsLeapYear(<b>dateTime</b> as any) as nullable logical 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|The DateTime to check.|  
-  
-## Examples  
+## About  
+Indicates whether the given datetime value `dateTime` falls in is a leap year. <ul> <li><code>dateTime</code>: A <code>date</code>, <code>datetime</code>, or <code>datetimezone</code> value to be evaluated.</li> </ul>
+
+## Example 1
+Determine if the year 2012, as represented by `#date(2012, 01, 01)` is a leap year.
 
 ```powerquery-m
-Date.IsLeapYear(DateTime.FromText("2011-01-01")) equals false
-```  
-  
-```powerquery-m 
-Date.IsLeapYear(DateTime.FromText("2012-01-01")) equals true  
-```  
+Date.IsLeapYear(#date(2012, 01, 01))
+```
+
+`true`

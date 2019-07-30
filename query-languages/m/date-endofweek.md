@@ -1,6 +1,6 @@
 ---
 title: "Date.EndOfWeek | Microsoft Docs"
-ms.date: 01/16/2019
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,48 +11,30 @@ manager: kfile
 ---
 # Date.EndOfWeek
 
-  
-## About  
-Returns a date, datetime, or datetimezone value for the end of the week.  
-  
 ## Syntax
 
 <pre>
-Date.EndOfWeek(dateTime as any, optional firstDayOfWeek as nullable number) as any   
-</pre>  
+Date.EndOfWeek(<b>dateTime</b> as any, optional <b>firstDayOfWeek</b> as nullable number) as any  
+</pre> 
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|The date, datetime, or datetimezone to check against.|  
-|optional firstDayOfWeek|A number value as an enum value to set the last day of the week. The default value for firstDayOfWeek is Day.Sunday.|  
-  
-### Day Enum Values  
-  
--   Day.Sunday = 0;  
-  
--   Day.Monday = 1;  
-  
--   Day.Tuesday = 2;  
-  
--   Day.Wednesday = 3;  
-  
--   Day.Thursday= 4;  
-  
--   Day.Friday = 5;  
-  
--   Day.Saturday= 6;  
-  
-## Remarks  
-  
--   The date and time portions are reset to their initial values for the week.  
-  
--   The timezone information is persisted.  
-  
-## <a name="__goback"></a>Example  
-  
-```powerquery-m  
-let dateTime = DateTimeZone.FromText("2011-02-24T12:30:00-08:00") in  
-Date.EndOfWeek(dateTime, Day.Sunday) equals 2011-02-26T23:59:59.9999999-08:00  
-```  
+## About  
+Returns the last day of the week in the provided `date`, `datetime`, or `datetimezone` `dateTime`. This function takes an optional `Day`, `firstDayOfWeek`, to set the first day of the week for this relative calculation. The default value is `Day.Sunday`. <ul> <li><code>dateTime</code>: A <code>date</code>, <code>datetime</code>, or <code>datetimezone</code> value from which the last day of the week is calculated</li> <li><code>firstDayOfWeek</code>: <i>[Optional]</i> A <code>Day.Type</code> value representing the first day of the week. Possible values are <code>Day.Sunday</code>, <code>Day.Monday</code>, <code>Day.Tuesday</code>, <code>Day.Wednesday</code>, <code>Day.Thursday</code>, <code>Day.Friday</code> and <code>Day.Saturday.</code> . The default value is <code>Day.Sunday</code>.</li> </ul>
+
+## Example 1
+Get the end of the week for 5/14/2011.
+
+```powerquery-m
+Date.EndOfWeek(#date(2011, 5, 14))
+```
+
+`#date(2011, 5, 14)`
+
+## Example 2
+Get the end of the week for 5/17/2011 05:00:00 PM -7:00, with Sunday as the first day of the week.
+
+```powerquery-m
+Date.EndOfWeek(#datetimezone(2011, 5, 17, 5, 0, 0, -7, 0), Day.Sunday)
+```
+
+`#datetimezone(2011, 5, 21, 23, 59, 59.9999999, -7, 0)`
+

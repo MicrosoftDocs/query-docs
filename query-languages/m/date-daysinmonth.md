@@ -1,6 +1,6 @@
 ---
 title: "Date.DaysInMonth | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,24 +11,20 @@ manager: kfile
 ---
 # Date.DaysInMonth
 
-  
-## About  
-Returns the number of days in the month from a DateTime value.  
-  
 ## Syntax
 
-<pre>  
-Date.DaysInMonth(dateTime as datetime) as nullable number  
+<pre>
+Date.DaysInMonth(<b>dateTime</b> as any) as nullable number 
 </pre> 
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|The DateTime to check against.|  
-  
-## Example  
-  
-```powerquery-m  
-Date.DaysInMonth(DateTime.FromText("2012-03-01")) equals 31  
-```  
+## About  
+Returns the number of days in the month in the `date`, `datetime`, or `datetimezone` value `dateTime`. <ul> <li><code>dateTime</code>: A <code>date</code>, <code>datetime</code>, or <code>datetimezone</code> value for which the number of days in the month is returned.</li> </ul>
+
+## Example 1
+Number of days in the month December as represented by `#date(2011, 12, 01)`.
+
+```powerquery-m
+Date.DaysInMonth(#date(2011, 12, 01))
+```
+
+`31`

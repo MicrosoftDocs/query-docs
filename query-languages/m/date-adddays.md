@@ -1,6 +1,6 @@
 ---
 title: "Date.AddDays | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,33 +11,20 @@ manager: kfile
 ---
 # Date.AddDays
 
-  
-## About  
-Returns a Date/DateTime/DateTimeZone value with the day portion incremented by the number of days provided. It also handles incrementing the month and year potions of the value as appropriate.  
-  
 ## Syntax
 
-<pre>   
-Date.AddDays(dateTime, days as number)  
+<pre>
+Date.AddDays(<b>dateTime</b> as any, <b>numberOfDays</b> as number) as any  
 </pre> 
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|The DateTime to add days to.|  
-|days|The number of days to add.|  
-  
-## Examples  
-  
-```powerquery-m  
-Date.AddDays(DateTime.FromText("2011-02-19"), 5) equals 2011-02-24  
-```  
-  
-```powerquery-m  
-Date.AddDays(DateTime.FromText("2011-02-19"), -2) equals 2011-02-17  
-```  
-  
-```powerquery-m 
-Date.AddDays(DateTime.FromText("2011-12-31"), 1) equals 2012-01-01  
-```  
+## About  
+Returns the `date`, `datetime`, or `datetimezone` result from adding `numberOfDays` days to the `datetime` value `dateTime`. <ul> <li><code>dateTime</code>: The <code>date</code>, <code>datetime</code>, or <code>datetimezone</code> value to which days are being added.</li> <li><code>numberOfDays</code>: The number of days to add.</li> </ul>
+
+## Example 1
+Add 5 days to the `date`, `datetime`, or `datetimezone` value representing the date 5/14/2011.
+
+```powerquery-m
+Date.AddDays(#date(2011, 5, 14), 5)
+```
+
+`#date(2011, 5, 19)`

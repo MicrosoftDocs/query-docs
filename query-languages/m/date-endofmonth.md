@@ -1,6 +1,6 @@
 ---
 title: "Date.EndOfMonth | Microsoft Docs"
-ms.date: 4/16/2019
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,31 +11,29 @@ manager: kfile
 ---
 # Date.EndOfMonth
 
-  
-## About  
-Returns a DateTime value for the end of the month.  
-  
 ## Syntax
 
-<pre>  
-Date.EndOfMonth(dateTime as nullable datetime) as nullable datetime  
+<pre>
+Date.EndOfMonth(<b>dateTime</b> as any) as any 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|The DateTime to check against.|  
-  
-## Remarks  
-  
--   The date and time portions are reset to their initial values for the month.  
-  
--   The timezone information is persisted.  
-  
-## Example  
-  
-```powerquery-m 
-dateTime = DateTimeZone.FromText("2011-02-21T12:30:00-08:00");   
-Date.EndOfMonth(dateTime) equals 2011-02-28T23:59:59-08:00  
-```  
+## About  
+Returns the last day of the month in `dateTime`. <ul> <li><code>dateTime</code>: A <code>date</code>, <code>datetime</code>, or <code>datetimezone</code> value from which the end of the month is calculated</li> </ul>
+
+## Example 1
+Get the end of the month for 5/14/2011.
+
+```powerquery-m
+Date.EndOfMonth(#date(2011, 5, 14))
+```
+
+`#date(2011, 5, 31)`
+
+## Example 2
+Get the end of the month for 5/17/2011 05:00:00 PM -7:00.
+
+```powerquery-m
+Date.EndOfMonth(#datetimezone(2011, 5, 17, 5, 0, 0, -7, 0))
+```
+
+`#datetimezone(2011, 5, 31, 23, 59, 59.9999999, -7, 0)`
