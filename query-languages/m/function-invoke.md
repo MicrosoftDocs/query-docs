@@ -1,6 +1,6 @@
 ---
 title: "Function.Invoke | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,25 +11,20 @@ manager: kfile
 ---
 # Function.Invoke
 
-  
-## About  
-Invokes the given function using the specified Arguments and returns the result.  
-  
 ## Syntax
 
 <pre>
-Function.Invoke(function as function, args as list) as any  
+Function.Invoke(<b>function</b> as function, <b>args</b> as list) as any 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|function|The function to invoke.|  
-|args|The list of required Arguments.|  
-  
-## Example  
-  
+## About  
+Invokes the given function using the specified list of arguments and returns the result.
+
+## Example 1
+Invokes Record.FieldNames with one argument [A=1,B=2]
+
 ```powerquery-m
-Function.Invoke(Record.FieldNames, {[A=1,B=2]}) equals {"A", "B"}  
-```  
+Function.Invoke(Record.FieldNames, {[A=1,B=2]})
+```
+
+<table> <tr><td>A</td></tr> <tr><td>B</td></tr> </table>
