@@ -27,5 +27,4 @@ Add 2 weeks to the `date`, `datetime`, or `datetimezone` value representing the 
 Date.AddWeeks(#date(2011, 5, 14), 2)
 ```
 
-```powerquery-m
-#date(2011, 5, 28)```
+`#date(2011, 5, 28)`
