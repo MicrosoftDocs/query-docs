@@ -27,6 +27,4 @@ Add 1 quarter to the `date`, `datetime`, or `datetimezone` value representing th
 Date.AddQuarters(#date(2011, 5, 14), 1)
 ```
 
-```powerquery-m
-#date(2011, 8, 14)
-```
+`#date(2011, 8, 14)`
