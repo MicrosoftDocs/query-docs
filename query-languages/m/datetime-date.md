@@ -27,6 +27,4 @@ Find date value of #datetime(2010, 12, 31, 11, 56, 02).
 DateTime.Date(#datetime(2010, 12, 31, 11, 56, 02))
 ```
 
-```powerquery-m
-#date(2010, 12, 31)
-```
+`#date(2010, 12, 31)`
