@@ -1,6 +1,6 @@
 ---
 title: "Date.IsInYearToDate | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,20 @@ manager: kfile
 ---
 # Date.IsInYearToDate
 
-  
-## About  
-Returns a logical value indicating whether the given Date/DateTime/DateTimeZone occurred in the period starting January 1st of the current year and ending on the current day, as determined by the current date and time on the system.  
-  
 ## Syntax
 
 <pre>
-Date. IsInYearToDate(dateTime) as logical  
+Date.IsInYearToDate(<b>dateTime</b> as any) as nullable logical  
 </pre> 
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|Check whether this DateTime occurred in the period starting January 1st of the current year and ending on the current day.|  
-  
+## About  
+Indicates whether the given datetime value `dateTime` occurs during the current year and is on or before the current day, as determined by the current date and time on the system. <ul> <li><code>dateTime</code>: A <code>date</code>, <code>datetime</code>, or <code>datetimezone</code> value to be evaluated.</li> </ul>
+
+## Example 1
+Determine if the current system time is in the year to date.
+
+```powerquery-m
+Date.IsInYearToDate(DateTime.FixedLocalNow())
+```
+
+`true`

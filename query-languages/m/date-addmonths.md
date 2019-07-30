@@ -1,6 +1,6 @@
 ---
 title: "Date.AddMonths | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/29/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,33 +11,33 @@ manager: kfile
 ---
 # Date.AddMonths
 
-  
-## About  
-Returns a DateTime value with the month portion incremented by n months.  
-  
 ## Syntax
 
-<pre>   
-Date.AddMonths(dateTime as datetime, numberOfMonths as number) as nullable datetime  
+<pre>
+Date.AddMonths(<b>dateTime</b> as any, <b>numberOfMonths</b> as number) as any
 </pre> 
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|The DateTime to add months to.|  
-|numberOfMonths|The number of months to add.|  
-  
-## Remarks  
-  
--   It also handles incrementing the year portion of the value as appropriate.  
-  
-## Examples  
-  
-```powerquery-m 
-Date.AddMonths(DateTime.FromText("2011-02-19"), 5) equals 2011-07-19  
-```  
-  
-```powerquery-m 
-Date.AddMonths(DateTime.FromText("2010-12-01"), 2) equals 2011-02-01  
-```  
+## About  
+Returns the `date`, `datetime`, or `datetimezone` result from adding `numberOfMonths` months to the `datetime` value `dateTime`. <ul> <li><code>dateTime</code>: The <code>date</code>, <code>datetime</code>, or <code>datetimezone</code> value to which months are being added.</li> <li><code>numberOfMonths</code>: The number of months to add.</li> </ul>
+
+## Example 1
+Add 5 months to the `date`, `datetime`, or `datetimezone` value representing the date 5/14/2011.
+
+```powerquery-m
+Date.AddMonths(#date(2011, 5, 14), 5)
+```
+
+```powerquery-m
+#date(2011, 10, 14)
+```
+
+## Example 2
+Add 18 months to the `date`, `datetime`, or `datetimezone` value representing the date and time of 5/14/2011 08:15:22 AM.
+
+```powerquery-m
+Date.AddMonths(#datetime(2011, 5, 14, 8, 15, 22), 18)
+```
+
+```powerquery-m
+#datetime(2012, 11, 14, 8, 15, 22)
+```
