@@ -1,6 +1,6 @@
 ---
 title: "DateTimeZone.ToLocal | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,26 +11,21 @@ manager: kfile
 ---
 # DateTimeZone.ToLocal
 
-  
-## About  
-Returns a DateTime value from the local time zone.  
-  
 ## Syntax
 
 <pre>
-DateTimeZone.ToLocal(dateTime as datetimezone) as nullable datetimezone  
+DateTimeZone.ToLocal(<b>dateTimeZone</b> as nullable datetimezone) as nullable datetimezone
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|The DateTimeZone to convert.|  
-  
-## Example  
-  
+## About  
+Changes timezone information of the datetimezone value `dateTimeZone` to the local timezone information. If `dateTimeZone` does not have a timezone component, the local timezone information is added.
+
+## Example 1
+Change timezone information for #datetimezone(2010, 12, 31, 11, 56, 02, 7, 30) to local timezone (assuming PST).
+
 ```powerquery-m
-//assuming local as PST   
-dateTime  = DateTimeZone.FromText("2011-02-20T22:19:27+03:00")  
-localTime=DateTimeZone.ToLocal(dateTime) equals 2011-02-20T11:19:27-08:00  
-```  
+DateTimeZone.ToLocal(#datetimezone(2010, 12, 31, 11, 56, 02, 7, 30))
+```
+
+`#datetimezone(2010, 12, 31, 12, 26, 2, -8, 0)`
+
