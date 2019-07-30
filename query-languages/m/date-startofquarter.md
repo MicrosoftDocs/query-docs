@@ -27,6 +27,4 @@ Find the start of the quarter for October 10th, 2011, 8:00AM (`#datetime(2011, 1
 Date.StartOfQuarter(#datetime(2011, 10, 10, 8, 0, 0))
 ```
 
-```powerquery-m
-#datetime(2011, 10, 1, 0, 0, 0)
-```
+`#datetime(2011, 10, 1, 0, 0, 0)`
