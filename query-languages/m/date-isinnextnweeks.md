@@ -23,7 +23,7 @@ Indicates whether the given datetime value `dateTime` occurs during the next num
 ## Example 1
 Determine if the week after the current system time is in the next two weeks.
 
-<```powerquery-m
+```powerquery-m
 Date.IsInNextNWeeks(Date.AddDays(DateTime.FixedLocalNow(), 7), 2)
 ```
 
