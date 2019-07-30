@@ -25,9 +25,7 @@ Get the end of the day for 5/14/2011 05:00:00 PM.
 Date.EndOfDay(#datetime(2011, 5, 14, 17, 0, 0))
 ```
 
-```powerquery-m
-#datetime(2011, 5, 14, 23, 59, 59.9999999)
-```
+`#datetime(2011, 5, 14, 23, 59, 59.9999999)`
 
 ## Example 2
 Get the end of the day for 5/17/2011 05:00:00 PM -7:00.
@@ -36,6 +34,4 @@ Get the end of the day for 5/17/2011 05:00:00 PM -7:00.
 Date.EndOfDay(#datetimezone(2011, 5, 17, 5, 0, 0, -7, 0))
 ```
 
-```powerquery-m
-#datetimezone(2011, 5, 17, 23, 59, 59.9999999, -7, 0)
-```
+`#datetimezone(2011, 5, 17, 23, 59, 59.9999999, -7, 0)`
