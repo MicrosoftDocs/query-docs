@@ -1,6 +1,6 @@
 ---
 title: "DateTime.From | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,46 +11,33 @@ manager: kfile
 ---
 # DateTime.From
 
-  
-## About  
-Returns a datetime value from a value.  
-  
 ## Syntax
 
 <pre>
-DateTime.From(value as any, optional culture as nullable text) as nullable datetime  
+DateTime.From(<b>value</b> as any, optional <b>culture</b> as nullable text) as nullable datetime
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|value|Value to convert.|  
-|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
-  
-### Type to convert  
-  
-|**Type**|**Description**|  
-|------------|-------------------|  
-|text|Returns a datetime value from a text value. For more details, see DateTime.FromText.|  
-|date|A datetime with value as the date component and 12:0:00 AM as the time component.|  
-|datetimezone|The local date and time equivalent of value.|  
-|time|A datetime with the date equivalent to the OLE Automation Date of 0 as the date component and value as the time component.|  
-|number|A datetime equivalent the OLE Automation Date expressed by value.|  
-|any other type|An Expression.Error is thrown.|  
-  
-## <a name="__toc360789049"></a>Remarks  
-  
--   If a value is null, DateTime.From returns null.  
-  
--   If a value is datetime, the same value is returned.  
-  
-## Examples  
-  
+## About  
+Returns a `datetime` value from the given `value`. If the given `value` is `null`, `DateTime.From` returns `null`. If the given `value` is `datetime`, `value` is returned. Values of the following types can be converted to a `datetime` value: <ul> <li><code>text</code>: A <code>datetime</code> value from textual representation. See <code>DateTime.FromText</code> for details.</li> <li><code>date</code>: A <code>datetime</code> with <code>value</code> as the date component and <code>12:00:00 AM</code> as the time component.</li> <li><code>datetimezone</code>: The local <code>datetime</code> equivalent of <code>value</code>.</li> <li><code>time</code>: A <code>datetime</code> with the date equivalent of the OLE Automation Date of <code>0</code> as the date component and <code>value</code> as the time component.</li> <li><code>number</code>: A <code>datetime</code> equivalent the OLE Automation Date expressed by <code>value</code>. </li> </ul> If `value` is of any other type, an error is returned.
+
+## Example 1
+Convert `#time(06, 45, 12)` to a `datetime` value.
+
 ```powerquery-m
-DateTime.From(#time(06, 45, 12)) equals #datetime(1899, 12, 30, 06, 45, 12)  
-```  
-  
+DateTime.From(#time(06, 45, 12))
+```
+
 ```powerquery-m
-DateTime.From(#date(1975, 4, 4)) equals #datetime(1975, 4, 4, 0, 0, 0)  
-```  
+#datetime(1899, 12, 30, 06, 45, 12)
+```
+
+## Example 2
+Convert `#date(1975, 4, 4)` to a `datetime` value.
+
+```powerquery-m
+DateTime.From(#date(1975, 4, 4))
+```
+
+```powerquery-m
+#datetime(1975, 4, 4, 0, 0, 0)
+```

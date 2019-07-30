@@ -1,6 +1,6 @@
 ---
 title: "DateTime.ToRecord | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,28 +11,20 @@ manager: kfile
 ---
 # DateTime.ToRecord
 
-  
-## About  
-Returns a record containing parts of a DateTime value.  
-  
 ## Syntax
 
 <pre>
-DateTime.ToRecord(dateTime as datetime) as record  
+DateTime.ToRecord(<b>dateTime</b> as datetime) as record
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|The DateTime to parse.|  
-  
-## Example  
-  
+## About  
+Returns a record containing the parts of the given datetime value, `dateTime`. <ul> <li><code>dateTime</code>: A <code>datetime</code> value for from which the record of its parts is to be calculated.</li> </ul>
+
+## Example 1
+Convert the `#datetime(2011, 12, 31, 11, 56, 2)` value into a record containing Date and Time values.
+
 ```powerquery-m
-DateTime.ToRecord(#datetime(2013,1,3,12,4,5)) equals  
-[             
-Year = 2013,   Month = 1,   Day = 3,         
-Hour = 12,  Minute = 4, Second = 5  
-]  
-```  
+DateTime.ToRecord(#datetime(2011, 12, 31, 11, 56, 2))
+```
+
+<table> <tr> <th>Year</th> <td>2011</td> </tr> <tr> <th>Month</th> <td>12</td> </tr> <tr> <th>Day</th> <td>31</td> </tr> <tr> <th>Hour</th> <td>11</td> </tr> <tr> <th>Minute</th> <td>56</td> </tr> <tr> <th>Second</th> <td>2</td> </tr> </table>

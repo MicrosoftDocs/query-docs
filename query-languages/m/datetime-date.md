@@ -1,6 +1,6 @@
 ---
 title: "DateTime.Date | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,24 +11,22 @@ manager: kfile
 ---
 # DateTime.Date
 
-  
-## About  
-Returns a date part from a DateTime value  
-  
 ## Syntax
 
 <pre>
-DateTime.Date(dateTime as datetime) as nullable datetime  
+DateTime.Date(<b>dateTime</b> as any) as nullable date 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|The DateTime to parse.|  
-  
-## Example  
-  
+## About  
+Returns the date component of `dateTime`, the given `date`, `datetime`, or `datetimezone` value.
+
+## Example 1
+Find date value of #datetime(2010, 12, 31, 11, 56, 02).
+
 ```powerquery-m
-DateTime.Date(#datetime(2010, 5, 4, 6, 5, 4)) equals #date(2010, 5, 4)  
-```  
+DateTime.Date(#datetime(2010, 12, 31, 11, 56, 02))
+```
+
+```powerquery-m
+#date(2010, 12, 31)
+```

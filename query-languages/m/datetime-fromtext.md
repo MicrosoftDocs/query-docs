@@ -1,6 +1,6 @@
 ---
 title: "DateTime.FromText | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,54 +11,67 @@ manager: kfile
 ---
 # DateTime.FromText
 
-  
-## About  
-Returns a DateTime value from a set of date formats and culture value.  
-  
 ## Syntax
 
 <pre>
-DateTime.FromText(dateTime as nullable text, optional culture as nullable text) as nullable date </pre>
+DateTime.FromText(<b>text</b> as nullable text, optional <b>culture</b> as nullable text) as nullable datetime
+</pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|The text value to convert.|  
-|Culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
-  
-### DateTime formats  
-  
--   YYYY-MM-DDThh:mm  
-  
--   YYYYMMDDThh:mm  
-  
--   YYYY-MM-DDThh:mm:ss  
-  
--   YYYYMMDDThh:mm:ss  
-  
--   YYYY-MM-DDThh:mm:ss.nnnnnnn  
-  
--   YYYYMMDDThh:mm:ss.nnnnnnn  
-  
-### Terms  
-  
--   Y = years  
-  
--   M = months  
-  
--   D = days  
-  
--   h = hours  
-  
--   m = minutes  
-  
--   s = seconds  
-  
--   n = fractional seconds  
-  
-## Example  
-  
+## About  
+Creates a `datetime` value from a textual representation, `text`, following ISO 8601 format standard. <ul> <li> <code>DateTime.FromText("2010-12-31T01:30:00") </code> // yyyy-MM-ddThh:mm:ss </li> </ul>
+
+## Example 1
+Convert `"2010-12-31T01:30:25"` into a datetime value.
+
 ```powerquery-m
-DateTime.FromText("2010-12-31T01:30:00") equals YYYY-MM-DDThh:mm:ss  
-```  
+DateTime.FromText("2010-12-31T01:30:25")
+```
+
+```powerquery-m
+#datetime(2010, 12, 31, 1, 30, 25)
+```
+
+## Example 2
+Convert `"2010-12-31T01:30"` into a datetime value.
+
+```powerquery-m
+DateTime.FromText("2010-12-31T01:30")
+```
+
+```powerquery-m
+#datetime(2010, 12, 31, 1, 30, 0)
+```
+
+## Example 3
+Convert `"20101231T013025"` into a datetime value.
+
+```powerquery-m
+DateTime.FromText("20101231T013025")
+```
+
+```powerquery-m
+#datetime(2010, 12, 31, 1, 30, 25)
+```
+
+## Example 4
+Convert `"20101231T01:30:25"` into a datetime value.
+
+```powerquery-m
+DateTime.FromText("20101231T01:30:25")
+```
+
+```powerquery-m
+#datetime(2010, 12, 31, 1, 30, 25)
+```
+
+## Example 5
+Convert `"20101231T01:30:25.121212"` into a datetime value.
+
+```powerquery-m
+DateTime.FromText("20101231T01:30:25.121212")
+```
+
+```powerquery-m
+#datetime(2010, 12, 31, 1, 30, 25.121212)
+```
+
