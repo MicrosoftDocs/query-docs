@@ -1,6 +1,6 @@
 ---
 title: "Duration.Hours | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/30/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,20 @@ manager: kfile
 ---
 # Duration.Hours
 
-  
-## About  
-Returns an hour component of a Duration value.  
-  
 ## Syntax
 
 <pre>
-Duration.Hours(duration as nullable duration) as nullable number  
+Duration.Hours(<b>duration</b> as nullable duration) as nullable number 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|duration|The Duration to parse.|  
-  
+## About  
+Returns the hour component of the provided `duration` value, `duration`.
+
+## Example 1
+Find the hours in #duration(5, 4, 3, 2).
+
+```powerquery-m
+Duration.Hours(#duration(5, 4, 3, 2))
+```
+
+`4`
