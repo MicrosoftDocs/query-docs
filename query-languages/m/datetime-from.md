@@ -27,9 +27,7 @@ Convert `#time(06, 45, 12)` to a `datetime` value.
 DateTime.From(#time(06, 45, 12))
 ```
 
-```powerquery-m
-#datetime(1899, 12, 30, 06, 45, 12)
-```
+`#datetime(1899, 12, 30, 06, 45, 12)`
 
 ## Example 2
 Convert `#date(1975, 4, 4)` to a `datetime` value.
@@ -38,6 +36,4 @@ Convert `#date(1975, 4, 4)` to a `datetime` value.
 DateTime.From(#date(1975, 4, 4))
 ```
 
-```powerquery-m
-#datetime(1975, 4, 4, 0, 0, 0)
-```
+`#datetime(1975, 4, 4, 0, 0, 0)`
