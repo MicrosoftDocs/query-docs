@@ -1,6 +1,6 @@
 ---
 title: "List.AnyTrue | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,24 +11,29 @@ manager: kfile
 ---
 # List.AnyTrue
 
-  
-## About  
-Returns true if any expression in a list in true  
-  
 ## Syntax
 
 <pre>
-List.AnyTrue(list as list) as logical
+List.AnyTrue(<b>list</b> as list) as logical
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to check.|  
-  
-## Example  
-  
+## About  
+Returns true if any expression in the list `list` is true.
+
+## Example 1
+Determine if any of the expressions in the list {true, false, 2 > 0} are true.
+
 ```powerquery-m
-List.AnyTrue({2=0, false, 1 < 0 }) equals false  
-```  
+List.AnyTrue({true, false, 2>0})
+```
+
+`true`
+
+## Example 2
+Determine if any of the expressions in the list {2 = 0, false, 2 < 0} are true.
+
+```powerquery-m
+List.AnyTrue({2 = 0, false, 2 < 0})
+```
+
+`false`

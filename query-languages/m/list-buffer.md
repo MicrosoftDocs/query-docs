@@ -1,6 +1,6 @@
 ---
 title: "List.Buffer | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,24 +11,21 @@ manager: kfile
 ---
 # List.Buffer
 
-  
-## About  
-Buffers the list in memory.  The result of this call is a stable list, which means it will have a determinimic count, and order of items.  
-  
 ## Syntax
 
 <pre>
-List.Buffer(list as list) as list  
+List.Buffer(<b>list</b> as list) as list 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to buffer.|  
-  
-## Example  
-  
+## About  
+Buffers the list `list` in memory. The result of this call is a stable list.
+
+## Example 1
+Create a stable copy of the list {1..10}.
+
 ```powerquery-m
-List.Buffer(Sql:Database("localhost","northwind")[Customers]) equals stable copy of table Customers  
-```  
+List.Buffer({1..10})
+```
+
+<table> <tr><td>1</td></tr> <tr><td>2</td></tr> <tr><td>3</td></tr> <tr><td>4</td></tr> <tr><td>5</td></tr> <tr><td>6</td></tr> <tr><td>7</td></tr> <tr><td>8</td></tr> <tr><td>9</td></tr> <tr><td>10</td></tr> </table>
+

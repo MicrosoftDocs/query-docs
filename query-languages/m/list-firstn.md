@@ -1,6 +1,6 @@
 ---
 title: "List.FirstN | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,37 +11,20 @@ manager: kfile
 ---
 # List.FirstN
 
-  
-## About  
-Returns the first set of items in the list by specifying how many items to return or a qualifying condition provided by **countOrCondition**.  
-  
 ## Syntax
 
 <pre>
-List.FirstN(list as list, countOrCondition as any) as any  
+List.FirstN(<b>list</b> as list, <b>countOrCondition</b> as any) as any
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to check.|  
-|countOrCondition|The number or condition to qualify against.|  
-  
-## <a name="__toc360789230"></a>Remarks  
-  
--   If a number is specified, up to that many items are returned.  
-  
--   If a condition is specified as a function, all items are returned that initially meet the condition.  
-  
--   Once an item fails the condition, no further items are considered.  
-  
-## Examples  
-  
+## About  
+ <ul> <li>If a number is specified, up to that many items are returned. </li> <li>If a condition is specified, all items are returned that initially meet the condition. Once an item fails the condition, no further items are considered. </li> </ul>
+
+## Example 1
+Find the intial values in the list {3, 4, 5, -1, 7, 8, 2} that are greater than 0.
+
 ```powerquery-m
-List.FirstN({3, 4, 5, -1, 7, 8, 2}, 2) equals {3, 4}  
-```  
-  
-```powerquery-m
-List.FirstN({3, 4, 5, -1 ,7, 8, 2}, each_ > 2) equals {3, 4, 5}  
-```  
+List.FirstN({3, 4, 5, -1, 7, 8, 2},each _ > 0)
+```
+
+<table> <tr><td>3</td></tr> <tr><td>4</td></tr> <tr><td>5</td></tr> </table>

@@ -1,6 +1,6 @@
 ---
 title: "List.Count | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,28 +11,20 @@ manager: kfile
 ---
 # List.Count
 
-  
-## About  
-Returns the number of items in a list.  
-  
 ## Syntax
 
 <pre>
-List.Count(list as list) as number  
+List.Count(<b>list</b> as list) as number  
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to check.|  
-  
-## Examples  
-  
+## About  
+Returns the number of items in the list `list`.
+
+## Example 1
+Find the number of values in the list {1, 2, 3}.
+
 ```powerquery-m
-List.Count({1,2,3}) equals 3  
-```  
-  
-```powerquery-m
-List.Count({}) equals 0  
-```  
+List.Count({1, 2, 3})
+```
+
+`3`

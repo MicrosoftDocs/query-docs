@@ -1,6 +1,6 @@
 ---
 title: "List.Select | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,25 +11,20 @@ manager: kfile
 ---
 # List.Select
 
-  
-## About  
-Selects the items that match a condition.  
-  
 ## Syntax
 
 <pre>
-List.Select(list as list, condition as function) as list  
+List.Select(<b>list</b> as list, <b>selection</b> as function) as list
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to check.|  
-|condition|The condition to match against.|  
-  
-## <a name="__goback"></a>Example  
-  
+## About  
+Returns a list of values from the list `list`, that match the selection condition `selection`.
+
+## Example 1
+Find the values in the list {1, -3, 4, 9, -2} that are greater than 0.
+
 ```powerquery-m
-List.Select({1, 3, 5}, each _ > 2) equals {3 ,5}  
-```  
+List.Select({1, -3, 4, 9, -2}, each _ > 0)
+```
+
+<table> <tr><td>1</td></tr> <tr><td>4</td></tr> <tr><td>9</td></tr> </table>

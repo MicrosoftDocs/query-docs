@@ -1,6 +1,6 @@
 ---
 title: "List.Range | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,26 +11,29 @@ manager: kfile
 ---
 # List.Range
 
-  
-## About  
-Returns a count items starting at an offset.  
-  
 ## Syntax
 
 <pre>
-List.Range(list as list, offset as number, optional count as number) as list  
+List.Range(<b>list</b> as list, <b>offset</b> as number, optional <b>count</b> as nullable number) as list 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to check.|  
-|offset|The index to start at.|  
-|optional count|Count of items to return.|  
-  
-## <a name="__goback"></a>Example  
-  
+## About  
+Returns a subset of the list beginning at the offset `list`. An optional parameter, `offset`, sets the maximum number of items in the subset.
+
+## Example 1
+Find the subset starting at offset 6 of the list of numbers 1 through 10.
+
 ```powerquery-m
-List.Range({1..10}, 3, 5)  equals  {4, 5, 6, 7, 8}  
-```  
+List.Range({1..10}, 6)
+```
+
+<table> <tr><td>7</td></tr> <tr><td>8</td></tr> <tr><td>9</td></tr> <tr><td>10</td></tr> </table>
+
+## Example 2
+Find the subset of length 2 from offset 6, from the list of numbers 1 through 10.
+
+```powerquery-m
+List.Range({1..10}, 6, 2)
+```
+
+<table> <tr><td>7</td></tr> <tr><td>8</td></tr> </table>

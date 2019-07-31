@@ -1,6 +1,6 @@
 ---
 title: "List.IsDistinct | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,33 +11,29 @@ manager: kfile
 ---
 # List.IsDistinct
 
-  
-## About  
-Returns whether a list is distinct.  
-  
 ## Syntax
 
 <pre>
-List.IsDistinct(list as list, optional equationCriteria as any) as logical  
+List.IsDistinct(<b>list</b> as list, optional <b>equationCriteria</b> as any) as logical 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to check.|  
-|optional equationCriteria|Equation criteria value used to control equality comparison. For more information about equationCriteria, see Parameter Values.|  
-  
-## Examples  
-  
+## About  
+Returns a logical value whether there are duplicates in the list `list`; `true` if the list is distinct, `false` if there are duplicate values. 
+
+## Example 1
+Find if the list {1, 2, 3} is distinct (i.e. no duplicates).
+
 ```powerquery-m
-List.IsDistinct({1, 2, 3, 2, 3}) equals false  
-```  
-  
+List.IsDistinct({1, 2, 3})
+```
+
+`true`
+
+## Example 2
+Find if the list {1, 2, 3, 3} is distinct (i.e. no duplicates).
+
 ```powerquery-m
-List.IsDistinct({"a","b","A"}, Comparer.FromCulture("en",false) equals true  
-```  
-  
-```powerquery-m
-List.IsDistinct({"a","b","A"}, Comparer.FromCulture("en",true) equals false  
-```  
+List.IsDistinct({1, 2, 3, 3})
+```
+
+`false`

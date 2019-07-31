@@ -1,6 +1,6 @@
 ---
 title: "List.PositionOf | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,50 +11,20 @@ manager: kfile
 ---
 # List.PositionOf
 
-  
-## About  
-Finds the first occurrence of a value in a list and returns its position.  
-  
 ## Syntax
 
 <pre>
-List.PositionOf(list as list, value as any, optional occurrence as nullable number,optional equationCriteria as any) as any  
+List.PositionOf(<b>list</b> as list, <b>value</b> as any, optional <b>occurrence</b> as nullable number, optional <b>equationCriteria</b> as any) as any
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to check.|  
-|value|The value to check for.|  
-|optional occurrence|An enum that controls the scope of operation.|  
-|optional equationCriteria|An optional equation criteria value to control equality comparisons. For more information about equality comparisons, see Parameter Values.|  
-  
-## Occurrence settings  
-  
-|**Setting**|**Description**|  
-|---------------|-------------------|  
-|Occurrence.First and Occurrence.Last|Returns a single position.|  
-|Occurrence.All|Returns a list of positions with all occurrences.|  
-  
-## <a name="__toc360789324"></a>Remarks  
-  
--   If the value is not found in the list, -1 is returned  
-  
-## Examples  
-  
-```powerquery-m
-List.PositionOf({"A", "B", "C", "D"}, "C") equals 2  
-```  
+## About  
+Returns the offset at which the value `value` appears in the list `list`. Returns -1 if the value doesn't appear. An optional occurrence parameter `occurrence` can be specified. <ul> <li><code>occurrence</code>: The maximum number of occurrences to report.</li> </ul>
+
+## Example 1
+Find the position in the list {1, 2, 3} at which the value 3 appears.
 
 ```powerquery-m
-List.PositionOf({"A", "B", "C", "B", "A"}, "A", Occurrence.First)  equals 0  
-```  
-  
-```powerquery-m
-List.PositionOf({"A", "B", "C", "B", "A"}, "A", Occurrence.Last) equals 4  
-```  
-  
-```powerquery-m
-List.PositionOf({"A", "B", "C", "B", "A"}, "A", Occurrence.All) equals {0, 4}  
-```  
+List.PositionOf({1, 2, 3}, 3)
+```
+
+`2`

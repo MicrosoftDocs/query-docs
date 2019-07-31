@@ -1,6 +1,6 @@
 ---
 title: "List.SingleOrDefault | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,41 +11,38 @@ manager: kfile
 ---
 # List.SingleOrDefault
 
-  
-## About  
-Returns a single item from a list.  
-  
 ## Syntax
 
 <pre>
-List.SingleOrDefault(list as list, optional default as any) as any  
+List.SingleOrDefault(<b>list</b> as list, optional <b>default</b> as any) as any 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|List|The List to check.|  
-|optional default|Specifies a default value to be returned.|  
-  
-## <a name="__toc360789261"></a>Remarks  
-  
--   If list is empty, a default value is returned instead.  
-  
--   If default is not specified, the default value of null is assumed.  
-  
--   If list has more than one item, an error is returned.  
-  
-## Examples  
-  
+## About  
+If there is only one item in the list `list`, returns that item. If the list is empty, the function returns null unless an optional `default` is specified. If there is more than one item in the list, the function returns an error.
+
+## Example 1
+Find the single value in the list {1}.
+
 ```powerquery-m
-List.SingleOrDefault({1}) equals 1  
-```  
-  
+List.SingleOrDefault({1})
+```
+
+`1`
+
+## Example 2
+Find the single value in the list {}.
+
 ```powerquery-m
-List.SingleOrDefault({1, 2, 3}) equals error  
-```  
-  
+List.SingleOrDefault({})
+```
+
+`null`
+
+## Example 3
+Find the single value in the list {}. If is empty, return -1.
+
 ```powerquery-m
-List.SingleOrDefault({}, 0) equals 0  
-```  
+List.SingleOrDefault({}, -1)
+```
+
+`-1`

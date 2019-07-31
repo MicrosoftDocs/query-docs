@@ -1,6 +1,6 @@
 ---
 title: "List.Sort | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,55 +11,38 @@ manager: kfile
 ---
 # List.Sort
 
-  
-## About  
-Returns a sorted list using comparison criterion.  
-  
 ## Syntax
 
 <pre>
-List.Sort(list as list, optional comparisonCriteria as any ) as list  
+List.Sort(<b>list</b> as list, optional <b>comparisonCriteria</b> as any) as list  
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to modify.|  
-|optional comparisonCriteria|Controls the sort order. For more information about equality comparisons, see Parameter Values.|  
-  
-## <a name="__toc360789351"></a>Remarks  
-  
--   To control the order, comparison criterion can be an Order enum value.  
-  
--   To compute a key to be used for sorting, a function with one argument can be used.  
-  
--   To both select a key and control order, comparison criterion can be a list containing the key and order.  
-  
--   To completely control the comparison, a function with two Arguments can be used that returns -1, 0, or 1 given the relationship between the left and right inputs.  Value.Compare is a method that can be used to delegate this logic.  
-  
-## Examples  
-  
+## About  
+Sorts a list of data, `list`, according to the optional criteria specified. An optional parameter, `comparisonCriteria`, can be specified as the comparison criterion. This can take the following values: <ul> <li> To control the order, the comparison criterion can be an Order enum value. (<code>Order.Descending</code>, <code>Order.Ascending</code>). </li> <li> To compute a key to be used for sorting, a function of 1 argument can be used. </li> <li> To both select a key and control order, comparison criterion can be a list containing the key and order (<code>{each 1 / _, Order.Descending}</code>). </li> <li> To completely control the comparison, a function of 2 arguments can be used that returns -1, 0, or 1 given the relationship between the left and right inputs. Value.Compare is a method that can be used to delegate this logic. </li> </ul>
+
+## Example 1
+Sort the list {2, 3, 1}.
+
 ```powerquery-m
-List.Sort({2, 1}) equals {1, 2}  
-```  
-  
+List.Sort({2, 3, 1})
+```
+
+<table> <tr><td>1</td></tr> <tr><td>2</td></tr> <tr><td>3</td></tr> </table>
+
+## Example 2
+Sort the list {2, 3, 1} in descending order.
+
 ```powerquery-m
-List.Sort({1, 2}, Order.Descending) equals {2, 1}  
-```  
-  
+List.Sort({2, 3, 1}, Order.Descending)
+```
+
+<table> <tr><td>3</td></tr> <tr><td>2</td></tr> <tr><td>1</td></tr> </table>
+
+## Example 3
+Sort the list {2, 3, 1} in descending order using the Value.Compare method.
+
 ```powerquery-m
-List.Sort({1, 2}, Order.Ascending) equals {1, 2}  
-```  
-  
-```powerquery-m
-List.Sort({1, 2}, each 1/_) equals{2, 1}  
-```  
-  
-```powerquery-m
-List.Sort({2, 1}, {each 1/_, Order.Descending}) equals {1, 2}  
-```  
-  
-```powerquery-m
-List.Sort({1, 2}, (x, y) => Value.Compare(1/x, 1/y)) equals {2, 1}  
-```  
+List.Sort({2, 3, 1}, (x, y) => Value.Compare(1/x, 1/y))
+```
+
+<table> <tr><td>3</td></tr> <tr><td>2</td></tr> <tr><td>1</td></tr> </table>

@@ -1,8 +1,7 @@
 ---
 title: "Power Query M function reference | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
-
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -10,9 +9,10 @@ ms.author: owend
 manager: kfile
 ---
 # Power Query M function reference
-The Power Query M formula language includes the following function categories.
 
-## In this section
+The Power Query M function reference includes articles for each of the over 700 functions. The reference articles you see here on docs.microsoft.com are auto-generated from in-product help. To learn more about functions and how they work in an expression, see [Understanding Power Query M functions](understanding-power-query-m-functions.md).
+
+## Functions by category
 
 * [Accessing data functions](accessing-data-functions.md)
 * [Binary functions](binary-functions.md)

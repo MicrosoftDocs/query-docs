@@ -1,6 +1,6 @@
 ---
 title: "List.Skip | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,57 +11,29 @@ manager: kfile
 ---
 # List.Skip
 
-  
-## About  
-Skips the first item of the list.  Given an empty list, it returns an empty list. This function takes an optional parameter countOrCondition to support skipping multiple values.  
-  
 ## Syntax
 
 <pre>
-List.Skip(list as list, optional countOrCondition as any) as list  
+List.Skip(<b>list</b> as list, optional <b>countOrCondition</b> as any) as list
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to check.|  
-|optional countOrCondition|An optional parameter that skips multiple values.|  
-  
-## <a name="__toc360789265"></a>Remarks  
-  
--   If a number is specified, up to that many items are skipped.  
-  
--   If a condition is specified, all items that meet the condition are skipped.  Once an item fails the condition, no further items are considered.  
-  
--   If this parameter is null, the default behavior is observed.  
-  
-## Examples  
-  
+## About  
+Returns a list that skips the first element of list `list`. If `list` is an empty list an empty list is returned. This function takes an optional parameter, `countOrCondition`, to support skipping multiple values as listed below. <ul> <li>If a number is specified, up to that many items are skipped. </li> <li>If a condition is specified, the returned list begins with the first element in <code>list</code> that meets the criteria. Once an item fails the condition, no further items are considered. </li> <li>If this parameter is null, the default behavior is observed. </li> </ul>
+
+## Example 1
+Create a list from {1, 2, 3, 4, 5} without the first 3 numbers.
+
 ```powerquery-m
-List.Skip({3, 4, 5, -1, 7, 8, 2}) equals {4, 5, -1, 7, 8, 2}  
-```  
-  
+List.Skip({1, 2, 3, 4, 5}, 3)
+```
+
+<table> <tr><td>4</td></tr> <tr><td>5</td></tr> </table>
+
+## Example 2
+Create a list from {5, 4, 2, 6, 1} that starts with a number less than 3.
+
 ```powerquery-m
-List.Skip({}) equals {}  
-```  
-  
-```powerquery-m
-List.Skip({3, 4, 5, -1, 7, 8, 2}, 5) equals {8, 2}  
-```  
-  
-```powerquery-m
-List.Skip({3, 4, 5}, 5) equals {}  
-```  
-  
-```powerquery-m
-List.Skip({3, 4, 5, -1, 7, 8, 2}, each _ > 0) equals {-1, 7, 8, 2}  
-```  
-  
-```powerquery-m
-List.Skip({3, 4, 5}, each _ > 0) equals {}  
-```  
-  
-```powerquery-m
-List.Skip({3, 4, 5, -1, 7, 8, 2}, null) equals {4, 5, -1, 7, 8, 2}  
-```  
+List.Skip({5, 4, 2, 6, 1}, each _ > 3)
+```
+
+<table> <tr><td>2</td></tr> <tr><td>6</td></tr> <tr><td>1</td></tr> </table>
