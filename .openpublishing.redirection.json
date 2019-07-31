@@ -607,7 +607,7 @@
 		},
 		{
 			"source_path": "dax-msdn-redirects/index.md",
-			"redirect_url": "https://docs.microsoft.com/dax/index",
+			"redirect_url": "data-analysis-expressions-dax-reference",
 			"redirect_document_id": true
 		},
 		{
@@ -2717,7 +2717,7 @@
 		},
 		{
 			"source_path": "m-msdn-redirects/index.md",
-			"redirect_url": "https://docs.microsoft.com/powerquery-m/index",
+			"redirect_url": "power-query-m-reference",
 			"redirect_document_id": true
 		},
 		{
