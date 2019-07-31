@@ -1,6 +1,6 @@
 ---
 title: "Percentage.From | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-Percentage.From(**value** as any, optional **culture** as nullable text) as nullable number
+Percentage.From(<b>value</b> as any, optional <b>culture</b> as nullable text) as nullable number
 </pre>
 
 ## About
@@ -28,7 +28,3 @@ Percentage.From("12.3%")
 ```
 
 `0.123`
-
-
-
-  

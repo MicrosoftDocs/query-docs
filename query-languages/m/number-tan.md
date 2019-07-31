@@ -1,6 +1,6 @@
 ---
 title: "Number.Tan | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,24 +11,20 @@ manager: kfile
 ---
 # Number.Tan
 
-  
-## About  
-Returns the tangent of a number.  
-  
 ## Syntax
 
 <pre>
-Number.Tan (angle as nullable number) as nullable number  
+Number.Tan(<b>number</b> as nullable number) as nullable number 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|angle|The angle to calculate.|  
-  
-## Example  
-  
+## About  
+Returns the tangent of `number`.
+
+## Example 1
+Find the tangent of the angle 1.
+
 ```powerquery-m
-Number.Tan(1) equals 1.557  
-```  
+Number.Tan(1)
+```
+
+`1.5574077246549023 `

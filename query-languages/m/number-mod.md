@@ -1,6 +1,6 @@
 ---
 title: "Number.Mod | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,25 +11,20 @@ manager: kfile
 ---
 # Number.Mod
 
-  
-## About  
-Divides two numbers and returns the remainder of the resulting number.  
-  
 ## Syntax
 
 <pre>
-Number.Mod(number as nullable number, divisor as nullable number, optional precision as nullable number) as nullable number 
+Number.Mod(<b>number</b> as nullable number, <b>divisor</b> as nullable number, optional <b>precision</b> as nullable number) as nullable number
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|number|Dividend or numerator.|  
-|divisor|Divisor or denominator.|  
-  
-## Example  
-  
+## About  
+Returns the remainder resulting from the integer division of `number` by `divisor`. If `number` or `divisor` are null, `Number.Mod` returns null. <ul> <li><code>number</code>: The dividend.</li> <li><code>divisor</code>: The divisor.</li> </ul>
+
+## Example 1
+Find the remainder when you divide 5 by 3.
+
 ```powerquery-m
-Number.Mod(83, 9) equals 2  
-```  
+Number.Mod(5, 3)
+```
+
+`2`

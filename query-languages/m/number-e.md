@@ -1,6 +1,6 @@
 ---
 title: "Number.E | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -13,5 +13,5 @@ manager: kfile
 
   
 ## About  
-Returns 2.7182818284590451, the value of e up to 16 decimal digits.  
+A constant that represents 2.7182818284590451, the value for e up to 16 decimal digits.
   

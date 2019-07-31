@@ -1,6 +1,6 @@
 ---
 title: "Number.IsNaN | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,28 +11,30 @@ manager: kfile
 ---
 # Number.IsNaN
 
-  
-## About  
-Returns true if a value is Number.NaN.  
-  
 ## Syntax
 
 <pre>
-Number.IsNaN(value as number) as logical  
+Number.IsNaN(<b>number</b> as number) as logical
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|value|Value to evaluate.|  
-  
-## Examples  
-  
-```powerquery-m  
-Number.IsNaN(1) equals false  
-```  
-  
+## About  
+Indicates if the value is NaN (Not a number). Returns `true` if `number` is equivalent to `Number.IsNaN`, `false` otherwise.
+
+## Example 1
+Check if 0 divided by 0 is NaN.
+
 ```powerquery-m
-Number.IsNaN(0/0) equals true  
-```  
+Number.IsNaN(0/0)
+```
+
+`true`
+
+## Example 2
+Check if 1 divided by 0 is NaN.
+
+```powerquery-m
+Number.IsNaN(1/0)
+```
+
+`false`
+

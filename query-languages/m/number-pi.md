@@ -1,6 +1,6 @@
 ---
 title: "Number.PI | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -13,5 +13,4 @@ manager: kfile
 
   
 ## About  
-Returns 3.1415926535897931, the value for Pi up to 16 decimal digits.  
-  
+A constant that represents 3.1415926535897932, the value for pi up to 16 decimal digits.  

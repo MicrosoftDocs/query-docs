@@ -1,6 +1,6 @@
 ---
 title: "Number.RoundAwayFromZero | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,28 +11,38 @@ manager: kfile
 ---
 # Number.RoundAwayFromZero
 
-  
-## About  
-Returns Number.RoundUp(value) when value &gt;= 0 and Number.RoundDown(value) when value &lt; 0.  
-  
 ## Syntax
 
 <pre>
-Number.RoundAwayFromZero(value as nullable number) as nullable number  
+Number.RoundAwayFromZero(<b>number</b> as nullable number, optional <b>digits</b> as nullable number) as nullable number 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|value|Value to round away from zero.|  
-  
-## Examples  
-  
+## About  
+Returns the result of rounding `number` based on the sign of the number. This function will round positive numbers up and negative numbers down. If `digits` is specified, `number` is rounded to the `digits` number of decimal digits. 
+
+## Example 1
+Round the number -1.2 away from zero.
+
 ```powerquery-m
-Number.RoundAwayFromZero(-1.2) equals -2  
-```  
-  
+Number.RoundAwayFromZero(-1.2)
+```
+
+`-2`
+
+## Example 2
+Round the number 1.2 away from zero.
+
 ```powerquery-m
-Number.RoundAwayFromZero(1.2) equals 2  
-```  
+Number.RoundAwayFromZero(1.2)
+```
+
+`2`
+
+## Example 3
+Round the number -1.234 to two decimal places away from zero.
+
+```powerquery-m
+Number.RoundAwayFromZero(-1.234, 2)
+```
+
+`-1.24`

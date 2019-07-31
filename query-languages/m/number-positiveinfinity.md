@@ -1,6 +1,6 @@
 ---
 title: "Number.PositiveInfinity | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -13,5 +13,4 @@ manager: kfile
 
   
 ## About  
-Represents 1/0.  
-  
+A constant value that represents 1 divided by 0.  

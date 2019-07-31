@@ -1,6 +1,6 @@
 ---
 title: "Number.Acos | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,11 @@ manager: kfile
 ---
 # Number.Acos
 
-  
-## About  
-Returns the arccosine of a number.  
-  
 ## Syntax
 
 <pre>
-Number.Acos(angle as nullable number) as nullable number  
+Number.Acos(<b>number</b> as nullable number) as nullable number
 </pre> 
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|angle|The angle to calculate.|  
-  
+## About  
+Returns the arccosine of `number`.
