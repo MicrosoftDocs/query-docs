@@ -44,7 +44,7 @@ Microsoft Power Query provides a powerful data import experience that encompasse
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>M overview</h3>
+                            <h3>M quick tour</h3>
                             <p>Get the big picture. This article describes the most essential concepts in M.</p>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ Microsoft Power Query provides a powerful data import experience that encompasse
         </a>
     </li>
     <li>
-        <a href="evaluation-model.md">
+        <a href="power-query-m-type-system.md">
             <div class="cardSize">
                 <div class="cardPadding">
                     <div class="card">
@@ -110,18 +110,18 @@ Microsoft Power Query provides a powerful data import experience that encompasse
         </a>
     </li>
     <li>
-        <a href="power-query-m-type-system.md">
+        <a href="evaluation-model.md">
             <div class="cardSize">
                 <div class="cardPadding">
                     <div class="card">
                         <div class="cardImageOuter">
                             <div class="cardImage"> 
-                                <img src="https://docs.microsoft.com/media/common/i_queries.svg" alt="Power Query M type system" />
+                                <img src="https://docs.microsoft.com/media/common/i_queries.svg" alt="Evaluation model" />
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Power Query M type system</h3>
-                            <p>The Power Query M formula language document describes the M type system.</p>
+                            <h3>Power Query M evaluation model</h3>
+                            <p>Learn about the Power Query M evaluation model.</p>
                         </div>
                     </div>
                 </div>
