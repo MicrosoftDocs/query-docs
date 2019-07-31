@@ -1,6 +1,6 @@
 ---
 title: "List.RemoveItems | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,25 +11,20 @@ manager: kfile
 ---
 # List.RemoveItems
 
-  
-## About  
-Removes items from list1 that are present in list2, and returns a new list.  
-  
 ## Syntax
 
 <pre>
-List.RemoveItems(list1 as list, list2 as list) as list  
+List.RemoveItems(<b>list1</b> as list, <b>list2</b> as list) as list
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list1|The List to modify.|  
-|list2|The list of items to remove.|  
-  
-## Example  
-  
+## About  
+Removes all occurrences of the given values in the `list2` from `list1`. If the values in `list2` don't exist in `list1`, the original list is returned.
+
+## Example 1
+Remove the items in the list {2, 4, 6} from the list {1, 2, 3, 4, 2, 5, 5}.
+
 ```powerquery-m
-List.RemoveItems({1, 2, 3, 3}, {3}) equals { 1, 2}  
-```  
+List.RemoveItems({1, 2, 3, 4, 2, 5, 5}, {2, 4, 6})
+```
+
+<table> <tr><td>1</td></tr> <tr><td>3</td></tr> <tr><td>5</td></tr> <tr><td>5</td></tr> </table>

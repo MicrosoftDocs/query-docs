@@ -1,6 +1,6 @@
 ---
 title: "List.Covariance | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,20 +11,20 @@ manager: kfile
 ---
 # List.Covariance
 
-  
-## About  
-Returns the covariance from two lists as a number.  
-  
 ## Syntax
 
 <pre>
-List.Covariance(list1 as list, list2 as list) as number  
+List.Covariance(<b>numberList1</b> as list, <b>numberList2</b> as list) as nullable number 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list1|The List to compare with.|  
-|list2|The List to compare against.|  
-  
+## About  
+Returns the covariance between two lists, `numberList1` and `numberList2`. `numberList1` and `numberList2` must contain the same number of `number` values.
+
+## Example 1
+Calculate the covariance between two lists.
+
+```powerquery-m
+List.Covariance({1, 2, 3},{1, 2, 3})
+```
+
+`0.66666666666666607`

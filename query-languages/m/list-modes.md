@@ -1,6 +1,6 @@
 ---
 title: "List.Modes | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,29 +11,20 @@ manager: kfile
 ---
 # List.Modes
 
-  
-## About  
-Returns all items that appear with the same maximum frequency.  
-  
 ## Syntax
 
 <pre>
-List.Modes(list as list, optional equationCriteria as any)as list  
+List.Modes(<b>list</b> as list, optional <b>equationCriteria</b> as any) as list
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to check.|  
-|optional equationCriteria|Controls the sort order. For more information about equality comparisons, see Parameter Values.|  
-  
-## <a name="__toc360789384"></a>Remarks  
-  
--   If the list is empty, an Expression.Error is thrown.  
-  
-## <a name="__goback"></a>Example  
-  
+## About  
+Returns the item that appears most frequently in the list, `list`. If the list is empty an exception is thrown. If multiple items appear with the same maximum frequency, the last one is chosen. An optional `comparisonCriteria` value, `equationCriteria`, can be specified to control equality testing. 
+
+## Example 1
+Find the items that appears most frequently in the list `{"A", 1, 2, 3, 3, 4, 5, 5}`.
+
 ```powerquery-m
-List.Modes({"A", 1, 4, 5, 2, "B", 3, 5, 5, "A", 4, 4, "A"}) equals {"A", 4, 5}  
-```  
+List.Modes({"A", 1, 2, 3, 3, 4, 5, 5})
+```
+
+<table> <tr><td>3</td></tr> <tr><td>5</td></tr> </table>

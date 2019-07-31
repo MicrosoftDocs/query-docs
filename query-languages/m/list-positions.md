@@ -1,6 +1,6 @@
 ---
 title: "List.Positions | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,28 +11,20 @@ manager: kfile
 ---
 # List.Positions
 
-  
-## About  
-Returns a list of positions for an input list.  
-  
 ## Syntax
 
 <pre>
-List.Positions(list as list) as list  
+List.Positions(<b>list</b> as list) as list
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to check.|  
-  
-## <a name="__toc360789251"></a>Remarks  
-  
--   When using `List.Transform` to modify a list, the list of positions can be used to give the transform access to the positions.  
-  
-## <a name="__goback"></a>Example  
-  
+## About  
+Returns a list of offsets for the input list `list`. When using List.Transform to change a list, the list of positions can be used to give the transform access to the position.
+
+## Example 1
+Find the offsets of values in the list {1, 2, 3, 4, null, 5}.
+
 ```powerquery-m
-List.Positions({4, 5, 6}) equals {0, 1, 2}  
-```  
+List.Positions({1, 2, 3, 4, null, 5})
+```
+
+<table> <tr><td>0</td></tr> <tr><td>1</td></tr> <tr><td>2</td></tr> <tr><td>3</td></tr> <tr><td>4</td></tr> <tr><td>5</td></tr> </table>

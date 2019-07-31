@@ -1,6 +1,6 @@
 ---
 title: "List.MatchesAll | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,29 +11,29 @@ manager: kfile
 ---
 # List.MatchesAll
 
-  
-## About  
-Returns true if all items in a list meet a condition.  
-  
 ## Syntax
 
 <pre>
-List.MatchesAll(list as list, condition as Function) as logical  
+List.MatchesAll(<b>list</b> as list, <b>condition</b> as function) as logical
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to check.|  
-|condition|The condition to qualify against.|  
-  
-## Examples  
-  
+## About  
+Returns `true` if the condition function, `condition`, is satisfied by all values in the list `list`, otherwise returns `false`.
+
+## Example 1
+Determine if all the values in the list {11, 12, 13} are greater than 10.
+
 ```powerquery-m
-List.MatchesAll({2, 4, 6}, each Number.Mod(_,2) = 0) equals true  
-```  
-  
+List.MatchesAll({11, 12, 13},each _ > 10)
+```
+
+`true`
+
+## Example 2
+Determine if all the values in the list {1, 2, 3} are greater than 10.
+
 ```powerquery-m
-List.MatchesAll({2, 4, 5}, each Number.Mod(_,2) = 0) equals false  
-```  
+List.MatchesAll({1, 2, 3},each _ > 10)
+```
+
+`false`

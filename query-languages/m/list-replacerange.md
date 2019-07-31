@@ -1,6 +1,6 @@
 ---
 title: "List.ReplaceRange | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,27 +11,20 @@ manager: kfile
 ---
 # List.ReplaceRange
 
-  
-## About  
-Returns a list that replaces count values in a list with a replaceWith list starting at an index.  
-  
 ## Syntax
 
 <pre>
-List.ReplaceRange(list as list,  index as number,  count as number,  replaceWith as list) as list  
+List.ReplaceRange(<b>list</b> as list, <b>index</b> as number, <b>count</b> as number, <b>replaceWith</b> as list) as list
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to modify.|  
-|index|The index to start at.|  
-|count|The number of values to replace.|  
-|replaceWith|The value to replace with.|  
-  
-## Example  
-  
+## About  
+Replaces `count` values in the `list` with the list `replaceWith`, starting at specified position, `index`.
+
+## Example 1
+Replace {7, 8, 9} in the list {1, 2, 7, 8, 9, 5} with {3, 4}.
+
 ```powerquery-m
-List.ReplaceRange({1, 2, 7, 8, 9, 5}, 2, 3, {3, 4}) equals {1, 2, 3, 4, 5}  
-```  
+List.ReplaceRange({1, 2, 7, 8, 9, 5}, 2, 3, {3, 4})
+```
+
+<table> <tr><td>1</td></tr> <tr><td>2</td></tr> <tr><td>3</td></tr> <tr><td>4</td></tr> <tr><td>5</td></tr> </table>

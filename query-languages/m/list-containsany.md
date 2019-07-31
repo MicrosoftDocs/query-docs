@@ -1,6 +1,6 @@
 ---
 title: "List.ContainsAny | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,30 +11,29 @@ manager: kfile
 ---
 # List.ContainsAny
 
-  
-## About  
-Returns true if any item in values is found in a list.  
-  
 ## Syntax
 
 <pre>
-List.ContainsAny(list as list, values as list,optional equationCriteria as any) as logical  
+List.ContainsAny(<b>list</b> as list, <b>values</b> as list, optional <b>equationCriteria</b> as any) as logical
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to check.|  
-|values|The list of values to check for.|  
-|optional equationCriteria|An optional equation criteria value to control equality comparisons. For more information about equality comparisons, see Parameter Values.|  
-  
-## Examples  
-  
+## About  
+Indicates whether the list `list` includes any of the values in another list, `values`. Returns true if value is found in the list, false otherwise. An optional equation criteria value, `equationCriteria`, can be specified to control equality testing. 
+
+## Example 1
+Find out if the list {1, 2, 3, 4, 5} contains 3 or 9.
+
 ```powerquery-m
-List.ContainsAny({1, 2, 3}, {2, 4}) equals true  
-```  
-  
+List.ContainsAny({1, 2, 3, 4, 5}, {3, 9})
+```
+
+`true`
+
+## Example 2
+Find out if the list {1, 2, 3, 4, 5} contains 6 or 7.
+
 ```powerquery-m
-List.ContainsAny({1, 2, 3}, {4, 5}) equals false  
-```  
+List.ContainsAny({1, 2, 3, 4, 5}, {6, 7})
+```
+
+`false`
