@@ -1,6 +1,6 @@
 ---
 title: "List.Sum | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,36 +11,20 @@ manager: kfile
 ---
 # List.Sum
 
-  
-## About  
-Returns the sum from a list.  
-  
 ## Syntax
 
 <pre>
-List.Sum(list as list) as any  
+List.Sum(<b>list</b> as list, optional <b>precision</b> as nullable number) as any
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to check.|  
-  
-## <a name="__toc360789389"></a>Remarks  
-  
--   If the list is empty, an Expression.Error is thrown.  
-  
-## Examples  
-  
+## About  
+Returns the sum of the non-null values in the list, `list`. Returns null if there are no non-null values in the list.
+
+## Example 1
+Find the sum of the numbers in the list `{1, 2, 3}`.
+
 ```powerquery-m
-List.Sum({1, 2, 3}) equals 6  
-```  
-  
-```powerquery-m
-List.Sum({#duration(0, 0, 0, 15), #duration(0, 0, 0, 30)}) equals #duration(0, 0, 0, 45)  
-```  
-  
-```powerquery-m
-List.Sum({}) equals error  
-```  
+List.Sum({1, 2, 3})
+```
+
+`6`

@@ -1,6 +1,6 @@
 ---
 title: "List.Durations | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-List.Durations(**start** as duration, **count** as number, **step** as duration) as list
+List.Durations(<b>start</b> as duration, <b>count</b> as number, <b>step</b> as duration) as list
 </pre>
 
 ## About

@@ -1,6 +1,6 @@
 ---
 title: "List.NonNullCount | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,24 +11,11 @@ manager: kfile
 ---
 # List.NonNullCount
 
-  
-## About  
-Returns the number of items in a list excluding null values  
-  
 ## Syntax
 
 <pre>
-List.NonNullCount(list as list) as number  
+List.NonNullCount(<b>list</b> as list) as number
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to check.|  
-  
-## <a name="__goback"></a>Example  
-  
-```powerquery-m
-List.NonNullCount({1, null}) equals 1  
-```  
+## About  
+Returns the number of non-null items in the list `list`.

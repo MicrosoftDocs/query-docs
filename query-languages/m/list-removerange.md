@@ -1,6 +1,6 @@
 ---
 title: "List.RemoveRange | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,30 +11,20 @@ manager: kfile
 ---
 # List.RemoveRange
 
-  
-## About  
-Returns a list that removes count items starting at offset.  The default count is 1.  
-  
 ## Syntax
 
 <pre>
-List.RemoveRange(list as list, offset as number, optional count as nullable number) as list  
+List.RemoveRange(<b>list</b> as list, <b>index</b> as number, optional <b>count</b> as nullable number) as list
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to remove items from.|  
-|offset|The index to start at.|  
-|optional count|The number of items to remove.|  
-  
-## Examples  
-  
+## About  
+Removes `count` values in the `list` starting at the specified position, `index`.
+
+## Example 1
+Remove 3 values in the list {1, 2, 3, 4, -6, -2, -1, 5} starting at index 4.
+
 ```powerquery-m
-List.RemoveRange({"A", "B", "C", "D"}, 2) equals {"A", "B", "D"}  
-```  
-  
-```powerquery-m
-List.RemoveRange({"A", "B", "C", "D"}, 1, 2) equals {"A", "D"}  
-```  
+List.RemoveRange({1, 2, 3, 4, -6, -2, -1, 5}, 4, 3)
+```
+
+<table> <tr><td>1</td></tr> <tr><td>2</td></tr> <tr><td>3</td></tr> <tr><td>4</td></tr> <tr><td>5</td></tr> </table>

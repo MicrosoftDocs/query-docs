@@ -1,6 +1,6 @@
 ---
 title: "List.First | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,29 +11,29 @@ manager: kfile
 ---
 # List.First
 
-  
-## About  
-Returns the first value of the list or the specified default if empty. Returns the first item in the list, or the optional default value, if the list is empty. If the list is empty and a default value is not specified, the function returns.  
-  
 ## Syntax
 
 <pre>
-List.First(list as list, optional defaultValue as any) as any  
+List.First(<b>list</b> as list, optional <b>defaultValue</b> as any) as any 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to check.|  
-|optional defaultValue|Default value if list is empty.|  
-  
-## Examples  
-  
+## About  
+Returns the first item in the list `list`, or the optional default value, `defaultValue`, if the list is empty. If the list is empty and a default value is not specified, the function returns `null`.
+
+## Example 1
+Find the first value in the list {1, 2, 3}.
+
 ```powerquery-m
-List.First({1, 2, 3}) equals 1  
-```  
-  
+List.First({1, 2, 3})
+```
+
+`1`
+
+## Example 2
+Find the first value in the list {}. If the list is empty, return -1.
+
 ```powerquery-m
-List.First({}) equals null  
-```  
+List.First({}, -1)
+```
+
+`-1`

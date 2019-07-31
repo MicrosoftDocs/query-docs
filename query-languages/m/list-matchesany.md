@@ -1,6 +1,6 @@
 ---
 title: "List.MatchesAny | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,29 +11,29 @@ manager: kfile
 ---
 # List.MatchesAny
 
-  
-## About  
-Returns true if any item in a list meets a condition.  
-  
 ## Syntax
 
 <pre>
-List.MatchesAny(list as list, condition as Function) as logical  
+List.MatchesAny(<b>list</b> as list, <b>condition</b> as function) as logical
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to check.|  
-|condition|The condition to qualify against.|  
-  
-## Examples  
-  
+## About  
+Returns `true` if the condition function, `condition`, is satisfied by any of values in the list `list`, otherwise returns `false`.
+
+## Example 1
+Find if any of the values in the list {9, 10, 11} are greater than 10.
+
 ```powerquery-m
-List.MatchesAny({2, 4, 6}, each Number.Mod(_, 2) = 0) equals true  
-```  
-  
-```powerquery-m 
-List.MatchesAny({1, 3, 5}, each Number.Mod(_, 2) = 0) equals false  
-```  
+List.MatchesAny({9, 10, 11},each _ > 10)
+```
+
+`true`
+
+## Example 2
+Find if any of the values in the list {1, 2, 3} are greater than 10.
+
+```powerquery-m
+List.MatchesAny({1, 2, 3},each _ > 10)
+```
+
+`false`

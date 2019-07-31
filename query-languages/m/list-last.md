@@ -1,6 +1,6 @@
 ---
 title: "List.Last | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,31 +11,29 @@ manager: kfile
 ---
 # List.Last
 
-  
-## About  
-Returns the last set of items in the list by specifying how many items to return or a qualifying condition provided by **countOrCondition**.  
-  
 ## Syntax
 
 <pre>
-List.Last(list as list, optional defaultValue as any) as any  
+List.Last(<b>list</b> as list, optional <b>defaultValue</b> as any) as any 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to check.|  
-|optional defaultValue|Default value if list is empty.|  
-  
-## <a name="__toc360789237"></a>Remarks  
-  
--   If a number is specified, up to that many items are returned.  
-  
--   If a condition is specified, all items are returned that initially meet the condition. Once an item fails the condition, no further items are considered.  
-  
-## Examples  
-  
+## About  
+Returns the last item in the list `list`, or the optional default value, `defaultValue`, if the list is empty. If the list is empty and a default value is not specified, the function returns `null`.
+
+## Example 1
+Find the last value in the list {1, 2, 3}.
+
 ```powerquery-m
-List.Last({1, 2, 3}) equals 3  
-```  
+List.Last({1, 2, 3})
+```
+
+`3`
+
+## Example 2
+Find the last value in the list {} or -1 if it empty.
+
+```powerquery-m
+List.Last({}, -1)
+```
+
+`-1`

@@ -1,6 +1,6 @@
 ---
 title: "List.Contains | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,30 +11,29 @@ manager: kfile
 ---
 # List.Contains
 
-  
-## About  
-Returns true if a value is found in a list.  
-  
 ## Syntax
 
 <pre>
-List.Contains(list as list, value as any, optional equationCriteria as any) as logical  
+List.Contains(<b>list</b> as list, <b>value</b> as any, optional <b>equationCriteria</b> as any) as logical 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to check.|  
-|value|The value to check for.|  
-|optional equationCriteria|An optional equation criteria value to control equality testing.|  
-  
-## Examples  
-  
+## About  
+Indicates whether the list `list` contains the value `value`. Returns true if value is found in the list, false otherwise. An optional equation criteria value, `equationCriteria`, can be specified to control equality testing. 
+
+## Example 1
+Find if the list {1, 2, 3, 4, 5} contains 3.
+
 ```powerquery-m
-List.Contains({1, 2, 3}, 2) equals true  
-```  
-  
+List.Contains({1, 2, 3, 4, 5}, 3)
+```
+
+`true`
+
+## Example 2
+Find if the list {1, 2, 3, 4, 5} contains 6.
+
 ```powerquery-m
-List.Contains({1, 2, 3}, 4) equals false  
-```  
+List.Contains({1, 2, 3, 4, 5}, 6)
+```
+
+`false`

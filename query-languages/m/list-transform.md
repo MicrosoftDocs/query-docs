@@ -1,6 +1,6 @@
 ---
 title: "List.Transform | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,25 +11,20 @@ manager: kfile
 ---
 # List.Transform
 
-  
-## About  
-Performs the function on each item in the list and returns the new list.  
-  
 ## Syntax
 
 <pre>
-List.Transform(list as list, transform as function)  as list  
+List.Transform(<b>list</b> as list, <b>transform</b> as function) as list
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to modify.|  
-|transform|The transform to apply.|  
-  
-## <a name="__goback"></a>Example  
-  
+## About  
+Returns a new list of values by applying the transform function `transform` to the list, `list`.
+
+## Example 1
+Add 1 to each value in the list {1, 2}.
+
 ```powerquery-m
-List.Transform({1, 2}, each _ + 1) equals { 2, 3 }  
-```  
+List.Transform({1, 2}, each _ + 1)
+```
+
+<table> <tr><td>2</td></tr> <tr><td>3</td></tr> </table>

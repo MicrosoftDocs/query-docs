@@ -1,6 +1,6 @@
 ---
 title: "List.PositionOfAny | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,50 +11,20 @@ manager: kfile
 ---
 # List.PositionOfAny
 
-  
-## About  
-Finds the first occurrence of any value in values and returns its position.  
-  
 ## Syntax
 
 <pre>
-List.PositionOfAny(list as list, values as list, optional occurrence as nullable number, optional equationCriteria as any) as any  
+List.PositionOfAny(<b>list</b> as list, <b>values</b> as list, optional <b>occurrence</b> as nullable number, optional <b>equationCriteria</b> as any) as any
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to check.|  
-|values|The list of values to check for.|  
-|optional occurrence|An enum that controls the scope of operation.|  
-|optional equationCriteria|An optional equation criteria value to control equality comparisons. For more information about equality comparisons, see Parameter Values .|  
-  
-## Occurrence settings  
-  
-|**Setting**|**Description**|  
-|---------------|-------------------|  
-|Occurrence.First and Occurrence.Last|Returns a single position.|  
-|Occurrence.All|Returns a list of positions with all occurrences.|  
-  
-## <a name="__toc360789328"></a>Remarks  
-  
--   If the value is not found in the list, -1 is returned  
-  
-## Examples  
-  
-```powerquery-m
-List.PositionOfAny({"A", "B", "C", "D"}, {"B", "C"}) equals 1  
-```  
+## About  
+Returns the offset in list `list` of the first occurrence of a value in a list `values`. Returns -1 if no occurrence is found. An optional occurrence parameter `occurrence` can be specified. <ul> <li><code>occurrence</code>: The maximum number of occurrences that can be returned.</li> </ul>
+
+## Example 1
+Find the first position in the list {1, 2, 3} at which the value 2 or 3 appears.
 
 ```powerquery-m
-List.PositionOfAny({"A", "B", "C", "B", "A"}, {"A", "B"}, Occurrence.First) equals 0
-``` 
-  
-```powerquery-m
-List.PositionOfAny({"A", "B", "C", "B", "A"}, {"A", "B"}, Occurrence.Last) equals 4  
-```  
-  
-```powerquery-m
-List.PositionOfAny({"A", "B", "C", "B", "A"}, {"A", "B"}, Occurrence.All) equals {0, 1, 3, 4}  
-```  
+List.PositionOfAny({1, 2, 3}, {2, 3})
+```
+
+`1`

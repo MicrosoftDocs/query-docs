@@ -1,6 +1,6 @@
 ---
 title: "List.Difference | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,34 +11,27 @@ manager: kfile
 ---
 # List.Difference
 
-  
-## About  
-Returns the items in list 1 that do not appear in list 2. Duplicate values are supported.  
-  
-## Syntax
-
 <pre>
-List.Difference(list1 as list, list2 as list,optional equationCriteria as any) as list  
+List.Difference(<b>list1</b> as list, <b>list2</b> as list, optional <b>equationCriteria</b> as any) as list
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list1|The List to check with.|  
-|list2|The List to check against.|  
-|optional equationCriteria|An optional equation criteria value to control equality comparisons. For more information about equality comparisons, see Parameter Values.|  
-  
-## Examples  
-  
+## About  
+Returns the items in list `list1` that do not appear in list `list2`. Duplicate values are supported. An optional equation criteria value, `equationCriteria`, can be specified to control equality testing. 
+
+## Example 1
+Find the items in list {1, 2, 3, 4, 5}that do not appear in {4, 5, 3}.
+
 ```powerquery-m
-List.Difference({1..10}, {2..3,5..7}) equals {1,4,8,9,10}  
-```  
-  
+List.Difference({1, 2, 3, 4, 5},{4, 5, 3})
+```
+
+<table> <tr><td>1</td></tr> <tr><td>2</td></tr> </table>
+
+## Example 2
+Find the items in the list {1, 2} that do not appear in {1, 2, 3}.
+
 ```powerquery-m
-List.Difference({1}, {1,2,3}) equals {}  
-```  
-  
-```powerquery-m
-List.Difference({1, 1, 1}, {1}) equals {1, 1}  
-```  
+List.Difference({1, 2}, {1, 2, 3})
+```
+
+<table> </table>

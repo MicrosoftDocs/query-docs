@@ -1,6 +1,6 @@
 ---
 title: "List.ReplaceMatchingItems | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,30 +11,20 @@ manager: kfile
 ---
 # List.ReplaceMatchingItems
 
-  
-## About  
-Replaces occurrences of existing values in the list with new values using the provided equationCriteria. Old and new values are provided by the replacements parameters. An optional equation criteria value can be specified to control equality comparisons. For details of replacement operations and equation criteria, see Parameter Values.  
-  
 ## Syntax
 
 <pre>
-List.ReplaceMatchingItems(list as list, replacements as any ,optional equationCriteria as any) as list  
+List.ReplaceMatchingItems(<b>list</b> as list, <b>replacements</b> as list, optional <b>equationCriteria</b> as any) as list 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to modify.|  
-|replacements|The replacements to make.|  
-|optional equationCriteria|An optional equation criteria value to control equality testing.|  
-  
-## Examples  
-  
+## About  
+Performs the given replacements to the list `list`. A replacement operation `replacements` consists of a list of two values, the old value and new value, provided in a list. An optional equation criteria value, `equationCriteria`, can be specified to control equality testing.
+
+## Example 1
+Create a list from {1, 2, 3, 4, 5} replacing the value 5 with -5, and the value 1 with -1.
+
 ```powerquery-m
-List.ReplaceMatchingItems ({1, 2, 3, 4, 5}, {{2, -2}}) equals { 1, -2, 3, 4, 5}  
-```  
-  
-```powerquery-m
-List.ReplaceMatchingItems ({1, 2, 3, 4, 5}, {{2, -2}, {3, -3}}) equals { 1, -2, -3, 4, 5}  
-```  
+List.ReplaceMatchingItems({1, 2, 3, 4, 5}, {{5, -5}, {1, -1}})
+```
+
+<table> <tr><td>-1</td></tr> <tr><td>2</td></tr> <tr><td>3</td></tr> <tr><td>4</td></tr> <tr><td>-5</td></tr> </table>

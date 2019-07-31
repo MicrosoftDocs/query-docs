@@ -1,6 +1,6 @@
 ---
 title: "List.StandardDeviation | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,28 +11,20 @@ manager: kfile
 ---
 # List.StandardDeviation
 
-  
-## About  
-Returns the standard deviation from a list of values.  List.StandardDeviation performs a sample based estimate. The result is a number for numbers, and a duration for DateTimes and Durations.  
-  
 ## Syntax
 
 <pre>
-List.StandardDeviation(list as list) as any  
+List.StandardDeviation(<b>numbersList</b> as list) as nullable number
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to check. If List is a list of numbers, a number is returned. An exception is thrown on an empty list or a list of items that is not type number.|  
-  
-## <a name="__toc360789376"></a>Remarks  
-  
--   If the list is empty, an Expression.Error is thrown.  
-  
-## Example  
-  
+## About  
+Returns a sample based estimate of the standard deviation of the values in the list, `numbersList`. If `numbersList` is a list of numbers, a number is returned. An exception is thrown on an empty list or a list of items that is not type `number`.
+
+## Example 1
+Find the standard deviation of the numbers 1 through 5.
+
 ```powerquery-m
-List.StandardDeviation({1..5}) equals 1.5811388300841898  
-```  
+List.StandardDeviation({1..5})
+```
+
+`1.5811388300841898`

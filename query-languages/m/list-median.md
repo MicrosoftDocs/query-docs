@@ -1,6 +1,6 @@
 ---
 title: "List.Median | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-List.Median(**list** as list, optional **comparisonCriteria** as any) as any
+List.Median(<b>list</b> as list, optional <b>comparisonCriteria</b> as any) as any
 </pre>
 
 ## About
