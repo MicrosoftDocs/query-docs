@@ -1,6 +1,6 @@
 ---
 title: "Logical.ToText | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,24 +11,20 @@ manager: kfile
 ---
 # Logical.ToText
 
-  
-## About  
-Returns a text value from a logical value.  
-  
 ## Syntax
 
 <pre>
-Logical.ToText(logical as nullable logical) as nullable text  
+Logical.ToText(<b>logicalValue</b> as nullable logical) as nullable text  
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|logical|The logical value to evaluate.|  
-  
-## Example  
-  
+## About  
+Creates a text value from the logical value `logicalValue`, either `true` or `false`. If `logicalValue` is not a logical value, an exception is thrown.
+
+## Example 1
+Create a text value from the logical `true`.
+
 ```powerquery-m
-Logical.ToText(true) equals "true"  
-```  
+Logical.ToText(true)
+```
+
+`"true"`

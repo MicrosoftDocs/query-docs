@@ -1,6 +1,6 @@
 ---
 title: "Logical.FromText | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,28 +11,29 @@ manager: kfile
 ---
 # Logical.FromText
 
-  
-## About  
-Returns a logical value of true or false from a text value.  
-  
 ## Syntax
 
 <pre> 
-Logical.FromText(text as nullable text) as nullable logical  
+Logical.FromText(<b>text</b> as nullable text) as nullable logical
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|text|The text to evaluate.|  
-  
-## Examples  
-  
+## About  
+Creates a logical value from the text value `text`, either "true" or "false". If `text` contains a different string, an exception is thrown. The text value `text` is case insensitive.
+
+## Example 1
+Create a logical value from the text string "true".
+
 ```powerquery-m
-Logical.FromText("true") equals true  
-```  
-  
+Logical.FromText("true")
+```
+
+`true`
+
+## Example 2
+Create a logical value from the text string "a".
+
 ```powerquery-m
-Logical.FromText("a") equals error  
-```  
+Logical.FromText("a")
+```
+
+`[Expression.Error] Could not convert to a logical.`
