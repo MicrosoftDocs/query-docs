@@ -1,6 +1,6 @@
 ---
 title: "Number.Log | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-Number.Log(**number** as nullable number, optional **base** as nullable number) as nullable number
+Number.Log(<b>number</b> as nullable number, optional <b>base</b> as nullable number) as nullable number
 </pre>
 
 ## About
@@ -27,9 +27,7 @@ Get the base 10 logarithm of 2.
 Number.Log(2, 10)
 ```
 
-```powerquery-m
-0.3010299956639812
-```
+`0.3010299956639812`
 
 ## Example 2
 Get the base e logarithm of 2.
@@ -39,8 +37,6 @@ Get the base e logarithm of 2.
 Number.Log(2)
 ```
 
-```powerquery-m
-0.69314718055994529
-```
+`0.69314718055994529`
 
 

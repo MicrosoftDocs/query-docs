@@ -1,6 +1,6 @@
 ---
 title: "Number.Combinations | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,25 +11,20 @@ manager: kfile
 ---
 # Number.Combinations
 
-  
-## About  
-Returns the number of combinations of a given number of items for the optional combination size.  
-  
 ## Syntax
 
 <pre>
-Number.Combinations (setSize as nullable number,  combinationSize as nullable number)  as nullable number  
+Number.Combinations(<b>setSize</b> as nullable number, <b>combinationSize</b> as nullable number) as nullable number
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|setSize|Number of combination items.|  
-|combinationSize|Size of combinations.|  
-  
-## Example  
-  
+## About  
+Returns the number of unique combinations from a list of items, `setSize` with specified combination size, `combinationSize`. <ul> <li><code>setSize</code>: The number of items in the list.</li> <li><code>combinationSize</code>: The number of items in each combination.</li> </ul> 
+
+## Example 1
+Find the number of combinations from a total of 5 items when each combination is a group of 3.
+
 ```powerquery-m
-Number.Combinations(5, 3) equals 10  
-```  
+Number.Combinations(5, 3)
+```
+
+`10`

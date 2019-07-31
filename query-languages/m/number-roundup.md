@@ -1,6 +1,6 @@
 ---
 title: "Number.RoundUp | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,28 +11,38 @@ manager: kfile
 ---
 # Number.RoundUp
 
-  
-## About  
-Returns the larger integer greater than or equal to a number value.  
-  
 ## Syntax
 
 <pre>
-Number.RoundUp(value as nullable number) as nullable number  
+Number.RoundUp(<b>number</b> as nullable number, optional <b>digits</b> as nullable number) as nullable number
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|value|Value to round up.|  
-  
-## Examples  
-  
+## About  
+Returns the result of rounding `number` down to the previous highest integer. If `number` is null, `Number.RoundDown` returns null. If `digits` is specified, `number` is rounded to the `digits` number of decimal digits. 
+
+## Example 1
+Round up 1.234 to integer.
+
 ```powerquery-m
-Number.RoundUp(-1.2) equals -1  
-```  
-  
-```powerquery-m 
-Number.RoundUp(1.2) equals 2  
-```  
+Number.RoundUp(1.234)
+```
+
+`2`
+
+## Example 2
+Round up 1.999 to integer.
+
+```powerquery-m
+Number.RoundUp(1.999)
+```
+
+`2`
+
+## Example 3
+Round up 1.234 to two decimal places.
+
+```powerquery-m
+Number.RoundUp(1.234, 2)
+```
+
+`1.24`

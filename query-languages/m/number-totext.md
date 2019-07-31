@@ -1,6 +1,6 @@
 ---
 title: "Number.ToText | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,50 +11,38 @@ manager: kfile
 ---
 # Number.ToText
 
-  
-## About  
-Returns a text value from a number value.  
-  
 ## Syntax
 
 <pre>
-Number.ToText(number as number, optional format as nullable text, optional culture as nullable text) as nullable text  
+Number.ToText(<b>number</b> as nullable number, optional <b>format</b> as nullable text, optional <b>culture</b> as nullable text) as nullable text 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|number|Number value to convert to text.|  
-|optional format|An optional text value used to format common numeric values.|  
-|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
-  
-## <a name="__toc360788713"></a>Format Settings  
-  
-|Setting|Name|Description|  
-|-----------|--------|---------------|  
-|D or d|Decimal|Formats the result as integer digits with an optional negative sign. The precision setting controls the number of digits in the output.|  
-|E or e|Exponential<br /><br />(scientific)|Exponential notation. The precision setting controls the maximum number of decimal digits (default is 6).|  
-|F or f|Fixed-point|Integral and decimal digits with optional negative sign.|  
-|G or g|General|Most compact form of either fixed-point or scientific.|  
-|N or n|Number|Integral and decimal digits, group separators, and a decimal separator with optional negative sign.|  
-|P or p|Percent|Number multiplied by 100 and displayed with a percent symbol.|  
-|R or r|Round-trip|Round-trip an identical number. The precision setting is ignored.|  
-|X or x|Hexadecimal|A hexadecimal text value.|  
-|Any other single character|Unknown<br /><br />setting|Throws **Expression.Error** error|  
-  
-Examples  
-  
+## About  
+Formats the numeric value `number` to a text value according to the format specified by `format`. The format is a single character code optionally followed by a number precision specifier. The following character codes may be used for `format`. <ul> <li>"D" or "d": (Decimal) Formats the result as integer digits. The precision specifier controls the number of digits in the output. </li> <li>"E" or "e": (Exponential [scientific]) Exponential notation. The precision specifier controls the maximum number of decimal digits (default is 6). </li> <li>"F" or "f": (Fixed-point) Integral and decimal digits.</li> <li>"G" or "g": (General) Most compact form of either fixed-point or scientific. </li> <li>"N" or "n": (Number) Integral and decimal digits with group separators and a decimal separator. </li> <li>"P" or "p": (Percent) Number multiplied by 100 and displayed with a percent symbol. </li> <li>"R" or "r": (Round-trip) A text value that can round-trip an identical number. The precision specifier is ignored. </li> <li>"X" or "x": (Hexadecimal) A hexadecimal text value. </li> </ul>
+
+## Example 1
+Format a number as text without format specified.
+
 ```powerquery-m
-Number.ToText(10, "D", "") equals 10  
-  
-Number.ToText(10, "E", "") equals 1.000000E+001  
-  
-Number.ToText(10, "F", "") equals 10.00  
-  
-Number.ToText(10, "G", "") equals 10  
-  
-Number.ToText(10, "N", "") equals 10.00  
-  
-Number.ToText(.10, "P", "") equals 10.00%  
-```  
+Number.ToText(4)
+```
+
+`"4"`
+
+## Example 2
+Format a number as text in Exponential format.
+
+```powerquery-m
+Number.ToText(4, "e")
+```
+
+`"4.000000e+000"`
+
+## Example 3
+Format a number as text in Decimal format with limited precision.
+
+```powerquery-m
+Number.ToText(-0.1234, "P1")
+```
+
+`"-12.3 %"`

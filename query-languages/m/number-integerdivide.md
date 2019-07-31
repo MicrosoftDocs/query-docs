@@ -1,6 +1,6 @@
 ---
 title: "Number.IntegerDivide | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,26 +11,29 @@ manager: kfile
 ---
 # Number.IntegerDivide
 
-  
-## About  
-Divides two numbers and returns the whole part of the resulting number.  
-  
 ## Syntax
 
 <pre>
-Number.IntegerDivide (number1 as nullable number,  number2 as nullable number,  optional precision as nullable number) as nullable number  
+Number.IntegerDivide(<b>number1</b> as nullable number, <b>number2</b> as nullable number, optional <b>precision</b> as nullable number) as nullable number 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|number1|The Dividend.|  
-|number2|The Divisor.|  
-|optional precision|Precision of the result.|  
-  
-## Example  
-  
+## About  
+Returns the integer portion of the result from dividing a number, `number1`, by another number, `number2`. If `number1` or `number2` are null, `Number.IntegerDivide` returns null. <ul> <li><code>number1</code>: The dividend.</li> <li><code>number2</code>: The divisor.</li> </ul>
+
+## Example 1
+Divide 6 by 4.
+
 ```powerquery-m
-Number.IntegerDivide(9.2, 3.1) equals 2  
-```  
+Number.IntegerDivide(6, 4)
+```
+
+`1`
+
+## Example 2
+Divide 8.3 by 3.
+
+```powerquery-m
+Number.IntegerDivide(8.3, 3)
+```
+
+`2`

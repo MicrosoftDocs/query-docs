@@ -1,6 +1,6 @@
 ---
 title: "Number.Permutations | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,25 +11,20 @@ manager: kfile
 ---
 # Number.Permutations
 
-  
-## About  
-Returns the number of total permutatons of a given number of items for the optional permutation size.  
-  
 ## Syntax
 
 <pre>
-Number.Permutations(setSize as nullable number, permutationSize as nullable number)  as nullable number  
+Number.Permutations(<b>setSize</b> as nullable number, <b>permutationSize</b> as nullable number) as nullable number 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|setSize|Number of permutation items.|  
-|permutationSize|Size of permutations.|  
-  
-## Example  
-  
+## About  
+Returns the number of permutations that can be generated from a number of items, `setSize`, with a specified permutation size, `permutationSize`.
+
+## Example 1
+Find the number of permutations from a total of 5 items in groups of 3.
+
 ```powerquery-m
-Number.Permutations(5, 3) equals 60  
-```  
+Number.Permutations(5, 3)
+```
+
+`60`

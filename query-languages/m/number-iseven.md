@@ -1,6 +1,6 @@
 ---
 title: "Number.IsEven | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,28 +11,29 @@ manager: kfile
 ---
 # Number.IsEven
 
-  
-## About  
-Returns true if a value is an even number.  
-  
 ## Syntax
 
 <pre>
-Number.IsEven(value as number) as logical  
+Number.IsEven(<b>number</b> as number) as logical 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|value|Value to evaluate.|  
-  
-## Examples  
-  
+## About  
+Indicates if the value, `number`, is even by returning `true` if it is even, `false` otherwise.
+
+## Example 1
+Check if 625 is an even number.
+
 ```powerquery-m
-Number.IsEven(3) equals false  
-```  
-  
+Number.IsEven(625)
+```
+
+`false`
+
+## Example 2
+Check if 82 is an even number.
+
 ```powerquery-m
-Number.IsEven(4) equals true  
-```  
+Number.IsEven(82)
+```
+
+`true`

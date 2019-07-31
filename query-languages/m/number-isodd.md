@@ -1,6 +1,6 @@
 ---
 title: "Number.IsOdd | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,28 +11,30 @@ manager: kfile
 ---
 # Number.IsOdd
 
-  
-## About  
-Returns true if a value is an odd number.  
-  
 ## Syntax
 
 <pre>
-Number.IsOdd(value as number) as logical  
+Number.IsOdd(<b>number</b> as number) as logical  
 </pre>
-  
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|value|Value to evaluate.|  
-  
-## Examples  
-  
-```powerquery-m 
-Number.IsOdd(3) equals true  
-```  
-  
-```powerquery-m 
-Number.IsOdd(4) equals false  
-```  
+
+## About  
+Indicates if the value is odd. Returns `true` if `number` is an odd number, `false` otherwise.
+
+## Example 1
+Check if 625 is an odd number.
+
+```powerquery-m
+Number.IsOdd(625)
+```
+
+`true`
+
+## Example 2
+Check if 82 is an odd number.
+
+```powerquery-m
+Number.IsOdd(82)
+```
+
+`false`
+

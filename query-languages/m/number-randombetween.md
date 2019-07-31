@@ -1,6 +1,6 @@
 ---
 title: "Number.RandomBetween | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,20 +11,20 @@ manager: kfile
 ---
 # Number.RandomBetween
 
-  
-## About  
-Returns a random number between the two given number values.  
-  
 ## Syntax
 
 <pre>
-Number.RandomBetween(bottom as number, top as number) as number  
+Number.RandomBetween(<b>bottom</b> as number, <b>top</b> as number) as number
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|bottom|The lowest number in the range.|  
-|top|The highest number in the range.|  
-  
+## About  
+Returns a random number between `bottom` and `top`.
+
+## Example 1
+Get a random number between 1 and 5.
+
+```powerquery-m
+Number.RandomBetween(1, 5)
+```
+
+`2.546797`

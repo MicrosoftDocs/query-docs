@@ -1,6 +1,6 @@
 ---
 title: "Number.RoundTowardZero | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,28 +11,11 @@ manager: kfile
 ---
 # Number.RoundTowardZero
 
-  
-## About  
-Returns Number.RoundDown(x) when x &gt;= 0 and Number.RoundUp(x) when x &lt; 0.  
-  
 ## Syntax
 
 <pre>
-Number.RoundTowardZero(value as nullable number) as nullable number  
+Number.RoundTowardZero(<b>number</b> as nullable number, optional <b>digits</b> as nullable number) as nullable number 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|value|Value to round toward zero.|  
-  
-## Examples  
-  
-```powerquery-m 
-Number.RoundTowardZero(-1.2) equals -1  
-```  
-  
-```powerquery-m
-Number.RoundTowardZero(1.2) equals 1  
-```  
+## About  
+Returns the result of rounding `number` based on the sign of the number. This function will round positive numbers down and negative numbers up. If `digits` is specified, `number` is rounded to the `digits` number of decimal digits. 
