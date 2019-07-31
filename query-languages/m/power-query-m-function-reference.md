@@ -10,7 +10,11 @@ ms.author: owend
 manager: kfile
 ---
 # Power Query M function reference
+
+The Power Query M function reference includes reference articles for each of the over 700
+
 The Power Query M formula language includes the following function categories.
+
 
 ## In this section
 
