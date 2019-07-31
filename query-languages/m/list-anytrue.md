@@ -20,7 +20,7 @@ List.AnyTrue(<b>list</b> as list) as logical
 ## About  
 Returns true if any expression in the list `list` is true.
 
-####Example 1
+## Example 1
 Determine if any of the expressions in the list {true, false, 2 > 0} are true.
 
 ```powerquery-m
