@@ -1,6 +1,6 @@
 ---
 title: "Number.Factorial | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,24 +11,20 @@ manager: kfile
 ---
 # Number.Factorial
 
-  
-## About  
-Returns the factorial of a number.  
-  
 ## Syntax
 
 <pre>
-Number.Factorial(number as nullable number)  as nullable number  
+Number.Factorial(<b>number</b> as nullable number) as nullable number
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|number|The number to calculate.|  
-  
-## <a name="__goback"></a>Example  
-  
+## About  
+Returns the factorial of the number `number`.
+
+## Example 1
+Find the factorial of 10.
+
 ```powerquery-m
-Number.Factorial(3) equals 6  
-```  
+Number.Factorial(10)
+```
+
+`3628800`

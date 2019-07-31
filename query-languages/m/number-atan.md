@@ -1,6 +1,6 @@
 ---
 title: "Number.Atan | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,11 @@ manager: kfile
 ---
 # Number.Atan
 
-  
-## About  
-Returns the arctangent of a number.  
-  
 ## Syntax
 
 <pre>
-Number.Atan(angle as nullable number) as nullable number  
+Number.Atan(<b>number</b> as nullable number) as nullable number  
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|angle|The angle to calculate.|  
-  
+## About  
+Returns the arctangent of `number`.

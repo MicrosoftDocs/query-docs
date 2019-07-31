@@ -1,6 +1,6 @@
 ---
 title: "Number.Cosh | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,11 @@ manager: kfile
 ---
 # Number.Cosh
 
-  
-## About  
-Returns the hyperbolic cosine of a number.  
-  
 ## Syntax
 
 <pre>
-Number.Cosh(angle as nullable number) as nullable number  
+Number.Cosh(<b>number</b> as nullable number) as nullable number 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|angle|The angle to calculate.|  
-  
+## About  
+Returns the hyperbolic cosine of `number`.

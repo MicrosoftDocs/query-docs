@@ -1,6 +1,6 @@
 ---
 title: "Double.From | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,28 +11,20 @@ manager: kfile
 ---
 # Double.From
 
-  
-## About  
-Returns a Double number value from the given value.  
-  
 ## Syntax
 
 <pre>
-Double.From(value as any, optional culture as nullable text)  as nullable number  
+Double.From(<b>value</b> as any, optional <b>culture</b> as nullable text) as nullable number
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|value|Value to convert.|  
-|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
-  
-## Remarks  
-If the given value is null, Double.From returns null. If the given value is number within the range of Double, value is returned, otherwise an error is returned. If the given value is of any other type, see Number.FromText for converting it to number value, then the previous statement about converting number value to Double number value applies.  
-  
-## Examples  
-  
+## About  
+Returns a Double `number` value from the given `value`. If the given `value` is `null`, `Double.From` returns `null`. If the given `value` is `number` within the range of Double, `value` is returned, otherwise an error is returned. If the given `value` is of any other type, see `Number.FromText` for converting it to `number` value, then the previous statement about converting `number` value to Double `number` value applies.
+
+## Example 1
+Get the Double `number` value of `"4"`.
+
 ```powerquery-m
-Double.From("4.5") equals 4.5  
-```  
+Double.From("4.5")
+```
+
+`4.5`

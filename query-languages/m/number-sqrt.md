@@ -1,6 +1,6 @@
 ---
 title: "Number.Sqrt | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,24 +11,29 @@ manager: kfile
 ---
 # Number.Sqrt
 
-  
-## About  
-Returns the square root of a number.  
-  
 ## Syntax
 
-<pre> 
-Number.Sqrt(number as nullable number) as nullable number  
+<pre>
+Number.Sqrt(<b>number</b> as nullable number) as nullable number
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|number|The number to calculate.|  
-  
-## Example  
-  
+## About  
+Returns the square root of `number`. If `number` is null, `Number.Sqrt` returns null. If it is a negative value, `Number.NaN` is returned (Not a number).
+
+## Example 1
+Find the square root of 625.
+
 ```powerquery-m
-Number.Sqrt(16) equals 4  
-```  
+Number.Sqrt(625)
+```
+
+`25`
+
+## Example 2
+Find the square root of 85.
+
+```powerquery-m
+Number.Sqrt(85)
+```
+
+`9.2195444572928871`

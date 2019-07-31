@@ -1,6 +1,6 @@
 ---
 title: "Int16.From | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 7/31/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,33 +11,29 @@ manager: kfile
 ---
 # Int16.From
 
-  
-## About  
-Returns a 16-bit integer number value from the given value  
-  
 ## Syntax
 
 <pre>
-Int16.From(value as any, optional culture as nullable text, optional roundingMode as nullable number) as nullable number  
+Int16.From(<b>value</b> as any, optional <b>culture</b> as nullable text, optional <b>roundingMode</b> as nullable number) as nullable number
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|value|Value to convert.|  
-|optional culture|A text value corresponding to the culture values supported on your version of Windows, such as "en-US". If the culture is not specified, the current user culture is used. For a list of culture names, see [National Language Support (NLS) API Reference](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).|  
-|optional roundingMode|Specifies rounding direction when there is a tie between the possible numbers to round to.|  
-  
-## Remarks  
-If the given value is null, Int16.From returns null. If the given value is number within the range of 16-bit integer without a fractional part, value is returned. If it has fractional part, then the number is rounded with the rounding mode specified. The default rounding mode is RoundingMode.ToEven. If the given value is of any other type, see Number.FromText for converting it to number value, then the previous statement about converting number value to 16-bit integer number value applies. See Number.Round for the available rounding modes.  
-  
-## Examples  
-  
+## About  
+Returns a 16-bit integer `number` value from the given `value`. If the given `value` is `null`, `Int16.From` returns `null`. If the given `value` is `number` within the range of 16-bit integer without a fractional part, `value` is returned. If it has fractional part, then the number is rounded with the rounding mode specified. The default rounding mode is `RoundingMode.ToEven`. If the given `value` is of any other type, see `Number.FromText` for converting it to `number` value, then the previous statement about converting `number` value to 16-bit integer `number` value applies. See `Number.Round` for the available rounding modes.
+
+## Example 1
+Get the 16-bit integer `number` value of `"4"`.
+
 ```powerquery-m
-Int16.From("4") equals 4  
-```  
-  
+Int64.From("4")
+```
+
+`4`
+
+## Example 2
+Get the 16-bit integer `number` value of `"4.5"` using `RoundingMode.AwayFromZero`.
+
 ```powerquery-m
-Int16.From("4.5", null, RoundingMode.AwayFromZero) equals 5  
-```  
+Int16.From("4.5", null, RoundingMode.AwayFromZero)
+```
+
+`5`
