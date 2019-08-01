@@ -1,6 +1,6 @@
 ---
 title: "Record.FromTable | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,44 +11,20 @@ manager: kfile
 ---
 # Record.FromTable
 
-  
-## About  
-Returns a record from a table of records containing field names and values.  
-  
 ## Syntax
 
 <pre>
-Record.FromTable(list as table) as record  
+Record.FromTable(<b>table</b> as table) as record  
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The Table to check.|  
-  
-## <a name="__toc360789195"></a>Remarks  
-  
--   An Expression.Error is thrown if the fields are not unique.  
-  
-## <a name="__goback"></a>Example  
-  
+## About  
+Returns a record from a table of records `table` containing field names and value names `{[Name = name, Value = value]}`. An exception is thrown if the field names are not unique.
+
+## Example 1
+Create a record from the table of the form Table.FromRecords({[Name = "CustomerID", Value = 1], [Name = "Name", Value = "Bob"], [Name = "Phone", Value = "123-4567"]}).
+
 ```powerquery-m
-let  
-  
-    input = Table.FromRows({{"OrderID",1} , {"CustomerID", 1}, {"Item", "Fishing rod"}, {"Price" , 100.00}}, {"Name", "Value"})  
-  
-in  
-  
-    Record.FromTable(input)  
-  
-equals [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0]  
-```  
-  
-|||  
-|-|-|  
-|OrderID|1|  
-|CustomerID|1|  
-|Item|Fishing rod|  
-|Price|100|  
-  
+Record.FromTable(Table.FromRecords({[Name = "CustomerID", Value = 1], [Name = "Name", Value = "Bob"], [Name = "Phone", Value = "123-4567"]}))
+```
+
+<table> <tr> <th>CustomerID</th> <td>1</td> </tr> <tr> <th>Name</th> <td>Bob</td> </tr> <tr> <th>Phone</th> <td>123-4567</td> </tr> </table>
