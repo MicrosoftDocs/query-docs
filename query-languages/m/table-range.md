@@ -1,6 +1,6 @@
 ---
 title: "Table.Range | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,46 +11,29 @@ manager: kfile
 ---
 # Table.Range
 
-  
-## About  
-Returns the specified number of rows from a table starting at an offset.  
-  
 ## Syntax
 
 <pre>
-Table.Range( table as table, offset as number, optional count as nullable number) as table  
+Table.Range(<b>table</b> as table, <b>offset</b> as number, optional <b>count</b> as nullable number) as table
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|Source table.|  
-|Offset|Starting row offset.|  
-|optional count|Optional number of rows to return. If count is not provided, all rows are returned starting from offset.|  
-  
-## Remark  
-  
--   Table.Range is similar to List.Range but requires a table as input.  
-  
-## Example  
-  
-```powerquery-m 
-Table.Range(Table.FromRecords({  
-  
-    [CustomerID = 1, Name = "Bob", Phone = "123-4567"],  
-  
-      [CustomerID = 2, Name = "Jim", Phone = "987-6543"] ,  
-  
-      [CustomerID = 3, Name = "Paul", Phone = "543-7890"] ,  
-  
-      [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]  
-  
-}), 1, 2)  
-```  
-  
-|CustomerID|Name|Phone|  
-|--------------|--------|---------|  
-|2|Jim|987-6543|  
-|3|Paul|543-7890|  
-  
+## About  
+Returns the rows from the `table` starting at the specified `offset`. An optional parameter, `count`, specifies how many rows to return. By default, all the rows after the offset are returned.
+
+## Example 1
+Return all the rows starting at offset 1 in the table.
+
+```powerquery-m
+Table.Range(Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"], [CustomerID = 2, Name = "Jim", Phone = "987-6543"], [CustomerID = 3, Name = "Paul", Phone = "543-7890"], [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]}), 1)
+```
+
+<table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>2</td> <td>Jim</td> <td>987-6543</td> </tr> <tr> <td>3</td> <td>Paul</td> <td>543-7890</td> </tr> <tr> <td>4</td> <td>Ringo</td> <td>232-1550</td> </tr> </table>
+
+## Example 2
+Return one row starting at offset 1 in the table.
+
+```powerquery-m
+Table.Range(Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"], [CustomerID = 2, Name = "Jim", Phone = "987-6543"], [CustomerID = 3, Name = "Paul", Phone = "543-7890"], [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]}), 1, 1)
+```
+
+<table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>2</td> <td>Jim</td> <td>987-6543</td> </tr> </table>

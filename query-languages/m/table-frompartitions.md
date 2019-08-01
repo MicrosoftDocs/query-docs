@@ -1,6 +1,6 @@
 ---
 title: "Table.FromPartitions | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,52 +11,20 @@ manager: kfile
 ---
 # Table.FromPartitions
 
-  
-## About  
-Returns a table that is the result of combining a set of partitioned tables into new columns. The type of the column can optionally be specified, the default is any.  
-  
 ## Syntax
 
 <pre>
-Table.FromPartitions ( partitionColumn as text, partitions as list, optional partitionColumnType as nullable type) as table  
+Table.FromPartitions(<b>partitionColumn</b> as text, <b>partitions</b> as list, optional <b>partitionColumnType</b> as nullable type) as table 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|partitionColumn|The name of the column where the values from the paritions will added.|  
-|partitions|The list of partitions to combine, specificed in  {value, table} pairs.|  
-|Optional partitionColumnType|The type of the resulting column (default is any).|  
-  
-## Example  
-  
+## About  
+Returns a table that is the result of combining a set of partitioned tables, `partitions`. `partitionColumn` is the name of the column to add. The type of the column defaults to `any`, but can be specified by `partitionColumnType`.
+
+## Example 1
+Find item type from the list `{number}`.
+
 ```powerquery-m
-Table.FromPartitions("Year",  
-  
-{{1994, Table.FromPartitions("Month", {  
-  
-    {"Jan", Table.FromPartitions("Day", {  
-  
-        {1, #table({"Column1"},{{"Column1 Value 1"}})},  
-  
-        {2, #table({"Column1"},{{"Column1 Value 2"}})}})},  
-  
-        {"Feb", Table.FromPartitions("Day",  
-  
-        {{3, #table({"Column1"},{{"Column1 Value 3"}})},  
-  
-        {4,  #table({"Column1"},{{"Column1 Value 4"}  
-  
-})}})}})}})  
-  
-equals  
-```  
-  
-|Column1|Day|Month|Year|  
-|-----------|-------|---------|--------|  
-|Column1 Value 1|1|Jan|1994|  
-|Column1 Value 2|2|Jan|1994|  
-|Column1 Value 3|3|Feb|1994|  
-|Column1 Value 4|4|Feb|1994|  
-  
+Table.FromPartitions( "Year", { { 1994, Table.FromPartitions( "Month", { { "Jan", Table.FromPartitions( "Day", { { 1, #table({"Foo"},{{"Bar"}}) }, { 2, #table({"Foo"},{{"Bar"}}) } } ) }, { "Feb", Table.FromPartitions( "Day", { { 3, #table({"Foo"},{{"Bar"}}) }, { 4, #table({"Foo"},{{"Bar"}}) } } ) } } ) } })
+```
+
+<table> <tr> <th>Foo</th> <th>Day</th> <th>Month</th> <th>Year</th> </tr> <tr> <td>Bar</td> <td>1</td> <td>Jan</td> <td>1994</td> </tr> <tr> <td>Bar</td> <td>2</td> <td>Jan</td> <td>1994</td> </tr> <tr> <td>Bar</td> <td>3</td> <td>Feb</td> <td>1994</td> </tr> <tr> <td>Bar</td> <td>4</td> <td>Feb</td> <td>1994</td> </tr> </table>

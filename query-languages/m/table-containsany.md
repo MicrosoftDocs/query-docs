@@ -1,6 +1,6 @@
 ---
 title: "Table.ContainsAny | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,36 +11,38 @@ manager: kfile
 ---
 # Table.ContainsAny
 
-  
-## About  
-Determines whether any of the specified records appear as rows in the table.  
-  
 ## Syntax
 
 <pre>
-Table.ContainsAny(table as table, rows as list, optional equationCriteria as any) as logical  
+Table.ContainsAny(<b>table</b> as table, <b>rows</b> as list, optional <b>equationCriteria</b> as any) as logical
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to check.|  
-|rows|The List of rows to check for.|  
-|optional equationCriteria|An optional value that specifies how to control comparison between the rows of the table.|  
-  
-## <a name="__toc360789673"></a>Remarks  
-  
--   Table.ContainsAny is similar to List.ContainsAny but requires a table as input.  
-  
-## <a name="__goback"></a>Example  
-  
+## About  
+Indicates whether any the specified records in the list of records `rows`, appear as rows in the `table`. An optional parameter `equationCriteria` may be specified to control comparison between the rows of the table.
+
+## Example 1
+Determine if the table `({[a = 1, b = 2], [a = 3, b = 4]})` contains the rows `[a = 1, b = 2]` or `[a = 3, b = 5]`.
+
 ```powerquery-m
-Table.ContainsAny(  
-  
-    Table.FromRecords( {[A=1, B=2],[A=2, B=3],[A=3, B=4]}),  
-  
-    {[A=1, B=2],[A=2, B=4]},  
-  
-    {"A", "B"}) equals true  
-```  
+Table.ContainsAny(Table.FromRecords({[a = 1, b = 2], [a = 3, b = 4]}), {[a = 1, b = 2], [a = 3, b = 5]})
+```
+
+`true`
+
+## Example 2
+Determine if the table `({[a = 1, b = 2], [a = 3, b = 4]})` contains the rows `[a = 1, b = 3]` or `[a = 3, b = 5]`.
+
+```powerquery-m
+Table.ContainsAny(Table.FromRecords({[a = 1, b = 2], [a = 3, b = 4]}), {[a = 1, b = 3], [a = 3, b = 5]})
+```
+
+`false`
+
+## Example 3
+Determine if the table `(Table.FromRecords({[a = 1, b = 2], [a = 3, b = 4]}))` contains the rows `[a = 1, b = 3]` or `[a = 3, b = 5]` comparing only the column [a].
+
+```powerquery-m
+Table.ContainsAny(Table.FromRecords({[a = 1, b = 2], [a = 3, b = 4]}), {[a = 1, b = 3], [a = 3, b = 5]}, "a")
+```
+
+`true`

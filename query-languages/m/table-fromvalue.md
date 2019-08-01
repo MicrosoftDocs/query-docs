@@ -1,6 +1,6 @@
 ---
 title: "Table.FromValue | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,31 +11,38 @@ manager: kfile
 ---
 # Table.FromValue
 
-  
-## About  
-Returns a table with a column containing the provided value or list of values.  
-  
 ## Syntax
 
 <pre>
-Table.FromValue (value as any) as table  
+Table.FromValue(<b>value</b> as any, optional <b>options</b> as nullable record) as table  
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|Value|The value to convert.|  
-  
-## Example  
-  
+## About  
+Creates a table with a column containing the provided value or list of values, `value`. An optional record parameter, `options`, may be specified to control the following options: <ul> <li> <code>DefaultColumnName</code> : The column name used when constructing a table from a list or scalar value.</li> </ul> 
+
+## Example 1
+Create a table from the value 1.
+
 ```powerquery-m
-Table.FromValue({1, "Bob", "123-4567"}) equals  
-```  
-  
-|Value|  
-|---------|  
-|1|  
-|Bob|  
-|132-4567|  
-  
+Table.FromValue(1)
+```
+
+<table> <tr> <th>Value</th> </tr> <tr> <td>1</td> </tr> </table>
+
+## Example 2
+Create a table from the list.
+
+```powerquery-m
+Table.FromValue({1, "Bob", "123-4567"})
+```
+
+<table> <tr> <th>Value</th> </tr> <tr> <td>1</td> </tr> <tr> <td>Bob</td> </tr> <tr> <td>123-4567</td> </tr> </table>
+
+## Example 3
+Create a table from the value 1, with a custom column name.
+
+```powerquery-m
+Table.FromValue(1, [DefaultColumnName = "MyValue"])
+```
+
+<table> <tr> <th>MyValue</th> </tr> <tr> <td>1</td> </tr> </table>

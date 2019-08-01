@@ -1,6 +1,6 @@
 ---
 title: "Table.Keys | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,15 +11,14 @@ manager: kfile
 ---
 # Table.Keys
 
-  
-## About  
-Returns a list of key column names from a table.  
-  
 ## Syntax
 
 <pre> 
-Table.Keys(table as table) as list  
+Table.Keys(<b>table</b> as table) as list 
 </pre>
+  
+## About  
+Returns a list of key column names from a table.  
   
 ## Arguments  
   

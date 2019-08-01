@@ -1,6 +1,6 @@
 ---
 title: "Table.Unpivot | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,41 +11,20 @@ manager: kfile
 ---
 # Table.Unpivot
 
-  
-## About  
-Given a list of table columns, transforms those columns into attribute-value pairs.  
-  
 ## Syntax
 
 <pre>
-Table.Unpivot(table as table, pivotColumns as list, attributeColumn as text, valueColumn as text) as table  
+Table.Unpivot(<b>table</b> as table, <b>pivotColumns</b> as list, <b>attributeColumn</b> as text, <b>valueColumn</b> as text) as table 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to modify.|  
-|pivotColumns|The columns to transform.|  
-|attributeColumn|The column to make the attribute.|  
-|valueColumn|The column to make the value.|  
-  
-## <a name="__toc360789588"></a>Remarks  
-  
--   The transformation is patterned after the SQL UNPIVOT operator.  
-  
-## Examples  
-  
+## About  
+Translates a set of columns in a table into attribute-value pairs, combined with the rest of the values in each row.
+
+## Example 1
+Take the columns "a", "b", and "c" in the table `({[ key = "x", a = 1, b = null, c = 3 ], [ key = "y", a = 2, b = 4, c = null ]})` and unpivot them into attribute-value pairs.
+
 ```powerquery-m
-Table.Unpivot(Table.FromRecords({  
-  
-    [ key = "key1", attribute1 = 1, attribute2 = null, attribute3 = 3 ]}),  
-  
-    { "attribute1", "attribute2", "attribute3" }, "attribute", "value")  
-```  
-  
-|key|attribute|value|  
-|-------|-------------|---------|  
-|key1|attribute1|1|  
-|key1|attribute3|3|  
-  
+Table.Unpivot(Table.FromRecords({[ key = "x", a = 1, b = null, c = 3 ], [ key = "y", a = 2, b = 4, c = null ]}), { "a", "b", "c" }, "attribute", "value")
+```
+
+<table> <tr> <th>key</th> <th>attribute</th> <th>value</th> </tr> <tr> <td>x</td> <td>a</td> <td>1</td> </tr> <tr> <td>x</td> <td>c</td> <td>3</td> </tr> <tr> <td>y</td> <td>a</td> <td>2</td> </tr> <tr> <td>y</td> <td>b</td> <td>4</td> </tr> </table>

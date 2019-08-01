@@ -1,6 +1,6 @@
 ---
 title: "Table.SelectRowsWithErrors | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,48 +11,20 @@ manager: kfile
 ---
 # Table.SelectRowsWithErrors
 
-  
-## About  
-Returns a table with only the rows from table that contain an error in at least one of the cells in a row.  
-  
 ## Syntax
 
 <pre>
-Table.SelectRowsWithErrors(table as table, optional columns as nullable list) as table  
+Table.SelectRowsWithErrors(<b>table</b> as table, optional <b>columns</b> as nullable list) as table
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to check.|  
-|optional columns|Only cells in the column list are inspected for errors.|  
-  
-## <a name="__toc360789534"></a>Remarks  
-  
--   Only errors detected by directly accessing the cell are considered. Errors nested more deeply, such as a structured value in a cell, are ignored.  
-  
-## Example  
-  
-```powerquery-m 
-Table.SelectRowsWithErrors(Table.FromRecords(  
-  
-{  
-  
-      [CustomerID =..., Name = "Bob", Phone = "123-4567"],  
-  
-      [CustomerID = 2, Name = "Jim", Phone = "987-6543"] ,  
-  
-      [CustomerID = 3, Name = "Paul", Phone = "543-7890"] ,  
-  
-      [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]  
-  
-}  
-  
-))  
-```  
-  
-|CustomerID|Name|Phone|  
-|--------------|--------|---------|  
-|Error|Bob|123-4567|  
-  
+## About  
+Returns a table with only those rows of the input table that contain an error in at least one of the cells. If a columns list is specified, then only the cells in the specified columns are inspected for errors.
+
+## Example 1
+Select names of customers with errors in their rows.
+
+```powerquery-m
+Table.SelectRowsWithErrors(Table.FromRecords({ [CustomerID =..., Name = "Bob", Phone = "123-4567"], [CustomerID = 2, Name = "Jim", Phone = "987-6543"] , [CustomerID = 3, Name = "Paul", Phone = "543-7890"] , [CustomerID = 4, Name = "Ringo", Phone = "232-1550"] }))[Name]
+```
+
+<table> <tr><td>Bob</td></tr> </table>

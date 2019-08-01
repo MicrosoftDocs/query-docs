@@ -1,6 +1,6 @@
 ---
 title: "Table.SelectRows | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,49 +11,29 @@ manager: kfile
 ---
 # Table.SelectRows
 
-  
-## About  
-Returns a table containing only the rows that match a condition.  
-  
 ## Syntax
 
 <pre>
-Table.SelectRows(table as table, condition as function) as table  
+Table.SelectRows(<b>table</b> as table, <b>condition</b> as function) as table
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to check.|  
-|condition|The condition to match.|  
-  
-## <a name="__toc360789530"></a>Remarks  
-  
--   Table. SelectRows is similar to List. Select but requires a table as input.  
-  
-## Examples  
-  
+## About  
+Returns a table of rows from the `table`, that matches the selection `condition`.
+
+## Example 1
+Select the rows in the table where the values in [CustomerID] column are greater than 2.
+
 ```powerquery-m
-Table.SelectRows(Table.FromRecords(  
-  
-{  
-  
-      [CustomerID = 1, Name = "Bob", Phone = "123-4567"],  
-  
-      [CustomerID = 2, Name = "Jim", Phone = "987-6543"] ,  
-  
-      [CustomerID = 3, Name = "Paul", Phone = "543-7890"] ,  
-  
-      [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]  
-  
-}  
-  
-), each [CustomerID] > 2)  
-```  
-  
-|CustomerID|Name|Phone|  
-|--------------|--------|---------|  
-|3|Paul|543-7890|  
-|4|Ringo|232-1550|  
-  
+Table.SelectRows(Table.FromRecords({ [CustomerID = 1, Name = "Bob", Phone = "123-4567"], [CustomerID = 2, Name = "Jim", Phone = "987-6543"] , [CustomerID = 3, Name = "Paul", Phone = "543-7890"] , [CustomerID = 4, Name = "Ringo", Phone = "232-1550"] }), each [CustomerID] > 2)
+```
+
+<table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>3</td> <td>Paul</td> <td>543-7890</td> </tr> <tr> <td>4</td> <td>Ringo</td> <td>232-1550</td> </tr> </table>
+
+## Example 2
+Select the rows in the table where the names do not contain a "B".
+
+```powerquery-m
+Table.SelectRows(Table.FromRecords({ [CustomerID = 1, Name = "Bob", Phone = "123-4567"], [CustomerID = 2, Name = "Jim", Phone = "987-6543"] , [CustomerID = 3, Name = "Paul", Phone = "543-7890"] , [CustomerID = 4, Name = "Ringo", Phone = "232-1550"] }), each not Text.Contains([Name], "B"))
+```
+
+<table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>2</td> <td>Jim</td> <td>987-6543</td> </tr> <tr> <td>3</td> <td>Paul</td> <td>543-7890</td> </tr> <tr> <td>4</td> <td>Ringo</td> <td>232-1550</td> </tr> </table>

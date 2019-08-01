@@ -1,6 +1,6 @@
 ---
 title: "Table.FindText | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,44 +11,20 @@ manager: kfile
 ---
 # Table.FindText
 
-  
-## About  
-Returns a table containing only the rows that have the specified text within one of their cells or any part thereof.  
-  
 ## Syntax
 
 <pre>
-Table.FindText (table as table, text as text) as table  
+Table.FindText(<b>table</b> as table, <b>text</b> as text) as table
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to modify.|  
-|text|The text to compare against.|  
-  
-## Example  
-  
+## About  
+Returns the rows in the table `table` that contain the text `text`. If the text is not found, an empty table is returned.
+
+## Example 1
+Find the rows in the table that contain "Bob".
+
 ```powerquery-m
-Table.FindText(Table.FromRecords(  
-  
-{  
-  
-      [CustomerID = 1, Name = "Bob", Phone = "123-4567"],  
-  
-      [CustomerID = 2, Name = "Jim", Phone = "987-6543"] ,  
-  
-      [CustomerID = 3, Name = "Paul", Phone = "543-7890"] ,  
-  
-      [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]  
-  
-}  
-  
-), "Bob")  
-```  
-  
-|CustomerID|Name|Phone|  
-|--------------|--------|---------|  
-|1|Bob|123-4567|  
-  
+Table.FindText(Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"], [CustomerID = 2, Name = "Jim", Phone = "987-6543"], [CustomerID = 3, Name = "Paul", Phone = "543-7890"], [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]}), "Bob")
+```
+
+<table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>1</td> <td>Bob</td> <td>123-4567</td> </tr> </table>

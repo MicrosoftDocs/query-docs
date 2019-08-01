@@ -1,6 +1,6 @@
 ---
 title: "Table.ReverseRows | Microsoft Docs"
-ms.date: 5/22/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-#Table.ReverseRows
+# Table.ReverseRows
 
 ## Syntax
 
