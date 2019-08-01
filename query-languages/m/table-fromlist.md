@@ -1,6 +1,6 @@
 ---
 title: "Table.FromList | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,40 +11,29 @@ manager: kfile
 ---
 # Table.FromList
 
-  
-## About  
-Converts a list into a table by applying the specified splitting function to each item in the list.  
-  
 ## Syntax
 
 <pre>
-Table.FromList(list as list, optional splitter as nullable function, optional columns as any, optional default as any, optional extraValues as any) as table  
+Table.FromList(<b>list</b> as list, optional <b>splitter</b> as nullable function, optional <b>columns</b> as any, optional <b>default</b> as any, optional <b>extraValues</b> as nullable number) as table 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The List to convert.|  
-|optional splitter|Splitter function.|  
-|optional columns|A list of text values specifying the column names of the resulting table.|  
-|optional default|A default can be provided to be used for missing values in the table.|  
-|optional extraValues|Extra values for each item in the list.|  
-  
-## Example  
-  
+## About  
+Converts a list, `list` into a table by applying the optional splitting function, `splitter`, to each item in the list. By default, the list is assumed to be a list of text values that is split by commas. Optional `columns` may be the number of columns, a list of columns or a TableType. Optional `default` and `extraValues` may also be specified.
+
+## Example 1
+Create a table from the list with the column named "Letters" using the default splitter.
+
 ```powerquery-m
-Table.FromList(  
-  
-    {[CustomerID =1, Name ="Bob", Phone = "123-4567"] ,  
-  
-    [CustomerID =2, Name ="Jim", Phone = "987-6543"]},  
-  
-    Record.FieldValues, {"CustomerID", "Name", "Phone"})  
-```  
-  
-|CustomerID|Name|Phone|  
-|--------------|--------|---------|  
-|1|Bob|123-4567|  
-|2|Jim|987-6543|  
-  
+Table.FromList({"a", "b", "c", "d"}, null, {"Letters"})
+```
+
+<table> <tr> <th>Letters</th> </tr> <tr> <td>a</td> </tr> <tr> <td>b</td> </tr> <tr> <td>c</td> </tr> <tr> <td>d</td> </tr> </table>
+
+## Example 2
+Create a table from the list using the Record.FieldValues splitter with the resulting table having "CustomerID" and "Name" as column names.
+
+```powerquery-m
+Table.FromList({[CustomerID=1,Name="Bob"],[CustomerID=2,Name="Jim"]} , Record.FieldValues, {"CustomerID", "Name"})
+```
+
+<table> <tr> <th>CustomerID</th> <th>Name</th> </tr> <tr> <td>1</td> <td>Bob</td> </tr> <tr> <td>2</td> <td>Jim</td> </tr> </table>

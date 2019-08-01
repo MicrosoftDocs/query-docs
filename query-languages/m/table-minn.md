@@ -1,6 +1,6 @@
 ---
 title: "Table.MinN | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,49 +11,29 @@ manager: kfile
 ---
 # Table.MinN
 
-  
-## About  
-Returns the smallest N rows in the given table. After the rows are sorted, the countOrCondition parameter must be specified to further filter the result.  
-  
 ## Syntax
 
 <pre>
-Table.MinN(table as table, comparisonCriteria as any, countOrCondition as any) as table  
+Table.MinN(<b>table</b> as table, <b>comparisonCriteria</b> as any, <b>countOrCondition</b> as any) as table
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to check.|  
-|comparisonCriteria|Smallest N rows comparison criteria.|  
-|countOrCondition|After the rows are sorted, countOrCondition further filters the result.|  
-  
-The **countOrCondition** argument has two possible settings:  
-  
-|Setting|Description|  
-|-----------|---------------|  
-|as a number|A list of items up to countOrCondition items in ascending order is returned.|  
-|as a condition|A list of items that initially meet the condition is returned. Once an item fails the condition, no further items are considered.|  
-  
-## Examples  
-  
+## About  
+Returns the smallest row(s) in the `table`, given the `comparisonCriteria`. After the rows are sorted, the `countOrCondition` parameter must be specified to further filter the result. Note the sorting algorithm cannot guarantee a fixed sorted result. The `countOrCondition` parameter can take multiple forms: <ul> <li> If a number is specified, a list of up to <code>countOrCondition</code> items in ascending order is returned. </li> <li> If a condition is specified, a list of items that initially meet the condition is returned. Once an item fails the condition, no further items are considered. </li> </ul>
+
+## Example 1
+Find the row with the smallest value in column [a] with the condition [a] < 3, in the table. The rows are sorted before the filter is applied.
+
 ```powerquery-m
-Table.MinN(Employees, "Salary", 3) equals  
-```  
-  
-|Name|Level|Salary|  
-|--------|---------|----------|  
-|Margo|3|45000|  
-|Nikki|5|75000|  
-|Andrew|6|85000|  
-  
+Table.MinN(Table.FromRecords({[a = 2, b = 4], [a = 0, b = 0], [a = 6, b = 4]}), "a", each [a] < 3)
+```
+
+<table> <tr> <th>a</th> <th>b</th> </tr> <tr> <td>0</td> <td>0</td> </tr> <tr> <td>2</td> <td>4</td> </tr> </table>
+
+## Example 2
+Find the row with the smallest value in column [a] with the condition [b] < 0, in the table. The rows are sorted before the filter is applied.
+
 ```powerquery-m
-Table.MinN(Employees, "Salary", each [Level] < 6) equals  
-```  
-  
-|Name|Level|Salary|  
-|--------|---------|----------|  
-|Margo|3|45000|  
-|Nikki|5|75000|  
-  
+Table.MinN(Table.FromRecords({[a = 2, b = 4], [a = 8, b = 0], [a = 6, b = 2]}), "a", each [b] < 0)
+```
+
+<table> <tr> </tr> </table>

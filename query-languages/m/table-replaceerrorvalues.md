@@ -1,6 +1,6 @@
 ---
 title: "Table.ReplaceErrorValues | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,39 +11,29 @@ manager: kfile
 ---
 # Table.ReplaceErrorValues
 
-  
-## About  
-Replaces the error values in the specified columns with the corresponding specified value.  
-  
 ## Syntax
 
 <pre>
-Table.ReplaceErrorValues(table as table, errorReplacement as list) as table  
+Table.ReplaceErrorValues(<b>table</b> as table, <b>errorReplacement</b> as list) as table
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to modify.|  
-|errorReplacement|The list of columns and the value to replace the errors with. The form of the list is {{column1, value1},…}|  
-  
-## <a name="__toc360789538"></a>Remarks  
-  
--   There may be only one replacement value per column, specifying the column more than one will result in an error  
-  
-## Example  
-  
+## About  
+Replaces the error values in the specified columns of the `table` with the new values in the `errorReplacement` list. The format of the list is {{column1, value1}, …}. There may only be one replacement value per column, specifying the column more than once will result in an error.
+
+## Example 1
+Replace the error value with the text "world" in the table.
+
 ```powerquery-m
-Table.ReplaceErrorValues(  
-  
-    Table.FromRows({{1,"hello"},{3,...}}, {"Column1","Column2"}),  
-  
-    {"Column2", "world"})  
-```  
-  
-|Column1|Column2|  
-|-----------|-----------|  
-|1|hello|  
-|2|world|  
-  
+Table.ReplaceErrorValues(Table.FromRows({{1,"hello"},{3,...}}, {"A","B"}), {"B", "world"})
+```
+
+<table> <tr> <th>A</th> <th>B</th> </tr> <tr> <td>1</td> <td>hello</td> </tr> <tr> <td>3</td> <td>world</td> </tr> </table>
+
+## Example 2
+Replace the error value in column A with the text "hello" and in column B with the text "world" in the table.
+
+```powerquery-m
+Table.ReplaceErrorValues(Table.FromRows({{..., ...},{1,2}}, {"A","B"}), {{"A", "hello"}, {"B", "world"}})
+```
+
+<table> <tr> <th>A</th> <th>B</th> </tr> <tr> <td>hello</td> <td>world</td> </tr> <tr> <td>1</td> <td>2</td> </tr> </table>

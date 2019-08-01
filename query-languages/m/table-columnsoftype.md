@@ -1,6 +1,6 @@
 ---
 title: "Table.ColumnsOfType | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,33 +11,20 @@ manager: kfile
 ---
 # Table.ColumnsOfType
 
-  
-## About  
-Returns a list with the names of the columns that match the specified types.  
-  
 ## Syntax
 
 <pre>
-Table.ColumnsOfType(table as table, listOfTypes as list) as list  
+Table.ColumnsOfType(<b>table</b> as table, <b>listOfTypes</b> as list) as list
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|Table|The input table.|  
-|listOfTypes|The types to match columns types on.|  
-  
-## Example  
-  
-```powerquery-m 
-let  
-  
-  tableValue = Table.FromRecords({[a=1, b="hello"]}, type table[a=Number.Type, b=Text.Type])  
-  
-in  
-  
-  Table.ColumnsOfType(tableValue, {type number})  
-  
-equals {"a"}  
-```  
+## About  
+Returns a list with the names of the columns from table `table` that match the types specified in `listOfTypes`.
+
+## Example 1
+Return the names of columns of type Number.Type from the table.
+
+```powerquery-m
+Table.ColumnsOfType(Table.FromRecords({[a=1,b="hello"]}, type table[a=Number.Type, b=Text.Type]), {type number})
+```
+
+<table> <tr><td>a</td></tr> </table>

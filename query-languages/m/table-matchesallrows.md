@@ -1,6 +1,6 @@
 ---
 title: "Table.MatchesAllRows | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,47 +11,29 @@ manager: kfile
 ---
 # Table.MatchesAllRows
 
-  
-## About  
-Returns true if all of the rows in a table meet a condition.  
-  
 ## Syntax
 
 <pre>
-Table.MatchesAllRows(table as table, condition as function) as logical  
+Table.MatchesAllRows(<b>table</b> as table, <b>condition</b> as function) as logical 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to check.|  
-|condition|The condition to match.|  
-  
-## Remark  
-  
--   Table.MatchesAllRows is similar to List.MatchesAll but requires a table argument.  
-  
-## Example  
-  
+## About  
+Indicates whether all the rows in the `table` match the given `condition`. Returns `true` if all of the rows match, `false` otherwise.
+
+## Example 1
+Determine whether all of the row values in column [a] are even in the table.
+
 ```powerquery-m
-Table.MatchesAllRows(Table.FromRecords (  
-  
-{  
-  
-    [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0],  
-  
-      [OrderID = 2, CustomerID = 1, Item = "1 lb. worms", Price = 5.0],  
-  
-      [OrderID = 3, CustomerID = 2, Item = "Fishing net", Price = 25.0],  
-  
-      [OrderID = 4, CustomerID = 3, Item = "Fish tazer", Price = 200.0],  
-  
-      [OrderID = 5, CustomerID = 3, Item = "Bandaids", Price = 2.0],  
-  
-      [OrderID = 6, CustomerID = 1, Item = "Tackle box", Price = 20.0]  
-  
-}), each Number.Mod([CustomerID], 3) = 0)  
-  
-equals false  
-```  
+Table.MatchesAllRows(Table.FromRecords({[a = 2, b = 4], [a = 6, b = 8]}), each Number.Mod([a], 2) = 0 )
+```
+
+`true`
+
+## Example 2
+Find if all of the row values are [a = 1, b = 2], in the table `({[a = 1, b = 2], [a = 3, b = 4]})`.
+
+```powerquery-m
+Table.MatchesAllRows(Table.FromRecords({[a = 1, b = 2], [a = -3, b = 4]}), each _ = [a = 1, b = 2])
+```
+
+`false`

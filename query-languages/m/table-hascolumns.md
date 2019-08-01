@@ -1,6 +1,6 @@
 ---
 title: "Table.HasColumns | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,45 +11,29 @@ manager: kfile
 ---
 # Table.HasColumns
 
-  
-## About  
-Returns true if a table has the specified column or columns.  
-
 ## Syntax
 
-<pre> 
-Table.HasColumns(table as table, columns as any) as logical  
+<pre>
+Table.HasColumns(<b>table</b> as table, <b>columns</b> as any) as logical 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to check.|  
-|columns|The columns to check for as a text value or a list of text values.|  
-  
-## <a name="__toc360793125"></a>Remarks  
-  
--   **Table.HasColumns** is similar to **Record.HasFields** but requires a table as input.  
-  
-## Examples  
-  
+## About  
+indicates whether the `table` contains the specified column(s), `columns`. Returns `true` if the table contains the column(s), `false` otherwise.
+
+## Example 1
+Determine if the table has the column [Name].
+
 ```powerquery-m
-Table.HasColumns(Table.FromRecords(  
-  
-{  
-  
-      [CustomerID = 1, Name = "Bob", Phone = "123-4567"],  
-  
-      [CustomerID = 2, Name = "Jim", Phone = "987-6543"],  
-  
-      [CustomerID = 3, Name = "Paul", Phone = "543-7890"],  
-  
-      [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]  
-  
-}  
-  
-),"Name")  
-  
-equals true  
-```  
+Table.HasColumns(Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"], [CustomerID = 2, Name = "Jim", Phone = "987-6543"], [CustomerID = 3, Name = "Paul", Phone = "543-7890"], [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]}),"Name")
+```
+
+`true`
+
+## Example 2
+Find if the table has the column [Name] and [PhoneNumber].
+
+```powerquery-m
+Table.HasColumns(Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"], [CustomerID = 2, Name = "Jim", Phone = "987-6543"], [CustomerID = 3, Name = "Paul", Phone = "543-7890"], [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]}),{"Name", "PhoneNumber"})
+```
+
+`false`

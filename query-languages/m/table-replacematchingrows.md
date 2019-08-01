@@ -1,6 +1,6 @@
 ---
 title: "Table.ReplaceMatchingRows | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,62 +11,20 @@ manager: kfile
 ---
 # Table.ReplaceMatchingRows
 
-  
-## About  
-Replaces specific rows from a table with the new rows.  
-  
 ## Syntax
 
 <pre>
-Table.ReplaceMatchingRows(table as table, replacements as list, optional equationCriteria as any) as table  
+Table.ReplaceMatchingRows(<b>table</b> as table, <b>replacements</b> as list, optional <b>equationCriteria</b> as any) as table 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to modify.|  
-|replacements|The List of replacement rows.|  
-|optional equationCriteria|An optional value that specifies how to control comparison between the rows of the table.|  
-  
-## <a name="__toc360789696"></a>Remarks  
-  
--   Table.ReplaceMatchingRows is similar to List.ReplaceMatchingRows but requires a table as input.  
-  
--   The new rows must be compatible with the type of the table .  
-  
-## Example  
-  
+## About  
+Replaces all the specified rows in the `table` with the provided ones. The rows to replace and the replacements are specified in `replacements`, using {old, new} formatting. An optional `equationCriteria` parameter may be specified to control comparison between the rows of the table.
+
+## Example 1
+Replace the rows [a = 1, b = 2] and [a = 2, b = 3] with [a = -1, b = -2],[a = -2, b = -3] in the table.
+
 ```powerquery-m
-Table.ReplaceMatchingRows(  
-  
-Table.FromRecords(  
-  
-{  
-  
- [Column1 = 1, Column2 = 2],  
-  
- [Column1 = 2, Column2 = 3],  
-  
- [Column1 = 3, Column2 = 4],  
-  
- [Column1 = 1, Column2 = 2]  
-  
-}),{  
-  
-{[Column1 = 1, Column2 = 2],  
-  
- [Column1 = -1, Column2 = -2]},  
-  
-{[Column1  = 2, Column2 = 3],  
-  
- [Column1  = -2, Column2 = -3]} })  
-```  
-  
-|Column1|Column2|  
-|-----------|-----------|  
-|-1|-2|  
-|-2|-3|  
-|3|4|  
-|-1|-2|  
-  
+Table.ReplaceMatchingRows(Table.FromRecords({[a = 1, b =2], [a = 2, b = 3], [a = 3, b = 4], [a = 1, b = 2]}),{ {[a = 1, b = 2], [a = -1, b = -2]}, {[a = 2, b = 3], [a = -2, b = -3]} })
+```
+
+<table> <tr> <th>a</th> <th>b</th> </tr> <tr> <td>-1</td> <td>-2</td> </tr> <tr> <td>-2</td> <td>-3</td> </tr> <tr> <td>3</td> <td>4</td> </tr> <tr> <td>-1</td> <td>-2</td> </tr> </table>

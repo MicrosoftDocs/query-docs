@@ -1,6 +1,6 @@
 ---
 title: "Table.PrefixColumns | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,38 +11,20 @@ manager: kfile
 ---
 # Table.PrefixColumns
 
-  
-## About  
-Returns a table where the columns have all been prefixed with a text value.  
-  
 ## Syntax
 
 <pre>
-Table.PrefixColumns(table as table, prefix as text) as table  
+Table.PrefixColumns(<b>table</b> as table, <b>prefix</b> as text) as table 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to modify.|  
-|prefix|The prefix to add to every text value.|  
-  
-## Example  
-  
+## About  
+Returns a table where all the column names from the `table` provided are prefixed with the given text, `prefix`, plus a period in the form `prefix` `.ColumnName`.
+
+## Example 1
+Prefix the columns with "MyTable" in the table.
+
 ```powerquery-m
-Table.PrefixColumns(Table.FromRecords(  
-  
-{  
-  
-    [CustomerID = 1, Name = "Bob", Phone = "123-4567"]  
-  
-}  
-  
-), "MyTable")  
-```  
-  
-|MyTable.CustomerID|MyTable.Name|MyTable.Phone|  
-|----------------------|----------------|-----------------|  
-|1|Bob|123-4567|  
-  
+Table.PrefixColumns(Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}), "MyTable")
+```
+
+<table> <tr> <th>MyTable.CustomerID</th> <th>MyTable.Name</th> <th>MyTable.Phone</th> </tr> <tr> <td>1</td> <td>Bob</td> <td>123-4567</td> </tr> </table>

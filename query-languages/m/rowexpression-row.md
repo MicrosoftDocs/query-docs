@@ -1,6 +1,6 @@
 ---
 title: "RowExpression.Row | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -10,13 +10,7 @@ ms.author: owend
 manager: kfile
 ---
 # RowExpression.Row
-
-## Syntax
-
-<pre>
-RowExpression.Row(function as function) as record 
-</pre> 
-  
+ 
 ## About  
 An AST node representing the row in a row expression.  
   

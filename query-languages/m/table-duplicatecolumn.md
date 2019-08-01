@@ -1,6 +1,6 @@
 ---
 title: "Table.DuplicateColumn | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-Table.DuplicateColumn(**table** as table, **columnName** as text,** newColumnName** as text, optional **columnType** as nullable type) as table
+Table.DuplicateColumn(<b>table</b> as table, <b>columnName</b> as text, <b>newColumnName</b> as text, optional <b>columnType</b> as nullable type) as table
 </pre>
 
 ## About
@@ -24,13 +24,7 @@ Duplicate the column named `columnName` to the table `table`. The values and typ
 Duplicate the column "a" to a column named "copied column" in the table `({[a = 1, b = 2], [a = 3, b = 4]})`.
 
 ```powerquery-m
-Table.DuplicateColumn(Table.FromRecords({[a = 1, b = 2], [a = 3, b = 4]}), "a", "copied column")```
+Table.DuplicateColumn(Table.FromRecords({[a = 1, b = 2], [a = 3, b = 4]}), "a", "copied column")
+```
 
-a  |b  |copied column  
----------|---------|---------
-1     |   2      |  1       
-3     |   4      |   3      
-
-
-
-  
+<table> <tr> <th>a</th> <th>b</th> <th>copied column</th> </tr> <tr> <td>1</td> <td>2</td> <td>1</td> </tr> <tr> <td>3</td> <td>4</td> <td>3</td> </tr> </table>

@@ -1,6 +1,6 @@
 ---
 title: "Table.ReplaceRelationshipIdentity | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-Table.ReplaceRelationshipIdentity(**value** as any, **identity** as text) as any
+Table.ReplaceRelationshipIdentity(<b>value</b> as any, <b>identity</b> as text) as any
 </pre>
 
 ## About
