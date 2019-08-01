@@ -10,8 +10,6 @@ ms.author: owend
 manager: kfile
 ---
 # RowExpression.Row
-
-## Syntax
  
 ## About  
 An AST node representing the row in a row expression.  
