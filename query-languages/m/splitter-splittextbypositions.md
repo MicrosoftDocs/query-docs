@@ -1,6 +1,6 @@
 ---
 title: "Splitter.SplitTextByPositions | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,23 +11,11 @@ manager: kfile
 ---
 # Splitter.SplitTextByPositions
 
-  
-## About  
-Returns a function that splits text according to the specified positions.  
-  
 ## Syntax
 
 <pre> 
-Splitter.SplitTextByPositions(positions as list) as function  
+Splitter.SplitTextByPositions(<b>positions</b> as list, optional <b>startAtEnd</b> as nullable logical) as function 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|positions|The positions to split on.|  
-  
-## <a name="__toc360789928"></a>Remarks  
-  
--   Each item in positions should be a non-negative number indicating the position at which to break the text, and each item must be greater than or equal to the previous.  SplitTextByPositions works by computing a set of ranges by using the difference between subsequent positions as lengths (with the last position of effectively infinite length) and delegating to SplitTextByRanges.  The list returned will have the same cardinality as that of the positions.  
-  
+## About  
+Returns a function that splits text into a list of text at each specified position.
