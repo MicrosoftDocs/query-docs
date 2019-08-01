@@ -1,6 +1,6 @@
 ---
 title: "Table.Transpose | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,50 +11,20 @@ manager: kfile
 ---
 # Table.Transpose
 
-  
-## About  
-Returns a table with columns converted to rows and rows converted to columns from the input table.  
-  
 ## Syntax
 
 <pre>
-Table.Transpose(table as table, optional columns as any) as table  
+Table.Transpose(<b>table</b> as table, optional <b>columns</b> as any) as table
 </pre> 
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to modify.|  
-|optional columns|Columns to transform.|  
-  
-## <a name="__goback"></a>Example  
-  
+## About  
+Makes columns into rows and rows into columns.
+
+## Example 1
+Make the rows of the table of name-value pairs into columns.
+
 ```powerquery-m
-Table.PromoteHeaders(  
-  
-    Table.Transpose(  
-  
-        Table.DemoteHeaders(  
-  
-            Table.FromRecords({  
-  
-                [Name = "Full Name", Value = "Fred"],  
-  
-                [Name = "Age", Value = 42],  
-  
-                [Name = "Country", Value = "UK"]  
-  
-            })  
-  
-        )  
-  
-    )  
-  
-)  
-```  
-  
-|Name|FullName|Age|Country|  
-|--------|------------|-------|-----------|  
-|Value|Fred|42|UK|  
-  
+Table.Transpose(Table.FromRecords({[Name = "Full Name", Value = "Fred"], [Name = "Age", Value = 42], [Name = "Country", Value = "UK"]}))
+```
+
+<table> <tr> <th>Column1</th> <th>Column2</th> <th>Column3</th> </tr> <tr> <td>Full Name</td> <td>Age</td> <td>Country</td> </tr> <tr> <td>Fred</td> <td>42</td> <td>UK</td> </tr> </table>

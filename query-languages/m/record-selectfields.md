@@ -1,6 +1,6 @@
 ---
 title: "Record.SelectFields | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,42 +11,20 @@ manager: kfile
 ---
 # Record.SelectFields
 
-  
-## About  
-Returns a new record that contains the fields selected from the input record. The original order of the fields is maintained.  
-  
 ## Syntax
 
 <pre>
-Record.SelectFields(record as record,  fields as any,  optional missingField as nullable number) as record  
-```  
+Record.SelectFields(<b>record</b> as record, <b>fields</b> as any, optional <b>missingField</b> as nullable number) as record 
+</pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|record|The record to check.|  
-|fields|A single field name or list of field names.|  
-|optional missingField|A **MissingField** enum value to handle missing fields. The default value is MissingField.Error.|  
-  
-### MissingField enum  
-  
--   MissingField.Error = 0;  
-  
--   MissingField.Ignore = 1;  
-  
--   MissingField.UseNull = 2;  
-  
-## Remarks  
-  
--   The original order of the fields is maintained.  
-  
-## Examples  
-  
+## About  
+Returns a record which includes only the fields specified in list `fields` from the input `record`.
+
+## Example 1
+Select the fields "Item" and "Price" in the record.
+
 ```powerquery-m
-Record.SelectFields([A=1, B=2], "B") equals [B=2]  
-```  
-  
-```powerquery-m
-Record.SelectFields([A=1, B=2, C=3], {"C", "B"}) equals [B=2, C=3]  
-```  
+Record.SelectFields( [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0] , {"Item", "Price"})
+```
+
+<table> <tr> <th>Item</th> <td>Fishing rod</td> </tr> <tr> <th>Price</th> <td>100</td> </tr> </table>

@@ -1,6 +1,6 @@
 ---
 title: "Table.ColumnNames | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,44 +11,20 @@ manager: kfile
 ---
 # Table.ColumnNames
 
-  
-## About  
-Returns the names of columns from a table.  
-  
 ## Syntax
 
 <pre>
-Table.ColumnNames(table as table) as {Text}  
+Table.ColumnNames(<b>table</b> as table) as list
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to check.|  
-  
-## <a name="__toc360789554"></a>Remarks  
-  
--   **Table.ColumnNames** is similar to **Record.FieldNames** but requires a table as input.  
-  
-## Example  
-  
+## About  
+Returns the column names in the table `table` as a list of text.
+
+## Example 1
+Find the column names of the table.
+
 ```powerquery-m
-Table.ColumnNames(Table.FromRecords(  
-  
-{  
-  
-  [CustomerID = 1, Name = "Bob", Phone = "123-4567"],  
-  
-  [CustomerID = 2, Name = "Jim", Phone = "987-6543"] ,  
-  
-  [CustomerID = 3, Name = "Paul", Phone = "543-7890"] ,  
-  
-  [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]  
-  
-}  
-  
-))  
-  
-equals { "CustomerID", "Name", "Phone"}  
-```  
+Table.ColumnNames(Table.FromRecords({ [CustomerID = 1, Name = "Bob", Phone = "123-4567"], [CustomerID = 2, Name = "Jim", Phone = "987-6543"] , [CustomerID = 3, Name = "Paul", Phone = "543-7890"] , [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]}))
+```
+
+<table> <tr><td>CustomerID</td></tr> <tr><td>Name</td></tr> <tr><td>Phone</td></tr> </table>

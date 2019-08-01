@@ -1,6 +1,6 @@
 ---
 title: "Record.FieldValues | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,24 +11,20 @@ manager: kfile
 ---
 # Record.FieldValues
 
-  
-## About  
-Returns a list of field values in order of the record's fields.  
-  
 ## Syntax
 
 <pre>
-Record.FieldValues(record as record) as list  
+Record.FieldValues(<b>record</b> as record) as list
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|record|The record to check.|  
-  
-## Example  
-  
-```powerquery-m  
-Record.FieldValues( [CustomerID = 1, Name = "Bob", Phone = "123-4567"] ) equals {1, "Bob", "123-4567"}  
-```  
+## About  
+Returns a list of the field values in record `record`.
+
+## Example 1
+Find the field values in the record.
+
+```powerquery-m
+Record.FieldValues([CustomerID = 1, Name = "Bob", Phone = "123-4567"])
+```
+
+<table> <tr><td>1</td></tr> <tr><td>Bob</td></tr> <tr><td>123-4567</td></tr> </table>

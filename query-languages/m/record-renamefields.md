@@ -1,6 +1,6 @@
 ---
 title: "Record.RenameFields | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,50 +11,29 @@ manager: kfile
 ---
 # Record.RenameFields
 
-  
-## About  
-Returns a new record that renames the fields specified. The resultant fields will retain their original order. This function supports swapping and chaining field names. However, all target names plus remaining field names must constitute a unique set or an error will occur.  
-  
 ## Syntax
 
 <pre>
-Record.RenameFields(record as record,  renames as list,  optional missingField as nullable number) as record  
+Record.RenameFields(<b>record</b> as record, <b>renames</b> as list, optional <b>missingField</b> as nullable number) as record  
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|record|The record to modify.|  
-|renames|The list of renames to apply.|  
-|optional missingField|A **MissingField** enum value to handle missing fields. The default value is MissingField.Error.|  
-  
-### MissingField enum  
-  
--   `MissingField.Error = 0;`  
-  
--   `MissingField.Ignore = 1;`  
-  
--   `MissingField.UseNull = 2;`  
-  
-## <a name="__toc360789170"></a>Remarks  
-  
--   Record.RenameFields swaps and chains field names.  If all target names plus remaining field names are not a unique set, an Expression.Error is thrown  
-  
-## Examples  
-  
+## About  
+Returns a record after renaming fields in the input `record` to the new field names specified in list `renames`. For multiple renames, a nested list can be used ({ {old1, new1}, {old2, new2} }.
+
+## Example 1
+Rename the field "UnitPrice" to "Price" from the record.
+
 ```powerquery-m
-Record.RenameFields([OrderID = 1, CustomerID = 1, Item = "Fishing rod", UnitPrice = 100.0], {"UnitPrice","Price"})  
-```  
-  
+Record.RenameFields([OrderID = 1, CustomerID = 1, Item = "Fishing rod", UnitPrice = 100.0], {"UnitPrice","Price"})
+```
+
+<table> <tr> <th>OrderID</th> <td>1</td> </tr> <tr> <th>CustomerID</th> <td>1</td> </tr> <tr> <th>Item</th> <td>Fishing rod</td> </tr> <tr> <th>Price</th> <td>100</td> </tr> </table>
+
+## Example 2
+Rename the fields "UnitPrice" to "Price" and "OrderNum" to "OrderID" from the record.
+
 ```powerquery-m
-equals [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0]  
-```  
-  
-|||  
-|-|-|  
-|OrderID|1|  
-|CustomerID|1|  
-|Item|Fishing rod|  
-|Price|100|  
-  
+Record.RenameFields([OrderNum = 1, CustomerID = 1, Item = "Fishing rod", UnitPrice = 100.0], {{"UnitPrice", "Price"}, {"OrderNum", "OrderID"}})
+```
+
+<table> <tr> <th>OrderID</th> <td>1</td> </tr> <tr> <th>CustomerID</th> <td>1</td> </tr> <tr> <th>Item</th> <td>Fishing rod</td> </tr> <tr> <th>Price</th> <td>100</td> </tr> </table>

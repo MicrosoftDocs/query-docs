@@ -1,6 +1,6 @@
 ---
 title: "Record.Combine | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,38 +11,20 @@ manager: kfile
 ---
 # Record.Combine
 
-  
-## About  
-Combines the records in a list.  
-  
 ## Syntax
 
 <pre>
-Record.Combine(list as list) as record  
+Record.Combine(<b>records</b> as list) as record
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|list|The list of records to combine.|  
-  
-## <a name="__toc360789157"></a>Remarks  
-If the list contains non-record values, an error is returned.  
-  
-## <a name="__goback"></a>Example  
-  
+## About  
+Combines the records in the given `records`. If the `records` contains non-record values, an error is returned.
+
+## Example 1
+Create a combined record from the records.
+
 ```powerquery-m
-Record.Combine({ [CustomerID =1], [Name ="Bob"] , [Phone =  "123-4567"] })  
-```  
-  
-```powerquery-m 
-equals [CustomerID=1, Name="Bob", Phone="123-4567"]  
-```  
-  
-|||  
-|-|-|  
-|CustomerID|1|  
-|Name|Bob|  
-|Phone|123-4567|  
-  
+Record.Combine({ [CustomerID =1, Name ="Bob"] , [Phone = "123-4567"]})
+```
+
+<table> <tr> <th>CustomerID</th> <td>1</td> </tr> <tr> <th>Name</th> <td>Bob</td> </tr> <tr> <th>Phone</th> <td>123-4567</td> </tr> </table>

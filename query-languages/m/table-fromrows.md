@@ -1,6 +1,6 @@
 ---
 title: "Table.FromRows | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -10,31 +10,30 @@ ms.author: owend
 manager: kfile
 ---
 # Table.FromRows
-## About  
-Creates a table from the list `rows` where each element of the list is an inner list that contains the column values for a single row. An optional list of column names, a table type, or a number of columns could be provided for `columns`.
-  
-  
+
 ## Syntax
 
 <pre>
-Table.FromRows(rows as list, optional columns as any) as table  
+Table.FromRows(<b>rows</b> as list, optional <b>columns</b> as any) as table
 </pre>
-  
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|rows|The List to convert.|  
-|optional columns|An optional list of column names, or a table type.|  
-  
-## <a name="__goback"></a>Example  
-  
+
+## About  
+Creates a table from the list `rows` where each element of the list is an inner list that contains the column values for a single row. An optional list of column names, a table type, or a number of columns could be provided for `columns`.
+
+## Example 1
+Return a table with column [CustomerID] with values {1, 2}, column [Name] with values {"Bob", "Jim"}, and column [Phone] with values {"123-4567", "987-6543"}.
+
 ```powerquery-m
-Table.FromRows({{1, "Bob", "123-4567"} , {2, "Jim", "987-6543"}}, {"CustomerID ", "Name", "Phone"})  
-```  
-  
-|CustomerID|Name|Phone|  
-|--------------|--------|---------|  
-|1|Bob|123-4567|  
-|2|Jim|987-6543|  
-  
+Table.FromRows({ {1, "Bob", "123-4567"},{2, "Jim", "987-6543"}},{"CustomerID", "Name", "Phone"})
+```
+
+<table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>1</td> <td>Bob</td> <td>123-4567</td> </tr> <tr> <td>2</td> <td>Jim</td> <td>987-6543</td> </tr> </table>
+
+## Example 2
+Return a table with column [CustomerID] with values {1, 2}, column [Name] with values {"Bob", "Jim"}, and column [Phone] with values {"123-4567", "987-6543"}, where [CustomerID] is number type, and [Name] and [Phone] are text types.
+
+```powerquery-m
+Table.FromRows({{1, "Bob", "123-4567"}, {2, "Jim", "987-6543"}}, type table [CustomerID = number, Name = text, Phone = text])
+```
+
+<table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>1</td> <td>Bob</td> <td>123-4567</td> </tr> <tr> <td>2</td> <td>Jim</td> <td>987-6543</td> </tr> </table>

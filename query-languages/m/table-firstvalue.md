@@ -1,6 +1,6 @@
 ---
 title: "Table.FirstValue | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-Table.FirstValue(**table** as table, optional **default** as any) as any
+Table.FirstValue(<b>table</b> as table, optional <b>default</b> as any) as any
 </pre>
 
 ## About

@@ -1,6 +1,6 @@
 ---
 title: "Record.FieldNames | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,28 +11,20 @@ manager: kfile
 ---
 # Record.FieldNames
 
-  
-## About  
-Returns a list of field names in order of the record's fields.  
-  
 ## Syntax
 
 <pre>
-Record.FieldNames(record as record) as list  
+Record.FieldNames(<b>record</b> as record) as list
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|record|The Record to check.|  
-  
-## Example  
-  
+## About  
+Returns the names of the fields in the record `record` as text.
+
+## Example 1
+Find the names of the fields in the record.
+
 ```powerquery-m
-Record.FieldNames( [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0] )  
-```  
-  
-```powerquery-m 
-equals {"OrderID","CustomerID", "Bait", "Price"}  
-```  
+Record.FieldNames([OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0])
+```
+
+<table> <tr><td>OrderID</td></tr> <tr><td>CustomerID</td></tr> <tr><td>Item</td></tr> <tr><td>Price</td></tr> </table>

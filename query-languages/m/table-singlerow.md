@@ -1,6 +1,6 @@
 ---
 title: "Table.SingleRow | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,45 +11,20 @@ manager: kfile
 ---
 # Table.SingleRow
 
-  
-## About  
-Returns a single row from a table.  
-  
 ## Syntax
 
 <pre>
-Table.SingleRow(table as table) as record  
+Table.SingleRow(<b>table</b> as table) as record  
 </pre> 
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to check.|  
-  
-## <a name="__toc360789538"></a>Remarks  
-  
--   Table.SingleRow is similar to List.Single but requires a table as input.  
-  
-## Example  
-  
+## About  
+Returns the single row in the one row `table`. If the `table` has more than one row, an exception is thrown.
+
+## Example 1
+Return the single row in the table.
+
 ```powerquery-m
-Table.SingleRow(Table.FromRecords(  
-  
-{  
-  
-      [CustomerID = 1, Name = "Bob", Phone = "123-4567"]  
-  
-}  
-  
-))  
-  
-equals [CustomerID = 1, Name = "Bob", Phone = "123-4567"]  
-```  
-  
-|||  
-|-|-|  
-|CustomerID|1|  
-|Name|Bob|  
-|Phone|123-4567|  
-  
+Table.SingleRow(Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}))
+```
+
+<table> <tr> <th>CustomerID</th> <td>1</td> </tr> <tr> <th>Name</th> <td>Bob</td> </tr> <tr> <th>Phone</th> <td>123-4567</td> </tr> </table>

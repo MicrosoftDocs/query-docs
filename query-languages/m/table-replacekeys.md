@@ -1,6 +1,6 @@
 ---
 title: "Table.ReplaceKeys | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,15 +11,15 @@ manager: kfile
 ---
 # Table.ReplaceKeys
 
-  
-## About  
-Returns a new table with new key information set in the **keys** argument.  
-  
 ## Syntax
 
 <pre>
-Table.ReplaceKeys(table as table, keys as list) as table  
+Table.ReplaceKeys(<b>table</b> as table, <b>keys</b> as list) as table 
 </pre>
+  
+## About  
+Returns a new table with new key information set in the **keys** argument.  
+
   
 ## Arguments  
   

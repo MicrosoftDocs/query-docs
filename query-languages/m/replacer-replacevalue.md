@@ -1,6 +1,6 @@
 ---
 title: "Replacer.ReplaceValue | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,21 +11,20 @@ manager: kfile
 ---
 # Replacer.ReplaceValue
 
-  
-## About  
-This function be provided to List.ReplaceValue or Table.ReplaceValue to do replace values in list and table values respectively.  
-  
 ## Syntax
 
 <pre>
-Replacer.ReplaceValue(value as any,  old as any,  new as any) as any  
-</pre> 
+Replacer.ReplaceValue(<b>value</b> as any, <b>old</b> as any, <b>new</b> as any) as any
+</pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|value|The value to make replacements in.|  
-|old|The old value to replace.|  
-|new|The new value to replace with.|  
-  
+## About  
+Replaces the `old` value in the original `value` with the `new` value. This replacer function can be used in `List.ReplaceValue` and `Table.ReplaceValue`.
+
+## Example 1
+Replace the value 11 with the value 10.
+
+```powerquery-m
+Replacer.ReplaceValue(11, 11, 10)
+```
+
+`10`

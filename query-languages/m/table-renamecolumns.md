@@ -1,6 +1,6 @@
 ---
 title: "Table.RenameColumns | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,49 +11,38 @@ manager: kfile
 ---
 # Table.RenameColumns
 
-  
-## About  
-Returns a table with the columns renamed as specified.  
-  
 ## Syntax
 
 <pre>
-Table.RenameColumns(table as table, renames as list, optional missingField as nullable number) as table  
+Table.RenameColumns(<b>table</b> as table, <b>renames</b> as list, optional <b>missingField</b> as nullable number) as table
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to modify.|  
-|renames|The list of values to rename to.|  
-|optional missingField|The default value of missingField is **MissingField.Error**. For more information, see Parameter Values.|  
-  
-## <a name="__toc360789580"></a>Remarks  
-  
--   Table.RenameColumns is similar to Record.RenameFields applied to every row in a table.  
-  
-## Examples  
-  
+## About  
+Performs the given renames to the columns in table `table`. A replacement operation `renames` consists of a list of two values, the old column name and new column name, provided in a list. If the column doesn't exist, an exception is thrown unless the optional parameter `missingField` specifies an alternative (eg. `MissingField.UseNull` or `MissingField.Ignore`).
+
+## Example 1
+Replace the column name "CustomerNum" with "CustomerID" in the table.
+
 ```powerquery-m
-Table.RenameColumns(Table.FromRecords({  
-  
-    [CustomerNum=1, Name="Bob", Phone = "123-4567"]}),  
-  
-    {"CustomerNum", "CustomerID"})  
-```  
-  
-|CustomerID|Name|Phone|  
-|--------------|--------|---------|  
-|1|Bob|123-4567|  
-  
+Table.RenameColumns(Table.FromRecords({[CustomerNum=1, Name="Bob", Phone = "123-4567"]}), {"CustomerNum", "CustomerID"})
+```
+
+<table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>1</td> <td>Bob</td> <td>123-4567</td> </tr> </table>
+
+## Example 2
+Replace the column name "CustomerNum" with "CustomerID" and "PhoneNum" with "Phone" in the table.
+
 ```powerquery-m
-Table.RenameColumns(Table.FromRecords({  
-  
-    [CustomerID=1, Name="Bob", Phone = "123-4567"]}), {"NewCol", "NewColumn"}, MissingField.UseNull)  
-```  
-  
-|CustomerID|Name|Phone|NewColumn|  
-|--------------|--------|---------|-------------|  
-|1|Bob|123-4567|null|  
-  
+Table.RenameColumns(Table.FromRecords({[CustomerNum=1, Name="Bob", PhoneNum = "123-4567"]}), {{"CustomerNum", "CustomerID"}, {"PhoneNum", "Phone"}})
+```
+
+<table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>1</td> <td>Bob</td> <td>123-4567</td> </tr> </table>
+
+## Example 3
+Replace the column name "NewCol" with "NewColumn" in the table, and ignore if the column doesn't exist.
+
+```powerquery-m
+Table.RenameColumns(Table.FromRecords({[CustomerID=1, Name="Bob", Phone = "123-4567"]}), {"NewCol", "NewColumn"}, MissingField.Ignore)
+```
+
+<table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>1</td> <td>Bob</td> <td>123-4567</td> </tr> </table>

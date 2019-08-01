@@ -1,6 +1,6 @@
 ---
 title: "Table.IsEmpty | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,52 +11,29 @@ manager: kfile
 ---
 # Table.IsEmpty
 
-  
-## About  
-Returns true if the table does not contain any rows.  
-  
 ## Syntax
 
 <pre>
-Table.IsEmpty(table as table) as logical  
+Table.IsEmpty(<b>table</b> as table) as logical 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to check.|  
-  
-## Example  
+## About  
+Indicates whether the `table` contains any rows. Returns `true` if there are no rows (i.e. the table is empty), `false` otherwise.
+
+## Example 1
+Determine if the table is empty.
 
 ```powerquery-m
-let  
-  
-    emptyTable = Table.FromRows({}),  
-  
-     tableValue = Table.FromRows({{1,"Bob", "123-4567"}, {2,"Jim", "987-6543"}}, {"ProductID", "ProductName", "UnitPrice"})  
-  
-in  
-  
-[  
-  
-    IsEmptyTest1 = Table.IsEmpty(emptyTable),  
-  
-    IsEmptyTest2 = Table.IsEmpty(tableValue),  
-  
-    RowCount = Table.RowCount(tableValue),  
-  
-    ColumnCount = Table.ColumnCount(tableValue)  
-  
-]  
-  
-equals  
-```  
-  
-|||  
-|-|-|  
-|**IsEmptyTest1**|true|  
-|**IsEmptyTest2**|false|  
-|RowCount|2|  
-|ColumnCount|3|  
-  
+Table.IsEmpty(Table.FromRecords({[CustomerID =1, Name ="Bob", Phone = "123-4567"],[CustomerID =2, Name ="Jim", Phone = "987-6543"],[CustomerID =3, Name ="Paul", Phone = "543-7890"]}))
+```
+
+`false`
+
+## Example 2
+Determine if the table `({})` is empty.
+
+```powerquery-m
+Table.IsEmpty(Table.FromRecords({}))
+```
+
+`true`

@@ -1,6 +1,6 @@
 ---
 title: "Table.FromColumns | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,38 +11,38 @@ manager: kfile
 ---
 # Table.FromColumns
 
-  
-## About  
-Returns a table from a list containing nested lists with the column names and values.  
-  
 ## Syntax
 
-<pre> 
-Table.FromColumns(lists as list, optional columns as any) as table  
+<pre>
+Table.FromColumns(<b>lists</b> as list, optional <b>columns</b> as any) as table
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|lists|The List of lists to convert.|  
-|optional columns|Optional parameter to provide names and types for the columns.|  
-  
-## <a name="__toc360789435"></a>Remarks  
-  
--   If some columns have more values then others, the missing values will be filled with the default value, 'null', if the columns are nullable.  
-  
-## Examples  
-  
-```powerquery-m 
-Table.FromColumns({  
-  
-    {1, "Bob", "123-4567"} , {2, "Jim", "987-6543"}, {3, "Paul", "543-7890"} })  
-```  
-  
-|Column1|Column2|Column3|  
-|-----------|-----------|-----------|  
-|1|2|3|  
-|Bob|Jim|Paul|  
-|123-4567|987-6543|543-7890|  
-  
+## About  
+Creates a table of type `columns` from a list `lists` containing nested lists with the column names and values. If some columns have more values then others, the missing values will be filled with the default value, 'null', if the columns are nullable.
+
+## Example 1
+Return a table from a list of customer names in a list. Each value in the customer list item becomes a row value, and each list becomes a column.
+
+```powerquery-m
+Table.FromColumns({ {1, "Bob", "123-4567"} , {2, "Jim", "987-6543"}, {3, "Paul", "543-7890"} })
+```
+
+<table> <tr> <th>Column1</th> <th>Column2</th> <th>Column3</th> </tr> <tr> <td>1</td> <td>2</td> <td>3</td> </tr> <tr> <td>Bob</td> <td>Jim</td> <td>Paul</td> </tr> <tr> <td>123-4567</td> <td>987-6543</td> <td>543-7890</td> </tr> </table>
+
+## Example 2
+Create a table from a given list of columns and a list of column names.
+
+```powerquery-m
+Table.FromColumns({ {1, "Bob", "123-4567"} , {2, "Jim", "987-6543"}, {3, "Paul", "543-7890"}}, {"CustomerID", "Name", "Phone"})
+```
+
+<table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>1</td> <td>2</td> <td>3</td> </tr> <tr> <td>Bob</td> <td>Jim</td> <td>Paul</td> </tr> <tr> <td>123-4567</td> <td>987-6543</td> <td>543-7890</td> </tr> </table>
+
+## Example 3
+Create a table with different number of columns per row. The missing row value is null.
+
+```powerquery-m
+Table.FromColumns({ {1, 2, 3}, {4, 5}, {6, 7, 8, 9} }, {"column1", "column2", "column3"})
+```
+
+<table> <tr> <th>column1</th> <th>column2</th> <th>column3</th> </tr> <tr> <td>1</td> <td>4</td> <td>6</td> </tr> <tr> <td>2</td> <td>5</td> <td>7</td> </tr> <tr> <td>3</td> <td></td> <td>8</td> </tr> <tr> <td></td> <td></td> <td>9</td> </tr> </table>

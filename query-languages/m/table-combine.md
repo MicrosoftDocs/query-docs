@@ -1,6 +1,6 @@
 ---
 title: "Table.Combine | Microsoft Docs"
-ms.date: 5/22/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -17,7 +17,7 @@ manager: kfile
 Table.Combine(<b>tables</b> as list, optional <b>columns</b> as any) as table
 </pre>
 
-##About
+## About
 Returns a table that is the result of merging a list of tables, `tables`. The resulting table will have a row type structure defined by `columns` or by a union of the input types if `columns` is not specified.
 
 ## Example 1

@@ -1,6 +1,6 @@
 ---
 title: "Record.ReorderFields | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,46 +11,20 @@ manager: kfile
 ---
 # Record.ReorderFields
 
-  
-## About  
-Returns a new record that reorders fields relative to each other.  Any fields not specified remain in their original locations. Requires two or more fields.  
-  
 ## Syntax
 
 <pre>
-Record.ReorderFields(record as record,  fieldOrder as list,  optional missingField as nullable number) as record  
+Record.ReorderFields(<b>record</b> as record, <b>fieldOrder</b> as list, optional <b>missingField</b> as nullable number) as record
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|record|The Record to modify.|  
-|fieldOrder|The list of field orders to change to.|  
-|optional missingField|A **MissingField** enum value to handle missing fields. The default value is MissingField.Error.|  
-  
-### MissingField enum  
-  
--   `MissingField.Error = 0;`  
-  
--   `MissingField.Ignore = 1;`  
-  
--   `MissingField.UseNull = 2;`  
-  
-## Examples  
-  
+## About  
+Returns a record after reordering the fields in `record` in the order of fields specified in list `fieldOrder`. Field values are maintained and fields not listed in `fieldOrder` are left in their original position.
+
+## Example 1
+Reorder some of the fields in the record.
+
 ```powerquery-m
-Record.ReorderFields( [CustomerID= 1, OrderID = 1, Item = "Fishing rod", Price = 100.0], { "OrderID", "CustomerID" })  
-```  
-  
-```powerquery-m
-equals [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0]  
-```  
-  
-|||  
-|-|-|  
-|OrderID|1|  
-|CustomerID|1|  
-|Item|Fishing rod|  
-|Price|100|  
-  
+Record.ReorderFields([CustomerID= 1, OrderID = 1, Item = "Fishing rod", Price = 100.0], {"OrderID", "CustomerID"})
+```
+
+<table> <tr> <th>OrderID</th> <td>1</td> </tr> <tr> <th>CustomerID</th> <td>1</td> </tr> <tr> <th>Item</th> <td>Fishing rod</td> </tr> <tr> <th>Price</th> <td>100</td> </tr> </table>

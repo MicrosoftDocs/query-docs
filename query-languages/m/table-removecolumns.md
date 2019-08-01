@@ -1,6 +1,6 @@
 ---
 title: "Table.RemoveColumns | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,35 +11,29 @@ manager: kfile
 ---
 # Table.RemoveColumns
 
-  
-## About  
-Returns a table without a specific column or columns.  
-  
 ## Syntax
 
 <pre>
-Table.RemoveColumns(table as table, columns as any, optional missingField as nullable number) as table  
+Table.RemoveColumns(<b>table</b> as table, <b>columns</b> as any, optional <b>missingField</b> as nullable number) as table
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to modify.|  
-|columns|A text value or a list of text values with the names of the columns to remove. missingField is a number value provided to specify handling for missing fields.|  
-|optional missingField|The default value of missingField is **MissingField.Error.** For more information, see Parameter Values.|  
-  
-## <a name="__toc360789572"></a>Remarks  
-  
--   **Table.RemoveColumns** is similar to **Record.RemoveFields** applied to every row in a table.  
-  
-## Examples  
-  
+## About  
+Removes the specified `columns` from the `table` provided. If the column doesn't exist, an exception is thrown unless the optional parameter `missingField` specifies an alternative (eg. `MissingField.UseNull` or `MissingField.Ignore`).
+
+## Example 1
+Remove column [Phone] from the table.
+
 ```powerquery-m
-Table.RemoveColumns(Table.FromRecords({[CustomerID=1, Name="Bob", Phone = "123-4567"]}), "Phone")  
-```  
-  
-|CustomerID|Name|  
-|--------------|--------|  
-|1|Bob|  
-  
+Table.RemoveColumns(Table.FromRecords({[CustomerID=1, Name="Bob", Phone = "123-4567"]}), "Phone")
+```
+
+<table> <tr> <th>CustomerID</th> <th>Name</th> </tr> <tr> <td>1</td> <td>Bob</td> </tr> </table>
+
+### Example 2
+Remove column [Address] from the table. Throws an error if it doesn't exist.
+
+```powerquery-m
+Table.RemoveColumns(Table.FromRecords({[CustomerID=1, Name="Bob", Phone = "123-4567"]}), "Address")
+```
+
+`[Expression.Error] The field 'Address' of the record was not found.`

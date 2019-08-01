@@ -1,6 +1,6 @@
 ---
 title: "Splitter.SplitByNothing | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -18,7 +18,7 @@ Splitter.SplitByNothing() as function
 </pre>
 
 ## About
-Returns a function that does no splitting, returning its argument as a single element.
+Returns a function that does no splitting, returning its argument as a single element list.
 
 
   

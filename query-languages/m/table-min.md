@@ -1,6 +1,6 @@
 ---
 title: "Table.Min | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,67 +11,29 @@ manager: kfile
 ---
 # Table.Min
 
-  
-## About  
-Returns the smallest row or rows from a table using a comparisonCriteria.  
-  
 ## Syntax
 
 <pre>
-Table.Min(table as table, comparisonCriteria as any, optional default as any) as table  
+Table.Min(<b>table</b> as table, <b>comparisonCriteria</b> as any, optional <b>default</b> as any) as any
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to check.|  
-|comparisonCriteria|Smallest row or rows comparison criteria.|  
-|optional default|Default value.|  
-  
-## <a name="__toc360789713"></a>Remarks  
-  
--   Table.Min is similar to List.Min but requires a table as input.  
-  
-## Example  
-  
+## About  
+Returns the smallest row in the `table`, given the `comparisonCriteria`. If the table is empty, the optional `default` value is returned.
+
+## Example 1
+Find the row with the smallest value in column [a] in the table.
+
 ```powerquery-m
-let  
-  
-    Employees = Table.FromRecords(  
-  
-        {[Name="Bill",   Level=7,  Salary=100000],  
-  
-        [Name="Barb",   Level=8,  Salary=150000],  
-  
-        [Name="Andrew", Level=6,  Salary=85000],  
-  
-        [Name="Nikki",  Level=5,  Salary=75000],  
-  
-        [Name="Margo",  Level=3,  Salary=45000],  
-  
-        [Name="Jeff",   Level=10, Salary=200000]},  
-  
-    type table [  
-  
-        Name = text,  
-  
-        Level = number,  
-  
-        Salary = number  
-  
-])  
-  
-in  
-  
-    Table.Min(Employees, "Salary")  
-  
-equals [Name = "Margo", Level = 3, Salary = 45000]  
-```  
-  
-|||  
-|-|-|  
-|Name|Margo|  
-|Level|3|  
-|Salary|45000|  
-  
+Table.Min(Table.FromRecords({[a = 2, b = 4], [a = 6, b = 8]}), "a")
+```
+
+<table> <tr> <th>a</th> <td>2</td> </tr> <tr> <th>b</th> <td>4</td> </tr> </table>
+
+## Example 2
+Find the row with the smallest value in column [a] in the table. Return -1 if empty.
+
+```powerquery-m
+Table.Min(#table({"a"},{}), "a", -1)
+```
+
+`-1`

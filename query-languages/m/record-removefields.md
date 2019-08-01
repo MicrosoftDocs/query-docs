@@ -1,6 +1,6 @@
 ---
 title: "Record.RemoveFields | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,42 +11,29 @@ manager: kfile
 ---
 # Record.RemoveFields
 
-  
-## About  
-Returns a record that removes all the fields specified in a list. If the field specified does not exist, an exception is thrown.  
-  
 ## Syntax
 
 <pre>
-Record.RemoveFields(record as record, fields as any, optional missingField as nullable number) as record  
+Record.RemoveFields(<b>record</b> as record, <b>fields</b> as any, optional <b>missingField</b> as nullable number) as record
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|record|The Record to modify.|  
-|fields|A list of two items with the names of the fields that need to exchange their order in the record.|  
-|optional missingField|A **MissingField** enum value to handle missing fields. The default value is MissingField.Error.|  
-  
-### MissingField enum  
-  
--   `MissingField.Error = 0;`  
-  
--   `MissingField.Ignore = 1;`  
-  
--   `MissingField.UseNull = 2;`  
-  
-## Examples  
-  
+## About  
+Returns a record that removes all the fields specified in list `fields` from the input `record`. If the field specified does not exist, an exception is thrown.
+
+## Example 1
+Remove the field "Price" from the record.
+
 ```powerquery-m
-Record.RemoveFields([CustomerID=1, Item = "Fishing rod", Price=18.00] , "Price")  
-  
-equals [CustomerID=1, Item="Fishing rod"]  
-```  
-  
-|||  
-|-|-|  
-|CustomerID|1|  
-|Item|Fishing rod|  
-  
+Record.RemoveFields([CustomerID=1, Item = "Fishing rod", Price=18.00], "Price")
+```
+
+<table> <tr> <th>CustomerID</th> <td>1</td> </tr> <tr> <th>Item</th> <td>Fishing rod</td> </tr> </table>
+
+## Example 2
+Remove the fields "Price" and "Item" from the record.
+
+```powerquery-m
+Record.RemoveFields([CustomerID=1, Item = "Fishing rod", Price=18.00], {"Price", "Item"})
+```
+
+<table> <tr> <th>CustomerID</th> <td>1</td> </tr> </table>

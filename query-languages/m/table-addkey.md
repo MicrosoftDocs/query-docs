@@ -1,6 +1,6 @@
 ---
 title: "Table.AddKey | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,56 +11,20 @@ manager: kfile
 ---
 # Table.AddKey
 
-  
-## About  
-Add a key to table.  
-  
 ## Syntax
 
 <pre>
-Table.AddKey(table as table,  columns as list,  isPrimary as logical) as table  
+Table.AddKey(<b>table</b> as table, <b>columns</b> as list, <b>isPrimary</b> as logical) as table
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to modify.|  
-|columns|The subset of column names that defines the key.|  
-|isPrimary|Specifies whether the key is primary.|  
-  
-## <a name="__goback"></a>Example  
-  
+## About  
+Add a key to `table`, given `columns` is the subset of `table`'s column names that defines the key, and `isPrimary` specifies whether the key is primary.
+
+## Example 1
+Add a key to {[Id = 1, Name = "Hello There"], [Id = 2, Name = "Good Bye"]} that comprise of {"Id"} and make it a primary.
+
 ```powerquery-m
-let  
-  
-        table = Table.FromRecords(  
-  
-    {  
-  
-        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],  
-  
-        [CustomerID = 2, Name = "Jim", Phone = "987-6543"] ,  
-  
-        [CustomerID = 3, Name = "Paul", Phone = "543-7890"] ,  
-  
-        [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]  
-  
-    }  
-  
-),  
-  
-        resultTable = Table.AddKey(table, {"CustomerID"}, true)  
-  
-in  
-  
-        resultTable  
-```  
-  
-|CustomerID|Name|Phone|  
-|--------------|--------|---------|  
-|1|Bob|123-4567|  
-|2|Jim|987-6543|  
-|3|Paul|543-7890|  
-|4|Ringo|232-1550|  
-  
+let tableType = type table [Id = Int32.Type, Name = text], table = Table.FromRecords({[Id = 1, Name = "Hello There"], [Id = 2, Name = "Good Bye"]}), resultTable = Table.AddKey(table, {"Id"}, true) in resultTable
+```
+
+<table> <tr> <th>Id</th> <th>Name</th> </tr> <tr> <td>1</td> <td>Hello There</td> </tr> <tr> <td>2</td> <td>Good Bye</td> </tr> </table>

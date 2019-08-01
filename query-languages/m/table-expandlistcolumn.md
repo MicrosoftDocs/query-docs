@@ -1,6 +1,6 @@
 ---
 title: "Table.ExpandListColumn | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,40 +11,20 @@ manager: kfile
 ---
 # Table.ExpandListColumn
 
-  
-## About  
-Given a column of lists in a table, create a copy of a row for each value in its list.  
-  
 ## Syntax
 
 <pre>
-Table.ExpandListColumn(table as table, column as text) as table  
+Table.ExpandListColumn(<b>table</b> as table, <b>column</b> as text) as table
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to modify.|  
-|column|The column to expand.|  
-  
-## Example  
-  
+## About  
+Given a `table`, where a `column` is a list of values, splits the list into a row for each value. Values in the other columns are duplicated in each new row created.
+
+## Example 1
+Split the list column [Name] in the table.
+
 ```powerquery-m
-Table.ExpandListColumn(  
-  
-    Table.FromRecords(  
-  
-    {  
-  
-    [Name= {"Bob", "Jim", "Paul"}, Discount = .15]  
-  
-}), "Name")  
-```  
-  
-|Name|Discount|  
-|--------|------------|  
-|Bob|0.15|  
-|Jim|0.15|  
-|Paul|0.15|  
-  
+Table.ExpandListColumn(Table.FromRecords({[Name= {"Bob", "Jim", "Paul"}, Discount = .15]}), "Name")
+```
+
+<table> <tr> <th>Name</th> <th>Discount</th> </tr> <tr> <td>Bob</td> <td>0.15</td> </tr> <tr> <td>Jim</td> <td>0.15</td> </tr> <tr> <td>Paul</td> <td>0.15</td> </tr> </table>

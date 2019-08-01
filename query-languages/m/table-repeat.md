@@ -1,6 +1,6 @@
 ---
 title: "Table.Repeat | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,33 +11,20 @@ manager: kfile
 ---
 # Table.Repeat
 
-  
-## About  
-Returns a table containing the rows of the table repeated the **count** number of times.  
-  
 ## Syntax
 
 <pre>
-Table.Repeat(table as table, count as number) as table  
+Table.Repeat(<b>table</b> as table, <b>count</b> as number) as table  
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to check.|  
-|count|The number of times to repeat the table.|  
-  
-## Example  
-  
+## About  
+Returns a table with the rows from the input `table` repeated the specified `count` times.
+
+## Example 1
+Repeat the rows in the table two times.
+
 ```powerquery-m
-Table.Repeat(Table.FromRecords({[Column1=1], [Column1=2]}), 2)  
-```  
-  
-|Column1|  
-|-----------|  
-|1|  
-|2|  
-|1|  
-|2|  
-  
+Table.Repeat(Table.FromRecords({[a = 1, b = "hello"], [a = 3, b = "world"]}), 2)
+```
+
+<table> <tr> <th>a</th> <th>b</th> </tr> <tr> <td>1</td> <td>hello</td> </tr> <tr> <td>3</td> <td>world</td> </tr> <tr> <td>1</td> <td>hello</td> </tr> <tr> <td>3</td> <td>world</td> </tr> </table>

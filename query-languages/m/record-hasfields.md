@@ -1,6 +1,6 @@
 ---
 title: "Record.HasFields | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,29 +11,29 @@ manager: kfile
 ---
 # Record.HasFields
 
-  
-## About  
-Returns true if the field name or field names are present in a record.  
-  
 ## Syntax
 
 <pre>
-Record.HasFields(record as record, fields as any) as logical  
+Record.HasFields(<b>record</b> as record, <b>fields</b> as any) as logical 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|record|The Record to check against.|  
-|fields|A text value or a list of text values.|  
-  
-## <a name="__toc360789150"></a>Examples:  
-  
+## About  
+Indicates whether the record `record` has the fields specified in `fields`, by returning a logical value (true or false). Multiple field values can be specified using a list.
+
+## Example 1
+Check if the record has the field "CustomerID".
+
 ```powerquery-m
-Record.HasFields([CustomerID = 1, Name = "Bob", Phone = "123-4567"],"CustomerID") equals true  
-```  
-  
+Record.HasFields([CustomerID = 1, Name = "Bob", Phone = "123-4567"],"CustomerID")
+```
+
+`true`
+
+## Example 2
+Check if the record has the field "CustomerID" and "Address".
+
 ```powerquery-m
-Record.HasFields([CustomerID = 1, Name = "Bob", Phone = "123-4567"],{"CustomerID", "Address"}) equals false  
-```  
+Record.HasFields([CustomerID = 1, Name = "Bob", Phone = "123-4567"],{"CustomerID", "Address"})
+```
+
+`false`

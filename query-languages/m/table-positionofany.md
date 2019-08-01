@@ -1,6 +1,6 @@
 ---
 title: "Table.PositionOfAny | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/1/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,50 +11,29 @@ manager: kfile
 ---
 # Table.PositionOfAny
 
-  
-## About  
-Determines the position or positions of any of the specified rows within the table.  
-  
 ## Syntax
 
 <pre> 
-Table.PositionOfAny(table as table, rows as list, optional occurrence as nullable number, optional equationCriteria as any) as any  
+Table.PositionOfAny(<b>table</b> as table, <b>rows</b> as list, optional <b>occurrence</b> as nullable number, optional <b>equationCriteria</b> as any) as any
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|table|The Table to check.|  
-|rows|The List of rows to check for.|  
-|optional occurrence|The number for the appropriate occurrence specification.|  
-|optional equationCriteria|An optional value that specifies how to control comparison between the rows of the table.|  
-  
-Occurrence specification  
-  
--   Occurrence.First  = 0  
-  
--   Occurrence.Last   = 1  
-  
--   Occurrence.All    = 2  
-  
-## <a name="__toc360793255"></a>Remarks  
-  
--   Table.PositionOfAny is similar to List.PositionOfAny but requires a table as input.  
-  
-## Examples  
-  
-```powerquery-m  
-Table.PositionOfAny(      
-Table.FromRecords({[A=1, B=2],[A=3, B=4],[A=1, B=6]}),      
-{[A=2, B=6],[A=3, B=4]})   
-equals 1  
-```  
-  
+## About  
+Returns the row(s) position(s) from the `table` of the first occurrence of the list of `rows`. Returns -1 if no occurrence is found. <ul> <li><code>table</code>: The input table.</li> <li><code>rows</code>: The list of rows in the table to find the positions of.</li> <li><code>occurrence</code>: <i>[Optional]</i> Specifies which occurrences of the row to return.</li> <li><code>equationCriteria</code>: <i>[Optional]</i> Controls the comparison between the table rows.</li> </ul> 
+
+## Example 1
+Find the position of the first occurrence of [a = 2, b = 4] or [a = 6, b = 8] in the table `({[a = 2, b = 4], [a = 6, b = 8], [a = 2, b = 4], [a = 1, b = 4]})`.
+
 ```powerquery-m
-Table.PositionOfAny(      
-Table.FromRecords({[A=1, B=2],[A=3, B=4],[A=1, B=6]}),      
-{[A=3, B=7],[A=1, B=6]},      
-Occurrence.All, "A")   
-equals {0, 1, 2}  
-```  
+Table.PositionOfAny(Table.FromRecords({[a = 2, b = 4], [a = 1, b = 4], [a = 2, b = 4], [a = 1, b = 4]}), {[a = 2, b = 4], [a = 6, b = 8]})
+```
+
+`0`
+
+## Example 2
+Find the position of all the occurrences of [a = 2, b = 4] or [a = 6, b = 8] in the table `({[a = 2, b = 4], [a = 6, b = 8], [a = 2, b = 4], [a = 1, b = 4]}`.
+
+```powerquery-m
+Table.PositionOfAny(Table.FromRecords({[a = 2, b = 4], [a = 6, b = 8], [a = 2, b = 4], [a = 1, b = 4]}), {[a = 2, b = 4], [a = 6, b = 8]}, Occurrence.All)
+```
+
+<table> <tr><td>0</td></tr> <tr><td>1</td></tr> <tr><td>2</td></tr> </table>
