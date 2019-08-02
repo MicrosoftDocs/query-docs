@@ -1,6 +1,6 @@
 ---
 title: "Time.EndOfHour | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,31 +11,29 @@ manager: kfile
 ---
 # Time.EndOfHour
 
-  
-## About  
-Returns a DateTime value from the end of the hour.  
-  
 ## Syntax
 
 <pre>
-Time.EndOfHour(dateTime as datetime) as nullable datetime  
+Time.EndOfHour(<b>dateTime</b> as any) as any
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|The DateTime to check against.|  
-  
-## Remarks  
-  
--   The time portion is reset to its terminating values for the hour.  
-  
--   The timezone information is persisted.  
-  
-## Example  
-  
+## About  
+Returns a `time`, `datetime`, or `datetimezone` value representing the end of the hour in `dateTime`, including fractional seconds. Time zone information is preserved. <ul> <li><code>dateTime</code>: A <code>time</code>, <code>datetime</code>, or <code>datetimezone</code> value from which the end of the hour is calculated.</li> </ul>
+
+## Example 1
+Get the end of the hour for 5/14/2011 05:00:00 PM.
+
 ```powerquery-m
-dateTime = DateTimeZone.FromText("2011-02-21T12:30:00-08:00");   
-Time.EndOfHour(dateTime) equals 2011-02-21T12:59:59-08:00  
-```  
+Time.EndOfHour(#datetime(2011, 5, 14, 17, 0, 0))
+```
+
+`#datetime(2011, 5, 14, 17, 59, 59.9999999)`
+
+## Example 2
+Get the end of the hour for 5/17/2011 05:00:00 PM -7:00.
+
+```powerquery-m
+Time.EndOfHour(#datetimezone(2011, 5, 17, 5, 0, 0, -7, 0))
+```
+
+`#datetimezone(2011, 5, 17, 5, 59, 59.9999999, -7, 0)`

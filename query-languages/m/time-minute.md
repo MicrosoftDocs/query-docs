@@ -1,6 +1,6 @@
 ---
 title: "Time.Minute | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,24 +11,20 @@ manager: kfile
 ---
 # Time.Minute
 
-  
-## About  
-Returns a minute value from a DateTime value.  
-  
 ## Syntax
 
 <pre> 
-Time.Minute(dateTime as datetime) as nullable number  
+Time.Minute(<b>dateTime</b> as any) as nullable number
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|dateTime|The DateTime to check against.|  
-  
-## Example  
-  
-```powerquery-m 
-Time.Minute(DateTime.FromText("12:56:20")) equals 56  
-```  
+## About  
+Returns the minute component of the provided `time`, `datetime`, or `datetimezone` value, `dateTime`.
+
+## Example 1
+Find the minute in #datetime(2011, 12, 31, 9, 15, 36).
+
+```powerquery-m
+Time.Minute(#datetime(2011, 12, 31, 9, 15, 36))
+```
+
+`15`
