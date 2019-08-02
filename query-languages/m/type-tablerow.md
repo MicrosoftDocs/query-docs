@@ -18,17 +18,4 @@ Type.TableRow(<b>table</b> as type) as type
 </pre>
   
 ## About  
-Returns a row type from a table type.  
-
-  
-## Example  
-  
-```powerquery-m 
-Type.TableRow(   
-Value.Type(     
-Value.ReplaceType(   
-Table.FromRecords({[A=1]}),   
-type table [ A = number] ))   
-)   
-equals type [    A = number  ]  
-```  
+Type.TableRow
