@@ -1,6 +1,6 @@
 ---
 title: "Value.Equals | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,35 +11,11 @@ manager: kfile
 ---
 # Value.Equals
 
-  
-## About  
-Returns whether two values are equal.  
-  
 ## Syntax
 
 <pre>
-Value.Equals(left as any, right as any, equater as record) as logical  
+Value.Equals(<b>value1</b> as any, <b>value2</b> as any, optional <b>precision</b> as nullable number) as logical
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|left|The left value to compare.|  
-|right|The right value to compare.|  
-|equater|Optional equater record.|  
-  
-## Examples  
-  
-```powerquery-m
-Value.Equals(2,4)   
-equals false  
-```  
-  
-```powerquery-m 
-Value.Equals(2,4,  
-[     
-Equals= (x,y) => Number.Mod(x,2)=Number.Mod(y,2),     
-Hash = (x) => Value.Hash(x)  
-])equals true  
-```  
+## About  
+Returns true if value `value1` is equal to value `value2`, false otherwise.

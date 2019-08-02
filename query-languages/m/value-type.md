@@ -1,6 +1,6 @@
 ---
 title: "Value.Type | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -12,8 +12,10 @@ manager: kfile
 # Value.Type
 
   
-## Example  
-  
-```powerquery-m 
-Value.Type(Value.ReplaceType( {1}, type {number}) equals type {number}  
-```  
+## Syntax
+<pre>
+Value.Type(<b>value</b> as any) as type
+</pre>
+
+## About
+Returns the type of the given value.
