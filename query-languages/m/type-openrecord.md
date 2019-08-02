@@ -1,6 +1,6 @@
 ---
 title: "Type.OpenRecord | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,18 +11,20 @@ manager: kfile
 ---
 # Type.OpenRecord
 
-  
-## About  
-Returns an opened version of a record type, or the same type, if it is already open.  
-  
 ## Syntax
 
 <pre>
-Type.OpenRecord(#"type" as type) as type  
+Type.OpenRecord(<b>type</b> as type) as type
 </pre>
   
-## Example  
-  
+## About  
+Returns an opened version of the given `record` `type` (or the same type, if it is already opened).
+
+## Example 1
+Create an opened version of `type [ A = number]`.
+
 ```powerquery-m
-Type.OpenRecord( type [ A = number] ) equals type [ A = number, …]  
-```  
+Type.OpenRecord(type [ A = number])
+```
+
+`type [ A = number, ... ]`

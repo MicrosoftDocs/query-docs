@@ -1,6 +1,6 @@
 ---
 title: "Type.TableRow | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,15 +11,15 @@ manager: kfile
 ---
 # Type.TableRow
 
-  
-## About  
-Returns a row type from a table type.  
-  
 ## Syntax
 
 <pre>
-Type.TableRow(table as type) as type  
+Type.TableRow(<b>table</b> as type) as type 
 </pre>
+  
+## About  
+Returns a row type from a table type.  
+
   
 ## Example  
   

@@ -1,6 +1,6 @@
 ---
 title: "Type.NonNullable | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,18 +11,20 @@ manager: kfile
 ---
 # Type.NonNullable
 
-  
-## About  
-Returns the non nullable type from a type.  
-  
 ## Syntax
 
 <pre>
-Type.NonNullable(#"type" as type) as type  
+Type.NonNullable(<b>type</b> as type) as type 
 </pre>
   
-## Example  
-  
-```powerquery-m 
-Type.NonNullable(type nullable number) equals type number  
-```  
+## About  
+Returns the non `nullable` type from the `type`.
+
+## Example 1
+Return the non nullable type of `type nullable number`.
+
+```powerquery-m
+Type.NonNullable(type nullable number)
+```
+
+`type number`

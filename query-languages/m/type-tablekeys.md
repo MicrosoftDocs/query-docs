@@ -1,6 +1,6 @@
 ---
 title: "Type.TableKeys | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,12 +11,11 @@ manager: kfile
 ---
 # Type.TableKeys
 
-  
-## About  
-Returns keys from a table type.  
-  
 ## Syntax
 
 <pre>
-Type.TableKeys(tableType as type) as list  
+Type.TableKeys(<b>tableType</b> as type) as list 
 </pre>
+  
+## About  
+Returns the possibly empty list of keys for the given table type.
