@@ -1,6 +1,6 @@
 ---
 title: "Time.ToRecord | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,24 +11,20 @@ manager: kfile
 ---
 # Time.ToRecord
 
-  
-## About  
-Returns a record containing parts of a Date value.  
-  
 ## Syntax
 
 <pre>
-Time.ToRecord(time as time) as record  
+Time.ToRecord(<b>time</b> as time) as record
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|time|The time to parse.|  
-  
-## Example  
-  
+## About  
+Returns a record containing the parts of the given Time value, `time`. <ul> <li><code>time</code>: A <code>time</code> value for from which the record of its parts is to be calculated.</li> </ul>
+
+## Example 1
+Convert the `#time(11, 56, 2)` value into a record containing Time values.
+
 ```powerquery-m
-Time.ToRecord(#time(12, 1, 2)) equals [Hour=12, Minute=1, Second=2]  
-```  
+Time.ToRecord(#time(11, 56, 2))
+```
+
+<table> <tr> <th>Hour</th> <td>11</td> </tr> <tr> <th>Minute</th> <td>56</td> </tr> <tr> <th>Second</th> <td>2</td> </tr> </table>

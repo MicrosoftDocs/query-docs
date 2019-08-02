@@ -1,6 +1,6 @@
 ---
 title: "Time.ToText | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-Time.ToText(**time** as nullable time, optional **format** as nullable text, optional **culture** as nullable text) as nullable text
+Time.ToText(<b>time</b> as nullable time, optional <b>format</b> as nullable text, optional <b>culture</b> as nullable text) as nullable text
 </pre>
 
 ## About
