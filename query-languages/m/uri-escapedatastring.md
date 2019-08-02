@@ -1,6 +1,6 @@
 ---
 title: "Uri.EscapeDataString | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-Uri.EscapeDataString(**data** as text) as text
+Uri.EscapeDataString(<b>data</b> as text) as text
 </pre>
 
 ## About
