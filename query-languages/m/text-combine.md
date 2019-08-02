@@ -1,6 +1,6 @@
 ---
 title: "Text.Combine | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,25 +11,29 @@ manager: kfile
 ---
 # Text.Combine
 
-  
-## About  
-Returns a text value that is the result of joining all text values with each value separated by a separator.  
-  
 ## Syntax
 
 <pre>
-Text.Combine(text as list,  separator as nullable text) as text  
+Text.Combine(<b>texts</b> as list, optional <b>separator</b> as nullable text) as text
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|text|The list of text to combine.|  
-|separator|The separator to use when combining.  This will only appear between the specified text values, not at the beginning or the end.|  
-  
-## Example  
-  
+## About  
+Returns the result of combining the list of text values, `texts`, into a single text value. An optional separator used in the final combined text may be specified, `separator`.
+
+## Example 1
+Combine text values "Seattle" and "WA".
+
 ```powerquery-m
-Text.Combine({"a", "b", "c"}, ",") equals "a,b,c"  
-```  
+Text.Combine({"Seattle", "WA"})
+```
+
+`"SeattleWA"`
+
+## Example 2
+Combine text values "Seattle" and "WA" separated by a comma and a space, ", ".
+
+```powerquery-m
+Text.Combine({"Seattle", "WA"}, ", ")
+```
+
+`"Seattle, WA"`

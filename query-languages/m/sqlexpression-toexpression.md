@@ -1,6 +1,6 @@
 ---
 title: "SqlExpression.ToExpression | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-SqlExpression.ToExpression(**sql** as text, **environment** as record) as text
+SqlExpression.ToExpression(<b>sql</b> as text, <b>environment</b> as record) as text
 </pre>
 
 ## About

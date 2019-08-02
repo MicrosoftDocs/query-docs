@@ -1,6 +1,6 @@
 ---
 title: "Uri.Parts | Microsoft Docs"
-ms.date: 7/26/2019
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -18,7 +18,7 @@ Uri.Parts(<b>absoluteUri</b> as text) as record
 </pre> 
   
 ## About  
-Returns the parts of the input <code>absoluteUri</code> as a record, containing values such as Scheme, Host, Port, Path, Query, Fragment, UserName and Password.
+Returns the parts of the input `absoluteUri` as a record, containing values such as Scheme, Host, Port, Path, Query, Fragment, UserName and Password.
   
 ## Example 1  
 
@@ -39,5 +39,5 @@ Decode a percent-encoded string.
 let UriUnescapeDataString = (data as text) as text => Uri.Parts("http://contoso?a=" & data)[Query][a] in UriUnescapeDataString("%2Bmoney%24") 
 ```  
 
-<code>"+money$"</code>
+`"+money$"`
   

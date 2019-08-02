@@ -1,6 +1,6 @@
 ---
 title: "Value.Divide | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,20 +11,11 @@ manager: kfile
 ---
 # Value.Divide
 
-  
-## About  
-  
 ## Syntax
 
 <pre>
-Value.Divide(value1 as any,  value2 as any, optional precision as nullable number) as any  
+Value.Divide(<b>value1</b> as any, <b>value2</b> as any, optional <b>precision</b> as nullable number) as any
 </pre> 
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|value1|Dividend, or numerator.|  
-|value2|Divisor, or denominator.|  
-|optional precision|Precision of comparison.|  
-  
+## About  
+Returns the result of dividing `value1` by `value2`. An optional `precision` parameter may be specified, by default `Precision.Double` is used.

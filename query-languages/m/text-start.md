@@ -1,6 +1,6 @@
 ---
 title: "Text.Start | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,25 +11,20 @@ manager: kfile
 ---
 # Text.Start
 
-  
-## About  
-Returns the count of characters from the start of a text value.  
-  
 ## Syntax
 
 <pre>
-Text.Start(string as nullable text, count as number) as nullable text  
+Text.Start(<b>text</b> as nullable text, <b>count</b> as number) as nullable text
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|string|The string value to parse.|  
-|count|The number of characters to return.|  
-  
-## Example  
-  
+## About  
+Returns the first `count` characters of `text` as a text value.
+
+## Example 1
+Get the first 5 characters of "Hello, World".
+
 ```powerquery-m
-Text.Start("abcd", 2) equals "ab"  
-```  
+Text.Start("Hello, World", 5)
+```
+
+`"Hello"`

@@ -1,6 +1,6 @@
 ---
 title: "Type.Is | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-Type.Is(**type1** as type, **type2** as type) as logical
+Type.Is(<b>type1</b> as type, <b>type2</b> as type) as logical
 </pre>
 
 ## About

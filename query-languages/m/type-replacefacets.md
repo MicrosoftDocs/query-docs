@@ -1,6 +1,6 @@
 ---
 title: "Type.ReplaceFacets | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,9 +14,9 @@ manager: kfile
 ## Syntax
 
 <pre>
-Type.ReplaceFacets(type as type, facets as record) as type  
+Type.ReplaceFacets(<b>type</b> as type, <b>facets</b> as record) as type
 </pre>
   
 ## About  
-Replaces the facets of type with the facets contained in the record facets.  
+Replaces the facets of `type` with the facets contained in the record `facets`.
   

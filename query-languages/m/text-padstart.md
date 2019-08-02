@@ -1,6 +1,6 @@
 ---
 title: "Text.PadStart | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,30 +11,29 @@ manager: kfile
 ---
 # Text.PadStart
 
-  
-## About  
-Returns a text value padded at the beginning with pad to make it at least length characters.  If pad is not specified, whitespace is used as pad.  
-  
 ## Syntax
 
 <pre>
-Text.PadStart(text as nullable text, length as number, optional pad as nullable text) as nullable text  
+Text.PadStart(<b>text</b> as nullable text, <b>count</b> as number, optional <b>character</b> as nullable text) as nullable text
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|text|The text to parse.|  
-|length|The length to pad to.|  
-|optional pad|The text to pad with.  If pad is not specified, whitespace is used as pad.|  
-  
-## Examples  
-  
-```powerquery-m 
-Text.PadStart("xyz", 5, "a") equals "aaxyz"  
-```  
-  
-```powerquery-m 
-Text.PadStart("xyz", 9, "pad") equals error  
-```  
+## About  
+Returns a `text` value padded to length `count` by inserting spaces at the start of the text value `text`. An optional character `character` can be used to specify the character used for padding. The default pad character is a space.
+
+## Example 1
+Pad the start of a text value so it is 10 characters long.
+
+```powerquery-m
+Text.PadStart("Name", 10)
+```
+
+`" Name"`
+
+## Example 2
+Pad the start of a text value with "|" so it is 10 characters long.
+
+```powerquery-m
+Text.PadStart("Name", 10, "|")
+```
+
+`"||||||Name"`

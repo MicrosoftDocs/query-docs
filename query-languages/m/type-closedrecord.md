@@ -1,6 +1,6 @@
 ---
 title: "Type.ClosedRecord | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,18 +11,20 @@ manager: kfile
 ---
 # Type.ClosedRecord
 
-  
-## About  
-The given type must be a record type returns a closed version of the given record type (or the same type, if it is already closed)  
-  
 ## Syntax
 
 <pre>
-Type.ClosedRecord(#"type" as type) as type  
+Type.ClosedRecord(<b>type</b> as type) as type 
 </pre>
   
-## Example  
-  
-```powerquery-m 
-Type.ClosedRecord( type [ A = number,…] ) equals type [A=number]  
-```  
+## About  
+Returns a closed version of the given `record` `type` (or the same type, if it is already closed).
+
+## Example 1
+Create a closed version of `type [ A = number,…]`.
+
+```powerquery-m
+Type.ClosedRecord(type [ A = number,...])
+```
+
+`type [ A = number ]`

@@ -1,6 +1,6 @@
 ---
 title: "Time.Second | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,14 +11,16 @@ manager: kfile
 ---
 # Time.Second
 
-  
-## About  
+## Syntax
+
+<pre>
+Time.Second(<b>dateTime</b> as any) as nullable number`
+</pre>
+
+## About
 Returns the second component of the provided `time`, `datetime`, or `datetimezone` value, `dateTime`.
 
-  
-  
-## Example  
-
+## Example 1
 Find the second value from a datetime value.
 
 ```powerquery-m

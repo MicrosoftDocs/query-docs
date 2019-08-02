@@ -1,6 +1,6 @@
 ---
 title: "DirectQueryCapabilities.From | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -13,7 +13,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-DirectQueryCapabilities.From(**value** as any) as table
+DirectQueryCapabilities.From(<b>value</b> as any) as table
 </pre>
 
 ## About

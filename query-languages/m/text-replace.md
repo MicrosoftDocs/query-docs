@@ -1,6 +1,6 @@
 ---
 title: "Text.Replace | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,26 +11,20 @@ manager: kfile
 ---
 # Text.Replace
 
-  
-## About  
-Replaces all occurrences of a substring with a new text value.  
-  
 ## Syntax
 
 <pre>
-Text.Replace (text as nullable text, old as text, new as text) as nullable text  
+Text.Replace(<b>text</b> as nullable text, <b>old</b> as text, <b>new</b> as text) as nullable text
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|text|The text to parse.|  
-|old|The text to replace.|  
-|new|The replacement text.|  
-  
-## Example  
-  
+## About  
+Returns the result of replacing all occurrences of text value `old` in text value `text` with text value `new`. This function is case sensitive.
+
+## Example 1
+Replace every occurrence of "the" in a sentence with "a".
+
 ```powerquery-m
-Text.Replace("Thisisanorange", "orange", "apple") equals "Thisisanapple"  
-```  
+Text.Replace("the quick brown fox jumps over the lazy dog", "the", "a")
+```
+
+`"a quick brown fox jumps over a lazy dog"`

@@ -1,6 +1,6 @@
 ---
 title: "Value.Firewall | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-Value.Firewall(**key** as text) as any
+Value.Firewall(<b>key</b> as text) as any
 </pre>
 
 ## About
