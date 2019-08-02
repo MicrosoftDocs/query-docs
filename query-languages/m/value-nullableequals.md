@@ -1,6 +1,6 @@
 ---
 title: "Value.NullableEquals | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,29 +11,11 @@ manager: kfile
 ---
 # Value.NullableEquals
 
-  
-## About  
-Returns a logical value or null based on two values .  
-  
 ## Syntax
 
 <pre>  
-Value.NullableEquals(value1 as any, value2 as any) as any  
+Value.NullableEquals(<b>value1</b> as any, <b>value2</b> as any, optional <b>precision</b> as nullable number) as nullable logical
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|value1|The right value to compare.|  
-|value2|The left value to compare.|  
-  
-## <a name="__toc360789738"></a>Remarks  
-  
--   If either of the argument is null, it applies a nullable equality rules; otherwise, the same result as Value.Equals.  
-  
-## Example  
-  
-```powerquery-m
-Value.NullableEquals(1, null) equals null  
-```  
+## About  
+Returns null if either argument `value1`, `value2` is null, otherwise equivalent to Value.Equals.

@@ -1,6 +1,6 @@
 ---
 title: "SqlExpression.SchemaFrom | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,9 +14,8 @@ manager: kfile
 ## Syntax
 
 <pre>
-SqlExpression.SchemaFrom(**schema** as any) as any
+SqlExpression.SchemaFrom(<b>schema</b> as any) as any
 </pre>
 
 ## About
 SqlExpression.SchemaFrom
-
