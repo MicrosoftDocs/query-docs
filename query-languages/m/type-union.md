@@ -1,6 +1,6 @@
 ---
 title: "Type.Union | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,10 +14,8 @@ manager: kfile
 ## Syntax
 
 <pre>
-Type.Union(**types** as list) as type
+Type.Union(<b>types</b> as list) as type
 </pre>
-
-<pre>
 
 ## About
 Returns the union of the types in `types`.

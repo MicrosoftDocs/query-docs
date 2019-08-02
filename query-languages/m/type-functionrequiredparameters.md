@@ -1,6 +1,6 @@
 ---
 title: "Type.FunctionRequiredParameters | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,22 +11,20 @@ manager: kfile
 ---
 # Type.FunctionRequiredParameters
 
-  
-## About  
-Returns a number indicating the minimum number of parameters required to invoke the a type of function.  
-  
 ## Syntax
 
 <pre>
-Type.FunctionRequiredParameters(#"type" as type) as number  
+Type.FunctionRequiredParameters(<b>type</b> as type) as number  
 </pre>
   
-## Examples  
-  
-```powerquery-m
-Type.FunctionRequiredParameters( type function () as any) equals 0  
-```  
+## About  
+Returns a number indicating the minimum number of parameters required to invoke the input `type` of function.
+
+## Example 1
+Find the number of required parameters to the function `(x as number, optional y as text)`.
 
 ```powerquery-m
-Type.FunctionRequiredParameters( type function (x as number) as any) equals 1  
-```  
+Type.FunctionRequiredParameters(type function (x as number, optional y as text) as any)
+```
+
+`1`

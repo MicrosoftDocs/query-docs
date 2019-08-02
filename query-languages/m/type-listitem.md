@@ -1,6 +1,6 @@
 ---
 title: "Type.ListItem | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,18 +11,20 @@ manager: kfile
 ---
 # Type.ListItem
 
-  
-## About  
-Returns an item type from a list type.  
-  
 ## Syntax
 
 <pre>
-Type.ListItem(#"type" as type) as type  
+Type.ListItem(<b>type</b> as type) as type 
 </pre>
   
-## Example  
-  
+## About  
+Returns an item type from a list `type`.
+
+## Example 1
+Find item type from the list `{number}`.
+
 ```powerquery-m
-Type.ListItem (type { number }) equals type number  
-```  
+Type.ListItem(type {number})
+```
+
+`type number`
