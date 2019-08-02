@@ -1,6 +1,6 @@
 ---
 title: "Text.EndsWith | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,25 +11,29 @@ manager: kfile
 ---
 # Text.EndsWith
 
-  
-## About  
-Returns a logical value indicating whether a text value substring was found at the end of a string.  
-  
 ## Syntax
 
 <pre>
-Text.EndsWith(string as nullable text, substring as text, optional comparer as nullable function) as nullable logical  
+Text.EndsWith(<b>text</b> as nullable text, <b>substring</b> as text, optional <b>comparer</b> as nullable function) as nullable logical 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|string|The text value to parse.|  
-|substring|The string to search for.|  
-|optional comparer|An optional comparer can be provided to influence the result.|  
-  
-## <a name="__toc360788886"></a>Remarks  
-  
--   Only comparer functions created through the library (Comparer.FromCulture) are supported.  
-  
+## About  
+Indicates whether the given text, `text`, ends with the specified value, `substring`. The indication is case-sensitive. <div> `comparer` is a `Comparer` which is used to control the comparison. Comparers can be used to provide case insensitive or culture and locale aware comparisons. </div> <div> The following built in comparers are available in the formula language: </div> <ul> <li><code>Comparer.Ordinal</code>: Used to perform an exact ordinal comparison</li> <li><code>Comparer.OrdinalIgnoreCase</code>: Used to perform an exact ordinal case-insensitive comparison</li> <li> <code>Comparer.FromCulture</code>: Used to perform a culture aware comparison</li> </ul>
+
+## Example 1
+Check if "Hello, World" ends with "world".
+
+```powerquery-m
+Text.EndsWith("Hello, World", "world")
+```
+
+`false`
+
+## Example 2
+Check if "Hello, World" ends with "World".
+
+```powerquery-m
+Text.EndsWith("Hello, World", "World")
+```
+
+`true`

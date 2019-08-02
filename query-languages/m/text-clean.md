@@ -1,6 +1,6 @@
 ---
 title: "Text.Clean | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,20 @@ manager: kfile
 ---
 # Text.Clean
 
-  
-## About  
-Returns the original text value with non-printable characters removed.  
-  
 ## Syntax
 
 <pre>
-Text.Clean(string as nullable text) as nullable text  
+Text.Clean(<b>text</b> as nullable text) as nullable text
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|string|The string to parse.|  
-  
+## About  
+Returns a text value with all non-printable characters of `text` removed.
+
+## Example 1
+Remove line feeds and other non-printable characters from a text value.
+
+```powerquery-m
+Text.Clean("ABC#(lf)D")
+```
+
+`"ABCD"`

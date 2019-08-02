@@ -1,6 +1,6 @@
 ---
 title: "Text.Contains | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,30 +11,29 @@ manager: kfile
 ---
 # Text.Contains
 
-  
-## About  
-Returns true if a text value **substring** was found within a text value **string**; otherwise, false.  
-  
 ## Syntax
 
 <pre>
-Text.Contains(string as nullable text, substring as text, optional comparer as nullable function) as nullable logical  
+Text.Contains(<b>text</b> as nullable text, <b>substring</b> as text, optional <b>comparer</b> as nullable function) as nullable logical 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|string|The text to parse.|  
-|substring|The text to search for.|  
-|optional comparer|The optional culture aware comparer function can be provided.|  
-  
-## Examples  
-  
+## About  
+Detects whether the text `text` contains the text `substring`. Returns true if the text is found. <div> `comparer` is a `Comparer` which is used to control the comparison. Comparers can be used to provide case insensitive or culture and locale aware comparisons. </div> <div> The following built in comparers are available in the formula language: </div> <ul> <li><code>Comparer.Ordinal</code>: Used to perform an exact ordinal comparison</li> <li><code>Comparer.OrdinalIgnoreCase</code>: Used to perform an exact ordinal case-insensitive comparison</li> <li> <code>Comparer.FromCulture</code>: Used to perform a culture aware comparison</li> </ul>
+
+## Example 1
+Find if the text "Hello World" contains "Hello".
+
 ```powerquery-m
-Text.Contains("abc", "a") equals true  
-```  
-  
+Text.Contains("Hello World", "Hello")
+```
+
+`true`
+
+## Example 2
+Find if the text "Hello World" contains "hello".
+
 ```powerquery-m
-Text.Contains("abc", "d") equals false  
-```  
+Text.Contains("Hello World", "hello")
+```
+
+`false`

@@ -1,6 +1,6 @@
 ---
 title: "Text.At | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,33 +11,20 @@ manager: kfile
 ---
 # Text.At
 
-  
-## About  
-Returns a character starting at a zero-based offset.  
-  
 ## Syntax
 
 <pre>
-Text.At(value as nullable text, index as number) as nullable text  
+Text.At(<b>text</b> as nullable text, <b>index</b> as number) as nullable text 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|value|The value to parse.|  
-|index|The index of the character to return.|  
-  
-## <a name="__toc360788840"></a>Remarks  
-  
--   If the offset is greater than index, an Expression.Error is thrown.  
-  
-## Examples  
-  
+## About  
+Returns the character in the text value, `text` at position `index`. The first character in the text is at position 0.
+
+## Example 1
+Find the character at position 4 in string "Hello, World".
+
 ```powerquery-m
-Text.At("abcd", 0) equals "a"  
-```  
-  
-```powerquery-m
-Text.At("abcd", 5) equals error  
-```  
+Text.At("Hello, World", 4)
+```
+
+`"o"`

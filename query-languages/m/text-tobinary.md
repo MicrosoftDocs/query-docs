@@ -1,6 +1,6 @@
 ---
 title: "Text.ToBinary | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,21 +11,11 @@ manager: kfile
 ---
 # Text.ToBinary
 
-  
-## About  
-Encodes a text value into binary value using an encoding.  
-  
 ## Syntax
 
 <pre>
-Text.ToBinary(text as nullable text,  optional encoding as nullable number,  optional includeByteOrderMark as nullable logical) as nullable binary  
+Text.ToBinary(<b>text</b> as nullable text, optional <b>encoding</b> as nullable number, optional <b>includeByteOrderMark</b> as nullable logical) as nullable binary
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|text|Value to encode.|  
-|optional encoding|Encoding option to apply.|  
-|optional includeByteOrderMark|Specify handling of byte order marks|  
-  
+## About  
+Encodes the given text value, `text`, into a binary value using the specified `encoding`.

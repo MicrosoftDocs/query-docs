@@ -1,6 +1,6 @@
 ---
 title: "Character.FromNumber | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,20 @@ manager: kfile
 ---
 # Character.FromNumber
 
-  
-## About  
-Returns a number to its character value.  
-  
 ## Syntax
 
 <pre>  
-Character.FromNumber(number as nullable number) as nullable text  
+Character.FromNumber(<b>number</b> as nullable number) as nullable text 
 </pre> 
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|number|The number to transform.|  
-  
+## About  
+Returns the character equivalent of the number.
+
+## Example 1
+Given the number 9, find the character value.
+
+```powerquery-m
+Character.FromNumber(9)
+```
+
+`"#(tab)"`
