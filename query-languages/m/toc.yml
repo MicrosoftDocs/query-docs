@@ -98,14 +98,14 @@
               href: googleanalytics-accounts.md
             - name: Hdfs.Contents
               href: hdfs-contents.md
-            - name: HdInsight.Files
-              href: hdinsight-files.md
+            - name: Hdfs.Files
+              href: hdfs-files.md
             - name: HdInsight.Containers
               href: hdinsight-containers.md
             - name: HdInsight.Contents
               href: hdinsight-contents.md
-            - name: Hdfs.Files
-              href: hdfs-files.md
+            - name: HdInsight.Files
+              href: hdinsight-files.md
             - name: Html.Table
               href: html-table.md
             - name: Identity.From
@@ -208,8 +208,6 @@
               href: xml-document.md
             - name: Xml.Tables
               href: xml-tables.md
-            - name: Cube.PropertyKey
-              href: cube-propertykey.md
         - name: Binary functions
           items: 
             - name: Binary functions overview
@@ -436,10 +434,10 @@
               href: date-startofday.md
             - name: Date.StartOfMonth
               href: date-startofmonth.md
-            - name: Date.StartOfWeek
-              href: date-startofweek.md
             - name: Date.StartOfQuarter
               href: date-startofquarter.md
+            - name: Date.StartOfWeek
+              href: date-startofweek.md
             - name: Date.StartOfYear
               href: date-startofyear.md
             - name: Date.ToRecord
@@ -1184,10 +1182,10 @@
               href: table-positionof.md
             - name: Table.PositionOfAny
               href: table-positionofany.md
-            - name: Table.Profile
-              href: table-profile.md
             - name: Table.PrefixColumns
               href: table-prefixcolumns.md
+            - name: Table.Profile
+              href: table-profile.md
             - name: Table.PromoteHeaders
               href: table-promoteheaders.md
             - name: Table.Range
@@ -1482,10 +1480,10 @@
               href: sqlexpression-schemafrom.md
             - name: SqlExpression.ToExpression
               href: sqlexpression-toexpression.md
-            - name: Value.As
-              href: value-as.md
             - name: Value.Add
               href: value-add.md
+            - name: Value.As
+              href: value-as.md
             - name: Value.Compare
               href: value-compare.md
             - name: Value.Divide
@@ -1502,10 +1500,10 @@
               href: value-metadata.md
             - name: Value.Multiply
               href: value-multiply.md
-            - name: Value.NullableEquals
-              href: value-nullableequals.md
             - name: Value.NativeQuery
               href: value-nativequery.md
+            - name: Value.NullableEquals
+              href: value-nullableequals.md
             - name: Value.RemoveMetadata
               href: value-removemetadata.md
             - name: Value.ReplaceMetadata
