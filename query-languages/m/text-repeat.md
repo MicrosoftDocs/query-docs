@@ -1,6 +1,6 @@
 ---
 title: "Text.Repeat | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,25 +11,29 @@ manager: kfile
 ---
 # Text.Repeat
 
-  
-## About  
-Returns a text value composed of the input text value repeated a number of times.  
-  
 ## Syntax
 
 <pre>
-Text.Repeat(string as text, repeatCount as number) as text  
+Text.Repeat(<b>text</b> as nullable text, <b>count</b> as number) as nullable text 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|string|The text to repeat.|  
-|repeatCount|The number of times to repeat the text.|  
-  
-## Example  
-  
+## About  
+Returns a text value composed of the input text `text` repeated `count` times.
+
+## Example 1
+Repeat the text "a" five times.
+
 ```powerquery-m
-Text.Repeat("a",5) equals "aaaaa"  
-```  
+Text.Repeat("a", 5)
+```
+
+`"aaaaa"`
+
+## Example 2
+Repeat the text "helloworld" three times.
+
+```powerquery-m
+Text.Repeat("helloworld.", 3)
+```
+
+`"helloworld.helloworld.helloworld."`

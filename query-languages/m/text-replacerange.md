@@ -1,6 +1,6 @@
 ---
 title: "Text.ReplaceRange | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,27 +11,20 @@ manager: kfile
 ---
 # Text.ReplaceRange
 
-  
-## About  
-Replaces length characters in a text value starting at a zero-based offset with the new text value.  
-  
 ## Syntax
 
 <pre>
-Text.ReplaceRange(text as nullable text, offset as number, length as number, newText as text) as nullable text  
+Text.ReplaceRange(<b>text</b> as nullable text, <b>offset</b> as number, <b>count</b> as number, <b>newText</b> as text) as nullable text
 </pre> 
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|text|The text to parse.|  
-|offset|The beginning of the range.|  
-|length|The length of the range.|  
-|newText|The replacement text.|  
-  
-## Example  
-  
+## About  
+Returns the result of removing a number of characters, `count`, from text value `text` beginning at position `offset` and then inserting the text value `newText` at the same position in `text`.
+
+## Example 1
+Replace a single character at position 2 in text value "ABGF" with new text value "CDE".
+
 ```powerquery-m
-Text.ReplaceRange("abcdef", 2, 3, "xyz") equals "abxyzf"  
-```  
+Text.ReplaceRange("ABGF", 2, 1, "CDE")
+```
+
+`"ABCDEF"`

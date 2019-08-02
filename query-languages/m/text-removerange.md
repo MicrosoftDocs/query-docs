@@ -1,6 +1,6 @@
 ---
 title: "Text.RemoveRange | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,36 +11,29 @@ manager: kfile
 ---
 # Text.RemoveRange
 
-  
-## About  
-Removes count characters at a zero-based offset from a text value.  
-  
 ## Syntax
 
 <pre>
-Text.RemoveRange(text as nullable text, offset as number, count as number) as nullable text  
+Text.RemoveRange(<b>text</b> as nullable text, <b>offset</b> as number, optional <b>count</b> as nullable number) as nullable text
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|text|The text to parse.|  
-|offset|The index to start at.|  
-|count|The number of characters to remove.|  
-  
-## <a name="__toc360788862"></a>Remarks  
-  
--   If count is not specified, the default value of 1 is used.  
-  
--   If offset is less than zero or more than the length of a text value, or if count if less than zero then an Expression.Error is thrown.  
-  
-## Examples  
-  
+## About  
+Returns a copy of the text value `text` with all the characters from position `offset` removed. An optional parameter, `count` can by used to specify the number of characters to remove. The default value of `count` is 1. Position values start at 0.
+
+## Example 1
+Remove 1 character from the text value "ABEFC" at position 2.
+
 ```powerquery-m
-Text.RemoveRange("abcdef", 2) equals "abdef"  
-```  
-  
+Text.RemoveRange("ABEFC", 2)
+```
+
+`"ABFC"`
+
+## Example 2
+Remove two characters from the text value "ABEFC" starting at position 2.
+
 ```powerquery-m
-Text.RemoveRange("abcdef", 2, 2) equals "abef"  
-```  
+Text.RemoveRange("ABEFC", 2, 2)
+```
+
+`"ABC"`

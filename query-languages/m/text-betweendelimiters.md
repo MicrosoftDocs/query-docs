@@ -1,6 +1,6 @@
 ---
 title: "Text.BetweenDelimiters | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-Text.BetweenDelimiters(**text** as nullable text, **startDelimiter** as text, **endDelimiter** as text, optional **startIndex** as any, optional **endIndex** as any) as any
+Text.BetweenDelimiters(<b>text</b> as nullable text, <b>startDelimiter</b> as text, <b>endDelimiter</b> as text, optional <b>startIndex</b> as any, optional <b>endIndex</b> as any) as any
 </pre>
 
 ## About
@@ -46,5 +46,3 @@ Text.BetweenDelimiters("111 (222) 333 (444)", "(", ")", {1, RelativePosition.Fro
 ```
 
 `"222) 333 (444"`
-
-  

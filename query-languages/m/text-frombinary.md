@@ -1,6 +1,6 @@
 ---
 title: "Text.FromBinary | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,34 +11,11 @@ manager: kfile
 ---
 # Text.FromBinary
 
-  
-## About  
-Decodes data from a binary value in to a text value using an encoding.  
-  
 ## Syntax
 
 <pre>
-Text.FromBinary(binary as nullable binary, optional encoding as nullable number) as nullable text  
+Text.FromBinary(<b>binary</b> as nullable binary, optional <b>encoding</b> as nullable number) as nullable text
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|binary|The value to decode.|  
-|optional encoding|Encoding option to apply.|  
-  
-Text encoding  
-  
-TextEncoding.Utf8 = 65001;  
-  
-TextEncoding.Utf16 = 1200;  
-  
-TextEncoding.Ascii = 20127;  
-  
-TextEncoding.Unicode = 1200;  
-  
-TextEncoding.BigEndianUnicode = 1201,  
-  
-TextEncoding.Windows = 1252;  
-  
+## About  
+Decodes data, `binary`, from a binary value in to a text value, using `encoding` type.

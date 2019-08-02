@@ -1,6 +1,6 @@
 ---
 title: "Text.ToList | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,24 +11,20 @@ manager: kfile
 ---
 # Text.ToList
 
-  
-## About  
-Returns a list of characters from a text value.  
-  
 ## Syntax
 
 <pre>
-Text.ToList(text as text) as list  
+Text.ToList(<b>text</b> as text) as list 
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|Text|The text to parse through.|  
-  
-## Example  
-  
+## About  
+Returns a list of character values from the given text value `text`.
+
+## Example 1
+Create a list of character values from the text "Hello World".
+
 ```powerquery-m
-Text.ToList("abc") equals {"a","b","c"}  
-```  
+Text.ToList("Hello World")
+```
+
+<table> <tr><td>H</td></tr> <tr><td>e</td></tr> <tr><td>l</td></tr> <tr><td>l</td></tr> <tr><td>o</td></tr> <tr><td> </td></tr> <tr><td>W</td></tr> <tr><td>o</td></tr> <tr><td>r</td></tr> <tr><td>l</td></tr> <tr><td>d</td></tr> </table>

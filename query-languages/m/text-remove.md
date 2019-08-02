@@ -1,6 +1,6 @@
 ---
 title: "Text.Remove | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,29 +11,20 @@ manager: kfile
 ---
 # Text.Remove
 
-  
-## About  
-Removes all occurrences of a character or list of characters from a text value. The **removeChars** parameter can be a character value or a list of character values.  
-  
 ## Syntax
 
 <pre>
-Text.Remove(text as nullable text, removeChars as any) as nullable text  
+Text.Remove(<b>text</b> as nullable text, <b>removeChars</b> as any) as nullable text
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|text|The text to parse.|  
-|removeChars|A character value or a list of character values to be removed.|  
-  
-## Examples  
-  
+## About  
+Returns a copy of the text value `text` with all the characters from `removeChars` removed. 
+
+## Example 1
+Remove characters , and ; from the text value.
+
 ```powerquery-m
-Text.Remove("a,b,;c",",")equals "ab;c"  
-```  
-  
-```powerquery-m
-Text.Remove("a,b,;c",{",",";"}) equals "abc"  
-```  
+Text.Remove("a,b;c",{",",";"})
+```
+
+`"abc"`

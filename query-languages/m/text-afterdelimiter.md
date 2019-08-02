@@ -1,6 +1,6 @@
 ---
 title: "Text.AfterDelimiter | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -14,7 +14,7 @@ manager: kfile
 ## Syntax
 
 <pre>
-Text.AfterDelimiter(**text** as nullable text, **delimiter** as text, optional **index** as any) as any
+Text.AfterDelimiter(<b>text</b> as nullable text, <b>delimiter</b> as text, optional <b>index</b> as any) as any
 </pre>
 
 ## About
@@ -46,6 +46,3 @@ Text.AfterDelimiter("111-222-333", "-", {1, RelativePosition.FromEnd})
 ```
 
 `"222-333"`
-
-
-  

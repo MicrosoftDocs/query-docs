@@ -1,6 +1,6 @@
 ---
 title: "Text.Length | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,39 +11,20 @@ manager: kfile
 ---
 # Text.Length
 
-  
-## About  
-Returns the number of characters in a text value.  
-  
 ## Syntax
 
 <pre>
-Text.Length(text as nullable text) as nullable number  
+Text.Length(<b>text</b> as nullable text) as nullable number
 </pre>
   
-## <a name="__toc360788812"></a>Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|text|The input text value|  
-  
-## Example  
-  
+## About  
+Returns the number of characters in the text `text`.
+
+## Example 1
+Find how many characters are in the text "Hello World".
+
 ```powerquery-m
-Text.Length("abc") equals 3  
-```  
-  
-## <a name="__toc360788813"></a>Text Comparisons  
-Text comparisons are performed by obtaining a comparer from **Comparer.FromCulture**. The comparer returns 0, a negative number, or a positive number based on the result of the comparison. The **Comparer.Equals** function is used to compare two text values.  
-  
-## Example  
-  
-```powerquery-m
-let  
-comparer = Comparer.FromCulture("en-US", false)  
-in  
-[    
-comparisonResult = comparer("a","b"),    
-equalityResult   = Comparer.Equals(comparer,"a","b")    
-]  
-```  
+Text.Length("Hello World")
+```
+
+`11`

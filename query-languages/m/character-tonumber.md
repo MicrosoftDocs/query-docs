@@ -1,6 +1,6 @@
 ---
 title: "Character.ToNumber | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -11,19 +11,20 @@ manager: kfile
 ---
 # Character.ToNumber
 
-  
-## About  
-Returns a character to its number value.  
-  
 ## Syntax
 
-<pre>  
-Character.ToNumber(character as nullable text) as nullable number  
+<pre>
+Character.ToNumber(<b>character</b> as nullable text) as nullable number
 </pre>
   
-## Arguments  
-  
-|Argument|Description|  
-|------------|---------------|  
-|character|The character to transform.|  
-  
+## About  
+Returns the number equivalent of the character, `character`.
+
+## Example 1
+Given the character "#(tab)" 9, find the number value.
+
+```powerquery-m
+Character.ToNumber("#(tab)")
+```
+
+`9`
