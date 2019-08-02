@@ -142,8 +142,6 @@
               href: salesforce-data.md
             - name: Salesforce.Reports
               href: salesforce-reports.md
-            - name: SapBusinessObjects.Universes
-              href: sapbusinessobjects-universes.md
             - name: SapBusinessWarehouse.Cubes
               href: sapbusinesswarehouse-cubes.md
             - name: SapHana.Database
@@ -770,6 +768,8 @@
               href: list-skip.md
             - name: List.Sort
               href: list-sort.md
+            - name: List.Split
+              href: list-split.md
             - name: List.StandardDeviation
               href: list-standarddeviation.md
             - name: List.Sum
