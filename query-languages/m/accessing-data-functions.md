@@ -87,7 +87,6 @@ Functions in this section access data and return table values. Most of these fun
 |[RData.FromBinary](rdata-frombinary.md)|Returns a record of data frames from the RData file.|  
 |[Salesforce.Data](salesforce-data.md)|Connects to the Salesforce Objects API and returns the set of available objects (i.e. Accounts).|  
 |[Salesforce.Reports](salesforce-reports.md)|Connects to the Salesforce Reports API and returns the set of available reports.|  
-|[SapBusinessObjects.Universes](sapbusinessobjects-universes.md)|Connects to the SAP BusinessObjects BI Universe at the specified URL and returns the set of available universes.|  
 |[SapBusinessWarehouse.Cubes](sapbusinesswarehouse-cubes.md)|Returns the InfoCubes and queries in an SAP Business Warehouse system grouped by InfoArea.| 
 |[SapBusinessWarehouseExecutionMode.DataStream](sapbusinesswarehouseexecutionmode.datastream.md)|'DataStream flattening mode' option for MDX execution in SAP Business Warehouse.| 
 |[SapBusinessWarehouseExecutionMode.BasXml](sapbusinesswarehouseexecutionmode.basxml.md)|'bXML flattening mode' option for MDX execution in SAP Business Warehouse.| 
