@@ -132,12 +132,12 @@
               href: odataomitvalues-nulls.md
             - name: Odbc.DataSource
               href: odbc-datasource.md
+            - name: Odbc.InferOptions
+              href: odbc-inferoptions.md
             - name: Odbc.Query
               href: odbc-query.md
             - name: OleDb.DataSource
               href: oledb-datasource.md
-            - name: OleDb.InferOptions
-              href: oledb-inferoptions.md
             - name: OleDb.Query
               href: oledb-query.md
             - name: Oracle.Database
@@ -155,7 +155,7 @@
             - name: SapBusinessWarehouse.Cubes
               href: sapbusinesswarehouse-cubes.md
             - name: SapBusinessWarehouseExecutionMode.DataStream
-              href: aapbusinesswarehouseexecutionmode-datastream.md
+              href: sapbusinesswarehouseexecutionmode-datastream.md
             - name: SapBusinessWarehouseExecutionMode.BasXml
               href: sapbusinesswarehouseexecutionmode-basxml.md
             - name: SapBusinessWarehouseExecutionMode.BasXmlGzip
