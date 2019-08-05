@@ -1004,6 +1004,8 @@
               href: splitter-splitbynothing.md
             - name: Splitter.SplitTextByAnyDelimiter
               href: splitter-splittextbyanydelimiter.md
+            - name: Splitter.SplitTextByCharacterTransition
+              href: splitter-splittextbycharactertransition.md
             - name: Splitter.SplitTextByDelimiter
               href: splitter-splittextbydelimiter.md
             - name: Splitter.SplitTextByEachDelimiter
@@ -1236,6 +1238,8 @@
               href: table-replacerows.md
             - name: Table.ReplaceValue
               href: table-replacevalue.md
+            - name: Table.Reverse
+              href: table-reverse.md
             - name: Table.ReverseRows
               href: table-reverserows.md
             - name: Table.RowCount
@@ -1254,6 +1258,8 @@
               href: table-skip.md
             - name: Table.Sort
               href: table-sort.md
+            - name: Table.Split
+              href: table-split.md
             - name: Table.SplitColumn
               href: table-splitcolumn.md
             - name: Table.ToColumns
