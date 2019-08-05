@@ -155,7 +155,7 @@
             - name: SapBusinessWarehouse.Cubes
               href: sapbusinesswarehouse-cubes.md
             - name: SapBusinessWarehouseExecutionMode.DataStream
-              href: sapbusinesswarehouseexecutionmode.datastream
+              href: sapbusinesswarehouseexecutionmode.datastream.md
             - name: SapBusinessWarehouseExecutionMode.BasXml
               href: sapbusinesswarehouseexecutionmode.basxml.md
             - name: SapBusinessWarehouseExecutionMode.BasXmlGzip
