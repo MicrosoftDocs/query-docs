@@ -41,4 +41,4 @@ manager: kfile
 |[DateTime.Time](datetime-time.md)|Returns a time part from a DateTime value.|  
 |[DateTime.ToRecord](datetime-torecord.md)|Returns a record containing parts of a DateTime value.|  
 |[DateTime.ToText](datetime-totext.md)|Returns a text value from a DateTime value.|  
-  
+|[#datetime](sharpdatetime.md)|Creates a datetime value from year, month, day, hour, minute, and second.|  

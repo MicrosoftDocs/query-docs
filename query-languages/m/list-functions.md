@@ -146,8 +146,8 @@ These functions generate list of values.
   
 |Function|Description|  
 |------------|---------------|  
-|[List.DateTimes](list-datetimes.md)|Returns a list of datetime values from size count, starting at start and adds an increment to every value.|  
-|[List.Dates](list-dates.md)|Returns a list of date values from size count, starting at start and adds an increment to every value.|  
+|[List.Dates](list-dates.md)|Returns a list of date values from size count, starting at start and adds an increment to every value.|
+|[List.DateTimes](list-datetimes.md)|Returns a list of datetime values from size count, starting at start and adds an increment to every value.|   
 |[List.DateTimeZones](list-datetimezones.md)|Returns a list of of datetimezone values from size count, starting at start and adds an increment to every value.|  
 |[List.Durations](list-durations.md)|Returns a list of durations values from size count, starting at start and adds an increment to every value.|  
 |[List.Generate](list-generate.md)|Generates a list from a value function, a condition function, a next function, and an optional transformation function on the values.|  

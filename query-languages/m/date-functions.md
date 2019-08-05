@@ -72,7 +72,8 @@ manager: kfile
 |[Date.ToText](date-totext.md)|Returns a text value from a Date value.|  
 |[Date.WeekOfMonth](date-weekofmonth.md)|Returns a number for the count of week in the current month.|  
 |[Date.WeekOfYear](date-weekofyear.md)|Returns a number for the count of week in the current year.|  
-|[Date.Year](date-year.md)|Returns the year from a DateTime value.|  
+|[Date.Year](date-year.md)|Returns the year from a DateTime value.|
+|[#date](sharpdate.md)|Creates a date value from year, month, and day.|  
   
 Parameter values | Description
 ---------------- | -----------

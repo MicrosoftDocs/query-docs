@@ -72,5 +72,5 @@ Controlling byte order | Description
 |[Occurrence.Optional](occurrence-optional.md) | The item is expected to appear zero or one time in the input.|
 |[Occurrence.Repeating](occurrence-repeating.md) | The item is expected to appear zero or more times in the input.|
 |[Occurrence.Required](occurrence-required.md) | The item is expected to appear once in the input.|
-
+|[#binary](sharpbinary.md) | Creates a binary value from numbers or text.|
 
