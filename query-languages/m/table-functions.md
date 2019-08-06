@@ -127,7 +127,7 @@ Parameter values | Description
 [JoinAlgorithm.PairwiseHash](joinalgorithm-pairwisehash.md) | JoinAlgorithm.PairwiseHash
 [JoinAlgorithm.SortMerge](joinalgorithm-sortmerge.md) | JoinAlgorithm.SortMerge
 [JoinAlgorithm.LeftHash](joinalgorithm-lefthash.md) | JoinAlgorithm.LeftHash
-[JoinAlgorithm.RightHash](joinalgorithm-.righthash.md) | JoinAlgorithm.RightHash
+[JoinAlgorithm.RightHash](joinalgorithm-righthash.md) | JoinAlgorithm.RightHash
 [JoinAlgorithm.LeftIndex](joinalgorithm-leftindex.md) | JoinAlgorithm.LeftIndex
 [JoinAlgorithm.RightIndex](joinalgorithm-rightindex.md) | JoinAlgorithm.RightIndex
 [JoinSide.Left](joinside-left.md) | Specifies the left table of a join.
