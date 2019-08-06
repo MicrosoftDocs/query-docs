@@ -1,8 +1,7 @@
 ---
 title: "Table functions | Microsoft Docs"
-ms.date: 3/28/2019
+ms.date: 8/06/2019
 ms.service: powerquery
-
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -12,9 +11,7 @@ manager: kfile
 # Table functions
  
   
-## <a name="__toc360789424"></a>  
-  
-### <a name="__toc295771314"></a>Table construction  
+## <a name="__toc295771314"></a>Table construction  
   
 |Function|Description|  
 |------------|---------------|  
@@ -34,7 +31,7 @@ manager: kfile
 |[Table.View](table-view.md)|Creates or extends a table with user-defined handlers for query and action operations.| 
 |[Table.ViewFunction](table-viewfunction.md) | Creates a function that can be intercepted by a handler defined on a view (via `Table.View`).| 
   
-### <a name="__toc360789443"></a>Conversions  
+## <a name="__toc360789443"></a>Conversions  
   
 |Function|Description|  
 |------------|---------------|  
@@ -43,7 +40,7 @@ manager: kfile
 |[Table.ToRecords](table-torecords.md)|Returns a list of records from an input table.|  
 |[Table.ToRows](table-torows.md)|Returns a nested list of row values from an input table.|  
   
-### <a name="__toc360789456"></a>Information  
+## <a name="__toc360789456"></a>Information  
   
 |Function|Description|  
 |------------|---------------|  
@@ -56,7 +53,7 @@ manager: kfile
   
   
   
-### <a name="__toc360789466"></a>Row operations  
+## <a name="__toc360789466"></a>Row operations  
   
 |Function|Description|  
 |------------|---------------|  
@@ -87,7 +84,7 @@ manager: kfile
 |[Table.Skip](table-skip.md)|Returns a table that does not contain the first row or rows of the table.|  
   
   
-### <a name="__toc295771344"></a>Column operations  
+## <a name="__toc295771344"></a>Column operations  
   
 |Function|Description|  
 |------------|---------------|  
@@ -107,8 +104,36 @@ manager: kfile
 |[Table.TransformColumnNames](table-transformcolumnnames.md)|Transforms column names by using the given function.|
 |[Table.Unpivot](table-unpivot.md)|Given a list of table columns, transforms those columns into attribute-value pairs.|  
 |[Table.UnpivotOtherColumns](table-unpivotothercolumns.md)|Translates all columns other than a specified set into attribute-value pairs, combined with the rest of the values in each row.|  
+
+## Parameters
+
+Parameter values | Description
+---------------- | -----------
+[JoinKind.Inner](joinkind-inner.md) | A possible value for the optional <code>JoinKind</code> parameter in <code>Table.Join</code>. The table resulting from an inner join contains a row for each pair of rows from the specified tables that were determined to match based on the specified key columns.
+[JoinKind.LeftOuter](joinkind-leftouter.md) | A possible value for the optional <code>JoinKind</code> parameter in <code>Table.Join</code>. A left outer join ensures that all rows of the first table appear in the result.
+[JoinKind.RightOuter](joinkind-rightouter.md) | A possible value for the optional <code>JoinKind</code> parameter in <code>Table.Join</code>. A right outer join ensures that all rows of the second table appear in the result.
+[JoinKind.FullOuter](joinkind-fullouter.md) | A possible value for the optional <code>JoinKind</code> parameter in <code>Table.Join</code>. A full outer join ensures that all rows of both tables appear in the result. Rows that did not have a match in the other table are joined with a default row containing null values for all of its columns.
+[JoinKind.LeftAnti](joinkind-leftanti.md) | A possible value for the optional <code>JoinKind</code> parameter in <code>Table.Join</code>. A left anti join returns that all rows from the first table which do not have a match in the second table.
+[JoinKind.RightAnti](joinkind-rightanti.md) | A possible value for the optional <code>JoinKind</code> parameter in <code>Table.Join</code>. A right anti join returns that all rows from the second table which do not have a match in the first table.
+[MissingField.Error](missingfield-error.md) | An optional parameter in record and table functions indicating that missing fields should result in an error. (This is the default parameter value.)
+[MissingField.Ignore](missingfield-ignore.md) | An optional parameter in record and table functions indicating that missing fields should be ignored.
+[MissingField.UseNull](missingfield-usenull.md) | An optional parameter in record and table functions indicating that missing fields should be included as null values.
+[GroupKind.Global](groupkind-global.md) | GroupKind.Global
+[GroupKind.Local](groupkind-local.md) | GroupKind.Local
+[ExtraValues.List](extravalues-list.md) | If the splitter function returns more columns than the table expects, they should be collected into a list.
+[ExtraValues.Ignore](extravalues-ignore.md) | If the splitter function returns more columns than the table expects, they should be ignored.
+[ExtraValues.Error](extravalues-error.md) | If the splitter function returns more columns than the table expects, an error should be raised.
+[JoinAlgorithm.Dynamic](joinalgorithm-dynamic.md) | JoinAlgorithm.Dynamic
+[JoinAlgorithm.PairwiseHash](joinalgorithm-pairwisehash.md) | JoinAlgorithm.PairwiseHash
+[JoinAlgorithm.SortMerge](joinalgorithm-sortmerge.md) | JoinAlgorithm.SortMerge
+[JoinAlgorithm.LeftHash](joinalgorithm-lefthash.md) | JoinAlgorithm.LeftHash
+[JoinAlgorithm.RightHash](joinalgorithm-.righthash.md) | JoinAlgorithm.RightHash
+[JoinAlgorithm.LeftIndex](joinalgorithm-leftindex.md) | JoinAlgorithm.LeftIndex
+[JoinAlgorithm.RightIndex](joinalgorithm-rightindex.md) | JoinAlgorithm.RightIndex
+[JoinSide.Left](joinside-left.md) | Specifies the left table of a join.
+[JoinSide.Right](joinside-right.md) | Specifies the right table of a join.
   
-### Transformation  
+## Transformation  
 **Parameters for Group options**  
   
 -   GroupKind.Global = 0;  
@@ -241,7 +266,7 @@ Orders = Table.FromRecords({
   
   
   
-### <a name="__toc295771386"></a>Membership  
+## <a name="__toc295771386"></a>Membership  
 **Parameters for membership checks**  
   
 **Occurrence specification**  
@@ -270,7 +295,7 @@ Orders = Table.FromRecords({
 |[Table.RemoveMatchingRows](table-removematchingrows.md)|Removes all occurrences of rows from a table.|  
 |[Table.ReplaceMatchingRows](table-replacematchingrows.md)|Replaces specific rows from a table with the new rows.|  
   
-### Ordering  
+## Ordering  
 **Example data**  
   
 The following tables are used by the examples in this section.  
@@ -311,18 +336,18 @@ type table [
 |[Table.MinN](table-minn.md)|Returns the smallest N rows in the given table. After the rows are sorted, the countOrCondition parameter must be specified to further filter the result.|  
 |[Table.Sort](table-sort.md)|Sorts the rows in a table using a comparisonCriteria or a default ordering if one is not specified.|  
   
-### Other  
+## Other  
   
 |Function|Description|  
 |------------|---------------|  
 |[Table.Buffer](table-buffer.md)|Buffers a table into memory, isolating it from external changes during evaluation.|  
   
-### Parameter Values  
+## Parameter Values  
   
-#### Naming output columns  
+### Naming output columns  
 This parameter is a list of text values specifying the column names of the resulting table. This parameter is generally used in the Table construction functions, such as Table.FromRows and Table.FromList.  
   
-#### Comparison criteria  
+### Comparison criteria  
 Comparison criterion can be provided as either of the following values:  
   
 -   A number value to specify a sort order. See sort order in the parameter values section above.  
@@ -335,7 +360,7 @@ Comparison criterion can be provided as either of the following values:
   
 For examples, see description of [Table.Sort](table-sort.md).  
   
-#### Count or Condition critieria  
+### Count or Condition critieria  
 This criteria is generally used in ordering or row operations. It determines the number of rows returned in the table and can take two forms, a number or a condition:  
   
 -   A number indicates how many values to return inline with the appropriate function  
@@ -344,7 +369,7 @@ This criteria is generally used in ordering or row operations. It determines the
   
 See [Table.FirstN](table-firstn.md) or [Table.MaxN](table-maxn.md).  
   
-#### Handling of extra values  
+### Handling of extra values  
 This is used to indicate how the function should handle extra values in a row. This parameter is specified as a number, which maps to the options below.  
   
 ```  
@@ -356,7 +381,7 @@ ExtraValues.Ignore = 2
 ```  
 For more information, see [Table.FromList](table-fromlist.md).  
   
-#### Missing column handling  
+### Missing column handling  
 This is used to indicate how the function should handle missing columns. This parameter is specified as a number, which maps to the options below.  
   
 ```  
@@ -368,7 +393,7 @@ MissingField.UseNull = 2;
 ```  
 This is used in column or transformation operations. For Examples, see [Table.TransformColumns](table-transformcolumns.md).  
   
-#### Sort Order  
+### Sort Order  
 This is used to indicate how the results should be sorted. This parameter is specified as a number, which maps to the options below.  
   
 ```  
@@ -377,7 +402,7 @@ Order.Ascending = 0
     Order.Descending = 1  
 ```  
   
-#### Equation criteria  
+### Equation criteria  
 Equation criteria for tables can be specified as either a  
   
 -   A function value that is either  

@@ -1,6 +1,6 @@
 ---
 title: "Value functions | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/06/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -30,6 +30,13 @@ manager: kfile
 |[Value.Divide](value-divide.md)|Returns the result of dividing the first value by the second.|
 |[Value.Multiply](value-multiply.md)|Returns the product of the two values.|
 |[Value.Subtract](value-subtract.md)|Returns the difference of the two values.|  
+
+### Arithmetic parameters
+
+|Function|Description|  
+|------------|---------------|  
+|[Precision.Double](precision-double.md)|An optional parameter for the built-in arthimetic operators to specify double precision.|  
+|[Precision.Decimal](precision-decimal.md)|An optional parameter for the built-in arthimetic operators to specify decimal precision.|
    
   
 ### <a name="__toc360789751"></a>Parameter types  
