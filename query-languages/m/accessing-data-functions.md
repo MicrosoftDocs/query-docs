@@ -21,17 +21,17 @@ Functions in this section access data and return table values. Most of these fun
 |[AccessControlKind.Allow](accesscontrolkind-allow.md)|Access is allowed.|
 |[AccessControlKind.Deny](accesscontrolkind-deny.md)|Access is denied.|
 |[Access.Database](access-database.md)|Returns a structural representation of an Microsoft Access database. |  
-|[ActiveDirectory.Domains](activedirectory-domains.md)|Returns a table with Domain information available in the current domain or optional Active Directory forest.|  
-|[AdobeAnalytics.Cubes](adobeanalytics-cubes.md)   | Returns a table of multidimensional packages from Adobe Analyics.  |
+|[ActiveDirectory.Domains](activedirectory-domains.md)|Returns a list of Active Directory domains in the same forest as the specified domain or of the current machine's domain if none is specified.|  
+|[AdobeAnalytics.Cubes](adobeanalytics-cubes.md)   | Returns the report suites in Adobe Analytics.|
 |[AdoDotNet.DataSource](adodotnet-datasource.md)|Returns the schema collection for an ADO.NET data source.|
-|[AdoDotNet.Query](adodotnet-query.md)|Returns the result of running a native query on an ADO.NET data source.|
+|[AdoDotNet.Query](adodotnet-query.md)|Returns the schema collection for an ADO.NET data source.|
 |[AnalysisServices.Database](analysisservices-database.md)|Returns a table of multidimensional cubes or tabular models from the Analysis Services database.|  
 |[AnalysisServices.Databases](analysisservices-databases.md)|Returns the Analysis Services databases on a particular host.|
 |[AzureStorage.BlobContents](azurestorage-blobcontents.md) | Returns the content of the specified blob from an Azure storage vault. |  
 |[AzureStorage.Blobs](azurestorage-blobs.md)|Returns a navigational table containing all containers found in the Azure Storage account. Each row has the container name and a link to the container blobs.|  
-|[AzureStorage.Tables](azurestorage-tables.md)|Returns a navigational table containing a row for each table found at the account URL from an Azure storage vault. Each row contains a link to the azure table.|  
 |[AzureStorage.DataLake](azurestorage-datalake.md)|Returns a navigational table containing the documents found in the specified container and its subfolders from Azure Data Lake Storage.|
 |[AzureStorage.DataLakeContents](azurestorage-datalakecontents.md)|Returns the content of the specified file from an Azure Data Lake Storage filesystem.|
+|[AzureStorage.Tables](azurestorage-tables.md)|Returns a navigational table containing a row for each table found at the account URL from an Azure storage vault. Each row contains a link to the azure table.|
 |[Csv.Document](csv-document.md)|Returns the contents of a CSV document as a table using the specified encoding.|
 |[CsvStyle.QuoteAfterDelimiter](csvstyle-quoteafterdelimiter.md)|Quotes in a field are only significant immediately following the delimiter.| 
 |[CsvStyle.QuoteAlways](csvstyle-quotealways.md)|Quotes in a field are always significant regardless of where they appear.
@@ -43,20 +43,20 @@ Functions in this section access data and return table values. Most of these fun
 |[Cube.CollapseAndRemoveColumns](cube-collapseandremovecolumns.md)|Changes the dimensional granularity of the filter context for the cube by collapsing the attributes mapped to the specified columns columnNames.|
 |[Cube.Dimensions](cube-dimensions.md)|Returns a table containing the set of available dimensions within the cube.|
 |[Cube.DisplayFolders](cube-displayfolders.md)|Returns a nested tree of tables representing the display folder hierarchy of the objects (e.g. dimensions and measures) available for use in the cube.
-|[Cube.Measures](cube-measures.md)|Returns a table containing the set of available measures within the cube.|
 |[Cube.MeasureProperties](cube-measureproperties.md)|Returns a table containing the set of available properties for measures that are expanded in the cube.|
 |[Cube.MeasureProperty](cube-measureproperty.md)|Returns the property of a measure.|
+|[Cube.Measures](cube-measures.md)|Returns a table containing the set of available measures within the cube.|
 |[Cube.Parameters](cube-parameters.md)|Returns a table containing the set of parameters that can be applied to cube.|   
 |[Cube.Properties](cube-properties.md)|Returns a table containing the set of available properties for dimensions that are expanded in the cube.|
 | [Cube.PropertyKey](cube-propertykey.md)  | Returns the key of property `property`.  |
 |[Cube.ReplaceDimensions](cube-replacedimensions.md)||
 |[Cube.Transform](cube-transform.md)|Applies the list cube functions, transforms, on the cube.|
-|[DB2.Database](db2-database.md)|Returns a table with data relating to the tables in the specified DB2 Database.|  
+|[DB2.Database](db2-database.md)|Returns a table of SQL tables and views available in a Db2 database.|  
 |[Essbase.Cubes](essbase-cubes.md)|Returns the cubes in an Essbase instance grouped by Essbase server.|
-|[Excel.CurrentWorkbook](excel-currentworkbook.md)|Returns the tables in the current Excel workbook|
+|[Excel.CurrentWorkbook](excel-currentworkbook.md)|Returns the tables in the current Excel Workbook.|
 |[Excel.Workbook](excel-workbook.md)|Returns a table representing sheets in the given excel workbook.|  
 |[Exchange.Contents](exchange-contents.md)|Returns a table of contents from a Microsoft Exchange account.| 
-|[Facebook.Graph](facebook-graph.md)|Returns a table containing content from the Facebook graph .|  
+|[Facebook.Graph](facebook-graph.md)|Returns a record containing content from the Facebook graph.|  
 |[File.Contents](file-contents.md)|Returns the binary contents of the file located at a path.|  
 |[Folder.Contents](folder-contents.md)|Returns a table containing the properties and contents of the files and folders found at path.|  
 |[Folder.Files](folder-files.md)|Returns a table containing a row for each file found at a folder path, and subfolders. Each row contains properties of the folder or file and a link to its content.|  

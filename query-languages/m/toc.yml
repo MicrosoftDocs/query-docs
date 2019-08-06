@@ -64,6 +64,10 @@
               href: cube-dimensions.md
             - name: Cube.DisplayFolders
               href: cube-displayfolders.md
+            - name: Cube.MeasureProperties
+              href: cube-measureproperties.md
+            - name: Cube.MeasureProperty
+              href: cube-measureproperty.md
             - name: Cube.Measures
               href: cube-measures.md
             - name: Cube.Parameters
@@ -118,12 +122,18 @@
               href: informix-database.md
             - name: Json.Document
               href: json-document.md
+            - name: Json.FromValue
+              href: json-fromvalue.md
             - name: MySQL.Database
               href: mysql-database.md
             - name: OData.Feed
               href: odata-feed.md
+            - name: ODataOmitValues.Nulls
+              href: odataomitvalues-nulls.md
             - name: Odbc.DataSource
               href: odbc-datasource.md
+            - name: Odbc.InferOptions
+              href: odbc-inferoptions.md
             - name: Odbc.Query
               href: odbc-query.md
             - name: OleDb.DataSource
@@ -144,6 +154,12 @@
               href: salesforce-reports.md
             - name: SapBusinessWarehouse.Cubes
               href: sapbusinesswarehouse-cubes.md
+            - name: SapBusinessWarehouseExecutionMode.DataStream
+              href: sapbusinesswarehouseexecutionmode.datastream.md
+            - name: SapBusinessWarehouseExecutionMode.BasXml
+              href: sapbusinesswarehouseexecutionmode.basxml.md
+            - name: SapBusinessWarehouseExecutionMode.BasXmlGzip
+              href: sapbusinesswarehouseexecutionmode.basxmlgzip.md
             - name: SapHana.Database
               href: saphana-database.md
             - name: SapHanaDistribution.All
@@ -988,6 +1004,8 @@
               href: splitter-splitbynothing.md
             - name: Splitter.SplitTextByAnyDelimiter
               href: splitter-splittextbyanydelimiter.md
+            - name: Splitter.SplitTextByCharacterTransition
+              href: splitter-splittextbycharactertransition.md
             - name: Splitter.SplitTextByDelimiter
               href: splitter-splittextbydelimiter.md
             - name: Splitter.SplitTextByEachDelimiter
@@ -1220,6 +1238,8 @@
               href: table-replacerows.md
             - name: Table.ReplaceValue
               href: table-replacevalue.md
+            - name: Table.Reverse
+              href: table-reverse.md
             - name: Table.ReverseRows
               href: table-reverserows.md
             - name: Table.RowCount
@@ -1238,6 +1258,8 @@
               href: table-skip.md
             - name: Table.Sort
               href: table-sort.md
+            - name: Table.Split
+              href: table-split.md
             - name: Table.SplitColumn
               href: table-splitcolumn.md
             - name: Table.ToColumns

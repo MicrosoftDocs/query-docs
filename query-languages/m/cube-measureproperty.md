@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# Cube.MeasureProperties
+# Cube.MeasureProperty
 
 ## Syntax
 

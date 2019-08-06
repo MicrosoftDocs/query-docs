@@ -28,4 +28,4 @@ manager: kfile
 |[Duration.TotalMinutes](duration-totalminutes.md)|Returns the total magnitude of minutes from a Duration value.|  
 |[Duration.TotalSeconds](duration-totalseconds.md)|Returns the total magnitude of seconds from a duration value.|  
 |[Duration.ToText](duration-totext.md)|Returns a text value from a Duration value.|  
-  
+|[#duration](sharpduration.md)|Creates a duration value from days, hour, minute, and second.|   

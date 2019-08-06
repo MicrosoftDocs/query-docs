@@ -16,7 +16,7 @@ manager: kfile
   
 |Function|Description|  
 |------------|---------------|  
-|[Expression.Evaluate](expression-evaluate.md)|Evaluates a Text expression and returns the evaluated value.|  
 |[Expression.Constant](expression-constant.md)|Returns a constant text literal from a value.|  
+|[Expression.Evaluate](expression-evaluate.md)|Evaluates a Text expression and returns the evaluated value.|  
 |[Expression.Identifier](expression-identifier.md)|Returns a text value that can be used as an identifier from a text value.|  
   
