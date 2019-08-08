@@ -1,7 +1,7 @@
 ---
 title: "NORM.S.DIST function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 8/14/2018
+ms.date: 8/08/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -23,7 +23,7 @@ NORM.S.DIST(Z, Cumulative)
 |Term|Definition|  
 |--------|--------------|  
 |Z|The value for which you want the distribution.|  
-|Cumulative|Cumulative is a logical value that determines the form of the function. If cumulative is TRUE, NORM.S.DIST returns the cumulative distribution function; if FALSE, it returns the probability mass function.|
+|Cumulative|Cumulative is a logical value that determines the form of the function. If cumulative is TRUE, NORM.S.DIST returns the cumulative distribution function; if FALSE, it returns the probability density function.|
   
 ## Return value  
 The standard normal distribution (has a mean of zero and a standard deviation of one.   
