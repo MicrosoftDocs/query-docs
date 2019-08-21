@@ -1,8 +1,7 @@
 ---
 title: "Expression functions | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/21/2019
 ms.service: powerquery
-
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -16,7 +15,7 @@ manager: kfile
   
 |Function|Description|  
 |------------|---------------|  
-|[Expression.Constant](expression-constant.md)|Returns a constant text literal from a value.|  
-|[Expression.Evaluate](expression-evaluate.md)|Evaluates a Text expression and returns the evaluated value.|  
-|[Expression.Identifier](expression-identifier.md)|Returns a text value that can be used as an identifier from a text value.|  
+|[Expression.Constant](expression-constant.md)|Returns the M source code representation of a constant value.|  
+|[Expression.Evaluate](expression-evaluate.md)|Returns the result of evaluating an M expression.|  
+|[Expression.Identifier](expression-identifier.md)|Returns the M source code representation of an identifier.|  
   
