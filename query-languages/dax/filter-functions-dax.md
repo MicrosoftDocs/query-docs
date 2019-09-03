@@ -1,7 +1,7 @@
 ---
 title: "Filter functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 04/19/2019
+ms.date: 09/04/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -11,7 +11,7 @@ manager: kfile
 # Filter functions
 The filter and value functions in DAX are some of the most complex and powerful, and differ greatly from Excel functions. The lookup functions work by using tables and relationships, like a database. The filtering functions let you manipulate data context to create dynamic calculations.  
   
-## In this section  
+## In this category 
 
 |Function  |Description  |
 |---------|---------|
@@ -36,6 +36,7 @@ The filter and value functions in DAX are some of the most complex and powerful,
 |[KEEPFILTERS](keepfilters-function-dax.md)      | Modifies how filters are applied while evaluating a CALCULATE or CALCULATETABLE function.         |
 |[RELATED](related-function-dax.md)     | Returns a related value from another table.        |
 |[RELATEDTABLE](relatedtable-function-dax.md)      |  Evaluates a table expression in a context modified by the given filters.         |
+|[REMOVEFILTERS](removefilters-function-dax.md)|Clears filters from the specified tables or columns.|
 |[SELECTEDVALUE](selectedvalue-function.md)     |  Returns the value when the context for columnName has been filtered down to one distinct value only. Otherwise returns alternateResult.         |
 |[SUBSTITUTEWITHINDEX](substitutewithindex-function-dax.md)      |  Returns a table which represents a left semijoin of the two tables supplied as arguments.        |
 |[USERELATIONSHIP](userelationship-function-dax.md)      |   Specifies the relationship to be used in a specific calculation as the one that exists between columnName1 and columnName2.       |

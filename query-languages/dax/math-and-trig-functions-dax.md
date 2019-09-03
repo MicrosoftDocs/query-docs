@@ -12,7 +12,7 @@ manager: kfile
 
 The mathematical functions in Data Analysis Expressions (DAX) are very similar to the Excel mathematical and trigonometric functions. This section lists the mathematical functions provided by DAX.  
   
-## In this section  
+## In this category 
 
 
 |Function   |Description  |

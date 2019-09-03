@@ -11,7 +11,7 @@ manager: kfile
 # Parent and Child functions
 These functions manage data that is presented as parent/child hierarchies. To learn more, see [Understanding functions for Parent-Child Hierarchies in DAX](understanding-functions-for-parent-child-hierarchies-in-dax.md).  
   
-## In this section  
+## In this category 
 
 
 |Function  |Description |
