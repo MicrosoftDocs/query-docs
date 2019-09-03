@@ -185,6 +185,8 @@
               href: related-function-dax.md
             - name: RELATEDTABLE
               href: relatedtable-function-dax.md
+            - name: REMOVEFILTERS
+              href: removefilters-function-dax.md
             - name: SELECTEDVALUE
               href: selectedvalue-function.md
             - name: SUBSTITUTEWITHINDEX
@@ -347,6 +349,8 @@
           items: 
             - name: Other functions overview
               href: other-functions-dax.md
+            - name: CONVERT
+              href: convert-function-dax.md
             - name: DATATABLE
               href: datatable-function.md
             - name: ERROR

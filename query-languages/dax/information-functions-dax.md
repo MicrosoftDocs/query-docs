@@ -11,7 +11,7 @@ manager: kfile
 # Information functions
 DAX information functions look at the cell or row that is provided as an argument and tells you whether the value matches the expected type. For example, the ISERROR function returns TRUE if the value that you reference contains an error.  
   
-## In this section  
+## In this category  
 
 |Function  |Description  |
 |---------|---------|
