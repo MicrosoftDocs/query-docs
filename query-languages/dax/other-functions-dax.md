@@ -16,8 +16,8 @@ These functions perform unique actions that cannot be defined by any of the cate
 
 |Function  |Description  |
 |---------|---------|
-|[DATATABLE](datatable-function.md)    |  Provides a mechanism for declaring an inline set of data values.        |
 |[CONVERT](convert-function-dax.md)|Converts an expression of one data type to another. |
+|[DATATABLE](datatable-function.md)    |  Provides a mechanism for declaring an inline set of data values.        |
 |[ERROR](error-function.md)     | Raises an error with an error message.         |
 |[EXCEPT](except-function-dax.md)     |  Returns the rows of one table which do not appear in another table.       |
 |[GENERATESERIES](generateseries-function.md)     | Returns a single column table containing the values of an arithmetic series.        |

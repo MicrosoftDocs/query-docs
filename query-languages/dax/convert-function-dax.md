@@ -33,9 +33,8 @@ Returns the value of <Expression>, translated to <Datatype>.
 
 The function returns an error when a value cannot be converted to the specified data type.
 
-DAX calculated columns must be of a single data type. Since MEDIAN and MEDIANX functions over an integer column return mixed data types, either integer or double, the following calculated column expression will return an error as a result:  
-`MedianNumberCarsOwned = MEDIAN(DimCustomer[NumberCarsOwned])`   
-To avoid mixed data types, change the expression to always return the double data type, for example,
+DAX calculated columns must be of a single data type. Since MEDIAN and MEDIANX functions over an integer column return mixed data types, either integer or double, the following calculated column expression will return an error as a result: `MedianNumberCarsOwned = MEDIAN(DimCustomer[NumberCarsOwned])`   
+To avoid mixed data types, change the expression to always return the double data type, for example:  
 `MedianNumberCarsOwned = MEDIANX(DimCustomer, CONVERT([NumberCarsOwned], DOUBLE))`
   
 ## Example  
