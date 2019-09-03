@@ -12,7 +12,7 @@ manager: kfile
 
 Data Analysis Expressions (DAX) includes time intelligence functions to support the needs of Business Intelligence analysis by enabling you to manipulate data using time periods, including days, months, quarters, and years, and then build and compare calculations over those periods.  
   
-## In this section  
+## In this category 
 
 |Function  |Description  |
 |---------|---------|
