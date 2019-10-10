@@ -1,20 +1,18 @@
 ---
 title: "Table.RemoveFirstN | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 10/10/2019
 ms.service: powerquery
-
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
 ---
 # Table.RemoveFirstN
   
 ## Syntax
 
 <pre>
-Table.RemoveFirstN(<b>table</b> as table, <b>countOrCondition</b> as any) as table 
+Table.RemoveFirstN(<b>table</b> as table, optional <b>countOrCondition</b> as any) as table 
 </pre>
   
 ## About  
