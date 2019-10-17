@@ -7,7 +7,7 @@
 		},
 		{
 			"source_path": "query-languages/m/power-query-m-reference.md",
-			"redirect_url": "/m/index",
+			"redirect_url": "/powerquery-m/index",
 			"redirect_document_id": false
 		},
 		{
@@ -17,7 +17,7 @@
 		},
 		{
 			"source_path": "query-languages/m/marketplace.subscriptions.md",
-			"redirect_url": "/m/index.yml",
+			"redirect_url": "/powerquery-m/index.yml",
 			"redirect_document_id": false
 		},
 		{
