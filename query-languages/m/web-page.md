@@ -1,8 +1,7 @@
 ---
 title: "Web.Page | Microsoft Docs"
-ms.date: 47/29/2019
+ms.date: 10/17/2019
 ms.service: powerquery
-
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan

@@ -1,5 +1,5 @@
 - name: Data Analysis Expressions (DAX) Reference
-  href: data-analysis-expressions-dax-reference.md
+  href: index.yml
   expanded: true
   items: 
     - name: Learn
