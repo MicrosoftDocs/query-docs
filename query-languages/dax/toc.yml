@@ -11,7 +11,7 @@
     - name: DAX functions
       expanded: true
       items: 
-        - name: DAX function reference overview
+        - name: DAX function reference
           href: dax-function-reference.md
         - name: New DAX functions
           href: new-dax-functions.md

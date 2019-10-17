@@ -24,10 +24,12 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-          - text: Understanding Power Query M functions
-            url: understanding-power-query-m-functions.md
           - text: Power Query M function reference
             url: power-query-m-function-reference.md
+      - linkListType: overview
+        links:
+          - text: Understanding Power Query M functions
+            url: understanding-power-query-m-functions.md
 
   # Card
   - title: Get started
@@ -36,10 +38,6 @@ landingContent:
         links:
           - text: M quick tour
             url: quick-tour-of-the-power-query-m-formula-language.md
-
-  # Card
-  - title: Understand
-    linkLists:
       - linkListType: concept
         links:
           - text: Expressions, values, and let expression
@@ -50,7 +48,7 @@ landingContent:
   # Card
   - title: Specification
     linkLists:
-      - linkListType: concept
+      - linkListType: architecture
         links:
           - text: Power Query M language specification
             url: power-query-m-language-specification.md
