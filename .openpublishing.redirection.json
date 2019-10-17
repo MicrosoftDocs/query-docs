@@ -2,12 +2,12 @@
 	"redirections": [
 		{
 			"source_path": "query-languages/dax/data-analysis-expressions-dax-reference.md",
-			"redirect_url": "/query-languages/dax/index",
+			"redirect_url": "/dax/index",
 			"redirect_document_id": false
 		},
 		{
 			"source_path": "query-languages/m/power-query-m-reference.md",
-			"redirect_url": "/query-languages/m/index",
+			"redirect_url": "/m/index",
 			"redirect_document_id": false
 		},
 		{
@@ -17,7 +17,7 @@
 		},
 		{
 			"source_path": "query-languages/m/marketplace.subscriptions.md",
-			"redirect_url": "/query-languages/m/index.yml",
+			"redirect_url": "/m/index.yml",
 			"redirect_document_id": false
 		},
 		{
