@@ -1,6 +1,6 @@
 ---
 title: "#table | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 10/17/2019
 ms.service: powerquery
 
 ms.reviewer: owend
@@ -9,7 +9,7 @@ author: minewiskan
 ms.author: owend
 manager: kfile
 ---
-# #table
+# \#table
 
 ## Syntax
 

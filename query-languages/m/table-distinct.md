@@ -1,8 +1,7 @@
 ---
 title: "Table.Distinct | Microsoft Docs"
-ms.date: 8/1/201
+ms.date: 10/17/2019
 ms.service: powerquery
-
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
