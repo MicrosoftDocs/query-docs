@@ -20,6 +20,18 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card
+  - title: Functions
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: DAX functions
+            url: dax-function-reference.md
+      - linkListType: whats-new
+        links:
+          - text: New DAX functions
+            url: new-dax-functions.md
+  
+  # Card
   - title: Learn about DAX
     linkLists:
       - linkListType: overview
@@ -28,16 +40,6 @@ landingContent:
             url: dax-overview.md
           - text: Videos
             url: dax-learn-videos.md
-
-  # Card
-  - title: Functions
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: New DAX functions
-            url: new-dax-functions.md
-          - text: DAX functions
-            url: dax-function-reference.md
 
   # Card
   - title: Understand
