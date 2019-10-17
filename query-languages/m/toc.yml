@@ -1,5 +1,5 @@
 - name: Power Query M formula language
-  href: power-query-m-reference.md
+  href: index.yml
   expanded: true
   items: 
     - name: Power Query M functions

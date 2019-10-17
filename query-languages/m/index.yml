@@ -1,0 +1,58 @@
+### YamlMime:Landing 
+
+title: Power Query M formula language
+summary: Microsoft Power Query provides a powerful data import experience that encompasses many features. Power Query works with Analysis Services, Excel, and Power BI workbooks. A core capability of Power Query is to filter and combine, that is, to mash-up data from one or more of a rich collection of supported data sources. Any such data mashup is expressed using the Power Query M Formula Language. It's a functional, case sensitive language similar to F#.
+
+metadata: 
+  title: Power Query M formula language reference
+  description: Power Query M is used to filter, combine, and mash-up data from one or more supported data sources.  
+  ms.service: power-query
+  ms.topic: landing-page
+  ms.collection: 
+  author: minewiskan
+  ms.author: owend
+  manager: mtillman
+  ms.date: 10/17/2019
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: Functions
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Understanding Power Query M functions
+            url: understanding-power-query-m-functions.md
+          - text: Power Query M function reference
+            url: power-query-m-function-reference.md
+
+  # Card
+  - title: Get started
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: M quick tour
+            url: quick-tour-of-the-power-query-m-formula-language.md
+
+  # Card
+  - title: Understand
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Expressions, values, and let expression
+            url: expressions-values-and-let-expression.md
+          - text: Evaluation model
+            url: evaluation-model.md
+
+  # Card
+  - title: Specification
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Power Query M language specification
+            url: power-query-m-language-specification.md
+          - text: Power Query M type system
+            url: power-query-m-type-system.md

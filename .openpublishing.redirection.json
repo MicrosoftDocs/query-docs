@@ -1,14 +1,14 @@
 {
 	"redirections": [
 		{
-			"source_path": "query-languages/dax/index.md",
-			"redirect_url": "data-analysis-expressions-dax-reference",
-			"redirect_document_id": true
+			"source_path": "query-languages/dax/data-analysis-expressions-dax-reference.md",
+			"redirect_url": "query-languages/dax/index",
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "query-languages/m/index.md",
-			"redirect_url": "power-query-m-reference",
-			"redirect_document_id": true
+			"source_path": "query-languages/m/power-query-m-reference.md",
+			"redirect_url": "query-languages/m/index",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "query-languages/index.md",
@@ -17,7 +17,7 @@
 		},
 		{
 			"source_path": "query-languages/m/marketplace.subscriptions.md",
-			"redirect_url": "query-languages/m/power-query-m-reference",
+			"redirect_url": "query-languages/m/index.yml",
 			"redirect_document_id": false
 		},
 		{
@@ -287,7 +287,7 @@
 		},
 		{
 			"source_path": "dax-msdn-redirects/data-analysis-expressions-dax-reference.md",
-			"redirect_url": "https://docs.microsoft.com/dax/data-analysis-expressions-dax-reference",
+			"redirect_url": "https://docs.microsoft.com/dax/index",
 			"redirect_document_id": true
 		},
 		{
@@ -607,7 +607,7 @@
 		},
 		{
 			"source_path": "dax-msdn-redirects/index.md",
-			"redirect_url": "data-analysis-expressions-dax-reference",
+			"redirect_url": "query-languages/dax/index",
 			"redirect_document_id": true
 		},
 		{
@@ -2717,7 +2717,7 @@
 		},
 		{
 			"source_path": "m-msdn-redirects/index.md",
-			"redirect_url": "power-query-m-reference",
+			"redirect_url": "query-languages/m/index.yml",
 			"redirect_document_id": true
 		},
 		{
@@ -3632,7 +3632,7 @@
 		},
 		{
 			"source_path": "m-msdn-redirects/power-query-m-reference.md",
-			"redirect_url": "https://docs.microsoft.com/powerquery-m/power-query-m-reference",
+			"redirect_url": "https://docs.microsoft.com/powerquery-m/index.yml",
 			"redirect_document_id": true
 		},
 		{
