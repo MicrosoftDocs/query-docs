@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # PERCENTILEX.INC
   
@@ -20,7 +20,7 @@ To return the percentile of numbers in a column, use [PERCENTILE.INC function &#
 PERCENTILEX.INC(<table>, <expression>;, k)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

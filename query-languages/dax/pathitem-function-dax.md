@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # PATHITEM
 Returns the item at the specified *position* from a string resulting from evaluation of a PATH function. Positions are counted from left to right.  
@@ -17,7 +17,7 @@ Returns the item at the specified *position* from a string resulting from evalua
 PATHITEM(<path>, <position>[, <type>])  
 ```
   
-#### Parameters  
+### Parameters  
 path  
 A text string in the form of the results of a PATH function.  
   

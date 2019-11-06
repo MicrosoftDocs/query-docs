@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # ALLCROSSFILTERED
 
@@ -18,7 +18,7 @@ Clear all filters which are applied to a table.
 ALLCROSSFILTERED(<table>)
 ```
   
-#### Parameters  
+### Parameters  
   
 |||  
 |-|-|  

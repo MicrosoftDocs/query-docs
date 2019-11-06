@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # MID
 Returns a string of characters from the middle of a text string, given a starting position and length.  
@@ -17,7 +17,7 @@ Returns a string of characters from the middle of a text string, given a startin
 MID(<text>, <start_num>, <num_chars>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

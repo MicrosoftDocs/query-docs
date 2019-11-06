@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # ODD
 Returns number rounded up to the nearest odd integer.  
@@ -17,7 +17,7 @@ Returns number rounded up to the nearest odd integer.
 ODD(number)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # ENDOFQUARTER
 Returns the last date of the quarter in the current context for the specified column of dates.  
@@ -17,7 +17,7 @@ Returns the last date of the quarter in the current context for the specified co
 ENDOFQUARTER(<dates>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |||  
 |-|-|  

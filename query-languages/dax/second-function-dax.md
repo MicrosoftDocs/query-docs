@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # SECOND
 Returns the seconds of a time value, as a number from 0 to 59.  
@@ -17,7 +17,7 @@ Returns the seconds of a time value, as a number from 0 to 59.
 SECOND(<time>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

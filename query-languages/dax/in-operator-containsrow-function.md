@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # IN Operator / CONTAINSROW function
 Returns TRUE if a row of values exists or contained in a table, otherwise returns FALSE.

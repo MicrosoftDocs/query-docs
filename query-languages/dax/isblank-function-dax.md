@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # ISBLANK
 Checks whether a value is blank, and returns TRUE or FALSE.  
@@ -17,7 +17,7 @@ Checks whether a value is blank, and returns TRUE or FALSE.
 ISBLANK(<value>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

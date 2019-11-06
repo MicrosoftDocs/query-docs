@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # CURRENCY
 Evaluates the argument and returns the result as currency data type.  
@@ -17,7 +17,7 @@ Evaluates the argument and returns the result as currency data type.
 CURRENCY(<value>)  
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term|Definition|  
 |--------|--------------|  

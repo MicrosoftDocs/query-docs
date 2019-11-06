@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # PERCENTILE.EXC
   
@@ -20,7 +20,7 @@ To return the percentile number of an expression evaluated for each row in a tab
 PERCENTILE.EXC(<column>, <k>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

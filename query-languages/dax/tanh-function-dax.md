@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # TANH
 Returns the hyperbolic tangent of a number.  
@@ -17,7 +17,7 @@ Returns the hyperbolic tangent of a number.
 TANH(number)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

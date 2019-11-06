@@ -7,7 +7,7 @@ ms.topic: overview
 ms.article: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # DAX overview
 
@@ -88,7 +88,7 @@ Members of the Sales role will only be able to view data for customers in the US
 
 To learn more, see:   
 [Row-level security (RLS) with Power BI](https://docs.microsoft.com/power-bi/service-admin-rls)   
-[Row filters in Analysis Services](https://docs.microsoft.com/en-us/sql/analysis-services/tabular-models/roles-ssas-tabular)   
+[Row filters in Analysis Services](https://docs.microsoft.com/sql/analysis-services/tabular-models/roles-ssas-tabular)   
 
 
 ## Queries

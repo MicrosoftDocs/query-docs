@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # CONCATENATEX
   
@@ -18,7 +18,7 @@ Concatenates the result of an expression evaluated for each row in a table.
 CONCATENATEX(<table>, <expression>, [delimiter])  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

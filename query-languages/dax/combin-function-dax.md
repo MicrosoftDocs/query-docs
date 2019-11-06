@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # COMBIN
 Returns the number of combinations for a given number of items. Use COMBIN to determine the total possible number of groups for a given number of items.  
@@ -17,7 +17,7 @@ Returns the number of combinations for a given number of items. Use COMBIN to de
 COMBIN(number, number_chosen)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

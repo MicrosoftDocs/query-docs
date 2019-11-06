@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # FORMAT
 Converts a value to text according to the specified format.  
@@ -17,7 +17,7 @@ Converts a value to text according to the specified format.
 FORMAT(<value>, <format_string>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

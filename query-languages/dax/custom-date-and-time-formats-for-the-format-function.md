@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # Custom date and time formats for the FORMAT function
 The following table shows characters you can use to create user-defined date/time formats.  

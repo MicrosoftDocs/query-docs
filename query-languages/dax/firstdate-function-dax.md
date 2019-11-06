@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # FIRSTDATE
 Returns the first date in the current context for the specified column of dates.  
@@ -17,7 +17,7 @@ Returns the first date in the current context for the specified column of dates.
 FIRSTDATE(<dates>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |||  
 |-|-|  

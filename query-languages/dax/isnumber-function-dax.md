@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # ISNUMBER
 Checks whether a value is a number, and returns TRUE or FALSE.  
@@ -17,7 +17,7 @@ Checks whether a value is a number, and returns TRUE or FALSE.
 ISNUMBER(<value>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

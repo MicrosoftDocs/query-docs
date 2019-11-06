@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # COUNTX
 
@@ -18,7 +18,7 @@ Counts the number of rows that contain a non-blank value or an expression that e
 COUNTX(<table>,<expression>)  
 ```
   
-#### Parameters
+### Parameters
   
 |Term|Definition|  
 |--------|--------------|  

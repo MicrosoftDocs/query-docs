@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # NORM.S.DIST
 Returns the standard normal distribution (has a mean of zero and a standard deviation of one).
@@ -18,7 +18,7 @@ Returns the standard normal distribution (has a mean of zero and a standard devi
 NORM.S.DIST(Z, Cumulative)
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

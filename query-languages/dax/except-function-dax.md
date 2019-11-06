@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # EXCEPT
 Returns the rows of one table which do not appear in another table.  
@@ -17,7 +17,7 @@ Returns the rows of one table which do not appear in another table.
 EXCEPT(<table_expression1>, <table_expression2>  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

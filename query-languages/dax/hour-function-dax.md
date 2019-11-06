@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # HOUR
 Returns the hour as a number from 0 (12:00 A.M.) to 23 (11:00 P.M.).  
@@ -17,7 +17,7 @@ Returns the hour as a number from 0 (12:00 A.M.) to 23 (11:00 P.M.).
 HOUR(<datetime>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

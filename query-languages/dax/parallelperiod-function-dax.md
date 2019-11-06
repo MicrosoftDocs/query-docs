@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # PARALLELPERIOD
 Returns a table that contains a column of dates that represents a period parallel to the dates in the specified **dates** column, in the current context, with the dates shifted a number of intervals either forward in time or back in time.  
@@ -17,7 +17,7 @@ Returns a table that contains a column of dates that represents a period paralle
 PARALLELPERIOD(<dates>,<number_of_intervals>,<interval>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |||  
 |-|-|  

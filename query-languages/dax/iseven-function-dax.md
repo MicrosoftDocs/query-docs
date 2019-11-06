@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # ISEVEN
 Returns TRUE if number is even, or FALSE if number is odd.  
@@ -17,7 +17,7 @@ Returns TRUE if number is even, or FALSE if number is odd.
 ISEVEN(number)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

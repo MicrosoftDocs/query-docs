@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # TREATAS
 Applies the result of a table expression as filters to columns from an unrelated table. 
@@ -17,7 +17,7 @@ Applies the result of a table expression as filters to columns from an unrelated
 TREATAS(table_expression, <column>[, <column>[, <column>[,…]]]} )  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

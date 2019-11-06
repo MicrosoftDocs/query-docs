@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # VALUE
 Converts a text string that represents a number to a number.  
@@ -17,7 +17,7 @@ Converts a text string that represents a number to a number.
 VALUE(<text>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

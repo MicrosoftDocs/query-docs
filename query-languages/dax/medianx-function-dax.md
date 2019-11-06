@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # MEDIANX)
   
@@ -20,7 +20,7 @@ To return the median of numbers in a column, use [MEDIAN function &#40;DAX&#41;]
 MEDIANX(<table>, <expression>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

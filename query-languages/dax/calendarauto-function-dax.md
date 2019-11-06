@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # CALENDARAUTO
   
@@ -18,7 +18,7 @@ Returns a table with a single column named “Date” that contains a contiguous
 CALENDARAUTO([fiscal_year_end_month])  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

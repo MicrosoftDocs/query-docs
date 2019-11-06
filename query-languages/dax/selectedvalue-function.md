@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # SELECTEDVALUE
 Returns the value when the context for columnName has been filtered down to one distinct value only. Otherwise returns alternateResult.  
@@ -17,7 +17,7 @@ Returns the value when the context for columnName has been filtered down to one 
 SELECTEDVALUE(<columnName>[, <alternateResult>])  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |----------|--------------|  

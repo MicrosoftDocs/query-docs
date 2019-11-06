@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # TOTALQTD
 Evaluates the value of the **expression** for the dates in the quarter to date, in the current context.  
@@ -17,7 +17,7 @@ Evaluates the value of the **expression** for the dates in the quarter to date, 
 TOTALQTD(<expression>,<dates>[,<filter>])  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Parameter|Definition|  
 |-------------|--------------|  

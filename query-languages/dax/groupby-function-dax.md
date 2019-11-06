@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # GROUPBY
   
@@ -18,7 +18,7 @@ The GROUPBY function is similar to the SUMMARIZE function. However, GROUPBY does
 GROUPBY (<table>, [<groupBy_columnName1>], [<name>, <expression>]… )  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

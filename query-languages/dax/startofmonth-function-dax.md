@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # STARTOFMONTH
 Returns the first date of the month in the current context for the specified column of dates.  
@@ -17,7 +17,7 @@ Returns the first date of the month in the current context for the specified col
 STARTOFMONTH(<dates>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |||  
 |-|-|  

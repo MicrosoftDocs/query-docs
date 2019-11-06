@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # CONFIDENCE.T
 Returns the confidence interval for a population mean, using a Student's t distribution.  
@@ -17,7 +17,7 @@ Returns the confidence interval for a population mean, using a Student's t distr
 CONFIDENCE.T(alpha,standard_dev,size)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

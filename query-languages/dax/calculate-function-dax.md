@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # CALCULATE
 Evaluates an expression in a context that is modified by the specified filters.  
@@ -17,7 +17,7 @@ Evaluates an expression in a context that is modified by the specified filters.
 CALCULATE(<expression>,<filter1>,<filter2>…)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

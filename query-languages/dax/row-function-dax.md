@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # ROW function
 Returns a table with a single row containing values that result from the expressions given to each column.  
@@ -17,7 +17,7 @@ Returns a table with a single row containing values that result from the express
 ROW(<name>, <expression>[[,<name>, <expression>]…])  
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term|Definition|  
 |--------|--------------|  

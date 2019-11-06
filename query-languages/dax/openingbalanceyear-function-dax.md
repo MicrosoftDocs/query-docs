@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # OPENINGBALANCEYEAR
 Evaluates the **expression** at the first date of the year in the current context.  
@@ -17,7 +17,7 @@ Evaluates the **expression** at the first date of the year in the current contex
 OPENINGBALANCEYEAR(<expression>,<dates>[,<filter>][,<year_end_date>])  
 ```
   
-#### Parameters  
+### Parameters  
   
 |||  
 |-|-|  

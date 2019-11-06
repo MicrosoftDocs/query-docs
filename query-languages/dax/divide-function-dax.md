@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # DIVIDE
 Performs division and returns alternate result or BLANK() on division by 0.  
@@ -17,7 +17,7 @@ Performs division and returns alternate result or BLANK() on division by 0.
 DIVIDE(<numerator>, <denominator> [,<alternateresult>])  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

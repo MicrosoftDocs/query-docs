@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # ISSELECTEDMEASURE
 
@@ -21,7 +21,7 @@ Used by expressions for calculation items to determine the measure that is in co
 ISSELECTEDMEASURE( M1, M2, ... )  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

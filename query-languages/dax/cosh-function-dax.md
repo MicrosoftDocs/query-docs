@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # COSH
 Returns the hyperbolic cosine of a number.  
@@ -17,7 +17,7 @@ Returns the hyperbolic cosine of a number.
 COSH(number)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

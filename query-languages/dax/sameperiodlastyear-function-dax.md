@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # SAMEPERIODLASTYEAR
 Returns a table that contains a column of dates shifted one year back in time from the dates in the specified **dates** column, in the current context.  
@@ -17,7 +17,7 @@ Returns a table that contains a column of dates shifted one year back in time fr
 SAMEPERIODLASTYEAR(<dates>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |||  
 |-|-|  

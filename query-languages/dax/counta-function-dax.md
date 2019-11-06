@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # COUNTA
 
@@ -18,7 +18,7 @@ The COUNTA function counts the number of cells in a column that are not empty.
 COUNTA(<column>)  
 ```
   
-#### Parameters
+### Parameters
   
 |Term|Definition|  
 |--------|--------------|  

@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # PRODUCTX
 
@@ -20,7 +20,7 @@ To return the product of the numbers in a column, use [PRODUCT function &#40;DAX
 PRODUCTX(<table>, <expression>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

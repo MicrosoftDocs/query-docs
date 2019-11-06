@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # RANK.EQ
 Returns the ranking of a number in a list of numbers.  
@@ -17,7 +17,7 @@ Returns the ranking of a number in a list of numbers.
 RANK.EQ(<value>, <columnName>[, <order>])  
 ```
   
-#### Parameters  
+### Parameters  
 value  
 Any DAX expression that returns a single scalar value whose rank is to be found. The expression is to be evaluated exactly once, before the function is evaluated, and it’s value passed to the argument list.  
   

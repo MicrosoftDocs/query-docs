@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # SUBSTITUTE
 Replaces existing text with new text in a text string.  
@@ -17,7 +17,7 @@ Replaces existing text with new text in a text string.
 SUBSTITUTE(<text>, <old_text>, <new_text>, <instance_num>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

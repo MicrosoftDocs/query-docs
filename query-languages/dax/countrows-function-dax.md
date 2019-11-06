@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # COUNTROWS
 The COUNTROWS function counts the number of rows in the specified table, or in a table defined by an expression.  
@@ -17,7 +17,7 @@ The COUNTROWS function counts the number of rows in the specified table, or in a
 COUNTROWS(<table>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

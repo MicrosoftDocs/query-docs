@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # FACT
 Returns the factorial of a number, equal to the series 1*2\*3\*...\* , ending in the given number.  
@@ -17,7 +17,7 @@ Returns the factorial of a number, equal to the series 1*2\*3\*...\* , ending in
 FACT(<number>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

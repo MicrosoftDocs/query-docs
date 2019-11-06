@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # DISTINCT (table)
 
@@ -18,7 +18,7 @@ Returns a table by removing duplicate rows from another table or expression.
 DISTINCT(<table>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

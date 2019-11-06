@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # ENDOFYEAR
 Returns the last date of the year in the current context for the specified column of dates.  
@@ -17,7 +17,7 @@ Returns the last date of the year in the current context for the specified colum
 ENDOFYEAR(<dates> [,<year_end_date>])  
 ```
   
-#### Parameters  
+### Parameters  
   
 |||  
 |-|-|  

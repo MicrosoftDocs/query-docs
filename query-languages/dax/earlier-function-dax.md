@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # EARLIER
 Returns the current value of the specified column in an outer evaluation pass of the mentioned column.  
@@ -21,7 +21,7 @@ EARLIER is mostly used in the context of calculated columns.
 EARLIER(<column>, <number>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

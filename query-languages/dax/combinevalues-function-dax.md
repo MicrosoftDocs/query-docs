@@ -5,7 +5,7 @@ ms.date: 12/10/2018
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # COMBINEVALUES
 The COMBINEVALUES function joins two or more text strings into one text string. The primary purpose of this function is to support multi-column relationships in DirectQuery models, see **Remarks** for details.  
@@ -16,7 +16,7 @@ The COMBINEVALUES function joins two or more text strings into one text string. 
 COMBINEVALUES(<delimiter>, <expression>, <expression>[, <expression>]…)
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

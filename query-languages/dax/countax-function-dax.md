@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # COUNTAX
 
@@ -18,7 +18,7 @@ The COUNTAX function counts nonblank results when evaluating the result of an ex
 COUNTAX(<table>,<expression>)  
 ```
   
-#### Parameters
+### Parameters
   
 |Term|Definition|  
 |--------|--------------|  

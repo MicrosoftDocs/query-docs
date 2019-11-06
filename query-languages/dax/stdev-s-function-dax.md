@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # STDEV.S
 Returns the standard deviation of a sample population.  
@@ -17,7 +17,7 @@ Returns the standard deviation of a sample population.
 STDEV.S(<ColumnName>)  
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term|Definition|  
 |--------|--------------|  

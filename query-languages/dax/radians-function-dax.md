@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # RADIANS
 Converts degrees to radians.  
@@ -17,7 +17,7 @@ Converts degrees to radians.
 RADIANS(angle)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

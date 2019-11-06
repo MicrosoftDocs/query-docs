@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # CLOSINGBALANCEQUARTER
 Evaluates the **expression** at the last date of the quarter in the current context.  
@@ -17,7 +17,7 @@ Evaluates the **expression** at the last date of the quarter in the current cont
 CLOSINGBALANCEQUARTER(<expression>,<dates>[,<filter>])  
 ```
   
-#### Parameters  
+### Parameters  
   
 |||  
 |-|-|  

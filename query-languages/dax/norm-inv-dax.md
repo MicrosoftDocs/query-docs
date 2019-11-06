@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # NORM.INV
 The inverse of the normal cumulative distribution for the specified mean and standard deviation.
@@ -18,7 +18,7 @@ The inverse of the normal cumulative distribution for the specified mean and sta
 NORM.INV(Probability, Mean, Standard_dev)
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

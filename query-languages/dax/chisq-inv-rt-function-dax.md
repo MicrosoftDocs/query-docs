@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # CHISQ.INV.RT
 Returns the inverse of the right-tailed probability of the chi-squared distribution.  
@@ -19,7 +19,7 @@ If probability = CHISQ.DIST.RT(x,...), then CHISQ.INV.RT(probability,...) = x. U
 CHISQ.INV.RT(probability,deg_freedom)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

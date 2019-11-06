@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # CLOSINGBALANCEMONTH
 Evaluates the **expression** at the last date of the month in the current context.  
@@ -17,7 +17,7 @@ Evaluates the **expression** at the last date of the month in the current contex
 CLOSINGBALANCEMONTH(<expression>,<dates>[,<filter>])  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Parameter|Definition|  
 |-------------|--------------|  

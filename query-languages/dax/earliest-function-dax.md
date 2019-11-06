@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # EARLIEST
 Returns the current value of the specified column in an outer evaluation pass of the specified column.  
@@ -17,7 +17,7 @@ Returns the current value of the specified column in an outer evaluation pass of
 EARLIEST(<column>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # XIRR
   
@@ -18,7 +18,7 @@ Returns the internal rate of return for a schedule of cash flows that is not nec
 XIRR(<table>, <values>, <dates>, [guess])  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

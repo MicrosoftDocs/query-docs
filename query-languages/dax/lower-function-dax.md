@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # LOWER
 Converts all letters in a text string to lowercase.  
@@ -17,7 +17,7 @@ Converts all letters in a text string to lowercase.
 LOWER(<text>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

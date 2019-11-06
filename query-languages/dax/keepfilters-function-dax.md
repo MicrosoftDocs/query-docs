@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # KEEPFILTERS
 Modifies how filters are applied while evaluating a CALCULATE or CALCULATETABLE function.  
@@ -17,7 +17,7 @@ Modifies how filters are applied while evaluating a CALCULATE or CALCULATETABLE 
 KEEPFILTERS(<expression>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

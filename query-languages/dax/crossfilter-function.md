@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # CROSSFILTER
 Specifies the cross-filtering direction to be used in a calculation for a relationship that exists between two columns.  
@@ -17,7 +17,7 @@ Specifies the cross-filtering direction to be used in a calculation for a relati
 CROSSFILTER(<columnName1>, <columnName2>, <direction>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

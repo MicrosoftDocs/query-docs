@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # MEDIAN
   
@@ -20,7 +20,7 @@ To return the median of an expresssion evaluated for each row in a table, use [M
 MEDIAN(<column>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

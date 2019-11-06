@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # TIMEVALUE function
 Converts a time in text format to a time in datetime format.  
@@ -17,7 +17,7 @@ Converts a time in text format to a time in datetime format.
 TIMEVALUE(time_text)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |||  
 |-|-|  

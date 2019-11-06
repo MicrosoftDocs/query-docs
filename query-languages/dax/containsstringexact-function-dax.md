@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # CONTAINSSTRINGEXACT
 
@@ -18,7 +18,7 @@ Returns TRUE or FALSE indicating whether one string contains another string.
 CONTAINSSTRINGEXACT(<within_text>, <find_text>)
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

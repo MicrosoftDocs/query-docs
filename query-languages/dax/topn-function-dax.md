@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # TOPN
 Returns the top N rows of the specified table.  
@@ -17,7 +17,7 @@ Returns the top N rows of the specified table.
 TOPN(<n_value>, <table>, <orderBy_expression>, [<order>[, <orderBy_expression>, [<order>]]…])  
 ```
   
-#### Parameters  
+### Parameters  
 n_value  
 The number of rows to return. It is any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context).  
   
