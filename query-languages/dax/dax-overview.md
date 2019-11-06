@@ -1,13 +1,12 @@
 ---
 title: "DAX overview | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 04/19/2019
+ms.date: 11/07/2019
 ms.reviewer: owend
 ms.topic: overview
 ms.article: reference
 author: minewiskan
 ms.author: owend
-
 ---
 # DAX overview
 
