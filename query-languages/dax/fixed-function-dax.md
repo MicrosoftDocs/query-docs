@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # FIXED
 Rounds a number to the specified number of decimals and returns the result as text. You can specify that the result be returned with or without commas.  
@@ -17,7 +17,7 @@ Rounds a number to the specified number of decimals and returns the result as te
 FIXED(<number>, <decimals>, <no_commas>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

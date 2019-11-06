@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # REPLACE
 REPLACE replaces part of a text string, based on the number of characters you specify, with a different text string.  
@@ -17,7 +17,7 @@ REPLACE replaces part of a text string, based on the number of characters you sp
 REPLACE(<old_text>, <start_num>, <num_chars>, <new_text>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

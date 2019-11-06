@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # SUMX
 Returns the sum of an expression evaluated for each row in a table.  
@@ -17,7 +17,7 @@ Returns the sum of an expression evaluated for each row in a table.
 SUMX(<table>, <expression>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

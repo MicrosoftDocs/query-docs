@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # MAXX
 
@@ -18,7 +18,7 @@ Evaluates an expression for each row of a table and returns the largest value.
 MAXX(<table>,<expression>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

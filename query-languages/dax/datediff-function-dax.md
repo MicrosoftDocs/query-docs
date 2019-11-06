@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # DATEDIFF
   
@@ -18,7 +18,7 @@ Returns the count of interval boundaries crossed between two dates.
 DATEDIFF(<start_date>, <end_date>, <interval>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

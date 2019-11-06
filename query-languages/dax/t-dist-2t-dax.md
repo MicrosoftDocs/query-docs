@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # T.DIST.2T
 Returns the two-tailed Student's t-distribution.
@@ -18,7 +18,7 @@ Returns the two-tailed Student's t-distribution.
 T.DIST.2T(X,Deg_freedom)
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

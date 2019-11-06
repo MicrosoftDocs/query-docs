@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # VAR.P
 Returns the variance of the entire population.  
@@ -17,7 +17,7 @@ Returns the variance of the entire population.
 VAR.P(<columnName>)  
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term|Definition|  
 |--------|--------------|  

@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # APPROXIMATEDISTINCTCOUNT
 
@@ -21,7 +21,7 @@ Returns the *approximate* number of rows that contain distinct values in a colum
 APPROXIMATEDISTINCTCOUNT(<columnName>)
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term  |Description|  
 |---------|---------|

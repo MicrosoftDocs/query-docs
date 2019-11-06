@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # NOT
 Changes FALSE to TRUE, or TRUE to FALSE.  
@@ -17,7 +17,7 @@ Changes FALSE to TRUE, or TRUE to FALSE.
 NOT(<logical>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

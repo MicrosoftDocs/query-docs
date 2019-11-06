@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # USERELATIONSHIP
 Specifies the relationship to be used in a specific calculation as the one that exists between columnName1 and columnName2.  
@@ -17,7 +17,7 @@ Specifies the relationship to be used in a specific calculation as the one that 
 USERELATIONSHIP(<columnName1>,<columnName2>)  
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term|Definition|  
 |--------|--------------|  

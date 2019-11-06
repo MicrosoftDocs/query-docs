@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # LEFT
 Returns the specified number of characters from the start of a text string.  
@@ -17,7 +17,7 @@ Returns the specified number of characters from the start of a text string.
 LEFT(<text>, <num_chars>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

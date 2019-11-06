@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # INTERSECT
 Returns the row intersection of two tables, retaining duplicates.  
@@ -17,7 +17,7 @@ Returns the row intersection of two tables, retaining duplicates.
 INTERSECT(<table_expression1>, <table_expression2>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

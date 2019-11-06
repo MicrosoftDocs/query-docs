@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # SELECTCOLUMNS
 Adds calculated columns to the given table or table expression.  
@@ -17,7 +17,7 @@ Adds calculated columns to the given table or table expression.
 SELECTCOLUMNS(<table>, <name>, <scalar_expression> [, <name>, <scalar_expression>]…) 
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term|Definition|  
 |--------|--------------|  

@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # REPT
 Repeats text a given number of times. Use REPT to fill a cell with a number of instances of a text string.  
@@ -17,7 +17,7 @@ Repeats text a given number of times. Use REPT to fill a cell with a number of i
 REPT(<text>, <num_times>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

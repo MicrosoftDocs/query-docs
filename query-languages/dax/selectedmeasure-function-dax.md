@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # SELECTEDMEASURE
 
@@ -21,7 +21,7 @@ Used by expressions for calculation items to reference the measure that is in co
 SELECTEDMEASURE() 
 ```
   
-#### Parameters  
+### Parameters  
   
 None  
   

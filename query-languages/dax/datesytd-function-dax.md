@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # DATESYTD
 Returns a table that contains a column of the dates for the year to date, in the current context.  
@@ -17,7 +17,7 @@ Returns a table that contains a column of the dates for the year to date, in the
 DATESYTD(<dates> [,<year_end_date>])  
 ```
   
-#### Parameters  
+### Parameters  
   
 |||  
 |-|-|  

@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # MROUND
 Returns a number rounded to the desired multiple.  
@@ -17,7 +17,7 @@ Returns a number rounded to the desired multiple.
 MROUND(<number>, <multiple>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

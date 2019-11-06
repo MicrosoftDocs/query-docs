@@ -7,7 +7,7 @@ ms.topic: overview
 ms.article: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # DAX overview
 

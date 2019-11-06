@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # DISTINCTCOUNT
 Counts the number of distinct values in a column.  
@@ -17,7 +17,7 @@ Counts the number of distinct values in a column.
 DISTINCTCOUNT(<column>)  
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term  |Description|  
 |---------|---------|

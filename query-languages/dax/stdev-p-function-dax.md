@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # STDEV.P
 Returns the standard deviation of the entire population.  
@@ -17,7 +17,7 @@ Returns the standard deviation of the entire population.
 STDEV.P(<ColumnName>)  
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term|Definition|  
 |--------|--------------|  

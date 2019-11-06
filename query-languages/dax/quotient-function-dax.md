@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # QUOTIENT
 Performs division and returns only the integer portion of the division result. Use this function when you want to discard the remainder of division.  
@@ -17,7 +17,7 @@ Performs division and returns only the integer portion of the division result. U
 QUOTIENT(<numerator>, <denominator>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

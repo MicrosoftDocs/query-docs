@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # MONTH
 Returns the month as a number from 1 (January) to 12 (December).  
@@ -17,7 +17,7 @@ Returns the month as a number from 1 (January) to 12 (December).
 MONTH(<datetime>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

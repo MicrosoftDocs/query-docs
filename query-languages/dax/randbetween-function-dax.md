@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # RANDBETWEEN
 Returns a random number in the range between two numbers you specify.  
@@ -17,7 +17,7 @@ Returns a random number in the range between two numbers you specify.
 RANDBETWEEN(<bottom>,<top>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

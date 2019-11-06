@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # ISCROSSFILTERED
 Returns TRUE when *columnName* or another column in the same or related table is being filtered.  
@@ -17,7 +17,7 @@ Returns TRUE when *columnName* or another column in the same or related table is
 ISCROSSFILTERED(<columnName>)  
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term|Definition|  
 |--------|--------------|  

@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # OPENINGBALANCEMONTH
 Evaluates the **expression** at the first date of the month in the current context.  
@@ -17,7 +17,7 @@ Evaluates the **expression** at the first date of the month in the current conte
 OPENINGBALANCEMONTH(<expression>,<dates>[,<filter>])  
 ```
   
-#### Parameters  
+### Parameters  
   
 |||  
 |-|-|  

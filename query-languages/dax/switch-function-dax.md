@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # SWITCH
 Evaluates an expression against a list of values and returns one of multiple possible result expressions.  
@@ -17,7 +17,7 @@ Evaluates an expression against a list of values and returns one of multiple pos
 SWITCH(<expression>, <value>, <result>[, <value>, <result>]…[, <else>])  
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term|Definition|  
 |--------|--------------|  

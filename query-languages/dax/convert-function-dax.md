@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # CONVERT
 
@@ -18,7 +18,7 @@ Converts an expression of one data type to another.
 CONVERT(<Expression>, <Datatype>)  
 ```
   
-#### Parameters
+### Parameters
   
 |Term|Definition|  
 |--------|--------------|  

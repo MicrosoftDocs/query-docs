@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # EXP
 Returns e raised to the power of a given number. The constant e equals 2.71828182845904, the base of the natural logarithm.  
@@ -17,7 +17,7 @@ Returns e raised to the power of a given number. The constant e equals 2.7182818
 EXP(<number>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # OR
 Checks whether one of the arguments is TRUE to return TRUE. The function returns FALSE if both arguments are FALSE.  
@@ -17,7 +17,7 @@ Checks whether one of the arguments is TRUE to return TRUE. The function returns
 OR(<logical1>,<logical2>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

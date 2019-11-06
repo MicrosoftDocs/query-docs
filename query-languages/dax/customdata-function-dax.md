@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # CUSTOMDATA
 Returns the content of the **CustomData** property in the connection string.  

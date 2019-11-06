@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # DATESQTD
 Returns a table that contains a column of the dates for the quarter to date, in the current context.  
@@ -17,7 +17,7 @@ Returns a table that contains a column of the dates for the quarter to date, in 
 DATESQTD(<dates>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |||  
 |-|-|  

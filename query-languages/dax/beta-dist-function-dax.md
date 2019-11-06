@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # BETA.DIST
 Returns the beta distribution. The beta distribution is commonly used to study variation in the percentage of something across samples, such as the fraction of the day people spend watching television.  
@@ -17,7 +17,7 @@ Returns the beta distribution. The beta distribution is commonly used to study v
 BETA.DIST(x,alpha,beta,cumulative,[A],[B])  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

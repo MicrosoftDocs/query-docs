@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # AND
 Checks whether both arguments are TRUE, and returns TRUE if both arguments are TRUE. Otherwise returns false.  
@@ -17,7 +17,7 @@ Checks whether both arguments are TRUE, and returns TRUE if both arguments are T
 AND(<logical1>,<logical2>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

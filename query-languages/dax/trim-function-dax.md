@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # TRIM
 Removes all spaces from text except for single spaces between words.  
@@ -17,7 +17,7 @@ Removes all spaces from text except for single spaces between words.
 TRIM(<text>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

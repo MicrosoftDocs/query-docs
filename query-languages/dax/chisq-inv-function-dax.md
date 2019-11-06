@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # CHISQ.INV
 Returns the inverse of the left-tailed probability of the chi-squared distribution.  
@@ -19,7 +19,7 @@ The chi-squared distribution is commonly used to study variation in the percenta
 CHISQ.INV(probability,deg_freedom)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

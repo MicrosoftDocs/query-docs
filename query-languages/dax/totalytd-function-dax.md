@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # TOTALYTD
 Evaluates the year-to-date value of the **expression** in the current context.  
@@ -17,7 +17,7 @@ Evaluates the year-to-date value of the **expression** in the current context.
 TOTALYTD(<expression>,<dates>[,<filter>][,<year_end_date>])  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Parameter|Definition|  
 |-------------|--------------|  

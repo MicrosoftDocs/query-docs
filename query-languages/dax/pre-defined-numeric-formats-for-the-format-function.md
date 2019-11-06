@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # Pre-Defined Numeric Formats for the FORMAT function
 The following table identifies the predefined numeric format names. These may be used by name as the style argument for the Format function.  

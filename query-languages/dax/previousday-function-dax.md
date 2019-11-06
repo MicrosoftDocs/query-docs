@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # PREVIOUSDAY
 Returns a table that contains a column of all dates representing the day that is previous to the first date in the **dates** column, in the current context.  
@@ -17,7 +17,7 @@ Returns a table that contains a column of all dates representing the day that is
 PREVIOUSDAY(<dates>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |||  
 |-|-|  

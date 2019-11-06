@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # IN
 Returns True if the scalar value shows up in at least one row of the input relation.
@@ -17,7 +17,7 @@ Returns True if the scalar value shows up in at least one row of the input relat
 IN 
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

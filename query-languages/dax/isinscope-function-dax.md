@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # ISINSCOPE
 Returns true when the specified column is the level in a hierarchy of levels.
@@ -17,7 +17,7 @@ Returns true when the specified column is the level in a hierarchy of levels.
 ISINSCOPE(<columnName>)
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

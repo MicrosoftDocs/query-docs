@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # MINX
 
@@ -18,7 +18,7 @@ Returns the smallest value that results from evaluating an expression for each r
 MINX(<table>, < expression>)  
 ```
   
-#### Parameters
+### Parameters
   
 |Term|Definition|  
 |--------|--------------|  

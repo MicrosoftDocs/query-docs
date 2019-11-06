@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # SAMPLE
 Returns a sample of N rows from the specified table.  
@@ -17,7 +17,7 @@ Returns a sample of N rows from the specified table.
 SAMPLE(<n_value>, <table>, <orderBy_expression>, [<order>[, <orderBy_expression>, [<order>]]…])  
 ```
   
-#### Parameters  
+### Parameters  
 n_value  
 The number of rows to return. It is any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context). If a non-integer value (or expression) is entered, the result is cast as an integer.  
   

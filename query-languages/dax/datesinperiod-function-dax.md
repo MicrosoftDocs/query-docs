@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # DATESINPERIOD
 Returns a table that contains a column of dates that begins with the **start_date** and continues for the specified **number_of_intervals**.  
@@ -17,7 +17,7 @@ Returns a table that contains a column of dates that begins with the **start_dat
 DATESINPERIOD(<dates>,<start_date>,<number_of_intervals>,<interval>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |||  
 |-|-|  

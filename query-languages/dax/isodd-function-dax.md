@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # ISODD
 Returns TRUE if number is odd, or FALSE if number is even.  
@@ -17,7 +17,7 @@ Returns TRUE if number is odd, or FALSE if number is even.
 ISODD(number)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

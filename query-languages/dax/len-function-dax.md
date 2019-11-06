@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # LEN
 Returns the number of characters in a text string.  
@@ -17,7 +17,7 @@ Returns the number of characters in a text string.
 LEN(<text>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

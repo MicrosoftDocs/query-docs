@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # GEOMEANX
   
@@ -20,7 +20,7 @@ To return the geometric mean of the numbers in a column, use [GEOMEAN function &
 GEOMEANX(<table>, <expression>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

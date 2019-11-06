@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # DAY
 Returns the day of the month, a number from 1 to 31.  
@@ -17,7 +17,7 @@ Returns the day of the month, a number from 1 to 31.
 DAY(<date>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

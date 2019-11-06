@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # PI
 Returns the value of Pi, 3.14159265358979, accurate to 15 digits.  

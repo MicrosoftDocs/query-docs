@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # SUMMARIZECOLUMNS
 Returns a summary table over a set of groups.  
@@ -17,7 +17,7 @@ Returns a summary table over a set of groups.
 SUMMARIZECOLUMNS( <groupBy_columnName> [, < groupBy_columnName >]…, [<filterTable>]…[, <name>, <expression>]…)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  
@@ -71,7 +71,7 @@ IGNORE(<expression>)
 SUMMARIZECOLUMNS(<groupBy_columnName>[, < groupBy_columnName >]…, [<filterTable>]…[, <name>, IGNORE(…)]…)
 ```  
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  
@@ -189,7 +189,7 @@ The addition of the ROLLUPADDISSUBTOTAL() syntax modifies the behavior of the SU
 ```dax
 ROLLUPADDISSUBTOTAL ( [<filter> …, ] <groupBy_columnName>, <isSubtotal_columnName>[, <filter> …][, <groupBy_columnName >, <isSubtotal_columnName>[, <filter> …]…] ) 
 ```  
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  
@@ -277,7 +277,7 @@ ROLLUPGROUP(<groupBy_columnName>, <groupBy_columnName>)
 ROLLUPADDISSUBTOTAL( ROLLUPGROUP(…), isSubtotal_columnName[, <groupBy_columnName>…] )
 ``` 
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

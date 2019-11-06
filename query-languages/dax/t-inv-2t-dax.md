@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # T.INV.2T
 Returns the two-tailed inverse of the Student's t-distribution.
@@ -18,7 +18,7 @@ Returns the two-tailed inverse of the Student's t-distribution.
 T.INV.2T(Probability,Deg_freedom)
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

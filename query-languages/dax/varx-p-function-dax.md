@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # VARX.P
 Returns the variance of the entire population.  
@@ -17,7 +17,7 @@ Returns the variance of the entire population.
 VARX.P(<table>, <expression>)  
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term|Definition|  
 |--------|--------------|  

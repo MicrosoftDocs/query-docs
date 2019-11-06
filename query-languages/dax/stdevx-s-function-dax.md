@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # STDEVX.S
 Returns the standard deviation of a sample population.  
@@ -17,7 +17,7 @@ Returns the standard deviation of a sample population.
 STDEVX.S(<table>, <expression>)  
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term|Definition|  
 |--------|--------------|  

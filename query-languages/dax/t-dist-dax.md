@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # T.DIST
 Returns the Student's left-tailed t-distribution.
@@ -18,7 +18,7 @@ Returns the Student's left-tailed t-distribution.
 T.DIST(X,Deg_freedom,Cumulative)
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  
