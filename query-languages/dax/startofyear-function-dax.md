@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # STARTOFYEAR
 Returns the first date of the year in the current context for the specified column of dates.  
@@ -17,7 +17,7 @@ Returns the first date of the year in the current context for the specified colu
 STARTOFYEAR(<dates>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

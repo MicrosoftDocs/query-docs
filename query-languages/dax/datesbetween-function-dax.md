@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # DATESBETWEEN
 Returns a table that contains a column of dates that begins with the **start_date** and continues until the **end_date**.  
@@ -17,7 +17,7 @@ Returns a table that contains a column of dates that begins with the **start_dat
 DATESBETWEEN(<dates>,<start_date>,<end_date>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |||  
 |-|-|  

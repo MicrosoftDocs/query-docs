@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # CODE
 Returns a numeric code for the first character in a text string. The returned code corresponds to the character set used by your computer.  
@@ -22,7 +22,7 @@ Returns a numeric code for the first character in a text string. The returned co
 CODE(text)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

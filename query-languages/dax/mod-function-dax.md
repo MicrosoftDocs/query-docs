@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # MOD
 Returns the remainder after a number is divided by a divisor. The result always has the same sign as the divisor.  
@@ -17,7 +17,7 @@ Returns the remainder after a number is divided by a divisor. The result always 
 MOD(<number>, <divisor>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # HASONEFILTER
 Returns **TRUE** when the number of directly filtered values on *columnName* is one; otherwise returns **FALSE**.  
@@ -17,7 +17,7 @@ Returns **TRUE** when the number of directly filtered values on *columnName* is 
 HASONEFILTER(<columnName>)  
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term|Definition|  
 |--------|--------------|  

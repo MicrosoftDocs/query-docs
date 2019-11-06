@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # POWER
 Returns the result of a number raised to a power.  
@@ -17,7 +17,7 @@ Returns the result of a number raised to a power.
 POWER(<number>, <power>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

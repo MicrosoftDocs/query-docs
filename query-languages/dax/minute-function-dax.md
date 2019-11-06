@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # MINUTE
 Returns the minute as a number from 0 to 59, given a date and time value.  
@@ -17,7 +17,7 @@ Returns the minute as a number from 0 to 59, given a date and time value.
 MINUTE(<datetime>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

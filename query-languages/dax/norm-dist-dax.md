@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # NORM.DIST
 Returns the normal distribution for the specified mean and standard deviation. 
@@ -18,7 +18,7 @@ Returns the normal distribution for the specified mean and standard deviation.
 NORM.DIST(X, Mean, Standard_dev, Cumulative)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

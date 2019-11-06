@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # SUM
 Adds all the numbers in a column.  
@@ -17,7 +17,7 @@ Adds all the numbers in a column.
 SUM(<column>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

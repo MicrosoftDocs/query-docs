@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # ISNONTEXT
 Checks if a value is not text (blank cells are not text), and returns TRUE or FALSE.  
@@ -17,7 +17,7 @@ Checks if a value is not text (blank cells are not text), and returns TRUE or FA
 ISNONTEXT(<value>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

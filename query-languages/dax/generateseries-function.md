@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # GENERATESERIES
 Returns a single column table containing the values of an arithmetic series, that is, a sequence of values in which each differs from the preceding by a constant quantity. The name of the column returned is Value.  
@@ -17,7 +17,7 @@ Returns a single column table containing the values of an arithmetic series, tha
 GENERATESERIES(<startValue>, <endValue>[, <incrementValue>])
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

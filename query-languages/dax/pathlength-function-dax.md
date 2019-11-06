@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # PATHLENGTH
 Returns the number of parents to the specified item in a given PATH result, including self.  
@@ -17,7 +17,7 @@ Returns the number of parents to the specified item in a given PATH result, incl
 PATHLENGTH(<path>)  
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term|Definition|  
 |--------|--------------|  

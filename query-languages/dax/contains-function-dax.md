@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # CONTAINS
 Returns true if values for all referred columns exist, or are contained, in those columns; otherwise, the function returns false.  
@@ -17,7 +17,7 @@ Returns true if values for all referred columns exist, or are contained, in thos
 CONTAINS(<table>, <columnName>, <value>[, <columnName>, <value>]…)  
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term|Definition|  
 |--------|--------------|  

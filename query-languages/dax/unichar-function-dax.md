@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # UNICHAR
 
@@ -18,7 +18,7 @@ Returns the Unicode character referenced by the numeric value.
 UNICHAR(number)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

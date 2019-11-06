@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # ROUNDUP
 Rounds a number up, away from 0 (zero).  
@@ -17,7 +17,7 @@ Rounds a number up, away from 0 (zero).
 ROUNDUP(<number>, <num_digits>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

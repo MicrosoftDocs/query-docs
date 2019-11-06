@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # LASTDATE
 Returns the last date in the current context for the specified column of dates.  
@@ -17,7 +17,7 @@ Returns the last date in the current context for the specified column of dates.
 LASTDATE(<dates>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

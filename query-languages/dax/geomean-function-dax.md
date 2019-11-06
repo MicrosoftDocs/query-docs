@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # GEOMEAN
   
@@ -20,7 +20,7 @@ To return the geometric mean of an expression evaluated for each row in a table,
 GEOMEAN(<column>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

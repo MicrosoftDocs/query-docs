@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # LN
 Returns the natural logarithm of a number. Natural logarithms are based on the constant e (2.71828182845904).  
@@ -17,7 +17,7 @@ Returns the natural logarithm of a number. Natural logarithms are based on the c
 LN(<number>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

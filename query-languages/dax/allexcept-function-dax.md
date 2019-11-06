@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # ALLEXCEPT
 Removes all context filters in the table except filters that have been applied to the specified columns.  
@@ -17,7 +17,7 @@ Removes all context filters in the table except filters that have been applied t
 ALLEXCEPT(<table>,<column>[,<column>[,…]])  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

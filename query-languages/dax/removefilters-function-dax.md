@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # REMOVEFILTERS
 
@@ -18,7 +18,7 @@ Clear filters from the specified tables or columns.
 REMOVEFILTERS([<table> | <column>[, <column>[, <column>[,…]]]])
 ```
   
-#### Parameters
+### Parameters
   
 |Term|Definition|  
 |--------|--------------|  

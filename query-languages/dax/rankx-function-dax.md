@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # RANKX
 Returns the ranking of a number in a list of numbers for each row in the *table* argument.  
@@ -17,7 +17,7 @@ Returns the ranking of a number in a list of numbers for each row in the *table*
 RANKX(<table>, <expression>[, <value>[, <order>[, <ties>]]])  
 ```
   
-#### Parameters  
+### Parameters  
 table  
 Any DAX expression that returns a table of data over which the expression is evaluated.  
   

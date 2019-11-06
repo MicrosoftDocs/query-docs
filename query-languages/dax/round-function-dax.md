@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # ROUND
 Rounds a number to the specified number of digits.  
@@ -17,7 +17,7 @@ Rounds a number to the specified number of digits.
 ROUND(<number>, <num_digits>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

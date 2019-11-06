@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # AVERAGEA
 Returns the average (arithmetic mean) of the values in a column. Handles text and non-numeric values.  
@@ -17,7 +17,7 @@ Returns the average (arithmetic mean) of the values in a column. Handles text an
 AVERAGEA(<column>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

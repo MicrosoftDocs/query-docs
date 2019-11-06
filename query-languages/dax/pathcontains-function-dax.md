@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # PATHCONTAINS
 Returns **TRUE** if the specified *item* exists within the specified *path*.  
@@ -17,7 +17,7 @@ Returns **TRUE** if the specified *item* exists within the specified *path*.
 PATHCONTAINS(<path>, <item>)  
 ```
   
-#### Parameters  
+### Parameters  
 path  
 A string created as the result of evaluating a PATH function.  
   

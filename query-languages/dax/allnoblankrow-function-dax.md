@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: "owend"
-manager: kfile
+
 ---
 # ALLNOBLANKROW
 From the parent table of a relationship, returns all rows but the blank row, or all distinct values of a column but the blank row, and disregards any context filters that might exist.  
@@ -17,7 +17,7 @@ From the parent table of a relationship, returns all rows but the blank row, or 
 ALLNOBLANKROW( {<table> | <column>[, <column>[, <column>[,…]]]} ) 
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

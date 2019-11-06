@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # SQRTPI
 Returns the square root of (number * pi).  
@@ -17,7 +17,7 @@ Returns the square root of (number * pi).
 SQRTPI(number)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

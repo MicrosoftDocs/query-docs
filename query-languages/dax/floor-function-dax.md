@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # FLOOR
 Rounds a number down, toward zero, to the nearest multiple of significance.  
@@ -17,7 +17,7 @@ Rounds a number down, toward zero, to the nearest multiple of significance.
 FLOOR(<number>, <significance>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

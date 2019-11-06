@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # LOG10
 Returns the base-10 logarithm of a number.  
@@ -17,7 +17,7 @@ Returns the base-10 logarithm of a number.
 LOG10(<number>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

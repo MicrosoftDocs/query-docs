@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # MAX
 
@@ -22,7 +22,7 @@ MAX(<column>)
 MAX(<expression1>, <expression2>)
 ```
   
-#### Parameters
+### Parameters
   
 |Term|Definition|  
 |--------|--------------|  

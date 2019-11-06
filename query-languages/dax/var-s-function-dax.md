@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # VAR.S
 Returns the variance of a sample population.  
@@ -17,7 +17,7 @@ Returns the variance of a sample population.
 VAR.S(<columnName>)  
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term|Definition|  
 |--------|--------------|  

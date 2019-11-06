@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # PREVIOUSYEAR
 Returns a table that contains a column of all dates from the previous year, given the last date in the **dates** column, in the current context.  
@@ -17,7 +17,7 @@ Returns a table that contains a column of all dates from the previous year, give
 PREVIOUSYEAR(<dates>[,<year_end_date>])  
 ```
   
-#### Parameters  
+### Parameters  
   
 |||  
 |-|-|  

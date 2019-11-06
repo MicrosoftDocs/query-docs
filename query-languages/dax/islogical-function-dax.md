@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # ISLOGICAL
 Checks whether a value is a logical value, (TRUE or FALSE), and returns TRUE or FALSE.  
@@ -17,7 +17,7 @@ Checks whether a value is a logical value, (TRUE or FALSE), and returns TRUE or 
 ISLOGICAL(<value>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

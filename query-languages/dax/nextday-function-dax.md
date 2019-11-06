@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # NEXTDAY
 Returns a table that contains a column of all dates from the next day, based on the first date specified in the **dates** column in the current context.  
@@ -17,7 +17,7 @@ Returns a table that contains a column of all dates from the next day, based on 
 NEXTDAY(<dates>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |||  
 |-|-|  

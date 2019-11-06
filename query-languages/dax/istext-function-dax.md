@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # ISTEXT
 Checks if a value is text, and returns TRUE or FALSE.  
@@ -17,7 +17,7 @@ Checks if a value is text, and returns TRUE or FALSE.
 ISTEXT(<value>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

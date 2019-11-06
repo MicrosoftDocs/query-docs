@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # SUMMARIZE
 Returns a summary table for the requested totals over a set of groups.  
@@ -17,7 +17,7 @@ Returns a summary table for the requested totals over a set of groups.
 SUMMARIZE(<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, <name>, <expression>]…)  
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term|Definition|  
 |--------|--------------|  

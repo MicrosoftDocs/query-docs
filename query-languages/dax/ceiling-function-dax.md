@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # CEILING
 Rounds a number up, to the nearest integer or to the nearest multiple of significance.  
@@ -17,7 +17,7 @@ Rounds a number up, to the nearest integer or to the nearest multiple of signifi
 CEILING(<number>, <significance>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

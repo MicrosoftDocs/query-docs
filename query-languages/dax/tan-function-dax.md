@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # TAN
 Returns the tangent of the given angle.  
@@ -17,7 +17,7 @@ Returns the tangent of the given angle.
 TAN(number)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

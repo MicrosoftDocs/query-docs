@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # LOOKUPVALUE
 Returns the value in *result_columnName* for the row that meets all criteria specified by *search_columnName* and *search_value*.  
@@ -17,7 +17,7 @@ Returns the value in *result_columnName* for the row that meets all criteria spe
 LOOKUPVALUE( <result_columnName>, <search_columnName>, <search_value>[, <search_columnName>, <search_value>]…[, <alternateResult>])   
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term|Definition|  
 |--------|--------------|  

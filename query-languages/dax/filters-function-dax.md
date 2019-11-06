@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # FILTERS
 Returns the values that are directly applied as filters to *columnName*.  
@@ -17,7 +17,7 @@ Returns the values that are directly applied as filters to *columnName*.
 FILTERS(<columnName>)  
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term  |Description|  
 |---------|---------|

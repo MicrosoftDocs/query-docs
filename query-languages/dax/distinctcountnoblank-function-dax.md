@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # DISTINCTCOUNTNOBLANK
 
@@ -18,7 +18,7 @@ Counts the number of distinct values in a column.
 DISTINCTCOUNTNOBLANK (<column>)  
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term  |Description|  
 |---------|---------|

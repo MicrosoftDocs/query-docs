@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # CONCATENATE
 Joins two text strings into one text string.  
@@ -17,7 +17,7 @@ Joins two text strings into one text string.
 CONCATENATE(<text1>, <text2>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

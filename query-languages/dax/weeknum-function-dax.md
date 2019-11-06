@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # WEEKNUM
 Returns the week number for the given date and year according to the **return_type** value. The week number indicates where the week falls numerically within a year.  
@@ -17,7 +17,7 @@ Returns the week number for the given date and year according to the **return_ty
 WEEKNUM(<date>, <return_type>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # UNION
   
@@ -18,7 +18,7 @@ Creates a union (join) table from a pair of tables.
 UNION(<table_expression1>, <table_expression2> [,<table_expression>]…)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

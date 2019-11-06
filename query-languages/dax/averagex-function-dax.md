@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # AVERAGEX
 Calculates the average (arithmetic mean) of a set of expressions evaluated over a table.  
@@ -17,7 +17,7 @@ Calculates the average (arithmetic mean) of a set of expressions evaluated over 
 AVERAGEX(<table>,<expression>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

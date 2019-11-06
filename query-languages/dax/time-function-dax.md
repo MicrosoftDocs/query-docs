@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # TIME
 Converts hours, minutes, and seconds given as numbers to a time in **datetime** format.  
@@ -17,7 +17,7 @@ Converts hours, minutes, and seconds given as numbers to a time in **datetime** 
 TIME(hour, minute, second)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # PRODUCT
   
@@ -20,7 +20,7 @@ To return the product of an expression evaluated for each row in a table, use [P
 PRODUCT(<column>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # SELECTEDMEASUREFORMATSTRING
 
@@ -21,7 +21,7 @@ Used by expressions for calculation items to retrieve the format string of the m
 SELECTEDMEASUREFORMATSTRING()
 ```
   
-#### Parameters  
+### Parameters  
   
 None  
   

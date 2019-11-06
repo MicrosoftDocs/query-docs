@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # COUNTBLANK
 Counts the number of blank cells in a column.  
@@ -17,7 +17,7 @@ Counts the number of blank cells in a column.
 COUNTBLANK(<column>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

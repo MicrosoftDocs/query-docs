@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # TRUNC
 Truncates a number to an integer by removing the decimal, or fractional, part of the number.  
@@ -17,7 +17,7 @@ Truncates a number to an integer by removing the decimal, or fractional, part of
 TRUNC(<number>,<num_digits>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

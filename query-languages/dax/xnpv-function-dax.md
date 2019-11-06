@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # XNPV
   
@@ -18,7 +18,7 @@ Returns the present value for a schedule of cash flows that is not necessarily p
 XNPV(<table>, <values>, <dates>, <rate>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

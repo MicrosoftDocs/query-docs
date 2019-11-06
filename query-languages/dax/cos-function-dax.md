@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # COS
 Returns the cosine of the given angle.  
@@ -17,7 +17,7 @@ Returns the cosine of the given angle.
 COS(number)  
 ```
   
-#### Parameters
+### Parameters
   
 |Term|Definition|  
 |--------|--------------|  

@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # CALCULATETABLE
 Evaluates a table expression in a context modified by the given filters.  
@@ -17,7 +17,7 @@ Evaluates a table expression in a context modified by the given filters.
 CALCULATETABLE(<expression>,<filter1>,<filter2>,…)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

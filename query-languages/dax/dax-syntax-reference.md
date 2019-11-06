@@ -1,12 +1,11 @@
 ---
 title: "DAX syntax | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 11/28/2018
+ms.date: 11/07/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
 ---
 # DAX syntax
 

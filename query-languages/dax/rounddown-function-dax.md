@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # ROUNDDOWN
 Rounds a number down, toward zero.  
@@ -17,7 +17,7 @@ Rounds a number down, toward zero.
 ROUNDDOWN(<number>, <num_digits>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

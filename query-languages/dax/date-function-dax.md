@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # DATE
 Returns the specified date in **datetime** format.  
@@ -17,7 +17,7 @@ Returns the specified date in **datetime** format.
 DATE(<year>, <month>, <day>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

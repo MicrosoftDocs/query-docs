@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # TOTALMTD
 Evaluates the value of the **expression** for the month to date, in the current context.  
@@ -17,7 +17,7 @@ Evaluates the value of the **expression** for the month to date, in the current 
 TOTALMTD(<expression>,<dates>[,<filter>])  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Parameter|Definition|  
 |-------------|--------------|  

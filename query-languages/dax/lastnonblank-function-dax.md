@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # LASTNONBLANK
 Returns the last value in the column, **column**, filtered by the current context, where the expression is not blank.  
@@ -17,7 +17,7 @@ Returns the last value in the column, **column**, filtered by the current contex
 LASTNONBLANK(<column>,<expression>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |||  
 |-|-|  

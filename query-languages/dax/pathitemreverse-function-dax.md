@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # PATHITEMREVERSE
 Returns the item at the specified *position* from a string resulting from evaluation of a PATH function. Positions are counted backwards from right to left.  
@@ -17,7 +17,7 @@ Returns the item at the specified *position* from a string resulting from evalua
 PATHITEMREVERSE(<path>, <position>[, <type>])  
 ```
   
-#### Parameters  
+### Parameters  
 path  
 A text string resulting from evaluation of a PATH function.  
   

@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # DATEVALUE
 Converts a date in the form of text to a date in datetime format.  
@@ -17,7 +17,7 @@ Converts a date in the form of text to a date in datetime format.
 DATEVALUE(date_text)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # SEARCH
 Returns the number of the character at which a specific character or text string is first found, reading left to right. Search is case-insensitive and accent sensitive.  
@@ -17,7 +17,7 @@ Returns the number of the character at which a specific character or text string
 SEARCH(<find_text>, <within_text>[, [<start_num>][, <NotFoundValue>]])  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

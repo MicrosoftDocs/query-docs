@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # BETA.INV
 Returns the inverse of the beta cumulative probability density function (BETA.DIST).  
@@ -19,7 +19,7 @@ If probability = BETA.DIST(x,...TRUE), then BETA.INV(probability,...) = x. The b
 BETA.INV(probability,alpha,beta,[A],[B])  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

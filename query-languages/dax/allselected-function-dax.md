@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # ALLSELECTED
 Removes context filters from columns and rows in the current query, while retaining all other context filters or explicit filters.  
@@ -19,7 +19,7 @@ The ALLSELECTED function gets the context that represents all rows and columns i
 ALLSELECTED([<tableName> | <columnName>[, <columnName>[, <columnName>[,…]]]] )   
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term|Definition|  
 |--------|--------------|  

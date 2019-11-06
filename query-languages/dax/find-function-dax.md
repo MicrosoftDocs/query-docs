@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # FIND
 Returns the starting position of one text string within another text string. FIND is case-sensitive.  
@@ -17,7 +17,7 @@ Returns the starting position of one text string within another text string. FIN
 FIND(<find_text>, <within_text>[, [<start_num>][, <NotFoundValue>]])  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

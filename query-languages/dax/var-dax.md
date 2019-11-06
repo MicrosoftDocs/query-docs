@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # VAR
   
@@ -18,7 +18,7 @@ Stores the result of an expression as a named variable, which can then be passed
 VAR <name> = <expression>  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

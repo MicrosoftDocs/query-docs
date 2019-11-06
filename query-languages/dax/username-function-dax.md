@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # USERNAME
 Returns the domain name and username from the credentials given to the system at connection time.  
@@ -17,7 +17,7 @@ Returns the domain name and username from the credentials given to the system at
 USERNAME()  
 ```
   
-#### Parameters  
+### Parameters  
   
 ## Return value  
 The username from the credentials given to the system at connection time  

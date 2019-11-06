@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # IFERROR
 Evaluates an expression and returns a specified value if the expression returns an error; otherwise returns the value of the expression itself.  
@@ -17,7 +17,7 @@ Evaluates an expression and returns a specified value if the expression returns 
 IFERROR(value, value_if_error)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

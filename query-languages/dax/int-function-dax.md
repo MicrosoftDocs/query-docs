@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # INT
 Rounds a number down to the nearest integer.  
@@ -17,7 +17,7 @@ Rounds a number down to the nearest integer.
 INT(<number>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

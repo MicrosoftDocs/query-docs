@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # AVERAGE
 Returns the average (arithmetic mean) of all the numbers in a column.  
@@ -17,7 +17,7 @@ Returns the average (arithmetic mean) of all the numbers in a column.
 AVERAGE(<column>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

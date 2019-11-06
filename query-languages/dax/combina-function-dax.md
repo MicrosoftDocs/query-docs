@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # COMBINA
 Returns the number of combinations (with repetitions) for a given number of items.  
@@ -17,7 +17,7 @@ Returns the number of combinations (with repetitions) for a given number of item
 COMBINA(number, number_chosen)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # PATH
 Returns a delimited text string with the identifiers of all the parents of the current identifier, starting with the oldest and continuing until current.  
@@ -17,7 +17,7 @@ Returns a delimited text string with the identifiers of all the parents of the c
 PATH(<ID_columnName>, <parent_columnName>)  
 ```
   
-#### Parameters  
+### Parameters  
 
 |Term|Definition|  
 |--------|--------------|  

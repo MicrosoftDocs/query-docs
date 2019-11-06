@@ -7,7 +7,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # LOG
 Returns the logarithm of a number to the base you specify.  
@@ -18,7 +18,7 @@ Returns the logarithm of a number to the base you specify.
 LOG(<number>,<base>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

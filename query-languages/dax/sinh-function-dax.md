@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # SINH
 Returns the hyperbolic sine of a number.  
@@ -17,7 +17,7 @@ Returns the hyperbolic sine of a number.
 SINH(number)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

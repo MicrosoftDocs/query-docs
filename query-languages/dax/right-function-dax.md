@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # RIGHT
 RIGHT returns the last character or characters in a text string, based on the number of characters you specify.  
@@ -17,7 +17,7 @@ RIGHT returns the last character or characters in a text string, based on the nu
 RIGHT(<text>, <num_chars>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  

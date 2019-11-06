@@ -6,7 +6,7 @@ ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
-manager: kfile
+
 ---
 # NATURALINNERJOIN
   
@@ -18,7 +18,7 @@ Performs an inner join of a table with another table. The tables are joined on c
 NATURALINNERJOIN(<leftJoinTable>, <rightJoinTable>)  
 ```
   
-#### Parameters  
+### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  
