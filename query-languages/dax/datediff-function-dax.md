@@ -1,7 +1,7 @@
 ---
 title: "DATEDIFF function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 11/19/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -42,19 +42,19 @@ An error is returned if start_date is larger than end_date.
 The following all return 1:  
   
 ```dax
-DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date], second ) )  
+DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date]), SECOND )  
   
-DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date], minute ) )  
+DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date]), MINUTE )
   
-DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date], hour ) )  
+DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date]), HOUR )
   
-DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date], day ) )  
+DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date]), DAY )
   
-DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date], week ) )  
+DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date]), WEEK )
   
-DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date], month ) )  
+DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date]), MONTH )
   
-DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date], quarter ) )  
+DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date]), QUARTER )
   
-DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date], year ) )  
+DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date]), YEAR ) 
 ```
