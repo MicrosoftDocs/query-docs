@@ -1,7 +1,7 @@
 ---
 title: "DAX overview | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 11/07/2019
+ms.date: 11/20/2019
 ms.reviewer: owend
 ms.topic: overview
 ms.article: reference
@@ -250,9 +250,9 @@ VAR
 Return
     
     IF (
-        TotalQuantity > 1000,
-        TotalQuantity * 0.95,
-        TotalQuantity * 1.25
+        TotalQty > 1000,
+        TotalQty * 0.95,
+        TotalQty * 1.25
         )
 ```
 In this example, TotalQty can then be passed as a named variable to other expressions. Variables can be of any scalar data type, including tables. Using variables in your DAX formulas can be incredibly powerful.
