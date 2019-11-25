@@ -3,11 +3,11 @@ title: "Type conversion | Microsoft Docs"
 ms.date: 4/16/2018
 ms.service: powerquery
 
-ms.reviewer: owend
+ms.reviewer: gepopell
 ms.topic: reference
-author: minewiskan
-ms.author: owend
-manager: kfile
+author: dougklopfenstein
+ms.author: v-douklo
+
 ---
 # Type conversion
 The Power Query M formula language has formulas to convert between types. The following is a summary of conversion formulas in M. 

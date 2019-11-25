@@ -3,11 +3,11 @@ title: "Power Query M type system | Microsoft Docs"
 ms.date: 4/16/2018
 ms.service: powerquery
 
-ms.reviewer: owend
+ms.reviewer: gepopell
 ms.topic: reference
-author: minewiskan
-ms.author: owend
-manager: kfile
+author: dougklopfenstein
+ms.author: v-douklo
+
 ---
 # Power Query M type system
 The Types in Power Query M formula language document describes the M type system.

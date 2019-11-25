@@ -3,11 +3,11 @@ title: "Accessing data functions | Microsoft Docs"
 ms.date: 6/13/2019
 ms.service: powerquery
 
-ms.reviewer: owend
+ms.reviewer: gepopell
 ms.topic: reference
-author: minewiskan
-ms.author: owend
-manager: kfile
+author: dougklopfenstein
+ms.author: v-douklo
+
 ---
 # Accessing data functions
  

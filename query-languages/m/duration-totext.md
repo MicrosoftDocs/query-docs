@@ -3,11 +3,11 @@ title: "Duration.ToText | Microsoft Docs"
 ms.date: 1/16/2019
 ms.service: powerquery
 
-ms.reviewer: owend
+ms.reviewer: gepopell
 ms.topic: reference
-author: minewiskan
-ms.author: owend
-manager: kfile
+author: dougklopfenstein
+ms.author: v-douklo
+
 ---
 # Duration.ToText
 

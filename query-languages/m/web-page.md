@@ -2,11 +2,11 @@
 title: "Web.Page | Microsoft Docs"
 ms.date: 10/17/2019
 ms.service: powerquery
-ms.reviewer: owend
+ms.reviewer: gepopell
 ms.topic: reference
-author: minewiskan
-ms.author: owend
-manager: kfile
+author: dougklopfenstein
+ms.author: v-douklo
+
 ---
 # Web.Page
 
