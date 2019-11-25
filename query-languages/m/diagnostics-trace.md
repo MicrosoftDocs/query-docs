@@ -3,11 +3,11 @@ title: "Diagnostics.Trace | Microsoft Docs"
 ms.date: 01/16/2019
 ms.service: powerquery
 
-ms.reviewer: owend
+ms.reviewer: gepopell
 ms.topic: reference
-author: minewiskan
-ms.author: owend
-manager: kfile
+author: dougklopfenstein
+ms.author: v-douklo
+
 ---
 # Diagnostics.Trace
 ## Syntax

@@ -2,11 +2,11 @@
 title: "Quick tour | Microsoft Docs"
 ms.date: 12/12/2018
 ms.service: powerquery
-ms.reviewer: owend
+ms.reviewer: gepopell
 ms.topic: reference
-author: minewiskan
-ms.author: owend
-manager: kfile
+author: dougklopfenstein
+ms.author: v-douklo
+
 ---
 # Quick tour of the Power Query M formula language
 

@@ -3,11 +3,11 @@ title: "Cube.MeasureProperty| Microsoft Docs"
 ms.date: 8/17/2018
 ms.service: powerquery
 
-ms.reviewer: owend
+ms.reviewer: gepopell
 ms.topic: reference
-author: minewiskan
-ms.author: owend
-manager: kfile
+author: dougklopfenstein
+ms.author: v-douklo
+
 ---
 # Cube.MeasureProperty
 

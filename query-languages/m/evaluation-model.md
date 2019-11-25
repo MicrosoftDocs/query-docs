@@ -3,11 +3,11 @@ title: "Evaluation model | Microsoft Docs"
 ms.date: 4/16/2018
 ms.service: powerquery
 
-ms.reviewer: owend
+ms.reviewer: gepopell
 ms.topic: reference
-author: minewiskan
-ms.author: owend
-manager: kfile
+author: dougklopfenstein
+ms.author: v-douklo
+
 ---
 # Evaluation model
 The evaluation model of the Power Query M formula language is modeled after the evaluation model commonly found in spreadsheets, where the order of calculations can be determined based on dependencies between the formulas in the cells.   
