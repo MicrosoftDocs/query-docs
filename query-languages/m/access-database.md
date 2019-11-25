@@ -6,7 +6,6 @@ ms.reviewer: gepopell
 ms.topic: reference
 author: dougklopfenstein
 ms.author: v-douklo
-
 ---
 # Access.Database
 

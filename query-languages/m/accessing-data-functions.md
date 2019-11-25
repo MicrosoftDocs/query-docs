@@ -2,12 +2,10 @@
 title: "Accessing data functions | Microsoft Docs"
 ms.date: 6/13/2019
 ms.service: powerquery
-
 ms.reviewer: gepopell
 ms.topic: reference
 author: dougklopfenstein
 ms.author: v-douklo
-
 ---
 # Accessing data functions
  
