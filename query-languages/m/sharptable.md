@@ -9,7 +9,7 @@ author: dougklopfenstein
 ms.author: v-douklo
 
 ---
-# \#table
+# #table
 
 ## Syntax
 
