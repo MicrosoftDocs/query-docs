@@ -2,10 +2,10 @@
 title: "File.Contents | Microsoft Docs"
 ms.date: 10/10/2019
 ms.service: powerquery
-ms.reviewer: owend
+ms.reviewer: gepopell
 ms.topic: reference
-author: minewiskan
-ms.author: owend
+author: dougklopfenstein
+ms.author: v-douklo
 ---
 # File.Contents
 

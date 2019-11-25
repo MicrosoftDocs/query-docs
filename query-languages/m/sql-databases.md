@@ -2,10 +2,10 @@
 title: "Sql.Databases | Microsoft Docs"
 ms.date: 11/20/2019
 ms.service: powerquery
-ms.reviewer: owend
+ms.reviewer: gepopell
 ms.topic: reference
-author: minewiskan
-ms.author: owend
+author: dougklopfenstein
+ms.author: v-douklo
 ---
 # Sql.Databases
 
