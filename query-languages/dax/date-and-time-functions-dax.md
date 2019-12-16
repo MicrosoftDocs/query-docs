@@ -1,7 +1,7 @@
 ---
 title: "Date and time functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 04/19/2019
+ms.date: 12/05/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -28,6 +28,7 @@ These functions help you create calculations based on dates and time. Many of th
 |[MINUTE](minute-function-dax.md)     |   Returns the minute as a number from 0 to 59, given a date and time value.        |
 |[MONTH](month-function-dax.md)      |  Returns the month as a number from 1 (January) to 12 (December).        |
 |[NOW](now-function-dax.md)     |  Returns the current date and time in **datetime** format.        |
+|[QUARTER](quarter-function-dax.md)     |  Returns the quarter as a number from 1 to 4.       |
 |[SECOND](second-function-dax.md)     |  Returns the seconds of a time value, as a number from 0 to 59.        |
 |[TIME](time-function-dax.md)     |  Converts hours, minutes, and seconds given as numbers to a time in datetime format.       |
 |[TIMEVALUE](timevalue-function-dax.md)     |  Converts a time in text format to a time in datetime format.       |
