@@ -1,7 +1,7 @@
 ---
 title: "FORMAT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/17/2019
+ms.date: 12/17/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
