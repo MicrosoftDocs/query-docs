@@ -43,6 +43,8 @@
               href: month-function-dax.md
             - name: NOW
               href: now-function-dax.md
+            - name: QUARTER
+              href: quarter-function-dax.md
             - name: SECOND
               href: second-function-dax.md
             - name: TIME
