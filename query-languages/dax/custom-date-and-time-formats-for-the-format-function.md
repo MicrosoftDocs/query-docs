@@ -1,7 +1,7 @@
 ---
 title: "Custom date and time formats for the FORMAT function | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 12/16/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -20,8 +20,8 @@ The following table shows characters you can use to create user-defined date/tim
 |dd|Displays the day as a number with a leading zero (for example, 01).|  
 |ddd|Displays the day as an abbreviation (for example, Sun).|  
 |dddd|Displays the day as a full name (for example, Sunday).|  
-|M|Displays the month as a number without a leading zero (for example, January is represented as 1). Use %M if this is the only character in your user-defined numeric format.|  
-|MM|Displays the month as a number with a leading zero (for example, 01/12/01).|  
+|m or M|Displays the month as a number without a leading zero (for example, January is represented as 1). Use %m or %M if this is the only character in your user-defined numeric format. If m/M immediately follows h/H or hh/HH, the minute rather than the month is displayed.|  
+|mm or MM|Displays the month as a number with a leading zero (for example, 01/12/01). If mm/MM immediately follows h/H or hh/HH, the minute rather than the month is displayed. |  
 |MMM|Displays the month as an abbreviation (for example, Jan).|  
 |MMMM|Displays the month as a full month name (for example, January).|  
 |gg|Displays the period/era string (for example, A.D.).|  
@@ -29,8 +29,6 @@ The following table shows characters you can use to create user-defined date/tim
 |hh|Displays the hour as a number with leading zeros using the 12-hour clock (for example, 01:15:15 PM).|  
 |H|Displays the hour as a number without leading zeros using the 24-hour clock (for example, 1:15:15). Use %H if this is the only character in your user-defined numeric format.|  
 |HH|Displays the hour as a number with leading zeros using the 24-hour clock (for example, 01:15:15).|  
-|m|Displays the minute as a number without leading zeros (for example, 12:1:15). Use %m if this is the only character in your user-defined numeric format.|  
-|mm|Displays the minute as a number with leading zeros (for example, 12:01:15).|  
 |s|Displays the second as a number without leading zeros (for example, 12:15:5). Use %s if this is the only character in your user-defined numeric format.|  
 |ss|Displays the second as a number with leading zeros (for example, 12:15:05).|  
 |AM/PM|Use the 12-hour clock and display an uppercase AM with any hour before noon; display an uppercase PM with any hour between noon and 11:59 P.M.|  
