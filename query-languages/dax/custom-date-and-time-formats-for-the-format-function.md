@@ -1,7 +1,7 @@
 ---
 title: "Custom date and time formats for the FORMAT function | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/16/2019
+ms.date: 12/31/2019
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,45 +9,48 @@ ms.author: owend
 
 ---
 # Custom date and time formats for the FORMAT function
-The following table shows characters you can use to create user-defined date/time formats.  
-  
-|Format specification|Description|  
-|------------------------|---------------|  
-|(:)|Time separator. In some locales, other characters may be used to represent the time separator. The time separator separates hours, minutes, and seconds when time values are formatted. The actual character that is used as the time separator in formatted output is determined by your application's current culture value.|  
-|(/)|Date separator. In some locales, other characters may be used to represent the date separator. The date separator separates the day, month, and year when date values are formatted. The actual character that is used as the date separator in formatted output is determined by your application's current culture.|  
-|(%)|Used to indicate that the following character should be read as a single-letter format without regard to any trailing letters. Also used to indicate that a single-letter format is read as a user-defined format. See what follows for additional details.|  
-|d|Displays the day as a number without a leading zero (for example, 1). Use %d if this is the only character in your user-defined numeric format.|  
-|dd|Displays the day as a number with a leading zero (for example, 01).|  
-|ddd|Displays the day as an abbreviation (for example, Sun).|  
-|dddd|Displays the day as a full name (for example, Sunday).|  
-|m or M|Displays the month as a number without a leading zero (for example, January is represented as 1). Use %m or %M if this is the only character in your user-defined numeric format. If m/M immediately follows h/H or hh/HH, the minute rather than the month is displayed.|  
-|mm or MM|Displays the month as a number with a leading zero (for example, 01/12/01). If mm/MM immediately follows h/H or hh/HH, the minute rather than the month is displayed. |  
-|MMM|Displays the month as an abbreviation (for example, Jan).|  
-|MMMM|Displays the month as a full month name (for example, January).|  
-|gg|Displays the period/era string (for example, A.D.).|  
-|h|Displays the hour as a number without leading zeros using the 12-hour clock (for example, 1:15:15 PM). Use %h if this is the only character in your user-defined numeric format.|  
-|hh|Displays the hour as a number with leading zeros using the 12-hour clock (for example, 01:15:15 PM).|  
-|H|Displays the hour as a number without leading zeros using the 24-hour clock (for example, 1:15:15). Use %H if this is the only character in your user-defined numeric format.|  
-|HH|Displays the hour as a number with leading zeros using the 24-hour clock (for example, 01:15:15).|  
-|s|Displays the second as a number without leading zeros (for example, 12:15:5). Use %s if this is the only character in your user-defined numeric format.|  
-|ss|Displays the second as a number with leading zeros (for example, 12:15:05).|  
-|AM/PM|Use the 12-hour clock and display an uppercase AM with any hour before noon; display an uppercase PM with any hour between noon and 11:59 P.M.|  
+
+The following tables describe characters used to create user-defined date/time formats.  
+
+## User-defined date/time formats 
+
+|Character|Description|
+|:-----|:-----|
+|(**:**)|Time separator. In some [locales](../../Glossary/vbe-glossary.md#locale), other characters may be used to represent the time separator. The time separator separates hours, minutes, and seconds when time values are formatted. The actual character used as the time separator in formatted output is determined by your system settings.|
+|(**/**)|[Date separator](../../Glossary/vbe-glossary.md#date-separators). In some locales, other characters may be used to represent the date separator. The date separator separates the day, month, and year when date values are formatted. The actual character used as the date separator in formatted output is determined by your system settings.|
+|c|Display the date as  `ddddd` and display the time as `ttttt`, in that order. Display only date information if there is no fractional part to the date serial number; display only time information if there is no integer portion.|
+|d|Display the day as a number without a leading zero (1&ndash;31).|
+|dd|Display the day as a number with a leading zero (01&ndash;31).|
+|ddd|Display the day as an abbreviation (Sun&ndash;Sat). Localized.|
+|dddd|Display the day as a full name (Sunday&ndash;Saturday). Localized.|
+|ddddd|Display the date as a complete date (including day, month, and year), formatted according to your system's short date format setting. The default short date format is  `m/d/yy`.|
+|dddddd|Display a date serial number as a complete date (including day, month, and year) formatted according to the long date setting recognized by your system. The default long date format is  `mmmm dd, yyyy`.|
+|w|Display the day of the week as a number (1 for Sunday through 7 for Saturday).|
+|ww|Display the week of the year as a number (1&ndash;54).|
+|m|Display the month as a number without a leading zero (1&ndash;12). If `m` immediately follows `h` or `hh`, the minute rather than the month is displayed.|
+|mm|Display the month as a number with a leading zero (01&ndash;12). If `m` immediately follows `h` or `hh`, the minute rather than the month is displayed. |
+|mmm|Display the month as an abbreviation (Jan&ndash;Dec). Localized.|
+|mmmm|Display the month as a full month name (January&ndash;December). Localized.|
+|q|Display the quarter of the year as a number (1&ndash;4).|
+|y|Display the day of the year as a number (1&ndash;366).|
+|yy|Display the year as a 2-digit number (00&ndash;99).|
+|yyyy|Display the year as a 4-digit number (100&ndash;9999).|
+|h|Display the hour as a number without a leading zero (0&ndash;23).|
+|hh|Display the hour as a number with a leading zero (00&ndash;23).|
+|n|Display the minute as a number without a leading zero (0&ndash;59).|
+|nn|Display the minute as a number with a leading zero (00&ndash;59).|
+|s|Display the second as a number without a leading zero (0&ndash;59).|
+|ss|Display the second as a number with a leading zero (00&ndash;59).|
+|ttttt|Display a time as a complete time (including hour, minute, and second), formatted using the time separator defined by the time format recognized by your system. A leading zero is displayed if the leading zero option is selected and the time is before 10:00 A.M. or P.M. The default time format is `h:mm:ss`.|
+|AM/PM|Use the 12-hour clock and display an uppercase AM with any hour before noon; display an uppercase PM with any hour between noon and 11:59 P.M.|
 |am/pm|Use the 12-hour clock and display a lowercase AM with any hour before noon; display a lowercase PM with any hour between noon and 11:59 P.M.|
-|A/P|	Use the 12-hour clock and display an uppercase A with any hour before noon; display an uppercase P with any hour between noon and 11:59 P.M.|
+|A/P|Use the 12-hour clock and display an uppercase A with any hour before noon; display an uppercase P with any hour between noon and 11:59 P.M.|
 |a/p|Use the 12-hour clock and display a lowercase A with any hour before noon; display a lowercase P with any hour between noon and 11:59 P.M.|
-|AMPM|Use the 12-hour clock and display the AM string literal as defined by your system with any hour before noon; display the PM string literal as defined by your system with any hour between noon and 11:59 P.M. AMPM can be either uppercase or lowercase, but the case of the string displayed matches the string as defined by your system settings. The default format is AM/PM.|  
-|y|Displays the year number (0-9) without leading zeros. Use %y if this is the only character in your user-defined numeric format.|  
-|yy|Displays the year in two-digit numeric format with a leading zero, if applicable.|  
-|yyy|Displays the year in four-digit numeric format.|  
-|yyyy|Displays the year in four-digit numeric format.|  
-|z|Displays the timezone offset without a leading zero (for example, -8). Use %z if this is the only character in your user-defined numeric format.|  
-|zz|Displays the timezone offset with a leading zero (for example, -08)|  
-|zzz|Displays the full timezone offset (for example, -08:00)|  
+|AMPM|Use the 12-hour clock and display the AM [string literal](../../Glossary/vbe-glossary.md#string-literal) as defined by your system with any hour before noon; display the PM string literal as defined by your system with any hour between noon and 11:59 P.M. AMPM can be either uppercase or lowercase, but the case of the string displayed matches the string as defined by your system settings. The default format is AM/PM. If your system is set to 24-hour clock, the string is typical set to a zero-length string.|
   
 ## Remarks  
-Formatting strings are case sensitive. Different formatting can be obtained by using a different case. For example, when formatting a date value with the string "D" you get the date in the long format (according to your current locale). However, if you change the case to "d" you get the date in the short format. Also, unexpected results or an error might occur if the intended formatting does not match the case of any defined format string.  
   
-Date/Time formatting uses the current user locale to determine the ultimate format of the string. For example, to format the date March 18, 1995, with the following format string "M/d/yyyy", if the user locale is set to the United States of America (en-us) the result is '3/12/1995', but if the user locale is set to Germany (de-de) the result is '18.03.1995'.  
+Date/Time formatting uses the current user locale to determine the ultimate format of the string. For example, to format the date March 18, 1995, with the following format string "m/d/yyyy", if the user locale is set to the United States of America (en-us) the result is '3/12/1995', but if the user locale is set to Germany (de-de) the result is '18.03.1995'.  
   
 ## See also  
 [FORMAT function &#40;DAX&#41;](format-function-dax.md)  
