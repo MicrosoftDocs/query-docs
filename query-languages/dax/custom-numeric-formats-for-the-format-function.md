@@ -31,6 +31,7 @@ If you include semicolons with nothing between them, the missing section is defi
 
 ```dax
 "$#,##0
+```
 
 ## User-defined numeric formats
 
