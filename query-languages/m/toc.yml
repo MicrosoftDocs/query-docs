@@ -142,6 +142,8 @@
               href: oledb-query.md
             - name: Oracle.Database
               href: oracle-database.md
+            - name: Parquet.Document
+              href: parquet-document.md
             - name: Pdf.Tables
               href: pdf-tables.md
             - name: PostgreSQL.Database
