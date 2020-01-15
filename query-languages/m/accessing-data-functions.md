@@ -79,7 +79,8 @@ Functions in this section access data and return table values. Most of these fun
 |[Odbc.Query](odbc-query.md)|Connects to a generic provider with the given connection string and returns the result of evaluating the query.|  
 |[OleDb.DataSource](oledb-datasource.md)|Returns a table of SQL tables and views from the OLE DB data source specified by the connection string.| 
 |[OleDb.Query](oledb-query.md)|Returns the result of running a native query on an OLE DB data source.| 
-|[Oracle.Database](oracle-database.md)|Returns a table with data relating to the tables in the specified Oracle Database.| 
+|[Oracle.Database](oracle-database.md)|Returns a table with data relating to the tables in the specified Oracle Database.|
+|[Parquet.Document](parquet-document.md)|Returns the contents of the Parquet document as a table.| 
 |[Pdf.Tables](pdf-tables.md)|Returns any tables found in pdf.| 
 |[PostgreSQL.Database](postgresql-database.md)|Returns a table with data relating to the tables in the specified PostgreSQL Database.|
 |[RData.FromBinary](rdata-frombinary.md)|Returns a record of data frames from the RData file.|  
