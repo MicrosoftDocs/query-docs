@@ -1,7 +1,7 @@
 ---
 title: "New DAX functions | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 11/07/2019
+ms.date: 01/29/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -20,6 +20,8 @@ While functions and functionality are being updated all the time, only those upd
 
 |Function  |Month  |
 |---------|---------|
+|[FIRSTNONBLANKVALUE](firstnonblankvalue-function-dax.md)|Feb. 2020|
+|[LASTNONBLANKVALUE](lastnonblankvalue-function-dax.md)|Feb. 2020|
 |[CONVERT](convert-function-dax.md)|Sept. 2019|
 |[REMOVEFILTERS](removefilters-function-dax.md)|Sept. 2019|
 |[SELECTEDMEASUREFORMATSTRING](selectedmeasureformatstring-function-dax.md) |  May 2019 |
@@ -30,8 +32,6 @@ While functions and functionality are being updated all the time, only those upd
 |[ISSELECTEDSMEASURE](isselectedmeasure-function-dax.md)| March 2019|
 |[SELECTEDSMEASURE](selectedmeasure-function-dax.md)| March 2019|
 |[SELECTEDSMEASURENAME](selectedmeasurename-function-dax.md)| March 2019|
-|[APPROXIMATEDISTINCTCOUNT (Preview) ](approximate-distinctcount-function-dax.md)    |  Dec. 2018       |
-|[ISINSCOPE](isinscope-function-dax.md)     |   Nov. 2018      |
 
 ## Updated functions
 
@@ -39,4 +39,4 @@ While functions and functionality are being updated all the time, only those upd
 |---------|---------|
 |[ALL](all-function-dax.md)| March 2019 |
 |[LOOKUPVALUE](lookupvalue-function-dax.md)| March 2019 |
-|[SUMMARIZECOLUMNS function](summarizecolumns-function-dax.md)      |     Nov. 2018    |
+
