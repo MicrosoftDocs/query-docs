@@ -42,6 +42,6 @@ CALCULATE(SELECTEDMEASURE(), DATESYTD(DimDate[Date]))
 ```
   
 ## See also  
-[SELECTEDSMEASURENAME](selectedmeasurename-function-dax.md)  
-[ISSELECTEDSMEASURE](isselectedmeasure-function-dax.md)   
+[SELECTEDMEASURENAME](selectedmeasurename-function-dax.md)  
+[ISSELECTEDMEASURE](isselectedmeasure-function-dax.md)   
   

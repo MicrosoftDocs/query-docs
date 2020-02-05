@@ -65,7 +65,7 @@
               href: year-function-dax.md
             - name: YEARFRAC
               href: yearfrac-function-dax.md
-        - name: Time-intelligence functions
+        - name: Time-intelligence functionsF
           items: 
             - name: Time-intelligence functions overview
               href: time-intelligence-functions-dax.md
@@ -373,11 +373,11 @@
               href: naturalinnerjoin-function-dax.md
             - name: NATURALLEFTOUTERJOIN
               href: naturalleftouterjoin-function-dax.md
-            - name: SELECTEDSMEASURE
+            - name: SELECTEDMEASURE
               href: selectedmeasure-function-dax.md
             - name: SELECTEDMEASUREFORMATSTRING
               href: selectedmeasureformatstring-function-dax.md
-            - name: SELECTEDSMEASURENAME
+            - name: SELECTEDMEASURENAME
               href: selectedmeasurename-function-dax.md
             - name: SUMMARIZECOLUMNS
               href: summarizecolumns-function-dax.md
