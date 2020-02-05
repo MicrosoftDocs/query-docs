@@ -49,6 +49,6 @@ IF (
 ```
   
 ## See also  
-[SELECTEDSMEASURE](selectedmeasure-function-dax.md)  
-[SELECTEDSMEASURENAME](selectedmeasurename-function-dax.md)   
+[SELECTEDMEASURE](selectedmeasure-function-dax.md)  
+[SELECTEDMEASURENAME](selectedmeasurename-function-dax.md)   
   
