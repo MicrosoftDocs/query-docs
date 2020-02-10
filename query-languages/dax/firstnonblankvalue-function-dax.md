@@ -1,7 +1,7 @@
 ---
 title: "FIRSTNONBLANKVALUE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 01/29/2020
+ms.date: 02/11/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
