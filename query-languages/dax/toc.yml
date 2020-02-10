@@ -97,10 +97,14 @@
               href: firstdate-function-dax.md
             - name: FIRSTNONBLANK
               href: firstnonblank-function-dax.md
+            - name: FIRSTNONBLANKVALUE
+              href: firstnonblankvalue-function-dax.md
             - name: LASTDATE
               href: lastdate-function-dax.md
             - name: LASTNONBLANK
               href: lastnonblank-function-dax.md
+            - name: LASTNONBLANKVALUE
+              href: lastnonblankvalue-function-dax.md
             - name: NEXTDAY
               href: nextday-function-dax.md
             - name: NEXTMONTH
