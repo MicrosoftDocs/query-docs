@@ -14,7 +14,7 @@ Checks if a condition provided as the first argument is met. Returns one value i
 ## Syntax  
   
 ```dax
-IF(logical_test>,<value_if_true>, value_if_false)  
+IF(<logical_test>,<value_if_true>[, <value_if_false>])
 ```
   
 ### Parameters  
