@@ -1,7 +1,7 @@
 ---
 title: "IF function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 02/11/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,18 +22,18 @@ IF(logical_test>,<value_if_true>, value_if_false)
 |Term|Definition|  
 |--------|--------------|  
 |logical_test|Any value or expression that can be evaluated to TRUE or FALSE.|  
-|value_if_true|The value that is returned if the logical test is TRUE. If omitted, TRUE is returned.|  
-|value_if_false|The value that is returned if the logical test is FALSE. If omitted, FALSE is returned.|  
+|value_if_true|The value that is returned if the logical test is TRUE.|  
+|value_if_false|The value that is returned if the logical test is FALSE. If omitted, BLANK is returned.|  
   
 ## Return value  
 Any type of value that can be returned by an expression.  
   
 ## Remarks  
-If the value of **value_if_true** or **value_if_false** is omitted, IF treats it as an empty string value ("").  
-  
-If the value referenced in the expression is a column, IF returns the value that corresponds to the current row.  
-  
-The IF function attempts to return a single data type in a column. Therefore, if the values returned by **value_if_true** and **value_if_false** are of different data types, the IF function will implicitly convert data types to accommodate both values in the column. For example, the formula `IF(<condition>,TRUE(),0)` returns a column of ones and zeros and the results can be summed, but the formula `IF(<condition>,TRUE(),FALSE())` returns only logical values. For more information about implicit data type conversion, see [Data types supported in tabular models](/analysis-services/tabular-models/data-types-supported-ssas-tabular.md).  
+
+If the value referenced in the expression is a column, IF returns the value that corresponds to the current row.
+
+The IF function can return variant data type if **value_if_true** and **value_if_false** are of different data types, but the function attempts to return a single data type if both **value_if_true** and **value_if_false** are of numeric data types. In the latter case, the IF function will implicitly convert data types to accommodate both values. For example, the formula `IF(<condition>,TRUE(),0)` returns TRUE or 0, but the formula `IF(<condition>,1.0,0)` returns only decimal values even though **value_if_false** is of the whole number data type. For more information about implicit data type conversion, see [Data types](dax-overview.md#data-types).
+
   
 ## Example  
 The following example uses nested IF functions that evaluate the number in the column, Calls, from the table FactCallCenter. The function assigns a label as follows: **low** if the number of calls is less than 200, **medium** if the number of calls is less than 300 but not less than 200, and **high** for all other values.  
