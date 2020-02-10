@@ -1,7 +1,7 @@
 ---
 title: "New DAX functions | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 01/29/2020
+ms.date: 02/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -29,9 +29,9 @@ While functions and functionality are being updated all the time, only those upd
 |[CONTAINSSTRING](containsstring-function-dax.md)| March 2019 |
 |[CONTAINSSTRINGEXACT](containsstringexact-function-dax.md)| March 2019 |
 |[DISTINCTCOUNTNOBLANK](distinctcountnoblank-function-dax.md)  | March 2019  |
-|[ISSELECTEDSMEASURE](isselectedmeasure-function-dax.md)| March 2019|
-|[SELECTEDSMEASURE](selectedmeasure-function-dax.md)| March 2019|
-|[SELECTEDSMEASURENAME](selectedmeasurename-function-dax.md)| March 2019|
+|[ISSELECTEDMEASURE](isselectedmeasure-function-dax.md)| March 2019|
+|[SELECTEDMEASURE](selectedmeasure-function-dax.md)| March 2019|
+|[SELECTEDMEASURENAME](selectedmeasurename-function-dax.md)| March 2019|
 
 ## Updated functions
 
