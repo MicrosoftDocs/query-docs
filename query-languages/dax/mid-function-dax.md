@@ -1,7 +1,7 @@
 ---
 title: "MID function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 02/11/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -31,17 +31,23 @@ A string of text of the specified length.
 ## Remarks  
 Whereas Microsoft Excel has different functions for working with single-byte and double-byte characters languages, DAX uses Unicode and stores all characters with the same length.  
   
-## Example  
-The following examples return the same results, the first 5 letters of the column, [ResellerName]. The first example uses the fully qualified name of the column and specifies the starting point; the second example omits the table name and the parameter, **num_chars**.  
-  
+## Examples  
+
+The following expression,
+
 ```dax
-=MID('Reseller'[ResellerName],5,1))  
-=MID([ResellerName,5])  
+MID("abcde",2,3))
 ```
 
-The results are the same if you use the following formula:  
-  
-`=LEFT([ResellerName],5)`  
+Returns **"bcd"**.
+
+The following expression,
+
+```dax
+MID('Reseller'[ResellerName],1,5))
+```
+
+Returns the same result as `LEFT([ResellerName],5)`. Both expressions return the first 5 letters of column, `[ResellerName]`.
   
 ## See also  
 [Text functions &#40;DAX&#41;](text-functions-dax.md)  
