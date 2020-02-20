@@ -1,6 +1,6 @@
 ---
 title: "Parquet.Document | Microsoft Docs"
-ms.date: 1/15/2020
+ms.date: 2/13/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -16,6 +16,5 @@ ms.author: v-douklo
 <code>Parquet.Document(<b>binary</b> as binary) as any</code>
 
 ## About
-
-Returns the contents of the Parquet document as a table.
+This function is unavailable because it requires .NET 4.5.
 
