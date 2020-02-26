@@ -241,6 +241,8 @@
               href: logical-functions-dax.md
             - name: AND
               href: and-function-dax.md
+            - name: COALESCE
+              href: coalesce-function-dax.md
             - name: FALSE
               href: false-function-dax.md
             - name: IF
