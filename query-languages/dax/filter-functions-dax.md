@@ -1,7 +1,7 @@
 ---
 title: "Filter functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 09/04/2019
+ms.date: 02/26/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -23,7 +23,8 @@ The filter and value functions in DAX are some of the most complex and powerful,
 |[ALLSELECTED](allselected-function-dax.md)      |  Removes context filters from columns and rows in the current query, while retaining all other context filters or explicit filters.        |
 |[CALCULATE](calculate-function-dax.md)      |  Evaluates an expression in a context that is modified by the specified filters.        |
 |[CALCULATETABLE](calculatetable-function-dax.md)     |  Evaluates a table expression in a context modified by the given filters.         |
-|[CROSSFILTER function](crossfilter-function.md)     | Specifies the cross-filtering direction to be used in a calculation for a relationship that exists between two columns.         |
+|[COALESCE](coalesce-function-dax.md)|Returns the first expression that does not evaluate to BLANK.|
+|[CROSSFILTER ](crossfilter-function.md)     | Specifies the cross-filtering direction to be used in a calculation for a relationship that exists between two columns.         |
 |[DISTINCT](distinct-function-dax.md)      |  Returns a one-column table that contains the distinct values from the specified column.       |
 |[EARLIER](earlier-function-dax.md)      |  Returns the current value of the specified column in an outer evaluation pass of the mentioned column.       |
 |[EARLIEST](earliest-function-dax.md)     |  Returns the current value of the specified column in an outer evaluation pass of the specified column.        |

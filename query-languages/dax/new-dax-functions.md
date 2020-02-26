@@ -1,7 +1,7 @@
 ---
 title: "New DAX functions | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 02/10/2020
+ms.date: 02/26/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -11,32 +11,27 @@ ms.author: owend
 
 DAX is continuously being improved with new functions and functionality to support new features. New functions and updates are included in service, application, and tool updates which in most cases are monthly. SQL Server Analysis Services and Excel are updated in the next cumulative update. To get the latest, make sure you're using the latest version. 
 
-While functions and functionality are being updated all the time, only those updates that have a visible and functional change exposed to users are described in documentation. 
+While functions and functionality are being updated all the time, only those updates that have a visible and functional change exposed to users are described in documentation. New functions and updates to existing function within the past year are shown here.
 
 > [!IMPORTANT]
-> Not all functions are supported in all versions of Power BI Desktop, Analysis Services, and Power Pivot in Excel. New and updated functions are typically first introduced in Power BI Desktop. 
+> Not all functions are supported in all versions of Power BI Desktop, Analysis Services, and Power Pivot in Excel. New and updated functions are typically first introduced in Power BI Desktop.
   
 ## New functions
 
 |Function  |Month  |
 |---------|---------|
+|[COALESCE](coalesce-function-dax.md)|March. 2020|
 |[FIRSTNONBLANKVALUE](firstnonblankvalue-function-dax.md)|Feb. 2020|
 |[LASTNONBLANKVALUE](lastnonblankvalue-function-dax.md)|Feb. 2020|
 |[CONVERT](convert-function-dax.md)|Sept. 2019|
 |[REMOVEFILTERS](removefilters-function-dax.md)|Sept. 2019|
 |[SELECTEDMEASUREFORMATSTRING](selectedmeasureformatstring-function-dax.md) |  May 2019 |
 |[ALLCROSSFILTERED](allcrossfiltered-function-dax.md)| April 2019 |
-|[CONTAINSSTRING](containsstring-function-dax.md)| March 2019 |
-|[CONTAINSSTRINGEXACT](containsstringexact-function-dax.md)| March 2019 |
-|[DISTINCTCOUNTNOBLANK](distinctcountnoblank-function-dax.md)  | March 2019  |
-|[ISSELECTEDMEASURE](isselectedmeasure-function-dax.md)| March 2019|
-|[SELECTEDMEASURE](selectedmeasure-function-dax.md)| March 2019|
-|[SELECTEDMEASURENAME](selectedmeasurename-function-dax.md)| March 2019|
+
 
 ## Updated functions
 
 |Function  | Month  |
 |---------|---------|
-|[ALL](all-function-dax.md)| March 2019 |
-|[LOOKUPVALUE](lookupvalue-function-dax.md)| March 2019 |
+
 
