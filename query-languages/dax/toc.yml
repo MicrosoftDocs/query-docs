@@ -243,7 +243,7 @@
               href: and-function-dax.md
             - name: COALESCE
               href: coalesce-function-dax.md
-            - name: FALSE
+            - name: \FALSE
               href: false-function-dax.md
             - name: IF
               href: if-function-dax.md
@@ -257,7 +257,7 @@
               href: or-function-dax.md
             - name: SWITCH
               href: switch-function-dax.md
-            - name: TRUE
+            - name: \TRUE
               href: true-function-dax.md
         - name: Math and trig functions
           items: 

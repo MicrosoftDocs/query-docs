@@ -8,7 +8,7 @@ author: minewiskan
 ms.author: owend
 
 ---
-# CONCATENATE
+# COALESCE
 
 Returns the first expression that does not evaluate to BLANK. If all expressions evaluate to BLANK, BLANK is returned.
   
