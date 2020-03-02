@@ -181,10 +181,10 @@ REFERENCES
  
 Microsoft Corporation (2015 August)  
 Microsoft Power Query for Excel Formula Language Specification [PDF]  
-Retrieved from https://msdn.microsoft.com/en-us/library/mt807488.aspx 
+Retrieved from https://msdn.microsoft.com/library/mt807488.aspx 
  
 Microsoft Corporation (n.d.)  
 Power Query M function reference [web page]  
-Retrieved from https://msdn.microsoft.com/en-us/library/mt779182.aspx 
+Retrieved from https://msdn.microsoft.com/library/mt779182.aspx 
  
 
