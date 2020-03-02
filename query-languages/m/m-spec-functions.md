@@ -64,7 +64,7 @@ The following operators are defined for function values:
 | `x <> y` | Not equal |
 | | |
 
-The native type of function values is a custom function type (derived from the intrinsic type `function`) that lists the parameter names and specifies all parameter types and the return type to be `any`. (See [Function types](m-types.md#function-types) for details on function types.)
+The native type of function values is a custom function type (derived from the intrinsic type `function`) that lists the parameter names and specifies all parameter types and the return type to be `any`. (See [Function types](m-spec-types.md#function-types) for details on function types.)
 
 ## Invoking functions
 

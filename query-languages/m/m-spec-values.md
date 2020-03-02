@@ -33,7 +33,7 @@ A value is data produced by evaluating an expression. This section describes the
 | _Type_ | `type { number }`&nbsp;&nbsp;&nbsp;&nbsp;`type table [ A = any, B = text ]` |
 | | |
  
-The following sections cover each value kind in detail. Types and type ascription are defined formally in [Types](m-types.md). Function values are defined in [Functions](m-functions.md). The following sections list the operators defined for each value kind and give examples. The full definition of operator semantics follows in [Operators](m-operators.md).
+The following sections cover each value kind in detail. Types and type ascription are defined formally in [Types](m-spec-types.md). Function values are defined in [Functions](m-spec-functions.md). The following sections list the operators defined for each value kind and give examples. The full definition of operator semantics follows in [Operators](m-spec-operators.md).
 
 ## Null
 
@@ -87,7 +87,7 @@ A number is represented with at least the precision of a _Double_ (but may retai
 
 The following special values are also considered to be _number_ values:
 
-* Positive zero and negative zero. In most situations, positive zero and negative zero behave identically as the simple value zero, but [certain operations distinguish between the two](m-operators.md#arithmetic-operators).
+* Positive zero and negative zero. In most situations, positive zero and negative zero behave identically as the simple value zero, but [certain operations distinguish between the two](m-spec-operators.md#arithmetic-operators).
 
 * Positive infinity (`#infinity`) and negative infinity (`-#infinity`). Infinities are produced by such operations as dividing a non-zero number by zero. For example, `1.0 / 0.0` yields positive infinity, and `-1.0 / 0.0` yields negative infinity.
 
@@ -612,12 +612,12 @@ Table concatenation aligns like-named columns and fills in `null` for columns ap
 | `null` | `3` | `4` |
 | | |
 
-The native type of table values is a custom table type (derived from the intrinsic type `table`) that lists the column names, specifies all column types to be any, and has no keys. (See [Table types](m-types.md#table-types) for details on table types.)
+The native type of table values is a custom table type (derived from the intrinsic type `table`) that lists the column names, specifies all column types to be any, and has no keys. (See [Table types](m-spec-types.md#table-types) for details on table types.)
 
 ## Function
 
-A _function value_ is a value that maps a set of arguments to a single value. The details of _function_ values are described in [Functions](m-functions.md).
+A _function value_ is a value that maps a set of arguments to a single value. The details of _function_ values are described in [Functions](m-spec-functions.md).
 
 ## Type
-A _type value_ is a value that classifies other values. The details of _type_ values are described in [Types](m-types.md).
+A _type value_ is a value that classifies other values. The details of _type_ values are described in [Types](m-spec-types.md).
 

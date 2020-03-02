@@ -351,7 +351,7 @@ The form `[[y1],[y2],...]` and `[[y1],[y2],...]?` are also supported as a shorth
 _[[A],[B]]
 ```
 
-The shorthand form is particularly useful in combination with the `each` shorthand, a way to introduce a function of a single parameter named `_` (for details, see [Simplified declarations](m-functions.md#simplified-declarations). Together, the two shorthands simplify common higher-order functional expressions:
+The shorthand form is particularly useful in combination with the `each` shorthand, a way to introduce a function of a single parameter named `_` (for details, see [Simplified declarations](m-spec-functions.md#simplified-declarations). Together, the two shorthands simplify common higher-order functional expressions:
 
 ```
 List.Select( {[a=1, b=1], [a=2, b=4]}, each [a] = [b]) 
@@ -1252,7 +1252,7 @@ The expression `x is y` returns `true` if the ascribed type of `x` is compatible
 <em>nullable-primitive-type:</em><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`<sub>opt</sub> <em>primitive-type</em>
 
-Type compatibility, as supported by the `is` operator, is a subset of [general type compatibility](m-types.md) and is defined using the following rules:
+Type compatibility, as supported by the `is` operator, is a subset of [general type compatibility](m-spec-types.md) and is defined using the following rules:
 
 * If `x` is null then it is compatible iff y is a nullable type or the type `any`.
 
