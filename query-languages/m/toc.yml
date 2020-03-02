@@ -2,6 +2,51 @@
   href: index.yml
   expanded: true
   items: 
+    - name: Quick tour of the Power Query M formula language
+      href: quick-tour-of-the-power-query-m-formula-language.md
+    - name: Power Query M language specification
+      href: power-query-m-language-specification.md
+      items:
+        - name: Introduction
+          href: m-spec-introduction.md
+        - name: Lexical Struction
+          href: m-spec-lexical-structure.md
+        - name: Basic Concepts
+          href: m-spec-basic-concepts.md
+        - name: Values
+          href: m-spec-values.md
+        - name: Types
+          href: m-spec-types.md
+        - name: Operators
+          href: m-spec-operators.md
+        - name: Let
+          href: m-spec-let.md
+        - name: Conditionals
+          href: m-spec-conditionals.md
+        - name: Functions
+          href: m-spec-functions.md
+        - name: Error Handling
+          href: m-spec-error-handling.md
+        - name: Sections
+          href: m-spec-sections.md
+        - name: Consolidated Grammar
+          href: m-spec-consolidated-grammar.md
+    - name: Power Query M type system
+      href: power-query-m-type-system.md
+    - name: Expressions, values, and let expression
+      href: expressions-values-and-let-expression.md
+    - name: Comments
+      href: comments.md
+    - name: Evaluation model
+      href: evaluation-model.md
+    - name: Operators
+      href: operators.md
+    - name: Type conversion
+      href: type-conversion.md
+    - name: Metadata
+      href: metadata.md
+    - name: Errors
+      href: errors.md
     - name: Power Query M functions
       items: 
         - name: Power Query M functions overview
@@ -1540,23 +1585,3 @@
               href: value-type.md
             - name: Variable.Value
               href: variable-value.md
-    - name: Quick tour of the Power Query M formula language
-      href: quick-tour-of-the-power-query-m-formula-language.md
-    - name: Power Query M language specification
-      href: power-query-m-language-specification.md
-    - name: Power Query M type system
-      href: power-query-m-type-system.md
-    - name: Expressions, values, and let expression
-      href: expressions-values-and-let-expression.md
-    - name: Comments
-      href: comments.md
-    - name: Evaluation model
-      href: evaluation-model.md
-    - name: Operators
-      href: operators.md
-    - name: Type conversion
-      href: type-conversion.md
-    - name: Metadata
-      href: metadata.md
-    - name: Errors
-      href: errors.md
