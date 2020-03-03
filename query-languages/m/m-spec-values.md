@@ -119,7 +119,8 @@ The following operators are defined for number values:
 | `x / y` | Quotient |
 | `+x` | Unary plus |
 | `-x` | Negation |
-| | | 
+| | |
+
 The native type of number values is the intrinsic type `number`.
 
 ## Time
