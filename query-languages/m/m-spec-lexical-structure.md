@@ -1,5 +1,5 @@
 ---
-title: M Language documents | Microsoft Docs
+title: M Language lexical structure | Microsoft Docs
 description: Use the "create from blank" option to create a custom connector for Power Automate and Power Apps
 author: dougklopfenstein
 

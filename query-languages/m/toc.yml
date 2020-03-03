@@ -9,7 +9,7 @@
       items:
         - name: Introduction
           href: m-spec-introduction.md
-        - name: Lexical Struction
+        - name: Lexical Structure
           href: m-spec-lexical-structure.md
         - name: Basic Concepts
           href: m-spec-basic-concepts.md
