@@ -88,7 +88,7 @@ Function Types, List Types, Record Types, Table Types, Primitive Types, and Null
 
 ## FUNCTIONS
 
-One function needs to be defined: NonNullable : T &#10229; T<br/>
+One function needs to be defined: NonNullable : T &#8592; T<br/>
 This function takes a type, and returns a type that is equivalent except it does not conform with the null value.
 
 ## IDENTITIES
@@ -109,82 +109,80 @@ As defined elsewhere, an M type is compatable with another M type if and only if
 
 Here is defined a compatability relation that does not depend on conforming values, and is based on the properties of the types themselves. It is anticiplated that this relation, as defined in this document, is completely equivalent to the original semantic definition.
 
-The "is compatible with" relation : &#8804;: B&#10229;T&#215;T<br/> 
+The "is compatible with" relation : &#8804; : B &#8592; T &#215; T<br/> 
 In the below section, a lowercase t will always represent an M Type, an element of T. 
 
 A &#934; will represent a subset of <em>F</em><sup>\*</sup>, or of <em>C</em><sup>\*</sup>.
 
-(28) <em>t</em>&#8804; t<br/>
+(28) <em>t</em> &#8804; t<br/>
 This relation is reflexive.
 
-(29) ????  ???? ? ????  ???? 
-This relation is transitive 
+(29) <em>t<sub>a</sub></em> &#8804; <em>t<sub>b</sub></em> &#8743; <em>t<sub>b</sub></em> &#8804; <em>t<sub>c</sub></em> &#8594; <em>t<sub>a</sub></em> &#8804; <em>t<sub>c</sub></em><br/>
+This relation is transitive.
+
+(30) none &#8804; <em>t</em> &#8804; any<br/>
+M types form a lattice over this relation; none is the bottom, and any is the top.
+
+(31) <em>t<sub>a</sub></em>, <em>t<sub>b</sub></em> &#8712; <em>T<sub>N</sub></em> &#8743; <em>t<sub>a</sub></em> &#8804; <em>t<sub>b</sub></em> &#8594; <em>NonNullable</em>(<em>t<sub>a</sub></em>) &#8804; <em>NonNullable</em>(<em>t<sub>b</sub></em>)<br/>
+If two types are compatible, then the NonNullable equivalents are also compatible.
+
+(32) null &#8804; <em>t</em> &#8712; <em>T<sub>N</sub></em><br/>
+The primitive type null is compatible with all nullable types.
+
+(33) <em>t</em> &#8713; <em>T<sub>N</sub></em> &#8804; anynonnull<br/>
+All nonnullable types are compatible with anynonnull.
+
+(34) <em>NonNullable</em>(<em>t</em>) &#8804; <em>t</em><br/>
+A NonNullible type is compatible with the nullable equivalent.
+
+(35) <em>t</em> &#8712; <em>T<sub>F</sub></em> &#8594; <em>t</em> &#8804; function<br/>
+All function types are compatible with function.
+
+(36) <em>t</em> &#8712; <em>T<sub>L</sub></em> &#8594; <em>t</em> &#8804; list<br/>
+All list types are compatible with list.
+
+(37) <em>t</em> &#8712; <em>T<sub>R</sub></em> &#8594; <em>t</em> &#8804;  record<br/>
+All record types are compatible with record.
+
+(38) <em>t</em> &#8712; <em>T<sub>T</sub></em> &#8594; <em>t</em> &#8804; table<br/>
+All table types are compatible with table.
+
+(39) <em>t<sub>a</sub></em> &#8804; <em>t<sub>b</sub></em> &#8596; &#12310;<em>t<sub>a</sub></em>&#12311; &#8804; &#12310;<em>t<sub>b</sub></em>&#12311;<br/>
+A list type is compaible with another list type if the item types are compatible, and vice-versa.
+
+(40) <em>t<sub>a</sub></em> &#8712; <em>T<sub>F</sub></em> = &#10216; <em>p<sub>a</sub></em>, <em>p<sup>\*</sup></em> &#10217;, <em>t<sub>b</sub></em> &#8712; <em>T<sub>F</sub></em> = &#10216; <em>p<sub>b</sub></em>, <em>p<sup>\*</sup></em> &#10217; &#8743; <em>p<sub>a</sub></em> &#8804; <em>p<sub>b</sub></em> &#8594; <em>t<sub>a</sub></em> &#8804; <em>t<sub>b</sub></em><br/>
+A function type is compatible with another function type if the return types are compatible, and the parameter lists are identical.
  
-(30) none  any 
-M types form a lattice over this relation; none is the bottom, and any is the top. 
- 	 
- 
-(31) ????, ???? ? ???? ? ???? ? ???? ? ??????????????????????(????) ? ??????????????????????(????) 
-If two types are compatible, then the NonNullable equivalents are also compatible 
- 
-(32) null ? ?? ? ???? 
-The primitive type null is compatible with all nullable types 
- 
-(33) ?? ? ???? ? anynonnull 
-All nonnullable types are compatible with anynonnull 
- 
-(34) ??????????????????????(??) ? ?? 
-A NonNullible type is compatible with the nullable equivalent 
- 
-(35) ?? ? ???? ? ?? ? function 
-All function types are compatible with function 
- 
-(36) ?? ? ???? ? ?? ? list 
-All list types are compatible with list 
- 
-(37) ?? ? ???? ? ?? ? record 
-All record types are compatible with record 
- 
-(38) ?? ? ???? ? ?? ? table 
-All table types are compatible with table 
- 
-(39) ???? ? ???? ? ?????? ? ?????? 
-A list type is compaible with another list type if the item types are compatible, and vice-versa 
- 	 
- 
-(40) 	???? ? ???? = ?????, ????, ???? ? ???? = ?????, ???? ? ???? ? ???? ? ???? ? ???? 
-A function type is compatible with another function type if the return types are compatible, and the parameter lists are identical 
- 
-(41) ???? ? ??????, ???? ? ????� ? ???? ? ???? 
-An open record type is never compatible with a closed record type 
+(41) <em>t<sub>a</sub></em> &#8712; <em>T<sub>R<sup>o</sup></sub></em>, <em>t<sub>b</sub></em> &#8712; <em>T<sub>R<sup>&#x2022;</sup></sub></em> &#8594; <em>t<sub>a</sub></em> &#8816; <em>t<sub>b</sub></em><br/>
+An open record type is never compatible with a closed record type.
  
  
-(42) ???? ? ????� = ???????????, ??, ???? ? ?????? = ?????????, ?? ? ???? ? ???? 
-A closed record type is compatible with an otherwise identical open record type 
+(42) <em>t<sub>a</sub></em> &#8712; <em>T<sub>R<sup>&#x2022;</sup></sub></em> = &#10216;<em>false</em>, &#934;&#10217;, <em>t<sub>b</sub></em> &#8712; <em>T<sub>R<sup>o</sup></sub></em> = &#10216;<em>true</em>, &#934;&#10217; &#8594; <em>t<sub>a</sub></em> &#8804; <em>t<sub>b</sub></em><br/>
+A closed record type is compatible with an otherwise identical open record type.
+
+(43) <em>t<sub>a</sub></em> &#8712; <em>T<sub>R<sup>o</sup></sub></em> = &#10216;<em>true</em>, (&#934;, &#10216;<em>true</em>, <em>n</em>, <em>any</em>&#10217;)&#10217;, <em>t<sub>b</sub></em> &#8712; <em>T<sub>R<sup>o</sup></sub></em> = &#10216;<em>true</em>, &#934;&#10217;  &#8594; <em>t<sub>a</sub></em> &#8804; <em>t<sub>b</sub></em> &#8743; <em>t<sub>b</sub></em> &#8804; <em>t<sub>a</sub></em><br/>
+An optional field with the type any may be ignored when comparing two open record types.
+
+(44) <em>t<sub>a</sub></em> &#8712; <em>T<sub>R</sub></em> = &#10216;<em>b</em>, (&#934;, &#10216;<em>&#946;</em>, <em>n</em>, <em>u<sub>a</sub></em>&#10217;)&#10217;, <em>t<sub>b</sub></em> &#8712; <em>T<sub>R</sub></em> = &#10216;<em>b</em>, &#934;, &#10216;<em>&#946;</em>, <em>n</em>, <em>u<sub>b</sub></em>&#10217;)&#10217; &#8743; <em>u<sub>a</sub></em> &#8804; <em>u<sub>b</sub></em> &#8594; <em>t<sub>a</sub></em> &#8804; <em>t<sub>b</sub></em><br/>
+Two record types that differ only by one field are compatible if the name and optionality of the field are identical, and the types of said field are compatible.
+
+(45) <em>t<sub>a</sub></em> &#8712; <em>T<sub>R</sub></em> = &#10216;<em>b</em>, (&#934;, &#10216;<em>false</em>, <em>n</em>, <em>u</em>&#10217;)&#10217;, <em>t<sub>b</sub></em> &#8712; <em>T<sub>R</sub></em> = &#10216;<em>b</em>, (&#934;, &#10216;<em>true</em>, <em>n</em>, <em>u</em>&#10217;)&#10217; &#8594; <em>t<sub>a</sub></em> &#8804; <em>t<sub>b</sub></em><br/>
+A record type with a non-optional field is compatible with a record type identical but for that field being optional.
+
+(46) <em>t<sub>a</sub></em> &#8712; <em>T<sub>R<sup>o</sup></sub></em> = &#10216;<em>true</em>, (&#934;, &#10216;<em>b</em>, <em>n</em>, <em>u</em>&#10217;)&#10217;, <em>t<sub>b</sub></em> &#8712; <em>T<sub>R<sup>o</sup></sub></em> = &#10216;<em>true</em>, &#934;&#10217;  &#8594; <em>t<sub>a</sub></em> &#8804; <em>t<sub>b</sub></em><br/>
+An open record type is compatible with another open record type with one fewer field.
  
-(43) ???? ? ?????? = ?????????, (?, ?????????, ??, ???????)?, ???? ? ?????? = ?????????, ?? ? ???? ? ???? ? ???? ? ???? An optional field with the type any may be ignored when comparing two open record types 
- 
-(44) ???? ? ???? = ???, (?, ???, ??, ?????)?, ???? ? ???? = ???, (?, ???, ??, ?????)? ? ???? ? ???? ? ???? ? ???? 
-Two record types that differ only by one field are compatible if the name and optionality of the field are identical, and the types of said field are compatible. 
- 
-(45) ???? ? ???? = ???, (?, ???????????, ??, ???)?, ???? ? ???? = ???, (?, ?????????, ??, ???)? ? ???? ? ???? 
-A record type with a non-optional field is compatible with a record type identical but for that field being optional. 
- 
-(46) ???? ? ?????? = ?????????, (?, ???, ??, ???)?, ???? ? ?????? = ?????????, ?? ? ???? ? ???? 
-An open record type is compatible with another open record type with one fewer field 
- 
-(47) ???? ? ???? = (?, ???, ???, ??????), ???? ? ???? = (?, ???, ???, ??????) ? ???? ? ???? ? ???? ? ???? 
-A table type is compatible with a second table type, which is identical but for one column having a differing type, when the types for that column are compatible. 
- 
- 
-REFERENCES 
- 
-Microsoft Corporation (2015 August)  
-Microsoft Power Query for Excel Formula Language Specification [PDF]  
-Retrieved from https://msdn.microsoft.com/library/mt807488.aspx 
- 
-Microsoft Corporation (n.d.)  
-Power Query M function reference [web page]  
-Retrieved from https://msdn.microsoft.com/library/mt779182.aspx 
- 
+(47) <em>t<sub>a</sub></em> &#8712; <em>T<sub>T</sub></em> = (&#934;, &#10216;<em>i</em>, &#10216;<em>n</em>, <em>u<sub>a</sub></em>&#10217;&#10217;), <em>t<sub>b</sub></em> &#8712; <em>T<sub>T</sub></em> = (&#934;, &#10216;<em>i</em>, &#10216;<em>n</em>, <em>u<sub>b</sub></em>&#10217;&#10217;) &#8743; <em>u<sub>a</sub></em> &#8804; <em>u<sub>b</sub></em> &#8594; <em>t<sub>a</sub></em> &#8804; <em>t<sub>b</sub></em><br/>
+A table type is compatible with a second table type, which is identical but for one column having a differing type, when the types for that column are compatible.
+
+## REFERENCES
+
+Microsoft Corporation (2015 August)<br/>
+Microsoft Power Query for Excel Formula Language Specification [PDF]<br/>
+Retrieved from https://msdn.microsoft.com/library/mt807488.aspx
+
+Microsoft Corporation (n.d.)<br/>
+Power Query M function reference [web page]<br/>
+Retrieved from https://msdn.microsoft.com/library/mt779182.aspx
+
 
