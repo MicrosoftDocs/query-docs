@@ -79,7 +79,7 @@ A Table Type is an ordered sequence of zero-or-more column types, where there ar
 (18) T<sub>P</sub> := { any; none; null; logical; number; time; date; datetime; datetimezone;  duration; text; binary; type; list; record; table; function; anynonnull  }<br/>
 A Primitive Type is one from this list of M keywords.
 
-(19) T<sub>N</sub> := `{`<em>t<sub>n</sub</em>,u &#8712; `T |` <em>t<sub>n</sub></em>`=u + null } = nullable t`<br/>
+(19) T<sub>N</sub> := `{`<em>t<sub>n</sub></em>,u &#8712; `T |` <em>t<sub>n</sub></em>`=u + null } = nullable t`<br/>
 Any type can additionally be marked as being nullable, by using the "nullable" keyword. 
  
 (20) T := T<sub>F</sub> &#8746; T<sub>L</sub> &#8746; T<sub>R</sub> &#8746; T<sub>T</sub> &#8746; T<sub>P</sub> &#8746; T<sub>N</sub><br/>
