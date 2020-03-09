@@ -38,7 +38,8 @@ defines an _if-expression_ to consist of the token `if`,  followed by an _if-con
 
 When there is more than one possible expansion of a non-terminal symbol, the alternatives are listed on separate lines. For example, the production:
 
-_variable-list: variable<br/>
+_variable-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable-list , variable_
 
 

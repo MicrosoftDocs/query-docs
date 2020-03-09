@@ -77,9 +77,9 @@ A _number value_ is used for numeric and arithmetic operations. The following ar
 ```
 3.14  // Fractional number 
 -1.5  // Fractional number 
-1.0e3 // Fractional number with exponent 123
- // Whole number 
-1e3    // Whole number with exponent 
+1.0e3 // Fractional number with exponent
+123   // Whole number 
+1e3   // Whole number with exponent 
 0xff  // Whole number in hex (255)
 ```
 
@@ -259,9 +259,10 @@ A _datetimezone_ value contains a datetime and a timezone. A _timezone_ is encod
 DateTimeZone values may be constructed using the `#datetimezone` intrinsic.
 
 ```
-#datetimezone(     year, month, 
-day,     hour, minute, second,
-offset-hours, offset-minutes)
+#datetimezone(
+       year, month, day,
+       hour, minute, second,
+       offset-hours, offset-minutes)
 ```
 
 The following must hold or an error with reason code `Expression.Error` is raised:
@@ -350,17 +351,18 @@ The native type of duration values is the intrinsic type `duration`.
 
 A _text_ value represents a sequence of Unicode characters. Text values have a literal form conformant to the following grammar:
 
-<em>text-literal:</em><br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"&nbsp;&nbsp;_text-literal-characters<sub>opt</sub>  " text-literal-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;characters: text-literal-character text-literal-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;characters  text-literal-character_<br/> 
-<em>text-literal-character: single-text-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>character character-escape-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>sequence  double-quote-escape-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>sequence</em><br/>
-<em>single-text-character:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any character except `"` (`U+0022`) or `#` (`U+0023`) followed by `(` (`U+0028`) <em>double-quote-</em><br/>
-<em>escape-sequence:</em><br/>
+_text-literal:<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"` text-literal-characters<sub>opt</sub>  `"`<br/>
+_text-literal-characters:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal-character<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal-characters  text-literal-character_<br/> 
+text-literal-character:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-text-character<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;character-escape-sequence<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;double-quote-escape-sequence<br/>
+single-text-character:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any character except `"` (`U+0022`) or `#` (`U+0023`) followed by `(` (`U+0028`)<br/>
+_double-quote-escape-sequence:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`""` (`U+0022`, `U+0022`)
 
 The following is an example of a _text_ value:
@@ -412,10 +414,12 @@ A _list value_ is a value which produces a sequence of values when enumerated. A
 
 _list-expression:_<br/> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ _item-list<sub>opt</sub>_  }<br/>
-_item-list: item item_<br/>
-&nbsp;&nbsp;,  _item-list  item:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression expression  ..<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression_
+_item-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item ,  item-list<br/>
+item:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression_  `..` _expression_
 
 The following is an example  of a _list-expression_ that defines a list with three text values: `"A"`, `"B"`, and `"C"`.
 
@@ -472,13 +476,14 @@ The native type of list values is the intrinsic type `list`, which specifies an 
 
 A _record value_ is an ordered sequence of fields. A _field_ consists of a _field name_, which is a text value that uniquely identifies the field within the record, and a _field value_. The field value can be any kind of value, including record. Records can be constructed using initialization syntax, as follows:
 
-<em>record-expression:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>[  field-list<sub>opt</sub>  ] field-list:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>field field  ,</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>field-list</em><br/> 
-<em>field: field-name  =</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression</em><br/> 
-<em>field-name: generalized-identifier</em>
+_record-expression:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`  _field-list<sub>opt</sub>_  `]`<br/> _field-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field  ,  field-list<br/> 
+field:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-name_  `=`  _expression<br/> 
+field-name:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier_
 
 The following example constructs a record with a field named `x` with value `1`, and a field named `y` with value `2`.
 
@@ -564,7 +569,7 @@ The following examples illustrate the above operators. Note that record merge us
 ```
 [ a = 1, b = 2 ] & [ c = 3 ]   // [ a = 1, b = 2, c = 3 ] 
 [ a = 1, b = 2 ] & [ a = 3 ]   // [ a = 3, b = 2 ] 
-[ a = 1, b = 2 ] = [ b = 2, a = 1 ]       // true 
+[ a = 1, b = 2 ] = [ b = 2, a = 1 ]         // true 
 [ a = 1, b = 2, c = 3 ] <> [ a = 1, b = 2 ] // true
 ```
 
@@ -585,7 +590,8 @@ The above example constructs a table with two columns, both of which are of `typ
 `#table` can also be used to specify a full table type:
 
 ```
-#table(     type table [Digit = number, Name = text],  
+#table(
+    type table [Digit = number, Name = text],  
     {{1,"one"}, {2,"two"}, {3,"three"}} 
     )
 ```

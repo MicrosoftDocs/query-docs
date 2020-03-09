@@ -145,31 +145,35 @@ Merging variables with an environment may introduce a conflict between variables
 
 An _identifier-reference_ is used to refer to a variable within an environment.
 
-<em>identifier-expression:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>identifier-reference</em><br/> 
-<em>identifier-reference:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>exclusive-identifier-reference</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>inclusive-identifier-reference</em>
+_identifier-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier-reference<br/> 
+identifier-reference:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exclusive-identifier-reference<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inclusive-identifier-reference_
 
 The simplest form of identifier reference is an _exclusive-identifier-reference_:
 
-<em>exclusive-identifier-reference:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>identifier</em>
+_exclusive-identifier-reference:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier_
 
 It is an error for an _exclusive-identifier-reference_ to refer to a variable that is not part of the environment of the expression that the identifier appears within, or to refer to an identifier that is currently being initialized.
 
 An _inclusive-identifier-reference_ can be used to gain access to the environment that includes the identifier being initialized. If it used in a context where there is no identifier being initialized, then it is equivalent to an _exclusive-identifier-reference_.
 
-<em>inclusive-identifier-reference:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>@  identifier</em>
+_inclusive-identifier-reference:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`@`  _identifier_
 
 This is useful when defining recursive functions since the name of the function would normally not be in scope.
 
 ```
 [ 
-    Factorial = (n) =>         if n <= 1 then             1
-else             n * @Factorial(n - 1),  // @ is scoping operator 
-     x = Factorial(5) 
+    Factorial = (n) =>
+        if n <= 1 then
+            1
+        else
+            n * @Factorial(n - 1),  // @ is scoping operator
+
+    x = Factorial(5) 
 ]
 ```
 
@@ -182,8 +186,8 @@ Consider the following expression which initializes a record:
 ```
 [ 
     C = A + B, 
-A = 1 + 1, 
-B = 2 + 2 
+    A = 1 + 1, 
+    B = 2 + 2 
 ]
 ```
 
@@ -191,9 +195,9 @@ When evaluated, this expression produces the following record value:
 
 ```
 [ 
-C = 6, 
-A = 2, 
-B = 4 
+    C = 6, 
+    A = 2, 
+    B = 4 
 ]
 ```
 
@@ -215,7 +219,8 @@ C = A + B
 
 Or, since `A` and `B` do not depend on each other, they can be computed concurrently:
 
-`B = 2 + 2`   <em>concurrently with</em>   `A = 1 + 1 C = A + B`
+&nbsp;&nbsp;&nbsp;&nbsp;`B = 2 + 2`   _concurrently with_   `A = 1 + 1`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;`C = A + B`
 
 ## Side effects
 

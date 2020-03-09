@@ -32,17 +32,22 @@ The set of _primitive types_ includes the types of primitive values a number of 
 
 All types that are not members of the closed set of primitive types are collectively referred to as _custom types_. Custom types can be written using a `type-expression`:
 
-<em>type-expression:</em><br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>primary-expression</em> `type`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>primary-type</em><br/> 
-<em>type:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>parenthesized-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>primary-type primary-type:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>primitive-type record-type list-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>type function-type table-type</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>nullable-type</em><br/>
-<em>primitive-type: one of</em> `any binary date datetime datetimezone duration function`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`list logical none null number record table text time type`
+_type-expression:<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`type` _primary-type<br/> 
+type:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parenthesized-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-type<br/>
+primary-type:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primitive-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;record-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;table-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nullable-type<br/>
+primitive-type:_ one of<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`any binary date datetime datetimezone duration function list logical`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`none null number record table text time type`
 
 The _primitive-type_ names are _contextual keywords_ recognized only in a _type_ context. The use of parentheses in a _type_ context moves the grammar back to a regular expression context, requiring the use of the type keyword to move back into a type context. For example, to invoke a function in a _type_ context, parentheses can be used:
 
@@ -73,9 +78,9 @@ type [ X = number, Y = number ]
 The ascribed type of a value is obtained using the standard library function `Value.Type`, as shown in the following examples:
 
 ```
-Value.Type( 2 )       // type number 
-Value.Type( {2} )     // type list 
-Value.Type( [ X = 1, Y = 2 ] ) // type record
+Value.Type( 2 )                 // type number 
+Value.Type( {2} )               // type list 
+Value.Type( [ X = 1, Y = 2 ] )  // type record
 ```
 
 The `is` operator is used to determine whether a value's type is compatible with a given type, as shown in the following examples:
@@ -90,7 +95,7 @@ The `as` operator checks if the value is compatible with the given type, and rai
 
 ```
 Value.Type( 1 as number )   // type number 
-{2} as text       // error, type mismatch
+{2} as text                 // error, type mismatch
 ```
 
 Note that the `is` and `as` operators only accept primitive types as their right operand. M does not provide means to check values for conformance to custom types.
@@ -138,9 +143,10 @@ The type `any` is abstract, classifies all values in M, and all types in M are c
 
 Any value that is a list conforms to the intrinsic type `list`, which does not place any restrictions on the items within a list value.
 
-<em>list-type:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>{  item-type  } item-type:</em><br/>
-<em>type</em>
+_list-type:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{`  _item-type_  `}`<br/>
+_item-type:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type_
 
 The result of evaluating a _list-type_ is a _list type value_ whose base type is `list`.
 
@@ -152,7 +158,7 @@ type { number }        // list of numbers type
      {{ text }}        // list of lists of text values
 ```
 
-A value conforms to a list type if the value is a list and each item in that list value conforms to the list type�s item type.
+A value conforms to a list type if the value is a list and each item in that list value conforms to the list type's item type.
 
 The item type of a list type indicates a bound: all items of a conforming list conform to the item type.
 
@@ -160,28 +166,31 @@ The item type of a list type indicates a bound: all items of a conforming list c
 
 Any value that is a record conforms to the intrinsic type record, which does not place any restrictions on the field names or values within a record value. A _record-type value_ is used to restrict the set of valid names as well as the types of values that are permitted to be associated with those names.
 
-<em>record-type:</em><br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>[ open-record-marker  ]</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>[  field-specification-list  ]</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>[  field-specification-list ,  open-record-marker  ] field-specification-list:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>field-specification field-specification  ,</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>field-specification-list</em><br/> 
-<em>field-specification:</em> `optional`<em><sub>opt</sub> identifier field-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>type-specification<sub>opt</sub></em><br/>
-<em>field-type-specification:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>= field-type field-type:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>type</em><br/>
-<em>open-record-marker:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>...</em>
+_record-type:_<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[` _open-record-marker_  `]`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`  _field-specification-list_  `]`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`  _field-specification-list ,  open-record-marker_  `]`<br/>
+_field-specification-list:</em><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-specification<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-specification  ,  field-specification-list<br/> 
+field-specification:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional`_<sub>opt</sub> identifier field-type-specification<sub>opt</sub><br/>
+field-type-specification:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`=` _field-type<br/>
+field-type:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type<br/>
+open-record-marker:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`...`
 
 The result of evaluating a _record-type_ is a type value whose base type is `record`.
 
 The following examples illustrate the syntax for declaring record types:
 
 ```
-type [ X = number, Y = number] type [ Name = text, 
-Age = number ] type [ Title = text, optional 
-Description = text ] type [ Name = text, ... ]
+type [ X = number, Y = number] 
+type [ Name = text, Age = number ]
+type [ Title = text, optional Description = text ] 
+type [ Name = text, ... ]
 ```
 
 Record types are _closed_ by default, meaning that additional fields not present in the _fieldspecification-list_ are not allowed to be present in conforming values. Including the _openrecord-marker_ in the record type declares the type to be _open_, which permits fields not present in the field specification list. The following two expressions are equivalent:
@@ -203,23 +212,28 @@ A conforming value may contain field names not listed in the field specification
 
 Any function value conforms to the primitive type `function`, which does not place any restrictions on the types of the function's formal parameters or the function's return value. A custom _function-type value_ is used to place type restrictions on the signatures of conformant function values.
 
-<em>function-type:</em> `function` <em>(  parameter-specification-list<sub>opt</sub> ) function-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>return-type</em><br/>
-<em>parameter-specification-list:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>required-parameter-specification-list required-parameter-specification-list  ,</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>optional-parameter-specification-list optional-parameter-specification-list</em><br/>
-<em>required-parameter-specification-list: required-parameter-specification</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>required-parameter-specification , required-parameter-specification-list</em><br/>
-<em>required-parameter-specification:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>parameter-specification</em><br/>
-<em>optional-parameter-specification-list: optional-parameter-specification</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>optional-parameter-specification , optional-parameter-specification-list</em><br/>
-<em>optional-parameter-specification:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional` <em>parameter-specification</em><br/>
-<em>parameter-specification: parameter-name</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>parameter-type</em><br/> 
-<em>function-return-type: assertion</em><br/>
-<em>assertion:</em> `as`  <em>nullable-primitve-type</em>
+_function-type:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`function (`  _parameter-specification-list<sub>opt</sub>_ `)` _function-return-type<br/>
+parameter-specification-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-parameter-specification-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-parameter-specification-list  ,  optional-parameter-specification-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter-specification-list<br/>
+required-parameter-specification-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-parameter-specification<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-parameter-specification , required-parameter-specification-list<br/>
+required-parameter-specification:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-specification<br/>
+optional-parameter-specification-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter-specification<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter-specification , optional-parameter-specification-list<br/>
+optional-parameter-specification:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional` _parameter-specification<br/>
+parameter-specification:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-name parameter-type<br/> 
+function-return-type:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assertion<br/>
+assertion:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as`  _nullable-primitve-type_
 
 The result of evaluating a _function-type_ is a type value whose base type is `function`.
 
@@ -238,10 +252,10 @@ Formal parameter names are ignored for the purposes of determining function type
 
 A _table-type value_ is used to define the structure of a table value.
 
-<em>table-type:</em> `table`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>row-type</em><br/> 
-<em>row-type:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>[   field-specification-list  ]</em>
+_table-type:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`table` _row-type<br/> 
+row-type:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-specification-list_  `]`
 
 The result of evaluating a _table-type_ is a type value whose base type is `table`.
 
@@ -269,14 +283,14 @@ Type.ReplaceTableKeys(tableType, {})
 
 For any <code>type <em>T</em></code>, a nullable variant can be derived by using _nullable-type_:
 
-<em>nullable-type: nullable</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>type</em>
+_nullable-type:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable` _type_
 
 The result is an abstract type that allows values of type _T_ or the value `null`.
 
 ```
-42 is nullable number              // true null is
-nullable number            // true
+42 is nullable number             // true null is
+nullable number                   // true
 ```
 
 Ascription of `type nullable` _T_ reduces to ascription of `type null` or `type` _T_. (Recall that nullable types are abstract and no value can be directly of abstract type.)
@@ -296,24 +310,24 @@ The following hold (for any <code>type <em>T</em></code>):
 The following are pairwise equivalent (for any <code>type <em>T</em></code>):
 
 <code>
-&nbsp;&nbsp;type nullable any<br/> 
-&nbsp;&nbsp;any<br/>
-&nbsp;&nbsp;Type.NonNullable(type any) type<br/>
-&nbsp;&nbsp;anynonnull<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;type nullable <br/>
-&nbsp;&nbsp;none type null 
+&nbsp;&nbsp;&nbsp;&nbsp;type nullable any<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;any<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Type.NonNullable(type any) type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;anynonnull<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type nullable <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;none type null 
  
-&nbsp;&nbsp;Type.NonNullable(type null)<br/>
-&nbsp;&nbsp;type none  type nullable<br/>
-&nbsp;&nbsp;nullable <em>T</em> type nullable <em>T</em><br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;Type.NonNullable(type null)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;type none  type nullable<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;nullable <em>T</em> type nullable <em>T</em><br/> 
  
-&nbsp;&nbsp;Type.NonNullable(Type.NonNullable(type <em>T</em>))<br/> 
-&nbsp;&nbsp;Type.NonNullable(type <em>T</em>) 
+&nbsp;&nbsp;&nbsp;&nbsp;Type.NonNullable(Type.NonNullable(type <em>T</em>))<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;Type.NonNullable(type <em>T</em>) 
  
-&nbsp;&nbsp;Type.NonNullable(type nullable <em>T</em>)<br/> 
-&nbsp;&nbsp;Type.NonNullable(type <em>T</em>)<br/> 
-&nbsp;&nbsp;type nullable (Type.NonNullable(type<br/>
-&nbsp;&nbsp;<em>T</em>)) type nullable <em>T</em>
+&nbsp;&nbsp;&nbsp;&nbsp;Type.NonNullable(type nullable <em>T</em>)<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;Type.NonNullable(type <em>T</em>)<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;type nullable (Type.NonNullable(type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<em>T</em>)) type nullable <em>T</em>
 </code>
 
 ## Ascribed type of a value
@@ -359,10 +373,14 @@ Type.RecordFields( type [A=text, B=time] )
   //   B = [Type = type time, Optional = false] ] 
 Type.TableRow( type table [X=number, Y=date] ) 
   // type [X = number, Y = date] 
-Type.FunctionParameters(         type function (x as number, optional y as text) as number) 
-  // [ x = type number, y = type nullable text ] Type.FunctionRequiredParameters(         type function (x as number, optional y as text) as number) 
+Type.FunctionParameters(
+        type function (x as number, optional y as text) as number) 
+  // [ x = type number, y = type nullable text ] 
+Type.FunctionRequiredParameters(
+        type function (x as number, optional y as text) as number) 
   // 1 
-Type.FunctionReturn(         type function (x as number, optional y as text) as number) 
+Type.FunctionReturn(
+        type function (x as number, optional y as text) as number) 
   // type number 
 ```
 
