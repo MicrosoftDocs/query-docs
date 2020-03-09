@@ -351,9 +351,9 @@ The native type of duration values is the intrinsic type `duration`.
 A _text_ value represents a sequence of Unicode characters. Text values have a literal form conformant to the following grammar:
 
 <em>text-literal:</em><br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"&nbsp;&nbsp;<em>text-literal-characters<sub>opt</sub>  " text-literal-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;characters: text-literal-character text-literal-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;characters  text-literal-character</em><br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"&nbsp;&nbsp;_text-literal-characters<sub>opt</sub>  " text-literal-<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;characters: text-literal-character text-literal-<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;characters  text-literal-character_<br/> 
 <em>text-literal-character: single-text-</em><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>character character-escape-</em><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>sequence  double-quote-escape-</em><br/>
@@ -410,11 +410,12 @@ The native type of binary values is the intrinsic type _binary_.
 
 A _list value_ is a value which produces a sequence of values when enumerated. A value produced by a list can contain any kind of value, including a list. Lists can be constructed using the initialization syntax, as follows:
 
-<em>list-expression:</em><br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>{  item-list<sub>opt</sub>  }</em><br/> <em>item-list: item item</em><br/>
-&nbsp;&nbsp;<em>,  item-list</em> 
-<em>item:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression expression  ..</em><br/>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression</em>
+_list-expression:_<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ _item-list<sub>opt</sub>_  }<br/>
+_item-list: item item_<br/>
+&nbsp;&nbsp;,  _item-list  item:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression expression  ..<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression_
 
 The following is an example  of a _list-expression_ that defines a list with three text values: `"A"`, `"B"`, and `"C"`.
 
