@@ -17,13 +17,15 @@ ms.author: v-douklo
 
 A let expression can be used to capture a value from an intermediate calculation in a variable.
 
-<em>let-expression:</em> `let` <em>variable-list</em> `in`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression</em><br/>
-<em>variable-list: variable</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>variable , variable-list</em><br/> 
-<em>variable: variable-name =</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression</em><br/>
-<em>variable-name: identifier</em>
+_let-expression:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`let` _variable-list_ `in` _expression<br/>
+variable-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable , variable-list<br/> 
+variable:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable-name = expression<br/>
+variable-name:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier_
 
 The following example shows intermediate results being calculated and stored in variables `x`, `y`, and `z` which are then used in a subsequent calculation `x + y + z`:
 
@@ -31,7 +33,8 @@ The following example shows intermediate results being calculated and stored in 
 let     x = 1 + 1,
         y = 2 + 2,     
         z = y + 1 
-in      x + y + z
+in
+        x + y + z
 ```
 
 The result of this expression is:
@@ -56,7 +59,7 @@ A let expression can be seen as syntactic sugar over an implicit record expressi
 [     x = 1 + 1,
       y = 2 + 2,
       z = y + 1,
-      result = x + y + z ]
-[result]
+      result = x + y + z 
+][result]
 ```
 

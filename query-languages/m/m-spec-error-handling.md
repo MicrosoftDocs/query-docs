@@ -24,8 +24,8 @@ Errors can be raised from within an expression, and can be handled from within a
 
 The syntax for raising an error is as follows:
 
-<em>error-raising-expression:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`error`  <em>expression</em>
+_error-raising-expression:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`error`  _expression_
 
 Text values can be used as shorthand for error values. For example:
 
@@ -62,13 +62,14 @@ Raising an error will cause the current expression evaluation to stop, and the e
 
 An _error-handling-expression_ is used to handle an error:
 
-<em>error-handling-expression:</em> `try` <em>protected-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression otherwise-clause<sub>opt</sub></em><br/>
-<em>protected-expression: expression</em><br/>
-<em>otherwise-clause:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`otherwise` <em>default-expression</em><br/>
-<em>default-expression:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression</em>
+_error-handling-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`try` _protected-expression otherwise-clause<sub>opt</sub><br/>
+protected-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
+otherwise-clause:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`otherwise` _default-expression<br/>
+default-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression_
 
 The following holds when evaluating an _error-handling-expression_ without an _otherwiseclause_:
 
@@ -98,8 +99,9 @@ The following example illustrates an _error-handling-expression_ in a case where
 
 ```
 let
-     x = try "A" in
-     if x[HasError] then x[Error] else x[Value] 
+    x = try "A"
+in
+    if x[HasError] then x[Error] else x[Value] 
 // "A"
 ```
 
@@ -107,8 +109,9 @@ The following example shows raising an error and then handling it:
 
 ```
 let
-     x = try error "A" in
-     if x[HasError] then x[Error] else x[Value] 
+    x = try error "A" 
+in
+    if x[HasError] then x[Error] else x[Value] 
 // [ Reason = "Expression.Error", Message = "A", Detail = null ]
 ```
 
@@ -132,12 +135,12 @@ The following example shows a record initializer with a field `A` that raises an
 
 ```
 [ 
-A = error "A", 
-B = A + 1,
+    A = error "A", 
+    B = A + 1,
     C = let x =
             try A in
-            if not x[HasError] then x[Value]
-            else x[Error], 
+                if not x[HasError] then x[Value]
+                else x[Error], 
     D = 1 + 1 
 ]
 ```
@@ -146,10 +149,10 @@ The result of evaluating the above expression is:
 
 ```
 [ 
-A = // error with message "A" 
-B = // error with message "A" 
-C = "A", 
-D = 2 
+    A = // error with message "A" 
+    B = // error with message "A" 
+    C = "A", 
+    D = 2 
 ]
 ```
 
@@ -158,7 +161,8 @@ Error handling in M should be performed close to the cause of errors to deal wit
 ```
 let
     f = (x) => [ a = error "bad", b = x ],
-    g = try f(42) otherwise 123 in 
+    g = try f(42) otherwise 123
+in 
     g[a]  // error "bad"
 ```
 
@@ -179,7 +183,7 @@ While an expression is being developed, an author may want to leave out the impl
 
 The ellipsis symbol (`...`) can be used as a shortcut for `error`.
 
-<em>not-implemented-expression:</em><br/>
+_not-implemented-expression:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`...`
 
 For example, the following is equivalent to the previous example:

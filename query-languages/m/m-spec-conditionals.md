@@ -15,19 +15,20 @@ ms.author: v-douklo
 
 The _if-expression_ selects from two expressions based on the value of a logical input value and evaluates only the selected expression.
 
-<em>if-expression:</em> `if`  <em>if-condition</em>  `then`  <em>true-expression</em>  `else`  <em>false-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression</em><br/> 
-<em>if-condition:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression</em><br/>
-<em>true-expression:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression</em><br/>
-<em>false-expression: expression</em>
+_if-expression:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `if`  _if-condition_  `then`  _true-expression_  `else`  _false-expression<br/> 
+if-condition:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
+true-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
+false-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression_
 
 The following are examples of _if-expressions_:
 
 ```
-if 2 > 1 then 2 else 1     // 2 if 1 = 1 
-then "yes" else "no"   // "yes"
+if 2 > 1 then 2 else 1          // 2
+if 1 = 1 then "yes" else "no"   // "yes"
 ```
 
 The following holds when evaluating an _if-expression_:

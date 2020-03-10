@@ -19,30 +19,34 @@ A _function_ is a value that represents a mapping from a set of argument values 
 
 Functions are written using a _function-expression_:
 
-<em>function-expression:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>(  parameter-list<sub>opt</sub>  )  function-return-type<sub>opt</sub>  =>  function-body</em><br/>
-<em>function-body: expression</em><br/>
-<em>parameter-list:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>fixed-parameter-list fixed-parameter-list  ,</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>optional-parameter-list optional-parameter-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>list</em><br/>
-<em>fixed-parameter-list:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>parameter  parameter  ,  fixed-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>parameter-list</em><br/> 
-<em>parameter:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>parameter-name parameter-type<sub>opt</sub></em><br/>
-<em>parameter-name: identifier</em><br/>
-<em>parameter-type:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>assertion</em><br/>
-<em>function-return-type: assertion</em><br/>
-<em>assertion:</em> `as`  <em>nullable-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>primitve-type</em><br/>
-<em>optional-parameter-list: optional-parameter</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>optional-parameter  ,  optional-parameter-list</em><br/>
-<em>optional-parameter:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional` <em>parameter</em><br/>
-<em>nullable-primitve-type</em> `nullable`<sub>opt</sub></em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>primitive-type</em>
+_function-expression:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(`  _parameter-list<sub>opt</sub>_  `)`  _function-return-type<sub>opt</sub>_  `=>`  _function-body<br/>
+function-body:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
+parameter-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fixed-parameter-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fixed-parameter-list  ,  optional-parameter-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter-list<br/>
+fixed-parameter-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter  ,  fixed-parameter-list<br/> 
+parameter:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-name parameter-type<sub>opt</sub><br/>
+parameter-name:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier<br/>
+parameter-type:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assertion<br/>
+function-return-type:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assertion<br/>
+assertion:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as`  _nullable-primitve-type<br/>
+optional-parameter-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter  ,  optional-parameter-list<br/>
+optional-parameter:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional` _parameter<br/>
+nullable-primitve-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`_<sub>opt</sub> primitive-type_
 
 The following is an example of a function that requires exactly two values `x` and `y`, and produces the result of applying the `+` operator to those values. The `x` and `y` are _parameters_ that are part of the _formal-parameter-list_ of the function, and the `x + y` is the _function body_:
 
@@ -70,9 +74,10 @@ The native type of function values is a custom function type (derived from the i
 
 The _function-body_ of a function is executed by _invoking_ the function value using an _invokeexpression_. Invoking a function value means the _function-body_ of the function value is evaluated and a value is returned or an error is raised.
 
-<em>invoke-expression: primary-expression  (  argument-list<sub>opt</sub>  )</em><br/>
-<em>argument-list:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression-list</em>
+_invoke-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_  `(`  _argument-list<sub>opt</sub>_  `)`<br/>
+_argument-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression-list_
 
 Each time a function value is invoked, a set of values are specified as an _argument-list_, called the _arguments_ to the function.
 
@@ -81,7 +86,8 @@ An _argument-list_ is used to specify a fixed number of arguments directly as a 
 ```
 [ 
     MyFunction = (x, y, z) => x + y + z, 
-    Result1 = MyFunction(1, 2, 3)    // 6 ]
+    Result1 = MyFunction(1, 2, 3)           // 6
+]
 ```
 
 The following holds when invoking a function:
@@ -172,7 +178,7 @@ Similarly, mutually recursive functions can be written as long as each function 
 [ 
     Factorial = (x) => if x = 0 then 1 else Factorial2(x), 
     Factorial2 = (x) => x * Factorial(x - 1), 
-    Result = Factorial(3)  // 6 
+    Result = Factorial(3)     // 6 
 ]
 ```
 
@@ -185,7 +191,8 @@ A function can return another function as a value. This function can in turn dep
     MyFunction = (x) => () => x, 
     MyFunction1 = MyFunction(1), 
     MyFunction2 = MyFunction(2), 
-    Result = MyFunction1() + MyFunction2()  // 3 ]
+    Result = MyFunction1() + MyFunction2()  // 3 
+]
 ```
 
 Each time the function is invoked, a new function value will be returned that maintains the value of the parameter so that when it is invoked, the parameter value will be returned.
@@ -201,7 +208,7 @@ A =
         MyFunction = () => C, 
         C = 1 
     ], 
-B = A[MyFunction]()  // 1 
+B = A[MyFunction]()           // 1 
 ]
 ```
 
@@ -211,10 +218,10 @@ When `MyFunction` is invoked, it accesses the value of the variable `C`, even th
 
 The _each-expression_ is a syntactic shorthand for declaring untyped functions taking a single formal parameter named `_` (underscore).
 
-<em>each-expression:</em> `each` <em>each-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression-body</em><br/>
-<em>each-expression-body:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>function-body</em>
+_each-expression:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`each` _each-expression-body<br/>
+each-expression-body:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function-body_
 
 Simplified declarations are commonly used to improve the readability of higher-order function invocation.
 

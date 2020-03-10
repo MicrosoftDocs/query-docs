@@ -14,16 +14,19 @@ ms.author: v-douklo
 
 A _section-document_ is an M program that consists of multiple named expressions.
 
-<em>section-document:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>section</em><br/>
-<em>section:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>literal-attributes<sub>opt</sub></em>  `section`  <em>section-nameopt  ;  section-membersopt</em><br/> 
-<em>section-name: identifier</em><br/>
-<em>section-members: section-member</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>section-members section-member</em><br/>
-<em>section-member: literal-attributes<sub>opt</sub></em>  `shared`<sub>opt</sub> <em>section-member-name  =</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression  ;</em><br/>
-<em>section-member-name: identifier</em>
+_section-document:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;section<br/>
+section:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;literal-attributes<sub>opt</sub>_  `section`  _section-nameopt_  `;`  _section-members<sub>opt</sub><br/> 
+section-name:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier<br/>
+section-members:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;section-member<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;section-members section-member<br/>
+section-member:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;literal-attributes<sub>opt</sub>_  `shared`_<sub>opt</sub> section-member-name_  `=`  _expression_  `;`<br/>
+_section-member-name:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier_
 
 In M, a section is an organizational concept that allows related expressions to be named and grouped within a document. Each section has a _section-name_, which identifies the section and qualifies the names of the _section-members_ declared within the section. A _sectionmember_ consists of a _member-name_ and an _expression_. Section member expressions may refer to other section members within the same section directly by member name.
 
@@ -32,24 +35,26 @@ The following example shows a section-document that contains one section:
 ```
 section Section1; 
 
-A = 1;          //1     
-B = 2;          //2 
-C = A + B;      //3
+A = 1;                          //1     
+B = 2;                          //2 
+C = A + B;                      //3
 ```
 
 Section member expressions may refer to section members located in other sections by means of a _section-access-expression_, which qualifies a section member name with the name of the containing section.
 
-<em>section-access-expression:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>identifier</em> `!` <em>identifier</em>
+_section-access-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier_ `!` _identifier_
 
 The following example shows a document containing two sections that are mutually referential:
 
 ```
 section Section1; 
-A = "Hello";                   //"Hello" 
-B = 1 + Section2!A;            //3 
- section Section2; A = 2;      //2 
-B = Section1!A & " world!";    //"Hello, world"
+A = "Hello";                    //"Hello" 
+B = 1 + Section2!A;             //3
+
+section Section2; 
+A = 2;                          //2 
+B = Section1!A & " world!";     /"Hello, world"
 ```
 
 Section members may optionally be declared as `shared`, which omits the requirement to use a _section-access-expression_ when referring to shared members outside of the containing section. Shared members in external sections may be referred to by their unqualified member name so long as no member of the same name is declared in the referring section and no other section has a like-named shared member.
@@ -72,11 +77,14 @@ C = Section1!A + 2;  // 3
 Defining a shared member with the same name in different sections will produce a valid global environment, however accessing the shared member will raise an error when accessed.
 
 ```
-section Section1; shared A = 1; 
- section Section2; shared A = "Hello"; 
+section Section1; 
+shared A = 1; 
+
+section Section2; 
+shared A = "Hello"; 
  
 section Section3; 
-B = A;  //Error: shared member A has multiple definitions
+B = A;    //Error: shared member A has multiple definitions
 ```
 
 The following holds when evaluating a section-document:
@@ -113,6 +121,7 @@ The following example shows a document consisting of two sections and the record
 section Section1; 
 A = 1; 
 B = 2;  
+
 section Section2;
 C = "Hello"; 
 D = "world"; 

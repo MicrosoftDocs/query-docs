@@ -14,24 +14,25 @@ ms.author: v-douklo
 
 ## Lexical grammar
 
-<em>lexical-unit:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>lexical-elements<sub>opt</sub></em><br/>
-<em>lexical-elements: lexical-element</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>lexical-element  lexical-elements</em><br/>
-<em>lexical-element:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>whitespace</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>token comment</em>
+_lexical-unit:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lexical-elements<sub>opt</sub><br/>
+lexical-elements:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lexical-element<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lexical-element  lexical-elements<br/>
+lexical-element:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;whitespace<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;token comment_
 
 ### White space
 
-<em>whitespace:</em><br/>
+_whitespace:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any character with Unicode class Zs<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Horizontal tab character (`U+0009`)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vertical tab character (`U+000B`)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Form feed character (`U+000C`)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Carriage return character (`U+000D`) followed by line feed character (`U+000A`)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>new-line-character</em><br/>
-<em>new-line-character:</em><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_new-line-character<br/>
+new-line-character:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Carriage return character (`U+000D`)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Line feed character (`U+000A`)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next line character (`U+0085`)<br/>
@@ -40,496 +41,560 @@ ms.author: v-douklo
 
 ### Comment
 
-<em>comment:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>single-line-comment delimited-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>comment</em><br/> 
-<em>single-line-comment:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`//`  <em>single-line-comment-characters<sub>opt</sub> single-line-comment-</em><br/>
-<em>characters: single-line-comment-character single-line-comment-</em><br/>
-<em>characters  single-line-comment-character</em><br/> 
-<em>single-line-comment-character:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any Unicode character except a <em>new-line-character</em><br/>
-<em>delimited-comment:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`/*` <em>delimited-comment-text<sub>opt</sub>  asterisks</em>  `/` <em>delimited-comment-text:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>delimited-comment-section delimited-comment-text</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>delimited-comment-section</em><br/>
-<em>delimited-comment-section:</em><br/>
+_comment:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-line-comment<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delimited-comment</em><br/> 
+single-line-comment:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`//`  _single-line-comment-characters<sub>opt</sub><br/>
+single-line-comment-characters:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-line-comment-character<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-line-comment-characters  single-line-comment-character<br/> 
+single-line-comment-character:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any Unicode character except a _new-line-character<br/>
+delimited-comment:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`/*` _delimited-comment-text<sub>opt</sub>  asterisks_  `/`<br/>
+_delimited-comment-text:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delimited-comment-section<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delimited-comment-text  delimited-comment-section<br/>
+delimited-comment-section:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`/`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>asterisks<sub>opt</sub>  not-slash-or-asterisk</em><br/> 
-<em>asterisks:</em> `*`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>asterisks</em>  `*`<br/> 
-<em>not-slash-or-asterisk:</em><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_asterisks<sub>opt</sub>  not-slash-or-asterisk<br/> 
+asterisks:_ <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`*`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_asterisks_  `*`<br/> 
+_not-slash-or-asterisk:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any Unicode character except `*` or `/`
 
 ### Tokens
 
-<em>token: identifier</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>keyword</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>literal</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>operator-or-punctuator</em>
+_token:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;keyword<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;literal<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;operator-or-punctuator_
 
 ### Character escape sequences
 
-<em>character-escape-sequence:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`#`(  <em>escape-sequence-list</em>  )<br/>
-<em>escape-sequence-list:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>single-escape-sequence escape-sequence-list  ,</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>single-escape-sequence</em><br/>
-<em>single-escape-sequence:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>long-unicode-escape-sequence short-unicode-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>escape-sequence control-character-escape-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>sequence escape-escape</em><br/>
-<em>long-unicode-escape-sequence: hex-digit  hex-digit  hex-digit  hex-digit  hex-digit</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>hex-digit  hex-digit  hex-digit</em><br/>
-<em>short-unicode-escape-sequence: hex-digit</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>hex-digit  hex-digit  hex-digit</em><br/>
-<em>control-character-escape-sequence:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>control-character</em><br/>
-<em>control-character:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`cr` `lf` `tab`<br/>
-<em>escape-escape:</em><br/>
+_character-escape-sequence:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`#(`  _escape-sequence-list_  `)`<br/>
+_escape-sequence-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-escape-sequence<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;escape-sequence-list  ,  single-escape-sequence<br/>
+single-escape-sequence:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;long-unicode-escape-sequence<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;short-unicode-escape-sequence<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;control-character-escape-sequence<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;escape-escape<br/>
+long-unicode-escape-sequence:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hex-digit  hex-digit  hex-digit  hex-digit  hex-digit  hex-digit  hex-digit  hex-digit<br/>
+short-unicode-escape-sequence:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hex-digit  hex-digit  hex-digit  hex-digit<br/>
+control-character-escape-sequence:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;control-character<br/>
+control-character:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`cr`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`lf`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`tab`<br/>
+_escape-escape:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`#`
 
 ### Literals
 
-<em>literal:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>number-literal  text-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>literal null-literal</em><br/>
-<em>number-literal:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>decimal-number-literal</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>hexadecimal-number-literal</em><br/>
-<em>decimal-digits: decimal-digit</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>decimal-digit  decimal-digits</em><br/>
-<em>decimal-digit:</em>  one of<br/>
+_literal:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number-literal<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;null-literal<br/>
+number-literal:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-number-literal<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hexadecimal-number-literal<br/>
+decimal-digits:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digit<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digit  decimal-digits<br/>
+decimal-digit:_  one of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`0  1  2  3  4  5  6  7  8  9`<br/>
-<em>hexadecimal-number-literal:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`0x`  <em>hex-digits</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`0X`  <em>hex-digits hex-</em><br/>
-<em>digits: hex-digit hex-</em><br/>
-<em>digit  hex-digits</em><br/>
-<em>hex-digit:</em>  one of<br/>
+_hexadecimal-number-literal:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`0x`  _hex-digits_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`0X`  _hex-digits<br/>
+hex-digits:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hex-digit<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hex-digit  hex-digits<br/>
+hex-digit:_  one of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  a  b  c  d e  f`<br/>
-<em>decimal-number-literal:</em><br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>decimal-digits  .  decimal-digits  exponent-part<sub>opt</sub></em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>.  decimal-digits  exponent-part<sub>opt</sub> decimal-digits</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>exponent-part    decimal-digits</em><br/>
-<em>exponent-part:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`e`  <em>sign<sub>opt</sub>  decimal-digits</em> `E`<br/>
-<em>sign<sub>opt</sub>  decimal-digits sign:</em>  one of<br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`+  -` <em>text-literal:</em><br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"`  <em>text-literal-characters<sub>opt</sub></em>  `"`<br/>
-<em>text-literal-characters: text-literal-character</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>text-literal-character  text-literal-characters</em><br/>
-<em>text-literal-character: single-text-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>character character-escape-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>sequence  double-quote-escape-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>sequence</em><br/>
-<em>single-text-character:</em><br/>
+_decimal-number-literal:<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digits_  `.`  _decimal-digits  exponent-part<sub>opt</sub>_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`.`  _decimal-digits  exponent-part<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digits  exponent-part<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digits<br/>
+exponent-part:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`e`  _sign<sub>opt</sub>  decimal-digits_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`E`  _sign<sub>opt</sub>  decimal-digits<br/> sign:_  one of<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`+  -`<br/>
+_text-literal:_<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"`  _text-literal-characters<sub>opt</sub>_  `"`<br/>
+_text-literal-characters:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal-character<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal-character  text-literal-characters<br/>
+text-literal-character:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-text-character<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;character-escape-sequence<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;double-quote-escape-sequence<br/>
+single-text-character:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any character except `"` (`U+0022`) or `#` (`U+0023`) followed by `(` (`U+0028`)<br/>
-<em>double-quote-escape-sequence:</em><br/>
+_double-quote-escape-sequence:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`""` (`U+0022`, `U+0022`)<br/>
-<em>null-literal:</em><br/>
+_null-literal:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`null`
 
 ### Identifiers
 
-<em>identifier:</em><br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>regular-identifier</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>quoted-identifier</em><br/>
-<em>regular-identifier:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>available-identifier available-identifier</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>dot-character  regular-identifier</em><br/>
-<em>available-identifier:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A <em>keyword-or-identifier</em> that is not a <em>keyword</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>keyword-or-identifier: letter-character underscore-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>character identifier-start-character  identifier-part-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>characters</em><br/>
-<em>identifier-start-character:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>letter-character underscore-character</em><br/>
-<em>identifier-part-characters: identifier-part-character</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>identifier-part-character  identifier-part-characters</em><br/>
-<em>identifier-part-character:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>letter-character</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>decimal-digit-character</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>underscore-character</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>connecting-character</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>combining-character</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>formatting-character</em><br/> <em>generalized-identifier:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>generalized-identifier-part generalized-identifier</em> separated only by blanks (`U+0020`)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>generalized-identifier-part</em><br/>
-<em>generalized-identifier-part:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>generalized-identifier-segment decimal-digit-character</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>generalized-identifier-segment</em><br/>
-<em>generalized-identifier-segment:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>keyword-or-identifier keyword-or-identifier</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>dot-character  keyword-or-identifier</em><br/>
-<em>dot-character:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`.`  (`U+002E`) underscore-</em><br/>
-<em>character:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`_`  (`U+005F`) letter-character:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Unicode character of classes Lu, Ll, Lt, Lm, Lo, or Nl <em>combining-character:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Unicode character of classes Mn or Mc  <em>decimal-digit-character:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Unicode character of the class Nd  <em>connecting-character:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Unicode character of the class Pc <em>formatting-character:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Unicode character of the class Cf <em>quoted-identifier:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`#"`  <em>text-literal-charactersopt</em>  `"`
+_identifier:<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;regular-identifier<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quoted-identifier<br/>
+regular-identifier:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;available-identifier<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;available-identifier  dot-character  regular-identifier<br/>
+available-identifier:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A _keyword-or-identifier_ that is not a _keyword<br/>
+keyword-or-identifier:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;letter-character<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;underscore-character<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier-start-character 
+identifier-part-characters<br/>
+identifier-start-character:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;letter-character<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;underscore-character<br/>
+identifier-part-characters:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier-part-character<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier-part-character  identifier-part-characters<br/>
+identifier-part-character:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;letter-character<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digit-character<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;underscore-character<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;connecting-character<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;combining-character<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;formatting-character<br/>
+generalized-identifier:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier-part<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier_ separated only by blanks (`U+0020`) _generalized-identifier-part<br/>
+generalized-identifier-part:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier-segment<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digit-character generalized-identifier-segment<br/>
+generalized-identifier-segment:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;keyword-or-identifier<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;keyword-or-identifier dot-character  keyword-or-identifier<br/>
+dot-character:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`.`  (`U+002E`)<br/>
+_underscore-character:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`_`  (`U+005F`)<br/>
+letter-character:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Unicode character of classes Lu, Ll, Lt, Lm, Lo, or Nl<br/>
+_combining-character:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Unicode character of classes Mn or Mc<br/>
+_decimal-digit-character:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Unicode character of the class Nd<br/>
+_connecting-character:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Unicode character of the class Pc<br/>
+_formatting-character:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Unicode character of the class Cf<br/>
+_quoted-identifier:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`#"`  _text-literal-characters<sub>opt</sub>_  `"`
 
 ### Keywords and predefined identifiers
 
 Predefined identifiers and keywords cannot be redefined. A quoted identifier can be used to handle identifiers that would otherwise collide with predefined identifiers or keywords.
 
-<em>keyword:</em>  one of</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`and as each else error false if in is let meta not otherwise or section`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`shared then true try type #binary #date #datetime #datetimezone #duration`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`#infinity #nan #sections #shared #table #time`
+_keyword:_  one of</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`and as each else error false if in is let meta not otherwise or`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`section shared then true try type #binary #date #datetime`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`#datetimezone #duration #infinity #nan #sections #shared #table #time`
 
 ### Operators and punctuators 
 
-<em>operator-or-punctuator:</em>  one of<br/>
+_operator-or-punctuator:_  one of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`, ; = < <= > >= <> + - * / & ( ) [ ] { } @ ? => .. ...`
 
 ## Syntactic grammar
 
 ### Documents
 
-<em>document:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>section-document expression-document</em>
+_document:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;section-document<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression-document_
 
 ### Section Documents
 
-<em>section-document: section</em><br/>
-<em>section: literal-attributes<sub>opt</sub></em>  `section`  <em>section-name<sub>opt</sub>  ;  section-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>members<sub>opt</sub></em><br/>
-<em>section-name: identifier</em><br/>
-<em>section-members: section-member</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>section-member  section-members</em><br/>
-<em>section-member:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>literal-attributes<sub>opt</sub>  shared<sub>opt</sub>  section-member-name  =  expression  ;</em><br/>
-<em>section-member-name: identifier</em>
+_section-document:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;section<br/>
+section:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;literal-attributes<sub>opt</sub>_  `section`  _section-name<sub>opt</sub>_  `;`  _section-members<sub>opt</sub><br/>
+section-name:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier<br/>
+section-members:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;section-member<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;section-member  section-members<br/>
+section-member:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;literal-attributes<sub>opt</sub>  shared<sub>opt</sub>  section-member-name_  `=`  _expression_  `;`<br/>
+_section-member-name:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier_
 
 ### Expression Documents
 
 #### Expressions
 
-<em>expression-document: expression</em><br/>
-<em>expression:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>logical-or-expression</em></br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;each-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>function-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>let-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>if-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>error-raising-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>error-handling-expression</em>
+_expression-document:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
+expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logical-or-expression</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;each-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;error-raising-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;error-handling-expression_
 
 #### Logical expressions
 
-<em>logical-or-expression: logical-and-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>logical-and-expression</em>  `or`  <em>logical-or-expression</em><br/>
-<em>logical-and-expression: is-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>logical-and-expression</em>  `and`  <em>is-expression</em>
+_logical-or-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logical-and-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logical-and-expression_  `or`  _logical-or-expression<br/>
+logical-and-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logical-and-expression_  `and`  _is-expression_
 
 #### Is expression
 
-<em>is-expression: as-expression is-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`is`  <em>nullable-primitive-type</em><br/>
-<em>nullable-primitive-type:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`<sub>opt</sub>  <em>primitive-type</em>
+_is-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is-expression_ `is`  _nullable-primitive-type<br/>
+nullable-primitive-type:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`_<sub>opt</sub>  primitive-type_
 
 #### As expression
 
-<em>as-expression:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>equality-expression as-expression</em>  `as`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>nullable-primitive-type</em>
+_as-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;equality-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as-expression_  `as`  _nullable-primitive-type_
 
 #### Equality expression
 
-<em>equality-expression: relational-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>relational-expression</em>  `=`  <em>equality-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>relational-expression</em>  `<>`  <em>equality-expression</em>
+_equality-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;relational-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;relational-expression_  `=`  _equality-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;relational-expression_  `<>`  _equality-expression_
 
 #### Relational expression
 
-<em>relational-expression: additive-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>additive-expression</em>  `<`  <em>relational-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>additive-expression</em>  `>`  <em>relational-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>additive-expression</em>  `<=`  <em>relational-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>additive-expression</em>  `>=`  <em>relational-expression</em>
+_relational-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression_  `<`  _relational-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression_  `>`  _relational-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression_  `<=`  _relational-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression_  `>=`  _relational-expression_
 
 #### Arithmetic expressions
 
-<em>additive-expression:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>multiplicative-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>multiplicative-expression</em>  `+`  <em>additive-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>multiplicative-expression</em>  `-`  <em>additive-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>multiplicative-expression</em>  `&`  <em>additive-expression</em><br/>
-<em>multiplicative-expression:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>metadata-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>metadata-expression</em>  `*`  <em>multiplicative-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>metadata-expression</em>  `/`  <em>multiplicative-expression</em>
+_additive-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;multiplicative-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;multiplicative-expression_  `+`  _additive-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;multiplicative-expression_  `-`  _additive-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;multiplicative-expression_  `&`  _additive-expression<br/>
+_multiplicative-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;metadata-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;metadata-expression_  `*`  _multiplicative-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;metadata-expression_  `/`  _multiplicative-expression_
 
 #### Metadata expression
 
-<em>metadata-expression: unary-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>unary-expression</em>  `meta`  <em>unary-expression</em>
+_metadata-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unary-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unary-expression_  `meta`  _unary-expression_
 
 #### Unary expression
 
-<em>unary-expression: type-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression</em> `+`  <em>unary-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression</em> `-`  <em>unary-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression</em> `not`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>unary-expression</em>
+_unary-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type-expression_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`+`  _unary-expression_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`-`  _unary-expression_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`not`  _unary-expression_
 
 #### Primary expression
 
-<em>primary-expression:  literal-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression  list-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>record-expression identifier-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression section-access-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression parenthesized-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression field-access-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression  item-access-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression invoke-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>not-implemented-expression</em>
+_primary-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;literal-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;record-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;section-access-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parenthesized-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-access-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item-access-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;invoke-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;not-implemented-expression_
 
 #### Literal expression
 
-_literal-expression: literal_
+_literal-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;literal_
 
 #### Identifier expression
 
-<em>identifier-expression:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>identifier-reference</em><br/>
-<em>identifier-reference:</em><br/>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>exclusive-identifier-reference</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>inclusive-identifier-reference</em><br/> 
-<em>exclusive-identifier-reference:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>identifier</em><br/>
-<em>inclusive-identifier-reference:</em><br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`@`  <em>identifier</em>
+_identifier-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier-reference<br/>
+identifier-reference:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exclusive-identifier-reference<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inclusive-identifier-reference<br/> 
+exclusive-identifier-reference:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier<br/>
+inclusive-identifier-reference:_<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`@`  _identifier_
 
 #### Section-access expression
 
-<em>section-access-expression:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>identifier</em> `!` <em>identifier</em>
+_section-access-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier_ `!` _identifier_
 
 #### Parenthesized expression
 
-<em>parenthesized-expression:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(`  <em>expression</em>  `)`
+_parenthesized-expression:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(`  _expression_  `)`
 
 #### Not-implemented expression
 
-<em>not-implemented-expression:</em> `...`
+_not-implemented-expression:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`...`
 
 #### Invoke expression
 
-<em>invoke-expression: primary-expression</em>  `(`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>argument-listopt</em>  `)`<br/>
-<em>argument-list: expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression  ,   argument-list</em>
+_invoke-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_  `(`  _argument-list<sub>opt</sub>_  `)`<br/>
+_argument-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression  ,   argument-list_
 
 #### List expression
 
-<em>list-expression:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{`  <em>item-list<sub>opt</sub></em>  `}`<br/>
-<em>item-list: item item</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>,  item-list</em><br/>
-<em>item:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression expression</em>  `..`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression</em>
+_list-expression:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{`  _item-list<sub>opt</sub>_  `}`<br/>
+_item-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item  ,  item-list<br/>
+item:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression_  `..`  _expression_
 
 #### Record expression
 
-<em>record-expression:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`  <em>field-list<sub>opt<sub></em>  `]`<br/>
-<em>field-list: field field</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>,  field-list</em><br/>
-<em>field:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>field-name</em>  `=`  <em>expression</em><br/>
-<em>field-name:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>generalized-identifier</em>
+_record-expression:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`  _field-list<sub>opt<sub>_  `]`<br/>
+_field-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field  ,  field-list<br/>
+field:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-name_  `=`  _expression<br/>
+field-name:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier_
 
 #### Item access expression
 
-<em>item-access-expression:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>item-selection</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>optional-item-selection</em><br/>
-<em>item-selection:</em></br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>primary-expression</em>  `{`  <em>item-selector</em>  `}`<br/>
-<em>optional-item-selection:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>primary-expression</em>  `{`  <em>item-selector</em>  `} ?`
+_item-access-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item-selection<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-item-selection<br/>
+item-selection:</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_  `{`  _item-selector_  `}`<br/>
+_optional-item-selection:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_  `{`  _item-selector_  `} ?`
 
 #### Field access expressions
 
-<em>field-access-expression:  field-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>selection implicit-target-field-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>selection projection implicit-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>target-projection</em><br/>
-<em>field-selection: primary-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>field-selector</em><br/>
-<em>field-selector:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>required-field-selector</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>optional-field-selector</em><br/>
-<em>required-field-selector:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   <em>field-name</em>  `]`</em><br/>
-<em>optional-field-selector:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   <em>field-name</em>  `] ?`<br/>
-<em>field-name: generalized-identifier</em><br/>
-<em>implicit-target-field-selection:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>field-selector</em><br/>
-<em>projection:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>primary-expression  required-projection</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>primary-expression  optional-projection</em><br/>
-<em>required-projection:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[` <em>required-selector-list</em> `]`<br/>
-<em>optional-projection:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[` <em>required-selector-list</em> `] ?`<br/>
-<em>required-selector-list: required-field-selector</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>required-field-selector ,  required-selector-list</em><br/>
-<em>implicit-target-projection:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>projection</em>
+_field-access-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-selection<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;implicit-target-field-selection<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;projection<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;implicit-target-projection<br/>
+field-selection:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression  field-selector<br/>
+field-selector:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-field-selector<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-field-selector<br/>
+required-field-selector:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-name_  `]`<br/>
+_optional-field-selector:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-name_  `] ?`<br/>
+_field-name:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier<br/>
+implicit-target-field-selection:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-selector<br/>
+projection:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression  required-projection<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression  optional-projection<br/>
+required-projection:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[` _required-selector-list_ `]`<br/>
+_optional-projection:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[` _required-selector-list_ `] ?`<br/>
+_required-selector-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-field-selector<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-field-selector ,  required-selector-list<br/>
+implicit-target-projection:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;projection_
 
 #### Function expression
 
-<em>function-expression:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(`  <em>parameter-list<sub>opt</sub></em>  `)`  <em>return-type<sub>opt</sub></em>  `=>`  <em>function-body</em><br/>
-<em>function-body:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression</em><br/>
-<em>parameter-list:</em>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>fixed-parameter-list fixed-parameter-list  ,</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>optional-parameter-list optional-parameter-list</em><br/>
-<em>fixed-parameter-list: parameter</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>parameter  ,  fixed-parameter-list</em><br/>
-<em>parameter: parameter-name</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>parameter-type<sub>opt</sub></em><br/>
-<em>parameter-name: identifier</em><br/>
-<em>parameter-type:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>assertion</em><br/>
-<em>return-type:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>assertion</em><br/>
-<em>assertion:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as`  <em>type</em><br/>
-<em>optional-parameter-list: optional-parameter</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>optional-parameter  ,  optional-parameter-list</em><br/>
-<em>optional-parameter:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional`  <em>parameter</em>
+_function-expression:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(`  _parameter-list<sub>opt</sub>_  `)`  _return-type<sub>opt</sub>_  `=>`  _function-body<br/>
+function-body:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
+parameter-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fixed-parameter-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fixed-parameter-list  ,  optional-parameter-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter-list<br/>
+fixed-parameter-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter  ,  fixed-parameter-list<br/>
+parameter:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-name  parameter-type<sub>opt</sub><br/>
+parameter-name:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier<br/>
+parameter-type:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assertion<br/>
+return-type:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assertion<br/>
+assertion:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as`  _type<br/>
+optional-parameter-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter  ,  optional-parameter-list<br/>
+optional-parameter:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional`  _parameter_
 
 #### Each expression
 
-<em>each-expression:</em> `each` <em>each-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression-body</em><br/>
-<em>each-expression-body: function-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>body</em>
+_each-expression:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`each` _each-expression-body<br/>
+each-expression-body:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function-body_
 
 #### Let expression
 
-<em>let-expression:</em> `let`  <em>variable-list</em>  `in`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression</em><br/>
-<em>variable-list: variable</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>variable  ,  variable-list</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>variable: variable-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>name  =  expression</em><br/>
-<em>variable-name: identifier</em>
+_let-expression:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`let`  _variable-list_  `in`  _expression<br/>
+variable-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable_  `,`  _variable-list<br/>
+variable:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable-name_  `=`  _expression<br/>
+variable-name:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier_
 
 #### If expression
 
-<em>if-expression:</em> `if` <em>if-condition</em>  `then`  <em>true-expression</em>  `else`  </em>false-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression</em><br/>
-<em>if-condition:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression</em><br/> 
-<em>true-expression:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression</em><br/>
-<em>false-expression: expression</em>
+_if-expression:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`if` _if-condition_  `then`  _true-expression_  `else`  _false-expression<br/>
+if-condition:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/> 
+true-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
+false-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression_
 
 #### Type expression
 
-<em>type-expression:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>primary-expression</em> `type`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>primary-type</em><br/>
-<em>type:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>parenthesized-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>primary-type</em><br/>
-<em>primary-type:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>primitive-type</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>record-type</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>list-type</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>function-type table-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>type nullable-type</em><br/>
-<em>primitive-type:</em> one of `any anynonnull binary date datetime datetimezone`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`duration function list logical none null number record table text`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`type`<br/> 
-<em>record-type:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`  <em>open-record-marker</em>  `]`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   <em>field-specification-list</em>  `]`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   <em>field-specification-list  ,  open-record-marker</em>  `]` <em>field-specification-list:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>field-specification field-specification
-  ,</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>field-specification-list</em><br/>
-<em>field-specification:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional`<em><sub>opt</sub> identifier field-type-specification<sub>opt</sub></em><br/> 
-<em>field-type-specification:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`=` <em>field-type  field-</em><br/>
-<em>type:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>type</em><br/>
-<em>open-record-marker:</em><br/>
+_type-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`type`  _primary-type<br/>
+type:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parenthesized-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-type<br/>
+primary-type:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primitive-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;record-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;table-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nullable-type<br/>
+primitive-type:_ one of<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`any anynonnull binary date datetime datetimezone duration function`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`list logical none null number record table text type`<br/> 
+_record-type:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`  _open-record-marker_  `]`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-specification-list_  `]`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-specification-list_  `,`  _open-record-marker_  `]` <br/>
+_field-specification-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-specification<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-specification_
+  `,`  _field-specification-list<br/>
+field-specification:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional`_<sub>opt</sub> identifier field-type-specification<sub>opt</sub><br/>
+field-type-specification:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`=` _field-type<br/>
+field-type:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type<br/>
+open-record-marker:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`...`<br/>
-<em>list-type:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{`   <em>item-type</em>   `}` <em>item-type:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>type</em><br/> 
-<em>function-type:</em> `function (`  <em>parameter-specification-listopt</em>  `)`</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>return-type</em><br/>
-<em>parameter-specification-list:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>required-parameter-specification-list required-parameter-specification-list  ,</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>optional-parameter-specification-list optional-parameter-specification-list</em><br/>
-<em>required-parameter-specification-list: required-parameter-specification</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>required-parameter-specification  ,  required-parameter-specification-list</em><br/>
-<em>required-parameter-specification:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>parameter-specification</em><br/>
-<em>optional-parameter-specification-list: optional-parameter-specification</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>optional-parameter-specification  ,  optional-parameter-specification-list</em><br/>
-<em>optional-parameter-specification:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional` <em>parameter-specification</em><br/> 
-<em>parameter-specification: parameter-name</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>parameter-type</em><br/>
-<em>table-type:</em> `table`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>row-type</em><br/>
-<em>row-type:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   <em>field-specification-list</em>  `]`<br/>
-<em>nullable-type:</em> `nullable`  <em>type</em>
+_list-type:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{`   _item-type_   `}`<br/>
+_item-type:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type<br/>
+function-type:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`function (`  _parameter-specification-listopt_  `)`  _return-type<br/>
+parameter-specification-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-parameter-specification-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-parameter-specification-list_  `,`  _optional-parameter-specification-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter-specification-list<br/>
+required-parameter-specification-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-parameter-specification<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-parameter-specification_  `,`  _required-parameter-specification-list<br/>
+required-parameter-specification:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-specification<br/>
+optional-parameter-specification-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter-specification<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter-specification_  `,`  _optional-parameter-specification-list<br/>
+optional-parameter-specification:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional` _parameter-specification<br/> 
+parameter-specification:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-name  parameter-type<br/>
+table-type:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`table`  _row-type<br/>
+row-type:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-specification-list_  `]`<br/>
+_nullable-type:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`  _type_
 
 #### Error raising expression
 
-<em>error-raising-expression:</em> `error`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression</em>
+_error-raising-expression:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`error`  expression_
 
 #### Error handling expression
 
-<em>error-handling-expression:</em> `try` protected-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression otherwise-clause<sub>opt</sub></em><br/>
-<em>protected-expression:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>expression</em><br/>
-<em>otherwise-clause:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`otherwise` <em>default-expression</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>default-expression: expression</em>
+_error-handling-expression:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`try` _protected-expression otherwise-clause<sub>opt</sub><br/>
+protected-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
+otherwise-clause:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`otherwise` _default-expression<br/>
+default-expression:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression_
 
 ###  Literal Attributes
 
-<em>literal-attributes:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>record-literal</em><br/>
-<em>record-literal:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[` <em>literal-field-listopt</em> `]` <em>literal-</em><br/>
-<em>field-list: literal-field literal-field</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>, literal-field-list</em><br/>
-<em>literal-field: field-name</em> `=`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>any-literal</em><br/>
-<em>list-literal:</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{` <em>literal-item-list<sub>opt</sub></em> `}` <em>literal-</em><br/>
-<em>item-list: any-literal , literal-</em><br/>
-<em>item-list</em><br/>
-<em>any-literal: record-literal</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>list-literal logical-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>literal number-literal</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>text-literal null-</em><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>literal</em>
+_literal-attributes:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;record-literal<br/>
+record-literal:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[` _literal-field-listopt_ `]`<br/>
+_literal-field-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;literal-field<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;literal-field_ `,` _literal-field-list<br/>
+literal-field:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-name_ `=` _any-literal<br/>
+list-literal:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{` _literal-item-list<sub>opt</sub>_ `}`<br/>
+_literal-item-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;any-literal_ `,` _literal-item-list<br/>
+any-literal:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;record-literal<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list-literal<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logical-literal<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number-literal<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;null-literal_
 
