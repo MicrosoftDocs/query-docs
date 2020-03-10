@@ -33,6 +33,7 @@ landingContent:
           - text: Evaluation model
             url: evaluation-model.md
       - linkListType: learn
+        links:
           - text: Power Query documentation
             url: https://docs.microsoft.com/en-us/power-query
 
