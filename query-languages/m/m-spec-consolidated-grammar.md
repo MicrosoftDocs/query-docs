@@ -580,7 +580,7 @@ default-expression:<br/>
 _literal-attributes:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;record-literal<br/>
 record-literal:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[` _literal-field-listopt_ `]`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[` _literal-field-list<sub>opt</sub>_ `]`<br/>
 _literal-field-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;literal-field<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;literal-field_ `,` _literal-field-list<br/>
