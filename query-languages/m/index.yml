@@ -32,7 +32,7 @@ landingContent:
             url: expressions-values-and-let-expression.md
           - text: Evaluation model
             url: evaluation-model.md
-      -linkListType: learn
+      - linkListType: learn
           - text: Power Query documentation
             url: https://docs.microsoft.com/en-us/power-query
 
