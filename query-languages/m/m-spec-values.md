@@ -567,8 +567,8 @@ The following operators are defined for record values:
 The following examples illustrate the above operators. Note that record merge uses the fields from the right operand to override fields from the left operand, should there be an overlap in field names.
 
 ```
-[ a = 1, b = 2 ] & [ c = 3 ]   // [ a = 1, b = 2, c = 3 ] 
-[ a = 1, b = 2 ] & [ a = 3 ]   // [ a = 3, b = 2 ] 
+[ a = 1, b = 2 ] & [ c = 3 ]    // [ a = 1, b = 2, c = 3 ] 
+[ a = 1, b = 2 ] & [ a = 3 ]    // [ a = 3, b = 2 ] 
 [ a = 1, b = 2 ] = [ b = 2, a = 1 ]         // true 
 [ a = 1, b = 2, c = 3 ] <> [ a = 1, b = 2 ] // true
 ```

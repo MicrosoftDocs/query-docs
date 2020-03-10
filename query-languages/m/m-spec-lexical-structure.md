@@ -192,9 +192,9 @@ M text values can contain arbitrary Unicode characters. Text literals, however, 
 Escape sequences can also contain short (four hex digits) or long (eight hex digits) Unicode code-point values. The following three escape sequences are therefore equivalent:
 
 ```
-#(000D)  // short Unicode hexadecimal value 
+#(000D)     // short Unicode hexadecimal value 
 #(0000000D) // long Unicode hexadecimal value 
-#(cr)   // compact escape shorthand for carriage return
+#(cr)       // compact escape shorthand for carriage return
 ```
 
 Multiple escape codes can be included in a single escape sequence, separated by commas; the following two sequences are thus equivalent:
@@ -374,9 +374,10 @@ The following example uses identifier quoting for names containing a space chara
 
 ```
 [ 
-  #"1998 Sales" = 1000, 
-  #"1999 Sales" = 1100, 
-  #"Total Sales" = #"1998 Sales" + #"1999 Sales" ]
+    #"1998 Sales" = 1000, 
+    #"1999 Sales" = 1100, 
+    #"Total Sales" = #"1998 Sales" + #"1999 Sales"
+]
 ```
 
 The following example uses identifier quoting to include the `+` operator in an identifier:
@@ -384,8 +385,8 @@ The following example uses identifier quoting to include the `+` operator in an 
 ```
 [ 
     #"A + B" = A + B, 
-A = 1, 
-B = 2 
+    A = 1, 
+    B = 2 
 ]
 ```
 
@@ -396,7 +397,8 @@ There are two places in M where no ambiguities are introduced by identifiers tha
 ```
 [ 
     Data = [ Base Line = 100, Rate = 1.8 ], 
-    Progression = Data[Base Line] * Data[Rate] ]
+    Progression = Data[Base Line] * Data[Rate]
+]
 ```
 
 The identifiers used to name and access fields are referred to as _generalized identifiers_ and defined as follows:

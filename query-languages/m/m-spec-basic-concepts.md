@@ -19,7 +19,8 @@ This section discusses basic concepts that appear throughout the subsequent sect
 A single piece of data is called a _value_. Broadly speaking, there are two general categories of values: _primitive values_, which are atomic, and _structured values_, which are constructed out of primitive values and other structured values. For example, the values \
 
 ```
-1 true
+1 
+true
 3.14159 
 "abc"
 ```
@@ -74,10 +75,9 @@ For example, the _record-initializer-expression_ evaluates the sub-expression fo
 
 ```
 [  
-
-    x = 1,    // environment: y, z 
-    y = 2,    // environment: x, z 
-    z = x + y // environment: x, y
+    x = 1,          // environment: y, z 
+    y = 2,          // environment: x, z 
+    z = x + y       // environment: x, y
 ] 
 ```
 
@@ -88,8 +88,8 @@ let
 
     x = 1,          // environment: y, z 
     y = 2,          // environment: x, z 
-    z = x + y in    // environment: x, y
-
+    z = x + y       // environment: x, y
+in
     x + y + z       // environment: x, y, z
 ```
 
@@ -98,8 +98,9 @@ let
 To form the environments for the sub-expressions, the new variables are "merged" with the variables in the parent environment. The following example shows the environments for nested records:
 
 ```
-[     a 
-=     [ 
+[
+    a = 
+    [ 
 
         x = 1,      // environment: b, y, z 
         y = 2,      // environment: b, x, z 
@@ -107,15 +108,14 @@ To form the environments for the sub-expressions, the new variables are "merged"
     ], 
     b = 3           // environment: a
 ]  
-
 ```
 
 The following example shows the environments for a record nested within a let:
 
 ```
 Let
-a =
-[
+    a =
+    [
         x = 1,       // environment: b, y, z 
         y = 2,       // environment: b, x, z 
         z = x + y    // environment: b, x, y 
@@ -128,9 +128,9 @@ in
 Merging variables with an environment may introduce a conflict between variables (since each variable in an environment must have a unique name). The conflict is resolved as follows: if the name of a new variable being merged is the same as an existing variable in the parent environment, then the new variable will take precedence in the new environment. In the following example, the inner (more deeply nested) variable `x` will take precedence over the outer variable `x`.
 
 ```
-[     a 
-=     [ 
-
+[
+    a =
+    [ 
         x = 1,       // environment: b, x (outer), y, z 
         y = 2,       // environment: b, x (inner), z 
         z = x + y    // environment: b, x (inner), y 

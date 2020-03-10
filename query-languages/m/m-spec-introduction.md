@@ -53,27 +53,27 @@ The following examples illustrate the different kinds of values available in M. 
 * A _primitive_ value is single-part value, such as a number, logical, text, or null. A null value can be used to indicate the absence of any data.
 
    ```
-   123        // A number
-   true       // A logical
-   "abc"      // A text
-   null       // null value
+   123                  // A number
+   true                 // A logical
+   "abc"                // A text
+   null                 // null value
    ```
 
 * A _list_ value is an ordered sequence of values. M supports infinite lists, but if written as a literal, lists have a fixed length. The curly brace characters `{` and `}` denote the beginning and end of a list.
 
    ```
-   {123, true, "A"}  // list containing a number, a logical, and 
-                     //     a text 
-   {1, 2, 3}         // list of three numbers 
+   {123, true, "A"}     // list containing a number, a logical, and 
+                        //     a text 
+   {1, 2, 3}            // list of three numbers 
    ```
 
 * A _record_ is a set of _fields_. A field is a name/value pair where the name is a text value that is unique within the field's record. The literal syntax for record values allows the names to be written without quotes, a form also referred to as _identifiers_. The following shows a record containing three fields named "`A`", "`B`", and "`C`", which have values `1`, `2`, and `3`.
 
    ```
    [ 
-   A = 1,  
-   B = 2,  
-   C = 3 
+        A = 1,  
+        B = 2,  
+        C = 3 
    ]
    ```
 * A _table_ is a set of values organized into columns (which are identified by name), and rows. There is no literal syntax for creating a table, but there are several standard functions that can be used to create tables from lists or records.
@@ -134,7 +134,8 @@ Records can be contained within, or _nest_, within other records. We can use the
 ```
 [  
     Sales = [ FirstHalf = 1000, SecondHalf = 1100 ], 
-    Total = Sales[FirstHalf] + Sales[SecondHalf] ]
+    Total = Sales[FirstHalf] + Sales[SecondHalf] 
+]
 ```
 
 The above expression is equivalent to the following when it is evaluated: \
@@ -165,7 +166,8 @@ Records can also be contained within lists. We can use the _positional index ope
                 Total = FirstHalf + SecondHalf // 2500 
             ]  
         }, 
-    TotalSales = Sales{0}[Total] + Sales{1}[Total] // 4600 ]
+    TotalSales = Sales{0}[Total] + Sales{1}[Total] // 4600 
+]
 ```
 
 List and record member expressions (as well as let expressions, introduced further below) are evaluated using _lazy evaluation_, which means that they are evaluated only as needed. All other expressions are evaluated using _eager evaluation_, which means that they are evaluated immediately, when encountered during the evaluation process. A good way to think about this is to remember that evaluating a list or record expression will return a list or 
@@ -176,8 +178,8 @@ record value that itself remembers how its list items or record fields need to b
 In M, a _function_ is a mapping from a set of input values to a single output value. A function is written by first naming the required set of input values (the parameters to the function) and then providing an expression that will compute the result of the function using those input values (the body of the function) following the goes-to (`=>`) symbol. For example:
 
 ```
-(x) => x + 1         // function that adds one to a value 
-(x, y) =>  x + y     // function that adds two values
+(x) => x + 1                    // function that adds one to a value 
+(x, y) =>  x + y                // function that adds two values
 ```
 
 A function is a value just like a number or a text value. The following example shows a function which is the value of an Add field which is then _invoked_, or executed, from several other fields. When a function is invoked, a set of values are specified which are logically substituted for the required set of input values within the function body expression.
@@ -185,8 +187,8 @@ A function is a value just like a number or a text value. The following example 
 ```
 [ 
     Add = (x, y) => x + y,
-    OnePlusOne = Add(1, 1),    // 2 
-    OnePlusTwo = Add(1, 2)     // 3
+    OnePlusOne = Add(1, 1),     // 2 
+    OnePlusTwo = Add(1, 2)      // 3
 ]
 ```
 
@@ -195,8 +197,8 @@ A function is a value just like a number or a text value. The following example 
 M includes a common set of definitions available for use from an expression called the _standard library_, or just library for short. These definitions consist of a set of named values. The names of values provided by a library are available for use within an expression without having been defined explicitly by the expression. For example:
 
 ```
-Number.E                          // Euler's number e (2.7182...) 
-Text.PositionOf("Hello", "ll")    // 2
+Number.E                        // Euler's number e (2.7182...) 
+Text.PositionOf("Hello", "ll")  // 2
 ```
 
 ## Operators
@@ -206,17 +208,17 @@ M includes a set of operators that can be used in expressions. _Operators_ are a
 The meaning of an operator can vary depending on what kind of values its operands are. For example, the plus operator can be used with other kinds of values than numbers:
 
 ```
-1 + 2       // numeric addition: 3 
+1 + 2                   // numeric addition: 3 
 #time(12,23,0) + #duration(0,0,2,0) 
-       // time arithmetic: #time(12,25,0)
+                        // time arithmetic: #time(12,25,0)
 ```
 
 Another example of an operator with operand-depending meaning is the combination operator (`&`):
 
 ```
-"A" & "BC"     // text concatenation: "ABC" 
-{1} & {2, 3}    // list concatenation: {1, 2, 3} 
-[ a = 1 ] & [ b = 2 ] // record merge: [ a = 1, b = 2 ]
+"A" & "BC"              // text concatenation: "ABC" 
+{1} & {2, 3}            // list concatenation: {1, 2, 3} 
+[ a = 1 ] & [ b = 2 ]   // record merge: [ a = 1, b = 2 ]
 ```
 
 Note that not all combinations of values may be supported by an operator. For example:
@@ -253,7 +255,8 @@ A metadata record can be accessed for a given value using the _Value.Metadata_ f
 ```
 [ 
     Composer = "Mozart" meta [ Rating = 5, Tags = {"Classical"} ], 
-    ComposerRating = Value.Metadata(Composer)[Rating] // 5 ]
+    ComposerRating = Value.Metadata(Composer)[Rating] // 5
+]
 ```
 
 ## Let expression
@@ -287,7 +290,8 @@ The `if` expression selects between two expressions based on a logical condition
 
 ```
 if 2 > 1 then
-2 + 2  else  
+    2 + 2
+else  
     1 + 1
 ```
 
@@ -304,10 +308,13 @@ let Sales =
     [ 
         Revenue = 2000, 
         Units = 1000, 
-        UnitPrice = if Units = 0 then error "No Units"                     else Revenue / Units 
+        UnitPrice = if Units = 0 then error "No Units"
+                    else Revenue / Units 
     ], 
-    UnitPrice = try Number.ToText(Sales[UnitPrice]) in "Unit Price: " & 
-    (if UnitPrice[HasError] then UnitPrice[Error][Message]     else UnitPrice[Value])
+    UnitPrice = try Number.ToText(Sales[UnitPrice])
+in "Unit Price: " & 
+    (if UnitPrice[HasError] then UnitPrice[Error][Message]
+    else UnitPrice[Value])
 ```
 
 The above example accesses the `Sales[UnitPrice]` field and formats the value producing the result:
