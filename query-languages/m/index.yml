@@ -34,7 +34,7 @@ landingContent:
             url: evaluation-model.md
       -linkListType: learn
           - text: Power Query documentation
-            url: https://docs.microsoft.com/en-us/power-query/
+            url: https://docs.microsoft.com/en-us/power-query
 
   # Card
   - title: Functions
