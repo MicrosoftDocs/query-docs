@@ -65,7 +65,7 @@
               href: year-function-dax.md
             - name: YEARFRAC
               href: yearfrac-function-dax.md
-        - name: Time-intelligence functionsF
+        - name: Time-intelligence functions
           items: 
             - name: Time-intelligence functions overview
               href: time-intelligence-functions-dax.md
