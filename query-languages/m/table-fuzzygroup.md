@@ -41,7 +41,8 @@ The following table provides more details about the advanced options.
 |TransformationTable | |A valid table with at least 2 columns named 'From' and 'To'. |The TransformationTable option allows matching records based on custom value mappings. <br/> For example, 'Grapes' are matched with 'Raisins' if a transformation table is provided with the 'From' column containing 'Grapes' and the 'To' column containing 'Raisins'. Note that the transformation will be applied to all occurrences of the text in the transformation table. For example, with the above transformation table 'Grapes are sweet' will also be matched with 'Raisins are sweet'. |
 | | | | | 
 
-## Example 1
+## Example
+
 Group the table adding an aggregate column [Count] that contains the number of employees in each location (`each Table.RowCount(_)`).
 
 ```powerquery-m
