@@ -25,9 +25,10 @@ ms.author: v-douklo
 |[Table.FromRecords](table-fromrecords.md)|Returns a table from a list of records.|
 |[Table.FromRows](table-fromrows.md)|Creates a table from the list where each element of the list is a list that contains the column values for a single row.|  
 |[Table.FromValue](table-fromvalue.md)|Returns a table with a column containing the provided value or list of values.|
-|[Table.Split](table-split.md)|Splits the specified table into a list of tables using the specified page size.|  
+|[Table.FuzzyGroup](table-fuzzygroup.md)|Groups the rows of a table by fuzzily matching values in the specified column for each row.|
 |[Table.FuzzyJoin](table-fuzzyjoin.md)|Joins the rows from the two tables that fuzzy match based on the given keys.|
 |[Table.FuzzyNestedJoin](table-fuzzynestedjoin.md)|Performs a fuzzy join between tables on supplied columns and produces the join result in a new column.|
+|[Table.Split](table-split.md)|Splits the specified table into a list of tables using the specified page size.|  
 |[Table.View](table-view.md)|Creates or extends a table with user-defined handlers for query and action operations.| 
 |[Table.ViewFunction](table-viewfunction.md) | Creates a function that can be intercepted by a handler defined on a view (via `Table.View`).| 
   
