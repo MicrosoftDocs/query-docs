@@ -1,7 +1,7 @@
 ---
 title: "ACOS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 03/25/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # ACOS
+
 Returns the arccosine, or inverse cosine, of a number. The arccosine is the angle whose cosine is *number*. The returned angle is given in radians in the range 0 (zero) to pi.  
   
 ## Syntax  
@@ -23,10 +24,12 @@ ACOS(number)
 |--------|--------------|  
 |Number|The cosine of the angle you want and must be from -1 to 1.|  
   
-## Return value  
+## Return value
+
 Returns the arccosine, or inverse cosine, of a number.  
   
-## Remarks  
+## Remarks
+
 If you want to convert the result from radians to degrees, multiply it by 180/PI() or use the DEGREES function.  
   
 ## Example  
@@ -34,5 +37,4 @@ If you want to convert the result from radians to degrees, multiply it by 180/PI
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
 |=ACOS(-0.5)|Arccosine of -0.5 in radians, 2*pi/3.|2.094395102|  
-|=ACOS(-0.5)*180/PI()|Arccosine of -0.5 in degrees.|120|  
-  
+|=ACOS(-0.5)*180/PI()|Arccosine of -0.5 in degrees.|120|

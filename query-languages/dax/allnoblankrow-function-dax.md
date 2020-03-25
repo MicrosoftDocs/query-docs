@@ -1,7 +1,7 @@
 ---
 title: "ALLNOBLANKROW function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/26/2019
+ms.date: 03/25/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,12 +9,13 @@ ms.author: "owend"
 
 ---
 # ALLNOBLANKROW
+
 From the parent table of a relationship, returns all rows but the blank row, or all distinct values of a column but the blank row, and disregards any context filters that might exist.  
   
 ## Syntax  
   
 ```dax
-ALLNOBLANKROW( {<table> | <column>[, <column>[, <column>[,…]]]} ) 
+ALLNOBLANKROW( {<table> | <column>[, <column>[, <column>[,…]]]} )
 ```
   
 ### Parameters  
@@ -26,10 +27,12 @@ ALLNOBLANKROW( {<table> | <column>[, <column>[, <column>[,…]]]} )
   
 Only one parameter must be passed; the parameter is either a table or a column.  
   
-## Return value  
+## Return value
+
 A table, when the passed parameter was a table, or a column of values, when the passed parameter was a column.  
   
-## Remarks  
+## Remarks
+
 The ALLNOBLANKROW function only filters the blank row that a parent table, in a relationship, will show when there are one or more rows in the child table that have non-matching values to the parent column. See the example below for a thorough explanation.  
   
 The following table summarizes the variations of ALL that are provided in DAX, and their differences:  
@@ -43,7 +46,8 @@ The following table summarizes the variations of ALL that are provided in DAX, a
   
 For a general description of how the ALL function works, together with step-by-step examples that use ALL(Table) and ALL(Column), see [ALL function &#40;DAX&#41;](all-function-dax.md).  
   
-## Example  
+## Example
+
 In the sample data, the ResellerSales_USD table contains one row that has no values and therefore cannot be related to any of the parent tables in the relationships within the workbook. You will use this table in a PivotTable so that you can see the blank row behavior and how to handle counts on unrelated data.  
   
 Step 1: Verify the unrelated data 
@@ -100,7 +104,7 @@ On a blank PivotTable add datetime.[Calendar Year] column to the row labels, and
   
 The results show a difference of 1 row in the table rows count. However, if you open the **Power Pivot window** and select the datetime table, you cannot find any blank row in the table because the special blank row mentioned here is the Unknown member.  
   
-Step 4: Verify that the count is accurate 
+Step 4: Verify that the count is accurate
   
 In order to prove that the ALLNOBLANKROW does not count any truly blank rows, and only handles the special blank row on the parent table only, add the following two measures to the ResellerSales_USD table: **Countrows ALLNOBLANKROW of ResellerSales_USD**, **Countrows ALL of ResellerSales_USD**.  
   
@@ -117,9 +121,8 @@ Create a new PivotTable, and drag the column, datetime.[Calendar Year], to the R
   
 Now the two measures have the same results. That is because the ALLNOBLANKROW function does not count truly blank rows in a table, but only handles the blank row that is a special case generated in a parent table, when one or more of the child tables in the relationship contain non-matching values or blank values.  
   
+## See also
 
-  
-## See also  
 [Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
 [ALL function &#40;DAX&#41;](all-function-dax.md)  
 [FILTER function &#40;DAX&#41;](filter-function-dax.md)  

@@ -1,7 +1,7 @@
 ---
 title: "ASINH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 03/25/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # ASINH
+
 Returns the inverse hyperbolic sine of a number. The inverse hyperbolic sine is the value whose hyperbolic sine is *number*, so ASINH(SINH(number)) equals *number*.  
   
 ## Syntax  
@@ -23,7 +24,8 @@ ASINH(number)
 |--------|--------------|  
 |number|Any real number.|  
   
-## Return value  
+## Return value
+
 Returns the inverse hyperbolic sine of a number.  
   
 ## Example  
@@ -32,4 +34,3 @@ Returns the inverse hyperbolic sine of a number.
 |-----------|---------------|----------|  
 |=ASINH(-2.5)|Inverse hyperbolic sine of -2.5|-1.647231146|  
 |=ASINH(10)|Inverse hyperbolic sine of 10|2.99822295|  
-  

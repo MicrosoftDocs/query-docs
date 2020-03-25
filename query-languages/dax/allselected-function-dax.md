@@ -1,7 +1,7 @@
 ---
 title: "ALLSELECTED function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 05/18/2019
+ms.date: 03/25/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # ALLSELECTED
+
 Removes context filters from columns and rows in the current query, while retaining all other context filters or explicit filters.  
   
 The ALLSELECTED function gets the context that represents all rows and columns in the query, while keeping explicit filters and contexts other than row and column filters. This function can be used to obtain visual totals in queries.  
@@ -16,7 +17,7 @@ The ALLSELECTED function gets the context that represents all rows and columns i
 ## Syntax  
   
 ```dax
-ALLSELECTED([<tableName> | <columnName>[, <columnName>[, <columnName>[,…]]]] )   
+ALLSELECTED([<tableName> | <columnName>[, <columnName>[, <columnName>[,…]]]] )
 ```
   
 ### Parameters  
@@ -26,16 +27,18 @@ ALLSELECTED([<tableName> | <columnName>[, <columnName>[, <columnName>[,…]]]] )
 |tableName|The name of an existing table, using standard DAX syntax. This parameter cannot be an expression. This parameter is optional.  | 
 |columnName|The name of an existing column using standard DAX syntax, usually fully qualified. It cannot be an expression. This parameter is optional.    |
   
-## Return value  
+## Return value
+
 The context of the query without any column and row filters.  
   
 ## Remarks  
   
--  If there is one argument, the argument is either *tableName* or *columnName*. If there is more than one argument, they must be columns from the same table.  
+If there is one argument, the argument is either *tableName* or *columnName*. If there is more than one argument, they must be columns from the same table.  
   
--   This function is different from ALL() because it retains all filters explicitly set within the query, and it retains all context filters other than row and column filters.  
+This function is different from ALL() because it retains all filters explicitly set within the query, and it retains all context filters other than row and column filters.  
   
-## Example  
+## Example
+
 The following example shows how to generate different levels of visual totals in a table report using DAX expressions. In the report two (2) previous filters have been applied to the Reseller Sales data; one on Sales Territory Group = *Europe* and the other on Promotion Type = *Volume Discount*. Once filters have been applied, visual totals can be calculated for the entire report, for All Years, or for All Product Categories. Also, for illustration purposes the grand total for All Reseller Sales is obtained too, removing all filters in the report. Evaluating the following DAX expression results in a table with all the information needed to build a table with Visual Totals.  
   
 ```dax
@@ -48,7 +51,7 @@ measure 'Reseller Sales'[Reseller Visual Total for All of Product Category Name]
 evaluate  
 CalculateTable(  
     //CT table expression  
-    summarize(   
+    summarize(
 //summarize table expression  
 crossjoin(distinct('Product Category'[Product Category Name]), distinct('Date'[Calendar Year]))  
 //First Group by expression  
