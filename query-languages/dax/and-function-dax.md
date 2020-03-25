@@ -1,7 +1,7 @@
 ---
 title: "AND function (DAX) | Microsoft Docs"
 ms.service: powerbi
-ms.date: 06/26/2019
+ms.date: 03/25/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # AND
+
 Checks whether both arguments are TRUE, and returns TRUE if both arguments are TRUE. Otherwise returns false.  
   
 ## Syntax  
@@ -23,13 +24,16 @@ AND(<logical1>,<logical2>)
 |--------|--------------|  
 |logical_1, logical_2|The logical values you want to test.|  
   
-## Return value  
+## Return value
+
 Returns true or false depending on the combination of values that you test.  
   
-## Remarks  
+## Remarks
+
 The **AND** function in DAX accepts only two (2) arguments. If you need to perform an AND operation on multiple expressions, you can create a series of calculations or, better, use the AND operator (**&amp;&amp;**) to join all of them in a simpler expression.  
   
-## Example  
+## Example 1
+
 The following formula shows the syntax of the AND function.  
   
 ```dax
@@ -38,7 +42,8 @@ The following formula shows the syntax of the AND function.
 
 Because both conditions, passed as arguments, to the AND function are true, the formula returns "All True".  
   
-## Example  
+## Example 2
+
 The following sample uses the AND function with nested formulas to compare two sets of calculations at the same time. For each product category, the formula determines if the current year sales and previous year sales of the Internet channel are larger than the Reseller channel for the same periods. If both conditions are true, for each category the formula returns the value, "Internet hit".  
 
 ```dax
@@ -97,8 +102,7 @@ Returns
 ||||||||  
 |Grand Total|||||||  
   
+## See also
 
-  
-## See also  
 [Logical functions &#40;DAX&#41;](logical-functions-dax.md)  
   

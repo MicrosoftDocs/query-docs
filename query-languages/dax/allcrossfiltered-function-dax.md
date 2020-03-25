@@ -1,7 +1,7 @@
 ---
 title: "ALLCROSSFILTERED function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 04/15/2018
+ms.date: 03/24/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -35,23 +35,21 @@ ALLCROSSFILTERED can only be used to clear filters but not to return a table.
 
 ## Example  
 
-
 ```dax
-DEFINE 
-MEASURE FactInternetSales[TotalQuantity1] = 
-	CALCULATE(SUM(FactInternetSales[OrderQuantity]), ALLCROSSFILTERED(FactInternetSales))
-MEASURE FactInternetSales[TotalQuantity2] = 
-	CALCULATE(SUM(FactInternetSales[OrderQuantity]), ALL(FactInternetSales))
+DEFINE
+MEASURE FactInternetSales[TotalQuantity1] =
+    CALCULATE(SUM(FactInternetSales[OrderQuantity]), ALLCROSSFILTERED(FactInternetSales))
+MEASURE FactInternetSales[TotalQuantity2] =
+    CALCULATE(SUM(FactInternetSales[OrderQuantity]), ALL(FactInternetSales))
 EVALUATE
-	SUMMARIZECOLUMNS(DimSalesReason[SalesReasonName], 
-		"TotalQuantity1", [TotalQuantity1],
-		"TotalQuantity2", [TotalQuantity2])
-	ORDER BY DimSalesReason[SalesReasonName]
+    SUMMARIZECOLUMNS(DimSalesReason[SalesReasonName], 
+        "TotalQuantity1", [TotalQuantity1],
+        "TotalQuantity2", [TotalQuantity2])
+    ORDER BY DimSalesReason[SalesReasonName]
 
 ```
 
 Returns
-
 
 |DimSalesReason[SalesReasonName]  |[TotalQuantity1]  |[TotalQuantity2] |
 |---------|---------|---------|
@@ -65,8 +63,7 @@ Returns
 |Review     |   60398      |    1640     |
 |Sponsorship   |   60398      |         |
 |Television  Advertisement    |   60398      |     730    |
+|||
 
- 
-  
 > [!NOTE]
 > There is a direct or indirect many-to-many relationship between FactInternetSales table and DimSalesReason table.
