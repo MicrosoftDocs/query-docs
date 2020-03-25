@@ -1,7 +1,7 @@
 ---
 title: "ABS function (DAX) | Microsoft Docs"
 ms.service: powerbi
-ms.date: 12/10/2018
+ms.date: 03/25/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -10,6 +10,7 @@ ms.author: owend
 ---
 
 # ABS
+
 Returns the absolute value of a number.  
   
 ## Syntax  
@@ -24,20 +25,24 @@ ABS(<number>)
 |--------|--------------|  
 |number|The number for which you want the absolute value.|  
   
-## Return value  
+## Return value
+
 A decimal number.  
   
-## Remarks  
+## Remarks
+
 The absolute value of a number is a decimal number, whole or decimal, without its sign. You can use the ABS function to ensure that only non-negative numbers are returned from expressions when nested in functions that require a positive number.  
   
-## Example  
+## Example
+
 The following example returns the absolute value of the difference between the list price and the dealer price, which you might use in a new calculated column, **DealerMarkup**.  
   
 ```dax
 =ABS([DealerPrice]-[ListPrice])  
 ```
   
-## See also  
+## See also
+
 [Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
 [SIGN function &#40;DAX&#41;](sign-function-dax.md)  
   

@@ -1,7 +1,7 @@
 ---
 title: "ATANH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 03/25/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # ATANH
+
 Returns the inverse hyperbolic tangent of a number. Number must be between -1 and 1 (excluding -1 and 1). The inverse hyperbolic tangent is the value whose hyperbolic tangent is *number*, so ATANH(TANH(number)) equals *number*.  
   
 ## Syntax  
@@ -23,7 +24,8 @@ ATANH(number)
 |--------|--------------|  
 |number|Any real number between 1 and -1.|  
   
-## Return value  
+## Return value
+
 Returns the inverse hyperbolic tangent of a number.  
   
 ## Example  
@@ -34,6 +36,7 @@ Returns the inverse hyperbolic tangent of a number.
 |=ATANH(-0.1)||-0.100335348|  
 ||||  
   
-## See also  
+## See also
+
 [ATAN function &#40;DAX&#41;](atan-function-dax.md)  
   

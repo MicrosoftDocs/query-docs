@@ -1,7 +1,7 @@
 ---
 title: "ADDMISSINGITEMS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 03/25/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -36,66 +36,68 @@ ADDMISSINGITEMS(<showAllColumn>[, <showAllColumn>]…, <table>, [ROLLUPISSUBTOTA
 |isSubtotal_columnName|A Boolean column in the supplied table argument which contains ISSUBTOTAL values for the corresponding groupingColumn column.|  
 |filterTable|A table representing filters to include in the logic for determining whether to add specific combinations of items with no data. Used to avoid having ADDMISSINGITEMS add in item combinations which are not present because they were removed by a filter.|  
   
-## ADDMISSINGITEMS with ROLLUPGROUP  
+## ADDMISSINGITEMS with ROLLUPGROUP
+
 ROLLUPGROUP is used inside the ROLLUPISSUBTOTAL function to reflect ROLLUPGROUPs present in the supplied table argument.  
   
-**Restrictions**  
+### Restrictions
   
--   If ROLLUPISSUBTOTAL was used to define the supplied table argument (or the equivalent rows and ISSUBTOTAL columns were added by some other means), ROLLUPISSUBTOTAL must be used with the same arguments within ADDMISSINGITEMS. This is also true for ROLLUPGROUP if it was used with ROLLUPISSUBTOTAL to define the supplied table argument.  
+- If ROLLUPISSUBTOTAL was used to define the supplied table argument (or the equivalent rows and ISSUBTOTAL columns were added by some other means), ROLLUPISSUBTOTAL must be used with the same arguments within ADDMISSINGITEMS. This is also true for ROLLUPGROUP if it was used with ROLLUPISSUBTOTAL to define the supplied table argument.  
   
--   The ADDMISSINGITEMS function requires that, if ROLLUPISSUBTOTAL was used to define the supplied table argument, ISSUBTOTAL columns corresponding to each group by column, or ROLLUPGROUP, are present in the supplied table argument. Also, the names of the ISSUBTOTAL columns must be supplied in the ROLLUPISSUBTOTAL function inside ADDMISSINGITEMS and they must match names of Boolean columns in the supplied table argument. This enables the ADDMISSINGITEMS function to identify BLANK values stemming from the fact that a row is a subtotal row from other BLANK values.  
+- The ADDMISSINGITEMS function requires that, if ROLLUPISSUBTOTAL was used to define the supplied table argument, ISSUBTOTAL columns corresponding to each group by column, or ROLLUPGROUP, are present in the supplied table argument. Also, the names of the ISSUBTOTAL columns must be supplied in the ROLLUPISSUBTOTAL function inside ADDMISSINGITEMS and they must match names of Boolean columns in the supplied table argument. This enables the ADDMISSINGITEMS function to identify BLANK values stemming from the fact that a row is a subtotal row from other BLANK values.  
   
--   If ROLLUPGROUP was used with ROLLUPISSUBTOTAL to define the supplied table argument, exactly one ISSUBTOTAL column name must be supplied per ROLLUPGROUP and it must match the corresponding ISSUBTOTAL column name in the supplied table argument.  
+- If ROLLUPGROUP was used with ROLLUPISSUBTOTAL to define the supplied table argument, exactly one ISSUBTOTAL column name must be supplied per ROLLUPGROUP and it must match the corresponding ISSUBTOTAL column name in the supplied table argument.  
   
-## Example  
+## Example
+
 Add blank rows for columns with "show items with no data" turned on. The ADDMISSINGITEMS function will return NULLs/BLANKs for the IsSubtotal columns of blank rows it adds.  
   
 ```dax
-VAR 'RowHeadersShowAll' =   
-CALCULATETABLE   
+VAR 'RowHeadersShowAll' =
+CALCULATETABLE
 (  
-ADDMISSINGITEMS   
+ADDMISSINGITEMS
 (  
-[Sales Territory Country],     
-[Sales Territory Region],   
-'RowHeadersInCrossTab',   
-ROLLUPISSUBTOTAL   
+[Sales Territory Country],
+[Sales Territory Region],
+'RowHeadersInCrossTab',
+ROLLUPISSUBTOTAL
 (  
-[Sales Territory Group],   
-[Subtotal for Sales Territory Group],   
-[Sales Territory Country],   
-[Subtotal for Sales Territory Country],   
-[Sales Territory Region],   
-[Subtotal for Sales Territory Region]   
-),   
-'RowHeaders'   
-),   
-'DateFilter','TerritoryFilter'   
+[Sales Territory Group],
+[Subtotal for Sales Territory Group],
+[Sales Territory Country],
+[Subtotal for Sales Territory Country],
+[Sales Territory Region],
+[Subtotal for Sales Territory Region]
+),
+'RowHeaders'
+),
+'DateFilter','TerritoryFilter'
 )  
 ```
 
 Example with ROLLUPGROUP  
   
 ```dax
-VAR 'RowHeadersShowAll' =   
-CALCULATETABLE   
+VAR 'RowHeadersShowAll' =
+CALCULATETABLE
 (  
-ADDMISSINGITEMS   
+ADDMISSINGITEMS
 (  
-[Sales Territory Country],     
-[Sales Territory Region],   
-'RowHeadersInCrossTab',   
-ROLLUPISSUBTOTAL   
+[Sales Territory Country],
+[Sales Territory Region],
+'RowHeadersInCrossTab',
+ROLLUPISSUBTOTAL
 (  
-ROLLUPGROUP    
+ROLLUPGROUP
 (  
-[Sales Territory Group],   
-[Sales Territory Country]   
-),   
-[Subtotal for Sales Territory Country],   
-[Sales Territory Region],   
-[Subtotal for Sales Territory Region]   
-),   
-'RowHeaders'   
+[Sales Territory Group],
+[Sales Territory Country]
+),
+[Subtotal for Sales Territory Country],
+[Sales Territory Region],
+[Subtotal for Sales Territory Region]
+),
+'RowHeaders'
 )  
 ```

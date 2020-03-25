@@ -1,7 +1,7 @@
 ---
 title: "BETA.INV function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 03/25/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # BETA.INV
+
 Returns the inverse of the beta cumulative probability density function (BETA.DIST).  
   
 If probability = BETA.DIST(x,...TRUE), then BETA.INV(probability,...) = x. The beta distribution can be used in project planning to model probable completion times given an expected completion time and variability.  
@@ -29,10 +30,12 @@ BETA.INV(probability,alpha,beta,[A],[B])
 |A|Optional. A lower bound to the interval of x.|  
 |B|Optional. An upper bound to the interval of x.|  
   
-## Return value  
+## Return value
+
 Returns the inverse of the beta cumulative probability density function (BETA.DIST).  
   
-## Remarks  
+## Remarks
+
 If any argument is nonnumeric, BETA.INV returns the #VALUE! error value. 
 
 If any argument is not an integer, it is rounded. 
