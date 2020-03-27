@@ -1,7 +1,7 @@
 ---
 title: "USEROBJECTID function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 03/27/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -10,7 +10,7 @@ ms.author: owend
 ---
 # USEROBJECTID
 
-Returns the current user's Object ID from Azure AD for Azure Analysis Server and the current user's SID for on-premise Analysis Server.
+Returns the current user's Object ID from Azure AD or security identifier (SID).
   
 ## Syntax  
   
@@ -24,4 +24,4 @@ This expression has no parameters.
 
 ## Return value
 
-The security identifier (SID) in Windows, or identifier in Power BI or Azure Analysis Services.
+The current user's Object ID from Azure AD for Power BI or Azure Analysis Services models or SID for SQL Server Analysis Services models.

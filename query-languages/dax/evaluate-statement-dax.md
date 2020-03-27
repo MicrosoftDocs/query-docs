@@ -10,7 +10,7 @@ ms.author: owend
 ---
 # EVALUATE
   
-A statement containing a table expression required in a DAX query.
+A statement containing a table expression required in a [DAX query](dax-queries.md).
 
 ## Syntax  
   

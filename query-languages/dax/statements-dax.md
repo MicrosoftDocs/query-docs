@@ -9,7 +9,7 @@ ms.author: owend
 
 ---
 # Statements
-  
+
 ## In this category  
 
 |Statement |Description  |

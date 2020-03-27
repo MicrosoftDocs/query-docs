@@ -10,7 +10,7 @@ ms.author: owend
 ---
 # DEFINE
   
-Defines entities that exist only for the duration of a [DAX query](dax-queries.md).
+A keyword that defines entities that can be applied to one or more EVALUATE statements of a [DAX query](dax-queries.md).
 
 ## Syntax  
   
@@ -33,6 +33,8 @@ Entities can be variables, measures, tables, and columns.
 Definitions typically precede the EVALUATE statement and are valid for all EVALUATE statements.
 
 Definitions can reference other definitions that appear before or after the current definition.
+
+Definitions exist only for the duration of the query.
 
 ## See also
 
