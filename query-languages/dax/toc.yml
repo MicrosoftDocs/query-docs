@@ -623,7 +623,7 @@
               href: value-function-dax.md
     - name: DAX statements
       items:
-      - name: Stetements overview
+      - name: Statements overview
         href: statements-dax.md
       - name: DEFINE
         href: define-statement-dax.md

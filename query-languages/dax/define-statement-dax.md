@@ -22,7 +22,7 @@ DEFINE {  <entity> [<name>] = <expression> }
   
 |Term|Definition|  
 |--------|--------------|  
-|entity|MEASURE, VAR, TABLE, or COLUMN|
+|entity|MEASURE, VAR, TABLE, or COLUMN.|
 |name|The name of an entity. It cannot be an expression.|  
 |expression|Any DAX expression that returns a single scalar value. The expression can use any of the defined entities. The expression must return a table. If a scalar value is required, wrap the scalar inside a ROW() function to produce a table.|  
   
@@ -37,6 +37,5 @@ Definitions can reference other definitions that appear before or after the curr
 ## See also
 
 [DAX queries](dax-queries.md)   
-[DEFINE](define-statement-dax.md)   
 [ORDER BY](orderby-statement-dax.md)   
 [VAR](var-dax.md)   

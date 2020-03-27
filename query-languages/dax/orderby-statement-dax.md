@@ -44,4 +44,5 @@ Returns all rows and columns from the Internet Sales table, ordered by Order Dat
   
 ## See also
 
-[DAX queries](dax-queries.md)
+[DAX queries](dax-queries.md)   
+[EVALUATE](evaluate-statement-dax.md)   
