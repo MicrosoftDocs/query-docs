@@ -10,7 +10,7 @@ ms.date: 02/28/2020
 ms.author: v-douklo
 ---
 
-## Consolidated Grammar
+# Consolidated Grammar
 
 ## Lexical grammar
 
