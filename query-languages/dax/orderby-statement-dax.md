@@ -10,7 +10,7 @@ ms.author: owend
 ---
 # ORDER BY
   
-Defines the sort oder of query results returned by an EVALUATE statement in a [DAX query](dax-queries.md).
+Defines the sort order of query results returned by an EVALUATE statement in a [DAX query](dax-queries.md).
 
 ## Syntax  
   
