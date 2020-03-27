@@ -65,7 +65,7 @@
               href: year-function-dax.md
             - name: YEARFRAC
               href: yearfrac-function-dax.md
-        - name: Time-intelligence functionsF
+        - name: Time-intelligence functions
           items: 
             - name: Time-intelligence functions overview
               href: time-intelligence-functions-dax.md
@@ -241,7 +241,9 @@
               href: logical-functions-dax.md
             - name: AND
               href: and-function-dax.md
-            - name: FALSE
+            - name: COALESCE
+              href: coalesce-function-dax.md
+            - name: \FALSE
               href: false-function-dax.md
             - name: IF
               href: if-function-dax.md
@@ -255,7 +257,7 @@
               href: or-function-dax.md
             - name: SWITCH
               href: switch-function-dax.md
-            - name: TRUE
+            - name: \TRUE
               href: true-function-dax.md
         - name: Math and trig functions
           items: 

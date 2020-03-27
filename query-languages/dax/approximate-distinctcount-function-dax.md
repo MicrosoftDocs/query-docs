@@ -1,7 +1,7 @@
 ---
 title: "APPROXIMATEDISTINCTCOUNT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/07/2018
+ms.date: 03/25/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -10,10 +10,7 @@ ms.author: owend
 ---
 # APPROXIMATEDISTINCTCOUNT
 
-> [!IMPORTANT]
-> This function is **preview**. It is currently not supported by Microsoft Support. For additional limitations, see [Remarks](#remarks).
-
-Returns the *approximate* number of rows that contain distinct values in a column. This function can query large amounts of data with potentially  better performance than DISTINCTCOUNT, with slight deviation from the exact result. 
+Returns the *approximate* number of rows that contain distinct values in a column. This function can query large amounts of data with potentially  better performance than DISTINCTCOUNT, with slight deviation from the exact result.
   
 ## Syntax  
   
@@ -25,10 +22,10 @@ APPROXIMATEDISTINCTCOUNT(<columnName>)
 
 |Term  |Description|  
 |---------|---------|
-|column     | The column that contains the values to be counted. This cannot be an expression.  |        
+|column     | The column that contains the values to be counted. This cannot be an expression.  |
 
-  
-## Return value  
+## Return value
+
 The approximate number of distinct values in *column*.  
   
 ## Remarks  
@@ -37,8 +34,6 @@ The only argument to this function is a column. You can use columns containing a
 
 This function is **preview**. The following limitations apply:
 
-- This function currently supports **DirectQuery** connections only to the following data sources:
-    - Azure SQL Database
-    - Azure SQL Data Warehouse
+- This function currently supports **DirectQuery** connections only to the following data sources: Azure SQL Database, Azure SQL Data Warehouse.
 
 - This feature is not yet available in Intellisense.

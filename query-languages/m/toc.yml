@@ -87,6 +87,8 @@
               href: azurestorage-datalakecontents.md
             - name: AzureStorage.Tables
               href: azurestorage-tables.md
+            - name: Cdm.Contents
+              href: cdm-contents.md
             - name: Csv.Document
               href: csv-document.md
             - name: CsvStyle.QuoteAfterDelimiter
@@ -1201,6 +1203,8 @@
               href: table-fromrows.md
             - name: Table.FromValue
               href: table-fromvalue.md
+            - name: Table.FuzzyGroup
+              href: table-fuzzygroup.md
             - name: Table.FuzzyJoin
               href: table-fuzzyjoin.md
             - name: Table.FuzzyNestedJoin

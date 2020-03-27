@@ -1,7 +1,7 @@
 ---
 title: "ADDCOLUMNS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 03/25/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # ADDCOLUMNS
+
 Adds calculated columns to the given table or table expression.  
   
 ## Syntax  
@@ -25,16 +26,18 @@ ADDCOLUMNS(<table>, <name>, <expression>[, <name>, <expression>]…)
 |name|The name given to the column, enclosed in double quotes.  |
 |expression|Any DAX expression that returns a scalar expression, evaluated for each row of *table*. | 
   
-## Return value  
+## Return value
+
 A table with all its original columns and the added ones.  
   
 ## Remarks  
   
-## Example  
+## Example
+
 The following example returns an extended version of the Product Category table that includes total sales values from the reseller channel and the internet sales.  
   
 ```dax
-ADDCOLUMNS(ProductCategory,   
+ADDCOLUMNS(ProductCategory,
                , "Internet Sales", SUMX(RELATEDTABLE(InternetSales_USD), InternetSales_USD[SalesAmount_USD])  
                , "Reseller Sales", SUMX(RELATEDTABLE(ResellerSales_USD), ResellerSales_USD[SalesAmount_USD]))  
 ```
