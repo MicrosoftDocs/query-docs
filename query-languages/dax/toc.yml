@@ -235,6 +235,10 @@
               href: lookupvalue-function-dax.md
             - name: USERNAME
               href: username-function-dax.md
+            - name: USEROBJECTID
+              href: userobjectid-function-dax.md
+            - name: USERPRINCIPALNAME
+              href: userprincipalname-function-dax.md
         - name: Logical functions
           items: 
             - name: Logical functions overview
@@ -247,6 +251,8 @@
               href: false-function-dax.md
             - name: IF
               href: if-function-dax.md
+            - name: IF.EAGER
+              href: ifeager-function-dax.md
             - name: IFERROR
               href: iferror-function-dax.md
             - name: IN
@@ -269,6 +275,10 @@
               href: acos-function-dax.md
             - name: ACOSH
               href: acosh-function-dax.md
+            - name: ACOT
+              href: acot-function-dax.md
+            - name: ACOTH
+              href: acoth-function-dax.md
             - name: ASIN
               href: asin-function-dax.md
             - name: ASINH
@@ -393,8 +403,6 @@
               href: treatas-function.md
             - name: UNION
               href: union-function-dax.md
-            - name: VAR
-              href: var-dax.md
         - name: Parent and child functions
           items: 
             - name: Parent and child functions overview
@@ -607,10 +615,24 @@
               href: trim-function-dax.md
             - name: UNICHAR
               href: unichar-function-dax.md
+            - name: UNICODE
+              href: unicode-function-dax.md
             - name: UPPER
               href: upper-function-dax.md
             - name: VALUE
               href: value-function-dax.md
+    - name: DAX statements
+      items:
+      - name: Statements overview
+        href: statements-dax.md
+      - name: DEFINE
+        href: define-statement-dax.md
+      - name: EVALUATE
+        href: evaluate-statement-dax.md
+      - name: ORDER BY
+        href: orderby-statement-dax.md
+      - name: VAR
+        href: var-dax.md
     - name: DAX syntax
       href: dax-syntax-reference.md
     - name: DAX operators

@@ -9,7 +9,7 @@ ms.author: owend
 ---
 # DAX queries
 
-With DAX queries, you can query and return data defined by a table expression. Reporting clients construct DAX queries whenever a field is placed on a report surface, or a whenever a filter or calculation is applied. DAX queries can also be created and run in [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) (SSMS) and open-source tools like [DAX Studio](https://daxstudio.org). DAX queries run in SSMS and DAX Studio return results as a table. 
+With DAX queries, you can query and return data defined by a table expression. Reporting clients construct DAX queries whenever a field is placed on a report surface, or a whenever a filter or calculation is applied. DAX queries can also be created and run in [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) (SSMS) and open-source tools like [DAX Studio](https://daxstudio.org). DAX queries run in SSMS and DAX Studio return results as a table.
 
 ## Syntax
 
@@ -77,7 +77,7 @@ EVALUATE(
     'Internet Sales'
     )
 ORDER BY
-	'Internet Sales'[Order Date]
+    'Internet Sales'[Order Date]
 ```
 
 Returns all rows and columns from the Internet Sales table, ordered by Order Date, as a table.
@@ -112,7 +112,7 @@ EVALUATE(
     'Internet Sales'
     )
 ORDER BY
-	'Internet Sales'[Sales Order Number]
+    'Internet Sales'[Sales Order Number]
 START AT "SO7000"
 ```
 
@@ -153,10 +153,10 @@ MEASURE 'Internet Sales'[Internet Total Sales] = SUM('Internet Sales'[Sales Amou
 EVALUATE
 SUMMARIZECOLUMNS
 (
-	'Date'[Calendar Year],
-	TREATAS({2013, 2014}, 'Date'[Calendar Year]),
-	"Total Sales", [Internet Total Sales],
-	"Combined Years Total Sales", CALCULATE([Internet Total Sales], ALLSELECTED('Date'[Calendar Year]))
+    'Date'[Calendar Year],
+    TREATAS({2013, 2014}, 'Date'[Calendar Year]),
+    "Total Sales", [Internet Total Sales],
+    "Combined Years Total Sales", CALCULATE([Internet Total Sales], ALLSELECTED('Date'[Calendar Year]))
 )
 ORDER BY [Calendar Year]
 ```
