@@ -100,7 +100,7 @@ Value.Type( 1 as number )   // type number
 
 Note that the `is` and `as` operators only accept primitive types as their right operand. M does not provide means to check values for conformance to custom types.
 
-A type `X` is _compatible_ with a type `Y` if and only if all values that conform to `X` also conform to `Y`. All types are compatible with type `any` and no types (but `none` itself) are compatible with type `none`. The following graph shows the compatibility relation. (Type compatibility is a reflexive and transitive. It forms a lattice with type `any` as the top and type `none` as the bottom value.) The names of abstract types are set in _italics_. 
+A type `X` is _compatible_ with a type `Y` if and only if all values that conform to `X` also conform to `Y`. All types are compatible with type `any` and no types (but `none` itself) are compatible with type `none`. The following graph shows the compatibility relation. (Type compatibility is reflexive and transitive. It forms a lattice with type `any` as the top and type `none` as the bottom value.) The names of abstract types are set in _italics_. 
 
 ![Type compatibility](media/m-spec-type-compatibility.png)
  

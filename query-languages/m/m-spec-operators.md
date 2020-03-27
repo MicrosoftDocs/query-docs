@@ -194,9 +194,9 @@ M handles cyclic values by keeping construction of records, lists, and tables la
 ```
 [A=B, B=A] 
 // [A = Error.Record("Expression.Error", 
-//         "A cyclic reference was encountered during evaluation), 
+//         "A cyclic reference was encountered during evaluation"), 
 //  B = Error.Record("Expression.Error", 
-//         "A cyclic reference was encountered during evaluation), 
+//         "A cyclic reference was encountered during evaluation"), 
 // ]
 ```
 
