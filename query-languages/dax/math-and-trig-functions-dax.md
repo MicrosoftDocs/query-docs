@@ -1,7 +1,7 @@
 ---
 title: "Math and Trig functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 04/22/2019
+ms.date: 03/27/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -20,6 +20,8 @@ The mathematical functions in Data Analysis Expressions (DAX) are very similar t
 |[ABS](abs-function-dax.md)       | Returns the absolute value of a number.        |
 |[ACOS](acos-function-dax.md)     |  Returns the arccosine, or inverse cosine, of a number.       |
 |[ACOSH](acosh-function-dax.md)     | Returns the inverse hyperbolic cosine of a number.        |
+|[ACOT](acot-function-dax.md)     | Returns the arccotangent, or inverse cotangent, of a number.        |
+|[ACOTH](acoth-function-dax.md)     | Returns the inverse hyperbolic cotangent of a number.       |
 |[ASIN](asin-function-dax.md)     |  Returns the arcsine, or inverse sine, of a number.       |
 |[ASINH](asinh-function-dax.md)     | Returns the inverse hyperbolic sine of a number.         |
 |[ATAN](atan-function-dax.md)     | Returns the arctangent, or inverse tangent, of a number.         |

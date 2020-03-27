@@ -10,7 +10,7 @@ ms.author: owend
 ---
 # Other functions
 
-These functions perform unique actions that cannot be defined by any of the categories. 
+These functions and statements perform unique actions that cannot be defined by any of the categories. 
   
 ## In this category  
 
@@ -34,4 +34,7 @@ These functions perform unique actions that cannot be defined by any of the cate
 |[Table Constructor &#40;DAX&#41;](table-Constructor.md)    |  Returns a table of one or more columns.       |
 |[TREATAS](treatas-function.md)     |  Applies the result of a table expression as filters to columns from an unrelated table.        |
 |[UNION](union-function-dax.md)     |  Creates a union (join) table from a pair of tables.         |
-|[VAR &#40;DAX&#41;](var-dax.md)       |  Stores the result of an expression as a named variable, which can then be passed as an argument to other measure expressions.       |
+
+|Statement |Description  |
+|---------|---------|
+|[VAR &#40;DAX Keyword&#41;](var-dax.md)       |  Stores the result of an expression as a named variable, which can then be passed as an argument to other measure expressions.       |
