@@ -1,5 +1,5 @@
 ---
-title: "VAR function (DAX) | Microsoft Docs"
+title: "VAR keyword (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 05/24/2019
 ms.reviewer: owend
@@ -22,28 +22,31 @@ VAR <name> = <expression>
   
 |Term|Definition|  
 |--------|--------------|  
-|name|The name of the variable (identifier).<br />Delimiters are not supported. For example, ‘varName’ or [varName] will result in an error.<br />Supported character set: a-z, A-Z, 0-9.<br />   0-9 are not valid as first character.<br />__ (double underscore) is allowed as a prefix to the identifier name.<br />No other special characters are supported.<br />Reserved keywords not allowed.<br />Names of existing tables are not allowed.<br />Empty spaces are not allowed.|  
+|name|The name of the variable (identifier).<br />Delimiters are not supported. For example, 'varName' or [varName] will result in an error.<br />Supported character set: a-z, A-Z, 0-9.<br />   0-9 are not valid as first character.<br />__ (double underscore) is allowed as a prefix to the identifier name.<br />No other special characters are supported.<br />Reserved keywords not allowed.<br />Names of existing tables are not allowed.<br />Empty spaces are not allowed.|  
 |expression|A DAX expression which returns a scalar or table value.|  
   
-## Return value  
+## Return value
+
 A named variable containing the result of the expression argument.  
   
 ## Exceptions  
   
-## Remarks  
+## Remarks
+
 An expression passed as an argument to VAR can contain another VAR declaration.  
   
 When referencing a variable:  
   
--   Measures cannot refer to variables defined outside the measure expression, but can refer to functional scope variables defined within the expression.  
+- Measures cannot refer to variables defined outside the measure expression, but can refer to functional scope variables defined within the expression.  
   
--   Variables can refer to measures.  
+- Variables can refer to measures.  
   
--   Variables can refer to previously defined variables.  
+- Variables can refer to previously defined variables.  
   
--   Columns in table variables cannot be referenced via TableName[ColumnName] syntax.  
+- Columns in table variables cannot be referenced via TableName[ColumnName] syntax.  
   
-## Example  
+## Example
+
 To calculate a percentage of year-over-year growth without using a variable, you could create three separate measures. This first measure calculates Sum of Sales Amount:  
   
 ```dax
@@ -79,5 +82,4 @@ VAR SalesLastYear =
     return if(Sales, DIVIDE(Sales – SalesLastYear, Sales))  
 ```
 
-By using a variable, you can get the same outcome, but in a more readable way. In addition, the result of the expression is stored in the variable upon declaration. It doesn’t have to be recalculated each time it is used, as it would without using a variable. This can improve the measure’s performance.  
-  
+By using a variable, you can get the same outcome, but in a more readable way. In addition, the result of the expression is stored in the variable upon declaration. It doesn't have to be recalculated each time it is used, as it would without using a variable. This can improve the measure's performance.
