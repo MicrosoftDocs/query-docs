@@ -1,7 +1,7 @@
 ---
 title: "Information functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 04/19/2019
+ms.date: 03/27/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # Information functions
+
 DAX information functions look at the cell or row that is provided as an argument and tells you whether the value matches the expected type. For example, the ISERROR function returns TRUE if the value that you reference contains an error.  
   
 ## In this category  
@@ -28,3 +29,5 @@ DAX information functions look at the cell or row that is provided as an argumen
 |[ISTEXT](istext-function-dax.md)     | Checks if a value is text, and returns TRUE or FALSE.          |
 |[LOOKUPVALUE](lookupvalue-function-dax.md)    | Returns the value in *result_columnName* for the row that meets all criteria specified by *search_columnName* and *search_value*.         |
 |[USERNAME](username-function-dax.md)    |  Returns the domain name and username from the credentials given to the system at connection time.        |
+|[USEROBJECTID](userobjectid-function-dax.md)    |  Returns the current user's Object ID or SID.       |
+|[USERPRINCIPALNAME](userprincipalname-function-dax.md)    |  Returns the user principal name.       |

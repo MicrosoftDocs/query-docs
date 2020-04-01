@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # USERNAME
+
 Returns the domain name and username from the credentials given to the system at connection time.  
   
 ## Syntax  
@@ -18,12 +19,15 @@ USERNAME()
 ```
   
 ### Parameters  
+
+This expression has no parameters.
   
-## Return value  
+## Return value
+
 The username from the credentials given to the system at connection time  
   
-  
-## Example  
+## Example
+
 The following code verifies if the user login is part of the UsersTable.  
   
 ```dax

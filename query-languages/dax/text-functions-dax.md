@@ -1,7 +1,7 @@
 ---
 title: "Text functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 04/22/2019
+ms.date: 03/27/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -37,5 +37,6 @@ Data Analysis Expressions (DAX) includes a set of text functions based on the li
 |[SUBSTITUTE](substitute-function-dax.md)     |  Replaces existing text with new text in a text string.         |
 |[TRIM](trim-function-dax.md)      |  Removes all spaces from text except for single spaces between words.         |
 |[UNICHAR](unichar-function-dax.md)    |  Returns the Unicode character referenced by the numeric value.       |
+|[UNICODE](unicode-function-dax.md)    |  Returns the numeric code corresponding to the first character of the text string.       |
 |[UPPER](upper-function-dax.md)    |  Converts a text string to all uppercase letters.         |
 |[VALUE](value-function-dax.md)     |  Converts a text string that represents a number to a number.       |

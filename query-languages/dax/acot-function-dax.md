@@ -1,0 +1,29 @@
+---
+title: "ACOT function (DAX) | Microsoft Docs"
+ms.service: powerbi 
+ms.date: 03/25/2020
+ms.reviewer: owend
+ms.topic: reference
+author: minewiskan
+ms.author: owend
+
+---
+# ACOT
+
+Returns the principal value of the arccotangent, or inverse cotangent of a number.
+  
+## Syntax  
+  
+```dax
+ACOT(number)  
+```
+  
+### Parameters  
+  
+|Term|Definition|  
+|--------|--------------|  
+|Number|The cosine of the angle you want. Must be a real number.|  
+  
+## Return value
+
+A single decimal value.  
