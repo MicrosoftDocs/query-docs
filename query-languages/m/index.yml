@@ -20,18 +20,6 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card
-  - title: Functions
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Power Query M function reference
-            url: power-query-m-function-reference.md
-      - linkListType: overview
-        links:
-          - text: Understanding Power Query M functions
-            url: understanding-power-query-m-functions.md
-
-  # Card
   - title: Get started
     linkLists:
       - linkListType: quickstart
@@ -44,6 +32,22 @@ landingContent:
             url: expressions-values-and-let-expression.md
           - text: Evaluation model
             url: evaluation-model.md
+      - linkListType: learn
+        links:
+          - text: Power Query documentation
+            url: https://docs.microsoft.com/en-us/power-query
+
+  # Card
+  - title: Functions
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Power Query M function reference
+            url: power-query-m-function-reference.md
+      - linkListType: overview
+        links:
+          - text: Understanding Power Query M functions
+            url: understanding-power-query-m-functions.md
 
   # Card
   - title: Specification
