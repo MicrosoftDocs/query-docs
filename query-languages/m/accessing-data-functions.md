@@ -1,6 +1,6 @@
 ---
 title: "Accessing data functions | Microsoft Docs"
-ms.date: 6/13/2019
+ms.date: 4/7/2020
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -10,8 +10,9 @@ ms.author: v-douklo
 # Accessing data functions
  
   
-## <a name="__toc360789771"></a>Accessing data  
-Functions in this section access data and return table values. Most of these functions return a table value that is called a **navigation table**. A **navigation table** is a two column table. The first column contains the name of an item and the corresponding second column contains the value of that item. This shape is primarily used by the Power Query user interface to provide navigation experience over the potentially large hierarchical data returned.  
+## <a name="__toc360789771"></a>Accessing data
+
+These functions access data and return table values. Most of these functions return a table value that's called a **navigation table**. This table is primarily used by the Power Query user interface to provide navigation experience over the potentially large hierarchical data set returned.  
   
 |Function|Description|  
 |------------|---------------|  

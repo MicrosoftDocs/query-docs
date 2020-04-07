@@ -6,7 +6,7 @@ author: dougklopfenstein
 ms.service: powerquery
 
 ms.topic: article
-ms.date: 02/25/2020
+ms.date: 4/7/2020
 ms.author: v-douklo
 ---
 
@@ -354,8 +354,7 @@ A _text_ value represents a sequence of Unicode characters. Text values have a l
 _text-literal:<br/> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"` text-literal-characters<sub>opt</sub>  `"`<br/>
 _text-literal-characters:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal-character<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal-characters  text-literal-character_<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal-character text-literal-characters<sub>opt</sub><br/> 
 text-literal-character:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-text-character<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;character-escape-sequence<br/>
@@ -416,7 +415,7 @@ _list-expression:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ _item-list<sub>opt</sub>_  }<br/>
 _item-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item ,  item-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item_ `,`  _item-list<br/>
 item:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression_  `..` _expression_
@@ -479,7 +478,7 @@ A _record value_ is an ordered sequence of fields. A _field_ consists of a _fiel
 _record-expression:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`  _field-list<sub>opt</sub>_  `]`<br/> _field-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field  ,  field-list<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field_  `,`  _field-list<br/> 
 field:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-name_  `=`  _expression<br/> 
 field-name:<br/>

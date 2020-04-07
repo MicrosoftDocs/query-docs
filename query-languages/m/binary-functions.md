@@ -1,6 +1,6 @@
 ---
 title: "Binary functions | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 4/7/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -10,7 +10,8 @@ ms.author: v-douklo
 
 ---
 # Binary functions
- 
+
+These functions convert to, convert from, and manipulate binary data. Examples of binary data include the raw content of files, web request responses, and other files that are collections of bytes (rather than text, databases, or services).
   
 ## <a name="__toc362450785"></a>Binary Formats  
   

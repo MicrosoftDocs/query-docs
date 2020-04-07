@@ -1,6 +1,6 @@
 ---
 title: "Expression functions | Microsoft Docs"
-ms.date: 8/21/2019
+ms.date: 4/7/2020
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -9,7 +9,8 @@ ms.author: v-douklo
 
 ---
 # Expression functions
- 
+
+These functions allow construction and evaluation of M code.
   
 ## <a name="__toc360789877"></a>Expression  
   

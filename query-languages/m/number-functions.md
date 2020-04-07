@@ -1,6 +1,6 @@
 ---
 title: "Number functions | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 4/7/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -10,7 +10,8 @@ ms.author: v-douklo
 
 ---
 # Number functions
- 
+
+These functions provide constants, numeric information, type conversion and formatting, rounding, numeric operations, randomness, trigonometric operations, and bit manipulation.
   
 ## Number  
   

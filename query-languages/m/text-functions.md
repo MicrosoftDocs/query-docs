@@ -1,6 +1,6 @@
 ---
 title: "Text functions | Microsoft Docs"
-ms.date: 6/13/2019
+ms.date: 4/7/2019
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -10,7 +10,8 @@ ms.author: v-douklo
 
 ---
 # Text functions
- 
+
+These functions provide information on text, as well as comparisons, extraction, modification, membership information, and transformations to and from other types.
   
 ## Text  
 

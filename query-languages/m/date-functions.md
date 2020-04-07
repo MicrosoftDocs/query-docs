@@ -1,6 +1,6 @@
 ---
 title: "Date functions | Microsoft Docs"
-ms.date: 5/13/2019
+ms.date: 4/7/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -10,7 +10,8 @@ ms.author: v-douklo
 
 ---
 # Date functions
- 
+
+These functions allow creation, manipulation, and comparison for the date component of date, datetime, and datetimezone values.
   
 ## <a name="__toc360788935"></a>Date  
   

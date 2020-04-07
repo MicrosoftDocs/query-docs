@@ -6,7 +6,7 @@ author: dougklopfenstein
 ms.service: powerquery
 
 ms.topic: article
-ms.date: 02/28/2020
+ms.date: 4/7/2020
 ms.author: v-douklo
 ---
 
@@ -21,8 +21,7 @@ section:<br/>
 section-name:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier<br/>
 section-members:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;section-member<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;section-members section-member<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;section-member section-members<sub>opt</sub><br/>
 section-member:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;literal-attributes<sub>opt</sub>_  `shared`_<sub>opt</sub> section-member-name_  `=`  _expression_  `;`<br/>
 _section-member-name:<br/>

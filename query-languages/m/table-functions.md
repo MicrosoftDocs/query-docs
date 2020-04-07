@@ -1,6 +1,6 @@
 ---
 title: "Table functions | Microsoft Docs"
-ms.date: 8/06/2019
+ms.date: 4/7/2020
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -9,7 +9,8 @@ ms.author: v-douklo
 
 ---
 # Table functions
- 
+
+These functions include nearly all table-level operations, including construction from other types, conversion to other types, information about the table, and row and column operations.
   
 ## <a name="__toc295771314"></a>Table construction  
   

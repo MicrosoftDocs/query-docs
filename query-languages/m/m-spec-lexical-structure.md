@@ -6,7 +6,7 @@ author: dougklopfenstein
 ms.service: powerquery
 
 ms.topic: article
-ms.date: 02/25/2020
+ms.date: 4/7/2020
 ms.author: v-douklo
 ---
 
@@ -40,7 +40,7 @@ When there is more than one possible expansion of a non-terminal symbol, the alt
 
 _variable-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable-list , variable_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable-list_ `,` _variable_
 
 
 defines a _variable-list_ to either consist of a _variable_ or consist of a _variable-list_ followed by a _variable_. In other words, the definition is recursive and specifies that a variable list consists of one or more variables, separated by commas.
@@ -48,14 +48,14 @@ defines a _variable-list_ to either consist of a _variable_ or consist of a _var
 A subscripted suffix "<sub>opt</sub>" is used to indicate an optional symbol. The production:
 
 _field-specification:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional`_<sub>opt</sub> identifier = field-type_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional`_<sub>opt</sub> identifier_ `=` _field-type_
 </code>
 
 is shorthand for:
 
 _field-specification:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier = field-type<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional identifier = field-type_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier_ `=` _field-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional identifier_ `=` _field-type_
 
 and defines a _field-specification_ to optionally begin with the terminal symbol `optional` followed by an _identifier_, the terminal symbol `=`, and a _field-type_.
 
@@ -131,21 +131,18 @@ _comment:<br/>
 single-line-comment:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`//` _single-line-comment-characters<sub>opt</sub><br/>
 single-line-comment-characters:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-line-comment-character<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-line-comment-characters  single-line-comment-character<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-line-comment-character single-line-comment-characters<sub>opt</sub><br/>
 single-line-comment-character:_<br/> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any Unicode character except a _new-line-character<br/>
 delimited-comment:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`/*` _delimited-comment-text<sub>opt</sub>  asterisks_  `/`<br/>
 _delimited-comment-text:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delimited-comment-section<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delimited-comment-text  delimited-comment-section</br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delimited-comment-section delimited-comment-text<sub>opt</sub></br> 
 delimited-comment-section:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`/`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_asterisks<sub>opt</sub>  not-slash-or-asterisk<br/>
 asterisks:_<br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`*`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`*`  _asterisks<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`*` _asterisks<sub>opt</sub><br/>
 not-slash-or-asterisk:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any Unicode character except `*` or `/` 
 
@@ -209,7 +206,7 @@ The following describes the standard mechanism of character escaping in an M doc
 _character-escape-sequence:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`#(`  _escape-sequence-list_  `)`<br/> _escape-sequence-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-escape-sequence<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-escape-sequence  ,  escape-sequence-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-escape-sequence_  `,`  _escape-sequence-list<br/>
 single-escape-sequence:<br/> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;long-unicode-escape-sequence<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;short-unicode-escape-sequence<br/>
@@ -266,8 +263,7 @@ decimal-number-literal:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digits  exponent-part<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digits<br/> 
 decimal-digits:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digit<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digit  decimal-digits<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digit decimal-digits<sub>opt</sub><br/> 
 decimal-digit:_  one of<br/> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`0  1  2  3  4  5  6  7  8  9`<br/>
 _exponent-part:_<br/>
@@ -278,8 +274,7 @@ _hexadecimal-number-literal:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`0x` _hex-digits_<br/> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`0X` _hex-digits<br/>
 hex-digits:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hex-digit<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hex-digit hex-digits<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hex-digit hex-digits<sub>opt</sub><br/>
 hex-digit:_  one of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  a  b  c  d e  f`
 
@@ -298,8 +293,7 @@ A text literal is used to write a sequence of Unicode characters and produces a 
 _text-literal:_<br/> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"`  _text-literal-characters<sub>opt</sub>_  `"`<br/>
 _text-literal-characters:<br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal-character<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal-character text-literal-characters<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal-character text-literal-characters<sub>opt</sub><br/>
 text-literal-character:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-text-character<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;character-escape-sequence<br/>
@@ -339,8 +333,7 @@ identifier-start-character:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;letter-character<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;underscore-character<br/>
 identifier-part-characters:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier-part-character<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier-part-character  identifier-part-characters<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier-part-character  identifier-part-characters<sub>opt</sub><br/>
 identifier-part-character:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;letter-character<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digit-character<br/>

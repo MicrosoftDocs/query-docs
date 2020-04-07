@@ -6,7 +6,7 @@ author: dougklopfenstein
 ms.service: powerquery
 
 ms.topic: article
-ms.date: 02/28/2020
+ms.date: 4/7/2020
 ms.author: v-douklo
 ---
 
@@ -130,6 +130,7 @@ The following table summarizes the M operators, listing the operator categories 
         <td>Equal</td>
     </tr>
     <tr>
+        <td></td>
         <td><em>x</em> <> <em>y</em></td>
         <td>Not equal</td>
     </tr>
@@ -313,7 +314,7 @@ required-projection:_<br/>
 _optional-projection:_<br/> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[` _required-selector-list_ `] ?`<br/> _required-selector-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-field-selector<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-selector-list , required-field-selector<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-selector-list_ `,` _required-field-selector<br/> 
 implicit-target -projection:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;projection_
 
@@ -1260,7 +1261,7 @@ _is-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as-expression<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is-expression_  `is`  _nullable-primitive-type<br/> 
 nullable-primitive-type:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`<sub>opt</sub> _primitive-type_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`_<sub>opt</sub> primitive-type_
 
 Type compatibility, as supported by the `is` operator, is a subset of [general type compatibility](m-spec-types.md) and is defined using the following rules:
 
@@ -1284,7 +1285,7 @@ The type assertion operator `x as y` is defined for the following types of value
 The expression `x as y` asserts that the value `x` is compatible with `y` as per the `is` operator. If it is not compatible, an error is raised. `y` must be a _nullable-primitive-type_.
 
 _as-expression:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;equality -expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;equality-expression<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as-expression_  `as`  _nullable-primitive-type_
 
 The expression `x as y` is evaluated as follows:

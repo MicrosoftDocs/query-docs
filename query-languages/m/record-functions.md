@@ -10,7 +10,8 @@ ms.author: v-douklo
 
 ---
 # Record functions
- 
+
+These functions are used to select values and subsets of records, provide information about them, and perform operations.
   
 ## <a name="__toc360789143"></a>Record  
   

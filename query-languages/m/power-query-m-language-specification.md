@@ -1,6 +1,6 @@
 ---
 title: "Power Query M language specification | Microsoft Docs"
-ms.date: 7/25/2019
+ms.date: 4/7/2020
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -15,7 +15,7 @@ The specification describes the values, expressions, environments and variables,
 The specification is contained in the following topics.
 
 * [Introduction](m-spec-introduction.md)
-* [Lexical Struction](m-spec-lexical-structure.md)
+* [Lexical Structure](m-spec-lexical-structure.md)
 * [Basic Concepts](m-spec-basic-concepts.md)
 * [Values](m-spec-values.md)
 * [Types](m-spec-types.md)

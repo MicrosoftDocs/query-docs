@@ -1,6 +1,6 @@
 ---
 title: "Replacer functions | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 4/7/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -12,7 +12,7 @@ ms.author: v-douklo
 # Replacer functions
  
   
-Replacer functions are used by other functions in the library to replace a given value in a structure.  
+These functions are used by other functions in the library to replace a given value.  
   
 ## <a name="__toc360789948"></a>Replacer  
   
