@@ -12,7 +12,7 @@ ms.author: v-douklo
 # Combiner functions
  
   
-These functions are used by other library functions that merge values, such as `Table.ToList` and `Table.CombineColumns`. The function is applied to each row in the table to produce a single value for each row.  
+These functions are used by other library functions that merge values, such as `Table.ToList` and `Table.CombineColumns`. In these two cases, a combiner function is applied to each row in the table to produce a single value for each row.  
   
 ## <a name="__toc360789932"></a>Combiner  
   
