@@ -11,7 +11,7 @@ ms.author: v-douklo
 ---
 # Number functions
 
-These functions provide constants, numeric information, type conversion and formatting, rounding, numeric operations, randomness, trigonometric operations, and bit manipulation.
+These functions are used to create and manipulate number values.
   
 ## Number  
   
