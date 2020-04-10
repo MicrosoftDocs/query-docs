@@ -11,7 +11,7 @@ ms.author: v-douklo
 ---
 # Date functions
 
-These functions allow creation, manipulation, and comparison for the date component of date, datetime, and datetimezone values.
+These functions are used to create, manipulate, and compare the date component of date, datetime, and datetimezone values.
   
 ## <a name="__toc360788935"></a>Date  
   
