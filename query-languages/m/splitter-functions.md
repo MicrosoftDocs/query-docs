@@ -11,7 +11,7 @@ ms.author: v-douklo
 ---
 # Splitter functions
 
-These functions are used to split text.
+These functions split text.
   
 ## <a name="__toc360789908"></a>Splitter  
   

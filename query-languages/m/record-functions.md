@@ -11,7 +11,7 @@ ms.author: v-douklo
 ---
 # Record functions
 
-These functions are used to select values and subsets of records, provide information about them, and perform operations.
+These functions select, manipulate, and provide information about records.
   
 ## <a name="__toc360789143"></a>Record  
   

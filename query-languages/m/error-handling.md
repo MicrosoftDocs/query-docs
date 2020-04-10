@@ -11,7 +11,7 @@ ms.author: v-douklo
 ---
 # Error handling
 
-These functions return diagnostic traces at different levels of verbosity, as well as throwing error records.
+These functions return diagnostic traces at different levels of verbosity, as well as throw error records.
   
 ## <a name="__toc360789892"></a>Error  
   

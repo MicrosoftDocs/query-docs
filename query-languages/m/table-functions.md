@@ -10,7 +10,7 @@ ms.author: v-douklo
 ---
 # Table functions
 
-These functions include nearly all table-level operations, including construction from other types, conversion to other types, information about the table, and row and column operations.
+These functions construct, convert, analyze, and manipulate table values.
   
 ## <a name="__toc295771314"></a>Table construction  
   

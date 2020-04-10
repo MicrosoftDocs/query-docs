@@ -11,7 +11,7 @@ ms.author: v-douklo
 ---
 # DateTimeZone functions
 
-These functions allow creation and manipulation of datetimezone values. 
+These functions create and manipulate datetimezone values. 
   
 ## <a name="__toc360789069"></a>DateTimeZone  
   

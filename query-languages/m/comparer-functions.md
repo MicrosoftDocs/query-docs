@@ -11,7 +11,7 @@ ms.author: v-douklo
 ---
 # Comparer functions
 
-These functions are used to test equality and determine ordering. 
+These functions test equality and determine ordering. 
   
 ## <a name="__toc360789896"></a>Comparer  
   
