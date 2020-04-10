@@ -11,7 +11,7 @@ ms.author: v-douklo
 ---
 # Text functions
 
-These functions provide information on text, as well as comparisons, extraction, modification, membership information, and transformations to and from other types.
+These functions are used to construct, analyze, and manipulate text values.
   
 ## Text  
 
