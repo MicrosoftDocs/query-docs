@@ -11,7 +11,7 @@ ms.author: v-douklo
 ---
 # Value functions
 
-These functions evaluate and perform arithmetic operations on values.
+These functions evaluate and perform operations on values.
   
 ## <a name="__toc360789732"></a>Values  
   

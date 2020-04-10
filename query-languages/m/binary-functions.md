@@ -11,7 +11,7 @@ ms.author: v-douklo
 ---
 # Binary functions
 
-These functions convert and manipulate binary data. Examples of binary data include the raw content of files, web request responses, and other files that are collections of bytes (rather than text, databases, or services).
+These functions convert and manipulate binary data.
   
 ## <a name="__toc362450785"></a>Binary Formats  
   
