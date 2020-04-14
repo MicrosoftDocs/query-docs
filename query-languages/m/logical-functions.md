@@ -11,7 +11,7 @@ ms.author: v-douklo
 ---
 # Logical functions
 
-These functions return true/false values or their text equivalent.
+These functions create and manipulate logical (that is, true/false) values.
   
 ## <a name="__toc360788924"></a>Logical  
   

@@ -10,7 +10,7 @@ ms.author: v-douklo
 ---
 # Expression functions
 
-These functions allow construction and evaluation of M code.
+These functions allow the construction and evaluation of M code.
   
 ## <a name="__toc360789877"></a>Expression  
   

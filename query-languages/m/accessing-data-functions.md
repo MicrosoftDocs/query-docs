@@ -12,7 +12,7 @@ ms.author: v-douklo
   
 ## <a name="__toc360789771"></a>Accessing data
 
-These functions access data and return table values. Most of these functions return a table value called a **navigation table**. This table is primarily used by the Power Query user interface to provide a navigation experience over the potentially large hierarchical data sets returned.  
+These functions access data and return table values. Most of these functions return a table value called a **navigation table**. Navigation tables are primarily used by the Power Query user interface to provide a navigation experience over the potentially large hierarchical data sets returned.  
   
 |Function|Description|  
 |------------|---------------|  
