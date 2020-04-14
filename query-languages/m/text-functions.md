@@ -11,7 +11,7 @@ ms.author: v-douklo
 ---
 # Text functions
 
-These functions construct, analyze, and manipulate text values.
+These functions create and manipulate text values.
   
 ## Text  
 

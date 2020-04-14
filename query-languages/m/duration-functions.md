@@ -11,7 +11,7 @@ ms.author: v-douklo
 ---
 # Duration functions
 
-These functions create, manipulate, and compare duration values.
+These functions create and manipulate duration values.
   
 ## <a name="__toc286049307"></a>Duration  
   

@@ -11,7 +11,7 @@ ms.author: v-douklo
 ---
 # Time functions
 
-These functions construct and manipulate time values.
+These functions create and manipulate time values.
   
 ## <a name="__toc348013456"></a>Time  
   

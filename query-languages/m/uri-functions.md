@@ -11,7 +11,7 @@ ms.author: v-douklo
 ---
 # Uri functions
 
-These functions allow creation and manipulation of URI query strings.
+These functions create and manipulate URI query strings.
   
 ## <a name="__toc360789843"></a>Uri  
   

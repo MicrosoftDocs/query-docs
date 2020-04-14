@@ -11,7 +11,7 @@ ms.author: v-douklo
 ---
 # Record functions
 
-These functions select, manipulate, and provide information about records.
+These functions create and manipulate record values.
   
 ## <a name="__toc360789143"></a>Record  
   

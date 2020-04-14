@@ -11,7 +11,7 @@ ms.author: v-douklo
 ---
 # Binary functions
 
-These functions convert and manipulate binary data.
+These functions create and manipulate binary data.
   
 ## <a name="__toc362450785"></a>Binary Formats  
   
@@ -74,4 +74,3 @@ Controlling byte order | Description
 |[Occurrence.Repeating](occurrence-repeating.md) | The item is expected to appear zero or more times in the input.|
 |[Occurrence.Required](occurrence-required.md) | The item is expected to appear once in the input.|
 |[#binary](sharpbinary.md) | Creates a binary value from numbers or text.|
-

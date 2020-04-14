@@ -10,7 +10,7 @@ ms.author: v-douklo
 ---
 # Table functions
 
-These functions construct, convert, analyze, and manipulate table values.
+These functions create and manipulate table values.
   
 ## <a name="__toc295771314"></a>Table construction  
   

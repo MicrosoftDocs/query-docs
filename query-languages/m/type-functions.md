@@ -11,7 +11,7 @@ ms.author: v-douklo
 ---
 # Type functions
 
-These functions return information about types, and also allow the manipulation of key and type information.
+These functions create and manipulate type values.
   
 ## <a name="__toc360789953"></a>Type  
   

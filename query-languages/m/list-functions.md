@@ -11,7 +11,7 @@ ms.author: v-douklo
 ---
 # List functions
 
-These functions perform operations on and return information about ‘Lists’.
+These functions create and manipulate list values.
   
 ## <a name="__toc360789201"></a>  
   
