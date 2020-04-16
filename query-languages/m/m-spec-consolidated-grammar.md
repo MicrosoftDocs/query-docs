@@ -218,7 +218,7 @@ _document:<br/>
 _section-document:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;section<br/>
 section:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;literal-attributes<sub>opt</sub>_  `section`  _section-name<sub>opt</sub>_  `;`  _section-members<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;literal-attributes<sub>opt</sub>_  `section`  _section-name_  `;`  _section-members<sub>opt</sub><br/>
 section-name:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier<br/>
 section-members:<br/>

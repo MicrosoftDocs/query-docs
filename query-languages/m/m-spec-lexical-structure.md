@@ -54,8 +54,8 @@ _field-specification:_<br/>
 is shorthand for:
 
 _field-specification:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier_ `=` _field-type<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional identifier_ `=` _field-type_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier_ `=` _field-type_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional` _identifier_ `=` _field-type_
 
 and defines a _field-specification_ to optionally begin with the terminal symbol `optional` followed by an _identifier_, the terminal symbol `=`, and a _field-type_.
 
@@ -260,8 +260,7 @@ _number-literal:<br/>
 decimal-number-literal:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digits_  `.`  _decimal-digits  exponent-part<sub>opt</sub>_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`.`  _decimal-digits  exponent-part<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digits  exponent-part<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digits<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digits  exponent-part<sub>opt</sub><br/>
 decimal-digits:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digit decimal-digits<sub>opt</sub><br/> 
 decimal-digit:_  one of<br/> 
