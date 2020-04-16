@@ -6,7 +6,7 @@ author: dougklopfenstein
 ms.service: powerquery
 
 ms.topic: article
-ms.date: 02/28/2020
+ms.date: 4/7/2020
 ms.author: v-douklo
 ---
 
@@ -21,9 +21,9 @@ _let-expression:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`let` _variable-list_ `in` _expression<br/>
 variable-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable , variable-list<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable_ `,` _variable-list<br/> 
 variable:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable-name = expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable-name_ `=` _expression<br/>
 variable-name:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier_
 

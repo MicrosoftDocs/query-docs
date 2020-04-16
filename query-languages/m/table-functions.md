@@ -1,6 +1,6 @@
 ---
 title: "Table functions | Microsoft Docs"
-ms.date: 8/06/2019
+ms.date: 4/7/2020
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -9,7 +9,8 @@ ms.author: v-douklo
 
 ---
 # Table functions
- 
+
+These functions create and manipulate table values.
   
 ## <a name="__toc295771314"></a>Table construction  
   

@@ -1,6 +1,6 @@
 ---
 title: "Function values | Microsoft Docs"
-ms.date: 09/13/2018
+ms.date: 4/7/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -10,7 +10,8 @@ ms.author: v-douklo
 
 ---
 # Function values
- 
+
+These functions create and invoke other M functions.
   
 ## <a name="__toc360789887"></a>Function  
   
@@ -21,4 +22,3 @@ ms.author: v-douklo
 |[Function.InvokeAfter](function-invokeafter.md)|Returns the result of invoking function after duration delay has passed.|
 |[Function.IsDataSource](function-isdatasource.md)|Returns whether or not function is considered a data source.|  
 |[Function.ScalarVector](function-scalarvector.md)|Returns a scalar function of type scalarFunctionType that invokes vectorFunction with a single row of arguments and returns its single output. |
-

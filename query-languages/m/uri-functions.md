@@ -1,6 +1,6 @@
 ---
 title: "Uri functions | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 4/7/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -10,7 +10,8 @@ ms.author: v-douklo
 
 ---
 # Uri functions
- 
+
+These functions create and manipulate URI query strings.
   
 ## <a name="__toc360789843"></a>Uri  
   

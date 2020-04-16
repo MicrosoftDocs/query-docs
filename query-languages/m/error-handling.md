@@ -1,6 +1,6 @@
 ---
 title: "Error handling | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 4/7/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -10,7 +10,8 @@ ms.author: v-douklo
 
 ---
 # Error handling
- 
+
+These functions return diagnostic traces at different levels of verbosity, as well as throw error records.
   
 ## <a name="__toc360789892"></a>Error  
   

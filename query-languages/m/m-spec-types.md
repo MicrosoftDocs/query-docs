@@ -6,7 +6,7 @@ author: dougklopfenstein
 ms.service: powerquery
 
 ms.topic: article
-ms.date: 02/27/2020
+ms.date: 4/7/2020
 ms.author: v-douklo
 ---
 
@@ -172,7 +172,7 @@ _record-type:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`  _field-specification-list ,  open-record-marker_  `]`<br/>
 _field-specification-list:</em><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-specification<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-specification  ,  field-specification-list<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-specification_  `,`  _field-specification-list<br/> 
 field-specification:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional`_<sub>opt</sub> identifier field-type-specification<sub>opt</sub><br/>
 field-type-specification:_<br/>
@@ -216,16 +216,16 @@ _function-type:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`function (`  _parameter-specification-list<sub>opt</sub>_ `)` _function-return-type<br/>
 parameter-specification-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-parameter-specification-list<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-parameter-specification-list  ,  optional-parameter-specification-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-parameter-specification-list_  `,`  _optional-parameter-specification-list<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter-specification-list<br/>
 required-parameter-specification-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-parameter-specification<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-parameter-specification , required-parameter-specification-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-parameter-specification_ `,` _required-parameter-specification-list<br/>
 required-parameter-specification:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-specification<br/>
 optional-parameter-specification-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter-specification<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter-specification , optional-parameter-specification-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter-specification_ `,` _optional-parameter-specification-list<br/>
 optional-parameter-specification:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional` _parameter-specification<br/>
 parameter-specification:<br/>

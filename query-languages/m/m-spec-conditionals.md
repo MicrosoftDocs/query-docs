@@ -6,7 +6,7 @@ author: dougklopfenstein
 ms.service: powerquery
 
 ms.topic: article
-ms.date: 02/28/2020
+ms.date: 2/28/2020
 ms.author: v-douklo
 ---
 
