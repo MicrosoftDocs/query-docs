@@ -1,6 +1,6 @@
 ---
 title: "Type functions | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 4/7/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -10,7 +10,8 @@ ms.author: v-douklo
 
 ---
 # Type functions
- 
+
+These functions create and manipulate type values.
   
 ## <a name="__toc360789953"></a>Type  
   

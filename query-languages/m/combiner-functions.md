@@ -1,6 +1,6 @@
 ---
 title: "Combiner functions | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 4/7/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -12,7 +12,7 @@ ms.author: v-douklo
 # Combiner functions
  
   
-Combiner functions are used by other library functions that merge values, such as Table.ToList and Table.CombineColumns. The function is applied to each row in the table to produce a single value for each row.  
+These functions are used by other library functions that merge values. For example, `Table.ToList` and `Table.CombineColumns` apply a combiner function to each row in a table to produce a single value for each row.  
   
 ## <a name="__toc360789932"></a>Combiner  
   

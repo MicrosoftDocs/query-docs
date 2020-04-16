@@ -6,7 +6,7 @@ author: dougklopfenstein
 ms.service: powerquery
 
 ms.topic: article
-ms.date: 02/28/2020
+ms.date: 4/7/2020
 ms.author: v-douklo
 ---
 
@@ -17,8 +17,7 @@ ms.author: v-douklo
 _lexical-unit:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lexical-elements<sub>opt</sub><br/>
 lexical-elements:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lexical-element<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lexical-element  lexical-elements<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lexical-element lexical-elements<sub>opt</sub><br/>
 lexical-element:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;whitespace<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;token comment_
@@ -47,22 +46,19 @@ _comment:<br/>
 single-line-comment:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`//`  _single-line-comment-characters<sub>opt</sub><br/>
 single-line-comment-characters:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-line-comment-character<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-line-comment-characters  single-line-comment-character<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-line-comment-character  single-line-comment-characters<sub>opt</sub><br/> 
 single-line-comment-character:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any Unicode character except a _new-line-character<br/>
 delimited-comment:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`/*` _delimited-comment-text<sub>opt</sub>  asterisks_  `/`<br/>
 _delimited-comment-text:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delimited-comment-section<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delimited-comment-text  delimited-comment-section<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delimited-comment-section delimited-comment-text<sub>opt</sub><br/>
 delimited-comment-section:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`/`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_asterisks<sub>opt</sub>  not-slash-or-asterisk<br/> 
 asterisks:_ <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`*`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_asterisks_  `*`<br/> 
-_not-slash-or-asterisk:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`*` _asterisks<sub>opt</sub><br/> 
+not-slash-or-asterisk:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any Unicode character except `*` or `/`
 
 ### Tokens
@@ -79,7 +75,7 @@ _character-escape-sequence:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`#(`  _escape-sequence-list_  `)`<br/>
 _escape-sequence-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-escape-sequence<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;escape-sequence-list  ,  single-escape-sequence<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;escape-sequence-list_  `,`  _single-escape-sequence<br/>
 single-escape-sequence:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;long-unicode-escape-sequence<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;short-unicode-escape-sequence<br/>
@@ -108,23 +104,20 @@ number-literal:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-number-literal<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hexadecimal-number-literal<br/>
 decimal-digits:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digit<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digit  decimal-digits<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digit decimal-digits<sub>opt</sub><br/>
 decimal-digit:_  one of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`0  1  2  3  4  5  6  7  8  9`<br/>
 _hexadecimal-number-literal:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`0x`  _hex-digits_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`0X`  _hex-digits<br/>
 hex-digits:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hex-digit<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hex-digit  hex-digits<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hex-digit hex-digits<sub>opt</sub><br/>
 hex-digit:_  one of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  a  b  c  d e  f`<br/>
 _decimal-number-literal:<br/> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digits_  `.`  _decimal-digits  exponent-part<sub>opt</sub>_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`.`  _decimal-digits  exponent-part<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digits  exponent-part<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digits<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digits  exponent-part<sub>opt</sub><br/>
 exponent-part:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`e`  _sign<sub>opt</sub>  decimal-digits_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`E`  _sign<sub>opt</sub>  decimal-digits<br/> sign:_  one of<br/> 
@@ -132,8 +125,7 @@ exponent-part:_<br/>
 _text-literal:_<br/> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"`  _text-literal-characters<sub>opt</sub>_  `"`<br/>
 _text-literal-characters:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal-character<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal-character  text-literal-characters<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal-character  text-literal-characters<sub>opt</sub><br/>
 text-literal-character:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-text-character<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;character-escape-sequence<br/>
@@ -164,8 +156,7 @@ identifier-start-character:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;letter-character<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;underscore-character<br/>
 identifier-part-characters:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier-part-character<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier-part-character  identifier-part-characters<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier-part-character  identifier-part-characters<sub>opt</sub><br/>
 identifier-part-character:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;letter-character<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digit-character<br/>
@@ -226,12 +217,11 @@ _document:<br/>
 _section-document:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;section<br/>
 section:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;literal-attributes<sub>opt</sub>_  `section`  _section-name<sub>opt</sub>_  `;`  _section-members<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;literal-attributes<sub>opt</sub>_  `section`  _section-name_  `;`  _section-members<sub>opt</sub><br/>
 section-name:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier<br/>
 section-members:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;section-member<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;section-member  section-members<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;section-member section-members<sub>opt</sub><br/>
 section-member:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;literal-attributes<sub>opt</sub>  shared<sub>opt</sub>  section-member-name_  `=`  _expression_  `;`<br/>
 _section-member-name:<br/>
@@ -369,7 +359,7 @@ _invoke-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_  `(`  _argument-list<sub>opt</sub>_  `)`<br/>
 _argument-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression  ,   argument-list_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression_  `,`   _argument-list_
 
 #### List expression
 
@@ -377,7 +367,7 @@ _list-expression:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{`  _item-list<sub>opt</sub>_  `}`<br/>
 _item-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item  ,  item-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item_  `,`  _item-list<br/>
 item:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression_  `..`  _expression_
@@ -388,7 +378,7 @@ _record-expression:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`  _field-list<sub>opt<sub>_  `]`<br/>
 _field-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field  ,  field-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field_  `,`  _field-list<br/>
 field:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-name_  `=`  _expression<br/>
 field-name:<br/>
@@ -433,7 +423,7 @@ _optional-projection:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[` _required-selector-list_ `] ?`<br/>
 _required-selector-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-field-selector<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-field-selector ,  required-selector-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-field-selector_ `,`  _required-selector-list<br/>
 implicit-target-projection:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;projection_
 
@@ -445,11 +435,11 @@ function-body:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
 parameter-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fixed-parameter-list<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fixed-parameter-list  ,  optional-parameter-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fixed-parameter-list_  `,`  _optional-parameter-list<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter-list<br/>
 fixed-parameter-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter  ,  fixed-parameter-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter_  `,`  _fixed-parameter-list<br/>
 parameter:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-name  parameter-type<sub>opt</sub><br/>
 parameter-name:<br/>
@@ -462,7 +452,7 @@ assertion:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as`  _type<br/>
 optional-parameter-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter  ,  optional-parameter-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter_  `,`  _optional-parameter-list<br/>
 optional-parameter:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional`  _parameter_
 

@@ -10,7 +10,8 @@ ms.author: v-douklo
 
 ---
 # Record functions
- 
+
+These functions create and manipulate record values.
   
 ## <a name="__toc360789143"></a>Record  
   
