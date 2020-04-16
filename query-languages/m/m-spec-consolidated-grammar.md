@@ -117,8 +117,7 @@ hex-digit:_  one of<br/>
 _decimal-number-literal:<br/> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digits_  `.`  _decimal-digits  exponent-part<sub>opt</sub>_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`.`  _decimal-digits  exponent-part<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digits  exponent-part<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digits<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digits  exponent-part<sub>opt</sub><br/>
 exponent-part:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`e`  _sign<sub>opt</sub>  decimal-digits_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`E`  _sign<sub>opt</sub>  decimal-digits<br/> sign:_  one of<br/> 
