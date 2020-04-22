@@ -27,6 +27,6 @@ Remove trailing whitespace from " a b c d ".
 Text.TrimEnd("      a b c d    ")
 ```
 
-```
+<pre>
 "      a b c d"
-```
+</pre>

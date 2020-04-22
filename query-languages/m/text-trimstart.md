@@ -27,6 +27,6 @@ Remove leading whitespace from " a b c d ".
 Text.TrimStart("      a b c d    ")
 ```
 
-```
+<pre>
 "a b c d    "
-```
+</pre>
