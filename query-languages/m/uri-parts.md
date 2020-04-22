@@ -1,6 +1,6 @@
 ---
 title: "Uri.Parts | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 4/22/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -36,7 +36,10 @@ Uri.Parts("www.adventure-works.com")
 Decode a percent-encoded string.  
   
 ```powerquery-m
-let UriUnescapeDataString = (data as text) as text => Uri.Parts("http://contoso?a=" & data)[Query][a] in UriUnescapeDataString("%2Bmoney%24") 
+let 
+    UriUnescapeDataString = (data as text) as text => Uri.Parts("http://contoso?a=" & data)[Query][a] 
+in 
+    UriUnescapeDataString("%2Bmoney%24") 
 ```  
 
 `"+money$"`

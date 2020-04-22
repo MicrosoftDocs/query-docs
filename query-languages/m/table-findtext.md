@@ -1,6 +1,6 @@
 ---
 title: "Table.FindText | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,15 @@ Returns the rows in the table `table` that contain the text `text`. If the text 
 Find the rows in the table that contain "Bob".
 
 ```powerquery-m
-Table.FindText(Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"], [CustomerID = 2, Name = "Jim", Phone = "987-6543"], [CustomerID = 3, Name = "Paul", Phone = "543-7890"], [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]}), "Bob")
+Table.FindText( 
+    Table.FromRecords({ 
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"], 
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"], 
+        [CustomerID = 4, Name = "Ringo", Phone = "232-1550"] 
+    }), 
+    "Bob"
+)
 ```
 
 <table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>1</td> <td>Bob</td> <td>123-4567</td> </tr> </table>

@@ -1,6 +1,6 @@
 ---
 title: "Table.RemoveMatchingRows | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,15 @@ Removes all occurrences of the specified `rows` from the `table`. An optional pa
 Remove any rows where [a = 1] from the table `({[a = 1, b = 2], [a = 3, b = 4], [a = 1, b = 6]})`.
 
 ```powerquery-m
-Table.RemoveMatchingRows(Table.FromRecords({[a = 1, b = 2], [a = 3, b = 4], [a = 1, b = 6]}), {[a = 1]}, "a")
+Table.RemoveMatchingRows(
+    Table.FromRecords({
+        [a = 1, b = 2], 
+        [a = 3, b = 4], 
+        [a = 1, b = 6]
+    }), 
+    {[a = 1]}, 
+    "a"
+)
 ```
 
 <table> <tr> <th>a</th> <th>b</th> </tr> <tr> <td>3</td> <td>4</td> </tr> </table>

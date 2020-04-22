@@ -1,6 +1,6 @@
 ---
 title: "Table.ExpandRecordColumn | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,16 @@ Given the `column` of records in the input `table`, creates a table with a colum
 Expand column [a] in the table `({[a = [aa = 1, bb = 2, cc = 3], b = 2]})` into 3 columns "aa", "bb" and "cc".
 
 ```powerquery-m
-Table.ExpandRecordColumn(Table.FromRecords({[a = [aa = 1, bb = 2, cc = 3], b = 2]}), "a", {"aa", "bb", "cc"})
+Table.ExpandRecordColumn( 
+    Table.FromRecords({ 
+        [ 
+            a = [aa = 1, bb = 2, cc = 3], 
+            b = 2 
+        ] 
+    }), 
+    "a", 
+    {"aa", "bb", "cc"} 
+)
 ```
 
 <table> <tr> <th>aa</th> <th>bb</th> <th>cc</th> <th>b</th> </tr> <tr> <td>1</td> <td>2</td> <td>3</td> <td>2</td> </tr> </table>

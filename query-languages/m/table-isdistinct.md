@@ -1,6 +1,6 @@
 ---
 title: "Table.IsDistinct | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,14 @@ Indicates whether the `table` contains only distinct rows (no duplicates). Retur
 Determine if the table is distinct.
 
 ```powerquery-m
-Table.IsDistinct(Table.FromRecords({ [CustomerID = 1, Name = "Bob", Phone = "123-4567"], [CustomerID = 2, Name = "Jim", Phone = "987-6543"] , [CustomerID = 3, Name = "Paul", Phone = "543-7890"] , [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]}))
+Table.IsDistinct( 
+    Table.FromRecords({ 
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"], 
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"], 
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"], 
+        [CustomerID = 4, Name = "Ringo", Phone = "232-1550"] 
+    }) 
+)
 ```
 
 `true`
@@ -33,7 +40,15 @@ Table.IsDistinct(Table.FromRecords({ [CustomerID = 1, Name = "Bob", Phone = "123
 Determine if the table is distinct in column.
 
 ```powerquery-m
-Table.IsDistinct(Table.FromRecords({ [CustomerID = 1, Name = "Bob", Phone = "123-4567"], [CustomerID = 2, Name = "Jim", Phone = "987-6543"] , [CustomerID = 3, Name = "Paul", Phone = "543-7890"] , [CustomerID = 5, Name = "Bob", Phone = "232-1550"]}), "Name")
+Table.IsDistinct( 
+    Table.FromRecords({ 
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"], 
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"], 
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"], 
+        [CustomerID = 5, Name = "Bob", Phone = "232-1550"] 
+    }), 
+    "Name" 
+)
 ```
 
 `false`

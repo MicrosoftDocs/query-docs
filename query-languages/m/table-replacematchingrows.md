@@ -1,6 +1,6 @@
 ---
 title: "Table.ReplaceMatchingRows | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,18 @@ Replaces all the specified rows in the `table` with the provided ones. The rows 
 Replace the rows [a = 1, b = 2] and [a = 2, b = 3] with [a = -1, b = -2],[a = -2, b = -3] in the table.
 
 ```powerquery-m
-Table.ReplaceMatchingRows(Table.FromRecords({[a = 1, b =2], [a = 2, b = 3], [a = 3, b = 4], [a = 1, b = 2]}),{ {[a = 1, b = 2], [a = -1, b = -2]}, {[a = 2, b = 3], [a = -2, b = -3]} })
+Table.ReplaceMatchingRows(
+    Table.FromRecords({
+        [a = 1, b =2], 
+        [a = 2, b = 3], 
+        [a = 3, b = 4], 
+        [a = 1, b = 2]
+    }),
+    { 
+        {[a = 1, b = 2], [a = -1, b = -2]}, 
+        {[a = 2, b = 3], [a = -2, b = -3]} 
+    }
+)
 ```
 
 <table> <tr> <th>a</th> <th>b</th> </tr> <tr> <td>-1</td> <td>-2</td> </tr> <tr> <td>-2</td> <td>-3</td> </tr> <tr> <td>3</td> <td>4</td> </tr> <tr> <td>-1</td> <td>-2</td> </tr> </table>

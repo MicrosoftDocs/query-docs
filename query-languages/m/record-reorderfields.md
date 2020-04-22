@@ -1,6 +1,6 @@
 ---
 title: "Record.ReorderFields | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,10 @@ Returns a record after reordering the fields in `record` in the order of fields 
 Reorder some of the fields in the record.
 
 ```powerquery-m
-Record.ReorderFields([CustomerID= 1, OrderID = 1, Item = "Fishing rod", Price = 100.0], {"OrderID", "CustomerID"})
+Record.ReorderFields( 
+    [CustomerID = 1, OrderID = 1, Item = "Fishing rod", Price = 100.0], 
+    {"OrderID", "CustomerID"} 
+)
 ```
 
 <table> <tr> <th>OrderID</th> <td>1</td> </tr> <tr> <th>CustomerID</th> <td>1</td> </tr> <tr> <th>Item</th> <td>Fishing rod</td> </tr> <tr> <th>Price</th> <td>100</td> </tr> </table>

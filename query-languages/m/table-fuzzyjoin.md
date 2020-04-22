@@ -1,6 +1,6 @@
 ---
 title: "Table.FuzzyJoin | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,7 +26,26 @@ Table.FuzzyJoin(<b>table1</b> as table, <b>key1</b> as any, <b>table2</b> as tab
 Left inner fuzzy join of two tables based on [FirstName]
 
 ```powerquery-m
-Table.FuzzyJoin( Table.FromRecords({ [CustomerID = 1, FirstName1 = "Bob", Phone = "555-1234"], [CustomerID = 2, FirstName1 = "Robert", Phone = "555-4567"] }, type table [CustomerID = nullable number, FirstName1 = nullable text, Phone = nullable text]), {"FirstName1"}, Table.FromRecords({ [CustomerStateID = 1, FirstName2 = "Bob", State = "TX"], [CustomerStateID = 2, FirstName2 = "bOB", State = "CA"] }, type table [CustomerStateID = nullable number, FirstName2 = nullable text, State = nullable text]), {"FirstName2"}, JoinKind.LeftOuter, [IgnoreCase = true, IgnoreSpace = false] ) 
+Table.FuzzyJoin( 
+    Table.FromRecords( 
+        { 
+            [CustomerID = 1, FirstName1 = "Bob", Phone = "555-1234"], 
+            [CustomerID = 2, FirstName1 = "Robert", Phone = "555-4567"] 
+        }, 
+        type table [CustomerID = nullable number, FirstName1 = nullable text, Phone = nullable text] 
+    ), 
+    {"FirstName1"}, 
+    Table.FromRecords( 
+        { 
+            [CustomerStateID = 1, FirstName2 = "Bob", State = "TX"], 
+            [CustomerStateID = 2, FirstName2 = "bOB", State = "CA"] 
+        }, 
+        type table [CustomerStateID = nullable number, FirstName2 = nullable text, State = nullable text] 
+    ), 
+    {"FirstName2"}, 
+    JoinKind.LeftOuter, 
+    [IgnoreCase = true, IgnoreSpace = false] 
+) 
 ```
 
 <table> <tr> <th>CustomerID</th> <th>FirstName1</th> <th>Phone</th> <th>CustomerStateID</th> <th>FirstName2</th> <th>State</th> </tr> <tr> <td>1</td> <td>Bob</td> <td>555-1234</td> <td>1</td> <td>Bob</td> <td>TX</td> </tr> <tr> <td>1</td> <td>Bob</td> <td>555-1234</td> <td>2</td> <td>bOB</td> <td>CA</td> </tr> <tr> <td>2</td> <td>Robert</td> <td>555-4567</td> <td></td> <td></td> <td></td> </tr> </table>

@@ -1,6 +1,6 @@
 ---
 title: "Table.Partition | Microsoft Docs"
-ms.date: 5/17/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -25,9 +25,33 @@ Partitions the <code>table</code> into a list of <code>groups</code> number of t
 Partition the table <code>({[a = 2, b = 4], [a = 6, b = 8], [a = 2, b = 4], [a = 1, b = 4]})</code> into 2 tables on column [a], using the value of the columns as the hash function.
 
 ```powerquery-m
-Table.Partition(Table.FromRecords({[a = 2, b = 4], [a = 1, b = 4], [a = 2, b = 4], [a = 1, b = 4]}), "a", 2, each _)
+Table.Partition( 
+    Table.FromRecords({ 
+        [a = 2, b = 4], 
+        [a = 1, b = 4], 
+        [a = 2, b = 4], 
+        [a = 1, b = 4] 
+    }), 
+    "a", 
+    2, each _ 
+)
 ```
 
 ```
-{ Table.FromRecords({[a = 2, b = 4], [a = 2, b = 4]}, { "a", "b" }), Table.FromRecords({[a = 1, b = 4], [a = 1, b = 4]}, { "a", "b" }) }
+{ 
+    Table.FromRecords(
+        {
+            [a = 2, b = 4], 
+            [a = 2, b = 4]
+        }, 
+        { "a", "b" }
+    ), 
+    Table.FromRecords(
+        {
+            [a = 1, b = 4], 
+            [a = 1, b = 4]
+        },
+        { "a", "b" }
+    )
+}
 ```

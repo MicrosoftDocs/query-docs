@@ -1,6 +1,6 @@
 ---
 title: "Table.Skip | Microsoft Docs"
-ms.date: 10/10/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -22,7 +22,15 @@ Returns a table that does not contain the first specified number of rows, `count
 Skip the first row of the table.
 
 ```powerquery-m
-Table.Skip(Table.FromRecords({ [CustomerID = 1, Name = "Bob", Phone = "123-4567"], [CustomerID = 2, Name = "Jim", Phone = "987-6543"] , [CustomerID = 3, Name = "Paul", Phone = "543-7890"] , [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]}), 1)
+Table.Skip(
+    Table.FromRecords({ 
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"], 
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"] , 
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"] , 
+        [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]
+    }), 
+    1
+)
 ```
 
 <table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>2</td> <td>Jim</td> <td>987-6543</td> </tr> <tr> <td>3</td> <td>Paul</td> <td>543-7890</td> </tr> <tr> <td>4</td> <td>Ringo</td> <td>232-1550</td> </tr> </table>
@@ -31,7 +39,15 @@ Table.Skip(Table.FromRecords({ [CustomerID = 1, Name = "Bob", Phone = "123-4567"
 Skip the first two rows of the table.
 
 ```powerquery-m
-Table.Skip(Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"],[CustomerID = 2, Name = "Jim", Phone = "987-6543"], [CustomerID = 3, Name = "Paul", Phone = "543-7890"], [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]}), 2)
+Table.Skip(
+    Table.FromRecords({
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"], 
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"], 
+        [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]
+    }), 
+    2
+)
 ```
 
 <table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>3</td> <td>Paul</td> <td>543-7890</td> </tr> <tr> <td>4</td> <td>Ringo</td> <td>232-1550</td> </tr> </table>
@@ -40,7 +56,20 @@ Table.Skip(Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]
 Skip the first rows where [Price] > 25 of the table.
 
 ```powerquery-m
-Table.Skip(Table.FromRecords({[OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0], [OrderID = 2, CustomerID = 1, Item = "1 lb. worms", Price = 5.0], [OrderID = 3, CustomerID = 2, Item = "Fishing net", Price = 25.0], [OrderID = 4, CustomerID = 3, Item = "Fish tazer", Price = 200.0], [OrderID = 5, CustomerID = 3, Item = "Bandaids", Price = 2.0], [OrderID = 6, CustomerID = 1, Item = "Tackle box", Price = 20.0], [OrderID = 7, CustomerID = 5, Item = "Bait", Price = 3.25], [OrderID = 8, CustomerID = 5, Item = "Fishing Rod", Price = 100.0], [OrderID = 9, CustomerID = 6, Item = "Bait", Price = 3.25]}), each [Price] > 25)
+Table.Skip(
+    Table.FromRecords({
+        [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0], 
+        [OrderID = 2, CustomerID = 1, Item = "1 lb. worms", Price = 5.0], 
+        [OrderID = 3, CustomerID = 2, Item = "Fishing net", Price = 25.0], 
+        [OrderID = 4, CustomerID = 3, Item = "Fish tazer", Price = 200.0], 
+        [OrderID = 5, CustomerID = 3, Item = "Bandaids", Price = 2.0], 
+        [OrderID = 6, CustomerID = 1, Item = "Tackle box", Price = 20.0], 
+        [OrderID = 7, CustomerID = 5, Item = "Bait", Price = 3.25], 
+        [OrderID = 8, CustomerID = 5, Item = "Fishing Rod", Price = 100.0], 
+        [OrderID = 9, CustomerID = 6, Item = "Bait", Price = 3.25]
+    }), 
+    each [Price] > 25
+)
 ```
 
 <table> <tr> <th>OrderID</th> <th>CustomerID</th> <th>Item</th> <th>Price</th> </tr> <tr> <td>2</td> <td>1</td> <td>1 lb. worms</td> <td>5</td> </tr> <tr> <td>3</td> <td>2</td> <td>Fishing net</td> <td>25</td> </tr> <tr> <td>4</td> <td>3</td> <td>Fish tazer</td> <td>200</td> </tr> <tr> <td>5</td> <td>3</td> <td>Bandaids</td> <td>2</td> </tr> <tr> <td>6</td> <td>1</td> <td>Tackle box</td> <td>20</td> </tr> <tr> <td>7</td> <td>5</td> <td>Bait</td> <td>3.25</td> </tr> <tr> <td>8</td> <td>5</td> <td>Fishing Rod</td> <td>100</td> </tr> <tr> <td>9</td> <td>6</td> <td>Bait</td> <td>3.25</td> </tr> </table>

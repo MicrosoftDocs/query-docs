@@ -1,6 +1,6 @@
 ---
 title: "Table.TransformColumnNames | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -33,7 +33,11 @@ Table.TransformColumnNames(Table.FromRecords({[#"Col#(tab)umn" = 1]}), Text.Clea
 Transform column names to generate case-insensitive names of length 6.
 
 ```powerquery-m
-Table.TransformColumnNames(Table.FromRecords({[ColumnNum = 1, cOlumnnum = 2, coLumnNUM = 3]}), Text.Clean, [MaxLength = 6, Comparer = Comparer.OrdinalIgnoreCase])
+Table.TransformColumnNames(
+    Table.FromRecords({[ColumnNum = 1, cOlumnnum = 2, coLumnNUM = 3]}), 
+    Text.Clean, 
+    [MaxLength = 6, Comparer = Comparer.OrdinalIgnoreCase]
+)
 ```
 
 <table> <tr> <th>Column</th> <th>cOlum1</th> <th>coLum2</th> </tr> <tr> <td>1</td> <td>2</td> <td>3</td> </tr> </table>

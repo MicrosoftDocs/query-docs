@@ -1,6 +1,6 @@
 ---
 title: "Table.Min | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,13 @@ Returns the smallest row in the `table`, given the `comparisonCriteria`. If the 
 Find the row with the smallest value in column [a] in the table.
 
 ```powerquery-m
-Table.Min(Table.FromRecords({[a = 2, b = 4], [a = 6, b = 8]}), "a")
+Table.Min( 
+    Table.FromRecords({ 
+        [a = 2, b = 4], 
+        [a = 6, b = 8] 
+    }), 
+    "a" 
+)
 ```
 
 <table> <tr> <th>a</th> <td>2</td> </tr> <tr> <th>b</th> <td>4</td> </tr> </table>
@@ -33,7 +39,7 @@ Table.Min(Table.FromRecords({[a = 2, b = 4], [a = 6, b = 8]}), "a")
 Find the row with the smallest value in column [a] in the table. Return -1 if empty.
 
 ```powerquery-m
-Table.Min(#table({"a"},{}), "a", -1)
+Table.Min(#table({"a"}, {}), "a", -1)
 ```
 
 `-1`

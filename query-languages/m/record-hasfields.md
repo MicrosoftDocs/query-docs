@@ -1,6 +1,6 @@
 ---
 title: "Record.HasFields | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,7 @@ Indicates whether the record `record` has the fields specified in `fields`, by r
 Check if the record has the field "CustomerID".
 
 ```powerquery-m
-Record.HasFields([CustomerID = 1, Name = "Bob", Phone = "123-4567"],"CustomerID")
+Record.HasFields([CustomerID = 1, Name = "Bob", Phone = "123-4567"], "CustomerID")
 ```
 
 `true`
@@ -33,7 +33,7 @@ Record.HasFields([CustomerID = 1, Name = "Bob", Phone = "123-4567"],"CustomerID"
 Check if the record has the field "CustomerID" and "Address".
 
 ```powerquery-m
-Record.HasFields([CustomerID = 1, Name = "Bob", Phone = "123-4567"],{"CustomerID", "Address"})
+Record.HasFields([CustomerID = 1, Name = "Bob", Phone = "123-4567"], {"CustomerID", "Address"})
 ```
 
 `false`

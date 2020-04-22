@@ -1,6 +1,6 @@
 ---
 title: "BinaryFormat.List | Microsoft Docs"
-ms.date: 7/29/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,11 @@ Returns a binary format that reads a sequence of items and returns a `list`. The
 Read bytes until the end of the data.
 
 ```powerquery-m
-let binaryData = #binary({1, 2, 3}), listFormat = BinaryFormat.List(BinaryFormat.Byte) in listFormat(binaryData)
+let 
+    binaryData = #binary({1, 2, 3}),
+    listFormat = BinaryFormat.List(BinaryFormat.Byte)
+in 
+    listFormat(binaryData)
 ```
 
 <table> <tr><td>1</td></tr> <tr><td>2</td></tr> <tr><td>3</td></tr> </table>
@@ -33,7 +37,11 @@ let binaryData = #binary({1, 2, 3}), listFormat = BinaryFormat.List(BinaryFormat
 Read two bytes.
 
 ```powerquery-m
-let binaryData = #binary({1, 2, 3}), listFormat = BinaryFormat.List(BinaryFormat.Byte, 2) in listFormat(binaryData)
+let 
+    binaryData = #binary({1, 2, 3}),
+    listFormat = BinaryFormat.List(BinaryFormat.Byte, 2)
+in 
+    listFormat(binaryData)
 ```
 
 <table> <tr><td>1</td></tr> <tr><td>2</td></tr> </table>
@@ -42,7 +50,11 @@ let binaryData = #binary({1, 2, 3}), listFormat = BinaryFormat.List(BinaryFormat
 Read bytes until the byte value is greater than or equal to two.
 
 ```powerquery-m
-let binaryData = #binary({1, 2, 3}), listFormat = BinaryFormat.List(BinaryFormat.Byte, (x) => x < 2) in listFormat(binaryData)
+let 
+    binaryData = #binary({1, 2, 3}),
+    listFormat = BinaryFormat.List(BinaryFormat.Byte, (x) => x < 2)
+in 
+    listFormat(binaryData)
 ```
 
 <table> <tr><td>1</td></tr> <tr><td>2</td></tr> </table>

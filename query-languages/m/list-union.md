@@ -1,6 +1,6 @@
 ---
 title: "List.Union | Microsoft Docs"
-ms.date: 7/31/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,7 @@ Takes a list of lists `lists`, unions the items in the individual lists and retu
 Create a union of the list {1..5}, {2..6}, {3..7}.
 
 ```powerquery-m
-List.Union({ {1..5}, {2..6}, {3..7} })
+List.Union({{1..5}, {2..6}, {3..7}})
 ```
 
 <table> <tr><td>1</td></tr> <tr><td>2</td></tr> <tr><td>3</td></tr> <tr><td>4</td></tr> <tr><td>5</td></tr> <tr><td>6</td></tr> <tr><td>7</td></tr> </table>

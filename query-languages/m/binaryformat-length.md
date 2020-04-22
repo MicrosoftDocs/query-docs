@@ -1,6 +1,6 @@
 ---
 title: "BinaryFormat.Length | Microsoft Docs"
-ms.date: 7/29/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,14 @@ Returns a binary format that limits the amount of data that can be read. Both `B
 Limit the number of bytes read to 2 when reading a list of bytes.
 
 ```powerquery-m
-let binaryData = #binary({1, 2, 3}), listFormat = BinaryFormat.Length( BinaryFormat.List(BinaryFormat.Byte), 2) in listFormat(binaryData)
+let 
+    binaryData = #binary({1, 2, 3}), 
+    listFormat = BinaryFormat.Length( 
+        BinaryFormat.List(BinaryFormat.Byte), 
+        2 
+    ) 
+in 
+    listFormat(binaryData)
 ```
 
 <table> <tr><td>1</td></tr> <tr><td>2</td></tr> </table>
@@ -33,7 +40,14 @@ let binaryData = #binary({1, 2, 3}), listFormat = BinaryFormat.Length( BinaryFor
 Limit the number of byte read when reading a list of bytes to the byte value preceding the list.
 
 ```powerquery-m
-let binaryData = #binary({1, 2, 3}), listFormat = BinaryFormat.Length( BinaryFormat.List(BinaryFormat.Byte), BinaryFormat.Byte) in listFormat(binaryData)
+let 
+    binaryData = #binary({1, 2, 3}),
+    listFormat = BinaryFormat.Length( 
+        BinaryFormat.List(BinaryFormat.Byte ), 
+        BinaryFormat.Byte
+    ) 
+in 
+    listFormat(binaryData)
 ```
 
 <table> <tr><td>2</td></tr> </table>

@@ -1,6 +1,6 @@
 ---
 title: "DateTime.IsInNextSecond | Microsoft Docs"
-ms.date: 7/30/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,7 @@ Indicates whether the given datetime value `dateTime` occurs during the next sec
 Determine if the second after the current system time is in the next second.
 
 ```powerquery-m
-DateTime.IsInNextSecond(DateTime.FixedLocalNow() + #duration(0,0,0,1))
+DateTime.IsInNextSecond(DateTime.FixedLocalNow() + #duration(0, 0, 0, 1))
 ```
 
 `true`

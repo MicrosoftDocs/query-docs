@@ -1,6 +1,6 @@
 ---
 title: "Record.RenameFields | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,10 @@ Returns a record after renaming fields in the input `record` to the new field na
 Rename the field "UnitPrice" to "Price" from the record.
 
 ```powerquery-m
-Record.RenameFields([OrderID = 1, CustomerID = 1, Item = "Fishing rod", UnitPrice = 100.0], {"UnitPrice","Price"})
+Record.RenameFields( 
+    [OrderID = 1, CustomerID = 1, Item = "Fishing rod", UnitPrice = 100.0], 
+    {"UnitPrice", "Price"} 
+)
 ```
 
 <table> <tr> <th>OrderID</th> <td>1</td> </tr> <tr> <th>CustomerID</th> <td>1</td> </tr> <tr> <th>Item</th> <td>Fishing rod</td> </tr> <tr> <th>Price</th> <td>100</td> </tr> </table>
@@ -33,7 +36,13 @@ Record.RenameFields([OrderID = 1, CustomerID = 1, Item = "Fishing rod", UnitPric
 Rename the fields "UnitPrice" to "Price" and "OrderNum" to "OrderID" from the record.
 
 ```powerquery-m
-Record.RenameFields([OrderNum = 1, CustomerID = 1, Item = "Fishing rod", UnitPrice = 100.0], {{"UnitPrice", "Price"}, {"OrderNum", "OrderID"}})
+Record.RenameFields( 
+    [OrderNum = 1, CustomerID = 1, Item = "Fishing rod", UnitPrice = 100.0], 
+    { 
+        {"UnitPrice", "Price"}, 
+        {"OrderNum", "OrderID"} 
+    } 
+)
 ```
 
 <table> <tr> <th>OrderID</th> <td>1</td> </tr> <tr> <th>CustomerID</th> <td>1</td> </tr> <tr> <th>Item</th> <td>Fishing rod</td> </tr> <tr> <th>Price</th> <td>100</td> </tr> </table>

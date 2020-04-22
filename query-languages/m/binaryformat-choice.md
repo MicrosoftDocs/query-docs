@@ -1,6 +1,6 @@
 ---
 title: "BinaryFormat.Choice | Microsoft Docs"
-ms.date: 7/17/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,7 +26,14 @@ Returns a binary format that chooses the next binary format based on a value tha
 Read a list of bytes where the number of elements is determined by the first byte.
 
 ```powerquery-m
-let binaryData = #binary({2, 3, 4, 5}), listFormat = BinaryFormat.Choice( BinaryFormat.Byte, (length) => BinaryFormat.List(BinaryFormat.Byte, length)) in listFormat(binaryData)
+let 
+    binaryData = #binary({2, 3, 4, 5}), 
+    listFormat = BinaryFormat.Choice(
+        BinaryFormat.Byte, 
+        (length) => BinaryFormat.List(BinaryFormat.Byte, length)
+    ) 
+in 
+    listFormat(binaryData)
 ```
 
 <table> <tr><td>3</td></tr> <tr><td>4</td></tr> </table>
@@ -36,7 +43,17 @@ let binaryData = #binary({2, 3, 4, 5}), listFormat = BinaryFormat.Choice( Binary
 Read a list of bytes where the number of elements is determined by the first byte, and preserve the first byte read.
 
 ```powerquery-m
-let binaryData = #binary({2, 3, 4, 5}), listFormat = BinaryFormat.Choice( BinaryFormat.Byte, (length) => BinaryFormat.Record([ length = length, list = BinaryFormat.List(BinaryFormat.Byte, length) ])) in listFormat(binaryData)
+let
+    binaryData = #binary({2, 3, 4, 5}),
+    listFormat = BinaryFormat.Choice(
+        BinaryFormat.Byte, 
+        (length) => BinaryFormat.Record([ 
+            length = length,
+            list = BinaryFormat.List(BinaryFormat.Byte, length)
+        ])
+    ) 
+in
+    listFormat(binaryData)
 ```
 
 <table> <tr> <th>length</th> <td>2</td> </tr> <tr> <th>list</th> <td>[List]</td> </tr> </table>
@@ -46,7 +63,15 @@ let binaryData = #binary({2, 3, 4, 5}), listFormat = BinaryFormat.Choice( Binary
 Read a list of bytes where the number of elements is determined by the first byte using a streaming list.
 
 ```powerquery-m
-let binaryData = #binary({2, 3, 4, 5}), listFormat = BinaryFormat.Choice( BinaryFormat.Byte, (length) => BinaryFormat.List(BinaryFormat.Byte, length), type list) in listFormat(binaryData)
+let
+    binaryData = #binary({2, 3, 4, 5}),
+    listFormat = BinaryFormat.Choice( 
+        BinaryFormat.Byte, 
+        (length) => BinaryFormat.List(BinaryFormat.Byte, length),
+        type list 
+    ) 
+in 
+    listFormat(binaryData)
 ```
 
 <table> <tr><td>3</td></tr> <tr><td>4</td></tr> </table>

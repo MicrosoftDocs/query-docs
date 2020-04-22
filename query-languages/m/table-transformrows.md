@@ -1,6 +1,6 @@
 ---
 title: "Table.TransformRows | Microsoft Docs"
-ms.date: 7/26/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -27,7 +27,16 @@ Creates a table from <code>table</code> by applying the <code>transform</code> o
 Transform the rows into a list of numbers from the table <code>({[A = 1], [A = 2], [A = 3], [A = 4], [A = 5]})</code>.
 
 ```powerquery-m
-Table.TransformRows(Table.FromRecords({[a = 1], [a = 2], [a = 3], [a = 4], [a = 5]}), each [a])
+Table.TransformRows(
+    Table.FromRecords({
+        [a = 1], 
+        [a = 2], 
+        [a = 3], 
+        [a = 4], 
+        [a = 5]
+    }),
+    each [a]
+)
 ```
 
 <table> <tr><td>1</td></tr> <tr><td>2</td></tr> <tr><td>3</td></tr> <tr><td>4</td></tr> <tr><td>5</td></tr> </table>
@@ -37,7 +46,16 @@ Table.TransformRows(Table.FromRecords({[a = 1], [a = 2], [a = 3], [a = 4], [a = 
 Transform the rows in column [A] into text values in a column [B] from the table <code>({[A = 1], [A = 2], [A = 3], [A = 4], [A = 5])</code>.
 
 ```powerquery-m
-Table.TransformRows(Table.FromRecords({[a = 1], [a = 2], [a = 3], [a = 4], [a = 5]}), (row) as record => [B = Number.ToText(row[a])])
+Table.TransformRows(
+    Table.FromRecords({
+        [a = 1], 
+        [a = 2], 
+        [a = 3], 
+        [a = 4], 
+        [a = 5]
+    }), 
+    (row) as record => [B = Number.ToText(row[a])]
+)
 ```
 
 <table> <tr><td>[Record]</td></tr> <tr><td>[Record]</td></tr> <tr><td>[Record]</td></tr> <tr><td>[Record]</td></tr> <tr><td>[Record]</td></tr> </table>

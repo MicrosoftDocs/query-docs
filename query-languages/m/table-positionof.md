@@ -1,6 +1,6 @@
 ---
 title: "Table.PositionOf | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,15 @@ Returns the row position of the first occurrence of the `row` in the `table` spe
 Find the position of the first occurrence of [a = 2, b = 4] in the table `({[a = 2, b = 4], [a = 6, b = 8], [a = 2, b = 4], [a = 1, b = 4]})`.
 
 ```powerquery-m
-Table.PositionOf(Table.FromRecords({[a = 2, b = 4], [a = 1, b = 4], [a = 2, b = 4], [a = 1, b = 4]}), [a = 2, b = 4])
+Table.PositionOf(
+    Table.FromRecords({
+        [a = 2, b = 4], 
+        [a = 1, b = 4], 
+        [a = 2, b = 4], 
+        [a = 1, b = 4]
+    }), 
+    [a = 2, b = 4]
+)
 ```
 
 `0`
@@ -33,7 +41,16 @@ Table.PositionOf(Table.FromRecords({[a = 2, b = 4], [a = 1, b = 4], [a = 2, b = 
 Find the position of the second occurrence of [a = 2, b = 4] in the table `({[a = 2, b = 4], [a = 6, b = 8], [a = 2, b = 4], [a = 1, b = 4]})`.
 
 ```powerquery-m
-Table.PositionOf(Table.FromRecords({[a = 2, b = 4], [a = 1, b = 4], [a = 2, b = 4], [a = 1, b = 4]}), [a = 2, b = 4], 1)
+Table.PositionOf(
+    Table.FromRecords({
+        [a = 2, b = 4], 
+        [a = 1, b = 4], 
+        [a = 2, b = 4], 
+        [a = 1, b = 4]
+    }), 
+    [a = 2, b = 4], 
+    1
+)
 ```
 
 `2`
@@ -42,7 +59,16 @@ Table.PositionOf(Table.FromRecords({[a = 2, b = 4], [a = 1, b = 4], [a = 2, b = 
 Find the position of all the occurrences of [a = 2, b = 4] in the table `({[a = 2, b = 4], [a = 6, b = 8], [a = 2, b = 4], [a = 1, b = 4]})`.
 
 ```powerquery-m
-Table.PositionOf(Table.FromRecords({[a = 2, b = 4], [a = 1, b = 4], [a = 2, b = 4], [a = 1, b = 4]}), [a = 2, b = 4], Occurrence.All)
+Table.PositionOf(
+    Table.FromRecords({
+        [a = 2, b = 4], 
+        [a = 1, b = 4], 
+        [a = 2, b = 4], 
+        [a = 1, b = 4]
+    }), 
+    [a = 2, b = 4], 
+    Occurrence.All
+)
 ```
 
 <table> <tr><td>0</td></tr> <tr><td>2</td></tr> </table>

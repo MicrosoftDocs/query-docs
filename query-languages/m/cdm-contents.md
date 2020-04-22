@@ -1,6 +1,6 @@
 ---
 title: "Cdm.Contents | Microsoft Docs"
-ms.date: 3/18/2020
+ms.date: 03/18/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -14,7 +14,7 @@ ms.author: v-douklo
 ## Syntax
 
 <pre>
-Cdm.Contents(<b>table</b> as table) as table 
+Cdm.Contents(<b>table</b> as table) as table  
 </pre>
 
 ## About

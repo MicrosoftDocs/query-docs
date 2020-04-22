@@ -1,6 +1,6 @@
 ---
 title: "Table.RowCount | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,13 @@ Returns the number of rows in the `table`.
 Find the number of rows in the table.
 
 ```powerquery-m
-Table.RowCount(Table.FromRecords({[CustomerID =1, Name ="Bob", Phone = "123-4567"],[CustomerID =2, Name ="Jim", Phone = "987-6543"],[CustomerID =3, Name ="Paul", Phone = "543-7890"]}))
+Table.RowCount(
+    Table.FromRecords({
+        [CustomerID =1, Name ="Bob", Phone = "123-4567"],
+        [CustomerID =2, Name ="Jim", Phone = "987-6543"],
+        [CustomerID =3, Name ="Paul", Phone = "543-7890"]
+    })
+)
 ```
 
 `3`

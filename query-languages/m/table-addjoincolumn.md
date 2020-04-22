@@ -1,6 +1,6 @@
 ---
 title: "Table.AddJoinColumn | Microsoft Docs"
-ms.date: 7/26/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,7 +26,19 @@ Joins the rows of <code>table1</code> with the rows of <code>table2</code> based
 Add a join column to ({[saleID = 1, item = "Shirt"], [saleID = 2, item = "Hat"]}) named "price/stock" from the table ({[saleID = 1, price = 20], [saleID = 2, price = 10]}) joined on [saleID].
 
 ```powerquery-m
-Table.AddJoinColumn(Table.FromRecords({[saleID = 1, item = "Shirt"], [saleID = 2, item = "Hat"]}), "saleID", () => Table.FromRecords({[saleID = 1, price = 20, stock = 1234], [saleID = 2, price = 10, stock = 5643]}), "saleID", "price")
+Table.AddJoinColumn( 
+    Table.FromRecords({ 
+        [saleID = 1, item = "Shirt"], 
+        [saleID = 2, item = "Hat"] 
+    }), 
+    "saleID", 
+    () => Table.FromRecords({ 
+        [saleID = 1, price = 20, stock = 1234], 
+        [saleID = 2, price = 10, stock = 5643] 
+    }), 
+    "saleID", 
+    "price" 
+)
 ```
 
 <table> <tr> <th>saleID</th> <th>item</th> <th>price</th> </tr> <tr> <td>1</td> <td>Shirt</td> <td>[Table]</td> </tr> <tr> <td>2</td> <td>Hat</td> <td>[Table]</td> </tr> </table>

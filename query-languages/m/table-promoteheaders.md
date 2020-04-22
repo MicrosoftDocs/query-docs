@@ -1,6 +1,6 @@
 ---
 title: "Table.PromoteHeaders | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,12 @@ Promotes the first row of values as the new column headers (i.e. column names). 
 Promote the first row of values in the table.
 
 ```powerquery-m
-Table.PromoteHeaders(Table.FromRecords({[Column1 = "CustomerID", Column2 = "Name", Column3 = #date(1980,1,1)], [Column1 = 1, Column2 = "Bob", Column3 = #date(1980,1,1)]}))
+Table.PromoteHeaders(
+    Table.FromRecords({
+        [Column1 = "CustomerID", Column2 = "Name", Column3 = #date(1980, 1, 1)],
+        [Column1 = 1, Column2 = "Bob", Column3 = #date(1980, 1, 1)]
+    })
+)
 ```
 
 <table> <tr> <th>CustomerID</th> <th>Name</th> <th>Column3</th> </tr> <tr> <td>1</td> <td>Bob</td> <td>1/1/1980 12:00:00 AM</td> </tr> </table>
@@ -33,7 +38,13 @@ Table.PromoteHeaders(Table.FromRecords({[Column1 = "CustomerID", Column2 = "Name
 Promote all the scalars in the first row of the table to headers.
 
 ```powerquery-m
-Table.PromoteHeaders(Table.FromRecords({[Rank = 1, Name = "Name", Date = #date(1980,1,1)],[Rank = 1, Name = "Bob", Date = #date(1980,1,1)]}), [PromoteAllScalars = true, Culture = "en-US"])
+Table.PromoteHeaders(
+    Table.FromRecords({
+        [Rank = 1, Name = "Name", Date = #date(1980, 1, 1)],
+        [Rank = 1, Name = "Bob", Date = #date(1980, 1, 1)]
+    }), 
+    [PromoteAllScalars = true, Culture = "en-US"]
+)
 ```
 
 <table> <tr> <th>1</th> <th>Name</th> <th>1/1/1980</th> </tr> <tr> <td>1</td> <td>Bob</td> <td>1/1/1980 12:00:00 AM</td> </tr> </table>

@@ -1,6 +1,6 @@
 ---
 title: "Table.ReplaceErrorValues | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,10 @@ Replaces the error values in the specified columns of the `table` with the new v
 Replace the error value with the text "world" in the table.
 
 ```powerquery-m
-Table.ReplaceErrorValues(Table.FromRows({{1,"hello"},{3,...}}, {"A","B"}), {"B", "world"})
+Table.ReplaceErrorValues(
+    Table.FromRows({{1,"hello"},{3,...}}, {"A","B"}), 
+    {"B", "world"}
+)
 ```
 
 <table> <tr> <th>A</th> <th>B</th> </tr> <tr> <td>1</td> <td>hello</td> </tr> <tr> <td>3</td> <td>world</td> </tr> </table>
@@ -33,7 +36,10 @@ Table.ReplaceErrorValues(Table.FromRows({{1,"hello"},{3,...}}, {"A","B"}), {"B",
 Replace the error value in column A with the text "hello" and in column B with the text "world" in the table.
 
 ```powerquery-m
-Table.ReplaceErrorValues(Table.FromRows({{..., ...},{1,2}}, {"A","B"}), {{"A", "hello"}, {"B", "world"}})
+Table.ReplaceErrorValues(
+    Table.FromRows({{..., ...},{1,2}}, {"A","B"}), 
+    {{"A", "hello"}, {"B", "world"}}
+)
 ```
 
 <table> <tr> <th>A</th> <th>B</th> </tr> <tr> <td>hello</td> <td>world</td> </tr> <tr> <td>1</td> <td>2</td> </tr> </table>

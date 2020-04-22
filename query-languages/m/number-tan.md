@@ -1,6 +1,6 @@
 ---
 title: "Number.Tan | Microsoft Docs"
-ms.date: 7/31/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -27,4 +27,4 @@ Find the tangent of the angle 1.
 Number.Tan(1)
 ```
 
-`1.5574077246549023 `
+`1.5574077246549023`

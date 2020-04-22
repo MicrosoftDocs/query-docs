@@ -1,6 +1,6 @@
 ---
 title: "Replacer.ReplaceText | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,7 @@ Replaces the `old` text in the original `text` with the `new` text. This replace
 Replace the text "hE" with "He" in the string "hEllo world".
 
 ```powerquery-m
-Replacer.ReplaceText("hEllo world","hE","He")
+Replacer.ReplaceText("hEllo world", "hE", "He")
 ```
 
 `"Hello world"`

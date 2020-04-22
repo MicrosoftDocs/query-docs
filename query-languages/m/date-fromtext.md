@@ -1,6 +1,6 @@
 ---
 title: "Date.FromText | Microsoft Docs"
-ms.date: 7/29/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,7 +18,7 @@ Date.FromText(<b>text</b> as nullable text, optional <b>culture</b> as nullable 
 </pre>
   
 ## About  
-Creates a `date` value from a textual representation, `text`, following ISO 8601 format standard. <ul> <li> <code>Date.FromText("2010-02-19") </code> // Date, yyyy-MM-dd </li> </ul>
+Creates a `date` value from a textual representation, `text`, following ISO 8601 format standard. An optional `culture` may also be provided (for example, "en-US"). <ul> <li> <code>Date.FromText("2010-02-19") </code> // Date, yyyy-MM-dd </li> </ul>
 
 ## Example 1
 Convert `"December 31, 2010"` into a date value.

@@ -1,6 +1,6 @@
 ---
 title: "Table.PrefixColumns | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,9 @@ Returns a table where all the column names from the `table` provided are prefixe
 Prefix the columns with "MyTable" in the table.
 
 ```powerquery-m
-Table.PrefixColumns(Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}), "MyTable")
+Table.PrefixColumns(
+    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}), "MyTable"
+)
 ```
 
 <table> <tr> <th>MyTable.CustomerID</th> <th>MyTable.Name</th> <th>MyTable.Phone</th> </tr> <tr> <td>1</td> <td>Bob</td> <td>123-4567</td> </tr> </table>

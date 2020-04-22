@@ -1,6 +1,6 @@
 ---
 title: "BinaryFormat.Transform | Microsoft Docs"
-ms.date: 7/29/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,14 @@ Returns a binary format that will transform the values read by another binary fo
 Read a byte and add one to it.
 
 ```powerquery-m
-let binaryData = #binary({1}), transformFormat = BinaryFormat.Transform( BinaryFormat.Byte, (x) => x + 1) in transformFormat(binaryData)
+let 
+    binaryData = #binary({1}), 
+    transformFormat = BinaryFormat.Transform( 
+        BinaryFormat.Byte, 
+        (x) => x + 1 
+    ) 
+in 
+    transformFormat(binaryData)
 ```
 
 `2`

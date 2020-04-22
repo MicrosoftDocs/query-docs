@@ -1,6 +1,6 @@
 ---
 title: "Table.ReplaceValue | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,16 @@ Replaces `oldValue` with `newValue` in the specified columns of the `table`.
 Replace the text "goodbye" with the text "world" in the table.
 
 ```powerquery-m
-Table.ReplaceValue(Table.FromRecords({[a = 1, b = "hello"], [a = 3, b = "goodbye"]}), "goodbye", "world", Replacer.ReplaceText, {"b"})
+Table.ReplaceValue(
+    Table.FromRecords({
+        [a = 1, b = "hello"], 
+        [a = 3, b = "goodbye"]
+    }), 
+    "goodbye", 
+    "world", 
+    Replacer.ReplaceText, 
+    {"b"}
+)
 ```
 
 <table> <tr> <th>a</th> <th>b</th> </tr> <tr> <td>1</td> <td>hello</td> </tr> <tr> <td>3</td> <td>world</td> </tr> </table>
@@ -33,7 +42,16 @@ Table.ReplaceValue(Table.FromRecords({[a = 1, b = "hello"], [a = 3, b = "goodbye
 Replace the text "ur" with the text "or" in the table.
 
 ```powerquery-m
-Table.ReplaceValue(Table.FromRecords({[a = 1, b = "hello"], [a = 3, b = "wurld"]}), "ur", "or", Replacer.ReplaceText, {"b"})
+Table.ReplaceValue(
+    Table.FromRecords({
+        [a = 1, b = "hello"], 
+        [a = 3, b = "wurld"]
+    }), 
+    "ur", 
+    "or", 
+    Replacer.ReplaceText, 
+    {"b"}
+)
 ```
 
 <table> <tr> <th>a</th> <th>b</th> </tr> <tr> <td>1</td> <td>hello</td> </tr> <tr> <td>3</td> <td>world</td> </tr> </table>

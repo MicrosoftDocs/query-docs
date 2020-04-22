@@ -1,6 +1,6 @@
 ---
 title: "Record.FromTable | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,14 @@ Returns a record from a table of records `table` containing field names and valu
 Create a record from the table of the form Table.FromRecords({[Name = "CustomerID", Value = 1], [Name = "Name", Value = "Bob"], [Name = "Phone", Value = "123-4567"]}).
 
 ```powerquery-m
-Record.FromTable(Table.FromRecords({[Name = "CustomerID", Value = 1], [Name = "Name", Value = "Bob"], [Name = "Phone", Value = "123-4567"]}))
+Record.FromTable( 
+    Table.FromRecords({ 
+        [Name = "CustomerID", 
+        Value = 1], 
+        [Name = "Name", Value = "Bob"], 
+        [Name = "Phone", Value = "123-4567"] 
+    }) 
+)
 ```
 
 <table> <tr> <th>CustomerID</th> <td>1</td> </tr> <tr> <th>Name</th> <td>Bob</td> </tr> <tr> <th>Phone</th> <td>123-4567</td> </tr> </table>
