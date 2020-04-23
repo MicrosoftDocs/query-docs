@@ -1,6 +1,6 @@
 ---
 title: "Table.ExpandTableColumn | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 4/23/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -29,7 +29,7 @@ Table.ExpandTableColumn(
         [ 
             t = Table.FromRecords({ 
                 [a = 1, b = 2, c = 3], 
-                [a = 2,b = 4,c = 6] 
+                [a = 2, b = 4, c = 6] 
             }), 
             b = 2 
         ] 

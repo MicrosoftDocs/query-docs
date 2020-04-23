@@ -1,6 +1,6 @@
 ---
 title: "Table.SelectColumns | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 4/23/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -42,7 +42,7 @@ Only include columns [CustomerID] and [Name].
 
 ```powerquery-m
 Table.SelectColumns(
-    Table.FromRecords({[CustomerID=1, Name="Bob", Phone = "123-4567"]}), 
+    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}), 
     {"CustomerID", "Name"}
 )
 ```
@@ -54,7 +54,7 @@ If the included column does not exit, the default result is an error.
 
 ```powerquery-m
 Table.SelectColumns(
-    Table.FromRecords({[CustomerID=1, Name="Bob", Phone = "123-4567"]}), 
+    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}), 
     "NewColumn"
 )
 ```
@@ -66,7 +66,7 @@ If the included column does not exit, option `MissingField.UseNull` creates a co
 
 ```powerquery-m
 Table.SelectColumns(
-    Table.FromRecords({[CustomerID=1, Name = "Bob", Phone = "123-4567" ]}), 
+    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567" ]}), 
     {"CustomerID", "NewColumn"}, 
     MissingField.UseNull
 )

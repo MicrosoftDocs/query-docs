@@ -1,6 +1,6 @@
 ---
 title: "Table.ReorderColumns | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 4/23/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -25,8 +25,8 @@ Switch the order of the columns [Phone] and [Name] in the table.
 
 ```powerquery-m
 Table.ReorderColumns(
-    Table.FromRecords({[CustomerID=1, Phone = "123-4567", Name ="Bob"]}),
-    {"Name","Phone"}
+    Table.FromRecords({[CustomerID = 1, Phone = "123-4567", Name = "Bob"]}),
+    {"Name", "Phone"}
 )
 ```
 
@@ -37,7 +37,7 @@ Switch the order of the columns [Phone] and [Address] or use "MissingField.Ignor
 
 ```powerquery-m
 Table.ReorderColumns(
-    Table.FromRecords({[CustomerID=1, Name = "Bob", Phone = "123-4567"]}), 
+    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}), 
     {"Phone", "Address"}, 
     MissingField.Ignore
 )

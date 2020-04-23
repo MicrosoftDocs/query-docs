@@ -1,6 +1,6 @@
 ---
 title: "Table.ReplaceRows | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 4/23/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,15 +26,15 @@ Starting at position 1, replace 3 rows.
 ```powerquery-m
 Table.ReplaceRows(
     Table.FromRecords({
-        [Column1=1], 
-        [Column1=2], 
-        [Column1=3], 
-        [Column1=4], 
-        [Column1=5]
+        [Column1 = 1], 
+        [Column1 = 2], 
+        [Column1 = 3], 
+        [Column1 = 4], 
+        [Column1 = 5]
     }), 
     1, 
     3, 
-    {[Column1=6], [Column1=7]}
+    {[Column1 = 6], [Column1 = 7]}
 )
 ```
 

@@ -1,6 +1,6 @@
 ---
 title: "Record.FromTable | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 4/23/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,8 +26,7 @@ Create a record from the table of the form Table.FromRecords({[Name = "CustomerI
 ```powerquery-m
 Record.FromTable( 
     Table.FromRecords({ 
-        [Name = "CustomerID", 
-        Value = 1], 
+        [Name = "CustomerID", Value = 1], 
         [Name = "Name", Value = "Bob"], 
         [Name = "Phone", Value = "123-4567"] 
     }) 

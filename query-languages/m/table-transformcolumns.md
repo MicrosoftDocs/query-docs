@@ -1,6 +1,6 @@
 ---
 title: "Table.TransformColumns | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 4/23/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,8 +26,8 @@ Transform the number values in column [A] to number values.
 ```powerquery-m
 Table.TransformColumns(
     Table.FromRecords({
-        [A="1", B=2], 
-        [A="5", B=10]
+        [A = "1", B = 2], 
+        [A = "5", B = 10]
     }),
     {"A", Number.FromText}
 )
@@ -41,8 +41,8 @@ Transform the number values in missing column [X] to text values, ignoring colum
 ```powerquery-m
 Table.TransformColumns(
     Table.FromRecords({
-        [A="1", B=2], 
-        [A="5", B=10]
+        [A = "1", B = 2], 
+        [A = "5", B = 10]
     }), 
     {"X", Number.FromText}, 
     null, 
@@ -58,8 +58,8 @@ Transform the number values in missing column [X] to text values, defaulting to 
 ```powerquery-m
 Table.TransformColumns(
     Table.FromRecords({
-        [A="1",B=2], 
-        [A="5", B=10]
+        [A = "1", B = 2], 
+        [A = "5", B = 10]
     }), 
     {"X", Number.FromText}, 
     null, 
@@ -75,8 +75,8 @@ Transform the number values in missing column [X] to text values, giving an erro
 ```powerquery-m
 Table.TransformColumns(
     Table.FromRecords({
-        [A="1",B=2], 
-        [A="5", B=10]
+        [A = "1", B = 2], 
+        [A = "5", B = 10]
     }),
     {"X", Number.FromText}
 )

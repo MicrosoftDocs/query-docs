@@ -1,6 +1,6 @@
 ---
 title: "Table.RenameColumns | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 4/23/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -25,7 +25,7 @@ Replace the column name "CustomerNum" with "CustomerID" in the table.
 
 ```powerquery-m
 Table.RenameColumns(
-    Table.FromRecords({[CustomerNum=1, Name="Bob", Phone = "123-4567"]}),
+    Table.FromRecords({[CustomerNum = 1, Name = "Bob", Phone = "123-4567"]}),
     {"CustomerNum", "CustomerID"}
 )
 ```
@@ -37,7 +37,7 @@ Replace the column name "CustomerNum" with "CustomerID" and "PhoneNum" with "Pho
 
 ```powerquery-m
 Table.RenameColumns(
-    Table.FromRecords({[CustomerNum=1, Name="Bob", PhoneNum = "123-4567"]}), 
+    Table.FromRecords({[CustomerNum = 1, Name = "Bob", PhoneNum = "123-4567"]}), 
     {
         {"CustomerNum", "CustomerID"}, 
         {"PhoneNum", "Phone"}
@@ -52,7 +52,7 @@ Replace the column name "NewCol" with "NewColumn" in the table, and ignore if th
 
 ```powerquery-m
 Table.RenameColumns(
-    Table.FromRecords({[CustomerID=1, Name="Bob", Phone = "123-4567"]}), 
+    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}), 
     {"NewCol", "NewColumn"}, 
     MissingField.Ignore
 )

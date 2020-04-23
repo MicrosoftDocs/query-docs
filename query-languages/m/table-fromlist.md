@@ -1,6 +1,6 @@
 ---
 title: "Table.FromList | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 4/23/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -35,8 +35,8 @@ Create a table from the list using the Record.FieldValues splitter with the resu
 ```powerquery-m
 Table.FromList( 
     { 
-        [CustomerID = 1,Name = "Bob"], 
-        [CustomerID = 2,Name = "Jim"] 
+        [CustomerID = 1, Name = "Bob"], 
+        [CustomerID = 2, Name = "Jim"] 
     }, 
     Record.FieldValues, 
     {"CustomerID", "Name"} 

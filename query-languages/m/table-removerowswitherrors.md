@@ -1,6 +1,6 @@
 ---
 title: "Table.RemoveRowsWithErrors | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 4/23/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,9 +26,9 @@ Remove error value from first row.
 ```powerquery-m
 Table.RemoveRowsWithErrors(
     Table.FromRecords({
-        [Column1=...],
-        [Column1=2], 
-        [Column1=3]
+        [Column1 = ...],
+        [Column1 = 2], 
+        [Column1 = 3]
     })
 )
 ```

@@ -1,6 +1,6 @@
 ---
 title: "Table.ToList | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 4/23/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,7 +26,7 @@ Combine the text of each row with a comma.
 ```powerquery-m
 Table.ToList(
     Table.FromRows({
-        {Number.ToText(1),"Bob", "123-4567" }, 
+        {Number.ToText(1), "Bob", "123-4567" }, 
         {Number.ToText(2), "Jim", "987-6543" }, 
         {Number.ToText(3), "Paul", "543-7890" }
     }), 

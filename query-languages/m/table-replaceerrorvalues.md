@@ -1,6 +1,6 @@
 ---
 title: "Table.ReplaceErrorValues | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 4/23/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -25,7 +25,7 @@ Replace the error value with the text "world" in the table.
 
 ```powerquery-m
 Table.ReplaceErrorValues(
-    Table.FromRows({{1,"hello"},{3,...}}, {"A","B"}), 
+    Table.FromRows({{1, "hello"}, {3, ...}}, {"A", "B"}), 
     {"B", "world"}
 )
 ```
@@ -37,7 +37,7 @@ Replace the error value in column A with the text "hello" and in column B with t
 
 ```powerquery-m
 Table.ReplaceErrorValues(
-    Table.FromRows({{..., ...},{1,2}}, {"A","B"}), 
+    Table.FromRows({{..., ...}, {1, 2}}, {"A", "B"}), 
     {{"A", "hello"}, {"B", "world"}}
 )
 ```

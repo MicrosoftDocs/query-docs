@@ -1,6 +1,6 @@
 ---
 title: "Table.ToRows | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 4/23/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -28,9 +28,9 @@ Create a list of the row values from the table.
 ```powerquery-m
 Table.ToRows(
     Table.FromRecords({
-        [CustomerID =1, Name ="Bob", Phone = "123-4567"],
-        [CustomerID =2, Name ="Jim", Phone = "987-6543"],
-        [CustomerID =3, Name ="Paul", Phone = "543-7890"]
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"]
     })
 )
 ```

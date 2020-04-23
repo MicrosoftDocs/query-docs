@@ -1,6 +1,6 @@
 ---
 title: "Table.RemoveColumns | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 4/23/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -25,7 +25,7 @@ Remove column [Phone] from the table.
 
 ```powerquery-m
 Table.RemoveColumns(
-    Table.FromRecords({[CustomerID=1, Name="Bob", Phone = "123-4567"]}), 
+    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}), 
     "Phone"
 )
 ```
@@ -37,7 +37,7 @@ Remove column [Address] from the table. Throws an error if it doesn't exist.
 
 ```powerquery-m
 Table.RemoveColumns(
-    Table.FromRecords({[CustomerID=1, Name="Bob", Phone = "123-4567"]}),
+    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}),
     "Address"
 )
 ```

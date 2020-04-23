@@ -1,6 +1,6 @@
 ---
 title: "Table.ColumnsOfType | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 4/23/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,7 +26,7 @@ Return the names of columns of type Number.Type from the table.
 ```powerquery-m
 Table.ColumnsOfType( 
     Table.FromRecords( 
-        {[a = 1,b = "hello"]}, 
+        {[a = 1, b = "hello"]}, 
         type table[a = Number.Type, b = Text.Type] 
     ), 
     {type number} 
