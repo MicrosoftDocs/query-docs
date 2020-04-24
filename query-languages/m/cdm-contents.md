@@ -14,7 +14,7 @@ ms.author: v-douklo
 ## Syntax
 
 <pre>
-Cdm.Contents(<b>table</b> as table) as table  
+Cdm.Contents(<b>table</b> as table) as table 
 </pre>
 
 ## About
