@@ -26,24 +26,24 @@ By default, an inner join is performed, however an optional `joinKind` may be in
 Inner join the two tables on [CustomerID]
 
 ```powerquery-m
-Table.Join( 
+Table.Join(
     Table.FromRecords({
         [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
-        [CustomerID = 2, Name = "Jim", Phone = "987-6543"], 
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
         [CustomerID = 3, Name = "Paul", Phone = "543-7890"],
-        [CustomerID = 4, Name = "Ringo", Phone = "232-1550"] 
-    }), 
-    "CustomerID", 
-    Table.FromRecords({ 
-        [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0], 
+        [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]
+    }),
+    "CustomerID",
+    Table.FromRecords({
+        [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0],
         [OrderID = 2, CustomerID = 1, Item = "1 lb. worms", Price = 5.0],
-        [OrderID = 3, CustomerID = 2, Item = "Fishing net", Price = 25.0], 
-        [OrderID = 4, CustomerID = 3, Item = "Fish tazer", Price = 200.0], 
-        [OrderID = 5, CustomerID = 3, Item = "Bandaids", Price = 2.0], 
+        [OrderID = 3, CustomerID = 2, Item = "Fishing net", Price = 25.0],
+        [OrderID = 4, CustomerID = 3, Item = "Fish tazer", Price = 200.0],
+        [OrderID = 5, CustomerID = 3, Item = "Bandaids", Price = 2.0],
         [OrderID = 6, CustomerID = 1, Item = "Tackle box", Price = 20.0],
-        [OrderID = 7, CustomerID = 5, Item = "Bait", Price = 3.25] 
-    }), 
-    "CustomerID" 
+        [OrderID = 7, CustomerID = 5, Item = "Bait", Price = 3.25]
+    }),
+    "CustomerID"
 )
 ```
 

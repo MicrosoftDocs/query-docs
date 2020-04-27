@@ -41,14 +41,14 @@ Table.MinN(
 Find the row with the smallest value in column [a] with the condition [b] < 0, in the table. The rows are sorted before the filter is applied.
 
 ```powerquery-m
-Table.MinN( 
-    Table.FromRecords({ 
-        [a = 2, b = 4], 
-        [a = 8, b = 0], 
-        [a = 6, b = 2] 
-    }), 
-    "a", 
-    each [b] < 0 
+Table.MinN(
+    Table.FromRecords({
+        [a = 2, b = 4],
+        [a = 8, b = 0],
+        [a = 6, b = 2]
+    }),
+    "a",
+    each [b] < 0
 )
 ```
 

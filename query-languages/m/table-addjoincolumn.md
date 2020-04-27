@@ -26,18 +26,18 @@ Joins the rows of <code>table1</code> with the rows of <code>table2</code> based
 Add a join column to ({[saleID = 1, item = "Shirt"], [saleID = 2, item = "Hat"]}) named "price/stock" from the table ({[saleID = 1, price = 20], [saleID = 2, price = 10]}) joined on [saleID].
 
 ```powerquery-m
-Table.AddJoinColumn( 
-    Table.FromRecords({ 
-        [saleID = 1, item = "Shirt"], 
-        [saleID = 2, item = "Hat"] 
-    }), 
-    "saleID", 
-    () => Table.FromRecords({ 
-        [saleID = 1, price = 20, stock = 1234], 
-        [saleID = 2, price = 10, stock = 5643] 
-    }), 
-    "saleID", 
-    "price" 
+Table.AddJoinColumn(
+    Table.FromRecords({
+        [saleID = 1, item = "Shirt"],
+        [saleID = 2, item = "Hat"]
+    }),
+    "saleID",
+    () => Table.FromRecords({
+        [saleID = 1, price = 20, stock = 1234],
+        [saleID = 2, price = 10, stock = 5643]
+    }),
+    "saleID",
+    "price"
 )
 ```
 

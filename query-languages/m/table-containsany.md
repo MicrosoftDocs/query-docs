@@ -24,15 +24,15 @@ Indicates whether any the specified records in the list of records `rows`, appea
 Determine if the table `({[a = 1, b = 2], [a = 3, b = 4]})` contains the rows `[a = 1, b = 2]` or `[a = 3, b = 5]`.
 
 ```powerquery-m
-Table.ContainsAny( 
-    Table.FromRecords({ 
-        [a = 1, b = 2], 
-        [a = 3, b = 4] 
-    }), 
-    { 
-        [a = 1, b = 2], 
-        [a = 3, b = 5] 
-    } 
+Table.ContainsAny(
+    Table.FromRecords({
+        [a = 1, b = 2],
+        [a = 3, b = 4]
+    }),
+    {
+        [a = 1, b = 2],
+        [a = 3, b = 5]
+    }
 )
 ```
 
@@ -42,13 +42,13 @@ Table.ContainsAny(
 Determine if the table `({[a = 1, b = 2], [a = 3, b = 4]})` contains the rows `[a = 1, b = 3]` or `[a = 3, b = 5]`.
 
 ```powerquery-m
-Table.ContainsAny( 
-    Table.FromRecords({ 
-        [a = 1, b = 2], 
-        [a = 3, b = 4] 
-    }), 
-    { 
-        [a = 1, b = 3], 
+Table.ContainsAny(
+    Table.FromRecords({
+        [a = 1, b = 2],
+        [a = 3, b = 4]
+    }),
+    {
+        [a = 1, b = 3],
         [a = 3, b = 5]
     }
 )
@@ -60,16 +60,16 @@ Table.ContainsAny(
 Determine if the table `(Table.FromRecords({[a = 1, b = 2], [a = 3, b = 4]}))` contains the rows `[a = 1, b = 3]` or `[a = 3, b = 5]` comparing only the column [a].
 
 ```powerquery-m
-Table.ContainsAny( 
-    Table.FromRecords({ 
-        [a = 1, b = 2], 
-        [a = 3, b = 4] 
-    }), 
-    { 
-        [a = 1, b = 3], 
-        [a = 3, b = 5] 
-    }, 
-    "a" 
+Table.ContainsAny(
+    Table.FromRecords({
+        [a = 1, b = 2],
+        [a = 3, b = 4]
+    }),
+    {
+        [a = 1, b = 3],
+        [a = 3, b = 5]
+    },
+    "a"
 )
 ```
 

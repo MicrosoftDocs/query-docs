@@ -26,7 +26,7 @@ Transform the number values in column [A] to number values.
 ```powerquery-m
 Table.TransformColumns(
     Table.FromRecords({
-        [A = "1", B = 2], 
+        [A = "1", B = 2],
         [A = "5", B = 10]
     }),
     {"A", Number.FromText}
@@ -41,11 +41,11 @@ Transform the number values in missing column [X] to text values, ignoring colum
 ```powerquery-m
 Table.TransformColumns(
     Table.FromRecords({
-        [A = "1", B = 2], 
+        [A = "1", B = 2],
         [A = "5", B = 10]
-    }), 
-    {"X", Number.FromText}, 
-    null, 
+    }),
+    {"X", Number.FromText},
+    null,
     MissingField.Ignore
 )
 ```
@@ -58,11 +58,11 @@ Transform the number values in missing column [X] to text values, defaulting to 
 ```powerquery-m
 Table.TransformColumns(
     Table.FromRecords({
-        [A = "1", B = 2], 
+        [A = "1", B = 2],
         [A = "5", B = 10]
-    }), 
-    {"X", Number.FromText}, 
-    null, 
+    }),
+    {"X", Number.FromText},
+    null,
     MissingField.UseNull
 )
 ```

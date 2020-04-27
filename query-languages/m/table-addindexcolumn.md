@@ -24,14 +24,14 @@ Appends a column named `newColumnName` to the `table` with explicit position val
 Add an index column named "Index" to the table.
 
 ```powerquery-m
-Table.AddIndexColumn( 
-    Table.FromRecords({ 
-        [CustomerID = 1, Name = "Bob", Phone = "123-4567"], 
-        [CustomerID = 2, Name = "Jim", Phone = "987-6543"], 
-        [CustomerID = 3, Name = "Paul", Phone = "543-7890"], 
-        [CustomerID = 4, Name = "Ringo", Phone = "232-1550"] 
-    }), 
-    "Index" 
+Table.AddIndexColumn(
+    Table.FromRecords({
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"],
+        [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]
+    }),
+    "Index"
 )
 ```
 
@@ -41,14 +41,16 @@ Table.AddIndexColumn(
 Add an index column named "index", starting at value 10 and incrementing by 5, to the table.
 
 ```powerquery-m
-Table.AddIndexColumn( 
-    Table.FromRecords({ 
-        [CustomerID = 1, Name = "Bob", Phone = "123-4567"], 
-        [CustomerID = 2, Name = "Jim", Phone = "987-6543"], 
-        [CustomerID = 3, Name = "Paul", Phone = "543-7890"], 
-        [CustomerID = 4, Name = "Ringo", Phone = "232-1550"] 
-    }), 
-    "Index", 10, 5 
+Table.AddIndexColumn(
+    Table.FromRecords({
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"],
+        [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]
+    }),
+    "Index",
+    10,
+    5
 )
 ```
 

@@ -35,11 +35,11 @@ List.Generate(() => 10, each _ > 0, each _ - 1)
 Generate a list of records containing x and y, where x is a value and y is a list. x should remain less than 10 and represent the number of items in the list y. After the list is generated, return only the x values.
 
 ```powerquery-m
-List.Generate( 
-    () => [x = 1, y = {}], 
-    each [x] < 10, 
-    each [x = List.Count([y]), y = [y] & {x}], 
-    each [x] 
+List.Generate(
+    () => [x = 1, y = {}],
+    each [x] < 10,
+    each [x = List.Count([y]), y = [y] & {x}],
+    each [x]
 )
 ```
 

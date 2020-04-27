@@ -26,25 +26,25 @@ Table.FuzzyJoin(<b>table1</b> as table, <b>key1</b> as any, <b>table2</b> as tab
 Left inner fuzzy join of two tables based on [FirstName]
 
 ```powerquery-m
-Table.FuzzyJoin( 
-    Table.FromRecords( 
-        { 
-            [CustomerID = 1, FirstName1 = "Bob", Phone = "555-1234"], 
-            [CustomerID = 2, FirstName1 = "Robert", Phone = "555-4567"] 
-        }, 
-        type table [CustomerID = nullable number, FirstName1 = nullable text, Phone = nullable text] 
-    ), 
-    {"FirstName1"}, 
-    Table.FromRecords( 
-        { 
-            [CustomerStateID = 1, FirstName2 = "Bob", State = "TX"], 
-            [CustomerStateID = 2, FirstName2 = "bOB", State = "CA"] 
-        }, 
-        type table [CustomerStateID = nullable number, FirstName2 = nullable text, State = nullable text] 
-    ), 
-    {"FirstName2"}, 
-    JoinKind.LeftOuter, 
-    [IgnoreCase = true, IgnoreSpace = false] 
+Table.FuzzyJoin(
+	  Table.FromRecords(
+        {
+		        [CustomerID = 1, FirstName1 = "Bob", Phone = "555-1234"], 
+		        [CustomerID = 2, FirstName1 = "Robert", Phone = "555-4567"] 
+	      },
+        type table [CustomerID = nullable number, FirstName1 = nullable text, Phone = nullable text]
+    ),
+	  {"FirstName1"}, 
+	  Table.FromRecords(
+        {
+		        [CustomerStateID = 1, FirstName2 = "Bob", State = "TX"], 
+		        [CustomerStateID = 2, FirstName2 = "bOB", State = "CA"]
+	      },
+        type table [CustomerStateID = nullable number, FirstName2 = nullable text, State = nullable text]
+    ),
+	  {"FirstName2"}, 
+	  JoinKind.LeftOuter, 
+	  [IgnoreCase = true, IgnoreSpace = false] 
 ) 
 ```
 

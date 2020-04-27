@@ -24,16 +24,16 @@ Returns a table from the `table` specified where the value of a previous cell is
 Return a table with the null values in column [Place] filled with the value above them from the table.
 
 ```powerquery-m
-Table.FillDown( 
-    Table.FromRecords({ 
-        [Place = 1, Name = "Bob"], 
-        [Place = null, Name = "John"], 
-        [Place = 2, Name = "Brad"], 
-        [Place = 3, Name = "Mark"], 
-        [Place = null, Name = "Tom"], 
-        [Place = null, Name = "Adam"] 
-    }), 
-    {"Place"} 
+Table.FillDown(
+    Table.FromRecords({
+        [Place = 1, Name = "Bob"],
+        [Place = null, Name = "John"],
+        [Place = 2, Name = "Brad"],
+        [Place = 3, Name = "Mark"],
+        [Place = null, Name = "Tom"],
+        [Place = null, Name = "Adam"]
+    }),
+    {"Place"}
 )
 ```
 

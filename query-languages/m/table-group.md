@@ -24,17 +24,17 @@ Groups the rows of `table` by the values in the specified column,`key`, for each
 Group the table adding an aggregate column [total] which contains the sum of prices ("each List.Sum([price])").
 
 ```powerquery-m
-Table.Group( 
-    Table.FromRecords({ 
-        [CustomerID = 1, price = 20], 
-        [CustomerID = 2, price = 10], 
-        [CustomerID = 2, price = 20], 
-        [CustomerID = 1, price = 10], 
-        [CustomerID = 3, price = 20], 
+Table.Group(
+    Table.FromRecords({
+        [CustomerID = 1, price = 20],
+        [CustomerID = 2, price = 10],
+        [CustomerID = 2, price = 20],
+        [CustomerID = 1, price = 10],
+        [CustomerID = 3, price = 20],
         [CustomerID = 3, price = 5]
-    }), 
-    "CustomerID", 
-    {"total", each List.Sum([price])} 
+    }),
+    "CustomerID",
+    {"total", each List.Sum([price])}
 )
 ```
 

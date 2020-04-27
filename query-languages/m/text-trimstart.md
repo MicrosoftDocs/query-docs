@@ -24,7 +24,7 @@ Returns the result of removing all leading whitespace from text value `text`.
 Remove leading whitespace from " a b c d ".
 
 ```powerquery-m
-Text.TrimStart("      a b c d    ")
+Text.TrimStart("   a b c d    ")
 ```
 
 <pre>

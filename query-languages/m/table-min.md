@@ -24,12 +24,12 @@ Returns the smallest row in the `table`, given the `comparisonCriteria`. If the 
 Find the row with the smallest value in column [a] in the table.
 
 ```powerquery-m
-Table.Min( 
-    Table.FromRecords({ 
-        [a = 2, b = 4], 
-        [a = 6, b = 8] 
-    }), 
-    "a" 
+Table.Min(
+    Table.FromRecords({
+        [a = 2, b = 4],
+        [a = 6, b = 8]
+    }),
+    "a"
 )
 ```
 

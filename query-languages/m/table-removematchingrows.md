@@ -26,11 +26,11 @@ Remove any rows where [a = 1] from the table `({[a = 1, b = 2], [a = 3, b = 4], 
 ```powerquery-m
 Table.RemoveMatchingRows(
     Table.FromRecords({
-        [a = 1, b = 2], 
-        [a = 3, b = 4], 
+        [a = 1, b = 2],
+        [a = 3, b = 4],
         [a = 1, b = 6]
-    }), 
-    {[a = 1]}, 
+    }),
+    {[a = 1]},
     "a"
 )
 ```

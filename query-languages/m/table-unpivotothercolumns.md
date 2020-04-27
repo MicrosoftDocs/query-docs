@@ -25,12 +25,12 @@ Translates all columns other than a specified set into attribute-value pairs, co
 
 ```powerquery-m
 Table.UnpivotOtherColumns(
-    Table.FromRecords({ 
-        [key = "key1", attribute1 = 1, attribute2 = 2, attribute3 = 3], 
-        [key = "key2", attribute1 = 4, attribute2 = 5, attribute3 = 6] 
-    }), 
-    {"key"}, 
-    "column1", 
+    Table.FromRecords({
+        [key = "key1", attribute1 = 1, attribute2 = 2, attribute3 = 3],
+        [key = "key2", attribute1 = 4, attribute2 = 5, attribute3 = 6]  
+    }),
+    {"key"},
+    "column1",
     "column2"
 )
 ```

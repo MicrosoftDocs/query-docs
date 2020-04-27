@@ -24,10 +24,10 @@ Returns a binary format that reads a sequence of items and returns a `list`. The
 Read bytes until the end of the data.
 
 ```powerquery-m
-let 
+let
     binaryData = #binary({1, 2, 3}),
     listFormat = BinaryFormat.List(BinaryFormat.Byte)
-in 
+in
     listFormat(binaryData)
 ```
 
@@ -37,10 +37,10 @@ in
 Read two bytes.
 
 ```powerquery-m
-let 
+let
     binaryData = #binary({1, 2, 3}),
     listFormat = BinaryFormat.List(BinaryFormat.Byte, 2)
-in 
+in
     listFormat(binaryData)
 ```
 
@@ -50,10 +50,10 @@ in
 Read bytes until the byte value is greater than or equal to two.
 
 ```powerquery-m
-let 
+let
     binaryData = #binary({1, 2, 3}),
     listFormat = BinaryFormat.List(BinaryFormat.Byte, (x) => x < 2)
-in 
+in
     listFormat(binaryData)
 ```
 

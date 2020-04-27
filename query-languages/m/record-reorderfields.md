@@ -24,9 +24,9 @@ Returns a record after reordering the fields in `record` in the order of fields 
 Reorder some of the fields in the record.
 
 ```powerquery-m
-Record.ReorderFields( 
-    [CustomerID = 1, OrderID = 1, Item = "Fishing rod", Price = 100.0], 
-    {"OrderID", "CustomerID"} 
+Record.ReorderFields(
+    [CustomerID = 1, OrderID = 1, Item = "Fishing rod", Price = 100.0],
+    {"OrderID", "CustomerID"}
 )
 ```
 

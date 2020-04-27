@@ -26,13 +26,13 @@ Returns a binary format that chooses the next binary format based on a value tha
 Read a list of bytes where the number of elements is determined by the first byte.
 
 ```powerquery-m
-let 
-    binaryData = #binary({2, 3, 4, 5}), 
+let
+    binaryData = #binary({2, 3, 4, 5}),
     listFormat = BinaryFormat.Choice(
-        BinaryFormat.Byte, 
+        BinaryFormat.Byte,
         (length) => BinaryFormat.List(BinaryFormat.Byte, length)
-    ) 
-in 
+    )
+in
     listFormat(binaryData)
 ```
 
@@ -46,12 +46,12 @@ Read a list of bytes where the number of elements is determined by the first byt
 let
     binaryData = #binary({2, 3, 4, 5}),
     listFormat = BinaryFormat.Choice(
-        BinaryFormat.Byte, 
-        (length) => BinaryFormat.Record([ 
+        BinaryFormat.Byte,
+        (length) => BinaryFormat.Record([
             length = length,
             list = BinaryFormat.List(BinaryFormat.Byte, length)
         ])
-    ) 
+    )
 in
     listFormat(binaryData)
 ```
@@ -65,12 +65,12 @@ Read a list of bytes where the number of elements is determined by the first byt
 ```powerquery-m
 let
     binaryData = #binary({2, 3, 4, 5}),
-    listFormat = BinaryFormat.Choice( 
-        BinaryFormat.Byte, 
+    listFormat = BinaryFormat.Choice(
+        BinaryFormat.Byte,
         (length) => BinaryFormat.List(BinaryFormat.Byte, length),
-        type list 
-    ) 
-in 
+        type list
+    )
+in
     listFormat(binaryData)
 ```
 

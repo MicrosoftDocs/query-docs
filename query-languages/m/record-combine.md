@@ -24,9 +24,9 @@ Combines the records in the given `records`. If the `records` contains non-recor
 Create a combined record from the records.
 
 ```powerquery-m
-Record.Combine({ 
-    [CustomerID = 1, Name = "Bob"], 
-    [Phone = "123-4567"] 
+Record.Combine({
+    [CustomerID = 1, Name = "Bob"],
+    [Phone = "123-4567"]
 })
 ```
 

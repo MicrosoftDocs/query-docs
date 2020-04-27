@@ -26,13 +26,13 @@ Find the position of the first occurrence of [a = 2, b = 4] or [a = 6, b = 8] in
 ```powerquery-m
 Table.PositionOfAny(
     Table.FromRecords({
-        [a = 2, b = 4], 
-        [a = 1, b = 4], 
-        [a = 2, b = 4], 
+        [a = 2, b = 4],
+        [a = 1, b = 4],
+        [a = 2, b = 4],
         [a = 1, b = 4]
-    }), 
+    }),
     {
-        [a = 2, b = 4], 
+        [a = 2, b = 4],
         [a = 6, b = 8]
     }
 )
@@ -46,15 +46,15 @@ Find the position of all the occurrences of [a = 2, b = 4] or [a = 6, b = 8] in 
 ```powerquery-m
 Table.PositionOfAny(
     Table.FromRecords({
-        [a = 2, b = 4], 
-        [a = 6, b = 8], 
-        [a = 2, b = 4], 
+        [a = 2, b = 4],
+        [a = 6, b = 8],
+        [a = 2, b = 4],
         [a = 1, b = 4]
-    }), 
+    }),
     {
-        [a = 2, b = 4], 
+        [a = 2, b = 4],
         [a = 6, b = 8]
-    }, 
+    },
     Occurrence.All
 )
 ```

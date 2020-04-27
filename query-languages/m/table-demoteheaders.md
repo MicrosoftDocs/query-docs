@@ -24,10 +24,10 @@ Demotes the column headers (i.e. column names) to the first row of values. The d
 Demote the first row of values in the table.
 
 ```powerquery-m
-Table.DemoteHeaders( 
-    Table.FromRecords({ 
-        [CustomerID = 1, Name = "Bob", Phone = "123-4567"], 
-        [CustomerID = 2, Name = "Jim", Phone = "987-6543"] 
+Table.DemoteHeaders(
+    Table.FromRecords({
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"]
     })
 )
 ```

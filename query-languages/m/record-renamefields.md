@@ -24,9 +24,9 @@ Returns a record after renaming fields in the input `record` to the new field na
 Rename the field "UnitPrice" to "Price" from the record.
 
 ```powerquery-m
-Record.RenameFields( 
-    [OrderID = 1, CustomerID = 1, Item = "Fishing rod", UnitPrice = 100.0], 
-    {"UnitPrice", "Price"} 
+Record.RenameFields(
+    [OrderID = 1, CustomerID = 1, Item = "Fishing rod", UnitPrice = 100.0],
+    {"UnitPrice", "Price"}
 )
 ```
 
@@ -36,12 +36,12 @@ Record.RenameFields(
 Rename the fields "UnitPrice" to "Price" and "OrderNum" to "OrderID" from the record.
 
 ```powerquery-m
-Record.RenameFields( 
-    [OrderNum = 1, CustomerID = 1, Item = "Fishing rod", UnitPrice = 100.0], 
-    { 
-        {"UnitPrice", "Price"}, 
-        {"OrderNum", "OrderID"} 
-    } 
+Record.RenameFields(
+    [OrderNum = 1, CustomerID = 1, Item = "Fishing rod", UnitPrice = 100.0],
+    {
+        {"UnitPrice", "Price"},
+        {"OrderNum", "OrderID"}
+    }
 )
 ```
 

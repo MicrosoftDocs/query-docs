@@ -24,15 +24,15 @@ Given the `column` of records in the input `table`, creates a table with a colum
 Expand column [a] in the table `({[a = [aa = 1, bb = 2, cc = 3], b = 2]})` into 3 columns "aa", "bb" and "cc".
 
 ```powerquery-m
-Table.ExpandRecordColumn( 
-    Table.FromRecords({ 
-        [ 
-            a = [aa = 1, bb = 2, cc = 3], 
-            b = 2 
-        ] 
-    }), 
-    "a", 
-    {"aa", "bb", "cc"} 
+Table.ExpandRecordColumn(
+    Table.FromRecords({
+        [
+            a = [aa = 1, bb = 2, cc = 3],
+            b = 2
+        ]
+    }),
+    "a",
+    {"aa", "bb", "cc"}
 )
 ```
 

@@ -24,19 +24,19 @@ Expands tables in `table`[`column`] into multiple rows and columns. `columnNames
 Expand table columns in `[a]` in the table `({[t = {[a=1, b=2, c=3], [a=2,b=4,c=6]}, b = 2]})` into 3 columns `[t.a]`, `[t.b]` and `[t.c]`.
 
 ```powerquery-m
-Table.ExpandTableColumn( 
-    Table.FromRecords({ 
-        [ 
-            t = Table.FromRecords({ 
-                [a = 1, b = 2, c = 3], 
-                [a = 2, b = 4, c = 6] 
-            }), 
-            b = 2 
-        ] 
-    }), 
-    "t", 
-    {"a", "b", "c"}, 
-    {"t.a", "t.b", "t.c"} 
+Table.ExpandTableColumn(
+    Table.FromRecords({
+        [
+            t = Table.FromRecords({
+                [a = 1, b = 2, c= 3],
+                [a = 2, b = 4, c = 6]
+            }),
+            b = 2
+        ]
+    }),
+    "t",
+    {"a", "b", "c"},
+    {"t.a", "t.b", "t.c"}
 )
 ```
 

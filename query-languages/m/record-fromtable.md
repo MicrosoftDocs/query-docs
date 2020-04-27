@@ -24,12 +24,12 @@ Returns a record from a table of records `table` containing field names and valu
 Create a record from the table of the form Table.FromRecords({[Name = "CustomerID", Value = 1], [Name = "Name", Value = "Bob"], [Name = "Phone", Value = "123-4567"]}).
 
 ```powerquery-m
-Record.FromTable( 
-    Table.FromRecords({ 
-        [Name = "CustomerID", Value = 1], 
-        [Name = "Name", Value = "Bob"], 
-        [Name = "Phone", Value = "123-4567"] 
-    }) 
+Record.FromTable(
+    Table.FromRecords({
+        [Name = "CustomerID", Value = 1],
+        [Name = "Name", Value = "Bob"],
+        [Name = "Phone", Value = "123-4567"]
+    })
 )
 ```
 

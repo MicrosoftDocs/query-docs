@@ -24,9 +24,9 @@ Returns a record after applying transformations specified in list `transformOper
 Convert "Price" field to number.
 
 ```powerquery-m
-Record.TransformFields( 
-    [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = "100.0"], 
-    {"Price", Number.FromText} 
+Record.TransformFields(
+    [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = "100.0"],
+    {"Price", Number.FromText}
 )
 ```
 
@@ -36,12 +36,9 @@ Record.TransformFields(
 Convert "OrderID" and "Price" fields to numbers.
 
 ```powerquery-m
-Record.TransformFields( 
-    [OrderID = "1", CustomerID = 1, Item = "Fishing rod", Price = "100.0"], 
-    {
-        {"OrderID", Number.FromText}, 
-        {"Price", Number.FromText}
-    } 
+Record.TransformFields(
+    [OrderID ="1", CustomerID = 1, Item = "Fishing rod", Price = "100.0"], 
+    {{"OrderID", Number.FromText}, {"Price", Number.FromText}}
 )
 ```
 

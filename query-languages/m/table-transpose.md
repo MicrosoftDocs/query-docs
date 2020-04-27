@@ -26,8 +26,8 @@ Make the rows of the table of name-value pairs into columns.
 ```powerquery-m
 Table.Transpose(
     Table.FromRecords({
-        [Name = "Full Name", Value = "Fred"], 
-        [Name = "Age", Value = 42], 
+        [Name = "Full Name", Value = "Fred"],
+        [Name = "Age", Value = 42],
         [Name = "Country", Value = "UK"]
     })
 )

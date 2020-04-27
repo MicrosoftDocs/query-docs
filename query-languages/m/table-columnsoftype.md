@@ -24,12 +24,12 @@ Returns a list with the names of the columns from table `table` that match the t
 Return the names of columns of type Number.Type from the table.
 
 ```powerquery-m
-Table.ColumnsOfType( 
-    Table.FromRecords( 
-        {[a = 1, b = "hello"]}, 
-        type table[a = Number.Type, b = Text.Type] 
-    ), 
-    {type number} 
+Table.ColumnsOfType(
+    Table.FromRecords(
+        {[a = 1, b = "hello"]},
+        type table[a = Number.Type, b = Text.Type]
+    ),
+    {type number}
 )
 ```
 

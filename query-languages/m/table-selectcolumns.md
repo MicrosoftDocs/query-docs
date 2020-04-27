@@ -25,12 +25,12 @@ Only include column [Name].
 
 ```powerquery-m
 Table.SelectColumns(
-    Table.FromRecords({ 
-        [CustomerID = 1, Name = "Bob", Phone = "123-4567"], 
-        [CustomerID = 2, Name = "Jim", Phone = "987-6543"] , 
-        [CustomerID = 3, Name = "Paul", Phone = "543-7890"] , 
-        [CustomerID = 4, Name = "Ringo", Phone = "232-1550"] 
-    }), 
+    Table.FromRecords({
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"],
+        [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]
+    }),
     "Name"
 )
 ```
@@ -42,7 +42,7 @@ Only include columns [CustomerID] and [Name].
 
 ```powerquery-m
 Table.SelectColumns(
-    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}), 
+    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}),
     {"CustomerID", "Name"}
 )
 ```
@@ -54,7 +54,7 @@ If the included column does not exit, the default result is an error.
 
 ```powerquery-m
 Table.SelectColumns(
-    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}), 
+    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}),
     "NewColumn"
 )
 ```
@@ -66,8 +66,8 @@ If the included column does not exit, option `MissingField.UseNull` creates a co
 
 ```powerquery-m
 Table.SelectColumns(
-    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567" ]}), 
-    {"CustomerID", "NewColumn"}, 
+    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}),
+    {"CustomerID", "NewColumn"},
     MissingField.UseNull
 )
 ```

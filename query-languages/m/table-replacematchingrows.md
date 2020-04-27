@@ -26,14 +26,14 @@ Replace the rows [a = 1, b = 2] and [a = 2, b = 3] with [a = -1, b = -2],[a = -2
 ```powerquery-m
 Table.ReplaceMatchingRows(
     Table.FromRecords({
-        [a = 1, b =2], 
-        [a = 2, b = 3], 
-        [a = 3, b = 4], 
+        [a = 1, b =2],
+        [a = 2, b = 3],
+        [a = 3, b = 4],
         [a = 1, b = 2]
     }),
-    { 
-        {[a = 1, b = 2], [a = -1, b = -2]}, 
-        {[a = 2, b = 3], [a = -2, b = -3]} 
+    {
+        {[a = 1, b = 2], [a = -1, b = -2]},
+        {[a = 2, b = 3], [a = -2, b = -3]}
     }
 )
 ```

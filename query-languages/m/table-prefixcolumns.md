@@ -1,6 +1,6 @@
 ---
 title: "Table.PrefixColumns | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 4/24/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -25,7 +25,8 @@ Prefix the columns with "MyTable" in the table.
 
 ```powerquery-m
 Table.PrefixColumns(
-    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}), "MyTable"
+    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}),
+    "MyTable"
 )
 ```
 

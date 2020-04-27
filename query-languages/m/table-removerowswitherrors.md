@@ -27,7 +27,7 @@ Remove error value from first row.
 Table.RemoveRowsWithErrors(
     Table.FromRecords({
         [Column1 = ...],
-        [Column1 = 2], 
+        [Column1 = 2],
         [Column1 = 3]
     })
 )

@@ -24,9 +24,9 @@ Given a `table`, where a `column` is a list of values, splits the list into a ro
 Split the list column [Name] in the table.
 
 ```powerquery-m
-Table.ExpandListColumn( 
-    Table.FromRecords({[Name= {"Bob", "Jim", "Paul"}, Discount = .15]}), 
-    "Name" 
+Table.ExpandListColumn(
+    Table.FromRecords({[Name= {"Bob", "Jim", "Paul"}, Discount = .15]}),
+    "Name"
 )
 ```
 

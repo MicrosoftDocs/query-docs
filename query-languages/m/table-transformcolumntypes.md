@@ -26,10 +26,10 @@ Transform the number values in column [a] to text values from the table `({[a = 
 ```powerquery-m
 Table.TransformColumnTypes(
     Table.FromRecords({
-        [a = 1, b = 2], 
+        [a = 1, b = 2],
         [a = 3, b = 4]
-    }), 
-    {"a", type text}, 
+    }),
+    {"a", type text},
     "en-US"
 )
 ```

@@ -26,11 +26,11 @@ Take the columns "a", "b", and "c" in the table `({[ key = "x", a = 1, b = null,
 ```powerquery-m
 Table.Unpivot(
     Table.FromRecords({
-        [key = "x", a = 1, b = null, c = 3], 
+        [key = "x", a = 1, b = null, c = 3],
         [key = "y", a = 2, b = 4, c = null]
     }),
-    {"a", "b", "c"}, 
-    "attribute", 
+    {"a", "b", "c"},
+    "attribute",
     "value"
 )
 ```

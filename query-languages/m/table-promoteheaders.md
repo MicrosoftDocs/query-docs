@@ -41,8 +41,8 @@ Promote all the scalars in the first row of the table to headers.
 Table.PromoteHeaders(
     Table.FromRecords({
         [Rank = 1, Name = "Name", Date = #date(1980, 1, 1)],
-        [Rank = 1, Name = "Bob", Date = #date(1980, 1, 1)]
-    }), 
+        [Rank = 1, Name = "Bob", Date = #date(1980, 1, 1)]}
+    ),
     [PromoteAllScalars = true, Culture = "en-US"]
 )
 ```

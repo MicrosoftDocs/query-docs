@@ -24,13 +24,13 @@ Duplicate the column named `columnName` to the table `table`. The values and typ
 Duplicate the column "a" to a column named "copied column" in the table `({[a = 1, b = 2], [a = 3, b = 4]})`.
 
 ```powerquery-m
-Table.DuplicateColumn( 
-    Table.FromRecords({ 
-        [a = 1, b = 2], 
-        [a = 3, b = 4] 
-    }), 
-    "a", 
-    "copied column" 
+Table.DuplicateColumn(
+    Table.FromRecords({
+        [a = 1, b = 2],
+        [a = 3, b = 4]
+    }),
+    "a",
+    "copied column"
 )
 ```
 

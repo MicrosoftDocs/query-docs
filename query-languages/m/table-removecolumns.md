@@ -25,9 +25,9 @@ Remove column [Phone] from the table.
 
 ```powerquery-m
 Table.RemoveColumns(
-    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}), 
+    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}),
     "Phone"
-)
+
 ```
 
 <table> <tr> <th>CustomerID</th> <th>Name</th> </tr> <tr> <td>1</td> <td>Bob</td> </tr> </table>

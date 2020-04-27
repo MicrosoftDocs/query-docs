@@ -24,14 +24,14 @@ Returns the largest row(s) in the `table`, given the `comparisonCriteria`. After
 Find the row with the largest value in column [a] with the condition [a] > 0, in the table. The rows are sorted before the filter is applied.
 
 ```powerquery-m
-Table.MaxN( 
-    Table.FromRecords({ 
-        [a = 2, b = 4], 
-        [a = 0, b = 0], 
-        [a = 6, b = 2] 
-    }), 
-    "a", 
-    each [a] > 0 
+Table.MaxN(
+    Table.FromRecords({
+        [a = 2, b = 4],
+        [a = 0, b = 0],
+        [a = 6, b = 2]
+    }),
+    "a",
+    each [a] > 0
 )
 ```
 
@@ -41,14 +41,14 @@ Table.MaxN(
 Find the row with the largest value in column [a] with the condition [b] > 0, in the table. The rows are sorted before the filter is applied.
 
 ```powerquery-m
-Table.MaxN( 
-    Table.FromRecords({ 
-        [a = 2, b = 4], 
-        [a = 8, b = 0], 
-        [a = 6, b = 2] 
-    }), 
-    "a", 
-    each [b] > 0 
+Table.MaxN(
+    Table.FromRecords({
+        [a = 2, b = 4],
+        [a = 8, b = 0],
+        [a = 6, b = 2]
+    }),
+    "a",
+    each [b] > 0
 )
 ```
 

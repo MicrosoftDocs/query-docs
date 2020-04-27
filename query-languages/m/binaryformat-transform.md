@@ -24,13 +24,13 @@ Returns a binary format that will transform the values read by another binary fo
 Read a byte and add one to it.
 
 ```powerquery-m
-let 
-    binaryData = #binary({1}), 
-    transformFormat = BinaryFormat.Transform( 
-        BinaryFormat.Byte, 
-        (x) => x + 1 
-    ) 
-in 
+let
+    binaryData = #binary({1}),
+    transformFormat = BinaryFormat.Transform(
+        BinaryFormat.Byte,
+        (x) => x + 1
+    )
+in
     transformFormat(binaryData)
 ```
 

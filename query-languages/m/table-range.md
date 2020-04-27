@@ -26,11 +26,11 @@ Return all the rows starting at offset 1 in the table.
 ```powerquery-m
 Table.Range(
     Table.FromRecords({
-        [CustomerID = 1, Name = "Bob", Phone = "123-4567"], 
-        [CustomerID = 2, Name = "Jim", Phone = "987-6543"], 
-        [CustomerID = 3, Name = "Paul", Phone = "543-7890"], 
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"],
         [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]
-    }), 
+    }),
     1
 )
 ```
@@ -43,12 +43,12 @@ Return one row starting at offset 1 in the table.
 ```powerquery-m
 Table.Range(
     Table.FromRecords({
-        [CustomerID = 1, Name = "Bob", Phone = "123-4567"], 
-        [CustomerID = 2, Name = "Jim", Phone = "987-6543"], 
-        [CustomerID = 3, Name = "Paul", Phone = "543-7890"], 
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"],
         [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]
-    }), 
-    1, 
+    }),
+    1,
     1
 )
 ```

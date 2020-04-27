@@ -24,38 +24,38 @@ Returns a table that is the result of combining a set of partitioned tables, `pa
 Find item type from the list `{number}`.
 
 ```powerquery-m
-Table.FromPartitions( 
-    "Year", 
-    { 
-        { 
-            1994, 
-            Table.FromPartitions( 
-                "Month", 
-                { 
-                    { 
-                        "Jan", 
-                        Table.FromPartitions( 
-                            "Day", 
-                            { 
-                                {1, #table({"Foo"}, {{"Bar"}})}, 
-                                {2, #table({"Foo"}, {{"Bar"}})} 
-                            } 
-                        ) 
-                    }, 
-                    { 
-                        "Feb", 
-                        Table.FromPartitions( 
-                            "Day", 
-                            { 
-                                {3, #table({"Foo"}, {{"Bar"}})}, 
-                                {4, #table({"Foo"}, {{"Bar"}})} 
-                            } 
-                        ) 
-                    } 
-                } 
-            ) 
+Table.FromPartitions(
+    "Year",
+    {
+        {
+            1994,
+            Table.FromPartitions(
+                "Month",
+                {
+                    {
+                        "Jan",
+                        Table.FromPartitions(
+                            "Day",
+                            {
+                                {1, #table({"Foo"}, {{"Bar"}})},
+                                {2, #table({"Foo"}, {{"Bar"}})}
+                            }
+                        )
+                    },
+                    {
+                        "Feb",
+                        Table.FromPartitions(
+                            "Day",
+                            {
+                                {3, #table({"Foo"}, {{"Bar"}})},
+                                {4, #table({"Foo"}, {{"Bar"}})}
+                            }
+                        )
+                    }
+                }
+            )
         }
-    } 
+    }
 )
 ```
 

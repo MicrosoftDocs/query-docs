@@ -37,9 +37,9 @@ Decode a percent-encoded string.
   
 ```powerquery-m
 let 
-    UriUnescapeDataString = (data as text) as text => Uri.Parts("http://contoso?a=" & data)[Query][a] 
-in 
-    UriUnescapeDataString("%2Bmoney%24") 
+    UriUnescapeDataString = (data as text) as text => Uri.Parts("http://contoso?a=" & data)[Query][a]
+in
+    UriUnescapeDataString("%2Bmoney%24")
 ```  
 
 `"+money$"`

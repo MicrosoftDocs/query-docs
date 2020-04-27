@@ -27,9 +27,9 @@ If a record is specified for `columns` (and `delimiter`, `extraValues`, and `enc
 Process CSV text with column headers.
 
 ```powerquery-m
-let 
-    csv = Text.Combine({"OrderID,Item", "1,Fishing rod", "2,1 lb. worms"}, "#(cr)#(lf)") 
-in 
+let
+    csv = Text.Combine({"OrderID,Item", "1,Fishing rod", "2,1 lb. worms"}, "#(cr)#(lf)")
+in
     Table.PromoteHeaders(Csv.Document(csv))
 ```
 

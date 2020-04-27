@@ -1,6 +1,6 @@
 ---
 title: "Table.InsertRows | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 4/24/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,13 +24,13 @@ Returns a table with the list of rows, `rows`, inserted into the `table` at the 
 Insert the row into the table at position 1.
 
 ```powerquery-m
-Table.InsertRows( 
-    Table.FromRecords({ 
-        [CustomerID = 1, Name = "Bob", Phone = "123-4567"], 
-        [CustomerID = 2, Name = "Jim", Phone = "987-6543"] 
-    }), 
-    1, 
-    {[CustomerID = 3, Name = "Paul", Phone = "543-7890"]} 
+Table.InsertRows(
+    Table.FromRecords({
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"]
+    }),
+    1,
+    {[CustomerID = 3, Name = "Paul", Phone = "543-7890"]}
 )
 ```
 
@@ -40,13 +40,13 @@ Table.InsertRows(
 Insert two rows into the table at position 1.
 
 ```powerquery-m
-Table.InsertRows( 
-    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}), 
-    1, 
-    { 
-        [CustomerID = 2, Name = "Jim", Phone = "987-6543"], 
-        [CustomerID = 3, Name = "Paul", Phone = "543-7890"] 
-    } 
+Table.InsertRows(
+    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}),
+    1,
+    {
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"]
+    }
 )
 ```
 

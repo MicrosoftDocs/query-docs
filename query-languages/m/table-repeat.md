@@ -26,11 +26,11 @@ Repeat the rows in the table two times.
 ```powerquery-m
 Table.Repeat(
     Table.FromRecords({
-        [a = 1, b = "hello"], 
+        [a = 1, b = "hello"],
         [a = 3, b = "world"]
-    }), 
+    }),
     2
-)
+
 ```
 
 <table> <tr> <th>a</th> <th>b</th> </tr> <tr> <td>1</td> <td>hello</td> </tr> <tr> <td>3</td> <td>world</td> </tr> <tr> <td>1</td> <td>hello</td> </tr> <tr> <td>3</td> <td>world</td> </tr> </table>

@@ -24,10 +24,10 @@ Creates a table of type `columns` from a list `lists` containing nested lists wi
 Return a table from a list of customer names in a list. Each value in the customer list item becomes a row value, and each list becomes a column.
 
 ```powerquery-m
-Table.FromColumns({ 
-    {1, "Bob", "123-4567"}, 
-    {2, "Jim", "987-6543"}, 
-    {3, "Paul", "543-7890"} 
+Table.FromColumns({
+    {1, "Bob", "123-4567"},
+    {2, "Jim", "987-6543"},
+    {3, "Paul", "543-7890"}
 })
 ```
 
@@ -37,13 +37,13 @@ Table.FromColumns({
 Create a table from a given list of columns and a list of column names.
 
 ```powerquery-m
-Table.FromColumns( 
-    { 
-        {1, "Bob", "123-4567"}, 
-        {2, "Jim", "987-6543"}, 
-        {3, "Paul", "543-7890"} 
-    }, 
-    {"CustomerID", "Name", "Phone"} 
+Table.FromColumns(
+    {
+        {1, "Bob", "123-4567"},
+        {2, "Jim", "987-6543"},
+        {3, "Paul", "543-7890"}
+    },
+    {"CustomerID", "Name", "Phone"}
 )
 ```
 
@@ -53,13 +53,13 @@ Table.FromColumns(
 Create a table with different number of columns per row. The missing row value is null.
 
 ```powerquery-m
-Table.FromColumns( 
-    { 
-        {1, 2, 3}, 
-        {4, 5}, 
-        {6, 7, 8, 9} 
-    }, 
-    {"column1", "column2", "column3"} 
+Table.FromColumns(
+    {
+        {1, 2, 3},
+        {4, 5},
+        {6, 7, 8, 9}
+    },
+    {"column1", "column2", "column3"}
 )
 ```
 

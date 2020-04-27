@@ -33,13 +33,13 @@ Table.FromList({"a", "b", "c", "d"}, null, {"Letters"})
 Create a table from the list using the Record.FieldValues splitter with the resulting table having "CustomerID" and "Name" as column names.
 
 ```powerquery-m
-Table.FromList( 
-    { 
-        [CustomerID = 1, Name = "Bob"], 
-        [CustomerID = 2, Name = "Jim"] 
-    }, 
-    Record.FieldValues, 
-    {"CustomerID", "Name"} 
+Table.FromList(
+    {
+        [CustomerID = 1, Name = "Bob"],
+        [CustomerID = 2, Name = "Jim"]
+    },
+    Record.FieldValues,
+    {"CustomerID", "Name"}
 )
 ```
 

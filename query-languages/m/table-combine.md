@@ -24,10 +24,10 @@ Returns a table that is the result of merging a list of tables, `tables`. The re
 Merge the three tables together.
 
 ```powerquery-m
-Table.Combine({ 
-    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}), 
-    Table.FromRecords({[CustomerID = 2, Name = "Jim", Phone = "987-6543"]}), 
-    Table.FromRecords({[CustomerID = 3, Name = "Paul", Phone = "543-7890"]}) 
+Table.Combine({
+    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}),
+    Table.FromRecords({[CustomerID = 2, Name = "Jim", Phone = "987-6543"]}),
+    Table.FromRecords({[CustomerID = 3, Name = "Paul", Phone = "543-7890"]})
 })
 ```
 
@@ -37,10 +37,10 @@ Table.Combine({
 Merge three tables with different structures.
 
 ```powerquery-m
-Table.Combine({ 
-    Table.FromRecords({[Name = "Bob", Phone = "123-4567"]}), 
-    Table.FromRecords({[Fax = "987-6543", Phone = "838-7171"]}), 
-    Table.FromRecords({[Cell = "543-7890"]}) 
+Table.Combine({
+    Table.FromRecords({[Name = "Bob", Phone = "123-4567"]}),
+    Table.FromRecords({[Fax = "987-6543", Phone = "838-7171"]}),
+    Table.FromRecords({[Cell = "543-7890"]})
 })
 ```
 
@@ -50,13 +50,13 @@ Table.Combine({
 Merge two tables and project onto the given type.
 
 ```powerquery-m
-Table.Combine( 
-    { 
-        Table.FromRecords({[Name = "Bob",Phone = "123-4567"]}), 
-        Table.FromRecords({[Fax = "987-6543", Phone = "838-7171"]}), 
-        Table.FromRecords({[Cell = "543-7890"]}) 
-    }, 
-    {"CustomerID", "Name"} 
+Table.Combine(
+    {
+        Table.FromRecords({[Name = "Bob", Phone = "123-4567"]}),
+        Table.FromRecords({[Fax = "987-6543", Phone = "838-7171"]}),
+        Table.FromRecords({[Cell = "543-7890"]})
+    },
+    {"CustomerID", "Name"}
 )
 ```
 

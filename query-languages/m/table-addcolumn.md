@@ -24,14 +24,14 @@ Adds a column named `newColumnName` to the table `table`. The values for the col
 Add a column named "TotalPrice" to the table with each value being the sum of column [Price] and column [Shipping].
 
 ```powerquery-m
-Table.AddColumn( 
-    Table.FromRecords({ 
-        [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0, Shipping = 10.00], 
-        [OrderID = 2, CustomerID = 1, Item = "1 lb. worms", Price = 5.0, Shipping = 15.00], 
-        [OrderID = 3, CustomerID = 2, Item = "Fishing net", Price = 25.0, Shipping = 10.00] 
-    }), 
-    "TotalPrice", 
-    each [Price] + [Shipping] 
+Table.AddColumn(
+    Table.FromRecords({
+        [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0, Shipping = 10.00],
+        [OrderID = 2, CustomerID = 1, Item = "1 lb. worms", Price = 5.0, Shipping = 15.00],
+        [OrderID = 3, CustomerID = 2, Item = "Fishing net", Price = 25.0, Shipping = 10.00]
+    }),
+    "TotalPrice",
+    each [Price] + [Shipping]
 )
 ```
 

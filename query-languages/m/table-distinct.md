@@ -23,12 +23,12 @@ Removes duplicate rows from the table `table`. An optional parameter, `equationC
 Remove the duplicate rows from the table.
 
 ```powerquery-m
-Table.Distinct( 
-    Table.FromRecords({ 
-        [a = "A", b = "a"], 
-        [a = "B", b = "b"], 
-        [a = "A", b = "a"] 
-    }) 
+Table.Distinct(
+    Table.FromRecords({
+        [a = "A", b = "a"],
+        [a = "B", b = "b"],
+        [a = "A", b = "a"]
+    })
 )
 ```
 
@@ -38,13 +38,13 @@ Table.Distinct(
 Remove the duplicate rows from column [b] in the table `({[a = "A", b = "a"], [a = "B", b = "a"], [a = "A", b = "b"]})`.
 
 ```powerquery-m
-Table.Distinct( 
-    Table.FromRecords({ 
-        [a = "A", b = "a"], 
-        [a = "B", b = "a"], 
-        [a = "A", b = "b"] 
-    }), 
-    "b" 
+Table.Distinct(
+    Table.FromRecords({
+        [a = "A", b = "a"],
+        [a = "B", b = "a"],
+        [a = "A", b = "b"]
+    }),
+    "b"
 )
 ```
 

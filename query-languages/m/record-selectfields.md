@@ -24,9 +24,9 @@ Returns a record which includes only the fields specified in list `fields` from 
 Select the fields "Item" and "Price" in the record.
 
 ```powerquery-m
-Record.SelectFields( 
-    [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0], 
-    {"Item", "Price"} 
+Record.SelectFields(
+    [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0],
+    {"Item", "Price"}
 )
 ```
 

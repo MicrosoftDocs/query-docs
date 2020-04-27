@@ -24,13 +24,13 @@ Returns a binary format that limits the amount of data that can be read. Both `B
 Limit the number of bytes read to 2 when reading a list of bytes.
 
 ```powerquery-m
-let 
-    binaryData = #binary({1, 2, 3}), 
-    listFormat = BinaryFormat.Length( 
-        BinaryFormat.List(BinaryFormat.Byte), 
-        2 
-    ) 
-in 
+let
+    binaryData = #binary({1, 2, 3}),
+    listFormat = BinaryFormat.Length(
+        BinaryFormat.List(BinaryFormat.Byte),
+        2
+    )
+in
     listFormat(binaryData)
 ```
 
@@ -40,13 +40,13 @@ in
 Limit the number of byte read when reading a list of bytes to the byte value preceding the list.
 
 ```powerquery-m
-let 
+let
     binaryData = #binary({1, 2, 3}),
-    listFormat = BinaryFormat.Length( 
-        BinaryFormat.List(BinaryFormat.Byte ), 
+    listFormat = BinaryFormat.Length(
+        BinaryFormat.List(BinaryFormat.Byte),
         BinaryFormat.Byte
-    ) 
-in 
+    )
+in
     listFormat(binaryData)
 ```
 

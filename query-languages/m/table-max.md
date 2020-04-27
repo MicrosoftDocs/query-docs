@@ -24,12 +24,12 @@ Returns the largest row in the `table`, given the `comparisonCriteria`. If the t
 Find the row with the largest value in column [a] in the table `({[a = 2, b = 4], [a = 6, b = 8]})`.
 
 ```powerquery-m
-Table.Max( 
-    Table.FromRecords({ 
-        [a = 2, b = 4], 
-        [a = 6, b = 8] 
-    }), 
-    "a" 
+Table.Max(
+    Table.FromRecords({
+        [a = 2, b = 4],
+        [a = 6, b = 8]
+    }),
+    "a"
 )
 ```
 

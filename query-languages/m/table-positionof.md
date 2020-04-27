@@ -26,11 +26,11 @@ Find the position of the first occurrence of [a = 2, b = 4] in the table `({[a =
 ```powerquery-m
 Table.PositionOf(
     Table.FromRecords({
-        [a = 2, b = 4], 
-        [a = 1, b = 4], 
-        [a = 2, b = 4], 
+        [a = 2, b = 4],
+        [a = 1, b = 4],
+        [a = 2, b = 4],
         [a = 1, b = 4]
-    }), 
+    }),
     [a = 2, b = 4]
 )
 ```
@@ -43,12 +43,12 @@ Find the position of the second occurrence of [a = 2, b = 4] in the table `({[a 
 ```powerquery-m
 Table.PositionOf(
     Table.FromRecords({
-        [a = 2, b = 4], 
-        [a = 1, b = 4], 
-        [a = 2, b = 4], 
+        [a = 2, b = 4],
+        [a = 1, b = 4],
+        [a = 2, b = 4],
         [a = 1, b = 4]
-    }), 
-    [a = 2, b = 4], 
+    }),
+    [a = 2, b = 4],
     1
 )
 ```
@@ -61,12 +61,12 @@ Find the position of all the occurrences of [a = 2, b = 4] in the table `({[a = 
 ```powerquery-m
 Table.PositionOf(
     Table.FromRecords({
-        [a = 2, b = 4], 
-        [a = 1, b = 4], 
-        [a = 2, b = 4], 
+        [a = 2, b = 4],
+        [a = 1, b = 4],
+        [a = 2, b = 4],
         [a = 1, b = 4]
-    }), 
-    [a = 2, b = 4], 
+    }),
+    [a = 2, b = 4],
     Occurrence.All
 )
 ```

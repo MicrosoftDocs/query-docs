@@ -29,10 +29,10 @@ Transform the rows into a list of numbers from the table <code>({[A = 1], [A = 2
 ```powerquery-m
 Table.TransformRows(
     Table.FromRecords({
-        [a = 1], 
-        [a = 2], 
-        [a = 3], 
-        [a = 4], 
+        [a = 1],
+        [a = 2],
+        [a = 3],
+        [a = 4],
         [a = 5]
     }),
     each [a]
@@ -48,12 +48,12 @@ Transform the rows in column [A] into text values in a column [B] from the table
 ```powerquery-m
 Table.TransformRows(
     Table.FromRecords({
-        [a = 1], 
-        [a = 2], 
-        [a = 3], 
-        [a = 4], 
+        [a = 1],
+        [a = 2],
+        [a = 3],
+        [a = 4],
         [a = 5]
-    }), 
+    }),
     (row) as record => [B = Number.ToText(row[a])]
 )
 ```

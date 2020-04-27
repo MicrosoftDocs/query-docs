@@ -24,15 +24,15 @@ Keeps the initial offset then alternates taking and skipping the following rows.
 Return a table from the table that, starting at the first row, skips 1 value and then keeps 1 value.
 
 ```powerquery-m
-Table.AlternateRows( 
-    Table.FromRecords({ 
-        [CustomerID = 1, Name = "Bob", Phone = "123-4567"], 
-        [CustomerID = 2, Name = "Jim", Phone = "987-6543"], 
-        [CustomerID = 3, Name = "Paul", Phone = "543-7890"] 
-    }), 
-    1, 
-    1, 
-    1 
+Table.AlternateRows(
+    Table.FromRecords({
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"]
+    }),
+    1,
+    1,
+    1
 )
 ```
 

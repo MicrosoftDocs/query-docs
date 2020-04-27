@@ -22,7 +22,7 @@ Returns the items in list `list1` that do not appear in list `list2`. Duplicate 
 Find the items in list {1, 2, 3, 4, 5}that do not appear in {4, 5, 3}.
 
 ```powerquery-m
-List.Difference({1, 2, 3, 4, 5}, {4, 5, 3})
+List.Difference({1, 2, 3, 4, 5}, {4, 5, 3}
 ```
 
 <table> <tr><td>1</td></tr> <tr><td>2</td></tr> </table>

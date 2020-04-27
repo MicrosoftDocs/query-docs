@@ -26,12 +26,12 @@ Replace the text "goodbye" with the text "world" in the table.
 ```powerquery-m
 Table.ReplaceValue(
     Table.FromRecords({
-        [a = 1, b = "hello"], 
+        [a = 1, b = "hello"],
         [a = 3, b = "goodbye"]
-    }), 
-    "goodbye", 
-    "world", 
-    Replacer.ReplaceText, 
+    }),
+    "goodbye",
+    "world",
+    Replacer.ReplaceText,
     {"b"}
 )
 ```
@@ -44,12 +44,12 @@ Replace the text "ur" with the text "or" in the table.
 ```powerquery-m
 Table.ReplaceValue(
     Table.FromRecords({
-        [a = 1, b = "hello"], 
+        [a = 1, b = "hello"],
         [a = 3, b = "wurld"]
-    }), 
-    "ur", 
-    "or", 
-    Replacer.ReplaceText, 
+    }),
+    "ur",
+    "or",
+    Replacer.ReplaceText,
     {"b"}
 )
 ```

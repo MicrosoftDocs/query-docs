@@ -46,21 +46,22 @@ The following table provides more details about the advanced options.
 Group the table adding an aggregate column [Count] that contains the number of employees in each location (`each Table.RowCount(_)`).
 
 ```powerquery-m
-Table.FuzzyGroup( 
-    Table.FromRecords( 
-        { 
-            [EmployeeID = 1, Location = "Seattle"], 
-            [EmployeeID = 2, Location = "seattl"], 
-            [EmployeeID = 3, Location = "Vancouver"], 
-            [EmployeeID = 4, Location = "Seatle"], 
-            [EmployeeID = 5, Location = "vancover"], 
-            [EmployeeID = 6, Location = "Seattle"], 
-            [EmployeeID = 7, Location = "Vancouver"] 
-        }, 
-        type table [EmployeeID = nullable number, Location = nullable text] 
-    ), "Location", 
-    {"Count", each Table.RowCount(_)}, 
-    [IgnoreCase = true, IgnoreSpace = true] 
+Table.FuzzyGroup(
+    Table.FromRecords(
+        {
+            [EmployeeID = 1, Location = "Seattle"],
+            [EmployeeID = 2, Location = "seattl"],
+            [EmployeeID = 3, Location = "Vancouver"],
+            [EmployeeID = 4, Location = "Seatle"],
+            [EmployeeID = 5, Location = "vancover"],
+            [EmployeeID = 6, Location = "Seattle"],
+            [EmployeeID = 7, Location = "Vancouver"]
+        },
+        type table [EmployeeID = nullable number, Location = nullable text]
+    ),
+    "Location",
+    {"Count", each Table.RowCount(_)},
+    [IgnoreCase = true, IgnoreSpace = true]
 )
 ```
 

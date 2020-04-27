@@ -24,14 +24,14 @@ Add a key to `table`, given `columns` is the subset of `table`'s column names th
 Add a key to {[Id = 1, Name = "Hello There"], [Id = 2, Name = "Good Bye"]} that comprise of {"Id"} and make it a primary.
 
 ```powerquery-m
-let 
-    tableType = type table [Id = Int32.Type, Name = text], 
-    table = Table.FromRecords({ 
-        [Id = 1, Name = "Hello There"], 
-        [Id = 2, Name = "Good Bye"] 
-    }), 
-    resultTable = Table.AddKey(table, {"Id"}, true) 
-in 
+let
+    tableType = type table [Id = Int32.Type, Name = text],
+    table = Table.FromRecords({
+        [Id = 1, Name = "Hello There"],
+        [Id = 2, Name = "Good Bye"]
+    }),
+    resultTable = Table.AddKey(table, {"Id"}, true)
+in
     resultTable
 ```
 

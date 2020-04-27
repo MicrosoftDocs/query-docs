@@ -37,9 +37,9 @@ Replace the column name "CustomerNum" with "CustomerID" and "PhoneNum" with "Pho
 
 ```powerquery-m
 Table.RenameColumns(
-    Table.FromRecords({[CustomerNum = 1, Name = "Bob", PhoneNum = "123-4567"]}), 
+    Table.FromRecords({[CustomerNum = 1, Name = "Bob", PhoneNum = "123-4567"]}),
     {
-        {"CustomerNum", "CustomerID"}, 
+        {"CustomerNum", "CustomerID"},
         {"PhoneNum", "Phone"}
     }
 )
@@ -52,8 +52,8 @@ Replace the column name "NewCol" with "NewColumn" in the table, and ignore if th
 
 ```powerquery-m
 Table.RenameColumns(
-    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}), 
-    {"NewCol", "NewColumn"}, 
+    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}),
+    {"NewCol", "NewColumn"},
     MissingField.Ignore
 )
 ```

@@ -27,24 +27,24 @@ The following assumes a key value that is a single byte, with 4 expected items i
 
 ```powerquery-m
 let
-    b = #binary({ 
-        1, 11, 
-        2, 22, 
-        2, 22, 
-        5, 55, 
-        1, 11 
-    }), 
-    f = BinaryFormat.Group( 
-        BinaryFormat.Byte, 
-        { 
-            {1, BinaryFormat.Byte, BinaryOccurrence.Required}, 
-            {2, BinaryFormat.Byte, BinaryOccurrence.Repeating}, 
-            {3, BinaryFormat.Byte, BinaryOccurrence.Optional}, 
+    b = #binary({
+        1, 11,
+        2, 22,
+        2, 22,
+        5, 55,
+        1, 11
+    }),
+    f = BinaryFormat.Group(
+        BinaryFormat.Byte,
+        {
+            {1, BinaryFormat.Byte, BinaryOccurrence.Required},
+            {2, BinaryFormat.Byte, BinaryOccurrence.Repeating},
+            {3, BinaryFormat.Byte, BinaryOccurrence.Optional},
             {4, BinaryFormat.Byte, BinaryOccurrence.Repeating}
-        }, 
-        (extra) => BinaryFormat.Byte 
+        },
+        (extra) => BinaryFormat.Byte
     )
-in 
+in
     f(b)
 ```
 
@@ -55,20 +55,20 @@ in
 The following example illustrates the item value transform and default item value. The repeating item with key 1 sums the list of values read using List.Sum. The optional item with key 2 has a default value of 123 instead of null.
 
 ```powerquery-m
-let 
-    b = #binary({ 
+let
+    b = #binary({
         1, 101, 
         1, 102 
     }),
-    f = BinaryFormat.Group( 
-        BinaryFormat.Byte, 
-        { 
+    f = BinaryFormat.Group(
+        BinaryFormat.Byte,
+        {
             {1, BinaryFormat.Byte, BinaryOccurrence.Repeating, 
-              0, (list) => List.Sum(list)}, 
-            {2, BinaryFormat.Byte, BinaryOccurrence.Optional, 123} 
-        } 
-    ) 
-in 
+              0, (list) => List.Sum(list)},
+            {2, BinaryFormat.Byte, BinaryOccurrence.Optional, 123}
+        }
+    )
+in
     f(b)
 ```
 

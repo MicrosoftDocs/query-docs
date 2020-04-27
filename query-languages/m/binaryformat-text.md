@@ -24,10 +24,10 @@ Returns a binary format that reads a text value. The `length` specifies the numb
 Decode two bytes as ASCII text.
 
 ```powerquery-m
-let 
-    binaryData = #binary({65, 66, 67}), 
+let
+    binaryData = #binary({65, 66, 67}),
     textFormat = BinaryFormat.Text(2, TextEncoding.Ascii)
-in 
+in
     textFormat(binaryData)
 ```
 
@@ -37,13 +37,13 @@ in
 Decode ASCII text where the length of the text in bytes appears before the text as a byte.
 
 ```powerquery-m
-let 
-    binaryData = #binary({2, 65, 66}), 
-    textFormat = BinaryFormat.Text( 
-        BinaryFormat.Byte, 
-        TextEncoding.Ascii 
-    ) 
-in 
+let
+    binaryData = #binary({2, 65, 66}),
+    textFormat = BinaryFormat.Text(
+        BinaryFormat.Byte,
+        TextEncoding.Ascii
+    )
+in
     textFormat(binaryData)
 ```
 

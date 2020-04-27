@@ -24,14 +24,14 @@ Indicates whether the specified record, `row`, appears as a row in the `table`. 
 Determine if the table contains the row.
 
 ```powerquery-m
-Table.Contains( 
-    Table.FromRecords({ 
-        [CustomerID = 1, Name = "Bob", Phone = "123-4567"], 
-        [CustomerID = 2, Name = "Jim", Phone = "987-6543"], 
-        [CustomerID = 3, Name = "Paul", Phone = "543-7890"], 
-        [CustomerID = 4, Name = "Ringo", Phone = "232-1550"] 
-    }), 
-    [Name = "Bob"] 
+Table.Contains(
+    Table.FromRecords({
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"],
+        [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]
+    }),
+    [Name = "Bob"]
 )
 ```
 
@@ -41,14 +41,14 @@ Table.Contains(
 Determine if the table contains the row.
 
 ```powerquery-m
-Table.Contains( 
-    Table.FromRecords({ 
-        [CustomerID = 1, Name = "Bob", Phone = "123-4567"], 
-        [CustomerID = 2, Name = "Jim", Phone = "987-6543"], 
-        [CustomerID = 3, Name = "Paul", Phone = "543-7890"], 
-        [CustomerID = 4, Name = "Ringo", Phone = "232-1550"] 
-    }), 
-    [Name = "Ted"] 
+Table.Contains(
+    Table.FromRecords({
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"],
+        [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]
+    }),
+    [Name = "Ted"]
 )
 ```
 
@@ -58,15 +58,15 @@ Table.Contains(
 Determine if the table contains the row comparing only the column [Name].
 
 ```powerquery-m
-Table.Contains( 
-    Table.FromRecords({ 
-        [CustomerID = 1, Name = "Bob", Phone = "123-4567"], 
-        [CustomerID = 2, Name = "Jim", Phone = "987-6543"], 
-        [CustomerID = 3, Name = "Paul", Phone = "543-7890"], 
-        [CustomerID = 4, Name = "Ringo", Phone = "232-1550"] 
-    }), 
-    [CustomerID = 4, Name = "Bob"], 
-    "Name" 
+Table.Contains(
+    Table.FromRecords({
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"],
+        [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]
+    }),
+    [CustomerID = 4, Name = "Bob"],
+    "Name"
 )
 ```
 

@@ -26,9 +26,9 @@ Remove the first row from the table.
 ```powerquery-m
 Table.RemoveRows(
     Table.FromRecords({
-        [CustomerID = 1, Name = "Bob", Phone = "123-4567"], 
-        [CustomerID = 2, Name = "Jim", Phone = "987-6543"], 
-        [CustomerID = 3, Name = "Paul", Phone = "543-7890"], 
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"],
         [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]
     }),
     0
@@ -43,11 +43,11 @@ Remove the row at position 1 from the table.
 ```powerquery-m
 Table.RemoveRows(
     Table.FromRecords({
-        [CustomerID = 1, Name = "Bob", Phone = "123-4567"], 
-        [CustomerID = 2, Name = "Jim", Phone = "987-6543"], 
-        [CustomerID = 3, Name = "Paul", Phone = "543-7890"], 
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"],
         [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]
-    }), 
+    }),
     1
 )
 ```
@@ -60,12 +60,12 @@ Remove two rows starting at position 1 from the table.
 ```powerquery-m
 Table.RemoveRows(
     Table.FromRecords({
-        [CustomerID = 1, Name = "Bob", Phone = "123-4567"], 
-        [CustomerID = 2, Name = "Jim", Phone = "987-6543"], 
-        [CustomerID = 3, Name = "Paul", Phone = "543-7890"], 
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"],
         [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]
-    }), 
-    1, 
+    }),
+    1,
     2
 )
 ```

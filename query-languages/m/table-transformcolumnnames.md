@@ -34,8 +34,8 @@ Transform column names to generate case-insensitive names of length 6.
 
 ```powerquery-m
 Table.TransformColumnNames(
-    Table.FromRecords({[ColumnNum = 1, cOlumnnum = 2, coLumnNUM = 3]}), 
-    Text.Clean, 
+    Table.FromRecords({[ColumnNum = 1, cOlumnnum = 2, coLumnNUM = 3]}),
+    Text.Clean,
     [MaxLength = 6, Comparer = Comparer.OrdinalIgnoreCase]
 )
 ```

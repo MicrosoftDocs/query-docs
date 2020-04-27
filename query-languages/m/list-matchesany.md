@@ -24,7 +24,7 @@ Returns `true` if the condition function, `condition`, is satisfied by any of va
 Find if any of the values in the list {9, 10, 11} are greater than 10.
 
 ```powerquery-m
-List.MatchesAny({9, 10, 11}, each _ > 10)
+List.MatchesAny({9, 10, 11}, each _  > 10)
 ```
 
 `true`
@@ -33,7 +33,7 @@ List.MatchesAny({9, 10, 11}, each _ > 10)
 Find if any of the values in the list {1, 2, 3} are greater than 10.
 
 ```powerquery-m
-List.MatchesAny({1, 2, 3}, each _ > 10)
+List.MatchesAny({1, 2, 3}, each _  > 10)
 ```
 
 `false`

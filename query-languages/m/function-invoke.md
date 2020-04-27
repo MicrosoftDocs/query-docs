@@ -24,7 +24,7 @@ Invokes the given function using the specified list of arguments and returns the
 Invokes Record.FieldNames with one argument [A=1,B=2]
 
 ```powerquery-m
-Function.Invoke(Record.FieldNames, {[A = 1, B = 2]})
+Function.Invoke(Record.FieldNames, {[A = 1, B = 2]}
 ```
 
 <table> <tr><td>A</td></tr> <tr><td>B</td></tr> </table>

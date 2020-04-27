@@ -24,13 +24,13 @@ Returns the first row(s) of the table `table`, depending on the value of `countO
 Find the first two rows of the table.
 
 ```powerquery-m
-Table.FirstN( 
-    Table.FromRecords({ 
-        [CustomerID = 1, Name = "Bob", Phone = "123-4567"], 
-        [CustomerID = 2, Name = "Jim", Phone = "987-6543"], 
-        [CustomerID = 3, Name = "Paul", Phone = "543-7890"] 
-    }), 
-    2 
+Table.FirstN(
+    Table.FromRecords({
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"]
+    }),
+    2
 )
 ```
 
@@ -40,13 +40,13 @@ Table.FirstN(
 Find the first rows where [a] > 0 in the table.
 
 ```powerquery-m
-Table.FirstN( 
-    Table.FromRecords({ 
-        [a = 1, b = 2], 
-        [a = 3, b = 4], 
-        [a = -5, b = -6] 
-    }), 
-    each [a] > 0 
+Table.FirstN(
+    Table.FromRecords({
+        [a = 1, b = 2],
+        [a = 3, b = 4],
+        [a = -5, b = -6]
+    }),
+    each [a] > 0
 )
 ```
 

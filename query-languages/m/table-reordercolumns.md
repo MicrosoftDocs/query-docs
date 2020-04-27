@@ -37,8 +37,8 @@ Switch the order of the columns [Phone] and [Address] or use "MissingField.Ignor
 
 ```powerquery-m
 Table.ReorderColumns(
-    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}), 
-    {"Phone", "Address"}, 
+    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}),
+    {"Phone", "Address"},
     MissingField.Ignore
 )
 ```

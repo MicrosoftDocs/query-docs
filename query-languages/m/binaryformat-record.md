@@ -24,17 +24,16 @@ Returns a binary format that reads a record. The `record` parameter specifies th
 Read a record containing one 16-bit integer and one 32-bit integer.
 
 ```powerquery-m
-let 
-    binaryData = #binary({ 
+let
+    binaryData = #binary({
         0x00, 0x01, 
-        0x00, 0x00, 
-        0x00, 0x02 
-    }), 
-    recordFormat = BinaryFormat.Record([ 
-        A = BinaryFormat.UnsignedInteger16, 
-        B = BinaryFormat.UnsignedInteger32 
+        0x00, 0x00, 0x00, 0x02
+    }),
+    recordFormat = BinaryFormat.Record([
+        A = BinaryFormat.UnsignedInteger16,
+        B = BinaryFormat.UnsignedInteger32
     ])
-in 
+in
     recordFormat(binaryData)
 ```
 

@@ -24,9 +24,9 @@ Returns the result of removing all trailing whitespace from text value `text`.
 Remove trailing whitespace from " a b c d ".
 
 ```powerquery-m
-Text.TrimEnd("      a b c d    ")
+Text.TrimEnd("     a b c d    ")
 ```
 
 <pre>
-"      a b c d"
+"     a b c d"
 </pre>
