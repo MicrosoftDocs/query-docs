@@ -1,6 +1,6 @@
 ---
 title: "BinaryFormat.Record | Microsoft Docs"
-ms.date: 7/29/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,17 @@ Returns a binary format that reads a record. The `record` parameter specifies th
 Read a record containing one 16-bit integer and one 32-bit integer.
 
 ```powerquery-m
-let binaryData = #binary({ 0x00, 0x01, 0x00, 0x00, 0x00, 0x02}), recordFormat = BinaryFormat.Record([ A = BinaryFormat.UnsignedInteger16, B = BinaryFormat.UnsignedInteger32 ]) in recordFormat(binaryData)
+let
+    binaryData = #binary({
+        0x00, 0x01, 
+        0x00, 0x00, 0x00, 0x02
+    }),
+    recordFormat = BinaryFormat.Record([
+        A = BinaryFormat.UnsignedInteger16,
+        B = BinaryFormat.UnsignedInteger32
+    ])
+in
+    recordFormat(binaryData)
 ```
 
 <table> <tr> <th>A</th> <td>1</td> </tr> <tr> <th>B</th> <td>2</td> </tr> </table>

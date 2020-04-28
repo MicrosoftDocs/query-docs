@@ -1,6 +1,6 @@
 ---
 title: "Expression.Evaluate | Microsoft Docs"
-ms.date: 8/21/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -42,7 +42,7 @@ Expression.Evaluate("List.Sum({1, 2, 3})", [List.Sum = List.Sum])
 Evaluate the concatenation of a text value with an identifier.
 
 ```powerquery-m
-Expression.Evaluate(Expression.Constant("""abc") & " & " & Expression.Identifier("x"), [x="def"""])
+Expression.Evaluate(Expression.Constant("""abc") & " & " & Expression.Identifier("x"), [x = "def"""])
 ```
 
 `"""abcdef"""`

@@ -1,6 +1,6 @@
 ---
 title: "Table.Max | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,13 @@ Returns the largest row in the `table`, given the `comparisonCriteria`. If the t
 Find the row with the largest value in column [a] in the table `({[a = 2, b = 4], [a = 6, b = 8]})`.
 
 ```powerquery-m
-Table.Max(Table.FromRecords({[a = 2, b = 4], [a = 6, b = 8]}), "a")
+Table.Max(
+    Table.FromRecords({
+        [a = 2, b = 4],
+        [a = 6, b = 8]
+    }),
+    "a"
+)
 ```
 
 <table> <tr> <th>a</th> <td>6</td> </tr> <tr> <th>b</th> <td>8</td> </tr> </table>
@@ -33,7 +39,7 @@ Table.Max(Table.FromRecords({[a = 2, b = 4], [a = 6, b = 8]}), "a")
 Find the row with the largest value in column [a] in the table `({})`. Return -1 if empty.
 
 ```powerquery-m
-Table.Max(#table({"a"},{}), "a", -1)
+Table.Max(#table({"a"}, {}), "a", -1)
 ```
 
 `-1`

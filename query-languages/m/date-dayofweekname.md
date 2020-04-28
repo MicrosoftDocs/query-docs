@@ -1,6 +1,6 @@
 ---
 title: "Date.DayOfWeekName | Microsoft Docs"
-ms.date: 7/29/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,7 +18,7 @@ Date.DayOfWeekName(<b>date</b> as any, optional <b>culture</b> as nullable text)
 </pre>
 
 ## About
-Returns the day of the week name for the provided `date` and, optionally, a culture `culture`.
+Returns the day of the week name for the provided `date`. An optional `culture` may also be provided (for example, "en-US").
 
 ## Example 1
 Get the day of the week name.

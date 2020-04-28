@@ -1,6 +1,6 @@
 ---
 title: "DateTime.IsInPreviousNSeconds | Microsoft Docs"
-ms.date: 7/30/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,7 @@ Indicates whether the given datetime value `dateTime` occurs during the previous
 Determine if the second before the current system time is in the previous two seconds.
 
 ```powerquery-m
-DateTime.IsInPreviousNSeconds(DateTime.FixedLocalNow() - #duration(0,0,0,2), 2)
+DateTime.IsInPreviousNSeconds(DateTime.FixedLocalNow() - #duration(0, 0, 0, 2), 2)
 ```
 
 `true`

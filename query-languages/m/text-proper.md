@@ -1,6 +1,6 @@
 ---
 title: "Text.Proper | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,7 +18,7 @@ Text.Proper(<b>text</b> as nullable text, optional <b>culture</b> as nullable te
 </pre> 
   
 ## About  
-Returns the result of capitalizing only the first letter of each word in text value `text`. All other letters are returned in lowercase.
+Returns the result of capitalizing only the first letter of each word in text value `text`. All other letters are returned in lowercase. An optional `culture` may also be provided (for example, "en-US").
 
 ## Example 1
 Use `Text.Proper` on a simple sentence.

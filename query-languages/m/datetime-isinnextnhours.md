@@ -1,6 +1,6 @@
 ---
 title: "DateTime.IsInNextNHours | Microsoft Docs"
-ms.date: 7/30/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,7 @@ Indicates whether the given datetime value `dateTime` occurs during the next num
 Determine if the hour after the current system time is in the next two hours.
 
 ```powerquery-m
-DateTime.IsInNextNHours(DateTime.FixedLocalNow() + #duration(0,2,0,0), 2)
+DateTime.IsInNextNHours(DateTime.FixedLocalNow() + #duration(0, 2, 0, 0), 2)
 ```
 
 `true`

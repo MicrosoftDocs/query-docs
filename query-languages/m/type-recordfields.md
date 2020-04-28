@@ -1,6 +1,6 @@
 ---
 title: "Type.RecordFields | Microsoft Docs"
-ms.date: 7/26/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -29,6 +29,6 @@ Returns a record describing the fields of a record <code>type</code>. Each field
 Find the name and value of the record <code>[ A = number, optional B = any]</code>.   
 
 ```powerquery-m
-Type.RecordFields(type [ A = number, optional B = any])
+Type.RecordFields(type [A = number, optional B = any])
 ```   
 <table> <tr> <th>A</th> <td>[Record]</td> </tr> <tr> <th>B</th> <td>[Record]</td> </tr> </table>

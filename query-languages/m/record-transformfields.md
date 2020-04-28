@@ -1,6 +1,6 @@
 ---
 title: "Record.TransformFields | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/23/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,10 @@ Returns a record after applying transformations specified in list `transformOper
 Convert "Price" field to number.
 
 ```powerquery-m
-Record.TransformFields([OrderID = 1, CustomerID= 1, Item = "Fishing rod", Price = "100.0"], {"Price", Number.FromText})
+Record.TransformFields(
+    [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = "100.0"],
+    {"Price", Number.FromText}
+)
 ```
 
 <table> <tr> <th>OrderID</th> <td>1</td> </tr> <tr> <th>CustomerID</th> <td>1</td> </tr> <tr> <th>Item</th> <td>Fishing rod</td> </tr> <tr> <th>Price</th> <td>100</td> </tr> </table>
@@ -33,7 +36,10 @@ Record.TransformFields([OrderID = 1, CustomerID= 1, Item = "Fishing rod", Price 
 Convert "OrderID" and "Price" fields to numbers.
 
 ```powerquery-m
-Record.TransformFields( [OrderID ="1", CustomerID= 1, Item = "Fishing rod", Price = "100.0"], {{"OrderID", Number.FromText}, {"Price",Number.FromText}})
+Record.TransformFields(
+    [OrderID ="1", CustomerID = 1, Item = "Fishing rod", Price = "100.0"], 
+    {{"OrderID", Number.FromText}, {"Price", Number.FromText}}
+)
 ```
 
 <table> <tr> <th>OrderID</th> <td>1</td> </tr> <tr> <th>CustomerID</th> <td>1</td> </tr> <tr> <th>Item</th> <td>Fishing rod</td> </tr> <tr> <th>Price</th> <td>100</td> </tr> </table>

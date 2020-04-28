@@ -1,6 +1,6 @@
 ---
 title: "Number.From | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,7 +18,7 @@ Number.From(<b>value</b> as any, optional <b>culture</b> as nullable text) as nu
 </pre>
 
 ## About
-Returns a `number` value from the given `value`. If the given `value` is `null`, `Number.From` returns `null`. If the given `value` is `number`, `value` is returned. Values of the following types can be converted to a `number` value: <ul> <li>`text`: A `number` value from textual representation. Common text formats are handled ("15", "3,423.10", "5.0E-10"). See `Number.FromText` for details.</li> <li>`logical`: 1 for `true`, 0 for `false`.</li> <li>`datetime`: A double-precision floating-point number that contains an OLE Automation date equivalent.</li> <li>`datetimezone`: A double-precision floating-point number that contains an OLE Automation date equivalent of the local date and time of `value`.</li> <li>`date`: A double-precision floating-point number that contains an OLE Automation date equivalent.</li> <li>`time`: Expressed in fractional days.</li> <li>`duration`: Expressed in whole and fractional days.</li> </ul> If `value` is of any other type, an error is returned.
+Returns a `number` value from the given `value`. An optional `culture` may also be provided (for example, "en-US"). If the given `value` is `null`, `Number.From` returns `null`. If the given `value` is `number`, `value` is returned. Values of the following types can be converted to a `number` value: <ul> <li>`text`: A `number` value from textual representation. Common text formats are handled ("15", "3,423.10", "5.0E-10"). See `Number.FromText` for details.</li> <li>`logical`: 1 for `true`, 0 for `false`.</li> <li>`datetime`: A double-precision floating-point number that contains an OLE Automation date equivalent.</li> <li>`datetimezone`: A double-precision floating-point number that contains an OLE Automation date equivalent of the local date and time of `value`.</li> <li>`date`: A double-precision floating-point number that contains an OLE Automation date equivalent.</li> <li>`time`: Expressed in fractional days.</li> <li>`duration`: Expressed in whole and fractional days.</li> </ul> If `value` is of any other type, an error is returned.
 
 ## Example 1
 Get the `number` value of `"4"`.

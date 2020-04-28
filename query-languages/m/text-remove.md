@@ -1,6 +1,6 @@
 ---
 title: "Text.Remove | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,7 @@ Returns a copy of the text value `text` with all the characters from `removeChar
 Remove characters , and ; from the text value.
 
 ```powerquery-m
-Text.Remove("a,b;c",{",",";"})
+Text.Remove("a,b;c", {",",";"})
 ```
 
 `"abc"`

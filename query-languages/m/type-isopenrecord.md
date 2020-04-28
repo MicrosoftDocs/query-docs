@@ -1,6 +1,6 @@
 ---
 title: "Type.IsOpenRecord | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,7 @@ Returns a `logical` indicating whether a record `type` is open.
 Determine if the record `type [ A = number, ...]` is open.
 
 ```powerquery-m
-Type.IsOpenRecord(type [ A = number,...])
+Type.IsOpenRecord(type [A = number, ...])
 ```
 
 `true`

@@ -1,6 +1,6 @@
 ---
 title: "Record.FieldOrDefault | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,7 @@ Returns the value of the specified field `field` in the record `record`. If the 
 Find the value of field "Phone" in the record, or return null if it doesn't exist.
 
 ```powerquery-m
-Record.FieldOrDefault([CustomerID =1, Name="Bob"], "Phone")
+Record.FieldOrDefault([CustomerID = 1, Name = "Bob"], "Phone")
 ```
 
 `null`
@@ -33,7 +33,7 @@ Record.FieldOrDefault([CustomerID =1, Name="Bob"], "Phone")
 Find the value of field "Phone" in the record, or return the default if it doesn't exist.
 
 ```powerquery-m
-Record.FieldOrDefault([CustomerID =1, Name="Bob"], "Phone", "123-4567")
+Record.FieldOrDefault([CustomerID = 1, Name = "Bob"], "Phone", "123-4567")
 ```
 
 `"123-4567"`

@@ -1,6 +1,6 @@
 ---
 title: "Table.ToColumns | Microsoft Docs"
-ms.date: 7/26/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,7 +26,12 @@ Creates a list of nested lists from the table, <code>table</code>. Each list ite
 Create a list of the column values from the table.
 
 ```powerquery-m 
-Table.ToColumns(Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"], [CustomerID = 2, Name = "Jim", Phone = "987-6543"] })) 
+Table.ToColumns(
+    Table.FromRecords({
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"]
+    })
+) 
 ```  
 
 <table> <tr><td>[List]</td></tr> <tr><td>[List]</td></tr> <tr><td>[List]</td></tr> </table>

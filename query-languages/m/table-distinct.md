@@ -1,6 +1,6 @@
 ---
 title: "Table.Distinct | Microsoft Docs"
-ms.date: 10/17/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -23,7 +23,13 @@ Removes duplicate rows from the table `table`. An optional parameter, `equationC
 Remove the duplicate rows from the table.
 
 ```powerquery-m
-Table.Distinct(Table.FromRecords({[a = "A", b = "a"], [a = "B", b = "b"], [a = "A", b = "a"]}))
+Table.Distinct(
+    Table.FromRecords({
+        [a = "A", b = "a"],
+        [a = "B", b = "b"],
+        [a = "A", b = "a"]
+    })
+)
 ```
 
 <table> <tr> <th>a</th> <th>b</th> </tr> <tr> <td>A</td> <td>a</td> </tr> <tr> <td>B</td> <td>b</td> </tr> </table>
@@ -32,7 +38,14 @@ Table.Distinct(Table.FromRecords({[a = "A", b = "a"], [a = "B", b = "b"], [a = "
 Remove the duplicate rows from column [b] in the table `({[a = "A", b = "a"], [a = "B", b = "a"], [a = "A", b = "b"]})`.
 
 ```powerquery-m
-Table.Distinct(Table.FromRecords({[a = "A", b = "a"], [a = "B", b = "a"], [a = "A", b = "b"]}), "b")
+Table.Distinct(
+    Table.FromRecords({
+        [a = "A", b = "a"],
+        [a = "B", b = "a"],
+        [a = "A", b = "b"]
+    }),
+    "b"
+)
 ```
 
 <table> <tr> <th>a</th> <th>b</th> </tr> <tr> <td>A</td> <td>a</td> </tr> <tr> <td>A</td> <td>b</td> </tr> </table>

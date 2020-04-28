@@ -1,6 +1,6 @@
 ---
 title: "List.FirstN | Microsoft Docs"
-ms.date: 7/31/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,7 @@ List.FirstN(<b>list</b> as list, <b>countOrCondition</b> as any) as any
 Find the intial values in the list {3, 4, 5, -1, 7, 8, 2} that are greater than 0.
 
 ```powerquery-m
-List.FirstN({3, 4, 5, -1, 7, 8, 2},each _ > 0)
+List.FirstN({3, 4, 5, -1, 7, 8, 2}, each _ > 0)
 ```
 
 <table> <tr><td>3</td></tr> <tr><td>4</td></tr> <tr><td>5</td></tr> </table>

@@ -1,6 +1,6 @@
 ---
 title: "Type.ClosedRecord | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,7 @@ Returns a closed version of the given `record` `type` (or the same type, if it i
 Create a closed version of `type [ A = number,…]`.
 
 ```powerquery-m
-Type.ClosedRecord(type [ A = number,...])
+Type.ClosedRecord(type [A = number, ...])
 ```
 
-`type [ A = number ]`
+`type [A = number]`

@@ -1,6 +1,6 @@
 ---
 title: "Table.MaxN | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,15 @@ Returns the largest row(s) in the `table`, given the `comparisonCriteria`. After
 Find the row with the largest value in column [a] with the condition [a] > 0, in the table. The rows are sorted before the filter is applied.
 
 ```powerquery-m
-Table.MaxN(Table.FromRecords({[a = 2, b = 4], [a = 0, b = 0], [a = 6, b = 2]}), "a", each [a] > 0)
+Table.MaxN(
+    Table.FromRecords({
+        [a = 2, b = 4],
+        [a = 0, b = 0],
+        [a = 6, b = 2]
+    }),
+    "a",
+    each [a] > 0
+)
 ```
 
 <table> <tr> <th>a</th> <th>b</th> </tr> <tr> <td>6</td> <td>2</td> </tr> <tr> <td>2</td> <td>4</td> </tr> </table>
@@ -33,7 +41,15 @@ Table.MaxN(Table.FromRecords({[a = 2, b = 4], [a = 0, b = 0], [a = 6, b = 2]}), 
 Find the row with the largest value in column [a] with the condition [b] > 0, in the table. The rows are sorted before the filter is applied.
 
 ```powerquery-m
-Table.MaxN(Table.FromRecords({[a = 2, b = 4], [a = 8, b = 0], [a = 6, b = 2]}), "a", each [b] > 0)
+Table.MaxN(
+    Table.FromRecords({
+        [a = 2, b = 4],
+        [a = 8, b = 0],
+        [a = 6, b = 2]
+    }),
+    "a",
+    each [b] > 0
+)
 ```
 
 <table> <tr> </tr> </table>

@@ -1,6 +1,6 @@
 ---
 title: "Table.TransformColumns | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/23/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,13 @@ Returns a table from the input `table` by applying the transform operation to th
 Transform the number values in column [A] to number values.
 
 ```powerquery-m
-Table.TransformColumns(Table.FromRecords({[A="1", B=2], [A="5", B=10]}),{"A", Number.FromText})
+Table.TransformColumns(
+    Table.FromRecords({
+        [A = "1", B = 2],
+        [A = "5", B = 10]
+    }),
+    {"A", Number.FromText}
+)
 ```
 
 <table> <tr> <th>A</th> <th>B</th> </tr> <tr> <td>1</td> <td>2</td> </tr> <tr> <td>5</td> <td>10</td> </tr> </table>
@@ -33,7 +39,15 @@ Table.TransformColumns(Table.FromRecords({[A="1", B=2], [A="5", B=10]}),{"A", Nu
 Transform the number values in missing column [X] to text values, ignoring columns which don't exist.
 
 ```powerquery-m
-Table.TransformColumns(Table.FromRecords({[A="1", B=2], [A="5", B=10]}), {"X", Number.FromText}, null, MissingField.Ignore)
+Table.TransformColumns(
+    Table.FromRecords({
+        [A = "1", B = 2],
+        [A = "5", B = 10]
+    }),
+    {"X", Number.FromText},
+    null,
+    MissingField.Ignore
+)
 ```
 
 <table> <tr> <th>A</th> <th>B</th> </tr> <tr> <td>1</td> <td>2</td> </tr> <tr> <td>5</td> <td>10</td> </tr> </table>
@@ -42,7 +56,15 @@ Table.TransformColumns(Table.FromRecords({[A="1", B=2], [A="5", B=10]}), {"X", N
 Transform the number values in missing column [X] to text values, defaulting to null on columns which don't exist.
 
 ```powerquery-m
-Table.TransformColumns(Table.FromRecords({[A="1",B=2], [A="5", B=10]}), {"X", Number.FromText}, null, MissingField.UseNull)
+Table.TransformColumns(
+    Table.FromRecords({
+        [A = "1", B = 2],
+        [A = "5", B = 10]
+    }),
+    {"X", Number.FromText},
+    null,
+    MissingField.UseNull
+)
 ```
 
 <table> <tr> <th>A</th> <th>B</th> <th>X</th> </tr> <tr> <td>1</td> <td>2</td> <td></td> </tr> <tr> <td>5</td> <td>10</td> <td></td> </tr> </table>
@@ -51,7 +73,13 @@ Table.TransformColumns(Table.FromRecords({[A="1",B=2], [A="5", B=10]}), {"X", Nu
 Transform the number values in missing column [X] to text values, giving an error on columns which don't exist.
 
 ```powerquery-m
-Table.TransformColumns(Table.FromRecords({[A="1",B=2], [A="5", B=10]}), {"X", Number.FromText})
+Table.TransformColumns(
+    Table.FromRecords({
+        [A = "1", B = 2], 
+        [A = "5", B = 10]
+    }),
+    {"X", Number.FromText}
+)
 ```
 
 `[Expression.Error] The column 'X' of the table wasn't found.`

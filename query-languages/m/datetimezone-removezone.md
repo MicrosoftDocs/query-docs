@@ -1,6 +1,6 @@
 ---
 title: "DateTimeZone.RemoveZone | Microsoft Docs"
-ms.date: 7/30/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,7 @@ Returns a #datetime value from `dateTimeZone` with timezone information removed.
 Remove timezone information from the value #datetimezone(2011, 12, 31, 9, 15, 36, -7, 0).
 
 ```powerquery-m
-DateTimeZone.RemoveZone( #datetimezone(2011, 12, 31, 9, 15, 36,-7, 0))
+DateTimeZone.RemoveZone(#datetimezone(2011, 12, 31, 9, 15, 36, -7, 0))
 ```
 
 `#datetime(2011, 12, 31, 9, 15, 36)`

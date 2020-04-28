@@ -1,6 +1,6 @@
 ---
 title: "Text.PadStart | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 4/22/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -27,7 +27,7 @@ Pad the start of a text value so it is 10 characters long.
 Text.PadStart("Name", 10)
 ```
 
-`" Name"`
+<pre>"      Name"</pre>
 
 ## Example 2
 Pad the start of a text value with "|" so it is 10 characters long.
@@ -36,4 +36,4 @@ Pad the start of a text value with "|" so it is 10 characters long.
 Text.PadStart("Name", 10, "|")
 ```
 
-`"||||||Name"`
+<pre>"||||||Name"</pre>

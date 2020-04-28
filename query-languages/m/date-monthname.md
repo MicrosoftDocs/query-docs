@@ -1,6 +1,6 @@
 ---
 title: "Date.MonthName | Microsoft Docs"
-ms.date: 7/29/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,7 +18,7 @@ Date.MonthName(<b>date</b> as any, optional <b>culture</b> as nullable text) as 
 </pre>
 
 ## About
-Returns the name of the month component for the provided `date` and, optionally, a culture `culture`.
+Returns the name of the month component for the provided `date`. An optional `culture` may also be provided (for example, "en-US").
 
 ## Example
 Get the month name.
