@@ -1,6 +1,6 @@
 ---
 title: "Text.InferNumberType | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,5 +18,5 @@ Text.InferNumberType(<b>text</b> as text, optional <b>culture</b> as nullable te
 </pre>
   
 ## About  
-Infers granular number type (Int64.Type, Double.Type, etc.) of `text` using `culture`. Exception is raised if `text` is not a number
+Infers the granular number type (Int64.Type, Double.Type, etc.) of `text`. An error is raised if `text` is not a number. An optional `culture` may also be provided (for example, "en-US").
   

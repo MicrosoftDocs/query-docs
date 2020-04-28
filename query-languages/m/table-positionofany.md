@@ -1,6 +1,6 @@
 ---
 title: "Table.PositionOfAny | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,18 @@ Returns the row(s) position(s) from the `table` of the first occurrence of the l
 Find the position of the first occurrence of [a = 2, b = 4] or [a = 6, b = 8] in the table `({[a = 2, b = 4], [a = 6, b = 8], [a = 2, b = 4], [a = 1, b = 4]})`.
 
 ```powerquery-m
-Table.PositionOfAny(Table.FromRecords({[a = 2, b = 4], [a = 1, b = 4], [a = 2, b = 4], [a = 1, b = 4]}), {[a = 2, b = 4], [a = 6, b = 8]})
+Table.PositionOfAny(
+    Table.FromRecords({
+        [a = 2, b = 4],
+        [a = 1, b = 4],
+        [a = 2, b = 4],
+        [a = 1, b = 4]
+    }),
+    {
+        [a = 2, b = 4],
+        [a = 6, b = 8]
+    }
+)
 ```
 
 `0`
@@ -33,7 +44,19 @@ Table.PositionOfAny(Table.FromRecords({[a = 2, b = 4], [a = 1, b = 4], [a = 2, b
 Find the position of all the occurrences of [a = 2, b = 4] or [a = 6, b = 8] in the table `({[a = 2, b = 4], [a = 6, b = 8], [a = 2, b = 4], [a = 1, b = 4]}`.
 
 ```powerquery-m
-Table.PositionOfAny(Table.FromRecords({[a = 2, b = 4], [a = 6, b = 8], [a = 2, b = 4], [a = 1, b = 4]}), {[a = 2, b = 4], [a = 6, b = 8]}, Occurrence.All)
+Table.PositionOfAny(
+    Table.FromRecords({
+        [a = 2, b = 4],
+        [a = 6, b = 8],
+        [a = 2, b = 4],
+        [a = 1, b = 4]
+    }),
+    {
+        [a = 2, b = 4],
+        [a = 6, b = 8]
+    },
+    Occurrence.All
+)
 ```
 
 <table> <tr><td>0</td></tr> <tr><td>1</td></tr> <tr><td>2</td></tr> </table>

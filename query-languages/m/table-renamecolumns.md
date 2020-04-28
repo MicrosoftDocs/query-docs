@@ -1,6 +1,6 @@
 ---
 title: "Table.RenameColumns | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/23/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,10 @@ Performs the given renames to the columns in table `table`. A replacement operat
 Replace the column name "CustomerNum" with "CustomerID" in the table.
 
 ```powerquery-m
-Table.RenameColumns(Table.FromRecords({[CustomerNum=1, Name="Bob", Phone = "123-4567"]}), {"CustomerNum", "CustomerID"})
+Table.RenameColumns(
+    Table.FromRecords({[CustomerNum = 1, Name = "Bob", Phone = "123-4567"]}),
+    {"CustomerNum", "CustomerID"}
+)
 ```
 
 <table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>1</td> <td>Bob</td> <td>123-4567</td> </tr> </table>
@@ -33,7 +36,13 @@ Table.RenameColumns(Table.FromRecords({[CustomerNum=1, Name="Bob", Phone = "123-
 Replace the column name "CustomerNum" with "CustomerID" and "PhoneNum" with "Phone" in the table.
 
 ```powerquery-m
-Table.RenameColumns(Table.FromRecords({[CustomerNum=1, Name="Bob", PhoneNum = "123-4567"]}), {{"CustomerNum", "CustomerID"}, {"PhoneNum", "Phone"}})
+Table.RenameColumns(
+    Table.FromRecords({[CustomerNum = 1, Name = "Bob", PhoneNum = "123-4567"]}),
+    {
+        {"CustomerNum", "CustomerID"},
+        {"PhoneNum", "Phone"}
+    }
+)
 ```
 
 <table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>1</td> <td>Bob</td> <td>123-4567</td> </tr> </table>
@@ -42,7 +51,11 @@ Table.RenameColumns(Table.FromRecords({[CustomerNum=1, Name="Bob", PhoneNum = "1
 Replace the column name "NewCol" with "NewColumn" in the table, and ignore if the column doesn't exist.
 
 ```powerquery-m
-Table.RenameColumns(Table.FromRecords({[CustomerID=1, Name="Bob", Phone = "123-4567"]}), {"NewCol", "NewColumn"}, MissingField.Ignore)
+Table.RenameColumns(
+    Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}),
+    {"NewCol", "NewColumn"},
+    MissingField.Ignore
+)
 ```
 
 <table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>1</td> <td>Bob</td> <td>123-4567</td> </tr> </table>

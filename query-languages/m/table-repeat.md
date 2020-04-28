@@ -1,6 +1,6 @@
 ---
 title: "Table.Repeat | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,13 @@ Returns a table with the rows from the input `table` repeated the specified `cou
 Repeat the rows in the table two times.
 
 ```powerquery-m
-Table.Repeat(Table.FromRecords({[a = 1, b = "hello"], [a = 3, b = "world"]}), 2)
+Table.Repeat(
+    Table.FromRecords({
+        [a = 1, b = "hello"],
+        [a = 3, b = "world"]
+    }),
+    2
+
 ```
 
 <table> <tr> <th>a</th> <th>b</th> </tr> <tr> <td>1</td> <td>hello</td> </tr> <tr> <td>3</td> <td>world</td> </tr> <tr> <td>1</td> <td>hello</td> </tr> <tr> <td>3</td> <td>world</td> </tr> </table>

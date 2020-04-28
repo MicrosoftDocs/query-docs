@@ -1,6 +1,6 @@
 ---
 title: "Text.Upper | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -17,7 +17,7 @@ Text.Upper(<b>text</b> as nullable text, optional <b>culture</b> as nullable tex
 </pre>  
   
 ## About  
-Returns the result of converting all characters in `text` to uppercase.
+Returns the result of converting all characters in `text` to uppercase. An optional `culture` may also be provided (for example, "en-US").
 
 ## Example 1
 Get the uppercase version of "aBcD".

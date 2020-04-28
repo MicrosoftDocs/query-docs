@@ -1,6 +1,6 @@
 ---
 title: "Record.SelectFields | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,10 @@ Returns a record which includes only the fields specified in list `fields` from 
 Select the fields "Item" and "Price" in the record.
 
 ```powerquery-m
-Record.SelectFields( [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0] , {"Item", "Price"})
+Record.SelectFields(
+    [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0],
+    {"Item", "Price"}
+)
 ```
 
 <table> <tr> <th>Item</th> <td>Fishing rod</td> </tr> <tr> <th>Price</th> <td>100</td> </tr> </table>

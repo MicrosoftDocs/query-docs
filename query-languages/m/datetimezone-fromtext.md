@@ -1,6 +1,6 @@
 ---
 title: "DateTimeZone.FromText | Microsoft Docs"
-ms.date: 7/30/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,7 +18,7 @@ DateTimeZone.FromText(<b>text</b> as nullable text, optional <b>culture</b> as n
 </pre>
   
 ## About  
-Creates a `datetimezone` value from a textual representation, `text`, following ISO 8601 format standard. <ul> <li> <code>DateTimeZone.FromText("2010-12-31T01:30:00-08:00") </code> // yyyy-MM-ddThh:mm:ssZ </li> </ul>
+Creates a `datetimezone` value from a textual representation, `text`, following ISO 8601 format standard. An optional `culture` may also be provided (for example, "en-US"). <ul> <li> <code>DateTimeZone.FromText("2010-12-31T01:30:00-08:00") </code> // yyyy-MM-ddThh:mm:ssZ </li> </ul>
 
 ## Example 1
 Convert `"2010-12-31T01:30:00-08:00"` into a datetimezone value.

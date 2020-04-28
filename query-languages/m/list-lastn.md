@@ -1,6 +1,6 @@
 ---
 title: "List.LastN | Microsoft Docs"
-ms.date: 7/31/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,7 @@ Returns the last item of the list `list`. If the list is empty, an exception is 
 Find the last value in the list {3, 4, 5, -1, 7, 8, 2}.
 
 ```powerquery-m
-List.LastN({3, 4, 5, -1, 7, 8, 2},1)
+List.LastN({3, 4, 5, -1, 7, 8, 2}, 1)
 ```
 
 <table> <tr><td>2</td></tr> </table>

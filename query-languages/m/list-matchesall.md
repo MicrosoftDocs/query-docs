@@ -1,6 +1,6 @@
 ---
 title: "List.MatchesAll | Microsoft Docs"
-ms.date: 7/31/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,7 @@ Returns `true` if the condition function, `condition`, is satisfied by all value
 Determine if all the values in the list {11, 12, 13} are greater than 10.
 
 ```powerquery-m
-List.MatchesAll({11, 12, 13},each _ > 10)
+List.MatchesAll({11, 12, 13}, each _  > 10)
 ```
 
 `true`
@@ -33,7 +33,7 @@ List.MatchesAll({11, 12, 13},each _ > 10)
 Determine if all the values in the list {1, 2, 3} are greater than 10.
 
 ```powerquery-m
-List.MatchesAll({1, 2, 3},each _ > 10)
+List.MatchesAll({1, 2, 3}, each _  > 10)
 ```
 
 `false`

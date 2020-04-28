@@ -1,6 +1,6 @@
 ---
 title: "Table.ToRecords | Microsoft Docs"
-ms.date: 7/26/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -28,7 +28,16 @@ Converts a table, <code>table</code>, to a list of records.
 Convert the table to a list of records.
 
 ```powerquery-m
-Table.ToRecords(Table.FromRows({{1, "Bob", "123-4567"} , {2, "Jim", "987-6543"}, {3, "Paul", "543-7890"} },{"CustomerID", "Name", "Phone"}))
+Table.ToRecords(
+    Table.FromRows(
+        {
+            {1, "Bob", "123-4567"},
+            {2, "Jim", "987-6543"},
+            {3, "Paul", "543-7890"}
+        },
+        {"CustomerID", "Name", "Phone"}
+    )
+)
 ```
 
 <table> <tr><td>[Record]</td></tr> <tr><td>[Record]</td></tr> <tr><td>[Record]</td></tr> </table>

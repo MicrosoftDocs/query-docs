@@ -1,6 +1,6 @@
 ---
 title: "Text.PositionOfAny | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -33,7 +33,7 @@ Text.PositionOfAny("Hello, World!", {"W"})
 Find the position of "W" or "H" in text "Hello, World!".
 
 ```powerquery-m
-Text.PositionOfAny("Hello, World!", {"H","W"})
+Text.PositionOfAny("Hello, World!", {"H", "W"})
 ```
 
 `0`

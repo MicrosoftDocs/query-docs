@@ -1,6 +1,6 @@
 ---
 title: "Text.Trim | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 4/22/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,7 @@ Returns the result of removing all leading and trailing whitespace from text val
 Remove leading and trailing whitespace from " a b c d ".
 
 ```powerquery-m
-Text.Trim(" a b c d ")
+Text.Trim("     a b c d    ")
 ```
 
 `"a b c d"`

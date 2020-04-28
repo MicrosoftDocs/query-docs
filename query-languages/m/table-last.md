@@ -1,6 +1,6 @@
 ---
 title: "Table.Last | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,13 @@ Returns the last row of the `table` or an optional default value, `default`, if 
 Find the last row of the table.
 
 ```powerquery-m
-Table.Last(Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"], [CustomerID = 2, Name = "Jim", Phone = "987-6543"], [CustomerID = 3, Name = "Paul", Phone = "543-7890"]}))
+Table.Last(
+    Table.FromRecords({
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"]
+    })
+)
 ```
 
 <table> <tr> <th>CustomerID</th> <td>3</td> </tr> <tr> <th>Name</th> <td>Paul</td> </tr> <tr> <th>Phone</th> <td>543-7890</td> </tr> </table>

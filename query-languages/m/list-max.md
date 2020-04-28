@@ -1,6 +1,6 @@
 ---
 title: "List.Max | Microsoft Docs"
-ms.date: 7/31/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,7 @@ Returns the maximum item in the list `list`, or the optional default value `defa
 Find the max in the list {1, 4, 7, 3, -2, 5}.
 
 ```powerquery-m
-List.Max({1, 4, 7, 3, -2, 5},1)
+List.Max({1, 4, 7, 3, -2, 5}, 1)
 ```
 
 `7`

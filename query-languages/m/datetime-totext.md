@@ -1,6 +1,6 @@
 ---
 title: "DateTime.ToText | Microsoft Docs"
-ms.date: 7/30/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,7 +18,7 @@ DateTime.ToText(<b>dateTime</b> as nullable datetime, optional <b>format</b> as 
 </pre>
 
 ## About
-Returns a textual representation of `dateTime`, the datetime value, `dateTime`. This function takes in an optional format parameter `format`. For a complete list of supported formats, please refer to the Library specification document.
+Returns a textual representation of `dateTime`, the datetime value, `dateTime`. This function takes in an optional format parameter `format`. For a complete list of supported formats, refer to the Library specification document. An optional `culture` may also be provided (for example, "en-US").
 
 ## Example 1
 Get a textual representation of #datetime(2011, 12, 31, 11, 56, 2).

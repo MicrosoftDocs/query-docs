@@ -1,6 +1,6 @@
 ---
 title: "Cdm.Contents | Microsoft Docs"
-ms.date: 3/18/2020
+ms.date: 03/18/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell

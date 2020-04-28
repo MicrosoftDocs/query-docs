@@ -1,6 +1,6 @@
 ---
 title: "Table.FromList | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/23/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -33,7 +33,14 @@ Table.FromList({"a", "b", "c", "d"}, null, {"Letters"})
 Create a table from the list using the Record.FieldValues splitter with the resulting table having "CustomerID" and "Name" as column names.
 
 ```powerquery-m
-Table.FromList({[CustomerID=1,Name="Bob"],[CustomerID=2,Name="Jim"]} , Record.FieldValues, {"CustomerID", "Name"})
+Table.FromList(
+    {
+        [CustomerID = 1, Name = "Bob"],
+        [CustomerID = 2, Name = "Jim"]
+    },
+    Record.FieldValues,
+    {"CustomerID", "Name"}
+)
 ```
 
 <table> <tr> <th>CustomerID</th> <th>Name</th> </tr> <tr> <td>1</td> <td>Bob</td> </tr> <tr> <td>2</td> <td>Jim</td> </tr> </table>

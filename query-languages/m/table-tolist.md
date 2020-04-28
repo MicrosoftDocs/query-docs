@@ -1,6 +1,6 @@
 ---
 title: "Table.ToList | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/23/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,14 @@ Converts a table into a list by applying the specified combining function to eac
 Combine the text of each row with a comma.
 
 ```powerquery-m
-Table.ToList(Table.FromRows({{Number.ToText(1),"Bob", "123-4567" }, {Number.ToText(2), "Jim", "987-6543" }, {Number.ToText(3), "Paul", "543-7890" }}), Combiner.CombineTextByDelimiter(","))
+Table.ToList(
+    Table.FromRows({
+        {Number.ToText(1), "Bob", "123-4567"},
+        {Number.ToText(2), "Jim", "987-6543"},
+        {Number.ToText(3), "Paul", "543-7890"}
+    }),
+    Combiner.CombineTextByDelimiter(",")
+)
 ```
 
 <table> <tr><td>1,Bob,123-4567</td></tr> <tr><td>2,Jim,987-6543</td></tr> <tr><td>3,Paul,543-7890</td></tr> </table>

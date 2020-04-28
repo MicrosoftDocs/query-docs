@@ -1,6 +1,6 @@
 ---
 title: "DateTime.FromText | Microsoft Docs"
-ms.date: 7/30/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,7 +18,7 @@ DateTime.FromText(<b>text</b> as nullable text, optional <b>culture</b> as nulla
 </pre>
   
 ## About  
-Creates a `datetime` value from a textual representation, `text`, following ISO 8601 format standard. <ul> <li> <code>DateTime.FromText("2010-12-31T01:30:00") </code> // yyyy-MM-ddThh:mm:ss </li> </ul>
+Creates a `datetime` value from a textual representation, `text`, following ISO 8601 format standard. An optional `culture` may also be provided (for example, "en-US"). <ul> <li> <code>DateTime.FromText("2010-12-31T01:30:00") </code> // yyyy-MM-ddThh:mm:ss </li> </ul>
 
 ## Example 1
 Convert `"2010-12-31T01:30:25"` into a datetime value.

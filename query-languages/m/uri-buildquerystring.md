@@ -1,6 +1,6 @@
 ---
 title: "Uri.BuildQueryString | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,7 @@ Assemble the record `query` into a URI query string, escaping characters as nece
 Encode a query string which contains some special characters.
 
 ```powerquery-m
-Uri.BuildQueryString([a="1", b="+$"])
+Uri.BuildQueryString([a = "1", b = "+$"])
 ```
 
 `"a=1&b=%2B%24"`

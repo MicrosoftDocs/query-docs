@@ -1,6 +1,6 @@
 ---
 title: "Type.OpenRecord | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,7 @@ Returns an opened version of the given `record` `type` (or the same type, if it 
 Create an opened version of `type [ A = number]`.
 
 ```powerquery-m
-Type.OpenRecord(type [ A = number])
+Type.OpenRecord(type [A = number])
 ```
 
-`type [ A = number, ... ]`
+`type [A = number, ...]`

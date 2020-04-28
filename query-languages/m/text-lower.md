@@ -1,6 +1,6 @@
 ---
 title: "Text.Lower | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,7 +18,7 @@ Text.Lower(<b>text</b> as nullable text, optional <b>culture</b> as nullable tex
 </pre>
   
 ## About  
-Returns the result of converting all characters in `text` to lowercase.
+Returns the result of converting all characters in `text` to lowercase. An optional `culture` may also be provided (for example, "en-US").
 
 ## Example 1
 Get the lowercase version of "AbCd".

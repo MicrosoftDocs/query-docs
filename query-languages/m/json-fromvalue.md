@@ -1,6 +1,6 @@
 ---
 title: "Json.FromValue | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,7 @@ Json.FromValue(<b>value</b> as any, optional <b>encoding</b> as nullable number)
 Convert a complex value to JSON.
 
 ```powerquery-m
-Text.FromBinary(Json.FromValue([A={1, true, "3"}, B=#date(2012, 3, 25)]))
+Text.FromBinary(Json.FromValue([A = {1, true, "3"}, B = #date(2012, 3, 25)]))
 ```
 
 `"{""A"":[1,true,""3""],""B"":""2012-03-25""}"`

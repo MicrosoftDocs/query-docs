@@ -1,6 +1,6 @@
 ---
 title: "Table.FillUp | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 4/20/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,14 @@ Returns a table from the `table` specified where the value of the next cell is p
 Return a table with the null values in column [Column2] filled with the value below them from the table.
 
 ```powerquery-m
-Table.FillUp(Table.FromRecords({[Column1 = 1, Column2 = 2], [Column1 = 3, Column2 = null], [Column1 = 5, Column2 = 3]}), {"Column2"})
+Table.FillUp(
+    Table.FromRecords({
+        [Column1 = 1, Column2 = 2],
+        [Column1 = 3, Column2 = null],
+        [Column1 = 5, Column2 = 3]
+    }),
+    {"Column2"}
+)
 ```
 
 <table> <tr> <th>Column1</th> <th>Column2</th> </tr> <tr> <td>1</td> <td>2</td> </tr> <tr> <td>3</td> <td>3</td> </tr> <tr> <td>5</td> <td>3</td> </tr> </table>
