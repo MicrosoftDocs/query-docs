@@ -1,7 +1,7 @@
 ---
 title: "DAX Queries | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 02/15/2019
+ms.date: 05/06/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -10,6 +10,8 @@ ms.author: owend
 # DAX queries
 
 With DAX queries, you can query and return data defined by a table expression. Reporting clients construct DAX queries whenever a field is placed on a report surface, or a whenever a filter or calculation is applied. DAX queries can also be created and run in [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) (SSMS) and open-source tools like [DAX Studio](https://daxstudio.org). DAX queries run in SSMS and DAX Studio return results as a table.
+
+Before learning about queries, it's important you have a solid understanding of DAX basics. If you haven't already, be sure to checkout [DAX overview](dax-overview.md).
 
 ## Syntax
 

@@ -1,7 +1,7 @@
 ---
 title: "DAX overview | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 03/05/2020
+ms.date: 05/06/2020
 ms.reviewer: owend
 ms.topic: overview
 ms.article: reference
@@ -10,10 +10,9 @@ ms.author: owend
 ---
 # DAX overview
 
-Data Analysis Expressions (DAX) is a formula expression language used in Analysis Services, Power BI Desktop, and Power Pivot in Excel. DAX formulas include functions, operators, and values to perform advanced calculations and queries on data in related tables and columns in tabular data models. 
+Data Analysis Expressions (DAX) is a formula expression language used in Analysis Services, Power BI Desktop, and Power Pivot in Excel. DAX formulas include functions, operators, and values to perform advanced calculations and queries on data in related tables and columns in tabular data models.
 
-This article provides only a basic introduction to the most important concepts in DAX. It describes DAX as it applies to all the products that use it. Some functionality may not apply to certain products or use cases. Refer to your product's documentation describing its particular implementation of DAX. 
-
+This article provides only a basic introduction to the most important concepts in DAX. It describes DAX as it applies to all the products that use it. Some functionality may not apply to certain products or use cases. Refer to your product's documentation describing its particular implementation of DAX.
 
 ## Calculations
 
@@ -37,9 +36,9 @@ When a user places the TotalSales measure in the Values window in a PivotTable, 
   
 Unlike calculated columns and row filters, the syntax for a measure includes the measure's name preceding the formula. In the example just provided, the name **Total Sales** appears preceding the formula. After you've created a measure, the name and its definition appear in the reporting client application Field List, and depending on perspectives and roles is available to all users of the model.  
 
-To learn more, see:   
-[Measures in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-measures)   
-[Measures in Analysis Services](https://docs.microsoft.com/sql/analysis-services/tabular-models/measures-ssas-tabular)   
+To learn more, see:  
+[Measures in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-measures)  
+[Measures in Analysis Services](https://docs.microsoft.com/sql/analysis-services/tabular-models/measures-ssas-tabular)  
 [Measures in Power Pivot](https://support.office.com/article/Measures-in-Power-Pivot-86484821-a324-4da3-803b-82fd2e5033f4)
   
 ### Calculated columns  
@@ -54,12 +53,12 @@ To learn more, see:
 
 A value for each row in the table is calculated by taking values from the Calendar Year column (in the same Date table), adding a space and the capital letter Q, and then adding the values from the Calendar Quarter column (in the same Date table). The result for each row in the calculated column is calculated immediately and appears, for example, as **2017 Q1**. Column values are only recalculated if the table or any related table  is processed (refresh) or the model is unloaded from memory and then reloaded, like when closing and reopening a Power BI Desktop file.  
   
- To learn more, see:   
-[Calculated columns in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-calculated-columns)   
-[Calculated columns in Analysis Services](https://docs.microsoft.com/sql/analysis-services/tabular-models/ssas-calculated-columns)   
+ To learn more, see:  
+[Calculated columns in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-calculated-columns)  
+[Calculated columns in Analysis Services](https://docs.microsoft.com/sql/analysis-services/tabular-models/ssas-calculated-columns)  
 [Calculated Columns in Power Pivot](https://support.office.com/article/calculated-columns-in-power-pivot-a0eb7167-33fc-4ade-a23f-fb9217c193af).  
   
-### Calculated tables 
+### Calculated tables
   
 A calculated table is a computed object, based on either a DAX query or formula expression, derived from all or part of other tables in the same model. Instead of querying and loading values into your new table's columns from a data source, a DAX formula defines the table’s values. 
 
@@ -67,8 +66,8 @@ Calculated tables can be helpful in a role-playing dimension. An example is the 
 
 Calculated tables support relationships with other tables. The columns in your calculated table have data types, formatting, and can belong to a data category. Calculated tables can be named, and surfaced or hidden just like any other table. Calculated tables are re-calculated if any of the tables it pulls data from are refreshed or updated.
 
-To learn more, see:     
-[Calculated tables in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-calculated-tables)   
+To learn more, see:  
+[Calculated tables in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-calculated-tables)  
 [Calculated tables in Analysis Services](https://docs.microsoft.com/sql/analysis-services/tabular-models/create-a-calculated-table-ssas-tabular).
 
 ### Row filters (Row-level security)
@@ -79,20 +78,19 @@ To learn more, see:
 =Customers[Country] = "USA"
 ```
 
-Members of the Sales role will only be able to view data for customers in the USA, and aggregates, such as SUM are returned only for customers in the USA. Row filters are not available in Power Pivot in Excel. 
+Members of the Sales role will only be able to view data for customers in the USA, and aggregates, such as SUM are returned only for customers in the USA. Row filters are not available in Power Pivot in Excel.
   
  When defining a row filter by using DAX formula, you are creating an allowed row set. This does not deny access to other rows; rather, they are simply not returned as part of the allowed row set. Other roles can allow access to the rows excluded by the DAX formula. If a user is a member of another role, and that role's row filters allow access to that particular row set, the user can view data for that row.  
   
  Row filters apply to the specified rows as well as related rows. When a table has multiple relationships, filters apply security for the relationship that is active. Row filters will be intersected with other row filters defined for related tables.  
 
-To learn more, see:   
-[Row-level security (RLS) with Power BI](https://docs.microsoft.com/power-bi/service-admin-rls)   
-[Row filters in Analysis Services](https://docs.microsoft.com/sql/analysis-services/tabular-models/roles-ssas-tabular)   
-
+To learn more, see:  
+[Row-level security (RLS) with Power BI](https://docs.microsoft.com/power-bi/service-admin-rls)  
+[Row filters in Analysis Services](https://docs.microsoft.com/sql/analysis-services/tabular-models/roles-ssas-tabular)  
 
 ## Queries
 
-DAX queries can be created and run in SQL Server Management Studio (SSMS) and open-source tools like DAX Studio (daxstudio.org). Unlike DAX calculation formulas, which can only be created in tabular data models, DAX queries can also be run against Analysis Services Multidimensional models. DAX queries are often easier to write and more efficient than Multidimensional Data Expressions (MDX) queries. 
+DAX queries can be created and run in SQL Server Management Studio (SSMS) and open-source tools like DAX Studio (daxstudio.org). Unlike DAX calculation formulas, which can only be created in tabular data models, DAX queries can also be run against Analysis Services Multidimensional models. DAX queries are often easier to write and more efficient than Multidimensional Data Expressions (MDX) queries.
 
 A DAX query is a statement, similar to a SELECT statement in T-SQL. The most basic type of DAX query is an *evaluate* statement. For example,
 
@@ -101,11 +99,12 @@ EVALUATE
  ( FILTER ( 'DimProduct', [SafetyStockLevel] < 200 ) )
 ORDER BY [EnglishProductName] ASC
 ```
+
 Returns in Results a table listing only those products with a SafetyStockLevel less than 200, in ascending order by EnglishProductName.
 
-You can create measures as part of the query. Measures exist only for the duration of the query. 
+You can create measures as part of the query. Measures exist only for the duration of the query.
 To learn more, see [DAX queries](dax-queries.md).
- 
+
 ## Formulas  
 
 DAX formulas are essential for creating calculations in calculated columns and measures, and securing your data by using row level filters. To create formulas for calculated columns and measures, you will use the formula bar along the top of the model designer window or the DAX Editor. To create formulas for row filters, you will use the Role Manager dialog box. Information in this section is meant to get you started with understanding the basics of DAX formulas.  
@@ -138,7 +137,7 @@ Whether the formula you create is simple or complex, you can use the following s
 6. Press ENTER to accept the formula.  
   
 > [!NOTE]  
->  In a calculated column, as soon as you enter the formula and the formula is validated, the column is populated with values. In a measure, pressing ENTER saves the measure definition with the table. If a formula is invalid, an error will be displayed.  
+>In a calculated column, as soon as you enter the formula and the formula is validated, the column is populated with values. In a measure, pressing ENTER saves the measure definition with the table. If a formula is invalid, an error will be displayed.  
   
  In this example, let's look at a formula in a measure named **Days in Current Quarter**:  
   
@@ -183,7 +182,7 @@ You can nest functions, meaning that you use the results from one function as an
   
 ## Functions  
   
-DAX includes functions you can use to perform calculations using dates and times, create conditional values, work with strings, perform lookups based on relationships, and the ability to iterate over a table to perform recursive calculations. If you are familiar with Excel formulas, many of these functions will appear very similar; however, DAX formulas are different in the following important ways:  
+A function is a named formula within an expression. Most functions have required and optional arguments, also known as parameters, as input. When the function is executed, a value is returned. DAX includes functions you can use to perform calculations using dates and times, create conditional values, work with strings, perform lookups based on relationships, and the ability to iterate over a table to perform recursive calculations. If you are familiar with Excel formulas, many of these functions will appear very similar; however, DAX formulas are different in the following important ways:  
   
 - A DAX function always references a complete column or a table. If you want to use only particular values from a table or column, you can add filters to the formula.  
   
@@ -212,7 +211,7 @@ Logical functions act upon an expression to return information about the values 
 ### Mathematical and trigonometric functions  
 
 The mathematical functions in DAX are very similar to the Excel mathematical and trigonometric functions. Some minor differences exist in the numeric data types used by DAX functions. For more information, see [Math and trig functions](math-and-trig-functions-dax.md).  
- 
+
 ### Other functions  
 
 These functions perform unique actions that cannot be defined by any of the categories most other functions belong to. For more information, see [Other functions](other-functions-dax.md).
@@ -248,13 +247,14 @@ VAR
     TotalQty = SUM ( Sales[Quantity] )
 
 Return
-    
+
     IF (
         TotalQty > 1000,
         TotalQty * 0.95,
         TotalQty * 1.25
         )
 ```
+
 In this example, TotalQty can then be passed as a named variable to other expressions. Variables can be of any scalar data type, including tables. Using variables in your DAX formulas can be incredibly powerful.
 
 ## Data types  
@@ -283,9 +283,9 @@ While data types are typically automatically set, it is important to understand 
   
 Formulas in tabular models can be evaluated in a different context, depending on other design elements:  
   
--   Filters applied in a PivotTable or report  
--   Filters defined within a formula  
--   Relationships specified by using special functions within a formula  
+- Filters applied in a PivotTable or report  
+- Filters defined within a formula  
+- Relationships specified by using special functions within a formula  
 
 There are different types of context: *row context*, *query context*, and *filter context*.  
   
@@ -390,7 +390,7 @@ When a formula is evaluated, the model designer first checks for general syntax,
   
 ### Table relationships  
 
-By creating relationships between tables, you gain the ability to look up data in another table and use related values to perform complex calculations. For example, you can use a calculated column to look up all the shipping records related to the current reseller, and then sum the shipping costs for each. In many cases, however, a relationship might not be necessary. You can use the [LOOKUPVALUE](lookupvalue-function-dax.md) function in a formula to return the value in *result_columnName* for the row that meets criteria specified in the *search_column* and *search_value* parameters.  
+By creating relationships between tables, you gain the ability to look up data in another table and use related values to perform complex calculations. For example, you can use a calculated column to look up all the shipping records related to the current reseller, and then sum the shipping costs for each. In many cases, however, a relationship might not be necessary. You can use the [LOOKUPVALUE](lookupvalue-function-dax.md) function in a formula to return the value in *result_columnName* for the row that meets criteria specified in the *search_column* and *search_value* arguments.  
   
 Many DAX functions require that a relationship exist between the tables, or among multiple tables, in order to locate the columns that you have referenced and return results that make sense. Other functions will attempt to identify the relationship; however, for best results you should always create a relationship where possible. 
 Tabular data models support multiple relationships among tables. To avoid confusion or incorrect results, only one relationship at a time is designated as the active relationship, but you can change the active relationship as necessary to traverse different connections in the data in calculations. [USERELATIONSHIP](userelationship-function-dax.md) function can be used to specify one or more relationships to be used in a specific calculation.  
@@ -409,43 +409,45 @@ It's important to observe these formula design rules when using relationships:
   
 *Recalculation* is the process of updating the results of formulas to reflect any changes to the formulas themselves and to reflect changes in the underlying data. Recalculation can affect performance in the following ways:  
   
--   The values in a calculated column are computed and stored in the model. To update the values in the calculated column, you must process the model using one of three processing commands – Process Full, Process Data, or Process Recalc. The result of the formula must always be recalculated for the entire column, whenever you change the formula.  
+- The values in a calculated column are computed and stored in the model. To update the values in the calculated column, you must process the model using one of three processing commands – Process Full, Process Data, or Process Recalc. The result of the formula must always be recalculated for the entire column, whenever you change the formula.  
   
--   The values calculated by measures are dynamically evaluated whenever a user adds the measure to a pivot table or open a report; as the user modifies the context, values returned by the measure change. The results of the measure always reflect the latest in the in-memory cache.  
+- The values calculated by measures are dynamically evaluated whenever a user adds the measure to a pivot table or open a report; as the user modifies the context, values returned by the measure change. The results of the measure always reflect the latest in the in-memory cache.  
   
 Processing and recalculation have no effect on row filter formulas unless the result of a recalculation returns a different value, thus making the row queryable or not queryable by role members.  
-  
-  
+
 ## Troubleshooting
- 
+
 If you get an error when defining a formula, the formula might contain either a *syntactic error*, *semantic error*, or *calculation error*.  
   
 Syntactic errors are the easiest to resolve. They typically involve a missing parenthesis or comma. .  
   
 The other type of error occurs when the syntax is correct, but the value or a column referenced does not make sense in the context of the formula. Such semantic and calculation errors might be caused by any of the following problems:  
   
--   The formula refers to a non-existing column, table, or function.  
--   The formula appears to be correct, but when the data engine fetches the data, it finds a type mismatch and raises an error.  
--   The formula passes an incorrect number or type of parameters to a function.  
--   The formula refers to a different column that has an error, and therefore its values are invalid.  
--   The formula refers to a column that has not been processed, meaning it has metadata but no actual data to use for calculations.  
+- The formula refers to a non-existing column, table, or function.  
+- The formula appears to be correct, but when the data engine fetches the data, it finds a type mismatch and raises an error.  
+- The formula passes an incorrect number or type of arguments to a function.  
+- The formula refers to a different column that has an error, and therefore its values are invalid.  
+- The formula refers to a column that has not been processed, meaning it has metadata but no actual data to use for calculations.  
   
 In the first four cases, DAX flags the entire column that contains the invalid formula. In the last case, DAX grays out the column to indicate that the column is in an unprocessed state.  
 
-## Apps and tools 
+## Apps and tools
 
 ### Power BI Desktop
+
 ![Power BI Desktop](media/dax-overview-pbid.png)
 
 [Power BI Desktop](https://powerbi.microsoft.com/desktop/) is a free data modeling and reporting application. The model designer includes a DAX editor for creating DAX calculation formulas.
 
 ### Power Pivot in Excel
+
 ![Power Pivot in Excel](media/dax-overview-excel.png)
 
 The [Power Pivot in Excel](https://support.office.com/article/power-pivot-powerful-data-analysis-and-data-modeling-in-excel-a9c2c6e2-cc49-4976-a7d7-40896795d045) models designer includes a DAX editor for creating DAX calculation formulas.
 
 
 ### Visual Studio
+
 ![Visual Studio](media/dax-overview-vs.png)
 
 [SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) (SSDT) is an essential tool for creating and deploying Analysis Services data models. The model designer includes a DAX editor for creating DAX calculation formulas.  
@@ -458,9 +460,10 @@ The [Power Pivot in Excel](https://support.office.com/article/power-pivot-powerf
 [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) (SSMS) is an essential tool for working with Analysis Services. SSMS includes a DAX query editor for querying both tabular and multidimensional models.
 
 ### DAX Studio
+
 ![DAX Studio](media/dax-overview-studio.png)
 
-[DAX Studio](http://daxstudio.org/) is an open-source client tool for creating and running DAX queries against Analysis Services, Power BI Desktop, and Power Pivot in Excel models. 
+[DAX Studio](http://daxstudio.org/) is an open-source client tool for creating and running DAX queries against Analysis Services, Power BI Desktop, and Power Pivot in Excel models.
 
 ## Learning resources
 
@@ -473,7 +476,6 @@ When learning DAX, it's best to use the application you'll be using to create yo
 [QuickStart: Learn DAX Basics in 30 Minutes (Power Pivot in Excel)](https://support.office.com/article/QuickStart-Learn-DAX-Basics-in-30-Minutes-51744643-C2A5-436A-BDF6-C895762BEC1A)
 
 [DAX Resource Center wiki](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
-
 
 The [Definitive Guide to DAX](https://www.sqlbi.com/books/the-definitive-guide-to-dax/) by Alberto Ferrari and Marco Russo (Microsoft Press). This extensive guide provides basics to innovative high-performance techniques for beginning data modelers and BI professionals.
 
