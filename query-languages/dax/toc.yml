@@ -437,6 +437,10 @@
               href: beta-dist-function-dax.md
             - name: BETA.INV
               href: beta-inv-function-dax.md
+            - name: CHISQ.DIST
+              href: chisq-dist-function-dax.md
+            - name: CHISQ.DIST.RT
+              href: chisq-dist-rt-function-dax.md
             - name: CHISQ.INV
               href: chisq-inv-function-dax.md
             - name: CHISQ.INV.RT
@@ -445,6 +449,10 @@
               href: confidence-norm-function-dax.md
             - name: CONFIDENCE.T
               href: confidence-t-function-dax.md
+            - name: COT
+              href: cot-function-dax.md
+            - name: COTH
+              href: coth-function-dax.md
             - name: COUNT
               href: count-function-dax.md
             - name: COUNTA
