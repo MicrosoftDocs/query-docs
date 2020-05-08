@@ -45,7 +45,7 @@ If deg_freedom < 1 or deg_freedom > 10^10, an error is returned.
 The following DAX query,
   
 ```dax
-EVALUATE { CHISQ.DIST.RT(2, 5) }}
+EVALUATE { CHISQ.DIST.RT(2, 5) }
 ```
 
 Returns
