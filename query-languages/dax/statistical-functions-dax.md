@@ -23,15 +23,19 @@ Data Analysis Expressions (DAX) provides many functions for creating aggregation
 |[AVERAGEX](averagex-function-dax.md)    | Calculates the average (arithmetic mean) of a set of expressions evaluated over a table.          |
 |[BETA.DIST](beta-dist-function-dax.md)     |  Returns the beta distribution.        |
 |[BETA.INV](beta-inv-function-dax.md)     |  Returns the inverse of the beta cumulative probability density function (BETA.DIST).         |
+|[CHISQ.DIST](chisq-dist-function-dax.md)     |  Returns the chi-squared distribution.         |
+|[CHISQ.DIST.RT](chisq-dist-rt-function-dax.md)     |  Returns the right-tailed probability of the chi-squared distribution.        |
 |[CHISQ.INV](chisq-inv-function-dax.md)     |  Returns the inverse of the left-tailed probability of the chi-squared distribution.         |
 |[CHISQ.INV.RT](chisq-inv-rt-function-dax.md)      |  Returns the inverse of the right-tailed probability of the chi-squared distribution.       |
 |[CONFIDENCE.NORM](confidence-norm-function-dax.md)      | The confidence interval is a range of values.         |
 |[CONFIDENCE.T](confidence-t-function-dax.md)      |  Returns the confidence interval for a population mean, using a Student's t distribution.       |
-|[COUNT](count-function-dax.md)      |  The COUNT function counts the number of cells in a column that contain numbers.       |
-|[COUNTA](counta-function-dax.md)     |  The COUNTA function counts the number of cells in a column that are not empty.       |
-|[COUNTAX](countax-function-dax.md)     |  The COUNTAX function counts nonblank results when evaluating the result of an expression over a table.        |
+|[COT](cot-function-dax.md)     |    Returns the cotangent of an angle specified in radians.       |
+|[COTH](coth-function-dax.md)     |    Returns the hyperbolic cotangent of a hyperbolic angle.      |
+|[COUNT](count-function-dax.md)      |  Counts the number of cells in a column that contain numbers.       |
+|[COUNTA](counta-function-dax.md)     |  Counts the number of cells in a column that are not empty.       |
+|[COUNTAX](countax-function-dax.md)     |  Counts nonblank results when evaluating the result of an expression over a table.        |
 |[COUNTBLANK](countblank-function-dax.md)     |  Counts the number of blank cells in a column.        |
-|[COUNTROWS](countrows-function-dax.md)      |  The COUNTROWS function counts the number of rows in the specified table, or in a table defined by an expression.        |
+|[COUNTROWS](countrows-function-dax.md)      |  Counts the number of rows in the specified table, or in a table defined by an expression.        |
 |[COUNTX](countx-function-dax.md)       |  Counts the number of rows that contain a number or an expression that evaluates to a number, when evaluating an expression over a table.         |
 |[CROSSJOIN ](crossjoin-function-dax.md)      |  Returns a table that contains the Cartesian product of all rows from all tables in the arguments.      |
 |[DATATABLE](datatable-function.md)      |  Provides a mechanism for declaring an inline set of data values.       |
