@@ -32,13 +32,11 @@ The hyperbolic cotangent of the given angle.
 
 The hyperbolic cotangent is an analog of the ordinary (circular) cotangent.
 
-The absolute value of number must be less than 2^27.
+The absolute value of number must be less than 2^27 and cannot be 0.
 
-If number is outside its constraints, COTH returns the #NUM! error value.
+If number is outside its constraints, an error is returned
 
-If number is a non-numeric value, COTH returns the #VALUE! error value.
-
-COTH(0) returns the #DIV/0! error value.
+If number is a non-numeric value, an error is returned.
 
 The following equation is used:  
 :::image type="content" source="media/dax-coth-formula.png" alt-text="COTH formula":::
