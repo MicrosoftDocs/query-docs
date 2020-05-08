@@ -22,7 +22,7 @@ COT (<number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|The angle in radians for which you want the cotangent|  
+|number|The angle in radians for which you want the cotangent.|  
   
 ## Return value
 
@@ -30,13 +30,11 @@ The cotangent of the given angle.
   
 ## Remarks
 
-The absolute value of number must be less than 2^27.
+The absolute value of number must be less than 2^27 and cannot be 0.
 
-If number is outside its constraints, COT returns the #NUM! error value.
+If number is outside its constraints, an error is returned.
 
-If number is a non-numeric value, COT returns the #VALUE! error value.
-
-COT(0) returns the #DIV/0! error value.
+If number is a non-numeric value, an error is returned.
 
 ## Example  
   

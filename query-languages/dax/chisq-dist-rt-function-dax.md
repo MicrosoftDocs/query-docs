@@ -32,20 +32,20 @@ The right-tailed probability of the chi-squared distribution.
   
 ## Remarks
 
-If x or deg_freedom is nonnumeric, CHISQ.DIST.RT returns the #VALUE! error value.
+If x or deg_freedom is nonnumeric, an error is returned.
 
 If deg_freedom is not an integer, it is rounded.
 
-If x < 0, CHISQ.DIST.RT returns the #NUM! error value.
+If x < 0, an error is returned.
 
-If deg_freedom < 1 or deg_freedom > 10^10, CHISQ.DIST.RT returns the #NUM! error value.
+If deg_freedom < 1 or deg_freedom > 10^10, an error is returned.
 
 ## Example  
   
 The following DAX query,
   
 ```dax
-EVALUATE { CHISQ.DIST.RT(2, 5) }}
+EVALUATE { CHISQ.DIST.RT(2, 5) }
 ```
 
 Returns
