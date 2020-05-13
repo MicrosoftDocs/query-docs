@@ -1,6 +1,6 @@
 ---
 title: "Number.FromText | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 5/13/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,7 +18,7 @@ Number.FromText(<b>text</b> as nullable text, optional <b>culture</b> as nullabl
 </pre>
   
 ## About  
-Returns a `number` value from the given text value, `text`. <ul> <li><code>text</code>: The textual representation of a number value. The representation must be in a common number format - "15", "3,423.10", "5.0E-10".</li> <li><code>culture</code>: An optional culture that controls how `text` is interpreted (for example, "en-US").</li> </ul>
+Returns a `number` value from the given text value, `text`. <ul> <li><code>text</code>: The textual representation of a number value. The representation must be in a common number format, such as "15", "3,423.10", or "5.0E-10".</li> <li><code>culture</code>: An optional culture that controls how `text` is interpreted (for example, "en-US").</li> </ul>
 
 ## Example 1
 Get the number value of `"4"`.

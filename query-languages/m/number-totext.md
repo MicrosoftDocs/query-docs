@@ -1,6 +1,6 @@
 ---
 title: "Number.ToText | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 5/13/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,7 +18,7 @@ Number.ToText(<b>number</b> as nullable number, optional <b>format</b> as nullab
 </pre>
   
 ## About  
-Formats the numeric value `number` to a text value according to the format specified by `format`. The format is a single character code optionally followed by a number precision specifier. The following character codes may be used for `format`. <ul> <li>"D" or "d": (Decimal) Formats the result as integer digits. The precision specifier controls the number of digits in the output. </li> <li>"E" or "e": (Exponential [scientific]) Exponential notation. The precision specifier controls the maximum number of decimal digits (default is 6). </li> <li>"F" or "f": (Fixed-point) Integral and decimal digits.</li> <li>"G" or "g": (General) Most compact form of either fixed-point or scientific. </li> <li>"N" or "n": (Number) Integral and decimal digits with group separators and a decimal separator. </li> <li>"P" or "p": (Percent) Number multiplied by 100 and displayed with a percent symbol. </li> <li>"R" or "r": (Round-trip) A text value that can round-trip an identical number. The precision specifier is ignored. </li> <li>"X" or "x": (Hexadecimal) A hexadecimal text value. </li> </ul> An optional `culture` may also be provided (for example, "en-US").
+Formats the numeric value `number` to a text value according to the format specified by `format`. The format is a single character code optionally followed by a number precision specifier. The following character codes may be used for `format`. <ul> <li>"D" or "d": (Decimal) Formats the result as integer digits. The precision specifier controls the number of digits in the output. </li> <li>"E" or "e": (Exponential/scientific) Exponential notation. The precision specifier controls the maximum number of decimal digits (default is 6). </li> <li>"F" or "f": (Fixed-point) Integral and decimal digits.</li> <li>"G" or "g": (General) Most compact form of either fixed-point or scientific. </li> <li>"N" or "n": (Number) Integral and decimal digits with group separators and a decimal separator. </li> <li>"P" or "p": (Percent) Number multiplied by 100 and displayed with a percent symbol. </li> <li>"R" or "r": (Round-trip) A text value that can round-trip an identical number. The precision specifier is ignored. </li> <li>"X" or "x": (Hexadecimal) A hexadecimal text value. </li> </ul> An optional `culture` may also be provided (for example, "en-US").
 
 ## Example 1
 Format a number as text without format specified.

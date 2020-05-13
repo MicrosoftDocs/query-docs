@@ -1,6 +1,6 @@
 ---
 title: "Date.ToText | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 5/13/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,7 +18,7 @@ Date.ToText(<b>date</b> as nullable date, optional <b>format</b> as nullable tex
 </pre>
 
 ## About
-Returns a textual representation of `date`, the Date value, `date`. This function takes in an optional format parameter `format`. For a complete list of supported formats, refer to the Library specification document. An optional `culture` may also be provided (for example, "en-US").
+Returns a textual representation of `date`. An optional `format` may be provided to customize the formatting of the text. An optional `culture` may also be provided (for example, "en-US").
 
 ## Example 1
 Get a textual representation of #date(2010, 12, 31).

@@ -1,6 +1,6 @@
 ---
 title: "Table.ExpandListColumn | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 5/13/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -25,7 +25,7 @@ Split the list column [Name] in the table.
 
 ```powerquery-m
 Table.ExpandListColumn(
-    Table.FromRecords({[Name= {"Bob", "Jim", "Paul"}, Discount = .15]}),
+    Table.FromRecords({[Name = {"Bob", "Jim", "Paul"}, Discount = .15]}),
     "Name"
 )
 ```

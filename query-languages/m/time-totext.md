@@ -1,6 +1,6 @@
 ---
 title: "Time.ToText | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 5/13/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,7 +18,7 @@ Time.ToText(<b>time</b> as nullable time, optional <b>format</b> as nullable tex
 </pre>
 
 ## About
-Returns a textual representation of `time`, the Time value, `time`. This function takes an optional format parameter `format`. For a complete list of supported formats, please refer to the Library specification document. An optional `culture` may also be provided (for example, "en-US").
+Returns a textual representation of `time`. An optional `format` may be provided to customize the formatting of the text. An optional `culture` may also be provided (for example, "en-US").
 
 ## Example 1
 Get a textual representation of #time(11, 56, 2).

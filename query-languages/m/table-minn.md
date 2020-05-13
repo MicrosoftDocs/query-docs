@@ -1,6 +1,6 @@
 ---
 title: "Table.MinN | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 5/13/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,9 +26,9 @@ Find the row with the smallest value in column [a] with the condition [a] < 3, i
 ```powerquery-m
 Table.MinN( 
     Table.FromRecords({ 
-        [a = 2, b = 4], 
-        [a = 0, b = 0], 
-        [a = 6, b = 4] 
+        [a = 2, b = 4],
+        [a = 0, b = 0],
+        [a = 6, b = 4]
     }), 
     "a", 
     each [a] < 3 

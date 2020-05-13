@@ -1,6 +1,6 @@
 ---
 title: "DateTimeZone.ToText | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 5/13/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,7 +18,7 @@ DateTimeZone.ToText(<b>dateTimeZone</b> as nullable datetimezone, optional <b>fo
 </pre>
   
 ## About  
-Returns a textual representation of `dateTimeZone`, the datetimezone value, `dateTimeZone`. This function takes in an optional format parameter `format`. For a complete list of supported formats, refer to the Library specification document. An optional `culture` may also be provided (for example, "en-US").
+Returns a textual representation of `dateTimeZone`. An optional `format` may be provided to customize the formatting of the text. An optional `culture` may also be provided (for example, "en-US").
 
 ## Example 1
 Get a textual representation of #datetimezone(2011, 12, 31, 11, 56, 2, 8, 0).
