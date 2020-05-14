@@ -1,6 +1,6 @@
 ---
 title: "Table.FillUp | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 5/13/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
