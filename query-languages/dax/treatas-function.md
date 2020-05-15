@@ -33,7 +33,7 @@ The number of columns specified must match the number of columns in the table ex
 
 If a value returned in the table expression does not exist in the column, it is ignored. For example, TREATAS({"Red", "Green", "Yellow"}, DimProduct[Color]) sets a filter on column DimProduct[Color] with three values "Red", "Green", and "Yellow". If "Yellow" does not exist in  DimProduct[Color], the effective filter values would are "Red" and "Green".
 
-Best for use when a relationship does not exist between the tables.
+Best for use when a relationship does not exist between the tables. If you have multiple relationships between the tables involved, consider using [USERELATIONSHIP](userelationship-function-dax.md) instead.
 
 
 ## Examples  
@@ -52,6 +52,7 @@ TREATAS(VALUES(DimProduct1[ProductCategory]), DimProduct2[ProductCategory])
  
 [FILTER function](filter-function-dax.md)
 
+[USERELATIONSHIP](userelationship-function-dax.md) 
   
 
   
