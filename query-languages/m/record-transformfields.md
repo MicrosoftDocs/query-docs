@@ -1,6 +1,6 @@
 ---
 title: "Record.TransformFields | Microsoft Docs"
-ms.date: 4/23/2020
+ms.date: 5/13/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -37,7 +37,7 @@ Convert "OrderID" and "Price" fields to numbers.
 
 ```powerquery-m
 Record.TransformFields(
-    [OrderID ="1", CustomerID = 1, Item = "Fishing rod", Price = "100.0"], 
+    [OrderID = "1", CustomerID = 1, Item = "Fishing rod", Price = "100.0"], 
     {{"OrderID", Number.FromText}, {"Price", Number.FromText}}
 )
 ```

@@ -1,6 +1,6 @@
 ---
 title: "Table.ReplaceMatchingRows | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 5/13/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,7 +26,7 @@ Replace the rows [a = 1, b = 2] and [a = 2, b = 3] with [a = -1, b = -2],[a = -2
 ```powerquery-m
 Table.ReplaceMatchingRows(
     Table.FromRecords({
-        [a = 1, b =2],
+        [a = 1, b = 2],
         [a = 2, b = 3],
         [a = 3, b = 4],
         [a = 1, b = 2]
