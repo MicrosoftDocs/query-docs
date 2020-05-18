@@ -409,9 +409,10 @@ generalized-identifier-segment:<br/>
 
 A _keyword_ is an identifier-like sequence of characters that is reserved, and cannot be used as an identifier except when using the [identifier-quoting mechanism](#identifiers) or where a [generalized identifier is allowed](#generalized-identifiers).
 
-<em>keyword:</em>  one of `and as each else error false if in is let meta not otherwise or`<br/>
+_keyword:_ one of<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `and as each else error false if in is let meta not null or otherwise`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;` section shared then true try type #binary #date #datetime`<br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`#datetimezone #duration #infinity #nan #sections #shared #table #time`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;` #datetimezone #duration #infinity #nan #sections #shared #table #time`
 
 ### Operators and punctuators
 
