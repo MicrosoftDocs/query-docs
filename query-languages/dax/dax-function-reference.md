@@ -1,7 +1,7 @@
 ---
 title: "DAX function reference | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 04/19/2019
+ms.date: 05/18/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # DAX function reference
+
 This function reference provides detailed information including syntax, parameters, Return values, and examples for each of the over 200 functions used in Data Analysis Expression (DAX) formulas.  
 
 > [!IMPORTANT]
@@ -16,9 +17,9 @@ This function reference provides detailed information including syntax, paramete
 
 ## Examples
 
-Most reference articles contain examples showing formulas and results created in an Excel workbook with a Power Pivot in Excel data model. The data model contains data imported from the AdventureWorksDW sample database. The sample workbook is no longer available. 
+Most reference articles contain examples showing formulas and results created in an Excel workbook with a Power Pivot in Excel data model. The data model contains data imported from the AdventureWorksDW sample databases. The sample workbook is no longer available.
 
-This reference is not intended to serve as a tutorial or provide in-depth guidance on how to create formulas for data models containing data from a specific datasource.
+This reference is not intended to serve as a tutorial or provide in-depth guidance on how to create formulas for data models containing data from a specific data source.
 
 ## In this section  
 
@@ -44,8 +45,8 @@ This reference is not intended to serve as a tutorial or provide in-depth guidan
   
 [Text functions &#40;DAX&#41;](text-functions-dax.md) - With these functions, you can return part of a string, search for text within a string, or concatenate string values. Additional functions are for controlling the formats for dates, times, and numbers.  
   
-## See also  
+## See also
+
 [DAX Syntax Reference](dax-syntax-reference.md)  
 [DAX Operator Reference](dax-operator-reference.md)  
-[DAX Parameter-Naming Conventions](dax-parameter-naming-conventions.md)  
-  
+[DAX Parameter-Naming Conventions](dax-parameter-naming-conventions.md)
