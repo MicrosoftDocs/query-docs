@@ -1,7 +1,7 @@
 ---
 title: "Statistical functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 04/22/2019
+ms.date: 05/18/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -37,12 +37,12 @@ Data Analysis Expressions (DAX) provides many functions for creating aggregation
 |[COUNTBLANK](countblank-function-dax.md)     |  Counts the number of blank cells in a column.        |
 |[COUNTROWS](countrows-function-dax.md)      |  Counts the number of rows in the specified table, or in a table defined by an expression.        |
 |[COUNTX](countx-function-dax.md)       |  Counts the number of rows that contain a number or an expression that evaluates to a number, when evaluating an expression over a table.         |
-|[CROSSJOIN ](crossjoin-function-dax.md)      |  Returns a table that contains the Cartesian product of all rows from all tables in the arguments.      |
+|[CROSSJOIN](crossjoin-function-dax.md)      |  Returns a table that contains the Cartesian product of all rows from all tables in the arguments.      |
 |[DATATABLE](datatable-function.md)      |  Provides a mechanism for declaring an inline set of data values.       |
 |[DISTINCTCOUNT](distinctcount-function-dax.md)     |  Counts the number of distinct values in a column.         |
 |[DISTINCTCOUNTNOBLANK](distinctcountnoblank-function-dax.md)    |   Counts the number of distinct values in a column.      |
 |[EXPON.DIST](expon-dist-function-dax.md)      |  Returns the exponential distribution.        |
-|[GENERATE ](generate-function-dax.md)      |  Returns a table with the Cartesian product between each row in *table1* and the table that results from evaluating *table2* in the context of the current row from *table1*.       |
+|[GENERATE](generate-function-dax.md)      |  Returns a table with the Cartesian product between each row in *table1* and the table that results from evaluating *table2* in the context of the current row from *table1*.       |
 |[GENERATEALL](generateall-function-dax.md)     |  Returns a table with the Cartesian product between each row in *table1* and the table that results from evaluating *table2* in the context of the current row from *table1*.         |
 |[GEOMEAN](geomean-function-dax.md)     |  Returns the geometric mean of the numbers in a column.        |
 |[GEOMEANX](geomeanx-function-dax.md)      | Returns the geometric mean of an expression evaluated for each row in a table.        |
@@ -63,7 +63,7 @@ Data Analysis Expressions (DAX) provides many functions for creating aggregation
 |[PERCENTILEX.EXC](percentilex-exc-function-dax.md)     | Returns the percentile number of an expression evaluated for each row in a table.        |
 |[PERCENTILEX.INC](percentilex-inc-function-dax.md)    | Returns the percentile number of an expression evaluated for each row in a table.         |
 |[POISSON.DIST](poisson-dist-function-dax.md)      |  Returns the Poisson distribution.       |
-|[RANK.EQ ](rank-eq-function-dax.md)    | Returns the ranking of a number in a list of numbers.        |
+|[RANK.EQ](rank-eq-function-dax.md)    | Returns the ranking of a number in a list of numbers.        |
 |[RANKX](rankx-function-dax.md)      | Returns the ranking of a number in a list of numbers for each row in the *table* argument.          |
 |[ROW](row-function-dax.md)     |  Returns a table with a single row containing values that result from the expressions given to each column.         |
 |[SAMPLE](sample-function-dax.md)       |  Returns a sample of N rows from the specified table.        |
