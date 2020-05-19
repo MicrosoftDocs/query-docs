@@ -27,7 +27,7 @@ EVALUATE <table>
 
 ### EVALUATE (Required)
 
-At the most basic level, a DAX query is an **EVALUATE** statement containing a table expression. However, a query can contain multiple EVALUATE statements. 
+At the most basic level, a DAX query is an **EVALUATE** statement containing a table expression. However, a query can contain multiple EVALUATE statements.
 
 #### Syntax
   
@@ -72,7 +72,7 @@ EVALUATE <table>
 | ASC  | (default) Ascending sort order. |
 | DESC  | Descending sort order. |
 
-##### Example
+#### Example
 
 ```dax
 EVALUATE(
@@ -122,15 +122,13 @@ Returns all rows and columns from the Internet Sales table, ordered by Sales Ord
 
 ![DAX Evaluate order by statement](media/dax-queries/dax-evaluate-startat.png)
 
-
 Multiple **EVALUATE**/**ORDER BY**/**START AT** clauses can be specified in a single query.
-
 
 ### DEFINE (Optional)
 
 The optional **DEFINE** keyword defines entities that exist only for the duration of the query. Definitions are valid for all EVALUATE statements. Entities can be variables, measures, tables, and columns. Definitions can reference other definitions that appear before or after the current definition. Definitions typically precede the EVALUATE statement. 
 
-#### Syntax  
+#### Syntax
   
 ```dax
 [DEFINE {  MEASURE <tableName>[<name>] = <expression> } 
@@ -167,7 +165,6 @@ Returns the calculated total sales for years 2013 and 2014, and combined calcula
 
 ![DAX Evaluate with measure defnition](media/dax-queries/dax-evaluate-define.png)
 
-
 ## Parameters in DAX queries  
 
 A well-defined DAX query statement can be parameterized and then used over and over with just changes in the parameter values.  
@@ -176,17 +173,15 @@ The [Execute Method (XMLA)](https://docs.microsoft.com/bi-reference/xmla/xml-ele
   
 Reference XMLA parameters by prefixing the name of the parameter with an `@` character. Hence, any place in the syntax where a value is allowed it can be replaced with a parameter call. All XMLA parameters are typed as text.  
   
-> [!IMPORTANT]  
-> Parameters defined in the parameters section and not used in the **&lt;STATEMENT&gt;** element generate an error response in XMLA.  
-  
-> [!IMPORTANT]  
-> Parameters used and not defined in the **&lt;Parameters&gt;** element generate an error response in XMLA.  
+> [!IMPORTANT]
+> Parameters defined in the parameters section and not used in the **&lt;STATEMENT&gt;** element generate an error response in XMLA.
+
+> [!IMPORTANT]
+> Parameters used and not defined in the **&lt;Parameters&gt;** element generate an error response in XMLA.
   
 ## See also
 
-[FILTER](filter-function-dax.md)   
-[SUMMARIZECOLUMNS](summarizecolumns-function-dax.md)   
-[TREATAS](treatas-function.md)   
+[FILTER](filter-function-dax.md)  
+[SUMMARIZECOLUMNS](summarizecolumns-function-dax.md)  
+[TREATAS](treatas-function.md)  
 [VAR](var-dax.md)
-
-  
