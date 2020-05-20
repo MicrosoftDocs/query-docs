@@ -101,9 +101,10 @@ _literal:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number-literal<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;null-literal<br/>
-logical-literal:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`true`
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`false`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;verbatim-literal<br/>
+logical-literal:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`true`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`false`<br/>
 number-literal:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-number-literal<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hexadecimal-number-literal<br/>
@@ -139,7 +140,9 @@ single-text-character:_<br/>
 _double-quote-escape-sequence:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`""` (`U+0022`, `U+0022`)<br/>
 _null-literal:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`null`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`null`<br/>
+_verbatim-literal:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`#!"` _text-literal-characters<sub>opt</sub>_ `"`
 
 ### Identifiers
 
@@ -386,7 +389,8 @@ _field-list:<br/>
 field:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-name_  `=`  _expression<br/>
 field-name:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quoted-identifier_<br/>
 
 #### Item access expression
 
@@ -418,6 +422,7 @@ _optional-field-selector:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-name_  `] ?`<br/>
 _field-name:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quoted-identifier<br/>
 implicit-target-field-selection:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-selector<br/>
 projection:<br/>
@@ -520,7 +525,7 @@ _field-specification-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-specification_
   `,`  _field-specification-list<br/>
 field-specification:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional`_<sub>opt</sub> identifier field-type-specification<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional`_<sub>opt</sub> field-name field-type-specification<sub>opt</sub><br/>
 field-type-specification:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`=` _field-type<br/>
 field-type:<br/>
@@ -586,6 +591,7 @@ literal-field:<br/>
 list-literal:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{` _literal-item-list<sub>opt</sub>_ `}`<br/>
 _literal-item-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;any-literal<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;any-literal_ `,` _literal-item-list<br/>
 any-literal:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;record-literal<br/>
