@@ -39,7 +39,7 @@ parameter-type:<br/>
 function-return-type:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assertion<br/>
 assertion:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as`  _nullable-primitve-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as`  _nullable-primiitve-type<br/>
 optional-parameter-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter_  `,`  _optional-parameter-list<br/>

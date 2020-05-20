@@ -168,13 +168,13 @@ Any value that is a record conforms to the intrinsic type record, which does not
 
 _record-type:_<br/> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[` _open-record-marker_  `]`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`  _field-specification-list_  `]`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`  _field-specification-list<sub>opt</sub>_  `]`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`  _field-specification-list ,  open-record-marker_  `]`<br/>
 _field-specification-list:</em><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-specification<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-specification_  `,`  _field-specification-list<br/> 
 field-specification:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional`_<sub>opt</sub> identifier field-type-specification<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional`_<sub>opt</sub> field-name field-type-specification<sub>opt</sub><br/>
 field-type-specification:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`=` _field-type<br/>
 field-type:<br/>
@@ -233,7 +233,7 @@ parameter-specification:<br/>
 function-return-type:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assertion<br/>
 assertion:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as`  _nullable-primitve-type_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as`  _nullable-primitive-type_
 
 The result of evaluating a _function-type_ is a type value whose base type is `function`.
 
@@ -309,26 +309,31 @@ The following hold (for any <code>type <em>T</em></code>):
 
 The following are pairwise equivalent (for any <code>type <em>T</em></code>):
 
-<code>
-&nbsp;&nbsp;&nbsp;&nbsp;type nullable any<br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;any<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;Type.NonNullable(type any) type<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;anynonnull<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type nullable <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;none type null 
+
+&nbsp;&nbsp;&nbsp;&nbsp;`type nullable any`<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;`any`<br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;`Type.NonNullable(type any)`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;`type anynonnull`<br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;`type nullable none`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;`type null`<br/> 
  
-&nbsp;&nbsp;&nbsp;&nbsp;Type.NonNullable(type null)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;type none  type nullable<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;nullable <em>T</em> type nullable <em>T</em><br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;`Type.NonNullable(type null)`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;`type none`<br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>type nullable nullable <em>T</em></code><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>type nullable <em>T</em></code><br/> 
  
-&nbsp;&nbsp;&nbsp;&nbsp;Type.NonNullable(Type.NonNullable(type <em>T</em>))<br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;Type.NonNullable(type <em>T</em>) 
+&nbsp;&nbsp;&nbsp;&nbsp;<code>Type.NonNullable(Type.NonNullable(type <em>T</em>))</code><br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;<code>Type.NonNullable(type <em>T</em>)</code><br/> 
  
-&nbsp;&nbsp;&nbsp;&nbsp;Type.NonNullable(type nullable <em>T</em>)<br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;Type.NonNullable(type <em>T</em>)<br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;type nullable (Type.NonNullable(type<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<em>T</em>)) type nullable <em>T</em>
-</code>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>Type.NonNullable(type nullable <em>T</em>)</code><br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;<code>Type.NonNullable(type <em>T</em>)</code><br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>type nullable (Type.NonNullable(type <em>T</em>))</code><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>type nullable <em>T</em></code>
+
 
 ## Ascribed type of a value
 

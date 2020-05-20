@@ -97,9 +97,14 @@ _escape-escape:_<br/>
 ### Literals
 
 _literal:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logical-literal<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number-literal<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;null-literal<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;verbatim-literal<br/>
+logical-literal:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`true`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`false`<br/>
 number-literal:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-number-literal<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hexadecimal-number-literal<br/>
@@ -135,7 +140,9 @@ single-text-character:_<br/>
 _double-quote-escape-sequence:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`""` (`U+0022`, `U+0022`)<br/>
 _null-literal:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`null`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`null`<br/>
+_verbatim-literal:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`#!"` _text-literal-characters<sub>opt</sub>_ `"`
 
 ### Identifiers
 
@@ -195,7 +202,7 @@ _quoted-identifier:_<br/>
 Predefined identifiers and keywords cannot be redefined. A quoted identifier can be used to handle identifiers that would otherwise collide with predefined identifiers or keywords.
 
 _keyword:_  one of</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`and as each else error false if in is let meta not otherwise or`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`and as each else error false if in is let meta not null or otherwise`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`section shared then true try type #binary #date #datetime`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`#datetimezone #duration #infinity #nan #sections #shared #table #time`
 
@@ -382,7 +389,8 @@ _field-list:<br/>
 field:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-name_  `=`  _expression<br/>
 field-name:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quoted-identifier_<br/>
 
 #### Item access expression
 
@@ -393,6 +401,8 @@ item-selection:</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_  `{`  _item-selector_  `}`<br/>
 _optional-item-selection:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_  `{`  _item-selector_  `} ?`
+_item-selector:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression_
 
 #### Field access expressions
 
@@ -412,6 +422,7 @@ _optional-field-selector:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-name_  `] ?`<br/>
 _field-name:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quoted-identifier<br/>
 implicit-target-field-selection:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-selector<br/>
 projection:<br/>
@@ -425,7 +436,8 @@ _required-selector-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-field-selector<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-field-selector_ `,`  _required-selector-list<br/>
 implicit-target-projection:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;projection_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-projection<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-projection_
 
 #### Function expression
 
@@ -449,7 +461,7 @@ parameter-type:<br/>
 return-type:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assertion<br/>
 assertion:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as`  _type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as`  _nullable-primitive-type<br/>
 optional-parameter-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter_  `,`  _optional-parameter-list<br/>
@@ -506,14 +518,14 @@ primitive-type:_ one of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`list logical none null number record table text type`<br/> 
 _record-type:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`  _open-record-marker_  `]`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-specification-list_  `]`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-specification-list<sub>opt</sub>_  `]`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-specification-list_  `,`  _open-record-marker_  `]` <br/>
 _field-specification-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-specification<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-specification_
   `,`  _field-specification-list<br/>
 field-specification:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional`_<sub>opt</sub> identifier field-type-specification<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional`_<sub>opt</sub> field-name field-type-specification<sub>opt</sub><br/>
 field-type-specification:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`=` _field-type<br/>
 field-type:<br/>
@@ -579,6 +591,7 @@ literal-field:<br/>
 list-literal:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{` _literal-item-list<sub>opt</sub>_ `}`<br/>
 _literal-item-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;any-literal<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;any-literal_ `,` _literal-item-list<br/>
 any-literal:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;record-literal<br/>

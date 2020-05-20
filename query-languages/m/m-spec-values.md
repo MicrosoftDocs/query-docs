@@ -482,7 +482,8 @@ _record-expression:_<br/>
 field:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-name_  `=`  _expression<br/> 
 field-name:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quoted-identifier_<br/>
 
 The following example constructs a record with a field named `x` with value `1`, and a field named `y` with value `2`.
 
