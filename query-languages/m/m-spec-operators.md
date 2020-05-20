@@ -221,7 +221,7 @@ _item-access-expression:<br/>
 item-selection:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_  `{`  _item-selector_  `}`<br/>
 _optional-item-selection:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_ `{`  _item-selector_  `} ?`</em><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_ `{`  _item-selector_  `} ?`<br/>
 _item-selector:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression_
 
@@ -304,6 +304,7 @@ _optional-field-selector:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-name_  `] ?`<br/>
 _field-name:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quoted-identifier<br/>
 implicit-target-field-selection:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-selector<br/> 
 projection:<br/> 
@@ -315,8 +316,9 @@ _optional-projection:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[` _required-selector-list_ `] ?`<br/> _required-selector-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-field-selector<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-selector-list_ `,` _required-field-selector<br/> 
-implicit-target -projection:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;projection_
+implicit-target-projection:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-projection<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-projection_
 
 The simplest form of field access is _required field selection_. It uses the operator `x[y]` to look up a field in a record by field name. If the field `y` does not exist in `x`, an error is raised. The form `x[y]?` is used to perform _optional_ field selection, and returns `null` if the requested field does not exist in the record.
 

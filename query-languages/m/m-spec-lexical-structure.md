@@ -48,16 +48,15 @@ defines a _variable-list_ to either consist of a _variable_ or consist of a _var
 A subscripted suffix "<sub>opt</sub>" is used to indicate an optional symbol. The production:
 
 _field-specification:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional`_<sub>opt</sub> identifier_ `=` _field-type_
-</code>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional`_<sub>opt</sub> field-name_ `=` _field-type_
 
 is shorthand for:
 
 _field-specification:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier_ `=` _field-type_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional` _identifier_ `=` _field-type_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-name_ `=` _field-type_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional` _field-name_ `=` _field-type_
 
-and defines a _field-specification_ to optionally begin with the terminal symbol `optional` followed by an _identifier_, the terminal symbol `=`, and a _field-type_.
+and defines a _field-specification_ to optionally begin with the terminal symbol `optional` followed by a _field-name_, the terminal symbol `=`, and a _field-type_.
 
 Alternatives are normally listed on separate lines, though in cases where there are many alternatives, the phrase "one of" may precede a list of expansions given on a single line. This is simply shorthand for listing each of the alternatives on a separate line. For example, the production:
 
@@ -233,7 +232,8 @@ _literal:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logical-literal<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number-literal<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;null-literal_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;null-literal<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;verbatim-literal_
 
 #### Null literals
 
@@ -313,6 +313,14 @@ The [_character-escape-sequence_](#character-escape-sequences) production can be
 ```
 "Hello world#(cr,lf)"
 ```
+
+### Verbatim literals
+
+A verbatim literal is used to store a sequence of Unicode characters that were entered by a user as code, but which cannot be correctly parsed as code. At runtime, it produces an error value.
+
+_verbatim-literal:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`#!"` _text-literal-characters<sub>opt</sub>_ `"`
+
 
 ### Identifiers
 
@@ -409,9 +417,10 @@ generalized-identifier-segment:<br/>
 
 A _keyword_ is an identifier-like sequence of characters that is reserved, and cannot be used as an identifier except when using the [identifier-quoting mechanism](#identifiers) or where a [generalized identifier is allowed](#generalized-identifiers).
 
-<em>keyword:</em>  one of `and as each else error false if in is let meta not otherwise or`<br/>
+_keyword:_ one of<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `and as each else error false if in is let meta not null or otherwise`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;` section shared then true try type #binary #date #datetime`<br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`#datetimezone #duration #infinity #nan #sections #shared #table #time`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;` #datetimezone #duration #infinity #nan #sections #shared #table #time`
 
 ### Operators and punctuators
 
