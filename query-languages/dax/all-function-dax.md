@@ -1,7 +1,7 @@
 ---
 title: "ALL function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 03/25/2020
+ms.date: 06/02/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -33,17 +33,21 @@ The table or column with filters removed.
   
 ## Remarks
 
-This function is not used by itself, but serves as an intermediate function that can be used to change the set of results over which some other calculation is performed.  
+- This function is not used by itself, but serves as an intermediate function that can be used to change the set of results over which some other calculation is performed.  
+
+- The normal behavior for DAX expressions containing the ALL() function is that any filters applied will be ignored. However, there are some scenarios where this is not the case because of *auto-exist*, a DAX technology that optimizes filtering in order to reduce the amount of processing required for certain DAX queries. An example where auto-exist and ALL() provide unexpected results is when filtering on two or more columns of the same table (like when using slicers), and there is a measure on that same table that uses ALL(). In this case, auto-exist will *merge* the multiple filters into one and will only filter on existing combinations of values. Because of this merge, the measure will be calculated on the existing combinations of values and the result will be based on filtered values instead of all values as expected. To learn more about auto-exist and its effect calculations, see Microsoft MVP Marco Russo's [Understanding DAX Auto-Exist](https://www.sqlbi.com/articles/understanding-dax-auto-exist/) article on :::no-loc text="sql.bi.com":::.
   
-As described in the following table, you can use the ALL and ALLEXCEPT functions in different scenarios.  
+- The following table describes how you can use the ALL and ALLEXCEPT functions in different scenarios.  
   
-|Function and usage|Description|  
-|----------------------|---------------|  
-|ALL()|Removes all filters everywhere. ALL() can only be used to clear filters but not to return a table.|
-|ALL(Table)|Removes all filters from the specified table. In effect, ALL(Table) returns all of the values in the table, removing any filters from the context that otherwise might have been applied. This function is useful when you are working with many levels of grouping, and want to create a calculation that creates a ratio of an aggregated value to the total value. The first example demonstrates this scenario.|  
-|ALL (Column[, Column[, …]])|Removes all filters from the specified columns in the table; all other filters on other columns in the table still apply. All column arguments must come from the same table. The ALL(Column) variant is useful when you want to remove the context filters for one or more specific columns and to keep all other context filters. The second and third examples demonstrate this scenario.|  
-|ALLEXCEPT(Table, Column1 [,Column2]...)|Removes all context filters in the table except filters that are applied to the specified columns. This is a convenient shortcut for situations in which you want to remove the filters on many, but not all, columns in a table.|  
-  
+    |Function and usage|Description|  
+    |----------------------|---------------|  
+    |ALL()|Removes all filters everywhere. ALL() can only be used to clear filters but not to return a table.|
+    |ALL(Table)|Removes all filters from the specified table. In effect, ALL(Table) returns all of the values in the table, removing any filters from the context that otherwise might have been applied. This function is useful when you are working with many levels of grouping, and want to create a calculation that creates a ratio of an aggregated value to the total value. The first example demonstrates this scenario.|  
+    |ALL (Column[, Column[, …]])|Removes all filters from the specified columns in the table; all other filters on other columns in the table still apply. All column arguments must come from the same table. The ALL(Column) variant is useful when you want to remove the context filters for one or more specific columns and to keep all other context filters. The second and third examples demonstrate this scenario.|  
+    |ALLEXCEPT(Table, Column1 [,Column2]...)|Removes all context filters in the table except filters that are applied to the specified columns. This is a convenient shortcut for situations in which you want to remove the filters on many, but not all, columns in a table.|  
+ 
+
+
 ## Example
 
 Calculate ratio of Category Sales to Total Sales  
