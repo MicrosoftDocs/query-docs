@@ -1,7 +1,7 @@
 ---
 title: "CONTAINS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 06/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -37,7 +37,7 @@ A value of **TRUE** if each specified *value* can be found in the corresponding 
 -   If *columnName* refers to a column in a related table then it must be fully qualified; otherwise, an error is returned.  
   
 ## Example  
-The following example creates a calculated measure that tells you whether there were any Internet sales of the product 214 and to customer 11185 at the same time.  
+The following example creates a measure that tells you whether there were any Internet sales of product 214 and to customer 11185 at the same time.  
   
 ```dax
 =CONTAINS(InternetSales, [ProductKey], 214, [CustomerKey], 11185)  
