@@ -13,7 +13,7 @@ ms.author: owend
 Used by expressions for calculation items to determine the measure that is in context by name.
 
 > [!NOTE]
-> This function currently applies only to [SQL Server 2019 Analysis Services CTP 2.3](https://docs.microsoft.com/sql/sql-server/what-s-new-in-sql-server-ver15?view=sqlallproducts-allversions#calc-ctp24) and later.
+> This function is not compatible with SQL Server 2017 Analysis Services and earlier.
   
 ## Syntax  
   
