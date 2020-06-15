@@ -35,7 +35,7 @@ This reference is not intended to serve as a tutorial or provide in-depth guidan
   
 [Logical functions](logical-functions-dax.md) - These functions return information about values in an expression. For example, the TRUE function lets you know whether an expression that you are evaluating returns a TRUE value.  
   
-[Math and Trig functions](math-and-trig-functions-dax.md) - Mathematical functions in DAX are similar to Excel's mathematical and trigonometric functions. However, t99[ are](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks) some differences in the numeric data types used by DAX functions.  
+[Math and Trig functions](math-and-trig-functions-dax.md) - Mathematical functions in DAX are similar to Excel's mathematical and trigonometric functions. However, there are some differences in the numeric data types used by DAX functions.  
   
 [Other functions](other-functions-dax.md) - These functions perform unique actions that cannot be defined by any of the categories most other functions belong to.  
   
