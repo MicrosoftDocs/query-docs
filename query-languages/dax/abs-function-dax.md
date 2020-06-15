@@ -45,4 +45,3 @@ The following example returns the absolute value of the difference between the l
 
 [Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
 [SIGN function &#40;DAX&#41;](sign-function-dax.md)  
-  

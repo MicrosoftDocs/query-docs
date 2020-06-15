@@ -1,7 +1,7 @@
 ---
 title: "Statistical functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 05/18/2020
+ms.date: 06/15/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -88,5 +88,3 @@ Data Analysis Expressions (DAX) provides many functions for creating aggregation
 |[VAR.S](var-s-function-dax.md)    |  Returns the variance of a sample population.         |
 |[VARX.P](varx-p-function-dax.md)     | Returns the variance of the entire population.         |
 |[VARX.S](varx-s-function-dax.md)     | Returns the variance of a sample population.        |
-|[XIRR](xirr-function-dax.md)     |  Returns the internal rate of return for a schedule of cash flows that is not necessarily periodic.       |
-|[XNPV](xnpv-function-dax.md)      |  Returns the present value for a schedule of cash flows that is not necessarily periodic.       |

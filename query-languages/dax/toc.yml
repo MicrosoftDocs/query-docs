@@ -65,84 +65,6 @@
               href: year-function-dax.md
             - name: YEARFRAC
               href: yearfrac-function-dax.md
-        - name: Time-intelligence functions
-          items: 
-            - name: Time-intelligence functions overview
-              href: time-intelligence-functions-dax.md
-            - name: CLOSINGBALANCEMONTH
-              href: closingbalancemonth-function-dax.md
-            - name: CLOSINGBALANCEQUARTER
-              href: closingbalancequarter-function-dax.md
-            - name: CLOSINGBALANCEYEAR
-              href: closingbalanceyear-function-dax.md
-            - name: DATEADD
-              href: dateadd-function-dax.md
-            - name: DATESBETWEEN
-              href: datesbetween-function-dax.md
-            - name: DATESINPERIOD
-              href: datesinperiod-function-dax.md
-            - name: DATESMTD
-              href: datesmtd-function-dax.md
-            - name: DATESQTD
-              href: datesqtd-function-dax.md
-            - name: DATESYTD
-              href: datesytd-function-dax.md
-            - name: ENDOFMONTH
-              href: endofmonth-function-dax.md
-            - name: ENDOFQUARTER
-              href: endofquarter-function-dax.md
-            - name: ENDOFYEAR
-              href: endofyear-function-dax.md
-            - name: FIRSTDATE
-              href: firstdate-function-dax.md
-            - name: FIRSTNONBLANK
-              href: firstnonblank-function-dax.md
-            - name: FIRSTNONBLANKVALUE
-              href: firstnonblankvalue-function-dax.md
-            - name: LASTDATE
-              href: lastdate-function-dax.md
-            - name: LASTNONBLANK
-              href: lastnonblank-function-dax.md
-            - name: LASTNONBLANKVALUE
-              href: lastnonblankvalue-function-dax.md
-            - name: NEXTDAY
-              href: nextday-function-dax.md
-            - name: NEXTMONTH
-              href: nextmonth-function-dax.md
-            - name: NEXTQUARTER
-              href: nextquarter-function-dax.md
-            - name: NEXTYEAR
-              href: nextyear-function-dax.md
-            - name: OPENINGBALANCEMONTH
-              href: openingbalancemonth-function-dax.md
-            - name: OPENINGBALANCEQUARTER
-              href: openingbalancequarter-function-dax.md
-            - name: OPENINGBALANCEYEAR
-              href: openingbalanceyear-function-dax.md
-            - name: PARALLELPERIOD
-              href: parallelperiod-function-dax.md
-            - name: PREVIOUSDAY
-              href: previousday-function-dax.md
-            - name: PREVIOUSMONTH
-              href: previousmonth-function-dax.md
-            - name: PREVIOUSQUARTER
-              href: previousquarter-function-dax.md
-            - name: PREVIOUSYEAR
-              href: previousyear-function-dax.md
-            - name: SAMEPERIODLASTYEAR
-              href: sameperiodlastyear-function-dax.md
-            - name: STARTOFMONTH
-              href: startofmonth-function-dax.md
-            - name: STARTOFQUARTER
-              href: startofquarter-function-dax.md
-            - name: STARTOFYEAR
-              href: startofyear-function-dax.md
-            - name: TOTALMTD
-              href: totalmtd-function-dax.md
-            - name: TOTALQTD
-              href: totalqtd-function-dax.md
-            - name: TOTALYTD
-              href: totalytd-function-dax.md
         - name: Filter functions
           items: 
             - name: Filter functions overview
@@ -201,6 +123,14 @@
               href: userelationship-function-dax.md
             - name: VALUES
               href: values-function-dax.md
+        - name: Financial functions
+          items:
+            - name: Financial functions overview
+              href: financial-functions-dax.md
+            - name: XIRR
+              href: xirr-function-dax.md
+            - name: XNPV
+              href: xnpv-function-dax.md
         - name: Information functions
           items: 
             - name: Information functions overview
@@ -565,10 +495,6 @@
               href: varx-s-function-dax.md
             - name: VARX.P
               href: varx-p-function-dax.md
-            - name: XIRR
-              href: xirr-function-dax.md
-            - name: XNPV
-              href: xnpv-function-dax.md
         - name: Text functions
           items: 
             - name: Text functions overview
@@ -629,6 +555,84 @@
               href: upper-function-dax.md
             - name: VALUE
               href: value-function-dax.md
+        - name: Time-intelligence functions
+          items: 
+            - name: Time-intelligence functions overview
+              href: time-intelligence-functions-dax.md
+            - name: CLOSINGBALANCEMONTH
+              href: closingbalancemonth-function-dax.md
+            - name: CLOSINGBALANCEQUARTER
+              href: closingbalancequarter-function-dax.md
+            - name: CLOSINGBALANCEYEAR
+              href: closingbalanceyear-function-dax.md
+            - name: DATEADD
+              href: dateadd-function-dax.md
+            - name: DATESBETWEEN
+              href: datesbetween-function-dax.md
+            - name: DATESINPERIOD
+              href: datesinperiod-function-dax.md
+            - name: DATESMTD
+              href: datesmtd-function-dax.md
+            - name: DATESQTD
+              href: datesqtd-function-dax.md
+            - name: DATESYTD
+              href: datesytd-function-dax.md
+            - name: ENDOFMONTH
+              href: endofmonth-function-dax.md
+            - name: ENDOFQUARTER
+              href: endofquarter-function-dax.md
+            - name: ENDOFYEAR
+              href: endofyear-function-dax.md
+            - name: FIRSTDATE
+              href: firstdate-function-dax.md
+            - name: FIRSTNONBLANK
+              href: firstnonblank-function-dax.md
+            - name: FIRSTNONBLANKVALUE
+              href: firstnonblankvalue-function-dax.md
+            - name: LASTDATE
+              href: lastdate-function-dax.md
+            - name: LASTNONBLANK
+              href: lastnonblank-function-dax.md
+            - name: LASTNONBLANKVALUE
+              href: lastnonblankvalue-function-dax.md
+            - name: NEXTDAY
+              href: nextday-function-dax.md
+            - name: NEXTMONTH
+              href: nextmonth-function-dax.md
+            - name: NEXTQUARTER
+              href: nextquarter-function-dax.md
+            - name: NEXTYEAR
+              href: nextyear-function-dax.md
+            - name: OPENINGBALANCEMONTH
+              href: openingbalancemonth-function-dax.md
+            - name: OPENINGBALANCEQUARTER
+              href: openingbalancequarter-function-dax.md
+            - name: OPENINGBALANCEYEAR
+              href: openingbalanceyear-function-dax.md
+            - name: PARALLELPERIOD
+              href: parallelperiod-function-dax.md
+            - name: PREVIOUSDAY
+              href: previousday-function-dax.md
+            - name: PREVIOUSMONTH
+              href: previousmonth-function-dax.md
+            - name: PREVIOUSQUARTER
+              href: previousquarter-function-dax.md
+            - name: PREVIOUSYEAR
+              href: previousyear-function-dax.md
+            - name: SAMEPERIODLASTYEAR
+              href: sameperiodlastyear-function-dax.md
+            - name: STARTOFMONTH
+              href: startofmonth-function-dax.md
+            - name: STARTOFQUARTER
+              href: startofquarter-function-dax.md
+            - name: STARTOFYEAR
+              href: startofyear-function-dax.md
+            - name: TOTALMTD
+              href: totalmtd-function-dax.md
+            - name: TOTALQTD
+              href: totalqtd-function-dax.md
+            - name: TOTALYTD
+              href: totalytd-function-dax.md
     - name: DAX statements
       items:
       - name: Statements overview
