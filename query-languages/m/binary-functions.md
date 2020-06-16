@@ -68,8 +68,13 @@ Controlling byte order | Description
 |[BinaryOccurrence.Required](binaryoccurrence-required.md)|The item is expected to appear once in the input.|
 |[ByteOrder.BigEndian](byteorder-bigendian.md)|A possible value for the `byteOrder` parameter in `BinaryFormat.ByteOrder`. The most signficant byte appears first in Big Endian byte order.|
 |[ByteOrder.LittleEndian](byteorder-littleendian.md)|A possible value for the `byteOrder` parameter in `BinaryFormat.ByteOrder`. The least signficant byte appears first in Little Endian byte order.|
+|[Compression.Brotli](compression-brotli.md)|The compressed data is in the 'Brotli' format.|
 |[Compression.Deflate](compression-deflate.md)|The compressed data is in the 'Deflate' format.|
 |[Compression.GZip](compression-gzip.md)|The compressed data is in the 'GZip' format.|
+|[Compression.LZ4](compression-lz4.md)|The compressed data is in the 'LZ4' format.|
+|[Compression.None](compression-none.md)|The data is uncompressed.|
+|[Compression.Snappy](compression-snappy.md)|The compressed data is in the 'Snappy' format.|
+|[Compression.Zstandard](compression-zstandard.md)|The compressed data is in the 'Zstandard' format.|
 |[Occurrence.Optional](occurrence-optional.md) | The item is expected to appear zero or one time in the input.|
 |[Occurrence.Repeating](occurrence-repeating.md) | The item is expected to appear zero or more times in the input.|
 |[Occurrence.Required](occurrence-required.md) | The item is expected to appear once in the input.|

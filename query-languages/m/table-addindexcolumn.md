@@ -1,6 +1,6 @@
 ---
 title: "Table.AddIndexColumn | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 06/15/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -14,7 +14,7 @@ ms.author: v-douklo
 ## Syntax
 
 <pre>
-Table.AddIndexColumn(<b>table</b> as table, <b>newColumnName</b> as text, optional <b>initialValue</b> as nullable number, optional <b>increment</b> as nullable number) as table
+Table.AddIndexColumn(<b>table</b> as table, <b>newColumnName</b> as text, optional <b>initialValue</b> as nullable number, optional <b>increment</b> as nullable number, optional <b>columnType</b> as nullable type) as table
 </pre>
   
 ## About  
