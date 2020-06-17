@@ -89,6 +89,8 @@
               href: azurestorage-tables.md
             - name: Cdm.Contents
               href: cdm-contents.md
+            - name: Cdpa.Database
+              href: cdpa-database.md
             - name: Csv.Document
               href: csv-document.md
             - name: CsvStyle.QuoteAfterDelimiter
@@ -355,10 +357,20 @@
               href: byteorder-bigendian.md
             - name: ByteOrder.LittleEndian
               href: byteorder-littleendian.md
+            - name: Compression.Brotli
+              href: compression-brotli.md
             - name: Compression.Deflate
               href: compression-deflate.md
             - name: Compression.GZip
               href: compression-gzip.md
+            - name: Compression.LZ4
+              href: compression-lz4.md
+            - name: Compression.None
+              href: compression-none.md
+            - name: Compression.Snappy
+              href: compression-snappy.md
+            - name: Compression.Zstandard
+              href: compression-zstandard.md
             - name: Occurrence.Optional
               href: occurrence-optional.md
             - name: Occurrence.Repeating
@@ -1159,6 +1171,8 @@
               href: table-combine.md
             - name: Table.CombineColumns
               href: table-combinecolumns.md
+            - name: Table.CombineColumnsToRecord
+              href: table-combinecolumnstorecord.md
             - name: Table.Contains
               href: table-contains.md
             - name: Table.ContainsAll
@@ -1563,6 +1577,8 @@
               href: value-divide.md
             - name: Value.Equals
               href: value-equals.md
+            - name: Value.Expression
+              href: value-expression.md
             - name: Value.Firewall
               href: value-firewall.md
             - name: Value.FromText
@@ -1577,6 +1593,8 @@
               href: value-nativequery.md
             - name: Value.NullableEquals
               href: value-nullableequals.md
+            - name: Value.Optimize
+              href: value-optimize.md
             - name: Value.RemoveMetadata
               href: value-removemetadata.md
             - name: Value.ReplaceMetadata
