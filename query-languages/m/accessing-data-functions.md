@@ -1,6 +1,6 @@
 ---
 title: "Accessing data functions | Microsoft Docs"
-ms.date: 4/7/2020
+ms.date: 06/16/2020
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -32,6 +32,7 @@ These functions access data and return table values. Most of these functions ret
 |[AzureStorage.DataLakeContents](azurestorage-datalakecontents.md)|Returns the content of the specified file from an Azure Data Lake Storage filesystem.|
 |[AzureStorage.Tables](azurestorage-tables.md)|Returns a navigational table containing a row for each table found at the account URL from an Azure storage vault. Each row contains a link to the azure table.|
 |[Cdm.Contents](cdm-contents.md)|This function is unavailable because it requires .NET 4.5.|
+|[Cdpa.Database](cdpa-database.md)|Provides access to a CDPA database.|
 |[Csv.Document](csv-document.md)|Returns the contents of a CSV document as a table using the specified encoding.|
 |[CsvStyle.QuoteAfterDelimiter](csvstyle-quoteafterdelimiter.md)|Quotes in a field are only significant immediately following the delimiter.| 
 |[CsvStyle.QuoteAlways](csvstyle-quotealways.md)|Quotes in a field are always significant regardless of where they appear.
@@ -48,7 +49,7 @@ These functions access data and return table values. Most of these functions ret
 |[Cube.Measures](cube-measures.md)|Returns a table containing the set of available measures within the cube.|
 |[Cube.Parameters](cube-parameters.md)|Returns a table containing the set of parameters that can be applied to cube.|   
 |[Cube.Properties](cube-properties.md)|Returns a table containing the set of available properties for dimensions that are expanded in the cube.|
-| [Cube.PropertyKey](cube-propertykey.md)  | Returns the key of property `property`.  |
+| [Cube.PropertyKey](cube-propertykey.md) | Returns the key of property `property`.  |
 |[Cube.ReplaceDimensions](cube-replacedimensions.md)||
 |[Cube.Transform](cube-transform.md)|Applies the list cube functions, transforms, on the cube.|
 |[DB2.Database](db2-database.md)|Returns a table of SQL tables and views available in a Db2 database.|  
@@ -66,7 +67,7 @@ These functions access data and return table values. Most of these functions ret
 |[HdInsight.Containers](hdinsight-containers.md)|Returns a navigational table containing all containers found in the HDInsight account. Each row has the container name and table containing its files.|  
 |[HdInsight.Contents](hdinsight-contents.md)|Returns a navigational table containing all containers found in the HDInsight account. Each row has the container name and table containing its files.|  
 |[HdInsight.Files](hdinsight-files.md)|Returns a table containing a row for each folder and file found at the container URL, and subfolders from an HDInsight account. Each row contains properties of the file/folder and a link to its content.|  
-|[Html.Table](html-table.md)|Returns a table containing the results of running the specified CSS selectors against the provided html|  
+|[Html.Table](html-table.md)|Returns a table containing the results of running the specified CSS selectors against the provided html.|  
 |[Identity.From](identity.from.md)|Creates an identity.|
 |[Identity.IsMemberOf](identity-ismemberof.md)|Determines whether an identity is a member of an identity collection.|
 |[IdentityProvider.Default](identityprovider-default.md)|The default identity provider for the current host.|

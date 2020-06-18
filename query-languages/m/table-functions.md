@@ -246,6 +246,7 @@ Orders = Table.FromRecords({
 |[Table.AddKey](table-addkey.md)|Add a key to table.|  
 |[Table.AggregateTableColumn](table-aggregatetablecolumn.md)|Aggregates tables nested in a specific column into multiple columns containing aggregate values for those tables.|  
 |[Table.CombineColumns](table-combinecolumns.md)|Table.CombineColumns merges columns using a combiner function to produce a new column. Table.CombineColumns is the inverse of Table.SplitColumns.|
+|[Table.CombineColumnsToRecord](table-combinecolumnstorecord.md)|Combines the specified columns into a new record-valued column where each record has field names and values corresponding to the column names and values of the columns that were combined.|
 |[Table.ExpandListColumn](table-expandlistcolumn.md)|Given a column of lists in a table, create a copy of a row for each value in its list.|  
 |[Table.ExpandRecordColumn](table-expandrecordcolumn.md)|Expands a column of records into columns with each of the values.|  
 |[Table.ExpandTableColumn](table-expandtablecolumn.md)|Expands a column of records or a column of tables into multiple columns in the containing table.|  
