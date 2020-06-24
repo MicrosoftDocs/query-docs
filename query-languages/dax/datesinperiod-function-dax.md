@@ -1,7 +1,7 @@
 ---
 title: "DATESINPERIOD function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 06/24/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,51 +9,67 @@ ms.author: owend
 
 ---
 # DATESINPERIOD
-Returns a table that contains a column of dates that begins with the **start_date** and continues for the specified **number_of_intervals**.  
-  
-## Syntax  
-  
+
+Returns a table that contains a column of dates that begins with a specified start date and continues for the specified number and type of date intervals.
+
+This function is suited to pass as a filter to the [CALCULATE](calculate-function-dax.md) function. Use it to filter an expression by standard date intervals such as days, months, quarters, or years.
+
+## Syntax
+
 ```dax
-DATESINPERIOD(<dates>,<start_date>,<number_of_intervals>,<interval>)  
+DATESINPERIOD(<dates>, <start_date>, <number_of_intervals>, <interval>)
 ```
-  
-### Parameters  
-  
-|||  
-|-|-|  
-|Term|Definition|  
-|dates|A column that contains dates.|  
-|start_date|A date expression.|  
-|number_of_intervals|An integer that specifies the number of intervals to add to or subtract from the dates.|  
-|interval|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`, `day`|  
-  
-## Return value  
-A table containing a single column of date values.  
-  
-## Remarks  
-The **dates** argument can be a reference to a date/time column.  
-  
-> [!NOTE]  
-> Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
-  
-If the number specified for **number_of_intervals** is positive, the dates are moved forward in time; if the number is negative, the dates are shifted back in time.  
-  
-The **interval** parameter is an enumeration, not a set of strings; therefore values should not be enclosed in quotation marks. Also, the values: `year`, `quarter`, `month`, `day` should be spelled in full when using them.  
-  
-The result table includes only dates that appear in the values of the underlying table column.  
-  
-This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
-  
-## Example  
-The following formula returns the Internet sales for the 21 days prior to August 24, 2007.  
-  
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|dates|A date column from a marked date table.|
+|start_date|A date expression.|
+|number_of_intervals|An integer that specifies the number of intervals to add to, or subtract from, the dates.|
+|interval|The interval by which to shift the dates. The value for interval can be one of the following: `YEAR`, `QUARTER`, `MONTH`, and `DAY`|
+
+## Return value
+
+A table containing a single column of date values.
+
+## Remarks
+
+Ideally, **dates** is a reference to the date column of a marked date table. For more information, see [Creating date tables in Power BI Desktop](/power-bi/guidance/model-date-table).
+
+If the number specified for **number_of_intervals** is positive, dates are moved forward in time; if the number is negative, dates are shifted backward in time.
+
+The **interval** parameter is an enumeration. Valid values are `DAY`, `MONTH`, `QUARTER`, and `YEAR`. Because it's an enumeration, values aren't passed in as strings. So don't enclose them within quotation marks.
+
+The returned table can only contain dates stored in the **dates** column. So, for example, if the **dates** column starts from July 1, 2017, and the **start_date** value is July 1, 2016, the returned table will start from July 1, 2017.
+
+This DAX function isn't supported for use in DirectQuery mode. For more information, see [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).
+
+## Example
+
+The following **Sales** table measure definition uses the DATESINPERIOD function to calculate revenue for the prior year.
+
+Notice that the formula uses the [MAX](max-function-dax.md) function. This function returns the latest date that's in the filter context. So, the DATESINPERIOD function returns a table of dates beginning from the latest date for the last year.
+
+_All examples in this article can be added to the sample model. To obtain the model, see [DAX model sample](https://aka.ms/dax-docs-samples)._
+
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]),DATESINPERIOD(DateTime[DateKey],DATE(2007,08,24),-21,day))  
+Revenue Prior Year =
+CALCULATE(
+    SUM(Sales[Sales Amount]),
+    DATESINPERIOD(
+        'Date'[Date],
+        MAX('Date'[Date]),
+        -1,
+        YEAR
+    )
+)
 ```
-  
-## See also  
-[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
-[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[DATESBETWEEN function &#40;DAX&#41;](datesbetween-function-dax.md)  
- 
-  
+
+Consider that the report is filtered by the month of June 2020. The MAX function returns June 30, 2020. The DATESINPERIOD function then returns a date range from July 1, 2019 until June 30, 2020. It's a year of date values starting from June 30, 2020 for the last year.
+
+## See also
+
+- [Time-intelligence functions (DAX)](time-intelligence-functions-dax.md)  
+- [Date and time functions (DAX)](date-and-time-functions-dax.md)  
+- [DATESBETWEEN function (DAX)](datesbetween-function-dax.md)  
