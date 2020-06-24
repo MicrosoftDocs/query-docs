@@ -16,8 +16,8 @@ These functions help you create calculations based on dates and time. Many of th
 
 |Function  |Description  |
 |---------|---------|
-|[CALENDAR](calendar-function-dax.md)     |   Returns a table with a single column named “Date” that contains a contiguous set of dates.      |
-|[CALENDARAUTO](calendarauto-function-dax.md)       |   Returns a table with a single column named “Date” that contains a contiguous set of dates.      |
+|[CALENDAR](calendar-function-dax.md)     |   Returns a table with a single column named "Date" that contains a contiguous set of dates.      |
+|[CALENDARAUTO](calendarauto-function-dax.md)       |   Returns a table with a single column named "Date" that contains a contiguous set of dates.      |
 |[DATE](date-function-dax.md)      |   Returns the specified date in datetime format.       |
 |[DATEDIFF](datediff-function-dax.md)     |  Returns the count of interval boundaries crossed between two dates.        |
 |[DATEVALUE](datevalue-function-dax.md)     |   Converts a date in the form of text to a date in datetime format.       |
@@ -27,7 +27,7 @@ These functions help you create calculations based on dates and time. Many of th
 |[HOUR](hour-function-dax.md)     |  Returns the hour as a number from 0 (12:00 A.M.) to 23 (11:00 P.M.).       |
 |[MINUTE](minute-function-dax.md)     |   Returns the minute as a number from 0 to 59, given a date and time value.        |
 |[MONTH](month-function-dax.md)      |  Returns the month as a number from 1 (January) to 12 (December).        |
-|[NOW](now-function-dax.md)     |  Returns the current date and time in **datetime** format.        |
+|[NOW](now-function-dax.md)     |  Returns the current date and time in datetime format.        |
 |[QUARTER](quarter-function-dax.md)     |  Returns the quarter as a number from 1 to 4.       |
 |[SECOND](second-function-dax.md)     |  Returns the seconds of a time value, as a number from 0 to 59.        |
 |[TIME](time-function-dax.md)     |  Converts hours, minutes, and seconds given as numbers to a time in datetime format.       |

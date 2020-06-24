@@ -46,7 +46,7 @@ To learn more, see:
  A calculated column is a column that you add to an existing table (in the model designer) and then create a DAX formula that defines the column's values. When a calculated column contains a valid DAX formula, values are calculated for each row as soon as the formula is entered. Values are then stored in the in-memory data model. For example, in a Date table, when the formula is entered into the formula bar:
 
 ```dax
-=[Calendar Year] & " Q" & [Calendar Quarter]
+= [Calendar Year] & " Q" & [Calendar Quarter]
 ```
 
 A value for each row in the table is calculated by taking values from the Calendar Year column (in the same Date table), adding a space and the capital letter Q, and then adding the values from the Calendar Quarter column (in the same Date table). The result for each row in the calculated column is calculated immediately and appears, for example, as **2017 Q1**. Column values are only recalculated if the table or any related table is processed (refresh) or the model is unloaded from memory and then reloaded, like when closing and reopening a Power BI Desktop file.  
@@ -73,7 +73,7 @@ To learn more, see:
 With row-level security, a DAX formula must evaluate to a Boolean TRUE/FALSE condition, defining which rows can be returned by the results of a query by members of a particular role. For example, for members of the Sales role, the Customers table with the following DAX formula:
 
 ```dax
-=Customers[Country] = "USA"
+= Customers[Country] = "USA"
 ```
 
 Members of the Sales role will only be able to view data for customers in the USA, and aggregates, such as SUM are returned only for customers in the USA. Row-level security is not available in Power Pivot in Excel.
@@ -114,9 +114,9 @@ DAX formulas can be very simple or quite complex. The following table shows some
 |||  
 |-|-|  
 |Formula|Description|  
-|`=TODAY()`|Inserts today's date in every row of a calculated column.|  
-|`=3`|Inserts the value 3 in every row of a calculated column.|  
-|`=[Column1] + [Column2]`|Adds the values in the same row of [Column1] and [Column2] and puts the results in the calculated column of the same row.|  
+|`= TODAY()`|Inserts today's date in every row of a calculated column.|  
+|`= 3`|Inserts the value 3 in every row of a calculated column.|  
+|`= [Column1] + [Column2]`|Adds the values in the same row of [Column1] and [Column2] and puts the results in the calculated column of the same row.|  
   
 Whether the formula you create is simple or complex, you can use the following steps when building a formula:  
   
@@ -291,7 +291,7 @@ There are different types of context: *row context*, *query context*, and *filte
 
 *Row context* can be thought of as "the current row". If you create a formula in a calculated column, the row context for that formula includes the values from all columns in the current row. If the table is related to another table, the content also includes all the values from the other table that are related to the current row.  
   
-For example, suppose you create a calculated column, `=[Freight] + [Tax]`, that adds together values from two columns, Freight and Tax, from the same table. This formula automatically gets only the values from the current row in the specified columns.  
+For example, suppose you create a calculated column, `= [Freight] + [Tax]`, that adds together values from two columns, Freight and Tax, from the same table. This formula automatically gets only the values from the current row in the specified columns.  
   
 Row context also follows any relationships that have been defined between tables, including relationships defined within a calculated column by using DAX formulas, to determine which rows in related tables are associated with the current row.  
   
@@ -312,7 +312,7 @@ For example, suppose your model contains a **Products** table and a **Sales** ta
 With DAX you can build a single formula that returns the correct value, and the results are automatically updated any time a user adds data to the tables.  
   
 ```dax  
-=MAXX(FILTER(Sales,[ProdKey]=EARLIER([ProdKey])),Sales[OrderQty])  
+= MAXX(FILTER(Sales,[ProdKey] = EARLIER([ProdKey])),Sales[OrderQty])  
 ```  
   
 For a detailed example of this formula, see [EARLIER](earlier-function-dax.md).  
@@ -321,15 +321,15 @@ To summarize, the EARLIER function stores the row context from the operation tha
   
 #### Query context  
 
-*Query context* refers to the subset of data that is implicitly retrieved for a formula. When a user places a measure or other value field into a PivotTable or into a report based on a tabular model, the engine examines the row and column headers, Slicers, and report filters to determine the context. Then, the necessary queries are run against the data source to get the correct subset of data, make the calculations defined by the formula, and then populate each cell in the PivotTable or report. The set of data that is retrieved is the query context for each cell.  
+*Query context* refers to the subset of data that is implicitly retrieved for a formula. When a user places a measure or other value field into a report, the engine examines row and column headers, Slicers, and report filters to determine the context. Then, the necessary queries are run against the data to get the correct subset of data, make the calculations defined by the formula, and then populate values in the report. The set of data that is retrieved is the query context for each value returned.  
   
 Because context changes depending on where you place the formula, the results of the formula can also change.  
   
-For example, suppose you create a formula that sums the values in the **Profit** column of the **Sales** table: `=SUM('Sales'[Profit])`.  If you use this formula in a calculated column within the **Sales** table, the results for the formula will be the same for the entire table, because the query context for the formula is always the entire data set of the **Sales** table. Results will have profit for all regions, all products, all years, and so on.  
+For example, suppose you create a formula that sums the values in the **Profit** column of the **Sales** table: `= SUM('Sales'[Profit])`.  If you use this formula in a calculated column within the **Sales** table, the results for the formula will be the same for the entire table, because the query context for the formula is always the entire data set of the **Sales** table. Results will have profit for all regions, all products, all years, and so on.
   
 However, users typically don't want to see the same result hundreds of times, but instead want to get the profit for a particular year, a particular country, a particular product, or some combination of these, and then get a grand total.  
   
-In a PivotTable, context can be changed by adding or removing column and row headers and by adding or removing Slicers. Whenever users add column or row headings to the PivotTable, they change the query context in which the measure is evaluated. Slicing and filtering operations also affect context. Therefore, the same formula, used in a measure, is evaluated in a different *query context* for each cell.  
+In a report, context can be changed by adding or removing fields and Slicers. For each change, the query context in which the measure is evaluated. Slicing and filtering operations also affect context. Therefore, the same formula, used in a measure, is evaluated in a different *query context* for each cell.  
   
 #### Filter context  
 
@@ -380,7 +380,7 @@ You can refer to any table and column by using its name. For example, the follow
   
 ```dax  
 
-=SUM('New Sales'[Amount]) + SUM('Past Sales'[Amount])  
+= SUM('New Sales'[Amount]) + SUM('Past Sales'[Amount])  
 
 ```  
   
@@ -388,7 +388,7 @@ When a formula is evaluated, the model designer first checks for general syntax,
   
 ### Table relationships  
 
-By creating relationships between tables, you gain the ability to look up data in another table and use related values to perform complex calculations. For example, you can use a calculated column to look up all the shipping records related to the current reseller, and then sum the shipping costs for each. In many cases, however, a relationship might not be necessary. You can use the [LOOKUPVALUE](lookupvalue-function-dax.md) function in a formula to return the value in *result_columnName* for the row that meets criteria specified in the *search_column* and *search_value* arguments.  
+By creating relationships between tables, you gain the ability for related values in other tables to be used in calculations. For example, you can use a calculated column to determine all the shipping records related to the current reseller, and then sum the shipping costs for each. In many cases, however, a relationship might not be necessary. You can use the [LOOKUPVALUE](lookupvalue-function-dax.md) function in a formula to return the value in *result_columnName* for the row that meets criteria specified in the *search_column* and *search_value* arguments.  
   
 Many DAX functions require that a relationship exist between the tables, or among multiple tables, in order to locate the columns that you have referenced and return results that make sense. Other functions will attempt to identify the relationship; however, for best results you should always create a relationship where possible. 
 Tabular data models support multiple relationships among tables. To avoid confusion or incorrect results, only one relationship at a time is designated as the active relationship, but you can change the active relationship as necessary to traverse different connections in the data in calculations. [USERELATIONSHIP](userelationship-function-dax.md) function can be used to specify one or more relationships to be used in a specific calculation.  
@@ -409,7 +409,7 @@ It's important to observe these formula design rules when using relationships:
   
 - The values in a calculated column are computed and stored in the model. To update the values in the calculated column, you must process the model using one of three processing commands – Process Full, Process Data, or Process Recalc. The result of the formula must always be recalculated for the entire column, whenever you change the formula.  
   
-- The values calculated by measures are dynamically evaluated whenever a user adds the measure to a pivot table or open a report; as the user modifies the context, values returned by the measure change. The results of the measure always reflect the latest in the in-memory cache.  
+- The values calculated by measures are dynamically evaluated whenever a user adds the measure to a PivotTable or open a report; as the user modifies the context, values returned by the measure change. The results of the measure always reflect the latest in the in-memory cache.  
   
 Processing and recalculation have no effect on row filter formulas unless the result of a recalculation returns a different value, thus making the row queryable or not queryable by role members.  
 
