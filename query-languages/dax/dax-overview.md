@@ -1,7 +1,7 @@
 ---
 title: "DAX overview | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/15/2020
+ms.date: 06/24/2020
 ms.reviewer: owend
 ms.topic: overview
 ms.article: reference
@@ -319,19 +319,17 @@ For a detailed example of this formula, see [EARLIER](earlier-function-dax.md).
   
 To summarize, the EARLIER function stores the row context from the operation that preceded the current operation. At all times, the function stores in memory two sets of context: one set of context represents the current row for the inner loop of the formula, and another set of context represents the current row for the outer loop of the formula. DAX automatically feeds values between the two loops so that you can create complex aggregates.  
   
-#### Query context  
+### Query context  
 
-*Query context* refers to the subset of data that is implicitly retrieved for a formula. When a user places a measure or other value field into a report, the engine examines row and column headers, Slicers, and report filters to determine the context. Then, the necessary queries are run against the data to get the correct subset of data, make the calculations defined by the formula, and then populate values in the report. The set of data that is retrieved is the query context for each value returned.  
+*Query context* refers to the subset of data that is implicitly retrieved for a formula. For example, when a user places a measure or field into a report, the engine examines row and column headers, slicers, and report filters to determine the context. The necessary queries are then run against model data to get the correct subset of data, make the calculations defined by the formula, and then populate values in the report.  
   
-Because context changes depending on where you place the formula, the results of the formula can also change.  
-  
-For example, suppose you create a formula that sums the values in the **Profit** column of the **Sales** table: `= SUM('Sales'[Profit])`.  If you use this formula in a calculated column within the **Sales** table, the results for the formula will be the same for the entire table, because the query context for the formula is always the entire data set of the **Sales** table. Results will have profit for all regions, all products, all years, and so on.
+Because context changes depending on where you place the formula, the results of the formula can also change. For example, suppose you create a formula that sums the values in the **Profit** column of the **Sales** table: `= SUM('Sales'[Profit])`. If you use this formula in a calculated column within the **Sales** table, the results for the formula will be the same for the entire table, because the query context for the formula is always the entire data set of the **Sales** table. Results will have profit for all regions, all products, all years, and so on.
   
 However, users typically don't want to see the same result hundreds of times, but instead want to get the profit for a particular year, a particular country, a particular product, or some combination of these, and then get a grand total.  
   
-In a report, context can be changed by adding or removing fields and Slicers. For each change, the query context in which the measure is evaluated. Slicing and filtering operations also affect context. Therefore, the same formula, used in a measure, is evaluated in a different *query context* for each cell.  
+In a report, context is changed by filtering, adding or removing fields, and using slicers. For each change, the query context in which the measure is evaluated. Therefore, the same formula, used in a measure, is evaluated in a different *query context* for each cell.  
   
-#### Filter context  
+### Filter context  
 
 *Filter context* is the set of values allowed in each column, or in the values retrieved from a related table. Filters can be applied to the column in the designer, or in the presentation layer (reports and PivotTables). Filters can also be defined explicitly by filter expressions within the formula.  
   
@@ -344,7 +342,7 @@ For an example of how filters can be cleared to create grand totals, see the [AL
   
 For examples of how to selectively clear and apply filters within formulas, see [ALLEXCEPT](allexcept-function-dax.md).  
   
-#### Determining context in formulas  
+### Determining context in formulas  
 
  When you create a DAX formula, the formula is first tested for valid syntax, and then tested to make sure the names of the columns and tables included in the formula can be found in the current context. If any column or table specified by the formula cannot be found, an error is returned.  
   
