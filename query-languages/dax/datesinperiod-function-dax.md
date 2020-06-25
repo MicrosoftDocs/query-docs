@@ -51,7 +51,7 @@ The following **Sales** table measure definition uses the DATESINPERIOD function
 
 Notice that the formula uses the [MAX](max-function-dax.md) function. This function returns the latest date that's in the filter context. So, the DATESINPERIOD function returns a table of dates beginning from the latest date for the last year.
 
-[!INCLUDE [power-bi-dax-model-sample](includes/power-bi-dax-model-sample.md)]
+[!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
 
 ```dax
 Revenue PY =

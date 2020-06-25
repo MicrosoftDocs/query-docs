@@ -42,7 +42,7 @@ The following **Product** table calculated column definitions use the IF functio
 
 The first example tests whether the **List Price** column value is less than 500. When this condition is true, the value **Low** is returned. Because there's no **value_if_false** value, BLANK is returned.
 
-[!INCLUDE [power-bi-dax-model-sample](includes/power-bi-dax-model-sample.md)]
+[!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
 
 ```dax
 Price Group =

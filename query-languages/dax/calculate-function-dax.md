@@ -85,7 +85,7 @@ The CALCULATE function used _without filters_ achieves a specific requirement. I
 
 The following **Sales** table measure definition produces a revenue result, but only for products that have the color blue.
 
-[!INCLUDE [power-bi-dax-model-sample](includes/power-bi-dax-model-sample.md)]
+[!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
 
 ```dax
 Blue Revenue =

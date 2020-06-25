@@ -1,7 +1,7 @@
 ---
 title: "FORMAT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/24/2020
+ms.date: 06/25/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -54,10 +54,10 @@ All predefined formatting strings use the current user locale when formatting th
 
 |Formula|Description|Result|
 |-----------|---------------|----------|
-|=FORMAT(SUM(Sales[Sales Amount]), "Currency")|Formats the number using a pre-defined format|$1,234.56 (for US locale)|
+|=FORMAT(SUM(Sales[Sales Amount]), "Currency")|Formats the number using a pre-defined format|$1,234.56 (for en-US locale)|
 |=FORMAT(SUM(Sales[Sales Amount]), "$#,##0")|Formats the number using a custom format|$1,234|
-|=FORMAT('Date'[Date], "Short Date")|Formats the date using a pre-defined format|06/24/2020 (for US locale)|
-|=FORMAT('Date'[Date], "dd/mm/yyyy")|Formats the date using a custom format|24/06/2020|
+|=FORMAT('Date'[Date], "Short Date")|Formats the date using a pre-defined format|06/25/2020 (for en-US locale)|
+|=FORMAT('Date'[Date], "dd/mm/yyyy")|Formats the date using a custom format|25/06/2020|
 
 ## See also
 
