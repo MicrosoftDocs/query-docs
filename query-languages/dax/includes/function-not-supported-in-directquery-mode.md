@@ -1,0 +1,1 @@
+This DAX function isn't supported for use in DirectQuery mode. For more information, see [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).

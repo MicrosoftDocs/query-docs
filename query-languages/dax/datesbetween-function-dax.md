@@ -37,7 +37,7 @@ A table containing a single column of date values.
 
 ## Remarks
 
-Ideally, **dates** is a reference to the date column of a marked date table. For more information, see [Creating date tables in Power BI Desktop](/power-bi/guidance/model-date-table).
+Ideally, **dates** is a reference to the date column of a marked date table.
 
 If **start_date** is BLANK, then **start_date** will be the earliest value in the **dates** column.
 
@@ -47,7 +47,7 @@ Dates used as the **start_date** and **end_date** are inclusive. So, for example
 
 The returned table can only contain dates stored in the **dates** column. So, for example, if the **dates** column starts from July 1, 2017, and the **start_date** value is July 1, 2016, the returned table will start from July 1, 2017.
 
-This DAX function isn't supported for use in DirectQuery mode. For more information, see [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).
+[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example
 
@@ -55,7 +55,7 @@ The following **Sales** table measure definition uses the DATESBETWEEN function 
 
 Notice that the formula uses the [MAX](max-function-dax.md) function. This function returns the latest date that's in the filter context. So, the DATESBETWEEN function returns a table of dates beginning from the earliest date until the latest date being reported.
 
-_All examples in this article can be added to the sample model. To obtain the model, see [DAX model sample](https://aka.ms/dax-docs-samples)._
+[!INCLUDE [power-bi-dax-model-sample](includes/power-bi-dax-model-sample.md)]
 
 ```dax
 Customers LTD =

@@ -27,7 +27,7 @@ DATESINPERIOD(<dates>, <start_date>, <number_of_intervals>, <interval>)
 |dates|A date column from a marked date table.|
 |start_date|A date expression.|
 |number_of_intervals|An integer that specifies the number of intervals to add to, or subtract from, the dates.|
-|interval|The interval by which to shift the dates. The value for interval can be one of the following: `YEAR`, `QUARTER`, `MONTH`, and `DAY`|
+|interval|The interval by which to shift the dates. The value for interval can be one of the following: `DAY`, `MONTH`, `QUARTER`, and `YEAR`|
 
 ## Return value
 
@@ -35,7 +35,7 @@ A table containing a single column of date values.
 
 ## Remarks
 
-Ideally, **dates** is a reference to the date column of a marked date table. For more information, see [Creating date tables in Power BI Desktop](/power-bi/guidance/model-date-table).
+Ideally, **dates** is a reference to the date column of a marked date table.
 
 If the number specified for **number_of_intervals** is positive, dates are moved forward in time; if the number is negative, dates are shifted backward in time.
 
@@ -43,7 +43,7 @@ The **interval** parameter is an enumeration. Valid values are `DAY`, `MONTH`, `
 
 The returned table can only contain dates stored in the **dates** column. So, for example, if the **dates** column starts from July 1, 2017, and the **start_date** value is July 1, 2016, the returned table will start from July 1, 2017.
 
-This DAX function isn't supported for use in DirectQuery mode. For more information, see [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).
+[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example
 
@@ -51,7 +51,7 @@ The following **Sales** table measure definition uses the DATESINPERIOD function
 
 Notice that the formula uses the [MAX](max-function-dax.md) function. This function returns the latest date that's in the filter context. So, the DATESINPERIOD function returns a table of dates beginning from the latest date for the last year.
 
-_All examples in this article can be added to the sample model. To obtain the model, see [DAX model sample](https://aka.ms/dax-docs-samples)._
+[!INCLUDE [power-bi-dax-model-sample](includes/power-bi-dax-model-sample.md)]
 
 ```dax
 Revenue Prior Year =

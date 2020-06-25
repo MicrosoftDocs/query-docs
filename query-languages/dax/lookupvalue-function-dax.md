@@ -15,7 +15,13 @@ Returns the value for the row that meets all criteria specified by search condit
 ## Syntax
 
 ```dax
-LOOKUPVALUE(<result_columnName>, <search_columnName>, <search_value>[, <search2_columnName>, <search2_value>]…[, <alternateResult>])
+LOOKUPVALUE(
+    <result_columnName>,
+    <search_columnName>,
+    <search_value>
+    [, <search2_columnName>, <search2_value>]…
+    [, <alternateResult>]
+)
 ```
 
 ### Parameters
@@ -52,3 +58,4 @@ Notice that the [USERNAME](username-function-dax.md) function, which retrieves t
 ## See also
 
 - [RELATED function (DAX)](related-function-dax.md)
+- [DAX function reference](dax-function-reference.md)
