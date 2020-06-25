@@ -1,7 +1,7 @@
 ---
 title: "CALCULATE function (DAX) | Microsoft Docs"
 ms.service: powerbi
-ms.date: 12/10/2018
+ms.date: 06/25/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -28,7 +28,7 @@ CALCULATE(<expression>[, <filter1> [, <filter2> [, …]]])
 |Term|Definition|
 |--------|--------------|
 |expression|The expression to be evaluated.|
-|filter1, filter2,…|(Optional) Boolean expression or table expression that defines a filter, or a filter modifier function.|
+|filter1, filter2,…|(Optional) Boolean expressions or table expressions that defines filters, or filter modifier functions.|
 
 The expression used as the first parameter is essentially the same as a measure.
 
@@ -51,7 +51,7 @@ A Boolean expression filter is an expression that evaluates to TRUE or FALSE. Th
 
 #### Table filter expression
 
-A table expression filter applies a table object as a filter. It could be a reference to a model table, but more likely it's a DAX function that returns a table object. You can use the [FILTER](filter-function-dax.md) function to apply complex filter conditions, including those that cannot be defined by a Boolean filter expression.
+A table expression filter applies a table object as a filter. It could be a reference to a model table, but more likely it's a function that returns a table object. You can use the [FILTER](filter-function-dax.md) function to apply complex filter conditions, including those that cannot be defined by a Boolean filter expression.
 
 #### Filter modifier functions
 
@@ -59,11 +59,11 @@ Filter modification functions allow you to do more than simply add filters. They
 
 |Function|Purpose|
 |--------|--------------|
-|[REMOVEFILTERS](removefilters-function-dax.md)|Remove filters from one or more columns, or from all columns of a single table.]
+|[REMOVEFILTERS](removefilters-function-dax.md)|Remove filters from one or more columns, or from all columns of a single table.|
 |[ALL](all-function-dax.md) <sup>1</sup>, [ALLEXCEPT](allexcept-function-dax.md), [ALLNOBLANKROW](allnoblankrow-function-dax.md)|Remove filters from one or more columns, or from all columns of a single table.|
 |[KEEPFILTERS](keepfilters-function-dax.md)|Preserve filters.|
 |[USERELATIONSHIP](userelationship-function-dax.md)|Engage an inactive relationship between related columns, in which case the active relationship will automatically become inactive.|
-|[CROSSFILTER](crossfilter-function-dax.md)|Modify filter direction (from both to single, or from single to both), or disable a relationship.|
+|[CROSSFILTER](crossfilter-function.md)|Modify filter direction (from both to single, or from single to both) or disable a relationship.|
 |[TREATAS](treatas-function.md)|Define new—or virtual—model relationships.|
 
 <sup>1</sup> The ALL function and its variants behave as both filter modifiers and as functions that return table objects of distinct values. If the REMOVEFILTERS function is supported by your tool, it's better to use it to remove filters.
@@ -79,7 +79,7 @@ When filter expressions are provided, the CALCULATE function modifies the filter
 - If the columns (or tables) aren't in the filter context, then new filters will be added to the filter context to evaluate the expression.
 - If the columns (or tables) are already in the filter context, the existing filters will be overwritten by the new filters to evaluate the CALCULATE expression.
 
-The CALCULATE function used _without filters_ achieves a specific requirement. It transitions row context to filter context. It's required when an expression (not a model measure) to summarize model data needs to be evaluated in row context. This scenario can happen in a calculated column formula or when an expression in an iterator function is evaluated.
+The CALCULATE function used _without filters_ achieves a specific requirement. It transitions row context to filter context. It's required when an expression (not a model measure) that summarizes model data needs to be evaluated in row context. This scenario can happen in a calculated column formula or when an expression in an iterator function is evaluated. Note that when a model measure is used in row context, context transition is automatic.
 
 ## Examples
 
@@ -124,9 +124,9 @@ DIVIDE(
 )
 ```
 
-The [DIVIDE](divide-function-dax.md) function divides an expression that sums of the **Sales** table **Sales Amount** column value (in the filter context) by the same expression but in a modified filter context. It's the CALCULATE function that modifies the filter context by using the REMOVEFILTERS function. The function is a filter modifier function. It removes filters from the **Sales Order** table **Channel** column.
+The [DIVIDE](divide-function-dax.md) function divides an expression that sums of the **Sales** table **Sales Amount** column value (in the filter context) by the same expression in a modified filter context. It's the CALCULATE function that modifies the filter context by using the REMOVEFILTERS function, which is a filter modifier function. It removes filters from the **Sales Order** table **Channel** column.
 
-The following **Customer** table calculated column definition classifies customers into a loyalty class.  It's a very simple scenario: When the revenue produced by the customer is less than $2500, they're classified as "Low"; otherwise they’re "High".
+The following **Customer** table calculated column definition classifies customers into a loyalty class.  It's a very simple scenario: When the revenue produced by the customer is less than $2500, they're classified as _Low_; otherwise they're _High_.
 
 ```dax
 Customer Segment =

@@ -27,7 +27,7 @@ DAX information functions look at the cell or row that is provided as an argumen
 |[ISNUMBER](isnumber-function-dax.md)      | Checks whether a value is a number, and returns TRUE or FALSE.        |
 |[ISONORAFTER](isonorafter-function-dax.md)     | A boolean function that emulates the behavior of a Start At clause and returns true for a row that meets all of the condition parameters.        |
 |[ISTEXT](istext-function-dax.md)     | Checks if a value is text, and returns TRUE or FALSE.          |
-|[LOOKUPVALUE](lookupvalue-function-dax.md)    | Returns the value in *result_columnName* for the row that meets all criteria specified by *search_columnName* and *search_value*.         |
+|[LOOKUPVALUE](lookupvalue-function-dax.md)    | Returns the value for the row that meets all criteria specified by search conditions. The function can apply one or more search conditions.        |
 |[USERNAME](username-function-dax.md)    |  Returns the domain name and username from the credentials given to the system at connection time.        |
 |[USEROBJECTID](userobjectid-function-dax.md)    |  Returns the current user's Object ID or SID.       |
 |[USERPRINCIPALNAME](userprincipalname-function-dax.md)    |  Returns the user principal name.       |

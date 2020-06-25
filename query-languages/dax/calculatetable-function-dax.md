@@ -28,7 +28,7 @@ CALCULATETABLE(<expression>[, <filter1> [, <filter2> [, …]]])
 |Term|Definition|  
 |--------|--------------|  
 |expression|The table expression to be evaluated.|
-|filter1, filter2,…|(Optional) Boolean expression or table expression that defines a filter, or a filter modifier function.|
+|filter1, filter2,…|(Optional) Boolean expressions or table expressions that defines filters, or filter modifier functions.|
 
 The expression used as the first parameter must be a model table or a function that returns a table.
 
@@ -51,7 +51,7 @@ A Boolean expression filter is an expression that evaluates to TRUE or FALSE. Th
 
 #### Table filter expression
 
-A table expression filter applies a table object as a filter. It could be a reference to a model table, but more likely it's a DAX function that returns a table object. You can use the [FILTER](filter-function-dax.md) function to apply complex filter conditions, including those that cannot be defined by a Boolean filter expression.
+A table expression filter applies a table object as a filter. It could be a reference to a model table, but more likely it's a function that returns a table object. You can use the [FILTER](filter-function-dax.md) function to apply complex filter conditions, including those that cannot be defined by a Boolean filter expression.
 
 #### Filter modifier functions
 
@@ -59,11 +59,11 @@ Filter modification functions allow you to do more than simply add filters. They
 
 |Function|Purpose|
 |--------|--------------|
-|[REMOVEFILTERS](removefilters-function-dax.md)|Remove filters from one or more columns, or from all columns of a single table.]
+|[REMOVEFILTERS](removefilters-function-dax.md)|Remove filters from one or more columns, or from all columns of a single table.|
 |[ALL](all-function-dax.md) <sup>1</sup>, [ALLEXCEPT](allexcept-function-dax.md), [ALLNOBLANKROW](allnoblankrow-function-dax.md)|Remove filters from one or more columns, or from all columns of a single table.|
 |[KEEPFILTERS](keepfilters-function-dax.md)|Preserve filters.|
 |[USERELATIONSHIP](userelationship-function-dax.md)|Engage an inactive relationship between related columns, in which case the active relationship will automatically become inactive.|
-|[CROSSFILTER](crossfilter-function-dax.md)|Modify filter direction (from both to single, or from single to both), or disable a relationship.|
+|[CROSSFILTER](crossfilter-function.md)|Modify filter direction (from both to single, or from single to both) or disable a relationship.|
 |[TREATAS](treatas-function.md)|Define new—or virtual—model relationships.|
 
 <sup>1</sup> The ALL function and its variants behave as both filter modifiers and as functions that return table objects of distinct values. If the REMOVEFILTERS function is supported by your tool, it's better to use it to remove filters.
@@ -77,7 +77,7 @@ A table of values.
 When filter expressions are provided, the CALCULATETABLE function modifies the filter context to evaluate the expression. For each filter expression, there are two possible standard outcomes:
 
 - If the columns (or tables) aren't in the filter context, then new filters will be added to the filter context to evaluate the expression.
-- If the columns (or tables) are already in the filter context, the existing filters will be overwritten by the new filters to evaluate the CALCULATE expression.
+- If the columns (or tables) are already in the filter context, the existing filters will be overwritten by the new filters to evaluate the CALCULATETABLE expression.
 
 ## Example
 
