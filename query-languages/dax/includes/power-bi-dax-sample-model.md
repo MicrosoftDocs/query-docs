@@ -1,0 +1,1 @@
+_Examples in this article can be added to the sample model. To obtain the model, see [Power BI DAX sample model](https://aka.ms/dax-docs-samples)._

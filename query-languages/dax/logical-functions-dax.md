@@ -2,7 +2,7 @@
 title: "Logical functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
 
-ms.date: 03/27/2020
+ms.date: 06/30/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -21,7 +21,7 @@ Logical functions act upon an expression to return information about the values 
 |[AND](and-function-dax.md)      | Checks whether both arguments are TRUE, and returns TRUE if both arguments are TRUE.        |
 |[COALESCE](coalesce-function-dax.md)|Returns the first expression that does not evaluate to BLANK.|
 |[FALSE](false-function-dax.md)      | Returns the logical value FALSE.         |
-|[IF](if-function-dax.md)      | Checks if a condition provided as the first argument is met.        |
+|[IF](if-function-dax.md)      | Checks a condition, and returns one value when it's TRUE, otherwise it returns a second value.        |
 |[IF.EAGER](ifeager-function-dax.md)      | Uses eager execution to check if a condition provided as the first argument is met.        |
 |[IFERROR](iferror-function-dax.md)      |  Evaluates an expression and returns a specified value if the expression returns an error       |
 |[NOT](not-function-dax.md)     | Changes FALSE to TRUE, or TRUE to FALSE.          |

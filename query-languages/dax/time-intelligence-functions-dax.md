@@ -1,7 +1,7 @@
 ---
 title: "Time-intelligence functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 05/18/2020
+ms.date: 06/30/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -20,8 +20,8 @@ Data Analysis Expressions (DAX) includes time-intelligence functions that enable
 |[CLOSINGBALANCEQUARTER](closingbalancequarter-function-dax.md)       | Evaluates the expression at the last date of the quarter in the current context.          |
 |[CLOSINGBALANCEYEAR](closingbalanceyear-function-dax.md)      |  Evaluates the expression at the last date of the year in the current context.       |
 |[DATEADD](dateadd-function-dax.md)      |  Returns a table that contains a column of dates, shifted either forward or backward in time by the specified number of intervals from the dates in the current context.       |
-|[DATESBETWEEN](datesbetween-function-dax.md)      |   Returns a table that contains a column of dates that begins with the start_date and continues until the end_date.        |
-|[DATESINPERIOD](datesinperiod-function-dax.md)      |  Returns a table that contains a column of dates that begins with the start_date and continues for the specified number_of_intervals.        |
+|[DATESBETWEEN](datesbetween-function-dax.md)      |   Returns a table that contains a column of dates that begins with a specified start date and continues until a specified end date.        |
+|[DATESINPERIOD](datesinperiod-function-dax.md)      |  Returns a table that contains a column of dates that begins with a specified start date and continues for the specified number and type of date intervals.     |
 |[DATESMTD](datesmtd-function-dax.md)      |  Returns a table that contains a column of the dates for the month to date, in the current context.         |
 |[DATESQTD](datesqtd-function-dax.md)      |  Returns a table that contains a column of the dates for the quarter to date, in the current context.         |
 |[DATESYTD](datesytd-function-dax.md)      |  Returns a table that contains a column of the dates for the year to date, in the current context.        |
