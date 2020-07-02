@@ -26,10 +26,12 @@ DATEDIFF(<start_date>, <end_date>, <interval>)
 |end_date|A scalar datetime value Return value.|  
 |interval|The interval to use when comparing dates. The value can be one of the following:<br /><br />-   SECOND<br />-   MINUTE<br />-   HOUR<br />-   DAY<br />-   WEEK<br />-   MONTH<br />-   QUARTER<br />-   YEAR|  
   
-## Return value  
+## Return value
+
 The count of interval boundaries crossed between two dates.  
   
-## Remarks  
+## Remarks
+
 An error is returned if start_date is larger than end_date.  
   
 ## Example  

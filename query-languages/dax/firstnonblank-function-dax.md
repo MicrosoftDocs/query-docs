@@ -41,7 +41,7 @@ The **column** argument can be any of the following:
   
 This function is typically used to return the first value of a column for which the expression is not blank. For example, you could get the last value for which there were sales of a product.  
   
-This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
+This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).   
   
 ## See also  
 [LASTNONBLANK function &#40;DAX&#41;](lastnonblank-function-dax.md)  

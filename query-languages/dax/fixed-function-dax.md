@@ -37,7 +37,7 @@ If **no_commas** is 0 or is omitted, then the returned text includes commas as u
   
 The major difference between formatting a cell containing a number by using a command and formatting a number directly with the FIXED function is that FIXED converts its result to text. A number formatted with a command from the formatting menu is still a number.  
   
-This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
+This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).   
   
 ## Example  
 The following example gets the numeric value for the current row in column, PctCost, and returns it as text with 4 decimal places and no commas.  
