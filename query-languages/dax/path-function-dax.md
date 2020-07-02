@@ -46,7 +46,7 @@ The path is not constrained to a single level of parent-child relationships; it 
   
 -   If *ID_columnName* contains a vertical bar '|' then PATH() returns an error.  
   
-This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).   
+This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172). 
   
 ## Example  
 The following example creates a calculated column that lists all the managers for each employee.  

@@ -30,7 +30,7 @@ A value of **TRUE** if *item* exists in *path*; otherwise **FALSE**.
 ## Remarks  
 If *item* is an integer number it is converted to text and then the function is evaluated. If conversion fails then the function returns an error.  
   
-This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).   
+This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172). 
   
 ## Example  
 The following example creates a calculated column that takes a manager ID and checks a set of employees. If the manager ID is among the list of managers returned by the PATH function, the PATHCONTAINS function returns true; otherwise it returns false.  

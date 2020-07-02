@@ -28,7 +28,7 @@ RANDBETWEEN(<bottom>,<top>)
 A whole number.  
   
 ## Remarks  
-This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).   
+This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172). 
   
 ## Example  
 The following formula returns a random number between 1 and 10.  

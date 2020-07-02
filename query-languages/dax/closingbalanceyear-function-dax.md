@@ -48,7 +48,7 @@ A scalar value that represents the **expression** evaluated at the last date of 
     > [!NOTE]  
     > The **filter** expression has restrictions described in [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
   
-- This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).
+- This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).
 
 ## Example
 
