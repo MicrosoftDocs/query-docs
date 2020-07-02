@@ -32,6 +32,6 @@ Returns the inverse hyperbolic cosine of a number.
   
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
-|=ACOSH(1)|Inverse hyperbolic cosine of 1.|0|  
-|=ACOSH(10)|Inverse hyperbolic cosine of 10.|2.993228|  
+|= ACOSH(1)|Inverse hyperbolic cosine of 1.|0|  
+|= ACOSH(10)|Inverse hyperbolic cosine of 10.|2.993228|  
   
