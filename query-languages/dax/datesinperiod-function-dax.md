@@ -42,7 +42,7 @@ The **interval** parameter is an enumeration, not a set of strings; therefore va
   
 The result table includes only dates that appear in the values of the underlying table column.  
   
-This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
+This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172). 
   
 ## Example  
 The following formula returns the Internet sales for the 21 days prior to August 24, 2007.  

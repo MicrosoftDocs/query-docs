@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # COSH
+
 Returns the hyperbolic cosine of a number.  
   
 ## Syntax  
@@ -23,10 +24,12 @@ COSH(number)
 |--------|--------------|  
 |number|Required. Any real number for which you want to find the hyperbolic cosine.|  
   
-## Return value  
+## Return value
+
 The hyperbolic cosine of a number.  
   
-## Remarks  
+## Remarks
+
 The formula for the hyperbolic cosine is:  
   
 ![Formula](media/dax-cosh-formula.png)  
@@ -35,6 +38,5 @@ The formula for the hyperbolic cosine is:
   
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
-|=COSH(4)|Hyperbolic cosine of 4|27.308233|  
-|=COSH(EXP(1))|Hyperbolic cosine of the base of the natural logarithm.|7.6101251|  
-  
+|= COSH(4)|Hyperbolic cosine of 4|27.308233|  
+|= COSH(EXP(1))|Hyperbolic cosine of the base of the natural logarithm.|7.6101251|  

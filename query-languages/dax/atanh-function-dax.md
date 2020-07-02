@@ -32,8 +32,8 @@ Returns the inverse hyperbolic tangent of a number.
   
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
-|=ATANH(0.76159416)|Inverse hyperbolic tangent of 0.76159416|1.00000001|  
-|=ATANH(-0.1)||-0.100335348|  
+|= ATANH(0.76159416)|Inverse hyperbolic tangent of 0.76159416|1.00000001|  
+|= ATANH(-0.1)||-0.100335348|  
 ||||  
   
 ## See also

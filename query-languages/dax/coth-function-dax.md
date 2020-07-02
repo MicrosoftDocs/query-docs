@@ -30,16 +30,17 @@ The hyperbolic cotangent of the given angle.
   
 ## Remarks
 
-The hyperbolic cotangent is an analog of the ordinary (circular) cotangent.
+- The hyperbolic cotangent is an analog of the ordinary (circular) cotangent.
 
-The absolute value of number must be less than 2^27 and cannot be 0.
+- The absolute value of number must be less than 2^27 and cannot be 0.
 
-If number is outside its constraints, an error is returned
+- If number is outside its constraints, an error is returned
 
-If number is a non-numeric value, an error is returned.
+- If number is a non-numeric value, an error is returned.
 
-The following equation is used:  
-:::image type="content" source="media/dax-coth-formula.png" alt-text="COTH formula":::
+- The following equation is used:
+  
+  ![COTH formula](media/dax-coth-formula.png)
 
 ## Example  
   
@@ -54,4 +55,3 @@ Returns
 |[Value] |
 |---------|
 |1.03731472072755   |
-  

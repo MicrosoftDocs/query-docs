@@ -36,5 +36,5 @@ If you want to convert the result from radians to degrees, multiply it by 180/PI
   
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
-|=ACOS(-0.5)|Arccosine of -0.5 in radians, 2*pi/3.|2.094395102|  
-|=ACOS(-0.5)*180/PI()|Arccosine of -0.5 in degrees.|120|
+|= ACOS(-0.5)|Arccosine of -0.5 in radians, 2*pi/3.|2.094395102|  
+|= ACOS(-0.5)*180/PI()|Arccosine of -0.5 in degrees.|120|

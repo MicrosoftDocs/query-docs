@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # CUSTOMDATA
+
 Returns the content of the **CustomData** property in the connection string.  
   
 ## Syntax  
@@ -17,18 +18,16 @@ Returns the content of the **CustomData** property in the connection string.
 CUSTOMDATA()  
 ```
   
-## Return value  
+## Return value
+
 The content of the **CustomData** property in the connection string.  
   
 Blank, if **CustomData** property was not defined at connection time.  
-  
-## Exceptions  
-  
-## Remarks  
-  
-## Example  
-The following DAX code verifies if the CustomData property was set to **"OK"**.  
+
+## Example
+
+The following DAX formula verifies if the CustomData property was set to **"OK"**.  
   
 ```dax
-=IF(CUSTOMDATA()="OK", "Correct Custom data in connection string", "No custom data in connection string property or unexpected value")  
+= IF(CUSTOMDATA()="OK", "Correct Custom data in connection string", "No custom data in connection string property or unexpected value")  
 ```

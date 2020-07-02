@@ -37,7 +37,7 @@ The **AND** function in DAX accepts only two (2) arguments. If you need to perfo
 The following formula shows the syntax of the AND function.  
   
 ```dax
-=IF(AND(10 > 9, -10 < -1), "All true", "One or more false"  
+= IF(AND(10 > 9, -10 < -1), "All true", "One or more false"  
 ```
 
 Because both conditions, passed as arguments, to the AND function are true, the formula returns "All True".  
