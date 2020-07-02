@@ -30,26 +30,24 @@ A whole number.
   
 ## Remarks
 
-The only argument allowed to this function is a column. The COUNT function counts rows that contain the following kinds of values:  
+- The only argument allowed to this function is a column. The COUNT function counts rows that contain the following kinds of values:  
   
-- Numbers  
+  - Numbers  
+  - Dates  
+  - Strings
   
-- Dates  
+- When the function finds no rows to count, it returns a blank.
 
-- Strings
-  
-When the function finds no rows to count, it returns a blank.
+- Blank values are skipped. TRUE/FALSE values are not supported.
 
-Blank values are skipped. TRUE/FALSE values are not supported.
-
-If you want to evaluate a column of TRUE/FALSE values, use the COUNTA function.
+- If you want to evaluate a column of TRUE/FALSE values, use the COUNTA function.
 
 ## Example
 
 The following example shows how to count the number of values in the column, ShipDate.  
   
 ```dax
-=COUNT([ShipDate])  
+= COUNT([ShipDate])  
 ```
 
 To count logical values or text, use the COUNTA or COUNTAX functions.  
@@ -60,4 +58,3 @@ To count logical values or text, use the COUNTA or COUNTAX functions.
 [COUNTAX function &#40;DAX&#41;](countax-function-dax.md)  
 [COUNTX function &#40;DAX&#41;](countx-function-dax.md)  
 [Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
-  

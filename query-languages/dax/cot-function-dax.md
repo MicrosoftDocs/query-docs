@@ -30,11 +30,11 @@ The cotangent of the given angle.
   
 ## Remarks
 
-The absolute value of number must be less than 2^27 and cannot be 0.
+- The absolute value of number must be less than 2^27 and cannot be 0.
 
-If number is outside its constraints, an error is returned.
+- If number is outside its constraints, an error is returned.
 
-If number is a non-numeric value, an error is returned.
+- If number is a non-numeric value, an error is returned.
 
 ## Example  
   
@@ -49,4 +49,3 @@ Returns
 |[Value] |
 |---------|
 |-0.156119952161659    |
-  

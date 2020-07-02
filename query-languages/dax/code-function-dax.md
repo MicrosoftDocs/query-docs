@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # CODE
+
 Returns a numeric code for the first character in a text string. The returned code corresponds to the character set used by your computer.  
   
 |Operating environment|Character set|  
@@ -28,7 +29,8 @@ CODE(text)
 |--------|--------------|  
 |text|The text for which you want the code of the first character.|  
   
-## Return value  
+## Return value
+
 A numeric code for the first character in a text string.  
   
 ## Example  
@@ -37,4 +39,3 @@ A numeric code for the first character in a text string.
 |-----------|---------------|----------|  
 |=CODE("A")|Displays the numeric code for A|65|  
 |=CODE("!")|Displays the numeric code for !|33|  
-  

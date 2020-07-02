@@ -30,19 +30,16 @@ A decimal number.
   
 ## Remarks
 
-The AVERAGEA function takes a column and averages the numbers in it, but also handles non-numeric data types according to the following rules:  
+- The AVERAGEA function takes a column and averages the numbers in it, but also handles non-numeric data types according to the following rules:  
   
-- Values that evaluates to TRUE count as 1.  
+  - Values that evaluates to TRUE count as 1.  
+  - Values that evaluate to FALSE count as 0 (zero).  
+  - Values that contain non-numeric text count as 0 (zero).  
+  - Empty text ("") counts as 0 (zero).  
   
-- Values that evaluate to FALSE count as 0 (zero).  
+- If you do not want to include logical values and text representations of numbers in a reference as part of the calculation, use the AVERAGE function.  
   
-- Values that contain non-numeric text count as 0 (zero).  
-  
-- Empty text ("") counts as 0 (zero).  
-  
-If you do not want to include logical values and text representations of numbers in a reference as part of the calculation, use the AVERAGE function.  
-  
-Whenever there are no rows to aggregate, the function returns a blank.  However, if there are rows, but none of them meet the specified criteria, the function returns 0. Microsoft Excel also returns a zero if no rows are found that meet the conditions.  
+- Whenever there are no rows to aggregate, the function returns a blank.  However, if there are rows, but none of them meet the specified criteria, the function returns 0. Microsoft Excel also returns a zero if no rows are found that meet the conditions.  
   
 ## Example
 
@@ -57,7 +54,7 @@ The following example returns the average of non-blank cells in the referenced c
 |0000126|TRUE|Counts as 1|  
   
 ```dax
-=AVERAGEA([Amount])  
+= AVERAGEA([Amount])  
 ```
   
 ## See also

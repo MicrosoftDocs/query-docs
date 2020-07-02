@@ -34,12 +34,12 @@ Returns the beta distribution.
   
 ## Remarks
 
-If any argument is nonnumeric, BETA.DIST returns the #VALUE! error value. 
+- If any argument is nonnumeric, BETA.DIST returns the #VALUE! error value.
 
-If any argument is not an integer, it is rounded. 
+- If any argument is not an integer, it is rounded. 
   
-If alpha ≤ 0 or beta ≤ 0, BETA.DIST returns the #NUM! error value.  
+- If alpha ≤ 0 or beta ≤ 0, BETA.DIST returns the #NUM! error value.  
   
-If x &lt; A, x &gt; B, or A = B, BETA.DIST returns the #NUM! error value.  
+- If x &lt; A, x &gt; B, or A = B, BETA.DIST returns the #NUM! error value.  
   
-If you omit values for A and B, BETA.DIST uses the standard cumulative beta distribution, so that A = 0 and B = 1.  
+- If you omit values for A and B, BETA.DIST uses the standard cumulative beta distribution, so that A = 0 and B = 1.  

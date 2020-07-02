@@ -32,5 +32,5 @@ Returns the inverse hyperbolic sine of a number.
   
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
-|=ASINH(-2.5)|Inverse hyperbolic sine of -2.5|-1.647231146|  
-|=ASINH(10)|Inverse hyperbolic sine of 10|2.99822295|  
+|= ASINH(-2.5)|Inverse hyperbolic sine of -2.5|-1.647231146|  
+|= ASINH(10)|Inverse hyperbolic sine of 10|2.99822295|  

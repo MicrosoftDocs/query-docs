@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # DATESMTD
+
 Returns a table that contains a column of the dates for the month to date, in the current context.  
   
 ## Syntax  
@@ -24,34 +25,36 @@ DATESMTD(<dates>)
 |Term|Definition|  
 |dates|A column that contains dates.|  
   
-## Property Value/Return value  
+## Return value
+
 A table containing a single column of date values.  
   
-## Remarks  
+## Remarks
+
 The **dates** argument can be any of the following:  
   
--   A reference to a date/time column.  
+- A reference to a date/time column.  
   
--   A table expression that returns a single column of date/time values.  
+- A table expression that returns a single column of date/time values.  
   
--   A Boolean expression that defines a single-column table of date/time values.  
+- A Boolean expression that defines a single-column table of date/time values.  
   
-> [!NOTE]  
-> Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
+    > [!NOTE]  
+    > Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
   
-This DAX function is not supported for use in DirectQuery mode. For more information about limitations in DirectQuery models, see  [https://go.microsoft.com/fwlink/?LinkId=219172](https://go.microsoft.com/fwlink/?LinkId=219172).  
+- This function is not optimized for use in DirectQuery mode. To learn more, see [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).
   
-## Example  
+## Example
+
 The following sample formula creates a measure that calculates the 'Month To Date Total' for Internet Sales.  
   
 ```dax
-=CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESMTD(DateTime[DateKey]))  
+= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESMTD(DateTime[DateKey]))  
 ```
   
-## See also  
+## See also
+
 [Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
 [Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
 [DATESYTD function &#40;DAX&#41;](datesytd-function-dax.md)  
-[DATESQTD function &#40;DAX&#41;](datesqtd-function-dax.md)  
- 
-  
+[DATESQTD function &#40;DAX&#41;](datesqtd-function-dax.md)

@@ -24,16 +24,16 @@ A blank.
   
 ## Remarks
 
-Blanks are not equivalent to nulls. DAX uses blanks for both database nulls and for blank cells in Excel.  
+- Blanks are not equivalent to nulls. DAX uses blanks for both database nulls and for blank cells in Excel.  
   
-Some DAX functions treat blank cells somewhat differently from Microsoft Excel. Blanks and empty strings ("") are not always equivalent, but some operations may treat them as such.
+- Some DAX functions treat blank cells somewhat differently from Microsoft Excel. Blanks and empty strings ("") are not always equivalent, but some operations may treat them as such.
   
 ## Example
 
 The following example illustrates how you can work with blanks in formulas. The formula calculates the ratio of sales between the Resellers and the Internet channels. However, before attempting to calculate the ratio the denominator should be checked for zero values. If the denominator is zero then a blank value should be returned; otherwise, the ratio is calculated.  
   
 ```dax
-=IF( SUM(InternetSales_USD[SalesAmount_USD])= 0   , BLANK()   , SUM(ResellerSales_USD[SalesAmount_USD])/SUM(InternetSales_USD[SalesAmount_USD])   )  
+= IF( SUM(InternetSales_USD[SalesAmount_USD])= 0   , BLANK()   , SUM(ResellerSales_USD[SalesAmount_USD])/SUM(InternetSales_USD[SalesAmount_USD])   )  
 ```
 
 The table shows the expected results when this formula is used to create a PivotTable.  

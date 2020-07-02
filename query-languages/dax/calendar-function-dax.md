@@ -10,7 +10,7 @@ ms.author: owend
 ---
 # CALENDAR
   
-Returns a table with a single column named “Date” that contains a contiguous set of dates. The range of dates is from the specified start date to the specified end date, inclusive of those two dates.  
+Returns a table with a single column named "Date" that contains a contiguous set of dates. The range of dates is from the specified start date to the specified end date, inclusive of those two dates.  
   
 ## Syntax  
   
@@ -25,18 +25,24 @@ CALENDAR(<start_date>, <end_date>)
 |start_date|Any DAX expression that returns a datetime value.|  
 |end_date|Any DAX expression that returns a datetime value.|  
   
-## Return value  
-Returns a table with a single column named “Date” containing a contiguous set of dates. The range of dates is from the specified start date to the specified end date, inclusive of those two dates.  
+## Return value
+
+Returns a table with a single column named "Date" containing a contiguous set of dates. The range of dates is from the specified start date to the specified end date, inclusive of those two dates.  
   
-## Remarks  
+## Remarks
+
 An error is returned if start_date is greater than end_date.  
   
-## Examples  
+## Examples
+
 The following formula returns a table with dates between January 1st, 2005 and December 31st, 2015.  
   
-`=CALENDAR (DATE (2005, 1, 1), DATE (2015, 12, 31))`  
+```dax
+= CALENDAR (DATE (2005, 1, 1), DATE (2015, 12, 31))
+```
   
 For a data model which includes actual sales data and future sales forecasts. The following expression returns the date table covering the range of dates in these two tables.  
   
-`=CALENDAR (MINX (Sales, [Date]), MAXX (Forecast, [Date]))`  
-  
+```dax
+= CALENDAR (MINX (Sales, [Date]), MAXX (Forecast, [Date]))
+```  

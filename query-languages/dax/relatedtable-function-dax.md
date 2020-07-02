@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # RELATEDTABLE
+
 Evaluates a table expression in a context modified by the given filters.  
   
 ## Syntax  
@@ -23,18 +24,21 @@ RELATEDTABLE(<tableName>)
 |--------|--------------|  
 |tableName|The name of an existing table using standard DAX syntax. It cannot be an expression.|  
   
-## Return value  
+## Return value
+
 A table of values.  
   
-## Remarks  
-The RELATEDTETABLE function changes the context in which the data is filtered, and evaluates the expression in the new context that you specify.  
+## Remarks
+
+- The RELATEDTETABLE function changes the context in which the data is filtered, and evaluates the expression in the new context that you specify.  
   
-This function is a shortcut for CALCULATETABLE function with no logical expression.  
+- This function is a shortcut for CALCULATETABLE function with no logical expression.  
   
-## Example  
+## Example
+
 The following example uses the RELATEDTABLE function to create a calculated column with the Internet Sales in the Product Category table.  
   
-The following table shows the results of using the code shown here.  
+The following table shows the results:  
   
 |||||  
 |-|-|-|-|  
@@ -49,7 +53,7 @@ The following table shows the results of using the code shown here.
      , [SalesAmount_USD])  
 ```
   
-## See also  
+## See also
+
 [CALCULATETABLE function &#40;DAX&#41;](calculatetable-function-dax.md)  
-[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
-  
+[Filter functions &#40;DAX&#41;](filter-functions-dax.md)
