@@ -70,7 +70,7 @@ The following examples use the date/time Thursday, June 25, 2020, at 1:23:45 PM.
 |`"dddd"`|Thursday|Donnerstag|
 |`"ddddd"`|06/25/2020|25.06.2020|
 |`"dddddd"`|Thursday, June 25, 2020|Donnerstag, 25. Juni 2020|
-|`"w"`|5|4|
+|`"w"`|5|5|
 |`"ww"`|26|26|
 |`"m"`|6|6|
 |`"mm"`|06|06|
