@@ -24,29 +24,30 @@ COMBIN(number, number_chosen)
 |number|The number of items.|  
 |number_chosen|The number of items in each combination.|  
   
-## Return value  
+## Return value
+
 Returns the number of combinations for a given number of items.  
   
-## Remarks  
-Numeric arguments are truncated to integers.  
-  
-If either argument is nonnumeric, COMBIN returns the #VALUE! error value.  
-  
-If number &lt; 0, number_chosen &lt; 0, or number &lt; number_chosen, COMBIN returns the #NUM! error value.  
-  
-A combination is any set or subset of items, regardless of their internal order. Combinations are distinct from permutations, for which the internal order is significant.  
-  
-The number of combinations is as follows, where number = n and number_chosen = k:  
+## Remarks
 
-![combin formula](media/dax-combin-formula1.png)
+- Numeric arguments are truncated to integers.  
   
-Where  
+- If either argument is nonnumeric, COMBIN returns the #VALUE! error value.  
+  
+- If number &lt; 0, number_chosen &lt; 0, or number &lt; number_chosen, COMBIN returns the #NUM! error value.  
+  
+- A combination is any set or subset of items, regardless of their internal order. Combinations are distinct from permutations, for which the internal order is significant.  
+  
+- The number of combinations is as follows, where number = n and number_chosen = k:  
 
-![combin formula result](media/dax-combin-formula2.png)
+    ![combin formula](media/dax-combin-formula1.png)
+  
+    Where  
+
+    ![combin formula result](media/dax-combin-formula2.png)
   
 ## Example  
   
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
 |=COMBIN(8,2)|Possible two-person teams that can be formed from 8 candidates.|28|  
-  

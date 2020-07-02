@@ -31,9 +31,9 @@ TRUE if find_text is a substring of within_text; otherwise FALSE.
 
 ## Remarks
 
-* CONTAINSSTRING is not case-sensitive.
-* You can use `?` and `*` wildcard characters. Use `~` to escape wildcard characters.
+- CONTAINSSTRING is not case-sensitive.
 
+- You can use `?` and `*` wildcard characters. Use `~` to escape wildcard characters.
 
 ## Example  
 
@@ -41,21 +41,16 @@ DAX query
 
 ```DAX
 EVALUATE
-	ROW(
-		"Case 1", CONTAINSSTRING("abcd", "bc"), 
-		"Case 2", CONTAINSSTRING("abcd", "BC"),
-		"Case 3", CONTAINSSTRING("abcd", "a*d"),
-		"Case 4", CONTAINSSTRING("abcd", "ef")
-	)
+    ROW(
+        "Case 1", CONTAINSSTRING("abcd", "bc"), 
+        "Case 2", CONTAINSSTRING("abcd", "BC"),
+        "Case 3", CONTAINSSTRING("abcd", "a*d"),
+        "Case 4", CONTAINSSTRING("abcd", "ef")
+    )
 ```
 
 Returns
 
-
 |[Case 1]  |[Case 2]  |[Case 3]  |[Case 4]  |
 |---------|---------|---------|---------|
 |TRUE     | TRUE         | TRUE         |FALSE          |
-
-
-
-  

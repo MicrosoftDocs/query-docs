@@ -42,7 +42,7 @@ If you want to count logical values, use the COUNTAX function.
 The following formula returns a count of all rows in the Product table that have a list price.  
   
 ```dax
-=COUNTX(Product,[ListPrice])  
+= COUNTX(Product,[ListPrice])  
 ```
   
 ## Example 2
@@ -50,7 +50,7 @@ The following formula returns a count of all rows in the Product table that have
 The following formula illustrates how to pass a filtered table to COUNTX for the first argument. The formula uses a filter expression to get only the rows in the Product table that meet the condition, ProductSubCategory = "Caps", and then counts the rows in the resulting table that have a list price. The FILTER expression applies to the table Products but uses a value that you look up in the related table, ProductSubCategory.  
   
 ```dax
-=COUNTX(FILTER(Product,RELATED(ProductSubcategory[EnglishProductSubcategoryName])="Caps", Product[ListPrice])  
+= COUNTX(FILTER(Product,RELATED(ProductSubcategory[EnglishProductSubcategoryName])="Caps", Product[ListPrice])  
 ```
   
 ## See also
@@ -59,4 +59,3 @@ The following formula illustrates how to pass a filtered table to COUNTX for the
 [COUNTA function &#40;DAX&#41;](counta-function-dax.md)  
 [COUNTAX function &#40;DAX&#41;](countax-function-dax.md)  
 [Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
-  

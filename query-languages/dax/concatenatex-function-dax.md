@@ -51,4 +51,3 @@ CONCATENATEX(Employees, [FirstName] &amp; " " &amp; [LastName], ",")
   
 Returns:  
 "Alan Brewer, Michael Blythe"  
-  

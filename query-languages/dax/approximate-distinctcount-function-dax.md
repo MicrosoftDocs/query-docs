@@ -31,9 +31,3 @@ The approximate number of distinct values in *column*.
 ## Remarks  
 
 The only argument to this function is a column. You can use columns containing any type of data. When the function finds no rows to count, it returns a BLANK, otherwise it returns the count of distinct values.
-
-This function is **preview**. The following limitations apply:
-
-- This function currently supports **DirectQuery** connections only to the following data sources: Azure SQL Database, Azure SQL Data Warehouse.
-
-- This feature is not yet available in Intellisense.
