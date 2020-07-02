@@ -31,7 +31,7 @@ TRUE if find_text is a substring of within_text; otherwise FALSE.
 
 ## Remarks
 
-* CONTAINSSTRINGEXACT is case-sensitive.
+CONTAINSSTRINGEXACT is case-sensitive.
 
 ## Example  
 
@@ -39,17 +39,16 @@ DAX query
 
 ```DAX
 EVALUATE
-	ROW(
-		"Case 1", CONTAINSSTRINGEXACT("abcd", "bc"), 
-		"Case 2", CONTAINSSTRINGEXACT("abcd", "BC"),
-		"Case 3", CONTAINSSTRINGEXACT("abcd", "a*d"),
-		"Case 4", CONTAINSSTRINGEXACT("abcd", "ef")
-	)
+    ROW(
+        "Case 1", CONTAINSSTRINGEXACT("abcd", "bc"), 
+        "Case 2", CONTAINSSTRINGEXACT("abcd", "BC"),
+        "Case 3", CONTAINSSTRINGEXACT("abcd", "a*d"),
+        "Case 4", CONTAINSSTRINGEXACT("abcd", "ef")
+    )
 
 ```
 
 Returns
-
 
 |[Case 1]  |[Case 2]  |[Case 3]  |[Case 4]  |
 |---------|---------|---------|---------|

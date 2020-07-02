@@ -37,7 +37,7 @@ When the function does not find any rows to count, the function returns a blank.
 The following example returns all rows in the `Reseller` table that have any kind of value in the column that stores phone numbers. Because the table name does not contain any spaces, the quotation marks are optional.  
   
 ```dax
-=COUNTA('Reseller'[Phone])  
+= COUNTA('Reseller'[Phone])  
 ```
   
 ## See also
@@ -46,4 +46,3 @@ The following example returns all rows in the `Reseller` table that have any kin
 [COUNTAX function &#40;DAX&#41;](countax-function-dax.md)  
 [COUNTX function &#40;DAX&#41;](countx-function-dax.md)  
 [Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
-  

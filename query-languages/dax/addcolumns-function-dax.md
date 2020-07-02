@@ -30,8 +30,6 @@ ADDCOLUMNS(<table>, <name>, <expression>[, <name>, <expression>]…)
 
 A table with all its original columns and the added ones.  
   
-## Remarks  
-  
 ## Example
 
 The following example returns an extended version of the Product Category table that includes total sales values from the reseller channel and the internet sales.  

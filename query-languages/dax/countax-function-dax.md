@@ -42,7 +42,7 @@ Whenever the function finds no rows to aggregate, the function returns a blank.
 The following example counts the number of nonblank rows in the column, Phone, using the table that results from filtering the Reseller table on [Status] = **Active**.  
   
 ```dax
-=COUNTAX(FILTER('Reseller',[Status]="Active"),[Phone])  
+= COUNTAX(FILTER('Reseller',[Status]="Active"),[Phone])  
 ```
   
 ## See also
@@ -51,4 +51,3 @@ The following example counts the number of nonblank rows in the column, Phone, u
 [COUNTA function &#40;DAX&#41;](counta-function-dax.md)  
 [COUNTX function &#40;DAX&#41;](countx-function-dax.md)  
 [Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
-  

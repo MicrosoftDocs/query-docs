@@ -33,9 +33,9 @@ The context of the query without any column and row filters.
   
 ## Remarks  
   
-If there is one argument, the argument is either *tableName* or *columnName*. If there is more than one argument, they must be columns from the same table.  
+- If there is one argument, the argument is either *tableName* or *columnName*. If there is more than one argument, they must be columns from the same table.  
   
-This function is different from ALL() because it retains all filters explicitly set within the query, and it retains all context filters other than row and column filters.  
+- This function is different from ALL() because it retains all filters explicitly set within the query, and it retains all context filters other than row and column filters.  
   
 ## Example
 

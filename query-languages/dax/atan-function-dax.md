@@ -36,5 +36,5 @@ To express the arctangent in degrees, multiply the result by 180/PI( ) or use th
   
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
-|=ATAN(1)|Arctangent of 1 in radians, pi/4|0.785398163|  
-|=ATAN(1)*180/PI()|Arctangent of 1 in degrees|45|  
+|= ATAN(1)|Arctangent of 1 in radians, pi/4|0.785398163|  
+|= ATAN(1)*180/PI()|Arctangent of 1 in degrees|45|  
