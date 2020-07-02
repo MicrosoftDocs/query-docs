@@ -1,7 +1,7 @@
 ---
 title: "CALCULATETABLE function (DAX) | Microsoft Docs"
 ms.service: powerbi
-ms.date: 06/25/2020
+ms.date: 06/30/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -59,14 +59,13 @@ Filter modification functions allow you to do more than simply add filters. They
 
 |Function|Purpose|
 |--------|--------------|
-|[REMOVEFILTERS](removefilters-function-dax.md)|Remove filters from one or more columns, or from all columns of a single table.|
+|[REMOVEFILTERS](removefilters-function-dax.md)|Remove all filters, or filters from one or more columns of a table, or from all columns of a single table.|
 |[ALL](all-function-dax.md) <sup>1</sup>, [ALLEXCEPT](allexcept-function-dax.md), [ALLNOBLANKROW](allnoblankrow-function-dax.md)|Remove filters from one or more columns, or from all columns of a single table.|
-|[KEEPFILTERS](keepfilters-function-dax.md)|Preserve filters.|
+|[KEEPFILTERS](keepfilters-function-dax.md)|Add filter without removing existing filters on the same columns.|
 |[USERELATIONSHIP](userelationship-function-dax.md)|Engage an inactive relationship between related columns, in which case the active relationship will automatically become inactive.|
 |[CROSSFILTER](crossfilter-function.md)|Modify filter direction (from both to single, or from single to both) or disable a relationship.|
-|[TREATAS](treatas-function.md)|Define new—or virtual—model relationships.|
 
-<sup>1</sup> The ALL function and its variants behave as both filter modifiers and as functions that return table objects of distinct values. If the REMOVEFILTERS function is supported by your tool, it's better to use it to remove filters.
+<sup>1</sup> The ALL function and its variants behave as both filter modifiers and as functions that return table objects. If the REMOVEFILTERS function is supported by your tool, it's better to use it to remove filters.
 
 ## Return value
 
@@ -74,7 +73,7 @@ A table of values.
 
 ## Remarks
 
-When filter expressions are provided, the CALCULATETABLE function modifies the filter context to evaluate the expression. For each filter expression, there are two possible standard outcomes:
+When filter expressions are provided, the CALCULATETABLE function modifies the filter context to evaluate the expression. For each filter expression, there are two possible standard outcomes when the filter expression is not wrapped in the KEEPFILTERS function:
 
 - If the columns (or tables) aren't in the filter context, then new filters will be added to the filter context to evaluate the expression.
 - If the columns (or tables) are already in the filter context, the existing filters will be overwritten by the new filters to evaluate the CALCULATETABLE expression.

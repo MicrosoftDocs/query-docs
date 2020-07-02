@@ -1,7 +1,7 @@
 ---
 title: "LOOKUPVALUE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/24/2020
+ms.date: 06/30/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -28,9 +28,9 @@ LOOKUPVALUE(
 
 |Term|Definition|
 |--------|--------------|
-| result_columnName  |  The name of an existing column that contains the value you want to return. The column reference must be fully qualified, which means it must include the table name. It cannot be an expression. |
-| search_columnName  | The name of an existing column. It can be in the same table as result_columnName or in a related table. The column reference must be fully qualified, which means it must include the table name. It cannot be an expression. |
-| search_value | A scalar expression. It cannot refer to any column in the same table being searched. |
+| result_columnName  |  The name of an existing column that contains the value you want to return.  It cannot be an expression. |
+| search_columnName  | The name of an existing column. It can be in the same table as result_columnName or in a related table. It cannot be an expression. |
+| search_value | A scalar expression. |
 | alternateResult | (Optional) The value returned when the context for result_columnName has been filtered down to zero or more than one distinct value. When not provided, the function returns BLANK when result_columnName is filtered down to zero value or an error when more than one distinct value. |
 
 ## Return value
@@ -45,14 +45,30 @@ If multiple rows match the search values and in all cases **result_column** valu
 
 If there's a one-to-many relationship path between the result and search tables, it may be possible to use the RELATED function. In this case, the [RELATED](related-function-dax.md) function is likely to perform better.
 
-## Example
+The **search_value** and **alternateResult** parameters are evaluated before the function iterates through the rows of the search table.
+
+## Examples
 
 The following **Sales Territory** table rule (for row-level security) enforces a filter restricting data access to rows of the report user's region. It uses the LOOKUPVALUE function to lookup the region from the **Employee** table.
 
-Notice that the [USERNAME](username-function-dax.md) function, which retrieves the user name of the authenticated user, is used to search the **Employee** table for a match on email address.
+Notice that the [USERNAME](username-function-dax.md) function, which retrieves the user name of the authenticated user, is used to search the **Employee** table for a match on email address. The [BLANK](blank-function-dax.md) is passed in as the alternate result to avoid expensive error handling logic when there's no match.
 
 ```dax
-[Region] = LOOKUPVALUE(Employee[Region], Employee[Email], USERNAME())
+[Region] = LOOKUPVALUE(Employee[Region], Employee[Email], USERNAME(), BLANK())
+```
+
+The following **Sales** table calculated column definition uses the LOOKUPVALUE function.
+
+[!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
+
+```dax
+Product = LOOKUPVALUE('Product'[Product], Sales[ProductKey], 'Product'[ProductKey])
+```
+
+However, because there's a relationship between the **Product** and **Sales** tables, it's more efficient to use the RELATED function.
+
+```dax
+Product = RELATED('Product'[Product])
 ```
 
 ## See also

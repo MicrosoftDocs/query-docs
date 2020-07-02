@@ -1,7 +1,7 @@
 ---
 title: "Pre-defined date and time formats for the FORMAT function | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/25/2020
+ms.date: 06/30/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan

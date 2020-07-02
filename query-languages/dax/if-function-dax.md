@@ -1,7 +1,7 @@
 ---
 title: "IF function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/24/2020
+ms.date: 06/30/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -28,7 +28,7 @@ IF(<logical_test>, <value_if_true>[, <value_if_false>])
 
 ## Return value
 
-The type of the value that's returned.
+Either **value_if_true**, **value_if_false**, or BLANK.
 
 ## Remarks
 

@@ -1,7 +1,7 @@
 ---
 title: "DATESBETWEEN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/24/2020
+ms.date: 06/30/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -27,7 +27,7 @@ DATESBETWEEN(<dates>, <start_date>, <end_date>)
 
 |Term|Definition|
 |--------|--------------|
-|dates|A date column from a marked date table.|
+|dates|A date column.|
 |start_date|A date expression.|
 |end_date|A date expression.|
 
@@ -37,7 +37,7 @@ A table containing a single column of date values.
 
 ## Remarks
 
-Ideally, **dates** is a reference to the date column of a marked date table.
+In the most common use case, **dates** is a reference to the date column of a marked date table.
 
 If **start_date** is BLANK, then **start_date** will be the earliest value in the **dates** column.
 

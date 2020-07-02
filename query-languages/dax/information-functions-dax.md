@@ -1,7 +1,7 @@
 ---
 title: "Information functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 03/27/2020
+ms.date: 06/30/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan

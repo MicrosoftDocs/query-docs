@@ -1,7 +1,7 @@
 ---
 title: "DATESINPERIOD function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/24/2020
+ms.date: 06/30/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -24,7 +24,7 @@ DATESINPERIOD(<dates>, <start_date>, <number_of_intervals>, <interval>)
 
 |Term|Definition|
 |--------|--------------|
-|dates|A date column from a marked date table.|
+|dates|A date column.|
 |start_date|A date expression.|
 |number_of_intervals|An integer that specifies the number of intervals to add to, or subtract from, the dates.|
 |interval|The interval by which to shift the dates. The value for interval can be one of the following: `DAY`, `MONTH`, `QUARTER`, and `YEAR`|
@@ -35,7 +35,7 @@ A table containing a single column of date values.
 
 ## Remarks
 
-Ideally, **dates** is a reference to the date column of a marked date table.
+In the most common use case, **dates** is a reference to the date column of a marked date table.
 
 If the number specified for **number_of_intervals** is positive, dates are moved forward in time; if the number is negative, dates are shifted backward in time.
 
