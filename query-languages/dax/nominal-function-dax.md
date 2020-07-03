@@ -1,0 +1,65 @@
+---
+title: "NOMINAL function (DAX) | Microsoft Docs"
+ms.service: powerbi
+ms.date: 07/02/2020
+ms.reviewer: owend
+ms.topic: reference
+author: jajin7
+ms.author: owend
+
+---
+
+# NOMINAL
+
+Returns the nominal annual interest rate, given the effective rate and the number of compounding periods per year.
+
+## Syntax
+
+```dax
+NOMINAL(<effect_rate>, <npery>)
+```
+
+### Parameters
+
+|Term|Definition|  
+|--------|--------------|  
+|effect_rate|The effective interest rate.|
+|npery|The number of compounding periods per year.|
+
+## Return Value
+
+The nominal annual interest rate.
+
+## Remarks
+
+- The relationship between NOMINAL and EFFECT is shown in the following equation:
+
+    $$\text{EFFECT} = \Big( 1 + \frac{\text{nominal\_rate}}{\text{npery}} \Big)^{\text{npery}} - 1$$
+
+- npery is rounded to the nearest integer.
+
+- An error is returned if:
+  - effect_rate ≤ 0.
+  - npery < 1.
+
+## Example
+
+| **Data** | **Description**                        |
+| -------- | -------------------------------------- |
+| 5.3543%  | Effective interest rate                |
+| 4        | Number of compounding periods per year |
+
+The following DAX query:
+
+```dax
+EVALUATE
+{
+  NOMINAL(0.053543, 4)
+}
+```
+
+Returns the nominal interest rate, using the terms specified above.
+
+| **[Value]**     |
+| ----------------- |
+| 0.052500319868356 |

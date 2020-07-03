@@ -127,10 +127,106 @@
           items:
             - name: Financial functions overview
               href: financial-functions-dax.md
+            - name: ACCRINT
+              href: accrint-function-dax.md
+            - name: ACCRINTM
+              href: amordegrc-function-dax.md
+            - name: AMORLINC
+              href: amorlinc-function-dax.md
+            - name: COUPDAYBS
+              href: coupdaybs-function-dax.md
+            - name: COUPDAYS
+              href: coupdays-function-dax.md
+            - name: COUPDAYSNC
+              href: coupdaysnc-function-dax.md
+            - name: COUPNCD
+              href: coupncd-function-dax.md
+            - name: COUPNUM
+              href: coupnum-function-dax.md
+            - name: COUPPCD
+              href: couppcd-function-dax.md
+            - name: CUMIPMT
+              href: cumipmt-function-dax.md
+            - name: CUMPRINC
+              href: cumprinc-function-dax.md
+            - name: DB
+              href: db-function-dax.md
+            - name: DDB
+              href: ddb-function-dax.md
+            - name: DISC
+              href: disc-function-dax.md
+            - name: DOLLARDE
+              href: dollarde-function-dax.md
+            - name: DOLLARFR
+              href: dollarfr-function-dax.md
+            - name: DURATION
+              href: duration-function-dax.md
+            - name: EFFECT
+              href: effect-function-dax.md
+            - name: FV
+              href: fv-function-dax.md
+            - name: INTRATE
+              href: intrate-function-dax.md
+            - name: IPMT
+              href: ipmt-function-dax.md
+            - name: ISPMT
+              href: ispmt-function-dax.md
+            - name: MDURATION
+              href: mduration-function-dax.md
+            - name: NOMINAL
+              href: nominal-function-dax.md
+            - name: NPER
+              href: nper-function-dax.md
+            - name: ODDFPRICE
+              href: oddfprice-function-dax.md
+            - name: ODDFYIELD
+              href: oddfyield-function-dax.md
+            - name: ODDLPRICE
+              href: oddlprice-function-dax.md
+            - name: ODDLYIELD
+              href: oddlyield-function-dax.md
+            - name: PDURATION
+              href: pduration-function-dax.md
+            - name: PMT
+              href: pmt-function-dax.md
+            - name: PPMT
+              href: ppmt-function-dax.md
+            - name: PRICE
+              href: price-function-dax.md
+            - name: PRICEDISC
+              href: pricedisc-function-dax.md
+            - name: PRICEMAT
+              href: pricemat-function-dax.md
+            - name: PV
+              href: pv-function-dax.md
+            - name: RATE
+              href: rate-function-dax.md
+            - name: RECEIVED
+              href: received-function-dax.md
+            - name: RRI
+              href: rri-function-dax.md
+            - name: SLN
+              href: sln-function-dax.md
+            - name: SYD
+              href: syd-function-dax.md
+            - name: TBILLEQ
+              href: tbilleq-function-dax.md
+            - name: TBILLPRICE
+              href: tbillprice-function-dax.md
+            - name: TBILLYIELD
+              href: tbillyield-function-dax.md
+            - name: VDB
+              href: vdb-function-dax.md
             - name: XIRR
               href: xirr-function-dax.md
             - name: XNPV
               href: xnpv-function-dax.md
+            - name: YIELD
+              href: yield-function-dax.md
+            - name: YIELDDISC
+              href: yielddisc-function-dax.md
+            - name: YIELDMAT
+              href: yieldmat-function-dax.md
         - name: Information functions
           items: 
             - name: Information functions overview
