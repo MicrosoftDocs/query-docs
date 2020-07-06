@@ -80,7 +80,7 @@ Returns the monthly payment amount, paid at the beginning of the month, for a lo
 | ------------------ |
 | -1030.16432717797 |
 
-**Note:** 1030.16432717797 is the payment per period. As a result, the total amount paid over the duration of the loan is approximately 1030.16 * 10 = \$10,301.60. In other words, approximately \$301.60 of interest is paid.
+**Note:** 1030.16432717797 is the payment per period. As a result, the total amount paid over the duration of the loan is approximately 1030.16 * 10 = \\$10,301.60. In other words, approximately \\$301.60 of interest is paid.
 
 ### Example 2
 
@@ -88,7 +88,7 @@ Returns the monthly payment amount, paid at the beginning of the month, for a lo
 | -------- | --------------------------- |
 | 6%       | Annual interest rate        |
 | 18       | Number of years of payments |
-| \$50,000  | Amount of loan              |
+| \\$50,000  | Amount of loan              |
 
 The following DAX query:
 
@@ -103,4 +103,4 @@ EVALUATE
 | ------------------ |
 | -129.081160867991 |
 
-Returns the amount to save each month to have \$50,000 at the end of 18 years, using the terms specified above.
+Returns the amount to save each month to have \\$50,000 at the end of 18 years, using the terms specified above.

@@ -32,7 +32,7 @@ The decimal value of *fractional_dollar*.
 
 ## Remarks
 
-- The fraction part of the value is divided by an integer that you specify. For example, if you want your price to be expressed to a precision of 1/16 of a dollar, you divide the fraction part by 16. In this case, 1.02 represents \$1.125 (\$1 + 2/16 = \$1.125).
+- The fraction part of the value is divided by an integer that you specify. For example, if you want your price to be expressed to a precision of 1/16 of a dollar, you divide the fraction part by 16. In this case, 1.02 represents \\$1.125 (\\$1 + 2/16 = \\$1.125).
 
 - fraction is rounded to the nearest integer.
 

@@ -78,7 +78,7 @@ The present value of a loan or investment.
 
 | **Data** | **Description**                                                   |
 | -------- | ----------------------------------------------------------------- |
-| \$500.00  | Money paid out of an insurance annuity at the end of every month. |
+| \\$500.00  | Money paid out of an insurance annuity at the end of every month. |
 | 8%       | Interest rate earned on the money paid out.                       |
 | 20       | Years the money will be paid out.                                 |
 

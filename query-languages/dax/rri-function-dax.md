@@ -44,8 +44,8 @@ The equivalent interest rate.
 
 | **Data** | **Description** |
 | -------- | --------------- |
-| \$10,000  | Present value   |
-| \$21,000  | Future value    |
+| \\$10,000  | Present value   |
+| \\$21,000  | Future value    |
 | 4        | Years invested  |
 
 The following DAX query:
