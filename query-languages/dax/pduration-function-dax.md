@@ -55,7 +55,7 @@ EVALUATE
 }
 ```
 
-Returns the number of years required for an investment of $2000, earning 2.5% annually, to reach $2200.
+Returns the number of years required for an investment of \$2000, earning 2.5% annually, to reach $2200.
 
 | **[Value]**    |
 | ---------------- |
@@ -72,7 +72,7 @@ EVALUATE
 }
 ```
 
-Returns the number of months required for an investment of \$1000, earning 2.5% annually, to reach \$1200.
+Returns the number of months required for an investment of \\$1000, earning 2.5% annually, to reach \\$1200.
 
 | **[Value]**    |
 | ---------------- |
