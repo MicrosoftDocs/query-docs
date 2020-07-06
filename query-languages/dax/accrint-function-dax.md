@@ -60,7 +60,7 @@ The accrued interest.
   - $\text{NC}$ = number of quasi-coupon periods that fit in odd period. If this number contains a fraction, raise it to the next whole number.
   - $\text{NL}\_{i}$ = normal length in days of the quasi-coupon period within odd period.
 
-  - issue, first_interest, and settlement are truncated to integers.
+- issue, first_interest, and settlement are truncated to integers.
 
 - frequency and basis are rounded to the nearest integer.
 

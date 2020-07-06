@@ -35,7 +35,7 @@ The equivalent interest rate.
 
 - RRI returns the interest rate given $\text{nper}$ (the number of periods), $\text{pv}$ (present value), and $\text{fv}$ (future value), calculated by using the following equation:
 
-  $$\frac{\text{fv}^{(\frac{1}{\text{}nper})}}{\text{pv}} - 1$$
+  $$\bigg( \frac{\text{fv}}{\text{pv}} \bigg)^{(\frac{1}{\text{}nper})} - 1$$
 
 - An error is returned if:
   - nper ≤ 0.

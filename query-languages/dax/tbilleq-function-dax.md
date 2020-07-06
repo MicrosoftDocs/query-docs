@@ -37,7 +37,7 @@ The Treasury Bill's bond-equivalent yield.
 
 - TBILLEQ is calculated as:
 
-  $$\text{TBILLEQ} = \frac{365 \times \text{rate}}{360 - (\text{rate} \times \text{DSM})}$$
+  $$\text{TBILLEQ} = \frac{365 \times \text{discount}}{360 - (\text{discount} \times \text{DSM})}$$
 
   where:
 
