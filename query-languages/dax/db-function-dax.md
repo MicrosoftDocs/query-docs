@@ -74,7 +74,7 @@ EVALUATE
 }
 ```
 
-Returns an asset's depreciation in the last two months of the first year, assuming it will be worth $0 after 6 years.
+Returns an asset's depreciation in the last two months of the first year, assuming it will be worth \\$0 after 6 years.
 
 | **[Value]**    |
 | ---------------- |

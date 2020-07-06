@@ -11,7 +11,7 @@ ms.author: owend
 
 # ODDLPRICE
 
-Returns the price per $100 face value of a security having an odd (short or long) last coupon period.
+Returns the price per \\$100 face value of a security having an odd (short or long) last coupon period.
 
 ## Syntax
 
