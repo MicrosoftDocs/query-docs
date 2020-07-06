@@ -18,7 +18,7 @@ Financial functions in DAX are used in formulas that perform financial calculati
 |---------|---------|
 |[ACCRINT](accrint-function-dax.md)     |  Returns the accrued interest for a security that pays periodic interest.      |
 |[ACCRINTM](accrintm-function-dax.md)     |   Returns the accrued interest for a security that pays interest at maturity.     |
-|[AMORDEGRC](amordegrc-function-dax.md)     |   Returns the depreciation for each accounting period.     |
+|[AMORDEGRC](amordegrc-function-dax.md)     |   Returns the depreciation for each accounting period. Similar to AMORLINC, except a depreciation coefficient is applied depending on the life of the assets.    |
 |[AMORLINC](amorlinc-function-dax.md)     |   Returns the depreciation for each accounting period.      |
 |[COUPDAYBS](coupdaybs-function-dax.md)     |    Returns the number of days from the beginning of a coupon period until its settlement date.    |
 |[COUPDAYS](coupdays-function-dax.md)     |    Returns the number of days in the coupon period that contains the settlement date.    |
