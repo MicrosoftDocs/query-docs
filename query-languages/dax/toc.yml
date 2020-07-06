@@ -129,6 +129,8 @@
               href: financial-functions-dax.md
             - name: ACCRINT
               href: accrint-function-dax.md
+            - name: ACCRINTM
+              href: accrintm-function-dax.md
             - name: AMORDEGRC
               href: amordegrc-function-dax.md
             - name: AMORLINC

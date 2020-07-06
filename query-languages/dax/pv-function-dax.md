@@ -45,16 +45,16 @@ The present value of a loan or investment.
 - Make sure that you are consistent about the units you use for specifying rate and nper. If you make monthly payments on a four-year loan at 12 percent annual interest, use 0.12/12 for rate and 4*12 for nper. If you make annual payments on the same loan, use 0.12 for rate and 4 for nper.
 
 - The following functions apply to annuities:
-- CUMIPMT
-- CUMPRINC
-- FV
-- IPMT
-- PMT
-- PPMT
-- PV
-- RATE
-- XIRR
-- XNPV
+  - CUMIPMT
+  - CUMPRINC
+  - FV
+  - IPMT
+  - PMT
+  - PPMT
+  - PV
+  - RATE
+  - XIRR
+  - XNPV
 
 - An annuity is a series of constant cash payments made over a continuous period. For example, a car loan or a mortgage is an annuity. For more information, see the description for each annuity function.
 
