@@ -11,7 +11,7 @@ ms.author: owend
 
 # MDURATION
 
-Returns the modified Macauley duration for a security with an assumed par value of \$100.
+Returns the modified Macauley duration for a security with an assumed par value of \\$100.
 
 ## Syntax
 

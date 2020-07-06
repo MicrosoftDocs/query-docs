@@ -28,7 +28,7 @@ ODDLYIELD(<settlement>, <maturity>, <last_interest>, <rate>, <pr>, <redemption>,
 |last_interest|The security's last coupon date.|
 |rate|The security's interest rate.|
 |pr|The security's price.|
-|redemption|The security's redemption value per \$100 face value.|
+|redemption|The security's redemption value per \\$100 face value.|
 |frequency|The number of coupon payments per year. For annual payments, frequency = 1; for semiannual, frequency = 2; for quarterly, frequency = 4.|
 |basis|(Optional) The type of day count basis to use. If basis is omitted, it is assumed to be 0. The accepted values are listed below this table.|
 
@@ -86,8 +86,8 @@ The following DAX query:
 | 6/15/2008  | Maturity date            |
 | 12/24/2007 | Last interest date       |
 | 3.75%      | Percent coupon           |
-| \$99.875    | Price                    |
-| \$100       | Redemption value         |
+| \\$99.875    | Price                    |
+| \\$100       | Redemption value         |
 | 2          | Frequency is semiannual  |
 | 0          | 30/360 basis             |
 

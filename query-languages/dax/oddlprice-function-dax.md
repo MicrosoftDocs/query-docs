@@ -28,7 +28,7 @@ ODDLPRICE(<settlement>, <maturity>, <last_interest>, <rate>, <yld>, <redemption>
 |last_interest|The security's last coupon date.|
 |rate|The security's interest rate.|
 |yld|The security's annual yield.|
-|redemption|The security's redemption value per \$100 face value.|
+|redemption|The security's redemption value per \\$100 face value.|
 |frequency|The number of coupon payments per year. For annual payments, frequency = 1; for semiannual, frequency = 2; for quarterly, frequency = 4.|
 |basis|(Optional) The type of day count basis to use. If basis is omitted, it is assumed to be 0. The accepted values are listed below this table.|
 
@@ -44,7 +44,7 @@ The **basis** parameter accepts the following values:
 
 ## Return Value
 
-The price per \$100 face value.
+The price per \\$100 face value.
 
 ## Remarks
 
@@ -76,7 +76,7 @@ The following DAX query:
 | October 15, 2007 | Last interest date       |
 | 3.75%            | Percent coupon           |
 | 4.05%            | Percent yield            |
-| \$100             | Redemptive value         |
+| \\$100             | Redemptive value         |
 | 2                | Frequency is semiannual  |
 | 0                | 30/360 basis             |
 
@@ -87,7 +87,7 @@ EVALUATE
 }
 ```
 
-Returns the price per \$100 face value of a security that has an odd (short or long) last coupon period, using the terms specified above.
+Returns the price per \\$100 face value of a security that has an odd (short or long) last coupon period, using the terms specified above.
 
 | **[Value]**    |
 | ---------------- |

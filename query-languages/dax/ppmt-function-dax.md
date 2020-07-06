@@ -61,7 +61,7 @@ The payment on the principal for a given period.
 | --------- | ---------------------------- |
 | 10%       | Annual interest rate         |
 | 2         | Number of years for the loan |
-| \$2,000.00 | Amount of loan               |
+| \\$2,000.00 | Amount of loan               |
 
 The following DAX query:
 
@@ -84,7 +84,7 @@ Returns the principal payment made in the first month for a loan with the terms 
 | ----------- | ---------------------------- |
 | 8%          | Annual interest rate         |
 | 10          | Number of years for the loan |
-| \$200,000.00 | Amount of loan               |
+| \\$200,000.00 | Amount of loan               |
 
 The following DAX query:
 

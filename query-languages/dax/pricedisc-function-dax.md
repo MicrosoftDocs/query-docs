@@ -11,7 +11,7 @@ ms.author: owend
 
 # PRICEDISC
 
-Returns the price per \$100 face value of a discounted security.
+Returns the price per \\$100 face value of a discounted security.
 
 ## Syntax
 
@@ -26,7 +26,7 @@ PRICEDISC(<settlement>, <maturity>, <discount>, <redemption>[, <basis>])
 |settlement|The security's settlement date. The security settlement date is the date after the issue date when the security is traded to the buyer.|
 |maturity|The security's maturity date. The maturity date is the date when the security expires.|
 |discount|The security's discount rate.|
-|redemption|The security's redemption value per \$100 face value.|
+|redemption|The security's redemption value per \\$100 face value.|
 |basis|(Optional) The type of day count basis to use. If basis is omitted, it is assumed to be 0. The accepted values are listed below this table.|
 
 The **basis** parameter accepts the following values:
@@ -41,7 +41,7 @@ The **basis** parameter accepts the following values:
 
 ## Return Value
 
-The price per \$100 face value.
+The price per \\$100 face value.
 
 ## Remarks
 
@@ -76,7 +76,7 @@ The price per \$100 face value.
 | 2/16/2008 | Settlement date          |
 | 3/1/2008  | Maturity date            |
 | 5.25%     | Percent discount rate    |
-| \$100      | Redemption value         |
+| \\$100      | Redemption value         |
 | 2         | Actual/360 basis         |
 
 The following DAX query:
@@ -88,7 +88,7 @@ EVALUATE
 }
 ```
 
-Returns the bond price per \$100 face value, for a bond with the terms specified above.
+Returns the bond price per \\$100 face value, for a bond with the terms specified above.
 
 | **[Value]**    |
 | ---------------- |

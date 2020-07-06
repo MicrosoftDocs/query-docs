@@ -51,7 +51,7 @@ The interest paid (or received) for the specified period.
 
 | **Data** | **Description**   |
 | -------- | ----------------- |
-| \$4,000   | Present value     |
+| \\$4,000   | Present value     |
 | 4        | Number of periods |
 | 10%      | Rate              |
 

@@ -11,7 +11,7 @@ ms.author: owend
 
 # ODDFPRICE
 
-Returns the price per \$100 face value of a security having an odd (short or long) first period.
+Returns the price per \\$100 face value of a security having an odd (short or long) first period.
 
 ## Syntax
 
@@ -29,7 +29,7 @@ ODDFPRICE(<settlement>, <maturity>, <issue>, <first_coupon>, <rate>, <yld>, <red
 |first_coupon|The security's first coupon date.|
 |rate|The security's interest rate.|
 |yld|The security's annual yield.|
-|redemption|The security's redemption value per \$100 face value.|
+|redemption|The security's redemption value per \\$100 face value.|
 |frequency|The number of coupon payments per year. For annual payments, frequency = 1; for semiannual, frequency = 2; for quarterly, frequency = 4.|
 |basis|(Optional) The type of day count basis to use. If basis is omitted, it is assumed to be 0. The accepted values are listed below this table.|
 
@@ -45,7 +45,7 @@ The **basis** parameter accepts the following values:
 
 ## Return Value
 
-The price per \$100 face value.
+The price per \\$100 face value.
 
 ## Remarks
 
@@ -105,7 +105,7 @@ The price per \$100 face value.
 | 3/1/2009   | First coupon date        |
 | 7.85%      | Percent coupon           |
 | 6.25%      | Percent yield            |
-| \$100.00    | Redemptive value         |
+| \\$100.00    | Redemptive value         |
 | 2          | Frequency is semiannual  |
 | 1          | Actual/actual basis      |
 
@@ -118,7 +118,7 @@ EVALUATE
 }
 ```
 
-Returns the price per \$100 face value of a security having an odd (short or long) first period, using the terms specified above.
+Returns the price per \\$100 face value of a security having an odd (short or long) first period, using the terms specified above.
 
 | **[Value]**    |
 | ---------------- |

@@ -11,7 +11,7 @@ ms.author: owend
 
 # PRICEMAT
 
-Returns the price per \$100 face value of a security that pays interest at maturity.
+Returns the price per \\$100 face value of a security that pays interest at maturity.
 
 ## Syntax
 
@@ -42,7 +42,7 @@ The **basis** parameter accepts the following values:
 
 ## Return Value
 
-The price per \$100 face value.
+The price per \\$100 face value.
 
 ## Remarks
 
@@ -92,7 +92,7 @@ EVALUATE
 }
 ```
 
-Returns the price per \$100 face value of a security with the terms specified above.
+Returns the price per \\$100 face value of a security with the terms specified above.
 
 | **[Value]**    |
 | ---------------- |

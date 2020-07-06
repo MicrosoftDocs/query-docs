@@ -27,7 +27,7 @@ YIELDMAT(<settlement>, <maturity>, <issue>, <rate>, <pr>[, <basis>])
 |maturity|The security's maturity date. The maturity date is the date when the security expires.|
 |issue|The security's issue date.|
 |rate|The security's interest rate at date of issue.|
-|pr|The security's price per \$100 face value.|
+|pr|The security's price per \\$100 face value.|
 |basis|(Optional) The type of day count basis to use. If basis is omitted, it is assumed to be 0. The accepted values are listed below this table.|
 
 The **basis** parameter accepts the following values:

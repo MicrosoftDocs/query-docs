@@ -75,8 +75,8 @@ The interest rate.
 | ---------- | ---------------- |
 | 2/15/2008  | Settlement date  |
 | 5/15/2008  | Maturity date    |
-| \$1,000,000 | Investment       |
-| \$1,014,420 | Redemption value |
+| \\$1,000,000 | Investment       |
+| \\$1,014,420 | Redemption value |
 | 2          | Actual/360 basis |
 
 The following DAX query:

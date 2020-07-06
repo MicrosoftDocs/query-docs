@@ -46,8 +46,8 @@ The sum-of-years' digits depreciation for the specified period.
 
 | **Data**    | **Description**   |
 | ----------- | ----------------- |
-| \$30,000.00 | Initial cost      |
-| \$7,500.00  | Salvage value     |
+| \\$30,000.00 | Initial cost      |
+| \\$7,500.00  | Salvage value     |
 | 10          | Lifespan in years |
 
 ### Example 1

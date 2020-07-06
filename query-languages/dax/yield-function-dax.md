@@ -26,8 +26,8 @@ YIELD(<settlement>, <maturity>, <rate>, <pr>, <redemption>, <frequency>[, <basis
 |settlement|The security's settlement date. The security settlement date is the date after the issue date when the security is traded to the buyer.|
 |maturity|The security's maturity date. The maturity date is the date when the security expires.|
 |rate|The security's annual coupon rate.|
-|pr|The security's price per \$100 face value.|
-|redemption|The security's redemption value per \$100 face value.|
+|pr|The security's price per \\$100 face value.|
+|redemption|The security's redemption value per \\$100 face value.|
 |frequency|The number of coupon payments per year. For annual payments, frequency = 1; for semiannual, frequency = 2; for quarterly, frequency = 4.|
 |basis|(Optional) The type of day count basis to use. If basis is omitted, it is assumed to be 0. The accepted values are listed below this table.|
 
@@ -84,7 +84,7 @@ The yield on the security.
 | 15-Nov-16 | Maturity date                       |
 | 5.75%     | Percent coupon                      |
 | 95.04287  | Price                               |
-| \$100      | Redemption value                    |
+| \\$100      | Redemption value                    |
 | 2         | Frequency is semiannual (see above) |
 | 0         | 30/360 basis (see above)            |
 

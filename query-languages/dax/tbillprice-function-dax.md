@@ -11,7 +11,7 @@ ms.author: owend
 
 # TBILLPRICE
 
-Returns the price per \$100 face value for a Treasury bill.
+Returns the price per \\$100 face value for a Treasury bill.
 
 ## Syntax
 
@@ -29,7 +29,7 @@ TBILLPRICE(<settlement>, <maturity>, <discount>)
 
 ## Return Value
 
-The Treasury Bill's price per \$100 face value.
+The Treasury Bill's price per \\$100 face value.
 
 ## Remarks
 
@@ -67,7 +67,7 @@ EVALUATE
 }
 ```
 
-Returns the Treasury Bill's price per \$100 face value, given the terms specified above.
+Returns the Treasury Bill's price per \\$100 face value, given the terms specified above.
 
 | **[Value]** |
 | ------------- |

@@ -29,7 +29,7 @@ ODDFYIELD(<settlement>, <maturity>, <issue>, <first_coupon>, <rate>, <pr>, <rede
 |first_coupon|The security's first coupon date.|
 |rate|The security's interest rate.|
 |pr|The security's price.|
-|redemption|The security's redemption value per \$100 face value.|
+|redemption|The security's redemption value per \\$100 face value.|
 |frequency|The number of coupon payments per year. For annual payments, frequency = 1; for semiannual, frequency = 2; for quarterly, frequency = 4.|
 |basis|(Optional) The type of day count basis to use. If basis is omitted, it is assumed to be 0. The accepted values are listed below this table.|
 

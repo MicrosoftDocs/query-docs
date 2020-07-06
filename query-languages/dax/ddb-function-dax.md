@@ -65,7 +65,7 @@ EVALUATE
 }
 ```
 
-Returns an asset's depreciation in the 5$^{th}$ year, assuming it will be worth \$0 after 10 years. This calculation uses a factor of 1.5.
+Returns an asset's depreciation in the 5$^{th}$ year, assuming it will be worth \\$0 after 10 years. This calculation uses a factor of 1.5.
 
 | **[Value]** |
 | ------------- |

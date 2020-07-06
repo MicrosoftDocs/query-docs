@@ -25,7 +25,7 @@ TBILLYIELD(<settlement>, <maturity>, <pr>)
 |--------|--------------|  
 |settlement|The Treasury bill's settlement date. The security settlement date is the date after the issue date when the Treasury bill is traded to the buyer.|
 |maturity|The Treasury bill's maturity date. The maturity date is the date when the Treasury bill expires.|
-|pr|The Treasury bill's price per \$100 face value.|
+|pr|The Treasury bill's price per \\$100 face value.|
 
 ## Return Value
 
@@ -58,7 +58,7 @@ The following DAX query:
 | --------- | ------------------------- |
 | 3/31/2008 | Settlement date           |
 | 6/1/2008  | Maturity date             |
-| \$98.45    | Price per \$100 face value |
+| \\$98.45    | Price per \\$100 face value |
 
 ```dax
 EVALUATE

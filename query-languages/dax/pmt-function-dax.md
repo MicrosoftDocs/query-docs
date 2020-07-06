@@ -63,7 +63,7 @@ The amount of a single loan payment.
 | -------- | ---------------------------- |
 | 8%       | Annual interest rate         |
 | 10       | Number of months of payments |
-| \$10,000  | Amount of loan               |
+| \\$10,000  | Amount of loan               |
 
 The following DAX query:
 

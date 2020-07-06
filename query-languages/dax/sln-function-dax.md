@@ -40,8 +40,8 @@ The straight-line depreciation for one period.
 
 | **Data** | **Description**      |
 | -------- | -------------------- |
-| \$30,000  | Cost                 |
-| \$7,500   | Salvage value        |
+| \\$30,000  | Cost                 |
+| \\$7,500   | Salvage value        |
 | 10       | Years of useful life |
 
 The following DAX query:

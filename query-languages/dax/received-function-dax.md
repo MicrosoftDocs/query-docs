@@ -77,7 +77,7 @@ The following DAX query:
 | -------------- | ----------------------- |
 | 15-Feb-08      | Settlement (issue) date |
 | 15-May-08      | Maturity date           |
-| \$1,000,000.00 | Investment              |
+| \\$1,000,000.00 | Investment              |
 | 5.75%          | Percent discount rate   |
 | 2              | Actual/360 basis        |
 

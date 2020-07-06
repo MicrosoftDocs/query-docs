@@ -59,7 +59,7 @@ The interest payment for the given period.
 | -------- | --------------------- |
 | 10.00%   | Annual interest       |
 | 3        | Years of loan         |
-| \$8,000   | Present value of loan |
+| \\$8,000   | Present value of loan |
 
 ### Example 1
 
