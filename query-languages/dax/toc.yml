@@ -181,8 +181,6 @@
               href: false-function-dax.md
             - name: IF
               href: if-function-dax.md
-            - name: IF.EAGER
-              href: ifeager-function-dax.md
             - name: IFERROR
               href: iferror-function-dax.md
             - name: IN
