@@ -17,7 +17,7 @@ This function reference provides detailed information including syntax, paramete
 
 ## Examples
 
-Most reference articles contain examples showing formulas and results created in an Excel workbook with a Power Pivot in Excel data model. The data model contains data imported from the AdventureWorksDW sample databases. The sample workbook is no longer available.
+Many reference articles contain examples showing formulas and results created in an Excel workbook with a Power Pivot in Excel data model. The data model contains data imported from the AdventureWorksDW sample databases. The sample workbook is no longer available.
 
 This reference is not intended to serve as a tutorial or provide in-depth guidance on how to create formulas for data models containing data from a specific data source.
 

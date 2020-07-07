@@ -57,7 +57,7 @@ Data Analysis Expressions (DAX) language is a formula language for Power Pivot i
 
 ## Dynamic security
 
-When RLS rules are enforced by using the identity of the report user. Rules filter model tables by using the user's account name, which can be done with the USERNAME or USERPRINCIPALNAME functions. See [Row-level security (RLS)](#row-level-security-(rls)).
+When row-level security (RLS) rules are enforced by using the identity of the report user. Rules filter model tables by using the user's account name, which can be done with the USERNAME or USERPRINCIPALNAME functions. See [Row-level security](#row-level-security).
 
 ## Expression
 
@@ -120,9 +120,9 @@ A feature in Power BI Desktop that eliminates the need to write DAX formulas for
 
 Also called *report-level measures*. They're added to a live connection report in Power BI Desktop by writing a DAX formula, but only for connections to Power BI models or Analysis Services tabular models.
 
-## Row-level security (RLS)
+## Row-level security
 
-Design technique to restrict access to subsets of data for specific users. In a tabular model, it's achieved by creating model roles. Roles have rules, which are DAX expressions to filter table rows.
+Also called *RLS*. Design technique to restrict access to subsets of data for specific users. In a tabular model, it's achieved by creating model roles. Roles have rules, which are DAX expressions to filter table rows.
 
 ## Semantic model
 
