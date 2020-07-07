@@ -1,1 +1,1 @@
-_Examples in this article can be added to the sample model. To obtain the model, see [Power BI DAX sample model](https://aka.ms/dax-docs-samples)._
+_Examples in this article can be added to the Power BI Desktop sample model. To get the model, see [DAX sample model](https://aka.ms/dax-docs-samples)._

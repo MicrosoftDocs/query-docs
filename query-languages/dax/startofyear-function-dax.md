@@ -50,7 +50,7 @@ The following sample formula creates a measure that returns the start of the yea
   
 ## See also  
 [Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
+[Time intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
 [STARTOFQUARTER function &#40;DAX&#41;](startofquarter-function-dax.md)  
 [STARTOFMONTH function &#40;DAX&#41;](startofmonth-function-dax.md)  
   

@@ -48,6 +48,8 @@ landingContent:
         links:
           - text: DAX queries
             url: dax-queries.md
+          - text: DAX glossary
+            url: dax-glossary.md
           - text: DAX syntax
             url: dax-syntax-reference.md
           - text: DAX operators

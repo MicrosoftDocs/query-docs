@@ -555,9 +555,9 @@
               href: upper-function-dax.md
             - name: VALUE
               href: value-function-dax.md
-        - name: Time-intelligence functions
+        - name: Time intelligence functions
           items: 
-            - name: Time-intelligence functions overview
+            - name: Time intelligence functions overview
               href: time-intelligence-functions-dax.md
             - name: CLOSINGBALANCEMONTH
               href: closingbalancemonth-function-dax.md
@@ -645,12 +645,14 @@
         href: orderby-statement-dax.md
       - name: VAR
         href: var-dax.md
-    - name: DAX syntax
-      href: dax-syntax-reference.md
+    - name: DAX glossary
+      href: dax-glossary.md
     - name: DAX operators
       href: dax-operator-reference.md
     - name: DAX queries
       href: dax-queries.md
     - name: DAX parameter-naming
       href: dax-parameter-naming-conventions.md
+    - name: DAX syntax
+      href: dax-syntax-reference.md
 

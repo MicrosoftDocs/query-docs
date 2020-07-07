@@ -1,8 +1,7 @@
 ---
 title: "Logical functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-
-ms.date: 06/30/2020
+ms.date: 07/06/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -13,8 +12,7 @@ ms.author: owend
 
 Logical functions act upon an expression to return information about the values or sets in the expression. For example, you can use the IF function to check the result of an expression and create conditional results.  
   
-## In this category 
-
+## In this category
 
 |Function  |Description  |
 |---------|---------|

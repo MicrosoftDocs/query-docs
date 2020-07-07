@@ -1,7 +1,7 @@
 ---
 title: "Custom date and time formats for the FORMAT function | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/30/2020
+ms.date: 07/03/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -96,5 +96,6 @@ The following examples use the date/time Thursday, June 25, 2020, at 1:23:45 PM.
 
 ## See also
 
-- [FORMAT function (DAX)](format-function-dax.md)
-- [Pre-defined date and time formats for the FORMAT function](pre-defined-date-and-time-formats-for-the-format-function.md)
+[FORMAT function (DAX)](format-function-dax.md)  
+[Pre-defined date and time formats for the FORMAT function](pre-defined-date-and-time-formats-for-the-format-function.md)  
+[Text functions](text-functions-dax.md)  

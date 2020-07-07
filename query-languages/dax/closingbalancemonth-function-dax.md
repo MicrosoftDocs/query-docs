@@ -60,6 +60,6 @@ To see how this works, create a PivotTable and add the fields, CalendarYear, Mon
   
 ## See also
 
-[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
+[Time intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
 [CLOSINGBALANCEYEAR function &#40;DAX&#41;](closingbalanceyear-function-dax.md)  
 [CLOSINGBALANCEQUARTER function &#40;DAX&#41;](closingbalancequarter-function-dax.md)  

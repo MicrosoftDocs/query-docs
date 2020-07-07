@@ -73,6 +73,6 @@ Consider that the earliest date stored in the **Date** table is July 1, 2017. So
 
 ## See also
 
-- [Time-intelligence functions (DAX)](time-intelligence-functions-dax.md)
+- [Time intelligence functions (DAX)](time-intelligence-functions-dax.md)
 - [Date and time functions (DAX)](date-and-time-functions-dax.md)
 - [DATESINPERIOD function (DAX)](datesinperiod-function-dax.md)

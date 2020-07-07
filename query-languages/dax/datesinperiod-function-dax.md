@@ -1,7 +1,7 @@
 ---
 title: "DATESINPERIOD function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/30/2020
+ms.date: 07/06/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -70,6 +70,6 @@ Consider that the report is filtered by the month of June 2020. The MAX function
 
 ## See also
 
-- [Time-intelligence functions (DAX)](time-intelligence-functions-dax.md)  
-- [Date and time functions (DAX)](date-and-time-functions-dax.md)  
-- [DATESBETWEEN function (DAX)](datesbetween-function-dax.md)  
+[Time intelligence functions (DAX)](time-intelligence-functions-dax.md)  
+[Date and time functions (DAX)](date-and-time-functions-dax.md)  
+[DATESBETWEEN function (DAX)](datesbetween-function-dax.md)  

@@ -1,7 +1,7 @@
 ---
 title: "CALCULATETABLE function (DAX) | Microsoft Docs"
 ms.service: powerbi
-ms.date: 06/30/2020
+ms.date: 07/06/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -13,9 +13,9 @@ ms.author: owend
 Evaluates a table expression in a modified filter context.
 
 > [!NOTE]
-> There's also the [CALCULATE](calculate-function-dax.md) function. It performs exactly the same functionality, except it modifies the filter context applied to an expression that returns a _scalar value_.
+> There's also the [CALCULATE](calculate-function-dax.md) function. It performs exactly the same functionality, except it modifies the [filter context](dax-overview.md#filter-context) applied to an expression that returns a _scalar value_.
 >
-> For more information about filter context, see [Filter context](dax-overview.md#filter-context).
+>
 
 ## Syntax  
 

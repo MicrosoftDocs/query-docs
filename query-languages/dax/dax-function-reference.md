@@ -45,7 +45,7 @@ This reference is not intended to serve as a tutorial or provide in-depth guidan
   
 [Text functions](text-functions-dax.md) - With these functions, you can return part of a string, search for text within a string, or concatenate string values. Additional functions are for controlling the formats for dates, times, and numbers.  
 
-[Time-intelligence functions](time-intelligence-functions-dax.md) - These functions help you create calculations that use built-in knowledge about calendars and dates. By using time and date ranges in combination with aggregations or calculations, you can build meaningful comparisons across comparable time periods for sales, inventory, and so on.  
+[Time intelligence functions](time-intelligence-functions-dax.md) - These functions help you create calculations that use built-in knowledge about calendars and dates. By using time and date ranges in combination with aggregations or calculations, you can build meaningful comparisons across comparable time periods for sales, inventory, and so on.  
   
 ## See also
 

@@ -1,7 +1,7 @@
 ---
 title: "FORMAT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/30/2020
+ms.date: 07/06/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -61,9 +61,9 @@ All predefined formatting strings use the current user locale when formatting th
 
 ## See also
 
-- [Pre-Defined Numeric Formats for the FORMAT function](pre-defined-numeric-formats-for-the-format-function.md)
-- [Custom Numeric Formats for the FORMAT function](custom-numeric-formats-for-the-format-function.md)
-- [Pre-defined date and time formats for the FORMAT function](pre-defined-date-and-time-formats-for-the-format-function.md)
-- [Custom date and time formats for the FORMAT function](custom-date-and-time-formats-for-the-format-function.md)
-- [VALUE function (DAX)](value-function-dax.md)
-- [DAX function reference](dax-function-reference.md)
+[Pre-Defined Numeric Formats for the FORMAT function]    (pre-defined-numeric-formats-for-the-format-function.md)  
+[Custom Numeric Formats for the FORMAT function](custom-numeric-formats-for-the-format-function.md)  
+[Pre-defined date and time formats for the FORMAT function](pre-defined-date-and-time-formats-for-the-format-function.md)  
+[Custom date and time formats for the FORMAT function](custom-date-and-time-formats-for-the-format-function.md)  
+[VALUE function (DAX)](value-function-dax.md)  
+[Text functions](text-functions-dax.md)  

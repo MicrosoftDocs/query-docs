@@ -53,7 +53,7 @@ The following sample formula creates a measure that returns the end of the fisca
   
 ## See also  
 [Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
+[Time intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
 [ENDOFMONTH function &#40;DAX&#41;](endofmonth-function-dax.md)  
 [ENDOFQUARTER function &#40;DAX&#41;](endofquarter-function-dax.md)  
   

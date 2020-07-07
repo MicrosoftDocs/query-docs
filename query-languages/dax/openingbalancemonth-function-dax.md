@@ -56,7 +56,7 @@ The following sample formula creates a measure that calculates the 'Month Start 
 ## See also  
 [OPENINGBALANCEYEAR function &#40;DAX&#41;](openingbalanceyear-function-dax.md)  
 [OPENINGBALANCEQUARTER function &#40;DAX&#41;](openingbalancequarter-function-dax.md)  
-[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
+[Time intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
 [CLOSINGBALANCEMONTH function &#40;DAX&#41;](closingbalancemonth-function-dax.md)  
  
   
