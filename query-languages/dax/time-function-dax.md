@@ -43,7 +43,7 @@ You can supply the arguments to the TIME function as values that you type direct
   
 -   For minutes or seconds, a value greater than 24 hours will be divided by 24 and the reminder will be treated as the hour value. A value in excess of 24 hours does not alter the date portion.  
   
-To improve readability of the time values returned by this function, we recommend that you format the column or PivotTable cell that contains the results of the formula by using one of the time formats provided by Microsoft Excel.  
+To improve readability of the time values returned by this function, it's recommended that you format the column or PivotTable cell that contains the results of the formula by using one of the time formats provided by Microsoft Excel.  
   
 This DAX function may return different results when used in a model that is deployed and then queried in DirectQuery mode. For more information about semantic differences in DirectQuery mode, see  [https://go.microsoft.com/fwlink/?LinkId=219171](https://go.microsoft.com/fwlink/?LinkId=219171).  
   

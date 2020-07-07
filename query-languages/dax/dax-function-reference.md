@@ -17,7 +17,7 @@ This function reference provides detailed information including syntax, paramete
 
 ## Examples
 
-Most reference articles contain examples showing formulas and results created in an Excel workbook with a Power Pivot in Excel data model. The data model contains data imported from the AdventureWorksDW sample databases. The sample workbook is no longer available.
+Many reference articles contain examples showing formulas and results created in an Excel workbook with a Power Pivot in Excel data model. The data model contains data imported from the AdventureWorksDW sample databases. The sample workbook is no longer available.
 
 This reference is not intended to serve as a tutorial or provide in-depth guidance on how to create formulas for data models containing data from a specific data source.
 
@@ -45,7 +45,7 @@ This reference is not intended to serve as a tutorial or provide in-depth guidan
   
 [Text functions](text-functions-dax.md) - With these functions, you can return part of a string, search for text within a string, or concatenate string values. Additional functions are for controlling the formats for dates, times, and numbers.  
 
-[Time-intelligence functions](time-intelligence-functions-dax.md) - These functions help you create calculations that use built-in knowledge about calendars and dates. By using time and date ranges in combination with aggregations or calculations, you can build meaningful comparisons across comparable time periods for sales, inventory, and so on.  
+[Time intelligence functions](time-intelligence-functions-dax.md) - These functions help you create calculations that use built-in knowledge about calendars and dates. By using time and date ranges in combination with aggregations or calculations, you can build meaningful comparisons across comparable time periods for sales, inventory, and so on.  
   
 ## See also
 

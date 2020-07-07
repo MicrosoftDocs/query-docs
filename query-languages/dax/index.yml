@@ -1,7 +1,7 @@
 ### YamlMime:Landing 
 
 title: Data Analysis Expressions (DAX) Reference
-summary: Data Analysis Expressions (DAX) is a library of functions and operators that can be combined to build formulas and expressions in Power BI Desktop, Azure Analysis Services, SQL Server Analysis Services, and Power Pivot in Excel data models.
+summary: Data Analysis Expressions (DAX) is a library of functions and operators that can be combined to build formulas and expressions in Power BI, Analysis Services, and Power Pivot in Excel data models.
 
 metadata: 
   title: Data Analysis Expressions (DAX) Reference | 
@@ -11,8 +11,7 @@ metadata:
   ms.collection: 
   author: minewiskan
   ms.author: owend
-  manager: mtillman
-  ms.date: 03/25/2020
+  ms.date: 07/06/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
 
@@ -46,9 +45,11 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
+          - text: DAX glossary
+            url: dax-glossary.md
+          - text: DAX operators
+            url: dax-operator-reference.md
           - text: DAX queries
             url: dax-queries.md
           - text: DAX syntax
             url: dax-syntax-reference.md
-          - text: DAX operators
-            url: dax-operator-reference.md

@@ -51,7 +51,7 @@ The following sample formula creates a measure that calculates the 'next month s
 ```
   
 ## See also  
-[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
+[Time intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
 [Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
 [NEXTDAY function &#40;DAX&#41;](nextday-function-dax.md)  
 [NEXTQUARTER function &#40;DAX&#41;](nextquarter-function-dax.md)  

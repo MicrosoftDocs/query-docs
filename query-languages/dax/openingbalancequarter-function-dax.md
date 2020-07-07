@@ -56,7 +56,7 @@ The following sample formula creates a measure that calculates the 'Quarter Star
 ## See also  
 [OPENINGBALANCEYEAR function &#40;DAX&#41;](openingbalanceyear-function-dax.md)  
 [OPENINGBALANCEMONTH function &#40;DAX&#41;](openingbalancemonth-function-dax.md)  
-[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
+[Time intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
 [CLOSINGBALANCEQUARTER function &#40;DAX&#41;](closingbalancequarter-function-dax.md)  
  
   

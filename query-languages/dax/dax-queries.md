@@ -3,7 +3,7 @@ title: "DAX Queries | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 05/06/2020
 ms.reviewer: owend
-ms.topic: reference
+ms.topic: conceptual
 author: minewiskan
 ms.author: owend
 ---

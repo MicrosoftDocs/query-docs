@@ -50,7 +50,7 @@ The following sample formula creates a measure that returns the start of the mon
   
 ## See also  
 [Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
+[Time intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
 [STARTOFYEAR function &#40;DAX&#41;](startofyear-function-dax.md)  
 [STARTOFQUARTER function &#40;DAX&#41;](startofquarter-function-dax.md)  
   

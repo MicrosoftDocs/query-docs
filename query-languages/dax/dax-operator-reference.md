@@ -146,7 +146,7 @@ Numeric     |   Numeric
 Boolean     |   Boolean
 String     |   String
 
-Other mixed data-type comparisons will return an error. For example, a formula such as =”1” > 0 returns an error stating that *DAX comparison operations do not support comparing values of type Text with values of type Integer*.
+Other mixed data-type comparisons will return an error. For example, a formula such as ="1" > 0 returns an error stating that *DAX comparison operations do not support comparing values of type Text with values of type Integer*.
 
 |Data Types used in DAX|Data Types used in Excel|  
 |--------------------------|----------------------------|
@@ -160,7 +160,7 @@ Other mixed data-type comparisons will return an error. For example, a formula s
 
 The precedence order of operations in DAX formulas is basically the same as that used by Microsoft Excel, but some Excel operators are not supported, such as percent. Also, ranges are not supported.  
   
-Therefore, whenever you copy and paste formulas from Excel, be sure to review the formula carefully, as some operators or elements in the formulas may not be valid. When there is any doubt about the order in which operations are performed, we recommend you use parentheses to control the order of operations and remove any ambiguity about the result.  
+Therefore, whenever you copy and paste formulas from Excel, be sure to review the formula carefully, as some operators or elements in the formulas may not be valid. When there is any doubt about the order in which operations are performed, it's recommended you use parentheses to control the order of operations and remove any ambiguity about the result.  
   
 ## See also
 
