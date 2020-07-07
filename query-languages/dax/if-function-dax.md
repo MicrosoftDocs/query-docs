@@ -1,7 +1,7 @@
 ---
 title: "IF function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/30/2020
+ms.date: 07/06/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -83,5 +83,5 @@ IF(
 
 ## See also
 
-- [SWITCH function (DAX)](switch-function-dax.md)
-- [DAX function reference](dax-function-reference.md)
+[SWITCH function (DAX)](switch-function-dax.md)  
+[Logical functions](logical-functions-dax.md)  

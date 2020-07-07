@@ -1,7 +1,7 @@
 ---
 title: "LOOKUPVALUE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/30/2020
+ms.date: 07/06/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -73,5 +73,5 @@ Product = RELATED('Product'[Product])
 
 ## See also
 
-- [RELATED function (DAX)](related-function-dax.md)
-- [DAX function reference](dax-function-reference.md)
+[RELATED function (DAX)](related-function-dax.md)  
+[Information functions](information-functions-dax.md)  

@@ -54,7 +54,7 @@ The following sample formula creates a measure that calculates the 'Quarterly Ru
   
 ## See also
 
-[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
+[Time intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
 [Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
 [DATESYTD function &#40;DAX&#41;](datesytd-function-dax.md)  
 [DATESMTD function &#40;DAX&#41;](datesmtd-function-dax.md)

@@ -54,7 +54,7 @@ The following sample formula creates a measure that obtains the first date when 
   
 ## See also  
 [Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
+[Time intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
 [LASTDATE function &#40;DAX&#41;](lastdate-function-dax.md)  
 [FIRSTNONBLANK function &#40;DAX&#41;](firstnonblank-function-dax.md)  
  

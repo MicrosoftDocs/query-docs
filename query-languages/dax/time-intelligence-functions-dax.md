@@ -1,14 +1,14 @@
 ---
-title: "Time-intelligence functions (DAX) | Microsoft Docs"
+title: "Time intelligence functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/30/2020
+ms.date: 07/06/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 
 ---
-# Time-intelligence functions
+# Time intelligence functions
 
 Data Analysis Expressions (DAX) includes time-intelligence functions that enable you to manipulate data using time periods, including days, months, quarters, and years, and then build and compare calculations over those periods.  
   

@@ -51,7 +51,7 @@ The following sample formula creates a measure that calculates the 'previous qua
 ```
   
 ## See also  
-[Time-intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
+[Time intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
 [Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
 [PREVIOUSMONTH function &#40;DAX&#41;](previousmonth-function-dax.md)  
 [PREVIOUSDAY function &#40;DAX&#41;](previousday-function-dax.md)  
