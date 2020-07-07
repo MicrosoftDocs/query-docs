@@ -15,7 +15,7 @@ Returns a table that contains a column of dates that begins with a specified sta
 This function is suited to pass as a filter to the [CALCULATE](calculate-function-dax.md) function. Use it to filter an expression by a custom date range.
 
 > [!NOTE]
-> If you're working with standard date intervals such as days, months, quarters, or years, we recommend you use the better suited [DATESINPERIOD](datesinperiod-function-dax.md) function.
+> If you're working with standard date intervals such as days, months, quarters, or years,  it's recommended you use the better suited [DATESINPERIOD](datesinperiod-function-dax.md) function.
 
 ## Syntax
 

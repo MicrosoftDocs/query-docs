@@ -4,7 +4,7 @@
   items: 
     - name: Learn
       items:
-        - name: DAX Overview
+        - name: DAX overview
           href: dax-overview.md
         - name: Videos
           href: dax-learn-videos.md

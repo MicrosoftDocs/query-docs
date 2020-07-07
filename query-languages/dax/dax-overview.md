@@ -1,16 +1,17 @@
 ---
 title: "DAX overview | Microsoft Docs"
+description: Describes the Data Analysis Expressions (DAX) language.
 ms.service: powerbi 
-ms.date: 06/24/2020
+ms.date: 07/06/2020
 ms.reviewer: owend
 ms.topic: overview
-ms.article: reference
+ms.article: overview
 author: minewiskan
 ms.author: owend
 ---
 # DAX overview
 
-Data Analysis Expressions (DAX) is a formula expression language used in Analysis Services, Power BI Desktop, and Power Pivot in Excel. DAX formulas include functions, operators, and values to perform advanced calculations and queries on data in related tables and columns in tabular data models.
+Data Analysis Expressions (DAX) is a formula expression language used in Analysis Services, Power BI, and Power Pivot in Excel. DAX formulas include functions, operators, and values to perform advanced calculations and queries on data in related tables and columns in tabular data models.
 
 This article provides only a basic introduction to the most important concepts in DAX. It describes DAX as it applies to all the products that use it. Some functionality may not apply to certain products or use cases. Refer to your product's documentation describing its particular implementation of DAX.
 
@@ -441,7 +442,6 @@ In the first four cases, DAX flags the entire column that contains the invalid f
 
 The [Power Pivot in Excel](https://support.office.com/article/power-pivot-powerful-data-analysis-and-data-modeling-in-excel-a9c2c6e2-cc49-4976-a7d7-40896795d045) models designer includes a DAX editor for creating DAX calculation formulas.
 
-
 ### Visual Studio
 
 ![Visual Studio](media/dax-overview-vs.png)
@@ -470,8 +470,6 @@ When learning DAX, it's best to use the application you'll be using to create yo
 [DAX basics in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics)
 
 [QuickStart: Learn DAX Basics in 30 Minutes (Power Pivot in Excel)](https://support.office.com/article/QuickStart-Learn-DAX-Basics-in-30-Minutes-51744643-C2A5-436A-BDF6-C895762BEC1A)
-
-[DAX Resource Center wiki](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
 
 The [Definitive Guide to DAX](https://www.sqlbi.com/books/the-definitive-guide-to-dax/) by Alberto Ferrari and Marco Russo (Microsoft Press). This extensive guide provides basics to innovative high-performance techniques for beginning data modelers and BI professionals.
 
