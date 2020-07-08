@@ -43,9 +43,9 @@ If multiple rows match the search values and in all cases **result_column** valu
 
 ## Remarks
 
-If there's a one-to-many relationship path between the result and search tables, it may be possible to use the RELATED function. In this case, the [RELATED](related-function-dax.md) function is likely to perform better.
+- If there's a one-to-many relationship path between the result and search tables, it may be possible to use the RELATED function. In this case, the [RELATED](related-function-dax.md) function is likely to perform better.
 
-The **search_value** and **alternateResult** parameters are evaluated before the function iterates through the rows of the search table.
+- The **search_value** and **alternateResult** parameters are evaluated before the function iterates through the rows of the search table.
 
 ## Examples
 

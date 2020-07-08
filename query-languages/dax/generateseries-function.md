@@ -1,7 +1,7 @@
 ---
 title: "GENERATESERIES function | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # GENERATESERIES
+
 Returns a single column table containing the values of an arithmetic series, that is, a sequence of values in which each differs from the preceding by a constant quantity. The name of the column returned is Value.  
   
 ## Syntax  
@@ -23,62 +24,69 @@ GENERATESERIES(<startValue>, <endValue>[, <incrementValue>])
 |--------|--------------|  
 |startValue|The initial value used to generate the sequence.|
 |endValue|The end value used to generate the sequence.|  
-|incrementValue|(Optional) The increment value of the sequence. When not provided, the default value is 1.|    
+|incrementValue|(Optional) The increment value of the sequence. When not provided, the default value is 1.|
   
-## Return value  
+## Return value
+
 A single column table containing the values of an arithmetic series. The name of the column is Value.
   
-## Remarks  
-When startValue is less than endValue, an empty table is returned.
+## Remarks
 
-incrementValue must be a positive value.
+- When startValue is less than endValue, an empty table is returned.
 
-The sequence stops at the last value that is less than or equal to endValue.
+- incrementValue must be a positive value.
 
-  
-## Examples
-### Example 1
+- The sequence stops at the last value that is less than or equal to endValue.
+
+## Example 1
+
 The following DAX query:
+
 ```dax
 EVALUATE GENERATESERIES(1, 5)
 ```
 
 Returns the following table with a single column:
 
-[Value]  | | 
+[Value]  | |
 ---------|---------
-1     |         
-2     |         
-3     |         
-4     |         
-5     |         
+1     |
+2     |
+3     |
+4     |
+5     |
 
-### Example 2
+## Example 2
+
 The following DAX query:
+
 ```dax
 EVALUATE GENERATESERIES(1.2, 2.4, 0.4)
 ```
 
 Returns the following table with a single column:
 
-[Value]  | | 
+[Value]  | |
 ---------|---------
-1.2    |         
-1.6     |         
-2     |         
-2.4     |           
+1.2    |
+1.6     |
+2     |
+2.4     |
 
-### Example 3
+## Example 3
+
 The following DAX query:
+
 ```dax
 EVALUATE GENERATESERIES(CURRENCY(10), CURRENCY(12.4), CURRENCY(0.5))
 ```
+
 Returns the following table with a single column:
 
-[Value]  | | 
+[Value]  | |
 ---------|---------
-10    |         
-10.5     |         
-11     |         
-11.5     |     
+10    |
+10.5     |
+11     |
+11.5     |
 12     |

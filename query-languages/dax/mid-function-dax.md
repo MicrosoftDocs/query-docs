@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # MID
+
 Returns a string of characters from the middle of a text string, given a starting position and length.  
   
 ## Syntax  
@@ -25,10 +26,11 @@ MID(<text>, <start_num>, <num_chars>)
 |start_num|The position of the first character you want to extract. Positions start at 1.|  
 |num_chars|The number of characters to return.|  
   
-## Property Value/Return value  
+## Return value
 A string of text of the specified length.  
   
-## Remarks  
+## Remarks
+
 Whereas Microsoft Excel has different functions for working with single-byte and double-byte characters languages, DAX uses Unicode and stores all characters with the same length.  
   
 ## Examples  
@@ -49,6 +51,6 @@ MID('Reseller'[ResellerName],1,5))
 
 Returns the same result as `LEFT([ResellerName],5)`. Both expressions return the first 5 letters of column, `[ResellerName]`.
   
-## See also  
+## See also
+
 [Text functions &#40;DAX&#41;](text-functions-dax.md)  
-  

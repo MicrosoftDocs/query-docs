@@ -1,7 +1,7 @@
 ---
 title: "GEOMEANX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -27,21 +27,24 @@ GEOMEANX(<table>, <expression>)
 |table|The table containing the rows for which the expression will be evaluated.|  
 |expression|The expression to be evaluated for each row of the table.|  
   
-## Return value  
+## Return value
+
 A decimal number.  
   
-## Remarks  
+## Remarks
+
 The GEOMEANX function takes as its first argument a table, or an expression that returns a table. The second argument is a column that contains the numbers for which you want to compute the geometric mean, or an expression that evaluates to a column.  
   
 Only the numbers in the column are counted. Blanks, logical values, and text are ignored.  
   
-## Example  
+## Example
+
 The following computes the geometric mean of the ReturnPct column in the Investments table:  
   
 ```dax
-=GEOMEANX( Investments, Investments[ReturnPct] + 1 )  
+= GEOMEANX( Investments, Investments[ReturnPct] + 1 )  
 ```
   
-## See also  
+## See also
+
 [GEOMEAN function &#40;DAX&#41;](geomean-function-dax.md)  
-  

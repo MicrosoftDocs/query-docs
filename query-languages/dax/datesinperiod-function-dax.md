@@ -35,21 +35,21 @@ A table containing a single column of date values.
 
 ## Remarks
 
-In the most common use case, **dates** is a reference to the date column of a marked date table.
+- In the most common use case, **dates** is a reference to the date column of a marked date table.
 
-If the number specified for **number_of_intervals** is positive, dates are moved forward in time; if the number is negative, dates are shifted backward in time.
+- If the number specified for **number_of_intervals** is positive, dates are moved forward in time; if the number is negative, dates are shifted backward in time.
 
-The **interval** parameter is an enumeration. Valid values are `DAY`, `MONTH`, `QUARTER`, and `YEAR`. Because it's an enumeration, values aren't passed in as strings. So don't enclose them within quotation marks.
+- The **interval** parameter is an enumeration. Valid values are `DAY`, `MONTH`, `QUARTER`, and `YEAR`. Because it's an enumeration, values aren't passed in as strings. So don't enclose them within quotation marks.
 
-The returned table can only contain dates stored in the **dates** column. So, for example, if the **dates** column starts from July 1, 2017, and the **start_date** value is July 1, 2016, the returned table will start from July 1, 2017.
+- The returned table can only contain dates stored in the **dates** column. So, for example, if the **dates** column starts from July 1, 2017, and the **start_date** value is July 1, 2016, the returned table will start from July 1, 2017.
 
-[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example
 
 The following **Sales** table measure definition uses the DATESINPERIOD function to calculate revenue for the prior year (PY).
 
-Notice that the formula uses the [MAX](max-function-dax.md) function. This function returns the latest date that's in the filter context. So, the DATESINPERIOD function returns a table of dates beginning from the latest date for the last year.
+Notice the formula uses the [MAX](max-function-dax.md) function. This function returns the latest date that's in the filter context. So, the DATESINPERIOD function returns a table of dates beginning from the latest date for the last year.
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
 

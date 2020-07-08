@@ -1,7 +1,7 @@
 ---
 title: "ISBLANK function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/26/2019
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # ISBLANK
+
 Checks whether a value is blank, and returns TRUE or FALSE.  
   
 ## Syntax  
@@ -23,10 +24,12 @@ ISBLANK(<value>)
 |--------|--------------|  
 |value|The value or expression you want to test.|  
   
-## Return value  
+## Return value
+
 A Boolean value of TRUE if the value is blank; otherwise FALSE.  
   
-## Example  
+## Example
+
 This formula computes the increase or decrease ratio in sales compared to the previous year. The example uses the IF function to check the value for the previous year's sales in order to avoid a divide by zero error.  
 
 ```dax
@@ -38,7 +41,7 @@ This formula computes the increase or decrease ratio in sales compared to the pr
       /'CalculatedMeasures'[PreviousYearTotalSales])  
 ```
 
-Result 
+Result,
 
 |Row Labels|Total Sales|Total Sales Previous Year|Sales to Previous Year Ratio|  
 |--------------|---------------|-----------------------------|--------------------------------|  
@@ -48,8 +51,6 @@ Result
 |2008|$24,542,444.68|$39,248,847.52|-37.47%|  
 |Grand Total|$102,554,625.71|||  
   
+## See also
 
-  
-## See also  
 [Information functions &#40;DAX&#41;](information-functions-dax.md)  
-  

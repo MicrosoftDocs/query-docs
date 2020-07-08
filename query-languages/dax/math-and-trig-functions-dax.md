@@ -1,7 +1,7 @@
 ---
 title: "Math and Trig functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 03/27/2020
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -13,7 +13,6 @@ ms.author: owend
 The mathematical functions in Data Analysis Expressions (DAX) are very similar to the Excel mathematical and trigonometric functions. This section lists the mathematical functions provided by DAX.  
   
 ## In this category 
-
 
 |Function   |Description  |
 |---------|---------|

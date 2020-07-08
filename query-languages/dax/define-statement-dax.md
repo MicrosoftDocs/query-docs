@@ -1,7 +1,7 @@
 ---
 title: "DEFINE keyword (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 03/27/2020
+ms.date: 07/05/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -28,16 +28,16 @@ DEFINE {  <entity> [<name>] = <expression> }
   
 ## Remarks
 
-Entities can be variables, measures, tables, and columns.
+- Entities can be variables, measures, tables, and columns.
 
-Definitions typically precede the EVALUATE statement and are valid for all EVALUATE statements.
+- Definitions typically precede the EVALUATE statement and are valid for all EVALUATE statements.
 
-Definitions can reference other definitions that appear before or after the current definition.
+- Definitions can reference other definitions that appear before or after the current definition.
 
-Definitions exist only for the duration of the query.
+- Definitions exist only for the duration of the query.
 
 ## See also
 
-[DAX queries](dax-queries.md)   
-[ORDER BY](orderby-statement-dax.md)   
-[VAR](var-dax.md)   
+[DAX queries](dax-queries.md)  
+[ORDER BY](orderby-statement-dax.md)  
+[VAR](var-dax.md)  

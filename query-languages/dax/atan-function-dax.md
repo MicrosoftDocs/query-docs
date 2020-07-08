@@ -1,7 +1,7 @@
 ---
 title: "ATAN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 03/25/2020
+ms.date: 07/05/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan

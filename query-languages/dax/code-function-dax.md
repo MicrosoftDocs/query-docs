@@ -1,7 +1,7 @@
 ---
 title: "CODE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/05/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -37,5 +37,5 @@ A numeric code for the first character in a text string.
   
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
-|=CODE("A")|Displays the numeric code for A|65|  
-|=CODE("!")|Displays the numeric code for !|33|  
+|= CODE("A")|Displays the numeric code for A|65|  
+|= CODE("!")|Displays the numeric code for !|33|  

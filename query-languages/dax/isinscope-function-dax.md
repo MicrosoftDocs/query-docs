@@ -1,7 +1,7 @@
 ---
 title: "ISINSCOPE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # ISINSCOPE
+
 Returns true when the specified column is the level in a hierarchy of levels.
   
 ## Syntax  
@@ -23,13 +24,12 @@ ISINSCOPE(<columnName>)
 |--------|--------------|  
 |columnName|The name of an existing column, using standard DAX syntax. It cannot be an expression.|  
   
-## Return value  
+## Return value
+
 TRUE when the specified column is the level in a hierarchy of levels. 
-  
   
 ## Example  
 
-  
 ```dax
 DEFINE
 MEASURE FactInternetSales[% of Parent] =
@@ -69,8 +69,7 @@ EVALUATE
     [Subcategory Subtotal] DESC, [Subcategory]
 ```
 
-Returns
-
+Returns,
 
 |DimProduct\[Category]  |DimProduct\[SubCategory] |\[Category Subtotal]  |\[Subcategory Subtotal]  |\[Sales]  |\[% of Parent]
 |---------|---------|---------|---------|---------|---------|
@@ -83,9 +82,7 @@ Returns
 |Bikes     |   Road Bikes      |   FALSE      |    FALSE     |    14,520,584.04     |     51.28    |
 |Bikes     |   Touring Bikes     |   FALSE     |    FALSE     |     3,844,801.05    |     13.58    |
 
-  
-## See also  
-[SUMMARIZECOLUMNS function &#40;DAX&#41;](summarizecolumns-function-dax.md)  
-[CALCULATE function &#40;DAX&#41;](calculate-function-dax.md)  
+## See also
 
-  
+[SUMMARIZECOLUMNS function &#40;DAX&#41;](summarizecolumns-function-dax.md)  
+[CALCULATE function &#40;DAX&#41;](calculate-function-dax.md)

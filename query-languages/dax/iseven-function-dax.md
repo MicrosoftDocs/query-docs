@@ -1,7 +1,7 @@
 ---
 title: "ISEVEN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # ISEVEN
+
 Returns TRUE if number is even, or FALSE if number is odd.  
   
 ## Syntax  
@@ -23,9 +24,10 @@ ISEVEN(number)
 |--------|--------------|  
 |number|The value to test. If number is not an integer, it is truncated.|  
   
-## Return value  
+## Return value
+
 Returns TRUE if number is even, or FALSE if number is odd.  
   
-## Remarks  
+## Remarks
+
 If number is nonnumeric, ISEVEN returns the #VALUE! error value.  
-  

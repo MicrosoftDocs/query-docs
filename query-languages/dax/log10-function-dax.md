@@ -1,7 +1,7 @@
 ---
 title: "LOG10 function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # LOG10
+
 Returns the base-10 logarithm of a number.  
   
 ## Syntax  
@@ -23,22 +24,26 @@ LOG10(<number>)
 |--------|--------------|  
 |number|A positive number for which you want the base-10 logarithm.|  
   
-## Return value  
+## Return value
+
 A decimal number.  
   
-## Remarks  
+## Remarks
+
 The LOG function lets you change the base of the logarithm, instead of using the base 10.  
   
-## Example  
+## Example
+
 The following formulas return the same result, 2:  
   
 ```dax
-=LOG(100,10)  
-=LOG(100)  
-=LOG10(100)  
+= LOG(100,10)  
+= LOG(100)  
+= LOG10(100)  
 ```
   
-## See also  
+## See also
+
 [Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
 [EXP function &#40;DAX&#41;](exp-function-dax.md)  
 [LOG function &#40;DAX&#41;](log-function-dax.md)  
