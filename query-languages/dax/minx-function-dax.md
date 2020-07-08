@@ -1,7 +1,7 @@
 ---
 title: "MINX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 04/19/2019
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -40,7 +40,7 @@ Blank values are skipped. TRUE/FALSE values are not supported.
 The following example filters the table, InternetSales, and returns only rows for a specific sales territory. The formula then finds the minimum value in the column, Freight.  
   
 ```dax
-=MINX( FILTER(InternetSales, [SalesTerritoryKey] = 5),[Freight])  
+= MINX( FILTER(InternetSales, [SalesTerritoryKey] = 5),[Freight])  
 ```
   
 ## Example 2
@@ -48,7 +48,7 @@ The following example filters the table, InternetSales, and returns only rows fo
 The following example uses the same filtered table as in the previous example, but instead of merely looking up values in the column for each row of the filtered table, the function calculates the sum of two columns, Freight and TaxAmt, and returns the smallest value resulting from that calculation.  
   
 ```dax
-=MINX( FILTER(InternetSales, InternetSales[SalesTerritoryKey] = 5), InternetSales[Freight] + InternetSales[TaxAmt])  
+= MINX( FILTER(InternetSales, InternetSales[SalesTerritoryKey] = 5), InternetSales[Freight] + InternetSales[TaxAmt])  
 ```
 
 In the first example, the names of the columns are unqualified. In the second example, the column names are fully qualified.  
@@ -58,4 +58,3 @@ In the first example, the names of the columns are unqualified. In the second ex
 [MIN function &#40;DAX&#41;](min-function-dax.md)  
 [MINA function &#40;DAX&#41;](mina-function-dax.md)  
 [Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
-  
