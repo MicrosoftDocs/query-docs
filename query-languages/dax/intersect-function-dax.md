@@ -1,7 +1,7 @@
 ---
 title: "INTERSECT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # INTERSECT
+
 Returns the row intersection of two tables, retaining duplicates.  
   
 ## Syntax  
@@ -23,23 +24,25 @@ INTERSECT(<table_expression1>, <table_expression2>)
 |--------|--------------|  
 |Table_expression|Any DAX expression that returns a table.|  
   
-## Return value  
+## Return value
+
 A table that contains all the rows in table_expression1 that are also in table_expression2  
   
 ## Exceptions  
   
-## Remarks  
-Intersect is not commutative. In general, Intersect(T1, T2) will have a different result set than Intersect(T2, T1).  
+## Remarks
+
+- Intersect is not commutative. In general, Intersect(T1, T2) will have a different result set than Intersect(T2, T1).  
   
-Duplicate rows are retained. If a row appears in table_expression1 and table_expression2, it and all duplicates in table_expression_1 are included in the result set.  
+- Duplicate rows are retained. If a row appears in table_expression1 and table_expression2, it and all duplicates in table_expression_1 are included in the result set.  
   
-The column names will match the column names in table_expression1.  
+- The column names will match the column names in table_expression1.  
   
-The returned table has lineage based on the columns in table_expression1 , regardless of the lineage of the columns in the second table. For example, if the first column of first table_expression has lineage to the base column C1 in the model, the intersect will reduce the rows based on the intersect on first column of second table_expression and keep the lineage on base column C1 intact.  
+- The returned table has lineage based on the columns in table_expression1 , regardless of the lineage of the columns in the second table. For example, if the first column of first table_expression has lineage to the base column C1 in the model, the intersect will reduce the rows based on the intersect on first column of second table_expression and keep the lineage on base column C1 intact.  
   
-Columns are compared based on positioning, and data comparison with no type coercion.  
+- Columns are compared based on positioning, and data comparison with no type coercion.  
   
-The returned table does not include columns from tables related to table_expression1.  
+- The returned table does not include columns from tables related to table_expression1.  
   
 ## Example  
 States1  
@@ -86,4 +89,3 @@ Intersect(States2, States1)
 |D|  
 |D|  
 |D|  
-  

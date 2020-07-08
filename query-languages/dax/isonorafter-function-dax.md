@@ -1,7 +1,7 @@
 ---
 title: "ISONORAFTER function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 01/16/2019
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -10,7 +10,7 @@ ms.author: owend
 ---
 # ISONORAFTER
   
-A boolean function that emulates the behavior of a ‘Start At’ clause and returns true for a row that meets all of the condition parameters.  
+A boolean function that emulates the behavior of a 'Start At' clause and returns true for a row that meets all of the condition parameters.  
   
 This function takes a variable number of triples, the first two values in a triple are the expressions to be compared, and the third parameter indicates the sort order. The sort order can be ascending (default) or descending.  
   
@@ -29,11 +29,13 @@ ISONORAFTER(<scalar_expression>, <scalar_expression>[, sort_order [, <scalar_exp
 |scalar expression|Any expression that returns a scalar value like a column reference or integer or string value. Typically the first parameter is a column reference and the second parameter is a scalar value.|  
 |sort order|(optional) The order in which the column is sorted. Can be ascending (ASC) or descending (DEC). By default the sort order is ascending.|  
   
-## Return value  
+## Return value
+
 True or false.  
   
-## Example  
-Table name: ‘Info’  
+## Example
+
+Table name: 'Info'  
   
 |Country|State|Count|Total|  
 |-----------|---------|---------|---------|  
@@ -44,5 +46,5 @@ Table name: ‘Info’
 |USA|WA|10|900|  
   
 ```dax
-FILTER(Info, ISONORAFTER(Info[Country], “IND”, ASC, Info[State], “MH”, ASC))  
+FILTER(Info, ISONORAFTER(Info[Country], "IND", ASC, Info[State], "MH", ASC))  
 ```

@@ -1,7 +1,7 @@
 ---
 title: "ISEMPTY function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -24,11 +24,13 @@ ISEMPTY(<table_expression>)
 |--------|--------------|  
 |table_expression|A table reference or a DAX expression that returns a table.|  
   
-## Return value  
+## Return value
+
 True if the table is empty (has no rows), if else, False.  
   
-## Example  
-For the below table named ‘Info’:  
+## Example
+
+For the below table named 'Info':  
   
 |Country|State|County|Total|  
 |-----------|---------|----------|---------|  
@@ -39,9 +41,8 @@ For the below table named ‘Info’:
 |USA|WA|10|900|  
   
 ```dax
-EVALUATE   
-ROW(“Any countries with count > 25?”, NOT(ISEMPTY(FILTER(Info, [Count]>25)))  
+EVALUATE
+ROW("Any countries with count > 25?", NOT(ISEMPTY(FILTER(Info, [Count]>25)))  
 ```
 
 Return value: **FALSE**  
-  

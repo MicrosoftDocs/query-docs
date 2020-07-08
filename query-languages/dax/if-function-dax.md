@@ -32,9 +32,9 @@ Either **value_if_true**, **value_if_false**, or BLANK.
 
 ## Remarks
 
-The IF function can return a variant data type if **value_if_true** and **value_if_false** are of different data types, but the function attempts to return a single data type if both **value_if_true** and **value_if_false** are of numeric data types. In the latter case, the IF function will implicitly convert data types to accommodate both values.
+- The IF function can return a variant data type if **value_if_true** and **value_if_false** are of different data types, but the function attempts to return a single data type if both **value_if_true** and **value_if_false** are of numeric data types. In the latter case, the IF function will implicitly convert data types to accommodate both values.
 
-For example, the formula `IF(<condition>, TRUE(), 0)` returns TRUE or 0, but the formula `IF(<condition>, 1.0, 0)` returns only decimal values even though **value_if_false** is of the whole number data type. For more information about implicit data type conversion, see [Data types](dax-overview.md#data-types).
+- For example, the formula `IF(<condition>, TRUE(), 0)` returns TRUE or 0, but the formula `IF(<condition>, 1.0, 0)` returns only decimal values even though **value_if_false** is of the whole number data type. For more information about implicit data type conversion, see [Data types](dax-overview.md#data-types).
 
 ## Examples
 
