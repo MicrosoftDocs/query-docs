@@ -1,7 +1,7 @@
 ---
 title: "NOT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # NOT
+
 Changes FALSE to TRUE, or TRUE to FALSE.  
   
 ## Syntax  
@@ -23,10 +24,12 @@ NOT(<logical>)
 |--------|--------------|  
 |logical|A value or expression that can be evaluated to TRUE or FALSE.|  
   
-## Return value  
+## Return value
+
 TRUE OR FALSE.  
   
-## Example  
+## Example
+
 The following example retrieves values from the calculated column that was created to illustrate the IF function. For that example, the calculated column was named using the default name, **Calculated Column1**, and contains the following formula: `=IF([Orders]<300,"true","false")`  
   
 The formula checks the value in the column, [Orders], and returns "true" if the number of orders is under 300.  
@@ -34,14 +37,14 @@ The formula checks the value in the column, [Orders], and returns "true" if the 
 Now create a new calculated column, **Calculated Column2**, and type the following formula.  
   
 ```dax
-=NOT([CalculatedColumn1])  
+= NOT([CalculatedColumn1])  
 ```
 
 For each row in **Calculated Column1**, the values "true" and "false" are interpreted as the logical values TRUE or FALSE, and the NOT function returns the logical opposite of that value.  
   
-## See also  
+## See also
+
 [TRUE function &#40;DAX&#41;](true-function-dax.md)  
 [FALSE function &#40;DAX&#41;](false-function-dax.md)  
 [IF function &#40;DAX&#41;](if-function-dax.md)  
 [DAX function reference](dax-function-reference.md)  
-  

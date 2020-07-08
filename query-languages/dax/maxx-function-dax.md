@@ -1,7 +1,7 @@
 ---
 title: "MAXX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 04/19/2019
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -31,24 +31,21 @@ The largest value.
   
 ## Remarks
 
-The **table** argument to the MAXX function can be a table name, or an expression that evaluates to a table. The second argument indicates the expression to be evaluated for each row of the table.  
+- The **table** argument to the MAXX function can be a table name, or an expression that evaluates to a table. The second argument indicates the expression to be evaluated for each row of the table.  
   
-Of the values to evaluate, only the following are counted:  
+- Of the values to evaluate, only the following are counted:  
+  - Numbers
+  - Texts
+  - Dates
   
-- Numbers
-
-- Texts
-  
-- Dates
-  
-Blank values are skipped. TRUE/FALSE values are not supported.
+- Blank values are skipped. TRUE/FALSE values are not supported.
   
 ## Example 1
 
 The following formula uses an expression as the second argument to calculate the total amount of taxes and shipping for each order in the table, InternetSales. The expected result is 375.7184.  
   
 ```dax
-=MAXX(InternetSales, InternetSales[TaxAmt]+ InternetSales[Freight])  
+= MAXX(InternetSales, InternetSales[TaxAmt]+ InternetSales[Freight])  
 ```
   
 ## Example 2
@@ -56,7 +53,7 @@ The following formula uses an expression as the second argument to calculate the
 The following formula first filters the table InternetSales, by using a FILTER expression, to return a subset of orders for a specific sales region, defined as [SalesTerritory] = 5. The MAXX function then evaluates the expression used as the second argument for each row of the filtered table, and returns the highest amount for taxes and shipping for just those orders. The expected result is 250.3724.  
   
 ```dax
-=MAXX(FILTER(InternetSales,[SalesTerritoryCode]="5"), InternetSales[TaxAmt]+ InternetSales[Freight])  
+= MAXX(FILTER(InternetSales,[SalesTerritoryCode]="5"), InternetSales[TaxAmt]+ InternetSales[Freight])  
 ```
   
 ## See also
@@ -64,4 +61,3 @@ The following formula first filters the table InternetSales, by using a FILTER e
 [MAX function &#40;DAX&#41;](max-function-dax.md)  
 [MAXA function &#40;DAX&#41;](maxa-function-dax.md)  
 [Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
-  

@@ -1,7 +1,7 @@
 ---
 title: "NORM.DIST function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 8/08/2019
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,9 +9,9 @@ ms.author: owend
 
 ---
 # NORM.DIST
+
 Returns the normal distribution for the specified mean and standard deviation. 
- 
-  
+
 ## Syntax  
   
 ```dax
@@ -27,7 +27,8 @@ NORM.DIST(X, Mean, Standard_dev, Cumulative)
 |Standard_dev|The standard deviation of the distribution.|
 |Cumulative*|A logical value that determines the form of the function. If cumulative is TRUE, NORM.DIST returns the cumulative distribution function; if FALSE, it returns the probability density function.|
   
-## Return value  
+## Return value
+
 The normal distribution for the specified mean and standard deviation.  
   
 ## Example  
@@ -45,7 +46,6 @@ Returns
 
 ## See also  
 
-[NORM.S.DIST function](norm-s-dist-dax.md)   
-[NORM.INV function](norm-inv-dax.md)   
-[NORM.S.INV](norm-s-inv-dax.md)   
-  
+[NORM.S.DIST function](norm-s-dist-dax.md)  
+[NORM.INV function](norm-inv-dax.md)  
+[NORM.S.INV](norm-s-inv-dax.md)  
