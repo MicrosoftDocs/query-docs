@@ -1,7 +1,7 @@
 ---
 title: "FILTERS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,31 +9,33 @@ ms.author: owend
 
 ---
 # FILTERS
+
 Returns the values that are directly applied as filters to *columnName*.  
   
-## Syntax  
+## Syntax
   
 ```dax
 FILTERS(<columnName>)  
 ```
   
-### Parameters  
+### Parameters
 
 |Term  |Description|  
 |---------|---------|
 |columnName      | The name of an existing column, using standard DAX syntax. It cannot be an expression.  |
 
-## Return value  
+## Return value
+
 The values that are directly applied as filters to *columnName*.  
   
-## Remarks  
+## Remarks
   
-## Example  
+## Example
+
 The following example shows how to determine the number of direct filters a column has.  
   
 ```dax
-=COUNTROWS(FILTERS(ResellerSales_USD[ProductKey]))  
+= COUNTROWS(FILTERS(ResellerSales_USD[ProductKey]))  
 ```
 
-The example above lets you know how many direct filters on ResellerSales_USD[ProductKey] have been applied to the context where the expression is being evaluated.  
-  
+This example lets you know how many direct filters on ResellerSales_USD[ProductKey] have been applied to the context where the expression is being evaluated.  

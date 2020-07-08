@@ -1,7 +1,7 @@
 ---
 title: "DISTINCT (column) function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/05/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # DISTINCT (column)
+
 Returns a one-column table that contains the distinct values from the specified column. In other words, duplicate values are removed and only unique values are returned.  
   
 > [!NOTE]  
@@ -26,22 +27,26 @@ DISTINCT(<column>)
 |--------|--------------|  
 |column|The column from which unique values are to be returned. Or, an expression that returns a column.|  
   
-## Return value  
+## Return value
+
 A column of unique values.  
   
-## Remarks  
+## Remarks
+
 The results of DISTINCT are affected by the current filter context. For example, if you use the formula in the following example to create a measure, the results would change whenever the table was filtered to show only a particular region or a time period.  
   
-## Related functions  
+## Related functions
+
 There is another version of the DISTINCT function, [DISTINCT (table)](distinct-table-function-dax.md), that returns a table by removing duplicate rows from another table or expression..
 
 The VALUES function is similar to DISTINCT; it can also be used to return a list of unique values, and generally will return exactly the same results as DISTINCT. However, in some context VALUES will return one additional special value. For more information, see [VALUES function &#40;DAX&#41;](values-function-dax.md).  
   
-## Example  
+## Example
+
 The following formula counts the number of unique customers who have generated orders over the internet channel. The table that follows illustrates the possible results when the formula is added to a PivotTable.  
   
 ```dax
-=COUNTROWS(DISTINCT(InternetSales_USD[CustomerKey]))  
+= COUNTROWS(DISTINCT(InternetSales_USD[CustomerKey]))  
 ```
 
 You cannot paste the list of values that DISTINCT returns directly into a column. Instead, you pass the results of the DISTINCT function to another function that counts, filters, or aggregates values by using the list. To make the example as simple as possible, here the table of distinct values has been passed to the COUNTROWS function.  
@@ -57,9 +62,9 @@ You cannot paste the list of values that DISTINCT returns directly into a column
   
 Also, note that the results are not additive. That is to say, the total number of unique customers in *2007* is not the sum of unique customers of *Accessories*, *Bikes* and *Clothing* for that year. The reason is that a customer can be counted in multiple groups.  
   
-## See also  
+## See also
+
 [Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
 [FILTER function &#40;DAX&#41;](filter-function-dax.md)  
 [RELATED function &#40;DAX&#41;](related-function-dax.md)  
 [VALUES function &#40;DAX&#41;](values-function-dax.md)  
-  

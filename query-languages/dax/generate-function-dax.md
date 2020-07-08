@@ -1,7 +1,7 @@
 ---
 title: "GENERATE  function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # GENERATE
+
 Returns a table with the Cartesian product between each row in *table1* and the table that results from evaluating *table2* in the context of the current row from *table1*.  
   
 ## Syntax  
@@ -24,16 +25,18 @@ GENERATE(<table1>, <table2>)
 |table1|Any DAX expression that returns a table. |  
 |table2|Any DAX expression that returns a table. |  
 
-## Return value  
+## Return value
+
 A table with the Cartesian product between each row in *table1* and the table that results from evaluating *table2* in the context of the current row from *table1*  
   
 ## Remarks  
   
--   If the evaluation of *table2* for the current row in *table1* returns an empty table, then the result table will not contain the current row from *table1*. This is different than GENERATEALL() where the current row from *table1* will be included in the results and columns corresponding to *table2* will have null values for that row.  
+- If the evaluation of *table2* for the current row in *table1* returns an empty table, then the result table will not contain the current row from *table1*. This is different than GENERATEALL() where the current row from *table1* will be included in the results and columns corresponding to *table2* will have null values for that row.  
   
--   All column names from *table1* and *table2* must be different or an error is returned.  
+- All column names from *table1* and *table2* must be different or an error is returned.  
   
-## Example  
+## Example
+
 In the following example the user wants a summary table of the sales by Region and Product Category for the Resellers channel, like the following table:  
   
 ||||  
@@ -52,7 +55,7 @@ In the following example the user wants a summary table of the sales by Region a
 |Pacific|Clothing|$           22,902.38|  
 |Pacific|Components|$         108,549.71|  
   
-The following code produces the above table:  
+The following formula produces the above table:  
   
 ```dax
 GENERATE(  
@@ -64,7 +67,7 @@ SUMMARIZE(SalesTerritory, SalesTerritory[SalesTerritoryGroup])
 )  
 ```
   
-1.  The first SUMMARIZE statement, `SUMMARIZE(SalesTerritory, SalesTerritory[SalesTerritoryGroup])`, produces a table of territory groups, where each row is a territory group, as shown below:  
+1. The first SUMMARIZE statement, `SUMMARIZE(SalesTerritory, SalesTerritory[SalesTerritoryGroup])`, produces a table of territory groups, where each row is a territory group, as shown below:  
   
     |SalesTerritory[SalesTerritoryGroup]|  
     |----------------------------------------|  
@@ -73,7 +76,7 @@ SUMMARIZE(SalesTerritory, SalesTerritory[SalesTerritoryGroup])
     |Pacific|  
     |NA|  
   
-2.  The second SUMMARIZE statement, `SUMMARIZE(ProductCategory, [ProductCategoryName], "Reseller Sales", SUMX(RELATEDTABLE(ResellerSales_USD), ResellerSales_USD[SalesAmount_USD]))`, produces a table of Product Category groups with the Reseller sales for each group, as shown below:  
+2. The second SUMMARIZE statement, `SUMMARIZE(ProductCategory, [ProductCategoryName], "Reseller Sales", SUMX(RELATEDTABLE(ResellerSales_USD), ResellerSales_USD[SalesAmount_USD]))`, produces a table of Product Category groups with the Reseller sales for each group, as shown below:  
   
     |ProductCategory[ProductCategoryName]|[Reseller Sales]|  
     |-----------------------------------------|---------------------|  
@@ -82,5 +85,4 @@ SUMMARIZE(SalesTerritory, SalesTerritory[SalesTerritoryGroup])
     |Clothing|$                 1,669,943.27|  
     |Accessories|$                     534,301.99|  
   
-3.  However, when you take the above table and evaluate it under the context of each row from the territory groups table, you obtain different results for each territory.  
-  
+3. However, when you take the above table and evaluate it under the context of each row from the territory groups table, you obtain different results for each territory.  

@@ -51,7 +51,4 @@ EVALUATE { COALESCE(BLANK(), 10, DATE(2008, 3, 3)) }
 ```
 
 Returns the sum of all values in the SalesAmount column in the FactInternetSales table, or `0`. 
-This can be used to convert BLANK values of total sales to `0`.  
-
-
-  
+This can be used to convert BLANK values of total sales to `0`.

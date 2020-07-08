@@ -1,7 +1,7 @@
 ---
 title: "EXCEPT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # EXCEPT
+
 Returns the rows of one table which do not appear in another table.  
   
 ## Syntax  
@@ -23,25 +24,28 @@ EXCEPT(<table_expression1>, <table_expression2>
 |--------|--------------|  
 |Table_expression|Any DAX expression that returns a table.|  
   
-## Return value  
+## Return value
+
 A table that contains the rows of one table minus all the rows of another table.  
   
-## Remarks  
-If a row appears at all in both tables, it and its duplicates are not present in the result set. If a row appears in only table_expression1, it and its duplicates will appear in the result set.  
+## Remarks
+
+- If a row appears at all in both tables, it and its duplicates are not present in the result set. If a row appears in only table_expression1, it and its duplicates will appear in the result set.  
   
-The column names will match the column names in table_expression1.  
+- The column names will match the column names in table_expression1.  
   
-The returned table has lineage based on the columns in table_expression1 , regardless of the lineage of the columns in the second table. For example, if the first column of first table_expression has lineage to the base column C1 in the model, the Except will reduce the rows based on the availability of values in the first column of second table_expression and keep the lineage on base column C1 intact.  
+- The returned table has lineage based on the columns in table_expression1 , regardless of the lineage of the columns in the second table. For example, if the first column of first table_expression has lineage to the base column C1 in the model, the Except will reduce the rows based on the availability of values in the first column of second table_expression and keep the lineage on base column C1 intact.  
   
-The two tables must have the same number of columns.  
+- The two tables must have the same number of columns.  
   
-Columns are compared based on positioning, and data comparison with no type coercion.  
+- Columns are compared based on positioning, and data comparison with no type coercion.  
   
-The set of rows returned depends on the order of the two expressions.  
+- The set of rows returned depends on the order of the two expressions.  
   
-The returned table does not include columns from tables related to table_expression1.  
+- The returned table does not include columns from tables related to table_expression1.  
   
-## Example  
+## Example
+
 States1  
   
 |State|  
@@ -80,4 +84,3 @@ Except(States2, States1)
 |E|  
 |E|  
 |E|  
-  

@@ -1,7 +1,7 @@
 ---
 title: "FALSE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/26/2019
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # FALSE
+
 Returns the logical value FALSE.  
   
 ## Syntax  
@@ -17,17 +18,20 @@ Returns the logical value FALSE.
 FALSE()  
 ```
   
-## Return value  
+## Return value
+
 Always FALSE.  
   
-## Remarks  
+## Remarks
+
 The word FALSE is also interpreted as the logical value FALSE.  
   
-## Example  
+## Example
+
 The formula returns the logical value FALSE when the value in the column, 'InternetSales_USD'[SalesAmount_USD], is less than or equal to 200000.  
   
 ```dax
-=IF(SUM('InternetSales_USD'[SalesAmount_USD]) >200000, TRUE(), false())  
+= IF(SUM('InternetSales_USD'[SalesAmount_USD]) >200000, TRUE(), false())  
 ```
 
 The following table shows the results when the example formula is used with 'ProductCategory'[ProductCategoryName] in Row Labels and 'DateTime'[CalendarYear] in Column Labels.  
@@ -41,12 +45,10 @@ The following table shows the results when the example formula is used with 'Pro
 |Components|FALSE|FALSE|FALSE|FALSE|FALSE|FALSE|  
 ||FALSE|FALSE|FALSE|FALSE|FALSE|FALSE|  
 |Grand Total|TRUE|TRUE|TRUE|TRUE|FALSE|TRUE|  
-  
 
-  
-## See also  
+## See also
+
 [TRUE function &#40;DAX&#41;](true-function-dax.md)  
 [NOT function &#40;DAX&#41;](not-function-dax.md)  
 [IF function &#40;DAX&#41;](if-function-dax.md)  
 [DAX function reference](dax-function-reference.md)  
-  

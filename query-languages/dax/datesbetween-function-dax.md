@@ -1,7 +1,7 @@
 ---
 title: "DATESBETWEEN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/30/2020
+ms.date: 07/07/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -37,17 +37,17 @@ A table containing a single column of date values.
 
 ## Remarks
 
-In the most common use case, **dates** is a reference to the date column of a marked date table.
+- In the most common use case, **dates** is a reference to the date column of a marked date table.
 
-If **start_date** is BLANK, then **start_date** will be the earliest value in the **dates** column.
+- If **start_date** is BLANK, then **start_date** will be the earliest value in the **dates** column.
 
-If **end_date** is BLANK, then **end_date** will be the latest value in the **dates** column.
+- If **end_date** is BLANK, then **end_date** will be the latest value in the **dates** column.
 
-Dates used as the **start_date** and **end_date** are inclusive. So, for example, if the **start_date** value is July 1, 2019, then that date will be included in the returned table (providing the date exists in the **dates** column).
+- Dates used as the **start_date** and **end_date** are inclusive. So, for example, if the **start_date** value is July 1, 2019, then that date will be included in the returned table (providing the date exists in the **dates** column).
 
-The returned table can only contain dates stored in the **dates** column. So, for example, if the **dates** column starts from July 1, 2017, and the **start_date** value is July 1, 2016, the returned table will start from July 1, 2017.
+- The returned table can only contain dates stored in the **dates** column. So, for example, if the **dates** column starts from July 1, 2017, and the **start_date** value is July 1, 2016, the returned table will start from July 1, 2017.
 
-[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example
 

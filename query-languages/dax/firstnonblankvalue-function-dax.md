@@ -1,7 +1,7 @@
 ---
 title: "FIRSTNONBLANKVALUE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 02/10/2020
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -30,12 +30,11 @@ The first non-blank value of \<expression> corresponding to the sorted values of
   
 ## Remarks  
 
-The column argument can be any of the following:
+- The column argument can be any of the following:
+  - A reference to any column.
+  - A table with a single column.
 
-- A reference to any column.
-- A table with a single column.
-
-This function is different from FIRSTNONBLANK in that the \<column> is added to the filter context for the evaluation of \<expression>.
+- This function is different from FIRSTNONBLANK in that the \<column> is added to the filter context for the evaluation of \<expression>.
   
 ## Example  
 
@@ -44,10 +43,10 @@ The following DAX query,
 ```dax
 EVALUATE 
 SUMMARIZECOLUMNS(
-  DimProduct[Class], 
-  "FNBV", 
+  DimProduct[Class],
+  "FNBV",
   FIRSTNONBLANKVALUE(
-    DimDate[Date], 
+    DimDate[Date],
     SUM(FactInternetSales[SalesAmount])
    )
 )
@@ -61,4 +60,3 @@ Returns,
 |H|13778.24|
 |M|1000.4375|
 ||533.83|
-  
