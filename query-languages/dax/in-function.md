@@ -1,7 +1,7 @@
 ---
 title: "IN function | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/26/2019
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,12 +9,13 @@ ms.author: owend
 
 ---
 # IN
+
 Returns True if the scalar value shows up in at least one row of the input relation.
   
 ## Syntax  
   
 ```dax
-IN 
+IN
 ```
   
 ### Parameters  
@@ -24,11 +25,12 @@ IN
 |scalar expression||  
 |table expression||  
 
-  
-## Return value  
+## Return value
+
 True
   
-## Remarks  
+## Remarks
+
 None
   
 ## Example  
@@ -38,7 +40,4 @@ Filtered Sales:=CALCULATE (
         [Internet Total Sales], 'Product'[Color] IN { "Red", "Blue", "Black" }
     )
 ```
-  
-## See also  
 
-  

@@ -1,7 +1,7 @@
 ---
 title: "ISERROR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # ISERROR
+
 Checks whether a value is an error, and returns TRUE or FALSE.  
   
 ## Syntax  
@@ -23,10 +24,12 @@ ISERROR(<value>)
 |--------|--------------|  
 |value|The value you want to test.|  
   
-## Return value  
+## Return value
+
 A Boolean value of TRUE if the value is an error; otherwise FALSE.  
   
-## Example  
+## Example
+
 The following example calculates the ratio of total Internet sales to total reseller sales. The ISERROR function is used to check for errors, such as division by zero. If there is an error a blank is returned, otherwise the ratio is returned.  
   
 ```dax
@@ -40,8 +43,8 @@ The following example calculates the ratio of total Internet sales to total rese
     )  
 ```
   
-## See also  
+## See also
+
 [Information functions &#40;DAX&#41;](information-functions-dax.md)  
 [IFERROR function &#40;DAX&#41;](iferror-function-dax.md)  
 [IF function &#40;DAX&#41;](if-function-dax.md)  
-  

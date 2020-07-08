@@ -1,7 +1,7 @@
 ---
 title: "IN Operator / CONTAINSROW function | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,11 +9,13 @@ ms.author: owend
 
 ---
 # IN Operator / CONTAINSROW function
+
 Returns TRUE if a row of values exists or contained in a table, otherwise returns FALSE.
 Except syntax, the IN operator and CONTAINSROW function are functionally equivalent.
 
-## IN Operator 
-### Syntax  
+## IN Operator
+
+### Syntax
   
 ```dax
 <scalarExpr> IN <tableExpr> 
@@ -22,11 +24,12 @@ Except syntax, the IN operator and CONTAINSROW function are functionally equival
 ```
 
 ## CONTAINSROW function
+
 ### Syntax
- 
- ```
- CONTAINSROW(<tableExpr>, <scalarExpr>[, <scalarExpr>, …]) 
- ```
+
+```dax
+CONTAINSROW(<tableExpr>, <scalarExpr>[, <scalarExpr>, …]) 
+```
   
 ### Parameters  
   
@@ -35,20 +38,20 @@ Except syntax, the IN operator and CONTAINSROW function are functionally equival
 |scalarExprN|Any valid DAX expression that returns a scalar value.|  
 |tableExpr|Any valid DAX expression that returns a table of data.|  
 
-  
-## Return value  
+## Return value
+
 TRUE or FALSE.
   
-## Remarks  
-The number of scalarExprN must match the number of columns in tableExpr.
+## Remarks
 
-Unlike the = operator, the IN operator and the CONTAINSROW function perform strict comparison. For example, the BLANK value does not match 0.
+- The number of scalarExprN must match the number of columns in tableExpr.
 
-NOT IN is not an operator in DAX. To perform the logical negation of the IN operator, put NOT in front of the entire expression. For example, NOT [Color] IN { "Red", "Yellow", "Blue" }. 
+- Unlike the = operator, the IN operator and the CONTAINSROW function perform strict comparison. For example, the BLANK value does not match 0.
 
-  
-## Examples
-### Example 1
+- NOT IN is not an operator in DAX. To perform the logical negation of the IN operator, put NOT in front of the entire expression. For example, NOT [Color] IN { "Red", "Yellow", "Blue" }.
+
+## Example 1
+
 The following equivalent DAX queries:
 
 ```dax
@@ -74,11 +77,12 @@ Return the following table with a single column:
 
 DimProduct[Color]  | |
 ---------|---------
-Blue     |         
-Red     |         
+Blue     |
+Red     |
 Yellow  |
 
-### Example 2
+## Example 2
+
 The following equivalent DAX queries:
 
 ```dax
@@ -93,17 +97,17 @@ EVALUATE FILTER(SUMMARIZE(DimProduct, [Color], [Size]), CONTAINSROW({ ("Black", 
 
 Return:
 
-
 DimProduct[Color]  | DimProduct[Size] |
 ---------|---------
-Black     |  L       
+Black     |  L
 
 ### Example 3
+
 The following equivalent DAX queries:
 
 ```dax
 EVALUATE FILTER(ALL(DimProduct[Color]), NOT [Color] IN { "Red", "Yellow", "Blue" })
-ORDER BY [Color] 
+ORDER BY [Color]
 ```
 
 and
@@ -117,15 +121,10 @@ Return the following table with a single column:
 
 DimProduct[Color]  | |
 ---------|---------
-Black     |         
-Grey     |         
+Black     |
+Grey     |
 Multi  |  
 NA   |
 Silver  |
 Silver\Black  |
 White |
-
- 
-
-
-  

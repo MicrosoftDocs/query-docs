@@ -1,7 +1,7 @@
 ---
 title: "LASTNONBLANK function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # LASTNONBLANK
+
 Returns the last value in the column, **column**, filtered by the current context, where the expression is not blank.  
   
 ## Syntax  
@@ -25,28 +26,25 @@ LASTNONBLANK(<column>,<expression>)
 |column|A column expression.|  
 |expression|An expression evaluated for blanks for each value of **column**.|  
   
-## Property Value/Return value  
+## Return value
+
 A table containing a single column and single row with the computed last value.  
   
-## Remarks  
-The **column** argument can be any of the following:  
+## Remarks
+
+- The **column** argument can be any of the following:  
+  - A reference to any column.  
+  - A table with a single column.  
+  - A Boolean expression that defines a single-column table  
   
--   A reference to any column.  
+- Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
   
--   A table with a single column.  
+- This function is typically used to return the last value of a column for which the expression is not blank. For example, you could get the last value for which there were sales of a product.  
   
--   A Boolean expression that defines a single-column table  
+- This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).
   
-> [!NOTE]  
-> Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
-  
-This function is typically used to return the last value of a column for which the expression is not blank. For example, you could get the last value for which there were sales of a product.  
-  
-This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172). 
-  
-## See also  
+## See also
+
 [FIRSTNONBLANK function &#40;DAX&#41;](firstnonblank-function-dax.md)  
 [Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
 [DAX function reference](dax-function-reference.md)  
- 
-  
