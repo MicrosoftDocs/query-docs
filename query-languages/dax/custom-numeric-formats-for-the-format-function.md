@@ -1,7 +1,7 @@
 ---
 title: "Custom numeric formats for the FORMAT function | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/31/2019
+ms.date: 07/05/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -52,11 +52,12 @@ The following table identifies characters you can use to create user-defined num
 |(**\\**)|Display the next character in the format string. To display a character that has special meaning as a literal character, precede it with a backslash (`\`). The backslash itself isn't displayed. Using a backslash is the same as enclosing the next character in double quotation marks. To display a backslash, use two backslashes (`\\`). Examples of characters that can't be displayed as literal characters are the date-formatting and time-formatting characters (a, c, d, h, m, n, p, q, s, t, w, y, /, and :), the numeric-formatting characters (#, 0, %, E, e, comma, and period), and the string-formatting characters (@, &, <, >, and !).|
 |("ABC")|Display the string inside the double quotation marks (" ").|
 
-## Remarks  
+## Remarks
+
 If you include semicolons with nothing between them, the missing section is printed using the format of the positive value.  
   
-## See also  
+## See also
+
 [FORMAT function &#40;DAX&#41;](format-function-dax.md)  
 [Pre-Defined Numeric Formats for the FORMAT function](pre-defined-numeric-formats-for-the-format-function.md)  
 [Custom date and time formats for the FORMAT function](custom-date-and-time-formats-for-the-format-function.md)  
-  

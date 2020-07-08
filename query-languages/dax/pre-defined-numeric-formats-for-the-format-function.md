@@ -1,7 +1,7 @@
 ---
 title: "Pre-Defined Numeric Formats for the FORMAT function | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/08/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # Pre-Defined Numeric Formats for the FORMAT function
+
 The following table identifies the predefined numeric format names. These may be used by name as the style argument for the Format function.  
   
 |Format specification|Description|  
@@ -23,15 +24,17 @@ The following table identifies the predefined numeric format names. These may be
 |`"True/False"`|Displays False if number is 0; otherwise, displays True.|  
 |`"On/Off"`|Displays Off if number is 0; otherwise, displays On.|  
   
-## Remarks  
-Note that format strings are based on Visual Basic (OLE Automation) and therefore might have slightly different behavior than the format strings used by the .NET Framework. Abbreviations such as “P” and “x” are not supported. Any other strings that you provide as an argument to the FORMAT function are interpreted as defining a custom format.  
+## Remarks
+
+Note that format strings are based on Visual Basic (OLE Automation) and therefore might have slightly different behavior than the format strings used by the .NET Framework. Abbreviations such as "P" and "x" are not supported. Any other strings that you provide as an argument to the FORMAT function are interpreted as defining a custom format.  
   
 > [!IMPORTANT]  
 > If *value* is BLANK() the function returns an empty string.  
->   
+>
 > If *format_string* is BLANK(), the value is formatted with a "General Number" format.  
   
-## Example  
+## Example
+
 The following samples show the usage of different predefined formatting strings to format a numeric value.  
   
 ```dax
@@ -57,8 +60,8 @@ The above expressions return the following results:
   
 **1.23E+04** "Scientific" displays the number in scientific notation with two decimal digits.  
   
-## See also  
+## See also
+
 [FORMAT function &#40;DAX&#41;](format-function-dax.md)  
 [Pre-defined date and time formats for the FORMAT function](pre-defined-date-and-time-formats-for-the-format-function.md)  
 [Custom Numeric Formats for the FORMAT function](custom-numeric-formats-for-the-format-function.md)  
-  

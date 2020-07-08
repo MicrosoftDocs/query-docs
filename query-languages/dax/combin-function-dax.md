@@ -1,14 +1,16 @@
 ---
 title: "COMBIN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/05/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 
 ---
+
 # COMBIN
+
 Returns the number of combinations for a given number of items. Use COMBIN to determine the total possible number of groups for a given number of items.  
   
 ## Syntax  
@@ -50,4 +52,4 @@ Returns the number of combinations for a given number of items.
   
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
-|=COMBIN(8,2)|Possible two-person teams that can be formed from 8 candidates.|28|  
+|= COMBIN(8,2)|Possible two-person teams that can be formed from 8 candidates.|28|  

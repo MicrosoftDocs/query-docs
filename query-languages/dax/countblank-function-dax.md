@@ -1,7 +1,7 @@
 ---
 title: "COUNTBLANK function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/05/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -55,4 +55,3 @@ To count logical values or text, use the COUNTA or COUNTAX functions.
 [COUNTAX function &#40;DAX&#41;](countax-function-dax.md)  
 [COUNTX function &#40;DAX&#41;](countx-function-dax.md)  
 [Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
-  

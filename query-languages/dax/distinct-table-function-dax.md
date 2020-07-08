@@ -1,7 +1,7 @@
 ---
 title: "DISTINCT (table) function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/05/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -24,15 +24,18 @@ DISTINCT(<table>)
 |--------|--------------|  
 |table|The table from which unique rows are to be returned. The table can also be an expression that results in a table.|  
   
-## Return value  
+## Return value
+
 A table containing only distinct rows.  
   
-## Related functions  
+## Related functions
+
 There is another version of the DISTINCT function, [DISTINCT (column)](distinct-function-dax.md), that takes a column name as input parameter.
   
 ## Example  
 
 The following query:
+
 ```dax
 EVALUATE DISTINCT( { (1, "A"), (2, "B"), (1, "A") } )
 ```
@@ -44,12 +47,10 @@ Returns table:
 |1    |     A    |
 |2    |     B    |
 
+## See also
 
-  
-## See also  
 [Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
-[DISTINCT (column) &#40;DAX&#41;](distinct-function-dax.md)   
+[DISTINCT (column) &#40;DAX&#41;](distinct-function-dax.md)  
 [FILTER function &#40;DAX&#41;](filter-function-dax.md)  
 [RELATED function &#40;DAX&#41;](related-function-dax.md)  
 [VALUES function &#40;DAX&#41;](values-function-dax.md)  
-  

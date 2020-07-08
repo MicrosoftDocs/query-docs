@@ -1,13 +1,14 @@
 ---
 title: "COMBINA function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/05/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 
 ---
+
 # COMBINA
 
 Returns the number of combinations (with repetitions) for a given number of items.  
@@ -43,6 +44,5 @@ Returns the number of combinations (with repetitions) for a given number of item
   
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
-|=COMBINA(4,3)|Returns the number of combinations (with repetitions) for 4 and 3.|20|  
-|=COMBINA(10,3)|Returns the number of combinations (with repetitions) for 10 and 3.|220|  
-  
+|= COMBINA(4,3)|Returns the number of combinations (with repetitions) for 4 and 3.|20|  
+|= COMBINA(10,3)|Returns the number of combinations (with repetitions) for 10 and 3.|220|  
