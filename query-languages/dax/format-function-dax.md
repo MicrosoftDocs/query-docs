@@ -61,7 +61,7 @@ A string containing **value** formatted as defined by **format_string**.
 
 ## See also
 
-[Pre-Defined Numeric Formats for the FORMAT function]    (pre-defined-numeric-formats-for-the-format-function.md)  
+[Pre-Defined Numeric Formats for the FORMAT function](pre-defined-numeric-formats-for-the-format-function.md)  
 [Custom Numeric Formats for the FORMAT function](custom-numeric-formats-for-the-format-function.md)  
 [Pre-defined date and time formats for the FORMAT function](pre-defined-date-and-time-formats-for-the-format-function.md)  
 [Custom date and time formats for the FORMAT function](custom-date-and-time-formats-for-the-format-function.md)  
