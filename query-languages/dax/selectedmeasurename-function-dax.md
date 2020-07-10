@@ -11,9 +11,6 @@ ms.author: owend
 # SELECTEDMEASURENAME
 
 Used by expressions for calculation items to determine the measure that is in context by name.
-
-> [!NOTE]
-> This function is not compatible with SQL Server 2017 Analysis Services and earlier.
   
 ## Syntax  
   

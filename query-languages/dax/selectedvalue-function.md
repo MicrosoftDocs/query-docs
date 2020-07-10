@@ -31,16 +31,20 @@ The value when the context for columnName has been filtered down to one distinct
   
 ## Remarks
 
-An equivalent expression for `SELECTEDVALUE(<columnName>, <alternateResult>)` is `IF(HASONEVALUE(<columnName>), VALUES(<columnName>), <alternateResult>)`. 
+An equivalent expression for `SELECTEDVALUE(<columnName>, <alternateResult>)` is `IF(HASONEVALUE(<columnName>), VALUES(<columnName>), <alternateResult>)`.
   
 ## Example  
   
 The following DAX query:
 
 ```dax
-DEFINE MEASURE DimProduct[Selected Color] = SELECTEDVALUE(DimProduct[Color], "No Single Selection")
-EVALUATE SUMMARIZECOLUMNS(ROLLUPADDISSUBTOTAL(DimProduct[Color], "Is Total"), "Selected Color", [Selected Color])
-ORDER BY [Is Total] ASC, [Color] ASC
+DEFINE
+ MEASURE DimProduct[Selected Color] = SELECTEDVALUE(DimProduct[Color], "No Single Selection")
+EVALUATE
+ SUMMARIZECOLUMNS  
+   (ROLLUPADDISSUBTOTAL(DimProduct[Color], "Is Total"),  
+   "Selected Color", [Selected Color])ORDER BY [Is Total] ASC,  
+   [Color] ASC
 ```
 
 Returns the following:
