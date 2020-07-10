@@ -1,7 +1,7 @@
 ---
 title: "PERCENTILEX.EXC function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -28,18 +28,20 @@ PERCENTILEX.EXC(<table>, <expression>, k)
 |expression|The expression to be evaluated for each row of the table.|  
 |k|The desired percentile value in the range 0 to 1 exclusive.|  
   
-## Return value  
+## Return value
+
 The percentile number of an expression evaluated for each row in a table.  
   
-## Remarks  
-If k is zero or blank, percentile rank of 1/(n+1) returns the smallest value. If zero, it is out of range and an error is returned.  
+## Remarks
+
+- If k is zero or blank, percentile rank of 1/(n+1) returns the smallest value. If zero, it is out of range and an error is returned.  
   
-If k is nonnumeric or outside the range 0 to 1, an error is returned.  
+- If k is nonnumeric or outside the range 0 to 1, an error is returned.  
   
-If k is not a multiple of 1/(n + 1), PERCENTILEX.EXC will interpolate to determine the value at the k-th percentile.  
+- If k is not a multiple of 1/(n + 1), PERCENTILEX.EXC will interpolate to determine the value at the k-th percentile.  
   
-PERCENTILEX.EXC will interpolate when the value for the specified percentile is between two values in the array. If it cannot interpolate for the k percentile specified, an error is returned.  
+- PERCENTILEX.EXC will interpolate when the value for the specified percentile is between two values in the array. If it cannot interpolate for the k percentile specified, an error is returned.  
   
-## See also  
-[PERCENTILE.EXC function &#40;DAX&#41;](percentile-exc-function-dax.md)  
-  
+## See also
+
+[PERCENTILE.EXC](percentile-exc-function-dax.md)  

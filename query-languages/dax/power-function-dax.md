@@ -1,7 +1,7 @@
 ---
 title: "POWER function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # POWER
+
 Returns the result of a number raised to a power.  
   
 ## Syntax  
@@ -24,16 +25,18 @@ POWER(<number>, <power>)
 |number|The base number, which can be any real number.|  
 |power|The exponent to which the base number is raised.|  
   
-## Return value  
+## Return value
+
 A decimal number.  
   
-## Example  
+## Example
+
 The following example returns 25.  
   
 ```dax
-=POWER(5,2)  
+= POWER(5,2)  
 ```
   
-## See also  
-[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
-  
+## See also
+
+[Math and Trig functions](math-and-trig-functions-dax.md)  

@@ -1,7 +1,7 @@
 ---
 title: "ROUNDUP function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # ROUNDUP
+
 Rounds a number up, away from 0 (zero).  
   
 ## Syntax  
@@ -24,51 +25,44 @@ ROUNDUP(<number>, <num_digits>)
 |number|A real number that you want to round up.|  
 |num_digits|The number of digits to which you want to round. A negative value for **num_digits** rounds to the left of the decimal point; if **num_digits** is zero or is omitted, **number** is rounded to the nearest integer.|  
   
-## Return value  
+## Return value
+
 A decimal number.  
   
-## Remarks  
-ROUNDUP behaves like ROUND, except that it always rounds a number up.  
+## Remarks
+
+- If **num_digits** is greater than 0 (zero), then the number is rounded up to the specified number of decimal places.  
   
--   If **num_digits** is greater than 0 (zero), then the number is rounded up to the specified number of decimal places.  
+- If **num_digits** is 0, then number is rounded up to the nearest integer.  
   
--   If **num_digits** is 0, then number is rounded up to the nearest integer.  
+- If **num_digits** is less than 0, then number is rounded up to the left of the decimal point.  
   
--   If **num_digits** is less than 0, then number is rounded up to the left of the decimal point.  
+- ROUNDUP behaves like ROUND, except that it always rounds a number up.  
   
-## Related functions  
-ROUNDUP behaves like ROUND, except that it always rounds a number up.  
-  
-## Example  
+## Example
+
 The following formula rounds Pi to four decimal places. The expected result is 3.1416.  
   
 ```dax
-=ROUNDUP(PI(),4)  
+= ROUNDUP(PI(),4)  
 ```
   
 ## Example: Decimals as Second Argument  
-  
-### Description  
+
 The following formula rounds 1.3 to the nearest multiple of 0.2. The expected result is 2.  
-  
-### Code  
-  
+
 ```dax
-=ROUNDUP(1.3,0.2)  
+= ROUNDUP(1.3,0.2)  
 ```
   
 ## Example: Negative Number as Second Argument  
   
-### Description  
 The following formula rounds the value in the column, **FreightCost**, with the expected results shown in the following table:  
   
-### Code  
-  
 ```dax
-=ROUNDUP([Values],-1)  
+= ROUNDUP([Values],-1)  
 ```
-  
-### Comments  
+
 When **num_digits** is less than zero, the number of places to the left of the decimal sign is increased by the value you specify.  
   
 |FreightCost|Expected Result|  
@@ -79,10 +73,10 @@ When **num_digits** is less than zero, the number of places to the left of the d
 |1.34|10|  
 |345.01|350|  
   
-## See also  
-[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
-[ROUND function &#40;DAX&#41;](round-function-dax.md)  
-[ROUNDDOWN function &#40;DAX&#41;](rounddown-function-dax.md)  
-[MROUND function &#40;DAX&#41;](mround-function-dax.md)  
-[INT function &#40;DAX&#41;](int-function-dax.md)  
-  
+## See also
+
+[Math and Trig functions](math-and-trig-functions-dax.md)  
+[ROUND](round-function-dax.md)  
+[ROUNDDOWN](rounddown-function-dax.md)  
+[MROUND](mround-function-dax.md)  
+[INT](int-function-dax.md)  

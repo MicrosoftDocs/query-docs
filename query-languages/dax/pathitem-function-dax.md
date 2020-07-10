@@ -1,7 +1,7 @@
 ---
 title: "PATHITEM function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -17,38 +17,39 @@ Returns the item at the specified *position* from a string resulting from evalua
 PATHITEM(<path>, <position>[, <type>])  
 ```
   
-### Parameters  
-path  
-A text string in the form of the results of a PATH function.  
-  
-position  
-An integer expression with the position of the item to be returned.  
-  
-type  
-(Optional)An enumeration that defines the data type of the result:  
-  
-||||  
-|-|-|-|  
-|**Enumeration**|**Alternate Enumeration**|**Description**|  
+### Parameters
+
+|Term|Definition|  
+|--------|--------------|  
+| path  | A text string in the form of the results of a PATH function.    |  
+| position |  An integer expression with the position of the item to be returned.  |
+| type |  (Optional)An enumeration that defines the data type of the result:  |
+
+#### type enumeration
+
+|**Enumeration**|**Alternate Enumeration**|**Description**|
+|-|-|-|
 |TEXT|0|Results are returned with the data type text. (default).|  
 |INTEGER|1|Results are returned as integers.|  
   
-## Return value  
+## Return value
+
 The identifier returned by the PATH function at the specified position in the list of identifiers. Items returned by the PATH function are ordered by most distant to current.  
   
 ## Remarks  
   
--   This function can be used to return a specific level from a hierarchy returned by a PATH function. For example, you could return just the skip-level managers for all employees.  
+- This function can be used to return a specific level from a hierarchy returned by a PATH function. For example, you could return just the skip-level managers for all employees.  
   
--   If you specify a number for *position* that is less than one (1) or greater than the number of elements in *path*, the PATHITEM function returns BLANK  
+- If you specify a number for *position* that is less than one (1) or greater than the number of elements in *path*, the PATHITEM function returns BLANK  
   
--   If *type* is not a valid enumeration element an error is returned.  
+- If *type* is not a valid enumeration element an error is returned.  
   
-This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172). 
+- This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).
   
-## Example  
+## Example
+
 The following example returns the third tier manager of the current employee; it takes the employee and manager IDs as the input to a PATH function that returns a string with the hierarchy of parents to current employee. From that string PATHITEM returns the third entry as an integer.  
   
 ```dax
-=PATHITEM(PATH(Employee[EmployeeKey], Employee[ParentEmployeeKey]), 3, 1)  
+= PATHITEM(PATH(Employee[EmployeeKey], Employee[ParentEmployeeKey]), 3, 1)  
 ```

@@ -1,7 +1,7 @@
 ---
 title: "OPENINGBALANCEYEAR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/26/2019
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # OPENINGBALANCEYEAR
+
 Evaluates the **expression** at the first date of the year in the current context.  
   
 ## Syntax  
@@ -27,39 +28,36 @@ OPENINGBALANCEYEAR(<expression>,<dates>[,<filter>][,<year_end_date>])
 |filter|(optional) An expression that specifies a filter to apply to the current context.|  
 |year_end_date|(optional) A literal string with a date that defines the year-end date. The default is December 31.|  
   
-## Return value  
+## Return value
+
 A scalar value that represents the **expression** evaluated at the first date of the year in the current context.  
   
-## Remarks  
-The **dates** argument can be any of the following:  
+## Remarks
+
+- The **dates** argument can be any of the following:
+  - A reference to a date/time column.  
+  - A table expression that returns a single column of date/time values.  
+  - A Boolean expression that defines a single-column table of date/time values.  
   
--   A reference to a date/time column.  
+- Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
   
--   A table expression that returns a single column of date/time values.  
+- The **filter** expression has restrictions described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
   
--   A Boolean expression that defines a single-column table of date/time values.  
+- The **year_end_date** parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is ignored.  
   
-> [!NOTE]  
-> Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
+- This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).
   
-> [!NOTE]  
-> The **filter** expression has restrictions described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
-  
-The **year_end_date** parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is ignored.  
-  
-This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172). 
-  
-## Example  
+## Example
+
 The following sample formula creates a measure that calculates the 'Year Start Inventory Value' of the product inventory.  
   
 ```dax
-=OPENINGBALANCEYEAR(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])  
+= OPENINGBALANCEYEAR(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])  
 ```
   
-## See also  
+## See also
+
 [OPENINGBALANCEQUARTER function &#40;DAX&#41;](openingbalancequarter-function-dax.md)  
 [OPENINGBALANCEMONTH function &#40;DAX&#41;](openingbalancemonth-function-dax.md)  
 [Time intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
 [CLOSINGBALANCEYEAR function &#40;DAX&#41;](closingbalanceyear-function-dax.md)  
- 
-  

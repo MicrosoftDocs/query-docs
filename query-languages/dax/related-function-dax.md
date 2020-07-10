@@ -1,7 +1,7 @@
 ---
 title: "RELATED function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # RELATED
+
 Returns a related value from another table.  
   
 ## Syntax  
@@ -23,18 +24,20 @@ RELATED(<column>)
 |--------|--------------|  
 |column|The column that contains the values you want to retrieve.|  
   
-## Return value  
+## Return value
+
 A single value that is related to the current row.  
   
-## Remarks  
-The RELATED function requires that a relationship exists between the current table and the table with related information. You specify the column that contains the data that you want, and the function follows an existing many-to-one relationship to fetch the value from the specified column in the related table. If a relationship does not exist, you must create a relationship.  
+## Remarks
+
+- The RELATED function requires that a relationship exists between the current table and the table with related information. You specify the column that contains the data that you want, and the function follows an existing many-to-one relationship to fetch the value from the specified column in the related table. If a relationship does not exist, you must create a relationship.  
   
-When the RELATED function performs a lookup, it examines all values in the specified table regardless of any filters that may have been applied.  
+- When the RELATED function performs a lookup, it examines all values in the specified table regardless of any filters that may have been applied.  
   
-> [!NOTE]  
-> The RELATED function needs a row context; therefore, it can only be used in calculated column expression, where the current row context is unambiguous, or as a nested function in an expression that uses a table scanning function. A table scanning function, such as SUMX, gets the value of the current row value and then scans another table for instances of that value.  
+- The RELATED function needs a row context; therefore, it can only be used in calculated column expression, where the current row context is unambiguous, or as a nested function in an expression that uses a table scanning function. A table scanning function, such as SUMX, gets the value of the current row value and then scans another table for instances of that value.  
   
-## Example  
+## Example
+
 In the following example, the measure Non USA Internet Sales is created to produce a sales report that excludes sales in the United States. In order to create the measure, the InternetSales_USD table must be filtered to exclude all sales that belong to the United States in the SalesTerritory table. The United States, as a country, appears 5 times in the SalesTerritory table; once for each of the following regions: Northwest, Northeast, Central, Southwest, and Southeast.  
   
 The first approach to filter the Internet Sales, in order to create the measure, could be to add a filter expression like the following:  
@@ -50,7 +53,7 @@ A better approach would be to use the existing relationship between InternetSale
   
 ```dax
 FILTER( 'InternetSales_USD', RELATED('SalesTerritory'[SalesTerritoryCountry])<>"United States")
-``` 
+```
   
 This expression uses the RELATED function to lookup the country value in the SalesTerritory table, starting with the value of the key column, SalesTerritoryKey, in the InternetSales_USD table. The result of the lookup is used by the filter function to determine if the InternetSales_USD row is filtered or not.  
   
@@ -88,7 +91,7 @@ The following table shows the final report that you might get if you used this m
 |2008|$228,159.45|$5,386,558.19|$102,675.04|$5,717,392.68|  
 |Grand Total|$384,639.63|$16,107,890.23|$172,817.81|$16,665,347.67|  
   
-## See also  
-[RELATEDTABLE function &#40;DAX&#41;](relatedtable-function-dax.md)  
-[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
-  
+## See also
+
+[RELATEDTABLE](relatedtable-function-dax.md)  
+[Filter functions](filter-functions-dax.md)  
