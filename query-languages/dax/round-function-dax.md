@@ -1,7 +1,7 @@
 ---
 title: "ROUND function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # ROUND
+
 Rounds a number to the specified number of digits.  
   
 ## Syntax  
@@ -24,44 +25,45 @@ ROUND(<number>, <num_digits>)
 |number|The number you want to round.|  
 |num_digits|The number of digits to which you want to round. A negative value rounds digits to the left of the decimal point; a value of zero rounds to the nearest integer.|  
   
-## Return value  
+## Return value
+
 A decimal number.  
   
-## Remarks  
-If **num_digits** is greater than 0 (zero), then number is rounded to the specified number of decimal places.  
+## Remarks
+
+- If **num_digits** is greater than 0 (zero), then number is rounded to the specified number of decimal places.  
   
-If **num_digits** is 0, the number is rounded to the nearest integer.  
+- If **num_digits** is 0, the number is rounded to the nearest integer.  
   
-If **num_digits** is less than 0, the number is rounded to the left of the decimal point.  
+- If **num_digits** is less than 0, the number is rounded to the left of the decimal point.  
   
-## Related functions  
-To always round up (away from zero), use the ROUNDUP function.  
+- Related functions
+  - To always round up (away from zero), use the ROUNDUP function.  
+  - To always round down (toward zero), use the ROUNDDOWN function.  
+  - To round a number to a specific multiple (for example, to round to the nearest multiple of 0.5), use the MROUND function.  
+  - Use the functions TRUNC and INT to obtain the integer portion of the number.  
   
-To always round down (toward zero), use the ROUNDDOWN function.  
-  
-To round a number to a specific multiple (for example, to round to the nearest multiple of 0.5), use the MROUND function.  
-  
-You can use the functions TRUNC and INT to obtain the integer portion of the number.  
-  
-## Example  
+## Example 1
+
 The following formula rounds 2.15 up, to one decimal place. The expected result is 2.2.  
   
 ```dax
-=ROUND(2.15,1)  
+= ROUND(2.15,1)  
 ```
   
-## Example  
+## Example 2
+
 The following formula rounds 21.5 to one decimal place to the left of the decimal point. The expected result is 20.  
   
 ```dax
-=ROUND(21.5,-1)  
+= ROUND(21.5,-1)  
 ```
   
-## See also  
-[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
-[ROUND function &#40;DAX&#41;](round-function-dax.md)  
-[ROUNDDOWN function &#40;DAX&#41;](rounddown-function-dax.md)  
-[MROUND function &#40;DAX&#41;](mround-function-dax.md)  
-[INT function &#40;DAX&#41;](int-function-dax.md)  
-[TRUNC function &#40;DAX&#41;](trunc-function-dax.md)  
+## See also
+[Math and Trig functions](math-and-trig-functions-dax.md)  
+[ROUND](round-function-dax.md)  
+[ROUNDDOWN](rounddown-function-dax.md)  
+[MROUND](mround-function-dax.md)  
+[INT](int-function-dax.md)  
+[TRUNC](trunc-function-dax.md)  
   

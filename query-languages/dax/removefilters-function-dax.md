@@ -1,7 +1,7 @@
 ---
 title: "REMOVEFILTERS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 09/04/2019
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -33,7 +33,7 @@ N/A. See remarks.
 
 REMOVEFILTERS can only be used to clear filters but not to return a table.
 
-## Example 1 
+## Example 1
 
 DAX query
 
@@ -61,7 +61,7 @@ Returns
 |Accessories    | False        |    700759.96     |   0.023868921434441      |
 |Clothing    |  False       |   339772.61      |    0.0115731579950215     |
 
-## Example 2 
+## Example 2
 
 DAX query
 
@@ -73,7 +73,7 @@ MEASURE FactInternetSales[%Sales] = DIVIDE([TotalSales], CALCULATE([TotalSales],
 EVALUATE
     SUMMARIZECOLUMNS(
       DimProductCategory[EnglishProductCategoryName],
-	  DimProductSubcategory[EnglishProductSubcategoryName],
+      DimProductSubcategory[EnglishProductSubcategoryName],
       "TotalSales", [TotalSales],
       "%Sales", [%Sales]
     )
@@ -83,7 +83,6 @@ ORDER BY
 ```
 
 Returns
-
 
 |DimProductCategory [EnglishProductCategoryName]  |DimProductSubcategory [EnglishProductSubcategoryName]  |[TotalSales]  |[%Sales] |
 |---------|---------|---------|---------|

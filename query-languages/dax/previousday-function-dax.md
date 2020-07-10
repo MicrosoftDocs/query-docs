@@ -1,7 +1,7 @@
 ---
 title: "PREVIOUSDAY function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/26/2019
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -24,36 +24,36 @@ PREVIOUSDAY(<dates>)
 |Term|Definition|  
 |dates|A column containing dates.|  
   
-## Return value  
+## Return value
+
 A table containing a single column of date values.  
   
-## Remarks  
-This function determines the first date in the input parameter, and then returns all dates corresponding to the day previous to that first date. For example, if the first date in the **dates** argument refers to June 10, 2009; this function returns all dates equal to June 9, 2009.  
+## Remarks
+
+- This function determines the first date in the input parameter, and then returns all dates corresponding to the day previous to that first date. For example, if the first date in the **dates** argument refers to June 10, 2009; this function returns all dates equal to June 9, 2009.  
   
-The **dates** argument can be any of the following:  
+- The **dates** argument can be any of the following:  
+  - A reference to a date/time column.  
+  - A table expression that returns a single column of date/time values.  
+  - A Boolean expression that defines a single-column table of date/time values.  
   
--   A reference to a date/time column.  
+- Constraints on Boolean expressions are described in the topic, [CALCULATE function](calculate-function-dax.md).  
   
--   A table expression that returns a single column of date/time values.  
+- This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).
   
--   A Boolean expression that defines a single-column table of date/time values.  
-  
-> [!NOTE]  
-> Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
-  
-This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172). 
-  
-## Example  
+## Example
+
 The following sample formula creates a measure that calculates the 'previous day sales' for Internet sales.  
   
 ```dax
-=CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSDAY('DateTime'[DateKey]))  
+= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSDAY('DateTime'[DateKey]))  
 ```
   
-## See also  
-[Time intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
-[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[PREVIOUSMONTH function &#40;DAX&#41;](previousmonth-function-dax.md)  
-[PREVIOUSQUARTER function &#40;DAX&#41;](previousquarter-function-dax.md)  
-[PREVIOUSYEAR function &#40;DAX&#41;](previousyear-function-dax.md)  
+## See also
+
+[Time intelligence functions](time-intelligence-functions-dax.md)  
+[Date and time functions](date-and-time-functions-dax.md)  
+[PREVIOUSMONTH function](previousmonth-function-dax.md)  
+[PREVIOUSQUARTER function](previousquarter-function-dax.md)  
+[PREVIOUSYEAR function](previousyear-function-dax.md)  
   

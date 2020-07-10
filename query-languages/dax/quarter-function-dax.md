@@ -1,7 +1,7 @@
 ---
 title: "QUARTER function (DAX) | Microsoft Docs"
 ms.service: powerbi
-ms.date: 12/05/2019
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -11,12 +11,12 @@ ms.author: owend
 
 # QUARTER
 
-Returns the quarter as a number from 1 (January – March) to 4 (October – December).   
+Returns the quarter as a number from 1 (January – March) to 4 (October – December).
   
 ## Syntax  
   
 ```dax
-QUARTER(<date>) 
+QUARTER(<date>)
 ```
   
 ### Parameters  
@@ -29,14 +29,11 @@ QUARTER(<date>)
 
 An integer number from 1 to 4.  
   
-## Remarks  
-
-See related DAX functions: [YEAR](year-function-dax.md), [MONTH](month-function-dax.md), [DAY](day-function-dax.md).   
+## Remarks
 
 If the input value is BLANK, the output value is also BLANK.
 
-
-## Example   
+## Example 1
 
 The following DAX query:
   
@@ -51,19 +48,19 @@ Returns:
 |1    |
 |4    |
 
-## Example   
+## Example 2
 
 The following DAX query:
   
 ```dax
-EVALUATE 
+EVALUATE
 ADDCOLUMNS(
-	FILTER(
-		VALUES(
-			FactInternetSales[OrderDate]), 
-			[OrderDate] >= DATE(2008, 3, 31) && [OrderDate] <= DATE(2008, 4, 1)
-		), 
-	"Quarter", QUARTER([OrderDate])
+    FILTER(
+        VALUES(
+            FactInternetSales[OrderDate]), 
+            [OrderDate] >= DATE(2008, 3, 31) && [OrderDate] <= DATE(2008, 4, 1)
+        ), 
+    "Quarter", QUARTER([OrderDate])
 )
 ```
 
@@ -74,3 +71,8 @@ Returns:
 |3/31/2008    |  1  |
 |  4/1/2008  |  2   |
 
+## See also
+
+[YEAR](year-function-dax.md)  
+[MONTH](month-function-dax.md)  
+[DAY](day-function-dax.md)

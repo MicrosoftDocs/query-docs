@@ -1,7 +1,7 @@
 ---
 title: "REPT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # REPT
+
 Repeats text a given number of times. Use REPT to fill a cell with a number of instances of a text string.  
   
 ## Syntax  
@@ -24,39 +25,32 @@ REPT(<text>, <num_times>)
 |text|The text you want to repeat.|  
 |num_times|A positive number specifying the number of times to repeat text.|  
   
-## Property Value/Return value  
+## Return value
 A string containing the changes.  
   
-## Remarks  
-If **number_times** is 0 (zero), REPT returns a blank.  
+## Remarks
+
+- If **number_times** is 0 (zero), REPT returns a blank.  
   
-If **number_times** is not an integer, it is truncated.  
+- If **number_times** is not an integer, it is truncated.  
   
-The result of the REPT function cannot be longer than 32,767 characters, or REPT returns an error.  
+- The result of the REPT function cannot be longer than 32,767 characters, or REPT returns an error.  
   
 ## Example: Repeating Literal Strings  
-  
-### Description  
+
 The following example returns the string, 85, repeated three times.  
   
-### Code  
-  
 ```dax
-=REPT("85",3)  
+= REPT("85",3)  
 ```
   
 ## Example: Repeating Column Values  
   
-### Description  
 The following example returns the string in the column, [MyText], repeated for the number of times in the column, [MyNumber]. Because the formula extends for the entire column, the resulting string depends on the text and number value in each row.  
   
-### Code  
-  
 ```dax
-=REPT([MyText],[MyNumber])  
+= REPT([MyText],[MyNumber])  
 ```
-  
-### Comments  
   
 |MyText|MyNumber|CalculatedColumn1|  
 |----------|------------|---------------------|  
@@ -64,6 +58,6 @@ The following example returns the string in the column, [MyText], repeated for t
 |Number|0||  
 |85|3|858585|  
   
-## See also  
-[Text functions &#40;DAX&#41;](text-functions-dax.md)  
-  
+## See also
+
+[Text functions](text-functions-dax.md)  

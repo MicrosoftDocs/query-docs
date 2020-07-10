@@ -1,7 +1,7 @@
 ---
 title: "PARALLELPERIOD function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/26/2019
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # PARALLELPERIOD
+
 Returns a table that contains a column of dates that represents a period parallel to the dates in the specified **dates** column, in the current context, with the dates shifted a number of intervals either forward in time or back in time.  
   
 ## Syntax  
@@ -26,43 +27,41 @@ PARALLELPERIOD(<dates>,<number_of_intervals>,<interval>)
 |number_of_intervals|An integer that specifies the number of intervals to add to or subtract from the dates.|  
 |interval|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`.|  
   
-## Return value  
+## Return value
+
 A table containing a single column of date values.  
   
-## Remarks  
-This function takes the current set of dates in the column specified by **dates**, shifts the first date and the last date the specified number of intervals, and then returns all contiguous dates between the two shifted dates. If the interval is a partial range of month, quarter, or year then any partial months in the result are also filled out to complete the entire interval.  
+## Remarks
+
+- This function takes the current set of dates in the column specified by **dates**, shifts the first date and the last date the specified number of intervals, and then returns all contiguous dates between the two shifted dates. If the interval is a partial range of month, quarter, or year then any partial months in the result are also filled out to complete the entire interval.  
   
-The **dates** argument can be any of the following:  
+- The **dates** argument can be any of the following:  
+  - A reference to a date/time column,  
+  - A table expression that returns a single column of date/time values,  
+  - A Boolean expression that defines a single-column table of date/time values.  
   
--   A reference to a date/time column,  
+- Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
   
--   A table expression that returns a single column of date/time values,  
+- If the number specified for **number_of_intervals** is positive, the dates in **dates** are moved forward in time; if the number is negative, the dates in **dates** are shifted back in time.  
   
--   A Boolean expression that defines a single-column table of date/time values.  
+- The **interval** parameter is an enumeration, not a set of strings; therefore values should not be enclosed in quotation marks. Also, the values: `year`, `quarter`, `month` should be spelled in full when using them.  
   
-> [!NOTE]  
-> Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
+- The result table includes only dates that appear in the values of the underlying table column.  
   
-If the number specified for **number_of_intervals** is positive, the dates in **dates** are moved forward in time; if the number is negative, the dates in **dates** are shifted back in time.  
+- The PARALLELPERIOD function is similar to the DATEADD function except that PARALLELPERIOD always returns full periods at the given granularity level instead of the partial periods that DATEADD returns. For example, if you have a selection of dates that starts at June 10 and finishes at June 21 of the same year, and you want to shift that selection forward by one month then the PARALLELPERIOD function will return all dates from the next month (July 1 to July 31); however, if DATEADD is used instead, then the result will include only dates from July 10 to July 21.  
   
-The **interval** parameter is an enumeration, not a set of strings; therefore values should not be enclosed in quotation marks. Also, the values: `year`, `quarter`, `month` should be spelled in full when using them.  
+- This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).
   
-The result table includes only dates that appear in the values of the underlying table column.  
-  
-The PARALLELPERIOD function is similar to the DATEADD function except that PARALLELPERIOD always returns full periods at the given granularity level instead of the partial periods that DATEADD returns. For example, if you have a selection of dates that starts at June 10 and finishes at June 21 of the same year, and you want to shift that selection forward by one month then the PARALLELPERIOD function will return all dates from the next month (July 1 to July 31); however, if DATEADD is used instead, then the result will include only dates from July 10 to July 21.  
-  
-This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172). 
-  
-## Example  
+## Example
+
 The following sample formula creates a measure that calculates the previous year sales for Internet sales.  
   
 ```dax
-=CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PARALLELPERIOD(DateTime[DateKey],-1,year))  
+= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PARALLELPERIOD(DateTime[DateKey],-1,year))  
 ```
   
-## See also  
+## See also
+
 [Time intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
 [Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
 [DATEADD function &#40;DAX&#41;](dateadd-function-dax.md)  
- 
-  
