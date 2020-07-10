@@ -52,8 +52,6 @@ When the *value* parameter is omitted, the value of expression at the current ro
 
 The rank number of *value* among all possible values of *expression* evaluated for all rows of *table* numbers.  
   
-## Exceptions  
-  
 ## Remarks  
   
 - If *expression* or *value* evaluates to BLANK it is treated as a 0 (zero) for all expressions that result in a number, or as an empty text for all text expressions.  
