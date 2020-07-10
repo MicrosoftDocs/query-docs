@@ -1,7 +1,7 @@
 ---
 title: "ORDER BY keyword (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 03/27/2020
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -44,5 +44,5 @@ Returns all rows and columns from the Internet Sales table, ordered by Order Dat
   
 ## See also
 
-[DAX queries](dax-queries.md)   
-[EVALUATE](evaluate-statement-dax.md)   
+[DAX queries](dax-queries.md)  
+[EVALUATE](evaluate-statement-dax.md)  

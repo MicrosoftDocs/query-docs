@@ -26,7 +26,7 @@ The following table identifies the predefined numeric format names. These may be
   
 ## Remarks
 
-Note that format strings are based on Visual Basic (OLE Automation) and therefore might have slightly different behavior than the format strings used by the .NET Framework. Abbreviations such as "P" and "x" are not supported. Any other strings that you provide as an argument to the FORMAT function are interpreted as defining a custom format.  
+Format strings are based on Visual Basic (OLE Automation) and therefore might have slightly different behavior than the format strings used by the .NET Framework. Abbreviations such as "P" and "x" are not supported. Any other strings that you provide as an argument to the FORMAT function are interpreted as defining a custom format.  
   
 > [!IMPORTANT]  
 > If *value* is BLANK() the function returns an empty string.  

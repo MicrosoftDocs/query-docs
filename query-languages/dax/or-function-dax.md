@@ -1,14 +1,16 @@
 ---
 title: "OR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/26/2019
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 
 ---
+
 # OR
+
 Checks whether one of the arguments is TRUE to return TRUE. The function returns FALSE if both arguments are FALSE.  
   
 ## Syntax  
@@ -23,15 +25,18 @@ OR(<logical1>,<logical2>)
 |--------|--------------|  
 |logical_1, logical_2|The logical values you want to test.|  
   
-## Return value  
+## Return value
+
 A Boolean value. The value is TRUE if any of the two arguments is TRUE; the value is FALSE if both the arguments are FALSE.  
   
-## Remarks  
-The **OR** function in DAX accepts only two (2) arguments. If you need to perform an OR operation on multiple expressions, you can create a series of calculations or, better, use the OR operator (**||**) to join all of them in a simpler expression.  
+## Remarks
+
+- The **OR** function in DAX accepts only two (2) arguments. If you need to perform an OR operation on multiple expressions, you can create a series of calculations or, better, use the OR operator (**||**) to join all of them in a simpler expression.  
   
-The function evaluates the arguments until the first TRUE argument, then returns TRUE.  
+- The function evaluates the arguments until the first TRUE argument, then returns TRUE.  
   
-## Example  
+## Example
+
 The following example shows how to use the OR function to obtain the sales people that belong to the Circle of Excellence. The Circle of Excellence recognizes those who have achieved more than a million dollars in Touring Bikes sales or sales of over two and a half million dollars in 2007.  
 
 ```dax
@@ -68,9 +73,7 @@ Returns
 |Vargas, Garrett R|||||||  
 |Varkey Chudukatil, Ranjit R||||||Circle of Excellence|  
 |Grand Total|Circle of Excellence|Circle of Excellence|Circle of Excellence|Circle of Excellence|Circle of Excellence|Circle of Excellence|  
-  
 
-  
-## See also  
+## See also
+
 [Logical functions &#40;DAX&#41;](logical-functions-dax.md)  
-  

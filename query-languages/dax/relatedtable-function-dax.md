@@ -1,7 +1,7 @@
 ---
 title: "RELATEDTABLE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -55,5 +55,5 @@ The following table shows the results:
   
 ## See also
 
-[CALCULATETABLE function &#40;DAX&#41;](calculatetable-function-dax.md)  
-[Filter functions &#40;DAX&#41;](filter-functions-dax.md)
+[CALCULATETABLE](calculatetable-function-dax.md)  
+[Filter functions](filter-functions-dax.md)

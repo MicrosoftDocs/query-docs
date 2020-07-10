@@ -1,7 +1,7 @@
 ---
 title: "T.DIST.2T function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 8/14/2018
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,8 +9,8 @@ ms.author: owend
 
 ---
 # T.DIST.2T
+
 Returns the two-tailed Student's t-distribution.
- 
   
 ## Syntax  
   
@@ -25,7 +25,8 @@ T.DIST.2T(X,Deg_freedom)
 |X|The numeric value at which to evaluate the distribution.|  
 |Deg_freedom |An integer indicating the number of degrees of freedom.|
   
-## Return value  
+## Return value
+
 The two-tailed Student's t-distribution.
   
 ## Example  
@@ -40,11 +41,10 @@ Returns
 |---------|
 |0.054644929975921     |
 
-
 ## See also  
 
-[T.DIST function](t-dist-dax.md)   
-[T.DIST.RT function](t-dist-rt-dax.md)   
-[T.INV function](t-inv-dax.md)   
-[T.INV.2t function](t-inv-2t-dax.md)   
+[T.DIST](t-dist-dax.md)  
+[T.DIST.RT](t-dist-rt-dax.md)  
+[T.INV](t-inv-dax.md)  
+[T.INV.2t](t-inv-2t-dax.md)  
   

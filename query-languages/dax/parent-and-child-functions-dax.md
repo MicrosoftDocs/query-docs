@@ -1,7 +1,7 @@
 ---
 title: "Parent and Child functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 04/22/2019
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,10 +9,10 @@ ms.author: owend
 
 ---
 # Parent and Child functions
+
 These functions manage data that is presented as parent/child hierarchies. To learn more, see [Understanding functions for Parent-Child Hierarchies in DAX](understanding-functions-for-parent-child-hierarchies-in-dax.md).  
   
 ## In this category 
-
 
 |Function  |Description |
 |---------|---------|

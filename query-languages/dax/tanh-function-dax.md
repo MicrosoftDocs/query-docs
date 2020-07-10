@@ -1,7 +1,7 @@
 ---
 title: "TANH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # TANH
+
 Returns the hyperbolic tangent of a number.  
   
 ## Syntax  
@@ -23,10 +24,12 @@ TANH(number)
 |--------|--------------|  
 |number|Required. Any real number.|  
   
-## Return value  
+## Return value
+
 Returns the hyperbolic tangent of a number.  
   
-## Remarks  
+## Remarks
+
 The formula for the hyperbolic tangent is:  
   
 ![Formula](media/dax-tanh-formula.png)  
@@ -38,4 +41,3 @@ The formula for the hyperbolic tangent is:
 |=TANH(-2)|Hyperbolic tangent of -2 (-0.96403)|-0.964028|  
 |=TANH(0)|Hyperbolic tangent of 0 (0)|0|  
 |=TANH(0.5)|Hyperbolic tangent of 0.5 (0.462117)|0.462117|  
-  

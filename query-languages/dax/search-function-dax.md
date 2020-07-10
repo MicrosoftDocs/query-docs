@@ -1,7 +1,7 @@
 ---
 title: "SEARCH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # SEARCH
+
 Returns the number of the character at which a specific character or text string is first found, reading left to right. Search is case-insensitive and accent sensitive.  
   
 ## Syntax  
@@ -26,71 +27,58 @@ SEARCH(<find_text>, <within_text>[, [<start_num>][, <NotFoundValue>]])
 |start_num|(optional) The character position in **within_text** at which you want to start searching. If omitted, 1.|  
 |NotFoundValue|(optional) The value that should be returned when the operation does not find a matching substring, typically 0, -1, or BLANK().|  
   
-## Return value  
+## Return value
+
 The number of the starting position of the first text string from the first character of the second text string.  
   
 ## Remarks  
   
-1.  The search function is case insensitive. Searching for "N" will find the first occurrence of 'N' or 'n'.  
+- The search function is case insensitive. Searching for "N" will find the first occurrence of 'N' or 'n'.  
+
+- The search function is accent sensitive. Searching for "á" will find the first occurrence of 'á' but no occurrences of 'a', 'à', or the capitalized versions 'A', 'Á'.  
+
+- By using this function, you can locate one text string within a second text string, and return the position where the first string starts.  
+
+- You can use the SEARCH function to determine the location of a character or text string within another text string, and then use the MID function to return the text, or use the REPLACE function to change the text.  
+
+- If the **find_text** cannot be found in **within_text**, the formula returns an error. This behavior is like Excel, which returns #VALUE if the substring is not found. Nulls in **within_text** will be interpreted as an empty string in this context.  
   
-2.  The search function is accent sensitive. Searching for "á" will find the first occurrence of 'á' but no occurrences of 'a', 'à', or the capitalized versions 'A', 'Á'.  
-  
-3.  By using this function, you can locate one text string within a second text string, and return the position where the first string starts.  
-  
-4.  You can use the SEARCH function to determine the location of a character or text string within another text string, and then use the MID function to return the text, or use the REPLACE function to change the text.  
-  
-5.  If the **find_text** cannot be found in **within_text**, the formula returns an error. This behavior is like Excel, which returns #VALUE if the substring is not found. Nulls in **within_text** will be interpreted as an empty string in this context.  
-  
-This DAX function may return different results when used in a model that is deployed and then queried in DirectQuery mode. For more information about semantic differences in DirectQuery mode, see  [https://go.microsoft.com/fwlink/?LinkId=219171](https://go.microsoft.com/fwlink/?LinkId=219171).  
+- This DAX function may return different results when used in a model that is deployed and then queried in DirectQuery mode. For more information about semantic differences in DirectQuery mode, see  [https://go.microsoft.com/fwlink/?LinkId=219171](https://go.microsoft.com/fwlink/?LinkId=219171).  
   
 ## Example: Search within a String  
-  
-### Description  
+
 The following formula finds the position of the letter "n" in the word "printer".  
   
-### Code  
-  
 ```dax
-=SEARCH("n","printer")  
+= SEARCH("n","printer")  
 ```
-  
-### Comments  
+
 The formula returns 4 because "n" is the fourth character in the word "printer."  
   
 ## Example: Search within a Column  
-  
-### Description  
-You can use a column reference as an argument to SEARCH. The following formula finds the position of the character "-" (hyphen) in the column, [PostalCode].  
-  
-### Code  
+
+You can use a column reference as an argument to SEARCH. The following formula finds the position of the character "-" (hyphen) in the column, [PostalCode].   
   
 ```dax
-=SEARCH("-",[PostalCode])  
+= SEARCH("-",[PostalCode])  
 ```
-  
-### Comments  
+
 The return result is a column of numbers, indicating the index position of the hyphen.  
   
 ## Example: Error-Handling with SEARCH  
-  
-### Description  
+
 The formula in the preceding example will fail if the search string is not found in every row of the source column. Therefore, the next example demonstrates how to use IFERROR with the SEARCH function, to ensure that a valid result is returned for every row.  
   
 The following formula finds the position of the character "-" within the column, and returns -1 if the string is not found.  
   
-### Code  
-  
 ```dax
 = IFERROR(SEARCH("-",[PostalCode]),-1)  
 ```
+
+The data type of the value that you use as an error output must match the data type of the non-error output type. In this case, you provide a numeric value to be output in case of an error because SEARCH returns an integer value. However, you could also return a blank (empty string) by using `BLANK()` as the second argument to IFERROR.  
   
-### Comments  
-Note that the data type of the value that you use as an error output must match the data type of the non-error output type. In this case, you provide a numeric value to be output in case of an error because SEARCH returns an integer value.  
-  
-However, you could also return a blank (empty string) by using `BLANK()` as the second argument to IFERROR.  
-  
-## See also  
-[MID function &#40;DAX&#41;](mid-function-dax.md)  
-[REPLACE function &#40;DAX&#41;](replace-function-dax.md)  
-[Text functions &#40;DAX&#41;](text-functions-dax.md)  
-  
+## See also
+
+[MID](mid-function-dax.md)  
+[REPLACE](replace-function-dax.md)  
+[Text functions](text-functions-dax.md)  
