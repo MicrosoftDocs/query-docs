@@ -37,7 +37,7 @@ If the number is negative, the SQRT function returns an error.
 The following formula,  
   
 ```dax
-=SQRT(25)  
+= SQRT(25)  
 ```
   
 ## See also
