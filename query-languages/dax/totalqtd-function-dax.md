@@ -1,7 +1,7 @@
 ---
 title: "TOTALQTD function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/26/2019
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # TOTALQTD
+
 Evaluates the value of the **expression** for the dates in the quarter to date, in the current context.  
   
 ## Syntax  
@@ -25,37 +26,34 @@ TOTALQTD(<expression>,<dates>[,<filter>])
 |dates|A column that contains dates.|  
 |filter|(optional) An expression that specifies a filter to apply to the current context.|  
   
-## Return value  
+## Return value
+
 A scalar value that represents the **expression** evaluated for all dates in the current quarter to date, given the dates in **dates**.  
   
-## Remarks  
-The **dates** argument can be any of the following:  
+## Remarks
+
+- The **dates** argument can be any of the following:  
+  - A reference to a date/time column.  
+  - A table expression that returns a single column of date/time values.  
+  - A Boolean expression that defines a single-column table of date/time values.  
   
--   A reference to a date/time column.  
+- Constraints on Boolean expressions are described in the topic, [CALCULATE](calculate-function-dax.md).  
   
--   A table expression that returns a single column of date/time values.  
+- The **filter** expression has restrictions described in the topic, [CALCULATE](calculate-function-dax.md).  
+
+- This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).
   
--   A Boolean expression that defines a single-column table of date/time values.  
-  
-> [!NOTE]  
-> Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
-  
-> [!NOTE]  
-> The **filter** expression has restrictions described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
->   
-> This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172). 
-  
-## Example  
+## Example
+
 The following sample formula creates a measure that calculates the 'quarter running total' or 'quarter running sum' for Internet sales.  
   
 ```dax
-=TOTALQTD(SUM(InternetSales_USD[SalesAmount_USD]),DateTime[DateKey])  
+= TOTALQTD(SUM(InternetSales_USD[SalesAmount_USD]),DateTime[DateKey])  
 ```
   
-## See also  
-[ALL function &#40;DAX&#41;](all-function-dax.md)  
-[CALCULATE function &#40;DAX&#41;](calculate-function-dax.md)  
-[TOTALYTD function &#40;DAX&#41;](totalytd-function-dax.md)  
-[TOTALMTD function &#40;DAX&#41;](totalmtd-function-dax.md)  
- 
-  
+## See also
+
+[ALL](all-function-dax.md)  
+[CALCULATE](calculate-function-dax.md)  
+[TOTALYTD](totalytd-function-dax.md)  
+[TOTALMTD](totalmtd-function-dax.md)  

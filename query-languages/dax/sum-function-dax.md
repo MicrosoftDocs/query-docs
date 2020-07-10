@@ -1,7 +1,7 @@
 ---
 title: "SUM function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # SUM
+
 Adds all the numbers in a column.  
   
 ## Syntax  
@@ -23,21 +24,22 @@ SUM(<column>)
 |--------|--------------|  
 |column|The column that contains the numbers to sum.|  
   
-## Return value  
+## Return value
+
 A decimal number.  
   
 ## Remarks  
   
 If you want to filter the values that you are summing, you can use the SUMX function and specify an expression to sum over.  
   
-## Example  
+## Example
+
 The following example adds all the numbers that are contained in the column, Amt, from the table, Sales.  
   
 ```dax
-=SUM(Sales[Amt])  
+= SUM(Sales[Amt])  
 ```
   
-## See also  
-[SUMX function &#40;DAX&#41;](sumx-function-dax.md)  
-[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
-  
+## See also
+
+[SUMX](sumx-function-dax.md)

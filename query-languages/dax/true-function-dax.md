@@ -1,7 +1,7 @@
 ---
 title: "TRUE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/26/2019
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # TRUE
+
 Returns the logical value TRUE.  
   
 ## Syntax  
@@ -17,20 +18,23 @@ Returns the logical value TRUE.
 TRUE()  
 ```
   
-## Return value  
+## Return value
+
 Always TRUE.  
   
-## Remarks  
+## Remarks
+
 The word TRUE is also interpreted as the logical value TRUE.  
   
-## Example  
+## Example
+
 The formula returns the logical value TRUE when the value in the column, 'InternetSales_USD'[SalesAmount_USD], is greater than 200000.  
   
 ```dax
 = IF(SUM('InternetSales_USD'[SalesAmount_USD]) >200000, TRUE(), false())  
 ```
 
-The following table shows the results when the example formula is used in a PivotTable, with 'ProductCategory'[ProductCategoryName] in Row Labels and 'DateTime'[CalendarYear] in Column Labels.  
+The following table shows the results when the example formula is used in a PivotTable or visualization, with 'ProductCategory'[ProductCategoryName] in Row Labels and 'DateTime'[CalendarYear] in Column Labels.  
   
 |True-False|Column Labels||||||  
 |---------------|-----------------|----|----|----|----|----|  
@@ -42,11 +46,8 @@ The following table shows the results when the example formula is used in a Pivo
 ||FALSE|FALSE|FALSE|FALSE|FALSE|FALSE|  
 |Grand Total|TRUE|TRUE|TRUE|TRUE|FALSE|TRUE|  
   
+## See also
 
-  
-## See also  
-[FALSE function &#40;DAX&#41;](false-function-dax.md)  
-[NOT function &#40;DAX&#41;](not-function-dax.md)  
-[IF function &#40;DAX&#41;](if-function-dax.md)  
-[DAX function reference](dax-function-reference.md)  
-  
+[FALSE](false-function-dax.md)  
+[NOT](not-function-dax.md)  
+[IF](if-function-dax.md)  

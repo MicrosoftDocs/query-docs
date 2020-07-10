@@ -1,7 +1,7 @@
 ---
 title: "SWITCH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # SWITCH
+
 Evaluates an expression against a list of values and returns one of multiple possible result expressions.  
   
 ## Syntax  
@@ -26,13 +27,16 @@ SWITCH(<expression>, <value>, <result>[, <value>, <result>]…[, <else>])
 |result |Any scalar expression to be evaluated if the results of *expression* match the corresponding *value*.  |
 |else |Any scalar expression to be evaluated if the result of *expression* doesn't match any of the *value* arguments.  |
 
-## Return value  
+## Return value
+
 A scalar value coming from one of the *result* expressions, if there was a match with *value*, or from the *else* expression, if there was no match with any *value*.  
   
-## Remarks  
+## Remarks
+
 All result expressions and the else expression must be of the same data type.  
   
-## Example  
+## Example
+
 The following example creates a calculated column of month names.  
   
 ```dax

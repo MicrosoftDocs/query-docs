@@ -1,7 +1,7 @@
 ---
 title: "SAMPLE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/15/2020
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan

@@ -1,7 +1,7 @@
 ---
 title: "SELECTEDMEASURENAME function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 04/25/2019
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -11,14 +11,11 @@ ms.author: owend
 # SELECTEDMEASURENAME
 
 Used by expressions for calculation items to determine the measure that is in context by name.
-
-> [!NOTE]
-> This function is not compatible with SQL Server 2017 Analysis Services and earlier.
   
 ## Syntax  
   
 ```dax
-SELECTEDMEASURENAME() 
+SELECTEDMEASURENAME()
 ```
   
 ### Parameters  
@@ -31,10 +28,9 @@ A string value holding the name of the measure that is currently in context when
 
 ## Remarks
 
-Can only be referenced in the expression for a calculation item. 
+- Can only be referenced in the expression for a calculation item. 
 
-This function is often used for debugging purposes when authoring calculation groups.
-
+- This function is often used for debugging purposes when authoring calculation groups.
 
 ## Example  
 
@@ -48,7 +44,7 @@ IF (
 )
 ```
   
-## See also  
+## See also
+
 [SELECTEDMEASURE](selectedmeasure-function-dax.md)  
 [ISSELECTEDMEASURE](isselectedmeasure-function-dax.md)   
-  
