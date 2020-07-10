@@ -1,7 +1,7 @@
 ---
 title: "SUBSTITUTEWITHINDEX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -32,9 +32,10 @@ SUBSTITUTEWITHINDEX(<table>, <indexColumnName>, <indexColumnsTable>, [<orderBy_e
 |orderBy_expression|Any DAX expression where the result value is used to specify the desired sort order of the indexColumnsTable table for generating correct index values. The sort order specified for the indexColumnsTable table defines the index of each row in the table and that index is used in the table returned to represent combinations of values in the indexColumnsTable as they appear in the table supplied as the first argument to this function.|  
 |order|(Optional) A value that specifies how to sort orderBy_expression values, ascending or descending:<br /><br />Value: **Desc**. Alternative value:  **0**(zero)/**FALSE**. Sorts in descending order of values of orderBy_expression. This is the default value when order parameter is omitted.<br /><br />Value: **ASC**. Alternative value:  **1**/**TRUE**. Ranks in ascending order of orderBy_expression.|  
   
-## Return value  
+## Return value
+
 A table which includes only those values present in the indexColumnsTable table and which has an index column instead of all columns present (by name) in the indexColumnsTable table.  
   
-## Remarks  
-This function does not guarantee any result sort order.  
-  
+## Remarks
+
+This function does not guarantee any result sort order.

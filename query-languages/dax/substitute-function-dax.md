@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # SUBSTITUTE
+
 Replaces existing text with new text in a text string.  
   
 ## Syntax  
@@ -26,28 +27,27 @@ SUBSTITUTE(<text>, <old_text>, <new_text>, <instance_num>)
 |new_text|The text you want to replace **old_text** with.|  
 |instance_num|(optional) The occurrence of **old_text** you want to replace. If omitted, every instance of **old_text** is replaced|  
   
-## Property Value/Return value  
+## Return value
+
 A string of text.  
   
-## Remarks  
-Use the SUBSTITUTE function when you want to replace specific text in a text string; use the REPLACE function when you want to replace any text of variable length that occurs in a specific location in a text string.  
+## Remarks
+
+- Use the SUBSTITUTE function when you want to replace specific text in a text string; use the REPLACE function when you want to replace any text of variable length that occurs in a specific location in a text string.  
   
-The SUBSTITUTE function is case-sensitive. If case does not match between **text** and **old_text**, SUBSTITUTE will not replace the text.  
+- The SUBSTITUTE function is case-sensitive. If case does not match between **text** and **old_text**, SUBSTITUTE will not replace the text.  
   
-This DAX function may return different results when used in a model that is deployed and then queried in DirectQuery mode. For more information about semantic differences in DirectQuery mode, see  [https://go.microsoft.com/fwlink/?LinkId=219171](https://go.microsoft.com/fwlink/?LinkId=219171).  
+- This DAX function may return different results when used in a model that is deployed and then queried in DirectQuery mode. For more information about semantic differences in DirectQuery mode, see  [https://go.microsoft.com/fwlink/?LinkId=219171](https://go.microsoft.com/fwlink/?LinkId=219171).  
   
 ## Example: Substitution within a String  
-  
-### Description  
-The following formula creates a copy of the column [Product Code] that substitutes the new product code **NW** for the old product code **PA** wherever it occurs in the column.  
-  
-### Code  
+
+The following formula creates a copy of the column [Product Code] that substitutes the new product code **NW** for the old product code **PA** wherever it occurs in the column.
   
 ```dax
 =SUBSTITUTE([Product Code], "NW", "PA")  
 ```
   
-## See also  
-[Text functions &#40;DAX&#41;](text-functions-dax.md)  
-[REPLACE function &#40;DAX&#41;](replace-function-dax.md)  
-  
+## See also
+
+[Text functions](text-functions-dax.md)  
+[REPLACE](replace-function-dax.md)  

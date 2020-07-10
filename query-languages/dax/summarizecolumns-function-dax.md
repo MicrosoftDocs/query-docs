@@ -1,7 +1,7 @@
 ---
 title: "SUMMARIZECOLUMNS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,6 +9,7 @@ ms.author: owend
 
 ---
 # SUMMARIZECOLUMNS
+
 Returns a summary table over a set of groups.  
   
 ## Syntax  
@@ -26,68 +27,73 @@ SUMMARIZECOLUMNS( <groupBy_columnName> [, < groupBy_columnName >]…, [<filterTa
 |name|A string representing the column name to use for the subsequent expression specified.|  
 |expression|Any DAX expression that returns a single value (not a table).|  
   
-## Return value  
+## Return value
+
 A table which includes combinations of values from the supplied columns, based on the grouping specified. Only rows for which at least one of the supplied expressions return a non-blank value are included in the table returned. If all expressions evaluate to BLANK/NULL for a row, that row is not included in the table returned.  
   
-## Remarks  
-SUMMARIZECOLUMNS does not guarantee any sort order for the results.  
+## Remarks
+
+- SUMMARIZECOLUMNS does not guarantee any sort order for the results.  
   
-A column cannot be specified more than once in the groupBy_columnName parameter. For example, the following formulas are invalid.  
+- A column cannot be specified more than once in the groupBy_columnName parameter. For example, the following formula is invalid.  
   
-`SUMMARIZECOLUMNS( Sales[StoreId], Sales[StoreId] )`  
+  `SUMMARIZECOLUMNS( Sales[StoreId], Sales[StoreId] )`  
   
-**Filter context**  
+### Filter context
   
 Consider the following query:  
   
 ```dax
-SUMMARIZECOLUMNS ( 'Sales Territory'[Category], FILTER('Customer', 'Customer' [First Name] = “Alicia”) )
-``` 
+SUMMARIZECOLUMNS ( 'Sales Territory'[Category], FILTER('Customer', 'Customer' [First Name] = "Alicia") )
+```
   
 In this query, without a measure the groupBy columns do not contain any columns from the Filter expression (i.e. from Customer table). The filter is not applied to the groupBy columns. The Sales Territory and the Customer table may be indirectly related through the Reseller sales fact table. Since they're not directly related, the filter expression is a no-op and the groupBy columns are not impacted.  
   
 However, with this query:  
   
 ```dax
-SUMMARIZECOLUMNS ( 'Sales Territory'[Category], 'Customer' [Education], FILTER('Customer', 'Customer'[First Name] = “Alicia”) )
+SUMMARIZECOLUMNS ( 'Sales Territory'[Category], 'Customer' [Education], FILTER('Customer', 'Customer'[First Name] = "Alicia") )
 ```  
   
 The groupBy columns contain a column which is impacted by the filter and that filter is applied to the groupBy results.  
   
 ## Options  
   
-### IGNORE  
+### IGNORE
+
 The IGNORE() syntax can be used to modify the behavior of the SUMMARIZECOLUMNS function by omitting specific expressions from the BLANK/NULL evaluation. Rows for which all expressions not using IGNORE return BLANK/NULL will be excluded independent of whether the expressions which do use IGNORE evaluate to BLANK/NULL or not.  
   
-#### Syntax  
+#### Syntax
 
 ```dax
 IGNORE(<expression>)
-``` 
-  
-**With SUMMARIZECOLUMNS**  
+```
+
+**With SUMMARIZECOLUMNS**
   
 ```dax
 SUMMARIZECOLUMNS(<groupBy_columnName>[, < groupBy_columnName >]…, [<filterTable>]…[, <name>, IGNORE(…)]…)
 ```  
   
-### Parameters  
+### Parameters
   
 |Term|Definition|  
 |--------|--------------|  
 |expression|Any DAX expression that returns a single value (not a table).|  
   
-#### Return value  
+#### Return value
+
 This function does not return a value.  
   
-#### Remarks  
+#### Remarks
+
 IGNORE can be used as an expression argument to SUMMARIZECOLUMNS.  
   
 #### Example  
 
 ```dax
-SUMMARIZECOLUMNS( Sales[CustomerId], "Total Qty", IGNORE( SUM( Sales[Qty] ) ), “BlankIfTotalQtyIsNot3”, IF( SUM( Sales[Qty] )=3, 3 ) )
-``` 
+SUMMARIZECOLUMNS( Sales[CustomerId], "Total Qty", IGNORE( SUM( Sales[Qty] ) ), "BlankIfTotalQtyIsNot3", IF( SUM( Sales[Qty] )=3, 3 ) )
+```
   
 This rolls up the Sales[CustomerId] column, creating a subtotal for all customers in the given grouping. Without IGNORE, the result is:  
   
@@ -97,18 +103,18 @@ This rolls up the Sales[CustomerId] column, creating a subtotal for all customer
 |B|3|3|  
 |C|3|3|  
   
-**With IGNORE**  
+**With IGNORE**
   
 |CustomerId|TotalQty|BlankIfTotalQtyIsNot3|  
 |--------------|------------|-------------------------|  
 |B|3|3|  
 |C|3|3|  
   
-**All expression ignored**  
+**All expression ignored**
   
 ```dax
-SUMMARIZECOLUMNS( Sales[CustomerId], "Blank", IGNORE( Blank() ), “BlankIfTotalQtyIsNot5”, IGNORE( IF( SUM( Sales[Qty] )=5, 5 ) ) )
-``` 
+SUMMARIZECOLUMNS( Sales[CustomerId], "Blank", IGNORE( Blank() ), "BlankIfTotalQtyIsNot5", IGNORE( IF( SUM( Sales[Qty] )=5, 5 ) ) )
+```
   
 Even though both expressions return blank for some rows, they're included since there are no non-ignored expressions which return blank.  
   
@@ -117,7 +123,6 @@ Even though both expressions return blank for some rows, they're included since 
 |A||5|  
 |B|||  
 |C|||  
-
 
 ### NONVISUAL
 
@@ -140,10 +145,10 @@ MEASURE FactInternetSales[Sales] = SUM(FactInternetSales[Sales Amount])
 EVALUATE
 SUMMARIZECOLUMNS
 (
-	DimDate[CalendarYear],
-	NONVISUAL(TREATAS({2007, 2008}, DimDate[CalendarYear])),
-	"Sales", [Sales],
-	"Visual Total Sales", CALCULATE([Sales], ALLSELECTED(DimDate[CalendarYear]))
+    DimDate[CalendarYear],
+    NONVISUAL(TREATAS({2007, 2008}, DimDate[CalendarYear])),
+    "Sales", [Sales],
+    "Visual Total Sales", CALCULATE([Sales], ALLSELECTED(DimDate[CalendarYear]))
 )
 ORDER BY [CalendarYear]
 ```
@@ -165,10 +170,10 @@ MEASURE FactInternetSales[Sales] = SUM(FactInternetSales[Sales Amount])
 EVALUATE
 SUMMARIZECOLUMNS
 (
-	DimDate[CalendarYear],
-	TREATAS({2007, 2008}, DimDate[CalendarYear]),
-	"Sales", [Sales],
-	"Visual Total Sales", CALCULATE([Sales], ALLSELECTED(DimDate[CalendarYear]))
+    DimDate[CalendarYear],
+    TREATAS({2007, 2008}, DimDate[CalendarYear]),
+    "Sales", [Sales],
+    "Visual Total Sales", CALCULATE([Sales], ALLSELECTED(DimDate[CalendarYear]))
 )
 ORDER BY [CalendarYear]
 ```
@@ -182,14 +187,17 @@ Returns the result where [Visual Total Sales] is the total across the two select
 |2007    |    9,791,060.30     |   19,561,960.04      |
 |2008     |     9,770,899.74    |    19,561,960.04     |
   
-### ROLLUPADDISSUBTOTAL()  
+### ROLLUPADDISSUBTOTAL()
+
 The addition of the ROLLUPADDISSUBTOTAL() syntax modifies the behavior of the SUMMARIZECOUMNS function by adding roll-up/subtotal rows to the result based on the `groupBy_columnName` columns.  
   
-#### Syntax  
+#### Syntax
+
 ```dax
 ROLLUPADDISSUBTOTAL ( [<filter> …, ] <groupBy_columnName>, <isSubtotal_columnName>[, <filter> …][, <groupBy_columnName >, <isSubtotal_columnName>[, <filter> …]…] ) 
-```  
-### Parameters  
+```
+
+### Parameters
   
 |Term|Definition|  
 |--------|--------------|  
@@ -197,11 +205,13 @@ ROLLUPADDISSUBTOTAL ( [<filter> …, ] <groupBy_columnName>, <isSubtotal_columnN
 |isSubtotal_columnName|The name of the Boolean column to be added to the result, indicating whether or not a row is a subtotal over the groupBy column (or columns when used with ROLLUPGROUP). This value is calculated using the ISSUBTOTAL function.|  
 |filter    | A table expression which is added to the filter context at the current grouping level. A filter before the first group-by column is applied at the grand total level.
   
-#### Return value  
+#### Return value
+
 The function does not return a value. It only specifies the set of columns to be subtotaled.  
   
-#### Example  
-**Single subtotal**  
+#### Example
+
+**Single subtotal**
   
 ```dax
 DEFINE
@@ -223,11 +233,11 @@ EVALUATE
   [IsCategorySubtotal] DESC, [Category],
   [IsSubcategorySubtotal] DESC, [Subcategory]
 
-``` 
+```
   
-**Result**  
+**Result**
   
-|Category  |Subcategory  |IsCategorySubtotal  |IsSubcategorySubtotal  |Total Qty 
+|Category  |Subcategory  |IsCategorySubtotal  |IsSubcategorySubtotal  |Total Qty
 |---------|---------|---------|---------|---------|
 |      |         |   True      |    True     |    60398     |
 |Accessories     |         |    False     |    True     |   36092      |
@@ -235,15 +245,15 @@ EVALUATE
 |Bikes    |   Mountain Bikes      |   False      |   False      |    4970     |
 |Clothing     |         |  False       |    True     |    9101     |
   
-**Multiple subtotals**  
+**Multiple subtotals**
   
 ```dax
 SUMMARIZECOUMNS ( Regions[State], ROLLUPADDISSUBTOTAL ( Sales[CustomerId], "IsCustomerSubtotal" ), ROLLUPADDISSUBTOTAL ( Sales[Date], "IsDateSubtotal"), "Total Qty", SUM( Sales[Qty] ) )
-``` 
+```
   
 Sales is grouped by state, by customer, by date, with subtotals for 1. Sales by state, by date 2. Sales by State, by Customer 3. Rolled up on both customer and date leading to sales by state.  
   
-**Result**  
+**Result**
   
 |CustomerID|IsCustomerSubtotal|State|Total Qty|Date|IsDateSubtotal|  
 |--------------|----------------------|---------|-------------|--------|------------------|  
@@ -262,43 +272,47 @@ Sales is grouped by state, by customer, by date, with subtotals for 1. Sales by 
 ||TRUE|WA|8||TRUE|  
 ||TRUE|OR|3||TRUE|  
   
-### ROLLUPGROUP()  
+### ROLLUPGROUP()
+
 Like with the SUMMARIZE function, ROLLUPGROUP can be used together with ROLLUPADDISSUBTOTAL to specify which summary groups/granularities (subtotals) to include (reducing the number of subtotal rows returned).  
   
-#### Syntax  
+#### Syntax
 
 ```dax
 ROLLUPGROUP(<groupBy_columnName>, <groupBy_columnName>)
-``` 
+```
   
-**With ROLLUPADDISSUBTOTAL**  
+**With ROLLUPADDISSUBTOTAL**
   
 ```dax
 ROLLUPADDISSUBTOTAL( ROLLUPGROUP(…), isSubtotal_columnName[, <groupBy_columnName>…] )
-``` 
+```
   
-### Parameters  
+### Parameters
   
 |Term|Definition|  
 |--------|--------------|  
 |groupBy_columnName|The qualified name of an existing column to be used to create summary groups based on the values found in it. The set of group by columns supplied to ROLLUPGROUP function will define the granularity to return subtotal rows for (same behavior as when ROLLUP and ROLLUPGROUP are used with the SUMMARIZE function). This parameter  cannot be an expression.|  
   
-#### Return value  
+#### Return value
+
 The function does not return a value. It marks a set of columns to be grouped during subtotaling by ROLLUPADDISSUBTOTAL.  
   
-#### Remarks  
+#### Remarks
+
 ROLLUPGROUP can only be used as an groupBy_columnName argument to ROLLUPADDISSUBTOTAL or the SUMMARIZE function.  
   
-#### Example  
-**Multiple subtotals**  
+#### Example
+
+**Multiple subtotals**
   
 ```dax
-SUMMARIZECOLUMNS( ROLLUPADDISSUBTOTAL( Sales[CustomerId], "IsCustomerSubtotal" ), ROLLUPADDISSUBTOTAL(ROLLUPGROUP(Regions[City], Regions[State]), “IsCityStateSubtotal”),"Total Qty", SUM( Sales[Qty] ) )
+SUMMARIZECOLUMNS( ROLLUPADDISSUBTOTAL( Sales[CustomerId], "IsCustomerSubtotal" ), ROLLUPADDISSUBTOTAL(ROLLUPGROUP(Regions[City], Regions[State]), "IsCityStateSubtotal"),"Total Qty", SUM( Sales[Qty] ) )
 ```  
   
 Still grouped by City and State, but rolled together when reporting a subtotal.  
   
-**Result**  
+**Result**
   
 |State|CustomerId|IsCustomerSubtotal|Total Qty|City|IsCityStateSubtotal|  
 |---------|--------------|----------------------|-------------|--------|-----------------------|  
@@ -315,6 +329,6 @@ Still grouped by City and State, but rolled together when reporting a subtotal.
 ||C|FALSE|3||TRUE|  
 |||TRUE|11||TRUE|  
   
-## See also  
-[SUMMARIZE function &#40;DAX&#41;](summarize-function-dax.md)  
-  
+## See also
+
+[SUMMARIZE](summarize-function-dax.md)
