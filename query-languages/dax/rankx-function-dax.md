@@ -33,18 +33,17 @@ When the *value* parameter is omitted, the value of expression at the current ro
   
 **order**  
 (Optional) A value that specifies how to rank *value*, low to high or high to low:  
-  
-||||  
-|-|-|-|  
-|value|alternate value|Description|  
+
+|value|alternate value|Description|
+|-----|-----|-----|
 |0 (zero)|FALSE|Ranks in descending order of values of expression. If value is equal to the highest number in expression then RANKX returns 1.<br /><br />This is the default value when order parameter is omitted.|  
 |1|TRUE|Ranks in ascending order of expression. If value is equal to the lowest number in expression then RANKX returns 1.|  
   
 **ties**  
 (Optional) An enumeration that defines how to determine ranking when there are ties.  
 
-|**enumeration**|**Description**|  
-|-|-|  
+|enumeration|Description|  
+|-----|-----|  
 |Skip|The next rank value, after a tie, is the rank value of the tie plus the count of tied values. For example if five (5) values are tied with a rank of 11 then the next value will receive a rank of 16 (11 + 5).<br /><br />This is the default value when *ties* parameter is omitted.|  
 |Dense|The next rank value, after a tie, is the next rank value. For example if five (5) values are tied with a rank of 11 then the next value will receive a rank of 12.|  
   

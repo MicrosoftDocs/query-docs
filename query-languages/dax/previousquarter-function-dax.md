@@ -20,9 +20,8 @@ PREVIOUSQUARTER(<dates>)
   
 ### Parameters  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|--------|--------------|  
 |dates|A column containing dates.|  
   
 ## Return value

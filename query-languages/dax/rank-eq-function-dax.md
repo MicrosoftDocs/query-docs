@@ -28,8 +28,8 @@ RANK.EQ(<value>, <columnName>[, <order>])
 
 #### order values
 
-|**value**|**alternate value**|**Description**|  
-|-|-|-|  
+|value|alternate value|Description|  
+|-----|-----|-----|  
 |0 (zero)|FALSE|Ranks in descending order of *columnName*. If *value* is equal to the highest number in *columnName* then **RANK.EQ** is 1.|  
 |1|TRUE|Ranks in ascending order of *columnName*. If *value* is equal to the lowest number in *columnName* then **RANK.EQ** is 1.|  
   

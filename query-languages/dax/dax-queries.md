@@ -169,7 +169,7 @@ Returns the calculated total sales for years 2013 and 2014, and combined calcula
 
 A well-defined DAX query statement can be parameterized and then used over and over with just changes in the parameter values.  
   
-The [Execute Method (XMLA)](https://docs.microsoft.com/bi-reference/xmla/xml-elements-methods-execute) method has a [Parameters Element (XMLA)](https://docs.microsoft.com/bi-reference/xmla/xml-elements-properties/parameters-element-xmla) collection element that allows parameters to be defined and assigned a value. Within the collection, each [Parameter Element (XMLA)](https://docs.microsoft.com/bi-reference/xmla/xml-elements-properties/parameter-element-xmla) element defines the name of the parameter and a value to it.  
+The [Execute Method (XMLA)](https://docs.microsoft.com/analysis-services/xmla/xml-elements-methods-execute) method has a [Parameters Element (XMLA)](https://docs.microsoft.com/analysis-services/xmla/xml-elements-properties/parameters-element-xmla) collection element that allows parameters to be defined and assigned a value. Within the collection, each [Parameter Element (XMLA)](https://docs.microsoft.com/analysis-services/xmla/xml-elements-properties/parameter-element-xmla) element defines the name of the parameter and a value to it.  
   
 Reference XMLA parameters by prefixing the name of the parameter with an `@` character. Hence, any place in the syntax where a value is allowed it can be replaced with a parameter call. All XMLA parameters are typed as text.  
   

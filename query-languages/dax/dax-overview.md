@@ -112,9 +112,8 @@ DAX formulas are essential for creating calculations in calculated columns and m
 
 DAX formulas can be very simple or quite complex. The following table shows some examples of simple formulas that could be used in a calculated column.  
   
-|||  
-|-|-|  
-|Formula|Description|  
+|Formula|Definition|  
+|--------|--------------|  
 |`= TODAY()`|Inserts today's date in every row of a calculated column.|  
 |`= 3`|Inserts the value 3 in every row of a calculated column.|  
 |`= [Column1] + [Column2]`|Adds the values in the same row of [Column1] and [Column2] and puts the results in the calculated column of the same row.|  

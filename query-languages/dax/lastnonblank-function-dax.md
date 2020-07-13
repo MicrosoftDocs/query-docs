@@ -20,9 +20,8 @@ LASTNONBLANK(<column>,<expression>)
   
 ### Parameters  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|--------|--------------|  
 |column|A column expression.|  
 |expression|An expression evaluated for blanks for each value of **column**.|  
   
@@ -47,4 +46,3 @@ A table containing a single column and single row with the computed last value.
 
 [FIRSTNONBLANK function](firstnonblank-function-dax.md)  
 [Statistical functions](statistical-functions-dax.md)  
-[DAX function reference](dax-function-reference.md)  

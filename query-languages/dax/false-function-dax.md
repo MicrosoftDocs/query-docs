@@ -51,4 +51,3 @@ The following table shows the results when the example formula is used with 'Pro
 [TRUE function](true-function-dax.md)  
 [NOT function](not-function-dax.md)  
 [IF function](if-function-dax.md)  
-[DAX function reference](dax-function-reference.md)  

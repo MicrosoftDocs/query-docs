@@ -34,10 +34,9 @@ Any DAX expression where the result value is used to sort the table and it is ev
   
 **order**
 (Optional) A value that specifies how to sort *orderBy_expression* values, ascending or descending:  
-  
-||||  
-|-|-|-|  
+
 |**value**|**alternate value**|**Description**|  
+|-----|-----|------|  
 |0 (zero)|FALSE|Sorts in descending order of values of *order_by*.<br /><br />This is the default value when *order* parameter is omitted.|  
 |1|TRUE|Ranks in ascending order of *order_by*.|  
   
