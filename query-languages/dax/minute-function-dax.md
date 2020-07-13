@@ -52,7 +52,7 @@ The following example returns 45, which is the number of minutes in the time 1:4
   
 ## See also
 
-[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[HOUR function &#40;DAX&#41;](hour-function-dax.md)  
-[YEAR function &#40;DAX&#41;](year-function-dax.md)  
-[SECOND function &#40;DAX&#41;](second-function-dax.md)  
+[Date and time functions](date-and-time-functions-dax.md)  
+[HOUR function](hour-function-dax.md)  
+[YEAR function](year-function-dax.md)  
+[SECOND function](second-function-dax.md)  

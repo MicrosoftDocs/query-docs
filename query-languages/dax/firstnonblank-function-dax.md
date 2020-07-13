@@ -37,14 +37,14 @@ A table containing a single column and single row with the computed first value.
   
 - A Boolean expression that defines a single-column table .  
   
-- Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
+- Constraints on Boolean expressions are described in the topic, [CALCULATE function](calculate-function-dax.md).  
   
 - This function is typically used to return the first value of a column for which the expression is not blank. For example, you could get the last value for which there were sales of a product.  
   
-- This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## See also
 
-[LASTNONBLANK function &#40;DAX&#41;](lastnonblank-function-dax.md)  
-[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
+[LASTNONBLANK function](lastnonblank-function-dax.md)  
+[Statistical functions](statistical-functions-dax.md)  
 [DAX function reference](dax-function-reference.md)  

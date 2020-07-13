@@ -12,7 +12,7 @@ ms.author: owend
   
 Returns the geometric mean of an expression evaluated for each row in a table.  
   
-To return the geometric mean of the numbers in a column, use [GEOMEAN function &#40;DAX&#41;](geomean-function-dax.md).  
+To return the geometric mean of the numbers in a column, use [GEOMEAN function](geomean-function-dax.md).  
   
 ## Syntax  
   
@@ -47,4 +47,4 @@ The following computes the geometric mean of the ReturnPct column in the Investm
   
 ## See also
 
-[GEOMEAN function &#40;DAX&#41;](geomean-function-dax.md)  
+[GEOMEAN function](geomean-function-dax.md)  

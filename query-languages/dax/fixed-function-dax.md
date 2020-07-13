@@ -40,7 +40,7 @@ A number represented as text.
   
 - The major difference between formatting a cell containing a number by using a command and formatting a number directly with the FIXED function is that FIXED converts its result to text. A number formatted with a command from the formatting menu is still a number.  
   
-- This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example
 
@@ -54,5 +54,5 @@ Numbers can never have more than 15 significant digits, but decimals can be as l
   
 ## See also
 
-[Text functions &#40;DAX&#41;](text-functions-dax.md)  
-[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)
+[Text functions](text-functions-dax.md)  
+[Math and Trig functions](math-and-trig-functions-dax.md)

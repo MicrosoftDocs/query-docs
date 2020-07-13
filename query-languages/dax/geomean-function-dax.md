@@ -12,7 +12,7 @@ ms.author: owend
   
 Returns the geometric mean of the numbers in a column.  
   
-To return the geometric mean of an expression evaluated for each row in a table, use [GEOMEANX function &#40;DAX&#41;](geomeanx-function-dax.md).  
+To return the geometric mean of an expression evaluated for each row in a table, use [GEOMEANX function](geomeanx-function-dax.md).  
   
 ## Syntax  
   
@@ -46,4 +46,4 @@ The following computes the geometric mean of the Return column in the Investment
   
 ## See also
 
-[GEOMEANX function &#40;DAX&#41;](geomeanx-function-dax.md)  
+[GEOMEANX function](geomeanx-function-dax.md)  

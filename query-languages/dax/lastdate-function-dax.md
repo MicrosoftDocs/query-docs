@@ -35,13 +35,13 @@ A table containing a single column and single row with a date value.
   - A table expression that returns a single column of date/time values,  
   - A Boolean expression that defines a single-column table of date/time values.  
 
-- Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
+- Constraints on Boolean expressions are described in the topic, [CALCULATE function](calculate-function-dax.md).  
   
 - When the current context is a single date, the date returned by the FIRSTDATE and LASTDATE functions will be equal.  
   
 - Technically, the Return value is a table that contains a single column and single value. Therefore, this function can be used as an argument to any function that requires a table in its arguments. Also, the returned value can be used whenever a date value is required.  
   
-- This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example
 
@@ -55,7 +55,7 @@ To see how this works, create a PivotTable and add the field CalendarYear to the
   
 ## See also
 
-[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[Time intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
-[FIRSTDATE function &#40;DAX&#41;](firstdate-function-dax.md)  
-[LASTNONBLANK function &#40;DAX&#41;](lastnonblank-function-dax.md)
+[Date and time functions](date-and-time-functions-dax.md)  
+[Time intelligence functions](time-intelligence-functions-dax.md)  
+[FIRSTDATE function](firstdate-function-dax.md)  
+[LASTNONBLANK function](lastnonblank-function-dax.md)

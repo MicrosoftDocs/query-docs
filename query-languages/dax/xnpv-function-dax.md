@@ -1,7 +1,7 @@
 ---
 title: "XNPV function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/13/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -27,21 +27,24 @@ XNPV(<table>, <values>, <dates>, <rate>)
 |dates|An expression that returns the cash flow date for each row of the table.|  
 |rate|The discount rate to apply to the cash flow for each row of the table.|  
   
-## Return value  
+## Return value
+
 Net present value.  
   
-## Remarks  
-The value is calculated as the following summation:  
+## Remarks
+
+- The value is calculated as the following summation:  
   
-![XNPV Formula](media/dax-xnpv-formula.png)  
+    ![XNPV Formula](media/dax-xnpv-formula.png)  
   
-The series of cash flow values must contain at least one positive number and one negative number.  
+- The series of cash flow values must contain at least one positive number and one negative number.  
   
-## Example  
+## Example
+
 The following calculates the present value of the CashFlows table:  
   
 ```dax
-Present value := XNPV( CashFlows, [Payment], [Date], 0.09 )  
+= XNPV( CashFlows, [Payment], [Date], 0.09 )  
 ```
   
 |Date|Payment|  
@@ -53,4 +56,3 @@ Present value := XNPV( CashFlows, [Payment], [Date], 0.09 )
 |4/1/2015|2750|  
   
 Present value = 2086.65  
-  

@@ -46,7 +46,7 @@ Employees table
 The following formula:  
 
 ```dax
-CONCATENATEX(Employees, [FirstName] &amp; " " &amp; [LastName], ",")  
+CONCATENATEX(Employees, [FirstName] & " " & [LastName], ",")  
 ```
   
 Returns:  

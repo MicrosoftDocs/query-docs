@@ -44,7 +44,7 @@ The identifier returned by the PATH function at the specified position in the li
   
 - If *type* is not a valid enumeration element an error is returned.  
   
-- This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example
 

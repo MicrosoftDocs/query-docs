@@ -42,8 +42,8 @@ The following expression rounds the value to 1. If you use the ROUND function, t
   
 ## See also
 
-[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
-[ROUND function &#40;DAX&#41;](round-function-dax.md)  
-[ROUNDUP function &#40;DAX&#41;](roundup-function-dax.md)  
-[ROUNDDOWN function &#40;DAX&#41;](rounddown-function-dax.md)  
-[MROUND function &#40;DAX&#41;](mround-function-dax.md)  
+[Math and Trig functions](math-and-trig-functions-dax.md)  
+[ROUND function](round-function-dax.md)  
+[ROUNDUP function](roundup-function-dax.md)  
+[ROUNDDOWN function](rounddown-function-dax.md)  
+[MROUND function](mround-function-dax.md)  

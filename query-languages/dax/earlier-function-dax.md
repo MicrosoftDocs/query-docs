@@ -120,5 +120,5 @@ The **EARLIER** function will always get the value of the column prior to the cu
   
 ## See also
 
-[EARLIEST function &#40;DAX&#41;](earliest-function-dax.md)  
-[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
+[EARLIEST function](earliest-function-dax.md)  
+[Filter functions](filter-functions-dax.md)  

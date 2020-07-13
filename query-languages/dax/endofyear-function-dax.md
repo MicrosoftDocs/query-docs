@@ -37,11 +37,11 @@ A table containing a single column and single row with a date value.
   - A table expression that returns a single column of date/time values,  
   - A Boolean expression that defines a single-column table of date/time values.  
   
-- Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
+- Constraints on Boolean expressions are described in the topic, [CALCULATE function](calculate-function-dax.md).  
   
 - The **year_end_date** parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is ignored.  
   
-- This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example
 
@@ -53,7 +53,7 @@ The following sample formula creates a measure that returns the end of the fisca
   
 ## See also
 
-[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[Time intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
-[ENDOFMONTH function &#40;DAX&#41;](endofmonth-function-dax.md)  
-[ENDOFQUARTER function &#40;DAX&#41;](endofquarter-function-dax.md)  
+[Date and time functions](date-and-time-functions-dax.md)  
+[Time intelligence functions](time-intelligence-functions-dax.md)  
+[ENDOFMONTH function](endofmonth-function-dax.md)  
+[ENDOFQUARTER function](endofquarter-function-dax.md)  

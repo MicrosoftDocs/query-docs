@@ -45,6 +45,6 @@ The following example calculates the ratio of total Internet sales to total rese
   
 ## See also
 
-[Information functions &#40;DAX&#41;](information-functions-dax.md)  
-[IFERROR function &#40;DAX&#41;](iferror-function-dax.md)  
-[IF function &#40;DAX&#41;](if-function-dax.md)  
+[Information functions](information-functions-dax.md)  
+[IFERROR function](iferror-function-dax.md)  
+[IF function](if-function-dax.md)  

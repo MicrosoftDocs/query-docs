@@ -1,7 +1,7 @@
 ---
 title: "XIRR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/13/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -27,21 +27,24 @@ XIRR(<table>, <values>, <dates>, [guess])
 |dates|An expression that returns the cash flow date for each row of the table.|  
 |guess|(Optional) An initial guess for the internal rate of return. If omitted, the default guess of 0.1 is used.|  
   
-## Return value  
+## Return value
+
 Internal rate of return for the given inputs. If the calculation fails to return a valid result, an error is returned.  
   
-## Remarks  
-The value is calculated as the rate that satisfies the following function:  
+## Remarks
+
+- The value is calculated as the rate that satisfies the following function:  
   
-![XIRR Formula](media/dax-xirr-formula.png)  
+    ![XIRR Formula](media/dax-xirr-formula.png)  
   
-The series of cash flow values must contain at least one positive number and one negative number.  
+- The series of cash flow values must contain at least one positive number and one negative number.  
   
-## Example  
-The following calculates the internal rate of return of the CashFlows table:  
+## Example
+
+The following formula calculates the internal rate of return of the CashFlows table:  
   
 ```dax
-Rate of return := XIRR( CashFlows, [Payment], [Date] )  
+= XIRR( CashFlows, [Payment], [Date] )  
 ```
   
 |Date|Payment|  
@@ -53,4 +56,3 @@ Rate of return := XIRR( CashFlows, [Payment], [Date] )
 |4/1/2015|2750|  
   
 Rate of return = 37.49%  
-  

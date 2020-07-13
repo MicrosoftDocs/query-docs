@@ -33,7 +33,7 @@ A value of **TRUE** if *item* exists in *path*; otherwise **FALSE**.
 
 - If *item* is an integer number it is converted to text and then the function is evaluated. If conversion fails then the function returns an error.  
   
-- This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example
 

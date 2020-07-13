@@ -32,11 +32,11 @@ The concatenated string.
 
 - The CONCATENATE function joins two text strings into one text string. The joined items can be text, numbers or Boolean values represented as text, or a combination of those items. You can also use a column reference if the column contains appropriate values.  
   
-- The CONCATENATE function in DAX accepts only two arguments, whereas the Excel CONCATENATE function accepts up to 255 arguments. If you need to concatenate multiple columns, you can create a series of calculations or, better, use the concatenation operator (**&amp;**) to join all of them in a simpler expression.  
+- The CONCATENATE function in DAX accepts only two arguments, whereas the Excel CONCATENATE function accepts up to 255 arguments. If you need to concatenate multiple columns, you can create a series of calculations or, better, use the concatenation operator (**&**) to join all of them in a simpler expression.  
   
 - If you want to use text strings directly, rather than using a column reference, you must enclose each string in double quotation marks.  
   
-- This DAX function may return different results when used in a model that is deployed and then queried in DirectQuery mode. For more information about semantic differences in DirectQuery mode, see  [https://go.microsoft.com/fwlink/?LinkId=219171](https://go.microsoft.com/fwlink/?LinkId=219171).  
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example: Concatenation of Literals  
   
@@ -62,7 +62,7 @@ The sample formula creates a new calculated column in the Customer table with th
 = CONCATENATE( [FirstName]&" ", CONCATENATE( IF( LEN([MiddleName])>1, LEFT([MiddleName],1)&" ", ""), [LastName]))
 ```
   
-This formula uses nested CONCATENATE and IF functions, together with the ampersand (&amp;) operator, to conditionally concatenate three string values and add spaces as separators.  
+This formula uses nested CONCATENATE and IF functions, together with the ampersand (**&amp;**) operator, to conditionally concatenate three string values and add spaces as separators.  
   
 ## Example: Concatenation of Columns with Different Data Types
 
@@ -85,4 +85,4 @@ The CONCATENATE function in DAX accepts only two arguments, whereas the Excel CO
   
 ## See also
 
-[Text functions &#40;DAX&#41;](text-functions-dax.md)  
+[Text functions](text-functions-dax.md)  

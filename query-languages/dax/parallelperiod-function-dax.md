@@ -40,7 +40,7 @@ A table containing a single column of date values.
   - A table expression that returns a single column of date/time values,  
   - A Boolean expression that defines a single-column table of date/time values.  
   
-- Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
+- Constraints on Boolean expressions are described in the topic, [CALCULATE function](calculate-function-dax.md).  
   
 - If the number specified for **number_of_intervals** is positive, the dates in **dates** are moved forward in time; if the number is negative, the dates in **dates** are shifted back in time.  
   
@@ -50,7 +50,7 @@ A table containing a single column of date values.
   
 - The PARALLELPERIOD function is similar to the DATEADD function except that PARALLELPERIOD always returns full periods at the given granularity level instead of the partial periods that DATEADD returns. For example, if you have a selection of dates that starts at June 10 and finishes at June 21 of the same year, and you want to shift that selection forward by one month then the PARALLELPERIOD function will return all dates from the next month (July 1 to July 31); however, if DATEADD is used instead, then the result will include only dates from July 10 to July 21.  
   
-- This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example
 
@@ -62,6 +62,6 @@ The following sample formula creates a measure that calculates the previous year
   
 ## See also
 
-[Time intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
-[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[DATEADD function &#40;DAX&#41;](dateadd-function-dax.md)  
+[Time intelligence functions](time-intelligence-functions-dax.md)  
+[Date and time functions](date-and-time-functions-dax.md)  
+[DATEADD function](dateadd-function-dax.md)  

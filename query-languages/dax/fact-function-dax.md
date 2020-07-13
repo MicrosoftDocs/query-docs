@@ -54,5 +54,5 @@ The following table shows the expected results:
   
 ## See also
 
-[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
-[TRUNC function &#40;DAX&#41;](trunc-function-dax.md)  
+[Math and Trig functions](math-and-trig-functions-dax.md)  
+[TRUNC function](trunc-function-dax.md)  

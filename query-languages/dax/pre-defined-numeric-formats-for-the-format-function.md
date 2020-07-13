@@ -62,6 +62,6 @@ The above expressions return the following results:
   
 ## See also
 
-[FORMAT function &#40;DAX&#41;](format-function-dax.md)  
+[FORMAT function](format-function-dax.md)  
 [Pre-defined date and time formats for the FORMAT function](pre-defined-date-and-time-formats-for-the-format-function.md)  
 [Custom Numeric Formats for the FORMAT function](custom-numeric-formats-for-the-format-function.md)  

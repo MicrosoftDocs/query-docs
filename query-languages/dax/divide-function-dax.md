@@ -60,5 +60,5 @@ The following example returns 1.
   
 ## See also
 
-[QUOTIENT function &#40;DAX&#41;](quotient-function-dax.md)  
-[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+[QUOTIENT function](quotient-function-dax.md)  
+[Math and Trig functions](math-and-trig-functions-dax.md)  

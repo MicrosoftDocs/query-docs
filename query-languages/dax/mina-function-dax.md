@@ -55,6 +55,6 @@ The following expression returns the minimum value in the column, PostalCode. Be
   
 ## See also
 
-[MIN function &#40;DAX&#41;](min-function-dax.md)  
-[MINX function &#40;DAX&#41;](minx-function-dax.md)  
-[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
+[MIN function](min-function-dax.md)  
+[MINX function](minx-function-dax.md)  
+[Statistical functions](statistical-functions-dax.md)  

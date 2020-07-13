@@ -36,7 +36,7 @@ TRUE when *columnName* is being filtered directly.
   
 ## See also
 
-[ISCROSSFILTERED function &#40;DAX&#41;](iscrossfiltered-function-dax.md)  
-[FILTERS function &#40;DAX&#41;](filters-function-dax.md)  
-[HASONEFILTER function &#40;DAX&#41;](hasonefilter-function-dax.md)  
-[HASONEVALUE function &#40;DAX&#41;](hasonevalue-function-dax.md)  
+[ISCROSSFILTERED function](iscrossfiltered-function-dax.md)  
+[FILTERS function](filters-function-dax.md)  
+[HASONEFILTER function](hasonefilter-function-dax.md)  
+[HASONEVALUE function](hasonevalue-function-dax.md)  

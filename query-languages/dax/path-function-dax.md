@@ -42,7 +42,7 @@ A delimited text string containing the identifiers of all the parents to the cur
   - If *ID_columnName* is BLANK then PATH() returns BLANK.  
   - If *ID_columnName* contains a vertical bar '|' then PATH() returns an error.  
   
-- This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example
 

@@ -12,7 +12,7 @@ ms.author: owend
   
 Returns the median of numbers in a column.  
   
-To return the median of an expresssion evaluated for each row in a table, use [MEDIANX function &#40;DAX&#41;](medianx-function-dax.md).  
+To return the median of an expresssion evaluated for each row in a table, use [MEDIANX function](medianx-function-dax.md).  
   
 ## Syntax  
   
@@ -46,4 +46,4 @@ The following computes the median of a column named Age in a table named Custome
   
 ## See also
 
-[MEDIANX function &#40;DAX&#41;](medianx-function-dax.md)  
+[MEDIANX function](medianx-function-dax.md)  

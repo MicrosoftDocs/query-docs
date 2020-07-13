@@ -1,7 +1,7 @@
 ---
 title: "USERNAME function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/13/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -31,5 +31,5 @@ The username from the credentials given to the system at connection time
 The following formula verifies if the user login is part of the UsersTable.  
   
 ```dax
-=IF(CONTAINS(UsersTable,UsersTable[login], USERNAME()), "Allowed", BLANK())  
+= IF(CONTAINS(UsersTable,UsersTable[login], USERNAME()), "Allowed", BLANK())  
 ```

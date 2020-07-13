@@ -51,6 +51,6 @@ In the original data source, the column evaluated by the BLANK function might ha
   
 ## See also
 
-[Text functions &#40;DAX&#41;](text-functions-dax.md)  
-[ISBLANK function &#40;DAX&#41;](isblank-function-dax.md)  
+[Text functions](text-functions-dax.md)  
+[ISBLANK function](isblank-function-dax.md)  
   

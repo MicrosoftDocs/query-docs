@@ -46,8 +46,8 @@ The following formula calculates e raised to the power of the number contained i
   
 ## See also
 
-[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
-[LN function &#40;DAX&#41;](ln-function-dax.md)  
-[EXP function &#40;DAX&#41;](exp-function-dax.md)  
-[LOG function &#40;DAX&#41;](log-function-dax.md)  
-[LOG function &#40;DAX&#41;](log-function-dax.md)  
+[Math and Trig functions](math-and-trig-functions-dax.md)  
+[LN function](ln-function-dax.md)  
+[EXP function](exp-function-dax.md)  
+[LOG function](log-function-dax.md)  
+[LOG function](log-function-dax.md)  

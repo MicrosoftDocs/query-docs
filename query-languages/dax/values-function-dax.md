@@ -1,7 +1,7 @@
 ---
 title: "VALUES function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 11/07/2019
+ms.date: 07/13/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -58,7 +58,7 @@ If you used the DISTINCT function to return a list of dates from the PivotTable 
 The following formula counts the number of unique invoices (sales orders), and produces the following results when used in a report that includes the Product Category Names:  
 
 ```dax
-=COUNTROWS(VALUES('InternetSales_USD'[SalesOrderNumber]))  
+= COUNTROWS(VALUES('InternetSales_USD'[SalesOrderNumber]))  
 ```
 
 Returns
@@ -69,12 +69,9 @@ Returns
 |Bikes|15,205|  
 |Clothing|7,461|  
 |Grand Total|27,659|  
-  
 
-  
 ## See also
 
-[FILTER function &#40;DAX&#41;](filter-function-dax.md)  
-[COUNTROWS function &#40;DAX&#41;](countrows-function-dax.md)  
-[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
-  
+[FILTER function](filter-function-dax.md)  
+[COUNTROWS function](countrows-function-dax.md)  
+[Filter functions](filter-functions-dax.md)  

@@ -39,4 +39,4 @@ The following formula checks the value of Column1 for the current row against th
   
 ## See also
 
-[Text functions &#40;DAX&#41;](text-functions-dax.md)  
+[Text functions](text-functions-dax.md)  

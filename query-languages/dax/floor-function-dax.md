@@ -55,4 +55,4 @@ The following table shows the expected results for some sample values.
   
 ## See also
 
-[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
+[Math and Trig functions](math-and-trig-functions-dax.md)  
