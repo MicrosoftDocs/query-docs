@@ -20,9 +20,8 @@ DATESYTD(<dates> [,<year_end_date>])
   
 ### Parameters  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|--------|--------------|  
 |dates|A column that contains dates.|  
 |year_end_date|(optional) A literal string with a date that defines the year-end date. The default is December 31.|  
   

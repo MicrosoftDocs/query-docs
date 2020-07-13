@@ -20,9 +20,8 @@ PREVIOUSMONTH(<dates>)
   
 ### Parameters  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|--------|--------------|  
 |Dates|A column containing dates.|  
   
 ## Return value

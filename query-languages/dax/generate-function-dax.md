@@ -38,10 +38,9 @@ A table with the Cartesian product between each row in *table1* and the table th
 ## Example
 
 In the following example the user wants a summary table of the sales by Region and Product Category for the Resellers channel, like the following table:  
-  
-||||  
-|-|-|-|  
+
 |SalesTerritory[SalesTerritoryGroup]|ProductCategory[ProductCategoryName]|[Reseller Sales]|  
+|-----|-----|-----|  
 |Europe|Accessories|$         142,227.27|  
 |Europe|Bikes|$     9,970,200.44|  
 |Europe|Clothing|$         365,847.63|  

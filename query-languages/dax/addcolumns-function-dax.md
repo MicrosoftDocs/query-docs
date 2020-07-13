@@ -41,12 +41,10 @@ ADDCOLUMNS(ProductCategory,
 ```
 
 The following table shows a preview of the data as it would be received by any function expecting to receive a table:  
-  
-||||||  
-|-|-|-|-|-|  
-|**ProductCategory[ProductCategoryName]**|**ProductCategory[ProductCategoryAlternateKey]**|**ProductCategory[ProductCategoryKey]**|**[Internet Sales]**|**[Reseller Sales]**|  
+
+|ProductCategory[ProductCategoryName]|ProductCategory[ProductCategoryAlternateKey]|ProductCategory[ProductCategoryKey]|[Internet Sales]|[Reseller Sales]|  
+|-----|-----|-----|-----|-----|  
 |Bikes|1|1|25107749.77|63084675.04|  
 |Components|2|2||11205837.96|  
 |Clothing|3|3|306157.5829|1669943.267|  
 |Accessories|4|4|640920.1338|534301.9888|  
-  

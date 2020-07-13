@@ -20,9 +20,8 @@ LASTNONBLANK(<column>,<expression>)
   
 ### Parameters  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|--------|--------------|  
 |column|A column expression.|  
 |expression|An expression evaluated for blanks for each value of **column**.|  
   

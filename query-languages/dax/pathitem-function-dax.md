@@ -27,8 +27,8 @@ PATHITEM(<path>, <position>[, <type>])
 
 #### type enumeration
 
-|**Enumeration**|**Alternate Enumeration**|**Description**|
-|-|-|-|
+|Enumeration|Alternate Enumeration|Description|
+|-----|-----|-----|
 |TEXT|0|Results are returned with the data type text. (default).|  
 |INTEGER|1|Results are returned as integers.|  
   
