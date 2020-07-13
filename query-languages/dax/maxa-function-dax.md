@@ -58,6 +58,6 @@ The following example returns the largest value from a column that contains date
   
 ## See also
 
-[MAX function &#40;DAX&#41;](max-function-dax.md)  
-[MAXX function &#40;DAX&#41;](maxx-function-dax.md)  
-[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
+[MAX function](max-function-dax.md)  
+[MAXX function](maxx-function-dax.md)  
+[Statistical functions](statistical-functions-dax.md)  

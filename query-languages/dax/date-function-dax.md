@@ -36,7 +36,7 @@ Returns the specified date (**datetime)**.
   
 - In contrast to Microsoft Excel, which stores dates as a serial number, DAX date functions always return a **datetime** data type. However, you can use formatting to display dates as serial numbers if you want.  
   
-- This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example: Returning a Simple Date  
   
@@ -94,6 +94,6 @@ If **day** is less than 1, **day** subtracts the magnitude that number of days, 
   
 ## See also
 
-[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[DAY function &#40;DAX&#41;](day-function-dax.md)  
-[TODAY function &#40;DAX&#41;](today-function-dax.md)
+[Date and time functions](date-and-time-functions-dax.md)  
+[DAY function](day-function-dax.md)  
+[TODAY function](today-function-dax.md)

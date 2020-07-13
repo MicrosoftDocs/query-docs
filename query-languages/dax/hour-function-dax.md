@@ -52,7 +52,7 @@ The following example returns 15, meaning the hour corresponding to 3 PM in a 24
   
 ## See also
 
-[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[MINUTE function &#40;DAX&#41;](minute-function-dax.md)  
-[YEAR function &#40;DAX&#41;](year-function-dax.md)  
-[SECOND function &#40;DAX&#41;](second-function-dax.md)  
+[Date and time functions](date-and-time-functions-dax.md)  
+[MINUTE function](minute-function-dax.md)  
+[YEAR function](year-function-dax.md)  
+[SECOND function](second-function-dax.md)  

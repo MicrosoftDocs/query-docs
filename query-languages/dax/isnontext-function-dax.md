@@ -49,4 +49,4 @@ The following examples show the behavior of the ISNONTEXT function.
   
 ## See also
 
-[Information functions &#40;DAX&#41;](information-functions-dax.md)  
+[Information functions](information-functions-dax.md)  

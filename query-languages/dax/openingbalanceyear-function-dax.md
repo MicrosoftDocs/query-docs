@@ -39,13 +39,13 @@ A scalar value that represents the **expression** evaluated at the first date of
   - A table expression that returns a single column of date/time values.  
   - A Boolean expression that defines a single-column table of date/time values.  
   
-- Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
+- Constraints on Boolean expressions are described in the topic, [CALCULATE function](calculate-function-dax.md).  
   
-- The **filter** expression has restrictions described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
+- The **filter** expression has restrictions described in the topic, [CALCULATE function](calculate-function-dax.md).  
   
 - The **year_end_date** parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is ignored.  
   
-- This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example
 
@@ -57,7 +57,7 @@ The following sample formula creates a measure that calculates the 'Year Start I
   
 ## See also
 
-[OPENINGBALANCEQUARTER function &#40;DAX&#41;](openingbalancequarter-function-dax.md)  
-[OPENINGBALANCEMONTH function &#40;DAX&#41;](openingbalancemonth-function-dax.md)  
-[Time intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
-[CLOSINGBALANCEYEAR function &#40;DAX&#41;](closingbalanceyear-function-dax.md)  
+[OPENINGBALANCEQUARTER function](openingbalancequarter-function-dax.md)  
+[OPENINGBALANCEMONTH function](openingbalancemonth-function-dax.md)  
+[Time intelligence functions](time-intelligence-functions-dax.md)  
+[CLOSINGBALANCEYEAR function](closingbalanceyear-function-dax.md)  

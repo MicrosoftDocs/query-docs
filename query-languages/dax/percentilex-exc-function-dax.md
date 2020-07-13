@@ -12,7 +12,7 @@ ms.author: owend
   
 Returns the percentile number of an expression evaluated for each row in a table.  
   
-To return the percentile of numbers in a column, use [PERCENTILE.EXC function &#40;DAX&#41;](percentile-exc-function-dax.md).  
+To return the percentile of numbers in a column, use [PERCENTILE.EXC function](percentile-exc-function-dax.md).  
   
 ## Syntax  
   

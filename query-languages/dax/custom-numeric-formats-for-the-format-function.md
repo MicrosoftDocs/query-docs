@@ -58,6 +58,6 @@ If you include semicolons with nothing between them, the missing section is prin
   
 ## See also
 
-[FORMAT function &#40;DAX&#41;](format-function-dax.md)  
+[FORMAT function](format-function-dax.md)  
 [Pre-Defined Numeric Formats for the FORMAT function](pre-defined-numeric-formats-for-the-format-function.md)  
 [Custom date and time formats for the FORMAT function](custom-date-and-time-formats-for-the-format-function.md)  

@@ -1,7 +1,7 @@
 ---
 title: "UNION function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/13/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -24,40 +24,42 @@ UNION(<table_expression1>, <table_expression2> [,<table_expression>]…)
 |--------|--------------|  
 |table_expression|Any DAX expression that returns a table.|  
   
-## Return value  
+## Return value
+
 A table that contains all the rows from each of the two table expressions.  
   
-## Remarks  
-The two tables must have the same number of columns.  
+## Remarks
+
+- The two tables must have the same number of columns.  
   
-Columns are combined by position in their respective tables.  
+- Columns are combined by position in their respective tables.  
   
-The column names in the return table will match the column names in table_expression1.  
+- The column names in the return table will match the column names in table_expression1.  
   
-Duplicate rows are retained.  
+- Duplicate rows are retained.  
   
-The returned table has lineage where possible. For example, if the first column of each table_expression has lineage to the same base column C1 in the model, the first column in the UNION result will have lineage to C1. However, if combined columns have lineage to different base columns, or if there is an extension column, the resulting column in UNION will have no lineage.  
+- The returned table has lineage where possible. For example, if the first column of each table_expression has lineage to the same base column C1 in the model, the first column in the UNION result will have lineage to C1. However, if combined columns have lineage to different base columns, or if there is an extension column, the resulting column in UNION will have no lineage.  
   
-When data types differ, the resulting data type is determined based on the rules for data type coercion.  
+- When data types differ, the resulting data type is determined based on the rules for data type coercion.  
   
-The returned table will not contain columns from related tables.  
+- The returned table will not contain columns from related tables.  
   
-## Example  
+## Example
+
 The following expression creates a union by combining the USAInventory table and the INDInventory table into a single table:  
 
 ```dax
 UNION(UsaInventory, IndInventory)
 ```
 
-
-**USAInventory**  
+**USAInventory**
   
 |Country|State|Count|Total|  
 |-----------|---------|---------|---------|  
 |USA|CA|5|500|  
 |USA|WA|10|900|  
   
-**INDInventory**  
+**INDInventory**
   
 |Country|State|Count|Total|  
 |-----------|---------|---------|---------|  
@@ -65,7 +67,7 @@ UNION(UsaInventory, IndInventory)
 |IND|MH|25|1000|  
 |IND|WB|10|900|  
   
-Return table  
+Return table,  
   
 |Country|State|Count|Total|  
 |-----------|---------|---------|---------|  
@@ -74,4 +76,3 @@ Return table
 |IND|JK|20|800|  
 |IND|MH|25|1000|  
 |IND|WB|10|900|  
-  

@@ -30,7 +30,7 @@ A decimal number.
   
 ## Remarks
 
-- To return the product of an expression evaluated for each row in a table, use [PRODUCTX function &#40;DAX&#41;](productx-function-dax.md).  
+- To return the product of an expression evaluated for each row in a table, use [PRODUCTX function](productx-function-dax.md).  
 
 - Only the numbers in the column are counted. Blanks, logical values, and text are ignored. For example,
 

@@ -1,7 +1,7 @@
 ---
 title: "UTCNOW function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 07/13/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,29 +9,31 @@ ms.author: owend
 
 ---
 # UTCTODAY
-Returns the current UTC date.
-  
 
-  
+Returns the current UTC date.
+
 ## Syntax  
   
 ```dax
 UTCTODAY()  
 ```
   
-## Return value  
+## Return value
+
 A date.  
   
 ## Remarks  
 
-UTCTODAY returns the time value 12:00:00 PM for all dates.    
-The UTCNOW function is similar but returns the exact time and date.
+- UTCTODAY returns the time value 12:00:00 PM for all dates.
+
+- The UTCNOW function is similar but returns the exact time and date.
   
-## Example  
+## Example
+
 The following:
   
 ```dax
-EVALUATE { FORMAT(UTCTODAY(), "General Date") } 
+EVALUATE { FORMAT(UTCTODAY(), "General Date") }
 ```
 
 Returns:
@@ -40,8 +42,7 @@ Returns:
 |---------|
 |2/2/2018    |
 
+## See also
 
-## See also  
-[NOW function &#40;DAX&#41;](now-function-dax.md)  
-[UTCNOW function &#40;DAX&#41;](utcnow-function-dax.md)  
-  
+[NOW function](now-function-dax.md)  
+[UTCNOW function](utcnow-function-dax.md)  

@@ -49,8 +49,8 @@ Returns table:
 
 ## See also
 
-[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
-[DISTINCT (column) &#40;DAX&#41;](distinct-function-dax.md)  
-[FILTER function &#40;DAX&#41;](filter-function-dax.md)  
-[RELATED function &#40;DAX&#41;](related-function-dax.md)  
-[VALUES function &#40;DAX&#41;](values-function-dax.md)  
+[Filter functions](filter-functions-dax.md)  
+[DISTINCT (column)](distinct-function-dax.md)  
+[FILTER function](filter-function-dax.md)  
+[RELATED function](related-function-dax.md)  
+[VALUES function](values-function-dax.md)  

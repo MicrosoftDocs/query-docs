@@ -39,7 +39,7 @@ The results of DISTINCT are affected by the current filter context. For example,
 
 There is another version of the DISTINCT function, [DISTINCT (table)](distinct-table-function-dax.md), that returns a table by removing duplicate rows from another table or expression..
 
-The VALUES function is similar to DISTINCT; it can also be used to return a list of unique values, and generally will return exactly the same results as DISTINCT. However, in some context VALUES will return one additional special value. For more information, see [VALUES function &#40;DAX&#41;](values-function-dax.md).  
+The VALUES function is similar to DISTINCT; it can also be used to return a list of unique values, and generally will return exactly the same results as DISTINCT. However, in some context VALUES will return one additional special value. For more information, see [VALUES function](values-function-dax.md).  
   
 ## Example
 
@@ -64,7 +64,7 @@ Also, note that the results are not additive. That is to say, the total number o
   
 ## See also
 
-[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
-[FILTER function &#40;DAX&#41;](filter-function-dax.md)  
-[RELATED function &#40;DAX&#41;](related-function-dax.md)  
-[VALUES function &#40;DAX&#41;](values-function-dax.md)  
+[Filter functions](filter-functions-dax.md)  
+[FILTER function](filter-function-dax.md)  
+[RELATED function](related-function-dax.md)  
+[VALUES function](values-function-dax.md)  

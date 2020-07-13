@@ -85,7 +85,7 @@ The following example uses the CALCULATETABLE function to get the sum of Interne
 The following formula:
 
 ```dax
-=SUMX(
+= SUMX(
     CALCULATETABLE(
         'InternetSales_USD',
         'DateTime'[CalendarYear] = 2006

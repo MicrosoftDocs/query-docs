@@ -35,11 +35,11 @@ Returns the inverse of the left-tailed probability of the chi-squared distributi
 
 - If argument is nonnumeric, CHISQ.INV returns the #VALUE! error value.  
   
-- If probability &amp;lt; 0 or probability &amp;gt; 1, CHISQ.INV returns the #NUM! error value.  
+- If probability \< 0 or probability > 1, CHISQ.INV returns the #NUM! error value.  
   
 - If deg_freedom is not an integer, it is rounded.  
   
-- If deg_freedom &amp;lt; 1 or deg_freedom &amp;gt; 10^10, CHISQ.INV returns the #NUM! error value.  
+- If deg_freedom \< 0 or deg_freedom > 10^10, CHISQ.INV returns the #NUM! error value.  
   
 ## Example  
   

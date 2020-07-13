@@ -99,5 +99,5 @@ Geography[Country],
   
 ## See also
 
-[SUMMARIZE function &#40;DAX&#41;](summarize-function-dax.md)  
-[SUMMARIZECOLUMNS function &#40;DAX&#41;](summarizecolumns-function-dax.md)  
+[SUMMARIZE function](summarize-function-dax.md)  
+[SUMMARIZECOLUMNS function](summarizecolumns-function-dax.md)  
