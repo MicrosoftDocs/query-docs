@@ -30,7 +30,7 @@ Returns true or false depending on the combination of values that you test.
   
 ## Remarks
 
-The **AND** function in DAX accepts only two (2) arguments. If you need to perform an AND operation on multiple expressions, you can create a series of calculations or, better, use the AND operator (**&**) to join all of them in a simpler expression.  
+The **AND** function in DAX accepts only two (2) arguments. If you need to perform an AND operation on multiple expressions, you can create a series of calculations or, better, use the AND operator (**&&**) to join all of them in a simpler expression.  
   
 ## Example 1
 
