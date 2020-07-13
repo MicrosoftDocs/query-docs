@@ -40,7 +40,7 @@ A single-column table of date values.
   
 - The dates returned are the same as the dates returned by this equivalent formula: `DATEADD(dates, -1, year)`  
   
-- This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example
 

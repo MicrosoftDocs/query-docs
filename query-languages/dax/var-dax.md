@@ -1,7 +1,7 @@
 ---
 title: "VAR keyword (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 05/24/2019
+ms.date: 07/13/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -27,23 +27,17 @@ VAR <name> = <expression>
   
 ## Return value
 
-A named variable containing the result of the expression argument.  
-  
-## Exceptions  
+A named variable containing the result of the expression argument.   
   
 ## Remarks
 
-An expression passed as an argument to VAR can contain another VAR declaration.  
+- An expression passed as an argument to VAR can contain another VAR declaration.  
   
-When referencing a variable:  
-  
-- Measures cannot refer to variables defined outside the measure expression, but can refer to functional scope variables defined within the expression.  
-  
-- Variables can refer to measures.  
-  
-- Variables can refer to previously defined variables.  
-  
-- Columns in table variables cannot be referenced via TableName[ColumnName] syntax.  
+- When referencing a variable:  
+  - Measures cannot refer to variables defined outside the measure expression, but can refer to functional scope variables defined within the expression.  
+  - Variables can refer to measures.  
+  - Variables can refer to previously defined variables.  
+  - Columns in table variables cannot be referenced via TableName[ColumnName] syntax.  
   
 ## Example
 
@@ -56,8 +50,8 @@ Sum of SalesAmount = SUM(SalesTable[SalesAmount])
 A second measure calculates the sales amount for the previous year:  
   
 ```dax
-SalesAmount PreviousYear = 
-    CALCULATE([Sum of SalesAmount], 
+SalesAmount PreviousYear =
+    CALCULATE([Sum of SalesAmount],
     SAMEPERIODLASTYEAR(Calendar[Date])
     )  
 ```

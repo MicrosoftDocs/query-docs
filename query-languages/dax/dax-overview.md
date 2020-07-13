@@ -2,7 +2,7 @@
 title: "DAX overview | Microsoft Docs"
 description: Describes the Data Analysis Expressions (DAX) language.
 ms.service: powerbi 
-ms.date: 07/06/2020
+ms.date: 07/13/2020
 ms.reviewer: owend
 ms.topic: overview
 ms.article: overview
@@ -198,6 +198,10 @@ The date and time functions in DAX are similar to date and time functions in Mic
 ### Filter functions  
 
 The filter functions in DAX return specific data types, look up values in related tales, and filter by related values. The lookup functions work by using tables and relationships, like a database. The filtering functions let you manipulate data context to create dynamic calculations. For more information, see [Filter functions](filter-functions-dax.md).  
+
+### Financial functions
+
+The financial functions in DAX are used in formulas that perform financial calculations, such as net present value and rate of return. These functions are similar to financial functions used in Microsoft Excel. For more information, see [Financial functions](financial-functions-dax.md).
   
 ### Information functions  
 
@@ -412,11 +416,17 @@ It's important to observe these formula design rules when using relationships:
   
 Processing and recalculation have no effect on row filter formulas unless the result of a recalculation returns a different value, thus making the row queryable or not queryable by role members.  
 
+## Updates
+
+DAX is constantly being improved. [New and updated functions](new-dax-functions.md) are released with the next available update, which is usually monthly. Services are updated first, followed by installed applications like Power BI Desktop, Excel, SQL Server Management Studio (SSMS), and Analysis Services project extension for Visual Studio (SSDT). SQL Server Analysis Services is updated with the next cumulative update. New functions are first announced and described in the DAX function reference coinciding with Power BI Desktop updates.
+
+Not all functions are supported in earlier versions of SQL Server Analysis Services and Excel.
+
 ## Troubleshooting
 
 If you get an error when defining a formula, the formula might contain either a *syntactic error*, *semantic error*, or *calculation error*.  
   
-Syntactic errors are the easiest to resolve. They typically involve a missing parenthesis or comma. .  
+Syntactic errors are the easiest to resolve. They typically involve a missing parenthesis or comma.
   
 The other type of error occurs when the syntax is correct, but the value or a column referenced does not make sense in the context of the formula. Such semantic and calculation errors might be caused by any of the following problems:  
   

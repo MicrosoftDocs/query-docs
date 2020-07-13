@@ -52,7 +52,7 @@ The **dates** argument can be any of the following:
 
 - If the dates in the current context do not form a contiguous interval, the function returns an error.
   
-- This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example - Shifting a set of dates  
   

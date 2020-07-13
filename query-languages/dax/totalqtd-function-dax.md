@@ -41,7 +41,7 @@ A scalar value that represents the **expression** evaluated for all dates in the
   
 - The **filter** expression has restrictions described in the topic, [CALCULATE](calculate-function-dax.md).  
 
-- This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example
 

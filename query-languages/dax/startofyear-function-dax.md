@@ -38,7 +38,7 @@ A table containing a single column and single row with a date value.
   
 - Constraints on Boolean expressions are described in the topic, [CALCULATE](calculate-function-dax.md).  
   
-- This function is not optimized for use in DirectQuery mode. To learn more, see  [DAX formula compatibility in DirectQuery mode](https://go.microsoft.com/fwlink/?LinkId=219172).
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example
 

@@ -44,7 +44,7 @@ A time (**datetime**).
   
 - To improve readability of the time values returned by this function, it's recommended that you format the column or PivotTable cell that contains the results of the formula by using one of the time formats provided by Microsoft Excel.  
   
-- This DAX function may return different results when used in a model that is deployed and then queried in DirectQuery mode. For more information about semantic differences in DirectQuery mode, see  [https://go.microsoft.com/fwlink/?LinkId=219171](https://go.microsoft.com/fwlink/?LinkId=219171).  
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example 1
 

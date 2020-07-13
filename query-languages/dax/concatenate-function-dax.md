@@ -36,7 +36,7 @@ The concatenated string.
   
 - If you want to use text strings directly, rather than using a column reference, you must enclose each string in double quotation marks.  
   
-- This DAX function may return different results when used in a model that is deployed and then queried in DirectQuery mode. For more information about semantic differences in DirectQuery mode, see  [https://go.microsoft.com/fwlink/?LinkId=219171](https://go.microsoft.com/fwlink/?LinkId=219171).  
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example: Concatenation of Literals  
   
