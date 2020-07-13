@@ -109,6 +109,6 @@ Next, examine the expression, **[$$ in WA !!]**. You might wonder how this formu
   
 ## See also
 
-[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
-[CALCULATE function &#40;DAX&#41;](calculate-function-dax.md)  
-[CALCULATETABLE function &#40;DAX&#41;](calculatetable-function-dax.md)  
+[Filter functions](filter-functions-dax.md)  
+[CALCULATE function](calculate-function-dax.md)  
+[CALCULATETABLE function](calculatetable-function-dax.md)  

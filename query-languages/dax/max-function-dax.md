@@ -57,6 +57,6 @@ The following example returns the largest value between the result of two expres
 
 ## See also
 
-[MAXA function &#40;DAX&#41;](maxa-function-dax.md)  
-[MAXX function &#40;DAX&#41;](maxx-function-dax.md)  
-[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
+[MAXA function](maxa-function-dax.md)  
+[MAXX function](maxx-function-dax.md)  
+[Statistical functions](statistical-functions-dax.md)  

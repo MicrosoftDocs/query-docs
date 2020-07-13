@@ -44,7 +44,7 @@ A table, when the passed parameter was a table, or a column of values, when the 
     |ALLEXCEPT(Table,Col1,Col2...)|Overrides all context filters in the table except over the specified columns.|  
     |ALLNOBLANK(table&#124;column)|From the parent table of a relationship, returns all rows but the blank row, or all distinct values of a column but the blank row, and disregards any context filters that might exist|  
 
-    For a general description of how the ALL function works, together with step-by-step examples that use ALL(Table) and ALL(Column), see [ALL function &#40;DAX&#41;](all-function-dax.md).  
+    For a general description of how the ALL function works, together with step-by-step examples that use ALL(Table) and ALL(Column), see [ALL function](all-function-dax.md).  
   
 ## Example
 
@@ -123,7 +123,6 @@ Now the two measures have the same results. That is because the ALLNOBLANKROW fu
   
 ## See also
 
-[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
-[ALL function &#40;DAX&#41;](all-function-dax.md)  
-[FILTER function &#40;DAX&#41;](filter-function-dax.md)  
-  
+[Filter functions](filter-functions-dax.md)  
+[ALL function](all-function-dax.md)  
+[FILTER function](filter-function-dax.md)  

@@ -54,5 +54,5 @@ Numbers can never have more than 15 significant digits, but decimals can be as l
   
 ## See also
 
-[Text functions &#40;DAX&#41;](text-functions-dax.md)  
-[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)
+[Text functions](text-functions-dax.md)  
+[Math and Trig functions](math-and-trig-functions-dax.md)

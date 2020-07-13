@@ -47,5 +47,5 @@ The following formula creates a new calculated column that replaces the first tw
   
 ## See also
 
-[Text functions &#40;DAX&#41;](text-functions-dax.md)  
-[SUBSTITUTE function &#40;DAX&#41;](substitute-function-dax.md)  
+[Text functions](text-functions-dax.md)  
+[SUBSTITUTE function](substitute-function-dax.md)  

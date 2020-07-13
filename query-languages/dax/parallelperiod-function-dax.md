@@ -40,7 +40,7 @@ A table containing a single column of date values.
   - A table expression that returns a single column of date/time values,  
   - A Boolean expression that defines a single-column table of date/time values.  
   
-- Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
+- Constraints on Boolean expressions are described in the topic, [CALCULATE function](calculate-function-dax.md).  
   
 - If the number specified for **number_of_intervals** is positive, the dates in **dates** are moved forward in time; if the number is negative, the dates in **dates** are shifted back in time.  
   
@@ -62,6 +62,6 @@ The following sample formula creates a measure that calculates the previous year
   
 ## See also
 
-[Time intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
-[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[DATEADD function &#40;DAX&#41;](dateadd-function-dax.md)  
+[Time intelligence functions](time-intelligence-functions-dax.md)  
+[Date and time functions](date-and-time-functions-dax.md)  
+[DATEADD function](dateadd-function-dax.md)  

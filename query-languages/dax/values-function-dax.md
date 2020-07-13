@@ -72,6 +72,6 @@ Returns
 
 ## See also
 
-[FILTER function &#40;DAX&#41;](filter-function-dax.md)  
-[COUNTROWS function &#40;DAX&#41;](countrows-function-dax.md)  
-[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
+[FILTER function](filter-function-dax.md)  
+[COUNTROWS function](countrows-function-dax.md)  
+[Filter functions](filter-functions-dax.md)  

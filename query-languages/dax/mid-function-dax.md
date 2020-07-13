@@ -53,4 +53,4 @@ Returns the same result as `LEFT([ResellerName],5)`. Both expressions return the
   
 ## See also
 
-[Text functions &#40;DAX&#41;](text-functions-dax.md)  
+[Text functions](text-functions-dax.md)  

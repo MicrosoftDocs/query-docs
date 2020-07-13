@@ -53,5 +53,5 @@ The following example returns the date three months after the order date, which 
   
 ## See also
 
-[EOMONTH function &#40;DAX&#41;](eomonth-function-dax.md)  
-[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+[EOMONTH function](eomonth-function-dax.md)  
+[Date and time functions](date-and-time-functions-dax.md)  

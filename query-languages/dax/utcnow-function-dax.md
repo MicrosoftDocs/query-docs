@@ -42,5 +42,5 @@ Returns:
 
 ## See also
 
-[NOW function &#40;DAX&#41;](now-function-dax.md)  
-[UTCTODAY function &#40;DAX&#41;](utctoday-function-dax.md)  
+[NOW function](now-function-dax.md)  
+[UTCTODAY function](utctoday-function-dax.md)  

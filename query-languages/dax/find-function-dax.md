@@ -49,4 +49,4 @@ The following formula finds the position of the first letter of the product desi
   
 ## See also
 
-[Text functions &#40;DAX&#41;](text-functions-dax.md)  
+[Text functions](text-functions-dax.md)  

@@ -42,5 +42,5 @@ The following example returns the natural logarithm of the number in the column,
   
 ## See also
 
-[Math and Trig functions &#40;DAX&#41;](math-and-trig-functions-dax.md)  
-[EXP function &#40;DAX&#41;](exp-function-dax.md)  
+[Math and Trig functions](math-and-trig-functions-dax.md)  
+[EXP function](exp-function-dax.md)  

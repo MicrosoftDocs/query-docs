@@ -42,5 +42,5 @@ The current sample data does not support this scenario.
   
 ## See also
 
-[EARLIER function &#40;DAX&#41;](earlier-function-dax.md)  
-[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
+[EARLIER function](earlier-function-dax.md)  
+[Filter functions](filter-functions-dax.md)  

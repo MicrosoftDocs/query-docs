@@ -94,6 +94,6 @@ If **day** is less than 1, **day** subtracts the magnitude that number of days, 
   
 ## See also
 
-[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[DAY function &#40;DAX&#41;](day-function-dax.md)  
-[TODAY function &#40;DAX&#41;](today-function-dax.md)
+[Date and time functions](date-and-time-functions-dax.md)  
+[DAY function](day-function-dax.md)  
+[TODAY function](today-function-dax.md)

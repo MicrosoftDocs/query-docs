@@ -38,7 +38,7 @@ Returns the inverse of the beta cumulative probability density function (BETA.DI
 
 - If any argument is nonnumeric, BETA.INV returns the #VALUE! error value. 
 
-- If any argument is not an integer, it is rounded. 
+- If any argument is not an integer, it is rounded.
   
 - If alpha ≤ 0 or beta ≤ 0, BETA.INV returns the #NUM! error value.  
   

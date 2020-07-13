@@ -49,7 +49,7 @@ All comparison operators except == treat BLANK as equal to number 0, empty strin
 
 ### Text concatenation operator
 
-Use the ampersand (&amp;) to join, or concatenate, two or more text strings to produce a single piece of text.  
+Use the ampersand (**&**) to join, or concatenate, two or more text strings to produce a single piece of text.  
   
 |Text operator|Meaning|Example|  
 |-----------------|-----------|-----------|  

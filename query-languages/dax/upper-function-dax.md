@@ -38,5 +38,5 @@ The following formula converts the string in the column, [ProductCode], to all u
   
 ## See also
 
-[Text functions &#40;DAX&#41;](text-functions-dax.md)  
-[LOWER function &#40;DAX&#41;](lower-function-dax.md)  
+[Text functions](text-functions-dax.md)  
+[LOWER function](lower-function-dax.md)  

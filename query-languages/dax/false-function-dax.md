@@ -48,7 +48,7 @@ The following table shows the results when the example formula is used with 'Pro
 
 ## See also
 
-[TRUE function &#40;DAX&#41;](true-function-dax.md)  
-[NOT function &#40;DAX&#41;](not-function-dax.md)  
-[IF function &#40;DAX&#41;](if-function-dax.md)  
+[TRUE function](true-function-dax.md)  
+[NOT function](not-function-dax.md)  
+[IF function](if-function-dax.md)  
 [DAX function reference](dax-function-reference.md)  

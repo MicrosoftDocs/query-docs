@@ -31,6 +31,6 @@ These functions perform unique actions that cannot be defined by any of the cate
 |[SELECTEDMEASUREFORMATSTRING](selectedmeasureformatstring-function-dax.md) |   Used by expressions for calculation items to retrieve the format string of the measure that is in context.   |
 |[SELECTEDMEASURENAME](selectedmeasurename-function-dax.md) |   Used by expressions for calculation items to determine the measure that is in context by name.   |
 |[SUMMARIZECOLUMNS](summarizecolumns-function-dax.md)      |  Returns a summary table over a set of groups.        |
-|[Table Constructor &#40;DAX&#41;](table-Constructor.md)    |  Returns a table of one or more columns.       |
+|[Table Constructor](table-Constructor.md)    |  Returns a table of one or more columns.       |
 |[TREATAS](treatas-function.md)     |  Applies the result of a table expression as filters to columns from an unrelated table.        |
 |[UNION](union-function-dax.md)     |  Creates a union (join) table from a pair of tables.         |

@@ -45,10 +45,10 @@ A scalar value that represents the **expression** evaluated at the last date of 
   - A Boolean expression that defines a single-column table of date/time values.  
   
     > [!NOTE]  
-    > Constraints on Boolean expressions are described in [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
+    > Constraints on Boolean expressions are described in [CALCULATE function](calculate-function-dax.md).  
   
     > [!NOTE]  
-    > The **filter** expression has restrictions described in [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
+    > The **filter** expression has restrictions described in [CALCULATE function](calculate-function-dax.md).  
   
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
@@ -62,7 +62,7 @@ The following sample formula creates a measure that calculates the 'Year End Inv
   
 ## See also
 
-[Time intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
-[CLOSINGBALANCEYEAR function &#40;DAX&#41;](closingbalanceyear-function-dax.md)  
-[CLOSINGBALANCEQUARTER function &#40;DAX&#41;](closingbalancequarter-function-dax.md)  
-[CLOSINGBALANCEMONTH function &#40;DAX&#41;](closingbalancemonth-function-dax.md)  
+[Time intelligence functions](time-intelligence-functions-dax.md)  
+[CLOSINGBALANCEYEAR function](closingbalanceyear-function-dax.md)  
+[CLOSINGBALANCEQUARTER function](closingbalancequarter-function-dax.md)  
+[CLOSINGBALANCEMONTH function](closingbalancemonth-function-dax.md)  

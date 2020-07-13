@@ -59,7 +59,7 @@ However, if the column CalendarYear is used to slice the PivotTable, the results
   
 ## See also
 
-[Filter functions &#40;DAX&#41;](filter-functions-dax.md)  
-[ALL function &#40;DAX&#41;](all-function-dax.md)  
-[FILTER function &#40;DAX&#41;](filter-function-dax.md)  
+[Filter functions](filter-functions-dax.md)  
+[ALL function](all-function-dax.md)  
+[FILTER function](filter-function-dax.md)  
   

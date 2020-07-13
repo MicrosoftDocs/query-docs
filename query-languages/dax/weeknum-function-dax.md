@@ -53,6 +53,6 @@ The following example returns the week number of the date stored in the column, 
   
 ## See also
 
-[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[YEARFRAC function &#40;DAX&#41;](yearfrac-function-dax.md)  
-[WEEKDAY function &#40;DAX&#41;](weekday-function-dax.md)  
+[Date and time functions](date-and-time-functions-dax.md)  
+[YEARFRAC function](yearfrac-function-dax.md)  
+[WEEKDAY function](weekday-function-dax.md)  

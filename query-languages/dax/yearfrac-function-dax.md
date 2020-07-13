@@ -60,7 +60,7 @@ The second argument, **basis**, has also been omitted. Therefore, the year fract
   
 ## See also
 
-[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[WEEKNUM function &#40;DAX&#41;](weeknum-function-dax.md)  
-[YEARFRAC function &#40;DAX&#41;](yearfrac-function-dax.md)  
-[WEEKDAY function &#40;DAX&#41;](weekday-function-dax.md)  
+[Date and time functions](date-and-time-functions-dax.md)  
+[WEEKNUM function](weeknum-function-dax.md)  
+[YEARFRAC function](yearfrac-function-dax.md)  
+[WEEKDAY function](weekday-function-dax.md)  

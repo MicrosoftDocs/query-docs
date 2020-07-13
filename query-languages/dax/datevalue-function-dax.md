@@ -52,4 +52,4 @@ The following example returns a different **datetime** value depending on the mo
   
 ## See also
 
-[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
+[Date and time functions](date-and-time-functions-dax.md)  

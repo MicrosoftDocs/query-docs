@@ -49,7 +49,7 @@ EVALUATE
 
 ```
 
-Returns
+Returns,
 
 |DimSalesReason[SalesReasonName]  |[TotalQuantity1]  |[TotalQuantity2] |
 |---------|---------|---------|

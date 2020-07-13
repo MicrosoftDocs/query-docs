@@ -46,4 +46,4 @@ The following formula converts the typed string, "3", into the numeric value 3.
   
 ## See also
 
-[Text functions &#40;DAX&#41;](text-functions-dax.md)  
+[Text functions](text-functions-dax.md)  

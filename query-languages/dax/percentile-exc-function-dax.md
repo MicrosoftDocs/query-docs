@@ -12,7 +12,7 @@ ms.author: owend
   
 Returns the k-th percentile of values in a range, where k is in the range 0..1, exclusive.  
   
-To return the percentile number of an expression evaluated for each row in a table, use [PERCENTILEX.EXC function &#40;DAX&#41;](percentilex-exc-function-dax.md).  
+To return the percentile number of an expression evaluated for each row in a table, use [PERCENTILEX.EXC function](percentilex-exc-function-dax.md).  
   
 ## Syntax  
   

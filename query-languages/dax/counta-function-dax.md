@@ -42,7 +42,7 @@ The following example returns all rows in the `Reseller` table that have any kin
   
 ## See also
 
-[COUNT function &#40;DAX&#41;](count-function-dax.md)  
-[COUNTAX function &#40;DAX&#41;](countax-function-dax.md)  
-[COUNTX function &#40;DAX&#41;](countx-function-dax.md)  
-[Statistical functions &#40;DAX&#41;](statistical-functions-dax.md)  
+[COUNT function](count-function-dax.md)  
+[COUNTAX function](countax-function-dax.md)  
+[COUNTX function](countx-function-dax.md)  
+[Statistical functions](statistical-functions-dax.md)  

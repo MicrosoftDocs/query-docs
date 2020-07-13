@@ -36,7 +36,7 @@ A table containing a single column and single row with a date value.
   - A table expression that returns a single column of date/time values.  
   - A Boolean expression that defines a single-column table of date/time values.  
   
-- Constraints on Boolean expressions are described in the topic, [CALCULATE function &#40;DAX&#41;](calculate-function-dax.md).  
+- Constraints on Boolean expressions are described in the topic, [CALCULATE function](calculate-function-dax.md).  
   
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
@@ -50,8 +50,8 @@ The following sample formula creates a measure that returns the end of the month
   
 ## See also
 
-[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[Time intelligence functions &#40;DAX&#41;](time-intelligence-functions-dax.md)  
-[ENDOFYEAR function &#40;DAX&#41;](endofyear-function-dax.md)  
-[ENDOFQUARTER function &#40;DAX&#41;](endofquarter-function-dax.md)  
+[Date and time functions](date-and-time-functions-dax.md)  
+[Time intelligence functions](time-intelligence-functions-dax.md)  
+[ENDOFYEAR function](endofyear-function-dax.md)  
+[ENDOFQUARTER function](endofquarter-function-dax.md)  
   

@@ -63,6 +63,6 @@ The following expression returns the day that each sales order was placed, and f
   
 ## See also
 
-[Date and time functions &#40;DAX&#41;](date-and-time-functions-dax.md)  
-[TODAY function &#40;DAX&#41;](today-function-dax.md)  
-[DATE function &#40;DAX&#41;](date-function-dax.md)  
+[Date and time functions](date-and-time-functions-dax.md)  
+[TODAY function](today-function-dax.md)  
+[DATE function](date-function-dax.md)  
