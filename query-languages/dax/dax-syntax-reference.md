@@ -60,7 +60,7 @@ When you use a table or column as an input to a function, you must generally *qu
   
 An *unqualified* column name is just the name of the column, enclosed in brackets: for example, [Sales Amount]. For example, when you are referencing a scalar value from the same row of the current table, you can use the unqualified column name.  
   
-If the name of a table contains spaces, reserved keywords, or disallowed characters, you must enclose the table name in single quotation marks. You must also enclose table names in quotation marks if the name contains any characters outside the ANSI alphanumeric character range, regardless of whether your locale supports the character set or not. For example, if you open a workbook that contains table names written in Cyrillic characters, such as ‘Таблица’, the table name must be enclosed in quotation marks, even though it does not contain spaces.  
+If the name of a table contains spaces, reserved keywords, or disallowed characters, you must enclose the table name in single quotation marks. You must also enclose table names in quotation marks if the name contains any characters outside the ANSI alphanumeric character range, regardless of whether your locale supports the character set or not. For example, if you open a workbook that contains table names written in Cyrillic characters, such as 'Таблица', the table name must be enclosed in quotation marks, even though it does not contain spaces.  
   
 > [!NOTE]  
 > To make it easier to enter the fully qualified names of columns, use the AutoComplete feature in the formula editor.  
@@ -107,16 +107,15 @@ The following characters and character types are not valid in the names of table
 #### Examples of object names  
 
 The following table shows examples of some object names:  
-  
-||||  
-|-|-|-|  
+
 |Object Types|Examples|Comment|  
+|-----|-----|----|
 |Table name|**Sales**|If the table name does not contain spaces or other special characters, the name does not need to be enclosed in quotation marks.|  
-|Table name|**‘Canada Sales’**|If the name contains spaces, tabs or other special characters, enclose the name in single quotation marks.|  
+|Table name|**'Canada Sales'**|If the name contains spaces, tabs or other special characters, enclose the name in single quotation marks.|  
 |Fully qualified column name|**Sales[Amount]**|The table name precedes the column name, and the column name is enclosed in brackets.|  
 |Fully qualified measure name|**Sales[Profit]**|The table name precedes the measure name, and the measure name is enclosed in brackets. In certain contexts, a fully qualified name is always required.|  
 |Unqualified column name|**[Amount]**|The unqualified name is just the column name, in brackets. Contexts where you can use the unqualified name include formulas in a calculated column within the same table, or in an aggregation function that is scanning over the same table.|  
-|Fully qualified column in table with spaces|**‘Canada Sales’[Qty]**|The table name contains spaces, so it must be surrounded by single quotes.|  
+|Fully qualified column in table with spaces|**'Canada Sales'[Qty]**|The table name contains spaces, so it must be surrounded by single quotes.|  
 
   
 ### Other restrictions  

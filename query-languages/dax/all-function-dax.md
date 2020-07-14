@@ -63,7 +63,7 @@ The following table shows the results when a new measure, **All Reseller Sales R
 |2008|0.20%|16.95%|0.48%|2.63%|20.26%|  
 |Grand Total|0.70%|82.47%|2.18%|14.65%|100.00%|  
   
-**Formula**  
+**Formula**
   
 ```dax
 = SUMX(ResellerSales_USD, ResellerSales_USD[SalesAmount_USD])/SUMX(ALL(ResellerSales_USD), ResellerSales_USD[SalesAmount_USD])  
@@ -95,7 +95,7 @@ The following table shows the results when a new measure, **Reseller Sales Year*
 |Grand Total|100.00%|100.00%|100.00%|100.00%|100.00%|  
   
 **Formula**
-  
+
 ```dax
 = SUMX(ResellerSales_USD, ResellerSales_USD[SalesAmount_USD])/CALCULATE( SUM( ResellerSales_USD[SalesAmount_USD]), ALL(DateTime[CalendarYear]))  
 ```

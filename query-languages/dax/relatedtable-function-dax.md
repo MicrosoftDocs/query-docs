@@ -39,10 +39,9 @@ A table of values.
 The following example uses the RELATEDTABLE function to create a calculated column with the Internet Sales in the Product Category table.  
   
 The following table shows the results:  
-  
-|||||  
-|-|-|-|-|  
+
 |Product Category Key|Product Category AlternateKey|Product Category Name|Internet Sales|  
+|-----|------|------|------|  
 |1|1|Bikes|$28,318,144.65|  
 |2|2|Components||  
 |3|3|Clothing|$339,772.61|  

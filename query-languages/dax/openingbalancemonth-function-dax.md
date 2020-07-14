@@ -20,9 +20,8 @@ OPENINGBALANCEMONTH(<expression>,<dates>[,<filter>])
   
 ### Parameters  
   
-|||  
-|-|-|  
-|Parameter|Definition|  
+|Term|Definition|  
+|--------|--------------|  
 |expression|An expression that returns a scalar value.|  
 |dates|A column that contains dates.|  
 |filter|(optional) An expression that specifies a filter to apply to the current context.|  

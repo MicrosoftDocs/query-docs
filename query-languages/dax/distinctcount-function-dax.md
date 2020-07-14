@@ -44,8 +44,8 @@ The following example shows how to count the number of distinct sales orders in 
 
 Using the above measure in a table with calendar year in the side and product category on top gives the following results:  
   
-|**Distinct Reseller Orders count**|**Column Labels**||||||  
-|-|-|-|-|-|-|-|  
+|Distinct Reseller Orders count|Column Labels||||||  
+|-----|-----|-----|-----|-----|-----|-----|  
 |**Row Labels**|**Accessories**|**Bikes**|**Clothing**|**Components**||**Grand Total**|  
 |2005|135|345|242|205||366|  
 |2006|356|850|644|702||1015|  

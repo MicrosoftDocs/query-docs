@@ -20,9 +20,8 @@ TIMEVALUE(time_text)
   
 ### Parameters  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|--------|--------------|  
 |time_text|A text string that that represents a certain time of the day. Any date information included in the **time_text** argument is ignored.|  
   
 ## Return value

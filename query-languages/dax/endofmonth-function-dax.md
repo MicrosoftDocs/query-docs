@@ -20,9 +20,8 @@ ENDOFMONTH(<dates>)
   
 ### Parameters  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|--------|--------------|  
 |dates|A column that contains dates.|  
   
 ## Return value
