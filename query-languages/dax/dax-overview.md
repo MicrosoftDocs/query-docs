@@ -79,7 +79,7 @@ With row-level security, a DAX formula must evaluate to a Boolean TRUE/FALSE con
 
 Members of the Sales role will only be able to view data for customers in the USA, and aggregates, such as SUM are returned only for customers in the USA. Row-level security is not available in Power Pivot in Excel.
   
-When defining a row filter by using DAX formula, you are creating an allowed row set. This does not deny access to other rows; rather, they are simply not returned as part of the allowed row set. Other roles can allow access to the rows excluded by the DAX formula. If a user is a member of another role, and that role's row-level security allows access to that particular row set, the user can view data for that row.  
+When defining row-level secuirty by using DAX formula, you are creating an allowed row set. This does not deny access to other rows; rather, they are simply not returned as part of the allowed row set. Other roles can allow access to the rows excluded by the DAX formula. If a user is a member of another role, and that role's row-level security allows access to that particular row set, the user can view data for that row.  
   
 Row-level security formulas apply to the specified rows as well as related rows. When a table has multiple relationships, filters apply security for the relationship that is active. Row-level security formulas will be intersected with other formulas defined for related tables.  
 
@@ -242,7 +242,7 @@ Examples of table functions include: FILTER, ALL, VALUES, DISTINCT, RELATEDTABLE
 
 ## Variables
 
-You can create variables within an expression by using the [VAR](https://docs.microsoft.com/dax/var-dax). VAR is technically not a function, it's a keyword you use to store the result of an expression as a named variable. That variable can then be passed as an argument to other measure expressions. For example:
+You can create variables within an expression by using [VAR](https://docs.microsoft.com/dax/var-dax). VAR is technically not a function, it's a keyword to store the result of an expression as a named variable. That variable can then be passed as an argument to other measure expressions. For example:
 
 ```dax
 VAR 
@@ -257,7 +257,7 @@ Return
         )
 ```
 
-In this example, TotalQty can then be passed as a named variable to other expressions. Variables can be of any scalar data type, including tables. Using variables in your DAX formulas can be incredibly powerful.
+In this example, TotalQty can be passed as a named variable to other expressions. Variables can be of any scalar data type, including tables. Using variables in your DAX formulas can be incredibly powerful.
 
 ## Data types  
 
@@ -413,7 +413,7 @@ It's important to observe these formula design rules when using relationships:
   
 - The values calculated by measures are dynamically evaluated whenever a user adds the measure to a PivotTable or open a report; as the user modifies the context, values returned by the measure change. The results of the measure always reflect the latest in the in-memory cache.  
   
-Processing and recalculation have no effect on row filter formulas unless the result of a recalculation returns a different value, thus making the row queryable or not queryable by role members.  
+Processing and recalculation have no effect on row-level security formulas unless the result of a recalculation returns a different value, thus making the row queryable or not queryable by role members.  
 
 ## Updates
 
