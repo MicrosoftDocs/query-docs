@@ -26,8 +26,12 @@ ISINSCOPE(<columnName>)
   
 ## Return value
 
-TRUE when the specified column is the level in a hierarchy of levels. 
-  
+TRUE when the specified column is the level in a hierarchy of levels.
+
+## Remarks
+
+[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example  
 
 ```dax

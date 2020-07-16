@@ -30,10 +30,12 @@ Returns the hyperbolic tangent of a number.
   
 ## Remarks
 
-The formula for the hyperbolic tangent is:  
+- The formula for the hyperbolic tangent is:  
   
-![Formula](media/dax-tanh-formula.png)  
-  
+  ![Formula](media/dax-tanh-formula.png)  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example  
   
 |Formula|Description|Result|  

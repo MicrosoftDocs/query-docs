@@ -55,6 +55,8 @@ The cumulative principal paid in the specified period.
   - end_period < start_period or end_period > nper.
   - type is any number other than 0 or 1.
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Examples
 
 | **Data** | **Description**      |

@@ -39,7 +39,9 @@ The greatest common divisor of two or more integers.
 - A prime number has only itself and one as even divisors.  
   
 - If a parameter to GCD is &gt;=2^53, GCD returns the #NUM! error value.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example  
   
 |Formula|Description|Result|  

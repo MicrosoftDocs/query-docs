@@ -38,7 +38,9 @@ Internal rate of return for the given inputs. If the calculation fails to return
     ![XIRR Formula](media/dax-xirr-formula.png)  
   
 - The series of cash flow values must contain at least one positive number and one negative number.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following formula calculates the internal rate of return of the CashFlows table:  

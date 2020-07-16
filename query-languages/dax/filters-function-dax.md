@@ -29,6 +29,8 @@ FILTERS(<columnName>)
 The values that are directly applied as filters to *columnName*.  
   
 ## Remarks
+
+[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example
 

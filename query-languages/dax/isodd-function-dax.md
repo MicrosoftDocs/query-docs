@@ -30,4 +30,6 @@ Returns TRUE if number is odd, or FALSE if number is even.
   
 ## Remarks
 
-If number is nonnumeric, ISODD returns the #VALUE! error value.  
+- If number is nonnumeric, ISODD returns the #VALUE! error value.  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]

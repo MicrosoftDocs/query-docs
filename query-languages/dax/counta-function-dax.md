@@ -30,7 +30,9 @@ A whole number.
   
 ## Remarks  
   
-When the function does not find any rows to count, the function returns a blank.
+- When the function does not find any rows to count, the function returns a blank.
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example
 

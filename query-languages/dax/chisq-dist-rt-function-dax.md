@@ -40,6 +40,8 @@ The right-tailed probability of the chi-squared distribution.
 
 - If deg_freedom < 1 or deg_freedom > 10^10, an error is returned.
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example  
   
 The following DAX query,

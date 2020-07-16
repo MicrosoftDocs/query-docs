@@ -41,7 +41,9 @@ The chi-squared distribution.
 - If x < 0, an error is returned.
 
 - If deg_freedom < 1 or deg_freedom > 10^10, an error is returned.
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example  
   
 The following DAX query,

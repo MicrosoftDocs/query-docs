@@ -43,8 +43,11 @@ A table that contains all the rows in table_expression1 that are also in table_e
 - Columns are compared based on positioning, and data comparison with no type coercion.  
   
 - The returned table does not include columns from tables related to table_expression1.  
-  
-## Example  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
+## Example
+
 States1  
   
 |State|  

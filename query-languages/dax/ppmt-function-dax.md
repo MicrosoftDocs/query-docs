@@ -53,9 +53,9 @@ The payment on the principal for a given period.
   - per < 1 or per > nper
   - nper < 1
 
-## Examples
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-### Example 1
+## Example 1
 
 | **Data**  | **Argument description**     |
 | --------- | ---------------------------- |
@@ -78,7 +78,7 @@ Returns the principal payment made in the first month for a loan with the terms 
 | ------------------ |
 | -75.6231860083663 |
 
-### Example 2
+## Example 2
 
 | **Data**    | **Argument description**     |
 | ----------- | ---------------------------- |

@@ -44,7 +44,9 @@ A number indicating the rank of *value* among the numbers in *columnName*.
 - If *value* is not in *columnName* or value is a blank, then *RANK.EQ* returns a blank value.  
   
 - Duplicate values of *value* receive the same rank value; the next rank value assigned will be the rank value plus the number of duplicate values. For example if five (5) values are tied with a rank of 11 then the next value will receive a rank of 16 (11 + 5).  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example 1
 
 The following example creates a calculated column that ranks the values in SalesAmount_USD, from the *InternetSales_USD* table, against all numbers in the same column.  

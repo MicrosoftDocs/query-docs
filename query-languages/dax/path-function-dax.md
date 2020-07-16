@@ -31,7 +31,7 @@ A delimited text string containing the identifiers of all the parents to the cur
   
 ## Remarks
 
--  This function is used in tables that have some kind of internal hierarchy, to return the items that are related to the current row value. For example, in an Employees table that contains employees, the managers of employees, and the managers of the managers, you can return the path that connects an employee to his or her manager.  
+- This function is used in tables that have some kind of internal hierarchy, to return the items that are related to the current row value. For example, in an Employees table that contains employees, the managers of employees, and the managers of the managers, you can return the path that connects an employee to his or her manager.  
   
 - The path is not constrained to a single level of parent-child relationships; it can return related rows that are several levels up from the specified starting row.  
   - The delimiter used to separate the ascendants is the vertical bar, '|'.  

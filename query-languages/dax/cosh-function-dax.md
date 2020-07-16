@@ -30,10 +30,12 @@ The hyperbolic cosine of a number.
   
 ## Remarks
 
-The formula for the hyperbolic cosine is:  
+- The formula for the hyperbolic cosine is:  
   
-![Formula](media/dax-cosh-formula.png)  
+    ![Formula](media/dax-cosh-formula.png)  
   
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example  
   
 |Formula|Description|Result|  

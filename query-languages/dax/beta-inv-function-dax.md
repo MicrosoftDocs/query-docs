@@ -45,4 +45,5 @@ Returns the inverse of the beta cumulative probability density function (BETA.DI
 - If probability ≤ 0 or probability &gt; 1, BETA.INV returns the #NUM! error value.  
   
 - If you omit values for A and B, BETA.INV uses the standard cumulative beta distribution, so that A = 0 and B = 1.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]

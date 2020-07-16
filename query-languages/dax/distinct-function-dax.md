@@ -33,8 +33,10 @@ A column of unique values.
   
 ## Remarks
 
-The results of DISTINCT are affected by the current filter context. For example, if you use the formula in the following example to create a measure, the results would change whenever the table was filtered to show only a particular region or a time period.  
-  
+- The results of DISTINCT are affected by the current filter context. For example, if you use the formula in the following example to create a measure, the results would change whenever the table was filtered to show only a particular region or a time period.  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Related functions
 
 There is another version of the DISTINCT function, [DISTINCT (table)](distinct-table-function-dax.md), that returns a table by removing duplicate rows from another table or expression..

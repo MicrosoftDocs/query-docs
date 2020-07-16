@@ -30,9 +30,11 @@ Returns the hyperbolic sine of a number.
   
 ## Remarks
 
-The formula for the hyperbolic sine is:  
+- The formula for the hyperbolic sine is:  
   
-![Formula](media/dax-sinh-formula.png)  
+  ![Formula](media/dax-sinh-formula.png)  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example  
 

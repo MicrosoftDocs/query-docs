@@ -35,7 +35,9 @@ A decimal number.
 - Only the numbers in the column are counted. Blanks, logical values, and text are ignored.  
   
 - MEDIAN( Table[Column] ) is equivalent to MEDIANX( Table, Table[Column] ).  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following computes the median of a column named Age in a table named Customers:  

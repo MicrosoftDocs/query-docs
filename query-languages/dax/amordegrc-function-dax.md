@@ -72,6 +72,8 @@ The depreciation for each accounting period.
   - The life of assets is between 0 (zero) and 1, 1 and 2, 2 and 3, or 4 and 5.
   - basis is any number other than 0, 1, 3, or 4.
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 | **Data**         | **Description**          |

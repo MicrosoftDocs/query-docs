@@ -42,6 +42,8 @@ The sum-of-years' digits depreciation for the specified period.
   - life < 1.
   - per < 1 or per > life.
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Examples
 
 | **Data**    | **Description**   |

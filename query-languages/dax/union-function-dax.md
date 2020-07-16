@@ -43,7 +43,9 @@ A table that contains all the rows from each of the two table expressions.
 - When data types differ, the resulting data type is determined based on the rules for data type coercion.  
   
 - The returned table will not contain columns from related tables.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following expression creates a union by combining the USAInventory table and the INDInventory table into a single table:  

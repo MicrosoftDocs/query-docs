@@ -37,7 +37,9 @@ A value of **TRUE** if each specified *value* can be found in the corresponding 
 - *columnName* must belong to the specified *table*, or to a table that is related to *table*.  
   
 - If *columnName* refers to a column in a related table then it must be fully qualified; otherwise, an error is returned.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following example creates a measure that tells you whether there were any Internet sales of product 214 and to customer 11185 at the same time.  

@@ -36,7 +36,9 @@ A decimal number.
 - Only the numbers in the column are counted. Blanks, logical values, and text are ignored.  
   
 - To see some more complex examples of SUMX in formulas, see [ALLDAX&#41;](all-function-dax.md) and [CALCULATETABLE](calculatetable-function-dax.md).  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following example first filters the table, InternetSales, on the expression, `ShippingTerritoryID = 5`, and then returns the sum of all values in the column, Freight. In other words, the expression returns the sum of freight charges for only the specified sales area.  

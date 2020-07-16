@@ -30,7 +30,9 @@ TRUE if the value is not text or blank; FALSE if the value is text.
   
 ## Remarks
 
-An empty string is considered text.  
+- An empty string is considered text.  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example
 

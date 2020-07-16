@@ -64,6 +64,8 @@ The price per \\$100 face value.
   - frequency is any number other than 1, 2, or 4.
   - basis < 0 or basis > 4.
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 **Important:**
 
 - When N > 1 (N is the number of coupons payable between the settlement date and redemption date), **PRICE** is calculated as follows:

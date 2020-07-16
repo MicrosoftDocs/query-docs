@@ -33,6 +33,8 @@ A table consisting of a sample of N rows of *table* or an empty table if *n_valu
   
 ## Remarks  
   
-If n_value is 0 (zero) or less then SAMPLE returns an empty table.  
+- If n_value is 0 (zero) or less then SAMPLE returns an empty table.  
 
-In order to avoid duplicate values in the sample, the table provided as the second argument should be grouped by the column used for sorting.
+- In order to avoid duplicate values in the sample, the table provided as the second argument should be grouped by the column used for sorting.
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]

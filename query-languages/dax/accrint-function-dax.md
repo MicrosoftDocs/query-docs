@@ -72,6 +72,8 @@ The accrued interest.
   - frequency is any number other than 1, 2, or 4.
   - basis < 0 or basis > 4.
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Examples
 
 | **Data**       | **Description**                     |

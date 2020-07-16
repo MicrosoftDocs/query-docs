@@ -53,6 +53,8 @@ The interest payment for the given period.
   - per < 1 or per > nper
   - nper < 1
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Examples
 
 | **Data** | **Description**       |

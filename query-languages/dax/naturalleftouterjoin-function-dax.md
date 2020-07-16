@@ -38,3 +38,5 @@ A table which includes only rows from rightJoinTable for which the values in the
 - Only columns from the same source table (have the same lineage) are joined on. For example, Products[ProductID], WebSales[ProductdID], StoreSales[ProductdID] with many-to-one relationships between WebSales and StoreSales and the Products table based on the ProductID column, WebSales and StoreSales tables are joined on [ProductID].  
   
 - Strict comparison semantics are used during join. There is no type coercion; for example, 1 does not equal 1.0.  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]

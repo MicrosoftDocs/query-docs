@@ -49,3 +49,5 @@ Returns the Poisson distribution.
   - For cumulative = TRUE:  
 
   ![Formula](media/dax-poisson-formula2.png)  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]

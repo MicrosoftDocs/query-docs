@@ -27,7 +27,11 @@ ASINH(number)
 ## Return value
 
 Returns the inverse hyperbolic sine of a number.  
-  
+
+## Remarks
+
+[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example  
   
 |Formula|Description|Result|  

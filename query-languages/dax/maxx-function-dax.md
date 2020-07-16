@@ -39,7 +39,9 @@ The largest value.
   - Dates
   
 - Blank values are skipped. TRUE/FALSE values are not supported.
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example 1
 
 The following formula uses an expression as the second argument to calculate the total amount of taxes and shipping for each order in the table, InternetSales. The expected result is 375.7184.  

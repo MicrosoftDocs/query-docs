@@ -38,7 +38,9 @@ A table which includes combinations of values from the supplied columns, based o
 - A column cannot be specified more than once in the groupBy_columnName parameter. For example, the following formula is invalid.  
   
   `SUMMARIZECOLUMNS( Sales[StoreId], Sales[StoreId] )`  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ### Filter context
   
 Consider the following query:  

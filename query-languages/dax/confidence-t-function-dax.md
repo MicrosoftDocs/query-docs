@@ -41,7 +41,9 @@ Returns the confidence interval for a population mean, using a Student's t distr
 - If size is not an integer, it is rounded.  
   
 - If size equals 1, CONFIDENCE.T returns #DIV/0! error value.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example  
   
 |Formula|Description|Result|  

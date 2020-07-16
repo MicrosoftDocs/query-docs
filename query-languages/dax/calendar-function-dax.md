@@ -31,7 +31,9 @@ Returns a table with a single column named "Date" containing a contiguous set of
   
 ## Remarks
 
-An error is returned if start_date is greater than end_date.  
+- An error is returned if start_date is greater than end_date.  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Examples
 

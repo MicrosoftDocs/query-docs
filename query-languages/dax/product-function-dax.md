@@ -35,7 +35,9 @@ A decimal number.
 - Only the numbers in the column are counted. Blanks, logical values, and text are ignored. For example,
 
   `PRODUCT( Table[Column] )` is equivalent to `PRODUCTX( Table, Table[Column] )`.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+ 
 ## Example
 
 The following computes the product of the AdjustedRates column in an Annuity table:  

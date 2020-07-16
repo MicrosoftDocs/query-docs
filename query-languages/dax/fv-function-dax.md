@@ -53,6 +53,8 @@ The future value of an investment.
 - An error is returned if:
   - nper < 1
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 | **Data** | **Description**                                                                             |

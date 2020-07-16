@@ -38,6 +38,8 @@ A single column table containing the values of an arithmetic series. The name of
 
 - The sequence stops at the last value that is less than or equal to endValue.
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example 1
 
 The following DAX query:
