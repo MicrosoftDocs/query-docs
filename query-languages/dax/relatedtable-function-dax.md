@@ -33,7 +33,9 @@ A table of values.
 - The RELATEDTETABLE function changes the context in which the data is filtered, and evaluates the expression in the new context that you specify.  
   
 - This function is a shortcut for CALCULATETABLE function with no logical expression.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following example uses the RELATEDTABLE function to create a calculated column with the Internet Sales in the Product Category table.  

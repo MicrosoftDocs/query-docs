@@ -27,7 +27,11 @@ ISEMPTY(<table_expression>)
 ## Return value
 
 True if the table is empty (has no rows), if else, False.  
-  
+
+## Remarks
+
+[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 For the below table named 'Info':  

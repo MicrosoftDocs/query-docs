@@ -47,6 +47,8 @@ The interest paid (or received) for the specified period.
 - An error is returned if:
   - nper = 0.
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 | **Data** | **Description**   |

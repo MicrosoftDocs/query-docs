@@ -52,6 +52,8 @@ The depreciation over the specified period.
   - period < 1 or period > life.
   - factor ≤ 0.
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Examples
 
 ### Example 1

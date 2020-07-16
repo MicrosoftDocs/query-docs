@@ -27,7 +27,11 @@ ISNUMBER(<value>)
 ## Return value
 
 TRUE if the value is numeric; otherwise FALSE.  
-  
+
+## Remarks
+
+[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following three samples show the behavior of ISNUMBER.  

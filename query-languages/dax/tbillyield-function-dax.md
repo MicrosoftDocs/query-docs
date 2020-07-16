@@ -50,6 +50,8 @@ The Treasury bill's yield.
   - settlement ≥ maturity or maturity is more than one year after settlement.
   - pr ≤ 0.
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following DAX query:

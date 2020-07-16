@@ -38,7 +38,9 @@ Net present value.
     ![XNPV Formula](media/dax-xnpv-formula.png)  
   
 - The series of cash flow values must contain at least one positive number and one negative number.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following calculates the present value of the CashFlows table:  

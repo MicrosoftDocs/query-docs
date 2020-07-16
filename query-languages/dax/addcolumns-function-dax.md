@@ -29,6 +29,10 @@ ADDCOLUMNS(<table>, <name>, <expression>[, <name>, <expression>]…)
 ## Return value
 
 A table with all its original columns and the added ones.  
+
+## Remarks
+
+[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example
 

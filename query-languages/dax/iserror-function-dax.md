@@ -27,7 +27,11 @@ ISERROR(<value>)
 ## Return value
 
 A Boolean value of TRUE if the value is an error; otherwise FALSE.  
-  
+
+## Remarks
+
+[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following example calculates the ratio of total Internet sales to total reseller sales. The ISERROR function is used to check for errors, such as division by zero. If there is an error a blank is returned, otherwise the ratio is returned.  

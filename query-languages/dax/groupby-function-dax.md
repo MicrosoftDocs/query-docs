@@ -50,7 +50,9 @@ A table with the selected columns for the groupBy_columnName arguments and the g
 - Each name must be enclosed in double quotation marks.  
   
 - The function groups a selected set of rows into a set of summary rows by the values of one or more groupBy_columnName columns. One row is returned for each group.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Options  
   
 ### CURRENTGROUP()

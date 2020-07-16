@@ -31,10 +31,12 @@ A smallest value.
   
 ## Remarks
 
-The MINX function takes as its first argument a table, or an expression that returns a table. The second argument contains the expression that is evaluated for each row of the table.  
+- The MINX function takes as its first argument a table, or an expression that returns a table. The second argument contains the expression that is evaluated for each row of the table.  
   
-Blank values are skipped. TRUE/FALSE values are not supported.
-  
+- Blank values are skipped. TRUE/FALSE values are not supported.
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example 1
 
 The following example filters the table, InternetSales, and returns only rows for a specific sales territory. The formula then finds the minimum value in the column, Freight.  

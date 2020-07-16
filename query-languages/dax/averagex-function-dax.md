@@ -36,7 +36,9 @@ A decimal number.
 - In all other respects, AVERAGEX follows the same rules as AVERAGE. You cannot include non-numeric or null cells. Both the table and expression arguments are required.  
   
 - When there are no rows to aggregate, the function returns a blank.  When there are rows, but none of them meet the specified criteria, then the function returns 0.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following example calculates the average freight and tax on each order in the InternetSales table, by first summing Freight plus TaxAmt in each row, and then averaging those sums.  

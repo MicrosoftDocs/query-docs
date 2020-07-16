@@ -27,8 +27,12 @@ T.INV.2T(Probability,Deg_freedom)
   
 ## Return value
 
-The two-tailed inverse of the Student's t-distribution. 
-  
+The two-tailed inverse of the Student's t-distribution.
+
+## Remarks
+
+[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example  
   
 ```dax

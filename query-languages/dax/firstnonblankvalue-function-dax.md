@@ -35,7 +35,9 @@ The first non-blank value of \<expression> corresponding to the sorted values of
   - A table with a single column.
 
 - This function is different from FIRSTNONBLANK in that the \<column> is added to the filter context for the evaluation of \<expression>.
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]  
+
 ## Example  
 
 The following DAX query,

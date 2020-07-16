@@ -43,7 +43,9 @@ A table that contains the rows of one table minus all the rows of another table.
 - The set of rows returned depends on the order of the two expressions.  
   
 - The returned table does not include columns from tables related to table_expression1.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 States1  

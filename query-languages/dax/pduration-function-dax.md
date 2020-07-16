@@ -42,9 +42,9 @@ The number of periods.
   - pv ≤ 0.
   - fv ≤ 0.
 
-## Examples
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-### Example 1
+## Example 1
 
 The following DAX query:
 
@@ -61,7 +61,7 @@ Returns the number of years required for an investment of \\$2000, earning 2.5% 
 | ---------------- |
 | 3.85986616262266 |
 
-### Example 2
+## Example 2
 
 The following DAX query:
 

@@ -58,7 +58,9 @@ The rank number of *value* among all possible values of *expression* evaluated f
 - If *value* is not among all possible values of *expression* then RANKX temporarily adds *value* to the values from *expression* and re-evaluates RANKX to determine the proper rank of *value*.  
   
 - Optional arguments might be skipped by placing an empty comma (,) in the argument list, i.e. RANKX(Inventory, [InventoryCost],,,"Dense")  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following calculated column in the Products table calculates the sales ranking for each product in the Internet channel.  

@@ -30,7 +30,11 @@ NORM.INV(Probability, Mean, Standard_dev)
 ## Return value
 
 Returns the inverse of the normal cumulative distribution for the specified mean and standard deviation.
-  
+
+## Remarks
+
+[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example  
   
 ```dax

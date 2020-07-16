@@ -33,7 +33,9 @@ A table that contains the Cartesian product of all rows from all tables in the a
 - Column names from *table* arguments must all be different in all tables or an error is returned.  
   
 - The total number of rows returned by CROSSJOIN() is equal to the product of the number of rows from all tables in the arguments; also, the total number of columns in the result table is the sum of the number of columns in all tables. For example, if **TableA** has **rA** rows and **cA** columns, and **TableB** has **rB** rows and **cB** columns, and **TableC** has **rC** rows and **cC** column; then, the resulting table has **rA × rb × rC** rows and **cA + cB + cC** columns.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following example shows the results of applying CROSSJOIN() to two tables: **Colors** and **Stationery**.  

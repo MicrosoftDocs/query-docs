@@ -27,8 +27,12 @@ T.INV(Probability,Deg_freedom)
   
 ## Return value
 
-The left-tailed inverse of the Student's t-distribution. 
-  
+The left-tailed inverse of the Student's t-distribution.
+
+## Remarks
+
+[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example  
   
 ```dax

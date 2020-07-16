@@ -30,7 +30,9 @@ The number of distinct values in *column*.
   
 ## Remarks  
 
-Unlike [DISTINCTCOUNT](distinctcount-function-dax.md) function, DISTINCTCOUNTNOBLANK does not include the BLANK value.
+- Unlike [DISTINCTCOUNT](distinctcount-function-dax.md) function, DISTINCTCOUNTNOBLANK does not include the BLANK value.
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example
 

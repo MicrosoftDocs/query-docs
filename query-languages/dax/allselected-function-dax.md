@@ -36,7 +36,9 @@ The context of the query without any column and row filters.
 - If there is one argument, the argument is either *tableName* or *columnName*. If there is more than one argument, they must be columns from the same table.  
   
 - This function is different from ALL() because it retains all filters explicitly set within the query, and it retains all context filters other than row and column filters.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following example shows how to generate different levels of visual totals in a table report using DAX expressions. In the report two (2) previous filters have been applied to the Reseller Sales data; one on Sales Territory Group = *Europe* and the other on Promotion Type = *Volume Discount*. Once filters have been applied, visual totals can be calculated for the entire report, for All Years, or for All Product Categories. Also, for illustration purposes the grand total for All Reseller Sales is obtained too, removing all filters in the report. Evaluating the following DAX expression results in a table with all the information needed to build a table with Visual Totals.  

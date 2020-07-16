@@ -30,7 +30,9 @@ A decimal number.
   
 ## Remarks
 
-If the number is not an integer, it is truncated and an error is returned. If the result is too large, an error is returned.  
+- If the number is not an integer, it is truncated and an error is returned. If the result is too large, an error is returned.  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example
 

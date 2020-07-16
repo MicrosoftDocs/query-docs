@@ -42,6 +42,8 @@ The hyperbolic cotangent of the given angle.
   
   ![COTH formula](media/dax-coth-formula.png)
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example  
   
 The following DAX query,

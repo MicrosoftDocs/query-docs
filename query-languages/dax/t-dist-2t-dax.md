@@ -28,7 +28,11 @@ T.DIST.2T(X,Deg_freedom)
 ## Return value
 
 The two-tailed Student's t-distribution.
-  
+
+## Remarks
+
+[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example  
   
 ```dax

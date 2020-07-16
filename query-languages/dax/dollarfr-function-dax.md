@@ -37,6 +37,8 @@ The fractional value of *decimal_dollar*, expressed as an integer part and a fra
 - An error is returned if:
   - fraction < 1.
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following DAX query:

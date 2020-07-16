@@ -50,6 +50,8 @@ The Treasury Bill's price per \\$100 face value.
   - settlement ≥ maturity or maturity is more than one year after settlement.
   - discount ≤ 0.
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 | **Data**  | **Description**       |

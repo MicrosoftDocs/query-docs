@@ -31,7 +31,9 @@ N/A. See remarks.
   
 ## Remarks  
 
-REMOVEFILTERS can only be used to clear filters but not to return a table.
+- REMOVEFILTERS can only be used to clear filters but not to return a table.
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example 1
 

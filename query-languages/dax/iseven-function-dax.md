@@ -30,4 +30,6 @@ Returns TRUE if number is even, or FALSE if number is odd.
   
 ## Remarks
 
-If number is nonnumeric, ISEVEN returns the #VALUE! error value.  
+- If number is nonnumeric, ISEVEN returns the #VALUE! error value.  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]

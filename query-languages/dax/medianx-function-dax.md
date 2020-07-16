@@ -40,7 +40,9 @@ A decimal number.
 - Logical values and text are ignored.
 
 - MEDIANX does not ignore blanks; however, MEDIAN does ignore blanks  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following computes the median age of customers who live in the USA.  

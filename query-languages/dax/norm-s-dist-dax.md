@@ -28,7 +28,11 @@ NORM.S.DIST(Z, Cumulative)
 ## Return value
 
 The standard normal distribution (has a mean of zero and a standard deviation of one.
-  
+
+## Remarks
+
+[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example  
   
 ```dax

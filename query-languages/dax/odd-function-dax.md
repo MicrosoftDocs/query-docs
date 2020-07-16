@@ -33,7 +33,9 @@ Returns number rounded up to the nearest odd integer.
 - If number is nonnumeric, ODD returns the #VALUE! error value.  
   
 - Regardless of the sign of number, a value is rounded up when adjusted away from zero. If number is an odd integer, no rounding occurs.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example  
   
 |Formula|Description|Result|  

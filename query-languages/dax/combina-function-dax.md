@@ -39,7 +39,9 @@ Returns the number of combinations (with repetitions) for a given number of item
 - The following equation is used, where N is Number and M is Number_chosen:  
   
     ![COMBINA Formula](media/dax-combina-formula.png)  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example  
   
 |Formula|Description|Result|  

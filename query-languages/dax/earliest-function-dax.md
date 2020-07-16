@@ -30,8 +30,10 @@ A column with filters removed.
   
 ## Remarks
 
-The EARLIEST function is similar to EARLIER, but lets you specify one additional level of recursion.  
-  
+- The EARLIEST function is similar to EARLIER, but lets you specify one additional level of recursion.  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The current sample data does not support this scenario.  

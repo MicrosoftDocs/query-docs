@@ -67,6 +67,8 @@ The accrued interest.
   - par ≤ 0.
   - basis < 0 or basis > 4.
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 | **Data**     | **Description**              |

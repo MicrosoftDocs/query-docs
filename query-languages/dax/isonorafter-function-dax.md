@@ -32,7 +32,11 @@ ISONORAFTER(<scalar_expression>, <scalar_expression>[, sort_order [, <scalar_exp
 ## Return value
 
 True or false.  
-  
+
+## Remarks
+
+[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 Table name: 'Info'  
