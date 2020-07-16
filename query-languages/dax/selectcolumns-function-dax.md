@@ -33,6 +33,8 @@ A table with the same number of rows as the table specified as the first argumen
 ## Remarks  
 
 SELECTCOLUMNS has the same signature as ADDCOLUMNS, and has the same behavior except that instead of starting with the \<table> specified, SELECTCOLUMNS starts with an empty table before adding columns.
+
+[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example  
 

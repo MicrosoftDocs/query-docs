@@ -43,3 +43,5 @@ Returns the beta distribution.
 - If x &lt; A, x &gt; B, or A = B, BETA.DIST returns the #NUM! error value.  
   
 - If you omit values for A and B, BETA.DIST uses the standard cumulative beta distribution, so that A = 0 and B = 1.  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]

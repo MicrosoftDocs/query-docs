@@ -35,7 +35,9 @@ Returns the least common multiple of integers.
 - If any argument is less than zero, LCM returns the #NUM! error value.  
   
 - If LCM(a,b) &gt;=2^53, LCM returns the #NUM! error value.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example  
   
 |Formula|Description|Result|  

@@ -29,7 +29,11 @@ T.DIST(X,Deg_freedom,Cumulative)
 ## Return value
 
 The Student's left-tailed t-distribution.
-  
+
+## Remarks
+
+[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example  
   
 ```dax

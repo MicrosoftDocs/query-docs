@@ -26,7 +26,11 @@ ISTEXT(<value>)
   
 ## Return value
 
-TRUE if the value is text; otherwise FALSE  
+TRUE if the value is text; otherwise FALSE.
+
+## Remarks
+
+[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example
 

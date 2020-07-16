@@ -55,6 +55,8 @@ The amount of a single loan payment.
 
 **Tip**: To find the total amount paid over the duration of the loan, multiply the returned PMT value by nper.
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Examples
 
 ### Example 1

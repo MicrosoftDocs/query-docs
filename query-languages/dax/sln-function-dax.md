@@ -33,8 +33,10 @@ The straight-line depreciation for one period.
 
 ## Remarks
 
-- An error is returned if:
-  - life = 0.
+- An error is returned if:  
+  life = 0.
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example
 

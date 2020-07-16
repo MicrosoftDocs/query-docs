@@ -41,7 +41,9 @@ The percentile number of an expression evaluated for each row in a table.
 - If k is not a multiple of 1/(n - 1), PERCENTILEX.EXC will interpolate to determine the value at the k-th percentile.  
   
 - PERCENTILEX.INC will interpolate when the value for the specified percentile is between two values in the array. If it cannot interpolate for the k percentile specified, an error is returned.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## See also
 
 [PERCENTILE.INC](percentile-inc-function-dax.md)  

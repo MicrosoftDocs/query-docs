@@ -28,7 +28,7 @@ A string value holding the name of the measure that is currently in context when
 
 ## Remarks
 
-- Can only be referenced in the expression for a calculation item. 
+- Can only be referenced in the expression for a calculation item.
 
 - This function is often used for debugging purposes when authoring calculation groups.
 

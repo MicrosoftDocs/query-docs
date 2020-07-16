@@ -46,6 +46,8 @@ The depreciation over the specified period.
   - factor < 0.
   - no_switch does not evaluate to either TRUE or FALSE.
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Examples
 
 | **Data** | **Description**   |

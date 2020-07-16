@@ -40,7 +40,9 @@ Returns a decimal number that represents the arithmetic mean of the numbers in t
 - When you average cells, you must keep in mind the difference between an empty cell and a cell that contains the value 0 (zero). When a cell contains 0, it is added to the sum of numbers and the row is counted among the number of rows used as the divisor. However, when a cell contains a blank, the row is not counted.  
   
 - Whenever there are no rows to aggregate, the function returns a blank. However, if there are rows, but none of them meet the specified criteria, the function returns 0. Excel also returns a zero if no rows are found that meet the conditions.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following formula returns the average of the values in the column, ExtendedSalesAmount, in the table, InternetSales.  

@@ -45,7 +45,9 @@ A table, when the passed parameter was a table, or a column of values, when the 
     |ALLNOBLANK(table&#124;column)|From the parent table of a relationship, returns all rows but the blank row, or all distinct values of a column but the blank row, and disregards any context filters that might exist|  
 
     For a general description of how the ALL function works, together with step-by-step examples that use ALL(Table) and ALL(Column), see [ALL function](all-function-dax.md).  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 In the sample data, the ResellerSales_USD table contains one row that has no values and therefore cannot be related to any of the parent tables in the relationships within the workbook. You will use this table in a PivotTable so that you can see the blank row behavior and how to handle counts on unrelated data.  

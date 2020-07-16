@@ -39,7 +39,9 @@ The largest value.
 - Empty cells are ignored. If the column contains no values that can be used, MAXA returns 0 (zero).  
 
 - If you want to compare text values, use the MAX function.
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example 1
 
 The following example returns the greatest value from a calculated column, named **ResellerMargin**, that computes the difference between list price and reseller price.  

@@ -30,7 +30,11 @@ NORM.DIST(X, Mean, Standard_dev, Cumulative)
 ## Return value
 
 The normal distribution for the specified mean and standard deviation.  
-  
+
+## Remarks
+
+[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example  
   
 ```dax

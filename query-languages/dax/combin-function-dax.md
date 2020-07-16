@@ -47,7 +47,9 @@ Returns the number of combinations for a given number of items.
     Where  
 
     ![combin formula result](media/dax-combin-formula2.png)
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example  
   
 |Formula|Description|Result|  

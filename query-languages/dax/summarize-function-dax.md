@@ -40,7 +40,9 @@ A table with the selected columns for the *groupBy_columnName* arguments and the
 - Each name must be enclosed in double quotation marks.  
 
 - The function groups a selected set of rows into a set of summary rows by the values of one or more groupBy_columnName columns. One row is returned for each group.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following example returns a summary of the reseller sales grouped around the calendar year and the product category name, this result table allows you to do analysis over the reseller sales by year and product category.  

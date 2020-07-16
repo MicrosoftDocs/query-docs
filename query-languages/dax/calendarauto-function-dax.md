@@ -37,7 +37,9 @@ Returns a table with a single column named "Date" that contains a contiguous set
   - The date range returned is dates between the beginning of the fiscal year associated with MinDate and the end of the fiscal year associated with MaxDate.  
   
 - An error is returned if the model does not contain any datetime values which are not in calculated columns or calculated tables.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 In this example, the MinDate and MaxDate in the data model are July 1, 2010 and June 30, 2011.  

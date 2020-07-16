@@ -61,6 +61,8 @@ The depreciation over the specified period.
   - period < 1 or period > life.
   - month < 1 or month > 12.
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Examples
 
 ### Example 1

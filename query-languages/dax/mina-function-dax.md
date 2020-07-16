@@ -36,7 +36,9 @@ The smallest value.
   - Empty cells are ignored.  
   
 - If you want to compare text values, use the MIN function.
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example 1
 
 The following expression returns the minimum freight charge from the table, InternetSales.  

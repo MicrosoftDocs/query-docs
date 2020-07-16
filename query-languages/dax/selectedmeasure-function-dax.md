@@ -28,7 +28,9 @@ A reference to the measure that is currently in context when the calculation ite
 
 ## Remarks
 
-Can only be referenced in the expression for a calculation item. 
+- Can only be referenced in the expression for a calculation item.
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example  
 

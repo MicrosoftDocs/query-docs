@@ -42,6 +42,8 @@ A whole number.
 
 - If you want to evaluate a column of TRUE/FALSE values, use the COUNTA function.
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following example shows how to count the number of values in the column, ShipDate.  

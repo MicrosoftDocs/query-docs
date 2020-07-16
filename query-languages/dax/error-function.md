@@ -30,7 +30,9 @@ None
   
 ## Remarks
 
-The ERROR function can be placed in a DAX expression anywhere a scalar value is expected.
+- The ERROR function can be placed in a DAX expression anywhere a scalar value is expected.
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example 1
 

@@ -38,4 +38,6 @@ A table which includes only those values present in the indexColumnsTable table 
   
 ## Remarks
 
-This function does not guarantee any result sort order.
+- This function does not guarantee any result sort order.
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]

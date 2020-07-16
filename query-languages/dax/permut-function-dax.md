@@ -42,7 +42,9 @@ Returns the number of permutations for a given number of objects that can be sel
 - The equation for the number of permutations is:  
   
   ![Formula](media/dax-permut-formula.png)  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example  
 
 In the following formula, permutations possible for a group of 3 objects where 2 are chosen:

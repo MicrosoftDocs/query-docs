@@ -26,6 +26,7 @@ REPT(<text>, <num_times>)
 |num_times|A positive number specifying the number of times to repeat text.|  
   
 ## Return value
+
 A string containing the changes.  
   
 ## Remarks
@@ -35,7 +36,7 @@ A string containing the changes.
 - If **number_times** is not an integer, it is truncated.  
   
 - The result of the REPT function cannot be longer than 32,767 characters, or REPT returns an error.  
-  
+
 ## Example: Repeating Literal Strings  
 
 The following example returns the string, 85, repeated three times.  

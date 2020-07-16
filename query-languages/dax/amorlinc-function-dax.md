@@ -59,6 +59,8 @@ The depreciation for each accounting period.
   - rate ≤ 0.
   - basis is any number other than 0, 1, 3, or 4.
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 | **Data**         | **Description**          |

@@ -47,6 +47,8 @@ If multiple rows match the search values and in all cases **result_column** valu
 
 - The **search_value** and **alternateResult** parameters are evaluated before the function iterates through the rows of the search table.
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Examples
 
 The following **Sales Territory** table rule (for row-level security) enforces a filter restricting data access to rows of the report user's region. It uses the LOOKUPVALUE function to lookup the region from the **Employee** table.

@@ -36,11 +36,15 @@ ADDMISSINGITEMS(<showAllColumn>[, <showAllColumn>]…, <table>, [ROLLUPISSUBTOTA
 |isSubtotal_columnName|A Boolean column in the supplied table argument which contains ISSUBTOTAL values for the corresponding groupingColumn column.|  
 |filterTable|A table representing filters to include in the logic for determining whether to add specific combinations of items with no data. Used to avoid having ADDMISSINGITEMS add in item combinations which are not present because they were removed by a filter.|  
   
+## Remarks
+
+[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## ADDMISSINGITEMS with ROLLUPGROUP
 
 ROLLUPGROUP is used inside the ROLLUPISSUBTOTAL function to reflect ROLLUPGROUPs present in the supplied table argument.  
   
-### Restrictions
+### Remarks
   
 - If ROLLUPISSUBTOTAL was used to define the supplied table argument (or the equivalent rows and ISSUBTOTAL columns were added by some other means), ROLLUPISSUBTOTAL must be used with the same arguments within ADDMISSINGITEMS. This is also true for ROLLUPGROUP if it was used with ROLLUPISSUBTOTAL to define the supplied table argument.  
   

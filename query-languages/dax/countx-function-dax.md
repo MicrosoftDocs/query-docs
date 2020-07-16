@@ -31,11 +31,13 @@ An integer.
   
 ## Remarks
 
-The COUNTX function takes two arguments. The first argument must always be a table, or any expression that returns a table. The second argument is the column or expression that is searched by COUNTX.  
+- The COUNTX function takes two arguments. The first argument must always be a table, or any expression that returns a table. The second argument is the column or expression that is searched by COUNTX.  
   
-The COUNTX function counts only values, dates, or strings. If the function finds no rows to count, it returns a blank. 
+- The COUNTX function counts only values, dates, or strings. If the function finds no rows to count, it returns a blank. 
   
-If you want to count logical values, use the COUNTAX function.  
+- If you want to count logical values, use the COUNTAX function.  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example 1
 

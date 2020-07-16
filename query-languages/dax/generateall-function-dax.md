@@ -34,7 +34,9 @@ A table with the Cartesian product between each row in *table1* and the table th
 - If the evaluation of *table2* for the current row in *table1* returns an empty table, then the current row from *table1* will be included in the results and columns corresponding to *table2* will have null values for that row. This is different than GENERATE() where the current row from *table1* will **not** be included in the results.  
   
 - All column names from *table1* and *table2* must be different or an error is returned.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 In the following example, the user wants a summary table of the sales by Region and Product Category for the Resellers channel, like the following table:  

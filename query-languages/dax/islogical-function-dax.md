@@ -27,7 +27,11 @@ ISLOGICAL(<value>)
 ## Return value
 
 TRUE if the value is a logical value; FALSE if any value other than TRUE OR FALSE.  
-  
+
+## Remarks
+
+[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following three samples show the behavior of ISLOGICAL.  

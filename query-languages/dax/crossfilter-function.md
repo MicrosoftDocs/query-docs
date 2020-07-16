@@ -43,7 +43,9 @@ The function returns no value; the function only sets the cross-filtering direct
 - An error is returned if any of the columns named as an argument is not part of a relationship or the arguments belong to different relationships.  
   
 - If CALCULATE expressions are nested, and more than one CALCULATE expression contains a CROSSFILTER function, then the innermost CROSSFILTER is the one that prevails in case of a conflict or ambiguity.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 In the following model diagram, both DimProduct and DimDate have a single direction relationship with FactOnlineSales.  

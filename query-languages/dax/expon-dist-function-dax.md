@@ -47,3 +47,5 @@ Returns the exponential distribution.
 - The equation for the cumulative distribution function is:  
   
     ![Formula](media/dax-expondist-formula2.png)  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]

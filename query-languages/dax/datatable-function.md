@@ -32,7 +32,9 @@ A table declaring an inline set of values.
 
 ## Remarks
 
-Unlike DATATABLE, [Table Constructor](table-constructor.md) allows any scalar expressions as input values.
+- Unlike DATATABLE, [Table Constructor](table-constructor.md) allows any scalar expressions as input values.
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example  
   

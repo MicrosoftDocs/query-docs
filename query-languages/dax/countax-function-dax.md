@@ -31,11 +31,11 @@ A whole number.
   
 ## Remarks
 
-Like the COUNTA function, the COUNTAX function counts cells containing any type of information, including other expressions.  
+- Like the COUNTA function, the COUNTAX function counts cells containing any type of information, including other expressions. For example, if the column contains an expression that evaluates to an empty string, the COUNTAX function treats that result as non-blank. Usually the COUNTAX function does not count empty cells but in this case the cell contains a formula, so it is counted.  
   
-For example, if the column contains an expression that evaluates to an empty string, the COUNTAX function treats that result as non-blank. Usually the COUNTAX function does not count empty cells but in this case the cell contains a formula, so it is counted.  
-  
-Whenever the function finds no rows to aggregate, the function returns a blank.
+- Whenever the function finds no rows to aggregate, the function returns a blank.
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example
 

@@ -42,7 +42,9 @@ The k-th percentile of values in a range, where k is in the range 0..1, inclusiv
 - If k is not a multiple of 1/(n + 1), PERCENTILE.INC will interpolate to determine the value at the k-th percentile.  
   
 - PERCENTILE.INC will interpolate when the value for the specified percentile is between two values in the array. If it cannot interpolate for the k percentile specified, an error is returned.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## See also
 
 [PERCENTILEX.INC](percentilex-inc-function-dax.md)  

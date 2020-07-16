@@ -42,6 +42,8 @@ The nominal annual interest rate.
   - effect_rate ≤ 0.
   - npery < 1.
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 | **Data** | **Description**                        |

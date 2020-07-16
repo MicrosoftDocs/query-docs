@@ -40,6 +40,8 @@ A decimal number.
 - If you do not want to include logical values and text representations of numbers in a reference as part of the calculation, use the AVERAGE function.  
   
 - Whenever there are no rows to aggregate, the function returns a blank.  However, if there are rows, but none of them meet the specified criteria, the function returns 0. Microsoft Excel also returns a zero if no rows are found that meet the conditions.  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
 ## Example
 

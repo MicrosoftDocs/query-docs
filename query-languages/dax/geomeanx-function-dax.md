@@ -33,10 +33,12 @@ A decimal number.
   
 ## Remarks
 
-The GEOMEANX function takes as its first argument a table, or an expression that returns a table. The second argument is a column that contains the numbers for which you want to compute the geometric mean, or an expression that evaluates to a column.  
+- The GEOMEANX function takes as its first argument a table, or an expression that returns a table. The second argument is a column that contains the numbers for which you want to compute the geometric mean, or an expression that evaluates to a column.  
   
-Only the numbers in the column are counted. Blanks, logical values, and text are ignored.  
-  
+- Only the numbers in the column are counted. Blanks, logical values, and text are ignored.  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following computes the geometric mean of the ReturnPct column in the Investments table:  

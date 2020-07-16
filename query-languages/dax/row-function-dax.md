@@ -31,7 +31,9 @@ A single row table
   
 ## Remarks
 
-Arguments must always come in pairs of *name* and *expression*.  
+- Arguments must always come in pairs of *name* and *expression*.
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]  
   
 ## Example
 

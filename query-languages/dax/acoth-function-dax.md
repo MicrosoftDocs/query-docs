@@ -27,3 +27,7 @@ ACOTH(number)
 ## Return value
 
 A single decimal value.  
+
+## Remarks
+
+[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]

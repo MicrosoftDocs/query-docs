@@ -30,8 +30,10 @@ HASONEVALUE(<columnName>)
   
 ## Remarks  
   
-An equivalent expression for HASONEVALUE() is `COUNTROWS(VALUES(<columnName>)) = 1`.  
-  
+- An equivalent expression for HASONEVALUE() is `COUNTROWS(VALUES(<columnName>)) = 1`.  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following measure formula verifies if the context is being sliced by one value in order to estimate a percentage against a predefined scenario; in this case you want to compare Reseller Sales against sales in 2007, then you need to know if the context is filtered by single years. Also, if the comparison is meaningless you want to return BLANK.

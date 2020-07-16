@@ -51,7 +51,9 @@ A table with the top N rows of *table* or an empty table if *n_value* is 0 (zero
 - If n_value is 0 (zero) or less then TOPN returns an empty table.  
   
 - TOPN does not guarantee any sort order for the results.  
-  
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Example
 
 The following sample creates a measure with the sales of the top 10 sold products.  

@@ -51,6 +51,8 @@ The interest rate per period.
   - nper ≤ 0.
   - RATE does not converge to within 0.0000001 after 20 iterations
 
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
 ## Examples
 
 | **Data** | **Description**    |
