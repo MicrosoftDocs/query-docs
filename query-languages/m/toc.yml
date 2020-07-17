@@ -139,8 +139,6 @@
               href: excel-workbook.md
             - name: Exchange.Contents
               href: exchange-contents.md
-            - name: Facebook.Graph
-              href: facebook-graph.md
             - name: File.Contents
               href: file-contents.md
             - name: Folder.Contents
@@ -1005,6 +1003,18 @@
           items: 
             - name: Record functions overview
               href: record-functions.md
+            - name: Geography.FromWellKnownText
+              href: geography-fromwellknowntext.md
+            - name: Geography.ToWellKnownText
+              href: geography-towellknowntext.md
+            - name: GeographyPoint.From
+              href: geographypoint-from.md
+            - name: Geometry.FromWellKnownText
+              href: geometry-fromwellknowntext.md
+            - name: Geometry.ToWellKnownText
+              href: geometry-towellknowntext.md
+            - name: GeometryPoint.From
+              href: geometrypoint-from.md
             - name: MissingField.Error
               href: missingfield-error.md
             - name: MissingField.Ignore
@@ -1147,6 +1157,8 @@
               href: rowexpression-row.md
             - name: Table.AddColumn
               href: table-addcolumn.md
+            - name: Table.AddFuzzyClusterColumn
+              href: table-addfuzzyclustercolumn.md
             - name: Table.AddIndexColumn
               href: table-addindexcolumn.md
             - name: Table.AddJoinColumn

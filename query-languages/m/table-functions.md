@@ -240,7 +240,8 @@ Orders = Table.FromRecords({
   
 |Function|Description|  
 |------------|---------------|  
-|[Table.AddColumn](table-addcolumn.md)|Adds a column named newColumnName to a table.|  
+|[Table.AddColumn](table-addcolumn.md)|Adds a column named newColumnName to a table.|
+|[Table.AddFuzzyClusterColumn](table-addfuzzyclustercolumn.md)| Adds a new column with representative values obtained by fuzzy grouping values of the specified column in the table.|
 |[Table.AddIndexColumn](table-addindexcolumn.md)|Returns a table with a new column with a specific name that, for each row, contains an index of the row in the table.|  
 |[Table.AddJoinColumn](table-addjoincolumn.md)|Performs a nested join between table1 and table2 from specific columns and produces the join result as a newColumnName column for each row of table1.|  
 |[Table.AddKey](table-addkey.md)|Add a key to table.|  
