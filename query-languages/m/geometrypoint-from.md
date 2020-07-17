@@ -17,4 +17,4 @@ GeometryPoint.From(<b>x</b> as number, <b>y</b> as number, optional <b>z</b> as 
 </pre>
 
 ## About
-Creates a record structure representing a geometry point from its constituent parts, such as X coordinate, Y coordinate, and if present, Z coordinate and measure (M). An optional spatial reference identifier (SRID) can be given if different from the default value (0).
+Creates a record representing a geometric point from its constituent parts, such as X coordinate, Y coordinate, and if present, Z coordinate and measure (M). An optional spatial reference identifier (SRID) can be given if different from the default value (0).

@@ -17,4 +17,5 @@ GeographyPoint.From(<b>longitude</b> as number, <b>latitude</b> as number, optio
 </pre>
 
 ## About
-Creates a record structure representing a geography point from its constituent parts, such as longitude, latitude, and if present, elevation (Z) and measure (M). An optional spatial reference identifier (SRID) can be given if different from the default value (4326).
+Creates a record representing a geographic point from its constituent parts, such as longitude, latitude, and if present, elevation (Z) and measure (M). An optional spatial reference identifier (SRID) can be given if different from the default value (4326).
+

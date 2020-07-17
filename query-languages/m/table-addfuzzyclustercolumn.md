@@ -64,15 +64,15 @@ Table.AddFuzzyClusterColumn(
 
 ```powerquery-m
 Table.FromRecords(
-        {
-            [EmployeeID = 1, Location = "Seattle", Location_Cleaned = "Seattle"],
-            [EmployeeID = 2, Location = "seattl", Location_Cleaned = "Seattle"],
-            [EmployeeID = 3, Location = "Vancouver", Location_Cleaned = "Vancouver"],
-            [EmployeeID = 4, Location = "Seatle", Location_Cleaned = "Seattle"],
-            [EmployeeID = 5, Location = "vancover", Location_Cleaned = "Vancouver"],
-            [EmployeeID = 6, Location = "Seattle", Location_Cleaned = "Seattle"],
-            [EmployeeID = 7, Location = "Vancouver", Location_Cleaned = "Vancouver"]
-        },
-        type table [EmployeeID = nullable number, Location = nullable text, Location_Cleaned = nullable text]
+    {
+        [EmployeeID = 1, Location = "Seattle", Location_Cleaned = "Seattle"],
+        [EmployeeID = 2, Location = "seattl", Location_Cleaned = "Seattle"],
+        [EmployeeID = 3, Location = "Vancouver", Location_Cleaned = "Vancouver"],
+        [EmployeeID = 4, Location = "Seatle", Location_Cleaned = "Seattle"],
+        [EmployeeID = 5, Location = "vancover", Location_Cleaned = "Vancouver"],
+        [EmployeeID = 6, Location = "Seattle", Location_Cleaned = "Seattle"],
+        [EmployeeID = 7, Location = "Vancouver", Location_Cleaned = "Vancouver"]
+    },
+    type table [EmployeeID = nullable number, Location = nullable text, Location_Cleaned = nullable text]
 )
 ```
