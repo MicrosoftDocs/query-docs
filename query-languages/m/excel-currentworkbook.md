@@ -1,6 +1,6 @@
 ---
 title: "Excel.CurrentWorkbook | Microsoft Docs"
-ms.date: 7/29/2019
+ms.date: 7/16/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,5 +18,5 @@ Excel.CurrentWorkbook() as table
 </pre>
   
 ## About  
-Returns the tables in the current Excel workbook  
+Returns the contents of the current Excel workbook. 
 

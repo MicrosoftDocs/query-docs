@@ -26,6 +26,12 @@ These functions create and manipulate record values.
   
 |Function|Description|  
 |------------|---------------|  
+|[**Geography.FromWellKnownText**](geography-fromwellknowntext.md) | Translates text representing a geographic value in Well-Known Text (WKT) format into a structured record.|
+|[**Geography.ToWellKnownText**](geography-towellknowntext.md) | Translates a structured geographic point value into its Well-Known Text (WKT) representation.|
+|[**GeographyPoint.From**](geographypoint-from.md) | Creates a record structure representing a geographic point from parts.|
+|[**Geometry.FromWellKnownText**](geometry-fromwellknowntext.md) | Translates text representing a geometric value in Well-Known Text (WKT) format into a structured record.|
+|[**Geometry.ToWellKnownText**](geometry-towellknowntext.md) | Translates a structured geometric point value into its Well-Known Text (WKT) representation.|
+|[**GeometryPoint.From**](geometrypoint-from.md) | Creates a record structure representing a geometric point from parts.|
 |[Record.AddField](record-addfield.md)|Adds a field from a field name and value.|  
 |[Record.Combine](record-combine.md)|Combines the records in a list.|  
 |[Record.RemoveFields](record-removefields.md)|Returns a new record that reorders the given fields with respect to each other. Any fields not specified remain in their original locations.|
