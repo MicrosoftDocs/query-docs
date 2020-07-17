@@ -281,8 +281,6 @@
               href: if-function-dax.md
             - name: IFERROR
               href: iferror-function-dax.md
-            - name: IN
-              href: in-function.md
             - name: NOT
               href: not-function-dax.md
             - name: OR
