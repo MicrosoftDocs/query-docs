@@ -57,7 +57,6 @@ These functions access data and return table values. Most of these functions ret
 |[Excel.CurrentWorkbook](excel-currentworkbook.md)|Returns the tables in the current Excel Workbook.|
 |[Excel.Workbook](excel-workbook.md)|Returns a table representing sheets in the given excel workbook.|  
 |[Exchange.Contents](exchange-contents.md)|Returns a table of contents from a Microsoft Exchange account.| 
-|[Facebook.Graph](facebook-graph.md)|Returns a record containing content from the Facebook graph.|  
 |[File.Contents](file-contents.md)|Returns the binary contents of the file located at a path.|  
 |[Folder.Contents](folder-contents.md)|Returns a table containing the properties and contents of the files and folders found at path.|  
 |[Folder.Files](folder-files.md)|Returns a table containing a row for each file found at a folder path, and subfolders. Each row contains properties of the folder or file and a link to its content.|  

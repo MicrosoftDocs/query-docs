@@ -1,6 +1,6 @@
 ---
 title: "Excel.Workbook | Microsoft Docs"
-ms.date: 7/29/2019
+ms.date: 7/16/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,4 +18,4 @@ Excel.Workbook(<b>workbook</b> as binary, optional <b>useHeaders</b> as nullable
 </pre>
 
 ## About  
-Returns a record of Sheets from the Excel workbook.  
+Returns the contents of the Excel workbook.  
