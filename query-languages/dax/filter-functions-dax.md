@@ -23,14 +23,8 @@ The filter and value functions in DAX are some of the most complex and powerful,
 |[ALLSELECTED](allselected-function-dax.md)      |  Removes context filters from columns and rows in the current query, while retaining all other context filters or explicit filters.        |
 |[CALCULATE](calculate-function-dax.md)      |  Evaluates an expression in a modified filter context.      |
 |[CALCULATETABLE](calculatetable-function-dax.md)     |  Evaluates a table expression in a modified filter context.         |
-|[EARLIER](earlier-function-dax.md)      |  Returns the current value of the specified column in an outer evaluation pass of the mentioned column.       |
-|[EARLIEST](earliest-function-dax.md)     |  Returns the current value of the specified column in an outer evaluation pass of the specified column.        |
 |[FILTER](filter-function-dax.md)      |  Returns a table that represents a subset of another table or expression.        |
-|[HASONEFILTER](hasonefilter-function-dax.md)      |  Returns TRUE when the number of directly filtered values on *columnName* is one; otherwise returns FALSE.        |
-|[HASONEVALUE](hasonevalue-function-dax.md)     |  Returns TRUE when the context for *columnName* has been filtered down to one distinct value only. Otherwise is FALSE.        |
-|[ISCROSSFILTERED](iscrossfiltered-function-dax.md)      |  Returns TRUE when *columnName* or another column in the same or related table is being filtered.         |
-|[ISFILTERED](isfiltered-function-dax.md)     |  Returns TRUE when *columnName* is being filtered directly.       |
 |[KEEPFILTERS](keepfilters-function-dax.md)      | Modifies how filters are applied while evaluating a CALCULATE or CALCULATETABLE function.         |
+|[LOOKUPVALUE](lookupvalue-function-dax.md)    | Returns the value for the row that meets all criteria specified by search conditions. The function can apply one or more search conditions.        |
 |[REMOVEFILTERS](removefilters-function-dax.md)|Clears filters from the specified tables or columns.|
 |[SELECTEDVALUE](selectedvalue-function.md)     |  Returns the value when the context for columnName has been filtered down to one distinct value only. Otherwise returns alternateResult.         |
-

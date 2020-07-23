@@ -16,12 +16,9 @@ Data Analysis Expressions (DAX) includes a set of text functions based on the li
 
 |Function  |Description  |
 |---------|---------|
-|[BLANK](blank-function-dax.md)       |  Returns a blank.       |
-|[CODE](code-function-dax.md)     |   Returns a numeric code for the first character in a text string.       |
+|[COMBINEVALUES](combinevalues-function-dax.md)     |   Joins two or more text strings into one text string.       |
 |[CONCATENATE](concatenate-function-dax.md)     | Joins two text strings into one text string.         |
 |[CONCATENATEX](concatenatex-function-dax.md)      | Concatenates the result of an expression evaluated for each row in a table.          |
-|[CONTAINSSTRING](containsstring-function-dax.md)    |  Returns TRUE or FALSE indicating whether one string contains another string.         |
-|[CONTAINSSTRINGEXACT](containsstringexact-function-dax.md)     |  Returns TRUE or FALSE indicating whether one string contains another string.       |
 |[EXACT](exact-function-dax.md)      | Compares two text strings and returns TRUE if they are exactly the same, FALSE otherwise.        |
 |[FIND](find-function-dax.md)     |  Returns the starting position of one text string within another text string.       |
 |[FIXED](fixed-function-dax.md)     | Rounds a number to the specified number of decimals and returns the result as text.        |

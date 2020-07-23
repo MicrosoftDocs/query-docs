@@ -69,8 +69,6 @@
           items: 
             - name: Filter functions overview
               href: filter-functions-dax.md
-            - name: ADDMISSINGITEMS
-              href: addmissingitems-function-dax.md
             - name: ALL
               href: all-function-dax.md
             - name: ALLCROSSFILTERED
@@ -85,12 +83,6 @@
               href: calculate-function-dax.md
             - name: CALCULATETABLE
               href: calculatetable-function-dax.md
-            - name: CROSSFILTER
-              href: crossfilter-function.md
-            - name: DISTINCT (column)
-              href: distinct-function-dax.md
-            - name: DISTINCT (table)
-              href: distinct-table-function-dax.md
             - name: EARLIER
               href: earlier-function-dax.md
             - name: EARLIEST
@@ -99,30 +91,14 @@
               href: filter-function-dax.md
             - name: FILTERS
               href: filters-function-dax.md
-            - name: HASONEFILTER
-              href: hasonefilter-function-dax.md
-            - name: HASONEVALUE
-              href: hasonevalue-function-dax.md
-            - name: ISCROSSFILTERED
-              href: iscrossfiltered-function-dax.md
-            - name: ISFILTERED
-              href: isfiltered-function-dax.md
             - name: KEEPFILTERS
               href: keepfilters-function-dax.md
-            - name: RELATED
-              href: related-function-dax.md
-            - name: RELATEDTABLE
-              href: relatedtable-function-dax.md
+            - name: LOOKUPVALUE
+              href: lookupvalue-function-dax.md
             - name: REMOVEFILTERS
               href: removefilters-function-dax.md
             - name: SELECTEDVALUE
               href: selectedvalue-function.md
-            - name: SUBSTITUTEWITHINDEX
-              href: substitutewithindex-function-dax.md
-            - name: USERELATIONSHIP
-              href: userelationship-function-dax.md
-            - name: VALUES
-              href: values-function-dax.md
         - name: Financial functions
           items:
             - name: Financial functions overview
@@ -235,16 +211,30 @@
               href: information-functions-dax.md
             - name: CONTAINS
               href: contains-function-dax.md
+            - name: CONTAINSROW function
+              href: containsrow-function.md
+            - name: CONTAINSSTRING
+              href: containsstring-function-dax.md
+            - name: CONTAINSSTRINGEXACT
+              href: containsstringexact-function-dax.md
             - name: CUSTOMDATA
               href: customdata-function-dax.md
-            - name: IN Operator / CONTAINSROW function
-              href: in-operator-containsrow-function.md
+            - name: HASONEFILTER
+              href: hasonefilter-function-dax.md
+            - name: HASONEVALUE
+              href: hasonevalue-function-dax.md
             - name: ISBLANK
               href: isblank-function-dax.md
+            - name: ISCROSSFILTERED
+              href: iscrossfiltered-function-dax.md
+            - name: ISEMPTY
+              href: isempty-function-dax.md
             - name: ISERROR
               href: iserror-function-dax.md
             - name: ISEVEN
               href: iseven-function-dax.md
+            - name: ISFILTERED
+              href: isfiltered-function-dax.md
             - name: ISINSCOPE
               href: isinscope-function-dax.md
             - name: ISLOGICAL
@@ -257,10 +247,16 @@
               href: isodd-function-dax.md
             - name: ISONORAFTER
               href: isonorafter-function-dax.md
+            - name: ISSELECTEDMEASURE
+              href: isselectedmeasure-function-dax.md
             - name: ISTEXT
               href: istext-function-dax.md
-            - name: LOOKUPVALUE
-              href: lookupvalue-function-dax.md
+            - name: SELECTEDMEASURE
+              href: selectedmeasure-function-dax.md
+            - name: SELECTEDMEASUREFORMATSTRING
+              href: selectedmeasureformatstring-function-dax.md
+            - name: SELECTEDMEASURENAME
+              href: selectedmeasurename-function-dax.md
             - name: USERNAME
               href: username-function-dax.md
             - name: USEROBJECTID
@@ -317,6 +313,8 @@
               href: combin-function-dax.md
             - name: COMBINA
               href: combina-function-dax.md
+            - name: CONVERT
+              href: convert-function-dax.md
             - name: COS
               href: cos-function-dax.md
             - name: COSH
@@ -391,47 +389,15 @@
           items: 
             - name: Other functions overview
               href: other-functions-dax.md
-            - name: CONVERT
-              href: convert-function-dax.md
-            - name: DATATABLE
-              href: datatable-function.md
+            - name: BLANK
+              href: blank-function-dax.md
             - name: ERROR
               href: error-function.md
-            - name: EXCEPT
-              href: except-function-dax.md
-            - name: GENERATESERIES
-              href: generateseries-function.md
-            - name: GROUPBY
-              href: groupby-function-dax.md
-            - name: INTERSECT
-              href: intersect-function-dax.md
-            - name: ISEMPTY
-              href: isempty-function-dax.md
-            - name: ISSELECTEDMEASURE
-              href: isselectedmeasure-function-dax.md
-            - name: NATURALINNERJOIN
-              href: naturalinnerjoin-function-dax.md
-            - name: NATURALLEFTOUTERJOIN
-              href: naturalleftouterjoin-function-dax.md
-            - name: SELECTEDMEASURE
-              href: selectedmeasure-function-dax.md
-            - name: SELECTEDMEASUREFORMATSTRING
-              href: selectedmeasureformatstring-function-dax.md
-            - name: SELECTEDMEASURENAME
-              href: selectedmeasurename-function-dax.md
-            - name: SUMMARIZECOLUMNS
-              href: summarizecolumns-function-dax.md
-            - name: Table Constructor
-              href: table-constructor.md
-            - name: TREATAS
-              href: treatas-function.md
-            - name: UNION
-              href: union-function-dax.md
         - name: Parent and child functions
           items: 
             - name: Parent and child functions overview
               href: parent-and-child-functions-dax.md
-            - name: Understanding functions for Parent-Child Hierarchies
+            - name: Understanding functions for parent-child hierarchies
               href: understanding-functions-for-parent-child-hierarchies-in-dax.md
             - name: PATH
               href: path-function-dax.md
@@ -443,12 +409,20 @@
               href: pathitemreverse-function-dax.md
             - name: PATHLENGTH
               href: pathlength-function-dax.md
-        - name: Statistical functions
-          items: 
+          - name: Relationship functions
+            items:
+            - name: CROSSFILTER
+              href: crossfilter-function.md
+            - name: RELATED
+              href: related-function-dax.md
+            - name: RELATEDTABLE
+              href: relatedtable-function-dax.md
+            - name: USERELATIONSHIP
+              href: userelationship-function-dax.md
+          - name: Statistical functions
+            items: 
             - name: Statistical functions overview
               href: statistical-functions-dax.md
-            - name: ADDCOLUMNS
-              href: addcolumns-function-dax.md
             - name: APPROXIMATEDISTINCTCOUNT
               href: approximate-distinctcount-function-dax.md
             - name: AVERAGE
@@ -489,16 +463,10 @@
               href: countrows-function-dax.md
             - name: COUNTX
               href: countx-function-dax.md
-            - name: CROSSJOIN 
-              href: crossjoin-function-dax.md
             - name: DISTINCTCOUNT
               href: distinctcount-function-dax.md
             - name: EXPON.DIST
               href: expon-dist-function-dax.md
-            - name: GENERATE 
-              href: generate-function-dax.md
-            - name: GENERATEALL
-              href: generateall-function-dax.md
             - name: GEOMEAN
               href: geomean-function-dax.md
             - name: GEOMEANX
@@ -543,12 +511,8 @@
               href: rank-eq-function-dax.md
             - name: RANKX
               href: rankx-function-dax.md
-            - name: ROW
-              href: row-function-dax.md
             - name: SAMPLE
               href: sample-function-dax.md
-            - name: SELECTCOLUMNS
-              href: selectcolumns-function-dax.md
             - name: SIN
               href: sin-function-dax.md
             - name: SINH
@@ -563,8 +527,6 @@
               href: stdevx-p-function-dax.md
             - name: SQRTPI
               href: sqrtpi-function-dax.md
-            - name: SUMMARIZE
-              href: summarize-function-dax.md
             - name: T.DIST
               href: t-dist-dax.md
             - name: T.DIST.2T
@@ -579,8 +541,6 @@
               href: tan-function-dax.md
             - name: TANH
               href: tanh-function-dax.md
-            - name: TOPN
-              href: topn-function-dax.md
             - name: VAR.S
               href: var-s-function-dax.md
             - name: VAR.P
@@ -589,14 +549,60 @@
               href: varx-s-function-dax.md
             - name: VARX.P
               href: varx-p-function-dax.md
+        - name: Table functions
+          items:
+            - name: ADDCOLUMNS
+              href: addcolumns-function-dax.md
+            - name: ADDMISSINGITEMS
+              href: addmissingitems-function-dax.md
+            - name: CROSSJOIN 
+              href: crossjoin-function-dax.md
+            - name: DATATABLE
+              href: datatable-function.md
+            - name: DISTINCT (column)
+              href: distinct-function-dax.md
+            - name: DISTINCT (table)
+              href: distinct-table-function-dax.md
+            - name: EXCEPT
+              href: except-function-dax.md
+            - name: GENERATE 
+              href: generate-function-dax.md
+            - name: GENERATEALL
+              href: generateall-function-dax.md
+            - name: GENERATESERIES
+              href: generateseries-function.md
+            - name: GROUPBY
+              href: groupby-function-dax.md
+            - name: INTERSECT
+              href: intersect-function-dax.md
+            - name: NATURALINNERJOIN
+              href: naturalinnerjoin-function-dax.md
+            - name: NATURALLEFTOUTERJOIN
+              href: naturalleftouterjoin-function-dax.md
+            - name: ROW
+              href: row-function-dax.md
+            - name: SELECTCOLUMNS
+              href: selectcolumns-function-dax.md
+            - name: SUBSTITUTEWITHINDEX
+              href: substitutewithindex-function-dax.md
+            - name: SUMMARIZE
+              href: summarize-function-dax.md
+            - name: SUMMARIZECOLUMNS
+              href: summarizecolumns-function-dax.md
+            - name: Table constructor
+              href: table-constructor.md
+            - name: TOPN
+              href: topn-function-dax.md
+            - name: TREATAS
+              href: treatas-function.md
+            - name: UNION
+              href: union-function-dax.md
+            - name: VALUES
+              href: values-function-dax.md
         - name: Text functions
           items: 
             - name: Text functions overview
               href: text-functions-dax.md
-            - name: BLANK
-              href: blank-function-dax.md
-            - name: CODE
-              href: code-function-dax.md
             - name: COMBINEVALUES
               href: combinevalues-function-dax.md
             - name: CONCATENATE
