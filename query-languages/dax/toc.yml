@@ -212,7 +212,7 @@
             - name: CONTAINS
               href: contains-function-dax.md
             - name: CONTAINSROW function
-              href: containsrow-function.md
+              href: containsrow-function-dax.md
             - name: CONTAINSSTRING
               href: containsstring-function-dax.md
             - name: CONTAINSSTRINGEXACT
@@ -409,8 +409,8 @@
               href: pathitemreverse-function-dax.md
             - name: PATHLENGTH
               href: pathlength-function-dax.md
-          - name: Relationship functions
-            items:
+        - name: Relationship functions
+          items:
             - name: CROSSFILTER
               href: crossfilter-function.md
             - name: RELATED
@@ -419,8 +419,8 @@
               href: relatedtable-function-dax.md
             - name: USERELATIONSHIP
               href: userelationship-function-dax.md
-          - name: Statistical functions
-            items: 
+        - name: Statistical functions
+          items: 
             - name: Statistical functions overview
               href: statistical-functions-dax.md
             - name: APPROXIMATEDISTINCTCOUNT

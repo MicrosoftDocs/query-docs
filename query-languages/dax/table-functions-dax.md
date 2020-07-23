@@ -19,18 +19,16 @@ Functions in this category work with tables.
 |[ADDCOLUMNS](addcolumns-function-dax.md)      |     Adds calculated columns to the given table or table expression.          |
 |[ADDMISSINGITEMS](addmissingitems-function-dax.md)       |     Adds combinations of items from multiple columns to a table if they do not already exist.    |
 |[CROSSJOIN](crossjoin-function-dax.md)      |  Returns a table that contains the Cartesian product of all rows from all tables in the arguments.      |
-|[CURRENTGROUP](.md)       |         |
 |[DATATABLE](datatable-function.md)    |  Provides a mechanism for declaring an inline set of data values.        |
 |[DETAILROWS](.md)       |         |
-|[DISTINCT (column)](distinct-function-dax.md)      |  Returns a one-column table that contains the distinct values from the specified column.       |
-|[DISTINCT (table)](distinct-table-function-dax.md)      |  Returns a table by removing duplicate rows from another table or expression.       |
+|[DISTINCT column](distinct-function-dax.md)      |  Returns a one-column table that contains the distinct values from the specified column.       |
+|[DISTINCT table](distinct-table-function-dax.md)      |  Returns a table by removing duplicate rows from another table or expression.       |
 |[EXCEPT](except-function-dax.md)     |  Returns the rows of one table which do not appear in another table.       |
 |[FILTERS](filters-function-dax.md)     |  Returns a table of values directly applied as filters to *columnName*.        |
 |[GENERATE](generate-function-dax.md)      |  Returns a table with the Cartesian product between each row in *table1* and the table that results from evaluating *table2* in the context of the current row from *table1*.       |
 |[GENERATEALL](generateall-function-dax.md)     |  Returns a table with the Cartesian product between each row in *table1* and the table that results from evaluating *table2* in the context of the current row from *table1*.         |
 |[GENERATESERIES](generateseries-function.md)     | Returns a single column table containing the values of an arithmetic series.        |
 |[GROUPBY](groupby-function-dax.md)      |  Similar to the SUMMARIZE function, GROUPBY does not do an implicit CALCULATE for any extension columns that it adds.       |
-|[IGNORE](.md)       |         |
 |[INTERSECT](intersect-function-dax.md)       |   Returns the row intersection of two tables, retaining duplicates.       |
 |[NATURALINNERJOIN](naturalinnerjoin-function-dax.md)     |  Performs an inner join of a table with another table.        |
 |[NATURALLEFTOUTERJOIN](naturalleftouterjoin-function-dax.md)     |  Performs an inner join of a table with another table.       |
