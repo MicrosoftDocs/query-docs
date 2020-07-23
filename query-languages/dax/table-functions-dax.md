@@ -34,10 +34,6 @@ Functions in this category work with tables.
 |[INTERSECT](intersect-function-dax.md)       |   Returns the row intersection of two tables, retaining duplicates.       |
 |[NATURALINNERJOIN](naturalinnerjoin-function-dax.md)     |  Performs an inner join of a table with another table.        |
 |[NATURALLEFTOUTERJOIN](naturalleftouterjoin-function-dax.md)     |  Performs an inner join of a table with another table.       |
-|[ROLLUP](.md)       |         |
-|[ROLLUPADDISSUBTOTAL](.md)      |         |
-|[ROLLUPGROUP](.md)       |         |
-|[ROLLUPISSUBTOTAL](.md)      |         |
 |[ROW](row-function-dax.md)     |  Returns a table with a single row containing values that result from the expressions given to each column.         |
 |[SELECTCOLUMNS](selectcolumns-function-dax.md)    |  Adds calculated columns to the given table or table expression.         |
 |[SUBSTITUTEWITHINDEX](substitutewithindex-function-dax.md)      |  Returns a table which represents a left semijoin of the two tables supplied as arguments.        |

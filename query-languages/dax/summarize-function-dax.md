@@ -77,29 +77,33 @@ The following table shows a preview of the data as it would be received by any f
 |2006|Accessories|86612.7463|1061.4872|  
 |2007|Accessories|275794.8403|4756.6546|  
   
-## Advanced SUMMARIZE options  
-  
-### SUMMARIZE with ROLLUP
+## With ROLLUP
 
 The addition of the ROLLUP() syntax modifies the behavior of the SUMMARIZE function by adding roll-up rows to the result on the groupBy_columnName columns.  
-  
+
+### Syntax for ROLLUP
+
+```dax
+ROLLUP ( <groupBy_columnName> [, <groupBy_columnName> [, … ] ] )
+```
+
+With SUMMARIZE,
+
 ```dax
 SUMMARIZE(<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, ROLLUP(<groupBy_columnName>[,< groupBy_columnName>…])][, <name>, <expression>]…)  
 ```
   
-#### ROLLUP parameters
+#### Parameters for ROLLUP
 
 |Term|Definition|  
 |--------|--------------|  
 |groupBy_columnName |The qualified name of an existing column to be used to create summary groups based on the values found in it. This parameter cannot be an expression. |
 
-**Note**: All other SUMMARIZE parameters are explained before and not repeated here for brevity.  
-  
-#### Remarks
-  
-The columns mentioned in the ROLLUP expression cannot be referenced as part of a *groupBy_columnName* columns.  
-  
-#### Example
+### Return value for ROLLUP
+
+The function does not return a value. It only specifies the set of columns to be subtotaled.  
+
+### Example with ROLLUP
 
 The following example adds roll-up rows to the Group-By columns of the SUMMARIZE function call.  
   
@@ -137,10 +141,32 @@ The following table shows a preview of the data as it would be received by any f
 |2007||30543780.84|297538.0745|  
 |||76494758.25|527507.9262|  
   
-### ROLLUPGROUP
+## With ROLLUPGROUP
 
 ROLLUPGROUP() can be used to calculate groups of subtotals. If used in-place of ROLLUP, ROLLUPGROUP will yield the same result by adding roll-up rows to the result on the groupBy_columnName columns. However, the addition of ROLLUPGROUP() inside a ROLLUP syntax can be used to prevent partial subtotals in roll-up rows.  
-  
+
+### Syntax for ROLLUPGROUP
+
+```dax
+ROLLUPGROUP ( <groupBy_columnName> [, <groupBy_columnName> [, … ] ] )
+```
+
+#### Parameters for ROLLUPGROUP
+
+|Term|Definition|  
+|--------|--------------|  
+|groupBy_columnName |The qualified name of an existing column to be used to create summary groups based on the values found in it. This parameter cannot be an expression. |
+
+### Return value for ROLLUPGROUP
+
+The function does not return a value. It marks a set of columns to be grouped during subtotaling by ROLLUPADDISSUBTOTAL.  
+
+### Remarks for ROLLUPGROUP
+
+ROLLUPGROUP can only be used as an groupBy_columnName argument to ROLLUPADDISSUBTOTAL or the SUMMARIZE function. 
+
+### Example with ROLLUPGROUP
+
 The following example shows only the grand total of all years and categories without the subtotal of each year with all categories:  
   
 ```dax
@@ -173,31 +199,39 @@ The following table shows a preview of the data as it would be received by any f
 |2007|Accessories|275794.8403|4756.6546|  
 |||76494758.25|527507.9262|  
   
-### SUMMARIZE with ISSUBTOTAL
+## With ISSUBTOTAL
 
-Enables the user to create another column, in the Summarize function, that returns True if the row contains sub-total values for the column given as argument to ISSUBTOTAL, otherwise returns False.  
-  
+ISSUBTOTAL() enables you to create another column, in the SUMMARIZE function, that returns True if the row contains sub-total values for the column given as argument to ISSUBTOTAL, otherwise returns False.  
+
+### Syntax for ISSUBTOTAL
+
+```dax
+ISSUBTOTAL(<columnName>)
+```
+
+With SUMMARIZE,
+
 ```dax
 SUMMARIZE(<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, ROLLUP(<groupBy_columnName>[,< groupBy_columnName>…])][, <name>, {<expression>|ISSUBTOTAL(<columnName>)}]…)  
 ```
   
-#### ISSUBTOTAL parameters
+#### Parameters for ISSUBTOTAL
 
 |Term|Definition|  
 |--------|--------------|
 |columnName  |The name of any column in table of the SUMMARIZE function or any column in a related table to table.  |
 
-#### Return value
+### Return value for ISSUBTOTAL
 
 A **True** value if the row contains a sub-total value for the column given as argument, otherwise returns **False**  
   
-#### Remarks
+### Remarks for ISSUBTOTAL
   
 - ISSUBTOTAL can only be used in the expression part of a SUMMARIZE function.  
   
 - ISSUBTOTAL must be preceded by a matching *name* column.  
   
-#### Example
+### Example with ISSUBTOTAL
 
 The following sample generates an ISSUBTOTAL() column for each of the ROLLUP() columns in the given SUMMARIZE() function call.  
   
@@ -238,3 +272,7 @@ The following table shows a preview of the data as it would be received by any f
 |FALSE|TRUE|2006||22871907.85|184419.1335|  
 |FALSE|TRUE|2007||30543780.84|297538.0745|  
 |TRUE|TRUE|||76494758.25|527507.9262|  
+
+## See also
+
+[SUMMARIZECOLUMNS](summarizecolumns-function-dax.md)
