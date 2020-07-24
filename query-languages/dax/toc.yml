@@ -411,6 +411,8 @@
               href: pathlength-function-dax.md
         - name: Relationship functions
           items:
+            - name:
+              href: relationship-functions-dax.md
             - name: CROSSFILTER
               href: crossfilter-function.md
             - name: RELATED
@@ -551,6 +553,8 @@
               href: varx-p-function-dax.md
         - name: Table functions
           items:
+            - name: Table functions overview
+              href: table-functions-dax.md
             - name: ADDCOLUMNS
               href: addcolumns-function-dax.md
             - name: ADDMISSINGITEMS
