@@ -411,7 +411,7 @@
               href: pathlength-function-dax.md
         - name: Relationship functions
           items:
-            - name:
+            - name: Relationship functions
               href: relationship-functions-dax.md
             - name: CROSSFILTER
               href: crossfilter-function.md
