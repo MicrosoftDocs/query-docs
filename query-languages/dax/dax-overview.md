@@ -455,8 +455,7 @@ The [Power Pivot in Excel](https://support.office.com/article/power-pivot-powerf
 
 ![Visual Studio](media/dax-overview-vs.png)
 
-[SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) (SSDT) is an essential tool for creating and deploying Analysis Services data models. The model designer includes a DAX editor for creating DAX calculation formulas.  
-[Analysis Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) extension (VSIX) includes the same functionality in SSDT to create Analysis Services modeling projects. Do not install packages if SSDT is already installed.
+Visual Studio with [Analysis Services projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) extension (VSIX) is used to create Analysis Services model projects. Tabular model designer, installed with the projects extension includes a DAX editor.
 
 ### SQL Server Management Studio
 
