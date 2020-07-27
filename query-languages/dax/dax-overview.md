@@ -2,7 +2,7 @@
 title: "DAX overview | Microsoft Docs"
 description: Describes the Data Analysis Expressions (DAX) language.
 ms.service: powerbi 
-ms.date: 07/13/2020
+ms.date: 07/27/2020
 ms.reviewer: owend
 ms.topic: overview
 ms.article: overview
@@ -476,9 +476,7 @@ When learning DAX, it's best to use the application you'll be using to create yo
 
 [Videos](dax-learn-videos.md)
 
-[DAX basics in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics)
-
-[QuickStart: Learn DAX Basics in 30 Minutes (Power Pivot in Excel)](https://support.office.com/article/QuickStart-Learn-DAX-Basics-in-30-Minutes-51744643-C2A5-436A-BDF6-C895762BEC1A)
+[Use DAX in Power BI Desktop](https://docs.microsoft.com/learn/paths/dax-power-bi/) path in Microsoft Learn.
 
 The [Definitive Guide to DAX](https://www.sqlbi.com/books/the-definitive-guide-to-dax/) by Alberto Ferrari and Marco Russo (Microsoft Press). This extensive guide provides basics to innovative high-performance techniques for beginning data modelers and BI professionals.
 

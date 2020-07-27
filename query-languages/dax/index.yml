@@ -37,8 +37,15 @@ landingContent:
         links:
           - text: DAX overview
             url: dax-overview.md
+      - linkListType: video
+        links:
           - text: Videos
             url: dax-learn-videos.md
+      - linkListType: learn
+        links:
+          - text: Use DAX in Power BI Desktop
+            url: https://docs.microsoft.com/learn/paths/dax-power-bi/
+      
 
   # Card
   - title: Understand
