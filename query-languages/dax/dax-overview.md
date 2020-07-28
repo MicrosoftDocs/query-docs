@@ -234,16 +234,16 @@ Text functions in DAX are very similar to their counterparts in Excel. You can r
 
 The time intelligence functions provided in DAX let you create calculations that use built-in knowledge about calendars and dates. By using time and date ranges in combination with aggregations or calculations, you can build meaningful comparisons across comparable time periods for sales, inventory, and so on. To learn more, see [Time intelligence functions (DAX)](time-intelligence-functions-dax.md).  
   
-### Table functions  
+### Table manipulation functions  
 
-These functions return a table. To learn more, see [Table functions].
+These functions help create new or manipulate existing tables, for example, adding a column by using ADDCOLUMNS, or performing a *group by* using the GROUPBY function. To learn more, see [Table manipulation functions](table-manipulation-functions.md).
   
 ## Variables
 
 You can create variables within an expression by using [VAR](https://docs.microsoft.com/dax/var-dax). VAR is technically not a function, it's a keyword to store the result of an expression as a named variable. That variable can then be passed as an argument to other measure expressions. For example:
 
 ```dax
-VAR 
+VAR
     TotalQty = SUM ( Sales[Quantity] )
 
 Return

@@ -1,16 +1,16 @@
 ---
-title: "Table functions (DAX) | Microsoft Docs"
+title: "Table manipulation functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/22/2020
+ms.date: 07/28/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 
 ---
-# Table functions
+# Table manipulation functions
 
-Functions in this category work with tables.
+These functions help create new or manipulate existing tables, for example, adding a column by using ADDCOLUMNS, or performing a *group by* using the GROUPBY function.
 
 ## In this category
 

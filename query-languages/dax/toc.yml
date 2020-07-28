@@ -551,10 +551,10 @@
               href: varx-s-function-dax.md
             - name: VARX.P
               href: varx-p-function-dax.md
-        - name: Table functions
+        - name: Table manipulation functions
           items:
-            - name: Table functions overview
-              href: table-functions-dax.md
+            - name: Table manipulation functions overview
+              href: table-manipulation-functions-dax.md
             - name: ADDCOLUMNS
               href: addcolumns-function-dax.md
             - name: ADDMISSINGITEMS
