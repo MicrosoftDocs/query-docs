@@ -8,6 +8,8 @@
           href: dax-overview.md
         - name: Videos
           href: dax-learn-videos.md
+        - name: Use DAX in Power BI Desktop Learn path
+          href: http://aka.ms/learndax
     - name: DAX functions
       expanded: true
       items: 
