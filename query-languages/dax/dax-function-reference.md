@@ -45,7 +45,7 @@ This reference is not intended to serve as a tutorial or provide in-depth guidan
 
 [Statistical functions](statistical-functions-dax.md) - These functions perform aggregations. In addition to creating sums and averages, or finding minimum and maximum values, in DAX you can also filter a column before aggregating or create aggregations based on related tables.  
 
-[Table functions](table-functions-dax.md) - These functions work with tables.
+[Table manipulation functions](table-functions-dax.md) - These functions help create new or manipulate existing tables.
   
 [Text functions](text-functions-dax.md) - With these functions, you can return part of a string, search for text within a string, or concatenate string values. Additional functions are for controlling the formats for dates, times, and numbers.  
 
