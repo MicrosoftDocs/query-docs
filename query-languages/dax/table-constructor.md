@@ -1,14 +1,14 @@
 ---
-title: "Table Constructor | Microsoft Docs"
+title: "Table constructor | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/10/2020
+ms.date: 07/23/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 
 ---
-# Table Constructor
+# Table constructor
 
 Returns a table of one or more columns.
   
@@ -27,7 +27,7 @@ Returns a table of one or more columns.
   
 ## Return value
 
-A table of one or more columns. When there is only one column, the name of the column is Value. When there are N columns where N > 1, the names of the columns from left to right are Value1, Value2, …, ValueN. 
+A table of one or more columns. When there is only one column, the name of the column is Value. When there are N columns where N > 1, the names of the columns from left to right are Value1, Value2, …, ValueN.
   
 ## Remarks
 
@@ -66,9 +66,9 @@ The following DAX query:
 ```dax
 EVALUATE
     {
-        (1.5, DATE(2017, 1, 1), CURRENCY(199.99), "A"), 
-        (2.5, DATE(2017, 1, 2), CURRENCY(249.99), "B"), 
-        (3.5, DATE(2017, 1, 3), CURRENCY(299.99), "C") 
+        (1.5, DATE(2017, 1, 1), CURRENCY(199.99), "A"),
+        (2.5, DATE(2017, 1, 2), CURRENCY(249.99), "B"),
+        (3.5, DATE(2017, 1, 3), CURRENCY(299.99), "C")
     }
 ```
 
@@ -76,7 +76,7 @@ Returns,
 
 [Value1]  |[Value2]  |[Value3]  |[Value4]  
 ---------|---------|---------|---------
-1.5    |    1/1/2017     |   199.99      |     A 
+1.5    |    1/1/2017     |   199.99      |     A
 2.5     |   1/2/2017      |    249.99     |         B
 3.5     |   1/3/2017      |    299.99     |         C
 

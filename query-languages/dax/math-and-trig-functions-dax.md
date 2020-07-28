@@ -1,7 +1,7 @@
 ---
 title: "Math and Trig functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/08/2020
+ms.date: 07/23/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -28,6 +28,7 @@ The mathematical functions in Data Analysis Expressions (DAX) are very similar t
 |[CEILING](ceiling-function-dax.md)     |  Rounds a number up, to the nearest integer or to the nearest multiple of significance.        |
 |[COMBIN](combin-function-dax.md)     | Returns the number of combinations for a given number of items.        |
 |[COMBINA](combina-function-dax.md)     |  Returns the number of combinations (with repetitions) for a given number of items.        |
+|[CONVERT](convert-function-dax.md)|Converts an expression of one data type to another. |
 |[COS](cos-function-dax.md)     |  Returns the cosine of the given angle.        |
 |[COSH](cosh-function-dax.md)     |  Returns the hyperbolic cosine of a number.        |
 |[CURRENCY](currency-function-dax.md)     | Evaluates the argument and returns the result as currency data type.         |

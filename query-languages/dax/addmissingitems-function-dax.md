@@ -21,7 +21,9 @@ The ADDMISSINGITEMS function will return BLANK values for the IsSubtotal columns
 ```dax
 ADDMISSINGITEMS(<showAllColumn>[, <showAllColumn>]…, <table>, <groupingColumn>[, <groupingColumn>]…[, filterTable]…)  
 ```
-  
+
+With ROLLUPISSUBTOTAL,
+
 ```dax
 ADDMISSINGITEMS(<showAllColumn>[, <showAllColumn>]…, <table>, [ROLLUPISSUBTOTAL(]<groupingColumn>[, <isSubtotal_columnName>][, <groupingColumn>][, <isSubtotal_columnName>]…[)], [, filterTable]…)  
 ```
@@ -40,11 +42,13 @@ ADDMISSINGITEMS(<showAllColumn>[, <showAllColumn>]…, <table>, [ROLLUPISSUBTOTA
 
 [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-## ADDMISSINGITEMS with ROLLUPGROUP
+## Advanced ADDMISSINGITEMS options
+
+With ROLLUPGROUP,
 
 ROLLUPGROUP is used inside the ROLLUPISSUBTOTAL function to reflect ROLLUPGROUPs present in the supplied table argument.  
   
-### Remarks
+### Remarks for options
   
 - If ROLLUPISSUBTOTAL was used to define the supplied table argument (or the equivalent rows and ISSUBTOTAL columns were added by some other means), ROLLUPISSUBTOTAL must be used with the same arguments within ADDMISSINGITEMS. This is also true for ROLLUPGROUP if it was used with ROLLUPISSUBTOTAL to define the supplied table argument.  
   
@@ -52,7 +56,7 @@ ROLLUPGROUP is used inside the ROLLUPISSUBTOTAL function to reflect ROLLUPGROUPs
   
 - If ROLLUPGROUP was used with ROLLUPISSUBTOTAL to define the supplied table argument, exactly one ISSUBTOTAL column name must be supplied per ROLLUPGROUP and it must match the corresponding ISSUBTOTAL column name in the supplied table argument.  
   
-## Example
+### Example with ROLLUPISSUBTOTAL
 
 Add blank rows for columns with "show items with no data" turned on. The ADDMISSINGITEMS function will return NULLs/BLANKs for the IsSubtotal columns of blank rows it adds.  
   
@@ -80,7 +84,7 @@ ROLLUPISSUBTOTAL
 )  
 ```
 
-Example with ROLLUPGROUP  
+### Example with ROLLUPGROUP  
   
 ```dax
 VAR 'RowHeadersShowAll' =
