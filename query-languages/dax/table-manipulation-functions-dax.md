@@ -10,7 +10,7 @@ ms.author: owend
 ---
 # Table manipulation functions
 
-These functions help create new or manipulate existing tables, for example, adding a column by using ADDCOLUMNS, or performing a *group by* using the GROUPBY function.
+These functions return a table or manipulate existing tables.
 
 ## In this category
 
