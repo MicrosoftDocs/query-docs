@@ -10,7 +10,7 @@ ms.author: owend
 ---
 # CONTAINSSTRINGEXACT
 
-Returns TRUE or FALSE indicating whether one string contains another string. 
+Returns TRUE or FALSE indicating whether one string contains another string.
   
 ## Syntax  
   

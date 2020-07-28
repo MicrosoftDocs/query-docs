@@ -192,60 +192,58 @@ A function is a named formula within an expression. Most functions have required
   
 ### Date and time functions  
 
-The date and time functions in DAX are similar to date and time functions in Microsoft Excel. However, DAX functions are based on a **datetime** data type starting March 1, 1900. For more information, see [Date and time functions](date-and-time-functions-dax.md).
+The date and time functions in DAX are similar to date and time functions in Microsoft Excel. However, DAX functions are based on a **datetime** data type starting March 1, 1900. To learn more, see [Date and time functions](date-and-time-functions-dax.md).
 
 ### Filter functions  
 
-The filter functions in DAX return specific data types, look up values in related tales, and filter by related values. The lookup functions work by using tables and relationships, like a database. The filtering functions let you manipulate data context to create dynamic calculations. For more information, see [Filter functions](filter-functions-dax.md).  
+The filter functions in DAX return specific data types, look up values in related tales, and filter by related values. The lookup functions work by using tables and relationships, like a database. The filtering functions let you manipulate data context to create dynamic calculations. To learn more, see [Filter functions](filter-functions-dax.md).  
 
 ### Financial functions
 
-The financial functions in DAX are used in formulas that perform financial calculations, such as net present value and rate of return. These functions are similar to financial functions used in Microsoft Excel. For more information, see [Financial functions](financial-functions-dax.md).
+The financial functions in DAX are used in formulas that perform financial calculations, such as net present value and rate of return. These functions are similar to financial functions used in Microsoft Excel. To learn more, see [Financial functions](financial-functions-dax.md).
   
 ### Information functions  
 
-An information function looks at the cell or row that is provided as an argument and tells you whether the value matches the expected type. For example, the ISERROR function returns TRUE if the value that you reference contains an error. For more information, see [Information functions](information-functions-dax.md).  
+An information function looks at the cell or row that is provided as an argument and tells you whether the value matches the expected type. For example, the ISERROR function returns TRUE if the value that you reference contains an error. To learn more, see [Information functions](information-functions-dax.md).  
   
 ### Logical functions  
 
-Logical functions act upon an expression to return information about the values in the expression. For example, the TRUE function lets you know whether an expression that you are evaluating returns a TRUE value. For more information, see [Logical functions](logical-functions-dax.md).  
+Logical functions act upon an expression to return information about the values in the expression. For example, the TRUE function lets you know whether an expression that you are evaluating returns a TRUE value. To learn more, see [Logical functions](logical-functions-dax.md).  
   
 ### Mathematical and trigonometric functions  
 
-The mathematical functions in DAX are very similar to the Excel mathematical and trigonometric functions. Some minor differences exist in the numeric data types used by DAX functions. For more information, see [Math and trig functions](math-and-trig-functions-dax.md).  
+The mathematical functions in DAX are very similar to the Excel mathematical and trigonometric functions. Some minor differences exist in the numeric data types used by DAX functions. To learn more, see [Math and trig functions](math-and-trig-functions-dax.md).  
 
 ### Other functions  
 
-These functions perform unique actions that cannot be defined by any of the categories most other functions belong to. For more information, see [Other functions](other-functions-dax.md).
+These functions perform unique actions that cannot be defined by any of the categories most other functions belong to. To learn more, see [Other functions](other-functions-dax.md).
+
+### Relationship functions
+
+Relationship functions in DAX allow you to return values from another related table, specify a particular relationship to use in an expression, and specify cross filtering direction. To lean more, see [Relationship functions](relationship-functions-dax.md).
   
 ### Statistical functions  
 
-DAX provides statistical functions that perform aggregations. In addition to creating sums and averages, or finding the minimum and maximum values, in DAX you can also filter a column before aggregating or create aggregations based on related tables. For more information, see [Statistical functions](statistical-functions-dax.md).  
+DAX provides statistical functions that perform aggregations. In addition to creating sums and averages, or finding the minimum and maximum values, in DAX you can also filter a column before aggregating or create aggregations based on related tables. To learn more, see [Statistical functions](statistical-functions-dax.md).  
   
 ### Text functions  
 
-The text functions in DAX are very similar to their counterparts in Excel. You can return part of a string, search for text within a string, or concatenate string values. DAX also provides functions for controlling the formats for dates, times, and numbers. For more information, see [Text functions](text-functions-dax.md).  
+Text functions in DAX are very similar to their counterparts in Excel. You can return part of a string, search for text within a string, or concatenate string values. DAX also provides functions for controlling the formats for dates, times, and numbers. To learn more, see [Text functions](text-functions-dax.md).  
   
 ### Time intelligence functions  
 
-The time intelligence functions provided in DAX let you create calculations that use built-in knowledge about calendars and dates. By using time and date ranges in combination with aggregations or calculations, you can build meaningful comparisons across comparable time periods for sales, inventory, and so on. For more information, see [Time intelligence functions (DAX)](time-intelligence-functions-dax.md).  
+The time intelligence functions provided in DAX let you create calculations that use built-in knowledge about calendars and dates. By using time and date ranges in combination with aggregations or calculations, you can build meaningful comparisons across comparable time periods for sales, inventory, and so on. To learn more, see [Time intelligence functions (DAX)](time-intelligence-functions-dax.md).  
   
-### Table-valued functions  
+### Table manipulation functions  
 
-There are DAX functions that output tables, take tables as input, or do both. Because a table can have a single column, table-valued functions also take single columns as inputs. Understanding how to use table-valued functions is important for fully utilizing DAX formulas. DAX includes the following types of table-valued functions:  
+These functions return a table or manipulate existing tables. For example, by using ADDCOLUMNS you can add calculated columns to a specified table, or you can return a summary table over a set of groups with the SUMMARIZECOLUMNS function. To learn more, see [Table manipulation functions](table-manipulation-functions-dax.md).
   
-- Filter functions return a column, table, or values related to the current row.  
-- Aggregation functions aggregate any expression over the rows of a table.  
-- Time intelligence functions return a table of dates, or use a table of dates to calculate an aggregation.  
-
-Examples of table functions include: FILTER, ALL, VALUES, DISTINCT, RELATEDTABLE.
-
 ## Variables
 
 You can create variables within an expression by using [VAR](https://docs.microsoft.com/dax/var-dax). VAR is technically not a function, it's a keyword to store the result of an expression as a named variable. That variable can then be passed as an argument to other measure expressions. For example:
 
 ```dax
-VAR 
+VAR
     TotalQty = SUM ( Sales[Quantity] )
 
 Return
@@ -341,7 +339,7 @@ Filter context is added when you specify filter constraints on the set of values
   
 In tabular models, there are many ways to create filter context. Within the context of clients that can consume the model, such as Power BI reports, users can create filters on the fly by adding slicers or report filters on the row and column headings. You can also specify filter expressions directly within the formula, to specify related values, to filter tables that are used as inputs, or to dynamically get context for the values that are used in calculations. You can also completely clear or selectively clear the filters on particular columns. This is very useful when creating formulas that calculate grand totals.  
   
-For more information about how to create filters within formulas, see the [FILTER Function (DAX)](filter-function-dax.md).  
+To learn more about how to create filters within formulas, see the [FILTER Function (DAX)](filter-function-dax.md).  
 For an example of how filters can be cleared to create grand totals, see the [ALL Function (DAX)](all-function-dax.md).  
   
 For examples of how to selectively clear and apply filters within formulas, see [ALLEXCEPT](allexcept-function-dax.md).  
@@ -386,7 +384,7 @@ You can refer to any table and column by using its name. For example, the follow
 
 ```  
   
-When a formula is evaluated, the model designer first checks for general syntax, and then checks the names of columns and tables that you provide against possible columns and tables in the current context. If the name is ambiguous or if the column or table cannot be found, you will get an error on your formula (an #ERROR string instead of a data value in cells where the error occurs). For more information about naming requirements for tables, columns, and other objects, see Naming Requirements in [DAX syntax](dax-syntax-reference.md#naming-requirements).  
+When a formula is evaluated, the model designer first checks for general syntax, and then checks the names of columns and tables that you provide against possible columns and tables in the current context. If the name is ambiguous or if the column or table cannot be found, you will get an error on your formula (an #ERROR string instead of a data value in cells where the error occurs). To learn more about naming requirements for tables, columns, and other objects, see Naming Requirements in [DAX syntax](dax-syntax-reference.md#naming-requirements).  
   
 ### Table relationships  
 
@@ -399,7 +397,7 @@ It's important to observe these formula design rules when using relationships:
   
 - When tables are connected by a relationship, you must ensure the two columns used as keys have values that match. Referential integrity is not enforced, therefore it is possible to have non-matching values in a key column and still create a relationship. If this happens, you should be aware that blank values or non-matching values might affect the results of formulas.  
   
-- When you link tables in your model by using relationships, you enlarge the scope, or *context*, in which your formulas are evaluated. Changes in context resulting from the addition of new tables, new relationships, or from changes in the active relationship can cause your results to change in ways that you might not anticipate. For more information, see [Context](#context) in this article.  
+- When you link tables in your model by using relationships, you enlarge the scope, or *context*, in which your formulas are evaluated. Changes in context resulting from the addition of new tables, new relationships, or from changes in the active relationship can cause your results to change in ways that you might not anticipate. To learn more, see [Context](#context) in this article.  
   
 ## Process and refresh
 

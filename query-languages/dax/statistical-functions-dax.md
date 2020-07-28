@@ -16,7 +16,6 @@ Data Analysis Expressions (DAX) provides many functions for creating aggregation
 
 |Function  |Description  |
 |---------|---------|
-|[ADDCOLUMNS](addcolumns-function-dax.md)      | Adds calculated columns to the given table or table expression.          |
 |[APPROXIMATEDISTINCTCOUNT](approximate-distinctcount-function-dax.md)     |   Returns the *approximate* number of rows that contain distinct values in a column.      |
 |[AVERAGE](average-function-dax.md)     |   Returns the average (arithmetic mean) of all the numbers in a column.       |
 |[AVERAGEA](averagea-function-dax.md)     | Returns the average (arithmetic mean) of the values in a column.         |
@@ -37,13 +36,10 @@ Data Analysis Expressions (DAX) provides many functions for creating aggregation
 |[COUNTBLANK](countblank-function-dax.md)     |  Counts the number of blank cells in a column.        |
 |[COUNTROWS](countrows-function-dax.md)      |  Counts the number of rows in the specified table, or in a table defined by an expression.        |
 |[COUNTX](countx-function-dax.md)       |  Counts the number of rows that contain a number or an expression that evaluates to a number, when evaluating an expression over a table.         |
-|[CROSSJOIN](crossjoin-function-dax.md)      |  Returns a table that contains the Cartesian product of all rows from all tables in the arguments.      |
 |[DATATABLE](datatable-function.md)      |  Provides a mechanism for declaring an inline set of data values.       |
 |[DISTINCTCOUNT](distinctcount-function-dax.md)     |  Counts the number of distinct values in a column.         |
 |[DISTINCTCOUNTNOBLANK](distinctcountnoblank-function-dax.md)    |   Counts the number of distinct values in a column.      |
 |[EXPON.DIST](expon-dist-function-dax.md)      |  Returns the exponential distribution.        |
-|[GENERATE](generate-function-dax.md)      |  Returns a table with the Cartesian product between each row in *table1* and the table that results from evaluating *table2* in the context of the current row from *table1*.       |
-|[GENERATEALL](generateall-function-dax.md)     |  Returns a table with the Cartesian product between each row in *table1* and the table that results from evaluating *table2* in the context of the current row from *table1*.         |
 |[GEOMEAN](geomean-function-dax.md)     |  Returns the geometric mean of the numbers in a column.        |
 |[GEOMEANX](geomeanx-function-dax.md)      | Returns the geometric mean of an expression evaluated for each row in a table.        |
 |[MAX](max-function-dax.md)    |  Returns the largest numeric value in a column, or between two scalar expressions.        |
@@ -65,9 +61,7 @@ Data Analysis Expressions (DAX) provides many functions for creating aggregation
 |[POISSON.DIST](poisson-dist-function-dax.md)      |  Returns the Poisson distribution.       |
 |[RANK.EQ](rank-eq-function-dax.md)    | Returns the ranking of a number in a list of numbers.        |
 |[RANKX](rankx-function-dax.md)      | Returns the ranking of a number in a list of numbers for each row in the *table* argument.          |
-|[ROW](row-function-dax.md)     |  Returns a table with a single row containing values that result from the expressions given to each column.         |
 |[SAMPLE](sample-function-dax.md)       |  Returns a sample of N rows from the specified table.        |
-|[SELECTCOLUMNS](selectcolumns-function-dax.md)    |  Adds calculated columns to the given table or table expression.         |
 |[SIN](sin-function-dax.md)     | Returns the sine of the given angle.          |
 |[SINH](sinh-function-dax.md)       | Returns the hyperbolic sine of a number.          |
 |[STDEV.P](stdev-p-function-dax.md)     |  Returns the standard deviation of the entire population.        |
@@ -75,7 +69,6 @@ Data Analysis Expressions (DAX) provides many functions for creating aggregation
 |[STDEVX.P](stdevx-p-function-dax.md)      | Returns the standard deviation of the entire population.         |
 |[STDEVX.S](stdevx-s-function-dax.md)      |  Returns the standard deviation of a sample population.         |
 |[SQRTPI](sqrtpi-function-dax.md)     |  Returns the square root of (number * pi).       |
-|[SUMMARIZE](summarize-function-dax.md)      | Returns a summary table for the requested totals over a set of groups.          |
 |[T.DIST](t-dist-dax.md)    | Returns the Student's left-tailed t-distribution.        |
 |[T.DIST.2T](t-dist-2t-dax.md)    | Returns the two-tailed Student's t-distribution.        |
 |[T.DIST.RT](t-dist-rt-dax.md)     | Returns the right-tailed Student's t-distribution.        |
@@ -83,7 +76,6 @@ Data Analysis Expressions (DAX) provides many functions for creating aggregation
 |[T.INV.2t](t-inv-2t-dax.md)     | Returns the two-tailed inverse of the Student's t-distribution.        |
 |[TAN](tan-function-dax.md)      |  Returns the tangent of the given angle.         |
 |[TANH](tanh-function-dax.md)     |  Returns the hyperbolic tangent of a number.        |
-|[TOPN](topn-function-dax.md)     |  Returns the top N rows of the specified table.       |
 |[VAR.P](var-p-function-dax.md)    | Returns the variance of the entire population.         |
 |[VAR.S](var-s-function-dax.md)    |  Returns the variance of a sample population.         |
 |[VARX.P](varx-p-function-dax.md)     | Returns the variance of the entire population.         |

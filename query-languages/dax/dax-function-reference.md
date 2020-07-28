@@ -1,7 +1,7 @@
 ---
 title: "DAX function reference | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/15/2020
+ms.date: 07/24/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -40,8 +40,12 @@ This reference is not intended to serve as a tutorial or provide in-depth guidan
 [Other functions](other-functions-dax.md) - These functions perform unique actions that cannot be defined by any of the categories most other functions belong to.  
   
 [Parent and Child functions](parent-and-child-functions-dax.md) - These Data Analysis Expressions (DAX) functions help users manage data that is presented as a parent/child hierarchy in their data models.  
-  
+
+[Relationship functions](relationship-functions-dax.md) - These functions are for managing and utilizing relationships between tables. For example, you can specify a particular relationship to be used in a calculation.  
+
 [Statistical functions](statistical-functions-dax.md) - These functions perform aggregations. In addition to creating sums and averages, or finding minimum and maximum values, in DAX you can also filter a column before aggregating or create aggregations based on related tables.  
+
+[Table manipulation functions](table-manipulation-functions-dax.md) - These functions return a table or manipulate existing tables.
   
 [Text functions](text-functions-dax.md) - With these functions, you can return part of a string, search for text within a string, or concatenate string values. Additional functions are for controlling the formats for dates, times, and numbers.  
 

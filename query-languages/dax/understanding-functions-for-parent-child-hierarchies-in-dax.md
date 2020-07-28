@@ -1,5 +1,5 @@
 ---
-title: "Understanding functions for Parent-Child Hierarchies in DAX | Microsoft Docs"
+title: "Understanding functions for parent-child hierarchies in DAX | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/13/2020
 ms.reviewer: owend
