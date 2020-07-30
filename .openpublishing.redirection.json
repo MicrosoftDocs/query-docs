@@ -5174,7 +5174,12 @@
 			"source_path": "m-msdn-redirects/xml-tables.md",
 			"redirect_url": "https://docs.microsoft.com/powerquery-m/xml-tables",
 			"redirect_document_id": true
-    	}
+		},
+		{
+			"source_path": "query-languages/dax/in-operator-containsrow-function.md",
+			"redirect_url": "/dax/containsrow-function-dax",
+			"redirect_document_id": true
+		}
 	]
 }
 
