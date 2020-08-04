@@ -31,11 +31,11 @@ For example, the following are all valid formulas.
   
 |Formula|Result|  
 |-----------|----------|  
-|=3|3|  
-|="**Sales**"|**Sales**|  
-|='Sales'[Amount]|If you use this formula within the Sales table, you will get the value of the column Amount in the Sales table for the current row.|  
-|=(0.03 *[Amount])<br /><br />=0.03 \* [Amount]|Three percent of the value in the Amount column of the current table.<br /><br />Although this formula can be used to calculate a percentage, the result is not shown as a percentage unless you apply formatting in the table.|  
-|=PI()|The value of the constant pi.|  
+|= 3|3|  
+|= "**Sales**"|**Sales**|  
+|= 'Sales'[Amount]|If you use this formula within the Sales table, you will get the value of the column Amount in the Sales table for the current row.|  
+|= (0.03 *[Amount])<br /><br />=0.03 \* [Amount]|Three percent of the value in the Amount column of the current table.<br /><br />Although this formula can be used to calculate a percentage, the result is not shown as a percentage unless you apply formatting in the table.|  
+|= PI()|The value of the constant pi.|  
   
 > [!NOTE]  
 > Formulas can behave differently depending on whether they are used in a calculated column, or in a measure within a PivotTable. You must always be aware of the context and how the data that you use in the formula is related to other data that might be used in the calculation.  

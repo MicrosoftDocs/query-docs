@@ -1,7 +1,7 @@
 ---
 title: "SUBSTITUTE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 08/04/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -44,7 +44,7 @@ A string of text.
 The following formula creates a copy of the column [Product Code] that substitutes the new product code **NW** for the old product code **PA** wherever it occurs in the column.
   
 ```dax
-=SUBSTITUTE([Product Code], "NW", "PA")  
+= SUBSTITUTE([Product Code], "NW", "PA")  
 ```
   
 ## See also

@@ -1,7 +1,7 @@
 ---
 title: "SWITCH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/10/2020
+ms.date: 08/04/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -40,7 +40,7 @@ All result expressions and the else expression must be of the same data type.
 The following example creates a calculated column of month names.  
   
 ```dax
-=SWITCH([Month], 1, "January", 2, "February", 3, "March", 4, "April"  
+= SWITCH([Month], 1, "January", 2, "February", 3, "March", 4, "April"  
                , 5, "May", 6, "June", 7, "July", 8, "August"  
                , 9, "September", 10, "October", 11, "November", 12, "December"  
                , "Unknown month number" )  

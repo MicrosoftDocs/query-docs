@@ -1,7 +1,7 @@
 ---
 title: "TRUNC function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/10/2020
+ms.date: 08/04/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -38,7 +38,7 @@ TRUNC and INT are similar in that both return integers. TRUNC removes the fracti
 The following formula returns 3, the integer part of pi.  
   
 ```dax
-=TRUNC(PI())  
+= TRUNC(PI())  
 ```
   
 ## Example 2
@@ -46,7 +46,7 @@ The following formula returns 3, the integer part of pi.
 The following formula returns -8, the integer part of -8.9.  
   
 ```dax
-=TRUNC(-8.9)  
+= TRUNC(-8.9)  
 ```
   
 ## See also
