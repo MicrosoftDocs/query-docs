@@ -1,7 +1,7 @@
 ---
 title: "PERMUT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/10/2020
+ms.date: 08/04/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -50,7 +50,7 @@ Returns the number of permutations for a given number of objects that can be sel
 In the following formula, permutations possible for a group of 3 objects where 2 are chosen:
 
 ```dax
-=PERMUT(3,2)
+= PERMUT(3,2)
 ```
 
 Result,

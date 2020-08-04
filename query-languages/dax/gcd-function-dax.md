@@ -1,7 +1,7 @@
 ---
 title: "GCD function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/08/2020
+ms.date: 08/04/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -46,6 +46,6 @@ The greatest common divisor of two or more integers.
   
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
-|=GCD(5, 2)|Greatest common divisor of 5 and 2.|1|  
-|=GCD(24, 36)|Greatest common divisor of 24 and 36.|12|  
-|=GCD(7, 1)|Greatest common divisor of 7 and 1.|1|  
+|= GCD(5, 2)|Greatest common divisor of 5 and 2.|1|  
+|= GCD(24, 36)|Greatest common divisor of 24 and 36.|12|  
+|= GCD(7, 1)|Greatest common divisor of 7 and 1.|1|  

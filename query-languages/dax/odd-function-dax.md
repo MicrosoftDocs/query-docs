@@ -1,7 +1,7 @@
 ---
 title: "ODD function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/10/2020
+ms.date: 08/04/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -40,8 +40,8 @@ Returns number rounded up to the nearest odd integer.
   
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
-|=ODD(1.5)|Rounds 1.5 up to the nearest odd integer.|3|  
-|=ODD(3)|Rounds 3 up to the nearest odd integer.|3|  
-|=ODD(2)|Rounds 2 up to the nearest odd integer.|3|  
-|=ODD(-1)|Rounds -1 up to the nearest odd integer.|-1|  
-|=ODD(-2)|Rounds -2 up (away from 0) to the nearest odd integer.|-3|  
+|= ODD(1.5)|Rounds 1.5 up to the nearest odd integer.|3|  
+|= ODD(3)|Rounds 3 up to the nearest odd integer.|3|  
+|= ODD(2)|Rounds 2 up to the nearest odd integer.|3|  
+|= ODD(-1)|Rounds -1 up to the nearest odd integer.|-1|  
+|= ODD(-2)|Rounds -2 up (away from 0) to the nearest odd integer.|-3|  

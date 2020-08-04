@@ -1,7 +1,7 @@
 ---
 title: "HOUR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/08/2020
+ms.date: 08/04/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -39,7 +39,7 @@ An integer number from 0 to 23.
 The following example returns the hour from the **TransactionTime** column of a table named **Orders**.  
   
 ```dax
-=HOUR('Orders'[TransactionTime])  
+= HOUR('Orders'[TransactionTime])  
 ```
   
 ## Example
@@ -47,7 +47,7 @@ The following example returns the hour from the **TransactionTime** column of a 
 The following example returns 15, meaning the hour corresponding to 3 PM in a 24-hour clock. The text value is automatically parsed and converted to a date/time value.  
   
 ```dax
-=HOUR("March 3, 2008 3:00 PM")  
+= HOUR("March 3, 2008 3:00 PM")  
 ```
   
 ## See also

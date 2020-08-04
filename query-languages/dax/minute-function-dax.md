@@ -1,7 +1,7 @@
 ---
 title: "MINUTE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/08/2020
+ms.date: 08/04/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -47,7 +47,7 @@ The following example returns the minute from the value stored in the **Transact
 The following example returns 45, which is the number of minutes in the time 1:45 PM.  
   
 ```dax
-=MINUTE("March 23, 2008 1:45 PM")  
+= MINUTE("March 23, 2008 1:45 PM")  
 ```
   
 ## See also
