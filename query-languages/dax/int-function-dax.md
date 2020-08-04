@@ -1,7 +1,7 @@
 ---
 title: "INT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/08/2020
+ms.date: 08/04/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -37,7 +37,7 @@ TRUNC and INT are similar in that both return integers. TRUNC removes the fracti
 The following expression rounds the value to 1. If you use the ROUND function, the result would be 2.  
   
 ```dax
-=INT(1.5)  
+= INT(1.5)  
 ```
   
 ## See also

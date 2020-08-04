@@ -1,7 +1,7 @@
 ---
 title: "DAY function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/07/2020
+ms.date: 08/04/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -58,7 +58,7 @@ The following formulas return the day, 4, using dates that have been supplied as
 The following expression returns the day that each sales order was placed, and flags the row as a promotional sale item if the order was placed on the 10th of the month.  
   
 ```dax
-=I F( DAY([SalesDate])=10,"promotion","")  
+= IF( DAY([SalesDate])=10,"promotion","")  
 ```
   
 ## See also

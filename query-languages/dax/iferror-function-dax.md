@@ -1,7 +1,7 @@
 ---
 title: "IFERROR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/08/2020
+ms.date: 08/04/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -48,7 +48,7 @@ A scalar of the same type as **value**
 The following example returns 9999 if the expression 25/0 evaluates to an error. If the expression returns a value other than error, that value is passed to the invoking expression.  
   
 ```dax
-=IFERROR(25/0,9999)  
+= IFERROR(25/0,9999)  
 ```
   
 ## See also

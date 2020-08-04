@@ -1,7 +1,7 @@
 ---
 title: "ISBLANK function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/08/2020
+ms.date: 08/04/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -35,7 +35,7 @@ This formula computes the increase or decrease ratio in sales compared to the pr
 ```dax
 //Sales to Previous Year Ratio  
   
-=IF( ISBLANK('CalculatedMeasures'[PreviousYearTotalSales])  
+= IF( ISBLANK('CalculatedMeasures'[PreviousYearTotalSales])  
    , BLANK()  
    , ( 'CalculatedMeasures'[Total Sales]-'CalculatedMeasures'[PreviousYearTotalSales] )  
       /'CalculatedMeasures'[PreviousYearTotalSales])  

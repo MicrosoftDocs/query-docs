@@ -1,7 +1,7 @@
 ---
 title: "Understanding functions for parent-child hierarchies in DAX | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/13/2020
+ms.date: 08/04/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -46,7 +46,7 @@ The following table presents the available functions, a brief description of the
 |221|162|112&#124;14&#124;3&#124;162&#124;221|  
 |81|162|112&#124;14&#124;3&#124;162&#124;81|  
   
-[PATHLENGTH function](pathlength-function-dax.md) - Returns the number of levels in a given PATH(), starting at current level until the oldest or top most parent level. In the following example column PathLength is defined as '`=PATHLENGTH([Path])`'; the example includes all data from the Path() example to help understand how this function works.  
+[PATHLENGTH function](pathlength-function-dax.md) - Returns the number of levels in a given PATH(), starting at current level until the oldest or top most parent level. In the following example column PathLength is defined as '`= PATHLENGTH([Path])`'; the example includes all data from the Path() example to help understand how this function works.  
   
 |EmployeeKey|ParentEmployeeKey|Path|PathLength|  
 |---------------|---------------------|--------|--------------|  
@@ -60,7 +60,7 @@ The following table presents the available functions, a brief description of the
 |221|162|112&#124;14&#124;3&#124;162&#124;221|5|  
 |81|162|112&#124;14&#124;3&#124;162&#124;81|5|  
   
-[PATHITEM function](pathitem-function-dax.md) - Returns the item at the specified position from a PATH() like result, counting from left to right. In the following example column PathItem - 4th from left is defined as '`=PATHITEM([Path], 4)`'; this example returns the EmployeKey at fourth position in the Path string from the left, using the same sample data from the Path() example.  
+[PATHITEM function](pathitem-function-dax.md) - Returns the item at the specified position from a PATH() like result, counting from left to right. In the following example column PathItem - 4th from left is defined as '`= PATHITEM([Path], 4)`'; this example returns the EmployeKey at fourth position in the Path string from the left, using the same sample data from the Path() example.  
   
 |EmployeeKey|ParentEmployeeKey|Path|PathItem - 4th from left|  
 |---------------|---------------------|--------|-----------------------------|  
@@ -75,7 +75,7 @@ The following table presents the available functions, a brief description of the
 |81|162|112&#124;14&#124;3&#124;162&#124;81|162|  
   
 [PATHITEMREVERSE function](pathitemreverse-function-dax.md) - Returns the item at *position* from a PATH() like function result, counting backwards from right to left.  
-                In the following example column PathItemReverse - 3rd from right is defined as '`=PATHITEMREVERSE([Path], 3)`'; this example returns the EmployeKey at third position in the Path string from the right, using the same sample data from the Path() example.  
+                In the following example column PathItemReverse - 3rd from right is defined as '`= PATHITEMREVERSE([Path], 3)`'; this example returns the EmployeKey at third position in the Path string from the right, using the same sample data from the Path() example.  
   
 |EmployeeKey|ParentEmployeeKey|Path|PathItemReverse - 3rd from right|  
 |---------------|---------------------|--------|-------------------------------------|  
@@ -89,7 +89,7 @@ The following table presents the available functions, a brief description of the
 |221|162|112&#124;14&#124;3&#124;162&#124;221|3|  
 |81|162|112&#124;14&#124;3&#124;162&#124;81|3|  
   
-[PATHCONTAINS function](pathcontains-function-dax.md) - Returns **TRUE** if the specified *item* exists within the specified *path*. In the following example column PathContains - employee 162 is defined as '`=PATHCONTAINS([Path], "162")`'; this example returns **TRUE** if the given path contains employee 162. This example uses the results from the Path() example above.  
+[PATHCONTAINS function](pathcontains-function-dax.md) - Returns **TRUE** if the specified *item* exists within the specified *path*. In the following example column PathContains - employee 162 is defined as '`= PATHCONTAINS([Path], "162")`'; this example returns **TRUE** if the given path contains employee 162. This example uses the results from the Path() example above.  
 
 |EmployeeKey|ParentEmployeeKey|Path|PathContains - employee 162|  
 |---------------|---------------------|--------|-------------------------------------|  

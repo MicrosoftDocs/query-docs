@@ -1,7 +1,7 @@
 ---
 title: "RADIANS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/10/2020
+ms.date: 08/04/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -28,4 +28,4 @@ RADIANS(angle)
   
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
-|=RADIANS(270)|270 degrees as radians (4.712389 or 3π/2 radians)|4.712389|  
+|= RADIANS(270)|270 degrees as radians (4.712389 or 3π/2 radians)|4.712389|  

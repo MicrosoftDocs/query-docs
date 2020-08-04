@@ -1,7 +1,7 @@
 ---
 title: "ISO.CEILING function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/08/2020
+ms.date: 08/04/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -54,7 +54,7 @@ The result type is usually the same type of the significance used as argument wi
 The following formula returns 4.45. This might be useful if you want to avoid using smaller units in your pricing. If an existing product is priced at $4.42, you can use ISO.CEILING to round prices up to the nearest unit of five cents.
   
 ```dax
-=ISO.CEILING(4.42,0.05)  
+= ISO.CEILING(4.42,0.05)  
 ```
   
 ## Example: Negative Numbers  
@@ -62,7 +62,7 @@ The following formula returns 4.45. This might be useful if you want to avoid us
 The following formula returns the ISO ceiling value of -4.40.  
   
 ```dax
-=ISO.CEILING(-4.42,0.05)  
+= ISO.CEILING(-4.42,0.05)  
 ```
   
 ## See also

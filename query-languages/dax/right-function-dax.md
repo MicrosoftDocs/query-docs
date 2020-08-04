@@ -1,7 +1,7 @@
 ---
 title: "RIGHT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/10/2020
+ms.date: 08/04/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -42,7 +42,7 @@ A text string containing the specified right-most characters.
 The following formula returns the last two digits of the product code in the New Products table.  
   
 ```dax
-=RIGHT('New Products'[ProductCode],2)  
+= RIGHT('New Products'[ProductCode],2)  
 ```
   
 ## Example: Using a Column Reference to Specify Character Count  

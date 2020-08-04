@@ -1,7 +1,7 @@
 ---
 title: "DISTINCTCOUNTNOBLANK function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/05/2020
+ms.date: 08/04/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -39,7 +39,7 @@ The number of distinct values in *column*.
 The following example shows how to count the number of distinct sales orders in the column ResellerSales_USD[SalesOrderNumber].  
   
 ```dax
-=DISTINCTCOUNT(ResellerSales_USD[SalesOrderNumber])  
+= DISTINCTCOUNT(ResellerSales_USD[SalesOrderNumber])  
 ```
 
 DAX query
