@@ -1,7 +1,7 @@
 ---
 title: "SUMX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/10/2020
+ms.date: 08/04/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -35,7 +35,7 @@ A decimal number.
   
 - Only the numbers in the column are counted. Blanks, logical values, and text are ignored.  
   
-- To see some more complex examples of SUMX in formulas, see [ALLDAX&#41;](all-function-dax.md) and [CALCULATETABLE](calculatetable-function-dax.md).  
+- For more complex examples of SUMX in formulas, see [ALL](all-function-dax.md) and [CALCULATETABLE](calculatetable-function-dax.md).  
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
