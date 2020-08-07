@@ -1,7 +1,7 @@
 ---
 title: "COSH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/05/2020
+ms.date: 08/07/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -31,9 +31,9 @@ The hyperbolic cosine of a number.
 ## Remarks
 
 - The formula for the hyperbolic cosine is:  
-  
-    ![Formula](media/dax-cosh-formula.png)  
-  
+
+    $$\text{COSH}(z) = \frac{e^{z} + e^{-z}}{2}$$
+
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example  

@@ -1,7 +1,7 @@
 ---
 title: "EXPON.DIST function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/08/2020
+ms.date: 08/07/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -32,20 +32,20 @@ Returns the exponential distribution.
   
 ## Remarks
 
-- If x or lambda is nonnumeric, EXPON.DIST returns the #VALUE! error value. 
+- If x or lambda is nonnumeric, EXPON.DIST returns the #VALUE! error value.
 
-- If x or lambda is not an integer, it is rounded. 
-  
+- If x or lambda is not an integer, it is rounded.
+
 - If x &lt; 0, EXPON.DIST returns the #NUM! error value.  
-  
+
 - If lambda ≤ 0, EXPON.DIST returns the #NUM! error value.  
-  
+
 - The equation for the probability density function is:  
-  
-    ![Formula](media/dax-expondist-formula1.png)  
-  
+
+    $$f(x; \lambda) = \lambda e^{-\lambda x}$$
+
 - The equation for the cumulative distribution function is:  
-  
-    ![Formula](media/dax-expondist-formula2.png)  
+
+    $$F(x; \lambda) = 1 - e^{-\lambda x}$$
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]

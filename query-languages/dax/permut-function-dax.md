@@ -1,7 +1,7 @@
 ---
 title: "PERMUT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 08/04/2020
+ms.date: 08/07/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -32,16 +32,16 @@ Returns the number of permutations for a given number of objects that can be sel
 ## Remarks
 
 - Both arguments are truncated to integers.  
-  
+
 - If number or number_chosen is nonnumeric, PERMUT returns the #VALUE! error value.  
-  
+
 - If number ≤ 0 or if number_chosen &lt; 0, PERMUT returns the #NUM! error value.  
-  
+
 - If number &lt; number_chosen, PERMUT returns the #NUM! error value.  
-  
+
 - The equation for the number of permutations is:  
-  
-  ![Formula](media/dax-permut-formula.png)  
+
+    $$P\_{k,n} = \frac{n!}{(n-k)!}$$
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
