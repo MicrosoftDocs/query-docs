@@ -1,7 +1,7 @@
 ---
 title: "COMBIN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/05/2020
+ms.date: 08/07/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -33,20 +33,20 @@ Returns the number of combinations for a given number of items.
 ## Remarks
 
 - Numeric arguments are truncated to integers.  
-  
-- If either argument is nonnumeric, COMBIN returns the #VALUE! error value.  
-  
-- If number &lt; 0, number_chosen &lt; 0, or number &lt; number_chosen, COMBIN returns the #NUM! error value.  
-  
-- A combination is any set or subset of items, regardless of their internal order. Combinations are distinct from permutations, for which the internal order is significant.  
-  
-- The number of combinations is as follows, where number = n and number_chosen = k:  
 
-    ![combin formula](media/dax-combin-formula1.png)
-  
+- If either argument is nonnumeric, COMBIN returns the #VALUE! error value.  
+
+- If number &lt; 0, number_chosen &lt; 0, or number &lt; number_chosen, COMBIN returns the #NUM! error value.  
+
+- A combination is any set or subset of items, regardless of their internal order. Combinations are distinct from permutations, for which the internal order is significant.  
+
+- The number of combinations is as follows, where number = $n$ and number_chosen = $k$:  
+
+    $${n \choose k} = \frac{P\_{k,n}}{k!} = \frac{n!}{k!(n-k)!}$$
+
     Where  
 
-    ![combin formula result](media/dax-combin-formula2.png)
+    $$P\_{k,n} = \frac{n!}{(n-k)!}$$
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 

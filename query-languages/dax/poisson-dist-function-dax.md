@@ -1,7 +1,7 @@
 ---
 title: "POISSON.DIST function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/10/2020
+ms.date: 08/07/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -33,21 +33,21 @@ Returns the Poisson distribution.
 ## Remarks
 
 - If x is not an integer, it is rounded.  
-  
+
 - If x or mean is nonnumeric, POISSON.DIST returns the #VALUE! error value.  
-  
+
 - If x &lt; 0, POISSON.DIST returns the #NUM! error value.  
-  
+
 - If mean &lt; 0, POISSON.DIST returns the #NUM! error value.  
-  
+
 - POISSON.DIST is calculated as follows.  
-  
+
   - For cumulative = FALSE:  
-  
-  ![Formula](media/dax-poisson-formula1.png)  
-  
+
+    $$\text{POISSON} = \frac{e^{-\lambda} \lambda^{x}}{x!}$$
+
   - For cumulative = TRUE:  
 
-  ![Formula](media/dax-poisson-formula2.png)  
+    $$\text{CUMPOISSON} = \sum^{x}\_{k=0} \frac{e^{-\lambda} \lambda^{x}}{k!}$$
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]

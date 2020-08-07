@@ -1,7 +1,7 @@
 ---
 title: "TANH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 08/04/2020
+ms.date: 08/07/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -31,8 +31,8 @@ Returns the hyperbolic tangent of a number.
 ## Remarks
 
 - The formula for the hyperbolic tangent is:  
-  
-  ![Formula](media/dax-tanh-formula.png)  
+
+    $$\text{TANH}(z) = \frac{\text{SINH}(z)}{\text{COSH}(z)}$$
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 

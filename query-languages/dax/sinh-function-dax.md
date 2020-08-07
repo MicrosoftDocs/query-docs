@@ -1,7 +1,7 @@
 ---
 title: "SINH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/10/2020
+ms.date: 08/07/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -31,8 +31,8 @@ Returns the hyperbolic sine of a number.
 ## Remarks
 
 - The formula for the hyperbolic sine is:  
-  
-  ![Formula](media/dax-sinh-formula.png)  
+
+    $$\text{SINH}(z) = \frac{e^{z} - e^{-z}}{2}$$
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   

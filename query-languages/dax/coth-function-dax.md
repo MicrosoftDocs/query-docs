@@ -1,7 +1,7 @@
 ---
 title: "COTH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/05/2020
+ms.date: 08/07/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -32,15 +32,15 @@ The hyperbolic cotangent of the given angle.
 
 - The hyperbolic cotangent is an analog of the ordinary (circular) cotangent.
 
-- The absolute value of number must be less than 2^27 and cannot be 0.
+- The absolute value of number must be less than $2^{27}$ and cannot be 0.
 
 - If number is outside its constraints, an error is returned
 
 - If number is a non-numeric value, an error is returned.
 
 - The following equation is used:
-  
-  ![COTH formula](media/dax-coth-formula.png)
+
+    $$\text{COTH}(N) = \frac{1}{\text{TANH}(N)} = \frac{\text{COSH(N)}}{\text{SINH(N)}} = \frac{e^{N} + e^{-N}}{e^{N} - e^{-N}}$$
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 

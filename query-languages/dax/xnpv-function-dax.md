@@ -1,7 +1,7 @@
 ---
 title: "XNPV function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/13/2020
+ms.date: 08/07/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -34,9 +34,15 @@ Net present value.
 ## Remarks
 
 - The value is calculated as the following summation:  
-  
-    ![XNPV Formula](media/dax-xnpv-formula.png)  
-  
+
+    $$\sum^{N}\_{j=1} \frac{P\_{j}}{(1 + \text{rate})^{\frac{d\_{j} - d\_{1}}{365}}}$$
+
+    Where:
+
+  - $P\_{j}$ is the $j^{th}$ payment
+  - $d\_{j}$ is the $j^{th}$ payment date
+  - $d\_{1}$ is the first payment date
+
 - The series of cash flow values must contain at least one positive number and one negative number.  
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
