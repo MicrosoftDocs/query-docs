@@ -50,6 +50,4 @@ Returns the Poisson distribution.
 
     $$\text{CUMPOISSON} = \sum^{x}\_{k=0} \frac{e^{-\lambda} \lambda^{x}}{k!}$$
 
-  ![Formula](media/dax-poisson-formula2.png)  
-
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
