@@ -1,7 +1,7 @@
 ---
 title: "COUNTX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/05/2020
+ms.date: 08/14/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -52,7 +52,7 @@ The following formula returns a count of all rows in the Product table that have
 The following formula illustrates how to pass a filtered table to COUNTX for the first argument. The formula uses a filter expression to get only the rows in the Product table that meet the condition, ProductSubCategory = "Caps", and then counts the rows in the resulting table that have a list price. The FILTER expression applies to the table Products but uses a value that you look up in the related table, ProductSubCategory.  
   
 ```dax
-= COUNTX(FILTER(Product,RELATED(ProductSubcategory[EnglishProductSubcategoryName])="Caps", Product[ListPrice])  
+= COUNTX(FILTER(Product,RELATED(ProductSubcategory[EnglishProductSubcategoryName])="Caps"), Product[ListPrice])  
 ```
   
 ## See also
