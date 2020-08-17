@@ -33,6 +33,8 @@ These functions help you create calculations based on dates and time. Many of th
 |[TIME](time-function-dax.md)     |  Converts hours, minutes, and seconds given as numbers to a time in datetime format.       |
 |[TIMEVALUE](timevalue-function-dax.md)     |  Converts a time in text format to a time in datetime format.       |
 |[TODAY](today-function-dax.md)     |   Returns the current date.      |
+|[UTCNOW](utcnow-function-dax.md)     |   Returns the current UTC date and time      |
+|[UTCTODAY](utctoday-function-dax.md)     |   Returns the current UTC date.      |
 |[WEEKDAY](weekday-function-dax.md)     |  Returns a number from 1 to 7 identifying the day of the week of a date.       |
 |[WEEKNUM](weeknum-function-dax.md)      |  Returns the week number for the given date and year according to the return_type value.       |
 |[YEAR](year-function-dax.md)     |    Returns the year of a date as a four digit integer in the range 1900-9999.     |
