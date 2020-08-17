@@ -91,8 +91,6 @@
               href: earliest-function-dax.md
             - name: FILTER
               href: filter-function-dax.md
-            - name: FILTERS
-              href: filters-function-dax.md
             - name: KEEPFILTERS
               href: keepfilters-function-dax.md
             - name: LOOKUPVALUE
@@ -213,7 +211,7 @@
               href: information-functions-dax.md
             - name: CONTAINS
               href: contains-function-dax.md
-            - name: CONTAINSROW function
+            - name: CONTAINSROW
               href: containsrow-function-dax.md
             - name: CONTAINSSTRING
               href: containsstring-function-dax.md
@@ -571,6 +569,8 @@
               href: distinct-table-function-dax.md
             - name: EXCEPT
               href: except-function-dax.md
+            - name: FILTERS
+              href: filters-function-dax.md
             - name: GENERATE 
               href: generate-function-dax.md
             - name: GENERATEALL

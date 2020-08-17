@@ -1,7 +1,7 @@
 ---
 title: "DAX Queries | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 05/06/2020
+ms.date: 08/17/2020
 ms.reviewer: owend
 ms.topic: conceptual
 author: minewiskan
@@ -171,12 +171,10 @@ A well-defined DAX query statement can be parameterized and then used over and o
   
 The [Execute Method (XMLA)](https://docs.microsoft.com/analysis-services/xmla/xml-elements-methods-execute) method has a [Parameters Element (XMLA)](https://docs.microsoft.com/analysis-services/xmla/xml-elements-properties/parameters-element-xmla) collection element that allows parameters to be defined and assigned a value. Within the collection, each [Parameter Element (XMLA)](https://docs.microsoft.com/analysis-services/xmla/xml-elements-properties/parameter-element-xmla) element defines the name of the parameter and a value to it.  
   
-Reference XMLA parameters by prefixing the name of the parameter with an `@` character. Hence, any place in the syntax where a value is allowed it can be replaced with a parameter call. All XMLA parameters are typed as text.  
+Reference XMLA parameters by prefixing the name of the parameter with an `@` character. Any place in the syntax where a value is allowed, the value can be replaced with a parameter call. All XMLA parameters are typed as text.  
   
 > [!IMPORTANT]
 > Parameters defined in the parameters section and not used in the **&lt;STATEMENT&gt;** element generate an error response in XMLA.
-
-> [!IMPORTANT]
 > Parameters used and not defined in the **&lt;Parameters&gt;** element generate an error response in XMLA.
   
 ## See also
