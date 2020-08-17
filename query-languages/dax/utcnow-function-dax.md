@@ -10,7 +10,7 @@ ms.author: owend
 ---
 # UTCNOW
 
-Returns the current UTC date and time
+Returns the current UTC date and time.
   
 ## Syntax  
   

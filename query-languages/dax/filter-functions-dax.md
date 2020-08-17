@@ -1,7 +1,7 @@
 ---
 title: "Filter functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/06/2020
+ms.date: 08/17/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -23,6 +23,8 @@ The filter and value functions in DAX are some of the most complex and powerful,
 |[ALLSELECTED](allselected-function-dax.md)      |  Removes context filters from columns and rows in the current query, while retaining all other context filters or explicit filters.        |
 |[CALCULATE](calculate-function-dax.md)      |  Evaluates an expression in a modified filter context.      |
 |[CALCULATETABLE](calculatetable-function-dax.md)     |  Evaluates a table expression in a modified filter context.         |
+|[EARLIER](earlier-function-dax.md)     |  Returns the current value of the specified column in an outer evaluation pass of the mentioned column.         |
+|[EARLIEST](earliest-function-dax.md)     |  Returns the current value of the specified column in an outer evaluation pass of the specified column.         |
 |[FILTER](filter-function-dax.md)      |  Returns a table that represents a subset of another table or expression.        |
 |[KEEPFILTERS](keepfilters-function-dax.md)      | Modifies how filters are applied while evaluating a CALCULATE or CALCULATETABLE function.         |
 |[LOOKUPVALUE](lookupvalue-function-dax.md)    | Returns the value for the row that meets all criteria specified by search conditions. The function can apply one or more search conditions.        |
