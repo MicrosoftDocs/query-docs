@@ -1,7 +1,7 @@
 ---
 title: "DATE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/05/2020
+ms.date: 08/20/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -23,8 +23,8 @@ DATE(<year>, <month>, <day>)
 |Term|Definition|  
 |--------|--------------|  
 |year|A number representing the year.<br /><br />The value of the **year** argument can include one to four digits. The **year** argument is interpreted according to the date system used by your computer.<br /><br />Dates beginning with March 1, 1900 are supported.<br /><br />If you enter a number that has decimal places, the number is rounded.<br /><br />For values greater than 9999 or less than zero (negative values), the function returns a **#VALUE!** error.<br /><br />If the **year** value is between 0 and 1899, the value is added to 1900 to produce the final value. See the examples below. **Note:** You should use four digits for the **year** argument whenever possible to prevent unwanted results. For example, using 07 returns 1907 as the year value.|  
-|month|A number representing the month or a calculation according to the following rules:<br /><br />If **month** is a number from 1 to 12, then it represents a month of the year. 1 represents January, 2 represents February, and so on until 12 that represents December.<br /><br />If you enter an integer larger than 12, the following computation occurs: the date is calculated by adding the value of **month** to the **year**. For example, if you have DATE( 2008, 18, 1), the function returns a datetime value equivalent to June 1st of 2009, because 18 months are added to the beginning of 2008 yielding a value of June 2009. See examples below.<br /><br />If you enter a negative integer, the following computation occurs: the date is calculated subtracting the value of **month** from **year**. For example, if you have DATE( 2008, -6, 15), the function returns a datetime value equivalent to June 15th of 2007, because when 6 months are subtracted from the beginning of 2008 it yields a value of June 2007. See examples below.|  
-|day|A number representing the day or a calculation according to the following rules:<br /><br />If **day** is a number from 1 to the last day of the given month then it represents a day of the month.<br /><br />If you enter an integer larger than last day of the given month, the following computation occurs: the date is calculated by adding the value of **day** to **month**. For example, in the formula `DATE( 2008, 3, 32)`, the DATE function returns a **datetime** value equivalent to April 1st of 2008, because 32 days are added to the beginning of March yielding a value of April 1st.<br /><br />If you enter a negative integer, the following computation occurs: the date is calculated subtracting the value of **day** from **month**. For example, in the formula `DATE( 2008, 5, -15)`, the DATE function returns a **datetime** value equivalent to April 15th of 2008, because 15 days are subtracted from the beginning of May 2008 yielding a value of April 2008.<br /><br />If **day** contains a decimal portion, it is rounded to the nearest integer value.|  
+|month|A number representing the month or a calculation according to the following rules:<br /><br />Negative integers are not supported. Valid values are 1-12. <br /><br />If **month** is a number from 1 to 12, then it represents a month of the year. 1 represents January, 2 represents February, and so on until 12 that represents December.<br /><br />If you enter an integer larger than 12, the following computation occurs: the date is calculated by adding the value of **month** to the **year**. For example, if you have DATE( 2008, 18, 1), the function returns a datetime value equivalent to June 1st of 2009, because 18 months are added to the beginning of 2008 yielding a value of June 2009. See examples below.|  
+|day|A number representing the day or a calculation according to the following rules:<br /><br />Negative integers are not supported. Valid values are 1-31. <br /><br />If **day** is a number from 1 to the last day of the given month then it represents a day of the month.<br /><br />If you enter an integer larger than last day of the given month, the following computation occurs: the date is calculated by adding the value of **day** to **month**. For example, in the formula `DATE( 2008, 3, 32)`, the DATE function returns a **datetime** value equivalent to April 1st of 2008, because 32 days are added to the beginning of March yielding a value of April 1st.<br /><br />If **day** contains a decimal portion, it is rounded to the nearest integer value.|  
   
 ## Return value
 
@@ -71,12 +71,6 @@ If **month** is greater than 12, **month** adds that number of months to the fir
 ```dax
 = DATE(2008,14,2)  
 ```
-
-If the **month** value is less than 1, the DATE function subtracts the magnitude of that number of months, plus 1, from the first month in the year specified. The following formula returns September 2, 2007:  
-  
-```dax
-= DATE(2008,-3,2)  
-```
   
 ## Example: Working with Days  
 
@@ -84,12 +78,6 @@ If **day** is greater than the number of days in the month specified, **day** ad
 
 ```dax
 = DATE(2008,1,35)  
-```
-
-If **day** is less than 1, **day** subtracts the magnitude that number of days, plus one, from the first day of the month specified. The following formula returns December 16, 2007:  
-  
-```dax
-= DATE(2008,1,-15)  
 ```
   
 ## See also
