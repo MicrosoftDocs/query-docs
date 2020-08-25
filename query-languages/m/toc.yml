@@ -735,6 +735,8 @@
               href: list-buffer.md
             - name: List.Combine
               href: list-combine.md
+            - name: List.ConformToPageReader
+              href: list-conformtopagereader.md
             - name: List.Contains
               href: list-contains.md
             - name: List.ContainsAll
@@ -1185,6 +1187,8 @@
               href: table-combinecolumns.md
             - name: Table.CombineColumnsToRecord
               href: table-combinecolumnstorecord.md
+            - name: Table.ConformToPageReader
+              href: table-conformtopagereader.md
             - name: Table.Contains
               href: table-contains.md
             - name: Table.ContainsAll

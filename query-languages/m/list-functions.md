@@ -1,6 +1,6 @@
 ---
 title: "List functions | Microsoft Docs"
-ms.date: 4/7/2020
+ms.date: 8/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -52,7 +52,8 @@ These functions create and manipulate list values.
 |Function|Description|  
 |------------|---------------|  
 |[List.Accumulate](list-accumulate.md)|Accumulates a result from the list. Starting from the initial value seed this function applies the accumulator function and returns the final result.|  
-|[List.Combine](list-combine.md)|Merges a list of lists into single list.|  
+|[List.Combine](list-combine.md)|Merges a list of lists into single list.|
+|[List.ConformToPageReader](list-conformtopagereader.md)|This function is intended for internal use only.|  
 |[List.RemoveRange](list-removerange.md)|Returns a list that removes count items starting at offset. The default count is 1.|  
 |[List.RemoveFirstN](list-removefirstn.md)|Returns a list with the specified number of elements removed from the list starting at the first element. The number of elements removed depends on the optional countOrCondition parameter.|  
 |[List.RemoveItems](list-removeitems.md)|Removes items from list1 that are present in list2, and returns a new list.|
