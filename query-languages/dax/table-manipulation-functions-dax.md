@@ -20,7 +20,7 @@ These functions return a table or manipulate existing tables.
 |[ADDMISSINGITEMS](addmissingitems-function-dax.md)       |     Adds combinations of items from multiple columns to a table if they do not already exist.    |
 |[CROSSJOIN](crossjoin-function-dax.md)      |  Returns a table that contains the Cartesian product of all rows from all tables in the arguments.      |
 |[DATATABLE](datatable-function.md)    |  Provides a mechanism for declaring an inline set of data values.        |
-|[DETAILROWS](detailrows-function.md)    |  Evaluates a Detail Rows Expression defined for a measure and returns the data.        |
+|[DETAILROWS](detailrows-function-dax.md)    |  Evaluates a Detail Rows Expression defined for a measure and returns the data.        |
 |[DISTINCT column](distinct-function-dax.md)      |  Returns a one-column table that contains the distinct values from the specified column.       |
 |[DISTINCT table](distinct-table-function-dax.md)      |  Returns a table by removing duplicate rows from another table or expression.       |
 |[EXCEPT](except-function-dax.md)     |  Returns the rows of one table which do not appear in another table.       |
