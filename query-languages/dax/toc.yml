@@ -563,6 +563,8 @@
               href: crossjoin-function-dax.md
             - name: DATATABLE
               href: datatable-function.md
+            - name: DETAILROWS
+              href: detailrows-function-dax.md
             - name: DISTINCT (column)
               href: distinct-function-dax.md
             - name: DISTINCT (table)
