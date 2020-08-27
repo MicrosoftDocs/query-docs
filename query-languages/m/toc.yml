@@ -89,8 +89,6 @@
               href: azurestorage-tables.md
             - name: Cdm.Contents
               href: cdm-contents.md
-            - name: Cdpa.Database
-              href: cdpa-database.md
             - name: Csv.Document
               href: csv-document.md
             - name: CsvStyle.QuoteAfterDelimiter
