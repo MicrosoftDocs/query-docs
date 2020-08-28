@@ -32,7 +32,6 @@ These functions access data and return table values. Most of these functions ret
 |[AzureStorage.DataLakeContents](azurestorage-datalakecontents.md)|Returns the content of the specified file from an Azure Data Lake Storage filesystem.|
 |[AzureStorage.Tables](azurestorage-tables.md)|Returns a navigational table containing a row for each table found at the account URL from an Azure storage vault. Each row contains a link to the azure table.|
 |[Cdm.Contents](cdm-contents.md)|This function is unavailable because it requires .NET 4.5.|
-|[Cdpa.Database](cdpa-database.md)|Provides access to a CDPA database.|
 |[Csv.Document](csv-document.md)|Returns the contents of a CSV document as a table using the specified encoding.|
 |[CsvStyle.QuoteAfterDelimiter](csvstyle-quoteafterdelimiter.md)|Quotes in a field are only significant immediately following the delimiter.| 
 |[CsvStyle.QuoteAlways](csvstyle-quotealways.md)|Quotes in a field are always significant regardless of where they appear.
