@@ -249,6 +249,8 @@
               href: isonorafter-function-dax.md
             - name: ISSELECTEDMEASURE
               href: isselectedmeasure-function-dax.md
+            - name: ISSUBTOTAL
+              href: issubtotal-function-dax.md
             - name: ISTEXT
               href: istext-function-dax.md
             - name: SELECTEDMEASURE
@@ -561,6 +563,8 @@
               href: addmissingitems-function-dax.md
             - name: CROSSJOIN 
               href: crossjoin-function-dax.md
+            - name: CURRENTGROUP 
+              href: currentgroup-function-dax.md
             - name: DATATABLE
               href: datatable-function.md
             - name: DETAILROWS
@@ -581,12 +585,22 @@
               href: generateseries-function.md
             - name: GROUPBY
               href: groupby-function-dax.md
+            - name: IGNORE
+              href: ignore-function-dax.md
             - name: INTERSECT
               href: intersect-function-dax.md
             - name: NATURALINNERJOIN
               href: naturalinnerjoin-function-dax.md
             - name: NATURALLEFTOUTERJOIN
               href: naturalleftouterjoin-function-dax.md
+            - name: ROLLUP
+              href: rollup-function-dax.md
+            - name: ROLLUPADDISUBTOTAL
+              href: rollupaddissubtotal-function-dax.md
+            - name: ROLLUPGROUP
+              href: rollupgroup-function-dax.md
+            - name: ROLLUPISUBTOTAL
+              href: rollupissubtotal-function-dax.md
             - name: ROW
               href: row-function-dax.md
             - name: SELECTCOLUMNS

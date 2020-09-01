@@ -53,15 +53,13 @@ A table with the selected columns for the groupBy_columnName arguments and the g
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-## Options  
-  
-### CURRENTGROUP()
+## With CURRENTGROUP
 
-CURRENTGROUP can only be used in an expression that defines a column within the GROUPBY function. In-effect, CURRENTGROUP returns a set of rows from the "table" argument of GROUPBY that belong to the current row of the GROUPBY result. The CURRENTGROUP function takes no arguments and is only supported as the first argument to one of the following aggregation functions: AverageX, CountAX, CountX, GeoMeanX, MaxX, MinX, ProductX, StDevX.S, StDevX.P, SumX, VarX.S, VarX.P.  
+[CURRENTGROUP](currentgroup-function-dax.md) can only be used in an expression that defines a column within the GROUPBY function. In-effect, [CURRENTGROUP](currentgroup-function-dax.md) returns a set of rows from the table argument of GROUPBY that belong to the current row of the GROUPBY result. The [CURRENTGROUP](currentgroup-function-dax.md) function takes no arguments and is only supported as the first argument to one of the following aggregation functions: AVERAGEX, COUNTAX, COUNTX, GEOMEANX, MAXX, MINX, PRODUCTX, STDEVX.S, STDEVX.P, SUMX, VARX.S, VARX.P.  
   
-#### Example
+### Example
 
-Assume a data model has four tables:  Sales, Customer, Product, Geography where Sales is on the "many" side of a relationship to each of the other three tables.  
+Assume a data model has four tables:  Sales, Customer, Product, Geography where Sales is on the "many" side of a relationship to each of the other three tables:  
   
 ```dax
 GROUPBY (  
@@ -80,7 +78,7 @@ This will start with the Sales table, extended with all the columns from all the
   
 - The third column is the sum of sales amount (as calculated from price*qty) for the selected country and product category.  
   
-Suppose we've built the previous result.  We can use GROUPBY again, to find the maximum category sales figure within each country as shown here.  
+Suppose we've built the previous result.  We can use GROUPBY again, to find the maximum category sales figure within each country as shown here:  
   
 ```dax
 DEFINE  
