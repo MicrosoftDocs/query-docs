@@ -46,7 +46,10 @@ A table which includes combinations of values from the supplied columns, based o
 Consider the following query:  
   
 ```dax
-SUMMARIZECOLUMNS ( 'Sales Territory'[Category], FILTER('Customer', 'Customer' [First Name] = "Alicia") )
+SUMMARIZECOLUMNS ( 
+    'Sales Territory'[Category], 
+    FILTER('Customer', 'Customer' [First Name] = "Alicia") 
+)
 ```
   
 In this query, without a measure the groupBy columns do not contain any columns from the FILTER expression (for example, from Customer table). The filter is not applied to the groupBy columns. The Sales Territory and Customer tables may be indirectly related through the Reseller sales fact table. Since they're not directly related, the filter expression is a no-op and the groupBy columns are not impacted.  
@@ -54,7 +57,10 @@ In this query, without a measure the groupBy columns do not contain any columns 
 However, with this query:  
   
 ```dax
-SUMMARIZECOLUMNS ( 'Sales Territory'[Category], 'Customer' [Education], FILTER('Customer', 'Customer'[First Name] = "Alicia") )
+SUMMARIZECOLUMNS ( 
+    'Sales Territory'[Category], 'Customer' [Education], 
+    FILTER('Customer', 'Customer'[First Name] = "Alicia") 
+)
 ```  
   
 The groupBy columns contain a column which is impacted by the filter and that filter is applied to the groupBy results.  
@@ -66,7 +72,11 @@ The [IGNORE](ignore-function-dax.md) syntax can be used to modify the behavior o
 ### Example
 
 ```dax
-SUMMARIZECOLUMNS( Sales[CustomerId], "Total Qty", IGNORE( SUM( Sales[Qty] ) ), "BlankIfTotalQtyIsNot3", IF( SUM( Sales[Qty] )=3, 3 ) )
+SUMMARIZECOLUMNS( 
+    Sales[CustomerId], "Total Qty", 
+    IGNORE( SUM( Sales[Qty] ) ), 
+    "BlankIfTotalQtyIsNot3", IF( SUM( Sales[Qty] )=3, 3 ) 
+)
 ```
   
 This rolls up the Sales[CustomerId] column, creating a subtotal for all customers in the given grouping. Without [IGNORE](ignore-function-dax.md), the result is:  
@@ -87,7 +97,11 @@ With [IGNORE](ignore-function-dax.md),
 All expression ignored,
   
 ```dax
-SUMMARIZECOLUMNS( Sales[CustomerId], "Blank", IGNORE( Blank() ), "BlankIfTotalQtyIsNot5", IGNORE( IF( SUM( Sales[Qty] )=5, 5 ) ) )
+SUMMARIZECOLUMNS( 
+    Sales[CustomerId], "Blank", 
+    IGNORE( Blank() ), "BlankIfTotalQtyIsNot5", 
+    IGNORE( IF( SUM( Sales[Qty] )=5, 5 ) ) 
+)
 ```
   
 Even though both expressions return blank for some rows, they're included since there are no non-ignored expressions which return blank.  
@@ -189,7 +203,10 @@ Returns the following table,
 ### Example with multiple subtotals
   
 ```dax
-SUMMARIZECOUMNS ( Regions[State], ROLLUPADDISSUBTOTAL ( Sales[CustomerId], "IsCustomerSubtotal" ), ROLLUPADDISSUBTOTAL ( Sales[Date], "IsDateSubtotal"), "Total Qty", SUM( Sales[Qty] ) )
+SUMMARIZECOUMNS ( 
+    Regions[State], ROLLUPADDISSUBTOTAL ( Sales[CustomerId], "IsCustomerSubtotal" ), 
+    ROLLUPADDISSUBTOTAL ( Sales[Date], "IsDateSubtotal"), "Total Qty", SUM( Sales[Qty] ) 
+)
 ```
   
 Sales is grouped by state, by customer, by date, with subtotals for 1. Sales by state, by date 2. Sales by State, by Customer 3. Rolled up on both customer and date leading to sales by state.  
@@ -220,7 +237,10 @@ Like with the [SUMMARIZE](summarize-function-dax.md) function, [ROLLUPGROUP()](r
 ### Example with multiple subtotals
   
 ```dax
-SUMMARIZECOLUMNS( ROLLUPADDISSUBTOTAL( Sales[CustomerId], "IsCustomerSubtotal" ), ROLLUPADDISSUBTOTAL(ROLLUPGROUP(Regions[City], Regions[State]), "IsCityStateSubtotal"),"Total Qty", SUM( Sales[Qty] ) )
+SUMMARIZECOLUMNS( 
+    ROLLUPADDISSUBTOTAL( Sales[CustomerId], "IsCustomerSubtotal" ), 
+    ROLLUPADDISSUBTOTAL(ROLLUPGROUP(Regions[City], Regions[State]), "IsCityStateSubtotal"),"Total Qty", SUM( Sales[Qty] ) 
+)
 ```  
   
 Still grouped by City and State, but rolled together when reporting a subtotal returns the following table,

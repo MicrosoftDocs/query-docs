@@ -36,3 +36,50 @@ A table with one or more columns.
 [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## With SUMMARIZECOLUMNS
+
+A table returned by SUMMARIZEZCOLUMNS will include only rows with values. By wrapping a SUMMMARIZECOLUMNS expression within an ADDMISSINGITEMS expression, rows containing no values are also returned.
+
+### Example
+
+Without ADDMISSINGITEMS, the following query:
+
+```dax
+SUMMARIZECOLUMNS( 
+    'Sales'[CustomerId], 
+    "Total Qty", SUM ( Sales[TotalQty] )
+)
+```
+
+Returns,
+
+|CustomerId|TotalQty|
+|--------------|------------|
+|A|5|
+|B|3|
+|C|3|
+|E|2|
+
+With ADDMISSINGITEMS, the following query:
+
+```dax
+EVALUATE
+ADMISSINGITEMS (
+    'Sales'[CustomerId],
+    SUMMARIZECOLUMNS( 
+        'Sales'[CustomerId],
+        "Total Qty", SUM ( Sales[TotalQty] )
+    ),
+    'Sales'[CustomerId]
+)
+```
+
+Returns,
+
+|CustomerId|TotalQty|
+|--------------|------------|
+|A|5|
+|B|3|
+|C|3|
+|D| |
+|E|2|
+|F| |
