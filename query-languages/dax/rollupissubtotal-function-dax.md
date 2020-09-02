@@ -34,7 +34,3 @@ None
 ## Remarks  
 
 This function can only be used within an [ADDMISSINGITEMS](addmissingitems-function-dax.md) expression.
-
-## Example
-
-See [ADDMISSINGITEMS](addmissingitems-function-dax.md).

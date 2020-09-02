@@ -23,7 +23,7 @@ ROLLUPADDISSUBTOTAL ( [<filter> …, ] <groupBy_columnName>, <isSubtotal_columnN
 |Term|Definition|  
 |--------|--------------|  
 |groupBy_columnName|The qualified name of an existing column to be used to create summary groups based on the values found in it. This parameter cannot be an expression.|  
-|isSubtotal_columnName|The name of the Boolean column to be added to the result indicating whether or not a row is a subtotal over the groupBy column, or columns when used with [ROLLUPGROUP](rollup[group-function-dax.md]). This value is calculated using the [ISSUBTOTAL](issubtotal-function-dax.md) function.|  
+|isSubtotal_columnName|The name of the Boolean column to be added to the result indicating whether or not a row is a subtotal over the groupBy column, or columns when used with ROLLUPGROUP. This value is calculated using the ISSUBTOTAL function.|  
 |filter    | A table expression which is added to the filter context at the current grouping level. A filter before the first group-by column is applied at the grand total level.
 
 ## Return value

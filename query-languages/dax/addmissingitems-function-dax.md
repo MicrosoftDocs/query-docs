@@ -10,7 +10,7 @@ ms.author: owend
 ---
 # ADDMISSINGITEMS
 
-Adds rows with empty values to a table returned by SUMMARIZECOLUMNS.
+Adds rows with empty values to a table returned by [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md).
   
 ## Syntax  
   
@@ -37,7 +37,7 @@ A table with one or more columns.
 
 ## With SUMMARIZECOLUMNS
 
-A table returned by SUMMARIZEZCOLUMNS will include only rows with values. By wrapping a SUMMMARIZECOLUMNS expression within an ADDMISSINGITEMS expression, rows containing no values are also returned.
+A table returned by [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) will include only rows with values. By wrapping a [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) expression within an ADDMISSINGITEMS expression, rows containing no values are also returned.
 
 ### Example
 
