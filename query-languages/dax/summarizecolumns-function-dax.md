@@ -232,7 +232,7 @@ Returns the following table,
   
 ## With ROLLUPGROUP
 
-Like with the [SUMMARIZE](summarize-function-dax.md) function, [ROLLUPGROUP()](rollupgroup-function-dax.md) can be used together with [ROLLUPADDISSUBTOTAL](rollupaddissubtotal-function-dax.md) to specify which summary groups/granularities (subtotals) to include, reducing the number of subtotal rows returned. [ROLLUPGROUP](rollupgroup-function-dax.md) can only be used within a SUMMARIZECOLUMNS or [SUMMARIZE](summarize-function-dax.md) expression.
+Like with the [SUMMARIZE](summarize-function-dax.md) function, [ROLLUPGROUP](rollupgroup-function-dax.md) can be used together with [ROLLUPADDISSUBTOTAL](rollupaddissubtotal-function-dax.md) to specify which summary groups/granularities (subtotals) to include, reducing the number of subtotal rows returned. [ROLLUPGROUP](rollupgroup-function-dax.md) can only be used within a SUMMARIZECOLUMNS or [SUMMARIZE](summarize-function-dax.md) expression.
   
 ### Example with multiple subtotals
   
