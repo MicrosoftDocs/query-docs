@@ -1,7 +1,7 @@
 ---
 title: "SUMMARIZECOLUMNS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/10/2020
+ms.date: 09/02/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -29,7 +29,7 @@ SUMMARIZECOLUMNS( <groupBy_columnName> [, < groupBy_columnName >]…, [<filterTa
   
 ## Return value
 
-A table which includes combinations of values from the supplied columns, based on the grouping specified. Only rows for which at least one of the supplied expressions return a non-blank value are included in the table returned. If all expressions evaluate to BLANK/NULL for a row, that row is not included in the table returned.  
+A table which includes combinations of values from the supplied columns based on the grouping specified. Only rows for which at least one of the supplied expressions return a non-blank value are included in the table returned. If all expressions evaluate to BLANK/NULL for a row, that row is not included in the table returned.  
   
 ## Remarks
 
@@ -104,7 +104,7 @@ SUMMARIZECOLUMNS(
 )
 ```
   
-Even though both expressions return blank for some rows, they're included since there are no non-ignored expressions which return blank.  
+Even though both expressions return blank for some rows, they're included since there are no unignored expressions which return blank.  
   
 |CustomerId|TotalQty|BlankIfTotalQtyIsNot3|  
 |--------------|------------|-------------------------|  

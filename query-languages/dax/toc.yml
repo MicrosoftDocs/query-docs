@@ -253,6 +253,8 @@
               href: issubtotal-function-dax.md
             - name: ISTEXT
               href: istext-function-dax.md
+            - name: NONVISUAL
+              href: nonvisual-function-dax.md
             - name: SELECTEDMEASURE
               href: selectedmeasure-function-dax.md
             - name: SELECTEDMEASUREFORMATSTRING
