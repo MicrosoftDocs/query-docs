@@ -1,7 +1,7 @@
 ---
 title: "ROLLUPISSUBTOTAL function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 09/01/2020
+ms.date: 09/09/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -15,17 +15,17 @@ Pairs rollup groups with the column added by [ROLLUPADDISSUBTOTAL](rollupaddissu
 ## Syntax  
   
 ```dax
-ROLLUPISSUBTOTAL ( [<GrandtotalFilter>], <GroupBy_ColumnName>, <IsSubtotal_ColumnName> [, [<GroupLevelFilter>] [, <GroupBy_ColumnName>, <IsSubtotal_ColumnName> [, [<GroupLevelFilter>] [, … ] ] ] ] )
+ROLLUPISSUBTOTAL ( [<grandTotalFilter>], <groupBy_columnName>, <isSubtotal_columnName> [, [<groupLevelFilter>] [, <groupBy_columnName>, <isSubtotal_columnName> [, [<groupLevelFilter>] [, … ] ] ] ] )
 ```
   
 ### Parameters  
 
 |Term|Definition|  
 |--------|--------------|  
-|GrandtotalFilter|(Optional) Filter to be applied to the grandtotal level.|  
-|GroupBy_ColumnName|Name of an existing column to be used to create summary groups based on the values found in it. Cannot be an expression.|  
-|IsSubtotal_ColumnName |Name of an ISSUBTOTAL column.|
-|GroupLevelFilter|(Optional) Filter to be applied to the current level.|
+|grandTotalFilter|(Optional) Filter to be applied to the grandtotal level.|  
+|groupBy_columnName|Name of an existing column used to create summary groups based on the values found in it. Cannot be an expression.|  
+|isSubtotal_columnName |Name of an ISSUBTOTAL column. The values of the column are calculated using the ISSUBTOTAL function. |
+|groupLevelFilter|(Optional) Filter to be applied to the current level.|
 
 ## Return value
 

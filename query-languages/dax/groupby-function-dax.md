@@ -1,7 +1,7 @@
 ---
 title: "GROUPBY function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/08/2020
+ms.date: 09/09/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -10,12 +10,12 @@ ms.author: owend
 ---
 # GROUPBY
   
-The GROUPBY function is similar to the SUMMARIZE function. However, GROUPBY does not do an implicit CALCULATE for any extension columns that it adds. GROUPBY permits a new function, CURRENTGROUP(), to be used inside aggregation functions in the extension columns that it adds. GROUPBY attempts to reuse the data that has been grouped making it highly performant.  
+The GROUPBY function is similar to the [SUMMARIZE](summarize-function-dax.md) function. However, GROUPBY does not do an implicit [CALCULATE](calculate-function-dax.md) for any extension columns that it adds. GROUPBY permits a new function, [CURRENTGROUP](currentgroup-function-dax.md), to be used inside aggregation functions in the extension columns that it adds. GROUPBY is used to perform multiple aggregations in a single table scan.
   
 ## Syntax  
   
 ```dax
-GROUPBY (<table>, [<groupBy_columnName1>], [<name>, <expression>]… )  
+GROUPBY (<table>, [<groupBy_columnName>], [<name>, <expression>]… )  
 ```
   
 ### Parameters  
@@ -25,11 +25,11 @@ GROUPBY (<table>, [<groupBy_columnName1>], [<name>, <expression>]… )
 |table|Any DAX expression that returns a table of data.|  
 |groupBy_columnName|The name of an existing column in the table (or in a related table,) by which the data is to be grouped. This parameter cannot be an expression.|  
 |name|The name given to a new column that is being added to the list of GroupBy columns, enclosed in double quotes.|  
-|expression|Any DAX expression that returns a single scalar value, where the expression is to be evaluated for each set of GroupBy values.<br /><br />**Note:** The expression used in GroupBy may include any of the "X" aggregation functions, such as SUMX, AVERAGEX, MINX, MAXX, etc. and when one of these function is used in this way, we allow the table argument (which normally must be a table expression) to be replaced by a special CURRENTGROUP() function as described elsewhere in this document.<br /><br />Restrictions on expression:<br /><br />-   The CALCULATE function (and therefore measures) are not allowed in the expression.<br />-   The CURRENTGROUP function may only be used at the top level of table scans in the expression. That is, SUMX(&lt;table&gt;,SUMX(CURRENTGROUP(…), …)) is not allowed. ABS( SUMX(CURRENTGROUP(), [Column] ) ) is allowed, since ABS does not perform a scan.|  
+|expression|One of the X aggregation functions with the first argument being CURRENTGROUP(). See With CURRENTGROUP section below for the full list of supported X aggregation functions.|  
   
 ## Return value
 
-A table with the selected columns for the groupBy_columnName arguments and the grouped by columns designated by the name arguments.  
+A table with the selected columns for the groupBy_columnName arguments and the extension columns designated by the name arguments.  
   
 ## Remarks
 
@@ -51,49 +51,32 @@ A table with the selected columns for the groupBy_columnName arguments and the g
   
 - The function groups a selected set of rows into a set of summary rows by the values of one or more groupBy_columnName columns. One row is returned for each group.  
 
+- GROUPBY is primarily used to perform aggregations over intermediate results from DAX table expressions. For efficient aggregations over physical tables in the model, consider using [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) or [SUMMARIZE](summarize-function-dax.md) function.
+
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## With CURRENTGROUP
 
-[CURRENTGROUP](currentgroup-function-dax.md) can only be used in an expression that defines a column within the GROUPBY function. In-effect, [CURRENTGROUP](currentgroup-function-dax.md) returns a set of rows from the table argument of GROUPBY that belong to the current row of the GROUPBY result. The [CURRENTGROUP](currentgroup-function-dax.md) function takes no arguments and is only supported as the first argument to one of the following aggregation functions: AVERAGEX, COUNTAX, COUNTX, GEOMEANX, MAXX, MINX, PRODUCTX, STDEVX.S, STDEVX.P, SUMX, VARX.S, VARX.P.  
+[CURRENTGROUP](currentgroup-function-dax.md) can only be used in an expression that defines an extension column within the GROUPBY function. In-effect, [CURRENTGROUP](currentgroup-function-dax.md) returns a set of rows from the table argument of GROUPBY that belong to the current row of the GROUPBY result. The [CURRENTGROUP](currentgroup-function-dax.md) function takes no arguments and is only supported as the first argument to one of the following aggregation functions: [AVERAGEX](averagex-function-dax.md), [COUNTAX](countax-function-dax.md), [COUNTX](countx-function-dax.md), [GEOMEANX](geomeanx-function-dax.md), [MAXX](maxx-function-dax.md), [MINX](minx-function-dax.md), [PRODUCTX](productx-function-dax.md), [STDEVX.S](stdevx-s-function-dax.md), [STDEVX.P](stdevx-s-function-dax.md), [SUMX](sumx-function-dax.md), [VARX.S](varx-s-function-dax.md), [VARX.P](varx-p-function-dax.md).  
   
 ### Example
 
-Assume a data model has four tables:  Sales, Customer, Product, Geography where Sales is on the "many" side of a relationship to each of the other three tables:  
-  
-```dax
-GROUPBY (  
-Sales,
-Geography[Country],
-Product[Category],
-"Total Sales", SUMX( CURRENTGROUP(), Sales[Price] * Sales[Qty])  
-)  
-```
-
-This will start with the Sales table, extended with all the columns from all the related tables.Then it will build a result with three columns.  
-  
-- The first column is each of the countries for which there is a sale.  
-  
-- The second column is each product category for which there is a sale in that country.  
-  
-- The third column is the sum of sales amount (as calculated from price*qty) for the selected country and product category.  
-  
-Suppose we've built the previous result.  We can use GROUPBY again, to find the maximum category sales figure within each country as shown here:  
+The following example first calculates the total sales grouped by country and product category over physical tables by using the [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) function. It then uses the GROUPBY function to scan the intermediate result from the first step to find the maximum sales in each country across the product categories.
   
 ```dax
 DEFINE  
 VAR SalesByCountryAndCategory =  
-GROUPBY (  
-Sales,
+SUMMARIZECOLUMNS(  
 Geography[Country],
 Product[Category],
-"Total Sales", SUMX( CURRENTGROUP(), Sales[Price] * Sales[Qty])  
+"Total Sales", SUMX(Sales, Sales[Price] * Sales[Qty])  
 )  
   
-Evaluate GROUPBY (  
+EVALUATE
+GROUPBY(  
 SalesByCountryAndCategory,
 Geography[Country],
- "Max Sales", MAXX( CURRENTGROUP(), [Total Sales])  
+"Max Sales", MAXX(CURRENTGROUP(), [Total Sales])  
 )  
 ```
   

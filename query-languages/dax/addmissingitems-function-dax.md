@@ -1,7 +1,7 @@
 ---
 title: "ADDMISSINGITEMS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 09/01/2020
+ms.date: 09/09/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -15,17 +15,17 @@ Adds rows with empty values to a table returned by [SUMMARIZECOLUMNS](summarizec
 ## Syntax  
   
 ```dax
-ADDMISSINGITEMS ( [<ShowAll_ColumnName> [, <ShowAll_ColumnName> [, … ] ] ], <Table> [, <GroupBy_ColumnName> [, [<FilterTable>] [, <GroupBy_ColumnName> [, [<FilterTable>] [, … ] ] ] ] ] ] )
+ADDMISSINGITEMS ( [<showAll_columnName> [, <showAll_columnName> [, … ] ] ], <table> [, <groupBy_columnName> [, [<filterTable>] [, <groupBy_columnName> [, [<filterTable>] [, … ] ] ] ] ] ] )
 ```
   
 ### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  
-|ShowAllColumnName| (Optional) A column for which to return items with no data for the measures used. If not specified, all columns are returned.|  
-|Table|A SUMMARIZECOLUMNS table.|  
-|GroupBy_ColumnName|(Optional) A column to group by in the supplied table argument.|
-|FilterTable|(Optional) A table expression that defines which rows are returned.|  
+|showAll_columnName| (Optional) A column for which to return items with no data for the measures used. If not specified, all columns are returned.|  
+|table|A SUMMARIZECOLUMNS table.|  
+|groupBy_columnName|(Optional) A column to group by in the supplied table argument.|
+|filterTable|(Optional) A table expression that defines which rows are returned.|  
 
 ## Return value
 

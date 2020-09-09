@@ -36,7 +36,7 @@ DAX information functions look at the cell or row that is provided as an argumen
 |[ISODD](isodd-function-dax.md)      | Returns TRUE if number is odd, or FALSE if number is even.        |
 |[ISONORAFTER](isonorafter-function-dax.md)     | A boolean function that emulates the behavior of a Start At clause and returns true for a row that meets all of the condition parameters.        |
 |[ISSELECTEDMEASURE](isselectedmeasure-function-dax.md)|   Used by expressions for calculation items to determine the measure that is in context is one of those specified in a list of measures.   |
-|[ISSUBTOTAL](issubtotal-function-dax.md)       |  Creates another column in a SUMMARIZE expression that returns True if the row contains sub-total values for the column given as argument, otherwise returns False.        |
+|[ISSUBTOTAL](issubtotal-function-dax.md)       |  Creates another column in a SUMMARIZE expression that returns True if the row contains subtotal values for the column given as argument, otherwise returns False.        |
 |[ISTEXT](istext-function-dax.md)     | Checks if a value is text, and returns TRUE or FALSE.          |
 |[NONVISUAL](nonvisual-function-dax.md)     |  Marks a value filter in a SUMMARIZECOLUMNS expression as non-visual.       |
 |[SELECTEDMEASURE](selectedmeasure-function-dax.md) |   Used by expressions for calculation items to reference the measure that is in context.   |

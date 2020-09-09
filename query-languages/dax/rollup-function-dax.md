@@ -10,7 +10,7 @@ ms.author: owend
 ---
 # ROLLUP
 
-Modifies the behavior of the [SUMMARIZE](summarize-function-dax.md) function by adding roll-up rows to the result on columns defined by the groupBy_columnName parameter. This function can only be used within a [SUMMARIZE](summarize-function-dax.md) expression.
+Modifies the behavior of the [SUMMARIZE](summarize-function-dax.md) function by adding rollup rows to the result on columns defined by the groupBy_columnName parameter. This function can only be used within a [SUMMARIZE](summarize-function-dax.md) expression.
   
 ## Syntax
 
@@ -28,7 +28,7 @@ SUMMARIZE(<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, ROLLUP(<gro
 
 |Term|Definition|  
 |--------|--------------|  
-| groupBy_columnName | The qualified name of an existing column to be used to create summary groups based on the values found in it. This parameter cannot be an expression.  |
+| groupBy_columnName | The qualified name of an existing column or ROLLUPGROUP function to be used to create summary groups based on the values found in it. This parameter cannot be an expression.  |
 
 ## Return value
 

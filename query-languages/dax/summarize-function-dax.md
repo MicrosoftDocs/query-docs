@@ -15,17 +15,17 @@ Returns a summary table for the requested totals over a set of groups.
 ## Syntax  
   
 ```dax
-SUMMARIZE(<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, <name>, <expression>]…)  
+SUMMARIZE (<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, <name>, <expression>]…)
 ```
   
 ### Parameters  
 
 |Term|Definition|  
 |--------|--------------|  
-|  table |  Any DAX expression that returns a table of data.  |  
-| groupBy_columnName | (Optional) The qualified name of an existing column to be used to create summary groups based on the values found in it. This parameter cannot be an expression.  |
-|name|The name given to a total or summarize column, enclosed in double quotes. |
-|expression |Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context). |
+| table |  Any DAX expression that returns a table of data.  |  
+| groupBy_ColumnName | (Optional) The qualified name of an existing column used to create summary groups based on the values found in it. This parameter cannot be an expression.  |
+| name | The name given to a total or summarize column, enclosed in double quotes. |
+| expression |Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context). |
 
 ## Return value
 
@@ -79,11 +79,11 @@ The following table shows a preview of the data as it would be received by any f
   
 ## With ROLLUP
 
-The addition of the [ROLLUP](rollup-function-dax.md) syntax modifies the behavior of the SUMMARIZE function by adding roll-up rows to the result on the groupBy_columnName columns. [ROLLUP](rollup-function-dax.md) can only be used within a SUMMARIZE expression.
+The addition of the [ROLLUP](rollup-function-dax.md) syntax modifies the behavior of the SUMMARIZE function by adding rollup rows to the result on the groupBy_columnName columns. [ROLLUP](rollup-function-dax.md) can only be used within a SUMMARIZE expression.
 
 ### Example
 
-The following example adds roll-up rows to the Group-By columns of the SUMMARIZE function call:  
+The following example adds rollup rows to the Group-By columns of the SUMMARIZE function call:  
   
 ```dax
 SUMMARIZE(ResellerSales_USD  
@@ -121,7 +121,7 @@ Returns the following table,
   
 ## With ROLLUPGROUP
 
-[ROLLUPGROUP](rollupgroup-function-dax.md) can be used to calculate groups of subtotals. If used in-place of [ROLLUP](rollup-function-dax.md), [ROLLUPGROUP](rollupgroup-function-dax.md) will yield the same result by adding roll-up rows to the result on the groupBy_columnName columns. However, the addition of [ROLLUPGROUP](rollupgroup-function-dax.md) inside a [ROLLUP](rollup-function-dax.md) syntax can be used to prevent partial subtotals in roll-up rows. [ROLLUPGROUP](rollupgroup-function-dax.md) can only be used within a [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) or SUMMARIZE expression.
+The addition of [ROLLUPGROUP](rollupgroup-function-dax.md) inside a [ROLLUP](rollup-function-dax.md) syntax can be used to prevent partial subtotals in rollup rows. [ROLLUPGROUP](rollupgroup-function-dax.md) can only be used within a [ROLLUP](rollup-function-dax.md), [ROLLUPADDISSUBTOTAL](rollupaddissubtotal-function-dax.md), or [ROLLUPISSUBTOTAL](rollupissubtotal-function-dax.md) expression.
 
 ### Example
 
@@ -159,7 +159,7 @@ Returns the following table,
   
 ## With ISSUBTOTAL
 
-With [ISSUBTOTAL](issubtotal-function-dax.md), you can create another column in the SUMMARIZE expression that returns True if the row contains sub-total values for the column given as argument to [ISSUBTOTAL](issubtotal-function-dax.md), otherwise returns False. [ISSUBTOTAL](issubtotal-function-dax.md) can only be used within a SUMMARIZE expression.
+With [ISSUBTOTAL](issubtotal-function-dax.md), you can create another column in the SUMMARIZE expression that returns True if the row contains subtotal values for the column given as argument to [ISSUBTOTAL](issubtotal-function-dax.md), otherwise returns False. [ISSUBTOTAL](issubtotal-function-dax.md) can only be used within a SUMMARIZE expression.
   
 ### Example
 

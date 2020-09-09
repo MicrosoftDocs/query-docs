@@ -34,10 +34,10 @@ These functions return a table or manipulate existing tables.
 |[INTERSECT](intersect-function-dax.md)       |   Returns the row intersection of two tables, retaining duplicates.       |
 |[NATURALINNERJOIN](naturalinnerjoin-function-dax.md)     |  Performs an inner join of a table with another table.        |
 |[NATURALLEFTOUTERJOIN](naturalleftouterjoin-function-dax.md)     |  Performs an inner join of a table with another table.       |
-|[ROLLUP](rollup-function-dax.md)    |  Modifies the behavior of SUMMARIZE by adding roll-up rows to the result on columns defined by the groupBy_columnName parameter.     |
-|[ROLLUPADDISSUBTOTAL](rollupaddissubtotal-function-dax.md)    | Modifies the behavior of SUMMARIZECOLUMNS by adding roll-up/subtotal rows to the result based on the groupBy_columnName columns.        |
+|[ROLLUP](rollup-function-dax.md)    |  Modifies the behavior of SUMMARIZE by adding rollup rows to the result on columns defined by the groupBy_columnName parameter.     |
+|[ROLLUPADDISSUBTOTAL](rollupaddissubtotal-function-dax.md)    | Modifies the behavior of SUMMARIZECOLUMNS by adding rollup/subtotal rows to the result based on the groupBy_columnName columns.        |
 |[ROLLUPISSUBTOTAL](rollupissubtotal-function-dax.md)    |  Pairs rollup groups with the column added by ROLLUPADDISSUBTOTAL within an ADDMISSINGITEMS expression.      |
-|[ROLLUPGROUP](rollupgroup-function-dax.md)    |   Modifies the behavior of SUMMARIZE and SUMMARIZECOLUMNS by adding roll-up rows to the result on columns defined by the the groupBy_columnName parameter.       |
+|[ROLLUPGROUP](rollupgroup-function-dax.md)    |   Modifies the behavior of SUMMARIZE and SUMMARIZECOLUMNS by adding rollup rows to the result on columns defined by the the groupBy_columnName parameter.       |
 |[ROW](row-function-dax.md)     |  Returns a table with a single row containing values that result from the expressions given to each column.         |
 |[SELECTCOLUMNS](selectcolumns-function-dax.md)    |  Adds calculated columns to the given table or table expression.         |
 |[SUBSTITUTEWITHINDEX](substitutewithindex-function-dax.md)      |  Returns a table which represents a left semijoin of the two tables supplied as arguments.        |

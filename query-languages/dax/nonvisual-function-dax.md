@@ -10,7 +10,7 @@ ms.author: owend
 ---
 # NONVISUAL
 
-Marks a value filter [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) expression as non-visual. This function can only be used within a [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) expression.
+Marks a value filter in a [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) expression as non-visual. This function can only be used within a [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) expression.
 
 ## Syntax  
   
@@ -32,7 +32,7 @@ A table of values.
 
 - Marks a value filter in [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) as not affecting measure values, but only applying to group-by columns.
 
-- This function can only be used within a [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) expression.
+- This function can only be used within a [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) expression. It's used as either a filterTable argument of the [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) function or a groupLevelFilter argument of the [ROLLUPADDISSUBTOTAL](rollupaddissubtotal-function-dax.md) or [ROLLUPISSUBTOTAL](rollupissubtotal-function-dax.md) function.
 
 ## Example
 

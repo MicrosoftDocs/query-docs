@@ -164,7 +164,7 @@ Returns the result where [Visual Total Sales] is the total across the two select
   
 ## With ROLLUPADDISSUBTOTAL
 
-The addition of the [ROLLUPADDISSUBTOTAL](rollupaddissubtotal-function-dax.md) syntax modifies the behavior of the SUMMARIZECOLUMNS function by adding roll-up/subtotal rows to the result based on the groupBy_columnName columns. [ROLLUPADDISSUBTOTAL](rollupaddissubtotal-function-dax.md) can only be used within a SUMMARIZECOLUMNS expression.
+The addition of the [ROLLUPADDISSUBTOTAL](rollupaddissubtotal-function-dax.md) syntax modifies the behavior of the SUMMARIZECOLUMNS function by adding rollup/subtotal rows to the result based on the groupBy_columnName columns. [ROLLUPADDISSUBTOTAL](rollupaddissubtotal-function-dax.md) can only be used within a SUMMARIZECOLUMNS expression.
   
 ### Example with single subtotal
   
