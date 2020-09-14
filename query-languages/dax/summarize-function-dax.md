@@ -1,7 +1,7 @@
 ---
 title: "SUMMARIZE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/10/2020
+ms.date: 09/02/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -15,17 +15,17 @@ Returns a summary table for the requested totals over a set of groups.
 ## Syntax  
   
 ```dax
-SUMMARIZE(<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, <name>, <expression>]…)  
+SUMMARIZE (<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, <name>, <expression>]…)
 ```
   
 ### Parameters  
 
 |Term|Definition|  
 |--------|--------------|  
-|  table |  Any DAX expression that returns a table of data.  |  
-| groupBy_columnName | (Optional) The qualified name of an existing column to be used to create summary groups based on the values found in it. This parameter cannot be an expression.  |
-|name|The name given to a total or summarize column, enclosed in double quotes. |
-|expression |Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context). |
+| table |  Any DAX expression that returns a table of data.  |  
+| groupBy_ColumnName | (Optional) The qualified name of an existing column used to create summary groups based on the values found in it. This parameter cannot be an expression.  |
+| name | The name given to a total or summarize column, enclosed in double quotes. |
+| expression |Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context). |
 
 ## Return value
 
@@ -79,33 +79,11 @@ The following table shows a preview of the data as it would be received by any f
   
 ## With ROLLUP
 
-The addition of the ROLLUP() syntax modifies the behavior of the SUMMARIZE function by adding roll-up rows to the result on the groupBy_columnName columns.  
+The addition of the [ROLLUP](rollup-function-dax.md) syntax modifies the behavior of the SUMMARIZE function by adding rollup rows to the result on the groupBy_columnName columns. [ROLLUP](rollup-function-dax.md) can only be used within a SUMMARIZE expression.
 
-### Syntax for ROLLUP
+### Example
 
-```dax
-ROLLUP ( <groupBy_columnName> [, <groupBy_columnName> [, … ] ] )
-```
-
-With SUMMARIZE,
-
-```dax
-SUMMARIZE(<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, ROLLUP(<groupBy_columnName>[,< groupBy_columnName>…])][, <name>, <expression>]…)  
-```
-  
-#### Parameters for ROLLUP
-
-|Term|Definition|  
-|--------|--------------|  
-|groupBy_columnName |The qualified name of an existing column to be used to create summary groups based on the values found in it. This parameter cannot be an expression. |
-
-### Return value for ROLLUP
-
-The function does not return a value. It only specifies the set of columns to be subtotaled.  
-
-### Example with ROLLUP
-
-The following example adds roll-up rows to the Group-By columns of the SUMMARIZE function call.  
+The following example adds rollup rows to the Group-By columns of the SUMMARIZE function call:  
   
 ```dax
 SUMMARIZE(ResellerSales_USD  
@@ -115,7 +93,7 @@ SUMMARIZE(ResellerSales_USD
 )  
 ```
 
-The following table shows a preview of the data as it would be received by any function expecting to receive a table:  
+Returns the following table,  
   
 |**DateTime[CalendarYear]**|**ProductCategory[ProductCategoryName]**|**[Sales Amount (USD)]**|**[Discount Amount (USD)]**|  
 |---------|---------|---------|---------|  
@@ -143,29 +121,9 @@ The following table shows a preview of the data as it would be received by any f
   
 ## With ROLLUPGROUP
 
-ROLLUPGROUP() can be used to calculate groups of subtotals. If used in-place of ROLLUP, ROLLUPGROUP will yield the same result by adding roll-up rows to the result on the groupBy_columnName columns. However, the addition of ROLLUPGROUP() inside a ROLLUP syntax can be used to prevent partial subtotals in roll-up rows.  
+The addition of [ROLLUPGROUP](rollupgroup-function-dax.md) inside a [ROLLUP](rollup-function-dax.md) syntax can be used to prevent partial subtotals in rollup rows. [ROLLUPGROUP](rollupgroup-function-dax.md) can only be used within a [ROLLUP](rollup-function-dax.md), [ROLLUPADDISSUBTOTAL](rollupaddissubtotal-function-dax.md), or [ROLLUPISSUBTOTAL](rollupissubtotal-function-dax.md) expression.
 
-### Syntax for ROLLUPGROUP
-
-```dax
-ROLLUPGROUP ( <groupBy_columnName> [, <groupBy_columnName> [, … ] ] )
-```
-
-#### Parameters for ROLLUPGROUP
-
-|Term|Definition|  
-|--------|--------------|  
-|groupBy_columnName |The qualified name of an existing column to be used to create summary groups based on the values found in it. This parameter cannot be an expression. |
-
-### Return value for ROLLUPGROUP
-
-The function does not return a value. It marks a set of columns to be grouped during subtotaling by ROLLUPADDISSUBTOTAL.  
-
-### Remarks for ROLLUPGROUP
-
-ROLLUPGROUP can only be used as an groupBy_columnName argument to ROLLUPADDISSUBTOTAL or the SUMMARIZE function. 
-
-### Example with ROLLUPGROUP
+### Example
 
 The following example shows only the grand total of all years and categories without the subtotal of each year with all categories:  
   
@@ -177,7 +135,7 @@ SUMMARIZE(ResellerSales_USD
 )  
 ```
 
-The following table shows a preview of the data as it would be received by any function expecting to receive a table:  
+Returns the following table,  
   
 |**DateTime[CalendarYear]**|**ProductCategory[ProductCategoryName]**|**[Sales Amount (USD)]**|**[Discount Amount (USD)]**|  
 |---------|---------|---------|---------|  
@@ -201,39 +159,11 @@ The following table shows a preview of the data as it would be received by any f
   
 ## With ISSUBTOTAL
 
-ISSUBTOTAL() enables you to create another column, in the SUMMARIZE function, that returns True if the row contains sub-total values for the column given as argument to ISSUBTOTAL, otherwise returns False.  
-
-### Syntax for ISSUBTOTAL
-
-```dax
-ISSUBTOTAL(<columnName>)
-```
-
-With SUMMARIZE,
-
-```dax
-SUMMARIZE(<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, ROLLUP(<groupBy_columnName>[,< groupBy_columnName>…])][, <name>, {<expression>|ISSUBTOTAL(<columnName>)}]…)  
-```
+With [ISSUBTOTAL](issubtotal-function-dax.md), you can create another column in the SUMMARIZE expression that returns True if the row contains subtotal values for the column given as argument to [ISSUBTOTAL](issubtotal-function-dax.md), otherwise returns False. [ISSUBTOTAL](issubtotal-function-dax.md) can only be used within a SUMMARIZE expression.
   
-#### Parameters for ISSUBTOTAL
+### Example
 
-|Term|Definition|  
-|--------|--------------|
-|columnName  |The name of any column in table of the SUMMARIZE function or any column in a related table to table.  |
-
-### Return value for ISSUBTOTAL
-
-A **True** value if the row contains a sub-total value for the column given as argument, otherwise returns **False**  
-  
-### Remarks for ISSUBTOTAL
-  
-- ISSUBTOTAL can only be used in the expression part of a SUMMARIZE function.  
-  
-- ISSUBTOTAL must be preceded by a matching *name* column.  
-  
-### Example with ISSUBTOTAL
-
-The following sample generates an ISSUBTOTAL() column for each of the ROLLUP() columns in the given SUMMARIZE() function call.  
+The following sample generates an [ISSUBTOTAL](issubtotal-function-dax.md) column for each of the [ROLLUP](rollup-function-dax.md) columns in the given SUMMARIZE function call:  
   
 ```dax
 SUMMARIZE(ResellerSales_USD  
@@ -245,7 +175,7 @@ SUMMARIZE(ResellerSales_USD
 )  
 ```
 
-The following table shows a preview of the data as it would be received by any function expecting to receive a table:  
+Returns the following table,
   
 |**[Is Sub Total for DateTimeCalendarYear]**|**[Is Sub Total for ProductCategoryName]**|**DateTime[CalendarYear]**|**ProductCategory[ProductCategoryName]**|**[Sales Amount (USD)]**|**[Discount Amount (USD)]**|  
 |---------|---------|---------|---------|---------|---------|  
