@@ -1,7 +1,7 @@
 ---
 title: "GROUPBY function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 09/09/2020
+ms.date: 09/14/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -15,7 +15,7 @@ The GROUPBY function is similar to the [SUMMARIZE](summarize-function-dax.md) fu
 ## Syntax  
   
 ```dax
-GROUPBY (<table>, [<groupBy_columnName>], [<name>, <expression>]… )  
+GROUPBY (<table> [, <groupBy_columnName> [, <groupBy_columnName> [, …]]] [, <name>, <expression> [, <name>, <expression> [, …]]])
 ```
   
 ### Parameters  
