@@ -1,7 +1,7 @@
 ---
 title: "ADDMISSINGITEMS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/05/2020
+ms.date: 09/09/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -9,103 +9,77 @@ ms.author: owend
 
 ---
 # ADDMISSINGITEMS
-  
-Adds combinations of items from multiple columns to a table if they do not already exist. The determination of which item combinations to add is based on referencing source columns which contain all the possible values for the columns.  
-  
-To determine the combinations of items from different columns to evaluate: AutoExist is applied for columns within the same table while CrossJoin is applied across different tables.  
-  
-The ADDMISSINGITEMS function will return BLANK values for the IsSubtotal columns of blank rows it adds.  
+
+Adds rows with empty values to a table returned by [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md).
   
 ## Syntax  
   
 ```dax
-ADDMISSINGITEMS(<showAllColumn>[, <showAllColumn>]…, <table>, <groupingColumn>[, <groupingColumn>]…[, filterTable]…)  
-```
-
-With ROLLUPISSUBTOTAL,
-
-```dax
-ADDMISSINGITEMS(<showAllColumn>[, <showAllColumn>]…, <table>, [ROLLUPISSUBTOTAL(]<groupingColumn>[, <isSubtotal_columnName>][, <groupingColumn>][, <isSubtotal_columnName>]…[)], [, filterTable]…)  
+ADDMISSINGITEMS ( [<showAll_columnName> [, <showAll_columnName> [, … ] ] ], <table> [, <groupBy_columnName> [, [<filterTable>] [, <groupBy_columnName> [, [<filterTable>] [, … ] ] ] ] ] ] )
 ```
   
 ### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  
-|showAllColumn|A column for which to return items with no data for the measures used.|  
-|table|A table containing all items with data (NON EMPTY) for the measures used.|  
-|groupingColumn|A column which is used to group by in the supplied table argument.|  
-|isSubtotal_columnName|A Boolean column in the supplied table argument which contains ISSUBTOTAL values for the corresponding groupingColumn column.|  
-|filterTable|A table representing filters to include in the logic for determining whether to add specific combinations of items with no data. Used to avoid having ADDMISSINGITEMS add in item combinations which are not present because they were removed by a filter.|  
-  
+|showAll_columnName| (Optional) A column for which to return items with no data for the measures used. If not specified, all columns are returned.|  
+|table|A SUMMARIZECOLUMNS table.|  
+|groupBy_columnName|(Optional) A column to group by in the supplied table argument.|
+|filterTable|(Optional) A table expression that defines which rows are returned.|  
+
+## Return value
+
+A table with one or more columns.
+
 ## Remarks
 
 [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-## Advanced ADDMISSINGITEMS options
+## With SUMMARIZECOLUMNS
 
-With ROLLUPGROUP,
+A table returned by [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) will include only rows with values. By wrapping a [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) expression within an ADDMISSINGITEMS expression, rows containing no values are also returned.
 
-ROLLUPGROUP is used inside the ROLLUPISSUBTOTAL function to reflect ROLLUPGROUPs present in the supplied table argument.  
-  
-### Remarks for options
-  
-- If ROLLUPISSUBTOTAL was used to define the supplied table argument (or the equivalent rows and ISSUBTOTAL columns were added by some other means), ROLLUPISSUBTOTAL must be used with the same arguments within ADDMISSINGITEMS. This is also true for ROLLUPGROUP if it was used with ROLLUPISSUBTOTAL to define the supplied table argument.  
-  
-- The ADDMISSINGITEMS function requires that, if ROLLUPISSUBTOTAL was used to define the supplied table argument, ISSUBTOTAL columns corresponding to each group by column, or ROLLUPGROUP, are present in the supplied table argument. Also, the names of the ISSUBTOTAL columns must be supplied in the ROLLUPISSUBTOTAL function inside ADDMISSINGITEMS and they must match names of Boolean columns in the supplied table argument. This enables the ADDMISSINGITEMS function to identify BLANK values stemming from the fact that a row is a subtotal row from other BLANK values.  
-  
-- If ROLLUPGROUP was used with ROLLUPISSUBTOTAL to define the supplied table argument, exactly one ISSUBTOTAL column name must be supplied per ROLLUPGROUP and it must match the corresponding ISSUBTOTAL column name in the supplied table argument.  
-  
-### Example with ROLLUPISSUBTOTAL
+### Example
 
-Add blank rows for columns with "show items with no data" turned on. The ADDMISSINGITEMS function will return NULLs/BLANKs for the IsSubtotal columns of blank rows it adds.  
-  
+Without ADDMISSINGITEMS, the following query:
+
 ```dax
-VAR 'RowHeadersShowAll' =
-CALCULATETABLE
-(  
-ADDMISSINGITEMS
-(  
-[Sales Territory Country],
-[Sales Territory Region],
-'RowHeadersInCrossTab',
-ROLLUPISSUBTOTAL
-(  
-[Sales Territory Group],
-[Subtotal for Sales Territory Group],
-[Sales Territory Country],
-[Subtotal for Sales Territory Country],
-[Sales Territory Region],
-[Subtotal for Sales Territory Region]
-),
-'RowHeaders'
-),
-'DateFilter','TerritoryFilter'
-)  
+SUMMARIZECOLUMNS( 
+    'Sales'[CustomerId], 
+    "Total Qty", SUM ( Sales[TotalQty] )
+)
 ```
 
-### Example with ROLLUPGROUP  
-  
+Returns,
+
+|CustomerId|TotalQty|
+|--------------|------------|
+|A|5|
+|B|3|
+|C|3|
+|E|2|
+
+With ADDMISSINGITEMS, the following query:
+
 ```dax
-VAR 'RowHeadersShowAll' =
-CALCULATETABLE
-(  
-ADDMISSINGITEMS
-(  
-[Sales Territory Country],
-[Sales Territory Region],
-'RowHeadersInCrossTab',
-ROLLUPISSUBTOTAL
-(  
-ROLLUPGROUP
-(  
-[Sales Territory Group],
-[Sales Territory Country]
-),
-[Subtotal for Sales Territory Country],
-[Sales Territory Region],
-[Subtotal for Sales Territory Region]
-),
-'RowHeaders'
-)  
+EVALUATE
+ADMISSINGITEMS (
+    'Sales'[CustomerId],
+    SUMMARIZECOLUMNS( 
+        'Sales'[CustomerId],
+        "Total Qty", SUM ( Sales[TotalQty] )
+    ),
+    'Sales'[CustomerId]
+)
 ```
+
+Returns,
+
+|CustomerId|TotalQty|
+|--------------|------------|
+|A|5|
+|B|3|
+|C|3|
+|D| |
+|E|2|
+|F| |
