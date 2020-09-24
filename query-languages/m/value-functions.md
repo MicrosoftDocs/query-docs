@@ -74,5 +74,5 @@ Implementation | Description
 | ------ | --------- |
 |[Graph.Nodes](graph-nodes.md)|This function is intended for internal use only.|
 |[Value.Lineage](value-lineage.md)|This function is intended for internal use only.|
-|[Value.Traits](alue-traits.md)|This function is intended for internal use only.|
+|[Value.Traits](value-traits.md)|This function is intended for internal use only.|
   
