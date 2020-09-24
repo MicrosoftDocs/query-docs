@@ -1573,6 +1573,8 @@
               href: directquerycapabilities-from.md
             - name: Embedded.Value
               href: embedded-value.md
+            - name: Graph.Nodes
+              href: graph-nodes.md
             - name: Precision.Decimal
               href: precision-decimal.md
             - name: Precision.Double
@@ -1599,6 +1601,8 @@
               href: value-fromtext.md
             - name: Value.Is
               href: value-is.md
+            - name: Value.Lineage
+              href: value-lineage.md
             - name: Value.Metadata
               href: value-metadata.md
             - name: Value.Multiply
@@ -1617,6 +1621,8 @@
               href: value-replacetype.md
             - name: Value.Subtract
               href: value-subtract.md
+            - name: Value.Traits
+              href: value-traits.md
             - name: Value.Type
               href: value-type.md
             - name: Variable.Value

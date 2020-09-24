@@ -67,4 +67,12 @@ Implementation | Description
 |[Value.Metadata](value-metadata.md)|Returns a record containing the input’s metadata.|  
 |[Value.RemoveMetadata](value-removemetadata.md)|Removes the metadata on the value and returns the original value.|  
 |[Value.ReplaceMetadata](value-replacemetadata.md)|Replaces the metadata on a value with the new metadata record provided and returns the original value with the new metadata attached.|  
+
+## Lineage
+
+|Function|Description|
+| ------ | --------- |
+|[Graph.Nodes](graph-nodes.md)|This function is intended for internal use only.|
+|[Value.Lineage](value-lineage.md)|This function is intended for internal use only.|
+|[Value.Traits](alue-traits.md)|This function is intended for internal use only.|
   
