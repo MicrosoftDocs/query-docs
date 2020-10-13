@@ -1,7 +1,7 @@
 ---
 title: "LOOKUPVALUE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/06/2020
+ms.date: 10/13/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -49,28 +49,20 @@ If multiple rows match the search values and in all cases **result_column** valu
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-## Examples
-
-The following **Sales Territory** table rule (for row-level security) enforces a filter restricting data access to rows of the report user's region. It uses the LOOKUPVALUE function to lookup the region from the **Employee** table.
-
-Notice that the [USERNAME](username-function-dax.md) function, which retrieves the user name of the authenticated user, is used to search the **Employee** table for a match on email address. The [BLANK](blank-function-dax.md) is passed in as the alternate result to avoid expensive error handling logic when there's no match.
-
-```dax
-[Region] = LOOKUPVALUE(Employee[Region], Employee[Email], USERNAME(), BLANK())
-```
-
-The following **Sales** table calculated column definition uses the LOOKUPVALUE function.
+## Example
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
 
+The following **Sales** table calculated column definition uses the LOOKUPVALUE function to return channel values from the Sales Order table.
+
 ```dax
-Product = LOOKUPVALUE('Product'[Product], Sales[ProductKey], 'Product'[ProductKey])
+CHANNEL = LOOKUPVALUE('Sales Order'[Channel],'Sales Order'[SalesOrderLineKey],[SalesOrderLineKey])
 ```
 
-However, because there's a relationship between the **Product** and **Sales** tables, it's more efficient to use the RELATED function.
+However, in this case, because there's a relationship between the **Product** and **Sales** tables, it's more efficient to use the RELATED function.
 
 ```dax
-Product = RELATED('Product'[Product])
+CHANNEL = RELATED('Sales Order'[Channel])
 ```
 
 ## See also
