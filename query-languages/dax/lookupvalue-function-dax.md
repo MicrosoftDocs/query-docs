@@ -10,7 +10,7 @@ ms.author: owend
 ---
 # LOOKUPVALUE
 
-Returns the value for the row that meets all criteria specified by search conditions. The function can apply one or more search conditions.
+Returns the value for the row that meets all criteria specified by one or more search conditions.
 
 ## Syntax
 
@@ -43,7 +43,7 @@ If multiple rows match the search values and in all cases **result_column** valu
 
 ## Remarks
 
-- If there is a relationship between the result and search tables, in most cases, using [RELATED](related-function-dax.md) function instead of LOOKUPVALUE is more efficient.
+- If there is a relationship between the result and search tables, in most cases, using [RELATED](related-function-dax.md) function instead of LOOKUPVALUE is more efficient and provides better performance.
 
 - The **search_value** and **alternateResult** parameters are evaluated before the function iterates through the rows of the search table.
 
