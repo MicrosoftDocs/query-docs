@@ -53,7 +53,7 @@ If multiple rows match the search values and in all cases **result_column** valu
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
 
-The following calculated column defined in the **Sales** table uses the LOOKUPVALUE function to return channel values from the Sales Order table.
+The following calculated column defined in the **Sales** table uses the LOOKUPVALUE function to return channel values from the **Sales Order** table.
 
 ```dax
 CHANNEL = LOOKUPVALUE('Sales Order'[Channel],'Sales Order'[SalesOrderLineKey],[SalesOrderLineKey])
