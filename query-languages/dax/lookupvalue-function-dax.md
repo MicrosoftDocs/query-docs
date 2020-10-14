@@ -1,7 +1,7 @@
 ---
 title: "LOOKUPVALUE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 10/13/2020
+ms.date: 10/14/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -30,7 +30,7 @@ LOOKUPVALUE(
 |--------|--------------|
 | result_columnName  |  The name of an existing column that contains the value you want to return.  It cannot be an expression. |
 | search_columnName  | The name of an existing column. It can be in the same table as result_columnName or in a related table. It cannot be an expression. |
-| search_value | A scalar expression. |
+| search_value | The value to search for in search_columnName. |
 | alternateResult | (Optional) The value returned when the context for result_columnName has been filtered down to zero or more than one distinct value. When not provided, the function returns BLANK when result_columnName is filtered down to zero value or an error when more than one distinct value. |
 
 ## Return value
@@ -43,7 +43,7 @@ If multiple rows match the search values and in all cases **result_column** valu
 
 ## Remarks
 
-- If there's a one-to-many relationship path between the result and search tables, it may be possible to use the RELATED function. In this case, the [RELATED](related-function-dax.md) function is likely to perform better.
+- If there is a relationship between the result and search tables, in most cases, using [RELATED](related-function-dax.md) function instead of LOOKUPVALUE is more efficient.
 
 - The **search_value** and **alternateResult** parameters are evaluated before the function iterates through the rows of the search table.
 
@@ -53,13 +53,13 @@ If multiple rows match the search values and in all cases **result_column** valu
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
 
-The following **Sales** table calculated column definition uses the LOOKUPVALUE function to return channel values from the Sales Order table.
+The following calculated column defined in the **Sales** table uses the LOOKUPVALUE function to return channel values from the Sales Order table.
 
 ```dax
 CHANNEL = LOOKUPVALUE('Sales Order'[Channel],'Sales Order'[SalesOrderLineKey],[SalesOrderLineKey])
 ```
 
-However, in this case, because there's a relationship between the **Product** and **Sales** tables, it's more efficient to use the RELATED function.
+However, in this case, because there is a relationship between the **Sales Order** and **Sales** tables, it's more efficient to use the [RELATED](related-function-dax.md) function.
 
 ```dax
 CHANNEL = RELATED('Sales Order'[Channel])
