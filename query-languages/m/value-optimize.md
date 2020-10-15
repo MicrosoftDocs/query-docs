@@ -18,4 +18,4 @@ Value.Optimize(<b>value</b> as any) as any
 </pre>
   
 ## About  
-If `value` represents a query that can be optimized, returns the optimized query. Otherwise returns `value`.
+When used within Value.Expression, if `value` represents a query that can be optimized, this function indicates that the optimized expression should be returned. Otherwise, `value` will be passed through with no effect.
