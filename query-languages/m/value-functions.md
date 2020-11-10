@@ -16,7 +16,8 @@ These functions evaluate and perform operations on values.
 ## <a name="__toc360789732"></a>Values  
   
 |Function|Description|  
-|------------|---------------|  
+|------------|---------------|
+|[Value.Alternate](value-alternate.md)|Expresses alternate query plans.|
 |[Value.Compare](value-compare.md)|Returns 1, 0, or -1 based on value1 being greater than, equal to, or less than the value2. An optional comparer function can be provided.|  
 |[Value.Equals](value-equals.md)|Returns whether two values are equal.|  
 |[Value.Expression](value-expression.md)|Returns an AST that represents the value's expression.|
