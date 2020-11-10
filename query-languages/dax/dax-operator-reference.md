@@ -1,7 +1,7 @@
 ---
 title: "DAX operators | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 05/18/2020
+ms.date: 11/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -10,7 +10,7 @@ ms.author: owend
 ---
 # DAX operators
 
-The Data Analysis Expression (DAX) language uses operators to create expressions that compare values, perform arithmetic calculations, or work with strings. This section describes the use of each operator.  
+The Data Analysis Expression (DAX) language uses operators to create expressions that compare values, perform arithmetic calculations, or work with strings.
   
 ## Types of operators
 
