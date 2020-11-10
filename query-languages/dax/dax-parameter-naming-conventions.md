@@ -1,7 +1,7 @@
 ---
 title: "DAX parameter-naming conventions | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 11/07/2019
+ms.date: 11/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
