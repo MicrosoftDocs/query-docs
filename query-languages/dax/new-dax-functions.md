@@ -1,7 +1,7 @@
 ---
 title: "New DAX functions | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/13/2020
+ms.date: 11/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -11,7 +11,7 @@ ms.author: owend
 
 DAX is continuously being improved with new functions and functionality to support new features. New functions and updates are included in service, application, and tool updates which in most cases are monthly.
 
-While functions and functionality are being updated all the time, only those updates that have a visible and functional change exposed to users are described in documentation. New functions and updates to existing function within the past year are shown here.
+While functions and functionality are being updated all the time, only those updates that have a visible and functional change exposed to users are described in documentation. New functions and updates to existing functions within the past year are shown here.
 
 > [!IMPORTANT]
 > Not all functions are supported in all versions of Power BI Desktop, Analysis Services, and Power Pivot in Excel. New and updated functions are typically first introduced in Power BI Desktop.
@@ -72,12 +72,8 @@ While functions and functionality are being updated all the time, only those upd
 |[COALESCE](coalesce-function-dax.md)|March. 2020|
 |[FIRSTNONBLANKVALUE](firstnonblankvalue-function-dax.md)|Feb. 2020|
 |[LASTNONBLANKVALUE](lastnonblankvalue-function-dax.md)|Feb. 2020|
-|[CONVERT](convert-function-dax.md)|Sept. 2019|
-|[REMOVEFILTERS](removefilters-function-dax.md)|Sept. 2019|
 
 ## Updated functions
 
 |Function  | Month  |
 |---------|---------|
-
-
