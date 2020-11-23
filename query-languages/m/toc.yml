@@ -291,6 +291,8 @@
               href: binary-infercontenttype.md
             - name: Binary.Length
               href: binary-length.md
+            - name: Binary.Range
+              href: binary-range.md
             - name: Binary.ToList
               href: binary-tolist.md
             - name: Binary.ToText
