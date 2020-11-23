@@ -2,7 +2,7 @@
 title: "DAX overview | Microsoft Docs"
 description: Describes the Data Analysis Expressions (DAX) language.
 ms.service: powerbi 
-ms.date: 07/27/2020
+ms.date: 11/23/2020
 ms.reviewer: owend
 ms.topic: overview
 ms.article: overview
@@ -38,8 +38,8 @@ When a user places the TotalSales measure in a report, and then places the Produ
 Unlike calculated columns, the syntax for a measure includes the measure's name preceding the formula. In the example just provided, the name **Total Sales** appears preceding the formula. After you've created a measure, the name and its definition appear in the reporting client application Fields list, and depending on perspectives and roles is available to all users of the model.  
 
 To learn more, see:  
-[Measures in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-measures)  
-[Measures in Analysis Services](https://docs.microsoft.com/sql/analysis-services/tabular-models/measures-ssas-tabular)  
+[Measures in Power BI Desktop](/power-bi/transform-model/desktop-measures.md)  
+[Measures in Analysis Services](/analysis-services/tabular-models/measures-ssas-tabular.md)  
 [Measures in Power Pivot](https://support.office.com/article/Measures-in-Power-Pivot-86484821-a324-4da3-803b-82fd2e5033f4)
   
 ### Calculated columns  
@@ -53,8 +53,8 @@ To learn more, see:
 A value for each row in the table is calculated by taking values from the Calendar Year column (in the same Date table), adding a space and the capital letter Q, and then adding the values from the Calendar Quarter column (in the same Date table). The result for each row in the calculated column is calculated immediately and appears, for example, as **2017 Q1**. Column values are only recalculated if the table or any related table is processed (refresh) or the model is unloaded from memory and then reloaded, like when closing and reopening a Power BI Desktop file.  
   
  To learn more, see:  
-[Calculated columns in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-calculated-columns)  
-[Calculated columns in Analysis Services](https://docs.microsoft.com/sql/analysis-services/tabular-models/ssas-calculated-columns)  
+[Calculated columns in Power BI Desktop](/power-bi/transform-model/desktop-calculated-columns.md)  
+[Calculated columns in Analysis Services](/analysis-services/tabular-models/ssas-calculated-columns.md)  
 [Calculated Columns in Power Pivot](https://support.office.com/article/calculated-columns-in-power-pivot-a0eb7167-33fc-4ade-a23f-fb9217c193af).  
   
 ### Calculated tables
@@ -66,8 +66,8 @@ Calculated tables can be helpful in a role-playing dimension. An example is the 
 Calculated tables support relationships with other tables. The columns in your calculated table have data types, formatting, and can belong to a data category. Calculated tables can be named, and surfaced or hidden just like any other table. Calculated tables are re-calculated if any of the tables it pulls data from are refreshed or updated.
 
 To learn more, see:  
-[Calculated tables in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-calculated-tables)  
-[Calculated tables in Analysis Services](https://docs.microsoft.com/sql/analysis-services/tabular-models/create-a-calculated-table-ssas-tabular).
+[Calculated tables in Power BI Desktop](/power-bi/transform-model/desktop-calculated-tables.md)  
+[Calculated tables in Analysis Services](/analysis-services/tabular-models/create-a-calculated-table-ssas-tabular.md).
 
 ### Row-level security
 
@@ -84,8 +84,8 @@ When defining row-level secuirty by using DAX formula, you are creating an allow
 Row-level security formulas apply to the specified rows as well as related rows. When a table has multiple relationships, filters apply security for the relationship that is active. Row-level security formulas will be intersected with other formulas defined for related tables.  
 
 To learn more, see:  
-[Row-level security (RLS) with Power BI](https://docs.microsoft.com/power-bi/service-admin-rls)  
-[Roles in Analysis Services](https://docs.microsoft.com/analysis-services/tabular-models/roles-ssas-tabular)  
+[Row-level security (RLS) with Power BI](/power-bi/admin/service-admin-rls.md)  
+[Roles in Analysis Services](/analysis-services/tabular-models/roles-ssas-tabular.md)  
 
 ## Queries
 
@@ -466,6 +466,12 @@ Visual Studio with [Analysis Services projects](https://marketplace.visualstudio
 ![DAX Studio](media/dax-overview-studio.png)
 
 [DAX Studio](http://daxstudio.org/) is an open-source client tool for creating and running DAX queries against Analysis Services, Power BI Desktop, and Power Pivot in Excel models.
+
+### Tabular Editor
+
+![DAX Studio](media/dax-overview-te.png)
+
+[Tabular Editor](https://tabulareditor.com/) is an open-source tool that provides an intuitive, hierarchical view of every object in tabular model metadata. Tabular Editor includes a DAX Editor with syntax highlighting, which provides an easy way to edit measures, calculated column, and calculated table expressions.
 
 ## Learning resources
 
