@@ -13,7 +13,9 @@
 				"README.md",
 				"LICENSE",
 				"LICENSE-CODE",
-				"ThirdPartyNotices"
+				"ThirdPartyNotices",
+				"dax/**",
+				"m/**"
 			]
 		}],
 		"resource": [{
@@ -25,7 +27,9 @@
 				"**/obj/**",
 				"**/includes/**",
 				"_themes/**",
-				"_themes.pdf/**"
+				"_themes.pdf/**",
+				"dax/**",
+				"m/**"
 			]
 		}],
 		"overwrite": [],
