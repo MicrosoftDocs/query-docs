@@ -36,7 +36,7 @@ A single value that is related to the current row.
   
 - The RELATED function needs a row context; therefore, it can only be used in calculated column expression, where the current row context is unambiguous, or as a nested function in an expression that uses a table scanning function. A table scanning function, such as SUMX, gets the value of the current row value and then scans another table for instances of that value.  
 
-- The RELATED function cannot be used to fetch a column across a [weak relationship](https://docs.microsoft.com/power-bi/transform-model/desktop-relationships-understand#weak-relationships).
+- The RELATED function cannot be used to fetch a column across a [limited relationship](https://docs.microsoft.com/power-bi/transform-model/desktop-relationships-understand#limited-relationships).
   
 ## Example
 
