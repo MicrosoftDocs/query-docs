@@ -22,7 +22,7 @@ Returns a table of databases on the specified SQL server, `server`. An optional 
 * `CreateNavigationProperties`: A logical (true/false) that sets whether to generate navigation properties on the returned values (default is true).
 * `NavigationPropertyNameGenerator`: A function that is used for the creation of names for navigation properties.
 * `MaxDegreeOfParallelism`: A number that sets the value of the "maxdop" query clause in the generated SQL query.
-* `CommandTimeout`: A duration that, controls how long the server-side query is allowed to run before it is canceled. The default value is ten minutes.
+* `CommandTimeout`: A duration that controls how long the server-side query is allowed to run before it is canceled. The default value is ten minutes.
 * `ConnectionTimeout`: A duration that controls how long to wait before abandoning an attempt to make a connection to the server. The default value is driver-dependent.
 * `HierarchicalNavigation`: A logical (true/false) that sets whether to view the tables grouped by their schema names (default is false).
 * `MultiSubnetFailover`: A logical (true/false) that sets the value of the "MultiSubnetFailover" property in the connection string (default is false).
