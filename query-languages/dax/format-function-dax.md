@@ -1,7 +1,7 @@
 ---
 title: "FORMAT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/06/2020
+ms.date: 12/02/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -58,6 +58,15 @@ A string containing **value** formatted as defined by **format_string**.
 |= FORMAT(SUM(Sales[Sales Amount]), "$#,##0")|Formats the number using a custom format|$1,234|
 |= FORMAT('Date'[Date], "Short Date")|Formats the date using a pre-defined format|06/25/2020 (for en-US locale)|
 |= FORMAT('Date'[Date], "dd/mm/yyyy")|Formats the date using a custom format|25/06/2020|
+
+## Pre-defined numeric formats
+
+## Custom numeric formats
+
+## Pre-defined date and time formats
+
+## Custom date and time formats
+
 
 ## See also
 
