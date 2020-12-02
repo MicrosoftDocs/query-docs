@@ -59,6 +59,7 @@ Controlling byte order | Description
 |[Binary.FromText](binary-fromtext.md)|Decodes data from a text form into binary.|  
 |[Binary.InferContentType](binary-infercontenttype.md)|Returns a record with field Content.Type that contains the inferred MIME-type.|  
 |[Binary.Length](binary-length.md)|Returns the length of binary values.|  
+|[Binary.Range](binary-range.md)|Returns a subset of the binary value beginning at an offset.|
 |[Binary.ToList](binary-tolist.md)|Converts a binary value into a list of numbers|  
 |[Binary.ToText](binary-totext.md)|Encodes binary data into a text form.|  
 |[BinaryEncoding.Base64](binaryencoding-base64.md)|Constant to use as the encoding type when base-64 encoding is required.|
