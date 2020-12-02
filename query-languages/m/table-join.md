@@ -1,6 +1,6 @@
 ---
 title: "Table.Join | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 11/23/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -20,7 +20,16 @@ Table.Join(<b>table1</b> as table, <b>key1</b> as any, <b>table2</b> as table, <
 ## About
 Joins the rows of `table1` with the rows of `table2` based on the equality of the values of the key columns selected by `key1` (for `table1`) and `key2` (for `table2`).
 
-By default, an inner join is performed, however an optional `joinKind` may be included to specify the type of join. Options include: <ul> <li>`JoinKind.Inner`</li> <li>`JoinKind.LeftOuter`</li> <li>`JoinKind.RightOuter`</li> <li>`JoinKind.FullOuter`</li> <li>`JoinKind.LeftAnti`</li> <li>`JoinKind.RightAnti`</li> </ul> </p> <p>An optional set of `keyEqualityComparers` may be included to specify how to compare the key columns.
+By default, an inner join is performed, however an optional `joinKind` may be included to specify the type of join. Options include:
+
+* `JoinKind.Inner`
+* `JoinKind.LeftOuter`
+* `JoinKind.RightOuter`
+* `JoinKind.FullOuter`
+* `JoinKind.LeftAnti`
+* `JoinKind.RightAnti`
+
+An optional set of `keyEqualityComparers` may be included to specify how to compare the key columns. This feature is currently intended for internal use only.
 
 ## Example 1
 Inner join the two tables on [CustomerID]
