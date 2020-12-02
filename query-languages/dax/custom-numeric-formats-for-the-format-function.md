@@ -1,7 +1,7 @@
 ---
 title: "Custom numeric formats for the FORMAT function | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/05/2020
+ms.date: 11/30/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,14 +14,13 @@ This article describes custom, user-defined formats for numeric values in a FORM
 
 ## Different formats for different numeric values
 
-A user-defined format expression for numbers can have from one to four sections separated by semicolons. If the format argument contains one of the named numeric formats, only one section is allowed.
+A user-defined format expression for numbers can have from one to three sections separated by semicolons. If the format argument contains one of the named numeric formats, only one section is allowed.
 
 |If you use|The result is|
 |:-----|:-----|
 |One section only|The format expression applies to all values.|
 |Two sections|The first section applies to positive values and zeros, the second to negative values.|
 |Three sections|The first section applies to positive values, the second to negative values, and the third to zeros.|
-|Four sections|The first section applies to positive values, the second to negative values, the third to zeros, and the fourth to Null values.|
 
 ```dax
 "$#,##0;($#,##0)"
@@ -54,7 +53,7 @@ The following table identifies characters you can use to create user-defined num
 
 ## Remarks
 
-If you include semicolons with nothing between them, the missing section is printed using the format of the positive value.  
+If you include semicolons with nothing between them, the missing section is shown using the format of the positive value.  
   
 ## See also
 
