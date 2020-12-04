@@ -1,7 +1,7 @@
 ---
 title: "FORMAT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/02/2020
+ms.date: 12/04/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -36,33 +36,17 @@ A string containing **value** formatted as defined by **format_string**.
 
 ## Remarks
 
-- For information on how to use the **format_string** parameter, see the following sections:
-
-    |To format|Use|
-    |-------------|-----------------------------|
-    |Numbers|Use [Predefined numeric formats](#predefined-numeric-formats) or create [Custom numeric formats](#custom-numeric-formats).|
-    |Dates and times|Use [Predefined date/time formats](#predefined-date-and-time-formats) or create [Custom date/time formats](#custom-date-and-time-formats).|
-
 - All predefined formatting strings use the current user locale when formatting the result.
 
 - The format strings supported as an argument to the DAX FORMAT function are based on the format strings used by Visual Basic (OLE Automation), not on the format strings used by the .NET Framework. Therefore, you might get unexpected results or an error if the argument doesn't match any defined format strings. For example, "p" as an abbreviation for "Percent" isn't supported. Strings that you provide as an argument to the FORMAT function that aren't included in the list of predefined format strings are handled as part of a custom format string, or as a string literal.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-## Examples
-
-|Formula|Description|Result|
-|-----------|---------------|----------|
-|`= FORMAT(SUM(Sales[Sales Amount]), "Currency")`||$1,234.56 (for en-US locale)|
-|`= FORMAT(SUM(Sales[Sales Amount]), "$#,##0")`|Formats the number using a custom format|$1,234|
-|`= FORMAT('Date'[Date], "Short Date")`|Formats the date using a predefined format|06/25/2020 (for en-US locale)|
-|`= FORMAT('Date'[Date], "dd/mm/yyyy")`|Formats the date using a custom format|25/06/2020|
-
 ## Predefined numeric formats
 
-The following table identifies the predefined numeric format names. These may be used by name as the style argument for the Format function.  
+The following predefined numeric formats can be specified in the **format_string** argument:  
   
-|Format specification|Description|  
+|Format|Description|  
 |------------------------|---------------|  
 |`"General Number"`|Displays number with no thousand separators.|  
 |`"Currency"`|Displays number with thousand separators, if appropriate; displays two digits to the right of the decimal separator. Output is based on system locale settings.|  
@@ -72,31 +56,11 @@ The following table identifies the predefined numeric format names. These may be
 |`"Scientific"`|Uses standard scientific notation, providing two significant digits.|  
 |`"Yes/No"`|Displays No if number is 0; otherwise, displays Yes.|  
 |`"True/False"`|Displays False if number is 0; otherwise, displays True.|  
-|`"On/Off"`|Displays Off if number is 0; otherwise, displays On.|  
-
-Format strings are based on Visual Basic (OLE Automation) and therefore might have slightly different behavior than the format strings used by the .NET Framework. Abbreviations such as "P" and "x" are not supported. Any other strings that you provide as an argument to the FORMAT function are interpreted as defining a custom format.  
-  
-> [!IMPORTANT]  
-> If *value* is BLANK() the function returns an empty string.  
->
-> If *format_string* is BLANK(), the value is formatted with a "General Number" format.  
-  
-### Predefined numeric format examples
-
-The following examples show the usage of different predefined formatting strings to format a numeric value.  
-
-|Formula|Description|Result|
-|-----------|---------------|----------|
-|`= FORMAT( 12345.67, "General Number")`|Displays the number with no formatting.|12345.67|
-|`= FORMAT( 12345.67, "Currency")`|Displays the number with your currency locale formatting.|$12,345.67|
-|`= FORMAT( 12345.67, "Fixed")`|Displays at least one digit to the left of the decimal separator and two digits to the right of the decimal separator.|12345.67|
-|`= FORMAT( 12345.67, "Standard")`|Displays at least one digit to the left of the decimal separator and two digits to the right of the decimal separator, and includes thousand separators. The sample here shows the default United States number formatting. |12,345.67|
-|`= FORMAT( 12345.67, "Percent")`|Displays the number as a percentage (multiplied by 100) with formatting and the percent sign at the right of the number separated by a single space. |1,234,567.00 %|
-|`= FORMAT( 12345.67, "Scientific")`|Displays the number in scientific notation with two decimal digits. |1.23E+04|
+|`"On/Off"`|Displays Off if number is 0; otherwise, displays On.|   
 
 ## Custom numeric formats
 
-A custom format expression for numbers can have from one to three sections separated by semicolons. If the format argument contains one of the named numeric formats, only one section is allowed.
+A custom format expression for numbers can have from one to three sections separated by semicolons. If the format string argument contains one of the named numeric formats, only one section is allowed.
 
 |If you use|The result is|
 |:-----|:-----|
@@ -118,7 +82,7 @@ If you include semicolons with nothing between them, the missing section is show
 
 ### Custom numeric format characters
 
-The following table identifies characters you can use to create custom numeric formats.
+The following custom numeric format characters can be specified in the **format_string** argument:  
 
 |Character|Description|
 |:-----|:-----|
@@ -137,9 +101,9 @@ The following table identifies characters you can use to create custom numeric f
 
 ## Predefined date and time formats
 
-The following table identifies the predefined date and time format names. If you use strings other than these predefined strings, they will be interpreted as a custom date/time format.
+The following predefined date and time formats can be specified in the **format_string** argument. When using formats other than these, they are interpreted as a custom date/time format:
 
-|Format specification|Description|
+|Format|Description|
 |------------------------|---------------|
 |`"General Date"`|Displays a date and/or time. For example, 3/12/2008 11:07:31 AM. Date display is determined by your application's current culture value.|
 |`"Long Date"` or `"Medium Date"`|Displays a date according to your current culture's long date format. For example, Wednesday, March 12, 2008.|
@@ -148,16 +112,11 @@ The following table identifies the predefined date and time format names. If you
 |`"Medium Time"`|Displays a time in 12 hour format. For example, 11:07 AM.|
 |`"Short Time"`|Displays a time in 24 hour format. For example, 11:07.|
 
-Format strings are based on Visual Basic (OLE Automation) and not the .NET Framework formatting strings. Therefore, your results might be slightly different than what you expect from .NET format strings. Note that abbreviations such as "D" for Long Date and "t" for Short Time aren't supported.
-
-> [!NOTE]
-> If *value* is BLANK the function returns an empty string.
->
-> If *format_string* is BLANK, the value is formatted with the "General Date" format.
-
 ## Custom date and time formats
 
 The following tables describe characters used to create custom date/time formats:
+
+The following custom date/time format characters can be specified in the **format_string** to create custom date/time formats:
 
 |Character|Description|
 |:-----|:-----|
@@ -200,11 +159,11 @@ Date/time formatting uses the current user locale to format the string. For exam
 - User locale is United States of America (en-US): "6/25/2020"
 - User locale is Germany (de-DE): "6.25.2020"
 
-### Custom date/time format examples
+### Custom date and time format examples
 
 The following examples use the date/time Thursday, June 25, 2020, at 1:23:45 PM. Germany (de-DE) uses a 24-hour system. There's no equivalent of AM/PM.
 
-|Format string|Result (en-US)|Result (de-DE)|
+|Format|Result (en-US)|Result (de-DE)|
 |-------------|--------------|--------------|
 |`"c"`|06/25/2020 13:23:45|25.06.2020 13:23:45|
 |`"d"`|25|25|
@@ -234,3 +193,28 @@ The following examples use the date/time Thursday, June 25, 2020, at 1:23:45 PM.
 |`"ttttt"`|13:23:45|13:23:45|
 |`"ttttt AMPM"`|13:23:45 PM|13:23:45|
 |`"mm/dd/yyyy hh:nn:ss AMPM"`|06/25/2020 01:23:45 PM|6.25.2020 01:23:45|
+
+## Examples
+
+```dax
+= FORMAT( 12345.67, "General Number")  
+= FORMAT( 12345.67, "Currency")  
+= FORMAT( 12345.67, "Fixed")  
+= FORMAT( 12345.67, "Standard")  
+= FORMAT( 12345.67, "Percent")  
+= FORMAT( 12345.67, "Scientific")
+```
+
+Returns the following:  
+
+**12345.67** "General Number" displays the number with no formatting.  
+  
+**$12,345.67** "Currency" displays the number with your currency locale formatting. The sample here shows the default United States currency formatting.  
+  
+**12345.67** "Fixed" displays at least one digit to the left of the decimal separator and two digits to the right of the decimal separator.  
+  
+**12,345.67** "Standard" displays at least one digit to the left of the decimal separator and two digits to the right of the decimal separator, and includes thousand separators. The sample here shows the default United States number formatting.  
+  
+**1,234,567.00 %** "Percent" displays the number as a percentage (multiplied by 100) with formatting and the percent sign at the right of the number separated by a single space.  
+  
+**1.23E+04** "Scientific" displays the number in scientific notation with two decimal digits.
