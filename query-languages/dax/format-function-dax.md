@@ -41,7 +41,7 @@ A string containing **value** formatted as defined by **format_string**.
     |To format|Use|
     |-------------|-----------------------------|
     |Numbers|Use [Predefined numeric formats](#predefined-numeric-formats) or create [Custom numeric formats](#custom-numeric-formats).|
-    |Dates and times|Use [Predefined date/time formats](#predefined-date/time-formats) or create [Custom date/time formats](#custom-date/time-formats).|
+    |Dates and times|Use [Predefined date/time formats](#predefined-date-and-time-formats) or create [Custom date/time formats](#custom-date-and-time-formats).|
 
 - All predefined formatting strings use the current user locale when formatting the result.
 
@@ -135,7 +135,7 @@ The following table identifies characters you can use to create custom numeric f
 |(**\\**)|Display the next character in the format string. To display a character that has special meaning as a literal character, precede it with a backslash (`\`). The backslash itself isn't displayed. Using a backslash is the same as enclosing the next character in double quotation marks. To display a backslash, use two backslashes (`\\`). Examples of characters that can't be displayed as literal characters are the date-formatting and time-formatting characters (a, c, d, h, m, n, p, q, s, t, w, y, /, and :), the numeric-formatting characters (#, 0, %, E, e, comma, and period), and the string-formatting characters (@, &, <, >, and !).|
 |("ABC")|Display the string inside the double quotation marks (" ").|
 
-## Predefined date/time formats
+## Predefined date and time formats
 
 The following table identifies the predefined date and time format names. If you use strings other than these predefined strings, they will be interpreted as a custom date/time format.
 
@@ -155,7 +155,7 @@ Format strings are based on Visual Basic (OLE Automation) and not the .NET Frame
 >
 > If *format_string* is BLANK, the value is formatted with the "General Date" format.
 
-## Custom date/time formats
+## Custom date and time formats
 
 The following tables describe characters used to create custom date/time formats:
 

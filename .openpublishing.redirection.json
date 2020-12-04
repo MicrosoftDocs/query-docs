@@ -21,7 +21,7 @@
 			"redirect_document_id": true
 		},
 		{
-			"source_path": "query-languages/dax/custom-date-and-time-formats-for-the-format-function.md",
+			"source_path": "query-languages/dax/custom-date-and-time-formats-for-the-format-function.md&redirect_document_id = true",
 			"redirect_url": "/dax/format-function-dax",
 			"redirect_document_id": true
 		},
