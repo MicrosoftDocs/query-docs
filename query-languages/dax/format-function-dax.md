@@ -30,7 +30,7 @@ FORMAT(<value>, <format_string>)
 A string containing **value** formatted as defined by **format_string**.
 
 > [!NOTE]
-> If **value** is BLANK the function returns an empty string.
+> If **value** is BLANK, the function returns an empty string.
 >
 > If **format_string** is BLANK, the value is formatted with a "General Number" or "General Date" format (according to **value** data type).
 
@@ -41,6 +41,31 @@ A string containing **value** formatted as defined by **format_string**.
 - The format strings supported as an argument to the DAX FORMAT function are based on the format strings used by Visual Basic (OLE Automation), not on the format strings used by the .NET Framework. Therefore, you might get unexpected results or an error if the argument doesn't match any defined format strings. For example, "p" as an abbreviation for "Percent" isn't supported. Strings that you provide as an argument to the FORMAT function that aren't included in the list of predefined format strings are handled as part of a custom format string, or as a string literal.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
+## Examples
+
+```dax
+= FORMAT( 12345.67, "General Number")  
+= FORMAT( 12345.67, "Currency")  
+= FORMAT( 12345.67, "Fixed")  
+= FORMAT( 12345.67, "Standard")  
+= FORMAT( 12345.67, "Percent")  
+= FORMAT( 12345.67, "Scientific")
+```
+
+Returns the following:  
+
+**12345.67** "General Number" displays the number with no formatting.  
+  
+**$12,345.67** "Currency" displays the number with your currency locale formatting. The sample here shows the default United States currency formatting.  
+  
+**12345.67** "Fixed" displays at least one digit to the left of the decimal separator and two digits to the right of the decimal separator.  
+  
+**12,345.67** "Standard" displays at least one digit to the left of the decimal separator and two digits to the right of the decimal separator, and includes thousand separators. The sample here shows the default United States number formatting.  
+  
+**1,234,567.00 %** "Percent" displays the number as a percentage (multiplied by 100) with formatting and the percent sign at the right of the number separated by a single space.  
+  
+**1.23E+04** "Scientific" displays the number in scientific notation with two decimal digits.
 
 ## Predefined numeric formats
 
@@ -101,7 +126,7 @@ The following custom numeric format characters can be specified in the **format_
 
 ## Predefined date and time formats
 
-The following predefined date and time formats can be specified in the **format_string** argument. When using formats other than these, they are interpreted as a custom date/time format:
+The following predefined date and time formats can be specified in the **format_string** argument. When using formats other than these, they are interpreted as a custom date and time format:
 
 |Format|Description|
 |------------------------|---------------|
@@ -114,9 +139,7 @@ The following predefined date and time formats can be specified in the **format_
 
 ## Custom date and time formats
 
-The following tables describe characters used to create custom date/time formats:
-
-The following custom date/time format characters can be specified in the **format_string** to create custom date/time formats:
+The following format characters can be specified in the **format_string** to create custom date and time formats:
 
 |Character|Description|
 |:-----|:-----|
@@ -154,14 +177,14 @@ The following custom date/time format characters can be specified in the **forma
 |a/p|Use the 12-hour clock and display a lowercase A with any hour before noon; display a lowercase P with any hour between noon and 11:59 P.M.|
 |AMPM|Use the 12-hour clock and display the AM string literal as defined by your system with any hour before noon; display the PM string literal as defined by your system with any hour between noon and 11:59 P.M. AMPM can be either uppercase or lowercase, but the case of the string displayed matches the string as defined by your system settings. The default format is AM/PM. If your system is set to 24-hour clock, the string is typical set to an empty string.|
 
-Date/time formatting uses the current user locale to format the string. For example, consider the date June 25, 2020. When it's formatted using format string "m/d/yyyy" it will be:
+date and time formatting uses the current user locale to format the string. For example, consider the date June 25, 2020. When it's formatted using format string "m/d/yyyy" it will be:
 
 - User locale is United States of America (en-US): "6/25/2020"
 - User locale is Germany (de-DE): "6.25.2020"
 
 ### Custom date and time format examples
 
-The following examples use the date/time Thursday, June 25, 2020, at 1:23:45 PM. Germany (de-DE) uses a 24-hour system. There's no equivalent of AM/PM.
+The following examples use the date and time Thursday, June 25, 2020, at 1:23:45 PM. Germany (de-DE) uses a 24-hour system. There's no equivalent of AM/PM.
 
 |Format|Result (en-US)|Result (de-DE)|
 |-------------|--------------|--------------|
@@ -194,27 +217,4 @@ The following examples use the date/time Thursday, June 25, 2020, at 1:23:45 PM.
 |`"ttttt AMPM"`|13:23:45 PM|13:23:45|
 |`"mm/dd/yyyy hh:nn:ss AMPM"`|06/25/2020 01:23:45 PM|6.25.2020 01:23:45|
 
-## Examples
 
-```dax
-= FORMAT( 12345.67, "General Number")  
-= FORMAT( 12345.67, "Currency")  
-= FORMAT( 12345.67, "Fixed")  
-= FORMAT( 12345.67, "Standard")  
-= FORMAT( 12345.67, "Percent")  
-= FORMAT( 12345.67, "Scientific")
-```
-
-Returns the following:  
-
-**12345.67** "General Number" displays the number with no formatting.  
-  
-**$12,345.67** "Currency" displays the number with your currency locale formatting. The sample here shows the default United States currency formatting.  
-  
-**12345.67** "Fixed" displays at least one digit to the left of the decimal separator and two digits to the right of the decimal separator.  
-  
-**12,345.67** "Standard" displays at least one digit to the left of the decimal separator and two digits to the right of the decimal separator, and includes thousand separators. The sample here shows the default United States number formatting.  
-  
-**1,234,567.00 %** "Percent" displays the number as a percentage (multiplied by 100) with formatting and the percent sign at the right of the number separated by a single space.  
-  
-**1.23E+04** "Scientific" displays the number in scientific notation with two decimal digits.
