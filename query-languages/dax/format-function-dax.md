@@ -124,9 +124,9 @@ The following custom numeric format characters can be specified in the **format_
 |(**\\**)|Display the next character in the format string. To display a character that has special meaning as a literal character, precede it with a backslash (`\`). The backslash itself isn't displayed. Using a backslash is the same as enclosing the next character in double quotation marks. To display a backslash, use two backslashes (`\\`). Examples of characters that can't be displayed as literal characters are the date-formatting and time-formatting characters (a, c, d, h, m, n, p, q, s, t, w, y, /, and :), the numeric-formatting characters (#, 0, %, E, e, comma, and period), and the string-formatting characters (@, &, <, >, and !).|
 |("ABC")|Display the string inside the double quotation marks (" ").|
 
-## Predefined date and time formats
+## Predefined date/time formats
 
-The following predefined date and time formats can be specified in the **format_string** argument. When using formats other than these, they are interpreted as a custom date and time format:
+The following predefined date/time formats can be specified in the **format_string** argument. When using formats other than these, they are interpreted as a custom date/time format:
 
 |Format|Description|
 |------------------------|---------------|
@@ -137,9 +137,9 @@ The following predefined date and time formats can be specified in the **format_
 |`"Medium Time"`|Displays a time in 12 hour format. For example, 11:07 AM.|
 |`"Short Time"`|Displays a time in 24 hour format. For example, 11:07.|
 
-## Custom date and time formats
+## Custom date/time formats
 
-The following format characters can be specified in the **format_string** to create custom date and time formats:
+The following format characters can be specified in the **format_string** to create custom date/time formats:
 
 |Character|Description|
 |:-----|:-----|
@@ -177,14 +177,14 @@ The following format characters can be specified in the **format_string** to cre
 |a/p|Use the 12-hour clock and display a lowercase A with any hour before noon; display a lowercase P with any hour between noon and 11:59 P.M.|
 |AMPM|Use the 12-hour clock and display the AM string literal as defined by your system with any hour before noon; display the PM string literal as defined by your system with any hour between noon and 11:59 P.M. AMPM can be either uppercase or lowercase, but the case of the string displayed matches the string as defined by your system settings. The default format is AM/PM. If your system is set to 24-hour clock, the string is typical set to an empty string.|
 
-date and time formatting uses the current user locale to format the string. For example, consider the date June 25, 2020. When it's formatted using format string "m/d/yyyy" it will be:
+Date/time formatting uses the current user locale to format the string. For example, consider the date June 25, 2020. When it's formatted using format string "m/d/yyyy" it will be:
 
 - User locale is United States of America (en-US): "6/25/2020"
 - User locale is Germany (de-DE): "6.25.2020"
 
-### Custom date and time format examples
+### Custom date/time format examples
 
-The following examples use the date and time Thursday, June 25, 2020, at 1:23:45 PM. Germany (de-DE) uses a 24-hour system. There's no equivalent of AM/PM.
+The following examples use the date/time Thursday, June 25, 2020, at 1:23:45 PM. Germany (de-DE) uses a 24-hour system. There's no equivalent of AM/PM.
 
 |Format|Result (en-US)|Result (de-DE)|
 |-------------|--------------|--------------|
