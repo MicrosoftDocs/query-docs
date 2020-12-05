@@ -640,17 +640,7 @@
             - name: FIXED
               href: fixed-function-dax.md
             - name: FORMAT
-              items: 
-                - name: FORMAT
-                  href: format-function-dax.md
-                - name: Pre-Defined Numeric Formats for FORMAT
-                  href: pre-defined-numeric-formats-for-the-format-function.md
-                - name: Custom Numeric Formats for FORMAT
-                  href: custom-numeric-formats-for-the-format-function.md
-                - name: Pre-defined date and time formats for FORMAT
-                  href: pre-defined-date-and-time-formats-for-the-format-function.md
-                - name: Custom date and time formats for FORMAT
-                  href: custom-date-and-time-formats-for-the-format-function.md
+              href: format-function-dax.md
             - name: LEFT
               href: left-function-dax.md
             - name: LEN

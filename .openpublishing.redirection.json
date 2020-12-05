@@ -19,6 +19,26 @@
 			"source_path": "query-languages/dax/in-operator-containsrow-function.md",
 			"redirect_url": "/dax/containsrow-function-dax",
 			"redirect_document_id": true
+		},
+		{
+			"source_path": "query-languages/dax/custom-date-and-time-formats-for-the-format-function.md",
+			"redirect_url": "/dax/format-function-dax",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "query-languages/dax/custom-numeric-formats-for-the-format-function.md",
+			"redirect_url": "/dax/format-function-dax",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "query-languages/dax/pre-defined-date-and-time-formats-for-the-format-function.md",
+			"redirect_url": "/dax/format-function-dax",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "query-languages/dax/pre-defined-numeric-formats-for-the-format-function.md",
+			"redirect_url": "/dax/format-function-dax",
+			"redirect_document_id": false
 		}
 	]
 }
