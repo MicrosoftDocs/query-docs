@@ -7,7 +7,7 @@ ms.service: powerquery
 
 ms.topic: article
 ms.date: 2/28/2020
-ms.author: v-douklo
+ms.author: bezhan
 ---
 
 # Error Handling
