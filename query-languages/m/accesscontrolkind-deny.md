@@ -5,7 +5,7 @@ ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
 author: dougklopfenstein
-ms.author: v-douklo
+ms.author: bezhan
 ---
 # AccessControlKind.Deny
 
