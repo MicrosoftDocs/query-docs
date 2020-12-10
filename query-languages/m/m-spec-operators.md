@@ -6,7 +6,7 @@ author: dougklopfenstein
 ms.service: powerquery
 
 ms.topic: article
-ms.date: 4/7/2020
+ms.date: 4/8/2020
 ms.author: bezhan
 ---
 
