@@ -1,6 +1,6 @@
 ---
 title: M Language Operators | Microsoft Docs
-description: Use the "create from blank" option to create a custom connector for Power Automate and Power Apps
+description: Describes using operators in the Power Query M formula language
 author: dougklopfenstein
 
 ms.service: powerquery
@@ -10,7 +10,7 @@ ms.date: 4/7/2020
 ms.author: bezhan
 ---
 
-# Operators
+# Operator behavior
 
 This section defines the behavior of the various M operators.
 
@@ -633,10 +633,10 @@ The following holds when evaluating an expression containing the relational oper
    * If either operand is `#nan`, the result is `false` for all relational operators.
    * When neither operand is `#nan`, the operators compare the values of the two floatingpoint operands with respect to the ordering
 
-
-        <code>-&#8734; < -max < ... < -min < -0.0 = +0.0 < +min < ... < +max < +&#8734;</code>
-
-      where min and max are the smallest and largest positive finite values that can be represented. The M names for <code>-&#8734;</code> and <code>+&#8734;</code> are `-#infinity` and `#infinity`.
+        ```
+        -∞ < -max < ... < -min < -0.0 = +0.0 < +min < ... < +max < +∞
+        ```
+      where min and max are the smallest and largest positive finite values that can be represented. The M names for -∞ and +∞ are `-#infinity` and `#infinity`.
 
     Notable effects of this ordering are:
 
@@ -663,22 +663,21 @@ The `and` operator returns `false` when at least one of its operands is `false`.
 
 Truth tables for the `or` and `and` operators are shown below, with the result of evaluating the left operand expression on the vertical axis and the result of evaluating the right operand expression on the horizontal axis.
 
-|     |     |     |     |     |
+| *`and`* | `true` | `false` | `null` | `error` |
 | --- | --- | --- | --- | --- |
-| <b>`and`</b> | `true` | `false` | `null` | `error` |
-| `true` | `true` | `false` | `null` | `error` |
-| `false` | `false` | `false` | `false` | `false` |
-| `null` | `null` | `false` | `null` | `error` |
-| `error` | `error` | `error` | `error` | `error` |
+| **`true`** | `true` | `false` | `null` | `error` |
+| **`false`** | `false` | `false` | `false` | `false` |
+| **`null`** | `null` | `false` | `null` | `error` |
+| **`error`** | `error` | `error` | `error` | `error` |
 | | | | | |
 
-|     |     |     |     |     |
+| *`or`* | `true` | `false` | `null` | `error` |
 | --- | --- | --- | --- | --- |
-| <b>`or`</b> | `true` | `false` | `null` | `error` |
-| `true` | `true` | `true` | `true` | `true` |
-| `false` | `true` | `false` | `null` | `error` |
-| `null` | `true` | `null` | `null` | `error` |
-| `error ` | `error ` | `error` | `error` | `error` |
+| **`or`** | `true` | `false` | `null` | `error` |
+| **`true`** | `true` | `true` | `true` | `true` |
+| **`false`** | `true` | `false` | `null` | `error` |
+| **`null`** | `true` | `null` | `null` | `error` |
+| **`error`** | `error` | `error` | `error` | `error` |
 | | | | | |
  
 The following holds when evaluating an expression containing conditional logical operators:

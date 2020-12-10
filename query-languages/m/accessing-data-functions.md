@@ -66,7 +66,7 @@ These functions access data and return table values. Most of these functions ret
 |[HdInsight.Contents](hdinsight-contents.md)|Returns a navigational table containing all containers found in the HDInsight account. Each row has the container name and table containing its files.|  
 |[HdInsight.Files](hdinsight-files.md)|Returns a table containing a row for each folder and file found at the container URL, and subfolders from an HDInsight account. Each row contains properties of the file/folder and a link to its content.|  
 |[Html.Table](html-table.md)|Returns a table containing the results of running the specified CSS selectors against the provided html.|  
-|[Identity.From](identity.from.md)|Creates an identity.|
+|[Identity.From](identity-from.md)|Creates an identity.|
 |[Identity.IsMemberOf](identity-ismemberof.md)|Determines whether an identity is a member of an identity collection.|
 |[IdentityProvider.Default](identityprovider-default.md)|The default identity provider for the current host.|
 |[Informix.Database](informix-database.md)|Returns a table of SQL tables and views available in an Informix database on server `server` in the database instance named `database`.|  

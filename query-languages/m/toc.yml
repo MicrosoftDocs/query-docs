@@ -158,7 +158,7 @@
             - name: Html.Table
               href: html-table.md
             - name: Identity.From
-              href: identity.from.md
+              href: identity-from.md
             - name: Identity.IsMemberOf
               href: identity-ismemberof.md
             - name: IdentityProvider.Default

@@ -63,7 +63,7 @@ These functions create and manipulate record values.
 ### Parameter Values  
 The following type definitions are used to describe the parameter values that are referenced in Record functions above.  
   
-|||  
+|Type Definition|Description|  
 |-|-|  
 |MissingField option|MissingField.Error = 0;<br /><br />MissingField.Ignore = 1;<br /><br />MissingField.UseNull = 2;|  
 |Transform operations|Transform operations can be specified by either of the following values:<br /><br />A list value of two items, first item being the field name and the second item being the transformation function applied to that field to produce a new value.<br /><br />A list of transformations can be provided by providing a list value, and each item being the list value of 2 items as described above.<br /><br />For examples, see description of [Record.TransformFields](record-transformfields.md)|  

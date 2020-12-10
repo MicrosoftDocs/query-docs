@@ -10,7 +10,6 @@ ms.author: bezhan
 
 ---
 # GroupKind.Local
-## About
 
 ## Syntax
 

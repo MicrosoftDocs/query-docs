@@ -1,6 +1,6 @@
 ---
 title: M Language Conditionals | Microsoft Docs
-description: Use the "create from blank" option to create a custom connector for Power Automate and Power Apps
+description: Describes using conditionals in the Power Query M formula language
 author: dougklopfenstein
 
 ms.service: powerquery

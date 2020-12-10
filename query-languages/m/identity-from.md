@@ -9,7 +9,7 @@ author: dougklopfenstein
 ms.author: bezhan
 
 ---
-# Informix.Database
+# Identity.From
 
 ## Syntax
 
