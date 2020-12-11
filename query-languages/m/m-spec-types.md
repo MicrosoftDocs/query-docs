@@ -1,6 +1,6 @@
 ---
 title: M Language types | Microsoft Docs
-description: Use the "create from blank" option to create a custom connector for Power Automate and Power Apps
+description: Describes using types in the Power Query M formula language
 author: dougklopfenstein
 
 ms.service: powerquery

@@ -1,6 +1,6 @@
 ---
 title: M Language basic concepts | Microsoft Docs
-description: Use the "create from blank" option to create a custom connector for Power Automate and Power Apps
+description: Discusses basic concepts that appear throughout the subsequent sections
 author: dougklopfenstein
 
 ms.service: powerquery

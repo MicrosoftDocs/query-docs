@@ -23,7 +23,7 @@ Searches a list of values, `list`, for the value `oldValue` and replaces each oc
 ## Example 1
 Replace all the "a" values in the list {"a", "B", "a", "a"} with "A".
 
-v
+```
 List.ReplaceValue({"a", "B", "a", "a"}, "a", "A", Replacer.ReplaceText)
 ```
 
