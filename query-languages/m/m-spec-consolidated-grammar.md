@@ -1,6 +1,6 @@
 ---
 title: M Language Consolidated Grammar | Microsoft Docs
-description: Use the "create from blank" option to create a custom connector for Power Automate and Power Apps
+description: Describes all of the grammar associated with the Power Query M formula language
 author: dougklopfenstein
 
 ms.service: powerquery

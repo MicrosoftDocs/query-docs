@@ -1,6 +1,6 @@
 ---
 title: Power Query M Formula Language Introduction | Microsoft Docs
-description: Use the "create from blank" option to create a custom connector for Power Automate and Power Apps
+description: Provides an overview of the Power Query M formula language
 author: dougklopfenstein
 
 ms.service: powerquery
@@ -85,14 +85,9 @@ The following examples illustrate the different kinds of values available in M. 
    ```
 
    This creates a table of the following shape: 
- 
-   | | |
-   | --- | --- |
-   | A | B |
-   | 1 | 2 |
-   | 3 | 4 |
-   | | |
- 
+
+   ![Example table in M formula language](media/table-example.png)
+  
 * A _function_ is a value which, when invoked with arguments, produces a new value. Function are written by listing the function's _parameters_ in parentheses, followed by the goes-to symbol `=>`, followed by the expression defining the function. That expression typically refers to the parameters (by name).
 
    ```
