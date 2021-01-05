@@ -1,7 +1,7 @@
 ---
 title: "Learn DAX videos | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 05/18/2020
+ms.date: 01/05/2021
 ms.reviewer: owend
 ms.topic: conceptual
 author: minewiskan

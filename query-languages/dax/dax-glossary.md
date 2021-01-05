@@ -2,7 +2,7 @@
 title: "DAX glossary | Microsoft Docs"
 description: Describes common terms used in the Data Analysis Expressions (DAX) language.
 ms.service: powerbi 
-ms.date: 07/06/2020
+ms.date: 01/05/2021
 ms.reviewer: owend
 ms.topic: conceptual
 author: minewiskan
@@ -138,7 +138,7 @@ There's no such concept as a *tabular cube*. Use [Tabular model](#tabular-model)
 
 ## Tabular model
 
-A data model developed in Power Pivot in Excel, Power BI, Azure Analysis Services, or SQL Server Analysis Services (tabular mode).
+A data model developed for Power Pivot in Excel, Power BI, Azure Analysis Services, or SQL Server Analysis Services (tabular mode).
 
 ## Time intelligence
 
