@@ -36,7 +36,7 @@ The formula returns the logical value TRUE when the value in the column, 'Intern
 
 The following table shows the results when the example formula is used in a PivotTable or visualization, with 'ProductCategory'[ProductCategoryName] in Row Labels and 'DateTime'[CalendarYear] in Column Labels.  
   
-|Row Labels|2005|2006|2007|2008||Grand Total|
+|Row Labels|2005|2006|2007|2008|-|Grand Total|
 |---------------|-----------------|----|----|----|----|----|  
 |Accessories|FALSE|FALSE|TRUE|TRUE|FALSE|TRUE|  
 |Bikes|TRUE|TRUE|TRUE|TRUE|FALSE|TRUE|  
