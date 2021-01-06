@@ -1,7 +1,7 @@
 ---
 title: "YIELDDISC function (DAX) | Microsoft Docs"
 ms.service: powerbi
-ms.date: 07/02/2020
+ms.date: 01/06/2021
 ms.reviewer: owend
 ms.topic: reference
 author: jajin7
@@ -64,7 +64,7 @@ The annual yield.
 
 ## Example
 
-| **Data**  |                  |
+| **Data**  |        -          |
 | --------- | ---------------- |
 | 16-Feb-08 | Settlement date  |
 | 1-Mar-08  | Maturity date    |

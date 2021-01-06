@@ -1,7 +1,7 @@
 ---
-title: "UTCNOW function (DAX) | Microsoft Docs"
+title: "UTCTODAY function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/13/2020
+ms.date: 01/06/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan

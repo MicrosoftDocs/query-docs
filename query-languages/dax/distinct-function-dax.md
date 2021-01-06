@@ -1,7 +1,7 @@
 ---
 title: "DISTINCT (column) function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/05/2020
+ms.date: 01/06/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -53,9 +53,8 @@ The following formula counts the number of unique customers who have generated o
 
 You cannot paste the list of values that DISTINCT returns directly into a column. Instead, you pass the results of the DISTINCT function to another function that counts, filters, or aggregates values by using the list. To make the example as simple as possible, here the table of distinct values has been passed to the COUNTROWS function.  
   
-|Unique Internet customers|Column Labels||||  
-|-----------------------------|-----------------|----|----|----|  
 |Row Labels|Accessories|Bikes|Clothing|Grand Total|  
+|-----------------------------|-----------------|----|----|----|  
 |2005||1013||1013|  
 |2006||2677||2677|  
 |2007|6792|4875|2867|9309|  

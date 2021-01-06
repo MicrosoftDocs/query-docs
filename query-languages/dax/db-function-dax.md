@@ -1,7 +1,7 @@
 ---
 title: "DB function (DAX) | Microsoft Docs"
 ms.service: powerbi
-ms.date: 07/02/2020
+ms.date: 01/06/2021
 ms.reviewer: owend
 ms.topic: reference
 author: jajin7
@@ -102,3 +102,4 @@ ADDCOLUMNS (
     DB([InitialCost], [SalvageValue], [LifetimeYears], [Value], 7)
   )
 )
+```
