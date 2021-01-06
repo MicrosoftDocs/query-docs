@@ -2,7 +2,7 @@
 title: "DAX overview | Microsoft Docs"
 description: Describes the Data Analysis Expressions (DAX) language.
 ms.service: powerbi 
-ms.date: 11/23/2020
+ms.date: 01/05/2021
 ms.reviewer: owend
 ms.topic: overview
 ms.article: overview
@@ -463,13 +463,13 @@ Visual Studio with [Analysis Services projects](https://marketplace.visualstudio
 
 ### DAX Studio
 
-![DAX Studio](media/dax-overview-studio.png)
+![DAX Studio icon](media/dax-overview-studio.png)
 
 [DAX Studio](http://daxstudio.org/) is an open-source client tool for creating and running DAX queries against Analysis Services, Power BI Desktop, and Power Pivot in Excel models.
 
 ### Tabular Editor
 
-![DAX Studio](media/dax-overview-te.png)
+![Tabular Editor icon](media/dax-overview-te.png)
 
 [Tabular Editor](https://tabulareditor.com/) is an open-source tool that provides an intuitive, hierarchical view of every object in tabular model metadata. Tabular Editor includes a DAX Editor with syntax highlighting, which provides an easy way to edit measures, calculated column, and calculated table expressions.
 
@@ -483,4 +483,4 @@ When learning DAX, it's best to use the application you'll be using to create yo
 
 The [Definitive Guide to DAX](https://www.sqlbi.com/books/the-definitive-guide-to-dax/) by Alberto Ferrari and Marco Russo (Microsoft Press). This extensive guide provides basics to innovative high-performance techniques for beginning data modelers and BI professionals.
 
-![DAX Studio](media/dax-overview-book.png)
+![The Definitive Guide to DAX book image](media/dax-overview-book.png)

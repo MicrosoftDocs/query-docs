@@ -1,7 +1,7 @@
 ---
 title: "DISTINCTCOUNT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/05/2020
+ms.date: 01/06/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -35,7 +35,7 @@ The number of distinct values in *column*.
 - DISTINCTCOUNT function includes the BLANK value. To skip the BLANK value, use the [DISTINCTCOUNTNOBLANK](distinctcountnoblank-function-dax.md) function.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
- 
+
 ## Example
 
 The following example shows how to count the number of distinct sales orders in the column ResellerSales_USD[SalesOrderNumber].  
@@ -44,11 +44,10 @@ The following example shows how to count the number of distinct sales orders in 
 = DISTINCTCOUNT(ResellerSales_USD[SalesOrderNumber])  
 ```
 
-Using the above measure in a table with calendar year in the side and product category on top gives the following results:  
+Using the above measure in a table with calendar year in the side and product category on top returns the following results:  
   
-|Distinct Reseller Orders count|Column Labels||||||  
+|Row Labels|Accessories|Bikes|Clothing|Components|-|Grand Total|
 |-----|-----|-----|-----|-----|-----|-----|  
-|**Row Labels**|**Accessories**|**Bikes**|**Clothing**|**Components**||**Grand Total**|  
 |2005|135|345|242|205||366|  
 |2006|356|850|644|702||1015|  
 |2007|531|1234|963|1138||1521|  

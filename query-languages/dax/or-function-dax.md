@@ -50,11 +50,8 @@ IF(   OR(   CALCULATE(SUM('ResellerSales_USD'[SalesAmount_USD]), 'ProductSubcate
 
 Returns
   
-|SalesPersonFlag|True||||||  
+|Row Labels|2005|2006|2007|2008|-|Grand Total|  
 |-------------------|--------|----|----|----|----|----|  
-||||||||  
-|OR function|Column Labels||||||  
-|Row Labels|2005|2006|2007|2008||Grand Total|  
 |Abbas, Syed E|||||||  
 |Alberts, Amy E|||||||  
 |Ansman-Wolfe, Pamela O|||||||  

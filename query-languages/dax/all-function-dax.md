@@ -1,7 +1,7 @@
 ---
 title: "ALL function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/02/2020
+ms.date: 01/05/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -56,9 +56,8 @@ Assume that you want to find the amount of sales for the current cell, in your P
   
 The following table shows the results when a new measure, **All Reseller Sales Ratio**, is created using the formula shown in the code section. To see how this works, add the field, CalendarYear, to the **Row Labels** area of the PivotTable, and add the field, ProductCategoryName, to the **Column Labels** area. Then, drag the measure, **All Reseller Sales Ratio**, to the **Values** area of the Pivot Table. To view the results as percentages, use the formatting features of Excel to apply a percentage number formatting to the cells that contains the measure.  
   
-|All Reseller Sales|Column Labels|||||  
+|Row Labels|Accessories|Bikes|Clothing|Components|Grand Total|   
 |----------------------|-----------------|----|----|----|----|  
-|Row Labels|Accessories|Bikes|Clothing|Components|Grand Total|  
 |2005|0.02%|9.10%|0.04%|0.75%|9.91%|  
 |2006|0.11%|24.71%|0.60%|4.48%|29.90%|  
 |2007|0.36%|31.71%|1.07%|6.79%|39.93%|  
@@ -85,17 +84,16 @@ Calculate Ratio of Product Sales to Total Sales Through Current Year
 
 Assume that you want to create a table showing the percentage of sales compared over the years for each product category (ProductCategoryName). To obtain the percentage for each year over each value of ProductCategoryName, you need to divide the sum of sales for that particular year and product category by the sum of sales for the same product category over all years. In other words, you want to keep the filter on ProductCategoryName but remove the filter on the year when calculating the denominator of the percentage.  
   
-The following table shows the results when a new measure, **Reseller Sales Year**, is created using the formula shown in the code section. To see how this works, add the field, CalendarYear, to the **Row Labels** area of the PivotTable, and add the field, ProductCategoryName, to the **Column Labels** area. To view the results as percentages, use Excel's formatting features to apply a percentage number format to the cells containing the measure, **Reseller Sales Year**.  
+The following table shows the results when a new measure, **Reseller Sales Year**, is created using the formula shown in the code section. To see how this works, add the field, CalendarYear, to the **Row Labels** area of a PivotTable, and add the field, ProductCategoryName, to the **Column Labels** area. To view the results as percentages, use Excel's formatting features to apply a percentage number format to the cells containing the measure, **Reseller Sales Year**.  
   
-|Reseller Sales Year|Column Labels|||||  
+|Row labels|Accessories|Bikes|Clothing|Components|Grand Total|  
 |-----------------------|-----------------|----|----|----|----|  
-|Row Labels|Accessories|Bikes|Clothing|Components|Grand Total|  
 |2005|3.48%|11.03%|1.91%|5.12%|9.91%|  
 |2006|16.21%|29.96%|27.29%|30.59%|29.90%|  
 |2007|51.62%|38.45%|48.86%|46.36%|39.93%|  
 |2008|28.69%|20.56%|21.95%|17.92%|20.26%|  
 |Grand Total|100.00%|100.00%|100.00%|100.00%|100.00%|  
-  
+
 **Formula**
 
 ```dax
@@ -116,9 +114,8 @@ Assume that you want to create a table that shows the percentage of sales for ea
   
 The following table shows the results when a new measure, **Reseller Sales CategoryName**, is created using the formula shown in the code section. To see how this works, add the field, CalendarYear to the **Row Labels** area of the PivotTable, and add the field, ProductCategoryName, to the **Column Labels** area. Then add the new measure to the **Values** area of the PivotTable. To view the results as percentages, use Excel's formatting features to apply a percentage number format to the cells that contain the new measure, **Reseller Sales CategoryName**.  
   
-|Reseller Sales CategoryName|Column Labels|||||  
-|-------------------------------|-----------------|----|----|----|----|  
 |Row Labels|Accessories|Bikes|Clothing|Components|Grand Total|  
+|-------------------------------|-----------------|----|----|----|----|  
 |2005|0.25%|91.76%|0.42%|7.57%|100.00%|  
 |2006|0.38%|82.64%|1.99%|14.99%|100.00%|  
 |2007|0.90%|79.42%|2.67%|17.01%|100.00%|  

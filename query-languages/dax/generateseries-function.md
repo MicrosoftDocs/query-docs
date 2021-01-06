@@ -1,7 +1,7 @@
 ---
 title: "GENERATESERIES function | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/08/2020
+ms.date: 01/06/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -50,8 +50,8 @@ EVALUATE GENERATESERIES(1, 5)
 
 Returns the following table with a single column:
 
-[Value]  | |
----------|---------
+[Value]  |
+---------|
 1     |
 2     |
 3     |
@@ -68,8 +68,8 @@ EVALUATE GENERATESERIES(1.2, 2.4, 0.4)
 
 Returns the following table with a single column:
 
-[Value]  | |
----------|---------
+[Value]  |
+---------|
 1.2    |
 1.6     |
 2     |
@@ -85,8 +85,8 @@ EVALUATE GENERATESERIES(CURRENCY(10), CURRENCY(12.4), CURRENCY(0.5))
 
 Returns the following table with a single column:
 
-[Value]  | |
----------|---------
+[Value]  |
+---------|
 10    |
 10.5     |
 11     |

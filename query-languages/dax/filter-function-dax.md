@@ -1,7 +1,7 @@
 ---
 title: "FILTER function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/08/2020
+ms.date: 01/06/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -53,7 +53,7 @@ To re-create this table, add the field, SalesTerritoryCountry, to the **Row Labe
   
 ### Table 1. Comparing total sales for U.S. vs. all other regions  
   
-|Row Labels|Internet Sales|Non USA Internet Sales|  
+|Row Labels|Internet Sales|Non USA Internet Sales|
 |--------------|------------------|--------------------------|  
 |Australia|$4,999,021.84|$4,999,021.84|  
 |Canada|$1,343,109.10|$1,343,109.10|  
@@ -67,9 +67,8 @@ The final report table shows the results when you create a PivotTable by using t
   
 ### Table 2. Comparing non- U.S. sales by product categories  
   
-|Non USA Internet Sales|Column Labels||||  
+|Row Labels|Accessories|Bikes|Clothing|Grand Total|
 |--------------------------|-----------------|----|----|----|  
-|Row Labels|Accessories|Bikes|Clothing|Grand Total|  
 |2005||$1,526,481.95||$1,526,481.95|  
 |2006||$3,554,744.04||$3,554,744.04|  
 |2007|$156,480.18|$5,640,106.05|$70,142.77|$5,866,729.00|  

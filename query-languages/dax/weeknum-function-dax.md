@@ -1,7 +1,7 @@
 ---
 title: "WEEKNUM function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/13/2020
+ms.date: 01/06/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -35,7 +35,7 @@ An integer number.
   
 - By default, the WEEKNUM function uses a calendar convention in which the week containing January 1 is considered to be the first week of the year. However, the ISO 8601 calendar standard, widely used in Europe, defines the first week as the one with the majority of days (four or more) falling in the new year. This means that for years in which there are three days or less in the first week of January, the WEEKNUM function returns week numbers that are different from the ISO 8601 definition.  
   
-## Example
+## Example 1
 
 The following example returns the week number of the date February 14, 2010.  
   
@@ -43,7 +43,7 @@ The following example returns the week number of the date February 14, 2010.
 = WEEKNUM("Feb 14, 2010", 2)  
 ```
   
-## Example
+## Example 2
 
 The following example returns the week number of the date stored in the column, **HireDate**, from the table, **Employees**.  
   
