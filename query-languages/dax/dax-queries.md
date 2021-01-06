@@ -1,7 +1,8 @@
 ---
 title: "DAX Queries | Microsoft Docs"
+description: Describes Data Analysis Expressions (DAX) language queries.
 ms.service: powerbi 
-ms.date: 08/17/2020
+ms.date: 01/05/2021
 ms.reviewer: owend
 ms.topic: conceptual
 author: minewiskan
@@ -120,7 +121,7 @@ START AT "SO7000"
 
 Returns all rows and columns from the Internet Sales table, ordered by Sales Order Number, beginning at SO7000.
 
-![DAX Evaluate order by statement](media/dax-queries/dax-evaluate-startat.png)
+![DAX Evaluate order by Sales order number statement](media/dax-queries/dax-evaluate-startat.png)
 
 Multiple **EVALUATE**/**ORDER BY**/**START AT** clauses can be specified in a single query.
 

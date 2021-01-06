@@ -1,7 +1,8 @@
 ---
 title: "Learn DAX videos | Microsoft Docs"
+description: Describes helpful videos used to learn Data Analysis Expressions (DAX) language.
 ms.service: powerbi 
-ms.date: 05/18/2020
+ms.date: 01/05/2021
 ms.reviewer: owend
 ms.topic: conceptual
 author: minewiskan
