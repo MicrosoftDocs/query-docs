@@ -1,7 +1,7 @@
 ---
 title: "AND function (DAX) | Microsoft Docs"
 ms.service: powerbi
-ms.date: 07/05/2020
+ms.date: 01/05/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -59,9 +59,8 @@ The following sample uses the AND function with nested formulas to compare two s
 
 Returns
   
-|AND function|Column Labels||||||  
+|Row Labels|2005|2006|2007|2008| |Grand Total|  
 |----------------|-----------------|----|----|----|----|----|  
-|Row Labels|2005|2006|2007|2008||Grand Total|  
 |Bib-Shorts|||||||  
 |Bike Racks|||||||  
 |Bike Stands||||Internet Hit|||  

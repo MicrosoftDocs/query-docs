@@ -1,7 +1,7 @@
 ---
 title: "CONTAINSROW function | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/23/2020
+ms.date: 01/05/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -68,7 +68,7 @@ ORDER BY [Color]
 
 Return the following table with a single column:
 
-DimProduct[Color]  | |
+DimProduct[Color]  |
 ---------|---------
 Blue     |
 Red     |
@@ -112,7 +112,7 @@ ORDER BY [Color]
 
 Return the following table with a single column:
 
-DimProduct[Color]  | |
+DimProduct[Color]  |
 ---------|---------
 Black     |
 Grey     |
