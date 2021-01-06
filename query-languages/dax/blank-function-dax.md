@@ -1,7 +1,7 @@
 ---
 title: "BLANK function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/05/2020
+ms.date: 01/05/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -38,9 +38,8 @@ The following example illustrates how you can work with blanks in formulas. The 
 
 The table shows the expected results when this formula is used to create a PivotTable.  
   
-|Reseller to Internet sales ratio|Column Labels||||  
-|------------------------------------|-----------------|----|----|----|  
-|Row Labels|Accessories|Bikes|Clothing|Grand Total|  
+|Row Labels|Accessories|Bikes|Clothing|Grand Total|
+|------------------------------------|-----------------|----|----|----|
 |2005||2.65||2.89|  
 |2006||3.33||4.03|  
 |2007|1.04|2.92|6.63|3.51|  

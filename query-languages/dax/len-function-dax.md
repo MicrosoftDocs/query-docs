@@ -1,7 +1,7 @@
 ---
 title: "LEN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/08/2020
+ms.date: 01/05/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -42,3 +42,4 @@ The following formula sums the lengths of addresses in the columns, [AddressLine
   
 ```dax
 = LEN([AddressLine1])+LEN([AddressLin2])  
+```

@@ -84,9 +84,8 @@ The following table shows only totals for each region, to prove that the filter 
   
 The following table shows the final report that you might get if you used this measure in a PivotTable:  
   
-|Non USA Internet Sales|Column Labels||||  
+|Row Labels|Accessories|Bikes|Clothing|Grand Total|
 |--------------------------|-----------------|----|----|----|  
-|Row Labels|Accessories|Bikes|Clothing|Grand Total|  
 |2005||$1,526,481.95||$1,526,481.95|  
 |2006||$3,554,744.04||$3,554,744.04|  
 |2007|$156,480.18|$5,640,106.05|$70,142.77|$5,866,729.00|  

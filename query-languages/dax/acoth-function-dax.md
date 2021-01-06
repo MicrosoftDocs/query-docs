@@ -1,14 +1,14 @@
 ---
 title: "ACOTH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/05/2020
+ms.date: 01/05/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
 ms.author: owend
 
 ---
-# ACOT
+# ACOTH
 
 Returns the inverse hyperbolic cotangent of a number.
   

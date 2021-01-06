@@ -1,7 +1,7 @@
 ---
 title: "TRUE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/10/2020
+ms.date: 01/06/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -36,9 +36,8 @@ The formula returns the logical value TRUE when the value in the column, 'Intern
 
 The following table shows the results when the example formula is used in a PivotTable or visualization, with 'ProductCategory'[ProductCategoryName] in Row Labels and 'DateTime'[CalendarYear] in Column Labels.  
   
-|True-False|Column Labels||||||  
+|Row Labels|2005|2006|2007|2008|-|Grand Total|
 |---------------|-----------------|----|----|----|----|----|  
-|Row Labels|2005|2006|2007|2008||Grand Total|  
 |Accessories|FALSE|FALSE|TRUE|TRUE|FALSE|TRUE|  
 |Bikes|TRUE|TRUE|TRUE|TRUE|FALSE|TRUE|  
 |Clothing|FALSE|FALSE|FALSE|FALSE|FALSE|TRUE|  

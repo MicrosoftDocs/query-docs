@@ -1,7 +1,7 @@
 ---
 title: "SECOND function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/10/2020
+ms.date: 01/06/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -38,7 +38,7 @@ An integer number from 0 to 59.
   
 - When the **time** argument is a text representation of a date and time, the function uses the locale and date/time settings of the client computer to understand the text value in order to perform the conversion. Most locales use the colon (:) as the time separator and any input text using colons as time separators will parse correctly. Review your locale settings to understand your results.  
   
-## Example
+## Example 1
 
 The following formula returns the number of seconds in the time contained in the **TransactionTime** column of a table named **Orders**.  
   
@@ -46,7 +46,7 @@ The following formula returns the number of seconds in the time contained in the
 = SECOND('Orders'[TransactionTime])  
 ```
   
-## Example
+## Example 2
 
 The following formula returns 3, which is the number of seconds in the time represented by the value, **March 3, 2008 12:00:03**.  
   
@@ -55,6 +55,7 @@ The following formula returns 3, which is the number of seconds in the time repr
 ```
   
 ## See also
+
 [Date and time functions](date-and-time-functions-dax.md)  
 [HOUR](hour-function-dax.md)  
 [MINUTE](minute-function-dax.md)  
