@@ -485,6 +485,6 @@ The [Definitive Guide to DAX](https://www.sqlbi.com/books/the-definitive-guide-t
 
 ![The Definitive Guide to DAX book image](media/dax-overview-book.png)
 
-## Forum
+## Community
 
 DAX has a vibrant community always willing to share their expertise. Microsoft [Power BI Community](https://community.powerbi.com/) has a special discussion forum just for DAX,  [DAX Commands and Tips](https://community.powerbi.com/t5/DAX-Commands-and-Tips/bd-p/DAXCommands).

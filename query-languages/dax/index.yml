@@ -25,6 +25,8 @@ landingContent:
         links:
           - text: DAX functions
             url: dax-function-reference.md
+          - text: DAX statements
+            url: statements-dax.md
       - linkListType: whats-new
         links:
           - text: New DAX functions
