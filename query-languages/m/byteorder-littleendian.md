@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ByteOrder.LittleEndian"
 title: "ByteOrder.LittleEndian | Microsoft Docs"
 ms.date: 7/29/2019
 ms.service: powerquery

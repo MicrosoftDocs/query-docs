@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MID"
 title: "MID function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 02/11/2020

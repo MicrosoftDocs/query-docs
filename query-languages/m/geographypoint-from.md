@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GeographyPoint.From"
 title: "GeographyPoint.From | Microsoft Docs"
 ms.date: 7/16/2020
 ms.service: powerquery

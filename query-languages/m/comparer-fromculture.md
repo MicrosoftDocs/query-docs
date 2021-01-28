@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Comparer.FromCulture"
 title: "Comparer.FromCulture | Microsoft Docs"
 ms.date: 7/29/2019
 ms.service: powerquery

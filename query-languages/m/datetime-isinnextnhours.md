@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DateTime.IsInNextNHours"
 title: "DateTime.IsInNextNHours | Microsoft Docs"
 ms.date: 4/20/2020
 ms.service: powerquery

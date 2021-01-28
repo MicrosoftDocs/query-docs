@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Function.ScalarVector"
 title: "Function.ScalarVector | Microsoft Docs"
 ms.date: 09/13/2018
 ms.service: powerquery

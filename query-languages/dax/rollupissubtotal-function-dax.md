@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ROLLUPISSUBTOTAL"
 title: "ROLLUPISSUBTOTAL function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 09/09/2020

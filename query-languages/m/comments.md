@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Comments"
 title: "Comments | Microsoft Docs"
 ms.date: 12/12/2018
 ms.service: powerquery

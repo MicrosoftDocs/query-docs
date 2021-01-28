@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BinaryFormat.Choice"
 title: "BinaryFormat.Choice | Microsoft Docs"
 ms.date: 4/20/2020
 ms.service: powerquery

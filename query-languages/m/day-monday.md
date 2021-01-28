@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Day.Monday"
 title: "Day.Monday | Microsoft Docs"
 ms.date: 4/16/2018
 ms.service: powerquery

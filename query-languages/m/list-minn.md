@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: List.MinN"
 title: "List.MinN | Microsoft Docs"
 ms.date: 7/31/2019
 ms.service: powerquery

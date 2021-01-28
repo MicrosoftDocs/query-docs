@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DateTime.FixedLocalNow"
 title: "DateTime.FixedLocalNow | Microsoft Docs"
 ms.date: 7/30/2019
 ms.service: powerquery

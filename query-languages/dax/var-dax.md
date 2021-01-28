@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: VAR"
 title: "VAR keyword (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/13/2020

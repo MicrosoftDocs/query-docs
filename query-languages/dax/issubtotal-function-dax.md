@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISSUBTOTAL"
 title: "ISSUBTOTAL function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 09/09/2020

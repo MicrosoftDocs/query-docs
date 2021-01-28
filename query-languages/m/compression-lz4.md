@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compression.LZ4"
 title: "Compression.LZ4 | Microsoft Docs"
 ms.date: 06/16/2020
 ms.service: powerquery

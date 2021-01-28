@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Date.IsInPreviousQuarter"
 title: "Date.IsInPreviousQuarter | Microsoft Docs"
 ms.date: 7/29/2019
 ms.service: powerquery

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Information functions"
 title: "Information functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 09/01/2020

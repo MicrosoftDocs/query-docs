@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: List functions"
 title: "List functions | Microsoft Docs"
 ms.date: 8/21/2020
 ms.service: powerquery

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COALESCE"
 title: "COALESCE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 03/09/2020

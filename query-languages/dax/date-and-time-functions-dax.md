@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Date and time functions"
 title: "Date and time functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/05/2020

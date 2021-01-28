@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ROLLUP"
 title: "ROLLUP function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 09/01/2020

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Geography.FromWellKnownText"
 title: "Geography.FromWellKnownText | Microsoft Docs"
 ms.date: 7/16/2020
 ms.service: powerquery

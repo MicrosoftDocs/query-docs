@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FORMAT"
 title: "FORMAT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 12/04/2020

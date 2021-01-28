@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CLOSINGBALANCEMONTH"
 title: "CLOSINGBALANCEMONTH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/15/2020

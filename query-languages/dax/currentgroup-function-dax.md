@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CURRENTGROUP"
 title: "CURRENTGROUP function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 09/09/2020

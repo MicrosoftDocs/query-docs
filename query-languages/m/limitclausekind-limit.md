@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: LimitClauseKind.Limit"
 title: "LimitClauseKind.Limit | Microsoft Docs"
 ms.date: 5/22/2018
 ms.service: powerquery

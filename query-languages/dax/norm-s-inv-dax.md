@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NORM.S.INV"
 title: "NORM.S.INV function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/08/2020

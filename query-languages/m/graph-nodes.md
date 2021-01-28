@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Graph.Nodes"
 title: "Graph.Nodes | Microsoft Docs"
 ms.date: 9/22/2020
 ms.service: powerquery

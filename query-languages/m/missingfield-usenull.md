@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MissingField.UseNull"
 title: "MissingField.UseNull | Microsoft Docs"
 ms.date: 4/16/2018
 ms.service: powerquery

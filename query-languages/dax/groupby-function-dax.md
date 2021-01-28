@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GROUPBY"
 title: "GROUPBY function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 09/14/2020

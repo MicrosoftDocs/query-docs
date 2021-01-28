@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: List.DateTimes"
 title: "List.DateTimes | Microsoft Docs"
 ms.date: 8/21/2018
 ms.service: powerquery

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: List.InsertRange"
 title: "List.InsertRange | Microsoft Docs"
 ms.date: 7/26/2019
 ms.service: powerquery

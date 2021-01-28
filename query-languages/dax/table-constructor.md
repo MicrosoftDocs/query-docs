@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Table constructor"
 title: "Table constructor | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/23/2020

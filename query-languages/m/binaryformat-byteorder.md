@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BinaryFormat.ByteOrder"
 title: "BinaryFormat.ByteOrder | Microsoft Docs"
 ms.date: 7/29/2019
 ms.service: powerquery

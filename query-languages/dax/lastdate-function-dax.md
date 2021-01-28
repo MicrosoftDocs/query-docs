@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: LASTDATE"
 title: "LASTDATE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/08/2020

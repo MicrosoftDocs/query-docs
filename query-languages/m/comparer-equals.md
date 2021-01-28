@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Comparer.Equals"
 title: "Comparer.Equals | Microsoft Docs"
 ms.date: 7/29/2019
 ms.service: powerquery

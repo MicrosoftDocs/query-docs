@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AccessControlKind.Deny"
 title: "AccessControlKind.Deny | Microsoft Docs"
 ms.date: 3/28/2019
 ms.service: powerquery

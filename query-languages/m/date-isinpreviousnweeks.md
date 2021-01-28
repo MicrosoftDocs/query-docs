@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Date.IsInPreviousNWeeks"
 title: "Date.IsInPreviousNWeeks | Microsoft Docs"
 ms.date: 7/29/2019
 ms.service: powerquery

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Date.ToText"
 title: "Date.ToText | Microsoft Docs"
 ms.date: 5/13/2020
 ms.service: powerquery

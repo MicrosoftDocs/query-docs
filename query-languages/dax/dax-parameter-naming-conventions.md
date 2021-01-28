@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DAX parameter-naming conventions"
 title: "DAX parameter-naming conventions | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 11/10/2020
