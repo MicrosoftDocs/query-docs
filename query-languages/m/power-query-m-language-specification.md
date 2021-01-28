@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Power Query M language specification"
 title: "Power Query M language specification | Microsoft Docs"
 ms.date: 4/7/2020
 ms.service: powerquery

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Table.IsEmpty"
 title: "Table.IsEmpty | Microsoft Docs"
 ms.date: 5/13/2020
 ms.service: powerquery

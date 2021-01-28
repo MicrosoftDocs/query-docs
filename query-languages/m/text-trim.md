@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Text.Trim"
 title: "Text.Trim | Microsoft Docs"
 ms.date: 4/22/2020
 ms.service: powerquery

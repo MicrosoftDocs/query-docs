@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Table.RowCount"
 title: "Table.RowCount | Microsoft Docs"
 ms.date: 4/23/2020
 ms.service: powerquery

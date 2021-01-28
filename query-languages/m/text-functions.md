@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Text functions"
 title: "Text functions | Microsoft Docs"
 ms.date: 4/7/2019
 ms.service: powerquery

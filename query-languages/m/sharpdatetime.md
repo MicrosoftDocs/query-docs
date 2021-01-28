@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: #datetime"
 title: "#datetime | Microsoft Docs"
 ms.date: 4/16/2018
 ms.service: powerquery

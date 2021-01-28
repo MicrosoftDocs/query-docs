@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Splitter.SplitTextByRepeatedLengths"
 title: "Splitter.SplitTextByRepeatedLengths | Microsoft Docs"
 ms.date: 8/1/2019
 ms.service: powerquery

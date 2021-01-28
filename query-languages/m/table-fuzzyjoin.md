@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Table.FuzzyJoin"
 title: "Table.FuzzyJoin | Microsoft Docs"
 ms.date: 11/23/2020
 ms.service: powerquery

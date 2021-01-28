@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Table.InsertRows"
 title: "Table.InsertRows | Microsoft Docs"
 ms.date: 4/24/2020
 ms.service: powerquery

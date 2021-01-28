@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Web.BrowserContents"
 title: "Web.BrowserContents | Microsoft Docs"
 ms.date: 2/13/2020
 ms.service: powerquery

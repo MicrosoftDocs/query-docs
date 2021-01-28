@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Power Query M function reference"
 title: "Power Query M function reference | Microsoft Docs"
 ms.date: 7/31/2019
 ms.service: powerquery

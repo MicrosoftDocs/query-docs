@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Table.Split"
 title: "Table.Split | Microsoft Docs"
 ms.date: 4/22/2020
 ms.service: powerquery

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: RelativePosition.FromEnd"
 title: "RelativePosition.FromEnd | Microsoft Docs"
 ms.date: 4/16/2018
 ms.service: powerquery

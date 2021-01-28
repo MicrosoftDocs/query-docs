@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Table.PartitionValues"
 title: "Table.PartitionValues | Microsoft Docs"
 ms.date: 7/26/2018
 ms.service: powerquery

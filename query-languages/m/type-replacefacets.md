@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type.ReplaceFacets"
 title: "Type.ReplaceFacets | Microsoft Docs"
 ms.date: 8/2/2019
 ms.service: powerquery

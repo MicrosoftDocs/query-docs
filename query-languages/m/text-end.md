@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Text.End"
 title: "Text.End | Microsoft Docs"
 ms.date: 8/2/2019
 ms.service: powerquery

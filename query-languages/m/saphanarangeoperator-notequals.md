@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SapHanaRangeOperator.NotEquals"
 title: "SapHanaRangeOperator.NotEquals | Microsoft Docs"
 ms.date: 7/29/2019
 ms.service: powerquery
