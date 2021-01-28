@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Table.Schema"
 title: "Table.Schema | Microsoft Docs"
 ms.date: 8/1/2019
 ms.service: powerquery

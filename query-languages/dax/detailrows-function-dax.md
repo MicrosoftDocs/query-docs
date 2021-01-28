@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DETAILROWS"
 title: "DETAILROWS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 08/26/2020

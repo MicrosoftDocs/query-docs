@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Value.FromText"
 title: "Value.FromText | Microsoft Docs"
 ms.date: 4/1/2020
 ms.service: powerquery

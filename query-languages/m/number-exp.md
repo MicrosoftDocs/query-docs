@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Number.Exp"
 title: "Number.Exp | Microsoft Docs"
 ms.date: 7/31/2019
 ms.service: powerquery

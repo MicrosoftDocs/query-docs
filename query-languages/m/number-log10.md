@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Number.Log10"
 title: "Number.Log10 | Microsoft Docs"
 ms.date: 7/31/2019
 ms.service: powerquery

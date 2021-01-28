@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Lines.FromBinary"
 title: "Lines.FromBinary | Microsoft Docs"
 ms.date: 7/30/2019
 ms.service: powerquery

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Quick tour of the Power Query M formula language"
 title: "Quick tour | Microsoft Docs"
 ms.date: 12/12/2018
 ms.service: powerquery

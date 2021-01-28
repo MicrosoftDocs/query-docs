@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BinaryFormat.UnsignedInteger64"
 title: "BinaryFormat.UnsignedInteger64 | Microsoft Docs"
 ms.date: 7/29/2019
 ms.service: powerquery

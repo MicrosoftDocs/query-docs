@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Expression.Constant"
 title: "Expression.Constant | Microsoft Docs"
 ms.date: 8/21/2019
 ms.service: powerquery

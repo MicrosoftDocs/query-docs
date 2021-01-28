@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ByteOrder.BigEndian"
 title: "ByteOrder.BigEndian | Microsoft Docs"
 ms.date: 7/29/2019
 ms.service: powerquery

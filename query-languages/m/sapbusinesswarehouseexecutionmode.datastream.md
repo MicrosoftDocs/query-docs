@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: sapbusinesswarehouseexecutionmode.datastream"
 title: "SapBusinessWarehouseExecutionMode.DataStream | Microsoft Docs"
 ms.date: 4/16/2018
 ms.service: powerquery

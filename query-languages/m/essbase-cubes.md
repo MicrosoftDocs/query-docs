@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Essbase.Cubes"
 title: "Essbase.Cubes | Microsoft Docs"
 ms.date: 7/26/2019
 ms.service: powerquery

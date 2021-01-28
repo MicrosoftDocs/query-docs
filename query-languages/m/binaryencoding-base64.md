@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BinaryEncoding.Base64"
 title: "BinaryEncoding.Base64 | Microsoft Docs"
 ms.date: 7/29/2019
 ms.service: powerquery

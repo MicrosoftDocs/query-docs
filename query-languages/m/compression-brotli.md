@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compression.Brotli"
 title: "Compression.Brotli | Microsoft Docs"
 ms.date: 06/16/2020
 ms.service: powerquery

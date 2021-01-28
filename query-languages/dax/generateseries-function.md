@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GENERATESERIES"
 title: "GENERATESERIES function | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 01/06/2021

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Number.Permutations"
 title: "Number.Permutations | Microsoft Docs"
 ms.date: 7/31/2019
 ms.service: powerquery

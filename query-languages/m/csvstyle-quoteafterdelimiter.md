@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CsvStyle.QuoteAfterDelimiter"
 title: "CsvStyle.QuoteAfterDelimiter | Microsoft Docs"
 ms.date: 4/16/2018
 ms.service: powerquery

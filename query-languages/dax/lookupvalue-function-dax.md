@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: LOOKUPVALUE"
 title: "LOOKUPVALUE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 10/14/2020

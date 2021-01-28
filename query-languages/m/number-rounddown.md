@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Number.RoundDown"
 title: "Number.RoundDown | Microsoft Docs"
 ms.date: 7/31/2019
 ms.service: powerquery

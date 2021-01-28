@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Binary.Length"
 title: "Binary.Length | Microsoft Docs"
 ms.date: 7/29/2019
 ms.service: powerquery

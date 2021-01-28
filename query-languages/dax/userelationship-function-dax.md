@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: USERELATIONSHIP"
 title: "USERELATIONSHIP function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/13/2020

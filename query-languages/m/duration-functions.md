@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Duration functions"
 title: "Duration functions | Microsoft Docs"
 ms.date: 4/7/2020
 ms.service: powerquery

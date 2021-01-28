@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Folder.Contents"
 title: "Folder.Contents | Microsoft Docs"
 ms.date: 10/10/2019
 ms.service: powerquery

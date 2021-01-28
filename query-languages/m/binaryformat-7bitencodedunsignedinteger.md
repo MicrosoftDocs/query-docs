@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BinaryFormat.7BitEncodedUnsignedInteger"
 title: "BinaryFormat.7BitEncodedUnsignedInteger | Microsoft Docs"
 ms.date: 7/29/2019
 ms.service: powerquery

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cube.AddMeasureColumn"
 title: "Cube.AddMeasureColumn | Microsoft Docs"
 ms.date: 4/16/2018
 ms.service: powerquery

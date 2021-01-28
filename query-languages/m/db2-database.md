@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DB2.Database"
 title: "DB2.Database | Microsoft Docs"
 ms.date: 07/17/2019
 ms.service: powerquery

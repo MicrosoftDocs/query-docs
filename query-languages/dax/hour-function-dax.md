@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: HOUR"
 title: "HOUR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 01/06/2021

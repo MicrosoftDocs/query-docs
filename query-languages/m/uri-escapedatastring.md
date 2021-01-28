@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Uri.EscapeDataString"
 title: "Uri.EscapeDataString | Microsoft Docs"
 ms.date: 8/2/2019
 ms.service: powerquery

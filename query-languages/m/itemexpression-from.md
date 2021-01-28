@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ItemExpression.From"
 title: "ItemExpression.From | Microsoft Docs"
 ms.date: 7/17/2019
 ms.service: powerquery

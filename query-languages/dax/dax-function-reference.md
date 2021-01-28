@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DAX function reference"
 title: "DAX function reference | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 11/10/2020

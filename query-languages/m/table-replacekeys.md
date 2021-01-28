@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Table.ReplaceKeys"
 title: "Table.ReplaceKeys | Microsoft Docs"
 ms.date: 8/2/2019
 ms.service: powerquery

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: RELATEDTABLE"
 title: "RELATEDTABLE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/10/2020

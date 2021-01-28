@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NOT"
 title: "NOT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 08/04/2020

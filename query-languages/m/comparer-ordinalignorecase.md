@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Comparer.OrdinalIgnoreCase"
 title: "Comparer.OrdinalIgnoreCase | Microsoft Docs"
 ms.date: 7/29/2019
 ms.service: powerquery

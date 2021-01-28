@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Pdf.Tables"
 title: "Pdf.Tables | Microsoft Docs"
 ms.date: 06/15/2020
 ms.service: powerquery

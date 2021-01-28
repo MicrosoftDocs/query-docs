@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Table.Reverse"
 title: "Table.Reverse | Microsoft Docs"
 ms.date: 5/22/2018
 ms.service: powerquery

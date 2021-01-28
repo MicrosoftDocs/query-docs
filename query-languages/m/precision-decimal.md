@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Precision.Decimal"
 title: "Precision.Decimal | Microsoft Docs"
 ms.date: 4/16/2018
 ms.service: powerquery

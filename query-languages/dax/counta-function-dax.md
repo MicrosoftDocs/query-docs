@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COUNTA"
 title: "COUNTA function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/05/2020

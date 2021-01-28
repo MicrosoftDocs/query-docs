@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AzureStorage.DataLake"
 title: "AzureStorage.DataLake | Microsoft Docs"
 ms.date: 10/10/2019
 ms.service: powerquery

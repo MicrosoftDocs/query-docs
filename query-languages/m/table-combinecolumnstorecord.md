@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Table.CombineColumnsToRecord"
 title: "Table.CombineColumnsToRecord | Microsoft Docs"
 ms.date: 09/14/2020
 ms.service: powerquery

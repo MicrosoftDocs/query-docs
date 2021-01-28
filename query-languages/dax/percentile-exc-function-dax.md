@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: PERCENTILE.EXC"
 title: "PERCENTILE.EXC function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/10/2020

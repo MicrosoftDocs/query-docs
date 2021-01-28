@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WebMethod.Head"
 title: "WebMethod.Head | Microsoft Docs"
 ms.date: 4/16/2018
 ms.service: powerquery

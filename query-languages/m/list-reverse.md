@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: List.Reverse"
 title: "List.Reverse | Microsoft Docs"
 ms.date: 7/31/2019
 ms.service: powerquery

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Date.DayOfWeek"
 title: "Date.DayOfWeek | Microsoft Docs"
 ms.date: 6/13/2019
 ms.service: powerquery

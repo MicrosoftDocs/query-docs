@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CROSSFILTER"
 title: "CROSSFILTER function | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/05/2020

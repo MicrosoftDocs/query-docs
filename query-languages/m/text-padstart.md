@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Text.PadStart"
 title: "Text.PadStart | Microsoft Docs"
 ms.date: 4/22/2020
 ms.service: powerquery

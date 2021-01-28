@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Int32.From"
 title: "Int32.From | Microsoft Docs"
 ms.date: 4/20/2020
 ms.service: powerquery

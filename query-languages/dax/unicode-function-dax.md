@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: UNICODE"
 title: "UNICODE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/13/2020

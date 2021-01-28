@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ODataOmitValues.Nulls"
 title: "ODataOmitValues.Nulls | Microsoft Docs"
 ms.date: 02/12/2019
 ms.service: powerquery

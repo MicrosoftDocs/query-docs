@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Error.Record"
 title: "Error.Record | Microsoft Docs"
 ms.date: 7/30/2019
 ms.service: powerquery

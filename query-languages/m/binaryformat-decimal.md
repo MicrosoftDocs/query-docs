@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BinaryFormat.Decimal"
 title: "BinaryFormat.Decimal | Microsoft Docs"
 ms.date: 7/29/2019
 ms.service: powerquery

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DateTime.IsInPreviousSecond"
 title: "DateTime.IsInPreviousSecond | Microsoft Docs"
 ms.date: 4/20/2020
 ms.service: powerquery

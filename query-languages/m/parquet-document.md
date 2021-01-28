@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Parquet.Document"
 title: "Parquet.Document | Microsoft Docs"
 ms.date: 06/15/2020
 ms.service: powerquery

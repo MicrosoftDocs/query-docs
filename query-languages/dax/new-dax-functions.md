@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: New DAX functions"
 title: "New DAX functions | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 01/05/2021

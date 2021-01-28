@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: STDEV.S"
 title: "STDEV.S function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/10/2020

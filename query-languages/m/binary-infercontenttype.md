@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Binary.InferContentType"
 title: "Binary.InferContentType | Microsoft Docs"
 ms.date: 4/17/2018
 ms.service: powerquery

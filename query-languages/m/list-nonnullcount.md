@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: List.NonNullCount"
 title: "List.NonNullCount | Microsoft Docs"
 ms.date: 7/31/2019
 ms.service: powerquery

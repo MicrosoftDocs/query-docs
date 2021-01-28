@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DIVIDE"
 title: "DIVIDE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/05/2020

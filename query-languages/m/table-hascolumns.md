@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Table.HasColumns"
 title: "Table.HasColumns | Microsoft Docs"
 ms.date: 4/20/2020
 ms.service: powerquery

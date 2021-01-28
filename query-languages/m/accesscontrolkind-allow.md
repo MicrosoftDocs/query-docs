@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AccessControlKind.Allow"
 title: "AccessControlKind.Allow | Microsoft Docs"
 ms.date: 3/28/2019
 ms.service: powerquery

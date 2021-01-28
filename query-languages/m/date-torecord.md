@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Date.ToRecord"
 title: "Date.ToRecord | Microsoft Docs"
 ms.date: 7/29/2019
 ms.service: powerquery

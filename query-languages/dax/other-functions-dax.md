@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Other functions"
 title: "Other functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 08/17/2020

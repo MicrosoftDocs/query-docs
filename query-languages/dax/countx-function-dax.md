@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COUNTX"
 title: "COUNTX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 08/14/2020

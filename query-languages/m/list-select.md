@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: List.Select"
 title: "List.Select | Microsoft Docs"
 ms.date: 7/31/2019
 ms.service: powerquery
