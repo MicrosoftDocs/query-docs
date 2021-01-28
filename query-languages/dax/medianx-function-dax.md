@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MEDIANX"
 title: "MEDIANX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 12/10/2018
