@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Table.ReplaceErrorValues"
 title: "Table.ReplaceErrorValues | Microsoft Docs"
 ms.date: 4/23/2020
 ms.service: powerquery

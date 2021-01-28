@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Table.ReplaceMatchingRows"
 title: "Table.ReplaceMatchingRows | Microsoft Docs"
 ms.date: 5/13/2020
 ms.service: powerquery

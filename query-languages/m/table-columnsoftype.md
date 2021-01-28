@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Table.ColumnsOfType"
 title: "Table.ColumnsOfType | Microsoft Docs"
 ms.date: 4/23/2020
 ms.service: powerquery

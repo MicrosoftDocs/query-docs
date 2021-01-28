@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Record.FromList"
 title: "Record.FromList | Microsoft Docs"
 ms.date: 8/1/2019
 ms.service: powerquery

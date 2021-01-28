@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type.ClosedRecord"
 title: "Type.ClosedRecord | Microsoft Docs"
 ms.date: 4/21/2020
 ms.service: powerquery

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Splitter.SplitTextByCharacterTransition"
 title: "Splitter.SplitTextByCharacterTransition | Microsoft Docs"
 ms.date: 11/15/2018
 ms.service: powerquery

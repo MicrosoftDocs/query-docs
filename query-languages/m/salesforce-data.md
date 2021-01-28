@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Salesforce.Data"
 title: "Salesforce.Data | Microsoft Docs"
 ms.date: 2/13/2020
 ms.service: powerquery

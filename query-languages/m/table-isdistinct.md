@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Table.IsDistinct"
 title: "Table.IsDistinct | Microsoft Docs"
 ms.date: 4/20/2020
 ms.service: powerquery

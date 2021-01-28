@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Occurrence.Last"
 title: "Occurrence.Last | Microsoft Docs"
 ms.date: 4/16/2018
 ms.service: powerquery

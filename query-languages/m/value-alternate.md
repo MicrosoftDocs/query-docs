@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Value.Alternate"
 title: "Value.Alternate | Microsoft Docs"
 ms.date: 10/15/2020
 ms.service: powerquery

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WebAction.Request"
 title: "WebAction.Request | Microsoft Docs"
 ms.date: 11/23/2020
 ms.service: powerquery

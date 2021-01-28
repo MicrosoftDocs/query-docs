@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Table.ToRecords"
 title: "Table.ToRecords | Microsoft Docs"
 ms.date: 4/21/2020
 ms.service: powerquery

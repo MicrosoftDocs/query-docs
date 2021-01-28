@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &#35;table"
 title: "#table | Microsoft Docs"
 ms.date: 10/17/2019
 ms.service: powerquery

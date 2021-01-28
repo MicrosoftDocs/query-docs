@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Table.FuzzyGroup"
 title: "Table.FuzzyGroup | Microsoft Docs"
 ms.date: 9/14/2020
 ms.service: powerquery

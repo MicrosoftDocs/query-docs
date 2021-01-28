@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Text.ToList"
 title: "Text.ToList | Microsoft Docs"
 ms.date: 8/2/2019
 ms.service: powerquery

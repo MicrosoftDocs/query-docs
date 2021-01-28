@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Table.Contains"
 title: "Table.Contains | Microsoft Docs"
 ms.date: 4/20/2020
 ms.service: powerquery

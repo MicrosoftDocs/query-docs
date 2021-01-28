@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Text.Reverse"
 title: "Text.Reverse| Microsoft Docs"
 ms.date: 5/22/2018
 ms.service: powerquery

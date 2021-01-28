@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Value.Traits"
 title: "Value.Traits | Microsoft Docs"
 ms.date: 9/22/2020
 ms.service: powerquery
