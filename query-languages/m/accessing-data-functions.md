@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accessing data functions"
 title: "Accessing data functions | Microsoft Docs"
 ms.date: 06/16/2020
 ms.service: powerquery

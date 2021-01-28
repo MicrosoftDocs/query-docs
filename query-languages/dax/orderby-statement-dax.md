@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ORDER BY"
 title: "ORDER BY keyword (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/10/2020

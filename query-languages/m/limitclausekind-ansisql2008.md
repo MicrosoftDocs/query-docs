@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: LimitClauseKind.AnsiSql2008"
 title: "LimitClauseKind.AnsiSql2008 | Microsoft Docs"
 ms.date: 5/22/2018
 ms.service: powerquery

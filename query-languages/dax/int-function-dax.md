@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: INT"
 title: "INT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 08/04/2020

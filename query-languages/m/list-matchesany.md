@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: List.MatchesAny"
 title: "List.MatchesAny | Microsoft Docs"
 ms.date: 4/20/2020
 ms.service: powerquery

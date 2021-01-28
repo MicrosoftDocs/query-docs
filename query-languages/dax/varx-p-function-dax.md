@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: VARX.P"
 title: "VARX.P function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/13/2020

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Time intelligence functions"
 title: "Time intelligence functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/06/2020

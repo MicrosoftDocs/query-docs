@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IdentityProvider.Default"
 title: "IdentityProvider.Default | Microsoft Docs"
 ms.date: 3/28/2019
 ms.service: powerquery

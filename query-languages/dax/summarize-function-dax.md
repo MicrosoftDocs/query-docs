@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SUMMARIZE"
 title: "SUMMARIZE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 09/02/2020

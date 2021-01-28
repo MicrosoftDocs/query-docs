@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NONVISUAL"
 title: "NONVISUAL function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 09/01/2020

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Binary.Compress"
 title: "Binary.Compress | Microsoft Docs"
 ms.date: 12/12/2018
 ms.service: powerquery

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DATATABLE"
 title: "DATATABLE function | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/05/2020

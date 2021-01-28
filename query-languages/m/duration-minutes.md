@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Duration.Minutes"
 title: "Duration.Minutes | Microsoft Docs"
 ms.date: 7/30/2019
 ms.service: powerquery

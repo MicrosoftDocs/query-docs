@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cube.MeasureProperties"
 title: "Cube.MeasureProperties | Microsoft Docs"
 ms.date: 8/17/2018
 ms.service: powerquery

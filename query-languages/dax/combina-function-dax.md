@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COMBINA"
 title: "COMBINA function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 08/07/2020

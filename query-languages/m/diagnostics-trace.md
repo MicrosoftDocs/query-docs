@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Diagnostics.Trace"
 title: "Diagnostics.Trace | Microsoft Docs"
 ms.date: 01/16/2019
 ms.service: powerquery

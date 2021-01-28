@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Expression.Identifier"
 title: "Expression.Identifier | Microsoft Docs"
 ms.date: 8/21/2019
 ms.service: powerquery

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Relationship functions"
 title: "Relationship functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/24/2020

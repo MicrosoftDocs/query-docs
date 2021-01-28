@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SELECTEDVALUE"
 title: "SELECTEDVALUE function | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/10/2020

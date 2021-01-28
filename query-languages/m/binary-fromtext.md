@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Binary.FromText"
 title: "Binary.FromText | Microsoft Docs"
 ms.date: 12/12/2018
 ms.service: powerquery

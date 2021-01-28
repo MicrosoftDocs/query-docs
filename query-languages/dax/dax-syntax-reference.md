@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DAX syntax"
 title: "DAX syntax | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 11/10/2020

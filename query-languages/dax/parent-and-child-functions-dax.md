@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Parent and Child functions"
 title: "Parent and Child functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/10/2020

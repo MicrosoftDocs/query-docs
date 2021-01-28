@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compression.Snappy"
 title: "Compression.Snappy | Microsoft Docs"
 ms.date: 06/16/2020
 ms.service: powerquery

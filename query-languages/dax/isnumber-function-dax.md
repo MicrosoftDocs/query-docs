@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISNUMBER"
 title: "ISNUMBER function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 12/10/2018

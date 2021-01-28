@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Number.Acos"
 title: "Number.Acos | Microsoft Docs"
 ms.date: 7/31/2019
 ms.service: powerquery

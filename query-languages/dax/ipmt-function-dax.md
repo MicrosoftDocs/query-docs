@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IPMT"
 title: "IPMT function (DAX) | Microsoft Docs"
 ms.service: powerbi
 ms.date: 07/02/2020

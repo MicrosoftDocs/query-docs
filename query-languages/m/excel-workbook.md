@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Excel.Workbook"
 title: "Excel.Workbook | Microsoft Docs"
 ms.date: 11/23/2020
 ms.service: powerquery

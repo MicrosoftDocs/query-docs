@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ACCRINTM"
 title: "ACCRINTM function (DAX) | Microsoft Docs"
 ms.service: powerbi
 ms.date: 07/02/2020

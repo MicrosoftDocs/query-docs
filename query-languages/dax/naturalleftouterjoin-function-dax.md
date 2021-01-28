@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NATURALLEFTOUTERJOIN"
 title: "NATURALLEFTOUTERJOIN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/08/2020

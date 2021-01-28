@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AdoDotNet.DataSource"
 title: "AdoDotNet.DataSource | Microsoft Docs"
 ms.date: 10/17/2019
 ms.service: powerquery

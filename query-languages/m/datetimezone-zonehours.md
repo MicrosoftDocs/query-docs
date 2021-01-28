@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DateTimeZone.ZoneHours"
 title: "DateTimeZone.ZoneHours | Microsoft Docs"
 ms.date: 7/30/2019
 ms.service: powerquery

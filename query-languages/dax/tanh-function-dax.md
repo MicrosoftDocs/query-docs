@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TANH"
 title: "TANH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 08/07/2020

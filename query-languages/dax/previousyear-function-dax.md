@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: PREVIOUSYEAR"
 title: "PREVIOUSYEAR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/10/2020

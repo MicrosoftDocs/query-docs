@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CALCULATETABLE"
 title: "CALCULATETABLE function (DAX) | Microsoft Docs"
 ms.service: powerbi
 ms.date: 07/06/2020

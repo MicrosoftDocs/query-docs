@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SIGN"
 title: "SIGN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/10/2020

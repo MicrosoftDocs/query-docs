@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ALL"
 title: "ALL function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 01/05/2021

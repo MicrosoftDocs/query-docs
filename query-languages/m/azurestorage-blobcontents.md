@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AzureStorage.BlobContents"
 title: "AzureStorage.BlobContents | Microsoft Docs"
 ms.date: 10/10/2019
 ms.service: powerquery

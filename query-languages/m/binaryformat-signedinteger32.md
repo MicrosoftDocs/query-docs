@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BinaryFormat.SignedInteger32"
 title: "BinaryFormat.SignedInteger32 | Microsoft Docs"
 ms.date: 7/29/2019
 ms.service: powerquery

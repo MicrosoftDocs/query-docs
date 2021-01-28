@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TRIM"
 title: "TRIM function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/10/2020

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: YEARFRAC"
 title: "YEARFRAC function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/13/2020

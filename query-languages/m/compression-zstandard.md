@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compression.Zstandard"
 title: "Compression.Zstandard | Microsoft Docs"
 ms.date: 06/16/2020
 ms.service: powerquery

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: EVALUATE"
 title: "EVALUATE keyword (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 07/08/2020
