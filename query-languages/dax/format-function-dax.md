@@ -2,7 +2,7 @@
 description: "Learn more about: FORMAT"
 title: "FORMAT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/04/2020
+ms.date: 02/03/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -37,7 +37,7 @@ A string containing **value** formatted as defined by **format_string**.
 
 ## Remarks
 
-- All predefined formatting strings use the current user locale when formatting the result.
+- Predefined format strings use the model culture property when formatting the result. By default, the model culture property is set according to the user locale of the computer. For new Power BI Desktop models, the model culture property can be changed in Options > Regional Settings > Model language. For Analysis Services, model culture is set according to the Language property initially defined by the instance.
 
 - The format strings supported as an argument to the DAX FORMAT function are based on the format strings used by Visual Basic (OLE Automation), not on the format strings used by the .NET Framework. Therefore, you might get unexpected results or an error if the argument doesn't match any defined format strings. For example, "p" as an abbreviation for "Percent" isn't supported. Strings that you provide as an argument to the FORMAT function that aren't included in the list of predefined format strings are handled as part of a custom format string, or as a string literal.
 

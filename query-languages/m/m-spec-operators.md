@@ -631,12 +631,7 @@ The following holds when evaluating an expression containing the relational oper
 * Two numbers `x` and `y` are compared according to the rules of the IEEE 754 standard:
 
    * If either operand is `#nan`, the result is `false` for all relational operators.
-   * When neither operand is `#nan`, the operators compare the values of the two floatingpoint operands with respect to the ordering
-
-        ```
-        -∞ < -max < ... < -min < -0.0 = +0.0 < +min < ... < +max < +∞
-        ```
-      where min and max are the smallest and largest positive finite values that can be represented. The M names for -∞ and +∞ are `-#infinity` and `#infinity`.
+   * When neither operand is `#nan`, the operators compare the values of the two floatingpoint operands with respect to the ordering `-∞ < -max < ... < -min < -0.0 = +0.0 < +min < ... < +max < +∞` where min and max are the smallest and largest positive finite values that can be represented. The M names for -∞ and +∞ are `-#infinity` and `#infinity`.
 
     Notable effects of this ordering are:
 
