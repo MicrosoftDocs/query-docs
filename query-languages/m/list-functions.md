@@ -118,11 +118,11 @@ Ordering functions perform comparisons.  All values that are compared must be co
 |[List.Min](list-min.md)|Returns the minimum item in a list, or the optional default value if the list is empty.|  
 |[List.MinN](list-minn.md)|Returns the minimum values in a list.|  
 |[List.Sort](list-sort.md)|Returns a sorted list using comparison criterion.|
-|[List.Percentile](List.Percentile.md) | Returns one or more sample percentiles corresponding to the given probabilities.|
-|[PercentileMode.ExcelInc](PercentileMode.ExcelInc.md) | When interpolating values for <code>List.Percentile</code>, use a method compatible with Excel's <code>PERCENTILE.INC</code>.|
-|[PercentileMode.ExcelExc](PercentileMode.ExcelExc.md) | When interpolating values for <code>List.Percentile</code>, use a method compatible with Excel's <code>PERCENTILE.EXC</code>.|
-|[PercentileMode.SqlDisc](PercentileMode.SqlDisc.md) | When interpolating values for <code>List.Percentile</code>, use a method compatible with SQL Server's <code>PERCENTILE_DISC</code>.|
-|[PercentileMode.SqlCont](PercentileMode.SqlCont.md) | When interpolating values for <code>List.Percentile</code>, use a method compatible with SQL Server's <code>PERCENTILE_CONT</code>.|
+|[List.Percentile](list-percentile.md) | Returns one or more sample percentiles corresponding to the given probabilities.|
+|[PercentileMode.ExcelExc](percentilemode-excelexc.md) | When interpolating values for <code>List.Percentile</code>, use a method compatible with Excel's <code>PERCENTILE.EXC</code>.|
+|[PercentileMode.ExcelInc](percentilemode-excelinc.md) | When interpolating values for <code>List.Percentile</code>, use a method compatible with Excel's <code>PERCENTILE.INC</code>.|
+|[PercentileMode.SqlCont](percentilemode-sqlcont.md) | When interpolating values for <code>List.Percentile</code>, use a method compatible with SQL Server's <code>PERCENTILE_CONT</code>.|
+|[PercentileMode.SqlDisc](percentilemode-sqldisc.md) | When interpolating values for <code>List.Percentile</code>, use a method compatible with SQL Server's <code>PERCENTILE_DISC</code>.|
   
 ### <a name="__toc360789369"></a>Averages  
 These functions operate over homogeneous lists of Numbers, DateTimes, and Durations.  
