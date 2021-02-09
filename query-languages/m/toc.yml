@@ -801,6 +801,8 @@
               href: list-nonnullcount.md
             - name: List.Numbers
               href: list-numbers.md
+            - name: List.Percentile
+              href: list-percentile.md
             - name: List.PositionOf
               href: list-positionof.md
             - name: List.PositionOfAny
@@ -861,6 +863,14 @@
               href: list-union.md
             - name: List.Zip
               href: list-zip.md
+            - name: PercentileMode.ExcelExc
+              href: percentilemode-excelexc.md
+            - name: PercentileMode.ExcelInc
+              href: percentilemode-excelinc.md
+            - name: PercentileMode.SqlCont
+              href: percentilemode-sqlcont.md
+            - name: PercentileMode.SqlDisc
+              href: percentilemode-sqldisc.md
         - name: Logical functions
           items: 
             - name: Logical functions overview

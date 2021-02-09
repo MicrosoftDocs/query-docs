@@ -1,9 +1,8 @@
 ---
 description: "Learn more about: Teradata.Database"
 title: "Teradata.Database | Microsoft Docs"
-ms.date: 7/29/2019
+ms.date: 02/03/2021
 ms.service: powerquery
-
 ms.reviewer: gepopell
 ms.topic: reference
 author: dougklopfenstein
@@ -27,9 +26,9 @@ Returns a table of SQL tables and views from the Teradata database on server `se
 
 * `Query` : A native SQL query used to retrieve data. If the query produces multiple result sets, only the first will be returned.
 
-* `CommandTimeout` : A duration which controls how long the server-side query is allowed to run before it is canceled. The default value is ten minutes.
+* `CommandTimeout` : A duration that controls how long the server-side query is allowed to run before it is canceled. The default value is ten minutes.
 
-* `ConnectionTimeout` : A duration which controls how long to wait before abandoning an attempt to make a connection to the server. The default value is driver-dependent.
+* `ConnectionTimeout` : A duration that controls how long to wait before abandoning an attempt to make a connection to the server. The default value is driver-dependent.
 
 * `HierarchicalNavigation` : A logical (true/false) that sets whether to view the tables grouped by their schema names (default is false).
 
