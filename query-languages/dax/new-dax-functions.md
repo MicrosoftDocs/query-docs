@@ -76,5 +76,6 @@ While functions and functionality are being updated all the time, only those upd
 
 ## Updated functions
 
-|Function  | Month  |
-|---------|---------|
+|Function  | Month  |Description |
+|---------|---------|---------|
+|[CALCULATE](calculate-function-dax.md)|March 2021|Support for OR (||) operator when there are multiple filters.|
