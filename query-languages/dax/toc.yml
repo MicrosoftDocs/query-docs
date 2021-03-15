@@ -280,7 +280,7 @@
             - name: IF
               href: if-function-dax.md
             - name: IF.EAGER
-              href: if-eager-unction-dax.md
+              href: if-eager-function-dax.md
             - name: IFERROR
               href: iferror-function-dax.md
             - name: NOT
