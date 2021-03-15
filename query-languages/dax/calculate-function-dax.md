@@ -2,7 +2,7 @@
 description: "Learn more about: CALCULATE"
 title: "CALCULATE function (DAX) | Microsoft Docs"
 ms.service: powerbi
-ms.date: 07/06/2020
+ms.date: 03/01/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -39,7 +39,7 @@ Filters can be:
 - Table filter expressions
 - Filter modification functions
 
-When there are multiple filters, they're evaluated by using the AND [logical operator](dax-operator-reference.md#logical-operators). That means all conditions must be TRUE at the same time.
+When there are multiple filters, they can be evaluated by using the AND (&&) [logical operator](dax-operator-reference.md#logical-operators), meaning all conditions must be TRUE, or by the OR (||) logical operator, meaning either condition can be true.
 
 #### Boolean filter expressions
 
