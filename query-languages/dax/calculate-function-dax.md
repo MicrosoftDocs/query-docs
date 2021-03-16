@@ -2,7 +2,7 @@
 description: "Learn more about: CALCULATE"
 title: "CALCULATE function (DAX) | Microsoft Docs"
 ms.service: powerbi
-ms.date: 03/01/2021
+ms.date: 03/16/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -45,7 +45,7 @@ When there are multiple filters, they can be evaluated by using the AND (&&) [lo
 
 A Boolean expression filter is an expression that evaluates to TRUE or FALSE. There are several rules that they must abide by:
 
-- They can reference only a single column.
+- They can reference columns from a single table.
 - They cannot reference measures.
 - They cannot use a nested CALCULATE function.
 - They cannot use functions that scan or return a table, including aggregation functions.
