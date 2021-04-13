@@ -178,7 +178,7 @@ in
 ```  
 This expression returns the follow record:  
   
-|||  
+|Field|Value|  
 |-|-|  
 |**OrderID**|2|  
 |**CustomerID**|1|  
