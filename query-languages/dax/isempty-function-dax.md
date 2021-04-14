@@ -2,7 +2,7 @@
 description: "Learn more about: ISEMPTY"
 title: "ISEMPTY function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/08/2020
+ms.date: 04/13/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -47,7 +47,7 @@ For the below table named 'Info':
   
 ```dax
 EVALUATE
-ROW("Any countries with count > 25?", NOT(ISEMPTY(FILTER(Info, [Count]>25)))  
+ROW("Any countries with count > 25?", NOT(ISEMPTY(FILTER(Info, [County]>25)))  
 ```
 
 Return value: **FALSE**  

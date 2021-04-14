@@ -32,7 +32,7 @@ in
 
 To create an M query in the **Query Editor**, you follow this basic process:  
   
--   Create a series of query formula steps that start with the **let** statement. Each step is defined by a step variable name. An M **variable** can included spaces by using the # character as #"Step Name". A formula step can be a custom formula. Please note that the Power Query Formula Language is case sensitive.  
+-   Create a series of query formula steps that start with the **let** statement. Each step is defined by a step variable name. An M **variable** can include spaces by using the # character as #"Step Name". A formula step can be a custom formula. Please note that the Power Query Formula Language is case sensitive.  
   
 -   Each query formula step builds upon a previous step by referring to a step by its variable name.  
   
