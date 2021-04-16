@@ -2,7 +2,7 @@
 description: "Learn more about: New DAX functions"
 title: "New DAX functions | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 03/01/2021
+ms.date: 04/16/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -76,4 +76,5 @@ While functions and functionality are being updated all the time, only those upd
 
 |Function  | Month  |Description|
 |---------|---------|---------|
+|[CROSSFILTER](crossfilter-function.md)|April, 2021|Additional options for the Direction parameter.|
 |[CALCULATE](calculate-function-dax.md)|March, 2021|Support for OR (\|\|) operator when there are multiple filters.|
