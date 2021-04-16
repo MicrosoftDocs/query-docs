@@ -2,7 +2,7 @@
 description: "Learn more about: CROSSFILTER"
 title: "CROSSFILTER function | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/05/2020
+ms.date: 04/16/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -25,7 +25,7 @@ CROSSFILTER(<columnName1>, <columnName2>, <direction>)
 |--------|--------------|  
 |columnName1|The name of an existing column, using standard DAX syntax and fully qualified, that usually represents the many side of the relationship to be used; if the arguments are given in reverse order the function will swap them before using them. This argument cannot be an expression.|  
 |columnName2|The name of an existing column, using standard DAX syntax and fully qualified, that usually represents the one side or lookup side of the relationship to be used; if the arguments are given in reverse order the function will swap them before using them. This argument cannot be an expression.|  
-|Direction|The cross-filter direction to be used. Must be one of the following:<br />none<br />No cross-filtering occurs along this relationship<br /><br />**one** - Filters on the one or lookup side of the side of the relationship filter the many side.<br /><br />**both** - <br />Filters on either side filter the other<br /><br />**none** - No cross-filtering occurs along this relationship|  
+|Direction|The cross-filter direction to be used. Must be one of the following:<br /><br />**None** - No cross-filtering occurs along this relationship.<br /><br />**Both** - Filters on either side filter the other.<br /><br />**OneWay** - Filters on the one side or the lookup side of a relationship filter the other side. This option cannot be used with a one-to-one relationship . Don’t use this option on a many-to-many relationship because it is unclear which side is the lookup side; use OneWay_LeftFiltersRight or OneWay_RightFiltersLeft instead.<br /><br />**OneWay_LeftFiltersRight** - Filters on the side of \<columnName1> filter the side of \<columnName2>. This option cannot be used with a one-to-one or many-to-one relationship.<br /><br />**OneWay_RightFiltersLeft** - Filters on the side of \<columnName2> filter the side of \<columnName1>. This option cannot be used with a one-to-one or many-to-one relationship.|  
   
 ## Return value
 
