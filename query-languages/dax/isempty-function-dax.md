@@ -47,7 +47,7 @@ For the below table named 'Info':
   
 ```dax
 EVALUATE
-ROW("Any countries with count > 25?", NOT(ISEMPTY(FILTER(Info, [County]>25)))  
+ROW("Any countries with count > 25?", NOT(ISEMPTY(FILTER(Info, [County]>25))))  
 ```
 
 Return value: **FALSE**  

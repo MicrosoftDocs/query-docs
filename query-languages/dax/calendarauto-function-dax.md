@@ -2,7 +2,7 @@
 description: "Learn more about: CALENDARAUTO"
 title: "CALENDARAUTO function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/05/2020
+ms.date: 04/19/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -47,4 +47,4 @@ In this example, the MinDate and MaxDate in the data model are July 1, 2010 and 
   
 `CALENDARAUTO()` will return all dates between January 1, 2010 and December 31, 2011.  
   
-`CALENDARAUTO(3)` will return all dates between March 1, 2010 and February 28, 2012.  
+`CALENDARAUTO(3)` will return all dates between March 1, 2010 and March 31, 2012.  
