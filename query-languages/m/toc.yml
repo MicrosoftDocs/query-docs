@@ -1351,6 +1351,8 @@
               href: table-sort.md
             - name: Table.Split
               href: table-split.md
+            - name: Table.SplitAt
+              href: table-splitat.md
             - name: Table.SplitColumn
               href: table-splitcolumn.md
             - name: Table.ToColumns
