@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.Group"
 title: "Table.Group | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 5/25/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,8 +18,14 @@ ms.author: bezhan
 Table.Group(<b>table</b> as table, <b>key</b> as any, <b>aggregatedColumns</b> as list, optional <b>groupKind</b> as nullable number, optional <b>comparer</b> as nullable function) as table 
 </pre>
   
-## About  
-Groups the rows of `table` by the values in the specified column,`key`, for each row. For each group, a record is constructed containing the key columns (and their values) along with any aggregated columns specified by `aggregatedColumns`. Note if multiple keys match the comparer, different keys may be returned. This function cannot guarantee to return a fixed order of rows. Optionally, `groupKind` and `comparer` may also be specifed. 
+## About
+Groups the rows of `table` by the key columns defined by `key`. The `key` can either be a single column name, or a list of column names. For each group, a record is constructed containing the key columns (and their values), along with any aggregated columns specified by `aggregatedColumns`. Optionally, `groupKind` and `comparer` may also be specified.
+
+If the data is already sorted by the key columns, then a `groupKind` of GroupKind.Local can be provided. This may improve the performance of grouping in certain cases, since all the rows with a given set of key values are assumed to be contiguous.
+
+When passing a `comparer`, note that if it treats differing keys as equal, a row may be placed in a group whose keys differ from its own.
+
+This function does not guarantee the ordering of the rows it returns.
 
 ## Example 1
 Group the table adding an aggregate column [total] which contains the sum of prices ("each List.Sum([price])").
