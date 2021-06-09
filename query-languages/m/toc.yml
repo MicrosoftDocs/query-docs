@@ -1327,8 +1327,6 @@
               href: table-replacerows.md
             - name: Table.ReplaceValue
               href: table-replacevalue.md
-            - name: Table.Reverse
-              href: table-reverse.md
             - name: Table.ReverseRows
               href: table-reverserows.md
             - name: Table.RowCount
