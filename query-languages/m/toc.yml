@@ -187,8 +187,6 @@
               href: oledb-query.md
             - name: Oracle.Database
               href: oracle-database.md
-            - name: Parquet.Document
-              href: parquet-document.md
             - name: Pdf.Tables
               href: pdf-tables.md
             - name: PostgreSQL.Database
@@ -1351,6 +1349,8 @@
               href: table-sort.md
             - name: Table.Split
               href: table-split.md
+            - name: Table.SplitAt
+              href: table-splitat.md
             - name: Table.SplitColumn
               href: table-splitcolumn.md
             - name: Table.ToColumns

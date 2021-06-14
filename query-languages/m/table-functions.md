@@ -30,7 +30,7 @@ These functions create and manipulate table values.
 |[Table.FuzzyGroup](table-fuzzygroup.md)|Groups the rows of a table by fuzzily matching values in the specified column for each row.|
 |[Table.FuzzyJoin](table-fuzzyjoin.md)|Joins the rows from the two tables that fuzzy match based on the given keys.|
 |[Table.FuzzyNestedJoin](table-fuzzynestedjoin.md)|Performs a fuzzy join between tables on supplied columns and produces the join result in a new column.|
-|[Table.Split](table-split.md)|Splits the specified table into a list of tables using the specified page size.|  
+|[Table.Split](table-split.md)|Splits the specified table into a list of tables using the specified page size.|
 |[Table.View](table-view.md)|Creates or extends a table with user-defined handlers for query and action operations.| 
 |[Table.ViewFunction](table-viewfunction.md) | Creates a function that can be intercepted by a handler defined on a view (via `Table.View`).| 
   
@@ -85,6 +85,7 @@ These functions create and manipulate table values.
 |[Table.SelectRowsWithErrors](table-selectrowswitherrors.md)|Returns a table with only the rows from table that contain an error in at least one of the cells in a row.|  
 |[Table.SingleRow](table-singlerow.md)|Returns a single row from a table.|  
 |[Table.Skip](table-skip.md)|Returns a table that does not contain the first row or rows of the table.|  
+|[Table.SplitAt](table-splitat.md)|Returns a list containing the first count rows specified and the remaining rows.|  
   
   
 ## <a name="__toc295771344"></a>Column operations  
