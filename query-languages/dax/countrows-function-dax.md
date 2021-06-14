@@ -2,7 +2,7 @@
 description: "Learn more about: COUNTROWS"
 title: "COUNTROWS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/05/2020
+ms.date: 06/14/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -23,7 +23,7 @@ COUNTROWS(<table>)
   
 |Term|Definition|  
 |--------|--------------|  
-|table|The name of the table that contains the rows to be counted, or an expression that returns a table.|  
+|table|(Optional) The name of the table that contains the rows to be counted, or an expression that returns a table. When not provided, the default value is the home table of the current expression. |  
   
 ## Return value
 
