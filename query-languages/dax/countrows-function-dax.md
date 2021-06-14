@@ -16,7 +16,7 @@ The COUNTROWS function counts the number of rows in the specified table, or in a
 ## Syntax  
   
 ```dax
-COUNTROWS(<table>)  
+COUNTROWS([<table>])  
 ```
   
 ### Parameters  
