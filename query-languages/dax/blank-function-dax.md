@@ -37,7 +37,7 @@ The following example illustrates how you can work with blanks in formulas. The 
 = IF( SUM(InternetSales_USD[SalesAmount_USD])= 0   , BLANK()   , SUM(ResellerSales_USD[SalesAmount_USD])/SUM(InternetSales_USD[SalesAmount_USD])   )  
 ```
 
-The table shows the expected results when this formula is used to create a PivotTable.  
+The table shows the expected results when this formula is used to create a table visualization.  
   
 |Row Labels|Accessories|Bikes|Clothing|Grand Total|
 |------------------------------------|-----------------|----|----|----|

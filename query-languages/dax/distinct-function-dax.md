@@ -46,7 +46,7 @@ The VALUES function is similar to DISTINCT; it can also be used to return a list
   
 ## Example
 
-The following formula counts the number of unique customers who have generated orders over the internet channel. The table that follows illustrates the possible results when the formula is added to a PivotTable.  
+The following formula counts the number of unique customers who have generated orders over the internet channel. The table that follows illustrates the possible results when the formula is added to a report.  
   
 ```dax
 = COUNTROWS(DISTINCT(InternetSales_USD[CustomerKey]))  
