@@ -2,7 +2,7 @@
 description: "Learn more about: WEEKNUM"
 title: "WEEKNUM function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 01/06/2021
+ms.date: 06/15/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -12,11 +12,16 @@ ms.author: owend
 # WEEKNUM
 
 Returns the week number for the given date and year according to the **return_type** value. The week number indicates where the week falls numerically within a year.  
+
+There are two *systems* used for this function:
+
+- **System 1**  -  The week containing January 1 is the first week of the year and is numbered week 1.
+- **System 2**  -  The week containing the first Thursday of the year is the first week of the year and is numbered as week 1. This system is the methodology specified in ISO 8601, which is commonly known as the European week numbering system.
   
 ## Syntax  
   
 ```dax
-WEEKNUM(<date>, <return_type>)  
+WEEKNUM(<date>[, <return_type>])  
 ```
   
 ### Parameters  
@@ -24,7 +29,8 @@ WEEKNUM(<date>, <return_type>)
 |Term|Definition|  
 |--------|--------------|  
 |date|The date in **datetime** format.|  
-|return_type|A number that determines the Return value: use 1 when the week begins on Sunday; use 2 when the week begins on Monday. The default is 1.<br /><br />Return type: **1**, week begins on Sunday. Weekdays are numbered 1 through 7.<br /><br />Return type: **2**, week begins on Monday. Weekdays are numbered 1 through 7.|  
+|return_type|(Optional)  A number that determines on which day the week begins. Default is 1. See Remarks.
+|  
   
 ## Return value
 
@@ -32,28 +38,40 @@ An integer number.
   
 ## Remarks
 
-- In contrast to Microsoft Excel, which stores dates as serial numbers, DAX uses a **datetime** data type to work with dates and times. If the source data is in a different format, DAX implicitly converts the data to **datetime** to perform calculations.  
-  
-- By default, the WEEKNUM function uses a calendar convention in which the week containing January 1 is considered to be the first week of the year. However, the ISO 8601 calendar standard, widely used in Europe, defines the first week as the one with the majority of days (four or more) falling in the new year. This means that for years in which there are three days or less in the first week of January, the WEEKNUM function returns week numbers that are different from the ISO 8601 definition.  
-  
+- By default, the WEEKNUM function uses a calendar convention in which the week containing January 1 is considered to be the first week of the year. However, the ISO 8601 calendar standard, widely used in Europe, defines the first week as the one with the majority of days (four or more) falling in the new year. This means that if *return_type* is any valid value other than 21, for any years in which there are three days or less in the first week of January, the WEEKNUM function returns week numbers that are different from the ISO 8601 definition.
+
+- For return_type, except for 21, valid values in the following table may not be supported on some DirectQuery data sources:
+
+    |return_type  |Week begins on  |System |
+    |---------|---------|---------|
+    |1 or omitted     |    Sunday     |     1   |
+    |2     |    Monday     |     1    |
+    |11    |     Monday    |     1    |
+    |12     |     Tuesday    |     1    |
+    |13     |     Wednesday    |     1    |
+    |14     |     Thursday    |     1    |
+    |15     |    Friday     |     1    |
+    |16     |    Saturday     |     1    |
+    |17     |    Sunday     |     1    |
+    |21     |   Monday      |     2    |
+
 ## Example 1
 
-The following example returns the week number of the date February 14, 2010.  
-  
+The following example returns the week number for February 14, 2010, assuming weeks begin on Monday.
+
 ```dax
-= WEEKNUM("Feb 14, 2010", 2)  
+= WEEKNUM("Feb 14, 2010", 2) 
 ```
-  
+
 ## Example 2
 
-The following example returns the week number of the date stored in the column, **HireDate**, from the table, **Employees**.  
-  
+The following example returns the week number of the date stored in the column, **HireDate**, from the table, **Employees**. This calculation assumes weeks begin on Sunday.
+
 ```dax
-= WEEKNUM('Employees'[HireDate])  
+= WEEKNUM('Employees'[HireDate])
 ```
-  
+
 ## See also
 
-[Date and time functions](date-and-time-functions-dax.md)  
 [YEARFRAC function](yearfrac-function-dax.md)  
-[WEEKDAY function](weekday-function-dax.md)  
+[WEEKDAY function](weekday-function-dax.md)
