@@ -2,7 +2,7 @@
 description: "Learn more about: VALUES"
 title: "VALUES function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/13/2020
+ms.date: 05/03/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -54,7 +54,7 @@ The following table summarizes the mismatch between data that can occur in two r
 |June 2|June 2 sales|  
 |(no order dates have been entered)|June 3 sales|  
   
-If you used the DISTINCT function to return a list of dates from the PivotTable containing these tables, only two dates would be returned. However, if you use the VALUES function, the function returns the two dates plus an additional blank member. Also, any row from the MySales table that does not have a matching date in the MyOrders table will be "matched" to this unknown member.  
+If you use the DISTINCT function to return a list of dates, only two dates would be returned. However, if you use the VALUES function, the function returns the two dates plus an additional blank member. Also, any row from the MySales table that does not have a matching date in the MyOrders table will be "matched" to this unknown member.  
   
 ## Example
 

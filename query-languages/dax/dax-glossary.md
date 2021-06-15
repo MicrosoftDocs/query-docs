@@ -2,9 +2,9 @@
 title: "DAX glossary | Microsoft Docs"
 description: Describes common terms used in the Data Analysis Expressions (DAX) language.
 ms.service: powerbi 
-ms.date: 01/05/2021
+ms.date: 06/14/2021
 ms.reviewer: owend
-ms.topic: conceptual
+ms.topic: reference
 author: minewiskan
 ms.author: owend
 
@@ -46,10 +46,6 @@ See [Multidimensional model](#multidimensional-model).
 ## Data model
 
 A data resource that's specifically prepared for reporting and analytics. It allows report users to browse and explore data in a simple and intuitive way. Importantly, it delivers high performance query results, even over large data volumes. It can integrate data from multiple sources and use calculations to transform data. It can enforce row-level permission to ensure different users have access to different data. Sometimes it's called a *Semantic model* or just a *Model*.
-
-## Data modeler
-
-A skilled data professional who creates data models. In self-service BI (SSBI), they can be called business analysts. In corporate BI, they can be called BI developers.
 
 ## DAX
 
@@ -100,10 +96,6 @@ A model table that contains at least one measure, and has no hierarchies or visi
 
 See [Data model](#data-model).
 
-## Modeler
-
-See [Data modeler](#data-modeler).
-
 ## Model calculation
 
 A named formula that's used to add a calculated table, calculated column, or measure to a tabular data model. Its structure is \<NAME> = \<FORMULA>. Most calculations are added by data modelers in Power BI Desktop, but measures can also be added to a live connection report. See [Report measures](#report-measures).
@@ -123,10 +115,6 @@ Also called *report-level measures*. They're added to a live connection report i
 ## Row-level security
 
 Also called *RLS*. Design technique to restrict access to subsets of data for specific users. In a tabular model, it's achieved by creating model roles. Roles have rules, which are DAX expressions to filter table rows.
-
-## Semantic model
-
-See [Data model](#data-model).
 
 ## Summarization
 

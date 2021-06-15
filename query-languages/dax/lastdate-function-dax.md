@@ -48,8 +48,6 @@ A table containing a single column and single row with a date value.
 
 The following sample formula creates a measure that obtains the last date, for the current context, when a sale was made in the Internet sales channel.  
   
-To see how this works, create a PivotTable and add the field CalendarYear to the **Row Labels** area of the PivotTable. Then add a measure, named **LastSaleDate**, using the formula defined in the code section, to the **Values** area of the PivotTable.  
-  
 ```dax
 = LASTDATE('InternetSales_USD'[SaleDateKey])  
 ```

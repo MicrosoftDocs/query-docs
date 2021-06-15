@@ -2,7 +2,7 @@
 description: "Learn more about: ALLEXCEPT"
 title: "ALLEXCEPT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/05/2020
+ms.date: 05/03/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -56,9 +56,9 @@ The formula sums SalesAmount_USD and uses the ALLEXCEPT function to remove any c
 = CALCULATE(SUM(ResellerSales_USD[SalesAmount_USD]), ALLEXCEPT(DateTime, DateTime[CalendarYear]))  
 ```
 
-Because the formula uses ALLEXCEPT, whenever any column but CalendarYear from the table DateTime is used to slice the PivotTable, the formula will remove any slicer filters, providing a value equal to the sum of SalesAmount_USD for the column label value, as shown in Table 1.  
+Because the formula uses ALLEXCEPT, whenever any column but CalendarYear from the table DateTime is used to slice a visualization, the formula will remove any slicer filters, providing a value equal to the sum of SalesAmount_USD for the column label value, as shown in Table 1.  
   
-However, if the column CalendarYear is used to slice the PivotTable, the results are different. Because CalendarYear is specified as the argument to ALLEXCEPT, when the data is sliced on the year, a filter will be applied on years at the row level, as shown in Table 2. The user is encouraged to compare these tables to understand the behavior of ALLEXCEPT().  
+However, if the column CalendarYear is used to slice the visualization, the results are different. Because CalendarYear is specified as the argument to ALLEXCEPT, when the data is sliced on the year, a filter will be applied on years at the row level, as shown in Table 2. The user is encouraged to compare these tables to understand the behavior of ALLEXCEPT().  
   
 ## See also
 
