@@ -2,7 +2,7 @@
 description: "Learn more about: RELATED"
 title: "RELATED function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/10/2020
+ms.date: 05/03/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -83,7 +83,7 @@ The following table shows only totals for each region, to prove that the filter 
 |United States|$9,389,479.79||  
 |Grand Total|$26,054,827.45|$16,665,347.67|  
   
-The following table shows the final report that you might get if you used this measure in a PivotTable:  
+The following shows what that you might get if you used this measure in a report table visual:  
   
 |Row Labels|Accessories|Bikes|Clothing|Grand Total|
 |--------------------------|-----------------|----|----|----|  

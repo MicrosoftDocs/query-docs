@@ -2,10 +2,9 @@
 title: "DAX overview | Microsoft Docs"
 description: Describes the Data Analysis Expressions (DAX) language.
 ms.service: powerbi 
-ms.date: 01/25/2021
+ms.date: 06/14/2021
 ms.reviewer: owend
 ms.topic: overview
-ms.article: overview
 author: minewiskan
 ms.author: owend
 ---

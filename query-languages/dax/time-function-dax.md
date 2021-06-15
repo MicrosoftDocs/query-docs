@@ -2,7 +2,7 @@
 description: "Learn more about: TIME"
 title: "TIME function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/10/2020
+ms.date: 05/03/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -42,8 +42,6 @@ A time (**datetime**).
   - Any value for **minutes** that is greater than 59 will be converted to hours and minutes.  
   - Any value for **seconds** that is greater than 59 will be converted to hours, minutes, and seconds.  
   - For minutes or seconds, a value greater than 24 hours will be divided by 24 and the reminder will be treated as the hour value. A value in excess of 24 hours does not alter the date portion.  
-  
-- To improve readability of the time values returned by this function, it's recommended that you format the column or PivotTable cell that contains the results of the formula by using one of the time formats provided by Microsoft Excel.  
   
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
