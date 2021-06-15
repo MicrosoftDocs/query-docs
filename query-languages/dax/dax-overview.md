@@ -239,7 +239,7 @@ These functions return a table or manipulate existing tables. For example, by us
   
 ## Variables
 
-You can create variables within an expression by using [VAR](https://docs.microsoft.com/dax/var-dax). VAR is technically not a function, it's a keyword to store the result of an expression as a named variable. That variable can then be passed as an argument to other measure expressions. For example:
+You can create variables within an expression by using [VAR](var-dax.md). VAR is technically not a function, it's a keyword to store the result of an expression as a named variable. That variable can then be passed as an argument to other measure expressions. For example:
 
 ```dax
 VAR
@@ -458,7 +458,7 @@ Visual Studio with [Analysis Services projects](https://marketplace.visualstudio
 
 ![SQL Server Management Studio](media/dax-overview-ssms.png)
 
-[SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) (SSMS) is an essential tool for working with Analysis Services. SSMS includes a DAX query editor for querying both tabular and multidimensional models.
+[SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) (SSMS) is an essential tool for working with Analysis Services. SSMS includes a DAX query editor for querying both tabular and multidimensional models.
 
 ### DAX Studio
 
@@ -478,7 +478,7 @@ When learning DAX, it's best to use the application you'll be using to create yo
 
 [Videos](dax-learn-videos.md)
 
-[Use DAX in Power BI Desktop](https://docs.microsoft.com/learn/paths/dax-power-bi/) path in Microsoft Learn.
+[Use DAX in Power BI Desktop](/learn/paths/dax-power-bi/) path in Microsoft Learn.
 
 The [Definitive Guide to DAX](https://www.sqlbi.com/books/the-definitive-guide-to-dax-2nd-edition/) by Alberto Ferrari and Marco Russo (Microsoft Press). Now in its second edition, this extensive guide provides basics to innovative high-performance techniques for beginning data modelers and BI professionals.
 
