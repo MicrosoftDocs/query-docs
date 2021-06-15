@@ -11,7 +11,7 @@ ms.author: owend
 ---
 # WEEKNUM
 
-Returns the week number for the given date and year according to the **return_type** value. The week number indicates where the week falls numerically within a year.  
+Returns the week number for the given date according to the **return_type** value. The week number indicates where the week falls numerically within a year.  
 
 There are two *systems* used for this function:
 
