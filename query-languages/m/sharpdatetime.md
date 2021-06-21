@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: #datetime"
 title: "#datetime | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 6/21/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -19,6 +19,12 @@ ms.author: bezhan
 </pre>
 
 ## About
-Creates a datetime value from whole numbers year `year`, month `month`, day `day`, hour `hour`, minute `minute`, and (fractional) second `second`. Raises an error if these are not true: <ul> <li> 1 ≤ year ≤ 9999 </li> <li> 1 ≤ month ≤ 12 </li> <li> 1 ≤ day ≤ 31 </li> <li> 0 ≤ hour ≤ 23 </li> <li> 0 ≤ minute ≤ 59 </li> <li> 0 ≤ second ≤ 59 </li> </ul>
 
-  
+Creates a datetime value from numbers representing the year, month, day, hour, minute, and (fractional) second. Raises an error if these conditions are not true:
+
+* 1 ≤ year ≤ 9999
+* 1 ≤ month ≤ 12
+* 1 ≤ day ≤ 31
+* 0 ≤ hour ≤ 23
+* 0 ≤ minute ≤ 59
+* 0 ≤ second < 60

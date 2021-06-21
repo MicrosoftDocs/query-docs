@@ -47,6 +47,7 @@ These functions create and manipulate table values.
   
 |Function|Description|  
 |------------|---------------|  
+|[Table.ApproximateRowCount](table-approximaterowcount.md)|Returns the approximate number of rows in the table.|
 |[Table.ColumnCount](table-columncount.md)|Returns the number of columns in a table.|
 |[Table.IsEmpty](table-isempty.md)|Returns true if the table does not contain any rows.|
 |[Table.Profile](table-profile.md)|Returns a profile of the columns of a table.|

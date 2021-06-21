@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number.Round"
 title: "Number.Round | Microsoft Docs"
-ms.date: 7/31/2019
+ms.date: 6/21/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -19,7 +19,15 @@ Number.Round(<b>number</b> as nullable number, optional <b>digits</b> as nullabl
 </pre>
   
 ## About  
-Returns the result of rounding `number` to the nearest number. If `number` is null, `Number.Round` returns null. `number` is rounded to the nearest integer, unless the optional parameter `digits` is specified. If `digits` is specified, `number` is rounded to the `digits` number of decimal digits. An optional `roundingMode` parameter specifies rounding direction when there is a tie between the possible numbers to round to (see `RoundingMode.Type` for possible values).
+
+Returns the result of rounding `number` to the nearest number. If `number` is null, `Number.Round` returns null.
+
+By default, `number` is rounded to the nearest integer, and ties are broken by rounding to the nearest even number (using `RoundingMode.ToEven`, also known as "banker's rounding").
+
+However, these defaults can be overridden via the following optional parameters.
+
+* `digits`: Causes `number` to be rounded to the specified number of decimal digits.
+* `roundingMode`: Overrides the default tie-breaking behavior when `number` is at the midpoint between two potential rounded values (see `RoundingMode.Type` for possible values).
 
 ## Example 1
 Round 1.234 to the nearest integer.
