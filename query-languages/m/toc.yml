@@ -1180,7 +1180,7 @@
             - name: Table.AlternateRows
               href: table-alternaterows.md
             - name: Table.ApproximateRowCount
-              href: table-alternaterowcount.md
+              href: table-approximaterowcount.md
             - name: Table.Buffer
               href: table-buffer.md
             - name: Table.Column
