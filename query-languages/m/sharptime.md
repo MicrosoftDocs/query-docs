@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: #time"
 title: "#time | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 6/21/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -19,4 +19,10 @@ ms.author: bezhan
 </pre>
 
 ## About
-Creates a time value from whole numbers hour `hour`, minute `minute`, and (fractional) second `second`. Raises an error if these are not true: <ul> <li> 0 ≤ hour ≤ 24 </li> <li> 0 ≤ minute ≤ 59 </li> <li> 0 ≤ second ≤ 59 </li> <li> if hour is 24, then minute and second must be 0 </li> </ul>
+
+Creates a time value from numbers representing the hour, minute, and (fractional) second. Raises an error if these conditions are not true:
+
+* 0 ≤ hour ≤ 24
+* 0 ≤ minute ≤ 59
+* 0 ≤ second < 60
+* if hour is 24, then minute and second must be 0

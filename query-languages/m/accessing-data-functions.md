@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Accessing data functions"
 title: "Accessing data functions | Microsoft Docs"
-ms.date: 06/16/2020
+ms.date: 06/21/2021
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -58,7 +58,7 @@ These functions access data and return table values. Most of these functions ret
 |[Excel.Workbook](excel-workbook.md)|Returns a table representing sheets in the given excel workbook.|  
 |[Exchange.Contents](exchange-contents.md)|Returns a table of contents from a Microsoft Exchange account.| 
 |[File.Contents](file-contents.md)|Returns the binary contents of the file located at a path.|  
-|[Folder.Contents](folder-contents.md)|Returns a table containing the properties and contents of the files and folders found at path.|  
+|[Folder.Contents](folder-contents.md)|Returns a table containing the properties and contents of the files and folders found in the specified folder.|  
 |[Folder.Files](folder-files.md)|Returns a table containing a row for each file found at a folder path, and subfolders. Each row contains properties of the folder or file and a link to its content.|  
 |[GoogleAnalytics.Accounts](googleanalytics-accounts.md)|Returns the Google Analytics accounts for the current credential.| 
 |[Hdfs.Contents](hdfs-contents.md)|Returns a table containing a row for each folder and file found at the folder url, {0}, from a Hadoop file system. Each row contains properties of the folder or file and a link to its content.|  

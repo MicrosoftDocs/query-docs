@@ -1179,6 +1179,8 @@
               href: table-aggregatetablecolumn.md
             - name: Table.AlternateRows
               href: table-alternaterows.md
+            - name: Table.ApproximateRowCount
+              href: table-approximaterowcount.md
             - name: Table.Buffer
               href: table-buffer.md
             - name: Table.Column
