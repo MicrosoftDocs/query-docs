@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Duration functions"
 title: "Duration functions | Microsoft Docs"
-ms.date: 4/7/2020
+ms.date: 6/21/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -30,4 +30,4 @@ These functions create and manipulate duration values.
 |[Duration.TotalMinutes](duration-totalminutes.md)|Returns the total magnitude of minutes from a Duration value.|  
 |[Duration.TotalSeconds](duration-totalseconds.md)|Returns the total magnitude of seconds from a duration value.|  
 |[Duration.ToText](duration-totext.md)|Returns a text value from a Duration value.|  
-|[#duration](sharpduration.md)|Creates a duration value from days, hour, minute, and second.|   
+|[#duration](sharpduration.md)|Creates a duration value from days, hours, minutes, and seconds.|

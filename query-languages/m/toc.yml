@@ -1179,6 +1179,8 @@
               href: table-aggregatetablecolumn.md
             - name: Table.AlternateRows
               href: table-alternaterows.md
+            - name: Table.ApproximateRowCount
+              href: table-approximaterowcount.md
             - name: Table.Buffer
               href: table-buffer.md
             - name: Table.Column
@@ -1327,8 +1329,6 @@
               href: table-replacerows.md
             - name: Table.ReplaceValue
               href: table-replacevalue.md
-            - name: Table.Reverse
-              href: table-reverse.md
             - name: Table.ReverseRows
               href: table-reverserows.md
             - name: Table.RowCount

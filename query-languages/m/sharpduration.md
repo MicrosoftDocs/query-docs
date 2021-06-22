@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: #duration"
 title: "#duration | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 6/21/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -19,5 +19,5 @@ ms.author: bezhan
 </pre>
 
 ## About
-Creates a duration value from numbers days `days`, hours `hours`, minutes `minutes`, and seconds `seconds`.
- 
+
+Creates a duration value from numbers representing days, hours, minutes, and (fractional) seconds.
