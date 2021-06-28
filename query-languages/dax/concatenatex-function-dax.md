@@ -22,18 +22,18 @@ CONCATENATEX(<table>, <expression>[, <delimiter> [, <orderBy_expression> [, <ord
 ### Parameters  
   
 |Term|Definition|  
-|--------|-----|  
+|-----|-----|  
 |table|The table containing the rows for which the expression will be evaluated.|  
 |expression|The expression to be evaluated for each row of *table*.|  
 |delimiter|(Optional) A separator to use during concatenation.|  
 |orderBy_expression|(Optional) Any DAX expression where the result value is used to sort the concatenated values in the output string. It is evaluated for each row of *table*.|
-|order|(Optional) A value that specifies how to sort *orderBy_expression* values, ascending or descending:|
+|order|(Optional) A value that specifies how to sort *orderBy_expression* values, ascending or descending.|
 
 The **order** parameter accepts the following values:
 |Value|Alternate Values|Description|
 |-----|-----|-----|
 |0 (zero)|FALSE, DESC|Sorts in descending order of values of *order_by*.<br />This is the default value when the *order* parameter is omitted.|
-|1|TRUE, ASC|Ranks in ascending order of *order_by*.|
+|1|TRUE, ASC|Ranks in ascending order of values of *order_by*.|
 
 ## Return value
 
