@@ -30,6 +30,7 @@ CONCATENATEX(<table>, <expression>[, <delimiter> [, <orderBy_expression> [, <ord
 |order|(Optional) A value that specifies how to sort *orderBy_expression* values, ascending or descending.|
 
 The **order** parameter accepts the following values:
+
 |Value|Alternate Values|Description|
 |-----|-----|-----|
 |0 (zero)|FALSE, DESC|Sorts in descending order of values of *order_by*.<br />This is the default value when the *order* parameter is omitted.|
