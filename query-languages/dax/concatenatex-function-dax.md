@@ -16,7 +16,7 @@ Concatenates the result of an expression evaluated for each row in a table.
 ## Syntax  
   
 ```dax
-CONCATENATEX(<table>, <expression>[, <delimiter> [, <orderBy_expression> [, <order> [, <orderBy_expression> [, <order>]]...]]])  
+CONCATENATEX(<table>, <expression>[, <delimiter> [, <orderBy_expression> [, <order>]]...])  
 ```
   
 ### Parameters  
@@ -33,8 +33,8 @@ The **order** parameter accepts the following values:
 
 |Value|Alternate Values|Description|
 |-----|-----|-----|
-|0 (zero)|FALSE, DESC|Sorts in descending order of values of *order_by*.<br />This is the default value when the *order* parameter is omitted.|
-|1|TRUE, ASC|Ranks in ascending order of values of *order_by*.|
+|0 (zero)|FALSE, DESC|Sorts in descending order of values of *orderBy_expression*.<br />This is the default value when the *order* parameter is omitted.|
+|1|TRUE, ASC|Sorts in ascending order of values of *orderBy_expression*.|
 
 ## Return value
 
