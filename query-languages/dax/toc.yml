@@ -325,6 +325,10 @@
               href: cos-function-dax.md
             - name: COSH
               href: cosh-function-dax.md
+            - name: COT
+              href: cot-function-dax.md
+            - name: COTH
+              href: coth-function-dax.md
             - name: CURRENCY
               href: currency-function-dax.md
             - name: DEGREES
@@ -455,10 +459,6 @@
               href: confidence-norm-function-dax.md
             - name: CONFIDENCE.T
               href: confidence-t-function-dax.md
-            - name: COT
-              href: cot-function-dax.md
-            - name: COTH
-              href: coth-function-dax.md
             - name: COUNT
               href: count-function-dax.md
             - name: COUNTA
