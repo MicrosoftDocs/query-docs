@@ -29,8 +29,6 @@ Data Analysis Expressions (DAX) provides many functions for creating aggregation
 |[CHISQ.INV.RT](chisq-inv-rt-function-dax.md)      |  Returns the inverse of the right-tailed probability of the chi-squared distribution.       |
 |[CONFIDENCE.NORM](confidence-norm-function-dax.md)      | The confidence interval is a range of values.         |
 |[CONFIDENCE.T](confidence-t-function-dax.md)      |  Returns the confidence interval for a population mean, using a Student's t distribution.       |
-|[COT](cot-function-dax.md)     |    Returns the cotangent of an angle specified in radians.       |
-|[COTH](coth-function-dax.md)     |    Returns the hyperbolic cotangent of a hyperbolic angle.      |
 |[COUNT](count-function-dax.md)      |  Counts the number of cells in a column that contain numbers.       |
 |[COUNTA](counta-function-dax.md)     |  Counts the number of cells in a column that are not empty.       |
 |[COUNTAX](countax-function-dax.md)     |  Counts nonblank results when evaluating the result of an expression over a table.        |

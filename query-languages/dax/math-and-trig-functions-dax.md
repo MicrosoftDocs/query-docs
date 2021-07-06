@@ -32,6 +32,8 @@ The mathematical functions in Data Analysis Expressions (DAX) are very similar t
 |[CONVERT](convert-function-dax.md)|Converts an expression of one data type to another. |
 |[COS](cos-function-dax.md)     |  Returns the cosine of the given angle.        |
 |[COSH](cosh-function-dax.md)     |  Returns the hyperbolic cosine of a number.        |
+|[COT](cot-function-dax.md)     |    Returns the cotangent of an angle specified in radians.       |
+|[COTH](coth-function-dax.md)     |    Returns the hyperbolic cotangent of a hyperbolic angle.      |
 |[CURRENCY](currency-function-dax.md)     | Evaluates the argument and returns the result as currency data type.         |
 |[DEGREES](degrees-function-dax.md)     | Converts radians into degrees.        |
 |[DIVIDE](divide-function-dax.md)      | Performs division and returns alternate result or BLANK() on division by 0.        |
