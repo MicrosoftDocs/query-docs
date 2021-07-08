@@ -8,6 +8,7 @@ ms.reviewer: gepopell
 ms.topic: reference
 author: dougklopfenstein
 ms.author: bezhan
+ms.custom: intro-internal
 
 ---
 # Understanding Power Query M functions

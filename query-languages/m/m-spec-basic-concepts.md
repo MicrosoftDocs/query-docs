@@ -8,6 +8,7 @@ ms.service: powerquery
 ms.topic: article
 ms.date: 2/25/2020
 ms.author: bezhan
+ms.custom: intro-internal
 ---
 
 # Basic concepts
@@ -16,7 +17,7 @@ This section discusses basic concepts that appear throughout the subsequent sect
 
 ## Values
 
-A single piece of data is called a _value_. Broadly speaking, there are two general categories of values: _primitive values_, which are atomic, and _structured values_, which are constructed out of primitive values and other structured values. For example, the values \
+A single piece of data is called a _value_. Broadly speaking, there are two general categories of values: _primitive values_, which are atomic, and _structured values_, which are constructed out of primitive values and other structured values. For example, the values
 
 ```
 1 
