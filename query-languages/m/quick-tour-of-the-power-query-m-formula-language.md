@@ -7,6 +7,7 @@ ms.reviewer: gepopell
 ms.topic: reference
 author: dougklopfenstein
 ms.author: bezhan
+ms.custom: intro-internal
 
 ---
 # Quick tour of the Power Query M formula language

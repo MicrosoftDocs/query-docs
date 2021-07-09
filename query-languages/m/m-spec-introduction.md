@@ -8,6 +8,8 @@ ms.service: powerquery
 ms.topic: article
 ms.date: 2/25/2020
 ms.author: bezhan
+ms.custom: intro-internal
+
 ---
 
 # Introduction
