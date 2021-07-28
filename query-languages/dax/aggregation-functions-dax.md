@@ -2,7 +2,7 @@
 description: "Learn more about: Aggregation functions"
 title: "Aggregation functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/07/2021
+ms.date: 07/28/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -11,7 +11,7 @@ ms.author: owend
 ---
 # Aggregation functions
 
-These functions aggregate an expression. Aggregation functions have a single 
+These functions perform aggregations. In addition to calculating sums and averages, or finding minimum and maximum values for all rows in a column, you can also filter a column before aggregating or create aggregations based on related tables.
   
 ## In this category
 

@@ -2,7 +2,7 @@
 description: "Learn more about: DAX function reference"
 title: "DAX function reference | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 11/10/2020
+ms.date: 07/28/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -40,7 +40,7 @@ The DAX function reference provides detailed information including syntax, param
 
 [Relationship functions](relationship-functions-dax.md) - These functions are for managing and utilizing relationships between tables. For example, you can specify a particular relationship to be used in a calculation.  
 
-[Statistical functions](statistical-functions-dax.md) -   
+[Statistical functions](statistical-functions-dax.md) -  These functions perform calculations regarding distributions and probability, such as standard deviation, variance, and number of permutations.
 
 [Table manipulation functions](table-manipulation-functions-dax.md) - These functions return a table or manipulate existing tables.
   

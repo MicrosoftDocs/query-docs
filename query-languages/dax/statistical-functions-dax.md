@@ -11,7 +11,7 @@ ms.author: owend
 ---
 # Statistical functions
 
-Statistical functions perform calculations regarding distributions and probability, such as standard deviation, variance and number of permutations.
+Statistical functions perform calculations regarding distributions and probability, such as standard deviation, variance, and number of permutations.
   
 ## In this category
 
@@ -23,6 +23,8 @@ Statistical functions perform calculations regarding distributions and probabili
 |[CHISQ.DIST.RT](chisq-dist-rt-function-dax.md)     |  Returns the right-tailed probability of the chi-squared distribution.        |
 |[CHISQ.INV](chisq-inv-function-dax.md)     |  Returns the inverse of the left-tailed probability of the chi-squared distribution.         |
 |[CHISQ.INV.RT](chisq-inv-rt-function-dax.md)      |  Returns the inverse of the right-tailed probability of the chi-squared distribution.       |
+|[COMBIN](combin-function-dax.md)     | Returns the number of combinations for a given number of items.        |
+|[COMBINA](combina-function-dax.md)     |  Returns the number of combinations (with repetitions) for a given number of items.        |
 |[CONFIDENCE.NORM](confidence-norm-function-dax.md)      | The confidence interval is a range of values.         |
 |[CONFIDENCE.T](confidence-t-function-dax.md)      |  Returns the confidence interval for a population mean, using a Student's t distribution.       |
 |[EXPON.DIST](expon-dist-function-dax.md)      |  Returns the exponential distribution.        |
@@ -38,17 +40,15 @@ Statistical functions perform calculations regarding distributions and probabili
 |[PERCENTILE.INC](percentile-inc-function-dax.md)      |  Returns the k-th percentile of values in a range, where k is in the range 0..1, inclusive.        |
 |[PERCENTILEX.EXC](percentilex-exc-function-dax.md)     | Returns the percentile number of an expression evaluated for each row in a table.        |
 |[PERCENTILEX.INC](percentilex-inc-function-dax.md)    | Returns the percentile number of an expression evaluated for each row in a table.         |
+|[PERMUT](permut-function-dax.md)    | Returns the number of permutations for a given number of objects that can be selected from number objects.        |
 |[POISSON.DIST](poisson-dist-function-dax.md)      |  Returns the Poisson distribution.       |
 |[RANK.EQ](rank-eq-function-dax.md)    | Returns the ranking of a number in a list of numbers.        |
 |[RANKX](rankx-function-dax.md)      | Returns the ranking of a number in a list of numbers for each row in the *table* argument.          |
 |[SAMPLE](sample-function-dax.md)       |  Returns a sample of N rows from the specified table.        |
-|[SIN](sin-function-dax.md)     | Returns the sine of the given angle.          |
-|[SINH](sinh-function-dax.md)       | Returns the hyperbolic sine of a number.          |
 |[STDEV.P](stdev-p-function-dax.md)     |  Returns the standard deviation of the entire population.        |
 |[STDEV.S](stdev-s-function-dax.md)      |  Returns the standard deviation of a sample population.        |
 |[STDEVX.P](stdevx-p-function-dax.md)      | Returns the standard deviation of the entire population.         |
 |[STDEVX.S](stdevx-s-function-dax.md)      |  Returns the standard deviation of a sample population.         |
-|[SQRTPI](sqrtpi-function-dax.md)     |  Returns the square root of (number * pi).       |
 |[T.DIST](t-dist-dax.md)    | Returns the Student's left-tailed t-distribution.        |
 |[T.DIST.2T](t-dist-2t-dax.md)    | Returns the two-tailed Student's t-distribution.        |
 |[T.DIST.RT](t-dist-rt-dax.md)     | Returns the right-tailed Student's t-distribution.        |
