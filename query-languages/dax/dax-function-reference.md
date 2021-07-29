@@ -20,7 +20,7 @@ The DAX function reference provides detailed information including syntax, param
 
 [New DAX functions](new-dax-functions.md) - These functions are new or are existing functions that have been significantly updated.  
 
-[Aggregation functions](aggregation-functions-dax.md) - These functions perform aggregations. In addition to calculating sums and averages, or finding minimum and maximum values for all rows in a column, you can also filter a column before aggregating or create aggregations based on related tables.
+[Aggregation functions](aggregation-functions-dax.md) - These functions calculate and/or return a single (scalar) value such as count, sum, average, minimum, or maximum for all rows in a column or table as defined by the expression.
 
 [Date and time functions](date-and-time-functions-dax.md) - These functions in DAX are similar to date and time functions in Microsoft Excel. However, DAX functions are based on the datetime data types used by Microsoft SQL Server.  
   
@@ -40,7 +40,7 @@ The DAX function reference provides detailed information including syntax, param
 
 [Relationship functions](relationship-functions-dax.md) - These functions are for managing and utilizing relationships between tables. For example, you can specify a particular relationship to be used in a calculation.  
 
-[Statistical functions](statistical-functions-dax.md) -  These functions perform calculations regarding distributions and probability, such as standard deviation, variance, and number of permutations.
+[Statistical functions](statistical-functions-dax.md) - These functions calculate distributions and probability such as standard deviation, variance, and number of permutations.
 
 [Table manipulation functions](table-manipulation-functions-dax.md) - These functions return a table or manipulate existing tables.
   

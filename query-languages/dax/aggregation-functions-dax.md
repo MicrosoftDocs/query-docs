@@ -11,8 +11,8 @@ ms.author: owend
 ---
 # Aggregation functions
 
-These functions perform aggregations. In addition to calculating sums and averages, or finding minimum and maximum values for all rows in a column, you can also filter a column before aggregating or create aggregations based on related tables.
-  
+Aggregation functions calculate and/or return a single (scalar) value such as count, sum, average, minimum, or maximum for all rows in a column or table as defined by the expression.
+
 ## In this category
 
 |Function  |Description  |

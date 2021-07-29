@@ -2,7 +2,7 @@
 description: "Learn more about: Statistical functions"
 title: "Statistical functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/07/2021
+ms.date: 07/28/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -11,7 +11,7 @@ ms.author: owend
 ---
 # Statistical functions
 
-Statistical functions perform calculations regarding distributions and probability, such as standard deviation, variance, and number of permutations.
+Statistical functions calculate distributions and probability such as standard deviation, variance, and number of permutations. 
   
 ## In this category
 

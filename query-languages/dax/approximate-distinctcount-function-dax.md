@@ -11,7 +11,7 @@ ms.author: owend
 ---
 # APPROXIMATEDISTINCTCOUNT
 
-Returns the *approximate* number of rows that contain distinct values in a column. This function can query large amounts of data with potentially  better performance than DISTINCTCOUNT, with slight deviation from the exact result.
+Returns the *approximate* number of rows that contain distinct values in a column. This function can query large amounts of data with potentially better performance than DISTINCTCOUNT, with slight deviation from the exact result.
   
 ## Syntax  
   
