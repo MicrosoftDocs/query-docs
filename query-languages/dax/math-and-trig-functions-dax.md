@@ -2,7 +2,7 @@
 description: "Learn more about: Math and Trig functions"
 title: "Math and Trig functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/23/2020
+ms.date: 07/28/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -27,8 +27,6 @@ The mathematical functions in Data Analysis Expressions (DAX) are very similar t
 |[ATAN](atan-function-dax.md)     | Returns the arctangent, or inverse tangent, of a number.         |
 |[ATANH](atanh-function-dax.md)     | Returns the inverse hyperbolic tangent of a number.        |
 |[CEILING](ceiling-function-dax.md)     |  Rounds a number up, to the nearest integer or to the nearest multiple of significance.        |
-|[COMBIN](combin-function-dax.md)     | Returns the number of combinations for a given number of items.        |
-|[COMBINA](combina-function-dax.md)     |  Returns the number of combinations (with repetitions) for a given number of items.        |
 |[CONVERT](convert-function-dax.md)|Converts an expression of one data type to another. |
 |[COS](cos-function-dax.md)     |  Returns the cosine of the given angle.        |
 |[COSH](cosh-function-dax.md)     |  Returns the hyperbolic cosine of a number.        |
@@ -52,8 +50,6 @@ The mathematical functions in Data Analysis Expressions (DAX) are very similar t
 |[ODD](odd-function-dax.md)      | Returns number rounded up to the nearest odd integer.          |
 |[PI](pi-function-dax.md)     | Returns the value of Pi, 3.14159265358979, accurate to 15 digits.        |
 |[POWER](power-function-dax.md)      |  Returns the result of a number raised to a power.        |
-|[PRODUCT](product-function-dax.md)      | Returns the product of the numbers in a column.         |
-|[PRODUCTX](productx-function-dax.md)      | Returns the product of an expression evaluated for each row in a table.         |
 |[QUOTIENT](quotient-function-dax.md)     | Performs division and returns only the integer portion of the division result.        |
 |[RADIANS](radians-function-dax.md)      |  Converts degrees to radians.       |
 |[RAND](rand-function-dax.md)     |  Returns a random number greater than or equal to 0 and less than 1, evenly distributed.       |
@@ -62,7 +58,10 @@ The mathematical functions in Data Analysis Expressions (DAX) are very similar t
 |[ROUNDDOWN](rounddown-function-dax.md)     |  Rounds a number down, toward zero.       |
 |[ROUNDUP](roundup-function-dax.md)      |  Rounds a number up, away from 0 (zero).        |
 |[SIGN](sign-function-dax.md)      | Determines the sign of a number, the result of a calculation, or a value in a column.        |
+|[SIN](sin-function-dax.md)     | Returns the sine of the given angle.          |
+|[SINH](sinh-function-dax.md)       | Returns the hyperbolic sine of a number.          |
 |[SQRT](sqrt-function-dax.md)      |  Returns the square root of a number.         |
-|[SUM](sum-function-dax.md)     |  Adds all the numbers in a column.        |
-|[SUMX](sumx-function-dax.md)     |   Returns the sum of an expression evaluated for each row in a table.       |
+|[SQRTPI](sqrtpi-function-dax.md)     |  Returns the square root of (number * pi).       |
+|[TAN](tan-function-dax.md)      |  Returns the tangent of the given angle.         |
+|[TANH](tanh-function-dax.md)     |  Returns the hyperbolic tangent of a number.        |
 |[TRUNC](trunc-function-dax.md)      | Truncates a number to an integer by removing the decimal, or fractional, part of the number.          |

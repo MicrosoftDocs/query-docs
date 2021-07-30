@@ -2,7 +2,7 @@
 description: "Learn more about: DAX function reference"
 title: "DAX function reference | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 11/10/2020
+ms.date: 07/28/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -20,13 +20,15 @@ The DAX function reference provides detailed information including syntax, param
 
 [New DAX functions](new-dax-functions.md) - These functions are new or are existing functions that have been significantly updated.  
 
+[Aggregation functions](aggregation-functions-dax.md) - These functions calculate and/or return a (scalar) value such as count, sum, average, minimum, or maximum for all rows in a column or table as defined by the expression.
+
 [Date and time functions](date-and-time-functions-dax.md) - These functions in DAX are similar to date and time functions in Microsoft Excel. However, DAX functions are based on the datetime data types used by Microsoft SQL Server.  
   
 [Filter functions](filter-functions-dax.md) - These functions help you return specific data types, look up values in related tables, and filter by related values. Lookup functions work by using tables and relationships between them. Filtering functions let you manipulate data context to create dynamic calculations.  
 
 [Financial functions](financial-functions-dax.md) - These functions are used in formulas that perform financial calculations, such as net present value and rate of return.
   
-[Information functions](information-functions-dax.md) - These functions look at a table or column provided as an argument to another function and tells you whether the value matches the expected type. For example, the ISERROR function returns TRUE if the value you reference contains an error.  
+[Information functions](information-functions-dax.md) - These functions look at a table or column provided as an argument to another function and returns whether the value matches the expected type. For example, the ISERROR function returns TRUE if the value you reference contains an error.  
   
 [Logical functions](logical-functions-dax.md) - These functions return information about values in an expression. For example, the TRUE function lets you know whether an expression that you are evaluating returns a TRUE value.  
   
@@ -34,11 +36,11 @@ The DAX function reference provides detailed information including syntax, param
   
 [Other functions](other-functions-dax.md) - These functions perform unique actions that cannot be defined by any of the categories most other functions belong to.  
   
-[Parent and Child functions](parent-and-child-functions-dax.md) - These Data Analysis Expressions (DAX) functions help users manage data that is presented as a parent/child hierarchy in their data models.  
+[Parent and Child functions](parent-and-child-functions-dax.md) - These functions help users manage data that is presented as a parent/child hierarchy in their data models.  
 
 [Relationship functions](relationship-functions-dax.md) - These functions are for managing and utilizing relationships between tables. For example, you can specify a particular relationship to be used in a calculation.  
 
-[Statistical functions](statistical-functions-dax.md) - These functions perform aggregations. In addition to creating sums and averages, or finding minimum and maximum values, in DAX you can also filter a column before aggregating or create aggregations based on related tables.  
+[Statistical functions](statistical-functions-dax.md) - These functions calculate values related to statistical distributions and probability, such as standard deviation and number of permutations.
 
 [Table manipulation functions](table-manipulation-functions-dax.md) - These functions return a table or manipulate existing tables.
   
