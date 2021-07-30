@@ -11,7 +11,7 @@ ms.author: owend
 ---
 # Statistical functions
 
-Statistical functions calculate distributions and probability such as standard deviation, variance, and number of permutations. 
+Statistical functions calculate values related to statistical distributions and probability, such as standard deviation and number of permutations.
   
 ## In this category
 
