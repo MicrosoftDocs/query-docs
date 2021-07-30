@@ -17,6 +17,54 @@
           href: dax-function-reference.md
         - name: New DAX functions
           href: new-dax-functions.md
+        - name: Aggregation functions
+          items:
+          - name: Aggregation functions overview
+            href: aggregation-functions-dax.md
+          - name: APPROXIMATEDISTINCTCOUNT
+            href: approximate-distinctcount-function-dax.md
+          - name: AVERAGE
+            href: average-function-dax.md
+          - name: AVERAGEA
+            href: averagea-function-dax.md
+          - name: AVERAGEX
+            href: averagex-function-dax.md
+          - name: COUNT
+            href: count-function-dax.md
+          - name: COUNTA
+            href: counta-function-dax.md
+          - name: COUNTAX
+            href: countax-function-dax.md
+          - name: COUNTBLANK
+            href: countblank-function-dax.md
+          - name: COUNTROWS
+            href: countrows-function-dax.md
+          - name: COUNTX
+            href: countx-function-dax.md
+          - name: DISTINCTCOUNT
+            href: distinctcount-function-dax.md
+          - name: DISTINCTCOUNTNOBLANK
+            href: distinctcountnoblank-function-dax.md
+          - name: MAX
+            href: max-function-dax.md
+          - name: MAXA
+            href: maxa-function-dax.md
+          - name: MAXX
+            href: maxx-function-dax.md
+          - name: MIN
+            href: min-function-dax.md
+          - name: MINA
+            href: mina-function-dax.md
+          - name: MINX
+            href: minx-function-dax.md
+          - name: PRODUCT
+            href: product-function-dax.md
+          - name: PRODUCTX
+            href: productx-function-dax.md
+          - name: SUM
+            href: sum-function-dax.md
+          - name: SUMX
+            href: sumx-function-dax.md
         - name: Date and time functions
           items: 
             - name: Date and time functions overview
@@ -315,10 +363,6 @@
               href: atanh-function-dax.md
             - name: CEILING
               href: ceiling-function-dax.md
-            - name: COMBIN
-              href: combin-function-dax.md
-            - name: COMBINA
-              href: combina-function-dax.md
             - name: CONVERT
               href: convert-function-dax.md
             - name: COS
@@ -367,10 +411,6 @@
               href: pi-function-dax.md
             - name: POWER
               href: power-function-dax.md
-            - name: PRODUCT
-              href: product-function-dax.md
-            - name: PRODUCTX
-              href: productx-function-dax.md
             - name: QUOTIENT
               href: quotient-function-dax.md
             - name: RADIANS
@@ -387,12 +427,18 @@
               href: roundup-function-dax.md
             - name: SIGN
               href: sign-function-dax.md
+            - name: SIN
+              href: sin-function-dax.md
+            - name: SINH
+              href: sinh-function-dax.md
             - name: SQRT
               href: sqrt-function-dax.md
-            - name: SUM
-              href: sum-function-dax.md
-            - name: SUMX
-              href: sumx-function-dax.md
+            - name: SQRTPI
+              href: sqrtpi-function-dax.md
+            - name: TAN
+              href: tan-function-dax.md
+            - name: TANH
+              href: tanh-function-dax.md
             - name: TRUNC
               href: trunc-function-dax.md
         - name: Other functions
@@ -435,14 +481,6 @@
           items: 
             - name: Statistical functions overview
               href: statistical-functions-dax.md
-            - name: APPROXIMATEDISTINCTCOUNT
-              href: approximate-distinctcount-function-dax.md
-            - name: AVERAGE
-              href: average-function-dax.md
-            - name: AVERAGEA
-              href: averagea-function-dax.md
-            - name: AVERAGEX
-              href: averagex-function-dax.md
             - name: BETA.DIST
               href: beta-dist-function-dax.md
             - name: BETA.INV
@@ -455,46 +493,24 @@
               href: chisq-inv-function-dax.md
             - name: CHISQ.INV.RT
               href: chisq-inv-rt-function-dax.md
+            - name: COMBIN
+              href: combin-function-dax.md
+            - name: COMBINA
+              href: combina-function-dax.md
             - name: CONFIDENCE.NORM
               href: confidence-norm-function-dax.md
             - name: CONFIDENCE.T
               href: confidence-t-function-dax.md
-            - name: COUNT
-              href: count-function-dax.md
-            - name: COUNTA
-              href: counta-function-dax.md
-            - name: COUNTAX
-              href: countax-function-dax.md
-            - name: COUNTBLANK
-              href: countblank-function-dax.md
-            - name: COUNTROWS
-              href: countrows-function-dax.md
-            - name: COUNTX
-              href: countx-function-dax.md
-            - name: DISTINCTCOUNT
-              href: distinctcount-function-dax.md
             - name: EXPON.DIST
               href: expon-dist-function-dax.md
             - name: GEOMEAN
               href: geomean-function-dax.md
             - name: GEOMEANX
               href: geomeanx-function-dax.md
-            - name: MAX
-              href: max-function-dax.md
-            - name: MAXA
-              href: maxa-function-dax.md
-            - name: MAXX
-              href: maxx-function-dax.md
             - name: MEDIAN
               href: median-function-dax.md
             - name: MEDIANX
               href: medianx-function-dax.md
-            - name: MIN
-              href: min-function-dax.md
-            - name: MINA
-              href: mina-function-dax.md
-            - name: MINX
-              href: minx-function-dax.md
             - name: NORM.DIST
               href: norm-dist-dax.md
             - name: NORM.INV
@@ -521,10 +537,6 @@
               href: rankx-function-dax.md
             - name: SAMPLE
               href: sample-function-dax.md
-            - name: SIN
-              href: sin-function-dax.md
-            - name: SINH
-              href: sinh-function-dax.md
             - name: STDEV.S
               href: stdev-s-function-dax.md
             - name: STDEV.P
@@ -533,8 +545,6 @@
               href: stdevx-s-function-dax.md
             - name: STDEVX.P
               href: stdevx-p-function-dax.md
-            - name: SQRTPI
-              href: sqrtpi-function-dax.md
             - name: T.DIST
               href: t-dist-dax.md
             - name: T.DIST.2T
@@ -545,10 +555,6 @@
               href: t-inv-dax.md
             - name: T.INV.2T
               href: t-inv-2t-dax.md
-            - name: TAN
-              href: tan-function-dax.md
-            - name: TANH
-              href: tanh-function-dax.md
             - name: VAR.S
               href: var-s-function-dax.md
             - name: VAR.P
