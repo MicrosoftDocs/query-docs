@@ -20,7 +20,7 @@ The DAX function reference provides detailed information including syntax, param
 
 [New DAX functions](new-dax-functions.md) - These functions are new or are existing functions that have been significantly updated.  
 
-[Aggregation functions](aggregation-functions-dax.md) - These functions calculate and/or return a (scalar) value such as count, sum, average, minimum, or maximum for all rows in a column or table as defined by the expression.
+[Aggregation functions](aggregation-functions-dax.md) - These functions calculate a (scalar) value such as count, sum, average, minimum, or maximum for all rows in a column or table as defined by the expression.
 
 [Date and time functions](date-and-time-functions-dax.md) - These functions in DAX are similar to date and time functions in Microsoft Excel. However, DAX functions are based on the datetime data types used by Microsoft SQL Server.  
   
