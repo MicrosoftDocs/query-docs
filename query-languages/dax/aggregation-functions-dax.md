@@ -11,7 +11,7 @@ ms.author: owend
 ---
 # Aggregation functions
 
-Aggregation functions calculate and/or return a (scalar) value such as count, sum, average, minimum, or maximum for all rows in a column or table as defined by the expression.
+Aggregation functions calculate a (scalar) value such as count, sum, average, minimum, or maximum for all rows in a column or table as defined by the expression.
 
 ## In this category
 
