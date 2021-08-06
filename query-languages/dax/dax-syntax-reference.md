@@ -171,8 +171,8 @@ For example, the following expression uses DATE and TIME functions to filter on 
 ```dax
 EVALUATE
 FILTER (
-                FactInternetSales,
-                [OrderDate] > (DATE(2015,1,9) + TIME(2,30,0)) && [OrderDate] < (DATE(2015,12,31) + TIME(11,59,59))
+        FactInternetSales,
+        [OrderDate] > (DATE(2015,1,9) + TIME(2,30,0)) &&[OrderDate] < (DATE(2015,12,31) + TIME(11,59,59))
 )
 ```
 
@@ -181,8 +181,8 @@ The same filter expression can be specified as a literal:
 ```dax
 EVALUATE
 FILTER (
-                FactInternetSales,
-                [OrderDate] > dt"2015-1-9T02:30:00" && [OrderDate] < dt"2015-12-31T11:59:59"
+        FactInternetSales,
+        [OrderDate] > dt"2015-1-9T02:30:00" && [OrderDate] < dt"2015-12-31T11:59:59"
 )
 ```
 
