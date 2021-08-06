@@ -164,7 +164,7 @@ DAX stores date and time values using the datetime data type used by Microsoft S
 
 ### Date and time literal
 
-Beginning with the August 2021 version of Power BI Desktop, DAX date and datetime values can be specified as a literal in the format `dt"YYYY-MM-DD"`, `dt"YYYY-MM-DDThh:mm:ss"`, or `dt"YYYY-MM-DD hh:mm:ss"`. When specified as a literal, use of DATE, DATEVALUE, TIME, TIMEVALUE functions in the expression are not necessary.
+Beginning with the August 2021 version of Power BI Desktop, DAX date and datetime values can be specified as a literal in the format `dt"YYYY-MM-DD"`, `dt"YYYY-MM-DDThh:mm:ss"`, or `dt"YYYY-MM-DD hh:mm:ss"`. When specified as a literal, use of [DATE](date-function-dax.md), [TIME](time-function-dax.md), [DATEVALUE](datevalue-function-dax.md), [TIMEVALUE](timevalue-function-dax.md) functions in the expression are not necessary.
 
 For example, the following expression uses DATE and TIME functions to filter on OrderDate:
 
