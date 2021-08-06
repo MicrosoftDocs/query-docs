@@ -2,7 +2,7 @@
 description: "Learn more about: DAX syntax"
 title: "DAX syntax | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 05/03/2021
+ms.date: 08/06/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -158,3 +158,33 @@ Some functions return scalar values, including strings, whereas other functions 
   
 You can use tables containing multiple columns and multiple rows of data as the argument to a function. Some functions also return tables, which are stored in memory and can be used as arguments to other functions.  
   
+## Date and time
+
+DAX stores date and time values using the datetime data type used by Microsoft SQL Server. Datetime format uses a floating-point number where Date values correspond to the integer portion representing the number of days since December 30, 1899. Time values correspond to the decimal portion of a date value where Hours, minutes, and seconds are represented by decimal fractions of a day. DAX date and time functions implicitly convert arguments to datetime data type.
+
+### Date and time literal
+
+Beginning with the August 2021 version of Power BI Desktop, DAX date and datetime values can be specified as a literal in the format `dt"YYYY-MM-DD"`, `dt"YYYY-MM-DDThh:mm:ss"`, or `dt"YYYY-MM-DD hh:mm:ss"`. When specified as a literal, use of DATE, DATEVALUE, TIME, TIMEVALUE functions in the expression are not necessary.
+
+For example, the following expression uses DATE and TIME functions to filter on OrderDate:
+
+```dax
+EVALUATE
+FILTER (
+                FactInternetSales,
+                [OrderDate] > (DATE(2015,1,9) + TIME(2,30,0)) && [OrderDate] < (DATE(2015,12,31) + TIME(11,59,59))
+)
+```
+
+The same filter expression can be specified as a literal:
+
+```dax
+EVALUATE
+FILTER (
+                FactInternetSales,
+                [OrderDate] > dt"2015-1-9T02:30:00" && [OrderDate] < dt"2015-12-31T11:59:59"
+)
+```
+
+> [!NOTE]
+> The DAX date and datetime-typed literal format is not supported in all versions of Power BI Desktop, Analysis Services, and Power Pivot in Excel. New and updated DAX functionality are typically first introduced in Power BI Desktop and then later included in Analysis Services and Power Pivot in Excel.

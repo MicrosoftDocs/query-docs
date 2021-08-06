@@ -2,7 +2,7 @@
 description: "Learn more about: DATE"
 title: "DATE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 08/04/2021
+ms.date: 08/06/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -33,11 +33,11 @@ Returns the specified date (**datetime)**.
   
 ## Remarks
 
-- Date and datetime can also be specified as a literal in the format `dt"YYYY-MM-DD"`, `dt"YYYY-MM-DDThh:mm:ss"`, or `dt"YYYY-MM-DD hh:mm:ss"`. When specified as a literal, use of DATE and TIME functions in the expression are not necessary.
-
 - The DATE function takes the integers that are input as arguments, and generates the corresponding date. The DATE function is most useful in situations where the year, month, and day are supplied by formulas. For example, the underlying data might contain dates in a format that is not recognized as a date, such as YYYYMMDD. You can use the DATE function in conjunction with other functions to convert the dates to a number that can be recognized as a date.  
   
 - In contrast to Microsoft Excel, which stores dates as a serial number, DAX date functions always return a **datetime** data type. However, you can use formatting to display dates as serial numbers if you want.  
+
+- Date and datetime can also be specified as a literal in the format `dt"YYYY-MM-DD"`, `dt"YYYY-MM-DDThh:mm:ss"`, or `dt"YYYY-MM-DD hh:mm:ss"`. When specified as a literal, using the DATE function in the expression is not necessary. To learn more, see [DAX Syntax | Date and time](dax-syntax-reference.md#date-and-time).
   
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
@@ -67,7 +67,7 @@ If **year** is between 1900 and 9999 (inclusive), that value is used as the year
 = DATE(2008,1,2)  
 ```
   
-### Working with Months  
+### Months  
 
 If **month** is greater than 12, **month** adds that number of months to the first month in the year specified. The following formula returns the date February 2, 2009:  
   
@@ -75,7 +75,7 @@ If **month** is greater than 12, **month** adds that number of months to the fir
 = DATE(2008,14,2)  
 ```
   
-### Working with Days  
+### Days  
 
 If **day** is greater than the number of days in the month specified, **day** adds that number of days to the first day in the month. The following formula returns the date February 4, 2008:  
 
@@ -83,16 +83,7 @@ If **day** is greater than the number of days in the month specified, **day** ad
 = DATE(2008,1,35)  
 ```
 
-### As a literal
 
-When specified as a literal, the following expression filters only those rows between January 9, 2020 and December 31, 2020:
-
-```dax
-FILTER (
-                FactInternetSales,
-                [OrderDate] > dt"2020-1-9" && [OrderDate] < dt"2020-12-31"
-)
-```
 
 ## See also
 
