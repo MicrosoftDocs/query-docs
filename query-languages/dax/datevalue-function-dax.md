@@ -2,7 +2,7 @@
 description: "Learn more about: DATEVALUE"
 title: "DATEVALUE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/05/2020
+ms.date: 08/06/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -38,7 +38,9 @@ A date in **datetime** format.
 - If the year portion of the **date_text** argument is omitted, the DATEVALUE function uses the current year from your computer's built-in clock. Time information in the **date_text** argument is ignored.  
 
 - Model locale and data/time settings are initially determined by the application and computer when the model is created.
-  
+
+- Date and datetime can also be specified as a literal in the format `dt"YYYY-MM-DD"`, `dt"YYYY-MM-DDThh:mm:ss"`, or `dt"YYYY-MM-DD hh:mm:ss"`. When specified as a literal, using the DATEVALUE function in the expression is not necessary. To learn more, see [DAX Syntax | Date and time](dax-syntax-reference.md#date-and-time).
+
 ## Example  
 
 The following example returns a different **datetime** value depending on the model locale and settings for how dates and times are presented.  
