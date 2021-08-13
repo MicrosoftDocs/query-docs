@@ -71,7 +71,7 @@ RETURN
 
 ## Reduce complexity
 
-In earlier versions of DAX, variables were not yet supported. Complex expressions that introduced new filter contexts were required to use the [EARLIER](/dax/earlier-function-dax) or [EARLIEST](/dax/earliest-function-dax) DAX functions to reference outer filter contexts. Unfortunately, data modelers found these functions difficult to understand and use.
+In earlier versions of DAX, variables were not yet supported. Complex expressions that introduced new filter contexts were required to use the [EARLIER](../earlier-function-dax.md) or [EARLIEST](/dax/earliest-function-dax) DAX functions to reference outer filter contexts. Unfortunately, data modelers found these functions difficult to understand and use.
 
 Variables are always evaluated outside the filters your RETURN expression applies. For this reason, when you use a variable within a modified filter context, it achieves the same result as the EARLIEST function. The use of the EARLIER or EARLIEST functions can therefore be avoided. It means you can now write formulas that are less complex, and that are easier to understand.
 

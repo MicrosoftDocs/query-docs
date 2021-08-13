@@ -11,7 +11,7 @@ ms.date: 08/13/2021
 
 # Column and measure references in DAX
 
-As a data modeler, your DAX expressions will refer to model columns and measures. Columns and measures are always associated with model tables, but these associations are different. So, we have different recommendations on how you'll reference them in your expressions.
+As a data modeler, your DAX expressions will refer to model columns and measures. Columns and measures are always associated with model tables, but these associations are different, so we have different recommendations on how you'll reference them in your expressions.
 
 ## Columns
 
@@ -33,7 +33,7 @@ Profit = Orders[Sales] - Orders[Cost]
 
 Sometimes, however, you'll be required to use fully qualified column references when Power BI detects ambiguity. When entering a formula, a red squiggly and error message will alert you. Also, some DAX functions like the [LOOKUPVALUE](../lookupvalue-function-dax.md) DAX function, require the use of fully qualified columns.
 
-We recommend you always fully qualify your column references. The reasons are provided in the [Recommendations](#recommendations) section.
+It's recommended you always fully qualify your column references. The reasons are provided in the [Recommendations](#recommendations) section.
 
 ## Measures
 
@@ -41,7 +41,7 @@ A measure is a model-level object. For this reason, measure names must be unique
 
 It's possible to use a fully qualified measure in your expressions. DAX intellisense will even offer the suggestion. However, it isn't necessary, and it's not a recommended practice. If you change the home table for a measure, any expression that uses a fully qualified measure reference to it will break. You'll then need to edit each broken formula to remove (or update) the measure reference.
 
-We recommend you never qualify your measure references. The reasons are provided in the [Recommendations](#recommendations) section.
+It's recommended you never qualify your measure references. The reasons are provided in the [Recommendations](#recommendations) section.
 
 ## Recommendations
 

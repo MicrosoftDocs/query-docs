@@ -2,7 +2,7 @@
 description: "Learn more about: IFERROR"
 title: "IFERROR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 08/04/2020
+ms.date: 08/13/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -43,6 +43,8 @@ A scalar of the same type as **value**
   Values that are returned for A and B must be of the same data type; therefore, the column or expression used for **value** and the value returned for **value_if_error** must be the same data type.  
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
+- To learn more about best practices when using IFERROR, see [Appropriate use of error functions in DAX](best-practices/dax-error-functions.md).
 
 ## Example
 

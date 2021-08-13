@@ -39,7 +39,7 @@ There are three reasons why the second measure definition is better:
 
 ## Recommendation
 
-When it's your intention to count table rows, we recommend that you always use the COUNTROWS function.
+When it's your intention to count table rows, it's recommended you always use the COUNTROWS function.
 
 ## See also
 

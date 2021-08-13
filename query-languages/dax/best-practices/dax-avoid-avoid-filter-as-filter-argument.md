@@ -40,7 +40,7 @@ CALCULATE(
 )
 ```
 
-We recommend you pass filter arguments as Boolean expressions, whenever possible. It's because Import model tables are in-memory column stores. They are explicitly optimized to efficiently filter columns in this way.
+It's recommended you pass filter arguments as Boolean expressions, whenever possible. It's because Import model tables are in-memory column stores. They are explicitly optimized to efficiently filter columns in this way.
 
 There are, however, restrictions that apply to Boolean expressions when they're used as filter arguments. They:
 
@@ -83,7 +83,7 @@ In this example, the FILTER function must also be used. It's because it requires
 
 ## Recommendations
 
-For best performance, we recommend you use Boolean expressions as filter arguments, whenever possible.
+For best performance, it's recommended you use Boolean expressions as filter arguments, whenever possible.
 
 Therefore, the FILTER function should only be used when necessary. You can use it to perform filter complex column comparisons. These column comparisons can involve:
 

@@ -32,7 +32,7 @@ The use of the HASONEVALUE is a defensive technique. It's required because it's 
 
 ## Recommendation
 
-We recommend that you use the [SELECTEDVALUE](../selectedvalue-function.md) function. It achieves the same outcome as the pattern described in this article, yet more efficiently and elegantly.
+It's recommended that you use the [SELECTEDVALUE](../selectedvalue-function.md) function. It achieves the same outcome as the pattern described in this article, yet more efficiently and elegantly.
 
 Using the SELECTEDVALUE function, the example measure definition is now rewritten.
 

@@ -9,9 +9,9 @@ ms.topic: conceptual
 ms.date: 08/13/2021
 ---
 
-# DIVIDE function vs divide operator (/) in DAX
+# DIVIDE function vs. divide operator (/) in DAX
 
-As a data modeler, when you write a DAX expression to divide a numerator by a denominator, you can choose to use the [DIVIDE](/dax/divide-function-dax) function or the divide operator (/ - forward slash).
+As a data modeler, when you write a DAX expression to divide a numerator by a denominator, you can choose to use the [DIVIDE](../divide-function-dax.md) function or the divide operator (/ - forward slash).
 
 When using the DIVIDE function, you must pass in numerator and denominator expressions. Optionally, you can pass in a value that represents an _alternate result_.
 
@@ -48,7 +48,7 @@ DIVIDE([Profit], [Sales])
 
 ## Recommendations
 
-We recommend that you use the DIVIDE function whenever the denominator is an expression that _could_ return zero or BLANK.
+It's recommendedthat you use the DIVIDE function whenever the denominator is an expression that _could_ return zero or BLANK.
 
 In the case that the denominator is a constant value, we recommend that you use the divide operator. In this case, the division is guaranteed to succeed, and your expression will perform better because it will avoid unnecessary testing.
 

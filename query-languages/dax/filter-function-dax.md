@@ -2,7 +2,7 @@
 description: "Learn more about: FILTER"
 title: "FILTER function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 01/06/2021
+ms.date: 08/13/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -32,7 +32,11 @@ A table containing only the filtered rows.
   
 ## Remarks
 
-- You can use FILTER to reduce the number of rows in the table that you are working with, and use only specific data in calculations. FILTER is not used independently, but as a function that is embedded in other functions that require a table as an argument.  
+- You can use FILTER to reduce the number of rows in the table that you are working with, and use only specific data in calculations. FILTER is not used independently, but as a function that is embedded in other functions that require a table as an argument. 
+
+- To learn more about best practices when using FILTER, see [Avoid using FILTER as a filter argument in DAX](best-practices/dax-avoid-avoid-filter-as-filter-argument.md).
+
+Use COUNTROWS instead of COUNT in DAX
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
