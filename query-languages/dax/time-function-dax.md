@@ -2,7 +2,7 @@
 description: "Learn more about: TIME"
 title: "TIME function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 05/03/2021
+ms.date: 08/06/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -42,6 +42,8 @@ A time (**datetime**).
   - Any value for **minutes** that is greater than 59 will be converted to hours and minutes.  
   - Any value for **seconds** that is greater than 59 will be converted to hours, minutes, and seconds.  
   - For minutes or seconds, a value greater than 24 hours will be divided by 24 and the reminder will be treated as the hour value. A value in excess of 24 hours does not alter the date portion.  
+
+- Date and datetime can also be specified as a literal in the format `dt"YYYY-MM-DD"`, `dt"YYYY-MM-DDThh:mm:ss"`, or `dt"YYYY-MM-DD hh:mm:ss"`. When specified as a literal, using the TIME function in the expression is not necessary. To learn more, see [DAX Syntax | Date and time](dax-syntax-reference.md#date-and-time).
   
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
