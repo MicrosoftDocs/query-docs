@@ -10,6 +10,8 @@
           href: dax-learn-videos.md
         - name: Use DAX in Power BI Desktop Learn path
           href: http://aka.ms/learndax
+        - name: "Sample model"
+          href: dax-sample-model.md 
         - name: Best practices
           items:
           - name: "DIVIDE function vs divide operator (/)"
@@ -28,8 +30,6 @@
             href: best-practices/dax-column-measure-references.md 
           - name: "Avoid using FILTER as a filter argument"
             href: best-practices/dax-avoid-avoid-filter-as-filter-argument.md 
-          - name: "Sample model"
-            href: best-practices/dax-sample-model.md 
     - name: DAX functions
       expanded: true
       items: 
