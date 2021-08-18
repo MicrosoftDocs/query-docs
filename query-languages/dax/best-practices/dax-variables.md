@@ -13,14 +13,9 @@ ms.date: 08/13/2021
 
 As a data modeler, writing and debugging some DAX calculations can be challenging. It's common that complex calculation requirements often involve writing compound or complex expressions. Compound expressions can involve the use of many nested functions, and possibly the reuse of expression logic.
 
-Using variables in your DAX formulas helps you write complex and efficient calculations. Variables can:
+Using variables in your DAX formulas can help you write more complex and efficient calculations. Variables can improve performance and reliability, and readability, and reduce complexity.
 
-- [Improve performance](#improve-performance)
-- [Improve readability](#improve-readability)
-- [Simplify debugging](#simplify-debugging)
-- [Reduce complexity](#reduce-complexity)
-
-In this article, we'll demonstrate the first three benefits by using an example measure for year-over-year (YoY) sales growth. (The formula for YoY sales growth is: period sales _fewer sales for the same period last year, _divided by_ sales for the same period last year.)
+In this article, we'll demonstrate the first three benefits by using an example measure for year-over-year (YoY) sales growth. (The formula for YoY sales growth is: period sales *fewer sales for the same period last year, divided by* sales for the same period last year.)
 
 Let's start with the following measure definition.
 
@@ -36,7 +31,7 @@ The measure produces the correct result, yet let's now see how it can be improve
 
 ## Improve performance
 
-Notice that the formula repeats the expression that calculates "same period last year". This formula is inefficient, as it requires Power BI to evaluate the same expression twice. The measure definition can be made more efficient by using a variable.
+Notice that the formula repeats the expression that calculates "same period last year". This formula is inefficient, as it requires Power BI to evaluate the same expression twice. The measure definition can be made more efficient by using a variable, [VAR](../var-dax.md).
 
 The following measure definition represents an improvement. It uses an expression to assign the "same period last year" result to a variable named **SalesPriorYear**. The variable is then used twice in the RETURN expression.
 
@@ -87,9 +82,9 @@ COUNTROWS(
 ) + 1
 ```
 
-The EARLIER function is used to refer to the **Subcategory Sales** column value _in the current row context_.
+The EARLIER function is used to refer to the **Subcategory Sales** column value *in the current row context*.
 
-The calculated column definition can be improved by using a variable instead of the EARLIER function. The **CurrentSubcategorySales** variable stores the **Subcategory Sales** column value _in the current row context_, and the RETURN expression uses it within a modified filter context.
+The calculated column definition can be improved by using a variable instead of the EARLIER function. The **CurrentSubcategorySales** variable stores the **Subcategory Sales** column value *in the current row context*, and the RETURN expression uses it within a modified filter context.
 
 ```dax
 Subcategory Sales Rank =

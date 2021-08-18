@@ -40,7 +40,7 @@ A named variable containing the result of the expression argument.
   - Variables can refer to previously defined variables.  
   - Columns in table variables cannot be referenced via TableName[ColumnName] syntax.  
 
-- To learn more about best practices when using VAR, see [Use variables to improve your DAX formulas](best-practices/dax-variables.md).
+- For best practices when using VAR, see [Use variables to improve your DAX formulas](best-practices/dax-variables.md).
 
 ## Example
 

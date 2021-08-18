@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 08/13/2021
 ---
 
-# Appropriate use of error functions in DAX
+# Appropriate use of error functions
 
 As a data modeler, when you write a DAX expression that might raise an evaluation-time error, you can consider using two helpful DAX functions.
 

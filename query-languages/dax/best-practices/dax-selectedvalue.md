@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 08/13/2021
 ---
 
-# Use SELECTEDVALUE instead of VALUES in DAX
+# Use SELECTEDVALUE instead of VALUES
 
 As a data modeler, sometimes you might need to write a DAX expression that tests whether a column is filtered by a specific value.
 

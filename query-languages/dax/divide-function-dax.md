@@ -35,7 +35,7 @@ DIVIDE(<numerator>, <denominator> [,<alternateresult>])
 
 - Alternate result on divide by 0 must be a constant.  
 
-- To learn more about best practices when using DIVIDE, see [DIVIDE function vs. divide operator (/) in DAX](best-practices/dax-divide-function-operator.md).
+- For best practices when using DIVIDE, see [DIVIDE function vs. divide operator (/) in DAX](best-practices/dax-divide-function-operator.md).
   
 ## Example
 

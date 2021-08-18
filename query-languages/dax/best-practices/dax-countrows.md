@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 08/13/2021
 ---
 
-# Use COUNTROWS instead of COUNT in DAX
+# Use COUNTROWS instead of COUNT
 
 As a data modeler, sometimes you might need to write a DAX expression that counts table rows. The table could be a model table or an expression that returns a table.
 

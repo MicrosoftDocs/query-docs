@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 08/13/2021
 ---
 
-# Avoid using FILTER as a filter argument in DAX
+# Avoid using FILTER as a filter argument
 
 As a data modeler, it's common you'll write DAX expressions that need to be evaluated in a modified filter context. For example, you can write a measure definition to calculate sales for "high margin products". We'll describe this calculation later in this article.
 

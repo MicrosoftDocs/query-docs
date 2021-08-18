@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 08/13/2021
 ---
 
-# Avoid converting BLANKs to values in DAX
+# Avoid converting BLANKs to values
 
 As a data modeler, when writing measure expressions you might come across cases where a meaningful value can't be returned. In these instances, you may be tempted to return a value—like zero—instead. It's suggested you carefully determine whether this design is efficient and practical.
 
@@ -64,7 +64,7 @@ The table visual now displays only customers who have made sales within the curr
 
 ## Recommendation
 
-It's recommendedthat your measures return BLANK when a meaningful value cannot be returned.
+It's recommended that your measures return BLANK when a meaningful value cannot be returned.
 
 This design approach is efficient, allowing Power BI to render reports faster. Also, returning BLANK is better because report visuals—by default—eliminate groupings when summarizations are BLANK.
 

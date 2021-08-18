@@ -44,7 +44,7 @@ A scalar of the same type as **value**
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-- To learn more about best practices when using IFERROR, see [Appropriate use of error functions in DAX](best-practices/dax-error-functions.md).
+- For best practices when using IFERROR, see [Appropriate use of error functions](best-practices/dax-error-functions.md).
 
 ## Example
 

@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 08/13/2021
 ---
 
-# Column and measure references in DAX
+# Column and measure references
 
 As a data modeler, your DAX expressions will refer to model columns and measures. Columns and measures are always associated with model tables, but these associations are different, so we have different recommendations on how you'll reference them in your expressions.
 

@@ -39,7 +39,7 @@ The model has seven tables:
 
 ## Download sample
 
-You can download the Power BI Desktop sample model file [here](https://aka.ms/dax-docs-sample-file).
+Download the Power BI Desktop sample model file [here](https://aka.ms/dax-docs-sample-file).
 
 ## See also
 
