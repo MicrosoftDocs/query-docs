@@ -14,22 +14,22 @@
           href: dax-sample-model.md 
         - name: Best practices
           items:
-          - name: "DIVIDE function vs divide operator (/)"
-            href: best-practices/dax-divide-function-operator.md
           - name: "Appropriate use of error functions"
             href: best-practices/dax-error-functions.md
+          - name: "Avoid converting BLANKs to values"
+            href: best-practices/dax-avoid-converting-blank.md
+          - name: "Avoid using FILTER as a filter argument"
+            href: best-practices/dax-avoid-avoid-filter-as-filter-argument.md 
+          - name: "Column and measure references"
+            href: best-practices/dax-column-measure-references.md 
+          - name: "DIVIDE function vs divide operator (/)"
+            href: best-practices/dax-divide-function-operator.md
           - name: "Use SELECTEDVALUE instead of VALUES"
             href: best-practices/dax-selectedvalue.md
-          - name: "COUNTROWS instead of COUNT"
+          - name: "Use COUNTROWS instead of COUNT"
             href: best-practices/dax-countrows.md
           - name: "Use variables to improve formulas"
             href: best-practices/dax-variables.md
-          - name: "Avoid converting BLANKs to values"
-            href: best-practices/dax-avoid-converting-blank.md
-          - name: "Column and measure references"
-            href: best-practices/dax-column-measure-references.md 
-          - name: "Avoid using FILTER as a filter argument"
-            href: best-practices/dax-avoid-avoid-filter-as-filter-argument.md 
     - name: DAX functions
       expanded: true
       items: 
