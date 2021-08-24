@@ -2,7 +2,7 @@
 title: "DAX overview | Microsoft Docs"
 description: Describes the Data Analysis Expressions (DAX) language.
 ms.service: powerbi 
-ms.date: 06/14/2021
+ms.date: 08/24/2021
 ms.reviewer: owend
 ms.topic: overview
 author: minewiskan
@@ -188,7 +188,11 @@ A function is a named formula within an expression. Most functions have required
 - DAX includes many functions that return a table, rather than a value. The table is not displayed in a reporting client, but is used to provide input to other functions. For example, you can retrieve a table and then count the distinct values in it, or calculate dynamic sums across filtered tables or columns.  
   
 - DAX functions include a variety of *time intelligence* functions. These functions let you define or select date ranges, and perform dynamic calculations based on these dates or range. For example, you can compare sums across parallel periods.  
-  
+
+### Aggregation functions
+
+Aggregation functions calculate a (scalar) value such as count, sum, average, minimum, or maximum for all rows in a column or table as defined by the expression. To learn more, see [Aggregation functions](aggregation-functions-dax.md).
+
 ### Date and time functions  
 
 The date and time functions in DAX are similar to date and time functions in Microsoft Excel. However, DAX functions are based on a **datetime** data type starting March 1, 1900. To learn more, see [Date and time functions](date-and-time-functions-dax.md).
@@ -219,11 +223,11 @@ These functions perform unique actions that cannot be defined by any of the cate
 
 ### Relationship functions
 
-Relationship functions in DAX allow you to return values from another related table, specify a particular relationship to use in an expression, and specify cross filtering direction. To lean more, see [Relationship functions](relationship-functions-dax.md).
+Relationship functions in DAX allow you to return values from another related table, specify a particular relationship to use in an expression, and specify cross filtering direction. To learn more, see [Relationship functions](relationship-functions-dax.md).
   
 ### Statistical functions  
 
-DAX provides statistical functions that perform aggregations. In addition to creating sums and averages, or finding the minimum and maximum values, in DAX you can also filter a column before aggregating or create aggregations based on related tables. To learn more, see [Statistical functions](statistical-functions-dax.md).  
+Statistical functions calculate values related to statistical distributions and probability, such as standard deviation and number of permutations. To learn more, see [Statistical functions](statistical-functions-dax.md).  
   
 ### Text functions  
 
