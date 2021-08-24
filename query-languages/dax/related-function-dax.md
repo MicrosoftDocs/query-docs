@@ -73,7 +73,7 @@ This expression uses the RELATED function to lookup the country value in the Sal
 
 The following table shows only totals for each region, to prove that the filter expression in the measure, Non USA Internet Sales, works as intended.  
   
-|Row Labels|Internet Sales|Non USA Internet Sales|  
+|:::no-loc text="Row Labels":::|:::no-loc text="Internet Sales":::|:::no-loc text="Non USA Internet Sales":::|  
 |--------------|------------------|--------------------------|  
 |Australia|$4,999,021.84|$4,999,021.84|  
 |Canada|$1,343,109.10|$1,343,109.10|  
@@ -85,7 +85,7 @@ The following table shows only totals for each region, to prove that the filter 
   
 The following shows what that you might get if you used this measure in a report table visual:  
   
-|Row Labels|Accessories|Bikes|Clothing|Grand Total|
+|:::no-loc text="Row Labels":::|:::no-loc text="Accessories":::|:::no-loc text="Bikes":::|:::no-loc text="Clothing":::|:::no-loc text="Grand Total":::|
 |--------------------------|-----------------|----|----|----|  
 |2005||$1,526,481.95||$1,526,481.95|  
 |2006||$3,554,744.04||$3,554,744.04|  

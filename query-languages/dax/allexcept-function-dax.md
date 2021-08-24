@@ -2,7 +2,7 @@
 description: "Learn more about: ALLEXCEPT"
 title: "ALLEXCEPT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 05/03/2021
+ms.date: 07/30/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -26,7 +26,7 @@ ALLEXCEPT(<table>,<column>[,<column>[,…]])
 |table|The table over which all context filters are removed, except filters on those columns that are specified in subsequent arguments.|  
 |column|The column for which context filters must be preserved.|  
   
-The first argument to the ALLEXCEPT function must be a reference to a base table; all subsequent arguments must be references to base columns. You cannot use table expressions or column expressions with the ALLEXCEPT function.  
+The first argument to the ALLEXCEPT function must be a reference to a base table. All subsequent arguments must be references to base columns. You cannot use table expressions or column expressions with the ALLEXCEPT function.  
   
 ## Return value
 
@@ -36,7 +36,7 @@ A table with all filters removed except for the filters on the specified columns
 
 - This function is not used by itself, but serves as an intermediate function that can be used to change the set of results over which some other calculation is performed.  
   
-- As described in the following table, you can use the ALL and ALLEXCEPT functions in different scenarios.  
+- ALL and ALLEXCEPT can be used in different scenarios:  
   
     |Function and usage|Description|  
     |----------------------|---------------|  
@@ -47,22 +47,17 @@ A table with all filters removed except for the filters on the specified columns
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example
-
-The following example presents a formula that you can use in a measure.  
   
-The formula sums SalesAmount_USD and uses the ALLEXCEPT function to remove any context filters on the DateTime table except if the filter has been applied to the CalendarYear column.  
+The following measure formula sums SalesAmount_USD and uses the ALLEXCEPT function to remove any context filters on the DateTime table except if the filter has been applied to the CalendarYear column.  
   
 ```dax
 = CALCULATE(SUM(ResellerSales_USD[SalesAmount_USD]), ALLEXCEPT(DateTime, DateTime[CalendarYear]))  
 ```
 
-Because the formula uses ALLEXCEPT, whenever any column but CalendarYear from the table DateTime is used to slice a visualization, the formula will remove any slicer filters, providing a value equal to the sum of SalesAmount_USD for the column label value, as shown in Table 1.  
-  
-However, if the column CalendarYear is used to slice the visualization, the results are different. Because CalendarYear is specified as the argument to ALLEXCEPT, when the data is sliced on the year, a filter will be applied on years at the row level, as shown in Table 2. The user is encouraged to compare these tables to understand the behavior of ALLEXCEPT().  
+Because the formula uses ALLEXCEPT, whenever any column but CalendarYear from the table DateTime is used to slice a visualization, the formula will remove any slicer filters, providing a value equal to the sum of SalesAmount_USD. However, if the column CalendarYear is used to slice the visualization, the results are different. Because CalendarYear is specified as the argument to ALLEXCEPT, when the data is sliced on the year, a filter will be applied on years at the row level
   
 ## See also
 
 [Filter functions](filter-functions-dax.md)  
 [ALL function](all-function-dax.md)  
 [FILTER function](filter-function-dax.md)  
-  
