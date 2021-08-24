@@ -39,21 +39,23 @@ A table of values.
 
 ## Example
 
-The following example uses the RELATEDTABLE function to create a calculated column with the Internet Sales in the Product Category table.  
-  
+The following example uses the RELATEDTABLE function to create a calculated column with the Internet Sales in the Product Category table:  
+
+```dax
+= SUMX( RELATEDTABLE('InternetSales_USD')  
+     , [SalesAmount_USD])  
+```
+
 The following table shows the results:  
 
-|Product Category Key|Product Category AlternateKey|Product Category Name|Internet Sales|  
+|:::no-loc text="Product Category Key":::|:::no-loc text="Product Category AlternateKey":::|:::no-loc text="Product Category Name":::|:::no-loc text="Internet Sales":::|  
 |-----|------|------|------|  
 |1|1|Bikes|$28,318,144.65|  
 |2|2|Components||  
 |3|3|Clothing|$339,772.61|  
 |4|4|Accessories|$700,759.96|  
   
-```dax
-= SUMX( RELATEDTABLE('InternetSales_USD')  
-     , [SalesAmount_USD])  
-```
+
   
 ## See also
 
