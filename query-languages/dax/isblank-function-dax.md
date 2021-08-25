@@ -2,7 +2,7 @@
 description: "Learn more about: ISBLANK"
 title: "ISBLANK function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 08/04/2020
+ms.date: 08/13/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -29,7 +29,11 @@ ISBLANK(<value>)
 ## Return value
 
 A Boolean value of TRUE if the value is blank; otherwise FALSE.  
-  
+
+## Remarks
+
+To learn more about best practices when working with BLANKS, see [Avoid converting BLANKs to values in DAX](best-practices/dax-avoid-converting-blank.md).
+
 ## Example
 
 This formula computes the increase or decrease ratio in sales compared to the previous year. The example uses the IF function to check the value for the previous year's sales in order to avoid a divide by zero error.  

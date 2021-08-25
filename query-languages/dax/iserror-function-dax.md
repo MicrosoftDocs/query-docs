@@ -32,7 +32,9 @@ A Boolean value of TRUE if the value is an error; otherwise FALSE.
 
 ## Remarks
 
-[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+- For best practices when using ISERROR, see [Appropriate use of error functions](best-practices/dax-error-functions.md).
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example
 

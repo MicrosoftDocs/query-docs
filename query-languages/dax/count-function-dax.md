@@ -46,6 +46,8 @@ A whole number.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
+- For best practices when using COUNT, see [Use COUNTROWS instead of COUNT](best-practices/dax-countrows.md).
+
 ## Example
 
 The following example shows how to count the number of values in the column, ShipDate.  
