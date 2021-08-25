@@ -6,7 +6,7 @@ ms.date: 08/24/2021
 ms.reviewer: owend
 ms.topic: overview
 author: minewiskan
-ms.author: owend
+ms.author: owend 
 recommendations: false
 ---
 # DAX overview
