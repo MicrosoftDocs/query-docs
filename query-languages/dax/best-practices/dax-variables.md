@@ -1,12 +1,13 @@
 ---
 title: "Use variables to improve your DAX formulas"
-description: Guidance on using variables in DAX expressions.
+description: Best practices for using variables in DAX expressions.
 author: peter-myers
 ms.author: owend
 ms.reviewer: owend
 ms.service: powerbi
 ms.topic: conceptual
-ms.date: 08/13/2021
+ms.date: 08/25/2021
+recommendations: false
 ---
 
 # Use variables to improve your DAX formulas

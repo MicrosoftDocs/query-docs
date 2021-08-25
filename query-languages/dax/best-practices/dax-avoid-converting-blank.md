@@ -1,12 +1,13 @@
 ---
 title: "Avoid converting BLANKs to values in DAX"
-description: Guidance on converting BLANKs to values.
+description: Best practices for converting BLANKs to values.
 author: peter-myers
 ms.author: owend
 ms.reviewer: owend
 ms.service: powerbi
 ms.topic: conceptual
-ms.date: 08/13/2021
+ms.date: 08/25/2021
+recommendations: false
 ---
 
 # Avoid converting BLANKs to values

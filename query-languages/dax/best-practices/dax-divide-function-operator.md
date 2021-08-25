@@ -1,12 +1,13 @@
 ---
 title: "DIVIDE function vs divide operator (/) in DAX"
-description: Guidance on when to use the DAX DIVIDE function.
+description: Best practices for using the DAX DIVIDE function.
 author: peter-myers
 ms.author: owend
 ms.reviewer: owend
 ms.service: powerbi
 ms.topic: conceptual
-ms.date: 08/13/2021
+ms.date: 08/25/2021
+recommendations: false
 ---
 
 # DIVIDE function vs. divide operator (/)

@@ -6,7 +6,8 @@ ms.author: owend
 ms.reviewer: owend
 ms.service: powerbi
 ms.topic: conceptual
-ms.date: 08/13/2021
+ms.date: 08/25/2021
+recommendations: false
 ---
 
 # DAX sample model

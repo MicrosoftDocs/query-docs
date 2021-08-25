@@ -1,12 +1,13 @@
 ---
 title: "Column and measure references in DAX"
-description: Guidance on referring to columns in measures in your DAX expressions.
+description: Best practices when referring to columns in measures in your DAX expressions.
 author: peter-myers
 ms.author: owend
 ms.reviewer: owend
 ms.service: powerbi
 ms.topic: conceptual
-ms.date: 08/13/2021
+ms.date: 08/25/2021
+recommendations: false
 ---
 
 # Column and measure references
