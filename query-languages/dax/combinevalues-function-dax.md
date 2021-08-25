@@ -5,7 +5,8 @@ ms.service: powerbi
 ms.date: 07/05/2020
 ms.topic: reference
 author: minewiskan
-ms.author: owend
+ms.author: owend 
+recommendations: false
 
 ---
 

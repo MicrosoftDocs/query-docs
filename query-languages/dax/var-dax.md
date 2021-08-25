@@ -2,11 +2,12 @@
 description: "Learn more about: VAR"
 title: "VAR keyword (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/13/2020
+ms.date: 08/13/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
-ms.author: owend
+ms.author: owend 
+recommendations: false
 
 ---
 # VAR
@@ -39,7 +40,9 @@ A named variable containing the result of the expression argument.
   - Variables can refer to measures.  
   - Variables can refer to previously defined variables.  
   - Columns in table variables cannot be referenced via TableName[ColumnName] syntax.  
-  
+
+- For best practices when using VAR, see [Use variables to improve your DAX formulas](best-practices/dax-variables.md).
+
 ## Example
 
 To calculate a percentage of year-over-year growth without using a variable, you could create three separate measures. This first measure calculates Sum of Sales Amount:  

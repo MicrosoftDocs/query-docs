@@ -2,11 +2,12 @@
 description: "Learn more about: DIVIDE"
 title: "DIVIDE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/05/2020
+ms.date: 08/13/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
-ms.author: owend
+ms.author: owend 
+recommendations: false
 
 ---
 # DIVIDE
@@ -29,11 +30,13 @@ DIVIDE(<numerator>, <denominator> [,<alternateresult>])
   
 ## Return value
 
-A decimal number.  
+- A decimal number.  
   
 ## Remarks
 
-Alternate result on divide by 0 must be a constant.  
+- Alternate result on divide by 0 must be a constant.  
+
+- For best practices when using DIVIDE, see [DIVIDE function vs. divide operator (/) in DAX](best-practices/dax-divide-function-operator.md).
   
 ## Example
 

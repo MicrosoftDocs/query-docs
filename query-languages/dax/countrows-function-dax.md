@@ -2,11 +2,12 @@
 description: "Learn more about: COUNTROWS"
 title: "COUNTROWS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/14/2021
+ms.date: 08/13/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
-ms.author: owend
+ms.author: owend 
+recommendations: false
 
 ---
 # COUNTROWS
@@ -34,6 +35,8 @@ A whole number.
 - This function can be used to count the number of rows in a base table, but more often is used to count the number of rows that result from filtering a table, or applying context to a table.  
   
 - Whenever there are no rows to aggregate, the function returns a blank.  However, if there are rows, but none of them meet the specified criteria, the function returns 0. Microsoft Excel also returns a zero if no rows are found that meet the conditions.  
+
+- To learn more about best practices when using COUNT and COUNTROWS, see [Use COUNTROWS instead of COUNT in DAX](best-practices/dax-countrows.md).
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   

@@ -6,8 +6,9 @@ ms.date: 11/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
-ms.author: owend
-recommendations: false
+ms.author: owend 
+recommendations: false 
+
 ---
 # DAX operators
 
@@ -137,7 +138,7 @@ For example, suppose you have two numbers that you want to combine. One number r
 
 In this case, DAX will convert both numbers to real numbers in a numeric format, using the largest numeric format that can store both kinds of numbers. Then DAX will apply the multiplication.
 
-Depending on the data-type combination, type coercion may not be applied for comparison operations. For a complete list of data types supported by DAX, see [Data types supported in tabular models](/analysis-services/tabular-models/data-types-supported-ssas-tabular) and [Data types in Power BI Desktop](/power-bi/connect-data/desktop-data-types).
+Depending on the data-type combination, type coercion may not be applied for comparison operations. For a complete list of data types supported by DAX, see [Data types supported in tabular models](/tabular-models/data-types-supported-ssas-tabular) and [Data types in Power BI Desktop](/power-bi/connect-data/desktop-data-types).
 
 Integer, Real Number, Currency, Date/time and Blank are considered numeric for comparison purposes. Blank evaluates to zero when performing a comparison. The following data-type combinations are supported for comparison operations.
 

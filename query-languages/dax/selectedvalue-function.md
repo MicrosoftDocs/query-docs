@@ -6,7 +6,8 @@ ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
-ms.author: owend
+ms.author: owend 
+recommendations: false
 
 ---
 # SELECTEDVALUE
@@ -33,6 +34,8 @@ The value when the context for columnName has been filtered down to one distinct
 ## Remarks
 
 - An equivalent expression for `SELECTEDVALUE(<columnName>, <alternateResult>)` is `IF(HASONEVALUE(<columnName>), VALUES(<columnName>), <alternateResult>)`.
+
+- To learn more about best practices when using SELECTEDVALUE, see [Use SELECTEDVALUE instead of VALUES in DAX](best-practices/dax-selectedvalue.md).
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   

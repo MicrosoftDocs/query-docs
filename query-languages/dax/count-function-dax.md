@@ -6,7 +6,8 @@ ms.date: 07/05/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
-ms.author: owend
+ms.author: owend 
+recommendations: false
 
 ---
 # COUNT
@@ -44,6 +45,8 @@ A whole number.
 - If you want to evaluate a column of TRUE/FALSE values, use the COUNTA function.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
+- For best practices when using COUNT, see [Use COUNTROWS instead of COUNT](best-practices/dax-countrows.md).
 
 ## Example
 

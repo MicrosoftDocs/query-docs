@@ -6,7 +6,8 @@ ms.date: 05/03/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
-ms.author: owend
+ms.author: owend 
+recommendations: false
 ---
 # VALUES
 
@@ -36,6 +37,8 @@ When the input parameter is a column name, a single column table. When the input
 - When you use the VALUES function in a context that has been filtered, the unique values returned by VALUES are affected by the filter. For example, if you filter by Region, and return a list of the values for City, the list will include only those cities in the regions permitted by the filter. To return all of the cities, regardless of existing filters, you must use the ALL function to remove filters from the table. The second example demonstrates use of ALL with VALUES.  
   
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
+- For best practices when using VALUES, see [Use SELECTEDVALUE instead of VALUES](best-practices/dax-selectedvalue.md).
 
 ## Related functions
 
