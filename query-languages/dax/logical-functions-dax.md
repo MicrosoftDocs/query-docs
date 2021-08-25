@@ -6,8 +6,8 @@ ms.date: 02/22/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
-ms.author: owend
-
+ms.author: owend 
+recommendations: false
 ---
 # Logical functions
 
