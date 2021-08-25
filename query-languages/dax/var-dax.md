@@ -6,7 +6,8 @@ ms.date: 07/13/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
-ms.author: owend
+ms.author: owend 
+recommendations: false
 
 ---
 # VAR

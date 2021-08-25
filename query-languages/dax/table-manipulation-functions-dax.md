@@ -6,7 +6,7 @@ ms.date: 08/26/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
-ms.author: owend
+ms.author: owend 
 recommendations: false
 ---
 # Table manipulation functions
