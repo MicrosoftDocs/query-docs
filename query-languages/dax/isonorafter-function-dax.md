@@ -57,9 +57,11 @@ The following expression:
 
 ```dax
 FILTER (
-    Info, 
-    ISONORAFTER ( Info[Country], "IND", ASC, Info[State], "MH", ASC)
-)  
+    Info,
+    ISONORAFTER (
+        Info[Country], "IND", ASC,
+        Info[State], "MH", ASC )
+)
 ```
 
 Returns:
