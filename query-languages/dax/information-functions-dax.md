@@ -24,6 +24,7 @@ DAX information functions look at the cell or row that is provided as an argumen
 |[CUSTOMDATA](customdata-function-dax.md)     | Returns the content of the CustomData property in the connection string.         |
 |[HASONEFILTER](hasonefilter-function-dax.md)      |  Returns TRUE when the number of directly filtered values on *columnName* is one; otherwise returns FALSE.        |
 |[HASONEVALUE](hasonevalue-function-dax.md)     |  Returns TRUE when the context for *columnName* has been filtered down to one distinct value only. Otherwise is FALSE.        |
+|[ISAFTER](isafter-function-dax.md)     | A boolean function that emulates the behavior of a Start At clause and returns true for a row that meets all of the condition parameters.        |
 |[ISBLANK](isblank-function-dax.md)     | Checks whether a value is blank, and returns TRUE or FALSE.         |
 |[ISCROSSFILTERED](iscrossfiltered-function-dax.md)      |  Returns TRUE when *columnName* or another column in the same or related table is being filtered.         |
 |[ISEMPTY](isempty-function-dax.md)     |  Checks if a table is empty.       |

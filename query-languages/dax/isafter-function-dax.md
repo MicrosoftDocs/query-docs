@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: ISONORAFTER"
-title: "ISONORAFTER function (DAX) | Microsoft Docs"
+description: "Learn more about: ISAFTER"
+title: "ISAFTER function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 08/31/2021
 ms.reviewer: owend
@@ -10,18 +10,18 @@ ms.author: owend
 recommendations: false
 
 ---
-# ISONORAFTER
+# ISAFTER
   
-A boolean function that emulates the behavior of a Start At clause and returns true for a row that meets all of the condition parameters.  
+A boolean function that emulates the behavior of a 'Start At' clause and returns true for a row that meets all of the condition parameters.  
   
 This function takes a variable number of triples, the first two values in a triple are the expressions to be compared, and the third parameter indicates the sort order. The sort order can be ascending (default) or descending.  
   
-Based on the sort order, the first parameter is compared with the second parameter. If the sort order is ascending, the comparison to be done is first parameter *greater than or equal to* second parameter. If the sort order is descending, the comparison to be done is second parameter *less than or equal to* first parameter.  
+Based on the sort order, the first parameter is compared with the second parameter. If the sort order is ascending, the comparison to be done is first parameter greater than the second parameter. If the sort order is descending, the comparison to be done is second parameter less than the first parameter.  
   
 ## Syntax  
   
 ```DAX  
-ISONORAFTER(<scalar_expression>, <scalar_expression>[, sort_order [, <scalar_expression>, <scalar_expression>[, sort_order]]…)  
+ISAFTER(<scalar_expression>, <scalar_expression>[, sort_order [, <scalar_expression>, <scalar_expression>[, sort_order]]…)  
 ```
   
 ### Parameters  
@@ -37,7 +37,7 @@ True or false.
 
 ## Remarks
 
-This function is similar to [ISAFTER](isafter-function-dax.md). The difference is ISONORAFTER returns true for values sorted *on or after* the filter values, where ISAFTER returns true for values sorted strictly *after* the filter values.
+This function is similar to [ISONORAFTER](isonorafter-function-dax.md). The difference is ISAFTER returns true for values sorted strictly *after* the filter values, where ISONORAFTER returns true for values sorted *on or after* the filter values.
 
 [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
@@ -58,7 +58,7 @@ The following expression:
 ```dax
 FILTER (
     Info, 
-    ISONORAFTER ( Info[Country], "IND", ASC, Info[State], "MH", ASC)
+    ISAFTER ( Info[Country], "IND", ASC, Info[State], "MH", ASC)
 )  
 ```
 
@@ -66,11 +66,10 @@ Returns:
 
 |Country|State|Count|Total|  
 |-----------|---------|---------|---------|  
-|IND|MH|25|1000|  
 |IND|WB|10|900|  
 |USA|CA|5|500|  
 |USA|WA|10|900|  
 
 ## See also
 
-[ISAFTER](isafter-function-dax.md)
+[ISONORAFTER](isonorafter-function-dax.md)
