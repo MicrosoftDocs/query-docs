@@ -2,7 +2,7 @@
 description: "Learn more about: FORMAT"
 title: "FORMAT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 02/03/2021
+ms.date: 09/01/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -17,7 +17,7 @@ Converts a value to text according to the specified format.
 ## Syntax
 
 ```dax
-FORMAT(<value>, <format_string>)
+FORMAT(<value>, <format_string>[, <locale_name>])
 ```
 
 ### Parameters
@@ -26,6 +26,7 @@ FORMAT(<value>, <format_string>)
 |--------|--------------|
 |value|A value or expression that evaluates to a single value.|
 |format_string|A string with the formatting template.|
+|locale_name|(Optional) Name of the locale to be used by \<format_string>. Possible values are strings accepted by the Windows API function [LocaleNameToLCID()](/windows/win32/api/winnls/nf-winnls-localenametolcid).|
 
 ## Return value
 
@@ -46,6 +47,8 @@ A string containing **value** formatted as defined by **format_string**.
 
 ## Examples
 
+#### Format strings
+
 ```dax
 = FORMAT( 12345.67, "General Number")  
 = FORMAT( 12345.67, "Currency")  
@@ -55,7 +58,7 @@ A string containing **value** formatted as defined by **format_string**.
 = FORMAT( 12345.67, "Scientific")
 ```
 
-Returns the following:  
+Returns:  
 
 **12345.67** "General Number" displays the number with no formatting.  
   
@@ -68,6 +71,22 @@ Returns the following:
 **1,234,567.00 %** "Percent" displays the number as a percentage (multiplied by 100) with formatting and the percent sign at the right of the number separated by a single space.  
   
 **1.23E+04** "Scientific" displays the number in scientific notation with two decimal digits.
+
+#### Datetime with optional locale_name
+
+```dax
+= FORMAT( dt"2020-12-15T12:30:59", BLANK(), "en-US" ) 
+= FORMAT( dt"2020-12-15T12:30:59", BLANK(), "en-GB" ) 
+= FORMAT( dt"2020-12-15T12:30:59", "mm/dd/yyyy", "en-GB" )
+```
+
+Returns:
+
+**12/15/2020 12:30:59 PM** Where month precedes day and time is 12-hour format.
+
+**15/12/2020 12:30:59** Where day precedes month and time is 24-hour format.
+
+**12/15/2020 12:30:59** Where month precedes day and time is 24-hour format. Because a non-locale dependent format string is specified, the locale is not applied and the non-locale format is returned.  
 
 ## Predefined numeric formats
 
