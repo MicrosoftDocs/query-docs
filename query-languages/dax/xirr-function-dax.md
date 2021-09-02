@@ -2,7 +2,7 @@
 description: "Learn more about: XIRR"
 title: "XIRR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 08/07/2020
+ms.date: 09/02/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -17,7 +17,7 @@ Returns the internal rate of return for a schedule of cash flows that is not nec
 ## Syntax  
   
 ```dax
-XIRR(<table>, <values>, <dates>, [guess])  
+XIRR(<table>, <values>, <dates>, [, <guess>[, <alternateResult>]])  
 ```
   
 ### Parameters  
