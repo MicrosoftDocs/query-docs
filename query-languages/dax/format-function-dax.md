@@ -26,7 +26,7 @@ FORMAT(<value>, <format_string>[, <locale_name>])
 |--------|--------------|
 |value|A value or expression that evaluates to a single value.|
 |format_string|A string with the formatting template.|
-|locale_name|(Optional) Name of the locale to be used by \<format_string>. Possible values are strings accepted by the Windows API function [LocaleNameToLCID()](/windows/win32/api/winnls/nf-winnls-localenametolcid).|
+|locale_name|(Optional) Name of the locale to be used by \<format_string>. Possible values are strings accepted by the Windows API function [LocaleNameToLCID()](https://docs.microsoft.com/windows/win32/api/winnls/nf-winnls-localenametolcid).|
 
 ## Return value
 
