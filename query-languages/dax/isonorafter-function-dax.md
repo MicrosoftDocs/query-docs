@@ -12,11 +12,9 @@ recommendations: false
 ---
 # ISONORAFTER
   
-A boolean function that emulates the behavior of a Start At clause and returns true for a row that meets all of the condition parameters.  
+A boolean function that emulates the behavior of a Start At clause and returns true for a row that meets all of the condition parameters.
   
-This function takes a variable number of triples, the first two values in a triple are the expressions to be compared, and the third parameter indicates the sort order. The sort order can be ascending (default) or descending.  
-  
-Based on the sort order, the first parameter is compared with the second parameter. If the sort order is ascending, the comparison to be done is first parameter *greater than or equal to* second parameter. If the sort order is descending, the comparison to be done is second parameter *less than or equal to* first parameter.  
+Based on the sort order, the first parameter is compared with the second parameter. If the sort order is ascending, the comparison to be done is first parameter greater than the second parameter. If the sort order is descending, the comparison to be done is second parameter less than the first parameter.  
   
 ## Syntax  
   
