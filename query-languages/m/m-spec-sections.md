@@ -6,7 +6,7 @@ author: dougklopfenstein
 ms.service: powerquery
 
 ms.topic: article
-ms.date: 4/7/2020
+ms.date: 8/23/2021
 ms.author: bezhan
 ---
 
@@ -29,7 +29,7 @@ _section-member-name:<br/>
 
 In M, a section is an organizational concept that allows related expressions to be named and grouped within a document. Each section has a _section-name_, which identifies the section and qualifies the names of the _section-members_ declared within the section. A _sectionmember_ consists of a _member-name_ and an _expression_. Section member expressions may refer to other section members within the same section directly by member name.
 
-The following example shows a section-document that contains one section:
+The following example shows a section-document:
 
 ```
 section Section1; 
@@ -44,7 +44,7 @@ Section member expressions may refer to section members located in other section
 _section-access-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier_ `!` _identifier_
 
-The following example shows a document containing two sections that are mutually referential:
+The following example shows a set of two documents containing sections that are mutually referential:
 
 ```
 section Section1; 
@@ -58,7 +58,7 @@ B = Section1!A & " world!";     /"Hello, world"
 
 Section members may optionally be declared as `shared`, which omits the requirement to use a _section-access-expression_ when referring to shared members outside of the containing section. Shared members in external sections may be referred to by their unqualified member name so long as no member of the same name is declared in the referring section and no other section has a like-named shared member.
 
-The following example illustrates the behavior of shared members when used across sections within the same document:
+The following example illustrates the behavior of shared members when used across sections within the same set of documents:
 
 ```
 section Section1;  
@@ -86,7 +86,7 @@ section Section3;
 B = A;    //Error: shared member A has multiple definitions
 ```
 
-The following holds when evaluating a section-document:
+The following holds when evaluating a set of section-documents:
 
 * Each _section-name_ must be unique in the global environment.
 
@@ -163,4 +163,3 @@ The following holds when evaluating `#shared`:
 * The `#shared` intrinsic variable preserves the evaluation state of all shared member expressions within the document.
 
 * The `#shared` intrinsic variable does not force the evaluation of any unevaluated section members.
-
