@@ -291,6 +291,8 @@
               href: hasonefilter-function-dax.md
             - name: HASONEVALUE
               href: hasonevalue-function-dax.md
+            - name: ISAFTER
+              href: isafter-function-dax.md
             - name: ISBLANK
               href: isblank-function-dax.md
             - name: ISCROSSFILTERED
