@@ -2,7 +2,7 @@
 title: "DAX glossary | Microsoft Docs"
 description: Describes common terms used in the Data Analysis Expressions (DAX) language.
 ms.service: powerbi 
-ms.date: 06/14/2021
+ms.date: 09/08/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -38,14 +38,6 @@ A deliberate process that transforms one or more inputs into one or more results
 ## Context
 
 Describes the environment in which a DAX formula is evaluated. There are two types of context: *Row context* and *filter context*. Row context represents the "current row", and is used to evaluate calculated column formulas and expressions used by table iterators. Filter context is used to evaluate measures, and it represents filters applied directly to model columns and filters propagated by model relationships.
-
-## Cube
-
-See [Multidimensional model](#multidimensional-model).
-
-## Data model
-
-A data resource that's specifically prepared for reporting and analytics. It allows report users to browse and explore data in a simple and intuitive way. Importantly, it delivers high performance query results, even over large data volumes. It can integrate data from multiple sources and use calculations to transform data. It can enforce row-level permission to ensure different users have access to different data. Sometimes it's called a *Semantic model* or just a *Model*.
 
 ## DAX
 
@@ -92,17 +84,9 @@ A calculation that achieves summarization. Measures are either [*implicit*](#imp
 
 A model table that contains at least one measure, and has no hierarchies or visible columns. In the **Fields** pane, each measure group is adorned with a multi-calculator icon. Measure groups are listed together at the top of the **Fields** pane, and sorted alphabetically by name.
 
-## Model
-
-See [Data model](#data-model).
-
 ## Model calculation
 
 A named formula that's used to add a calculated table, calculated column, or measure to a tabular data model. Its structure is \<NAME> = \<FORMULA>. Most calculations are added by data modelers in Power BI Desktop, but measures can also be added to a live connection report. See [Report measures](#report-measures).
-
-## Multidimensional model
-
-A data model developed for SQL Server Analysis Services (multidimensional mode). It comprises dimensions and measures. It's often just called a *cube*.
 
 ## Quick measures
 
@@ -116,17 +100,13 @@ Also called *report-level measures*. They're added to a live connection report i
 
 Also called *RLS*. Design technique to restrict access to subsets of data for specific users. In a tabular model, it's achieved by creating model roles. Roles have rules, which are DAX expressions to filter table rows.
 
+## Scalar
+
+In DAX, a scalar is a single value. A scalar can be of any data type: Decimal, Integer, DateTime, String, Currency, Boolean. A scalar value can be the result of an expression calculated from multiple values. For example, an aggregation function such as MAX() returns a single maximum value from a set of values from which to evaluate.
+
 ## Summarization
 
 An operation applied to the values of a column. See [measure](#measure).
-
-## Tabular cube
-
-There's no such concept as a *tabular cube*. Use [Tabular model](#tabular-model) instead.
-
-## Tabular model
-
-A data model developed for Power Pivot in Excel, Power BI, Azure Analysis Services, or SQL Server Analysis Services (tabular mode).
 
 ## Time intelligence
 
