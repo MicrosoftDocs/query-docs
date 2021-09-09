@@ -53,15 +53,7 @@ A Boolean expression filter is an expression that evaluates to TRUE or FALSE. Th
 Beginning with the September 2021 release of Power BI Desktop, the following also apply:
 
 - They cannot use functions that scan or return a table unless they are passed as arguments to aggregation functions.
-- They *can* contain an aggregation function that returns a scalar value. For example,
-
-    ```dax
-    Total sales on the last selected date =
-    CALCULATE (
-        SUM ( Sales[Sales Amount] ),
-        'Sales'[Order Date] = MAX ( 'Sales'[Order Date] )
-    )
-    ```
+- They *can* contain an aggregation function that returns a scalar value.
 
 #### Table filter expression
 

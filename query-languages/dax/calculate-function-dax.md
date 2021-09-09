@@ -59,7 +59,7 @@ Beginning with the September 2021 release of Power BI Desktop, the following als
     Total sales on the last selected date =
     CALCULATE (
         SUM ( Sales[Sales Amount] ),
-        'Sales'[Order Date] = MAX ( 'Sales'[Order Date] )
+        'Sales'[OrderDateKey] = MAX ( 'Sales'[OrderDateKey] )
     )
     ```
 
