@@ -2,7 +2,7 @@
 description: "Learn more about: CALCULATETABLE"
 title: "CALCULATETABLE function (DAX) | Microsoft Docs"
 ms.service: powerbi
-ms.date: 07/06/2020
+ms.date: 09/09/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -49,8 +49,19 @@ A Boolean expression filter is an expression that evaluates to TRUE or FALSE. Th
 - They can reference only a single column.
 - They cannot reference measures.
 - They cannot use a nested CALCULATE function.
+
+Beginning with the September 2021 release of Power BI Desktop, the following also apply:
+
 - They cannot use functions that scan or return a table unless they are passed as arguments to aggregation functions.
-- They can contain an aggregation function that returns a scalar value.
+- They *can* contain an aggregation function that returns a scalar value. For example,
+
+    ```dax
+    Total sales on the last selected date =
+    CALCULATE (
+        SUM ( Sales[Sales Amount] ),
+        'Sales'[Order Date] = MAX ( 'Sales'[Order Date] )
+    )
+    ```
 
 #### Table filter expression
 
