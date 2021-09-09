@@ -54,7 +54,6 @@ Beginning with the September 2021 release of Power BI Desktop, the following als
 
 - They cannot use functions that scan or return a table unless they are passed as arguments to aggregation functions.
 - They *can* contain an aggregation function that returns a scalar value. For example,
-
     ```dax
     Total sales on the last selected date =
     CALCULATE (
