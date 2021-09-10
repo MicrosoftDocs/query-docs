@@ -2,7 +2,7 @@
 description: "Learn more about: New DAX functions"
 title: "New DAX functions | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 09/01/2021
+ms.date: 09/10/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -16,7 +16,7 @@ DAX is continuously being improved with new functions and functionality to suppo
 While functions and functionality are being updated all the time, only those updates that have a visible and functional change exposed to users are described in documentation. New functions and updates to existing functions within the past year are shown here.
 
 > [!IMPORTANT]
-> Not all functions are supported in all versions of Power BI Desktop, Analysis Services, and Power Pivot in Excel. New and updated functions are typically first introduced in Power BI Desktop.
+> Not all functions are supported in all versions of Power BI Desktop, Analysis Services, and Power Pivot in Excel. New and updated functions are typically first introduced in Power BI Desktop, and then later in Analysis Services, Power Pivot in Excel, and tools.
   
 ## New functions
 
@@ -28,6 +28,8 @@ While functions and functionality are being updated all the time, only those upd
 
 |Function  | Month  |Description|
 |---------|---------|---------|
+|[CALCULATE](calculate-function-dax.md)|September, 2021|Support for aggregation functions in boolean filter expressions.|
+|[CALCULATETABLE](calculatetable-function-dax.md)|September, 2021|Support for aggregation functions in boolean filter expressions.|
 |[FORMAT](format-function-dax.md)|September, 2021|Additional locale_name parameter that specifies the name of a locale to be used by format_string.|
 |[XIRR](xirr-function-dax.md)|September, 2021|Additional alternateResult parameter that specifies a result to be returned instead of an error if XIRR cannot determine a solution.|
 |[CROSSFILTER](crossfilter-function.md)|April, 2021|Additional options for the Direction parameter.|
