@@ -2,7 +2,7 @@
 description: "Learn more about: LOOKUPVALUE"
 title: "LOOKUPVALUE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 10/14/2020
+ms.date: 09/02/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -48,6 +48,8 @@ If multiple rows match the search values and in all cases **result_column** valu
 - If there is a relationship between the result and search tables, in most cases, using [RELATED](related-function-dax.md) function instead of LOOKUPVALUE is more efficient and provides better performance.
 
 - The **search_value** and **alternateResult** parameters are evaluated before the function iterates through the rows of the search table.
+
+- Avoid using ISERROR or IFERROR functions to capture an error returned by LOOKUPVALUE. If some inputs to the function will result in an error when a single output value cannot be determined, providing an alternateResult parameter is the most reliable and highest performing way to handle the error.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
