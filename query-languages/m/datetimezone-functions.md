@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DateTimeZone functions"
 title: "DateTimeZone functions | Microsoft Docs"
-ms.date: 4/7/2020
+ms.date: 9/13/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -33,5 +33,5 @@ These functions create and manipulate datetimezone values.
 |[DateTimeZone.UtcNow](datetimezone-utcnow.md)|Returns a DateTime value set to the current system date and time in the Utc timezone.|  
 |[DateTimeZone.ZoneHours](datetimezone-zonehours.md)|Returns a time zone hour value from a DateTime value.|  
 |[DateTimeZone.ZoneMinutes](datetimezone-zoneminutes.md)|Returns a time zone minute value from a DateTime value.|
+|[TimeZone.Current](timezone-current.md)|Returns the name of the current time zone for the application.|
 |[#datetimezone](sharpdatetimezone.md)|Creates a datetimezone value from year, month, day, hour, minute, second, offset-hours, and offset-minutes.|
-  

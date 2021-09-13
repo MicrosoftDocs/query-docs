@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Value functions"
 title: "Value functions | Microsoft Docs"
-ms.date: 4/7/2020
+ms.date: 9/13/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -48,8 +48,8 @@ These functions evaluate and perform operations on values.
   
 |Type|Description|  
 |--------|---------------|  
-|[Value.As](value-as.md)|Value.As is the function corresponding to the as operator in the formula language. The expression value as type asserts that the value of a value argument is compatible with type as per the is operator. If it is not compatible, an error is raised.|  
-|[Value.Is](value-is.md)|Value.Is is the function corresponding to the is operator in the formula language. The expression value is type returns true if the ascribed type of vlaue is compatible with type, and returns false if the ascribed type of value is incompatible with type.|  
+|[Value.As](value-as.md)|Returns the value if it is compatible with the specified type.|  
+|[Value.Is](value-is.md)|Determines whether a value is compatible with the specified type.|  
 |[Value.ReplaceType](value-replacetype.md)|A value may be ascribed a type using Value.ReplaceType. Value.ReplaceType either returns a new value with the type ascribed or raises an error if the new type is incompatible with the value’s native primitive type. In particular, the function raises an error when an attempt is made to ascribe an abstract type, such as any. When replacing a the type of a record, the new type must have the same number of fields, and the new fields replace the old fields by ordinal position, not by name. Similarly, when replacing the type of a table, the new type must have the same number of columns, and the new columns replace the old columns by ordinal position.|  
 
 Implementation | Description

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.WeekOfMonth"
 title: "Date.WeekOfMonth | Microsoft Docs"
-ms.date: 7/29/2019
+ms.date: 9/13/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -19,7 +19,9 @@ Date.WeekOfMonth(<b>dateTime</b> as any, optional <b>firstDayOfWeek</b> as nulla
 </pre>
   
 ## About  
-Returns a number from 1 to 5 indicating which week of the year month the date `dateTime` falls in. <ul> <li><code>dateTime</code>: A <code>datetime</code> value for which the week-of-the-month is determined.</li> </ul>
+Returns a number from 1 to 6 indicating which week of the month the date `dateTime` falls in. 
+
+* `dateTime`: A `datetime` value for which the week-of-the-month is determined.
 
 ## Example 1
 Determine which week of March the 15th falls on in 2011 (`#date(2011, 03, 15)`).

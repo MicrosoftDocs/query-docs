@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Accessing data functions"
 title: "Accessing data functions | Microsoft Docs"
-ms.date: 06/21/2021
+ms.date: 9/13/2021
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -73,6 +73,11 @@ These functions access data and return table values. Most of these functions ret
 |[Informix.Database](informix-database.md)|Returns a table of SQL tables and views available in an Informix database on server `server` in the database instance named `database`.|  
 |[Json.Document](json-document.md)|Returns the contents of a JSON document. The contents may be directly passed to the function as text, or it may be the binary value returned by a function like File.Contents.|  
 |[Json.FromValue](json-fromvalue.md)|Produces a JSON representation of a given value value with a text encoding specified by encoding.|
+|[LimitClauseKind.AnsiSql2008](limitclausekind-ansisql2008.md)|This SQL dialect supports an ANSI SQL-compatible LIMIT N ROWS specifier to limit the number of rows returned.|
+|[LimitClauseKind.Limit](limitclausekind-limit.md) |This SQL dialect supports a LIMIT specifier to limit the number of rows returned.|
+|[LimitClauseKind.LimitOffset](limitclausekind-limitoffset.md)|This SQL dialect supports LIMIT and OFFSET specifiers to limit the number of rows returned.|
+|[LimitClauseKind.None](limitclauseKind-none.md)|This SQL dialect does not support a limit clause.|
+|[LimitClauseKind.Top](limitclausekind-top.md)|This SQL dialect supports a TOP specifier to limit the number of rows returned.|
 |[MySQL.Database](mysql-database.md)|Returns a table with data relating to the tables in the specified MySQL Database.| 
 |[OData.Feed](odata-feed.md)|Returns a table of OData feeds offered by an OData serviceUri.| 
 |[ODataOmitValues.Nulls](odataomitvalues-nulls.md)|Allows the OData service to omit null values.| 

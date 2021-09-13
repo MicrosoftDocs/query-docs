@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Day.Friday"
 title: "Day.Friday | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 9/13/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -11,6 +11,7 @@ ms.author: bezhan
 
 ---
 # Day.Friday
-## About
-Returns 6, the number representing Friday.
 
+## About
+
+Returns 5, the number representing Friday.

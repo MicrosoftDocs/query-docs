@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DateTime.ToText"
 title: "DateTime.ToText | Microsoft Docs"
-ms.date: 5/13/2020
+ms.date: 9/13/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,15 +15,14 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-DateTime.ToText(<b>dateTime</b> as nullable datetime, optional <b>format</b> as nullable text, optional <b>culture</b> as nullable text) as nullable text
+DateTime.ToText(<b>dateTime</b> as nullable datetime, optional <b>options</b> as any, optional <b>culture</b> as nullable text) as nullable text
 </pre>
 
 ## About
-Returns a textual representation of `dateTime`. An optional `format` may be provided to customize the formatting of the text. An optional `culture` may also be provided (for example, "en-US").
+Returns a textual representation of `dateTime`. An optional `options` may be provided to customize the formatting of the text. An optional `culture` may also be provided (for example, "en-US").
 
 ## Example 1
 Get a textual representation of #datetime(2011, 12, 31, 11, 56, 2).
-
 
 ```powerquery-m
 DateTime.ToText(#datetime(2010, 12, 31, 11, 56, 2))
@@ -45,5 +44,3 @@ DateTime.ToText(#datetime(2010, 12, 31, 11, 56, 2), "yyyy/MM/ddThh:mm:ss")
 ```powerquery-m
 "2010/12/31T11:56:02"
 ```
-
-

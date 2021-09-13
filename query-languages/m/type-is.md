@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Type.Is"
 title: "Type.Is | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 9/13/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -19,5 +19,29 @@ Type.Is(<b>type1</b> as type, <b>type2</b> as type) as logical
 </pre>
 
 ## About
-Type.Is
 
+Determines if a value of `type1` is always compatible with `type2`.
+
+## Example 1
+
+Determine if a value of type number can always also be treated as type any.
+
+```powerquery-m
+Type.Is(type number, type any)
+```
+
+`
+true
+`
+
+## Example 2
+
+Determine if a value of type any can always also be treated as type number.
+
+```powerquery-m
+Type.Is(type any, type number)
+```
+
+`
+false
+`

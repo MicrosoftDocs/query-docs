@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Value.As"
 title: "Value.As | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 9/13/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -16,8 +16,32 @@ ms.author: bezhan
 
 <pre>
 Value.As(<b>value</b> as any, <b>type</b> as type) as any
-</pre> 
+</pre>
   
-## About  
-Value.As
-  
+## About
+
+Returns the value if it's compatible with the specified type. This is equivalent to the "as" operator in M, with the exception that it can accept identifier type references such as Number.Type.
+
+## Example 1
+
+Cast a number to a number.
+
+```powerquery-m
+Value.As(123, Number.Type)
+```
+
+`
+123
+`
+
+## Example 2
+
+Attempt to cast a text value to a number.
+
+```powerquery-m
+Value.As("abc", type number)
+```
+
+`
+[Expression.Error] We cannot convert the value "abc" to type Number.
+`  

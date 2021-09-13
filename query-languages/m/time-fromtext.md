@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Time.FromText"
 title: "Time.FromText | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 9/13/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,11 +15,15 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-Time.FromText(<b>text</b> as nullable text, optional <b>culture</b> as nullable text) as nullable time
+Time.FromText(<b>text</b> as nullable text, optional <b>options</b> as any) as nullable time
 </pre>
   
-## About  
-Creates a `time` value from a textual representation, `text`, following ISO 8601 format standard. An optional `culture` may also be provided (for example, "en-US"). <ul> <li> <code>Time.FromText("12:34:12")</code> // Time, hh:mm:ss </li> <li> <code>Time.FromText("12:34:12.1254425")</code> // hh:mm:ss.nnnnnnn </li> </ul>
+## About
+
+Creates a `time` value from a textual representation, `text`, following ISO 8601 format standard. An optional `options` may also be provided (for example, "en-US").
+
+* `Time.FromText("12:34:12")` // Time, hh:mm:ss
+* `Time.FromText("12:34:12.1254425")` // hh:mm:ss.nnnnnnn
 
 ## Example 1
 Convert `"10:12:31am"` into a Time value.
