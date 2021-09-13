@@ -125,7 +125,7 @@ The following table summarizes the M operators, listing the operator categories 
         <td>Greater than or equal</td>
     </tr>
     <tr>
-        <td rospan="2" valign="top">Equality</td>
+        <td rowspan="2" valign="top">Equality</td>
         <td><em>x</em> = <em>y</em></td>
         <td>Equal</td>
     </tr>
