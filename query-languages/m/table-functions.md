@@ -73,7 +73,8 @@ These functions create and manipulate table values.
 |[Table.LastN](table-lastn.md)|Returns the last row(s) from a table, depending on the countOrCondition parameter.|  
 |[Table.MatchesAllRows](table-matchesallrows.md)|Returns true if all of the rows in a table meet a condition.|  
 |[Table.MatchesAnyRows](table-matchesanyrows.md)|Returns true if any of the rows in a table meet a condition.|  
-|[Table.Partition](table-partition.md)|Partitions the table into a list of groups number of tables, based on the value of the column of each row and a hash function. The hash function is applied to the value of the column of a row to obtain a hash value for the row. The hash value modulo groups determines in which of the returned tables the row will be placed.|  
+|[Table.Partition](table-partition.md)|Partitions the table into a list of groups number of tables, based on the value of the column of each row and a hash function. The hash function is applied to the value of the column of a row to obtain a hash value for the row. The hash value modulo groups determines in which of the returned tables the row will be placed.|
+|[Table.PartitionValues](table-partitionvalues.md)|Returns information about how a table is partitioned.|
 |[Table.Range](table-range.md)|Returns the specified number of rows from a table starting at an offset.|  
 |[Table.RemoveFirstN](table-removefirstn.md)|Returns a table with the specified number of rows removed from the table starting at the first row. The number of rows removed depends on the optional countOrCondition parameter.|
 |[Table.RemoveLastN](table-removelastn.md)|Returns a table with the specified number of rows removed from the table starting at the last row. The number of rows removed depends on the optional countOrCondition parameter.| 
