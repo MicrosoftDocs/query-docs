@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.Sort"
 title: "List.Sort | Microsoft Docs"
-ms.date: 7/31/2019
+ms.date: 9/13/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,8 +18,20 @@ ms.author: bezhan
 List.Sort(<b>list</b> as list, optional <b>comparisonCriteria</b> as any) as list  
 </pre>
   
-## About  
-Sorts a list of data, `list`, according to the optional criteria specified. An optional parameter, `comparisonCriteria`, can be specified as the comparison criterion. This can take the following values: <ul> <li> To control the order, the comparison criterion can be an Order enum value. (<code>Order.Descending</code>, <code>Order.Ascending</code>). </li> <li> To compute a key to be used for sorting, a function of 1 argument can be used. </li> <li> To both select a key and control order, comparison criterion can be a list containing the key and order (<code>{each 1 / _, Order.Descending}</code>). </li> <li> To completely control the comparison, a function of 2 arguments can be used that returns -1, 0, or 1 given the relationship between the left and right inputs. Value.Compare is a method that can be used to delegate this logic. </li> </ul>
+## About
+
+Sorts a list of data, `list`, according to the optional criteria specified. An optional parameter, `comparisonCriteria`, can be specified as the comparison criterion. This can take the following values:
+
+* To control the order, the comparison criterion can be an Order enum value. (`Order.Descending`, `Order.Ascending`).
+* To compute a key to be used for sorting, a function of 1 argument can be used.
+* To both select a key and control order, comparison criterion can be a list containing the key and order (`{each 1 / _, Order.Descending}`).
+* To completely control the comparison, a function of 2 arguments can be used. This function will be passed two items from the list (any two items, in any order). The function should return one of the following values:
+
+  * `-1`: The first item is less than the second item.
+  * `0`: The items are equal.
+  * `1`: The first item is greater than the second item.
+
+  Value.Compare is a method that can be used to delegate this logic.
 
 ## Example 1
 Sort the list {2, 3, 1}.

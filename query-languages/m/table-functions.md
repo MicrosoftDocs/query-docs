@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table functions"
 title: "Table functions | Microsoft Docs"
-ms.date: 8/21/2020
+ms.date: 9/13/2021
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -73,7 +73,8 @@ These functions create and manipulate table values.
 |[Table.LastN](table-lastn.md)|Returns the last row(s) from a table, depending on the countOrCondition parameter.|  
 |[Table.MatchesAllRows](table-matchesallrows.md)|Returns true if all of the rows in a table meet a condition.|  
 |[Table.MatchesAnyRows](table-matchesanyrows.md)|Returns true if any of the rows in a table meet a condition.|  
-|[Table.Partition](table-partition.md)|Partitions the table into a list of groups number of tables, based on the value of the column of each row and a hash function. The hash function is applied to the value of the column of a row to obtain a hash value for the row. The hash value modulo groups determines in which of the returned tables the row will be placed.|  
+|[Table.Partition](table-partition.md)|Partitions the table into a list of groups number of tables, based on the value of the column of each row and a hash function. The hash function is applied to the value of the column of a row to obtain a hash value for the row. The hash value modulo groups determines in which of the returned tables the row will be placed.|
+|[Table.PartitionValues](table-partitionvalues.md)|Returns information about how a table is partitioned.|
 |[Table.Range](table-range.md)|Returns the specified number of rows from a table starting at an offset.|  
 |[Table.RemoveFirstN](table-removefirstn.md)|Returns a table with the specified number of rows removed from the table starting at the first row. The number of rows removed depends on the optional countOrCondition parameter.|
 |[Table.RemoveLastN](table-removelastn.md)|Returns a table with the specified number of rows removed from the table starting at the last row. The number of rows removed depends on the optional countOrCondition parameter.| 
@@ -114,27 +115,27 @@ These functions create and manipulate table values.
 
 Parameter values | Description
 ---------------- | -----------
-[JoinKind.Inner](joinkind-inner.md) | A possible value for the optional <code>JoinKind</code> parameter in <code>Table.Join</code>. The table resulting from an inner join contains a row for each pair of rows from the specified tables that were determined to match based on the specified key columns.
-[JoinKind.LeftOuter](joinkind-leftouter.md) | A possible value for the optional <code>JoinKind</code> parameter in <code>Table.Join</code>. A left outer join ensures that all rows of the first table appear in the result.
-[JoinKind.RightOuter](joinkind-rightouter.md) | A possible value for the optional <code>JoinKind</code> parameter in <code>Table.Join</code>. A right outer join ensures that all rows of the second table appear in the result.
-[JoinKind.FullOuter](joinkind-fullouter.md) | A possible value for the optional <code>JoinKind</code> parameter in <code>Table.Join</code>. A full outer join ensures that all rows of both tables appear in the result. Rows that did not have a match in the other table are joined with a default row containing null values for all of its columns.
-[JoinKind.LeftAnti](joinkind-leftanti.md) | A possible value for the optional <code>JoinKind</code> parameter in <code>Table.Join</code>. A left anti join returns that all rows from the first table which do not have a match in the second table.
-[JoinKind.RightAnti](joinkind-rightanti.md) | A possible value for the optional <code>JoinKind</code> parameter in <code>Table.Join</code>. A right anti join returns that all rows from the second table which do not have a match in the first table.
-[MissingField.Error](missingfield-error.md) | An optional parameter in record and table functions indicating that missing fields should result in an error. (This is the default parameter value.)
-[MissingField.Ignore](missingfield-ignore.md) | An optional parameter in record and table functions indicating that missing fields should be ignored.
+[JoinKind.Inner](joinkind-inner.md) | A possible value for the optional `JoinKind` parameter in `Table.Join`. The table resulting from an inner join contains a row for each pair of rows from the specified tables that were determined to match based on the specified key columns.|
+[JoinKind.LeftOuter](joinkind-leftouter.md) | A possible value for the optional `JoinKind` parameter in `Table.Join`. A left outer join ensures that all rows of the first table appear in the result.|
+[JoinKind.RightOuter](joinkind-rightouter.md) | A possible value for the optional `JoinKind` parameter in `Table.Join`. A right outer join ensures that all rows of the second table appear in the result.|
+[JoinKind.FullOuter](joinkind-fullouter.md) | A possible value for the optional `JoinKind` parameter in `Table.Join`. A full outer join ensures that all rows of both tables appear in the result. Rows that did not have a match in the other table are joined with a default row containing null values for all of its columns.|
+[JoinKind.LeftAnti](joinkind-leftanti.md) | A possible value for the optional `JoinKind` parameter in `Table.Join`. A left anti join returns that all rows from the first table which do not have a match in the second table.|
+[JoinKind.RightAnti](joinkind-rightanti.md) | A possible value for the optional `JoinKind` parameter in `Table.Join`. A right anti join returns that all rows from the second table which do not have a match in the first table.|
+[MissingField.Error](missingfield-error.md) | An optional parameter in record and table functions indicating that missing fields should result in an error. (This is the default parameter value.)|
+[MissingField.Ignore](missingfield-ignore.md) | An optional parameter in record and table functions indicating that missing fields should be ignored.|
 [MissingField.UseNull](missingfield-usenull.md) | An optional parameter in record and table functions indicating that missing fields should be included as null values.
-[GroupKind.Global](groupkind-global.md) | GroupKind.Global
-[GroupKind.Local](groupkind-local.md) | GroupKind.Local
-[ExtraValues.List](extravalues-list.md) | If the splitter function returns more columns than the table expects, they should be collected into a list.
-[ExtraValues.Ignore](extravalues-ignore.md) | If the splitter function returns more columns than the table expects, they should be ignored.
-[ExtraValues.Error](extravalues-error.md) | If the splitter function returns more columns than the table expects, an error should be raised.
-[JoinAlgorithm.Dynamic](joinalgorithm-dynamic.md) | JoinAlgorithm.Dynamic
-[JoinAlgorithm.PairwiseHash](joinalgorithm-pairwisehash.md) | JoinAlgorithm.PairwiseHash
-[JoinAlgorithm.SortMerge](joinalgorithm-sortmerge.md) | JoinAlgorithm.SortMerge
-[JoinAlgorithm.LeftHash](joinalgorithm-lefthash.md) | JoinAlgorithm.LeftHash
-[JoinAlgorithm.RightHash](joinalgorithm-righthash.md) | JoinAlgorithm.RightHash
-[JoinAlgorithm.LeftIndex](joinalgorithm-leftindex.md) | JoinAlgorithm.LeftIndex
-[JoinAlgorithm.RightIndex](joinalgorithm-rightindex.md) | JoinAlgorithm.RightIndex
+[GroupKind.Global](groupkind-global.md) | A global group is formed from all rows in an input table with the same key value.|
+[GroupKind.Local](groupkind-local.md) | A local group is formed from a consecutive sequence of rows from an input table with the same key value.|
+[ExtraValues.List](extravalues-list.md) | If the splitter function returns more columns than the table expects, they should be collected into a list.|
+[ExtraValues.Ignore](extravalues-ignore.md) | If the splitter function returns more columns than the table expects, they should be ignored.|
+[ExtraValues.Error](extravalues-error.md) | If the splitter function returns more columns than the table expects, an error should be raised.|
+[JoinAlgorithm.Dynamic](joinalgorithm-dynamic.md) | Automatically chooses a join algorithm based on inspecting the initial rows and metadata of both tables.|
+[JoinAlgorithm.PairwiseHash](joinalgorithm-pairwisehash.md) | Buffers the rows of both the left and right tables until one of the tables is completely buffered, and then performs a LeftHash or RightHash, depending on which table was buffered completely. This algorithm is recommended only for small tables.|
+[JoinAlgorithm.SortMerge](joinalgorithm-sortmerge.md) | Performs a streaming merge based on the assumption that both tables are sorted by their join keys. While efficient, it will return incorrect results if the tables aren't sorted as expected.|
+[JoinAlgorithm.LeftHash](joinalgorithm-lefthash.md) | Buffers the left rows into a lookup table and streams the right rows. For each right row, the matching left rows are found via the buffered lookup table. This algorithm is recommended when the left table is small and most of the rows from the right table are expected to match a left row.|
+[JoinAlgorithm.RightHash](joinalgorithm-righthash.md) | Buffers the right rows into a lookup table and streams the left rows. For each left row, the matching right rows are found via the buffered lookup table. This algorithm is recommended when the right table is small and most of the rows from the left table are expected to match a right row.|
+[JoinAlgorithm.LeftIndex](joinalgorithm-leftindex.md) | In batches, uses the keys from the left table to do predicate-based queries against the right table. This algorithm is recommended when the right table is large, supports folding of Table.SelectRows, and contains few rows that are expected to match a left row.|
+[JoinAlgorithm.RightIndex](joinalgorithm-rightindex.md) | In batches, uses the keys from the right table to do predicate-based queries against the left table. This algorithm is recommended when the left table is large, supports folding of Table.SelectRows, and contains few rows that are expected to match a right row.|
 [JoinSide.Left](joinside-left.md) | Specifies the left table of a join.
 [JoinSide.Right](joinside-right.md) | Specifies the right table of a join.
   
@@ -257,7 +258,7 @@ Orders = Table.FromRecords({
 |[Table.ExpandTableColumn](table-expandtablecolumn.md)|Expands a column of records or a column of tables into multiple columns in the containing table.|  
 |[Table.FillDown](table-filldown.md)|Replaces null values in the specified column or columns of the table with the most recent non-null value in the column.|  
 |[Table.FillUp](table-fillup.md)|Returns a table from the table specified where the value of the next cell is propagated to the null values cells above in the column specified.|  
-|[Table.FilterWithDataTable](table-filterwithdatatable.md)||
+|[Table.FilterWithDataTable](table-filterwithdatatable.md)|This function is intended for internal use only.|
 |[Table.Group](table-group.md)|Groups table rows by the values of key columns for each row.|  
 |[Table.Join](table-join.md)|Joins the rows of table1 with the rows of table2 based on the equality of the values of the key columns selected by table1, key1 and table2, key2.|  
 |[Table.Keys](table-keys.md)|Returns a list of key column names from a table.|

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Order.Descending"
 title: "Order.Descending | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 9/13/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -11,6 +11,7 @@ ms.author: bezhan
 
 ---
 # Order.Descending
-## About
-Function type which sorts the list in descending order.
 
+## About
+
+Sorts the values in descending order.

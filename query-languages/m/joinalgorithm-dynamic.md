@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: JoinAlgorithm.Dynamic"
 title: "JoinAlgorithm.Dynamic | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 9/13/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -11,6 +11,7 @@ ms.author: bezhan
 
 ---
 # JoinAlgorithm.Dynamic
-## About
-JoinAlgorithm.Dynamic
 
+## About
+
+Automatically chooses a join algorithm based on inspecting the initial rows and metadata of both tables.

@@ -169,6 +169,16 @@
               href: json-document.md
             - name: Json.FromValue
               href: json-fromvalue.md
+            - name: LimitClauseKind.AnsiSql2008
+              href: limitclausekind-ansisql2008.md
+            - name: LimitClauseKind.Limit
+              href: limitclausekind-limit.md
+            - name: LimitClauseKind.LimitOffset
+              href: limitclausekind-limitoffset.md
+            - name: LimitClauseKind.None
+              href: limitclauseKind-none.md
+            - name: LimitClauseKind.Top
+              href: limitclausekind-top.md
             - name: MySQL.Database
               href: mysql-database.md
             - name: OData.Feed
@@ -627,6 +637,8 @@
               href: datetimezone-zonehours.md
             - name: DateTimeZone.ZoneMinutes
               href: datetimezone-zoneminutes.md
+            - name: TimeZone.Current
+              href: timezone-current.md
             - name: '#datetimezone'
               href: sharpdatetimezone.md
         - name: Duration functions

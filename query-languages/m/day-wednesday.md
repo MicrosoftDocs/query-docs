@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Day.Wednesday"
 title: "Day.Wednesday | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 9/13/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -11,6 +11,7 @@ ms.author: bezhan
 
 ---
 # Day.Wednesday
-## About
-Returns 4, the number representing Wednesday.
 
+## About
+
+Returns 3, the number representing Wednesday.

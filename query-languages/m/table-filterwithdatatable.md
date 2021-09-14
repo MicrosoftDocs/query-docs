@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.FilterWithDataTable"
 title: "Table.FilterWithDataTable | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 9/13/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -19,5 +19,5 @@ Table.FilterWithDataTable(**table** as table, **dataTableIdentifier** as text) a
 </pre>
 
 ## About
-Table.FilterWithDataTable
 
+This function is intended for internal use only.
