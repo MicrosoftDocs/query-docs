@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: GroupKind.Local"
 title: "GroupKind.Local | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 9/13/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -19,4 +19,5 @@ GroupKind.Local
 </pre>
 
 ## About
-GroupKind.Local
+
+A local group is formed from a consecutive sequence of rows from an input table with the same key value.

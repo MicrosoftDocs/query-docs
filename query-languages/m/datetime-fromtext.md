@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DateTime.FromText"
 title: "DateTime.FromText | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 9/13/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,11 +15,13 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-DateTime.FromText(<b>text</b> as nullable text, optional <b>culture</b> as nullable text) as nullable datetime
+DateTime.FromText(<b>text</b> as nullable text, optional <b>options</b> as any) as nullable datetime
 </pre>
   
 ## About  
-Creates a `datetime` value from a textual representation, `text`, following ISO 8601 format standard. An optional `culture` may also be provided (for example, "en-US"). <ul> <li> <code>DateTime.FromText("2010-12-31T01:30:00") </code> // yyyy-MM-ddThh:mm:ss </li> </ul>
+Creates a `datetime` value from a textual representation, `text`, following ISO 8601 format standard. An optional `options` may also be provided (for example, "en-US").
+
+* `DateTime.FromText("2010-12-31T01:30:00") ` // yyyy-MM-ddThh:mm:ss
 
 ## Example 1
 Convert `"2010-12-31T01:30:25"` into a datetime value.
@@ -65,4 +67,3 @@ DateTime.FromText("20101231T01:30:25.121212")
 ```
 
 `#datetime(2010, 12, 31, 1, 30, 25.121212)`
-

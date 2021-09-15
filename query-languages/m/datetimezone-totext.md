@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DateTimeZone.ToText"
 title: "DateTimeZone.ToText | Microsoft Docs"
-ms.date: 5/13/2020
+ms.date: 9/13/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,11 +15,11 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-DateTimeZone.ToText(<b>dateTimeZone</b> as nullable datetimezone, optional <b>format</b> as nullable text, optional <b>culture</b> as nullable text) as nullable text
+DateTimeZone.ToText(<b>dateTimeZone</b> as nullable datetimezone, optional <b>options</b> as any, optional <b>culture</b> as nullable text) as nullable text
 </pre>
   
 ## About  
-Returns a textual representation of `dateTimeZone`. An optional `format` may be provided to customize the formatting of the text. An optional `culture` may also be provided (for example, "en-US").
+Returns a textual representation of `dateTimeZone`. An optional `options` may be provided to customize the formatting of the text. An optional `culture` may also be provided (for example, "en-US").
 
 ## Example 1
 Get a textual representation of #datetimezone(2011, 12, 31, 11, 56, 2, 8, 0).

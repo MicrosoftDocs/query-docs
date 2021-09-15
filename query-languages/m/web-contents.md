@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Web.Contents"
 title: "Web.Contents | Microsoft Docs"
-ms.date: 11/23/2020
+ms.date: 9/13/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,7 +18,8 @@ ms.author: bezhan
 Web.Contents(<b>url</b> as text, optional <b>options</b> as nullable record) as binary
 </pre>
   
-## About  
+## About
+
 Returns the contents downloaded from `url` as binary. An optional record parameter, `options`, may be provided to specify additional properties. The record can contain the following fields:
 * `Query`: Programmatically add query parameters to the URL without having to worry about escaping.
 * `ApiKeyName`: If the target site has a notion of an API key, this parameter can be used to specify the name (not the value) of the key parameter that must be used in the URL. The actual key value is provided in the credential.
@@ -32,4 +33,48 @@ Returns the contents downloaded from `url` as binary. An optional record paramet
 
 The headers of the HTTP response are available as metadata on the binary result. Outside of a custom data connector context, only the Content-Type header is available. 
 
+## Example 1
 
+Retrieve the contents of `"https://bing.com/search?q=Power+Query"` using the `RelativePath` and `Query` options. These options can be used to dynamically query a static base URL.
+
+```powerquery-m
+let
+    searchText = "Power Query"
+in
+    Web.Contents(
+        "https://www.bing.com",
+        [
+            RelativePath = "search",
+            Query = [q = searchText]
+        ]
+    )
+```
+
+`
+binary
+`
+
+## Example 2
+
+Perform a POST against a URL, passing a binary JSON payload and parsing the response as JSON.
+
+```powerquery-m
+let
+    url = ...,
+    headers = [#"Content-Type" = "application/json"],
+    postData = Json.FromValue([x = 235.7, y = 41.53]),
+    response = Web.Contents(
+        url,
+        [
+            Headers = headers,
+            Content = postData
+        ]
+    ),
+    jsonResponse = Json.Document(response)
+in
+    jsonResponse
+```
+
+`
+table
+`

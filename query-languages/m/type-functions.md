@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Type functions"
 title: "Type functions | Microsoft Docs"
-ms.date: 4/7/2020
+ms.date: 9/13/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,7 +26,7 @@ These functions create and manipulate type values.
 |[Type.FunctionParameters](type-functionparameters.md)|Returns a record with field values set to the name of the parameters of a function type, and their values set to their corresponding types.|  
 |[Type.FunctionRequiredParameters](type-functionrequiredparameters.md)|Returns a number indicating the minimum number of parameters required to invoke the a type of function.|  
 |[Type.FunctionReturn](type-functionreturn.md)|Returns a type returned by a function type.|  
-|[Type.Is](type-is.md) | Type.Is |
+|[Type.Is](type-is.md) |Determines if a value of the first type is always compatible with the second type.|
 |[Type.IsNullable](type-isnullable.md)|Returns true if a type is a nullable type; otherwise, false.|  
 |[Type.IsOpenRecord](type-isopenrecord.md)|Returns whether a record type is open.|  
 |[Type.ListItem](type-listitem.md)|Returns an item type from a list type.|  

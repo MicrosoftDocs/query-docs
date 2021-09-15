@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Day.Sunday"
 title: "Day.Sunday | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 9/13/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -11,6 +11,7 @@ ms.author: bezhan
 
 ---
 # Day.Sunday
-## About
-Returns 1, the number representing Sunday.
 
+## About
+
+Returns 0, the number representing Sunday.

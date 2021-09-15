@@ -26,5 +26,5 @@ These functions create and manipulate time values.
 |[Time.Second](time-second.md)|Returns a second value from a DateTime value|  
 |[Time.StartOfHour](time-startofhour.md)|Returns the first value of the hour from a time value.|  
 |[Time.ToRecord](time-torecord.md)|Returns a record containing parts of a Date value.|  
-|[Time.ToText](time-totext.md)|Returns a text value from a Time value.|  
-|[#time](sharptime.md)|Creates a time value from hour, minute, and second.|    
+|[Time.ToText](time-totext.md)|Returns a text value from a Time value.|
+|[#time](sharptime.md)|Creates a time value from hour, minute, and second.|

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Excel.Workbook"
 title: "Excel.Workbook | Microsoft Docs"
-ms.date: 11/23/2020
+ms.date: 9/13/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,7 +18,8 @@ ms.author: bezhan
 Excel.Workbook(<b>workbook</b> as binary, optional <b>useHeaders</b> as any, optional <b>delayTypes</b> as nullable logical) as table
 </pre>
 
-## About  
+## About
+
 Returns the contents of the Excel workbook.  
 
 * `useHeaders` can be null, a logical (true/false) value indicating whether the first row of each returned table should be treated as a header, or an options record. (See below for more details on the options record.) Default: false.
@@ -29,3 +30,20 @@ If a record is specified for `useHeaders` (and `delayTypes` is null), the follow
 * `UseHeaders`: Can be null or a logical (true/false) value indicating whether the first row of each returned table should be treated as a header. Default: false.
 * `DelayTypes`: Can be null or a logical (true/false) value indicating whether the columns of each returned table should be left untyped. Default: false.
 * `InferSheetDimensions`: Can be null or a logical (true/false) value indicating whether the area of a worksheet that contains data should be inferred by reading the worksheet itself, rather than by reading the dimensions metadata from the file. This can be useful in cases where the dimensions metadata is incorrect. Note that this option is only supported for Open XML Excel files, not for legacy Excel files. Default: false.
+
+## Example 1
+
+Return the contents of Sheet1 from an Excel workbook.
+
+```powerquery-m
+Excel.Workbook(File.Contents("C:\Book1.xlsx"), null, true){[Item="Sheet1"]}[Data]
+```
+
+```powerquery-m
+Table.FromRecords({
+    [Column1 = "ID", Column2 = "Name", Column3 = "Phone"],
+    [Column1 = 1, Column2 = "Bob", Column3 = "123-4567"],
+    [Column1 = 3, Column2 = "Pam", Column3 = "543-7890"],
+    [Column1 = 2, Column2 = "Jim", Column3 = "987-6543"]
+})
+```

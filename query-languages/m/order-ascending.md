@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Order.Ascending"
 title: "Order.Ascending | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 9/13/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -11,6 +11,7 @@ ms.author: bezhan
 
 ---
 # Order.Ascending
-## About
-Function type which sorts the list in ascending order.
 
+## About
+
+Sorts the values in ascending order.

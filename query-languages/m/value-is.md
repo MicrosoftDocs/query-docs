@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Value.Is"
 title: "Value.Is | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 9/13/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -16,7 +16,20 @@ ms.author: bezhan
 
 <pre>
 Value.Is(<b>value</b> as any, <b>type</b> as type) as logical
-</pre> 
+</pre>
   
-## About  
-Value.Is
+## About
+
+Determines whether a value is compatible with the specified type. This is equivalent to the "is" operator in M, with the exception that it can accept identifier type references such as Number.Type.
+
+## Example 1
+
+Compare two ways of determining if a number is compatible with type number.
+
+```powerquery-m
+Value.Is(123, Number.Type) = (123 is number)
+```
+
+`
+true
+`
