@@ -2,7 +2,7 @@
 description: "Learn more about: Logical functions"
 title: "Logical functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 02/22/2021
+ms.date: 10/05/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -17,7 +17,12 @@ Logical functions act upon an expression to return information about the values 
 
 |Function  |Description  |
 |---------|---------|
-|[AND](and-function-dax.md)      | Checks whether both arguments are TRUE, and returns TRUE if both arguments are TRUE.        |
+|[AND](and-function-dax.md)      | Checks whether both arguments are TRUE, and returns TRUE if both arguments are TRUE.      |
+|[BITAND](bitand-function-dax.md)      | Returns a bitwise 'AND' of two numbers.      |
+|[BITLSHIFT](bitand-function-dax.md)      | Returns a number shifted left by the specified number of bits.       |
+|[BITOR](bitor-function-dax.md)      | Returns a bitwise 'OR' of two numbers.       |
+|[BITRSHIFT](bitrshift-function-dax.md)      | Returns a number shifted right by the specified number of bits.         |
+|[BITXOR](bitxor-function-dax.md)      | Returns a bitwise 'XOR' of two numbers.        |
 |[COALESCE](coalesce-function-dax.md)|Returns the first expression that does not evaluate to BLANK.|
 |[FALSE](false-function-dax.md)      | Returns the logical value FALSE.         |
 |[IF](if-function-dax.md)      | Checks a condition, and returns one value when TRUE, otherwise it returns a second value.        |

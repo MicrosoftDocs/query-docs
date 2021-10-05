@@ -343,6 +343,16 @@
               href: logical-functions-dax.md
             - name: AND
               href: and-function-dax.md
+            - name: BITAND
+              href: bitand-function-dax.md
+            - name: BITLSHIFT
+              href: bitlshift-function-dax.md
+            - name: BITOR
+              href: bitor-function-dax.md
+            - name: BITRSHIFT
+              href: bitrshift-function-dax.md
+            - name: BITXOR
+              href: bitxor-function-dax.md
             - name: COALESCE
               href: coalesce-function-dax.md
             - name: "FALSE"
