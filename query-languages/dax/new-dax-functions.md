@@ -23,7 +23,7 @@ While functions and functionality are being updated all the time, only those upd
 |Function  |Month  | Description |
 |---------|---------|---------|
 |[BITAND](bitand-function-dax.md)      | November, 2021 | Returns a bitwise 'AND' of two numbers.      |
-|[BITLSHIFT](bitand-function-dax.md)      | November, 2021 | Returns a number shifted left by the specified number of bits.       |
+|[BITLSHIFT](bitlshift-function-dax.md)      | November, 2021 | Returns a number shifted left by the specified number of bits.       |
 |[BITOR](bitor-function-dax.md)      | November, 2021 | Returns a bitwise 'OR' of two numbers.       |
 |[BITRSHIFT](bitrshift-function-dax.md)      | November, 2021| Returns a number shifted right by the specified number of bits.         |
 |[BITXOR](bitxor-function-dax.md)      | November, 2021 | Returns a bitwise 'XOR' of two numbers.        |

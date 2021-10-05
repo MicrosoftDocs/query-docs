@@ -19,7 +19,7 @@ Logical functions act upon an expression to return information about the values 
 |---------|---------|
 |[AND](and-function-dax.md)      | Checks whether both arguments are TRUE, and returns TRUE if both arguments are TRUE.      |
 |[BITAND](bitand-function-dax.md)      | Returns a bitwise 'AND' of two numbers.      |
-|[BITLSHIFT](bitand-function-dax.md)      | Returns a number shifted left by the specified number of bits.       |
+|[BITLSHIFT](bitlshift-function-dax.md)      | Returns a number shifted left by the specified number of bits.       |
 |[BITOR](bitor-function-dax.md)      | Returns a bitwise 'OR' of two numbers.       |
 |[BITRSHIFT](bitrshift-function-dax.md)      | Returns a number shifted right by the specified number of bits.         |
 |[BITXOR](bitxor-function-dax.md)      | Returns a bitwise 'XOR' of two numbers.        |
