@@ -12,7 +12,7 @@ recommendations: false
 ---
 # BITXOR
 
-Returns a bitwise 'XOR' of two numbers.
+Returns a bitwise XOR of two numbers.
   
 ## Syntax  
   
@@ -28,7 +28,7 @@ BITXOR(<number>, <number>)
   
 ## Return value
 
-A bitwise 'XOR' of two numbers.
+A bitwise XOR of two numbers.
   
 ## Remarks
 

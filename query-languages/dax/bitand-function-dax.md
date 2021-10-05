@@ -12,7 +12,7 @@ recommendations: false
 ---
 # BITAND
 
-Returns a bitwise 'AND' of two numbers.
+Returns a bitwise AND of two numbers.
   
 ## Syntax  
   
@@ -28,7 +28,7 @@ BITAND(<number>, <number>)
   
 ## Return value
 
-A bitwise 'AND' of two numbers.
+A bitwise AND of two numbers.
   
 ## Remarks
 

@@ -12,7 +12,7 @@ recommendations: false
 ---
 # BITOR
 
-Returns a bitwise 'OR' of two numbers.
+Returns a bitwise OR of two numbers.
   
 ## Syntax  
   
@@ -28,7 +28,7 @@ BITOR(<number>, <number>)
   
 ## Return value
 
-A bitwise 'OR' of two numbers.
+A bitwise OR of two numbers.
   
 ## Remarks
 
