@@ -24,9 +24,9 @@ TIME(hour, minute, second)
   
 |Term|Definition|  
 |--------|--------------|  
-|hour|A number from 0 to 32767 representing the hour.<br /><br />Any value greater than 23 will be divided by 24 and the remainder will be treated as the hour value.|  
-|minute|A number from 0 to 32767 representing the minute.<br /><br />Any value greater than 59 will be converted to hours and minutes.|  
-|second|A number from 0 to 32767 representing the second.<br /><br />Any value greater than 59 will be converted to hours, minutes, and seconds.|  
+|hour|**Import mode:** A number from 0 to 32767 representing the hour. <br/> Any value greater than 23 will be divided by 24 and the remainder will be treated as the hour value, represented as a fraction of a day. <br /> For example, TIME(27,0,0) = TIME(3,0,0) = 3:00:00 AM <br /><br /> **DirectQuery mode:** A number from 0 to 23 representing the hour.|  
+|minute|**Import mode:** A number from 0 to 32767 representing the minute. <br /> Any value greater than 59 minutes will be converted to hours and minutes. <br /> Any value greater than 1440 (24 hours) does not alter the date portion - instead, it will be divided by 1440 and the remainder will be treated as the minute value, represented as a fraction of a day. <br /> For example, TIME(0,2190,0) = TIME(0,750,0) = TIME(12,30,0) = 12:30:00 PM <br /><br /> **DirectQuery mode:** A number from 0 to 59 representing the minute.|  
+|second|**Import mode:** A number from 0 to 32767 representing the second. <br /> Any value greater than 59 will be converted to hours, minutes, and seconds. <br /> For example, TIME(0,0,2000) = TIME(0,33,20) = 12:33:20 AM <br /><br /> **DirectQuery mode:** A number from 0 to 59 representing the second.| 
   
 ## Return value
 
@@ -38,11 +38,7 @@ A time (**datetime**) ranging from 00:00:00 (12:00:00 AM) to 23:59:59 (11:59:59 
   
 - Time values are a portion of a date value, and in the serial number system are represented by a decimal number. Therefore, the **datetime** value 12:00 PM is equivalent to 0.5, because it is half of a day.  
   
-- You can supply the arguments to the TIME function as values that you type directly, as the result of another expression, or by a reference to a column that contains a numeric value. The following restrictions apply:   
-  - Any value for **hours** that is greater than 23 will be divided by 24 and the remainder will be treated as the hour value.  
-  - Any value for **minutes** that is greater than 59 will be converted to hours and minutes.  
-  - Any value for **seconds** that is greater than 59 will be converted to hours, minutes, and seconds.  
-  - For minutes or seconds, a value greater than 24 hours will be divided by 24 and the reminder will be treated as the hour value. A value in excess of 24 hours does not alter the date portion.  
+- You can supply the arguments to the TIME function as values that you type directly, as the result of another expression, or by a reference to a column that contains a numeric value. 
 
 - Date and datetime can also be specified as a literal in the format `dt"YYYY-MM-DD"`, `dt"YYYY-MM-DDThh:mm:ss"`, or `dt"YYYY-MM-DD hh:mm:ss"`. When specified as a literal, using the TIME function in the expression is not necessary. To learn more, see [DAX Syntax | Date and time](dax-syntax-reference.md#date-and-time).
   
