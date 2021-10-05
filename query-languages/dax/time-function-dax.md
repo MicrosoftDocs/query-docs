@@ -13,7 +13,6 @@ recommendations: false
 # TIME
 
 Converts hours, minutes, and seconds given as numbers to a time in **datetime** format.  
-The value returned ranges from 00:00:00 (12:00:00 AM) to 23:59:59 (11:59:59 PM). 
   
 ## Syntax  
   
@@ -31,7 +30,7 @@ TIME(hour, minute, second)
   
 ## Return value
 
-A time (**datetime**).  
+A time (**datetime**) ranging from 00:00:00 (12:00:00 AM) to 23:59:59 (11:59:59 PM).
   
 ## Remarks
 
