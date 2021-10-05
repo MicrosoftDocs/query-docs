@@ -13,6 +13,7 @@ recommendations: false
 # TIME
 
 Converts hours, minutes, and seconds given as numbers to a time in **datetime** format.  
+The value returned ranges from 00:00:00 (12:00:00 AM) to 23:59:59 (11:59:59 PM). 
   
 ## Syntax  
   
@@ -24,9 +25,9 @@ TIME(hour, minute, second)
   
 |Term|Definition|  
 |--------|--------------|  
-|hour|A number from 0 to 23 representing the hour.<br /><br />Any value greater than 23 will be divided by 24 and the remainder will be treated as the hour value.|  
-|minute|A number from 0 to 59 representing the minute.<br /><br />Any value greater than 59 will be converted to hours and minutes.|  
-|second|A number from 0 to 59 representing the second.<br /><br />Any value greater than 59 will be converted to hours, minutes, and seconds.|  
+|hour|A number from 0 to 32767 representing the hour.<br /><br />Any value greater than 23 will be divided by 24 and the remainder will be treated as the hour value.|  
+|minute|A number from 0 to 32767 representing the minute.<br /><br />Any value greater than 59 will be converted to hours and minutes.|  
+|second|A number from 0 to 32767 representing the second.<br /><br />Any value greater than 59 will be converted to hours, minutes, and seconds.|  
   
 ## Return value
 
