@@ -33,7 +33,6 @@ A bitwise OR of two numbers.
 ## Remarks
 
 - This function supports both positive and negative numbers.
-- This function is effectively the same as the | (bitwise OR) operator in C++.
 
 ## Example
 
@@ -41,8 +40,7 @@ The following DAX query:
 
 ```dax
 EVALUATE 
-    { BITOR(9, 10) 
-}
+    { BITOR(9, 10) }
 ```
 
 Returns 11.

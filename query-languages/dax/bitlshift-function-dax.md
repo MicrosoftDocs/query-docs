@@ -37,7 +37,6 @@ An integer value.
 - If Shift_Amount is negative, it will shift in the opposite direction.
 - If absolute value of Shift_Amount is larger than 64, there will be no error but will result in overflow/underflow.
 - There’s no limit on Number, but the result may overflow/underflow.
-- This function is effectively the same as the << (left shift) operator in C++.
 
 ## Examples
 

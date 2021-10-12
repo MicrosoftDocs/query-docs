@@ -33,7 +33,6 @@ A bitwise AND of two numbers.
 ## Remarks
 
 - This function supports both positive and negative numbers.
-- This function is effectively the same as the & (bitwise AND) operator in C++.
 
 ## Example
 
