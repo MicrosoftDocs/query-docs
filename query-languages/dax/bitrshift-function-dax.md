@@ -69,11 +69,11 @@ The following DAX query:
 
 ```dax
 Define 
-    Measure FACTA[RightShift] = BITRSHIFT(SELECTEDVALUE(Sales[Amount]), 3)
+    Measure Sales[RightShift] = BITRSHIFT(SELECTEDVALUE(Sales[Amount]), 3)
 
 EVALUATE 
 SUMMARIZECOLUMNS(
-    FACTA[I2],
+    Sales[I2],
     "RIGHTSHIFT", 
     [RightShift]
 )
