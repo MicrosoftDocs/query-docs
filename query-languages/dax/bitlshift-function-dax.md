@@ -2,7 +2,7 @@
 description: "Learn more about: BITLSHIFT"
 title: "BITLSHIFT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 10/05/2021
+ms.date: 10/11/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -52,37 +52,24 @@ EVALUATE
 
 Returns 16.
 
-This is effectively equivalent to `EVALUATE { BITRSHIFT(2, -3) }`.
-
 ### Example 2
 
 The following DAX query:
 
 ```dax
 EVALUATE 
-    { BITLSHIFT(16, 123) }
+    { BITLSHIFT(128, -1) }
 ```
 
-returns 0
+Returns 64.
 
 ### Example 3
 
 The following DAX query:
 
 ```dax
-EVALUATE 
-    { BITLSHIFT(-16, 123) }
-```
-
-Returns 0.
-
-### Example 4
-
-The following DAX query:
-
-```dax
 Define 
-Measure FACTA[LeftShift] = BITLSHIFT(SELECTEDVALUE(Sales[Amount]), 3)
+    Measure FACTA[LeftShift] = BITLSHIFT(SELECTEDVALUE(Sales[Amount]), 3)
 
 EVALUATE 
 SUMMARIZECOLUMNS(

@@ -2,7 +2,7 @@
 description: "Learn more about: BITOR"
 title: "BITOR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 10/05/2021
+ms.date: 10/11/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan

@@ -2,7 +2,7 @@
 description: "Learn more about: BITRSHIFT"
 title: "BITRSHIFT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 10/05/2021
+ms.date: 10/11/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -52,39 +52,24 @@ EVALUATE
 
 Returns 2.
 
-This is effectively equivalent to `EVALUATE { BITLSHIFT(16, -3) }`.
-
 ### Example 2
 
 The following DAX query:
 
 ```dax
 EVALUATE 
-    { BITRSHIFT(16, 123) }
+    { BITRSHIFT(1024, -3) }
 ```
 
-Returns 0.
+Returns 8192.
 
 ### Example 3
 
 The following DAX query:
 
 ```dax
-EVALUATE 
-    { BITRSHIFT(-16, 123) }
-```
-
-Returns -1.
-
-This aligns with 2’s complement binary operations. Because the first bit of a negative number of a signed integer is 1, and shift-right makes all the bits 1, -1 is returned.
-
-### Example 4
-
-The following DAX query:
-
-```dax
 Define 
-Measure FACTA[RightShift] = BITRSHIFT(SELECTEDVALUE(Sales[Amount]), 3)
+    Measure FACTA[RightShift] = BITRSHIFT(SELECTEDVALUE(Sales[Amount]), 3)
 
 EVALUATE 
 SUMMARIZECOLUMNS(
