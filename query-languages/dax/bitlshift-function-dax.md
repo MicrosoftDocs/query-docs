@@ -73,7 +73,7 @@ Define
 
 EVALUATE 
 SUMMARIZECOLUMNS(
-    Sales[I2],
+    Sales[Amount],
     "LEFTSHIFT", 
     [LeftShift]
 )
