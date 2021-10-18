@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Value.Firewall"
 title: "Value.Firewall | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 10/18/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -19,5 +19,5 @@ Value.Firewall(<b>key</b> as text) as any
 </pre>
 
 ## About
-Value.Firewall
 
+This function is intended for internal use only.

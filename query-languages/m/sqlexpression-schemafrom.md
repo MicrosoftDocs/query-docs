@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: SqlExpression.SchemaFrom"
 title: "SqlExpression.SchemaFrom | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 10/18/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -19,4 +19,5 @@ SqlExpression.SchemaFrom(<b>schema</b> as any) as any
 </pre>
 
 ## About
-SqlExpression.SchemaFrom
+
+This function is intended for internal use only.

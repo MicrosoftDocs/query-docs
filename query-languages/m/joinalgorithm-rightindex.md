@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: JoinAlgorithm.RightIndex"
 title: "JoinAlgorithm.RightIndex | Microsoft Docs"
-ms.date: 9/13/2021
+ms.date: 10/18/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -14,4 +14,4 @@ ms.author: bezhan
 
 ## About
 
-In batches, uses the keys from the right table to do predicate-based queries against the left table. This algorithm is recommended when the left table is large, supports folding of Table.SelectRows, and contains few rows which are expected to match a right row.
+In batches, uses the keys from the right table to do predicate-based queries against the left table. This algorithm is recommended when the left table is large, supports folding of [Table.SelectRows](table-selectrows.md), and contains few rows that are expected to match a right row.

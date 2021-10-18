@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Value functions"
 title: "Value functions | Microsoft Docs"
-ms.date: 9/13/2021
+ms.date: 10/18/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -54,12 +54,12 @@ These functions evaluate and perform operations on values.
 
 Implementation | Description
 -------------- | -----------
-[DirectQueryCapabilities.From](directquerycapabilities-from.md) | DirectQueryCapabilities.From
+[DirectQueryCapabilities.From](directquerycapabilities-from.md) | This function is intended for internal use only.
 [Embedded.Value](embedded-value.md) | Accesses a value by name in an embedded mashup.
-[Value.Firewall](value-firewall.md) | Value.Firewall
-[Variable.Value](variable-value.md) | Variable.Value
-[SqlExpression.SchemaFrom](sqlexpression-schemafrom.md) | SqlExpression.SchemaFrom
-[SqlExpression.ToExpression](sqlexpression-toexpression.md) | SqlExpression.ToExpression  
+[Value.Firewall](value-firewall.md) | This function is intended for internal use only.
+[Variable.Value](variable-value.md) | This function is intended for internal use only.
+[SqlExpression.SchemaFrom](sqlexpression-schemafrom.md) | This function is intended for internal use only.
+[SqlExpression.ToExpression](sqlexpression-toexpression.md) | This function is intended for internal use only.
 
   
 ## <a name="__toc360789761"></a>Metadata  
