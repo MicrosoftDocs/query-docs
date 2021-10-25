@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DirectQueryCapabilities.From"
 title: "DirectQueryCapabilities.From | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 10/18/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -11,6 +11,7 @@ ms.author: bezhan
 
 ---
 # DirectQueryCapabilities.From
+
 ## Syntax
 
 <pre>
@@ -18,5 +19,5 @@ DirectQueryCapabilities.From(<b>value</b> as any) as table
 </pre>
 
 ## About
-DirectQueryCapabilities.From
 
+This function is intended for internal use only.

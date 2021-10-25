@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: SqlExpression.ToExpression"
 title: "SqlExpression.ToExpression | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 10/18/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -20,7 +20,4 @@ SqlExpression.ToExpression(<b>sql</b> as text, <b>environment</b> as record) as 
 
 ## About
 
-SqlExpression.ToExpression
-
-
-  
+Converts the provided `sql` query to M code, with the available identifiers defined by `environment`. This function is intended for internal use only.
