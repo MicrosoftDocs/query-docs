@@ -48,6 +48,8 @@ The function returns no value; the function only enables the indicated relations
 - If CALCULATE expressions are nested, and more than one CALCULATE expression contains a USERELATIONSHIP function, then the innermost USERELATIONSHIP is the one that prevails in case of a conflict or ambiguity.  
   
 - Up to 10 USERELATIONSHIP functions can be nested; however, your expression might have a deeper level of nesting, ie. the following sample expression is nested 3 levels deep but only 2 for USEREALTIONSHIP: `=CALCULATE(CALCULATE( CALCULATE( &lt;anyExpression&gt;, USERELATIONSHIP( t1[colA], t2[colB])), t99[colZ]=999), USERELATIONSHIP( t1[colA], t2[colA]))`.  
+
+- For 1-to-1 relationships, USERELATIONSHIP will only activate the relationship in one direction. In particular, filters will only be able to flow from *columnName2*'s table to *columnName1*'s table. If bi-directional cross-filtering is desired, two USERELATIONSHIPs with opposite directionality can be used in the same calculation. For example, `CALCULATE(..., USERELATIONSHIP(T1[K], T2[K]), USERELATIONSHIP(T2[K], T1[K]))`.
   
 ## Example
 
