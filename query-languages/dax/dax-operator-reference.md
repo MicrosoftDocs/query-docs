@@ -2,7 +2,7 @@
 description: "Learn more about: DAX operators"
 title: "DAX operators | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 11/10/2020
+ms.date: 11/09/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -86,10 +86,10 @@ If you combine several operators in a single formula, the operations are ordered
 |^|Exponentiation|  
 |–|Sign (as in –1)|  
 |* and /|Multiplication and division|  
-|!|NOT (unary operator)|  
 |+ and –|Addition and subtraction|  
 |&amp;|Connects two strings of text (concatenation)|  
-|=,==,<,>,<=,>=,<>|Comparison|  
+|=,==,<,>,<=,>=,<>,IN|Comparison|  
+|NOT|NOT (unary operator)|  
   
 ### Using parentheses to control calculation order
 
