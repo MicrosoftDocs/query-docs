@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Text functions"
 title: "Text functions | Microsoft Docs"
-ms.date: 4/7/2019
+ms.date: 11/17/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -20,7 +20,7 @@ These functions create and manipulate text values.
   
 |Function|Description|  
 |------------|---------------|  
-|[Text.InferNumberType](text-infernumbertype.md)|Infers granular number type (Int64.Type, Double.Type, etc.) of `text` using `culture`.|  
+|[Text.InferNumberType](text-infernumbertype.md)|Infers the granular number type (Int64.Type, Double.Type, and so on) of a number encoded in text.|  
 |[Text.Length](text-length.md)|Returns the number of characters in a text value.|  
   
 ### <a name="__toc360788813"></a>Text Comparisons  

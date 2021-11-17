@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Accessing data functions"
 title: "Accessing data functions | Microsoft Docs"
-ms.date: 9/13/2021
+ms.date: 11/17/2021
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -43,7 +43,7 @@ These functions access data and return table values. Most of these functions ret
 |[Cube.AttributeMemberProperty](cube-attributememberproperty.md) | Returns the property `propertyName` of dimension attribute `attribute`.|
 |[Cube.CollapseAndRemoveColumns](cube-collapseandremovecolumns.md)|Changes the dimensional granularity of the filter context for the cube by collapsing the attributes mapped to the specified columns columnNames.|
 |[Cube.Dimensions](cube-dimensions.md)|Returns a table containing the set of available dimensions within the cube.|
-|[Cube.DisplayFolders](cube-displayfolders.md)|Returns a nested tree of tables representing the display folder hierarchy of the objects (e.g. dimensions and measures) available for use in the cube.
+|[Cube.DisplayFolders](cube-displayfolders.md)|Returns a nested tree of tables representing the display folder hierarchy of the objects (for example, dimensions and measures).|
 |[Cube.MeasureProperties](cube-measureproperties.md)|Returns a table containing the set of available properties for measures that are expanded in the cube.|
 |[Cube.MeasureProperty](cube-measureproperty.md)|Returns the property of a measure.|
 |[Cube.Measures](cube-measures.md)|Returns a table containing the set of available measures within the cube.|

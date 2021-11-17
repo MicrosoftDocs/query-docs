@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: #datetimezone"
 title: "#datetimezone | Microsoft Docs"
-ms.date: 6/21/2021
+ms.date: 11/17/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,7 +15,7 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-#datetimezone(<b>year</b> as number, <b>month</b> as number, <b>day</b> as number, <b>hour</b> as number, <b>minute</b> as number, <b>second</b> as number, <b>offsetHours</b> as number, <b>offsetMinutes</b> as number) as any
+#datetimezone(<b>year</b> as number, <b>month</b> as number, <b>day</b> as number, <b>hour</b> as number, <b>minute</b> as number, <b>second</b> as number, <b>offsetHours</b> as number, <b>offsetMinutes</b> as number) as datetimezone
 </pre>
 
 ## About

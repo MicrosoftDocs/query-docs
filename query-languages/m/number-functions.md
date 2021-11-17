@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number functions"
 title: "Number functions | Microsoft Docs"
-ms.date: 4/7/2020
+ms.date: 11/17/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -120,8 +120,8 @@ These functions create and manipulate number values.
 
 Parameter values | Description
 ---------------- | -----------
-[RoundingMode.AwayFromZero](roundingmode-awayfromzero.md) | RoundingMode.AwayFromZero
-[RoundingMode.Down](roundingmode-down.md) | RoundingMode.Down
-[RoundingMode.ToEven](roundingmode-toeven.md) | RoundingMode.ToEven
-[RoundingMode.TowardZero](roundingmode-towardzero.md) | RoundingMode.TowardZero
-[RoundingMode.Up](roundingmode-up.md) | RoundingMode.Up 
+[RoundingMode.AwayFromZero](roundingmode-awayfromzero.md)|Round away from zero when there is a tie between the possible numbers to round to.|
+[RoundingMode.Down](roundingmode-down.md)|Round down when there is a tie between the possible numbers to round to.|
+[RoundingMode.ToEven](roundingmode-toeven.md)|Round to the nearest even number when there is a tie between the possible numbers to round to.|
+[RoundingMode.TowardZero](roundingmode-towardzero.md)|Round toward zero when there is a tie between the possible numbers to round to.|
+[RoundingMode.Up](roundingmode-up.md)|Round up when there is a tie between the possible numbers to round to.|

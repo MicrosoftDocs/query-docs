@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Web.Contents"
 title: "Web.Contents | Microsoft Docs"
-ms.date: 9/13/2021
+ms.date: 11/17/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -21,6 +21,7 @@ Web.Contents(<b>url</b> as text, optional <b>options</b> as nullable record) as 
 ## About
 
 Returns the contents downloaded from `url` as binary. An optional record parameter, `options`, may be provided to specify additional properties. The record can contain the following fields:
+
 * `Query`: Programmatically add query parameters to the URL without having to worry about escaping.
 * `ApiKeyName`: If the target site has a notion of an API key, this parameter can be used to specify the name (not the value) of the key parameter that must be used in the URL. The actual key value is provided in the credential.
 * `Headers`: Specifying this value as a record will supply additional headers to an HTTP request.
@@ -31,7 +32,7 @@ Returns the contents downloaded from `url` as binary. An optional record paramet
 * `RelativePath`: Specifying this value as text appends it to the base URL before making the request.
 * `Content`: Specifying this value changes the web request from a GET to a POST, using the value of the option as the content of the POST.
 
-The headers of the HTTP response are available as metadata on the binary result. Outside of a custom data connector context, only the Content-Type header is available. 
+The headers of the HTTP response are available as metadata on the binary result. Outside of a custom data connector context, only the Content-Type header is available.
 
 ## Example 1
 
@@ -78,3 +79,13 @@ in
 `
 table
 `
+
+## Example 3
+
+Connect to a secure URL that accepts an authentication key as part of its query string. Instead of hard-coding the secret key in M (which would pose a security risk), the key can be provided securely by specifying its name (not its value) in M, choosing Web API authentication, and entering the key value as part of the Web API credential. When used in this way, the following example will generate a request to `"https://contoso.com/api/customers/get?api_key=******"`.
+
+``` powerquery-m
+Web.Contents("https://contoso.com/api/customers/get", [ApiKeyName="api_key"])
+```
+
+`binary`
