@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.ViewFunction"
 title: "Table.ViewFunction | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 11/17/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -19,11 +19,11 @@ Table.ViewFunction(<b>function</b> as function) as function
 </pre>
 
 ## About
-Creates a view function based on `function` that can be handled in a view created by `Table.View`. 
 
-The `OnInvoke` handler of `Table.View` can be used to defined a handler for the view function. 
+Creates a view function based on `function` that can be handled in a view created by `Table.View`.
 
-As with the handlers for built-in operations, if no `OnInvoke` handler is specified, or if it does not handle the view function, or if an error is raised by the handler, `function` is applied on top of the view. 
+The `OnInvoke` handler of `Table.View` can be used to defined a handler for the view function.
 
-Please see the published documentation for a more complete description of `Table.View` and custom view functions.
+As with the handlers for built-in operations, if no `OnInvoke` handler is specified, or if it does not handle the view function, or if an error is raised by the handler, `function` is applied on top of the view.
 
+See the published Power Query custom connector documentation for a more complete description of `Table.View` and custom view functions.

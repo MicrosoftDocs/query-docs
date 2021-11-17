@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.Split"
 title: "Table.Split | Microsoft Docs"
-ms.date: 4/22/2020
+ms.date: 11/17/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -20,9 +20,10 @@ Table.Split(<b>table</b> as table, <b>pageSize</b> as number) as list
 
 ## About
 
-Splits <code>table</code> into a list of tables where the first element of the list is a table containing the first <code>pageSize</code> rows from the source table, the next element of the list is a table containing the next <code>pageSize</code> rows from the source table, etc.
+Splits `table` into a list of tables where the first element of the list is a table containing the first `pageSize` rows from the source table, the next element of the list is a table containing the next `pageSize` rows from the source table, and so on.
 
 ## Example 1
+
 Split a table of five records into tables with two records each.
 
 ```powerquery-m

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Comparer.FromCulture"
 title: "Comparer.FromCulture | Microsoft Docs"
-ms.date: 7/29/2019
+ms.date: 11/17/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,23 +18,26 @@ ms.author: bezhan
 Comparer.FromCulture(<b>culture</b> as text, optional <b>ignoreCase</b> as nullable logical) as function
 </pre>
   
-## About  
+## About
+
 Returns a comparer function given the `culture` and a logical value `ignoreCase` for case sensitivity for the comparison. The default value for `ignoreCase` is false. The value for culture are well known text representations of locales used in the .NET framework.
 
 ## Example 1
+
 Compare "a" and "A" using "en-US" locale to determine if the values are equal.
 
 ```powerquery-m
-Comparer.FromCulture("en-us")("a", "A")
+Comparer.FromCulture("en-US")("a", "A")
 ```
 
 `-1`
 
 ## Example 2
+
 Compare "a" and "A" using "en-US" locale ignoring the case to determine if the values are equal.
 
 ```powerquery-m
-Comparer.FromCulture("en-us", true)("a", "A")
+Comparer.FromCulture("en-US", true)("a", "A")
 ```
 
 `0`
