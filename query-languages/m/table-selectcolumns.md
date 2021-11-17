@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.SelectColumns"
 title: "Table.SelectColumns | Microsoft Docs"
-ms.date: 4/23/2020
+ms.date: 11/17/2021
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,10 +18,16 @@ ms.author: bezhan
 Table.SelectColumns(<b>table</b> as table, <b>columns</b> as any, optional <b>missingField</b> as nullable number) as table
 </pre>
   
-## About  
-Returns the `table` with only the specified `columns`. <ul> <li><code>table</code>: The provided table.</li> <li><code>columns</code>: The list of columns from the table <code>table</code> to return. Columns in the returned table are in the order listed in <code>columns</code>.</li> <li><code>missingField</code>: <i>(Optional)</i> What to do if the columnn does not exist. Example: <code>MissingField.UseNull</code> or <code>MissingField.Ignore</code>. </ul> 
+## About
+
+Returns the `table` with only the specified `columns`.
+
+* `table`: The provided table.
+* `columns`: The list of columns from the table `table` to return. Columns in the returned table are in the order listed in `columns`.
+* `missingField`: *(Optional)* What to do if the column does not exist. Example: `MissingField.UseNull` or `MissingField.Ignore`.
 
 ## Example 1
+
 Only include column [Name].
 
 ```powerquery-m
@@ -39,6 +45,7 @@ Table.SelectColumns(
 <table> <tr> <th>Name</th> </tr> <tr> <td>Bob</td> </tr> <tr> <td>Jim</td> </tr> <tr> <td>Paul</td> </tr> <tr> <td>Ringo</td> </tr> </table>
 
 ## Example 2
+
 Only include columns [CustomerID] and [Name].
 
 ```powerquery-m
@@ -51,7 +58,8 @@ Table.SelectColumns(
 <table> <tr> <th>CustomerID</th> <th>Name</th> </tr> <tr> <td>1</td> <td>Bob</td> </tr> </table>
 
 ## Example 3
-If the included column does not exit, the default result is an error.
+
+If the included column does not exist, the default result is an error.
 
 ```powerquery-m
 Table.SelectColumns(
@@ -63,7 +71,8 @@ Table.SelectColumns(
 `[Expression.Error] The field 'NewColumn' of the record wasn't found.`
 
 ## Example 4
-If the included column does not exit, option `MissingField.UseNull` creates a column of null values.
+
+If the included column does not exist, option `MissingField.UseNull` creates a column of null values.
 
 ```powerquery-m
 Table.SelectColumns(
