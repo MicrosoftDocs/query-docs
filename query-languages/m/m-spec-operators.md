@@ -1317,4 +1317,4 @@ The following holds when evaluating the expression `x as y`:
 
 ### Coalesce operator
 
-The coalesce operator `??` returns the result of its left operand if it is not null, otherwise it will return the result of its right operand. The right operand is evaluated if and only if the left operand is not true.
+The coalesce operator `??` returns the result of its left operand if it is not null, otherwise it will return the result of its right operand. The right operand is evaluated if and only if the left operand is null.

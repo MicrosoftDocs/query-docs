@@ -154,7 +154,7 @@ The following operators are defined for time values:
 | `x > y` | Greater than |
 | `x < y` | Less than |
 | `x <= y` | Less than or equal |
-| `x ?? y ` | Coalesce |
+| `x ?? y` | Coalesce |
 | | |
 
 The following operators permit one or both of their operands to be a date:
