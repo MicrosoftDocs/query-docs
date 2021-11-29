@@ -6,7 +6,7 @@ author: dougklopfenstein
 ms.service: powerquery
 
 ms.topic: article
-ms.date: 4/7/2020
+ms.date: 11/29/2021
 ms.author: bezhan
 ---
 
@@ -47,6 +47,7 @@ A _null value_ is used to represent the absence of a value, or a value of indete
 | `x <= y` | Less than or equal |
 | `x = y` | Equal |
 | `x <> y` | Not equal |
+| `x ?? y` | Coalesce |
 | | | 
  
 The native type of the `null` value is the intrinsic type `null`.
@@ -64,7 +65,8 @@ A _logical value_ is used for Boolean operations has the value true or false. A 
 | `x = y` | Equal |
 | `x <> y` | Not equal |
 | `x or y` | Conditional logical OR |
-| `x and y` | Conditional logical AND | 
+| `x ?? y` | Coalesce |
+| `x and y` | Conditional logical AND |
 | `not x` | Logical NOT |
 | | |  
  
@@ -117,6 +119,7 @@ The following operators are defined for number values:
 | `x - y` | Difference |
 | `x * y` | Product |
 | `x / y` | Quotient |
+| `x ?? y` | Coalesce |
 | `+x` | Unary plus |
 | `-x` | Negation |
 | | |
@@ -151,6 +154,7 @@ The following operators are defined for time values:
 | `x > y` | Greater than |
 | `x < y` | Less than |
 | `x <= y` | Less than or equal |
+| `x ?? y ` | Coalesce |
 | | |
 
 The following operators permit one or both of their operands to be a date:
@@ -194,6 +198,7 @@ The following operators are defined for date values:
 | `x > y` | Greater than |
 | `x < y` | Less than |
 | `x <= y` | Less than or equal |
+| `x ?? y` | Coalesce |
 | | |
 
 The following operators permit one or both of their operands to be a date:
@@ -238,6 +243,7 @@ The following operators are defined for datetime values:
 | `x > y` | Greater than |
 | `x < y` | Less than |
 | `x <= y` | Less than or equal |
+| `x ?? y` | Coalesce |
 | | |
  
 The following operators permit one or both of their operands to be a datetime:
@@ -288,6 +294,7 @@ The following operators are defined for datetimezone values:
 | `x > y` | Greater than |
 | `x < y` | Less than |
 | `x <= y` | Less than or equal |
+| `x ?? y` | Coalesce |
 | | |
  
 The following operators permit one or both of their operands to be a datetimezone:
@@ -328,6 +335,7 @@ The following operators are defined on duration values:
 | `x > y` | Greater than |
 | `x < y` | Less than |
 | `x <= y` | Less than or equal |
+| `x ?? y` | Coalesce |
 | | |
 
 Additionally, the following operators allow one or both of their operands to be a duration value:
@@ -381,8 +389,9 @@ The following operators are defined on _text_ values:
 | `x < y` | Less than |
 | `x <= y` | Less than or equal |
 | `x & y` | Concatenation |
+| `x ?? y` | Coalesce |
 | | |
- 
+
 The native type of text values is the intrinsic type `text`.
 
 ## Binary
@@ -403,8 +412,9 @@ The following operators are defined on _binary_ values:
 | `x > y` | Greater than |
 | `x < y` | Less than |
 | `x <= y` | Less than or equal |
+| `x ?? y` | Coalesce |
 | | |
- 
+
 The native type of binary values is the intrinsic type _binary_.
 
 ## List
@@ -459,8 +469,9 @@ The following operators are defined for lists:
 | `x = y` | Equal |
 | `x <> y` | Not equal |
 | `x & y` | Concatenate |
+| `x ?? y` | Coalesce |
 | | |
- 
+
 For example:
 
 ```
@@ -562,6 +573,7 @@ The following operators are defined for record values:
 | `x = y` | Equal |
 | `x <> y` | Not equal |
 | `x & y` | Merge |
+| `x ?? y` | Coalesce |
 | | |
 
 The following examples illustrate the above operators. Note that record merge uses the fields from the right operand to override fields from the left operand, should there be an overlap in field names.
@@ -605,8 +617,9 @@ The following operators are defined for table values:
 | `x = y` | Equal |
 | `x <> y` | Not equal |
 | `x & y` | Concatenation |
+| `x ?? y` | Coalesce |
 | | |
- 
+
 Table concatenation aligns like-named columns and fills in `null` for columns appearing in only one of the operand tables. The following example illustrates table concatenation:
 
 ```
@@ -628,4 +641,3 @@ A _function value_ is a value that maps a set of arguments to a single value. Th
 
 ## Type
 A _type value_ is a value that classifies other values. The details of _type_ values are described in [Types](m-spec-types.md).
-

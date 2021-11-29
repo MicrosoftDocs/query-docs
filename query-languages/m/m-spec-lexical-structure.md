@@ -6,7 +6,7 @@ author: dougklopfenstein
 ms.service: powerquery
 
 ms.topic: article
-ms.date: 4/7/2020
+ms.date: 11/29/2021
 ms.author: bezhan
 ---
 
@@ -427,5 +427,4 @@ _keyword:_ one of<br/>
 There are several kinds of operators and punctuators. Operators are used in expressions to describe operations involving one or more operands. For example, the expression `a + b` uses the `+` operator to add the two operands `a` and `b`. Punctuators are for grouping and separating.
 
 _operator-or-punctuator:_  one of<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`, ; = < <= > >= <> + - * / & ( ) [ ] { } @ ! ? => .. ...`
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`, ; = < <= > >= <> + - * / & ( ) [ ] { } @ ! ? ?? => .. ...`
