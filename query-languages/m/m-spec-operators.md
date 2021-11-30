@@ -6,7 +6,7 @@ author: dougklopfenstein
 ms.service: powerquery
 
 ms.topic: article
-ms.date: 4/7/2020
+ms.date: 11/29/2021
 ms.author: bezhan
 ---
 
@@ -130,7 +130,6 @@ The following table summarizes the M operators, listing the operator categories 
         <td>Equal</td>
     </tr>
     <tr>
-        <td></td>
         <td><em>x</em> <> <em>y</em></td>
         <td>Not equal</td>
     </tr>
@@ -153,6 +152,16 @@ The following table summarizes the M operators, listing the operator categories 
         <td>Logical OR</td>
         <td><em>x</em> <code>or</code> <em>y</em></td>
         <td>Short-circuiting disjunction</td>
+    </tr>
+    <tr>
+        <td>Coalesce</td>
+        <td><em>x</em> <code>??</code> <em>y</em></td>
+        <td>Null coalescing operator</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
 </table>
 
@@ -428,7 +437,7 @@ Value.RemoveMetadata(x) meta (Value.Metadata(x) & y)
 
 ## Equality operators
 
-The _equality operator_ `=` is used to determine if two values are the equal. The _inequality operator_ `<>` is used to determine if two values are not equal.
+The _equality operator_ `=` is used to determine if two values are equal. The _inequality operator_ `<>` is used to determine if two values are not equal.
 
 _equality-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;relational-expression<br/>
@@ -490,14 +499,15 @@ The equality operators are defined for the following types:
     false = false    // true 
     true = false     // false 
     true = 1         // false
-```  
+```
+
 * Numbers are compared using the specified precision:
 
-   * If either number is `#nan`, then the numbers are not the same.
+  * If either number is `#nan`, then the numbers are not the same.
 
-   * When neither number is `#nan`, then the numbers are compared using a bit-wise comparison of the numeric value.
+  * When neither number is `#nan`, then the numbers are compared using a bit-wise comparison of the numeric value.
 
-   * `#nan` is the only value that is not equal to itself.
+  * `#nan` is the only value that is not equal to itself.
 
        For example:
 
@@ -523,9 +533,9 @@ The equality operators are defined for the following types:
 
 * Two list values are equal if all of the following are true:
 
-   * Both lists contain the same number of items.
+  * Both lists contain the same number of items.
 
-   * The values of each positionally corresponding item in the lists are equal. This means that not only do the lists need to contain equal items, the items need to be in the same order.
+  * The values of each positionally corresponding item in the lists are equal. This means that not only do the lists need to contain equal items, the items need to be in the same order.
 
       For example:
 
@@ -533,14 +543,15 @@ The equality operators are defined for the following types:
         {1, 2} = {1, 2}     // true 
         {2, 1} = {1, 2}     // false 
         {1, 2, 3} = {1, 2}  // false
-``` 
+```
+
 * Two records are equal if all of the following are true:
 
-   * The number of fields is the same.
+  * The number of fields is the same.
 
-   * Each field name of one record is also present in the other record.
+  * Each field name of one record is also present in the other record.
 
-   * The value of each field of one record is equal to the like-named field in the other record.
+  * The value of each field of one record is equal to the like-named field in the other record.
 
       For example:
 
@@ -553,13 +564,13 @@ The equality operators are defined for the following types:
 
 * Two tables are equal if all of the following are true:
 
-   * The number of columns is the same.
+  * The number of columns is the same.
 
-   * Each column name in one table is also present in the other table.
+  * Each column name in one table is also present in the other table.
 
-   * The number of rows is the same.
+  * The number of rows is the same.
 
-   * Each row has equal values in corresponding cells.
+  * Each row has equal values in corresponding cells.
 
       For example:
 
@@ -568,6 +579,7 @@ The equality operators are defined for the following types:
         #table({"A","B"},{{1,2}}) = #table({"X","Y"},{{1,2}}) // false 
         #table({"A","B"},{{1,2}}) = #table({"B","A"},{{2,1}}) // true
 ```
+
 * A function value is equal to itself, but may or may not be equal to another function value. If two function values are considered equal, then they will behave identically when invoked.
 
    Two given function values will always have the same equality relationship.
@@ -596,7 +608,7 @@ These operators are used to determine the relative ordering relationship between
 | `x <= y` | `true` if `x` is less than or equal to `y`, `false` otherwise |
 | `x >= y` | `true` if `x` is greater than or equal to `y`, `false` otherwise |
 | | |
- 
+
 For example:
 
 ```
@@ -1244,6 +1256,7 @@ The result is a logical value.
 The operators `is` and `as` are known as the type operators.
 
 ### Type compatibility operator
+
 The type compatibility operator `x is y`  is defined for the following types of values:
 
 | X | Y | Result |
@@ -1302,3 +1315,6 @@ The following holds when evaluating the expression `x as y`:
 
 * An error raised when evaluating expression `x` is propagated.
 
+### Coalesce operator
+
+The coalesce operator `??` returns the result of its left operand if it is not null, otherwise it will return the result of its right operand. The right operand is evaluated if and only if the left operand is null.
