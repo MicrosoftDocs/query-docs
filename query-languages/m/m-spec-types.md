@@ -6,7 +6,7 @@ author: dougklopfenstein
 ms.service: powerquery
 
 ms.topic: article
-ms.date: 4/7/2020
+ms.date: 11/29/2021
 ms.author: bezhan
 ---
 
@@ -110,8 +110,9 @@ The following operators are defined for type values:
 | -------- | ------ |
 | `x = y` | Equal |
 | `x <> y` | Not equal |
+| `x ?? y` | Coalesce |
 | | |
- 
+
 The native type of type values is the intrinsic type `type`.
 
 ## Primitive Types
