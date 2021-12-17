@@ -2,7 +2,7 @@
 description: "Learn more about: XIRR"
 title: "XIRR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 09/02/2021
+ms.date: 12/17/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -49,6 +49,8 @@ Internal rate of return for the given inputs. If the calculation fails to return
 - The series of cash flow values must contain at least one positive number and one negative number.  
 
 - Avoid using ISERROR or IFERROR functions to capture an error returned by XIRR. If some inputs to the function may result in a no solution error, providing an alternateResult parameter is the most reliable and highest performing way to handle the error.
+
+- To learn more about using the alternateResult parameter, be to check out this [video](https://www.microsoft.com/videoplayer/embed/RWLzrC).
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 

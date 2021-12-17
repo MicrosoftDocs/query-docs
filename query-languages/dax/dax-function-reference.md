@@ -2,7 +2,7 @@
 description: "Learn more about: DAX function reference"
 title: "DAX function reference | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/28/2021
+ms.date: 12/17/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
