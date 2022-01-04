@@ -12,7 +12,7 @@ recommendations: false
 ---
 # ISCROSSFILTERED
 
-Returns TRUE when the specified table or column is cross-filtered. Otherwise returns FALSE.
+Returns TRUE when the specified table or column is cross-filtered.
   
 ## Syntax  
   
@@ -28,7 +28,7 @@ ISCROSSFILTERED(<TableNameOrColumnName>)
   
 ## Return value
 
-TRUE when *ColumnName* or a column of *TableName* is being cross-filtered. Otherwise returns **FALSE**.
+TRUE when *ColumnName* or a column of *TableName* is being cross-filtered. Otherwise returns FALSE.
   
 ## Remarks  
   

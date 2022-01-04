@@ -12,7 +12,7 @@ recommendations: false
 ---
 # ISFILTERED
 
-Returns TRUE when the specified table or column is being filtered directly. Otherwise returns FALSE.
+Returns TRUE when the specified table or column is being filtered directly.
   
 ## Syntax  
   
