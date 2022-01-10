@@ -4,7 +4,6 @@ title: "Quick tour | Microsoft Docs"
 ms.date: 12/12/2018
 ms.service: powerquery
 ms.reviewer: gepopell
-ms.topic: reference
 author: dougklopfenstein
 ms.author: bezhan
 ms.custom: intro-internal
