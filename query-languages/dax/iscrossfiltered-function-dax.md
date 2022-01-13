@@ -32,8 +32,10 @@ TRUE when *ColumnName* or a column of *TableName* is being cross-filtered. Other
   
 ## Remarks  
   
-- A column is said to be cross-filtered when a filter applied to another column in the same table or in a related table affects *ColumnName* by filtering it. A column is said to be filtered *directly* when the filter or filters apply over the column.  
+- A column is said to be cross-filtered when a filter applied to another column in the same table or in a related table affects *ColumnName* by filtering it. A column is said to be filtered directly when there are filters defined on the column in the current filter context.
   
+- When a column is cross-filtered, all columns in the same table are also cross-filtered.
+
 - The related function [ISFILTERED function](isfiltered-function-dax.md) returns TRUE when *TableName* or *ColumnName* is filtered directly.  
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
