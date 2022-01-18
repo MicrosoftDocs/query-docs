@@ -7,7 +7,6 @@ ms.reviewer: gepopell
 ms.topic: reference
 author: dougklopfenstein
 ms.author: bezhan
-ms.custom: intro-internal
 
 ---
 # Power Query M language specification
