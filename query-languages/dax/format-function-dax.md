@@ -2,7 +2,7 @@
 description: "Learn more about: FORMAT"
 title: "FORMAT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/17/2021
+ms.date: 01/18/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -26,7 +26,7 @@ FORMAT(<value>, <format_string>[, <locale_name>])
 |--------|--------------|
 |value|A value or expression that evaluates to a single value.|
 |format_string|A string with the formatting template.|
-|locale_name|(Optional) Name of the locale to be used by the function. Possible values are strings accepted by the Windows API function [LocaleNameToLCID()](https://docs.microsoft.com/windows/win32/api/winnls/nf-winnls-localenametolcid).|
+|locale_name|(Optional) Name of the locale to be used by the function. Possible values are strings accepted by the Windows API function [LocaleNameToLCID()](/windows/win32/api/winnls/nf-winnls-localenametolcid).|
 
 ## Return value
 
@@ -43,7 +43,7 @@ A string containing **value** formatted as defined by **format_string**.
 
 - The format strings supported as an argument to the DAX FORMAT function are based on the format strings used by Visual Basic (OLE Automation), not on the format strings used by the .NET Framework. Therefore, you might get unexpected results or an error if the argument doesn't match any defined format strings. For example, "p" as an abbreviation for "Percent" isn't supported. Strings that you provide as an argument to the FORMAT function that aren't included in the list of predefined format strings are handled as part of a custom format string, or as a string literal.
 
-- To learn more specifying a locale with FORMAT, check out this [video](https://www.microsoft.com/videoplayer/embed/RWLjrD)
+- To learn more specifying a locale with FORMAT, check out this [video](https://www.microsoft.com/videoplayer/embed/RWLjrD).
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 

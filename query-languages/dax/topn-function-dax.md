@@ -2,7 +2,7 @@
 description: "Learn more about: TOPN"
 title: "TOPN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/10/2020
+ms.date: 01/18/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,35 +22,22 @@ TOPN(<n_value>, <table>, <orderBy_expression>, [<order>[, <orderBy_expression>, 
   
 ### Parameters
 
-The number of rows to return. It is any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context).  
-  
-See the remarks section to understand when the number of rows returned could possible be larger than *n_value*.  
-  
-See the remarks section to understand when an empty table is returned.  
-  
-**table** 
-Any DAX expression that returns a table of data from where to extract the top 'n' rows.  
-  
-**orderBy_expression**  
-Any DAX expression where the result value is used to sort the table and it is evaluated for each row of *table*.  
-  
-**order**
-(Optional) A value that specifies how to sort *orderBy_expression* values, ascending or descending:  
-
-|**value**|**alternate value**|**Description**|  
-|-----|-----|------|  
-|0 (zero)|FALSE|Sorts in descending order of values of *order_by*.<br /><br />This is the default value when *order* parameter is omitted.|  
-|1|TRUE|Ranks in ascending order of *order_by*.|  
+|Parameter|Definition|  
+|-------------|--------------|  
+|n_value|The number of rows to return. Any DAX expression that returns a scalar value, where the expression is to be evaluated multiple times (for each row/context). See Remarks to better understand when the number of rows returned could be larger than *n_value*.  |  
+|table|Any DAX expression that returns a table of data from where to extract the top 'n' rows. See Remarks to better understand when an empty table is returned.  |  
+|orderBy_expression|Any DAX expression where the result value is used to sort the table and evaluated for each row of *table*.  |
+|order|(Optional) A value that specifies how to sort *orderBy_expression* values:<br /><br /> - **0** (zero) or  **FALSE**. Sorts in descending order of values of *order_by*. Default when *order* parameter is omitted. <br /><br /> - **1** or **TRUE**. Ranks in ascending order of *order_by*.|
   
 ## Return value
 
-A table with the top N rows of *table* or an empty table if *n_value* is 0 (zero) or less. Rows are not necessarily sorted in any particular order.  
+A table with the top N rows of *table* or an empty table if *n_value* is 0 (zero) or less. Rows are not sorted in any particular order.  
   
 ## Remarks  
   
 - If there is a tie, in *order_by* values, at the N-th row of the table, then all tied rows are returned. Then, when there are ties at the N-th row the function might return more than n rows.  
   
-- If n_value is 0 (zero) or less then TOPN returns an empty table.  
+- If n_value is 0 (zero) or less, TOPN returns an empty table.  
   
 - TOPN does not guarantee any sort order for the results.  
 
@@ -58,8 +45,16 @@ A table with the top N rows of *table* or an empty table if *n_value* is 0 (zero
 
 ## Example
 
-The following sample creates a measure with the sales of the top 10 sold products.  
+The following formula creates a measure with the sales of the top 10 sold products.  
   
 ```dax
-= SUMX(TOPN(10, SUMMARIZE(Product, [ProductKey], "TotalSales", SUMX(RELATED(InternetSales_USD[SalesAmount_USD]), InternetSales_USD[SalesAmount_USD]) + SUMX(RELATED(ResellerSales_USD[SalesAmount_USD]), ResellerSales_USD[SalesAmount_USD]))  
+= SUMX(
+    TOPN(10, 
+        SUMMARIZE(Product, [ProductKey], "TotalSales", 
+            SUMX(RELATED(InternetSales_USD[SalesAmount_USD]), 
+            InternetSales_USD[SalesAmount_USD]) + SUMX(RELATED(ResellerSales_USD[SalesAmount_USD]), 
+            ResellerSales_USD[SalesAmount_USD])
+            )
+        )
+    )  
 ```
