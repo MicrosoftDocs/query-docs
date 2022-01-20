@@ -20,4 +20,4 @@ Number.Atan2(<b>y</b> as nullable number, <b>x</b> as nullable number) as nullab
   
 ## About
 
-Returns the angle whose tangent is the quotient `y`/`x` of the two numbers `y` and `x`.
+Returns the angle, in radians, whose tangent is the quotient `y`/`x` of the two numbers `y` and `x`.
