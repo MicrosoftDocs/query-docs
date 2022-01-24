@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Error.Record"
 title: "Error.Record | Microsoft Docs"
-ms.date: 7/30/2019
+ms.date: 1/24/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,8 +15,9 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-Error.Record(<b>reason</b> as text, optional <b>message</b> as nullable text, optional <b>detail</b> as any) as record
+Error.Record(<b>reason</b> as text, optional <b>message</b> as nullable text, optional <b>detail</b> as any, optional <b>parameters</b> as nullable list) as record
 </pre>
   
-## About  
+## About
+
 Returns an error record from the provided text values for reason, message and detail.

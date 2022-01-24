@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Accessing data functions"
 title: "Accessing data functions | Microsoft Docs"
-ms.date: 11/17/2021
+ms.date: 1/24/2022
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -9,8 +9,7 @@ author: dougklopfenstein
 ms.author: bezhan
 ---
 # Accessing data functions
- 
-  
+
 ## <a name="__toc360789771"></a>Accessing data
 
 These functions access data and return table values. Most of these functions return a table value called a **navigation table**. Navigation tables are primarily used by the Power Query user interface to provide a navigation experience over the potentially large hierarchical data sets returned.  
@@ -50,7 +49,7 @@ These functions access data and return table values. Most of these functions ret
 |[Cube.Parameters](cube-parameters.md)|Returns a table containing the set of parameters that can be applied to cube.|   
 |[Cube.Properties](cube-properties.md)|Returns a table containing the set of available properties for dimensions that are expanded in the cube.|
 | [Cube.PropertyKey](cube-propertykey.md) | Returns the key of property `property`.  |
-|[Cube.ReplaceDimensions](cube-replacedimensions.md)||
+|[Cube.ReplaceDimensions](cube-replacedimensions.md)|Replaces the set of dimensions returned by [Cube.Dimensions](/powerquery-m/cube-dimensions).|
 |[Cube.Transform](cube-transform.md)|Applies the list cube functions, transforms, on the cube.|
 |[DB2.Database](db2-database.md)|Returns a table of SQL tables and views available in a Db2 database.|  
 |[Essbase.Cubes](essbase-cubes.md)|Returns the cubes in an Essbase instance grouped by Essbase server.|
@@ -117,7 +116,8 @@ These functions access data and return table values. Most of these functions ret
 |[Teradata.Database](teradata-database.md)|Returns a table with data relating to the tables in the specified Teradata Database.|  
 |[WebAction.Request](webaction-request.md)|Creates an action that, when executed, will return the results of performing a method request against url using HTTP as a binary value.|  
 |[Web.BrowserContents](web-browsercontents.md)|Returns the HTML for the specified url, as viewed by a web browser.|  
-|[Web.Contents](web-contents.md)|Returns the contents downloaded from a web url as a binary value.| 
+|[Web.Contents](web-contents.md)|Returns the contents downloaded from a web url as a binary value.|
+|[Web.Headers](web-headers.md)|Returns the HTTP headers downloaded from the url as a record value.|
 |[Web.Page](web-page.md)|Returns the contents of an HTML webpage as a table.|  
 |[WebMethod.Delete](webmethod-delete.md) | Specifies the DELETE method for HTTP.|
 |[WebMethod.Get](webmethod-get.md) | Specifies the GET method for HTTP.|
@@ -127,6 +127,3 @@ These functions access data and return table values. Most of these functions ret
 |[WebMethod.Put](webmethod-put.md) | Specifies the PUT method for HTTP.|
 |[Xml.Document](xml-document.md)|Returns the contents of an XML document as a hierarchical table (list of records).|  
 |[Xml.Tables](xml-tables.md)|Returns the contents of an XML document as a nested collection of flattened tables.|  
-
-
-  

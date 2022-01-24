@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.SelectColumns"
 title: "Table.SelectColumns | Microsoft Docs"
-ms.date: 11/17/2021
+ms.date: 1/24/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
