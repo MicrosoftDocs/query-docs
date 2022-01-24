@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Web.Contents"
 title: "Web.Contents | Microsoft Docs"
-ms.date: 11/17/2021
+ms.date: 1/24/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -32,7 +32,9 @@ Returns the contents downloaded from `url` as binary. An optional record paramet
 * `RelativePath`: Specifying this value as text appends it to the base URL before making the request.
 * `Content`: Specifying this value changes the web request from a GET to a POST, using the value of the option as the content of the POST.
 
-The headers of the HTTP response are available as metadata on the binary result. Outside of a custom data connector context, only the Content-Type header is available.
+The HTTP request is made as either a GET (when no Content is specified) or a POST (when there is Content). POST requests may only be made anonymously.
+
+The headers of the HTTP response are available as metadata on the binary result. Outside of a custom data connector context, only a subset of response headers is available (for security reasons).
 
 ## Example 1
 

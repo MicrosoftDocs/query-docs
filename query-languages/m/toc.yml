@@ -259,6 +259,8 @@
               href: web-browsercontents.md
             - name: Web.Contents
               href: web-contents.md
+            - name: Web.Headers
+              href: web-headers.md
             - name: Web.Page
               href: web-page.md
             - name: WebMethod.Delete
@@ -1597,6 +1599,8 @@
               href: directquerycapabilities-from.md
             - name: Embedded.Value
               href: embedded-value.md
+            - name: Excel.ShapeTable
+              href: excel-shapetable.md
             - name: Graph.Nodes
               href: graph-nodes.md
             - name: Precision.Decimal
