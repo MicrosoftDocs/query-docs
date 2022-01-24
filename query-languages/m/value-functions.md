@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Value functions"
 title: "Value functions | Microsoft Docs"
-ms.date: 10/18/2021
+ms.date: 1/24/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -23,9 +23,9 @@ These functions evaluate and perform operations on values.
 |[Value.Equals](value-equals.md)|Returns whether two values are equal.|  
 |[Value.Expression](value-expression.md)|Returns an AST that represents the value's expression.|
 |[Value.NativeQuery](value-nativequery.md) | Evaluates a query against a target.|
-|[Value.NullableEquals](value-nullableequals.md)|Returns a logical value or null based on two values .| 
+|[Value.NullableEquals](value-nullableequals.md)|Returns a logical value or null based on two values .|
 |[Value.Optimize](value-optimize.md)|If value represents a query that can be optimized, returns the optimized query. Otherwise returns value.
-|[Value.Type](value-type.md) | Returns the type of the given value.| 
+|[Value.Type](value-type.md) | Returns the type of the given value.|
   
 ### <a name="__toc360789742"></a>Arithmetic operations  
   
@@ -42,8 +42,7 @@ These functions evaluate and perform operations on values.
 |------------|---------------|  
 |[Precision.Double](precision-double.md)|An optional parameter for the built-in arthimetic operators to specify double precision.|  
 |[Precision.Decimal](precision-decimal.md)|An optional parameter for the built-in arthimetic operators to specify decimal precision.|
-   
-  
+
 ### <a name="__toc360789751"></a>Parameter types  
   
 |Type|Description|  
@@ -54,14 +53,14 @@ These functions evaluate and perform operations on values.
 
 Implementation | Description
 -------------- | -----------
-[DirectQueryCapabilities.From](directquerycapabilities-from.md) | This function is intended for internal use only.
-[Embedded.Value](embedded-value.md) | Accesses a value by name in an embedded mashup.
-[Value.Firewall](value-firewall.md) | This function is intended for internal use only.
-[Variable.Value](variable-value.md) | This function is intended for internal use only.
-[SqlExpression.SchemaFrom](sqlexpression-schemafrom.md) | This function is intended for internal use only.
-[SqlExpression.ToExpression](sqlexpression-toexpression.md) | This function is intended for internal use only.
+[DirectQueryCapabilities.From](directquerycapabilities-from.md) | This function is intended for internal use only.|
+[Embedded.Value](embedded-value.md) | Accesses a value by name in an embedded mashup.|
+[Excel.ShapeTable](excel-shapetable.md) | This function is intended for internal use only.|
+[Value.Firewall](value-firewall.md) | This function is intended for internal use only.|
+[Variable.Value](variable-value.md) | This function is intended for internal use only.|
+[SqlExpression.SchemaFrom](sqlexpression-schemafrom.md) | This function is intended for internal use only.|
+[SqlExpression.ToExpression](sqlexpression-toexpression.md) | This function is intended for internal use only.|
 
-  
 ## <a name="__toc360789761"></a>Metadata  
   
 |Function|Description|  

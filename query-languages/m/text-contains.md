@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Text.Contains"
 title: "Text.Contains | Microsoft Docs"
-ms.date: 10/18/2021
+ms.date: 1/24/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -22,7 +22,7 @@ Text.Contains(<b>text</b> as nullable text, <b>substring</b> as text, optional <
 
 Detects whether `text` contains the value `substring`. Returns true if the value is found. This function doesn't support wildcards or regular expressions.
 
-The optional argument `comparer` can be used to specify case-insensitive or culture and locale aware comparisons. The following built-in comparers are available in the formula language:
+The optional argument `comparer` can be used to specify case-insensitive or culture and locale-aware comparisons. The following built-in comparers are available in the formula language:
 
 * `Comparer.Ordinal`: Used to perform a case-sensitive ordinal comparison
 * `Comparer.OrdinalIgnoreCase`: Used to perform a case-insensitive ordinal comparison

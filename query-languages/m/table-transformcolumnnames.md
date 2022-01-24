@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.TransformColumnNames"
 title: "Table.TransformColumnNames | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 1/24/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,10 +18,22 @@ ms.author: bezhan
 Table.TransformColumnNames(<b>table</b> as table, <b>nameGenerator</b> as function, optional <b>options</b> as nullable record) as table
 </pre>
   
-## About  
-Transforms column names by using the given `nameGenerator` function. Valid options: <div> `MaxLength` specifies the maximum length of new column names. If the given function results with a longer column name, the long name will be trimmed. </div> <div> `Comparer` is used to control the comparison while generating new column names. Comparers can be used to provide case insensitive or culture and locale aware comparisons. </div> <div> The following built in comparers are available in the formula language: </div> <ul> <li><code>Comparer.Ordinal</code>: Used to perform an exact ordinal comparison</li> <li><code>Comparer.OrdinalIgnoreCase</code>: Used to perform an exact ordinal case-insensitive comparison</li> <li> <code>Comparer.FromCulture</code>: Used to perform a culture aware comparison</li> </ul> 
+## About
+
+Transforms column names by using the given `nameGenerator` function. Valid options:
+
+`MaxLength` specifies the maximum length of new column names. If the given function results with a longer column name, the long name will be trimmed.
+
+`Comparer` is used to control the comparison while generating new column names. Comparers can be used to provide case-insensitive or culture and locale-aware comparisons.
+
+The following built-in comparers are available in the formula language:
+
+* `Comparer.Ordinal`: Used to perform an exact ordinal comparison
+* `Comparer.OrdinalIgnoreCase`: Used to perform an exact ordinal case-insensitive comparison
+* `Comparer.FromCulture`: Used to perform a culture-aware comparison
 
 ## Example 1
+
 Remove the `#(tab)` character from column names
 
 ```powerquery-m
@@ -31,6 +43,7 @@ Table.TransformColumnNames(Table.FromRecords({[#"Col#(tab)umn" = 1]}), Text.Clea
 <table> <tr> <th>Column</th> </tr> <tr> <td>1</td> </tr> </table>
 
 ## Example 2
+
 Transform column names to generate case-insensitive names of length 6.
 
 ```powerquery-m
