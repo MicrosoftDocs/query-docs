@@ -2,7 +2,7 @@
 description: "Learn more about: VAR"
 title: "VAR keyword (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 08/13/2021
+ms.date: 01/24/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -80,4 +80,7 @@ VAR SalesLastYear =
     return if(Sales, DIVIDE(Sales – SalesLastYear, Sales))  
 ```
 
-By using a variable, you can get the same outcome, but in a more readable way. In addition, the result of the expression is stored in the variable upon declaration. It doesn't have to be recalculated each time it is used, as it would without using a variable. This can improve the measure's performance.
+By using a variable, you can get the same outcome, but in a more readable way. And because the result of the expression is stored in the variable, the measure's performance can be significantly improved because it doesn't have to be recalculated each time it's used.
+
+## See also
+[Use variables to improve your DAX formulas](best-practices/dax-variables.md)
