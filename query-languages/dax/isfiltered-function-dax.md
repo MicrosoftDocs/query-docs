@@ -2,7 +2,7 @@
 description: "Learn more about: ISFILTERED"
 title: "ISFILTERED function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 01/04/2022
+ms.date: 01/26/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -28,13 +28,13 @@ ISFILTERED(<TableNameOrColumnName>)
   
 ## Return value
 
-TRUE when *ColumnName* or a column of *TableName* is being filtered directly. If there is no filter or if the filtering happens because a different column in the same table or in a related table is being filtered, then FALSE is returned.  
+TRUE when *ColumnName* or a column of *TableName* is being filtered directly. Otherwise returns FALSE.
   
 ## Remarks  
+
+- A column or table is said to be filtered directly when a filter is applied to *ColumnName* or any column of *TableName*.
   
-- *ColumnName* is said to be filtered directly when the filter or filters apply over the column. A column is said to be cross-filtered when a filter applied to another column in the same table or in a related table affects *ColumnName* by filtering it as well.  
-  
-- The related function [ISCROSSFILTERED](iscrossfiltered-function-dax.md) returns TRUE when *TableName* or *ColumnName* or another column in the same or related table is being filtered.  
+- A column or table is said to be cross-filtered when a filter is applied to *ColumnName*, any column of *TableName*, or to any column of a related table. Therefore, the [ISCROSSFILTERED](iscrossfiltered-function-dax.md) function also returns TRUE when *ColumnName*, any column of *TableName*, or a column of a related table is filtered.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
