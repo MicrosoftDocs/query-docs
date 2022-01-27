@@ -2,7 +2,7 @@
 description: "Learn more about: ISFILTERED"
 title: "ISFILTERED function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 01/04/2022
+ms.date: 01/26/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -28,17 +28,15 @@ ISFILTERED(<TableNameOrColumnName>)
   
 ## Return value
 
-TRUE when *ColumnName* or a column of *TableName* is being filtered directly. If there is no filter or if the filtering happens because a different column in the same table or in a related table is being filtered, then FALSE is returned.  
+TRUE when *ColumnName* or a column in *TableName* is being filtered directly. Otherwise returns FALSE.
   
 ## Remarks  
 
-- A table or column is said to be filtered *directly* when in the current filter context one or more filters are applied to that table or column. A table or column is said to be *cross-filtered* when one or more filters are applied to a related table, or another column in the same table or a related table.  
-
-- A table or column is said to be filtered *directly* when in the current filter context one or more filters are applied to that table or column. A table or column is said to be *cross-filtered* when in the current filter context one or more filters are applied to a related table, or another column in the same table or a related table.  
-
-- A column is said to be cross-filtered when a filter applied to another column in the same table or in a related table affects ColumnName by filtering it as well. 
+- A column or table is said to be filtered directly when a filter is applied to *ColumnName* or any column in *TableName*.
   
-- The related function [ISCROSSFILTERED](iscrossfiltered-function-dax.md) returns TRUE when *TableName* or *ColumnName* or another column in the same or related table is being filtered.  
+- A column or table is said to be cross-filtered when a filter is applied to *ColumnName*, any column in *TableName*, or to any column in a related table. Therefore, the [ISCROSSFILTERED](iscrossfiltered-function-dax.md) function returns TRUE when *ColumnName*, any column in *TableName*, or a column in a related table is being filtered.
+
+- A column or table can be both filtered directly and cross-filtered when a filter is applied to *ColumnName* or any column in *TableName*, but cannot be filtered directly if filters are applied only to a column in a related table.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
