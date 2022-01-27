@@ -28,15 +28,13 @@ ISFILTERED(<TableNameOrColumnName>)
   
 ## Return value
 
-TRUE when *ColumnName* or a column in *TableName* is being filtered directly. Otherwise returns FALSE.
+TRUE when *ColumnName* or a column of *TableName* is being filtered directly. Otherwise returns FALSE.
   
 ## Remarks  
 
-- A column or table is said to be filtered directly when a filter is applied to *ColumnName* or any column in *TableName*.
+- A column or table is said to be filtered directly when a filter is applied to *ColumnName* or any column of *TableName*.
   
-- A column or table is said to be cross-filtered when a filter is applied to *ColumnName*, any column in *TableName*, or to any column in a related table. Therefore, the [ISCROSSFILTERED](iscrossfiltered-function-dax.md) function returns TRUE when *ColumnName*, any column in *TableName*, or a column in a related table is being filtered.
-
-- A column or table can be both filtered directly and cross-filtered when a filter is applied to *ColumnName* or any column in *TableName*, but cannot be filtered directly if filters are applied only to a column in a related table.
+- A column or table is said to be cross-filtered when a filter is applied to *ColumnName*, any column of *TableName*, or to any column of a related table. Therefore, the [ISCROSSFILTERED](iscrossfiltered-function-dax.md) function also returns TRUE when *ColumnName*, any column of *TableName*, or a column of a related table is filtered.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
