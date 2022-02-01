@@ -8,8 +8,6 @@ Thanks for your interest in contributing to the DAX or Power Query M reference. 
 
 All pull requests are reviewed for technical accuracy and applicability.
 
-
-
 ## Code of Conduct
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
@@ -17,4 +15,4 @@ For more information, see the [Code of Conduct FAQ](https://opensource.microsoft
 
 ## License
 
-Please refer to [LICENSE](LICENSE), [LICENSE-CODE](LICENSE-CODE) and [ThirdPartyNotices](ThirdPartyNotices.md) for all Licensing information.
+Refer to [LICENSE](LICENSE), [LICENSE-CODE](LICENSE-CODE) and [ThirdPartyNotices](ThirdPartyNotices.md) for all Licensing information.
