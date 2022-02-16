@@ -1,10 +1,10 @@
 ---
 description: "Learn more about: Date functions"
 title: "Date functions | Microsoft Docs"
-ms.date: 4/7/2020
+ms.date: 2/16/2022
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: dougklo
 ms.topic: reference
 author: dougklopfenstein
 ms.author: bezhan
@@ -34,7 +34,7 @@ These functions create and manipulate the date component of date, datetime, and 
 |[Date.EndOfWeek](date-endofweek.md)|Returns a DateTime value for the end of the week.|  
 |[Date.EndOfYear](date-endofyear.md)|Returns a DateTime value for the end of the year.|  
 |[Date.From](date-from.md)|Returns a date value from a value.|  
-|[Date.FromText](date-fromtext.md)|Returns a Date value from a set of date formats and culture value.|  
+|[Date.FromText](date-fromtext.md)|Creates a Date from local, universal, and custom Date formats.|  
 |[Date.IsInCurrentDay](date-isincurrentday.md)|Indicates whether the given datetime value `dateTime` occurs during the current day, as determined by the current date and time on the system.|
 |[Date.IsInCurrentMonth](date-isincurrentmonth.md)|Returns a logical value indicating whether the given Date/DateTime/DateTimeZone occurred during the current month, as determined by the current date and time on the system.|  
 |[Date.IsInCurrentQuarter](date-isincurrentquarter.md)|Returns a logical value indicating whether the given Date/DateTime/DateTimeZone occurred during the current quarter, as determined by the current date and time on the system.|  

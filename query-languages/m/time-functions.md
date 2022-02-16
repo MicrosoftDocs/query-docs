@@ -1,10 +1,10 @@
 ---
 description: "Learn more about: Time functions"
 title: "Time functions | Microsoft Docs"
-ms.date: 4/7/2020
+ms.date: 2/16/2022
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: dougklo
 ms.topic: reference
 author: dougklopfenstein
 ms.author: bezhan
@@ -20,7 +20,7 @@ These functions create and manipulate time values.
 |------------|---------------|  
 |[Time.EndOfHour](time-endofhour.md)|Returns a DateTime value from the end of the hour.|  
 |[Time.From](time-from.md)|Returns a time value from a value.|  
-|[Time.FromText](time-fromtext.md)|Returns a Time value from a set of date formats.|  
+|[Time.FromText](time-fromtext.md)|Creates a Time from local, universal, and custom Time formats.|  
 |[Time.Hour](time-hour.md)|Returns an hour value from a DateTime value.|  
 |[Time.Minute](time-minute.md)|Returns a minute value from a DateTime value.|  
 |[Time.Second](time-second.md)|Returns a second value from a DateTime value|  

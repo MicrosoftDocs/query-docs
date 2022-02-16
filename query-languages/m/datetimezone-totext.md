@@ -1,10 +1,10 @@
 ---
 description: "Learn more about: DateTimeZone.ToText"
 title: "DateTimeZone.ToText | Microsoft Docs"
-ms.date: 9/13/2021
+ms.date: 2/16/2022
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: dougklo
 ms.topic: reference
 author: dougklopfenstein
 ms.author: bezhan
@@ -18,23 +18,44 @@ ms.author: bezhan
 DateTimeZone.ToText(<b>dateTimeZone</b> as nullable datetimezone, optional <b>options</b> as any, optional <b>culture</b> as nullable text) as nullable text
 </pre>
   
-## About  
-Returns a textual representation of `dateTimeZone`. An optional `options` may be provided to customize the formatting of the text. An optional `culture` may also be provided (for example, "en-US").
+## About
+
+Returns a textual representation of `dateTimeZone`. An optional `record` parameter, `options`, may be provided to specify additional properties. `culture` is only used for legacy workflows (see below). The `record` can contain the following fields:
+
+* `Format: A `text` value indicating the format to use. Go to https://go.microsoft.com/fwlink/?linkid=2180104 and https://go.microsoft.com/fwlink/?linkid=2180105.
+
+   Omitting this field or providing `null` will result in formatting the date using the default defined by `Culture`.
+
+* `Culture`: When `Format` is not null, `Culture` controls some format specifiers. For example, in `"en-US"` `"MMM"` is `"Jan", "Feb", "Mar", ...`, while in `"ru-RU"` `"MMM"` is `"янв", "фев", "мар", ...`. When `Format` is `null`, `Culture` controls the default format to use. When `Culture` is `null` or ommited, [Culture.Current](culture-current.md) is used.
+
+To support legacy workflows, `options` and `culture` may also be text values. This has the same behavior as if `options = [Format = options, Culture = culture]`.
 
 ## Example 1
-Get a textual representation of #datetimezone(2011, 12, 31, 11, 56, 2, 8, 0).
+
+Convert `#datetimezone(2010, 12, 31, 01, 30, 25, 2, 0)` into a `text` value. *Result output may vary depending on current culture.*
 
 ```powerquery-m
-DateTimeZone.ToText(#datetimezone(2010, 12, 31, 11, 56, 2, 8, 0))
+DateTimeZone.ToText(#datetimezone(2010, 12, 31, 01, 30, 25, 2, 0))
 ```
 
-`"12/31/2010 11:56:02 AM +08:00"`
+`"12/31/2010 1:30:25 AM +02:00"`
 
 ## Example 2
-Get a textual representation of #datetimezone(2010, 12, 31, 11, 56, 2, 10, 12) with format option.
+
+Convert using a custom format and the German culture.
 
 ```powerquery-m
-DateTimeZone.ToText(#datetimezone(2010, 12, 31, 11, 56, 2, 10, 12), "yyyy/MM/ddThh:mm:sszzz")
+DateTimeZone.ToText(#datetimezone(2010, 12, 30, 2, 4, 50.36973, -8,0), [Format="dd MMM yyyy HH:mm:ss.ffffff zzz", Culture="de-DE"])
 ```
 
-`"2010/12/31T11:56:02+10:12"`
+`"30 Dez 2010 02:04:50.369730 -08:00"`
+
+## Example 3
+
+Convert using the ISO 8601 pattern.
+
+```powerquery-m
+DateTimeZone.ToText(#datetimezone(2000, 2, 8, 3, 45, 12, 2, 0),[Format="O", Culture="en-US"])
+```
+
+`"2000-02-08T03:45:12.0000000+02:00"`

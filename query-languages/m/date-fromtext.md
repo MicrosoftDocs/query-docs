@@ -1,10 +1,10 @@
 ---
 description: "Learn more about: Date.FromText"
 title: "Date.FromText | Microsoft Docs"
-ms.date: 9/13/2021
+ms.date: 2/16/2022
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: dougklo
 ms.topic: reference
 author: dougklopfenstein
 ms.author: bezhan
@@ -15,16 +15,24 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-Date.FromText(<b>text</b> as nullable text, optional <b>options</b> as any) as nullable date 
+Date.FromText(<b>text</b> as nullable text, optional <b>options</b> as any) as nullable date
 </pre>
   
-## About  
-Creates a `date` value from a textual representation, `text`, following ISO 8601 format standard. An optional `options` may also be provided (for example, "en-US").
+## About
 
-* `Date.FromText("2010-02-19") ` // Date, yyyy-MM-dd
+Creates a `date` value from a textual representation, `text`. An optional `record` parameter, `options`, may be provided to specify additional properties. The `record` can contain the following fields:
+
+* `Format`: A `text` value indicating the format to use. Go to https://go.microsoft.com/fwlink/?linkid=2180104 and https://go.microsoft.com/fwlink/?linkid=2180105.
+
+   Omitting this field or providing `null` will result in parsing the date using a best effort.
+
+* `Culture`: When `Format` is not null, `Culture` controls some format specifiers. For example, in `"en-US"` `"MMM"` is `"Jan", "Feb", "Mar", ...`, while in `"ru-RU"` `"MMM"` is `"янв", "фев", "мар", ...`. When `Format` is `null`, `Culture` controls the default format to use. When `Culture` is `null` or ommited, [Culture.Current](culture-current.md) is used.
+
+To support legacy workflows, `options` may also be a text value. This has the same behavior as if `options = [Format = null, Culture = options]`.
 
 ## Example 1
-Convert `"December 31, 2010"` into a date value.
+
+Convert `"2010-12-31"` into a `date` value.
 
 ```powerquery-m
 Date.FromText("2010-12-31")
@@ -33,28 +41,21 @@ Date.FromText("2010-12-31")
 `#date(2010, 12, 31)`
 
 ## Example 2
-Convert `"December 31, 2010"` into a date value, with a different format
+
+Convert using a custom format and the German culture.
 
 ```powerquery-m
-Date.FromText("2010, 12, 31")
+Date.FromText("30 Dez 2010", [Format="dd MMM yyyy", Culture="de-DE"])
 ```
 
-`#date(2010, 12, 31)`
+`#date(2010, 12, 30)`
 
 ## Example 3
-Convert `"December, 2010"` into a date value.
+
+Find the date in the Gregorian calendar that corresponds to the beginning of 1400 in the Hijri calendar.
 
 ```powerquery-m
-Date.FromText("2010, 12")
+Date.FromText("1400", [Format="yyyy", Culture="ar-SA"])
 ```
 
-`#date(2010, 12, 1)`
-
-## Example 4
-Convert `"2010"` into a date value.
-
-```powerquery-m
-Date.FromText("2010")
-```
-
-`#date(2010, 1, 1)`
+`#date(1979, 11, 20)`
