@@ -22,8 +22,8 @@ Duration.From(<b>value</b> as any) as nullable duration
 
 Returns a `duration` value from the given `value`. If the given `value` is `null`, `Duration.From` returns `null`. If the given `value` is `duration`, `value` is returned. Values of the following types can be converted to a `duration` value:
 
-* `text`: A `duration` value from textual elapsed time forms (d.h:m:s). Go to [Duration.FromText](duration.fromtext.md) for details.
-* `number: A `duration` equivalent to the number of whole and fractional days expressed by `value`.
+* `text`: A `duration` value from textual elapsed time forms (d.h:m:s). Go to [Duration.FromText](duration-fromtext.md) for details.
+* `number`: A `duration` equivalent to the number of whole and fractional days expressed by `value`.
 
 If `value` is of any other type, an error is returned.
 
