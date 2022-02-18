@@ -23,7 +23,7 @@ These functions create and manipulate datetime and datetimezone values.
 |[DateTime.FixedLocalNow](datetime-fixedlocalnow.md)|Returns a DateTime value set to the current date and time on the system.|  
 |[DateTime.From](datetime-from.md)|Returns a datetime value from a value.|  
 |[DateTime.FromFileTime](datetime-fromfiletime.md)|Returns a DateTime value from the supplied number.|  
-|[DateTime.FromText](datetime-fromtext.md)|Creates a datetimezone from local and universal datetime formats.|
+|[DateTime.FromText](datetime-fromtext.md)|Creates a datetime from local and universal datetime formats.|
 |[DateTime.IsInCurrentHour](datetime-isincurrenthour.md)|Indicates whether the given datetime value occurs during the current hour, as determined by the current date and time on the system.|
 |[DateTime.IsInCurrentMinute](datetime-isincurrentminute.md)|Indicates whether the given datetime value occurs during the current minute, as determined by the current date and time on the system.|  
 |[DateTime.IsInCurrentSecond](datetime-isincurrentsecond.md)|Indicates whether the given datetime value occurs during the current second, as determined by the current date and time on the system.|

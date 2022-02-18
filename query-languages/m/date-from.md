@@ -25,7 +25,7 @@ Returns a `date` value from the given `value`. An optional `culture`> may also b
 * `text`: A `date` value from textual representation. Go to [Date.FromText](date-fromtext.md) for details.
 * `datetime`: The date component of the `value`.
 * `datetimezone`: The date component of the local datetime equivalent of `value`.
-* `number`: The date component of the datetime equivalent the OLE Automation Date expressed by `value`.
+* `number`: The date component of the datetime equivalent to the OLE Automation Date expressed by `value`.
 
 If `value` is of any other type, an error is returned.
 
