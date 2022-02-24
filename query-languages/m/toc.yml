@@ -87,6 +87,10 @@
               href: azurestorage-datalakecontents.md
             - name: AzureStorage.Tables
               href: azurestorage-tables.md
+            - name: BufferMode.Delayed
+              href: buffermode-delayed.md
+            - name: BufferMode.Eager
+              href: buffermode-eager.md
             - name: Cdm.Contents
               href: cdm-contents.md
             - name: Csv.Document

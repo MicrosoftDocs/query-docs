@@ -1,10 +1,10 @@
 ---
 description: "Learn more about: DateTime.From"
 title: "DateTime.From | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 2/16/2022
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: dougklo
 ms.topic: reference
 author: dougklopfenstein
 ms.author: bezhan
@@ -18,10 +18,20 @@ ms.author: bezhan
 DateTime.From(<b>value</b> as any, optional <b>culture</b> as nullable text) as nullable datetime
 </pre>
   
-## About  
-Returns a `datetime` value from the given `value`. An optional `culture` may also be provided (for example, "en-US"). If the given `value` is `null`, `DateTime.From` returns `null`. If the given `value` is `datetime`, `value` is returned. Values of the following types can be converted to a `datetime` value: <ul> <li><code>text</code>: A <code>datetime</code> value from textual representation. See <code>DateTime.FromText</code> for details.</li> <li><code>date</code>: A <code>datetime</code> with <code>value</code> as the date component and <code>12:00:00 AM</code> as the time component.</li> <li><code>datetimezone</code>: The local <code>datetime</code> equivalent of <code>value</code>.</li> <li><code>time</code>: A <code>datetime</code> with the date equivalent of the OLE Automation Date of <code>0</code> as the date component and <code>value</code> as the time component.</li> <li><code>number</code>: A <code>datetime</code> equivalent the OLE Automation Date expressed by <code>value</code>. </li> </ul> If `value` is of any other type, an error is returned.
+## About
+
+Returns a `datetime` value from the given `value`. An optional `culture` may also be provided (for example, "en-US"). If the given `value` is `null`, `DateTime.From` returns `null`. If the given `value` is `datetime`, `value` is returned. Values of the following types can be converted to a `datetime` value:
+
+* `text`: A `datetime` value from textual representation. Go to [DateTime.FromText](datetime-fromtext.md) for details.
+* `date`: A `datetime` with `value` as the date component and `12:00:00 AM` as the time component.
+* `datetimezone`: The local `datetime` equivalent of `value`.
+* `time`: A `datetime` with the date equivalent of the OLE Automation Date of `0` as the date component and `value` as the time component.
+* `number`: A `datetime` equivalent the OLE Automation Date expressed by `value`.
+
+If `value` is of any other type, an error is returned.
 
 ## Example 1
+
 Convert `#time(06, 45, 12)` to a `datetime` value.
 
 ```powerquery-m
@@ -31,6 +41,7 @@ DateTime.From(#time(06, 45, 12))
 `#datetime(1899, 12, 30, 06, 45, 12)`
 
 ## Example 2
+
 Convert `#date(1975, 4, 4)` to a `datetime` value.
 
 ```powerquery-m

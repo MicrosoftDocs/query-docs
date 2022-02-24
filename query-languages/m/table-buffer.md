@@ -1,10 +1,10 @@
 ---
 description: "Learn more about: Table.Buffer"
 title: "Table.Buffer | Microsoft Docs"
-ms.date: 10/18/2021
+ms.date: 2/16/2022
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: dougklo
 ms.topic: reference
 author: dougklopfenstein
 ms.author: bezhan
@@ -15,10 +15,11 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-Table.Buffer(<b>table</b> as table) as table
+Table.Buffer(<b>table</b> as table, optional <b>options</b> as nullable record) as table
 </pre>
   
-## About  
+## About
+
 Buffers a table in memory, isolating it from external changes during evaluation. Buffering is shallow. It forces the evaluation of any scalar cell values, but leaves non-scalar values (records, lists, tables, and so on) as-is.
 
 Note that using this function might or might not make your queries run faster. In some cases, it can make your queries run more slowly due to the added cost of reading all the data and storing it in memory, as well as the fact that buffering prevents downstream folding.

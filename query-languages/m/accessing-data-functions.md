@@ -1,9 +1,9 @@
 ---
 description: "Learn more about: Accessing data functions"
 title: "Accessing data functions | Microsoft Docs"
-ms.date: 1/24/2022
+ms.date: 2/16/2022
 ms.service: powerquery
-ms.reviewer: gepopell
+ms.reviewer: dougklo
 ms.topic: reference
 author: dougklopfenstein
 ms.author: bezhan
@@ -31,6 +31,8 @@ These functions access data and return table values. Most of these functions ret
 |[AzureStorage.DataLake](azurestorage-datalake.md)|Returns a navigational table containing the documents found in the specified container and its subfolders from Azure Data Lake Storage.|
 |[AzureStorage.DataLakeContents](azurestorage-datalakecontents.md)|Returns the content of the specified file from an Azure Data Lake Storage filesystem.|
 |[AzureStorage.Tables](azurestorage-tables.md)|Returns a navigational table containing a row for each table found at the account URL from an Azure storage vault. Each row contains a link to the azure table.|
+|[BufferMode.Delayed](buffermode-delayed.md)|The type of the value is computed immediately but its contents aren't buffered until data is needed, at which point the entire value is immediately buffered.|
+|[BufferMode.Eager](buffermode-eager.md)|The entire value is immediately buffered in memory before continuing.|
 |[Cdm.Contents](cdm-contents.md)|This function is unavailable because it requires .NET 4.5.|
 |[Csv.Document](csv-document.md)|Returns the contents of a CSV document as a table using the specified encoding.|
 |[CsvStyle.QuoteAfterDelimiter](csvstyle-quoteafterdelimiter.md)|Quotes in a field are only significant immediately following the delimiter.| 
