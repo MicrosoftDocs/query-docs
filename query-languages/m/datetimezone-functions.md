@@ -1,10 +1,10 @@
 ---
 description: "Learn more about: DateTimeZone functions"
 title: "DateTimeZone functions | Microsoft Docs"
-ms.date: 9/13/2021
+ms.date: 2/16/2022
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: dougklo
 ms.topic: reference
 author: dougklopfenstein
 ms.author: bezhan
@@ -22,7 +22,7 @@ These functions create and manipulate datetimezone values.
 |[DateTimeZone.FixedUtcNow](datetimezone-fixedutcnow.md)|Returns the current date and time in UTC (the GMT timezone).|  
 |[DateTimeZone.From](datetimezone-from.md)|Returns a datetimezone value from a value.|  
 |[DateTimeZone.FromFileTime](datetimezone-fromfiletime.md)|Returns a DateTimeZone from a number value.|  
-|[DateTimeZone.FromText](datetimezone-fromtext.md)|Returns a DateTimeZone value from a set of date formats and culture value.|  
+|[DateTimeZone.FromText](datetimezone-fromtext.md)|Creates a datetimezone from local, universal, and custom datetimezone formats.|  
 |[DateTimeZone.LocalNow](datetimezone-localnow.md)|Returns a DateTime value set to the current system date and time.|  
 |[DateTimeZone.RemoveZone](datetimezone-removezone.md)|Returns a datetime value with the zone information removed from the input datetimezone value.|  
 |[DateTimeZone.SwitchZone](datetimezone-switchzone.md)|Changes the timezone information for the input DateTimeZone.|  
