@@ -2,7 +2,7 @@
 description: "Learn more about: ADDMISSINGITEMS"
 title: "ADDMISSINGITEMS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 09/09/2020
+ms.date: 02/28/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -65,7 +65,7 @@ With ADDMISSINGITEMS, the following query:
 
 ```dax
 EVALUATE
-ADMISSINGITEMS (
+ADDMISSINGITEMS (
     'Sales'[CustomerId],
     SUMMARIZECOLUMNS( 
         'Sales'[CustomerId],

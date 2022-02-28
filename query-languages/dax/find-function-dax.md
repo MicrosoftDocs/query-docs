@@ -2,7 +2,7 @@
 description: "Learn more about: FIND"
 title: "FIND function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 12/10/2018
+ms.date: 02/28/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -27,7 +27,7 @@ FIND(<find_text>, <within_text>[, [<start_num>][, <NotFoundValue>]])
 |find_text|The text you want to find. Use double quotes (empty text) to match the first character in **within_text**. |
 |within_text|The text containing the text you want to find.|  
 |start_num|(optional) The character at which to start the search; if omitted, **start_num** = 1. The first character in **within_text** is character number 1.|  
-|NotFoundValue|(optional) The value that should be returned when the operation does not find a matching substring, typically 0, -1, or BLANK().|  
+|NotFoundValue|(optional) The value that should be returned when the operation does not find a matching substring, typically 0, -1, or BLANK(). If not specified, an error is returned.|  
   
 ## Return value
 
@@ -43,12 +43,38 @@ Number that shows the starting point of the text string you want to find.
   
 ## Example
 
-The following formula finds the position of the first letter of the product designation, BMX, in the string that contains the product description.  
+The following DAX query finds the position of the first letter of "Bike", in the string that contains the Reseller Name. If not found, Blank is returned.
   
 ```dax
-= FIND("BMX","line of BMX racing goods")  
+EVALUATE
+CALCULATETABLE (
+    ADDCOLUMNS (
+        TOPN ( 10, VALUES ( 'Reseller'[Reseller] ) ),
+        "Position of Bike", FIND ( "Bike", 'Reseller'[Reseller], 1, BLANK () )
+    ),
+    'Reseller'[Business Type] IN { "Specialty Bike Shop", "Value Added Reseller", "Warehouse"}
+)
 ```
-  
+
+Returns,  
+
+|Reseller  |Position of Bike |
+|---------|---------|
+|Volume Bike Sellers    |     8    |
+|Mass Market Bikes     |    13     |
+|Twin Cycles     |         |
+|Rich Department Store     |         |
+|Rental Gallery     |         |
+|Budget Toy Store     |         |
+|Global Sports Outlet     |         |
+|Online Bike Catalog     |     8    |
+|Helmets and Cycles     |         |
+|Jumbo Bikes     |    7     |
+
+
+
+
 ## See also
 
+[SEARCH](search-function-dax.md)  
 [Text functions](text-functions-dax.md)  
