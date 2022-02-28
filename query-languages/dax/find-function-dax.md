@@ -44,6 +44,8 @@ Number that shows the starting point of the text string you want to find.
 ## Example
 
 The following DAX query finds the position of the first letter of "Bike", in the string that contains the Reseller Name. If not found, Blank is returned.
+
+[!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
   
 ```dax
 EVALUATE
