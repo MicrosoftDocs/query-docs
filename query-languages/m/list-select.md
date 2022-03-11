@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.Select"
 title: "List.Select | Microsoft Docs"
-ms.date: 3/92022
+ms.date: 3/9/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell

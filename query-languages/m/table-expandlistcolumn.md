@@ -43,3 +43,4 @@ Table.FromRecords({
     [Name = "Jim", Discount = 0.15],
     [Name = "Paul", Discount = 0.15]
 })
+```
