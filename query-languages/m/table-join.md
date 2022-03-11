@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.Join"
 title: "Table.Join | Microsoft Docs"
-ms.date: 11/23/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -19,6 +19,7 @@ Table.Join(<b>table1</b> as table, <b>key1</b> as any, <b>table2</b> as table, <
 </pre>
 
 ## About
+
 Joins the rows of `table1` with the rows of `table2` based on the equality of the values of the key columns selected by `key1` (for `table1`) and `key2` (for `table2`).
 
 By default, an inner join is performed, however an optional `joinKind` may be included to specify the type of join. Options include:
@@ -33,7 +34,10 @@ By default, an inner join is performed, however an optional `joinKind` may be in
 An optional set of `keyEqualityComparers` may be included to specify how to compare the key columns. This feature is currently intended for internal use only.
 
 ## Example 1
+
 Inner join the two tables on [CustomerID]
+
+**Usage**
 
 ```powerquery-m
 Table.Join(
@@ -57,6 +61,15 @@ Table.Join(
 )
 ```
 
-<table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> <th>OrderID</th> <th>Item</th> <th>Price</th> </tr> <tr> <td>1</td> <td>Bob</td> <td>123-4567</td> <td>1</td> <td>Fishing rod</td> <td>100</td> </tr> <tr> <td>1</td> <td>Bob</td> <td>123-4567</td> <td>2</td> <td>1 lb. worms</td> <td>5</td> </tr> <tr> <td>2</td> <td>Jim</td> <td>987-6543</td> <td>3</td> <td>Fishing net</td> <td>25</td> </tr> <tr> <td>3</td> <td>Paul</td> <td>543-7890</td> <td>4</td> <td>Fish tazer</td> <td>200</td> </tr> <tr> <td>3</td> <td>Paul</td> <td>543-7890</td> <td>5</td> <td>Bandaids</td> <td>2</td> </tr> <tr> <td>1</td> <td>Bob</td> <td>123-4567</td> <td>6</td> <td>Tackle box</td> <td>20</td> </tr> </table>
+**Output**
 
-  
+```powerquery-m
+Table.FromRecords({
+    [CustomerID = 1, Name = "Bob", Phone = "123-4567", OrderID = 1, Item = "Fishing rod", Price = 100],
+    [CustomerID = 1, Name = "Bob", Phone = "123-4567", OrderID = 2, Item = "1 lb. worms", Price = 5],
+    [CustomerID = 2, Name = "Jim", Phone = "987-6543", OrderID = 3, Item = "Fishing net", Price = 25],
+    [CustomerID = 3, Name = "Paul", Phone = "543-7890", OrderID = 4, Item = "Fish tazer", Price = 200],
+    [CustomerID = 3, Name = "Paul", Phone = "543-7890", OrderID = 5, Item = "Bandaids", Price = 2],
+    [CustomerID = 1, Name = "Bob", Phone = "123-4567", OrderID = 6, Item = "Tackle box", Price = 20]
+})
+```

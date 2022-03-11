@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.ReplaceRows"
 title: "Table.ReplaceRows | Microsoft Docs"
-ms.date: 4/23/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,14 +15,23 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-Table.ReplaceRows(<b>table</b> as table, <b>offset</b> as number, <b>count</b> as number, <b>rows</b> as list) as table 
+Table.ReplaceRows(<b>table</b> as table, <b>offset</b> as number, <b>count</b> as number, <b>rows</b> as list) as table
 </pre>
   
-## About  
-Replaces a specified number of rows, `count`, in the input `table` with the specified `rows`, beginning after the `offset`. The `rows` parameter is a list of records. <ul> <li><code>table</code>: The table where the replacement is performed.</li> <li><code>offset</code>: The number of rows to skip before making the replacement.</li> <li><code>count</code>: The number of rows to replace.</li> <li><code>rows</code>: The list of row records to insert into the <code>table</code> at the location specified by the <code>offset</code>.</li> </ul> 
+## About
+
+Replaces a specified number of rows, `count`, in the input `table` with the specified `rows`, beginning after the `offset`. The `rows` parameter is a list of records. 
+
+* `table`: The table where the replacement is performed.
+* `offset`: The number of rows to skip before making the replacement.
+* `count`: The number of rows to replace.
+* `rows`: The list of row records to insert into the `table` at the location specified by the `offset`.
 
 ## Example 1
+
 Starting at position 1, replace 3 rows.
+
+**Usage**
 
 ```powerquery-m
 Table.ReplaceRows(
@@ -39,4 +48,13 @@ Table.ReplaceRows(
 )
 ```
 
-<table> <tr> <th>Column1</th> </tr> <tr> <td>1</td> </tr> <tr> <td>6</td> </tr> <tr> <td>7</td> </tr> <tr> <td>5</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [Column1 = 1],
+    [Column1 = 6],
+    [Column1 = 7],
+    [Column1 = 5]
+})
+```

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Duration.ToText"
 title: "Duration.ToText | Microsoft Docs"
-ms.date: 06/08/2020
+ms.date: 3/8/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -29,11 +29,12 @@ Returns a textual representation in the form "day.hour:mins:sec" of the given du
 
 Convert `#duration(2, 5, 55, 20)` into a text value.
 
+**Usage**
+
 ```powerquery-m
 Duration.ToText(#duration(2, 5, 55, 20))
 ```
 
-`
-"2.05:55:20"
-`
+**Output**
 
+`"2.05:55:20"`

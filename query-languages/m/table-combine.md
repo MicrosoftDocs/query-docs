@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.Combine"
 title: "Table.Combine | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -19,10 +19,14 @@ Table.Combine(<b>tables</b> as list, optional <b>columns</b> as any) as table
 </pre>
 
 ## About
+
 Returns a table that is the result of merging a list of tables, `tables`. The resulting table will have a row type structure defined by `columns` or by a union of the input types if `columns` is not specified.
 
 ## Example 1
+
 Merge the three tables together.
+
+**Usage**
 
 ```powerquery-m
 Table.Combine({
@@ -32,10 +36,21 @@ Table.Combine({
 })
 ```
 
-<table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>1</td> <td>Bob</td> <td>123-4567</td> </tr> <tr> <td>2</td> <td>Jim</td> <td>987-6543</td> </tr> <tr> <td>3</td> <td>Paul</td> <td>543-7890</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+    [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+    [CustomerID = 3, Name = "Paul", Phone = "543-7890"]
+})
+```
 
 ## Example 2
+
 Merge three tables with different structures.
+
+**Usage**
 
 ```powerquery-m
 Table.Combine({
@@ -45,10 +60,21 @@ Table.Combine({
 })
 ```
 
-<table> <tr> <th>Name</th> <th>Phone</th> <th>Fax</th> <th>Cell</th> </tr> <tr> <td>Bob</td> <td>123-4567</td> <td></td> <td></td> </tr> <tr> <td></td> <td>838-7171</td> <td>987-6543</td> <td></td> </tr> <tr> <td></td> <td></td> <td></td> <td>543-7890</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [Name = "Bob", Phone = "123-4567", Fax = null, Cell = null],
+    [Name = null, Phone = "838-7171", Fax = "987-6543", Cell = null],
+    [Name = null, Phone = null, Fax = null, Cell = "543-7890"]
+})
+```
 
 ## Example 3
+
 Merge two tables and project onto the given type.
+
+**Usage**
 
 ```powerquery-m
 Table.Combine(
@@ -61,5 +87,12 @@ Table.Combine(
 )
 ```
 
-<table> <tr> <th>CustomerID</th> <th>Name</th> </tr> <tr> <td></td> <td>Bob</td> </tr> <tr> <td></td> <td></td> </tr> <tr> <td></td> <td></td> </tr> </table>
-  
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [CustomerID = null, Name = "Bob"],
+    [CustomerID = null, Name = null],
+    [CustomerID = null, Name = null]
+})
+  ```

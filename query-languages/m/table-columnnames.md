@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.ColumnNames"
 title: "Table.ColumnNames | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,11 +18,15 @@ ms.author: bezhan
 Table.ColumnNames(<b>table</b> as table) as list
 </pre>
   
-## About  
+## About
+
 Returns the column names in the table `table` as a list of text.
 
 ## Example 1
+
 Find the column names of the table.
+
+**Usage**
 
 ```powerquery-m
 Table.ColumnNames(
@@ -35,4 +39,6 @@ Table.ColumnNames(
 )
 ```
 
-<table> <tr><td>CustomerID</td></tr> <tr><td>Name</td></tr> <tr><td>Phone</td></tr> </table>
+**Output**
+
+`{"CustomerID", "Name", "Phone"}`

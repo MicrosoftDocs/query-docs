@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.Group"
 title: "Table.Group | Microsoft Docs"
-ms.date: 5/25/2021
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,10 +15,11 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-Table.Group(<b>table</b> as table, <b>key</b> as any, <b>aggregatedColumns</b> as list, optional <b>groupKind</b> as nullable number, optional <b>comparer</b> as nullable function) as table 
+Table.Group(<b>table</b> as table, <b>key</b> as any, <b>aggregatedColumns</b> as list, optional <b>groupKind</b> as nullable number, optional <b>comparer</b> as nullable function) as table
 </pre>
   
 ## About
+
 Groups the rows of `table` by the key columns defined by `key`. The `key` can either be a single column name, or a list of column names. For each group, a record is constructed containing the key columns (and their values), along with any aggregated columns specified by `aggregatedColumns`. Optionally, `groupKind` and `comparer` may also be specified.
 
 If the data is already sorted by the key columns, then a `groupKind` of GroupKind.Local can be provided. This may improve the performance of grouping in certain cases, since all the rows with a given set of key values are assumed to be contiguous.
@@ -28,7 +29,10 @@ When passing a `comparer`, note that if it treats differing keys as equal, a row
 This function does not guarantee the ordering of the rows it returns.
 
 ## Example 1
+
 Group the table adding an aggregate column [total] which contains the sum of prices ("each List.Sum([price])").
+
+**Usage**
 
 ```powerquery-m
 Table.Group(
@@ -45,4 +49,15 @@ Table.Group(
 )
 ```
 
-<table> <tr> <th>CustomerID</th> <th>total</th> </tr> <tr> <td>1</td> <td>30</td> </tr> <tr> <td>2</td> <td>30</td> </tr> <tr> <td>3</td> <td>25</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords(
+    {
+        [CustomerID = 1, total = 30],
+        [CustomerID = 2, total = 30],
+        [CustomerID = 3, total = 25]
+    },
+    {"CustomerID", "total"}
+)
+```

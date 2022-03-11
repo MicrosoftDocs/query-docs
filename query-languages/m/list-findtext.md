@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.FindText"
 title: "List.FindText | Microsoft Docs"
-ms.date: 7/31/2019
+ms.date: 3/8/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,14 +18,20 @@ ms.author: bezhan
 List.FindText(<b>list</b> as list, <b>text</b> as text) as list
 </pre>
   
-## About  
+## About
+
 Returns a list of the values from the list `list` which contained the value `text`.
 
 ## Example 1
-Find the text values in the list {"a", "b", "ab"} that match "a". 
+
+Find the text values in the list {"a", "b", "ab"} that match "a".
+
+**Usage**
 
 ```powerquery-m
 List.FindText({"a", "b", "ab"}, "a")
 ```
 
-<table> <tr><td>a</td></tr> <tr><td>ab</td></tr> </table>
+**Output**
+
+`{"a", "ab"}`

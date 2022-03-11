@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.Buffer"
 title: "List.Buffer | Microsoft Docs"
-ms.date: 7/31/2019
+ms.date: 3/8/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,18 +15,23 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-List.Buffer(<b>list</b> as list) as list 
+List.Buffer(<b>list</b> as list) as list
 </pre>
   
-## About  
+## About
+
 Buffers the list `list` in memory. The result of this call is a stable list.
 
 ## Example 1
+
 Create a stable copy of the list {1..10}.
+
+**Usage**
 
 ```powerquery-m
 List.Buffer({1..10})
 ```
 
-<table> <tr><td>1</td></tr> <tr><td>2</td></tr> <tr><td>3</td></tr> <tr><td>4</td></tr> <tr><td>5</td></tr> <tr><td>6</td></tr> <tr><td>7</td></tr> <tr><td>8</td></tr> <tr><td>9</td></tr> <tr><td>10</td></tr> </table>
+**Output**
 
+`{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}`

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.AlternateRows"
 title: "Table.AlternateRows | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,11 +18,20 @@ ms.author: bezhan
 Table.AlternateRows(<b>table</b> as table, <b>offset</b> as number, <b>skip</b> as number, <b>take</b> as number) as table
 </pre>
   
-## About  
-Keeps the initial offset then alternates taking and skipping the following rows. <ul> <li><code>table</code>: The input table.</li> <li><code>offset</code>: The number of rows to keep before starting iterations.</li> <li><code>skip</code>: The number of rows to remove in each iteration.</li> <li><code>take</code>: The number of rows to keep in each iteration.</li> </ul> 
+## About
+
+Keeps the initial offset then alternates taking and skipping the following rows.
+
+* `table`: The input table.
+* `offset`: The number of rows to keep before starting iterations.
+* `skip`: The number of rows to remove in each iteration.
+* `take`: The number of rows to keep in each iteration.
 
 ## Example 1
+
 Return a table from the table that, starting at the first row, skips 1 value and then keeps 1 value.
+
+**Usage**
 
 ```powerquery-m
 Table.AlternateRows(
@@ -37,4 +46,11 @@ Table.AlternateRows(
 )
 ```
 
-<table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>1</td> <td>Bob</td> <td>123-4567</td> </tr> <tr> <td>3</td> <td>Paul</td> <td>543-7890</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+    [CustomerID = 3, Name = "Paul", Phone = "543-7890"]
+})
+```

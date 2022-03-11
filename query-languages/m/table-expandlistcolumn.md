@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.ExpandListColumn"
 title: "Table.ExpandListColumn | Microsoft Docs"
-ms.date: 5/13/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,11 +18,15 @@ ms.author: bezhan
 Table.ExpandListColumn(<b>table</b> as table, <b>column</b> as text) as table
 </pre>
   
-## About  
+## About
+
 Given a `table`, where a `column` is a list of values, splits the list into a row for each value. Values in the other columns are duplicated in each new row created.
 
 ## Example 1
+
 Split the list column [Name] in the table.
+
+**Usage**
 
 ```powerquery-m
 Table.ExpandListColumn(
@@ -31,4 +35,11 @@ Table.ExpandListColumn(
 )
 ```
 
-<table> <tr> <th>Name</th> <th>Discount</th> </tr> <tr> <td>Bob</td> <td>0.15</td> </tr> <tr> <td>Jim</td> <td>0.15</td> </tr> <tr> <td>Paul</td> <td>0.15</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [Name = "Bob", Discount = 0.15],
+    [Name = "Jim", Discount = 0.15],
+    [Name = "Paul", Discount = 0.15]
+})
