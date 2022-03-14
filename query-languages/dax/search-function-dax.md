@@ -39,8 +39,6 @@ The number of the starting position of the first text string from the first char
 
 - The search function is accent sensitive. Searching for "á" will find the first occurrence of 'á' but no occurrences of 'a', 'à', or the capitalized versions 'A', 'Á'.  
 
-- By using this function, you can locate one text string within a second text string, and return the position where the first string starts.  
-
 - You can use the SEARCH function to determine the location of a character or text string within another text string, and then use the MID function to return the text, or use the REPLACE function to change the text.  
 
 - If the **find_text** cannot be found in **within_text**, the formula returns an error. This behavior is like Excel, which returns #VALUE if the substring is not found. Nulls in **within_text** will be interpreted as an empty string in this context.  
@@ -68,7 +66,7 @@ CALCULATETABLE (
 
 Returns,  
 
-|Reseller  |Business Type | Position of Bike |
+|Reseller  |Business Type | Position of cycle |
 |---------|---------|---------|
 |Volume Bike Sellers    |Warehouse|        |
 |Mass Market Bikes     |Value Added Reseller|         |
