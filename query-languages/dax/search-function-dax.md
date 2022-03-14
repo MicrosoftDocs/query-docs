@@ -27,7 +27,7 @@ SEARCH(<find_text>, <within_text>[, [<start_num>][, <NotFoundValue>]])
 |find_text|The text that you want to find.<br /><br />You can use wildcard characters — the question mark (?) and asterisk (\*) — in **find_text**. A question mark matches any single character; an asterisk matches any sequence of characters. If you want to find an actual question mark or asterisk, type a tilde (~) before the character.|  
 |within_text|The text in which you want to search for **find_text**, or a column containing text.|  
 |start_num|(optional) The character position in **within_text** at which you want to start searching. If omitted, 1.|  
-|NotFoundValue|(optional) The value that should be returned when the operation does not find a matching substring, typically 0, -1, or BLANK(). If not specified, an error is returned.|  
+|NotFoundValue|(optional, but strongly recommended) The value that should be returned when the operation does not find a matching substring, typically 0, -1, or BLANK(). If not specified, an error is returned.|  
   
 ## Return value
 
