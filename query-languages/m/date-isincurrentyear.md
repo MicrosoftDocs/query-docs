@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.IsInCurrentYear"
 title: "Date.IsInCurrentYear | Microsoft Docs"
-ms.date: 3/112022
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
