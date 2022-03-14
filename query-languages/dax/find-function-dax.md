@@ -43,7 +43,9 @@ Number that shows the starting point of the text string you want to find.
   
 ## Example
 
-The following DAX query finds the position of the first letter of "Bike", in the string that contains the Reseller Name. If not found, Blank is returned.
+The following DAX query finds the position of the first letter of "Bike", in the string that contains the Reseller Name. If not found, Blank is returned. 
+
+Keep in mind, FIND is case-sensitive. In this example, if "bike" were used in the \<find_text> argument, no results would be returned. Use [SEARCH](search-function-dax.md) for case-insensitive.
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
   
@@ -51,7 +53,7 @@ The following DAX query finds the position of the first letter of "Bike", in the
 EVALUATE
 CALCULATETABLE (
     ADDCOLUMNS (
-        TOPN ( 10, VALUES ( 'Reseller'[Reseller] ) ),
+        TOPN ( 10, SUMMARIZE('Reseller', [Reseller], [Business Type])),
         "Position of Bike", FIND ( "Bike", 'Reseller'[Reseller], 1, BLANK () )
     ),
     'Reseller'[Business Type] IN { "Specialty Bike Shop", "Value Added Reseller", "Warehouse"}
@@ -60,21 +62,18 @@ CALCULATETABLE (
 
 Returns,  
 
-|Reseller  |Position of Bike |
-|---------|---------|
-|Volume Bike Sellers    |     8    |
-|Mass Market Bikes     |    13     |
-|Twin Cycles     |         |
-|Rich Department Store     |         |
-|Rental Gallery     |         |
-|Budget Toy Store     |         |
-|Global Sports Outlet     |         |
-|Online Bike Catalog     |     8    |
-|Helmets and Cycles     |         |
-|Jumbo Bikes     |    7     |
-
-
-
+|Reseller  |Business Type | Position of Bike |
+|---------|---------|---------|
+|Volume Bike Sellers    |Warehouse|     8    |
+|Mass Market Bikes     |Value Added Reseller|    13     |
+|Twin Cycles     |Value Added Reseller|         |
+|Rich Department Store     |Warehouse|         |
+|Rental Gallery     |Specialty Bike Shop|         |
+|Budget Toy Store     |Warehouse|         |
+|Global Sports Outlet     |Warehouse|         |
+|Online Bike Catalog     |Warehouse|     8    |
+|Helmets and Cycles     |Value Added Reseller|         |
+|Jumbo Bikes     |Specialty Bike Shop|    7     |
 
 ## See also
 
