@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Text.Contains"
 title: "Text.Contains | Microsoft Docs"
-ms.date: 1/24/2022
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,17 +24,21 @@ Detects whether `text` contains the value `substring`. Returns true if the value
 
 The optional argument `comparer` can be used to specify case-insensitive or culture and locale-aware comparisons. The following built-in comparers are available in the formula language:
 
-* `Comparer.Ordinal`: Used to perform a case-sensitive ordinal comparison
-* `Comparer.OrdinalIgnoreCase`: Used to perform a case-insensitive ordinal comparison
-* `Comparer.FromCulture`: Used to perform a culture-aware comparison
+* [Comparer.Ordinal](/powerquery-m/comparer-ordinal): Used to perform a case-sensitive ordinal comparison
+* [Comparer.OrdinalIgnoreCase](/powerquery-m/comparer-ordinalignorecase): Used to perform a case-insensitive ordinal comparison
+* [Comparer.FromCulture](/powerquery-m/comparer-fromculture): Used to perform a culture-aware comparison
 
 ## Example 1
 
 Find if the text "Hello World" contains "Hello".
 
+**Usage**
+
 ```powerquery-m
 Text.Contains("Hello World", "Hello")
 ```
+
+**Output**
 
 `true`
 
@@ -42,9 +46,13 @@ Text.Contains("Hello World", "Hello")
 
 Find if the text "Hello World" contains "hello".
 
+**Usage**
+
 ```powerquery-m
 Text.Contains("Hello World", "hello")
 ```
+
+**Output**
 
 `false`
 
@@ -52,8 +60,12 @@ Text.Contains("Hello World", "hello")
 
 Find if the text "Hello World" contains "hello", using a case-insensitive comparer.
 
+**Usage**
+
 ```powerquery-m
 Text.Contains("Hello World", "hello", Comparer.OrdinalIgnoreCase)
 ```
+
+**Output**
 
 `true`

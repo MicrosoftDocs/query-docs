@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.IsEmpty"
 title: "Table.IsEmpty | Microsoft Docs"
-ms.date: 5/13/2020
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,11 +18,15 @@ ms.author: bezhan
 Table.IsEmpty(<b>table</b> as table) as logical 
 </pre>
   
-## About  
+## About
+
 Indicates whether the `table` contains any rows. Returns `true` if there are no rows (i.e. the table is empty), `false` otherwise.
 
 ## Example 1
+
 Determine if the table is empty.
+
+**Usage**
 
 ```powerquery-m
 Table.IsEmpty(
@@ -34,13 +38,20 @@ Table.IsEmpty(
 )
 ```
 
+**Output**
+
 `false`
 
 ## Example 2
+
 Determine if the table `({})` is empty.
+
+**Usage**
 
 ```powerquery-m
 Table.IsEmpty(Table.FromRecords({}))
 ```
+
+**Output**
 
 `true`

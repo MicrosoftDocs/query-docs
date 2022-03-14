@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number.RoundTowardZero"
 title: "Number.RoundTowardZero | Microsoft Docs"
-ms.date: 11/17/2021
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,9 +26,13 @@ Returns the result of rounding `number` based on the sign of the number. This fu
 
 Round the number -1.2 toward zero.
 
+**Usage**
+
 ``` powerquery-m
 Number.RoundTowardZero(-1.2)
 ```
+
+**Output**
 
 `-1`
 
@@ -36,9 +40,13 @@ Number.RoundTowardZero(-1.2)
 
 Round the number 1.2 toward zero.
 
+**Usage**
+
 ``` powerquery-m
 Number.RoundTowardZero(1.2)
 ```
+
+**Output**
 
 `1`
 
@@ -46,8 +54,12 @@ Number.RoundTowardZero(1.2)
 
 Round the number -1.234 to two decimal places toward zero.
 
+**Usage**
+
 ``` powerquery-m
 Number.RoundTowardZero(-1.234, 2)
 ```
+
+**Output**
 
 `-1.23`

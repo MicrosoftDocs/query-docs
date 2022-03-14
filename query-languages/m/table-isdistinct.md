@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.IsDistinct"
 title: "Table.IsDistinct | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,11 +18,15 @@ ms.author: bezhan
 Table.IsDistinct(<b>table</b> as table, optional <b>comparisonCriteria</b> as any) as logical  
 </pre>
   
-## About  
+## About
+
 Indicates whether the `table` contains only distinct rows (no duplicates). Returns `true` if the rows are distinct, `false` otherwise. An optional parameter, `comparisonCriteria`, specifies which columns of the table are tested for duplication. If `comparisonCriteria` is not specified, all columns are tested.
 
 ## Example 1
+
 Determine if the table is distinct.
+
+**Usage**
 
 ```powerquery-m
 Table.IsDistinct(
@@ -35,10 +39,15 @@ Table.IsDistinct(
 )
 ```
 
+**Output**
+
 `true`
 
 ## Example 2
+
 Determine if the table is distinct in column.
+
+**Usage**
 
 ```powerquery-m
 Table.IsDistinct(
@@ -51,5 +60,7 @@ Table.IsDistinct(
     "Name"
 )
 ```
+
+**Output**
 
 `false`

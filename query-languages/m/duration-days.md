@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Duration.Days"
 title: "Duration.Days | Microsoft Docs"
-ms.date: 7/30/2019
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -16,16 +16,22 @@ ms.author: bezhan
 
 <pre>
 Duration.Days(<b>duration</b> as nullable duration) as nullable number
-</pre> 
+</pre>
   
-## About  
+## About
+
 Returns the day component of the provided `duration` value, `duration`.
 
 ## Example 1
+
 Find the day in #duration(5, 4, 3, 2).
+
+**Usage**
 
 ```powerquery-m
 Duration.Days(#duration(5, 4, 3, 2))
 ```
+
+**Output**
 
 `5`

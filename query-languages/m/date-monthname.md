@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.MonthName"
 title: "Date.MonthName | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -19,15 +19,19 @@ Date.MonthName(<b>date</b> as any, optional <b>culture</b> as nullable text) as 
 </pre>
 
 ## About
+
 Returns the name of the month component for the provided `date`. An optional `culture` may also be provided (for example, "en-US").
 
-## Example
+## Example 1
+
 Get the month name.
+
+**Usage**
 
 ```powerquery-m
 Date.MonthName(#datetime(2011, 12, 31, 5, 0, 0), "en-US")
 ```
 
-`"December"`
+**Output**
 
-  
+`"December"`

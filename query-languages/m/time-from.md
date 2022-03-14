@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Time.From"
 title: "Time.From | Microsoft Docs"
-ms.date: 2/16/2022
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: dougklo
@@ -15,7 +15,7 @@ ms.author: bezhan
 ## Syntax
 
 <pre> 
-Time.From(<b>value</b> as any, optional <b>culture</b> as nullable text) as nullable time 
+Time.From(<b>value</b> as any, optional <b>culture</b> as nullable text) as nullable time
 </pre>
   
 ## About
@@ -33,9 +33,13 @@ If `value` is of any other type, an error is returned.
 
 Convert `0.7575` to a `time` value.
 
+**Usage**
+
 ```powerquery-m
 Time.From(0.7575)
 ```
+
+**Output**
 
 `#time(18, 10, 48)`
 
@@ -43,8 +47,12 @@ Time.From(0.7575)
 
 Convert `#datetime(1899, 12, 30, 06, 45, 12)` to a `time` value.
 
+**Usage**
+
 ```powerquery-m
 Time.From(#datetime(1899, 12, 30, 06, 45, 12))
 ```
+
+**Output**
 
 `#time(06, 45, 12)`

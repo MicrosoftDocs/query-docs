@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: WebAction.Request"
 title: "WebAction.Request | Microsoft Docs"
-ms.date: 1/24/2022
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -38,10 +38,12 @@ Note that this function is disabled in most contexts. Consider using [Web.Conten
 
 Perform a GET request against Bing.
 
+**Usage**
+
 ```powerquery-m
 WebAction.Request(WebMethod.Get, "https://bing.com")
 ```
 
-`
-Action
-`
+**Output**
+
+`Action`

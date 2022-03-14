@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Time.StartOfHour"
 title: "Time.StartOfHour | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,17 +15,23 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-Time.StartOfHour(<b>dateTime</b> as any) as any 
+Time.StartOfHour(<b>dateTime</b> as any) as any
 </pre>
   
-## About  
+## About
+
 Returns the first value of the hour given a `time`, `datetime` or `datetimezone` type.
 
 ## Example 1
+
 Find the start of the hour for October 10th, 2011, 8:10:32AM (`#datetime(2011, 10, 10, 8, 10, 32)`).
+
+**Usage**
 
 ```powerquery-m
 Time.StartOfHour(#datetime(2011, 10, 10, 8, 10, 32))
 ```
+
+**Output**
 
 `#datetime(2011, 10, 10, 8, 0, 0)`

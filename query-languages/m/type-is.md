@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Type.Is"
 title: "Type.Is | Microsoft Docs"
-ms.date: 9/13/2021
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,22 +26,26 @@ Determines if a value of `type1` is always compatible with `type2`.
 
 Determine if a value of type number can always also be treated as type any.
 
+**Usage**
+
 ```powerquery-m
 Type.Is(type number, type any)
 ```
 
-`
-true
-`
+**Output**
+
+`true`
 
 ## Example 2
 
 Determine if a value of type any can always also be treated as type number.
 
+**Usage**
+
 ```powerquery-m
 Type.Is(type any, type number)
 ```
 
-`
-false
-`
+**Output**
+
+`false`

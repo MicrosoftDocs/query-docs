@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.View"
 title: "Table.View | Microsoft Docs"
-ms.date: 11/17/2021
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -36,6 +36,8 @@ See the published Power Query custom connector documentation for a more complete
 
 Create a basic view that doesn't require accessing the rows in order to determine the type or the row count.
 
+**Usage**
+
 ``` powerquery-m
 Table.View(
     null,
@@ -46,5 +48,7 @@ Table.View(
     ]
 )
 ```
+
+**Output**
 
 `Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]})`

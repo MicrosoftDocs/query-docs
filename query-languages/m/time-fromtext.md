@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Time.FromText"
 title: "Time.FromText | Microsoft Docs"
-ms.date: 9/13/2021
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,28 +26,43 @@ Creates a `time` value from a textual representation, `text`, following ISO 8601
 * `Time.FromText("12:34:12.1254425")` // hh:mm:ss.nnnnnnn
 
 ## Example 1
+
 Convert `"10:12:31am"` into a Time value.
+
+**Usage**
 
 ```powerquery-m
 Time.FromText("10:12:31am")
 ```
 
+**Output**
+
 `#time(10, 12, 31)`
 
 ## Example 2
+
 Convert `"1012"` into a Time value.
+
+**Usage**
 
 ```powerquery-m
 Time.FromText("1012")
 ```
 
+**Output**
+
 `#time(10, 12, 00)`
 
 ## Example 3
+
 Convert `"10"` into a Time value.
+
+**Usage**
 
 ```powerquery-m
 Time.FromText("10")
 ```
+
+**Output**
 
 `#time(10, 00, 00)`

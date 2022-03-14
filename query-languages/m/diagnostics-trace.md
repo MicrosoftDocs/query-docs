@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Diagnostics.Trace"
 title: "Diagnostics.Trace | Microsoft Docs"
-ms.date: 01/16/2019
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -16,23 +16,27 @@ ms.author: bezhan
 <pre>
 Diagnostics.Trace(<b>traceLevel</b> as number, <b>message</b> as anynonnull, <b>value</b> as any, optional <b>delayed</b> as nullable logical) as any
 </pre>
- 
+
 ## About  
 
-Writes a trace <code>message</code>, if tracing is enabled, and returns <code>value</code>. An optional parameter <code>delayed</code> specifies whether to delay the evaluation of <code>value</code> until the message is traced. <code>traceLevel</code> can take one of the following values:
+Writes a trace `message`, if tracing is enabled, and returns `value`. An optional parameter `delayed` specifies whether to delay the evaluation of `value` until the message is traced. `traceLevel` can take one of the following values:
 
-- <code>TraceLevel.Critical</code>    
-- <code>TraceLevel.Error</code>    
-- <code>TraceLevel.Warning</code>  
-- <code>TraceLevel.Information</code>  
-- <code>TraceLevel.Verbose</code>
+- [TraceLevel.Critical](/powerquery-m/tracelevel-critical)
+- [TraceLevel.Error](/powerquery-m/tracelevel-error)
+- [TraceLevel.Warning](/powerquery-m/tracelevel-warning)  
+- [TraceLevel.Information](/powerquery-m/tracelevel-information)  
+- [TraceLevel.Verbose](/powerquery-m/tracelevel-verbose)
   
 ## Example 1  
 
 Trace the message before invoking Text.From function and return the result.
 
+**Usage**
+
 ```
 Diagnostics.Trace(TraceLevel.Information, "TextValueFromNumber", () => Text.From(123), true)
 ```
 
-`"123"` 
+**Output**
+
+`"123"`

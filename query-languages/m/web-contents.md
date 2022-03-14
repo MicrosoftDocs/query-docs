@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Web.Contents"
 title: "Web.Contents | Microsoft Docs"
-ms.date: 1/24/2022
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -40,6 +40,8 @@ The headers of the HTTP response are available as metadata on the binary result.
 
 Retrieve the contents of `"https://bing.com/search?q=Power+Query"` using the `RelativePath` and `Query` options. These options can be used to dynamically query a static base URL.
 
+**Usage**
+
 ```powerquery-m
 let
     searchText = "Power Query"
@@ -53,13 +55,15 @@ in
     )
 ```
 
-`
-binary
-`
+**Output**
+
+`binary`
 
 ## Example 2
 
 Perform a POST against a URL, passing a binary JSON payload and parsing the response as JSON.
+
+**Usage**
 
 ```powerquery-m
 let
@@ -78,16 +82,20 @@ in
     jsonResponse
 ```
 
-`
-table
-`
+**Output**
+
+`table`
 
 ## Example 3
 
 Connect to a secure URL that accepts an authentication key as part of its query string. Instead of hard-coding the secret key in M (which would pose a security risk), the key can be provided securely by specifying its name (not its value) in M, choosing Web API authentication, and entering the key value as part of the Web API credential. When used in this way, the following example will generate a request to `"https://contoso.com/api/customers/get?api_key=******"`.
 
+**Usage**
+
 ``` powerquery-m
 Web.Contents("https://contoso.com/api/customers/get", [ApiKeyName="api_key"])
 ```
+
+**Output**
 
 `binary`

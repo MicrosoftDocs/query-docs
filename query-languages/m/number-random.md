@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number.Random"
 title: "Number.Random | Microsoft Docs"
-ms.date: 7/31/2019
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,17 +15,23 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-Number.Random() as number 
+Number.Random() as number
 </pre>
   
-## About  
+## About
+
 Returns a random number between 0 and 1.
 
 ## Example 1
+
 Get a random number.
+
+**Usage**
 
 ```powerquery-m
 Number.Random()
 ```
+
+**Output**
 
 `0.919303`

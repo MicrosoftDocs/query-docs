@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.Buffer"
 title: "Table.Buffer | Microsoft Docs"
-ms.date: 2/16/2022
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: dougklo
@@ -28,6 +28,8 @@ Note that using this function might or might not make your queries run faster. I
 
 Load all the rows of a SQL table into memory, so that any downstream operations will no longer be able to query the SQL server.
 
+**Usage**
+
 ```powerquery-m
 let
     Source = Sql.Database("SomeSQLServer", "MyDb"),
@@ -36,6 +38,8 @@ let
 in
     BufferMyTable
 ```
+
+**Output**
 
 ```powerquery-m
 table

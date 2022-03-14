@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.RowCount"
 title: "Table.RowCount | Microsoft Docs"
-ms.date: 4/23/2020
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,14 +15,18 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-Table.RowCount(<b>table</b> as table) as number 
+Table.RowCount(<b>table</b> as table) as number
 </pre>
   
-## About  
+## About
+
 Returns the number of rows in the `table`.
 
 ## Example 1
+
 Find the number of rows in the table.
+
+**Usage**
 
 ```powerquery-m
 Table.RowCount(
@@ -33,5 +37,7 @@ Table.RowCount(
     })
 )
 ```
+
+**Output**
 
 `3`

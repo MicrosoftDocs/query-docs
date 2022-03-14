@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.Max"
 title: "List.Max | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,23 +18,34 @@ ms.author: bezhan
 List.Max(<b>list</b> as list, optional <b>default</b> as any, optional <b>comparisonCriteria</b> as any, optional <b>includeNulls</b> as nullable logical) as any
 </pre>
   
-## About  
+## About
+
 Returns the maximum item in the list `list`, or the optional default value `default` if the list is empty. An optional comparisonCriteria value, `comparisonCriteria`, may be specified to determine how to compare the items in the list. If this parameter is null, the default comparer is used.
 
 ## Example 1
+
 Find the max in the list {1, 4, 7, 3, -2, 5}.
+
+**Usage**
 
 ```powerquery-m
 List.Max({1, 4, 7, 3, -2, 5}, 1)
 ```
 
+**Output**
+
 `7`
 
 ## Example 2
-Find the max in the list {} or return -1 if it is empty. 
+
+Find the max in the list {} or return -1 if it is empty.
+
+**Usage**
 
 ```powerquery-m
 List.Max({}, -1)
 ```
+
+**Output**
 
 `-1`

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Text.EndsWith"
 title: "Text.EndsWith | Microsoft Docs"
-ms.date: 1/24/2022
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,17 +26,21 @@ Indicates whether the given text, `text`, ends with the specified value, `substr
 
 The following built-in comparers are available in the formula language:
 
-* `Comparer.Ordinal`: Used to perform an exact ordinal comparison
-* `Comparer.OrdinalIgnoreCase`: Used to perform an exact ordinal case-insensitive comparison
-* `Comparer.FromCulture`: Used to perform a culture-aware comparison
+* [Comparer.Ordinal](/powerquery-m/comparer-ordinal): Used to perform an exact ordinal comparison
+* [Comparer.OrdinalIgnoreCase](/powerquery-m/comparer-ordinalignorecase): Used to perform an exact ordinal case-insensitive comparison
+* [Comparer.FromCulture](/powerquery-m/comparer-fromculture): Used to perform a culture-aware comparison
 
 ## Example 1
 
 Check if "Hello, World" ends with "world".
 
+**Usage**
+
 ```powerquery-m
 Text.EndsWith("Hello, World", "world")
 ```
+
+**Output**
 
 `false`
 
@@ -44,8 +48,12 @@ Text.EndsWith("Hello, World", "world")
 
 Check if "Hello, World" ends with "World".
 
+**Usage**
+
 ```powerquery-m
 Text.EndsWith("Hello, World", "World")
 ```
+
+**Output**
 
 `true`

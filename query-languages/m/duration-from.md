@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Duration.From"
 title: "Duration.From | Microsoft Docs"
-ms.date: 2/16/2022
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: dougklo
@@ -31,8 +31,12 @@ If `value` is of any other type, an error is returned.
 
 Convert `2.525` into a `duration` value.
 
+**Usage**
+
 ```powerquery-m
 Duration.From(2.525)
 ```
+
+**Output**
 
 `#duration(2, 12, 36, 0)`

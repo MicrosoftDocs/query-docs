@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DateTimeZone.ToText"
 title: "DateTimeZone.ToText | Microsoft Docs"
-ms.date: 2/16/2022
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: dougklo
@@ -34,9 +34,13 @@ To support legacy workflows, `options` and `culture` may also be text values. Th
 
 Convert `#datetimezone(2010, 12, 31, 01, 30, 25, 2, 0)` into a `text` value. *Result output may vary depending on current culture.*
 
+**Usage**
+
 ```powerquery-m
 DateTimeZone.ToText(#datetimezone(2010, 12, 31, 01, 30, 25, 2, 0))
 ```
+
+**Output**
 
 `"12/31/2010 1:30:25 AM +02:00"`
 
@@ -44,9 +48,13 @@ DateTimeZone.ToText(#datetimezone(2010, 12, 31, 01, 30, 25, 2, 0))
 
 Convert using a custom format and the German culture.
 
+**Usage**
+
 ```powerquery-m
 DateTimeZone.ToText(#datetimezone(2010, 12, 30, 2, 4, 50.36973, -8,0), [Format="dd MMM yyyy HH:mm:ss.ffffff zzz", Culture="de-DE"])
 ```
+
+**Output**
 
 `"30 Dez 2010 02:04:50.369730 -08:00"`
 
@@ -54,8 +62,12 @@ DateTimeZone.ToText(#datetimezone(2010, 12, 30, 2, 4, 50.36973, -8,0), [Format="
 
 Convert using the ISO 8601 pattern.
 
+**Usage**
+
 ```powerquery-m
 DateTimeZone.ToText(#datetimezone(2000, 2, 8, 3, 45, 12, 2, 0),[Format="O", Culture="en-US"])
 ```
+
+**Output**
 
 `"2000-02-08T03:45:12.0000000+02:00"`

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Type.ListItem"
 title: "Type.ListItem | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,17 +15,23 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-Type.ListItem(<b>type</b> as type) as type 
+Type.ListItem(<b>type</b> as type) as type
 </pre>
   
-## About  
+## About
+
 Returns an item type from a list `type`.
 
 ## Example 1
+
 Find item type from the list `{number}`.
+
+**Usage**
 
 ```powerquery-m
 Type.ListItem(type {number})
 ```
+
+**Output**
 
 `type number`
