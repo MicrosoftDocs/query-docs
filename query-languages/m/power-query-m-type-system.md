@@ -1,4 +1,4 @@
----
+﻿---
 description: "Learn more about: Types in the Power Query M formula language"
 title: "Power Query M type system | Microsoft Docs"
 ms.date: 4/16/2018
@@ -32,28 +32,28 @@ _N is the set of all valid names in M. This is defined elsewhere._
 (3) *P*  := &#10216;*B*, *T*&#10217;<br/>
 _P is the set of function parameters. Each one is possibly optional, and has a type. Parameter names are irrelevant._
 
-(4) *P<sup>n</sup>*  := <font size="5">&#8899;</font><sub>*0&#8804;i&#8804;n*</sub>  &#10216;_i_, *P*<sup>*i*</sup>&#10217;<br/>
+(4) *P<sup>n</sup>*  := &#8899;<sub>*0&#8804;i&#8804;n*</sub>  &#10216;_i_, *P*<sup>*i*</sup>&#10217;<br/>
 _P<sup>n</sup> is the set of all ordered sequences of n function parameters._
 
-(5) *P*<sup>\*</sup> := <font size="5">&#8899;</font><sub>*0&#8804;i&#8804;&#8734;*</sub>  *P<sup>i</sup>*<br/>
+(5) *P*<sup>\*</sup> := &#8899;<sub>*0&#8804;i&#8804;&#8734;*</sub>  *P<sup>i</sup>*<br/>
 _P<sup>\*</sup> is the set of all possible sequences of function parameters, from length 0 on up._
 
 (6) *F*  := &#10216;*B*, *N*, *T*&#10217;<br/>
 _F is the set of all record fields. Each field is possibly optional, has a name, and a type._
 
-(7) *F*<sup>*n*</sup>  := <font size="5">&#8719;</font><sub>_0&#8804;i&#8804;n_</sub> *F*<br/>
+(7) *F*<sup>*n*</sup>  := &#8719;<sub>_0&#8804;i&#8804;n_</sub> *F*<br/>
 _F<sup>n</sup> is the set of all sets of n record fields._
 
-(8) *F*<sup>\*</sup>  := <font size="5">( &#8899;</font><sub>*0&#8804;i&#8804;&#8734;*</sub> *F*<sup>*i*</sup><font size="5"> )</font> &#8726; { _F_ | &#10216;_b<sub>1</sub>_, _n<sub>1</sub>_, _t<sub>1</sub>_&#10217;, &#10216;_b<sub>2</sub>_, _n<sub>2</sub>_, _t<sub>2</sub>_&#10217; &#8712; _F_ &#8896; _n<sub>1</sub>_ = _n<sub>2</sub>_ }<br/>
+(8) *F*<sup>\*</sup>  := ( &#8899;<sub>*0&#8804;i&#8804;&#8734;*</sub> *F*<sup>*i*</sup> ) &#8726; { _F_ | &#10216;_b<sub>1</sub>_, _n<sub>1</sub>_, _t<sub>1</sub>_&#10217;, &#10216;_b<sub>2</sub>_, _n<sub>2</sub>_, _t<sub>2</sub>_&#10217; &#8712; _F_ &#8896; _n<sub>1</sub>_ = _n<sub>2</sub>_ }<br/>
 _F<sup>\*</sup> is the set of all sets (of any length) of record fields, except for the sets where more than one field has the same name._
  
 (9) *C*  := &#10216;*N*,*T*&#10217;<br/>
 _C is the set of column types, for tables. Each column has a name and a type._
 
-(10) *C*<sup>*n*</sup>  &#8834; <font size="5">&#8899;</font><sub>_0&#8804;i&#8804;n_</sub> &#10216;*i*, *C*&#10217;<br/>
+(10) *C*<sup>*n*</sup>  &#8834; &#8899;<sub>_0&#8804;i&#8804;n_</sub> &#10216;*i*, *C*&#10217;<br/>
 _C<sup>n</sup> is the set of all ordered sequences of n column types._
  
-(11) _C_<sup>\*</sup>  := <font size="5">( &#8899;</font><sub>_0&#8804;i&#8804;&#8734;_</sub> *C*<sup>*i*</sup><font size="5"> )</font> &#8726; { *C*<sup>*m*</sup> | &#10216;*a*, &#10216;*n<sub>1</sub>*, *t<sub>1</sub>*&#10217;&#10217;, &#10216;*b*, &#10216;*n<sub>2</sub>*, *t<sub>2</sub>*&#10217;&#10217; &#8712; _C<sup>m</sup>_ &#8896; *n<sub>1</sub>* = *n<sub>2</sub>* }<br/>
+(11) _C_<sup>\*</sup>  := ( &#8899;<sub>_0&#8804;i&#8804;&#8734;_</sub> *C*<sup>*i*</sup> ) &#8726; { *C*<sup>*m*</sup> | &#10216;*a*, &#10216;*n<sub>1</sub>*, *t<sub>1</sub>*&#10217;&#10217;, &#10216;*b*, &#10216;*n<sub>2</sub>*, *t<sub>2</sub>*&#10217;&#10217; &#8712; _C<sup>m</sup>_ &#8896; *n<sub>1</sub>* = *n<sub>2</sub>* }<br/>
 _C<sup>\*</sup> is the set of all combinations (of any length) of column types, except for those where more than one column has the same name._
 
 ## M TYPES
@@ -82,7 +82,7 @@ _A Primitive Type is one from this list of M keywords._
 (19) *T*<sub>*N*</sub>  := { *t<sub>n</sub>*, u &#8712; *T* | *t<sub>n</sub>* = u+null } = nullable *t*<br/>
 _Any type can additionally be marked as being nullable, by using the_ "nullable" _keyword._
  
-(20) *T*  := _T<sub>F</sub>_ <font size="5">&#8746;</font> _T<sub>L</sub>_ <font size="5">&#8746;</font> _T<sub>R</sub>_ <font size="5">&#8746;</font> _T<sub>T</sub>_ <font size="5">&#8746;</font> _T<sub>P</sub>_ <font size="5">&#8746;</font> _T<sub>N</sub>_<br/>
+(20) *T*  := _T<sub>F</sub>_ &#8746; _T<sub>L</sub>_ &#8746; _T<sub>R</sub>_ &#8746; _T<sub>T</sub>_ &#8746; _T<sub>P</sub>_ &#8746; _T<sub>N</sub>_<br/>
 _The set of all M types is the union of these six sets of types:  
 Function Types, List Types, Record Types, Table Types, Primitive Types, and Nullable Types._
 
