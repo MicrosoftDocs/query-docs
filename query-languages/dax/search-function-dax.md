@@ -49,7 +49,7 @@ The number of the starting position of the first text string from the first char
 
 ## Example
 
-The following DAX query finds the position of the first letter of "cycle", in the string that contains the Reseller Name. If not found, Blank is returned.
+The following DAX query finds the position of the first letter of "cycle", in the string that contains the reseller name. If not found, Blank is returned.
 
 SEARCH is case-insensitive. In this example, if "cycle" or "Cycle" is used in the \<find_text> argument, results are returned for either case. Use [FIND](FIND-function-dax.md) for case-sensitive.
 

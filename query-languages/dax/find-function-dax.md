@@ -43,7 +43,7 @@ Number that shows the starting point of the text string you want to find.
   
 ## Example
 
-The following DAX query finds the position of the first letter of "Bike", in the string that contains the Reseller Name. If not found, Blank is returned. 
+The following DAX query finds the position of the first letter of "Bike", in the string that contains the reseller name. If not found, Blank is returned.
 
 Keep in mind, FIND is case-sensitive. In this example, if "bike" were used in the \<find_text> argument, no results would be returned. Use [SEARCH](search-function-dax.md) for case-insensitive.
 
