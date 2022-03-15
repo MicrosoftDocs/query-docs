@@ -81,7 +81,7 @@ in
 
 Read a list of bytes where the number of elements is determined by the first byte using a streaming list.
 
-**Output**
+**Usage**
 
 ```powerquery-m
 let
@@ -95,6 +95,6 @@ in
     listFormat(binaryData)
 ```
 
-**Usage**
+**Output**
 
 `{3, 4}`
