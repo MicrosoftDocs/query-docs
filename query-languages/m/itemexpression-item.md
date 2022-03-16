@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: ItemExpression.Item"
 title: "ItemExpression.Item | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 3/16/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -11,6 +11,7 @@ ms.author: bezhan
 
 ---
 # ItemExpression.Item
-## About
-An AST node representing the item in an item expression.
 
+## About
+
+An abstract syntax tree (AST) node representing the item in an item expression.
