@@ -88,4 +88,4 @@ The CONCATENATE function in DAX accepts only two arguments, whereas the Excel CO
   
 ## See also
 
-[CONCATENATEX](concatenatex-functions-dax.md)  
+[CONCATENATEX](concatenatex-function-dax.md)  
