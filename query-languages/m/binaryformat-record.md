@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.Record"
 title: "BinaryFormat.Record | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 3/7/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,11 +18,15 @@ ms.author: bezhan
 BinaryFormat.Record(<b>record</b> as record) as function 
 </pre>
   
-## About  
+## About
+
 Returns a binary format that reads a record. The `record` parameter specifies the format of the record. Each field in the record can have a different binary format. If a field contains a value that is not a binary format value, then no data is read for that field, and the field value is echoed to the result.
 
 ## Example 1
+
 Read a record containing one 16-bit integer and one 32-bit integer.
+
+**Usage**
 
 ```powerquery-m
 let
@@ -38,4 +42,6 @@ in
     recordFormat(binaryData)
 ```
 
-<table> <tr> <th>A</th> <td>1</td> </tr> <tr> <th>B</th> <td>2</td> </tr> </table>
+**Output**
+
+`[A = 1, B = 2]`

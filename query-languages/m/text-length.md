@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Text.Length"
 title: "Text.Length | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,14 +18,20 @@ ms.author: bezhan
 Text.Length(<b>text</b> as nullable text) as nullable number
 </pre>
   
-## About  
+## About
+
 Returns the number of characters in the text `text`.
 
 ## Example 1
+
 Find how many characters are in the text "Hello World".
+
+**Usage**
 
 ```powerquery-m
 Text.Length("Hello World")
 ```
+
+**Output**
 
 `11`

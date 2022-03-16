@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Record.TransformFields"
 title: "Record.TransformFields | Microsoft Docs"
-ms.date: 5/13/2020
+ms.date: 3/9/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -19,10 +19,18 @@ Record.TransformFields(<b>record</b> as record, <b>transformOperations</b> as li
 </pre>
 
 ## About
-Returns a record after applying transformations specified in list `transformOperations` to `record`. One or more fields may be transformed at a given time. <div>In the case of a single field being transformed, `transformOperations` is expected to be a list with two items. The first item in `transformOperations` specifies a field name, and the second item in `transformOperations` specifies the function to be used for transformation. For example, `{"Quantity", Number.FromText}`</div> <div>In the case of a multiple fields being transformed, `transformOperations` is expected to be a list of lists, where each inner list is a pair of field name and transformation operation. For example, `{{"Quantity",Number.FromText},{"UnitPrice", Number.FromText}}`</div>
+
+Returns a record after applying transformations specified in list `transformOperations` to `record`. One or more fields may be transformed at a given time.
+
+In the case of a single field being transformed, `transformOperations` is expected to be a list with two items. The first item in `transformOperations` specifies a field name, and the second item in `transformOperations` specifies the function to be used for transformation. For example, `{"Quantity", Number.FromText}`
+
+In the case of a multiple fields being transformed, `transformOperations` is expected to be a list of lists, where each inner list is a pair of field name and transformation operation. For example, `{{"Quantity",Number.FromText},{"UnitPrice", Number.FromText}}`
 
 ## Example 1
+
 Convert "Price" field to number.
+
+**Usage**
 
 ```powerquery-m
 Record.TransformFields(
@@ -31,10 +39,15 @@ Record.TransformFields(
 )
 ```
 
-<table> <tr> <th>OrderID</th> <td>1</td> </tr> <tr> <th>CustomerID</th> <td>1</td> </tr> <tr> <th>Item</th> <td>Fishing rod</td> </tr> <tr> <th>Price</th> <td>100</td> </tr> </table>
+**Output**
+
+`[OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100]`
 
 ## Example 2
+
 Convert "OrderID" and "Price" fields to numbers.
+
+**Usage**
 
 ```powerquery-m
 Record.TransformFields(
@@ -43,4 +56,6 @@ Record.TransformFields(
 )
 ```
 
-<table> <tr> <th>OrderID</th> <td>1</td> </tr> <tr> <th>CustomerID</th> <td>1</td> </tr> <tr> <th>Item</th> <td>Fishing rod</td> </tr> <tr> <th>Price</th> <td>100</td> </tr> </table>
+**Output**
+
+`[OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100]`

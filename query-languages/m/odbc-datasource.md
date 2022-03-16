@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Odbc.DataSource"
 title: "Odbc.DataSource | Microsoft Docs"
-ms.date: 10/18/2021
+ms.date: 3/14/2022
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -31,9 +31,13 @@ Returns a table of SQL tables and views from the ODBC data source specified by t
 
 Return the SQL tables and views from the provided connection string.
 
+**Usage**
+
 ```powerquery-m
 Odbc.DataSource("dsn=your_dsn")
 ```
+
+**Output**
 
 ```powerquery-m
 table

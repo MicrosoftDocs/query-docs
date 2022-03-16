@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Text.Clean"
 title: "Text.Clean | Microsoft Docs"
-ms.date: 02/03/2021
+ms.date: 3/14/2022
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -17,14 +17,20 @@ ms.author: bezhan
 Text.Clean(<b>text</b> as nullable text) as nullable text
 </pre>
   
-## About  
+## About
+
 Returns a text value with all control characters of `text` removed.
 
 ## Example 1
+
 Remove line feeds and other control characters from a text value.
+
+**Usage**
 
 ```powerquery-m
 Text.Clean("ABC#(lf)D")
 ```
+
+**Output**
 
 `"ABCD"`

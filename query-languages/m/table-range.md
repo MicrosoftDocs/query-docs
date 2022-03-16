@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.Range"
 title: "Table.Range | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,11 +18,15 @@ ms.author: bezhan
 Table.Range(<b>table</b> as table, <b>offset</b> as number, optional <b>count</b> as nullable number) as table
 </pre>
   
-## About  
+## About
+
 Returns the rows from the `table` starting at the specified `offset`. An optional parameter, `count`, specifies how many rows to return. By default, all the rows after the offset are returned.
 
 ## Example 1
+
 Return all the rows starting at offset 1 in the table.
+
+**Usage**
 
 ```powerquery-m
 Table.Range(
@@ -36,10 +40,21 @@ Table.Range(
 )
 ```
 
-<table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>2</td> <td>Jim</td> <td>987-6543</td> </tr> <tr> <td>3</td> <td>Paul</td> <td>543-7890</td> </tr> <tr> <td>4</td> <td>Ringo</td> <td>232-1550</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+    [CustomerID = 3, Name = "Paul", Phone = "543-7890"],
+    [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]
+})
+```
 
 ## Example 2
+
 Return one row starting at offset 1 in the table.
+
+**Usage**
 
 ```powerquery-m
 Table.Range(
@@ -54,4 +69,6 @@ Table.Range(
 )
 ```
 
-<table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>2</td> <td>Jim</td> <td>987-6543</td> </tr> </table>
+**Output**
+
+`Table.FromRecords({[CustomerID = 2, Name = "Jim", Phone = "987-6543"]})`

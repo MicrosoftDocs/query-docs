@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.Skip"
 title: "Table.Skip | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -16,11 +16,19 @@ ms.author: bezhan
 Table.Skip(<b>table</b> as table, optional <b>countOrCondition</b> as any) as table
 </pre>
   
-## About  
-Returns a table that does not contain the first specified number of rows, `countOrCondition`, of the table `table`. The number of rows skipped depends on the optional parameter `countOrCondition`. <ul> <li> If <code>countOrCondition</code> is omitted only the first row is skipped. </li> <li> If <code>countOrCondition</code> is a number, that many rows (starting at the top) will be skipped. </li> <li> If <code>countOrCondition</code> is a condition, the rows that meet the condition will be skipped until a row does not meet the condition.</li> </ul>
+## About
+
+Returns a table that does not contain the first specified number of rows, `countOrCondition`, of the table `table`. The number of rows skipped depends on the optional parameter `countOrCondition`.
+
+* If `countOrCondition` is omitted only the first row is skipped.
+* If `countOrCondition` is a number, that many rows (starting at the top) will be skipped.
+* If `countOrCondition` is a condition, the rows that meet the condition will be skipped until a row does not meet the condition.
 
 ## Example 1
+
 Skip the first row of the table.
+
+**Usage**
 
 ```powerquery-m
 Table.Skip(
@@ -34,10 +42,21 @@ Table.Skip(
 )
 ```
 
-<table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>2</td> <td>Jim</td> <td>987-6543</td> </tr> <tr> <td>3</td> <td>Paul</td> <td>543-7890</td> </tr> <tr> <td>4</td> <td>Ringo</td> <td>232-1550</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+    [CustomerID = 3, Name = "Paul", Phone = "543-7890"],
+    [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]
+})
+```
 
 ## Example 2
+
 Skip the first two rows of the table.
+
+**Usage**
 
 ```powerquery-m
 Table.Skip(
@@ -51,10 +70,20 @@ Table.Skip(
 )
 ```
 
-<table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>3</td> <td>Paul</td> <td>543-7890</td> </tr> <tr> <td>4</td> <td>Ringo</td> <td>232-1550</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [CustomerID = 3, Name = "Paul", Phone = "543-7890"],
+    [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]
+})
+```
 
 ## Example 3
+
 Skip the first rows where [Price] > 25 of the table.
+
+**Usage**
 
 ```powerquery-m
 Table.Skip(
@@ -73,4 +102,17 @@ Table.Skip(
 )
 ```
 
-<table> <tr> <th>OrderID</th> <th>CustomerID</th> <th>Item</th> <th>Price</th> </tr> <tr> <td>2</td> <td>1</td> <td>1 lb. worms</td> <td>5</td> </tr> <tr> <td>3</td> <td>2</td> <td>Fishing net</td> <td>25</td> </tr> <tr> <td>4</td> <td>3</td> <td>Fish tazer</td> <td>200</td> </tr> <tr> <td>5</td> <td>3</td> <td>Bandaids</td> <td>2</td> </tr> <tr> <td>6</td> <td>1</td> <td>Tackle box</td> <td>20</td> </tr> <tr> <td>7</td> <td>5</td> <td>Bait</td> <td>3.25</td> </tr> <tr> <td>8</td> <td>5</td> <td>Fishing Rod</td> <td>100</td> </tr> <tr> <td>9</td> <td>6</td> <td>Bait</td> <td>3.25</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [OrderID = 2, CustomerID = 1, Item = "1 lb. worms", Price = 5],
+    [OrderID = 3, CustomerID = 2, Item = "Fishing net", Price = 25],
+    [OrderID = 4, CustomerID = 3, Item = "Fish tazer", Price = 200],
+    [OrderID = 5, CustomerID = 3, Item = "Bandaids", Price = 2],
+    [OrderID = 6, CustomerID = 1, Item = "Tackle box", Price = 20],
+    [OrderID = 7, CustomerID = 5, Item = "Bait", Price = 3.25],
+    [OrderID = 8, CustomerID = 5, Item = "Fishing Rod", Price = 100],
+    [OrderID = 9, CustomerID = 6, Item = "Bait", Price = 3.25]
+})
+```

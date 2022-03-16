@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Function.Invoke"
 title: "Function.Invoke | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 3/8/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,14 +18,20 @@ ms.author: bezhan
 Function.Invoke(<b>function</b> as function, <b>args</b> as list) as any 
 </pre>
   
-## About  
+## About
+
 Invokes the given function using the specified list of arguments and returns the result.
 
 ## Example 1
-Invokes Record.FieldNames with one argument [A=1,B=2]
+
+Invokes [Record.FieldNames](/powerquery-m/record-fieldnames) with one argument [A=1,B=2]
+
+**Usage**
 
 ```powerquery-m
 Function.Invoke(Record.FieldNames, {[A = 1, B = 2]}
 ```
 
-<table> <tr><td>A</td></tr> <tr><td>B</td></tr> </table>
+**Output**
+
+`{"A", "B"}`

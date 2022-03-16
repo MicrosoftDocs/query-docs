@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Value.As"
 title: "Value.As | Microsoft Docs"
-ms.date: 9/13/2021
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,22 +26,26 @@ Returns the value if it's compatible with the specified type. This is equivalent
 
 Cast a number to a number.
 
+**Usage**
+
 ```powerquery-m
 Value.As(123, Number.Type)
 ```
 
-`
-123
-`
+**Output**
+
+`123`
 
 ## Example 2
 
 Attempt to cast a text value to a number.
 
+**Usage**
+
 ```powerquery-m
 Value.As("abc", type number)
 ```
 
-`
-[Expression.Error] We cannot convert the value "abc" to type Number.
-`  
+**Output**
+
+`[Expression.Error] We cannot convert the value "abc" to type Number.`  

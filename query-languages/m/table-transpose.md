@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.Transpose"
 title: "Table.Transpose | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -16,13 +16,17 @@ ms.author: bezhan
 
 <pre>
 Table.Transpose(<b>table</b> as table, optional <b>columns</b> as any) as table
-</pre> 
+</pre>
   
-## About  
+## About
+
 Makes columns into rows and rows into columns.
 
 ## Example 1
+
 Make the rows of the table of name-value pairs into columns.
+
+**Usage**
 
 ```powerquery-m
 Table.Transpose(
@@ -34,4 +38,11 @@ Table.Transpose(
 )
 ```
 
-<table> <tr> <th>Column1</th> <th>Column2</th> <th>Column3</th> </tr> <tr> <td>Full Name</td> <td>Age</td> <td>Country</td> </tr> <tr> <td>Fred</td> <td>42</td> <td>UK</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [Column1 = "Full Name", Column2 = "Age", Column3 = "Country"],
+    [Column1 = "Fred", Column2 = 42, Column3 = "UK"]
+})
+```

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Type.IsOpenRecord"
 title: "Type.IsOpenRecord | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,14 +18,20 @@ ms.author: bezhan
 Type.IsOpenRecord(<b>type</b> as type) as logical
 </pre>
   
-## About  
+## About
+
 Returns a `logical` indicating whether a record `type` is open.
 
 ## Example 1
+
 Determine if the record `type [ A = number, ...]` is open.
+
+**Usage**
 
 ```powerquery-m
 Type.IsOpenRecord(type [A = number, ...])
 ```
+
+**Output**
 
 `true`

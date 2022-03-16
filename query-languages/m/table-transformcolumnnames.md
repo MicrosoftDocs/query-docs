@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.TransformColumnNames"
 title: "Table.TransformColumnNames | Microsoft Docs"
-ms.date: 1/24/2022
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -36,15 +36,21 @@ The following built-in comparers are available in the formula language:
 
 Remove the `#(tab)` character from column names
 
+**Usage**
+
 ```powerquery-m
 Table.TransformColumnNames(Table.FromRecords({[#"Col#(tab)umn" = 1]}), Text.Clean)
 ```
 
-<table> <tr> <th>Column</th> </tr> <tr> <td>1</td> </tr> </table>
+**Output**
+
+`Table.FromRecords({[Column = 1]})`
 
 ## Example 2
 
 Transform column names to generate case-insensitive names of length 6.
+
+**Usage**
 
 ```powerquery-m
 Table.TransformColumnNames(
@@ -54,4 +60,6 @@ Table.TransformColumnNames(
 )
 ```
 
-<table> <tr> <th>Column</th> <th>cOlum1</th> <th>coLum2</th> </tr> <tr> <td>1</td> <td>2</td> <td>3</td> </tr> </table>
+**Output**
+
+`Table.FromRecords({[Column = 1, cOlum1 = 2, coLum2 = 3]})`

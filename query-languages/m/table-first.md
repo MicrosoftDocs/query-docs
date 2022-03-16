@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.First"
 title: "Table.First | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,14 +15,18 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-Table.First(<b>table</b> as table, optional <b>default</b> as any) as any 
+Table.First(<b>table</b> as table, optional <b>default</b> as any) as any
 </pre>
   
-## About  
+## About
+
 Returns the first row of the `table` or an optional default value, `default`, if the table is empty.
 
 ## Example 1
+
 Find the first row of the table.
+
+**Usage**
 
 ```powerquery-m
 Table.First(
@@ -34,13 +38,20 @@ Table.First(
 )
 ```
 
-<table> <tr> <th>CustomerID</th> <td>1</td> </tr> <tr> <th>Name</th> <td>Bob</td> </tr> <tr> <th>Phone</th> <td>123-4567</td> </tr> </table>
+**Output**
+
+`[CustomerID = 1, Name = "Bob", Phone = "123-4567"]`
 
 ## Example 2
+
 Find the first row of the table `({})` or return [a = 0, b = 0] if empty.
+
+**Usage**
 
 ```powerquery-m
 Table.First(Table.FromRecords({}), [a = 0, b = 0])
 ```
 
-<table> <tr> <th>a</th> <td>0</td> </tr> <tr> <th>b</th> <td>0</td> </tr> </table>
+**Output**
+
+`[a = 0, b = 0]`

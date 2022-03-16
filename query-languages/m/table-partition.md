@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.Partition"
 title: "Table.Partition | Microsoft Docs"
-ms.date: 4/24/2020
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,15 +15,23 @@ ms.author: bezhan
 ## Syntax
 
 <pre>  
-Table.Partition(<b>table</b> as table, <b>column</b> as text, <b>groups</b> as number, <b>hash</b> as function) as list 
+Table.Partition(<b>table</b> as table, <b>column</b> as text, <b>groups</b> as number, <b>hash</b> as function) as list
 </pre>
   
-## About  
-Partitions the <code>table</code> into a list of <code>groups</code> number of tables, based on the value of the <code>column</code> and a <code>hash</code> function. The <code>hash</code> function is applied to the value of the <code>column</code> row to obtain a hash value for the row. The hash value modulo <code>groups</code> determines in which of the returned tables the row will be placed. <ul> <li><code>table</code>: The table to partition.</li> <li><code>column</code>: The column to hash to determine which returned table the row is in.</li> <li><code>groups</code>: The number of tables the input table will be partitioned into.</li> <li><code>hash</code>: The function applied to obtain a hash value.</li> </ul>  
+## About
+
+Partitions the `table` into a list of `groups` number of tables, based on the value of the `column` and a `hash` function. The `hash` function is applied to the value of the `column` row to obtain a hash value for the row. The hash value modulo `groups` determines in which of the returned tables the row will be placed.
+
+* `table`: The table to partition.
+* `column`: The column to hash to determine which returned table the row is in.
+* `groups`: The number of tables the input table will be partitioned into.
+* `hash`: The function applied to obtain a hash value.  
   
-## Example  
+## Example 1
 
 Partition the table <code>({[a = 2, b = 4], [a = 6, b = 8], [a = 2, b = 4], [a = 1, b = 4]})</code> into 2 tables on column [a], using the value of the columns as the hash function.
+
+**Usage**
 
 ```powerquery-m
 Table.Partition(
@@ -39,7 +47,9 @@ Table.Partition(
 )
 ```
 
-```
+**Output**
+
+```powerquery-m
 {
     Table.FromRecords({
         [a = 2, b = 4],

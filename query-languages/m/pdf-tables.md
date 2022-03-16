@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Pdf.Tables"
 title: "Pdf.Tables | Microsoft Docs"
-ms.date: 6/21/2021
+ms.date: 3/14/2022
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -25,14 +25,19 @@ Returns any tables found in `pdf`. An optional record parameter, `options`, may 
 * `StartPage`: Specifies the first page in the range of pages to examine. Default: 1.
 * `EndPage`: Specifies the last page in the range of pages to examine. Default: the last page of the document.
 * `MultiPageTables`: Controls whether similar tables on consecutive pages will be automatically combined into a single table. Default: true.
-* `EnforceBorderLines`: Controls whether border lines are always enforced as cell boundaries (when true), or simply used as one hint among many for determining cell boundaries (when false). Default: false. 
+* `EnforceBorderLines`: Controls whether border lines are always enforced as cell boundaries (when true), or simply used as one hint among many for determining cell boundaries (when false). Default: false.
 
 ## Example 1
+
 Returns the tables contained in sample.pdf.
+
+**Usage**
 
 ```powerquery-m
 Pdf.Tables(File.Contents("c:\sample.pdf"))
 ```
+
+**Output**
 
 ```powerquery-m
 #table({"Name", "Kind", "Data"}, ...)

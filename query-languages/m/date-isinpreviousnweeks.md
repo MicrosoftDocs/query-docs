@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.IsInPreviousNWeeks"
 title: "Date.IsInPreviousNWeeks | Microsoft Docs"
-ms.date: 7/29/2019
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -19,13 +19,22 @@ Date.IsInPreviousNWeeks(<b>dateTime</b> as any, <b>weeks</b> as number) as nulla
 </pre>
 
 ## About
-Indicates whether the given datetime value `dateTime` occurs during the previous number of weeks, as determined by the current date and time on the system. Note that this function will return false when passed a value that occurs within the current week. <ul> <li><code>dateTime</code>: A <code>date</code>, <code>datetime</code>, or <code>datetimezone</code> value to be evaluated.</li> <li><code>weeks</code>: The number of weeks.</li> </ul>
+
+Indicates whether the given datetime value `dateTime` occurs during the previous number of weeks, as determined by the current date and time on the system. Note that this function will return false when passed a value that occurs within the current week.
+
+* `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
+* `weeks`: The number of weeks.
 
 ## Example 1
+
 Determine if the week before the current system time is in the previous two weeks.
+
+**Usage**
 
 ```powerquery-m
 Date.IsInPreviousNWeeks(Date.AddDays(DateTime.FixedLocalNow(), -7), 2)
 ```
+
+**Output**
 
 `true`

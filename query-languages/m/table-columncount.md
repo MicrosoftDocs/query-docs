@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.ColumnCount"
 title: "Table.ColumnCount | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,11 +18,15 @@ ms.author: bezhan
 Table.ColumnCount(<b>table</b> as table) as number
 </pre>
   
-## About  
+## About
+
 Returns the number of columns in the table `table`.
 
 ## Example 1
+
 Find the number of columns in the table.
+
+**Usage**
 
 ```powerquery-m
 Table.ColumnCount(
@@ -33,5 +37,7 @@ Table.ColumnCount(
     })
 )
 ```
+
+**Output**
 
 `3`

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Text.PositionOf"
 title: "Text.PositionOf | Microsoft Docs"
-ms.date: 1/24/2022
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -34,9 +34,13 @@ The following built-in comparers are available in the formula language:
 
 Get the position of the first occurrence of "World" in the text "Hello, World! Hello, World!".
 
+**Usage**
+
 ```powerquery-m
 Text.PositionOf("Hello, World! Hello, World!", "World")
 ```
+
+**Output**
 
 `7`
 
@@ -44,8 +48,12 @@ Text.PositionOf("Hello, World! Hello, World!", "World")
 
 Get the position of last occurrence of "World" in "Hello, World! Hello, World!".
 
+**Usage**
+
 ```powerquery-m
 Text.PositionOf("Hello, World! Hello, World!", "World", Occurrence.Last)
 ```
+
+**Output**
 
 `21`

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.Repeat"
 title: "Table.Repeat | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,11 +18,15 @@ ms.author: bezhan
 Table.Repeat(<b>table</b> as table, <b>count</b> as number) as table  
 </pre>
   
-## About  
+## About
+
 Returns a table with the rows from the input `table` repeated the specified `count` times.
 
 ## Example 1
+
 Repeat the rows in the table two times.
+
+**Usage**
 
 ```powerquery-m
 Table.Repeat(
@@ -34,4 +38,13 @@ Table.Repeat(
 
 ```
 
-<table> <tr> <th>a</th> <th>b</th> </tr> <tr> <td>1</td> <td>hello</td> </tr> <tr> <td>3</td> <td>world</td> </tr> <tr> <td>1</td> <td>hello</td> </tr> <tr> <td>3</td> <td>world</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [a = 1, b = "hello"],
+    [a = 3, b = "world"],
+    [a = 1, b = "hello"],
+    [a = 3, b = "world"]
+})
+```

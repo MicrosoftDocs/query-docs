@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.FuzzyNestedJoin"
 title: "Table.FuzzyNestedJoin | Microsoft Docs"
-ms.date: 11/23/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -24,7 +24,7 @@ Joins the rows of `table1` with the rows of `table2` based on a fuzzy matching o
 
 Fuzzy matching is a comparison based on similarity of text rather than equality of text.
 
-The optional `joinKind` specifies the kind of join to perform. By default, a left outer join is performed if a `joinKind` is not specified. Options include: 
+The optional `joinKind` specifies the kind of join to perform. By default, a left outer join is performed if a `joinKind` is not specified. Options include:
 
 * `JoinKind.Inner`
 * `JoinKind.LeftOuter`
@@ -44,32 +44,62 @@ An optional set of `joinOptions` may be included to specify how to compare the k
 * `Threshold`: A number between 0.00 and 1.00 that specifies the similarity score at which two values will be matched. For example, "Grapes" and "Graes" (missing "p") are matched only if this option is set to less than 0.90. A threshold of 1.00 is the same as specifying an exact match criteria. The default value is 0.80.
 * `TransformationTable`: A table that allows matching records based on custom value mappings. It should contain "From" and "To" columns. For example, "Grapes" is matched with "Raisins" if a transformation table is provided with the "From" column containing "Grapes" and the "To" column containing "Raisins". Note that the transformation will be applied to all occurrences of the text in the transformation table. With the above transformation table, "Grapes are sweet" will also be matched with "Raisins are sweet".
 
-## Example
+## Example 1
 
 Left inner fuzzy join of two tables based on [FirstName]
 
+**Usage**
+
 ```powerquery-m
 Table.FuzzyNestedJoin(
-	  Table.FromRecords(
+    Table.FromRecords(
         {
-		        [CustomerID = 1, FirstName1 = "Bob", Phone = "555-1234"], 
-		        [CustomerID = 2, FirstName1 = "Robert", Phone = "555-4567"] 
-	      },
+            [CustomerID = 1, FirstName1 = "Bob", Phone = "555-1234"], 
+            [CustomerID = 2, FirstName1 = "Robert", Phone = "555-4567"] 
+        },
         type table [CustomerID = nullable number, FirstName1 = nullable text, Phone = nullable text]
     ),
-	  {"FirstName1"}, 
-	  Table.FromRecords(
+    {"FirstName1"}, 
+    Table.FromRecords(
         {
-		        [CustomerStateID = 1, FirstName2 = "Bob", State = "TX"], 
-		        [CustomerStateID = 2, FirstName2 = "bOB", State = "CA"]
-	      },
+            [CustomerStateID = 1, FirstName2 = "Bob", State = "TX"], 
+            [CustomerStateID = 2, FirstName2 = "bOB", State = "CA"]
+        },
         type table [CustomerStateID = nullable number, FirstName2 = nullable text, State = nullable text]
     ),
-	  {"FirstName2"}, 
-	  "NestedTable", 
-	  JoinKind.LeftOuter, 
-	  [IgnoreCase = true, IgnoreSpace = false] 
+    {"FirstName2"}, 
+    "NestedTable", 
+    JoinKind.LeftOuter, 
+    [IgnoreCase = true, IgnoreSpace = false] 
 )
-```   
+```
 
-<table> <tr> <th>CustomerID</th> <th>FirstName1</th> <th>Phone</th> <th>NestedTable</th> </tr> <tr> <td>1</td> <td>Bob</td> <td>555-1234</td> <td>[Table]</td> </tr> <tr> <td>2</td> <td>Robert</td> <td>555-4567</td> <td>[Table]</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [
+        CustomerID = 1,
+        FirstName1 = "Bob",
+        Phone = "555-1234",
+        NestedTable = Table.FromRecords({
+            [
+                CustomerStateID = 1,
+                FirstName2 = "Bob",
+                State = "TX"
+            ],
+            [
+                CustomerStateID = 2,
+                FirstName2 = "bOB",
+                State = "CA"
+            ]
+        })
+    ],
+    [
+        CustomerID = 2,
+        FirstName1 = "Robert",
+        Phone = "555-4567",
+        NestedTable = Table.FromRecords({})
+    ]
+})
+```

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.Max"
 title: "Table.Max | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,14 +15,18 @@ ms.author: bezhan
 ## Syntax
 
 <pre> 
-Table.Max(<b>table</b> as table, <b>comparisonCriteria</b> as any, optional <b>default</b> as any) as any 
+Table.Max(<b>table</b> as table, <b>comparisonCriteria</b> as any, optional <b>default</b> as any) as any
 </pre>
   
-## About  
-Returns the largest row in the `table`, given the `comparisonCriteria`. If the table is empty, the optional `default` value is returned. 
+## About
+
+Returns the largest row in the `table`, given the `comparisonCriteria`. If the table is empty, the optional `default` value is returned.
 
 ## Example 1
+
 Find the row with the largest value in column [a] in the table `({[a = 2, b = 4], [a = 6, b = 8]})`.
+
+**Usage**
 
 ```powerquery-m
 Table.Max(
@@ -34,13 +38,20 @@ Table.Max(
 )
 ```
 
-<table> <tr> <th>a</th> <td>6</td> </tr> <tr> <th>b</th> <td>8</td> </tr> </table>
+**Output**
+
+`[a = 6, b = 8]`
 
 ## Example 2
+
 Find the row with the largest value in column [a] in the table `({})`. Return -1 if empty.
+
+**Usage**
 
 ```powerquery-m
 Table.Max(#table({"a"}, {}), "a", -1)
 ```
+
+**Output**
 
 `-1`

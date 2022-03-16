@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Time.ToText"
 title: "Time.ToText | Microsoft Docs"
-ms.date: 2/16/2022
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: dougklo
@@ -34,9 +34,13 @@ To support legacy workflows, `options` and `culture` may also be text values. Th
 
 Convert `#time(01, 30, 25)` into a `text` value. *Result output may vary depending on current culture.*
 
+**Usage**
+
 ```powerquery-m
 Time.ToText(#time(11, 56, 2))
 ```
+
+**Output**
 
 `"11:56 AM"`
 
@@ -44,9 +48,13 @@ Time.ToText(#time(11, 56, 2))
 
 Convert using a custom format and the German culture.
 
+**Usage**
+
 ```powerquery-m
 Time.ToText(#time(11, 56, 2), [Format="hh:mm", Culture="de-DE"])
 ```
+
+**Output**
 
 `"11:56"`
 
@@ -54,8 +62,12 @@ Time.ToText(#time(11, 56, 2), [Format="hh:mm", Culture="de-DE"])
 
 Convert using standard time format.
 
+**Usage**
+
 ```powerquery-m
 Time.ToText(#time(11, 56, 2), [Format="T", Culture="de-DE"])
 ```
+
+**Output**
 
 `"11:56:02"`

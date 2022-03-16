@@ -12,12 +12,6 @@ ms.author: bezhan
 ---
 # BufferMode.Eager
 
-## Syntax
-
-<pre>
-BufferMode.Eager
-</pre>
-  
 ## About
 
 The entire value is immediately buffered in memory before continuing.

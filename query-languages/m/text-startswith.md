@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Text.StartsWith"
 title: "Text.StartsWith | Microsoft Docs"
-ms.date: 1/24/2022
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -38,9 +38,13 @@ The following built-in comparers are available in the formula language:
 
 Check if the text "Hello, World" starts with the text "hello".
 
+**Usage**
+
 ```powerquery-m
 Text.StartsWith("Hello, World", "hello")
 ```
+
+**Output**
 
 `false`
 
@@ -48,8 +52,12 @@ Text.StartsWith("Hello, World", "hello")
 
 Check if the text "Hello, World" starts with the text "Hello".
 
+**Usage**
+
 ```powerquery-m
 Text.StartsWith("Hello, World", "Hello")
 ```
+
+**Output**
 
 `true`

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.Column"
 title: "Table.Column | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 3/10/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,11 +18,15 @@ ms.author: bezhan
 Table.Column(<b>table</b> as table, <b>column</b> as text) as list
 </pre>
   
-## About  
+## About
+
 Returns the column of data specified by `column` from the table `table` as a list.
 
 ## Example 1
+
 Returns the values from the [Name] column in the table.
+
+**Usage**
 
 ```powerquery-m
 Table.Column(
@@ -36,4 +40,6 @@ Table.Column(
 )
 ```
 
-<table> <tr><td>Bob</td></tr> <tr><td>Jim</td></tr> <tr><td>Paul</td></tr> <tr><td>Ringo</td></tr> </table>
+**Output**
+
+`{"Bob", "Jim", "Paul", "Ringo"}`

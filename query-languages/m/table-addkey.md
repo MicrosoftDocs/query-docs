@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.AddKey"
 title: "Table.AddKey | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,11 +18,15 @@ ms.author: bezhan
 Table.AddKey(<b>table</b> as table, <b>columns</b> as list, <b>isPrimary</b> as logical) as table
 </pre>
   
-## About  
+## About
+
 Add a key to `table`, given `columns` is the subset of `table`'s column names that defines the key, and `isPrimary` specifies whether the key is primary.
 
 ## Example 1
+
 Add a key to {[Id = 1, Name = "Hello There"], [Id = 2, Name = "Good Bye"]} that comprise of {"Id"} and make it a primary.
+
+**Usage**
 
 ```powerquery-m
 let
@@ -36,4 +40,11 @@ in
     resultTable
 ```
 
-<table> <tr> <th>Id</th> <th>Name</th> </tr> <tr> <td>1</td> <td>Hello There</td> </tr> <tr> <td>2</td> <td>Good Bye</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [Id = 1, Name = "Hello There"],
+    [Id = 2, Name = "Good Bye"]
+})
+```

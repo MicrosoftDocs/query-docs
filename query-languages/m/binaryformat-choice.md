@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.Choice"
 title: "BinaryFormat.Choice | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 3/7/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,13 +18,25 @@ ms.author: bezhan
 BinaryFormat.Choice(<b>binaryFormat</b> as function, <b>chooseFunction</b> as function, optional <b>type</b> as nullable type, optional <b>combineFunction</b> as nullable function) as function
 </pre>
 
-
 ## About
-Returns a binary format that chooses the next binary format based on a value that has already been read. The binary format value produced by this function works in stages:<ul> <li>The binary format specified by the <code>binaryFormat</code> parameter is used to read a value.</li> <li>The value is passed to the choice function specified by the <code>chooseFunction</code> parameter.</li> <li>The choice function inspects the value and returns a second binary format.</li> <li>The second binary format is used to read a second value.</li> <li>If the combine function is specified, then the first and second values are passed to the combine function, and the resulting value is returned.</li> <li>If the combine function is not specified, the second value is returned.</li> <li>The second value is returned.</li> </ul>The optional <code>type</code> parameter indicates the type of binary format that will be returned by the choice function. Either <code>type any</code>, <code>type list</code>, or <code>type binary</code> may be specified. If the <code>type</code> parameter is not specified, then <code>type any</code> is used. If <code>type list</code> or <code>type binary</code> is used, then the system may be able to return a streaming <code>binary</code> or <code>list</code> value instead of a buffered one, which may reduce the amount of memory necessary to read the format.
+
+Returns a binary format that chooses the next binary format based on a value that has already been read. The binary format value produced by this function works in stages:
+
+* The binary format specified by the `binaryFormat` parameter is used to read a value.
+* The value is passed to the choice function specified by the `chooseFunction` parameter.
+* The choice function inspects the value and returns a second binary format.
+* The second binary format is used to read a second value.
+* If the combine function is specified, then the first and second values are passed to the combine function, and the resulting value is returned.
+* If the combine function is not specified, the second value is returned.
+* The second value is returned.
+
+The optional `type` parameter indicates the type of binary format that will be returned by the choice function. Either `type any`, `type list`, or `type binary` may be specified. If the `type` parameter is not specified, then `type any` is used. If `type list` or `type binary` is used, then the system may be able to return a streaming `binary` or `list` value instead of a buffered one, which may reduce the amount of memory necessary to read the format.
 
 ## Example 1
 
 Read a list of bytes where the number of elements is determined by the first byte.
+
+**Usage**
 
 ```powerquery-m
 let
@@ -37,11 +49,15 @@ in
     listFormat(binaryData)
 ```
 
-<table> <tr><td>3</td></tr> <tr><td>4</td></tr> </table>
+**Output**
+
+`{3,4}`
 
 ## Example 2
 
 Read a list of bytes where the number of elements is determined by the first byte, and preserve the first byte read.
+
+**Usage**
 
 ```powerquery-m
 let
@@ -57,11 +73,15 @@ in
     listFormat(binaryData)
 ```
 
-<table> <tr> <th>length</th> <td>2</td> </tr> <tr> <th>list</th> <td>[List]</td> </tr> </table>
+**Output**
 
-#### Example 3
+`[length = 2, list = {3, 4}]`
+
+## Example 3
 
 Read a list of bytes where the number of elements is determined by the first byte using a streaming list.
+
+**Usage**
 
 ```powerquery-m
 let
@@ -75,5 +95,6 @@ in
     listFormat(binaryData)
 ```
 
-<table> <tr><td>3</td></tr> <tr><td>4</td></tr> </table>
+**Output**
 
+`{3, 4}`

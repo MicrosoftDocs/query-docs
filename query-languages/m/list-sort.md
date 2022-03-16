@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.Sort"
 title: "List.Sort | Microsoft Docs"
-ms.date: 9/13/2021
+ms.date: 3/9/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -34,28 +34,43 @@ Sorts a list of data, `list`, according to the optional criteria specified. An o
   Value.Compare is a method that can be used to delegate this logic.
 
 ## Example 1
+
 Sort the list {2, 3, 1}.
+
+**Usage**
 
 ```powerquery-m
 List.Sort({2, 3, 1})
 ```
 
-<table> <tr><td>1</td></tr> <tr><td>2</td></tr> <tr><td>3</td></tr> </table>
+**Output**
+
+`{1, 2, 3}`
 
 ## Example 2
+
 Sort the list {2, 3, 1} in descending order.
+
+**Usage**
 
 ```powerquery-m
 List.Sort({2, 3, 1}, Order.Descending)
 ```
 
-<table> <tr><td>3</td></tr> <tr><td>2</td></tr> <tr><td>1</td></tr> </table>
+**Output**
+
+`{3, 2, 1}`
 
 ## Example 3
+
 Sort the list {2, 3, 1} in descending order using the Value.Compare method.
+
+**Usage**
 
 ```powerquery-m
 List.Sort({2, 3, 1}, (x, y) => Value.Compare(1/x, 1/y))
 ```
 
-<table> <tr><td>3</td></tr> <tr><td>2</td></tr> <tr><td>1</td></tr> </table>
+**Output**
+
+`{3, 2, 1}`

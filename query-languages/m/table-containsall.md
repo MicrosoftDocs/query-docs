@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.ContainsAll"
 title: "Table.ContainsAll | Microsoft Docs"
-ms.date: 4/22/2020
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,11 +18,15 @@ ms.author: bezhan
 Table.ContainsAll(<b>table</b> as table, <b>rows</b> as list, optional <b>equationCriteria</b> as any) as logical
 </pre>
   
-## About  
+## About
+
 Indicates whether all the specified records in the list of records `rows`, appear as rows in the `table`. An optional parameter `equationCriteria` may be specified to control comparison between the rows of the table.
 
 ## Example 1
+
 Determine if the table contains all the rows, comparing only the column [CustomerID].
+
+**Usage**
 
 ```powerquery-m
 Table.ContainsAll(
@@ -40,10 +44,15 @@ Table.ContainsAll(
 )
 ```
 
+**Output**
+
 `true`
 
 ## Example 2
+
 Determine if the table contains all the rows.
+
+**Usage**
 
 ```powerquery-m
 Table.ContainsAll(
@@ -59,5 +68,7 @@ Table.ContainsAll(
     }
 )
 ```
+
+**Output**
 
 `false`

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.ToRows"
 title: "Table.ToRows | Microsoft Docs"
-ms.date: 4/23/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,16 +15,18 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-Table.ToRows(<b>table</b> as table) as list 
+Table.ToRows(<b>table</b> as table) as list
 </pre>
   
-## About  
+## About
+
 Creates a list of nested lists from the table, <code>table</code>. Each list item is an inner list that contains the row values.  
-  
-  
-## Example  
+
+## Example 1
 
 Create a list of the row values from the table.
+
+**Usage**
 
 ```powerquery-m
 Table.ToRows(
@@ -36,5 +38,12 @@ Table.ToRows(
 )
 ```
 
-<table> <tr><td>[List]</td></tr> <tr><td>[List]</td></tr> <tr><td>[List]</td></tr> </table>
+**Output**
 
+```powerquery-m
+{
+    {1, "Bob", "123-4567"},
+    {2, "Jim", "987-6543"},
+    {3, "Paul", "543-7890"}
+}
+```

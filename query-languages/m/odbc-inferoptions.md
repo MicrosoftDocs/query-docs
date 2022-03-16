@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Odbc.InferOptions"
 title: "Odbc.InferOptions | Microsoft Docs"
-ms.date: 10/18/2021
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,9 +26,13 @@ Returns the result of trying to infer SQL capbabilities with the connection stri
 
 Return the inferred SQL capabilities for a connection string.
 
+**Usage**
+
 ```powerquery-m
 Odbc.InferOptions("dsn=your_dsn")
 ```
+
+**Output**
 
 ```powerquery-m
 record

@@ -12,12 +12,6 @@ ms.author: bezhan
 ---
 # BufferMode.Delayed
 
-## Syntax
-
-<pre>
-BufferMode.Delayed
-</pre>
-  
 ## About
 
 The type of the value is computed immediately but its contents aren't buffered until data is needed, at which point the entire value is immediately buffered.

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number.Exp"
 title: "Number.Exp | Microsoft Docs"
-ms.date: 7/31/2019
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,18 +15,25 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-Number.Exp(<b>number</b> as nullable number) as nullable number 
+Number.Exp(<b>number</b> as nullable number) as nullable number
 </pre>
   
-## About  
-Returns the result of raising e to the power of `number` (exponential function). <ul> <li><code>number</code>: A <code>number</code> for which the exponential function is to be calculated. If <code>number</code> is null, <code>Number.Exp</code> returns null. </li> </ul>
+## About
+
+Returns the result of raising e to the power of `number` (exponential function).
+
+* `number`: A `number` for which the exponential function is to be calculated. If `number` is null, **Number.Exp** returns null.
 
 ## Example 1
+
 Raise e to the power of 3.
+
+**Usage**
 
 ```powerquery-m
 Number.Exp(3)
 ```
 
-`20.085536923187668`
+**Output**
 
+`20.085536923187668`

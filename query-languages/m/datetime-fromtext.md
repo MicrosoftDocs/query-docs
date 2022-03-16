@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DateTime.FromText"
 title: "DateTime.FromText | Microsoft Docs"
-ms.date: 2/16/2022
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: dougklo
@@ -34,9 +34,13 @@ To support legacy workflows, `options` may also be a text value. This has the sa
 
 Convert `"2010-12-31T01:30:00"` into a datetime value.
 
+**Usage**
+
 ```powerquery-m
 DateTime.FromText("2010-12-31T01:30:25")
 ```
+
+**Output**
 
 `#datetime(2010, 12, 31, 1, 30, 25)`
 
@@ -44,9 +48,13 @@ DateTime.FromText("2010-12-31T01:30:25")
 
 Convert `"2010-12-31T01:30:00.121212"` into a datetime value.
 
+**Usage**
+
 ```powerquery-m
 DateTime.FromText("30 Dez 2010 02:04:50.369730", [Format="dd MMM yyyy HH:mm:ss.ffffff", Culture="de-DE"])
 ```
+
+**Output**
 
 `#datetime(2010, 12, 30, 2, 4, 50.36973)`
 
@@ -54,9 +62,13 @@ DateTime.FromText("30 Dez 2010 02:04:50.369730", [Format="dd MMM yyyy HH:mm:ss.f
 
 Convert `"2010-12-31T01:30:00"` into a datetime value.
 
+**Usage**
+
 ```powerquery-m
 DateTime.FromText("2000-02-08T03:45:12Z", [Format="yyyy-MM-dd'T'HH:mm:ss'Z'", Culture="en-US"])
 ```
+
+**Output**
 
 `#datetime(2000, 2, 8, 3, 45, 12)`
 
@@ -64,8 +76,12 @@ DateTime.FromText("2000-02-08T03:45:12Z", [Format="yyyy-MM-dd'T'HH:mm:ss'Z'", Cu
 
 Convert `"20101231T013000"` into a datetime value.
 
+**Usage**
+
 ```powerquery-m
 DateTime.FromText("20101231T013000", [Format="yyyyMMdd'T'HHmmss", Culture="en-US"])
 ```
+
+**Output**
 
 `#datetime(2010, 12, 31, 1, 30, 0)`

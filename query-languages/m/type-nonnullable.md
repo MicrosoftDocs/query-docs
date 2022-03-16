@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Type.NonNullable"
 title: "Type.NonNullable | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,17 +15,23 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-Type.NonNullable(<b>type</b> as type) as type 
+Type.NonNullable(<b>type</b> as type) as type
 </pre>
   
-## About  
+## About
+
 Returns the non `nullable` type from the `type`.
 
 ## Example 1
+
 Return the non nullable type of `type nullable number`.
+
+**Usage**
 
 ```powerquery-m
 Type.NonNullable(type nullable number)
 ```
+
+**Output**
 
 `type number`

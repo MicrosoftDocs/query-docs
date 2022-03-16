@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.FromColumns"
 title: "Table.FromColumns | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,11 +18,15 @@ ms.author: bezhan
 Table.FromColumns(<b>lists</b> as list, optional <b>columns</b> as any) as table
 </pre>
   
-## About  
+## About
+
 Creates a table of type `columns` from a list `lists` containing nested lists with the column names and values. If some columns have more values then others, the missing values will be filled with the default value, 'null', if the columns are nullable.
 
 ## Example 1
+
 Return a table from a list of customer names in a list. Each value in the customer list item becomes a row value, and each list becomes a column.
+
+**Usage**
 
 ```powerquery-m
 Table.FromColumns({
@@ -32,10 +36,21 @@ Table.FromColumns({
 })
 ```
 
-<table> <tr> <th>Column1</th> <th>Column2</th> <th>Column3</th> </tr> <tr> <td>1</td> <td>2</td> <td>3</td> </tr> <tr> <td>Bob</td> <td>Jim</td> <td>Paul</td> </tr> <tr> <td>123-4567</td> <td>987-6543</td> <td>543-7890</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [Column1 = 1, Column2 = 2, Column3 = 3],
+    [Column1 = "Bob", Column2 = "Jim", Column3 = "Paul"],
+    [Column1 = "123-4567", Column2 = "987-6543", Column3 = "543-7890"]
+})
+```
 
 ## Example 2
+
 Create a table from a given list of columns and a list of column names.
+
+**Usage**
 
 ```powerquery-m
 Table.FromColumns(
@@ -48,10 +63,21 @@ Table.FromColumns(
 )
 ```
 
-<table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>1</td> <td>2</td> <td>3</td> </tr> <tr> <td>Bob</td> <td>Jim</td> <td>Paul</td> </tr> <tr> <td>123-4567</td> <td>987-6543</td> <td>543-7890</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [CustomerID = 1, Name = 2, Phone = 3],
+    [CustomerID = "Bob", Name = "Jim", Phone = "Paul"],
+    [CustomerID = "123-4567", Name = "987-6543", Phone = "543-7890"]
+})
+```
 
 ## Example 3
+
 Create a table with different number of columns per row. The missing row value is null.
+
+**Usage**
 
 ```powerquery-m
 Table.FromColumns(
@@ -64,4 +90,13 @@ Table.FromColumns(
 )
 ```
 
-<table> <tr> <th>column1</th> <th>column2</th> <th>column3</th> </tr> <tr> <td>1</td> <td>4</td> <td>6</td> </tr> <tr> <td>2</td> <td>5</td> <td>7</td> </tr> <tr> <td>3</td> <td></td> <td>8</td> </tr> <tr> <td></td> <td></td> <td>9</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [column1 = 1, column2 = 4, column3 = 6],
+    [column1 = 2, column2 = 5, column3 = 7],
+    [column1 = 3, column2 = null, column3 = 8],
+    [column1 = null, column2 = null, column3 = 9]
+})
+```

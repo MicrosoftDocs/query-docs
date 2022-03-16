@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.From"
 title: "Date.From | Microsoft Docs"
-ms.date: 2/16/2022
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: dougklo
@@ -33,9 +33,13 @@ If `value` is of any other type, an error is returned.
 
 Convert `43910` to a `date` value.
 
+**Usage**
+
 ```powerquery-m
 Date.From(43910)
 ```
+
+**Output**
 
 `#date(2020, 3, 20)`
 
@@ -43,8 +47,12 @@ Date.From(43910)
 
 Convert `#datetime(1899, 12, 30, 06, 45, 12)` to a `date` value.
 
+**Usage**
+
 ```powerquery-m
 Date.From(#datetime(1899, 12, 30, 06, 45, 12))
 ```
+
+**Output**
 
 `#date(1899, 12, 30)`

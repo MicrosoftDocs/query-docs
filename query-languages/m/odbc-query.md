@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Odbc.Query"
 title: "Odbc.Query | Microsoft Docs"
-ms.date: 10/18/2021
+ms.date: 3/14/2022
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -29,9 +29,13 @@ Returns the result of running `query` with the connection string `connectionStri
 
 Return the result of running a simple query against the provided connection string.
 
+**Usage**
+
 ```powerquery-m
 Odbc.Query("dsn=your_dsn", "select * from Customers")
 ```
+
+**Output**
 
 ```powerquery-m
 table

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Text.Trim"
 title: "Text.Trim | Microsoft Docs"
-ms.date: 4/22/2020
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,14 +18,20 @@ ms.author: bezhan
 Text.Trim(<b>text</b> as nullable text, optional <b>trim</b> as any) as nullable text
 </pre>
   
-## About  
+## About
+
 Returns the result of removing all leading and trailing whitespace from text value `text`.
 
 ## Example 1
+
 Remove leading and trailing whitespace from " a b c d ".
+
+**Usage**
 
 ```powerquery-m
 Text.Trim("     a b c d    ")
 ```
+
+**Output**
 
 `"a b c d"`
