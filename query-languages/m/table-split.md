@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.Split"
 title: "Table.Split | Microsoft Docs"
-ms.date: 11/17/2021
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,6 +26,8 @@ Splits `table` into a list of tables where the first element of the list is a ta
 
 Split a table of five records into tables with two records each.
 
+**Usage**
+
 ```powerquery-m
 let 
     Customers = Table.FromRecords({
@@ -37,6 +39,22 @@ let
     })
 in
     Table.Split(Customers, 2)
-```  
+```
 
-<table> <tr><td>[Table]</td></tr> <tr><td>[Table]</td></tr> <tr><td>[Table]</td></tr> </table>
+**Output**
+
+```powerquery-m
+{
+    Table.FromRecords({
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"]
+    }),
+    Table.FromRecords({
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"],
+        [CustomerID = 4, Name = "Cristina", Phone = "232-1550"]
+    }),
+    Table.FromRecords({
+        [CustomerID = 5, Name = "Anita", Phone = "530-1459"]
+    })
+}
+```

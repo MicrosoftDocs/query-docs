@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number.Abs"
 title: "Number.Abs | Microsoft Docs"
-ms.date: 7/31/2019
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -16,16 +16,24 @@ ms.author: bezhan
 
 <pre>
 Number.Abs(<b>number</b> as nullable number) as nullable number
-</pre> 
+</pre>
   
-## About  
-Returns the absolute value of `number`. If `number` is null, `Number.Abs` returns null. <ul> <li><code>number</code>: A <code>number</code> for which the absolute value is to be calculated.</li> </ul>
+## About
+
+Returns the absolute value of `number`. If `number` is null, **Number.Abs** returns null.
+
+* `number`: A `number` for which the absolute value is to be calculated.
 
 ## Example 1
+
 Absolute value of -3.
+
+**Usage**
 
 ```powerquery-m
 Number.Abs(-3)
 ```
+
+**Output**
 
 `3`

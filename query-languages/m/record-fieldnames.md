@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Record.FieldNames"
 title: "Record.FieldNames | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 3/9/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,14 +18,20 @@ ms.author: bezhan
 Record.FieldNames(<b>record</b> as record) as list
 </pre>
   
-## About  
+## About
+
 Returns the names of the fields in the record `record` as text.
 
 ## Example 1
+
 Find the names of the fields in the record.
+
+**Usage**
 
 ```powerquery-m
 Record.FieldNames([OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0])
 ```
 
-<table> <tr><td>OrderID</td></tr> <tr><td>CustomerID</td></tr> <tr><td>Item</td></tr> <tr><td>Price</td></tr> </table>
+**Output**
+
+`{"OrderID", "CustomerID", "Item", "Price"}`

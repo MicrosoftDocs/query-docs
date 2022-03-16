@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.FillUp"
 title: "Table.FillUp | Microsoft Docs"
-ms.date: 5/13/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -19,10 +19,14 @@ Table.FillUp(<b>table</b> as table, <b>columns</b> as list) as table
 </pre>
 
 ## About
+
 Returns a table from the `table` specified where the value of the next cell is propagated to the null-valued cells above in the `columns` specified.
 
 ## Example 1
+
 Return a table with the null values in column [Column2] filled with the value below them from the table.
+
+**Usage**
 
 ```powerquery-m
 Table.FillUp(
@@ -35,4 +39,12 @@ Table.FillUp(
 )
 ```
 
-<table> <tr> <th>Column1</th> <th>Column2</th> </tr> <tr> <td>1</td> <td>2</td> </tr> <tr> <td>3</td> <td>3</td> </tr> <tr> <td>5</td> <td>3</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [Column1 = 1, Column2 = 2],
+    [Column1 = 3, Column2 = 3],
+    [Column1 = 5, Column2 = 3]
+})
+```

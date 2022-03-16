@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Xml.Tables"
 title: "Xml.Tables | Microsoft Docs"
-ms.date: 9/13/2021
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,10 +26,12 @@ Returns the contents of the XML document as a nested collection of flattened tab
 
 Retrieve the contents of a local XML file.
 
+**Usage**
+
 ```powerquery-m
 Xml.Tables(File.Contents("C:\invoices.xml"))
 ```
 
-`
-table
-`
+**Output**
+
+`table`

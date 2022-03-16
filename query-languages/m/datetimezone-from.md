@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DateTimeZone.From"
 title: "DateTimeZone.From | Microsoft Docs"
-ms.date: 2/16/2022
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: dougklo
@@ -34,8 +34,12 @@ If `value` is of any other type, an error is returned.
 
 Convert `"2020-10-30T01:30:00-08:00"` to a `datetimezone` value.
 
+**Usage**
+
 ```powerquery-m
 DateTimeZone.From("2020-10-30T01:30:00-08:00")
 ```
+
+**Output**
 
 `#datetimezone(2020, 10, 30, 01, 30, 00, -8, 00)`

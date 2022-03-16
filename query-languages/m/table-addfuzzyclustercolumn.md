@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.AddFuzzyClusterColumn"
 title: "Table.AddFuzzyClusterColumn | Microsoft Docs"
-ms.date: 9/14/2020
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -20,7 +20,7 @@ Table.AddFuzzyClusterColumn(<b>table</b> as table, <b>columnName</b> as text, <b
   
 ## About  
 
-Adds a new column `newColumnName` to `table` with representative values of `columnName`. The representatives are obtained by fuzzily matching values in `columnName`, for each row. 
+Adds a new column `newColumnName` to `table` with representative values of `columnName`. The representatives are obtained by fuzzily matching values in `columnName`, for each row.
 
 An optional set of `options` may be included to specify how to compare the key columns. Options include:
 
@@ -32,7 +32,10 @@ An optional set of `options` may be included to specify how to compare the key c
 * `TransformationTable`: A table that allows grouping records based on custom value mappings. It should contain "From" and "To" columns. For example, "Grapes" is grouped with "Raisins" if a transformation table is provided with the "From" column containing "Grapes" and the "To" column containing "Raisins". Note that the transformation will be applied to all occurrences of the text in the transformation table. With the above transformation table, "Grapes are sweet" will also be grouped with "Raisins are sweet".
 
 ### Example 1
+
 Find the representative values for the location of the employees.
+
+**Usage**
 
 ```powerquery-m
 Table.AddFuzzyClusterColumn(
@@ -53,6 +56,8 @@ Table.AddFuzzyClusterColumn(
     [IgnoreCase = true, IgnoreSpace = true]
 )
 ```
+
+**Output**
 
 ```powerquery-m
 Table.FromRecords(

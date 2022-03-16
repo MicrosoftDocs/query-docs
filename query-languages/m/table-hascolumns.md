@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.HasColumns"
 title: "Table.HasColumns | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,11 +18,15 @@ ms.author: bezhan
 Table.HasColumns(<b>table</b> as table, <b>columns</b> as any) as logical 
 </pre>
   
-## About  
+## About
+
 indicates whether the `table` contains the specified column(s), `columns`. Returns `true` if the table contains the column(s), `false` otherwise.
 
 ## Example 1
+
 Determine if the table has the column [Name].
+
+**Usage**
 
 ```powerquery-m
 TTable.HasColumns(
@@ -36,10 +40,15 @@ TTable.HasColumns(
 )
 ```
 
+**Output**
+
 `true`
 
 ## Example 2
+
 Find if the table has the column [Name] and [PhoneNumber].
+
+**Usage**
 
 ```powerquery-m
 Table.HasColumns(
@@ -52,5 +61,7 @@ Table.HasColumns(
     {"Name", "PhoneNumber"}
 )
 ```
+
+**Output**
 
 `false`

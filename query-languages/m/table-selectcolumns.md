@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.SelectColumns"
 title: "Table.SelectColumns | Microsoft Docs"
-ms.date: 1/24/2022
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -30,6 +30,8 @@ Returns the `table` with only the specified `columns`.
 
 Only include column [Name].
 
+**Usage**
+
 ```powerquery-m
 Table.SelectColumns(
     Table.FromRecords({
@@ -42,11 +44,22 @@ Table.SelectColumns(
 )
 ```
 
-<table> <tr> <th>Name</th> </tr> <tr> <td>Bob</td> </tr> <tr> <td>Jim</td> </tr> <tr> <td>Paul</td> </tr> <tr> <td>Ringo</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [Name = "Bob"],
+    [Name = "Jim"],
+    [Name = "Paul"],
+    [Name = "Ringo"]
+})
+```
 
 ## Example 2
 
 Only include columns [CustomerID] and [Name].
+
+**Usage**
 
 ```powerquery-m
 Table.SelectColumns(
@@ -55,11 +68,15 @@ Table.SelectColumns(
 )
 ```
 
-<table> <tr> <th>CustomerID</th> <th>Name</th> </tr> <tr> <td>1</td> <td>Bob</td> </tr> </table>
+**Output**
+
+`Table.FromRecords({[CustomerID = 1, Name = "Bob"]})`
 
 ## Example 3
 
 If the included column does not exist, the default result is an error.
+
+**Usage**
 
 ```powerquery-m
 Table.SelectColumns(
@@ -68,11 +85,15 @@ Table.SelectColumns(
 )
 ```
 
+**Output**
+
 `[Expression.Error] The field 'NewColumn' of the record wasn't found.`
 
 ## Example 4
 
 If the included column does not exist, option `MissingField.UseNull` creates a column of null values.
+
+**Usage**
 
 ```powerquery-m
 Table.SelectColumns(
@@ -82,4 +103,6 @@ Table.SelectColumns(
 )
 ```
 
-<table> <tr> <th>CustomerID</th> <th>NewColumn</th> </tr> <tr> <td>1</td> <td></td> </tr> </table>
+**Output**
+
+`Table.FromRecords({[CustomerID = 1, NewColumn = null]})`

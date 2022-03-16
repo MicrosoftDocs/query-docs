@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Type.TableRow"
 title: "Type.TableRow | Microsoft Docs"
-ms.date: 10/18/2021
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,7 +15,7 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-Type.TableRow(<b>table</b> as type) as type 
+Type.TableRow(<b>table</b> as type) as type
 </pre>
   
 ## About
@@ -26,11 +26,15 @@ Returns the row type of the specified table type. The result will always be a re
 
 Return the row type information for a simple table.
 
+**Usage**
+
 ```powerquery-m
 let
     tableRowType = Type.TableRow(Value.Type(#table({"Column1"}, {})))
 in
     Type.RecordFields(tableRowType)
 ```
+
+**Output**
 
 `[Column1 = [Type = type any, Optional = false]]`

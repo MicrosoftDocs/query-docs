@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.Distinct"
 title: "Table.Distinct | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -17,11 +17,15 @@ ms.author: bezhan
 Table.Distinct(<b>table</b> as table, optional <b>equationCriteria</b> as any) as table
 </pre>
   
-## About  
+## About
+
 Removes duplicate rows from the table `table`. An optional parameter, `equationCriteria`, specifies which columns of the table are tested for duplication. If `equationCriteria` is not specified, all columns are tested.
 
 ## Example 1
+
 Remove the duplicate rows from the table.
+
+**Usage**
 
 ```powerquery-m
 Table.Distinct(
@@ -33,10 +37,20 @@ Table.Distinct(
 )
 ```
 
-<table> <tr> <th>a</th> <th>b</th> </tr> <tr> <td>A</td> <td>a</td> </tr> <tr> <td>B</td> <td>b</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [a = "A", b = "a"],
+    [a = "B", b = "b"]
+})
+```
 
 ## Example 2
+
 Remove the duplicate rows from column [b] in the table `({[a = "A", b = "a"], [a = "B", b = "a"], [a = "A", b = "b"]})`.
+
+**Usage**
 
 ```powerquery-m
 Table.Distinct(
@@ -49,4 +63,11 @@ Table.Distinct(
 )
 ```
 
-<table> <tr> <th>a</th> <th>b</th> </tr> <tr> <td>A</td> <td>a</td> </tr> <tr> <td>A</td> <td>b</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [a = "A", b = "a"],
+    [a = "A", b = "b"]
+})
+```

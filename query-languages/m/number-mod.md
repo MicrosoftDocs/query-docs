@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number.Mod"
 title: "Number.Mod | Microsoft Docs"
-ms.date: 7/31/2019
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,14 +18,23 @@ ms.author: bezhan
 Number.Mod(<b>number</b> as nullable number, <b>divisor</b> as nullable number, optional <b>precision</b> as nullable number) as nullable number
 </pre>
   
-## About  
-Returns the remainder resulting from the integer division of `number` by `divisor`. If `number` or `divisor` are null, `Number.Mod` returns null. <ul> <li><code>number</code>: The dividend.</li> <li><code>divisor</code>: The divisor.</li> </ul>
+## About
+
+Returns the remainder resulting from the integer division of `number` by `divisor`. If `number` or `divisor` are null, `Number.Mod` returns null.
+
+* `number`: The dividend.
+* `divisor`: The divisor.
 
 ## Example 1
+
 Find the remainder when you divide 5 by 3.
+
+**Usage**
 
 ```powerquery-m
 Number.Mod(5, 3)
 ```
+
+**Output**
 
 `2`

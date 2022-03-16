@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.UnpivotOtherColumns"
 title: "Table.UnpivotOtherColumns | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,14 +15,18 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-Table.UnpivotOtherColumns(<b>table</b> as table, <b>pivotColumns</b> as list, <b>attributeColumn</b> as text, <b>valueColumn</b> as text) as table 
+Table.UnpivotOtherColumns(<b>table</b> as table, <b>pivotColumns</b> as list, <b>attributeColumn</b> as text, <b>valueColumn</b> as text) as table
 </pre>
   
-## About  
+## About
+
 Translates all columns other than a specified set into attribute-value pairs, combined with the rest of the values in each row.
 
 ## Example 1
+
 Translates all columns other than a specified set into attribute-value pairs, combined with the rest of the values in each row.
+
+**Usage**
 
 ```powerquery-m
 Table.UnpivotOtherColumns(
@@ -36,4 +40,15 @@ Table.UnpivotOtherColumns(
 )
 ```
 
-<table> <tr> <th>key</th> <th>column1</th> <th>column2</th> </tr> <tr> <td>key1</td> <td>attribute1</td> <td>1</td> </tr> <tr> <td>key1</td> <td>attribute2</td> <td>2</td> </tr> <tr> <td>key1</td> <td>attribute3</td> <td>3</td> </tr> <tr> <td>key2</td> <td>attribute1</td> <td>4</td> </tr> <tr> <td>key2</td> <td>attribute2</td> <td>5</td> </tr> <tr> <td>key2</td> <td>attribute3</td> <td>6</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [key = "key1", column1 = "attribute1", column2 = 1],
+    [key = "key1", column1 = "attribute2", column2 = 2],
+    [key = "key1", column1 = "attribute3", column2 = 3],
+    [key = "key2", column1 = "attribute1", column2 = 4],
+    [key = "key2", column1 = "attribute2", column2 = 5],
+    [key = "key2", column1 = "attribute3", column2 = 6]
+})
+```

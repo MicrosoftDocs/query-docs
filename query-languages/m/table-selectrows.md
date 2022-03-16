@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.SelectRows"
 title: "Table.SelectRows | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,11 +18,15 @@ ms.author: bezhan
 Table.SelectRows(<b>table</b> as table, <b>condition</b> as function) as table
 </pre>
   
-## About  
+## About
+
 Returns a table of rows from the `table`, that matches the selection `condition`.
 
 ## Example 1
+
 Select the rows in the table where the values in [CustomerID] column are greater than 2.
+
+**Usage**
 
 ```powerquery-m
 Table.SelectRows(
@@ -36,10 +40,20 @@ Table.SelectRows(
 )
 ```
 
-<table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>3</td> <td>Paul</td> <td>543-7890</td> </tr> <tr> <td>4</td> <td>Ringo</td> <td>232-1550</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [CustomerID = 3, Name = "Paul", Phone = "543-7890"],
+    [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]
+})
+```
 
 ## Example 2
+
 Select the rows in the table where the names do not contain a "B".
+
+**Usage**
 
 ```powerquery-m
 Table.SelectRows(
@@ -53,4 +67,12 @@ Table.SelectRows(
 )
 ```
 
-<table> <tr> <th>CustomerID</th> <th>Name</th> <th>Phone</th> </tr> <tr> <td>2</td> <td>Jim</td> <td>987-6543</td> </tr> <tr> <td>3</td> <td>Paul</td> <td>543-7890</td> </tr> <tr> <td>4</td> <td>Ringo</td> <td>232-1550</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+    [CustomerID = 3, Name = "Paul", Phone = "543-7890"],
+    [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]
+})
+```

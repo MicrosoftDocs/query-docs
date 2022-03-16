@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.MatchesAllRows"
 title: "Table.MatchesAllRows | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,14 +15,18 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-Table.MatchesAllRows(<b>table</b> as table, <b>condition</b> as function) as logical 
+Table.MatchesAllRows(<b>table</b> as table, <b>condition</b> as function) as logical
 </pre>
   
-## About  
+## About
+
 Indicates whether all the rows in the `table` match the given `condition`. Returns `true` if all of the rows match, `false` otherwise.
 
 ## Example 1
+
 Determine whether all of the row values in column [a] are even in the table.
+
+**Usage**
 
 ```powerquery-m
 Table.MatchesAllRows(
@@ -34,10 +38,15 @@ Table.MatchesAllRows(
 )
 ```
 
+**Output**
+
 `true`
 
 ## Example 2
+
 Find if all of the row values are [a = 1, b = 2], in the table `({[a = 1, b = 2], [a = 3, b = 4]})`.
+
+**Usage**
 
 ```powerquery-m
 Table.MatchesAllRows(
@@ -48,5 +57,7 @@ Table.MatchesAllRows(
     each _ = [a = 1, b = 2]
 )
 ```
+
+**Output**
 
 `false`

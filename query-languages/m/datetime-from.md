@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DateTime.From"
 title: "DateTime.From | Microsoft Docs"
-ms.date: 2/16/2022
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: dougklo
@@ -34,9 +34,13 @@ If `value` is of any other type, an error is returned.
 
 Convert `#time(06, 45, 12)` to a `datetime` value.
 
+**Usage**
+
 ```powerquery-m
 DateTime.From(#time(06, 45, 12))
 ```
+
+**Output**
 
 `#datetime(1899, 12, 30, 06, 45, 12)`
 
@@ -44,8 +48,12 @@ DateTime.From(#time(06, 45, 12))
 
 Convert `#date(1975, 4, 4)` to a `datetime` value.
 
+**Usage**
+
 ```powerquery-m
 DateTime.From(#date(1975, 4, 4))
 ```
+
+**Output**
 
 `#datetime(1975, 4, 4, 0, 0, 0)`

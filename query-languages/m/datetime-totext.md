@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DateTime.ToText"
 title: "DateTime.ToText | Microsoft Docs"
-ms.date: 2/16/2022
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: dougklo
@@ -34,9 +34,13 @@ To support legacy workflows, `options` and `culture` may also be text values. Th
 
 Convert `#datetime(2010, 12, 31, 01, 30, 25)` into a `text` value. *Result output may vary depending on current culture.*
 
+**Usage**
+
 ```powerquery-m
 DateTime.ToText(#datetime(2010, 12, 31, 01, 30, 25))
 ```
+
+**Output**
 
 `"12/31/2010 1:30:25 AM"`
 
@@ -44,9 +48,13 @@ DateTime.ToText(#datetime(2010, 12, 31, 01, 30, 25))
 
 Convert using a custom format and the German culture.
 
+**Usage**
+
 ```powerquery-m
 DateTime.ToText(#datetime(2010, 12, 30, 2, 4, 50.36973), [Format="dd MMM yyyy HH:mm:ss.ffffff", Culture="de-DE"])
 ```
+
+**Output**
 
 `"30 Dez 2010 02:04:50.369730"`
 
@@ -54,8 +62,12 @@ DateTime.ToText(#datetime(2010, 12, 30, 2, 4, 50.36973), [Format="dd MMM yyyy HH
 
 Convert using the ISO 8601 pattern.
 
+**Usage**
+
 ```powerquery-m
 DateTime.ToText(#datetime(2000, 2, 8, 3, 45, 12),[Format="yyyy-MM-dd'T'HH:mm:ss'Z'", Culture="en-US"])
 ```
+
+**Output**
 
 `"2000-02-08T03:45:12Z"`

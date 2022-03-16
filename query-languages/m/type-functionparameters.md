@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Type.FunctionParameters"
 title: "Type.FunctionParameters | Microsoft Docs"
-ms.date: 7/26/2019
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -12,24 +12,26 @@ ms.author: bezhan
 ---
 # Type.FunctionParameters
 
-
 ## Syntax
 
 <pre>
 Type.FunctionParameters(<b>type</b> as type) as record
 </pre>
   
+## About
 
-## About  
-Returns a record with field values set to the name of the parameters of <code>type</code>, and their values set to their corresponding types.
+Returns a record with field values set to the name of the parameters of `type`, and their values set to their corresponding types.
 
-  
-## Example  
+## Example 1
 
-Find the types of the parameters to the function <code>(x as number, y as text)</code>.
+Find the types of the parameters to the function `(x as number, y as text)`.
 
-```powerquery-m 
+**Usage**
+
+```powerquery-m
 Type.FunctionParameters(type function (x as number, y as text) as any)
-```   
+```
 
-<table> <tr> <th>x</th> <td>[Type]</td> </tr> <tr> <th>y</th> <td>[Type]</td> </tr> </table>
+**Output**
+
+`[x = type number, y = type text]`

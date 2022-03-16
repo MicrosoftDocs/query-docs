@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.IsEmpty"
 title: "List.IsEmpty | Microsoft Docs"
-ms.date: 7/31/2019
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,23 +18,34 @@ ms.author: bezhan
 List.IsEmpty(<b>list</b> as list) as logical
 </pre>
   
-## About  
+## About
+
 Returns `true` if the list, `list`, contains no values (length 0). If the list contains values (length > 0), returns `false`.
 
 ## Example 1
+
 Find if the list {} is empty.
+
+**Usage**
 
 ```powerquery-m
 List.IsEmpty({})
 ```
 
+**Output**
+
 `true`
 
 ## Example 2
+
 Find if the list {1, 2} is empty.
+
+**Usage**
 
 ```powerquery-m
 List.IsEmpty({1, 2})
 ```
+
+**Output**
 
 `false`

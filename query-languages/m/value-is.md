@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Value.Is"
 title: "Value.Is | Microsoft Docs"
-ms.date: 9/13/2021
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,10 +26,12 @@ Determines whether a value is compatible with the specified type. This is equiva
 
 Compare two ways of determining if a number is compatible with type number.
 
+**Usage**
+
 ```powerquery-m
 Value.Is(123, Number.Type) = (123 is number)
 ```
 
-`
-true
-`
+**Output**
+
+`true`

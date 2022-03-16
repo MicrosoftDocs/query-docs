@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.AddDays"
 title: "Date.AddDays | Microsoft Docs"
-ms.date: 7/29/2019
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -16,16 +16,25 @@ ms.author: bezhan
 
 <pre>
 Date.AddDays(<b>dateTime</b> as any, <b>numberOfDays</b> as number) as any  
-</pre> 
+</pre>
   
-## About  
-Returns the `date`, `datetime`, or `datetimezone` result from adding `numberOfDays` days to the `datetime` value `dateTime`. <ul> <li><code>dateTime</code>: The <code>date</code>, <code>datetime</code>, or <code>datetimezone</code> value to which days are being added.</li> <li><code>numberOfDays</code>: The number of days to add.</li> </ul>
+## About
+
+Returns the `date`, `datetime`, or `datetimezone` result from adding `numberOfDays` days to the `datetime` value `dateTime`.
+
+* `dateTime`: The `date`, `datetime`, or `datetimezone` value to which days are being added.
+* `numberOfDays`: The number of days to add.
 
 ## Example 1
+
 Add 5 days to the `date`, `datetime`, or `datetimezone` value representing the date 5/14/2011.
+
+**Usage**
 
 ```powerquery-m
 Date.AddDays(#date(2011, 5, 14), 5)
 ```
+
+**Output**
 
 `#date(2011, 5, 19)`

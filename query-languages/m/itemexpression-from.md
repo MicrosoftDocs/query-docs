@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: ItemExpression.From"
 title: "ItemExpression.From | Microsoft Docs"
-ms.date: 2/16/2022
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: dougklo
@@ -39,9 +39,13 @@ An error is raised if an item expression AST cannot be returned for the body of 
 
 Returns the AST for the body of the function `each _ <> null`
 
+**Usage**
+
 ```powerquery-m
 ItemExpression.From(each _ <> null)
 ```
+
+**Output**
 
 ```powerquery-m
 [

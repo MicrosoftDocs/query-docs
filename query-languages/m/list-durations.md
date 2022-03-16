@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.Durations"
 title: "List.Durations | Microsoft Docs"
-ms.date: 7/31/2019
+ms.date: 3/8/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -19,13 +19,27 @@ List.Durations(<b>start</b> as duration, <b>count</b> as number, <b>step</b> as 
 </pre>
 
 ## About
+
 Returns a list of `count` `duration` values, starting at `start` and incremented by the given `duration` `step`.
 
-## Example
+## Example 1
+
 Create a list of 5 values starting 1 hour and incrementing by an hour.
+
+**Usage**
 
 ```powerquery-m
 List.Durations(#duration(0, 1, 0, 0), 5, #duration(0, 1, 0, 0))
 ```
 
-<table> <tr><td>01:00:00</td></tr> <tr><td>02:00:00</td></tr> <tr><td>03:00:00</td></tr> <tr><td>04:00:00</td></tr> <tr><td>05:00:00</td></tr> </table>
+**Output**
+
+```powerquery-m
+{
+    #duration(0, 1, 0, 0),
+    #duration(0, 2, 0, 0),
+    #duration(0, 3, 0, 0),
+    #duration(0, 4, 0, 0),
+    #duration(0, 5, 0, 0)
+}
+```

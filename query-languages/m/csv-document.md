@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Csv.Document"
 title: "Csv.Document | Microsoft Docs"
-ms.date: 11/17/2021
+ms.date: 3/8/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -39,6 +39,8 @@ If a record is specified for `columns` (and `delimiter`, `extraValues`, and `enc
 
 Process CSV text with column headers.
 
+**Usage**
+
 ```powerquery-m
 let
     csv = Text.Combine({"OrderID,Item", "1,Fishing rod", "2,1 lb. worms"}, "#(cr)#(lf)")
@@ -46,7 +48,10 @@ in
     Table.PromoteHeaders(Csv.Document(csv))
 ```
 
-|OrderID  |Item |
-|---------|---------|
-|1     |    Fishing rod     |
-|2     |     1 lb. worms    |
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [OrderID = "1", Item = "Fishing rod"],
+    [OrderID = "2", Item = "1 lb. worms"]
+```

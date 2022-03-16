@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Combiner.CombineTextByDelimiter"
 title: "Combiner.CombineTextByDelimiter | Microsoft Docs"
-ms.date: 1/24/2022
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,8 +26,12 @@ Returns a function that combines a list of text into a single text using the spe
 
 Combine a list of text values using a semicolon delimiter.
 
+**Usage**
+
 ```powerquery-m
 Combiner.CombineTextByDelimiter(";")({"a", "b", "c"})
 ```
+
+**Output**
 
 `"a;b;c"`

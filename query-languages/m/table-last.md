@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.Last"
 title: "Table.Last | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,11 +18,15 @@ ms.author: bezhan
 Table.Last(<b>table</b> as table, optional <b>default</b> as any) as any
 </pre>
   
-## About  
+## About
+
 Returns the last row of the `table` or an optional default value, `default`, if the table is empty.
 
 ## Example 1
+
 Find the last row of the table.
+
+**Usage**
 
 ```powerquery-m
 Table.Last(
@@ -34,13 +38,20 @@ Table.Last(
 )
 ```
 
-<table> <tr> <th>CustomerID</th> <td>3</td> </tr> <tr> <th>Name</th> <td>Paul</td> </tr> <tr> <th>Phone</th> <td>543-7890</td> </tr> </table>
+**Output**
+
+`[CustomerID = 3, Name = "Paul", Phone = "543-7890"]`
 
 ## Example 2
+
 Find the last row of the table `({})` or return [a = 0, b = 0] if empty.
+
+**Usage**
 
 ```powerquery-m
 Table.Last(Table.FromRecords({}), [a = 0, b = 0])
 ```
 
-<table> <tr> <th>a</th> <td>0</td> </tr> <tr> <th>b</th> <td>0</td> </tr> </table>
+**Output**
+
+`[a = 0, b = 0]`

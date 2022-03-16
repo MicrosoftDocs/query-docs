@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.FromPartitions"
 title: "Table.FromPartitions | Microsoft Docs"
-ms.date: 4/20/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,14 +15,18 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-Table.FromPartitions(<b>partitionColumn</b> as text, <b>partitions</b> as list, optional <b>partitionColumnType</b> as nullable type) as table 
+Table.FromPartitions(<b>partitionColumn</b> as text, <b>partitions</b> as list, optional <b>partitionColumnType</b> as nullable type) as table
 </pre>
   
-## About  
+## About
+
 Returns a table that is the result of combining a set of partitioned tables, `partitions`. `partitionColumn` is the name of the column to add. The type of the column defaults to `any`, but can be specified by `partitionColumnType`.
 
 ## Example 1
+
 Find item type from the list `{number}`.
+
+**Usage**
 
 ```powerquery-m
 Table.FromPartitions(
@@ -60,4 +64,33 @@ Table.FromPartitions(
 )
 ```
 
-<table> <tr> <th>Foo</th> <th>Day</th> <th>Month</th> <th>Year</th> </tr> <tr> <td>Bar</td> <td>1</td> <td>Jan</td> <td>1994</td> </tr> <tr> <td>Bar</td> <td>2</td> <td>Jan</td> <td>1994</td> </tr> <tr> <td>Bar</td> <td>3</td> <td>Feb</td> <td>1994</td> </tr> <tr> <td>Bar</td> <td>4</td> <td>Feb</td> <td>1994</td> </tr> </table>
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [
+        Foo = "Bar",
+        Day = 1,
+        Month = "Jan",
+        Year = 1994
+    ],
+    [
+        Foo = "Bar",
+        Day = 2,
+        Month = "Jan",
+        Year = 1994
+    ],
+    [
+        Foo = "Bar",
+        Day = 3,
+        Month = "Feb",
+        Year = 1994
+    ],
+    [
+        Foo = "Bar",
+        Day = 4,
+        Month = "Feb",
+        Year = 1994
+    ]
+})
+```

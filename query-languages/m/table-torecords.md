@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.ToRecords"
 title: "Table.ToRecords | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -12,21 +12,21 @@ ms.author: bezhan
 ---
 # Table.ToRecords
 
-
 ## Syntax
 
 <pre>
 Table.ToRecords(<b>table</b> as table) as list  
 </pre>
   
+## About
 
-## About  
-Converts a table, <code>table</code>, to a list of records.
+Converts a table, `table`, to a list of records.
 
-  
-## Example  
+## Example 1
   
 Convert the table to a list of records.
+
+**Usage**
 
 ```powerquery-m
 Table.ToRecords(
@@ -41,4 +41,12 @@ Table.ToRecords(
 )
 ```
 
-<table> <tr><td>[Record]</td></tr> <tr><td>[Record]</td></tr> <tr><td>[Record]</td></tr> </table>
+**Output**
+
+```powerquery-m
+{
+    [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+    [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+    [CustomerID = 3, Name = "Paul", Phone = "543-7890"]
+}
+```

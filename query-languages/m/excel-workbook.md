@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Excel.Workbook"
 title: "Excel.Workbook | Microsoft Docs"
-ms.date: 9/13/2021
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -25,7 +25,7 @@ Returns the contents of the Excel workbook.
 * `useHeaders` can be null, a logical (true/false) value indicating whether the first row of each returned table should be treated as a header, or an options record. (See below for more details on the options record.) Default: false.
 * `delayTypes` can be null or a logical (true/false) value indicating whether the columns of each returned table should be left untyped. Default: false.
 
-If a record is specified for `useHeaders` (and `delayTypes` is null), the following record fields may be provided: 
+If a record is specified for `useHeaders` (and `delayTypes` is null), the following record fields may be provided:
 
 * `UseHeaders`: Can be null or a logical (true/false) value indicating whether the first row of each returned table should be treated as a header. Default: false.
 * `DelayTypes`: Can be null or a logical (true/false) value indicating whether the columns of each returned table should be left untyped. Default: false.
@@ -35,9 +35,13 @@ If a record is specified for `useHeaders` (and `delayTypes` is null), the follow
 
 Return the contents of Sheet1 from an Excel workbook.
 
+**Usage**
+
 ```powerquery-m
 Excel.Workbook(File.Contents("C:\Book1.xlsx"), null, true){[Item="Sheet1"]}[Data]
 ```
+
+**Output**
 
 ```powerquery-m
 Table.FromRecords({

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.RemoveColumns"
 title: "Table.RemoveColumns | Microsoft Docs"
-ms.date: 4/23/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,11 +18,15 @@ ms.author: bezhan
 Table.RemoveColumns(<b>table</b> as table, <b>columns</b> as any, optional <b>missingField</b> as nullable number) as table
 </pre>
   
-## About  
+## About
+
 Removes the specified `columns` from the `table` provided. If the column doesn't exist, an exception is thrown unless the optional parameter `missingField` specifies an alternative (eg. `MissingField.UseNull` or `MissingField.Ignore`).
 
 ## Example 1
+
 Remove column [Phone] from the table.
+
+**Usage**
 
 ```powerquery-m
 Table.RemoveColumns(
@@ -31,10 +35,15 @@ Table.RemoveColumns(
 
 ```
 
-<table> <tr> <th>CustomerID</th> <th>Name</th> </tr> <tr> <td>1</td> <td>Bob</td> </tr> </table>
+**Output**
+
+`Table.FromRecords({[CustomerID = 1, Name = "Bob"]})`
 
 ### Example 2
+
 Remove column [Address] from the table. Throws an error if it doesn't exist.
+
+**Usage**
 
 ```powerquery-m
 Table.RemoveColumns(
@@ -42,5 +51,7 @@ Table.RemoveColumns(
     "Address"
 )
 ```
+
+**Output**
 
 `[Expression.Error] The field 'Address' of the record was not found.`

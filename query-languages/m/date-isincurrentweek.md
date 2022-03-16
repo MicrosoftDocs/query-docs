@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.IsInCurrentWeek"
 title: "Date.IsInCurrentWeek | Microsoft Docs"
-ms.date: 7/29/2019
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,17 +15,23 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-Date.IsInCurrentWeek(<b>dateTime</b> as any) as nullable logical 
+Date.IsInCurrentWeek(<b>dateTime</b> as any) as nullable logical
 </pre>
   
-## About  
-Indicates whether the given datetime value `dateTime` occurs during the current week, as determined by the current date and time on the system. <ul> <li><code>dateTime</code>: A <code>date</code>, <code>datetime</code>, or <code>datetimezone</code> value to be evaluated.</li> </ul>
+## About
+Indicates whether the given datetime value `dateTime` occurs during the current week, as determined by the current date and time on the system.
+* `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
 
 ## Example 1
+
 Determine if the current system time is in the current week.
+
+**Usage**
 
 ```powerquery-m
 Date.IsInCurrentWeek(DateTime.FixedLocalNow())
 ```
+
+**Output**
 
 `true`

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Record.FromList"
 title: "Record.FromList | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 3/9/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,23 +18,34 @@ ms.author: bezhan
 Record.FromList(<b>list</b> as list, <b>fields</b> as any) as record
 </pre>
   
-## About  
+## About
+
 Returns a record given a `list` of field values and a set of fields. The `fields` can be specified either by a list of text values, or a record type. An error is thrown if the fields are not unique.
 
 ## Example 1
+
 Build a record from a list of field values and a list of field names.
+
+**Usage**
 
 ```powerquery-m
 Record.FromList({1, "Bob", "123-4567"}, {"CustomerID", "Name", "Phone"})
 ```
 
-<table> <tr> <th>CustomerID</th> <td>1</td> </tr> <tr> <th>Name</th> <td>Bob</td> </tr> <tr> <th>Phone</th> <td>123-4567</td> </tr> </table>
+**Output**
+
+`[CustomerID = 1, Name = "Bob", Phone = "123-4567"]`
 
 ## Example 2
+
 Build a record from a list of field values and a record type.
+
+**Usage**
 
 ```powerquery-m
 Record.FromList({1, "Bob", "123-4567"}, type [CustomerID = number, Name = text, Phone = number])
 ```
 
-<table> <tr> <th>CustomerID</th> <td>1</td> </tr> <tr> <th>Name</th> <td>Bob</td> </tr> <tr> <th>Phone</th> <td>123-4567</td> </tr> </table>
+**Output**
+
+`[CustomerID = 1, Name = "Bob", Phone = "123-4567"]`

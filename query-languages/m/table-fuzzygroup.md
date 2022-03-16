@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.FuzzyGroup"
 title: "Table.FuzzyGroup | Microsoft Docs"
-ms.date: 9/14/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,7 +18,6 @@ ms.author: bezhan
 Table.FuzzyGroup(<b>table</b> as table, <b>key</b> as any, <b>aggregatedColumns</b> as list, optional <b>options</b> as nullable record) as table
 </pre>
   
-
 ## About
 
 Groups the rows of `table` by fuzzily matching values in the specified column, `key`, for each row. For each group, a record is constructed containing the key columns (and their values) along with any aggregated columns specified by `aggregatedColumns`. This function cannot guarantee to return a fixed order of rows.
@@ -32,9 +31,11 @@ An optional set of `options` may be included to specify how to compare the key c
 * `Threshold`: A number between 0.00 and 1.00 that specifies the similarity score at which two values will be grouped. For example, "Grapes" and "Graes" (missing "p") are grouped together only if this option is set to less than 0.90. A threshold of 1.00 is the same as specifying an exact match criteria while grouping. The default value is 0.80.
 * `TransformationTable`: A table that allows grouping records based on custom value mappings. It should contain "From" and "To" columns. For example, "Grapes" is grouped with "Raisins" if a transformation table is provided with the "From" column containing "Grapes" and the "To" column containing "Raisins". Note that the transformation will be applied to all occurrences of the text in the transformation table. With the above transformation table, "Grapes are sweet" will also be grouped with "Raisins are sweet".
 
-## Example
+## Example 1
 
 Group the table adding an aggregate column [Count] that contains the number of employees in each location (`each Table.RowCount(_)`).
+
+**Usage**
 
 ```powerquery-m
 Table.FuzzyGroup(
@@ -56,9 +57,11 @@ Table.FuzzyGroup(
 )
 ```
 
-|Location |Count |
-| --- | --- |
-|Seattle |4 |
-|Vancouver |3 |
-| | |
+**Output**
 
+```powerquery-m
+Table.FromRecords({
+    [Location = "Seattle", Count = 4],
+    [Location = "Vancouver", Count = 3]
+})
+```

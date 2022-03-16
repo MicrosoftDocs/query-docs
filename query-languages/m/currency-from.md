@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Currency.From"
 title: "Currency.From | Microsoft Docs"
-ms.date: 11/17/2021
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,9 +26,13 @@ Returns a `currency` value from the given `value`. If the given `value` is `null
 
 Get the `currency` value of `"1.23455"`.
 
+**Usage**
+
 ```powerquery-m
 Currency.From("1.23455")
 ```
+
+**Output**
 
 `1.2346`
 
@@ -36,8 +40,12 @@ Currency.From("1.23455")
 
 Get the `currency` value of `"1.23455"` using `RoundingMode.Down`.
 
+**Usage**
+
 ```powerquery-m
 Currency.From("1.23455", "en-US", RoundingMode.Down)
 ```
+
+**Output**
 
 `1.2345`

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.ColumnsOfType"
 title: "Table.ColumnsOfType | Microsoft Docs"
-ms.date: 4/23/2020
+ms.date: 3/10/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,11 +18,15 @@ ms.author: bezhan
 Table.ColumnsOfType(<b>table</b> as table, <b>listOfTypes</b> as list) as list
 </pre>
   
-## About  
+## About
+
 Returns a list with the names of the columns from table `table` that match the types specified in `listOfTypes`.
 
 ## Example 1
+
 Return the names of columns of type Number.Type from the table.
+
+**Usage**
 
 ```powerquery-m
 Table.ColumnsOfType(
@@ -34,4 +38,6 @@ Table.ColumnsOfType(
 )
 ```
 
-<table> <tr><td>a</td></tr> </table>
+**Output**
+
+`{"a"}`

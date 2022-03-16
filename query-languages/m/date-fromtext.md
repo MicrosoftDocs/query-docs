@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.FromText"
 title: "Date.FromText | Microsoft Docs"
-ms.date: 2/16/2022
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: dougklo
@@ -34,9 +34,13 @@ To support legacy workflows, `options` may also be a text value. This has the sa
 
 Convert `"2010-12-31"` into a `date` value.
 
+**Usage**
+
 ```powerquery-m
 Date.FromText("2010-12-31")
 ```
+
+**Output**
 
 `#date(2010, 12, 31)`
 
@@ -44,9 +48,13 @@ Date.FromText("2010-12-31")
 
 Convert using a custom format and the German culture.
 
+**Usage**
+
 ```powerquery-m
 Date.FromText("30 Dez 2010", [Format="dd MMM yyyy", Culture="de-DE"])
 ```
+
+**Output**
 
 `#date(2010, 12, 30)`
 
@@ -54,8 +62,12 @@ Date.FromText("30 Dez 2010", [Format="dd MMM yyyy", Culture="de-DE"])
 
 Find the date in the Gregorian calendar that corresponds to the beginning of 1400 in the Hijri calendar.
 
+**Usage**
+
 ```powerquery-m
 Date.FromText("1400", [Format="yyyy", Culture="ar-SA"])
 ```
+
+**Output**
 
 `#date(1979, 11, 20)`

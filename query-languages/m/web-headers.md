@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Web.Headers"
 title: "Web.Headers | Microsoft Docs"
-ms.date: 1/24/2022
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -37,6 +37,8 @@ The HTTP request is made with the HEAD method. Outside of a custom data connecto
 
 Retrieve the HTTP headers for `"https://bing.com/search?q=Power+Query"` using the RelativePath and Query options.
 
+**Usage**
+
 ```powerquery-m
 let
     searchText = "Power Query"
@@ -50,7 +52,9 @@ in
     )
 ```
 
-```
+**Output**
+
+```powerquery-m
 ([
     #"Cache-Control" = "private, max-age=0",
     #"Content-Encoding" = "gzip",

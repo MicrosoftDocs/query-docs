@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.CombineColumns"
 title: "Table.CombineColumns | Microsoft Docs"
-ms.date: 9/13/2021
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,6 +26,8 @@ Combines the specified columns into a new column using the specified combiner fu
 
 Combine the last and first names into a new column, separated by a comma.
 
+**Usage**
+
 ```powerquery-m
 Table.CombineColumns(
     Table.FromRecords({[FirstName = "Bob", LastName = "Smith"]}),
@@ -34,6 +36,8 @@ Table.CombineColumns(
     "FullName"
 )
 ```
+
+**Output**
 
 ```powerquery-m
 Table.FromRecords({[FullName = "Smith,Bob"]})

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DateTimeZone.FromText"
 title: "DateTimeZone.FromText | Microsoft Docs"
-ms.date: 2/16/2022
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: dougklo
@@ -34,9 +34,13 @@ To support legacy workflows, `options` may also be a text value. This has the sa
 
 Convert `"2010-12-31T01:30:00-08:00"` into a `datetimezone` value.
 
+**Usage**
+
 ```powerquery-m
 DateTimeZone.FromText("2010-12-31T01:30:00-08:00")
 ```
+
+**Output**
 
 `#datetimezone(2010, 12, 31, 1, 30, 0, -8, 0)`
 
@@ -44,9 +48,13 @@ DateTimeZone.FromText("2010-12-31T01:30:00-08:00")
 
 Convert using a custom format and the German culture.
 
+**Usage**
+
 ```powerquery-m
 DateTimeZone.FromText("30 Dez 2010 02:04:50.369730 +02:00", [Format="dd MMM yyyy HH:mm:ss.ffffff zzz", Culture="de-DE"])
 ```
+
+**Output**
 
 `#datetimezone(2010, 12, 30, 2, 4, 50.36973, 2, 0)`
 
@@ -54,8 +62,12 @@ DateTimeZone.FromText("30 Dez 2010 02:04:50.369730 +02:00", [Format="dd MMM yyyy
 
 Convert using ISO 8601.
 
+**Usage**
+
 ```powerquery-m
 DateTimeZone.FromText("2009-06-15T13:45:30.0000000-07:00", [Format="O", Culture="en-US"])
 ```
+
+**Output**
 
 `#datetimezone(2009, 6, 15, 13, 45, 30, -7, 0)`

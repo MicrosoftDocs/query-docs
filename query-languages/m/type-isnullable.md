@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Type.IsNullable"
 title: "Type.IsNullable | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 3/14/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,23 +18,34 @@ ms.author: bezhan
 Type.IsNullable(<b>type</b> as type) as logical
 </pre>
   
-## About  
+## About
+
 Returns `true` if a type is a `nullable` type; otherwise, `false`.
 
 ## Example 1
+
 Determine if `number` is nullable.
+
+**Usage**
 
 ```powerquery-m
 Type.IsNullable(type number)
 ```
 
+**Output**
+
 `false`
 
 ## Example 2
+
 Determine if `type nullable number` is nullable.
+
+**Usage**
 
 ```powerquery-m
 Type.IsNullable(type nullable number)
 ```
+
+**Output**
 
 `true`

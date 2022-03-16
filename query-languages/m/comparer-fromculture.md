@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Comparer.FromCulture"
 title: "Comparer.FromCulture | Microsoft Docs"
-ms.date: 11/17/2021
+ms.date: 3/11/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -26,9 +26,13 @@ Returns a comparer function given the `culture` and a logical value `ignoreCase`
 
 Compare "a" and "A" using "en-US" locale to determine if the values are equal.
 
+**Usage**
+
 ```powerquery-m
 Comparer.FromCulture("en-US")("a", "A")
 ```
+
+**Output**
 
 `-1`
 
@@ -36,8 +40,12 @@ Comparer.FromCulture("en-US")("a", "A")
 
 Compare "a" and "A" using "en-US" locale ignoring the case to determine if the values are equal.
 
+**Usage**
+
 ```powerquery-m
 Comparer.FromCulture("en-US", true)("a", "A")
 ```
+
+**Output**
 
 `0`
