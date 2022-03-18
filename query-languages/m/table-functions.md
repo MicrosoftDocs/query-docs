@@ -18,7 +18,7 @@ These functions create and manipulate table values.
 |Function|Description|  
 |------------|---------------|  
 |[ItemExpression.From](itemexpression-from.md) | Returns the abstract syntax tree (AST) for the body of a function.|
-|[ItemExpression.Item](itemexpression-item.md) | An abstract syntax tree (AST)node representing the item in an item expression.|
+|[ItemExpression.Item](itemexpression-item.md) | An abstract syntax tree (AST) node representing the item in an item expression.|
 |[RowExpression.Column](rowexpression-column.md)|Returns an abstract syntax tree (AST) that represents access to a column within a row expression.
 |[RowExpression.From](rowexpression-from.md)|Returns the abstract syntax tree (AST) for the body of a function.|
 |[RowExpression.Row](rowexpression-row.md)|An abstract syntax tree (AST) node representing the row in a row expression.|
