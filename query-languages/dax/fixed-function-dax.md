@@ -2,7 +2,7 @@
 description: "Learn more about: FIXED"
 title: "FIXED function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/08/2020
+ms.date: 03/16/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -46,15 +46,20 @@ A number represented as text.
   
 ## Example
 
-The following example gets the numeric value for the current row in column, PctCost, and returns it as text with 4 decimal places and no commas.  
+The following formula used in a calculated column gets the numeric value for the current row in Product[List Price] and returns it as text with 2 decimal places and no commas.  
+
+[!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
   
 ```dax
-= FIXED([PctCost],3,1)  
+= FIXED([List Price],2,1)  
 ```
 
-Numbers can never have more than 15 significant digits, but decimals can be as large as 127.  
-  
 ## See also
 
-[Text functions](text-functions-dax.md)  
-[Math and Trig functions](math-and-trig-functions-dax.md)
+[CEILING](ceiling-function-dax.md)  
+[FLOOR](floor-function-dax.md)  
+[ISO.CEILING](iso-ceiling-function-dax.md)  
+[MROUND](mround-function-dax.md)  
+[ROUND](round-function-dax.md)  
+[ROUNDDOWN](rounddown-function-dax.md)  
+[ROUNDUP](roundup-function-dax.md)  

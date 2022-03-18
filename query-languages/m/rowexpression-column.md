@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: RowExpression.Column"
 title: "RowExpression.Column | Microsoft Docs"
-ms.date: 3/9/2022
+ms.date: 3/16/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -20,7 +20,7 @@ RowExpression.Column(<b>columnName</b> as text) as record
   
 ## About
 
-Returns an AST that represents access to column `columnName` of the row within a row expression.  
+Returns an abstract syntax tree (AST) that represents access to column `columnName` of the row within a row expression.  
   
 ## Example 1
 

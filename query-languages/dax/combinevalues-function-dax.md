@@ -2,7 +2,7 @@
 description: "Learn more about: COMBINEVALUES"
 title: "COMBINEVALUES function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/05/2020
+ms.date: 03/16/2022
 ms.topic: reference
 author: minewiskan
 ms.author: owend 
@@ -29,25 +29,33 @@ COMBINEVALUES(<delimiter>, <expression>, <expression>[, <expression>]…)
   
 ## Return value  
 
-The concatenated string.  
+A concatenated string.  
   
 ## Remarks  
 
 - The COMBINEVALUES function assumes, but does not validate, that when the input values are different, the output strings are also different. Based on this assumption, when COMBINEVALUES is used to create calculated columns in order to build a relationship that joins multiple columns from two DirectQuery tables, an optimized join condition is generated at query time. For example, if users want to create a relationship between Table1(Column1, Column2) and Table2(Column1, Column2), they can create two calculated columns, one on each table, as:  
 
-    ```Table1[CalcColumn] = COMBINEVALUES(",", Table1[Column1], Table1[Column2])```
+    ```dax
+    Table1[CalcColumn] = COMBINEVALUES(",", Table1[Column1], Table1[Column2])
+    ```
 
     and
 
-    ```Table2[CalcColumn] = COMBINEVALUES(",", Table2[Column1], Table2[Column2])```,
+    ```dax
+    Table2[CalcColumn] = COMBINEVALUES(",", Table2[Column1], Table2[Column2])
+    ```
 
     And then create a relationship between `Table1[CalcColumn]` and `Table2[CalcColumn]`. Unlike other DAX functions and operators, which are translated literally to the corresponding SQL operators and functions, the above relationship generates a SQL join predicate as:
 
-    ```(Table1.Column1 = Table2.Column1 OR Table1.Column1 IS NULL AND Table2.Column1 IS NULL)```
+    ```dax
+    (Table1.Column1 = Table2.Column1 OR Table1.Column1 IS NULL AND Table2.Column1 IS NULL)
+    ```
 
     and
 
-    ```(Table1.Column2 = Table2.Column2 OR Table1.Column2 IS NULL AND Table2.Column2 IS NULL)```.  
+    ```dax
+    (Table1.Column2 = Table2.Column2 OR Table1.Column2 IS NULL AND Table2.Column2 IS NULL)
+    ```  
 
 - The join predicate can potentially deliver much better query performance than one that involves complex SQL operators and functions.
 
@@ -57,34 +65,39 @@ The concatenated string.
 
 The following DAX query:
   
-```EVALUATE DISTINCT(SELECTCOLUMNS(DimDate, "Month", COMBINEVALUES(",", [MonthName], [CalendarYear])))```
+```dax
+EVALUATE
+DISTINCT (
+    SELECTCOLUMNS ( Date, "Month", COMBINEVALUES ( ", ", [MonthName], [CalendarYear] ) )
+)
+```
 
 Returns the following single column table:
 
 |[Month]  |
 |---------|
-|January,2007     |
-|February,2007    |
-|March,2007    |
-|April,2007     |
-|May,2007     |
-|June,2007     |
-|July,2007     |
-|August,2007     |
-|September,2007     |
-|October,2007     |
-|November,2007    |
-|December,2007     |
-|January,2008     |
-|January,2008     |
-|February,2008    |
-|March,2008    |
-|April,2008     |
-|May,2008     |
-|June,2008     |
-|July,2008     |
-|August,2008     |
-|September,2008     |
-|October,2008     |
-|November,2008    |
-|December,2008     |
+|January, 2020     |
+|February, 2020    |
+|March, 2020    |
+|April, 2020     |
+|May, 2020     |
+|June, 2020     |
+|July, 2020     |
+|August, 2020     |
+|September, 2020     |
+|October, 2020     |
+|November, 2020    |
+|December, 2020     |
+|January, 2021     |
+|January, 2021     |
+|February, 2021    |
+|March, 2021    |
+|April, 2021     |
+|May, 2021     |
+|June, 2021     |
+|July, 2021     |
+|August, 2021     |
+|September, 2021     |
+|October, 2021     |
+|November, 2021    |
+|December, 2021     |

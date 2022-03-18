@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: ItemExpression.From"
 title: "ItemExpression.From | Microsoft Docs"
-ms.date: 3/11/2022
+ms.date: 3/16/2022
 ms.service: powerquery
 
 ms.reviewer: dougklo
@@ -20,7 +20,7 @@ ItemExpression.From(<b>function</b> as function) as record
 
 ## About
 
-Returns the AST for the body of `function`, normalized into an *item expression*:
+Returns the abstract syntax tree (AST) for the body of `function`, normalized into an *item expression*:
 
 - The function must be a 1-argument lambda.
 - All references to the function parameter are replaced with `ItemExpression.Item`.

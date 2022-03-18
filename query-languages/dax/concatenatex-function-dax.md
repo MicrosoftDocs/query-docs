@@ -2,7 +2,7 @@
 description: "Learn more about: CONCATENATEX"
 title: "CONCATENATEX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/05/2020
+ms.date: 03/16/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -30,22 +30,22 @@ CONCATENATEX(<table>, <expression>[, <delimiter> [, <orderBy_expression> [, <ord
 |orderBy_expression|(Optional) Any DAX expression where the result value is used to sort the concatenated values in the output string. It is evaluated for each row of *table*.|
 |order|(Optional) A value that specifies how to sort *orderBy_expression* values, ascending or descending.|
 
-The **order** parameter accepts the following values:
+The optional **order** parameter accepts the following values:
 
 |Value|Alternate Values|Description|
 |-----|-----|-----|
-|0 (zero)|FALSE, DESC|Sorts in descending order of values of *orderBy_expression*.<br />This is the default value when the *order* parameter is omitted.|
+|0 (zero)|FALSE, DESC|Sorts in descending order of values of *orderBy_expression*. This is the default value when the *order* parameter is omitted.|
 |1|TRUE, ASC|Sorts in ascending order of values of *orderBy_expression*.|
 
 ## Return value
 
-A text string.
+A concatenated string.
   
 ## Remarks
 
 - This function takes as its first argument a table or an expression that returns a table. The second argument is a column that contains the values you want to concatenate, or an expression that returns a value.  
 
-- Concatenated values are not necessarily sorted in any particular order, unless *orderBy_expression* is specified. 
+- Concatenated values are not necessarily sorted in any particular order, unless *orderBy_expression* is specified.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
@@ -61,7 +61,7 @@ Employees table
 The following formula:  
 
 ```dax
-CONCATENATEX(Employees, [FirstName] & " " & [LastName], ",")  
+= CONCATENATEX(Employees, [FirstName] & " " & [LastName], ",")  
 ```
   
 Returns:  

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: RowExpression.From"
 title: "RowExpression.From | Microsoft Docs"
-ms.date: 3/9/2022
+ms.date: 3/16/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -20,7 +20,7 @@ RowExpression.From(<b>function</b> as function) as record
   
 ## About  
 
-Returns the AST for the body of `function`, normalized into a _row expression_:
+Returns the abstract syntax tree (AST) for the body of `function`, normalized into a _row expression_:
 
 * The function must be a 1-argument lambda.
 * All references to the function parameter are replaced with `RowExpression.Row`.

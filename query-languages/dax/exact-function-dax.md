@@ -2,7 +2,7 @@
 description: "Learn more about: EXACT"
 title: "EXACT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/08/2020
+ms.date: 03/16/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -12,7 +12,7 @@ recommendations: false
 ---
 # EXACT
 
-Compares two text strings and returns TRUE if they are exactly the same, FALSE otherwise. EXACT is case-sensitive but ignores formatting differences. You can use EXACT to test text being entered into a document.  
+Compares two text strings and returns TRUE if they are exactly the same, otherwise returns FALSE. EXACT is case-sensitive but ignores formatting differences. EXACT is case-sensitive
   
 ## Syntax  
   
@@ -29,14 +29,16 @@ EXACT(<text1>,<text2>)
   
 ## Return value
 
-True or false. (Boolean)  
+True or False. (Boolean)  
   
 ## Example
 
-The following formula checks the value of Column1 for the current row against the value of Column2 for the current row, and returns TRUE if they are the same, and returns FALSE if they are different.  
-  
+The following formula used in a calculated column in the Product table checks the value of Product for the current row against the value of Model for the current row, and returns True if they are the same, and returns False if they are different.  
+
+[!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
+
 ```dax
-= EXACT([Column1],[Column2])  
+= EXACT([Product], [Model])  
 ```
   
 ## See also
