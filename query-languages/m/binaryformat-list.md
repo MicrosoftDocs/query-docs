@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.List"
 title: "BinaryFormat.List | Microsoft Docs"
-ms.date: 3/7/2022
+ms.date: 3/16/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -25,7 +25,7 @@ Returns a binary format that reads a sequence of items and returns a `list`. The
 * If the `countOrCondition` is not specified, then the binary format will read until there are no more items.
 * If the `countOrCondition` is a number, then the binary format will read that many items.
 * If the `countOrCondition` is a function, then that function will be invoked for each item read. The function returns true to continue, and false to stop reading items. The final item is included in the list.
-* If the countOrCondition is a binary format, then the count of items is expected to precedes the list, and the specified format is used to read the count.</li></ul>
+* If the `countOrCondition` is a binary format, then the count of items is expected to precede the list, and the specified format is used to read the count.
 
 ## Example 1
 

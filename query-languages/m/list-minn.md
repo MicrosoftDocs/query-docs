@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.MinN"
 title: "List.MinN | Microsoft Docs"
-ms.date: 3/8/2022
+ms.date: 3/16/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -23,8 +23,8 @@ List.MinN(<b>list</b> as list, <b>countOrCondition</b> as any, optional <b>compa
 Returns the minimum value(s) in the list, `list`. The parameter, `countOrCondition`, specifies the number of values to return or a filtering condition. The optional parameter, `comparisonCriteria`, specifies how to compare values in the list.
 
 * `list`: The list of values.
-* `countOrCondition`: If a number is specified, a list of up to `countOrCondition` items in ascending order is returned. If a condition is specified, a list of items that initially meet the condition is returned. Once an item fails the condition, no further items are considered. If this parameter is null the single smallest value in the list is returned.
-* `comparisonCriteria`: _[Opional]_ An optional `comparisonCriteria` value, may be specified to determine how to compare the items in the list. If this parameter is null, the default comparer is used.
+* `countOrCondition`: If a number is specified, a list of up to `countOrCondition` items in ascending order is returned. If a condition is specified, a list of items that initially meet the condition is returned. Once an item fails the condition, no further items are considered. If this parameter is null, the single smallest value in the list is returned.
+* `comparisonCriteria`: _[Optional]_ An optional `comparisonCriteria` value can be specified to determine how to compare the items in the list. If this parameter is null, the default comparer is used.
 
 ## Example 1
 

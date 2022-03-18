@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List functions"
 title: "List functions | Microsoft Docs"
-ms.date: 8/21/2020
+ms.date: 3/16/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -113,10 +113,10 @@ Ordering functions perform comparisons.  All values that are compared must be co
 |Function|Description|  
 |------------|---------------|  
 |[List.Max](list-max.md)|Returns the maximum item in a list, or the optional default value if the list is empty.|  
-|[List.MaxN](list-maxn.md)|Returns the maximum values in the list. After the rows are sorted, optional parameters may be specified to further filter the result|  
+|[List.MaxN](list-maxn.md)|Returns the maximum values in the list. The number of values to return or a filtering condition must be specified.|  
 |[List.Median](list-median.md)|Returns the median item from a list.|
 |[List.Min](list-min.md)|Returns the minimum item in a list, or the optional default value if the list is empty.|  
-|[List.MinN](list-minn.md)|Returns the minimum values in a list.|  
+|[List.MinN](list-minn.md)|Returns the minimum values in a list. The number of values to return or a filtering condition may be specified.|  
 |[List.Sort](list-sort.md)|Returns a sorted list using comparison criterion.|
 |[List.Percentile](list-percentile.md) | Returns one or more sample percentiles corresponding to the given probabilities.|
 |[PercentileMode.ExcelExc](percentilemode-excelexc.md) | When interpolating values for <code>List.Percentile</code>, use a method compatible with Excel's <code>PERCENTILE.EXC</code>.|

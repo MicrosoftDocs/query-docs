@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Value functions"
 title: "Value functions | Microsoft Docs"
-ms.date: 1/24/2022
+ms.date: 3/16/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -21,7 +21,7 @@ These functions evaluate and perform operations on values.
 |[Value.Alternate](value-alternate.md)|Expresses alternate query plans.|
 |[Value.Compare](value-compare.md)|Returns 1, 0, or -1 based on value1 being greater than, equal to, or less than the value2. An optional comparer function can be provided.|  
 |[Value.Equals](value-equals.md)|Returns whether two values are equal.|  
-|[Value.Expression](value-expression.md)|Returns an AST that represents the value's expression.|
+|[Value.Expression](value-expression.md)|Returns an abstract syntax tree (AST) that represents the value's expression.|
 |[Value.NativeQuery](value-nativequery.md) | Evaluates a query against a target.|
 |[Value.NullableEquals](value-nullableequals.md)|Returns a logical value or null based on two values .|
 |[Value.Optimize](value-optimize.md)|If value represents a query that can be optimized, returns the optimized query. Otherwise returns value.

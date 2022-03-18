@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.Alternate"
 title: "List.Alternate | Microsoft Docs"
-ms.date: 3/8/2022
+ms.date: 3/16/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -42,7 +42,7 @@ List.Alternate({1..10}, 1)
 
 ## Example 2
 
-Create a list from {1..10} that skips the every other number.
+Create a list from {1..10} that skips every other number.
 
 **Usage**
 
@@ -70,7 +70,7 @@ List.Alternate({1..10}, 1, 1, 1)
 
 ## Example 4
 
-Create a list from {1..10} that starts at 1, skips one value, keeps two values and so on.
+Create a list from {1..10} that starts at 1, skips one value, keeps two values, and so on.
 
 **Usage**
 
