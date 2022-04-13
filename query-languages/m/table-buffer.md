@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.Buffer"
 title: "Table.Buffer | Microsoft Docs"
-ms.date: 3/14/2022
+ms.date: 4/13/2022
 ms.service: powerquery
 
 ms.reviewer: dougklo
@@ -22,7 +22,7 @@ Table.Buffer(<b>table</b> as table, optional <b>options</b> as nullable record) 
 
 Buffers a table in memory, isolating it from external changes during evaluation. Buffering is shallow. It forces the evaluation of any scalar cell values, but leaves non-scalar values (records, lists, tables, and so on) as-is.
 
-Note that using this function might or might not make your queries run faster. In some cases, it can make your queries run more slowly due to the added cost of reading all the data and storing it in memory, as well as the fact that buffering prevents downstream folding.
+Note that using this function might or might not make your queries run faster. In some cases, it can make your queries run more slowly due to the added cost of reading all the data and storing it in memory, as well as the fact that buffering prevents downstream folding. If the data doesn't need to be buffered but you just want to prevent downstream folding, use [Table.StopFolding](/powerquery-m/table-stopfolding) instead.
 
 ## Example 1
 

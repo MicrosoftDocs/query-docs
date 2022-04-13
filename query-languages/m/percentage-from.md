@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Percentage.From"
 title: "Percentage.From | Microsoft Docs"
-ms.date: 3/14/2022
+ms.date: 4/13/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -20,7 +20,7 @@ Percentage.From(<b>value</b> as any, optional <b>culture</b> as nullable text) a
 
 ## About
 
-Returns a `percentage` value from the given `value`. If the given `value` is `null`, `Percentage.From` returns `null`. If the given `value` is `text` with a trailing percent symbol, then the converted decimal number will be returned. Otherwise, see `Number.From` for converting it to `number` value. An optional `culture` may also be provided (for example, "en-US").
+Returns a `percentage` value from the given `value`. If the given `value` is `null`, **Percentage.From** returns `null`. If the given `value` is `text` with a trailing percent symbol, then the converted decimal number will be returned. Otherwise, the value will be converted to a `number` using [Number.From](/powerquery-m/number-from). An optional `culture` may also be provided (for example, "en-US").
 
 ## Example 1
 

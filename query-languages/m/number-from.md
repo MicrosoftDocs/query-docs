@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number.From"
 title: "Number.From | Microsoft Docs"
-ms.date: 3/11/2022
+ms.date: 4/13/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -20,9 +20,9 @@ Number.From(<b>value</b> as any, optional <b>culture</b> as nullable text) as nu
 
 ## About
 
-Returns a `number` value from the given `value`. An optional `culture` may also be provided (for example, "en-US"). If the given `value` is `null`, `Number.From` returns `null`. If the given `value` is `number`, `value` is returned. Values of the following types can be converted to a `number` value:
+Returns a `number` value from the given `value`. An optional `culture` may also be provided (for example, "en-US"). If the given `value` is `null`, **Number.From** returns `null`. If the given `value` is `number`, `value` is returned. Values of the following types can be converted to a `number` value:
 
-* `text`: A `number` value from textual representation. Common text formats are handled ("15", "3,423.10", "5.0E-10"). See [Number.FromText](/powerquery-m/number-fromtext) for details.
+* `text`: A `number` value from textual representation. Common text formats are handled ("15", "3,423.10", "5.0E-10"). Refer to [Number.FromText](/powerquery-m/number-fromtext) for details.
 * `logical`: 1 for `true`, 0 for `false`.
 * `datetime`: A double-precision floating-point number that contains an OLE Automation date equivalent.
 * `datetimezone`: A double-precision floating-point number that contains an OLE Automation date equivalent of the local date and time of `value`.

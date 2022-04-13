@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number functions"
 title: "Number functions | Microsoft Docs"
-ms.date: 11/17/2021
+ms.date: 4/13/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -40,7 +40,7 @@ These functions create and manipulate number values.
   
 |Function|Description|  
 |------------|---------------|  
-|[Byte.From](byte-from.md)|Returns a 8-bit integer number value from the given value.|
+|[Byte.From](byte-from.md)|Returns an 8-bit integer number value from the given value.|
 |[Currency.From](currency-from.md)|Returns a currency value from the given value.|
 |[Decimal.From](decimal-from.md)|Returns a decimal number value from the given value.|
 |[Double.From](double-from.md)|Returns a Double number value from the given value.|
