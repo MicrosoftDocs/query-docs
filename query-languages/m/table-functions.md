@@ -33,7 +33,7 @@ These functions create and manipulate table values.
 |[Table.Split](table-split.md)|Splits the specified table into a list of tables using the specified page size.|
 |[Table.View](table-view.md)|Creates or extends a table with user-defined handlers for query and action operations.|
 |[Table.ViewFunction](table-viewfunction.md) | Creates a function that can be intercepted by a handler defined on a view (via `Table.View`).|
-|[Table.ViewError](Table.ViewError.md) | Creates a modified error record which won't trigger a fallback when thrown by a handler defined on a view (via `Table.View`)
+|[Table.ViewError](table-viewerror.md) | Creates a modified error record which won't trigger a fallback when thrown by a handler defined on a view (via `Table.View`)
   
 ## <a name="__toc360789443"></a>Conversions  
   
@@ -351,7 +351,7 @@ type table [
 |Function|Description|  
 |------------|---------------|  
 |[Table.Buffer](table-buffer.md)|Buffers a table into memory, isolating it from external changes during evaluation.|
-|[Table.StopFolding](Table.StopFolding.md)|Prevents any downstream operations from being run against the original source of the data.|
+|[Table.StopFolding](table-stopfolding.md)|Prevents any downstream operations from being run against the original source of the data.|
   
 ## Parameter Values  
   
