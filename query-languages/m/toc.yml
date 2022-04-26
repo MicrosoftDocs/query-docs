@@ -553,7 +553,7 @@
               href: sharpdate.md
         - name: Date enumeration values
           items:
-            -name: Date enumeration values overview
+            - name: Date enumeration values overview
               href: date-enumeration-values.md
             - name: Day.Friday
               href: day-friday.md
