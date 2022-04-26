@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: ByteOrder.BigEndian"
-title: "ByteOrder.BigEndian | Microsoft Docs"
+description: "Learn more about: ByteOrder"
+title: "ByteOrder | Microsoft Docs"
 ms.date: 7/29/2019
 ms.service: powerquery
 
@@ -10,7 +10,7 @@ author: dougklopfenstein
 ms.author: bezhan
 
 ---
-# ByteOrder.BigEndian
+# ByteOrder
 
 
 ## About

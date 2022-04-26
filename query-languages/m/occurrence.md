@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Occurrence.Optional"
-title: "Occurrence.Optional | Microsoft Docs"
+description: "Learn more about: Occurrence"
+title: "Occurrence | Microsoft Docs"
 ms.date: 4/16/2018
 ms.service: powerquery
 
@@ -10,7 +10,7 @@ author: dougklopfenstein
 ms.author: bezhan
 
 ---
-# Occurrence.Optional
+# Occurrence
 ## About
 The item is expected to appear zero or one time in the input.
 

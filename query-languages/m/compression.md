@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compression.Brotli"
-title: "Compression.Brotli | Microsoft Docs"
+description: "Learn more about: Compression"
+title: "Compression | Microsoft Docs"
 ms.date: 06/16/2020
 ms.service: powerquery
 
@@ -10,7 +10,7 @@ author: dougklopfenstein
 ms.author: bezhan
 
 ---
-# Compression.Brotli
+# Compression
 
 
 
