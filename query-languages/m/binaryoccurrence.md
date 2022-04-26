@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: BinaryOccurrence"
 title: "BinaryOccurrence | Microsoft Docs"
-ms.date: 7/29/2019
+ms.date: 4/25/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -10,11 +10,11 @@ author: dougklopfenstein
 ms.author: bezhan
 
 ---
-# BinaryOccurrence.
+# BinaryOccurrence
 
 ## Definition
 
-
+Specifies when the item is expected to appear.
 
 ## Fields
 
@@ -22,8 +22,4 @@ ms.author: bezhan
 |------------|---|---------------|
 |Optional | |The item is expected to appear zero or one time in the input.|
 |Repeating| |The item is expected to appear zero or more times in the input.|
-|Required| |The item is expected to appear once in the input.| 
-
-## About 
-
-The item is expected to appear zero or one time in the input.
+|Required| |The item is expected to appear once in the input.|

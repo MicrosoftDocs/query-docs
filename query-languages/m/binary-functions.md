@@ -67,4 +67,4 @@ Controlling byte order | Description
 
 ## See also
 
-[Binary enumeration values](binary-enumeration-values.md)
+[Binary enumerations](binary-enumerations.md)
