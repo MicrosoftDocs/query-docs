@@ -365,34 +365,16 @@
           items:
             - name: Binary enumerations overview
               href: binary-enumerations.md
-            - name: BinaryEncoding.Base64
+            - name: BinaryEncoding
               href: binaryencoding.md
             - name: BinaryOccurrence
               href: binaryoccurrence.md
-            - name: ByteOrder.BigEndian
-              href: byteorder-bigendian.md
-            - name: ByteOrder.LittleEndian
-              href: byteorder-littleendian.md
-            - name: Compression.Brotli
-              href: compression-brotli.md
-            - name: Compression.Deflate
-              href: compression-deflate.md
-            - name: Compression.GZip
-              href: compression-gzip.md
-            - name: Compression.LZ4
-              href: compression-lz4.md
-            - name: Compression.None
-              href: compression-none.md
-            - name: Compression.Snappy
-              href: compression-snappy.md
-            - name: Compression.Zstandard
-              href: compression-zstandard.md
-            - name: Occurrence.Optional
-              href: occurrence-optional.md
-            - name: Occurrence.Repeating
-              href: occurrence-repeating.md
-            - name: Occurrence.Required
-              href: occurrence-required.md
+            - name: ByteOrder
+              href: byteorder.md
+            - name: Compression
+              href: compression.md
+            - name: Occurrence
+              href: occurrence.md
         - name: Combiner functions
           items: 
             - name: Combiner functions overview
