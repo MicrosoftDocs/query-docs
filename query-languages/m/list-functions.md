@@ -41,7 +41,7 @@ These functions create and manipulate list values.
 |[List.Positions](list-positions.md)|Returns a list of positions for an input list.|  
 |[List.Range](list-range.md)|Returns a count items starting at an offset.|  
 |[List.Select](list-select.md)|Selects the items that match a condition.|
-|[List.Single](list-single.md)|Returns the single item of the list or throws an [Expression.Error](expression-error.md) if the list has more than one item.|  
+|[List.Single](list-single.md)|Returns the single item of the list or throws an `Expression.Error` if the list has more than one item.|  
 |[List.SingleOrDefault](list-singleordefault.md)|Returns a single item from a list.|  
 |[List.Skip](list-skip.md)|Skips the first item of the list. Given an empty list, it returns an empty list. This function takes an optional parameter `countOrCondition` to support skipping multiple values.|  
   
@@ -92,7 +92,7 @@ Since all values can be tested for equality, these functions can operate over he
   
 ## Ordering
 
-Ordering functions perform comparisons. All values that are compared must be comparable with each other. This means they must all come from the same datatype (or include null, which always compares smallest). Otherwise, an [Expression.Error](expression-error.md) is thrown.  
+Ordering functions perform comparisons. All values that are compared must be comparable with each other. This means they must all come from the same datatype (or include null, which always compares smallest). Otherwise, an `Expression.Error` is thrown.  
   
 Comparable data types include:
 
