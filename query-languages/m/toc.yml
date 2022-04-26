@@ -364,7 +364,7 @@
         - name: Binary enumeration values
           items:
             - name: Binary enumeration values overview
-              href: binary-enueration-values.md
+              href: binary-enumeration-values.md
             - name: BinaryEncoding.Base64
               href: binaryencoding-base64.md
             - name: BinaryEncoding.Hex
