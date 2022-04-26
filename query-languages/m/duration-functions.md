@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Duration functions"
 title: "Duration functions | Microsoft Docs"
-ms.date: 6/21/2021
+ms.date: 4/21/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -14,7 +14,7 @@ ms.author: bezhan
 
 These functions create and manipulate duration values.
   
-## <a name="__toc286049307"></a>Duration  
+## Duration  
   
 |Function|Description|  
 |------------|---------------|  

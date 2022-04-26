@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date functions"
 title: "Date functions | Microsoft Docs"
-ms.date: 2/16/2022
+ms.date: 4/21/2022
 ms.service: powerquery
 
 ms.reviewer: dougklo
@@ -14,7 +14,7 @@ ms.author: bezhan
 
 These functions create and manipulate the date component of date, datetime, and datetimezone values.
   
-## <a name="__toc360788935"></a>Date  
+## Date  
   
 |Function|Description|  
 |------------|---------------|  
@@ -62,7 +62,7 @@ These functions create and manipulate the date component of date, datetime, and 
 |[Date.IsInPreviousYear](date-isinpreviousyear.md)|Returns a logical value indicating whether the given Date/DateTime/DateTimeZone occurred during the previous year, as determined by the current date and time on the system.|  
 |[Date.IsInYearToDate](date-isinyeartodate.md)|Returns a logical value indicating whether the given Date/DateTime/DateTimeZone occurred in the period starting January 1st of the current year and ending on the current day, as determined by the current date and time on the system.|  
 |[Date.IsLeapYear](date-isleapyear.md)|Returns a logical value indicating whether the year portion of a DateTime value is a leap year.|  
-|[Date.Month](date-month.md)|Returns the month from a DateTime value.| 
+|[Date.Month](date-month.md)|Returns the month from a DateTime value.|
 |[Date.MonthName](date-monthname.md)|Returns the name of the month component.|  
 |[Date.QuarterOfYear](date-quarterofyear.md)|Returns a number between 1 and 4 for the quarter of the year from a DateTime value.|  
 |[Date.StartOfDay](date-startofday.md)|Returns a DateTime value for the start of the day.|  
@@ -76,13 +76,7 @@ These functions create and manipulate the date component of date, datetime, and 
 |[Date.WeekOfYear](date-weekofyear.md)|Returns a number for the count of week in the current year.|  
 |[Date.Year](date-year.md)|Returns the year from a DateTime value.|
 |[#date](sharpdate.md)|Creates a date value from year, month, and day.|  
-  
-Parameter values | Description
----------------- | -----------
-[Day.Sunday](day-sunday.md) | Represents Sunday.
-[Day.Monday](day-monday.md) | Represents Monday.
-[Day.Tuesday](day-tuesday.md) | Represents Tuesday.
-[Day.Wednesday](day-wednesday.md) | Represents Wednesday.
-[Day.Thursday](day-thursday.md) | Represents Thursday.
-[Day.Friday](day-friday.md) | Represents Friday.
-[Day.Saturday](day-saturday.md) | Represents Saturday.
+
+## See also
+
+[Date enumeration values](date-enumeration-values.md)

@@ -59,10 +59,6 @@
               href: accessing-data-functions.md
             - name: AccessControlEntry.ConditionToIdentities
               href: accesscontrolentry-conditiontoidentities.md
-            - name: AccessControlKind.Allow
-              href: accesscontrolkind-allow.md
-            - name: AccessControlKind.Deny
-              href: accesscontrolkind-deny.md
             - name: Access.Database
               href: access-database.md
             - name: ActiveDirectory.Domains
@@ -87,18 +83,10 @@
               href: azurestorage-datalakecontents.md
             - name: AzureStorage.Tables
               href: azurestorage-tables.md
-            - name: BufferMode.Delayed
-              href: buffermode-delayed.md
-            - name: BufferMode.Eager
-              href: buffermode-eager.md
             - name: Cdm.Contents
               href: cdm-contents.md
             - name: Csv.Document
               href: csv-document.md
-            - name: CsvStyle.QuoteAfterDelimiter
-              href: csvstyle-quoteafterdelimiter.md
-            - name: CsvStyle.QuoteAlways
-              href: csvstyle-quotealways.md
             - name: Cube.AddAndExpandDimensionColumn
               href: cube-addandexpanddimensioncolumn.md
             - name: Cube.AddMeasureColumn
@@ -173,22 +161,10 @@
               href: json-document.md
             - name: Json.FromValue
               href: json-fromvalue.md
-            - name: LimitClauseKind.AnsiSql2008
-              href: limitclausekind-ansisql2008.md
-            - name: LimitClauseKind.Limit
-              href: limitclausekind-limit.md
-            - name: LimitClauseKind.LimitOffset
-              href: limitclausekind-limitoffset.md
-            - name: LimitClauseKind.None
-              href: limitclauseKind-none.md
-            - name: LimitClauseKind.Top
-              href: limitclausekind-top.md
             - name: MySQL.Database
               href: mysql-database.md
             - name: OData.Feed
               href: odata-feed.md
-            - name: ODataOmitValues.Nulls
-              href: odataomitvalues-nulls.md
             - name: Odbc.DataSource
               href: odbc-datasource.md
             - name: Odbc.InferOptions
@@ -213,34 +189,8 @@
               href: salesforce-reports.md
             - name: SapBusinessWarehouse.Cubes
               href: sapbusinesswarehouse-cubes.md
-            - name: SapBusinessWarehouseExecutionMode.DataStream
-              href: sapbusinesswarehouseexecutionmode.datastream.md
-            - name: SapBusinessWarehouseExecutionMode.BasXml
-              href: sapbusinesswarehouseexecutionmode.basxml.md
-            - name: SapBusinessWarehouseExecutionMode.BasXmlGzip
-              href: sapbusinesswarehouseexecutionmode.basxmlgzip.md
             - name: SapHana.Database
               href: saphana-database.md
-            - name: SapHanaDistribution.All
-              href: saphanadistribution-all.md
-            - name: SapHanaDistribution.Connection
-              href: saphanadistribution-connection.md
-            - name: SapHanaDistribution.Off
-              href: saphanadistribution-off.md
-            - name: SapHanaDistribution.Statement
-              href: saphanadistribution-statement.md
-            - name: SapHanaRangeOperator.Equals
-              href: saphanarangeoperator-equals.md
-            - name: SapHanaRangeOperator.GreaterThan
-              href: saphanarangeoperator-greaterthan.md
-            - name: SapHanaRangeOperator.GreaterThanOrEquals
-              href: saphanarangeoperator-greaterthanorequals.md
-            - name: SapHanaRangeOperator.LessThan
-              href: saphanarangeoperator-lessthan.md
-            - name: SapHanaRangeOperator.LessThanOrEquals
-              href: saphanarangeoperator-lessthanorequals.md
-            - name: SapHanaRangeOperator.NotEquals
-              href: saphanarangeoperator-notequals.md
             - name: SharePoint.Contents
               href: sharepoint-contents.md
             - name: SharePoint.Files
@@ -267,6 +217,64 @@
               href: web-headers.md
             - name: Web.Page
               href: web-page.md
+            - name: Xml.Document
+              href: xml-document.md
+            - name: Xml.Tables
+              href: xml-tables.md
+        - name: Accessing data enumeration values
+          items:
+            - name: Acessing data enumeration values overview
+              href: accessing-data-enumeration-values.md
+            - name: AccessControlKind.Allow
+              href: accesscontrolkind-allow.md
+            - name: AccessControlKind.Deny
+              href: accesscontrolkind-deny.md
+            - name: BufferMode.Delayed
+              href: buffermode-delayed.md
+            - name: BufferMode.Eager
+              href: buffermode-eager.md
+            - name: CsvStyle.QuoteAfterDelimiter
+              href: csvstyle-quoteafterdelimiter.md
+            - name: CsvStyle.QuoteAlways
+              href: csvstyle-quotealways.md
+            - name: LimitClauseKind.AnsiSql2008
+              href: limitclausekind-ansisql2008.md
+            - name: LimitClauseKind.Limit
+              href: limitclausekind-limit.md
+            - name: LimitClauseKind.LimitOffset
+              href: limitclausekind-limitoffset.md
+            - name: LimitClauseKind.None
+              href: limitclauseKind-none.md
+            - name: LimitClauseKind.Top
+              href: limitclausekind-top.md
+            - name: ODataOmitValues.Nulls
+              href: odataomitvalues-nulls.md
+            - name: SapBusinessWarehouseExecutionMode.DataStream
+              href: sapbusinesswarehouseexecutionmode.datastream.md
+            - name: SapBusinessWarehouseExecutionMode.BasXml
+              href: sapbusinesswarehouseexecutionmode.basxml.md
+            - name: SapBusinessWarehouseExecutionMode.BasXmlGzip
+              href: sapbusinesswarehouseexecutionmode.basxmlgzip.md
+            - name: SapHanaDistribution.All
+              href: saphanadistribution-all.md
+            - name: SapHanaDistribution.Connection
+              href: saphanadistribution-connection.md
+            - name: SapHanaDistribution.Off
+              href: saphanadistribution-off.md
+            - name: SapHanaDistribution.Statement
+              href: saphanadistribution-statement.md
+            - name: SapHanaRangeOperator.Equals
+              href: saphanarangeoperator-equals.md
+            - name: SapHanaRangeOperator.GreaterThan
+              href: saphanarangeoperator-greaterthan.md
+            - name: SapHanaRangeOperator.GreaterThanOrEquals
+              href: saphanarangeoperator-greaterthanorequals.md
+            - name: SapHanaRangeOperator.LessThan
+              href: saphanarangeoperator-lessthan.md
+            - name: SapHanaRangeOperator.LessThanOrEquals
+              href: saphanarangeoperator-lessthanorequals.md
+            - name: SapHanaRangeOperator.NotEquals
+              href: saphanarangeoperator-notequals.md
             - name: WebMethod.Delete
               href: webmethod-delete.md
             - name: WebMethod.Get
@@ -279,10 +287,6 @@
               href: webmethod-post.md
             - name: WebMethod.Put
               href: webmethod-put.md
-            - name: Xml.Document
-              href: xml-document.md
-            - name: Xml.Tables
-              href: xml-tables.md
         - name: Binary functions
           items: 
             - name: Binary functions overview
@@ -311,10 +315,6 @@
               href: binary-tolist.md
             - name: Binary.ToText
               href: binary-totext.md
-            - name: BinaryEncoding.Base64
-              href: binaryencoding-base64.md
-            - name: BinaryEncoding.Hex
-              href: binaryencoding-hex.md
             - name: BinaryFormat.7BitEncodedSignedInteger
               href: binaryformat-7bitencodedsignedinteger.md
             - name: BinaryFormat.7BitEncodedUnsignedInteger
@@ -359,6 +359,16 @@
               href: binaryformat-unsignedinteger32.md
             - name: BinaryFormat.UnsignedInteger64
               href: binaryformat-unsignedinteger64.md
+            - name: '#binary'
+              href: sharpbinary.md
+        - name: Binary enumeration values
+          items:
+            - name: Binary enumeration values overview
+              href: binary-enueration-values.md
+            - name: BinaryEncoding.Base64
+              href: binaryencoding-base64.md
+            - name: BinaryEncoding.Hex
+              href: binaryencoding-hex.md
             - name: BinaryOccurrence.Optional
               href: binaryoccurrence-optional.md
             - name: BinaryOccurrence.Repeating
@@ -389,8 +399,6 @@
               href: occurrence-repeating.md
             - name: Occurrence.Required
               href: occurrence-required.md
-            - name: '#binary'
-              href: sharpbinary.md
         - name: Combiner functions
           items: 
             - name: Combiner functions overview
@@ -417,6 +425,10 @@
               href: comparer-ordinal.md
             - name: Comparer.OrdinalIgnoreCase
               href: comparer-ordinalignorecase.md
+        - name: Comparer enumeration values
+          items:
+            - name: Comparer enumeration values overview
+              href: comparer-enumeration-values.md
             - name: Culture.Current
               href: culture-current.md
         - name: Date functions
@@ -537,6 +549,12 @@
               href: date-weekofyear.md
             - name: Date.Year
               href: date-year.md
+            - name: '#date'
+              href: sharpdate.md
+        - name: Date enumeration values
+          items:
+            -name: Date enumeration values overview
+              href: date-enumeration-values.md
             - name: Day.Friday
               href: day-friday.md
             - name: Day.Monday
@@ -551,8 +569,6 @@
               href: day-tuesday.md
             - name: Day.Wednesday
               href: day-wednesday.md
-            - name: '#date'
-              href: sharpdate.md
         - name: DateTime functions
           items: 
             - name: DateTime functions overview
@@ -643,10 +659,14 @@
               href: datetimezone-zonehours.md
             - name: DateTimeZone.ZoneMinutes
               href: datetimezone-zoneminutes.md
-            - name: TimeZone.Current
-              href: timezone-current.md
             - name: '#datetimezone'
               href: sharpdatetimezone.md
+        - name: DateTimeZone enumeration values
+          items:
+            - name: DateTimeZone enumeration values overview
+              href: datetimezone-enumeration-values.md
+            - name: TimeZone.Current
+              href: timezone-current.md
         - name: Duration functions
           items: 
             - name: Duration functions overview
@@ -687,6 +707,10 @@
               href: diagnostics-trace.md
             - name: Error.Record
               href: error-record.md
+        - name: Error handling enumeration values
+          items:
+            - name: Error handling enumeration values overview
+              href: error-handling-enumeration-values.md
             - name: TraceLevel.Critical
               href: tracelevel-critical.md
             - name: TraceLevel.Error
@@ -879,6 +903,10 @@
               href: list-union.md
             - name: List.Zip
               href: list-zip.md
+        - name: List enumeration values
+          items:
+            - name: List enumeration values overview
+              href: list-enumeration-values.md
             - name: PercentileMode.ExcelExc
               href: percentilemode-excelexc.md
             - name: PercentileMode.ExcelInc
@@ -945,10 +973,6 @@
               href: number-cos.md
             - name: Number.Cosh
               href: number-cosh.md
-            - name: Number.E
-              href: number-e.md
-            - name: Number.Epsilon
-              href: number-epsilon.md
             - name: Number.Exp
               href: number-exp.md
             - name: Number.Factorial
@@ -973,16 +997,8 @@
               href: number-log10.md
             - name: Number.Mod
               href: number-mod.md
-            - name: Number.NaN
-              href: number-nan.md
-            - name: Number.NegativeInfinity
-              href: number-negativeinfinity.md
             - name: Number.Permutations
               href: number-permutations.md
-            - name: Number.PI
-              href: number-pi.md
-            - name: Number.PositiveInfinity
-              href: number-positiveinfinity.md
             - name: Number.Power
               href: number-power.md
             - name: Number.Random
@@ -1015,6 +1031,28 @@
               href: number-totext.md
             - name: Percentage.From
               href: percentage-from.md
+            - name: Single.From
+              href: single-from.md
+        - name: Number constant values
+          items:
+            - name: Number constant values overview
+              href: number-constant-values.md
+            - name: Number.E
+              href: number-e.md
+            - name: Number.Epsilon
+              href: number-epsilon.md
+            - name: Number.NaN
+              href: number-nan.md
+            - name: Number.NegativeInfinity
+              href: number-negativeinfinity.md
+            - name: Number.PI
+              href: number-pi.md
+            - name: Number.PositiveInfinity
+              href: number-positiveinfinity.md
+        - name: Number enumeration values
+          items:
+            - name: Number enumeration values overview
+              href: number-enumeration-values.md
             - name: RoundingMode.AwayFromZero
               href: roundingmode-awayfromzero.md
             - name: RoundingMode.Down
@@ -1025,8 +1063,6 @@
               href: roundingmode-towardzero.md
             - name: RoundingMode.Up
               href: roundingmode-up.md
-            - name: Single.From
-              href: single-from.md
         - name: Record functions
           items: 
             - name: Record functions overview

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Expression functions"
 title: "Expression functions | Microsoft Docs"
-ms.date: 4/7/2020
+ms.date: 4/21/2020
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.author: bezhan
 
 These functions allow the construction and evaluation of M code.
   
-## <a name="__toc360789877"></a>Expression  
+## Expression  
   
 |Function|Description|  
 |------------|---------------|  

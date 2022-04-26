@@ -12,7 +12,7 @@ ms.author: bezhan
 ---
 # DateTimeZone functions
 
-These functions create and manipulate datetimezone values. 
+These functions create and manipulate datetimezone values.
   
 ## <a name="__toc360789069"></a>DateTimeZone  
   
@@ -33,5 +33,8 @@ These functions create and manipulate datetimezone values.
 |[DateTimeZone.UtcNow](datetimezone-utcnow.md)|Returns a DateTime value set to the current system date and time in the Utc timezone.|  
 |[DateTimeZone.ZoneHours](datetimezone-zonehours.md)|Returns a time zone hour value from a DateTime value.|  
 |[DateTimeZone.ZoneMinutes](datetimezone-zoneminutes.md)|Returns a time zone minute value from a DateTime value.|
-|[TimeZone.Current](timezone-current.md)|Returns the name of the current time zone for the application.|
 |[#datetimezone](sharpdatetimezone.md)|Creates a datetimezone value from year, month, day, hour, minute, second, offset-hours, and offset-minutes.|
+
+## See also
+
+[DateTimeZone enumeration values](datetimezone-enumeration-values.md)

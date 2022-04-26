@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Lines functions"
 title: "Lines functions | Microsoft Docs"
-ms.date: 4/7/2020
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -14,7 +14,7 @@ ms.author: bezhan
 
 These functions convert lists of text to and from binary and single text values.
   
-##  <a name="__toc360789866"></a> Lines  
+## Lines  
   
 |Function|Description|  
 |--------------|-----------------|  

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Function values"
 title: "Function values | Microsoft Docs"
-ms.date: 4/7/2020
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -14,7 +14,7 @@ ms.author: bezhan
 
 These functions create and invoke other M functions.
   
-## <a name="__toc360789887"></a>Function  
+## Function  
   
 |Function|Description|  
 |------------|---------------|  

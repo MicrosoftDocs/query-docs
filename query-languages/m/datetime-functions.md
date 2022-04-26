@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DateTime functions"
 title: "DateTime functions | Microsoft Docs"
-ms.date: 4/7/2020
+ms.date: 4/21/2020
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -14,7 +14,7 @@ ms.author: bezhan
 
 These functions create and manipulate datetime and datetimezone values.
   
-## <a name="__toc360789041"></a>DateTime  
+## DateTime  
   
 |Function|Description|  
 |------------|---------------|  
