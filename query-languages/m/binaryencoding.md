@@ -20,5 +20,5 @@ Specifies the binary encoding type.
 
 |Field|Value|Description|  
 |------------|---|---------------|  
-|<a id="binaryencoding-base64">Base64</a>|0|Constant to use as the encoding type when base-64 encoding is required.|
-|<a id="binaryencoding-hex">Hex</a>|1|Constant to use as the encoding type when hexadecimal encoding is required.|
+|<a id="binaryencoding-base64"></a>**Base64**|0|Constant to use as the encoding type when base-64 encoding is required.|
+|<a id="binaryencoding-hex"></a>**Hex**|1|Constant to use as the encoding type when hexadecimal encoding is required.|

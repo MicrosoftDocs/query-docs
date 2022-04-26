@@ -361,20 +361,14 @@
               href: binaryformat-unsignedinteger64.md
             - name: '#binary'
               href: sharpbinary.md
-        - name: Binary enumeration values
+        - name: Binary enumerations
           items:
-            - name: Binary enumeration values overview
-              href: binary-enumeration-values.md
+            - name: Binary enumerations overview
+              href: binary-enumerations.md
             - name: BinaryEncoding.Base64
-              href: binaryencoding-base64.md
-            - name: BinaryEncoding.Hex
-              href: binaryencoding-hex.md
-            - name: BinaryOccurrence.Optional
-              href: binaryoccurrence-optional.md
-            - name: BinaryOccurrence.Repeating
-              href: binaryoccurrence-repeating.md
-            - name: BinaryOccurrence.Required
-              href: binaryoccurrence-required.md
+              href: binaryencoding.md
+            - name: BinaryOccurrence
+              href: binaryoccurrence.md
             - name: ByteOrder.BigEndian
               href: byteorder-bigendian.md
             - name: ByteOrder.LittleEndian
