@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.Join"
 title: "Table.Join | Microsoft Docs"
-ms.date: 3/10/2022
+ms.date: 4/13/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -35,7 +35,7 @@ An optional set of `keyEqualityComparers` may be included to specify how to comp
 
 ## Example 1
 
-Inner join the two tables on [CustomerID]
+Join two tables using a single key column.
 
 **Usage**
 

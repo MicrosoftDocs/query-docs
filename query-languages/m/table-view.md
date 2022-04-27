@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.View"
 title: "Table.View | Microsoft Docs"
-ms.date: 3/14/2022
+ms.date: 4/13/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -28,9 +28,9 @@ Handler functions must return a value that is semantically equivalent to the res
 
 If a handler function raises an error, the default behavior of the operation is applied to the view.
 
-`Table.View` can be used to implement folding to a data source&mdash;the translation of M queries into source-specific queries (for example, to create T-SQL statements from M queries).
+**Table.View** can be used to implement folding to a data source&mdash;the translation of M queries into source-specific queries (for example, to create T-SQL statements from M queries).
 
-See the published Power Query custom connector documentation for a more complete description of `Table.View`.
+Refer to the published [Power Query custom connector documentation](/power-query/samples/trippin/10-tableview1/readme#using-tableview) for a more complete description of **Table.View**.
 
 ## Example 1
 

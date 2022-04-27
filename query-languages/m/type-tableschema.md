@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Type.TableSchema"
 title: "Type.TableSchema | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 4/13/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -21,5 +21,5 @@ Type.TableSchema(<b>tableType</b> as type) as table
 ## About
 
 Returns a table describing the columns of `tableType`.
-  
-  
+
+Refer to the documentation for [Table.Schema](/powerquery-m/table-schema) for a description of the resulting table.

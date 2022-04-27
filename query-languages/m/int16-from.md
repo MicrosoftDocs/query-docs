@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Int16.From"
 title: "Int16.From | Microsoft Docs"
-ms.date: 3/11/2022
+ms.date: 4/13/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -20,7 +20,7 @@ Int16.From(<b>value</b> as any, optional <b>culture</b> as nullable text, option
   
 ## About
 
-Returns a 16-bit integer `number` value from the given `value`. If the given `value` is `null`, `Int16.From` returns `null`. If the given `value` is `number` within the range of 16-bit integer without a fractional part, `value` is returned. If it has fractional part, then the number is rounded with the rounding mode specified. The default rounding mode is [RoundingMode.ToEven](/powerquery-m/roundingmode-toeven). If the given `value` is of any other type, see [Number.FromText](/powerquery-m/number-fromtext) for converting it to `number` value, then the previous statement about converting `number` value to 16-bit integer `number` value applies. See [Number.Round](/powerquery-m/number-round) for the available rounding modes. An optional `culture` may also be provided (for example, "en-US").
+Returns a 16-bit integer `number` value from the given `value`. If the given `value` is `null`, **Int16.From** returns `null`. If the given `value` is `number` within the range of 16-bit integer without a fractional part, `value` is returned. If it has fractional part, then the number is rounded with the rounding mode specified. The default rounding mode is [RoundingMode.ToEven](/powerquery-m/roundingmode-toeven). If `value` is of any other type, it will first be converted to a `number` using [Number.FromText](/powerquery-m/number-fromtext). Refer to [Number.Round](/powerquery-m/number-round) for the available rounding modes. An optional `culture` may also be provided (for example, "en-US").
 
 ## Example 1
 

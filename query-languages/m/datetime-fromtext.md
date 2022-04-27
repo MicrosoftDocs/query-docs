@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DateTime.FromText"
 title: "DateTime.FromText | Microsoft Docs"
-ms.date: 3/11/2022
+ms.date: 4/13/2022
 ms.service: powerquery
 
 ms.reviewer: dougklo
@@ -22,7 +22,7 @@ DateTime.FromText(<b>text</b> as nullable text, optional <b>options</b> as any) 
 
 Creates a `datetime` value from a textual representation, `text`. An optional `record` parameter, `options` may be provided to specify additional properties. The `record` can contain the following fields:
 
-* `Format`: A `text` value indicating the format to use. Go to https://go.microsoft.com/fwlink/?linkid=2180104 and https://go.microsoft.com/fwlink/?linkid=2180105.
+* `Format`: A `text` value indicating the format to use. For more details, go to https://go.microsoft.com/fwlink/?linkid=2180104 and https://go.microsoft.com/fwlink/?linkid=2180105.
 
    Omitting this field or providing `null` will result in parsing the date using a best effort.
 
