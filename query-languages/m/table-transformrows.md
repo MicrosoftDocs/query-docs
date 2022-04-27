@@ -24,7 +24,7 @@ Creates a `list` by applying the `transform` operation to each row in `table`.
 
 ## Example 1  
 
-Transform the rows into a list of numbers from the table `({[A = 1], [A = 2], [A = 3], [A = 4], [A = 5]})`.
+Transform the rows of a table into a list of numbers.
 
 **Usage**
 
@@ -47,7 +47,7 @@ Table.TransformRows(
 
 ## Example 2
 
-Transform the rows in column [A] into text values in a column [B] from the table `({[A = 1], [A = 2], [A = 3], [A = 4], [A = 5])`.
+Transform the rows of a numeric table into textual records.
 
 **Usage**
 
