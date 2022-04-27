@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DateTimeZone.From"
 title: "DateTimeZone.From | Microsoft Docs"
-ms.date: 3/11/2022
+ms.date: 4/13/2022
 ms.service: powerquery
 
 ms.reviewer: dougklo
@@ -20,9 +20,9 @@ DateTimeZone.From(<b>value</b> as any, optional <b>culture</b> as nullable text)
   
 ## About
 
-Returns a `datetimezone` value from the given `value`. An optional `culture` may also be provided (for example, "en-US"). If the given `value` is `null`, `DateTimeZone.From` returns `null`. If the given `value` is `datetimezone`, `value` is returned. Values of the following types can be converted to a `datetimezone` value:
+Returns a `datetimezone` value from the given `value`. An optional `culture` may also be provided (for example, "en-US"). If the given `value` is `null`, **DateTimeZone.From** returns `null`. If the given `value` is `datetimezone`, `value` is returned. Values of the following types can be converted to a `datetimezone` value:
 
-* `text`: A `datetimezone` value from textual representation. Go to [DateTimeZone.FromText](datetimezone-fromtext.md) for details.
+* `text`: A `datetimezone` value from textual representation. Refer to [DateTimeZone.FromText](datetimezone-fromtext.md) for details.
 * `date`: A `datetimezone` with `value` as the date component, `12:00:00 AM` as the time component and the offset corresponding the local time zone.
 * `datetime`: A `datetimezone` with `value` as the datetime and the offset corresponding the local time zone.
 * `time`: A `datetimezone` with the date equivalent of the OLE Automation Date of `0` as the date component, `value` as the time component and the offset corresponding the local time zone.

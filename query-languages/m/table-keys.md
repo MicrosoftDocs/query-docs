@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.Keys"
 title: "Table.Keys | Microsoft Docs"
-ms.date: 8/2/2019
+ms.date: 4/13/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,8 +15,31 @@ ms.author: bezhan
 ## Syntax
 
 <pre> 
-Table.Keys(<b>table</b> as table) as list 
+Table.Keys(<b>table</b> as table) as list
 </pre>
   
-## About  
-Table.Keys
+## About
+
+Returns the keys of the specified table.
+
+## Example 1
+
+Get the list of keys for a table.
+
+**Usage**
+
+```powerquery-m
+let
+    table = Table.FromRecords({
+        [Id = 1, Name = "Hello There"],
+        [Id = 2, Name = "Good Bye"]
+    }),
+    tableWithKeys = Table.AddKey(table, {"Id"}, true),
+    keys = Table.Keys(tableWithKeys)
+in
+    keys
+```
+
+**Output**
+
+`{[Columns = {"Id"}, Primary = true]}`

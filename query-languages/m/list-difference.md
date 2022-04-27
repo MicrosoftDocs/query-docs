@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.Difference"
 title: "List.Difference | Microsoft Docs"
-ms.date: 3/8/2022
+ms.date: 4/13/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -22,7 +22,7 @@ Returns the items in list `list1` that do not appear in list `list2`. Duplicate 
 
 ## Example 1
 
-Find the items in list {1, 2, 3, 4, 5}that do not appear in {4, 5, 3}.
+Find the items in list {1, 2, 3, 4, 5} that do not appear in {4, 5, 3}.
 
 **Usage**
 

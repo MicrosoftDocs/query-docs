@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.From"
 title: "Date.From | Microsoft Docs"
-ms.date: 3/11/2022
+ms.date: 4/13/2022
 ms.service: powerquery
 
 ms.reviewer: dougklo
@@ -20,9 +20,9 @@ Date.From(<b>value</b> as any, optional <b>culture</b> as nullable text) as null
   
 ## About
 
-Returns a `date` value from the given `value`. An optional `culture`> may also be provided (for example, "en-US"). If the given `value` is `null`, `Date.From` returns `null`. If the given `value` is `date`, `value` is returned. Values of the following types can be converted to a `date` value:
+Returns a `date` value from the given `value`. An optional `culture`> may also be provided (for example, "en-US"). If the given `value` is `null`, **Date.From** returns `null`. If the given `value` is `date`, `value` is returned. Values of the following types can be converted to a `date` value:
 
-* `text`: A `date` value from textual representation. Go to [Date.FromText](date-fromtext.md) for details.
+* `text`: A `date` value from textual representation. Refer to [Date.FromText](date-fromtext.md) for details.
 * `datetime`: The date component of the `value`.
 * `datetimezone`: The date component of the local datetime equivalent of `value`.
 * `number`: The date component of the datetime equivalent to the OLE Automation Date expressed by `value`.

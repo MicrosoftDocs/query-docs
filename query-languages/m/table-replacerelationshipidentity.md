@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.ReplaceRelationshipIdentity"
 title: "Table.ReplaceRelationshipIdentity | Microsoft Docs"
-ms.date: 8/1/2019
+ms.date: 4/13/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -19,5 +19,5 @@ Table.ReplaceRelationshipIdentity(<b>value</b> as any, <b>identity</b> as text) 
 </pre>
 
 ## About
-Table.ReplaceRelationshipIdentity
 
+This function is intended for internal use only.

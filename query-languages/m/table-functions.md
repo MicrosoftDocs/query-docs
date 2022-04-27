@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table functions"
 title: "Table functions | Microsoft Docs"
-ms.date: 3/16/2022
+ms.date: 4/13/2022
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -31,8 +31,9 @@ These functions create and manipulate table values.
 |[Table.FuzzyJoin](table-fuzzyjoin.md)|Joins the rows from the two tables that fuzzy match based on the given keys.|
 |[Table.FuzzyNestedJoin](table-fuzzynestedjoin.md)|Performs a fuzzy join between tables on supplied columns and produces the join result in a new column.|
 |[Table.Split](table-split.md)|Splits the specified table into a list of tables using the specified page size.|
-|[Table.View](table-view.md)|Creates or extends a table with user-defined handlers for query and action operations.| 
-|[Table.ViewFunction](table-viewfunction.md) | Creates a function that can be intercepted by a handler defined on a view (via `Table.View`).| 
+|[Table.View](table-view.md)|Creates or extends a table with user-defined handlers for query and action operations.|
+|[Table.ViewFunction](table-viewfunction.md) | Creates a function that can be intercepted by a handler defined on a view (via `Table.View`).|
+|[Table.ViewError](table-viewerror.md) | Creates a modified error record which won't trigger a fallback when thrown by a handler defined on a view (via `Table.View`)
   
 ## <a name="__toc360789443"></a>Conversions  
   
@@ -248,7 +249,7 @@ Orders = Table.FromRecords({
 |[Table.AddFuzzyClusterColumn](table-addfuzzyclustercolumn.md)| Adds a new column with representative values obtained by fuzzy grouping values of the specified column in the table.|
 |[Table.AddIndexColumn](table-addindexcolumn.md)|Returns a table with a new column with a specific name that, for each row, contains an index of the row in the table.|  
 |[Table.AddJoinColumn](table-addjoincolumn.md)|Performs a nested join between table1 and table2 from specific columns and produces the join result as a newColumnName column for each row of table1.|  
-|[Table.AddKey](table-addkey.md)|Add a key to table.|  
+|[Table.AddKey](table-addkey.md)|Adds a key to table.|  
 |[Table.AggregateTableColumn](table-aggregatetablecolumn.md)|Aggregates tables nested in a specific column into multiple columns containing aggregate values for those tables.|  
 |[Table.CombineColumns](table-combinecolumns.md)|Table.CombineColumns merges columns using a combiner function to produce a new column. Table.CombineColumns is the inverse of Table.SplitColumns.|
 |[Table.CombineColumnsToRecord](table-combinecolumnstorecord.md)|Combines the specified columns into a new record-valued column where each record has field names and values corresponding to the column names and values of the columns that were combined.|
@@ -261,11 +262,11 @@ Orders = Table.FromRecords({
 |[Table.FilterWithDataTable](table-filterwithdatatable.md)|This function is intended for internal use only.|
 |[Table.Group](table-group.md)|Groups table rows by the values of key columns for each row.|  
 |[Table.Join](table-join.md)|Joins the rows of table1 with the rows of table2 based on the equality of the values of the key columns selected by table1, key1 and table2, key2.|  
-|[Table.Keys](table-keys.md)|Returns a list of key column names from a table.|
+|[Table.Keys](table-keys.md)|Returns the keys of the specified table.|
 |[Table.NestedJoin](table-nestedjoin.md)|Joins the rows of the tables based on the equality of the keys. The results are entered into a new column.|  
 |[Table.ReplaceErrorValues](table-replaceerrorvalues.md)|Replaces the error values in the specified columns with the corresponding specified value.|
-|[Table.ReplaceKeys](table-replacekeys.md)|Returns a new table with new key information set in the keys argument.|  
-|[Table.ReplaceRelationshipIdentity](table-replacerelationshipidentity.md)||
+|[Table.ReplaceKeys](table-replacekeys.md)|Replaces the keys of the specified table.|  
+|[Table.ReplaceRelationshipIdentity](table-replacerelationshipidentity.md)|This function is intended for internal use only.|
 |[Table.ReplaceValue](table-replacevalue.md)|Replaces oldValue with newValue in specific columns of a table, using the provided replacer function, such as text.Replace or Value.Replace.|
 |[Table.SplitColumn](table-splitcolumn.md)|Returns a new set of columns from a single column applying a splitter function to each value.|  
 |[Table.TransformColumns](table-transformcolumns.md)|Transforms columns from a table using a function.|  
@@ -349,7 +350,8 @@ type table [
   
 |Function|Description|  
 |------------|---------------|  
-|[Table.Buffer](table-buffer.md)|Buffers a table into memory, isolating it from external changes during evaluation.| 
+|[Table.Buffer](table-buffer.md)|Buffers a table into memory, isolating it from external changes during evaluation.|
+|[Table.StopFolding](table-stopfolding.md)|Prevents any downstream operations from being run against the original source of the data.|
   
 ## Parameter Values  
   

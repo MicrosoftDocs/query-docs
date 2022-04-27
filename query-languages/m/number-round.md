@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number.Round"
 title: "Number.Round | Microsoft Docs"
-ms.date: 3/11/2022
+ms.date: 4/13/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -27,7 +27,7 @@ By default, `number` is rounded to the nearest integer, and ties are broken by r
 However, these defaults can be overridden via the following optional parameters.
 
 * `digits`: Causes `number` to be rounded to the specified number of decimal digits.
-* `roundingMode`: Overrides the default tie-breaking behavior when `number` is at the midpoint between two potential rounded values (see `RoundingMode.Type` for possible values).
+* `roundingMode`: Overrides the default tie-breaking behavior when `number` is at the midpoint between two potential rounded values (refer to `RoundingMode.Type` for possible values).
 
 ## Example 1
 
