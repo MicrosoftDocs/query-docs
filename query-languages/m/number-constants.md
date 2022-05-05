@@ -1,13 +1,13 @@
 ---
-description: "Learn more about: Number constant values"
-title: "Number constant values | Microsoft Docs"
-ms.date: 4/7/2022
+description: "Learn more about: Number constants"
+title: "Number constants | Microsoft Docs"
+ms.date: 5/3/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # Number constant values
@@ -23,7 +23,7 @@ These constant values are used by number functions.
 |[Number.PI](number-pi.md)|Returns 3.1415926535897931, the value for Pi up to 16 decimal digits.|
 |[Number.PositiveInfinity](number-positiveinfinity.md)|Represents 1/0.|  
 
-## See also
+## More information
 
 [Number functions](number-functions.md)
 [Number enumeration values](number-enumeration-values.md)

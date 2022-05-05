@@ -14,14 +14,14 @@ ms.author: bezhan
 
 These enumerations are used by binary data functions.
 
-|Enumeration value|Description|  
+|Enumeration|Description|  
 |------------|---------------|  
-|[BinaryEncoding](binaryencoding.md)|Specifies the binary encoding type.|
-|[BinaryOccurrence](binaryoccurrence.md)|Specifies when the item is expected to appear.|
-|[ByteOrder](byteorder-bigendian.md)|Specifies the possible value for the `byteOrder` parameter in [BinaryFormat.ByteOrder](binaryformat-byteorder.md).|
-|[Compression](compression-deflate.md)|Specifies the format of the compressed data.|
-|[Occurrence](occurrence-optional.md)|Specifies when the item is expected to appear.|
+|[BinaryEncoding.Type](binaryencoding-type.md)|Specifies the type of binary encoding.|
+|[BinaryOccurrence.Type](binaryoccurrence-type.md)|Specifies how many times the item is expected to appear in the group.|
+|[ByteOrder.Type](byteorder-type.md)|Specifies the byte order.|
+|[Compression.Type](compression-type.md)|Specifies the type of compression.|
+|[Occurrence.Type](occurrence-type.md)|Specifies the occurrence of an element in a sequence.|
 
-## See also
+## More information
 
 [Binary functions](binary-functions.md)

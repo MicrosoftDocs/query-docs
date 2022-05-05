@@ -1,20 +1,20 @@
 ---
 description: "Learn more about: Value functions"
 title: "Value functions | Microsoft Docs"
-ms.date: 3/16/2022
+ms.date: 5/5/2022
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # Value functions
 
 These functions evaluate and perform operations on values.
   
-## <a name="__toc360789732"></a>Values  
+## Values  
   
 |Function|Description|  
 |------------|---------------|
@@ -27,7 +27,7 @@ These functions evaluate and perform operations on values.
 |[Value.Optimize](value-optimize.md)|If value represents a query that can be optimized, returns the optimized query. Otherwise returns value.
 |[Value.Type](value-type.md) | Returns the type of the given value.|
   
-### <a name="__toc360789742"></a>Arithmetic operations  
+### Arithmetic operations  
   
 |Function|Description|  
 |------------|---------------|  
@@ -36,14 +36,7 @@ These functions evaluate and perform operations on values.
 |[Value.Multiply](value-multiply.md)|Returns the product of the two values.|
 |[Value.Subtract](value-subtract.md)|Returns the difference of the two values.|  
 
-### Arithmetic parameters
-
-|Function|Description|  
-|------------|---------------|  
-|[Precision.Double](precision-double.md)|An optional parameter for the built-in arthimetic operators to specify double precision.|  
-|[Precision.Decimal](precision-decimal.md)|An optional parameter for the built-in arthimetic operators to specify decimal precision.|
-
-### <a name="__toc360789751"></a>Parameter types  
+### Parameter types  
   
 |Type|Description|  
 |--------|---------------|  
@@ -61,7 +54,7 @@ Implementation | Description
 [SqlExpression.SchemaFrom](sqlexpression-schemafrom.md) | This function is intended for internal use only.|
 [SqlExpression.ToExpression](sqlexpression-toexpression.md) | This function is intended for internal use only.|
 
-## <a name="__toc360789761"></a>Metadata  
+## Metadata  
   
 |Function|Description|  
 |------------|---------------|  
