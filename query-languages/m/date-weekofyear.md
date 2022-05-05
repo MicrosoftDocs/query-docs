@@ -24,7 +24,7 @@ Returns a number from 1 to 54 indicating which week of the year the date, `dateT
 
 - `dateTime`: A `datetime` value for which the week-of-the-year is determined.
 
-- `firstDayOfWeek`: An optional `Day.Type` value that indicates which day is considered the start of a new week (for example, `Day.Sunday`. If unspecified, a culture-dependent default is used.
+- `firstDayOfWeek`: An optional [Day.Type](day-type.md) value that indicates which day is considered the start of a new week (for example, `Day.Sunday`. If unspecified, a culture-dependent default is used.
 
 ## Example 1
 

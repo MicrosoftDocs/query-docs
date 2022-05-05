@@ -45,7 +45,7 @@ Table.FromRecords({
 
 ## Example 2
 
-Create a table from the list using the Record.FieldValues splitter with the resulting table having "CustomerID" and "Name" as column names.
+Create a table from the list using the [Record.FieldValues](record-fieldvalues.md) splitter with the resulting table having "CustomerID" and "Name" as column names.
 
 **Usage**
 

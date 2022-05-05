@@ -20,6 +20,6 @@ Specifies valid options for SAP Business Warehouse execution mode option.
 
 |Field|Value|Description|  
 |------------|---|---------------|  
-|**DataStream**|66|'DataStream flattening mode' option for MDX execution in SAP Business Warehouse.|
 |**BasXml**|64|'bXML flattening mode' option for MDX execution in SAP Business Warehouse.|
 |**BasXmlGzip**|65|'Gzip compressed bXML flattening mode' option for MDX execution in SAP Business Warehouse. Recommended for low latency or high volume queries.|
+|**DataStream**|66|'DataStream flattening mode' option for MDX execution in SAP Business Warehouse.|

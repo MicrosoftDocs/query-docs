@@ -75,7 +75,7 @@ Similarly, the following example defines a custom type that classifies records w
 type [ X = number, Y = number ]
 ```
 
-The ascribed type of a value is obtained using the standard library function `Value.Type`, as shown in the following examples:
+The ascribed type of a value is obtained using the standard library function [Value.Type](value-type.md), as shown in the following examples:
 
 ```
 Value.Type( 2 )                 // type number 
