@@ -17,3 +17,7 @@ These enumerations are used with value functions.
 |Function|Description|
 |------------|---------------|
 |[Precision.Type](precision-type.md)|Specifies the precision of comparison.|
+
+## See also
+
+[Value functions](value-functions.md)

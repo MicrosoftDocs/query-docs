@@ -18,7 +18,7 @@ These enumeration values are used by number functions.
 | ---------------- | ----------- |
 |[RoundingMode.Type](roundingmode-type.md)|Specifies rounding direction when there is a tie between the possible numbers to round to.|
 
-## More information
+## See also
 
 [Number functions](number-functions.md)
 [Number constants](number-constants.md)

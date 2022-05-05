@@ -10,7 +10,7 @@ author: dougklopfenstein
 ms.author: dougklo
 
 ---
-# Error handling enumeration s
+# Error handling enumerations
 
 These enumeration values are used by error handling functions.
   
@@ -18,6 +18,6 @@ These enumeration values are used by error handling functions.
 |------------|---------------|  
 |[TraceLevel.Type](tracelevel-type.md)|Specifies the trace level.|  
 
-## More information
+## See also
 
 [Error handling](error-handling.md)

@@ -1505,7 +1505,7 @@ items:
     - name: Accessing data enumerations
       items:
       - name: Acessing data enumeration values overview
-        href: accessing-data-enumeration-values.md
+        href: accessing-data-enumerations.md
       - name: AccessControlKind.Type
         href: accesscontrolkind-type.md
       - name: BufferMode.Type
@@ -1539,7 +1539,7 @@ items:
     - name: Date enumeration values
       items:
       - name: Date enumerations overview
-        href: date-enumeration-values.md
+        href: date-enumerations.md
       - name: Day.Type
         href: day-type.md
     - name: Error handling enumerations
@@ -1564,8 +1564,6 @@ items:
       items:
       - name: Record enumerations overview
         href: record-enumerations.md
-      - name: MissingField.Type
-        href: missingfield-type.md
     - name: Splitter enumerations
       items: 
       - name: Splitter enumerations overview
@@ -1580,14 +1578,14 @@ items:
         href: extravalues-type.md
       - name: GroupKind.Type
         href: groupkind-type.md
-      - name: ItemExpression.Type
-        href: itemexpression-type.md
       - name: JoinAlgorithm.Type
         href: joinalgorithm-type.md
       - name: JoinKind.Type
         href: joinkind-type.md
       - name: JoinSide.Type
         href: joinside-type.md
+      - name: MissingField.Type
+        href: missingfield-type.md
       - name: Occurrence.Type
         href: occurrence-type.md
       - name: Order.Type

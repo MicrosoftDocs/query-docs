@@ -23,7 +23,7 @@ These constant values are used by number functions.
 |[Number.PI](number-pi.md)|Returns 3.1415926535897931, the value for Pi up to 16 decimal digits.|
 |[Number.PositiveInfinity](number-positiveinfinity.md)|Represents 1/0.|  
 
-## More information
+## See also
 
 [Number functions](number-functions.md)
-[Number enumeration values](number-enumeration-values.md)
+[Number enumerations](number-enumerations.md)

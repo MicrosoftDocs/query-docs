@@ -209,7 +209,7 @@ Extra values are used to indicate how the function should handle extra values in
 `ExtraValues.Error = 1`
 `ExtraValues.Ignore = 2`
 
-More information: [Table.FromList](table-fromlist.md), [ExtraValues](extravalues.md)
+More information: [Table.FromList](table-fromlist.md), [ExtraValues.Type](extravalues-type.md)
 
 ### Missing column handling
 
@@ -219,7 +219,7 @@ This parameter is used to indicate how the function should handle missing column
 `MissingField.Ignore = 1`
 `MissingField.UseNull = 2;`
 
-This parameter is used in column or transformation operations, for examples, in [Table.TransformColumns](table-transformcolumns.md). More information: [MissingField](missingfield.md)
+This parameter is used in column or transformation operations, for examples, in [Table.TransformColumns](table-transformcolumns.md). More information: [MissingField.Type](missingfield-type.md)
 
 ### Sort Order
 
@@ -228,7 +228,7 @@ Sort ordering is used to indicate how the results should be sorted. This paramet
 `Order.Ascending = 0`
 `Order.Descending = 1`
 
-More information: [Order](order.md)
+More information: [Order.Type](order-type.md)
 
 ### Equation criteria
 
@@ -243,3 +243,7 @@ Equation criteria for tables can be specified as either:
 - A list of the columns in the table to apply the equality criteria.
 
 For examples, go to the description of [Table.Distinct](table-distinct.md).  
+
+## See also
+
+[Table enumerations](table-enumerations.md)

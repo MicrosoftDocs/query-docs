@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number functions"
 title: "Number functions | Microsoft Docs"
-ms.date: 4/7/2022
+ms.date: 5/5/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -105,5 +105,5 @@ These functions create and manipulate number values.
 
 ## See also
 
-[Number constant values](number-constant-values.md)
-[Number enumeration values](number-enumeration-values.md)
+[Number constants](number-constants.md)
+[Number enumerations](number-enumerations.md)

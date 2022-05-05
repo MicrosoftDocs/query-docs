@@ -19,3 +19,7 @@ These enumerations are used with text functions.
 |[Occurrence.Type](occurrence-type.md) | Specifies the occurrence of an element in a sequence.|
 |[RelativePosition.Type](relativeposition-type.md) | Indicates whether indexing should be done from the start or end of the input.|
 |[TextEncoding.Type](textencoding-type.md) | Specifies the text encoding type.|
+
+## See also
+
+[Text functions](text-functions.md)

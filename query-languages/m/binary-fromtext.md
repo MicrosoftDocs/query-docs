@@ -21,8 +21,8 @@ Binary.FromText(<b>text</b> as nullable text, optional <b>encoding</b> as nullab
 
 Returns the result of converting text value `text` to a binary (list of `number`). `encoding` may be specified to indicate the encoding used in the text value. The following `BinaryEncoding` values may be used for `encoding`.
 
-* [BinaryEncoding.Base64](binaryencoding.md#binaryencoding-base64): Base 64 encoding
-* [BinaryEncoding.Hex](binaryencoding.md#binaryencoding-hex): Hex encoding
+* [BinaryEncoding.Base64](binaryencoding-type.md): Base 64 encoding
+* [BinaryEncoding.Hex](binaryencoding-type.md: Hex encoding
 
 ## Example 1
 

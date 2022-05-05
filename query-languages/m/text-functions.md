@@ -14,16 +14,14 @@ ms.author: dougklo
 
 These functions create and manipulate text values.
 
-## Text
-
-### Information
+## Information
 
 |Function|Description|
 |------------|---------------|
 |[Text.InferNumberType](text-infernumbertype.md)|Infers the granular number type (Int64.Type, Double.Type, and so on) of a number encoded in text.|
 |[Text.Length](text-length.md)|Returns the number of characters in a text value.|
 
-### Text Comparisons
+## Text Comparisons
 
 |Function|Description|
 |------------|---------------|
@@ -38,7 +36,7 @@ These functions create and manipulate text values.
 |[Text.ToList](text-tolist.md)|Returns a list of characters from a text value.|
 |[Value.FromText](value-fromtext.md)|Decodes a value from a textual representation, value, and interprets it as a value with an appropriate type. Value.FromText takes a text value and returns a number, a logical value, a null value, a DateTime value, a Duration value, or a text value. The empty text value is interpreted as a null value.|
 
-### Extraction
+## Extraction
 
 |Function|Description|
 |------------|---------------|  
@@ -48,7 +46,7 @@ These functions create and manipulate text values.
 |[Text.Start](text-start.md)|Returns the count of characters from the start of a text value.|
 |[Text.End](text-end.md)|Returns the number of characters from the end of a text value.|
 
-### Modification
+## Modification
 
 |Function|Description|
 |------------|---------------|
@@ -59,7 +57,7 @@ These functions create and manipulate text values.
 |[Text.ReplaceRange](text-replacerange.md)|Replaces length characters in a text value starting at a zero-based offset with the new text value.|
 [Text.Select](text-select.md) | Selects all occurrences of the given character or list of characters from the input text value.|
 
-### Membership
+## Membership
 
 |Function|Description|
 |------------|---------------|
@@ -69,7 +67,7 @@ These functions create and manipulate text values.
 |[Text.PositionOfAny](text-positionofany.md)|Returns the first occurrence of a text value in list and returns its position starting at startOffset.|
 |[Text.StartsWith](text-startswith.md)|Returns a logical value indicating whether a text value substring was found at the beginning of a string.|
 
-### Transformations
+## Transformations
 
 |Function|Description|
 |------------|---------------|
@@ -90,3 +88,7 @@ These functions create and manipulate text values.
 |[Text.TrimEnd](text-trimend.md)|Removes any occurrences of the characters specified in trimChars from the end of the original text value.|
 |[Text.TrimStart](text-trimstart.md)|Removes any occurrences of the characters in trimChars from the start of the original text value.|
 |[Text.Upper](text-upper.md)|Returns the uppercase of a text value.|
+
+## See also
+
+[Text enumerations](text-enumerations.md)

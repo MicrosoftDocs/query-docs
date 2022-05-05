@@ -10,7 +10,7 @@ ms.author: bezhan
 ---
 # Accessing data functions
 
-## <a name="__toc360789771"></a>Accessing data
+## Accessing data
 
 These functions access data and return table values. Most of these functions return a table value called a **navigation table**. Navigation tables are primarily used by the Power Query user interface to provide a navigation experience over the potentially large hierarchical data sets returned.  
   
@@ -44,7 +44,7 @@ These functions access data and return table values. Most of these functions ret
 |[Cube.Measures](cube-measures.md)|Returns a table containing the set of available measures within the cube.|
 |[Cube.Parameters](cube-parameters.md)|Returns a table containing the set of parameters that can be applied to cube.|
 |[Cube.Properties](cube-properties.md)|Returns a table containing the set of available properties for dimensions that are expanded in the cube.|
-| [Cube.PropertyKey](cube-propertykey.md) | Returns the key of property `property`.  |
+|[Cube.PropertyKey](cube-propertykey.md) | Returns the key of property `property`.  |
 |[Cube.ReplaceDimensions](cube-replacedimensions.md)|Replaces the set of dimensions returned by [Cube.Dimensions](/powerquery-m/cube-dimensions).|
 |[Cube.Transform](cube-transform.md)|Applies the list cube functions, transforms, on the cube.|
 |[DB2.Database](db2-database.md)|Returns a table of SQL tables and views available in a Db2 database.|  
@@ -101,4 +101,4 @@ These functions access data and return table values. Most of these functions ret
 
 ## See also
 
-[Accessing data enumeration values](accessing-data-enumeration-values.md)
+[Accessing data enumerations](accessing-data-enumerations.md)

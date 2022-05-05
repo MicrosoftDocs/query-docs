@@ -18,6 +18,6 @@ These enumerations are used by list functions.
 |------------|---------------|  
 |[PercentileMode.Type](percentilemode-type.md) | Specifies the percentile mode type.|
   
-## More information
+## See also
 
 [List functions](list-functions.md)
