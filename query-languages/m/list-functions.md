@@ -160,14 +160,14 @@ These functions generate list of values.
   
 ### Occurrence specification  
   
-- [Occurrence.First](occurrence-first.md) = 0;
-- [Occurrence.Last](occurrence-last.md) = 1;
-- [Occurrence.All](occurrence-all.md) = 2;
+- [Occurrence.First](occurrence-type.md) = 0;
+- [Occurrence.Last](occurrence-type.md) = 1;
+- [Occurrence.All](occurrence-type.md) = 2;
 
 ### Sort order  
 
-- [Order.Ascending](order-ascending.md) = 0;
-- [Order.Descending](order-descending.md) = 1;
+- [Order.Ascending](order-type.md) = 0;
+- [Order.Descending](order-tu[e].md) = 1;
 
 ### Equation criteria
 
@@ -204,4 +204,4 @@ Replacement operations are specified by a list value. Each item of this list mus
 
 ## See also
 
-* [List enumerations](list-enumerations.md)
+- [List enumerations](list-enumerations.md)
