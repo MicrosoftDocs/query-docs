@@ -974,60 +974,10 @@ items:
       items:
       - name: Table functions overview
         href: table-functions.md
-      - name: ExtraValues.Error
-        href: extravalues-error.md
-      - name: ExtraValues.Ignore
-        href: extravalues-ignore.md
-      - name: ExtraValues.List
-        href: extravalues-list.md
-      - name: GroupKind.Global
-        href: groupkind-global.md
-      - name: GroupKind.Local
-        href: groupkind-local.md
       - name: ItemExpression.From
         href: itemexpression-from.md
       - name: ItemExpression.Item
         href: itemexpression-item.md
-      - name: JoinAlgorithm.Dynamic
-        href: joinalgorithm-dynamic.md
-      - name: JoinAlgorithm.LeftHash
-        href: joinalgorithm-lefthash.md
-      - name: JoinAlgorithm.LeftIndex
-        href: joinalgorithm-leftindex.md
-      - name: JoinAlgorithm.PairwiseHash
-        href: joinalgorithm-pairwisehash.md
-      - name: JoinAlgorithm.RightHash
-        href: joinalgorithm-righthash.md
-      - name: JoinAlgorithm.RightIndex
-        href: joinalgorithm-rightindex.md
-      - name: JoinAlgorithm.SortMerge
-        href: joinalgorithm-sortmerge.md
-      - name: JoinKind.FullOuter
-        href: joinkind-fullouter.md
-      - name: JoinKind.Inner
-        href: joinkind-inner.md
-      - name: JoinKind.LeftAnti
-        href: joinkind-leftanti.md
-      - name: JoinKind.LeftOuter
-        href: joinkind-leftouter.md
-      - name: JoinKind.RightAnti
-        href: joinkind-rightanti.md
-      - name: JoinKind.RightOuter
-        href: joinkind-rightouter.md
-      - name: JoinSide.Left
-        href: joinside-left.md
-      - name: JoinSide.Right
-        href: joinside-right.md
-      - name: Occurrence.All
-        href: occurrence-all.md
-      - name: Occurrence.First
-        href: occurrence-first.md
-      - name: Occurrence.Last
-        href: occurrence-last.md
-      - name: Order.Ascending
-        href: order-ascending.md
-      - name: Order.Descending
-        href: order-descending.md
       - name: RowExpression.Column
         href: rowexpression-column.md
       - name: RowExpression.From
@@ -1264,10 +1214,6 @@ items:
         href: guid-from.md
       - name: Json.FromValue
         href: json-fromvalue.md
-      - name: RelativePosition.FromEnd
-        href: relativeposition-fromend.md
-      - name: RelativePosition.FromStart
-        href: relativeposition-fromstart.md
       - name: Text.AfterDelimiter
         href: text-afterdelimiter.md
       - name: Text.At
@@ -1446,10 +1392,6 @@ items:
         href: excel-shapetable.md
       - name: Graph.Nodes
         href: graph-nodes.md
-      - name: Precision.Decimal
-        href: precision-decimal.md
-      - name: Precision.Double
-        href: precision-double.md
       - name: SqlExpression.SchemaFrom
         href: sqlexpression-schemafrom.md
       - name: SqlExpression.ToExpression
