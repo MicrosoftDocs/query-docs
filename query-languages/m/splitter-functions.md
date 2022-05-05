@@ -14,7 +14,7 @@ ms.author: bezhan
 
 These functions split text.
   
-## <a name="__toc360789908"></a>Splitter  
+## Splitter  
   
 |Function|Description|  
 |------------|---------------|  
@@ -29,7 +29,6 @@ These functions split text.
 |[Splitter.SplitTextByRepeatedLengths](splitter-splittextbyrepeatedlengths.md)|Returns a function that splits text into a list of text after the specified length repeatedly.|
 |[Splitter.SplitTextByWhitespace](splitter-splittextbywhitespace.md)|Returns a function that splits text according to whitespace.|  
   
-Parameter values | Description
----------------- | -----------
-[QuoteStyle.Csv](quotestyle-csv.md) | Quote characters indicate the start of a quoted string. Nested quotes are indicated by two quote characters.
-[QuoteStyle.None](quotestyle-none.md) | Quote characters have no significance.
+## See also
+
+* [Splitter enumerations](splitter-enumerations.md)

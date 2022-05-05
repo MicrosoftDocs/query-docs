@@ -22,6 +22,6 @@ These enumerations are used by binary data functions.
 |[Compression.Type](compression-type.md)|Specifies the type of compression.|
 |[Occurrence.Type](occurrence-type.md)|Specifies the occurrence of an element in a sequence.|
 
-## More information
+## See also
 
-[Binary functions](binary-functions.md)
+* [Binary functions](binary-functions.md)

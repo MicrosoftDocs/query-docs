@@ -12,7 +12,7 @@ ms.author: dougklo
 ---
 # Error handling enumerations
 
-These enumeration values are used by error handling functions.
+These enumerations are used by error handling functions.
   
 |Enumeration|Description|  
 |------------|---------------|  
@@ -20,4 +20,4 @@ These enumeration values are used by error handling functions.
 
 ## See also
 
-[Error handling](error-handling.md)
+* [Error handling](error-handling.md)

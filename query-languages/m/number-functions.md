@@ -14,9 +14,7 @@ ms.author: bezhan
 
 These functions create and manipulate number values.
 
-## Number
-
-### Information
+## Information
 
 |Function|Description|  
 |------------|---------------|  
@@ -24,7 +22,7 @@ These functions create and manipulate number values.
 |[Number.IsNaN](number-isnan.md)|Returns true if a value is Number.NaN.|  
 |[Number.IsOdd](number-isodd.md)|Returns true if a value is an odd number.|  
 
-### Conversion and formatting  
+## Conversion and formatting  
 
 |Function|Description|
 |------------|---------------|
@@ -42,7 +40,7 @@ These functions create and manipulate number values.
 |[Percentage.From](percentage-from.md)|Returns a percentage value from the given value.|
 |[Single.From](single-from.md)|Returns a Single number value from the given value.|
 
-### Rounding
+## Rounding
 
 |Function|Description|
 |------------|---------------|
@@ -52,7 +50,7 @@ These functions create and manipulate number values.
 |[Number.RoundTowardZero](number-roundtowardzero.md)|Returns Number.RoundDown(x) when x &gt;= 0 and Number.RoundUp(x) when x &lt; 0.|
 |[Number.RoundUp](number-roundup.md)|Returns the larger integer greater than or equal to a number value.|  
 
-### Operations
+## Operations
 
 |Function|Description|
 |------------|---------------|
@@ -70,14 +68,14 @@ These functions create and manipulate number values.
 |[Number.Sign](number-sign.md)|Returns 1 for positive numbers, -1 for negative numbers or 0 for zero.|
 |[Number.Sqrt](number-sqrt.md)|Returns the square root of a number.|
 
-### Random
+## Random
 
 |Function|Description|
 |------------|---------------|
 |[Number.Random](number-random.md)|Returns a random fractional number between 0 and 1.|
 |[Number.RandomBetween](number-randombetween.md)|Returns a random number between the two given number values.|
 
-### Trigonometry
+## Trigonometry
 
 |Function|Description|
 |------------|---------------|
@@ -92,7 +90,7 @@ These functions create and manipulate number values.
 |[Number.Tan](number-tan.md)|Returns the tangent of a number.|
 |[Number.Tanh](number-tanh.md)|Returns the hyperbolic tangent of a number.|
 
-### Bytes
+## Bytes
 
 |Function|Description|
 |------------|---------------|
@@ -105,5 +103,5 @@ These functions create and manipulate number values.
 
 ## See also
 
-[Number constants](number-constants.md)
-[Number enumerations](number-enumerations.md)
+* [Number constants](number-constants.md)
+* [Number enumerations](number-enumerations.md)

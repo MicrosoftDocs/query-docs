@@ -23,6 +23,6 @@ Specifies the expected action for extra values in a row that contains columns le
 |**Ignore**|2|If the splitter function returns more columns than the table expects, they should be ignored.|
 |**List**|0|If the splitter function returns more columns than the table expects, they should be collected into a list.|
 
-## More information
+## See also
 
 * [Table.FromList](table-fromlist.md)

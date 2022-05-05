@@ -204,4 +204,4 @@ Replacement operations are specified by a list value. Each item of this list mus
 
 ## See also
 
-[List enumerations](list-enumerations.md)
+* [List enumerations](list-enumerations.md)

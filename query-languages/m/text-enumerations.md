@@ -22,4 +22,4 @@ These enumerations are used with text functions.
 
 ## See also
 
-[Text functions](text-functions.md)
+* [Text functions](text-functions.md)

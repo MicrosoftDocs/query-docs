@@ -24,4 +24,4 @@ These functions return diagnostic traces at different levels of verbosity, as we
 
 ## See also
 
-[Error handling enumerations](error-handling-enumerations.md)
+* [Error handling enumerations](error-handling-enumerations.md)

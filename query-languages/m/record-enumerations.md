@@ -18,7 +18,7 @@ These enumerations are used by records.
 |-|-|
 |[MissingField.Type](missingfield-type.md)|Specifies the expected action for missing values in a row that contains columns less than expected.|
 
-## More information
+## See also
 
-[Record functions](record-functions.md)
-[Table functions](table-functions.md)
+* [Record functions](record-functions.md)
+* [Table functions](table-functions.md)

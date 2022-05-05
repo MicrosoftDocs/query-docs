@@ -72,5 +72,5 @@ Implementation | Description
 
 ## See also
 
-[Value enumerations](value-enumerations.md)
+* [Value enumerations](value-enumerations.md)
   

@@ -91,4 +91,4 @@ These functions create and manipulate text values.
 
 ## See also
 
-[Text enumerations](text-enumerations.md)
+* [Text enumerations](text-enumerations.md)

@@ -20,5 +20,5 @@ These enumeration values are used by number functions.
 
 ## See also
 
-[Number functions](number-functions.md)
-[Number constants](number-constants.md)
+* [Number functions](number-functions.md)
+* [Number constants](number-constants.md)

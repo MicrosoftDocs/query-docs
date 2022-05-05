@@ -10,9 +10,9 @@ ms.author: dougklo
 ---
 # Accessing data enumerations
 
-These enumeration values are used by functions that access data.
+These enumerations are used by functions that access data.
   
-|Enumeration value|Description|  
+|Enumeration|Description|  
 |------------|---------------|  
 |[AccessControlKind.Type](accesscontrolkind-type.md)|Specifies the kind of access control.|
 |[BufferMode.Type](buffermode-type.md)|Describes the type of buffering to be performed.|
@@ -23,6 +23,6 @@ These enumeration values are used by functions that access data.
 |[SapHanaRangeOperator.Type](saphanarangeoperator-type.md)|Specifies a range operator for SAP HANA range input parameters.|
 |[WebMethod.Type](webmethod-type.md) |Specifies an HTTP method.|
 
-## More information
+## See also
 
-[Accessing data functions](accessing-data-functions.md)
+* [Accessing data functions](accessing-data-functions.md)

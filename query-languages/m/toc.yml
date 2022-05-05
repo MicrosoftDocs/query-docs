@@ -1504,7 +1504,7 @@ items:
     items:
     - name: Accessing data enumerations
       items:
-      - name: Acessing data enumeration values overview
+      - name: Acessing data enumerations overview
         href: accessing-data-enumerations.md
       - name: AccessControlKind.Type
         href: accesscontrolkind-type.md
@@ -1564,6 +1564,8 @@ items:
       items:
       - name: Record enumerations overview
         href: record-enumerations.md
+      - name: MissingField.Type
+        href: missingfield-type.md
     - name: Splitter enumerations
       items: 
       - name: Splitter enumerations overview

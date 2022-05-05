@@ -246,4 +246,4 @@ For examples, go to the description of [Table.Distinct](table-distinct.md).
 
 ## See also
 
-[Table enumerations](table-enumerations.md)
+* [Table enumerations](table-enumerations.md)

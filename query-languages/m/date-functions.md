@@ -79,4 +79,4 @@ These functions create and manipulate the date component of date, datetime, and 
 
 ## See also
 
-[Date enumerations](date-enumerations.md)
+* [Date enumerations](date-enumerations.md)

@@ -26,4 +26,4 @@ These enumerations are used with table functions.
 
 ## See also
 
-[Table functions](table-functions.md)
+* [Table functions](table-functions.md)

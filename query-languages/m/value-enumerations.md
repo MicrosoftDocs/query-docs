@@ -20,4 +20,4 @@ These enumerations are used with value functions.
 
 ## See also
 
-[Value functions](value-functions.md)
+* [Value functions](value-functions.md)

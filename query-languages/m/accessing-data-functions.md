@@ -101,4 +101,4 @@ These functions access data and return table values. Most of these functions ret
 
 ## See also
 
-[Accessing data enumerations](accessing-data-enumerations.md)
+* [Accessing data enumerations](accessing-data-enumerations.md)

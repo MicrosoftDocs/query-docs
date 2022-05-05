@@ -12,12 +12,12 @@ ms.author: dougklo
 ---
 # Date enumerations
 
-These enumeration values are used by date functions.
+These enumerations are used by date functions.
 
 | Enumeration | Description |
 | ----------------- | ----------- |
 | [Day.Type](day-type.md) | Represents the day of the week. |
 
-## More information
+## See also
 
-[Date functions](date-functions.md)
+* [Date functions](date-functions.md)

@@ -20,4 +20,4 @@ These enumerations are used by list functions.
   
 ## See also
 
-[List functions](list-functions.md)
+* [List functions](list-functions.md)
