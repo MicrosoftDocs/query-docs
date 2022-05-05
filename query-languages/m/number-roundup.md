@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number.RoundUp"
 title: "Number.RoundUp | Microsoft Docs"
-ms.date: 3/11/2022
+ms.date: 4/13/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -20,7 +20,7 @@ Number.RoundUp(<b>number</b> as nullable number, optional <b>digits</b> as nulla
   
 ## About
 
-Returns the result of rounding `number` down to the previous highest integer. If `number` is null, **Number.RoundDown** returns null. If `digits` is specified, `number` is rounded to the `digits` number of decimal digits.
+Returns the result of rounding `number` up to the next highest integer. If `number` is null, this function returns null. If `digits` is provided, `number` is rounded to the specified number of decimal digits.
 
 ## Example 1
 
