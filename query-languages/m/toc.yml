@@ -1172,6 +1172,8 @@ items:
         href: table-splitat.md
       - name: Table.SplitColumn
         href: table-splitcolumn.md
+      - name: Table.StopFolding
+        href: table-stopfolding.md
       - name: Table.ToColumns
         href: table-tocolumns.md
       - name: Table.ToList
@@ -1196,6 +1198,8 @@ items:
         href: table-unpivotothercolumns.md
       - name: Table.View
         href: table-view.md
+      - name: Table.ViewError
+        href: table-viewerror.md
       - name: Table.ViewFunction
         href: table-viewfunction.md
       - name: Tables.GetRelationships
