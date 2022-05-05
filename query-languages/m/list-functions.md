@@ -167,7 +167,7 @@ These functions generate list of values.
 ### Sort order  
 
 - [Order.Ascending](order-type.md) = 0;
-- [Order.Descending](order-tu[e].md) = 1;
+- [Order.Descending](order-type.md) = 1;
 
 ### Equation criteria
 
