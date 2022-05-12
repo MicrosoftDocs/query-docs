@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List functions"
 title: "List functions | Microsoft Docs"
-ms.date: 6/12/2022
+ms.date: 5/12/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh

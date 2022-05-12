@@ -23,9 +23,9 @@ Specifies the occurrence of an element in a sequence.
 |**First**|0|The position of the first occurrence of the found value is returned.|
 |**Last**|1|The position of the last occurrence of the found value is returned.|
 |**All**|2|A list of positions of all occurrences of the found values is returned.|
-|**Optional**|0|The item is expected to appear zero or one time in the input. Provided for backward compatibility in binary functions. In this case, use [BinaryOccurrence.Optional](binaryoccurrence.md) instead.|
-|**Required**|1|The item is expected to appear once in the input. Provided for backward compatibility in binary functions. In this case, use [BinaryOccurrence.Required](binaryoccurrence.md) instead.|
-|**Repeating**|2|The item is expected to appear zero or more times in the input. Provided for backward compatibility in binary functions. In this case, use [BinaryOccurrence.Repeating](binaryoccurrence.md) instead.|
+|**Optional**|0|The item is expected to appear zero or one time in the input. Provided for backward compatibility in binary functions. In this case, use [BinaryOccurrence.Optional](binaryoccurrence-type.md) instead.|
+|**Required**|1|The item is expected to appear once in the input. Provided for backward compatibility in binary functions. In this case, use [BinaryOccurrence.Required](binaryoccurrence-type.md) instead.|
+|**Repeating**|2|The item is expected to appear zero or more times in the input. Provided for backward compatibility in binary functions. In this case, use [BinaryOccurrence.Repeating](binaryoccurrence-type.md) instead.|
 
 ## Applies to
 
