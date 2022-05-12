@@ -324,12 +324,6 @@ items:
         href: comparer-ordinal.md
       - name: Comparer.OrdinalIgnoreCase
         href: comparer-ordinalignorecase.md
-    - name: Comparer enumeration values
-      items:
-      - name: Comparer enumeration values overview
-        href: comparer-enumeration-values.md
-      - name: Culture.Current
-        href: culture-current.md
     - name: Date functions
       items: 
       - name: Date functions overview
@@ -542,12 +536,6 @@ items:
         href: datetimezone-zoneminutes.md
       - name: '#datetimezone'
         href: sharpdatetimezone.md
-    - name: DateTimeZone enumeration values
-      items:
-      - name: DateTimeZone enumeration values overview
-        href: datetimezone-enumeration-values.md
-      - name: TimeZone.Current
-        href: timezone-current.md
     - name: Duration functions
       items: 
       - name: Duration functions overview
@@ -578,9 +566,9 @@ items:
         href: duration-totext.md
       - name: '#duration'
         href: sharpduration.md
-    - name: Error handling
+    - name: Error handling functions
       items: 
-      - name: Error handling overview
+      - name: Error handling functions overview
         href: error-handling.md
       - name: Diagnostics.ActivityId
         href: diagnostics-activityid.md
@@ -1448,127 +1436,85 @@ items:
         href: variable-value.md
   - name: Enumerations
     items:
-    - name: Accessing data enumerations
-      items:
-      - name: Acessing data enumerations overview
-        href: accessing-data-enumerations.md
-      - name: AccessControlKind.Type
-        href: accesscontrolkind-type.md
-      - name: BufferMode.Type
-        href: buffermode-type.md
-      - name: CsvStyle.Type
-        href: csvstyle-type.md
-      - name: LimitClauseKind.Type
-        href: limitclausekind-type.md
-      - name: SapBusinessWarehouseExecutionMode.Type
-        href: sapbusinesswarehouseexecutionmode-type.md
-      - name: SapHanaDistribution.Type
-        href: saphanadistribution-type.md
-      - name: SapHanaRangeOperator.Type
-        href: saphanarangeoperator-type.md
-      - name: WebMethod.Type
-        href: webmethod-type.md
-    - name: Binary enumerations
-      items:
-      - name: Binary enumerations overview
-        href: binary-enumerations.md
-      - name: BinaryEncoding.Type
-        href: binaryencoding-type.md
-      - name: BinaryOccurrence.Type
-        href: binaryoccurrence-type.md
-      - name: ByteOrder.Type
-        href: byteorder-type.md
-      - name: Compression.Type
-        href: compression-type.md
-      - name: Occurrence.Type
-        href: occurrence-type.md
-    - name: Date enumeration values
-      items:
-      - name: Date enumerations overview
-        href: date-enumerations.md
-      - name: Day.Type
-        href: day-type.md
-    - name: Error handling enumerations
-      items:
-      - name: Error handling enumerations overview
-        href: error-handling-enumerations.md
-      - name: TraceLevel.Type
-        href: tracelevel-type.md
-    - name: List enumerations
-      items:
-      - name: List enumerations overview
-        href: list-enumerations.md
-      - name: PercentileMode.Type
-        href: percentilemode-type.md
-    - name: Number enumerations
-      items:
-      - name: Number enumerations overview
-        href: number-enumerations.md
-      - name: RoundingMode.Type
-        href: roundingmode-type.md
-    - name: Record enumerations
-      items:
-      - name: Record enumerations overview
-        href: record-enumerations.md
-      - name: MissingField.Type
-        href: missingfield-type.md
-    - name: Splitter enumerations
-      items: 
-      - name: Splitter enumerations overview
-        href: splitter-enumerations.md
-      - name: QuoteStyle.Type
-        href: quotestyle-type.md
-    - name: Table enumerations
-      items:
-      - name: Table enumerations overview
-        href: table-enumerations.md
-      - name: ExtraValues.Type
-        href: extravalues-type.md
-      - name: GroupKind.Type
-        href: groupkind-type.md
-      - name: JoinAlgorithm.Type
-        href: joinalgorithm-type.md
-      - name: JoinKind.Type
-        href: joinkind-type.md
-      - name: JoinSide.Type
-        href: joinside-type.md
-      - name: MissingField.Type
-        href: missingfield-type.md
-      - name: Occurrence.Type
-        href: occurrence-type.md
-      - name: Order.Type
-        href: order-type.md
-    - name: Text enumerations
-      items: 
-      - name: Text enumerations overview
-        href: text-enumerations.md
-      - name: Occurrence.Type
-        href: occurrence-type.md
-      - name: RelativePosition.Type
-        href: relativeposition-type.md
-      - name: TextEncoding.Type
-        href: textencoding-type.md
-    - name: Value enumerations
-      items:
-      - name: Value enumerations overview
-        href: value-enumerations.md
-      - name: Precision.Type
-        href: precision-type.md
+    - name: Enumerations
+      href: enumerations.md
+    - name: AccessControlKind.Type
+      href: accesscontrolkind-type.md
+    - name: BinaryEncoding.Type
+      href: binaryencoding-type.md
+    - name: BinaryOccurrence.Type
+      href: binaryoccurrence-type.md
+    - name: BufferMode.Type
+      href: buffermode-type.md
+    - name: ByteOrder.Type
+      href: byteorder-type.md
+    - name: Compression.Type
+      href: compression-type.md
+    - name: CsvStyle.Type
+      href: csvstyle-type.md
+    - name: Day.Type
+      href: day-type.md
+    - name: ExtraValues.Type
+      href: extravalues-type.md
+    - name: GroupKind.Type
+      href: groupkind-type.md
+    - name: JoinAlgorithm.Type
+      href: joinalgorithm-type.md
+    - name: JoinKind.Type
+      href: joinkind-type.md
+    - name: JoinSide.Type
+      href: joinside-type.md
+    - name: LimitClauseKind.Type
+      href: limitclausekind-type.md
+    - name: MissingField.Type
+      href: missingfield-type.md
+    - name: Occurrence.Type
+      href: occurrence-type.md
+    - name: Order.Type
+      href: order-type.md
+    - name: PercentileMode.Type
+      href: percentilemode-type.md
+    - name: Precision.Type
+      href: precision-type.md
+    - name: QuoteStyle.Type
+      href: quotestyle-type.md
+    - name: RelativePosition.Type
+      href: relativeposition-type.md
+    - name: RoundingMode.Type
+      href: roundingmode-type.md
+    - name: SapBusinessWarehouseExecutionMode.Type
+      href: sapbusinesswarehouseexecutionmode-type.md
+    - name: SapHanaDistribution.Type
+      href: saphanadistribution-type.md
+    - name: SapHanaRangeOperator.Type
+      href: saphanarangeoperator-type.md
+    - name: TextEncoding.Type
+      href: textencoding-type.md
+    - name: TraceLevel.Type
+      href: tracelevel-type.md
+    - name: WebMethod.Type
+      href: webmethod-type.md
   - name: Constants
     items:
-    - name: Number constants
-      items:
-      - name: Number constants overview
-        href: number-constants.md
-      - name: Number.E
-        href: number-e.md
-      - name: Number.Epsilon
-        href: number-epsilon.md
-      - name: Number.NaN
-        href: number-nan.md
-      - name: Number.NegativeInfinity
-        href: number-negativeinfinity.md
-      - name: Number.PI
-        href: number-pi.md
-      - name: Number.PositiveInfinity
-        href: number-positiveinfinity.md
+    - name: Constants
+      href: constants.md
+    - name: Number.E
+      href: number-e.md
+    - name: Number.Epsilon
+      href: number-epsilon.md
+    - name: Number.NaN
+      href: number-nan.md
+    - name: Number.NegativeInfinity
+      href: number-negativeinfinity.md
+    - name: Number.PI
+      href: number-pi.md
+    - name: Number.PositiveInfinity
+      href: number-positiveinfinity.md
+  - name: Dynamic values
+    items:
+    - name: Dynamic values
+      href: dynamic-values.md
+    - name: Culture.Current
+      href: culture-current.md
+    - name: TimeZone.Current
+      href: timezone-current.md

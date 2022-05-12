@@ -7,7 +7,7 @@ ms.service: powerquery
 ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # Binary functions
@@ -42,10 +42,12 @@ These functions create and manipulate binary data.
 |[BinaryFormat.UnsignedInteger32](binaryformat-unsignedinteger32.md)|A binary format that reads a 32-bit unsigned integer.|  
 |[BinaryFormat.UnsignedInteger64](binaryformat-unsignedinteger64.md)|A binary format that reads a 64-bit unsigned integer.|  
 
-Controlling byte order | Description
----------------------- | -----------
-[BinaryFormat.ByteOrder](binaryformat-byteorder.md) | Returns a binary format with the byte order specified by a function.
-[Table.PartitionValues](table-partitionvalues.md) | Returns information about how a table is partitioned.
+### Controlling byte order
+
+|Function | Description
+|---------------------- | -----------|
+|[BinaryFormat.ByteOrder](binaryformat-byteorder.md) | Returns a binary format with the byte order specified by a function.|
+|[Table.PartitionValues](table-partitionvalues.md) | Returns information about how a table is partitioned.|
   
 ## Binary  
   
@@ -64,7 +66,3 @@ Controlling byte order | Description
 |[Binary.ToList](binary-tolist.md)|Converts a binary value into a list of numbers|  
 |[Binary.ToText](binary-totext.md)|Encodes binary data into a text form.|  
 |[#binary](sharpbinary.md) | Creates a binary value from numbers or text.|
-
-## See also
-
-* [Binary enumerations](binary-enumerations.md)

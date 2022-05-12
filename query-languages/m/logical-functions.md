@@ -1,20 +1,18 @@
 ---
 description: "Learn more about: Logical functions"
 title: "Logical functions | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 5/12/2020
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # Logical functions
 
 These functions create and manipulate logical (that is, true/false) values.
-
-## Logical
 
 |Function|Description|
 |------------|---------------|

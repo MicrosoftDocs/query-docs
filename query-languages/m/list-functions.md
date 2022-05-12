@@ -1,13 +1,13 @@
 ---
 description: "Learn more about: List functions"
 title: "List functions | Microsoft Docs"
-ms.date: 4/21/2022
+ms.date: 6/12/2022
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # List functions
@@ -201,7 +201,3 @@ Replacement operations are specified by a list value. Each item of this list mus
 - A list value of exactly two items.
 - First item is the old value in the list, to be replaced.
 - Second item is the new value, which should replace all occurrences of the old value in the list.
-
-## See also
-
-- [List enumerations](list-enumerations.md)

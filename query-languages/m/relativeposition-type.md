@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: RelativePosition.Type"
 title: "RelativePosition.Type | Microsoft Docs"
-ms.date: 5/4/2022
+ms.date: 5/11/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -16,9 +16,13 @@ ms.author: dougklo
 
 Indicates whether indexing should be done from the start or end of the input.
 
-## Fields
+## Allowed values
 
-|Field|Value|Description|
+|Allowed value|Value|Description|
 | ------- | --- | ----------- |
-|**FromEnd**|1| Indicates indexing should be done from the end of the input.|
 |**FromStart**|0| Indicates indexing should be done from the start of the input.|
+|**FromEnd**|1| Indicates indexing should be done from the end of the input.|
+
+## Applies to
+
+* [Text functions](text-functions.md)

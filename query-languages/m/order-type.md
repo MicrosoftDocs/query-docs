@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Order.Type"
 title: "Order.Type | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 5/11/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -16,9 +16,13 @@ ms.author: dougklo
 
 Specifies the direction of sorting.
 
-## Fields
+## Allowed values
 
-|Field|Value|Description|
+|Allowed value|Value|Description|
 | ------- | --- | ----------- |
 |**Ascending**|0|Sorts the values in ascending order.|
 |**Descending**|1|Sorts the values in descending order.|
+
+## Applies to
+
+* [Table functions](table-functions.md)

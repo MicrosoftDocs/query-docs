@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: WebMethod.Type"
 title: "WebMethod.Type | Microsoft Docs"
-ms.date: 5/2/2022
+ms.date: 5/11/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -16,9 +16,9 @@ ms.author: dougklo
 
 Specifies an HTTP method.
 
-## Fields
+## Allowed values
 
-|Field|Value|Description|  
+|Allowed value|Value|Description|  
 |------------|---|---------------|  
 |**Delete**|DELETE|Specifies the DELETE method for HTTP.|
 |**Get**|GET|Specifies the GET method for HTTP.|
@@ -30,3 +30,7 @@ Specifies an HTTP method.
 ## Remarks
 
 These fields only work in the context of custom connectors.
+
+## Applies to
+
+* [Accessing data functions](accessing-data-functions.md)

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number functions"
 title: "Number functions | Microsoft Docs"
-ms.date: 5/5/2022
+ms.date: 5/12/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -100,8 +100,3 @@ These functions create and manipulate number values.
 |[Number.BitwiseShiftLeft](number-bitwiseshiftleft.md)|Returns the result of a bitwise shift left operation on the operands.|
 |[Number.BitwiseShiftRight](number-bitwiseshiftright.md)|Returns the result of a bitwise shift right operation on the operands.|
 |[Number.BitwiseXor](number-bitwisexor.md)|Returns the result of a bitwise XOR operation on the provided operands.|
-
-## See also
-
-* [Number constants](number-constants.md)
-* [Number enumerations](number-enumerations.md)

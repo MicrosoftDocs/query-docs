@@ -1,22 +1,23 @@
 ---
-description: "Learn more about: Value.Alternate"
-title: "Value.Alternate | Microsoft Docs"
-ms.date: 10/15/2020
+description: "Learn more about: Value.Alternates"
+title: "Value.Alternates | Microsoft Docs"
+ms.date: 5/12/2022
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
-# Value.Alternate
+# Value.Alternates
 
 ## Syntax
 
 <pre>
 Value.Alternates(<b>alternates</b> as list) as any
 </pre>
-  
-## About  
+
+## About
+
 Expresses alternate query plans within a query plan expression obtained through `Value.Expression(Value.Optimize(...))`. Not intended for other uses.

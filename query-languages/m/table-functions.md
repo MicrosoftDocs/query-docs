@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: Table functions"
 title: "Table functions | Microsoft Docs"
-ms.date: 5/4/2022
+ms.date: 5/12/2022
 ms.service: powerquery
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # Table functions
@@ -244,7 +244,3 @@ Equation criteria for tables can be specified as either:
 - A list of the columns in the table to apply the equality criteria.
 
 For examples, go to the description of [Table.Distinct](table-distinct.md).  
-
-## See also
-
-- [Table enumerations](table-enumerations.md)

@@ -1,16 +1,14 @@
 ---
 description: "Learn more about: Accessing data functions"
 title: "Accessing data functions | Microsoft Docs"
-ms.date: 4/7/2022
+ms.date: 5/12/2022
 ms.service: powerquery
-ms.reviewer: dougklo
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 ---
 # Accessing data functions
-
-## Accessing data
 
 These functions access data and return table values. Most of these functions return a table value called a **navigation table**. Navigation tables are primarily used by the Power Query user interface to provide a navigation experience over the potentially large hierarchical data sets returned.  
   
@@ -98,7 +96,3 @@ These functions access data and return table values. Most of these functions ret
 |[Web.Page](web-page.md)|Returns the contents of an HTML webpage as a table.|  
 |[Xml.Document](xml-document.md)|Returns the contents of an XML document as a hierarchical table (list of records).|  
 |[Xml.Tables](xml-tables.md)|Returns the contents of an XML document as a nested collection of flattened tables.|  
-
-## See also
-
-* [Accessing data enumerations](accessing-data-enumerations.md)

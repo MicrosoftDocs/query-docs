@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Text functions"
 title: "Text functions | Microsoft Docs"
-ms.date: 5/4/2022
+ms.date: 5/12/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -88,7 +88,3 @@ These functions create and manipulate text values.
 |[Text.TrimEnd](text-trimend.md)|Removes any occurrences of the characters specified in trimChars from the end of the original text value.|
 |[Text.TrimStart](text-trimstart.md)|Removes any occurrences of the characters in trimChars from the start of the original text value.|
 |[Text.Upper](text-upper.md)|Returns the uppercase of a text value.|
-
-## See also
-
-* [Text enumerations](text-enumerations.md)

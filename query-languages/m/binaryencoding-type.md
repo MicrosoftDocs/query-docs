@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: BinaryEncoding.Type"
 title: "BinaryEncoding.Type | Microsoft Docs"
-ms.date: 5/2/2022
+ms.date: 5/11/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -16,9 +16,13 @@ ms.author: dougklo
 
 Specifies the type of binary encoding.
 
-## Fields
+## Allowed values
 
-|Field|Value|Description|  
-|------------|---|---------------|  
+|Allowed value|Value|Description|  
+|------------|--|-------------|  
 |**Base64**|0|Constant to use as the encoding type when base-64 encoding is required.|
 |**Hex**|1|Constant to use as the encoding type when hexadecimal encoding is required.|
+
+## Applies to
+
+* [Binary functions](binary-functions.md)
