@@ -48,9 +48,9 @@ items:
     href: metadata.md
   - name: Errors
     href: errors.md
-  - name: Power Query M functions
+  - name: Functions
     items:
-    - name: Power Query M functions overview
+    - name: Functions overview
       href: power-query-m-function-reference.md
     - name: Understanding Power Query M functions
       href: understanding-power-query-m-functions.md
