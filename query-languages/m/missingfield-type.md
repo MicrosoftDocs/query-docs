@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: MissingField.Type"
 title: "MissingField.Type | Microsoft Docs"
-ms.date: 5/11/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -18,11 +18,11 @@ Specifies the expected action for missing values in a row that contains columns 
 
 ## Allowed values
 
-|Allowed fields|Value|Description|
+|Name|Value|Description|
 |-----|-----|-----------|
-|**Error**| 0 |Indicates that missing fields should result in an error. (This is the default value.)|
-|**Ignore**| 1 |Indicates that missing fields should be ignored.|
-|**UseNull**| 2 |Indicates that missing fields should be included as null values.|
+|**MissingField.Error**| 0 |Indicates that missing fields should result in an error. (This is the default value.)|
+|**MissingField.Ignore**| 1 |Indicates that missing fields should be ignored.|
+|**MissingField.UseNull**| 2 |Indicates that missing fields should be included as null values.|
 
 ## Applies to
 

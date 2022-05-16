@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Type functions"
 title: "Type functions | Microsoft Docs"
-ms.date: 5/12/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -14,7 +14,7 @@ ms.author: dougklo
 
 These functions create and manipulate type values.
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Type.AddTableKey](type-addtablekey.md)|Add a key to a table type.|
 |[Type.ClosedRecord](type-closedrecord.md)|The given type must be a record type returns a closed version of the given record type (or the same type, if it is already closed)|

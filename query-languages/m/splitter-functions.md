@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Splitter functions"
 title: "Splitter functions | Microsoft Docs"
-ms.date: 5/12/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -14,7 +14,7 @@ ms.author: dougklo
 
 These functions split text.
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Splitter.SplitByNothing](splitter-splitbynothing.md)|Returns a function that does no splitting, returning its argument as a single element list.|
 |[Splitter.SplitTextByCharacterTransition](splitter-splittextbycharactertransition.md)|Returns a function that splits text into a list of text according to a transition from one kind of character to another.|

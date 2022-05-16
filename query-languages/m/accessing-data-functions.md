@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Accessing data functions"
 title: "Accessing data functions | Microsoft Docs"
-ms.date: 5/12/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 ms.reviewer: ehvonleh
 ms.topic: reference
@@ -12,7 +12,7 @@ ms.author: dougklo
 
 These functions access data and return table values. Most of these functions return a table value called a **navigation table**. Navigation tables are primarily used by the Power Query user interface to provide a navigation experience over the potentially large hierarchical data sets returned.  
   
-|Function|Description|  
+|Name|Description|  
 |------------|---------------|  
 |[AccessControlEntry.ConditionToIdentities](accesscontrolentry-conditiontoidentities.md)|Returns a list of identities that the condition will accept.|
 |[Access.Database](access-database.md)|Returns a structural representation of an Microsoft Access database. |  

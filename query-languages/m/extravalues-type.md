@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: ExtraValues.Type"
 title: "ExtraValues.Type | Microsoft Docs"
-ms.date: 5/11/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 ms.reviewer: ehvonleh
 ms.topic: reference
@@ -17,11 +17,11 @@ Specifies the expected action for extra values in a row that contains columns le
 
 ## Allowed values
 
-|Allowed values|Value|Description|
+|Name|Value|Description|
 | ------- | --- | ----------- |
-|**List**|0|If the splitter function returns more columns than the table expects, they should be collected into a list.|
-|**Error**|1| If the splitter function returns more columns than the table expects, an error should be raised.|
-|**Ignore**|2|If the splitter function returns more columns than the table expects, they should be ignored.|
+|**ExtraValues.List**|0|If the splitter function returns more columns than the table expects, they should be collected into a list.|
+|**ExtraValues.Error**|1| If the splitter function returns more columns than the table expects, an error should be raised.|
+|**ExtraValues.Ignore**|2|If the splitter function returns more columns than the table expects, they should be ignored.|
 
 ## Applies to
 

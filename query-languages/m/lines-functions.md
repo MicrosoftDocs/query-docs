@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Lines functions"
 title: "Lines functions | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -14,7 +14,7 @@ ms.author: dougklo
 
 These functions convert lists of text to and from binary and single text values.
 
-|Function|Description|
+|Name|Description|
 |--------------|-----------------|
 |[Lines.FromBinary](lines-frombinary.md)|Converts a binary value to a list of text values split at lines breaks.|
 |[Lines.FromText](lines-fromtext.md)|Converts a text value to a list of text values split at lines breaks.|

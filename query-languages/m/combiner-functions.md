@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Combiner functions"
 title: "Combiner functions | Microsoft Docs"
-ms.date: 5/12/2020
+ms.date: 5/16/2020
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -14,7 +14,7 @@ ms.author: dougklo
 
 These functions are used by other library functions that merge values. For example, `Table.ToList` and `Table.CombineColumns` apply a combiner function to each row in a table to produce a single value for each row.
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Combiner.CombineTextByDelimiter](combiner-combinetextbydelimiter.md)|Returns a function that combines a list of text into a single text using the specified delimiter.|
 |[Combiner.CombineTextByEachDelimiter](combiner-combinetextbyeachdelimiter.md)|Returns a function that combines a list of text into a single text using each specified delimiter in sequence.|

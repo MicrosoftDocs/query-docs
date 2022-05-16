@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: AccessControlKind.Type"
 title: "AccessControlKind.Type | Microsoft Docs"
-ms.date: 5/11/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -18,10 +18,10 @@ Specifies the kind of access control.
 
 ## Allowed values
 
-|Allowed values|Value|Description|  
+|Name|Value|Description|  
 |------------|--|---------------|  
-|**Deny**|0|Access is denied.|
-|**Allow**|1|Access is allowed.|
+|**AccessControlKind.Deny**|0|Access is denied.|
+|**AccessControlKind.Allow**|1|Access is allowed.|
 
 ## Applies to
 

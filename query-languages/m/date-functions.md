@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date functions"
 title: "Date functions | Microsoft Docs"
-ms.date: 5/12/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -14,7 +14,7 @@ ms.author: dougklo
 
 These functions create and manipulate the date component of date, datetime, and datetimezone values.
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Date.AddDays](date-adddays.md)|Returns a Date/DateTime/DateTimeZone value with the day portion incremented by the number of days provided. It also handles incrementing the month and year potions of the value as appropriate.|
 |[Date.AddMonths](date-addmonths.md)|Returns a DateTime value with the month portion incremented by n months.|

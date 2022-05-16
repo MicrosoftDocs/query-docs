@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Enumerations"
 title: "Accessing data enumerations | Microsoft Docs"
-ms.date: 5/12/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 ms.reviewer: ehvonleh
 ms.topic: reference
@@ -14,7 +14,7 @@ The Power Query M formula language includes these enumerations.
 
 ## List of enumerations
   
-|Enumeration|Description|  
+|Name|Description|  
 |------------|---------------|  
 |[AccessControlKind.Type](accesscontrolkind-type.md)|Specifies the kind of access control.|
 |[BinaryEncoding.Type](binaryencoding-type.md)|Specifies the type of binary encoding.|

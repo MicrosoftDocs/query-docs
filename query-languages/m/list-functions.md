@@ -16,7 +16,7 @@ These functions create and manipulate list values.
   
 ## Information
   
-|Function|Description|  
+|Name|Description|  
 |------------|---------------|  
 |[List.Count](list-count.md)|Returns the number of items in a list.|  
 |[List.NonNullCount](list-nonnullcount.md)|Returns the number of items in a list excluding null values|  
@@ -24,7 +24,7 @@ These functions create and manipulate list values.
   
 ## Selection
   
-|Function|Description|  
+|Name|Description|  
 |------------|---------------|  
 |[List.Alternate](list-alternate.md)|Returns a list with the items alternated from the original list based on a count, optional repeatInterval, and an optional offset.|  
 |[List.Buffer](list-buffer.md)|Buffers the list in memory. The result of this call is a stable list, which means it will have a determinimic count, and order of items.|
@@ -47,7 +47,7 @@ These functions create and manipulate list values.
   
 ## Transformation functions  
   
-|Function|Description|  
+|Name|Description|  
 |------------|---------------|  
 |[List.Accumulate](list-accumulate.md)|Accumulates a result from the list. Starting from the initial value seed this function applies the accumulator function and returns the final result.|  
 |[List.Combine](list-combine.md)|Merges a list of lists into single list.|
@@ -71,7 +71,7 @@ These functions create and manipulate list values.
 
 Since all values can be tested for equality, these functions can operate over heterogeneous lists.  
   
-|Function|Description|  
+|Name|Description|  
 |------------|---------------|  
 |[List.AllTrue](list-alltrue.md)|Returns true if all expressions in a list are true|
 |[List.AnyTrue](list-anytrue.md)|Returns true if any expression in a list in true|
@@ -83,7 +83,7 @@ Since all values can be tested for equality, these functions can operate over he
 
 ## Set operations  
   
-|Function|Description|  
+|Name|Description|  
 |------------|---------------|  
 |[List.Difference](list-difference.md)|Returns the items in list 1 that do not appear in list 2. Duplicate values are supported.|  
 |[List.Intersect](list-intersect.md)|Returns a list from a list of lists and intersects common items in individual lists. Duplicate values are supported.|  
@@ -103,7 +103,7 @@ Comparable data types include:
 - Logical  
 - Null  
   
-|Function|Description|  
+|Name|Description|  
 |------------|---------------|  
 |[List.Max](list-max.md)|Returns the maximum item in a list, or the optional default value if the list is empty.|  
 |[List.MaxN](list-maxn.md)|Returns the maximum values in the list. The number of values to return or a filtering condition must be specified.|  
@@ -117,7 +117,7 @@ Comparable data types include:
 
 These functions operate over homogeneous lists of Numbers, DateTimes, and Durations.  
   
-|Function|Description|  
+|Name|Description|  
 |------------|---------------|  
 |[List.Average](list-average.md)|Returns an average value from a list in the datatype of the values in the list.|  
 |[List.Mode](list-mode.md)|Returns an item that appears most commonly in a list.|  
@@ -128,7 +128,7 @@ These functions operate over homogeneous lists of Numbers, DateTimes, and Durati
 
 These functions work over homogeneous lists of Numbers or Durations.  
   
-|Function|Description|  
+|Name|Description|  
 |------------|---------------|  
 |[List.Sum](list-sum.md)|Returns the sum from a list.|  
   
@@ -136,7 +136,7 @@ These functions work over homogeneous lists of Numbers or Durations.
 
 These functions only work over numbers.  
   
-|Function|Description|  
+|Name|Description|  
 |------------|---------------|  
 |[List.Covariance](list-covariance.md)|Returns the covariance from two lists as a number.|  
 |[List.Product](list-product.md)|Returns the product from a list of numbers.|  
@@ -145,7 +145,7 @@ These functions only work over numbers.
 
 These functions generate list of values.  
   
-|Function|Description|  
+|Name|Description|  
 |------------|---------------|  
 |[List.Dates](list-dates.md)|Returns a list of date values from size count, starting at start and adds an increment to every value.|
 |[List.DateTimes](list-datetimes.md)|Returns a list of datetime values from size count, starting at start and adds an increment to every value.|

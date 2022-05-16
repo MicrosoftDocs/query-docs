@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Duration functions"
 title: "Duration functions | Microsoft Docs"
-ms.date: 5/12/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -14,7 +14,7 @@ ms.author: dougklo
 
 These functions create and manipulate duration values.
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Duration.Days](duration-days.md)|Returns the day component of a Duration value.|
 |[Duration.From](duration-from.md)|Returns a duration value from a value.|

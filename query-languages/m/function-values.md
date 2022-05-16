@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Function values"
 title: "Function values | Microsoft Docs"
-ms.date: 4/21/2020
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -14,7 +14,7 @@ ms.author: dougklo
 
 These functions create and invoke other M functions.
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 | [Function.From](function-from.md) | Takes a unary function `function` and creates a new function with the type `functionType` that constructs a list out of its arguments and passes it to `function`. |
 |[Function.Invoke](function-invoke.md)|Invokes the given function using the specified and returns the result.|

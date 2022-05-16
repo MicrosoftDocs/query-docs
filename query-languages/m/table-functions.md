@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table functions"
 title: "Table functions | Microsoft Docs"
-ms.date: 5/12/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 ms.reviewer: ehvonleh
 ms.topic: reference
@@ -15,7 +15,7 @@ These functions create and manipulate table values.
 
 ## Table construction
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[ItemExpression.From](itemexpression-from.md) | Returns the abstract syntax tree (AST) for the body of a function.|
 |[ItemExpression.Item](itemexpression-item.md) | An abstract syntax tree (AST) node representing the item in an item expression.|
@@ -37,7 +37,7 @@ These functions create and manipulate table values.
 
 ## Conversions
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Table.ToColumns](table-tocolumns.md)|Returns a list of nested lists each representing a column of values in the input table.|
 |[Table.ToList](table-tolist.md)|Returns a table into a list by applying the specified combining function to each row of values in a table.|
@@ -46,7 +46,7 @@ These functions create and manipulate table values.
 
 ## Information
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Table.ApproximateRowCount](table-approximaterowcount.md)|Returns the approximate number of rows in the table.|
 |[Table.ColumnCount](table-columncount.md)|Returns the number of columns in a table.|
@@ -58,7 +58,7 @@ These functions create and manipulate table values.
 
 ## Row operations
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Table.AlternateRows](table-alternaterows.md)|Returns a table containing an alternating pattern of the rows from a table.|
 |[Table.Combine](table-combine.md)|Returns a table that is the result of merging a list of tables. The tables must all have the same row type structure.|
@@ -90,7 +90,7 @@ These functions create and manipulate table values.
 
 ## Column operations
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Table.Column](table-column.md)|Returns the values from a column in a table.|
 |[Table.ColumnNames](table-columnnames.md)|Returns the names of columns from a table.|
@@ -111,7 +111,7 @@ These functions create and manipulate table values.
 
 ## Transformation
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Table.AddColumn](table-addcolumn.md)|Adds a column named newColumnName to a table.|
 |[Table.AddFuzzyClusterColumn](table-addfuzzyclustercolumn.md)| Adds a new column with representative values obtained by fuzzy grouping values of the specified column in the table.|
@@ -144,7 +144,7 @@ These functions create and manipulate table values.
 
 ## Membership
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Table.Contains](table-contains.md)|Determines whether the a record appears as a row in the table.|
 |[Table.ContainsAll](table-containsall.md)|Determines whether all of the specified records appear as rows in the table.|
@@ -158,7 +158,7 @@ These functions create and manipulate table values.
 
 ## Ordering
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Table.Max](table-max.md)|Returns the largest row or rows from a table using a comparisonCriteria.|
 |[Table.MaxN](table-maxn.md)|Returns the largest N rows from a table. After the rows are sorted, the countOrCondition parameter must be specified to further filter the result.|
@@ -168,7 +168,7 @@ These functions create and manipulate table values.
 
 ## Other
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Table.Buffer](table-buffer.md)|Buffers a table into memory, isolating it from external changes during evaluation.|
 

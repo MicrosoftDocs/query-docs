@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: GroupKind.Type"
 title: "GroupKind.Type | Microsoft Docs"
-ms.date: 5/11/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 ms.reviewer: ehvonleh
 ms.topic: reference
@@ -17,10 +17,10 @@ Specifies the kind of grouping.
 
 ## Allowed values
 
-|Allowed value|Value|Description|
+|Name|Value|Description|
 | ------- | --- | ----------- |
-|**Local**|0| A local group is formed from a consecutive sequence of rows from an input table with the same key value.|
-|**Global**|1| A global group is formed from all rows in an input table with the same key value.|
+|**GroupKind.Local**|0| A local group is formed from a consecutive sequence of rows from an input table with the same key value.|
+|**GroupKind.Global**|1| A global group is formed from all rows in an input table with the same key value.|
 
 ## Applies to
 

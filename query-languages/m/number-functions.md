@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number functions"
 title: "Number functions | Microsoft Docs"
-ms.date: 5/12/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -16,7 +16,7 @@ These functions create and manipulate number values.
 
 ## Information
 
-|Function|Description|  
+|Name|Description|  
 |------------|---------------|  
 |[Number.IsEven](number-iseven.md)|Returns true if a value is an even number.|
 |[Number.IsNaN](number-isnan.md)|Returns true if a value is Number.NaN.|  
@@ -24,7 +24,7 @@ These functions create and manipulate number values.
 
 ## Conversion and formatting  
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Byte.From](byte-from.md)|Returns an 8-bit integer number value from the given value.|
 |[Currency.From](currency-from.md)|Returns a currency value from the given value.|
@@ -42,7 +42,7 @@ These functions create and manipulate number values.
 
 ## Rounding
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Number.Round](number-round.md)|Returns a nullable number (n) if value is an integer.|
 |[Number.RoundAwayFromZero](number-roundawayfromzero.md)|Returns Number.RoundUp(value) when value &gt;= 0 and Number.RoundDown(value) when value &lt; 0.|
@@ -52,7 +52,7 @@ These functions create and manipulate number values.
 
 ## Operations
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Number.Abs](number-abs.md)|Returns the absolute value of a number.|
 |[Number.Combinations](number-combinations.md)|Returns the number of combinations of a given number of items for the optional combination size.|
@@ -70,14 +70,14 @@ These functions create and manipulate number values.
 
 ## Random
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Number.Random](number-random.md)|Returns a random fractional number between 0 and 1.|
 |[Number.RandomBetween](number-randombetween.md)|Returns a random number between the two given number values.|
 
 ## Trigonometry
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Number.Acos](number-acos.md)|Returns the arccosine of a number.|
 |[Number.Asin](number-asin.md)|Returns the arcsine of a number.|
@@ -92,7 +92,7 @@ These functions create and manipulate number values.
 
 ## Bytes
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Number.BitwiseAnd](number-bitwiseand.md)|Returns the result of a bitwise AND operation on the provided operands.|
 |[Number.BitwiseNot](number-bitwisenot.md)|Returns the result of a bitwise NOT operation on the provided operands.|

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Expression functions"
 title: "Expression functions | Microsoft Docs"
-ms.date: 5/12/2020
+ms.date: 5/16/2020
 ms.service: powerquery
 ms.reviewer: ehvonleh
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.author: dougklo
 
 These functions allow the construction and evaluation of M code.
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Expression.Constant](expression-constant.md)|Returns the M source code representation of a constant value.|
 |[Expression.Evaluate](expression-evaluate.md)|Returns the result of evaluating an M expression.|

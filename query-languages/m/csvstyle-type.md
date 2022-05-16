@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: CsvStyle.Type"
 title: "CsvStyle.Type | Microsoft Docs"
-ms.date: 5/11/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -18,10 +18,10 @@ Specifies the significance of quotes in CSV documents.
 
 ## Allowed values
 
-|Allowed value|Value|Description|  
+|Name|Value|Description|  
 |------------|--|----------------|  
-|**QuoteAfterDelimiter**|0|Quotes in a field are only significant immediately following the delimiter.|
-|**QuoteAlways**|1|Quotes in a field are always significant regardless of where they appear.|
+|**CsvStyle.QuoteAfterDelimiter**|0|Quotes in a field are only significant immediately following the delimiter.|
+|**CsvStyle.QuoteAlways**|1|Quotes in a field are always significant regardless of where they appear.|
 
 ## Applies to
 

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: WebMethod.Type"
 title: "WebMethod.Type | Microsoft Docs"
-ms.date: 5/11/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -18,14 +18,14 @@ Specifies an HTTP method.
 
 ## Allowed values
 
-|Allowed value|Value|Description|  
+|Name|Value|Description|  
 |------------|---|---------------|  
-|**Delete**|DELETE|Specifies the DELETE method for HTTP.|
-|**Get**|GET|Specifies the GET method for HTTP.|
-|**Head**|HEAD|Specifies the HEAD method for HTTP.|
-|**Patch**|PATCH|Specifies the PATCH method for HTTP.|
-|**Post**|POST|Specifies the POST method for HTTP.|
-|**Put**|PUT|Specifies the PUT method for HTTP.|
+|**WebMethod.Delete**|"DELETE"|Specifies the DELETE method for HTTP.|
+|**WebMethod.Get**|"GET"|Specifies the GET method for HTTP.|
+|**WebMethod.Head**|"HEAD"|Specifies the HEAD method for HTTP.|
+|**WebMethod.Patch**|"PATCH"|Specifies the PATCH method for HTTP.|
+|**WebMethod.Post**|"POST"|Specifies the POST method for HTTP.|
+|**WebMethod.Put**|"PUT"|Specifies the PUT method for HTTP.|
 
 ## Remarks
 

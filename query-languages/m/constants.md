@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Constants"
 title: "Constants | Microsoft Docs"
-ms.date: 5/12/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -16,7 +16,7 @@ The Power Query M formula language includes these constant values.
 
 ## List of constants
   
-|Constant|Description|  
+|Name|Description|  
 |------------|---------------|  
 |[Number.E](number-e.md)|Returns 2.7182818284590451, the value of e up to 16 decimal digits.|
 |[Number.Epsilon](number-epsilon.md)|Returns the smallest possible number.|

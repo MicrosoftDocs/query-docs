@@ -1390,8 +1390,8 @@ items:
         href: sqlexpression-toexpression.md
       - name: Value.Add
         href: value-add.md
-      - name: Value.Alternate
-        href: value-alternate.md
+      - name: Value.Alternates
+        href: value-alternates.md
       - name: Value.As
         href: value-as.md
       - name: Value.Compare

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Error handling functions"
 title: "Error handling functions | Microsoft Docs"
-ms.date: 5/12/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -12,9 +12,9 @@ ms.author: bezhan
 ---
 # Error handling functions
 
-These functions return diagnostic traces at different levels of verbosity, as well as throw error records.
+These functions can be used to trace or construct errors.
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Diagnostics.ActivityId](diagnostics-activityid.md)|Returns an opaque identifier for the currently-running evaluation.|
 |[Diagnostics.Trace](diagnostics-trace.md)|Writes a trace message, if tracing is enabled, and returns value.|

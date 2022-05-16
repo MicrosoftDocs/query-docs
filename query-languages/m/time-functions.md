@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Time functions"
 title: "Time functions | Microsoft Docs"
-ms.date: 5/12/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -14,7 +14,7 @@ ms.author: dougklo
 
 These functions create and manipulate time values.
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Time.EndOfHour](time-endofhour.md)|Returns a DateTime value from the end of the hour.|
 |[Time.From](time-from.md)|Returns a time value from a value.|

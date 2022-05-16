@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Uri functions"
 title: "Uri functions | Microsoft Docs"
-ms.date: 5/12/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -14,7 +14,7 @@ ms.author: dougklo
 
 These functions create and manipulate URI query strings.
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Uri.BuildQueryString](uri-buildquerystring.md) | Assemble a record into a URI query string.|
 |[Uri.Combine](uri-combine.md)|Returns a Uri based on the combination of the base and relative parts.|

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: LimitClauseKind.Type"
 title: "LimitClauseKind.Type | Microsoft Docs"
-ms.date: 5/11/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -18,13 +18,13 @@ Describes the type of limit clause supported by the SQL dialect used by this dat
 
 ## Allowed values
 
-|Allowed value|Value|Description|  
+|Name|Value|Description|  
 |------------|--|---------------|  
-|**None**|0|This SQL dialect does not support a limit clause.|
-|**Top**|1|This SQL dialect supports a TOP specifier to limit the number of rows returned.|
-|**LimitOffset**|2|This SQL dialect supports LIMIT and OFFSET specifiers to limit the number of rows returned.|
-|**Limit**|3|This SQL dialect supports a LIMIT specifier to limit the number of rows returned.|
-|**AnsiSql2008**|4|This SQL dialect supports an ANSI SQL-compatible LIMIT N ROWS specifier to limit the number of rows returned.|
+|**LimitClauseKind.None**|0|This SQL dialect does not support a limit clause.|
+|**LimitClauseKind.Top**|1|This SQL dialect supports a TOP specifier to limit the number of rows returned.|
+|**LimitClauseKind.LimitOffset**|2|This SQL dialect supports LIMIT and OFFSET specifiers to limit the number of rows returned.|
+|**LimitClauseKind.Limit**|3|This SQL dialect supports a LIMIT specifier to limit the number of rows returned.|
+|**LimitClauseKind.AnsiSql2008**|4|This SQL dialect supports an ANSI SQL-compatible LIMIT N ROWS specifier to limit the number of rows returned.|
 
 ## Applies to
 

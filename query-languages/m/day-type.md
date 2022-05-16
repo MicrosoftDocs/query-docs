@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Day.Type"
 title: "Day.Type | Microsoft Docs"
-ms.date: 5/11/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -18,15 +18,15 @@ Represents the day of the week.
 
 ## Allowed values
 
-| Allowed value | Value | Description |
+| Name | Value | Description |
 | ----------------- | -- | -----------|
-| **Sunday** | 0 |Represents Sunday. |
-| **Monday** | 1 |Represents Monday. |
-| **Tuesday** | 2 |Represents Tuesday. |
-| **Wednesday** | 3 |Represents Wednesday. |
-| **Thursday** | 4 |Represents Thursday. |
-| **Friday** | 5 |Represents Friday. |
-| **Saturday** | 6 |Represents Saturday. |
+| **Day.Sunday** | 0 |Represents Sunday. |
+| **Day.Monday** | 1 |Represents Monday. |
+| **Day.Tuesday** | 2 |Represents Tuesday. |
+| **Day.Wednesday** | 3 |Represents Wednesday. |
+| **Day.Thursday** | 4 |Represents Thursday. |
+| **Day.Friday** | 5 |Represents Friday. |
+| **Day.Saturday** | 6 |Represents Saturday. |
 
 ## Applies to
 

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Occurrence.Type"
 title: "Occurrence.Type | Microsoft Docs"
-ms.date: 5/11/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -18,14 +18,14 @@ Specifies the occurrence of an element in a sequence.
 
 ## Allowed values
 
-|Allowed value|Value|Description|
+|Name|Value|Description|
 | ------- | --- | ----------- |
-|**First**|0|The position of the first occurrence of the found value is returned.|
-|**Last**|1|The position of the last occurrence of the found value is returned.|
-|**All**|2|A list of positions of all occurrences of the found values is returned.|
-|**Optional**|0|The item is expected to appear zero or one time in the input. Provided for backward compatibility in binary functions. In this case, use [BinaryOccurrence.Optional](binaryoccurrence-type.md) instead.|
-|**Required**|1|The item is expected to appear once in the input. Provided for backward compatibility in binary functions. In this case, use [BinaryOccurrence.Required](binaryoccurrence-type.md) instead.|
-|**Repeating**|2|The item is expected to appear zero or more times in the input. Provided for backward compatibility in binary functions. In this case, use [BinaryOccurrence.Repeating](binaryoccurrence-type.md) instead.|
+|**Occurrence.First**|0|The position of the first occurrence of the found value is returned.|
+|**Occurrence.Last**|1|The position of the last occurrence of the found value is returned.|
+|**Occurrence.All**|2|A list of positions of all occurrences of the found values is returned.|
+|**Occurrence.Optional**|0|The item is expected to appear zero or one time in the input. Provided for backward compatibility in binary functions. In this case, use [BinaryOccurrence.Optional](binaryoccurrence-type.md) instead.|
+|**Occurrence.Required**|1|The item is expected to appear once in the input. Provided for backward compatibility in binary functions. In this case, use [BinaryOccurrence.Required](binaryoccurrence-type.md) instead.|
+|**Occurrence.Repeating**|2|The item is expected to appear zero or more times in the input. Provided for backward compatibility in binary functions. In this case, use [BinaryOccurrence.Repeating](binaryoccurrence-type.md) instead.|
 
 ## Applies to
 

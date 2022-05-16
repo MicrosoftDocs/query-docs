@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DateTimeZone functions"
 title: "DateTimeZone functions | Microsoft Docs"
-ms.date: 5/12/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -14,7 +14,7 @@ ms.author: dougklo
 
 These functions create and manipulate datetimezone values.
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[DateTimeZone.FixedLocalNow](datetimezone-fixedlocalnow.md)|Returns a DateTimeZone value set to the current date, time, and timezone offset on the system.|
 |[DateTimeZone.FixedUtcNow](datetimezone-fixedutcnow.md)|Returns the current date and time in UTC (the GMT timezone).|

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Value functions"
 title: "Value functions | Microsoft Docs"
-ms.date: 5/12/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -14,7 +14,7 @@ ms.author: dougklo
 
 These functions evaluate and perform operations on values.
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Value.Alternates](value-alternate.md)|Expresses alternate query plans.|
 |[Value.Compare](value-compare.md)|Returns 1, 0, or -1 based on value1 being greater than, equal to, or less than the value2. An optional comparer function can be provided.|
@@ -27,7 +27,7 @@ These functions evaluate and perform operations on values.
 
 ## Arithmetic operations
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Value.Add](value-add.md)|Returns the sum of the two values.|
 |[Value.Divide](value-divide.md)|Returns the result of dividing the first value by the second.|
@@ -36,7 +36,7 @@ These functions evaluate and perform operations on values.
 
 ## Parameter types
 
-|Type|Description|
+|Name|Description|
 |--------|---------------|
 |[Value.As](value-as.md)|Returns the value if it is compatible with the specified type.|
 |[Value.Is](value-is.md)|Determines whether a value is compatible with the specified type.|
@@ -54,7 +54,7 @@ These functions evaluate and perform operations on values.
 
 ## Metadata
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Value.Metadata](value-metadata.md)|Returns a record containing the input’s metadata.|
 |[Value.RemoveMetadata](value-removemetadata.md)|Removes the metadata on the value and returns the original value.|
@@ -62,7 +62,7 @@ These functions evaluate and perform operations on values.
 
 ## Lineage
 
-|Function|Description|
+|Name|Description|
 | ------ | --------- |
 |[Graph.Nodes](graph-nodes.md)|This function is intended for internal use only.|
 |[Value.Lineage](value-lineage.md)|This function is intended for internal use only.|

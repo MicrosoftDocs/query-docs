@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Record functions"
 title: "Record functions | Microsoft Docs"
-ms.date: 5/12/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -16,14 +16,14 @@ These functions create and manipulate record values.
   
 ## Information
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Record.FieldCount](record-fieldcount.md)|Returns the number of fields in a record.|
 |[Record.HasFields](record-hasfields.md)|Returns true if the field name or field names are present in a record.|
 
 ## Transformations
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Geography.FromWellKnownText](geography-fromwellknowntext.md)|Translates text representing a geographic value in Well-Known Text (WKT) format into a structured record.|
 |[Geography.ToWellKnownText](geography-towellknowntext.md)|Translates a structured geographic point value into its Well-Known Text (WKT) representation.|
@@ -40,7 +40,7 @@ These functions create and manipulate record values.
 
 ## Selection
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Record.Field](record-field.md)|Returns the value of the given field. This function can be used to dynamically create field lookup syntax for a given record. In that way it is a dynamic version of the record[field] syntax.|
 |[Record.FieldNames](record-fieldnames.md)|Returns a list of field names in order of the record's fields.|
@@ -50,7 +50,7 @@ These functions create and manipulate record values.
 
 ## Serialization
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Record.FromList](record-fromlist.md)|Returns a record given a list of field values and a set of fields.|
 |[Record.FromTable](record-fromtable.md)|Returns a record from a table of records containing field names and values.|
@@ -63,6 +63,6 @@ The following type definitions are used to describe the parameter values that ar
 
 |Type Definition|Description|
 |-|-|
-|MissingField option|More information: [MissingField.Type](missingfield-type.md)|
+|**MissingField** option|More information: [MissingField.Type](missingfield-type.md)|
 |Transform operations|Transform operations can be specified by either of the following values:<br /><br />&#8226;&nbsp;&nbsp;A list value of two items, first item being the field name and the second item being the transformation function applied to that field to produce a new value.<br /><br />&#8226;&nbsp;&nbsp;A list of transformations can be provided by providing a list value, and each item being the list value of 2 items as described above.<br /><br />For examples, go to the description of [Record.TransformFields](record-transformfields.md)|
 |Rename operations|Rename operations for a record can be specified as either of:<br /><br />A single rename operation, which is represented by a list of two field names, old and new.<br /><br />For examples, go to the description of [Record.RenameFields](record-renamefields.md).|

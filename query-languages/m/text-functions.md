@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Text functions"
 title: "Text functions | Microsoft Docs"
-ms.date: 5/12/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -16,20 +16,20 @@ These functions create and manipulate text values.
 
 ## Information
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Text.InferNumberType](text-infernumbertype.md)|Infers the granular number type (Int64.Type, Double.Type, and so on) of a number encoded in text.|
 |[Text.Length](text-length.md)|Returns the number of characters in a text value.|
 
 ## Text Comparisons
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Character.FromNumber](character-fromnumber.md)|Returns a number to its character value.|
 |[Character.ToNumber](character-tonumber.md)|Returns a character to its number value.|
 |[Guid.From](guid-from.md) | Returns a `Guid.Type` value from the given `value`.|
 |[Json.FromValue](json-fromvalue.md) | Produces a JSON representation of a given value.|
-|[Text.From](text-from.md)|Returns the text representation of a number, date, time, datetime, datetimezone, logical, duration or binary value. If a value is null, Text.From returns null. The optional culture parameter is used to format the text value according to the given culture.|
+|[Text.From](text-from.md)|Returns the text representation of a number, date, time, datetime, datetimezone, logical, duration or binary value. If a value is null, **Text.From** returns null. The optional culture parameter is used to format the text value according to the given culture.|
 |[Text.FromBinary](text-frombinary.md)|Decodes data from a binary value in to a text value using an encoding.|
 |[Text.NewGuid](text-newguid.md)|Returns a Guid value as a text value.|
 |[Text.ToBinary](text-tobinary.md)|Encodes a text value into binary value using an encoding.|
@@ -38,7 +38,7 @@ These functions create and manipulate text values.
 
 ## Extraction
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|  
 |[Text.At](text-at.md)|Returns a character starting at a zero-based offset.|
 |[Text.Middle](text-middle.md) | Returns the substring up to a specific length.|
@@ -48,7 +48,7 @@ These functions create and manipulate text values.
 
 ## Modification
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Text.Insert](text-insert.md)|Returns a text value with newValue inserted into a text value starting at a zero-based offset.|
 |[Text.Remove](text-remove.md)|Removes all occurrences of a character or list of characters from a text value. The removeChars parameter can be a character value or a list of character values.|
@@ -59,7 +59,7 @@ These functions create and manipulate text values.
 
 ## Membership
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Text.Contains](text-contains.md)|Returns true if a text value substring was found within a text value string; otherwise, false.|
 |[Text.EndsWith](text-endswith.md)|Returns a logical value indicating whether a text value substring was found at the end of a string.|
@@ -69,7 +69,7 @@ These functions create and manipulate text values.
 
 ## Transformations
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Text.AfterDelimiter](text-afterdelimiter.md)|Returns the portion of text after the specified delimiter.|
 |[Text.BeforeDelimiter](text-beforedelimiter.md)|Returns the portion of text before the specified delimiter.|

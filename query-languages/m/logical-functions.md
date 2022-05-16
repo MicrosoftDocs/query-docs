@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Logical functions"
 title: "Logical functions | Microsoft Docs"
-ms.date: 5/12/2020
+ms.date: 5/16/2020
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -14,7 +14,7 @@ ms.author: dougklo
 
 These functions create and manipulate logical (that is, true/false) values.
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[Logical.From](logical-from.md)|Returns a logical value from a value.|
 |[Logical.FromText](logical-fromtext.md)|Returns a logical value of true or false from a text value.|

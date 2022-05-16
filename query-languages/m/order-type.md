@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Order.Type"
 title: "Order.Type | Microsoft Docs"
-ms.date: 5/11/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -18,10 +18,10 @@ Specifies the direction of sorting.
 
 ## Allowed values
 
-|Allowed value|Value|Description|
+|Name|Value|Description|
 | ------- | --- | ----------- |
-|**Ascending**|0|Sorts the values in ascending order.|
-|**Descending**|1|Sorts the values in descending order.|
+|**Order.Ascending**|0|Sorts the values in ascending order.|
+|**Order.Descending**|1|Sorts the values in descending order.|
 
 ## Applies to
 

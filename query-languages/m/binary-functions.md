@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Binary functions"
 title: "Binary functions | Microsoft Docs"
-ms.date: 4/21/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -18,7 +18,7 @@ These functions create and manipulate binary data.
   
 ### Reading numbers  
   
-|Function|Description|  
+|Name|Description|  
 |------------|---------------|  
 |[BinaryFormat.7BitEncodedSignedInteger](binaryformat-7bitencodedsignedinteger.md)|A binary format that reads a 64-bit signed integer that was encoded using a 7-bit variable-length encoding.|  
 |[BinaryFormat.7BitEncodedUnsignedInteger](binaryformat-7bitencodedunsignedinteger.md)|A binary format that reads a 64-bit unsigned integer that was encoded using a 7-bit variable-length encoding.|  
@@ -44,14 +44,14 @@ These functions create and manipulate binary data.
 
 ### Controlling byte order
 
-|Function | Description
+|Name | Description
 |---------------------- | -----------|
 |[BinaryFormat.ByteOrder](binaryformat-byteorder.md) | Returns a binary format with the byte order specified by a function.|
 |[Table.PartitionValues](table-partitionvalues.md) | Returns information about how a table is partitioned.|
   
 ## Binary  
   
-|Function|Description|  
+|Name|Description|  
 |------------|---------------|  
 |[Binary.Buffer](binary-buffer.md)|Buffers the binary value in memory. The result of this call is a stable binary value, which means it will have a deterministic length and order of bytes.|  
 |[Binary.Combine](binary-combine.md)|Combines a list of binaries into a single binary.|

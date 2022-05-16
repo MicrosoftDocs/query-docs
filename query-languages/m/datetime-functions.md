@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DateTime functions"
 title: "DateTime functions | Microsoft Docs"
-ms.date: 5/12/2022
+ms.date: 5/16/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -14,7 +14,7 @@ ms.author: dougklo
 
 These functions create and manipulate datetime and datetimezone values.
 
-|Function|Description|
+|Name|Description|
 |------------|---------------|
 |[DateTime.AddZone](datetime-addzone.md)|Adds the timezonehours as an offset to the input datetime value and returns a new datetimezone value.|
 |[DateTime.Date](datetime-date.md)|Returns a date part from a DateTime value|
