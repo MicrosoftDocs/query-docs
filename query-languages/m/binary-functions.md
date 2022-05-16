@@ -49,7 +49,7 @@ These functions create and manipulate binary data.
 |[BinaryFormat.ByteOrder](binaryformat-byteorder.md) | Returns a binary format with the byte order specified by a function.|
 |[Table.PartitionValues](table-partitionvalues.md) | Returns information about how a table is partitioned.|
   
-## Binary  
+## Binary data
   
 |Name|Description|  
 |------------|---------------|  
