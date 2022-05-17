@@ -20,7 +20,7 @@ Guid.From(<b>value</b> as nullable text) as nullable text
 
 ## About
 
-Returns a `Guid.Type` value from the given `value`. If the given `value` is `null`, `Guid.From` returns `null`. A check will be performed to determine if the given `value` is in an acceptable format. Acceptable formats provided in the examples.
+Returns a `Guid.Type` value from the given `value`. If the given `value` is `null`, **Guid.From** returns `null`. A check will be performed to determine if the given `value` is in an acceptable format. Acceptable formats provided in the examples.
 
 ## Example 1
 

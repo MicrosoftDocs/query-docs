@@ -11,7 +11,6 @@ ms.author: bezhan
 
 ---
 # Diagnostics.ActivityId
-`
 
 ## Syntax
 

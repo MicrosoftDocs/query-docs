@@ -27,7 +27,7 @@ By default, `number` is rounded to the nearest integer, and ties are broken by r
 However, these defaults can be overridden via the following optional parameters.
 
 * `digits`: Causes `number` to be rounded to the specified number of decimal digits.
-* `roundingMode`: Overrides the default tie-breaking behavior when `number` is at the midpoint between two potential rounded values (refer to `RoundingMode.Type` for possible values).
+* `roundingMode`: Overrides the default tie-breaking behavior when `number` is at the midpoint between two potential rounded values (refer to [RoundingMode.Type](roundingmode-type.md) for possible values).
 
 ## Example 1
 

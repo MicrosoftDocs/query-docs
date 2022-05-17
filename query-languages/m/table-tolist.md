@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.ToList"
 title: "Table.ToList | Microsoft Docs"
-ms.date: 3/10/2022
+ms.date: 5/3/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -18,7 +18,7 @@ ms.author: bezhan
 Table.ToList(<b>table</b> as table, optional <b>combiner</b> as nullable function) as list
 </pre>
   
-## About  \\
+## About
 
 Converts a table into a list by applying the specified combining function to each row of values in the table.
 

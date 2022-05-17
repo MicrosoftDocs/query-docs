@@ -1,31 +1,31 @@
 ---
 description: "Learn more about: Binary functions"
 title: "Binary functions | Microsoft Docs"
-ms.date: 4/7/2020
+ms.date: 5/16/2022
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # Binary functions
 
 These functions create and manipulate binary data.
   
-## <a name="__toc362450785"></a>Binary Formats  
+## Binary Formats  
   
-### <a name="__toc356573186"></a>Reading numbers  
+### Reading numbers  
   
-|Function|Description|  
+|Name|Description|  
 |------------|---------------|  
 |[BinaryFormat.7BitEncodedSignedInteger](binaryformat-7bitencodedsignedinteger.md)|A binary format that reads a 64-bit signed integer that was encoded using a 7-bit variable-length encoding.|  
 |[BinaryFormat.7BitEncodedUnsignedInteger](binaryformat-7bitencodedunsignedinteger.md)|A binary format that reads a 64-bit unsigned integer that was encoded using a 7-bit variable-length encoding.|  
 |[BinaryFormat.Binary](binaryformat-binary.md)|Returns a binary format that reads a binary value.|  
 |[BinaryFormat.Byte](binaryformat-byte.md)|A binary format that reads an 8-bit unsigned integer.|  
 |[BinaryFormat.Choice](binaryformat-choice.md)|Returns a binary format that chooses the next binary format based on a value that has already been read.|  
-|[BinaryFormat.Decimal](binaryformat-decimal.md)|A binary format that reads a .NET 16-byte decimal value.| 
+|[BinaryFormat.Decimal](binaryformat-decimal.md)|A binary format that reads a .NET 16-byte decimal value.|
 |[BinaryFormat.Double](binaryformat-double.md)|A binary format that reads an 8-byte IEEE double-precision floating point value.|  
 |[BinaryFormat.Group](binaryformat-group.md)|Returns a binary format that reads a group of items. Each item value is preceded by a unique key value. The result is a list of item values.|  
 |[BinaryFormat.Length](binaryformat-length.md)|Returns a binary format that limits the amount of data that can be read. Both BinaryFormat.List and BinaryFormat.Binary can be used to read until end of the data. BinaryFormat.Length can be used to limit the number of bytes that are read.|  
@@ -42,14 +42,16 @@ These functions create and manipulate binary data.
 |[BinaryFormat.UnsignedInteger32](binaryformat-unsignedinteger32.md)|A binary format that reads a 32-bit unsigned integer.|  
 |[BinaryFormat.UnsignedInteger64](binaryformat-unsignedinteger64.md)|A binary format that reads a 64-bit unsigned integer.|  
 
-Controlling byte order | Description
----------------------- | -----------
-[BinaryFormat.ByteOrder](binaryformat-byteorder.md) | Returns a binary format with the byte order specified by a function.
-[Table.PartitionValues](table-partitionvalues.md) | Returns information about how a table is partitioned.
+### Controlling byte order
+
+|Name | Description
+|---------------------- | -----------|
+|[BinaryFormat.ByteOrder](binaryformat-byteorder.md) | Returns a binary format with the byte order specified by a function.|
+|[Table.PartitionValues](table-partitionvalues.md) | Returns information about how a table is partitioned.|
   
-## <a name="__toc362450796"></a>Binary  
+## Binary data
   
-|Function|Description|  
+|Name|Description|  
 |------------|---------------|  
 |[Binary.Buffer](binary-buffer.md)|Buffers the binary value in memory. The result of this call is a stable binary value, which means it will have a deterministic length and order of bytes.|  
 |[Binary.Combine](binary-combine.md)|Combines a list of binaries into a single binary.|
@@ -63,21 +65,4 @@ Controlling byte order | Description
 |[Binary.Range](binary-range.md)|Returns a subset of the binary value beginning at an offset.|
 |[Binary.ToList](binary-tolist.md)|Converts a binary value into a list of numbers|  
 |[Binary.ToText](binary-totext.md)|Encodes binary data into a text form.|  
-|[BinaryEncoding.Base64](binaryencoding-base64.md)|Constant to use as the encoding type when base-64 encoding is required.|
-|[BinaryEncoding.Hex](binaryencoding-hex.md)|Constant to use as the encoding type when hexadecimal encoding is required.|
-|[BinaryOccurrence.Optional](binaryoccurrence-optional.md)|The item is expected to appear zero or one time in the input.|
-|[BinaryOccurrence.Repeating](binaryoccurrence-repeating.md)|The item is expected to appear zero or more times in the input.|
-|[BinaryOccurrence.Required](binaryoccurrence-required.md)|The item is expected to appear once in the input.|
-|[ByteOrder.BigEndian](byteorder-bigendian.md)|A possible value for the `byteOrder` parameter in `BinaryFormat.ByteOrder`. The most signficant byte appears first in Big Endian byte order.|
-|[ByteOrder.LittleEndian](byteorder-littleendian.md)|A possible value for the `byteOrder` parameter in `BinaryFormat.ByteOrder`. The least signficant byte appears first in Little Endian byte order.|
-|[Compression.Brotli](compression-brotli.md)|The compressed data is in the 'Brotli' format.|
-|[Compression.Deflate](compression-deflate.md)|The compressed data is in the 'Deflate' format.|
-|[Compression.GZip](compression-gzip.md)|The compressed data is in the 'GZip' format.|
-|[Compression.LZ4](compression-lz4.md)|The compressed data is in the 'LZ4' format.|
-|[Compression.None](compression-none.md)|The data is uncompressed.|
-|[Compression.Snappy](compression-snappy.md)|The compressed data is in the 'Snappy' format.|
-|[Compression.Zstandard](compression-zstandard.md)|The compressed data is in the 'Zstandard' format.|
-|[Occurrence.Optional](occurrence-optional.md) | The item is expected to appear zero or one time in the input.|
-|[Occurrence.Repeating](occurrence-repeating.md) | The item is expected to appear zero or more times in the input.|
-|[Occurrence.Required](occurrence-required.md) | The item is expected to appear once in the input.|
 |[#binary](sharpbinary.md) | Creates a binary value from numbers or text.|

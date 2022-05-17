@@ -12,7 +12,6 @@ ms.author: bezhan
 ---
 # Number.E
 
-  
-## About  
+## About
+
 A constant that represents 2.7182818284590451, the value for e up to 16 decimal digits.
-  
