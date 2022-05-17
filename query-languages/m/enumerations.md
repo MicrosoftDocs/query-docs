@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Enumerations"
 title: "Accessing data enumerations | Microsoft Docs"
-ms.date: 5/16/2022
+ms.date: 5/17/2022
 ms.service: powerquery
 ms.reviewer: ehvonleh
 ms.topic: reference
@@ -44,17 +44,3 @@ The Power Query M formula language includes these enumerations.
 |[TextEncoding.Type](textencoding-type.md) | Specifies the text encoding type.|
 |[TraceLevel.Type](tracelevel-type.md)|Specifies the trace level.|  
 |[WebMethod.Type](webmethod-type.md) |Specifies an HTTP method.|
-
-## See also
-
-* [Accessing data functions](accessing-data-functions.md)
-* [Binary functions](binary-functions.md)
-* [Date functions](date-functions.md)
-* [Error handling](error-handling.md)
-* [List functions](list-functions.md)
-* [Number functions](number-functions.md)
-* [Record functions](record-functions.md)
-* [Splitter functions](splitter-functions.md)
-* [Table functions](table-functions.md)
-* [Text functions](text-functions.md)
-* [Value functions](value-functions.md)
