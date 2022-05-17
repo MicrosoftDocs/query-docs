@@ -7,7 +7,7 @@ ms.service: powerquery
 ms.reviewer: dougklo
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # DateTime.FromText

@@ -4,10 +4,10 @@ title: "Value.NativeQuery | Microsoft Docs"
 ms.date: 11/17/2021
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # Value.NativeQuery

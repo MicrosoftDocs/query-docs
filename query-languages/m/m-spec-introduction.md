@@ -7,7 +7,7 @@ ms.service: powerquery
 
 ms.topic: overview
 ms.date: 2/25/2020
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 
