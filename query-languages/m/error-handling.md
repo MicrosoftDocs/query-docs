@@ -1,28 +1,21 @@
 ---
-description: "Learn more about: Error handling"
-title: "Error handling | Microsoft Docs"
-ms.date: 4/7/2020
+description: "Learn more about: Error handling functions"
+title: "Error handling functions | Microsoft Docs"
+ms.date: 5/16/2022
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: bezhan
 
 ---
-# Error handling
+# Error handling functions
 
-These functions return diagnostic traces at different levels of verbosity, as well as throw error records.
-  
-## <a name="__toc360789892"></a>Error  
-  
-|Function|Description|  
-|------------|---------------|  
+These functions can be used to trace or construct errors.
+
+|Name|Description|
+|------------|---------------|
 |[Diagnostics.ActivityId](diagnostics-activityid.md)|Returns an opaque identifier for the currently-running evaluation.|
-|[Diagnostics.Trace](diagnostics-trace.md)|Writes a trace message, if tracing is enabled, and returns value.|  
-|[Error.Record](error-record.md)|Returns a record containing fields “Reason”, “Message”, and “Detail” set to the provided values. The record can be used to raise or throw an error.|  
-|[TraceLevel.Critical](tracelevel-critical.md)|Returns 1, the value for Critical trace level.|  
-|[TraceLevel.Error](tracelevel-error.md)|Returns 2, the value for Error trace level.|
-|[TraceLevel.Information](tracelevel-information.md)|Returns 4, the value for Information trace level.|
-|[TraceLevel.Verbose](tracelevel-verbose.md)|Returns 5, the value for Verbose trace level.|
-|[TraceLevel.Warning](tracelevel-warning.md)|Returns 3, the value for Warning trace level.|
+|[Diagnostics.Trace](diagnostics-trace.md)|Writes a trace message, if tracing is enabled, and returns value.|
+|[Error.Record](error-record.md)|Returns a record containing fields **Reason**, **Message**, and **Detail** set to the provided values. The record can be used to raise or throw an error.|

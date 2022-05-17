@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.FilterWithDataTable"
 title: "Table.FilterWithDataTable | Microsoft Docs"
-ms.date: 9/13/2021
+ms.date: 5/3/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -15,7 +15,7 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-Table.FilterWithDataTable(**table** as table, **dataTableIdentifier** as text) as any
+Table.FilterWithDataTable(<b>table</b> as table, <b>dataTableIdentifier</b> as text) as any
 </pre>
 
 ## About

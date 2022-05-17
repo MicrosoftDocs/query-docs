@@ -30,7 +30,7 @@ The `group` parameter specifies a list of item definitions. Each item definition
 
 * Key value. The value of the key that corresponds to the item. This must be unique within the set of items.
 * Item format. The binary format corresponding to the value of the item. This allows each item to have a different format.
-* Item occurrence. The `BinaryOccurrence.Type` value for how many times the item is expected to appear in the group. Required items that are not present cause an error. Required or optional duplicate items are handled like unexpected key values.
+* Item occurrence. The [BinaryOccurrence.Type](binaryoccurrence-type.md) value for how many times the item is expected to appear in the group. Required items that are not present cause an error. Required or optional duplicate items are handled like unexpected key values.
 * Default item value (optional). If the default item value appears in the item definition list and is not null, then it will be used instead of the default. The default for repeating or optional items is null, and the default for repeating values is an empty list { }.
 * Item value transform (optional). If the item value transform function is present in the item definition list and is not null, then it will be called to transform the item value before it is returned. The transform function is only called if the item appears in the input (it will never be called with the default value).
 
