@@ -2,6 +2,7 @@
 description: "Learn more about: CONTAINSROW function"
 title: "CONTAINSROW function | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 01/05/2021
 ms.reviewer: owend
 ms.topic: reference

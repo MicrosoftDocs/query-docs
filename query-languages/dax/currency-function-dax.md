@@ -2,6 +2,7 @@
 description: "Learn more about: CURRENCY"
 title: "CURRENCY function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 04/14/2021
 ms.reviewer: owend
 ms.topic: reference

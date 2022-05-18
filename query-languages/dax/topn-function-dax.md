@@ -2,6 +2,7 @@
 description: "Learn more about: TOPN"
 title: "TOPN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 01/18/2022
 ms.reviewer: owend
 ms.topic: reference

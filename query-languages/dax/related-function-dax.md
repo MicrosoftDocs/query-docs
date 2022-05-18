@@ -2,6 +2,7 @@
 description: "Learn more about: RELATED"
 title: "RELATED function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 06/14/2021
 ms.reviewer: owend
 ms.topic: reference

@@ -2,6 +2,7 @@
 description: "Learn more about: FORMAT"
 title: "FORMAT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 01/18/2022
 ms.reviewer: owend
 ms.topic: reference

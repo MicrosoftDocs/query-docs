@@ -1,7 +1,9 @@
 ---
 description: "Learn more about: ABS"
 title: "ABS function (DAX) | Microsoft Docs"
-ms.service: powerbi
+ms.service: powerbi 
+ms.subservice: dax
+ms.subservice: dax
 ms.date: 07/05/2020
 ms.reviewer: owend
 ms.topic: reference

@@ -2,6 +2,7 @@
 description: "Learn more about: DEFINE"
 title: "DEFINE keyword (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 07/05/2020
 ms.reviewer: owend
 ms.topic: reference
