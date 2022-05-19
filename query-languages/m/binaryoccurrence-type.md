@@ -4,10 +4,10 @@ title: "BinaryOccurrence.Type | Microsoft Docs"
 ms.date: 5/16/2022
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # BinaryOccurrence.Type

@@ -7,7 +7,7 @@ ms.service: powerquery
 ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # Error handling functions
