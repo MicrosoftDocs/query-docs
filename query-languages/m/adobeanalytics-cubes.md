@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: AdobeAnalytics.Cubes"
 title: "AdobeAnalytics.Cubes | Microsoft Docs"
-ms.date: 5/25/2021
+ms.date: 5/19/2022
 ms.service: powerquery
 ms.reviewer: gepopell
 ms.topic: reference
@@ -18,9 +18,9 @@ AdobeAnalytics.Cubes(optional <b>options</b> as nullable record) as table
 
 ## About
 
-Returns a table of multidimensional packages from Adobe Analyics. An optional record parameter, `options`, may be specified to control the following options:
+Returns a table of multidimensional packages from Adobe Analytics. An optional record parameter, `options`, may be specified to control the following options:
 
 * `HierarchicalNavigation`: A logical (true/false) that sets whether to view the tables grouped by their schema names (default is false).
 * `MaxRetryCount`: The number of retries to perform when polling for the result of the query. The default value is 120.
 * `RetryInterval`: The duration of time between retry attempts. The default value is 1 second.
-* `Implementation`: Specifies the internal database provider implementation to use. Valid values are: "IBM" and "Microsoft".
+* `Implementation`: Specifies Adobe Analytics API version. Valid values are: "2.0". Default uses API version 1.4.

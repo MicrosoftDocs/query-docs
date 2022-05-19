@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.From"
 title: "Date.From | Microsoft Docs"
-ms.date: 4/13/2022
+ms.date: 5/19/2022
 ms.service: powerquery
 
 ms.reviewer: dougklo
@@ -25,7 +25,7 @@ Returns a `date` value from the given `value`. An optional `culture`> may also b
 * `text`: A `date` value from textual representation. Refer to [Date.FromText](date-fromtext.md) for details.
 * `datetime`: The date component of the `value`.
 * `datetimezone`: The date component of the local datetime equivalent of `value`.
-* `number`: The date component of the datetime equivalent to the OLE Automation Date expressed by `value`.
+* `number`: The date component of the datetime equivalent of the OLE Automation Date expressed by `value`.
 
 If `value` is of any other type, an error is returned.
 

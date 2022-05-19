@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.FuzzyJoin"
 title: "Table.FuzzyJoin | Microsoft Docs"
-ms.date: 3/10/2022
+ms.date: 5/19/2022
 ms.service: powerquery
 
 ms.reviewer: gepopell
@@ -54,23 +54,23 @@ Left inner fuzzy join of two tables based on [FirstName]
 Table.FuzzyJoin(
     Table.FromRecords(
         {
-            [CustomerID = 1, FirstName1 = "Bob", Phone = "555-1234"], 
-            [CustomerID = 2, FirstName1 = "Robert", Phone = "555-4567"] 
+            [CustomerID = 1, FirstName1 = "Bob", Phone = "555-1234"],
+            [CustomerID = 2, FirstName1 = "Robert", Phone = "555-4567"]
         },
         type table [CustomerID = nullable number, FirstName1 = nullable text, Phone = nullable text]
     ),
-    {"FirstName1"}, 
+    {"FirstName1"},
     Table.FromRecords(
         {
-            [CustomerStateID = 1, FirstName2 = "Bob", State = "TX"], 
+            [CustomerStateID = 1, FirstName2 = "Bob", State = "TX"],
             [CustomerStateID = 2, FirstName2 = "bOB", State = "CA"]
         },
         type table [CustomerStateID = nullable number, FirstName2 = nullable text, State = nullable text]
     ),
-    {"FirstName2"}, 
-    JoinKind.LeftOuter, 
-    [IgnoreCase = true, IgnoreSpace = false] 
-) 
+    {"FirstName2"},
+    JoinKind.LeftOuter,
+    [IgnoreCase = true, IgnoreSpace = false]
+)
 ```
 
 **Output**

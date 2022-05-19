@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DateTime.From"
 title: "DateTime.From | Microsoft Docs"
-ms.date: 4/13/2022
+ms.date: 5/19/2022
 ms.service: powerquery
 
 ms.reviewer: dougklo
@@ -26,7 +26,7 @@ Returns a `datetime` value from the given `value`. An optional `culture` may als
 * `date`: A `datetime` with `value` as the date component and `12:00:00 AM` as the time component.
 * `datetimezone`: The local `datetime` equivalent of `value`.
 * `time`: A `datetime` with the date equivalent of the OLE Automation Date of `0` as the date component and `value` as the time component.
-* `number`: A `datetime` equivalent the OLE Automation Date expressed by `value`.
+* `number`: A `datetime` equivalent of the OLE Automation Date expressed by `value`.
 
 If `value` is of any other type, an error is returned.
 
