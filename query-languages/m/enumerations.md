@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Enumerations"
 title: "Accessing data enumerations | Microsoft Docs"
-ms.date: 5/17/2022
+ms.date: 5/19/2022
 ms.service: powerquery
 ms.reviewer: ehvonleh
 ms.topic: reference
@@ -36,6 +36,7 @@ The Power Query M formula language includes these enumerations.
 |[PercentileMode.Type](percentilemode-type.md) | Specifies the percentile mode type.|
 |[Precision.Type](precision-type.md)|Specifies the precision of comparison.|
 |[QuoteStyle.Type](quotestyle-type.md) | Specifies the quote style.|
+|[RankKind.Type](rankkind-type.md)|Specifies the precise ranking method.|
 |[RelativePosition.Type](relativeposition-type.md) | Indicates whether indexing should be done from the start or end of the input.|
 |[RoundingMode.Type](roundingmode-type.md)|Specifies rounding direction when there is a tie between the possible numbers to round to.|
 |[SapBusinessWarehouseExecutionMode.Type](sapbusinesswarehouseexecutionmode-type.md)|Specifies valid options for SAP Business Warehouse execution mode option.|
