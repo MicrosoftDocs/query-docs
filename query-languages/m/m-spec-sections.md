@@ -7,7 +7,7 @@ ms.service: powerquery
 
 ms.topic: article
 ms.date: 8/23/2021
-ms.author: bezhan
+ms.author: dougklo
 ---
 
 # Sections

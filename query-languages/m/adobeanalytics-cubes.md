@@ -3,10 +3,10 @@ description: "Learn more about: AdobeAnalytics.Cubes"
 title: "AdobeAnalytics.Cubes | Microsoft Docs"
 ms.date: 5/19/2022
 ms.service: powerquery
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 ---
 # AdobeAnalytics.Cubes
 
