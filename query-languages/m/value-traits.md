@@ -4,10 +4,10 @@ title: "Value.Traits | Microsoft Docs"
 ms.date: 9/22/2020
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # Value.Traits

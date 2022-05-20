@@ -3,10 +3,10 @@ description: "Learn more about: Comments"
 title: "Comments | Microsoft Docs"
 ms.date: 12/12/2018
 ms.service: powerquery
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # Comments

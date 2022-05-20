@@ -3,10 +3,10 @@ description: "Learn more about: DB2.Database"
 title: "DB2.Database | Microsoft Docs"
 ms.date: 02/03/2021
 ms.service: powerquery
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # DB2.Database

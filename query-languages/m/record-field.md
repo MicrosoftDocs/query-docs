@@ -4,10 +4,10 @@ title: "Record.Field | Microsoft Docs"
 ms.date: 3/14/2022
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # Record.Field

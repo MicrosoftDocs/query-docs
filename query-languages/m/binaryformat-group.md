@@ -1,13 +1,13 @@
 ---
 description: "Learn more about: BinaryFormat.Group"
 title: "BinaryFormat.Group | Microsoft Docs"
-ms.date: 3/7/2022
+ms.date: 5/19/2022
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # BinaryFormat.Group
@@ -82,13 +82,13 @@ The following example illustrates the item value transform and default item valu
 ```powerquery-m
 let
     b = #binary({
-        1, 101, 
-        1, 102 
+        1, 101,
+        1, 102
     }),
     f = BinaryFormat.Group(
         BinaryFormat.Byte,
         {
-            {1, BinaryFormat.Byte, BinaryOccurrence.Repeating, 
+            {1, BinaryFormat.Byte, BinaryOccurrence.Repeating,
               0, (list) => List.Sum(list)},
             {2, BinaryFormat.Byte, BinaryOccurrence.Optional, 123}
         }

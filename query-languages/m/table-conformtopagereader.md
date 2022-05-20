@@ -4,10 +4,10 @@ title: "Table.ConformToPageReader | Microsoft Docs"
 ms.date: 8/21/2020
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # Table.ConformToPageReader

@@ -3,10 +3,10 @@ description: "Learn more about: Expression.Evaluate"
 title: "Expression.Evaluate | Microsoft Docs"
 ms.date: 3/11/2022
 ms.service: powerquery
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # Expression.Evaluate

@@ -4,10 +4,10 @@ title: "Combiner.CombineTextByPositions | Microsoft Docs"
 ms.date: 7/29/2019
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # Combiner.CombineTextByPositions
