@@ -1436,12 +1436,12 @@ items:
         href: value-traits.md
       - name: Value.Type
         href: value-type.md
-      - name: Variable.Value
-        href: variable-value.md
       - name: Value.VersionIdentity
         href: value-versionidentity.md
       - name: Value.Versions
         href: value-versions.md
+      - name: Variable.Value
+        href: variable-value.md
   - name: Enumerations
     items:
     - name: Enumerations
