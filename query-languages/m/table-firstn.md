@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.FirstN"
 title: "Table.FirstN | Microsoft Docs"
-ms.date: 3/10/2022
+ms.date: 5/19/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -72,7 +72,7 @@ Table.FirstN(
 
 ```powerquery-m
 Table.FromRecords({
-    [a = 1, b = 2], 
+    [a = 1, b = 2],
     [a = 3, b = 4]
 })
 ```

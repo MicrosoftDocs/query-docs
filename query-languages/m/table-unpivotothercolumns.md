@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.UnpivotOtherColumns"
 title: "Table.UnpivotOtherColumns | Microsoft Docs"
-ms.date: 3/10/2022
+ms.date: 5/19/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -32,7 +32,7 @@ Translates all columns other than a specified set into attribute-value pairs, co
 Table.UnpivotOtherColumns(
     Table.FromRecords({
         [key = "key1", attribute1 = 1, attribute2 = 2, attribute3 = 3],
-        [key = "key2", attribute1 = 4, attribute2 = 5, attribute3 = 6]  
+        [key = "key2", attribute1 = 4, attribute2 = 5, attribute3 = 6]
     }),
     {"key"},
     "column1",

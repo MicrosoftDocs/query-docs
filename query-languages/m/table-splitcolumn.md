@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.SplitColumn"
 title: "Table.SplitColumn | Microsoft Docs"
-ms.date: 3/10/2022
+ms.date: 5/19/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -29,7 +29,7 @@ Split the [Name] column at position of "i" into two columns
 **Usage**
 
 ```powerquery-m
-let 
+let
     Customers = Table.FromRecords({
         [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
         [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
