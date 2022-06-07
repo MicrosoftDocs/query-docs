@@ -1,1 +1,1 @@
-_Examples in this article can be used with the Power BI Desktop sample model. To get the model, see [DAX sample model](https://aka.ms/dax-docs-samples)._
+_Examples in this article can be used with the sample Adventure Works DW 2020 Power BI Desktop model. To get the model, see [DAX sample model](https://aka.ms/dax-docs-samples)._
