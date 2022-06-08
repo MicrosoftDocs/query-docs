@@ -51,12 +51,12 @@ USA     |   CA      |    5     |   500
 USA     |   WA      |    10     |  900
 
 ```dax
-SELECTCOLUMNS(Info, "StateCountry", [State]&", "&[Country])
+SELECTCOLUMNS(Info, "Country, State", [Country]&", "&[State])
 ```
 
 Returns,
 
-|StateCountry |
+|Country,State |
 |---------|
 |IND, JK     |
 |IND, MH     |
