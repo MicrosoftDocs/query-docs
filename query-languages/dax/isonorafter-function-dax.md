@@ -41,7 +41,7 @@ This function is similar to [ISAFTER](isafter-function-dax.md). The difference i
 
 ## Example
 
-Table name: 'Info'  
+For the following table named, Info:  
   
 |Country|State|Count|Total|  
 |-----------|---------|---------|---------|  

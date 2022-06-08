@@ -12,7 +12,7 @@ recommendations: false
 ---
 # NATURALINNERJOIN
   
-Performs an inner join of a table with another table. The tables are joined on common columns (by name) in the two tables. If the two tables have no common column names, an error is returned.  
+Performs an inner join of a table with another table.
   
 ## Syntax  
   
@@ -32,6 +32,8 @@ NATURALINNERJOIN(<LeftTable>, <RightTable>)
 A table which includes only rows for which the values in the common columns specified are present in both tables. The table returned will have the common columns from the left table and other columns from both the tables.  
   
 ## Remarks
+
+- Tables are joined on common columns (by name) in the two tables. If the two tables have no common column names, an error is returned.  
 
 - There is no sort order guarantee for the results.  
   

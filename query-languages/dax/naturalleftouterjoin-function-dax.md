@@ -12,7 +12,7 @@ recommendations: false
 ---
 # NATURALLEFTOUTERJOIN
   
-Performs a join of the LeftTable with the RightTable. The tables are joined on common columns (by name) in the two tables. If the two tables have no common column names, an error is returned.  
+Performs a join of the LeftTable with the RightTable by using the Left Outer Join semantics.
   
 ## Syntax  
   
@@ -32,6 +32,8 @@ NATURALLEFTOUTERJOIN(<LeftTable>, <RightTable>)
 A table which includes only rows from RightTable for which the values in the common columns specified are also present in LeftTable. The table returned will have the common columns from the left table and the other columns from both the tables.  
   
 ## Remarks
+
+- Tables are joined on common columns (by name) in the two tables. If the two tables have no common column names, an error is returned.
 
 - There is no sort order guarantee for the results.  
   
