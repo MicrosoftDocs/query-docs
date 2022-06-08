@@ -12,20 +12,20 @@ recommendations: false
 ---
 # CONTAINSROW function
 
-Returns TRUE if a row of values exists or contained in a table, otherwise returns FALSE.
+Returns TRUE if there exists at least one row where all columns have specified values.
 
 ## Syntax
 
 ```dax
-CONTAINSROW(<tableExpr>, <scalarExpr>[, <scalarExpr>, …]) 
+CONTAINSROW(<Table>, <Value> [, <Value> [, …] ] ) 
 ```
   
 ### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  
-|scalarExprN|Any valid DAX expression that returns a scalar value.|  
-|tableExpr|Any valid DAX expression that returns a table of data.|  
+|Table|A table to test.|  
+|Value|Any valid DAX expression that returns a scalar value.|  
 
 ## Return value
 
@@ -51,23 +51,7 @@ TRUE or FALSE.
 
 ### Example 1
 
-The following equivalent DAX queries:
-
-```dax
-EVALUATE
-FILTER (
-    ALL ( Product[Color] ),
-    [Color]
-        IN {
-        "Red",
-        "Yellow",
-        "Blue"
-    }
-)
-ORDER BY [Color]
-```
-
-and
+The following DAX queries:
 
 ```dax
 EVALUATE
@@ -116,48 +100,6 @@ The following equivalent DAX queries:
 ```dax
 EVALUATE
 FILTER (
-    SUMMARIZE (
-        Product,
-        [Color],
-        [Subcategory]
-    ),
-    ( [Color], [Subcategory] )
-        IN {
-        ( "Black", "Road Frames" )
-    }
-)
-```
-
-and
-
-```dax
-EVALUATE
-FILTER (
-    SUMMARIZE (
-        Product,
-        [Color],
-        [Subcategory]
-    ),
-    ( [Color], [Subcategory] )
-        IN {
-        ( "Black", "Road Frames" )
-    }
-)
-```
-
-Return the following table:
-
-[Color]  | [Size] |
----------|---------
-Black     |  Road Frames
-
-### Example 3
-
-The following equivalent DAX queries:
-
-```dax
-EVALUATE
-FILTER (
     ALL ( Product[Color] ),
     NOT [Color]
         IN {
@@ -198,3 +140,8 @@ NA   |
 Silver  |
 Silver\Black  |
 White |
+
+## See also
+
+[IN operator](dax-operator-reference.md#logical-operators)  
+[DAX queries](dax-queries.md)

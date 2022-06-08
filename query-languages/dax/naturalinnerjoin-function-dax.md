@@ -2,7 +2,7 @@
 description: "Learn more about: NATURALINNERJOIN"
 title: "NATURALINNERJOIN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/08/2020
+ms.date: 06/08/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -17,15 +17,15 @@ Performs an inner join of a table with another table. The tables are joined on c
 ## Syntax  
   
 ```dax
-NATURALINNERJOIN(<leftJoinTable>, <rightJoinTable>)  
+NATURALINNERJOIN(<LeftTable>, <RightTable>)  
 ```
   
 ### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  
-|leftJoinTable|A table expression defining the table on the left side of the join.|  
-|rightJoinTable|A table expression defining the table on the right side of the join.|  
+|LeftTable|A table expression defining the table on the left side of the join.|  
+|RightTable|A table expression defining the table on the right side of the join.|  
   
 ## Return value
 
@@ -42,3 +42,7 @@ A table which includes only rows for which the values in the common columns spec
 - Strict comparison semantics are used during join. There is no type coercion; for example, 1 does not equal 1.0.  
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
+## See also
+
+[NATURALLEFTOUTERJOIN](naturalleftouterjoin-function-dax.md)

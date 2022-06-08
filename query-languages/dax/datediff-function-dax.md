@@ -2,7 +2,7 @@
 description: "Learn more about: DATEDIFF"
 title: "DATEDIFF function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/07/2022
+ms.date: 06/08/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -12,7 +12,7 @@ recommendations: false
 ---
 # DATEDIFF
   
-Returns the count of interval boundaries crossed between two dates.  
+Returns the number of interval boundaries between two dates.  
   
 ## Syntax  
   
@@ -25,19 +25,19 @@ DATEDIFF(<Date1>, <Date2>, <Interval>)
 |Term|Definition|  
 |--------|--------------|  
 |Date1|A scalar datetime value.|  
-|Date2|A scalar datetime value Return value.|  
+|Date2|A scalar datetime value.|  
 |Interval|The interval to use when comparing dates. The value can be one of the following:<br /><br />-   SECOND<br />-   MINUTE<br />-   HOUR<br />-   DAY<br />-   WEEK<br />-  MONTH<br />-   QUARTER<br />-   YEAR|  
   
 ## Return value
 
-The count of interval boundaries crossed between two dates.  
+The count of interval boundaries between two dates.  
   
 ## Remarks
 
 A positive result is returned if Date2 is larger than Date1.
 A negative result is returned if Date1 is larger than Date2.
   
-## Example  
+## Example
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
 
@@ -66,3 +66,5 @@ Returns the following:
 |Month     |    29     |
 |Week    |    130     |
 |Day    |      914   |
+
+```
