@@ -40,7 +40,7 @@ SELECTCOLUMNS has the same signature as ADDCOLUMNS, and has the same behavior ex
   
 ## Example  
 
-For the following table named **Info**:
+For the following table named **Customer**:
 
 Country  |State  |Count  |Total  
 ---------|---------|---------|---------
@@ -51,12 +51,12 @@ USA     |   CA      |    5     |   500
 USA     |   WA      |    10     |  900
 
 ```dax
-SELECTCOLUMNS(Info, "Country, State", [Country]&", "&[State])
+SELECTCOLUMNS(Customer, "Country, State", [Country]&", "&[State])
 ```
 
 Returns,
 
-|Country,State |
+|Country, State |
 |---------|
 |IND, JK     |
 |IND, MH     |
