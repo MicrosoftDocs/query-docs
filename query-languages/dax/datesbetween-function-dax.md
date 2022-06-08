@@ -2,7 +2,7 @@
 description: "Learn more about: DATESBETWEEN"
 title: "DATESBETWEEN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/07/2020
+ms.date: 06/08/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,16 +22,16 @@ This function is suited to pass as a filter to the [CALCULATE](calculate-functio
 ## Syntax
 
 ```dax
-DATESBETWEEN(<dates>, <start_date>, <end_date>)
+DATESBETWEEN(<Dates>, <StartDate>, <EndDate>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|dates|A date column.|
-|start_date|A date expression.|
-|end_date|A date expression.|
+|Dates|A date column.|
+|StartDate|A date expression.|
+|EndDate|A date expression.|
 
 ## Return value
 
@@ -39,15 +39,15 @@ A table containing a single column of date values.
 
 ## Remarks
 
-- In the most common use case, **dates** is a reference to the date column of a marked date table.
+- In the most common use case, **Dates** is a reference to the date column of a marked date table.
 
-- If **start_date** is BLANK, then **start_date** will be the earliest value in the **dates** column.
+- If **StartDate** is BLANK, then **StartDate** will be the earliest value in the **Dates** column.
 
-- If **end_date** is BLANK, then **end_date** will be the latest value in the **dates** column.
+- If **EndDate** is BLANK, then **EndDate** will be the latest value in the **Dates** column.
 
-- Dates used as the **start_date** and **end_date** are inclusive. So, for example, if the **start_date** value is July 1, 2019, then that date will be included in the returned table (providing the date exists in the **dates** column).
+- Dates used as the **StartDate** and **EndDate** are inclusive. So, for example, if the **StartDate** value is July 1, 2019, then that date will be included in the returned table (providing the date exists in the **Dates** column).
 
-- The returned table can only contain dates stored in the **dates** column. So, for example, if the **dates** column starts from July 1, 2017, and the **start_date** value is July 1, 2016, the returned table will start from July 1, 2017.
+- The returned table can only contain dates stored in the **Dates** column. So, for example, if the **Dates** column starts from July 1, 2017, and the **StartDate** value is July 1, 2016, the returned table will start from July 1, 2017.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
