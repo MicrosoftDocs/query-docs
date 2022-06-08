@@ -66,5 +66,3 @@ Returns the following:
 |Month     |    29     |
 |Week    |    130     |
 |Day    |      914   |
-
-```
