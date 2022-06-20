@@ -2,7 +2,7 @@
 description: "Learn more about: New DAX functions"
 title: "New DAX functions | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/20/2022
+ms.date: 10/05/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -22,12 +22,12 @@ While functions and functionality are being updated all the time, only those upd
 
 |Function  |Month  | Description |
 |---------|---------|---------|
-|[NETWORKDAYS](networkdays-dax.md)| July, 2021 |  Returns the number of whole workdays between two dates. |
 |[BITAND](bitand-function-dax.md)      | November, 2021 | Returns a bitwise 'AND' of two numbers.      |
 |[BITLSHIFT](bitlshift-function-dax.md)      | November, 2021 | Returns a number shifted left by the specified number of bits.       |
 |[BITOR](bitor-function-dax.md)      | November, 2021 | Returns a bitwise 'OR' of two numbers.       |
 |[BITRSHIFT](bitrshift-function-dax.md)      | November, 2021| Returns a number shifted right by the specified number of bits.         |
 |[BITXOR](bitxor-function-dax.md)      | November, 2021 | Returns a bitwise 'XOR' of two numbers.        |
+|[IF.EAGER](if-eager-function-dax.md)     | March, 2021 | Checks a condition, and returns one value when TRUE, otherwise it returns a second value. |
 
 ## Updated functions
 
@@ -37,3 +37,5 @@ While functions and functionality are being updated all the time, only those upd
 |[CALCULATETABLE](calculatetable-function-dax.md)| September, 2021 |Support for aggregation functions in boolean filter expressions.|
 |[FORMAT](format-function-dax.md)| September, 2021 |Additional locale_name parameter that specifies the name of a locale to be used by format_string.|
 |[XIRR](xirr-function-dax.md)| September, 2021 |Additional alternateResult parameter that specifies a result to be returned instead of an error if XIRR cannot determine a solution.|
+|[CROSSFILTER](crossfilter-function.md)| April, 2021 |Additional options for the Direction parameter.|
+|[CALCULATE](calculate-function-dax.md)| March, 2021 |Support for OR (\|\|) operator when there are multiple filters.|
