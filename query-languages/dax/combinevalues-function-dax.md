@@ -2,6 +2,7 @@
 description: "Learn more about: COMBINEVALUES"
 title: "COMBINEVALUES function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 03/16/2022
 ms.topic: reference
 author: minewiskan

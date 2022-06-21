@@ -2,6 +2,7 @@
 description: "Learn more about: LOOKUPVALUE"
 title: "LOOKUPVALUE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 09/02/2021
 ms.reviewer: owend
 ms.topic: reference

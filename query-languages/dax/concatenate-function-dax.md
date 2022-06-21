@@ -2,6 +2,7 @@
 description: "Learn more about: CONCATENATE"
 title: "CONCATENATE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 03/16/2022
 ms.reviewer: owend
 ms.topic: reference

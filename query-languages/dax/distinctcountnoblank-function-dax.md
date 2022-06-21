@@ -2,7 +2,8 @@
 description: "Learn more about: DISTINCTCOUNTNOBLANK"
 title: "DISTINCTCOUNTNOBLANK function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/07/2022
+ms.subservice: dax 
+ms.date: 06/21/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan

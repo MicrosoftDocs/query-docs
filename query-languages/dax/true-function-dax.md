@@ -2,6 +2,7 @@
 description: "Learn more about: TRUE"
 title: "TRUE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 05/03/2021
 ms.reviewer: owend
 ms.topic: reference

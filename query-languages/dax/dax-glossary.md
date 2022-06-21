@@ -2,6 +2,7 @@
 title: "DAX glossary | Microsoft Docs"
 description: Describes common terms used in the Data Analysis Expressions (DAX) language.
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 09/08/2021
 ms.reviewer: owend
 ms.topic: reference

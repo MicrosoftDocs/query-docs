@@ -1,7 +1,8 @@
 ---
 description: "Learn more about: DB"
 title: "DB function (DAX) | Microsoft Docs"
-ms.service: powerbi
+ms.service: powerbi 
+ms.subservice: dax
 ms.date: 01/06/2021
 ms.reviewer: owend
 ms.topic: reference

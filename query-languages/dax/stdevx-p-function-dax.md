@@ -2,6 +2,7 @@
 description: "Learn more about: STDEVX.P"
 title: "STDEVX.P function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference

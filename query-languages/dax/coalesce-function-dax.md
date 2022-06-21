@@ -2,6 +2,7 @@
 description: "Learn more about: COALESCE"
 title: "COALESCE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 03/09/2020
 ms.reviewer: owend
 ms.topic: reference
