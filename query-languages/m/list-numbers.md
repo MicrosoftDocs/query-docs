@@ -4,10 +4,10 @@ title: "List.Numbers | Microsoft Docs"
 ms.date: 3/8/2022
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # List.Numbers

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Binary functions"
 title: "Binary functions | Microsoft Docs"
-ms.date: 5/16/2022
+ms.date: 5/19/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -52,7 +52,8 @@ These functions create and manipulate binary data.
 ## Binary data
   
 |Name|Description|  
-|------------|---------------|  
+|------------|---------------|
+|[Binary.ApproximateLength](binary-approximatelength.md)|Returns the approximate length of the binary.|
 |[Binary.Buffer](binary-buffer.md)|Buffers the binary value in memory. The result of this call is a stable binary value, which means it will have a deterministic length and order of bytes.|  
 |[Binary.Combine](binary-combine.md)|Combines a list of binaries into a single binary.|
 |[Binary.Compress](binary-compress.md)|Compresses a binary value using the given compression type.|

@@ -4,10 +4,10 @@ title: "Cdm.Contents | Microsoft Docs"
 ms.date: 03/18/2020
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # Cdm.Contents

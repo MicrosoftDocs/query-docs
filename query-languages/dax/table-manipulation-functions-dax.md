@@ -35,7 +35,7 @@ These functions return a table or manipulate existing tables.
 |[IGNORE](ignore-function-dax.md)      |   Modifies SUMMARIZECOLUMNS by omitting specific expressions from the BLANK/NULL evaluation.      |
 |[INTERSECT](intersect-function-dax.md)       |   Returns the row intersection of two tables, retaining duplicates.       |
 |[NATURALINNERJOIN](naturalinnerjoin-function-dax.md)     |  Performs an inner join of a table with another table.        |
-|[NATURALLEFTOUTERJOIN](naturalleftouterjoin-function-dax.md)     |  Performs an inner join of a table with another table.       |
+|[NATURALLEFTOUTERJOIN](naturalleftouterjoin-function-dax.md)     |  Performs a join of the LeftTable with the RightTable.       |
 |[ROLLUP](rollup-function-dax.md)    |  Modifies the behavior of SUMMARIZE by adding rollup rows to the result on columns defined by the groupBy_columnName parameter.     |
 |[ROLLUPADDISSUBTOTAL](rollupaddissubtotal-function-dax.md)    | Modifies the behavior of SUMMARIZECOLUMNS by adding rollup/subtotal rows to the result based on the groupBy_columnName columns.        |
 |[ROLLUPISSUBTOTAL](rollupissubtotal-function-dax.md)    |  Pairs rollup groups with the column added by ROLLUPADDISSUBTOTAL within an ADDMISSINGITEMS expression.      |

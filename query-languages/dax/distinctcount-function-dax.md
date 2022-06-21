@@ -3,7 +3,7 @@ description: "Learn more about: DISTINCTCOUNT"
 title: "DISTINCTCOUNT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax 
-ms.date: 01/06/2021
+ms.date: 06/21/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -35,7 +35,7 @@ The number of distinct values in *column*.
 
 - The only argument allowed to this function is a column. You can use columns containing any type of data. When the function finds no rows to count, it returns a BLANK, otherwise it returns the count of distinct values.  
 
-- DISTINCTCOUNT function includes the BLANK value. To skip the BLANK value, use the [DISTINCTCOUNTNOBLANK](distinctcountnoblank-function-dax.md) function.
+- DISTINCTCOUNT function counts the BLANK value. To skip the BLANK value, use the [DISTINCTCOUNTNOBLANK](distinctcountnoblank-function-dax.md) function.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 

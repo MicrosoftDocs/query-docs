@@ -4,10 +4,10 @@ title: "Error.Record | Microsoft Docs"
 ms.date: 1/24/2022
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # Error.Record

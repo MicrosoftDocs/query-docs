@@ -3,7 +3,7 @@ description: "Learn more about: CURRENCY"
 title: "CURRENCY function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax 
-ms.date: 04/14/2021
+ms.date: 06/08/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -49,4 +49,4 @@ Convert number 1234.56 to currency data type.
 = CURRENCY(1234.56)  
 ```
 
-Returns the value $1234.5600.
+Returns value 1234.56000.

@@ -3,7 +3,7 @@ description: "Learn more about: SUMX"
 title: "SUMX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax 
-ms.date: 08/04/2020
+ms.date: 06/07/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -44,7 +44,7 @@ A decimal number.
 
 ## Example
 
-The following example first filters the table, InternetSales, on the expression, `ShippingTerritoryID = 5`, and then returns the sum of all values in the column, Freight. In other words, the expression returns the sum of freight charges for only the specified sales area.  
+The following example first filters the table, InternetSales, on the expression, 'InternetSales[SalesTerritoryID] = 5`, and then returns the sum of all values in the Freight column. In other words, the expression returns the sum of freight charges for only the specified sales area.  
   
 ```dax
 = SUMX(FILTER(InternetSales, InternetSales[SalesTerritoryID]=5),[Freight])  

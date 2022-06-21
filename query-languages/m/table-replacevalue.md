@@ -1,13 +1,13 @@
 ---
 description: "Learn more about: Table.ReplaceValue"
 title: "Table.ReplaceValue | Microsoft Docs"
-ms.date: 3/10/2022
+ms.date: 5/19/2022
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # Table.ReplaceValue
@@ -45,7 +45,7 @@ Table.ReplaceValue(
 
 ```powerquery-m
 Table.FromRecords({
-    [a = 1, b = "hello"], 
+    [a = 1, b = "hello"],
     [a = 3, b = "world"]
 })
 ```

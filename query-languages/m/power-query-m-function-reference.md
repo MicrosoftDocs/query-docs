@@ -3,10 +3,10 @@ description: "Learn more about: Power Query M function reference"
 title: "Power Query M function reference | Microsoft Docs"
 ms.date: 7/31/2019
 ms.service: powerquery
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # Power Query M function reference

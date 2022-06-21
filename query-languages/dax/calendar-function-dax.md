@@ -3,7 +3,7 @@ description: "Learn more about: CALENDAR"
 title: "CALENDAR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax 
-ms.date: 07/05/2020
+ms.date: 06/07/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -40,13 +40,13 @@ Returns a table with a single column named "Date" containing a contiguous set of
   
 ## Examples
 
-The following formula returns a table with dates between January 1st, 2005 and December 31st, 2015.  
+The following formula returns a table with dates between January 1st, 2015 and December 31st, 2021.  
   
 ```dax
-= CALENDAR (DATE (2005, 1, 1), DATE (2015, 12, 31))
+= CALENDAR (DATE (2015, 1, 1), DATE (2021, 12, 31))
 ```
   
-For a data model which includes actual sales data and future sales forecasts. The following expression returns the date table covering the range of dates in these two tables.  
+For a data model which includes actual sales data and future sales forecasts, the following expression returns a date table covering the range of dates in both the Sales and Forecast tables.  
   
 ```dax
 = CALENDAR (MINX (Sales, [Date]), MAXX (Forecast, [Date]))

@@ -21,7 +21,7 @@ These functions help you create calculations based on dates and time. Many of th
 |[CALENDAR](calendar-function-dax.md)     |   Returns a table with a single column named "Date" that contains a contiguous set of dates.      |
 |[CALENDARAUTO](calendarauto-function-dax.md)       |   Returns a table with a single column named "Date" that contains a contiguous set of dates.      |
 |[DATE](date-function-dax.md)      |   Returns the specified date in datetime format.       |
-|[DATEDIFF](datediff-function-dax.md)     |  Returns the count of interval boundaries crossed between two dates.        |
+|[DATEDIFF](datediff-function-dax.md)     |  Returns the number of interval boundaries between two dates.         |
 |[DATEVALUE](datevalue-function-dax.md)     |   Converts a date in the form of text to a date in datetime format.       |
 |[DAY](day-function-dax.md)     |   Returns the day of the month, a number from 1 to 31.       |
 |[EDATE](edate-function-dax.md)     |   Returns the date that is the indicated number of months before or after the start date.      |

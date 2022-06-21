@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table functions"
 title: "Table functions | Microsoft Docs"
-ms.date: 5/16/2022
+ms.date: 5/19/2022
 ms.service: powerquery
 ms.reviewer: ehvonleh
 ms.topic: reference
@@ -164,6 +164,7 @@ These functions create and manipulate table values.
 |[Table.MaxN](table-maxn.md)|Returns the largest N rows from a table. After the rows are sorted, the countOrCondition parameter must be specified to further filter the result.|
 |[Table.Min](table-min.md)|Returns the smallest row or rows from a table using a comparisonCriteria.|
 |[Table.MinN](table-minn.md)|Returns the smallest N rows in the given table. After the rows are sorted, the countOrCondition parameter must be specified to further filter the result.|
+|[Table.AddRankColumn](table-addrankcolumn.md)|Appends a column with the ranking of one or more other columns.|
 |[Table.Sort](table-sort.md)|Sorts the rows in a table using a comparisonCriteria or a default ordering if one is not specified.|
 
 ## Other

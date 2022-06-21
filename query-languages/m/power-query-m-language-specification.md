@@ -3,10 +3,10 @@ description: "Learn more about: Power Query M language specification"
 title: "Power Query M language specification | Microsoft Docs"
 ms.date: 4/7/2020
 ms.service: powerquery
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # Power Query M language specification

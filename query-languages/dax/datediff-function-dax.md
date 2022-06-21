@@ -3,7 +3,7 @@ description: "Learn more about: DATEDIFF"
 title: "DATEDIFF function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax 
-ms.date: 07/05/2020
+ms.date: 06/08/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -13,53 +13,57 @@ recommendations: false
 ---
 # DATEDIFF
   
-Returns the count of interval boundaries crossed between two dates.  
+Returns the number of interval boundaries between two dates.  
   
 ## Syntax  
   
 ```dax
-DATEDIFF(<start_date>, <end_date>, <interval>)  
+DATEDIFF(<Date1>, <Date2>, <Interval>)  
 ```
   
 ### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  
-|start_date|A scalar datetime value.|  
-|end_date|A scalar datetime value Return value.|  
-|interval|The interval to use when comparing dates. The value can be one of the following:<br /><br />-   SECOND<br />-   MINUTE<br />-   HOUR<br />-   DAY<br />-   WEEK<br />-   MONTH<br />-   QUARTER<br />-   YEAR|  
+|Date1|A scalar datetime value.|  
+|Date2|A scalar datetime value.|  
+|Interval|The interval to use when comparing dates. The value can be one of the following:<br /><br />-   SECOND<br />-   MINUTE<br />-   HOUR<br />-   DAY<br />-   WEEK<br />-  MONTH<br />-   QUARTER<br />-   YEAR|  
   
 ## Return value
 
-The count of interval boundaries crossed between two dates.  
+The count of interval boundaries between two dates.  
   
 ## Remarks
 
-An error is returned if start_date is larger than end_date.  
+A positive result is returned if Date2 is larger than Date1.
+A negative result is returned if Date1 is larger than Date2.
   
-## Example  
-  
-|Date|  
-|--------|  
-|2012-12-31 23:59:59|  
-|2013-01-01 00:00:00|  
-  
-The following all return 1:  
-  
+## Example
+
+[!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
+
+The following DAX query:
+
 ```dax
-DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date]), SECOND )  
-  
-DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date]), MINUTE )
-  
-DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date]), HOUR )
-  
-DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date]), DAY )
-  
-DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date]), WEEK )
-  
-DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date]), MONTH )
-  
-DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date]), QUARTER )
-  
-DATEDIFF(MIN( Calendar[Date] ), MAX( Calendar[Date]), YEAR ) 
+EVALUATE
+VAR StartDate =  DATE ( 2019, 07, 01 )
+VAR EndDate =    DATE ( 2021, 12, 31 )
+RETURN
+    {
+        ( "Year",     DATEDIFF ( StartDate, EndDate, YEAR ) ),
+        ( "Quarter",  DATEDIFF ( StartDate, EndDate, QUARTER ) ),
+        ( "Month",    DATEDIFF ( StartDate, EndDate, MONTH ) ),
+        ( "Week",     DATEDIFF ( StartDate, EndDate, WEEK ) ),
+        ( "Day",      DATEDIFF ( StartDate, EndDate, DAY ) )
+    }   
 ```
+
+Returns the following:
+
+|Value1  |Value2  |
+|---------|---------|
+|Year     |   2      |
+|Quarter     |    9     |
+|Month     |    29     |
+|Week    |    130     |
+|Day    |      914   |

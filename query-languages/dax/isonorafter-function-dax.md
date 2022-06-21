@@ -3,7 +3,7 @@ description: "Learn more about: ISONORAFTER"
 title: "ISONORAFTER function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax 
-ms.date: 08/31/2021
+ms.date: 06/21/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -28,7 +28,7 @@ ISONORAFTER(<scalar_expression>, <scalar_expression>[, sort_order [, <scalar_exp
 |Term|Definition|  
 |--------|--------------|  
 |scalar expression|Any expression that returns a scalar value like a column reference or integer or string value. Typically the first parameter is a column reference and the second parameter is a scalar value.|  
-|sort order|(optional) The order in which the column is sorted. Can be ascending (ASC) or descending (DEC). By default the sort order is ascending.|  
+|sort order|(optional) The order in which the column is sorted. Can be ascending (ASC) or descending (DESC). By default the sort order is ascending.|  
   
 ## Return value
 
@@ -42,7 +42,7 @@ This function is similar to [ISAFTER](isafter-function-dax.md). The difference i
 
 ## Example
 
-Table name: 'Info'  
+For the following table named, Info:  
   
 |Country|State|Count|Total|  
 |-----------|---------|---------|---------|  

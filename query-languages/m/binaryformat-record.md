@@ -1,13 +1,13 @@
 ---
 description: "Learn more about: BinaryFormat.Record"
 title: "BinaryFormat.Record | Microsoft Docs"
-ms.date: 3/7/2022
+ms.date: 5/19/2022
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # BinaryFormat.Record
@@ -15,7 +15,7 @@ ms.author: bezhan
 ## Syntax
 
 <pre>
-BinaryFormat.Record(<b>record</b> as record) as function 
+BinaryFormat.Record(<b>record</b> as record) as function
 </pre>
   
 ## About
@@ -31,7 +31,7 @@ Read a record containing one 16-bit integer and one 32-bit integer.
 ```powerquery-m
 let
     binaryData = #binary({
-        0x00, 0x01, 
+        0x00, 0x01,
         0x00, 0x00, 0x00, 0x02
     }),
     recordFormat = BinaryFormat.Record([

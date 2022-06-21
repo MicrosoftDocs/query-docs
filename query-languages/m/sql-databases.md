@@ -3,10 +3,10 @@ description: "Learn more about: Sql.Databases"
 title: "Sql.Databases | Microsoft Docs"
 ms.date: 11/23/2020
 ms.service: powerquery
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 ---
 # Sql.Databases
 

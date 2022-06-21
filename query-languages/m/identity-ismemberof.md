@@ -4,10 +4,10 @@ title: "Identity.IsMemberOf | Microsoft Docs"
 ms.date: 3/28/2019
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # Identity.IsMemberOf

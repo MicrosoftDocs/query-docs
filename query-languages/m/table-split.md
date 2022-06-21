@@ -1,13 +1,13 @@
 ---
 description: "Learn more about: Table.Split"
 title: "Table.Split | Microsoft Docs"
-ms.date: 3/10/2022
+ms.date: 5/19/2022
 ms.service: powerquery
 
-ms.reviewer: gepopell
+ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
-ms.author: bezhan
+ms.author: dougklo
 
 ---
 # Table.Split
@@ -29,7 +29,7 @@ Split a table of five records into tables with two records each.
 **Usage**
 
 ```powerquery-m
-let 
+let
     Customers = Table.FromRecords({
         [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
         [CustomerID = 2, Name = "Jim", Phone = "987-6543"],

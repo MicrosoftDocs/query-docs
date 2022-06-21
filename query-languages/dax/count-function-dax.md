@@ -3,7 +3,7 @@ description: "Learn more about: COUNT"
 title: "COUNT function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax 
-ms.date: 07/05/2020
+ms.date: 06/07/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -13,7 +13,7 @@ recommendations: false
 ---
 # COUNT
 
-The COUNT function counts the number of cells in a column that contain non-blank values.  
+Counts the number of rows in the specified column that contain non-blank values.
   
 ## Syntax  
   
