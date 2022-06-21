@@ -3,8 +3,7 @@ description: "Learn more about: ABS"
 title: "ABS function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax
-ms.subservice: dax
-ms.date: 07/05/2020
+ms.date: 06/21/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
