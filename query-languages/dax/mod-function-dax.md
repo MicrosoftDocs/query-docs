@@ -2,6 +2,7 @@
 description: "Learn more about: MOD"
 title: "MOD function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 12/10/2018
 ms.reviewer: owend
 ms.topic: reference

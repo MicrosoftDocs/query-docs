@@ -2,7 +2,8 @@
 description: "Learn more about: COUNTAX"
 title: "COUNTAX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/07/2022
+ms.subservice: dax 
+ms.date: 07/05/2020
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan

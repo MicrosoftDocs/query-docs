@@ -2,6 +2,7 @@
 description: "Learn more about: WEEKNUM"
 title: "WEEKNUM function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 06/15/2021
 ms.reviewer: owend
 ms.topic: reference

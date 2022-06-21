@@ -2,6 +2,7 @@
 description: "Learn more about: ACOTH"
 title: "ACOTH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 01/05/2021
 ms.reviewer: owend
 ms.topic: reference

@@ -2,6 +2,7 @@
 title: "DAX Queries | Microsoft Docs"
 description: Describes Data Analysis Expressions (DAX) language queries.
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 06/14/2021
 ms.reviewer: owend
 ms.topic: reference

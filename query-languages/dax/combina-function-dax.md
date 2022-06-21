@@ -2,6 +2,7 @@
 description: "Learn more about: COMBINA"
 title: "COMBINA function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 08/07/2020
 ms.reviewer: owend
 ms.topic: reference

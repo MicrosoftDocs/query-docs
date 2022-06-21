@@ -2,6 +2,7 @@
 description: "Learn more about: Relationship functions"
 title: "Relationship functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 07/24/2020
 ms.reviewer: owend
 ms.topic: reference
