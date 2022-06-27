@@ -164,6 +164,9 @@ You can use tables containing multiple columns and multiple rows of data as the 
 
 DAX stores date and time values using the datetime data type used by Microsoft SQL Server. Datetime format uses a floating-point number where Date values correspond to the integer portion representing the number of days since December 30, 1899. Time values correspond to the decimal portion of a date value where Hours, minutes, and seconds are represented by decimal fractions of a day. DAX date and time functions implicitly convert arguments to datetime data type.
 
+> [!NOTE]
+> The exact maximum DateTime value supported by DAX is December 31, 9999 00:00:00. 
+
 ### Date and time literal
 
 Beginning with the August 2021 version of Power BI Desktop, DAX date and datetime values can be specified as a literal in the format `dt"YYYY-MM-DD"`, `dt"YYYY-MM-DDThh:mm:ss"`, or `dt"YYYY-MM-DD hh:mm:ss"`. When specified as a literal, use of [DATE](date-function-dax.md), [TIME](time-function-dax.md), [DATEVALUE](datevalue-function-dax.md), [TIMEVALUE](timevalue-function-dax.md) functions in the expression are not necessary.
