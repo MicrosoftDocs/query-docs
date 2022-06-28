@@ -20,7 +20,7 @@ Specifies the kinds of values an OData service can omit.
 
 |Name|Value|Description|
 | ------- | --- | ----------- |
-|**ODataOmitValues.Nulls**|0|Allows the OData service to omit null values.|
+|**ODataOmitValues.Nulls**|"nulls"|Allows the OData service to omit null values.|
 
 ## Applies to
 

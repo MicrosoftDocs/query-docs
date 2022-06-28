@@ -124,12 +124,8 @@ Table.TransformColumns(
 **Output**
 
 ```powerquery-m
-Table.TransformColumns(
-    Table.FromRecords({
-        [A = "1", B = 2],
-        [A = "5", B = 10]
-    }),
-    {"B", each Text.From(_ + 1), type text},
-    Number.FromText
-)
+Table.FromRecords({
+    [A = 1, B = "3"],
+    [A = 5, B = "11"]
+})
 ```
