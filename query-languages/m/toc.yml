@@ -226,6 +226,8 @@ items:
       items: 
       - name: Binary functions overview
         href: binary-functions.md
+      - name: Binary.ApproximateLength
+        href: binary-approximatelength.md
       - name: Binary.Buffer
         href: binary-buffer.md
       - name: Binary.Combine
@@ -980,6 +982,8 @@ items:
         href: table-addjoincolumn.md
       - name: Table.AddKey
         href: table-addkey.md
+      - name: Table.AddRankColumn
+        href: table-addrankcolumn.md
       - name: Table.AggregateTableColumn
         href: table-aggregatetablecolumn.md
       - name: Table.AlternateRows
@@ -1430,6 +1434,10 @@ items:
         href: value-traits.md
       - name: Value.Type
         href: value-type.md
+      - name: Value.VersionIdentity
+        href: value-versionidentity.md
+      - name: Value.Versions
+        href: value-versions.md
       - name: Variable.Value
         href: variable-value.md
   - name: Enumerations
@@ -1478,6 +1486,8 @@ items:
       href: precision-type.md
     - name: QuoteStyle.Type
       href: quotestyle-type.md
+    - name: RankKind.Type
+      href: rankkind-type.md
     - name: RelativePosition.Type
       href: relativeposition-type.md
     - name: RoundingMode.Type

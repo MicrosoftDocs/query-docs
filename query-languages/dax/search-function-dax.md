@@ -2,6 +2,7 @@
 description: "Learn more about: SEARCH"
 title: "SEARCH function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 03/14/2022
 ms.reviewer: owend
 ms.topic: reference

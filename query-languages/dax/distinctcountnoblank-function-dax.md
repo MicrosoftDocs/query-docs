@@ -2,7 +2,8 @@
 description: "Learn more about: DISTINCTCOUNTNOBLANK"
 title: "DISTINCTCOUNTNOBLANK function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 08/04/2020
+ms.subservice: dax 
+ms.date: 06/21/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -32,7 +33,7 @@ The number of distinct values in *column*.
   
 ## Remarks  
 
-- Unlike [DISTINCTCOUNT](distinctcount-function-dax.md) function, DISTINCTCOUNTNOBLANK does not include the BLANK value.
+- Unlike [DISTINCTCOUNT](distinctcount-function-dax.md) function, DISTINCTCOUNTNOBLANK does not count the BLANK value.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   

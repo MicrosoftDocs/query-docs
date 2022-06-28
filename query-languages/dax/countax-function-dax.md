@@ -2,6 +2,7 @@
 description: "Learn more about: COUNTAX"
 title: "COUNTAX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 07/05/2020
 ms.reviewer: owend
 ms.topic: reference
@@ -12,7 +13,7 @@ recommendations: false
 ---
 # COUNTAX
 
-The COUNTAX function counts nonblank results when evaluating the result of an expression over a table. That is, it works just like the COUNTA function, but is used to iterate through the rows in a table and count rows where the specified expressions results in a non-blank result.  
+The COUNTAX function counts non-blank results when evaluating the result of an expression over a table. That is, it works just like the COUNTA function, but is used to iterate through the rows in a table and count rows where the specified expressions results in a non-blank result.  
   
 ## Syntax  
   

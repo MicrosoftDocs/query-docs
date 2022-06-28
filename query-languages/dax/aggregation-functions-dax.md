@@ -2,7 +2,8 @@
 description: "Learn more about: Aggregation functions"
 title: "Aggregation functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/28/2021
+ms.subservice: dax 
+ms.date: 06/07/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -21,9 +22,9 @@ Aggregation functions calculate a (scalar) value such as count, sum, average, mi
 |[AVERAGE](average-function-dax.md)     |   Returns the average (arithmetic mean) of all the numbers in a column.       |
 |[AVERAGEA](averagea-function-dax.md)     | Returns the average (arithmetic mean) of the values in a column.         |
 |[AVERAGEX](averagex-function-dax.md)    | Calculates the average (arithmetic mean) of a set of expressions evaluated over a table.          |
-|[COUNT](count-function-dax.md)      |  Counts the number of cells in a column that contain numbers.       |
-|[COUNTA](counta-function-dax.md)     |  Counts the number of cells in a column that are not empty.       |
-|[COUNTAX](countax-function-dax.md)     |  Counts nonblank results when evaluating the result of an expression over a table.        |
+|[COUNT](count-function-dax.md)      |  Counts the number of rows in the specified column that contain non-blank values.       |
+|[COUNTA](counta-function-dax.md)     |  Counts the number of rows in the specified column that contain non-blank values.       |
+|[COUNTAX](countax-function-dax.md)     |  Counts non-blank results when evaluating the result of an expression over a table.        |
 |[COUNTBLANK](countblank-function-dax.md)     |  Counts the number of blank cells in a column.        |
 |[COUNTROWS](countrows-function-dax.md)      |  Counts the number of rows in the specified table, or in a table defined by an expression.        |
 |[COUNTX](countx-function-dax.md)       |  Counts the number of rows that contain a number or an expression that evaluates to a number, when evaluating an expression over a table.         |

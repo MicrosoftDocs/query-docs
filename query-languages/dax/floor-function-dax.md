@@ -2,7 +2,8 @@
 description: "Learn more about: FLOOR"
 title: "FLOOR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 07/08/2020
+ms.subservice: dax 
+ms.date: 06/21/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -43,13 +44,13 @@ A decimal number.
 
 ## Example
 
-The following formula takes the values in the [Total Product Cost] column from the table, InternetSales.and rounds down to the nearest multiple of .1.  
+The following formula takes the values in the [Total Product Cost] column from the table, InternetSales, and rounds down to the nearest multiple of .1.  
   
 ```dax
-= FLOOR(InternetSales[Total Product Cost],.5)  
+= FLOOR(InternetSales[Total Product Cost],.1)  
 ```
 
-The following table shows the expected results for some sample values.  
+The following table shows the expected results for some sample values:  
   
 |Values|Expected Result|  
 |----------|-------------------|  

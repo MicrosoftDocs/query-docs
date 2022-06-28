@@ -1,7 +1,8 @@
 ---
 description: "Learn more about: PV"
 title: "PV function (DAX) | Microsoft Docs"
-ms.service: powerbi
+ms.service: powerbi 
+ms.subservice: dax
 ms.date: 07/02/2020
 ms.reviewer: owend
 ms.topic: reference
@@ -74,7 +75,7 @@ The present value of a loan or investment.
 - type is rounded to the nearest integer.
 
 - An error is returned if:
-  - nper < 1
+  - nper < 1 or blank
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 

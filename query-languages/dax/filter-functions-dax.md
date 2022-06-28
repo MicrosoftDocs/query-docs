@@ -2,6 +2,7 @@
 description: "Learn more about: Filter functions"
 title: "Filter functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 08/17/2020
 ms.reviewer: owend
 ms.topic: reference

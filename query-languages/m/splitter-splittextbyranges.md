@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Splitter.SplitTextByRanges"
 title: "Splitter.SplitTextByRanges | Microsoft Docs"
-ms.date: 3/16/2022
+ms.date: 5/19/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -20,7 +20,7 @@ Splitter.SplitTextByRanges(<b>ranges</b> as list, optional <b>startAtEnd</b> as 
   
 ## About
 
-Returns a function that splits text into a list of text according to the specified offsets and lengths.
+Returns a function that splits text into a list of text according to the specified offsets and lengths. A null length indicates that all remaining input should be included.
 
 ## Example 1
 

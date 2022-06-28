@@ -2,6 +2,7 @@
 description: "Learn more about: Time intelligence functions"
 title: "Time intelligence functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 07/06/2020
 ms.reviewer: owend
 ms.topic: reference

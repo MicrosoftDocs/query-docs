@@ -1,7 +1,8 @@
 ---
 description: "Learn more about: CALCULATE"
 title: "CALCULATE function (DAX) | Microsoft Docs"
-ms.service: powerbi
+ms.service: powerbi 
+ms.subservice: dax
 ms.date: 09/09/2021
 ms.reviewer: owend
 ms.topic: reference

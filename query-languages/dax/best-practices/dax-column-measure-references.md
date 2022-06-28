@@ -4,7 +4,8 @@ description: Best practices when referring to columns in measures in your DAX ex
 author: peter-myers
 ms.author: owend
 ms.reviewer: owend
-ms.service: powerbi
+ms.service: powerbi 
+ms.subservice: dax
 ms.topic: conceptual
 ms.date: 08/25/2021
 recommendations: false

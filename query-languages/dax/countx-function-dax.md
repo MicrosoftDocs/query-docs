@@ -2,6 +2,7 @@
 description: "Learn more about: COUNTX"
 title: "COUNTX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 08/14/2020
 ms.reviewer: owend
 ms.topic: reference
