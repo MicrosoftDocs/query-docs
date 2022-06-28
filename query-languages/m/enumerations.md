@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Enumerations"
 title: "Accessing data enumerations | Microsoft Docs"
-ms.date: 5/17/2022
+ms.date: 6/27/2022
 ms.service: powerquery
 ms.reviewer: ehvonleh
 ms.topic: reference
@@ -32,6 +32,7 @@ The Power Query M formula language includes these enumerations.
 |[LimitClauseKind.Type](limitclausekind-type.md)|Indicates the features that the specific SQL dialect supports.|
 |[MissingField.Type](missingfield-type.md)|Specifies the expected action for missing values in a row that contains columns less than expected.|
 |[Occurrence.Type](occurrence-type.md)|Specifies the occurrence of an element in a sequence.|
+|[ODataOmitValues.Type](odataomitvalues-type.md)|Specifies the kinds of values an OData service can omit.|
 |[Order.Type](order-type.md) | Specifies the direction of sorting.|
 |[PercentileMode.Type](percentilemode-type.md) | Specifies the percentile mode type.|
 |[Precision.Type](precision-type.md)|Specifies the precision of comparison.|

@@ -166,8 +166,6 @@ items:
         href: mysql-database.md
       - name: OData.Feed
         href: odata-feed.md
-      - name: ODataOmitValues.Nulls
-        href: odataomitvalues-nulls.md
       - name: Odbc.DataSource
         href: odbc-datasource.md
       - name: Odbc.InferOptions
@@ -1470,6 +1468,8 @@ items:
       href: missingfield-type.md
     - name: Occurrence.Type
       href: occurrence-type.md
+    - name: ODataOmitValues.Type
+      href: odataomitvalues-type.md
     - name: Order.Type
       href: order-type.md
     - name: PercentileMode.Type
