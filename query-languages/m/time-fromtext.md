@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Time.FromText"
 title: "Time.FromText | Microsoft Docs"
-ms.date: 3/14/2022
+ms.date: 6/24/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -20,10 +20,13 @@ Time.FromText(<b>text</b> as nullable text, optional <b>options</b> as any) as n
   
 ## About
 
-Creates a `time` value from a textual representation, `text`, following ISO 8601 format standard. An optional `options` may also be provided (for example, "en-US").
+Creates a `time` value from a textual representation, `text`. An optional `record` parameter, `options`, may be provided to specify additional properties. The `record` can contain the following fields:
 
-* `Time.FromText("12:34:12")` // Time, hh:mm:ss
-* `Time.FromText("12:34:12.1254425")` // hh:mm:ss.nnnnnnn
+* `Format`: A `text` value indicating the format to use. For more details, go to https://go.microsoft.com/fwlink/?linkid=2180104 and https://go.microsoft.com/fwlink/?linkid=2180105. Omitting this field or providing `null` will result in parsing the time using a best effort.
+
+* `Culture`: When `Format` is not null, `Culture` controls some format specifiers. For example, in `"en-US"` `"tt"` is `"AM" or "PM"`, while in `"ar-EG"` `"tt"` is `"ص" or "م"`. When `Format` is `null`, `Culture` controls the default format to use. When `Culture` is `null` or omitted, [Culture.Current](culture-current.md) is used.
+
+To support legacy workflows, `options` may also be a text value. This has the same behavior as if `options = [Format = null, Culture = options]`.
 
 ## Example 1
 
