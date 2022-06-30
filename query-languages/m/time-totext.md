@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Time.ToText"
 title: "Time.ToText | Microsoft Docs"
-ms.date: 4/13/2022
+ms.date: 6/24/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -22,11 +22,9 @@ Time.ToText(<b>time</b> as nullable time, optional <b>options</b> as any, option
 
 Returns a textual representation of `time`. An optional `record` parameter, `options`, may be provided to specify additional properties. `culture` is only used for legacy workflows. The `record` can contain the following fields:
 
-* `Format`: A `text` value indicating the format to use. For more details, go to https://go.microsoft.com/fwlink/?linkid=2180104 and https://go.microsoft.com/fwlink/?linkid=2180105.
+* `Format`: A `text` value indicating the format to use. For more details, go to https://go.microsoft.com/fwlink/?linkid=2180104 and https://go.microsoft.com/fwlink/?linkid=2180105. Omitting this field or providing `null` will result in formatting the date using the default defined by `Culture`.
 
-   Omitting this field or providing `null` will result in formatting the date using the default defined by `Culture`.
-
-* `Culture`: When `Format` is not null, `Culture` controls some format specifiers. When `Format` is `null`, `Culture` controls the default format to use. When `Culture` is `null` or omitted, [Culture.Current](culture-current.md) is used.
+* `Culture`: When `Format` is not null, `Culture` controls some format specifiers. For example, in `"en-US"` `"tt"` is `"AM" or "PM"`, while in `"ar-EG"` `"tt"` is `"ص" or "م"`. When `Format` is `null`, `Culture` controls the default format to use. When `Culture` is `null` or omitted, [Culture.Current](culture-current.md) is used.
 
 To support legacy workflows, `options` and `culture` may also be text values. This has the same behavior as if `options = [Format = options, Culture = culture]`.
 
