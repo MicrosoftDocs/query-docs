@@ -1,7 +1,8 @@
 ---
 description: "Learn more about: QUARTER"
 title: "QUARTER function (DAX) | Microsoft Docs"
-ms.service: powerbi
+ms.service: powerbi 
+ms.subservice: dax
 ms.date: 07/10/2020
 ms.reviewer: owend
 ms.topic: reference

@@ -2,6 +2,7 @@
 description: "Learn more about: Statistical functions"
 title: "Statistical functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 07/28/2021
 ms.reviewer: owend
 ms.topic: reference

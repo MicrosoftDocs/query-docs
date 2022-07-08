@@ -2,6 +2,7 @@
 description: "Learn more about: HOUR"
 title: "HOUR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 01/06/2021
 ms.reviewer: owend
 ms.topic: reference

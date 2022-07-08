@@ -2,6 +2,7 @@
 description: "Learn more about: DIVIDE"
 title: "DIVIDE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 08/13/2021
 ms.reviewer: owend
 ms.topic: reference

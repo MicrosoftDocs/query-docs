@@ -2,6 +2,7 @@
 description: "Learn more about: ROLLUPGROUP"
 title: "ROLLUPGROUP function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 09/09/2020
 ms.reviewer: owend
 ms.topic: reference

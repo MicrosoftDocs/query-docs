@@ -2,6 +2,7 @@
 description: "Learn more about: ISEMPTY"
 title: "ISEMPTY function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 04/13/2021
 ms.reviewer: owend
 ms.topic: reference

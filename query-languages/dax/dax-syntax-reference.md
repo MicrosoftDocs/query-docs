@@ -2,6 +2,7 @@
 description: "Learn more about: DAX syntax"
 title: "DAX syntax | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 08/06/2021
 ms.reviewer: owend
 ms.topic: reference
@@ -162,6 +163,9 @@ You can use tables containing multiple columns and multiple rows of data as the 
 ## Date and time
 
 DAX stores date and time values using the datetime data type used by Microsoft SQL Server. Datetime format uses a floating-point number where Date values correspond to the integer portion representing the number of days since December 30, 1899. Time values correspond to the decimal portion of a date value where Hours, minutes, and seconds are represented by decimal fractions of a day. DAX date and time functions implicitly convert arguments to datetime data type.
+
+> [!NOTE]
+> The exact maximum DateTime value supported by DAX is December 31, 9999 00:00:00. 
 
 ### Date and time literal
 

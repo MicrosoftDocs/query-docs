@@ -2,6 +2,7 @@
 description: "Learn more about: IF"
 title: "IF function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 02/22/2021
 ms.reviewer: owend
 ms.topic: reference

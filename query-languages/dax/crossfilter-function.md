@@ -2,6 +2,7 @@
 description: "Learn more about: CROSSFILTER"
 title: "CROSSFILTER function | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 04/16/2021
 ms.reviewer: owend
 ms.topic: reference

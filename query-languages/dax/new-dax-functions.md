@@ -3,6 +3,7 @@ description: "Learn more about: New DAX functions"
 title: "New DAX functions | Microsoft Docs"
 ms.service: powerbi 
 ms.date: 06/20/2022
+ms.subservice: dax 
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan

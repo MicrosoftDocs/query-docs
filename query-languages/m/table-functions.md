@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table functions"
 title: "Table functions | Microsoft Docs"
-ms.date: 5/19/2022
+ms.date: 6/24/2022
 ms.service: powerquery
 ms.reviewer: ehvonleh
 ms.topic: reference
@@ -137,7 +137,7 @@ These functions create and manipulate table values.
 |[Table.ReplaceRelationshipIdentity](table-replacerelationshipidentity.md)|This function is intended for internal use only.|
 |[Table.ReplaceValue](table-replacevalue.md)|Replaces oldValue with newValue in specific columns of a table, using the provided replacer function, such as text.Replace or Value.Replace.|
 |[Table.SplitColumn](table-splitcolumn.md)|Returns a new set of columns from a single column applying a splitter function to each value.|
-|[Table.TransformColumns](table-transformcolumns.md)|Transforms columns from a table using a function.|
+|[Table.TransformColumns](table-transformcolumns.md)|Transforms the values of one or more columns.|
 |[Table.TransformColumnTypes](table-transformcolumntypes.md)|Transforms the column types from a table using a type.|
 |[Table.TransformRows](table-transformrows.md)|Transforms the rows from a table using a transform function.|
 |[Table.Transpose](table-transpose.md)|Returns a table with columns converted to rows and rows converted to columns from the input table.|

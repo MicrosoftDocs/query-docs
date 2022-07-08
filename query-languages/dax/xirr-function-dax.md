@@ -2,6 +2,7 @@
 description: "Learn more about: XIRR"
 title: "XIRR function (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 12/17/2021
 ms.reviewer: owend
 ms.topic: reference

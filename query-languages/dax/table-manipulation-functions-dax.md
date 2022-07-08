@@ -2,6 +2,7 @@
 description: "Learn more about: Table manipulation functions"
 title: "Table manipulation functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
+ms.subservice: dax 
 ms.date: 08/26/2020
 ms.reviewer: owend
 ms.topic: reference
