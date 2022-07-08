@@ -111,10 +111,10 @@
               href: minute-function-dax.md
             - name: MONTH
               href: month-function-dax.md
-            - name: NOW
-              href: now-function-dax.md
             - name: NETWORKDAYS
               href: networkdays-dax.md
+            - name: NOW
+              href: now-function-dax.md
             - name: QUARTER
               href: quarter-function-dax.md
             - name: SECOND
