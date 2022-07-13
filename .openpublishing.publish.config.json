@@ -36,7 +36,9 @@
   "notification_subscribers": [
     "owend@microsoft.com"
   ],
-  "sync_notification_subscribers": [],
+  "sync_notification_subscribers": [
+    "owend@microsoft.com"
+  ],
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/query-docs",
   "git_repository_branch_open_to_public_contributors": "main",
