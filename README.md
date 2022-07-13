@@ -1,10 +1,10 @@
 # Microsoft Data Analysis Expressions (DAX) Power Query M language references README
 
-Welcome to the [DAX](/dax) and [Power Query M](powerquery-m) language references. Please review this README to learn more how you can contribute to documentation on the open-source Microsoft Docs platform.
+Welcome to the DAX and Power Query M language references. Please review this README to learn more about how you can contribute to documentation on the open-source Microsoft Docs platform. 
 
 ## Contribute
 
-To learn about how you can help improve documentation, see [Contributing to Microsoft DAX and Power Query M Reference documentation](/contributing.md).
+To learn about how you can help improve documentation, see [Contributing to Microsoft DAX and Power Query M Reference documentation](https://github.com/MicrosoftDocs/query-docs-pr/blob/main/CONTRIBUTING.md).
 
 ## Code of Conduct
 
