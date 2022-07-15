@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.Mode"
 title: "List.Mode | Microsoft Docs"
-ms.date: 3/11/2022
+ms.date: 7/15/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -20,7 +20,7 @@ List.Mode(<b>list</b> as list, optional <b>equationCriteria</b> as any) as any
   
 ## About
 
-Returns the item that appears most frequently in the list, `list`. If the list is empty an exception is thrown. If multiple items appear with the same maximum frequency, the last one is chosen. An optional `comparisonCriteria` value, `equationCriteria`, can be specified to control equality testing.
+Returns the item that appears most frequently in the list, `list`. If the list is empty an exception is thrown. If multiple items appear with the same maximum frequency, the last one is chosen. An optional comparison criteria value, `equationCriteria`, can be specified to control equality testing.
 
 ## Example 1
 
