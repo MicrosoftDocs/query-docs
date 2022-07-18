@@ -14,7 +14,11 @@ The DAX Reference allows Quick edits by using the in-browser GitHub editor and m
 
 ### Power Query M Reference
 
-The Power Query M function reference is mostly created through an automated process from in-product help. At this time, the Power Query M function reference does not allow Quick edits by using the in-browser GitHub editor.
+The Power Query M function reference is primarily created through an automated process from in-product help. At this time, the Power Query M function reference does not have the edit (Pencil) Quick edits button at the top-right of the main frame of each page enabled. External contributions must be made by using the GitHub editor from the or by Git and markdown tools from the root of the query-docs repo.
+
+### Merge and publish process
+
+All contributions are thoroughly vetted and must meet strict technical accuracy and grammar requirements before being merged into the public repo. Once merged, it can still take several days for changes to be shown in live documentation.
 
 ### Recognition
 
