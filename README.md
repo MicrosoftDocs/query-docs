@@ -1,12 +1,10 @@
-# Microsoft Data Analysis Expressions (DAX) Power Query M language references
+# Microsoft Data Analysis Expressions (DAX) Power Query M language references README
 
-Welcome to the [DAX](/dax) and [Power Query M](powerquery-m) language references. Please review this README to learn more how you can contribute to documentation on the open-source Microsoft Docs platform.
+Welcome to the DAX and Power Query M language references. Please review this README to learn more about how you can contribute to documentation on the open-source Microsoft Docs platform. 
 
-## Contributing to DAX and Power Query M reference documentation
+## Contribute
 
-Thanks for your interest in contributing to the DAX or Power Query M reference. Before getting started, be sure to review the [Microsoft Docs contributor guide](/contribute).
-
-All pull requests are reviewed for technical accuracy and applicability.
+To learn about how you can help improve documentation, see [Contributing to Microsoft DAX and Power Query M Reference documentation](https://github.com/MicrosoftDocs/query-docs-pr/blob/main/CONTRIBUTING.md).
 
 ## Code of Conduct
 
@@ -16,3 +14,5 @@ For more information, see the [Code of Conduct FAQ](https://opensource.microsoft
 ## License
 
 Refer to [LICENSE](LICENSE), [LICENSE-CODE](LICENSE-CODE) and [ThirdPartyNotices](ThirdPartyNotices.md) for all Licensing information.
+
+
