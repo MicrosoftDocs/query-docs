@@ -14,5 +14,3 @@ For more information, see the [Code of Conduct FAQ](https://opensource.microsoft
 ## License
 
 Refer to [LICENSE](LICENSE), [LICENSE-CODE](LICENSE-CODE) and [ThirdPartyNotices](ThirdPartyNotices.md) for all Licensing information.
-
-
