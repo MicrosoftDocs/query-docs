@@ -34,7 +34,7 @@ A decimal number.
   
 ## Remarks
 
-- Only the numbers in the column are counted. Blanks, logical values, and text are ignored.  
+- Only the numbers in the column are counted. Blanks are ignored. Logical values are converted to numbers. Text columns are not supported.  
   
 - MEDIAN( Table[Column] ) is equivalent to MEDIANX( Table, Table[Column] ).  
 
