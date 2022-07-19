@@ -252,6 +252,12 @@ items:
         href: binary-tolist.md
       - name: Binary.ToText
         href: binary-totext.md
+      - name: Binary.View
+        href: binary-view.md
+      - name: Binary.ViewError
+        href: binary-viewerror.md
+      - name: Binary.ViewFunction
+        href: binary-viewfunction.md
       - name: BinaryFormat.7BitEncodedSignedInteger
         href: binaryformat-7bitencodedsignedinteger.md
       - name: BinaryFormat.7BitEncodedUnsignedInteger

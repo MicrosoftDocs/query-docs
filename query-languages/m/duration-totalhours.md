@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Duration.TotalHours"
 title: "Duration.TotalHours | Microsoft Docs"
-ms.date: 3/11/2022
+ms.date: 7/18/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -20,11 +20,11 @@ Duration.TotalHours(<b>duration</b> as nullable duration) as nullable number
   
 ## About
 
-Returns the total hours spanned by the provided `duration` value, `duration`.
+Returns the total hours spanned by `duration`.
 
 ## Example 1
 
-Find the total hours spanned in #duration(5, 4, 3, 2).
+Find the total hours spanned by a duration value.
 
 **Usage**
 
