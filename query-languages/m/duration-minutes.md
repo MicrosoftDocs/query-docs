@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Duration.Minutes"
 title: "Duration.Minutes | Microsoft Docs"
-ms.date: 3/11/2022
+ms.date: 7/18/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -20,11 +20,11 @@ Duration.Minutes(<b>duration</b> as nullable duration) as nullable number
   
 ## About
 
-Returns the minutes component of the provided `duration` value, `duration`.
+Returns the minutes portion of `duration`.
 
 ## Example 1
 
-Find the minutes in #duration(5, 4, 3, 2).
+Extract the minutes from a duration value.
 
 **Usage**
 

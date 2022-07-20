@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Duration.TotalDays"
 title: "Duration.TotalDays | Microsoft Docs"
-ms.date: 3/11/2022
+ms.date: 7/18/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -20,11 +20,11 @@ Duration.TotalDays(<b>duration</b> as nullable duration) as nullable number
   
 ## About
 
-Returns the total days spanned by the provided `duration` value, `duration`.
+Returns the total days spanned by `duration`.
 
 ## Example 1
 
-Find the total days spanned in #duration(5, 4, 3, 2).
+Find the total days spanned by a duration value.
 
 **Usage**
 

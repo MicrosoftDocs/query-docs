@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Duration.TotalMinutes"
 title: "Duration.TotalMinutes | Microsoft Docs"
-ms.date: 3/11/2022
+ms.date: 7/18/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -20,11 +20,11 @@ Duration.TotalMinutes(<b>duration</b> as nullable duration) as nullable number
   
 ## About
 
-Returns the total minutes spanned by the provided `duration` value, `duration`.
+Returns the total minutes spanned by `duration`.
 
 ## Example 1
 
-Find the total minutes spanned in #duration(5, 4, 3, 2).
+Find the total minutes spanned by a duration value.
 
 **Usage**
 

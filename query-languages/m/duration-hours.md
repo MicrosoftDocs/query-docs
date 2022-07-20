@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Duration.Hours"
 title: "Duration.Hours | Microsoft Docs"
-ms.date: 3/11/2022
+ms.date: 7/18/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -15,16 +15,16 @@ ms.author: dougklo
 ## Syntax
 
 <pre>
-Duration.Hours(<b>duration</b> as nullable duration) as nullable number 
+Duration.Hours(<b>duration</b> as nullable duration) as nullable number
 </pre>
   
 ## About
 
-Returns the hour component of the provided `duration` value, `duration`.
+Returns the hours portion of `duration`.
 
 ## Example 1
 
-Find the hours in #duration(5, 4, 3, 2).
+Extract the hours from a duration value.
 
 **Usage**
 

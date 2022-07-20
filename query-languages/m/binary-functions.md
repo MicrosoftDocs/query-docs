@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Binary functions"
 title: "Binary functions | Microsoft Docs"
-ms.date: 5/19/2022
+ms.date: 7/19/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -65,5 +65,8 @@ These functions create and manipulate binary data.
 |[Binary.Length](binary-length.md)|Returns the length of binary values.|  
 |[Binary.Range](binary-range.md)|Returns a subset of the binary value beginning at an offset.|
 |[Binary.ToList](binary-tolist.md)|Converts a binary value into a list of numbers|  
-|[Binary.ToText](binary-totext.md)|Encodes binary data into a text form.|  
+|[Binary.ToText](binary-totext.md)|Encodes binary data into a text form.|
+|[Binary.View](binary-view.md) | Creates or extends a binary with user-defined handlers for query and action operations.|
+|[Binary.ViewError](binary-viewerror.md) | Creates a modified error record which won't trigger a fallback when thrown by a handler defined on a view (via [Binary.View](binary-view.md)).|
+|[Binary.ViewFunction](binary-viewfunction.md) | Creates a function that can be intercepted by a handler defined on a view (via `Binary.View`).|
 |[#binary](sharpbinary.md) | Creates a binary value from numbers or text.|
