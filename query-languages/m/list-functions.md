@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List functions"
 title: "List functions | Microsoft Docs"
-ms.date: 5/12/2022
+ms.date: 7/19/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -151,7 +151,7 @@ These functions generate list of values.
 |[List.DateTimes](list-datetimes.md)|Returns a list of datetime values from size count, starting at start and adds an increment to every value.|
 |[List.DateTimeZones](list-datetimezones.md)|Returns a list of of datetimezone values from size count, starting at start and adds an increment to every value.|  
 |[List.Durations](list-durations.md)|Returns a list of durations values from size count, starting at start and adds an increment to every value.|  
-|[List.Generate](list-generate.md)|Generates a list from a value function, a condition function, a next function, and an optional transformation function on the values.|  
+|[List.Generate](list-generate.md)|Generates a list of values.|  
 |[List.Numbers](list-numbers.md)|Returns a list of numbers from size count starting at initial, and adds an increment. The increment defaults to 1.|  
 |[List.Random](list-random.md)|Returns a list of count random numbers, with an optional seed parameter.|  
 |[List.Times](list-times.md)|Returns a list of time values of size count, starting at start.|
