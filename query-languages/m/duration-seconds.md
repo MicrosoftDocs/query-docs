@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Duration.Seconds"
 title: "Duration.Seconds | Microsoft Docs"
-ms.date: 3/11/2022
+ms.date: 7/18/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
@@ -20,11 +20,11 @@ Duration.Seconds(<b>duration</b> as nullable duration) as nullable number
   
 ## About
 
-Returns the seconds component of the provided `duration` value, `duration`.
+Returns the seconds portion of `duration`.
 
 ## Example 1
 
-Find the seconds in #duration(5, 4, 3, 2).
+Extract the seconds from a duration value.
 
 **Usage**
 

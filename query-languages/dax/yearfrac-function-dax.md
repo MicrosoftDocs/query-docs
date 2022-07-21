@@ -27,7 +27,7 @@ YEARFRAC(<start_date>, <end_date>, <basis>)
 |--------|--------------|  
 |start_date|The start date in **datetime** format.|  
 |end_date|The end date in **datetime** format.|  
-|basis|(Optional) The type of day count basis to use. All arguments are truncated to integers.<br /><br />Basis - Description<br /><br />0 - US (NASD) 30/360<br /><br />1 -  Actual/actual<br /><br />2 - Actual/360<br /><br />3 -   Actual/365<br /><br />4 - European 30/360|  
+|basis|(Optional) The type of day count basis to use. All arguments are truncated to integers.<br /><br />Basis - Description<br /><br />0 - US (NASD) 30/360  (Default value)<br /><br />1 -  Actual/actual<br /><br />2 - Actual/360<br /><br />3 -   Actual/365<br /><br />4 - European 30/360|  
   
 ## Return value
 
