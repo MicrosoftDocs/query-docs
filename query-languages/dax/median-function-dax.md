@@ -3,7 +3,7 @@ description: "Learn more about: MEDIAN"
 title: "MEDIAN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax 
-ms.date: 07/08/2020
+ms.date: 07/21/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -34,7 +34,7 @@ A decimal number.
   
 ## Remarks
 
-- Only the numbers in the column are counted. Blanks are ignored. Logical values are converted to numbers. Text columns are not supported.  
+- Only the numbers in the column are counted. Blanks are ignored. Logical values, dates, and text are not supported. 
   
 - MEDIAN( Table[Column] ) is equivalent to MEDIANX( Table, Table[Column] ).  
 
