@@ -46,29 +46,14 @@ It's recommended you pass filter arguments as Boolean expressions, whenever poss
 
 There are, however, restrictions that apply to Boolean expressions when they're used as filter arguments. They:
 
-- Cannot compare columns to other columns
+- Cannot reference columns from multiple tables
 - Cannot reference a measure
 - Cannot use nested CALCULATE functions
 - Cannot use functions that scan or return a table
 
 It means that you'll need to use table expressions for more complex filter requirements.
 
-Consider now a different measure definition.
-
-```dax
-High Margin Product Sales =
-CALCULATE(
-    [Sales],
-    FILTER(
-        'Product',
-        'Product'[ListPrice] > 'Product'[StandardCost] * 2
-    )
-)
-```
-
-The definition of a _high margin product_ is one that has a list price exceeding double its standard cost. In this example, the FILTER function must be used. It's because the filter expression is too complex for a Boolean expression.
-
-Here's one more example. The requirement this time is to calculate sales, but only for months that have achieved a profit.
+Consider now a different measure definition. The requirement is to calculate sales, but only for months that have achieved a profit.
 
 ```dax
 Sales for Profitable Months =
@@ -81,7 +66,7 @@ CALCULATE(
 )
 ```
 
-In this example, the FILTER function must also be used. It's because it requires evaluating the **Profit** measure to eliminate those months that didn't achieve a profit. It's not possible to use a measure in a Boolean expression when it's used as a filter argument.
+In this example, the FILTER function must be used. It's because it requires evaluating the **Profit** measure to eliminate those months that didn't achieve a profit. It's not possible to use a measure in a Boolean expression when it's used as a filter argument.
 
 ## Recommendations
 
