@@ -47,6 +47,7 @@ The mathematical functions in Data Analysis Expressions (DAX) are very similar t
 |[LN](ln-function-dax.md)     | Returns the natural logarithm of a number.        |
 |[LOG](log-function-dax.md)     |  Returns the logarithm of a number to the base you specify.        |
 |[LOG10](log10-function-dax.md)      |  Returns the base-10 logarithm of a number.         |
+|[MOD](mod-function-dax.md)     |  Returns the remainder after a number is divided by a divisor. The result always has the same sign as the divisor.         |
 |[MROUND](mround-function-dax.md)     |  Returns a number rounded to the desired multiple.         |
 |[ODD](odd-function-dax.md)      | Returns number rounded up to the nearest odd integer.          |
 |[PI](pi-function-dax.md)     | Returns the value of Pi, 3.14159265358979, accurate to 15 digits.        |
