@@ -19,8 +19,7 @@ Before learning about queries, it's important you have a solid understanding of 
 ## Syntax
 
 ```dax
-[DEFINE {  MEASURE <tableName>[<name>] = <expression> } 
-        {  VAR <name> = <expression>}]
+[DEFINE {<entity> <name> = <expression>}]
 EVALUATE <table>  
 [ORDER BY {<expression> [{ASC | DESC}]}[, …]  
 [START AT {<value>|<parameter>} [, …]]]  
@@ -134,8 +133,7 @@ The optional **DEFINE** keyword defines entities that exist only for the duratio
 #### Syntax
   
 ```dax
-[DEFINE {  MEASURE <tableName>[<name>] = <expression> } 
-        {  VAR <name> = <expression>}]
+[DEFINE {<entity> <name> = <expression>}]
 EVALUATE <table>  
 ```
 
@@ -143,10 +141,9 @@ EVALUATE <table>
 
 |Term  |Definition  |
 |---------|---------|
-|   tableName     |   The name of an existing table using standard DAX syntax. It cannot be an expression.       |
-|   name     |   The name of a new measure. It cannot be an expression.      |
-|  expression  |  Any DAX expression that returns a single scalar value. The expression can use any of the defined measures. The expression must return a table. If a scalar value is required, wrap the scalar inside a ROW() function to produce a table.  |
-|   VAR     |   An optional expression as a named variable. A [VAR](var-dax.md) can be passed as an argument to other expressions.      |
+|   entity     |   MEASURE, VAR, TABLE, or COLUMN.       |
+|   name     |   The name of an entity. It cannot be an expression.      |
+|  expression  |  Any DAX expression that returns a scalar value (when entity is MEASURE, VAR, or COLUMN) or a table value (when entity is VAR or TABLE). The expression can use any of the defined entities.  |
 
 #### Example
 
