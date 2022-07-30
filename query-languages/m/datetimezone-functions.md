@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DateTimeZone functions"
-title: "DateTimeZone functions | Microsoft Docs"
+title: "DateTimeZone functions"
 ms.date: 5/16/2022
 ms.service: powerquery
 

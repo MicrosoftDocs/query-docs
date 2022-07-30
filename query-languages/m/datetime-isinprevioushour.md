@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DateTime.IsInPreviousHour"
-title: "DateTime.IsInPreviousHour | Microsoft Docs"
+title: "DateTime.IsInPreviousHour"
 ms.date: 3/11/2022
 ms.service: powerquery
 

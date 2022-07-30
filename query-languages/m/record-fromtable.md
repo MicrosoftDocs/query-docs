@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Record.FromTable"
-title: "Record.FromTable | Microsoft Docs"
+title: "Record.FromTable"
 ms.date: 3/9/2022
 ms.service: powerquery
 

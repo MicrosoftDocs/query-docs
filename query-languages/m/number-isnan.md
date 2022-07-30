@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.IsNaN"
-title: "Number.IsNaN | Microsoft Docs"
+title: "Number.IsNaN"
 ms.date: 3/11/2022
 ms.service: powerquery
 

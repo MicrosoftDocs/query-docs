@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.Count"
-title: "List.Count | Microsoft Docs"
+title: "List.Count"
 ms.date: 3/11/2022
 ms.service: powerquery
 

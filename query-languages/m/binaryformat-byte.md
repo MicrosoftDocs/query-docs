@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.Byte"
-title: "BinaryFormat.Byte | Microsoft Docs"
+title: "BinaryFormat.Byte"
 ms.date: 7/29/2019
 ms.service: powerquery
 

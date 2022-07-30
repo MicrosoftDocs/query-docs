@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SharePoint.Tables"
-title: "SharePoint.Tables | Microsoft Docs"
+title: "SharePoint.Tables"
 ms.date: 9/14/2020
 ms.service: powerquery
 

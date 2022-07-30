@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Value.Type"
-title: "Value.Type | Microsoft Docs"
+title: "Value.Type"
 ms.date: 8/2/2019
 ms.service: powerquery
 

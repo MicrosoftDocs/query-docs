@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Duration.TotalDays"
-title: "Duration.TotalDays | Microsoft Docs"
+title: "Duration.TotalDays"
 ms.date: 7/18/2022
 ms.service: powerquery
 

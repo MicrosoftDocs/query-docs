@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.Sin"
-title: "Number.Sin | Microsoft Docs"
+title: "Number.Sin"
 ms.date: 3/11/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.Combine"
-title: "Table.Combine | Microsoft Docs"
+title: "Table.Combine"
 ms.date: 3/10/2022
 ms.service: powerquery
 

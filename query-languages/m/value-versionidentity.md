@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Value.VersionIdentity"
-title: "Value.VersionIdentity | Microsoft Docs"
+title: "Value.VersionIdentity"
 ms.date: 5/19/2022
 ms.service: powerquery
 

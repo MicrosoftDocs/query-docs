@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Text.Lower"
-title: "Text.Lower | Microsoft Docs"
+title: "Text.Lower"
 ms.date: 3/14/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Record.FieldValues"
-title: "Record.FieldValues | Microsoft Docs"
+title: "Record.FieldValues"
 ms.date: 3/9/2022
 ms.service: powerquery
 

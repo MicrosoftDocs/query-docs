@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Date.IsLeapYear"
-title: "Date.IsLeapYear | Microsoft Docs"
+title: "Date.IsLeapYear"
 ms.date: 3/11/2022
 ms.service: powerquery
 

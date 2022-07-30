@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Binary.ViewError"
-title: "Binary.ViewError | Microsoft Docs"
+title: "Binary.ViewError"
 ms.date: 7/19/2022
 ms.service: powerquery
 ms.topic: reference

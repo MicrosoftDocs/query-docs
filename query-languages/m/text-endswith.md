@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Text.EndsWith"
-title: "Text.EndsWith | Microsoft Docs"
+title: "Text.EndsWith"
 ms.date: 3/14/2022
 ms.service: powerquery
 

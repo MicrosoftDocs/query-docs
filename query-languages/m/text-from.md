@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Text.From"
-title: "Text.From | Microsoft Docs"
+title: "Text.From"
 ms.date: 3/14/2022
 ms.service: powerquery
 

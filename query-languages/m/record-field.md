@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Record.Field"
-title: "Record.Field | Microsoft Docs"
+title: "Record.Field"
 ms.date: 3/14/2022
 ms.service: powerquery
 

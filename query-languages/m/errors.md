@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Errors"
-title: "Errors | Microsoft Docs"
+title: "Errors"
 ms.date: 4/16/2018
 ms.service: powerquery
 

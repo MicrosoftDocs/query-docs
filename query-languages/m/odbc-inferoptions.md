@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Odbc.InferOptions"
-title: "Odbc.InferOptions | Microsoft Docs"
+title: "Odbc.InferOptions"
 ms.date: 3/14/2022
 ms.service: powerquery
 

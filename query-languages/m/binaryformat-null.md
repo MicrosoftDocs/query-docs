@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.Null"
-title: "BinaryFormat.Null | Microsoft Docs"
+title: "BinaryFormat.Null"
 ms.date: 7/29/2019
 ms.service: powerquery
 

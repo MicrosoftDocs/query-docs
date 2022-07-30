@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Cube.AttributeMemberId"
-title: "Cube.AttributeMemberId | Microsoft Docs"
+title: "Cube.AttributeMemberId"
 ms.date: 4/16/2018
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.Record"
-title: "BinaryFormat.Record | Microsoft Docs"
+title: "BinaryFormat.Record"
 ms.date: 5/19/2022
 ms.service: powerquery
 

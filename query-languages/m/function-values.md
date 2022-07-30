@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Function values"
-title: "Function values | Microsoft Docs"
+title: "Function values"
 ms.date: 5/16/2022
 ms.service: powerquery
 

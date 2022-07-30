@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Xml.Document"
-title: "Xml.Document | Microsoft Docs"
+title: "Xml.Document"
 ms.date: 7/29/2019
 ms.service: powerquery
 

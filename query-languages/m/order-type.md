@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Order.Type"
-title: "Order.Type | Microsoft Docs"
+title: "Order.Type"
 ms.date: 5/16/2022
 ms.service: powerquery
 

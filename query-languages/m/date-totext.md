@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Date.ToText"
-title: "Date.ToText | Microsoft Docs"
+title: "Date.ToText"
 ms.date: 7/18/2022
 ms.service: powerquery
 

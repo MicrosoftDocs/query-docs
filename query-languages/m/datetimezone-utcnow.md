@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DateTimeZone.UtcNow"
-title: "DateTimeZone.UtcNow | Microsoft Docs"
+title: "DateTimeZone.UtcNow"
 ms.date: 3/11/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Text.Middle"
-title: "Text.Middle | Microsoft Docs"
+title: "Text.Middle"
 ms.date: 3/14/2022
 ms.service: powerquery
 

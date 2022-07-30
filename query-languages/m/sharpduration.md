@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: #duration"
-title: "#duration | Microsoft Docs"
+title: "#duration"
 ms.date: 6/21/2021
 ms.service: powerquery
 

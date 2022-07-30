@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.SelectRows"
-title: "Table.SelectRows | Microsoft Docs"
+title: "Table.SelectRows"
 ms.date: 3/10/2022
 ms.service: powerquery
 

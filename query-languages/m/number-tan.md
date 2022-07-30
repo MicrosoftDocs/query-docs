@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.Tan"
-title: "Number.Tan | Microsoft Docs"
+title: "Number.Tan"
 ms.date: 3/11/2022
 ms.service: powerquery
 

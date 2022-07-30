@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.ContainsAny"
-title: "Table.ContainsAny | Microsoft Docs"
+title: "Table.ContainsAny"
 ms.date: 3/14/2022
 ms.service: powerquery
 

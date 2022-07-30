@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.IsDistinct"
-title: "List.IsDistinct | Microsoft Docs"
+title: "List.IsDistinct"
 ms.date: 3/11/2022
 ms.service: powerquery
 

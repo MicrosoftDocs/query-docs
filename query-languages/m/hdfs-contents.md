@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Hdfs.Contents"
-title: "Hdfs.Contents | Microsoft Docs"
+title: "Hdfs.Contents"
 ms.date: 7/29/2019
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Time.Minute"
-title: "Time.Minute | Microsoft Docs"
+title: "Time.Minute"
 ms.date: 3/14/2022
 ms.service: powerquery
 

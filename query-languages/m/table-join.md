@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.Join"
-title: "Table.Join | Microsoft Docs"
+title: "Table.Join"
 ms.date: 4/13/2022
 ms.service: powerquery
 

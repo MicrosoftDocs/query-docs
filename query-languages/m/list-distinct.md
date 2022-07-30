@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.Distinct"
-title: "List.Distinct | Microsoft Docs"
+title: "List.Distinct"
 ms.date: 3/8/2022
 ms.service: powerquery
 

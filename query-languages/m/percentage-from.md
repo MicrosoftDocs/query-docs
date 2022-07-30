@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Percentage.From"
-title: "Percentage.From | Microsoft Docs"
+title: "Percentage.From"
 ms.date: 4/13/2022
 ms.service: powerquery
 

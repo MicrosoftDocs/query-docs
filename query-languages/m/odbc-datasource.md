@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Odbc.DataSource"
-title: "Odbc.DataSource | Microsoft Docs"
+title: "Odbc.DataSource"
 ms.date: 3/14/2022
 ms.service: powerquery
 ms.topic: reference

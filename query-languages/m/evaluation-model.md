@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Evaluation model"
-title: "Evaluation model | Microsoft Docs"
+title: "Evaluation model"
 ms.date: 4/16/2018
 ms.service: powerquery
 

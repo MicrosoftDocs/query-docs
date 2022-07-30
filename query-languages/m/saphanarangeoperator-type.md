@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SapHanaRangeOperator.Type"
-title: "SapHanaRangeOperator.Type | Microsoft Docs"
+title: "SapHanaRangeOperator.Type"
 ms.date: 5/16/2022
 ms.service: powerquery
 

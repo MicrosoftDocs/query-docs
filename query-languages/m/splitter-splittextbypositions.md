@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Splitter.SplitTextByPositions"
-title: "Splitter.SplitTextByPositions | Microsoft Docs"
+title: "Splitter.SplitTextByPositions"
 ms.date: 3/16/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ItemExpression.Item"
-title: "ItemExpression.Item | Microsoft Docs"
+title: "ItemExpression.Item"
 ms.date: 3/16/2022
 ms.service: powerquery
 

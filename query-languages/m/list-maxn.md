@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.MaxN"
-title: "List.MaxN | Microsoft Docs"
+title: "List.MaxN"
 ms.date: 3/16/2022
 ms.service: powerquery
 

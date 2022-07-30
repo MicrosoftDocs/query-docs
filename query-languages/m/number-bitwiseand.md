@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.BitwiseAnd"
-title: "Number.BitwiseAnd | Microsoft Docs"
+title: "Number.BitwiseAnd"
 ms.date: 7/31/2019
 ms.service: powerquery
 

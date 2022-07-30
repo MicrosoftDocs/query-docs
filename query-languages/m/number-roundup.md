@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.RoundUp"
-title: "Number.RoundUp | Microsoft Docs"
+title: "Number.RoundUp"
 ms.date: 4/13/2022
 ms.service: powerquery
 

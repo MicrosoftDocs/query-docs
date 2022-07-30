@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.Last"
-title: "List.Last | Microsoft Docs"
+title: "List.Last"
 ms.date: 3/11/2022
 ms.service: powerquery
 

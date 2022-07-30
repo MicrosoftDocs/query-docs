@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Splitter.SplitTextByLengths"
-title: "Splitter.SplitTextByLengths | Microsoft Docs"
+title: "Splitter.SplitTextByLengths"
 ms.date: 3/16/2022
 ms.service: powerquery
 

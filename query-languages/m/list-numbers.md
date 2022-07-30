@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.Numbers"
-title: "List.Numbers | Microsoft Docs"
+title: "List.Numbers"
 ms.date: 3/8/2022
 ms.service: powerquery
 

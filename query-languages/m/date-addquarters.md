@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Date.AddQuarters"
-title: "Date.AddQuarters | Microsoft Docs"
+title: "Date.AddQuarters"
 ms.date: 3/11/2022
 ms.service: powerquery
 

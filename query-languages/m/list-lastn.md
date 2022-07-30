@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.LastN"
-title: "List.LastN | Microsoft Docs"
+title: "List.LastN"
 ms.date: 3/8/2022
 ms.service: powerquery
 

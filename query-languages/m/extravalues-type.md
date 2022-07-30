@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ExtraValues.Type"
-title: "ExtraValues.Type | Microsoft Docs"
+title: "ExtraValues.Type"
 ms.date: 5/16/2022
 ms.service: powerquery
 ms.topic: reference

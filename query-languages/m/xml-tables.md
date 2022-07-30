@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Xml.Tables"
-title: "Xml.Tables | Microsoft Docs"
+title: "Xml.Tables"
 ms.date: 3/14/2022
 ms.service: powerquery
 

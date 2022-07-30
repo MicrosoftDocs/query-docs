@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Html.Table"
-title: "Html.Table | Microsoft Docs"
+title: "Html.Table"
 ms.date: 3/8/2022
 ms.service: powerquery
 ms.topic: reference

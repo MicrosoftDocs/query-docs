@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Expressions, values, and let expression"
-title: "Expressions, values, and let expression | Microsoft Docs"
+title: "Expressions, values, and let expression"
 ms.date: 4/16/2018
 ms.service: powerquery
 

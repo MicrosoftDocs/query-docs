@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Type.ForFunction"
-title: "Type.ForFunction | Microsoft Docs"
+title: "Type.ForFunction"
 ms.date: 3/14/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.From"
-title: "Number.From | Microsoft Docs"
+title: "Number.From"
 ms.date: 4/13/2022
 ms.service: powerquery
 

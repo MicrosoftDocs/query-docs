@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.FromText"
-title: "Number.FromText | Microsoft Docs"
+title: "Number.FromText"
 ms.date: 3/11/2022
 ms.service: powerquery
 

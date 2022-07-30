@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DateTimeZone.ToLocal"
-title: "DateTimeZone.ToLocal | Microsoft Docs"
+title: "DateTimeZone.ToLocal"
 ms.date: 3/11/2022
 ms.service: powerquery
 

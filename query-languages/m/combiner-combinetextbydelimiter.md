@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Combiner.CombineTextByDelimiter"
-title: "Combiner.CombineTextByDelimiter | Microsoft Docs"
+title: "Combiner.CombineTextByDelimiter"
 ms.date: 3/11/2022
 ms.service: powerquery
 

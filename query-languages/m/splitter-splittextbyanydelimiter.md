@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Splitter.SplitTextByAnyDelimiter"
-title: "Splitter.SplitTextByAnyDelimiter | Microsoft Docs"
+title: "Splitter.SplitTextByAnyDelimiter"
 ms.date: 3/16/2022
 ms.service: powerquery
 

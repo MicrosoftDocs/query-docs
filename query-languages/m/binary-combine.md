@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Binary.Combine"
-title: "Binary.Combine | Microsoft Docs"
+title: "Binary.Combine"
 ms.date: 12/12/2018
 ms.service: powerquery
 ms.topic: reference

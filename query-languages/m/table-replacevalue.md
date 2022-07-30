@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.ReplaceValue"
-title: "Table.ReplaceValue | Microsoft Docs"
+title: "Table.ReplaceValue"
 ms.date: 5/19/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.Sum"
-title: "List.Sum | Microsoft Docs"
+title: "List.Sum"
 ms.date: 3/11/2022
 ms.service: powerquery
 

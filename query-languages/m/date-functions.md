@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Date functions"
-title: "Date functions | Microsoft Docs"
+title: "Date functions"
 ms.date: 5/16/2022
 ms.service: powerquery
 

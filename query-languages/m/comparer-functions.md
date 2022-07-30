@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Comparer functions"
-title: "Comparer functions | Microsoft Docs"
+title: "Comparer functions"
 ms.date: 5/16/2022
 ms.service: powerquery
 

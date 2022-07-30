@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Duration.Seconds"
-title: "Duration.Seconds | Microsoft Docs"
+title: "Duration.Seconds"
 ms.date: 7/18/2022
 ms.service: powerquery
 

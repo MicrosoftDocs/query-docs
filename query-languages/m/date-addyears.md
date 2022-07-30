@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Date.AddYears"
-title: "Date.AddYears | Microsoft Docs"
+title: "Date.AddYears"
 ms.date: 3/11/2022
 ms.service: powerquery
 

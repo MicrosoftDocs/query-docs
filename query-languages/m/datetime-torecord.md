@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DateTime.ToRecord"
-title: "DateTime.ToRecord | Microsoft Docs"
+title: "DateTime.ToRecord"
 ms.date: 3/8/2022
 ms.service: powerquery
 

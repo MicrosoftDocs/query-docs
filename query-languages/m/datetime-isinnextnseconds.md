@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DateTime.IsInNextNSeconds"
-title: "DateTime.IsInNextNSeconds | Microsoft Docs"
+title: "DateTime.IsInNextNSeconds"
 ms.date: 3/11/2022
 ms.service: powerquery
 

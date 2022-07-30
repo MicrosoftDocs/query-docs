@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.Cosh"
-title: "Number.Cosh | Microsoft Docs"
+title: "Number.Cosh"
 ms.date: 7/31/2019
 ms.service: powerquery
 

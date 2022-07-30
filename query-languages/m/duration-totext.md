@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Duration.ToText"
-title: "Duration.ToText | Microsoft Docs"
+title: "Duration.ToText"
 ms.date: 3/8/2022
 ms.service: powerquery
 

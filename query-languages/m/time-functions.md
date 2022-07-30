@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Time functions"
-title: "Time functions | Microsoft Docs"
+title: "Time functions"
 ms.date: 5/16/2022
 ms.service: powerquery
 

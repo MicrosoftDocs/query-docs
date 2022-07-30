@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Constants"
-title: "Constants | Microsoft Docs"
+title: "Constants"
 ms.date: 5/16/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Duration.FromText"
-title: "Duration.FromText | Microsoft Docs"
+title: "Duration.FromText"
 ms.date: 3/11/2022
 ms.service: powerquery
 

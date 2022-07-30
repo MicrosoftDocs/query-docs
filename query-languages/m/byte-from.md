@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Byte.From"
-title: "Byte.From | Microsoft Docs"
+title: "Byte.From"
 ms.date: 4/13/2022
 ms.service: powerquery
 

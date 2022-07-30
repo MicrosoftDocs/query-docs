@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.RemoveRowsWithErrors"
-title: "Table.RemoveRowsWithErrors | Microsoft Docs"
+title: "Table.RemoveRowsWithErrors"
 ms.date: 3/10/2022
 ms.service: powerquery
 

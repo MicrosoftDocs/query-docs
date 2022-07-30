@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: RowExpression.From"
-title: "RowExpression.From | Microsoft Docs"
+title: "RowExpression.From"
 ms.date: 3/16/2022
 ms.service: powerquery
 

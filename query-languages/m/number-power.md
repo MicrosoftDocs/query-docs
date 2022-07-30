@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.Power"
-title: "Number.Power | Microsoft Docs"
+title: "Number.Power"
 ms.date: 3/11/2022
 ms.service: powerquery
 

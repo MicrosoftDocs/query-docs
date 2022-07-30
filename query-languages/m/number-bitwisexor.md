@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.BitwiseXor"
-title: "Number.BitwiseXor | Microsoft Docs"
+title: "Number.BitwiseXor"
 ms.date: 7/31/2019
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Lines.ToBinary"
-title: "Lines.ToBinary | Microsoft Docs"
+title: "Lines.ToBinary"
 ms.date: 7/30/2019
 ms.service: powerquery
 

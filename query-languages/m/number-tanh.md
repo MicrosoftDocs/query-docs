@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.Tanh"
-title: "Number.Tanh | Microsoft Docs"
+title: "Number.Tanh"
 ms.date: 7/31/2019
 ms.service: powerquery
 

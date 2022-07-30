@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Logical functions"
-title: "Logical functions | Microsoft Docs"
+title: "Logical functions"
 ms.date: 5/16/2020
 ms.service: powerquery
 

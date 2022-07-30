@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.FindText"
-title: "List.FindText | Microsoft Docs"
+title: "List.FindText"
 ms.date: 3/8/2022
 ms.service: powerquery
 

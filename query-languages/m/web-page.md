@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Web.Page"
-title: "Web.Page | Microsoft Docs"
+title: "Web.Page"
 ms.date: 10/17/2019
 ms.service: powerquery
 ms.topic: reference

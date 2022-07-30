@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.Factorial"
-title: "Number.Factorial | Microsoft Docs"
+title: "Number.Factorial"
 ms.date: 3/11/2022
 ms.service: powerquery
 

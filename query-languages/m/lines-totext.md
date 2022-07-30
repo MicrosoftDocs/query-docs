@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Lines.ToText"
-title: "Lines.ToText | Microsoft Docs"
+title: "Lines.ToText"
 ms.date: 7/30/2019
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: JoinKind.Type"
-title: "JoinKind.Type | Microsoft Docs"
+title: "JoinKind.Type"
 ms.date: 5/16/2022
 ms.service: powerquery
 ms.topic: reference

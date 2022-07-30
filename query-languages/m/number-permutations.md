@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.Permutations"
-title: "Number.Permutations | Microsoft Docs"
+title: "Number.Permutations"
 ms.date: 3/11/2022
 ms.service: powerquery
 

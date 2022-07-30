@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.List"
-title: "BinaryFormat.List | Microsoft Docs"
+title: "BinaryFormat.List"
 ms.date: 3/16/2022
 ms.service: powerquery
 

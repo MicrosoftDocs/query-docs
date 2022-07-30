@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.PositionOf"
-title: "List.PositionOf | Microsoft Docs"
+title: "List.PositionOf"
 ms.date: 3/11/2022
 ms.service: powerquery
 

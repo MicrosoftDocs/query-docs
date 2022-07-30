@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: OleDb.Query"
-title: "OleDb.Query | Microsoft Docs"
+title: "OleDb.Query"
 ms.date: 02/03/2021
 ms.service: powerquery
 ms.topic: reference

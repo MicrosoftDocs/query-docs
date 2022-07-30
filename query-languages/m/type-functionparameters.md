@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Type.FunctionParameters"
-title: "Type.FunctionParameters | Microsoft Docs"
+title: "Type.FunctionParameters"
 ms.date: 3/11/2022
 ms.service: powerquery
 

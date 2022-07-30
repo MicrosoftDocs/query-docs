@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: BinaryEncoding.Type"
-title: "BinaryEncoding.Type | Microsoft Docs"
+title: "BinaryEncoding.Type"
 ms.date: 5/16/2022
 ms.service: powerquery
 

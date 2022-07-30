@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Text.SplitAny"
-title: "Text.SplitAny | Microsoft Docs"
+title: "Text.SplitAny"
 ms.date: 3/11/2022
 ms.service: powerquery
 

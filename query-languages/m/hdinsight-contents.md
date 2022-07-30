@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: HdInsight.Contents"
-title: "HdInsight.Contents | Microsoft Docs"
+title: "HdInsight.Contents"
 ms.date: 7/29/2019
 ms.service: powerquery
 

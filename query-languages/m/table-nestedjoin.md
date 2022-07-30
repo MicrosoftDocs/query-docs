@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.NestedJoin"
-title: "Table.NestedJoin | Microsoft Docs"
+title: "Table.NestedJoin"
 ms.date: 4/13/2022
 ms.service: powerquery
 

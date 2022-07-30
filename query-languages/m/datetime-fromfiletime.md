@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DateTime.FromFileTime"
-title: "DateTime.FromFileTime | Microsoft Docs"
+title: "DateTime.FromFileTime"
 ms.date: 3/11/2022
 ms.service: powerquery
 

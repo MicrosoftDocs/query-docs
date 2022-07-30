@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Metadata"
-title: "Metadata | Microsoft Docs"
+title: "Metadata"
 ms.date: 4/16/2018
 ms.service: powerquery
 

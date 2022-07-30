@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Logical.FromText"
-title: "Logical.FromText | Microsoft Docs"
+title: "Logical.FromText"
 ms.date: 3/11/2022
 ms.service: powerquery
 

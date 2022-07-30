@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SharePoint.Files"
-title: "SharePoint.Files | Microsoft Docs"
+title: "SharePoint.Files"
 ms.date: 7/29/2019
 ms.service: powerquery
 

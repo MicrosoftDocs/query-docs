@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.Text"
-title: "BinaryFormat.Text | Microsoft Docs"
+title: "BinaryFormat.Text"
 ms.date: 3/11/2022
 ms.service: powerquery
 

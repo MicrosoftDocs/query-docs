@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Text.StartsWith"
-title: "Text.StartsWith | Microsoft Docs"
+title: "Text.StartsWith"
 ms.date: 3/14/2022
 ms.service: powerquery
 

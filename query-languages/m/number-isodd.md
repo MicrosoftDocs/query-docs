@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.IsOdd"
-title: "Number.IsOdd | Microsoft Docs"
+title: "Number.IsOdd"
 ms.date: 3/11/2022
 ms.service: powerquery
 

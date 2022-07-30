@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Type conversion"
-title: "Type conversion | Microsoft Docs"
+title: "Type conversion"
 ms.date: 4/16/2018
 ms.service: powerquery
 

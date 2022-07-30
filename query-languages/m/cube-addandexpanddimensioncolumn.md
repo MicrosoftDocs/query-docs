@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Cube.AddAndExpandDimensionColumn"
-title: "Cube.AddAndExpandDimensionColumn | Microsoft Docs"
+title: "Cube.AddAndExpandDimensionColumn"
 ms.date: 4/16/2018
 ms.service: powerquery
 

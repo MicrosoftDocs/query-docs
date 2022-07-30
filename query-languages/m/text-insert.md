@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Text.Insert"
-title: "Text.Insert | Microsoft Docs"
+title: "Text.Insert"
 ms.date: 3/14/2022
 ms.service: powerquery
 

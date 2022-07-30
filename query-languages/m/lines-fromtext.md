@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Lines.FromText"
-title: "Lines.FromText | Microsoft Docs"
+title: "Lines.FromText"
 ms.date: 7/30/2019
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Operators"
-title: "Operators | Microsoft Docs"
+title: "Operators"
 ms.date: 4/16/2018
 ms.service: powerquery
 

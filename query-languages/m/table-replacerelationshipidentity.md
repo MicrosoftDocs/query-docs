@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.ReplaceRelationshipIdentity"
-title: "Table.ReplaceRelationshipIdentity | Microsoft Docs"
+title: "Table.ReplaceRelationshipIdentity"
 ms.date: 4/13/2022
 ms.service: powerquery
 

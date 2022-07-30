@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.Covariance"
-title: "List.Covariance | Microsoft Docs"
+title: "List.Covariance"
 ms.date: 3/11/2022
 ms.service: powerquery
 

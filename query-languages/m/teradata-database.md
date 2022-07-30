@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Teradata.Database"
-title: "Teradata.Database | Microsoft Docs"
+title: "Teradata.Database"
 ms.date: 02/03/2021
 ms.service: powerquery
 ms.topic: reference

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: RowExpression.Column"
-title: "RowExpression.Column | Microsoft Docs"
+title: "RowExpression.Column"
 ms.date: 3/16/2022
 ms.service: powerquery
 

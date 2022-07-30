@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Value.Expression"
-title: "Value.Expression | Microsoft Docs"
+title: "Value.Expression"
 ms.date: 3/16/2022
 ms.service: powerquery
 

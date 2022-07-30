@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Duration.TotalMinutes"
-title: "Duration.TotalMinutes | Microsoft Docs"
+title: "Duration.TotalMinutes"
 ms.date: 7/18/2022
 ms.service: powerquery
 

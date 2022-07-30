@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Record.RemoveFields"
-title: "Record.RemoveFields | Microsoft Docs"
+title: "Record.RemoveFields"
 ms.date: 3/9/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PostgreSQL.Database"
-title: "PostgreSQL.Database | Microsoft Docs"
+title: "PostgreSQL.Database"
 ms.date: 02/03/2021
 ms.service: powerquery
 ms.topic: reference

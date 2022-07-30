@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.Ln"
-title: "Number.Ln | Microsoft Docs"
+title: "Number.Ln"
 ms.date: 3/9/2022
 ms.service: powerquery
 

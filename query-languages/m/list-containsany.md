@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.ContainsAny"
-title: "List.ContainsAny | Microsoft Docs"
+title: "List.ContainsAny"
 ms.date: 3/11/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Type.Facets"
-title: "Type.Facets | Microsoft Docs"
+title: "Type.Facets"
 ms.date: 8/2/2019
 ms.service: powerquery
 

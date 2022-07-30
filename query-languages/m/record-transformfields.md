@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Record.TransformFields"
-title: "Record.TransformFields | Microsoft Docs"
+title: "Record.TransformFields"
 ms.date: 5/19/2022
 ms.service: powerquery
 

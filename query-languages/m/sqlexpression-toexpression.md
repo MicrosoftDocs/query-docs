@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SqlExpression.ToExpression"
-title: "SqlExpression.ToExpression | Microsoft Docs"
+title: "SqlExpression.ToExpression"
 ms.date: 10/18/2021
 ms.service: powerquery
 

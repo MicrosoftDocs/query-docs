@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.PrefixColumns"
-title: "Table.PrefixColumns | Microsoft Docs"
+title: "Table.PrefixColumns"
 ms.date: 3/10/2022
 ms.service: powerquery
 

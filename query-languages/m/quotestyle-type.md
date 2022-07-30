@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: QuoteStyle.Type"
-title: "QuoteStyle.Type | Microsoft Docs"
+title: "QuoteStyle.Type"
 ms.date: 5/16/2022
 ms.service: powerquery
 

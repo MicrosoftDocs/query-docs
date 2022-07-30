@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.Min"
-title: "Table.Min | Microsoft Docs"
+title: "Table.Min"
 ms.date: 3/10/2022
 ms.service: powerquery
 

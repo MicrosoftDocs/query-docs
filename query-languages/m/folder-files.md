@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Folder.Files"
-title: "Folder.Files | Microsoft Docs"
+title: "Folder.Files"
 ms.date: 9/13/2021
 ms.service: powerquery
 ms.topic: reference

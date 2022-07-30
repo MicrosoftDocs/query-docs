@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DateTimeZone.ZoneMinutes"
-title: "DateTimeZone.ZoneMinutes | Microsoft Docs"
+title: "DateTimeZone.ZoneMinutes"
 ms.date: 7/30/2019
 ms.service: powerquery
 

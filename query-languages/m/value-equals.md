@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Value.Equals"
-title: "Value.Equals | Microsoft Docs"
+title: "Value.Equals"
 ms.date: 8/2/2019
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.ConformToPageReader"
-title: "List.ConformToPageReader | Microsoft Docs"
+title: "List.ConformToPageReader"
 ms.date: 8/21/2020
 ms.service: powerquery
 

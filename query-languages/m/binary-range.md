@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Binary.Range"
-title: "Binary.Range | Microsoft Docs"
+title: "Binary.Range"
 ms.date: 3/7/2022
 ms.service: powerquery
 ms.topic: reference

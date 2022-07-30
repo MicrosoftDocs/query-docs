@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: HdInsight.Containers"
-title: "HdInsight.Containers | Microsoft Docs"
+title: "HdInsight.Containers"
 ms.date: 7/29/2019
 ms.service: powerquery
 

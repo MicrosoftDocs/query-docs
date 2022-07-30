@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: #datetimezone"
-title: "#datetimezone | Microsoft Docs"
+title: "#datetimezone"
 ms.date: 11/17/2021
 ms.service: powerquery
 

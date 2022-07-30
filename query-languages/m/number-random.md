@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.Random"
-title: "Number.Random | Microsoft Docs"
+title: "Number.Random"
 ms.date: 3/11/2022
 ms.service: powerquery
 

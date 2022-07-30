@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Value.Add"
-title: "Value.Add | Microsoft Docs"
+title: "Value.Add"
 ms.date: 8/2/2019
 ms.service: powerquery
 

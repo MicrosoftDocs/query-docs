@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.ColumnNames"
-title: "Table.ColumnNames | Microsoft Docs"
+title: "Table.ColumnNames"
 ms.date: 3/10/2022
 ms.service: powerquery
 

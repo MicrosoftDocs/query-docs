@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.Epsilon"
-title: "Number.Epsilon | Microsoft Docs"
+title: "Number.Epsilon"
 ms.date: 7/31/2019
 ms.service: powerquery
 

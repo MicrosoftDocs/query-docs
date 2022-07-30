@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.Exp"
-title: "Number.Exp | Microsoft Docs"
+title: "Number.Exp"
 ms.date: 3/11/2022
 ms.service: powerquery
 

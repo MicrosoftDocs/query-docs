@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Binary.ApproximateLength"
-title: "Binary.ApproximateLength | Microsoft Docs"
+title: "Binary.ApproximateLength"
 ms.date: 5/19/2022
 ms.service: powerquery
 ms.topic: reference

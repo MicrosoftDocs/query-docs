@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Type.TableColumn"
-title: "Type.TableColumn | Microsoft Docs"
+title: "Type.TableColumn"
 ms.date: 8/2/2019
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Occurrence.Type"
-title: "Occurrence.Type | Microsoft Docs"
+title: "Occurrence.Type"
 ms.date: 5/16/2022
 ms.service: powerquery
 

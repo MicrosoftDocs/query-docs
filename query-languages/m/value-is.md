@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Value.Is"
-title: "Value.Is | Microsoft Docs"
+title: "Value.Is"
 ms.date: 3/14/2022
 ms.service: powerquery
 

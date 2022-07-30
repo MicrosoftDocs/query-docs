@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Text.PadEnd"
-title: "Text.PadEnd | Microsoft Docs"
+title: "Text.PadEnd"
 ms.date: 3/14/2022
 ms.service: powerquery
 

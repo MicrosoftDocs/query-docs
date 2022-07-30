@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.Sign"
-title: "Number.Sign | Microsoft Docs"
+title: "Number.Sign"
 ms.date: 3/11/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Date.AddDays"
-title: "Date.AddDays | Microsoft Docs"
+title: "Date.AddDays"
 ms.date: 3/11/2022
 ms.service: powerquery
 

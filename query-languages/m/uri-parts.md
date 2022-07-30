@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Uri.Parts"
-title: "Uri.Parts | Microsoft Docs"
+title: "Uri.Parts"
 ms.date: 3/11/2022
 ms.service: powerquery
 

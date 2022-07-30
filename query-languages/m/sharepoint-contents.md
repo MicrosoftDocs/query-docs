@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SharePoint.Contents"
-title: "SharePoint.Contents | Microsoft Docs"
+title: "SharePoint.Contents"
 ms.date: 7/29/2019
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.ToRows"
-title: "Table.ToRows | Microsoft Docs"
+title: "Table.ToRows"
 ms.date: 3/10/2022
 ms.service: powerquery
 

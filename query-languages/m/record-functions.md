@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Record functions"
-title: "Record functions | Microsoft Docs"
+title: "Record functions"
 ms.date: 5/16/2022
 ms.service: powerquery
 

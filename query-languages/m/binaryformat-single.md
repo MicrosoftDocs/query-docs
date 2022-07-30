@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.Single"
-title: "BinaryFormat.Single | Microsoft Docs"
+title: "BinaryFormat.Single"
 ms.date: 7/29/2019
 ms.service: powerquery
 

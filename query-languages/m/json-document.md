@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Json.Document"
-title: "Json.Document | Microsoft Docs"
+title: "Json.Document"
 ms.date: 7/29/2019
 ms.service: powerquery
 

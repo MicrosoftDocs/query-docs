@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Date.IsInCurrentDay"
-title: "Date.IsInCurrentDay | Microsoft Docs"
+title: "Date.IsInCurrentDay"
 ms.date: 3/11/2022
 ms.service: powerquery
 

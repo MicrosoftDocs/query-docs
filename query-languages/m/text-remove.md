@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Text.Remove"
-title: "Text.Remove | Microsoft Docs"
+title: "Text.Remove"
 ms.date: 3/14/2022
 ms.service: powerquery
 

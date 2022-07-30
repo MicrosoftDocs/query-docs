@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.ToText"
-title: "Number.ToText | Microsoft Docs"
+title: "Number.ToText"
 ms.date: 3/11/2022
 ms.service: powerquery
 

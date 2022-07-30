@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.Single"
-title: "List.Single | Microsoft Docs"
+title: "List.Single"
 ms.date: 3/11/2022
 ms.service: powerquery
 

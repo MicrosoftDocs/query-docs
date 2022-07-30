@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.Pivot"
-title: "Table.Pivot | Microsoft Docs"
+title: "Table.Pivot"
 ms.date: 3/10/2021
 ms.service: powerquery
 

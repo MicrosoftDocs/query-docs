@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.Product"
-title: "List.Product | Microsoft Docs"
+title: "List.Product"
 ms.date: 3/11/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: RankKind.Type"
-title: "RankKind.Type | Microsoft Docs"
+title: "RankKind.Type"
 ms.date: 5/19/2022
 ms.service: powerquery
 

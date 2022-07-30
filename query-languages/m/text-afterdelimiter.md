@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Text.AfterDelimiter"
-title: "Text.AfterDelimiter | Microsoft Docs"
+title: "Text.AfterDelimiter"
 ms.date: 3/14/2022
 ms.service: powerquery
 

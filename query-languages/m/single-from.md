@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Single.From"
-title: "Single.From | Microsoft Docs"
+title: "Single.From"
 ms.date: 4/13/2022
 ms.service: powerquery
 

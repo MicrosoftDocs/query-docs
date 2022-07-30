@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Uri.Combine"
-title: "Uri.Combine | Microsoft Docs"
+title: "Uri.Combine"
 ms.date: 8/2/2019
 ms.service: powerquery
 

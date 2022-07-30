@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Splitter.SplitTextByWhitespace"
-title: "Splitter.SplitTextByWhitespace | Microsoft Docs"
+title: "Splitter.SplitTextByWhitespace"
 ms.date: 3/16/2022
 ms.service: powerquery
 

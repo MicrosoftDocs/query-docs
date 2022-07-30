@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Record.ReorderFields"
-title: "Record.ReorderFields | Microsoft Docs"
+title: "Record.ReorderFields"
 ms.date: 3/9/2022
 ms.service: powerquery
 

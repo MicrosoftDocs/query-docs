@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.AddFuzzyClusterColumn"
-title: "Table.AddFuzzyClusterColumn | Microsoft Docs"
+title: "Table.AddFuzzyClusterColumn"
 ms.date: 3/14/2022
 ms.service: powerquery
 

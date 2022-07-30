@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Expression.Evaluate"
-title: "Expression.Evaluate | Microsoft Docs"
+title: "Expression.Evaluate"
 ms.date: 3/11/2022
 ms.service: powerquery
 ms.topic: reference

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.Log"
-title: "Number.Log | Microsoft Docs"
+title: "Number.Log"
 ms.date: 3/11/2022
 ms.service: powerquery
 

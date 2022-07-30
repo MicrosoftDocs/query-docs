@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.Skip"
-title: "Table.Skip | Microsoft Docs"
+title: "Table.Skip"
 ms.date: 3/10/2022
 ms.service: powerquery
 ms.topic: reference

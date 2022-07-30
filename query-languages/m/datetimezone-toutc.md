@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DateTimeZone.ToUtc"
-title: "DateTimeZone.ToUtc | Microsoft Docs"
+title: "DateTimeZone.ToUtc"
 ms.date: 3/11/2022
 ms.service: powerquery
 

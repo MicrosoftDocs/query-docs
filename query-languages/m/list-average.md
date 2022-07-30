@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.Average"
-title: "List.Average | Microsoft Docs"
+title: "List.Average"
 ms.date: 3/11/2022
 ms.service: powerquery
 

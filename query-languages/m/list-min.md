@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.Min"
-title: "List.Min | Microsoft Docs"
+title: "List.Min"
 ms.date: 3/11/2022
 ms.service: powerquery
 

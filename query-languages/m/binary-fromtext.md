@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Binary.FromText"
-title: "Binary.FromText | Microsoft Docs"
+title: "Binary.FromText"
 ms.date: 3/11/2022
 ms.service: powerquery
 ms.topic: reference

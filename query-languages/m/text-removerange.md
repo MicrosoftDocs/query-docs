@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Text.RemoveRange"
-title: "Text.RemoveRange | Microsoft Docs"
+title: "Text.RemoveRange"
 ms.date: 3/14/2022
 ms.service: powerquery
 

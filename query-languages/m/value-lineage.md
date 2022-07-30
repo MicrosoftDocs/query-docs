@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Value.Lineage"
-title: "Value.Lineage | Microsoft Docs"
+title: "Value.Lineage"
 ms.date: 9/22/2020
 ms.service: powerquery
 

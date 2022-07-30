@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.Sqrt"
-title: "Number.Sqrt | Microsoft Docs"
+title: "Number.Sqrt"
 ms.date: 3/11/2022
 ms.service: powerquery
 

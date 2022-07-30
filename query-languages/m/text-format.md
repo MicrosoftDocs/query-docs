@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Text.Format"
-title: "Text.Format | Microsoft Docs"
+title: "Text.Format"
 ms.date: 3/14/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Geometry.ToWellKnownText"
-title: "Geometry.ToWellKnownText | Microsoft Docs"
+title: "Geometry.ToWellKnownText"
 ms.date: 7/16/2020
 ms.service: powerquery
 

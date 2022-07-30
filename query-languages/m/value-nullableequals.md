@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Value.NullableEquals"
-title: "Value.NullableEquals | Microsoft Docs"
+title: "Value.NullableEquals"
 ms.date: 8/2/2019
 ms.service: powerquery
 

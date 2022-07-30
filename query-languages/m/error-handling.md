@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Error handling functions"
-title: "Error handling functions | Microsoft Docs"
+title: "Error handling functions"
 ms.date: 5/16/2022
 ms.service: powerquery
 

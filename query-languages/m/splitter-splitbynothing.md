@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Splitter.SplitByNothing"
-title: "Splitter.SplitByNothing | Microsoft Docs"
+title: "Splitter.SplitByNothing"
 ms.date: 8/1/2019
 ms.service: powerquery
 

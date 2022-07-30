@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Binary.Compress"
-title: "Binary.Compress | Microsoft Docs"
+title: "Binary.Compress"
 ms.date: 3/11/2022
 ms.service: powerquery
 ms.topic: reference

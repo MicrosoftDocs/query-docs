@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Int16.From"
-title: "Int16.From | Microsoft Docs"
+title: "Int16.From"
 ms.date: 4/13/2022
 ms.service: powerquery
 

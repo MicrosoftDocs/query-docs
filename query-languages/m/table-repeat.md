@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.Repeat"
-title: "Table.Repeat | Microsoft Docs"
+title: "Table.Repeat"
 ms.date: 3/10/2022
 ms.service: powerquery
 

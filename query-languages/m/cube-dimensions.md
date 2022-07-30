@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Cube.Dimensions"
-title: "Cube.Dimensions | Microsoft Docs"
+title: "Cube.Dimensions"
 ms.date: 4/16/2018
 ms.service: powerquery
 

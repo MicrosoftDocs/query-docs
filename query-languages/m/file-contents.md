@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: File.Contents"
-title: "File.Contents | Microsoft Docs"
+title: "File.Contents"
 ms.date: 9/13/2021
 ms.service: powerquery
 ms.topic: reference

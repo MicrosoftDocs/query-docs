@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.AddJoinColumn"
-title: "Table.AddJoinColumn | Microsoft Docs"
+title: "Table.AddJoinColumn"
 ms.date: 3/10/2022
 ms.service: powerquery
 

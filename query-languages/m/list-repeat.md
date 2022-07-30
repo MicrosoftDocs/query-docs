@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.Repeat"
-title: "List.Repeat | Microsoft Docs"
+title: "List.Repeat"
 ms.date: 3/9/2022
 ms.service: powerquery
 

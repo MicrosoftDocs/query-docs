@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Function.Invoke"
-title: "Function.Invoke | Microsoft Docs"
+title: "Function.Invoke"
 ms.date: 3/8/2022
 ms.service: powerquery
 

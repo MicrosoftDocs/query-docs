@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Date.StartOfQuarter"
-title: "Date.StartOfQuarter | Microsoft Docs"
+title: "Date.StartOfQuarter"
 ms.date: 3/11/2022
 ms.service: powerquery
 

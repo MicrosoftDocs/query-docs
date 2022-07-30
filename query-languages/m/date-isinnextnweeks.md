@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Date.IsInNextNWeeks"
-title: "Date.IsInNextNWeeks | Microsoft Docs"
+title: "Date.IsInNextNWeeks"
 ms.date: 3/11/2022
 ms.service: powerquery
 

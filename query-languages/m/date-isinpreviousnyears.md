@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Date.IsInPreviousNYears"
-title: "Date.IsInPreviousNYears | Microsoft Docs"
+title: "Date.IsInPreviousNYears"
 ms.date: 3/11/2022
 ms.service: powerquery
 

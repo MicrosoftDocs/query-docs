@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Date.IsInPreviousMonth"
-title: "Date.IsInPreviousMonth | Microsoft Docs"
+title: "Date.IsInPreviousMonth"
 ms.date: 3/11/2022
 ms.service: powerquery
 

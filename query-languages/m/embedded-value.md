@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Embedded.Value"
-title: "Embedded.Value | Microsoft Docs"
+title: "Embedded.Value"
 ms.date: 8/2/2019
 ms.service: powerquery
 

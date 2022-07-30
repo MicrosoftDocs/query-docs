@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Value.Versions"
-title: "Value.Versions | Microsoft Docs"
+title: "Value.Versions"
 ms.date: 5/19/2022
 ms.service: powerquery
 

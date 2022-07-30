@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.Dates"
-title: "List.Dates | Microsoft Docs"
+title: "List.Dates"
 ms.date: 3/8/2022
 ms.service: powerquery
 

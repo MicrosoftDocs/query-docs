@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.Unpivot"
-title: "Table.Unpivot | Microsoft Docs"
+title: "Table.Unpivot"
 ms.date: 3/10/2022
 ms.service: powerquery
 

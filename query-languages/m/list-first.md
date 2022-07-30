@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.First"
-title: "List.First | Microsoft Docs"
+title: "List.First"
 ms.date: 3/11/2022
 ms.service: powerquery
 

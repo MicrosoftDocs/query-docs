@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.IntegerDivide"
-title: "Number.IntegerDivide | Microsoft Docs"
+title: "Number.IntegerDivide"
 ms.date: 3/11/2022
 ms.service: powerquery
 

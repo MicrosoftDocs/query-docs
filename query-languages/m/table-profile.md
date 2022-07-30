@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.Profile"
-title: "Table.Profile | Microsoft Docs"
+title: "Table.Profile"
 ms.date: 8/1/2019
 ms.service: powerquery
 

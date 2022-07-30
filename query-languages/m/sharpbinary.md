@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: #binary"
-title: "#binary | Microsoft Docs"
+title: "#binary"
 ms.date: 3/14/2022
 ms.service: powerquery
 

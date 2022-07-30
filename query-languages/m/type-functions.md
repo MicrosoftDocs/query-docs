@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Type functions"
-title: "Type functions | Microsoft Docs"
+title: "Type functions"
 ms.date: 5/16/2022
 ms.service: powerquery
 

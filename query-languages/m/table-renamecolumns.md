@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.RenameColumns"
-title: "Table.RenameColumns | Microsoft Docs"
+title: "Table.RenameColumns"
 ms.date: 3/10/2022
 ms.service: powerquery
 

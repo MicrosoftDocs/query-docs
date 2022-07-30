@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.Difference"
-title: "List.Difference | Microsoft Docs"
+title: "List.Difference"
 ms.date: 4/13/2022
 ms.service: powerquery
 

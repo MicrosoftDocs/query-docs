@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.FromValue"
-title: "Table.FromValue | Microsoft Docs"
+title: "Table.FromValue"
 ms.date: 3/10/2022
 ms.service: powerquery
 

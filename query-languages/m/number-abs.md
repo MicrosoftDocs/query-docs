@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.Abs"
-title: "Number.Abs | Microsoft Docs"
+title: "Number.Abs"
 ms.date: 3/11/2022
 ms.service: powerquery
 

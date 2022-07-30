@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: GeographyPoint.From"
-title: "GeographyPoint.From | Microsoft Docs"
+title: "GeographyPoint.From"
 ms.date: 7/16/2020
 ms.service: powerquery
 

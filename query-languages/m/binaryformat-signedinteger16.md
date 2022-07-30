@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.SignedInteger16"
-title: "BinaryFormat.SignedInteger16 | Microsoft Docs"
+title: "BinaryFormat.SignedInteger16"
 ms.date: 7/29/2019
 ms.service: powerquery
 

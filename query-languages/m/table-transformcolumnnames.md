@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.TransformColumnNames"
-title: "Table.TransformColumnNames | Microsoft Docs"
+title: "Table.TransformColumnNames"
 ms.date: 3/10/2022
 ms.service: powerquery
 

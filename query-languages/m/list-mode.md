@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.Mode"
-title: "List.Mode | Microsoft Docs"
+title: "List.Mode"
 ms.date: 7/15/2022
 ms.service: powerquery
 

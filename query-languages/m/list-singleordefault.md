@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.SingleOrDefault"
-title: "List.SingleOrDefault | Microsoft Docs"
+title: "List.SingleOrDefault"
 ms.date: 3/11/2022
 ms.service: powerquery
 

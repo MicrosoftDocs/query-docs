@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Oracle.Database"
-title: "Oracle.Database | Microsoft Docs"
+title: "Oracle.Database"
 ms.date: 02/03/2021
 ms.service: powerquery
 ms.topic: reference

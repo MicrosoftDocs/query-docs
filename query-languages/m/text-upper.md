@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Text.Upper"
-title: "Text.Upper | Microsoft Docs"
+title: "Text.Upper"
 ms.date: 3/14/2022
 ms.service: powerquery
 ms.topic: reference

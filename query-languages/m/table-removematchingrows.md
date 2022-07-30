@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.RemoveMatchingRows"
-title: "Table.RemoveMatchingRows | Microsoft Docs"
+title: "Table.RemoveMatchingRows"
 ms.date: 3/10/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.RemoveColumns"
-title: "Table.RemoveColumns | Microsoft Docs"
+title: "Table.RemoveColumns"
 ms.date: 3/10/2022
 ms.service: powerquery
 

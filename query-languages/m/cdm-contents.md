@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Cdm.Contents"
-title: "Cdm.Contents | Microsoft Docs"
+title: "Cdm.Contents"
 ms.date: 03/18/2020
 ms.service: powerquery
 

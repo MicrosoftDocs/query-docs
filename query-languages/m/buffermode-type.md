@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: BufferMode.Type"
-title: "BufferMode.Type | Microsoft Docs"
+title: "BufferMode.Type"
 ms.date: 5/16/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Date.AddWeeks"
-title: "Date.AddWeeks | Microsoft Docs"
+title: "Date.AddWeeks"
 ms.date: 3/11/2022
 ms.service: powerquery
 

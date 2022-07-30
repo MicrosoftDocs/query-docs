@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Text.Contains"
-title: "Text.Contains | Microsoft Docs"
+title: "Text.Contains"
 ms.date: 3/14/2022
 ms.service: powerquery
 

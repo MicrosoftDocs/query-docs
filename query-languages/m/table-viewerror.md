@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.ViewError"
-title: "Table.ViewError | Microsoft Docs"
+title: "Table.ViewError"
 ms.date: 4/13/2022
 ms.service: powerquery
 

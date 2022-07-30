@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.RemoveFirstN"
-title: "List.RemoveFirstN | Microsoft Docs"
+title: "List.RemoveFirstN"
 ms.date: 3/9/2022
 ms.service: powerquery
 

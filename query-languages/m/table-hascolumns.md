@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.HasColumns"
-title: "Table.HasColumns | Microsoft Docs"
+title: "Table.HasColumns"
 ms.date: 3/14/2022
 ms.service: powerquery
 

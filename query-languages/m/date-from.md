@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Date.From"
-title: "Date.From | Microsoft Docs"
+title: "Date.From"
 ms.date: 5/19/2022
 ms.service: powerquery
 

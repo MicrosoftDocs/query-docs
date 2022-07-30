@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Combiner.CombineTextByLengths"
-title: "Combiner.CombineTextByLengths | Microsoft Docs"
+title: "Combiner.CombineTextByLengths"
 ms.date: 7/29/2019
 ms.service: powerquery
 

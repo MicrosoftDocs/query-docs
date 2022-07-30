@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DateTime.IsInCurrentSecond"
-title: "DateTime.IsInCurrentSecond | Microsoft Docs"
+title: "DateTime.IsInCurrentSecond"
 ms.date: 3/11/2022
 ms.service: powerquery
 

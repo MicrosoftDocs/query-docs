@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Geography.ToWellKnownText"
-title: "Geography.ToWellKnownText | Microsoft Docs"
+title: "Geography.ToWellKnownText"
 ms.date: 7/16/2020
 ms.service: powerquery
 

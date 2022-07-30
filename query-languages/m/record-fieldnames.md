@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Record.FieldNames"
-title: "Record.FieldNames | Microsoft Docs"
+title: "Record.FieldNames"
 ms.date: 3/9/2022
 ms.service: powerquery
 

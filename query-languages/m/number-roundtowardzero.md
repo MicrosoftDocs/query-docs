@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.RoundTowardZero"
-title: "Number.RoundTowardZero | Microsoft Docs"
+title: "Number.RoundTowardZero"
 ms.date: 3/11/2022
 ms.service: powerquery
 

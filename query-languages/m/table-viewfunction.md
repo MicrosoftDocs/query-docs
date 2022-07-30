@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.ViewFunction"
-title: "Table.ViewFunction | Microsoft Docs"
+title: "Table.ViewFunction"
 ms.date: 4/13/2022
 ms.service: powerquery
 

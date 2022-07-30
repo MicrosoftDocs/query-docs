@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.Sort"
-title: "Table.Sort | Microsoft Docs"
+title: "Table.Sort"
 ms.date: 3/10/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DateTime.IsInPreviousNMinutes"
-title: "DateTime.IsInPreviousNMinutes | Microsoft Docs"
+title: "DateTime.IsInPreviousNMinutes"
 ms.date: 3/11/2022
 ms.service: powerquery
 

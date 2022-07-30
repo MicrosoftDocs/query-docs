@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Text.ReplaceRange"
-title: "Text.ReplaceRange | Microsoft Docs"
+title: "Text.ReplaceRange"
 ms.date: 3/14/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DateTimeZone.SwitchZone"
-title: "DateTimeZone.SwitchZone | Microsoft Docs"
+title: "DateTimeZone.SwitchZone"
 ms.date: 3/11/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DateTimeZone.RemoveZone"
-title: "DateTimeZone.RemoveZone | Microsoft Docs"
+title: "DateTimeZone.RemoveZone"
 ms.date: 3/11/2022
 ms.service: powerquery
 

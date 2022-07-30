@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Value.Multiply"
-title: "Value.Multiply | Microsoft Docs"
+title: "Value.Multiply"
 ms.date: 8/2/2019
 ms.service: powerquery
 

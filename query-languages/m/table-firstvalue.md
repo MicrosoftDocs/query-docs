@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.FirstValue"
-title: "Table.FirstValue | Microsoft Docs"
+title: "Table.FirstValue"
 ms.date: 8/1/2019
 ms.service: powerquery
 

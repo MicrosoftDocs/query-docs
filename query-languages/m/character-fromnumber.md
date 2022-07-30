@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Character.FromNumber"
-title: "Character.FromNumber | Microsoft Docs"
+title: "Character.FromNumber"
 ms.date: 3/11/2022
 ms.service: powerquery
 

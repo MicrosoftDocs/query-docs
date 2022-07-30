@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Value.Optimize"
-title: "Value.Optimize | Microsoft Docs"
+title: "Value.Optimize"
 ms.date: 06/16/2020
 ms.service: powerquery
 

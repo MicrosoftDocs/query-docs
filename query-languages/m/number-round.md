@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.Round"
-title: "Number.Round | Microsoft Docs"
+title: "Number.Round"
 ms.date: 4/13/2022
 ms.service: powerquery
 

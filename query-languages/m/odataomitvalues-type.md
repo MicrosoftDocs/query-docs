@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ODataOmitValues.Type"
-title: "ODataOmitValues.Type | Microsoft Docs"
+title: "ODataOmitValues.Type"
 ms.date: 6/27/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Character.ToNumber"
-title: "Character.ToNumber | Microsoft Docs"
+title: "Character.ToNumber"
 ms.date: 3/11/2022
 ms.service: powerquery
 

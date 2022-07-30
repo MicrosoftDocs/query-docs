@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.ConformToPageReader"
-title: "Table.ConformToPageReader | Microsoft Docs"
+title: "Table.ConformToPageReader"
 ms.date: 8/21/2020
 ms.service: powerquery
 

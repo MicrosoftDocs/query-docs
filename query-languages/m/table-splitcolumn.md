@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.SplitColumn"
-title: "Table.SplitColumn | Microsoft Docs"
+title: "Table.SplitColumn"
 ms.date: 5/19/2022
 ms.service: powerquery
 

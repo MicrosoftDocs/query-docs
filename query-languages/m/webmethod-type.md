@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: WebMethod.Type"
-title: "WebMethod.Type | Microsoft Docs"
+title: "WebMethod.Type"
 ms.date: 5/16/2022
 ms.service: powerquery
 

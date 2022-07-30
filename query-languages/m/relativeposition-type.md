@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: RelativePosition.Type"
-title: "RelativePosition.Type | Microsoft Docs"
+title: "RelativePosition.Type"
 ms.date: 5/16/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.Distinct"
-title: "Table.Distinct | Microsoft Docs"
+title: "Table.Distinct"
 ms.date: 3/10/2022
 ms.service: powerquery
 ms.topic: reference

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.FromRecords"
-title: "Table.FromRecords | Microsoft Docs"
+title: "Table.FromRecords"
 ms.date: 3/10/2021
 ms.service: powerquery
 

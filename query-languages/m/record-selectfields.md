@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Record.SelectFields"
-title: "Record.SelectFields | Microsoft Docs"
+title: "Record.SelectFields"
 ms.date: 3/9/2022
 ms.service: powerquery
 

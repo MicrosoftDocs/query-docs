@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Combiner.CombineTextByPositions"
-title: "Combiner.CombineTextByPositions | Microsoft Docs"
+title: "Combiner.CombineTextByPositions"
 ms.date: 7/29/2019
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: AccessControlKind.Type"
-title: "AccessControlKind.Type | Microsoft Docs"
+title: "AccessControlKind.Type"
 ms.date: 5/16/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Cube.Parameters"
-title: "Cube.Parameters | Microsoft Docs"
+title: "Cube.Parameters"
 ms.date: 7/29/2019
 ms.service: powerquery
 

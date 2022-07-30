@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: MySQL.Database"
-title: "MySQL.Database | Microsoft Docs"
+title: "MySQL.Database"
 ms.date: 02/03/2021
 ms.service: powerquery
 ms.topic: reference

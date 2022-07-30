@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Enumerations"
-title: "Accessing data enumerations | Microsoft Docs"
+title: "Accessing data enumerations"
 ms.date: 6/27/2022
 ms.service: powerquery
 ms.topic: reference

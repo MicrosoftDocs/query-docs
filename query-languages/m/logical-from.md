@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Logical.From"
-title: "Logical.From | Microsoft Docs"
+title: "Logical.From"
 ms.date: 4/13/2022
 ms.service: powerquery
 

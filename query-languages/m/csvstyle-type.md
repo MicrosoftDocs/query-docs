@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CsvStyle.Type"
-title: "CsvStyle.Type | Microsoft Docs"
+title: "CsvStyle.Type"
 ms.date: 5/16/2022
 ms.service: powerquery
 

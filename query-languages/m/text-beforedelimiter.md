@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Text.BeforeDelimiter"
-title: "Text.BeforeDelimiter | Microsoft Docs"
+title: "Text.BeforeDelimiter"
 ms.date: 3/14/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.NaN"
-title: "Number.NaN | Microsoft Docs"
+title: "Number.NaN"
 ms.date: 7/31/2019
 ms.service: powerquery
 

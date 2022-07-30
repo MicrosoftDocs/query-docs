@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Replacer.ReplaceText"
-title: "Replacer.ReplaceText | Microsoft Docs"
+title: "Replacer.ReplaceText"
 ms.date: 3/14/2022
 ms.service: powerquery
 

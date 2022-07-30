@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table functions"
-title: "Table functions | Microsoft Docs"
+title: "Table functions"
 ms.date: 6/24/2022
 ms.service: powerquery
 ms.topic: reference

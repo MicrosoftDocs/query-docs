@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.PromoteHeaders"
-title: "Table.PromoteHeaders | Microsoft Docs"
+title: "Table.PromoteHeaders"
 ms.date: 3/10/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Type.ClosedRecord"
-title: "Type.ClosedRecord | Microsoft Docs"
+title: "Type.ClosedRecord"
 ms.date: 3/14/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Value.ReplaceType"
-title: "Value.ReplaceType | Microsoft Docs"
+title: "Value.ReplaceType"
 ms.date: 4/13/2022
 ms.service: powerquery
 

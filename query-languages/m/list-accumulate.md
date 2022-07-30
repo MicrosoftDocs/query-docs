@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.Accumulate"
-title: "List.Accumulate | Microsoft Docs"
+title: "List.Accumulate"
 ms.date: 3/11/2022
 ms.service: powerquery
 

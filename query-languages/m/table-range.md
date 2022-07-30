@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.Range"
-title: "Table.Range | Microsoft Docs"
+title: "Table.Range"
 ms.date: 3/10/2022
 ms.service: powerquery
 

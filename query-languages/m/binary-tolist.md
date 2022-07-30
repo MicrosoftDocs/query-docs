@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Binary.ToList"
-title: "Binary.ToList | Microsoft Docs"
+title: "Binary.ToList"
 ms.date: 7/29/2019
 ms.service: powerquery
 

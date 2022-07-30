@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: BinaryOccurrence.Type"
-title: "BinaryOccurrence.Type | Microsoft Docs"
+title: "BinaryOccurrence.Type"
 ms.date: 5/16/2022
 ms.service: powerquery
 

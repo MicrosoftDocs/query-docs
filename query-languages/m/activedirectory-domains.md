@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ActiveDirectory.Domains"
-title: "ActiveDirectory.Domains | Microsoft Docs"
+title: "ActiveDirectory.Domains"
 ms.date: 4/16/2018
 ms.service: powerquery
 ms.topic: reference

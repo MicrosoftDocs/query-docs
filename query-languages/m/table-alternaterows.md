@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.AlternateRows"
-title: "Table.AlternateRows | Microsoft Docs"
+title: "Table.AlternateRows"
 ms.date: 3/10/2022
 ms.service: powerquery
 

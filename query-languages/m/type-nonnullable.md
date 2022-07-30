@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Type.NonNullable"
-title: "Type.NonNullable | Microsoft Docs"
+title: "Type.NonNullable"
 ms.date: 3/14/2022
 ms.service: powerquery
 

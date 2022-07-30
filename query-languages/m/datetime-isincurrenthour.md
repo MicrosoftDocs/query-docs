@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DateTime.IsInCurrentHour"
-title: "DateTime.IsInCurrentHour | Microsoft Docs"
+title: "DateTime.IsInCurrentHour"
 ms.date: 3/11/2022
 ms.service: powerquery
 

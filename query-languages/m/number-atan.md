@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.Atan"
-title: "Number.Atan | Microsoft Docs"
+title: "Number.Atan"
 ms.date: 7/31/2019
 ms.service: powerquery
 

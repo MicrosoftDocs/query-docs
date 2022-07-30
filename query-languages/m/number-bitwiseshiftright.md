@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.BitwiseShiftRight"
-title: "Number.BitwiseShiftRight | Microsoft Docs"
+title: "Number.BitwiseShiftRight"
 ms.date: 7/31/2019
 ms.service: powerquery
 

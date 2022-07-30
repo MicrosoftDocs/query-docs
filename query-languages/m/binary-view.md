@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Binary.View"
-title: "Binary.View | Microsoft Docs"
+title: "Binary.View"
 ms.date: 7/19/2022
 ms.service: powerquery
 ms.topic: reference

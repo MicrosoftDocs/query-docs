@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Currency.From"
-title: "Currency.From | Microsoft Docs"
+title: "Currency.From"
 ms.date: 4/13/2022
 ms.service: powerquery
 

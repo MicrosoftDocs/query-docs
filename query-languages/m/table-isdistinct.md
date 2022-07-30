@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.IsDistinct"
-title: "Table.IsDistinct | Microsoft Docs"
+title: "Table.IsDistinct"
 ms.date: 3/14/2022
 ms.service: powerquery
 

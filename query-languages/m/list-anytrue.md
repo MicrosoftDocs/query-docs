@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.AnyTrue"
-title: "List.AnyTrue | Microsoft Docs"
+title: "List.AnyTrue"
 ms.date: 3/11/2022
 ms.service: powerquery
 

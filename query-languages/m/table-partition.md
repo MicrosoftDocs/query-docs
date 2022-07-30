@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.Partition"
-title: "Table.Partition | Microsoft Docs"
+title: "Table.Partition"
 ms.date: 3/14/2022
 ms.service: powerquery
 

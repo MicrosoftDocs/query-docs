@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Text.At"
-title: "Text.At | Microsoft Docs"
+title: "Text.At"
 ms.date: 3/14/2022
 ms.service: powerquery
 

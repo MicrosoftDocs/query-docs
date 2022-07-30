@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.ReorderColumns"
-title: "Table.ReorderColumns | Microsoft Docs"
+title: "Table.ReorderColumns"
 ms.date: 3/10/2022
 ms.service: powerquery
 

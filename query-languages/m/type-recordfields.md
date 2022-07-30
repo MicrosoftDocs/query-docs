@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Type.RecordFields"
-title: "Type.RecordFields | Microsoft Docs"
+title: "Type.RecordFields"
 ms.date: 3/11/2022
 ms.service: powerquery
 

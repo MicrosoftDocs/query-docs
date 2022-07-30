@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Understanding Power Query M functions"
-title: "Understanding Power Query M functions | Microsoft Docs"
+title: "Understanding Power Query M functions"
 ms.date: 4/16/2018
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DateTime.AddZone"
-title: "DateTime.AddZone | Microsoft Docs"
+title: "DateTime.AddZone"
 ms.date: 3/11/2022
 ms.service: powerquery
 

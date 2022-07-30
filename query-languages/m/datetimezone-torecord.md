@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DateTimeZone.ToRecord"
-title: "DateTimeZone.ToRecord | Microsoft Docs"
+title: "DateTimeZone.ToRecord"
 ms.date: 3/8/2022
 ms.service: powerquery
 

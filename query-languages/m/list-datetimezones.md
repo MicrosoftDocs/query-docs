@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.DateTimeZones"
-title: "List.DateTimeZones | Microsoft Docs"
+title: "List.DateTimeZones"
 ms.date: 3/8/2022
 ms.service: powerquery
 

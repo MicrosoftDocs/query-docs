@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.BitwiseNot"
-title: "Number.BitwiseNot | Microsoft Docs"
+title: "Number.BitwiseNot"
 ms.date: 7/31/2019
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DateTime.LocalNow"
-title: "DateTime.LocalNow | Microsoft Docs"
+title: "DateTime.LocalNow"
 ms.date: 7/30/2019
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Sql.Database"
-title: "Sql.Database | Microsoft Docs"
+title: "Sql.Database"
 ms.date: 11/23/2020
 ms.service: powerquery
 ms.topic: reference

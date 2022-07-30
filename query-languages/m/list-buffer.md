@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.Buffer"
-title: "List.Buffer | Microsoft Docs"
+title: "List.Buffer"
 ms.date: 3/8/2022
 ms.service: powerquery
 

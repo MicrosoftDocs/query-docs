@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DirectQueryCapabilities.From"
-title: "DirectQueryCapabilities.From | Microsoft Docs"
+title: "DirectQueryCapabilities.From"
 ms.date: 10/18/2021
 ms.service: powerquery
 

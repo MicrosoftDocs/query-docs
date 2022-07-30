@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: LimitClauseKind.Type"
-title: "LimitClauseKind.Type | Microsoft Docs"
+title: "LimitClauseKind.Type"
 ms.date: 5/16/2022
 ms.service: powerquery
 

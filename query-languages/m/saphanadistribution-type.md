@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SapHanaDistribution.Type"
-title: "SapHanaDistribution.Type | Microsoft Docs"
+title: "SapHanaDistribution.Type"
 ms.date: 5/16/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Cube.Transform"
-title: "Cube.Transform | Microsoft Docs"
+title: "Cube.Transform"
 ms.date: 7/29/2019
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.ToRecords"
-title: "Table.ToRecords | Microsoft Docs"
+title: "Table.ToRecords"
 ms.date: 3/10/2022
 ms.service: powerquery
 

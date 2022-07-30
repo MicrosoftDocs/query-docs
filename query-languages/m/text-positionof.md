@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Text.PositionOf"
-title: "Text.PositionOf | Microsoft Docs"
+title: "Text.PositionOf"
 ms.date: 3/14/2022
 ms.service: powerquery
 

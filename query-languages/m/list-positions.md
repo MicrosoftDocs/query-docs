@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: List.Positions"
-title: "List.Positions | Microsoft Docs"
+title: "List.Positions"
 ms.date: 3/8/2022
 ms.service: powerquery
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DateTimeZone.FixedUtcNow"
-title: "DateTimeZone.FixedUtcNow | Microsoft Docs"
+title: "DateTimeZone.FixedUtcNow"
 ms.date: 7/30/2019
 ms.service: powerquery
 

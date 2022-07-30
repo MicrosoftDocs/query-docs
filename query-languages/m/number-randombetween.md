@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Number.RandomBetween"
-title: "Number.RandomBetween | Microsoft Docs"
+title: "Number.RandomBetween"
 ms.date: 3/11/2022
 ms.service: powerquery
 

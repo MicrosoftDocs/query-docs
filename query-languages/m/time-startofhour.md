@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Time.StartOfHour"
-title: "Time.StartOfHour | Microsoft Docs"
+title: "Time.StartOfHour"
 ms.date: 3/14/2022
 ms.service: powerquery
 

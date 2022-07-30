@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table.FromColumns"
-title: "Table.FromColumns | Microsoft Docs"
+title: "Table.FromColumns"
 ms.date: 3/10/2022
 ms.service: powerquery
 
