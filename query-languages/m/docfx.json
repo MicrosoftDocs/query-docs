@@ -39,7 +39,8 @@
       "extendBreadcrumb": true,
       "titleSuffix": "PowerQuery M",
       "ms.service": "power-query",
-      "ms.topic": "reference"
+      "ms.topic": "reference", 
+      "ms.reviewer": "ehvonleh"
     },
     "fileMetadata": { },
     "template": [],
