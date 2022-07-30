@@ -4,7 +4,6 @@ title: "Metadata | Microsoft Docs"
 ms.date: 4/16/2018
 ms.service: powerquery
 
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

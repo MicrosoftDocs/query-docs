@@ -3,7 +3,6 @@ description: "Learn more about: Teradata.Database"
 title: "Teradata.Database | Microsoft Docs"
 ms.date: 02/03/2021
 ms.service: powerquery
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

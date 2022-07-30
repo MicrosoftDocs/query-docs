@@ -4,7 +4,6 @@ title: "Text.ToBinary | Microsoft Docs"
 ms.date: 8/2/2019
 ms.service: powerquery
 
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

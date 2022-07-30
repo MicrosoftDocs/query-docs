@@ -3,7 +3,6 @@ description: "Learn more about: Oracle.Database"
 title: "Oracle.Database | Microsoft Docs"
 ms.date: 02/03/2021
 ms.service: powerquery
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

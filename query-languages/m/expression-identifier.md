@@ -3,7 +3,6 @@ description: "Learn more about: Expression.Identifier"
 title: "Expression.Identifier | Microsoft Docs"
 ms.date: 3/11/2022
 ms.service: powerquery
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

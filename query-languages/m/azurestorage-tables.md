@@ -3,7 +3,6 @@ description: "Learn more about: AzureStorage.Tables"
 title: "AzureStorage.Tables | Microsoft Docs"
 ms.date: 5/25/2021
 ms.service: powerquery
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

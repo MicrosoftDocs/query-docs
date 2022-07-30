@@ -4,7 +4,6 @@ title: "Value.Optimize | Microsoft Docs"
 ms.date: 06/16/2020
 ms.service: powerquery
 
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

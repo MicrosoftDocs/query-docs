@@ -4,7 +4,6 @@ title: "Geography.FromWellKnownText | Microsoft Docs"
 ms.date: 7/16/2020
 ms.service: powerquery
 
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

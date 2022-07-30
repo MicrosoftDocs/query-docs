@@ -4,7 +4,6 @@ title: "SharePoint.Tables | Microsoft Docs"
 ms.date: 9/14/2020
 ms.service: powerquery
 
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

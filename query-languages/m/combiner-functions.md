@@ -4,7 +4,6 @@ title: "Combiner functions | Microsoft Docs"
 ms.date: 5/16/2020
 ms.service: powerquery
 
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

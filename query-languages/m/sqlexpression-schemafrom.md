@@ -4,7 +4,6 @@ title: "SqlExpression.SchemaFrom | Microsoft Docs"
 ms.date: 10/18/2021
 ms.service: powerquery
 
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

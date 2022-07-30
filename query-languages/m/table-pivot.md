@@ -4,7 +4,6 @@ title: "Table.Pivot | Microsoft Docs"
 ms.date: 3/10/2021
 ms.service: powerquery
 
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

@@ -4,7 +4,6 @@ title: "Text.RemoveRange | Microsoft Docs"
 ms.date: 3/14/2022
 ms.service: powerquery
 
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

@@ -4,7 +4,6 @@ title: "Table.ToList | Microsoft Docs"
 ms.date: 5/3/2022
 ms.service: powerquery
 
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

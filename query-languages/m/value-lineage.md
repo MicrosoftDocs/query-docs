@@ -4,7 +4,6 @@ title: "Value.Lineage | Microsoft Docs"
 ms.date: 9/22/2020
 ms.service: powerquery
 
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

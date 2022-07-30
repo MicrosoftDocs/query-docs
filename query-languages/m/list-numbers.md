@@ -4,7 +4,6 @@ title: "List.Numbers | Microsoft Docs"
 ms.date: 3/8/2022
 ms.service: powerquery
 
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

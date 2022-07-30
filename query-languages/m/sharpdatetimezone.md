@@ -4,7 +4,6 @@ title: "#datetimezone | Microsoft Docs"
 ms.date: 11/17/2021
 ms.service: powerquery
 
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

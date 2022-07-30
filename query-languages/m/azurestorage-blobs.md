@@ -3,7 +3,6 @@ description: "Learn more about: AzureStorage.Blobs"
 title: "AzureStorage.Blobs | Microsoft Docs"
 ms.date: 10/10/2019
 ms.service: powerquery
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

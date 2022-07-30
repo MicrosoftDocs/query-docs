@@ -3,7 +3,6 @@ description: "Learn more about: Folder.Contents"
 title: "Folder.Contents | Microsoft Docs"
 ms.date: 9/13/2021
 ms.service: powerquery
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

@@ -4,7 +4,6 @@ title: "List.Mode | Microsoft Docs"
 ms.date: 7/15/2022
 ms.service: powerquery
 
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

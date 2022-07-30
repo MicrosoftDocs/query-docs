@@ -4,7 +4,6 @@ title: "Table.CombineColumnsToRecord | Microsoft Docs"
 ms.date: 09/14/2020
 ms.service: powerquery
 
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

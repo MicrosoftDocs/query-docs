@@ -4,7 +4,6 @@ title: "List.ConformToPageReader | Microsoft Docs"
 ms.date: 8/21/2020
 ms.service: powerquery
 
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

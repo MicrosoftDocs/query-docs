@@ -4,7 +4,6 @@ title: "Excel.ShapeTable | Microsoft Docs"
 ms.date: 1/24/2022
 ms.service: powerquery
 
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

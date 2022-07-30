@@ -4,7 +4,6 @@ title: "Cube.MeasureProperty| Microsoft Docs"
 ms.date: 8/17/2018
 ms.service: powerquery
 
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

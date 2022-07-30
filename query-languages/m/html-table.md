@@ -3,7 +3,6 @@ description: "Learn more about: Html.Table"
 title: "Html.Table | Microsoft Docs"
 ms.date: 3/8/2022
 ms.service: powerquery
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

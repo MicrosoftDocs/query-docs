@@ -4,7 +4,6 @@ title: "Int16.From | Microsoft Docs"
 ms.date: 4/13/2022
 ms.service: powerquery
 
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

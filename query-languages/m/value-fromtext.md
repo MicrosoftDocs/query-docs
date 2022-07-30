@@ -4,7 +4,6 @@ title: "Value.FromText | Microsoft Docs"
 ms.date: 4/1/2020
 ms.service: powerquery
 
-ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo
