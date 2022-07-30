@@ -3,7 +3,6 @@ description: "Learn more about: Table.CombineColumnsToRecord"
 title: "Table.CombineColumnsToRecord"
 ms.date: 09/14/2020
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

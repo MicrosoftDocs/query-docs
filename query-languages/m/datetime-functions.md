@@ -3,7 +3,6 @@ description: "Learn more about: DateTime functions"
 title: "DateTime functions"
 ms.date: 5/16/2022
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

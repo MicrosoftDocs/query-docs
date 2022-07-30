@@ -3,7 +3,6 @@ description: "Learn more about: Logical.From"
 title: "Logical.From"
 ms.date: 4/13/2022
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

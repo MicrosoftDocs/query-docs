@@ -3,7 +3,6 @@ description: "Learn more about: List.Times"
 title: "List.Times"
 ms.date: 3/9/2022
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

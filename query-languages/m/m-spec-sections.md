@@ -1,10 +1,8 @@
 ---
-title: M Language Sections | Microsoft Docs
+title: M Language Sections 
 description: Describes using sections in the Power Query M formula language
 author: dougklopfenstein
-
 ms.service: powerquery
-
 ms.topic: article
 ms.date: 8/23/2021
 ms.author: dougklo

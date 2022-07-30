@@ -3,7 +3,6 @@ description: "Learn more about: #duration"
 title: "#duration"
 ms.date: 6/21/2021
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

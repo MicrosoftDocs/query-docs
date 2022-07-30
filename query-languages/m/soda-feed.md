@@ -3,7 +3,6 @@ description: "Learn more about: Soda.Feed"
 title: "Soda.Feed"
 ms.date: 7/29/2019
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

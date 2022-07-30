@@ -3,7 +3,6 @@ description: "Learn more about: Lines.ToText"
 title: "Lines.ToText"
 ms.date: 7/30/2019
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

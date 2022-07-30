@@ -3,7 +3,6 @@ description: "Learn more about: Splitter.SplitTextByRepeatedLengths"
 title: "Splitter.SplitTextByRepeatedLengths"
 ms.date: 3/16/2022
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

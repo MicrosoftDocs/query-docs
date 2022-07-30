@@ -3,7 +3,6 @@ description: "Learn more about: GeographyPoint.From"
 title: "GeographyPoint.From"
 ms.date: 7/16/2020
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

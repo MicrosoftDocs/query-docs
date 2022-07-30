@@ -1,10 +1,8 @@
 ---
-title: M Language Functions | Microsoft Docs
+title: M Language Functions 
 description: Describes using functions in the Power Query M formula language
 author: dougklopfenstein
-
 ms.service: powerquery
-
 ms.topic: article
 ms.date: 4/7/2020
 ms.author: dougklo

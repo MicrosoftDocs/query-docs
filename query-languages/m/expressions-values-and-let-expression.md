@@ -3,7 +3,6 @@ description: "Learn more about: Expressions, values, and let expression"
 title: "Expressions, values, and let expression"
 ms.date: 4/16/2018
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

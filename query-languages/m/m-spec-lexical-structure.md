@@ -1,10 +1,8 @@
 ---
-title: M Language lexical structure | Microsoft Docs
+title: M Language lexical structure 
 description: Describes the lexical structure of the Power Query M formula language
 author: dougklopfenstein
-
 ms.service: powerquery
-
 ms.topic: article
 ms.date: 11/29/2021
 ms.author: dougklo

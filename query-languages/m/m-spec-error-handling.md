@@ -1,10 +1,8 @@
 ---
-title: M Language Error Handling | Microsoft Docs
+title: M Language Error Handling 
 description: Describes error handling in the Power Query M formula language
 author: dougklopfenstein
-
 ms.service: powerquery
-
 ms.topic: article
 ms.date: 2/28/2020
 ms.author: dougklo

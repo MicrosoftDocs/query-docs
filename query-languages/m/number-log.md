@@ -3,7 +3,6 @@ description: "Learn more about: Number.Log"
 title: "Number.Log"
 ms.date: 3/11/2022
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

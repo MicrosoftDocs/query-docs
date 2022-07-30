@@ -3,7 +3,6 @@ description: "Learn more about: BinaryFormat.SignedInteger32"
 title: "BinaryFormat.SignedInteger32"
 ms.date: 7/29/2019
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

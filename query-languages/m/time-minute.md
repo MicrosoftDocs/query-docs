@@ -3,7 +3,6 @@ description: "Learn more about: Time.Minute"
 title: "Time.Minute"
 ms.date: 3/14/2022
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

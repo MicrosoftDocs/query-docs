@@ -3,7 +3,6 @@ description: "Learn more about: Type.ReplaceTableKeys"
 title: "Type.ReplaceTableKeys"
 ms.date: 8/2/2019
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

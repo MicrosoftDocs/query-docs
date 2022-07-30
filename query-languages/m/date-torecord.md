@@ -3,7 +3,6 @@ description: "Learn more about: Date.ToRecord"
 title: "Date.ToRecord"
 ms.date: 3/8/2022
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

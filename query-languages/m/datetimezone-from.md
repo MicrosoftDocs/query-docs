@@ -3,7 +3,6 @@ description: "Learn more about: DateTimeZone.From"
 title: "DateTimeZone.From"
 ms.date: 6/24/2022
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

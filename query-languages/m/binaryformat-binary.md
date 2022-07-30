@@ -3,7 +3,6 @@ description: "Learn more about: BinaryFormat.Binary"
 title: "BinaryFormat.Binary"
 ms.date: 7/29/2019
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

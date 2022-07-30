@@ -3,7 +3,6 @@ description: "Learn more about: SapBusinessWarehouse.Cubes"
 title: "SapBusinessWarehouse.Cubes"
 ms.date: 7/29/2019
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

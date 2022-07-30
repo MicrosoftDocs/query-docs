@@ -3,7 +3,6 @@ description: "Learn more about: Uri.BuildQueryString"
 title: "Uri.BuildQueryString"
 ms.date: 3/14/2022
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

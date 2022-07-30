@@ -3,7 +3,6 @@ description: "Learn more about: Combiner functions"
 title: "Combiner functions"
 ms.date: 5/16/2020
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

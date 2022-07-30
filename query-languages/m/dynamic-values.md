@@ -3,7 +3,6 @@ description: "Learn more about: Dynamic values"
 title: "Dynamic values"
 ms.date: 5/16/2022
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

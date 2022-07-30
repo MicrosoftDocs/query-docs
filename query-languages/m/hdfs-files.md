@@ -3,7 +3,6 @@ description: "Learn more about: Hdfs.Files"
 title: "Hdfs.Files"
 ms.date: 7/29/2019
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

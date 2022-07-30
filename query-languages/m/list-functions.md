@@ -3,7 +3,6 @@ description: "Learn more about: List functions"
 title: "List functions"
 ms.date: 7/19/2022
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

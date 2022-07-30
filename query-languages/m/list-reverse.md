@@ -3,7 +3,6 @@ description: "Learn more about: List.Reverse"
 title: "List.Reverse"
 ms.date: 3/9/2022
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

@@ -3,7 +3,6 @@ description: "Learn more about: BinaryFormat.UnsignedInteger64"
 title: "BinaryFormat.UnsignedInteger64"
 ms.date: 7/29/2019
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

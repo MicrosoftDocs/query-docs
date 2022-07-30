@@ -1,9 +1,8 @@
 ---
 description: "Learn more about: Text.Reverse"
-title: "Text.Reverse| Microsoft Docs"
+title: "Text.Reverse"
 ms.date: 3/14/2022
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

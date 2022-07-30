@@ -3,7 +3,6 @@ description: "Learn more about: Table.First"
 title: "Table.First"
 ms.date: 3/10/2022
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

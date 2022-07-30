@@ -3,7 +3,6 @@ description: "Learn more about: DateTime.Time"
 title: "DateTime.Time"
 ms.date: 3/11/2022
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

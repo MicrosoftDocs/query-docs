@@ -3,7 +3,6 @@ description: "Learn more about: SharePoint.Tables"
 title: "SharePoint.Tables"
 ms.date: 9/14/2020
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

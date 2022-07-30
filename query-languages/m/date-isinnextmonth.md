@@ -3,7 +3,6 @@ description: "Learn more about: Date.IsInNextMonth"
 title: "Date.IsInNextMonth"
 ms.date: 3/22/2022
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

@@ -3,7 +3,6 @@ description: "Learn more about: Number.Tan"
 title: "Number.Tan"
 ms.date: 3/11/2022
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo

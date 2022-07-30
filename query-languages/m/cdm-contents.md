@@ -3,7 +3,6 @@ description: "Learn more about: Cdm.Contents"
 title: "Cdm.Contents"
 ms.date: 03/18/2020
 ms.service: powerquery
-
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo
