@@ -37,9 +37,11 @@
     "globalMetadata": {
       "breadcrumb_path": "/powerquery-m/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "titleSuffix": "PowerQuery M"
+      "titleSuffix": "PowerQuery M",
+      "ms.service": "power-query",
+      "ms.topic": "reference"
     },
-    "fileMetadata": {},
+    "fileMetadata": { },
     "template": [],
     "dest": "m-language"
   }
