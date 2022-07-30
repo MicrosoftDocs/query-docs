@@ -40,7 +40,9 @@
       "titleSuffix": "PowerQuery M",
       "ms.service": "power-query",
       "ms.topic": "reference", 
-      "ms.reviewer": "ehvonleh"
+      "ms.reviewer": "ehvonleh",
+      "author": "dougklopfenstein",
+      "ms.author": "dougklo"
     },
     "fileMetadata": { },
     "template": [],

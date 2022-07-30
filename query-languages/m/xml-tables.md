@@ -6,7 +6,6 @@ ms.service: powerquery
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo
-
 ---
 # Xml.Tables
 
