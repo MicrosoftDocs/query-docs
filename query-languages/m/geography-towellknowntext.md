@@ -2,11 +2,6 @@
 description: "Learn more about: Geography.ToWellKnownText"
 title: "Geography.ToWellKnownText"
 ms.date: 7/16/2020
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Geography.ToWellKnownText
 ## Syntax

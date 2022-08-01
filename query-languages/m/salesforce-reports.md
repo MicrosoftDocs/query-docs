@@ -2,11 +2,6 @@
 description: "Learn more about: Salesforce.Reports"
 title: "Salesforce.Reports"
 ms.date: 02/03/2021
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Salesforce.Reports
 

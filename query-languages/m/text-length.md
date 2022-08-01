@@ -2,11 +2,6 @@
 description: "Learn more about: Text.Length"
 title: "Text.Length"
 ms.date: 3/14/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Text.Length
 

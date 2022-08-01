@@ -2,11 +2,6 @@
 description: "Learn more about: Duration.TotalHours"
 title: "Duration.TotalHours"
 ms.date: 7/18/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Duration.TotalHours
 

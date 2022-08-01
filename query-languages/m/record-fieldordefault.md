@@ -2,11 +2,6 @@
 description: "Learn more about: Record.FieldOrDefault"
 title: "Record.FieldOrDefault"
 ms.date: 3/14/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Record.FieldOrDefault
 

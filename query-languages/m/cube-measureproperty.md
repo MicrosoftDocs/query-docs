@@ -2,11 +2,6 @@
 description: "Learn more about: Cube.MeasureProperty"
 title: "Cube.MeasureProperty"
 ms.date: 8/17/2018
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Cube.MeasureProperty
 

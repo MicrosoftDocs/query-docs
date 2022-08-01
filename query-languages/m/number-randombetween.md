@@ -2,11 +2,6 @@
 description: "Learn more about: Number.RandomBetween"
 title: "Number.RandomBetween"
 ms.date: 3/11/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Number.RandomBetween
 

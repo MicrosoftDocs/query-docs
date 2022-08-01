@@ -2,11 +2,6 @@
 description: "Learn more about: Number functions"
 title: "Number functions"
 ms.date: 5/16/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Number functions
 

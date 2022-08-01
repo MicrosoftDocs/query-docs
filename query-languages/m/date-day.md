@@ -2,11 +2,6 @@
 description: "Learn more about: Date.Day"
 title: "Date.Day"
 ms.date: 3/11/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date.Day
 

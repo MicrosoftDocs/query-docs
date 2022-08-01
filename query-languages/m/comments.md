@@ -2,11 +2,6 @@
 description: "Learn more about: Comments"
 title: "Comments"
 ms.date: 12/12/2018
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Comments
 You can add comments to your code with single-line comments `//` or multi-line comments that begin with `/*` and end with `*/`.  

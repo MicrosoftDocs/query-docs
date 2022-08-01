@@ -2,11 +2,6 @@
 description: "Learn more about: List.SingleOrDefault"
 title: "List.SingleOrDefault"
 ms.date: 3/11/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.SingleOrDefault
 

@@ -2,11 +2,6 @@
 description: "Learn more about: List.Modes"
 title: "List.Modes"
 ms.date: 7/15/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.Modes
 

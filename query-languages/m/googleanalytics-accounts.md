@@ -2,11 +2,6 @@
 description: "Learn more about: GoogleAnalytics.Accounts"
 title: "GoogleAnalytics.Accounts"
 ms.date: 4/16/2018
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # GoogleAnalytics.Accounts
 

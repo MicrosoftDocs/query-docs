@@ -2,10 +2,6 @@
 description: "Learn more about: AzureStorage.BlobContents"
 title: "AzureStorage.BlobContents"
 ms.date: 10/10/2019
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
 ---
 # AzureStorage.BlobContents
 

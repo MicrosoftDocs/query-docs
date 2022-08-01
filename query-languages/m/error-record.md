@@ -2,11 +2,6 @@
 description: "Learn more about: Error.Record"
 title: "Error.Record"
 ms.date: 1/24/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Error.Record
 

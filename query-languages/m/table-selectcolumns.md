@@ -2,11 +2,6 @@
 description: "Learn more about: Table.SelectColumns"
 title: "Table.SelectColumns"
 ms.date: 3/10/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.SelectColumns
 

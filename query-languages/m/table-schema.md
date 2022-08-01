@@ -2,11 +2,6 @@
 description: "Learn more about: Table.Schema"
 title: "Table.Schema"
 ms.date: 11/17/2021
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.Schema
 

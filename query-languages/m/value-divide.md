@@ -2,11 +2,6 @@
 description: "Learn more about: Value.Divide"
 title: "Value.Divide"
 ms.date: 8/2/2019
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Value.Divide
 

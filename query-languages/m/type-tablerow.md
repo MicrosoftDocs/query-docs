@@ -2,11 +2,6 @@
 description: "Learn more about: Type.TableRow"
 title: "Type.TableRow"
 ms.date: 3/14/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Type.TableRow
 

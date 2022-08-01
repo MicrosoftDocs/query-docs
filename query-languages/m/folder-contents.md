@@ -2,10 +2,6 @@
 description: "Learn more about: Folder.Contents"
 title: "Folder.Contents"
 ms.date: 9/13/2021
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
 ---
 # Folder.Contents
 

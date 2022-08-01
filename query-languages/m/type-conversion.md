@@ -2,11 +2,6 @@
 description: "Learn more about: Type conversion"
 title: "Type conversion"
 ms.date: 4/16/2018
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Type conversion
 The Power Query M formula language has formulas to convert between types. The following is a summary of conversion formulas in M. 

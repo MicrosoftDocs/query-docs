@@ -2,11 +2,6 @@
 description: "Learn more about: List.Median"
 title: "List.Median"
 ms.date: 3/11/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.Median
 

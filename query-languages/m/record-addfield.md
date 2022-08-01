@@ -2,11 +2,6 @@
 description: "Learn more about: Record.AddField"
 title: "Record.AddField"
 ms.date: 3/9/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Record.AddField
 

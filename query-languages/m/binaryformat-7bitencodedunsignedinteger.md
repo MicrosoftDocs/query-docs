@@ -2,11 +2,6 @@
 description: "Learn more about: BinaryFormat.7BitEncodedUnsignedInteger"
 title: "BinaryFormat.7BitEncodedUnsignedInteger"
 ms.date: 7/29/2019
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # BinaryFormat.7BitEncodedUnsignedInteger
 

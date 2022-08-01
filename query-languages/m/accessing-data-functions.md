@@ -2,10 +2,6 @@
 description: "Learn more about: Accessing data functions"
 title: "Accessing data functions"
 ms.date: 5/16/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
 ---
 # Accessing data functions
 
@@ -28,7 +24,7 @@ These functions access data and return table values. Most of these functions ret
 |[AzureStorage.Tables](azurestorage-tables.md)|Returns a navigational table containing a row for each table found at the account URL from an Azure storage vault. Each row contains a link to the azure table.|
 |[Cdm.Contents](cdm-contents.md)|This function is unavailable because it requires .NET 4.5.|
 |[Csv.Document](csv-document.md)|Returns the contents of a CSV document as a table using the specified encoding.|
-|[Cube.AddAndExpandDimensionColumn](cube-addandexpanddimensioncolumn.md)|Merges the specified dimension table, dimensionSelector, into the cube’s, cube, filter context and changes the dimensional granularity by expanding the specified set, attributeNames, of dimension attributes. |
+|[Cube.AddAndExpandDimensionColumn](cube-addandexpanddimensioncolumn.md)|Merges the specified dimension table, dimensionSelector, into the cube's, cube, filter context and changes the dimensional granularity by expanding the specified set, attributeNames, of dimension attributes. |
 |[Cube.AddMeasureColumn](cube-addmeasurecolumn.md)|Adds a column with the name column to the cube that contains the results of the measure measureSelector applied in the row context of each row. |
 |[Cube.ApplyParameter](cube-applyparameter.md)|Returns a cube after applying parameter with arguments to cube.|
 |[Cube.AttributeMemberId](cube-attributememberid.md)|Returns the unique member identifier from a member property value.|

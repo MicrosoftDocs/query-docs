@@ -2,11 +2,6 @@
 description: "Learn more about: Table.AddRankColumn"
 title: "Table.AddRankColumn"
 ms.date: 5/19/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.AddRankColumn
 

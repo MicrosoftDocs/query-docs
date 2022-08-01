@@ -2,11 +2,6 @@
 description: "Learn more about: Decimal.From"
 title: "Decimal.From"
 ms.date: 4/13/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Decimal.From
 

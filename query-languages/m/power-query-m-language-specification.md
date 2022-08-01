@@ -2,11 +2,6 @@
 description: "Learn more about: Power Query M language specification"
 title: "Power Query M language specification"
 ms.date: 4/7/2020
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Power Query M language specification
 

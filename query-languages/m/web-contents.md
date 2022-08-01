@@ -2,11 +2,6 @@
 description: "Learn more about: Web.Contents"
 title: "Web.Contents"
 ms.date: 3/14/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Web.Contents
 

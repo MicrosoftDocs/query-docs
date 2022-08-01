@@ -2,11 +2,6 @@
 description: "Learn more about: Date functions"
 title: "Date functions"
 ms.date: 5/16/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date functions
 

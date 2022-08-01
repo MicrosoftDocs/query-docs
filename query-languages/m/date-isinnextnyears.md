@@ -2,11 +2,6 @@
 description: "Learn more about: Date.IsInNextNYears"
 title: "Date.IsInNextNYears"
 ms.date: 3/11/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date.IsInNextNYears
 

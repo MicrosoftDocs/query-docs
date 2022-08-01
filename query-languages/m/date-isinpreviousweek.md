@@ -2,11 +2,6 @@
 description: "Learn more about: Date.IsInPreviousWeek"
 title: "Date.IsInPreviousWeek"
 ms.date: 3/11/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date.IsInPreviousWeek
 

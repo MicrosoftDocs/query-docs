@@ -2,11 +2,6 @@
 description: "Learn more about: Excel.ShapeTable"
 title: "Excel.ShapeTable"
 ms.date: 1/24/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Excel.ShapeTable
   

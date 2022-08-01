@@ -2,11 +2,6 @@
 description: "Learn more about: #table"
 title: "#table"
 ms.date: 7/18/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # #table
 

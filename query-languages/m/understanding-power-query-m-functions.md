@@ -2,11 +2,6 @@
 description: "Learn more about: Understanding Power Query M functions"
 title: "Understanding Power Query M functions"
 ms.date: 4/16/2018
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Understanding Power Query M functions
 In the Power Query M formula language, a **function** is a mapping from a set of input values to a single output value. A function is written by first naming the function parameters, and then providing an expression to compute the result of the function. The body of the function follows the goes-to (=&gt;) symbol. Optionally, type information can be included on parameters and the function return value. A function is defined and invoked in the body of a **let** statement. Parameters and/or return value can be implicit or explicit. Implicit parameters and/or return value are of type **any**. Type **any** is similar to an object type in other languages. All types in M derive from type **any**.  

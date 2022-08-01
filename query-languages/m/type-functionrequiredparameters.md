@@ -2,11 +2,6 @@
 description: "Learn more about: Type.FunctionRequiredParameters"
 title: "Type.FunctionRequiredParameters"
 ms.date: 3/14/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Type.FunctionRequiredParameters
 

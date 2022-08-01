@@ -2,11 +2,6 @@
 description: "Learn more about: ItemExpression.From"
 title: "ItemExpression.From"
 ms.date: 3/16/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # ItemExpression.From
 

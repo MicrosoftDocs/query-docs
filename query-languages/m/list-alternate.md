@@ -2,11 +2,6 @@
 description: "Learn more about: List.Alternate"
 title: "List.Alternate"
 ms.date: 3/16/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.Alternate
 

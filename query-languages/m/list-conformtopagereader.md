@@ -2,11 +2,6 @@
 description: "Learn more about: List.ConformToPageReader"
 title: "List.ConformToPageReader"
 ms.date: 8/21/2020
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.ConformToPageReader
 

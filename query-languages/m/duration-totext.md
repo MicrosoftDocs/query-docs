@@ -2,11 +2,6 @@
 description: "Learn more about: Duration.ToText"
 title: "Duration.ToText"
 ms.date: 3/8/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Duration.ToText
 

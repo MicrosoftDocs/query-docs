@@ -2,11 +2,6 @@
 description: "Learn more about: List.MinN"
 title: "List.MinN"
 ms.date: 3/16/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.MinN
 

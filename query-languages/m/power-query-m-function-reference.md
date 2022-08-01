@@ -2,11 +2,6 @@
 description: "Learn more about: Power Query M function reference"
 title: "Power Query M function reference"
 ms.date: 7/31/2019
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Power Query M function reference
 

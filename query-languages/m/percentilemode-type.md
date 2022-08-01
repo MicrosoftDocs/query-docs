@@ -2,11 +2,6 @@
 description: "Learn more about: PercentileMode.Type"
 title: "PercentileMode.Type"
 ms.date: 5/16/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # PercentileMode.Type
 

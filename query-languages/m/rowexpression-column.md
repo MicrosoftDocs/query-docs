@@ -2,11 +2,6 @@
 description: "Learn more about: RowExpression.Column"
 title: "RowExpression.Column"
 ms.date: 3/16/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # RowExpression.Column
 

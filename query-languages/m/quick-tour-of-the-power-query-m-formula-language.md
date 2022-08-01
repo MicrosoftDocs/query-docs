@@ -2,12 +2,8 @@
 description: "Learn more about: Quick tour of the Power Query M formula language"
 title: "Quick tour"
 ms.date: 12/12/2018
-ms.service: powerquery
 ms.topic: conceptual
-author: dougklopfenstein
-ms.author: dougklo
 ms.custom: intro-internal
-
 ---
 # Quick tour of the Power Query M formula language
 

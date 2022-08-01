@@ -2,11 +2,6 @@
 description: "Learn more about: Metadata"
 title: "Metadata"
 ms.date: 4/16/2018
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Metadata
 **Metadata** is information about a value that is associated with a value. **Metadata** is represented as a record value, called a metadata record. The fields of a **metadata record** can be used to store the metadata for a value. Every value has a metadata record. If the value of the metadata record has not been specified, then the metadata record is empty (has no fields). Associating a metadata record with a value does not change the value’s behavior in evaluations except for those that explicitly inspect metadata records.  

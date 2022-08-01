@@ -2,11 +2,6 @@
 description: "Learn more about: BinaryFormat.Choice"
 title: "BinaryFormat.Choice"
 ms.date: 3/7/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # BinaryFormat.Choice
 

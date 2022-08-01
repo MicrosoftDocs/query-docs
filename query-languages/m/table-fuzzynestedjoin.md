@@ -2,11 +2,6 @@
 description: "Learn more about: Table.FuzzyNestedJoin"
 title: "Table.FuzzyNestedJoin"
 ms.date: 5/19/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.FuzzyNestedJoin
   

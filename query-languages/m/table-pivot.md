@@ -2,11 +2,6 @@
 description: "Learn more about: Table.Pivot"
 title: "Table.Pivot"
 ms.date: 3/10/2021
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.Pivot
 

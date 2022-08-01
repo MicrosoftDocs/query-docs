@@ -2,11 +2,6 @@
 description: "Learn more about: Table.FirstValue"
 title: "Table.FirstValue"
 ms.date: 8/1/2019
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.FirstValue
 

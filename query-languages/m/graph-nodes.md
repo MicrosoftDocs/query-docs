@@ -2,11 +2,6 @@
 description: "Learn more about: Graph.Nodes"
 title: "Graph.Nodes"
 ms.date: 9/22/2020
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Graph.Nodes
 

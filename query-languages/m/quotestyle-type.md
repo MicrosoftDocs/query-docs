@@ -2,11 +2,6 @@
 description: "Learn more about: QuoteStyle.Type"
 title: "QuoteStyle.Type"
 ms.date: 5/16/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # QuoteStyle.Type
 

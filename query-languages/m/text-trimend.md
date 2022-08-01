@@ -2,11 +2,6 @@
 description: "Learn more about: Text.TrimEnd"
 title: "Text.TrimEnd"
 ms.date: 4/22/2020
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Text.TrimEnd
 

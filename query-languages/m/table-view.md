@@ -2,11 +2,6 @@
 description: "Learn more about: Table.View"
 title: "Table.View"
 ms.date: 4/13/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.View
 

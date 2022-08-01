@@ -2,11 +2,6 @@
 description: "Learn more about: Identity.IsMemberOf"
 title: "Identity.IsMemberOf"
 ms.date: 3/28/2019
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Identity.IsMemberOf
 

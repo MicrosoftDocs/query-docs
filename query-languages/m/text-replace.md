@@ -2,11 +2,6 @@
 description: "Learn more about: Text.Replace"
 title: "Text.Replace"
 ms.date: 3/14/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Text.Replace
 

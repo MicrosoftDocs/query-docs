@@ -2,11 +2,6 @@
 description: "Learn more about: Geometry.ToWellKnownText"
 title: "Geometry.ToWellKnownText"
 ms.date: 7/16/2020
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Geometry.ToWellKnownText
 ## Syntax

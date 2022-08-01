@@ -2,11 +2,6 @@
 description: "Learn more about: TextEncoding.Type"
 title: "TextEncoding.Type"
 ms.date: 5/16/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # TextEncoding.Type
 

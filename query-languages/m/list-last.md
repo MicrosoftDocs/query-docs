@@ -2,11 +2,6 @@
 description: "Learn more about: List.Last"
 title: "List.Last"
 ms.date: 3/11/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.Last
 

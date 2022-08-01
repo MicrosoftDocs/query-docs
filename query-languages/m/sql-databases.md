@@ -2,10 +2,6 @@
 description: "Learn more about: Sql.Databases"
 title: "Sql.Databases"
 ms.date: 11/23/2020
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
 ---
 # Sql.Databases
 

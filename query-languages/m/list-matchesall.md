@@ -2,11 +2,6 @@
 description: "Learn more about: List.MatchesAll"
 title: "List.MatchesAll"
 ms.date: 3/11/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.MatchesAll
 

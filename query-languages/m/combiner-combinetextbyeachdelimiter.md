@@ -2,11 +2,6 @@
 description: "Learn more about: Combiner.CombineTextByEachDelimiter"
 title: "Combiner.CombineTextByEachDelimiter"
 ms.date: 7/29/2019
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Combiner.CombineTextByEachDelimiter
 

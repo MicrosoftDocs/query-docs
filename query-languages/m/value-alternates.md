@@ -2,11 +2,6 @@
 description: "Learn more about: Value.Alternates"
 title: "Value.Alternates"
 ms.date: 5/12/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Value.Alternates
 

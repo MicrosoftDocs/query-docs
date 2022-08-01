@@ -2,11 +2,6 @@
 description: "Learn more about: Precision.Type"
 title: "Precision.Type"
 ms.date: 5/16/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Precision.Type
 

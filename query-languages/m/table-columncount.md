@@ -2,11 +2,6 @@
 description: "Learn more about: Table.ColumnCount"
 title: "Table.ColumnCount"
 ms.date: 3/14/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.ColumnCount
 

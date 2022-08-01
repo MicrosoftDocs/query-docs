@@ -2,11 +2,6 @@
 description: "Learn more about: Table.Sort"
 title: "Table.Sort"
 ms.date: 3/10/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.Sort
 

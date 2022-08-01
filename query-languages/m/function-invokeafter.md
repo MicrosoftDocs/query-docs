@@ -2,11 +2,6 @@
 description: "Learn more about: Function.InvokeAfter"
 title: "Function.InvokeAfter"
 ms.date: 7/30/2019
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Function.InvokeAfter
 

@@ -2,11 +2,6 @@
 description: "Learn more about: List.Min"
 title: "List.Min"
 ms.date: 3/11/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.Min
 

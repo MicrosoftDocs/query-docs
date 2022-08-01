@@ -2,11 +2,6 @@
 description: "Learn more about: Oracle.Database"
 title: "Oracle.Database"
 ms.date: 02/03/2021
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Oracle.Database
 

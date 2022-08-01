@@ -2,11 +2,6 @@
 description: "Learn more about: Binary functions"
 title: "Binary functions"
 ms.date: 7/19/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Binary functions
 

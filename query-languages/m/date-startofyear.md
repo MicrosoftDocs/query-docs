@@ -2,11 +2,6 @@
 description: "Learn more about: Date.StartOfYear"
 title: "Date.StartOfYear"
 ms.date: 3/11/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date.StartOfYear
 

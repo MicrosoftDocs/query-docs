@@ -2,11 +2,6 @@
 description: "Learn more about: Date.IsLeapYear"
 title: "Date.IsLeapYear"
 ms.date: 3/11/2022
-ms.service: powerquery
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date.IsLeapYear
 
