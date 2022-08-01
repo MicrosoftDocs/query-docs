@@ -42,7 +42,8 @@
       "ms.topic": "reference", 
       "ms.reviewer": "ehvonleh",
       "author": "dougklopfenstein",
-      "ms.author": "dougklo"
+      "ms.author": "dougklo",
+      "searchScope": ["Power Query","M formula language"]
     },
     "fileMetadata": { },
     "template": [],
