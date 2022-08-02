@@ -6,7 +6,7 @@ author: dougklopfenstein
 ms.service: powerquery
 
 ms.topic: article
-ms.date: 11/29/2021
+ms.date: 8/2/2022
 ms.author: dougklo
 ---
 
@@ -146,7 +146,7 @@ _verbatim-literal:_<br/>
 
 ### Identifiers
 
-_identifier:<br/> 
+_identifier:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;regular-identifier<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quoted-identifier<br/>
 regular-identifier:<br/>
@@ -206,7 +206,7 @@ _keyword:_  one of</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`section shared then true try type #binary #date #datetime`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`#datetimezone #duration #infinity #nan #sections #shared #table #time`
 
-### Operators and punctuators 
+### Operators and punctuators
 
 _operator-or-punctuator:_  one of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`, ; = < <= > >= <> + - * / & ( ) [ ] { } @ ? ?? => .. ...`
@@ -577,7 +577,7 @@ otherwise-clause:_<br/>
 default-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression_
 
-###  Literal Attributes
+### Literal Attributes
 
 _literal-attributes:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;record-literal<br/>

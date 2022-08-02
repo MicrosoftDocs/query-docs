@@ -6,7 +6,7 @@ author: dougklopfenstein
 ms.service: powerquery
 
 ms.topic: article
-ms.date: 11/29/2021
+ms.date: 8/2/2022
 ms.author: dougklo
 ---
 
@@ -25,7 +25,7 @@ _parenthesized-expression:_<br/>
 
 For example:
 
-```
+```powerquery-m
 1 + 2 * 3       // 7 
 (1 + 2) * 3     // 9
 ```
@@ -173,13 +173,13 @@ A metadata record is just a regular record and can contain any fields and values
 
 Every value has a default metadata record, even if one has not been specified. The default metadata record is empty. The following examples show accessing the metadata record of a text value using the `Value.Metadata` standard library function:
 
-```
+```powerquery-m
 Value.Metadata( "Mozart" )   // []
 ```
 
 Metadata records are generally _not preserved_ when a value is used with an operator or function that constructs a new value. For example, if two text values are concatenated using the `&` operator, the metadata of the resulting text value is the empty record `[]`. The following expressions are equivalent:
 
-```
+```powerquery-m
 "Amadeus " & ("Mozart" meta [ Rating = 5 ])  
 "Amadeus " & "Mozart"
 ```
@@ -192,7 +192,7 @@ The only operator that returns results that carry metadata is the [meta operator
 
 Values can be _cyclic_. For example:
 
-```
+```powerquery-m
 let l = {0, @l} in l
 // {0, {0, {0, ... }}}
 [A={B}, B={A}]
@@ -201,7 +201,7 @@ let l = {0, @l} in l
 
 M handles cyclic values by keeping construction of records, lists, and tables lazy. An attempt to construct a cyclic value that does not benefit from interjected lazy structured values yields an error:
 
-```
+```powerquery-m
 [A=B, B=A] 
 // [A = Error.Record("Expression.Error", 
 //         "A cyclic reference was encountered during evaluation"), 
@@ -244,7 +244,7 @@ The _item-access-expression_ `x{y}` returns:
 
 For example:
 
-```
+```powerquery-m
 {"a","b","c"}{0}                        // "a" 
 {1, [A=2], 3}{1}                        // [A=2] 
 {true, false}{2}                        // error 
@@ -258,7 +258,7 @@ The _item-access-expression_ also supports the form `x{y}?`, which returns `null
 
 For example:
 
-```
+```powerquery-m
 {"a","b","c"}{0}?                       // "a" 
 {1, [A=2], 3}{1}?                       // [A=2] 
 {true, false}{2}?                       // null 
@@ -270,7 +270,7 @@ For example:
 
 Item access does not force the evaluation of list or table items other than the one being accessed. For example:
 
-```
+```powerquery-m
 { error "a", 1, error "c"}{1}  // 1 
 { error "a", error "b"}{1}     // error "b"
 ```
@@ -333,7 +333,7 @@ The simplest form of field access is _required field selection_. It uses the ope
 
 For example:
 
-```
+```powerquery-m
 [A=1,B=2][B]       // 2 
 [A=1,B=2][C]       // error 
 [A=1,B=2][C]?      // null
@@ -342,7 +342,7 @@ For example:
 Collective access of multiple fields is supported by the operators for _required record projection_ and _optional record projection_. The operator `x[[y1],[y2],...]` projects the record to a new record with fewer fields (selected by `y1`, `y2`, `...`). If a selected field does not exist, an error is raised. The operator `x[[y1],[y2],...]` projects the record to a new record with the fields selected by `y1`, `y2`, `...`; if a field is missing, `null` is used instead. 
 For example:
 
-```
+```powerquery-m
 [A=1,B=2][[B]]           // [B=2] 
 [A=1,B=2][[C]]           // error 
 [A=1,B=2][[B],[C]]?      // [B=2,C=null]
@@ -350,44 +350,45 @@ For example:
 
 The forms `[y]` and `[y]?` are supported as a _shorthand_ reference to the identifier `_` (underscore). The following two expressions are equivalent:
 
-```
+```powerquery-m
 [A]                 
 _[A]
 ```
 
 The following example illustrates the shorthand form of field access:
 
-```
+```powerquery-m
 let _ = [A=1,B=2] in [A] //1
 ```
 
 The form `[[y1],[y2],...]` and `[[y1],[y2],...]?` are also supported as a shorthand and the following two expressions are likewise equivalent:
 
-```
+```powerquery-m
 [[A],[B]]                 
 _[[A],[B]]
 ```
 
 The shorthand form is particularly useful in combination with the `each` shorthand, a way to introduce a function of a single parameter named `_` (for details, see [Simplified declarations](m-spec-functions.md#simplified-declarations). Together, the two shorthands simplify common higher-order functional expressions:
 
-```
+```powerquery-m
 List.Select( {[a=1, b=1], [a=2, b=4]}, each [a] = [b]) 
 // {[a=1, b=1]}
 ```
 
 The above expression is equivalent to the following more cryptic looking longhand:
 
-```
+```powerquery-m
 List.Select( {[a=1, b=1], [a=2, b=4]}, (_) => _[a] = _[b]) 
 // {[a=1, b=1]}
 ```
 
 Field access does not force the evaluation of fields other than the one(s) being accessed. For example:
 
-```
+```powerquery-m
 [A=error "a", B=1, C=error "c"][B]  // 1 
 [A=error "a", B=error "b"][B]       // error "b"
 ```
+
 The following holds when a field access operator `x[y]`, `x[y]?`, `x[[y]]`, or `x[[y]]?` is evaluated:
 
 * Errors raised during the evaluation of expression `x` are propagated.
@@ -410,7 +411,7 @@ _metadata-expression:<br/>
 
 The following example constructs a text value with a metadata record using the `meta` operator and then accesses the metadata record of the resulting value using `Value.Metadata`:
 
-```
+```powerquery-m
 Value.Metadata( "Mozart" meta [ Rating = 5 ] ) 
 // [Rating = 5 ]
 Value.Metadata( "Mozart" meta [ Rating = 5 ] )[Rating] 
@@ -429,7 +430,7 @@ The following holds when applying the metadata combining operator `x meta y`:
 
 The standard library functions `Value.RemoveMetadata` and `Value.ReplaceMetadata` can be used to remove all metadata from a value and to replace a value's metadata (rather than merge metadata into possibly existing metadata). The following expressions are equivalent:
 
-```
+```powerquery-m
 x meta y  
 Value.ReplaceMetadata(x, Value.Metadata(x) & y) 
 Value.RemoveMetadata(x) meta (Value.Metadata(x) & y)
@@ -446,7 +447,7 @@ _equality-expression:<br/>
 
 For example:
 
-```
+```powerquery-m
 1 = 1            // true 
 1 = 2            // false 
 1 <> 1           // false 
@@ -457,7 +458,7 @@ null = null      // true
 
 Metadata is not part of equality or inequality comparison. For example:
 
-```
+```powerquery-m
 (1 meta [ a = 1 ]) = (1 meta [ a = 2 ]) // true 
 (1 meta [ a = 1 ]) = 1                  // true
 ```
@@ -478,7 +479,7 @@ The following holds when applying the equality operators `x = y` and `x <> y`:
 
 * The following is always true:
 
-```
+```powerquery-m
     (x = y) = not (x <> y)
 ```
 
@@ -486,7 +487,7 @@ The equality operators are defined for the following types:
 
 * The `null` value is only equal to itself.
 
-```
+```powerquery-m
     null = null    // true 
     null = true    // false 
     null = false   // false
@@ -494,7 +495,7 @@ The equality operators are defined for the following types:
 
 * The logical values `true` and `false` are only equal to themselves. For example:
 
-```
+```powerquery-m
     true = true      // true 
     false = false    // true 
     true = false     // false 
@@ -511,7 +512,7 @@ The equality operators are defined for the following types:
 
        For example:
 
-```
+```powerquery-m
         1 = 1,              // true 
         1.0 = 1             // true 
         2 = 1               // false 
@@ -539,11 +540,11 @@ The equality operators are defined for the following types:
 
       For example:
 
-```
+      ```powerquery-m
         {1, 2} = {1, 2}     // true 
         {2, 1} = {1, 2}     // false 
         {1, 2, 3} = {1, 2}  // false
-```
+      ```
 
 * Two records are equal if all of the following are true:
 
@@ -555,12 +556,12 @@ The equality operators are defined for the following types:
 
       For example:
 
-```
+      ```powerquery-m
         [ A = 1, B = 2 ] = [ A = 1, B = 2 ]        // true 
         [ B = 2, A = 1 ] = [ A = 1, B = 2 ]        // true 
         [ A = 1, B = 2, C = 3 ] = [ A = 1, B = 2 ] // false 
         [ A = 1 ] = [ A = 1, B = 2 ]               // false
-```
+      ```
 
 * Two tables are equal if all of the following are true:
 
@@ -574,11 +575,11 @@ The equality operators are defined for the following types:
 
       For example:
 
-```
+      ```powerquery-m
         #table({"A","B"},{{1,2}}) = #table({"A","B"},{{1,2}}) // true 
         #table({"A","B"},{{1,2}}) = #table({"X","Y"},{{1,2}}) // false 
         #table({"A","B"},{{1,2}}) = #table({"B","A"},{{2,1}}) // true
-```
+      ```
 
 * A function value is equal to itself, but may or may not be equal to another function value. If two function values are considered equal, then they will behave identically when invoked.
 
@@ -607,11 +608,10 @@ These operators are used to determine the relative ordering relationship between
 | `x > y` | `true` if `x` is greater than `y`, `false` otherwise |
 | `x <= y` | `true` if `x` is less than or equal to `y`, `false` otherwise |
 | `x >= y` | `true` if `x` is greater than or equal to `y`, `false` otherwise |
-| | |
 
 For example:
 
-```
+```powerquery-m
 0 <= 1            // true 
 null < 1          // null 
 null <= null      // null 
@@ -642,8 +642,8 @@ The following holds when evaluating an expression containing the relational oper
 
 * Two numbers `x` and `y` are compared according to the rules of the IEEE 754 standard:
 
-   * If either operand is `#nan`, the result is `false` for all relational operators.
-   * When neither operand is `#nan`, the operators compare the values of the two floatingpoint operands with respect to the ordering `-∞ < -max < ... < -min < -0.0 = +0.0 < +min < ... < +max < +∞` where min and max are the smallest and largest positive finite values that can be represented. The M names for -∞ and +∞ are `-#infinity` and `#infinity`.
+  * If either operand is `#nan`, the result is `false` for all relational operators.
+  * When neither operand is `#nan`, the operators compare the values of the two floatingpoint operands with respect to the ordering `-∞ < -max < ... < -min < -0.0 = +0.0 < +min < ... < +max < +∞` where min and max are the smallest and largest positive finite values that can be represented. The M names for -∞ and +∞ are `-#infinity` and `#infinity`.
 
     Notable effects of this ordering are:
 
@@ -670,23 +670,21 @@ The `and` operator returns `false` when at least one of its operands is `false`.
 
 Truth tables for the `or` and `and` operators are shown below, with the result of evaluating the left operand expression on the vertical axis and the result of evaluating the right operand expression on the horizontal axis.
 
-| *`and`* | `true` | `false` | `null` | `error` |
+| _`and`_ | `true` | `false` | `null` | `error` |
 | --- | --- | --- | --- | --- |
 | **`true`** | `true` | `false` | `null` | `error` |
 | **`false`** | `false` | `false` | `false` | `false` |
 | **`null`** | `null` | `false` | `null` | `error` |
 | **`error`** | `error` | `error` | `error` | `error` |
-| | | | | |
 
-| *`or`* | `true` | `false` | `null` | `error` |
+| _`or`_ | `true` | `false` | `null` | `error` |
 | --- | --- | --- | --- | --- |
 | **`or`** | `true` | `false` | `null` | `error` |
 | **`true`** | `true` | `true` | `true` | `true` |
 | **`false`** | `true` | `false` | `null` | `error` |
 | **`null`** | `true` | `null` | `null` | `error` |
 | **`error`** | `error` | `error` | `error` | `error` |
-| | | | | |
- 
+
 The following holds when evaluating an expression containing conditional logical operators:
 
 * Errors raised when evaluating the `x` or `y` expressions are propagated.
@@ -701,7 +699,7 @@ The following holds when evaluating an expression containing conditional logical
 
 The last two properties give the conditional logical operators their "conditional" qualification; properties also referred to as "short-circuiting". These properties are useful to write compact _guarded predicates_. For example, the following expressions are equivalent:
 
-```
+```powerquery-m
 d <> 0 and n/d > 1 if d <> 0 then n/d > 1 else false
 ```
 
@@ -726,7 +724,6 @@ Numbers in M are stored using a variety of representations to retain as much inf
 | --------- | --------- |
 | `Precision.Decimal` | 128-bit decimal representation with a range of &#177;1.0 x 10-28 to &#177;7.9 x 1028 and 28-29 significant digits. |
 | `Precision.Double` | Scientific representation using mantissa and exponent; conforms to the 64-bit binary double-precision IEEE 754 arithmetic standard [IEEE 754-2008](https://ieeexplore.ieee.org/servlet/opac?punumber=4610933). |
-| | |
 
 Arithmetic operations are performed by choosing a precision, converting both operands to that precision (if necessary), then performing the actual operation, and finally returning a number in the chosen precision.
 
@@ -758,7 +755,6 @@ The interpretation of the addition operator (`x + y`) is dependent on the kind o
 | `type duration` | `type` _datetime_ | `type` _datetime_ | |
 | `type` _datetime_ | `null` | `null` | |
 | `null` | `type` _datetime_ | `null` | |
-| | | | |
 
 In the table, `type` _datetime_ stands for any of `type date`, `type datetime`, `type datetimezone`, or `type time`. When adding a duration and a value of some type _datetime_, the resulting value is of that same type.
 
@@ -772,24 +768,23 @@ The sum of two numbers is computed using the _addition operator_, producing a nu
 
 For example:
 
-```
+```powerquery-m
 1 + 1             // 2 
 #nan + #infinity  // #nan
 ```
 
 The addition operator `+` over numbers uses Double Precision; the standard library function `Value.Add` can be used to specify Decimal Precision. The following holds when computing a sum of numbers:
 
-* The sum in Double Precision is computed according to the rules of 64-bit binary doubleprecision IEEE 754 arithmetic [IEEE 754-2008](https://ieeexplore.ieee.org/servlet/opac?punumber=4610933). The following table lists the results of all possible combinations of nonzero finite values, zeros, infinities, and NaN's. In the table, `x` and `y` are nonzero finite values, and `z` is the result of `x + y`. If `x` and `y` have the same magnitude but opposite signs, `z` is positive zero. If `x + y` is too large to be represented in the destination type, `z` is an infinity with the same sign as `x + y`. 
- 
+* The sum in Double Precision is computed according to the rules of 64-bit binary doubleprecision IEEE 754 arithmetic [IEEE 754-2008](https://ieeexplore.ieee.org/servlet/opac?punumber=4610933). The following table lists the results of all possible combinations of nonzero finite values, zeros, infinities, and NaN's. In the table, `x` and `y` are nonzero finite values, and `z` is the result of `x + y`. If `x` and `y` have the same magnitude but opposite signs, `z` is positive zero. If `x + y` is too large to be represented in the destination type, `z` is an infinity with the same sign as `x + y`.
+
    | + | y | +0 | -0 | +&#8734; | -&#8734; | NaN |
    | --- | --- | --- | --- | --- | --- | --- |
-   | <b>x</b> | z | x | x | +&#8734; | -&#8734; | NaN |
-   | <b>+0</b> | y | +0 | +0 | +&#8734; | -&#8734; | NaN |
-   | <b>-0</b> | y | +0 | -0 | +&#8734; | -&#8734; | NaN |
-   | <b>+&#8734;</b> | +&#8734; | +&#8734; | +&#8734; | +&#8734; | NaN | NaN |
-   | <b>-&#8734;</b> | -&#8734; | -&#8734; | -&#8734; | NaN | -&#8734; | NaN |
-   | <b>NaN</b> | NaN | NaN | NaN | NaN | NaN | NaN |
-   | | | | | | | |
+   | **x** | z | x | x | +&#8734; | -&#8734; | NaN |
+   | **+0** | y | +0 | +0 | +&#8734; | -&#8734; | NaN |
+   | **-0** | y | +0 | -0 | +&#8734; | -&#8734; | NaN |
+   | **+&#8734;** | +&#8734; | +&#8734; | +&#8734; | +&#8734; | NaN | NaN |
+   | **-&#8734;** | -&#8734; | -&#8734; | -&#8734; | NaN | -&#8734; | NaN |
+   | **NaN** | NaN | NaN | NaN | NaN | NaN | NaN |
 
 * The sum in Decimal Precision is computed without losing precision. The scale of the result is the larger of the scales of the two operands.
 
@@ -797,7 +792,7 @@ The addition operator `+` over numbers uses Double Precision; the standard libra
 
 The sum of two durations is the duration representing the sum of the number of 100nanosecond ticks represented by the durations. For example:
 
-```
+```powerquery-m
 #duration(2,1,0,15.1) + #duration(0,1,30,45.3) 
 // #duration(2, 2, 31, 0.4)
 ```
@@ -808,21 +803,21 @@ A _datetime_ `x` and a duration `y` may be added using `x + y` to compute a new 
 
 * If the datetime's days since epoch value is specified, construct a new datetime with the following information elements:
 
-   * Calculate a new days since epoch equivalent to dividing the magnitude of y by the number of 100-nanosecond ticks in a 24-hour period, truncating the decimal portion of the result, and adding this value to the x's days since epoch.
+  * Calculate a new days since epoch equivalent to dividing the magnitude of y by the number of 100-nanosecond ticks in a 24-hour period, truncating the decimal portion of the result, and adding this value to the x's days since epoch.
 
-   * Calculate a new ticks since midnight equivalent to adding the magnitude of y to the x's ticks since midnight, modulo the number of 100-nanosecond ticks in a 24-hour period. If x does not specify a value for ticks since midnight, a value of 0 is assumed.
+  * Calculate a new ticks since midnight equivalent to adding the magnitude of y to the x's ticks since midnight, modulo the number of 100-nanosecond ticks in a 24-hour period. If x does not specify a value for ticks since midnight, a value of 0 is assumed.
 
-   * Copy x's value for minutes offset from UTC unchanged.
+  * Copy x's value for minutes offset from UTC unchanged.
 
 * If the datetime's days since epoch value is unspecified, construct a new datetime with the following information elements specified:
 
-   * Calculate a new ticks since midnight equivalent to adding the magnitude of y to the x's ticks since midnight, modulo the number of 100-nanosecond ticks in a 24-hour period. If x does not specify a value for ticks since midnight, a value of 0 is assumed.
+  * Calculate a new ticks since midnight equivalent to adding the magnitude of y to the x's ticks since midnight, modulo the number of 100-nanosecond ticks in a 24-hour period. If x does not specify a value for ticks since midnight, a value of 0 is assumed.
 
-   * Copy x's values for days since epoch and minutes offset from UTC unchanged.
+  * Copy x's values for days since epoch and minutes offset from UTC unchanged.
 
 The following examples show calculating the absolute temporal sum when the datetime specifies the _days since epoch_:
 
-```
+```powerquery-m
 #date(2010,05,20) + #duration(0,8,0,0) 
     //#datetime( 2010, 5, 20, 8, 0, 0 ) 
     //2010-05-20T08:00:00 
@@ -842,7 +837,7 @@ The following examples show calculating the absolute temporal sum when the datet
 
 The following example shows calculating the datetime offset by duration for a given time:
 
-```
+```powerquery-m
 #time(8,0,0) + #duration(30,5,0,0) 
    //#time(13, 0, 0) 
    //13:00:00
@@ -864,7 +859,6 @@ The interpretation of the subtraction operator (`x - y`) is dependent on the kin
 | `type` _datetime_ | `type duration` | `type` _datetime_ | Datetime offset by negated duration |
 | `type` _datetime_ | `null` | `null` | |
 | `null` | `type` _datetime_ | `null` | |
-| | | | |
 
 In the table, `type` _datetime_ stands for any of `type date`, `type datetime`, `type datetimezone`, or `type time`. When subtracting a duration from a value of some type _datetime_, the resulting value is of that same type.
 
@@ -876,32 +870,31 @@ Errors raised when evaluating either operand are propagated.
 
 The difference between two numbers is computed using the _subtraction operator_, producing a number. For example:
 
-```
+```powerquery-m
 1 - 1                // 0 
 #nan - #infinity     // #nan
 ```
 
 The subtraction operator `-` over numbers uses Double Precision; the standard library function `Value.Subtract` can be used to specify Decimal Precision. The following holds when computing a difference of numbers:
 
-* The difference in Double Precision is computed according to the rules of 64-bit binary double-precision IEEE 754 arithmetic [IEEE 754-2008](https://ieeexplore.ieee.org/servlet/opac?punumber=4610933). The following table lists the results of all possible combinations of nonzero finite values, zeros, infinities, and NaN's. In the table, `x` and `y` are nonzero finite values, and `z` is the result of `x - y`. If `x` and `y` are equal, `z` is positive zero. If `x - y` is too large to be represented in the destination type, `z` is an infinity with the same sign as `x - y`. 
- 
+* The difference in Double Precision is computed according to the rules of 64-bit binary double-precision IEEE 754 arithmetic [IEEE 754-2008](https://ieeexplore.ieee.org/servlet/opac?punumber=4610933). The following table lists the results of all possible combinations of nonzero finite values, zeros, infinities, and NaN's. In the table, `x` and `y` are nonzero finite values, and `z` is the result of `x - y`. If `x` and `y` are equal, `z` is positive zero. If `x - y` is too large to be represented in the destination type, `z` is an infinity with the same sign as `x - y`.
+
    | - | y | +0 | -0 | +&#8734; | -&#8734; | NaN |
    | --- | --- | --- | --- | --- | --- | --- |
-   | <b>x</b> | z | x | x | -&#8734; | +&#8734; | NaN |
-   | <b>+0</b> | -y | +0 | +0 | -&#8734; | +&#8734; | NaN |
-   | <b>-0</b> | -y | -0 | +0 | -&#8734; | +&#8734; | NaN |
-   | <b>+&#8734;</b> | +&#8734; | +&#8734; | +&#8734; | NaN | +&#8734; | NaN |
-   | <b>-&#8734;</b> | -&#8734; | -&#8734; | -&#8734; | -&#8734; | NaN | NaN |
-   | <b>NaN</b> | NaN | NaN | NaN | NaN | NaN | NaN |
-   | | | | | | | |
- 
+   | **x** | z | x | x | -&#8734; | +&#8734; | NaN |
+   | **+0** | -y | +0 | +0 | -&#8734; | +&#8734; | NaN |
+   | **-0** | -y | -0 | +0 | -&#8734; | +&#8734; | NaN |
+   | **+&#8734;** | +&#8734; | +&#8734; | +&#8734; | NaN | +&#8734; | NaN |
+   | **-&#8734;** | -&#8734; | -&#8734; | -&#8734; | -&#8734; | NaN | NaN |
+   | **NaN** | NaN | NaN | NaN | NaN | NaN | NaN |
+
 * The difference in Decimal Precision is computed without losing precision. The scale of the result is the larger of the scales of the two operands.
 
 #### Difference of durations
 
 The difference of two durations is the duration representing the difference between the number of 100-nanosecond ticks represented by each duration. For example:
 
-```
+```powerquery-m
 #duration(1,2,30,0) - #duration(0,0,0,30.45) 
 // #duration(1, 2, 29, 29.55)
 ```
@@ -910,7 +903,7 @@ The difference of two durations is the duration representing the difference betw
 
 A _datetime_ `x` and a duration `y` may be subtracted using `x - y` to compute a new _datetime_. Here, _datetime_ stands for any of `date`, `datetime`, `datetimezone`, or `time`. The resulting _datetime_ has a distance from `x` on a linear timeline that is exactly the magnitude of `y`, in the direction opposite the sign of `y`. Subtracting positive durations yields results that are backwards in time relative to `x`, while subtracting negative values yields results that are forwards in time.
 
-```
+```powerquery-m
 #date(2010,05,20) - #duration(00,08,00,00) 
    //#datetime(2010, 5, 19, 16, 0, 0) 
    //2010-05-19T16:00:00 
@@ -923,7 +916,7 @@ A _datetime_ `x` and a duration `y` may be subtracted using `x - y` to compute a
 
 Two _datetimes_ `t` and `u` may be subtracted using `t - u` to compute the duration between them. Here, _datetime_ stands for any of `date`, `datetime`, `datetimezone`, or `time`. The duration produced by subtracting `u` from `t` must yield `t` when added to `u`.
 
-```
+```powerquery-m
 #date(2010,01,31) - #date(2010,01,15) 
 // #duration(16,00,00,00) 
 // 16.00:00:00 
@@ -940,7 +933,7 @@ Two _datetimes_ `t` and `u` may be subtracted using `t - u` to compute the durat
 
 Subtracting `t - u` when `u > t` results in a negative duration:
 
-```
+```powerquery-m
 #time(01,30,00) - #time(08,00,00) 
 // #duration(0, -6, -30, 0)
 ```
@@ -962,16 +955,16 @@ The interpretation of the multiplication operator (`x * y`) is dependent on the 
 | `type number` | `type duration` | `type duration` | Multiple of duration |
 | `type duration` | `null` | `null` | |
 | `null` | `type duration` | `null` | |
-| | | | | 
 
 For other combinations of values than those listed in the table, an error with reason code `"Expression.Error"` is raised. Each combination is covered in the following sections.
 
 Errors raised when evaluating either operand are propagated.
 
 #### Numeric product
+
 The product of two numbers is computed using the _multiplication operator_, producing a number. For example:
 
-```
+```powerquery-m
 2 * 4                // 8 
 6 * null             // null 
 #nan * #infinity     // #nan
@@ -983,14 +976,13 @@ The multiplication operator `*` over numbers uses Double Precision; the standard
 
    | * | +y | -y | +0 | -0 | +&#8734; | -&#8734; | NaN |
    | --- | --- | --- | --- | --- | --- | --- | --- |
-   | <b>+x</b> | +z | -z | +0 | -0 | +&#8734; | -&#8734; | NaN |
-   | <b>-x</b> | -z | +z | -0 | +0 | -&#8734; | +&#8734; | NaN |
-   | <b>+0</b> | +0 | -0 | +0 | -0 | NaN | NaN | NaN |
-   | <b>-0</b> | -0 | +0 | -0 | +0 | NaN | NaN | NaN |
-   | <b>+&#8734;</b> | +&#8734; | -&#8734; | NaN | NaN | +&#8734; | -&#8734; | NaN |
-   | <b>-&#8734;</b> | -&#8734; | +&#8734; | NaN | NaN | -&#8734; | +&#8734; | NaN |
-   | <b>NaN</b> | NaN | NaN | NaN | NaN | NaN | NaN | NaN |
-   | | | | | | | | |
+   | **+x** | +z | -z | +0 | -0 | +&#8734; | -&#8734; | NaN |
+   | **-x** | -z | +z | -0 | +0 | -&#8734; | +&#8734; | NaN |
+   | **+0** | +0 | -0 | +0 | -0 | NaN | NaN | NaN |
+   | **-0** | -0 | +0 | -0 | +0 | NaN | NaN | NaN |
+   | **+&#8734;** | +&#8734; | -&#8734; | NaN | NaN | +&#8734; | -&#8734; | NaN |
+   | **-&#8734;** | -&#8734; | +&#8734; | NaN | NaN | -&#8734; | +&#8734; | NaN |
+   | **NaN** | NaN | NaN | NaN | NaN | NaN | NaN | NaN |
 
 * The product in Decimal Precision is computed without losing precision. The scale of the result is the larger of the scales of the two operands.
 
@@ -998,7 +990,7 @@ The multiplication operator `*` over numbers uses Double Precision; the standard
 
 The product of a duration and a number is the duration representing the number of 100nanosecond ticks represented by the duration operand times the number operand. For example:
 
-```
+```powerquery-m
 #duration(2,1,0,15.1) * 2 
 // #duration(4, 2, 0, 30.2)
 ```
@@ -1016,7 +1008,6 @@ The interpretation of the division operator (`x / y`) is dependent on the kind o
 | `type duration` | `type duration` | `type duration` | Numeric quotient of durations |
 | `type duration` | `null` | `null` | |
 | `null` | `type duration` | `null` | |
-| | | | | 
 
 For other combinations of values than those listed in the table, an error with reason code `"Expression.Error"` is raised. Each combination is covered in the following sections.
 
@@ -1026,7 +1017,7 @@ Errors raised when evaluating either operand are propagated.
 
 The quotient of two numbers is computed using the _division operator_, producing a number. For example:
 
-```
+```powerquery-m
 8 / 2               // 4 
 8 / 0               // #infinity 
 0 / 0               // #nan 
@@ -1040,30 +1031,30 @@ The division operator `/` over numbers uses Double Precision; the standard libra
 
    | / | +y | -y | +0 | -0 | +&#8734; | -&#8734; | NaN |
    | --- | --- | --- | --- | --- | --- | --- | --- |
-   | <b>+x</b> | +z | -z | +&#8734; | -&#8734; | +0 | -0 | NaN |
-   | <b>-x</b> | -z | +z | -&#8734; | +&#8734; | -0 | +0 | NaN |
-   | <b>+0</b> | +0 | -0 | NaN | NaN | +0 | -0 | NaN |
-   | <b>-0</b> | -0 | +0 | NaN | NaN | -0 | +0 | NaN |
-   | <b>+&#8734;</b> | +&#8734; | -&#8734; | +&#8734; | -&#8734; | NaN | NaN | NaN |
-   | <b>-&#8734;</b> | -&#8734; | +&#8734; | -&#8734; | +&#8734; | NaN | NaN | NaN |
-   | <b>NaN</b> | NaN | NaN | NaN | NaN | NaN | NaN | NaN |
-   | | | | | | | | |
- 
+   | **+x** | +z | -z | +&#8734; | -&#8734; | +0 | -0 | NaN |
+   | **-x** | -z | +z | -&#8734; | +&#8734; | -0 | +0 | NaN |
+   | **+0** | +0 | -0 | NaN | NaN | +0 | -0 | NaN |
+   | **-0** | -0 | +0 | NaN | NaN | -0 | +0 | NaN |
+   | **+&#8734;** | +&#8734; | -&#8734; | +&#8734; | -&#8734; | NaN | NaN | NaN |
+   | **-&#8734;** | -&#8734; | +&#8734; | -&#8734; | +&#8734; | NaN | NaN | NaN |
+   | **NaN** | NaN | NaN | NaN | NaN | NaN | NaN | NaN |
+
 * The sum in Decimal Precision is computed without losing precision. The scale of the result is the larger of the scales of the two operands.
 
 #### Quotient of durations
 
 The quotient of two durations is the number representing the quotient of the number of 100nanosecond ticks represented by the durations. For example:
 
-```
+```powerquery-m
 #duration(2,0,0,0) / #duration(0,1,30,0) 
 // 32
 ```
 
 #### Scaled durations
+
 The quotient of a duration `x` and a number `y` is the duration representing the quotient of the number of 100-nanosecond ticks represented by the duration `x` and the number `y`. For example:
 
-```
+```powerquery-m
 #duration(2,0,0,0) / 32 
 // #duration(0,1,30,0)
 ```
@@ -1083,7 +1074,6 @@ The combination operator (`x & y`) is defined over the following kinds of values
 | `type list` | `type list` | `type list` | Concatenation |
 | `type record` | `type record` | `type record` | Merge |
 | `type table` | `type table` | `type table` | Concatenation |
-| | | | |
 
 ### Concatenation
 
@@ -1091,13 +1081,13 @@ Two text, two list, or two table values can be concatenated using `x & y`.
 
 The following example illustrates concatenating text values:
 
-```
+```powerquery-m
 "AB" & "CDE"     // "ABCDE"
 ```
 
 The following example illustrates concatenating lists:
 
-```
+```powerquery-m
 {1, 2} & {3}     // {1, 2, 3}
 ```
 
@@ -1121,7 +1111,7 @@ Two records can be merged using `x & y`, producing a record that includes fields
 
 The following examples illustrate merging records:
 
-```
+```powerquery-m
 [ x = 1 ] & [ y = 2 ]                // [ x = 1, y = 2 ] 
 [ x = 1, y = 2 ] & [ x = 3, z = 4 ]  // [ x = 3, y = 2, z = 4 ]
 ```
@@ -1146,10 +1136,11 @@ A date `x` can be merged with a time `y` using `x & y`, producing a datetime tha
 
 The following example illustrates merging a date and a time:
 
-```
+```powerquery-m
 #date(2013,02,26) & #time(09,17,00) 
 // #datetime(2013,02,26,09,17,00)
 ```
+
 The following holds when merging two records using `x + y`:
 
 * Errors raised when evaluating the `x` or `y` expressions are propagated.
@@ -1168,20 +1159,19 @@ _unary-expression:<br/>
 
 ### Unary plus operator
 
-The unary plus operator (`+x`) is defined for the following kinds of values: 
- 
+The unary plus operator (`+x`) is defined for the following kinds of values:
+
 | X | Result | Interpretation |
 | --- | --- | --- |
 | `type number` | `type number` | Unary plus |
 | `type duration` | `type duration` | Unary plus |
 | `null` | `null | |
-| | | | 
 
 For other values, an error with reason code `"Expression.Error"` is raised.
 
 The unary plus operator allows a `+` sign to be applied to a number, datetime, or null value. The result is that same value. For example:
 
-```
+```powerquery-m
 + - 1                 // -1 
 + + 1                 // 1 
 + #nan                // #nan 
@@ -1203,13 +1193,12 @@ The unary minus operator (`-x`) is defined for the following kinds of values:
 | `type number` | `type number ` | Negation |
 | `type duration` | `type duration` | Negation |
 | `null` | `null` | |
-| | | | 
 
 For other values, an error with reason code `"Expression.Error"` is raised.
 
 The unary minus operator is used to change the sign of a number or duration. For example:
 
-```
+```powerquery-m
 - (1 + 1)       // -2 
 - - 1           // 1 
 - - - 1         // -1 
@@ -1233,11 +1222,10 @@ The logical negation operator (`not`) is defined for the following kinds of valu
 | --- | --- | --- |
 | `type logical` | `type logical` | Negation |
 | `null` | `null` | |
-| | | | 
- 
+
 This operator computes the logical `not` operation on a given logical value. For example:
 
-```
+```powerquery-m
 not true             // false 
 not false            // true 
 not (true and true)  // false
@@ -1262,8 +1250,7 @@ The type compatibility operator `x is y`  is defined for the following types of 
 | X | Y | Result |
 | --- | --- | --- |
 | `type any` | _nullable-primitive-type_ | `type logical` |
-| | | |
- 
+
 The expression `x is y` returns `true` if the ascribed type of `x` is compatible with `y`, and returns `false` if the ascribed type of `x` is incompatible with `y`. `y` must be a _nullable-primitivetype_.
 
 _is-expression:<br/>
@@ -1289,8 +1276,7 @@ The type assertion operator `x as y` is defined for the following types of value
 | X | Y | Result |
 | --- | --- | --- |
 | `type any` | _nullable-primitive-type_ | `type any` |
-| | | |
- 
+
 The expression `x as y` asserts that the value `x` is compatible with `y` as per the `is` operator. If it is not compatible, an error is raised. `y` must be a _nullable-primitive-type_.
 
 _as-expression:<br/>
@@ -1305,7 +1291,7 @@ The expression `x as y` is evaluated as follows:
 
 Examples:
 
-```
+```powerquery-m
 1 as number               // 1 
 "A" as number             // error 
 null as nullable number   // null

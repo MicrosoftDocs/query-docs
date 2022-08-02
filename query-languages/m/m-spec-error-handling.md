@@ -6,7 +6,7 @@ author: dougklopfenstein
 ms.service: powerquery
 
 ms.topic: article
-ms.date: 2/28/2020
+ms.date: 8/2/2022
 ms.author: dougklo
 ---
 
@@ -29,20 +29,20 @@ _error-raising-expression:_<br/>
 
 Text values can be used as shorthand for error values. For example:
 
-```
+```powerquery-m
 error "Hello, world" // error with message "Hello, world"
 ```
 
 Full error values are records and can be constructed using the `Error.Record` function:
 
-```
+```powerquery-m
 error Error.Record("FileNotFound", "File my.txt not found",
      "my.txt")
 ```
 
 The above expression is equivalent to:
 
-```
+```powerquery-m
 error [ 
     Reason = "FileNotFound", 
     Message = "File my.txt not found", 
@@ -62,7 +62,7 @@ Raising an error will cause the current expression evaluation to stop, and the e
 
 An _error-handling-expression_ is used to handle an error:
 
-_error-handling-expression:<br/>
+_error-handling-expression:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`try` _protected-expression otherwise-clause<sub>opt</sub><br/>
 protected-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
@@ -75,13 +75,13 @@ The following holds when evaluating an _error-handling-expression_ without an _o
 
 * If the evaluation of the protected-expression does not result in an error and produces a value x, the value produced by the error-handling-expression is a record of the following form:
 
-```
+```powerquery-m
     [ HasErrors = false, Value = x ]
 ```
 
 * If the evaluation of the protected-expression raises an error value e, the result of the error-handling-expression is a record of the following form:
 
-```
+```powerquery-m
     [ HasErrors = true, Error = e ]
 ```
 
@@ -97,7 +97,7 @@ The following holds when evaluating an _error-handling-expression_ with an _othe
 
 The following example illustrates an _error-handling-expression_ in a case where no error is raised:
 
-```
+```powerquery-m
 let
     x = try "A"
 in
@@ -107,7 +107,7 @@ in
 
 The following example shows raising an error and then handling it:
 
-```
+```powerquery-m
 let
     x = try error "A" 
 in
@@ -117,14 +117,14 @@ in
 
 An otherwise clause can be used to replace errors handled by a try expression with an alternative value:
 
-```
+```powerquery-m
 try error "A" otherwise 1 
 // 1
 ```
 
 If the otherwise clause also raises an error, then so does the entire try expression:
 
-```
+```powerquery-m
 try error "A" otherwise error "B" 
 // error with message "B"
 ```
@@ -133,7 +133,7 @@ try error "A" otherwise error "B"
 
 The following example shows a record initializer with a field `A` that raises an error and is accessed by two other fields `B` and `C`. Field `B` does not handle the error that is raised by `A`, but `C` does. The final field `D` does not access `A` and so it is not affected by the error in `A`.
 
-```
+```powerquery-m
 [ 
     A = error "A", 
     B = A + 1,
@@ -147,7 +147,7 @@ The following example shows a record initializer with a field `A` that raises an
 
 The result of evaluating the above expression is:
 
-```
+```powerquery-m
 [ 
     A = // error with message "A" 
     B = // error with message "A" 
@@ -158,7 +158,7 @@ The result of evaluating the above expression is:
 
 Error handling in M should be performed close to the cause of errors to deal with the effects of lazy field initialization and deferred closure evaluations. The following example shows an unsuccessful attempt at handling an error using a `try` expression:
 
-```
+```powerquery-m
 let
     f = (x) => [ a = error "bad", b = x ],
     g = try f(42) otherwise 123
@@ -172,7 +172,7 @@ In this example, the definition `g` was meant to handle the error raised when ca
 
 While an expression is being developed, an author may want to leave out the implementation for some parts of the expression, but may still want to be able to execute the expression. One way to handle this case is to raise an error for the unimplemented parts. For example:
 
-```
+```powerquery-m
 (x, y) =>
      if x > y then
          x - y
@@ -188,7 +188,6 @@ _not-implemented-expression:_<br/>
 
 For example, the following is equivalent to the previous example:
 
-```
+```powerquery-m
 (x, y) => if x > y then x - y else ...
 ```
-

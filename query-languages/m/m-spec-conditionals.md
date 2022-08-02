@@ -6,7 +6,7 @@ author: dougklopfenstein
 ms.service: powerquery
 
 ms.topic: article
-ms.date: 2/28/2020
+ms.date: 8/2/2022
 ms.author: dougklo
 ---
 
@@ -16,7 +16,7 @@ ms.author: dougklo
 The _if-expression_ selects from two expressions based on the value of a logical input value and evaluates only the selected expression.
 
 _if-expression:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `if`  _if-condition_  `then`  _true-expression_  `else`  _false-expression<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `if`  _if-condition_  `then`  _true-expression_  `else`  _false-expression<br/>
 if-condition:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
 true-expression:<br/>
@@ -26,7 +26,7 @@ false-expression:<br/>
 
 The following are examples of _if-expressions_:
 
-```
+```powerquery-m
 if 2 > 1 then 2 else 1          // 2
 if 1 = 1 then "yes" else "no"   // "yes"
 ```
@@ -42,4 +42,3 @@ The following holds when evaluating an _if-expression_:
 * The result of the _if-expression_ is the value of the _true-expression_ if the _if-condition_ is `true`, and the value of the _false-expression_ if the _if-condition_ is `false`.
 
 * Errors raised during the evaluation of the _if-condition_, _true-expression_, or _falseexpression_ are propagated.
-

@@ -6,7 +6,7 @@ author: dougklopfenstein
 ms.service: powerquery
 
 ms.topic: article
-ms.date: 11/29/2021
+ms.date: 8/2/2022
 ms.author: dougklo
 ---
 
@@ -32,7 +32,7 @@ The set of _primitive types_ includes the types of primitive values a number of 
 
 All types that are not members of the closed set of primitive types are collectively referred to as _custom types_. Custom types can be written using a `type-expression`:
 
-_type-expression:<br/> 
+_type-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`type` _primary-type<br/> 
 type:<br/>
@@ -51,33 +51,33 @@ primitive-type:_ one of<br/>
 
 The _primitive-type_ names are _contextual keywords_ recognized only in a _type_ context. The use of parentheses in a _type_ context moves the grammar back to a regular expression context, requiring the use of the type keyword to move back into a type context. For example, to invoke a function in a _type_ context, parentheses can be used:
 
-```
+```powerquery-m
 type nullable ( Type.ForList({type number}) )   
 // type nullable {number}
 ```
 
 Parentheses can also be used to access a variable whose name collides with a _primitive-type_ name:
 
-```
+```powerquery-m
 let  record = type [ A = any ]  in  type {(record)} 
 // type {[ A = any ]}
 ```
 
 The following example defines a type that classifies a list of numbers:
 
-```
+```powerquery-m
 type { number }
 ```
 
 Similarly, the following example defines a custom type that classifies records with mandatory fields named `X` and `Y` whose values are numbers:
 
-```
+```powerquery-m
 type [ X = number, Y = number ]
 ```
 
 The ascribed type of a value is obtained using the standard library function [Value.Type](value-type.md), as shown in the following examples:
 
-```
+```powerquery-m
 Value.Type( 2 )                 // type number 
 Value.Type( {2} )               // type list 
 Value.Type( [ X = 1, Y = 2 ] )  // type record
@@ -85,7 +85,7 @@ Value.Type( [ X = 1, Y = 2 ] )  // type record
 
 The `is` operator is used to determine whether a value's type is compatible with a given type, as shown in the following examples:
 
-```
+```powerquery-m
 1 is number          // true 
 1 is text            // false 
 {2} is list          // true
@@ -93,7 +93,7 @@ The `is` operator is used to determine whether a value's type is compatible with
 
 The `as` operator checks if the value is compatible with the given type, and raises an error if it is not. Otherwise, it returns the original value.
 
-```
+```powerquery-m
 Value.Type( 1 as number )   // type number 
 {2} as text                 // error, type mismatch
 ```
@@ -103,7 +103,7 @@ Note that the `is` and `as` operators only accept primitive types as their right
 A type `X` is _compatible_ with a type `Y` if and only if all values that conform to `X` also conform to `Y`. All types are compatible with type `any` and no types (but `none` itself) are compatible with type `none`. The following graph shows the compatibility relation. (Type compatibility is reflexive and transitive. It forms a lattice with type `any` as the top and type `none` as the bottom value.) The names of abstract types are set in _italics_. 
 
 ![Type compatibility](media/m-spec-type-compatibility.png)
- 
+
 The following operators are defined for type values:
 
 | Operator | Result |
@@ -111,7 +111,6 @@ The following operators are defined for type values:
 | `x = y` | Equal |
 | `x <> y` | Not equal |
 | `x ?? y` | Coalesce |
-| | |
 
 The native type of type values is the intrinsic type `type`.
 
@@ -119,7 +118,7 @@ The native type of type values is the intrinsic type `type`.
 
 Types in the M language form a disjoint hierarchy rooted at type `any`, which is the type that classifies all values. Any M value conforms to exactly one primitive subtype of `any`. The closed set of primitive types deriving from type `any` are as follows:
 
-* `type null`,  which classifies the null value. 
+* `type null`,  which classifies the null value.
 * `type logical`, which classifies the values true and false.
 * `type number`, which classifies number values.
 * `type time`, which classifies time values.
@@ -153,7 +152,7 @@ The result of evaluating a _list-type_ is a _list type value_ whose base type is
 
 The following examples illustrate the syntax for declaring homogeneous list types:
 
-```
+```powerquery-m
 type { number }        // list of numbers type 
      { record }        // list of records type
      {{ text }}        // list of lists of text values
@@ -167,7 +166,7 @@ The item type of a list type indicates a bound: all items of a conforming list c
 
 Any value that is a record conforms to the intrinsic type record, which does not place any restrictions on the field names or values within a record value. A _record-type value_ is used to restrict the set of valid names as well as the types of values that are permitted to be associated with those names.
 
-_record-type:_<br/> 
+_record-type:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[` _open-record-marker_  `]`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`  _field-specification-list<sub>opt</sub>_  `]`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`  _field-specification-list ,  open-record-marker_  `]`<br/>
@@ -187,7 +186,7 @@ The result of evaluating a _record-type_ is a type value whose base type is `rec
 
 The following examples illustrate the syntax for declaring record types:
 
-```
+```powerquery-m
 type [ X = number, Y = number] 
 type [ Name = text, Age = number ]
 type [ Title = text, optional Description = text ] 
@@ -196,7 +195,7 @@ type [ Name = text, ... ]
 
 Record types are _closed_ by default, meaning that additional fields not present in the _fieldspecification-list_ are not allowed to be present in conforming values. Including the _openrecord-marker_ in the record type declares the type to be _open_, which permits fields not present in the field specification list. The following two expressions are equivalent:
 
-```
+```powerquery-m
 type record   // primitive type classifying all records 
 type [ ... ]  // custom type classifying all records
 ```
@@ -240,7 +239,7 @@ The result of evaluating a _function-type_ is a type value whose base type is `f
 
 The following examples illustrate the syntax for declaring function types:
 
-```
+```powerquery-m
 type function (x as text) as number 
 type function (y as number, optional z as text) as any
 ```
@@ -262,7 +261,7 @@ The result of evaluating a _table-type_ is a type value whose base type is `tabl
 
 The _row type_ of a table specifies the column names and column types of the table as a closed record type. So that all table values conform to the type `table`, its row type is type `record` (the empty open record type). Thus, type table is abstract since no table value can have type `table`'s row type (but all table values have a row type that is compatible with type `table`'s row type). The following example shows the construction of a table type:
 
-```
+```powerquery-m
 type table [A = text, B = number, C = binary] 
 // a table type with three columns named A, B, and C 
 // of column types text, number, and binary, respectively
@@ -270,10 +269,9 @@ type table [A = text, B = number, C = binary]
 
 A table-type value also carries the definition of a table value's _keys_. A key is a set of column names. At most one key can be designated as the table's _primary key_. (Within M, table keys have no semantic meaning. However, it is common for external data sources, such as databases or OData feeds, to define keys over tables. Power Query uses key information to improve performance of advanced functionality, such as cross-source join operations.)
 
-The standard library functions `Type.TableKeys`, `Type.AddTableKey`, and 
-`Type.ReplaceTableKeys` can be used to obtain the keys of a table type, add a key to a table type, and replace all keys of a table type, respectively.
+The standard library functions `Type.TableKeys`, `Type.AddTableKey`, and `Type.ReplaceTableKeys` can be used to obtain the keys of a table type, add a key to a table type, and replace all keys of a table type, respectively.
 
-```
+```powerquery-m
 Type.AddTableKey(tableType, {"A", "B"}, false) 
 // add a non-primary key that combines values from columns A and B 
 Type.ReplaceTableKeys(tableType, {}) 
@@ -289,14 +287,14 @@ _nullable-type:_<br/>
 
 The result is an abstract type that allows values of type _T_ or the value `null`.
 
-```
+```powerquery-m
 42 is nullable number             // true null is
 nullable number                   // true
 ```
 
 Ascription of `type nullable` _T_ reduces to ascription of `type null` or `type` _T_. (Recall that nullable types are abstract and no value can be directly of abstract type.)
 
-```
+```powerquery-m
 Value.Type(42 as nullable number)       // type number
 Value.Type(null as nullable number)     // type null
 ```
@@ -310,8 +308,7 @@ The following hold (for any <code>type <em>T</em></code>):
 
 The following are pairwise equivalent (for any <code>type <em>T</em></code>):
 
-
-&nbsp;&nbsp;&nbsp;&nbsp;`type nullable any`<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;`type nullable any`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;`any`<br/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;`Type.NonNullable(type any)`<br/>
@@ -319,22 +316,21 @@ The following are pairwise equivalent (for any <code>type <em>T</em></code>):
 
 &nbsp;&nbsp;&nbsp;&nbsp;`type nullable none`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;`type null`<br/> 
- 
+
 &nbsp;&nbsp;&nbsp;&nbsp;`Type.NonNullable(type null)`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;`type none`<br/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;<code>type nullable nullable <em>T</em></code><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<code>type nullable <em>T</em></code><br/> 
- 
-&nbsp;&nbsp;&nbsp;&nbsp;<code>Type.NonNullable(Type.NonNullable(type <em>T</em>))</code><br/> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>Type.NonNullable(Type.NonNullable(type <em>T</em>))</code><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<code>Type.NonNullable(type <em>T</em>)</code><br/> 
- 
-&nbsp;&nbsp;&nbsp;&nbsp;<code>Type.NonNullable(type nullable <em>T</em>)</code><br/> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>Type.NonNullable(type nullable <em>T</em>)</code><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<code>Type.NonNullable(type <em>T</em>)</code><br/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;<code>type nullable (Type.NonNullable(type <em>T</em>))</code><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<code>type nullable <em>T</em></code>
-
 
 ## Ascribed type of a value
 
@@ -346,7 +342,7 @@ Library functions may choose to compute and ascribe complex types to results bas
 
 The ascribed type of a value may be obtained using the library function `Value.Type`. For example:
 
-```
+```powerquery-m
 Value.Type( Value.ReplaceType( {1}, type {number} ) 
 // type {number}
 ```
@@ -357,7 +353,7 @@ Type equivalence is not defined in M. Any two type values that are compared for 
 
 Compatibility between a given type and a nullable primitive type can be determined using the library function `Type.Is`, which accepts an arbitrary type value as its first and a nullable primitive type value as its second argument:
 
-```
+```powerquery-m
 Type.Is(type text, type nullable text)  // true 
 Type.Is(type nullable text, type text)  // false 
 Type.Is(type number, type text)         // false 
@@ -369,7 +365,7 @@ There is no support in M for determining compatibility of a given type with a cu
 
 The standard library does include a collection of functions to extract the defining characteristics from a custom type, so specific compatibility tests can be implemented as M expressions. Below are some examples; consult the M library specification for full details.
 
-```
+```powerquery-m
 Type.ListItem( type {number} ) 
   // type number 
 Type.NonNullable( type nullable text ) 
@@ -389,4 +385,3 @@ Type.FunctionReturn(
         type function (x as number, optional y as text) as number) 
   // type number 
 ```
-

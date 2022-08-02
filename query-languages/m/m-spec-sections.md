@@ -6,7 +6,7 @@ author: dougklopfenstein
 ms.service: powerquery
 
 ms.topic: article
-ms.date: 8/23/2021
+ms.date: 8/2/2022
 ms.author: dougklo
 ---
 
@@ -31,7 +31,7 @@ In M, a section is an organizational concept that allows related expressions to 
 
 The following example shows a section-document:
 
-```
+```powerquery-m
 section Section1; 
 
 A = 1;                          //1     
@@ -46,7 +46,7 @@ _section-access-expression:<br/>
 
 The following example shows a set of two documents containing sections that are mutually referential:
 
-```
+```powerquery-m
 section Section1; 
 A = "Hello";                    //"Hello" 
 B = 1 + Section2!A;             //3
@@ -60,7 +60,7 @@ Section members may optionally be declared as `shared`, which omits the requirem
 
 The following example illustrates the behavior of shared members when used across sections within the same set of documents:
 
-```
+```powerquery-m
 section Section1;  
 shared A = 1;        // 1 
 
@@ -75,7 +75,7 @@ C = Section1!A + 2;  // 3
 
 Defining a shared member with the same name in different sections will produce a valid global environment, however accessing the shared member will raise an error when accessed.
 
-```
+```powerquery-m
 section Section1; 
 shared A = 1; 
 
@@ -116,7 +116,7 @@ The `#sections` intrinsic variable returns all sections within the global enviro
 
 The following example shows a document consisting of two sections and the record produced by evaluating the `#sections` intrinsic variable within the context of that document:
 
-```
+```powerquery-m
 section Section1; 
 A = 1; 
 B = 2;  
@@ -134,7 +134,7 @@ D = "world";
 
 The following holds when evaluating `#sections`:
 
-* The `#sections` intrinsic variable preserves the evaluation state of all section member expressions within the document. 
+* The `#sections` intrinsic variable preserves the evaluation state of all section member expressions within the document.
 * The `#sections` intrinsic variable does not force the evaluation of any unevaluated section members.
 
 ### #shared
@@ -143,7 +143,7 @@ The `#shared` intrinsic variable returns a record containing the names and value
 
 The following example shows a document with two shared members and the corresponding record produced by evaluating the #shared intrinsic variable within the context of that document:
 
-```
+```powerquery-m
 section Section1;
 shared A = 1; 
 B = 2; 

@@ -1,22 +1,23 @@
 ---
 description: "Learn more about: Operators"
 title: "Operators | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo
-
 ---
+
 # Operators
+
 The Power Query M formula language includes a set of operators that can be used in an expression. **Operators** are applied to **operands** to form symbolic expressions. For example, in the expression 1 + 2 the numbers 1 and 2 are operands and the operator is the addition operator (+).  
   
 The meaning of an operator can vary depending on the type of operand values. The language has the following operators:  
   
-### Plus operator (+)  
-  
+### Plus operator (+)
+
 |Expression|Equals|  
 |--------------|----------|  
 |1 + 2|Numeric addition: 3|  
@@ -30,7 +31,8 @@ The meaning of an operator can vary depending on the type of operand values. The
 |{1} &amp; {2, 3}|List concatenation: {1, 2, 3}|  
 |[ a = 1 ] &amp; [ b = 2 ]|Record merge: [ a = 1, b = 2 ]|  
   
-### List of M operators  
+### List of M operators
+
 **Common operators** which apply to null, logical, number, time, date, datetime, datetimezone, duration, text, binary)  
   
 |Operator|Description|  
@@ -67,7 +69,7 @@ The meaning of an operator can vary depending on the type of operand values. The
 |------------|---------------|  
 |&amp;|Concatenation|  
   
-**List, record, table operators**  
+**List, record, table operators**
   
 |Operator|Description|  
 |------------|---------------|  
@@ -75,26 +77,26 @@ The meaning of an operator can vary depending on the type of operand values. The
 |&lt;&gt;|Not equal|  
 |&amp;|Concatenation|  
   
-**Record lookup operator**  
+**Record lookup operator**
   
 |Operator|Description|  
 |------------|---------------|  
 |[]|Access the fields of a record by name.|  
   
-**List indexer operator**  
+**List indexer operator**
   
 |Operator|Description|  
 |------------|---------------|  
 |{}|Access an item in a list by its zero-based numeric index.|  
   
-**Type compatibility and assertion operators**  
+**Type compatibility and assertion operators**
   
 |Operator|Description|  
 |------------|---------------|  
 |is|The expression  x is y  returns true if the type of x is compatible with y, and returns false if the type of x is not compatible with y.|  
 |as|The expression  x as y  asserts that the value x is compatible with y as per the is operator.|  
   
-**Date operators**  
+**Date operators**
   
 |Operator|Left Operand|Right Operand|Meaning|  
 |------------|----------------|-----------------|-----------|  
@@ -104,7 +106,7 @@ The meaning of an operator can vary depending on the type of operand values. The
 |x - y|time|time|Duration between dates|  
 |x &amp; y|date|time|Merged datetime|  
   
-**Datetime operators**  
+**Datetime operators**
   
 |Operator|Left Operand|Right Operand|Meaning|  
 |------------|----------------|-----------------|-----------|  
@@ -113,7 +115,7 @@ The meaning of an operator can vary depending on the type of operand values. The
 |x - y|datetime|duration|Datetime offset by negated duration|  
 |x - y|datetime|datetime|Duration between datetimes|  
   
-**Datetimezone operators**  
+**Datetimezone operators**
   
 |Operator|Left Operand|Right Operand|Meaning|  
 |------------|----------------|-----------------|-----------|  
@@ -122,7 +124,7 @@ The meaning of an operator can vary depending on the type of operand values. The
 |x - y|datetimezone|duration|Datetimezone offset by negated duration|  
 |x - y|datetimezone|datetimezone|Duration between datetimezones|  
   
-**Duration operators**  
+**Duration operators**
   
 |Operator|Left Operand|Right Operand|Meaning|  
 |------------|----------------|-----------------|-----------|  
@@ -137,7 +139,7 @@ The meaning of an operator can vary depending on the type of operand values. The
 |x / y|duration|number|Fraction of a duration|  
   
 > [!NOTE]  
-> Not all combinations of values may be supported by an operator. Expressions that, when evaluated, encounter undefined operator conditions evaluate to errors. For more information about errors in M, see [Errors](errors.md)  
+> Not all combinations of values may be supported by an operator. Expressions that, when evaluated, encounter undefined operator conditions evaluate to errors. For more information about errors in M, go to [Errors](errors.md)  
   
 **Error example**:  
   

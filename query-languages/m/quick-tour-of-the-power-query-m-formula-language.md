@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Quick tour of the Power Query M formula language"
 title: "Quick tour | Microsoft Docs"
-ms.date: 12/12/2018
+ms.date: 8/2/2022
 ms.service: powerquery
 ms.reviewer: ehvonleh
 ms.topic: conceptual
@@ -19,7 +19,7 @@ This quick tour describes creating Power Query M formula language queries.
   
 ## Create a query with Query Editor  
 
-To create an advanced query, you use the **Query Editor**. A mashup query is composed of variables, expressions, and values encapsulated by a **let** expression. A variable can contain spaces by using the # identifier with the name in quotes as in #"Variable name".  
+To create an advanced query, you use the **Query Editor**. A mashup query is composed of variables, expressions, and values encapsulated by a **let** expression. A variable can contain spaces by using the # identifier with the name in quotes as in `#"Variable name"`.  
   
 A **let** expression follows this structure:  
   
@@ -33,14 +33,13 @@ in
 
 To create an M query in the **Query Editor**, you follow this basic process:  
   
--   Create a series of query formula steps that start with the **let** statement. Each step is defined by a step variable name. An M **variable** can include spaces by using the # character as #"Step Name". A formula step can be a custom formula. Please note that the Power Query Formula Language is case sensitive.  
+1. Create a series of query formula steps that start with the **let** statement. Each step is defined by a step variable name. An M **variable** can include spaces by using the # character as `#"Step Name"`. A formula step can be a custom formula. Note that the Power Query Formula Language is case sensitive.  
   
--   Each query formula step builds upon a previous step by referring to a step by its variable name.  
+2. Each query formula step builds upon a previous step by referring to a step by its variable name.  
   
--   Output a query formula step using the **in** statement. Generally, the last query step is used as the in final data set result.  
-  
-  
-To learn more about expressions and values, see [Expressions, values, and let expression](expressions-values-and-let-expression.md).  
+3. Output a query formula step using the **in** statement. Generally, the last query step is used as the in final data set result.  
+
+To learn more about expressions and values, go to [Expressions, values, and let expression](expressions-values-and-let-expression.md).  
   
 ## Simple Power Query M formula steps  
 
@@ -48,7 +47,7 @@ Let's assume you created the following transform in the **Query Editor** to conv
   
 ![Intro to M Step 1](media/mstep1.png "Intro to M Step 1")  
   
-**You have a table that looks like this:**  
+You have a table that looks like this:
   
 |OrderID|CustomerID|Item|Price|  
 |-----------|--------------|--------|---------|  
@@ -56,7 +55,7 @@ Let's assume you created the following transform in the **Query Editor** to conv
 |2|1|1 lb. worms|5|  
 |3|2|fishing net|25|  
   
-**And, you want to capitalize each word in the Item column to produce the following table:**  
+And, you want to capitalize each word in the Item column to produce the following table:
   
 |OrderID|CustomerID|Item|Price|  
 |-----------|--------------|--------|---------|  
@@ -64,11 +63,11 @@ Let's assume you created the following transform in the **Query Editor** to conv
 |2|1|1 Lb. Worms|5|  
 |3|2|Fishing Net|25|  
   
-**The M formula steps to project the original table into the results table looks like this:**  
+The M formula steps to project the original table into the results table look like this:
   
 ![Advanced Editor](media/madvancededitor.png "Advanced Editor")  
   
-Here's the code you can paste into **Query Editor**:  
+Here's the code you can paste into the Power Query editor:
   
 ```powerquery-m
 let Orders = Table.FromRecords({  
@@ -80,17 +79,16 @@ in
     #"Capitalized Each Word"  
 ```  
 
-**Let’s review each formula step.**  
+Let’s review each formula step.
   
-1.  **Orders** – Create a \[Table](#_Table_value) with data for Orders.  
+1. **Orders** – Create a \[Table](#_Table_value) with data for Orders.  
   
-2.  \#**"Capitalized Each Word"** – To capitalize each word, you use Table.TransformColumns().  
+2. \#**"Capitalized Each Word"** – To capitalize each word, you use [Table.TransformColumns](table-transformcolumns.md).  
   
-3.  **in #"Capitalized Each Word"** – Output the table with each word capitalized.  
+3. **in #"Capitalized Each Word"** – Output the table with each word capitalized.  
   
 ## See also  
 
 [Expressions, values, and let expression](expressions-values-and-let-expression.md)  
 [Operators](operators.md)  
 [Type conversion](type-conversion.md)  
-  

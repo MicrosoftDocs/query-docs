@@ -1,17 +1,18 @@
 ---
 description: "Learn more about: Type conversion"
 title: "Type conversion | Microsoft Docs"
-ms.date: 4/16/2018
+ms.date: 8/2/2022
 ms.service: powerquery
 
 ms.reviewer: ehvonleh
 ms.topic: reference
 author: dougklopfenstein
 ms.author: dougklo
-
 ---
+
 # Type conversion
-The Power Query M formula language has formulas to convert between types. The following is a summary of conversion formulas in M. 
+
+The Power Query M formula language has formulas to convert between types. The following is a summary of conversion formulas in M.
   
 ## Number  
   
@@ -49,4 +50,3 @@ The Power Query M formula language has formulas to convert between types. The fo
 |.ToText(date, time, dateTime, or dateTimeZone as <br />date, time, datetime, or datetimezone) as text|Returns a text value from a date, time, datetime, or datetimezone value.|  
 |.From(value as any)|Returns a date, time, datetime, or datetimezone value from a value.|  
 |.ToRecord(date, time, dateTime, or dateTimeZone as date, time, datetime, or datetimezone)|Returns a record containing parts of a date, time, datetime, or datetimezone value.|  
-  
