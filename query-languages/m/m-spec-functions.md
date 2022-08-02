@@ -104,18 +104,18 @@ There are two kinds of formal parameters that may be present in a _formal-parame
 
 * A _required_ parameter indicates that an argument corresponding to the parameter must always be specified when a function is invoked. Required parameters must be specified first in the _formal-parameter-list_. The function in the following example defines required parameters `x` and `y`:
 
-```powerquery-m
+  ```powerquery-m
     [ 
         MyFunction = (x, y) => x + y, 
 
         Result1 = MyFunction(1, 1),     // 2 
         Result2 = MyFunction(2, 2)      // 4
     ] 
-```
+  ```
 
 * An _optional_ parameter indicates that an argument corresponding to the parameter may be specified when a function is invoked, but is not required to be specified. If an argument that corresponds to an optional parameter is not specified when the function is invoked, then the value `null` is used instead. Optional parameters must appear after any required parameters in a _formal-parameter-list_. The function in the following example defines a fixed parameter `x` and an optional parameter `y`:
 
-```powerquery-m
+  ```powerquery-m
     [ 
         MyFunction = fn(x, optional y) =>
                           if (y = null) x else x + y, 
@@ -123,13 +123,13 @@ There are two kinds of formal parameters that may be present in a _formal-parame
         Result2 = MyFunction(1, null),  // 1 
         Result3 = MyFunction(2, 2),     // 4
     ] 
-```
+  ```
 
 The number of arguments that are specified when a function is invoked must be compatible with the formal parameter list. Compatibility of a set of arguments `A` for a function `F` is computed as follows:
 
 * Let the value _N_ represent the number of arguments `A` constructed from the _argumentlist_. For example:
 
-```powerquery-m
+  ```powerquery-m
     MyFunction()             // N = 0 
     MyFunction(1)            // N = 1 
     MyFunction(null)         // N = 1 
@@ -137,16 +137,16 @@ The number of arguments that are specified when a function is invoked must be co
     MyFunction(1, 2, 3)      // N = 3 
     MyFunction(1, 2, null)   // N = 3 
     MyFunction(1, 2, {3, 4}) // N = 3
-```
+  ```
 
 * Let the value _Required_ represent the number of fixed parameters of `F` and _Optional_ the number of optional parameters of `F`. For example:
 
-```powerquery-m
-()               // Required = 0, Optional = 0 
-(x)              // Required = 1, Optional = 0 
-(optional x)     // Required = 0, Optional = 1 
-(x, optional y)  // Required = 1, Optional = 1
-```
+  ```powerquery-m
+  ()               // Required = 0, Optional = 0 
+  (x)              // Required = 1, Optional = 0 
+  (optional x)     // Required = 0, Optional = 1 
+  (x, optional y)  // Required = 1, Optional = 1
+  ```
 
 * Arguments `A` are compatible with function `F` if the following are true:
 

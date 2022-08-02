@@ -77,6 +77,7 @@ The following examples illustrate the different kinds of values available in M. 
         C = 3 
    ]
    ```
+
 * A _table_ is a set of values organized into columns (which are identified by name), and rows. There is no literal syntax for creating a table, but there are several standard functions that can be used to create tables from lists or records.
 
    For example:
@@ -136,7 +137,7 @@ Records can be contained within, or _nest_, within other records. We can use the
 
 The above expression is equivalent to the following when it is evaluated: \
 
-```powerquer-m
+```powerquery-m
 [  
     Sales = [ FirstHalf = 1000, SecondHalf = 1100 ], 
     Total = 2100 
@@ -203,7 +204,7 @@ M includes a set of operators that can be used in expressions. _Operators_ are a
 
 The meaning of an operator can vary depending on what kind of values its operands are. For example, the plus operator can be used with other kinds of values than numbers:
 
-```powerquer-m
+```powerquery-m
 1 + 2                   // numeric addition: 3 
 #time(12,23,0) + #duration(0,0,2,0) 
                         // time arithmetic: #time(12,25,0)
@@ -259,7 +260,7 @@ A metadata record can be accessed for a given value using the _Value.Metadata_ f
 
 Many of the examples shown so far have included all the literal values of the expression in the result of the expression. The _let_ expression allows a set of values to be computed, assigned names, and then used in a subsequent expression that follows the _in_. For example, in our sales data example, we could do:
 
-```powerquer-m
+```powerquery-m
 let 
     Sales2007 =  
         [  
@@ -299,7 +300,7 @@ An _error_ is an indication that the process of evaluating an expression could n
 
 Errors are raised by operators and functions encountering error conditions or by using the error expression. Errors are handled using the try expression. When an error is raised, a value is specified that can be used to indicate why the error occurred.
 
-```powerquer-m
+```powerquery-m
 let Sales = 
     [ 
         Revenue = 2000, 
