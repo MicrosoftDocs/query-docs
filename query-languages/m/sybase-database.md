@@ -1,13 +1,7 @@
 ---
 description: "Learn more about: Sybase.Database"
-title: "Sybase.Database | Microsoft Docs"
+title: "Sybase.Database"
 ms.date: 02/03/2021
-ms.service: powerquery
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Sybase.Database
 

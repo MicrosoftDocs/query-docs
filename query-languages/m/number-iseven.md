@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Number.IsEven"
-title: "Number.IsEven | Microsoft Docs"
+title: "Number.IsEven"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Number.IsEven
 

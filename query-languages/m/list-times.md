@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: List.Times"
-title: "List.Times | Microsoft Docs"
+title: "List.Times"
 ms.date: 3/9/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.Times
 

@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: List.IsEmpty"
-title: "List.IsEmpty | Microsoft Docs"
+title: "List.IsEmpty"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.IsEmpty
 

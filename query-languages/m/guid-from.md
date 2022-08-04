@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Guid.From"
-title: "Guid.From | Microsoft Docs"
+title: "Guid.From"
 ms.date: 4/13/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Guid.From
 

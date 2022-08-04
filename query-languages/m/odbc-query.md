@@ -1,13 +1,7 @@
 ---
 description: "Learn more about: Odbc.Query"
-title: "Odbc.Query | Microsoft Docs"
+title: "Odbc.Query"
 ms.date: 3/14/2022
-ms.service: powerquery
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Odbc.Query
 

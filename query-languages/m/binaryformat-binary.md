@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.Binary"
-title: "BinaryFormat.Binary | Microsoft Docs"
+title: "BinaryFormat.Binary"
 ms.date: 7/29/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # BinaryFormat.Binary
 

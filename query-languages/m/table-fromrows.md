@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Table.FromRows"
-title: "Table.FromRows | Microsoft Docs"
+title: "Table.FromRows"
 ms.date: 3/10/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.FromRows
 

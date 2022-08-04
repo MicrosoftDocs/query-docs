@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Text.TrimEnd"
-title: "Text.TrimEnd | Microsoft Docs"
+title: "Text.TrimEnd"
 ms.date: 4/22/2020
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Text.TrimEnd
 

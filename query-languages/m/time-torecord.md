@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Time.ToRecord"
-title: "Time.ToRecord | Microsoft Docs"
+title: "Time.ToRecord"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Time.ToRecord
 

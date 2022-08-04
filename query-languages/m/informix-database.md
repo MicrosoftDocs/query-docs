@@ -1,13 +1,7 @@
 ---
 description: "Learn more about: Informix.Database"
-title: "Informix.Database | Microsoft Docs"
+title: "Informix.Database"
 ms.date: 02/03/2021
-ms.service: powerquery
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Informix.Database
 

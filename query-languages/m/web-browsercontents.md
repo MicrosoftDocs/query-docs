@@ -1,13 +1,7 @@
 ---
 description: "Learn more about: Web.BrowserContents"
-title: "Web.BrowserContents | Microsoft Docs"
+title: "Web.BrowserContents"
 ms.date: 3/14/2022
-ms.service: powerquery
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Web.BrowserContents
 

@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.Length"
-title: "BinaryFormat.Length | Microsoft Docs"
+title: "BinaryFormat.Length"
 ms.date: 3/7/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # BinaryFormat.Length
 

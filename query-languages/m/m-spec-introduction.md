@@ -1,14 +1,8 @@
 ---
-title: Power Query M Formula Language Introduction | Microsoft Docs
+title: Power Query M Formula Language Introduction 
 description: Provides an overview of the Power Query M formula language
-author: dougklopfenstein
-
-ms.service: powerquery
-
 ms.topic: overview
 ms.date: 2/25/2020
-ms.author: dougklo
-
 ---
 
 # Introduction

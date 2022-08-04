@@ -1,13 +1,7 @@
 ---
 description: "Learn more about: JoinAlgorithm.Type"
-title: "JoinAlgorithm.Type | Microsoft Docs"
+title: "JoinAlgorithm.Type"
 ms.date: 5/16/2022
-ms.service: powerquery
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # JoinAlgorithm.Type
 

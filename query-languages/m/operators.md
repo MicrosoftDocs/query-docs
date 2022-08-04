@@ -1,14 +1,8 @@
 ---
 description: "Learn more about: Operators"
-title: "Operators | Microsoft Docs"
+title: "Operators"
+ms.topic: conceptual
 ms.date: 4/16/2018
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Operators
 The Power Query M formula language includes a set of operators that can be used in an expression. **Operators** are applied to **operands** to form symbolic expressions. For example, in the expression 1 + 2 the numbers 1 and 2 are operands and the operator is the addition operator (+).  

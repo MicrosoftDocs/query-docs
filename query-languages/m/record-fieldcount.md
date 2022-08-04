@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Record.FieldCount"
-title: "Record.FieldCount | Microsoft Docs"
+title: "Record.FieldCount"
 ms.date: 3/14/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Record.FieldCount
 

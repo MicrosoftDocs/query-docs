@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: List.PositionOfAny"
-title: "List.PositionOfAny | Microsoft Docs"
+title: "List.PositionOfAny"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.PositionOfAny
 

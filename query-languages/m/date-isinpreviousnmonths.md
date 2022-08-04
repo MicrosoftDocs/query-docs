@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Date.IsInPreviousNMonths"
-title: "Date.IsInPreviousNMonths | Microsoft Docs"
+title: "Date.IsInPreviousNMonths"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date.IsInPreviousNMonths
 

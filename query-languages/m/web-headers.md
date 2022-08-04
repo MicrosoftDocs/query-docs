@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Web.Headers"
-title: "Web.Headers | Microsoft Docs"
+title: "Web.Headers"
 ms.date: 3/14/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Web.Headers
 

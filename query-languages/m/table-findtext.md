@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Table.FindText"
-title: "Table.FindText | Microsoft Docs"
+title: "Table.FindText"
 ms.date: 3/10/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.FindText
 

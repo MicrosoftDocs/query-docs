@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Date.IsInPreviousYear"
-title: "Date.IsInPreviousYear | Microsoft Docs"
+title: "Date.IsInPreviousYear"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date.IsInPreviousYear
 

@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Value functions"
-title: "Value functions | Microsoft Docs"
+title: "Value functions"
 ms.date: 5/19/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Value functions
 

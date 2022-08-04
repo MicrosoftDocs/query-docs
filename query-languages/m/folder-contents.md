@@ -1,12 +1,7 @@
 ---
 description: "Learn more about: Folder.Contents"
-title: "Folder.Contents | Microsoft Docs"
+title: "Folder.Contents"
 ms.date: 9/13/2021
-ms.service: powerquery
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
 ---
 # Folder.Contents
 

@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Time.From"
-title: "Time.From | Microsoft Docs"
+title: "Time.From"
 ms.date: 4/13/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Time.From
 

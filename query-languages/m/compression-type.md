@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Compression.Type"
-title: "Compression.Type | Microsoft Docs"
+title: "Compression.Type"
 ms.date: 5/16/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Compression.Type
 

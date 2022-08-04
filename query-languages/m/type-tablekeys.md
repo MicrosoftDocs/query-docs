@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Type.TableKeys"
-title: "Type.TableKeys | Microsoft Docs"
+title: "Type.TableKeys"
 ms.date: 8/2/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Type.TableKeys
 

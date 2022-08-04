@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: DateTime.IsInNextHour"
-title: "DateTime.IsInNextHour | Microsoft Docs"
+title: "DateTime.IsInNextHour"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # DateTime.IsInNextHour
 

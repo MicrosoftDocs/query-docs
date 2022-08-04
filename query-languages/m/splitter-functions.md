@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Splitter functions"
-title: "Splitter functions | Microsoft Docs"
+title: "Splitter functions"
 ms.date: 5/16/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Splitter functions
 

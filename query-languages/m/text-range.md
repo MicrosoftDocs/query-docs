@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Text.Range"
-title: "Text.Range | Microsoft Docs"
+title: "Text.Range"
 ms.date: 3/14/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Text.Range
 

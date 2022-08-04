@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Uri functions"
-title: "Uri functions | Microsoft Docs"
+title: "Uri functions"
 ms.date: 5/16/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Uri functions
 

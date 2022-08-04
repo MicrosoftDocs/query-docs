@@ -1,17 +1,12 @@
 ---
 description: "Learn more about: Type conversion"
-title: "Type conversion | Microsoft Docs"
+title: "Type conversion"
+ms.topic: conceptual
 ms.date: 4/16/2018
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Type conversion
-The Power Query M formula language has formulas to convert between types. The following is a summary of conversion formulas in M. 
+
+The Power Query M formula language has formulas to convert between types. The following is a summary of conversion formulas in M.
   
 ## Number  
   
@@ -45,8 +40,7 @@ The Power Query M formula language has formulas to convert between types. The fo
   
 |Type conversion|Description|  
 |-------------------|---------------|  
-|.FromText(text as text) as date, time, datetime, or datetimezone|Returns a date, time, datetime, or datetimezone value from a set of date formats and culture value.|  
-|.ToText(date, time, dateTime, or dateTimeZone as <br />date, time, datetime, or datetimezone) as text|Returns a text value from a date, time, datetime, or datetimezone value.|  
-|.From(value as any)|Returns a date, time, datetime, or datetimezone value from a value.|  
-|.ToRecord(date, time, dateTime, or dateTimeZone as date, time, datetime, or datetimezone)|Returns a record containing parts of a date, time, datetime, or datetimezone value.|  
-  
+|.FromText(text as text) as date, time, datetime, or datetimezone|Returns a date, time, datetime, or datetimezone value from a set of date formats and culture value.|
+|.ToText(date, time, dateTime, or dateTimeZone as <br />date, time, datetime, or datetimezone) as text|Returns a text value from a date, time, datetime, or datetimezone value.|
+|.From(value as any)|Returns a date, time, datetime, or datetimezone value from a value.|
+|.ToRecord(date, time, dateTime, or dateTimeZone as date, time, datetime, or datetimezone)|Returns a record containing parts of a date, time, datetime, or datetimezone value.|

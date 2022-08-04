@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Cube.AttributeMemberProperty"
-title: "Cube.AttributeMemberProperty | Microsoft Docs"
+title: "Cube.AttributeMemberProperty"
 ms.date: 4/16/2018
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Cube.AttributeMemberProperty
 

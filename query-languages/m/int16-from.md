@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Int16.From"
-title: "Int16.From | Microsoft Docs"
+title: "Int16.From"
 ms.date: 4/13/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Int16.From
 

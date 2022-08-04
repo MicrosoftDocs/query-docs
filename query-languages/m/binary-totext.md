@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Binary.ToText"
-title: "Binary.ToText | Microsoft Docs"
+title: "Binary.ToText"
 ms.date: 7/29/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Binary.ToText
 

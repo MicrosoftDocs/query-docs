@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Date.ToRecord"
-title: "Date.ToRecord | Microsoft Docs"
+title: "Date.ToRecord"
 ms.date: 3/8/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date.ToRecord
 

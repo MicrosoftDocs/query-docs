@@ -1,13 +1,8 @@
 ---
-title: M Language values | Microsoft Docs
+title: M Language values 
 description: Describes using values in the Power Query M formula language
-author: dougklopfenstein
-
-ms.service: powerquery
-
-ms.topic: article
+ms.topic: conceptual
 ms.date: 11/29/2021
-ms.author: dougklo
 ---
 
 # Values

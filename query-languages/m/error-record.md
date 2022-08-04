@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Error.Record"
-title: "Error.Record | Microsoft Docs"
+title: "Error.Record"
 ms.date: 1/24/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Error.Record
 

@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Geometry.FromWellKnownText"
-title: "Geometry.FromWellKnownText | Microsoft Docs"
+title: "Geometry.FromWellKnownText"
 ms.date: 7/16/2020
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Geometry.FromWellKnownText
 ## Syntax

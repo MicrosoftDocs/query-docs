@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Date.IsInNextWeek"
-title: "Date.IsInNextWeek | Microsoft Docs"
+title: "Date.IsInNextWeek"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date.IsInNextWeek
 

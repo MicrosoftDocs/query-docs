@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Duration.From"
-title: "Duration.From | Microsoft Docs"
+title: "Duration.From"
 ms.date: 4/13/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Duration.From
 

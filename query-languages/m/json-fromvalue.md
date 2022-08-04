@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Json.FromValue"
-title: "Json.FromValue | Microsoft Docs"
+title: "Json.FromValue"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Json.FromValue
 

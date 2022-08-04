@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.UnsignedInteger16"
-title: "BinaryFormat.UnsignedInteger16 | Microsoft Docs"
+title: "BinaryFormat.UnsignedInteger16"
 ms.date: 7/29/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # BinaryFormat.UnsignedInteger16
 

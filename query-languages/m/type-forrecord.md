@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Type.ForRecord"
-title: "Type.ForRecord | Microsoft Docs"
+title: "Type.ForRecord"
 ms.date: 8/2/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Type.ForRecord
 

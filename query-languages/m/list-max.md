@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: List.Max"
-title: "List.Max | Microsoft Docs"
+title: "List.Max"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.Max
 

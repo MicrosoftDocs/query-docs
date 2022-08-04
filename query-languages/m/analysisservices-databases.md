@@ -1,12 +1,7 @@
 ---
 description: "Learn more about: AnalysisServices.Databases"
-title: "AnalysisServices.Databases | Microsoft Docs"
+title: "AnalysisServices.Databases"
 ms.date: 02/03/2021
-ms.service: powerquery
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
 ---
 # AnalysisServices.Databases
 

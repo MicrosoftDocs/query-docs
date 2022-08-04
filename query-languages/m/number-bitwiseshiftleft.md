@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Number.BitwiseShiftLeft"
-title: "Number.BitwiseShiftLeft | Microsoft Docs"
+title: "Number.BitwiseShiftLeft"
 ms.date: 7/31/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Number.BitwiseShiftLeft
 

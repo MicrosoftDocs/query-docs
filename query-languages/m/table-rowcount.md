@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Table.RowCount"
-title: "Table.RowCount | Microsoft Docs"
+title: "Table.RowCount"
 ms.date: 3/14/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.RowCount
 

@@ -1,13 +1,7 @@
 ---
 description: "Learn more about: Pdf.Tables"
-title: "Pdf.Tables | Microsoft Docs"
+title: "Pdf.Tables"
 ms.date: 3/14/2022
-ms.service: powerquery
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Pdf.Tables
 

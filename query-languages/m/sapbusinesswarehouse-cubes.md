@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: SapBusinessWarehouse.Cubes"
-title: "SapBusinessWarehouse.Cubes | Microsoft Docs"
+title: "SapBusinessWarehouse.Cubes"
 ms.date: 7/29/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # SapBusinessWarehouse.Cubes
 

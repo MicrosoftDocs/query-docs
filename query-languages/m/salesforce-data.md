@@ -1,13 +1,7 @@
 ---
 description: "Learn more about: Salesforce.Data"
-title: "Salesforce.Data | Microsoft Docs"
+title: "Salesforce.Data"
 ms.date: 02/03/2021
-ms.service: powerquery
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Salesforce.Data
 

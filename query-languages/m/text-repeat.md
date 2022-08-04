@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Text.Repeat"
-title: "Text.Repeat | Microsoft Docs"
+title: "Text.Repeat"
 ms.date: 3/14/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Text.Repeat
 

@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: List.MinN"
-title: "List.MinN | Microsoft Docs"
+title: "List.MinN"
 ms.date: 3/16/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.MinN
 

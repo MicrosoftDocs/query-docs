@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Number.Round"
-title: "Number.Round | Microsoft Docs"
+title: "Number.Round"
 ms.date: 4/13/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Number.Round
 

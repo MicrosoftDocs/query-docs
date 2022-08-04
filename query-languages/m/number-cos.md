@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Number.Cos"
-title: "Number.Cos | Microsoft Docs"
+title: "Number.Cos"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Number.Cos
 

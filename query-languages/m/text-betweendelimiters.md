@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Text.BetweenDelimiters"
-title: "Text.BetweenDelimiters | Microsoft Docs"
+title: "Text.BetweenDelimiters"
 ms.date: 3/14/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Text.BetweenDelimiters
 

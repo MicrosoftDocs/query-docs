@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Value.NativeQuery"
-title: "Value.NativeQuery | Microsoft Docs"
+title: "Value.NativeQuery"
 ms.date: 11/17/2021
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Value.NativeQuery
 

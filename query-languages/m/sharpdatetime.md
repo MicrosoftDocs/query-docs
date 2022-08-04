@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: #datetime"
-title: "#datetime | Microsoft Docs"
+title: "#datetime"
 ms.date: 11/17/2021
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # #datetime
 

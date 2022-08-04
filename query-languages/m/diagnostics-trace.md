@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Diagnostics.Trace"
-title: "Diagnostics.Trace | Microsoft Docs"
+title: "Diagnostics.Trace"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Diagnostics.Trace
 ## Syntax

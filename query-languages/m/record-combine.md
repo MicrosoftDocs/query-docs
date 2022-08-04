@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Record.Combine"
-title: "Record.Combine | Microsoft Docs"
+title: "Record.Combine"
 ms.date: 3/9/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Record.Combine
 

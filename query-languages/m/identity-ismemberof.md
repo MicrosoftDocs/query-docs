@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Identity.IsMemberOf"
-title: "Identity.IsMemberOf | Microsoft Docs"
+title: "Identity.IsMemberOf"
 ms.date: 3/28/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Identity.IsMemberOf
 

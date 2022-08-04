@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: RowExpression.Column"
-title: "RowExpression.Column | Microsoft Docs"
+title: "RowExpression.Column"
 ms.date: 3/16/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # RowExpression.Column
 

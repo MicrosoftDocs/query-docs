@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: RoundingMode.Type"
-title: "RoundingMode.Type | Microsoft Docs"
+title: "RoundingMode.Type"
 ms.date: 5/16/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # RoundingMode.Type
 

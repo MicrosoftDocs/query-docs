@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Date.IsInNextQuarter"
-title: "Date.IsInNextQuarter | Microsoft Docs"
+title: "Date.IsInNextQuarter"
 ms.date: 3/8/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date.IsInNextQuarter
 

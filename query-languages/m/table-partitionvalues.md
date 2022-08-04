@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Table.PartitionValues"
-title: "Table.PartitionValues | Microsoft Docs"
+title: "Table.PartitionValues"
 ms.date: 9/13/2021
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.PartitionValues
 

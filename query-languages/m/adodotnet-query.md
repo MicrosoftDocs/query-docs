@@ -1,12 +1,7 @@
 ---
 description: "Learn more about: AdoDotNet.Query"
-title: "AdoDotNet.Query | Microsoft Docs"
+title: "AdoDotNet.Query"
 ms.date: 02/03/2021
-ms.service: powerquery
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
 ---
 # AdoDotNet.Query
 

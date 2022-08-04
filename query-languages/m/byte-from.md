@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Byte.From"
-title: "Byte.From | Microsoft Docs"
+title: "Byte.From"
 ms.date: 4/13/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Byte.From
 

@@ -1,14 +1,8 @@
 ---
 description: "Learn more about: Expressions, values, and let expression"
-title: "Expressions, values, and let expression | Microsoft Docs"
+title: "Expressions, values, and let expression"
+ms.topic: conceptual
 ms.date: 4/16/2018
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Expressions, values, and let expression
 A Power Query M formula language query is composed of formula **expression** steps that create a mashup query. A formula expression can be evaluated (computed), yielding a value. The **let** expression encapsulates a set of values to be computed, assigned names, and then used in a subsequent expression that follows the **in** statement. For example, a let expression could contain a **Source** variable that equals the value of **Text.Proper()** and yields a text value in proper case.  
@@ -42,7 +36,7 @@ A **primitive** value is single-part value, such as a number, logical, text, or 
 |Time|12:34:12 PM|  
   
 ## <a name="Function"></a>Function value  
-A **Function** is a value   which, when invoked with arguments, produces a new value.  Functions are written by listing the function’s **parameters** in parentheses, followed by the goes-to symbol =&gt;, followed by the expression defining the function. For example, to create a function called “MyFunction” that has two parameters and performs a calculation on parameter1 and parameter2:  
+A **Function** is a value   which, when invoked with arguments, produces a new value.  Functions are written by listing the function's **parameters** in parentheses, followed by the goes-to symbol =&gt;, followed by the expression defining the function. For example, to create a function called "MyFunction" that has two parameters and performs a calculation on parameter1 and parameter2:  
   
 ```powerquery-m
 let  
@@ -91,7 +85,7 @@ The following are some **List** examples.
 |{<br />  {1, 2, 3},<br />  {4, 5, 6}<br />}{0}{1}|Get the value of the second item from the first List element. This expression returns the value 2.|  
   
 ### <a name="record"></a>Record  
-A **Record** is a set of fields. A **field** is a name/value pair where the name is a text value that is unique within the field’s record. The syntax for record values allows the names to be written without quotes, a form also referred to as **identifiers**. An identifier can take the following two forms:  
+A **Record** is a set of fields. A **field** is a name/value pair where the name is a text value that is unique within the field's record. The syntax for record values allows the names to be written without quotes, a form also referred to as **identifiers**. An identifier can take the following two forms:  
   
 -   identifier_name such as OrderID.  
   

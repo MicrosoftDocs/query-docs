@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Value.Traits"
-title: "Value.Traits | Microsoft Docs"
+title: "Value.Traits"
 ms.date: 9/22/2020
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Value.Traits
 

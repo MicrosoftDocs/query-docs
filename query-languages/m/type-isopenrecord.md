@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Type.IsOpenRecord"
-title: "Type.IsOpenRecord | Microsoft Docs"
+title: "Type.IsOpenRecord"
 ms.date: 3/14/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Type.IsOpenRecord
 

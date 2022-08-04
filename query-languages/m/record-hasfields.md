@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Record.HasFields"
-title: "Record.HasFields | Microsoft Docs"
+title: "Record.HasFields"
 ms.date: 3/14/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Record.HasFields
 

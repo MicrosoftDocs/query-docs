@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: DateTimeZone.ZoneMinutes"
-title: "DateTimeZone.ZoneMinutes | Microsoft Docs"
+title: "DateTimeZone.ZoneMinutes"
 ms.date: 7/30/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # DateTimeZone.ZoneMinutes
 

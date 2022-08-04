@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: List.ContainsAll"
-title: "List.ContainsAll | Microsoft Docs"
+title: "List.ContainsAll"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.ContainsAll
 

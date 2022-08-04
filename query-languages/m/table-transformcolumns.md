@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Table.TransformColumns"
-title: "Table.TransformColumns | Microsoft Docs"
+title: "Table.TransformColumns"
 ms.date: 6/24/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.TransformColumns
 

@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Uri.BuildQueryString"
-title: "Uri.BuildQueryString | Microsoft Docs"
+title: "Uri.BuildQueryString"
 ms.date: 3/14/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Uri.BuildQueryString
 

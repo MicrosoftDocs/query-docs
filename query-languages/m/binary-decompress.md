@@ -1,12 +1,7 @@
 ---
 description: "Learn more about: Binary.Decompress"
-title: "Binary.Decompress | Microsoft Docs"
+title: "Binary.Decompress"
 ms.date: 3/11/2022
-ms.service: powerquery
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
 ---
 # Binary.Decompress
 

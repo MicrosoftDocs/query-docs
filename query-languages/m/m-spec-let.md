@@ -1,13 +1,8 @@
 ---
-title: M Language Let | Microsoft Docs
+title: M Language Let 
 description: Describes using the let expression in the Power Query M formula language
-author: dougklopfenstein
-
-ms.service: powerquery
-
-ms.topic: article
+ms.topic: conceptual
 ms.date: 4/7/2020
-ms.author: dougklo
 ---
 
 

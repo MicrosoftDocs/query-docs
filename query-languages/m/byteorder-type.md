@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: ByteOrder.Type"
-title: "ByteOrder.Type | Microsoft Docs"
+title: "ByteOrder.Type"
 ms.date: 5/16/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # ByteOrder.Type
 

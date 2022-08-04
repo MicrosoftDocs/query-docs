@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Table.MatchesAllRows"
-title: "Table.MatchesAllRows | Microsoft Docs"
+title: "Table.MatchesAllRows"
 ms.date: 3/14/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.MatchesAllRows
 

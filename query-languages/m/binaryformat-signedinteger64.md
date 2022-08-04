@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.SignedInteger64"
-title: "BinaryFormat.SignedInteger64 | Microsoft Docs"
+title: "BinaryFormat.SignedInteger64"
 ms.date: 7/29/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # BinaryFormat.SignedInteger64
 

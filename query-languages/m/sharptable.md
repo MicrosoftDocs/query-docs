@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: #table"
-title: "#table | Microsoft Docs"
+title: "#table"
 ms.date: 7/18/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # #table
 

@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Logical.ToText"
-title: "Logical.ToText | Microsoft Docs"
+title: "Logical.ToText"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Logical.ToText
 

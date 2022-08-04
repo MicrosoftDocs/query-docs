@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Type.TableSchema"
-title: "Type.TableSchema | Microsoft Docs"
+title: "Type.TableSchema"
 ms.date: 4/13/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Type.TableSchema
 

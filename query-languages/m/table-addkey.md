@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Table.AddKey"
-title: "Table.AddKey | Microsoft Docs"
+title: "Table.AddKey"
 ms.date: 4/13/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.AddKey
 

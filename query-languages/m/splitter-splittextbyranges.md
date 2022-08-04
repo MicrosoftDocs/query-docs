@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Splitter.SplitTextByRanges"
-title: "Splitter.SplitTextByRanges | Microsoft Docs"
+title: "Splitter.SplitTextByRanges"
 ms.date: 5/19/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Splitter.SplitTextByRanges
 

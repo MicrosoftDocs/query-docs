@@ -1,12 +1,7 @@
 ---
 description: "Learn more about: Table.RemoveFirstN"
-title: "Table.RemoveFirstN | Microsoft Docs"
+title: "Table.RemoveFirstN"
 ms.date: 3/10/2022
-ms.service: powerquery
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
 ---
 # Table.RemoveFirstN
   

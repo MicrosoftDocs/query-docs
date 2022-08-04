@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Date.StartOfMonth"
-title: "Date.StartOfMonth | Microsoft Docs"
+title: "Date.StartOfMonth"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date.StartOfMonth
 

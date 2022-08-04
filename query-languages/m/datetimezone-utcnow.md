@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: DateTimeZone.UtcNow"
-title: "DateTimeZone.UtcNow | Microsoft Docs"
+title: "DateTimeZone.UtcNow"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # DateTimeZone.UtcNow
 

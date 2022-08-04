@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Date.IsInCurrentWeek"
-title: "Date.IsInCurrentWeek | Microsoft Docs"
+title: "Date.IsInCurrentWeek"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date.IsInCurrentWeek
 

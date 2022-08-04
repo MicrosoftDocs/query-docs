@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: List.PositionOf"
-title: "List.PositionOf | Microsoft Docs"
+title: "List.PositionOf"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.PositionOf
 
