@@ -1,7 +1,7 @@
 ---
 title: M Language values 
 description: Describes using values in the Power Query M formula language
-ms.topic: article
+ms.topic: conceptual
 ms.date: 11/29/2021
 ---
 

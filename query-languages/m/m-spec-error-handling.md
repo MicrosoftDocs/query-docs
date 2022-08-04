@@ -1,7 +1,7 @@
 ---
 title: M Language Error Handling 
 description: Describes error handling in the Power Query M formula language
-ms.topic: article
+ms.topic: conceptual
 ms.date: 2/28/2020
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: M Language Sections 
 description: Describes using sections in the Power Query M formula language
-ms.topic: article
+ms.topic: conceptual
 ms.date: 8/23/2021
 ---
 

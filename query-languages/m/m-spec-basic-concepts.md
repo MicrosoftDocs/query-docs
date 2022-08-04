@@ -1,7 +1,7 @@
 ---
 title: M Language basic concepts 
 description: Discusses basic concepts that appear throughout the subsequent sections
-ms.topic: article
+ms.topic: conceptual
 ms.date: 2/25/2020
 ms.custom: intro-internal
 ---

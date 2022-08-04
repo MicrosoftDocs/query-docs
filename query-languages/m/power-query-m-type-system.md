@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Types in the Power Query M formula language"
 title: "Power Query M type system"
+ms.topic: conceptual
 ms.date: 4/16/2018
 ---
 

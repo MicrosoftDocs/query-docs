@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Comments"
 title: "Comments"
+ms.topic: conceptual
 ms.date: 12/12/2018
 ---
 # Comments

@@ -1,7 +1,7 @@
 ---
 title: M Language Let 
 description: Describes using the let expression in the Power Query M formula language
-ms.topic: article
+ms.topic: conceptual
 ms.date: 4/7/2020
 ---
 
