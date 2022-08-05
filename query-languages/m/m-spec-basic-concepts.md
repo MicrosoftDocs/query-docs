@@ -154,7 +154,7 @@ _exclusive-identifier-reference:<br/>
 
 It is an error for an _exclusive-identifier-reference_ to refer to a variable that is not part of the environment of the expression that the identifier appears within. 
 
-Inside a _record-initializer-expression_ or _let-expression_, it is an error for an _exclusive-identifier-reference_ to refer to an identifier that is currently being initialized. Instead, an _inclusive-identifier-reference_ can be used to gain access to the environment that includes the identifier being initialized. If an _inclusive-identifier-reference_ is used in a context where there is no identifier being initialized, then it is equivalent to an _exclusive-identifier-reference_.
+It is an error for an _exclusive-identifier-reference_ to refer to an identifier that is currently being initialized if referenced identifier is defined inside a _record-initializer-expression_ or  _let-expression_. Instead, an _inclusive-identifier-reference_ can be used to gain access to the environment that includes the identifier being initialized. If an _inclusive-identifier-reference_ is used in any other situation, then it is equivalent to an _exclusive-identifier-reference_.
 
 _inclusive-identifier-reference:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`@`  _identifier_
