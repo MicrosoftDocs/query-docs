@@ -2,7 +2,7 @@
 title: M Language lexical structure 
 description: Describes the lexical structure of the Power Query M formula language
 ms.topic: conceptual
-ms.date: 11/29/2021
+ms.date: 8/2/2022
 ---
 
 
@@ -22,7 +22,7 @@ A document either consists of exactly one _expression_ or of groups of _definiti
 
 ## Grammar conventions
 
-The lexical and syntactic grammars are presented using _grammar productions_. Each grammar production defines a non-terminal symbol and the possible expansions of that nonterminal symbol into sequences of non-terminal or terminal symbols. In grammar productions, _non-terminal+ symbols are shown in italic type, and _terminal_ symbols are shown in a fixed-width font.
+The lexical and syntactic grammars are presented using _grammar productions_. Each grammar production defines a non-terminal symbol and the possible expansions of that nonterminal symbol into sequences of non-terminal or terminal symbols. In grammar productions, _non-terminal+_ symbols are shown in italic type, and _terminal_ symbols are shown in a fixed-width font.
 
 The first line of a grammar production is the name of the non-terminal symbol being defined, followed by a colon. Each successive indented line contains a possible expansion of the nonterminal given as a sequence of non-terminal or terminal symbols. For example, the production:
 
@@ -36,7 +36,6 @@ When there is more than one possible expansion of a non-terminal symbol, the alt
 _variable-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable-list_ `,` _variable_
-
 
 defines a _variable-list_ to either consist of a _variable_ or consist of a _variable-list_ followed by a _variable_. In other words, the definition is recursive and specifies that a variable list consists of one or more variables, separated by commas.
 
@@ -118,7 +117,6 @@ Two forms of comments are supported: single-line comments and delimited comments
 
 Delimited comments may span multiple lines.
 
-
 _comment:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-line-comment<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delimited-comment<br/>
@@ -144,7 +142,7 @@ Comments do not nest. The character sequences `/*` and `*/` have no special mean
 
 Comments are not processed within text literals. The example
 
-```
+```powerquery-m
 /* Hello, world 
 */ 
     "Hello, world"
@@ -154,7 +152,7 @@ includes a delimited comment.
 
 The example
 
-```
+```powerquery-m
 // Hello, world 
 // 
 "Hello, world" // This is an example of a text literal
@@ -176,13 +174,13 @@ _token:<br/>
 
 M text values can contain arbitrary Unicode characters. Text literals, however, are limited to graphic characters and require the use of _escape sequences_ for non-graphic characters. For example, to include a carriage-return, linefeed, or tab character in a text literal, the `#(cr)`, `#(lf)`, and `#(tab)` escape sequences can be used, respectively. To embed the escapesequence start characters `#(` in a text literal, the `#` itself needs to be escaped:
 
-```
+```powerquery-m
 #(#)(
 ```
 
 Escape sequences can also contain short (four hex digits) or long (eight hex digits) Unicode code-point values. The following three escape sequences are therefore equivalent:
 
-```
+```powerquery-m
 #(000D)     // short Unicode hexadecimal value 
 #(0000000D) // long Unicode hexadecimal value 
 #(cr)       // compact escape shorthand for carriage return
@@ -190,7 +188,7 @@ Escape sequences can also contain short (four hex digits) or long (eight hex dig
 
 Multiple escape codes can be included in a single escape sequence, separated by commas; the following two sequences are thus equivalent:
 
-```
+```powerquery-m
 #(cr,lf) 
 #(cr)#(lf)
 ```
@@ -274,7 +272,7 @@ hex-digit:_  one of<br/>
 
 A number can be specified in hexadecimal format by preceding the _hex-digits_ with the characters `0x`. For example:
 
-```
+```powerquery-m
 0xff // 255
 ```
 
@@ -299,13 +297,13 @@ _double-quote-escape-sequence:_<br/>
 
 To include quotes in a text value, the quote mark is repeated, as follows:
 
-```
+```powerquery-m
 "The ""quoted"" text" // The "quoted" text
 ```
 
 The [_character-escape-sequence_](#character-escape-sequences) production can be used to write characters in text values without having to directly encode them as Unicode characters in the document. For example, a carriage return and line feed can be written in a text value as:
 
-```
+```powerquery-m
 "Hello world#(cr,lf)"
 ```
 
@@ -315,7 +313,6 @@ A verbatim literal is used to store a sequence of Unicode characters that were e
 
 _verbatim-literal:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`#!"` _text-literal-characters<sub>opt</sub>_ `"`
-
 
 ### Identifiers
 
@@ -367,7 +364,7 @@ Note that escape sequences and double-quotes to escape quotes can be used in a _
 
 The following example uses identifier quoting for names containing a space character:
 
-```
+```powerquery-m
 [ 
     #"1998 Sales" = 1000, 
     #"1999 Sales" = 1100, 
@@ -377,7 +374,7 @@ The following example uses identifier quoting for names containing a space chara
 
 The following example uses identifier quoting to include the `+` operator in an identifier:
 
-```
+```powerquery-m
 [ 
     #"A + B" = A + B, 
     A = 1, 
@@ -389,7 +386,7 @@ The following example uses identifier quoting to include the `+` operator in an 
 
 There are two places in M where no ambiguities are introduced by identifiers that contain blanks or that are otherwise keywords or number literals. These places are the names of record fields in a record literal and in a field access operator (`[ ]`) There, M allows such identifiers without having to use quoted identifiers.
 
-```
+```powerquery-m
 [ 
     Data = [ Base Line = 100, Rate = 1.8 ], 
     Progression = Data[Base Line] * Data[Rate]
