@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Text.Select"
-title: "Text.Select | Microsoft Docs"
+title: "Text.Select"
 ms.date: 3/14/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Text.Select
 

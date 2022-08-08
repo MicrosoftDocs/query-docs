@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Time.EndOfHour"
-title: "Time.EndOfHour | Microsoft Docs"
+title: "Time.EndOfHour"
 ms.date: 3/14/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Time.EndOfHour
 

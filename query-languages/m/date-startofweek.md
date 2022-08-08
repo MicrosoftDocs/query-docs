@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Date.StartOfWeek"
-title: "Date.StartOfWeek | Microsoft Docs"
+title: "Date.StartOfWeek"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date.StartOfWeek
 

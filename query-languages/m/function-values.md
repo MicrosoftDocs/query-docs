@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Function values"
-title: "Function values | Microsoft Docs"
+title: "Function values"
 ms.date: 5/16/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Function values
 

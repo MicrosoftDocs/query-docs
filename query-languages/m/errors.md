@@ -1,13 +1,8 @@
 ---
 description: "Learn more about: Errors"
-title: "Errors | Microsoft Docs"
+title: "Errors"
+ms.topic: conceptual
 ms.date: 8/2/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
 ---
 
 # Errors
@@ -67,7 +62,7 @@ in
     Label  
 ```
 
-The above example accesses the `Sales[UnitPrice]` field and formats the value producing the result:  
+The previous example accesses the `Sales[UnitPrice]` field and formats the value producing the result:  
   
 ```powerquery-m
 "Unit Price: 2"  

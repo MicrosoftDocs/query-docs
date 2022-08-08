@@ -1,13 +1,8 @@
 ---
-title: M Language Conditionals | Microsoft Docs
+title: M Language Conditionals 
 description: Describes using conditionals in the Power Query M formula language
-author: dougklopfenstein
-
-ms.service: powerquery
-
-ms.topic: article
+ms.topic: conceptual
 ms.date: 8/2/2022
-ms.author: dougklo
 ---
 
 

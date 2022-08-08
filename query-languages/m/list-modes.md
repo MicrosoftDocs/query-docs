@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: List.Modes"
-title: "List.Modes | Microsoft Docs"
+title: "List.Modes"
 ms.date: 7/15/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.Modes
 

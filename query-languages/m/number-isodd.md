@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Number.IsOdd"
-title: "Number.IsOdd | Microsoft Docs"
+title: "Number.IsOdd"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Number.IsOdd
 

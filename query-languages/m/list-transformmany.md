@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: List.TransformMany"
-title: "List.TransformMany | Microsoft Docs"
+title: "List.TransformMany"
 ms.date: 10/18/2021
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.TransformMany
 

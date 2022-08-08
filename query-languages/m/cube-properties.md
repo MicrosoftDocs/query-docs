@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Cube.Properties"
-title: "Cube.Properties | Microsoft Docs"
+title: "Cube.Properties"
 ms.date: 4/17/2018
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Cube.Properties
 

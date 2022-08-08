@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Table.IsEmpty"
-title: "Table.IsEmpty | Microsoft Docs"
+title: "Table.IsEmpty"
 ms.date: 3/14/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.IsEmpty
 

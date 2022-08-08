@@ -23,7 +23,7 @@ While functions and functionality are being updated all the time, only those upd
 
 |Function  |Month  | Description |
 |---------|---------|---------|
-|[NETWORKDAYS](networkdays-dax.md)| July, 2021 |  Returns the number of whole workdays between two dates. |
+|[NETWORKDAYS](networkdays-dax.md)| July, 2022 |  Returns the number of whole workdays between two dates. |
 |[BITAND](bitand-function-dax.md)      | November, 2021 | Returns a bitwise 'AND' of two numbers.      |
 |[BITLSHIFT](bitlshift-function-dax.md)      | November, 2021 | Returns a number shifted left by the specified number of bits.       |
 |[BITOR](bitor-function-dax.md)      | November, 2021 | Returns a bitwise 'OR' of two numbers.       |

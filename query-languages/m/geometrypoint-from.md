@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: GeometryPoint.From"
-title: "GeometryPoint.From | Microsoft Docs"
+title: "GeometryPoint.From"
 ms.date: 7/16/2020
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # GeometryPoint.From
 ## Syntax

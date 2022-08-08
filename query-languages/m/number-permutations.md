@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Number.Permutations"
-title: "Number.Permutations | Microsoft Docs"
+title: "Number.Permutations"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Number.Permutations
 

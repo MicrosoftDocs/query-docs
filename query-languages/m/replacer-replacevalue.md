@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Replacer.ReplaceValue"
-title: "Replacer.ReplaceValue | Microsoft Docs"
+title: "Replacer.ReplaceValue"
 ms.date: 3/14/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Replacer.ReplaceValue
 

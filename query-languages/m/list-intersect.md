@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: List.Intersect"
-title: "List.Intersect | Microsoft Docs"
+title: "List.Intersect"
 ms.date: 3/8/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.Intersect
 

@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Culture.Current"
-title: "Culture.Current | Microsoft Docs"
+title: "Culture.Current"
 ms.date: 7/29/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Culture.Current
 

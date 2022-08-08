@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: List.Split"
-title: "List.Split | Microsoft Docs"
+title: "List.Split"
 ms.date: 11/17/2021
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.Split
 

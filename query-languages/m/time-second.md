@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Time.Second"
-title: "Time.Second | Microsoft Docs"
+title: "Time.Second"
 ms.date: 3/14/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Time.Second
 

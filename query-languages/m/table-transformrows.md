@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Table.TransformRows"
-title: "Table.TransformRows | Microsoft Docs"
+title: "Table.TransformRows"
 ms.date: 4/13/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.TransformRows
 

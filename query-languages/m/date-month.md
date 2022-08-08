@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Date.Month"
-title: "Date.Month | Microsoft Docs"
+title: "Date.Month"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date.Month
 

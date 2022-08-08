@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: DateTimeZone.FromText"
-title: "DateTimeZone.FromText | Microsoft Docs"
+title: "DateTimeZone.FromText"
 ms.date: 6/24/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # DateTimeZone.FromText
 

@@ -1,12 +1,7 @@
 ---
 description: "Learn more about: AzureStorage.DataLakeContents"
-title: "AzureStorage.DataLakeContents | Microsoft Docs"
+title: "AzureStorage.DataLakeContents"
 ms.date: 10/10/2019
-ms.service: powerquery
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
 ---
 # AzureStorage.DataLakeContents
 

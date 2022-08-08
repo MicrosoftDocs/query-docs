@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: OData.Feed"
-title: "OData.Feed | Microsoft Docs"
+title: "OData.Feed"
 ms.date: 3/16/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # OData.Feed
 

@@ -1,12 +1,7 @@
 ---
 description: "Learn more about: AccessControlEntry.ConditionToIdentities"
-title: "AccessControlEntry.ConditionToIdentities | Microsoft Docs"
+title: "AccessControlEntry.ConditionToIdentities"
 ms.date: 3/28/2019
-ms.service: powerquery
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
 ---
 # AccessControlEntry.ConditionToIdentities
 

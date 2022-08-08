@@ -1,13 +1,8 @@
 ---
 description: "Learn more about: Metadata"
-title: "Metadata | Microsoft Docs"
+title: "Metadata"
+ms.topic: conceptual
 ms.date: 8/2/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
 ---
 
 # Metadata

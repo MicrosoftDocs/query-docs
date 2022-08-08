@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Date.IsInCurrentQuarter"
-title: "Date.IsInCurrentQuarter | Microsoft Docs"
+title: "Date.IsInCurrentQuarter"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date.IsInCurrentQuarter
 

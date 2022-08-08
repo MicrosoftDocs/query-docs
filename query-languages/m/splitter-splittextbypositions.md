@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Splitter.SplitTextByPositions"
-title: "Splitter.SplitTextByPositions | Microsoft Docs"
+title: "Splitter.SplitTextByPositions"
 ms.date: 3/16/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Splitter.SplitTextByPositions
 

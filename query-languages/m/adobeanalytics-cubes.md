@@ -1,12 +1,7 @@
 ---
 description: "Learn more about: AdobeAnalytics.Cubes"
-title: "AdobeAnalytics.Cubes | Microsoft Docs"
+title: "AdobeAnalytics.Cubes"
 ms.date: 6/24/2022
-ms.service: powerquery
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
 ---
 # AdobeAnalytics.Cubes
 

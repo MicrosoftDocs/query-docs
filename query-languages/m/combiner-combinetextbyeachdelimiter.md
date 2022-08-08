@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Combiner.CombineTextByEachDelimiter"
-title: "Combiner.CombineTextByEachDelimiter | Microsoft Docs"
+title: "Combiner.CombineTextByEachDelimiter"
 ms.date: 7/29/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Combiner.CombineTextByEachDelimiter
 

@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Function.IsDataSource"
-title: "Function.IsDataSource | Microsoft Docs"
+title: "Function.IsDataSource"
 ms.date: 7/30/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Function.IsDataSource
 

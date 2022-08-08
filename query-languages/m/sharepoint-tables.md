@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: SharePoint.Tables"
-title: "SharePoint.Tables | Microsoft Docs"
+title: "SharePoint.Tables"
 ms.date: 9/14/2020
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # SharePoint.Tables
 

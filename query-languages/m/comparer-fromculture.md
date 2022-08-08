@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Comparer.FromCulture"
-title: "Comparer.FromCulture | Microsoft Docs"
+title: "Comparer.FromCulture"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Comparer.FromCulture
 

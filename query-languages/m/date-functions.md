@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Date functions"
-title: "Date functions | Microsoft Docs"
+title: "Date functions"
 ms.date: 5/16/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date functions
 

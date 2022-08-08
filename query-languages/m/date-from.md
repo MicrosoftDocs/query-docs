@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Date.From"
-title: "Date.From | Microsoft Docs"
+title: "Date.From"
 ms.date: 5/19/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date.From
 

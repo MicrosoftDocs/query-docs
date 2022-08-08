@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Table.CombineColumnsToRecord"
-title: "Table.CombineColumnsToRecord | Microsoft Docs"
+title: "Table.CombineColumnsToRecord"
 ms.date: 09/14/2020
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.CombineColumnsToRecord
 

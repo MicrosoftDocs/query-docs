@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Cube.AddAndExpandDimensionColumn"
-title: "Cube.AddAndExpandDimensionColumn | Microsoft Docs"
+title: "Cube.AddAndExpandDimensionColumn"
 ms.date: 4/16/2018
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Cube.AddAndExpandDimensionColumn
 
@@ -18,4 +11,4 @@ ms.author: dougklo
 </pre>
 
 ## About
-Merges the specified dimension table, `dimensionSelector`, into the cube’s, `cube`, filter context and changes the dimensional granularity by expanding the specified set, `attributeNames`, of dimension attributes. The dimension attributes are added to the tabular view with columns named `newColumnNames`, or `attributeNames` if not specified.
+Merges the specified dimension table, `dimensionSelector`, into the cube's, `cube`, filter context and changes the dimensional granularity by expanding the specified set, `attributeNames`, of dimension attributes. The dimension attributes are added to the tabular view with columns named `newColumnNames`, or `attributeNames` if not specified.

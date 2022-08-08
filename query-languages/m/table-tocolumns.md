@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Table.ToColumns"
-title: "Table.ToColumns | Microsoft Docs"
+title: "Table.ToColumns"
 ms.date: 3/10/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.ToColumns
 

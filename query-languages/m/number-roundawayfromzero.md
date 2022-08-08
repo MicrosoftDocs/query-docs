@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Number.RoundAwayFromZero"
-title: "Number.RoundAwayFromZero | Microsoft Docs"
+title: "Number.RoundAwayFromZero"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Number.RoundAwayFromZero
 

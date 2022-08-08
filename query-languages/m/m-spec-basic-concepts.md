@@ -1,13 +1,8 @@
 ---
-title: M Language basic concepts | Microsoft Docs
+title: M Language basic concepts 
 description: Discusses basic concepts that appear throughout the subsequent sections
-author: dougklopfenstein
-
-ms.service: powerquery
-
-ms.topic: article
+ms.topic: conceptual
 ms.date: 8/2/2022
-ms.author: dougklo
 ms.custom: intro-internal
 ---
 

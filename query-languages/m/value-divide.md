@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Value.Divide"
-title: "Value.Divide | Microsoft Docs"
+title: "Value.Divide"
 ms.date: 8/2/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Value.Divide
 

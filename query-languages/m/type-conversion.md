@@ -1,13 +1,8 @@
 ---
 description: "Learn more about: Type conversion"
-title: "Type conversion | Microsoft Docs"
+title: "Type conversion"
+ms.topic: conceptual
 ms.date: 8/2/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
 ---
 
 # Type conversion

@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.Choice"
-title: "BinaryFormat.Choice | Microsoft Docs"
+title: "BinaryFormat.Choice"
 ms.date: 3/7/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # BinaryFormat.Choice
 

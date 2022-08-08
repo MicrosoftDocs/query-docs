@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Date.IsInPreviousDay"
-title: "Date.IsInPreviousDay | Microsoft Docs"
+title: "Date.IsInPreviousDay"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date.IsInPreviousDay
 

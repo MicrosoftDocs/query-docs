@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Tables.GetRelationships"
-title: "Tables.GetRelationships | Microsoft Docs"
+title: "Tables.GetRelationships"
 ms.date: 8/1/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Tables.GetRelationships
 

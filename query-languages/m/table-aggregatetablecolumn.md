@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Table.AggregateTableColumn"
-title: "Table.AggregateTableColumn | Microsoft Docs"
+title: "Table.AggregateTableColumn"
 ms.date: 3/10/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.AggregateTableColumn
 

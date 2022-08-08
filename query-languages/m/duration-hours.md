@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Duration.Hours"
-title: "Duration.Hours | Microsoft Docs"
+title: "Duration.Hours"
 ms.date: 7/18/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Duration.Hours
 

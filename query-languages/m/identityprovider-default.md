@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: IdentityProvider.Default"
-title: "IdentityProvider.Default | Microsoft Docs"
+title: "IdentityProvider.Default"
 ms.date: 3/28/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # IdentityProvider.Default
 

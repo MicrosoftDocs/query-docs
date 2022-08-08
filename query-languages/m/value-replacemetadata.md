@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Value.ReplaceMetadata"
-title: "Value.ReplaceMetadata | Microsoft Docs"
+title: "Value.ReplaceMetadata"
 ms.date: 8/2/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Value.ReplaceMetadata
 

@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: SqlExpression.SchemaFrom"
-title: "SqlExpression.SchemaFrom | Microsoft Docs"
+title: "SqlExpression.SchemaFrom"
 ms.date: 10/18/2021
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # SqlExpression.SchemaFrom
 

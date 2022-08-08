@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.Decimal"
-title: "BinaryFormat.Decimal | Microsoft Docs"
+title: "BinaryFormat.Decimal"
 ms.date: 7/29/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # BinaryFormat.Decimal
 

@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Date.EndOfDay"
-title: "Date.EndOfDay | Microsoft Docs"
+title: "Date.EndOfDay"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date.EndOfDay
 

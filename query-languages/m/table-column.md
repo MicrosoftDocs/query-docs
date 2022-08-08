@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Table.Column"
-title: "Table.Column | Microsoft Docs"
+title: "Table.Column"
 ms.date: 3/10/2020
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.Column
 

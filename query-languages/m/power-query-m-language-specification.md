@@ -1,17 +1,12 @@
 ---
 description: "Learn more about: Power Query M language specification"
-title: "Power Query M language specification | Microsoft Docs"
+title: "Power Query M language specification"
+ms.topic: conceptual
 ms.date: 8/2/2022
-ms.service: powerquery
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Power Query M language specification
 
-The specification describes the values, expressions, environments and variables, identifiers, and the evaluation model that form the Power Query M language’s basic concepts.
+The specification describes the values, expressions, environments and variables, identifiers, and the evaluation model that form the Power Query M language's basic concepts.
 
 The specification is contained in the following topics.
 

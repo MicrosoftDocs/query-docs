@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Date.EndOfMonth"
-title: "Date.EndOfMonth | Microsoft Docs"
+title: "Date.EndOfMonth"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date.EndOfMonth
 

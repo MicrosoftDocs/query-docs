@@ -1,13 +1,8 @@
 ---
-title: M Language Consolidated Grammar | Microsoft Docs
+title: M Language Consolidated Grammar 
 description: Describes all of the grammar associated with the Power Query M formula language
-author: dougklopfenstein
-
-ms.service: powerquery
-
-ms.topic: article
+ms.topic: conceptual
 ms.date: 8/2/2022
-ms.author: dougklo
 ---
 
 # Consolidated Grammar

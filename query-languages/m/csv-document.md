@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Csv.Document"
-title: "Csv.Document | Microsoft Docs"
+title: "Csv.Document"
 ms.date: 4/13/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Csv.Document
 

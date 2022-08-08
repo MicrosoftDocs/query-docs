@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Table.DuplicateColumn"
-title: "Table.DuplicateColumn | Microsoft Docs"
+title: "Table.DuplicateColumn"
 ms.date: 3/10/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.DuplicateColumn
 

@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Value.As"
-title: "Value.As | Microsoft Docs"
+title: "Value.As"
 ms.date: 3/14/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Value.As
 

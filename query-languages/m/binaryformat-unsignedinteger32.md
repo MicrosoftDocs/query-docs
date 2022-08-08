@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.UnsignedInteger32"
-title: "BinaryFormat.UnsignedInteger32 | Microsoft Docs"
+title: "BinaryFormat.UnsignedInteger32"
 ms.date: 7/29/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # BinaryFormat.UnsignedInteger32
   

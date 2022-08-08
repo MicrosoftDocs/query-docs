@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Type.IsNullable"
-title: "Type.IsNullable | Microsoft Docs"
+title: "Type.IsNullable"
 ms.date: 3/14/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Type.IsNullable
 

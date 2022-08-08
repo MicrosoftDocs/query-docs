@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Number.E"
-title: "Number.E | Microsoft Docs"
+title: "Number.E"
 ms.date: 7/31/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Number.E
 

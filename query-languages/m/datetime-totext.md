@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: DateTime.ToText"
-title: "DateTime.ToText | Microsoft Docs"
+title: "DateTime.ToText"
 ms.date: 6/24/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # DateTime.ToText
 

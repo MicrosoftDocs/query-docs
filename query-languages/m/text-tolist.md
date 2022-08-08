@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Text.ToList"
-title: "Text.ToList | Microsoft Docs"
+title: "Text.ToList"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Text.ToList
 

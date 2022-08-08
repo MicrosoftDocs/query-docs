@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Type.TableRow"
-title: "Type.TableRow | Microsoft Docs"
+title: "Type.TableRow"
 ms.date: 3/14/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Type.TableRow
 

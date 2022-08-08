@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: List.Generate"
-title: "List.Generate | Microsoft Docs"
+title: "List.Generate"
 ms.date: 7/19/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.Generate
   

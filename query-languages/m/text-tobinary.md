@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Text.ToBinary"
-title: "Text.ToBinary | Microsoft Docs"
+title: "Text.ToBinary"
 ms.date: 8/2/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Text.ToBinary
 

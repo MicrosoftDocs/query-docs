@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Duration.Seconds"
-title: "Duration.Seconds | Microsoft Docs"
+title: "Duration.Seconds"
 ms.date: 7/18/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Duration.Seconds
 

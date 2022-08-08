@@ -1,13 +1,7 @@
 ---
 description: "Learn more about: Expression functions"
-title: "Expression functions | Microsoft Docs"
+title: "Expression functions"
 ms.date: 5/16/2020
-ms.service: powerquery
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Expression functions
 

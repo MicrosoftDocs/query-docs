@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Exchange.Contents"
-title: "Exchange.Contents | Microsoft Docs"
+title: "Exchange.Contents"
 ms.date: 7/29/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Exchange.Contents
 

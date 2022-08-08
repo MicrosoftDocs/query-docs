@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: List.RemoveMatchingItems"
-title: "List.RemoveMatchingItems | Microsoft Docs"
+title: "List.RemoveMatchingItems"
 ms.date: 3/9/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.RemoveMatchingItems
 

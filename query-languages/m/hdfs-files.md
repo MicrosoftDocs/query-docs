@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Hdfs.Files"
-title: "Hdfs.Files | Microsoft Docs"
+title: "Hdfs.Files"
 ms.date: 7/29/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Hdfs.Files
 

@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: DateTimeZone.FixedLocalNow"
-title: "DateTimeZone.FixedLocalNow | Microsoft Docs"
+title: "DateTimeZone.FixedLocalNow"
 ms.date: 7/30/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # DateTimeZone.FixedLocalNow
 

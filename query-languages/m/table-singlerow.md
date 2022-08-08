@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Table.SingleRow"
-title: "Table.SingleRow | Microsoft Docs"
+title: "Table.SingleRow"
 ms.date: 3/10/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.SingleRow
 

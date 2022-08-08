@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Date.DayOfWeek"
-title: "Date.DayOfWeek | Microsoft Docs"
+title: "Date.DayOfWeek"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date.DayOfWeek
 

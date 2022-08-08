@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Number.Power"
-title: "Number.Power | Microsoft Docs"
+title: "Number.Power"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Number.Power
   

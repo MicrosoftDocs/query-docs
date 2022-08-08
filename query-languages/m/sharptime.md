@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: #time"
-title: "#time | Microsoft Docs"
+title: "#time"
 ms.date: 6/21/2021
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # #time
 

@@ -37,9 +37,15 @@
     "globalMetadata": {
       "breadcrumb_path": "/powerquery-m/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "titleSuffix": "PowerQuery M"
+      "titleSuffix": "PowerQuery M",
+      "ms.service": "powerquery",
+      "ms.topic": "reference", 
+      "ms.reviewer": "ehvonleh",
+      "author": "dougklopfenstein",
+      "ms.author": "dougklo",
+      "searchScope": ["Power Query","M formula language"]
     },
-    "fileMetadata": {},
+    "fileMetadata": { },
     "template": [],
     "dest": "m-language"
   }

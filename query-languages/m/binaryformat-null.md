@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.Null"
-title: "BinaryFormat.Null | Microsoft Docs"
+title: "BinaryFormat.Null"
 ms.date: 7/29/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # BinaryFormat.Null
 

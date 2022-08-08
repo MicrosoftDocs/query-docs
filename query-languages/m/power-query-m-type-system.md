@@ -1,14 +1,8 @@
-﻿---
+---
 description: "Learn more about: Types in the Power Query M formula language"
-title: "Power Query M type system | Microsoft Docs"
+title: "Power Query M type system"
+ms.topic: conceptual
 ms.date: 8/2/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 
 # Types in the Power Query M formula language

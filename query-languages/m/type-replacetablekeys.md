@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Type.ReplaceTableKeys"
-title: "Type.ReplaceTableKeys | Microsoft Docs"
+title: "Type.ReplaceTableKeys"
 ms.date: 8/2/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Type.ReplaceTableKeys
 

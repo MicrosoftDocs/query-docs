@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Date.IsInYearToDate"
-title: "Date.IsInYearToDate | Microsoft Docs"
+title: "Date.IsInYearToDate"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date.IsInYearToDate
 

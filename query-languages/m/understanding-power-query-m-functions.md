@@ -1,13 +1,8 @@
 ---
 description: "Learn more about: Understanding Power Query M functions"
-title: "Understanding Power Query M functions | Microsoft Docs"
+title: "Understanding Power Query M functions"
+ms.topic: conceptual
 ms.date: 8/2/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: article
-author: dougklopfenstein
-ms.author: dougklo
 ---
 
 # Understanding Power Query M functions
@@ -71,7 +66,7 @@ in
 
 **Each keyword**
   
-The **each** keyword is used to easily create simple functions. “each ...” is syntactic sugar for a function signature that takes the _ parameter “(\_) =&gt; ...”  
+The **each** keyword is used to easily create simple functions. "each ..." is syntactic sugar for a function signature that takes the _ parameter "(\_) =&gt; ..."  
   
 Each is useful when combined with the lookup operator, which is applied by default to _  
 For example,  each [CustomerID] is the same as each \_[CustomerID], which is the same as (\_) =&gt; \_[CustomerID]  

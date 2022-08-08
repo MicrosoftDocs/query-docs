@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Time functions"
-title: "Time functions | Microsoft Docs"
+title: "Time functions"
 ms.date: 5/16/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Time functions
 

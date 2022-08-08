@@ -1,12 +1,7 @@
 ---
 description: "Learn more about: Binary.Buffer"
-title: "Binary.Buffer | Microsoft Docs"
+title: "Binary.Buffer"
 ms.date: 3/11/2022
-ms.service: powerquery
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
 ---
 # Binary.Buffer
 

@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Duration.Days"
-title: "Duration.Days | Microsoft Docs"
+title: "Duration.Days"
 ms.date: 7/18/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Duration.Days
 

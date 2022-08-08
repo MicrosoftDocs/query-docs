@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Value.Firewall"
-title: "Value.Firewall | Microsoft Docs"
+title: "Value.Firewall"
 ms.date: 10/18/2021
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Value.Firewall
 

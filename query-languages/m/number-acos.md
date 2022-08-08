@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Number.Acos"
-title: "Number.Acos | Microsoft Docs"
+title: "Number.Acos"
 ms.date: 7/31/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Number.Acos
 

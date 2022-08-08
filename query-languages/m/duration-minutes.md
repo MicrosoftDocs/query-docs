@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Duration.Minutes"
-title: "Duration.Minutes | Microsoft Docs"
+title: "Duration.Minutes"
 ms.date: 7/18/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Duration.Minutes
 

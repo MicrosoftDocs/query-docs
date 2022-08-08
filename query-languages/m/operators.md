@@ -1,13 +1,8 @@
 ---
 description: "Learn more about: Operators"
-title: "Operators | Microsoft Docs"
+title: "Operators"
+ms.topic: conceptual
 ms.date: 8/2/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
 ---
 
 # Operators

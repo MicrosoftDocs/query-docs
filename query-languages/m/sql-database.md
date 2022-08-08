@@ -1,12 +1,7 @@
 ---
 description: "Learn more about: Sql.Database"
-title: "Sql.Database | Microsoft Docs"
+title: "Sql.Database"
 ms.date: 11/23/2020
-ms.service: powerquery
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
 ---
 # Sql.Database
 

@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Identity.From"
-title: "Identity.From | Microsoft Docs"
+title: "Identity.From"
 ms.date: 3/28/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Identity.From
 

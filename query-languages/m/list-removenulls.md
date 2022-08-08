@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: List.RemoveNulls"
-title: "List.RemoveNulls | Microsoft Docs"
+title: "List.RemoveNulls"
 ms.date: 3/9/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # List.RemoveNulls
 

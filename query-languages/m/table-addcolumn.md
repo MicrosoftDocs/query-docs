@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Table.AddColumn"
-title: "Table.AddColumn | Microsoft Docs"
+title: "Table.AddColumn"
 ms.date: 3/9/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.AddColumn
 

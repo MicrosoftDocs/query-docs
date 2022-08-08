@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Time.FromText"
-title: "Time.FromText | Microsoft Docs"
+title: "Time.FromText"
 ms.date: 6/24/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Time.FromText
 

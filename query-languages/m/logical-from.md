@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Logical.From"
-title: "Logical.From | Microsoft Docs"
+title: "Logical.From"
 ms.date: 4/13/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Logical.From
 

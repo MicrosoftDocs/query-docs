@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Table.ToList"
-title: "Table.ToList | Microsoft Docs"
+title: "Table.ToList"
 ms.date: 5/3/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.ToList
 

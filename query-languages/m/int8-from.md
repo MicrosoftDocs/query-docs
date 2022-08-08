@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Int8.From"
-title: "Int8.From | Microsoft Docs"
+title: "Int8.From"
 ms.date: 4/13/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Int8.From
 

@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: DateTime.FromText"
-title: "DateTime.FromText | Microsoft Docs"
+title: "DateTime.FromText"
 ms.date: 6/24/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # DateTime.FromText
 

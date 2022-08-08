@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Combiner functions"
-title: "Combiner functions | Microsoft Docs"
+title: "Combiner functions"
 ms.date: 5/16/2020
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Combiner functions
 

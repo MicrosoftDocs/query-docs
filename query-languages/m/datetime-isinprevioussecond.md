@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: DateTime.IsInPreviousSecond"
-title: "DateTime.IsInPreviousSecond | Microsoft Docs"
+title: "DateTime.IsInPreviousSecond"
 ms.date: 3/11/2021
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # DateTime.IsInPreviousSecond
 

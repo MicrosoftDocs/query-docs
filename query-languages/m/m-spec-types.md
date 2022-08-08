@@ -1,13 +1,8 @@
 ---
-title: M Language types | Microsoft Docs
+title: M Language types 
 description: Describes using types in the Power Query M formula language
-author: dougklopfenstein
-
-ms.service: powerquery
-
-ms.topic: article
+ms.topic: conceptual
 ms.date: 8/2/2022
-ms.author: dougklo
 ---
 
 # Types

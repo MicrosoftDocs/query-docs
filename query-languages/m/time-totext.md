@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Time.ToText"
-title: "Time.ToText | Microsoft Docs"
+title: "Time.ToText"
 ms.date: 6/24/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Time.ToText
 

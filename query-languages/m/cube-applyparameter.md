@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Cube.ApplyParameter"
-title: "Cube.ApplyParameter | Microsoft Docs"
+title: "Cube.ApplyParameter"
 ms.date: 7/29/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Cube.ApplyParameter
 

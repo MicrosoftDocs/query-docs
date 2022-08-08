@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Excel.Workbook"
-title: "Excel.Workbook | Microsoft Docs"
+title: "Excel.Workbook"
 ms.date: 4/13/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Excel.Workbook
   

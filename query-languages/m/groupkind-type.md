@@ -1,13 +1,7 @@
 ---
 description: "Learn more about: GroupKind.Type"
-title: "GroupKind.Type | Microsoft Docs"
+title: "GroupKind.Type"
 ms.date: 5/16/2022
-ms.service: powerquery
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # GroupKind.Type
 

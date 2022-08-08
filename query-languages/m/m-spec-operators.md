@@ -1,13 +1,8 @@
 ---
-title: M Language Operators | Microsoft Docs
+title: M Language Operators 
 description: Describes using operators in the Power Query M formula language
-author: dougklopfenstein
-
-ms.service: powerquery
-
-ms.topic: article
+ms.topic: conceptual
 ms.date: 8/2/2022
-ms.author: dougklo
 ---
 
 # Operator behavior

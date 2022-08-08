@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Table.SplitAt"
-title: "Table.SplitAt | Microsoft Docs"
+title: "Table.SplitAt"
 ms.date: 3/14/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.SplitAt
 

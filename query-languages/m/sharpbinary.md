@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: #binary"
-title: "#binary | Microsoft Docs"
+title: "#binary"
 ms.date: 3/14/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # #binary
 ## Syntax

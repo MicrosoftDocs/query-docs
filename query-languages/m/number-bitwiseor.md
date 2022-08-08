@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Number.BitwiseOr"
-title: "Number.BitwiseOr | Microsoft Docs"
+title: "Number.BitwiseOr"
 ms.date: 7/31/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Number.BitwiseOr
 

@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Table.ColumnsOfType"
-title: "Table.ColumnsOfType | Microsoft Docs"
+title: "Table.ColumnsOfType"
 ms.date: 3/10/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.ColumnsOfType
 

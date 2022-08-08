@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Date.IsInCurrentMonth"
-title: "Date.IsInCurrentMonth | Microsoft Docs"
+title: "Date.IsInCurrentMonth"
 ms.date: 3/11/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Date.IsInCurrentMonth
 

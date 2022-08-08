@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Number.Epsilon"
-title: "Number.Epsilon | Microsoft Docs"
+title: "Number.Epsilon"
 ms.date: 7/31/2019
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Number.Epsilon
 

@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Number.Atan2"
-title: "Number.Atan2 | Microsoft Docs"
+title: "Number.Atan2"
 ms.date: 1/20/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Number.Atan2
 

@@ -1,14 +1,8 @@
 ---
 description: "Learn more about: Expressions, values, and let expression"
-title: "Expressions, values, and let expression | Microsoft Docs"
+title: "Expressions, values, and let expression"
+ms.topic: conceptual
 ms.date: 8/2/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Expressions, values, and let expression
 
@@ -46,7 +40,7 @@ A **primitive** value is single-part value, such as a number, logical, text, or 
   
 ## <a name="Function"></a>Function value
 
-A **Function** is a value   which, when invoked with arguments, produces a new value.  Functions are written by listing the function’s **parameters** in parentheses, followed by the goes-to symbol =&gt;, followed by the expression defining the function. For example, to create a function called “MyFunction” that has two parameters and performs a calculation on parameter1 and parameter2:  
+A **Function** is a value that, when invoked with arguments, produces a new value.  Functions are written by listing the function’s **parameters** in parentheses, followed by the goes-to symbol =&gt;, followed by the expression defining the function. For example, to create a function called “MyFunction” that has two parameters and performs a calculation on parameter1 and parameter2:  
   
 ```powerquery-m
 let  
@@ -97,6 +91,7 @@ The following are some **List** examples.
 |{123, true, "A"}{0}|Get the value of the first item in a List. This expression returns the value 123.|  
 |{<br />  {1, 2, 3},<br />  {4, 5, 6}<br />}{0}{1}|Get the value of the second item from the first List element. This expression returns the value 2.|  
   
+
 ### <a name="record"></a>Record
 
 A **Record** is a set of fields. A **field** is a name/value pair where the name is a text value that is unique within the field’s record. The syntax for record values allows the names to be written without quotes, a form also referred to as **identifiers**. An identifier can take the following two forms:  

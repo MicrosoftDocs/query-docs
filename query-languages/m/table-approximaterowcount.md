@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: Table.ApproximateRowCount"
-title: "Table.ApproximateRowCount | Microsoft Docs"
+title: "Table.ApproximateRowCount"
 ms.date: 3/16/2022
-ms.service: powerquery
-
-ms.reviewer: ehvonleh
-ms.topic: reference
-author: dougklopfenstein
-ms.author: dougklo
-
 ---
 # Table.ApproximateRowCount
 
