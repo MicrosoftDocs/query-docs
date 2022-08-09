@@ -3,7 +3,7 @@ title: "DAX Queries | Microsoft Docs"
 description: Describes Data Analysis Expressions (DAX) language queries.
 ms.service: powerbi 
 ms.subservice: dax 
-ms.date: 06/14/2021
+ms.date: 08/09/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -134,12 +134,22 @@ The optional **DEFINE** keyword defines entities that exist only for the duratio
 #### Syntax
   
 ```dax
-[DEFINE {  MEASURE <tableName>[<name>] = <expression> } 
-        {  VAR <name> = <expression>}]
-EVALUATE <table>  
+[DEFINE    
+    { MEASURE <tableName>[<measureName>] = <expression> }
+    { VAR <name> = <expression> }
+    { TABLE <tableName> = <expression> }
+    { COLUMN <tableName>[<columnName>] = <expression>} ]
 ```
 
 #### Arguments
+
+|Term  |Definition  |
+|---------|---------|
+|   tableName     |   The name of an existing table using standard DAX syntax. It cannot be an expression.       |
+|   name     |   The name of a new measure. It cannot be an expression.      |
+|  expression  |  Any DAX expression that returns a single scalar value. The expression can use any of the defined measures. The expression must return a table. If a scalar value is required, wrap the scalar inside a ROW() function to produce a table.  |
+|   VAR     |   An optional expression as a named variable. A [VAR](var-dax.md) can be passed as an argument to other expressions.      |
+
 
 |Term  |Definition  |
 |---------|---------|
@@ -152,14 +162,25 @@ EVALUATE <table>
 
 ```dax
 DEFINE
-MEASURE 'Internet Sales'[Internet Total Sales] = SUM('Internet Sales'[Sales Amount])
+    MEASURE 'Internet Sales'[Internet Total Sales] =
+        SUM ( 'Internet Sales'[Sales Amount] )
+
 EVALUATE
-SUMMARIZECOLUMNS
-(
+SUMMARIZECOLUMNS (
     'Date'[Calendar Year],
-    TREATAS({2013, 2014}, 'Date'[Calendar Year]),
+    TREATAS (
+        {
+            2013,
+            2014
+        },
+        'Date'[Calendar Year]
+    ),
     "Total Sales", [Internet Total Sales],
-    "Combined Years Total Sales", CALCULATE([Internet Total Sales], ALLSELECTED('Date'[Calendar Year]))
+    "Combined Years Total Sales",
+        CALCULATE (
+            [Internet Total Sales],
+            ALLSELECTED ( 'Date'[Calendar Year] )
+        )
 )
 ORDER BY [Calendar Year]
 ```

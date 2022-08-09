@@ -18,29 +18,38 @@ A keyword that defines entities that can be applied to one or more EVALUATE stat
 ## Syntax  
   
 ```dax
-DEFINE {  <entity> [<name>] = <expression> }
+DEFINE 
+    <entity> <name> = <expression>
 ```
   
 ### Arguments
   
 |Term|Definition|  
 |--------|--------------|  
-|entity|MEASURE, VAR, TABLE, or COLUMN.|
+|entity|MEASURE, VAR, TABLE\*, or COLUMN\*. |
 |name|The name of an entity. It cannot be an expression.|  
 |expression|Any DAX expression that returns a single scalar value. The expression can use any of the defined entities. The expression must return a table. If a scalar value is required, wrap the scalar inside a ROW() function to produce a table.|  
   
 ## Remarks
 
-- Entities can be variables, measures, tables, and columns.
+- *Table and column entity types are currently for internal use only. Functionality for these entity types is subject to change.
 
-- Definitions typically precede the EVALUATE statement and are valid for all EVALUATE statements.
+- Definitions typically precede the EVALUATE statement and are valid for all EVALUATE statements for the duration of the query.
 
 - Definitions can reference other definitions that appear before or after the current definition.
 
-- Definitions exist only for the duration of the query.
+## Examples
+
+```DAX
+DEFINE
+    MEASURE Customer[# Customers] = COUNTROWS ( Customer )
+    MEASURE Product[Number of products] = DISTINCTCOUNT ( Product[Product]) 
+```
+
+
 
 ## See also
 
-[DAX queries](dax-queries.md)  
-[ORDER BY](orderby-statement-dax.md)  
+[DAX queries](dax-queries.md) 
 [VAR](var-dax.md)  
+[ORDER BY](orderby-statement-dax.md)  
