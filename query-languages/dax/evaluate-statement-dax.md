@@ -48,5 +48,4 @@ Returns all rows and columns from the Internet Sales table, as a table.
 ## See also
 
 [DAX queries](dax-queries.md)  
-[DEFINE](define-statement-dax.md)  
-[ORDER BY](orderby-statement-dax.md)
+[VAR](var-dax.md)  

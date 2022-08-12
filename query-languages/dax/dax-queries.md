@@ -3,7 +3,7 @@ title: "DAX Queries | Microsoft Docs"
 description: Describes Data Analysis Expressions (DAX) language queries.
 ms.service: powerbi 
 ms.subservice: dax 
-ms.date: 08/09/2022
+ms.date: 06/14/2021
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -16,21 +16,11 @@ With DAX queries, you can query and return data defined by a table expression. R
 
 Before learning about queries, it's important you have a solid understanding of DAX basics. If you haven't already, be sure to checkout [DAX overview](dax-overview.md).
 
-## Syntax
-
-```dax
-[DEFINE {  MEASURE <tableName>[<name>] = <expression> } 
-        {  VAR <name> = <expression>}]
-EVALUATE <table>  
-[ORDER BY {<expression> [{ASC | DESC}]}[, …]  
-[START AT {<value>|<parameter>} [, …]]]  
-```
-
 ## Keywords
 
 ### EVALUATE (Required)
 
-At the most basic level, a DAX query is an **EVALUATE** statement containing a table expression. However, a query can contain multiple EVALUATE statements.
+At the most basic level, a DAX query is an **EVALUATE** statement containing a table expression. A query can contain multiple EVALUATE statements.
 
 #### Syntax
   
@@ -129,34 +119,32 @@ Multiple **EVALUATE**/**ORDER BY**/**START AT** clauses can be specified in a si
 
 ### DEFINE (Optional)
 
-The optional **DEFINE** keyword defines entities that exist only for the duration of the query. Definitions are valid for all EVALUATE statements. Entities can be variables, measures, tables, and columns. Definitions can reference other definitions that appear before or after the current definition. Definitions typically precede the EVALUATE statement. 
+The optional **DEFINE** keyword defines one or more calculated entity definitions that exist only for the duration of the query. Definitions typically precede the EVALUATE statement and are valid for all EVALUATE statements in the query. Definitions can be variables, measures, tables*, and columns*. Definitions can reference other definitions that appear before or after the current definition.
 
-#### Syntax
-  
+#### Syntax 
+
 ```dax
-[DEFINE    
-    { MEASURE <tableName>[<measureName>] = <expression> }
-    { VAR <name> = <expression> }
-    { TABLE <tableName> = <expression> }
-    { COLUMN <tableName>[<columnName>] = <expression>} ]
+[DEFINE 
+    (
+    MEASURE <table name>[<measure name>] = <scalar expression> | 
+    VAR <var name> = <table or scalar expression> |
+    TABLE <table name> = <table expression> | 
+    COLUMN <table name>[column name] = <scalar expression> | 
+    ) 
++ ]
+
+(EVALUATE <table expression>) +
 ```
 
 #### Arguments
 
-|Term  |Definition  |
-|---------|---------|
-|   tableName     |   The name of an existing table using standard DAX syntax. It cannot be an expression.       |
-|   name     |   The name of a new measure. It cannot be an expression.      |
-|  expression  |  Any DAX expression that returns a single scalar value. The expression can use any of the defined measures. The expression must return a table. If a scalar value is required, wrap the scalar inside a ROW() function to produce a table.  |
-|   VAR     |   An optional expression as a named variable. A [VAR](var-dax.md) can be passed as an argument to other expressions.      |
+|Term|Definition|  
+|--------|--------------|  
+|Entity|MEASURE, VAR, TABLE*, or COLUMN*. |
+|name|The name of a measure, var, table, or column definition. It cannot be an expression. The name does not have to be unique. The name exists only for the duration of the query.</br> VAR names have unique  restrictions. To learn more, see [VAR - Parameters](var-dax.md#parameters).|  
+|expression|Any DAX expression that returns a table or scalar value. The expression can use any of the defined entities. If a scalar value is required, wrap the expression inside a table constructor with curly braces `{}`, or use the `ROW()` function to return a single row table.|  
 
-
-|Term  |Definition  |
-|---------|---------|
-|   tableName     |   The name of an existing table using standard DAX syntax. It cannot be an expression.       |
-|   name     |   The name of a new measure. It cannot be an expression.      |
-|  expression  |  Any DAX expression that returns a single scalar value. The expression can use any of the defined measures. The expression must return a table. If a scalar value is required, wrap the scalar inside a ROW() function to produce a table.  |
-|   VAR     |   An optional expression as a named variable. A [VAR](var-dax.md) can be passed as an argument to other expressions.      |
+\* Query scoped TABLE and COLUMN definitions are meant for internal use only. While you can define TABLE and COLUMN types for a query, they may produce inconsistent results and are not recommended.
 
 #### Example
 

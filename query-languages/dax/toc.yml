@@ -793,12 +793,8 @@
       items:
       - name: Statements overview
         href: statements-dax.md
-      - name: DEFINE
-        href: define-statement-dax.md
       - name: EVALUATE
         href: evaluate-statement-dax.md
-      - name: ORDER BY
-        href: orderby-statement-dax.md
       - name: VAR
         href: var-dax.md
     - name: DAX glossary
