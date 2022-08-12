@@ -2,7 +2,7 @@
 title: M Language Let 
 description: Describes using the let expression in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 4/7/2020
+ms.date: 8/2/2022
 ---
 
 
@@ -24,7 +24,7 @@ variable-name:<br/>
 
 The following example shows intermediate results being calculated and stored in variables `x`, `y`, and `z` which are then used in a subsequent calculation `x + y + z`:
 
-```
+```powerquery-m
 let     x = 1 + 1,
         y = 2 + 2,     
         z = y + 1 
@@ -34,7 +34,7 @@ in
 
 The result of this expression is:
 
-```
+```powerquery-m
 11  // (1 + 1) + (2 + 2) + (2 + 2 + 1)
 ```
 
@@ -50,11 +50,10 @@ The following holds when evaluating expressions within the _let-expression_:
 
 A let expression can be seen as syntactic sugar over an implicit record expression. The following expression is equivalent to the example above:
 
-```
+```powerquery-m
 [     x = 1 + 1,
       y = 2 + 2,
       z = y + 1,
       result = x + y + z 
 ][result]
 ```
-

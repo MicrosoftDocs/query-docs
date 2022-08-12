@@ -2,7 +2,7 @@
 title: M Language values 
 description: Describes using values in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 11/29/2021
+ms.date: 8/2/2022
 ---
 
 # Values
@@ -26,14 +26,13 @@ A value is data produced by evaluating an expression. This section describes the
 | _Table_ | `#table({"X","Y"},{{0,1},{1,0}})` |
 | _Function_ | `(x) => x + 1` |
 | _Type_ | `type { number }`&nbsp;&nbsp;&nbsp;&nbsp;`type table [ A = any, B = text ]` |
-| | |
- 
+
 The following sections cover each value kind in detail. Types and type ascription are defined formally in [Types](m-spec-types.md). Function values are defined in [Functions](m-spec-functions.md). The following sections list the operators defined for each value kind and give examples. The full definition of operator semantics follows in [Operators](m-spec-operators.md).
 
 ## Null
 
 A _null value_ is used to represent the absence of a value, or a value of indeterminate or unknown state. A null value is written using the literal `null`. The following operators are defined for null values: 
- 
+
 | Operator | Result |
 | -------- | ------ |
 | `x > y` | Greater than |
@@ -43,8 +42,7 @@ A _null value_ is used to represent the absence of a value, or a value of indete
 | `x = y` | Equal |
 | `x <> y` | Not equal |
 | `x ?? y` | Coalesce |
-| | | 
- 
+
 The native type of the `null` value is the intrinsic type `null`.
 
 ## Logical
@@ -63,15 +61,14 @@ A _logical value_ is used for Boolean operations has the value true or false. A 
 | `x ?? y` | Coalesce |
 | `x and y` | Conditional logical AND |
 | `not x` | Logical NOT |
-| | |  
- 
+
 The native type of both logical values (`true` and `false`) is the intrinsic type `logical`.
 
 ## Number
 
 A _number value_ is used for numeric and arithmetic operations. The following are examples of number literals:
 
-```
+```powerquery-m
 3.14  // Fractional number 
 -1.5  // Fractional number 
 1.0e3 // Fractional number with exponent
@@ -117,7 +114,6 @@ The following operators are defined for number values:
 | `x ?? y` | Coalesce |
 | `+x` | Unary plus |
 | `-x` | Negation |
-| | |
 
 The native type of number values is the intrinsic type `number`.
 
@@ -127,7 +123,7 @@ A _time value_ stores an opaque representation of time of day. A time is encoded
 
 Time values may be constructed using the #time instrinsic.
 
-```
+```powerquery-m
 #time(hour, minute, second)
 ```
 
@@ -150,7 +146,6 @@ The following operators are defined for time values:
 | `x < y` | Less than |
 | `x <= y` | Less than or equal |
 | `x ?? y` | Coalesce |
-| | |
 
 The following operators permit one or both of their operands to be a date:
 
@@ -161,8 +156,7 @@ The following operators permit one or both of their operands to be a date:
 | `x - y` | `time` | `duration` | Date offset by negated duration |
 | `x - y` | `time` | `time` | Duration between dates |
 | `x & y` | `date` | `time` | Merged datetime |
-| | | | |
- 
+
 The native type of time values is the intrinsic type `time`.
 
 ## Date
@@ -171,7 +165,7 @@ A _date value_ stores an opaque representation of a specific day. A date is enco
 
 Date values may be constructed using the `#date` intrinsic.
 
-```
+```powerquery-m
 #date(year, month, day)
 ```
 
@@ -194,7 +188,6 @@ The following operators are defined for date values:
 | `x < y` | Less than |
 | `x <= y` | Less than or equal |
 | `x ?? y` | Coalesce |
-| | |
 
 The following operators permit one or both of their operands to be a date:
 
@@ -205,16 +198,16 @@ The following operators permit one or both of their operands to be a date:
 | `x - y` | `date` | `duration` | Date offset by negated duration |
 | `x - y` | `date` | `date` | Duration between dates |
 | `x & y` | `date` | `time` | Merged datetime |
-| | | | |
 
 The native type of date values is the intrinsic type `date`.
 
 ## DateTime
+
 A _datetime value_ contains both a date and time.
 
 DateTime values may be constructed using the `#datetime` intrinsic.
 
-```
+```powerquery-m
 #datetime(year, month, day, hour, minute, second)
 ```
 
@@ -239,17 +232,15 @@ The following operators are defined for datetime values:
 | `x < y` | Less than |
 | `x <= y` | Less than or equal |
 | `x ?? y` | Coalesce |
-| | |
- 
+
 The following operators permit one or both of their operands to be a datetime:
- 
+
 | Operator | Left Operand | Right Operand | Meaning |
 | -------- | ------------ | ------------- | ------- |
 | `x + y` | `datetime` | `duration` | Datetime offset by duration |
 | `x + y` | `duration` | `datetime` | Datetime offset by duration |
 | `x - y` | `datetime` | `duration` | Datetime offset by negated duration |
 | `x - y` | `datetime` | `datetime` | Duration between datetimes |
-| | | | |
 
 The native type of datetime values is the intrinsic type `datetime`.
 
@@ -259,7 +250,7 @@ A _datetimezone_ value contains a datetime and a timezone. A _timezone_ is encod
 
 DateTimeZone values may be constructed using the `#datetimezone` intrinsic.
 
-```
+```powerquery-m
 #datetimezone(
        year, month, day,
        hour, minute, second,
@@ -290,28 +281,25 @@ The following operators are defined for datetimezone values:
 | `x < y` | Less than |
 | `x <= y` | Less than or equal |
 | `x ?? y` | Coalesce |
-| | |
- 
+
 The following operators permit one or both of their operands to be a datetimezone:
- 
+
 | Operator | Left Operand | Right Operand | Meaning |
 | -------- | ------------ | ------------- | ------- |
 | `x + y` | `datetimezone` | `duration` | Datetimezone offset by duration |
 | `x + y` | `duration` | `datetimezone` | Datetimezone offset by duration |
 | `x - y` | `datetimezone` | `duration` | Datetimezone offset by negated duration |
 | `x - y` | `datetimezone` | `datetimezone` | Duration between datetimezones |
-| | | | |
 
 The native type of datetimezone values is the intrinsic type `datetimezone`.
 
 ## Duration
 
-A _duration value_ stores an opaque representation of the distance between two points on a timeline measured 100-nanosecond ticks. The magnitude of a _duration_ can be either positive or negative, with positive values denoting progress forwards in time and negative values denoting progress backwards in time. The minimum value that can be stored in a _duration_ is -9,223,372,036,854,775,808 ticks, or 10,675,199 days 2 hours 48 minutes 05.4775808 seconds backwards in time. The maximum value that can be stored in a _duration_ is 9,223,372,036,854,775,807 ticks, or 10,675,199 days 2 hours 48 minutes 
-05.4775807 seconds forwards in time.
+A _duration value_ stores an opaque representation of the distance between two points on a timeline measured 100-nanosecond ticks. The magnitude of a _duration_ can be either positive or negative, with positive values denoting progress forwards in time and negative values denoting progress backwards in time. The minimum value that can be stored in a _duration_ is -9,223,372,036,854,775,808 ticks, or 10,675,199 days 2 hours 48 minutes 05.4775808 seconds backwards in time. The maximum value that can be stored in a _duration_ is 9,223,372,036,854,775,807 ticks, or 10,675,199 days 2 hours 48 minutes 05.4775807 seconds forwards in time.
 
 Duration values may be constructed using the `#duration` intrinsic function:
 
-```
+```powerquery-m
 #duration(0, 0, 0, 5.5)          // 5.5 seconds 
 #duration(0, 0, 0, -5.5)         // -5.5 seconds 
 #duration(0, 0, 5, 30)           // 5.5 minutes 
@@ -331,7 +319,6 @@ The following operators are defined on duration values:
 | `x < y` | Less than |
 | `x <= y` | Less than or equal |
 | `x ?? y` | Coalesce |
-| | |
 
 Additionally, the following operators allow one or both of their operands to be a duration value:
 
@@ -346,7 +333,6 @@ Additionally, the following operators allow one or both of their operands to be 
 | `x * y` | `duration` | `number` | N times a duration |
 | `x * y` | `number` | `duration` | N times a duration |
 | `x / y` | `duration` | `number` | Fraction of a duration |
-| | | | |
 
 The native type of duration values is the intrinsic type `duration`.
 
@@ -369,11 +355,11 @@ _double-quote-escape-sequence:_<br/>
 
 The following is an example of a _text_ value:
 
-```
+```powerquery-m
 "ABC" // the text value ABC
 ```
 
-The following operators are defined on _text_ values: 
+The following operators are defined on _text_ values:
  
 | Operator | Result |
 | -------- | ------ |
@@ -385,7 +371,6 @@ The following operators are defined on _text_ values:
 | `x <= y` | Less than or equal |
 | `x & y` | Concatenation |
 | `x ?? y` | Coalesce |
-| | |
 
 The native type of text values is the intrinsic type `text`.
 
@@ -393,12 +378,12 @@ The native type of text values is the intrinsic type `text`.
 
 A _binary value_ represents a sequence of bytes. There is no literal format. Several standard library functions are provided to construct binary values. For example, `#binary` can be used to construct a binary value from a list of bytes:
 
-```
+```powerquery-m
 #binary( {0x00, 0x01, 0x02, 0x03} )
 ```
 
 The following operators are defined on _binary_ values:
- 
+
 | Operator | Result |
 | -------- | ------ |
 | `x = y` | Equal |
@@ -408,7 +393,6 @@ The following operators are defined on _binary_ values:
 | `x < y` | Less than |
 | `x <= y` | Less than or equal |
 | `x ?? y` | Coalesce |
-| | |
 
 The native type of binary values is the intrinsic type _binary_.
 
@@ -416,7 +400,7 @@ The native type of binary values is the intrinsic type _binary_.
 
 A _list value_ is a value which produces a sequence of values when enumerated. A value produced by a list can contain any kind of value, including a list. Lists can be constructed using the initialization syntax, as follows:
 
-_list-expression:_<br/> 
+_list-expression:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ _item-list<sub>opt</sub>_  }<br/>
 _item-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item<br/>
@@ -427,7 +411,7 @@ item:<br/>
 
 The following is an example  of a _list-expression_ that defines a list with three text values: `"A"`, `"B"`, and `"C"`.
 
-```
+```powerquery-m
 {"A", "B", "C"}
 ```
 
@@ -438,13 +422,13 @@ The value `"A"` is the first item in the list, and the value `"C"` is the last i
 
 To include a sequence of whole number in a list, the `a..b` form can be used:
 
-```
+```powerquery-m
 { 1, 5..9, 11 }     // { 1, 5, 6, 7, 8, 9, 11 }
 ```
 
 The number of items in a list, known as the _list count_, can be determined using the `List.Count` function.
 
-```
+```powerquery-m
 List.Count({true, false})  // 2 
 List.Count({})             // 0
 ```
@@ -453,7 +437,7 @@ A list may effectively have an infinite number of items; `List.Count` for such l
 
 If a list contains no items, it is called an _empty list_. An empty list is written as:
 
-```
+```powerquery-m
 {}  // empty list
 ```
 
@@ -465,11 +449,10 @@ The following operators are defined for lists:
 | `x <> y` | Not equal |
 | `x & y` | Concatenate |
 | `x ?? y` | Coalesce |
-| | |
 
 For example:
 
-```
+```powerquery-m
 {1, 2} & {3, 4, 5}   // {1, 2, 3, 4, 5} 
 {1, 2} = {1, 2}      // true 
 {2, 1} <> {1, 2}     // true
@@ -493,13 +476,13 @@ field-name:<br/>
 
 The following example constructs a record with a field named `x` with value `1`, and a field named `y` with value `2`.
 
-```
+```powerquery-m
 [ x = 1, y = 2 ]
 ```
 
 The following example constructs a record with `a` field named a with a nested record value. The nested record has a field named `b` with value `2`.
 
-```
+```powerquery-m
 [ a = [ b = 2 ] ]
 ```
 
@@ -523,13 +506,13 @@ The following holds when evaluating a record expression:
 
 * Every field name that is specified must be unique within the record, or it is an error. Names are compared using an ordinal comparison.
 
-```
+```powerquery-m
     [ x = 1, x = 2 ] // error: field names must be unique 
     [ X = 1, x = 2 ] // OK
 ```
 A record with no fields is called an _empty record_, and is written as follows:
 
-```
+```powerquery-m
 [] // empty record
 ```
 
@@ -537,27 +520,27 @@ Although the order of the fields of a record is not significant when accessing a
 
 The same two records produce different results when the fields are obtained:
 
-```
+```powerquery-m
 Record.FieldNames([ x = 1, y = 2 ]) // [ "x", "y" ] 
 Record.FieldNames([ y = 1, x = 2 ]) // [ "y", "x" ]
 ```
 
 The number of fields in a record can be determined using the `Record.FieldCount` function. For example:
 
-```
+```powerquery-m
 Record.FieldCount([ x = 1, y = 2 })  // 2 
 Record.FieldCount([])                // 0
 ```
 
 In addition to using the record initialization syntax `[ ]`, records can be constructed from a list of values, and a list of field names or a record type. For example:
 
-```
+```powerquery-m
 Record.FromList({1, 2}, {"a", "b"})
 ```
 
 The above is equivalent to:
 
-```
+```powerquery-m
 [ a = 1, b = 2 ]
 ```
 
@@ -569,11 +552,10 @@ The following operators are defined for record values:
 | `x <> y` | Not equal |
 | `x & y` | Merge |
 | `x ?? y` | Coalesce |
-| | |
 
 The following examples illustrate the above operators. Note that record merge uses the fields from the right operand to override fields from the left operand, should there be an overlap in field names.
 
-```
+```powerquery-m
 [ a = 1, b = 2 ] & [ c = 3 ]    // [ a = 1, b = 2, c = 3 ] 
 [ a = 1, b = 2 ] & [ a = 3 ]    // [ a = 3, b = 2 ] 
 [ a = 1, b = 2 ] = [ b = 2, a = 1 ]         // true 
@@ -588,7 +570,7 @@ A _table value_ is an ordered sequence of rows. A _row_ is an ordered sequence o
 
 There is no literal syntax for tables. Several standard library functions are provided to construct binary values. For example, `#table` can be used to construct a table from a list of row lists and a list of header names:
 
-```
+```powerquery-m
 #table({"x", "x^2"}, {{1,1}, {2,4}, {3,9}})
 ```
 
@@ -596,7 +578,7 @@ The above example constructs a table with two columns, both of which are of `typ
 
 `#table` can also be used to specify a full table type:
 
-```
+```powerquery-m
 #table(
     type table [Digit = number, Name = text],  
     {{1,"one"}, {2,"two"}, {3,"three"}} 
@@ -613,11 +595,10 @@ The following operators are defined for table values:
 | `x <> y` | Not equal |
 | `x & y` | Concatenation |
 | `x ?? y` | Coalesce |
-| | |
 
 Table concatenation aligns like-named columns and fills in `null` for columns appearing in only one of the operand tables. The following example illustrates table concatenation:
 
-```
+```powerquery-m
   #table({"A","B"}, {{1,2}}) 
 & #table({"B","C"}, {{3,4}})
 ```
@@ -626,13 +607,13 @@ Table concatenation aligns like-named columns and fills in `null` for columns ap
 | --- | --- | ---|
 | `1` | `2` | `null` |
 | `null` | `3` | `4` |
-| | |
 
-The native type of table values is a custom table type (derived from the intrinsic type `table`) that lists the column names, specifies all column types to be any, and has no keys. (See [Table types](m-spec-types.md#table-types) for details on table types.)
+The native type of table values is a custom table type (derived from the intrinsic type `table`) that lists the column names, specifies all column types to be any, and has no keys. (Go to [Table types](m-spec-types.md#table-types) for details on table types.)
 
 ## Function
 
 A _function value_ is a value that maps a set of arguments to a single value. The details of _function_ values are described in [Functions](m-spec-functions.md).
 
 ## Type
+
 A _type value_ is a value that classifies other values. The details of _type_ values are described in [Types](m-spec-types.md).

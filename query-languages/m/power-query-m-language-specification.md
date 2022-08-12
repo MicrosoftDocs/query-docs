@@ -2,7 +2,7 @@
 description: "Learn more about: Power Query M language specification"
 title: "Power Query M language specification"
 ms.topic: conceptual
-ms.date: 4/7/2020
+ms.date: 8/2/2022
 ---
 # Power Query M language specification
 

@@ -2,7 +2,7 @@
 title: M Language basic concepts 
 description: Discusses basic concepts that appear throughout the subsequent sections
 ms.topic: conceptual
-ms.date: 2/25/2020
+ms.date: 8/2/2022
 ms.custom: intro-internal
 ---
 
@@ -14,7 +14,7 @@ This section discusses basic concepts that appear throughout the subsequent sect
 
 A single piece of data is called a _value_. Broadly speaking, there are two general categories of values: _primitive values_, which are atomic, and _structured values_, which are constructed out of primitive values and other structured values. For example, the values
 
-```
+```powerquery-m
 1 
 true
 3.14159 
@@ -23,7 +23,7 @@ true
 
 are primitive in that they are not made up of other values. On the other hand, the values
 
-```
+```powerquery-m
 {1, 2, 3} 
 [ A = {1}, B = {2}, C = {3} ]
 ```
@@ -34,7 +34,7 @@ are constructed using primitive values and, in the case of the record, other str
 
 An _expression_ is a formula used to construct values. An expression can be formed using a variety of syntactic constructs. The following are some examples of expressions. Each line is a separate expression.
 
-```
+```powerquery-m
 "Hello World"             // a text value 
 123                       // a number 
 1 + 2                     // sum of two numbers 
@@ -51,7 +51,7 @@ The simplest form of expression, as seen above, is a literal representing a valu
 
 More complex expressions are built from other expressions, called _sub-expressions_. For example:
 
-```
+```powerquery-m
 1 + 2
 ```
 
@@ -69,7 +69,7 @@ The environment used to evaluate a sub-expression is determined by the parent ex
 
 For example, the _record-initializer-expression_ evaluates the sub-expression for each field with a modified environment. The modified environment includes a variable for each of the fields of the record, except the one being initialized. Including the other fields of the record allows the fields to depend upon the values of the fields. For example:
 
-```
+```powerquery-m
 [  
     x = 1,          // environment: y, z 
     y = 2,          // environment: x, z 
@@ -79,7 +79,7 @@ For example, the _record-initializer-expression_ evaluates the sub-expression fo
 
 Similarly, the _let-expression_ evaluates the sub-expression for each variable with an environment containing each of the variables of the let except the one being initialized. The _let-expression_ evaluates the expression following the in with an environment containing all the variables:
 
-```
+```powerquery-m
 let 
 
     x = 1,          // environment: y, z 
@@ -93,7 +93,7 @@ in
 
 To form the environments for the sub-expressions, the new variables are "merged" with the variables in the parent environment. The following example shows the environments for nested records:
 
-```
+```powerquery-m
 [
     a = 
     [ 
@@ -108,7 +108,7 @@ To form the environments for the sub-expressions, the new variables are "merged"
 
 The following example shows the environments for a record nested within a let:
 
-```
+```powerquery-m
 Let
     a =
     [
@@ -123,7 +123,7 @@ in
 
 Merging variables with an environment may introduce a conflict between variables (since each variable in an environment must have a unique name). The conflict is resolved as follows: if the name of a new variable being merged is the same as an existing variable in the parent environment, then the new variable will take precedence in the new environment. In the following example, the inner (more deeply nested) variable `x` will take precedence over the outer variable `x`.
 
-```
+```powerquery-m
 [
     a =
     [ 
@@ -161,7 +161,7 @@ _inclusive-identifier-reference:_<br/>
 
 This is useful when defining recursive functions since the name of the function would normally not be in scope.
 
-```
+```powerquery-m
 [ 
     Factorial = (n) =>
         if n <= 1 then
@@ -179,7 +179,7 @@ As with a _record-initializer-expression_, an _inclusive-identifier-reference_ c
 
 Consider the following expression which initializes a record:
 
-```
+```powerquery-m
 [ 
     C = A + B, 
     A = 1 + 1, 
@@ -189,7 +189,7 @@ Consider the following expression which initializes a record:
 
 When evaluated, this expression produces the following record value:
 
-```
+```powerquery-m
 [ 
     C = 6, 
     A = 2, 
@@ -199,7 +199,7 @@ When evaluated, this expression produces the following record value:
 
 The expression states that in order to perform the `A + B` calculation for field `C`, the values of both field `A` and field `B` must be known. This is an example of a _dependency ordering_ of calculations that is provided by an expression. The M evaluator abides by the dependency ordering provided by expressions, but is free to perform the remaining calculations in any order it chooses. For example, the computation order could be:
 
-```
+```powerquery-m
 A = 1 + 1 
 B = 2 + 2 
 C = A + B
@@ -207,7 +207,7 @@ C = A + B
 
 Or it could be:
 
-```
+```powerquery-m
 B = 2 + 2 
 A = 1 + 1 
 C = A + B
@@ -232,5 +232,4 @@ An important exception to the immutable-once-calculated rule applies to list and
 
 Also, note that function application is _not_ the same as value construction. Library functions may expose external state (such as the current time or the results of a query against a database that evolves over time), rendering them _non-deterministic_. While functions defined in M will not, as such, expose any such non-deterministic behavior, they can if they are defined to invoke other functions that are non-deterministic.
 
-A final source of non-determinsm in M are _errors_. Errors stop evaluations when they occur (up to the level where they are handled by a try expression). It is not normally observable whether `a + b` caused the evaluation of `a` before `b` or `b` before `a` (ignoring concurrency here for simplicity). However, if the subexpression that was evaluated first raises an error, then it can be determined which of the two expressions was evaluated first.
-
+A final source of non-determinism in M are _errors_. Errors stop evaluations when they occur (up to the level where they are handled by a try expression). It is not normally observable whether `a + b` caused the evaluation of `a` before `b` or `b` before `a` (ignoring concurrency here for simplicity). However, if the subexpression that was evaluated first raises an error, then it can be determined which of the two expressions was evaluated first.

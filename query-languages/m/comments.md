@@ -2,12 +2,13 @@
 description: "Learn more about: Comments"
 title: "Comments"
 ms.topic: conceptual
-ms.date: 12/12/2018
+ms.date: 8/2/2022
 ---
 # Comments
+
 You can add comments to your code with single-line comments `//` or multi-line comments that begin with `/*` and end with `*/`.  
   
-**Example - Single-line comment**  
+**Example - Single-line comment**
   
 ```powerquery-m  
 let  
@@ -15,8 +16,9 @@ let
     Source = Text.Proper("hello world")  
 in  
     Source  
-```  
-**Example - Multi-line comment**  
+```
+
+**Example - Multi-line comment**
   
 ```powerquery-m  
 /* Capitalize each word in the Item column in the Orders table. Text.Proper  

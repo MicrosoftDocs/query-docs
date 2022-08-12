@@ -2,7 +2,7 @@
 description: "Learn more about: Types in the Power Query M formula language"
 title: "Power Query M type system"
 ms.topic: conceptual
-ms.date: 4/16/2018
+ms.date: 8/2/2022
 ---
 
 # Types in the Power Query M formula language
@@ -14,7 +14,7 @@ Developers should have a thorough understanding of the type system in-order to d
 By exploring the M type system more carefully, many of these issues can be clarified, and developers will be empowered to craft the solutions they need.
 
 Knowledge of predicate calculus and na&#239;ve set theory should be adequate to understand the notation used.
- 
+
 ## PRELIMINARIES
 
 (1) *B*  := { _true_; _false_ }<br/>
@@ -40,13 +40,13 @@ _F<sup>n</sup> is the set of all sets of n record fields._
 
 (8) *F*<sup>\*</sup>  := ( &#8899;<sub>*0&#8804;i&#8804;&#8734;*</sub> *F*<sup>*i*</sup> ) &#8726; { _F_ | &#10216;_b<sub>1</sub>_, _n<sub>1</sub>_, _t<sub>1</sub>_&#10217;, &#10216;_b<sub>2</sub>_, _n<sub>2</sub>_, _t<sub>2</sub>_&#10217; &#8712; _F_ &#8896; _n<sub>1</sub>_ = _n<sub>2</sub>_ }<br/>
 _F<sup>\*</sup> is the set of all sets (of any length) of record fields, except for the sets where more than one field has the same name._
- 
+
 (9) *C*  := &#10216;*N*,*T*&#10217;<br/>
 _C is the set of column types, for tables. Each column has a name and a type._
 
 (10) *C*<sup>*n*</sup>  &#8834; &#8899;<sub>_0&#8804;i&#8804;n_</sub> &#10216;*i*, *C*&#10217;<br/>
 _C<sup>n</sup> is the set of all ordered sequences of n column types._
- 
+
 (11) _C_<sup>\*</sup>  := ( &#8899;<sub>_0&#8804;i&#8804;&#8734;_</sub> *C*<sup>*i*</sup> ) &#8726; { *C*<sup>*m*</sup> | &#10216;*a*, &#10216;*n<sub>1</sub>*, *t<sub>1</sub>*&#10217;&#10217;, &#10216;*b*, &#10216;*n<sub>2</sub>*, *t<sub>2</sub>*&#10217;&#10217; &#8712; _C<sup>m</sup>_ &#8896; *n<sub>1</sub>* = *n<sub>2</sub>* }<br/>
 _C<sup>\*</sup> is the set of all combinations (of any length) of column types, except for those where more than one column has the same name._
 
@@ -75,7 +75,7 @@ _A Primitive Type is one from this list of M keywords._
 
 (19) *T*<sub>*N*</sub>  := { *t<sub>n</sub>*, u &#8712; *T* | *t<sub>n</sub>* = u+null } = nullable *t*<br/>
 _Any type can additionally be marked as being nullable, by using the_ "nullable" _keyword._
- 
+
 (20) *T*  := _T<sub>F</sub>_ &#8746; _T<sub>L</sub>_ &#8746; _T<sub>R</sub>_ &#8746; _T<sub>T</sub>_ &#8746; _T<sub>P</sub>_ &#8746; _T<sub>N</sub>_<br/>
 _The set of all M types is the union of these six sets of types:  
 Function Types, List Types, Record Types, Table Types, Primitive Types, and Nullable Types._
@@ -96,15 +96,15 @@ Some identities are needed to define some special cases, and may also help eluci
 (25) nullable nullable *t* &#8712; *T* = nullable *t*<br/>
 (26) *NonNullable*(nullable *t* &#8712; *T*) = *NonNullable*(*t*)</br>
 (27) *NonNullable*(any) = anynonnull<br/>
- 
+
 ## TYPE COMPATIBILITY
 
 As defined elsewhere, an M type is compatable with another M type if and only if all values that conform to the first type also conform to the second type.
 
-Here is defined a compatability relation that does not depend on conforming values, and is based on the properties of the types themselves. It is anticiplated that this relation, as defined in this document, is completely equivalent to the original semantic definition.
+Here is defined a compatibility relation that does not depend on conforming values, and is based on the properties of the types themselves. It is anticipated that this relation, as defined in this document, is completely equivalent to the original semantic definition.
 
-The "is compatible with" relation : &#8804; : *B* &#8592; *T* &#215; *T*<br/> 
-In the below section, a lowercase *t* will always represent an M Type, an element of *T*. 
+The "is compatible with" relation : &#8804; : *B* &#8592; *T* &#215; *T*<br/>
+In the below section, a lowercase *t* will always represent an M Type, an element of *T*.
 
 A *&#934;* will represent a subset of *F*<sup>\*</sup>, or of *C*<sup>\*</sup>.
 
@@ -164,7 +164,7 @@ _A record type with a non-optional field is compatible with a record type identi
 
 (46)  _t<sub>a</sub>_ &#8712; *T*<sub>*R*</sub><sup>o</sup> = &#10216;<em>true</em>, (_&#934;_, &#10216;<em>b</em>, <em>n</em>, <em>u</em>&#10217;)&#10217;,  _t<sub>b</sub>_ &#8712; *T*<sub>*R*</sub><sup>o</sup> = &#10216;<em>true</em>, _&#934;_&#10217;  &#8594;  _t<sub>a</sub>_ &#8804;  _t<sub>b</sub>_<br/>
 _An open record type is compatible with another open record type with one fewer field._
- 
+
 (47) _t<sub>a</sub>_ &#8712; _T<sub>T</sub>_ = (_&#934;_, &#10216;<em>i</em>, &#10216;<em>n</em>, _u<sub>a</sub>_&#10217;&#10217;), _t<sub>b</sub>_ &#8712;  _T<sub>T</sub>_ = (_&#934;_, &#10216;<em>i</em>, &#10216;<em>n</em>, _u<sub>b</sub>_&#10217;&#10217;) &#8743; _u<sub>a</sub>_ &#8804; _u<sub>b</sub>_ &#8594; _t<sub>a</sub>_ &#8804; _t<sub>b</sub>_<br/>
 _A table type is compatible with a second table type, which is identical but for one column having a differing type, when the types for that column are compatible._
 
@@ -177,5 +177,3 @@ Retrieved from https://msdn.microsoft.com/library/mt807488.aspx
 Microsoft Corporation (n.d.)<br/>
 Power Query M function reference [web page]<br/>
 Retrieved from https://msdn.microsoft.com/library/mt779182.aspx
-
-
