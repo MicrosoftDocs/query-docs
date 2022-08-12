@@ -97,6 +97,8 @@ EVALUATE <table>
 |---------|---------|
 |  value     |   A constant value. Cannot be an expression.  |
 |  parameter     |   The name of a parameter in an XMLA statement prefixed with an `@` character.  |
+
+#### Remarks
   
 START AT arguments have a one-to-one correspondence with the columns in the ORDER BY clause. There can be as many arguments in the START AT clause as there are in the ORDER BY clause, but not more. The first argument in the START AT defines the starting value in column 1 of the ORDER BY columns. The second argument in the START AT defines the starting value in column 2 of the ORDER BY columns within the rows that meet the first value for column 1.  
 
@@ -141,8 +143,15 @@ The optional **DEFINE** keyword defines one or more calculated entity definition
 |Term|Definition|  
 |--------|--------------|  
 |Entity|MEASURE, VAR, TABLE*, or COLUMN*. |
-|name|The name of a measure, var, table, or column definition. It cannot be an expression. The name does not have to be unique. The name exists only for the duration of the query.</br> VAR names have unique  restrictions. To learn more, see [VAR - Parameters](var-dax.md#parameters).|  
+|name|The name of a measure, var, table, or column definition. It cannot be an expression. The name does not have to be unique. The name exists only for the duration of the query.|  
 |expression|Any DAX expression that returns a table or scalar value. The expression can use any of the defined entities. If a scalar value is required, wrap the expression inside a table constructor with curly braces `{}`, or use the `ROW()` function to return a single row table.|  
+
+#### Remarks
+
+Measure definitions for a query override model measures of the same name.
+The expression for a measure definition can be used with any other expression in the same query.
+
+VAR names have unique  restrictions. To learn more, see [VAR - Parameters](var-dax.md#parameters).
 
 \* Query scoped TABLE and COLUMN definitions are meant for internal use only. While you can define TABLE and COLUMN types for a query, they may produce inconsistent results and are not recommended.
 
@@ -191,7 +200,7 @@ Reference XMLA parameters by prefixing the name of the parameter with an `@` cha
   
 ## See also
 
-[FILTER](filter-function-dax.md)  
 [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md)  
 [TREATAS](treatas-function.md)  
-[VAR](var-dax.md)
+[VAR](var-dax.md)  
+[FILTER](filter-function-dax.md)  
