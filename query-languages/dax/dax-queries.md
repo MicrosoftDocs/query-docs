@@ -12,15 +12,19 @@ recommendations: false
 ---
 # DAX queries
 
-With DAX queries, you can query and return data defined by a table expression. Reporting clients construct DAX queries whenever a field is placed on a report surface, or a whenever a filter or calculation is applied. DAX queries can also be created and run in [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) (SSMS) and open-source tools like [DAX Studio](https://daxstudio.org). DAX queries run in SSMS and DAX Studio return results as a table.
+With DAX queries, you can query and return data defined by a table expression. Reporting clients like Power BI and Excel construct DAX queries whenever a field is placed on a report surface, or when a filter is applied.
+
+You can can also create and run your own DAX queries in [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) (SSMS) and open-source tools like [DAX Studio](https://daxstudio.org). DAX queries run in SSMS and DAX Studio return results as a table right within the tool, allowing you to quickly create and test the performance of your measure formulas.
 
 Before learning about queries, it's important you have a solid understanding of DAX basics. If you haven't already, be sure to checkout [DAX overview](dax-overview.md).
 
 ## Keywords
 
+DAX queries have a simple syntax comprised of just one required keyword, EVALUATE, and several optional keywords; ORDER BY, START AT, and DEFINE. Each keyword defines a statement used for the duration of the query.
+
 ### EVALUATE (Required)
 
-At the most basic level, a DAX query is an **EVALUATE** statement containing a table expression. A query can contain multiple EVALUATE statements.
+At the most basic level, a DAX query is an **EVALUATE** statement containing a table expression. At least one EVALUATE statement is required, however, a query can contain any number of EVALUATE statements.
 
 #### Syntax
   
@@ -75,7 +79,7 @@ ORDER BY
     'Internet Sales'[Order Date]
 ```
 
-Returns all rows and columns from the Internet Sales table, ordered by Order Date, as a table.
+Returns all rows and columns from the Internet Sales table, in ascending order by Order Date, as a table.
 
 ![DAX Evaluate order by statement](media/dax-queries/dax-evaluate-orderby.png)
 
@@ -113,27 +117,25 @@ ORDER BY
 START AT "SO7000"
 ```
 
-Returns all rows and columns from the Internet Sales table, ordered by Sales Order Number, beginning at SO7000.
+Returns all rows and columns from the Internet Sales table, in ascending order by Sales Order Number, beginning at SO7000.
 
 ![DAX Evaluate order by Sales order number statement](media/dax-queries/dax-evaluate-startat.png)
 
-Multiple **EVALUATE**/**ORDER BY**/**START AT** clauses can be specified in a single query.
-
 ### DEFINE (Optional)
 
-The optional **DEFINE** keyword defines one or more calculated entity definitions that exist only for the duration of the query. Definitions typically precede the EVALUATE statement and are valid for all EVALUATE statements in the query. Definitions can be variables, measures, tables*, and columns*. Definitions can reference other definitions that appear before or after the current definition.
+The optional **DEFINE** keyword defines one or more calculated entity definitions that exist only for the duration of the query. Definitions typically precede the EVALUATE statement and are valid for all EVALUATE statements in the query. Definitions can be variables, measures, tables<sup>[1](#not-rec)</sup>, and columns<sup>[1](#not-rec)</sup>. Definitions can reference other definitions that appear before or after the current definition. At least one definition is required if the DEFINE keyword is included with an EVALUATE statement.
 
-#### Syntax 
+#### Syntax
 
 ```dax
 [DEFINE 
     (
-    MEASURE <table name>[<measure name>] = <scalar expression> | 
-    VAR <var name> = <table or scalar expression> |
-    TABLE <table name> = <table expression> | 
-    COLUMN <table name>[column name] = <scalar expression> | 
-    ) 
-+ ]
+     (MEASURE <table name>[<measure name>] = <scalar expression>) | 
+     (VAR <var name> = <table or scalar expression>) |
+     (TABLE <table name> = <table expression>) | 
+     (COLUMN <table name>[column name] = <scalar expression>) | 
+    ) + 
+]
 
 (EVALUATE <table expression>) +
 ```
@@ -142,18 +144,21 @@ The optional **DEFINE** keyword defines one or more calculated entity definition
 
 |Term|Definition|  
 |--------|--------------|  
-|Entity|MEASURE, VAR, TABLE*, or COLUMN*. |
+|Entity|MEASURE, VAR, TABLE<sup>[1](#not-rec)</sup>, or COLUMN<sup>[1](##not-rec)</sup>. |
 |name|The name of a measure, var, table, or column definition. It cannot be an expression. The name does not have to be unique. The name exists only for the duration of the query.|  
 |expression|Any DAX expression that returns a table or scalar value. The expression can use any of the defined entities. If a scalar value is required, wrap the expression inside a table constructor with curly braces `{}`, or use the `ROW()` function to return a single row table.|  
 
 #### Remarks
 
+At least one definition is required in a DEFINE statement.
+
 Measure definitions for a query override model measures of the same name.
+
 The expression for a measure definition can be used with any other expression in the same query.
 
 VAR names have unique  restrictions. To learn more, see [VAR - Parameters](var-dax.md#parameters).
 
-\* Query scoped TABLE and COLUMN definitions are meant for internal use only. While you can define TABLE and COLUMN types for a query, they may produce inconsistent results and are not recommended.
+<a name="not-rec">[1]</a> **Important:** Query scoped TABLE and COLUMN definitions are meant for internal use only. While you can define TABLE and COLUMN types for a query, they may produce inconsistent results and are not recommended.
 
 #### Example
 
