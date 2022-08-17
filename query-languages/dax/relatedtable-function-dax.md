@@ -33,7 +33,7 @@ A table of values.
   
 ## Remarks
 
-- The RELATEDTETABLE function changes the context in which the data is filtered, and evaluates the expression in the new context that you specify.  
+- The RELATEDTABLE function changes the context in which the data is filtered, and evaluates the expression in the new context that you specify.  
   
 - This function is a shortcut for CALCULATETABLE function with no logical expression.  
 
