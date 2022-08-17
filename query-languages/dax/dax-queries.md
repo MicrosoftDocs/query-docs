@@ -14,7 +14,7 @@ recommendations: false
 
 With DAX queries, you can query and return data defined by a table expression. Reporting clients like Power BI and Excel construct DAX queries whenever a field is placed on a report surface, or when a filter is applied.
 
-You can can also create and run your own DAX queries in [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) (SSMS) and open-source tools like [DAX Studio](https://daxstudio.org). DAX queries run in SSMS and DAX Studio return results as a table right within the tool, allowing you to quickly create and test the performance of your measure formulas.
+You can can also create and run your own DAX queries in [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) (SSMS), [Power BI Report Builder](/power-bi/paginated-reports/report-builder-power-bi), and open-source tools like [DAX Studio](https://daxstudio.org). DAX queries return results as a table right within the tool, allowing you to quickly create and test the performance of your DAX formulas.
 
 Before learning about queries, it's important you have a solid understanding of DAX basics. If you haven't already, be sure to checkout [DAX overview](dax-overview.md).
 
@@ -123,7 +123,7 @@ Returns all rows and columns from the Internet Sales table, in ascending order b
 
 ### DEFINE (Optional)
 
-The optional **DEFINE** keyword defines one or more calculated entity definitions that exist only for the duration of the query. Definitions typically precede the EVALUATE statement and are valid for all EVALUATE statements in the query. Definitions can be variables, measures, tables<sup>[1](#not-rec)</sup>, and columns<sup>[1](#not-rec)</sup>. Definitions can reference other definitions that appear before or after the current definition. At least one definition is required if the DEFINE keyword is included with an EVALUATE statement.
+The optional **DEFINE** keyword introduces one or more calculated entity definitions that exist only for the duration of the query. Definitions precede the EVALUATE statement and are valid for all EVALUATE statements in the query. Definitions can be variables, measures, tables<sup>[1](#not-rec)</sup>, and columns<sup>[1](#not-rec)</sup>. Definitions can reference other definitions that appear before or after the current definition. At least one definition is required if the DEFINE keyword is included in a query.
 
 #### Syntax
 
@@ -148,17 +148,17 @@ The optional **DEFINE** keyword defines one or more calculated entity definition
 |name|The name of a measure, var, table, or column definition. It cannot be an expression. The name does not have to be unique. The name exists only for the duration of the query.|  
 |expression|Any DAX expression that returns a table or scalar value. The expression can use any of the defined entities. If a scalar value is required, wrap the expression inside a table constructor with curly braces `{}`, or use the `ROW()` function to return a single row table.|  
 
+<a name="not-rec">[1]</a> **Caution:** Query scoped TABLE and COLUMN definitions are meant for internal use only. While you can define TABLE and COLUMN expressions for a query, they may produce inconsistent results and are not recommended.
+
 #### Remarks
 
-At least one definition is required in a DEFINE statement.
+- At least one definition is required in a DEFINE statement.
 
-Measure definitions for a query override model measures of the same name.
+- Measure definitions for a query override model measures of the same name but are only used within the query.
 
-The expression for a measure definition can be used with any other expression in the same query.
+- The expression for a measure definition can be used with any other expression in the same query.
 
-VAR names have unique  restrictions. To learn more, see [VAR - Parameters](var-dax.md#parameters).
-
-<a name="not-rec">[1]</a> **Important:** Query scoped TABLE and COLUMN definitions are meant for internal use only. While you can define TABLE and COLUMN types for a query, they may produce inconsistent results and are not recommended.
+- VAR names have unique  restrictions. To learn more, see [VAR - Parameters](var-dax.md#parameters).
 
 #### Example
 
@@ -200,8 +200,8 @@ The [Execute Method (XMLA)](/analysis-services/xmla/xml-elements-methods-execute
 Reference XMLA parameters by prefixing the name of the parameter with an `@` character. Any place in the syntax where a value is allowed, the value can be replaced with a parameter call. All XMLA parameters are typed as text.  
   
 > [!IMPORTANT]
-> Parameters defined in the parameters section and not used in the **&lt;STATEMENT&gt;** element generate an error response in XMLA.
-> Parameters used and not defined in the **&lt;Parameters&gt;** element generate an error response in XMLA.
+> Parameters defined in the parameters section and not used in the **\<STATEMENT>** element generate an error response in XMLA.
+> Parameters used and not defined in the **\<Parameters>** element generate an error response in XMLA.
   
 ## See also
 

@@ -13,7 +13,6 @@ recommendations: false
 ---
 # MEASURE
 
-
 ## Syntax
 
 ```dax
@@ -43,8 +42,12 @@ recommendations: false
 ## Example
 
 ```dax
-
+DEFINE
+    MEASURE 'Internet Sales'[Margin] =
+        [Sales Amount] - [Total Cost]
 ```
+
+Defines a measure named Margin that can be used in any EVALUATE statement in the query.
 
 ## See also
 
