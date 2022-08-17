@@ -44,7 +44,7 @@ Description of errors
 
 - **EARLIER** succeeds if there is a row context prior to the beginning of the table scan. Otherwise it returns an error.  
   
-- The performance of **EARLIER** might be slow because it theoretically, it might have to perform a number of operations that is close to the total number of rows (in the column) times the same number (depending on the syntax of the expression). For example if you have 10 rows in the column, approximately a 100 operations could be required; if you have 100 rows then close to 10,000 operations might be performed.  
+- The performance of **EARLIER** might be slow because theoretically, it might have to perform a number of operations that is close to the total number of rows (in the column) times the same number (depending on the syntax of the expression). For example if you have 10 rows in the column, approximately a 100 operations could be required; if you have 100 rows then close to 10,000 operations might be performed.  
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
