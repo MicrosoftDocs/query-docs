@@ -39,16 +39,6 @@
 			"source_path": "query-languages/dax/pre-defined-numeric-formats-for-the-format-function.md",
 			"redirect_url": "/dax/format-function-dax",
 			"redirect_document_id": false
-		},
-		{
-			"source_path": "query-languages/dax/define-statement-dax.md",
-			"redirect_url": "/dax/dax-queries",
-			"redirect_document_id": false
-		},
-		{
-			"source_path": "query-languages/dax/orderby-statement-dax.md",
-			"redirect_url": "/dax/dax-queries",
-			"redirect_document_id": false
 		}
 	]
 }
