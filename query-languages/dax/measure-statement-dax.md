@@ -27,7 +27,7 @@ Introduces a measure definition in a DEFINE statement of a [DAX query](dax-queri
 (EVALUATE <table expression>) +
 ```
 
-## Arguments
+## Parameters
 
 |Term  |Definition  |
 |---------|---------|

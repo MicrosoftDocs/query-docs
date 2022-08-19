@@ -32,7 +32,7 @@ At the most basic level, a DAX query is an **EVALUATE** statement containing a t
 EVALUATE <table>  
 ```
 
-#### EVALUATE Arguments
+#### EVALUATE Parameters
 
 |Term  |Definition  |
 |---------|---------|
@@ -60,7 +60,7 @@ EVALUATE <table>
 [ORDER BY {<expression> [{ASC | DESC}]}[, …]  
 ```
 
-#### ORDER BY Arguments
+#### ORDER BY Parameters
 
 |Term  |Definition  |
 |---------|---------|
@@ -94,7 +94,7 @@ EVALUATE <table>
 [START AT {<value>|<parameter>} [, …]]]  
 ```
 
-#### START AT Arguments
+#### START AT Parameters
 
 |Term  |Definition  |
 |---------|---------|
@@ -139,7 +139,7 @@ The optional **DEFINE** keyword introduces one or more calculated entity definit
 (EVALUATE <table expression>) +
 ```
 
-#### DEFINE Arguments
+#### DEFINE Parameters
 
 |Term|Definition|  
 |--------|--------------|  

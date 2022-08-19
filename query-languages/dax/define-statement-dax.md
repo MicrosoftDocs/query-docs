@@ -30,7 +30,7 @@ Introduces a statement with one or more entity definitions that can be applied t
 (EVALUATE <table expression>) +
 ```
   
-### Arguments
+### Parameters
   
 |Term|Definition|  
 |--------|--------------|  

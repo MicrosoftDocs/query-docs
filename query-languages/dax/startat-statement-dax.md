@@ -21,7 +21,7 @@ Introduces a statement that defines the starting value at which the query result
 [START AT {<value>|<parameter>} [, …]]]  
 ```
 
-## Arguments
+## Parameters
 
 |Term  |Definition  |
 |---------|---------|
