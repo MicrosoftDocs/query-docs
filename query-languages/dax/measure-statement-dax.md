@@ -13,6 +13,8 @@ recommendations: false
 ---
 # MEASURE
 
+Introduces a measure definition in a DEFINE statement of a [DAX query](dax-queries.md).
+
 ## Syntax
 
 ```dax
@@ -29,25 +31,17 @@ recommendations: false
 
 |Term  |Definition  |
 |---------|---------|
-|  table name     |     |
+|  table name     |   The name of a table containing the measure.  |
 |  measure name     |  The name of the measure. It cannot be an expression. The name does not have to be unique. The name exists only for the duration of the query.   |
 |  scalar expression     | A DAX expression that returns a scalar value.  |
 
 ## Remarks
 
-- Measure definitions for a query override model measures of the same name.
+- Measure definitions for a query override model measures of the same name for the duration of the query. They will not effect the model measure.
 
 - The expression for a measure definition can be used with any other expression in the same query.
 
-## Example
-
-```dax
-DEFINE
-    MEASURE 'Internet Sales'[Margin] =
-        [Sales Amount] - [Total Cost]
-```
-
-Defines a measure named Margin that can be used in any EVALUATE statement in the query.
+- To learn more about how MEASURE statements are used, see [DAX queries](dax-queries.md).
 
 ## See also
 

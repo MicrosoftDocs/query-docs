@@ -13,7 +13,7 @@ recommendations: false
 ---
 # ORDER BY
   
-Defines the sort order of query results returned by an EVALUATE statement in a [DAX query](dax-queries.md).
+Introduces a statement that defines sort order of query results returned by an EVALUATE statement in a [DAX query](dax-queries.md).
 
 ## Syntax  
   
@@ -31,21 +31,10 @@ Defines the sort order of query results returned by an EVALUATE statement in a [
   
 ## Return value
 
-The result of an EVALUATE statement in ascending (ASC) or descending (DESC) order.
+- The result of an EVALUATE statement in ascending (ASC) or descending (DESC) order.
 
-## Example
+- To learn more about how ORDER BY statements are used, see [DAX queries](dax-queries.md).
 
-```dax
-
-EVALUATE(
-    'Internet Sales'
-    )
-ORDER BY
-    'Internet Sales'[Order Date]
-```
-
-Returns all rows and columns from the Internet Sales table, ordered by Order Date, as a table.
-  
 ## See also
 
 [START AT](startat-statement-dax.md)  

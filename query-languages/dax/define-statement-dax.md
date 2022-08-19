@@ -13,7 +13,7 @@ recommendations: false
 ---
 # DEFINE
   
-A keyword that defines entities that can be applied to one or more EVALUATE statements of a [DAX query](dax-queries.md).
+Introduces a statement with one or more entity definitions that can be applied to one or more EVALUATE statements of a [DAX query](dax-queries.md).
 
 ## Syntax  
   
@@ -42,26 +42,21 @@ A keyword that defines entities that can be applied to one or more EVALUATE stat
 
 ## Remarks
 
+- A DAX query can have multiple EVALUATE statements, but can have only one DEFINE statement. Definitions in the DEFINE statement can apply to any EVALUATE statements in the query.
+
 - At least one definition is required in a DEFINE statement.
 
 - Measure definitions for a query override model measures of the same name.
 
 - The expression for a measure definition can be used with any other expression in the same query.
 
-- VAR names have unique  restrictions. To learn more, see [VAR - Parameters](var-dax.md#parameters).
+- VAR names have unique restrictions. To learn more, see [VAR - Parameters](var-dax.md#parameters).
 
-## Example
-
-```DAX
-DEFINE
-    MEASURE Products[Number of products] = DISTINCTCOUNT ( Products[Product]) 
-```
-
-Defines a measure named Number of Products that calculates the distinct count of products.
+- To learn more about how a DEFINE statement is used, see [DAX queries](dax-queries.md).
 
 ## See also
 
 [EVALUATE](evaluate-statement-dax.md)  
 [VAR](var-dax.md)  
 [MEASURE](measure-statement-dax.md)  
-[DAX queries](dax-queries.md)  
+[DAX queries](dax-queries.md)

@@ -13,7 +13,7 @@ recommendations: false
 ---
 # EVALUATE
   
-A statement containing a table expression required in a [DAX query](dax-queries.md).
+Introduces a statement containing a table expression required in a [DAX query](dax-queries.md).
 
 ## Syntax  
   
@@ -21,26 +21,27 @@ A statement containing a table expression required in a [DAX query](dax-queries.
 EVALUATE <table>  
 ```
   
-### Parameters  
+## Parameters  
   
 |Term|Definition|  
 |--------|--------------|  
 |table|A table expression|  
   
-### Return value
+## Return value
 
 The result of a table expression.
 
-### Remarks
+## Remarks
 
-A DAX query can contain multiple EVALUATE statements.
+- A DAX query can contain multiple EVALUATE statements.
 
-### Example
+- To learn more about how EVALUATE statements are used, see [DAX queries](dax-queries.md).
+
+## Example
 
 ```dax
-EVALUATE(
+EVALUATE
     'Internet Sales'
-    )
 ```
 
 Returns all rows and columns from the Internet Sales table, as a table.

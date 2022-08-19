@@ -20,30 +20,29 @@ Before learning about queries, it's important you have a solid understanding of 
 
 ## Keywords
 
-DAX queries have a simple syntax comprised of just one required keyword, EVALUATE, and several optional keywords; ORDER BY, START AT, and DEFINE. Each keyword defines a statement used for the duration of the query.
+DAX queries have a simple syntax comprised of just one required keyword, EVALUATE, and several optional keywords; ORDER BY, START AT, DEFINE, MEASURE, VAR, TABLE, and COLUMN. Each keyword defines a statement used for the duration of the query.
 
 ### EVALUATE (Required)
 
 At the most basic level, a DAX query is an **EVALUATE** statement containing a table expression. At least one EVALUATE statement is required, however, a query can contain any number of EVALUATE statements.
 
-#### Syntax
+#### EVALUATE Syntax
   
 ```dax
 EVALUATE <table>  
 ```
 
-#### Arguments
+#### EVALUATE Arguments
 
 |Term  |Definition  |
 |---------|---------|
 |  table     |   A table expression.  |
 
-#### Example
+#### EVALUATE Example
 
 ```dax
-EVALUATE(
+EVALUATE
     'Internet Sales'
-    )
 ```
 
 Returns all rows and columns from the Internet Sales table, as a table.
@@ -54,14 +53,14 @@ Returns all rows and columns from the Internet Sales table, as a table.
 
 The optional **ORDER BY** keyword defines one or more expressions used to sort query results. Any expression that can be evaluated for each row of the result is valid.  
 
-#### Syntax
+#### ORDER BY Syntax
 
 ```dax
 EVALUATE <table>  
 [ORDER BY {<expression> [{ASC | DESC}]}[, …]  
 ```
 
-#### Arguments
+#### ORDER BY Arguments
 
 |Term  |Definition  |
 |---------|---------|
@@ -69,12 +68,12 @@ EVALUATE <table>
 | ASC  | (default) Ascending sort order. |
 | DESC  | Descending sort order. |
 
-#### Example
+#### ORDER BY Example
 
 ```dax
-EVALUATE(
+EVALUATE
     'Internet Sales'
-    )
+    
 ORDER BY
     'Internet Sales'[Order Date]
 ```
@@ -87,7 +86,7 @@ Returns all rows and columns from the Internet Sales table, in ascending order b
 
 The optional **START AT** keyword is used inside an **ORDER BY** clause. It defines the value at which the query results begin.
 
-#### Syntax
+#### START AT Syntax
 
 ```dax
 EVALUATE <table>  
@@ -95,23 +94,23 @@ EVALUATE <table>
 [START AT {<value>|<parameter>} [, …]]]  
 ```
 
-#### Arguments
+#### START AT Arguments
 
 |Term  |Definition  |
 |---------|---------|
 |  value     |   A constant value. Cannot be an expression.  |
 |  parameter     |   The name of a parameter in an XMLA statement prefixed with an `@` character.  |
 
-#### Remarks
+#### START AT Remarks
   
 START AT arguments have a one-to-one correspondence with the columns in the ORDER BY clause. There can be as many arguments in the START AT clause as there are in the ORDER BY clause, but not more. The first argument in the START AT defines the starting value in column 1 of the ORDER BY columns. The second argument in the START AT defines the starting value in column 2 of the ORDER BY columns within the rows that meet the first value for column 1.  
 
-#### Example
+#### START AT Example
 
 ```dax
-EVALUATE(
+EVALUATE
     'Internet Sales'
-    )
+    
 ORDER BY
     'Internet Sales'[Sales Order Number]
 START AT "SO7000"
@@ -125,7 +124,7 @@ Returns all rows and columns from the Internet Sales table, in ascending order b
 
 The optional **DEFINE** keyword introduces one or more calculated entity definitions that exist only for the duration of the query. Definitions precede the EVALUATE statement and are valid for all EVALUATE statements in the query. Definitions can be variables, measures, tables<sup>[1](#not-rec)</sup>, and columns<sup>[1](#not-rec)</sup>. Definitions can reference other definitions that appear before or after the current definition. At least one definition is required if the DEFINE keyword is included in a query.
 
-#### Syntax
+#### DEFINE Syntax
 
 ```dax
 [DEFINE 
@@ -140,7 +139,7 @@ The optional **DEFINE** keyword introduces one or more calculated entity definit
 (EVALUATE <table expression>) +
 ```
 
-#### Arguments
+#### DEFINE Arguments
 
 |Term|Definition|  
 |--------|--------------|  
@@ -150,17 +149,19 @@ The optional **DEFINE** keyword introduces one or more calculated entity definit
 
 <a name="not-rec">[1]</a> **Caution:** Query scoped TABLE and COLUMN definitions are meant for internal use only. While you can define TABLE and COLUMN expressions for a query, they may produce inconsistent results and are not recommended.
 
-#### Remarks
+#### DEFINE Remarks
+
+- A DAX query can have multiple EVALUATE statements, but can have only one DEFINE statement. Definitions in the DEFINE statement can apply to any EVALUATE statements in the query.
 
 - At least one definition is required in a DEFINE statement.
 
-- Measure definitions for a query override model measures of the same name but are only used within the query.
+- Measure definitions for a query override model measures of the same name but are only used within the query. They will not effect the model measure.
 
 - The expression for a measure definition can be used with any other expression in the same query.
 
 - VAR names have unique  restrictions. To learn more, see [VAR - Parameters](var-dax.md#parameters).
 
-#### Example
+#### DEFINE Example
 
 ```dax
 DEFINE
