@@ -128,7 +128,7 @@ Types in the M language form a disjoint hierarchy rooted at type `any`, which is
 * `type record`, which classifies record values.
 * `type table`, which classifies table values.
 * `type function`, which classifies function values.
-* `type anynonnull`, which classifies all values excluding null. 
+* `type anynonnull`, which classifies all values excluding `null`. 
 * `type none`, which classifies no values.
 
 ## Any Type
