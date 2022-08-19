@@ -552,7 +552,7 @@ parameter-specification:<br/>
 table-type:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`table`  _row-type<br/>
 row-type:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-specification-list_  `]`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-specification-list_<sub>opt</sub>  `]`<br/>
 _nullable-type:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`  _type_
 
