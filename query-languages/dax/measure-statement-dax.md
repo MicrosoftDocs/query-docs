@@ -20,7 +20,7 @@ Introduces a measure definition in a DEFINE statement of a [DAX query](dax-queri
 ```dax
 [DEFINE 
     (
-     (MEASURE <table name>[<measure name>] = <scalar expression>)
+      MEASURE <table name>[<measure name>] = <scalar expression>
     ) + 
 ]
 
@@ -37,7 +37,7 @@ Introduces a measure definition in a DEFINE statement of a [DAX query](dax-queri
 
 ## Remarks
 
-- Measure definitions for a query override model measures of the same name for the duration of the query. They will not effect the model measure.
+- Measure definitions for a query override model measures of the same name for the duration of the query. They will not affect the model measure.
 
 - The expression for a measure definition can be used with any other expression in the same query.
 

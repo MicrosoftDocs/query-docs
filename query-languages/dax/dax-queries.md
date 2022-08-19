@@ -155,7 +155,7 @@ The optional **DEFINE** keyword introduces one or more calculated entity definit
 
 - At least one definition is required in a DEFINE statement.
 
-- Measure definitions for a query override model measures of the same name but are only used within the query. They will not effect the model measure.
+- Measure definitions for a query override model measures of the same name but are only used within the query. They will not affect the model measure.
 
 - The expression for a measure definition can be used with any other expression in the same query.
 
