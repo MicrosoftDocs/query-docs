@@ -9,7 +9,7 @@ ms.date: 8/2/2022
 
 A _type value_ is a value that _classifies_ other values. A value that is classified by a type is said to _conform_ to that type. The M type system consists of the following kinds of types:
 
-* Primitive types, which classify primitive values (`binary`, `date`, `datetime`, `datetimezone`, `duration`, `list`, `logical`, `null`, `number`, `record`, `text`, `time`, `type`) and also include a number of abstract types (`function`, `table`, `any`, and `none`)
+* Primitive types, which classify primitive values (`binary`, `date`, `datetime`, `datetimezone`, `duration`, `list`, `logical`, `null`, `number`, `record`, `text`, `time`, `type`) and also include a number of abstract types (`function`, `table`, `any`, `anynonnull` and `none`)
 
 * Record types, which classify record values based on field names and value types
 
@@ -23,9 +23,9 @@ A _type value_ is a value that _classifies_ other values. A value that is classi
 
 * Type types, which classify values that are types
 
-The set of _primitive types_ includes the types of primitive values a number of _abstract types_, types that do not uniquely classify any values: `function`, `table`, `any`, and `none`. All function values conform to the abstract type `function`, all table values to the abstract type `table`, all values to the abstract type `any`, and no values to the abstract type `none`. An expression of type `none` must raise an error or fail to terminate since no value could be produced that conforms to type `none`. Note that the primitive types `function` and `table` are abstract because no function or table is directly of those types, respectively. The primitive types `record` and `list` are non-abstract because they represent an open record with no defined fields and a list of type any, respectively.
+The set of _primitive types_ includes the types of primitive values, and a number of _abstract types_, which are types that do not uniquely classify any values: `function`, `table`, `any`, `anynonnull` and `none`. All function values conform to the abstract type `function`, all table values to the abstract type `table`, all values to the abstract type `any`, all values but `null` to the abstract type `anynonnull`, and no values to the abstract type `none`. An expression of type `none` must raise an error or fail to terminate since no value could be produced that conforms to type `none`. Note that the primitive types `function` and `table` are abstract because no function or table is directly of those types, respectively. The primitive types `record` and `list` are non-abstract because they represent an open record with no defined fields and a list of type any, respectively.
 
-All types that are not members of the closed set of primitive types are collectively referred to as _custom types_. Custom types can be written using a `type-expression`:
+All types that are not members of the closed set of primitive types plus their nullable counterparts are collectively referred to as _custom types_. Custom types can be written using a `type-expression`:
 
 _type-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_<br/>
@@ -41,7 +41,7 @@ primary-type:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;table-type<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nullable-type<br/>
 primitive-type:_ one of<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`any binary date datetime datetimezone duration function list logical`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`any anynonnull binary date datetime datetimezone duration function list logical`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`none null number record table text time type`
 
 The _primitive-type_ names are _contextual keywords_ recognized only in a _type_ context. The use of parentheses in a _type_ context moves the grammar back to a regular expression context, requiring the use of the type keyword to move back into a type context. For example, to invoke a function in a _type_ context, parentheses can be used:
@@ -93,7 +93,7 @@ Value.Type( 1 as number )   // type number
 {2} as text                 // error, type mismatch
 ```
 
-Note that the `is` and `as` operators only accept primitive types as their right operand. M does not provide means to check values for conformance to custom types.
+Note that the `is` and `as` operators only accept nullable primitive types as their right operand. M does not provide means to check values for conformance to custom types.
 
 A type `X` is _compatible_ with a type `Y` if and only if all values that conform to `X` also conform to `Y`. All types are compatible with type `any` and no types (but `none` itself) are compatible with type `none`. The following graph shows the compatibility relation. (Type compatibility is reflexive and transitive. It forms a lattice with type `any` as the top and type `none` as the bottom value.) The names of abstract types are set in _italics_. 
 
@@ -128,7 +128,8 @@ Types in the M language form a disjoint hierarchy rooted at type `any`, which is
 * `type record`, which classifies record values.
 * `type table`, which classifies table values.
 * `type function`, which classifies function values.
-* `type anynonnull`, which classifies all values excluding null. The intrinsic type `none` classifies no values.
+* `type anynonnull`, which classifies all values excluding null. 
+* `type none`, which classifies no values.
 
 ## Any Type
 
