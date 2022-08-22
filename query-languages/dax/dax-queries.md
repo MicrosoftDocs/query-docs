@@ -12,15 +12,13 @@ recommendations: false
 ---
 # DAX queries
 
-With DAX queries, you can query and return data defined by a table expression. Reporting clients like Power BI and Excel construct DAX queries whenever a field is placed on a report surface, or when a filter is applied.
-
-You can can also create and run your own DAX queries in [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) (SSMS), [Power BI Report Builder](/power-bi/paginated-reports/report-builder-power-bi), and open-source tools like [DAX Studio](https://daxstudio.org). DAX queries return results as a table right within the tool, allowing you to quickly create and test the performance of your DAX formulas.
+Reporting clients like Power BI and Excel execute DAX queries whenever a field is placed on a report or when a filter is applied. By using [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) (SSMS), [Power BI Report Builder](/power-bi/paginated-reports/report-builder-power-bi), and open-source tools like [DAX Studio](https://daxstudio.org), you can create and run your own DAX queries. DAX queries return results as a table right within the tool, allowing you to quickly create and test the performance of your DAX formulas. 
 
 Before learning about queries, it's important you have a solid understanding of DAX basics. If you haven't already, be sure to checkout [DAX overview](dax-overview.md).
 
 ## Keywords
 
-DAX queries have a simple syntax comprised of just one required keyword, EVALUATE, and several optional keywords; ORDER BY, START AT, DEFINE, MEASURE, VAR, TABLE, and COLUMN. Each keyword defines a statement used for the duration of the query.
+DAX queries have a simple syntax comprised of just one required keyword, EVALUATE, and several optional keywords: ORDER BY, START AT, DEFINE, MEASURE, VAR, TABLE, and COLUMN. Each keyword defines a statement used for the duration of the query.
 
 ### EVALUATE (Required)
 
@@ -206,7 +204,7 @@ Reference XMLA parameters by prefixing the name of the parameter with an `@` cha
   
 ## See also
 
+[DAX statements](statements-dax.md)  
 [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md)  
 [TREATAS](treatas-function.md)  
-[VAR](var-dax.md)  
 [FILTER](filter-function-dax.md)  

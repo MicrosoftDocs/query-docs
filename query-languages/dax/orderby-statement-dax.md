@@ -31,11 +31,11 @@ Introduces a statement that defines sort order of query results returned by an E
   
 ## Return value
 
-- The result of an EVALUATE statement in ascending (ASC) or descending (DESC) order.
+The result of an EVALUATE statement in ascending (ASC) or descending (DESC) order.
 
 ## Remarks
 
-- To learn more about how ORDER BY statements are used, see [DAX queries](dax-queries.md).
+To learn more about how ORDER BY statements are used, see [DAX queries](dax-queries.md).
 
 ## See also
 

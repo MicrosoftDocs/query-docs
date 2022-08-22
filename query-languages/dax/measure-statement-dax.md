@@ -27,7 +27,7 @@ Introduces a measure definition in a DEFINE statement of a [DAX query](dax-queri
 (EVALUATE <table expression>) +
 ```
 
-## Parameters
+### Parameters
 
 |Term  |Definition  |
 |---------|---------|
@@ -35,11 +35,15 @@ Introduces a measure definition in a DEFINE statement of a [DAX query](dax-queri
 |  measure name     |  The name of the measure. It cannot be an expression. The name does not have to be unique. The name exists only for the duration of the query.   |
 |  scalar expression     | A DAX expression that returns a scalar value.  |
 
+## Return value
+
+The calculated result of the measure expression.
+
 ## Remarks
 
 - Measure definitions for a query override model measures of the same name for the duration of the query. They will not affect the model measure.
 
-- The expression for a measure definition can be used with any other expression in the same query.
+- The measure expression can be used with any other expression in the same query.
 
 - To learn more about how MEASURE statements are used, see [DAX queries](dax-queries.md).
 
