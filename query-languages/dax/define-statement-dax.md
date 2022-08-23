@@ -18,7 +18,7 @@ A keyword that defines entities that can be applied to one or more EVALUATE stat
 ## Syntax  
   
 ```dax
-DEFINE {  <entity> [<name>] = <expression> }
+DEFINE {  <entity> <name> = <expression> }
 ```
   
 ### Arguments
