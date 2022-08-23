@@ -333,6 +333,8 @@
               href: selectedmeasureformatstring-function-dax.md
             - name: SELECTEDMEASURENAME
               href: selectedmeasurename-function-dax.md
+            - name: USERCULTURE
+              href: userculture-function-dax.md
             - name: USERNAME
               href: username-function-dax.md
             - name: USEROBJECTID
