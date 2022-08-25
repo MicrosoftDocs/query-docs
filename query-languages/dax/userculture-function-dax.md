@@ -53,3 +53,9 @@ Returns,
 |Value  |
 |---------|
 |en-US     |
+
+## See also
+
+[USERNAME](username-function-dax.md)  
+[USERPRINCIPALNAME](userprincipalname-function-dax.md)  
+[USEROBJECTID](userobjectid-function-dax.md)  
