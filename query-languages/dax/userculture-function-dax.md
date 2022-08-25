@@ -15,7 +15,7 @@ recommendations: false
   
 Returns the locale \(language code-country code) for the current user, determined by operating system or browser settings.  
 
-**Note:** This function is currently supported in Power BI Desktop, Power BI Premium per capacity, Power BI Premium per user, and Power BI Embedded only.
+**Note:** This function is currently supported in Power BI Premium per capacity, Power BI Premium per user, and Power BI Embedded only.
   
 ## Syntax  
   
@@ -33,11 +33,9 @@ Locale as a string.
   
 ## Remarks
 
-- In Power BI service, locale is determined by **Settings** > **Language** > **Language Settings**. By default, locale is determined by the user browser settings.
+- In the Power BI service, locale is determined by **Settings** > **Language** > **Language Settings**. The default is locale is determined by the user's browser language setting.
 
-- In Power BI Desktop, locale is determined by **File** > **Options and settings** > **Options** > **Regional Settings** > **Application language**. By default, locale is determined by the computer operating system language settings.
-
-- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+- When used in calculated table and calculated column expressions, the result may differ depending on whether the table is in DirectQuery or Import mode. When in DirectQuery mode, the result is determined by the language (locale) specified in Language Settings in the Power BI service. The default in Language Settings specifies locale is determined by the user's browser language setting, which means the same calculated table or column can return different results depending on the browser language settings for each user. When in Import mode, the result is statically determined during refresh and will not vary at query time. For managed refreshes, such as scheduled or interactive, locale is not based on the user’s browser language setting but instead uses an invariant locale. The invariant locale, however, can be overridden by using the XMLA endpoint to specify a custom locale.
 
 ## Example
 
