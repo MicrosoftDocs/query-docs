@@ -9,7 +9,6 @@ ms.topic: reference
 author: minewiskan
 ms.author: owend 
 recommendations: false
-
 ---
 # CALENDAR
   
