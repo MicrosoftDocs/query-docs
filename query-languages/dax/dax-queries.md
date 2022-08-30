@@ -55,7 +55,7 @@ The optional **ORDER BY** keyword defines one or more expressions used to sort q
 
 ```dax
 EVALUATE <table>  
-[ORDER BY {<expression> [{ASC | DESC}]}[, …]  
+[ORDER BY {<expression> [{ASC | DESC}]}[, …]]  
 ```
 
 #### ORDER BY Parameters
@@ -89,7 +89,7 @@ The optional **START AT** keyword is used inside an **ORDER BY** clause. It defi
 ```dax
 EVALUATE <table>  
 [ORDER BY {<expression> [{ASC | DESC}]}[, …]  
-[START AT {<value>|<parameter>} [, …]]]  
+[START AT {<value>|<parameter>} [, …]]]
 ```
 
 #### START AT Parameters
@@ -130,7 +130,7 @@ The optional **DEFINE** keyword introduces one or more calculated entity definit
      (MEASURE <table name>[<measure name>] = <scalar expression>) | 
      (VAR <var name> = <table or scalar expression>) |
      (TABLE <table name> = <table expression>) | 
-     (COLUMN <table name>[column name] = <scalar expression>) | 
+     (COLUMN <table name>[<column name>] = <scalar expression>) | 
     ) + 
 ]
 
@@ -143,9 +143,9 @@ The optional **DEFINE** keyword introduces one or more calculated entity definit
 |--------|--------------|  
 |Entity|MEASURE, VAR, TABLE<sup>[1](#not-rec)</sup>, or COLUMN<sup>[1](#not-rec)</sup>. |
 |name|The name of a measure, var, table, or column definition. It cannot be an expression. The name does not have to be unique. The name exists only for the duration of the query.|  
-|expression|Any DAX expression that returns a table or scalar value. The expression can use any of the defined entities. If a scalar value is required, wrap the expression inside a table constructor with curly braces `{}`, or use the `ROW()` function to return a single row table.|  
+|expression|Any DAX expression that returns a table or scalar value. The expression can use any of the defined entities. If there is a need to convert a scalar expression into a table expression, wrap the expression inside a table constructor with curly braces `{}`, or use the `ROW()` function to return a single row table.|  
 
-<a name="not-rec">[1]</a> **Caution:** Query scoped TABLE and COLUMN definitions are meant for internal use only. While you can define TABLE and COLUMN expressions for a query, they may produce inconsistent results and are not recommended.
+<a name="not-rec">[1]</a> **Caution:** Query scoped TABLE and COLUMN definitions are meant for internal use only. While you can define TABLE and COLUMN expressions for a query without syntax error, they may produce runtime errors and are not recommended.
 
 #### DEFINE Remarks
 
@@ -154,8 +154,6 @@ The optional **DEFINE** keyword introduces one or more calculated entity definit
 - At least one definition is required in a DEFINE statement.
 
 - Measure definitions for a query override model measures of the same name but are only used within the query. They will not affect the model measure.
-
-- The expression for a measure definition can be used with any other expression in the same query.
 
 - VAR names have unique  restrictions. To learn more, see [VAR - Parameters](var-dax.md#parameters).
 

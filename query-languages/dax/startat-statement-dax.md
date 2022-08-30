@@ -18,7 +18,7 @@ Introduces a statement that defines the starting value at which the query result
 ## Syntax
 
 ```dax
-[START AT {<value>|<parameter>} [, …]]]  
+[START AT {<value>|<parameter>} [, …]]  
 ```
 
 ## Parameters

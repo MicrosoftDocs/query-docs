@@ -23,7 +23,7 @@ Introduces a statement with one or more entity definitions that can be applied t
      (MEASURE <table name>[<measure name>] = <scalar expression>) | 
      (VAR <var name> = <table or scalar expression>) |
      (TABLE <table name> = <table expression>) | 
-     (COLUMN <table name>[column name] = <scalar expression>) | 
+     (COLUMN <table name>[<column name>] = <scalar expression>) | 
     ) + 
 ]
 
@@ -38,7 +38,7 @@ Introduces a statement with one or more entity definitions that can be applied t
 |name|The name of a measure, var, table, or column definition. It cannot be an expression. The name does not have to be unique. The name exists only for the duration of the query.|  
 |expression|Any DAX expression that returns a table or scalar value. The expression can use any of the defined entities. If a scalar value is required, wrap the expression inside a table constructor with curly braces `{}`, or use the `ROW()` function to return a single row table.|
 
-<a name="not-rec">[1]</a> **Caution:** Query scoped TABLE and COLUMN definitions are meant for internal use only. User defined TABLE and COLUMN definitions may return inconsistent results and are not recommended.
+<a name="not-rec">[1]</a> **Caution:** Query scoped TABLE and COLUMN definitions are meant for internal use only. While you can define TABLE and COLUMN expressions for a query without syntax error, they may produce runtime errors and are not recommended.
 
 ## Remarks
 
@@ -47,8 +47,6 @@ Introduces a statement with one or more entity definitions that can be applied t
 - At least one definition is required in a DEFINE statement.
 
 - Measure definitions for a query override model measures of the same name.
-
-- The expression for a measure definition can be used with any other expression in the same query.
 
 - VAR names have unique restrictions. To learn more, see [VAR - Parameters](var-dax.md#parameters).
 

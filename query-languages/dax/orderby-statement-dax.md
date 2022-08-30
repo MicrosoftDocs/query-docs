@@ -18,7 +18,7 @@ Introduces a statement that defines sort order of query results returned by an E
 ## Syntax  
   
 ```dax
-[ORDER BY {<expression> [{ASC | DESC}]}[, …]  
+[ORDER BY {<expression> [{ASC | DESC}]}[, …]]  
 ```
   
 ### Parameters
