@@ -13,7 +13,7 @@ Table.InsertRows(<b>table</b> as table, <b>offset</b> as number, <b>rows</b> as 
   
 ## About
 
-Returns a table with the list of rows, `rows`, inserted into the `table` at the given position, `offset`. Each column in the row to insert much match the column types of the table.
+Returns a table with the list of rows, `rows`, inserted into the `table` at the given position, `offset`. Each column in the row to insert must match the column types of the table.
 
 ## Example 1
 
