@@ -1,9 +1,9 @@
 ---
-description: "Learn more about: :::no-loc text="USERCULTURE":::"
-title: ":::no-loc text="USERCULTURE"::: function (DAX) | Microsoft Docs"
+description: "Learn more about: USERCULTURE"
+title: "USERCULTURE function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax 
-ms.date: 08/23/2022
+ms.date: 08/31/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -45,7 +45,7 @@ For the following expression,
 FORMAT(TODAY(), “dddd”, USERCULTURE())
 ```
 
-Depending on the language setting for the current user, :::no-loc text="USERCULTURE"::: returns the current day. For example:
+Depending on the language setting for the current user, :::no-loc text="USERCULTURE"::: returns the current day, for example:
 
 |Locale  | Formatted weekday |
 |---------|---------|
