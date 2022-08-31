@@ -44,6 +44,8 @@ A named variable containing the result of the expression argument.
 
 - For best practices when using VAR, see [Use variables to improve your DAX formulas](best-practices/dax-variables.md).
 
+- To learn more about how VAR is used within a DAX Query, see [DAX queries](dax-queries.md).
+
 ## Example
 
 To calculate a percentage of year-over-year growth without using a variable, you could create three separate measures. This first measure calculates Sum of Sales Amount:  
@@ -84,4 +86,6 @@ VAR SalesLastYear =
 By using a variable, you can get the same outcome, but in a more readable way. And because the result of the expression is stored in the variable, the measure's performance can be significantly improved because it doesn't have to be recalculated each time it's used.
 
 ## See also
-[Use variables to improve your DAX formulas](best-practices/dax-variables.md)
+
+[Use variables to improve your DAX formulas](best-practices/dax-variables.md)  
+[DAX queries](dax-queries.md)

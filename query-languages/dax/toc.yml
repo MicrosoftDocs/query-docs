@@ -799,8 +799,12 @@
         href: define-statement-dax.md
       - name: EVALUATE
         href: evaluate-statement-dax.md
+      - name: MEASURE
+        href: measure-statement-dax.md
       - name: ORDER BY
         href: orderby-statement-dax.md
+      - name: START AT
+        href: startat-statement-dax.md
       - name: VAR
         href: var-dax.md
     - name: DAX glossary
