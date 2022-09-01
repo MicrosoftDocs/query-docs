@@ -3,7 +3,7 @@ description: "Learn more about: ORDER BY"
 title: "ORDER BY keyword (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax 
-ms.date: 07/10/2020
+ms.date: 08/16/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -13,15 +13,15 @@ recommendations: false
 ---
 # ORDER BY
   
-Defines the sort order of query results returned by an EVALUATE statement in a [DAX query](dax-queries.md).
+Introduces a statement that defines sort order of query results returned by an EVALUATE statement in a [DAX query](dax-queries.md).
 
 ## Syntax  
   
 ```dax
-ORDER BY {<expression> [{ASC | DESC}]}
+[ORDER BY {<expression> [{ASC | DESC}]}[, …]]  
 ```
   
-### Arguments
+### Parameters
   
 |Term|Definition|  
 |--------|--------------|  
@@ -33,19 +33,14 @@ ORDER BY {<expression> [{ASC | DESC}]}
 
 The result of an EVALUATE statement in ascending (ASC) or descending (DESC) order.
 
-## Example
+## Remarks
 
-```dax
-EVALUATE(
-    'Internet Sales'
-    )
-ORDER BY
-    'Internet Sales'[Order Date]
-```
+To learn more about how ORDER BY statements are used, see [DAX queries](dax-queries.md).
 
-Returns all rows and columns from the Internet Sales table, ordered by Order Date, as a table.
-  
 ## See also
 
-[DAX queries](dax-queries.md)  
+[START AT](startat-statement-dax.md)  
 [EVALUATE](evaluate-statement-dax.md)  
+[VAR](var-dax.md)  
+[DEFINE](define-statement-dax.md)  
+[DAX queries](dax-queries.md)  
