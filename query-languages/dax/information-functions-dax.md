@@ -3,7 +3,7 @@ description: "Learn more about: Information functions"
 title: "Information functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax 
-ms.date: 09/01/2020
+ms.date: 08/23/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -45,6 +45,7 @@ DAX information functions look at the cell or row that is provided as an argumen
 |[SELECTEDMEASURE](selectedmeasure-function-dax.md) |   Used by expressions for calculation items to reference the measure that is in context.   |
 |[SELECTEDMEASUREFORMATSTRING](selectedmeasureformatstring-function-dax.md) |   Used by expressions for calculation items to retrieve the format string of the measure that is in context.   |
 |[SELECTEDMEASURENAME](selectedmeasurename-function-dax.md) |   Used by expressions for calculation items to determine the measure that is in context by name.   |
+|[USERCULTURE](userculture-function-dax.md)   |Returns the locale for the current user.    |
 |[USERNAME](username-function-dax.md)    |  Returns the domain name and username from the credentials given to the system at connection time.        |
 |[USEROBJECTID](userobjectid-function-dax.md)    |  Returns the current user's Object ID or SID.       |
 |[USERPRINCIPALNAME](userprincipalname-function-dax.md)    |  Returns the user principal name.       |
