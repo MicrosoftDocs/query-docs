@@ -42,7 +42,7 @@ Locale as a string.
 For the following expression,
 
 ```dax
-FORMAT(TODAY(), “dddd”, USERCULTURE())
+FORMAT(TODAY(), "dddd", USERCULTURE())
 ```
 
 Depending on the language setting for the current user, :::no-loc text="USERCULTURE"::: returns the current day, for example:
