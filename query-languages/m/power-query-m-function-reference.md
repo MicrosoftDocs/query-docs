@@ -5,7 +5,7 @@ ms.date: 7/31/2019
 ---
 # Power Query M function reference
 
-The Power Query M function reference includes articles for each of the over 700 functions. The reference articles you see here on docs.microsoft.com are auto-generated from in-product help. To learn more about functions and how they work in an expression, see [Understanding Power Query M functions](understanding-power-query-m-functions.md).
+The Power Query M function reference includes articles for each of the over 700 functions. These reference articles are auto-generated from in-product help. To learn more about functions and how they work in an expression, see [Understanding Power Query M functions](understanding-power-query-m-functions.md).
 
 ## Functions by category
 

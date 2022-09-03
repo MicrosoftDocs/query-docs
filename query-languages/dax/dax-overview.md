@@ -484,7 +484,7 @@ When learning DAX, it's best to use the application you'll be using to create yo
 
 [Videos](dax-learn-videos.md)
 
-[Use DAX in Power BI Desktop](/learn/paths/dax-power-bi/) path in Microsoft Learn.
+[Use DAX in Power BI Desktop](/learn/paths/dax-power-bi/) path.
 
 The [Definitive Guide to DAX](https://www.sqlbi.com/books/the-definitive-guide-to-dax-2nd-edition/) by Alberto Ferrari and Marco Russo (Microsoft Press). Now in its second edition, this extensive guide provides basics to innovative high-performance techniques for beginning data modelers and BI professionals.
 
