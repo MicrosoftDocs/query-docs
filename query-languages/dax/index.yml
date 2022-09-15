@@ -46,7 +46,7 @@ landingContent:
       - linkListType: learn
         links:
           - text: Use DAX in Power BI Desktop
-            url: https://docs.microsoft.com/learn/paths/dax-power-bi/
+            url: https://learn.microsoft.com/training/paths/dax-power-bi/
       
 
   # Card
