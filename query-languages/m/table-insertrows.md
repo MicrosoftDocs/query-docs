@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.InsertRows"
 title: "Table.InsertRows"
-ms.date: 3/10/2022
+ms.date: 9/15/2022
 ---
 # Table.InsertRows
 
