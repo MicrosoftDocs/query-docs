@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.HasColumns"
 title: "Table.HasColumns"
-ms.date: 3/14/2022
+ms.date: 9/15/2022
 ---
 # Table.HasColumns
 
@@ -13,7 +13,7 @@ Table.HasColumns(<b>table</b> as table, <b>columns</b> as any) as logical
   
 ## About
 
-indicates whether the `table` contains the specified column(s), `columns`. Returns `true` if the table contains the column(s), `false` otherwise.
+Indicates whether the `table` contains the specified column(s), `columns`. Returns `true` if the table contains the column(s), `false` otherwise.
 
 ## Example 1
 

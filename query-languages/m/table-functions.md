@@ -91,7 +91,7 @@ These functions create and manipulate table values.
 |[Table.ColumnsOfType](table-columnsoftype.md)|Returns a list with the names of the columns that match the specified types.|
 |[Table.DemoteHeaders](table-demoteheaders.md)|Demotes the header row down into the first row of a table.|
 |[Table.DuplicateColumn](table-duplicatecolumn.md) | Duplicates a column with the specified name. Values and type are copied from the source column.|
-|[Table.HasColumns](table-hascolumns.md)|Returns true if a table has the specified column or columns.|
+|[Table.HasColumns](table-hascolumns.md)|Indicates whether the table contains the specified column(s).|
 |[Table.Pivot](table-pivot.md)|Given a table and attribute column containing pivotValues, creates new columns for each of the pivot values and assigns them values from the valueColumn. An optional aggregationFunction can be provided to handle multiple occurrence of the same key value in the attribute column.|
 |[Table.PrefixColumns](table-prefixcolumns.md)|Returns a table where the columns have all been prefixed with a text value.|
 |[Table.PromoteHeaders](table-promoteheaders.md)|Promotes the first row of the table into its header or column names.|

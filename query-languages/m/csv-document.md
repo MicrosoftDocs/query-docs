@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Csv.Document"
 title: "Csv.Document"
-ms.date: 4/13/2022
+ms.date: 9/15/2022
 ---
 # Csv.Document
 
@@ -16,7 +16,7 @@ Csv.Document(<b>source</b> as any, optional <b>columns</b> as any, optional <b>d
 Returns the contents of the CSV document as a table.
 
 * `columns` can be null, the number of columns, a list of column names, a table type, or an options record.
-* `delimiter` can be a single character, or a list of characters. Default: `","`.
+* `delimiter` can be a single character, a list of characters, or the value `""`, which indicates rows should be split by consecutive whitespace characters. Default: `","`.
 * Refer to [ExtraValues.Type](extravalues-type.md) for the supported values of `extraValues`.
 * `encoding` specifies the text encoding type.
 
