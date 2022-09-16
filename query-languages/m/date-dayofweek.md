@@ -25,7 +25,7 @@ Get the day of the week represented by Monday, February 21st, 2011, treating Sun
 **Usage**
 
 ```powerquery-m
-Date.DayOfWeek(#date(2011, 02, 21), Day.Sunday)`
+Date.DayOfWeek(#date(2011, 02, 21), Day.Sunday)
 ```
 
 **Output**

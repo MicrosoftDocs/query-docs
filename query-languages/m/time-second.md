@@ -8,7 +8,7 @@ ms.date: 3/14/2022
 ## Syntax
 
 <pre>
-Time.Second(<b>dateTime</b> as any) as nullable number`
+Time.Second(<b>dateTime</b> as any) as nullable number
 </pre>
 
 ## About
