@@ -22,7 +22,7 @@ section-member:<br/>
 _section-member-name:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier_
 
-In M, a section is an organizational concept that allows related expressions to be named and grouped within a document. Each section has a _section-name_, which identifies the section and qualifies the names of the _section-members_ declared within the section. A _sectionmember_ consists of a _member-name_ and an _expression_. Section member expressions may refer to other section members within the same section directly by member name.
+In M, a section is an organizational concept that allows related expressions to be named and grouped within a document. Each section has a _section-name_, which identifies the section and qualifies the names of the _section-members_ declared within the section. A _section-member_ consists of a _member-name_ and an _expression_. Section member expressions may refer to other section members within the same section directly by member name.
 
 The following example shows a section-document:
 
