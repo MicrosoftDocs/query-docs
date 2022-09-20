@@ -30,7 +30,7 @@ landingContent:
       - linkListType: learn
         links:
           - text: Power Query documentation
-            url: https://docs.microsoft.com/en-us/power-query
+            url: /power-query
 
   # Card
   - title: Functions

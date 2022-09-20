@@ -45,6 +45,6 @@ When it's your intention to count table rows, it's recommended you always use th
 
 ## See also
 
-- Learning path: [Use DAX in Power BI Desktop](/learn/paths/dax-power-bi/)
+- Learning path: [Use DAX in Power BI Desktop](/training/paths/dax-power-bi/)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
