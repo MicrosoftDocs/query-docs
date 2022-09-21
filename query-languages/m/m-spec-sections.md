@@ -134,9 +134,9 @@ The following holds when evaluating `#sections`:
 
 ### #shared
 
-The `#shared` intrinsic variable returns a record containing the names and values of all shared section members currently in scope.
+The `#shared` intrinsic variable returns the contents of the global environment as a record. (The global environment consists of all shared section members as well as any identifiers directly included in the global environment by the expression evaluator.) This record is keyed by identifier name, with each value being the value of the associated identifier.
 
-The following example shows a document with two shared members and the corresponding record produced by evaluating the #shared intrinsic variable within the context of that document:
+The following example shows a document with two shared members and the corresponding record produced by evaluating the `#shared` intrinsic variable within the context of that document:
 
 ```powerquery-m
 section Section1;
@@ -155,6 +155,6 @@ shared D = "world";
 
 The following holds when evaluating `#shared`:
 
-* The `#shared` intrinsic variable preserves the evaluation state of all shared member expressions within the document.
+* The `#shared` intrinsic variable preserves the evaluation state of the global environment.
 
-* The `#shared` intrinsic variable does not force the evaluation of any unevaluated section members.
+* The `#shared` intrinsic variable does not force the evaluation of any unevaluated value.
