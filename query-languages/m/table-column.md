@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.Column"
 title: "Table.Column"
-ms.date: 3/10/2020
+ms.date: 3/10/2022
 ---
 # Table.Column
 

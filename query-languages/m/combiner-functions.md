@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Combiner functions"
 title: "Combiner functions"
-ms.date: 5/16/2020
+ms.date: 5/16/2022
 ---
 # Combiner functions
 
