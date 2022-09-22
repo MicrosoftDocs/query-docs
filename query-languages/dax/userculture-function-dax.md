@@ -37,6 +37,12 @@ Locale as a string.
 
 - When used in calculated table and calculated column expressions, the result may differ depending on whether the table is in DirectQuery or Import mode. When in DirectQuery mode, the result is determined by the language (locale) specified in Language Settings in the Power BI service. The default in Language Settings specifies locale is determined by the user's browser language setting, which means the same calculated table or column can return different results depending on the browser language settings for each user. When in Import mode, the result is statically determined during refresh and will not vary at query time. For managed refreshes, such as scheduled or interactive, locale is not based on the user’s browser language setting but instead uses an invariant locale. The invariant locale, however, can be overridden by using the XMLA endpoint to specify a custom locale.
 
+- When combined with the Field parameters feature in Power BI, USERCULTURE can be used to reliably translate dynamic visualization titles and captions when used in measure and row-level security (RLS) object expressions within the same model. However, expressions containing USERCULTURE called from outside the model, such as queries and live-connect report measures, should not be relied upon for correctly translated titles and captions.
+
+- USERCULTURE returns the correct user locale when used in object expressions called from within the model such as measures, row-level security (RLS), and calculation items. However, it may not return the correct user locale when used in expressions from outside the model, such as queries and live-connect report measures.
+
+- In Live-connect reports, USERCULTURE may not return the correct user locale when called from a report measure expression.
+
 ## Example
 
 For the following expression,
