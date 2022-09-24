@@ -6,7 +6,7 @@ Whether you have a GitHub account or not, you can use the thumb up, thumb down i
 
 ## Editing in GitHub
 
-Refer to the [Microsoft Docs contributors guide](https://learn.microsoft.com/contribute) to learn more about using GitHub Editor and Git and markdown tools to submit a pull request (PR) for documentation changes.
+Refer to the [Microsoft Docs contributor guide](https://learn.microsoft.com/contribute) to learn more about using GitHub Editor and Git and markdown tools to submit a pull request (PR) for documentation changes.
 
 ### DAX Reference
 
