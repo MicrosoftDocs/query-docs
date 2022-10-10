@@ -1,10 +1,10 @@
 ---
 description: "Learn more about: Excel.Workbook"
 title: "Excel.Workbook"
-ms.date: 4/13/2022
+ms.date: 10/7/2022
 ---
 # Excel.Workbook
-  
+
 ## Syntax
 
 <pre>
@@ -13,7 +13,7 @@ Excel.Workbook(<b>workbook</b> as binary, optional <b>useHeaders</b> as any, opt
 
 ## About
 
-Returns the contents of the Excel workbook.  
+Returns the contents of the Excel workbook.
 
 * `useHeaders` can be null, a logical (true/false) value indicating whether the first row of each returned table should be treated as a header, or an options record. Default: false.
 * `delayTypes` can be null or a logical (true/false) value indicating whether the columns of each returned table should be left untyped. Default: false.

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: GoogleAnalytics.Accounts"
 title: "GoogleAnalytics.Accounts"
-ms.date: 4/16/2018
+ms.date: 10/7/2022
 ---
 # GoogleAnalytics.Accounts
 
@@ -12,4 +12,5 @@ GoogleAnalytics.Accounts() as table
 </pre>
 
 ## About
+
 Returns Google Analytics accounts that are accessible from the current credential.

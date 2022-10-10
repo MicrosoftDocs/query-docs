@@ -1,16 +1,16 @@
 ---
 description: "Learn more about: Number.Power"
 title: "Number.Power"
-ms.date: 3/11/2022
+ms.date: 10/10/2022
 ---
 # Number.Power
-  
+
 ## Syntax
 
 <pre>
 Number.Power(<b>number</b> as nullable number, <b>power</b> as nullable number) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the result of raising `number` to the power of `power`. If `number` or `power` are null, **Number.Power** returns null.

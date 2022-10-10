@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.ConformToPageReader"
 title: "Table.ConformToPageReader"
-ms.date: 8/21/2020
+ms.date: 10/7/2022
 ---
 # Table.ConformToPageReader
 
@@ -10,6 +10,7 @@ ms.date: 8/21/2020
 <pre>
 Table.ConformToPageReader(<b>table</b> as table, <b>shapingFunction</b> as function) as table
 </pre>
-  
-## About  
+
+## About
+
 This function is intended for internal use only.

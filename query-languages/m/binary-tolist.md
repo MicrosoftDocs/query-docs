@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Binary.ToList"
 title: "Binary.ToList"
-ms.date: 7/29/2019
+ms.date: 10/7/2022
 ---
 # Binary.ToList
 
@@ -9,7 +9,8 @@ ms.date: 7/29/2019
 
 <pre>
 Binary.ToList(<b>binary</b> as binary) as list
-</pre>  
-  
-## About  
+</pre>
+
+## About
+
 Converts a binary value into a list of numbers.

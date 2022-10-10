@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.AddMonths"
 title: "Date.AddMonths"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # Date.AddMonths
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 Date.AddMonths(<b>dateTime</b> as any, <b>numberOfMonths</b> as number) as any
 </pre>
-  
+
 ## About
 
 Returns the `date`, `datetime`, or `datetimezone` result from adding `numberOfMonths` months to the `datetime` value `dateTime`.

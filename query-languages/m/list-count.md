@@ -1,16 +1,16 @@
 ---
 description: "Learn more about: List.Count"
 title: "List.Count"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # List.Count
 
 ## Syntax
 
 <pre>
-List.Count(<b>list</b> as list) as number  
+List.Count(<b>list</b> as list) as number
 </pre>
-  
+
 ## About
 
 Returns the number of items in the list `list`.

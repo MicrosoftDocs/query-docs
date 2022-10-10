@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number.Asin"
 title: "Number.Asin"
-ms.date: 7/31/2019
+ms.date: 10/7/2022
 ---
 # Number.Asin
 
@@ -10,6 +10,7 @@ ms.date: 7/31/2019
 <pre>
 Number.Asin(<b>number</b> as nullable number) as nullable number
 </pre>
-  
-## About  
+
+## About
+
 Returns the arcsine of `number`.

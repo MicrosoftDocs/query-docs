@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Cube.AddAndExpandDimensionColumn"
 title: "Cube.AddAndExpandDimensionColumn"
-ms.date: 4/16/2018
+ms.date: 10/7/2022
 ---
 # Cube.AddAndExpandDimensionColumn
 
@@ -11,4 +11,5 @@ ms.date: 4/16/2018
 </pre>
 
 ## About
+
 Merges the specified dimension table, `dimensionSelector`, into the cube's, `cube`, filter context and changes the dimensional granularity by expanding the specified set, `attributeNames`, of dimension attributes. The dimension attributes are added to the tabular view with columns named `newColumnNames`, or `attributeNames` if not specified.

@@ -1,16 +1,16 @@
 ---
 description: "Learn more about: Combiner.CombineTextByPositions"
 title: "Combiner.CombineTextByPositions"
-ms.date: 7/29/2019
+ms.date: 10/7/2022
 ---
 # Combiner.CombineTextByPositions
 
 ## Syntax
 
 <pre>
-Combiner.CombineTextByPositions(<b>positions</b> as list, optional <b>template</b> as nullable text) as function 
+Combiner.CombineTextByPositions(<b>positions</b> as list, optional <b>template</b> as nullable text) as function
 </pre>
-  
-## About  
-Returns a function that combines a list of text into a single text using the specified positions. 
- 
+
+## About
+
+Returns a function that combines a list of text into a single text using the specified positions.

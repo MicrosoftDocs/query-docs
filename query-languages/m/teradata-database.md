@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Teradata.Database"
 title: "Teradata.Database"
-ms.date: 02/03/2021
+ms.date: 10/7/2022
 ---
 # Teradata.Database
 
@@ -12,19 +12,19 @@ Teradata.Database(<b>server</b> as text, optional <b>options</b> as nullable rec
 </pre>
 
 ## About
-Returns a table of SQL tables and views from the Teradata database on server `server`. The port may be optionally specified with the server, separated by a colon. An optional record parameter, `options`, may be specified to control the following options: 
 
-* `CreateNavigationProperties` : A logical (true/false) that sets whether to generate navigation properties on the returned values (default is true).
+Returns a table of SQL tables and views from the Teradata database on server `server`. The port may be optionally specified with the server, separated by a colon. An optional record parameter, `options`, may be specified to control the following options:
 
-* `NavigationPropertyNameGenerator` : A function that is used for the creation of names for navigation properties.
+* `CreateNavigationProperties`: A logical (true/false) that sets whether to generate navigation properties on the returned values (default is true).
 
-* `Query` : A native SQL query used to retrieve data. If the query produces multiple result sets, only the first will be returned.
+* `NavigationPropertyNameGenerator`: A function that is used for the creation of names for navigation properties.
 
-* `CommandTimeout` : A duration that controls how long the server-side query is allowed to run before it is canceled. The default value is ten minutes.
+* `Query`: A native SQL query used to retrieve data. If the query produces multiple result sets, only the first will be returned.
 
-* `ConnectionTimeout` : A duration that controls how long to wait before abandoning an attempt to make a connection to the server. The default value is driver-dependent.
+* `CommandTimeout`: A duration that controls how long the server-side query is allowed to run before it is canceled. The default value is ten minutes.
 
-* `HierarchicalNavigation` : A logical (true/false) that sets whether to view the tables grouped by their schema names (default is false).
+* `ConnectionTimeout`: A duration that controls how long to wait before abandoning an attempt to make a connection to the server. The default value is driver-dependent.
 
-The record parameter is specified as [option1 = value1, option2 = value2...] or [Query = "select ..."] for example. 
-  
+* `HierarchicalNavigation`: A logical (true/false) that sets whether to view the tables grouped by their schema names (default is false).
+
+The record parameter is specified as [option1 = value1, option2 = value2...] or [Query = "select ..."] for example.

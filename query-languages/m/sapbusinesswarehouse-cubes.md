@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: SapBusinessWarehouse.Cubes"
 title: "SapBusinessWarehouse.Cubes"
-ms.date: 7/29/2019
+ms.date: 10/7/2022
 ---
 # SapBusinessWarehouse.Cubes
 
@@ -12,4 +12,5 @@ SapBusinessWarehouse.Cubes(<b>server</b> as text, <b>systemNumberOrSystemId</b> 
 </pre>
 
 ## About
+
 Returns a table of InfoCubes and queries grouped by InfoArea from an SAP Business Warehouse instance at server `server` with system number `systemNumberOrSystemId` and Client ID `clientId`. An optional record parameter, `optionsOrLogonGroup`, may be specified to control options. 

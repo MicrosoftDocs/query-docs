@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.FromRecords"
 title: "Table.FromRecords"
-ms.date: 3/10/2021
+ms.date: 3/10/2022
 ---
 # Table.FromRecords
 

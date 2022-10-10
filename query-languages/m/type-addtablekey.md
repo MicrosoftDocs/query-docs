@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Type.AddTableKey"
 title: "Type.AddTableKey"
-ms.date: 8/2/2019
+ms.date: 10/7/2022
 ---
 # Type.AddTableKey
 
@@ -10,6 +10,7 @@ ms.date: 8/2/2019
 <pre>
 Type.AddTableKey(<b>table</b> as type, <b>columns</b> as list, <b>isPrimary</b> as logical) as type
 </pre>
-  
-## About  
+
+## About
+
 Adds a key to the given table type.

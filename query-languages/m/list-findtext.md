@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.FindText"
 title: "List.FindText"
-ms.date: 3/8/2022
+ms.date: 10/7/2022
 ---
 # List.FindText
 
@@ -10,7 +10,7 @@ ms.date: 3/8/2022
 <pre>
 List.FindText(<b>list</b> as list, <b>text</b> as text) as list
 </pre>
-  
+
 ## About
 
 Returns a list of the values from the list `list` which contained the value `text`.

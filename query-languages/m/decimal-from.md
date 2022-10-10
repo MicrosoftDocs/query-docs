@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Decimal.From"
 title: "Decimal.From"
-ms.date: 4/13/2022
+ms.date: 10/7/2022
 ---
 # Decimal.From
 
@@ -10,10 +10,10 @@ ms.date: 4/13/2022
 <pre>
 Decimal.From(<b>value</b> as any, optional <b>culture</b> as nullable text) as nullable number
 </pre>
-  
+
 ## About
 
-Returns a Decimal `number` value from the given `value`. If the given `value` is `null`, **Decimal.From** returns `null`. If the given `value` is `number` within the range of Decimal, `value` is returned, otherwise an error is returned. If `value` is of any other type, it will first be converted to a `number` using [Number.FromText](/powerquery-m/number-fromtext). An optional `culture` may also be provided (for example, "en-US").
+Returns a Decimal `number` value from the given `value`. If the given `value` is `null`, **Decimal.From** returns `null`. If the given `value` is `number` within the range of Decimal, `value` is returned, otherwise an error is returned. If `value` is of any other type, it will first be converted to a `number` using [Number.FromText](number-fromtext.md). An optional `culture` may also be provided (for example, "en-US").
 
 ## Example 1
 

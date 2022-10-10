@@ -1,16 +1,16 @@
 ---
 description: "Learn more about: Date.AddDays"
 title: "Date.AddDays"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # Date.AddDays
 
 ## Syntax
 
 <pre>
-Date.AddDays(<b>dateTime</b> as any, <b>numberOfDays</b> as number) as any  
+Date.AddDays(<b>dateTime</b> as any, <b>numberOfDays</b> as number) as any
 </pre>
-  
+
 ## About
 
 Returns the `date`, `datetime`, or `datetimezone` result from adding `numberOfDays` days to the `datetime` value `dateTime`.

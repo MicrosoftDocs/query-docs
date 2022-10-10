@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number.FromText"
 title: "Number.FromText"
-ms.date: 3/11/2022
+ms.date: 10/10/2022
 ---
 # Number.FromText
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 Number.FromText(<b>text</b> as nullable text, optional <b>culture</b> as nullable text) as nullable number
 </pre>
-  
+
 ## About
 
 Returns a `number` value from the given text value, `text`.

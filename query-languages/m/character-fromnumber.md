@@ -1,16 +1,16 @@
 ---
 description: "Learn more about: Character.FromNumber"
 title: "Character.FromNumber"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # Character.FromNumber
 
 ## Syntax
 
-<pre>  
+<pre>
 Character.FromNumber(<b>number</b> as nullable number) as nullable text
 </pre>
-  
+
 ## About
 
 Returns the character equivalent of the number.

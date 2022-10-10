@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Html.Table"
 title: "Html.Table"
-ms.date: 3/8/2022
+ms.date: 10/7/2022
 ---
 # Html.Table
 
@@ -10,7 +10,7 @@ ms.date: 3/8/2022
 <pre>
 Html.Table(<b>html</b> as any, <b>columnNameSelectorPairs</b> as list, optional <b>options</b> as nullable record) as table
 </pre>
-  
+
 ## About
 
 Returns a table containing the results of running the specified CSS selectors against the provided `html`. An optional record parameter, `options`, may be provided to specify additional properties. The record can contain the following fields:

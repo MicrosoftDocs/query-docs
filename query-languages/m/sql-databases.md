@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Sql.Databases"
 title: "Sql.Databases"
-ms.date: 11/23/2020
+ms.date: 10/7/2022
 ---
 # Sql.Databases
 
@@ -28,4 +28,4 @@ Returns a table of databases on the specified SQL server, `server`. An optional 
 
 The record parameter is specified as [option1 = value1, option2 = value2...] for example.
 
-Does not support setting a SQL query to run on the server. [`Sql.Database`](sql-database.md) should be used instead to run a SQL query. 
+Does not support setting a SQL query to run on the server. [`Sql.Database`](sql-database.md) should be used instead to run a SQL query.

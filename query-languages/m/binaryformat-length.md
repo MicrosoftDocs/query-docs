@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.Length"
 title: "BinaryFormat.Length"
-ms.date: 3/7/2022
+ms.date: 10/7/2022
 ---
 # BinaryFormat.Length
 
@@ -10,10 +10,10 @@ ms.date: 3/7/2022
 <pre>
 BinaryFormat.Length(<b>binaryFormat</b> as function, <b>length</b> as any) as function
 </pre>
-  
+
 ## About
 
-Returns a binary format that limits the amount of data that can be read. Both `BinaryFormat.List` and `BinaryFormat.Binary` can be used to read until end of the data. `BinaryFormat.Length` can be used to limit the number of bytes that are read. The `binaryFormat` parameter specifies the binary format to limit. The `length` parameter specifies the number of bytes to read. The `length` parameter may either be a number value, or a binary format value that specifies the format of the length value that appears that precedes the value being read.
+Returns a binary format that limits the amount of data that can be read. Both [BinaryFormat.List](binaryformat-list.md) and [BinaryFormat.Binary](binaryformat-binary.md) can be used to read until end of the data. **BinaryFormat.Length** can be used to limit the number of bytes that are read. The `binaryFormat` parameter specifies the binary format to limit. The `length` parameter specifies the number of bytes to read. The `length` parameter may either be a number value, or a binary format value that specifies the format of the length value that appears that precedes the value being read.
 
 ## Example 1
 

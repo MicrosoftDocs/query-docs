@@ -1,16 +1,16 @@
 ---
 description: "Learn more about: Enumerations"
 title: "Accessing data enumerations"
-ms.date: 6/27/2022
+ms.date: 10/7/2022
 ---
 # Enumerations
 
 The Power Query M formula language includes these enumerations.
 
 ## List of enumerations
-  
-|Name|Description|  
-|------------|---------------|  
+
+|Name|Description|
+|------------|---------------|
 |[AccessControlKind.Type](accesscontrolkind-type.md)|Specifies the kind of access control.|
 |[BinaryEncoding.Type](binaryencoding-type.md)|Specifies the type of binary encoding.|
 |[BinaryOccurrence.Type](binaryoccurrence-type.md)|Specifies how many times the item is expected to appear in the group.|
@@ -39,5 +39,5 @@ The Power Query M formula language includes these enumerations.
 |[SapHanaDistribution.Type](saphanadistribution-type.md)|Specifies valid options for SAP HANA distribution option.|
 |[SapHanaRangeOperator.Type](saphanarangeoperator-type.md)|Specifies a range operator for SAP HANA range input parameters.|
 |[TextEncoding.Type](textencoding-type.md) | Specifies the text encoding type.|
-|[TraceLevel.Type](tracelevel-type.md)|Specifies the trace level.|  
+|[TraceLevel.Type](tracelevel-type.md)|Specifies the trace level.|
 |[WebMethod.Type](webmethod-type.md) |Specifies an HTTP method.|

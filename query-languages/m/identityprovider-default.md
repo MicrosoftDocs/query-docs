@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: IdentityProvider.Default"
 title: "IdentityProvider.Default"
-ms.date: 3/28/2019
+ms.date: 10/7/2022
 ---
 # IdentityProvider.Default
 
@@ -11,6 +11,6 @@ ms.date: 3/28/2019
 IdentityProvider.Default() as any
 </pre>
 
-## About  
+## About
 
 The default identity provider for the current host.

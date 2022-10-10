@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Salesforce.Reports"
 title: "Salesforce.Reports"
-ms.date: 02/03/2021
+ms.date: 10/7/2022
 ---
 # Salesforce.Reports
 
@@ -15,5 +15,5 @@ Salesforce.Reports(optional <b>loginUrl</b> as nullable text, optional <b>option
 
 Returns the reports on the Salesforce account provided in the credentials. The account will be connected through the provided environment `loginUrl`. If no environment is provided then the account will connect to production (https://login.salesforce.com). An optional record parameter, `options`, may be provided to specify additional properties. The record can contain the following fields:
 
-* `ApiVersion` : The Salesforce API version to use for this query. When not specified, API version 29.0 is used.
-* `Timeout` : A duration that controls how long to wait before abandoning the request to the server. The default value is source-specific.
+* `ApiVersion`: The Salesforce API version to use for this query. When not specified, API version 29.0 is used.
+* `Timeout`: A duration that controls how long to wait before abandoning the request to the server. The default value is source-specific.

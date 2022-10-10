@@ -10,8 +10,8 @@ ms.date: 3/14/2022
 <pre>
 Web.BrowserContents(<b>url</b> as text, optional <b>options</b> as nullable record) as text
 </pre>
-  
-## About  
+
+## About
 
 Returns the HTML for the specified `url`, as viewed by a web browser. An optional record parameter, `options`, may be provided to specify additional properties. The record can contain the following fields:
 

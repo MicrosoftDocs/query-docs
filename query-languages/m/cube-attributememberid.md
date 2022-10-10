@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Cube.AttributeMemberId"
 title: "Cube.AttributeMemberId"
-ms.date: 4/16/2018
+ms.date: 10/7/2022
 ---
 # Cube.AttributeMemberId
 
@@ -11,4 +11,5 @@ ms.date: 4/16/2018
 </pre>
 
 ## About
+
 Returns the unique member identifier from a member property value. `attribute`. Returns null for any other values.

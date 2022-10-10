@@ -2,7 +2,7 @@
 title: M Language Sections 
 description: Describes using sections in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 8/2/2022
+ms.date: 10/7/2022
 ---
 
 # Sections
@@ -29,7 +29,7 @@ The following example shows a section-document:
 ```powerquery-m
 section Section1; 
 
-A = 1;                          //1     
+A = 1;                          //1
 B = 2;                          //2 
 C = A + B;                      //3
 ```

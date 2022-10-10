@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DateTimeZone.ZoneMinutes"
 title: "DateTimeZone.ZoneMinutes"
-ms.date: 7/30/2019
+ms.date: 10/7/2022
 ---
 # DateTimeZone.ZoneMinutes
 
@@ -12,5 +12,5 @@ DateTimeZone.ZoneMinutes(<b>dateTimeZone</b> as nullable datetimezone) as nullab
 </pre>
 
 ## About
-Changes the timezone of the value.
 
+Changes the timezone of the value.

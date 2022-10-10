@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Value.Optimize"
 title: "Value.Optimize"
-ms.date: 06/16/2020
+ms.date: 10/7/2022
 ---
 # Value.Optimize
 
@@ -10,6 +10,7 @@ ms.date: 06/16/2020
 <pre>
 Value.Optimize(<b>value</b> as any) as any
 </pre>
-  
-## About  
+
+## About
+
 When used within Value.Expression, if `value` represents a query that can be optimized, this function indicates that the optimized expression should be returned. Otherwise, `value` will be passed through with no effect.
