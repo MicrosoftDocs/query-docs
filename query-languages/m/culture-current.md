@@ -1,10 +1,10 @@
 ---
 description: "Learn more about: Culture.Current"
 title: "Culture.Current"
-ms.date: 7/29/2019
+ms.date: 10/7/2022
 ---
 # Culture.Current
 
-  
-## About  
+## About
+
 Returns the name of the current culture for the application.

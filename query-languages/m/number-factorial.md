@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number.Factorial"
 title: "Number.Factorial"
-ms.date: 3/11/2022
+ms.date: 10/10/2022
 ---
 # Number.Factorial
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 Number.Factorial(<b>number</b> as nullable number) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the factorial of the number `number`.

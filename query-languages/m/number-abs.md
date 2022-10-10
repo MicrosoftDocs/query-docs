@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number.Abs"
 title: "Number.Abs"
-ms.date: 3/11/2022
+ms.date: 10/10/2022
 ---
 # Number.Abs
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 Number.Abs(<b>number</b> as nullable number) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the absolute value of `number`. If `number` is null, **Number.Abs** returns null.

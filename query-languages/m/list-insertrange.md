@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.InsertRange"
 title: "List.InsertRange"
-ms.date: 3/8/2022
+ms.date: 10/7/2022
 ---
 # List.InsertRange
 
@@ -11,13 +11,13 @@ ms.date: 3/8/2022
 List.InsertRange(<b>list</b> as list, <b>index</b> as number, <b>values</b> as list) as list
 </pre>
 
-## About  
+## About
 
 Returns a new list produced by inserting the values in `values` into `list` at `index`. The first position in the list is at index 0.
 
 * `list`: The target list where values are to be inserted.
 * `index`: The index of the target list(`list`) where the values are to be inserted. The first position in the list is at index 0.
-* `values`: The list of values which are to be inserted into `list`.  
+* `values`: The list of values which are to be inserted into `list`.
 
 ## Example 1
 

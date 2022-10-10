@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.AnyTrue"
 title: "List.AnyTrue"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # List.AnyTrue
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 List.AnyTrue(<b>list</b> as list) as logical
 </pre>
-  
+
 ## About
 
 Returns true if any expression in the list `list` is true.

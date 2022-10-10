@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.IsEmpty"
 title: "List.IsEmpty"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # List.IsEmpty
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 List.IsEmpty(<b>list</b> as list) as logical
 </pre>
-  
+
 ## About
 
 Returns `true` if the list, `list`, contains no values (length 0). If the list contains values (length > 0), returns `false`.

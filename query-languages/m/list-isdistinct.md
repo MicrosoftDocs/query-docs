@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.IsDistinct"
 title: "List.IsDistinct"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # List.IsDistinct
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 List.IsDistinct(<b>list</b> as list, optional <b>equationCriteria</b> as any) as logical
 </pre>
-  
+
 ## About
 
 Returns a logical value whether there are duplicates in the list `list`; `true` if the list is distinct, `false` if there are duplicate values.

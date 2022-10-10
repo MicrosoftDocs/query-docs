@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.Average"
 title: "List.Average"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # List.Average
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 List.Average(<b>list</b> as list, optional <b>precision</b> as nullable number) as any 
 </pre>
-  
+
 ## About
 
 Returns the average value for the items in the list, `list`. The result is given in the same datatype as the values in the list. Only works with number, date, time, datetime, datetimezone and duration values. If the list is empty null is returned.

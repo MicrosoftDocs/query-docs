@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DateTimeZone.FixedLocalNow"
 title: "DateTimeZone.FixedLocalNow"
-ms.date: 7/30/2019
+ms.date: 10/7/2022
 ---
 # DateTimeZone.FixedLocalNow
 
@@ -10,6 +10,7 @@ ms.date: 7/30/2019
 <pre>
 DateTimeZone.FixedLocalNow() as datetimezone
 </pre>
-  
-## About  
+
+## About
+
 Returns a `datetime` value set to the current date and time on the system. The returned value contains timezone information representing the local timezone. This value is fixed and will not change with successive calls, unlike DateTimeZone.LocalNow, which may return different values over the course of execution of an expression.

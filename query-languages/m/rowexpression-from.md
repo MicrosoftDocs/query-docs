@@ -10,8 +10,8 @@ ms.date: 3/16/2022
 <pre>
 RowExpression.From(<b>function</b> as function) as record
 </pre>  
-  
-## About  
+
+## About
 
 Returns the abstract syntax tree (AST) for the body of `function`, normalized into a _row expression_:
 

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Function.ScalarVector"
 title: "Function.ScalarVector"
-ms.date: 09/13/2018
+ms.date: 10/7/2022
 ---
 # Function.ScalarVector
 
@@ -9,9 +9,9 @@ ms.date: 09/13/2018
 
 <pre>
 Function.ScalarVector(<b>scalarFunctionType</b> as type, <b>vectorFunction</b> as function) as function
-</pre> 
-  
-## About  
+</pre>
+
+## About
 
 Returns a scalar function of type `scalarFunctionType` that invokes `vectorFunction` with a single row of arguments and returns its single output. Additionally, when the scalar function is repeatedly applied for each row of a table of inputs, such as in Table.AddColumn, instead `vectorFunction` will be applied once for all inputs.
 

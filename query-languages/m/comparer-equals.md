@@ -1,16 +1,16 @@
 ---
 description: "Learn more about: Comparer.Equals"
 title: "Comparer.Equals"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # Comparer.Equals
 
 ## Syntax
 
 <pre>
-Comparer.Equals(comparer as function, x as any, y as any) as logical  
+Comparer.Equals(comparer as function, x as any, y as any) as logical
 </pre>
-  
+
 ## About
 
 Returns a `logical` value based on the equality check over the two given values, `x` and `y`, using the provided `comparer`.
@@ -19,9 +19,9 @@ Returns a `logical` value based on the equality check over the two given values,
 
 The following built-in comparers are available in the formula language:
 
-* `Comparer.Ordinal`: Used to perform an exact ordinal comparison
-* `Comparer.OrdinalIgnoreCase`: Used to perform an exact ordinal case-insensitive comparison
-* `Comparer.FromCulture`: Used to perform a culture-aware comparison
+* [Comparer.Ordinal](comparer-ordinal.md): Used to perform an exact ordinal comparison
+* [Comparer.OrdinalIgnoreCase](comparer-ordinalignorecase.md): Used to perform an exact ordinal case-insensitive comparison
+* [Comparer.FromCulture](comparer-fromculture.md): Used to perform a culture-aware comparison
 
 ## Example 1
 

@@ -10,8 +10,8 @@ ms.date: 4/13/2022
 <pre>
 Number.Round(<b>number</b> as nullable number, optional <b>digits</b> as nullable number, optional <b>roundingMode</b> as nullable number) as nullable number
 </pre>
-  
-## About  
+
+## About
 
 Returns the result of rounding `number` to the nearest number. If `number` is null, **Number.Round** returns null.
 

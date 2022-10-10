@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.SignedInteger16"
 title: "BinaryFormat.SignedInteger16"
-ms.date: 7/29/2019
+ms.date: 10/7/2022
 ---
 # BinaryFormat.SignedInteger16
 
@@ -9,8 +9,8 @@ ms.date: 7/29/2019
 
 <pre>
 BinaryFormat.SignedInteger16(<b>binary</b> as binary) as any
-</pre> 
-  
-## About  
+</pre>
+
+## About
+
 A binary format that reads a 16-bit signed integer.
- 

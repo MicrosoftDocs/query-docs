@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.Intersect"
 title: "List.Intersect"
-ms.date: 3/8/2022
+ms.date: 10/7/2022
 ---
 # List.Intersect
 
@@ -10,7 +10,7 @@ ms.date: 3/8/2022
 <pre>
 List.Intersect(<b>lists</b> as list, optional <b>equationCriteria</b> as any) as list
 </pre>
-  
+
 ## About
 
 Returns the intersection of the list values found in the input list `lists`. An optional parameter, `equationCriteria`, can be specified.

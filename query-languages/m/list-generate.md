@@ -1,10 +1,10 @@
 ---
 description: "Learn more about: List.Generate"
 title: "List.Generate"
-ms.date: 7/19/2022
+ms.date: 10/7/2022
 ---
 # List.Generate
-  
+
 ## Syntax
 
 <pre>

@@ -10,8 +10,8 @@ ms.date: 3/11/2022
 <pre>
 Date.IsInNextYear(<b>dateTime</b> as any) as nullable logical
 </pre>
-  
-## About  
+
+## About
 
 Indicates whether the given datetime value `dateTime` occurs during the next year, as determined by the current date and time on the system. Note that this function will return false when passed a value that occurs within the current year.
 

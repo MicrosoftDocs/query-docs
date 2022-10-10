@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.Accumulate"
 title: "List.Accumulate"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # List.Accumulate
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 List.Accumulate(<b>list</b> as list, <b>seed</b> as any, <b>accumulator</b> as function) as any
 </pre>
-  
+
 ## About
 
 Accumulates a summary value from the items in the list `list`, using `accumulator`. An optional seed parameter, `seed`, may be set.

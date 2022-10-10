@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Combiner.CombineTextByDelimiter"
 title: "Combiner.CombineTextByDelimiter"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # Combiner.CombineTextByDelimiter
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 Combiner.CombineTextByDelimiter(<b>delimiter</b> as text, optional <b>quoteStyle</b> as nullable number) as function
 </pre>
-  
+
 ## About
 
 Returns a function that combines a list of text into a single text using the specified delimiter.

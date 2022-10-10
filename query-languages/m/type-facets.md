@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Type.Facets"
 title: "Type.Facets"
-ms.date: 8/2/2019
+ms.date: 10/7/2022
 ---
 # Type.Facets
 
@@ -10,7 +10,7 @@ ms.date: 8/2/2019
 <pre>
 Type.Facets(<b>type</b> as type) as record
 </pre>
-  
-## About  
-Returns a record containing the facets of `type`  
-  
+
+## About
+
+Returns a record containing the facets of `type`.

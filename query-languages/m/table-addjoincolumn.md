@@ -1,17 +1,17 @@
 ---
 description: "Learn more about: Table.AddJoinColumn"
 title: "Table.AddJoinColumn"
-ms.date: 3/10/2022
+ms.date: 10/7/2022
 ---
 # Table.AddJoinColumn
 
 ## Syntax
 
 <pre>
-Table.AddJoinColumn(table1 as table, key1 as any, table2 as function, key2 as any, newColumnName as text) as table  
+Table.AddJoinColumn(table1 as table, key1 as any, table2 as function, key2 as any, newColumnName as text) as table
 </pre>
-  
-## About  
+
+## About
 
 Joins the rows of `table1` with the rows of `table2` based on the equality of the values of the key columns selected by `key1` (for `table1`) and `key2` (for `table2`). The results are entered into the column named `newColumnName`. This function behaves similarly to [Table.Join](/powerquery-m/table-join) with a JoinKind of LeftOuter except that the join results are presented in a nested rather than flattened fashion.
 

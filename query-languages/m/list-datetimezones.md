@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.DateTimeZones"
 title: "List.DateTimeZones"
-ms.date: 3/8/2022
+ms.date: 10/7/2022
 ---
 # List.DateTimeZones
 
@@ -10,7 +10,7 @@ ms.date: 3/8/2022
 <pre>
 List.DateTimeZones(<b>start</b> as datetimezone, <b>count</b> as number, <b>step</b> as duration) as list 
 </pre>
-  
+
 ## About
 
 Returns a list of `datetimezone` values of size `count`, starting at `start`. The given increment, `step`, is a `duration` value that is added to every value.

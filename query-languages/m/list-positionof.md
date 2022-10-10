@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.PositionOf"
 title: "List.PositionOf"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # List.PositionOf
 
@@ -13,7 +13,9 @@ List.PositionOf(<b>list</b> as list, <b>value</b> as any, optional <b>occurrence
   
 ## About
 
-Returns the offset at which the value `value` appears in the list `list`. Returns -1 if the value doesn't appear. An optional occurrence parameter `occurrence` can be specified. <ul> <li><code>occurrence</code>: The maximum number of occurrences to report.</li> </ul>
+Returns the offset at which the value `value` appears in the list `list`. Returns -1 if the value doesn't appear. An optional occurrence parameter `occurrence` can be specified.
+
+* `occurrence`: The maximum number of occurrences to report.
 
 ## Example 1
 
