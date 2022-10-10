@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Expression.Identifier"
 title: "Expression.Identifier"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # Expression.Identifier
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 Expression.Identifier(<b>name</b> as text) as text
 </pre>
-  
+
 ## About
 
 Returns the M source code representation of an identifier `name`.

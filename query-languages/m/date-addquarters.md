@@ -1,16 +1,16 @@
 ---
 description: "Learn more about: Date.AddQuarters"
 title: "Date.AddQuarters"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # Date.AddQuarters
 
 ## Syntax
 
 <pre>
-Date.AddQuarters(<b>dateTime</b> as any, <b>numberOfQuarters</b> as number) as any  
+Date.AddQuarters(<b>dateTime</b> as any, <b>numberOfQuarters</b> as number) as any
 </pre>
-  
+
 ## About
 
 Returns the `date`, `datetime`, or `datetimezone` result from adding `numberOfQuarters` quarters to the `datetime` value `dateTime`.

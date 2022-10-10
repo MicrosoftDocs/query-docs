@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Duration.ToRecord"
 title: "Duration.ToRecord"
-ms.date: 3/8/2022
+ms.date: 10/7/2022
 ---
 # Duration.ToRecord
 
@@ -10,7 +10,7 @@ ms.date: 3/8/2022
 <pre>
 Duration.ToRecord(<b>duration</b> as duration) as record
 </pre>
-  
+
 ## About
 
 Returns a record containing the parts the duration value, `duration`.

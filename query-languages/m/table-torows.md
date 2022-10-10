@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.ToRows"
 title: "Table.ToRows"
-ms.date: 3/10/2022
+ms.date: 10/7/2022
 ---
 # Table.ToRows
 
@@ -13,7 +13,7 @@ Table.ToRows(<b>table</b> as table) as list
   
 ## About
 
-Creates a list of nested lists from the table, <code>table</code>. Each list item is an inner list that contains the row values.  
+Creates a list of nested lists from the table, `table`. Each list item is an inner list that contains the row values.  
 
 ## Example 1
 

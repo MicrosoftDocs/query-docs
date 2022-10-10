@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.Record"
 title: "BinaryFormat.Record"
-ms.date: 5/19/2022
+ms.date: 10/7/2022
 ---
 # BinaryFormat.Record
 
@@ -10,7 +10,7 @@ ms.date: 5/19/2022
 <pre>
 BinaryFormat.Record(<b>record</b> as record) as function
 </pre>
-  
+
 ## About
 
 Returns a binary format that reads a record. The `record` parameter specifies the format of the record. Each field in the record can have a different binary format. If a field contains a value that is not a binary format value, then no data is read for that field, and the field value is echoed to the result.

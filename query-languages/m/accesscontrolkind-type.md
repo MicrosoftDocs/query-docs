@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: AccessControlKind.Type"
 title: "AccessControlKind.Type"
-ms.date: 5/16/2022
+ms.date: 10/7/2022
 ---
 # AccessControlKind.Type
 
@@ -11,8 +11,8 @@ Specifies the kind of access control.
 
 ## Allowed values
 
-|Name|Value|Description|  
-|------------|--|---------------|  
+|Name|Value|Description|
+|------------|--|---------------|
 |**AccessControlKind.Deny**|0|Access is denied.|
 |**AccessControlKind.Allow**|1|Access is allowed.|
 

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Sql.Database"
 title: "Sql.Database"
-ms.date: 11/23/2020
+ms.date: 10/7/2022
 ---
 # Sql.Database
 
@@ -27,5 +27,4 @@ Returns a table of SQL tables, views, and stored functions from the SQL Server d
 * `ContextInfo`: A binary value that is used to set the CONTEXT_INFO before running each command.
 * `OmitSRID`: A logical (true/false) that, if true, omits the SRID when producing Well-Known Text from geometry and geography types.
 
-The record parameter is specified as [option1 = value1, option2 = value2...] or [Query = "select ..."] for example. 
-
+The record parameter is specified as [option1 = value1, option2 = value2...] or [Query = "select ..."] for example.

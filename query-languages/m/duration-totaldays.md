@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Duration.TotalDays"
 title: "Duration.TotalDays"
-ms.date: 7/18/2022
+ms.date: 10/7/2022
 ---
 # Duration.TotalDays
 
@@ -10,7 +10,7 @@ ms.date: 7/18/2022
 <pre>
 Duration.TotalDays(<b>duration</b> as nullable duration) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the total days spanned by `duration`.

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Duration.Days"
 title: "Duration.Days"
-ms.date: 7/18/2022
+ms.date: 10/7/2022
 ---
 # Duration.Days
 
@@ -10,7 +10,7 @@ ms.date: 7/18/2022
 <pre>
 Duration.Days(<b>duration</b> as nullable duration) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the days portion of `duration`.

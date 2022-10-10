@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Comparer.FromCulture"
 title: "Comparer.FromCulture"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # Comparer.FromCulture
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 Comparer.FromCulture(<b>culture</b> as text, optional <b>ignoreCase</b> as nullable logical) as function
 </pre>
-  
+
 ## About
 
 Returns a comparer function given the `culture` and a logical value `ignoreCase` for case sensitivity for the comparison. The default value for `ignoreCase` is false. The value for culture are well known text representations of locales used in the .NET framework.

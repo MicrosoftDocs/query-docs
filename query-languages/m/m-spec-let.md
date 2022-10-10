@@ -2,7 +2,7 @@
 title: M Language Let 
 description: Describes using the let expression in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 8/2/2022
+ms.date: 10/7/2022
 ---
 
 
@@ -26,7 +26,7 @@ The following example shows intermediate results being calculated and stored in 
 
 ```powerquery-m
 let     x = 1 + 1,
-        y = 2 + 2,     
+        y = 2 + 2,
         z = y + 1 
 in
         x + y + z

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Cube.Properties"
 title: "Cube.Properties"
-ms.date: 4/17/2018
+ms.date: 10/7/2022
 ---
 # Cube.Properties
 
@@ -10,6 +10,7 @@ ms.date: 4/17/2018
 <pre>
 Cube.Properties(<b>cube</b> as table) as table
 </pre>
-  
-## About  
+
+## About
+
 Returns a table containing the set of available properties for dimensions that are expanded in the cube.

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DateTimeZone.UtcNow"
 title: "DateTimeZone.UtcNow"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # DateTimeZone.UtcNow
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 DateTimeZone.UtcNow() as datetimezone
 </pre>
-  
+
 ## About
 
 Returns the current date and time in UTC (the GMT timezone).

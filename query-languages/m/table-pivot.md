@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.Pivot"
 title: "Table.Pivot"
-ms.date: 3/10/2021
+ms.date: 10/7/2022
 ---
 # Table.Pivot
 
@@ -10,7 +10,7 @@ ms.date: 3/10/2021
 <pre>
 Table.Pivot(<b>table</b> as table, <b>pivotValues</b> as list, <b>attributeColumn</b> as text, <b>valueColumn</b> as text, optional <b>aggregationFunction</b> as nullable function) as table
 </pre>
-  
+
 ## About
 
 Given a pair of columns representing attribute-value pairs, rotates the data in the attribute column into a column headings.

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number.BitwiseNot"
 title: "Number.BitwiseNot"
-ms.date: 7/31/2019
+ms.date: 10/7/2022
 ---
 # Number.BitwiseNot
 
@@ -10,7 +10,7 @@ ms.date: 7/31/2019
 <pre>
 Number.BitwiseNot(<b>number</b> as any) as any
 </pre>
-  
-## About  
+
+## About
 
 Returns the result of performing a bitwise "Not" operation on `number`.

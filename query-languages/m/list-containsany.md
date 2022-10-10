@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.ContainsAny"
 title: "List.ContainsAny"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # List.ContainsAny
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 List.ContainsAny(<b>list</b> as list, <b>values</b> as list, optional <b>equationCriteria</b> as any) as logical
 </pre>
-  
+
 ## About
 
 Indicates whether the list `list` includes any of the values in another list, `values`. Returns true if value is found in the list, false otherwise. An optional equation criteria value, `equationCriteria`, can be specified to control equality testing.

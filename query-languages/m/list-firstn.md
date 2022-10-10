@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.FirstN"
 title: "List.FirstN"
-ms.date: 3/8/2022
+ms.date: 10/7/2022
 ---
 # List.FirstN
 
@@ -10,7 +10,7 @@ ms.date: 3/8/2022
 <pre>
 List.FirstN(<b>list</b> as list, <b>countOrCondition</b> as any) as any
 </pre>
-  
+
 ## About
 
 * If a number is specified, up to that many items are returned.

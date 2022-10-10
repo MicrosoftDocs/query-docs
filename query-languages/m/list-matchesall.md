@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.MatchesAll"
 title: "List.MatchesAll"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # List.MatchesAll
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 List.MatchesAll(<b>list</b> as list, <b>condition</b> as function) as logical
 </pre>
-  
+
 ## About
 
 Returns `true` if the condition function, `condition`, is satisfied by all values in the list `list`, otherwise returns `false`.

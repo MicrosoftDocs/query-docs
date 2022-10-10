@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.Buffer"
 title: "List.Buffer"
-ms.date: 3/8/2022
+ms.date: 10/7/2022
 ---
 # List.Buffer
 
@@ -10,7 +10,7 @@ ms.date: 3/8/2022
 <pre>
 List.Buffer(<b>list</b> as list) as list
 </pre>
-  
+
 ## About
 
 Buffers the list `list` in memory. The result of this call is a stable list.

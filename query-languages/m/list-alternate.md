@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.Alternate"
 title: "List.Alternate"
-ms.date: 3/16/2022
+ms.date: 10/7/2022
 ---
 # List.Alternate
 
@@ -10,7 +10,7 @@ ms.date: 3/16/2022
 <pre>
 List.Alternate(<b>list</b> as list, <b>count</b> as number, optional <b>repeatInterval</b> as nullable number, optional <b>offset</b> as nullable number) as list
 </pre>
-  
+
 ## About
 
 Returns a list comprised of all the odd numbered offset elements in a list. Alternates between taking and skipping values from the list `list` depending on the parameters.

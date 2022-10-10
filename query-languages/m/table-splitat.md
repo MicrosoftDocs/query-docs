@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.SplitAt"
 title: "Table.SplitAt"
-ms.date: 3/14/2022
+ms.date: 10/7/2022
 ---
 # Table.SplitAt
 
@@ -20,7 +20,7 @@ Return the first two rows of the table and the remaining rows of the table.
 **Usage**
 
 ```powerquery-m
-Table.SplitAt(#table({"a", "b", "c"}, {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}), 2)</code>
+Table.SplitAt(#table({"a", "b", "c"}, {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}), 2)
 ```
 
 **Output**

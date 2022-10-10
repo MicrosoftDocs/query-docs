@@ -1,16 +1,16 @@
 ---
 description: "Learn more about: Json.FromValue"
 title: "Json.FromValue"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # Json.FromValue
 
 ## Syntax
 
 <pre>
-Json.FromValue(<b>value</b> as any, optional <b>encoding</b> as nullable number) as binary  
+Json.FromValue(<b>value</b> as any, optional <b>encoding</b> as nullable number) as binary
 </pre>
-  
+
 ## About
 
 Produces a JSON representation of a given value `value` with a text encoding specified by `encoding`. If `encoding` is omitted, UTF8 is used. Values are represented as follows:

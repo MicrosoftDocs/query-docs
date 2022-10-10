@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.LastN"
 title: "List.LastN"
-ms.date: 3/8/2022
+ms.date: 10/7/2022
 ---
 # List.LastN
 
@@ -10,7 +10,7 @@ ms.date: 3/8/2022
 <pre>
 List.LastN(<b>list</b> as list, optional <b>countOrCondition</b> as any) as any
 </pre>
-  
+
 ## About
 
 Returns the last item of the list `list`. If the list is empty, an exception is thrown. This function takes an optional parameter, `countOrCondition`, to support gathering multiple items or filtering items. `countOrCondition` can be specified in three ways:

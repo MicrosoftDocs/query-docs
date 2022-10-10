@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number.BitwiseOr"
 title: "Number.BitwiseOr"
-ms.date: 7/31/2019
+ms.date: 10/7/2022
 ---
 # Number.BitwiseOr
 
@@ -10,6 +10,7 @@ ms.date: 7/31/2019
 <pre>
 Number.BitwiseOr(<b>number1</b> as nullable number, <b>number2</b> as nullable number) as nullable number
 </pre>
-  
-## About  
+
+## About
+
 Returns the result of performing a bitwise "Or" between `number1` and `number2`.

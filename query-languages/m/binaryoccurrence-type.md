@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: BinaryOccurrence.Type"
 title: "BinaryOccurrence.Type"
-ms.date: 5/16/2022
+ms.date: 10/7/2022
 ---
 # BinaryOccurrence.Type
 
@@ -11,7 +11,7 @@ Specifies how many times the item is expected to appear in the group.
 
 ## Allowed values
 
-|Name|Value|Description|  
+|Name|Value|Description|
 |------------|--|-------------|
 |**BinaryOccurrence.Optional**|0|The item is expected to appear zero or one time in the input.|
 |**BinaryOccurrence.Required**|1|The item is expected to appear once in the input.|

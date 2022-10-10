@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.Last"
 title: "List.Last"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # List.Last
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 List.Last(<b>list</b> as list, optional <b>defaultValue</b> as any) as any 
 </pre>
-  
+
 ## About
 
 Returns the last item in the list `list`, or the optional default value, `defaultValue`, if the list is empty. If the list is empty and a default value is not specified, the function returns `null`.

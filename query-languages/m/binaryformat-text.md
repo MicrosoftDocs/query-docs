@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.Text"
 title: "BinaryFormat.Text"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # BinaryFormat.Text
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 BinaryFormat.Text(<b>length</b> as any, optional <b>encoding</b> as nullable number) as function 
 </pre>
-  
+
 ## About
 
 Returns a binary format that reads a text value. The `length` specifies the number of bytes to decode, or the binary format of the length that precedes the text. The optional `encoding` value specifies the encoding of the text. If the `encoding` is not specified, then the encoding is determined from the Unicode byte order marks. If no byte order marks are present, then `TextEncoding.Utf8` is used.

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Cube.MeasureProperty"
 title: "Cube.MeasureProperty"
-ms.date: 8/17/2018
+ms.date: 10/7/2022
 ---
 # Cube.MeasureProperty
 
@@ -10,6 +10,7 @@ ms.date: 8/17/2018
 <pre>
 Cube.MeasureProperty(<b>measure</b> as any, <b>propertyName</b> as text) as any
 </pre>
-  
-## About  
+
+## About
+
 Returns the property `propertyName` of measure `measure`.

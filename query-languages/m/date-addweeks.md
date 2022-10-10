@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.AddWeeks"
 title: "Date.AddWeeks"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # Date.AddWeeks
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 Date.AddWeeks(<b>dateTime</b> as any, <b>numberOfWeeks</b> as number) as any
 </pre>
-  
+
 ## About
 
 Returns the `date`, `datetime`, or `datetimezone` result from adding `numberOfWeeks` weeks to the `datetime` value `dateTime`.

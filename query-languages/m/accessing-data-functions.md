@@ -1,24 +1,24 @@
 ---
 description: "Learn more about: Accessing data functions"
 title: "Accessing data functions"
-ms.date: 5/16/2022
+ms.date: 10/7/2022
 ---
 # Accessing data functions
 
-These functions access data and return table values. Most of these functions return a table value called a **navigation table**. Navigation tables are primarily used by the Power Query user interface to provide a navigation experience over the potentially large hierarchical data sets returned.  
-  
-|Name|Description|  
-|------------|---------------|  
+These functions access data and return table values. Most of these functions return a table value called a **navigation table**. Navigation tables are primarily used by the Power Query user interface to provide a navigation experience over the potentially large hierarchical data sets returned.
+
+|Name|Description|
+|------------|---------------|
 |[AccessControlEntry.ConditionToIdentities](accesscontrolentry-conditiontoidentities.md)|Returns a list of identities that the condition will accept.|
-|[Access.Database](access-database.md)|Returns a structural representation of an Microsoft Access database. |  
-|[ActiveDirectory.Domains](activedirectory-domains.md)|Returns a list of Active Directory domains in the same forest as the specified domain or of the current machine's domain if none is specified.|  
-|[AdobeAnalytics.Cubes](adobeanalytics-cubes.md)   | Returns the report suites in Adobe Analytics.|
+|[Access.Database](access-database.md)|Returns a structural representation of an Microsoft Access database. |
+|[ActiveDirectory.Domains](activedirectory-domains.md)|Returns a list of Active Directory domains in the same forest as the specified domain or of the current machine's domain if none is specified.|
+|[AdobeAnalytics.Cubes](adobeanalytics-cubes.md) | Returns the report suites in Adobe Analytics.|
 |[AdoDotNet.DataSource](adodotnet-datasource.md)|Returns the schema collection for an ADO.NET data source.|
 |[AdoDotNet.Query](adodotnet-query.md)|Returns the schema collection for an ADO.NET data source.|
-|[AnalysisServices.Database](analysisservices-database.md)|Returns a table of multidimensional cubes or tabular models from the Analysis Services database.|  
+|[AnalysisServices.Database](analysisservices-database.md)|Returns a table of multidimensional cubes or tabular models from the Analysis Services database.|
 |[AnalysisServices.Databases](analysisservices-databases.md)|Returns the Analysis Services databases on a particular host.|
-|[AzureStorage.BlobContents](azurestorage-blobcontents.md) | Returns the content of the specified blob from an Azure storage vault. |  
-|[AzureStorage.Blobs](azurestorage-blobs.md)|Returns a navigational table containing all containers found in the Azure Storage account. Each row has the container name and a link to the container blobs.|  
+|[AzureStorage.BlobContents](azurestorage-blobcontents.md) | Returns the content of the specified blob from an Azure storage vault. |
+|[AzureStorage.Blobs](azurestorage-blobs.md)|Returns a navigational table containing all containers found in the Azure Storage account. Each row has the container name and a link to the container blobs.|
 |[AzureStorage.DataLake](azurestorage-datalake.md)|Returns a navigational table containing the documents found in the specified container and its subfolders from Azure Data Lake Storage.|
 |[AzureStorage.DataLakeContents](azurestorage-datalakecontents.md)|Returns the content of the specified file from an Azure Data Lake Storage filesystem.|
 |[AzureStorage.Tables](azurestorage-tables.md)|Returns a navigational table containing a row for each table found at the account URL from an Azure storage vault. Each row contains a link to the azure table.|
@@ -37,57 +37,57 @@ These functions access data and return table values. Most of these functions ret
 |[Cube.Measures](cube-measures.md)|Returns a table containing the set of available measures within the cube.|
 |[Cube.Parameters](cube-parameters.md)|Returns a table containing the set of parameters that can be applied to cube.|
 |[Cube.Properties](cube-properties.md)|Returns a table containing the set of available properties for dimensions that are expanded in the cube.|
-|[Cube.PropertyKey](cube-propertykey.md) | Returns the key of property `property`.  |
+|[Cube.PropertyKey](cube-propertykey.md) | Returns the key of property `property`.|
 |[Cube.ReplaceDimensions](cube-replacedimensions.md)|Replaces the set of dimensions returned by [Cube.Dimensions](/powerquery-m/cube-dimensions).|
 |[Cube.Transform](cube-transform.md)|Applies the list cube functions, transforms, on the cube.|
-|[DB2.Database](db2-database.md)|Returns a table of SQL tables and views available in a Db2 database.|  
+|[DB2.Database](db2-database.md)|Returns a table of SQL tables and views available in a Db2 database.|
 |[Essbase.Cubes](essbase-cubes.md)|Returns the cubes in an Essbase instance grouped by Essbase server.|
 |[Excel.CurrentWorkbook](excel-currentworkbook.md)|Returns the tables in the current Excel Workbook.|
-|[Excel.Workbook](excel-workbook.md)|Returns a table representing sheets in the given excel workbook.|  
+|[Excel.Workbook](excel-workbook.md)|Returns a table representing sheets in the given excel workbook.|
 |[Exchange.Contents](exchange-contents.md)|Returns a table of contents from a Microsoft Exchange account.|
-|[File.Contents](file-contents.md)|Returns the binary contents of the file located at a path.|  
-|[Folder.Contents](folder-contents.md)|Returns a table containing the properties and contents of the files and folders found in the specified folder.|  
-|[Folder.Files](folder-files.md)|Returns a table containing a row for each file found at a folder path, and subfolders. Each row contains properties of the folder or file and a link to its content.|  
+|[File.Contents](file-contents.md)|Returns the binary contents of the file located at a path.|
+|[Folder.Contents](folder-contents.md)|Returns a table containing the properties and contents of the files and folders found in the specified folder.|
+|[Folder.Files](folder-files.md)|Returns a table containing a row for each file found at a folder path, and subfolders. Each row contains properties of the folder or file and a link to its content.|
 |[GoogleAnalytics.Accounts](googleanalytics-accounts.md)|Returns the Google Analytics accounts for the current credential.|
-|[Hdfs.Contents](hdfs-contents.md)|Returns a table containing a row for each folder and file found at the folder url, {0}, from a Hadoop file system. Each row contains properties of the folder or file and a link to its content.|  
-|[Hdfs.Files](hdfs-files.md)|Returns a table containing a row for each file found at the folder url, {0}, and subfolders from a Hadoop file system. Each row contains properties of the file and a link to its content.|  
-|[HdInsight.Containers](hdinsight-containers.md)|Returns a navigational table containing all containers found in the HDInsight account. Each row has the container name and table containing its files.|  
-|[HdInsight.Contents](hdinsight-contents.md)|Returns a navigational table containing all containers found in the HDInsight account. Each row has the container name and table containing its files.|  
-|[HdInsight.Files](hdinsight-files.md)|Returns a table containing a row for each folder and file found at the container URL, and subfolders from an HDInsight account. Each row contains properties of the file/folder and a link to its content.|  
-|[Html.Table](html-table.md)|Returns a table containing the results of running the specified CSS selectors against the provided html.|  
+|[Hdfs.Contents](hdfs-contents.md)|Returns a table containing a row for each folder and file found at the folder url, {0}, from a Hadoop file system. Each row contains properties of the folder or file and a link to its content.|
+|[Hdfs.Files](hdfs-files.md)|Returns a table containing a row for each file found at the folder url, {0}, and subfolders from a Hadoop file system. Each row contains properties of the file and a link to its content.|
+|[HdInsight.Containers](hdinsight-containers.md)|Returns a navigational table containing all containers found in the HDInsight account. Each row has the container name and table containing its files.|
+|[HdInsight.Contents](hdinsight-contents.md)|Returns a navigational table containing all containers found in the HDInsight account. Each row has the container name and table containing its files.|
+|[HdInsight.Files](hdinsight-files.md)|Returns a table containing a row for each folder and file found at the container URL, and subfolders from an HDInsight account. Each row contains properties of the file/folder and a link to its content.|
+|[Html.Table](html-table.md)|Returns a table containing the results of running the specified CSS selectors against the provided html.|
 |[Identity.From](identity-from.md)|Creates an identity.|
 |[Identity.IsMemberOf](identity-ismemberof.md)|Determines whether an identity is a member of an identity collection.|
 |[IdentityProvider.Default](identityprovider-default.md)|The default identity provider for the current host.|
-|[Informix.Database](informix-database.md)|Returns a table of SQL tables and views available in an Informix database on server `server` in the database instance named `database`.|  
-|[Json.Document](json-document.md)|Returns the contents of a JSON document. The contents may be directly passed to the function as text, or it may be the binary value returned by a function like File.Contents.|  
+|[Informix.Database](informix-database.md)|Returns a table of SQL tables and views available in an Informix database on server `server` in the database instance named `database`.|
+|[Json.Document](json-document.md)|Returns the contents of a JSON document. The contents may be directly passed to the function as text, or it may be the binary value returned by a function like File.Contents.|
 |[Json.FromValue](json-fromvalue.md)|Produces a JSON representation of a given value value with a text encoding specified by encoding.|
 |[MySQL.Database](mysql-database.md)|Returns a table with data relating to the tables in the specified MySQL Database.|
 |[OData.Feed](odata-feed.md)|Returns a table of OData feeds offered by an OData serviceUri.|
-|[Odbc.DataSource](odbc-datasource.md)|Returns a table of SQL tables and views from the ODBC data source specified by the connection string `connectionString`. |  
-|[Odbc.InferOptions](odbc-inferoptions.md)|Returns the result of trying to infer SQL capabilities for an ODBC driver. |  
-|[Odbc.Query](odbc-query.md)|Connects to a generic provider with the given connection string and returns the result of evaluating the query.|  
+|[Odbc.DataSource](odbc-datasource.md)|Returns a table of SQL tables and views from the ODBC data source specified by the connection string `connectionString`. |
+|[Odbc.InferOptions](odbc-inferoptions.md)|Returns the result of trying to infer SQL capabilities for an ODBC driver. |
+|[Odbc.Query](odbc-query.md)|Connects to a generic provider with the given connection string and returns the result of evaluating the query.|
 |[OleDb.DataSource](oledb-datasource.md)|Returns a table of SQL tables and views from the OLE DB data source specified by the connection string.|
 |[OleDb.Query](oledb-query.md)|Returns the result of running a native query on an OLE DB data source.|
 |[Oracle.Database](oracle-database.md)|Returns a table with data relating to the tables in the specified Oracle Database.|
 |[Pdf.Tables](pdf-tables.md)|Returns any tables found in pdf.|
 |[PostgreSQL.Database](postgresql-database.md)|Returns a table with data relating to the tables in the specified PostgreSQL Database.|
-|[RData.FromBinary](rdata-frombinary.md)|Returns a record of data frames from the RData file.|  
-|[Salesforce.Data](salesforce-data.md)|Connects to the Salesforce Objects API and returns the set of available objects (i.e. Accounts).|  
-|[Salesforce.Reports](salesforce-reports.md)|Connects to the Salesforce Reports API and returns the set of available reports.|  
+|[RData.FromBinary](rdata-frombinary.md)|Returns a record of data frames from the RData file.|
+|[Salesforce.Data](salesforce-data.md)|Connects to the Salesforce Objects API and returns the set of available objects (i.e. Accounts).|
+|[Salesforce.Reports](salesforce-reports.md)|Connects to the Salesforce Reports API and returns the set of available reports.|
 |[SapBusinessWarehouse.Cubes](sapbusinesswarehouse-cubes.md)|Returns the InfoCubes and queries in an SAP Business Warehouse system grouped by InfoArea.|
 |[SapHana.Database](saphana-database.md)|Returns the packages in an SAP HANA database.|
-|[SharePoint.Contents](sharepoint-contents.md)|Returns a table containing a row for each folder and document found at the SharePoint site url. Each row contains properties of the folder or file and a link to its content.|  
+|[SharePoint.Contents](sharepoint-contents.md)|Returns a table containing a row for each folder and document found at the SharePoint site url. Each row contains properties of the folder or file and a link to its content.|
 |[SharePoint.Files](sharepoint-files.md)|Returns a table containing a row for each document found at the SharePoint site url, and subfolders. Each row contains properties of the folder or file and a link to its content.|
-|[SharePoint.Tables](sharepoint-tables.md)|Returns a table containing the result of a SharePoint List as an OData feed.|  
-|[Soda.Feed](soda-feed.md)|Returns the resulting table of a CSV file that can be accessed using the SODA 2.0 API. The URL must point to a valid SODA-compliant source that ends in a .csv extension.|  
+|[SharePoint.Tables](sharepoint-tables.md)|Returns a table containing the result of a SharePoint List as an OData feed.|
+|[Soda.Feed](soda-feed.md)|Returns the resulting table of a CSV file that can be accessed using the SODA 2.0 API. The URL must point to a valid SODA-compliant source that ends in a .csv extension.|
 |[Sql.Database](sql-database.md)|Returns a table containing SQL tables located on a SQL Server instance database.|
-|[Sql.Databases](sql-databases.md)|Returns a table with references to databases located on a SQL Server instance. Returns a navigation table.|  
-|[Sybase.Database](sybase-database.md)|Returns a table with data relating to the tables in the specified Sybase Database.|  
-|[Teradata.Database](teradata-database.md)|Returns a table with data relating to the tables in the specified Teradata Database.|  
-|[WebAction.Request](webaction-request.md)|Creates an action that, when executed, will return the results of performing a method request against url using HTTP as a binary value.|  
-|[Web.BrowserContents](web-browsercontents.md)|Returns the HTML for the specified url, as viewed by a web browser.|  
+|[Sql.Databases](sql-databases.md)|Returns a table with references to databases located on a SQL Server instance. Returns a navigation table.|
+|[Sybase.Database](sybase-database.md)|Returns a table with data relating to the tables in the specified Sybase Database.|
+|[Teradata.Database](teradata-database.md)|Returns a table with data relating to the tables in the specified Teradata Database.|
+|[WebAction.Request](webaction-request.md)|Creates an action that, when executed, will return the results of performing a method request against url using HTTP as a binary value.|
+|[Web.BrowserContents](web-browsercontents.md)|Returns the HTML for the specified url, as viewed by a web browser.|
 |[Web.Contents](web-contents.md)|Returns the contents downloaded from a web url as a binary value.|
 |[Web.Headers](web-headers.md)|Returns the HTTP headers downloaded from the url as a record value.|
-|[Web.Page](web-page.md)|Returns the contents of an HTML webpage as a table.|  
-|[Xml.Document](xml-document.md)|Returns the contents of an XML document as a hierarchical table (list of records).|  
-|[Xml.Tables](xml-tables.md)|Returns the contents of an XML document as a nested collection of flattened tables.|  
+|[Web.Page](web-page.md)|Returns the contents of an HTML webpage as a table.|
+|[Xml.Document](xml-document.md)|Returns the contents of an XML document as a hierarchical table (list of records).|
+|[Xml.Tables](xml-tables.md)|Returns the contents of an XML document as a nested collection of flattened tables.|
