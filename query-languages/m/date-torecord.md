@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.ToRecord"
 title: "Date.ToRecord"
-ms.date: 3/8/2022
+ms.date: 10/7/2022
 ---
 # Date.ToRecord
 
@@ -10,7 +10,7 @@ ms.date: 3/8/2022
 <pre>
 Date.ToRecord(<b>date</b> as date) as record
 </pre>
-  
+
 ## About
 
 Returns a record containing the parts of the given date value, `date`.

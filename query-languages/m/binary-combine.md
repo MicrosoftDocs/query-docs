@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Binary.Combine"
 title: "Binary.Combine"
-ms.date: 12/12/2018
+ms.date: 10/7/2022
 ---
 # Binary.Combine
 
@@ -14,4 +14,3 @@ Binary.Combine(<b>binaries</b> as list) as binary
 ## About
 
 Combines a list of binaries into a single binary.
-  

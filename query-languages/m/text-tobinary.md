@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Text.ToBinary"
 title: "Text.ToBinary"
-ms.date: 8/2/2019
+ms.date: 10/7/2022
 ---
 # Text.ToBinary
 
@@ -10,6 +10,7 @@ ms.date: 8/2/2019
 <pre>
 Text.ToBinary(<b>text</b> as nullable text, optional <b>encoding</b> as nullable number, optional <b>includeByteOrderMark</b> as nullable logical) as nullable binary
 </pre>
-  
-## About  
+
+## About
+
 Encodes the given text value, `text`, into a binary value using the specified `encoding`.

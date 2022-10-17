@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.Contains"
 title: "List.Contains"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # List.Contains
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 List.Contains(<b>list</b> as list, <b>value</b> as any, optional <b>equationCriteria</b> as any) as logical 
 </pre>
-  
+
 ## About
 
 Indicates whether the list `list` contains the value `value`. Returns true if value is found in the list, false otherwise. An optional equation criteria value, `equationCriteria`, can be specified to control equality testing.

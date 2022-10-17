@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Type.ReplaceFacets"
 title: "Type.ReplaceFacets"
-ms.date: 8/2/2019
+ms.date: 10/7/2022
 ---
 # Type.ReplaceFacets
 
@@ -10,7 +10,7 @@ ms.date: 8/2/2019
 <pre>
 Type.ReplaceFacets(<b>type</b> as type, <b>facets</b> as record) as type
 </pre>
-  
-## About  
+
+## About
+
 Replaces the facets of `type` with the facets contained in the record `facets`.
-  

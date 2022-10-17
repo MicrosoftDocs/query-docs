@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number.Combinations"
 title: "Number.Combinations"
-ms.date: 3/11/2022
+ms.date: 10/10/2022
 ---
 # Number.Combinations
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 Number.Combinations(<b>setSize</b> as nullable number, <b>combinationSize</b> as nullable number) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the number of unique combinations from a list of items, `setSize` with specified combination size, `combinationSize`.

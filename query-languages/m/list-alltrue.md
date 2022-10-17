@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.AllTrue"
 title: "List.AllTrue"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # List.AllTrue
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 List.AllTrue(<b>list</b> as list) as logical
 </pre>
-  
+
 ## About
 
 Returns true if all expressions in the list `list` are true.

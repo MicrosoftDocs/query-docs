@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.Numbers"
 title: "List.Numbers"
-ms.date: 3/8/2022
+ms.date: 10/7/2022
 ---
 # List.Numbers
 
@@ -10,7 +10,7 @@ ms.date: 3/8/2022
 <pre>
 List.Numbers(<b>start</b> as number, <b>count</b> as number, optional <b>increment</b> as nullable number) as list
 </pre>
-  
+
 ## About
 
 Returns a list of numbers given an initial value, count, and optional increment value. The default increment value is 1.

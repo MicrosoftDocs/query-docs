@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.Partition"
 title: "Table.Partition"
-ms.date: 3/14/2022
+ms.date: 10/7/2022
 ---
 # Table.Partition
 
@@ -22,7 +22,7 @@ Partitions the `table` into a list of `groups` number of tables, based on the va
   
 ## Example 1
 
-Partition the table <code>({[a = 2, b = 4], [a = 6, b = 8], [a = 2, b = 4], [a = 1, b = 4]})</code> into 2 tables on column [a], using the value of the columns as the hash function.
+Partition the table `({[a = 2, b = 4], [a = 6, b = 8], [a = 2, b = 4], [a = 1, b = 4]})` into 2 tables on column [a], using the value of the columns as the hash function.
 
 **Usage**
 

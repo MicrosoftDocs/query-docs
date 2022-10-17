@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.AddYears"
 title: "Date.AddYears"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # Date.AddYears
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 Date.AddYears(<b>dateTime</b> as any, <b>numberOfYears</b> as number) as any
 </pre>
-  
+
 ## About
 
 Returns the `date`, `datetime`, or `datetimezone` result of adding `numberOfYears` to a `datetime` value `dateTime`.

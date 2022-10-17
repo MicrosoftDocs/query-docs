@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Cube.AttributeMemberProperty"
 title: "Cube.AttributeMemberProperty"
-ms.date: 4/16/2018
+ms.date: 10/7/2022
 ---
 # Cube.AttributeMemberProperty
 
@@ -12,5 +12,5 @@ Cube.AttributeMemberProperty(<b>attribute</b> as any, <b>propertyName</b> as tex
 </pre>
 
 ## About
-Returns the property `propertyName` of dimension attribute `attribute`.
 
+Returns the property `propertyName` of dimension attribute `attribute`.

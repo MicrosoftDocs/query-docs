@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number.Acos"
 title: "Number.Acos"
-ms.date: 7/31/2019
+ms.date: 10/7/2022
 ---
 # Number.Acos
 
@@ -9,7 +9,8 @@ ms.date: 7/31/2019
 
 <pre>
 Number.Acos(<b>number</b> as nullable number) as nullable number
-</pre> 
-  
-## About  
+</pre>
+
+## About
+
 Returns the arccosine of `number`.

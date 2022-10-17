@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Binary.View"
 title: "Binary.View"
-ms.date: 7/19/2022
+ms.date: 10/7/2022
 ---
 # Binary.View
 
@@ -21,9 +21,9 @@ Handler functions must return a value that is semantically equivalent to the res
 
 If a handler function raises an error, the default behavior of the operation is applied to the view.
 
-`Binary.View` can be used to implement folding to a data source–the translation of M queries into source-specific operations (for example, to download a section of a file).
+**Binary.View** can be used to implement folding to a data source–the translation of M queries into source-specific operations (for example, to download a section of a file).
 
-Refer to the published Power Query custom connector documentation for a more complete description of `Binary.View`.
+Refer to the published Power Query custom connector documentation for a more complete description of **Binary.View**.
 
 ## Example 1
 

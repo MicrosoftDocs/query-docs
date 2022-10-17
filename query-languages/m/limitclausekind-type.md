@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: LimitClauseKind.Type"
 title: "LimitClauseKind.Type"
-ms.date: 5/16/2022
+ms.date: 10/7/2022
 ---
 # LimitClauseKind.Type
 
@@ -11,8 +11,8 @@ Describes the type of limit clause supported by the SQL dialect used by this dat
 
 ## Allowed values
 
-|Name|Value|Description|  
-|------------|--|---------------|  
+|Name|Value|Description|
+|------------|--|---------------|
 |**LimitClauseKind.None**|0|This SQL dialect does not support a limit clause.|
 |**LimitClauseKind.Top**|1|This SQL dialect supports a TOP specifier to limit the number of rows returned.|
 |**LimitClauseKind.LimitOffset**|2|This SQL dialect supports LIMIT and OFFSET specifiers to limit the number of rows returned.|

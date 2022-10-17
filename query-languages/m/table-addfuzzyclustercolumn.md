@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.AddFuzzyClusterColumn"
 title: "Table.AddFuzzyClusterColumn"
-ms.date: 3/14/2022
+ms.date: 10/7/2022
 ---
 # Table.AddFuzzyClusterColumn
 
@@ -10,8 +10,8 @@ ms.date: 3/14/2022
 <pre>
 Table.AddFuzzyClusterColumn(<b>table</b> as table, <b>columnName</b> as text, <b>newColumnName</b> as text, optional <b>options</b> as nullable record) as table
 </pre>
-  
-## About  
+
+## About
 
 Adds a new column `newColumnName` to `table` with representative values of `columnName`. The representatives are obtained by fuzzily matching values in `columnName`, for each row.
 

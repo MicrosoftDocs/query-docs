@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Text.FromBinary"
 title: "Text.FromBinary"
-ms.date: 8/2/2019
+ms.date: 10/7/2022
 ---
 # Text.FromBinary
 
@@ -10,6 +10,7 @@ ms.date: 8/2/2019
 <pre>
 Text.FromBinary(<b>binary</b> as nullable binary, optional <b>encoding</b> as nullable number) as nullable text
 </pre>
-  
-## About  
+
+## About
+
 Decodes data, `binary`, from a binary value in to a text value, using `encoding` type.

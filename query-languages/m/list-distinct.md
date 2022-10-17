@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.Distinct"
 title: "List.Distinct"
-ms.date: 3/8/2022
+ms.date: 10/7/2022
 ---
 # List.Distinct
 
@@ -10,7 +10,7 @@ ms.date: 3/8/2022
 <pre>
 List.Distinct(<b>list</b> as list, optional <b>equationCriteria</b> as any) as list
 </pre>
-  
+
 ## About
 
 Returns a list that contains all the values in list `list` with duplicates removed. If the list is empty, the result is an empty list.

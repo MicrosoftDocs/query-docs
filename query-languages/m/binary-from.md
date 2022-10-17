@@ -1,11 +1,11 @@
 ---
 description: "Learn more about: Binary.From"
 title: "Binary.From"
-ms.date: 4/13/2022
+ms.date: 10/7/2022
 ---
 # Binary.From
 
-## Syntax  
+## Syntax
 
 <pre>
 Binary.From(<b>value</b> as any, optional <b>encoding</b> as nullable number) as nullable binary

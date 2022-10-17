@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Text.TrimEnd"
 title: "Text.TrimEnd"
-ms.date: 4/22/2020
+ms.date: 4/22/2022
 ---
 # Text.TrimEnd
 

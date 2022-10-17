@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.List"
 title: "BinaryFormat.List"
-ms.date: 3/16/2022
+ms.date: 10/7/2022
 ---
 # BinaryFormat.List
 
@@ -10,7 +10,7 @@ ms.date: 3/16/2022
 <pre>
 BinaryFormat.List(<b>binaryFormat</b> as function, optional <b>countOrCondition</b> as any) as function
 </pre>
-  
+
 ## About
 
 Returns a binary format that reads a sequence of items and returns a `list`. The `binaryFormat` parameter specifies the binary format of each item. There are three ways to determine the number of items read:

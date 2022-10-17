@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: ItemExpression.From"
 title: "ItemExpression.From"
-ms.date: 3/16/2022
+ms.date: 10/7/2022
 ---
 # ItemExpression.From
 
@@ -16,7 +16,7 @@ ItemExpression.From(<b>function</b> as function) as record
 Returns the abstract syntax tree (AST) for the body of `function`, normalized into an *item expression*:
 
 - The function must be a 1-argument lambda.
-- All references to the function parameter are replaced with `ItemExpression.Item`.
+- All references to the function parameter are replaced with [ItemExpression.Item](itemexpression-item.md).
 - The AST will be simplified to contain only nodes of the kinds:
   - `Constant`
   - `Invocation`

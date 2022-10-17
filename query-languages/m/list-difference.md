@@ -1,14 +1,14 @@
 ---
 description: "Learn more about: List.Difference"
 title: "List.Difference"
-ms.date: 4/13/2022
+ms.date: 10/7/2022
 ---
 # List.Difference
 
 <pre>
 List.Difference(<b>list1</b> as list, <b>list2</b> as list, optional <b>equationCriteria</b> as any) as list
 </pre>
-  
+
 ## About
 
 Returns the items in list `list1` that do not appear in list `list2`. Duplicate values are supported. An optional equation criteria value, `equationCriteria`, can be specified to control equality testing.

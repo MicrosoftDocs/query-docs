@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Comparer.Ordinal"
 title: "Comparer.Ordinal"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # Comparer.Ordinal
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 Comparer.Ordinal(<b>x</b> as any, <b>y</b> as any) as number
 </pre>
-  
+
 ## About
 
 Returns a comparer function which uses Ordinal rules to compare the provided values `x` and `y`.

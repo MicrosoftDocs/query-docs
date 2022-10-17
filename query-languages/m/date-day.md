@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.Day"
 title: "Date.Day"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # Date.Day
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 Date.Day(<b>dateTime</b> as any) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the day component of a `date`, `datetime`, or `datetimezone` value.

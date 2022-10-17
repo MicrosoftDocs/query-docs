@@ -1,16 +1,16 @@
 ---
 description: "Learn more about: List.Covariance"
 title: "List.Covariance"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # List.Covariance
 
 ## Syntax
 
 <pre>
-List.Covariance(<b>numberList1</b> as list, <b>numberList2</b> as list) as nullable number 
+List.Covariance(<b>numberList1</b> as list, <b>numberList2</b> as list) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the covariance between two lists, `numberList1` and `numberList2`. `numberList1` and `numberList2` must contain the same number of `number` values.

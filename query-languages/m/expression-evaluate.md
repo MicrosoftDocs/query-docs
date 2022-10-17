@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Expression.Evaluate"
 title: "Expression.Evaluate"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # Expression.Evaluate
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 Expression.Evaluate(<b>document</b> as text, optional <b>environment</b> as nullable record) as any
 </pre>
-  
+
 ## About
 
 Returns the result of evaluating an M expression `document`, with the available identifiers that can be referenced defined by `environment`.

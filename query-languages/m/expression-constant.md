@@ -1,17 +1,16 @@
 ---
 description: "Learn more about: Expression.Constant"
 title: "Expression.Constant"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # Expression.Constant
-
 
 ## Syntax
 
 <pre>
-Expression.Constant(<b>value</b> as any) as text  
+Expression.Constant(<b>value</b> as any) as text
 </pre>
-  
+
 ## About
 
 Returns the M source code representation of a constant value.

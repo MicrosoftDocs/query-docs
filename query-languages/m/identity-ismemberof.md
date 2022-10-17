@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Identity.IsMemberOf"
 title: "Identity.IsMemberOf"
-ms.date: 3/28/2019
+ms.date: 10/7/2022
 ---
 # Identity.IsMemberOf
 
@@ -11,6 +11,6 @@ ms.date: 3/28/2019
 Identity.IsMemberOf(<b>identity</b> as record, <b>collection</b> as record) as logical
 </pre>
 
-## About  
+## About
 
 Determines whether an identity is a member of an identity collection.

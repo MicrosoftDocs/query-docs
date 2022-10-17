@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number.Exp"
 title: "Number.Exp"
-ms.date: 3/11/2022
+ms.date: 10/10/2022
 ---
 # Number.Exp
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 Number.Exp(<b>number</b> as nullable number) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the result of raising e to the power of `number` (exponential function).

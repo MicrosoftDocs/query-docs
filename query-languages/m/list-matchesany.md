@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List.MatchesAny"
 title: "List.MatchesAny"
-ms.date: 3/11/2022
+ms.date: 10/7/2022
 ---
 # List.MatchesAny
 
@@ -10,7 +10,7 @@ ms.date: 3/11/2022
 <pre>
 List.MatchesAny(<b>list</b> as list, <b>condition</b> as function) as logical
 </pre>
-  
+
 ## About
 
 Returns `true` if the condition function, `condition`, is satisfied by any of values in the list `list`, otherwise returns `false`.

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Uri.Combine"
 title: "Uri.Combine"
-ms.date: 8/2/2019
+ms.date: 10/7/2022
 ---
 # Uri.Combine
 
@@ -10,6 +10,7 @@ ms.date: 8/2/2019
 <pre>
 Uri.Combine(<b>baseUri</b> as text, <b>relativeUri</b> as text) as text
 </pre>
-  
-## About  
+
+## About
+
 Returns an absolute URI that is the combination of the input `baseUri` and `relativeUri`.
