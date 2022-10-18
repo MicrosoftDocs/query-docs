@@ -38,9 +38,7 @@ A single row from \<relation>.
 ## Remarks
 
 - \<orderBy> columns must have a corresponding outer column to help define the “current row” on which to operate. 
-    - If there is no corresponding outer column:
-        - If all \<orderBy> columns with no corresponding outer column are from the same table, one row is returned for every possible combination of existing values of these columns.
-        - Otherwise, an error is returned.
+    - If there is no corresponding outer column, if all \<orderBy> columns with no corresponding outer column are from the same table, one row is returned for every possible combination of existing values of these columns. Otherwise, an error is returned.
     - If there is more than one corresponding outer column, an error is returned.
 
 - \<partitionBy> columns must have a corresponding outer column to help define the “current row” on which to operate. If there isn't exactly one corresponding outer column, an error is returned.
