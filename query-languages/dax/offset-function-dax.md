@@ -27,9 +27,9 @@ OFFSET ( <delta>[, <relation>][, <orderBy>][, <partitionBy>] )
 |Term|Definition|  
 |--------|--------------|  
 |delta|The number of rows before (negative value) or after (positive value) the current row from which to obtain the data.  It can be any DAX expression that returns a scalar value. |
-|relation|(Optional) A table expression from which the output row will be returned. <br>If specified, all columns in \<orderBy> and \<partitionBy> must come from it. <br>If omitted: <br>- \<orderBy> must be explicitly specified.<br>- All \<orderBy> and \<partitionBy> columns must be fully qualified and come from a single table. <br>- Defaults to ALLSELECTED() of all columns in \<orderBy> and \<partitionBy>.|
+|relation|(Optional) A table expression from which the output row is returned. <br>If specified, all columns in \<orderBy> and \<partitionBy> must come from it. <br>If omitted: <br>- \<orderBy> must be explicitly specified.<br>- All \<orderBy> and \<partitionBy> columns must be fully qualified and come from a single table. <br>- Defaults to ALLSELECTED() of all columns in \<orderBy> and \<partitionBy>.|
 |orderBy|(Optional) An ORDERBY() clause containing the columns that define how each partition is sorted. <br>If omitted: <br>- \<relation> must be explicitly specified. <br>- Defaults to ordering by every column in \<relation>.
-|partitionBy|(Optional) A PARTITIONBY() clause containing the columns that define how \<relation> is partitioned. <br> If omitted, \<relation> will be treated as a single partition. |
+|partitionBy|(Optional) A PARTITIONBY() clause containing the columns that define how \<relation> is partitioned. <br> If omitted, \<relation> is treated as a single partition. |
   
 ## Return value
 
@@ -39,13 +39,13 @@ A single row from \<relation>.
 
 - \<orderBy> columns must have a corresponding outer column to help define the “current row” on which to operate. 
     - If there is no corresponding outer column:
-        - If all \<orderBy> columns with no corresponding outer column are from the same table, one row will be returned for every possible combination of existing values of these columns.
-        - Otherwise, an error will be returned.
-    - If there is more than one corresponding outer column, an error will be returned.
+        - If all \<orderBy> columns with no corresponding outer column are from the same table, one row is returned for every possible combination of existing values of these columns.
+        - Otherwise, an error is returned.
+    - If there is more than one corresponding outer column, an error is returned.
 
-- \<partitionBy> columns must have a corresponding outer column to help define the “current row” on which to operate. If there isn't exactly one corresponding outer column, an error will be returned.
+- \<partitionBy> columns must have a corresponding outer column to help define the “current row” on which to operate. If there isn't exactly one corresponding outer column, an error is returned.
 
-- If the data in an \<orderBy> or \<partitionBy> column is a strict subset of its corresponding outer column, an error will be returned.
+- If the data in an \<orderBy> or \<partitionBy> column is a strict subset of its corresponding outer column, an error is returned.
 
 - OFFSET can be non-deterministic if there are columns in \<relation> that are neither \<orderBy> nor \<partitionBy> columns. For example, given the following table:
 
@@ -91,7 +91,7 @@ ADDCOLUMNS (
 )
 ```
 
-Returns a table that summarizes the total sales for each product category and calendar year, as well as the total sales for that category in the previous year. 
+Returns a table that summarizes the total sales for each product category and calendar year, as well as the total sales for that category in the previous year.
 
 ## Example 2
 
@@ -113,5 +113,7 @@ Uses OFFSET() in a measure to return a table that summarizes the total sales for
 
 ## See also
 
-[]()  
-[]()  
+[INDEX](index-function-dax.md)  
+[ORDERBY](orderby-function-dax.md)  
+[PARTITIONBY](partitionby-function-dax.md)  
+[WINDOW](window-function-dax.md)
