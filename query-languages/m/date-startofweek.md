@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.StartOfWeek"
 title: "Date.StartOfWeek"
-ms.date: 3/11/2022
+ms.date: 10/18/2022
 ---
 # Date.StartOfWeek
 
@@ -13,18 +13,38 @@ Date.StartOfWeek(<b>dateTime</b> as any, optional <b>firstDayOfWeek</b> as nulla
   
 ## About
 
-Returns the first value of the week given a `date`, `datetime`, or `datetimezone` value.
+Returns the start of the week given a `date`, `datetime`, or `datetimezone` value.
 
 ## Example 1
 
-Find the start of the week for October 10th, 2011, 8:10:32AM (`#datetime(2011, 10, 10, 8, 10, 32)`).
+Find the start of the week for Tuesday, October 11th, 2011.
 
 **Usage**
 
 ```powerquery-m
-Date.StartOfWeek(#datetime(2011, 10, 10, 8, 10, 32))
+Date.StartOfWeek(#datetime(2011, 10, 11, 8, 10, 32))
 ```
 
 **Output**
 
-`#datetime(2011, 10, 9, 0, 0, 0)`
+```powerquery-m
+// Sunday, October 9th, 2011
+#datetime(2011, 10, 9, 0, 0, 0)
+```
+
+## Example 2
+
+Find the start of the week for Tuesday, October 11th, 2011, using Monday as the start of the week.
+
+**Usage**
+
+```powerquery-m
+Date.StartOfWeek(#datetime(2011, 10, 11, 8, 10, 32), Day.Monday)
+```
+
+**Output**
+
+```powerquery-m
+// Monday, October 10th, 2011
+#datetime(2011, 10, 10, 0, 0, 0)
+```
