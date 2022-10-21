@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table functions"
 title: "Table functions"
-ms.date: 6/24/2022
+ms.date: 10/21/2022
 ---
 # Table functions
 
@@ -26,8 +26,8 @@ These functions create and manipulate table values.
 |[Table.FuzzyNestedJoin](table-fuzzynestedjoin.md)|Performs a fuzzy join between tables on supplied columns and produces the join result in a new column.|
 |[Table.Split](table-split.md)|Splits the specified table into a list of tables using the specified page size.|
 |[Table.View](table-view.md)|Creates or extends a table with user-defined handlers for query and action operations.|
-|[Table.ViewFunction](table-viewfunction.md) | Creates a function that can be intercepted by a handler defined on a view (via [Table.View](table-view.md)).|
-|[Table.ViewError](table-viewerror.md) | Creates a modified error record which won't trigger a fallback when thrown by a handler defined on a view (via **Table.View**)|
+|[Table.ViewError](table-viewerror.md) | Creates a modified error record which won't trigger a fallback when thrown by a handler defined on a view (via [Table.View](table-view.md)).|
+|[Table.ViewFunction](table-viewfunction.md) | Creates a function that can be intercepted by a handler defined on a view (via **Table.View**).|
 
 ## Conversions
 

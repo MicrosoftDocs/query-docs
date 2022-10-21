@@ -1444,6 +1444,10 @@ items:
         href: value-versionidentity.md
       - name: Value.Versions
         href: value-versions.md
+      - name: Value.ViewError
+        href: value-viewerror.md
+      - name: Value.ViewFunction
+        href: value-viewfunction.md
       - name: Variable.Value
         href: variable-value.md
   - name: Enumerations
