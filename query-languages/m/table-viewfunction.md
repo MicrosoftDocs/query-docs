@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.ViewFunction"
 title: "Table.ViewFunction"
-ms.date: 4/13/2022
+ms.date: 10/18/2022
 ---
 # Table.ViewFunction
 
@@ -15,7 +15,7 @@ Table.ViewFunction(<b>function</b> as function) as function
 
 Creates a view function based on `function` that can be handled in a view created by [Table.View](/powerquery-m/table-view).
 
-The `OnInvoke` handler of **Table.View** can be used to defined a handler for the view function.
+The `OnInvoke` handler of **Table.View** can be used to define a handler for the view function.
 
 As with the handlers for built-in operations, if no `OnInvoke` handler is specified, or if it does not handle the view function, or if an error is raised by the handler, `function` is applied on top of the view.
 
