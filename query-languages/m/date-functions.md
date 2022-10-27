@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date functions"
 title: "Date functions"
-ms.date: 5/16/2022
+ms.date: 10/18/2022
 ---
 # Date functions
 
@@ -59,7 +59,7 @@ These functions create and manipulate the date component of date, datetime, and 
 |[Date.StartOfDay](date-startofday.md)|Returns a DateTime value for the start of the day.|
 |[Date.StartOfMonth](date-startofmonth.md)|Returns a DateTime value representing the start of the month.|
 |[Date.StartOfQuarter](date-startofquarter.md)|Returns a DateTime value representing the start of the quarter.|
-|[Date.StartOfWeek](date-startofweek.md)|Returns a DateTime value representing the start of the week.|
+|[Date.StartOfWeek](date-startofweek.md)|Returns the start of the week.|
 |[Date.StartOfYear](date-startofyear.md)|Returns a DateTime value representing the start of the year.|
 |[Date.ToRecord](date-torecord.md)|Returns a record containing parts of a Date value.|
 |[Date.ToText](date-totext.md)|Returns a text value from a Date value.|
