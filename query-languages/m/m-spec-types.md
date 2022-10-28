@@ -340,7 +340,7 @@ When a value is ascribed a type, only a limited conformance check occurs:
   * For records: The type must be closed, must define the same number of fields as the value and must not contain any optional fields. (However, field names and field types are not checked.)
   * For tables: The type must define the same number of columns as the value. (However, column names and column types are not checked.)
   * For functions: The type must define the same number of required parameters, as well as the same number of optional parameters, as the value. (However, parameter names, parameter types and the function return type are not checked.)
-  * For lists: As a list type always defines exactly one item type, any list type is structurally compatible with all list values.
+  * For lists: Unlike records, tables and functions, which can vary in their structure, a list's structure is always defined by a single item type, so a given list type is always structurally compatible with all other list types. (However, the item type is not checked during ascription.)
 
 Library functions may choose to compute and ascribe complex types to results based on the ascribed types of the input values.
 
