@@ -337,7 +337,7 @@ A value may be ascribed a type using the library function `Value.ReplaceType`. T
 When a value is ascribed a type, only a limited conformance check occurs:
 * The type being ascribed must be non-abstract, not nullable and compatible with the value's intrinsic (native) _primitive-type_.
 * When a custom type is being ascribed, it must match in structure with the value.
-  * For records: The type must define the same number of fields as the value. (However, field names and field types are not checked.)
+  * For records: The type must be closed, must define the same number of fields as the value and must not contain any optional fields. (However, field names and field types are not checked.)
   * For tables: The type must define the same number of columns as the value. (However, column names and column types are not checked.)
   * For functions: The type must define the same number of required parameters, as well as the same number of optional parameters, as the value. (However, parameter names, parameter types and the function return type are not checked.)
   * For lists: As a list type always defines exactly one item type, any list type is structurally compatible with all list values.
