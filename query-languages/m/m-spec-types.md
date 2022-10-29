@@ -341,7 +341,7 @@ When a value is ascribed a type, only a limited conformance check occurs:
   * For tables: Column types are not checked.
   * For functions: Parameter types and the function return type are not checked.
   * For lists: The item type is not checked.
-* When a custom type that defines structure is ascribed, its must match the structure of the value.
+* When a custom type that defines structure is ascribed, it must match the structure of the value.
   * For records: The type must be closed, must define the same number of fields as the value, and must not contain any optional fields. (However, field names are not checked.)
   * For tables: The type must define the same number of columns as the value. (However, column names are not checked.)
   * For functions: The type must define the same number of required and optional parameters as the value. (However, parameter names are not checked.)
