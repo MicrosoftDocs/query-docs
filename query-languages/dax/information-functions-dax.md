@@ -3,7 +3,7 @@ description: "Learn more about: Information functions"
 title: "Information functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax 
-ms.date: 08/23/2022
+ms.date: 10/31/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -18,6 +18,7 @@ DAX information functions look at the cell or row that is provided as an argumen
 
 |Function  |Description  |
 |---------|---------|
+|[COLUMNSTATISTICS](columnstatistics-function-dax.md)     | Returns a table of statistics regarding every column in every table in the model.         |
 |[CONTAINS](contains-function-dax.md)     | Returns true if values for all referred columns exist, or are contained, in those columns; otherwise, the function returns false.         |
 |[CONTAINSROW](containsrow-function-dax.md)     | Returns TRUE if a row of values exists or contained in a table, otherwise returns FALSE.          |
 |[CONTAINSSTRING](containsstring-function-dax.md)    |  Returns TRUE or FALSE indicating whether one string contains another string.         |
