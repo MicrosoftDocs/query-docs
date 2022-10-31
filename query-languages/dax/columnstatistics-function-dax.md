@@ -32,13 +32,13 @@ A table of statistics. Each row of this table represents a different column in t
 - **Table Name**: The current column’s table.
 - **Column Name**: The current column’s name.
 - **Min**: The minimum value found within the current column.
-- **Max**: The maximum value found within the current column. 
+- **Max**: The maximum value found within the current column.
 - **Cardinality**: The number of distinct values found within the current column.
-- **Max Length**: The length of the longest string found within the current column (only applicable for string columns). 
+- **Max Length**: The length of the longest string found within the current column (only applicable for string columns).
 
 ## Remarks
 
-- Columns in an error state and columns from query-scope calculated tables do not appear in the result table:
+- Columns in an error state and columns from query-scope calculated tables do not appear in the result table.
 
 - If a filter from the filter context is applied to COLUMNSTATISTICS(), an error is returned.
 
