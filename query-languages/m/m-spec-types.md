@@ -337,20 +337,10 @@ A value may be ascribed a type using the library function `Value.ReplaceType`. T
 When a value is ascribed a type, only a limited conformance check occurs:
 * The type being ascribed must be non-abstract, not nullable and compatible with the value's intrinsic (native) _primitive-type_.
 * When a custom type that defines structure is ascribed, it must match the structure of the value.
-  * For records: The type must be closed, must define the same number of fields as the value and must not contain any optional fields. (However, field types are not checked.)
-  * For tables: The type must define the same number of columns as the value. (However, column types are not checked.)
-  * For functions: The type must define the same number of required parameters, as well as the same number of optional parameters, as the value. (However, parameter types and the function return type are not checked.)
+  * For records: The type must be closed, must define the same number of fields as the value and must not contain any optional fields. (The type's field names and field types will replace those currently associated with the record. However, field types will not be checked.)
+  * For tables: The type must define the same number of columns as the value. (The type's column names and column types will replace those currently associated with the table. However, column types will not be checked.)
+  * For functions: The type must define the same number of required parameters, as well as the same number of optional parameters, as the value. (The type's parameter and return assertions, as well as its parameter names, will replace those associated with the function value's current type. However, the new assertions will have no effect on the actual behavior of the function.)
   * For lists: The value must be a list. (However, the item type is not checked.)
-  
-For records, tables and functions: During ascription, the structure of the type being ascribed is applied positionally, with the child names it defines applied as renames to the value. For example, below the new type's first column definition is applied to the first column of the original value, resulting it its name changing from `A` to `Col1`. Similarly, the new type's second column definition is applied to the value's second column, renaming it to `Col2`.
-```powerquery-m
-let
-    Data = #table({"A", "B"}, {}),
-    NewType = type table [Col1 = text, Col2 = text],
-    Result = Value.ReplaceType(Data, NewType)
-in
-    Result // returns a table with the following column names: Col1, Col2
-```
 
 Library functions may choose to compute and ascribe complex types to results based on the ascribed types of the input values.
 
