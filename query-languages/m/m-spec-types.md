@@ -335,7 +335,7 @@ A value's _ascribed type_ is the type to which a value is _declared_ to conform.
 A value may be ascribed a type using the library function `Value.ReplaceType`. This function either returns a new value with the type ascribed or raises an error if the new type is incompatible with the value.
 
 When a value is ascribed a type, only a limited conformance check occurs:
-* The type being ascribed must be non-abstract, not nullable and compatible with the value's intrinsic (native) _primitive-type_.
+* The type being ascribed must be non-abstract, non-nullable, and compatible with the value's intrinsic (native) _primitive-type_.
 * When a custom type that defines structure is ascribed, it must match the structure of the value.
   * For records: The type must be closed, must define the same number of fields as the value and must not contain any optional fields. (The type's field names and field types will replace those currently associated with the record. However, field types will not be checked.)
   * For tables: The type must define the same number of columns as the value. (The type's column names and column types will replace those currently associated with the table. However, column types will not be checked.)
