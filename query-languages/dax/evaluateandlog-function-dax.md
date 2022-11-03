@@ -35,7 +35,7 @@ First argument.
 
 ## Remarks
 
-- You can wrap this function around almost any expression in a DAX query and the whole query will still be valid.
+- This function can be used with almost any expression in a DAX query and the whole query will still be valid.
 
 - Value is logged together with its arguments for every set of arguments.
 
@@ -45,7 +45,7 @@ First argument.
 
 - In some cases, this function is not executed due to optimizations.
 
-- If the log is greater than one million symbols, it is truncated (preserving correct json structure).
+- If the log is greater than one million characters, it's truncated to preserving correct json structure.
   
 ## Example 1
 
@@ -65,29 +65,37 @@ Returns the following log:
 
 ```json
 {
-	"expression": "SELECTCOLUMNS(FILTER(FactInternetSales, [ProductKey] = 528), \n\t\t[SalesTerritoryKey], \n\t\t[ProductKey], \n\t\t[SalesAmount],\n\t\t[OrderDate]\n\t\t)",
-	"inputs": [],
-	"outputs": ["'FactInternetSales'[SalesTerritoryKey]", "'FactInternetSales'[ProductKey]", "'FactInternetSales'[SalesAmount]", "'FactInternetSales'[OrderDate]"],
-	"data": [
-		{
-			"input": [],
-			"rowCount": 3095,
-			"output": [
-				[4, 528, 4.99, "2013-02-04T00:00:00"],
-				[4, 528, 4.99, "2013-02-04T00:00:00"],
-				[4, 528, 4.99, "2013-02-04T00:00:00"],
-				[4, 528, 4.99, "2013-02-03T00:00:00"],
-				[4, 528, 4.99, "2013-02-03T00:00:00"],
-				[4, 528, 4.99, "2013-02-01T00:00:00"],
-				[4, 528, 4.99, "2013-01-31T00:00:00"],
-				[4, 528, 4.99, "2013-01-31T00:00:00"],
-				[4, 528, 4.99, "2013-01-29T00:00:00"],
-				[4, 528, 4.99, "2013-01-28T00:00:00"]
-			]
-		}
-	]
+    "expression": "SELECTCOLUMNS(FILTER(FactInternetSales, [ProductKey] = 528), \n\t\t[SalesTerritoryKey], \n\t\t[ProductKey], \n\t\t[SalesAmount],\n\t\t[OrderDate]\n\t\t)",
+    "inputs": [],
+    "outputs": ["'FactInternetSales'[SalesTerritoryKey]", "'FactInternetSales'[ProductKey]", "'FactInternetSales'[SalesAmount]", "'FactInternetSales'[OrderDate]"],
+    "data": [
+        {
+            "input": [],
+            "rowCount": 3095,
+            "output": [
+                [4, 528, 4.99, "2013-02-04T00:00:00"],
+                [4, 528, 4.99, "2013-02-04T00:00:00"],
+                [4, 528, 4.99, "2013-02-04T00:00:00"],
+                [4, 528, 4.99, "2013-02-03T00:00:00"],
+                [4, 528, 4.99, "2013-02-03T00:00:00"],
+                [4, 528, 4.99, "2013-02-01T00:00:00"],
+                [4, 528, 4.99, "2013-01-31T00:00:00"],
+                [4, 528, 4.99, "2013-01-31T00:00:00"],
+                [4, 528, 4.99, "2013-01-29T00:00:00"],
+                [4, 528, 4.99, "2013-01-28T00:00:00"]
+            ]
+        }
+    ]
 }
 ```
+
+The JSON log structure for this example includes:
+
+- “expression” as a text version of logged expression.
+- “inputs” as names of varying attributes. In this example, the expression has no varying attributes.
+- “outputs” as names of columns of logged expressions.
+- “data” contains expression values for every varying attribute as well as values of attributes.
+- “RowCount” is the number of rows for a table specified as Value.
 
 ## Example 2
 
@@ -109,48 +117,43 @@ Returns the following log:
 
 ```json
 {
-	"expression": "[FirstName] & \" \" & [LastName]",
-	"label": "myLog",
-	"inputs": ["'DimCustomer'[FirstName]", "'DimCustomer'[LastName]"],
-	"data": [
-		{
-			"input": ["Larry", "Gill"],
-			"output": "Larry Gill"
-		},
-		{
-			"input": ["Geoffrey", "Gonzalez"],
-			"output": "Geoffrey Gonzalez"
-		},
-		{
-			"input": ["Blake", "Collins"],
-			"output": "Blake Collins"
-		},
-		{
-			"input": ["Alexa", "Watson"],
-			"output": "Alexa Watson"
-		},
-		{
-			"input": ["Jacquelyn", "Dominguez"],
-			"output": "Jacquelyn Dominguez"
-		}
-	]
+    "expression": "[FirstName] & \" \" & [LastName]",
+    "label": "myLog",
+    "inputs": ["'DimCustomer'[FirstName]", "'DimCustomer'[LastName]"],
+    "data": [
+        {
+            "input": ["Larry", "Gill"],
+            "output": "Larry Gill"
+        },
+        {
+            "input": ["Geoffrey", "Gonzalez"],
+            "output": "Geoffrey Gonzalez"
+        },
+        {
+            "input": ["Blake", "Collins"],
+            "output": "Blake Collins"
+        },
+        {
+            "input": ["Alexa", "Watson"],
+            "output": "Alexa Watson"
+        },
+        {
+            "input": ["Jacquelyn", "Dominguez"],
+            "output": "Jacquelyn Dominguez"
+        }
+    ]
 }
 
 ```
 
 The JSON log structure for this example includes:
 
-“expression” as a text version of logged expression.
-
-“inputs” as names of varying attributes. In this example, the expression has no varying attributes.
-
-“outputs” as names of columns of logged expressions.
-
-“data” contains expression values for every varying attribute as well as values of attributes.
-
-“RowCount” is the number of rows for a table specified as Value.
-
-“Label” is the Label parameter specified in the expression.
+- “expression” as a text version of logged expression.
+- “Label” is the Label parameter specified in the expression.
+- “inputs” as names of varying attributes. In this example, the expression has no varying attributes.
+- “outputs” as names of columns of logged expressions.
+- “data” contains expression values for every varying attribute as well as values of attributes.
+- “RowCount” is the number of rows for a table specified as Value.
 
 ## See also
 
