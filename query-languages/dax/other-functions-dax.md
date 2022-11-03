@@ -20,6 +20,6 @@ These functions perform unique actions that cannot be defined by any of the cate
 |---------|---------|
 |[BLANK](blank-function-dax.md)       |  Returns a blank.       |
 |[ERROR](error-function.md)     | Raises an error with an error message.         |
-|[EvaluateAndLog](evaluateandlog-function-dax.md)     |    Returns the value of the first argument and logs it in a DAX evaluation log.      |
-|[ToCSV](tocsv-function-dax.md)     |   Returns a table as a string in CSV format.      |
-|[ToJSON](tojson-function-dax.md)     |   Returns a table as a string in CSV format.      |
+|[EVALUATEANDLOG](evaluateandlog-function-dax.md)     |    Returns the value of the first argument and logs it in a DAX evaluation log.      |
+|[TOCSV](tocsv-function-dax.md)     |   Returns a table as a string in CSV format.      |
+|[TOJSON](tojson-function-dax.md)     |   Returns a table as a string in CSV format.      |

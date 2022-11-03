@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: EvaluateAndLog"
-title: "EvaluateAndLog function (DAX) | Microsoft Docs"
+description: "Learn more about: EVALUATEANDLOG"
+title: "EVALUATEANDLOG function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax 
 ms.date: 10/26/2022
@@ -11,14 +11,14 @@ ms.author: owend
 recommendations: false
 
 ---
-# EvaluateAndLog
+# EVALUATEANDLOG
 
 Returns the value of the first argument and logs it in a DAX evaluation log. This function applies to Power BI Desktop only.
   
 ## Syntax  
   
 ```dax
-EvaluateAndLog(<Value>, [Label], [MaxRows])
+EVALUATEANDLOG(<Value>, [Label], [MaxRows])
 ```
   
 ### Parameters  
@@ -41,11 +41,11 @@ First argument.
 
 - If the argument is a table, then only the top MaxRows rows are shown.
 
-- The label parameter is included in the event return. The string can make finding specific logs more convenient in cases where multiple EvaluateAndLog expressions are used in a single query.
+- The label parameter is included in the event return. The string can make finding specific logs more convenient in cases where multiple EVALUATEANDLOG expressions are used in a single query.
 
 - In some cases, this function is not executed due to optimizations.
 
-- If the log is greater than one million characters, it's truncated to preserving correct json structure.
+- If the log is greater than one million characters, it's truncated to preserve correct json structure.
   
 ## Example 1
 
@@ -54,7 +54,7 @@ The following DAX query:
 ```dax
 evaluate
 SUMMARIZE(
-    EvaluateAndLog(FILTER(FactInternetSales, [ProductKey] = 528)),
+    EVALUATEANDLOG(FILTER(FactInternetSales, [ProductKey] = 528)),
     FactInternetSales[SalesTerritoryKey],
     "sum",
     sum(FactInternetSales[SalesAmount])
@@ -108,7 +108,7 @@ SELECTCOLUMNS(
     [FirstName],
     [LastName],
     "FullName",
-    EvaluateAndLog([FirstName] & " " & [LastName], "myLog")
+    EVALUATEANDLOG([FirstName] & " " & [LastName], "myLog")
 )
 
 ```
@@ -157,5 +157,5 @@ The JSON log structure for this example includes:
 
 ## See also
 
-[ToCSV](tocsv-function-dax.md)  
-[ToJSON](tojson-function-dax.md)  
+[TOCSV](tocsv-function-dax.md)  
+[TOJSON](tojson-function-dax.md)  

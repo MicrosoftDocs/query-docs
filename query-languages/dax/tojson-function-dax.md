@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: ToJSON"
-title: "ToJSON function (DAX) | Microsoft Docs"
+description: "Learn more about: TOJSON"
+title: "TOJSON function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax 
 ms.date: 10/26/2022
@@ -11,14 +11,14 @@ ms.author: owend
 recommendations: false
 
 ---
-# ToJSON
+# TOJSON
 
 Returns a table as a string using JSON format. This function applies to Power BI Desktop only.
   
 ## Syntax  
   
 ```dax
-ToJSON(<Table>, [MaxRows])
+TOJSON(<Table>, [MaxRows])
 ```
   
 ### Parameters  
@@ -38,7 +38,7 @@ The following DAX query:
 
 ```dax
 EVALUATE
-{ToJSON(DimSalesTerritory)}
+{TOJSON(DimSalesTerritory)}
 ```
 
 Returns:
@@ -64,5 +64,5 @@ Returns:
 
 ## See also
 
-[ToCSV](tocsv-function-dax.md)  
-[EvaluateAndLog](evaluateandlog-function-dax.md)  
+[TOCSV](tocsv-function-dax.md)  
+[EVALUATEANDLOG](evaluateandlog-function-dax.md)  

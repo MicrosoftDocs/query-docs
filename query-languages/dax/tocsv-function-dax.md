@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: ToCSV"
-title: "ToCSV function (DAX) | Microsoft Docs"
+description: "Learn more about: TOCSV"
+title: "TOCSV function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax 
 ms.date: 10/26/2022
@@ -11,14 +11,14 @@ ms.author: owend
 recommendations: false
 
 ---
-# ToCSV
+# TOCSV
 
 Returns a table as a string in CSV format. This function applies to Power BI Desktop only.
   
 ## Syntax  
   
 ```dax
-ToCSV(<Table>, [MaxRows], [Delimiter], [IncludeHeaders])
+TOCSV(<Table>, [MaxRows], [Delimiter], [IncludeHeaders])
 ```
   
 ### Parameters  
@@ -40,7 +40,7 @@ The following DAX query:
 
 ```dax
 EVALUATE
-{ToCSV(DimSalesTerritory)}
+{TOCSV(DimSalesTerritory)}
 
 ```
 
@@ -62,5 +62,5 @@ Returns:
 
 ## See also
 
-[ToJSON](tojson-function-dax.md)  
-[EvaluateAndLog](evaluateandlog-function-dax.md)  
+[TOJSON](tojson-function-dax.md)  
+[EVALUATEANDLOG](evaluateandlog-function-dax.md)  
