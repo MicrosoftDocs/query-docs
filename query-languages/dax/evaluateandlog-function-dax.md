@@ -13,7 +13,7 @@ recommendations: false
 ---
 # EVALUATEANDLOG
 
-Returns the value of the first argument and logs it in a DAX evaluation log. This function applies to Power BI Desktop only.
+Returns the value of the first argument and logs it in Trace event, DAX Evaluation Log. This function applies to Power BI Desktop only.
   
 ## Syntax  
   
@@ -25,27 +25,26 @@ EVALUATEANDLOG(<Value>, [Label], [MaxRows])
   
 |Term|Definition|  
 |--------|--------------|  
-|Value|Any scalar value or table expression to be logged.|  
-|Label|(Optional) A constant string.|  
-|MaxRows|(Optional) The maximum number of rows output to the DAX evaluation log when the first argument is a table expression. If the value is a scalar, this parameter is ignored. Default is 10.|
+|Value|Any scalar value or table expression to be logged. The value of the expression is returned, as well as entered in JSON format to the DAX Evaluation Log event.|  
+|Label|(Optional) A constant string included in the event return. Labels help identify and differentiate between multiple EVALUATEANDLOG expressions in the same query.|  
+|MaxRows|(Optional) The maximum number of rows output when the first argument is a table expression. Default is 10. If the value is a scalar, this parameter is ignored. |
   
 ## Return value
 
-First argument.
+Result of the expression.
 
 ## Remarks
 
-- This function can be used with almost any expression in a DAX query and the whole query will still be valid.
+- Trace events can be captured by using [SQL Server Profiler](/analysis-services/instances/use-sql-server-profiler-to-monitor-analysis-services) and the open-source [DAX Debug Output](https://github.com/pbidax/DAXDebugOutput/releases/) tool.
+- This function does not change the result of the Value expression.
 
 - Value is logged together with its arguments for every set of arguments.
 
-- If the argument is a table, then only the top MaxRows rows are shown.
-
-- The label parameter is included in the event return. The string can make finding specific logs more convenient in cases where multiple EVALUATEANDLOG expressions are used in a single query.
+- If the argument for Value is a table, only the top MaxRows rows are shown.
 
 - In some cases, this function is not executed due to optimizations.
 
-- If the log is greater than one million characters, it's truncated to preserve correct json structure.
+- If the DAX Evaluation Log event is greater than one million characters, it's truncated to preserve correct json structure.
   
 ## Example 1
 
