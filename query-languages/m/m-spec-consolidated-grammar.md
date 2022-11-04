@@ -499,7 +499,6 @@ _type-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`type`  _primary-type<br/>
 type:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parenthesized-expression<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-type<br/>
 primary-type:<br/>
