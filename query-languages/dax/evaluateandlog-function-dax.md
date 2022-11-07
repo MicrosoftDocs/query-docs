@@ -13,7 +13,7 @@ recommendations: false
 ---
 # EVALUATEANDLOG
 
-Returns the value of the first argument and logs it in Trace event, DAX Evaluation Log. This function applies to Power BI Desktop only.
+Returns the value of the first argument and logs it in a DAX Evaluation Log profiler event. This function is fully functional in Power BI Desktop only. It acts as a simple passthrough function in other environments.
   
 ## Syntax  
   
@@ -25,22 +25,33 @@ EVALUATEANDLOG(<Value>, [Label], [MaxRows])
   
 |Term|Definition|  
 |--------|--------------|  
-|Value|Any scalar value or table expression to be logged. The value of the expression is returned, as well as entered in JSON format to the DAX Evaluation Log event.|  
-|Label|(Optional) A constant string included in the event return. Labels help identify and differentiate between multiple EVALUATEANDLOG expressions in the same query.|  
-|MaxRows|(Optional) The maximum number of rows output when the first argument is a table expression. Default is 10. If the value is a scalar, this parameter is ignored. |
+|Value|Any scalar value or table expression to be logged.|  
+|Label|(Optional) A constant string included in the event return.|  
+|MaxRows|(Optional) The maximum number of rows output when the first argument is a table expression. Default is 10.|
   
 ## Return value
 
-Result of the expression.
+The value of the first argument.
+
+The JSON structure logged in a DAX Evaluation Log profiler event includes:
+
+- “expression” is the text version of the first argument.
+- “label” is the Label parameter when specified in the expression.
+- “inputs” is a list of columns in the evaluation context that affects the values of the first argument.
+- “outputs” is a list of a single column [Value] when the first argument is a scalar expression and a list of output columns when the first argument is a table expression.
+- “data” is a list of input values and output values when the first argument is a scalar expression, and a list of input values and corresponding output rows when the first argument is a table expression.
+- “rowCount” is the number of rows when the first argument is a table expression. Even though the number of rows in the json output is truncated by the MaxRows parameter, rowCount is the real number of rows without truncation.
 
 ## Remarks
 
 - Trace events can be captured by using [SQL Server Profiler](/analysis-services/instances/use-sql-server-profiler-to-monitor-analysis-services) and the open-source [DAX Debug Output](https://github.com/pbidax/DAXDebugOutput/releases/) tool.
-- This function does not change the result of the Value expression.
+- This function can be used with almost any sub-expression in a DAX expression, and the entire expression will still be valid.
 
-- Value is logged together with its arguments for every set of arguments.
+- When the first argument is evaluated multiple times in a single query, the function generates a single DAX Evaluation Log event that contains both the input values and the corresponding output values.
 
-- If the argument for Value is a table, only the top MaxRows rows are shown.
+- When the label parameter is specified, its value is returned in both the json output and the Label column of the DAX Evaluation Log event.
+
+- If the first argument is a table expression, only the top MaxRows rows are shown in the DAX Evaluation Log event.
 
 - In some cases, this function is not executed due to optimizations.
 
@@ -53,48 +64,40 @@ The following DAX query:
 ```dax
 evaluate
 SUMMARIZE(
-    EVALUATEANDLOG(FILTER(FactInternetSales, [ProductKey] = 528)),
-    FactInternetSales[SalesTerritoryKey],
+    EVALUATEANDLOG(FILTER(Sales, [ProductKey] = 528)),
+    Sales[SalesTerritoryKey],
     "sum",
-    sum(FactInternetSales[SalesAmount])
+    sum(Sales[Sales Amount])
 )
 ```
 
-Returns the following log:
+Returns the following DAX Evaluation Log event:
 
 ```json
 {
-    "expression": "SELECTCOLUMNS(FILTER(FactInternetSales, [ProductKey] = 528), \n\t\t[SalesTerritoryKey], \n\t\t[ProductKey], \n\t\t[SalesAmount],\n\t\t[OrderDate]\n\t\t)",
+    "expression": "FILTER(Sales, [ProductKey] = 528)",
     "inputs": [],
-    "outputs": ["'FactInternetSales'[SalesTerritoryKey]", "'FactInternetSales'[ProductKey]", "'FactInternetSales'[SalesAmount]", "'FactInternetSales'[OrderDate]"],
+    "outputs": ["'Sales'[SalesOrderLineKey]", "'Sales'[ResellerKey]", "'Sales'[CustomerKey]", "'Sales'[ProductKey]", "'Sales'[OrderDateKey]", "'Sales'[DueDateKey]", "'Sales'[ShipDateKey]", "'Sales'[SalesTerritoryKey]", "'Sales'[Order Quantity]", "'Sales'[Unit Price]", "'Sales'[Extended Amount]", "'Sales'[Product Standard Cost]", "'Sales'[Total Product Cost]", "'Sales'[Sales Amount]", "'Sales'[Unit Price Discount Pct]"],
     "data": [
         {
             "input": [],
             "rowCount": 3095,
             "output": [
-                [4, 528, 4.99, "2013-02-04T00:00:00"],
-                [4, 528, 4.99, "2013-02-04T00:00:00"],
-                [4, 528, 4.99, "2013-02-04T00:00:00"],
-                [4, 528, 4.99, "2013-02-03T00:00:00"],
-                [4, 528, 4.99, "2013-02-03T00:00:00"],
-                [4, 528, 4.99, "2013-02-01T00:00:00"],
-                [4, 528, 4.99, "2013-01-31T00:00:00"],
-                [4, 528, 4.99, "2013-01-31T00:00:00"],
-                [4, 528, 4.99, "2013-01-29T00:00:00"],
-                [4, 528, 4.99, "2013-01-28T00:00:00"]
+                [52174001, -1, 23785, 528, 20190707, 20190717, 20190714, 1, 1, 4.99, 4.99, 1.8663, 1.8663, 4.99, 0.0],
+                [52173001, -1, 26278, 528, 20190707, 20190717, 20190714, 1, 1, 4.99, 4.99, 1.8663, 1.8663, 4.99, 0.0],
+                [52082001, -1, 23831, 528, 20190705, 20190715, 20190712, 1, 1, 4.99, 4.99, 1.8663, 1.8663, 4.99, 0.0],
+                [52054002, -1, 11207, 528, 20190704, 20190714, 20190711, 1, 1, 4.99, 4.99, 1.8663, 1.8663, 4.99, 0.0],
+                [52036001, -1, 25337, 528, 20190704, 20190714, 20190711, 1, 1, 4.99, 4.99, 1.8663, 1.8663, 4.99, 0.0],
+                [51939002, -1, 23670, 528, 20190702, 20190712, 20190709, 1, 1, 4.99, 4.99, 1.8663, 1.8663, 4.99, 0.0],
+                [51911002, -1, 11746, 528, 20190701, 20190711, 20190708, 1, 1, 4.99, 4.99, 1.8663, 1.8663, 4.99, 0.0],
+                [51379003, -1, 13745, 528, 20190612, 20190622, 20190619, 1, 1, 4.99, 4.99, 1.8663, 1.8663, 4.99, 0.0],
+                [51264002, -1, 11282, 528, 20190605, 20190615, 20190612, 1, 1, 4.99, 4.99, 1.8663, 1.8663, 4.99, 0.0],
+                [51184003, -1, 11263, 528, 20190531, 20190610, 20190607, 1, 1, 4.99, 4.99, 1.8663, 1.8663, 4.99, 0.0]
             ]
         }
     ]
 }
 ```
-
-The JSON log structure for this example includes:
-
-- “expression” as a text version of logged expression.
-- “inputs” as names of varying attributes. In this example, the expression has no varying attributes.
-- “outputs” as names of columns of logged expressions.
-- “data” contains expression values for every varying attribute as well as values of attributes.
-- “RowCount” is the number of rows for a table specified as Value.
 
 ## Example 2
 
@@ -103,56 +106,46 @@ The following DAX query with a scalar argument and varying attributes:
 ```dax
 evaluate
 SELECTCOLUMNS(
-    TOPN(5, DimCustomer),
-    [FirstName],
-    [LastName],
-    "FullName",
-    EVALUATEANDLOG([FirstName] & " " & [LastName], "myLog")
+    TOPN(5, Customer),
+    [Customer],
+    "Customer",
+    EVALUATEANDLOG([Customer] & ", " & [Country-Region], "customerLog")
 )
 
 ```
 
-Returns the following log:
+Returns the following DAX Evaluation Log event:
 
 ```json
 {
-    "expression": "[FirstName] & \" \" & [LastName]",
-    "label": "myLog",
-    "inputs": ["'DimCustomer'[FirstName]", "'DimCustomer'[LastName]"],
+    "expression": "[Customer] & \", \" & [Country-Region]",
+    "label": "customerLog",
+    "inputs": ["'Customer'[Customer]", "'Customer'[Country-Region]"],
     "data": [
         {
-            "input": ["Larry", "Gill"],
-            "output": "Larry Gill"
+            "input": ["Russell Xie", "United States"],
+            "output": "Russell Xie, United States"
         },
         {
-            "input": ["Geoffrey", "Gonzalez"],
-            "output": "Geoffrey Gonzalez"
+            "input": ["Savannah Baker", "United States"],
+            "output": "Savannah Baker, United States"
         },
         {
-            "input": ["Blake", "Collins"],
-            "output": "Blake Collins"
+            "input": ["Maurice Tang", "United States"],
+            "output": "Maurice Tang, United States"
         },
         {
-            "input": ["Alexa", "Watson"],
-            "output": "Alexa Watson"
+            "input": ["Emily Wood", "United States"],
+            "output": "Emily Wood, United States"
         },
         {
-            "input": ["Jacquelyn", "Dominguez"],
-            "output": "Jacquelyn Dominguez"
+            "input": ["Meghan Hernandez", "United States"],
+            "output": "Meghan Hernandez, United States"
         }
     ]
 }
 
 ```
-
-The JSON log structure for this example includes:
-
-- “expression” as a text version of logged expression.
-- “Label” is the Label parameter specified in the expression.
-- “inputs” as names of varying attributes. In this example, the expression has no varying attributes.
-- “outputs” as names of columns of logged expressions.
-- “data” contains expression values for every varying attribute as well as values of attributes.
-- “RowCount” is the number of rows for a table specified as Value.
 
 ## See also
 

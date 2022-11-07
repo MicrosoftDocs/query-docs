@@ -13,7 +13,7 @@ recommendations: false
 ---
 # TOCSV
 
-Returns a table as a string in CSV format. This function applies to Power BI Desktop only.
+Returns a table as a string in CSV format.
   
 ## Syntax  
   

@@ -13,8 +13,8 @@ recommendations: false
 ---
 # TOJSON
 
-Returns a table as a string using JSON format. This function applies to Power BI Desktop only.
-  
+Returns a table as a string using JSON format.
+
 ## Syntax  
   
 ```dax
