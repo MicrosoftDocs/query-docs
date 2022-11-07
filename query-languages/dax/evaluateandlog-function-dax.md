@@ -25,9 +25,9 @@ EVALUATEANDLOG(<Value>, [Label], [MaxRows])
   
 |Term|Definition|  
 |--------|--------------|  
-|Value|Any scalar value or table expression to be logged.|  
-|Label|(Optional) A constant string included in the event return.|  
-|MaxRows|(Optional) The maximum number of rows output when the first argument is a table expression. Default is 10.|
+|Value|Any scalar expression or table expression to be evaluated and logged.|  
+|Label|(Optional) A constant string included in both the json text and the Label column of the DAX Evaluation Log event that can be used to easily identify an instance of the function call.|  
+|MaxRows|(Optional) The maximum number of rows in the json text of the DAX Evaluation Log event when the first argument is a table expression. Default is 10.|
   
 ## Return value
 
