@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.WeekOfMonth"
 title: "Date.WeekOfMonth"
-ms.date: 3/11/2022
+ms.date: 11/14/2022
 ---
 # Date.WeekOfMonth
 
@@ -19,7 +19,7 @@ Returns a number from 1 to 6 indicating which week of the month the date `dateTi
 
 ## Example 1
 
-Determine which week of March the 15th falls on in 2011 (`#date(2011, 03, 15)`).
+Determine which week of March the 15th falls on in 2011.
 
 **Usage**
 

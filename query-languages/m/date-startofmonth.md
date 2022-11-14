@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.StartOfMonth"
 title: "Date.StartOfMonth"
-ms.date: 3/11/2022
+ms.date: 11/14/2022
 ---
 # Date.StartOfMonth
 
@@ -13,11 +13,11 @@ Date.StartOfMonth(<b>dateTime</b> as any) as any
   
 ## About
 
-Returns the first value of the month given a `date` or `datetime` type.
+Returns the start of the month that contains `dateTime`. `dateTime` must be a `date` or `datetime` value.
 
 ## Example 1
 
-Find the start of the month for October 10th, 2011, 8:10:32AM (`#datetime(2011, 10, 10, 8, 10, 32)`).
+Find the start of the month for October 10th, 2011, 8:10:32AM.
 
 **Usage**
 
