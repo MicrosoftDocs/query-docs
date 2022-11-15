@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.EndOfYear"
 title: "Date.EndOfYear"
-ms.date: 3/11/2022
+ms.date: 11/14/2022
 ---
 # Date.EndOfYear
 
@@ -13,7 +13,7 @@ Date.EndOfYear(<b>dateTime</b> as any) as any
   
 ## About
 
-Returns a value representing the end of the year in `dateTime`, including fractional seconds. Time zone information is preserved.
+Returns the end of the year that contains `dateTime`, including fractional seconds. Time zone information is preserved.
 
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value from which the end of the year is calculated.
 

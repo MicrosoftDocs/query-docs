@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Value functions"
 title: "Value functions"
-ms.date: 10/18/2022
+ms.date: 11/14/2022
 ---
 # Value functions
 
@@ -42,6 +42,7 @@ These functions evaluate and perform operations on values.
 |[DirectQueryCapabilities.From](directquerycapabilities-from.md) | This function is intended for internal use only.|
 |[Embedded.Value](embedded-value.md) | Accesses a value by name in an embedded mashup.|
 |[Excel.ShapeTable](excel-shapetable.md) | This function is intended for internal use only.|
+|[Progress.DataSourceProgress](progress-datasourceprogress.md) | This function is intended for internal use only. |
 |[Value.Firewall](value-firewall.md) | This function is intended for internal use only.|
 |[Value.ViewError](value-viewerror.md) | This function is intended for internal use only.|
 |[Value.ViewFunction](value-viewfunction.md) | This function is intended for internal use only.|

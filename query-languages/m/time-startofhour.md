@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Time.StartOfHour"
 title: "Time.StartOfHour"
-ms.date: 3/14/2022
+ms.date: 11/14/2022
 ---
 # Time.StartOfHour
 
@@ -13,11 +13,11 @@ Time.StartOfHour(<b>dateTime</b> as any) as any
   
 ## About
 
-Returns the first value of the hour given a `time`, `datetime` or `datetimezone` type.
+Returns the start of the hour represented by `dateTime`. `dateTime` must be a `time`, `datetime` or `datetimezone` value.
 
 ## Example 1
 
-Find the start of the hour for October 10th, 2011, 8:10:32AM (`#datetime(2011, 10, 10, 8, 10, 32)`).
+Find the start of the hour for October 10th, 2011, 8:10:32AM.
 
 **Usage**
 

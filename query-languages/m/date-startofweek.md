@@ -1,19 +1,19 @@
 ---
 description: "Learn more about: Date.StartOfWeek"
 title: "Date.StartOfWeek"
-ms.date: 10/18/2022
+ms.date: 11/14/2022
 ---
 # Date.StartOfWeek
 
 ## Syntax
 
 <pre>
-Date.StartOfWeek(<b>dateTime</b> as any, optional <b>firstDayOfWeek</b> as nullable number) as any 
+Date.StartOfWeek(<b>dateTime</b> as any, optional <b>firstDayOfWeek</b> as nullable number) as any
 </pre>
   
 ## About
 
-Returns the start of the week given a `date`, `datetime`, or `datetimezone` value.
+Returns the start of the week that contains `dateTime`. `dateTime` must be a `date`, `datetime`, or `datetimezone` value.
 
 ## Example 1
 
