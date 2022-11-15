@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.WeekOfYear"
 title: "Date.WeekOfYear"
-ms.date: 5/16/2022
+ms.date: 11/14/2022
 ---
 # Date.WeekOfYear
 
@@ -21,7 +21,7 @@ Returns a number from 1 to 54 indicating which week of the year the date, `dateT
 
 ## Example 1
 
-Determine which week of the year March 27th, 2011 falls in (`#date(2011, 03, 27)`).
+Determine which week of the year contains March 27th, 2011.
 
 **Usage**
 
@@ -35,7 +35,7 @@ Date.WeekOfYear(#date(2011, 03, 27))
 
 ## Example 2
 
-Determine which week of the year March 27th, 2011 falls in (`#date(2011, 03, 27)`), using Monday as the start of a new week.
+Determine which week of the year contains March 27th, 2011, using Monday as the start of the week.
 
 **Usage**
 
