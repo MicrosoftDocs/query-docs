@@ -13,7 +13,7 @@ recommendations: false
 ---
 # EXCEPT
 
-Returns the rows of one table which do not appear in another table.  
+Returns the rows of the first table in the expression which do not appear in the second table.  
   
 ## Syntax  
   

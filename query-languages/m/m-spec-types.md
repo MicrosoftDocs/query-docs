@@ -31,7 +31,7 @@ _type-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`type` _primary-type<br/> 
 type:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parenthesized-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-type<br/>
 primary-type:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primitive-type<br/>
@@ -330,9 +330,17 @@ The following are pairwise equivalent (for any <code>type <em>T</em></code>):
 
 ## Ascribed type of a value
 
-A value's _ascribed type_ is the type to which a value is _declared_ to conform. When a value is ascribed a type, only a limited conformance check occurs. _M does not perform conformance checking beyond a nullable primitive type. M program authors that choose to ascribe values with type definitions more complex than a nullable primitive-type must ensure that such values conform to these types._
+A value's _ascribed type_ is the type to which a value is _declared_ to conform. 
 
-A value may be ascribed a type using the library function `Value.ReplaceType`. The function either returns a new value with the type ascribed or raises an error if the new type is incompatible with the value's native primitive type. In particular, the function raises an error when an attempt is made to ascribe an abstract type, such as `any`.
+A value may be ascribed a type using the library function `Value.ReplaceType`. This function either returns a new value with the type ascribed or raises an error if the new type is incompatible with the value.
+
+When a value is ascribed a type, only a limited conformance check occurs:
+* The type being ascribed must be non-abstract, non-nullable, and compatible with the value's intrinsic (native) _primitive-type_.
+* When a custom type that defines structure is ascribed, it must match the structure of the value.
+  * For records: The type must be closed, must define the same number of fields as the value, and must not contain any optional fields. (The type's field names and field types will replace those currently associated with the record. However, existing field values will not be checked against the new field types.)
+  * For tables: The type must define the same number of columns as the value. (The type's column names and column types will replace those currently associated with the table. However, existing column values will not be checked against the new column types.)
+  * For functions: The type must define the same number of required parameters, as well as the same number of optional parameters, as the value. (The type's parameter and return assertions, as well as its parameter names, will replace those associated with the function value's current type. However, the new assertions will have no effect on the actual behavior of the function.)
+  * For lists: The value must be a list. (However, existing list items will not be checked against the new item type.)
 
 Library functions may choose to compute and ascribe complex types to results based on the ascribed types of the input values.
 
