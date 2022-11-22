@@ -35,7 +35,7 @@ A single column table containing the values of an arithmetic series. The name of
   
 ## Remarks
 
-- When startValue is less than endValue, an empty table is returned.
+- When endValue is less than startValue, an empty table is returned.
 
 - incrementValue must be a positive value.
 
