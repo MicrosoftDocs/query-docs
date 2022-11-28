@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.ReplaceValue"
 title: "Table.ReplaceValue"
-ms.date: 5/19/2022
+ms.date: 11/14/2022
 ---
 # Table.ReplaceValue
 
@@ -17,20 +17,21 @@ Replaces `oldValue` with `newValue` in the specified columns of the `table`.
 
 ## Example 1
 
-Replace the text "goodbye" with the text "world" in the table.
+Replace the text "goodbye" with "world" in column B, matching only the entire value.
 
 **Usage**
 
 ```powerquery-m
 Table.ReplaceValue(
     Table.FromRecords({
-        [a = 1, b = "hello"],
-        [a = 3, b = "goodbye"]
+        [A = 1, B = "hello"],
+        [A = 2, B = "goodbye"],
+        [A = 3, B = "goodbyes"]
     }),
     "goodbye",
     "world",
-    Replacer.ReplaceText,
-    {"b"}
+    Replacer.ReplaceValue,
+    {"B"}
 )
 ```
 
@@ -38,27 +39,28 @@ Table.ReplaceValue(
 
 ```powerquery-m
 Table.FromRecords({
-    [a = 1, b = "hello"],
-    [a = 3, b = "world"]
+    [A = 1, B = "hello"],
+    [A = 2, B = "world"],
+    [A = 3, B = "goodbyes"]
 })
 ```
 
 ## Example 2
 
-Replace the text "ur" with the text "or" in the table.
+Replace the text "ur" with "or" in column B, matching any part of the value.
 
 **Usage**
 
 ```powerquery-m
 Table.ReplaceValue(
     Table.FromRecords({
-        [a = 1, b = "hello"],
-        [a = 3, b = "wurld"]
+        [A = 1, B = "hello"],
+        [A = 2, B = "wurld"]
     }),
     "ur",
     "or",
     Replacer.ReplaceText,
-    {"b"}
+    {"B"}
 )
 ```
 
@@ -66,7 +68,67 @@ Table.ReplaceValue(
 
 ```powerquery-m
 Table.FromRecords({
-    [a = 1, b = "hello"],
-    [a = 3, b = "world"]
+    [A = 1, B = "hello"],
+    [A = 2, B = "world"]
+})
+```
+
+## Example 3
+
+Anonymize the names of US employees.
+
+**Usage**
+
+```powerquery-m
+Table.ReplaceValue(
+    Table.FromRecords({
+        [Name = "Cindy", Country = "US"],
+        [Name = "Bob", Country = "CA"]
+    }),
+    each if [Country] = "US" then [Name] else false,
+    each Text.Repeat("*", Text.Length([Name])),
+    Replacer.ReplaceValue,
+    {"Name"}
+)
+```
+
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [Name = "*****", Country = "US"],
+    [Name = "Bob", Country = "CA"]
+})
+```
+
+## Example 4
+
+Anonymize all columns of US employees.
+
+**Usage**
+
+```powerquery-m
+Table.ReplaceValue(
+    Table.FromRecords({
+        [Name = "Cindy", Country = "US"],
+        [Name = "Bob", Country = "CA"]
+    }),
+    each [Country] = "US",
+    "?",
+    (currentValue, isUS, replacementValue) =>
+        if isUS then
+            Text.Repeat(replacementValue, Text.Length(currentValue))
+        else
+            currentValue,
+    {"Name", "Country"}
+)
+```
+
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [Name = "?????", Country = "??"],
+    [Name = "Bob", Country = "CA"]
 })
 ```

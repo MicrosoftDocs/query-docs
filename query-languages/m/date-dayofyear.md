@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.DayOfYear"
 title: "Date.DayOfYear"
-ms.date: 3/11/2022
+ms.date: 11/14/2022
 ---
 # Date.DayOfYear
 
@@ -17,7 +17,7 @@ Returns a number representing the day of the year in the provided `date`, `datet
 
 ## Example 1
 
-The number of the day March 1st, 2011 (`#date(2011, 03, 01)`).
+The day of the year for March 1st, 2011.
 
 **Usage**
 

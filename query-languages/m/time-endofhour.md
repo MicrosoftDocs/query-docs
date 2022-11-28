@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Time.EndOfHour"
 title: "Time.EndOfHour"
-ms.date: 3/14/2022
+ms.date: 11/14/2022
 ---
 # Time.EndOfHour
 
@@ -13,7 +13,7 @@ Time.EndOfHour(<b>dateTime</b> as any) as any
   
 ## About
 
-Returns a `time`, `datetime`, or `datetimezone` value representing the end of the hour in `dateTime`, including fractional seconds. Time zone information is preserved.
+Returns the end of the hour represented by `dateTime`, including fractional seconds. Time zone information is preserved.
 
 * `dateTime`: A `time`, `datetime`, or `datetimezone` value from which the end of the hour is calculated.
 
