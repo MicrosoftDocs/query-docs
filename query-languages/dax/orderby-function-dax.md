@@ -12,9 +12,9 @@ recommendations: false
 
 ---
 
-# OFFSET
+# ORDERBY
 
-Defines the columns that determine the sort order within each of a Window function’s partitions.
+Defines the columns that determine the sort order within each of a WINDOW function’s partitions.
   
 ## Syntax  
   
@@ -35,7 +35,7 @@ This function does not return a value.
   
 ## Remarks
 
-This function can only be used within Window functions.
+This function can only be used within a [WINDOW](window-function-dax.md) function expression.
 
 ## Example
 

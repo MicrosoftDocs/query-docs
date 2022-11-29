@@ -3,7 +3,7 @@ description: "Learn more about: INDEX"
 title: "INDEX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax
-ms.date: 10/17/2022
+ms.date: 11/15/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -12,32 +12,53 @@ recommendations: false
 
 ---
 
-# INDEX
+# INDEX1`
 
-Returns a row at an absolute position (specified by the position parameter) within the specified partition sorted by the specified order or on the specified axis.
+Returns a row at an absolute position, specified by the position parameter, within the specified partition, sorted by the specified order or on the specified axis. If the current partition can't be deduced to a single partition, multiple rows may be returned.
   
 ## Syntax  
   
 ```dax
-INDEX(<position>[, < relation>, < orderBy>, < partitionBy>])
+INDEX(<position>[, <relation>][, <orderBy>][, <blanks>][, < partitionBy>])
 ```
   
 ### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  
-|position|The absolute position (1-based) from which to obtain the data.|
-|relation|A table expression from which the output will be returned. If omitted, \<orderBy> must be explicitly specified.
-|orderBy|(Optional) An ORDERBY() clause containing the columns that define how each partition is sorted. <br>If omitted: <br>- \<relation> must be explicitly specified. <br>- Defaults to ordering by every column in \<relation>.
-|partitionBy|(Optional) A PARTITIONBY() clause containing the columns that define how \<relation> is partitioned. <br> If omitted, \<relation> is treated as a single partition. |
+|position|The absolute position (1-based) from which to obtain the data: </br> - \<position> is positive: 1 is the first row, 2 is the second row, etc. </br> -  \<position> is negative: -1 is the last row, -2 is the second last row, etc. </br> When \<position> is out of the boundary, or zero, or BLANK(), INDEX will return empty. It can be any DAX expression that returns a scalar value.|
+|relation|(Optional) A table expression from which the output is returned. </br> If specified, all columns in \<orderBy> and \<partitionBy> must come from it or a related table.  </br> If omitted: </br> - \<orderBy> must be explicitly specified. </br> - All \<orderBy> and \<partitionBy> columns must come from a single table. </br> - Defaults to ALLSELECTED() of all columns in \<orderBy> and \<partitionBy>.
+|orderBy|(Optional) An ORDERBY() clause containing the columns that define how each partition is sorted. </br>If omitted: </br>- \<relation> must be explicitly specified. </br>- Defaults to ordering by every column in \<relation>.|
+|blanks|(Optional) An enumeration that defines how to handle blank values when sorting. </br>This parameter is reserved for future use. </br>Currently, the only supported value is KEEP (default), where the behavior for numerical/date values is blank values are ordered between zero and negative values. The behavior for strings is blank values are ordered before all strings, including empty strings.|
+|partitionBy|(Optional) A PARTITIONBY() clause containing the columns that define how \<relation> is partitioned. </br> If omitted, \<relation> is treated as a single partition. |
 
 ## Return value
 
-A row at an absolute position (specified by the position parameter) within the specified partition sorted by the specified order or on the specified axis.
+A row at an absolute position.
   
 ## Remarks
 
-This function is similar to OFFSET function.
+Each \<partitionBy> column must have a corresponding outer value to help define the “current partition” on which to operate, with the following behavior:
+
+- If there is exactly one corresponding outer column, its value is used.
+- If there is no corresponding outer column:
+  - INDEX will first determine all \<partitionBy> columns that have no corresponding outer column.
+  - For every combination of existing values for these columns in INDEX’s parent context, INDEX is evaluated and a row is returned.
+  - INDEX’s final output is a union of these rows.
+- If there is more than one corresponding outer column, an error is returned.
+
+If the non-volatile columns specified within \<orderBy> and \<partitionBy> cannot uniquely identify every row in \<relation>:
+
+- INDEX will try to find the least number of additional columns required to uniquely identify every row.
+- If such columns can be found, INDEX will automatically append these new columns to <orderBy>, and each partition is sorted using this new set of OrderBy columns.  
+- If such columns cannot be found, an error is returned.
+
+An empty table is returned if:
+
+- The corresponding outer value of a PartitionBy column does not exist within \<relation>.
+- The \<position> value refers to a position that does not exist within the partition.  
+
+If INDEX is used within a calculated column defined on the same table as \<relation> and \<orderBy> is omitted, an error is returned.
 
 ## Example 1
 
@@ -63,8 +84,8 @@ SUMMARIZECOLUMNS (
     FactInternetSales[ProductKey],
     DimDate[MonthNumberOfYear],
     FILTER (
-        VALUES(FactInternetSales[ProductKey]),
-        [ProductKey] < 222
+            VALUES(FactInternetSales[ProductKey]),
+            [ProductKey] < 222
     ),
     "CurrentSales", SUM(FactInternetSales[SalesAmount]),
     "LastMonthSales",
