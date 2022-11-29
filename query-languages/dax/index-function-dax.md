@@ -50,7 +50,7 @@ Each \<partitionBy> column must have a corresponding outer value to help define 
 If the non-volatile columns specified within \<orderBy> and \<partitionBy> cannot uniquely identify every row in \<relation>:
 
 - INDEX will try to find the least number of additional columns required to uniquely identify every row.
-- If such columns can be found, INDEX will automatically append these new columns to <orderBy>, and each partition is sorted using this new set of OrderBy columns.  
+- If such columns can be found, INDEX will automatically append these new columns to \<orderBy>, and each partition is sorted using this new set of OrderBy columns.  
 - If such columns cannot be found, an error is returned.
 
 An empty table is returned if:

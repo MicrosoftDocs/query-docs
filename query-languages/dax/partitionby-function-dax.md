@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PARTITIONBY"
-title: "OFFSET function (DAX) | Microsoft Docs"
+title: "PARTITIONBY function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax
 ms.date: 11/29/2022
