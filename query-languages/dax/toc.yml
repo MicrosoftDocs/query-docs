@@ -487,6 +487,12 @@
               href: blank-function-dax.md
             - name: ERROR
               href: error-function.md
+            - name: EVALUATEANDLOG
+              href: evaluateandlog-function-dax.md
+            - name: TOCSV
+              href: tocsv-function-dax.md
+            - name: TOJSON
+              href: tojson-function-dax.md
         - name: Parent and child functions
           items: 
             - name: Parent and child functions overview
