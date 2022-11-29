@@ -1392,6 +1392,8 @@ items:
         href: excel-shapetable.md
       - name: Graph.Nodes
         href: graph-nodes.md
+      - name: Progress.DataSourceProgress
+        href: progress-datasourceprogress.md
       - name: SqlExpression.SchemaFrom
         href: sqlexpression-schemafrom.md
       - name: SqlExpression.ToExpression
@@ -1444,6 +1446,10 @@ items:
         href: value-versionidentity.md
       - name: Value.Versions
         href: value-versions.md
+      - name: Value.ViewError
+        href: value-viewerror.md
+      - name: Value.ViewFunction
+        href: value-viewfunction.md
       - name: Variable.Value
         href: variable-value.md
   - name: Enumerations

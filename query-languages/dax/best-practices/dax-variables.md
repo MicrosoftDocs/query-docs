@@ -15,9 +15,9 @@ recommendations: false
 
 As a data modeler, writing and debugging some DAX calculations can be challenging. It's common that complex calculation requirements often involve writing compound or complex expressions. Compound expressions can involve the use of many nested functions, and possibly the reuse of expression logic.
 
-Using variables in your DAX formulas can help you write more complex and efficient calculations. Variables can improve performance and reliability, and readability, and reduce complexity.
+Using variables in your DAX formulas can help you write more complex and efficient calculations. Variables can improve performance, reliability, readability, and reduce complexity.
 
-In this article, we'll demonstrate the first three benefits by using an example measure for year-over-year (YoY) sales growth. (The formula for YoY sales growth is: period sales *fewer sales for the same period last year, divided by* sales for the same period last year.)
+In this article, we'll demonstrate the first three benefits by using an example measure for year-over-year (YoY) sales growth. (The formula for YoY sales growth is period sales, minus sales for the same period last year, divided by sales for the same period last year.)
 
 Let's start with the following measure definition.
 

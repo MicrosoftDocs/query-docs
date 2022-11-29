@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date functions"
 title: "Date functions"
-ms.date: 5/16/2022
+ms.date: 11/14/2022
 ---
 # Date functions
 
@@ -19,11 +19,11 @@ These functions create and manipulate the date component of date, datetime, and 
 |[Date.DayOfWeekName](date-dayofweekname.md)|Returns the day of the week name.|
 |[Date.DayOfYear](date-dayofyear.md)|Returns a number that represents the day of the year from a DateTime value.|
 |[Date.DaysInMonth](date-daysinmonth.md)|Returns the number of days in the month from a DateTime value.|
-|[Date.EndOfDay](date-endofday.md)|Returns a DateTime value for the end of the day.|
-|[Date.EndOfMonth](date-endofmonth.md)|Returns a DateTime value for the end of the month.|
-|[Date.EndOfQuarter](date-endofquarter.md)|Returns a Date/DateTime/DateTimeZone value representing the end of the quarter. The date and time portions are reset to their terminating values for the quarter. The timezone information is persisted.|
-|[Date.EndOfWeek](date-endofweek.md)|Returns a DateTime value for the end of the week.|
-|[Date.EndOfYear](date-endofyear.md)|Returns a DateTime value for the end of the year.|
+|[Date.EndOfDay](date-endofday.md)|Returns the end of the day.|
+|[Date.EndOfMonth](date-endofmonth.md)|Returns the end of the month.|
+|[Date.EndOfQuarter](date-endofquarter.md)|Returns the end of the quarter.|
+|[Date.EndOfWeek](date-endofweek.md)|Returns the end of the week.|
+|[Date.EndOfYear](date-endofyear.md)|Returns the end of the year.|
 |[Date.From](date-from.md)|Returns a date value from a value.|
 |[Date.FromText](date-fromtext.md)|Creates a Date from local, universal, and custom Date formats.|
 |[Date.IsInCurrentDay](date-isincurrentday.md)|Indicates whether the given datetime value `dateTime` occurs during the current day, as determined by the current date and time on the system.|
@@ -56,11 +56,11 @@ These functions create and manipulate the date component of date, datetime, and 
 |[Date.Month](date-month.md)|Returns the month from a DateTime value.|
 |[Date.MonthName](date-monthname.md)|Returns the name of the month component.|
 |[Date.QuarterOfYear](date-quarterofyear.md)|Returns a number between 1 and 4 for the quarter of the year from a DateTime value.|
-|[Date.StartOfDay](date-startofday.md)|Returns a DateTime value for the start of the day.|
-|[Date.StartOfMonth](date-startofmonth.md)|Returns a DateTime value representing the start of the month.|
-|[Date.StartOfQuarter](date-startofquarter.md)|Returns a DateTime value representing the start of the quarter.|
-|[Date.StartOfWeek](date-startofweek.md)|Returns a DateTime value representing the start of the week.|
-|[Date.StartOfYear](date-startofyear.md)|Returns a DateTime value representing the start of the year.|
+|[Date.StartOfDay](date-startofday.md)|Returns the start of the day.|
+|[Date.StartOfMonth](date-startofmonth.md)|Returns the start of the month.|
+|[Date.StartOfQuarter](date-startofquarter.md)|Returns the start of the quarter.|
+|[Date.StartOfWeek](date-startofweek.md)|Returns the start of the week.|
+|[Date.StartOfYear](date-startofyear.md)|Returns the start of the year.|
 |[Date.ToRecord](date-torecord.md)|Returns a record containing parts of a Date value.|
 |[Date.ToText](date-totext.md)|Returns a text value from a Date value.|
 |[Date.WeekOfMonth](date-weekofmonth.md)|Returns a number for the count of week in the current month.|

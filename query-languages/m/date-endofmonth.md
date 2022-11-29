@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.EndOfMonth"
 title: "Date.EndOfMonth"
-ms.date: 3/11/2022
+ms.date: 11/14/2022
 ---
 # Date.EndOfMonth
 
@@ -13,9 +13,9 @@ Date.EndOfMonth(<b>dateTime</b> as any) as any
   
 ## About
 
-Returns the last day of the month in `dateTime`.
+Returns the end of the month that contains `dateTime`.
 
-* `dateTime`: A `date`, `datetime`, or `datetimezone` value from which the end of the month is calculated
+* `dateTime`: A `date`, `datetime`, or `datetimezone` value from which the end of the month is calculated.
 
 ## Example 1
 

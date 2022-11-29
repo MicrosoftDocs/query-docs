@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date.EndOfDay"
 title: "Date.EndOfDay"
-ms.date: 3/11/2022
+ms.date: 11/14/2022
 ---
 # Date.EndOfDay
 
@@ -11,7 +11,7 @@ Date.EndOfDay(<b>dateTime</b> as any) as any
   
 ## About
 
-Returns a `date`, `datetime`, or `datetimezone` value representing the end of the day in `dateTime`. Time zone information is preserved.
+Returns the end of the day represented by `dateTime`. Time zone information is preserved.
 
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value from from which the end of the day is calculated.
 
