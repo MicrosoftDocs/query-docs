@@ -3,7 +3,7 @@ description: "Learn more about: PARTITIONBY"
 title: "OFFSET function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax
-ms.date: 10/17/2022
+ms.date: 11/29/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -14,7 +14,7 @@ recommendations: false
 
 # PARTITIONBY
 
-Defines the columns that are used to partition a WINDOW function’s \<relation> paramter.
+Defines the columns that are used to partition a WINDOW function’s \<relation> parameter.
   
 ## Syntax  
   

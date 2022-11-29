@@ -3,7 +3,7 @@ description: "Learn more about: INDEX"
 title: "INDEX function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax
-ms.date: 11/15/2022
+ms.date: 11/29/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -12,7 +12,7 @@ recommendations: false
 
 ---
 
-# INDEX1`
+# INDEX
 
 Returns a row at an absolute position, specified by the position parameter, within the specified partition, sorted by the specified order or on the specified axis. If the current partition can't be deduced to a single partition, multiple rows may be returned.
   

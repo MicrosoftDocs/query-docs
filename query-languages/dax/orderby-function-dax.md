@@ -3,7 +3,7 @@ description: "Learn more about: ORDERBY"
 title: "ORDERBY function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax
-ms.date: 10/17/2022
+ms.date: 11/29/2022
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
