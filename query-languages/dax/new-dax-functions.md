@@ -23,7 +23,7 @@ While functions and functionality are being updated all the time, only those upd
 
 |Function  |Month  | Description |
 |---------|---------|---------|
-|[EVALUATEANDLOG](evaluateandlog-function-dax.md)| November, 2022 |  Returns the value of the first argument and logs it in a DAX Evaluation Log profiler event. |
+|[EVALUATEANDLOG](evaluateandlog-function-dax.md)| November, 2022 |  Returns the value of the first argument and logs it in a DAX Evaluation Log profiler event. This function applies to Power BI Desktop only.  |
 |[TOCSV](tocsv-function-dax.md) | November, 2022 |  Returns a table as a string in CSV format. This function applies to Power BI Desktop only. |
 |[TOJSON](tojson-function-dax.md) | November, 2022 |  Returns a table as a string in JSON format. This function applies to Power BI Desktop only. |
 |[NETWORKDAYS](networkdays-dax.md)| July, 2022 |  Returns the number of whole workdays between two dates. |
