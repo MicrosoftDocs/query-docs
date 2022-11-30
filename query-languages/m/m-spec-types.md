@@ -353,7 +353,7 @@ Value.Type( Value.ReplaceType( {1}, type {number} )
 
 ## Type equivalence and compatibility
 
-Type equivalence is not fully defined in M. It is acceptable for an M implementation to return `false` when type values are compared for equality. If `true` is returned, at minimum, the following criteria must be met: the two values must be based on the same nullable primitive type and the response returned must be consistent if the same values are repeatedly compared (that is, multiple recurrences of the same comparison must all either evaluate to `true` or to `false`). 
+Type equivalence is not defined in M. An M implementation may optionally choose to use its own rules to perform equality comparisons between type values, in which case `true` or `false` should be returned, as the implementation deems appropriate. Otherwise, comparing two type values for equality should evaluate to `false`. In either case, the response returned must be consistent if the same two values are repeatedly compared. 
 
 Compatibility between a given type and a nullable primitive type can be determined using the library function `Type.Is`, which accepts an arbitrary type value as its first and a nullable primitive type value as its second argument:
 
