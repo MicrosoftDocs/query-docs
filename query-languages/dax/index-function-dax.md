@@ -14,19 +14,19 @@ recommendations: false
 
 # INDEX
 
-Returns a row at an absolute position, specified by the position parameter, within the specified partition, sorted by the specified order or on the specified axis. If the current partition can't be deduced to a single partition, multiple rows may be returned.
+Returns a row at an absolute position, specified by the position parameter, within the specified partition, sorted by the specified order. If the current partition can't be deduced to a single partition, multiple rows may be returned.
   
 ## Syntax  
   
 ```dax
-INDEX(<position>[, <relation>][, <orderBy>][, <blanks>][, < partitionBy>])
+INDEX(<position>[, <relation>][, <orderBy>][, <blanks>][, <partitionBy>])
 ```
   
 ### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  
-|position|The absolute position (1-based) from which to obtain the data: </br> - \<position> is positive: 1 is the first row, 2 is the second row, etc. </br> -  \<position> is negative: -1 is the last row, -2 is the second last row, etc. </br> When \<position> is out of the boundary, or zero, or BLANK(), INDEX will return empty. It can be any DAX expression that returns a scalar value.|
+|position|The absolute position (1-based) from which to obtain the data: </br> - \<position> is positive: 1 is the first row, 2 is the second row, etc. </br> -  \<position> is negative: -1 is the last row, -2 is the second last row, etc. </br> When \<position> is out of the boundary, or zero, or BLANK(), INDEX will return an empty table. It can be any DAX expression that returns a scalar value.|
 |relation|(Optional) A table expression from which the output is returned. </br> If specified, all columns in \<orderBy> and \<partitionBy> must come from it or a related table.  </br> If omitted: </br> - \<orderBy> must be explicitly specified. </br> - All \<orderBy> and \<partitionBy> columns must come from a single table. </br> - Defaults to ALLSELECTED() of all columns in \<orderBy> and \<partitionBy>.
 |orderBy|(Optional) An ORDERBY() clause containing the columns that define how each partition is sorted. </br>If omitted: </br>- \<relation> must be explicitly specified. </br>- Defaults to ordering by every column in \<relation>.|
 |blanks|(Optional) An enumeration that defines how to handle blank values when sorting. </br>This parameter is reserved for future use. </br>Currently, the only supported value is KEEP (default), where the behavior for numerical/date values is blank values are ordered between zero and negative values. The behavior for strings is blank values are ordered before all strings, including empty strings.|
@@ -125,89 +125,6 @@ Returns the following table:
 |217     |  10      |  6823.05      |   7767.78     |
 |217     |  11      |  6683.09      |   7767.78     |
 |217     |  12      |  7767.78      |   7767.78     |
-
-## Example 3
-
-The following DAX query:
-
-```dax
-DEFINE
-MEASURE DimProduct[TotalSales] = SUM(FactInternetSales[SalesAmount])
-VAR vRelation = SUMMARIZECOLUMNS (
-        DimProduct[Color], 
-        DimProduct[ProductKey], 
-        FactInternetSales[OrderDate], 
-        DimDate[DayNumberOfWeek], 
-        FILTER(VALUES(DimProduct[ProductKey]), [ProductKey] < 350), 
-        FILTER(VALUES(FactInternetSales[OrderDate]), [OrderDate] < dt"2011-1-15"), 
-        "Total Sales", DimProduct[TotalSales]
-    ) 
-EVALUATE
-ADDCOLUMNS (
-    vRelation, 
-    "Dynamic Position Sales", 
-    SELECTCOLUMNS(INDEX([DayNumberOfWeek], vRelation, ORDERBY([ProductKey], ASC, [OrderDate]), PARTITIONBY([Color])), "Dynamic Position Sales", [TotalSales])
-)
-ORDER BY [Color], [ProductKey] ASC, [OrderDate]
-```
-
-Returns the following table:
-
-|DimProduct[Color]|DimProduct[ProductKey]|FactInternetSales[OrderDate]|DimDate[DayNumberOfWeek]|[Total Sales]|[Dynamic Position Sales]|
-|---------|---------|---------|---------|---------|---------|
-|Black|332|1/4/2011 12:00:00 AM|1|699.0982|699.0982|
-|Black|332|1/5/2011 12:00:00 AM|2|699.0982|699.0982|
-|Black|332|1/12/2011 12:00:00 AM|2|699.0982|699.0982|
-|Black|336|12/29/2010 12:00:00 AM|2|699.0982|699.0982|
-|Black|336|1/2/2011 12:00:00 AM|6|699.0982   |        |
-|Red|310|12/29/2010 12:00:00 AM|2|3578.27|3578.27|
-|Red|310|12/30/2010 12:00:00 AM|3|3578.27|3578.27|
-|Red|310|1/2/2011 12:00:00 AM|6|3578.27|3578.27|
-|Red|310|1/3/2011 12:00:00 AM|7|3578.27|3578.27|
-|Red|310|1/7/2011 12:00:00 AM|4|3578.27|3578.27|
-|Red|310|1/8/2011 12:00:00 AM|5|3578.27|3578.27|
-|Red|310|1/9/2011 12:00:00 AM|6|3578.27|3578.27|
-|Red|310|1/11/2011 12:00:00 AM|1|3578.27|3578.27|
-|Red|310|1/13/2011 12:00:00 AM|3|10734.81|3578.27|
-|Red|310|1/14/2011 12:00:00 AM|4|3578.27|3578.27|
-|Red|311|12/30/2010 12:00:00 AM|3|3578.27|3578.27|
-|Red|311|1/1/2011 12:00:00 AM|5|3578.27|3578.27|
-|Red|311|1/2/2011 12:00:00 AM|6|7156.54|3578.27|
-|Red|311|1/3/2011 12:00:00 AM|7|7156.54|3578.27|
-|Red|311|1/4/2011 12:00:00 AM|1|3578.27|3578.27|
-|Red|311|1/5/2011 12:00:00 AM|2|7156.54|3578.27|
-|Red|311|1/8/2011 12:00:00 AM|5|3578.27|3578.27|
-|Red|311|1/10/2011 12:00:00 AM|7|3578.27|3578.27|
-|Red|311|1/11/2011 12:00:00 AM|1|7156.54|3578.27|
-|Red|311|1/12/2011 12:00:00 AM|2|3578.27|3578.27|
-|Red|312|12/31/2010 12:00:00 AM|4|7156.54|3578.27|
-|Red|312|1/3/2011 12:00:00 AM|7|3578.27|3578.27|
-|Red|312|1/4/2011 12:00:00 AM|1|3578.27|3578.27|
-|Red|312|1/6/2011 12:00:00 AM|3|3578.27|3578.27|
-|Red|312|1/7/2011 12:00:00 AM|4|3578.27|3578.27|
-|Red|312|1/8/2011 12:00:00 AM|5|7156.54|3578.27|
-|Red|312|1/10/2011 12:00:00 AM|7|3578.27|3578.27|
-|Red|312|1/12/2011 12:00:00 AM|2|3578.27|3578.27|
-|Red|313|12/31/2010 12:00:00 AM|4|3578.27|3578.27|
-|Red|313|1/6/2011 12:00:00 AM|3|3578.27|3578.27|
-|Red|313|1/9/2011 12:00:00 AM|6|3578.27|3578.27|
-|Red|313|1/11/2011 12:00:00 AM|1|7156.54|3578.27|
-|Red|313|1/14/2011 12:00:00 AM|4|3578.27|3578.27|
-|Red|314|12/31/2010 12:00:00 AM|4|3578.27|3578.27|
-|Red|314|1/1/2011 12:00:00 AM|5|3578.27|3578.27|
-|Red|314|1/2/2011 12:00:00 AM|6|3578.27|3578.27|
-|Red|314|1/6/2011 12:00:00 AM|3|3578.27|3578.27|
-|Red|314|1/9/2011 12:00:00 AM|6|3578.27|3578.27|
-|Red|314|1/11/2011 12:00:00 AM|1|7156.54|3578.27|
-|Red|314|1/13/2011 12:00:00 AM|3|3578.27|3578.27|
-|Red|314|1/14/2011 12:00:00 AM|4|3578.27|3578.27|
-|Red|330|12/31/2010 12:00:00 AM|4|699.0982|3578.27|
-|Silver|344|12/30/2010 12:00:00 AM|3|3399.99|6799.98|
-|Silver|346|12/29/2010 12:00:00 AM|2|10199.97|10199.97|
-|Silver|346|1/6/2011 12:00:00 AM|3|6799.98|6799.98|
-|Silver|346|1/7/2011 12:00:00 AM|4|3399.99|3399.99|
-|Silver|346|1/14/2011 12:00:00 AM|4|3399.99|3399.99|
-|Silver|347|1/9/2011 12:00:00 AM|6|3399.99|3399.99|
 
 ## See also
 

@@ -14,7 +14,7 @@ recommendations: false
 
 # OFFSET
 
-Returns a single row that is positioned either before or after the *current row* by a given offset, within the same table. If the current row cannot be deduced to a single row, multiple rows may be returned.
+Returns a single row that is positioned either before or after the *current row* within the same table, by a given offset. If the current row cannot be deduced to a single row, multiple rows may be returned.
   
 ## Syntax  
   

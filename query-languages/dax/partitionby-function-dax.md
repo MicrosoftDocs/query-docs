@@ -14,7 +14,7 @@ recommendations: false
 
 # PARTITIONBY
 
-Defines the columns that are used to partition a WINDOW function’s \<relation> parameter.
+Defines the columns that are used to partition a window function’s \<relation> parameter.
   
 ## Syntax  
   
@@ -26,7 +26,7 @@ PARTITIONBY ( <partitionBy_columnName>[, partitionBy_columnName [, …] ] )
   
 |Term|Definition|  
 |--------|--------------|  
-|partitionBy_columnName|The name of an existing column to be used to partition the window function’s \<relation>. |
+|partitionBy_columnName|The name of an existing column to be used to partition the WINDOW function’s \<relation>. |
 
 ## Return value
 
@@ -34,7 +34,7 @@ This function does not return a value.
   
 ## Remarks
 
-This function can only be used within a [WINDOW](window-function-dax.md) function expression.
+This function can only be used within a window function expression.
 
 ## Example
 

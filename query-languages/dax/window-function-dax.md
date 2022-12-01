@@ -50,7 +50,7 @@ Each \<orderBy> and \<partitionBy> column must have a corresponding outer value 
   - WINDOW final output is a union of these rows. 
 - If there is more than one corresponding outer column, an error is returned.
 
-If the non-volatile columns specified within \<orderBy> and \<partitionBy> cannot uniquely identify every row in \<relation>, then:
+If the columns specified within \<orderBy> and \<partitionBy> cannot uniquely identify every row in \<relation>, then:
 
 - WINDOW will try to find the least number of additional columns required to uniquely identify every row.
 - If such columns can be found, WINDOW will automatically append these new columns to \<orderBy>, and each partition is sorted using this new set of orderBy columns.  
@@ -63,40 +63,28 @@ An empty table is returned if:
 
 If WINDOW is used within a calculated column defined on the same table as \<relation>, and \<orderBy> is omitted, an error is returned.
 
-If the beginning of the window turns out to be negative, then it’s set to the first row. Similarly, if the end of the window is greater than the size of the partition, then it’s set to the last row.
+If the beginning of the window turns out be before the first row, then it’s set to the first row. Similarly, if the end of the window is after the last row of the partition, then it's set to the last row.
 
 ## Example
 
-The following DAX query:
+The following measure:
   
 ```dax
-DEFINE
-    TABLE t =
-    SUMMARIZECOLUMNS(
-        FactInternetSales[SalesTerritoryKey],
-        FactInternetSales[OrderDate],
-        FactInternetSales,
-        "sales",
-        sum(FactInternetSales[SalesAmount])
-        )
-
-        evaluate
-        SELECTCOLUMNS(
-            t,
-            t[SalesTerritoryKey],
-            t[OrderDate],
-            t[sales],
-            "sum of sales from beginning",
-            CALCULATE (
-                sum(t[sales]), 
-                window(1, abs, 0, rel, ALL(t), orderBy([OrderDate]), PARTITIONBY([SalesTerritoryKey]))
-            )
-        )
-        orderBy [SalesTerritoryKey], [OrderDate]
+3-day Average Price = 
+AVERAGEX(
+    WINDOW(
+        -2,REL,0,REL,
+        SUMMARIZE(ALLSELECTED('Sales'), 'Date'[Date], 'Product'[Product]),
+        ORDERBY('Date'[Date]),
+        KEEP,
+        PARTITIONBY('Product'[Product])
+    ), 
+    CALCULATE(AVERAGE(Sales[Unit Price]))
+)
 
 ```
 
-Returns a table that for each date and location has total amount of sales for that location from beginning of history up to the current date.
+Returns the 3-day average of unit prices for each product. Note the 3-day window consists of three days in which the product has sales, not necessarily three consecutive calendar days.
 
 ## See also
 

@@ -24,7 +24,7 @@ While functions and functionality are being updated all the time, only those upd
 |Function  |Month  | Description |
 |---------|---------|---------|
 |[INDEX](index-function-dax.md)| December, 2022 | Returns a row at an absolute position, specified by the position parameter, within the specified partition, sorted by the specified order or on the specified axis.|
-|[OFFSET](offset-function-dax.md)| December, 2022 | Returns a single row that is positioned either before or after the *current row* by a given offset, within the same table. |
+|[OFFSET](offset-function-dax.md)| December, 2022 | Returns a single row that is positioned either before or after the *current row* within the same table, by a given offset.|
 |[ORDERBY](orderby-function-dax.md)| December, 2022 | Defines the columns that determine the sort order within each of a WINDOW function’s partitions.|
 |[PARTITIONBY](partitionby-function-dax.md)| December, 2022 | Defines the columns that are used to partition a WINDOW function’s \<relation> parameter.|
 |[WINDOW](window-function-dax.md)| December, 2022 | Returns multiple rows which are positioned within the given interval.  |
@@ -32,13 +32,3 @@ While functions and functionality are being updated all the time, only those upd
 |[TOCSV](tocsv-function-dax.md) | November, 2022 |  Returns a table as a string in CSV format. This function applies to Power BI Desktop only. |
 |[TOJSON](tojson-function-dax.md) | November, 2022 |  Returns a table as a string in JSON format. This function applies to Power BI Desktop only. |
 |[NETWORKDAYS](networkdays-dax.md)| July, 2022 |  Returns the number of whole workdays between two dates. |
-
-
-## Updated functions
-
-|Function  | Month  |Description|
-|---------|---------|---------|
-|[CALCULATE](calculate-function-dax.md)| September, 2021 |Support for aggregation functions in boolean filter expressions.|
-|[CALCULATETABLE](calculatetable-function-dax.md)| September, 2021 |Support for aggregation functions in boolean filter expressions.|
-|[FORMAT](format-function-dax.md)| September, 2021 |Additional locale_name parameter that specifies the name of a locale to be used by format_string.|
-|[XIRR](xirr-function-dax.md)| September, 2021 |Additional alternateResult parameter that specifies a result to be returned instead of an error if XIRR cannot determine a solution.|
