@@ -26,7 +26,7 @@ PARTITIONBY ( <partitionBy_columnName>[, partitionBy_columnName [, …] ] )
   
 |Term|Definition|  
 |--------|--------------|  
-|partitionBy_columnName|The name of an existing column to be used to partition the WINDOW function’s \<relation>. |
+|partitionBy_columnName|The name of an existing column to be used to partition the window function’s \<relation>. |
 
 ## Return value
 
