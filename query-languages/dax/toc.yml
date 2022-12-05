@@ -161,14 +161,24 @@
               href: earliest-function-dax.md
             - name: FILTER
               href: filter-function-dax.md
+            - name: INDEX
+              href: index-function-dax.md
             - name: KEEPFILTERS
               href: keepfilters-function-dax.md
             - name: LOOKUPVALUE
               href: lookupvalue-function-dax.md
+            - name: OFFSET
+              href: offset-function-dax.md
+            - name: ORDERBY
+              href: orderby-function-dax.md
+            - name: PARTITIONBY
+              href: partitionby-function-dax.md
             - name: REMOVEFILTERS
               href: removefilters-function-dax.md
             - name: SELECTEDVALUE
               href: selectedvalue-function.md
+            - name: WINDOW
+              href: window-function-dax.md
         - name: Financial functions
           items:
             - name: Financial functions overview
