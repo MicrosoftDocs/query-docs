@@ -47,7 +47,7 @@ Each \<partitionBy> column must have a corresponding outer value to help define 
   - INDEX’s final output is a union of these rows.
 - If there is more than one corresponding outer column, an error is returned.
 
-If the non-volatile columns specified within \<orderBy> and \<partitionBy> cannot uniquely identify every row in \<relation>:
+If the columns specified within \<orderBy> and \<partitionBy> cannot uniquely identify every row in \<relation>:
 
 - INDEX will try to find the least number of additional columns required to uniquely identify every row.
 - If such columns can be found, INDEX will automatically append these new columns to \<orderBy>, and each partition is sorted using this new set of OrderBy columns.  
