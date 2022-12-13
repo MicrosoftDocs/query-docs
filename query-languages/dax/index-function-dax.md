@@ -28,7 +28,7 @@ INDEX(<position>[, <relation>][, <orderBy>][, <blanks>][, <partitionBy>])
 |--------|--------------|  
 |position|The absolute position (1-based) from which to obtain the data: </br> - \<position> is positive: 1 is the first row, 2 is the second row, etc. </br> -  \<position> is negative: -1 is the last row, -2 is the second last row, etc. </br> When \<position> is out of the boundary, or zero, or BLANK(), INDEX will return an empty table. It can be any DAX expression that returns a scalar value.|
 |relation|(Optional) A table expression from which the output is returned. </br> If specified, all columns in \<orderBy> and \<partitionBy> must come from it.  </br> If omitted: </br> - \<orderBy> must be explicitly specified. </br> - All \<orderBy> and \<partitionBy> columns must come from a single table. </br> - Defaults to ALLSELECTED() of all columns in \<orderBy> and \<partitionBy>.
-|orderBy|(Optional) An ORDERBY() clause containing the columns that define how each partition is sorted. </br>If omitted: </br>- \<relation> must be explicitly specified. </br>- Defaults to ordering by every column in \<relation>.|
+|orderBy|(Optional) An ORDERBY() clause containing the columns that define how each partition is sorted. </br>If omitted: </br>- \<relation> must be explicitly specified. </br>- Defaults to ordering by every column in \<relation> that is not already specified in \<partitionBy>.|
 |blanks|(Optional) An enumeration that defines how to handle blank values when sorting. </br>This parameter is reserved for future use. </br>Currently, the only supported value is KEEP (default), where the behavior for numerical/date values is blank values are ordered between zero and negative values. The behavior for strings is blank values are ordered before all strings, including empty strings.|
 |partitionBy|(Optional) A PARTITIONBY() clause containing the columns that define how \<relation> is partitioned. </br> If omitted, \<relation> is treated as a single partition. |
 
@@ -47,7 +47,7 @@ Each \<partitionBy> column must have a corresponding outer value to help define 
   - INDEX’s final output is a union of these rows.
 - If there is more than one corresponding outer column, an error is returned.
 
-If the non-volatile columns specified within \<orderBy> and \<partitionBy> cannot uniquely identify every row in \<relation>:
+If the columns specified within \<orderBy> and \<partitionBy> cannot uniquely identify every row in \<relation>:
 
 - INDEX will try to find the least number of additional columns required to uniquely identify every row.
 - If such columns can be found, INDEX will automatically append these new columns to \<orderBy>, and each partition is sorted using this new set of OrderBy columns.  
