@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Diagnostics.Trace"
 title: "Diagnostics.Trace"
-ms.date: 10/7/2022
+ms.date: 12/19/2022
 ---
 # Diagnostics.Trace
 
@@ -15,11 +15,11 @@ Diagnostics.Trace(<b>traceLevel</b> as number, <b>message</b> as anynonnull, <b>
 
 Writes a trace `message`, if tracing is enabled, and returns `value`. An optional parameter `delayed` specifies whether to delay the evaluation of `value` until the message is traced. `traceLevel` can take one of the following values:
 
-- [TraceLevel.Critical](/powerquery-m/tracelevel-critical)
-- [TraceLevel.Error](/powerquery-m/tracelevel-error)
-- [TraceLevel.Warning](/powerquery-m/tracelevel-warning)
-- [TraceLevel.Information](/powerquery-m/tracelevel-information)
-- [TraceLevel.Verbose](/powerquery-m/tracelevel-verbose)
+- [TraceLevel.Critical](tracelevel-type.md)
+- [TraceLevel.Error](tracelevel-type.md)
+- [TraceLevel.Warning](tracelevel-type.md)
+- [TraceLevel.Information](tracelevel-type.md)
+- [TraceLevel.Verbose](tracelevel-type.md)
 
 ## Example 1
 

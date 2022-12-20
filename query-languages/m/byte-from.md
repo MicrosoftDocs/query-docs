@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Byte.From"
 title: "Byte.From"
-ms.date: 10/7/2022
+ms.date: 12/19/2022
 ---
 # Byte.From
 
@@ -31,7 +31,7 @@ Byte.From("4")
 
 ## Example 2
 
-Get the 8-bit integer `number` value of `"4.5"` using [RoundingMode.AwayFromZero](/powerquery-m/roundingmode-awayfromzero).
+Get the 8-bit integer `number` value of `"4.5"` using [RoundingMode.AwayFromZero](roundingmode-type.md).
 
 **Usage**
 

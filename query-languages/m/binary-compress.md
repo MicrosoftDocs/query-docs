@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Binary.Compress"
 title: "Binary.Compress"
-ms.date: 3/11/2022
+ms.date: 12/19/2022
 ---
 # Binary.Compress
 
@@ -15,8 +15,8 @@ Binary.Compress(<b>binary</b> as nullable binary, <b>compressionType</b> as numb
 
 Compresses a binary value using the given compression type. The result of this call is a compressed copy of the input. Compression types include:
 
-* [Compression.GZip](/powerquery-m/compression-gzip)
-* [Compression.Deflate](/powerquery-m/compression-deflate)
+* [Compression.GZip](compression-type.md)
+* [Compression.Deflate](compression-type.md)
 
 ## Example 1
 
