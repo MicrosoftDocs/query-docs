@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number.Round"
 title: "Number.Round"
-ms.date: 4/13/2022
+ms.date: 12/19/2022
 ---
 # Number.Round
 
@@ -15,7 +15,7 @@ Number.Round(<b>number</b> as nullable number, optional <b>digits</b> as nullabl
 
 Returns the result of rounding `number` to the nearest number. If `number` is null, **Number.Round** returns null.
 
-By default, `number` is rounded to the nearest integer, and ties are broken by rounding to the nearest even number (using [RoundingMode.ToEven](/powerquery-m/roundingmode-toeven), also known as "banker's rounding").
+By default, `number` is rounded to the nearest integer, and ties are broken by rounding to the nearest even number (using [RoundingMode.ToEven](roundingmode-type.md), also known as "banker's rounding").
 
 However, these defaults can be overridden via the following optional parameters.
 
