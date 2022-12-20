@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Int8.From"
 title: "Int8.From"
-ms.date: 10/7/2022
+ms.date: 12/19/2022
 ---
 # Int8.From
 
@@ -31,7 +31,7 @@ Int8.From("4")
 
 ## Example 2
 
-Get the signed 8-bit integer `number` value of `"4.5"` using [RoundingMode.AwayFromZero](/powerquery-m/roundingmode-awayfromzero).
+Get the signed 8-bit integer `number` value of `"4.5"` using [RoundingMode.AwayFromZero](roundingmode-type.md).
 
 **Usage**
 
