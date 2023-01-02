@@ -55,40 +55,48 @@ Raising an error will cause the current expression evaluation to stop, and the e
 
 ## Handling errors
 
-An _error-handling-expression_ is used to handle an error:
+An _error-handling-expression_ (informally known as a "`try` expression") is used to handle an error:
 
 _error-handling-expression:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`try` _protected-expression otherwise-clause<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`try` _protected-expression 
+error-handler<sub>opt</sub><br/>
 protected-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
+_error-handler:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;otherwise-clause<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;catch-function<br/>
 otherwise-clause:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`otherwise` _default-expression<br/>
-default-expression:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`otherwise` _default-expression_<br/>
+_default-expression_:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_expression_<br/>
+_catch-function:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(`_parameter-name_<sub>opt</sub>`)` `=>` _function-body_<br/>
 
-The following holds when evaluating an _error-handling-expression_ without an _otherwiseclause_:
+The following holds when evaluating an _error-handling-expression_ without an _error-handler_:
 
-* If the evaluation of the protected-expression does not result in an error and produces a value x, the value produced by the error-handling-expression is a record of the following form:
+* If the evaluation of the _protected-expression_ does not result in an error and produces a value x, the value produced by the _error-handling-expression_ is a record of the following form:
 
 ```powerquery-m
     [ HasErrors = false, Value = x ]
 ```
 
-* If the evaluation of the protected-expression raises an error value e, the result of the error-handling-expression is a record of the following form:
+* If the evaluation of the _protected-expression_ raises an error value e, the result of the _error-handling-expression_ is a record of the following form:
 
 ```powerquery-m
     [ HasErrors = true, Error = e ]
 ```
 
-The following holds when evaluating an _error-handling-expression_ with an _otherwiseclause_:
+The following holds when evaluating an _error-handling-expression_ with an _error-handler_:
 
-* The protected-expression must be evaluated before the otherwise-clause.
+* The _protected-expression_ must be evaluated before the _error-handler_.
 
-* The otherwise-clause must be evaluated if and only if the evaluation of the protectedexpression raises an error.
+* The _error-handler_ must be evaluated if and only if the evaluation of the _protected-expression_ raises an error.
 
-* If the evaluation of the _protected-expression_ raises an error, the value produced by the _error-handling-expression_ is the result of evaluating the otherwise-clause.
+* If the evaluation of the _protected-expression_ raises an error, the value produced by the _error-handling-expression_ is the result of evaluating the _error-handler_.
 
-* Errors raised during the evaluation of the otherwise-clause are propagated.
+* Errors raised during the evaluation of the _error-handler_ are propagated.
+
+* When an _error-handler_ is evaluated that is _catch-function_, the function defined by the _catch-function_ is invoked. If that function accepts a parameter, the error value will be passed as its value. 
 
 The following example illustrates an _error-handling-expression_ in a case where no error is raised:
 
@@ -110,19 +118,47 @@ in
 // [ Reason = "Expression.Error", Message = "A", Detail = null ]
 ```
 
-An otherwise clause can be used to replace errors handled by a try expression with an alternative value:
+The preceding effect can be achieved with less syntax by using a _catch-function_ that accepts a parameter:
+```powerquery-m
+let
+    x = try error "A" catch (e) => e
+in
+    x
+// [ Reason = "Expression.Error", Message = "A", Detail = null ]
+```
+
+An _otherwise-clause_ can be used to replace errors handled by a try expression with an alternative value:
 
 ```powerquery-m
 try error "A" otherwise 1 
 // 1
 ```
 
-If the otherwise clause also raises an error, then so does the entire try expression:
+A _catch-function_ that does not accept a parameter is effectively a long-form alternate syntax for an _otherwise-clause_:
+
+```powerquery-m
+try error "A" catch () => 1 
+// 1
+```
+
+If the _error-handler_ also raises an error, then so does the entire try expression:
 
 ```powerquery-m
 try error "A" otherwise error "B" 
 // error with message "B"
 ```
+
+```powerquery-m
+try error "A" catch () => error "B" 
+// error with message "B"
+```
+
+```powerquery-m
+try error "A" catch (e) => error "B" 
+// error with message "B"
+```
+
+
 
 ## Errors in record and let initializers
 
