@@ -118,7 +118,7 @@ in
 // [ Reason = "Expression.Error", Message = "A", Detail = null ]
 ```
 
-The preceding effect can be achieved with less syntax by using a _catch-function_ that accepts a parameter:
+The preceding example can be rewritten with less syntax by using a _catch-function_ that accepts a parameter:
 ```powerquery-m
 let
     x = try error "A" catch (e) => e
