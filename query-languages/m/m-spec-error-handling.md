@@ -134,7 +134,7 @@ try error "A" otherwise 1
 // 1
 ```
 
-A _catch-function_ that does not accept a parameter is effectively a long-form alternate syntax for an _otherwise-clause_:
+A _catch-function_ that does not accept a parameter is effectively a longer alternate syntax for an _otherwise-clause_:
 
 ```powerquery-m
 try error "A" catch () => 1 
