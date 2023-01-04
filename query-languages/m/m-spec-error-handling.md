@@ -98,7 +98,7 @@ The following holds when evaluating an _error-handling-expression_ with an _erro
 
 * Errors raised during the evaluation of the _error-handler_ are propagated.
 
-* When an _error-handler_ is evaluated that is a _catch-clause_, the  _catch-function_ is invoked. If that function accepts a parameter, the error value will be passed as its value. 
+* When the _error-handler_ being evaluated is a _catch-clause_, the  _catch-function_ is invoked. If that function accepts a parameter, the error value will be passed as its value. 
 
 The following example illustrates an _error-handling-expression_ in a case where no error is raised:
 
