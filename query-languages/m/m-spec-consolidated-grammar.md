@@ -570,11 +570,13 @@ protected-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
 _error-handler:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;otherwise-clause<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;catch-function<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;catch-clause<br/>
 otherwise-clause:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`otherwise` _default-expression_<br/>
 _default-expression_:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_expression_<br/>
+_catch-clause:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`catch` _catch-function_<br/>
 _catch-function:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(`_parameter-name_<sub>opt</sub>`)` `=>` _function-body_<br/>
 

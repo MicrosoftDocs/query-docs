@@ -55,7 +55,7 @@ Raising an error will cause the current expression evaluation to stop, and the e
 
 ## Handling errors
 
-An _error-handling-expression_ (informally known as a "`try` expression") is used to handle an error:
+An _error-handling-expression_ (informally known as a "try expression") is used to handle an error:
 
 _error-handling-expression:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`try` _protected-expression 
@@ -64,11 +64,13 @@ protected-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
 _error-handler:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;otherwise-clause<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;catch-function<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;catch-clause<br/>
 otherwise-clause:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`otherwise` _default-expression_<br/>
 _default-expression_:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_expression_<br/>
+_catch-clause:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`catch` _catch-function_<br/>
 _catch-function:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(`_parameter-name_<sub>opt</sub>`)` `=>` _function-body_<br/>
 
@@ -96,7 +98,7 @@ The following holds when evaluating an _error-handling-expression_ with an _erro
 
 * Errors raised during the evaluation of the _error-handler_ are propagated.
 
-* When an _error-handler_ is evaluated that is a _catch-function_, the function defined by the _catch-function_ is invoked. If that function accepts a parameter, the error value will be passed as its value. 
+* When an _error-handler_ is evaluated that is a _catch-clause_, the  _catch-function_ is invoked. If that function accepts a parameter, the error value will be passed as its value. 
 
 The following example illustrates an _error-handling-expression_ in a case where no error is raised:
 
@@ -118,7 +120,7 @@ in
 // [ Reason = "Expression.Error", Message = "A", Detail = null ]
 ```
 
-The preceding example can be rewritten with less syntax by using a _catch-function_ that accepts a parameter:
+The preceding example can be rewritten with less syntax by using a _catch-clause_ with a _catch-function_ that accepts a parameter:
 ```powerquery-m
 let
     x = try error "A" catch (e) => e
@@ -134,7 +136,7 @@ try error "A" otherwise 1
 // 1
 ```
 
-A _catch-function_ that does not accept a parameter is effectively a longer alternate syntax for an _otherwise-clause_:
+A _catch-clause_ with a zero-parameter _catch-function_ is effectively a longer, alternate syntax for an _otherwise-clause_:
 
 ```powerquery-m
 try error "A" catch () => 1 
