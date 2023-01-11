@@ -25,3 +25,9 @@ In this DAX 101 video, Microsoft Partner, Alberto Ferrari introduces essential c
 In this advanced DAX video, Microsoft Partner, Alberto Ferrari describes DAX theory, filter and row context, and other essential concepts in DAX.
 
 > [!VIDEO https://www.youtube.com/embed/6ncHnWMEdic]
+
+## Practical DAX for Power BI
+
+In this video, Microsoft Principal Program Manager, Phil Seamark, walks through some best practices for practical uses of DAX in Power BI.
+
+> [!VIDEO https://www.youtube.com/embed/1fGfqzS37qs]
