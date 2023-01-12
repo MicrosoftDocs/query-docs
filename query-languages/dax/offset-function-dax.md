@@ -49,7 +49,7 @@ Except for columns added by DAX table functions, each column in \<relation> must
 
 If all of \<relation>'s columns were added by DAX table functions, an error is returned.
 
-If the non-volatile columns specified within \<orderBy> and \<partitionBy> can't uniquely identify every row in \<relation>, then:
+If the columns specified within \<orderBy> and \<partitionBy> can't uniquely identify every row in \<relation>, then:
 
 - OFFSET will try to find the least number of additional columns required to uniquely identify every row.
 - If such columns can be found, OFFSET will automatically append these new columns to \<orderBy>, and each partition is sorted using this new set of OrderBy columns.  
