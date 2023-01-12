@@ -19,15 +19,16 @@ Defines the expressions that determine the sort order within each of a window fu
 ## Syntax  
   
 ```dax
-ORDERBY ( <orderBy_expression>[, <order>][, orderBy_expression [, <order>]] [, …] )
+ORDERBY ( [<orderBy_expression>[, <order>[, <orderBy_expression>[, <order>]] …]] )
 ```
   
 ### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  
-|orderBy_expression|Any scalar expression that will be used used to sort the data within each of a window function’s partitions.|
-|order|(Optional) A value that specifies how to sort \<orderBy_expression> values, ascending or descending:<br> Value: **DESC**. Alternative value: **0**(zero)/**FALSE**. Sorts in descending order of values of \<orderBy_expression>. <br> Value: **ASC**. Alternative value: **1**/**TRUE**. Sorts in ascending order of values of \<orderBy_expression>. This is the default value if \<order> is omitted.|
+|orderBy_expression|(Optional) Any scalar expression that will be used used to sort the data within each of a window function’s partitions.|
+|order|(Optional) A two-part value of the form "\<OrderDirection> \<BlankHandling>".<br><br> \<OrderDirection> specifies how to sort \<orderBy_expression> values (i.e. ascending or descending). Valid values include:<br> **DESC**. Alternative value: **0**(zero)/**FALSE**. Sorts in descending order of values of \<orderBy_expression>. <br> **ASC**. Alternative value: **1**/**TRUE**. Sorts in ascending order of values of \<orderBy_expression>. This is the default value if \<order> is omitted.<br><br> \<BlankHandling>, an optional value, specifies how blanks are compared to non-blank values. Valid values include:<br> **BLANKS DEFAULT**. For numeric types, blanks are less than 0 but greater than negative values. For strings, blanks are less than all strings including empty strings.<br> **BLANKS FIRST**. Blanks are considered less than non-blank values.<br> **BLANKS LAST**. Blanks are considered greater than non-blank values.
+|
 
 ## Return value
 
