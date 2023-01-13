@@ -1,3 +1,16 @@
+---
+description: "Learn more about: RANK"
+title: "RANK function (DAX) | Microsoft Docs"
+ms.service: powerbi 
+ms.subservice: dax
+ms.date: 01/13/2023
+ms.topic: reference
+author: rahulten
+ms.author: rahulten
+recommendations: false
+
+---
+
 # RANK
 
 Returns the ranking for the current context within the specified partition, sorted by the specified order. If a match cannot be found then then rank is blank.
