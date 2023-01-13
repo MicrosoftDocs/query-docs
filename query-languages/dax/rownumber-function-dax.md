@@ -68,4 +68,4 @@ Returns a table that uniquely ranks each geography with the same EnglishCountryR
 [ORDERBY](orderby-function-dax.md)  
 [PARTITIONBY](partitionby-function-dax.md)  
 [WINDOW](window-function-dax.md)  
-[ROWNUMBER](rownumber-function-dax.md)
+[RANK](rank-function-dax.md)
