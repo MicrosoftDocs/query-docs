@@ -131,4 +131,6 @@ Returns the following table:
 [OFFSET](offset-function-dax.md)  
 [ORDERBY](orderby-function-dax.md)  
 [PARTITIONBY](partitionby-function-dax.md)  
-[WINDOW](window-function-dax.md)
+[WINDOW](window-function-dax.md)  
+[RANK](rank-function-dax.md)  
+[ROWNUMBER](rownumber-function-dax.md)

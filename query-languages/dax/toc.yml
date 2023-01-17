@@ -173,8 +173,12 @@
               href: orderby-function-dax.md
             - name: PARTITIONBY
               href: partitionby-function-dax.md
+            - name: RANK
+              href: rank-function-dax.md
             - name: REMOVEFILTERS
               href: removefilters-function-dax.md
+            - name: ROWNUMBER
+              href: rownumber-function-dax.md
             - name: SELECTEDVALUE
               href: selectedvalue-function.md
             - name: WINDOW
