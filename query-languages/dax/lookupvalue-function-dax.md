@@ -52,6 +52,8 @@ If multiple rows match the search values and in all cases **result_column** valu
 
 - Avoid using ISERROR or IFERROR functions to capture an error returned by LOOKUPVALUE. If some inputs to the function will result in an error when a single output value cannot be determined, providing an alternateResult parameter is the most reliable and highest performing way to handle the error.
 
+- The **alternateResult** parameter will throw an error if specified in a PowerPivot calculated column.
+
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example
