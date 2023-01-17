@@ -34,8 +34,8 @@ The filter and value functions in DAX are some of the most complex and powerful,
 |[OFFSET](offset-function-dax.md)|Returns a single row that is positioned either before or after the *current row* within the same table, by a given offset. |
 |[ORDERBY](orderby-function-dax.md)|Defines the columns that determine the sort order within each of a WINDOW function’s partitions.|
 |[PARTITIONBY](partitionby-function-dax.md)|Defines the columns that are used to partition a WINDOW function’s \<relation> parameter.|
+|[RANK](rank-function-dax.md)| Returns the ranking of a row within the given interval.  |
 |[REMOVEFILTERS](removefilters-function-dax.md)|Clears filters from the specified tables or columns.|
+|[ROWNUMBER](rownumber-function-dax.md)| Returns the unique ranking of a row within the given interval.  |
 |[SELECTEDVALUE](selectedvalue-function.md)     |  Returns the value when the context for columnName has been filtered down to one distinct value only. Otherwise returns alternateResult.         |
 |[WINDOW](window-function-dax.md)| Returns multiple rows which are positioned within the given interval.  |
-|[RANK](rank-function-dax.md)| Returns the ranking of a row within the given interval.  |
-|[ROWNUMBER](rownumber-function-dax.md)| Returns the unique ranking of a row within the given interval.  |
