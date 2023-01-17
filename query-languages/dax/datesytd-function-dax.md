@@ -57,7 +57,7 @@ The following sample formula creates a measure that calculates the 'Running Tota
 = CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESYTD(DateTime[DateKey]))  
 ```
 
-The following sample formula creates a measure that calculates the 'Fiscal YearRunning Total' for Internet sales, using a US Locale for the Date format.  
+The following sample formula creates a measure that calculates the 'Fiscal Year Running Total' for Internet sales, using a US Locale for the Date format.  
   
 ```dax
 = CALCULATE(
