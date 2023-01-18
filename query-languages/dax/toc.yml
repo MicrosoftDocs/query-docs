@@ -177,6 +177,8 @@
               href: orderby-function-dax.md
             - name: PARTITIONBY
               href: partitionby-function-dax.md
+            - name: RANGE
+              href: range-function-dax.md
             - name: RANK
               href: rank-function-dax.md
             - name: REMOVEFILTERS
@@ -507,6 +509,10 @@
               href: error-function.md
             - name: EVALUATEANDLOG
               href: evaluateandlog-function-dax.md
+            - name: MOVINGAVERAGE
+              href: movingaverage-function-dax.md
+            - name: RUNNINGSUM
+              href: runningsum-function-dax.md
             - name: TOCSV
               href: tocsv-function-dax.md
             - name: TOJSON
