@@ -80,7 +80,9 @@ Returns a single-row table with ten columns:
 
 For a given sales territory, this model predicts total sales by the following formula:
 
-	Total Sales = Slope1 * Population + Intercept
+```
+Total Sales = Slope1 * Population + Intercept
+```
 
 ## Example 2
 
@@ -116,7 +118,9 @@ Returns a single-row table with twelve columns:
 
 For a given customer, this model predicts total sales by the following formula:
 
-	Total Sales = Slope1 * Age + Slope2 * NumOfChildren + Intercept
+```
+Total Sales = Slope1 * Age + Slope2 * NumOfChildren + Intercept
+```
 
 ## See also
 
