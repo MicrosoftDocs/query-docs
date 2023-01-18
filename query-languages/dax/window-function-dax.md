@@ -173,9 +173,11 @@ Returns the cumulative total sales by month, calculated along each quarter.
 ## Related content
 
 [INDEX](index-function-dax.md)  
+[MOVINGAVERAGE](movingaverage-function-dax.md)  
 [OFFSET](offset-function-dax.md)  
 [ORDERBY](orderby-function-dax.md)  
 [PARTITIONBY](partitionby-function-dax.md)  
 [RANGE](range-function-dax.md)  
 [RANK](rank-function-dax.md)  
 [ROWNUMBER](rownumber-function-dax.md)
+[RUNNINGSUM](runningsum-function-dax.md)  

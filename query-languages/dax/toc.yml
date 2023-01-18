@@ -171,6 +171,8 @@
               href: lookupvalue-function-dax.md
             - name: MATCHBY
               href: matchby-function-dax.md
+            - name: MOVINGAVERAGE
+              href: movingaverage-function-dax.md
             - name: OFFSET
               href: offset-function-dax.md
             - name: ORDERBY
@@ -185,6 +187,8 @@
               href: removefilters-function-dax.md
             - name: ROWNUMBER
               href: rownumber-function-dax.md
+            - name: RUNNINGSUM
+              href: runningsum-function-dax.md
             - name: SELECTEDVALUE
               href: selectedvalue-function.md
             - name: WINDOW
@@ -509,10 +513,6 @@
               href: error-function.md
             - name: EVALUATEANDLOG
               href: evaluateandlog-function-dax.md
-            - name: MOVINGAVERAGE
-              href: movingaverage-function-dax.md
-            - name: RUNNINGSUM
-              href: runningsum-function-dax.md
             - name: TOCSV
               href: tocsv-function-dax.md
             - name: TOJSON
