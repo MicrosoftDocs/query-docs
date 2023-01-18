@@ -561,6 +561,10 @@
               href: geomean-function-dax.md
             - name: GEOMEANX
               href: geomeanx-function-dax.md
+            - name: LINEST
+              href: linest-function-dax.md
+            - name: LINESTX
+              href: linestx-function-dax.md
             - name: MEDIAN
               href: median-function-dax.md
             - name: MEDIANX
