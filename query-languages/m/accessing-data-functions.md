@@ -85,9 +85,9 @@ These functions access data and return table values. Most of these functions ret
 |[Sybase.Database](sybase-database.md)|Returns a table with data relating to the tables in the specified Sybase Database.|
 |[Teradata.Database](teradata-database.md)|Returns a table with data relating to the tables in the specified Teradata Database.|
 |[WebAction.Request](webaction-request.md)|Creates an action that, when executed, will return the results of performing a method request against url using HTTP as a binary value.|
-|[Web.BrowserContents](web-browsercontents.md)|Returns the HTML for the specified url, as viewed by a web browser.|
-|[Web.Contents](web-contents.md)|Returns the contents downloaded from a web url as a binary value.|
-|[Web.Headers](web-headers.md)|Returns the HTTP headers downloaded from the url as a record value.|
+|[Web.BrowserContents](web-browsercontents.md)|Returns the HTML for the specified URL, as viewed by a web browser.|
+|[Web.Contents](web-contents.md)|Returns the contents downloaded from a web URL as a binary value.|
+|[Web.Headers](web-headers.md)|Returns the HTTP headers downloaded from the URL as a record value.|
 |[Web.Page](web-page.md)|Returns the contents of an HTML webpage as a table.|
 |[Xml.Document](xml-document.md)|Returns the contents of an XML document as a hierarchical table (list of records).|
 |[Xml.Tables](xml-tables.md)|Returns the contents of an XML document as a nested collection of flattened tables.|
