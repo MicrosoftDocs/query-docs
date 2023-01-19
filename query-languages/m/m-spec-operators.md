@@ -619,21 +619,21 @@ The following holds when evaluating an expression containing the relational oper
 
 * Errors raised when evaluating the `x` or `y` operand expressions are propagated.
 
-* The values produced by evaluating both the `x` and `y` expressions must be a number, date, datetime, datetimezone, duration, logical, null or time value. Otherwise, an error with reason code `"Expression.Error"` is raised.
+* The values produced by evaluating both the `x` and `y` expressions must be a date, datetime, datetimezone, duration, logical, number, null, text or time value. Otherwise, an error with reason code `"Expression.Error"` is raised.
+
+* Both operands must be of the same type or `null`. Otherwise, an error with reason code `"Expression.Error"` is raised.
 
 * If either or both operands are `null`, the result is the `null` value.
-
-* If both operands are logical, the value `true` is considered to be greater than `false`.
-
-* If both operands are durations, then the values are compared according to the total number of 100-nanosecond ticks they represent.
-
-* Two times are compared by comparing their hour parts and, if equal, their minute parts and, if equal, their second parts.
 
 * Two dates are compared by comparing their year parts and, if equal, their month parts and, if equal, their day parts.
 
 * Two datetimes are compared by comparing their year parts and, if equal, their month parts and, if equal, their day parts and, if equal, their hour parts and, if equal, their minute parts and, if equal, their second parts.
 
 * Two datetimezones are compared by normalizing them to UTC by subtracting their hour/minute offset and then comparing their datetime components.
+
+* Two durations are compared according to the total number of 100-nanosecond ticks they represent.
+
+* Two logicals are compared such that  `true` is considered to be greater than `false`.
 
 * Two numbers `x` and `y` are compared according to the rules of the IEEE 754 standard:
 
@@ -647,6 +647,11 @@ The following holds when evaluating an expression containing the relational oper
     * A `-#infinity` value is considered less than all other number values, but equal to another `-#infinity`.
 
     * A `#infinity` value is considered greater than all other number values, but equal to another `#infinity`.
+
+* Two texts are compared by using a character-by-character ordinal, case-sensitive, culture-insensitive comparison.
+
+* Two times are compared by comparing their hour parts and, if equal, their minute parts and, if equal, their second parts.
+
 
 ## Conditional logical operators
 
