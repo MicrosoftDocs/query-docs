@@ -621,7 +621,7 @@ The following holds when evaluating an expression containing the relational oper
 
 * The values produced by evaluating both the `x` and `y` expressions must be a binary, date, datetime, datetimezone, duration, logical, number, null, text or time value. Otherwise, an error with reason code `"Expression.Error"` is raised.
 
-* Both operands must be of the same type or `null`. Otherwise, an error with reason code `"Expression.Error"` is raised.
+* Both operands must be the same kind of value or `null`. Otherwise, an error with reason code `"Expression.Error"` is raised.
 
 * If either or both operands are `null`, the result is the `null` value.
 
