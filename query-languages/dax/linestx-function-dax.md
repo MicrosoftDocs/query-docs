@@ -34,9 +34,9 @@ LINESTX ( <table>, <expressionY>, <expressionX>[, …][, <const>] )
 
 A single-row table describing the line, plus additional statistics. These are the available columns:
 
-- **Slope1**, **Slope2**, ..., **Slopen**: the coefficients corresponding to each x-value;
+- **Slope1**, **Slope2**, ..., **SlopeN**: the coefficients corresponding to each x-value;
 - **Intercept**: intercept value;
-- **StandardErrorSlope1**, **StandardErrorSlope2**, ..., **StandardErrorSlopen**: the standard error values for the coefficients **Slope1**, **Slope2**, ..., **Slopen**;
+- **StandardErrorSlope1**, **StandardErrorSlope2**, ..., **StandardErrorSlopeN**: the standard error values for the coefficients **Slope1**, **Slope2**, ..., **SlopeN**;
 - **StandardErrorIntercept**: the standard error value for the constant **Intercept**;
 - **CoefficientOfDetermination**: the coefficient of determination (r²). Compares estimated and actual y-values, and ranges in value from 0 to 1: the higher the value, the higher the correlation in the sample;
 - **StandardError**: the standard error for the y estimate;
