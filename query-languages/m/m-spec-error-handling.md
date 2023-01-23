@@ -136,7 +136,7 @@ try error "A" otherwise 1
 // 1
 ```
 
-A _catch-clause_ with a zero-parameter _catch-function_ is effectively an alternative syntax for an _otherwise-clause_:
+A _catch-clause_ with a zero-parameter _catch-function_ is effectively a longer, alternative syntax for an _otherwise-clause_:
 
 ```powerquery-m
 try error "A" catch () => 1 
