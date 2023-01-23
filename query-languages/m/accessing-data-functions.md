@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Accessing data functions"
 title: "Accessing data functions"
-ms.date: 10/7/2022
+ms.date: 1/18/2023
 ---
 # Accessing data functions
 
@@ -54,7 +54,7 @@ These functions access data and return table values. Most of these functions ret
 |[HdInsight.Containers](hdinsight-containers.md)|Returns a navigational table containing all containers found in the HDInsight account. Each row has the container name and table containing its files.|
 |[HdInsight.Contents](hdinsight-contents.md)|Returns a navigational table containing all containers found in the HDInsight account. Each row has the container name and table containing its files.|
 |[HdInsight.Files](hdinsight-files.md)|Returns a table containing a row for each folder and file found at the container URL, and subfolders from an HDInsight account. Each row contains properties of the file/folder and a link to its content.|
-|[Html.Table](html-table.md)|Returns a table containing the results of running the specified CSS selectors against the provided html.|
+|[Html.Table](html-table.md)|Returns a table containing the results of running the specified CSS selectors against the provided HTML.|
 |[Identity.From](identity-from.md)|Creates an identity.|
 |[Identity.IsMemberOf](identity-ismemberof.md)|Determines whether an identity is a member of an identity collection.|
 |[IdentityProvider.Default](identityprovider-default.md)|The default identity provider for the current host.|
@@ -69,7 +69,7 @@ These functions access data and return table values. Most of these functions ret
 |[OleDb.DataSource](oledb-datasource.md)|Returns a table of SQL tables and views from the OLE DB data source specified by the connection string.|
 |[OleDb.Query](oledb-query.md)|Returns the result of running a native query on an OLE DB data source.|
 |[Oracle.Database](oracle-database.md)|Returns a table with data relating to the tables in the specified Oracle Database.|
-|[Pdf.Tables](pdf-tables.md)|Returns any tables found in pdf.|
+|[Pdf.Tables](pdf-tables.md)|Returns any tables found in a PDF file.|
 |[PostgreSQL.Database](postgresql-database.md)|Returns a table with data relating to the tables in the specified PostgreSQL Database.|
 |[RData.FromBinary](rdata-frombinary.md)|Returns a record of data frames from the RData file.|
 |[Salesforce.Data](salesforce-data.md)|Connects to the Salesforce Objects API and returns the set of available objects (i.e. Accounts).|
@@ -85,9 +85,9 @@ These functions access data and return table values. Most of these functions ret
 |[Sybase.Database](sybase-database.md)|Returns a table with data relating to the tables in the specified Sybase Database.|
 |[Teradata.Database](teradata-database.md)|Returns a table with data relating to the tables in the specified Teradata Database.|
 |[WebAction.Request](webaction-request.md)|Creates an action that, when executed, will return the results of performing a method request against url using HTTP as a binary value.|
-|[Web.BrowserContents](web-browsercontents.md)|Returns the HTML for the specified url, as viewed by a web browser.|
-|[Web.Contents](web-contents.md)|Returns the contents downloaded from a web url as a binary value.|
-|[Web.Headers](web-headers.md)|Returns the HTTP headers downloaded from the url as a record value.|
+|[Web.BrowserContents](web-browsercontents.md)|Returns the HTML for the specified URL, as viewed by a web browser.|
+|[Web.Contents](web-contents.md)|Returns the contents downloaded from a web URL as a binary value.|
+|[Web.Headers](web-headers.md)|Returns the HTTP headers downloaded from the URL as a record value.|
 |[Web.Page](web-page.md)|Returns the contents of an HTML webpage as a table.|
 |[Xml.Document](xml-document.md)|Returns the contents of an XML document as a hierarchical table (list of records).|
 |[Xml.Tables](xml-tables.md)|Returns the contents of an XML document as a nested collection of flattened tables.|

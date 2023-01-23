@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DateTime functions"
 title: "DateTime functions"
-ms.date: 5/16/2022
+ms.date: 1/18/2023
 ---
 # DateTime functions
 
@@ -9,8 +9,8 @@ These functions create and manipulate datetime and datetimezone values.
 
 |Name|Description|
 |------------|---------------|
-|[DateTime.AddZone](datetime-addzone.md)|Adds the timezonehours as an offset to the input datetime value and returns a new datetimezone value.|
-|[DateTime.Date](datetime-date.md)|Returns a date part from a DateTime value|
+|[DateTime.AddZone](datetime-addzone.md)|Adds timezone information to the datetime value.|
+|[DateTime.Date](datetime-date.md)|Returns a date part from a DateTime value.|
 |[DateTime.FixedLocalNow](datetime-fixedlocalnow.md)|Returns a DateTime value set to the current date and time on the system.|
 |[DateTime.From](datetime-from.md)|Returns a datetime value from a value.|
 |[DateTime.FromFileTime](datetime-fromfiletime.md)|Returns a DateTime value from the supplied number.|
