@@ -87,7 +87,7 @@ The following DAX query:
 EVALUATE LINEST(
 	'DimCustomer'[TotalSalesAmount],
 	'DimCustomer'[YearlyIncome],
-    'DimCustomer'[TotalChildren],
+	'DimCustomer'[TotalChildren],
 	'DimCustomer'[BirthDate]
 )
 ```
