@@ -53,14 +53,9 @@ A single-row table describing the line, plus additional statistics. These are th
 The following DAX query:
 
 ```dax
-DEFINE VAR TotalSalesByRegion = SUMMARIZECOLUMNS(
-    'Sales Territory'[Sales Territory Key],
-    'Sales Territory'[Population],
-    "Total Sales", SUM(Sales[Sales Amount])
-)
 EVALUATE LINEST(
-    'TotalSalesByRegion'[Total Sales],
-    'TotalSalesByRegion'[Population]
+	'FactInternetSales'[SalesAmount],
+	'FactInternetSales'[TotalProductCost]
 )
 ```
 
@@ -68,20 +63,20 @@ Returns a single-row table with ten columns:
 
 |Slope1|Intercept|StandardErrorSlope1|StandardErrorIntercept|CoefficientOfDetermination|
 |-----|-----|-----|-----|-----|
-|6.42271517588|-410592.76216|0.24959467764561|307826.343996223|0.973535860750193|
+|1.67703250456677|6.34550460373026|0.000448675725548806|0.279131821917317|0.995695557281456|
 
 |StandardError|FStatistic|DegreesOfFreedom|RegressionSumOfSquares|ResidualSumOfSquares|
 |-----|-----|-----|-----|-----|
-|630758.1747292|662.165707642|18|263446517001130|7161405749781.07|
+|60.9171030357485|13970688.6139993|60396|51843736761.658|224123120.339218|
 
 - **Slope1** and **Intercept**: the coefficients of the calculated linear model;
 - **StandardErrorSlope1** and **StandardErrorIntercept**: the standard error values for the coefficients above;
 - **CoefficientOfDetermination**, **StandardError**, **FStatistic**, **DegreesOfFreedom**, **RegressionSumOfSquares** and **ResidualSumOfSquares**: regression statistics about the model.
 
-For a given sales territory, this model predicts total sales by the following formula:
+For a given internet sale, this model predicts the sale amount by the following formula:
 
 ```
-Total Sales = Slope1 * Population + Intercept
+SalesAmount = Slope1 * TotalProductCost + Intercept
 ```
 
 ## Example 2
@@ -89,37 +84,35 @@ Total Sales = Slope1 * Population + Intercept
 The following DAX query:
 
 ```dax
-DEFINE VAR TotalSalesByCustomer = SUMMARIZECOLUMNS(
-    'Customer'[Customer ID],
-    'Customer'[Age],
-    'Customer'[NumOfChildren],
-    "Total Sales", SUM(Sales[Sales Amount])
-)
 EVALUATE LINEST(
-    'TotalSalesByCustomer'[Total Sales],
-    'TotalSalesByCustomer'[Age],
-    'TotalSalesByCustomer'[NumOfChildren]
+	'DimCustomer'[TotalSalesAmount],
+	'DimCustomer'[YearlyIncome],
+    'DimCustomer'[TotalChildren],
+	'DimCustomer'[BirthDate]
 )
 ```
 
-Returns a single-row table with twelve columns:
+Returns a single-row table with fourteen columns:
 
-|Slope1|Slope2|Intercept|StandardErrorSlope1|
-|--|--|--|--|
-|69.0435458093763|33.005949841721|-871.118539339539|0.872588875481658|
+- Slope1
+- Slope2
+- Slope3
+- Intercept
+- StandardErrorSlope1
+- StandardErrorSlope2
+- StandardErrorSlope3
+- StandardErrorIntercept
+- CoefficientOfDetermination
+- StandardError
+- FStatistic
+- DegreesOfFreedom
+- RegressionSumOfSquares
+- ResidualSumOfSquares
 
-|StandardErrorSlope2|StandardErrorIntercept|CoefficientOfDetermination|StandardError|
-|--|--|--|--|
-|6.21158863903435|26.726292527427|0.984892920482022|68.5715034014342|
-
-|FStatistic|DegreesOfFreedom|RegressionSumOfSquares|ResidualSumOfSquares|
-|--|--|--|--|
-|3161.91535144391|97|29734974.9782379|456098.954637092|
-
-For a given customer, this model predicts total sales by the following formula:
+For a given customer, this model predicts total sales by the following formula (the birth date is automatically converted to a number):
 
 ```
-Total Sales = Slope1 * Age + Slope2 * NumOfChildren + Intercept
+TotalSalesAmount = Slope1 * YearlyIncome + Slope2 * TotalChildren + Slope3 * BirthDate + Intercept
 ```
 
 ## See also
