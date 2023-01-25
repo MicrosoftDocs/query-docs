@@ -56,6 +56,7 @@ The following measure formula returns the top 10 sold products by sales amount.
             InternetSales_USD[SalesAmount_USD]) + SUMX(RELATED(ResellerSales_USD[SalesAmount_USD]), 
             ResellerSales_USD[SalesAmount_USD])
             )
-        )
+        ),
+    [Expression]
     )  
 ```
