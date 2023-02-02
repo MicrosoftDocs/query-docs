@@ -3,7 +3,7 @@ description: "Learn more about: TOPN"
 title: "TOPN function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax 
-ms.date: 06/08/2022
+ms.date: 02/01/2023
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -50,12 +50,16 @@ The following measure formula returns the top 10 sold products by sales amount.
   
 ```dax
 = SUMX(
-    TOPN(10, 
-        SUMMARIZE(Product, [ProductKey], "TotalSales", 
-            SUMX(RELATED(InternetSales_USD[SalesAmount_USD]), 
-            InternetSales_USD[SalesAmount_USD]) + SUMX(RELATED(ResellerSales_USD[SalesAmount_USD]), 
-            ResellerSales_USD[SalesAmount_USD])
-            )
-        )
-    )  
+        TOPN(
+            10, 
+            SUMMARIZE(
+                    InternetSales, 
+                    InternetSales[ProductKey], 
+                    "TotalSales", SUM(InternetSales[SalesAmount])
+            ),
+            [TotalSales], DESC
+        ),
+        [TotalSales]
+)
+ 
 ```
