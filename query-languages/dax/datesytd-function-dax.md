@@ -45,7 +45,7 @@ The **dates** argument can be any of the following:
     > [!NOTE]  
     > Constraints on Boolean expressions are described in the topic, [CALCULATE function](calculate-function-dax.md).  
   
-- The **year_end_date** parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is ignored.  
+- The **year_end_date** parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is ignored.  Depending on locale, the format might be something like "m-dd" or "dd-m".
   
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
@@ -55,6 +55,17 @@ The following sample formula creates a measure that calculates the 'Running Tota
   
 ```dax
 = CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESYTD(DateTime[DateKey]))  
+```
+
+The following sample formula creates a measure that calculates the 'Fiscal Year Running Total' for Internet sales, using a US Locale for the Date format.  
+  
+```dax
+= CALCULATE(
+    SUM(InternetSales_USD[SalesAmount_USD]), 
+    DATESYTD(DateTime[DateKey],
+        "6-30"
+        )
+)
 ```
   
 ## See also

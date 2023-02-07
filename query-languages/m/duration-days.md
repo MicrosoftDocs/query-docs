@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Duration.Days"
 title: "Duration.Days"
-ms.date: 10/7/2022
+ms.date: 1/18/2023
 ---
 # Duration.Days
 
@@ -17,14 +17,14 @@ Returns the days portion of `duration`.
 
 ## Example 1
 
-Extract the days from a duration value.
+Extract the number of days between two dates.
 
 **Usage**
 
 ```powerquery-m
-Duration.Days(#duration(5, 4, 3, 2))
+Duration.Days(#date(2022, 3, 4) - #date(2022, 2, 25))
 ```
 
 **Output**
 
-`5`
+`7`

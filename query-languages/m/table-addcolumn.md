@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.AddColumn"
 title: "Table.AddColumn"
-ms.date: 3/9/2022
+ms.date: 1/18/2023
 ---
 # Table.AddColumn
 
@@ -17,7 +17,7 @@ Adds a column named `newColumnName` to the table `table`. The values for the col
 
 ## Example 1
 
-Add a column named "TotalPrice" to the table with each value being the sum of column [Price] and column [Shipping].
+Add a number column named "TotalPrice" to the table, with each value being the sum of the [Price] and [Shipping] columns.
 
 **Usage**
 
@@ -29,7 +29,8 @@ Table.AddColumn(
         [OrderID = 3, CustomerID = 2, Item = "Fishing net", Price = 25.0, Shipping = 10.00]
     }),
     "TotalPrice",
-    each [Price] + [Shipping]
+    each [Price] + [Shipping],
+    type number
 )
 ```
 
