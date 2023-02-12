@@ -68,7 +68,7 @@ There are  two ways to get the count of products by year:
 When using DAX, we can use the CROSSFILTER function to change how the cross-filter direction behaves between two columns defined by a relationship. In this case, the DAX expression looks like this:  
   
 ```dax
-BiDi:= CALCULATE([Distinct Count of ProductKey], CROSSFILTER(FactInternetSales[ProductKey], DimProduct[ProductKey] , Both))
+BiDi:= CALCULATE([Distinct Count of ProductKey], CROSSFILTER(FactOnlineSales[ProductKey], DimProduct[ProductKey] , Both))
 ```
 
 By using the CROSSFILTER function in our measure expression, we get the expected results:  
