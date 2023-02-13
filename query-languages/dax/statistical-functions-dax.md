@@ -31,6 +31,8 @@ Statistical functions calculate values related to statistical distributions and 
 |[EXPON.DIST](expon-dist-function-dax.md)      |  Returns the exponential distribution.        |
 |[GEOMEAN](geomean-function-dax.md)     |  Returns the geometric mean of the numbers in a column.        |
 |[GEOMEANX](geomeanx-function-dax.md)      | Returns the geometric mean of an expression evaluated for each row in a table.        |
+|[LINEST](linest-function-dax.md)|Uses the Least Squares method to calculate a straight line that best fits the given data.|
+|[LINESTX](linestx-function-dax.md)|Uses the Least Squares method to calculate a straight line that best fits the given data. The data result from expressions evaluated for each row in a table.|
 |[MEDIAN](median-function-dax.md)     |  Returns the median of numbers in a column.       |
 |[MEDIANX](medianx-function-dax.md)     |   Returns the median number of an expression evaluated for each row in a table.       |
 |[NORM.DIST](norm-dist-dax.md)     |  Returns the normal distribution for the specified mean and standard deviation.        |
