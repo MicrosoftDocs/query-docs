@@ -2,7 +2,7 @@
 description: "Learn more about: New DAX functions"
 title: "New DAX functions | Microsoft Docs"
 ms.service: powerbi 
-ms.date: 06/20/2022
+ms.date: 02/16/2023
 ms.subservice: dax 
 ms.reviewer: owend
 ms.topic: reference
@@ -23,6 +23,8 @@ While functions and functionality are being updated all the time, only those upd
 
 |Function  |Month  | Description |
 |---------|---------|---------|
+|[LINEST](linest-function-dax.md)|February, 2023|Uses the Least Squares method to calculate a straight line that best fits the given data.|
+|[LINESTX](linestx-function-dax.md)|February, 2023|Uses the Least Squares method to calculate a straight line that best fits the given data. The data result from expressions evaluated for each row in a table.|
 |[INDEX](index-function-dax.md)| December, 2022 | Returns a row at an absolute position, specified by the position parameter, within the specified partition, sorted by the specified order or on the specified axis.|
 |[OFFSET](offset-function-dax.md)| December, 2022 | Returns a single row that is positioned either before or after the *current row* within the same table, by a given offset.|
 |[ORDERBY](orderby-function-dax.md)| December, 2022 | Defines the columns that determine the sort order within each of a WINDOW function’s partitions.|
