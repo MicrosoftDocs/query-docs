@@ -41,7 +41,7 @@
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "query-languages/m/viewfunction.tryinvoke.md",
+			"source_path": "query-languages/m/viewfunction-tryinvoke.md",
 			"redirect_url": "/m/function-values",
 			"redirect_document_id": false
 		}
