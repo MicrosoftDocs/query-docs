@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Sql.Databases"
 title: "Sql.Databases"
-ms.date: 10/7/2022
+ms.date: 2/17/2023
 ---
 # Sql.Databases
 
@@ -25,6 +25,7 @@ Returns a table of databases on the specified SQL server, `server`. An optional 
 * `UnsafeTypeConversions`: A logical (true/false) that, if true, attempts to fold type conversions which could fail and cause the entire query to fail. Not recommended for general use.
 * `ContextInfo`: A binary value that is used to set the CONTEXT_INFO before running each command.
 * `OmitSRID`: A logical (true/false) that, if true, omits the SRID when producing Well-Known Text from geometry and geography types.
+* `EnableCrossDatabaseFolding`: A logical (true/false) value that, if true, allows query folding across databases on the same server. The default value is false.
 
 The record parameter is specified as [option1 = value1, option2 = value2...] for example.
 
