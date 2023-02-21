@@ -606,8 +606,6 @@ items:
         href: function-isdatasource.md
       - name: Function.ScalarVector
         href: function-scalarvector.md
-      - name: ViewFunction.TryInvoke
-        href: viewfunction-tryinvoke.md
     - name: Lines functions
       items: 
       - name: Lines functions overview

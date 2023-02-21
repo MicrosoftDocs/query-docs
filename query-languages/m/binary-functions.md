@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Binary functions"
 title: "Binary functions"
-ms.date: 10/7/2022
+ms.date: 2/17/2023
 ---
 # Binary functions
 
@@ -57,6 +57,7 @@ These functions create and manipulate binary data.
 |[Binary.InferContentType](binary-infercontenttype.md)|Returns a record with field Content.Type that contains the inferred MIME-type.|
 |[Binary.Length](binary-length.md)|Returns the length of binary values.|
 |[Binary.Range](binary-range.md)|Returns a subset of the binary value beginning at an offset.|
+|[Binary.Split](binary-split.md)|Splits the specified binary into a list of binaries using the specified page size.|
 |[Binary.ToList](binary-tolist.md)|Converts a binary value into a list of numbers|
 |[Binary.ToText](binary-totext.md)|Encodes binary data into a text form.|
 |[Binary.View](binary-view.md) | Creates or extends a binary with user-defined handlers for query and action operations.|
