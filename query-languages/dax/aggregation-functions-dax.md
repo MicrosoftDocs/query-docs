@@ -3,7 +3,7 @@ description: "Learn more about: Aggregation functions"
 title: "Aggregation functions (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax 
-ms.date: 06/07/2022
+ms.date: 02/27/2023
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -18,7 +18,7 @@ Aggregation functions calculate a (scalar) value such as count, sum, average, mi
 
 |Function  |Description  |
 |---------|---------|
-|[APPROXIMATEDISTINCTCOUNT](approximate-distinctcount-function-dax.md)     |   Returns the *approximate* number of rows that contain distinct values in a column.      |
+|[APPROXIMATEDISTINCTCOUNT](approximate-distinctcount-function-dax.md)     |   Returns an *estimated* count of unique values in a column.     |
 |[AVERAGE](average-function-dax.md)     |   Returns the average (arithmetic mean) of all the numbers in a column.       |
 |[AVERAGEA](averagea-function-dax.md)     | Returns the average (arithmetic mean) of the values in a column.         |
 |[AVERAGEX](averagex-function-dax.md)    | Calculates the average (arithmetic mean) of a set of expressions evaluated over a table.          |
