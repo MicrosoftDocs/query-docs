@@ -12,7 +12,7 @@ recommendations: false
 ---
 # Time intelligence functions
 
-Data Analysis Expressions (DAX) includes time-intelligence functions that enable you to manipulate data using time periods, including days, months, quarters, and years, and then build and compare calculations over those periods. Before using any time-intelligence functions, make sure to mark one of the tables containing date column as [Date Table](https://learn.microsoft.com/en-us/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular?view=asallproducts-allversions).
+Data Analysis Expressions (DAX) includes time-intelligence functions that enable you to manipulate data using time periods, including days, months, quarters, and years, and then build and compare calculations over those periods. Before using any time-intelligence functions, make sure to mark one of the tables containing date column as [Date Table](https://learn.microsoft.com/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular?view=asallproducts-allversions).
   
 ## In this category
 
