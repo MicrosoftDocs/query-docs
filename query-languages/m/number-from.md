@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number.From"
 title: "Number.From"
-ms.date: 4/13/2022
+ms.date: 3/20/2023
 ---
 # Number.From
 
@@ -32,7 +32,7 @@ Get the `number` value of `"4"`.
 **Usage**
 
 ```powerquery-m
-powerquery-mNumber.From("4")
+Number.From("4")
 ```
 
 **Output**
