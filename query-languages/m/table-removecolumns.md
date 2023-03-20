@@ -34,7 +34,7 @@ Table.RemoveColumns(
 
 ### Example 2
 
-Attempts to remove non-existent column [Address] from the table. Raises an error as the column doesn't exist.
+Try to remove a non-existent column from the table.
 
 **Usage**
 
