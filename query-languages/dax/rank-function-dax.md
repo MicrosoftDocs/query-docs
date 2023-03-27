@@ -37,15 +37,16 @@ The rank number for the current context.
   
 ## Remarks
 
-Each \<orderBy> and \<partitionBy> column must have a corresponding outer value to help define the current row on which to operate, with the following behavior:
+- Each \<orderBy> and \<partitionBy> column must have a corresponding outer value to help define the current row on which to operate, with the following behavior:
 
-- If there is exactly one corresponding outer column, its value is used.
-- If there is no corresponding outer column, then:
-  - RANK will first determine all \<orderBy> and \<partitionBy> columns that have no corresponding outer column.
-  - For every combination of existing values for these columns in RANK parent context, RANK is evaluated and a row is returned.
-  - RANK’s final output is a rank number.
-
-If the columns specified within \<orderBy> and \<partitionBy> can't uniquely identify every row in \<relation>, then two or more rows may have the same ranking and the ranking will be determined by the ties parameter.
+  - If there is exactly one corresponding outer column, its value is used.
+  - If there is no corresponding outer column, then:
+    - RANK will first determine all \<orderBy> and \<partitionBy> columns that have no corresponding outer column.
+    - For every combination of existing values for these columns in RANK parent context, RANK is evaluated and a row is returned.
+    - RANK’s final output is a rank number.
+- If the columns specified within \<orderBy> and \<partitionBy> can't uniquely identify every row in \<relation>, then two or more rows may have the same ranking and the ranking will be determined by the ties parameter.
+- RANK returns a blank value for total rows. It's recommended that you test your expression thoroughly.
+- RANK does not compare to RANKX as SUM compares to SUMX.
 
 ## Example
 

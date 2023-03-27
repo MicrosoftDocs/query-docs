@@ -12,7 +12,7 @@ recommendations: false
 ---
 # ROWNUMBER
 
-Returns the unique ranking for the current context within the specified partition, sorted by the specified order. If a match cannot be found then then rank is blank.
+Returns the unique ranking for the current context within the specified partition, sorted by the specified order. If a match cannot be found then then rownumber is blank.
   
 ## Syntax  
   
@@ -31,7 +31,7 @@ ROWNUMBER ( [<relation>][, <orderBy>][, <blanks>][, <partitionBy>] )
   
 ## Return value
 
-The rank number for the current context.
+The rownumber number for the current context.
   
 ## Remarks
 
@@ -39,19 +39,19 @@ Each \<orderBy> and \<partitionBy> column must have a corresponding outer value 
 
 - If there is exactly one corresponding outer column, its value is used.
 - If there is no corresponding outer column, then:
-  - RANK will first determine all \<orderBy> and \<partitionBy> columns that have no corresponding outer column.
-  - For every combination of existing values for these columns in RANK parent context, RANK is evaluated and a row is returned.
-  - RANK’s final output is a union of these rows.
+  - ROWNUMBER will first determine all \<orderBy> and \<partitionBy> columns that have no corresponding outer column.
+  - For every combination of existing values for these columns in ROWNUMBER parent context, ROWNUMBER is evaluated and a row is returned.
+  - ROWNUMBER’s final output is a union of these rows.
 - If there is more than one corresponding outer column, an error is returned.
 
 If the columns specified within \<orderBy> and \<partitionBy> cannot uniquely identify every row in \<relation>, then:
 
 - ROWNUMBER will try to find the least number of additional columns required to uniquely identify every row.
-- If such columns can be found, - ROWNUMBER will try to find the least number of additional columns required to uniquely identify every row.
- will automatically append these new columns to \<orderBy>, and each partition is sorted using this new set of orderBy columns.  
-- If such columns cannot be found, an error is returned.
-
-If the function detects a tie at runtime, an error is returned.
+- If such columns can be found, ROWNUMBER will
+  - Try to find the least number of additional columns required to uniquely identify every row.
+  - Automatically append these new columns to \<orderBy> clause.
+  - Sort each partition using this new set of orderBy columns.
+- If such columns cannot be found and the function detects a tie at runtime, an error is returned.
 
 ## Example
 
