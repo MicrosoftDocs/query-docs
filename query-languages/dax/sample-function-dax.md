@@ -27,7 +27,7 @@ SAMPLE(<n_value>, <table>, <orderBy_expression>, [<order>[, <orderBy_expression>
 |---------|---------|
 |n_value       |  The number of rows to return. It is any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context). If a non-integer value (or expression) is entered, the result is cast as an integer.         |
 |table     |   Any DAX expression that returns a table of data from where to extract the 'n' sample rows.       |
-|orderBy_expression      |   (Optional) Any scalar DAX expression where the result value is evaluated for each row of *table*.        |
+|orderBy_expression      |   Any scalar DAX expression where the result value is evaluated for each row of *table*.        |
 |order       |  (Optional) A value that specifies how to sort *orderBy_expression* values, ascending or descending: 0 (zero), sorts in descending order of values of *order_by*. 1, ranks in ascending order of *order_by*.     |
   
 ## Return value
