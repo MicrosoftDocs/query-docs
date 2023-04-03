@@ -35,6 +35,8 @@ A decimal number.
 ## Remarks
 
 - The SUMX function takes as its first argument a table, or an expression that returns a table. The second argument is a column that contains the numbers you want to sum, or an expression that evaluates to a column.  
+
+- The SUMX is an iterator function. Iterator functions loop through all the rows in the input table and save the expression result in a temporary memory storage. They then apply aggregation to the temporary storage results, freeing up memory usage and visualizing the calculation result.
   
 - Only the numbers in the column are counted. Blanks, logical values, and text are ignored.  
   
