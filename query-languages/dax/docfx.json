@@ -37,7 +37,7 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/dax/breadcrumb/toc.json",
-      "extendBreadcrumb": true,
+      "uhfHeaderId": "MSDocsHeader-DAX",
       "titleSuffix": "DAX",
       "show_latex": true,
       "contributors_to_exclude": [
