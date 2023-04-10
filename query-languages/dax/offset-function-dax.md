@@ -27,8 +27,8 @@ OFFSET ( <delta>[, <relation>][, <orderBy>][, <blanks>][, <partitionBy>] )
 |Term|Definition|  
 |--------|--------------|  
 |delta|The number of rows before (negative value) or after (positive value) the current row from which to obtain the data.  It can be any DAX expression that returns a scalar value. |
-|relation|(Optional) A table expression from which the output row is returned. </br>If specified, all columns in \<orderBy> and \<partitionBy> must come from it. </br>If omitted: </br>- \<orderBy> must be explicitly specified.</br>- All \<orderBy> and \<partitionBy> columns must be fully qualified and come from a single table. </br>- Defaults to ALLSELECTED() of all columns in \<orderBy> and \<partitionBy>.|
-|orderBy|(Optional) An ORDERBY() clause containing the columns that define how each partition is sorted. </br>If omitted: </br>- \<relation> must be explicitly specified. </br>- Defaults to ordering by every column in \<relation> that is not already specified in \<partitionBy>.|
+|relation|(Optional) A table expression from which the output row is returned. </br>If specified, all columns in \<partitionBy> must come from it or a related table. </br>If omitted: </br>- \<orderBy> must be explicitly specified.</br>- All \<orderBy> and \<partitionBy> expressions must be fully qualified column names and come from a single table. </br>- Defaults to ALLSELECTED() of all columns in \<orderBy> and \<partitionBy>.|
+|orderBy|(Optional) An ORDERBY() clause containing the expressions that define how each partition is sorted. </br>If omitted: </br>- \<relation> must be explicitly specified. </br>- Defaults to ordering by every column in \<relation> that is not already specified in \<partitionBy>.|
 |blanks|(Optional) An enumeration that defines how to handle blank values when sorting. </br>This parameter is reserved for future use. </br>Currently, the only supported value is KEEP (default), where the behavior for numerical/date values is blank values are ordered between zero and negative values. The behavior for strings is blank values are ordered before all strings, including empty strings.|
 |partitionBy|(Optional) A PARTITIONBY() clause containing the columns that define how \<relation> is partitioned. </br> If omitted, \<relation> is treated as a single partition. |
   
@@ -38,14 +38,16 @@ One or more rows from \<relation>.
   
 ## Remarks
 
-Each \<orderBy> and \<partitionBy> column must have a corresponding outer value to help define the current row on which to operate, with the following behavior:
+Except for columns added by DAX table functions, each column in \<relation> must have a corresponding outer value to help define the current row on which to operate, with the following behavior:
 
 - If there is exactly one corresponding outer column, its value is used.
 - If there is no corresponding outer column, then:
-  - OFFSET will first determine all \<orderBy> and \<partitionBy> columns that have no corresponding outer column.
+  - OFFSET will first determine all columns that have no corresponding outer column.
   - For every combination of existing values for these columns in OFFSET’s parent context, OFFSET is evaluated and a row is returned.
   - OFFSET’s final output is a union of these rows.
 - If there is more than one corresponding outer column, an error is returned.
+
+If all of \<relation>'s columns were added by DAX table functions, an error is returned.
 
 If the columns specified within \<orderBy> and \<partitionBy> can't uniquely identify every row in \<relation>, then:
 
@@ -113,4 +115,6 @@ Uses OFFSET() in a measure to return a table that summarizes the total sales for
 [INDEX](index-function-dax.md)  
 [ORDERBY](orderby-function-dax.md)  
 [PARTITIONBY](partitionby-function-dax.md)  
-[WINDOW](window-function-dax.md)
+[WINDOW](window-function-dax.md)  
+[RANK](rank-function-dax.md)  
+[ROWNUMBER](rownumber-function-dax.md)
