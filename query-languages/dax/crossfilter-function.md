@@ -3,7 +3,7 @@ description: "Learn more about: CROSSFILTER"
 title: "CROSSFILTER function | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax 
-ms.date: 04/16/2021
+ms.date: 02/21/2023
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -51,13 +51,13 @@ The function returns no value; the function only sets the cross-filtering direct
 
 ## Example
 
-In the following model diagram, both DimProduct and DimDate have a single direction relationship with FactOnlineSales.  
+In the following model diagram, both DimProduct and DimDate have a single direction relationship with FactInternetSales.  
   
-![CROSSFILTER_Examp_DiagView](media/crossfilter-examp-diagview.png "CROSSFILTER_Examp_DiagView")  
+![CROSSFILTER_Examp_DiagView](media/crossfilter-function/crossfilter-examp-diagview.png "CROSSFILTER_Examp_DiagView")  
   
 By default, we cannot get the Count of Products sold by year:  
   
-![CROSSFILTER_Examp_PivotTable1](media/crossfilter-examp-pivottable1.png "CROSSFILTER_Examp_PivotTable1")  
+![CROSSFILTER_Examp_PivotTable1](media/crossfilter-function/crossfilter-examp-pivottable1.png "CROSSFILTER_Examp_PivotTable1")  
   
 There are  two ways to get the count of products by year:  
   
@@ -73,4 +73,4 @@ BiDi:= CALCULATE([Distinct Count of ProductKey], CROSSFILTER(FactInternetSales[P
 
 By using the CROSSFILTER function in our measure expression, we get the expected results:  
   
-![CROSSFILTER_Examp_PivotTable2](media/crossfilter-examp-pivottable2.png "CROSSFILTER_Examp_PivotTable2")  
+![CROSSFILTER_Examp_PivotTable2](media/crossfilter-function/crossfilter-examp-pivottable2.png "CROSSFILTER_Examp_PivotTable2")  

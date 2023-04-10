@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Function values"
 title: "Function values"
-ms.date: 5/16/2022
+ms.date: 2/17/2023
 ---
 # Function values
 
