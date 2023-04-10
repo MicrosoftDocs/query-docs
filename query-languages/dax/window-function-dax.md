@@ -93,3 +93,5 @@ Returns the 3-day average of unit prices for each product. Note the 3-day window
 [OFFSET](offset-function-dax.md)  
 [ORDERBY](orderby-function-dax.md)  
 [PARTITIONBY](partitionby-function-dax.md)  
+[RANK](rank-function-dax.md)  
+[ROWNUMBER](rownumber-function-dax.md)

@@ -46,4 +46,7 @@ See [OFFSET](offset-function-dax.md).
 [INDEX](index-function-dax.md)  
 [OFFSET](offset-function-dax.md)  
 [PARTITIONBY](partitionby-function-dax.md)  
-[WINDOW](window-function-dax.md)
+[WINDOW](window-function-dax.md)  
+[RANK](rank-function-dax.md)  
+[ROWNUMBER](rownumber-function-dax.md)
+
