@@ -23,6 +23,8 @@ While functions and functionality are being updated all the time, only those upd
 
 |Function  |Month  | Description |
 |---------|---------|---------|
+|[RANK](rank-function-dax.md)|April, 2023|Returns the ranking for the current context within the specified partition, sorted by the specified order.|
+|[ROWNUMBER](rownumber-function-dax.md)|April, 2023|Returns the unique ranking for the current context within the specified partition, sorted by the specified order.|
 |[LINEST](linest-function-dax.md)|February, 2023|Uses the Least Squares method to calculate a straight line that best fits the given data.|
 |[LINESTX](linestx-function-dax.md)|February, 2023|Uses the Least Squares method to calculate a straight line that best fits the given data. The data result from expressions evaluated for each row in a table.|
 |[INDEX](index-function-dax.md)| December, 2022 | Returns a row at an absolute position, specified by the position parameter, within the specified partition, sorted by the specified order or on the specified axis.|

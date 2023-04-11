@@ -3,7 +3,7 @@ description: "Learn more about: PARTITIONBY"
 title: "PARTITIONBY function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax
-ms.date: 11/29/2022
+ms.date: 04/10/2023
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
