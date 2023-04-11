@@ -3,7 +3,7 @@ description: "Learn more about: WINDOW"
 title: "WINDOW function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax
-ms.date: 11/14/2022
+ms.date: 04/10/2023
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
