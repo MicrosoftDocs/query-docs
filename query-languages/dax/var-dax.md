@@ -63,24 +63,24 @@ SalesAmount PreviousYear =
     )  
 ```
 
-You can then create a third measure that combines the other two measures to calculate a growth percentage. Notice the Sum of SalesAmount measure is used in two places; first to determine if there is a sale, then again to calculate a percentage.  
+You can then create a third measure that combines the other two measures to calculate a growth percentage. Notice the SalesAmount PreviousYear measure is used in two places; first to determine if there is a previous year sales amount, then again to calculate a percentage.  
   
 ```dax
 Sum of SalesAmount YoY%: = 
-    IF([Sum of SalesAmount] ,  
-        DIVIDE(([Sum of SalesAmount] – [SalesAmount PreviousYear]), [Sum of SalesAmount])
+    IF([SalesAmount PreviousYear],  
+        DIVIDE(([Sum of SalesAmount] – [SalesAmount PreviousYear]), [SalesAmount PreviousYear])
     )  
 ```
 
 By using a variable, you can create a single measure that calculates the same result:  
   
 ```dax
-YoY% = VAR Sales = SUM(SalesTable[SalesAmount])  
+YoY% = VAR Sales = SUM ( SalesTable[SalesAmount] )  
 
 VAR SalesLastYear =
     CALCULATE ( SUM ( SalesTable[SalesAmount] ), SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
 
-    return if(Sales, DIVIDE(Sales – SalesLastYear, Sales))  
+RETURN IF ( SalesLastYear, DIVIDE ( Sales – SalesLastYear, SalesLastYear ) )  
 ```
 
 By using a variable, you can get the same outcome, but in a more readable way. And because the result of the expression is stored in the variable, the measure's performance can be significantly improved because it doesn't have to be recalculated each time it's used.
