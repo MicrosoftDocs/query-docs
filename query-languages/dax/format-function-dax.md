@@ -46,10 +46,7 @@ A string containing **value** formatted as defined by **format_string**.
 
 - To learn more specifying a locale with FORMAT, check out this [video](https://www.microsoft.com/videoplayer/embed/RWLjrD).
 
-- Using FORMAT changes a measure to a text data type. If the measure was originally of numeric data type, then with FORMAT, the measure cannot be used as before on visuals where the values section requires a numeric data type. 
-- 
-- You can alternatively use [Dynamic format strings for measures](/analysis-services/tabular-models/calculation-groups#dynamic-format-strings) to maintain the numeric data type of the measure and define the dynamic format string as a string like in the format_string argument, as a DAX expression to get the format string from a table in the model, or as a DAX expression determining which format string to use based on some condition, such as the value in the measure itself.
-
+- Using FORMAT changes a measure result to a text data type. If the measure result is originally of numeric data type, then with FORMAT, the measure can't be used on visuals where the values section requires a numeric data type, like with charts. In Power BI, you can alternatively use **Dynamic format strings for measures** specify a conditional format string that maintains the numeric data type of the measure.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
