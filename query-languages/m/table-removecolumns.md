@@ -13,7 +13,7 @@ Table.RemoveColumns(<b>table</b> as table, <b>columns</b> as any, optional <b>mi
   
 ## About
 
-Removes the specified `columns` from the `table` provided. If the column doesn't exist, an exception is thrown unless the optional parameter `missingField` specifies an alternative (eg. `MissingField.UseNull` or `MissingField.Ignore`).
+Removes the specified `columns` from the `table` provided. If a specified column doesn't exist, an error is raised unless the optional parameter `missingField` specifies an alternative behavior (for example, `MissingField.UseNull` or `MissingField.Ignore`).
 
 ## Example 1
 
@@ -34,7 +34,7 @@ Table.RemoveColumns(
 
 ### Example 2
 
-Remove column [Address] from the table. Throws an error if it doesn't exist.
+Try to remove a non-existent column from the table.
 
 **Usage**
 
@@ -47,4 +47,4 @@ Table.RemoveColumns(
 
 **Output**
 
-`[Expression.Error] The field 'Address' of the record was not found.`
+`Expression.Error: The column 'Address' of the table wasn't found.`
