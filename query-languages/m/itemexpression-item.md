@@ -7,4 +7,4 @@ ms.date: 3/16/2022
 
 ## About
 
-An abstract syntax tree (AST) node representing the item in an item expression.
+This identifier is an alias for [RowExpression.Row](rowexpression-row.md).

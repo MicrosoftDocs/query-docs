@@ -5,12 +5,7 @@ ms.date: 10/7/2022
 ---
 # ItemExpression.From
 
-## Syntax
-
-<pre>
-ItemExpression.From(<b>function</b> as function) as record
-</pre>
-
 ## About
 
-This identifier is an alias for [RowExpression.Row](rowexpression-row.md).
+This identifier is an alias for [RowExpression.From](rowexpression-from.md).
+
