@@ -66,7 +66,7 @@ The native type of function values is a custom function type (derived from the i
 
 ## Invoking functions
 
-The _function-body_ of a function is executed by _invoking_ the function value using an _invokeexpression_. Invoking a function value means the _function-body_ of the function value is evaluated and a value is returned or an error is raised.
+The _function-body_ of a function is executed by _invoking_ the function value using an _invoke-expression_. Invoking a function value means the _function-body_ of the function value is evaluated and a value is returned or an error is raised.
 
 _invoke-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_  `(`  _argument-list<sub>opt</sub>_  `)`<br/>
@@ -86,10 +86,10 @@ An _argument-list_ is used to specify a fixed number of arguments directly as a 
 
 The following holds when invoking a function:
 
-* The environment used to evaluate the _function-body_ of the function includes a variable that corresponds to each parameter, with the same name as the parameter. The value of each parameter corresponds to a value constructed from the _argument-list_ of the _invokeexpression_, as defined in [Parameters](#parameters). 
+* The environment used to evaluate the _function-body_ of the function includes a variable that corresponds to each parameter, with the same name as the parameter. The value of each parameter corresponds to a value constructed from the _argument-list_ of the _invoke-expression_, as defined in [Parameters](#parameters). 
 * All of the expressions corresponding to the function arguments are evaluated before the _function-body_ is evaluated.
 
-* Errors raised when evaluating the expressions in the _expression-list_ or _functionexpression_ are propagated.
+* Errors raised when evaluating the expressions in the _expression-list_ or _function-body_ are propagated.
 
 * The number of arguments constructed from the _argument-list_ must be compatible with the formal parameters of the function, or an error is raised with reason code `"Expression.Error"`. The process for determining compatibility is defined in [Parameters](#parameters).
 
@@ -122,7 +122,7 @@ There are two kinds of formal parameters that may be present in a _formal-parame
 
 The number of arguments that are specified when a function is invoked must be compatible with the formal parameter list. Compatibility of a set of arguments `A` for a function `F` is computed as follows:
 
-* Let the value _N_ represent the number of arguments `A` constructed from the _argumentlist_. For example:
+* Let the value _N_ represent the number of arguments `A` constructed from the _argument-list_. For example:
 
   ```powerquery-m
     MyFunction()             // N = 0 
