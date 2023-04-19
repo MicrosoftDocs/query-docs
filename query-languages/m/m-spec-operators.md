@@ -1263,7 +1263,7 @@ nullable-primitive-type:_<br/>
 
 Type compatibility, as supported by the `is` operator, is a subset of [general type compatibility](m-spec-types.md) and is defined using the following rules:
 
-* If `x` is null then it is compatible iff y is a nullable type or the type `any`.
+* If `x` is null then it is compatible if `y` is a nullable type, the type `null` or the type `any`.
 
 * If `x` is non-null then if it is a compatible if the the primitive type of `x` is the same as `y`.
 
