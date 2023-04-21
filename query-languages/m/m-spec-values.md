@@ -568,13 +568,13 @@ The native type of record values is the intrinsic type `record`, which specifies
 
 A _table value_ is an ordered sequence of rows. A _row_ is an ordered sequence of column values. The table's type determines the length of all rows in the table, the names of the table's columns, the types of the table's columns, and the structure of the table's keys (if any).
 
-There is no literal syntax for tables. Several standard library functions are provided to construct table values. For example, `#table` can be used to construct a table from a list of row lists and a list of header names:
+Tables may be constructed using the `#table` intrinsic. 
+
+Below, a table is constructed from a list of row lists and a list of column names. In the resulting table, each column will be of `type any`.
 
 ```powerquery-m
 #table({"x", "x^2"}, {{1,1}, {2,4}, {3,9}})
 ```
-
-The above example constructs a table with two columns, both of which are of `type any`.
 
 `#table` can also be used to specify a full table type:
 
