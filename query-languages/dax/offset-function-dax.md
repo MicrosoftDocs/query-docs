@@ -40,7 +40,7 @@ One or more rows from \<relation>.
   
 ## Remarks
 
-Except for columns added by DAX table functions, each column in \<relation> must have a corresponding outer value to help define the current row on which to operate, with the following behavior:
+Except for columns added by DAX table functions, each column in \<relation>, when \<matchBy> is not present, or each column in \<matchBy> and \<partitionBy>,  when \<matchBy> is present, must have a corresponding outer value to help define the current row on which to operate, with the following behavior:
 
 - If there is exactly one corresponding outer column, its value is used.
 - If there is no corresponding outer column, then:
