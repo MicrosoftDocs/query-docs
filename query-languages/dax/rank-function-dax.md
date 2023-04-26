@@ -46,7 +46,7 @@ The rank number for the current context.
     - For every combination of existing values for these columns in RANK parent context, RANK is evaluated and a row is returned.
     - RANK’s final output is a rank number.
 - If \<matchBy> is present, then RANK will try to use columns in \<matchBy> and \<partitionBy> to idenfity the current row.
-- If the columns specified within \<orderBy> and \<partitionBy> can't break ties among rows in \<relation>, then two or more rows may have the same ranking and the ranking will be determined by the ties parameter.
+- If \<matchBy> is not present and the columns specified within \<orderBy> and \<partitionBy> cannot uniquely identify every row in \<relation>, then two or more rows may have the same ranking and the ranking will be determined by the ties parameter.
 - RANK returns a blank value for total rows. It's recommended that you test your expression thoroughly.
 - RANK does not compare to RANKX as SUM compares to SUMX.
 
