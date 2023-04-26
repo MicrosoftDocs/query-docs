@@ -18,7 +18,7 @@ Returns the ranking for the current context within the specified partition, sort
 ## Syntax  
   
 ```dax
-RANK ( [<ties>][, <relation>][, <orderBy>][, <blanks>][, <partitionBy>] )
+RANK ( [<ties>][, <relation>][, <orderBy>][, <blanks>][, <partitionBy>][, <matchBy>] )
 ```
   
 ### Parameters  
@@ -30,6 +30,7 @@ RANK ( [<ties>][, <relation>][, <orderBy>][, <blanks>][, <partitionBy>] )
 |orderBy|(Optional) An ORDERBY() clause containing the columns that define how each partition is sorted. </br>If omitted: </br>- \<relation> must be explicitly specified. </br>- Defaults to ordering by every column in \<relation> that is not already specified in \<partitionBy>.|
 |blanks|(Optional) An enumeration that defines how to handle blank values when sorting. </br>This parameter is reserved for future use. </br>Currently, the only supported value is KEEP (default), where the behavior for numerical/date values is blank values are ordered between zero and negative values. The behavior for strings is blank values are ordered before all strings, including empty strings.|
 |partitionBy|(Optional) A PARTITIONBY() clause containing the columns that define how \<relation> is partitioned. </br> If omitted, \<relation> is treated as a single partition. |
+|matchBy|(Optional) A MATCHBY() clause containing the columns that define how to match data and identify the current row. |
   
 ## Return value
 
@@ -44,7 +45,8 @@ The rank number for the current context.
     - RANK will first determine all \<orderBy> and \<partitionBy> columns that have no corresponding outer column.
     - For every combination of existing values for these columns in RANK parent context, RANK is evaluated and a row is returned.
     - RANK’s final output is a rank number.
-- If the columns specified within \<orderBy> and \<partitionBy> can't uniquely identify every row in \<relation>, then two or more rows may have the same ranking and the ranking will be determined by the ties parameter.
+- If the \<matchBy> is present, then RANK will try to use columns in \<partitionBy> and \<matchBy> to idenfity the current row.
+- If the columns specified within \<orderBy> and \<partitionBy> can't break ties among rows in \<relation>, then two or more rows may have the same ranking and the ranking will be determined by the ties parameter.
 - RANK returns a blank value for total rows. It's recommended that you test your expression thoroughly.
 - RANK does not compare to RANKX as SUM compares to SUMX.
 
