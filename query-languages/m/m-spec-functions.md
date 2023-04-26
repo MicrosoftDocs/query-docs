@@ -43,13 +43,13 @@ optional-parameter:_<br/>
 nullable-primitve-type<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`_<sub>opt</sub> primitive-type_
 
-The following is an example of a function that requires exactly two values `x` and `y`, and produces the result of applying the `+` operator to those values. The `x` and `y` are _parameters_ that are part of the _formal-parameter-list_ of the function, and the `x + y` is the _function body_:
+The following is an example of a function that requires exactly two values `x` and `y`, and produces the result of applying the `+` operator to those values. The `x` and `y` are _parameters_ that are part of the _parameter-list_ of the function, and the `x + y` is the _function-body_:
 
 ```powerquery-m
 (x, y) => x + y
 ```
 
-The result of evaluating a _function-expression_ is to produce a function value (not to evaluate the _function-body_). As a convention in this document, function values (as opposed to function expressions) are shown with the _formal-parameter-list_ but with an ellipsis (`...`) instead of the _function-body_. For example, once the function expression above has been evaluated, it would be shown as the following function value:
+The result of evaluating a _function-expression_ is to produce a function value (not to evaluate the _function-body_). As a convention in this document, function values (as opposed to function expressions) are shown with the _parameter-list_ but with an ellipsis (`...`) instead of the _function-body_. For example, once the function expression above has been evaluated, it would be shown as the following function value:
 
 ```powerquery-m
  (x, y) => ...
@@ -66,7 +66,7 @@ The native type of function values is a custom function type (derived from the i
 
 ## Invoking functions
 
-The _function-body_ of a function is executed by _invoking_ the function value using an _invokeexpression_. Invoking a function value means the _function-body_ of the function value is evaluated and a value is returned or an error is raised.
+The _function-body_ of a function is executed by _invoking_ the function value using an _invoke-expression_. Invoking a function value means the _function-body_ of the function value is evaluated and a value is returned or an error is raised.
 
 _invoke-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_  `(`  _argument-list<sub>opt</sub>_  `)`<br/>
@@ -86,18 +86,18 @@ An _argument-list_ is used to specify a fixed number of arguments directly as a 
 
 The following holds when invoking a function:
 
-* The environment used to evaluate the _function-body_ of the function includes a variable that corresponds to each parameter, with the same name as the parameter. The value of each parameter corresponds to a value constructed from the _argument-list_ of the _invokeexpression_, as defined in [Parameters](#parameters). 
+* The environment used to evaluate the _function-body_ of the function includes a variable that corresponds to each parameter, with the same name as the parameter. The value of each parameter corresponds to a value constructed from the _argument-list_ of the _invoke-expression_, as defined in [Parameters](#parameters). 
 * All of the expressions corresponding to the function arguments are evaluated before the _function-body_ is evaluated.
 
-* Errors raised when evaluating the expressions in the _expression-list_ or _functionexpression_ are propagated.
+* Errors raised when evaluating the expressions in the _expression-list_ or _function-body_ are propagated.
 
-* The number of arguments constructed from the _argument-list_ must be compatible with the formal parameters of the function, or an error is raised with reason code `"Expression.Error"`. The process for determining compatibility is defined in [Parameters](#parameters).
+* The number of arguments constructed from the _argument-list_ must be compatible with the parameters of the function, or an error is raised with reason code `"Expression.Error"`. The process for determining compatibility is defined in [Parameters](#parameters).
 
 ## Parameters
 
-There are two kinds of formal parameters that may be present in a _formal-parameter-list_:
+There are two kinds of parameters that may be present in a _parameter-list_:
 
-* A _required_ parameter indicates that an argument corresponding to the parameter must always be specified when a function is invoked. Required parameters must be specified first in the _formal-parameter-list_. The function in the following example defines required parameters `x` and `y`:
+* A _required_ parameter indicates that an argument corresponding to the parameter must always be specified when a function is invoked. Required parameters must be specified first in the _parameter-list_. The function in the following example defines required parameters `x` and `y`:
 
   ```powerquery-m
     [ 
@@ -108,7 +108,7 @@ There are two kinds of formal parameters that may be present in a _formal-parame
     ] 
   ```
 
-* An _optional_ parameter indicates that an argument corresponding to the parameter may be specified when a function is invoked, but is not required to be specified. If an argument that corresponds to an optional parameter is not specified when the function is invoked, then the value `null` is used instead. Optional parameters must appear after any required parameters in a _formal-parameter-list_. The function in the following example defines a fixed parameter `x` and an optional parameter `y`:
+* An _optional_ parameter indicates that an argument corresponding to the parameter may be specified when a function is invoked, but is not required to be specified. If an argument that corresponds to an optional parameter is not specified when the function is invoked, then the value `null` is used instead. Optional parameters must appear after any required parameters in a _parameter-list_. The function in the following example defines a fixed parameter `x` and an optional parameter `y`:
 
   ```powerquery-m
     [ 
@@ -120,9 +120,9 @@ There are two kinds of formal parameters that may be present in a _formal-parame
     ] 
   ```
 
-The number of arguments that are specified when a function is invoked must be compatible with the formal parameter list. Compatibility of a set of arguments `A` for a function `F` is computed as follows:
+The number of arguments that are specified when a function is invoked must be compatible with the parameter list. Compatibility of a set of arguments `A` for a function `F` is computed as follows:
 
-* Let the value _N_ represent the number of arguments `A` constructed from the _argumentlist_. For example:
+* Let the value _N_ represent the number of arguments `A` constructed from the _argument-list_. For example:
 
   ```powerquery-m
     MyFunction()             // N = 0 
@@ -210,7 +210,7 @@ When `MyFunction` is invoked, it accesses the value of the variable `C`, even th
 
 ## Simplified declarations
 
-The _each-expression_ is a syntactic shorthand for declaring untyped functions taking a single formal parameter named `_` (underscore).
+The _each-expression_ is a syntactic shorthand for declaring untyped functions taking a single parameter named `_` (underscore).
 
 _each-expression:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`each` _each-expression-body<br/>
