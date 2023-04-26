@@ -49,7 +49,7 @@ Each \<partitionBy> column must have a corresponding outer value to help define 
   - INDEX’s final output is a union of these rows.
 - If there is more than one corresponding outer column, an error is returned.
 
-If the columns specified within \<orderBy> and \<partitionBy> can't uniquely identify every row in \<relation>, INDEX will try to use \<matchBy> and \<partitionBy> columns to identify the row.   
+If \<matchBy> is present, INDEX will try to use \<matchBy> and \<partitionBy> columns to identify the row.   
 If \<matchBy> is not present and the columns specified within \<orderBy> and \<partitionBy> cannot uniquely identify every row in \<relation>:
 
 - INDEX will try to find the least number of additional columns required to uniquely identify every row.
