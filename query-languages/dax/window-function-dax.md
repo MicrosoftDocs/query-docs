@@ -42,7 +42,7 @@ WINDOW ( from[, from_type], to[, to_type][, <relation>][, <orderBy>][, <blanks>]
 All rows from the window.
 
 ## Remarks
-Except for columns added by DAX table functions, each column in \<relation> must have a corresponding outer value to help define the current row on which to operate. If \<from_type> and \<to_type> both have value ABS, then the following applies only to the \<partitionBy> columns:
+Except for columns added by DAX table functions, each column in \<relation>, when \<matchBy> is not present, or each column in \<matchBy> and \<partitionBy>, when \<matchBy> is present, must have a corresponding outer value to help define the current row on which to operate. If \<from_type> and \<to_type> both have value ABS, then the following applies only to the \<partitionBy> columns:
 
 - If there is exactly one corresponding outer column, its value is used.
 - If there is no corresponding outer column:
