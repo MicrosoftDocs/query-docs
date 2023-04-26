@@ -53,7 +53,7 @@ Except for columns added by DAX table functions, each column in \<relation> must
 
 If all of \<relation>'s columns were added by DAX table functions, an error is returned.
 
-If the columns specified within \<orderBy> and \<partitionBy> can't uniquely identify every row in \<relation>, OFFSET will try to use \<matchBy> columns to identify the row.   
+If the columns specified within \<orderBy> and \<partitionBy> can't uniquely identify every row in \<relation>, WINDOW will try to use \<matchBy> columns to identify the row.   
 If \<matchBy> is not present and the columns specified within \<orderBy> and \<partitionBy> cannot uniquely identify every row in \<relation>, then:
 
 - WINDOW will try to find the least number of additional columns required to uniquely identify every row.
