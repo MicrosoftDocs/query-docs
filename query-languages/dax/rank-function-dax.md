@@ -38,11 +38,11 @@ The rank number for the current context.
   
 ## Remarks
 
-- Each \<orderBy> and \<partitionBy> column must have a corresponding outer value to help define the current row on which to operate, with the following behavior:
+- Each \<orderBy>, \<partitionBy>, and \<matchBy> column must have a corresponding outer value to help define the current row on which to operate, with the following behavior:
 
   - If there is exactly one corresponding outer column, its value is used.
   - If there is no corresponding outer column, then:
-    - RANK will first determine all \<orderBy> and \<partitionBy> columns that have no corresponding outer column.
+    - RANK will first determine all \<orderBy>, \<partitionBy>, and \<matchBy> columns that have no corresponding outer column.
     - For every combination of existing values for these columns in RANK parent context, RANK is evaluated and a row is returned.
     - RANK’s final output is a rank number.
 - If \<matchBy> is present, then RANK will try to use columns in \<matchBy> and \<partitionBy> to idenfity the current row.
