@@ -570,7 +570,7 @@ A _table value_ is an ordered sequence of rows. A _row_ is an ordered sequence o
 
 Tables may be constructed using the `#table` intrinsic. 
 
-Below, a table is constructed from a list of row lists and a list of column names. In the resulting table, each column will be of `type any`.
+The following example constructs a table from a list of column names and a list of rows. The resulting table will contain two columns of `type any` and three rows.
 
 ```powerquery-m
 #table({"x", "x^2"}, {{1,1}, {2,4}, {3,9}})
