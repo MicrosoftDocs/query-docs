@@ -19,7 +19,7 @@ Returns multiple rows which are positioned within the given interval.
 ## Syntax  
   
 ```dax
-WINDOW ( from[, from_type], to[, to_type][, <relation>][, <orderBy>][, <blanks>][, <partitionBy>] )
+WINDOW ( from[, from_type], to[, to_type][, <relation>][, <orderBy>][, <blanks>][, <partitionBy>][, <matchBy>] )
 ```
   
 ### Parameters  
@@ -34,6 +34,8 @@ WINDOW ( from[, from_type], to[, to_type][, <relation>][, <orderBy>][, <blanks>]
 |orderBy|(Optional) An ORDERBY() clause containing the expressions that define how each partition is sorted. </br>If omitted: </br>- \<relation> must be explicitly specified. </br>- Defaults to ordering by every column in \<relation> that is not already specified in \<partitionBy>.|
 |blanks|(Optional) An enumeration that defines how to handle blank values when sorting. </br>This parameter is reserved for future use. </br>Currently, the only supported value is KEEP (default), where the behavior for numerical/date values is blank values are ordered between zero and negative values. The behavior for strings is blank values are ordered before all strings, including empty strings.|
 |partitionBy|(Optional) A PARTITIONBY() clause containing the columns that define how \<relation> is partitioned. If omitted, \<relation> is treated as a single partition.|
+|matchBy|(Optional) A MATCHBY() clause containing the columns that define how to match data and identify the current row. |  
+
 
 ## Return value
 
@@ -51,7 +53,8 @@ Except for columns added by DAX table functions, each column in \<relation> must
 
 If all of \<relation>'s columns were added by DAX table functions, an error is returned.
 
-If the columns specified within \<orderBy> and \<partitionBy> cannot uniquely identify every row in \<relation>, then:
+If the columns specified within \<orderBy> and \<partitionBy> can't uniquely identify every row in \<relation>, OFFSET will try to use \<matchBy> columns to identify the row.   
+If \<matchBy> is not present and the columns specified within \<orderBy> and \<partitionBy> cannot uniquely identify every row in \<relation>, then:
 
 - WINDOW will try to find the least number of additional columns required to uniquely identify every row.
 - If such columns can be found, WINDOW will automatically append these new columns to \<orderBy>, and each partition is sorted using this new set of orderBy columns.  
