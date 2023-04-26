@@ -37,11 +37,11 @@ The rownumber number for the current context.
   
 ## Remarks
 
-Each \<orderBy> and \<partitionBy> column must have a corresponding outer value to help define the current row on which to operate, with the following behavior:
+Each \<orderBy>, \<partitionBy>, and \<matchBy> column must have a corresponding outer value to help define the current row on which to operate, with the following behavior:
 
 - If there is exactly one corresponding outer column, its value is used.
 - If there is no corresponding outer column, then:
-  - ROWNUMBER will first determine all \<orderBy> and \<partitionBy> columns that have no corresponding outer column.
+  - ROWNUMBER will first determine all \<orderBy>, \<partitionBy>, and \<matchBy> columns that have no corresponding outer column.
   - For every combination of existing values for these columns in ROWNUMBER parent context, ROWNUMBER is evaluated and a row is returned.
   - ROWNUMBER’s final output is a union of these rows.
 - If there is more than one corresponding outer column, an error is returned.
