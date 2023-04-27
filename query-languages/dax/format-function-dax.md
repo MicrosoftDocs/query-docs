@@ -46,6 +46,8 @@ A string containing **value** formatted as defined by **format_string**.
 
 - To learn more specifying a locale with FORMAT, check out this [video](https://www.microsoft.com/videoplayer/embed/RWLjrD).
 
+- Using FORMAT changes a measure result to a text data type. If the measure result is originally of numeric data type, then with FORMAT, the measure can't be used on visuals where the values section requires a numeric data type, like with charts. In Power BI, you can alternatively use **Dynamic format strings for measures** specify a conditional format string that maintains the numeric data type of the measure.
+
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Examples
