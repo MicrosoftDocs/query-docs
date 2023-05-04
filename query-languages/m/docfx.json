@@ -35,6 +35,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "feedback_system": "Standard",
       "breadcrumb_path": "/powerquery-m/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-PowerQueryM",
       "titleSuffix": "PowerQuery M",
