@@ -36,6 +36,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "feedback_system": "Standard",
       "breadcrumb_path": "/dax/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-DAX",
       "titleSuffix": "DAX",
