@@ -19,7 +19,7 @@ Returns multiple rows which are positioned within the given interval.
 ## Syntax  
   
 ```dax
-WINDOW ( from[, from_type], to[, to_type][, <relation>][, <orderBy>][, <blanks>][, <partitionBy>] )
+WINDOW ( from[, from_type], to[, to_type][, <relation>][, <orderBy>][, <blanks>][, <partitionBy>][, <matchBy>] )
 ```
   
 ### Parameters  
@@ -34,13 +34,15 @@ WINDOW ( from[, from_type], to[, to_type][, <relation>][, <orderBy>][, <blanks>]
 |orderBy|(Optional) An ORDERBY() clause containing the expressions that define how each partition is sorted. </br>If omitted: </br>- \<relation> must be explicitly specified. </br>- Defaults to ordering by every column in \<relation> that is not already specified in \<partitionBy>.|
 |blanks|(Optional) An enumeration that defines how to handle blank values when sorting. </br>This parameter is reserved for future use. </br>Currently, the only supported value is KEEP (default), where the behavior for numerical/date values is blank values are ordered between zero and negative values. The behavior for strings is blank values are ordered before all strings, including empty strings.|
 |partitionBy|(Optional) A PARTITIONBY() clause containing the columns that define how \<relation> is partitioned. If omitted, \<relation> is treated as a single partition.|
+|matchBy|(Optional) A MATCHBY() clause containing the columns that define how to match data and identify the current row. |  
+
 
 ## Return value
 
 All rows from the window.
 
 ## Remarks
-Except for columns added by DAX table functions, each column in \<relation> must have a corresponding outer value to help define the current row on which to operate. If \<from_type> and \<to_type> both have value ABS, then the following applies only to the \<partitionBy> columns:
+Except for columns added by DAX table functions, each column in \<relation>, when \<matchBy> is not present, or each column in \<matchBy> and \<partitionBy>, when \<matchBy> is present, must have a corresponding outer value to help define the current row on which to operate. If \<from_type> and \<to_type> both have value ABS, then the following applies only to the \<partitionBy> columns:  
 
 - If there is exactly one corresponding outer column, its value is used.
 - If there is no corresponding outer column:
@@ -51,7 +53,8 @@ Except for columns added by DAX table functions, each column in \<relation> must
 
 If all of \<relation>'s columns were added by DAX table functions, an error is returned.
 
-If the columns specified within \<orderBy> and \<partitionBy> cannot uniquely identify every row in \<relation>, then:
+If \<matchBy> is present, WINDOW will try to use \<matchBy> and \<partitionBy> columns to identify the row.   
+If \<matchBy> is not present and the columns specified within \<orderBy> and \<partitionBy> cannot uniquely identify every row in \<relation>, then:  
 
 - WINDOW will try to find the least number of additional columns required to uniquely identify every row.
 - If such columns can be found, WINDOW will automatically append these new columns to \<orderBy>, and each partition is sorted using this new set of orderBy columns.  
