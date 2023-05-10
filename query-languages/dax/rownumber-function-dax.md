@@ -17,7 +17,7 @@ Returns the unique ranking for the current context within the specified partitio
 ## Syntax  
   
 ```dax
-ROWNUMBER ( [<relation>][, <orderBy>][, <blanks>][, <partitionBy>] )
+ROWNUMBER ( [<relation>][, <orderBy>][, <blanks>][, <partitionBy>][, <matchBy>] )
 ```
   
 ### Parameters  
@@ -27,23 +27,25 @@ ROWNUMBER ( [<relation>][, <orderBy>][, <blanks>][, <partitionBy>] )
 |relation|(Optional) A table expression from which the output row is returned. </br>If specified, all columns in \<orderBy> and \<partitionBy> must come from it. </br>If omitted: </br>- \<orderBy> must be explicitly specified.</br>- All \<orderBy> and \<partitionBy> columns must be fully qualified and come from a single table. </br>- Defaults to ALLSELECTED() of all columns in \<orderBy> and \<partitionBy>.|
 |orderBy|(Optional) An ORDERBY() clause containing the columns that define how each partition is sorted. </br>If omitted: </br>- \<relation> must be explicitly specified. </br>- Defaults to ordering by every column in \<relation> that is not already specified in \<partitionBy>.|
 |blanks|(Optional) An enumeration that defines how to handle blank values when sorting. </br>This parameter is reserved for future use. </br>Currently, the only supported value is KEEP (default), where the behavior for numerical/date values is blank values are ordered between zero and negative values. The behavior for strings is blank values are ordered before all strings, including empty strings.|
-|partitionBy|(Optional) A PARTITIONBY() clause containing the columns that define how \<relation> is partitioned. </br> If omitted, \<relation> is treated as a single partition. |
-  
+|partitionBy|(Optional) A PARTITIONBY() clause containing the columns that define how \<relation> is partitioned. </br> If omitted, \<relation> is treated as a single partition. |  
+|matchBy|(Optional) A MATCHBY() clause containing the columns that define how to match data and identify the current row. |  
+
 ## Return value
 
 The rownumber number for the current context.
   
 ## Remarks
 
-Each \<orderBy> and \<partitionBy> column must have a corresponding outer value to help define the current row on which to operate, with the following behavior:
+Each \<orderBy>, \<partitionBy>, and \<matchBy> column must have a corresponding outer value to help define the current row on which to operate, with the following behavior:
 
 - If there is exactly one corresponding outer column, its value is used.
 - If there is no corresponding outer column, then:
-  - ROWNUMBER will first determine all \<orderBy> and \<partitionBy> columns that have no corresponding outer column.
+  - ROWNUMBER will first determine all \<orderBy>, \<partitionBy>, and \<matchBy> columns that have no corresponding outer column.
   - For every combination of existing values for these columns in ROWNUMBER parent context, ROWNUMBER is evaluated and a row is returned.
   - ROWNUMBER’s final output is a union of these rows.
 - If there is more than one corresponding outer column, an error is returned.
 
+If \<matchBy> is present, then ROWNUMBER will try to use columns in \<matchBy> and \<partitionBy> to idenfity the current row.
 If the columns specified within \<orderBy> and \<partitionBy> cannot uniquely identify every row in \<relation>, then:
 
 - ROWNUMBER will try to find the least number of additional columns required to uniquely identify every row.
