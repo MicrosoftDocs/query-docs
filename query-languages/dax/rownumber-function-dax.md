@@ -45,7 +45,7 @@ Each \<orderBy>, \<partitionBy>, and \<matchBy> column must have a corresponding
   - ROWNUMBER’s final output is a union of these rows.
 - If there is more than one corresponding outer column, an error is returned.
 
-If \<matchBy> is present, then ROWNUMBER will try to use columns in \<matchBy> and \<partitionBy> to idenfity the current row.
+If \<matchBy> is present, then ROWNUMBER will try to use columns in \<matchBy> and \<partitionBy> to idenfity the current row.  
 If the columns specified within \<orderBy> and \<partitionBy> cannot uniquely identify every row in \<relation>, then:
 
 - ROWNUMBER will try to find the least number of additional columns required to uniquely identify every row.
