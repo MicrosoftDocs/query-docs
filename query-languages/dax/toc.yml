@@ -167,6 +167,8 @@
               href: keepfilters-function-dax.md
             - name: LOOKUPVALUE
               href: lookupvalue-function-dax.md
+            - name: MATCHBY
+              href: matchby-function-dax.md
             - name: OFFSET
               href: offset-function-dax.md
             - name: ORDERBY
