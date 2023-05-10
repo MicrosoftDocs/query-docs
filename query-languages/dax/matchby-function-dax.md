@@ -1,3 +1,16 @@
+---
+description: "Learn more about: MATCHBY"
+title: "MATCHBY function (DAX) | Microsoft Docs"
+ms.service: powerbi 
+ms.subservice: dax
+ms.date: 05/10/2023
+ms.topic: reference
+author: keshen
+ms.author: owend
+recommendations: false
+
+---
+
 # MATCHBY
 
 In window functions, defines the columns that are used to determine how to match data and identify the current row.
