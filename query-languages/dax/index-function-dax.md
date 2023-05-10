@@ -44,7 +44,7 @@ Each \<partitionBy> and \<matchBy> column must have a corresponding outer value 
 
 - If there is exactly one corresponding outer column, its value is used.
 - If there is no corresponding outer column:
-  - INDEX will first determine all  \<partitionBy> and \<matchBy> columns that have no corresponding outer column.
+  - INDEX will first determine all \<partitionBy> and \<matchBy> columns that have no corresponding outer column.
   - For every combination of existing values for these columns in INDEX’s parent context, INDEX is evaluated and a row is returned.
   - INDEX’s final output is a union of these rows.
 - If there is more than one corresponding outer column, an error is returned.
