@@ -33,7 +33,7 @@ Text.Combine({"Seattle", "WA"})
 
 ## Example 2
 
-Combine text values "Seattle" and "WA", separated by a comma and a space, ", ".
+Combine text values "Seattle" and "WA", separated by a comma and a space.
 
 **Usage**
 
