@@ -15,7 +15,7 @@ Text.Combine(<b>texts</b> as list, optional <b>separator</b> as nullable text) a
 
 Returns the result of combining the list of text values, `texts`, into a single text value. Any `null` values present in `texts` are ignored.
 
-An optional separator used in the final combined text may be specified, `separator`.
+An optional `separator` used in the final combined text may be specified.
 
 ## Example 1
 
