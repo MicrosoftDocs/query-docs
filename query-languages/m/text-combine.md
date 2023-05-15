@@ -47,7 +47,7 @@ Text.Combine({"Seattle", "WA"}, ", ")
 
 ## Example 3
 
-Combine values "Seattle", `null`, and "WA", separated by a comma and a space, ", ". (The `null` will be ignored.)
+Combine the values "Seattle", `null`, and "WA", separated by a comma and a space. (Note that the `null` is ignored.)
 
 **Usage**
 
