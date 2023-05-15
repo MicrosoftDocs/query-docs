@@ -121,7 +121,7 @@ The native type of number values is the intrinsic type `number`.
 
 A _time value_ stores an opaque representation of time of day. A time is encoded as the number of _ticks since midnight_, which counts the number of 100-nanosecond ticks that have elapsed on a 24-hour clock. The maximum number of _ticks since midnight_ corresponds to 23:59:59.9999999 hours.
 
-Time values may be constructed using the #time instrinsic.
+Although there is no literal syntax for times, several standard library functions are provided to construct them. Times may also be constructed using the intrinsic function `#time`:
 
 ```powerquery-m
 #time(hour, minute, second)
@@ -163,7 +163,7 @@ The native type of time values is the intrinsic type `time`.
 
 A _date value_ stores an opaque representation of a specific day. A date is encoded as a number of _days since epoch_, starting from January 1, 0001 Common Era on the Gregorian calendar. The maximum number of days since epoch is 3652058, corresponding to December 31, 9999.
 
-Date values may be constructed using the `#date` intrinsic.
+Although there is no literal syntax for dates, several standard library functions are provided to construct them. Dates may also be constructed using the intrinsic function `#date`:
 
 ```powerquery-m
 #date(year, month, day)
@@ -205,7 +205,7 @@ The native type of date values is the intrinsic type `date`.
 
 A _datetime value_ contains both a date and time.
 
-DateTime values may be constructed using the `#datetime` intrinsic.
+Although there is no literal syntax for datetimes, several standard library functions are provided to construct them. Datetimes may also be constructed using the intrinsic function `#datetime`:
 
 ```powerquery-m
 #datetime(year, month, day, hour, minute, second)
@@ -248,7 +248,7 @@ The native type of datetime values is the intrinsic type `datetime`.
 
 A _datetimezone_ value contains a datetime and a timezone. A _timezone_ is encoded as a number of _minutes offset from UTC_, which counts the number of minutes the time portion of the _datetime_ should be offset from Universal Coordinated Time (UTC). The minimum number of _minutes offset from UTC_ is -840, representing a UTC offset of -14:00, or fourteen hours earlier than UTC. The maximum number of _minutes offset from UTC_ is 840, corresponding to a UTC offset of 14:00.
 
-DateTimeZone values may be constructed using the `#datetimezone` intrinsic.
+Although there is no literal syntax for datetimezones, several standard library functions are provided to construct them. Datetimezones may also be constructed using the intrinsic function `#datetimezone`:
 
 ```powerquery-m
 #datetimezone(
@@ -297,7 +297,7 @@ The native type of datetimezone values is the intrinsic type `datetimezone`.
 
 A _duration value_ stores an opaque representation of the distance between two points on a timeline measured 100-nanosecond ticks. The magnitude of a _duration_ can be either positive or negative, with positive values denoting progress forwards in time and negative values denoting progress backwards in time. The minimum value that can be stored in a _duration_ is -9,223,372,036,854,775,808 ticks, or 10,675,199 days 2 hours 48 minutes 05.4775808 seconds backwards in time. The maximum value that can be stored in a _duration_ is 9,223,372,036,854,775,807 ticks, or 10,675,199 days 2 hours 48 minutes 05.4775807 seconds forwards in time.
 
-Duration values may be constructed using the `#duration` intrinsic function:
+Although there is no literal syntax for durations, several standard library functions are provided to construct them. Durations may also be constructed using the intrinsic function `#duration`:
 
 ```powerquery-m
 #duration(0, 0, 0, 5.5)          // 5.5 seconds 
@@ -376,7 +376,11 @@ The native type of text values is the intrinsic type `text`.
 
 ## Binary
 
-A _binary value_ represents a sequence of bytes. There is no literal format. Several standard library functions are provided to construct binary values. For example, `#binary` can be used to construct a binary value from a list of bytes:
+A _binary value_ represents a sequence of bytes. 
+
+Although there is no literal syntax for binary values, several standard library functions are provided to construct them. Binary values may also be constructed using the intrinsic function `#binary`.
+
+The following example constructs a binary value from a list of bytes:
 
 ```powerquery-m
 #binary( {0x00, 0x01, 0x02, 0x03} )
@@ -568,13 +572,13 @@ The native type of record values is the intrinsic type `record`, which specifies
 
 A _table value_ is an ordered sequence of rows. A _row_ is an ordered sequence of column values. The table's type determines the length of all rows in the table, the names of the table's columns, the types of the table's columns, and the structure of the table's keys (if any).
 
-There is no literal syntax for tables. Several standard library functions are provided to construct table values. For example, `#table` can be used to construct a table from a list of row lists and a list of header names:
+Although there is no literal syntax for tables, several standard library functions are provided to construct them. Tables may also be constructed using the intrinsic function `#table`.
+
+The following example constructs a table from a list of column names and a list of rows. The resulting table will contain two columns of `type any` and three rows.
 
 ```powerquery-m
 #table({"x", "x^2"}, {{1,1}, {2,4}, {3,9}})
 ```
-
-The above example constructs a table with two columns, both of which are of `type any`.
 
 `#table` can also be used to specify a full table type:
 
