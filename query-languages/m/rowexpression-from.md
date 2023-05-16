@@ -29,7 +29,7 @@ Returns the abstract syntax tree (AST) for the body of `function`, normalized in
 
 An error is raised if a row expression AST cannot be returned for the body of `function`.
 
-This function is identical to [ItemExpression.From](itemexpression-from.md).
+This function is identical to [`ItemExpression.From`](itemexpression-from.md).
   
 ## Example 1
 
