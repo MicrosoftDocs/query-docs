@@ -9,4 +9,4 @@ ms.date: 5/16/2023
 
 An abstract syntax tree (AST) node representing the item in an item expression.
 
-This value is identical to [RowExpression.Row](rowexpression-row.md).
+This value is identical to [`RowExpression.Row`](rowexpression-row.md).
