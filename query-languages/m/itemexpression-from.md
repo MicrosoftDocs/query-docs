@@ -17,6 +17,7 @@ Returns the abstract syntax tree (AST) for the body of `function`, normalized in
 
 - The function must be a 1-argument lambda.
 - All references to the function parameter are replaced with [`ItemExpression.Item`](itemexpression-item.md).
+- All references to columns are replaced with [`RowExpression.Column(columnName)`](rowexpression-column.md).
 - The AST will be simplified to contain only nodes of the kinds:
   - `Constant`
   - `Invocation`
