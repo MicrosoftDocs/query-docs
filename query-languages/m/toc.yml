@@ -122,6 +122,8 @@ items:
         href: cube-transform.md
       - name: DB2.Database
         href: db2-database.md
+      - name: DeltaLake.Table
+        href: deltalake-table.md
       - name: Essbase.Cubes
         href: essbase-cubes.md
       - name: Excel.CurrentWorkbook
