@@ -1,14 +1,14 @@
 ---
 description: "Learn more about: GoogleAnalytics.Accounts"
 title: "GoogleAnalytics.Accounts"
-ms.date: 10/7/2022
+ms.date: 5/16/2023
 ---
 # GoogleAnalytics.Accounts
 
 ## Syntax
 
 <pre>
-GoogleAnalytics.Accounts() as table
+GoogleAnalytics.Accounts(optional <b>options</b> as nullable record) as table
 </pre>
 
 ## About
