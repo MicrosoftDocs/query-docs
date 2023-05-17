@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table.RemoveColumns"
 title: "Table.RemoveColumns"
-ms.date: 3/10/2022
+ms.date: 5/17/2022
 ---
 # Table.RemoveColumns
 
@@ -25,7 +25,7 @@ Remove column [Phone] from the table.
 Table.RemoveColumns(
     Table.FromRecords({[CustomerID = 1, Name = "Bob", Phone = "123-4567"]}),
     "Phone"
-
+)
 ```
 
 **Output**
@@ -47,4 +47,4 @@ Table.RemoveColumns(
 
 **Output**
 
-`Expression.Error: The column 'Address' of the table wasn't found.`
+`[Expression.Error] The column 'Address' of the table wasn't found.`
