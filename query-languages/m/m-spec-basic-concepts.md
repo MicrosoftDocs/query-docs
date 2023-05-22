@@ -2,7 +2,7 @@
 title: M Language basic concepts 
 description: Discusses basic concepts that appear throughout the subsequent sections
 ms.topic: conceptual
-ms.date: 8/2/2022
+ms.date: 5/22/2023
 ms.custom: intro-internal
 ---
 
@@ -228,7 +228,7 @@ It does, however, rely on being able to reorder computations. Since expressions 
 
 Once a value has been calculated, it is _immutable_, meaning it can no longer be changed. This simplifies the model for evaluating an expression and makes it easier to reason about the result since it is not possible to change a value once it has been used to evaluate a subsequent part of the expression. For instance, a record field is only computed when needed. However, once computed, it remains fixed for the lifetime of the record. Even if the attempt to compute the field raised an error, that same error will be raised again on every attempt to access that record field.
 
-An important exception to the immutable-once-calculated rule applies to list and table values. Both have _streaming semantics_. That is, repeated enumeration of the items in a list or the rows in a table can produce varying results. Streaming semantics enables the construction of M expressions that transform data sets that would not fit in memory at once.
+An important exception to the immutable-once-calculated rule applies to list, table and binary values, each of which has _streaming semantics_. M's representation of a list, table or binary value, while immutable, does not contain materialized list items, table rows or binary bytes (respectively). Instead, these are produced as needed each time the value is enumerated. Since a streamed value's items, rows or bytes are produced on demand, repeated enumerations of the value can produce varying results unless the source and all intermediate transforms are guaranteed to be deterministic. Streaming semantics enables the construction of M expressions that transform data sets that would not fit in memory at once.
 
 Also, note that function application is _not_ the same as value construction. Library functions may expose external state (such as the current time or the results of a query against a database that evolves over time), rendering them _non-deterministic_. While functions defined in M will not, as such, expose any such non-deterministic behavior, they can if they are defined to invoke other functions that are non-deterministic.
 
