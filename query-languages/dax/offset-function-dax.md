@@ -19,7 +19,7 @@ Returns a single row that is positioned either before or after the *current row*
 ## Syntax  
   
 ```dax
-OFFSET ( <delta>[, <relation>][, <orderBy>][, <blanks>][, <partitionBy>] )
+OFFSET ( <delta>[, <relation>][, <orderBy>][, <blanks>][, <partitionBy>][, <matchBy>] )
 ```
   
 ### Parameters  
@@ -31,6 +31,7 @@ OFFSET ( <delta>[, <relation>][, <orderBy>][, <blanks>][, <partitionBy>] )
 |orderBy|(Optional) An ORDERBY() clause containing the expressions that define how each partition is sorted. </br>If omitted: </br>- \<relation> must be explicitly specified. </br>- Defaults to ordering by every column in \<relation> that is not already specified in \<partitionBy>.|
 |blanks|(Optional) An enumeration that defines how to handle blank values when sorting. </br>This parameter is reserved for future use. </br>Currently, the only supported value is KEEP (default), where the behavior for numerical/date values is blank values are ordered between zero and negative values. The behavior for strings is blank values are ordered before all strings, including empty strings.|
 |partitionBy|(Optional) A PARTITIONBY() clause containing the columns that define how \<relation> is partitioned. </br> If omitted, \<relation> is treated as a single partition. |
+|matchBy|(Optional) A MATCHBY() clause containing the columns that define how to match data and identify the current row. |  
   
 ## Return value
 
@@ -38,7 +39,7 @@ One or more rows from \<relation>.
   
 ## Remarks
 
-Except for columns added by DAX table functions, each column in \<relation> must have a corresponding outer value to help define the current row on which to operate, with the following behavior:
+Except for columns added by DAX table functions, each column in \<relation>, when \<matchBy> is not present, or each column in \<matchBy> and \<partitionBy>, when \<matchBy> is present, must have a corresponding outer value to help define the current row on which to operate, with the following behavior:
 
 - If there is exactly one corresponding outer column, its value is used.
 - If there is no corresponding outer column, then:
@@ -49,7 +50,8 @@ Except for columns added by DAX table functions, each column in \<relation> must
 
 If all of \<relation>'s columns were added by DAX table functions, an error is returned.
 
-If the columns specified within \<orderBy> and \<partitionBy> can't uniquely identify every row in \<relation>, then:
+If \<matchBy> is present, OFFSET will try to use \<matchBy> and \<partitionBy> columns to identify the row.   
+If \<matchBy> is not present and the columns specified within \<orderBy> and \<partitionBy> can't uniquely identify every row in \<relation>, then:  
 
 - OFFSET will try to find the least number of additional columns required to uniquely identify every row.
 - If such columns can be found, OFFSET will automatically append these new columns to \<orderBy>, and each partition is sorted using this new set of OrderBy columns.  
@@ -110,11 +112,36 @@ SUMMARIZECOLUMNS (
 
 Uses OFFSET() in a measure to return a table that summarizes the total sales for each calendar year and the total sales for the previous year.
 
+## Example 3
+
+The following DAX query:
+
+```dax
+EVALUATE
+ADDCOLUMNS (
+    FactInternetSales,
+    "Previous Sales Amount",
+        SELECTCOLUMNS (
+            OFFSET (
+                -1,
+                FactInternetSales,
+                ORDERBY ( FactInternetSales[SalesAmount], DESC ),
+                PARTITIONBY ( FactInternetSales[ProductKey] ),
+                MATCHBY( FactInternetSales[SalesOrderNumber], FactInternetSales[SalesOrderLineNumber] )
+            ),
+            FactInternetSales[SalesAmount]
+        )
+)
+```
+
+Returns FactInternetSales table with adding a column, which indicates, for each sale, its previous sale's amount, of the same product, in descending order of sales amount, with current sale being identified by its SalesOrderNumber and SalesOrderLineNumber. Without MATCHBY, the query would return an error since there are no key columns in FactInternetSales table.
+
 ## See also
 
 [INDEX](index-function-dax.md)  
 [ORDERBY](orderby-function-dax.md)  
 [PARTITIONBY](partitionby-function-dax.md)  
+[MATCHBY](matchby-function-dax.md)  
 [WINDOW](window-function-dax.md)  
 [RANK](rank-function-dax.md)  
 [ROWNUMBER](rownumber-function-dax.md)
