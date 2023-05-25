@@ -2,7 +2,7 @@
 title: M Language Operators 
 description: Describes using operators in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 8/2/2022
+ms.date: 5/25/2023
 ---
 
 # Operator behavior
@@ -257,10 +257,10 @@ For example:
 {"a","b","c"}{0}?                       // "a" 
 {1, [A=2], 3}{1}?                       // [A=2] 
 {true, false}{2}?                       // null 
-#table({"A","B"},{{0,1},{2,1}}){0}      // [A=0,B=1] 
-#table({"A","B"},{{0,1},{2,1}}){[A=2]}  // [A=2,B=1]  
-#table({"A","B"},{{0,1},{2,1}}){[B=3]}  // null 
-#table({"A","B"},{{0,1},{2,1}}){[B=1]}  // error
+#table({"A","B"},{{0,1},{2,1}}){0}?     // [A=0,B=1] 
+#table({"A","B"},{{0,1},{2,1}}){[A=2]}? // [A=2,B=1]  
+#table({"A","B"},{{0,1},{2,1}}){[B=3]}? // null 
+#table({"A","B"},{{0,1},{2,1}}){[B=1]}? // error
 ```
 
 Item access does not force the evaluation of list or table items other than the one being accessed. For example:
