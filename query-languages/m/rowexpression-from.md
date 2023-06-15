@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: RowExpression.From"
 title: "RowExpression.From"
-ms.date: 3/16/2022
+ms.date: 6/15/2023
 ---
 # RowExpression.From
 
@@ -25,7 +25,6 @@ Returns the abstract syntax tree (AST) for the body of `function`, normalized in
   * `Binary`
   * `If`
   * `FieldAccess`
-  * `NotImplemented`
 
 An error is raised if a row expression AST cannot be returned for the body of `function`.
   
