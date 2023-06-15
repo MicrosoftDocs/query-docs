@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Text.Combine"
 title: "Text.Combine"
-ms.date: 5/11/2023
+ms.date: 6/15/2023
 ---
 # Text.Combine
 
@@ -13,9 +13,7 @@ Text.Combine(<b>texts</b> as list, optional <b>separator</b> as nullable text) a
   
 ## About
 
-Returns the result of combining the list of text values, `texts`, into a single text value. Any `null` values present in `texts` are ignored.
-
-An optional `separator` used in the final combined text may be specified.
+Returns the result of combining the list of text values, `texts`, into a single text value. Any `null` values present in `texts` are ignored. An optional `separator` used in the final combined text can be specified.
 
 ## Example 1
 
