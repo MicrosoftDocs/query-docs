@@ -39,7 +39,7 @@ Internal rate of return for the given inputs. If the calculation fails to return
 
 - The value is calculated as the rate that satisfies the following function:  
 
-    $$\sum^{N}\_{j=1} \frac{P\_{j}}{(1 + \text{rate})^{\frac{d\_{j} - d\_{1}}{365}}}$$
+    $$0=\sum^{N}\_{j=1} \frac{P\_{j}}{(1 + \text{rate})^{\frac{d\_{j} - d\_{1}}{365}}}$$
 
     Where:
 
@@ -52,6 +52,10 @@ Internal rate of return for the given inputs. If the calculation fails to return
 - Avoid using ISERROR or IFERROR functions to capture an error returned by XIRR. If some inputs to the function may result in a no solution error, providing an alternateResult parameter is the most reliable and highest performing way to handle the error.
 
 - To learn more about using the alternateResult parameter, be to check out this [video](https://www.microsoft.com/videoplayer/embed/RWLzrC).
+  
+- When the absolute value of initial payment is small, the calculation likely fails to return a valid result.
+
+- Avoid including 0 values in payments. They will not impact the final result, and using 0 as initial payment will fail XIRR() calculation always.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
