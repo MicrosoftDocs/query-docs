@@ -126,6 +126,7 @@ ADDCOLUMNS (
                 -1,
                 FactInternetSales,
                 ORDERBY ( FactInternetSales[SalesAmount], DESC ),
+                BLANKS LAST,
                 PARTITIONBY ( FactInternetSales[ProductKey] ),
                 MATCHBY( FactInternetSales[SalesOrderNumber], FactInternetSales[SalesOrderLineNumber] )
             ),
