@@ -44,7 +44,7 @@ This function is similar to [ISONORAFTER](isonorafter-function-dax.md). The diff
 
 Table name: 'Info'  
   
-|Country|State|Count|Total|  
+|Country/Region|State|Count|Total|  
 |-----------|---------|---------|---------|  
 |IND|JK|20|800|  
 |IND|MH|25|1000|  
