@@ -65,12 +65,13 @@ ADDCOLUMNS(
     	ORDERBY(
     		'DimGeography'[StateProvinceName], desc,
     		'DimGeography'[City], asc),
+      LAST,
     	PARTITIONBY(
     		'DimGeography'[EnglishCountryRegionName])))
 ORDER BY [EnglishCountryRegionName] asc, [StateProvinceName] desc, [City] asc
 ```
 
-Returns a table that ranks each geography with the same EnglishCountryRegionName, by their StateProvinceName and City.
+Returns a table that ranks each geography with the same EnglishCountryRegionName, by their StateProvinceName and City. Blank \<orderBy> column values are sorted on the end. 
 
 ## See also
 
