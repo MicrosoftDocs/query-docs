@@ -65,7 +65,7 @@ ADDCOLUMNS(
     	ORDERBY(
     		'DimGeography'[StateProvinceName], desc,
     		'DimGeography'[City], asc),
-      LAST,
+        LAST,
     	PARTITIONBY(
     		'DimGeography'[EnglishCountryRegionName])))
 ORDER BY [EnglishCountryRegionName] asc, [StateProvinceName] desc, [City] asc
