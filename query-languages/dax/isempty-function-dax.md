@@ -39,7 +39,7 @@ True if the table is empty (has no rows), if else, False.
 
 For the below table named 'Info':  
   
-|Country|State|County|Total|  
+|Country/Region|State|County|Total|  
 |-----------|---------|----------|---------|  
 |IND|JK|20|800|  
 |IND|MH|25|1000|  

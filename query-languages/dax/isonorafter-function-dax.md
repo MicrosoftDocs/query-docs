@@ -44,7 +44,7 @@ This function is similar to [ISAFTER](isafter-function-dax.md). The difference i
 
 For the following table named, Info:  
   
-|Country|State|Count|Total|  
+|Country/Region|State|Count|Total|  
 |-----------|---------|---------|---------|  
 |IND|JK|20|800|  
 |IND|MH|25|1000|  
@@ -65,7 +65,7 @@ FILTER (
 
 Returns:
 
-|Country|State|Count|Total|  
+|Country/Region|State|Count|Total|  
 |-----------|---------|---------|---------|  
 |IND|MH|25|1000|  
 |IND|WB|10|900|  
