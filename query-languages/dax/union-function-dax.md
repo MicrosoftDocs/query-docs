@@ -59,14 +59,14 @@ UNION(UsaInventory, IndInventory)
 
 **USAInventory**
   
-|Country|State|Count|Total|  
+|Country/Region|State|Count|Total|  
 |-----------|---------|---------|---------|  
 |USA|CA|5|500|  
 |USA|WA|10|900|  
   
 **INDInventory**
   
-|Country|State|Count|Total|  
+|Country/Region|State|Count|Total|  
 |-----------|---------|---------|---------|  
 |IND|JK|20|800|  
 |IND|MH|25|1000|  
@@ -74,7 +74,7 @@ UNION(UsaInventory, IndInventory)
   
 Return table,  
   
-|Country|State|Count|Total|  
+|Country/Region|State|Count|Total|  
 |-----------|---------|---------|---------|  
 |USA|CA|5|500|  
 |USA|WA|10|900|  
