@@ -86,7 +86,7 @@ ADDCOLUMNS (
                 ORDERBY([CalendarYear]), 
                 PARTITIONBY([EnglishProductCategoryName])
         ),
-        [Current Sales]
+        [CurrentYearSales]
     )
 )
 
