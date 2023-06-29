@@ -16,8 +16,8 @@ RowExpression.From(<b>function</b> as function) as record
 Returns the abstract syntax tree (AST) for the body of `function`, normalized into a _row expression_:
 
 * The function must be a 1-argument lambda.
-* All references to the function parameter are replaced with `RowExpression.Row`.
-* All references to columns are replaced with <code>RowExpression.Column(_columnName_)</code>.
+* All references to the function parameter are replaced with [`RowExpression.Row`](rowexpression-row.md).
+* All references to columns are replaced with [`RowExpression.Column(columnName)`](rowexpression-column.md).
 * The AST will be simplified to contain only nodes of the kinds:
   * `Constant`
   * `Invocation`
@@ -27,10 +27,12 @@ Returns the abstract syntax tree (AST) for the body of `function`, normalized in
   * `FieldAccess`
 
 An error is raised if a row expression AST cannot be returned for the body of `function`.
+
+This function is identical to [`ItemExpression.From`](itemexpression-from.md).
   
 ## Example 1
 
-Returns the AST for the body of the function each [CustomerID] = "ALFKI"
+Returns the AST for the body of the function `each [CustomerID] = "ALFKI"`.
 
 **Usage**
   

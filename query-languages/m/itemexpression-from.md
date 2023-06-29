@@ -27,9 +27,11 @@ Returns the abstract syntax tree (AST) for the body of `function`, normalized in
 
 An error is raised if an item expression AST cannot be returned for the body of `function`.
 
+This function is identical to [`RowExpression.From`](rowexpression-from.md).
+
 ## Example 1
 
-Returns the AST for the body of the function `each _ <> null`
+Returns the AST for the body of the function `each _ <> null`.
 
 **Usage**
 
