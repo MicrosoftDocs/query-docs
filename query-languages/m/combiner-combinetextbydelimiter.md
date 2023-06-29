@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Combiner.CombineTextByDelimiter"
 title: "Combiner.CombineTextByDelimiter"
-ms.date: 10/7/2022
+ms.date: 6/15/2023
 ---
 # Combiner.CombineTextByDelimiter
 
@@ -13,7 +13,7 @@ Combiner.CombineTextByDelimiter(<b>delimiter</b> as text, optional <b>quoteStyle
 
 ## About
 
-Returns a function that combines a list of text into a single text using the specified delimiter.
+Returns a function that combines a list of text values into a single text value using the specified delimiter.
 
 ## Example 1
 
@@ -28,3 +28,34 @@ Combiner.CombineTextByDelimiter(";")({"a", "b", "c"})
 **Output**
 
 `"a;b;c"`
+
+## Example 2
+
+Combine the text of two columns using a comma delimiter and CSV-style quoting.
+
+**Usage**
+
+```powerquery-m
+let
+    Source = #table(
+        type table [Column1 = text, Column2 = text],
+        {{"a", "b"}, {"c", "d,e,f"}}
+    ),
+    Merged = Table.CombineColumns(
+        Source,
+        {"Column1", "Column2"},
+        Combiner.CombineTextByDelimiter(",", QuoteStyle.Csv),
+        "Merged"
+    )
+in
+    Merged
+```
+
+**Output**
+
+```powerquery-m
+#table(
+    type table [Merged = text],
+    {{"a,b"}, {"c,""d,e,f"""}}
+)
+```

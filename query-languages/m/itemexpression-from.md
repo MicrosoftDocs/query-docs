@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: ItemExpression.From"
 title: "ItemExpression.From"
-ms.date: 5/16/2023
+ms.date: 6/15/2023
 ---
 # ItemExpression.From
 
@@ -15,17 +15,15 @@ ItemExpression.From(<b>function</b> as function) as record
 
 Returns the abstract syntax tree (AST) for the body of `function`, normalized into an *item expression*:
 
-- The function must be a 1-argument lambda.
-- All references to the function parameter are replaced with [`ItemExpression.Item`](itemexpression-item.md).
-- All references to columns are replaced with [`RowExpression.Column(columnName)`](rowexpression-column.md).
-- The AST will be simplified to contain only nodes of the kinds:
-  - `Constant`
-  - `Invocation`
-  - `Unary`
-  - `Binary`
-  - `If`
-  - `FieldAccess`
-  - `NotImplemented`
+* The function must be a 1-argument lambda.
+* All references to the function parameter are replaced with [ItemExpression.Item](itemexpression-item.md).
+* The AST will be simplified to contain only nodes of the kinds:
+  * `Constant`
+  * `Invocation`
+  * `Unary`
+  * `Binary`
+  * `If`
+  * `FieldAccess`
 
 An error is raised if an item expression AST cannot be returned for the body of `function`.
 
