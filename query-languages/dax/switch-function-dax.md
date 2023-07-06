@@ -32,7 +32,7 @@ SWITCH(<expression>, <value>, <result>[, <value>, <result>]…[, <else>])
 
 ## Return value
 
-If there’s a match with a *value*, a scalar value from the corresponding *result* is returned. If there isn’t a match with a *value*, a value from *else* is returned. If none of the *values* match and *else* isn’t specified, (blank) is returned.
+If there’s a match with a *value*, a scalar value from the corresponding *result* is returned. If there isn’t a match with a *value*, a value from *else* is returned. If none of the *values* match and *else* isn’t specified, BLANK is returned.
   
 ## Remarks
 
