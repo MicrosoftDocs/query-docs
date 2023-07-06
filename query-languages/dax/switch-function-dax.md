@@ -32,7 +32,7 @@ SWITCH(<expression>, <value>, <result>[, <value>, <result>]…[, <else>])
 
 ## Return value
 
-If there’s a match with a *value*, a scalar value from the corresponding *result* is returned. If there isn’t a match with a *value*, a value from *else* is returned. If none of the *values* match and *else* isn’t specified, (blank) is returned.
+If there’s a match with a *value*, a scalar value from the corresponding *result* is returned. If there isn’t a match with a *value*, a value from *else* is returned. If none of the *values* match and *else* isn’t specified, BLANK is returned.
   
 ## Remarks
 
@@ -46,36 +46,36 @@ A common use of SWITCH is to compare *expression* with constant *values*. The fo
 
 ```dax
 = SWITCH(
-    [MonthNumber],
-    1, "January",
-    2, "February",
-    3, "March",
-    4, "April",
-    5, "May",
-    6, "June",
-    7, "July",
-    8, "August",
-    9, "September",
-    10, "October",
-    11, "November",
-    12, "December",
-    "Unknown month number"
-    )  
+         [Month Number Of Year],
+         1, "January",
+         2, "February",
+         3, "March",
+         4, "April",
+         5, "May",
+         6, "June",
+         7, "July",
+         8, "August",
+         9, "September",
+         10, "October",
+         11, "November",
+         12, "December",
+         "Unknown month number"
 
 ```
 
-Another common use of SWITCH is to replace multiple nested IF statements. This is accomplished by setting expression to TRUE, as shown in the following example, which compares ReorderPoint and SafetyStockLevel on products to identify potential risks of running out of stock:
+Another common use of SWITCH is to replace multiple nested IF statements. This is accomplished by setting expression to TRUE, as shown in the following example, which compares Reorder Point and Safety Stock Level on products to identify potential risks of running out of stock:
 
 ```dax
 = SWITCH (
-    TRUE,
-    [ReorderPoint] > [SafetyStockLevel], "Good: Safety stock level exceeded",
-    [ReorderPoint] = [SafetyStockLevel], "Minimal: Safety stock level met",
-    [ReorderPoint] < [SafetyStockLevel], "At risk: Safety stock level not met",
-    ISBLANK ( [ReorderPoint] ), "Incomplete: Reorder point not set",
-    ISBLANK ( [SafetyStockLevel] ), "Incomplete: Safety stock level not set",
-    "Unknown"
-)
+        TRUE,
+        [Reorder Point] > [Safety Stock Level], "Good: Safety stock level exceeded",
+        [Reorder Point] = [Safety Stock Level], "Minimal: Safety stock level met",
+        [Reorder Point] < [Safety Stock Level], "At risk: Safety stock level not met",
+        ISBLANK ( [Reorder Point] ), "Incomplete: Reorder point not set",
+        ISBLANK ( [Safety Stock Level] ), "Incomplete: Safety stock level not set",
+        "Unknown"
+        )
+
 
 ```
 
@@ -83,11 +83,11 @@ The order of *values* matters. In the following example, the second *result* is 
 
 ```dax
 = SWITCH (
-    TRUE,
-    DimProduct[StandardCost] < 100, "A",
-    DimProduct[StandardCost] < 10, "B",
-    "C"
-    )
+         TRUE,
+         Product[Standard Cost] < 100, "A",
+         Product[Standard Cost] < 10, "B",
+         "C"
+         )
 
 ```
 
