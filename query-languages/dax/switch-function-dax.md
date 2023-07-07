@@ -45,7 +45,7 @@ If there’s a match with a **value**, a scalar value from the corresponding **r
 A common use of SWITCH is to compare **expression** with constant **values**. The following example creates a calculated column of month names:
 
 ```dax
-= SWITCH(
+= SWITCH (
          [Month Number Of Year],
          1, "January",
          2, "February",
