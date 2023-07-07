@@ -94,7 +94,8 @@ The order of **values** matters. In the following example, the second **result**
 The following statement returns an error because the data types in the **result** arguments are different. Keep in mind that the data types in all **result** and **else** arguments must be the same.
 
 ```dax
-= SWITCH ([Class],
+= SWITCH (
+        [Class],
         "L", "Large",
         "H", 0.1
         )
