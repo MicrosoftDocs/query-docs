@@ -26,23 +26,23 @@ SWITCH(<expression>, <value>, <result>[, <value>, <result>]…[, <else>])
 |Term|Definition|  
 |--------|--------------|  
 | expression  | Any DAX expression that returns a single scalar value where the expression is to be evaluated multiple times (for each row/context).   |  
-| value |  A constant value to be matched with the results of *expression*.  |
-|result |Any scalar expression to be evaluated if the results of *expression* match the corresponding *value*.  |
-|else |Any scalar expression to be evaluated if the result of *expression* doesn't match any of the *value* arguments.  |
+| value |  A constant value to be matched with the results of **expression**.  |
+|result |Any scalar expression to be evaluated if the results of **expression** match the corresponding **value**.  |
+|else |Any scalar expression to be evaluated if the result of **expression** doesn't match any of the **value** arguments.  |
 
 ## Return value
 
-If there’s a match with a *value*, a scalar value from the corresponding *result* is returned. If there isn’t a match with a *value*, a value from *else* is returned. If none of the *values* match and *else* isn’t specified, BLANK is returned.
+If there’s a match with a **value**, a scalar value from the corresponding **result** is returned. If there isn’t a match with a **value**, a value from **else** is returned. If none of the **values** match and **else** isn’t specified, BLANK is returned.
   
 ## Remarks
 
-- The *expression* to be evaluated can be a constant value or an expression. A common use of this function is to set the first parameter to TRUE. See examples below.
-- All *result* expressions and the *else* expression must be of the same data type.
-- The order of conditions matters. As soon as one *value* matches, the corresponding *result* is returned, and other subsequent *values* aren’t evaluated. Make sure the most restrictive *values* to be evaluated are specified before less restrictive *values*. See examples below.
+- The **expression** to be evaluated can be a constant value or an expression. A common use of this function is to set the first parameter to TRUE. See examples below.
+- All **result** expressions and the **else** expression must be of the same data type.
+- The order of conditions matters. As soon as one **value** matches, the corresponding **result** is returned, and other subsequent **values** aren’t evaluated. Make sure the most restrictive **values** to be evaluated are specified before less restrictive **values**. See examples below.
   
 ## Examples
 
-A common use of SWITCH is to compare *expression* with constant *values*. The following example creates a calculated column of month names:
+A common use of SWITCH is to compare **expression** with constant **values**. The following example creates a calculated column of month names:
 
 ```dax
 = SWITCH(
@@ -79,7 +79,7 @@ Another common use of SWITCH is to replace multiple nested IF statements. This i
 
 ```
 
-The order of *values* matters. In the following example, the second *result* is never returned because the first value is less restrictive than the second. The result in this example is always “A” or “C”, but never “B”.
+The order of **values** matters. In the following example, the second **result** is never returned because the first value is less restrictive than the second. The result in this example is always “A” or “C”, but never “B”.
 
 ```dax
 = SWITCH (
@@ -91,7 +91,7 @@ The order of *values* matters. In the following example, the second *result* is 
 
 ```
 
-The following statement returns an error because the data types in the *result* arguments are different. Keep in mind that the data types in all *result* and *else* arguments must be the same.
+The following statement returns an error because the data types in the **result** arguments are different. Keep in mind that the data types in all **result** and **else** arguments must be the same.
 
 ```dax
 = SWITCH ([Class],
