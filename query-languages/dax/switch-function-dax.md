@@ -60,7 +60,7 @@ A common use of SWITCH is to compare *expression* with constant *values*. The fo
          11, "November",
          12, "December",
          "Unknown month number"
-
+        )
 ```
 
 Another common use of SWITCH is to replace multiple nested IF statements. This is accomplished by setting expression to TRUE, as shown in the following example, which compares Reorder Point and Safety Stock Level on products to identify potential risks of running out of stock:
@@ -94,9 +94,9 @@ The order of *values* matters. In the following example, the second *result* is 
 The following statement returns an error because the data types in the *result* arguments are different. Keep in mind that the data types in all *result* and *else* arguments must be the same.
 
 ```dax
-= SWITCH([Class],
-    "L", "Large",
-    "H", 0.1
-)
+= SWITCH ([Class],
+        "L", "Large",
+        "H", 0.1
+        )
 
 ```
