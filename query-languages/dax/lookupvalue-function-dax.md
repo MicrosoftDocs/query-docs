@@ -40,9 +40,9 @@ LOOKUPVALUE (
 
 The value of **result_columnName** at the row where all pairs of **search_columnName** and **search_value** have an exact match.
 
-If there's no match that satisfies all the search values, BLANK or **alternateResult** (if supplied) is returned. In other words, the function doesn't return a lookup value if only some of the criteria match.
+If there isn't a match that satisfies all the search values, BLANK or **alternateResult** (if specified) is returned. In other words, the function doesn't return a lookup value if only some of the criteria match.
 
-If multiple rows match the search values and the values in the **result_columnName** for these rows are identical, then that value is returned. However, if **result_columnName** returns different values, an error or **alternateResult** (if supplied) is returned.
+If multiple rows match the search values and the values in the **result_columnName** for these rows are identical, then that value is returned. However, if **result_columnName** returns different values, an error or **alternateResult** (if specified) is returned.
 
 ## Remarks
 
