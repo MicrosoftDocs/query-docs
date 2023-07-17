@@ -60,8 +60,6 @@ If multiple rows match the search values and the values in the **result_columnNa
 
 ## Examples
 
-[!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
-
 The following calculated column defined in the **Sales** table uses the LOOKUPVALUE function to return channel values from the **Sales Order** table.
 
 ```dax
@@ -80,7 +78,7 @@ However, in this case, because there is a relationship between the **Sales Order
 CHANNEL = RELATED('Sales Order'[Channel])
 ```
 
-The following example is not supported in the Adventure Works DW 2020 sample model. Here, LOOKUPVALUE searches Average Rate for the currency used to pay for the order on the day the order was placed:
+In the following example, LOOKUPVALUE is used to search Average Rate for the currency used to pay for the order on the day the order was placed:
 
 ```dax
 Exchange Rate = 
