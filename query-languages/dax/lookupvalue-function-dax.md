@@ -58,27 +58,9 @@ If multiple rows match the search values and the values in the **result_columnNa
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-## Examples
+## Example 1
 
-The following calculated column defined in the **Sales** table uses the LOOKUPVALUE function to return channel values from the **Sales Order** table.
-
-```dax
-CHANNEL = 
-LOOKUPVALUE (
-    'Sales Order'[Channel],
-    'Sales Order'[SalesOrderLineKey],
-    [SalesOrderLineKey]
-)
-
-```
-
-However, in this case, because there is a relationship between the **Sales Order** and **Sales** tables, it's more efficient to use the [RELATED](related-function-dax.md) function.
-
-```dax
-CHANNEL = RELATED('Sales Order'[Channel])
-```
-
-In the following example, LOOKUPVALUE is used to search Average Rate for the currency used to pay for the order on the day the order was placed:
+In this example, LOOKUPVALUE is used to search Average Rate for the currency used to pay for the order on the day the order was placed:
 
 ```dax
 Exchange Rate = 
@@ -97,6 +79,26 @@ You can use the Exchange Rate to calculate the Sales Amount in local currency wi
 ```dax
 Sales Amount Local Currency = [Sales Amount] * [Exchange Rate]
 
+```
+
+## Example 2
+
+In this example, the following calculated column defined in the **Sales** table uses the LOOKUPVALUE function to return channel values from the **Sales Order** table.
+
+```dax
+CHANNEL = 
+LOOKUPVALUE (
+    'Sales Order'[Channel],
+    'Sales Order'[SalesOrderLineKey],
+    [SalesOrderLineKey]
+)
+
+```
+
+However, in this case, because there is a relationship between the **Sales Order** and **Sales** tables, it's more efficient to use the [RELATED](related-function-dax.md) function.
+
+```dax
+CHANNEL = RELATED('Sales Order'[Channel])
 ```
 
 ## See also
