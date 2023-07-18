@@ -2,7 +2,7 @@
 title: M Language Functions 
 description: Describes using functions in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 8/2/2022
+ms.date: 7/7/2023
 ---
 
 
@@ -41,7 +41,7 @@ optional-parameter-list:<br/>
 optional-parameter:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional` _parameter<br/>
 nullable-primitve-type<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`_<sub>opt</sub> primitive-type_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`_<sub>opt</sub> _primitive-type_
 
 The following is an example of a function that requires exactly two values `x` and `y`, and produces the result of applying the `+` operator to those values. The `x` and `y` are _parameters_ that are part of the _parameter-list_ of the function, and the `x + y` is the _function-body_:
 
@@ -62,7 +62,7 @@ The following operators are defined for function values:
 | `x = y` | Equal |
 | `x <> y` | Not equal |
 
-The native type of function values is a custom function type (derived from the intrinsic type `function`) that lists the parameter names and specifies all parameter types and the return type to be `any`. (See [Function types](m-spec-types.md#function-types) for details on function types.)
+The native type of function values is a custom function type (derived from the intrinsic type `function`) that lists the parameter names and specifies all parameter types and the return type to be `any`. (Go to [Function types](m-spec-types.md#function-types) for details on function types.)
 
 ## Invoking functions
 
@@ -86,7 +86,8 @@ An _argument-list_ is used to specify a fixed number of arguments directly as a 
 
 The following holds when invoking a function:
 
-* The environment used to evaluate the _function-body_ of the function includes a variable that corresponds to each parameter, with the same name as the parameter. The value of each parameter corresponds to a value constructed from the _argument-list_ of the _invoke-expression_, as defined in [Parameters](#parameters). 
+* The environment used to evaluate the _function-body_ of the function includes a variable that corresponds to each parameter, with the same name as the parameter. The value of each parameter corresponds to a value constructed from the _argument-list_ of the _invoke-expression_, as defined in [Parameters](#parameters).
+
 * All of the expressions corresponding to the function arguments are evaluated before the _function-body_ is evaluated.
 
 * Errors raised when evaluating the expressions in the _expression-list_ or _function-body_ are propagated.
@@ -112,7 +113,7 @@ There are two kinds of parameters that may be present in a _parameter-list_:
 
   ```powerquery-m
     [ 
-        MyFunction = fn(x, optional y) =>
+        MyFunction = (x, optional y) =>
                           if (y = null) x else x + y, 
         Result1 = MyFunction(1),        // 1 
         Result2 = MyFunction(1, null),  // 1 
