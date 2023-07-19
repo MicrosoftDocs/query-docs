@@ -23,11 +23,11 @@ Let’s start with an example that doesn't use Window functions at all. Shown be
 
 ```dax
 BasicTable = 
-SUMMARIZECOLUMNS ( 
-DimProduct[Color], 
-DimDate[CalendarYear], 
-"CurrentYearSales", ROUND( SUM( FactInternetSales[SalesAmount] ), 0 )
-)
+    SUMMARIZECOLUMNS ( 
+        DimProduct[Color], 
+        DimDate[CalendarYear], 
+        "CurrentYearSales", ROUND ( SUM ( FactInternetSales[SalesAmount] ), 0 )
+    )
 
 ```
 
@@ -67,23 +67,23 @@ OFFSET is perfect for the typical *compare with previous* types of calculations 
 
 ```dax
 1stAttempt = 
-VAR vRelation = SUMMARIZECOLUMNS ( 
-    DimProduct[Color], 
-    DimDate[CalendarYear], 
-    "CurrentYearSales", ROUND( SUM( FactInternetSales[SalesAmount] ), 0 )
+    VAR vRelation = SUMMARIZECOLUMNS ( 
+        DimProduct[Color], 
+        DimDate[CalendarYear], 
+        "CurrentYearSales", ROUND ( SUM ( FactInternetSales[SalesAmount] ), 0 )
+        )
+    RETURN
+    ADDCOLUMNS (
+        vRelation,
+        "PreviousColorSales",
+        SELECTCOLUMNS (
+            OFFSET (
+                -1,
+                vRelation
+            ),
+            [CurrentYearSales]
+        )
     )
-RETURN
-ADDCOLUMNS(
-    vRelation,
-    "PreviousColorSales",
-    SELECTCOLUMNS(
-        OFFSET(
-            -1,
-            vRelation
-        ),
-        [CurrentYearSales]
-    )
-)
 
 ```
 
@@ -125,24 +125,24 @@ That definition above is equivalent to:
 
 ```dax
 1stAttemptWithORDERBY = 
-VAR vRelation = SUMMARIZECOLUMNS ( 
-    DimProduct[Color], 
-    DimDate[CalendarYear], 
-    "CurrentYearSales", ROUND( SUM( FactInternetSales[SalesAmount] ), 0 )
+    VAR vRelation = SUMMARIZECOLUMNS ( 
+        DimProduct[Color], 
+        DimDate[CalendarYear], 
+        "CurrentYearSales", ROUND ( SUM ( FactInternetSales[SalesAmount] ), 0 )
+        )
+    RETURN
+    ADDCOLUMNS (
+        vRelation,
+        "PreviousColorSales",
+        SELECTCOLUMNS (
+            OFFSET (
+                -1,
+                vRelation,
+                ORDERBY ([Color], ASC, [CalendarYear], ASC, [CurrentYearSales], ASC)      
+            ),
+            [CurrentYearSales]
+        )
     )
-RETURN
-ADDCOLUMNS(
-    vRelation,
-    "PreviousColorSales",
-    SELECTCOLUMNS(
-        OFFSET(
-            -1,
-            vRelation,
-                ORDERBY([Color], ASC, [CalendarYear], ASC, [CurrentYearSales], ASC)      
-        ),
-        [CurrentYearSales]
-    )
-)
 
 ```
 
@@ -152,24 +152,24 @@ The reason these two results are equivalent is because ORDERBY automatically con
 
 ```dax
 1stAttemptWithORDERBY = 
-VAR vRelation = SUMMARIZECOLUMNS ( 
-    DimProduct[Color], 
-    DimDate[CalendarYear], 
-    "CurrentYearSales", ROUND( SUM( FactInternetSales[SalesAmount] ), 0 )
+    VAR vRelation = SUMMARIZECOLUMNS ( 
+        DimProduct[Color], 
+        DimDate[CalendarYear], 
+        "CurrentYearSales", ROUND ( SUM ( FactInternetSales[SalesAmount] ), 0 )
+        )
+    RETURN
+    ADDCOLUMNS(
+        vRelation,
+        "PreviousColorSales",
+        SELECTCOLUMNS (
+            OFFSET (
+                -1,
+                vRelation,
+                ORDERBY ([Color])
+            ),
+            [CurrentYearSales]
+        )
     )
-RETURN
-ADDCOLUMNS(
-    vRelation,
-    "PreviousColorSales",
-    SELECTCOLUMNS(
-        OFFSET(
-            -1,
-            vRelation,
-ORDERBY([Color])
-        ),
-        [CurrentYearSales]
-    )
-)
 
 ```
 
@@ -179,25 +179,25 @@ Now, to *almost* get the result we're after we can use PARTITIONBY, as shown in 
 
 ```dax
 UsingPARTITIONBY = 
-VAR vRelation = SUMMARIZECOLUMNS ( 
-    DimProduct[Color], 
-    DimDate[CalendarYear], 
-    "CurrentYearSales", ROUND( SUM( FactInternetSales[SalesAmount] ), 0 )
-    )
-RETURN
-ADDCOLUMNS(
-    vRelation,
-    "PreviousColorSales",
-    SELECTCOLUMNS(
-        OFFSET(
-            -1,
-            vRelation,
-    ORDERBY([CalendarYear]), 
-                PARTITIONBY([Color])
-                ),
+    VAR vRelation = SUMMARIZECOLUMNS ( 
+        DimProduct[Color], 
+        DimDate[CalendarYear], 
+        "CurrentYearSales", ROUND ( SUM ( FactInternetSales[SalesAmount] ), 0 )
+        )
+    RETURN
+    ADDCOLUMNS (
+        vRelation,
+        "PreviousColorSales",
+        SELECTCOLUMNS (
+            OFFSET (
+                -1,
+                vRelation,
+                ORDERBY ([CalendarYear]), 
+                PARTITIONBY ([Color])
+            ),
             [CurrentYearSales]
+        )
     )
-)
 
 ```
 
@@ -205,24 +205,24 @@ Notice that specifying ORDERBY is optional here because ORDERBY automatically co
 
 ```dax
 UsingPARTITIONBYWithoutORDERBY = 
-VAR vRelation = SUMMARIZECOLUMNS ( 
-    DimProduct[Color], 
-    DimDate[CalendarYear], 
-    "CurrentYearSales", ROUND( SUM( FactInternetSales[SalesAmount] ), 0 )
+    VAR vRelation = SUMMARIZECOLUMNS ( 
+        DimProduct[Color], 
+        DimDate[CalendarYear], 
+        "CurrentYearSales", ROUND ( SUM ( FactInternetSales[SalesAmount] ), 0 )
+        )
+    RETURN
+    ADDCOLUMNS (
+        vRelation,
+        "PreviousColorSales",
+        SELECTCOLUMNS (
+            OFFSET (
+                -1,
+                vRelation,
+                PARTITIONBY ([Color])
+            ),
+            [CurrentYearSales]
+        )
     )
-RETURN
-ADDCOLUMNS(
-    vRelation,
-    "PreviousColorSales",
-    SELECTCOLUMNS(
-        OFFSET(
-            -1,
-            vRelation,
-            PARTITIONBY([Color])
-        ),
-        [CurrentYearSales]
-    )
-)
 
 
 ```
@@ -272,26 +272,26 @@ To achieve the final result, we simply have to subtract CurrentYearSales from th
 
 ```dax
 FinalResult = 
-VAR vRelation = SUMMARIZECOLUMNS ( 
-    DimProduct[Color], 
-    DimDate[CalendarYear], 
-    "CurrentYearSales", ROUND( SUM( FactInternetSales[SalesAmount] ), 0 )
+    VAR vRelation = SUMMARIZECOLUMNS ( 
+        DimProduct[Color], 
+        DimDate[CalendarYear], 
+        "CurrentYearSales", ROUND ( SUM ( FactInternetSales[SalesAmount] ), 0 )
+        )
+    RETURN
+    ADDCOLUMNS (
+        vRelation,
+        "YoYSalesForSameColor",
+        [CurrentYearSales] -
+        SELECTCOLUMNS (
+            OFFSET (
+                -1,
+                vRelation,
+                ORDERBY ([CalendarYear]),
+                PARTITIONBY ([Color])
+            ),
+            [CurrentYearSales]
+        )
     )
-RETURN
-ADDCOLUMNS(
-    vRelation,
-    "YoYSalesForSameColor",
-    [CurrentYearSales] -
-    SELECTCOLUMNS(
-        OFFSET(
-            -1,
-            vRelation,
-            ORDERBY([CalendarYear]),
-            PARTITIONBY([Color])
-        ),
-        [CurrentYearSales]
-    )
-)
 
 ```
 
@@ -333,26 +333,26 @@ Continuing from the examples above, here's the last expression:
 
 ```dax
 FinalResult = 
-VAR vRelation = SUMMARIZECOLUMNS ( 
-    DimProduct[Color], 
-    DimDate[CalendarYear], 
-    "CurrentYearSales", ROUND( SUM( FactInternetSales[SalesAmount] ), 0 )
+    VAR vRelation = SUMMARIZECOLUMNS ( 
+        DimProduct[Color], 
+        DimDate[CalendarYear], 
+        "CurrentYearSales", ROUND ( SUM ( FactInternetSales[SalesAmount] ), 0 )
+        )
+    RETURN
+    ADDCOLUMNS (
+        vRelation,
+        "YoYSalesForSameColor",
+        [CurrentYearSales] -
+        SELECTCOLUMNS (
+            OFFSET (
+                -1,
+                vRelation,
+                ORDERBY ([CalendarYear]),
+                PARTITIONBY ([Color])
+            ),
+            [CurrentYearSales]
+        )
     )
-RETURN
-ADDCOLUMNS(
-    vRelation,
-    "YoYSalesForSameColor",
-    [CurrentYearSales] -
-    SELECTCOLUMNS(
-        OFFSET(
-            -1,
-            vRelation,
-            ORDERBY([CalendarYear]),
-            PARTITIONBY([Color])
-        ),
-        [CurrentYearSales]
-    )
-)
 
 ```
 
@@ -360,27 +360,27 @@ If we want to be explicit about how rows should be uniquely identified, we can s
 
 ```dax
 FinalResultWithExplicitMATCHBYOnColorAndCalendarYear = 
-VAR vRelation = SUMMARIZECOLUMNS ( 
-    DimProduct[Color], 
-    DimDate[CalendarYear], 
-    "CurrentYearSales", ROUND( SUM( FactInternetSales[SalesAmount] ), 0 )
+    VAR vRelation = SUMMARIZECOLUMNS ( 
+        DimProduct[Color], 
+        DimDate[CalendarYear], 
+        "CurrentYearSales", ROUND ( SUM ( FactInternetSales[SalesAmount] ), 0 )
+        )
+    RETURN
+    ADDCOLUMNS (
+        vRelation,
+        "YoYSalesForSameColor",
+        [CurrentYearSales] -
+        SELECTCOLUMNS (
+            OFFSET (
+                -1,
+                vRelation,
+                ORDERBY ([CalendarYear]),
+                PARTITIONBY ([Color]),
+                MATCHBY ([Color], [CalendarYear])
+            ),
+            [CurrentYearSales]
+        )
     )
-RETURN
-ADDCOLUMNS(
-    vRelation,
-    "YoYSalesForSameColor",
-    [CurrentYearSales] -
-    SELECTCOLUMNS(
-        OFFSET(
-            -1,
-            vRelation,
-            ORDERBY([CalendarYear]),
-            PARTITIONBY([Color]),
-            MATCHBY([Color], [CalendarYear])
-        ),
-        [CurrentYearSales]
-    )
-)
 
 ```
 
@@ -388,27 +388,27 @@ Since MATCHBY is specified, both the columns specified in MATCHBY as well as in 
 
 ```dax
 FinalResultWithExplicitMATCHBYOnCalendarYear = 
-VAR vRelation = SUMMARIZECOLUMNS ( 
-    DimProduct[Color], 
-    DimDate[CalendarYear], 
-    "CurrentYearSales", ROUND( SUM( FactInternetSales[SalesAmount] ), 0 )
+    VAR vRelation = SUMMARIZECOLUMNS ( 
+        DimProduct[Color], 
+        DimDate[CalendarYear], 
+        "CurrentYearSales", ROUND ( SUM ( FactInternetSales[SalesAmount] ), 0 )
+        )
+    RETURN
+    ADDCOLUMNS (
+        vRelation,
+        "YoYSalesForSameColor",
+        [CurrentYearSales] -
+        SELECTCOLUMNS (
+            OFFSET (
+                -1,
+                vRelation,
+                ORDERBY ([CalendarYear]),
+                PARTITIONBY ([Color]),
+                MATCHBY ([CalendarYear])
+            ),
+            [CurrentYearSales]
+        )
     )
-RETURN
-ADDCOLUMNS(
-    vRelation,
-    "YoYSalesForSameColor",
-    [CurrentYearSales] -
-    SELECTCOLUMNS(
-        OFFSET(
-            -1,
-            vRelation,
-            ORDERBY([CalendarYear]),
-            PARTITIONBY([Color]),
-            MATCHBY([CalendarYear])
-        ),
-        [CurrentYearSales]
-    )
-)
 
 ```
 
@@ -433,20 +433,19 @@ For each order, we want to return the previous sales amount of the same product 
 
 ```dax
 ThisExpressionFailsBecauseMATCHBYIsMissing = 
-
-ADDCOLUMNS (
-    FactInternetSales,
-    "Previous Sales Amount",
-        SELECTCOLUMNS (
-            OFFSET (
-                -1,
-                FactInternetSales,
-                ORDERBY ( FactInternetSales[SalesAmount], DESC ),
-                PARTITIONBY ( FactInternetSales[ProductKey] )
-            ),
-            FactInternetSales[SalesAmount]
-        )
-)
+    ADDCOLUMNS (
+        FactInternetSales,
+        "Previous Sales Amount",
+            SELECTCOLUMNS (
+                OFFSET (
+                    -1,
+                    FactInternetSales,
+                    ORDERBY ( FactInternetSales[SalesAmount], DESC ),
+                    PARTITIONBY ( FactInternetSales[ProductKey] )
+                ),
+                FactInternetSales[SalesAmount]
+            )
+    )
 
 ```
 
@@ -456,22 +455,21 @@ In order to make this expression work, MATCHBY must be specified and must includ
 
 ```dax
 ThisExpressionWorksBecauseOfMATCHBY = 
-
-ADDCOLUMNS (
-    FactInternetSales,
-    "Previous Sales Amount",
-        SELECTCOLUMNS (
-            OFFSET (
-                -1,
-                FactInternetSales,
-                ORDERBY ( FactInternetSales[SalesAmount], DESC ),
-                PARTITIONBY ( FactInternetSales[ProductKey] ),
-                MATCHBY( FactInternetSales[SalesOrderNumber],
-FactInternetSales[SalesOrderLineNumber] )
-            ),
-            FactInternetSales[SalesAmount]
-        )
-)
+    ADDCOLUMNS (
+        FactInternetSales,
+        "Previous Sales Amount",
+            SELECTCOLUMNS (
+                OFFSET (
+                    -1,
+                    FactInternetSales,
+                    ORDERBY ( FactInternetSales[SalesAmount], DESC ),
+                    PARTITIONBY ( FactInternetSales[ProductKey] ),
+                    MATCHBY ( FactInternetSales[SalesOrderNumber], 
+                                FactInternetSales[SalesOrderLineNumber] )
+                ),
+                FactInternetSales[SalesAmount]
+            )
+    )
 
 ```
 
