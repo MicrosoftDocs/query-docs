@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number.ToText"
 title: "Number.ToText"
-ms.date: 3/11/2022
+ms.date: 7/18/2023
 ---
 # Number.ToText
 
@@ -13,22 +13,15 @@ Number.ToText(<b>number</b> as nullable number, optional <b>format</b> as nullab
   
 ## About
 
-Formats the numeric value `number` to a text value according to the format specified by `format`. The format is a single character code optionally followed by a number precision specifier. The following character codes may be used for `format`.
+Converts the numeric value `number` to a text value according to the format specified by `format`.
 
-* "D" or "d": (Decimal) Formats the result as integer digits. The precision specifier controls the number of digits in the output.
-* "E" or "e": (Exponential/scientific) Exponential notation. The precision specifier controls the maximum number of decimal digits (default is 6).
-* "F" or "f": (Fixed-point) Integral and decimal digits.
-* "G" or "g": (General) Most compact form of either fixed-point or scientific.
-* "N" or "n": (Number) Integral and decimal digits with group separators and a decimal separator.
-* "P" or "p": (Percent) Number multiplied by 100 and displayed with a percent symbol.
-* "R" or "r": (Round-trip) A text value that can round-trip an identical number. The precision specifier is ignored.
-* "X" or "x": (Hexadecimal) A hexadecimal text value.
+The format is a text value indicating how the number should be converted. For more details on the supported format values, go to [https://go.microsoft.com/fwlink/?linkid=2241210](https://go.microsoft.com/fwlink/?linkid=2241210) and [https://go.microsoft.com/fwlink/?linkid=2240884](https://go.microsoft.com/fwlink/?linkid=2240884).
 
-An optional `culture` may also be provided (for example, "en-US").
+An optional `culture` may also be provided (for example, "en-US") to control the culture-dependent behavior of `format`.
 
 ## Example 1
 
-Format a number as text without format specified.
+Convert a number to text without specifying a format.
 
 **Usage**
 
@@ -42,7 +35,7 @@ Number.ToText(4)
 
 ## Example 2
 
-Format a number as text in Exponential format.
+Convert a number to exponential format.
 
 **Usage**
 
@@ -56,7 +49,7 @@ Number.ToText(4, "e")
 
 ## Example 3
 
-Format a number as text in Decimal format with limited precision.
+Convert a number to percentage format with only one decimal place.
 
 **Usage**
 
