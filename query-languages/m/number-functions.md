@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Number functions"
 title: "Number functions"
-ms.date: 5/16/2022
+ms.date: 7/18/2023
 ---
 # Number functions
 
@@ -29,7 +29,7 @@ These functions create and manipulate number values.
 |[Int64.From](int64-from.md)|Returns a 64-bit integer number value from the given value.|
 |[Number.From](number-from.md)|Returns a number value from a value.|
 |[Number.FromText](number-fromtext.md)|Returns a number value from a text value.|
-|[Number.ToText](number-totext.md)|Returns a text value from a number value.|
+|[Number.ToText](number-totext.md)|Converts the given number to text.|
 |[Percentage.From](percentage-from.md)|Returns a percentage value from the given value.|
 |[Single.From](single-from.md)|Returns a Single number value from the given value.|
 
