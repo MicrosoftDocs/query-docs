@@ -258,11 +258,11 @@ Both expressions return the result we're after:
 | "Yellow" | 2019         | 2072083          | 163071                        |
 | "Yellow" | 2020         | 2621602          | 2072083                       |
 
-As you see in this table, the PreviousYearSalesForSameColor column shows the sales for the previous year for the same color. For [Red, 2020], it returns the sales for [Red, 2019], and so on. If there's no previous year, for example in the case of [Red,2017], no value is returned.
+As you see in this table, the PreviousYearSalesForSameColor column shows the sales for the previous year for the same color. For [Red, 2020], it returns the sales for [Red, 2019], and so on. If there's no previous year, for example in the case of [Red, 2017], no value is returned.
 
 You can think of PARTITIONBY as a way to divide the table into parts in which to execute the OFFSET calculation. In the example above, the table is divided into as many parts as there are colors, one for each color. Then, within each part, the OFFSET is calculated, sorted by CalendarYear.
 
-Visually what's happening is this:
+Visually, what's happening is this:
 
 :::image type="content" source="media/dax-understand-orderby/offset-by-calendar-year.png" border="false" alt-text="Table showing OFFSET by Calendar Year":::
 
@@ -327,9 +327,7 @@ And here's the result of that expression:
 
 You might have noticed we didn't specify MATCHBY at all. In this case, it isn't necessary. The columns in ORDERBY and PARTITIONBY (for as far as they were specified in the examples above) are sufficient to uniquely identify each row. Since we didn't specify MATCHBY, the columns specified in ORDERBY and PARTITIONBY are used to uniquely identify each row so they can be compared to enable OFFSET to give a meaningful result. If the columns in ORDERBY and PARTITIONBY can’t uniquely identify each row, additional columns can be added to the ORDERBY clause if those extra columns allow each row to be uniquely identified. If that's not possible, an error is returned. In this last case, specifying MATCHBY may help to resolve the error.
 
-If MATCHBY is specified, the columns in MATCHBY and PARTITIONBY are used to uniquely identify each row. If that's not possible, an error is returned.
-
-Even if MATCHBY isn't required, consider explicitly specifying MATCHBY to avoid any confusion.
+If MATCHBY is specified, the columns in MATCHBY and PARTITIONBY are used to uniquely identify each row. If that's not possible, an error is returned. Even if MATCHBY isn't required, consider explicitly specifying MATCHBY to avoid any confusion.
 
 Continuing from the examples above, here's the last expression:
 
