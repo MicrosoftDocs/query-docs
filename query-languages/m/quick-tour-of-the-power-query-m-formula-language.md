@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Quick tour of the Power Query M formula language"
 title: "Quick tour"
-ms.date: 7/6/2023
+ms.date: 7/21/2023
 ms.topic: conceptual
 ms.custom: intro-internal
 ---
@@ -38,9 +38,9 @@ To learn more about expressions and values, go to [Expressions, values, and let 
   
 ## Simple Power Query M formula steps  
 
-Let's assume you created the following transform in the Power Query editor to convert product names to the proper case, in this case, to all initial capitalization.
+Let's assume you created the following transform in the Power Query editor to convert product names to the appropriate case, in this instance, to all initial capitalization.
 
-:::image type="content" source="media/mstep1.png" alt-text="Screenshot of the Power Query editor showing the results of converting the Item column entries to intial capitalization.":::
+:::image type="content" source="media/mstep1.png" alt-text="Screenshot of the Power Query editor showing the results of converting the Item column entries to initial capitalization.":::
   
 To begin with, you have a table that looks like this:
   

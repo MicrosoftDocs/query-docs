@@ -2,7 +2,7 @@
 title: Power Query M formula language introduction 
 description: Provides an overview of the Power Query M formula language
 ms.topic: overview
-ms.date: 7/6/2023
+ms.date: 7/21/2023
 ---
 
 # Introduction
@@ -211,7 +211,7 @@ Another example of an operator with operand-depending meaning is the combination
 [ a = 1 ] & [ b = 2 ]   // record merge: [ a = 1, b = 2 ]
 ```
 
-Note that not all combinations of values are supported by an operator. For example:
+Note that some operators don't support all combinations of values. For example:
 
 ```powerquery-m
 1 + "2"  // error: adding number and text isn't supported
