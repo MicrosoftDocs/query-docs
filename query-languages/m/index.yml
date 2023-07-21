@@ -1,13 +1,13 @@
 ### YamlMime:Landing 
 
 title: Power Query M formula language
-summary: Microsoft Power Query provides a powerful data import experience that encompasses many features. Power Query works with Analysis Services, Excel, and Power BI workbooks. A core capability of Power Query is to filter and combine, that is, to mash-up data from one or more of a rich collection of supported data sources. Any such data mashup is expressed using the Power Query M Formula Language. It's a functional, case sensitive language similar to F#.
+summary: Microsoft Power Query provides a powerful data import experience that encompasses many features. Power Query works with Analysis Services, Excel, and Power BI workbooks. A core capability of Power Query is to filter and combine, that is, to mash-up data from one or more of a rich collection of supported data sources. Any such data mashup is expressed using the Power Query M formula language. It's a functional, case sensitive language similar to F#.
 
 metadata: 
   title: Power Query M formula language reference
   description: Power Query M is used to filter, combine, and mash-up data from one or more supported data sources.  
   ms.topic: landing-page
-  ms.date: 07/29/2022
+  ms.date: 7/6/2023
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
 
