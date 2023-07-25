@@ -42,9 +42,11 @@ See [OFFSET](offset-function-dax.md).
 
 ## See also
 
+[Understanding ORDERBY, PARTITIONBY, and MATCHBY functions](../dax/best-practices/dax-understand-orderby.md)  
 [INDEX](index-function-dax.md)  
 [OFFSET](offset-function-dax.md)  
 [ORDERBY](orderby-function-dax.md)  
+[MATCHBY](matchby-function-dax.md)  
 [WINDOW](window-function-dax.md)  
 [RANK](rank-function-dax.md)  
 [ROWNUMBER](rownumber-function-dax.md)
