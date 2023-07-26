@@ -14,6 +14,8 @@
           href: dax-sample-model.md 
         - name: Best practices
           items:
+          - name: "Understanding ORDERBY, PARTITIONBY, and MATCHBY functions"
+            href: best-practices/dax-understand-orderby.md
           - name: "Appropriate use of error functions"
             href: best-practices/dax-error-functions.md
           - name: "Avoid converting BLANKs to values"
