@@ -488,10 +488,6 @@ And this expression does indeed return the results we're after:
 | SO52234             | 1                    | 528        | 4.99        | 4.99                  |
 | SO52234             | 2                    | 529        | 3.99        |                       |
 
-## Summary
-
-As shown in these examples, MATCHBY isn't always required. But for many different scenarios, it's an important function to understand when using DAX's Window functions.
-
 ## See also
 
 [ORDERBY](../orderby-function-dax.md)  
