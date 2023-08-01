@@ -3,7 +3,7 @@ description: "Learn more about: WINDOW"
 title: "WINDOW function (DAX) | Microsoft Docs"
 ms.service: powerbi 
 ms.subservice: dax
-ms.date: 04/10/2023
+ms.date: 08/01/2023
 ms.reviewer: owend
 ms.topic: reference
 author: minewiskan
@@ -35,7 +35,6 @@ WINDOW ( from[, from_type], to[, to_type][, <relation>][, <orderBy>][, <blanks>]
 |blanks|(Optional) An enumeration that defines how to handle blank values when sorting. </br>This parameter is reserved for future use. </br>Currently, the only supported value is DEFAULT, where the behavior for numerical values is blank values are ordered between zero and negative values. The behavior for strings is blank values are ordered before all strings, including empty strings.|
 |partitionBy|(Optional) A PARTITIONBY() clause containing the columns that define how \<relation> is partitioned. If omitted, \<relation> is treated as a single partition.|
 |matchBy|(Optional) A MATCHBY() clause containing the columns that define how to match data and identify the current row. |  
-
 
 ## Return value
 
@@ -69,7 +68,7 @@ If WINDOW is used within a calculated column defined on the same table as \<rela
 
 If the beginning of the window turns out be before the first row, then it’s set to the first row. Similarly, if the end of the window is after the last row of the partition, then it's set to the last row.
 
-## Example
+## Example 1
 
 The following measure:
   
@@ -89,6 +88,70 @@ AVERAGEX(
 ```
 
 Returns the 3-day average of unit prices for each product. Note the 3-day window consists of three days in which the product has sales, not necessarily three consecutive calendar days.
+
+## Example 2
+
+The following measure:
+
+```dax
+RunningSum =
+SUMX (
+    WINDOW (
+        1,
+        ABS,
+        0,
+        REL,
+        ALLSELECTED (
+            'Date'[Fiscal Year],
+            'Date'[Month Number Of Year]
+        ),
+        PARTITIONBY ( 'Date'[Fiscal Year] )
+    ),
+    [Total Sales]
+)
+
+```
+
+Returns the running sum for Total Sales by Month Number Of Year, restarting for every Fiscal Year:
+
+| Year   | Month Number Of Year | Sales Amount | RunningSum   |
+|--------|----------------------|--------------|--------------|
+| FY2018 | 1                    | $1,327,675   | $1,327,675   |
+| FY2018 | 2                    | $3,936,463   | $5,264,138   |
+| FY2018 | 3                    | $700,873     | $5,965,011   |
+| FY2018 | 4                    | $1,519,275   | $7,484,286   |
+| FY2018 | 5                    | $2,960,378   | $10,444,664  |
+| FY2018 | 6                    | $1,487,671   | $11,932,336  |
+| FY2018 | 7                    | $1,423,357   | $13,355,693  |
+| FY2018 | 8                    | $2,057,902   | $15,413,595  |
+| FY2018 | 9                    | $2,523,948   | $17,937,543  |
+| FY2018 | 10                   | $561,681     | $18,499,224  |
+| FY2018 | 11                   | $4,764,920   | $23,264,145  |
+| FY2018 | 12                   | $596,747     | $23,860,891  |
+| FY2019 | 1                    | $1,847,692   | $1,847,692   |
+| FY2019 | 2                    | $2,829,362   | $4,677,054   |
+| FY2019 | 3                    | $2,092,434   | $6,769,488   |
+| FY2019 | 4                    | $2,405,971   | $9,175,459   |
+| FY2019 | 5                    | $3,459,444   | $12,634,903  |
+| FY2019 | 6                    | $2,850,649   | $15,485,552  |
+| FY2019 | 7                    | $2,939,691   | $18,425,243  |
+| FY2019 | 8                    | $3,964,801   | $22,390,045  |
+| FY2019 | 9                    | $3,287,606   | $25,677,650  |
+| FY2019 | 10                   | $2,157,287   | $27,834,938  |
+| FY2019 | 11                   | $3,611,092   | $31,446,030  |
+| FY2019 | 12                   | $2,624,078   | $34,070,109  |
+| FY2020 | 1                    | $3,235,187   | $3,235,187   |
+| FY2020 | 2                    | $4,070,046   | $7,305,233   |
+| FY2020 | 3                    | $4,429,833   | $11,735,066  |
+| FY2020 | 4                    | $4,002,614   | $15,737,680  |
+| FY2020 | 5                    | $5,265,797   | $21,003,477  |
+| FY2020 | 6                    | $3,465,241   | $24,468,717  |
+| FY2020 | 7                    | $3,513,064   | $27,981,781  |
+| FY2020 | 8                    | $5,247,165   | $33,228,947  |
+| FY2020 | 9                    | $5,104,088   | $38,333,035  |
+| FY2020 | 10                   | $3,542,150   | $41,875,184  |
+| FY2020 | 11                   | $5,151,897   | $47,027,081  |
+| FY2020 | 12                   | $4,851,194   | $51,878,275  |
 
 ## See also
 
