@@ -97,10 +97,7 @@ The following measure:
 RunningSum =
 SUMX (
     WINDOW (
-        1,
-        ABS,
-        0,
-        REL,
+        1, ABS, 0, REL,
         ALLSELECTED (
             'Date'[Fiscal Year],
             'Date'[Month Number Of Year]
