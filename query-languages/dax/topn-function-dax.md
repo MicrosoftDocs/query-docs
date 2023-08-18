@@ -27,7 +27,7 @@ TOPN(<N_Value>, <Table>, <OrderBy_Expression>, [<Order>[, <OrderBy_Expression>, 
 |-------------|--------------|  
 |N_Value|The number of rows to return. Any DAX expression that returns a scalar value, where the expression is to be evaluated multiple times (for each row/context). See Remarks to better understand when the number of rows returned could be larger than *n_value*.  |  
 |Table|Any DAX expression that returns a table of data from where to extract the top 'n' rows. See Remarks to better understand when an empty table is returned.  |  
-|OrderBy_Expression|Any DAX expression where the result value is used to sort the table and evaluated for each row of *table*.  |
+|OrderBy_Expression|(Optional) Any DAX expression where the result value is used to sort the table and evaluated for each row of *table*.  |
 |Order|(Optional) A value that specifies how to sort *OrderBy_Expression* values:<br /><br /> - **0** (zero) or  **FALSE**. Sorts in descending order of values of *Order*. Default when *Order* parameter is omitted. <br /><br /> - **1** or **TRUE**. Ranks in ascending order of *OrderBy*.|
   
 ## Return value
