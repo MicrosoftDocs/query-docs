@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Hdfs.Files"
 title: "Hdfs.Files"
-ms.date: 10/7/2022
 ---
 # Hdfs.Files
 

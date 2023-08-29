@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.RemoveColumns"
 title: "Table.RemoveColumns"
-ms.date: 6/15/2023
 ---
 # Table.RemoveColumns
 

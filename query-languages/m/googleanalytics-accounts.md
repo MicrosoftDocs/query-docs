@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: GoogleAnalytics.Accounts"
 title: "GoogleAnalytics.Accounts"
-ms.date: 5/16/2023
 ---
 # GoogleAnalytics.Accounts
 

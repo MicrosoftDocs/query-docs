@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.PartitionValues"
 title: "Table.PartitionValues"
-ms.date: 9/13/2021
 ---
 # Table.PartitionValues
 

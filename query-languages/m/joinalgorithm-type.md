@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: JoinAlgorithm.Type"
 title: "JoinAlgorithm.Type"
-ms.date: 5/16/2022
 ---
 # JoinAlgorithm.Type
 

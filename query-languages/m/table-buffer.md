@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.Buffer"
 title: "Table.Buffer"
-ms.date: 4/13/2022
 ---
 # Table.Buffer
 

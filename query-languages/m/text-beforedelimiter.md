@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.BeforeDelimiter"
 title: "Text.BeforeDelimiter"
-ms.date: 3/14/2022
 ---
 # Text.BeforeDelimiter
 

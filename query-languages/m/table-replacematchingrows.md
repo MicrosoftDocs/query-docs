@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.ReplaceMatchingRows"
 title: "Table.ReplaceMatchingRows"
-ms.date: 3/10/2022
 ---
 # Table.ReplaceMatchingRows
 

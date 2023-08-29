@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.Length"
 title: "BinaryFormat.Length"
-ms.date: 10/7/2022
 ---
 # BinaryFormat.Length
 

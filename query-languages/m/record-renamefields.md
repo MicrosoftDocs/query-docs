@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Record.RenameFields"
 title: "Record.RenameFields"
-ms.date: 3/9/2022
 ---
 # Record.RenameFields
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: SapBusinessWarehouseExecutionMode.Type"
 title: "SapBusinessWarehouseExecutionMode.Type"
-ms.date: 5/16/2022
 ---
 # SapBusinessWarehouseExecutionMode.Type
 

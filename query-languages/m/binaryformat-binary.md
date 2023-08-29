@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.Binary"
 title: "BinaryFormat.Binary"
-ms.date: 10/7/2022
 ---
 # BinaryFormat.Binary
 

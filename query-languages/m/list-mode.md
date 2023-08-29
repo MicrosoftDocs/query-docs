@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Mode"
 title: "List.Mode"
-ms.date: 7/15/2022
 ---
 # List.Mode
 

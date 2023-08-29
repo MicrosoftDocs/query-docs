@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Salesforce.Data"
 title: "Salesforce.Data"
-ms.date: 10/7/2022
 ---
 # Salesforce.Data
 

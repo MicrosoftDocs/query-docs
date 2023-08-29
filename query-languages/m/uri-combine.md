@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Uri.Combine"
 title: "Uri.Combine"
-ms.date: 10/7/2022
 ---
 # Uri.Combine
 

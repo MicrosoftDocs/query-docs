@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Alternate"
 title: "List.Alternate"
-ms.date: 10/7/2022
 ---
 # List.Alternate
 

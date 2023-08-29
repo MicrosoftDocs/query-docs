@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.ColumnCount"
 title: "Table.ColumnCount"
-ms.date: 3/14/2022
 ---
 # Table.ColumnCount
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.Partition"
 title: "Table.Partition"
-ms.date: 10/7/2022
 ---
 # Table.Partition
 

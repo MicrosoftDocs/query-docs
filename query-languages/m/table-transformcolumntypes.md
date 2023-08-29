@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.TransformColumnTypes"
 title: "Table.TransformColumnTypes"
-ms.date: 3/10/2022
 ---
 # Table.TransformColumnTypes
 

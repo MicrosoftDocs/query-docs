@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.PI"
 title: "Number.PI"
-ms.date: 10/7/2022
 ---
 # Number.PI
 

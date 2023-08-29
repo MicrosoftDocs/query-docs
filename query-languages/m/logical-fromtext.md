@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Logical.FromText"
 title: "Logical.FromText"
-ms.date: 3/11/2022
 ---
 # Logical.FromText
 

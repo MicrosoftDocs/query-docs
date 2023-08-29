@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.AfterDelimiter"
 title: "Text.AfterDelimiter"
-ms.date: 3/14/2022
 ---
 # Text.AfterDelimiter
 

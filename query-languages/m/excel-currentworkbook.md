@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Excel.CurrentWorkbook"
 title: "Excel.CurrentWorkbook"
-ms.date: 1/18/2023
 ---
 # Excel.CurrentWorkbook
 

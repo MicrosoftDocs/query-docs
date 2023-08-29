@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: OData.Feed"
 title: "OData.Feed"
-ms.date: 3/16/2022
 ---
 # OData.Feed
 

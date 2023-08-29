@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Positions"
 title: "List.Positions"
-ms.date: 3/8/2022
 ---
 # List.Positions
 

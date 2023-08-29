@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: DateTime.IsInPreviousNSeconds"
 title: "DateTime.IsInPreviousNSeconds"
-ms.date: 3/11/2022
 ---
 # DateTime.IsInPreviousNSeconds
 

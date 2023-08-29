@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.PadStart"
 title: "Text.PadStart"
-ms.date: 3/14/2022
 ---
 # Text.PadStart
 

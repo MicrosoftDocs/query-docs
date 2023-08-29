@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Duration.ToRecord"
 title: "Duration.ToRecord"
-ms.date: 10/7/2022
 ---
 # Duration.ToRecord
 

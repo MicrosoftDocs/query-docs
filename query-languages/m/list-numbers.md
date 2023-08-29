@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Numbers"
 title: "List.Numbers"
-ms.date: 10/7/2022
 ---
 # List.Numbers
 

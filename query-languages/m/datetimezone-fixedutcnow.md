@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: DateTimeZone.FixedUtcNow"
 title: "DateTimeZone.FixedUtcNow"
-ms.date: 10/7/2022
 ---
 # DateTimeZone.FixedUtcNow
 

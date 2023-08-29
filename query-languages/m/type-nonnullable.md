@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Type.NonNullable"
 title: "Type.NonNullable"
-ms.date: 3/14/2022
 ---
 # Type.NonNullable
 

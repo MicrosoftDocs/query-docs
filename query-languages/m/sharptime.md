@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: #time"
 title: "#time"
-ms.date: 6/21/2021
 ---
 # #time
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: ByteOrder.Type"
 title: "ByteOrder.Type"
-ms.date: 5/16/2022
 ---
 # ByteOrder.Type
 

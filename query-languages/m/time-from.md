@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Time.From"
 title: "Time.From"
-ms.date: 4/13/2022
 ---
 # Time.From
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.IsEmpty"
 title: "Table.IsEmpty"
-ms.date: 3/14/2022
 ---
 # Table.IsEmpty
 

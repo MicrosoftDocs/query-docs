@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: ActiveDirectory.Domains"
 title: "ActiveDirectory.Domains"
-ms.date: 10/7/2022
 ---
 # ActiveDirectory.Domains
 

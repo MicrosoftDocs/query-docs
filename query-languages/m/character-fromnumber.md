@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Character.FromNumber"
 title: "Character.FromNumber"
-ms.date: 10/7/2022
 ---
 # Character.FromNumber
 

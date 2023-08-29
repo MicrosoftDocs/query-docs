@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Cube.AddAndExpandDimensionColumn"
 title: "Cube.AddAndExpandDimensionColumn"
-ms.date: 10/7/2022
 ---
 # Cube.AddAndExpandDimensionColumn
 

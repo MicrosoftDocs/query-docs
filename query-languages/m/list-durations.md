@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Durations"
 title: "List.Durations"
-ms.date: 3/8/2022
 ---
 # List.Durations
 

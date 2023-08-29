@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: AccessControlKind.Type"
 title: "AccessControlKind.Type"
-ms.date: 10/7/2022
 ---
 # AccessControlKind.Type
 

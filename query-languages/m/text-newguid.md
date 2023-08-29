@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.NewGuid"
 title: "Text.NewGuid"
-ms.date: 10/7/2022
 ---
 # Text.NewGuid
 

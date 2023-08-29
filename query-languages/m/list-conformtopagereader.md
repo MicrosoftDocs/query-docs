@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.ConformToPageReader"
 title: "List.ConformToPageReader"
-ms.date: 10/7/2022
 ---
 # List.ConformToPageReader
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.IsNaN"
 title: "Number.IsNaN"
-ms.date: 3/11/2022
 ---
 # Number.IsNaN
 

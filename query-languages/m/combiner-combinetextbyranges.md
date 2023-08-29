@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Combiner.CombineTextByRanges"
 title: "Combiner.CombineTextByRanges"
-ms.date: 10/7/2022
 ---
 # Combiner.CombineTextByRanges
 

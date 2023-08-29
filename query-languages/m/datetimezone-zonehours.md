@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: DateTimeZone.ZoneHours"
 title: "DateTimeZone.ZoneHours"
-ms.date: 10/7/2022
 ---
 # DateTimeZone.ZoneHours
 

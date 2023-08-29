@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.DayOfYear"
 title: "Date.DayOfYear"
-ms.date: 11/14/2022
 ---
 # Date.DayOfYear
 

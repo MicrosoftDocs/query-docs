@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.Trim"
 title: "Text.Trim"
-ms.date: 3/14/2022
 ---
 # Text.Trim
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.PositionOfAny"
 title: "Table.PositionOfAny"
-ms.date: 3/10/2022
 ---
 # Table.PositionOfAny
 

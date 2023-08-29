@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Binary.ViewError"
 title: "Binary.ViewError"
-ms.date: 7/19/2022
 ---
 # Binary.ViewError
 

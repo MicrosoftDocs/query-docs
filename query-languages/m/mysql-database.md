@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: MySQL.Database"
 title: "MySQL.Database"
-ms.date: 10/7/2022
 ---
 # MySQL.Database
 

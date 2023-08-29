@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.SelectRowsWithErrors"
 title: "Table.SelectRowsWithErrors"
-ms.date: 3/10/2022
 ---
 # Table.SelectRowsWithErrors
 

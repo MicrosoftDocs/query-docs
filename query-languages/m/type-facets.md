@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Type.Facets"
 title: "Type.Facets"
-ms.date: 10/7/2022
 ---
 # Type.Facets
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Value.Divide"
 title: "Value.Divide"
-ms.date: 10/7/2022
 ---
 # Value.Divide
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Int16.From"
 title: "Int16.From"
-ms.date: 10/7/2022
 ---
 # Int16.From
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Reverse"
 title: "List.Reverse"
-ms.date: 3/9/2022
 ---
 # List.Reverse
 

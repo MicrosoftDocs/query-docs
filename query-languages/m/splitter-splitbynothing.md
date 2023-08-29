@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Splitter.SplitByNothing"
 title: "Splitter.SplitByNothing"
-ms.date: 10/7/2022
 ---
 # Splitter.SplitByNothing
 

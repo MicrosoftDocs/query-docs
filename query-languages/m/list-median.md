@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Median"
 title: "List.Median"
-ms.date: 3/11/2022
 ---
 # List.Median
 

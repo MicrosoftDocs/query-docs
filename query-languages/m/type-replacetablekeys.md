@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Type.ReplaceTableKeys"
 title: "Type.ReplaceTableKeys"
-ms.date: 10/7/2022
 ---
 # Type.ReplaceTableKeys
 

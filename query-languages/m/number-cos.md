@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.Cos"
 title: "Number.Cos"
-ms.date: 10/10/2022
 ---
 # Number.Cos
 

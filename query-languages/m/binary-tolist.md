@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Binary.ToList"
 title: "Binary.ToList"
-ms.date: 10/7/2022
 ---
 # Binary.ToList
 

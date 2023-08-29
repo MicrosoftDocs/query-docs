@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.BitwiseOr"
 title: "Number.BitwiseOr"
-ms.date: 10/7/2022
 ---
 # Number.BitwiseOr
 

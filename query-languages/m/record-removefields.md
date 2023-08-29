@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Record.RemoveFields"
 title: "Record.RemoveFields"
-ms.date: 3/9/2022
 ---
 # Record.RemoveFields
 

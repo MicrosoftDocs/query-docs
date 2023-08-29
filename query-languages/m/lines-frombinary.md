@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Lines.FromBinary"
 title: "Lines.FromBinary"
-ms.date: 10/7/2022
 ---
 # Lines.FromBinary
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.View"
 title: "Table.View"
-ms.date: 4/13/2022
 ---
 # Table.View
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Expression.Constant"
 title: "Expression.Constant"
-ms.date: 10/7/2022
 ---
 # Expression.Constant
 

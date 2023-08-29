@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Type.TableColumn"
 title: "Type.TableColumn"
-ms.date: 10/7/2022
 ---
 # Type.TableColumn
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.QuarterOfYear"
 title: "Date.QuarterOfYear"
-ms.date: 3/11/2022
 ---
 # Date.QuarterOfYear
 

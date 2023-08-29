@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Count"
 title: "List.Count"
-ms.date: 10/7/2022
 ---
 # List.Count
 

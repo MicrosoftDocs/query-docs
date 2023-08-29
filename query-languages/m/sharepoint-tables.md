@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: SharePoint.Tables"
 title: "SharePoint.Tables"
-ms.date: 3/15/2023
 ---
 # SharePoint.Tables
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Cube.Dimensions"
 title: "Cube.Dimensions"
-ms.date: 10/7/2022
 ---
 # Cube.Dimensions
 

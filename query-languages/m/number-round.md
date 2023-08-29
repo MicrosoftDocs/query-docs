@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.Round"
 title: "Number.Round"
-ms.date: 12/19/2022
 ---
 # Number.Round
 

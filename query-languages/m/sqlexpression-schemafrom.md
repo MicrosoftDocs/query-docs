@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: SqlExpression.SchemaFrom"
 title: "SqlExpression.SchemaFrom"
-ms.date: 10/18/2021
 ---
 # SqlExpression.SchemaFrom
 

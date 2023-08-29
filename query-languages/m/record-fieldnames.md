@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Record.FieldNames"
 title: "Record.FieldNames"
-ms.date: 3/9/2022
 ---
 # Record.FieldNames
 

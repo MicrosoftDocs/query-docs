@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Record.FieldOrDefault"
 title: "Record.FieldOrDefault"
-ms.date: 3/14/2022
 ---
 # Record.FieldOrDefault
 

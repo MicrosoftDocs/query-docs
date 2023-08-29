@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.Length"
 title: "Text.Length"
-ms.date: 3/14/2022
 ---
 # Text.Length
 

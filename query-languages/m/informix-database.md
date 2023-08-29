@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Informix.Database"
 title: "Informix.Database"
-ms.date: 10/7/2022
 ---
 # Informix.Database
 

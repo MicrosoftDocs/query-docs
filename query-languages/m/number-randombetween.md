@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.RandomBetween"
 title: "Number.RandomBetween"
-ms.date: 3/11/2022
 ---
 # Number.RandomBetween
 

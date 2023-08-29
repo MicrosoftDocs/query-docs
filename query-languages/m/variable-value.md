@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Variable.Value"
 title: "Variable.Value"
-ms.date: 10/18/2021
 ---
 # Variable.Value
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Union"
 title: "List.Union"
-ms.date: 3/9/2022
 ---
 # List.Union
 

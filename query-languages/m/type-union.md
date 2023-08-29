@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Type.Union"
 title: "Type.Union"
-ms.date: 10/7/2022
 ---
 # Type.Union
 

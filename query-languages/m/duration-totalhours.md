@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Duration.TotalHours"
 title: "Duration.TotalHours"
-ms.date: 7/18/2022
 ---
 # Duration.TotalHours
 

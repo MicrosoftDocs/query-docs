@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: #datetime"
 title: "#datetime"
-ms.date: 11/17/2021
 ---
 # #datetime
 

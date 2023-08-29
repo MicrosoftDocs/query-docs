@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.IsInCurrentDay"
 title: "Date.IsInCurrentDay"
-ms.date: 3/11/2022
 ---
 # Date.IsInCurrentDay
 

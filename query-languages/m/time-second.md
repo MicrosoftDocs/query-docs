@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Time.Second"
 title: "Time.Second"
-ms.date: 3/14/2022
 ---
 # Time.Second
 

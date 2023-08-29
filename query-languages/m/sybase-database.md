@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Sybase.Database"
 title: "Sybase.Database"
-ms.date: 10/7/2022
 ---
 # Sybase.Database
 
