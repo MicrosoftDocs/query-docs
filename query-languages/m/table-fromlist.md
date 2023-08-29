@@ -61,3 +61,29 @@ Table.FromRecords({
     [CustomerID = 2, Name = "Jim"]
 })
 ```
+
+## Example 3
+
+Create a table with a single column, from a List that may include commas `,`, where commas should not be treated as a separator character.
+
+**Usage**
+
+```powerquery-m
+Table.FromList(
+    {
+        "abcd",
+        ".,!?"
+    },
+    (x) => {x},
+    {"SomeStrings"}
+)
+```
+
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [SomeStrings = "abcd"],
+    [SomeStrings = ".,!?"]
+})
+```
