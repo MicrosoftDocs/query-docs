@@ -3,6 +3,7 @@ description: "Learn more about: Errors"
 title: "Errors"
 ms.topic: conceptual
 ms.date: 10/7/2022
+ms.custom: "nonautomated-date"
 ---
 
 # Errors

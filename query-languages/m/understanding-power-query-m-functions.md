@@ -3,6 +3,7 @@ description: "Learn more about: Understanding Power Query M functions"
 title: "Understanding Power Query M functions"
 ms.topic: conceptual
 ms.date: 8/2/2022
+ms.custom: "nonautomated-date"
 ---
 
 # Understanding Power Query M functions

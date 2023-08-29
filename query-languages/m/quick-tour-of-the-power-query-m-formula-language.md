@@ -2,6 +2,7 @@
 description: "Learn more about: Quick tour of the Power Query M formula language"
 title: "Quick tour"
 ms.date: 7/21/2023
+ms.custom: "nonautomated-date"
 ms.topic: conceptual
 ms.custom: intro-internal
 ---

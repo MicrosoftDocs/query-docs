@@ -3,6 +3,7 @@ title: M Language Sections
 description: Describes using sections in the Power Query M formula language
 ms.topic: conceptual
 ms.date: 10/7/2022
+ms.custom: "nonautomated-date"
 ---
 
 # Sections

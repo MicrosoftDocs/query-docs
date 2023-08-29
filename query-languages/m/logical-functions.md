@@ -2,6 +2,7 @@
 description: "Learn more about: Logical functions"
 title: "Logical functions"
 ms.date: 5/16/2022
+ms.custom: "nonautomated-date"
 ---
 # Logical functions
 
