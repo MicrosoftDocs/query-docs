@@ -44,7 +44,8 @@
       "ms.reviewer": "ehvonleh",
       "author": "dougklopfenstein",
       "ms.author": "dougklo",
-      "searchScope": ["Power Query","M formula language"]
+      "searchScope": ["Power Query","M formula language"],
+      "ms.date": "7/19/2023"
     },
     "fileMetadata": { },
     "template": [],
