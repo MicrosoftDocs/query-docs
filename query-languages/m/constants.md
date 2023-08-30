@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Constants"
 title: "Constants"
-ms.date: 10/7/2022
 ---
 # Constants
 

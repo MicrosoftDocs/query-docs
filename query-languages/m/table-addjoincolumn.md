@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.AddJoinColumn"
 title: "Table.AddJoinColumn"
-ms.date: 10/7/2022
 ---
 # Table.AddJoinColumn
 

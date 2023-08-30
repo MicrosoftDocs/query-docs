@@ -2,6 +2,7 @@
 description: "Learn more about: Accessing data functions"
 title: "Accessing data functions"
 ms.date: 5/16/2023
+ms.custom: "nonautomated-date"
 ---
 # Accessing data functions
 

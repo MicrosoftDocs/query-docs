@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.LastN"
 title: "List.LastN"
-ms.date: 10/7/2022
 ---
 # List.LastN
 

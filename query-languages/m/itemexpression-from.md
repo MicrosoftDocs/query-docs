@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: ItemExpression.From"
 title: "ItemExpression.From"
-ms.date: 6/15/2023
 ---
 # ItemExpression.From
 

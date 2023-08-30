@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Distinct"
 title: "List.Distinct"
-ms.date: 10/7/2022
 ---
 # List.Distinct
 

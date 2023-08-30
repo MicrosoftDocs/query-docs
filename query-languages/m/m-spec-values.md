@@ -3,6 +3,7 @@ title: M Language values
 description: Describes using values in the Power Query M formula language
 ms.topic: conceptual
 ms.date: 8/2/2022
+ms.custom: "nonautomated-date"
 ---
 
 # Values

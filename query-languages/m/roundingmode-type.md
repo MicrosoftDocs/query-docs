@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: RoundingMode.Type"
 title: "RoundingMode.Type"
-ms.date: 5/16/2022
 ---
 # RoundingMode.Type
 

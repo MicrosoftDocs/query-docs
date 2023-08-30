@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.Middle"
 title: "Text.Middle"
-ms.date: 3/14/2022
 ---
 # Text.Middle
 

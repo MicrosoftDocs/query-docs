@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.UnsignedInteger32"
 title: "BinaryFormat.UnsignedInteger32"
-ms.date: 10/7/2022
 ---
 # BinaryFormat.UnsignedInteger32
 

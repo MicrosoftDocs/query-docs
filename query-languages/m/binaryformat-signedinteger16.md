@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.SignedInteger16"
 title: "BinaryFormat.SignedInteger16"
-ms.date: 10/7/2022
 ---
 # BinaryFormat.SignedInteger16
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Salesforce.Reports"
 title: "Salesforce.Reports"
-ms.date: 10/7/2022
 ---
 # Salesforce.Reports
 

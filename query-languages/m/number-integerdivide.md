@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.IntegerDivide"
 title: "Number.IntegerDivide"
-ms.date: 3/11/2022
 ---
 # Number.IntegerDivide
 

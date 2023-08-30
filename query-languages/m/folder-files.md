@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Folder.Files"
 title: "Folder.Files"
-ms.date: 10/7/2022
 ---
 # Folder.Files
 

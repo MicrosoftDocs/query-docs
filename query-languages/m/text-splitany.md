@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.SplitAny"
 title: "Text.SplitAny"
-ms.date: 3/11/2022
 ---
 # Text.SplitAny
 

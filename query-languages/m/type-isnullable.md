@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Type.IsNullable"
 title: "Type.IsNullable"
-ms.date: 3/14/2022
 ---
 # Type.IsNullable
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Type.ListItem"
 title: "Type.ListItem"
-ms.date: 3/14/2022
 ---
 # Type.ListItem
 

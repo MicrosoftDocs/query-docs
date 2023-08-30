@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: AzureStorage.BlobContents"
 title: "AzureStorage.BlobContents"
-ms.date: 10/7/2022
 ---
 # AzureStorage.BlobContents
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.AlternateRows"
 title: "Table.AlternateRows"
-ms.date: 3/10/2022
 ---
 # Table.AlternateRows
 

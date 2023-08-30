@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.Choice"
 title: "BinaryFormat.Choice"
-ms.date: 3/7/2022
 ---
 # BinaryFormat.Choice
 

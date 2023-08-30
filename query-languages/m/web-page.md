@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Web.Page"
 title: "Web.Page"
-ms.date: 10/7/2022
 ---
 # Web.Page
 

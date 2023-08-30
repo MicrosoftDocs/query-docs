@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.RemoveRowsWithErrors"
 title: "Table.RemoveRowsWithErrors"
-ms.date: 3/10/2022
 ---
 # Table.RemoveRowsWithErrors
 

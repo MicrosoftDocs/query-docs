@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.IsEmpty"
 title: "List.IsEmpty"
-ms.date: 10/7/2022
 ---
 # List.IsEmpty
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Function.ScalarVector"
 title: "Function.ScalarVector"
-ms.date: 10/7/2022
 ---
 # Function.ScalarVector
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.LastN"
 title: "Table.LastN"
-ms.date: 3/10/2022
 ---
 # Table.LastN
 

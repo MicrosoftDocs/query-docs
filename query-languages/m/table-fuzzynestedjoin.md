@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.FuzzyNestedJoin"
 title: "Table.FuzzyNestedJoin"
-ms.date: 10/18/2022
 ---
 # Table.FuzzyNestedJoin
   

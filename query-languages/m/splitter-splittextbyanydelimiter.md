@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Splitter.SplitTextByAnyDelimiter"
 title: "Splitter.SplitTextByAnyDelimiter"
-ms.date: 3/16/2022
 ---
 # Splitter.SplitTextByAnyDelimiter
 

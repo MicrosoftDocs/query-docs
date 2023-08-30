@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Value.Optimize"
 title: "Value.Optimize"
-ms.date: 10/7/2022
 ---
 # Value.Optimize
 

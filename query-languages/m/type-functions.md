@@ -2,6 +2,7 @@
 description: "Learn more about: Type functions"
 title: "Type functions"
 ms.date: 5/16/2022
+ms.custom: "nonautomated-date"
 ---
 # Type functions
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Folder.Contents"
 title: "Folder.Contents"
-ms.date: 10/7/2022
 ---
 # Folder.Contents
 

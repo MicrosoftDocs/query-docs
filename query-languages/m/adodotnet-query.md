@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: AdoDotNet.Query"
 title: "AdoDotNet.Query"
-ms.date: 10/7/2022
 ---
 # AdoDotNet.Query
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.FromList"
 title: "Table.FromList"
-ms.date: 3/10/2022
 ---
 # Table.FromList
 

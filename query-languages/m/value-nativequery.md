@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Value.NativeQuery"
 title: "Value.NativeQuery"
-ms.date: 11/17/2021
 ---
 # Value.NativeQuery
 

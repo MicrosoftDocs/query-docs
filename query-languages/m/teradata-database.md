@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Teradata.Database"
 title: "Teradata.Database"
-ms.date: 10/7/2022
 ---
 # Teradata.Database
 

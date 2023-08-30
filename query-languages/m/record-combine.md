@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Record.Combine"
 title: "Record.Combine"
-ms.date: 3/9/2022
 ---
 # Record.Combine
 

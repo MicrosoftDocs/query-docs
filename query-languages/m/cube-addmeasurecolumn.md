@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Cube.AddMeasureColumn"
 title: "Cube.AddMeasureColumn"
-ms.date: 10/7/2022
 ---
 # Cube.AddMeasureColumn
 

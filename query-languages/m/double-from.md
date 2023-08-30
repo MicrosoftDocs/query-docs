@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Double.From"
 title: "Double.From"
-ms.date: 10/7/2022
 ---
 # Double.From
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Combine"
 title: "List.Combine"
-ms.date: 3/8/2022
 ---
 # List.Combine
 

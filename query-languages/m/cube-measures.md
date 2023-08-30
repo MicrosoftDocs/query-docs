@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Cube.Measures"
 title: "Cube.Measures"
-ms.date: 10/7/2022
 ---
 # Cube.Measures
 

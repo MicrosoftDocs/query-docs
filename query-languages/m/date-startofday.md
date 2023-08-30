@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.StartOfDay"
 title: "Date.StartOfDay"
-ms.date: 11/14/2022
 ---
 # Date.StartOfDay
 

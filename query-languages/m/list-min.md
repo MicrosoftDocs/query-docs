@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Min"
 title: "List.Min"
-ms.date: 3/11/2022
 ---
 # List.Min
 

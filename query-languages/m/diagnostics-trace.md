@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Diagnostics.Trace"
 title: "Diagnostics.Trace"
-ms.date: 12/19/2022
 ---
 # Diagnostics.Trace
 

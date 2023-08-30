@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Exchange.Contents"
 title: "Exchange.Contents"
-ms.date: 10/7/2022
 ---
 # Exchange.Contents
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.StandardDeviation"
 title: "List.StandardDeviation"
-ms.date: 3/11/2022
 ---
 # List.StandardDeviation
 

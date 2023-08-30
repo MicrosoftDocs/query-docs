@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Sort"
 title: "List.Sort"
-ms.date: 10/7/2022
 ---
 # List.Sort
 

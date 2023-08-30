@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: RowExpression.Column"
 title: "RowExpression.Column"
-ms.date: 3/16/2022
 ---
 # RowExpression.Column
 

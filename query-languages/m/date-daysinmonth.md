@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.DaysInMonth"
 title: "Date.DaysInMonth"
-ms.date: 3/11/2022
 ---
 # Date.DaysInMonth
 

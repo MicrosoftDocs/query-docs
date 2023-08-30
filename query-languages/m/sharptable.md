@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: #table"
 title: "#table"
-ms.date: 7/18/2022
 ---
 # #table
 

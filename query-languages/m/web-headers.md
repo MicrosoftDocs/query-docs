@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Web.Headers"
 title: "Web.Headers"
-ms.date: 3/14/2022
 ---
 # Web.Headers
 

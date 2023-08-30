@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.AddYears"
 title: "Date.AddYears"
-ms.date: 10/7/2022
 ---
 # Date.AddYears
 

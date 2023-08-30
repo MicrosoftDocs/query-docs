@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Type.OpenRecord"
 title: "Type.OpenRecord"
-ms.date: 3/14/2022
 ---
 # Type.OpenRecord
 

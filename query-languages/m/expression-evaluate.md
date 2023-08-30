@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Expression.Evaluate"
 title: "Expression.Evaluate"
-ms.date: 10/7/2022
 ---
 # Expression.Evaluate
 

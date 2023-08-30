@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: SapHanaDistribution.Type"
 title: "SapHanaDistribution.Type"
-ms.date: 5/16/2022
 ---
 # SapHanaDistribution.Type
 

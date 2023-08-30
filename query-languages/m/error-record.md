@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Error.Record"
 title: "Error.Record"
-ms.date: 10/7/2022
 ---
 # Error.Record
 

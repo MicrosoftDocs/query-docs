@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.DayOfWeek"
 title: "Date.DayOfWeek"
-ms.date: 12/19/2022
 ---
 # Date.DayOfWeek
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.FuzzyJoin"
 title: "Table.FuzzyJoin"
-ms.date: 10/18/2022
 ---
 # Table.FuzzyJoin
   

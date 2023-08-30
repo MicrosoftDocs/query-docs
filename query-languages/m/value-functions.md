@@ -2,6 +2,7 @@
 description: "Learn more about: Value functions"
 title: "Value functions"
 ms.date: 11/14/2022
+ms.custom: "nonautomated-date"
 ---
 # Value functions
 

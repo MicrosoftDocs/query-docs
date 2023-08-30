@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Uri.EscapeDataString"
 title: "Uri.EscapeDataString"
-ms.date: 3/14/2022
 ---
 # Uri.EscapeDataString
 

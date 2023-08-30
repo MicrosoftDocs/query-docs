@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.BetweenDelimiters"
 title: "Text.BetweenDelimiters"
-ms.date: 3/14/2022
 ---
 # Text.BetweenDelimiters
 

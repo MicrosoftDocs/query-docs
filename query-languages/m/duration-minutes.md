@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Duration.Minutes"
 title: "Duration.Minutes"
-ms.date: 7/18/2022
 ---
 # Duration.Minutes
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Random"
 title: "List.Random"
-ms.date: 3/8/2022
 ---
 # List.Random
 

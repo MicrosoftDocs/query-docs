@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Progress.DataSourceProgress"
 title: "Progress.DataSourceProgress"
-ms.date: 11/14/2022
 ---
 # Progress.DataSourceProgress
 

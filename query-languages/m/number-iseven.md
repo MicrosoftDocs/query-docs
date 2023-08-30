@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.IsEven"
 title: "Number.IsEven"
-ms.date: 3/11/2022
 ---
 # Number.IsEven
 

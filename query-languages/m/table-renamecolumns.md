@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.RenameColumns"
 title: "Table.RenameColumns"
-ms.date: 3/10/2022
 ---
 # Table.RenameColumns
 

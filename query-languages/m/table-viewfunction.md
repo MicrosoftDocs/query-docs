@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.ViewFunction"
 title: "Table.ViewFunction"
-ms.date: 10/18/2022
 ---
 # Table.ViewFunction
 

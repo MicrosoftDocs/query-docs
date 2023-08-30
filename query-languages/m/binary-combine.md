@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Binary.Combine"
 title: "Binary.Combine"
-ms.date: 10/7/2022
 ---
 # Binary.Combine
 

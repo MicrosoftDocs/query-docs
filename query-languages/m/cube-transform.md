@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Cube.Transform"
 title: "Cube.Transform"
-ms.date: 10/7/2022
 ---
 # Cube.Transform
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.ContainsAll"
 title: "Table.ContainsAll"
-ms.date: 3/14/2022
 ---
 # Table.ContainsAll
 

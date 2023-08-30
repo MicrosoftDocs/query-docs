@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.AddRankColumn"
 title: "Table.AddRankColumn"
-ms.date: 5/19/2022
 ---
 # Table.AddRankColumn
 

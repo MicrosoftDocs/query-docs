@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Binary.Range"
 title: "Binary.Range"
-ms.date: 3/7/2022
 ---
 # Binary.Range
 

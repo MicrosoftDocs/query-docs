@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.ReplaceRows"
 title: "Table.ReplaceRows"
-ms.date: 3/10/2022
 ---
 # Table.ReplaceRows
 

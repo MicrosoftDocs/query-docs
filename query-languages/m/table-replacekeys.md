@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.ReplaceKeys"
 title: "Table.ReplaceKeys"
-ms.date: 4/13/2022
 ---
 # Table.ReplaceKeys
 

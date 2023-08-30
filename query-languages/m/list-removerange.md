@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.RemoveRange"
 title: "List.RemoveRange"
-ms.date: 3/9/2022
 ---
 # List.RemoveRange
 

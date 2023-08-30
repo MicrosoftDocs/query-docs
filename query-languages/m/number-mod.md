@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.Mod"
 title: "Number.Mod"
-ms.date: 3/11/2022
 ---
 # Number.Mod
 

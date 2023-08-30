@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Time.StartOfHour"
 title: "Time.StartOfHour"
-ms.date: 11/14/2022
 ---
 # Time.StartOfHour
 

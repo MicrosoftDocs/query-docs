@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.Text"
 title: "BinaryFormat.Text"
-ms.date: 10/7/2022
 ---
 # BinaryFormat.Text
 

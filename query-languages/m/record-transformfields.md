@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Record.TransformFields"
 title: "Record.TransformFields"
-ms.date: 5/19/2022
 ---
 # Record.TransformFields
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: BinaryEncoding.Type"
 title: "BinaryEncoding.Type"
-ms.date: 10/7/2022
 ---
 # BinaryEncoding.Type
 

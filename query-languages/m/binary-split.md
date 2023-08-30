@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Binary.Split"
 title: "Binary.Split"
-ms.date: 2/17/2023
 ---
 # Binary.Split
 

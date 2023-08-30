@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: DateTime.AddZone"
 title: "DateTime.AddZone"
-ms.date: 1/18/2023
 ---
 # DateTime.AddZone
 
