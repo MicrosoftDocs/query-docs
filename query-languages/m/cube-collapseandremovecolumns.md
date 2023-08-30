@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Cube.CollapseAndRemoveColumns"
 title: "Cube.CollapseAndRemoveColumns"
-ms.date: 10/7/2022
 ---
 # Cube.CollapseAndRemoveColumns
 

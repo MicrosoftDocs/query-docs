@@ -2,6 +2,7 @@
 description: "Learn more about: Function values"
 title: "Function values"
 ms.date: 2/17/2023
+ms.custom: "nonautomated-date"
 ---
 # Function values
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Value.Metadata"
 title: "Value.Metadata"
-ms.date: 10/7/2022
 ---
 # Value.Metadata
 

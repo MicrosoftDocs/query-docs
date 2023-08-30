@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.PositionOf"
 title: "Table.PositionOf"
-ms.date: 3/10/2022
 ---
 # Table.PositionOf
 

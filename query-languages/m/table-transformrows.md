@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.TransformRows"
 title: "Table.TransformRows"
-ms.date: 4/13/2022
 ---
 # Table.TransformRows
 

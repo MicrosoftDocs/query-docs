@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.AddIndexColumn"
 title: "Table.AddIndexColumn"
-ms.date: 3/10/2022
 ---
 # Table.AddIndexColumn
 

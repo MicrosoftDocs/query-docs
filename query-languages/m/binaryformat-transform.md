@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.Transform"
 title: "BinaryFormat.Transform"
-ms.date: 3/11/2022
 ---
 # BinaryFormat.Transform
 

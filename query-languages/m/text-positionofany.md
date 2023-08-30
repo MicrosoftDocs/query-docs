@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.PositionOfAny"
 title: "Text.PositionOfAny"
-ms.date: 1/18/2023
 ---
 # Text.PositionOfAny
 

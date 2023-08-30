@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.Exp"
 title: "Number.Exp"
-ms.date: 10/10/2022
 ---
 # Number.Exp
 

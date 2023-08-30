@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.Tanh"
 title: "Number.Tanh"
-ms.date: 10/7/2022
 ---
 # Number.Tanh
 

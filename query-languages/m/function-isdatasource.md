@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Function.IsDataSource"
 title: "Function.IsDataSource"
-ms.date: 10/7/2022
 ---
 # Function.IsDataSource
 

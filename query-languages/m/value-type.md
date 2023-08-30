@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Value.Type"
 title: "Value.Type"
-ms.date: 10/7/2022
 ---
 # Value.Type
 

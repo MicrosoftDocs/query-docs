@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: File.Contents"
 title: "File.Contents"
-ms.date: 10/7/2022
 ---
 # File.Contents
 

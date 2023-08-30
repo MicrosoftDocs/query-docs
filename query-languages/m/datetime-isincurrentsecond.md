@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: DateTime.IsInCurrentSecond"
 title: "DateTime.IsInCurrentSecond"
-ms.date: 3/11/2022
 ---
 # DateTime.IsInCurrentSecond
 

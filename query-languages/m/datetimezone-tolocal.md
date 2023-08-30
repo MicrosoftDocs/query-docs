@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: DateTimeZone.ToLocal"
 title: "DateTimeZone.ToLocal"
-ms.date: 3/11/2022
 ---
 # DateTimeZone.ToLocal
 

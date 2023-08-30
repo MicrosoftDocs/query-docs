@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Times"
 title: "List.Times"
-ms.date: 3/9/2022
 ---
 # List.Times
 

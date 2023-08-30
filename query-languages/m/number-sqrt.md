@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.Sqrt"
 title: "Number.Sqrt"
-ms.date: 3/11/2022
 ---
 # Number.Sqrt
 

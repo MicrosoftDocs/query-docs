@@ -3,6 +3,7 @@ title: M Language Let
 description: Describes using the let expression in the Power Query M formula language
 ms.topic: conceptual
 ms.date: 10/7/2022
+ms.custom: "nonautomated-date"
 ---
 
 

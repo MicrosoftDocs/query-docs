@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Cube.AttributeMemberId"
 title: "Cube.AttributeMemberId"
-ms.date: 10/7/2022
 ---
 # Cube.AttributeMemberId
 

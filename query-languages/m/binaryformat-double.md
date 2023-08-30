@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.Double"
 title: "BinaryFormat.Double"
-ms.date: 10/7/2022
 ---
 # BinaryFormat.Double
 

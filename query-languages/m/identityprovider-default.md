@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: IdentityProvider.Default"
 title: "IdentityProvider.Default"
-ms.date: 10/7/2022
 ---
 # IdentityProvider.Default
 

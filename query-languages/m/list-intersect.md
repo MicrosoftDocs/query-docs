@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Intersect"
 title: "List.Intersect"
-ms.date: 10/7/2022
 ---
 # List.Intersect
 

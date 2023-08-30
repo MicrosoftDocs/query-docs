@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Time.EndOfHour"
 title: "Time.EndOfHour"
-ms.date: 11/14/2022
 ---
 # Time.EndOfHour
 

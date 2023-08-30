@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.Schema"
 title: "Table.Schema"
-ms.date: 10/7/2022
 ---
 # Table.Schema
 

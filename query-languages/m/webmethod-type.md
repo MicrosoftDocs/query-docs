@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: WebMethod.Type"
 title: "WebMethod.Type"
-ms.date: 5/16/2022
 ---
 # WebMethod.Type
 

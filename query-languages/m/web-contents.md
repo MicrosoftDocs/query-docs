@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Web.Contents"
 title: "Web.Contents"
-ms.date: 3/14/2022
 ---
 # Web.Contents
 

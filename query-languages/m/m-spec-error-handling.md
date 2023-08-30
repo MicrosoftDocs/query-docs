@@ -3,6 +3,7 @@ title: M Language Error Handling
 description: Describes error handling in the Power Query M formula language
 ms.topic: conceptual
 ms.date: 8/2/2022
+ms.custom: "nonautomated-date"
 ---
 
 # Error Handling

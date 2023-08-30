@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: SapHana.Database"
 title: "SapHana.Database"
-ms.date: 11/14/2022
 ---
 # SapHana.Database
 

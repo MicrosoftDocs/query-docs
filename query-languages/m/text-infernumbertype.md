@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.InferNumberType"
 title: "Text.InferNumberType"
-ms.date: 10/7/2022
 ---
 # Text.InferNumberType
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Expression.Identifier"
 title: "Expression.Identifier"
-ms.date: 10/7/2022
 ---
 # Expression.Identifier
 

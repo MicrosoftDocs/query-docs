@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Odbc.DataSource"
 title: "Odbc.DataSource"
-ms.date: 10/7/2022
 ---
 # Odbc.DataSource
 

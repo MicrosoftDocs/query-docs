@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Binary.FromList"
 title: "Binary.FromList"
-ms.date: 10/10/2022
 ---
 # Binary.FromList
 

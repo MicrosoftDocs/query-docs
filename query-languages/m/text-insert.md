@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.Insert"
 title: "Text.Insert"
-ms.date: 3/14/2022
 ---
 # Text.Insert
 

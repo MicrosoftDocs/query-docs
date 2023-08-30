@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: HdInsight.Containers"
 title: "HdInsight.Containers"
-ms.date: 10/7/2022
 ---
 # HdInsight.Containers
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: HdInsight.Contents"
 title: "HdInsight.Contents"
-ms.date: 10/7/2022
 ---
 # HdInsight.Contents
 

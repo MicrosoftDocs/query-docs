@@ -3,6 +3,7 @@ title: M Language Operators
 description: Describes using operators in the Power Query M formula language
 ms.topic: conceptual
 ms.date: 5/25/2023
+ms.custom: "nonautomated-date"
 ---
 
 # Operator behavior

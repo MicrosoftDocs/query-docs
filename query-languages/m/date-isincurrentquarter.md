@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.IsInCurrentQuarter"
 title: "Date.IsInCurrentQuarter"
-ms.date: 3/11/2022
 ---
 # Date.IsInCurrentQuarter
 

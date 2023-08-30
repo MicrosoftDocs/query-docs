@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.AddMonths"
 title: "Date.AddMonths"
-ms.date: 10/7/2022
 ---
 # Date.AddMonths
 

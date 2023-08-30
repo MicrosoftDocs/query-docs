@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Difference"
 title: "List.Difference"
-ms.date: 10/7/2022
 ---
 # List.Difference
 

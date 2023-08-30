@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: RData.FromBinary"
 title: "RData.FromBinary"
-ms.date: 10/7/2022
 ---
 # RData.FromBinary
 

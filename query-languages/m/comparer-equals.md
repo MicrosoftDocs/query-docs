@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Comparer.Equals"
 title: "Comparer.Equals"
-ms.date: 10/7/2022
 ---
 # Comparer.Equals
 

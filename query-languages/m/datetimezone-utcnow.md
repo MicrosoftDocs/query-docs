@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: DateTimeZone.UtcNow"
 title: "DateTimeZone.UtcNow"
-ms.date: 10/7/2022
 ---
 # DateTimeZone.UtcNow
 

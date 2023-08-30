@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Value.Alternates"
 title: "Value.Alternates"
-ms.date: 5/12/2022
 ---
 # Value.Alternates
 

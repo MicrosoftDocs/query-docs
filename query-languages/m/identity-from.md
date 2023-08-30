@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Identity.From"
 title: "Identity.From"
-ms.date: 10/7/2022
 ---
 # Identity.From
 

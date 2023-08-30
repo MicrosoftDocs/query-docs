@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Splitter.SplitTextByRanges"
 title: "Splitter.SplitTextByRanges"
-ms.date: 5/19/2022
 ---
 # Splitter.SplitTextByRanges
 

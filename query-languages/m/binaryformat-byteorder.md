@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.ByteOrder"
 title: "BinaryFormat.ByteOrder"
-ms.date: 10/7/2022
 ---
 # BinaryFormat.ByteOrder
 

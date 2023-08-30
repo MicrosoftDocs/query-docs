@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.IsInNextNQuarters"
 title: "Date.IsInNextNQuarters"
-ms.date: 3/11/2022
 ---
 # Date.IsInNextNQuarters
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.ConformToPageReader"
 title: "Table.ConformToPageReader"
-ms.date: 10/7/2022
 ---
 # Table.ConformToPageReader
 

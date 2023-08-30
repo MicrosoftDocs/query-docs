@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Combiner.CombineTextByPositions"
 title: "Combiner.CombineTextByPositions"
-ms.date: 10/7/2022
 ---
 # Combiner.CombineTextByPositions
 

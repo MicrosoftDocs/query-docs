@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.AllTrue"
 title: "List.AllTrue"
-ms.date: 10/7/2022
 ---
 # List.AllTrue
 

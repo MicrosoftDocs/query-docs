@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.FillUp"
 title: "Table.FillUp"
-ms.date: 3/10/2022
 ---
 # Table.FillUp
 

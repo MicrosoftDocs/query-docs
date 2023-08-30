@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.Factorial"
 title: "Number.Factorial"
-ms.date: 10/10/2022
 ---
 # Number.Factorial
 

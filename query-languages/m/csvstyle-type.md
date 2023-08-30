@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: CsvStyle.Type"
 title: "CsvStyle.Type"
-ms.date: 10/7/2022
 ---
 # CsvStyle.Type
 

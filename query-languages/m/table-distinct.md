@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.Distinct"
 title: "Table.Distinct"
-ms.date: 9/15/2022
 ---
 # Table.Distinct
 

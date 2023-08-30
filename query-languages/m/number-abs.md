@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.Abs"
 title: "Number.Abs"
-ms.date: 10/10/2022
 ---
 # Number.Abs
 

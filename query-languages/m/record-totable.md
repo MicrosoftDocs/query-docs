@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Record.ToTable"
 title: "Record.ToTable"
-ms.date: 3/9/2022
 ---
 # Record.ToTable
 

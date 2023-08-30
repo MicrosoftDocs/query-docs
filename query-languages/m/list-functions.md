@@ -2,6 +2,7 @@
 description: "Learn more about: List functions"
 title: "List functions"
 ms.date: 10/7/2022
+ms.custom: "nonautomated-date"
 ---
 # List functions
 

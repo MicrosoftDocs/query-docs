@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.Upper"
 title: "Text.Upper"
-ms.date: 3/14/2022
 ---
 # Text.Upper
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.Atan2"
 title: "Number.Atan2"
-ms.date: 10/10/2022
 ---
 # Number.Atan2
 

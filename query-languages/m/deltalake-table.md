@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: DeltaLake.Table"
 title: "DeltaLake.Table"
-ms.date: 5/16/2023
 ---
 # DeltaLake.Table
 

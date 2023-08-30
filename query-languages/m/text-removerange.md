@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.RemoveRange"
 title: "Text.RemoveRange"
-ms.date: 3/14/2022
 ---
 # Text.RemoveRange
 

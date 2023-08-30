@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.Unpivot"
 title: "Table.Unpivot"
-ms.date: 3/10/2022
 ---
 # Table.Unpivot
 

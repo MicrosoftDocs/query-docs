@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.NaN"
 title: "Number.NaN"
-ms.date: 10/7/2022
 ---
 # Number.NaN
 

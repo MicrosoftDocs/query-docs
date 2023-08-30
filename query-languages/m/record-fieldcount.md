@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Record.FieldCount"
 title: "Record.FieldCount"
-ms.date: 3/14/2022
 ---
 # Record.FieldCount
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: #duration"
 title: "#duration"
-ms.date: 10/10/2022
 ---
 # #duration
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.IsOdd"
 title: "Number.IsOdd"
-ms.date: 3/11/2022
 ---
 # Number.IsOdd
 

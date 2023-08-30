@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Accumulate"
 title: "List.Accumulate"
-ms.date: 10/7/2022
 ---
 # List.Accumulate
 

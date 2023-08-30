@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: LimitClauseKind.Type"
 title: "LimitClauseKind.Type"
-ms.date: 10/7/2022
 ---
 # LimitClauseKind.Type
 

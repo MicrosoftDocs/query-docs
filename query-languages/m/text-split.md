@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.Split"
 title: "Text.Split"
-ms.date: 3/11/2022
 ---
 # Text.Split
 

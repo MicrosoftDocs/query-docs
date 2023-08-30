@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: DateTimeZone.From"
 title: "DateTimeZone.From"
-ms.date: 6/24/2022
 ---
 # DateTimeZone.From
 

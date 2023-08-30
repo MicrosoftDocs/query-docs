@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.AddQuarters"
 title: "Date.AddQuarters"
-ms.date: 10/7/2022
 ---
 # Date.AddQuarters
 

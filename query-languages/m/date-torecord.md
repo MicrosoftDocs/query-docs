@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.ToRecord"
 title: "Date.ToRecord"
-ms.date: 10/7/2022
 ---
 # Date.ToRecord
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.FirstN"
 title: "List.FirstN"
-ms.date: 10/7/2022
 ---
 # List.FirstN
 

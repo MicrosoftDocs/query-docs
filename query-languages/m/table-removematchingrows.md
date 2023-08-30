@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.RemoveMatchingRows"
 title: "Table.RemoveMatchingRows"
-ms.date: 3/10/2022
 ---
 # Table.RemoveMatchingRows
 

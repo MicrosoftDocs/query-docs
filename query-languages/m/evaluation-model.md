@@ -3,6 +3,7 @@ description: "Learn more about: Evaluation model"
 title: "Evaluation model"
 ms.topic: conceptual
 ms.date: 10/7/2022
+ms.custom: "nonautomated-date"
 ---
 # Evaluation model
 

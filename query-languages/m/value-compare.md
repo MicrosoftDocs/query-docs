@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Value.Compare"
 title: "Value.Compare"
-ms.date: 10/7/2022
 ---
 # Value.Compare
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.Max"
 title: "Table.Max"
-ms.date: 3/10/2022
 ---
 # Table.Max
 

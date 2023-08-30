@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.ToRows"
 title: "Table.ToRows"
-ms.date: 10/7/2022
 ---
 # Table.ToRows
 

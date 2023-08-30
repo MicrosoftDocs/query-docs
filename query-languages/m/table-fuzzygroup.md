@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.FuzzyGroup"
 title: "Table.FuzzyGroup"
-ms.date: 10/18/2022
 ---
 # Table.FuzzyGroup
   

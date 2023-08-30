@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.AddWeeks"
 title: "Date.AddWeeks"
-ms.date: 10/7/2022
 ---
 # Date.AddWeeks
 

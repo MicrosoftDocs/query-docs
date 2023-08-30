@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Currency.From"
 title: "Currency.From"
-ms.date: 10/7/2022
 ---
 # Currency.From
 

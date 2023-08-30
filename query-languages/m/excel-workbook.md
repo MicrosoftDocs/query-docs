@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Excel.Workbook"
 title: "Excel.Workbook"
-ms.date: 10/7/2022
 ---
 # Excel.Workbook
 

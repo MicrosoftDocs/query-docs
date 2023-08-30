@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.ContainsAny"
 title: "List.ContainsAny"
-ms.date: 10/7/2022
 ---
 # List.ContainsAny
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.PositionOf"
 title: "List.PositionOf"
-ms.date: 10/7/2022
 ---
 # List.PositionOf
 

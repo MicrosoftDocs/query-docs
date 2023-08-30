@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Binary.Compress"
 title: "Binary.Compress"
-ms.date: 12/19/2022
 ---
 # Binary.Compress
 

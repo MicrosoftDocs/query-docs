@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Value.Lineage"
 title: "Value.Lineage"
-ms.date: 10/7/2022
 ---
 # Value.Lineage
 

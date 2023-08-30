@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.FirstValue"
 title: "Table.FirstValue"
-ms.date: 10/7/2022
 ---
 # Table.FirstValue
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.RemoveNulls"
 title: "List.RemoveNulls"
-ms.date: 3/9/2022
 ---
 # List.RemoveNulls
 

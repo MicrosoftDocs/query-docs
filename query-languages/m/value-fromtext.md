@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Value.FromText"
 title: "Value.FromText"
-ms.date: 10/7/2022
 ---
 # Value.FromText
 
