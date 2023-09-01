@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Dynamic values"
 title: "Dynamic values"
-ms.date: 10/7/2022
 ---
 # Dynamic values
 

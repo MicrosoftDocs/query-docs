@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: JoinSide.Type"
 title: "JoinSide.Type"
-ms.date: 5/16/2022
 ---
 # JoinSide.Type
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Record.ReorderFields"
 title: "Record.ReorderFields"
-ms.date: 3/9/2022
 ---
 # Record.ReorderFields
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Duration.TotalDays"
 title: "Duration.TotalDays"
-ms.date: 10/7/2022
 ---
 # Duration.TotalDays
 

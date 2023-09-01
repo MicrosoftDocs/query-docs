@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.ExpandListColumn"
 title: "Table.ExpandListColumn"
-ms.date: 3/10/2022
 ---
 # Table.ExpandListColumn
 

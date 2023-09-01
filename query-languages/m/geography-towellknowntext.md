@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Geography.ToWellKnownText"
 title: "Geography.ToWellKnownText"
-ms.date: 10/7/2022
 ---
 # Geography.ToWellKnownText
 

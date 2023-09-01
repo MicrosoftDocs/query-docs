@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.Min"
 title: "Table.Min"
-ms.date: 3/10/2022
 ---
 # Table.Min
 

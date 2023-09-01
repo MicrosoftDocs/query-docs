@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Type.FunctionRequiredParameters"
 title: "Type.FunctionRequiredParameters"
-ms.date: 3/14/2022
 ---
 # Type.FunctionRequiredParameters
 

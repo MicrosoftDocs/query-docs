@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Essbase.Cubes"
 title: "Essbase.Cubes"
-ms.date: 10/7/2022
 ---
 # Essbase.Cubes
 

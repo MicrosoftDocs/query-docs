@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: SqlExpression.ToExpression"
 title: "SqlExpression.ToExpression"
-ms.date: 10/18/2021
 ---
 # SqlExpression.ToExpression
 

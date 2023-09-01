@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.AddFuzzyClusterColumn"
 title: "Table.AddFuzzyClusterColumn"
-ms.date: 10/18/2022
 ---
 # Table.AddFuzzyClusterColumn
 

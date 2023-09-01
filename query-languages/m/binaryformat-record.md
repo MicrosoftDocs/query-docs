@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.Record"
 title: "BinaryFormat.Record"
-ms.date: 10/7/2022
 ---
 # BinaryFormat.Record
 

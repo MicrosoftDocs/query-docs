@@ -2,6 +2,7 @@
 description: "Learn more about: Duration functions"
 title: "Duration functions"
 ms.date: 7/19/2022
+ms.custom: "nonautomated-date"
 ---
 # Duration functions
 

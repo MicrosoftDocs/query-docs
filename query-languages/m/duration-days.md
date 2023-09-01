@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Duration.Days"
 title: "Duration.Days"
-ms.date: 1/18/2023
 ---
 # Duration.Days
 

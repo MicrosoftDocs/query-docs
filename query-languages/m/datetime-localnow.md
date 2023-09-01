@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: DateTime.LocalNow"
 title: "DateTime.LocalNow"
-ms.date: 10/7/2022
 ---
 # DateTime.LocalNow
 

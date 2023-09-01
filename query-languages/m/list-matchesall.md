@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.MatchesAll"
 title: "List.MatchesAll"
-ms.date: 10/7/2022
 ---
 # List.MatchesAll
 

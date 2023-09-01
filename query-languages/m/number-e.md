@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.E"
 title: "Number.E"
-ms.date: 7/31/2019
 ---
 # Number.E
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.Decimal"
 title: "BinaryFormat.Decimal"
-ms.date: 10/7/2022
 ---
 # BinaryFormat.Decimal
 

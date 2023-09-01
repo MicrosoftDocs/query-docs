@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Time.Hour"
 title: "Time.Hour"
-ms.date: 3/14/2022
 ---
 # Time.Hour
 

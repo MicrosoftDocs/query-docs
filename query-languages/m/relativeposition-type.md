@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: RelativePosition.Type"
 title: "RelativePosition.Type"
-ms.date: 5/16/2022
 ---
 # RelativePosition.Type
 

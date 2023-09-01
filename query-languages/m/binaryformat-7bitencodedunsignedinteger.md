@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.7BitEncodedUnsignedInteger"
 title: "BinaryFormat.7BitEncodedUnsignedInteger"
-ms.date: 10/7/2022
 ---
 # BinaryFormat.7BitEncodedUnsignedInteger
 

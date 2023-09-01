@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Binary.InferContentType"
 title: "Binary.InferContentType"
-ms.date: 10/7/2022
 ---
 # Binary.InferContentType
 

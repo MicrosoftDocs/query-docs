@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Combiner.CombineTextByLengths"
 title: "Combiner.CombineTextByLengths"
-ms.date: 10/7/2022
 ---
 # Combiner.CombineTextByLengths
 

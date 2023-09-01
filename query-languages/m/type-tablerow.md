@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Type.TableRow"
 title: "Type.TableRow"
-ms.date: 3/14/2022
 ---
 # Type.TableRow
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Sql.Database"
 title: "Sql.Database"
-ms.date: 2/17/2023
 ---
 # Sql.Database
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Html.Table"
 title: "Html.Table"
-ms.date: 10/7/2022
 ---
 # Html.Table
 

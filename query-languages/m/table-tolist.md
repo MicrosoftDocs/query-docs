@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.ToList"
 title: "Table.ToList"
-ms.date: 5/3/2022
 ---
 # Table.ToList
 

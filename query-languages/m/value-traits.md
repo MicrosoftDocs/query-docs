@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Value.Traits"
 title: "Value.Traits"
-ms.date: 10/7/2022
 ---
 # Value.Traits
 

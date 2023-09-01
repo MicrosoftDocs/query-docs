@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.DateTimeZones"
 title: "List.DateTimeZones"
-ms.date: 10/7/2022
 ---
 # List.DateTimeZones
 

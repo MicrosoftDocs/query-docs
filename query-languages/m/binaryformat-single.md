@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.Single"
 title: "BinaryFormat.Single"
-ms.date: 10/7/2022
 ---
 # BinaryFormat.Single
 

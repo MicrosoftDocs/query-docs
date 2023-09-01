@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Value.ReplaceMetadata"
 title: "Value.ReplaceMetadata"
-ms.date: 10/7/2022
 ---
 # Value.ReplaceMetadata
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.StartOfQuarter"
 title: "Date.StartOfQuarter"
-ms.date: 11/14/2022
 ---
 # Date.StartOfQuarter
 

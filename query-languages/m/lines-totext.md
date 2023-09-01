@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Lines.ToText"
 title: "Lines.ToText"
-ms.date: 10/7/2022
 ---
 # Lines.ToText
 

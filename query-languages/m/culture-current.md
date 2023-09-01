@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Culture.Current"
 title: "Culture.Current"
-ms.date: 10/7/2022
 ---
 # Culture.Current
 

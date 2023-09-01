@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.FromRows"
 title: "Table.FromRows"
-ms.date: 3/10/2022
 ---
 # Table.FromRows
 

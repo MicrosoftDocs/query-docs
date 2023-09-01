@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.TransformMany"
 title: "List.TransformMany"
-ms.date: 1/18/2023
 ---
 # List.TransformMany
 

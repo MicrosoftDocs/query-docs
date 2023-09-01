@@ -2,6 +2,7 @@
 description: "Learn more about: Lines functions"
 title: "Lines functions"
 ms.date: 5/16/2022
+ms.custom: "nonautomated-date"
 ---
 # Lines functions
 

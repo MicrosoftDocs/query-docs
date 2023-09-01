@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Binary.View"
 title: "Binary.View"
-ms.date: 10/7/2022
 ---
 # Binary.View
 

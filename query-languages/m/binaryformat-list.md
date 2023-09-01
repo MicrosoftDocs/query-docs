@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.List"
 title: "BinaryFormat.List"
-ms.date: 10/7/2022
 ---
 # BinaryFormat.List
 

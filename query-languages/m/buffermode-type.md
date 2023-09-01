@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: BufferMode.Type"
 title: "BufferMode.Type"
-ms.date: 10/7/2022
 ---
 # BufferMode.Type
 

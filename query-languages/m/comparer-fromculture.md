@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Comparer.FromCulture"
 title: "Comparer.FromCulture"
-ms.date: 10/7/2022
 ---
 # Comparer.FromCulture
 

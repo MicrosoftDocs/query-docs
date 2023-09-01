@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.DateTimes"
 title: "List.DateTimes"
-ms.date: 3/8/2022
 ---
 # List.DateTimes
 

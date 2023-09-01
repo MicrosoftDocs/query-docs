@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.IsDistinct"
 title: "List.IsDistinct"
-ms.date: 10/7/2022
 ---
 # List.IsDistinct
 

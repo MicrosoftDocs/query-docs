@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.IsInCurrentWeek"
 title: "Date.IsInCurrentWeek"
-ms.date: 3/11/2022
 ---
 # Date.IsInCurrentWeek
 

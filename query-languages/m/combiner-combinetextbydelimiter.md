@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Combiner.CombineTextByDelimiter"
 title: "Combiner.CombineTextByDelimiter"
-ms.date: 6/15/2023
 ---
 # Combiner.CombineTextByDelimiter
 

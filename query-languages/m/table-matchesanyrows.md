@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.MatchesAnyRows"
 title: "Table.MatchesAnyRows"
-ms.date: 3/14/2022
 ---
 # Table.MatchesAnyRows
 

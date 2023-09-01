@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.Combinations"
 title: "Number.Combinations"
-ms.date: 10/10/2022
 ---
 # Number.Combinations
 

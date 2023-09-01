@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.Day"
 title: "Date.Day"
-ms.date: 10/7/2022
 ---
 # Date.Day
 

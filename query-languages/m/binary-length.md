@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Binary.Length"
 title: "Binary.Length"
-ms.date: 10/7/2022
 ---
 # Binary.Length
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.AddColumn"
 title: "Table.AddColumn"
-ms.date: 1/18/2023
 ---
 # Table.AddColumn
 

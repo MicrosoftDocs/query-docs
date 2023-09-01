@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Generate"
 title: "List.Generate"
-ms.date: 10/7/2022
 ---
 # List.Generate
 

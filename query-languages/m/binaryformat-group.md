@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.Group"
 title: "BinaryFormat.Group"
-ms.date: 5/19/2022
 ---
 # BinaryFormat.Group
 

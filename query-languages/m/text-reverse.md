@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.Reverse"
 title: "Text.Reverse"
-ms.date: 3/14/2022
 ---
 # Text.Reverse
 

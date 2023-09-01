@@ -3,6 +3,7 @@ description: "Learn more about: Type conversion"
 title: "Type conversion"
 ms.topic: conceptual
 ms.date: 8/2/2022
+ms.custom: "nonautomated-date"
 ---
 
 # Type conversion

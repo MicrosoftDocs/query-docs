@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Splitter.SplitTextByWhitespace"
 title: "Splitter.SplitTextByWhitespace"
-ms.date: 3/16/2022
 ---
 # Splitter.SplitTextByWhitespace
 

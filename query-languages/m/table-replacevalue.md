@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.ReplaceValue"
 title: "Table.ReplaceValue"
-ms.date: 11/14/2022
 ---
 # Table.ReplaceValue
 

@@ -2,6 +2,7 @@
 description: "Learn more about: Time functions"
 title: "Time functions"
 ms.date: 11/14/2022
+ms.custom: "nonautomated-date"
 ---
 # Time functions
 

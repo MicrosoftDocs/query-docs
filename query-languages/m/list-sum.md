@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Sum"
 title: "List.Sum"
-ms.date: 3/11/2022
 ---
 # List.Sum
 

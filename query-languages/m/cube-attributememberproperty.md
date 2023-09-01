@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Cube.AttributeMemberProperty"
 title: "Cube.AttributeMemberProperty"
-ms.date: 10/7/2022
 ---
 # Cube.AttributeMemberProperty
 

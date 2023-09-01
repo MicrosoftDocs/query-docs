@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.ToText"
 title: "Number.ToText"
-ms.date: 7/18/2023
 ---
 # Number.ToText
 

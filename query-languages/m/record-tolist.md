@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Record.ToList"
 title: "Record.ToList"
-ms.date: 3/9/2022
 ---
 # Record.ToList
 

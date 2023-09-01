@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: DateTime.IsInPreviousNHours"
 title: "DateTime.IsInPreviousNHours"
-ms.date: 3/11/2022
 ---
 # DateTime.IsInPreviousNHours
 

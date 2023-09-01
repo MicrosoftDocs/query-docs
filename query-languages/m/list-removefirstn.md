@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.RemoveFirstN"
 title: "List.RemoveFirstN"
-ms.date: 3/9/2022
 ---
 # List.RemoveFirstN
 

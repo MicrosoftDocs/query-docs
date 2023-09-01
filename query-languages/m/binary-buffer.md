@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Binary.Buffer"
 title: "Binary.Buffer"
-ms.date: 3/11/2022
 ---
 # Binary.Buffer
 

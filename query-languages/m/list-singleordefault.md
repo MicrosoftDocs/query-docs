@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.SingleOrDefault"
 title: "List.SingleOrDefault"
-ms.date: 3/11/2022
 ---
 # List.SingleOrDefault
 

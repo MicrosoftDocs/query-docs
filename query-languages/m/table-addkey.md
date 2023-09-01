@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.AddKey"
 title: "Table.AddKey"
-ms.date: 4/13/2022
 ---
 # Table.AddKey
 

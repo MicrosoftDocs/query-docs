@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Splitter.SplitTextByPositions"
 title: "Splitter.SplitTextByPositions"
-ms.date: 3/16/2022
 ---
 # Splitter.SplitTextByPositions
 

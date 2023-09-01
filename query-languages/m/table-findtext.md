@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.FindText"
 title: "Table.FindText"
-ms.date: 3/10/2022
 ---
 # Table.FindText
 

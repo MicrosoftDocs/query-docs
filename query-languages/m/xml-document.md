@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Xml.Document"
 title: "Xml.Document"
-ms.date: 10/7/2022
 ---
 # Xml.Document
 

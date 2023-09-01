@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: DB2.Database"
 title: "DB2.Database"
-ms.date: 10/7/2022
 ---
 # DB2.Database
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Precision.Type"
 title: "Precision.Type"
-ms.date: 5/16/2022
 ---
 # Precision.Type
 

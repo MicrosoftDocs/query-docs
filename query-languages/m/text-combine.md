@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.Combine"
 title: "Text.Combine"
-ms.date: 6/15/2023
 ---
 # Text.Combine
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Binary.ViewFunction"
 title: "Binary.ViewFunction"
-ms.date: 10/18/2022
 ---
 # Binary.ViewFunction
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Logical.From"
 title: "Logical.From"
-ms.date: 4/13/2022
 ---
 # Logical.From
 

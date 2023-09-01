@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Type.ReplaceFacets"
 title: "Type.ReplaceFacets"
-ms.date: 10/7/2022
 ---
 # Type.ReplaceFacets
 

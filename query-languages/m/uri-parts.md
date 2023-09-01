@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Uri.Parts"
 title: "Uri.Parts"
-ms.date: 3/11/2022
 ---
 # Uri.Parts
 

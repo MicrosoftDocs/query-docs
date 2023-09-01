@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Product"
 title: "List.Product"
-ms.date: 3/11/2022
 ---
 # List.Product
 

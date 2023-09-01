@@ -3,6 +3,7 @@ description: "Learn more about: Expressions, values, and let expression"
 title: "Expressions, values, and let expression"
 ms.topic: conceptual
 ms.date: 10/7/2022
+ms.custom: "nonautomated-date"
 ---
 # Expressions, values, and let expression
 

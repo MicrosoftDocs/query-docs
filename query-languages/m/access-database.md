@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Access.Database"
 title: "Access.Database"
-ms.date: 10/7/2022
 ---
 # Access.Database
 

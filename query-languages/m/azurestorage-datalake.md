@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: AzureStorage.DataLake"
 title: "AzureStorage.DataLake"
-ms.date: 10/7/2022
 ---
 # AzureStorage.DataLake
 

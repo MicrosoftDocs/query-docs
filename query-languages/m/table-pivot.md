@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.Pivot"
 title: "Table.Pivot"
-ms.date: 10/7/2022
 ---
 # Table.Pivot
 

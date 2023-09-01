@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Type.FunctionParameters"
 title: "Type.FunctionParameters"
-ms.date: 3/11/2022
 ---
 # Type.FunctionParameters
 

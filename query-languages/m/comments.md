@@ -3,6 +3,7 @@ description: "Learn more about: Comments"
 title: "Comments"
 ms.topic: conceptual
 ms.date: 10/7/2022
+ms.custom: "nonautomated-date"
 ---
 # Comments
 

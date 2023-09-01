@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.Split"
 title: "Table.Split"
-ms.date: 5/19/2022
 ---
 # Table.Split
 

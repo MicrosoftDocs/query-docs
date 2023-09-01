@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Compression.Type"
 title: "Compression.Type"
-ms.date: 5/16/2022
 ---
 # Compression.Type
 

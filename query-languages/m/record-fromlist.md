@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Record.FromList"
 title: "Record.FromList"
-ms.date: 3/9/2022
 ---
 # Record.FromList
 

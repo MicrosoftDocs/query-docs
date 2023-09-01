@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.CombineColumns"
 title: "Table.CombineColumns"
-ms.date: 3/14/2022
 ---
 # Table.CombineColumns
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: DateTimeZone.ToUtc"
 title: "DateTimeZone.ToUtc"
-ms.date: 3/11/2022
 ---
 # DateTimeZone.ToUtc
 

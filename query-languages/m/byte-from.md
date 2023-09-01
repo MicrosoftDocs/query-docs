@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Byte.From"
 title: "Byte.From"
-ms.date: 12/19/2022
 ---
 # Byte.From
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.PositionOfAny"
 title: "List.PositionOfAny"
-ms.date: 3/11/2022
 ---
 # List.PositionOfAny
 

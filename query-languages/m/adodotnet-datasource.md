@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: AdoDotNet.DataSource"
 title: "AdoDotNet.DataSource"
-ms.date: 10/7/2022
 ---
 # AdoDotNet.DataSource
 

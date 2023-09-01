@@ -3,6 +3,7 @@ description: "Learn more about: Metadata"
 title: "Metadata"
 ms.topic: conceptual
 ms.date: 10/7/2022
+ms.custom: "nonautomated-date"
 ---
 
 # Metadata

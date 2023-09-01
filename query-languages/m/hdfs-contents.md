@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Hdfs.Contents"
 title: "Hdfs.Contents"
-ms.date: 10/7/2022
 ---
 # Hdfs.Contents
 

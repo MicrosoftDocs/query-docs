@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.WeekOfMonth"
 title: "Date.WeekOfMonth"
-ms.date: 11/14/2022
 ---
 # Date.WeekOfMonth
 

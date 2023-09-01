@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.ExpandRecordColumn"
 title: "Table.ExpandRecordColumn"
-ms.date: 3/10/2022
 ---
 # Table.ExpandRecordColumn
 

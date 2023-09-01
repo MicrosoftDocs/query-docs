@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: SapBusinessWarehouse.Cubes"
 title: "SapBusinessWarehouse.Cubes"
-ms.date: 10/7/2022
 ---
 # SapBusinessWarehouse.Cubes
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Decimal.From"
 title: "Decimal.From"
-ms.date: 10/7/2022
 ---
 # Decimal.From
 

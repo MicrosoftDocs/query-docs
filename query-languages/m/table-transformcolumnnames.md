@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.TransformColumnNames"
 title: "Table.TransformColumnNames"
-ms.date: 3/10/2022
 ---
 # Table.TransformColumnNames
 

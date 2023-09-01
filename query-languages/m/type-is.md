@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Type.Is"
 title: "Type.Is"
-ms.date: 3/14/2022
 ---
 # Type.Is
 

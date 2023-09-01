@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Cube.DisplayFolders"
 title: "Cube.DisplayFolders"
-ms.date: 11/17/2021
 ---
 # Cube.DisplayFolders
 

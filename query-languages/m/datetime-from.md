@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: DateTime.From"
 title: "DateTime.From"
-ms.date: 5/19/2022
 ---
 # DateTime.From
 

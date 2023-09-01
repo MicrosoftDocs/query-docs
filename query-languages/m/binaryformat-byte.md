@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.Byte"
 title: "BinaryFormat.Byte"
-ms.date: 10/7/2022
 ---
 # BinaryFormat.Byte
 

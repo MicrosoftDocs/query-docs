@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Time.ToRecord"
 title: "Time.ToRecord"
-ms.date: 3/11/2022
 ---
 # Time.ToRecord
 

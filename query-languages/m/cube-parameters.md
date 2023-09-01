@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Cube.Parameters"
 title: "Cube.Parameters"
-ms.date: 10/7/2022
 ---
 # Cube.Parameters
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Comparer.Ordinal"
 title: "Comparer.Ordinal"
-ms.date: 10/7/2022
 ---
 # Comparer.Ordinal
 
