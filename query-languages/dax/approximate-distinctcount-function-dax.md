@@ -13,7 +13,7 @@ recommendations: false
 ---
 # APPROXIMATEDISTINCTCOUNT
 
-Returns an *estimated* count of unique values in a column. This function invokes a corresponding aggregation operation in the data source, which is optimized for query performance, but with slightly reduced accuracy. This function can be used with the following data sources: Azure SQL, Azure SQL Data Warehouse, BigQuery, Databricks, and Snowflake. This function requires DirectQuery mode. Import mode and dual storage mode are not supported.
+Returns an *estimated* count of unique values in a column. This function invokes a corresponding aggregation operation in the data source, which is optimized for query performance, but with slightly reduced accuracy. This function can be used with the following data sources: Azure SQL, Azure Synapse dedicated SQL pool, BigQuery, Databricks, and Snowflake. This function requires DirectQuery mode. Import mode and dual storage mode are not supported.
   
 ## Syntax  
   
