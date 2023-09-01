@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Binary.From"
 title: "Binary.From"
-ms.date: 10/7/2022
 ---
 # Binary.From
 

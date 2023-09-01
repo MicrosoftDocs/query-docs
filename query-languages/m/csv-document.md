@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Csv.Document"
 title: "Csv.Document"
-ms.date: 6/15/2023
 ---
 # Csv.Document
 

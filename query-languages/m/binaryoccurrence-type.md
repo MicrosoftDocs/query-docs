@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: BinaryOccurrence.Type"
 title: "BinaryOccurrence.Type"
-ms.date: 10/7/2022
 ---
 # BinaryOccurrence.Type
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.IsInPreviousMonth"
 title: "Date.IsInPreviousMonth"
-ms.date: 3/11/2022
 ---
 # Date.IsInPreviousMonth
 

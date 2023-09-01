@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Cube.MeasureProperties"
 title: "Cube.MeasureProperties"
-ms.date: 10/7/2022
 ---
 # Cube.MeasureProperties
 

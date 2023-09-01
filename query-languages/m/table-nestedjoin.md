@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.NestedJoin"
 title: "Table.NestedJoin"
-ms.date: 4/13/2022
 ---
 # Table.NestedJoin
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.RemoveLastN"
 title: "Table.RemoveLastN"
-ms.date: 3/10/2022
 ---
 # Table.RemoveLastN
 

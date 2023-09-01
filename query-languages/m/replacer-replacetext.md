@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Replacer.ReplaceText"
 title: "Replacer.ReplaceText"
-ms.date: 3/14/2022
 ---
 # Replacer.ReplaceText
 

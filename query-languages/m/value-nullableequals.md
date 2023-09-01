@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Value.NullableEquals"
 title: "Value.NullableEquals"
-ms.date: 10/7/2022
 ---
 # Value.NullableEquals
 

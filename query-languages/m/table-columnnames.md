@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.ColumnNames"
 title: "Table.ColumnNames"
-ms.date: 3/10/2022
 ---
 # Table.ColumnNames
 

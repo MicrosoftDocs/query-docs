@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.Sort"
 title: "Table.Sort"
-ms.date: 3/10/2022
 ---
 # Table.Sort
 

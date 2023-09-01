@@ -2,6 +2,7 @@
 description: "Learn more about: Binary functions"
 title: "Binary functions"
 ms.date: 2/17/2023
+ms.custom: "nonautomated-date"
 ---
 # Binary functions
 

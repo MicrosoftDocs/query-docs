@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.ToBinary"
 title: "Text.ToBinary"
-ms.date: 10/7/2022
 ---
 # Text.ToBinary
 

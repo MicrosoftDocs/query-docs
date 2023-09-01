@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.DuplicateColumn"
 title: "Table.DuplicateColumn"
-ms.date: 3/10/2022
 ---
 # Table.DuplicateColumn
 

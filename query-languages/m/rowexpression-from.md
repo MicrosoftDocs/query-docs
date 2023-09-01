@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: RowExpression.From"
 title: "RowExpression.From"
-ms.date: 6/15/2023
 ---
 # RowExpression.From
 

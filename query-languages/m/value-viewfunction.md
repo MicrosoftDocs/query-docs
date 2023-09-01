@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Value.ViewFunction"
 title: "Value.ViewFunction"
-ms.date: 10/18/2022
 ---
 # Value.ViewFunction
 

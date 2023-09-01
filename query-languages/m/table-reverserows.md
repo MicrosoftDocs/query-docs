@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.ReverseRows"
 title: "Table.ReverseRows"
-ms.date: 3/10/2022
 ---
 # Table.ReverseRows
 

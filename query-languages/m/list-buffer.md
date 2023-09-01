@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Buffer"
 title: "List.Buffer"
-ms.date: 10/7/2022
 ---
 # List.Buffer
 

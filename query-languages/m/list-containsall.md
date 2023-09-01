@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.ContainsAll"
 title: "List.ContainsAll"
-ms.date: 10/7/2022
 ---
 # List.ContainsAll
 

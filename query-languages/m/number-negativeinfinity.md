@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.NegativeInfinity"
 title: "Number.NegativeInfinity"
-ms.date: 10/7/2022
 ---
 # Number.NegativeInfinity
 

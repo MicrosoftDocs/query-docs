@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: AdobeAnalytics.Cubes"
 title: "AdobeAnalytics.Cubes"
-ms.date: 10/7/2022
 ---
 # AdobeAnalytics.Cubes
 

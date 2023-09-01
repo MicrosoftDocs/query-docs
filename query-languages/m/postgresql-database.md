@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: PostgreSQL.Database"
 title: "PostgreSQL.Database"
-ms.date: 10/7/2022
 ---
 # PostgreSQL.Database
 

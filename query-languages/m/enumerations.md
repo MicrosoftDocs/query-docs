@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Enumerations"
 title: "Accessing data enumerations"
-ms.date: 10/7/2022
 ---
 # Enumerations
 

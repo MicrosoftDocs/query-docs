@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: HdInsight.Files"
 title: "HdInsight.Files"
-ms.date: 10/7/2022
 ---
 # HdInsight.Files
 

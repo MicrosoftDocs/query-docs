@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Guid.From"
 title: "Guid.From"
-ms.date: 4/13/2022
 ---
 # Guid.From
 

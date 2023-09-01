@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Web.BrowserContents"
 title: "Web.BrowserContents"
-ms.date: 2/17/2023
 ---
 # Web.BrowserContents
 

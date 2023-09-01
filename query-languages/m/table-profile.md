@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.Profile"
 title: "Table.Profile"
-ms.date: 10/7/2022
 ---
 # Table.Profile
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: GeographyPoint.From"
 title: "GeographyPoint.From"
-ms.date: 10/7/2022
 ---
 # GeographyPoint.From
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Graph.Nodes"
 title: "Graph.Nodes"
-ms.date: 10/7/2022
 ---
 # Graph.Nodes
 

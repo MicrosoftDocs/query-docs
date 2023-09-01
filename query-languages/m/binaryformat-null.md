@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: BinaryFormat.Null"
 title: "BinaryFormat.Null"
-ms.date: 10/7/2022
 ---
 # BinaryFormat.Null
 

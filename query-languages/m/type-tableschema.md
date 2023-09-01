@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Type.TableSchema"
 title: "Type.TableSchema"
-ms.date: 4/13/2022
 ---
 # Type.TableSchema
 

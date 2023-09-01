@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.Ln"
 title: "Number.Ln"
-ms.date: 3/9/2022
 ---
 # Number.Ln
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: DateTimeZone.ToText"
 title: "DateTimeZone.ToText"
-ms.date: 6/24/2022
 ---
 # DateTimeZone.ToText
 

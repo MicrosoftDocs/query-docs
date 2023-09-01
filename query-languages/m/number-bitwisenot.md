@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.BitwiseNot"
 title: "Number.BitwiseNot"
-ms.date: 10/7/2022
 ---
 # Number.BitwiseNot
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.First"
 title: "List.First"
-ms.date: 10/7/2022
 ---
 # List.First
 

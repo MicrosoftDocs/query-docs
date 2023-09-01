@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.Random"
 title: "Number.Random"
-ms.date: 3/11/2022
 ---
 # Number.Random
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.FromBinary"
 title: "Text.FromBinary"
-ms.date: 10/7/2022
 ---
 # Text.FromBinary
 

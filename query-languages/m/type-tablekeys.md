@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Type.TableKeys"
 title: "Type.TableKeys"
-ms.date: 10/7/2022
 ---
 # Type.TableKeys
 

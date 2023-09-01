@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Time.ToText"
 title: "Time.ToText"
-ms.date: 6/24/2022
 ---
 # Time.ToText
 

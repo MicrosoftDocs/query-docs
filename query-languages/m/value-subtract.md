@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Value.Subtract"
 title: "Value.Subtract"
-ms.date: 10/7/2022
 ---
 # Value.Subtract
 

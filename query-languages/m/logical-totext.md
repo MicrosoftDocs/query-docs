@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Logical.ToText"
 title: "Logical.ToText"
-ms.date: 3/11/2022
 ---
 # Logical.ToText
 

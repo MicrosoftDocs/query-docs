@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Function.From"
 title: "Function.From"
-ms.date: 3/11/2022
 ---
 # Function.From
 

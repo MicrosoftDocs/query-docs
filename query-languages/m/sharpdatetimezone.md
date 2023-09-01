@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: #datetimezone"
 title: "#datetimezone"
-ms.date: 11/17/2021
 ---
 # #datetimezone
 

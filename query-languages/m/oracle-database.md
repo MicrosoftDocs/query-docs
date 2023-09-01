@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Oracle.Database"
 title: "Oracle.Database"
-ms.date: 10/7/2022
 ---
 # Oracle.Database
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.RemoveMatchingItems"
 title: "List.RemoveMatchingItems"
-ms.date: 3/9/2022
 ---
 # List.RemoveMatchingItems
 

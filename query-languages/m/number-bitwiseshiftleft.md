@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.BitwiseShiftLeft"
 title: "Number.BitwiseShiftLeft"
-ms.date: 10/7/2022
 ---
 # Number.BitwiseShiftLeft
 

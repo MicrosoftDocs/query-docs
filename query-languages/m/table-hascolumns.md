@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.HasColumns"
 title: "Table.HasColumns"
-ms.date: 9/15/2022
 ---
 # Table.HasColumns
 

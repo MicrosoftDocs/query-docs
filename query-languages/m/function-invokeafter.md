@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Function.InvokeAfter"
 title: "Function.InvokeAfter"
-ms.date: 10/7/2022
 ---
 # Function.InvokeAfter
 

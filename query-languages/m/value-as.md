@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Value.As"
 title: "Value.As"
-ms.date: 3/14/2022
 ---
 # Value.As
 

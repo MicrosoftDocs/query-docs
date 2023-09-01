@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.Start"
 title: "Text.Start"
-ms.date: 3/14/2022
 ---
 # Text.Start
 

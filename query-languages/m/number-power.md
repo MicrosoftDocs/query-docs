@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.Power"
 title: "Number.Power"
-ms.date: 10/10/2022
 ---
 # Number.Power
 

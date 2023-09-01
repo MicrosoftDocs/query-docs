@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.EndOfWeek"
 title: "Date.EndOfWeek"
-ms.date: 11/14/2022
 ---
 # Date.EndOfWeek
 

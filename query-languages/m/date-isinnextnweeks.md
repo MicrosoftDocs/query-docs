@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.IsInNextNWeeks"
 title: "Date.IsInNextNWeeks"
-ms.date: 3/11/2022
 ---
 # Date.IsInNextNWeeks
 

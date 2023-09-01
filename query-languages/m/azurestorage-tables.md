@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: AzureStorage.Tables"
 title: "AzureStorage.Tables"
-ms.date: 5/25/2021
 ---
 # AzureStorage.Tables
 

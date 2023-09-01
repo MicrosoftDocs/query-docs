@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.ColumnsOfType"
 title: "Table.ColumnsOfType"
-ms.date: 3/10/2022
 ---
 # Table.ColumnsOfType
 

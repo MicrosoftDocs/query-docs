@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: DateTimeZone.FromFileTime"
 title: "DateTimeZone.FromFileTime"
-ms.date: 3/11/2022
 ---
 # DateTimeZone.FromFileTime
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Type.ForRecord"
 title: "Type.ForRecord"
-ms.date: 10/18/2022
 ---
 # Type.ForRecord
 

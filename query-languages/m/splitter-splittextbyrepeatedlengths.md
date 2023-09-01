@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Splitter.SplitTextByRepeatedLengths"
 title: "Splitter.SplitTextByRepeatedLengths"
-ms.date: 3/16/2022
 ---
 # Splitter.SplitTextByRepeatedLengths
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Pdf.Tables"
 title: "Pdf.Tables"
-ms.date: 3/14/2022
 ---
 # Pdf.Tables
 

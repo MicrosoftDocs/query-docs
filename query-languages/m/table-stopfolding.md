@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.StopFolding"
 title: "Table.StopFolding"
-ms.date: 4/13/2022
 ---
 # Table.StopFolding
 

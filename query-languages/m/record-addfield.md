@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Record.AddField"
 title: "Record.AddField"
-ms.date: 3/9/2022
 ---
 # Record.AddField
 

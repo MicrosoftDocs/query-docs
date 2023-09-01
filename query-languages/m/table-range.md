@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.Range"
 title: "Table.Range"
-ms.date: 3/10/2022
 ---
 # Table.Range
 

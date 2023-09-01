@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.End"
 title: "Text.End"
-ms.date: 3/14/2022
 ---
 # Text.End
 

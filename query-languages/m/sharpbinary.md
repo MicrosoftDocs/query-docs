@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: #binary"
 title: "#binary"
-ms.date: 3/14/2022
 ---
 # #binary
 ## Syntax

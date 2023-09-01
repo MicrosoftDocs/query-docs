@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: AnalysisServices.Database"
 title: "AnalysisServices.Database"
-ms.date: 10/7/2022
 ---
 # AnalysisServices.Database
 

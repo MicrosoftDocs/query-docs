@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.UnpivotOtherColumns"
 title: "Table.UnpivotOtherColumns"
-ms.date: 5/19/2022
 ---
 # Table.UnpivotOtherColumns
 

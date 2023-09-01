@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Percentile"
 title: "List.Percentile"
-ms.date: 12/19/2022
 ---
 # List.Percentile
 

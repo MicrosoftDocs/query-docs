@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.RemoveItems"
 title: "List.RemoveItems"
-ms.date: 3/9/2022
 ---
 # List.RemoveItems
 

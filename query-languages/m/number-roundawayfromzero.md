@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.RoundAwayFromZero"
 title: "Number.RoundAwayFromZero"
-ms.date: 3/11/2022
 ---
 # Number.RoundAwayFromZero
 

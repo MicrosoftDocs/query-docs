@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: OleDb.DataSource"
 title: "OleDb.DataSource"
-ms.date: 10/7/2022
 ---
 # OleDb.DataSource
 

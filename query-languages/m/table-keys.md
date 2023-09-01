@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.Keys"
 title: "Table.Keys"
-ms.date: 4/13/2022
 ---
 # Table.Keys
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Soda.Feed"
 title: "Soda.Feed"
-ms.date: 10/7/2022
 ---
 # Soda.Feed
 

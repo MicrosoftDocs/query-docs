@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: SharePoint.Contents"
 title: "SharePoint.Contents"
-ms.date: 10/7/2022
 ---
 # SharePoint.Contents
 

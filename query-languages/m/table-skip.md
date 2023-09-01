@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.Skip"
 title: "Table.Skip"
-ms.date: 3/10/2022
 ---
 # Table.Skip
 

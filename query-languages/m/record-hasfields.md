@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Record.HasFields"
 title: "Record.HasFields"
-ms.date: 3/14/2022
 ---
 # Record.HasFields
 

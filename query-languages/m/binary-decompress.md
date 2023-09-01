@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Binary.Decompress"
 title: "Binary.Decompress"
-ms.date: 12/19/2022
 ---
 # Binary.Decompress
 

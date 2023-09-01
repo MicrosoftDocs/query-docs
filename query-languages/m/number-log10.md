@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Number.Log10"
 title: "Number.Log10"
-ms.date: 3/11/2022
 ---
 # Number.Log10
 

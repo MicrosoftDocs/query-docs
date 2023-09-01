@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.SingleRow"
 title: "Table.SingleRow"
-ms.date: 3/10/2022
 ---
 # Table.SingleRow
 

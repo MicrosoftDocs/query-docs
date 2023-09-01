@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: DateTime.FixedLocalNow"
 title: "DateTime.FixedLocalNow"
-ms.date: 10/7/2022
 ---
 # DateTime.FixedLocalNow
 

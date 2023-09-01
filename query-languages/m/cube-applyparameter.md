@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Cube.ApplyParameter"
 title: "Cube.ApplyParameter"
-ms.date: 10/7/2022
 ---
 # Cube.ApplyParameter
 

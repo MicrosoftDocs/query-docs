@@ -3,6 +3,7 @@ description: "Learn more about: Operators"
 title: "Operators"
 ms.topic: conceptual
 ms.date: 8/2/2022
+ms.custom: "nonautomated-date"
 ---
 
 # Operators

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.FirstN"
 title: "Table.FirstN"
-ms.date: 5/19/2022
 ---
 # Table.FirstN
 

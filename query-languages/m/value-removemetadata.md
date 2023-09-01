@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Value.RemoveMetadata"
 title: "Value.RemoveMetadata"
-ms.date: 10/7/2022
 ---
 # Value.RemoveMetadata
 

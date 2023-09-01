@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.Repeat"
 title: "Text.Repeat"
-ms.date: 3/14/2022
 ---
 # Text.Repeat
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: DateTimeZone.ToRecord"
 title: "DateTimeZone.ToRecord"
-ms.date: 3/8/2022
 ---
 # DateTimeZone.ToRecord
 

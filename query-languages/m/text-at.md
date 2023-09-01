@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Text.At"
 title: "Text.At"
-ms.date: 3/14/2022
 ---
 # Text.At
 

@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: DateTime.IsInNextSecond"
 title: "DateTime.IsInNextSecond"
-ms.date: 3/11/2022
 ---
 # DateTime.IsInNextSecond
 

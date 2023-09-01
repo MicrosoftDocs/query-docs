@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: QuoteStyle.Type"
 title: "QuoteStyle.Type"
-ms.date: 5/16/2022
 ---
 # QuoteStyle.Type
 

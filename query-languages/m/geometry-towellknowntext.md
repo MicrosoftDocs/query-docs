@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Geometry.ToWellKnownText"
 title: "Geometry.ToWellKnownText"
-ms.date: 10/7/2022
 ---
 # Geometry.ToWellKnownText
 

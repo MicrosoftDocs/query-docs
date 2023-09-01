@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.IsLeapYear"
 title: "Date.IsLeapYear"
-ms.date: 3/11/2022
 ---
 # Date.IsLeapYear
 

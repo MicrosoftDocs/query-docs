@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Lines.FromText"
 title: "Lines.FromText"
-ms.date: 10/7/2022
 ---
 # Lines.FromText
 

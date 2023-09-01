@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Duration.ToText"
 title: "Duration.ToText"
-ms.date: 3/8/2022
 ---
 # Duration.ToText
 

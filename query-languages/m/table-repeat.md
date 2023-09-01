@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.Repeat"
 title: "Table.Repeat"
-ms.date: 3/10/2022
 ---
 # Table.Repeat
 

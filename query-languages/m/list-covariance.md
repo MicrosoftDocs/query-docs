@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.Covariance"
 title: "List.Covariance"
-ms.date: 10/7/2022
 ---
 # List.Covariance
 

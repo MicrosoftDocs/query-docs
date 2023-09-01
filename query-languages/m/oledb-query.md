@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: OleDb.Query"
 title: "OleDb.Query"
-ms.date: 10/7/2022
 ---
 # OleDb.Query
 

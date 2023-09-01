@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.EndOfMonth"
 title: "Date.EndOfMonth"
-ms.date: 11/14/2022
 ---
 # Date.EndOfMonth
 

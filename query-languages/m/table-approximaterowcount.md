@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Table.ApproximateRowCount"
 title: "Table.ApproximateRowCount"
-ms.date: 3/16/2022
 ---
 # Table.ApproximateRowCount
 

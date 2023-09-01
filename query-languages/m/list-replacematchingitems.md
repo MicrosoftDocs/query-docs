@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: List.ReplaceMatchingItems"
 title: "List.ReplaceMatchingItems"
-ms.date: 3/9/2022
 ---
 # List.ReplaceMatchingItems
 

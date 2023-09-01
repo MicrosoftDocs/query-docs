@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: GeometryPoint.From"
 title: "GeometryPoint.From"
-ms.date: 10/7/2022
 ---
 # GeometryPoint.From
 

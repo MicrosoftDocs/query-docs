@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Date.StartOfWeek"
 title: "Date.StartOfWeek"
-ms.date: 11/14/2022
 ---
 # Date.StartOfWeek
 

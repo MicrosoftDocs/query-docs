@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: Binary.ApproximateLength"
 title: "Binary.ApproximateLength"
-ms.date: 5/19/2022
 ---
 # Binary.ApproximateLength
 

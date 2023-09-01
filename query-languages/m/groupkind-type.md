@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: GroupKind.Type"
 title: "GroupKind.Type"
-ms.date: 5/16/2022
 ---
 # GroupKind.Type
 
