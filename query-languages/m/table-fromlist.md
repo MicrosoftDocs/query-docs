@@ -38,7 +38,7 @@ Table.FromRecords({
 
 ## Example 2
 
-Create a table with a single column from a List, using a custom splitter.
+Create a table from a list using a custom splitter.
 
 **Usage**
 
@@ -59,7 +59,7 @@ Table.FromRecords({
 
 ## Example 3
 
-Create a table from the list using the [Record.FieldValues](record-fieldvalues.md) splitter with the resulting table having "CustomerID" and "Name" as column names.
+Create a table from a list using the [Record.FieldValues](record-fieldvalues.md) splitter.
 
 **Usage**
 
