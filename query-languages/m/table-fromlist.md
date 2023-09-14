@@ -17,7 +17,7 @@ Converts a list, `list` into a table by applying the optional [splitting functio
 
 ## Example 1
 
-Create a table from a list containing letters and words separated by a comma. The table will have "Letter" and "Example Word" as column names.
+Create a table from a list using the default splitter.
 
 **Usage**
 
