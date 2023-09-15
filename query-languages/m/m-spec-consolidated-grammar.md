@@ -2,7 +2,7 @@
 title: M Language Consolidated Grammar 
 description: Describes all of the grammar associated with the Power Query M formula language
 ms.topic: conceptual
-ms.date: 8/2/2022
+ms.date: 9/15/2023
 ms.custom: "nonautomated-date"
 ---
 
@@ -449,14 +449,14 @@ fixed-parameter-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter_  `,`  _fixed-parameter-list<br/>
 parameter:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-name  parameter-type<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-name  primitive-parameter-type<sub>opt</sub><br/>
 parameter-name:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier<br/>
-parameter-type:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assertion<br/>
+primitive-parameter-type:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primitive-assertion<br/>
 return-type:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assertion<br/>
-assertion:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primitive-assertion<br/>
+primitive-assertion:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as`  _nullable-primitive-type<br/>
 optional-parameter-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter<br/>
@@ -550,6 +550,10 @@ optional-parameter-specification:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional` _parameter-specification<br/> 
 parameter-specification:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-name  parameter-type<br/>
+parameter-type:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assertion<br/>
+assertion:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as` _type<br/>
 table-type:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`table`  _row-type<br/>
 row-type:_<br/>
