@@ -12,7 +12,7 @@ Comparer.FromCulture(<b>culture</b> as text, optional <b>ignoreCase</b> as nulla
 
 ## About
 
-Returns a comparer function that uses the `culture`` and the case-sensitivity specified by `ignoreCase` to perform comparisons.
+Returns a comparer function that uses the `culture` and the case-sensitivity specified by `ignoreCase` to perform comparisons.
 
 A comparer function accepts two arguments and returns -1, 0, or 1 based on whether the first value is less than, equal to, or greater than the second.
 

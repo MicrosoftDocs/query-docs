@@ -16,12 +16,12 @@ Joins the rows of `table1` with the rows of `table2` based on the equality of th
 
 By default, an inner join is performed, however an optional `joinKind` may be included to specify the type of join. Options include:
 
-* `JoinKind.Inner`
-* `JoinKind.LeftOuter`
-* `JoinKind.RightOuter`
-* `JoinKind.FullOuter`
-* `JoinKind.LeftAnti`
-* `JoinKind.RightAnti`
+* [JoinKind.Inner](joinkind-type.md)
+* [JoinKind.LeftOuter](joinkind-type.md)
+* [JoinKind.RightOuter](joinkind-type.md)
+* [JoinKind.FullOuter](joinkind-type.md)
+* [JoinKind.LeftAnti](joinkind-type.md)
+* [JoinKind.RightAnti](joinkind-type.md)
 
 An optional set of `keyEqualityComparers` may be included to specify how to compare the key columns. This parameter is currently intended for internal use only.
 
