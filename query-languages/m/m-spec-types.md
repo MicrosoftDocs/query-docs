@@ -252,7 +252,7 @@ A _table-type value_ is used to define the structure of a table value.
 _table-type:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`table` _row-type<br/> 
 row-type:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-specification-list_<sub>opt</sub>  `]`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-specification-list<sub>opt</sub>_  `]`
 
 The result of evaluating a _table-type_ is a type value whose base type is `table`.
 
