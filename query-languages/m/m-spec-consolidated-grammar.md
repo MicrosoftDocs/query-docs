@@ -533,7 +533,7 @@ _list-type:_<br/>
 _item-type:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type<br/>
 function-type:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`function (`  _parameter-specification-listopt_  `)`  _return-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`function (`  _parameter-specification-list<sub>opt</sub>_  `)`  _return-type<br/>
 parameter-specification-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-parameter-specification-list<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-parameter-specification-list_  `,`  _optional-parameter-specification-list<br/>
@@ -579,7 +579,7 @@ _default-expression_:<br/>
 _catch-clause:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`catch` _catch-function_<br/>
 _catch-function:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(`_parameter-name_<sub>opt</sub>`)` `=>` _function-body_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(`_parameter-name<sub>opt</sub>_`)` `=>` _function-body_<br/>
 
 ### Literal Attributes
 
