@@ -12,7 +12,11 @@ Comparer.FromCulture(<b>culture</b> as text, optional <b>ignoreCase</b> as nulla
 
 ## About
 
-Returns a comparer function given the `culture` and a logical value `ignoreCase` for case sensitivity for the comparison. The default value for `ignoreCase` is false. The value for culture are well known text representations of locales used in the .NET framework.
+Returns a comparer function that uses the `culture` and the case-sensitivity specified by `ignoreCase` to perform comparisons.
+
+A comparer function accepts two arguments and returns -1, 0, or 1 based on whether the first value is less than, equal to, or greater than the second.
+
+The default value for `ignoreCase` is false. The `culture` should be one of the locales supported by the .NET framework (for example, "en-US").
 
 ## Example 1
 

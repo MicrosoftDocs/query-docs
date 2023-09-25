@@ -1098,6 +1098,8 @@ items:
         href: table-minn.md
       - name: Table.NestedJoin
         href: table-nestedjoin.md
+      - name: Table.OnError
+        href: table-onerror.md
       - name: Table.Partition
         href: table-partition.md
       - name: Table.PartitionValues

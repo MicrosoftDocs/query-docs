@@ -16,14 +16,14 @@ Joins the rows of `table1` with the rows of `table2` based on the equality of th
 
 By default, an inner join is performed, however an optional `joinKind` may be included to specify the type of join. Options include:
 
-* `JoinKind.Inner`
-* `JoinKind.LeftOuter`
-* `JoinKind.RightOuter`
-* `JoinKind.FullOuter`
-* `JoinKind.LeftAnti`
-* `JoinKind.RightAnti`
+* [JoinKind.Inner](joinkind-type.md)
+* [JoinKind.LeftOuter](joinkind-type.md)
+* [JoinKind.RightOuter](joinkind-type.md)
+* [JoinKind.FullOuter](joinkind-type.md)
+* [JoinKind.LeftAnti](joinkind-type.md)
+* [JoinKind.RightAnti](joinkind-type.md)
 
-An optional set of `keyEqualityComparers` may be included to specify how to compare the key columns. This feature is currently intended for internal use only.
+An optional set of `keyEqualityComparers` may be included to specify how to compare the key columns. This parameter is currently intended for internal use only.
 
 ## Example 1
 
@@ -63,5 +63,39 @@ Table.FromRecords({
     [CustomerID = 3, Name = "Paul", Phone = "543-7890", OrderID = 4, Item = "Fish tazer", Price = 200],
     [CustomerID = 3, Name = "Paul", Phone = "543-7890", OrderID = 5, Item = "Bandaids", Price = 2],
     [CustomerID = 1, Name = "Bob", Phone = "123-4567", OrderID = 6, Item = "Tackle box", Price = 20]
+})
+```
+
+## Example 2
+
+Join two tables that have conflicting column names, using multiple key columns.
+
+**Usage** 
+
+```powerquery-m
+let
+    customers = Table.FromRecords({
+        [TenantID = 1, CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [TenantID = 1, CustomerID = 2, Name = "Jim", Phone = "987-6543"]
+    }),
+    orders = Table.FromRecords({
+        [TenantID = 1, OrderID = 1, CustomerID = 1, Name = "Fishing rod", Price = 100.0],
+        [TenantID = 1, OrderID = 2, CustomerID = 1, Name = "1 lb. worms", Price = 5.0],
+        [TenantID = 1, OrderID = 3, CustomerID = 2, Name = "Fishing net", Price = 25.0]
+    })
+in
+    Table.Join(
+        customers,
+        {"TenantID", "CustomerID"},
+        Table.PrefixColumns(orders, "Order"),
+        {"Order.TenantID", "Order.CustomerID"}
+    )
+```
+
+```powerquery-m
+Table.FromRecords({
+    [TenantID = 1, CustomerID = 1, Name = "Bob", Phone = "123-4567", Order.TenantID = 1, Order.OrderID = 1, Order.CustomerID = 1, Order.Name = "Fishing rod", Order.Price = 100],
+    [TenantID = 1, CustomerID = 1, Name = "Bob", Phone = "123-4567", Order.TenantID = 1, Order.OrderID = 2, Order.CustomerID = 1, Order.Name = "1 lb. worms", Order.Price = 5],
+    [TenantID = 1, CustomerID = 2, Name = "Jim", Phone = "987-6543", Order.TenantID = 1, Order.OrderID = 3, Order.CustomerID = 2, Order.Name = "Fishing net", Order.Price = 25]
 })
 ```
