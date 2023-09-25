@@ -12,4 +12,4 @@ Value.Compare(<b>value1</b> as any, <b>value2</b> as any, optional <b>precision<
 
 ## About
 
-Returns -1, 0, or 1 based on whether the first value is less than, equal to, or greater than the second one.
+Returns -1, 0, or 1 based on whether the first value is less than, equal to, or greater than the second.

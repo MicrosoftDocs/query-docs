@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Value functions"
 title: "Value functions"
-ms.date: 11/14/2022
+ms.date: 9/11/2023
 ms.custom: "nonautomated-date"
 ---
 # Value functions
@@ -11,7 +11,7 @@ These functions evaluate and perform operations on values.
 |Name|Description|
 |------------|---------------|
 |[Value.Alternates](value-alternates.md)|Expresses alternate query plans.|
-|[Value.Compare](value-compare.md)|Returns 1, 0, or -1 based on value1 being greater than, equal to, or less than the value2. An optional comparer function can be provided.|
+|[Value.Compare](value-compare.md)|Returns -1, 0, or 1 based on whether the first value is less than, equal to, or greater than the second.|
 |[Value.Equals](value-equals.md)|Returns whether two values are equal.|
 |[Value.Expression](value-expression.md)|Returns an abstract syntax tree (AST) that represents the value's expression.|
 |[Value.VersionIdentity](value-versionidentity.md)|Returns the version identity of a value.|
@@ -50,6 +50,7 @@ These functions evaluate and perform operations on values.
 |[Variable.Value](variable-value.md) | This function is intended for internal use only.|
 |[SqlExpression.SchemaFrom](sqlexpression-schemafrom.md) | This function is intended for internal use only.|
 |[SqlExpression.ToExpression](sqlexpression-toexpression.md) | This function is intended for internal use only.|
+|[Table.OnError](table-onerror.md) | This function is intended for internal use only.|
 
 ## Metadata
 
