@@ -49,7 +49,7 @@ B = 1 + Section2!A;             //3
 
 section Section2; 
 A = 2;                          //2 
-B = Section1!A & " world!";     /"Hello, world"
+B = Section1!A & " world!";     //"Hello, world"
 ```
 
 Section members may optionally be declared as `shared`, which omits the requirement to use a _section-access-expression_ when referring to shared members outside of the containing section. Shared members in external sections may be referred to by their unqualified member name so long as no member of the same name is declared in the referring section and no other section has a like-named shared member.
