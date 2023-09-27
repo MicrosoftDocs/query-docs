@@ -583,7 +583,7 @@ _default-expression_:<br/>
 _catch-clause:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`catch` _catch-function_<br/>
 _catch-function:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(`_parameter-name_<sub>opt</sub>`)` `=>` _function-body_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(`_parameter-name<sub>opt</sub>_`)` `=>` _function-body_<br/>
 
 ### Literal Attributes
 
