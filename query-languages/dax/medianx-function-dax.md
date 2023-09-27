@@ -11,7 +11,7 @@ ms.author: owend
 recommendations: false
 
 ---
-# MEDIANX)
+# MEDIANX
   
 Returns the median number of an expression evaluated for each row in a table.  
   
