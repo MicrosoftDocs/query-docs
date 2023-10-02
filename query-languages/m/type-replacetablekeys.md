@@ -58,7 +58,7 @@ in
 
 ## Example 2
 
-Clears the key information previously defined on a table type.
+Clear the key information previously defined on a table type.
 
 **Usage**
 
