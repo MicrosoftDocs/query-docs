@@ -16,12 +16,8 @@ Type.ReplaceTableKeys(<b>tableType</b> as type, <b>keys</b> as list) as type
 Returns a new table type with all keys replaced by the specified list of keys. 
 
 Each key is defined using a record in the following form: 
-```powerquery-m
-[
-    Columns = { text }, // list of column names defining the key
-    Primary = logical // indicates whether the key is the primary key
-]
-```
+* `Columns`—a list of the column names that define the key
+* `Primary`—`true` if the key is the table's primary key; otherwise, `false`
 
 The specified list of keys is validated to ensure that no more than one primary key is defined and that all key column names exist on the table type.
 

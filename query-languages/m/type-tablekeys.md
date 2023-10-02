@@ -15,13 +15,9 @@ Type.TableKeys(<b>tableType</b> as type) as list
 
 Returns the possibly empty list of keys for the given table type.
 
-Each key is described using a record in the following form: 
-```powerquery-m
-[
-    Columns = { text }, // list of column names defining the key
-    Primary = logical // indicates whether the key is the primary key
-]
-```
+Each key is described by a record in the following form: 
+* `Columns`—a list of the column names that define the key
+* `Primary`—`true` if the key is the table's primary key; otherwise, `false`
 
 ## Example 1
 
