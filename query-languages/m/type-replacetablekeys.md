@@ -27,7 +27,7 @@ The specified list of keys is validated to ensure that no more than one primary 
 
 ## Example 1
 
-Replaces the key information on a table type.
+Replace the key information on a table type.
 
 **Usage**
 
