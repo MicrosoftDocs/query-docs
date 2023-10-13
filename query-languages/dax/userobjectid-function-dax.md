@@ -13,7 +13,7 @@ recommendations: false
 ---
 # USEROBJECTID
 
-Returns the current user's Object ID from Azure AD or security identifier (SID).
+Returns the current user's Object ID from Microsoft Entra ID or security identifier (SID).
   
 ## Syntax  
   
@@ -27,4 +27,4 @@ This expression has no parameters.
 
 ## Return value
 
-The current user's Object ID from Azure AD for Power BI or Azure Analysis Services models or SID for SQL Server Analysis Services models.
+The current user's Object ID from Microsoft Entra ID for Power BI or Azure Analysis Services models or SID for SQL Server Analysis Services models.

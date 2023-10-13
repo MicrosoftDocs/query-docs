@@ -11,7 +11,7 @@ These functions access data and return table values. Most of these functions ret
 |Name|Description|
 |------------|---------------|
 |[AccessControlEntry.ConditionToIdentities](accesscontrolentry-conditiontoidentities.md)|Returns a list of identities that the condition will accept.|
-|[Access.Database](access-database.md)|Returns a structural representation of an Microsoft Access database. |
+|[Access.Database](access-database.md)|Returns a structural representation of a Microsoft Access database. |
 |[ActiveDirectory.Domains](activedirectory-domains.md)|Returns a list of Active Directory domains in the same forest as the specified domain or of the current machine's domain if none is specified.|
 |[AdobeAnalytics.Cubes](adobeanalytics-cubes.md) | Returns the report suites in Adobe Analytics.|
 |[AdoDotNet.DataSource](adodotnet-datasource.md)|Returns the schema collection for an ADO.NET data source.|
