@@ -9,7 +9,7 @@
         - name: Videos
           href: dax-learn-videos.md
         - name: Use DAX in Power BI Desktop Learn path
-          href: http://aka.ms/learndax
+          href: https://aka.ms/learndax
         - name: "Sample model"
           href: dax-sample-model.md 
         - name: Best practices
