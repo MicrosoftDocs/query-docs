@@ -1,15 +1,6 @@
 ---
 description: "Learn more about: COUNTA"
 title: "COUNTA function (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 06/07/2022
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
-
 ---
 # COUNTA
 

@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: RANK"
 title: "RANK function (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax
-ms.date: 04/10/2023
-ms.topic: reference
 author: rahulten
-ms.author: owend
-recommendations: false
-
 ---
 
 # RANK

@@ -1,15 +1,6 @@
 ---
 description: "Learn more about: CROSSFILTER"
 title: "CROSSFILTER function | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 02/21/2023
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
-
 ---
 # CROSSFILTER
 

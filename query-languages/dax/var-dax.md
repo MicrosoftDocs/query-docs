@@ -1,15 +1,6 @@
 ---
 description: "Learn more about: VAR"
 title: "VAR keyword (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 01/24/2022
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
-
 ---
 # VAR
   

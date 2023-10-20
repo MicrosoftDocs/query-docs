@@ -1,14 +1,6 @@
 ---
 description: "Learn more about: Aggregation functions"
 title: "Aggregation functions (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 02/27/2023
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
 ---
 # Aggregation functions
 

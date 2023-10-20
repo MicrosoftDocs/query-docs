@@ -1,15 +1,6 @@
 ---
 description: "Learn more about: ISAFTER"
 title: "ISAFTER function (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 08/31/2021
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
-
 ---
 # ISAFTER
   
