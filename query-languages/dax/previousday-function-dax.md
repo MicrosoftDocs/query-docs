@@ -1,17 +1,9 @@
 ---
 description: "Learn more about: PREVIOUSDAY"
 title: "PREVIOUSDAY function (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 07/10/2020
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
-
 ---
 # PREVIOUSDAY
+
 Returns a table that contains a column of all dates representing the day that is previous to the first date in the **dates** column, in the current context.  
   
 ## Syntax  

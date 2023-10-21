@@ -1,15 +1,6 @@
 ---
 description: "Learn more about: ROLLUPADDISSUBTOTAL"
 title: "ROLLUPADDISSUBTOTAL function (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 09/09/2020
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
-
 ---
 # ROLLUPADDISSUBTOTAL
 

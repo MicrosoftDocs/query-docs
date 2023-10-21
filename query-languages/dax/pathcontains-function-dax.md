@@ -1,15 +1,6 @@
 ---
 description: "Learn more about: PATHCONTAINS"
 title: "PATHCONTAINS function (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 12/10/2018
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
-
 ---
 # PATHCONTAINS
 

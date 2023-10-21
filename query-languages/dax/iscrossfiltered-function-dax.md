@@ -1,15 +1,6 @@
 ---
 description: "Learn more about: ISCROSSFILTERED"
 title: "ISCROSSFILTERED function (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 01/27/2022
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
-
 ---
 # ISCROSSFILTERED
 

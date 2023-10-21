@@ -1,15 +1,6 @@
 ---
 description: "Learn more about: ALLEXCEPT"
 title: "ALLEXCEPT function (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 07/30/2021
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
-
 ---
 # ALLEXCEPT
 

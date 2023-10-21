@@ -1,15 +1,6 @@
 ---
 description: "Learn more about: FIXED"
 title: "FIXED function (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 03/16/2022
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
-
 ---
 # FIXED
 

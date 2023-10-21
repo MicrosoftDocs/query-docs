@@ -40,10 +40,15 @@
       "breadcrumb_path": "/dax/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-DAX",
       "titleSuffix": "DAX",
-      "show_latex": true,
-      "contributors_to_exclude": [
-        "mikekinsman"
-        ]
+      "ms.service": "powerbi",
+      "ms.subservice": "dax",
+      "ms.topic": "reference",
+      "ms.author": "owend",
+      "author": "minewiskan",
+      "recommendations": "false",
+      "searchScope": ["Power BI", "Analysis Services", "DAX formula language"],
+      "ms.date": "10/20/2023",
+      "show_latex": true
     },
     "fileMetadata": {},
     "template": [],

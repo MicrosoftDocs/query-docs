@@ -1,15 +1,6 @@
 ---
 description: "Learn more about: TIMEVALUE"
 title: "TIMEVALUE function (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 08/06/2021
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
-
 ---
 # TIMEVALUE
 

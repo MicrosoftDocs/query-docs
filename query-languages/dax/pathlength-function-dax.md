@@ -1,15 +1,6 @@
 ---
 description: "Learn more about: PATHLENGTH"
 title: "PATHLENGTH function (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 07/10/2020
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
-
 ---
 # PATHLENGTH
 Returns the number of parents to the specified item in a given PATH result, including self.  
