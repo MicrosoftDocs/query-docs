@@ -1,14 +1,8 @@
 ---
 description: "Learn more about: LINESTX"
 title: "LINESTX function (DAX) | Microsoft Docs"
-ms.service: powerbi
-ms.subservice: dax
-ms.date: 01/18/2023
-ms.topic: reference
 author: masanto-msft
 ms.author: masanto
-recommendations: false
-
 ---
 
 # LINESTX

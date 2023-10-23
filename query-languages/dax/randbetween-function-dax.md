@@ -1,15 +1,6 @@
 ---
 description: "Learn more about: RANDBETWEEN"
 title: "RANDBETWEEN function (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 07/10/2020
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
-
 ---
 # RANDBETWEEN
 

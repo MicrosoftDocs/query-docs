@@ -1,15 +1,6 @@
 ---
 description: "Learn more about: COUPNCD"
 title: "COUPNCD function (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax
-ms.date: 07/02/2020
-ms.reviewer: owend
-ms.topic: reference
-author: jajin7
-ms.author: owend 
-recommendations: false
-
 ---
 
 # COUPNCD

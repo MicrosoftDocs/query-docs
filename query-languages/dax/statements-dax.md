@@ -1,14 +1,6 @@
 ---
 description: "Learn more about: Statements"
 title: "Statements(DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 08/17/2022
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
 ---
 # Statements
 

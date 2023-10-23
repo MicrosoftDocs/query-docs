@@ -1,15 +1,6 @@
 ---
 description: "Learn more about: TOCSV"
 title: "TOCSV function (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 10/26/2022
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
-
 ---
 # TOCSV
 

@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: DAX syntax"
 title: "DAX syntax | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 08/06/2021
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
+ms.topic: conceptual
 ---
 # DAX syntax
 

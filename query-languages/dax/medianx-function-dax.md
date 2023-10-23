@@ -1,15 +1,6 @@
 ---
 description: "Learn more about: MEDIANX"
 title: "MEDIANX function (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 12/10/2018
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
-
 ---
 # MEDIANX
   

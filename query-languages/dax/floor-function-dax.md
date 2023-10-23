@@ -1,15 +1,6 @@
 ---
 description: "Learn more about: FLOOR"
 title: "FLOOR function (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 06/21/2022
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
-
 ---
 # FLOOR
 

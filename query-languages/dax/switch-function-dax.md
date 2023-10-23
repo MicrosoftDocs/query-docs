@@ -1,15 +1,6 @@
 ---
 description: "Learn more about: SWITCH"
 title: "SWITCH function (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 07/06/2023
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
-
 ---
 # SWITCH
 

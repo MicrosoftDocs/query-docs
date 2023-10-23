@@ -1,14 +1,7 @@
 ---
 description: "Learn more about: DAX parameter-naming conventions"
 title: "DAX parameter-naming conventions | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 11/10/2020
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
+ms.topic: conceptual
 ---
 # DAX parameter-naming conventions
 Parameter names are standardized in DAX reference to facilitate the usage and understanding of the functions.  
