@@ -1,15 +1,6 @@
 ---
 description: "Learn more about: CURRENCY"
 title: "CURRENCY function (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 06/08/2022
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
-
 ---
 # CURRENCY
 

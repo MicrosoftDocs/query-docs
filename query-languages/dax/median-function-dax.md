@@ -1,14 +1,6 @@
 ---
 description: "Learn more about: MEDIAN"
 title: "MEDIAN function (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 07/21/2022
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
 ---
 # MEDIAN
   

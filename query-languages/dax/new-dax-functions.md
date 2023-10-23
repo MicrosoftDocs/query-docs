@@ -1,14 +1,6 @@
 ---
 description: "Learn more about: New DAX functions"
 title: "New DAX functions | Microsoft Docs"
-ms.service: powerbi 
-ms.date: 02/16/2023
-ms.subservice: dax 
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
 ---
 # New DAX functions
 

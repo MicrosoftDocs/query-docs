@@ -1,15 +1,6 @@
 ---
 description: "Learn more about: INT"
 title: "INT function (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 08/04/2020
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
-
 ---
 # INT
 

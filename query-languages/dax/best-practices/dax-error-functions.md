@@ -2,13 +2,8 @@
 title: "Appropriate use of error functions in DAX"
 description: Best practices for using the DAX error functions.
 author: peter-myers
-ms.author: owend
-ms.reviewer: owend
-ms.service: powerbi 
-ms.subservice: dax
 ms.topic: conceptual
 ms.date: 08/25/2021
-recommendations: false
 ---
 
 # Appropriate use of error functions

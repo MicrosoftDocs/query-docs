@@ -1,15 +1,6 @@
 ---
 description: "Learn more about: MEASURE"
 title: "MEASURE keyword (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 08/16/2022
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
-
 ---
 # MEASURE
 

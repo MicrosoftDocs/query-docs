@@ -1,15 +1,6 @@
 ---
 description: "Learn more about: CALCULATETABLE"
 title: "CALCULATETABLE function (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax
-ms.date: 09/09/2021
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
-
 ---
 # CALCULATETABLE
 

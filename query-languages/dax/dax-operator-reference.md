@@ -1,15 +1,7 @@
 ---
 description: "Learn more about: DAX operators"
 title: "DAX operators | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 11/09/2021
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false 
-
+ms.topic: conceptual
 ---
 # DAX operators
 

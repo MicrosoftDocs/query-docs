@@ -1,14 +1,6 @@
 ---
 description: "Learn more about: Logical functions"
 title: "Logical functions (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 10/05/2021
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
 ---
 # Logical functions
 

@@ -1,15 +1,6 @@
 ---
 description: "Learn more about: BITRSHIFT"
 title: "BITRSHIFT function (DAX) | Microsoft Docs"
-ms.service: powerbi 
-ms.subservice: dax 
-ms.date: 10/11/2021
-ms.reviewer: owend
-ms.topic: reference
-author: minewiskan
-ms.author: owend 
-recommendations: false
-
 ---
 # BITRSHIFT
 

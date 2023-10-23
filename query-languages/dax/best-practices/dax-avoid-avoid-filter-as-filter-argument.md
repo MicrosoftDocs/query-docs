@@ -2,13 +2,9 @@
 title: "Avoid using FILTER as a filter argument in DAX"
 description: Best practices for using the FILTER function as a filter argument.
 author: peter-myers
-ms.author: owend
-ms.reviewer: owend
-ms.service: powerbi 
-ms.subservice: dax
 ms.topic: conceptual
 ms.date: 08/25/2021
-recommendations: false
+
 ---
 
 # Avoid using FILTER as a filter argument
