@@ -44,7 +44,6 @@ These functions evaluate and perform operations on values.
 |[DirectQueryCapabilities.From](directquerycapabilities-from.md) | This function is intended for internal use only.|
 |[Embedded.Value](embedded-value.md) | Accesses a value by name in an embedded mashup.|
 |[Excel.ShapeTable](excel-shapetable.md) | This function is intended for internal use only.|
-|[Function.InvokeWithErrorContext](function-invokewitherrorcontext.md) | This function is intended for internal use only.|
 |[Progress.DataSourceProgress](progress-datasourceprogress.md) | This function is intended for internal use only. |
 |[SqlExpression.SchemaFrom](sqlexpression-schemafrom.md) | This function is intended for internal use only.|
 |[SqlExpression.ToExpression](sqlexpression-toexpression.md) | This function is intended for internal use only.|

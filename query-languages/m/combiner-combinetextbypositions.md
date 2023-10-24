@@ -26,4 +26,6 @@ Combiner.CombineTextByPositions({0, 5, 10})({"abc", "def", "ghi"})
 
 **Output**
 
-`"abc  def  ghi"`
+```powerquery-m
+"abc  def  ghi"
+```

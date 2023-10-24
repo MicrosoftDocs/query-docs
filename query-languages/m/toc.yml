@@ -604,6 +604,8 @@ items:
         href: function-invoke.md
       - name: Function.InvokeAfter
         href: function-invokeafter.md
+      - name: Function.InvokeWithErrorContext
+        href: function-invokewitherrorcontext.md
       - name: Function.IsDataSource
         href: function-isdatasource.md
       - name: Function.ScalarVector
@@ -1398,8 +1400,6 @@ items:
         href: excel-shapetable.md
       - name: Graph.Nodes
         href: graph-nodes.md
-      - name: Function.InvokeWithErrorContext
-        href: function-invokewitherrorcontext.md
       - name: Progress.DataSourceProgress
         href: progress-datasourceprogress.md
       - name: SqlExpression.SchemaFrom
