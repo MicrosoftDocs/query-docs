@@ -47,7 +47,6 @@ These functions evaluate and perform operations on values.
 |[Progress.DataSourceProgress](progress-datasourceprogress.md) | This function is intended for internal use only. |
 |[SqlExpression.SchemaFrom](sqlexpression-schemafrom.md) | This function is intended for internal use only.|
 |[SqlExpression.ToExpression](sqlexpression-toexpression.md) | This function is intended for internal use only.|
-|[Table.WithErrorContext](table-witherrorcontext.md) | This function is intended for internal use only.|
 |[Value.Firewall](value-firewall.md) | This function is intended for internal use only.|
 |[Value.ViewError](value-viewerror.md) | This function is intended for internal use only.|
 |[Value.ViewFunction](value-viewfunction.md) | This function is intended for internal use only.|
