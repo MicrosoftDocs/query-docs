@@ -12,4 +12,18 @@ Combiner.CombineTextByPositions(<b>positions</b> as list, optional <b>template</
 
 ## About
 
-Returns a function that combines a list of text into a single text using the specified positions.
+Returns a function that combines a list of text values into a single text value using the specified output positions.
+
+## Example 1
+
+Combine a list of text values by placing them in the output at the specified positions.
+
+**Usage**
+
+```powerquery-m
+Combiner.CombineTextByPositions({0, 5, 10})({"abc", "def", "ghi"})
+```
+
+**Output**
+
+`"abc  def  ghi"`

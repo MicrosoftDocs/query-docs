@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Value functions"
 title: "Value functions"
-ms.date: 9/11/2023
+ms.date: 10/19/2023
 ms.custom: "nonautomated-date"
 ---
 # Value functions
@@ -38,19 +38,21 @@ These functions evaluate and perform operations on values.
 |[Value.Is](value-is.md)|Determines whether a value is compatible with the specified type.|
 |[Value.ReplaceType](value-replacetype.md)|Replaces the value's type.|
 
-|Implementation | Description
-|-------------- | -----------
+|Implementation | Description |
+|-------------- | ----------- |
+|[Action.WithErrorContext](action-witherrorcontext.md) | This function is intended for internal use only.|
 |[DirectQueryCapabilities.From](directquerycapabilities-from.md) | This function is intended for internal use only.|
 |[Embedded.Value](embedded-value.md) | Accesses a value by name in an embedded mashup.|
 |[Excel.ShapeTable](excel-shapetable.md) | This function is intended for internal use only.|
+|[Function.InvokeWithErrorContext](function-invokewitherrorcontext.md) | This function is intended for internal use only.|
 |[Progress.DataSourceProgress](progress-datasourceprogress.md) | This function is intended for internal use only. |
+|[SqlExpression.SchemaFrom](sqlexpression-schemafrom.md) | This function is intended for internal use only.|
+|[SqlExpression.ToExpression](sqlexpression-toexpression.md) | This function is intended for internal use only.|
+|[Table.WithErrorContext](table-witherrorcontext.md) | This function is intended for internal use only.|
 |[Value.Firewall](value-firewall.md) | This function is intended for internal use only.|
 |[Value.ViewError](value-viewerror.md) | This function is intended for internal use only.|
 |[Value.ViewFunction](value-viewfunction.md) | This function is intended for internal use only.|
 |[Variable.Value](variable-value.md) | This function is intended for internal use only.|
-|[SqlExpression.SchemaFrom](sqlexpression-schemafrom.md) | This function is intended for internal use only.|
-|[SqlExpression.ToExpression](sqlexpression-toexpression.md) | This function is intended for internal use only.|
-|[Table.OnError](table-onerror.md) | This function is intended for internal use only.|
 
 ## Metadata
 
