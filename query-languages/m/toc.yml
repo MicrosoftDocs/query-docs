@@ -1100,8 +1100,6 @@ items:
         href: table-minn.md
       - name: Table.NestedJoin
         href: table-nestedjoin.md
-      - name: Table.WithErrorContext
-        href: table-witherrorcontext.md
       - name: Table.Partition
         href: table-partition.md
       - name: Table.PartitionValues
@@ -1204,6 +1202,8 @@ items:
         href: table-viewerror.md
       - name: Table.ViewFunction
         href: table-viewfunction.md
+      - name: Table.WithErrorContext
+        href: table-witherrorcontext.md
       - name: Tables.GetRelationships
         href: tables-getrelationships.md
       - name: '#table'
