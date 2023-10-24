@@ -1098,8 +1098,8 @@ items:
         href: table-minn.md
       - name: Table.NestedJoin
         href: table-nestedjoin.md
-      - name: Table.OnError
-        href: table-onerror.md
+      - name: Table.WithErrorContext
+        href: table-witherrorcontext.md
       - name: Table.Partition
         href: table-partition.md
       - name: Table.PartitionValues
@@ -1388,6 +1388,8 @@ items:
       items: 
       - name: Value functions overview
         href: value-functions.md
+      - name: Action.WithErrorContext
+        href: action-witherrorcontext.md
       - name: DirectQueryCapabilities.From
         href: directquerycapabilities-from.md
       - name: Embedded.Value
@@ -1396,6 +1398,8 @@ items:
         href: excel-shapetable.md
       - name: Graph.Nodes
         href: graph-nodes.md
+      - name: Function.InvokeWithErrorContext
+        href: function-invokewitherrorcontext.md
       - name: Progress.DataSourceProgress
         href: progress-datasourceprogress.md
       - name: SqlExpression.SchemaFrom
