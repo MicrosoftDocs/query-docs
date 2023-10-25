@@ -14,9 +14,11 @@ Character.ToNumber(<b>character</b> as nullable text) as nullable number
 
 Returns the number equivalent of the character, `character`.
 
+The result will be the 21-bit Unicode code point represented by the provided character or surrogate pair.
+
 ## Example 1
 
-Given the character "#(tab)" 9, find the number value.
+Convert a character to its equivalent number value.
 
 **Usage**
 
@@ -27,3 +29,17 @@ Character.ToNumber("#(tab)")
 **Output**
 
 `9`
+
+## Example 2
+
+Convert the UTF-16 surrogate pair for the "grinning face" emoticon to its equivalent hexadecimal code point.
+
+**Usage**
+
+```powerquery-m
+Number.ToText(Character.ToNumber("#(0001F600)"), "X")
+```
+
+**Output**
+
+`"1F600"`

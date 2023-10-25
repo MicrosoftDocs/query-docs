@@ -26,6 +26,7 @@ These functions create and manipulate table values.
 |[Table.FuzzyJoin](table-fuzzyjoin.md)|Joins the rows from the two tables that fuzzy match based on the given keys.|
 |[Table.FuzzyNestedJoin](table-fuzzynestedjoin.md)|Performs a fuzzy join between tables on supplied columns and produces the join result in a new column.|
 |[Table.Split](table-split.md)|Splits the specified table into a list of tables using the specified page size.|
+|[Table.WithErrorContext](table-witherrorcontext.md) | This function is intended for internal use only.|
 |[Table.View](table-view.md)|Creates or extends a table with user-defined handlers for query and action operations.|
 |[Table.ViewError](table-viewerror.md) | Creates a modified error record which won't trigger a fallback when thrown by a handler defined on a view (via [Table.View](table-view.md)).|
 |[Table.ViewFunction](table-viewfunction.md) | Creates a function that can be intercepted by a handler defined on a view (via **Table.View**).|
