@@ -12,9 +12,10 @@ Type.ReplaceTableKeys(<b>tableType</b> as type, <b>keys</b> as list) as type
 
 ## About
 
-Returns a new table type with all keys replaced by the specified list of keys. 
+Returns a new table type with all keys replaced by the specified list of keys.
 
-Each key is defined using a record in the following form: 
+Each key is defined using a record in the following form:
+
 * `Columns`: a list of the column names that define the key
 * `Primary`: `true` if the key is the table's primary key; otherwise, `false`
 
@@ -49,7 +50,6 @@ in
     [Columns = {"FirstName", "LastName"}, Primary = false]
 }
 ```
-
 
 ## Example 2
 
