@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Text functions"
 title: "Text functions"
-ms.date: 5/16/2022
+ms.date: 10/19/2023
 ms.custom: "nonautomated-date"
 ---
 # Text functions
@@ -19,8 +19,8 @@ These functions create and manipulate text values.
 
 |Name|Description|
 |------------|---------------|
-|[Character.FromNumber](character-fromnumber.md)|Returns a number to its character value.|
-|[Character.ToNumber](character-tonumber.md)|Returns a character to its number value.|
+|[Character.FromNumber](character-fromnumber.md)|Converts a number to a text character.|
+|[Character.ToNumber](character-tonumber.md)|Converts a character to a number value.|
 |[Guid.From](guid-from.md) | Returns a `Guid.Type` value from the given `value`.|
 |[Json.FromValue](json-fromvalue.md) | Produces a JSON representation of a given value.|
 |[Text.From](text-from.md)|Returns the text representation of a number, date, time, datetime, datetimezone, logical, duration or binary value. If a value is null, **Text.From** returns null. The optional culture parameter is used to format the text value according to the given culture.|

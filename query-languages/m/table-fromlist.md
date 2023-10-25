@@ -21,17 +21,21 @@ Create a table from a list using the default splitter.
 **Usage**
 
 ```powerquery-m
-Table.FromList({"a,apple", "b,ball", "c,cookie", "d,door"}, null, {"Letter", "Example Word"})
+Table.FromList(
+    {"a,apple", "b,ball", "c,cookie", "d,door"},
+    null,
+    {"Letter", "Example Word"}
+)
 ```
 
 **Output**
 
 ```powerquery-m
 Table.FromRecords({
-    [Letter = "a", "Example Word" = "apple"],
-    [Letter = "b", "Example Word" = "ball"],
-    [Letter = "c", "Example Word" = "cookie"],
-    [Letter = "d", "Example Word" = "door"]
+    [Letter = "a", #"Example Word" = "apple"],
+    [Letter = "b", #"Example Word" = "ball"],
+    [Letter = "c", #"Example Word" = "cookie"],
+    [Letter = "d", #"Example Word" = "door"]
 })
 ```
 
@@ -42,23 +46,27 @@ Create a table from a list using a custom splitter.
 **Usage**
 
 ```powerquery-m
-Table.FromList({"a,apple", "b,ball", "c,cookie", "d,door"}, Splitter.SplitByNothing(), {"Letter and Example Word"})
+Table.FromList(
+    {"a,apple", "b,ball", "c,cookie", "d,door"},
+    Splitter.SplitByNothing(),
+    {"Letter and Example Word"}
+)
 ```
 
 **Output**
 
 ```powerquery-m
 Table.FromRecords({
-    ["Letter and Example Word" = "a,apple"],
-    ["Letter and Example Word" = "b,ball"],
-    ["Letter and Example Word" = "c,cookie"],
-    ["Letter and Example Word" = "d,door"]
+    [#"Letter and Example Word" = "a,apple"],
+    [#"Letter and Example Word" = "b,ball"],
+    [#"Letter and Example Word" = "c,cookie"],
+    [#"Letter and Example Word" = "d,door"]
 })
 ```
 
 ## Example 3
 
-Create a table from a list using the [Record.FieldValues](record-fieldvalues.md) splitter.
+Create a table from the list using the [Record.FieldValues](record-fieldvalues.md) splitter.
 
 **Usage**
 

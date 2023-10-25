@@ -604,6 +604,8 @@ items:
         href: function-invoke.md
       - name: Function.InvokeAfter
         href: function-invokeafter.md
+      - name: Function.InvokeWithErrorContext
+        href: function-invokewitherrorcontext.md
       - name: Function.IsDataSource
         href: function-isdatasource.md
       - name: Function.ScalarVector
@@ -1098,8 +1100,6 @@ items:
         href: table-minn.md
       - name: Table.NestedJoin
         href: table-nestedjoin.md
-      - name: Table.OnError
-        href: table-onerror.md
       - name: Table.Partition
         href: table-partition.md
       - name: Table.PartitionValues
@@ -1202,6 +1202,8 @@ items:
         href: table-viewerror.md
       - name: Table.ViewFunction
         href: table-viewfunction.md
+      - name: Table.WithErrorContext
+        href: table-witherrorcontext.md
       - name: Tables.GetRelationships
         href: tables-getrelationships.md
       - name: '#table'
@@ -1388,6 +1390,8 @@ items:
       items: 
       - name: Value functions overview
         href: value-functions.md
+      - name: Action.WithErrorContext
+        href: action-witherrorcontext.md
       - name: DirectQueryCapabilities.From
         href: directquerycapabilities-from.md
       - name: Embedded.Value
