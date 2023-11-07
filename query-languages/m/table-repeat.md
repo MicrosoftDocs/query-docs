@@ -27,6 +27,7 @@ Table.Repeat(
         [a = 3, b = "world"]
     }),
     2
+)
 
 ```
 
