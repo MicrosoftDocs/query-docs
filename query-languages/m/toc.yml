@@ -580,6 +580,8 @@ items:
         href: error-handling.md
       - name: Diagnostics.ActivityId
         href: diagnostics-activityid.md
+      - name: Diagnostics.CorrelationId
+        href: diagnostics-correlationid.md
       - name: Diagnostics.Trace
         href: diagnostics-trace.md
       - name: Error.Record
