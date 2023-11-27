@@ -48,7 +48,7 @@ The following expression returns the month from the date in the **TransactionDat
 = MONTH(Orders[TransactionDate])  
 ```
   
-## See also
+## Related content
 
 [Date and time functions](date-and-time-functions-dax.md)  
 [HOUR function](hour-function-dax.md)  

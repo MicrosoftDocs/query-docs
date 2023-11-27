@@ -69,7 +69,7 @@ ORDER BY [EnglishCountryRegionName] asc, [StateProvinceName] desc, [City] asc
 
 Returns a table that uniquely ranks each geography with the same EnglishCountryRegionName, by their StateProvinceName and City.
 
-## See also
+## Related content
 
 [INDEX](index-function-dax.md)  
 [ORDERBY](orderby-function-dax.md)  

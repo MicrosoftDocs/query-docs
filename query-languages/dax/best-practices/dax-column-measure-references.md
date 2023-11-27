@@ -53,7 +53,7 @@ Here's why:
 - **Robustness**: Expressions will continue to work, even when you change a measure home table property.
 - **Readability**: Expressions will be quick and easy to understand—you'll quickly determine that it's a column or measure, based on whether it's fully qualified or not.
 
-## See also
+## Related content
 
 - Learning path: [Use DAX in Power BI Desktop](/training/paths/dax-power-bi/)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

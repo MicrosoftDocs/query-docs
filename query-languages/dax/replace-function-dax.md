@@ -39,7 +39,7 @@ The following formula creates a new calculated column that replaces the first tw
 = REPLACE('New Products'[Product Code],1,2,"OB")  
 ```
   
-## See also
+## Related content
 
 [Text functions](text-functions-dax.md)  
 [SUBSTITUTE function](substitute-function-dax.md)  

@@ -193,7 +193,7 @@ Reference XMLA parameters by prefixing the name of the parameter with an `@` cha
 > Parameters defined in the parameters section and not used in the **\<STATEMENT>** element generate an error response in XMLA.
 > Parameters used and not defined in the **\<Parameters>** element generate an error response in XMLA.
   
-## See also
+## Related content
 
 [DAX statements](statements-dax.md)  
 [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md)  

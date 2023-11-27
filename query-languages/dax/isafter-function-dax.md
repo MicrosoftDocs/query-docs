@@ -62,6 +62,6 @@ Returns:
 |USA|CA|5|500|  
 |USA|WA|10|900|  
 
-## See also
+## Related content
 
 [ISONORAFTER](isonorafter-function-dax.md)

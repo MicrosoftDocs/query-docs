@@ -45,7 +45,7 @@ The following sample formula creates a measure that obtains the first date when 
 = FIRSTDATE('InternetSales_USD'[SaleDateKey])  
 ```
   
-## See also
+## Related content
 
 [Date and time functions](date-and-time-functions-dax.md)  
 [Time intelligence functions](time-intelligence-functions-dax.md)  

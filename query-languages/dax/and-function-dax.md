@@ -95,6 +95,6 @@ Returns
 ||||||||  
 |Grand Total|||||||  
   
-## See also
+## Related content
 
 [Logical functions](logical-functions-dax.md)  

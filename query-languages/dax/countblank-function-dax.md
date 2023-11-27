@@ -42,7 +42,7 @@ The following example shows how to count the number of rows in the table Reselle
 
 To count logical values or text, use the COUNTA or COUNTAX functions.  
   
-## See also
+## Related content
 
 [COUNT function](count-function-dax.md)  
 [COUNTA function](counta-function-dax.md)  

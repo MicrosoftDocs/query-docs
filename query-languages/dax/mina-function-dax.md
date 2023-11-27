@@ -49,7 +49,7 @@ The following expression returns the minimum value in the column, PostalCode. Be
 = MINA([PostalCode])  
 ```
   
-## See also
+## Related content
 
 [MIN function](min-function-dax.md)  
 [MINX function](minx-function-dax.md)  

@@ -35,7 +35,7 @@ The following formula returns a random number between 1 and 10.
 = RANDBETWEEN(1,10)  
 ```
   
-## See also
+## Related content
 
 [Math and Trig functions](math-and-trig-functions-dax.md)  
 [Statistical functions](statistical-functions-dax.md)  

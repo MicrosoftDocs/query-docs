@@ -55,7 +55,7 @@ The following formula calculates dates that are one year before the dates in the
 = DATEADD(DateTime[DateKey],-1,year)  
 ```
   
-## See also
+## Related content
 
 [Time intelligence functions](time-intelligence-functions-dax.md)  
 [Date and time functions](date-and-time-functions-dax.md)

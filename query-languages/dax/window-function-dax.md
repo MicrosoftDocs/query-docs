@@ -141,7 +141,7 @@ Returns the running sum for Total Sales by Month Number Of Year, restarting for 
 | FY2020 | 11                   | $5,151,897   | $47,027,081  |
 | FY2020 | 12                   | $4,851,194   | $51,878,275  |
 
-## See also
+## Related content
 
 [INDEX](index-function-dax.md)  
 [OFFSET](offset-function-dax.md)  

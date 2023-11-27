@@ -41,7 +41,7 @@ The DAX function reference provides detailed information including syntax, param
 
 [Time intelligence functions](time-intelligence-functions-dax.md) - These functions help you create calculations that use built-in knowledge about calendars and dates. By using time and date ranges in combination with aggregations or calculations, you can build meaningful comparisons across comparable time periods for sales, inventory, and so on.  
   
-## See also
+## Related content
 
 [DAX Syntax Reference](dax-syntax-reference.md)  
 [DAX Operator Reference](dax-operator-reference.md)  

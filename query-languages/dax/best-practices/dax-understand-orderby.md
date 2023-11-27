@@ -483,7 +483,7 @@ And this expression does indeed return the results we're after:
 | SO52234             | 1                    | 528        | 4.99        | 4.99                  |
 | SO52234             | 2                    | 529        | 3.99        |                       |
 
-## See also
+## Related content
 
 [ORDERBY](../orderby-function-dax.md)  
 [PARTITIONBY](../partitionby-function-dax.md)  

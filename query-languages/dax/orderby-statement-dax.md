@@ -28,7 +28,7 @@ The result of an EVALUATE statement in ascending (ASC) or descending (DESC) orde
 
 To learn more about how ORDER BY statements are used, see [DAX queries](dax-queries.md).
 
-## See also
+## Related content
 
 [START AT](startat-statement-dax.md)  
 [EVALUATE](evaluate-statement-dax.md)  

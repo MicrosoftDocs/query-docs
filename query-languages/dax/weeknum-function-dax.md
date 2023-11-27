@@ -64,7 +64,7 @@ The following example returns the week number of the date stored in the column, 
 = WEEKNUM('Employees'[HireDate])
 ```
 
-## See also
+## Related content
 
 [YEARFRAC function](yearfrac-function-dax.md)  
 [WEEKDAY function](weekday-function-dax.md)

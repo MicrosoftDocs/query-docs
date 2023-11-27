@@ -39,7 +39,7 @@ Returns
 |---------|
 |0.054644929975921     |
 
-## See also  
+## Related content  
 
 [T.DIST](t-dist-dax.md)  
 [T.DIST.RT](t-dist-rt-dax.md)  

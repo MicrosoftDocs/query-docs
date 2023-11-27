@@ -197,6 +197,6 @@ Returns the following table,
 |FALSE|TRUE|2007||30543780.84|297538.0745|  
 |TRUE|TRUE|||76494758.25|527507.9262|  
 
-## See also
+## Related content
 
 [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md)

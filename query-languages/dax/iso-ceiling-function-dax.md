@@ -59,7 +59,7 @@ The following formula returns the ISO ceiling value of -4.40.
 = ISO.CEILING(-4.42,0.05)  
 ```
   
-## See also
+## Related content
 
 [Math and Trig functions](math-and-trig-functions-dax.md)  
 [FLOOR function](floor-function-dax.md)  

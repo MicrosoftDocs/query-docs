@@ -117,7 +117,7 @@ Create a new PivotTable, and drag the column, datetime.[Calendar Year], to the R
   
 Now the two measures have the same results. That is because the ALLNOBLANKROW function does not count truly blank rows in a table, but only handles the blank row that is a special case generated in a parent table, when one or more of the child tables in the relationship contain non-matching values or blank values.  
   
-## See also
+## Related content
 
 [Filter functions](filter-functions-dax.md)  
 [ALL function](all-function-dax.md)  

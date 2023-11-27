@@ -30,7 +30,7 @@ The following formula converts the string in the column, [ProductCode], to all u
 = UPPER(['New Products'[Product Code])  
 ```
   
-## See also
+## Related content
 
 [Text functions](text-functions-dax.md)  
 [LOWER function](lower-function-dax.md)  

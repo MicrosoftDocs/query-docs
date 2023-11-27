@@ -43,6 +43,6 @@ The following examples show the behavior of the ISNONTEXT function.
 = IF(ISNONTEXT(""), "Is Non-Text", "Is Text")  
 ```
   
-## See also
+## Related content
 
 [Information functions](information-functions-dax.md)  

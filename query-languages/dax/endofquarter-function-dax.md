@@ -41,7 +41,7 @@ The following sample formula creates a measure that returns the end of the quart
 = ENDOFQUARTER(DateTime[DateKey])  
 ```
   
-## See also
+## Related content
 
 [Date and time functions](date-and-time-functions-dax.md)  
 [Time intelligence functions](time-intelligence-functions-dax.md)  

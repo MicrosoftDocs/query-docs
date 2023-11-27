@@ -50,7 +50,7 @@ The following example shows how to count the number of values in the column, Shi
 
 To count logical values or text, use the COUNTA or COUNTAX functions.  
   
-## See also  
+## Related content  
 
 [COUNTA function](counta-function-dax.md)  
 [COUNTAX function](countax-function-dax.md)  

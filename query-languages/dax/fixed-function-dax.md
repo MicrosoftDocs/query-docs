@@ -46,7 +46,7 @@ The following formula used in a calculated column gets the numeric value for the
 = FIXED([List Price],2,1)  
 ```
 
-## See also
+## Related content
 
 [CEILING](ceiling-function-dax.md)  
 [FLOOR](floor-function-dax.md)  

@@ -45,7 +45,7 @@ The following sample formula creates a measure that calculates the 'Quarter Star
 = OPENINGBALANCEQUARTER(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])  
 ```
   
-## See also
+## Related content
 
 [OPENINGBALANCEYEAR function](openingbalanceyear-function-dax.md)  
 [OPENINGBALANCEMONTH function](openingbalancemonth-function-dax.md)  

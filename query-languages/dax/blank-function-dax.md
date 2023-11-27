@@ -42,7 +42,7 @@ The table shows the expected results when this formula is used to create a table
   
 In the original data source, the column evaluated by the BLANK function might have included text, empty strings, or nulls. If the original data source was a SQL Server database, nulls and empty strings are different kinds of data. However, for this operation an implicit type cast is performed and DAX treats them as the same.  
   
-## See also
+## Related content
 
 [Text functions](text-functions-dax.md)  
 [ISBLANK function](isblank-function-dax.md)  

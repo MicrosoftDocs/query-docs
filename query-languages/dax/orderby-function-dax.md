@@ -32,7 +32,7 @@ This function can only be used within a window function expression.
 
 See [OFFSET](offset-function-dax.md).
 
-## See also
+## Related content
 
 [Understanding ORDERBY, PARTITIONBY, and MATCHBY functions](../dax/best-practices/dax-understand-orderby.md)  
 [INDEX](index-function-dax.md)  

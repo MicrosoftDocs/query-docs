@@ -49,6 +49,6 @@ The following table shows the expected results for some sample values:
 |8.0373|8|  
 |2.9733|2.9|  
   
-## See also
+## Related content
 
 [Math and Trig functions](math-and-trig-functions-dax.md)  

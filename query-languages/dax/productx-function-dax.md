@@ -41,6 +41,6 @@ The following computes the future value of an investment:
 = [PresentValue] * PRODUCTX( AnnuityPeriods, 1+[FixedInterestRate] )  
 ```
   
-## See also
+## Related content
 
 [PRODUCT](product-function-dax.md)  

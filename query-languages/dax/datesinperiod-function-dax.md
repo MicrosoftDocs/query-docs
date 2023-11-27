@@ -62,7 +62,7 @@ CALCULATE(
 
 Consider that the report is filtered by the month of June 2020. The MAX function returns June 30, 2020. The DATESINPERIOD function then returns a date range from July 1, 2019 until June 30, 2020. It's a year of date values starting from June 30, 2020 for the last year.
 
-## See also
+## Related content
 
 [Time intelligence functions (DAX)](time-intelligence-functions-dax.md)  
 [Date and time functions (DAX)](date-and-time-functions-dax.md)  

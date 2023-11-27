@@ -52,7 +52,7 @@ The following example uses the same filtered table as in the previous example, b
 
 In the first example, the names of the columns are unqualified. In the second example, the column names are fully qualified.  
   
-## See also
+## Related content
 
 [MIN function](min-function-dax.md)  
 [MINA function](mina-function-dax.md)  

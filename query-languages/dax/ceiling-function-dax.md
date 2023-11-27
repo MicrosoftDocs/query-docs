@@ -54,7 +54,7 @@ The following formula returns similar results as the previous example, but uses 
 = CEILING([ProductPrice],0.05)  
 ```
   
-## See also
+## Related content
 
 [Math and Trig functions](math-and-trig-functions-dax.md)  
 [FLOOR function](floor-function-dax.md)  

@@ -37,6 +37,6 @@ A table which includes only rows from RightTable for which the values in the com
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-## See also
+## Related content
 
 [NATURALINNERJOIN](naturalinnerjoin-function-dax.md)

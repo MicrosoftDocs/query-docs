@@ -34,7 +34,7 @@ The following expression is evaluated by the Format String Expression property f
 SELECTEDVALUE( DimCurrency[FormatString], SELECTEDMEASUREFORMATSTRING() )
 ```
   
-## See also
+## Related content
 
 [SELECTEDMEASURE](selectedmeasure-function-dax.md)  
 [ISSELECTEDMEASURE](isselectedmeasure-function-dax.md)   

@@ -34,7 +34,7 @@ The following example returns the current date and time plus 3.5 days:
 = NOW()+3.5  
 ```
   
-## See also
+## Related content
 
 [UTCNOW function](utcnow-function-dax.md)  
 [TODAY function](today-function-dax.md)  

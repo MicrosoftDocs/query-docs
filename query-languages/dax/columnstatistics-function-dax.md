@@ -58,7 +58,7 @@ Returns a table with statistics regarding all columns from all tables in the mod
 
 :::image type="content" source="media/columnstatistics-function-dax/columnstatistics-result-table.png" alt-text="COLUMNSTATISTICS result table":::
 
-## See also
+## Related content
 
 [Filter context](dax-overview.md#filter-context)  
 [CALCULATETABLE function](calculatetable-function-dax.md)  

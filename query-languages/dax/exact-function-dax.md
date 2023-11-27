@@ -33,6 +33,6 @@ The following formula used in a calculated column in the Product table checks th
 = EXACT([Product], [Model])  
 ```
   
-## See also
+## Related content
 
 [Text functions](text-functions-dax.md)  
