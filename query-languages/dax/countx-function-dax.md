@@ -49,7 +49,7 @@ The following formula illustrates how to pass a filtered table to COUNTX for the
 = COUNTX(FILTER(Product,RELATED(ProductSubcategory[EnglishProductSubcategoryName])="Caps"), Product[ListPrice])  
 ```
   
-## See also
+## Related content
 
 [COUNT function](count-function-dax.md)  
 [COUNTA function](counta-function-dax.md)  

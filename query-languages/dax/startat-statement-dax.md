@@ -25,7 +25,7 @@ Introduces a statement that defines the starting value at which the query result
 
 - To learn more about how START AT statements are used, see [DAX queries](dax-queries.md).
   
-## See also
+## Related content
 
 [ORDER BY](orderby-statement-dax.md)  
 [EVALUATE](evaluate-statement-dax.md)  

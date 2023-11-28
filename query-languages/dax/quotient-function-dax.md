@@ -41,6 +41,6 @@ The following formulas return the same result, 2.
 = QUOTIENT(10/2,2)  
 ```
   
-## See also
+## Related content
 
 [Math and Trig functions](math-and-trig-functions-dax.md)  

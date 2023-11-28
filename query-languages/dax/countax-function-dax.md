@@ -39,7 +39,7 @@ The following example counts the number of nonblank rows in the column, Phone, u
 = COUNTAX(FILTER('Reseller',[Status]="Active"),[Phone])  
 ```
   
-## See also
+## Related content
 
 [COUNT function](count-function-dax.md)  
 [COUNTA function](counta-function-dax.md)  

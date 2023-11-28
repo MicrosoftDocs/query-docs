@@ -50,6 +50,6 @@ EVALUATE
 |---------|---------|
 |2     |     3    |
 
-## See also
+## Related content
 
 [DISTINCTCOUNT](distinctcount-function-dax.md)

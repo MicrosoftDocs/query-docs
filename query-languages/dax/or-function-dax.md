@@ -65,6 +65,6 @@ Returns
 |Varkey Chudukatil, Ranjit R||||||Circle of Excellence|  
 |Grand Total|Circle of Excellence|Circle of Excellence|Circle of Excellence|Circle of Excellence|Circle of Excellence|Circle of Excellence|  
 
-## See also
+## Related content
 
 [Logical functions](logical-functions-dax.md)  

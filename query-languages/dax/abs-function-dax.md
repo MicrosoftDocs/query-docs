@@ -35,7 +35,7 @@ The following example returns the absolute value of the difference between the l
 = ABS([DealerPrice]-[ListPrice])  
 ```
   
-## See also
+## Related content
 
 [Math and Trig functions](math-and-trig-functions-dax.md)  
 [SIGN function](sign-function-dax.md)  

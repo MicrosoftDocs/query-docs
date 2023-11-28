@@ -34,7 +34,7 @@ Returns:
 |---------|
 |2/2/2018 4:48:08 AM    |
 
-## See also
+## Related content
 
 [NOW function](now-function-dax.md)  
 [UTCTODAY function](utctoday-function-dax.md)  

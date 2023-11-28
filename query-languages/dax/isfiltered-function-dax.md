@@ -30,7 +30,7 @@ TRUE when *ColumnName* or a column of *TableName* is being filtered directly. Ot
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-## See also
+## Related content
 
 [ISCROSSFILTERED function](iscrossfiltered-function-dax.md)  
 [FILTERS function](filters-function-dax.md)  

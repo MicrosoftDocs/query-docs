@@ -37,7 +37,7 @@ EVALUATE
 
 Returns all rows and columns from the Internet Sales table, as a table.
 
-## See also
+## Related content
 
 [ORDER BY](orderby-statement-dax.md)  
 [START AT](startat-statement-dax.md)  

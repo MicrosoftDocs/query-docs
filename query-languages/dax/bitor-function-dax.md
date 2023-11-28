@@ -37,7 +37,7 @@ EVALUATE
 
 Returns 11.
 
-## See also
+## Related content
 
 [BITAND](bitand-function-dax.md)  
 [BITXOR](bitxor-function-dax.md)  

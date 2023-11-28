@@ -43,7 +43,7 @@ The following example first filters the table, InternetSales, on the expression,
 
 If you do not need to filter the column, use the SUM function. The SUM function is similar to the Excel function of the same name, except that it takes a column as a reference.  
   
-## See also
+## Related content
 
 [SUM](sum-function-dax.md)  
 [Statistical functions](statistical-functions-dax.md)  

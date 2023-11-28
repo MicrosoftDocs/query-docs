@@ -63,7 +63,7 @@ The following example returns the smallest value from the result of two scalar e
 = Min([TotalSales], [TotalPurchases])
 ```
 
-## See also
+## Related content
 
 [MINA function](mina-function-dax.md)  
 [MINX function](minx-function-dax.md)  

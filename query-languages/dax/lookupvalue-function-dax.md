@@ -92,7 +92,7 @@ However, in this case, because there is a relationship between the **Sales Order
 CHANNEL = RELATED('Sales Order'[Channel])
 ```
 
-## See also
+## Related content
 
 [RELATED function (DAX)](related-function-dax.md)  
 [Information functions](information-functions-dax.md)  

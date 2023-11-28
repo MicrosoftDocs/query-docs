@@ -77,7 +77,7 @@ IF(
 > [!TIP]
 > When you need to nest multiple IF functions, the [SWITCH](switch-function-dax.md) function might be a better option. This function provides a more elegant way to write an expression that returns more than two possible values.
 
-## See also
+## Related content
 
 [IF.EAGER function](if-eager-function-dax.md)   
 [SWITCH function (DAX)](switch-function-dax.md)  

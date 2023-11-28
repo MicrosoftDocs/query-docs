@@ -57,7 +57,7 @@ Depending on the language setting for the current user, :::no-loc text="USERCULT
 |ru-RU     |  :::no-loc text="вторник":::|
 |uk-UA     |  :::no-loc text="вівторок":::|
 
-## See also
+## Related content
 
 [Expression-based titles in Power BI](/power-bi/create-reports/desktop-conditional-format-visual-titles)  
 [USERNAME](username-function-dax.md)  

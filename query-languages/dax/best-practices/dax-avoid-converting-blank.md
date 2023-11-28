@@ -66,7 +66,7 @@ It's recommended that your measures return BLANK when a meaningful value cannot 
 
 This design approach is efficient, allowing Power BI to render reports faster. Also, returning BLANK is better because report visuals—by default—eliminate groupings when summarizations are BLANK.
 
-## See also
+## Related content
 
 - Learning path: [Use DAX in Power BI Desktop](/training/paths/dax-power-bi/)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

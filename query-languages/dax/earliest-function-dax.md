@@ -36,7 +36,7 @@ The current sample data does not support this scenario.
 = EARLIEST(<column>)  
 ```
   
-## See also
+## Related content
 
 [EARLIER function](earlier-function-dax.md)  
 [Filter functions](filter-functions-dax.md)  

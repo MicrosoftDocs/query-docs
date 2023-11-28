@@ -53,7 +53,7 @@ The following example returns the average of non-blank cells in the referenced c
 = AVERAGEA([Amount])  
 ```
   
-## See also
+## Related content
 
 [AVERAGE function](average-function-dax.md)  
 [AVERAGEX function](averagex-function-dax.md)  

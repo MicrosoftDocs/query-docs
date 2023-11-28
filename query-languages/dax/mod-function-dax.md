@@ -45,7 +45,7 @@ The following formula returns -1, the remainder of 3 divided by 2. Note that the
 = MOD(-3,-2)  
 ```
   
-## See also
+## Related content
 
 [Math and Trig functions](math-and-trig-functions-dax.md)  
 [ROUND function](round-function-dax.md)  

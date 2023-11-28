@@ -55,7 +55,7 @@ The following expression returns the day that each sales order was placed, and f
 = IF( DAY([SalesDate])=10,"promotion","")  
 ```
   
-## See also
+## Related content
 
 [Date and time functions](date-and-time-functions-dax.md)  
 [TODAY function](today-function-dax.md)  

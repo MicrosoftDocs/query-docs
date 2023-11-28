@@ -103,7 +103,7 @@ It results in the following table:
 |2008|$9,041,288.80|$5,681,440.58|1.59|  
 |Grand Total|$26,054,827.45|$5,681,440.58|4.59|  
 
-## See also
+## Related content
 
 - [Filter context](dax-overview.md#filter-context)
 - [CALCULATE function (DAX)](calculate-function-dax.md)

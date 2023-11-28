@@ -49,7 +49,7 @@ The following measure formula sums SalesAmount_USD and uses the ALLEXCEPT functi
 
 Because the formula uses ALLEXCEPT, whenever any column but CalendarYear from the table DateTime is used to slice a visualization, the formula will remove any slicer filters, providing a value equal to the sum of SalesAmount_USD. However, if the column CalendarYear is used to slice the visualization, the results are different. Because CalendarYear is specified as the argument to ALLEXCEPT, when the data is sliced on the year, a filter will be applied on years at the row level
   
-## See also
+## Related content
 
 [Filter functions](filter-functions-dax.md)  
 [ALL function](all-function-dax.md)  

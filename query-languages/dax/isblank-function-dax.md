@@ -49,6 +49,6 @@ Result,
 |2008|$24,542,444.68|$39,248,847.52|-37.47%|  
 |Grand Total|$102,554,625.71|||  
   
-## See also
+## Related content
 
 [Information functions](information-functions-dax.md)  

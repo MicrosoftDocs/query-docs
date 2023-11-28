@@ -34,7 +34,7 @@ If you know that someone was born in 1963, you might use the following formula t
 
 This formula uses the TODAY function as an argument for the YEAR function to obtain the current year, and then subtracts 1963, returning the person's age.  
   
-## See also
+## Related content
 
 [Date and time functions](date-and-time-functions-dax.md)  
 [NOW](now-function-dax.md)  

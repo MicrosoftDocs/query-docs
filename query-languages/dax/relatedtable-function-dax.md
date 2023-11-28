@@ -50,7 +50,7 @@ The following table shows the results:
   
 
   
-## See also
+## Related content
 
 [CALCULATETABLE](calculatetable-function-dax.md)  
 [Filter functions](filter-functions-dax.md)

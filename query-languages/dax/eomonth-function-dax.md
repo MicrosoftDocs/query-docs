@@ -45,7 +45,7 @@ The following expression returns May 31, 2008, because the **months** argument i
 = EOMONTH("March 3, 2008",1.5)  
 ```
   
-## See also
+## Related content
 
 [EDATE function](edate-function-dax.md)  
 [Date and time functions](date-and-time-functions-dax.md)  

@@ -41,6 +41,6 @@ The following three samples show the behavior of ISLOGICAL.
 = IF(ISLOGICAL(25), "Is Boolean type or Logical", "Is different type")  
 ```
   
-## See also
+## Related content
 
 [Information functions](information-functions-dax.md)  

@@ -56,7 +56,7 @@ INT(RAND()*100)
 
 ```
 
-## See also
+## Related content
 
 [Math and Trig functions](math-and-trig-functions-dax.md)  
 [Statistical functions](statistical-functions-dax.md)  

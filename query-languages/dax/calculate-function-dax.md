@@ -144,7 +144,7 @@ IF(
 
 In this example, row context is converted to the filter context. It's known as _context transition_. The [ALLEXCEPT](allexcept-function-dax.md) function removes filters from all **Customer** table columns except the **CustomerKey** column.
 
-## See also
+## Related content
 
 [Filter context](dax-overview.md#filter-context)  
 [Row context](dax-overview.md#row-context)  

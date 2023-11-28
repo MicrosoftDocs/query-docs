@@ -51,7 +51,7 @@ Using the above measure in a table with calendar year in the side and product ca
   
 In the above example, note that the rows Grand Total numbers do not add up, this happens because the same order might contain line items, in the same order, from different product categories.  
   
-## See also
+## Related content
 
 [COUNT function](count-function-dax.md)  
 [COUNTA function](counta-function-dax.md)  

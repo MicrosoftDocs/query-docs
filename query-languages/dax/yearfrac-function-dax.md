@@ -52,7 +52,7 @@ Use four-digit years whenever possible, to avoid getting unexpected results. Whe
   
 The second argument, **basis**, has also been omitted. Therefore, the year fraction is calculated according to the US (NASD) 30/360 standard.  
   
-## See also
+## Related content
 
 [Date and time functions](date-and-time-functions-dax.md)  
 [WEEKNUM function](weeknum-function-dax.md)  

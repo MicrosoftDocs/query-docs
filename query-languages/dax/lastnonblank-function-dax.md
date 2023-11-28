@@ -36,7 +36,7 @@ A table containing a single column and single row with the computed last value.
   
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
-## See also
+## Related content
 
 [FIRSTNONBLANK function](firstnonblank-function-dax.md)  
 [Statistical functions](statistical-functions-dax.md)  

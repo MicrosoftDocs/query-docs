@@ -46,7 +46,7 @@ Either **value_if_true**, **value_if_false**, or BLANK.
 
 See [IF Examples](if-function-dax.md#examples).
 
-## See also
+## Related content
 
 [IF function](if-function-dax.md)  
 [Logical functions](logical-functions-dax.md)  

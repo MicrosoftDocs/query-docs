@@ -44,7 +44,7 @@ The following example returns 45, which is the number of minutes in the time 1:4
 = MINUTE("March 23, 2008 1:45 PM")  
 ```
   
-## See also
+## Related content
 
 [Date and time functions](date-and-time-functions-dax.md)  
 [HOUR function](hour-function-dax.md)  

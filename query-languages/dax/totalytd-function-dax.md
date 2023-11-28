@@ -54,7 +54,7 @@ The following sample formula creates a measure that calculates the 'year running
 = TOTALYTD(SUM(InternetSales_USD[SalesAmount_USD]),DateTime[DateKey])  
 ```
   
-## See also
+## Related content
 
 [ALL](all-function-dax.md)  
 [CALCULATE](calculate-function-dax.md)  

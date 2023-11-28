@@ -43,7 +43,7 @@ Introduces a statement with one or more entity definitions that can be applied t
 
 - To learn more about how a DEFINE statement is used, see [DAX queries](dax-queries.md).
 
-## See also
+## Related content
 
 [EVALUATE](evaluate-statement-dax.md)  
 [VAR](var-dax.md)  

@@ -37,7 +37,7 @@ The following example returns all rows in the `Reseller` table that have any kin
 = COUNTA(Reseller[Phone])  
 ```
   
-## See also
+## Related content
 
 [COUNT function](count-function-dax.md)  
 [COUNTAX function](countax-function-dax.md)  
