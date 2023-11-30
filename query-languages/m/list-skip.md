@@ -15,7 +15,7 @@ List.Skip(<b>list</b> as list, optional <b>countOrCondition</b> as any) as list
 Returns a list that skips the first element of list `list`. If `list` is an empty list an empty list is returned. This function takes an optional parameter, `countOrCondition`, to support skipping multiple values as listed below.
 
 * If a number is specified, up to that many items are skipped.
-* If a condition is specified, the returned list begins with the first element in `list` that meets the criteria. Once an item fails the condition, no further items are considered.
+* If a condition is specified, the returned list begins with the first element in `list` that doesn't meet the criteria. Once an item fails the condition, no further items are considered.
 * If this parameter is null, the default behavior is observed.
 
 ## Example 1
