@@ -197,7 +197,7 @@ Returns the following table,
 ### Example with multiple subtotals
   
 ```dax
-SUMMARIZECOUMNS ( 
+SUMMARIZECOLUMNS ( 
     Regions[State], ROLLUPADDISSUBTOTAL ( Sales[CustomerId], "IsCustomerSubtotal" ), 
     ROLLUPADDISSUBTOTAL ( Sales[Date], "IsDateSubtotal"), "Total Qty", SUM( Sales[Qty] ) 
 )
