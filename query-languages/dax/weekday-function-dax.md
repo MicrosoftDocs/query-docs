@@ -39,7 +39,7 @@ The following example gets the date from the [HireDate] column, adds 1, and disp
 = WEEKDAY([HireDate]+1)  
 ```
   
-## See also
+## Related content
 
 [Date and time functions](date-and-time-functions-dax.md)  
 [WEEKNUM function](weeknum-function-dax.md)  

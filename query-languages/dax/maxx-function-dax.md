@@ -55,7 +55,7 @@ The following formula first filters the InternetSales table by using a FILTER ex
 = MAXX(FILTER(InternetSales,[SalesTerritoryCode]="5"), InternetSales[TaxAmt]+ InternetSales[Freight])  
 ```
   
-## See also
+## Related content
 
 [MAX function](max-function-dax.md)  
 [MAXA function](maxa-function-dax.md)  

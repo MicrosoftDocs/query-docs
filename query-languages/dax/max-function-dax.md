@@ -49,7 +49,7 @@ The following example returns the largest value between the result of two expres
 = Max([TotalSales], [TotalPurchases])
 ```
 
-## See also
+## Related content
 
 [MAXA function](maxa-function-dax.md)  
 [MAXX function](maxx-function-dax.md)  

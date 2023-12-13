@@ -40,6 +40,6 @@ The following computes the geometric mean of the Return column in the Investment
 = GEOMEAN( Investment[Return] )  
 ```
   
-## See also
+## Related content
 
 [GEOMEANX function](geomeanx-function-dax.md)  

@@ -34,6 +34,6 @@ The following example adds all the numbers that are contained in the column, Amt
 = SUM(Sales[Amt])  
 ```
   
-## See also
+## Related content
 
 [SUMX](sumx-function-dax.md)

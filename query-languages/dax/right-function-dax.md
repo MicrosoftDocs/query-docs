@@ -47,7 +47,7 @@ The following formula returns a variable number of digits from the product code 
 = RIGHT('New Products'[ProductCode],[MyCount])  
 ```
   
-## See also
+## Related content
 
 [Text functions](text-functions-dax.md)  
 [LEFT](left-function-dax.md)  

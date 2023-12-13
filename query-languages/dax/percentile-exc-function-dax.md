@@ -39,6 +39,6 @@ The k-th percentile of values in a range, where k is in the range 0..1, exclusiv
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-## See also
+## Related content
 
 [PERCENTILEX.EXC](percentilex-exc-function-dax.md)  

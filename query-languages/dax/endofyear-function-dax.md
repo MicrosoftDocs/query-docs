@@ -44,7 +44,7 @@ The following sample formula creates a measure that returns the end of the fisca
 = ENDOFYEAR(DateTime[DateKey],"06/30/2004")  
 ```
   
-## See also
+## Related content
 
 [Date and time functions](date-and-time-functions-dax.md)  
 [Time intelligence functions](time-intelligence-functions-dax.md)  

@@ -34,6 +34,6 @@ The following formula,
 = SQRT(25)  
 ```
   
-## See also
+## Related content
 
 [Math and Trig functions](math-and-trig-functions-dax.md)  

@@ -34,6 +34,6 @@ The following formula gets each row in the column, [ProductCode], and converts t
 = LOWER('New Products'[ProductCode])  
 ```
   
-## See also
+## Related content
 
 [Text functions](text-functions-dax.md)  

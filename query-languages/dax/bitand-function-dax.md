@@ -36,7 +36,7 @@ EVALUATE { BITAND(13, 11) }
 
 Returns 9.
 
-## See also
+## Related content
 
 [BITLSHIFT](bitlshift-function-dax.md)  
 [BITRSHIFT](bitrshift-function-dax.md)  

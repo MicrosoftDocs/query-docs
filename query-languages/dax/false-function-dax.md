@@ -39,7 +39,7 @@ The following table shows the results when the example formula is used with 'Pro
 ||FALSE|FALSE|FALSE|FALSE|FALSE|FALSE|  
 |Grand Total|TRUE|TRUE|TRUE|TRUE|FALSE|TRUE|  
 
-## See also
+## Related content
 
 [TRUE function](true-function-dax.md)  
 [NOT function](not-function-dax.md)  

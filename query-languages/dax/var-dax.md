@@ -76,7 +76,7 @@ VAR SalesLastYear =
 
 By using a variable, you can get the same outcome, but in a more readable way. And because the result of the expression is stored in the variable, the measure's performance can be significantly improved because it doesn't have to be recalculated each time it's used.
 
-## See also
+## Related content
 
 [Use variables to improve your DAX formulas](best-practices/dax-variables.md)  
 [DAX queries](dax-queries.md)

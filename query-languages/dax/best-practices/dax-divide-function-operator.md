@@ -51,7 +51,7 @@ In the case that the denominator is a constant value, we recommend that you use 
 
 Carefully consider whether the DIVIDE function should return an alternate value. For measures, it's usually a better design that they return BLANK. Returning BLANK is better because report visuals—by default—eliminate groupings when summarizations are BLANK. It allows the visual to focus attention on groups where data exists. When necessary, in Power BI, you can configure the visual to display all groups (that return values or BLANK) within the filter context by enabling the [Show items with no data](/power-bi/create-reports/desktop-show-items-no-data) option.
 
-## See also
+## Related content
 
 - Learning path: [Use DAX in Power BI Desktop](/training/paths/dax-power-bi/)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

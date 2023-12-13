@@ -53,7 +53,7 @@ Returns:
 }
 ```
 
-## See also
+## Related content
 
 [TOCSV](tocsv-function-dax.md)  
 [EVALUATEANDLOG](evaluateandlog-function-dax.md)  

@@ -48,7 +48,7 @@ The following table shows the expected results:
 |5|120|  
 |170|7.257415615308E+306|  
   
-## See also
+## Related content
 
 [Math and Trig functions](math-and-trig-functions-dax.md)  
 [TRUNC function](trunc-function-dax.md)  

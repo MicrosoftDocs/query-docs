@@ -45,7 +45,7 @@ The following example returns the date three months after the order date, which 
 = EDATE([TransactionDate],3)  
 ```
   
-## See also
+## Related content
 
 [EOMONTH function](eomonth-function-dax.md)  
 [Date and time functions](date-and-time-functions-dax.md)  

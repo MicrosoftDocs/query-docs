@@ -58,7 +58,7 @@ The following table shows a portion of the expected results:
 |2|70|  
 |3|394|  
   
-## See also
+## Related content
 
 [COUNT function](count-function-dax.md)  
 [COUNTA function](counta-function-dax.md)  

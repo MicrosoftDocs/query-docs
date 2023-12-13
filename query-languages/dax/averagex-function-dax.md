@@ -43,7 +43,7 @@ The following example calculates the average freight and tax on each order in th
 
 If you use multiple operations in the expression used as the second argument, you must use parentheses to control the order of calculations. For more information, see [DAX Syntax Reference](dax-syntax-reference.md).  
   
-## See also
+## Related content
 
 [AVERAGE function](average-function-dax.md)  
 [AVERAGEA function](averagea-function-dax.md)  

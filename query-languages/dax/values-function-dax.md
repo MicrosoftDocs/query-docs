@@ -69,7 +69,7 @@ Returns
 |Clothing|7,461|  
 |Grand Total|27,659|  
 
-## See also
+## Related content
 
 [FILTER function](filter-function-dax.md)  
 [COUNTROWS function](countrows-function-dax.md)  

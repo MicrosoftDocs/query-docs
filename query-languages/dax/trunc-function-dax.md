@@ -43,7 +43,7 @@ The following formula returns -8, the integer part of -8.9.
 = TRUNC(-8.9)  
 ```
   
-## See also
+## Related content
 
 [Math and Trig functions](math-and-trig-functions-dax.md)  
 [ROUND](round-function-dax.md)  

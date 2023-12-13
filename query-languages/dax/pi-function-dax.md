@@ -28,6 +28,6 @@ The following formula calculates the area of a circle given the radius in the co
 = PI()*([Radius]*2)  
 ```
   
-## See also
+## Related content
 
 [Math and Trig functions](math-and-trig-functions-dax.md)  

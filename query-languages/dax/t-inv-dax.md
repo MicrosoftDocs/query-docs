@@ -39,7 +39,7 @@ Returns
 |---------|
 |0.816496580927726   |
 
-## See also  
+## Related content  
 
 [T.INV.2T](t-inv-2t-dax.md)  
 [T.DIST](t-dist-dax.md)  

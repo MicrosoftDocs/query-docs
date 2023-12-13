@@ -63,6 +63,6 @@ Returns:
 |USA|CA|5|500|  
 |USA|WA|10|900|  
 
-## See also
+## Related content
 
 [ISAFTER](isafter-function-dax.md)

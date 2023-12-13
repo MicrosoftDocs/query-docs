@@ -65,7 +65,7 @@ CALCULATE(
 
 Consider that the earliest date stored in the **Date** table is July 1, 2017. So, when a report filters the measure by the month of June 2020, the DATESBETWEEN function returns a date range from July 1, 2017 until June 30, 2020.
 
-## See also
+## Related content
 
 - [Time intelligence functions (DAX)](time-intelligence-functions-dax.md)
 - [Date and time functions (DAX)](date-and-time-functions-dax.md)

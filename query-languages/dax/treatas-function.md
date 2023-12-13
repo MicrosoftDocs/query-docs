@@ -44,7 +44,7 @@ TREATAS(VALUES(DimProduct1[ProductCategory]), DimProduct2[ProductCategory])
 )
 ```
 
-## See also
+## Related content
 
 [INTERSECT](intersect-function-dax.md)  
 [FILTER](filter-function-dax.md)  

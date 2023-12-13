@@ -45,6 +45,6 @@ The following computes the median age of customers who live in the USA.
 = MEDIANX( FILTER(Customers, RELATED( Geography[Country]="USA" ) ), Customers[Age] )  
 ```
   
-## See also
+## Related content
 
 [MEDIAN function](median-function-dax.md)  

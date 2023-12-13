@@ -41,6 +41,6 @@ The following three samples show the behavior of ISNUMBER.
 = IF(ISNUMBER("123"), "Is number", "Is Not number")  
 ```
   
-## See also
+## Related content
 
 [Information functions](information-functions-dax.md)  

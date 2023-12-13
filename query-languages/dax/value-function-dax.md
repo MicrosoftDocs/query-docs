@@ -38,6 +38,6 @@ The following formula converts the typed string, "3", into the numeric value 3.
 = VALUE("3")  
 ```
   
-## See also
+## Related content
 
 [Text functions](text-functions-dax.md)  

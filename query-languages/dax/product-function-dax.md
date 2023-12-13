@@ -40,6 +40,6 @@ The following computes the product of the AdjustedRates column in an Annuity tab
 = PRODUCT( Annuity[AdjustedRates] )  
 ```
   
-## See also
+## Related content
 
 [PRODUCTX](productx-function-dax.md)  

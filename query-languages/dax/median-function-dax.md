@@ -40,6 +40,6 @@ The following computes the median of a column named Age in a table named Custome
 = MEDIAN( Customers[Age] )  
 ```
   
-## See also
+## Related content
 
 [MEDIANX function](medianx-function-dax.md)  

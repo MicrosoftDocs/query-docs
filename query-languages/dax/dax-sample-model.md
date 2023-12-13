@@ -37,7 +37,7 @@ The model has seven tables:
 
 Download the Power BI Desktop sample model file [here](https://aka.ms/dax-docs-sample-file).
 
-## See also
+## Related content
 
 - Learning path: [Use DAX in Power BI Desktop](/training/paths/dax-power-bi/)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

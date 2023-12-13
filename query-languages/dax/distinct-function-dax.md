@@ -57,7 +57,7 @@ You cannot paste the list of values that DISTINCT returns directly into a column
   
 Also, note that the results are not additive. That is to say, the total number of unique customers in *2007* is not the sum of unique customers of *Accessories*, *Bikes* and *Clothing* for that year. The reason is that a customer can be counted in multiple groups.  
   
-## See also
+## Related content
 
 [Filter functions](filter-functions-dax.md)  
 [FILTER function](filter-function-dax.md)  

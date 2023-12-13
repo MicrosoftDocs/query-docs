@@ -38,7 +38,7 @@ The following formula calculates e raised to the power of the number contained i
 = EXP([Power])  
 ```
   
-## See also
+## Related content
 
 [Math and Trig functions](math-and-trig-functions-dax.md)  
 [LN function](ln-function-dax.md)  

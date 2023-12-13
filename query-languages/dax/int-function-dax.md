@@ -34,7 +34,7 @@ The following expression rounds the value to 1. If you use the ROUND function, t
 = INT(1.5)  
 ```
   
-## See also
+## Related content
 
 [Math and Trig functions](math-and-trig-functions-dax.md)  
 [ROUND function](round-function-dax.md)  

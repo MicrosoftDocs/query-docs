@@ -114,7 +114,7 @@ The following steps describe the method of calculation in more detail.
   
 The **EARLIER** function will always get the value of the column prior to the current table operation. If you need to get a value from the loop before that, set the second argument to 2.  
   
-## See also
+## Related content
 
 [EARLIEST function](earliest-function-dax.md)  
 [Filter functions](filter-functions-dax.md)  

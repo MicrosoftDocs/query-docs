@@ -44,6 +44,6 @@ You can verify that the formula produces the correct result by checking the leng
 = LEN([Calculated Column 1])  
 ```
   
-## See also
+## Related content
 
 [Text functions](text-functions-dax.md)  

@@ -120,7 +120,7 @@ Returns the following table:
 |217     |  11      |  6683.09      |   7767.78     |
 |217     |  12      |  7767.78      |   7767.78     |
 
-## See also
+## Related content
 
 [OFFSET](offset-function-dax.md)  
 [ORDERBY](orderby-function-dax.md)  

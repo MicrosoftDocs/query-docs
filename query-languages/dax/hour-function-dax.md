@@ -44,7 +44,7 @@ The following example returns 15, meaning the hour corresponding to 3 PM in a 24
 = HOUR("March 3, 2008 3:00 PM")  
 ```
   
-## See also
+## Related content
 
 [Date and time functions](date-and-time-functions-dax.md)  
 [MINUTE function](minute-function-dax.md)  

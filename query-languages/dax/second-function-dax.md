@@ -48,7 +48,7 @@ The following formula returns 3, which is the number of seconds in the time repr
 = SECOND("March 3, 2008 12:00:03")  
 ```
   
-## See also
+## Related content
 
 [Date and time functions](date-and-time-functions-dax.md)  
 [HOUR](hour-function-dax.md)  
