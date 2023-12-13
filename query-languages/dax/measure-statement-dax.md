@@ -38,7 +38,7 @@ The calculated result of the measure expression.
 
 - To learn more about how MEASURE statements are used, see [DAX queries](dax-queries.md).
 
-## See also
+## Related content
 
 [DEFINE](define-statement-dax.md)  
 [EVALUATE](evaluate-statement-dax.md)  

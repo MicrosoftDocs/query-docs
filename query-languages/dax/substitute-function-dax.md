@@ -41,7 +41,7 @@ The following formula creates a copy of the column [Product Code] that substitut
 = SUBSTITUTE([Product Code], "NW", "PA")  
 ```
   
-## See also
+## Related content
 
 [Text functions](text-functions-dax.md)  
 [REPLACE](replace-function-dax.md)  

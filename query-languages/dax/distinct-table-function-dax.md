@@ -41,7 +41,7 @@ Returns table:
 |1    |     A    |
 |2    |     B    |
 
-## See also
+## Related content
 
 [Filter functions](filter-functions-dax.md)  
 [DISTINCT (column)](distinct-function-dax.md)  

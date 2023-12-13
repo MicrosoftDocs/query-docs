@@ -41,6 +41,6 @@ The following computes the geometric mean of the ReturnPct column in the Investm
 = GEOMEANX( Investments, Investments[ReturnPct] + 1 )  
 ```
   
-## See also
+## Related content
 
 [GEOMEAN function](geomean-function-dax.md)  

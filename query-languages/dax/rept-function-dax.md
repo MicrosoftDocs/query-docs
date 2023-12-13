@@ -53,6 +53,6 @@ The following example returns the string in the column, [MyText], repeated for t
 |Number|0||  
 |85|3|858585|  
   
-## See also
+## Related content
 
 [Text functions](text-functions-dax.md)  

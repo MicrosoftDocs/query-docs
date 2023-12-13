@@ -31,6 +31,6 @@ The following example returns 25.
 = POWER(5,2)  
 ```
   
-## See also
+## Related content
 
 [Math and Trig functions](math-and-trig-functions-dax.md)  

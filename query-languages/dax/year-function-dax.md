@@ -50,7 +50,7 @@ The following example returns the year for today's date.
 = YEAR(TODAY())  
 ```  
   
-## See also
+## Related content
 
 [Date and time functions](date-and-time-functions-dax.md)  
 [HOUR function](hour-function-dax.md)  

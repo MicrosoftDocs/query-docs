@@ -45,7 +45,7 @@ The following sample formula creates a measure that calculates the 'month runnin
 = TOTALMTD(SUM(InternetSales_USD[SalesAmount_USD]),DateTime[DateKey])  
 ```
   
-## See also
+## Related content
 
 [ALL](all-function-dax.md)  
 [CALCULATE](calculate-function-dax.md)  

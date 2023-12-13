@@ -36,7 +36,7 @@ Now create a new calculated column, **Calculated Column2**, and type the followi
 
 For each row in **Calculated Column1**, the values "true" and "false" are interpreted as the logical values TRUE or FALSE, and the NOT function returns the logical opposite of that value.  
   
-## See also
+## Related content
 
 [TRUE function](true-function-dax.md)  
 [FALSE function](false-function-dax.md)  

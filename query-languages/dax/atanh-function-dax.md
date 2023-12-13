@@ -34,6 +34,6 @@ Returns the inverse hyperbolic tangent of a number.
 |= ATANH(-0.1)||-0.100335348|  
 ||||  
 
-## See also
+## Related content
 
 [ATAN function](atan-function-dax.md)  

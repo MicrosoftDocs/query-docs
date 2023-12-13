@@ -67,7 +67,7 @@ When **num_digits** is less than zero, the number of places to the left of the d
 |1.34|10|  
 |345.01|350|  
   
-## See also
+## Related content
 
 [Math and Trig functions](math-and-trig-functions-dax.md)  
 [ROUND](round-function-dax.md)  

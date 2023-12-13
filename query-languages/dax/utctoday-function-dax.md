@@ -36,7 +36,7 @@ Returns:
 |---------|
 |2/2/2018    |
 
-## See also
+## Related content
 
 [NOW function](now-function-dax.md)  
 [UTCNOW function](utcnow-function-dax.md)  

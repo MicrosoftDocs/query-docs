@@ -95,7 +95,7 @@ RETURN
     ) + 1
 ```
 
-## See also
+## Related content
 
 - [VAR](../var-dax.md) DAX article
 - Learning path: [Use DAX in Power BI Desktop](/training/paths/dax-power-bi/)

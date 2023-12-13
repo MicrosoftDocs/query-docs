@@ -45,6 +45,6 @@ MID('Reseller'[ResellerName],1,5))
 
 Returns the same result as `LEFT([ResellerName],5)`. Both expressions return the first 5 letters of column, `[ResellerName]`.
   
-## See also
+## Related content
 
 [Text functions](text-functions-dax.md)  

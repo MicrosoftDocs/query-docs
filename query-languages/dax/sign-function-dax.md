@@ -36,6 +36,6 @@ The following formula returns the sign of the result of the expression that calc
 = SIGN( ([Sale Price] - [Cost]) )  
 ```
   
-## See also
+## Related content
 
 [Math and Trig functions](math-and-trig-functions-dax.md)  

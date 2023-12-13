@@ -37,6 +37,6 @@ A table which includes only rows for which the values in the common columns spec
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-## See also
+## Related content
 
 [NATURALLEFTOUTERJOIN](naturalleftouterjoin-function-dax.md)

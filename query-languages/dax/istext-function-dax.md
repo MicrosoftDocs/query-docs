@@ -44,6 +44,6 @@ The following examples show the behavior of the ISTEXT function.
 = IF(ISTEXT(BLANK()), "Is Text", "Is Non-Text")  
 ```
   
-## See also
+## Related content
 
 [Information functions](information-functions-dax.md)  

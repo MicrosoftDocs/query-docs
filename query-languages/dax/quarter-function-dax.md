@@ -65,7 +65,7 @@ Returns:
 |3/31/2008    |  1  |
 |  4/1/2008  |  2   |
 
-## See also
+## Related content
 
 [YEAR](year-function-dax.md)  
 [MONTH](month-function-dax.md)  

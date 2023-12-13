@@ -38,7 +38,7 @@ There are three reasons why the second measure definition is better:
 
 When it's your intention to count table rows, it's recommended you always use the COUNTROWS function.
 
-## See also
+## Related content
 
 - Learning path: [Use DAX in Power BI Desktop](/training/paths/dax-power-bi/)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

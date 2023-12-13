@@ -36,7 +36,7 @@ EVALUATE { BITXOR(9, 10) }
 
 Returns 3.
 
-## See also
+## Related content
 
 [BITOR](bitor-function-dax.md)  
 [BITAND](bitand-function-dax.md)  

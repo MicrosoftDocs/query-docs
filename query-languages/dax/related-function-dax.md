@@ -86,7 +86,7 @@ The following shows what that you might get if you used this measure in a report
 |2008|$228,159.45|$5,386,558.19|$102,675.04|$5,717,392.68|  
 |Grand Total|$384,639.63|$16,107,890.23|$172,817.81|$16,665,347.67|  
   
-## See also
+## Related content
 
 [RELATEDTABLE](relatedtable-function-dax.md)  
 [Filter functions](filter-functions-dax.md)  

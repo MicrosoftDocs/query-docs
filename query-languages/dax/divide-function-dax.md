@@ -54,7 +54,7 @@ The following example returns 1.
 = DIVIDE(5,0,1)  
 ```
   
-## See also
+## Related content
 
 [QUOTIENT function](quotient-function-dax.md)  
 [Math and Trig functions](math-and-trig-functions-dax.md)  

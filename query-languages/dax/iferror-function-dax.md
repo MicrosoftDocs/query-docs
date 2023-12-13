@@ -47,6 +47,6 @@ The following example returns 9999 if the expression 25/0 evaluates to an error.
 = IFERROR(25/0,9999)  
 ```
   
-## See also
+## Related content
 
 [Logical functions](logical-functions-dax.md)  

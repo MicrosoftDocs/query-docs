@@ -67,7 +67,7 @@ Returns,
 |Helmets and Cycles     |Value Added Reseller|         |
 |Jumbo Bikes     |Specialty Bike Shop|    7     |
 
-## See also
+## Related content
 
 [SEARCH](search-function-dax.md)  
 [Text functions](text-functions-dax.md)  

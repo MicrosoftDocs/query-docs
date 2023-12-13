@@ -45,7 +45,7 @@ The following sample formula creates a measure that calculates the 'Month Start 
 = OPENINGBALANCEMONTH(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])  
 ```
   
-## See also
+## Related content
 
 [OPENINGBALANCEYEAR function](openingbalanceyear-function-dax.md)  
 [OPENINGBALANCEQUARTER function](openingbalancequarter-function-dax.md)  

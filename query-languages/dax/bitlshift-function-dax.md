@@ -72,7 +72,7 @@ SUMMARIZECOLUMNS(
 
 Shifts left each sales amount with 3 bits and returns the bit-shifted sales amount.
 
-## See also
+## Related content
 
 [BITRSHIFT](bitrshift-function-dax.md)  
 [BITAND](bitand-function-dax.md)  

@@ -39,7 +39,7 @@ The following table shows the results when the example formula is used in a repo
 ||FALSE|FALSE|FALSE|FALSE|FALSE|FALSE|  
 |Grand Total|TRUE|TRUE|TRUE|TRUE|FALSE|TRUE|  
   
-## See also
+## Related content
 
 [FALSE](false-function-dax.md)  
 [NOT](not-function-dax.md)  

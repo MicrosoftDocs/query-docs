@@ -52,7 +52,7 @@ The following example returns the largest value from a column that contains date
 = MAXA([TransactionDate])  
 ```
   
-## See also
+## Related content
 
 [MAX function](max-function-dax.md)  
 [MAXX function](maxx-function-dax.md)  

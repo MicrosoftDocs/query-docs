@@ -42,7 +42,7 @@ Returns
 |0.908788780274132     |
 
 
-## See also  
+## Related content  
 
 [NORM.S.DIST function](norm-s-dist-dax.md)  
 [NORM.INV function](norm-inv-dax.md)  

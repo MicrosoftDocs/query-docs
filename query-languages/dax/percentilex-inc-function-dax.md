@@ -38,6 +38,6 @@ The percentile number of an expression evaluated for each row in a table.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-## See also
+## Related content
 
 [PERCENTILE.INC](percentile-inc-function-dax.md)  

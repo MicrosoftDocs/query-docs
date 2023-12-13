@@ -51,7 +51,7 @@ Returns:
 10,10,United Kingdom,United Kingdom,Europe
 ```
 
-## See also
+## Related content
 
 [TOJSON](tojson-function-dax.md)  
 [EVALUATEANDLOG](evaluateandlog-function-dax.md)  

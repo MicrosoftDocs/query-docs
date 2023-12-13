@@ -128,7 +128,7 @@ The formula is constructed as follows:
   
 1. For the denominator, you use the function, ALL(Column), to remove the filter on ProductCategoryName and calculate the sum over the remaining rows on the ResellerSales_USD table, after applying the existing context filters from the row labels. The net effect is that, for the denominator, the sum is calculated over the selected Year (the implied context filter) and for all values of ProductCategoryName.  
   
-## See also
+## Related content
 
 [Filter functions](filter-functions-dax.md)  
 [ALL function](all-function-dax.md)  

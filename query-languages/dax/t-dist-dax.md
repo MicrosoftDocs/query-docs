@@ -40,7 +40,7 @@ Returns,
 |---------|
 |0.994695326367377     |
 
-## See also  
+## Related content  
 
 [T.DIST.2T](t-dist-2t-dax.md)  
 [T.DIST.RT](t-dist-rt-dax.md)  

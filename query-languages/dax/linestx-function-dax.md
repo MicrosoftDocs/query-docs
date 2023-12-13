@@ -115,7 +115,7 @@ For a given customer, this model predicts total sales by the following formula:
 Total Sales = Slope1 * Age + Slope2 * NumOfChildren + Intercept
 ```
 
-## See also
+## Related content
 
 [LINEST](linest-function-dax.md)  
 [Statistical functions](statistical-functions-dax.md)  

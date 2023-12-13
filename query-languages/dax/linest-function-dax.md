@@ -109,7 +109,7 @@ For a given customer, this model predicts total sales by the following formula (
 TotalSalesAmount = Slope1 * YearlyIncome + Slope2 * TotalChildren + Slope3 * BirthDate + Intercept
 ```
 
-## See also
+## Related content
 
 [LINESTX](linestx-function-dax.md)  
 [Statistical functions](statistical-functions-dax.md)  

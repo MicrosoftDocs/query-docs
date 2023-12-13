@@ -36,6 +36,6 @@ A date (**datetime**).
 = TIMEVALUE("20:45:30")  
 ```
   
-## See also
+## Related content
 
 [Date and time functions](date-and-time-functions-dax.md)  

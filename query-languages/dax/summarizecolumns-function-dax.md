@@ -254,6 +254,6 @@ Still grouped by City and State, but rolled together when reporting a subtotal r
 ||C|FALSE|3||TRUE|  
 |||TRUE|11||TRUE|  
   
-## See also
+## Related content
 
 [SUMMARIZE](summarize-function-dax.md)

@@ -44,7 +44,7 @@ IF(
 > [!TIP]
 > It's possible to pass an _alternate result_ value into the SELECTEDVALUE function. The alternate result value is returned when either no filters—or multiple filters—are applied to the column.
 
-## See also
+## Related content
 
 - Learning path: [Use DAX in Power BI Desktop](/training/paths/dax-power-bi/)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -74,7 +74,7 @@ Therefore, the FILTER function should only be used when necessary. You can use i
 - Other columns
 - Using the [OR](../or-function-dax.md) DAX function, or the OR logical operator (||)
 
-## See also
+## Related content
 
 - [Filter functions (DAX)](../filter-function-dax.md)
 - Learning path: [Use DAX in Power BI Desktop](/training/paths/dax-power-bi/)

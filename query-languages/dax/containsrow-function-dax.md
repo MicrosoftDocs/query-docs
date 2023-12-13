@@ -133,7 +133,7 @@ Silver  |
 Silver\Black  |
 White |
 
-## See also
+## Related content
 
 [IN operator](dax-operator-reference.md#logical-operators)  
 [DAX queries](dax-queries.md)

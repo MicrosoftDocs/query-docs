@@ -80,7 +80,7 @@ Returns,
 |Bikes     |   Road Bikes      |   FALSE      |    FALSE     |    14,520,584.04     |     51.28    |
 |Bikes     |   Touring Bikes     |   FALSE     |    FALSE     |     3,844,801.05    |     13.58    |
 
-## See also
+## Related content
 
 [SUMMARIZECOLUMNS function](summarizecolumns-function-dax.md)  
 [CALCULATE function](calculate-function-dax.md)

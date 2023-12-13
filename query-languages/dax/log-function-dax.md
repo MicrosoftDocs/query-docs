@@ -39,7 +39,7 @@ The following formulas return the same result, 2.
 = LOG10(100)  
 ```
   
-## See also
+## Related content
 
 [Math and Trig functions](math-and-trig-functions-dax.md)  
 [EXP function](exp-function-dax.md)  
