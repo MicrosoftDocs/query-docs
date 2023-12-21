@@ -93,14 +93,14 @@ All expression ignored,
 ```dax
 SUMMARIZECOLUMNS( 
     Sales[CustomerId], "Blank", 
-    IGNORE( Blank() ), "BlankIfTotalQtyIsNot5", 
+    IGNORE( BLANK() ), "BlankIfTotalQtyIsNot5", 
     IGNORE( IF( SUM( Sales[Qty] )=5, 5 ) ) 
 )
 ```
   
 Even though both expressions return blank for some rows, they're included since there are no unignored expressions which return blank.  
   
-|CustomerId|TotalQty|BlankIfTotalQtyIsNot3|  
+|CustomerId|Blank|BlankIfTotalQtyIsNot5|  
 |--------------|------------|-------------------------|  
 |A||5|  
 |B|||  
@@ -197,7 +197,7 @@ Returns the following table,
 ### Example with multiple subtotals
   
 ```dax
-SUMMARIZECOUMNS ( 
+SUMMARIZECOLUMNS ( 
     Regions[State], ROLLUPADDISSUBTOTAL ( Sales[CustomerId], "IsCustomerSubtotal" ), 
     ROLLUPADDISSUBTOTAL ( Sales[Date], "IsDateSubtotal"), "Total Qty", SUM( Sales[Qty] ) 
 )
