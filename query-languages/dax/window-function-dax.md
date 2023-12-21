@@ -10,7 +10,7 @@ Returns multiple rows which are positioned within the given interval.
 ## Syntax  
   
 ```dax
-WINDOW ( from[, from_type], to[, to_type][, <relation>][, <orderBy>][, <blanks>][, <partitionBy>][, <matchBy>] )
+WINDOW ( from[, from_type], to[, to_type][, <relation>][, <orderBy>][, <blanks>][, <partitionBy>][, <matchBy>][, <reset>] )
 ```
   
 ### Parameters  
@@ -26,6 +26,7 @@ WINDOW ( from[, from_type], to[, to_type][, <relation>][, <orderBy>][, <blanks>]
 |blanks|(Optional) An enumeration that defines how to handle blank values when sorting. </br>This parameter is reserved for future use. </br>Currently, the only supported value is DEFAULT, where the behavior for numerical values is blank values are ordered between zero and negative values. The behavior for strings is blank values are ordered before all strings, including empty strings.|
 |partitionBy|(Optional) A PARTITIONBY() clause containing the columns that define how \<relation> is partitioned. If omitted, \<relation> is treated as a single partition.|
 |matchBy|(Optional) A MATCHBY() clause containing the columns that define how to match data and identify the current row. |  
+|reset|(Optional) Indicates if the calculation resets, and at which level of the visual shape's column hierarchy. Accepted values are: NONE, LOWESTPARENT, HIGHESTPARENT, or an integer. The behavior depends on the integer sign: </br> - If zero or omitted, the calculation does not reset. Equivalent to NONE. </br> - If positive, the integer identifies the column starting from the highest, independent of grain. HIGHESTPARENT is equivalent to 1. </br> - If negative, the integer identifies the column starting from the lowest, relative to the current grain. LOWESTPARENT is equivalent to -1. |
 
 ## Return value
 
@@ -58,6 +59,8 @@ An empty table is returned if:
 If WINDOW is used within a calculated column defined on the same table as \<relation>, and \<orderBy> is omitted, an error is returned.
 
 If the beginning of the window turns out be before the first row, then it’s set to the first row. Similarly, if the end of the window is after the last row of the partition, then it's set to the last row.
+
+\<reset> can be used in Visual Calculations only, and cannot be used in combination with \<orderBy> or \<partitionBy>. If \<reset> is present, \<relation> must either be omitted or be a visual shape's axis.
 
 ## Example 1
 
@@ -140,6 +143,36 @@ Returns the running sum for Total Sales by Month Number Of Year, restarting for 
 | FY2020 | 10                   | $3,542,150   | $41,875,184  |
 | FY2020 | 11                   | $5,151,897   | $47,027,081  |
 | FY2020 | 12                   | $4,851,194   | $51,878,275  |
+
+## Example 3
+
+The following Visual Calculation DAX query:
+
+```dax
+DEFINE
+VAR _Core = SUMMARIZECOLUMNS(
+	ROLLUPADDISSUBTOTAL(
+		'DimDate'[Year], "IsYearTotal",
+		'DimDate'[Quarter], "IsQuarterTotal",
+		'DimDate'[MonthNumberOfYear], "IsMonthTotal"
+	),
+	"SumSalesAmount", CALCULATE(SUM('FactInternetSales'[SalesAmount]))
+)
+TABLE t = _Core
+	WITH VISUAL SHAPE
+	AXIS ROWS
+		GROUP [Year] TOTAL [IsYearTotal]
+		GROUP [Quarter] TOTAL [IsQuarterTotal]
+		GROUP [MonthNumberOfYear] TOTAL [IsMonthTotal]
+		ORDER BY [Year], [Quarter], [MonthNumberOfYear]
+	DENSIFY "isDensified"
+COLUMN t[TotalSalesRunningSumByYear] = SUMX(WINDOW(0, ABS, 0, REL, ROWS, HIGHESTPARENT), [SumSalesAmount])
+COLUMN t[TotalSalesRunningSumByQuarter] = SUMX(WINDOW(0, ABS, 0, REL, , -1), [SumSalesAmount])
+EVALUATE t
+```
+
+Returns a table with the cumulative total sales by month, calculated along each year and along each quarter.
+In the definition of the TotalSalesRunningSumByYear column, the values 1 and -2 could be used instead of HIGHESTPARENT, with the same results.
 
 ## Related content
 

@@ -10,7 +10,7 @@ Returns a row at an absolute position, specified by the position parameter, with
 ## Syntax  
   
 ```dax
-INDEX(<position>[, <relation>][, <orderBy>][, <blanks>][, <partitionBy>][, <matchBy>])
+INDEX(<position>[, <relation>][, <orderBy>][, <blanks>][, <partitionBy>][, <matchBy>][, <reset>] )
 ```
   
 ### Parameters  
@@ -23,6 +23,7 @@ INDEX(<position>[, <relation>][, <orderBy>][, <blanks>][, <partitionBy>][, <matc
 |blanks|(Optional) An enumeration that defines how to handle blank values when sorting. </br>This parameter is reserved for future use. </br>Currently, the only supported value is DEFAULT, where the behavior for numerical values is blank values are ordered between zero and negative values. The behavior for strings is blank values are ordered before all strings, including empty strings.|
 |partitionBy|(Optional) A PARTITIONBY() clause containing the columns that define how \<relation> is partitioned. </br> If omitted, \<relation> is treated as a single partition. |
 |matchBy|(Optional) A MATCHBY() clause containing the columns that define how to match data and identify the current row. |  
+|reset|(Optional) Indicates if the calculation resets, and at which level of the visual shape's column hierarchy. Accepted values are: NONE, LOWESTPARENT, HIGHESTPARENT, or an integer. The behavior depends on the integer sign: </br> - If zero or omitted, the calculation does not reset. Equivalent to NONE. </br> - If positive, the integer identifies the column starting from the highest, independent of grain. HIGHESTPARENT is equivalent to 1. </br> - If negative, the integer identifies the column starting from the lowest, relative to the current grain. LOWESTPARENT is equivalent to -1. |
 
 
 ## Return value
@@ -53,6 +54,8 @@ An empty table is returned if:
 - The \<position> value refers to a position that does not exist within the partition.  
 
 If INDEX is used within a calculated column defined on the same table as \<relation> and \<orderBy> is omitted, an error is returned.
+
+\<reset> can be used in Visual Calculations only, and cannot be used in combination with \<orderBy> or \<partitionBy>. If \<reset> is present, \<relation> must either be omitted or be a visual shape's axis.
 
 ## Example 1
 
@@ -119,6 +122,38 @@ Returns the following table:
 |217     |  10      |  6823.05      |   7767.78     |
 |217     |  11      |  6683.09      |   7767.78     |
 |217     |  12      |  7767.78      |   7767.78     |
+
+## Example 3
+
+The following Visual Calculation DAX query:
+
+```dax
+DEFINE
+VAR _Core = SUMMARIZECOLUMNS(
+	ROLLUPADDISSUBTOTAL(
+		'DimDate'[Year], "IsYearTotal",
+		'DimDate'[Quarter], "IsQuarterTotal",
+		'DimDate'[MonthNumberOfYear], "IsMonthTotal"
+	),
+	"SumSalesAmount", CALCULATE(SUM('FactInternetSales'[SalesAmount]))
+)
+TABLE t = _Core
+	WITH VISUAL SHAPE
+	AXIS ROWS
+		GROUP [Year] TOTAL [IsYearTotal]
+		GROUP [Quarter] TOTAL [IsQuarterTotal]
+		GROUP [MonthNumberOfYear] TOTAL [IsMonthTotal]
+		ORDER BY [Year], [Quarter], [MonthNumberOfYear]
+	DENSIFY "isDensified"
+COLUMN t[SalesComparedToBeginningOfYear] = [SumSalesAmount] - CALCULATE(SUM([SumSalesAmount]), INDEX(1, ROWS, HIGHESTPARENT))
+COLUMN t[SalesComparedToBeginningOfQuarter] = [SumSalesAmount] - CALCULATE(SUM([SumSalesAmount]), INDEX(1, , -1))
+EVALUATE t
+```
+
+Returns a table containing, for each month:
+</br> - the total sales amount;
+</br> - the difference to the first month of the respective year;
+</br> - and the difference to the first month of the respective quarter.
 
 ## Related content
 

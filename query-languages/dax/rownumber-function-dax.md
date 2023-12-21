@@ -10,7 +10,7 @@ Returns the unique ranking for the current context within the specified partitio
 ## Syntax  
   
 ```dax
-ROWNUMBER ( [<relation>][, <orderBy>][, <blanks>][, <partitionBy>][, <matchBy>] )
+ROWNUMBER ( [<relation>][, <orderBy>][, <blanks>][, <partitionBy>][, <matchBy>][, <reset>] )
 ```
   
 ### Parameters  
@@ -22,6 +22,7 @@ ROWNUMBER ( [<relation>][, <orderBy>][, <blanks>][, <partitionBy>][, <matchBy>] 
 |blanks|(Optional) An enumeration that defines how to handle blank values when sorting. </br>The supported values are:<ul><li>DEFAULT (the default value), where the behavior for numerical values is blank values are ordered between zero and negative values. The behavior for strings is blank values are ordered before all strings, including empty strings.</li><li>FIRST, blanks are always ordered on the beginning, regardless of ascending or descending sorting order.</li><li>LAST, blanks are always ordered on the end, regardless of ascending or descending sorting order. </li></ul></br>Note, when \<blanks> parameter and blanks in ORDERBY() function on individual expression are both specified, \<blanks> on individual orderBy expression takes priority for the relevant orderBy expression, and orderBy expressions without \<blanks> being specified will honor \<blanks> parameter on parent Window function.|
 |partitionBy|(Optional) A PARTITIONBY() clause containing the columns that define how \<relation> is partitioned. </br> If omitted, \<relation> is treated as a single partition. |  
 |matchBy|(Optional) A MATCHBY() clause containing the columns that define how to match data and identify the current row. |  
+|reset|(Optional) Indicates if the calculation resets, and at which level of the visual shape's column hierarchy. Accepted values are: NONE, LOWESTPARENT, HIGHESTPARENT, or an integer. The behavior depends on the integer sign: </br> - If zero or omitted, the calculation does not reset. Equivalent to NONE. </br> - If positive, the integer identifies the column starting from the highest, independent of grain. HIGHESTPARENT is equivalent to 1. </br> - If negative, the integer identifies the column starting from the lowest, relative to the current grain. LOWESTPARENT is equivalent to -1. |
 
 ## Return value
 
@@ -47,6 +48,8 @@ If the columns specified within \<orderBy> and \<partitionBy> cannot uniquely id
   - Automatically append these new columns to \<orderBy> clause.
   - Sort each partition using this new set of orderBy columns.
 - If such columns cannot be found and the function detects a tie at runtime, an error is returned.
+
+\<reset> can be used in Visual Calculations only, and cannot be used in combination with \<orderBy> or \<partitionBy>. If \<reset> is present, \<relation> must either be omitted or be a visual shape's axis.
 
 ## Example
 
