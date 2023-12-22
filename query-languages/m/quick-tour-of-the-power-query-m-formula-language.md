@@ -86,4 +86,4 @@ Let’s review each formula step.
 
 * [Expressions, values, and let expression](expressions-values-and-let-expression.md)
 * [Operators](operators.md)
-*[Type conversion](type-conversion.md)
+* [Type conversion](type-conversion.md)
