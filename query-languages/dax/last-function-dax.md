@@ -3,7 +3,7 @@ description: "Learn more about: LAST"
 title: "LAST function (DAX) | Microsoft Docs"
 ---
 
-# FIRST
+# LAST
 
 Used in Visual Caculations only. Retrieves a value in the data grid from the last row of an axis.
   
