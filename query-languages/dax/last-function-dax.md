@@ -75,7 +75,7 @@ DEFINE
                 [ProductSubcategoryName]
         DENSIFY "isDensified"
     COLUMN t[LastInternetSalesAmount] =
-        FIRST ( [SumSalesAmount], ROWS, LowestParent )
+        LAST ( [SumSalesAmount], ROWS, LowestParent )
 
 EVALUATE
 t
