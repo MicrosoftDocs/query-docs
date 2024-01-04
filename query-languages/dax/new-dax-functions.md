@@ -15,6 +15,7 @@ While functions and functionality are being updated all the time, only those upd
 
 |Function  |Month  | Description |
 |---------|---------|---------|
+|[LOOKUP](lookup-function-dax.md)|January, 2024| Used in Visual Calculations only. Look up the value when filters are applied. |
 |[MATCHBY](matchby-function-dax.md)|May, 2023|Define the columns that are used to to match data and identify the current row, in a window function expression.|
 |[RANK](rank-function-dax.md)|April, 2023|Returns the ranking for the current context within the specified partition, sorted by the specified order.|
 |[ROWNUMBER](rownumber-function-dax.md)|April, 2023|Returns the unique ranking for the current context within the specified partition, sorted by the specified order.|
