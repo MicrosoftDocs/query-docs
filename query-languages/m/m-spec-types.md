@@ -241,6 +241,13 @@ type function (x as text) as number
 type function (y as number, optional z as text) as any
 ```
 
+Specifying a parameter as optional also makes its type nullable. The following create identical function types:
+
+```powerquery-m
+type function (optional x as text) as any
+type function (optional x as nullable text) as any
+```
+
 A function value conforms to a function type if the return type of the function value is compatible with the function type's return type and each parameter specification of the function type is compatible to the positionally corresponding formal parameter of the function. A parameter specification is compatible with a formal parameter if the specified _parameter-type_ type is compatible with the type of the formal parameter and the parameter specification is optional if the formal parameter is optional.
 
 Formal parameter names are ignored for the purposes of determining function type conformance.
