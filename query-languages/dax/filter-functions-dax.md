@@ -22,8 +22,7 @@ The filter and value functions in DAX are some of the most complex and powerful,
 |[FILTER](filter-function-dax.md)      |  Returns a table that represents a subset of another table or expression.        |
 |[INDEX](index-function-dax.md)|Returns a row at an absolute position, specified by the position parameter, within the specified partition, sorted by the specified order or on the specified axis.|
 |[KEEPFILTERS](keepfilters-function-dax.md)      | Modifies how filters are applied while evaluating a CALCULATE or CALCULATETABLE function.         |
-|[LOOKUP](lookup-function-dax.md)              |
-In visual calculation, look up the value when filters are applied.|
+|[LOOKUP](lookup-function-dax.md)              | In visual calculation mode only. Look up the value when filters applied.|
 |[LOOKUPVALUE](lookupvalue-function-dax.md)    | Returns the value for the row that meets all criteria specified by search conditions. The function can apply one or more search conditions.        |
 |[MATCHBY](matchby-function-dax.md)    | In window functions, defines the columns that are used to determine how to match data and identify the *current row*.        |
 |[OFFSET](offset-function-dax.md)|Returns a single row that is positioned either before or after the *current row* within the same table, by a given offset. |
