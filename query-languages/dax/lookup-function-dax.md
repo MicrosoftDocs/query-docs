@@ -4,7 +4,7 @@ title: "LOOKUP function (DAX) | Microsoft Docs"
 ---
 # LOOKUP
 
-Used in visual calculation only. The Lookup function allows user to retrieve a value in a cell in the visual matrix using absolute navigation. User can specify a value as filter for any axis on the visual matrix and anything not specified will be inferred from the context. If Lookup could not result in single value, it will return an error.  
+Used in visual calculation only. Lookup function allows user to retrieve a value from a cell in visual matrix using absolute navigation. User can specify a value as filter for any axis on the visual matrix and anything not specified will be inferred from the context. If Lookup could not result in single value, it will return an error.  
 
 ## Syntax
 
@@ -17,20 +17,19 @@ LOOKUP(<column>[, <filter1> [, <filter2> [, …]]])
 |Term|Definition|
 |--------|--------------|
 |column| Only column reference is allowed,  For example [Sales] is allowed, but [Sales] – [Cost] is not, nor is SUM([Sales]) |
-|filter1, filter2,…|(Optional) Filter has to be either: 1. An equality filter. For example [Year]=2019 or [Year]=MAX([Year]). 2.
-The Collapse function. For example, LOOKUP([Sales], Collapse([Country])) returns the subtotal value for Sales for all Countries|
+|filter1, filter2,…|(Optional) Filter has to be either: 1. An equality filter. For example [Year]=2019 or [Year]=MAX([Year]). 2.The Collapse function. For example, LOOKUP([Sales], Collapse([Country])) returns the subtotal value for Sales for all Countries|
 
 ## Return value
 
 The value of **column** at the row after filters are applied.
 
-If there isn't a match that satisfies all the search values, an error is returned.
+If there isn't a match, an error is returned.
 
 If multiple rows match the filters, an error is returned.
 
 ## Example 1
 
-In this example, LOOKUP retrieves the sum of sale easily when [Year] = 2006, [MonthNumberOfYear] = 1, [Month] = "January".
+In this example, LOOKUP retrieves the sum of sale easily for filters: [Year] = 2006, [MonthNumberOfYear] = 1, [Month] = "January".
 
 ```dax
 // GB column references
