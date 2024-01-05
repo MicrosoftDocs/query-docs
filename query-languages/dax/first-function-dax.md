@@ -86,7 +86,7 @@ ORDER BY
     [MonthNumberOfYear]
 ```
 
-FirstInternetSalesAmount is added as a visual calculation that returns SalesAmount of the first row on ROWS axis, that resets on the lowest parent. On Year and Month level, it returns the SalesAmount of first month of the current year. On Year level, it returns SalesAmount of the first year across all the years.
+FirstInternetSalesAmount is added as a visual calculation that returns SalesAmount of the first row on ROWS axis, that resets on the lowest parent. On Year and Month level, it returns the SalesAmount of first month of the current year. On Year level, it returns the SalesAmount of the first year across all the years.
 
 ## Related content
 
