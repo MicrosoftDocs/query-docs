@@ -5,7 +5,7 @@ title: "LAST function (DAX) | Microsoft Docs"
 
 # LAST
 
-Used in Visual Caculations only. Retrieves a value in the data grid from the last row of an axis.
+Used in visual calculations only. Retrieves a value in the visual matrix from the last row of an axis.
   
 ## Syntax  
   
@@ -29,7 +29,7 @@ The value of \<expression> evaluated from the last row of the axis.
   
 ## Remarks
 
-This function can only be used in a Visual Caculation.
+This function can only be used in a visual calculation.
 
 ## Example
 
@@ -86,7 +86,7 @@ ORDER BY
     [MonthNumberOfYear]
 ```
 
-LastInternetSalesAmount is added as a Visual Caculation that returns SalesAmount of the last row on ROWS axis, that resets on the lowest parent. On Year and Month level, it returns the SalesAmount of last month of the current year. On Year level, it returns SalesAmount of the last year across all the years.
+LastInternetSalesAmount is added as a visual calculation that returns SalesAmount of the last row on ROWS axis, that resets on the lowest parent. On Year and Month level, it returns the SalesAmount of last month of the current year. On Year level, it returns SalesAmount of the last year across all the years.
 
 ## Related content
 
