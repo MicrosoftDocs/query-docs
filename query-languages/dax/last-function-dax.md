@@ -86,7 +86,7 @@ ORDER BY
     [MonthNumberOfYear]
 ```
 
-LastInternetSalesAmount is added as a visual calculation that returns SalesAmount of the last row on ROWS axis, that resets on the lowest parent. On Year and Month level, it returns the SalesAmount of last month of the current year. On Year level, it returns SalesAmount of the last year across all the years.
+LastInternetSalesAmount is added as a visual calculation that returns SalesAmount of the last row on ROWS axis, that resets on the lowest parent. On Year and Month level, it returns the SalesAmount of last month of the current year. On Year level, it returns the SalesAmount of the last year across all the years.
 
 ## Related content
 
