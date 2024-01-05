@@ -5,7 +5,7 @@ title: "PREVIOUS function (DAX) | Microsoft Docs"
 
 # PREVIOUS
 
-Used in Visual Caculations only. Retrieves a value in the previous row of an axis in the data grid.
+Used in visual calculations only. Retrieves a value in the previous row of an axis in the visual matrix.
   
 ## Syntax  
   
@@ -30,7 +30,7 @@ The value of \<expression> evaluated from the previous row of the axis.
   
 ## Remarks
 
-This function can only be used in a Visual Caculation.
+This function can only be used in a visual calculation.
 
 ## Example
 
@@ -75,8 +75,8 @@ DEFINE
                 [ProductCategoryName],
                 [ProductSubcategoryName]
         DENSIFY "isDensified"
-    COLUMN t[PreviousPreviousInternetSalesAmount] =
-        PREVIOUS ( [SumSalesAmount], 2, ROWS, LowestParent )
+    COLUMN t[PreviousInternetSalesAmount] =
+        PREVIOUS ( [SumSalesAmount], ROWS, LowestParent )
 
 EVALUATE
 t
@@ -87,7 +87,7 @@ ORDER BY
     [MonthNumberOfYear]
 ```
 
-PreviousPreviousInternetSalesAmount is added as a Visual Caculation that returns SalesAmount of the previous previous row on ROWS axis, that resets on the lowest parent. On Year and Month level, it returns the SalesAmount of the previous previous month within the current year; for the first two months of the year, it returns blank. On Year level, it returns SalesAmount of the previous previous year of the current year; for the first two years, it returns blank.
+PreviousInternetSalesAmount is added as a visual calculation that returns the SalesAmount of the previous row on ROWS axis, that resets on the lowest parent. On Year and Month level, it returns the SalesAmount of the previous month within the current year; for the first month of the year, it returns blank. On Year level, it returns the SalesAmount of the previous year of the current year; for the first year, it returns blank.
 
 ## Related content
 
