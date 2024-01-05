@@ -167,6 +167,8 @@
               href: index-function-dax.md
             - name: KEEPFILTERS
               href: keepfilters-function-dax.md
+            - name: LOOKUP
+              href: lookup-function-dax.md
             - name: LOOKUPVALUE
               href: lookupvalue-function-dax.md
             - name: MATCHBY

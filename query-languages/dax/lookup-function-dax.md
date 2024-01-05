@@ -4,7 +4,7 @@ title: "LOOKUP function (DAX) | Microsoft Docs"
 ---
 # LOOKUP
 
-Used in visual calculation only. Lookup function allows user to retrieve a value from a cell in visual matrix using absolute navigation. User can specify a value as filter for any axis on the visual matrix and anything not specified will be inferred from the context. If Lookup could not result in single value, it will return an error.  
+Used in visual calculations only. Returns a value from a cell in a visual matrix by using absolute navigation. You can specify a value as a filter for any axis on the visual matrix. Anything not specified is inferred from the context. If Lookup can’t result in single value, an error is returned.
 
 ## Syntax
 
