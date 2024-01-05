@@ -5,7 +5,7 @@ title: "NEXT function (DAX) | Microsoft Docs"
 
 # NEXT
 
-Used in Visual Caculations only. Retrieves a value in the next row of an axis in the data grid.
+Used in visual calculations only. Retrieves a value in the next row of an axis in the visual matrix.
   
 ## Syntax  
   
@@ -30,7 +30,7 @@ The value of \<expression> evaluated from the next row of the axis.
   
 ## Remarks
 
-This function can only be used in a Visual Caculation.
+This function can only be used in a visual calculation.
 
 ## Example
 
@@ -75,8 +75,8 @@ DEFINE
                 [ProductCategoryName],
                 [ProductSubcategoryName]
         DENSIFY "isDensified"
-    COLUMN t[NextNextInternetSalesAmount] =
-        NEXT ( [SumSalesAmount], 2, ROWS, LowestParent )
+    COLUMN t[NextInternetSalesAmount] =
+        NEXT ( [SumSalesAmount], ROWS, LowestParent )
 
 EVALUATE
 t
@@ -87,7 +87,7 @@ ORDER BY
     [MonthNumberOfYear]
 ```
 
-NextNextInternetSalesAmount is added as a Visual Caculation that returns SalesAmount of the next next row on ROWS axis, that resets on the lowest parent. On Year and Month level, it returns the SalesAmount of the next next month within the current year; for the last two months of the year, it returns blank. On Year level, it returns SalesAmount of the next next year of the current year; for the last two years, it returns blank.
+NextInternetSalesAmount is added as a visual calculation that returns the SalesAmount of the next row on ROWS axis, that resets on the lowest parent. On Year and Month level, it returns the SalesAmount of the next month within the current year; for the last month of the year, it returns blank. On Year level, it returns the SalesAmount of the next year of the current year; for the last year, it returns blank.
 
 ## Related content
 
