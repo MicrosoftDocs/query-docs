@@ -20,17 +20,17 @@ The filter and value functions in DAX are some of the most complex and powerful,
 |[EARLIER](earlier-function-dax.md)     |  Returns the current value of the specified column in an outer evaluation pass of the mentioned column.         |
 |[EARLIEST](earliest-function-dax.md)     |  Returns the current value of the specified column in an outer evaluation pass of the specified column.         |
 |[FILTER](filter-function-dax.md)      |  Returns a table that represents a subset of another table or expression.        |
-|[FIRST](first-function-dax.md)      |  Used in Visual Caculations only. Retrieves a value in the data grid from the first row of an axis.       |
+|[FIRST](first-function-dax.md)      |  Used in visual calculations only. Retrieves a value in the visual matrix from the first row of an axis.       |
 |[INDEX](index-function-dax.md)|Returns a row at an absolute position, specified by the position parameter, within the specified partition, sorted by the specified order or on the specified axis.|
 |[KEEPFILTERS](keepfilters-function-dax.md)      | Modifies how filters are applied while evaluating a CALCULATE or CALCULATETABLE function.         |
-|[LAST](last-function-dax.md)    | Used in Visual Caculations only. Retrieves a value in the data grid from the last row of an axis.        |
+|[LAST](last-function-dax.md)    | Used in visual calculations only. Retrieves a value in the visual matrix from the last row of an axis.        |
 |[LOOKUPVALUE](lookupvalue-function-dax.md)    | Returns the value for the row that meets all criteria specified by search conditions. The function can apply one or more search conditions.        |
 |[MATCHBY](matchby-function-dax.md)    | In window functions, defines the columns that are used to determine how to match data and identify the *current row*.        |
-|[NEXT](next-function-dax.md)    | Used in Visual Caculations only. Retrieves a value in the next row of an axis in the data grid.        |
+|[NEXT](next-function-dax.md)    | Used in visual calculations only. Retrieves a value in the next row of an axis in the visual matrix.        |
 |[OFFSET](offset-function-dax.md)|Returns a single row that is positioned either before or after the *current row* within the same table, by a given offset. |
 |[ORDERBY](orderby-function-dax.md)|Defines the columns that determine the sort order within each of a window function’s partitions.|
 |[PARTITIONBY](partitionby-function-dax.md)|Defines the columns that are used to partition a window function’s \<relation> parameter.|
-|[PREVIOUS](previous-function-dax.md)| Used in Visual Caculations only. Retrieves a value in the previous row of an axis in the data grid. |
+|[PREVIOUS](previous-function-dax.md)| Used in visual calculations only. Retrieves a value in the previous row of an axis in the visual matrix. |
 |[RANK](rank-function-dax.md)| Returns the ranking of a row within the given interval.  |
 |[REMOVEFILTERS](removefilters-function-dax.md)|Clears filters from the specified tables or columns.|
 |[ROWNUMBER](rownumber-function-dax.md)| Returns the unique ranking of a row within the given interval.  |
