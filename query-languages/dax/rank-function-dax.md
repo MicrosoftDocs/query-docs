@@ -43,7 +43,7 @@ The rank number for the current context.
 - If the columns specified within \<orderBy> and \<partitionBy> cannot uniquely identify every row in \<relation>, then two or more rows may have the same ranking and the ranking will be determined by the ties parameter.
 - RANK returns a blank value for total rows. It's recommended that you test your expression thoroughly.
 - RANK does not compare to RANKX as SUM compares to SUMX.
-- \<reset> can be used in Visual Calculations only, and cannot be used in combination with \<orderBy> or \<partitionBy>. If \<reset> is present, \<relation> must either be omitted or be a visual shape's axis.
+- \<reset> can be used in visual calculations only, and cannot be used in combination with \<orderBy> or \<partitionBy>. If \<reset> is present, \<relation> must either be omitted or be a visual shape's axis.
 
 ## Example
 

@@ -56,7 +56,7 @@ An empty table is returned if:
 
 If OFFSET is used within a calculated column defined on the same table as \<relation>, and \<orderBy> is omitted, an error is returned.
 
-\<reset> can be used in Visual Calculations only, and cannot be used in combination with \<orderBy> or \<partitionBy>. If \<reset> is present, \<relation> must either be omitted or be a visual shape's axis.
+\<reset> can be used in visual calculations only, and cannot be used in combination with \<orderBy> or \<partitionBy>. If \<reset> is present, \<relation> must either be omitted or be a visual shape's axis.
 
 ## Example 1
 

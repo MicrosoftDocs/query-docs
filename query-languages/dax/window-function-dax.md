@@ -60,7 +60,7 @@ If WINDOW is used within a calculated column defined on the same table as \<rela
 
 If the beginning of the window turns out be before the first row, then it’s set to the first row. Similarly, if the end of the window is after the last row of the partition, then it's set to the last row.
 
-\<reset> can be used in Visual Calculations only, and cannot be used in combination with \<orderBy> or \<partitionBy>. If \<reset> is present, \<relation> must either be omitted or be a visual shape's axis.
+\<reset> can be used in visual calculations only, and cannot be used in combination with \<orderBy> or \<partitionBy>. If \<reset> is present, \<relation> must either be omitted or be a visual shape's axis.
 
 ## Example 1
 
@@ -146,7 +146,7 @@ Returns the running sum for Total Sales by Month Number Of Year, restarting for 
 
 ## Example 3
 
-The following Visual Calculation DAX query:
+The following visual calculation DAX query:
 
 ```dax
 DEFINE

@@ -49,7 +49,7 @@ If the columns specified within \<orderBy> and \<partitionBy> cannot uniquely id
   - Sort each partition using this new set of orderBy columns.
 - If such columns cannot be found and the function detects a tie at runtime, an error is returned.
 
-\<reset> can be used in Visual Calculations only, and cannot be used in combination with \<orderBy> or \<partitionBy>. If \<reset> is present, \<relation> must either be omitted or be a visual shape's axis.
+\<reset> can be used in visual calculations only, and cannot be used in combination with \<orderBy> or \<partitionBy>. If \<reset> is present, \<relation> must either be omitted or be a visual shape's axis.
 
 ## Example
 
