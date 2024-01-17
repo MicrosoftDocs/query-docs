@@ -13,7 +13,7 @@ recommendations: false
 
 # MOVINGAVERAGE
 
-Returns a moving average calculated along the given axis of the Visual Calculation data grid. That is, the average of the given column calculated over the last \<windowSize> rows.
+Returns a moving average calculated along the given axis of the visual calculation data grid. That is, the average of the given column calculated over the last \<windowSize> rows.
 
 ## Syntax
 
@@ -37,7 +37,7 @@ A scalar value, the moving average at the current row.
 
 ## Remarks
 
-This function can be used in Visual Calculations only.
+This function can be used in visual calculations only.
 
 The \<includeCurrent>, \<axis> and \<blanks> parameters can be omitted.
 

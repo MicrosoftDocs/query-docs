@@ -13,7 +13,7 @@ recommendations: false
 
 # RUNNINGSUM
 
-Returns a running sum calculated along the given axis of the Visual Calculation data grid. That is, the sum of the given column calculated over all rows up to the current row.
+Returns a running sum calculated along the given axis of the visual calculation data grid. That is, the sum of the given column calculated over all rows up to the current row.
 
 ## Syntax
 
@@ -35,7 +35,7 @@ A scalar value, the running sum up to the current row.
 
 ## Remarks
 
-This function can be used in Visual Calculations only.
+This function can be used in visual calculations only.
 
 The \<axis> and \<blanks> parameters can be omitted.
 

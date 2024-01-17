@@ -36,7 +36,7 @@ An interval of data rows.
 
 ## Remarks
 
-This function can be used in Visual Calculations only.
+This function can be used in visual calculations only.
 
 The \<includeCurrent>, \<axis> and \<blanks> parameters can be omitted.
 
