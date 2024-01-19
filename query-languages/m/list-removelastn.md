@@ -15,7 +15,7 @@ List.RemoveLastN(<b>list</b> as list, optional <b>countOrCondition</b> as any) a
 Returns a list that removes the last `countOrCondition` elements from the end of list `list`. If `list` has less than `countOrCondition` elements, an empty list is returned.
 
 * If a number is specified, up to that many items are removed.
-* If a condition is specified, the returned list ends with the first element from the bottom in `list` that meets the criteria. Once an item fails the condition, no further items are considered.
+* If a condition is specified, any consecutive matching items at the end of `list` are removed.
 * If this parameter is null, only one item is removed.
 
 ## Example 1
