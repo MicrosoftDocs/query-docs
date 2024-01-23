@@ -17,7 +17,7 @@ LOOKUP(<column>[, <filter1> [, <filter2> [, …]]])
 |Term|Definition|
 |--------|--------------|
 |column| Only column reference is allowed,  For example [Sales] is allowed, but [Sales] – [Cost] is not, nor is SUM([Sales]) |
-|filter1, filter2,…|(Optional) Filter has to be either: 1. An equality filter. For example [Year]=2019 or [Year]=MAX([Year]). 2.The Collapse function. For example, LOOKUP([Sales], Collapse([Country])) returns the subtotal value for Sales for all Countries|
+|filter1, filter2,…|(Optional) Filter has to be an equality filter. For example [Year]=2019 or [Year]=MAX([Year]).|
 
 ## Return value
 
