@@ -33,6 +33,8 @@ A table of statistics. Each row of this table represents a different column in t
 
 - If a filter from the filter context is applied to COLUMNSTATISTICS(), an error is returned.
 
+- For binary-typed columns, the Min and Max statistics will have BLANK values.
+
 
 ## Example
 
