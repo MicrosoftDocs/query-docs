@@ -241,7 +241,7 @@ type function (x as text) as number
 type function (y as number, optional z as text) as any
 ```
 
-Specifying a parameter as optional also makes its type nullable. The following create identical function types:
+Specifying a parameter as optional implicitly makes its type nullable. The following create identical function types:
 
 ```powerquery-m
 type function (optional x as text) as any
