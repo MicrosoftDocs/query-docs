@@ -2,7 +2,7 @@
 title: M Language Consolidated Grammar 
 description: Describes all of the grammar associated with the Power Query M formula language
 ms.topic: conceptual
-ms.date: 9/15/2023
+ms.date: 2/2/2024
 ms.custom: "nonautomated-date"
 ---
 
@@ -145,6 +145,7 @@ _verbatim-literal:_<br/>
 _identifier:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;regular-identifier<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quoted-identifier<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier<br/>
 regular-identifier:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;available-identifier<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;available-identifier  dot-character  regular-identifier<br/>
