@@ -10,7 +10,7 @@ Returns a single row that is positioned either before or after the *current row*
 ## Syntax  
   
 ```dax
-OFFSET ( <delta>[, <relation>][, <orderBy>][, <blanks>][, <partitionBy>][, <matchBy>][, <reset>] )
+OFFSET ( <delta>[, <relation> or <axis>][, <orderBy>][, <blanks>][, <partitionBy>][, <matchBy>][, <reset>] )
 ```
   
 ### Parameters  
@@ -19,11 +19,12 @@ OFFSET ( <delta>[, <relation>][, <orderBy>][, <blanks>][, <partitionBy>][, <matc
 |--------|--------------|  
 |delta|The number of rows before (negative value) or after (positive value) the current row from which to obtain the data.  It can be any DAX expression that returns a scalar value. |
 |relation|(Optional) A table expression from which the output row is returned. </br>If specified, all columns in \<partitionBy> must come from it or a related table. </br>If omitted: </br>- \<orderBy> must be explicitly specified.</br>- All \<orderBy> and \<partitionBy> expressions must be fully qualified column names and come from a single table. </br>- Defaults to ALLSELECTED() of all columns in \<orderBy> and \<partitionBy>.|
+|axis|(Optional) An axis in the visual shape. Available in visual calculations only, and replaces \<relation>.
 |orderBy|(Optional) An ORDERBY() clause containing the expressions that define how each partition is sorted. </br>If omitted: </br>- \<relation> must be explicitly specified. </br>- Defaults to ordering by every column in \<relation> that is not already specified in \<partitionBy>.|
 |blanks|(Optional) An enumeration that defines how to handle blank values when sorting. </br>This parameter is reserved for future use. </br>Currently, the only supported value is DEFAULT, where the behavior for numerical values is blank values are ordered between zero and negative values. The behavior for strings is blank values are ordered before all strings, including empty strings.|
 |partitionBy|(Optional) A PARTITIONBY() clause containing the columns that define how \<relation> is partitioned. </br> If omitted, \<relation> is treated as a single partition. |
 |matchBy|(Optional) A MATCHBY() clause containing the columns that define how to match data and identify the current row. |  
-|reset|(Optional) Indicates if the calculation resets, and at which level of the visual shape's column hierarchy. Accepted values are: NONE, LOWESTPARENT, HIGHESTPARENT, or an integer. The behavior depends on the integer sign: </br> - If zero or omitted, the calculation does not reset. Equivalent to NONE. </br> - If positive, the integer identifies the column starting from the highest, independent of grain. HIGHESTPARENT is equivalent to 1. </br> - If negative, the integer identifies the column starting from the lowest, relative to the current grain. LOWESTPARENT is equivalent to -1. |
+|reset|(Optional) Available in visual calculations only. Indicates if the calculation resets, and at which level of the visual shape's column hierarchy. Accepted values are: NONE, LOWESTPARENT, HIGHESTPARENT, or an integer. The behavior depends on the integer sign: </br> - If zero or omitted, the calculation does not reset. Equivalent to NONE. </br> - If positive, the integer identifies the column starting from the highest, independent of grain. HIGHESTPARENT is equivalent to 1. </br> - If negative, the integer identifies the column starting from the lowest, relative to the current grain. LOWESTPARENT is equivalent to -1. |
   
 ## Return value
 
@@ -56,9 +57,9 @@ An empty table is returned if:
 
 If OFFSET is used within a calculated column defined on the same table as \<relation>, and \<orderBy> is omitted, an error is returned.
 
-\<reset> can be used in visual calculations only, and cannot be used in combination with \<orderBy> or \<partitionBy>. If \<reset> is present, \<relation> must either be omitted or be a visual shape's axis.
+\<reset> can be used in visual calculations only, and cannot be used in combination with \<orderBy> or \<partitionBy>. If \<reset> is present, \<axis> can be specified but \<relation> cannot.
 
-## Example 1
+## Example 1 - calculated column
 
 The following DAX query:
   
@@ -88,7 +89,7 @@ ADDCOLUMNS (
 
 Returns a table that summarizes the total sales for each product category and calendar year, as well as the total sales for that category in the previous year.
 
-## Example 2
+## Example 2 - measure
 
 The following DAX query:
 
@@ -106,7 +107,7 @@ SUMMARIZECOLUMNS (
 
 Uses OFFSET() in a measure to return a table that summarizes the total sales for each calendar year and the total sales for the previous year.
 
-## Example 3
+## Example 3 - calculated column
 
 The following DAX query:
 
@@ -129,6 +130,34 @@ ADDCOLUMNS (
 ```
 
 Returns FactInternetSales table with adding a column, which indicates, for each sale, its previous sale's amount, of the same product, in descending order of sales amount, with current sale being identified by its SalesOrderNumber and SalesOrderLineNumber. Without MATCHBY, the query would return an error since there are no key columns in FactInternetSales table.
+
+## Example 4 - visual calculation
+
+The following visual calculation DAX query:
+
+```dax
+DEFINE
+VAR _Core = SUMMARIZECOLUMNS(
+	'DimDate'[Year],
+	'DimDate'[Quarter],
+	'DimDate'[MonthNumberOfYear],
+	"SumSalesAmount", CALCULATE(SUM('FactInternetSales'[SalesAmount]))
+)
+TABLE t = _Core
+	WITH VISUAL SHAPE
+	AXIS ROWS
+		GROUP [Year]
+		GROUP [Quarter]
+		GROUP [MonthNumberOfYear]
+		ORDER BY [Year], [Quarter], [MonthNumberOfYear]
+	DENSIFY "isDensified"
+COLUMN t[SalesRelativeToPreviousMonth] = [SumSalesAmount] - CALCULATE(SUM([SumSalesAmount]), OFFSET(-1, ROWS, PARTITIONBY([Year])))
+EVALUATE t
+```
+
+Returns a table containing, for each month:
+</br> - the total sales amount;
+</br> - the difference to the previous month within the same year;
 
 ## Related content
 

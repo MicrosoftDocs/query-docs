@@ -10,7 +10,7 @@ Returns multiple rows which are positioned within the given interval.
 ## Syntax  
   
 ```dax
-WINDOW ( from[, from_type], to[, to_type][, <relation>][, <orderBy>][, <blanks>][, <partitionBy>][, <matchBy>][, <reset>] )
+WINDOW ( from[, from_type], to[, to_type][, <relation> or <axis>][, <orderBy>][, <blanks>][, <partitionBy>][, <matchBy>][, <reset>] )
 ```
   
 ### Parameters  
@@ -22,11 +22,12 @@ WINDOW ( from[, from_type], to[, to_type][, <relation>][, <orderBy>][, <blanks>]
 |to|Same as \<from>, but indicates the end of the window. The last row is included in the window.|
 |to_type|Same as \<from_type>, but modifies the behavior of \<to>.|
 |relation|(Optional) A table expression from which the output rows are returned. </br>If specified, all columns in \<partitionBy> must come from it or a related table. </br>If omitted: </br>- \<orderBy> must be explicitly specified.</br>- All \<orderBy> and \<partitionBy> expressions must be fully qualified column names and come from a single table. </br>- Defaults to ALLSELECTED() of all columns in \<orderBy> and \<partitionBy>.|
+|axis|(Optional) An axis in the visual shape. Available in visual calculations only, and replaces \<relation>.
 |orderBy|(Optional) An ORDERBY() clause containing the expressions that define how each partition is sorted. </br>If omitted: </br>- \<relation> must be explicitly specified. </br>- Defaults to ordering by every column in \<relation> that is not already specified in \<partitionBy>.|
 |blanks|(Optional) An enumeration that defines how to handle blank values when sorting. </br>This parameter is reserved for future use. </br>Currently, the only supported value is DEFAULT, where the behavior for numerical values is blank values are ordered between zero and negative values. The behavior for strings is blank values are ordered before all strings, including empty strings.|
 |partitionBy|(Optional) A PARTITIONBY() clause containing the columns that define how \<relation> is partitioned. If omitted, \<relation> is treated as a single partition.|
 |matchBy|(Optional) A MATCHBY() clause containing the columns that define how to match data and identify the current row. |  
-|reset|(Optional) Indicates if the calculation resets, and at which level of the visual shape's column hierarchy. Accepted values are: NONE, LOWESTPARENT, HIGHESTPARENT, or an integer. The behavior depends on the integer sign: </br> - If zero or omitted, the calculation does not reset. Equivalent to NONE. </br> - If positive, the integer identifies the column starting from the highest, independent of grain. HIGHESTPARENT is equivalent to 1. </br> - If negative, the integer identifies the column starting from the lowest, relative to the current grain. LOWESTPARENT is equivalent to -1. |
+|reset|(Optional) Available in visual calculations only. Indicates if the calculation resets, and at which level of the visual shape's column hierarchy. Accepted values are: NONE, LOWESTPARENT, HIGHESTPARENT, or an integer. The behavior depends on the integer sign: </br> - If zero or omitted, the calculation does not reset. Equivalent to NONE. </br> - If positive, the integer identifies the column starting from the highest, independent of grain. HIGHESTPARENT is equivalent to 1. </br> - If negative, the integer identifies the column starting from the lowest, relative to the current grain. LOWESTPARENT is equivalent to -1. |
 
 ## Return value
 
@@ -60,9 +61,9 @@ If WINDOW is used within a calculated column defined on the same table as \<rela
 
 If the beginning of the window turns out be before the first row, then it’s set to the first row. Similarly, if the end of the window is after the last row of the partition, then it's set to the last row.
 
-\<reset> can be used in visual calculations only, and cannot be used in combination with \<orderBy> or \<partitionBy>. If \<reset> is present, \<relation> must either be omitted or be a visual shape's axis.
+\<reset> can be used in visual calculations only, and cannot be used in combination with \<orderBy> or \<partitionBy>. If \<reset> is present, \<axis> can be specified but \<relation> cannot.
 
-## Example 1
+## Example 1 - measure
 
 The following measure:
   
@@ -83,7 +84,7 @@ AVERAGEX(
 
 Returns the 3-day average of unit prices for each product. Note the 3-day window consists of three days in which the product has sales, not necessarily three consecutive calendar days.
 
-## Example 2
+## Example 2 - measure
 
 The following measure:
 
@@ -144,7 +145,7 @@ Returns the running sum for Total Sales by Month Number Of Year, restarting for 
 | FY2020 | 11                   | $5,151,897   | $47,027,081  |
 | FY2020 | 12                   | $4,851,194   | $51,878,275  |
 
-## Example 3
+## Example 3 - visual calculation
 
 The following visual calculation DAX query:
 
