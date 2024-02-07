@@ -18,7 +18,7 @@ Returns a running sum calculated along the given axis of the visual calculation 
 ## Syntax
 
 ```dax
-RUNNINGSUM ( <column>[, <axis>][, <blanks>] )
+RUNNINGSUM ( <column>[, <axis>][, <blanks>][, <reset>] )
 ```
 
 ### Parameters
@@ -28,6 +28,7 @@ RUNNINGSUM ( <column>[, <axis>][, <blanks>] )
 |column|The column that provides the value for each row.|
 |axis|(Optional) An axis reference, the direction along which the running sum will be calculated.|
 |blanks|(Optional) An enumeration that defines how to handle blank values when sorting. </br>This parameter is reserved for future use.|
+|reset|(Optional) Indicates if the calculation resets, and at which level of the visual shape's column hierarchy. Accepted values are: NONE, LOWESTPARENT, HIGHESTPARENT, or an integer. The behavior depends on the integer sign: </br> - If zero or omitted, the calculation does not reset. Equivalent to NONE. </br> - If positive, the integer identifies the column starting from the highest, independent of grain. HIGHESTPARENT is equivalent to 1. </br> - If negative, the integer identifies the column starting from the lowest, relative to the current grain. LOWESTPARENT is equivalent to -1. |
 
 ## Return value
 
@@ -37,7 +38,7 @@ A scalar value, the running sum up to the current row.
 
 This function can be used in visual calculations only.
 
-The \<axis> and \<blanks> parameters can be omitted.
+The \<axis>, \<blanks> and \<reset> parameters can be omitted.
 
 ## Example
 
