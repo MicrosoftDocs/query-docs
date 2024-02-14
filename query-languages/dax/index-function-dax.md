@@ -126,35 +126,22 @@ Returns the following table:
 
 ## Example 3 - visual calculation
 
-The following visual calculation DAX query:
+The following visual calculation DAX queries:
 
 ```dax
-DEFINE
-VAR _Core = SUMMARIZECOLUMNS(
-	ROLLUPADDISSUBTOTAL(
-		'DimDate'[Year], "IsYearTotal",
-		'DimDate'[Quarter], "IsQuarterTotal",
-		'DimDate'[MonthNumberOfYear], "IsMonthTotal"
-	),
-	"SumSalesAmount", CALCULATE(SUM('FactInternetSales'[SalesAmount]))
-)
-TABLE t = _Core
-	WITH VISUAL SHAPE
-	AXIS ROWS
-		GROUP [Year] TOTAL [IsYearTotal]
-		GROUP [Quarter] TOTAL [IsQuarterTotal]
-		GROUP [MonthNumberOfYear] TOTAL [IsMonthTotal]
-		ORDER BY [Year], [Quarter], [MonthNumberOfYear]
-	DENSIFY "isDensified"
-COLUMN t[SalesComparedToBeginningOfYear] = [SumSalesAmount] - CALCULATE(SUM([SumSalesAmount]), INDEX(1, ROWS, HIGHESTPARENT))
-COLUMN t[SalesComparedToBeginningOfQuarter] = [SumSalesAmount] - CALCULATE(SUM([SumSalesAmount]), INDEX(1, , -1))
-EVALUATE t
+SalesComparedToBeginningOfYear = [SalesAmount] - CALCULATE(SUM([SalesAmount]), INDEX(1, ROWS, HIGHESTPARENT))
+
+SalesComparedToBeginningOfQuarter = [SalesAmount] - CALCULATE(SUM([SalesAmount]), INDEX(1, , -1))
 ```
 
-Returns a table containing, for each month:
+Enhance a table so it contains, for each month:
 </br> - the total sales amount;
 </br> - the difference to the first month of the respective year;
 </br> - and the difference to the first month of the respective quarter.
+
+The screenshot below shows the visual matrix and the first visual calculation expression:
+
+![DAX visual calculation](media/dax-queries/dax-visualcalc-index.png)
 
 ## Related content
 

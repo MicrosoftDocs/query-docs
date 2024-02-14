@@ -150,30 +150,25 @@ Returns the running sum for Total Sales by Month Number Of Year, restarting for 
 The following visual calculation DAX query:
 
 ```dax
-DEFINE
-VAR _Core = SUMMARIZECOLUMNS(
-	ROLLUPADDISSUBTOTAL(
-		'DimDate'[Year], "IsYearTotal",
-		'DimDate'[Quarter], "IsQuarterTotal",
-		'DimDate'[MonthNumberOfYear], "IsMonthTotal"
-	),
-	"SumSalesAmount", CALCULATE(SUM('FactInternetSales'[SalesAmount]))
-)
-TABLE t = _Core
-	WITH VISUAL SHAPE
-	AXIS ROWS
-		GROUP [Year] TOTAL [IsYearTotal]
-		GROUP [Quarter] TOTAL [IsQuarterTotal]
-		GROUP [MonthNumberOfYear] TOTAL [IsMonthTotal]
-		ORDER BY [Year], [Quarter], [MonthNumberOfYear]
-	DENSIFY "isDensified"
-COLUMN t[TotalSalesRunningSumByYear] = SUMX(WINDOW(0, ABS, 0, REL, ROWS, HIGHESTPARENT), [SumSalesAmount])
-COLUMN t[TotalSalesRunningSumByQuarter] = SUMX(WINDOW(0, ABS, 0, REL, , -1), [SumSalesAmount])
-EVALUATE t
+TotalSalesRunningSumByYear = SUMX(WINDOW(0, ABS, 0, REL, ROWS, HIGHESTPARENT), [SalesAmount])
 ```
 
-Returns a table with the cumulative total sales by month, calculated along each year and along each quarter.
-In the definition of the TotalSalesRunningSumByYear column, the values 1 and -2 could be used instead of HIGHESTPARENT, with the same results.
+Returns the cumulative total sales by month, calculated along each year. The values 1 and -2 could be used instead of HIGHESTPARENT, with the same results.
+
+The screenshot below shows the visual matrix and the visual calculation expression:
+
+![DAX visual calculation](media/dax-queries/dax-visualcalc-window.png)
+
+## Example 4 - visual calculation
+
+The following visual calculation DAX query:
+
+```dax
+TotalSalesRunningSumByQuarter = SUMX(WINDOW(0, ABS, 0, REL, , -1), [SalesAmount])
+```
+
+Returns the cumulative total sales by month, calculated along each quarter.
+
 
 ## Related content
 

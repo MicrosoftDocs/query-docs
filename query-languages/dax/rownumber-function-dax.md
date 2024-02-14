@@ -75,30 +75,19 @@ Returns a table that uniquely ranks each geography with the same EnglishCountryR
 
 ## Example 2 - visual calculation
 
-The following visual calculation DAX query:
+The following visual calculation DAX queries:
 
 ```dax
-DEFINE
-VAR _Core = SUMMARIZECOLUMNS(
-	'DimDate'[Year],
-	'DimDate'[Quarter],
-	'DimDate'[MonthNumberOfYear],
-	"SumSalesAmount", CALCULATE(SUM('FactInternetSales'[SalesAmount]))
-)
-TABLE t = _Core
-	WITH VISUAL SHAPE
-	AXIS ROWS
-		GROUP [Year]
-		GROUP [Quarter]
-		GROUP [MonthNumberOfYear]
-		ORDER BY [Year], [Quarter], [MonthNumberOfYear]
-	DENSIFY "isDensified"
-column t[SalesRankWithinYear] = ROWNUMBER(ROWS, ORDERBY([SumSalesAmount], DESC), PARTITIONBY(t[Year]))
-column t[SalesRankAllHistory] = ROWNUMBER(ROWS, ORDERBY([SumSalesAmount], DESC))
-EVALUATE t
+SalesRankWithinYear = ROWNUMBER(ORDERBY([SalesAmount], DESC), PARTITIONBY([CalendarYear]))
+
+SalesRankAllHistory = ROWNUMBER(ORDERBY([SalesAmount], DESC))
 ```
 
-Returns a table that uniquely ranks each month by the total sales, both within each year, and the entire history.
+Create two columns that uniquely rank each month by the total sales, both within each year, and the entire history.
+
+The screenshot below shows the visual matrix and the first visual calculation expression:
+
+![DAX visual calculation](media/dax-queries/dax-visualcalc-rownumber.png)
 
 ## Related content
 

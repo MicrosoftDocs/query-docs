@@ -136,28 +136,14 @@ Returns FactInternetSales table with adding a column, which indicates, for each 
 The following visual calculation DAX query:
 
 ```dax
-DEFINE
-VAR _Core = SUMMARIZECOLUMNS(
-	'DimDate'[Year],
-	'DimDate'[Quarter],
-	'DimDate'[MonthNumberOfYear],
-	"SumSalesAmount", CALCULATE(SUM('FactInternetSales'[SalesAmount]))
-)
-TABLE t = _Core
-	WITH VISUAL SHAPE
-	AXIS ROWS
-		GROUP [Year]
-		GROUP [Quarter]
-		GROUP [MonthNumberOfYear]
-		ORDER BY [Year], [Quarter], [MonthNumberOfYear]
-	DENSIFY "isDensified"
-COLUMN t[SalesRelativeToPreviousMonth] = [SumSalesAmount] - CALCULATE(SUM([SumSalesAmount]), OFFSET(-1, ROWS, PARTITIONBY([Year])))
-EVALUATE t
+SalesRelativeToPreviousMonth = [SalesAmount] - CALCULATE(SUM([SalesAmount]), OFFSET(-1, ROWS, HIGHESTPARENT))
 ```
 
-Returns a table containing, for each month:
-</br> - the total sales amount;
-</br> - the difference to the previous month within the same year;
+Returns the difference in total sales between each month and the previous one within the same year.
+
+The screenshot below shows the visual matrix and the visual calculation expression:
+
+![DAX visual calculation](media/dax-queries/dax-visualcalc-offset.png)
 
 ## Related content
 
