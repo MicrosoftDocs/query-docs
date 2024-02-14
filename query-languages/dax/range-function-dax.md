@@ -43,65 +43,23 @@ The \<includeCurrent>, \<axis>, \<blanks> and \<reset> parameters can be omitted
 
 ## Example 1
 
-The following DAX query:
+Given a table that summarizes the total sales for each product category and month, the following DAX query adds a column with the total sales in the last 6 months:
 
 ```dax
-DEFINE
-VAR _Core = SUMMARIZECOLUMNS(
-	'DimDate'[Year],
-	'DimDate'[MonthNumberOfYear],
-	'DimProduct'[ProductCategoryName],
-    "CurrentMonthSales", SUM('FactInternetSales'[SalesAmount])
-)
-TABLE t = _Core
-	WITH VISUAL SHAPE
-	AXIS ROWS
-		GROUP [Year], [MonthNumberOfYear]
-		ORDER BY [Year], [MonthNumberOfYear]
-	AXIS COLUMNS
-		GROUP [ProductCategoryName]
-		ORDER BY [ProductCategoryName]
-	DENSIFY "isDensified"
-COLUMN t[TotalSalesLast6Months] = CALCULATE(
-	SUM([CurrentMonthSales]),
-	RANGE(-5, Rows)
-)
-EVALUATE t
-ORDER BY t[ProductCategoryName] ASC, t[Year] ASC, t[MonthNumberOfYear] ASC
+TotalSalesLast6Months = CALCULATE(SUM([SalesAmount]), RANGE(-5, Rows))
 ```
 
-Returns a table that summarizes the total sales for each product category and month, as well as the total sales in the last 6 months.
+The screenshot below shows the visual matrix and the visual calculation expression:
+
+![DAX visual calculation](media/dax-queries/dax-visualcalc-range.png)
 
 ## Example 2
 
-The following DAX query:
+Given the same table, the following DAX query adds a column with the total sales in the following 12 months, not including the current month:
 
 ```dax
-DEFINE
-VAR _Core = SUMMARIZECOLUMNS(
-	'DimDate'[Year],
-	'DimDate'[MonthNumberOfYear],
-	'DimProduct'[ProductCategoryName],
-    "CurrentMonthSales", SUM('FactInternetSales'[SalesAmount])
-)
-TABLE t = _Core
-	WITH VISUAL SHAPE
-	AXIS ROWS
-		GROUP [Year], [MonthNumberOfYear]
-		ORDER BY [Year], [MonthNumberOfYear]
-	AXIS COLUMNS
-		GROUP [ProductCategoryName]
-		ORDER BY [ProductCategoryName]
-	DENSIFY "isDensified"
-COLUMN t[TotalSalesFollowingYear] = CALCULATE(
-	SUM([CurrentMonthSales]),
-	RANGE(12, FALSE, Rows, KEEP)
-)
-EVALUATE t
-ORDER BY t[ProductCategoryName] ASC, t[Year] ASC, t[MonthNumberOfYear] ASC
+TotalSalesFollowingYear = CALCULATE(SUM([SalesAmount]), RANGE(12, FALSE, Rows, KEEP))
 ```
-
-Returns a table that summarizes the total sales for each product category and month, as well as the total sales in the following 12 months, not including the current month.
 
 ## See also
 

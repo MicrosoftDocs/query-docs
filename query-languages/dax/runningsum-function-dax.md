@@ -42,29 +42,15 @@ The \<axis>, \<blanks> and \<reset> parameters can be omitted.
 
 ## Example
 
-The following DAX query:
+Given a table that summarizes the total sales for each product category and calendar year, the following DAX query adds a column with the total sales for that category up to a given year.
 
 ```dax
-VAR _Core = SUMMARIZECOLUMNS(
-	'DimDate'[Year],
-	'DimProduct'[ProductCategoryName],
-    "CurrentYearSales", SUM('FactInternetSales'[SalesAmount])
-)
-TABLE t = _Core
-	WITH VISUAL SHAPE
-	AXIS ROWS
-		GROUP [Year]
-		ORDER BY [Year]
-	AXIS COLUMNS
-		GROUP [ProductCategoryName]
-		ORDER BY [ProductCategoryName]
-	DENSIFY "isDensified"
-COLUMN t[SalesUpToDate] = RUNNINGSUM([CurrentYearSales], Rows)
-EVALUATE t
-ORDER BY t[ProductCategoryName] ASC, t[Year] ASC
+SalesUpToDate = RUNNINGSUM([SalesAmount], Rows)
 ```
 
-Returns a table that summarizes the total sales for each product category and calendar year, as well as the total sales for that category up to a given year.
+The screenshot below shows the visual matrix and the visual calculation expression:
+
+![DAX visual calculation](media/dax-queries/dax-visualcalc-runningsum.png)
 
 ## See also
 
