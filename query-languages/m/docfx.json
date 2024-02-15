@@ -36,6 +36,9 @@
     "externalReference": [],
     "globalMetadata": {
       "feedback_system": "Standard",
+      "feedback_product_url": "/power-query/feedback",
+      "feedback_help_link_url": "https://learn.microsoft.com/power-query/feedback",
+      "feedback_help_link_type": "ask-the-community",
       "breadcrumb_path": "/powerquery-m/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-PowerQueryM",
       "titleSuffix": "PowerQuery M",
