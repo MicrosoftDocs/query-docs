@@ -75,7 +75,7 @@ SUMMARIZECOLUMNS(
   
 This rolls up the Sales[CustomerId] column, creating a subtotal for all customers in the given grouping. Without [IGNORE](ignore-function-dax.md), the result is:  
   
-|CustomerId|TotalQty|BlankIfTotalQtyIsNot3|  
+|CustomerId|Total Qty|BlankIfTotalQtyIsNot3|  
 |--------------|------------|-------------------------|  
 |A|5||  
 |B|3|3|  
@@ -83,7 +83,7 @@ This rolls up the Sales[CustomerId] column, creating a subtotal for all customer
   
 With [IGNORE](ignore-function-dax.md),
   
-|CustomerId|TotalQty|BlankIfTotalQtyIsNot3|  
+|CustomerId|Total Qty|BlankIfTotalQtyIsNot3|  
 |--------------|------------|-------------------------|  
 |B|3|3|  
 |C|3|3|  
