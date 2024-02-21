@@ -10,7 +10,7 @@ Returns a row at an absolute position, specified by the position parameter, with
 ## Syntax  
   
 ```dax
-INDEX(<position>[, <relation>][, <orderBy>][, <blanks>][, <partitionBy>][, <matchBy>])
+INDEX(<position>[, <relation> or <axis>][, <orderBy>][, <blanks>][, <partitionBy>][, <matchBy>][, <reset>] )
 ```
   
 ### Parameters  
@@ -19,10 +19,12 @@ INDEX(<position>[, <relation>][, <orderBy>][, <blanks>][, <partitionBy>][, <matc
 |--------|--------------|  
 |position|The absolute position (1-based) from which to obtain the data: </br> - \<position> is positive: 1 is the first row, 2 is the second row, etc. </br> -  \<position> is negative: -1 is the last row, -2 is the second last row, etc. </br> When \<position> is out of the boundary, or zero, or BLANK(), INDEX will return an empty table. It can be any DAX expression that returns a scalar value.|
 |relation|(Optional) A table expression from which the output is returned. </br> If specified, all columns in \<partitionBy> must come from it or a related table.  </br> If omitted: </br> - \<orderBy> must be explicitly specified. </br> - All \<orderBy> and \<partitionBy> expressions must be fully qualified column names and come from a single table. </br> - Defaults to ALLSELECTED() of all columns in \<orderBy> and \<partitionBy>.
+|axis|(Optional) An axis in the visual shape. Available in visual calculations only, and replaces \<relation>.
 |orderBy|(Optional) An ORDERBY() clause containing the expressions that define how each partition is sorted. </br>If omitted: </br>- \<relation> must be explicitly specified. </br>- Defaults to ordering by every column in \<relation> that is not already specified in \<partitionBy>.|
 |blanks|(Optional) An enumeration that defines how to handle blank values when sorting. </br>This parameter is reserved for future use. </br>Currently, the only supported value is DEFAULT, where the behavior for numerical values is blank values are ordered between zero and negative values. The behavior for strings is blank values are ordered before all strings, including empty strings.|
 |partitionBy|(Optional) A PARTITIONBY() clause containing the columns that define how \<relation> is partitioned. </br> If omitted, \<relation> is treated as a single partition. |
 |matchBy|(Optional) A MATCHBY() clause containing the columns that define how to match data and identify the current row. |  
+|reset|(Optional) Available in visual calculations only. Indicates if the calculation resets, and at which level of the visual shape's column hierarchy. Accepted values are: NONE, LOWESTPARENT, HIGHESTPARENT, or an integer. The behavior depends on the integer sign: </br> - If zero or omitted, the calculation does not reset. Equivalent to NONE. </br> - If positive, the integer identifies the column starting from the highest, independent of grain. HIGHESTPARENT is equivalent to 1. </br> - If negative, the integer identifies the column starting from the lowest, relative to the current grain. LOWESTPARENT is equivalent to -1. |
 
 
 ## Return value
@@ -54,7 +56,9 @@ An empty table is returned if:
 
 If INDEX is used within a calculated column defined on the same table as \<relation> and \<orderBy> is omitted, an error is returned.
 
-## Example 1
+\<reset> can be used in visual calculations only, and cannot be used in combination with \<orderBy> or \<partitionBy>. If \<reset> is present, \<axis> can be specified but \<relation> cannot.
+
+## Example 1 - calculated column
 
 The following DAX query:
   
@@ -68,7 +72,7 @@ Returns the following table:
 |---------|
 |  2005   |
 
-## Example 2
+## Example 2 - calculated column
 
 The following DAX query:
 
@@ -119,6 +123,25 @@ Returns the following table:
 |217     |  10      |  6823.05      |   7767.78     |
 |217     |  11      |  6683.09      |   7767.78     |
 |217     |  12      |  7767.78      |   7767.78     |
+
+## Example 3 - visual calculation
+
+The following visual calculation DAX queries:
+
+```dax
+SalesComparedToBeginningOfYear = [SalesAmount] - CALCULATE(SUM([SalesAmount]), INDEX(1, ROWS, HIGHESTPARENT))
+
+SalesComparedToBeginningOfQuarter = [SalesAmount] - CALCULATE(SUM([SalesAmount]), INDEX(1, , -1))
+```
+
+Enhance a table so it contains, for each month:
+</br> - the total sales amount;
+</br> - the difference to the first month of the respective year;
+</br> - and the difference to the first month of the respective quarter.
+
+The screenshot below shows the visual matrix and the first visual calculation expression:
+
+![DAX visual calculation](media/dax-queries/dax-visualcalc-index.png)
 
 ## Related content
 
