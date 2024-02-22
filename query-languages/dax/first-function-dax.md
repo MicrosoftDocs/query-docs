@@ -33,60 +33,14 @@ This function can only be used in a visual calculation.
 
 ## Example
 
-With the following DAX query:
+The following visual calculation returns the sales amount of the first row on ROWS axis, that resets on the lowest parent. 
   
 ```dax
-DEFINE
-    VAR Core =
-        SUMMARIZECOLUMNS (
-            ROLLUPADDISSUBTOTAL (
-                'DimDate'[Year],
-                "IsGrandTotalRowTotal",
-                ROLLUPGROUP ( 'DimDate'[Month], 'DimDate'[MonthNumberOfYear] ),
-                "IsDM1Total"
-            ),
-            ROLLUPADDISSUBTOTAL (
-                'DimProduct'[ProductCategoryName],
-                "IsGrandTotalColumnTotal",
-                'DimProduct'[ProductSubcategoryName],
-                "IsDM4Total"
-            ),
-            "SumSalesAmount", CALCULATE ( SUM ( 'FactInternetSales'[SalesAmount] ) )
-        )
-    TABLE t = Core
-        WITH VISUAL SHAPE
-        AXIS ROWS
-            GROUP [Year]
-                TOTAL [IsGrandTotalRowTotal]
-            GROUP
-                [Month],
-                [MonthNumberOfYear]
-                TOTAL [IsDM1Total]
-            ORDER BY
-                [Year],
-                [MonthNumberOfYear]
-        AXIS COLUMNS
-            GROUP [ProductCategoryName]
-                TOTAL [IsGrandTotalColumnTotal]
-            GROUP [ProductSubcategoryName]
-                TOTAL [IsDM4Total]
-            ORDER BY
-                [ProductCategoryName],
-                [ProductSubcategoryName]
-        DENSIFY "isDensified"
-    COLUMN t[FirstInternetSalesAmount] =
-        FIRST ( [SumSalesAmount], ROWS, LowestParent )
+FirstInternetSalesAmount = FIRST ( [Sum of SalesAmount], ROWS, LowestParent )
 
-EVALUATE
-t
-ORDER BY
-    [ProductCategoryName],
-    [ProductSubcategoryName],
-    [YEAR],
-    [MonthNumberOfYear]
-```
+The screenshot below shows the visual matrix and the visual calculation expression:
 
-FirstInternetSalesAmount is added as a visual calculation that returns SalesAmount of the first row on ROWS axis, that resets on the lowest parent. On Year and Month level, it returns the SalesAmount of first month of the current year. On Year level, it returns the SalesAmount of the first year across all the years.
+![DAX visual calculation](media/dax-queries/dax-visualcalc-first.png)
 
 ## Related content
 
