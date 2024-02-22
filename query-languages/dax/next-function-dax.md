@@ -34,61 +34,15 @@ This function can only be used in a visual calculation.
 
 ## Example
 
-With the following DAX query:
+The following visual calculation returns the sales amount of the next row on ROWS axis, that resets on the lowest parent. 
   
 ```dax
-DEFINE
-    VAR Core =
-        SUMMARIZECOLUMNS (
-            ROLLUPADDISSUBTOTAL (
-                'DimDate'[Year],
-                "IsGrandTotalRowTotal",
-                ROLLUPGROUP ( 'DimDate'[Month], 'DimDate'[MonthNumberOfYear] ),
-                "IsDM1Total"
-            ),
-            ROLLUPADDISSUBTOTAL (
-                'DimProduct'[ProductCategoryName],
-                "IsGrandTotalColumnTotal",
-                'DimProduct'[ProductSubcategoryName],
-                "IsDM4Total"
-            ),
-            "SumSalesAmount", CALCULATE ( SUM ( 'FactInternetSales'[SalesAmount] ) )
-        )
-    TABLE t = Core
-        WITH VISUAL SHAPE
-        AXIS ROWS
-            GROUP [Year]
-                TOTAL [IsGrandTotalRowTotal]
-            GROUP
-                [Month],
-                [MonthNumberOfYear]
-                TOTAL [IsDM1Total]
-            ORDER BY
-                [Year],
-                [MonthNumberOfYear]
-        AXIS COLUMNS
-            GROUP [ProductCategoryName]
-                TOTAL [IsGrandTotalColumnTotal]
-            GROUP [ProductSubcategoryName]
-                TOTAL [IsDM4Total]
-            ORDER BY
-                [ProductCategoryName],
-                [ProductSubcategoryName]
-        DENSIFY "isDensified"
-    COLUMN t[NextInternetSalesAmount] =
-        NEXT ( [SumSalesAmount], ROWS, LowestParent )
-
-EVALUATE
-t
-ORDER BY
-    [ProductCategoryName],
-    [ProductSubcategoryName],
-    [YEAR],
-    [MonthNumberOfYear]
+NextInternetSalesAmount = NEXT ( [Sum of SalesAmount], ROWS, LowestParent )
 ```
 
-NextInternetSalesAmount is added as a visual calculation that returns the SalesAmount of the next row on ROWS axis, that resets on the lowest parent. On Year and Month level, it returns the SalesAmount of the next month within the current year; for the last month of the year, it returns blank. On Year level, it returns the SalesAmount of the next year of the current year; for the last year, it returns blank.
+The screenshot below shows the visual matrix and the visual calculation expression:
 
+![DAX visual calculation](media/dax-queries/dax-visualcalc-next.png)
 ## Related content
 
 [FIRST](first-function-dax.md)  
