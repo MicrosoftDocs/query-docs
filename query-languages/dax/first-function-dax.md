@@ -37,6 +37,7 @@ The following visual calculation returns the sales amount of the first row on RO
   
 ```dax
 FirstInternetSalesAmount = FIRST ( [Sum of SalesAmount], ROWS, LowestParent )
+```
 
 The screenshot below shows the visual matrix and the visual calculation expression:
 
