@@ -69,8 +69,8 @@ The screenshot below shows the matrix with the three visual calculations.
 
 ## See also
 
-[EXPAND](expand-function-dax.md)
-[EXPANDALL](expandall-function-dax.md)
-[COLLAPSEALL](collapseall-function-dax.md)
+[EXPAND](expand-function-dax.md)  
+[EXPANDALL](expandall-function-dax.md)  
+[COLLAPSEALL](collapseall-function-dax.md)  
 
 

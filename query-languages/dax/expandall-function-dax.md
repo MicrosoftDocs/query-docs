@@ -60,8 +60,8 @@ The screenshot below shows the matrix with the visual calculation.
 
 ## See also
 
-[EXPAND](expand-function-dax.md)
-[COLLAPSE](collapse-function-dax.md)
-[COLLAPSEALL](collapseall-function-dax.md)
+[EXPAND](expand-function-dax.md)  
+[COLLAPSE](collapse-function-dax.md)  
+[COLLAPSEALL](collapseall-function-dax.md)  
 
 
