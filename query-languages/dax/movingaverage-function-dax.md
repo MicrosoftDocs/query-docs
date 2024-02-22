@@ -64,8 +64,8 @@ AvgSalesPrev12Months = MOVINGAVERAGE([SalesAmount], 12, FALSE, Rows, KEEP)
 
 ## See also
 
-[INDEX](index-function-dax.md)
-[ORDERBY](orderby-function-dax.md)
-[PARTITIONBY](partitionby-function-dax.md)
-[RUNNINGSUM](runningsum-function-dax.md)
-[WINDOW](window-function-dax.md)
+[INDEX](index-function-dax.md)  
+[ORDERBY](orderby-function-dax.md)  
+[PARTITIONBY](partitionby-function-dax.md)  
+[RUNNINGSUM](runningsum-function-dax.md)  
+[WINDOW](window-function-dax.md)  
