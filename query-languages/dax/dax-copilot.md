@@ -1,6 +1,6 @@
 ---
-title: "Write DAX with Copilot | Microsoft Docs"
-description: Use Copilot to create a DAX query. Type what you're looking for in a DAX query, and Copilot can create it.
+title: "Write DAX queries with Copilot | Microsoft Docs"
+description: Use Copilot to create a DAX queries query. Type what you're looking for in a DAX query, and Copilot can create it.
 ms.service: powerbi 
 ms.date: 02/28/2024
 ms.reviewer: 
@@ -8,11 +8,11 @@ ms.topic: how-to
 author: maggieMSFT
 ms.author: maggies
 ---
-# Write DAX with Copilot
+# Write DAX queries with Copilot
 
 Try using Copilot to create a DAX query. Type what you're looking for in a DAX query and select **Send** or press <kbd>Enter</kbd>. To run what is returned, select **Keep it** to add it to query tab. Then select **Run** or press <kbd>F5</kbd> to see the results of the DAX query.  
 
-## DAX features in Copilot
+## DAX query features in Copilot
 
 Let’s look at what Copilot can help you with in the DAX query view: 
 
@@ -20,7 +20,7 @@ Let’s look at what Copilot can help you with in the DAX query view:
 - **DAX query to natural language**. Ask Copilot to explain what any DAX query is doing. 
 - **DAX functions help Copilot**. Maybe you heard about a certain DAX function or need to find the right DAX function for job, Copilot can help you here too.  
 
-## Enable Copilot for DAX
+## Enable Copilot for DAX queries
 
 In Power BI Desktop, in the **Preview features** section of the **Options**, enable **DAX query view with Copilot**.
 
@@ -30,9 +30,9 @@ Then navigate to the DAX query view and select the **Copilot** button or <kbd>CT
 
 Let’s try some Copilot prompts, using sample data in Power BI Desktop, with some additional measures.  
 
-## Sample prompts for writing DAX
+## Sample prompts for writing DAX queries
 
-Here is a collection of sample prompts to illustrate how to get Copilot to write the DAX you want.
+Here is a collection of sample prompts to illustrate how to get Copilot to write the DAX queries you want.
 
 - [List products and show the last three months' profit compared to the previous three months](#list-products-and-show-the-last-three-months-profit-compared-to-the-previous-three-months).
 - [Add a column to show the difference](#add-a-column-to-show-the-difference).

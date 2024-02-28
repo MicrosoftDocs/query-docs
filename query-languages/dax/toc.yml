@@ -12,7 +12,7 @@
           href: https://aka.ms/learndax
         - name: "Sample model"
           href: dax-sample-model.md 
-        - name: "Write DAX with Copilot"
+        - name: "Write DAX queries with Copilot"
           href: dax-copilot.md 
         - name: Best practices
           items:
