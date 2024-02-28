@@ -1,6 +1,6 @@
 ---
 title: "Write DAX queries with Copilot | Microsoft Docs"
-description: Use Copilot to create a DAX queries query. Type what you're looking for in a DAX query, and Copilot can create it.
+description: Use Copilot to create a DAX queries query. Type in a prompt to describe what DAX query you would like generated, and Copilot can create it.
 ms.service: powerbi 
 ms.date: 02/28/2024
 ms.reviewer: 
@@ -10,7 +10,7 @@ ms.author: maggies
 ---
 # Write DAX queries with Copilot
 
-Try using Copilot to create a DAX query. Type what you're looking for in a DAX query and select **Send** or press <kbd>Enter</kbd>. To run what is returned, select **Keep it** to add it to query tab. Then select **Run** or press <kbd>F5</kbd> to see the results of the DAX query.  
+Try using Copilot to create a DAX query. Type in a prompt to describe what DAX query you would like generated and select **Send** or press <kbd>Enter</kbd>. To run what is returned, select **Keep it** to add it to query tab. Then select **Run** or press <kbd>F5</kbd> to see the results of the DAX query.  
 
 ## DAX query features in Copilot
 
