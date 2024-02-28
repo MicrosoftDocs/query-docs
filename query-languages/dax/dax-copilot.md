@@ -59,7 +59,7 @@ Let's see the difference between the last three months and the previous three mo
 
 ### Add a column to show the difference 
 
-This time my selection is showing fitted to the text and the background shading highlights what is being sent with my request to Copilot. 
+This time the selection is showing fitted to the text and the background shading highlights what is being sent with the request to Copilot. 
 
 :::image type="content" source="media/dax-copilot/dax-copilot-show-diff.png" alt-text="Screenshot showing Run the query that calculated the profit." lightbox="media/dax-copilot/dax-copilot-show-diff.png":::
 
@@ -77,7 +77,7 @@ Maybe those comments aren't working for me. Let’s get a full explanation.
 
 ### Explain what this query does 
 
-Again, highlight the whole query and invoke Copilot with my request:
+Again, highlight the whole query and invoke Copilot with this request:
 
 "Explain to me what this query does."
 
