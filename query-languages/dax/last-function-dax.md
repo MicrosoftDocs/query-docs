@@ -33,60 +33,15 @@ This function can only be used in a visual calculation.
 
 ## Example
 
-With the following DAX query:
+The following visual calculation returns the sales amount of the last row on ROWS axis, that resets on the lowest parent. 
   
 ```dax
-DEFINE
-    VAR Core =
-        SUMMARIZECOLUMNS (
-            ROLLUPADDISSUBTOTAL (
-                'DimDate'[Year],
-                "IsGrandTotalRowTotal",
-                ROLLUPGROUP ( 'DimDate'[Month], 'DimDate'[MonthNumberOfYear] ),
-                "IsDM1Total"
-            ),
-            ROLLUPADDISSUBTOTAL (
-                'DimProduct'[ProductCategoryName],
-                "IsGrandTotalColumnTotal",
-                'DimProduct'[ProductSubcategoryName],
-                "IsDM4Total"
-            ),
-            "SumSalesAmount", CALCULATE ( SUM ( 'FactInternetSales'[SalesAmount] ) )
-        )
-    TABLE t = Core
-        WITH VISUAL SHAPE
-        AXIS ROWS
-            GROUP [Year]
-                TOTAL [IsGrandTotalRowTotal]
-            GROUP
-                [Month],
-                [MonthNumberOfYear]
-                TOTAL [IsDM1Total]
-            ORDER BY
-                [Year],
-                [MonthNumberOfYear]
-        AXIS COLUMNS
-            GROUP [ProductCategoryName]
-                TOTAL [IsGrandTotalColumnTotal]
-            GROUP [ProductSubcategoryName]
-                TOTAL [IsDM4Total]
-            ORDER BY
-                [ProductCategoryName],
-                [ProductSubcategoryName]
-        DENSIFY "isDensified"
-    COLUMN t[LastInternetSalesAmount] =
-        LAST ( [SumSalesAmount], ROWS, LowestParent )
-
-EVALUATE
-t
-ORDER BY
-    [ProductCategoryName],
-    [ProductSubcategoryName],
-    [YEAR],
-    [MonthNumberOfYear]
+LastInternetSalesAmount = LAST ( [Sum of SalesAmount], ROWS, LowestParent )
 ```
 
-LastInternetSalesAmount is added as a visual calculation that returns SalesAmount of the last row on ROWS axis, that resets on the lowest parent. On Year and Month level, it returns the SalesAmount of last month of the current year. On Year level, it returns the SalesAmount of the last year across all the years.
+The screenshot below shows the visual matrix and the visual calculation expression:
+
+![DAX visual calculation](media/dax-queries/dax-visualcalc-last.png)
 
 ## Related content
 
