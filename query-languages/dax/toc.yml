@@ -12,6 +12,8 @@
           href: https://aka.ms/learndax
         - name: "Sample model"
           href: dax-sample-model.md 
+        - name: "Write DAX queries with Copilot"
+          href: dax-copilot.md 
         - name: Best practices
           items:
           - name: "Understanding ORDERBY, PARTITIONBY, and MATCHBY functions"
@@ -173,18 +175,24 @@
               href: lookupvalue-function-dax.md
             - name: MATCHBY
               href: matchby-function-dax.md
+            - name: MOVINGAVERAGE
+              href: movingaverage-function-dax.md
             - name: OFFSET
               href: offset-function-dax.md
             - name: ORDERBY
               href: orderby-function-dax.md
             - name: PARTITIONBY
               href: partitionby-function-dax.md
+            - name: RANGE
+              href: range-function-dax.md
             - name: RANK
               href: rank-function-dax.md
             - name: REMOVEFILTERS
               href: removefilters-function-dax.md
             - name: ROWNUMBER
               href: rownumber-function-dax.md
+            - name: RUNNINGSUM
+              href: runningsum-function-dax.md
             - name: SELECTEDVALUE
               href: selectedvalue-function.md
             - name: WINDOW
@@ -673,11 +681,11 @@
               href: naturalleftouterjoin-function-dax.md
             - name: ROLLUP
               href: rollup-function-dax.md
-            - name: ROLLUPADDISUBTOTAL
+            - name: ROLLUPADDISSUBTOTAL
               href: rollupaddissubtotal-function-dax.md
             - name: ROLLUPGROUP
               href: rollupgroup-function-dax.md
-            - name: ROLLUPISUBTOTAL
+            - name: ROLLUPISSUBTOTAL
               href: rollupissubtotal-function-dax.md
             - name: ROW
               href: row-function-dax.md
