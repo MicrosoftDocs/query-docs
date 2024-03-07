@@ -2,7 +2,7 @@
 title: M Language Consolidated Grammar 
 description: Describes all of the grammar associated with the Power Query M formula language
 ms.topic: conceptual
-ms.date: 2/2/24
+ms.date: 0202/2024
 ms.custom: "nonautomated-date"
 ---
 
