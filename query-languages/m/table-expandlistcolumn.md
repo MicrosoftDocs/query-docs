@@ -27,7 +27,7 @@ Table.ExpandListColumn(
 )
 ```
 
-## Example 1
+## Example 2
 
 Split the nested table column [Components] in the table.
 
