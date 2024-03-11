@@ -63,7 +63,7 @@ TotalSalesFollowingYear = CALCULATE(SUM([SalesAmount]), RANGE(12, FALSE, Rows, K
 
 ## See also
 
-[INDEX](index-function-dax.md)
-[ORDERBY](orderby-function-dax.md)
-[PARTITIONBY](partitionby-function-dax.md)
-[WINDOW](window-function-dax.md)
+[INDEX](index-function-dax.md)  
+[ORDERBY](orderby-function-dax.md)  
+[PARTITIONBY](partitionby-function-dax.md)  
+[WINDOW](window-function-dax.md)  
