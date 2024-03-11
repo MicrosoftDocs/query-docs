@@ -60,7 +60,7 @@ Given a table that summarizes the total sales for a hierarchy with levels for to
 ```dax
 ParentValue = COLLAPSE([SalesAmount], ROWS)
 GrandParentValue = COLLAPSE([SalesAmount], ROWS, 2)
-YearOrSelfValue = COLLAPSE([SalesAmount], [Month])
+QuarterOrSelfValue = COLLAPSE([SalesAmount], [Month])
 ```
 
 The screenshot below shows the matrix with the three visual calculations.
