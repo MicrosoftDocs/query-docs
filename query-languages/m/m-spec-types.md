@@ -2,7 +2,7 @@
 title: M Language types 
 description: Describes using types in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 8/2/2022
+ms.date: 1/31/2024
 ms.custom: "nonautomated-date"
 ---
 
@@ -244,6 +244,13 @@ type function (y as number, optional z as text) as any
 A function value conforms to a function type if the return type of the function value is compatible with the function type's return type and each parameter specification of the function type is compatible to the positionally corresponding formal parameter of the function. A parameter specification is compatible with a formal parameter if the specified _parameter-type_ type is compatible with the type of the formal parameter and the parameter specification is optional if the formal parameter is optional.
 
 Formal parameter names are ignored for the purposes of determining function type conformance.
+
+Specifying a parameter as optional implicitly makes its type nullable. The following create identical function types:
+
+```powerquery-m
+type function (optional x as text) as any
+type function (optional x as nullable text) as any
+```
 
 ## Table types
 
