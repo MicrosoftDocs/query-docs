@@ -26,7 +26,7 @@ A whole number.
 
 - This function can be used to count the number of rows in a base table, but more often is used to count the number of rows that result from filtering a table, or applying context to a table.  
   
-- Whenever there are no rows to aggregate, the function returns a blank.  However, if there are rows, but none of them meet the specified criteria, the function returns 0. Microsoft Excel also returns a zero if no rows are found that meet the conditions.  
+- When the table argument contains no rows, the function returns BLANK.
 
 - To learn more about best practices when using COUNT and COUNTROWS, see [Use COUNTROWS instead of COUNT in DAX](best-practices/dax-countrows.md).
 
