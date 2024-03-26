@@ -12,7 +12,7 @@ DateTime.Date(<b>dateTime</b> as any) as nullable date
   
 ## About
 
-Returns the date component of value `dateTime`, if that input is a `date`, `datetime`, or `datetimezone` value. If, instead, `null` is input, `null` is returned.
+Returns the date component of the `dateTime` parameter if the parameter is a `date`, `datetime`, or `datetimezone` value, or `null` if the parameter `null`.
 
 ## Example 1
 
