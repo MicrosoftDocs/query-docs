@@ -16,7 +16,8 @@ lexical-elements:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lexical-element lexical-elements<sub>opt</sub><br/>
 lexical-element:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;whitespace<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;token comment_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;token<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;comment_
 
 ### White space
 
