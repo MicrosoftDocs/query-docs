@@ -16,7 +16,7 @@ Given a `table`, when `column` contains a list of values, splits the list into a
 
 ## Example 1
 
-Split the list column [Name] in the table.
+Split the list column [Name].
 
 **Usage**
 
@@ -29,7 +29,7 @@ Table.ExpandListColumn(
 
 ## Example 2
 
-Split the nested table column [Components] in the table.
+Split the nested table column [Components].
 
 **Usage**
 
