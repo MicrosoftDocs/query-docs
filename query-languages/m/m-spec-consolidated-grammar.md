@@ -2,7 +2,7 @@
 title: M Language Consolidated Grammar 
 description: Describes all of the grammar associated with the Power Query M formula language
 ms.topic: conceptual
-ms.date: 2/2/2024
+ms.date: 02/02/2024
 ms.custom: "nonautomated-date"
 ---
 
@@ -16,7 +16,8 @@ lexical-elements:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lexical-element lexical-elements<sub>opt</sub><br/>
 lexical-element:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;whitespace<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;token comment_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;token<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;comment_
 
 ### White space
 
@@ -417,9 +418,6 @@ required-field-selector:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-name_  `]`<br/>
 _optional-field-selector:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-name_  `] ?`<br/>
-_field-name:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quoted-identifier<br/>
 implicit-target-field-selection:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-selector<br/>
 projection:<br/>
