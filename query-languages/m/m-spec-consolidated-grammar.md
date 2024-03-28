@@ -2,7 +2,7 @@
 title: M Language Consolidated Grammar 
 description: Describes all of the grammar associated with the Power Query M formula language
 ms.topic: conceptual
-ms.date: 02/02/2024
+ms.date: 03/28/2024
 ms.custom: "nonautomated-date"
 ---
 
@@ -146,7 +146,6 @@ _verbatim-literal:_<br/>
 _identifier:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;regular-identifier<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quoted-identifier<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier<br/>
 regular-identifier:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;available-identifier<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;available-identifier  dot-character  regular-identifier<br/>
@@ -169,15 +168,6 @@ identifier-part-character:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;connecting-character<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;combining-character<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;formatting-character<br/>
-generalized-identifier:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier-part<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier_ separated only by blanks (`U+0020`) _generalized-identifier-part<br/>
-generalized-identifier-part:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier-segment<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digit-character generalized-identifier-segment<br/>
-generalized-identifier-segment:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;keyword-or-identifier<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;keyword-or-identifier dot-character  keyword-or-identifier<br/>
 dot-character:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`.`  (`U+002E`)<br/>
 _underscore-character:_<br/>
@@ -341,7 +331,10 @@ identifier-reference:<br/>
 exclusive-identifier-reference:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier<br/>
 inclusive-identifier-reference:_<br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`@`  _identifier_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`@`  _identifier<br />
+generalized-identifier:_<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the range of text spanned by a sequence of one or more tokens, other than `=` or `]`<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;but only if that text complies with the generalized identifier grammar
 
 #### Section-access expression
 
@@ -607,3 +600,34 @@ any-literal:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number-literal<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;null-literal_
+
+
+## Generalized identifer grammar
+
+Compliance with this grammar can be validated using the following regular expression:
+````
+(?x)^
+# generalized-identifier-always-valid-character
+[(\p{L})|(\p{Nl})|(\p{Nd})|(\p{Mn})|(\p{Mc})|(\p{Pc})(\p{Cf})]
+
+# (generalized-identifier-inner-valid-segment* period? generalized-identifier-always-valid-character)?
+(?:
+    # generalized-identifier-inner-valid-segment
+    (?:.?[(\p{L})|(\p{Nl})|(\p{Nd})|(\p{Mn})|(\p{Mc})|(\p{Pc})(\p{Cf})\s])*
+
+    # period? generalized-identifier-always-valid-character
+    .?[(\p{L})|(\p{Nl})|(\p{Nd})|(\p{Mn})|(\p{Mc})|(\p{Pc})(\p{Cf})]
+)?
+$
+````
+
+_space:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Space character (`U+0020`)<br/>
+_period:_<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Period character (`U+002E`))<br/>
+_generalized-identifier-always-valid-character_:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any character in the following Unicode classes: Lu (Uppercase Letter), Ll (Lowercase Letter), Lt (Titlecase Letter), Lm (Modifier Letter), Lo (Other Letter), Nl (Letter Number), Nd (Decimal Number), Mn (Nonspacing Mark), Mc (Spacing Mark), Pc (Connector Punctuation),  Cf (Format)<br/>
+_generalized-identifier-inner-valid-segment:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period? (generalized-identifier-always-valid-character | space)<br/>
+generalized-identifier-syntax:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier-always-valid-character (generalized-identifier-inner-valid-segment* period? generalized-identifier-always-valid-character)?_
