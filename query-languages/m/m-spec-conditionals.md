@@ -2,7 +2,7 @@
 title: M Language Conditionals 
 description: Describes using conditionals in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 8/2/2022
+ms.date: 03/29/2024
 ms.custom: "nonautomated-date"
 ---
 
