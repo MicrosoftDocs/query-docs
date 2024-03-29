@@ -10,6 +10,8 @@
           href: dax-learn-videos.md
         - name: Use DAX in Power BI Desktop Learn path
           href: https://aka.ms/learndax
+        - name: Write DAX queries with Copilot
+          href: dax-copilot.md
         - name: "Sample model"
           href: dax-sample-model.md 
         - name: Best practices
