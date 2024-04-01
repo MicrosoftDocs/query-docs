@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date functions"
 title: "Date functions"
-ms.date: 11/14/2022
+ms.date: 03/29/2024
 ms.custom: "nonautomated-date"
 ---
 # Date functions
