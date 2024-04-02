@@ -13,7 +13,7 @@ recommendations: false
 
 # MOVINGAVERAGE
 
-Returns a moving average calculated along the given axis of the visual calculation data grid. That is, the average of the given column calculated over the last \<windowSize> rows.
+Returns a moving average calculated along the given axis of the visual matrix. That is, the average of the given column calculated over the last \<windowSize> rows.
 
 ## Syntax
 
