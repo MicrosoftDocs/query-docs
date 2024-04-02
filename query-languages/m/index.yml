@@ -1,13 +1,13 @@
 ### YamlMime:Landing 
 
 title: Power Query M formula language
-summary: Microsoft Power Query provides a powerful data import experience that encompasses many features. Power Query works with Analysis Services, Excel, and Power BI workbooks. A core capability of Power Query is to filter and combine, that is, to mash-up data from one or more of a rich collection of supported data sources. Any such data mashup is expressed using the Power Query M formula language. It's a functional, case sensitive language similar to F#.
+summary: Microsoft Power Query provides a powerful data import experience that encompasses many features. Power Query works with desktop Analysis Services, Excel, and Power BI workbooks, in addition to many online services, such as Fabric, Power BI service, Power Apps, Microsoft 365 Customer Insights, and more. A core capability of Power Query is to filter and combine, that is, to mash-up data from one or more of a rich collection of supported data sources. Any such data mashup is expressed using the Power Query M formula language. The M language is a functional, case sensitive language similar to F#.
 
 metadata: 
   title: Power Query M formula language reference
   description: Power Query M is used to filter, combine, and mash-up data from one or more supported data sources.  
   ms.topic: landing-page
-  ms.date: 7/6/2023
+  ms.date: 3/27/2024
   ms.custom: nonautomated-date
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
@@ -32,16 +32,6 @@ landingContent:
         links:
           - text: Power Query documentation
             url: /power-query
-
-  # Card
-  - title: Functions
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Power Query M function reference
-            url: power-query-m-function-reference.md
-      - linkListType: overview
-        links:
           - text: Understanding Power Query M functions
             url: understanding-power-query-m-functions.md
 
@@ -54,3 +44,18 @@ landingContent:
             url: power-query-m-language-specification.md
           - text: Power Query M type system
             url: power-query-m-type-system.md
+
+  # Card
+  - title: Reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Power Query M function reference
+            url: power-query-m-function-reference.md
+          - text: Power Query M enumeration reference
+            url: enumerations.md
+          - text: Power Query M constant reference
+            url: constants.md
+          - text: Power Query M dynamic value reference
+            url: dynamic-values.md
+

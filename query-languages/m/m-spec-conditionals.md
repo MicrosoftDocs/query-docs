@@ -37,4 +37,4 @@ The following holds when evaluating an _if-expression_:
 
 * The result of the _if-expression_ is the value of the _true-expression_ if the _if-condition_ is `true`, and the value of the _false-expression_ if the _if-condition_ is `false`.
 
-* Errors raised during the evaluation of the _if-condition_, _true-expression_, or _falseexpression_ are propagated.
+* Errors raised during the evaluation of the _if-condition_, _true-expression_, or _false-expression_ are propagated.
