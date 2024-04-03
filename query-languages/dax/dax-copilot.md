@@ -7,6 +7,8 @@ ms.reviewer:
 ms.topic: how-to
 author: maggieMSFT
 ms.author: maggies
+no-loc: [CoPilot]
+#customer intent: As a DAX query writer, I want to use Copilot to help me write queries.
 ---
 # Write DAX queries with Copilot
 
