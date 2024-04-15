@@ -7,7 +7,8 @@ title: "Date.DayOfWeekName"
 ## Syntax
 
 <pre>
-Date.DayOfWeekName(<b>date</b> as any, optional <b>culture</b> as nullable text)
+Date.DayOfWeekName(<b>date</b> as any, optional <b>culture</b> as nullable text) as nullable text
+
 </pre>
 
 ## About

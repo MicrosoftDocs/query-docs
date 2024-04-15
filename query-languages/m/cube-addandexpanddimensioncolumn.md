@@ -6,7 +6,8 @@ title: "Cube.AddAndExpandDimensionColumn"
 
 ## Syntax
 
-<pre>Cube.AddAndExpandDimensionColumn(**cube** as table, **dimensionSelector** as any, **attributeNames** as list, optional **newColumnNames** as any) as table
+<pre>
+Cube.AddAndExpandDimensionColumn(<b>cube</b> as table, <b>dimensionSelector</b> as any, <b>attributeNames</b> as list, optional <b>newColumnNames</b> as any) as table
 </pre>
 
 ## About
