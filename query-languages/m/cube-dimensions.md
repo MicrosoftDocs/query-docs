@@ -7,7 +7,7 @@ title: "Cube.Dimensions"
 ## Syntax
 
 <pre>
-Cube.Dimensions(**cube** as table) as table
+Cube.Dimensions(<b>cube</b> as table) as table
 </pre>
 
 ## About

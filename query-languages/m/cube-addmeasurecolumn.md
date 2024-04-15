@@ -7,7 +7,7 @@ title: "Cube.AddMeasureColumn"
 ## Syntax
 
 <pre>
-Cube.AddMeasureColumn(**cube** as table, **column** as text, **measureSelector** as any) as table
+Cube.AddMeasureColumn(<b>cube</b> as table, <b>column</b> as text, <b>measureSelector</b> as any) as table
 </pre>
 
 ## About
