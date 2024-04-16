@@ -7,7 +7,7 @@ title: "Cube.Measures"
 ## Syntax
 
 <pre>
-Cube.Measures(**cube** as any) as table
+Cube.Measures(<b>cube</b> as any) as table
 </pre>
 
 ## About
