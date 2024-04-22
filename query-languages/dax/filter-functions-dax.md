@@ -37,5 +37,5 @@ The filter and value functions in DAX are some of the most complex and powerful,
 |[REMOVEFILTERS](removefilters-function-dax.md)|Clears filters from the specified tables or columns.|
 |[ROWNUMBER](rownumber-function-dax.md)| Returns the unique ranking of a row within the given interval.  |
 |[RUNNINGSUM](runningsum-function-dax.md)|Returns a running sum calculated along the given axis of the visual matrix.|
-|[SELECTEDVALUE](selectedvalue-function.md)     |  Returns the value when the context for columnName has been filtered down to one distinct value only. Otherwise returns alternateResult.         |
+|[SELECTEDVALUE](selectedvalue-function-dax.md)     |  Returns the value when the context for columnName has been filtered down to one distinct value only. Otherwise returns alternateResult.         |
 |[WINDOW](window-function-dax.md)| Returns multiple rows which are positioned within the given interval.  |

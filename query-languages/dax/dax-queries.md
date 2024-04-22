@@ -197,5 +197,5 @@ Reference XMLA parameters by prefixing the name of the parameter with an `@` cha
 
 [DAX statements](statements-dax.md)  
 [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md)  
-[TREATAS](treatas-function.md)  
+[TREATAS](treatas-function-dax.md)  
 [FILTER](filter-function-dax.md)  
