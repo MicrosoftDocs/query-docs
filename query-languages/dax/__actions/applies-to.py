@@ -1,10 +1,11 @@
-from os import listdir
+from os import listdir, getcwd
 from os.path import isfile, join
 import csv
 
 DEBUG = False
 VERBOSE = False
 
+cwd = getcwd()
 MDPath = "..//"
 functionFileTail = "-function-dax.md"
 appliesToPath = "..//includes//"
@@ -30,7 +31,7 @@ appliesToDiscouragedForVisualCalculations = appliesToPath+appliesToDiscouragedFo
 
 # load AppliesToStatusFile
 appliesToFileContents = None
-with open(appliesToStatusFile, 'r') as atsfile:
+with open(join(cwd, appliesToStatusFile), 'r') as atsfile:
     appliesToFileContents = dict(csv.reader(atsfile))
     # capitalize everything just in case
     appliesToFileContents = {k.upper(): v.upper() for k, v
