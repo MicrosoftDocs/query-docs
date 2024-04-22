@@ -49,6 +49,36 @@
 			"source_path": "query-languages/m/table-onerror.md",
 			"redirect_url": "/m/function-values",
 			"redirect_document_id": false
+		},
+		{
+			"source_path": "query-languages/dax/crossfilter-function.md",
+			"redirect_url": "/dax/containsrow-function-dax",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "query-languages/dax/datatable-function.md",
+			"redirect_url": "/dax/datatable-function-dax",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "query-languages/dax/error-function.md",
+			"redirect_url": "/dax/error-function-dax",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "query-languages/dax/generateseries-function.md",
+			"redirect_url": "/dax/generateseries-function-dax",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "query-languages/dax/selectedvalue-function.md",
+			"redirect_url": "/dax/selectedvalue-function-dax",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "query-languages/dax/treatas-function.md",
+			"redirect_url": "/dax/treatas-function-dax",
+			"redirect_document_id": false
 		}
 	]
 }
