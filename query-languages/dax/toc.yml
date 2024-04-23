@@ -192,7 +192,7 @@
             - name: RUNNINGSUM
               href: runningsum-function-dax.md
             - name: SELECTEDVALUE
-              href: selectedvalue-function.md
+              href: selectedvalue-function-dax.md
             - name: WINDOW
               href: window-function-dax.md
         - name: Financial functions
@@ -512,7 +512,7 @@
             - name: BLANK
               href: blank-function-dax.md
             - name: ERROR
-              href: error-function.md
+              href: error-function-dax.md
             - name: EVALUATEANDLOG
               href: evaluateandlog-function-dax.md
             - name: TOCSV
@@ -540,7 +540,7 @@
             - name: Relationship functions
               href: relationship-functions-dax.md
             - name: CROSSFILTER
-              href: crossfilter-function.md
+              href: crossfilter-function-dax.md
             - name: RELATED
               href: related-function-dax.md
             - name: RELATEDTABLE
@@ -650,7 +650,7 @@
             - name: CURRENTGROUP 
               href: currentgroup-function-dax.md
             - name: DATATABLE
-              href: datatable-function.md
+              href: datatable-function-dax.md
             - name: DETAILROWS
               href: detailrows-function-dax.md
             - name: DISTINCT (column)
@@ -666,7 +666,7 @@
             - name: GENERATEALL
               href: generateall-function-dax.md
             - name: GENERATESERIES
-              href: generateseries-function.md
+              href: generateseries-function-dax.md
             - name: GROUPBY
               href: groupby-function-dax.md
             - name: IGNORE
@@ -700,7 +700,7 @@
             - name: TOPN
               href: topn-function-dax.md
             - name: TREATAS
-              href: treatas-function.md
+              href: treatas-function-dax.md
             - name: UNION
               href: union-function-dax.md
             - name: VALUES
