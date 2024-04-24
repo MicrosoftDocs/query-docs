@@ -1402,6 +1402,8 @@ items:
         href: excel-shapetable.md
       - name: Graph.Nodes
         href: graph-nodes.md
+      - name: Module.Versions
+        href: module-versions.md
       - name: Progress.DataSourceProgress
         href: progress-datasourceprogress.md
       - name: SqlExpression.SchemaFrom
