@@ -4,6 +4,8 @@ title: "DISTINCT (table) function (DAX) | Microsoft Docs"
 ---
 # DISTINCT (table)
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a table by removing duplicate rows from another table or expression.
   
 ## Syntax  

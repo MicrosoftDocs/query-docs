@@ -4,6 +4,8 @@ title: "RANK.EQ  function (DAX) | Microsoft Docs"
 ---
 # RANK.EQ
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the ranking of a number in a list of numbers.  
   
 ## Syntax  

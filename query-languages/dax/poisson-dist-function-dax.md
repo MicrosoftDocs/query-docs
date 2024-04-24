@@ -4,6 +4,8 @@ title: "POISSON.DIST function (DAX) | Microsoft Docs"
 ---
 # POISSON.DIST
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the Poisson distribution. A common application of the Poisson distribution is predicting the number of events over a specific time, such as the number of cars arriving at a toll plaza in 1 minute.  
   
 ## Syntax  

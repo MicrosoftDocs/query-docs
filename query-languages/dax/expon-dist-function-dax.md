@@ -4,6 +4,8 @@ title: "EXPON.DIST function (DAX) | Microsoft Docs"
 ---
 # EXPON.DIST
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the exponential distribution. Use EXPON.DIST to model the time between events, such as how long an automated bank teller takes to deliver cash. For example, you can use EXPON.DIST to determine the probability that the process takes at most 1 minute.  
   
 ## Syntax  

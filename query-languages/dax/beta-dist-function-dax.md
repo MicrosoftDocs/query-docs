@@ -4,6 +4,8 @@ title: "BETA.DIST function (DAX) | Microsoft Docs"
 ---
 # BETA.DIST
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the beta distribution. The beta distribution is commonly used to study variation in the percentage of something across samples, such as the fraction of the day people spend watching television.  
   
 ## Syntax  
