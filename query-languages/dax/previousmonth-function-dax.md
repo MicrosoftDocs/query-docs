@@ -4,6 +4,8 @@ title: "PREVIOUSMONTH function (DAX) | Microsoft Docs"
 ---
 # PREVIOUSMONTH
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Returns a table that contains a column of all dates from the previous month, based on the first date in the **Dates** column, in the current context.  
   
 ## Syntax  

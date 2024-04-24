@@ -3,6 +3,8 @@ description: "Learn more about: UNION"
 title: "UNION function (DAX) | Microsoft Docs"
 ---
 # UNION
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
   
 Creates a union (join) table from a pair of tables.  
   

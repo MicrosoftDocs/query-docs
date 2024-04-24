@@ -4,6 +4,8 @@ title: "MINX function (DAX) | Microsoft Docs"
 ---
 # MINX
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the lowest value that results from evaluating an expression for each row of a table.  
 
 ## Syntax

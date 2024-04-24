@@ -4,6 +4,8 @@ title: "DATESBETWEEN function (DAX) | Microsoft Docs"
 ---
 # DATESBETWEEN
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Returns a table that contains a column of dates that begins with a specified start date and continues until a specified end date.
 
 This function is suited to pass as a filter to the [CALCULATE](calculate-function-dax.md) function. Use it to filter an expression by a custom date range.

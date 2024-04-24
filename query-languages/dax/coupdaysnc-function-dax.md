@@ -5,6 +5,8 @@ title: "COUPDAYSNC function (DAX) | Microsoft Docs"
 
 # COUPDAYSNC
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the number of days from the settlement date to the next coupon date.
 
 ## Syntax

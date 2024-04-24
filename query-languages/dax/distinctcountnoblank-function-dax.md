@@ -4,6 +4,8 @@ title: "DISTINCTCOUNTNOBLANK function (DAX) | Microsoft Docs"
 ---
 # DISTINCTCOUNTNOBLANK
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Counts the number of distinct values in a column.
   
 ## Syntax  

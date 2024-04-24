@@ -4,6 +4,8 @@ title: "TOTALMTD function (DAX) | Microsoft Docs"
 ---
 # TOTALMTD
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Evaluates the value of the **expression** for the month to date, in the current context.  
   
 ## Syntax  

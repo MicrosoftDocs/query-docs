@@ -4,6 +4,8 @@ title: "FILTER function (DAX) | Microsoft Docs"
 ---
 # FILTER
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a table that represents a subset of another table or expression.  
   
 ## Syntax  

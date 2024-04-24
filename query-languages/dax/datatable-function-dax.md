@@ -4,6 +4,8 @@ title: "DATATABLE function | Microsoft Docs"
 ---
 # DATATABLE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Provides a mechanism for declaring an inline set of data values.  
   
 ## Syntax  

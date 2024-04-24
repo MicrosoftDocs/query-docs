@@ -4,6 +4,8 @@ title: "CONVERT function (DAX) | Microsoft Docs"
 ---
 # CONVERT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Converts an expression of one data type to another.
   
 ## Syntax  

@@ -5,6 +5,8 @@ title: "OR function (DAX) | Microsoft Docs"
 
 # OR
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Checks whether one of the arguments is TRUE to return TRUE. The function returns FALSE if both arguments are FALSE.  
   
 ## Syntax  

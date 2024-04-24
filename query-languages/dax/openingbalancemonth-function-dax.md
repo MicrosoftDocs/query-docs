@@ -4,6 +4,8 @@ title: "OPENINGBALANCEMONTH function (DAX) | Microsoft Docs"
 ---
 # OPENINGBALANCEMONTH
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Evaluates the **expression** at the first date of the month in the current context.  
   
 ## Syntax  

@@ -4,6 +4,8 @@ title: "UNICODE function (DAX) | Microsoft Docs"
 ---
 # UNICODE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the number (code point) corresponding to the first character of the text.
   
 ## Syntax  

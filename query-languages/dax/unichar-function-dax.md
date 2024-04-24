@@ -4,6 +4,8 @@ title: "UNICHAR function (DAX) | Microsoft Docs"
 ---
 # UNICHAR
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the Unicode character referenced by the numeric value.
   
 ## Syntax  

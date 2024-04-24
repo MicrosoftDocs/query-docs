@@ -4,6 +4,8 @@ title: "CROSSJOIN  function (DAX) | Microsoft Docs"
 ---
 # CROSSJOIN
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a table that contains the Cartesian product of all rows from all tables in the arguments. The columns in the new table are all the columns in all the argument tables.  
   
 ## Syntax  

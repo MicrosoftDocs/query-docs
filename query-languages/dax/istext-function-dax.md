@@ -4,6 +4,8 @@ title: "ISTEXT function (DAX) | Microsoft Docs"
 ---
 # ISTEXT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Checks if a value is text, and returns TRUE or FALSE.  
   
 ## Syntax  

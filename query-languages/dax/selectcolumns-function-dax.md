@@ -4,6 +4,8 @@ title: "SELECTCOLUMNS function (DAX) | Microsoft Docs"
 ---
 # SELECTCOLUMNS
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a table with selected columns from the table and new columns specified by the DAX expressions.  
   
 ## Syntax  

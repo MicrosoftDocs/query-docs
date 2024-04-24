@@ -6,6 +6,8 @@ author: jajin7
 
 # PPMT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the payment on the principal for a given period for an investment based on periodic, constant payments and a constant interest rate.
 
 ## Syntax

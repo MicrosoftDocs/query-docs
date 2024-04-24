@@ -4,6 +4,8 @@ title: "REPLACE function (DAX) | Microsoft Docs"
 ---
 # REPLACE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 REPLACE replaces part of a text string, based on the number of characters you specify, with a different text string.  
   
 ## Syntax  

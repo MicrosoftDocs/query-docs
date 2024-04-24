@@ -4,6 +4,8 @@ title: "TRIM function (DAX) | Microsoft Docs"
 ---
 # TRIM
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Removes all spaces from text except for single spaces between words.  
   
 ## Syntax  

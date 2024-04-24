@@ -4,6 +4,8 @@ title: "SEARCH function (DAX) | Microsoft Docs"
 ---
 # SEARCH
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the number of the character at which a specific character or text string is first found, reading left to right. Search is case-insensitive and accent sensitive.  
   
 ## Syntax  

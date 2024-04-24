@@ -4,6 +4,8 @@ title: "AND function (DAX) | Microsoft Docs"
 ---
 # AND
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Checks whether both arguments are TRUE, and returns TRUE if both arguments are TRUE. Otherwise returns false.  
   
 ## Syntax  

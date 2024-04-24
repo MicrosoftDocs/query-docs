@@ -4,6 +4,8 @@ title: "SUMX function (DAX) | Microsoft Docs"
 ---
 # SUMX
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the sum of an expression evaluated for each row in a table.  
   
 ## Syntax  

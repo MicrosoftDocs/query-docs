@@ -5,6 +5,8 @@ title: "QUARTER function (DAX) | Microsoft Docs"
 
 # QUARTER
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the quarter as a number from 1 (January – March) to 4 (October – December).
   
 ## Syntax  

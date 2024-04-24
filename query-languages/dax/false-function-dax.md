@@ -4,6 +4,8 @@ title: "FALSE function (DAX) | Microsoft Docs"
 ---
 # FALSE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the logical value FALSE.  
   
 ## Syntax  

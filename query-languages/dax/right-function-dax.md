@@ -4,6 +4,8 @@ title: "RIGHT function (DAX) | Microsoft Docs"
 ---
 # RIGHT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 RIGHT returns the last character or characters in a text string, based on the number of characters you specify.  
   
 ## Syntax  

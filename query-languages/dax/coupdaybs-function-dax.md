@@ -5,6 +5,8 @@ title: "COUPDAYBS function (DAX) | Microsoft Docs"
 
 # COUPDAYBS
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the number of days from the beginning of a coupon period until its settlement date.
 
 ## Syntax

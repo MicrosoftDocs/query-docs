@@ -4,6 +4,8 @@ title: "RELATEDTABLE function (DAX) | Microsoft Docs"
 ---
 # RELATEDTABLE
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Evaluates a table expression in a context modified by the given filters.  
   
 ## Syntax  

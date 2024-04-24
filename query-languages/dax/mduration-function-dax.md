@@ -6,6 +6,8 @@ author: jajin7
 
 # MDURATION
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the modified Macauley duration for a security with an assumed par value of \\$100.
 
 ## Syntax

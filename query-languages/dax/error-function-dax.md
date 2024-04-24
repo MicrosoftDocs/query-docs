@@ -4,6 +4,8 @@ title: "ERROR function | Microsoft Docs"
 ---
 # ERROR
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Raises an error with an error message.  
   
 ## Syntax  

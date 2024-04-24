@@ -4,6 +4,8 @@ title: "IGNORE function (DAX) | Microsoft Docs"
 ---
 # IGNORE
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Modifies the behavior of the [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) function by omitting specific expressions from the BLANK/NULL evaluation. Rows for which all expressions not using IGNORE return BLANK/NULL will be excluded independent of whether the expressions which do use IGNORE evaluate to BLANK/NULL or not. This function can only be used within a [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) expression.
   
 ## Syntax  

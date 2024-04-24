@@ -3,6 +3,8 @@ description: "Learn more about: NATURALINNERJOIN"
 title: "NATURALINNERJOIN function (DAX) | Microsoft Docs"
 ---
 # NATURALINNERJOIN
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
   
 Performs an inner join of a table with another table.
   

@@ -4,6 +4,8 @@ title: "ROLLUPADDISSUBTOTAL function (DAX) | Microsoft Docs"
 ---
 # ROLLUPADDISSUBTOTAL
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Modifies the behavior of the [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) function by adding rollup/subtotal rows to the result based on the groupBy_columnName columns. This function can only be used within a [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) expression.
   
 ## Syntax  

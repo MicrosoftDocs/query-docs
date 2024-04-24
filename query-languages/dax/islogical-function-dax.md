@@ -4,6 +4,8 @@ title: "ISLOGICAL function (DAX) | Microsoft Docs"
 ---
 # ISLOGICAL
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Checks whether a value is a logical value, (TRUE or FALSE), and returns TRUE or FALSE.  
   
 ## Syntax  

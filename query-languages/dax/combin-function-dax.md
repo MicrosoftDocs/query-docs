@@ -5,6 +5,8 @@ title: "COMBIN function (DAX) | Microsoft Docs"
 
 # COMBIN
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the number of combinations for a given number of items. Use COMBIN to determine the total possible number of groups for a given number of items.  
   
 ## Syntax  

@@ -3,6 +3,8 @@ description: "Learn more about: PRODUCT"
 title: "PRODUCT function (DAX) | Microsoft Docs"
 ---
 # PRODUCT
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
   
 Returns the product of the numbers in a column.  
   

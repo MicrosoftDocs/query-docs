@@ -5,6 +5,8 @@ title: "INTRATE function (DAX) | Microsoft Docs"
 
 # INTRATE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the interest rate for a fully invested security.
 
 ## Syntax

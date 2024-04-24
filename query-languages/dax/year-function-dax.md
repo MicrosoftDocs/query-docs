@@ -4,6 +4,8 @@ title: "YEAR function (DAX) | Microsoft Docs"
 ---
 # YEAR
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the year of a date as a four digit integer in the range 1900-9999.  
   
 ## Syntax  

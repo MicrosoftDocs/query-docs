@@ -4,6 +4,8 @@ title: "ISNUMBER function (DAX) | Microsoft Docs"
 ---
 # ISNUMBER
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Checks whether a value is a number, and returns TRUE or FALSE.  
   
 ## Syntax  

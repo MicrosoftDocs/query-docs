@@ -4,6 +4,8 @@ title: "BITRSHIFT function (DAX) | Microsoft Docs"
 ---
 # BITRSHIFT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a number shifted right by the specified number of bits.  
   
 ## Syntax  

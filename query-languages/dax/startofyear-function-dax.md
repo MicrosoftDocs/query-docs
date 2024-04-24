@@ -4,6 +4,8 @@ title: "STARTOFYEAR function (DAX) | Microsoft Docs"
 ---
 # STARTOFYEAR
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Returns the first date of the year in the current context for the specified column of dates.  
   
 ## Syntax  

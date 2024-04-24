@@ -5,6 +5,8 @@ title: "FIRST function (DAX) | Microsoft Docs"
 
 # FIRST
 
+[!INCLUDE[applies-to-visual-calculations](includes/applies-to-visual-calculations.md)]
+
 Used in visual calculations only. Retrieves a value in the visual matrix from the first row of an axis.
   
 ## Syntax  

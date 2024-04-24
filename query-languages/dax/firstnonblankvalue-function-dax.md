@@ -4,6 +4,8 @@ title: "FIRSTNONBLANKVALUE function (DAX) | Microsoft Docs"
 ---
 # FIRSTNONBLANKVALUE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Evaluates an expression filtered by the sorted values of a column and returns the first value of the expression that is not blank.
   
 ## Syntax  

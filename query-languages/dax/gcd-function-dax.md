@@ -4,6 +4,8 @@ title: "GCD function (DAX) | Microsoft Docs"
 ---
 # GCD
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the greatest common divisor of two or more integers. The greatest common divisor is the largest integer that divides both number1 and number2 without a remainder.  
   
 ## Syntax  

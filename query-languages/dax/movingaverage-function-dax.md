@@ -13,6 +13,8 @@ recommendations: false
 
 # MOVINGAVERAGE
 
+[!INCLUDE[applies-to-visual-calculations](includes/applies-to-visual-calculations.md)]
+
 Returns a moving average calculated along the given axis of the visual matrix. That is, the average of the given column calculated over the last \<windowSize> rows.
 
 ## Syntax

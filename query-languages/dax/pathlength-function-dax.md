@@ -3,6 +3,8 @@ description: "Learn more about: PATHLENGTH"
 title: "PATHLENGTH function (DAX) | Microsoft Docs"
 ---
 # PATHLENGTH
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 Returns the number of parents to the specified item in a given PATH result, including self.  
   
 ## Syntax  

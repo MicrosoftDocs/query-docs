@@ -4,6 +4,8 @@ title: "ISFILTERED function (DAX) | Microsoft Docs"
 ---
 # ISFILTERED
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns TRUE when the specified table or column is being filtered directly.
   
 ## Syntax  

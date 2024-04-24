@@ -4,6 +4,8 @@ title: "RELATED function (DAX) | Microsoft Docs"
 ---
 # RELATED
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Returns a related value from another table.  
   
 ## Syntax  

@@ -3,6 +3,8 @@ description: "Learn more about: GEOMEAN"
 title: "GEOMEAN function (DAX) | Microsoft Docs"
 ---
 # GEOMEAN
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
   
 Returns the geometric mean of the numbers in a column.  
   

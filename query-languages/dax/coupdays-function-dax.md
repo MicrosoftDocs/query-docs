@@ -5,6 +5,8 @@ title: "COUPDAYS function (DAX) | Microsoft Docs"
 
 # COUPDAYS
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the number of days in the coupon period that contains the settlement date.
 
 ## Syntax
