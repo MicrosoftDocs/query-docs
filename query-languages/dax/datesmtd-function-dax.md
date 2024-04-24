@@ -4,6 +4,8 @@ title: "DATESMTD function (DAX) | Microsoft Docs"
 ---
 # DATESMTD
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Returns a table that contains a column of the dates for the month to date, in the current context.  
   
 ## Syntax  

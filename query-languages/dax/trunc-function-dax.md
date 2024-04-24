@@ -4,6 +4,8 @@ title: "TRUNC function (DAX) | Microsoft Docs"
 ---
 # TRUNC
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Truncates a number to an integer by removing the decimal, or fractional, part of the number.  
   
 ## Syntax  

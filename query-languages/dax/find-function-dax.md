@@ -4,6 +4,8 @@ title: "FIND function (DAX) | Microsoft Docs"
 ---
 # FIND
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the starting position of one text string within another text string. FIND is case-sensitive.  
   
 ## Syntax  

@@ -4,6 +4,8 @@ title: "CONTAINSSTRINGEXACT function (DAX) | Microsoft Docs"
 ---
 # CONTAINSSTRINGEXACT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns TRUE or FALSE indicating whether one string contains another string.
   
 ## Syntax  

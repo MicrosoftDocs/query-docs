@@ -4,6 +4,8 @@ title: "NOW function (DAX) | Microsoft Docs"
 ---
 # NOW
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the current date and time in **datetime** format.  
   
 The NOW function is useful when you need to display the current date and time on a worksheet or calculate a value based on the current date and time, and have that value updated each time you open the worksheet.  

@@ -6,6 +6,8 @@ author: jajin7
 
 # YIELDDISC
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the annual yield for a discounted security.
 
 ## Syntax

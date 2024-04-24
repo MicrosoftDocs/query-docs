@@ -4,6 +4,8 @@ title: "MAXA function (DAX) | Microsoft Docs"
 ---
 # MAXA
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the largest value in a column.
   
 ## Syntax  

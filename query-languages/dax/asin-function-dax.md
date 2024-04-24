@@ -4,6 +4,8 @@ title: "ASIN function (DAX) | Microsoft Docs"
 ---
 # ASIN
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the arcsine, or inverse sine, of a number. The arcsine is the angle whose sine is *number*. The returned angle is given in radians in the range -pi/2 to pi/2.  
   
 ## Syntax  

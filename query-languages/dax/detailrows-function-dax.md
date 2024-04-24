@@ -4,6 +4,8 @@ title: "DETAILROWS function (DAX) | Microsoft Docs"
 ---
 # DETAILROWS
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Evaluates a Detail Rows Expression defined for a measure and returns the data.
 
 ## Syntax  

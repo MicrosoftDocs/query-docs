@@ -4,6 +4,8 @@ title: "HASONEFILTER function (DAX) | Microsoft Docs"
 ---
 # HASONEFILTER
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns **TRUE** when the number of directly filtered values on *columnName* is one; otherwise returns **FALSE**.  
   
 ## Syntax  

@@ -6,6 +6,8 @@ author: jajin7
 
 # YIELD
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the yield on a security that pays periodic interest. Use YIELD to calculate bond yield.
 
 ## Syntax

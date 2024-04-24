@@ -4,6 +4,8 @@ title: "SELECTEDMEASURENAME function (DAX) | Microsoft Docs"
 ---
 # SELECTEDMEASURENAME
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Used by expressions for calculation items to determine the measure that is in context by name.
   
 ## Syntax  

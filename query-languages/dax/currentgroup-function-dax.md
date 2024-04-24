@@ -4,6 +4,8 @@ title: "CURRENTGROUP function (DAX) | Microsoft Docs"
 ---
 # CURRENTGROUP
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Returns a set of rows from the table argument of a [GROUPBY](groupby-function-dax.md) expression that belong to the current row of the [GROUPBY](groupby-function-dax.md) result.
 
 ## Syntax  

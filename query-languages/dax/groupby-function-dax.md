@@ -3,6 +3,8 @@ description: "Learn more about: GROUPBY"
 title: "GROUPBY function (DAX) | Microsoft Docs"
 ---
 # GROUPBY
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
   
 The GROUPBY function is similar to the [SUMMARIZE](summarize-function-dax.md) function. However, GROUPBY does not do an implicit [CALCULATE](calculate-function-dax.md) for any extension columns that it adds. GROUPBY permits a new function, [CURRENTGROUP](currentgroup-function-dax.md), to be used inside aggregation functions in the extension columns that it adds. GROUPBY is used to perform multiple aggregations in a single table scan.
   

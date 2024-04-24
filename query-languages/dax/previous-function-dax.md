@@ -5,6 +5,8 @@ title: "PREVIOUS function (DAX) | Microsoft Docs"
 
 # PREVIOUS
 
+[!INCLUDE[applies-to-visual-calculations](includes/applies-to-visual-calculations.md)]
+
 Used in visual calculations only. Retrieves a value in the previous row of an axis in the visual matrix.
   
 ## Syntax  

@@ -4,6 +4,8 @@ title: "COSH function (DAX) | Microsoft Docs"
 ---
 # COSH
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the hyperbolic cosine of a number.  
   
 ## Syntax  

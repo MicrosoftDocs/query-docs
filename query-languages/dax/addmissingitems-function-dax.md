@@ -4,6 +4,8 @@ title: "ADDMISSINGITEMS function (DAX) | Microsoft Docs"
 ---
 # ADDMISSINGITEMS
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Adds rows with empty values to a table returned by [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md).
   
 ## Syntax  

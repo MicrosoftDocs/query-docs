@@ -4,6 +4,8 @@ title: "EARLIEST function (DAX) | Microsoft Docs"
 ---
 # EARLIEST
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Returns the current value of the specified column in an outer evaluation pass of the specified column.  
   
 ## Syntax  

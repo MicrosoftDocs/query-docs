@@ -4,6 +4,8 @@ title: "STDEVX.P function (DAX) | Microsoft Docs"
 ---
 # STDEVX.P
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the standard deviation of the entire population.  
   
 ## Syntax  

@@ -4,6 +4,8 @@ title: "TIMEVALUE function (DAX) | Microsoft Docs"
 ---
 # TIMEVALUE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Converts a time in text format to a time in datetime format.  
   
 ## Syntax  

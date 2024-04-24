@@ -4,6 +4,8 @@ title: "RANKX function (DAX) | Microsoft Docs"
 ---
 # RANKX
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the ranking of a number in a list of numbers for each row in the *table* argument.  
   
 ## Syntax  

@@ -4,6 +4,8 @@ title: "REMOVEFILTERS function (DAX) | Microsoft Docs"
 ---
 # REMOVEFILTERS
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Clear filters from the specified tables or columns.
   
 ## Syntax  

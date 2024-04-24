@@ -4,6 +4,8 @@ title: "ISBLANK function (DAX) | Microsoft Docs"
 ---
 # ISBLANK
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Checks whether a value is blank, and returns TRUE or FALSE.  
   
 ## Syntax  

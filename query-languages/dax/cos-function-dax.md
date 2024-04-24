@@ -4,6 +4,8 @@ title: "COS function (DAX) | Microsoft Docs"
 ---
 # COS
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the cosine of the given angle.  
   
 ## Syntax  

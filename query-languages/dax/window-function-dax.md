@@ -5,6 +5,8 @@ title: "WINDOW function (DAX) | Microsoft Docs"
 
 # WINDOW
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns multiple rows which are positioned within the given interval.
 
 ## Syntax  

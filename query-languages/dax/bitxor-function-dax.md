@@ -4,6 +4,8 @@ title: "BITXOR function (DAX) | Microsoft Docs"
 ---
 # BITXOR
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a bitwise XOR of two numbers.
   
 ## Syntax  

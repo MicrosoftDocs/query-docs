@@ -4,6 +4,8 @@ title: "LOG10 function (DAX) | Microsoft Docs"
 ---
 # LOG10
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the base-10 logarithm of a number.  
   
 ## Syntax  

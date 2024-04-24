@@ -4,6 +4,8 @@ title: "ODD function (DAX) | Microsoft Docs"
 ---
 # ODD
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns number rounded up to the nearest odd integer.  
   
 ## Syntax  

@@ -4,6 +4,8 @@ title: "LN function (DAX) | Microsoft Docs"
 ---
 # LN
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the natural logarithm of a number. Natural logarithms are based on the constant e (2.71828182845904).  
   
 ## Syntax  

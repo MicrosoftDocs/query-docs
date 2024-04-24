@@ -4,6 +4,8 @@ title: "REPT function (DAX) | Microsoft Docs"
 ---
 # REPT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Repeats text a given number of times. Use REPT to fill a cell with a number of instances of a text string.  
   
 ## Syntax  

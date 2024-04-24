@@ -4,6 +4,8 @@ title: "FACT function (DAX) | Microsoft Docs"
 ---
 # FACT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the factorial of a number, equal to the series 1*2\*3\*...\* , ending in the given number.  
   
 ## Syntax  

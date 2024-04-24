@@ -4,6 +4,8 @@ title: "CHISQ.DIST.RT function (DAX) | Microsoft Docs"
 ---
 # CHISQ.DIST.RT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the right-tailed probability of the chi-squared distribution. 
   
 The chi-squared distribution is associated with a chi-squared test. Use the chi-squared test to compare observed and expected values. For example, a genetic experiment might hypothesize that the next generation of plants will exhibit a certain set of colors. By comparing the observed results with the expected ones, you can decide whether your original hypothesis is valid.

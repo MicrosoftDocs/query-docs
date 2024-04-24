@@ -4,6 +4,8 @@ title: "TOTALYTD function (DAX) | Microsoft Docs"
 ---
 # TOTALYTD
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Evaluates the year-to-date value of the **expression** in the current context.  
   
 ## Syntax  

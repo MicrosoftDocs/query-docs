@@ -6,6 +6,8 @@ author: jajin7
 
 # NPER
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the number of periods for an investment based on periodic, constant payments and a constant interest rate.
 
 ## Syntax

@@ -4,6 +4,8 @@ title: "TOPN function (DAX) | Microsoft Docs"
 ---
 # TOPN
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the top N rows of the specified table.  
   
 ## Syntax  

@@ -4,6 +4,8 @@ title: "SELECTEDMEASUREFORMATSTRING function (DAX) | Microsoft Docs"
 ---
 # SELECTEDMEASUREFORMATSTRING
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Used by expressions for calculation items to retrieve the format string of the measure that is in context.
   
 ## Syntax  

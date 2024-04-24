@@ -4,6 +4,8 @@ title: "PATH function (DAX) | Microsoft Docs"
 ---
 # PATH
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a delimited text string with the identifiers of all the parents of the current identifier, starting with the oldest and continuing until current.  
   
 ## Syntax  

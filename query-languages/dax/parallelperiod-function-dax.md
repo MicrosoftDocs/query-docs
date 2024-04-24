@@ -4,6 +4,8 @@ title: "PARALLELPERIOD function (DAX) | Microsoft Docs"
 ---
 # PARALLELPERIOD
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Returns a table that contains a column of dates that represents a period parallel to the dates in the specified **dates** column, in the current context, with the dates shifted a number of intervals either forward in time or back in time.  
   
 ## Syntax  

@@ -4,6 +4,8 @@ title: "MONTH function (DAX) | Microsoft Docs"
 ---
 # MONTH
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the month as a number from 1 (January) to 12 (December).  
   
 ## Syntax  

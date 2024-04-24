@@ -4,6 +4,8 @@ title: "EDATE function (DAX) | Microsoft Docs"
 ---
 # EDATE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the date that is the indicated number of months before or after the start date. Use EDATE to calculate maturity dates or due dates that fall on the same day of the month as the date of issue.  
   
 ## Syntax  

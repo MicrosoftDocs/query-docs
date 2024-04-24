@@ -4,6 +4,8 @@ title: "TIME function (DAX) | Microsoft Docs"
 ---
 # TIME
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Converts hours, minutes, and seconds given as numbers to a time in **datetime** format.  
   
 ## Syntax  

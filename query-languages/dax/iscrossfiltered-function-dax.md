@@ -4,6 +4,8 @@ title: "ISCROSSFILTERED function (DAX) | Microsoft Docs"
 ---
 # ISCROSSFILTERED
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns TRUE when the specified table or column is cross-filtered.
   
 ## Syntax  

@@ -4,6 +4,8 @@ title: "COLUMNSTATISTICS function (DAX) | Microsoft Docs"
 ---
 # COLUMNSTATISTICS
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Returns a table of statistics regarding every column in every table in the model.
 
 ## Syntax

@@ -4,6 +4,8 @@ title: "QUOTIENT function (DAX) | Microsoft Docs"
 ---
 # QUOTIENT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Performs division and returns only the integer portion of the division result. Use this function when you want to discard the remainder of division.  
   
 ## Syntax  

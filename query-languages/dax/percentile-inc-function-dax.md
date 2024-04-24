@@ -3,6 +3,8 @@ description: "Learn more about: PERCENTILE.INC"
 title: "PERCENTILE.INC function (DAX) | Microsoft Docs"
 ---
 # PERCENTILE.INC
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
   
 Returns the k-th percentile of values in a range, where k is in the range 0..1, inclusive.  
   

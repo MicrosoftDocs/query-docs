@@ -6,6 +6,8 @@ author: jajin7
 
 # SLN
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the straight-line depreciation of an asset for one period.
 
 ## Syntax

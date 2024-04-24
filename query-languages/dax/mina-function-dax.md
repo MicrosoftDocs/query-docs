@@ -4,6 +4,8 @@ title: "MINA function (DAX) | Microsoft Docs"
 ---
 # MINA
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the smallest value in a column.
   
 ## Syntax  

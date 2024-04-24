@@ -4,6 +4,8 @@ title: "YEARFRAC function (DAX) | Microsoft Docs"
 ---
 # YEARFRAC
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Calculates the fraction of the year represented by the number of whole days between two dates. Use the YEARFRAC worksheet function to identify the proportion of a whole year's benefits or obligations to assign to a specific term.  
   
 ## Syntax  

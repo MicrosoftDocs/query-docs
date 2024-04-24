@@ -4,6 +4,8 @@ title: "ISSUBTOTAL function (DAX) | Microsoft Docs"
 ---
 # ISSUBTOTAL
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Creates another column in a [SUMMARIZE](summarize-function-dax.md) expression that returns True if the row contains subtotal values for the column given as argument, otherwise returns False.
 
 ## Syntax  

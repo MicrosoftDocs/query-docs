@@ -4,6 +4,8 @@ title: "SQRT function (DAX) | Microsoft Docs"
 ---
 # SQRT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the square root of a number.  
   
 ## Syntax  

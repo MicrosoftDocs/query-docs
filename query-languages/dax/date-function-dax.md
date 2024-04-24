@@ -4,6 +4,8 @@ title: "DATE function (DAX) | Microsoft Docs"
 ---
 # DATE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the specified date in **datetime** format.  
   
 ## Syntax  

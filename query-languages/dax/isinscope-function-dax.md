@@ -4,6 +4,8 @@ title: "ISINSCOPE function (DAX) | Microsoft Docs"
 ---
 # ISINSCOPE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns true when the specified column is the level in a hierarchy of levels.
   
 ## Syntax  

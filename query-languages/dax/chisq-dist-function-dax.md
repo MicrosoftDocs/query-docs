@@ -4,6 +4,8 @@ title: "CHISQ.DIST function (DAX) | Microsoft Docs"
 ---
 # CHISQ.DIST
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the chi-squared distribution.
   
 The chi-squared distribution is commonly used to study variation in the percentage of something across samples, such as the fraction of the day people spend watching television.

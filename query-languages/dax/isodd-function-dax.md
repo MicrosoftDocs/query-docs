@@ -4,6 +4,8 @@ title: "ISODD function (DAX) | Microsoft Docs"
 ---
 # ISODD
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns TRUE if number is odd, or FALSE if number is even.  
   
 ## Syntax  

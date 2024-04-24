@@ -6,6 +6,8 @@ author: jajin7
 
 # DDB
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the depreciation of an asset for a specified period using the double-declining balance method or some other method you specify.
 
 ## Syntax

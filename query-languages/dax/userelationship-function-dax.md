@@ -4,6 +4,8 @@ title: "USERELATIONSHIP function (DAX) | Microsoft Docs"
 ---
 # USERELATIONSHIP
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Specifies the relationship to be used in a specific calculation as the one that exists between columnName1 and columnName2.  
   
 ## Syntax  

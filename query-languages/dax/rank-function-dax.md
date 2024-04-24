@@ -6,6 +6,8 @@ author: rahulten
 
 # RANK
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the ranking for the current context within the specified partition, sorted by the specified order. If a match cannot be found then then rank is blank.
   
 ## Syntax  

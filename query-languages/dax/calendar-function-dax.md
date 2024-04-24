@@ -3,6 +3,8 @@ description: "Learn more about: CALENDAR"
 title: "CALENDAR function (DAX) | Microsoft Docs"
 ---
 # CALENDAR
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
   
 Returns a table with a single column named "Date" that contains a contiguous set of dates. The range of dates is from the specified start date to the specified end date, inclusive of those two dates.  
   

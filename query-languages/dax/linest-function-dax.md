@@ -7,6 +7,8 @@ ms.author: masanto
 
 # LINEST
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Uses the Least Squares method to calculate a straight line that best fits the given data, then returns a table describing the line. The equation for the line is of the form: y = **Slope1**\*x1 + **Slope2**\*x2 + ... + **Intercept**.
 
 ## Syntax

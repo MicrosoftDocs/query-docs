@@ -6,6 +6,8 @@ author: jajin7
 
 # CUMPRINC
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the cumulative principal paid on a loan between start_period and end_period.
 
 ## Syntax

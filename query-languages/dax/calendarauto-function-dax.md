@@ -3,6 +3,8 @@ description: "Learn more about: CALENDARAUTO"
 title: "CALENDARAUTO function (DAX) | Microsoft Docs"
 ---
 # CALENDARAUTO
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
   
 Returns a table with a single column named "Date" that contains a contiguous set of dates. The range of dates is calculated automatically based on data in the model.  
   

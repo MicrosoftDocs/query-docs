@@ -4,6 +4,8 @@ title: "CLOSINGBALANCEQUARTER function (DAX) | Microsoft Docs"
 ---
 # CLOSINGBALANCEQUARTER
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Evaluates the **expression** at the last date of the quarter in the current context.  
   
 ## Syntax  

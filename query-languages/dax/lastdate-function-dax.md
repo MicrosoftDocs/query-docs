@@ -4,6 +4,8 @@ title: "LASTDATE function (DAX) | Microsoft Docs"
 ---
 # LASTDATE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Returns the last date in the current context for the specified column of dates.  
   
 ## Syntax  

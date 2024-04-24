@@ -4,6 +4,8 @@ title: "TODAY function (DAX) | Microsoft Docs"
 ---
 # TODAY
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the current date.  
   
 ## Syntax  

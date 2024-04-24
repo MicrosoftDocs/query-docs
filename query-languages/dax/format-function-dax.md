@@ -4,6 +4,8 @@ title: "FORMAT function (DAX) | Microsoft Docs"
 ---
 # FORMAT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Converts a value to text according to the specified format.
 
 ## Syntax

@@ -4,6 +4,8 @@ title: "AVERAGE function (DAX) | Microsoft Docs"
 ---
 # AVERAGE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the average (arithmetic mean) of all the numbers in a column.  
   
 ## Syntax  

@@ -3,6 +3,8 @@ description: "Learn more about: PERCENTILEX.EXC"
 title: "PERCENTILEX.EXC function (DAX) | Microsoft Docs"
 ---
 # PERCENTILEX.EXC
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
   
 Returns the percentile number of an expression evaluated for each row in a table.  
   

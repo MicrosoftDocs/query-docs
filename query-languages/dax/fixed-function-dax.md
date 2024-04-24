@@ -4,6 +4,8 @@ title: "FIXED function (DAX) | Microsoft Docs"
 ---
 # FIXED
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Rounds a number to the specified number of decimals and returns the result as text. You can specify that the result be returned with or without commas.  
   
 ## Syntax  
