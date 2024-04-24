@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Value functions"
 title: "Value functions"
-ms.date: 10/19/2023
+ms.date: 4/24/2024
 ms.custom: "nonautomated-date"
 ---
 # Value functions
@@ -17,8 +17,8 @@ These functions evaluate and perform operations on values.
 |[Value.VersionIdentity](value-versionidentity.md)|Returns the version identity of a value.|
 |[Value.Versions](value-versions.md)|Returns a navigation table containing the available versions of a value.|
 |[Value.NativeQuery](value-nativequery.md) | Evaluates a query against a target.|
-|[Value.NullableEquals](value-nullableequals.md)|Returns a logical value or null based on two values .|
-|[Value.Optimize](value-optimize.md)|If value represents a query that can be optimized, returns the optimized query. Otherwise returns value.
+|[Value.NullableEquals](value-nullableequals.md)|Returns a logical value or null based on two values.|
+|[Value.Optimize](value-optimize.md)|If value represents a query that can be optimized, returns the optimized query. Otherwise returns value.|
 |[Value.Type](value-type.md) | Returns the type of the given value.|
 
 ## Arithmetic operations
@@ -44,6 +44,7 @@ These functions evaluate and perform operations on values.
 |[DirectQueryCapabilities.From](directquerycapabilities-from.md) | This function is intended for internal use only.|
 |[Embedded.Value](embedded-value.md) | Accesses a value by name in an embedded mashup.|
 |[Excel.ShapeTable](excel-shapetable.md) | This function is intended for internal use only.|
+|[Module.Versions](module-versions.md) | Returns a record of module versions for the current module and its dependencies.|
 |[Progress.DataSourceProgress](progress-datasourceprogress.md) | This function is intended for internal use only. |
 |[SqlExpression.SchemaFrom](sqlexpression-schemafrom.md) | This function is intended for internal use only.|
 |[SqlExpression.ToExpression](sqlexpression-toexpression.md) | This function is intended for internal use only.|
