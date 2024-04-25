@@ -3,6 +3,8 @@ description: "Learn more about: ISONORAFTER"
 title: "ISONORAFTER function (DAX) | Microsoft Docs"
 ---
 # ISONORAFTER
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
   
 A boolean function that emulates the behavior of a Start At clause and returns true for a row that meets all of the condition parameters.
   

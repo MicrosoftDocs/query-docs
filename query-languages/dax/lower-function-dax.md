@@ -4,6 +4,8 @@ title: "LOWER function (DAX) | Microsoft Docs"
 ---
 # LOWER
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Converts all letters in a text string to lowercase.  
   
 ## Syntax  

@@ -4,6 +4,8 @@ title: "TANH function (DAX) | Microsoft Docs"
 ---
 # TANH
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the hyperbolic tangent of a number.  
   
 ## Syntax  

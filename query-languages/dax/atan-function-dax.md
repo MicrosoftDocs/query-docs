@@ -4,6 +4,8 @@ title: "ATAN function (DAX) | Microsoft Docs"
 ---
 # ATAN
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the arctangent, or inverse tangent, of a number. The arctangent is the angle whose tangent is *number*. The returned angle is given in radians in the range -pi/2 to pi/2.  
   
 ## Syntax  

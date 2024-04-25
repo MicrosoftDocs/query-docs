@@ -4,6 +4,8 @@ title: "NEXTYEAR function (DAX) | Microsoft Docs"
 ---
 # NEXTYEAR
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Returns a table that contains a column of all dates in the next year, based on the first date in the **dates** column, in the current context.  
   
 ## Syntax  

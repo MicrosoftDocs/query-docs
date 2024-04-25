@@ -4,6 +4,8 @@ title: "SUMMARIZE function (DAX) | Microsoft Docs"
 ---
 # SUMMARIZE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a summary table for the requested totals over a set of groups.  
   
 ## Syntax  

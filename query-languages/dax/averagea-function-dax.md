@@ -4,6 +4,8 @@ title: "AVERAGEA function (DAX) | Microsoft Docs"
 ---
 # AVERAGEA
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the average (arithmetic mean) of the values in a column. Handles text and non-numeric values.  
   
 ## Syntax  

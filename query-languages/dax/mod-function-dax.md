@@ -4,6 +4,8 @@ title: "MOD function (DAX) | Microsoft Docs"
 ---
 # MOD
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the remainder after a number is divided by a divisor. The result always has the same sign as the divisor.  
   
 ## Syntax  

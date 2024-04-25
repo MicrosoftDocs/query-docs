@@ -13,6 +13,8 @@ recommendations: false
 
 # EXPANDALL
 
+[!INCLUDE[applies-to-visual-calculations](includes/applies-to-visual-calculations.md)]
+
 Retrieves a context at the most detailed level. If an expression is provided, returns its value in the new context, allowing for navigation in hierarchies and calculation at the most detailed level.
 
 ## Syntax

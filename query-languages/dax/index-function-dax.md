@@ -5,6 +5,8 @@ title: "INDEX function (DAX) | Microsoft Docs"
 
 # INDEX
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a row at an absolute position, specified by the position parameter, within the specified partition, sorted by the specified order. If the current partition can't be deduced to a single partition, multiple rows may be returned.
   
 ## Syntax  

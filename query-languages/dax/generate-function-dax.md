@@ -4,6 +4,8 @@ title: "GENERATE  function (DAX) | Microsoft Docs"
 ---
 # GENERATE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a table with the Cartesian product between each row in *table1* and the table that results from evaluating *table2* in the context of the current row from *table1*.  
   
 ## Syntax  

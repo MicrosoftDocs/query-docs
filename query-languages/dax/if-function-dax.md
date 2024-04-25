@@ -4,6 +4,8 @@ title: "IF function (DAX) | Microsoft Docs"
 ---
 # IF
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Checks a condition, and returns one value when it's TRUE, otherwise it returns a second value.
 
 ## Syntax

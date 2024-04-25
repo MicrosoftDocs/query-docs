@@ -4,6 +4,8 @@ title: "TOCSV function (DAX) | Microsoft Docs"
 ---
 # TOCSV
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a table as a string in CSV format.
   
 ## Syntax  

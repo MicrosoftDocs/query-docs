@@ -4,6 +4,8 @@ title: "SUBSTITUTE function (DAX) | Microsoft Docs"
 ---
 # SUBSTITUTE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Replaces existing text with new text in a text string.  
   
 ## Syntax  

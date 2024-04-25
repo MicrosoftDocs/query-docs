@@ -3,6 +3,8 @@ description: "Learn more about: XIRR"
 title: "XIRR function (DAX) | Microsoft Docs"
 ---
 # XIRR
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
   
 Returns the internal rate of return for a schedule of cash flows that is not necessarily periodic.  
   

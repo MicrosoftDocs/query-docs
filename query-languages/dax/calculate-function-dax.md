@@ -4,6 +4,8 @@ title: "CALCULATE function (DAX) | Microsoft Docs"
 ---
 # CALCULATE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Evaluates an expression in a modified filter context.
 
 > [!NOTE]

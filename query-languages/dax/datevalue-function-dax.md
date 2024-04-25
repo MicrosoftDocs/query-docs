@@ -4,6 +4,8 @@ title: "DATEVALUE function (DAX) | Microsoft Docs"
 ---
 # DATEVALUE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Converts a date in text format to a date in datetime format.  
   
 ## Syntax  

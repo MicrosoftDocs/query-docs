@@ -3,6 +3,8 @@ description: "Learn more about: GEOMEANX"
 title: "GEOMEANX function (DAX) | Microsoft Docs"
 ---
 # GEOMEANX
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
   
 Returns the geometric mean of an expression evaluated for each row in a table.  
   

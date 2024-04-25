@@ -3,6 +3,8 @@ description: "Learn more about: MEDIAN"
 title: "MEDIAN function (DAX) | Microsoft Docs"
 ---
 # MEDIAN
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
   
 Returns the median of numbers in a column.  
   

@@ -4,6 +4,8 @@ title: "POWER function (DAX) | Microsoft Docs"
 ---
 # POWER
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the result of a number raised to a power.  
   
 ## Syntax  

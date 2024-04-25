@@ -4,6 +4,8 @@ title: "SECOND function (DAX) | Microsoft Docs"
 ---
 # SECOND
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the seconds of a time value, as a number from 0 to 59.  
   
 ## Syntax  

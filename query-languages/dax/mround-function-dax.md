@@ -4,6 +4,8 @@ title: "MROUND function (DAX) | Microsoft Docs"
 ---
 # MROUND
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a number rounded to the desired multiple.  
   
 ## Syntax  

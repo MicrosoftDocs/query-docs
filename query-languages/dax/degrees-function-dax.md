@@ -4,6 +4,8 @@ title: "DEGREES function (DAX) | Microsoft Docs"
 ---
 # DEGREES
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Converts radians into degrees.  
   
 ## Syntax  

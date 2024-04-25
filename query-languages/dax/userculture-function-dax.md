@@ -3,6 +3,8 @@ description: "Learn more about: USERCULTURE"
 title: "USERCULTURE function (DAX) | Microsoft Docs"
 ---
 # USERCULTURE
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
   
 Returns the locale \(language code-country code) for the current user, determined by the operating system, browser settings, or Power BI service.  
 

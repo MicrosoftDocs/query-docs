@@ -4,6 +4,8 @@ title: "CALCULATETABLE function (DAX) | Microsoft Docs"
 ---
 # CALCULATETABLE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Evaluates a table expression in a modified filter context.
 
 > [!NOTE]

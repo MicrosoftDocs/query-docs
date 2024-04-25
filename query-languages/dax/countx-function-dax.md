@@ -4,6 +4,8 @@ title: "COUNTX function (DAX) | Microsoft Docs"
 ---
 # COUNTX
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Counts the number of rows that contain a non-blank value or an expression that evaluates to a non-blank value, when evaluating an expression over a table.  
   
 ## Syntax  

@@ -4,6 +4,8 @@ title: "AVERAGEX function (DAX) | Microsoft Docs"
 ---
 # AVERAGEX
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Calculates the average (arithmetic mean) of a set of expressions evaluated over a table.  
   
 ## Syntax  

@@ -4,6 +4,8 @@ title: "COUNTBLANK function (DAX) | Microsoft Docs"
 ---
 # COUNTBLANK
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Counts the number of blank cells in a column.  
   
 ## Syntax  

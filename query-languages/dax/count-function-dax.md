@@ -4,6 +4,8 @@ title: "COUNT function (DAX) | Microsoft Docs"
 ---
 # COUNT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Counts the number of rows in the specified column that contain non-blank values.
   
 ## Syntax  

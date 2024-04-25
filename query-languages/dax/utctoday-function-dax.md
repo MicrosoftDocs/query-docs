@@ -4,6 +4,8 @@ title: "UTCTODAY function (DAX) | Microsoft Docs"
 ---
 # UTCTODAY
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the current UTC date.
 
 ## Syntax  

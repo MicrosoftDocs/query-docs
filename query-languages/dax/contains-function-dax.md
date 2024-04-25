@@ -4,6 +4,8 @@ title: "CONTAINS function (DAX) | Microsoft Docs"
 ---
 # CONTAINS
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns true if values for all referred columns exist, or are contained, in those columns; otherwise, the function returns false.  
   
 ## Syntax  

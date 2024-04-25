@@ -4,6 +4,8 @@ title: "RANDBETWEEN function (DAX) | Microsoft Docs"
 ---
 # RANDBETWEEN
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a random number in the range between two numbers you specify.  
   
 ## Syntax  

@@ -4,6 +4,8 @@ title: "MIN function (DAX) | Microsoft Docs"
 ---
 # MIN
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the smallest value in a column, or between two scalar expressions.
   
 ## Syntax  

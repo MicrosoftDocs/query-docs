@@ -3,6 +3,8 @@ description: "Learn more about: CONCATENATEX"
 title: "CONCATENATEX function (DAX) | Microsoft Docs"
 ---
 # CONCATENATEX
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
   
 Concatenates the result of an expression evaluated for each row in a table.  
   

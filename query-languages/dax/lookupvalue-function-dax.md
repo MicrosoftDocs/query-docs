@@ -4,6 +4,8 @@ title: "LOOKUPVALUE function (DAX) | Microsoft Docs"
 ---
 # LOOKUPVALUE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the value for the row that meets all criteria specified by one or more search conditions.
 
 ## Syntax

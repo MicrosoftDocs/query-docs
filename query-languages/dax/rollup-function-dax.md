@@ -4,6 +4,8 @@ title: "ROLLUP function (DAX) | Microsoft Docs"
 ---
 # ROLLUP
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Modifies the behavior of the [SUMMARIZE](summarize-function-dax.md) function by adding rollup rows to the result on columns defined by the groupBy_columnName parameter. This function can only be used within a [SUMMARIZE](summarize-function-dax.md) expression.
   
 ## Syntax

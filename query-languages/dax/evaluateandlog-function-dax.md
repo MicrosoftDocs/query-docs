@@ -4,6 +4,8 @@ title: "EVALUATEANDLOG function (DAX) | Microsoft Docs"
 ---
 # EVALUATEANDLOG
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the value of the first argument and logs it in a DAX Evaluation Log profiler event. This function is fully functional in Power BI Desktop only. It acts as a simple passthrough function in other environments.
   
 ## Syntax  

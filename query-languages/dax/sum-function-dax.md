@@ -4,6 +4,8 @@ title: "SUM function (DAX) | Microsoft Docs"
 ---
 # SUM
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Adds all the numbers in a column.  
   
 ## Syntax  

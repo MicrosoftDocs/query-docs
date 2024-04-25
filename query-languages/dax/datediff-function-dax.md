@@ -3,6 +3,8 @@ description: "Learn more about: DATEDIFF"
 title: "DATEDIFF function (DAX) | Microsoft Docs"
 ---
 # DATEDIFF
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
   
 Returns the number of interval boundaries between two dates.  
   

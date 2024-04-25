@@ -4,6 +4,8 @@ title: "DISTINCT (column) function (DAX) | Microsoft Docs"
 ---
 # DISTINCT (column)
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a one-column table that contains the distinct values from the specified column. In other words, duplicate values are removed and only unique values are returned.  
   
 > [!NOTE]  

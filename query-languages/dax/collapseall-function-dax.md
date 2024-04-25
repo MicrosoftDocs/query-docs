@@ -13,6 +13,8 @@ recommendations: false
 
 # COLLAPSEALL
 
+[!INCLUDE[applies-to-visual-calculations](includes/applies-to-visual-calculations.md)]
+
 Retrieves a context at the highest level compared to the current context. If an expression is provided, returns its value in the new context, allowing for navigation in hierarchies and calculation at the highest level.
 
 ## Syntax

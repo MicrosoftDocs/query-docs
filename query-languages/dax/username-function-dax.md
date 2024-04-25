@@ -4,6 +4,8 @@ title: "USERNAME function (DAX) | Microsoft Docs"
 ---
 # USERNAME
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the domain name and username from the credentials given to the system at connection time.  
   
 ## Syntax  

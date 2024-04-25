@@ -4,6 +4,8 @@ title: "CROSSFILTER function | Microsoft Docs"
 ---
 # CROSSFILTER
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Specifies the cross-filtering direction to be used in a calculation for a relationship that exists between two columns.  
   
 ## Syntax  

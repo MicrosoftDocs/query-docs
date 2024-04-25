@@ -4,6 +4,8 @@ title: "MID function (DAX) | Microsoft Docs"
 ---
 # MID
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a string of characters from the middle of a text string, given a starting position and length.  
   
 ## Syntax  

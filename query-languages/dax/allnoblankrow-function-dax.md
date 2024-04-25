@@ -4,6 +4,8 @@ title: "ALLNOBLANKROW function (DAX) | Microsoft Docs"
 ---
 # ALLNOBLANKROW
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 From the parent table of a relationship, returns all rows but the blank row, or all distinct values of a column but the blank row, and disregards any context filters that might exist.  
   
 ## Syntax  

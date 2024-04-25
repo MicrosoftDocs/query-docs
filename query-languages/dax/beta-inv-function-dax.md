@@ -4,6 +4,8 @@ title: "BETA.INV function (DAX) | Microsoft Docs"
 ---
 # BETA.INV
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the inverse of the beta cumulative probability density function (BETA.DIST).  
   
 If probability = BETA.DIST(x,...TRUE), then BETA.INV(probability,...) = x. The beta distribution can be used in project planning to model probable completion times given an expected completion time and variability.  

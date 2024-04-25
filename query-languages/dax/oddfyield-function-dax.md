@@ -6,6 +6,8 @@ author: jajin7
 
 # ODDFYIELD
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the yield of a security that has an odd (short or long) first period.
 
 ## Syntax

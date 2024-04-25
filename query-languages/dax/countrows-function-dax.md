@@ -4,6 +4,8 @@ title: "COUNTROWS function (DAX) | Microsoft Docs"
 ---
 # COUNTROWS
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 The COUNTROWS function counts the number of rows in the specified table, or in a table defined by an expression.  
   
 ## Syntax  

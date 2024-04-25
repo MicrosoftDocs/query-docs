@@ -4,6 +4,8 @@ title: "DAY function (DAX) | Microsoft Docs"
 ---
 # DAY
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the day of the month, a number from 1 to 31.  
   
 ## Syntax  

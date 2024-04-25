@@ -4,6 +4,8 @@ title: "SWITCH function (DAX) | Microsoft Docs"
 ---
 # SWITCH
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Evaluates an expression against a list of values and returns one of multiple possible result expressions. This function can be used to avoid having multiple nested [IF](if-function-dax.md) statements.  
   
 ## Syntax  

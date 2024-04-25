@@ -4,6 +4,8 @@ title: "LEN function (DAX) | Microsoft Docs"
 ---
 # LEN
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the number of characters in a text string.  
   
 ## Syntax  
