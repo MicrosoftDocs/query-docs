@@ -331,10 +331,7 @@ identifier-reference:<br/>
 exclusive-identifier-reference:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier<br/>
 inclusive-identifier-reference:_<br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`@`  _identifier<br />
-generalized-identifier:_<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the range of text spanned by a sequence of one or more tokens, other than `=` or `]`<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;but only if that text complies with the generalized identifier grammar
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`@`  _identifier_
 
 #### Section-access expression
 
@@ -380,8 +377,10 @@ _field-list:<br/>
 field:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-name_  `=`  _expression<br/>
 field-name:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quoted-identifier_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the range of text spanned by a sequence of one or more tokens, other than `=`, `,` or `]`<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;but only if that text complies with the generalized identifier grammar
 
 #### Item access expression
 
