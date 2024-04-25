@@ -4,6 +4,8 @@ title: "BITOR function (DAX) | Microsoft Docs"
 ---
 # BITOR
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a bitwise OR of two numbers.
   
 ## Syntax  

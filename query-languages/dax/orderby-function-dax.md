@@ -5,6 +5,8 @@ title: "ORDERBY function (DAX) | Microsoft Docs"
 
 # ORDERBY
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Defines the expressions that determine the sort order within each of a window function’s partitions.
   
 ## Syntax  

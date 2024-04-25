@@ -4,6 +4,8 @@ title: "ROUND function (DAX) | Microsoft Docs"
 ---
 # ROUND
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Rounds a number to the specified number of digits.  
   
 ## Syntax  

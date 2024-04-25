@@ -4,6 +4,8 @@ title: "COTH function (DAX) | Microsoft Docs"
 ---
 # COTH
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the hyperbolic cotangent of a hyperbolic angle.
   
 ## Syntax  

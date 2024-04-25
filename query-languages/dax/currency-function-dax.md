@@ -4,6 +4,8 @@ title: "CURRENCY function (DAX) | Microsoft Docs"
 ---
 # CURRENCY
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Evaluates the argument and returns the result as currency data type.  
   
 ## Syntax  

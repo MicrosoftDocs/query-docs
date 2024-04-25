@@ -4,6 +4,8 @@ title: "EXP function (DAX) | Microsoft Docs"
 ---
 # EXP
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns e raised to the power of a given number. The constant e equals 2.71828182845904, the base of the natural logarithm.  
   
 ## Syntax  

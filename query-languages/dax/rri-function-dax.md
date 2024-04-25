@@ -6,6 +6,8 @@ author: jajin7
 
 # RRI
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns an equivalent interest rate for the growth of an investment.
 
 ## Syntax

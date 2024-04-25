@@ -4,6 +4,8 @@ title: "CONFIDENCE.T function (DAX) | Microsoft Docs"
 ---
 # CONFIDENCE.T
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the confidence interval for a population mean, using a Student's t distribution.  
   
 ## Syntax  

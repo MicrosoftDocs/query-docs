@@ -13,6 +13,8 @@ recommendations: false
 
 # RANGE
 
+[!INCLUDE[applies-to-visual-calculations](includes/applies-to-visual-calculations.md)]
+
 Returns an interval of rows within the given axis, relative to the current row. This interval will be comprised of either the last \<step> rows before the current one, or the first \<step> rows after the current one.
 
 ## Syntax

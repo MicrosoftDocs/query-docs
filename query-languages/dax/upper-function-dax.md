@@ -4,6 +4,8 @@ title: "UPPER function (DAX) | Microsoft Docs"
 ---
 # UPPER
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Converts a text string to all uppercase letters.  
   
 ## Syntax  

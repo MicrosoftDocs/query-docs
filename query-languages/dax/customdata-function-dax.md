@@ -4,6 +4,8 @@ title: "CUSTOMDATA function (DAX) | Microsoft Docs"
 ---
 # CUSTOMDATA
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the content of the **CustomData** property in the connection string.  
   
 ## Syntax  

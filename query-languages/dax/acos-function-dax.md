@@ -4,6 +4,8 @@ title: "ACOS function (DAX) | Microsoft Docs"
 ---
 # ACOS
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the arccosine, or inverse cosine, of a number. The arccosine is the angle whose cosine is *number*. The returned angle is given in radians in the range 0 (zero) to pi.  
   
 ## Syntax  

@@ -4,6 +4,8 @@ title: "COT function (DAX) | Microsoft Docs"
 ---
 # COT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the cotangent of an angle specified in radians.  
   
 ## Syntax  

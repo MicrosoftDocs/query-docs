@@ -4,6 +4,8 @@ title: "CONTAINSSTRING function (DAX) | Microsoft Docs"
 ---
 # CONTAINSSTRING
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns TRUE or FALSE indicating whether one string contains another string.  
   
 ## Syntax  

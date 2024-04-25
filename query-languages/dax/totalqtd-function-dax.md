@@ -4,6 +4,8 @@ title: "TOTALQTD function (DAX) | Microsoft Docs"
 ---
 # TOTALQTD
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Evaluates the value of the **expression** for the dates in the quarter to date, in the current context.  
   
 ## Syntax  

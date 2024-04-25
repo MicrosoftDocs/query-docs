@@ -4,6 +4,8 @@ title: "WEEKDAY function (DAX) | Microsoft Docs"
 ---
 # WEEKDAY
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a number from 1 to 7 identifying the day of the week of a date. By default the day ranges from 1 (Sunday) to 7 (Saturday).  
   
 ## Syntax  

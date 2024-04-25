@@ -4,6 +4,8 @@ title: "SUMMARIZECOLUMNS function (DAX) | Microsoft Docs"
 ---
 # SUMMARIZECOLUMNS
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Returns a summary table over a set of groups.  
   
 ## Syntax  

@@ -6,6 +6,8 @@ author: jajin7
 
 # ISPMT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Calculates the interest paid (or received) for the specified period of a loan (or investment) with even principal payments.
 
 ## Syntax

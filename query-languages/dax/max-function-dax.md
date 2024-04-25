@@ -4,6 +4,8 @@ title: "MAX function (DAX) | Microsoft Docs"
 ---
 # MAX
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the largest value in a column, or between two scalar expressions.  
   
 ## Syntax  

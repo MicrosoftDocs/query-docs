@@ -4,6 +4,8 @@ title: "ROUNDUP function (DAX) | Microsoft Docs"
 ---
 # ROUNDUP
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Rounds a number up, away from 0 (zero).  
   
 ## Syntax  

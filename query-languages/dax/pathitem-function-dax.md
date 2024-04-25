@@ -3,6 +3,8 @@ description: "Learn more about: PATHITEM"
 title: "PATHITEM function (DAX) | Microsoft Docs"
 ---
 # PATHITEM
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 Returns the item at the specified *position* from a string resulting from evaluation of a PATH function. Positions are counted from left to right.  
   
 ## Syntax  

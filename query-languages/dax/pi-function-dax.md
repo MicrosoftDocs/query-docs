@@ -4,6 +4,8 @@ title: "PI function (DAX) | Microsoft Docs"
 ---
 # PI
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the value of Pi, 3.14159265358979, accurate to 15 digits.  
   
 ## Syntax  

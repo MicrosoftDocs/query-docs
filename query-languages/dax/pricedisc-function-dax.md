@@ -6,6 +6,8 @@ author: jajin7
 
 # PRICEDISC
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the price per \\$100 face value of a discounted security.
 
 ## Syntax

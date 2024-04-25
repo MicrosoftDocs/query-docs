@@ -4,6 +4,8 @@ title: "ROUNDDOWN function (DAX) | Microsoft Docs"
 ---
 # ROUNDDOWN
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Rounds a number down, toward zero.  
   
 ## Syntax  

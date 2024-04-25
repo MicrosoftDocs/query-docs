@@ -4,6 +4,8 @@ title: "CONCATENATE function (DAX) | Microsoft Docs"
 ---
 # CONCATENATE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Joins two text strings into one text string.  
   
 ## Syntax  

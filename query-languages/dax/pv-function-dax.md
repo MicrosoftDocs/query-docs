@@ -6,6 +6,8 @@ author: jajin7
 
 # PV
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Calculates the present value of a loan or an investment, based on a constant interest rate. You can use PV with either periodic, constant payments (such as a mortgage or other loan), and/or a future value that's your investment goal.
 
 ## Syntax

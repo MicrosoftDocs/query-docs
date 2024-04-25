@@ -5,6 +5,8 @@ title: "PARTITIONBY function (DAX) | Microsoft Docs"
 
 # PARTITIONBY
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Defines the columns that are used to partition a window function’s \<relation> parameter.
   
 ## Syntax  

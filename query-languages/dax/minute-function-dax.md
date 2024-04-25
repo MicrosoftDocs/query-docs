@@ -4,6 +4,8 @@ title: "MINUTE function (DAX) | Microsoft Docs"
 ---
 # MINUTE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the minute as a number from 0 to 59, given a date and time value.  
   
 ## Syntax  

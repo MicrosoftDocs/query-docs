@@ -3,6 +3,8 @@ description: "Learn more about: XNPV"
 title: "XNPV function (DAX) | Microsoft Docs"
 ---
 # XNPV
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
   
 Returns the present value for a schedule of cash flows that is not necessarily periodic.  
   

@@ -4,6 +4,8 @@ title: "RAND function (DAX) | Microsoft Docs"
 ---
 # RAND
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a random number greater than or equal to 0 and less than 1, evenly distributed. The number that is returned changes each time the cell containing this function is recalculated.  
   
 ## Syntax  

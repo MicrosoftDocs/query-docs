@@ -4,6 +4,8 @@ title: "OPENINGBALANCEYEAR function (DAX) | Microsoft Docs"
 ---
 # OPENINGBALANCEYEAR
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Evaluates the **expression** at the first date of the year in the current context.  
   
 ## Syntax  

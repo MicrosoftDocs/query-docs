@@ -4,6 +4,8 @@ title: "ISO.CEILING function (DAX) | Microsoft Docs"
 ---
 # ISO.CEILING
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Rounds a number up, to the nearest integer or to the nearest multiple of significance.  
   
 ## Syntax  

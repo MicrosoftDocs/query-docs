@@ -5,6 +5,8 @@ title: "COMBINEVALUES function (DAX) | Microsoft Docs"
 
 # COMBINEVALUES
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Joins two or more text strings into one text string. The primary purpose of this function is to support multi-column relationships in DirectQuery models. See **Remarks** for details.  
   
 ## Syntax  

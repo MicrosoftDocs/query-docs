@@ -5,6 +5,8 @@ title: "NEXT function (DAX) | Microsoft Docs"
 
 # NEXT
 
+[!INCLUDE[applies-to-visual-calculations](includes/applies-to-visual-calculations.md)]
+
 Used in visual calculations only. Retrieves a value in the next row of an axis in the visual matrix.
   
 ## Syntax  

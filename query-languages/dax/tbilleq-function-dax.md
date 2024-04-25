@@ -6,6 +6,8 @@ author: jajin7
 
 # TBILLEQ
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the bond-equivalent yield for a Treasury bill.
 
 ## Syntax

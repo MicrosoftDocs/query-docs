@@ -6,6 +6,8 @@ author: jajin7
 
 # ACCRINT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the accrued interest for a security that pays periodic interest.
 
 ## Syntax

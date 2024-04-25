@@ -4,6 +4,8 @@ title: "BITAND function (DAX) | Microsoft Docs"
 ---
 # BITAND
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a bitwise AND of two numbers.
   
 ## Syntax  

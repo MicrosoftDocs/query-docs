@@ -6,6 +6,8 @@ author: jajin7
 
 # DISC
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the discount rate for a security.
 
 ## Syntax

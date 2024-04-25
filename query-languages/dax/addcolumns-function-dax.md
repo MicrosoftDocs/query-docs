@@ -4,6 +4,8 @@ title: "ADDCOLUMNS function (DAX) | Microsoft Docs"
 ---
 # ADDCOLUMNS
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Adds calculated columns to the given table or table expression.  
   
 ## Syntax  

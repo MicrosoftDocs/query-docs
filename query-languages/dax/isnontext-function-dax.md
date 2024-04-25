@@ -4,6 +4,8 @@ title: "ISNONTEXT function (DAX) | Microsoft Docs"
 ---
 # ISNONTEXT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Checks if a value is not text (blank cells are not text), and returns TRUE or FALSE.  
   
 ## Syntax  

@@ -4,6 +4,8 @@ title: "ENDOFMONTH function (DAX) | Microsoft Docs"
 ---
 # ENDOFMONTH
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Returns the last date of the month in the current context for the specified column of dates.  
   
 ## Syntax  

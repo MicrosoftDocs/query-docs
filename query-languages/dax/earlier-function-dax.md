@@ -4,6 +4,8 @@ title: "EARLIER function (DAX) | Microsoft Docs"
 ---
 # EARLIER
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Returns the current value of the specified column in an outer evaluation pass of the mentioned column.  
   
 EARLIER is useful for nested calculations where you want to use a certain value as an input and produce calculations based on that input. In Microsoft Excel, you can do such calculations only within the context of the current row; however, in DAX you can store the value of the input and then make calculation using data from the entire table.  

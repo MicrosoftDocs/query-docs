@@ -13,6 +13,8 @@ recommendations: false
 
 # RUNNINGSUM
 
+[!INCLUDE[applies-to-visual-calculations](includes/applies-to-visual-calculations.md)]
+
 Returns a running sum calculated along the given axis of the visual matrix. That is, the sum of the given column calculated over all rows up to the current row.
 
 ## Syntax

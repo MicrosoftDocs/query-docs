@@ -4,6 +4,8 @@ title: "HOUR function (DAX) | Microsoft Docs"
 ---
 # HOUR
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the hour as a number from 0 (12:00 A.M.) to 23 (11:00 P.M.).  
   
 ## Syntax  

@@ -4,6 +4,8 @@ title: "ALLEXCEPT function (DAX) | Microsoft Docs"
 ---
 # ALLEXCEPT
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Removes all context filters in the table except filters that have been applied to the specified columns.  
   
 ## Syntax  

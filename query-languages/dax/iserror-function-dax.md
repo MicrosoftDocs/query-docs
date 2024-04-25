@@ -4,6 +4,8 @@ title: "ISERROR function (DAX) | Microsoft Docs"
 ---
 # ISERROR
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Checks whether a value is an error, and returns TRUE or FALSE.  
   
 ## Syntax  

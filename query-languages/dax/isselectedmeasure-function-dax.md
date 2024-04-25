@@ -4,6 +4,8 @@ title: "ISSELECTEDMEASURE function (DAX) | Microsoft Docs"
 ---
 # ISSELECTEDMEASURE
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Used by expressions for calculation items to determine the measure that is in context is one of those specified in a list of measures. 
 
 ## Syntax  

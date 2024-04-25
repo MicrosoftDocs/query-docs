@@ -4,6 +4,8 @@ title: "FLOOR function (DAX) | Microsoft Docs"
 ---
 # FLOOR
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Rounds a number down, toward zero, to the nearest multiple of significance.  
   
 ## Syntax  

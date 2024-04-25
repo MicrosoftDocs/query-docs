@@ -4,6 +4,8 @@ title: "TREATAS function | Microsoft Docs"
 ---
 # TREATAS
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Applies the result of a table expression as filters to columns from an unrelated table. 
   
 ## Syntax  

@@ -4,6 +4,8 @@ title: "ROLLUPISSUBTOTAL function (DAX) | Microsoft Docs"
 ---
 # ROLLUPISSUBTOTAL
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Pairs rollup groups with the column added by [ROLLUPADDISSUBTOTAL](rollupaddissubtotal-function-dax.md). This function can only be used within an [ADDMISSINGITEMS](addmissingitems-function-dax.md) expression.
   
 ## Syntax  

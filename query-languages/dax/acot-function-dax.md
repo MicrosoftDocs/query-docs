@@ -4,6 +4,8 @@ title: "ACOT function (DAX) | Microsoft Docs"
 ---
 # ACOT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the principal value of the arccotangent, or inverse cotangent of a number.
   
 ## Syntax  

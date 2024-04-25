@@ -4,6 +4,8 @@ title: "PRODUCTX function (DAX) | Microsoft Docs"
 ---
 # PRODUCTX
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the product of an expression evaluated for each row in a table.  
   
 ## Syntax  

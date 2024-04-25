@@ -4,6 +4,8 @@ title: "IFERROR function (DAX) | Microsoft Docs"
 ---
 # IFERROR
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Evaluates an expression and returns a specified value if the expression returns an error; otherwise returns the value of the expression itself.  
   
 ## Syntax  

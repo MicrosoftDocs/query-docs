@@ -4,6 +4,8 @@ title: "PREVIOUSQUARTER function (DAX) | Microsoft Docs"
 ---
 # PREVIOUSQUARTER
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Returns a table that contains a column of all dates from the previous quarter, based on the first date in the **dates** column, in the current context.  
   
 ## Syntax  

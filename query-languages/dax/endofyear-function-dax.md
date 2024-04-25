@@ -4,6 +4,8 @@ title: "ENDOFYEAR function (DAX) | Microsoft Docs"
 ---
 # ENDOFYEAR
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Returns the last date of the year in the current context for the specified column of dates.  
   
 ## Syntax  

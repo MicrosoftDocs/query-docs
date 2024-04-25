@@ -4,6 +4,8 @@ title: "HASONEVALUE function (DAX) | Microsoft Docs"
 ---
 # HASONEVALUE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns **TRUE** when the context for *columnName* has been filtered down to one distinct value only. Otherwise is **FALSE**.  
   
 ## Syntax  

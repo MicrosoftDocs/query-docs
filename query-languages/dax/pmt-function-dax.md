@@ -6,6 +6,8 @@ author: jajin7
 
 # PMT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Calculates the payment for a loan based on constant payments and a constant interest rate.
 
 ## Syntax

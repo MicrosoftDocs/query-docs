@@ -4,6 +4,8 @@ title: "NEXTDAY function (DAX) | Microsoft Docs"
 ---
 # NEXTDAY
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Returns a table that contains a column of all dates from the next day, based on the first date specified in the **dates** column in the current context.  
   
 ## Syntax  

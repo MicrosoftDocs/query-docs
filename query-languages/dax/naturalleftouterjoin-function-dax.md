@@ -3,6 +3,8 @@ description: "Learn more about: NATURALLEFTOUTERJOIN"
 title: "NATURALLEFTOUTERJOIN function (DAX) | Microsoft Docs"
 ---
 # NATURALLEFTOUTERJOIN
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
   
 Performs a join of the LeftTable with the RightTable by using the Left Outer Join semantics.
   

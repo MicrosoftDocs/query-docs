@@ -4,6 +4,8 @@ title: "ROW function (DAX) | Microsoft Docs"
 ---
 # ROW function
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a table with a single row containing values that result from the expressions given to each column.  
   
 ## Syntax  

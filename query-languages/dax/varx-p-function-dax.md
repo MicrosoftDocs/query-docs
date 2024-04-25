@@ -4,6 +4,8 @@ title: "VARX.P function (DAX) | Microsoft Docs"
 ---
 # VARX.P
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the variance of the entire population.  
   
 ## Syntax  

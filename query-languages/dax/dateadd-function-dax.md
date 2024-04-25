@@ -4,6 +4,8 @@ title: "DATEADD function (DAX) | Microsoft Docs"
 ---
 # DATEADD
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Returns a table that contains a column of dates, shifted either forward or backward in time by the specified number of intervals from the dates in the current context.  
   
 ## Syntax  

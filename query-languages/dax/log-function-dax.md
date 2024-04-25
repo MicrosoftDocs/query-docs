@@ -4,6 +4,8 @@ title: "LOG function (DAX) | Microsoft Docs"
 ---
 # LOG
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the logarithm of a number to the base you specify.  
   
 ## Syntax  

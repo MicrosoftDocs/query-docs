@@ -5,6 +5,8 @@ title: "OFFSET function (DAX) | Microsoft Docs"
 
 # OFFSET
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a single row that is positioned either before or after the *current row* within the same table, by a given offset. If the current row cannot be deduced to a single row, multiple rows may be returned.
   
 ## Syntax  

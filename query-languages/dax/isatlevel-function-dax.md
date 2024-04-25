@@ -13,6 +13,8 @@ recommendations: false
 
 # ISATLEVEL
 
+[!INCLUDE[applies-to-visual-calculations](includes/applies-to-visual-calculations.md)]
+
 Reports whether the column is present at the current level.
 
 ## Syntax

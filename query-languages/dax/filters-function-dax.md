@@ -4,6 +4,8 @@ title: "FILTERS function (DAX) | Microsoft Docs"
 ---
 # FILTERS
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the values that are directly applied as filters to *columnName*.  
   
 ## Syntax
