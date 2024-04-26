@@ -36,6 +36,9 @@
     "externalReference": [],
     "globalMetadata": {
       "feedback_system": "Standard",
+      "feedback_product_url": "/power-query/feedback",
+      "feedback_help_link_url": "https://community.fabric.microsoft.com/t5/Power-Query/bd-p/power-bi-services",
+      "feedback_help_link_type": "ask-the-community",
       "breadcrumb_path": "/powerquery-m/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-PowerQueryM",
       "titleSuffix": "PowerQuery M",
@@ -45,7 +48,7 @@
       "author": "dougklopfenstein",
       "ms.author": "dougklo",
       "searchScope": ["Power Query","M formula language"],
-      "ms.date": "11/15/2023"
+      "ms.date": "4/24/2024"
     },
     "fileMetadata": { },
     "template": [],

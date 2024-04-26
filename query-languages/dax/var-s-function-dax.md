@@ -4,6 +4,8 @@ title: "VAR.S function (DAX) | Microsoft Docs"
 ---
 # VAR.S
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the variance of a sample population.  
   
 ## Syntax  

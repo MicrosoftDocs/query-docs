@@ -6,6 +6,8 @@ author: jajin7
 
 # DURATION
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the Macauley duration for an assumed par value of \\$100. Duration is defined as the weighted average of the present value of cash flows, and is used as a measure of a bond price's response to changes in yield.
 
 ## Syntax

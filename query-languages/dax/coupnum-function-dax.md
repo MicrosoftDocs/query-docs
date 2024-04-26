@@ -5,6 +5,8 @@ title: "COUPNUM function (DAX) | Microsoft Docs"
 
 # COUPNUM
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the number of coupons payable between the settlement date and maturity date, rounded up to the nearest whole coupon.
 
 ## Syntax

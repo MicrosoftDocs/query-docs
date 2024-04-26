@@ -6,6 +6,8 @@ author: jajin7
 
 # RECEIVED
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the amount received at maturity for a fully invested security.
 
 ## Syntax

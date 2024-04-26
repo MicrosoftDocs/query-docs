@@ -4,6 +4,8 @@ title: "ADDCOLUMNS function (DAX) | Microsoft Docs"
 ---
 # ADDCOLUMNS
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Adds calculated columns to the given table or table expression.  
   
 ## Syntax  
@@ -33,7 +35,7 @@ A table with all its original columns and the added ones.
 The following example returns an extended version of the Product Category table that includes total sales values from the reseller channel and the internet sales.  
   
 ```dax
-ADDCOLUMNS(ProductCategory,
+ADDCOLUMNS(ProductCategory
                , "Internet Sales", SUMX(RELATEDTABLE(InternetSales_USD), InternetSales_USD[SalesAmount_USD])  
                , "Reseller Sales", SUMX(RELATEDTABLE(ResellerSales_USD), ResellerSales_USD[SalesAmount_USD]))  
 ```

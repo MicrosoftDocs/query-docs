@@ -5,6 +5,8 @@ title: "COMBINA function (DAX) | Microsoft Docs"
 
 # COMBINA
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the number of combinations (with repetitions) for a given number of items.  
   
 ## Syntax  

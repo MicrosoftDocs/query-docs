@@ -6,6 +6,8 @@ author: jajin7
 
 # EFFECT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the effective annual interest rate, given the nominal annual interest rate and the number of compounding periods per year.
 
 ## Syntax

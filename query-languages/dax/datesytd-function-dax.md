@@ -4,6 +4,8 @@ title: "DATESYTD function (DAX) | Microsoft Docs"
 ---
 # DATESYTD
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Returns a table that contains a column of the dates for the year to date, in the current context.  
   
 ## Syntax  

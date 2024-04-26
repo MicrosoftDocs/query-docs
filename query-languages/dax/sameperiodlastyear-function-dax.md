@@ -4,6 +4,8 @@ title: "SAMEPERIODLASTYEAR function (DAX) | Microsoft Docs"
 ---
 # SAMEPERIODLASTYEAR
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Returns a table that contains a column of dates shifted one year back in time from the dates in the specified **dates** column, in the current context.  
   
 ## Syntax  

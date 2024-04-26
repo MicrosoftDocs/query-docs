@@ -4,6 +4,8 @@ title: "OPENINGBALANCEQUARTER function (DAX) | Microsoft Docs"
 ---
 # OPENINGBALANCEQUARTER
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Evaluates the **expression** at the first date of the quarter, in the current context.  
   
 ## Syntax  

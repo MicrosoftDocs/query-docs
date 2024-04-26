@@ -4,6 +4,8 @@ title: "EOMONTH function (DAX) | Microsoft Docs"
 ---
 # EOMONTH
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the date in **datetime** format of the last day of the month, before or after a specified number of months. Use EOMONTH to calculate maturity dates or due dates that fall on the last day of the month.  
   
 ## Syntax  

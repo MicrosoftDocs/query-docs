@@ -4,6 +4,8 @@ title: "LCM function (DAX) | Microsoft Docs"
 ---
 # LCM
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the least common multiple of integers. The least common multiple is the smallest positive integer that is a multiple of all integer arguments number1, number2, and so on. Use LCM to add fractions with different denominators.  
   
 ## Syntax  

@@ -4,6 +4,8 @@ title: "ALL function (DAX) | Microsoft Docs"
 ---
 # ALL
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns all the rows in a table, or all the values in a column, ignoring any filters that might have been applied. This function is useful for clearing filters and creating calculations on all the rows in a table.  
   
 ## Syntax  

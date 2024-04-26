@@ -10,6 +10,8 @@
           href: dax-learn-videos.md
         - name: Use DAX in Power BI Desktop Learn path
           href: https://aka.ms/learndax
+        - name: Write DAX queries with Copilot
+          href: dax-copilot.md
         - name: "Sample model"
           href: dax-sample-model.md 
         - name: Best practices
@@ -173,20 +175,26 @@
               href: lookupvalue-function-dax.md
             - name: MATCHBY
               href: matchby-function-dax.md
+            - name: MOVINGAVERAGE
+              href: movingaverage-function-dax.md
             - name: OFFSET
               href: offset-function-dax.md
             - name: ORDERBY
               href: orderby-function-dax.md
             - name: PARTITIONBY
               href: partitionby-function-dax.md
+            - name: RANGE
+              href: range-function-dax.md
             - name: RANK
               href: rank-function-dax.md
             - name: REMOVEFILTERS
               href: removefilters-function-dax.md
             - name: ROWNUMBER
               href: rownumber-function-dax.md
+            - name: RUNNINGSUM
+              href: runningsum-function-dax.md
             - name: SELECTEDVALUE
-              href: selectedvalue-function.md
+              href: selectedvalue-function-dax.md
             - name: WINDOW
               href: window-function-dax.md
         - name: Financial functions
@@ -506,7 +514,7 @@
             - name: BLANK
               href: blank-function-dax.md
             - name: ERROR
-              href: error-function.md
+              href: error-function-dax.md
             - name: EVALUATEANDLOG
               href: evaluateandlog-function-dax.md
             - name: TOCSV
@@ -534,7 +542,7 @@
             - name: Relationship functions
               href: relationship-functions-dax.md
             - name: CROSSFILTER
-              href: crossfilter-function.md
+              href: crossfilter-function-dax.md
             - name: RELATED
               href: related-function-dax.md
             - name: RELATEDTABLE
@@ -644,7 +652,7 @@
             - name: CURRENTGROUP 
               href: currentgroup-function-dax.md
             - name: DATATABLE
-              href: datatable-function.md
+              href: datatable-function-dax.md
             - name: DETAILROWS
               href: detailrows-function-dax.md
             - name: DISTINCT (column)
@@ -660,7 +668,7 @@
             - name: GENERATEALL
               href: generateall-function-dax.md
             - name: GENERATESERIES
-              href: generateseries-function.md
+              href: generateseries-function-dax.md
             - name: GROUPBY
               href: groupby-function-dax.md
             - name: IGNORE
@@ -673,11 +681,11 @@
               href: naturalleftouterjoin-function-dax.md
             - name: ROLLUP
               href: rollup-function-dax.md
-            - name: ROLLUPADDISUBTOTAL
+            - name: ROLLUPADDISSUBTOTAL
               href: rollupaddissubtotal-function-dax.md
             - name: ROLLUPGROUP
               href: rollupgroup-function-dax.md
-            - name: ROLLUPISUBTOTAL
+            - name: ROLLUPISSUBTOTAL
               href: rollupissubtotal-function-dax.md
             - name: ROW
               href: row-function-dax.md
@@ -694,7 +702,7 @@
             - name: TOPN
               href: topn-function-dax.md
             - name: TREATAS
-              href: treatas-function.md
+              href: treatas-function-dax.md
             - name: UNION
               href: union-function-dax.md
             - name: VALUES

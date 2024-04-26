@@ -7,7 +7,7 @@ title: "SapHana.Database"
 ## Syntax
 
 <pre>
-SapHana.Database(**server** as text, optional **options** as nullable record) as table
+SapHana.Database(<b>server</b> as text, optional <b>options</b> as nullable record) as table
 </pre>
 
 ## About

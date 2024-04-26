@@ -4,6 +4,8 @@ title: "COALESCE function (DAX) | Microsoft Docs"
 ---
 # COALESCE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the first expression that does not evaluate to BLANK. If all expressions evaluate to BLANK, BLANK is returned.
   
 ## Syntax  

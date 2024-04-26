@@ -6,6 +6,8 @@ author: jajin7
 
 # SYD
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the sum-of-years' digits depreciation of an asset for a specified period.
 
 ## Syntax

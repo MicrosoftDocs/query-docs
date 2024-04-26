@@ -4,6 +4,8 @@ title: "DIVIDE function (DAX) | Microsoft Docs"
 ---
 # DIVIDE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Performs division and returns alternate result or BLANK() on division by 0.  
   
 ## Syntax  

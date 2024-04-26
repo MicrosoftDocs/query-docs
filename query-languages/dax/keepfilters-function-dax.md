@@ -4,6 +4,8 @@ title: "KEEPFILTERS function (DAX) | Microsoft Docs"
 ---
 # KEEPFILTERS
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Modifies how filters are applied while evaluating a CALCULATE or CALCULATETABLE function.  
   
 ## Syntax  

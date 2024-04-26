@@ -4,6 +4,8 @@ title: "CALCULATE function (DAX) | Microsoft Docs"
 ---
 # CALCULATE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Evaluates an expression in a modified filter context.
 
 > [!NOTE]
@@ -68,7 +70,7 @@ Filter modifier functions allow you to do more than simply add filters. They pro
 |[ALL](all-function-dax.md) <sup>1</sup>, [ALLEXCEPT](allexcept-function-dax.md), [ALLNOBLANKROW](allnoblankrow-function-dax.md)|Remove filters from one or more columns, or from all columns of a single table.|
 |[KEEPFILTERS](keepfilters-function-dax.md)|Add filter without removing existing filters on the same columns.|
 |[USERELATIONSHIP](userelationship-function-dax.md)|Engage an inactive relationship between related columns, in which case the active relationship will automatically become inactive.|
-|[CROSSFILTER](crossfilter-function.md)|Modify filter direction (from both to single, or from single to both) or disable a relationship.|
+|[CROSSFILTER](crossfilter-function-dax.md)|Modify filter direction (from both to single, or from single to both) or disable a relationship.|
 
 <sup>1</sup> The ALL function and its variants behave as both filter modifiers and as functions that return table objects. If the REMOVEFILTERS function is supported by your tool, it's better to use it to remove filters.
 

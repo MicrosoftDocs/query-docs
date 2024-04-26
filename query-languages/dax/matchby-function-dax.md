@@ -6,6 +6,8 @@ author: keshen
 
 # MATCHBY
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 In window functions, defines the columns that are used to determine how to match data and identify the current row.
 
 ## Syntax  

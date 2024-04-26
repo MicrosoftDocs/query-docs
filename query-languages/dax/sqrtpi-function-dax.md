@@ -4,6 +4,8 @@ title: "SQRTPI function (DAX) | Microsoft Docs"
 ---
 # SQRTPI
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the square root of (number * pi).  
   
 ## Syntax  

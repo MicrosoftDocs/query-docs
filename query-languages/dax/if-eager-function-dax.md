@@ -4,6 +4,8 @@ title: "IF.EAGER function (DAX) | Microsoft Docs"
 ---
 # IF.EAGER
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Checks a condition, and returns one value when TRUE, otherwise it returns a second value. It uses an *eager* execution plan which always executes the branch expressions regardless of the condition expression.
 
 ## Syntax

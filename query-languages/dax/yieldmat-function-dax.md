@@ -6,6 +6,8 @@ author: jajin7
 
 # YIELDMAT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the annual yield of a security that pays interest at maturity.
 
 ## Syntax

@@ -4,6 +4,8 @@ title: "SAMPLE function (DAX) | Microsoft Docs"
 ---
 # SAMPLE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a sample of N rows from the specified table.  
   
 ## Syntax  

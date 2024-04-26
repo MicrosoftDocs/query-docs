@@ -4,6 +4,8 @@ title: "SUMX function (DAX) | Microsoft Docs"
 ---
 # SUMX
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the sum of an expression evaluated for each row in a table.  
   
 ## Syntax  
@@ -26,6 +28,8 @@ A decimal number.
 ## Remarks
 
 - The SUMX function takes as its first argument a table, or an expression that returns a table. The second argument is a column that contains the numbers you want to sum, or an expression that evaluates to a column.  
+
+- The SUMX is an [iterator function](dax-glossary.md#iterator-function).
   
 - Only the numbers in the column are counted. Blanks, logical values, and text are ignored.  
   

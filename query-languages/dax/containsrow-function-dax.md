@@ -4,6 +4,8 @@ title: "CONTAINSROW function | Microsoft Docs"
 ---
 # CONTAINSROW function
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns TRUE if there exists at least one row where all columns have specified values.
 
 ## Syntax

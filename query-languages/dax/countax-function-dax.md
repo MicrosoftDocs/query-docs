@@ -4,6 +4,8 @@ title: "COUNTAX function (DAX) | Microsoft Docs"
 ---
 # COUNTAX
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 The COUNTAX function counts non-blank results when evaluating the result of an expression over a table. That is, it works just like the COUNTA function, but is used to iterate through the rows in a table and count rows where the specified expressions results in a non-blank result.  
   
 ## Syntax  

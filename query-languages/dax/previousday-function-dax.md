@@ -4,6 +4,8 @@ title: "PREVIOUSDAY function (DAX) | Microsoft Docs"
 ---
 # PREVIOUSDAY
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Returns a table that contains a column of all dates representing the day that is previous to the first date in the **dates** column, in the current context.  
   
 ## Syntax  

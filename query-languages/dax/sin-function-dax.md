@@ -4,6 +4,8 @@ title: "SIN function (DAX) | Microsoft Docs"
 ---
 # SIN
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the sine of the given angle.  
   
 ## Syntax  

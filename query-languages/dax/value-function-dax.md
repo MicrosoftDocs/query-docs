@@ -4,6 +4,8 @@ title: "VALUE function (DAX) | Microsoft Docs"
 ---
 # VALUE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Converts a text string that represents a number to a number.  
   
 ## Syntax  

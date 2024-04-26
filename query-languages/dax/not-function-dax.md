@@ -4,6 +4,8 @@ title: "NOT function (DAX) | Microsoft Docs"
 ---
 # NOT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Changes FALSE to TRUE, or TRUE to FALSE.  
   
 ## Syntax  

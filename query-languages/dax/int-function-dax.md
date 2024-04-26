@@ -4,6 +4,8 @@ title: "INT function (DAX) | Microsoft Docs"
 ---
 # INT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Rounds a number down to the nearest integer.  
   
 ## Syntax  

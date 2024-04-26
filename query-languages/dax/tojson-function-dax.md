@@ -4,6 +4,8 @@ title: "TOJSON function (DAX) | Microsoft Docs"
 ---
 # TOJSON
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a table as a string using JSON format.
 
 ## Syntax  

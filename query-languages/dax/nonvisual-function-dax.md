@@ -4,6 +4,8 @@ title: "NONVISUAL function (DAX) | Microsoft Docs"
 ---
 # NONVISUAL
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Marks a value filter in a [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) expression as non-visual. This function can only be used within a [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) expression.
 
 ## Syntax  

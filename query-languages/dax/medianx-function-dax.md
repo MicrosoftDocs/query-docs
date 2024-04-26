@@ -3,6 +3,8 @@ description: "Learn more about: MEDIANX"
 title: "MEDIANX function (DAX) | Microsoft Docs"
 ---
 # MEDIANX
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
   
 Returns the median number of an expression evaluated for each row in a table.  
   

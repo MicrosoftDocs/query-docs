@@ -4,6 +4,8 @@ title: "LASTNONBLANKVALUE function (DAX) | Microsoft Docs"
 ---
 # LASTNONBLANKVALUE
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Evaluates an expression filtered by the sorted values of a column and returns the last value of the expression that is not blank.
   
 ## Syntax  

@@ -4,6 +4,8 @@ title: "LEFT function (DAX) | Microsoft Docs"
 ---
 # LEFT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the specified number of characters from the start of a text string.  
   
 ## Syntax  

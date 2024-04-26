@@ -4,6 +4,8 @@ title: "SINH function (DAX) | Microsoft Docs"
 ---
 # SINH
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the hyperbolic sine of a number.  
   
 ## Syntax  

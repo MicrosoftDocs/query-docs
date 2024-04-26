@@ -3,6 +3,8 @@ description: "Learn more about: STARTOFMONTH"
 title: "STARTOFMONTH function (DAX) | Microsoft Docs"
 ---
 # STARTOFMONTH
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 Returns the first date of the month in the current context for the specified column of dates.  
   
 ## Syntax  

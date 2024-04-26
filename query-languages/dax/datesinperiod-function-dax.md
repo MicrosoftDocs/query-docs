@@ -4,6 +4,8 @@ title: "DATESINPERIOD function (DAX) | Microsoft Docs"
 ---
 # DATESINPERIOD
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
 Returns a table that contains a column of dates that begins with a specified start date and continues for the specified number and type of date intervals.
 
 This function is suited to pass as a filter to the [CALCULATE](calculate-function-dax.md) function. Use it to filter an expression by standard date intervals such as days, months, quarters, or years.

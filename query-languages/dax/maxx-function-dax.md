@@ -4,6 +4,8 @@ title: "MAXX function (DAX) | Microsoft Docs"
 ---
 # MAXX
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the highest value that results from evaluating an expression for each row of a table.
   
 ## Syntax  

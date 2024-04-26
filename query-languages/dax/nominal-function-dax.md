@@ -6,6 +6,8 @@ author: jajin7
 
 # NOMINAL
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the nominal annual interest rate, given the effective rate and the number of compounding periods per year.
 
 ## Syntax
