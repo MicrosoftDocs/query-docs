@@ -9,19 +9,20 @@ Used in visual calculations only. Returns a value from a cell in a visual matrix
 ## Syntax
 
 ```dax
-LOOKUP(<column>[, <filter1> [, <filter2> [, …]]])
+LOOKUP(<scalar>|<colref>, <colref>, <scalar>|<colref>[, <colref>, <sclar>|<colref>]...)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|column| Only column reference is allowed,  For example [Sales] is allowed, but [Sales] – [Cost] is not, nor is SUM([Sales]) |
-|filter1, filter2,…|(Optional) Filter has to be an equality filter. For example [Year]=2019 or [Year]=MAX([Year]).|
+|scalar/colref| The expression or value from column that we wants to get. |
+|colref|(Optional) The column to be filtered. For example, when we want [Year] = 2019, we put [Year] here.|
+|scalar/colref|(Optional) The value to filter. In above example, put 2019 here.|
 
 ## Return value
 
-The value of **column** at the row after filters are applied.
+The value of **column** or **expression** after filters are applied.
 
 If there isn't a match, an error is returned.
 
@@ -54,7 +55,7 @@ table t = _Core
 	densify "isDensified"
 
 column t[ccLookup] = 
-lookup([SumOfInternetSales], [Year] = 2006, [MonthNumberOfYear] = 1, [Month] = "January")
+lookup([SumOfInternetSales], [Year], 2006, [MonthNumberOfYear], 1, [Month], "January")
 
 evaluate selectcolumns(
 	filter(t, not isblank([SumOfInternetSales])),
