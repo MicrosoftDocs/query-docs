@@ -27,6 +27,16 @@ Table.ExpandListColumn(
 )
 ```
 
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [Name = "Bob", Discount = 0.15],
+    [Name = "Jim", Discount = 0.15],
+    [Name = "Paul", Discount = 0.15]
+})
+```
+
 ## Example 2
 
 Split the nested table column [Components].
@@ -44,11 +54,12 @@ Table.ExpandListColumn(
     "Components"
 )
 ```
+
 **Output**
 
 ```powerquery-m
 Table.FromRecords({
-    [Part = "Tool", [Name = "Thingamajig", Quantity = 2],
-    [Part = "Tool", [Name = "Widget", Quantity = 3]
+    [Part = "Tool"], [Name = "Thingamajig", Quantity = 2],
+    [Part = "Tool"], [Name = "Widget", Quantity = 3]
 })
 ```
