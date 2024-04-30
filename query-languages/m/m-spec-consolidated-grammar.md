@@ -378,9 +378,12 @@ field:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-name_  `=`  _expression<br/>
 field-name:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quoted-identifier_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the range of text spanned by a sequence of one or more tokens, other than `=`, `,` or `]`<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;but only if that text complies with the generalized identifier grammar
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quoted-identifier<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier<br/>
+generalized-identifier:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The range of text spanned by a sequence of one or more tokens, other than `=`, `,` or `]`,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;but only if that text complies with the generalized identifier grammar.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(This grammar token is contextual; it is only relevant in the context of when a `field-name` is expected.)
 
 #### Item access expression
 
