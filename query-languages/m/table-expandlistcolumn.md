@@ -59,7 +59,7 @@ Table.ExpandListColumn(
 
 ```powerquery-m
 Table.FromRecords({
-    [Part = "Tool"], [Name = "Thingamajig", Quantity = 2],
-    [Part = "Tool"], [Name = "Widget", Quantity = 3]
+    [Part = "Tool", Components = [Name = "Thingamajig", Quantity = 2]],
+    [Part = "Tool", Components = [Name = "Widget", Quantity = 3]]
 })
 ```
