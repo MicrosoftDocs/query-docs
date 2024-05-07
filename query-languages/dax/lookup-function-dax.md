@@ -43,3 +43,10 @@ Lookup Example 2 = LOOKUP([Sales Amount], [Category], "Bikes")
 The screenshot below shows the matrix with the three visual calculations.
 
 ![DAX visual calculation](media/dax-queries/dax-visualcalc-lookup.png)
+
+## Related content
+
+[FIRST](first-function-dax.md)
+[LAST](last-function-dax.md)  
+[PREVIOUS](previous-function-dax.md)  
+[NEXT](next-function-dax.md)
