@@ -11,14 +11,14 @@ Returns a value from a cell in a visual matrix by absolute navigation. You can s
 ## Syntax
 
 ```dax
-LOOKUP(<scalar>|<colref>, <colref>, <scalar>|<colref>[, <colref>, <sclar>|<colref>]...)
+LOOKUP(<expression>, <colref>, <scalar>|<colref>[, <colref>, <sclar>|<colref>]...)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|scalar/colref| The expression or value from column that we wants to get. |
+|expression| The expression or value from column that we wants to get. |
 |colref|(Optional) The column to be filtered. For example, when we want [Category] = "Bikes", we put [Category] here.|
 |scalar/colref|(Optional) The value to filter. In above example, put "Bikes" here.|
 
