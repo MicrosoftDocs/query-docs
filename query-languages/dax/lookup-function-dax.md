@@ -18,13 +18,13 @@ LOOKUP(<expression>, <colref>, <scalar>|<colref>[, <colref>, <sclar>|<colref>]..
 
 |Term|Definition|
 |--------|--------------|
-|expression| The expression or value from column that we wants to get. |
+|expression| The expression that we wants to get. |
 |colref|(Optional) The column to be filtered. For example, when we want [Category] = "Bikes", we put [Category] here.|
 |scalar/colref|(Optional) The value to filter. In above example, put "Bikes" here.|
 
 ## Return value
 
-The value of **column** or **expression** after filters are applied.
+The value of **expression** after filters are applied.
 
 If there isn't a match, an error is returned.
 
@@ -33,7 +33,7 @@ If multiple rows match the filters, an error is returned.
 ## Example 1
 
 In this example, LOOKUP retrieves the sum of sale for filters: [Category] = "Bikes".
-The first argument could be a column or an expression.
+The first argument could be a column or a scalar expression.
 
 ```dax
 Lookup Example 1 = LOOKUP(SUM([Sales Amount]),  [Category], "Bikes")
