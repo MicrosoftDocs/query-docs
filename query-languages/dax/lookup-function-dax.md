@@ -11,7 +11,7 @@ Returns a value from a cell in a visual matrix by absolute navigation. You can s
 ## Syntax
 
 ```dax
-LOOKUP(<expression>, <colref>, <scalar>|<colref>[, <colref>, <sclar>|<colref>]...)
+LOOKUP(<expression>, <colref>, <expression>[, <colref>, <expression>]...)
 ```
 
 ### Parameters
@@ -20,7 +20,7 @@ LOOKUP(<expression>, <colref>, <scalar>|<colref>[, <colref>, <sclar>|<colref>]..
 |--------|--------------|
 |expression| The expression that we wants to get. |
 |colref|(Optional) The column to be filtered. For example, when we want [Category] = "Bikes", we put [Category] here.|
-|scalar/colref|(Optional) The value to filter. In above example, put "Bikes" here.|
+|expression|(Optional) The value to filter. In above example, put "Bikes" here.|
 
 ## Return value
 
