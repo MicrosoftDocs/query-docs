@@ -46,7 +46,7 @@ The screenshot below shows the matrix with the three visual calculations.
 
 ## Related content
 
-[FIRST](first-function-dax.md)
+[FIRST](first-function-dax.md)  
 [LAST](last-function-dax.md)  
 [PREVIOUS](previous-function-dax.md)  
 [NEXT](next-function-dax.md)
