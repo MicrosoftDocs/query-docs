@@ -27,7 +27,7 @@ MOVINGAVERAGE ( <column>, <windowSize>[, <includeCurrent>][, <axis>][, <blanks>]
 
 |Term|Definition|
 |--------|--------------|
-|column|The column that provides the value for each row.|
+|column|The column that provides the value for each element.|
 |windowSize|The number of rows to include in the calculation. Must be a constant value.|
 |includeCurrent|(Optional) A logical value specifying whether or not to include the current row in the range. Default value is True.|
 |axis|(Optional) An axis reference, the direction along which the moving average will be calculated.|
@@ -36,7 +36,7 @@ MOVINGAVERAGE ( <column>, <windowSize>[, <includeCurrent>][, <axis>][, <blanks>]
 
 ## Return value
 
-A scalar value, the moving average at the current row.
+A scalar value, the moving average at the current element of the axis.
 
 ## Remarks
 
