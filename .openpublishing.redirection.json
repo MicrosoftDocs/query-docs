@@ -79,6 +79,31 @@
 			"source_path": "query-languages/dax/treatas-function.md",
 			"redirect_url": "/dax/treatas-function-dax",
 			"redirect_document_id": false
+		},
+		{
+			"source_path": "query-languages/dax/networkdays-dax.md",
+			"redirect_url": "/dax/networkdays-function-dax",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "query-languages/dax/norm-dist-dax.md",
+			"redirect_url": "/dax/norm-dist-function-dax",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "query-languages/dax/norm-inv-dax.md",
+			"redirect_url": "/dax/norm-inv-function-dax",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "query-languages/dax/norm-s-dist-dax.md",
+			"redirect_url": "/dax/norm-s-dist-function-dax",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "query-languages/dax/norm-s-inv-dax.md",
+			"redirect_url": "/dax/norm-s-inv-function-dax",
+			"redirect_document_id": false
 		}
 	]
 }

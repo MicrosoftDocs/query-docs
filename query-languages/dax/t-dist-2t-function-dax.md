@@ -43,8 +43,8 @@ Returns
 
 ## Related content  
 
-[T.DIST](t-dist-dax.md)  
-[T.DIST.RT](t-dist-rt-dax.md)  
-[T.INV](t-inv-dax.md)  
-[T.INV.2t](t-inv-2t-dax.md)  
+[T.DIST](t-dist-function-dax.md)  
+[T.DIST.RT](t-dist-rt-function-dax.md)  
+[T.INV](t-inv-function-dax.md)  
+[T.INV.2t](t-inv-2t-function-dax.md)  
   
