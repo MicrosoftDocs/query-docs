@@ -45,6 +45,6 @@ Returns
 
 ## Related content  
 
-[NORM.S.INV](norm-s-inv-dax.md)   
-[NORM.S.DIST function](norm-s-dist-dax.md)   
-[NORM.DIST function](norm-dist-dax.md)   
+[NORM.S.INV](norm-s-inv-function-dax.md)   
+[NORM.S.DIST function](norm-s-dist-function-dax.md)   
+[NORM.DIST function](norm-dist-function-dax.md)   
