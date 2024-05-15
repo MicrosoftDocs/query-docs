@@ -1,15 +1,17 @@
 ---
-description: "Learn more about: T.DIST.RT"
-title: "T.DIST.RT function (DAX) | Microsoft Docs"
+description: "Learn more about: T.DIST.2T"
+title: "T.DIST.2T function (DAX) | Microsoft Docs"
 ---
-# T.DIST.RT
+# T.DIST.2T
 
-Returns the right-tailed Student's t-distribution.
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
+Returns the two-tailed Student's t-distribution.
+  
 ## Syntax  
   
 ```dax
-T.DIST.RT(X,Deg_freedom)
+T.DIST.2T(X,Deg_freedom)
 ```
   
 ### Parameters  
@@ -21,7 +23,7 @@ T.DIST.RT(X,Deg_freedom)
   
 ## Return value
 
-The right-tailed Student's t-distribution.
+The two-tailed Student's t-distribution.
 
 ## Remarks
 
@@ -30,18 +32,19 @@ The right-tailed Student's t-distribution.
 ## Example  
   
 ```dax
-EVALUATE { T.DIST.RT(1.959999998, 60) }
+EVALUATE { T.DIST.2T(1.959999998, 60) }
 ```
 
 Returns
 
 |[Value]  |
 |---------|
-|0.0273224649879605     |
+|0.054644929975921     |
 
 ## Related content  
 
 [T.DIST](t-dist-dax.md)  
-[T.DIST.2T](t-dist-2t-dax.md)  
+[T.DIST.RT](t-dist-rt-dax.md)  
 [T.INV](t-inv-dax.md)  
 [T.INV.2t](t-inv-2t-dax.md)  
+  

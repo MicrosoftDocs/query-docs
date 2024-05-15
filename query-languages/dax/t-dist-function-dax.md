@@ -4,6 +4,8 @@ title: "T.DIST function (DAX) | Microsoft Docs"
 ---
 # T.DIST
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the Student's left-tailed t-distribution.
   
 ## Syntax  

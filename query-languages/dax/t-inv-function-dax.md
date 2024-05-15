@@ -1,15 +1,17 @@
 ---
-description: "Learn more about: T.INV.2T"
-title: "T.INV.2T function (DAX) | Microsoft Docs"
+description: "Learn more about: T.INV"
+title: "T.INV function (DAX) | Microsoft Docs"
 ---
-# T.INV.2T
+# T.INV
 
-Returns the two-tailed inverse of the Student's t-distribution.
- 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
+Returns the left-tailed inverse of the Student's t-distribution.
+
 ## Syntax  
   
 ```dax
-T.INV.2T(Probability,Deg_freedom)
+T.INV(Probability,Deg_freedom)
 ```
   
 ### Parameters  
@@ -21,7 +23,7 @@ T.INV.2T(Probability,Deg_freedom)
   
 ## Return value
 
-The two-tailed inverse of the Student's t-distribution.
+The left-tailed inverse of the Student's t-distribution.
 
 ## Remarks
 
@@ -30,18 +32,18 @@ The two-tailed inverse of the Student's t-distribution.
 ## Example  
   
 ```dax
-EVALUATE { T.INV.2T(0.546449, 60) }
+EVALUATE { T.INV(0.75, 2) }
 ```
 
 Returns
 
 |[Value]  |
 |---------|
-|0.606533075825759    |
+|0.816496580927726   |
 
 ## Related content  
 
-[T.INV](t-inv-dax.md)  
+[T.INV.2T](t-inv-2t-dax.md)  
 [T.DIST](t-dist-dax.md)  
 [T.DIST.2T](t-dist-2t-dax.md)  
 [T.DIST.RT](t-dist-rt-dax.md)  

@@ -5,6 +5,8 @@ title: "NETWORKDAYS function (DAX) | Microsoft Docs"
 
 # NETWORKDAYS
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the number of whole workdays between two dates (inclusive). Parameters specify which and how many days are weekend days. Weekend days and days specified as holidays are not considered as workdays.
 
 ## Syntax
