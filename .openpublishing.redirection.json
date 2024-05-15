@@ -104,6 +104,31 @@
 			"source_path": "query-languages/dax/norm-s-inv-dax.md",
 			"redirect_url": "/dax/norm-s-inv-function-dax",
 			"redirect_document_id": false
+		},
+		{
+			"source_path": "query-languages/dax/t-dist-2t-dax.md",
+			"redirect_url": "/dax/t-dist-2t-function-dax",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "query-languages/dax/t-dist-dax.md",
+			"redirect_url": "/dax/t-dist-function-dax",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "query-languages/dax/t-dist-rt-dax.md",
+			"redirect_url": "/dax/t-dist-rt-function-dax",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "query-languages/dax/t-inv-2t-dax.md",
+			"redirect_url": "/dax/t-inv-2t-function-dax",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "query-languages/dax/t-inv-dax.md",
+			"redirect_url": "/dax/t-inv-function-dax",
+			"redirect_document_id": false
 		}
 	]
 }
