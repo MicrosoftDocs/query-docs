@@ -4,6 +4,8 @@ title: "T.DIST function (DAX) | Microsoft Docs"
 ---
 # T.DIST
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the Student's left-tailed t-distribution.
   
 ## Syntax  
@@ -42,8 +44,8 @@ Returns,
 
 ## Related content  
 
-[T.DIST.2T](t-dist-2t-dax.md)  
-[T.DIST.RT](t-dist-rt-dax.md)  
-[T.INV](t-inv-dax.md)  
-[T.INV.2t](t-inv-2t-dax.md)  
+[T.DIST.2T](t-dist-2t-function-dax.md)  
+[T.DIST.RT](t-dist-rt-function-dax.md)  
+[T.INV](t-inv-function-dax.md)  
+[T.INV.2t](t-inv-2t-function-dax.md)  
   

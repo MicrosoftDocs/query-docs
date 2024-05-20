@@ -21,7 +21,7 @@ These functions help you create calculations based on dates and time. Many of th
 |[HOUR](hour-function-dax.md)     |  Returns the hour as a number from 0 (12:00 A.M.) to 23 (11:00 P.M.).       |
 |[MINUTE](minute-function-dax.md)     |   Returns the minute as a number from 0 to 59, given a date and time value.        |
 |[MONTH](month-function-dax.md)      |  Returns the month as a number from 1 (January) to 12 (December).        |
-|[NETWORKDAYS](networkdays-dax.md)| Returns the number of whole workdays between two dates. |
+|[NETWORKDAYS](networkdays-function-dax.md)| Returns the number of whole workdays between two dates. |
 |[NOW](now-function-dax.md)     |  Returns the current date and time in datetime format.        |
 |[QUARTER](quarter-function-dax.md)     |  Returns the quarter as a number from 1 to 4.       |
 |[SECOND](second-function-dax.md)     |  Returns the seconds of a time value, as a number from 0 to 59.        |

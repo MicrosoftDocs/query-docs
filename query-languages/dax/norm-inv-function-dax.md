@@ -4,6 +4,8 @@ title: "NORM.INV function (DAX) | Microsoft Docs"
 ---
 # NORM.INV
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 The inverse of the normal cumulative distribution for the specified mean and standard deviation.
  
   
@@ -43,6 +45,6 @@ Returns
 
 ## Related content  
 
-[NORM.S.INV](norm-s-inv-dax.md)   
-[NORM.S.DIST function](norm-s-dist-dax.md)   
-[NORM.DIST function](norm-dist-dax.md)   
+[NORM.S.INV](norm-s-inv-function-dax.md)   
+[NORM.S.DIST function](norm-s-dist-function-dax.md)   
+[NORM.DIST function](norm-dist-function-dax.md)   
