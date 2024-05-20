@@ -4,6 +4,8 @@ title: "T.DIST.RT function (DAX) | Microsoft Docs"
 ---
 # T.DIST.RT
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the right-tailed Student's t-distribution.
 
 ## Syntax  
@@ -41,7 +43,7 @@ Returns
 
 ## Related content  
 
-[T.DIST](t-dist-dax.md)  
-[T.DIST.2T](t-dist-2t-dax.md)  
-[T.INV](t-inv-dax.md)  
-[T.INV.2t](t-inv-2t-dax.md)  
+[T.DIST](t-dist-function-dax.md)  
+[T.DIST.2T](t-dist-2t-function-dax.md)  
+[T.INV](t-inv-function-dax.md)  
+[T.INV.2t](t-inv-2t-function-dax.md)  

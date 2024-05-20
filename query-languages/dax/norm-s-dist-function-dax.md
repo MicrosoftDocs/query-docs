@@ -4,6 +4,8 @@ title: "NORM.S.DIST function (DAX) | Microsoft Docs"
 ---
 # NORM.S.DIST
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the standard normal distribution (has a mean of zero and a standard deviation of one).
 
 ## Syntax  
@@ -41,6 +43,6 @@ Returns
 
 ## Related content  
 
-[NORM.INV function](norm-inv-dax.md)  
-[NORM.DIST function](norm-dist-dax.md)  
-[NORM.S.INV](norm-s-inv-dax.md)  
+[NORM.INV function](norm-inv-function-dax.md)  
+[NORM.DIST function](norm-dist-function-dax.md)  
+[NORM.S.INV](norm-s-inv-function-dax.md)  
