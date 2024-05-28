@@ -54,13 +54,13 @@ Table.FromRecords({
 
 ## Example 2
 
-Process CSV text with multiple delimiter characters.
+Process CSV text with multiple delimiter characters. In this example, the 3rd parameter specifies the delimiter pattern `#|#` to use instead of the default.
 
 **Usage**
 
 ```powerquery-m
 let
-    csv = Text.Combine({"ID#|#Color", "1#|#Red", "2#|#Blue"}, "#(cr)#(lf)")
+    csv = Text.Combine({"OrderID#|#Color", "1#|#Red", "2#|#Blue"}, "#(cr)#(lf)")
 in
     Table.PromoteHeaders(Csv.Document(csv, null, "#|#"))
 ```
