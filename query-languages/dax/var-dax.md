@@ -66,12 +66,13 @@ Sum of SalesAmount YoY%: =
 By using a variable, you can create a single measure that calculates the same result:  
   
 ```dax
-YoY% = VAR Sales = SUM(SalesTable[SalesAmount])  
+YoY% =
+  VAR Sales = 
+      SUM(SalesTable[SalesAmount])  
+  VAR SalesLastYear =
+      CALCULATE ( SUM ( SalesTable[SalesAmount] ), SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
 
-VAR SalesLastYear =
-    CALCULATE ( SUM ( SalesTable[SalesAmount] ), SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
-
-    return if(Sales, DIVIDE(Sales – SalesLastYear, Sales))  
+  return if(Sales, DIVIDE(Sales – SalesLastYear, Sales))  
 ```
 
 By using a variable, you can get the same outcome, but in a more readable way. And because the result of the expression is stored in the variable, the measure's performance can be significantly improved because it doesn't have to be recalculated each time it's used.
