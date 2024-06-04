@@ -50,11 +50,12 @@ in
 Table.FromRecords({
     [OrderID = "1", Item = "Fishing rod"],
     [OrderID = "2", Item = "1 lb. worms"]
+})
 ```
 
 ## Example 2
 
-Process CSV text with multiple delimiter characters. In this example, the 3rd parameter specifies the delimiter pattern `#|#` to use instead of the default.
+Process CSV text with multiple delimiter characters. In this example, the third parameter specifies the delimiter pattern `#|#` to use instead of the default.
 
 **Usage**
 
@@ -71,4 +72,5 @@ in
 Table.FromRecords({
     [OrderID = "1", Color = "Red"],
     [OrderID = "2", Color = "Blue"]
+})
 ```
