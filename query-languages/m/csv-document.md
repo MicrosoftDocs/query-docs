@@ -50,6 +50,7 @@ in
 Table.FromRecords({
     [OrderID = "1", Item = "Fishing rod"],
     [OrderID = "2", Item = "1 lb. worms"]
+})
 ```
 
 ## Example 2
@@ -71,4 +72,5 @@ in
 Table.FromRecords({
     [OrderID = "1", Color = "Red"],
     [OrderID = "2", Color = "Blue"]
+})
 ```
