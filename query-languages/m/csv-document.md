@@ -21,7 +21,7 @@ Returns the contents of the CSV document as a table.
 
 If a record is specified for `columns` (and `delimiter`, `extraValues`, and `encoding` are null), the following record fields may be provided:
 
-* `Delimiter`: The column delimiter. Default: `","`.
+* `Delimiter`: A single character column delimiter. Default: `","`.
 * `Columns`: Can be null, the number of columns, a list of column names, or a table type. If the number of columns is lower than the number found in the input, the additional columns will be ignored. If the number of columns is higher than the number found in the input, the additional columns will be null. When not specified, the number of columns will be determined by what is found in the input.
 * `Encoding`: The text encoding of the file. Default: 65001 (UTF-8).
 * `CsvStyle`: Specifies how quotes are handled.
@@ -50,4 +50,25 @@ in
 Table.FromRecords({
     [OrderID = "1", Item = "Fishing rod"],
     [OrderID = "2", Item = "1 lb. worms"]
+```
+
+## Example 2
+
+Process CSV text with multiple delimiter characters. In this example, the 3rd parameter specifies the delimiter pattern `#|#` to use instead of the default.
+
+**Usage**
+
+```powerquery-m
+let
+    csv = Text.Combine({"OrderID#|#Color", "1#|#Red", "2#|#Blue"}, "#(cr)#(lf)")
+in
+    Table.PromoteHeaders(Csv.Document(csv, null, "#|#"))
+```
+
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [OrderID = "1", Color = "Red"],
+    [OrderID = "2", Color = "Blue"]
 ```
