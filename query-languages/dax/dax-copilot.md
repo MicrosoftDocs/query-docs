@@ -5,7 +5,7 @@ ms.service: powerbi
 ms.date: 03/28/2024
 ms.reviewer: 
 ms.topic: how-to
-author: maggieMSFT
+author: maggiesMSFT
 ms.author: maggies
 no-loc: [CoPilot]
 #customer intent: As a DAX query writer, I want to use Copilot to help me write queries.
