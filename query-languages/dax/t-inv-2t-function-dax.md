@@ -4,6 +4,8 @@ title: "T.INV.2T function (DAX) | Microsoft Docs"
 ---
 # T.INV.2T
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the two-tailed inverse of the Student's t-distribution.
  
 ## Syntax  
@@ -41,7 +43,7 @@ Returns
 
 ## Related content  
 
-[T.INV](t-inv-dax.md)  
-[T.DIST](t-dist-dax.md)  
-[T.DIST.2T](t-dist-2t-dax.md)  
-[T.DIST.RT](t-dist-rt-dax.md)  
+[T.INV](t-inv-function-dax.md)  
+[T.DIST](t-dist-function-dax.md)  
+[T.DIST.2T](t-dist-2t-function-dax.md)  
+[T.DIST.RT](t-dist-rt-function-dax.md)  

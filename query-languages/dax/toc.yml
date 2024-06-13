@@ -116,7 +116,7 @@
             - name: MONTH
               href: month-function-dax.md
             - name: NETWORKDAYS
-              href: networkdays-dax.md
+              href: networkdays-function-dax.md
             - name: NOW
               href: now-function-dax.md
             - name: QUARTER
@@ -586,13 +586,13 @@
             - name: MEDIANX
               href: medianx-function-dax.md
             - name: NORM.DIST
-              href: norm-dist-dax.md
+              href: norm-dist-function-dax.md
             - name: NORM.INV
-              href: norm-inv-dax.md
+              href: norm-inv-function-dax.md
             - name: NORM.S.DIST
-              href: norm-s-dist-dax.md
+              href: norm-s-dist-function-dax.md
             - name: NORM.S.INV
-              href: norm-s-inv-dax.md
+              href: norm-s-inv-function-dax.md
             - name: PERCENTILE.EXC
               href: percentile-exc-function-dax.md
             - name: PERCENTILE.INC
@@ -620,15 +620,15 @@
             - name: STDEVX.P
               href: stdevx-p-function-dax.md
             - name: T.DIST
-              href: t-dist-dax.md
+              href: t-dist-function-dax.md
             - name: T.DIST.2T
-              href: t-dist-2t-dax.md
+              href: t-dist-2t-function-dax.md
             - name: T.DIST.RT
-              href: t-dist-rt-dax.md
+              href: t-dist-rt-function-dax.md
             - name: T.INV
-              href: t-inv-dax.md
+              href: t-inv-function-dax.md
             - name: T.INV.2T
-              href: t-inv-2t-dax.md
+              href: t-inv-2t-function-dax.md
             - name: VAR.S
               href: var-s-function-dax.md
             - name: VAR.P

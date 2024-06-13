@@ -4,6 +4,8 @@ title: "NORM.S.INV function (DAX) | Microsoft Docs"
 ---
 # NORM.S.INV
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns the inverse of the standard normal cumulative distribution. The distribution has a mean of zero and a standard deviation of one.
 
 ## Syntax  
@@ -40,6 +42,6 @@ Returns
 
 ## Related content  
 
-[NORM.INV](norm-inv-dax.md)  
-[NORM.S.DIST function](norm-s-dist-dax.md)  
-[NORM.DIST function](norm-dist-dax.md)  
+[NORM.INV](norm-inv-function-dax.md)  
+[NORM.S.DIST function](norm-s-dist-function-dax.md)  
+[NORM.DIST function](norm-dist-function-dax.md)  
