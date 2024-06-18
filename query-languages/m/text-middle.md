@@ -54,4 +54,4 @@ Text.Middle("Hello World", 0, 2)
 
 **Output**
 
-`"Hello"`
+`"He"`
