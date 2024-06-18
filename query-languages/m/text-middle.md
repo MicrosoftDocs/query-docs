@@ -41,3 +41,17 @@ Text.Middle("Hello World", 6, 20)
 **Output**
 
 `"World"`
+
+## Example 3
+
+Find the substring from the text "Hello World" starting at index 0 through 2.
+
+**Usage**
+
+```powerquery-m
+Text.Middle("Hello World", 0, 2)
+```
+
+**Output**
+
+`"Hello"`
