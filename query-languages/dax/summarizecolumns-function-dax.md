@@ -255,7 +255,111 @@ Still grouped by City and State, but rolled together when reporting a subtotal r
 ||B|FALSE|3||TRUE|  
 ||C|FALSE|3||TRUE|  
 |||TRUE|11||TRUE|  
-  
+
+## Contextual SummarizeColumns ##
+### Background
+Until February 2023, SUMMARIZECOLUMNS did not support evaluation within a context transition at all. In products released before that month, this limitation made SUMMARIZECOLUMNS not useful in most of the measures – it was not possible to call a measure SUMMARIZECOLUMNS in any case of context transition, including other SUMMARIZECOLUMNS statements. 
+
+From February 2023, the context transition was supported in a few scenarios, but not in all the conditions. The supported and restricted cases are as follows:
+
+| SummarizeColumns Type | External Filter with single column | External Filter with more than one column | External GroupBy Columns  |
+| -------- | ------- | ------- | ------- |
+| SummarizeColumns with GroupBy only | OK | OK | OK |
+| SummarizeColumns with Filters/Measures | OK | ERROR | ERROR |
+
+From June 2024, we are enabling contextual SummarizeColumns which allows SummarizeColumns to be evaluated in any context transition, SummarizeColumns in measure is now fully supported:
+
+| SummarizeColumns Type | External Filter with single column | External Filter with more than one column | External GroupBy Columns  |
+| -------- | ------- | ------- | ------- |
+| SummarizeColumns with GroupBy only | OK | OK | OK |
+| SummarizeColumns with Filters/Measures | OK | OK | OK |
+
+However, this update also includes changes to the behavior of SummarizeColumns, which may alter the results of existing expressions: 
+
+### SelfValue semantics for external filters ###
+We are introducing a semantic concept named SelfValue, which alters how filters from external tables interact with GroupBy columns in SummarizeColumns. This change disallows filters from a different table to affect the GroupBy columns, even if the tables are related through a filter-by relationship.
+An example illustrating the impact of this change involves the following expression:
+
+```
+CalculateTable(
+  SummarizeColumns(
+      'Reseller Sales'[ResellerKey], 
+      'Reseller Sales'[ProductKey]
+  ), 
+  Treatas({(229)}, 'Product'[Product Key])
+)
+```
+
+Before this update, the TreatAs filter would apply to the GroupBy operation within SummarizeColumns, leveraging the relationship between 'Product'[Product Key] and 'Reseller Sales'[ProductKey]. Consequently, the query results would only include rows where 'Reseller Sales'[ProductKey] equals 229.
+However, after the update, GroupBy columns within SummarizeColumns will no longer be filtered by columns from external tables, even if a relationship exists between them. Therefore, in the example above, the GroupBy column 'Reseller Sales'[ProductKey] will not be filtered by the 'Product'[ProductKey] column. As a result, the query will include rows where 'Reseller Sales'[ProductKey] is not equal to 229.
+
+If you prefer to retain the previous behavior, you can rewrite the expression using AddColumns or SelectColumns instead of SummarizeColumns, as shown below:
+```
+CalculateTable(
+    Filter(
+        SelectColumns(
+            'Reseller Sales',
+            "ResellerKey", 
+            [ResellerKey],
+            "ProductKey",
+            [ProductKey]
+        ),
+        And(Not IsBlank([ResellerKey]),  Not IsBlank([ProductKey]))
+    ),
+    Treatas({(229)}, 'Product'[Product Key])
+)
+```
+This rewritten expression preserves the original semantics where the GroupBy operation is not affected by the SelfValue restriction introduced by the update.
+
+### Row validation for groupby columns fully covered by Treatas ###
+
+Prior to this update, within a SummarizeColumns function, if all GroupBy columns from a specific table were fully covered by a single Treatas filter from that same table, as shown below:
+
+```
+SummarizeColumns(
+  Geography[Country], 
+  Geography[State], 
+  Treatas(
+      {("United States", "Alberta")}, 
+      Geography[Country], 
+      Geography[State]
+  )
+)
+```
+The result of the above query would include whatever rows were specified in the Treatas filter, regardless of whether they were valid or not. For instance, the result would be a single-row table ("United States", "Alberta"), even if no such row with [Country] = "United States" and [State] = "Alberta" existed in the 'Geography' table. 
+
+This issue was known and has been addressed by the update. After the update, such invalid rows will be filtered out, and only valid rows from the GroupBy table will be returned. Therefore, the result for the query above would be empty, as there are no valid rows matching the specified [Country] and [State] values in the 'Geography' table.
+
+### Disallow mixed Keepfilters/overriddefilters on same table/cluster ###
+
+The recent update has introduced a temporary restriction that triggers an error message stating:
+```   
+"SummarizeColumns filters with keepfilters behavior and overridefilters behavior are mixed within one cluster, which is not allowed. Consider adding keepfilters() to all filters of summarizecolumns." 
+```
+This error occurs when both normal filters (which override existing filters) and filters with KeepFilters specified are present within the same table/cluster. For example:
+```
+Evaluate CalculateTable(
+  SummarizeColumns(
+      Product[Color],
+      KeepFilters(
+          TreatAs(
+              {( "Washington")}
+              , Geography[State]
+          )
+      ),
+      TreatAs(
+          {("United States"), ("Canada")}
+          , Geography[Country]
+      )
+  )
+  ,TreatAs({("Alberta")}, Geography[State])
+  ,TreatAs({("Canada")}, Geography[Country])
+)
+```
+In the above expression, there are two filters on the 'Geography' table: one with KeepFilters specified and one without. These filters overlap with external filters on different columns. Currently, this configuration is not allowed because internally, the two filters are clustered into one, and the system cannot determine the correct filter overriding behavior for the clustered filter overall in such cases.
+
+Please note that this restriction is temporary. We are actively developing solutions to remove this limitation in future updates. If you encounter this error, we advise adjusting the filters within SummarizeColumns by adding or removing KeepFilters as necessary to ensure consistent overriding behavior on each table.
+
 ## Related content
 
 [SUMMARIZE](summarize-function-dax.md)
