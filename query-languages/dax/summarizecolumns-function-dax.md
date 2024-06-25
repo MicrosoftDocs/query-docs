@@ -260,7 +260,7 @@ Still grouped by City and State, but rolled together when reporting a subtotal r
 ### Background
 Until February 2023, SUMMARIZECOLUMNS did not support evaluation within a context transition at all. In products released before that month, this limitation made SUMMARIZECOLUMNS not useful in most of the measures – it was not possible to call a measure SUMMARIZECOLUMNS in any case of context transition, including other SUMMARIZECOLUMNS statements. 
 
-From February 2023, the context transition was supported in a few scenario, but not in all the conditions. The supported and restricted cases are as below:
+From February 2023, the context transition was supported in a few scenarios, but not in all the conditions. The supported and restricted cases are as follows:
 
 | SummarizeColumns Type | External Filter with single column | External Filter with more than one column | External GroupBy Columns  |
 | -------- | ------- | ------- | ------- |
@@ -276,7 +276,7 @@ From June 2024, we are enabling contextual SummarizeColumns which allows Summari
 
 However, this update also includes changes to the behavior of SummarizeColumns, which may alter the results of existing expressions: 
 
-### SelfValue Semantics for external filters ###
+### SelfValue semantics for external filters ###
 We are introducing a semantic concept named SelfValue, which alters how filters from external tables interact with GroupBy columns in SummarizeColumns. This change disallows filters from a different table to affect the GroupBy columns, even if the tables are related through a filter-by relationship.
 An example illustrating the impact of this change involves the following expression:
 
@@ -311,7 +311,7 @@ CalculateTable(
 ```
 This rewritten expression preserves the original semantics where the GroupBy operation is not affected by the SelfValue restriction introduced by the update.
 
-### Row validation for groupby Columns Fully Coverred by Treatas ###
+### Row validation for groupby columns fully covered by Treatas ###
 
 Prior to this update, within a SummarizeColumns function, if all GroupBy columns from a specific table were fully covered by a single Treatas filter from that same table, as shown below:
 
@@ -328,7 +328,7 @@ SummarizeColumns(
 ```
 The result of the above query would include whatever rows were specified in the Treatas filter, regardless of whether they were valid or not. For instance, the result would be a single-row table ("United States", "Alberta"), even if no such row with [Country] = "United States" and [State] = "Alberta" existed in the 'Geography' table. 
 
-This issue was known and has been addressed by the update.After the update, such invalid rows will be filtered out, and only valid rows from the GroupBy table will be returned. Therefore, the result for the query above would be empty, as there are no valid rows matching the specified [Country] and [State] values in the 'Geography' table.
+This issue was known and has been addressed by the update. After the update, such invalid rows will be filtered out, and only valid rows from the GroupBy table will be returned. Therefore, the result for the query above would be empty, as there are no valid rows matching the specified [Country] and [State] values in the 'Geography' table.
 
 ### Disallow mixed Keepfilters/overriddefilters on same table/cluster ###
 
