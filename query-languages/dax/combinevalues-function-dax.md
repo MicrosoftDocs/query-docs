@@ -20,7 +20,7 @@ COMBINEVALUES(<delimiter>, <expression>, <expression>[, <expression>]…)
 |Term|Definition|  
 |--------|--------------|  
 |delimiter|A separator to use during concatenation. Must be a constant value.|  
-|expression|A DAX expression whose value will be be joined into a single text string.|  
+|expression|A DAX expression whose value will be joined into a single text string.|  
   
 ## Return value  
 
