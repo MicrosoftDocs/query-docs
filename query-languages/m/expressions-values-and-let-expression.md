@@ -2,14 +2,14 @@
 description: "Learn more about: Expressions, values, and let expression"
 title: "Expressions, values, and let expression"
 ms.topic: conceptual
-ms.date: 10/7/2022
+ms.date: 7/9/2024
 ms.custom: "nonautomated-date"
 ---
 # Expressions, values, and let expression
 
 A Power Query M formula language query is composed of formula **expression** steps that create a mashup query. A formula expression can be evaluated (computed), yielding a value. The **let** expression encapsulates a set of values to be computed, assigned names, and then used in a subsequent expression that follows the **in** statement. For example, a let expression could contain a **Source** variable that equals the value of **Text.Proper()** and yields a text value in proper case.
 
-## <a name="Let"></a>Let expression
+## Let expression
 
 ```powerquery-m
 let
@@ -18,13 +18,13 @@ in
     Source
 ```
 
-In the example above, Text.Proper("hello world") is evaluated to "Hello World".
+In the example above, `Text.Proper("hello world")` is evaluated to `Hello World`.
 
 The next sections describe value types in the language.
 
-## <a name="Primitive"></a>Primitive value
+## Primitive value
 
-A **primitive** value is single-part value, such as a number, logical, text, or null. A null value can be used to indicate the absence of any data.
+A *primitive* value is single-part value, such as a number, logical, text, or null. A null value can be used to indicate the absence of any data.
 
 |Type|Example value|
 |--------|-----------------|
@@ -39,9 +39,9 @@ A **primitive** value is single-part value, such as a number, logical, text, or 
 |Text|"abc"|
 |Time|12:34:12 PM|
 
-## <a name="Function"></a>Function value
+## Function value
 
-A **Function** is a value that, when invoked with arguments, produces a new value. Functions are written by listing the function’s **parameters** in parentheses, followed by the goes-to symbol =&gt;, followed by the expression defining the function. For example, to create a function called “MyFunction” that has two parameters and performs a calculation on parameter1 and parameter2:
+A *Function* is a value that, when invoked with arguments, produces a new value. Functions are written by listing the function's *parameters* in parentheses, followed by the goes-to symbol =&gt;, followed by the expression defining the function. For example, to create a function called **MyFunction** that has two parameters and performs a calculation on parameter1 and parameter2:
 
 ```powerquery-m
 let
@@ -50,7 +50,7 @@ in
     MyFunction
 ```
 
-Calling the MyFunction() returns the result:
+Calling MyFunction() returns the result:
 
 ```powerquery-m
 let
@@ -61,7 +61,7 @@ in
 
 This code produces the value of 3.
 
-## <a name="Structured"></a>Structured data values
+## Structured data values
 
 The M language supports the following structured data values:
 
@@ -71,19 +71,19 @@ The M language supports the following structured data values:
 
 - [Table](#table)
 
-- [Additional structured data examples](#additional)
+- [Additional structured data examples](#additional-structured-data-examples)
 
 > [!NOTE]
-> Structured data can contain any M value. To see a couple of examples, see [Additional structured data examples](#additional).
+> Structured data can contain any M value. To see a couple of examples, go to [Additional structured data examples](#additional-structured-data-examples).
 
-### <a name="list"></a>List
+### List
 
-A List is a zero-based ordered sequence of values enclosed in curly brace characters { }. The curly brace characters { } are also used to retrieve an item from a List by index position. See \[List value](#_List_value).
+A *List* is a zero-based ordered sequence of values enclosed in curly brace characters { }. The curly brace characters { } are also used to retrieve an item from a List by index position. For more information, go to [List values](m-spec-values.md#list).
 
 > [!NOTE]
 > Power Query M supports an infinite list size, but if a list is written as a literal, the list has a fixed length. For example, {1, 2, 3} has a fixed length of 3.
 
-The following are some **List** examples.
+The following are some List examples.
 
 |Value|Type|
 |---------|--------|
@@ -94,9 +94,9 @@ The following are some **List** examples.
 |{123, true, "A"}{0}|Get the value of the first item in a List. This expression returns the value 123.|
 |{<br />&nbsp;&nbsp;&nbsp;&nbsp;{1, 2, 3},<br />&nbsp;&nbsp;&nbsp;&nbsp;{4, 5, 6}<br />}{0}{1}|Get the value of the second item from the first List element. This expression returns the value 2.|
 
-### <a name="record"></a>Record
+### Record
 
-A **Record** is a set of fields. A **field** is a name/value pair where the name is a text value that is unique within the field’s record. The syntax for record values allows the names to be written without quotes, a form also referred to as **identifiers**. An identifier can take the following two forms:
+A *Record* is a set of fields. A *field* is a name/value pair where the name is a text value that is unique within the field's record. The syntax for record values allows the names to be written without quotes, a form also referred to as *identifiers*. An identifier can take the following two forms:
 
 - identifier_name such as OrderID.
 
@@ -117,7 +117,7 @@ let Source =
 in Source
 ```
 
-To get the value of an Item, you use square brackets as Source[Item]:
+To get the value of an Item, you use square brackets as `Source[Item]`:
 
 ```powerquery-m
 let Source =
@@ -130,9 +130,9 @@ let Source =
 in Source[Item] //equals "Fishing rod"
 ```
 
-### <a name="table"></a>Table
+### Table
 
-A **Table** is a set of values organized into named columns and rows. The column type can be implicit or explicit. You can use #table to create a list of column names and list of rows. A **Table** of values is a List in a **List**. The curly brace characters { } are also used to retrieve a row from a **Table** by index position (go to [Example 3 – Get a row from a table by index position](#tableIndex)).
+A *Table* is a set of values organized into named columns and rows. The column type can be implicit or explicit. You can use [#table](sharptable.md) to create a list of column names and list of rows. A *Table* of values is a List in a [List](#list). The curly brace characters { } are also used to retrieve a row from a **Table** by index position (go to [Example 3 - Get a row from a table by index position](#example-3---get-a-row-from-a-table-by-index-position)).
 
 #### Example 1 - Create a table with implicit column types
 
@@ -148,7 +148,7 @@ in
     Source
 ```
 
-#### Example 2 – Create a table with explicit column types
+#### Example 2 - Create a table with explicit column types
 
 ```powerquery-m
 let
@@ -163,14 +163,14 @@ in
     Source
 ```
 
-Both of the examples above creates a table with the following shape:
+Both of the previous examples creates a table with the following shape:
 
 |OrderID|CustomerID|Item|Price|
 |-----------|--------------|--------|---------|
 |1|1|Fishing rod|100.00|
 |2|1|1 lb. worms|5.00|
 
-#### <a name="tableIndex"></a>Example 3 – Get a row from a table by index position
+#### Example 3 - Get a row from a table by index position
 
 ```powerquery-m
 let
@@ -194,7 +194,7 @@ This expression returns the follow record:
 |**Item**|1 lb. worms|
 |**Price**|5|
 
-### <a name="additional"></a>Additional structured data examples
+### Additional structured data examples
 
 Structured data can contain any M value. Here are some examples:
 
@@ -215,9 +215,9 @@ in
 
 Evaluating this expression can be visualized as:
 
-![List Example 1](media/list-example-1.png "List Example 1")
+:::image type="content" source="media/list-example-1.png" alt-text="Diagram of a table that visualizes the expression with a primitive value, a function, and a record.":::
 
-### Example 2 - Record containing Primitive values and nested Records
+### Example 2 - Record containing primitive values and nested records
 
 ```powerquery-m
 let
@@ -232,12 +232,12 @@ in
 
 Evaluating this expression can be visualized as:
 
-![List Example 2](media/list-example-2.png "List Example 2")
+:::image type="content" source="media/list-example-2.png" alt-text="Diagram of a table that visualizes the expression with several primitive values and nested records.":::
 
 > [!NOTE]
-> Although many values can be written literally as an expression, a value is not an expression. For example, the expression 1 evaluates to the value 1; the expression 1+1 evaluates to the value 2. This distinction is subtle, but important. Expressions are recipes for evaluation; values are the results of evaluation.
+> Although many values can be written literally as an expression, a value isn't an expression. For example, the expression 1 evaluates to the value 1; the expression 1+1 evaluates to the value 2. This distinction is subtle, but important. Expressions are recipes for evaluation; values are the results of evaluation.
 
-### <a name="If"></a>If expression
+### If expression
 
 The **if** expression selects between two expressions based on a logical condition. For example:
 
