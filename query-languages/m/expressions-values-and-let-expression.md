@@ -50,7 +50,7 @@ in
     MyFunction
 ```
 
-Calling MyFunction() returns the result:
+Calling **MyFunction** returns the result:
 
 ```powerquery-m
 let
@@ -132,7 +132,7 @@ in Source[Item] //equals "Fishing rod"
 
 ### Table
 
-A *Table* is a set of values organized into named columns and rows. The column type can be implicit or explicit. You can use [#table](sharptable.md) to create a list of column names and list of rows. A *Table* of values is a List in a [List](#list). The curly brace characters { } are also used to retrieve a row from a **Table** by index position (go to [Example 3 - Get a row from a table by index position](#example-3---get-a-row-from-a-table-by-index-position)).
+A *Table* is a set of values organized into named columns and rows. The column type can be implicit or explicit. You can use [#table](sharptable.md) to create a list of column names and list of rows. A Table of values is a List in a [List](#list). The curly brace characters { } are also used to retrieve a row from a Table by index position (go to [Example 3 - Get a row from a table by index position](#example-3---get-a-row-from-a-table-by-index-position)).
 
 #### Example 1 - Create a table with implicit column types
 
