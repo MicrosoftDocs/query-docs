@@ -55,3 +55,31 @@ Text.Combine({"Seattle", null, "WA"}, ", ")
 **Output**
 
 `"Seattle, WA"`
+
+## Example 4
+
+**Usage**
+
+Combine the first name, middle initial (if present), and last name into the individual’s full name.
+
+```powerquery-m
+let
+    Source = Table.FromRecords({
+        [First Name = "Doug", Middle Initial = "J", Last Name = "Elis"],
+        [First Name = "Anna", Middle Initial = "M", Last Name = "Jorayew"],
+        [First Name = "Rada", Middle Initial = null, Last Name = "Mihaylova"]
+    }),
+    FullName = Table.AddColumn(Source, "Full Name", each Text.Combine({[First Name], [Middle Initial], [Last Name]}, " "))
+in
+    FullName
+```
+
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [First Name = "Doug", Middle Initial = "J", Last Name = "Elis", Full Name = "Doug J Elis"],
+    [First Name = "Anna", Middle Initial = "M", Last Name = "Jorayew", Full Name = "Anna M Jorayew"],
+    [First Name = "Rada", Middle Initial = null, Last Name = "Mihaylova", Full Name = "Rada Mihaylova"]
+})
+```
