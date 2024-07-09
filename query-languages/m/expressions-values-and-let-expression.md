@@ -18,7 +18,7 @@ in
     Source
 ```
 
-In the example above, `Text.Proper("hello world")` is evaluated to `Hello World`.
+In the example above, `Text.Proper("hello world")` is evaluated to `"Hello World"`.
 
 The next sections describe value types in the language.
 
