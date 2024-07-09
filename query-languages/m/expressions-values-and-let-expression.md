@@ -102,7 +102,7 @@ A *Record* is a set of fields. A *field* is a name/value pair where the name is 
 
 - \#"identifier name" such as #"Today's data is: ".
 
-The following is a record containing fields named "OrderID", "CustomerID", "Item", and "Price" with values 1, 1, "Fishing rod", and 100.00. Square brace characters [ ] denote the beginning and end of a record expression, and are used to get a field value from a record. The follow examples show a record and how to get the Item field value.
+The following is a record containing fields named "OrderID", "CustomerID", "Item", and "Price" with values 1, 1, "Fishing rod", and 100.00. Square brace characters [ ] denote the beginning and end of a record expression, and are used to get a field value from a record. The following examples show a record and how to get the Item field value.
 
 Here's an example record:
 
