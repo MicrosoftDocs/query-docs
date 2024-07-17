@@ -68,14 +68,13 @@ Text.Contains("Hello World", "hello", Comparer.OrdinalIgnoreCase)
 
 ## Example 4
 
-Find the rows in the provided table where the account codes contain an "A-", a "7", or both.
+Find the rows in a table that contain either "A-" or "7" in the account code.
 
 **Usage**
 
 ```powerquery-m
 let
-    // Sample input table
-    TableSource = #table(type table [Account Code = text, Posted Date = date, Sales = number],
+    Source = #table(type table [Account Code = text, Posted Date = date, Sales = number],
     {
         {"US-2004", #date(2023,1,20), 580},
         {"CA-8843", #date(2023,7,18), 280},
@@ -85,7 +84,7 @@ let
         {"PTY-507", #date(2023,6,4), 110}
     }),
     #"Filtered rows" = Table.SelectRows(
-        TableSource, 
+        Source, 
         each Text.Contains([Account Code], "A-") or
             Text.Contains([Account Code], "7"))
 in
@@ -96,10 +95,10 @@ in
 
 ```powerquery-m
 #table(type table [Account Code = text, Posted Date = date, Sales = number],
-    {
-        {"CA-8843", #date(2023,7,18), 280},
-        {"PA-1274", #date(2022,1,12), 90},
-        {"PA-4323", #date(2023,4,14), 187},
-        {"PTY-507", #date(2023,6,4), 110}
-    })
+{
+    {"CA-8843", #date(2023,7,18), 280},
+    {"PA-1274", #date(2022,1,12), 90},
+    {"PA-4323", #date(2023,4,14), 187},
+    {"PTY-507", #date(2023,6,4), 110}
+})
 ```
