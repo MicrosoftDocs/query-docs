@@ -20,6 +20,10 @@ The optional argument `comparer` can be used to specify case-insensitive or cult
 * [Comparer.OrdinalIgnoreCase](/powerquery-m/comparer-ordinalignorecase): Used to perform a case-insensitive ordinal comparison
 * [Comparer.FromCulture](/powerquery-m/comparer-fromculture): Used to perform a culture-aware comparison
 
+If the first argument is null, this function returns null.
+
+All characters are treated literally. For example, "DR", " DR", "DR ", and " DR " aren't considered equal to each other.
+
 ## Example 1
 
 Find if the text "Hello World" contains "Hello".
@@ -61,3 +65,40 @@ Text.Contains("Hello World", "hello", Comparer.OrdinalIgnoreCase)
 **Output**
 
 `true`
+
+## Example 4
+
+Find the rows in a table that contain either "A-" or "7" in the account code.
+
+**Usage**
+
+```powerquery-m
+let
+    Source = #table(type table [Account Code = text, Posted Date = date, Sales = number],
+    {
+        {"US-2004", #date(2023,1,20), 580},
+        {"CA-8843", #date(2023,7,18), 280},
+        {"PA-1274", #date(2022,1,12), 90},
+        {"PA-4323", #date(2023,4,14), 187},
+        {"US-1200", #date(2022,12,14), 350},
+        {"PTY-507", #date(2023,6,4), 110}
+    }),
+    #"Filtered rows" = Table.SelectRows(
+        Source, 
+        each Text.Contains([Account Code], "A-") or
+            Text.Contains([Account Code], "7"))
+in
+    #"Filtered rows"
+```
+
+**Output**
+
+```powerquery-m
+#table(type table [Account Code = text, Posted Date = date, Sales = number],
+{
+    {"CA-8843", #date(2023,7,18), 280},
+    {"PA-1274", #date(2022,1,12), 90},
+    {"PA-4323", #date(2023,4,14), 187},
+    {"PTY-507", #date(2023,6,4), 110}
+})
+```
