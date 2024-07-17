@@ -22,7 +22,7 @@ The optional argument `comparer` can be used to specify case-insensitive or cult
 
 If the first argument is null, this function returns null.
 
-All characters are treated literally. For example, because of the spaces in "DR", " DR", "DR ", and " DR ", these text strings aren't considered equal to each other.
+All characters are treated literally. For example, "DR", " DR", "DR ", and " DR " aren't considered equal to each other.
 
 ## Example 1
 
