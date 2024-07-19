@@ -293,18 +293,13 @@ CalculateTable(
 Before this update, the TreatAs filter would apply to the GroupBy operation within SummarizeColumns, leveraging the relationship between 'Product'[Product Key] and 'Reseller Sales'[ProductKey]. Consequently, the query results would only include rows where 'Reseller Sales'[ProductKey] equals 229.
 However, after the update, GroupBy columns within SummarizeColumns will no longer be filtered by columns from external tables, even if a relationship exists between them. Therefore, in the example above, the GroupBy column 'Reseller Sales'[ProductKey] will not be filtered by the 'Product'[ProductKey] column. As a result, the query will include rows where 'Reseller Sales'[ProductKey] is not equal to 229.
 
-If you prefer to retain the previous behavior, you can rewrite the expression using AddColumns or SelectColumns instead of SummarizeColumns, as shown below:
+If you prefer to retain the previous behavior, you can rewrite the expression using Summarize instead of SummarizeColumns, as shown below:
 ```
 CalculateTable(
-    Filter(
-        SelectColumns(
-            'Reseller Sales',
-            "ResellerKey", 
-            [ResellerKey],
-            "ProductKey",
-            [ProductKey]
-        ),
-        And(Not IsBlank([ResellerKey]),  Not IsBlank([ProductKey]))
+    SUMMARIZE(
+        'Reseller Sales',
+        [ResellerKey],
+        [ProductKey]
     ),
     Treatas({(229)}, 'Product'[Product Key])
 )
