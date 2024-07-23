@@ -42,9 +42,9 @@ let
         {"Ana", "Jorayew"},
         {"Rada", "Mihaylova"}
     }),
-    Username = Table.AddColumn(
+    EmailAddress = Table.AddColumn(
         Source,
-        "Username", 
+        "Email Address", 
         each Text.Combine({
             Text.Start([First Name], 4),
             Text.Start([Last Name], 3),
@@ -52,13 +52,13 @@ let
         })
     )
 in
-    Username
+    EmailAddress
 ```
 
 **Output**
 
 ```powerquery-m
-#table(type table [First Name = text, Last Name = text, Username = text],
+#table(type table [First Name = text, Last Name = text, Email Address = text],
 {
     {"Doug", "J", "Elis", "DougEli@contoso.com"},
     {"Anna", "M", "Jorayew", "AnaJor@contoso.com"},
