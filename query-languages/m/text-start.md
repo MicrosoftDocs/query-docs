@@ -30,7 +30,7 @@ Text.Start("Hello, World", 5)
 
 ## Example 2
 
-Get the first four characters of the first name and the first three characters of the last name to create an individual's username that also includes the company website.
+Use the first four characters of the first name and the first three characters of the last name to create an individual's email address.
 
 **Usage**
 
@@ -60,8 +60,8 @@ in
 ```powerquery-m
 #table(type table [First Name = text, Last Name = text, Email Address = text],
 {
-    {"Doug", "J", "Elis", "DougEli@contoso.com"},
-    {"Anna", "M", "Jorayew", "AnaJor@contoso.com"},
-    {"Rada", null, "Mihaylova", "RadaMih@contoso.com"}
+    {"Douglas", "Elis", "DougEli@contoso.com"},
+    {"Ana", "Jorayew", "AnaJor@contoso.com"},
+    {"Rada", "Mihaylova", "RadaMih@contoso.com"}
 })
 ```
