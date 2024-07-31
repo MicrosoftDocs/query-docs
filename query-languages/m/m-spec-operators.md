@@ -2,7 +2,7 @@
 title: M Language Operators 
 description: Describes using operators in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 5/25/2023
+ms.date: 7/31/2024
 ms.custom: "nonautomated-date"
 ---
 
@@ -364,7 +364,7 @@ The form `[[y1],[y2],...]` and `[[y1],[y2],...]?` are also supported as a shorth
 _[[A],[B]]
 ```
 
-The shorthand form is particularly useful in combination with the `each` shorthand, a way to introduce a function of a single parameter named `_` (for details, see [Simplified declarations](m-spec-functions.md#simplified-declarations). Together, the two shorthands simplify common higher-order functional expressions:
+The shorthand form is particularly useful in combination with the `each` shorthand, a way to introduce a function of a single parameter named `_` (for details, see [Simplified declarations](m-spec-functions.md#simplified-declarations)). Together, the two shorthands simplify common higher-order functional expressions:
 
 ```powerquery-m
 List.Select( {[a=1, b=1], [a=2, b=4]}, each [a] = [b]) 
@@ -594,7 +594,7 @@ _relational-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression_  `<`  _relational-expression<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression_  `>`  _relational-expression<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression_  `<=`  _relational-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression  `>=`  _relational-expression_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression_  `>=`  _relational-expression_
 
 These operators are used to determine the relative ordering relationship between two values, as shown in the following table:
 
