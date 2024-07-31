@@ -62,6 +62,7 @@ Ignoring case, check if the text "Hello, World" starts with the text "hello".
 
 ```powerquery-m
 Text.StartsWith("Hello, World", "hello", Comparer.OrdinalIgnoreCase)
+```
 
 **Output**
 
