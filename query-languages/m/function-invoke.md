@@ -21,7 +21,7 @@ Invokes [Record.FieldNames](record-fieldnames.md) with one argument [A=1,B=2]
 **Usage**
 
 ```powerquery-m
-Function.Invoke(Record.FieldNames, {[A = 1, B = 2]}
+Function.Invoke(Record.FieldNames, {[A = 1, B = 2]})
 ```
 
 **Output**
