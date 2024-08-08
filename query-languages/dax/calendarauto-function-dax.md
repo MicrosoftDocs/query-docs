@@ -6,7 +6,7 @@ title: "CALENDARAUTO function (DAX) | Microsoft Docs"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
   
-Returns a table with a single column named "Date" that contains a contiguous set of dates. The range of dates is calculated automatically based on data in the model.  
+Returns a table with a single column named "Date" that contains a continuous set of dates. The date range is automatically calculated based on the data in the model.
   
 ## Syntax  
   
