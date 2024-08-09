@@ -11,7 +11,7 @@ Returns a table with selected columns from the table and new columns specified b
 ## Syntax  
   
 ```dax
-SELECTCOLUMNS(<Table>, [<Name>], <Expression>, <Name>], …) 
+SELECTCOLUMNS(<Table>, [<Name>], <Expression>, [<Name>], …) 
 ```
   
 ### Parameters  
