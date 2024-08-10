@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: MEASURE"
+description: "Learn more about: Virtual Column"
 title: "Virtual Column (DAX) | Microsoft Docs"
 ---
 # Virtual Column

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SHADOWCLUSTER"
-title: "ALLSELECTEDAPPLY function (DAX) | Microsoft Docs"
+title: "SHADOWCLUSTER function (DAX) | Microsoft Docs"
 ---
 # SHADOWCLUSTER
 

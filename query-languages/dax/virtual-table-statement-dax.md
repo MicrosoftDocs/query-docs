@@ -46,6 +46,7 @@ Unlike variables, virtual table has lineage of its own, and does not carry the l
 ## Example
 
 Assume a table T has following rows:
+
 |Year|Product|SalesAmount|
 |----------|---------|---------|
 |2000|Apple|$  10.1|
