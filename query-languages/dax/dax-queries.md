@@ -122,7 +122,7 @@ The optional **DEFINE** keyword introduces one or more calculated entity definit
     (
      (MEASURE <table name>[<measure name>] = <scalar expression>) | 
      (VAR <var name> = <table or scalar expression>) |
-     (TABLE <table name> = <table expression>) | 
+     (TABLE <table name> = <virtual table definition>) | 
      (COLUMN <table name>[<column name>] = <scalar expression>) | 
     ) + 
 ]
