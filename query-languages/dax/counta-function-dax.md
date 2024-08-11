@@ -33,7 +33,7 @@ A whole number.
   
 ## Example
 
-The following example returns all rows in the `Reseller` table that have any kind of value in the column that stores phone numbers. 
+The following example returns the number of all rows in the `Reseller` table that have any kind of value in the column that stores phone numbers. 
   
 ```dax
 = COUNTA(Reseller[Phone])  
