@@ -467,7 +467,7 @@ This group includes the following formats:
 
 ### The short time ("t") format specifier
 
-The "t" standard format specifier represents a custom date and time format string that is defined by the current <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A?displayProperty=nameWithType> property. For example, the custom format string for the invariant culture is "HH:mm".
+The "t" standard format specifier represents a custom date and time format string that is defined by the specified culture. For example, the custom format string for the invariant culture is "HH:mm".
 
 <!-- Not relevant for Power Query M
 The result string is affected by the formatting information of a specific <xref:System.Globalization.DateTimeFormatInfo> object. The following table lists the <xref:System.Globalization.DateTimeFormatInfo> object properties that may control the formatting of the returned string. The custom format specifier that is returned by the <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A?displayProperty=nameWithType> property of some cultures may not make use of all properties.
