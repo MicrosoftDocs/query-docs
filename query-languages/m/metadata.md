@@ -34,7 +34,7 @@ The standard library functions [Value.RemoveMetadata](value-removemetadata.md) a
 
 ## Limitations
 
-Some hosts that use power query to transform or move data don't support storing custom meta data into storage. These hosts don't support storing the custom meta data:
+Some hosts that use Power Query to transform or move data don't support storing custom metadata into storage. The following hosts don't support storing the custom metadata:
 
 * Power BI dataflows
 * Fabric Dataflow Gen2
