@@ -1008,7 +1008,7 @@ The interpretation of the division operator (`x / y`) is dependent on the kind o
 | `type number` | `null` | `null` | |
 | `null` | `type number` | `null` | |
 | `type duration` | `type number` | `type duration` | Fraction of duration |
-| `type duration` | `type duration` | `type duration` | Numeric quotient of durations |
+| `type duration` | `type duration` | `type number` | Numeric quotient of durations |
 | `type duration` | `null` | `null` | |
 | `null` | `type duration` | `null` | |
 
