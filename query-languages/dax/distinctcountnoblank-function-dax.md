@@ -11,7 +11,7 @@ Counts the number of distinct values in a column.
 ## Syntax  
   
 ```dax
-DISTINCTCOUNTNOBLANK (<column>)  
+DISTINCTCOUNTNOBLANK(<column>)  
 ```
   
 ### Parameters  
