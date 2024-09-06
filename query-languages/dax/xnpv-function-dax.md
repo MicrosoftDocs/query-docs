@@ -59,4 +59,4 @@ The following calculates the present value of the CashFlows table:
 |2/15/2015|3250|  
 |4/1/2015|2750|  
   
-Present value = 2086.65  
+Present value = 2089.50  
