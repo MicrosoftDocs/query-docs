@@ -6,7 +6,7 @@ title: "PREVIOUSYEAR function (DAX) | Microsoft Docs"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns a table that contains a column of all dates from the previous year, given the last date in the **dates** column, in the current context.  
+Returns a table that contains a column of all dates from the previous year, given the first date in the **dates** column, in the current context.  
   
 ## Syntax  
   
@@ -27,7 +27,7 @@ A table containing a single column of date values.
   
 ## Remarks
 
-- This function returns all dates from the previous year given the latest date in the input parameter. For example, if the latest date in the **dates** argument refers to the year 2009, then this function returns all dates for the year of 2008, up to the specified **year_end_date**.  
+- This function returns all dates from the previous year, using the first date in the column used as input. For example, if the first date in the **dates** argument refers to the year 2009, then this function returns all dates for the year of 2008, up to the specified **year_end_date**.  
   
 - The **dates** argument can be any of the following:  
   - A reference to a date/time column.
