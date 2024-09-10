@@ -26,8 +26,8 @@ Data Analysis Expressions (DAX) includes time-intelligence functions that enable
 |[FIRSTNONBLANK](firstnonblank-function-dax.md)     | Returns the first value in the column, column, filtered by the current context, where the expression is not blank        |
 |[LASTDATE](lastdate-function-dax.md)      |  Returns the last date in the current context for the specified column of dates.       |
 |[LASTNONBLANK](lastnonblank-function-dax.md)      |  Returns the last value in the column, column, filtered by the current context, where the expression is not blank.       |
-|[NEXTDAY](nextday-function-dax.md)      |  Returns a table that contains a column of all dates from the next day, based on the last date specified in the dates column in the current context.       |
-|[NEXTMONTH](nextmonth-function-dax.md)     |  Returns a table that contains a column of all dates from the next month, based on the last date in the dates column in the current context.       |
+|[NEXTDAY](nextday-function-dax.md)      |  Returns a table that contains a column of all dates in the next day, based on the last date specified in the dates column in the current context.       |
+|[NEXTMONTH](nextmonth-function-dax.md)     |  Returns a table that contains a column of all dates in the next month, based on the last date in the dates column in the current context.       |
 |[NEXTQUARTER](nextquarter-function-dax.md)     |  Returns a table that contains a column of all dates in the next quarter, based on the last date specified in the dates column, in the current context.        |
 |[NEXTYEAR](nextyear-function-dax.md)      | Returns a table that contains a column of all dates in the next year, based on the last date in the dates column, in the current context.          |
 |[OPENINGBALANCEMONTH](openingbalancemonth-function-dax.md)     | Evaluates the expression at the first date of the month in the current context.         |
