@@ -37,7 +37,7 @@ Data Analysis Expressions (DAX) includes time-intelligence functions that enable
 |[PREVIOUSDAY](previousday-function-dax.md)      | Returns a table that contains a column of all dates representing the day that is previous to the first date in the dates column, in the current context.        |
 |[PREVIOUSMONTH](previousmonth-function-dax.md)     |  Returns a table that contains a column of all dates from the previous month, based on the first date in the dates column, in the current context.       |
 |[PREVIOUSQUARTER](previousquarter-function-dax.md)      |  Returns a table that contains a column of all dates from the previous quarter, based on the first date in the dates column, in the current context.       |
-|[PREVIOUSYEAR](previousyear-function-dax.md)       |  Returns a table that contains a column of all dates from the previous year, given the last date in the dates column, in the current context.        |
+|[PREVIOUSYEAR](previousyear-function-dax.md)       |  Returns a table that contains a column of all dates from the previous year, given the first date in the dates column, in the current context.        |
 |[SAMEPERIODLASTYEAR](sameperiodlastyear-function-dax.md)     |  Returns a table that contains a column of dates shifted one year back in time from the dates in the specified dates column, in the current context.       |
 |[STARTOFMONTH](startofmonth-function-dax.md)     | Returns the first date of the month in the current context for the specified column of dates.          |
 |[STARTOFQUARTER](startofquarter-function-dax.md)     |  Returns the first date of the quarter in the current context for the specified column of dates.         |
