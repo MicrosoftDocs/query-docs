@@ -208,10 +208,9 @@ The general ("G") format specifier converts a number to the more compact of eith
 |`Single.Type`               |Smallest round-trippable number of digits to represent the number (G7 is the default)|
 |`Double.Type`               |Smallest round-trippable number of digits to represent the number (G15 is the default)|
 |`Decimal.Type`              |Smallest round-trippable number of digits to represent the number (G30 is the default)|
+<!--**Note to reviewers - Is the default precision for the last three types in the previous table correct? Double is mentioned as G15 here, but later on states G17 ensures the Double value successfully round-trips. Ditto for Single.Type and G7 in the table and G9 to successfully round-trip. Please clarify.**
 
-**Note to reviewers - Is the default precision for the last three types in the previous table correct? Double is mentioned as G15 here, but later on states G17 ensures the Double value successfully round-trips. Ditto for Single.Type and G7 in the table and G9 to successfully round-trip. Please clarify.**
-
-**Also, I've removed mention of round trips due to the lack of precision in M floating numbers during round trips. Should mention of "round-trippable number" be removed from the prvious table?**
+**Also, I've removed mention of round trips due to the lack of precision in M floating numbers during round trips. Should mention of "round-trippable number" be removed from the prvious table?** -->
 
 Fixed-point notation is used if the exponent that would result from expressing the number in scientific notation is greater than -5 and less than the precision specifier; otherwise, scientific notation is used. The result contains a decimal point if required, and trailing zeros after the decimal point are omitted. If the precision specifier is present and the number of significant digits in the result exceeds the specified precision, the excess trailing digits are removed by rounding.
 
@@ -219,8 +218,7 @@ However, if the number is a `Decimal.Type` and the precision specifier is omitte
 
 If scientific notation is used, the exponent in the result is prefixed with "E" if the format specifier is "G", or "e" if the format specifier is "g". The exponent contains a minimum of two digits. This differs from the format for scientific notation that is produced by the exponential format specifier, which includes a minimum of three digits in the exponent.
 
-**Note to reviewers - Are the following two paragraphs relevant since the "R" round trip format specifier was removed from the article?**
-
+<!--**Note to reviewers - Are the following two paragraphs relevant since the "R" round trip format specifier was removed from the article?**-->
 When used with a `Double.Type` value, the "G17" format specifier ensures that the original `Double.Type` value successfully round-trips. This is because `Double.Type` is an IEEE 754-2008-compliant double-precision (`binary64`) floating-point number that gives up to 17 significant digits of precision.
 
 When used with a `Single.Type` value, the "G9" format specifier ensures that the original `Single.Type` value successfully round-trips. This is because `Single.Type` is an IEEE 754-2008-compliant single-precision (`binary32`) floating-point number that gives up to nine significant digits of precision.
