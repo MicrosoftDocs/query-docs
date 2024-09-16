@@ -219,9 +219,11 @@ However, if the number is a `Decimal.Type` and the precision specifier is omitte
 
 If scientific notation is used, the exponent in the result is prefixed with "E" if the format specifier is "G", or "e" if the format specifier is "g". The exponent contains a minimum of two digits. This differs from the format for scientific notation that is produced by the exponential format specifier, which includes a minimum of three digits in the exponent.
 
-When used with a `Double.Type` value, the "G17" format specifier ensures that the original `Double.Type` value successfully round-trips. This is because `Double.Type` is an IEEE 754-2008-compliant double-precision (`binary64`) floating-point number that gives up to 17 significant digits of precision. On .NET Framework, we recommend its use instead of the ["R" format specifier](#RFormatString), since in some cases "R" fails to successfully round-trip double-precision floating point values.
+**Note to reviewers - Are the following two paragraphs relevant since the "R" round trip format specifier was removed from the article?**
 
-When used with a `Single.Type` value, the "G9" format specifier ensures that the original `Single.Type` value successfully round-trips. This is because `Single.Type` is an IEEE 754-2008-compliant single-precision (`binary32`) floating-point number that gives up to nine significant digits of precision. For performance reasons, we recommend its use instead of the ["R" format specifier](#RFormatString).
+When used with a `Double.Type` value, the "G17" format specifier ensures that the original `Double.Type` value successfully round-trips. This is because `Double.Type` is an IEEE 754-2008-compliant double-precision (`binary64`) floating-point number that gives up to 17 significant digits of precision.
+
+When used with a `Single.Type` value, the "G9" format specifier ensures that the original `Single.Type` value successfully round-trips. This is because `Single.Type` is an IEEE 754-2008-compliant single-precision (`binary32`) floating-point number that gives up to nine significant digits of precision.
 
 The result string is affected by the formatting information of the current culture.
 
