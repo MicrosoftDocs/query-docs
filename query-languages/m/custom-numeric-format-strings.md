@@ -1,17 +1,12 @@
 ---
 title: "Custom numeric format strings"
 description: Learn how to create a custom numeric format string to format numeric data in .NET. A custom numeric format string has one or more custom numeric specifiers.
-ms.date: 9/4/2024
+ms.date: 9/16/2024
 ms.topic: reference
 ---
 # Custom numeric format strings
 
 You can create a custom numeric format string, which consists of one or more custom numeric specifiers, to define how to format numeric data. A custom numeric format string is any format string that isn't a [standard numeric format string](standard-numeric-format-strings.md).
-<!-- Next paragraph and tip not relevant to  Power Query M
-Custom numeric format strings are supported by some overloads of the `ToString` method of all numeric types. For example, you can supply a numeric format string to the <xref:System.Int32.ToString%28System.String%29> and <xref:System.Int32.ToString%28System.String%2CSystem.IFormatProvider%29> methods of the <xref:System.Int32> type. Custom numeric format strings are also supported by the .NET [composite formatting feature](composite-formatting.md), which is used by some `Write` and `WriteLine` methods of the <xref:System.Console> and <xref:System.IO.StreamWriter> classes, the <xref:System.String.Format%2A?displayProperty=nameWithType> method, and the <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType> method. [String interpolation](../../csharp/language-reference/tokens/interpolated.md) feature also supports custom numeric format strings.
-
-> [!TIP]
-> You can download the **Formatting Utility**, a .NET Core Windows Forms application that lets you apply format strings to either numeric or date and time values and displays the result string. Source code is available for [C#](/samples/dotnet/samples/windowsforms-formatting-utility-cs) and [Visual Basic](/samples/dotnet/samples/windowsforms-formatting-utility-vb). -->
 
 <a name="table"></a> The following table describes the custom numeric format specifiers and displays sample output produced by each format specifier. Go to the [Notes](#NotesCustomFormatting) section for additional information about using custom numeric format strings, and the [Example](#example) section for a comprehensive illustration of their use.
 
@@ -268,9 +263,6 @@ To prevent a character from being interpreted as a format specifier, you can pre
 
 To include a backslash in a result string, you must escape it with another backslash (`\\`).
 
-> [!NOTE]
-> Some compilers, such as the C++ and C# compilers, may also interpret a single backslash character as an escape character. To ensure that a string is interpreted correctly when formatting, you can use the verbatim string literal character (the @ character) before the string in C#, or add another backslash character before each backslash in C# and C++. The following C# example illustrates both approaches.
-
 The following example uses the escape character to prevent the formatting operation from interpreting the "#", "0", and "\\" characters as either escape characters or format specifiers. The C# examples uses an additional backslash to ensure that a backslash is interpreted as a literal character.
 
 ```powerquery-m
@@ -381,16 +373,23 @@ result5 = Number.ToText(n, "'\'##'\'"),
 
 ## Notes
 
+## How culture affects numeric format strings
+
+If you don't set a specific culture in your numeric format strings, your format strings uses the current default culture. *Culture* is the standard locale that’s determined by the underlying platform, such as Windows 11. For example, the [list of Windows 11 input locales](/windows-hardware/manufacture/desktop/default-input-locales-for-windows-language-packs?view=windows-11#input-locales) can be used as the culture on the Windows 11 platform. Other platforms, such as Window 10 or macOS might use a different list of cultures.
+
+The default culture you use can vary depending on whether you reference Power Query M on a local machine or a cloud platform. For example, if you develop Power Query M code on your local system in Power BI Desktop, the default culture uses the locale settings used on your local system. If you develop Power Query M code in Power BI service, the default culture uses the locale settings used on the cloud service.
+
+The culture is set to the system locale (Windows, MacOS) when the queries are first authored. setting of the code is stored within the M queries when the code is created. However, you can change the default culture in the Power Query settings dialog where you create the query. For example, if you are running Power Query from Excel:
+
+1. In Power Query, select **File** > **Options and settings** > **Query options**.
+1. Under **Current Workbook, select **Regional Settings**.
+1. Select the locale you want to use.
+
+Other versions of Power Query work similarly. In general, within Power Query you select **Options**, which opens the **Options** dialog. Then select **Regional Settings** and select the locale you want to use.
+
 ### Floating-Point infinities and NaN
 
-Regardless of the format string, if the value of a `Single.Type` or `Double.Type` floating-point type is positive infinity, negative infinity, or not a number (NaN), the formatted string is the value of the respective [Number.PositiveInfinity](number-positiveinfinity.md), [Number.NegativeInfinity](number-negativeinfinity.md), or [Number.NaN](number-nan.md) contants specified by the currently applicable culture.
-
-<!-- Reviewers - not sure what control panel this section refers to. However, changing the culture of the system might have some affect that needs to be documented. How should this section be handled? -->
-### Control Panel settings
-
-The settings in the **Regional and Language Options** item in Control Panel influence the result string produced by a formatting operation. Those settings are used to initialize the <xref:System.Globalization.NumberFormatInfo> object associated with the current culture, and the current culture provides values used to govern formatting. Computers that use different settings generate different result strings.
-
-In addition, if you use the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%29> constructor to instantiate a new <xref:System.Globalization.CultureInfo> object that represents the same culture as the current system culture, any customizations established by the **Regional and Language Options** item in Control Panel will be applied to the new <xref:System.Globalization.CultureInfo> object. You can use the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29> constructor to create a <xref:System.Globalization.CultureInfo> object that does not reflect a system's customizations.
+Regardless of the format string, if the value of a `Decimal.Type`, `Single.Type` or `Double.Type` floating-point type is positive infinity, negative infinity, or not a number (NaN), the formatted string is the value of the respective [Number.PositiveInfinity](number-positiveinfinity.md), [Number.NegativeInfinity](number-negativeinfinity.md), or [Number.NaN](number-nan.md) constants specified by the currently applicable culture.
 
 ### Rounding and fixed-point format strings
 
