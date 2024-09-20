@@ -1,7 +1,7 @@
 ---
 title: Standard numeric format strings
 description: In this article, learn to use standard numeric format strings to format common numeric types into text representations in Power Query M.
-ms.date: 9/16/2024
+ms.date: 9/20/2024
 ms.topic: reference
 ---
 
@@ -44,8 +44,7 @@ The following table describes the standard numeric format specifiers and display
 A standard numeric format string can be used to define the formatting of a numeric value. It can be passed to the [Number.ToText](number-totext.md) `format` parameter. The following example formats a numeric value as a currency string in the current culture (in this case, the en-US culture).
 
 ```powerquery-m
-value = 123.456,
-result = Number.ToText(value, "C2")
+Number.ToText(123.456, "C2")
 // Displays $123.46
 ```
 
@@ -84,16 +83,16 @@ The following example formats a value with the currency format specifier:
 
 ```powerquery-m
 let
-    value = 12345.6789,
-    result1 = Number.ToText(value, "C"),
-    result2 = Number.ToText(value, "C3"),
-    result3 = Number.ToText(value, "C3", "da-DK"),
-    output = result1 & "#(cr,lf)" & result2 & "#(cr,lf)" & result3
-
+    Source = 
+    {
+        Number.ToText(12345.6789, "C"),
+        Number.ToText(12345.6789, "C3"),
+        Number.ToText(12345.6789, "C3", "da-DK")
+    }
 in
-    output
+    Source 
 
-// The example displays the following output on a system whose
+// The example displays the following list on a system whose
 // current culture is English (United States):
 //       $12,345.68
 //       $12,345.679
@@ -113,19 +112,23 @@ The result string is affected by the formatting information of the current cultu
 The following example formats a value with the decimal format specifier.
 
 ```powerquery-m
-value = 12345,
-result1 = Number.ToText(value, "D"),
-// Displays 12345
+let
+    Source = 
+    { 
+        Number.ToText(12345, "D"),
+        // Displays 12345
 
-result2 = Number.ToText(value, "D8"),
-// Displays 00012345
+        Number.ToText(12345, "D8"),
+        // Displays 00012345
 
-value2 = -12345,
-result3 = Number.ToText(value2, "D"),
-// Displays -12345
+        Number.ToText(-12345, "D"),
+        // Displays -12345
 
-result4 = Number.ToText(value2, "D8"),
-// Displays -00012345
+        Number.ToText(-12345, "D8")
+        // Displays -00012345
+    }
+in
+    Source 
 ```
 
 <a name="EFormatString"></a>
@@ -143,18 +146,23 @@ The result string is affected by the formatting information of the current cultu
 The following example formats a value with the exponential format specifier:
 
 ```powerquery-m
-value = 12345.6789,
-result1 = Number.ToText(value, "E"),
-// Displays 1.234568E+004
+let
+    Source = 
+    { 
+        Number.ToText(12345.6789, "E"),
+        // Displays 1.234568E+004
 
-result2 = Number.ToText(value, "E10"),
-// Displays 1.2345678900E+004
+        Number.ToText(12345.6789, "E10"),
+        // Displays 1.2345678900E+004
 
-result3 = Number.ToText(value, "e4"),
-// Displays 1.2346e+004
+        Number.ToText(12345.6789, "e4"),
+        // 1.2346e+004
 
-result4 = Number.ToText(value, "E", "fr-FR"),
-// Displays 1,234568E+004
+        Number.ToText(12345.6789, "E", "fr-FR")
+        // Displays 1,234568E+004
+    }
+in
+    Source 
 ```
 
 <a name="FFormatString"></a>
@@ -170,27 +178,29 @@ The result string is affected by the formatting information of the current cultu
 The following example formats a double and an integer value with the fixed-point format specifier:
 
 ```powerquery-m
-integerNumber = 17843,
-result = Number.ToText(integerNumber, "F"),
-// Displays 17843.00
+let
+    Source =
+    {
+        Number.ToText(17843, "F"),
+        // Displays 17843.00
 
-integerNumber2 = -29541,
-result2 = Number.ToText(integerNumber2, "F3"),
-// Displays -29541.000
+        Number.ToText(-29541, "F3"),
+        // Displays -29541.000
 
-doubleNumber = 18934.1879,
-result3 = Number.ToText(doubleNumber, "F"),
-// Displays 18934.19
+        Number.ToText(18934.1879, "F"),
+        // Displays 18934.19
 
-result4 = Number.ToText(doubleNumber, "F0"),
-// Displays 18934
+        Number.ToText(18934.1879, "F0"),
+        // Displays 18934
 
-doubleNumber2 = -1898300.1987,
-result5 = Number.ToText(doubleNumber2, "F1"),
-// Displays -1898300.2
+        Number.ToText(-1898300.1987, "F1"),
+        // Displays -1898300.2
 
-result6 = Number.ToText(doubleNumber2, "F3", "es-ES"),
-// Displays -1898300,199
+        Number.ToText(-1898300.1987, "F3", "es-ES"),
+        // Displays -1898300,199
+    }
+in
+    Source
 ```
 
 <a name="GFormatString"></a>
@@ -210,7 +220,7 @@ The general ("G") format specifier converts a number to the more compact of eith
 |`Decimal.Type`              |Smallest round-trippable number of digits to represent the number (G30 is the default)|
 <!--**Note to reviewers - Is the default precision for the last three types in the previous table correct? Double is mentioned as G15 here, but later on states G17 ensures the Double value successfully round-trips. Ditto for Single.Type and G7 in the table and G9 to successfully round-trip. Please clarify.**
 
-**Also, I've removed mention of round trips due to the lack of precision in M floating numbers during round trips. Should mention of "round-trippable number" be removed from the prvious table?** -->
+**Also, I've removed mention of round trips due to the lack of precision in M floating numbers during round trips. Should mention of "round-trippable number" be removed from the previous table?** -->
 
 Fixed-point notation is used if the exponent that would result from expressing the number in scientific notation is greater than -5 and less than the precision specifier; otherwise, scientific notation is used. The result contains a decimal point if required, and trailing zeros after the decimal point are omitted. If the precision specifier is present and the number of significant digits in the result exceeds the specified precision, the excess trailing digits are removed by rounding.
 
@@ -228,32 +238,35 @@ The result string is affected by the formatting information of the current cultu
 The following example formats assorted floating-point values with the general format specifier:
 
 ```powerquery-m
-number = 12345.6789,
-result = Number.ToText(number, "G"),
-// Displays 12345.6789
-result2 = Number.ToText(number, "G", "fr-FR"),
-// Displays 12345,6789
+let
+    Source =
+    {
+        Number.ToText(12345.6789, "G"),
+        // Displays 12345.6789
 
-result3 = Number.ToText(number, "G7),
-// Displays 12345.68
+        Number.ToText(12345.6789, "G", "fr-FR"),
+        // Displays 12345,6789
 
-number2 = .0000023,
-result4 = Number.ToText(number2, "G"),
-// Displays 2.3E-06
-result5 = Number.ToText(number2, "G", "fr-FR"),
-// Displays 2,3E-06
+        Number.ToText(12345.6789, "G7),
+        // Displays 12345.68
 
-number3 = .0023,
-result6 = Number.ToText(number3, "G"),
-// Displays 0.0023
+        Number.ToText(.0000023, "G"),
+        // Displays 2.3E-06
 
-number4 = 1234,
-result7 = Number.ToText(number4, "G2")
-// Displays 1.2E+03
+        Number.ToText(.0000023, "G", "fr-FR"),
+        // Displays 2,3E-06
 
-number5 = Number.PI,
-result8 = Number.ToText(number5, "G5"),
-// Displays 3.1416
+        Number.ToText(.0023, "G"),
+        // Displays 0.0023
+
+        Number.ToText(1234, "G2")
+        // Displays 1.2E+03
+
+        Number.ToText(Number.PI, "G5")
+        // Displays 3.1416
+    }
+in
+    Source
 ```
 
 <a name="NFormatString"></a>
@@ -267,15 +280,20 @@ The result string is affected by the formatting information of the current cultu
 The following example formats assorted floating-point values with the number format specifier:
 
 ```powerquery-m
-dblValue = -12445.6789,
-result = Number.ToText(dblValue, "N"),
-// Displays -12,445.68
-result2 = Number.ToText(dblValue, "N1", "sv-SE"),
-// Displays -12 445,7
+let
+    Source =
+    {
+        Number.ToText(-12445.6789, "N"),
+        // Displays -12,445.68
 
-intValue = 123456789,
-result3 = Number.ToText(intValue, "N1"),
-// Displays 123,456,789.0
+        Number.ToText(-12445.6789, "N1", "sv-SE"),
+        // Displays -12 445,7
+
+        Number.ToText(123456789, "N1")
+        // Displays 123,456,789.0
+    }
+in
+    Source
 ```
 
 <a name="PFormatString"></a>
@@ -287,13 +305,20 @@ The percent ("P") format specifier multiplies a number by 100 and converts it to
 The following example formats floating-point values with the percent format specifier:
 
 ```powerquery-m
-number = .2468013,
-result = Number.ToText(number, "P"),
-// Displays 24.68%
-result2 = Number.ToText(number, "P", "hr-HR"),
-// Displays 24,68 %
-result3 = Number.ToText(number, "P1"),
-// Displays 24.7%
+let
+    Source =
+    {
+        Number.ToText(.2468013, "P"),
+        // Displays 24.68%
+
+        Number.ToText(.2468013, "P", "hr-HR"),
+        // Displays 24,68 %
+
+        Number.ToText(.2468013, "P1")
+        // Displays 24.7%
+    }
+in
+    Source
 ```
 
 <a name="XFormatString"></a>
@@ -309,32 +334,41 @@ The result string isn't affected by the formatting information of the current cu
 The following example formats values with the hexadecimal format specifier.
 
 ```powerquery-m
-value1 = 0x2045e,
-result1 = Number.ToText(value1, "x"),
-// Displays 2045e
-result2 = Number.ToText(value1, "X"),
-// Displays 2045E
-result4 = Number.ToText(value1, "X8"),
-// Displays 0002045E
+let
+    Source =
+    {
+        Number.ToText(0x2045e, "x"),
+        // Displays 2045e
 
-value2 = 123456789,
-result5 = Number.ToText(value2, "X"),
-// Displays 75BCD15
-result6 = number.ToText(value2, "X2"),
-// Displays 75BCD15
+        Number.ToText(0x2045e, "X"),
+        // Displays 2045E
+
+        Number.ToText(0x2045e, "X8"),
+        // Displays 0002045E
+
+        Number.ToText(123456789, "X"),
+        // Displays 75BCD15
+
+        Number.ToText(123456789, "X2"),
+        // Displays 75BCD15
+    }
+in
+    Source
 ```
 
 ## Notes
 
 This section contains additional information about using standard numeric format strings.
 
-## How culture affects numeric format strings
+### How culture affects numeric format strings
 
-If you don't set a specific culture in your numeric format strings, your format strings uses the current default culture. *Culture* is the standard locale that’s determined by the underlying platform, such as Windows 11. For example, the [list of Windows 11 input locales](/windows-hardware/manufacture/desktop/default-input-locales-for-windows-language-packs?view=windows-11#input-locales) can be used as the culture on the Windows 11 platform. Other platforms, such as Window 10 or macOS might use a different list of cultures.
+*Culture* is the standard locale that’s determined by the underlying platform where your queries are originally created. By default, your format strings use the current default culture.
 
-The default culture you use can vary depending on whether you reference Power Query M on a local machine or a cloud platform. For example, if you develop Power Query M code on your local system in Power BI Desktop, the default culture uses the locale settings used on your local system. If you develop Power Query M code in Power BI service, the default culture uses the locale settings used on the cloud service.
+The current default culture can vary depending on whether you reference Power Query M on a local machine or a cloud platform. For example, if you develop Power Query M code on your local system in Power BI Desktop, the default culture is the locale settings used on your local system. If you develop Power Query M code in Power BI service, the default culture is the locale settings used on the cloud service. The [list of Windows 11 input locales](/windows-hardware/manufacture/desktop/default-input-locales-for-windows-language-packs?view=windows-11#input-locales) can be used as the culture on the Windows 11 platform. Other platforms, such as Window 10 or macOS might use a different list of cultures.
 
-The culture is set to the system locale (Windows, MacOS) when the queries are first authored. setting of the code is stored within the M queries when the code is created. However, you can change the default culture in the Power Query settings dialog where you create the query. For example, if you are running Power Query from Excel:
+The culture is set to the system locale (Windows, MacOS) when your queries are first authored. If you move your query to a different location that uses a different default culture, your query still uses the culture of the original location.
+
+However, you can change the default culture in the Power Query settings dialog where you create the query. For example, if you are running Power Query from Excel:
 
 1. In Power Query, select **File** > **Options and settings** > **Query options**.
 1. Under **Current Workbook, select **Regional Settings**.
@@ -356,30 +390,35 @@ The following example formats a floating point and an integral numeric value usi
 
 ```powerquery-m
 let
-    // Display string representations of numbers for en-us culture
+let
+    // Display text representations of numbers for en-US culture
     culture = "en-US",
 
     // Output floating point values
     floating = Double.From(10761.937554),
-    result1 = Text.Format("C: #{0}", {Number.ToText(floating, "C", culture)}),             // Displays "C: $10,761.94"
-    result2 = Text.Format("E: #{0}", {Number.ToText(floating, "E03", culture)}),           // Displays "E: 1.076E+004"
-    result3 = Text.Format("F: #{0}", {Number.ToText(floating, "F04", culture)}),           // Displays "F: 10761.9376"
-    result4 = Text.Format("G: #{0}", {Number.ToText(floating, "G", culture)}),             // Displays "G: 10761.937554"
-    result5 = Text.Format("N: #{0}", {Number.ToText(floating, "N03", culture)}),           // Displays "N: 10,761.938"
-    result6 = Text.Format("P: #{0}", {Number.ToText(floating/10000, "P02", culture)}),     // Displays "P: 107.62%"
-    #"Floating results" = result1 & "#(cr,lf)" & result2 & "#(cr,lf)" &result3 & "#(cr,lf)" &result4 & "#(cr,lf)" &result5 & "#(cr,lf)" &result6 & "#(cr,lf)#(cr,lf)", 
+    #"Floating results" = 
+    {
+        Text.Format("C: #{0}", {Number.ToText(floating, "C", culture)}),         // Displays "C: $10,761.94"
+        Text.Format("E: #{0}", {Number.ToText(floating, "E03", culture)}),       // Displays "E: 1.076E+004"
+        Text.Format("F: #{0}", {Number.ToText(floating, "F04", culture)}),       // Displays "F: 10761.9376"
+        Text.Format("G: #{0}", {Number.ToText(floating, "G", culture)}),         // Displays "G: 10761.937554"
+        Text.Format("N: #{0}", {Number.ToText(floating, "N03", culture)}),       // Displays "N: 10,761.938"
+        Text.Format("P: #{0}", {Number.ToText(floating/10000, "P02", culture)})  // Displays "P: 107.62%"
+    },
     
     // Output integral values
     integral = Int32.From(8395),
-    result7 = Text.Format("C: #{0}", {Number.ToText(integral, "C", culture)}),             // Displays "C: $8,395.00"
-    result8 = Text.Format("D: #{0}", {Number.ToText(integral, "D6", culture)}),            // Displays "D: 008395"
-    result9 = Text.Format("E: #{0}", {Number.ToText(integral, "E03", culture)}),          // Displays "E: 8.395E+003"
-    result10 = Text.Format("F: #{0}", {Number.ToText(integral, "F01", culture)}),          // Displays "F: 8395.0"
-    result11 = Text.Format("G: #{0}", {Number.ToText(integral, "G", culture)}),            // Displays "G: 8395"
-    result12 = Text.Format("N: #{0}", {Number.ToText(integral, "N01", culture)}),          // Displays "N: 8,395.0"
-    result13 = Text.Format("P: #{0}", {Number.ToText(integral/10000, "P02", culture)}),    // Displays "P: 83.95 %"
-    result14 = Text.Format("X: 0x#{0}", {Number.ToText(integral, "X", culture)}),          // Displays "X: 0x20CB"
-    #"Integral results" = result7 & "#(cr,lf)" & result8 & "#(cr,lf)" &result9 & "#(cr,lf)" &result10 & "#(cr,lf)" &result11 & "#(cr,lf)" &result12 & "#(cr,lf)" & result13 & "#(cr,lf)" & result14,
+    #"Integral results" =
+    {
+        Text.Format("C: #{0}", {Number.ToText(integral, "C", culture)}),         // Displays "C: $8,395.00"
+        Text.Format("D: #{0}", {Number.ToText(integral, "D6", culture)}),        // Displays "D: 008395"
+        Text.Format("E: #{0}", {Number.ToText(integral, "E03", culture)}),       // Displays "E: 8.395E+003"
+        Text.Format("F: #{0}", {Number.ToText(integral, "F01", culture)}),       // Displays "F: 8395.0"
+        Text.Format("G: #{0}", {Number.ToText(integral, "G", culture)}),         // Displays "G: 8395"
+        Text.Format("N: #{0}", {Number.ToText(integral, "N01", culture)}),       // Displays "N: 8,395.0"
+        Text.Format("P: #{0}", {Number.ToText(integral/10000, "P02", culture)}), // Displays "P: 83.95 %"
+        Text.Format("X: 0x#{0}", {Number.ToText(integral, "X", culture)})        // Displays "X: 0x20CB"
+    },
     results = #"Floating results" & #"Integral results"
 
 in

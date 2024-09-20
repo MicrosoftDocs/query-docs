@@ -1,7 +1,7 @@
 ---
 title: "Custom numeric format strings"
 description: Learn how to create a custom numeric format string to format numeric data in .NET. A custom numeric format string has one or more custom numeric specifiers.
-ms.date: 9/16/2024
+ms.date: 9/20/2024
 ms.topic: reference
 ---
 # Custom numeric format strings
@@ -37,40 +37,38 @@ The "00" specifier causes the value to be rounded to the nearest digit preceding
 The following example displays several values that are formatted by using custom format strings that include zero placeholders.
 
 ```powerquery-m
-value = Double.From(123),
-result1 = Number.ToText(value, "00000"),
-// Displays 00123
+let
+    Source =
+    {
+        Number.ToText(123, "00000"),
+        // Displays 00123
 
-value2 = Double.From(1.2),
-result2 = Number.ToText(value2, "0.00"),
-// Displays 1.20
+        Number.ToText(1.2, "0.00"),
+        // Displays 1.20
 
-result3 = Number.ToText(value2, "00.00"),
-// Displays 01.20
+        Number.ToText(1.2, "00.00"),
+        // Displays 01.20
 
-culturedaDK = "da-DK",
-result4 = Number.ToText(value2, "00.00", culturedaDK),
-// Displays 01,20
+        Number.ToText(1.2, "00.00", "da-DK"),
+        // Displays 01,20
 
-value3 = Double.From(.56),
-result5 = Number.ToText(value3, "0.0"),
-// Displays 0.6
+        Number.ToText(.56, "0.0"),
+        // Displays 0.6
 
-value4 = Double.From(1234567890),
-result6 = Number.ToText(value4, "0,0"),
-// Displays 1,234,567,890
+        Number.ToText(1234567890, "0,0"),
+        // Displays 1,234,567,890
 
-cultureelGR = "el-GR",
-result7 = Number.ToText(value4, "0,0", cultureelGR),
-// Displays 1.234.567.890
+        Number.ToText(1234567890, "0,0", "el-GR"),
+        // Displays 1.234.567.890
 
-value5 = Double.From(1234567890.123456),
-result8 = Number.ToText(value5, "0,0.0"),
-// Displays 1,234,567,890.1
+        Number.ToText(1234567890.123456, "0,0.0"),
+        // Displays 1,234,567,890.1
 
-value6 = Double.From(1234.567890),
-result9 = Number.ToText(value6, "0,0.00"),
-// Displays 1,234.57
+        Number.ToText(1234.567890, "0,0.00")
+        // Displays 1,234.57
+    }
+in
+    Source
 ```
 
 [Back to table](#table)
@@ -88,35 +86,35 @@ The "##" format string causes the value to be rounded to the nearest digit prece
 The following example displays several values that are formatted by using custom format strings that include digit placeholders.
 
 ```powerquery-m
-value1 = Double.From(1.2),
-result1 = Number.ToText(value1, "#.##"),
-// Displays 1.2
+let
+    Source =
+    {
+        Number.ToText(1.2, "#.##"),
+        // Displays 1.2
 
-value2 = Double.From(123),
-result2 = Number.ToText(value2, "#####"),
-// Displays 123
+        Number.ToText(123, "#####"),
+        // Displays 123
 
-value3 = Double.From(123456),
-result3 = Number.ToText(value3, "[##-##-##]"),
-// Displays [12-34-56]
+        Number.ToText(123456, "[##-##-##]"),
+        // Displays [12-34-56]
 
-value4 = Double.From(1234567890),
-result4 = Number.ToText(value4, "#"),
-// Displays 1234567890
+        Number.ToText(1234567890, "#"),
+        // Displays 1234567890
 
-result5 = Number.ToText(value4, "(###) ###-####"),
-// Displays (123) 456-7890
+        Number.ToText(1234567890, "(###) ###-####")
+        // Displays (123) 456-7890
+    }
+in
+    Source
 ```
 
 To return a result string in which absent digits or leading zeroes are replaced by spaces, use the [Text.PadStart](text-padstart.md) and specify a field width, as the following example illustrates.
 
 ```powerquery-m
 let
-   value = Double.From(.324),
-   result = Text.Format("The value is: '#{0}'", {Text.PadStart(Number.ToText(value, "#.###"), 5)})
-
+   Source = Text.Format("The value is: '#{0}'", {Text.PadStart(Number.ToText(.324, "#.###"), 5)})
 in
-   result
+   Source
 
 // The example displays the following output if the current culture
 // is en-US:
@@ -136,23 +134,26 @@ The character that is used as the decimal separator in the result string is not 
 The following example uses the "." format specifier to define the location of the decimal point in several result strings.
 
 ```powerquery-m
-value1 = Double.From(1.2),
-result1 = Number.ToText(value1, "0.00"),
-// Displays 1.20
+let
+    Source =
+    {
+        Number.ToText(1.2, "0.00"),
+        // Displays 1.20
 
-result2 = Number.ToText(value1, "00.00"),
-// Displays 01.20
+        Number.ToText(1.2, "00.00"),
+        // Displays 01.20
 
-result3 = Number.ToText(value1, "00.00", "da-DK"),
-// Displays 01,20
+        Number.ToText(1.2, "00.00", "da-DK"),
+        // Displays 01,20
 
-value2 = Double.From(.086),
-result4 = Number.ToText(value2, "#0.##%"),
-// Displays 8.6%
+        Number.ToText(.086, "#0.##%"),
+        // Displays 8.6%
 
-value3 = Double.From(86000),
-result5 = Number.ToText(value3, "0.###E+0"),
-// Displays 8.6E+4
+        Number.ToText(Double.From(86000), "0.###E+0")
+        // Displays 8.6E+4
+    }
+in
+    Source
 ```
 
 [Back to table](#table)
@@ -174,26 +175,36 @@ You can use group separator and number scaling specifiers in the same format str
 The following example illustrates the use of the comma as a group separator.
 
 ```powerquery-m
-value = Double.From(1234567890),
-result1 = Number.ToText(value, "#,#"),
-// Displays 1,234,567,890
+let
+    Source =
+    {
+        Number.ToText(1234567890, "#,#"),
+        // Displays 1,234,567,890
 
-result2 = Number.ToText(value, "#,##0,,"),
-// Displays, 1,235
+        Number.ToText(1234567890, "#,##0,,")
+        // Displays, 1,235
+    }
+in
+    Source
 ```
 
 The following example illustrates the use of the comma as a specifier for number scaling.
 
 ```powerquery-m
-value = Double.From(1234567890),
-result1 = Number.ToText(value, "#,,"),
-// Displays 1235
+let
+    Source =
+    {
+        Number.ToText(1234567890, "#,,"),
+        // Displays 1235
 
-result2 = Number.ToText(value, "#,,,"),
-// Displays 1
+        Number.ToText(1234567890, "#,,,"),
+        // Displays 1
 
-result3 = Number.ToText(value, "#,##0,,"),
-// Displays 1,235
+        Number.ToText(1234567890, "#,##0,,")
+        // Displays 1,235
+    }
+in
+    Source
 ```
 
 [Back to table](#table)
@@ -204,12 +215,14 @@ result3 = Number.ToText(value, "#,##0,,"),
 
 A percent sign (%) in a format string causes a number to be multiplied by 100 before it is formatted. The localized percent symbol is inserted in the number at the location where the % appears in the format string. The percent character used is defined by the culture.
 
-The following example defines several custom format strings that include the "%" custom specifier.
+The following example defines a custom format string that includes the "%" custom specifier.
 
 ```powerquery-m
-value = Double.From(.086),
-result = Number.ToText(value, "#0.##%"),
-// Displays 8.6%
+let
+    Source = Number.ToText(.086, "#0.##%")
+    // Displays 8.6%
+in
+    Source
 ```
 
 [Back to table](#table)
@@ -223,10 +236,11 @@ A per mille character (‰ or \u2030) in a format string causes a number to be m
 The following example defines a custom format string that includes the "‰" custom specifier.
 
 ```powerquery-m
-value = Double.From(.00354),
-perMilleFmt = "#0.##" & Character.FromNumber(0x2030),
-result = Number.ToText(value, perMilleFmt)
-// Displays 3.54‰
+let
+    Source = Number.ToText(.00354, "#0.##" & Character.FromNumber(0x2030))
+    // Displays 3.54‰
+in
+    Source
 ```
 
 [Back to table](#table)
@@ -240,15 +254,20 @@ If any of the strings "E", "E+", "E-", "e", "e+", or "e-" are present in the for
 The following example formats several numeric values using the specifiers for scientific notation.
 
 ```powerquery-m
-value = Double.From(86000),
-result1 = Number.ToText(value, "0.###E+0"),
-// Displays 8.6E+4
+let
+    Source =
+    {
+        Number.ToText(86000, "0.###E+0"),
+        // Displays 8.6E+4
 
-result2 = Number.ToText(value, "0.###E+000"),
-// Displays 8.6E+004
+        Number.ToText(86000, "0.###E+000"),
+        // Displays 8.6E+004
 
-result3 = Number.ToText(value, "0.###E-000"),
-// Displays 8.6E004
+        Number.ToText(86000, "0.###E-000"),
+        // Displays 8.6E004
+    }
+in
+    Source
 ```
 
 [Back to table](#table)
@@ -266,18 +285,23 @@ To include a backslash in a result string, you must escape it with another backs
 The following example uses the escape character to prevent the formatting operation from interpreting the "#", "0", and "\\" characters as either escape characters or format specifiers. The C# examples uses an additional backslash to ensure that a backslash is interpreted as a literal character.
 
 ```powerquery-m
-value = 123,
-result1 = Number.ToText(value, "\#\#\# ##0 dollars and \0\0 cents \#\#\#"),
-// Displays ### 123 dollars and 00 cents ###
+let
+    Source =
+    {
+        Number.ToText(123, "\#\#\# ##0 dollars and \0\0 cents \#\#\#"),
+        // Displays ### 123 dollars and 00 cents ###
 
-result2 = Number.ToText(value, """###"" ##0 dollars and ""00"" cents ""###"""),
-// Displays ### 123 dollars and 00 cents ###
+        Number.ToText(123, """###"" ##0 dollars and ""00"" cents ""###"""),
+        // Displays ### 123 dollars and 00 cents ###
 
-result3 = Number.ToText(value, "\\\\\\ ##0 dollars and \0\0 cents \\\\\\"),
-// Displays \\\ 123 dollars and 00 cents \\\
+        Number.ToText(123, "\\\\\\ ##0 dollars and \0\0 cents \\\\\\"),
+        // Displays \\\ 123 dollars and 00 cents \\\
 
-result4 = Number.ToText(value, """\\\"" ##0 dollars and ""00"" cents ""\\\"""),
-// Displays \\\ 123 dollars and 00 cents \\\
+        Number.ToText(123, """\\\"" ##0 dollars and ""00"" cents ""\\\""")
+        // Displays \\\ 123 dollars and 00 cents \\\
+    }
+in
+    Source
 ```
 
 [Back to table](#table)
@@ -299,21 +323,20 @@ Section separators ignore any preexisting formatting associated with a number wh
 The following example uses the ";" format specifier to format positive, negative, and zero numbers differently.
 
 ```powerquery-m
-posValue = Double.From(1234),
-negValue = Double.From(-1234),
-zeroValue = Double.From(0),
+let
+    Source =
+    {
+        Number.ToText(1234, "##;(##)"),
+        // Displays 1234
 
-format1 = "##;(##)",
-format2 = "##;(##);**Zero**",
+        Number.ToText(-1234, "##;(##)"),
+        // Displays (1234)
 
-result1 = Number.ToText(posValue, format1),
-// Displays 1234
-
-result2 = Number.ToText(negValue, format1),
-// Displays (1234)
-
-result3 = Number.ToText(zeroValue, format2),
-// Displays **Zero**
+        Number.ToText(0, "##;(##);**Zero**"),
+        // Displays **Zero**
+    }
+in
+    Source
 ```
 
 [Back to table](#table)
@@ -337,10 +360,11 @@ All other characters are always interpreted as character literals and, in a form
 The following example illustrates one common use of literal character units (in this case, thousands):
 
 ```powerquery-m
-n = 123.8,
-formattedValue = Number.ToText(n, "#,##0.0K")
-// The example displays the following output:
-//      123.8K
+let
+    Source = Number.ToText(123.8, "#,##0.0K")
+    // Displays 123.8K
+in
+    Source
 ```
 
 There are two ways to indicate that characters are to be interpreted as literal characters and not as formatting characters, so that they can be included in a result string or successfully parsed in an input string:
@@ -352,40 +376,35 @@ There are two ways to indicate that characters are to be interpreted as literal 
 The following example uses both approaches to include reserved characters in a custom numeric format string.
 
 ```powerquery-m
-n = Double.From(9.3),
-result1 = Number.ToText(n, "##.0\%"),
-// Displays 9.3%
+let
+    Source =
+    {
+        Number.ToText(9.3, "##.0\%"),
+        // Displays 9.3%
 
-result2 = Number.ToText(n, "\'##\'"),
-// Displays '9'
+        Number.ToText(9.3, "\'##\'"),
+        // Displays '9'
 
-result3 = Number.ToText(n, "\\##\\"),
-// Displays \9\
+        Number.ToText(9.3, "\\##\\"),
+        // Displays \9\
 
-result4 = Number.ToText(n, "##.0'%'"),
-// Displays 9.3%
+        Number.ToText(9.3, "##.0'%'"),
+        // Displays 9.3%
 
-result5 = Number.ToText(n, "'\'##'\'"),
-// Displays \9\
+        Number.ToText(9.3, "'\'##'\'")
+        // Displays \9\
+    }
+in
+    Source
 ```
 
 <a name="NotesCustomFormatting"></a>
 
 ## Notes
 
-## How culture affects numeric format strings
+### How culture affects numeric format strings
 
-If you don't set a specific culture in your numeric format strings, your format strings uses the current default culture. *Culture* is the standard locale that’s determined by the underlying platform, such as Windows 11. For example, the [list of Windows 11 input locales](/windows-hardware/manufacture/desktop/default-input-locales-for-windows-language-packs?view=windows-11#input-locales) can be used as the culture on the Windows 11 platform. Other platforms, such as Window 10 or macOS might use a different list of cultures.
-
-The default culture you use can vary depending on whether you reference Power Query M on a local machine or a cloud platform. For example, if you develop Power Query M code on your local system in Power BI Desktop, the default culture uses the locale settings used on your local system. If you develop Power Query M code in Power BI service, the default culture uses the locale settings used on the cloud service.
-
-The culture is set to the system locale (Windows, MacOS) when the queries are first authored. setting of the code is stored within the M queries when the code is created. However, you can change the default culture in the Power Query settings dialog where you create the query. For example, if you are running Power Query from Excel:
-
-1. In Power Query, select **File** > **Options and settings** > **Query options**.
-1. Under **Current Workbook, select **Regional Settings**.
-1. Select the locale you want to use.
-
-Other versions of Power Query work similarly. In general, within Power Query you select **Options**, which opens the **Options** dialog. Then select **Regional Settings** and select the locale you want to use.
+For information on how culture affects numeric format strings, go to [How culture affects numeric format strings](standard-numeric-format-strings.md#how-culture-affects-numeric-format-strings).
 
 ### Floating-Point infinities and NaN
 
@@ -405,16 +424,16 @@ The following example demonstrates two custom numeric format strings. In both ca
 
 ```powerquery-m
 let
-    number1 = 1234567890,
-    value1 = Number.ToText(number1, "(###) ###-####"),
-    number2 = 42,
-    value2 = Number.ToText(number2, "My Number = #"),
-    result = value1 & "#(cr,lf)" & value2
+    Source =
+    {
+        Number.ToText(1234567890, "(###) ###-####"),
+        // Displays (123) 456-7890
+
+        Number.ToText(42, "My Number = #")
+        // Displays My number = 42
+    }
 in
-    result
-// The example displays the following output:
-//       (123) 456-7890
-//       My Number = 42
+    Source
 ```
 
 [Back to table](#table)
