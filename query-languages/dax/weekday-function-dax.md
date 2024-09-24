@@ -19,7 +19,7 @@ WEEKDAY(<date>, <return_type>)
 |Term|Definition|  
 |--------|--------------|  
 |date|A date in **datetime** format.<br /><br />Dates should be entered by using the DATE function, by using expressions that result in a date, or as the result of other formulas.|  
-|return_type|A number that determines the Return value:<br /><br />Return type: **1**, week begins on Sunday (1) and ends on Saturday (7). numbered 1 through 7.<br /><br />Return type: **2**, week begins on Monday (1) and ends on Sunday (7).<br /><br />Return type: **3**, week begins on Monday (0) and ends on Sunday (6).numbered 1 through 7.|  
+|return_type|A number that determines the Return value:<br /><br />Return type: **1**, week begins on Sunday (1) and ends on Saturday (7). numbered 1 through 7.<br /><br />Return type: **2**, week begins on Monday (1) and ends on Sunday (7).<br /><br />Return type: **3**, week begins on Monday (0) and ends on Sunday (6).numbered 0 through 6.|  
   
 ## Return value
 
