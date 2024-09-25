@@ -8,7 +8,6 @@ title: "USERCULTURE function (DAX) | Microsoft Docs"
   
 Returns the locale \(language code-country code) for the current user, determined by the operating system, browser settings, or Power BI service.  
 
-**Note:** This function is currently supported in Power BI Premium per capacity, Power BI Premium per user, and Power BI Embedded only.
   
 ## Syntax  
   
