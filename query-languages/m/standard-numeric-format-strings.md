@@ -16,7 +16,7 @@ Standard numeric format strings are used to format common numeric types. A stand
   When the precision specifier controls the number of fractional digits in the result string, the result string reflects a number that is rounded to a representable result nearest to the infinitely precise result.
 
   > [!NOTE]
-  > The precision specifier determines the number of digits in the result string. To pad a result string with leading or trailing spaces or other characters (such a 0), use the [Text.PadStart](text-padstart.md) and [Text.PadEnd](text-padend.md) functions and define an *alignment component* in the `count` parameter.
+  > The precision specifier determines the number of digits in the result string. To pad a result string with leading or trailing spaces or other characters (such a 0), use the [Text.PadStart](text-padstart.md) and [Text.PadEnd](text-padend.md) functions and use the overall length `count` to pad the result string.
 
 Standard numeric format strings are supported by the [Number.ToText](number-totext.md) function.
 

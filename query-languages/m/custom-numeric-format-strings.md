@@ -1,7 +1,7 @@
 ---
 title: "Custom numeric format strings"
 description: Learn how to create a custom numeric format string to format numeric data in .NET. A custom numeric format string has one or more custom numeric specifiers.
-ms.date: 9/20/2024
+ms.date: 9/30/2024
 ms.topic: reference
 ---
 # Custom numeric format strings
@@ -40,36 +40,39 @@ The following example displays several values that are formatted by using custom
 let
     Source =
     {
-        Number.ToText(123, "00000"),
+        Number.ToText(123, "00000", ""),
         // Displays 00123
 
-        Number.ToText(1.2, "0.00"),
+        Number.ToText(1.2, "0.00", ""),
         // Displays 1.20
 
-        Number.ToText(1.2, "00.00"),
+        Number.ToText(1.2, "00.00", ""),
         // Displays 01.20
 
         Number.ToText(1.2, "00.00", "da-DK"),
         // Displays 01,20
 
-        Number.ToText(.56, "0.0"),
+        Number.ToText(.56, "0.0", ""),
         // Displays 0.6
 
-        Number.ToText(1234567890, "0,0"),
+        Number.ToText(1234567890, "0,0", ""),
         // Displays 1,234,567,890
 
         Number.ToText(1234567890, "0,0", "el-GR"),
         // Displays 1.234.567.890
 
-        Number.ToText(1234567890.123456, "0,0.0"),
+        Number.ToText(1234567890.123456, "0,0.0", ""),
         // Displays 1,234,567,890.1
 
-        Number.ToText(1234.567890, "0,0.00")
+        Number.ToText(1234.567890, "0,0.00", "")
         // Displays 1,234.57
     }
 in
     Source
 ```
+
+> [!NOTE]
+> The blank text ("") in the last parameter of **Number.ToText** in the previous sample refers to the invariant culture.
 
 [Back to table](#table)
 
@@ -89,7 +92,7 @@ The following example displays several values that are formatted by using custom
 let
     Source =
     {
-        Number.ToText(1.2, "#.##"),
+        Number.ToText(1.2, "#.##", ""),
         // Displays 1.2
 
         Number.ToText(123, "#####"),
@@ -137,19 +140,19 @@ The following example uses the "." format specifier to define the location of th
 let
     Source =
     {
-        Number.ToText(1.2, "0.00"),
+        Number.ToText(1.2, "0.00", ""),
         // Displays 1.20
 
-        Number.ToText(1.2, "00.00"),
+        Number.ToText(1.2, "00.00", ""),
         // Displays 01.20
 
         Number.ToText(1.2, "00.00", "da-DK"),
         // Displays 01,20
 
-        Number.ToText(.086, "#0.##%"),
+        Number.ToText(.086, "#0.##%", ""),
         // Displays 8.6%
 
-        Number.ToText(Double.From(86000), "0.###E+0")
+        Number.ToText(Double.From(86000), "0.###E+0", "")
         // Displays 8.6E+4
     }
 in
@@ -178,10 +181,10 @@ The following example illustrates the use of the comma as a group separator.
 let
     Source =
     {
-        Number.ToText(1234567890, "#,#"),
+        Number.ToText(1234567890, "#,#", ""),
         // Displays 1,234,567,890
 
-        Number.ToText(1234567890, "#,##0,,")
+        Number.ToText(1234567890, "#,##0,,", "")
         // Displays, 1,235
     }
 in
@@ -194,13 +197,13 @@ The following example illustrates the use of the comma as a specifier for number
 let
     Source =
     {
-        Number.ToText(1234567890, "#,,"),
+        Number.ToText(1234567890, "#,,", ""),
         // Displays 1235
 
-        Number.ToText(1234567890, "#,,,"),
+        Number.ToText(1234567890, "#,,,", ""),
         // Displays 1
 
-        Number.ToText(1234567890, "#,##0,,")
+        Number.ToText(1234567890, "#,##0,,", "")
         // Displays 1,235
     }
 in
@@ -219,7 +222,7 @@ The following example defines a custom format string that includes the "%" custo
 
 ```powerquery-m
 let
-    Source = Number.ToText(.086, "#0.##%")
+    Source = Number.ToText(.086, "#0.##%", "")
     // Displays 8.6%
 in
     Source
@@ -237,7 +240,7 @@ The following example defines a custom format string that includes the "‰" cus
 
 ```powerquery-m
 let
-    Source = Number.ToText(.00354, "#0.##" & Character.FromNumber(0x2030))
+    Source = Number.ToText(.00354, "#0.##" & Character.FromNumber(0x2030), "")
     // Displays 3.54‰
 in
     Source
@@ -257,13 +260,13 @@ The following example formats several numeric values using the specifiers for sc
 let
     Source =
     {
-        Number.ToText(86000, "0.###E+0"),
+        Number.ToText(86000, "0.###E+0", ""),
         // Displays 8.6E+4
 
-        Number.ToText(86000, "0.###E+000"),
+        Number.ToText(86000, "0.###E+000", ""),
         // Displays 8.6E+004
 
-        Number.ToText(86000, "0.###E-000"),
+        Number.ToText(86000, "0.###E-000", "")
         // Displays 8.6E004
     }
 in
@@ -274,15 +277,21 @@ in
 
 <a name="SpecifierEscape"></a>
 
-## The "\\" escape character
+## The escape character
 
 The "#", "0", ".", ",", "%", and "‰" symbols in a format string are interpreted as format specifiers rather than as literal characters. Depending on their position in a custom format string, the uppercase and lowercase "E" as well as the + and - symbols may also be interpreted as format specifiers.
 
-To prevent a character from being interpreted as a format specifier, you can precede it with a backslash, which is the escape character. The escape character signifies that the following character is a character literal that should be included in the result string unchanged.
+To prevent a character from being interpreted as a format specifier, you can:
+
+- Precede it with a backslash.
+- Surround it with a single quote.
+- Surround it with two double quotes.
+
+Each of these act as escape characters. The escape character signifies that the following character is a character literal that should be included in the result string unchanged.
 
 To include a backslash in a result string, you must escape it with another backslash (`\\`).
 
-The following example uses the escape character to prevent the formatting operation from interpreting the "#", "0", and "\\" characters as either escape characters or format specifiers. The C# examples uses an additional backslash to ensure that a backslash is interpreted as a literal character.
+The following example uses the escape character to prevent the formatting operation from interpreting the "#", "0", and "\" characters as either escape characters or format specifiers.
 
 ```powerquery-m
 let
@@ -291,10 +300,16 @@ let
         Number.ToText(123, "\#\#\# ##0 dollars and \0\0 cents \#\#\#"),
         // Displays ### 123 dollars and 00 cents ###
 
+        Number.ToText(123, "'###' ##0 dollars and '00' cents '###'"),
+        // Displays ### 123 dollars and 00 cents ###
+
         Number.ToText(123, """###"" ##0 dollars and ""00"" cents ""###"""),
         // Displays ### 123 dollars and 00 cents ###
 
         Number.ToText(123, "\\\\\\ ##0 dollars and \0\0 cents \\\\\\"),
+        // Displays \\\ 123 dollars and 00 cents \\\
+
+        Number.ToText(123, "'\\\' ##0 dollars and '00' cents '\\\'"),
         // Displays \\\ 123 dollars and 00 cents \\\
 
         Number.ToText(123, """\\\"" ##0 dollars and ""00"" cents ""\\\""")
@@ -332,7 +347,7 @@ let
         Number.ToText(-1234, "##;(##)"),
         // Displays (1234)
 
-        Number.ToText(0, "##;(##);**Zero**"),
+        Number.ToText(0, "##;(##);**Zero**")
         // Displays **Zero**
     }
 in
@@ -369,7 +384,7 @@ in
 
 There are two ways to indicate that characters are to be interpreted as literal characters and not as formatting characters, so that they can be included in a result string or successfully parsed in an input string:
 
-- By escaping a formatting character. For more information, go to [The "\\" escape character](#SpecifierEscape).
+- By escaping a formatting character. For more information, go to [The escape character](#SpecifierEscape).
 
 - By enclosing the entire literal string in quotation apostrophes.
 
