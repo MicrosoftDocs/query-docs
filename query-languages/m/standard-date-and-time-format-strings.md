@@ -3,7 +3,7 @@ title: "Standard date and time format strings"
 description: Learn how to use a standard date and time format string to define the text representation of a date and time value in .NET.
 author: DougKlopfenstein
 ms-author: dougklo
-ms.date: 9/16/2024
+ms.date: 10/1/2024
 ms.topic: reference
 ---
 # Standard date and time format strings

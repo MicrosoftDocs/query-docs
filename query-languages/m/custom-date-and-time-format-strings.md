@@ -3,7 +3,7 @@ title: "Custom date and time format strings"
 description: Learn to use custom date and time format strings to convert DateTime or DateTimeOffset values into text representations, or to parse strings for dates & times.
 author: DougKlopfenstein
 ms.author: dougklo
-ms.date: 9/10/2024
+ms.date: 10/1/2024
 ms.topic: reference
 ---
 
@@ -999,7 +999,7 @@ The following table shows how the offset value changes depending on the **DateTi
 
 | DateTimeZone value | Offset value |
 | --- | --- |
-| [DateTimeZone.LocalNow](datetimezone-localnow.md) | On Power Query Desktop, the signed offset of the local operating system's time zone from UTC. On Power Query Online, returns `+00. |
+| [DateTimeZone.LocalNow](datetimezone-localnow.md) | On Power Query Desktop, the signed offset of the local operating system's time zone from UTC. On Power Query Online, returns `+00`. |
 | [DateTimeZone.UtcNow](datetimezone-utcnow.md) | Returns `+0`. |
 
 If the "z" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and throws an expression error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
@@ -1040,7 +1040,7 @@ The following table shows how the offset value changes depending on the **DateTi
 
 | DateTimeZone value | Offset value |
 | --- | --- |
-| [DateTimeZone.LocalNow](datetimezone-localnow.md) | On Power Query Desktop, the signed offset of the local operating system's time zone from UTC. On Power Query Online, returns `+00. |
+| [DateTimeZone.LocalNow](datetimezone-localnow.md) | On Power Query Desktop, the signed offset of the local operating system's time zone from UTC. On Power Query Online, returns `+00`. |
 | [DateTimeZone.UtcNow](datetimezone-utcnow.md) | Returns `+00`. |
 
 The following example includes the "zz" custom format specifier in a custom format string on a system in the U.S. Pacific Time zone.
@@ -1079,7 +1079,7 @@ The following table shows how the offset value changes depending on the **DateTi
 
 | DateTimeZoneValue value | Offset value |
 | --- | --- |
-| [DateTimeZone.LocalNow](datetimezone-localnow.md) | On Power Query Desktop, the signed offset of the local operating system's time zone from UTC. On Power Query Online, returns `+00.|
+| [DateTimeZone.LocalNow](datetimezone-localnow.md) | On Power Query Desktop, the signed offset of the local operating system's time zone from UTC. On Power Query Online, returns `+00`.|
 | [DateTimeZone.UtcNow](datetimezone-utcnow.md) | Returns `+00:00`. |
 
 The following example includes the "zzz" custom format specifier in a custom format string on a system in the U.S. Pacific Time zone.
