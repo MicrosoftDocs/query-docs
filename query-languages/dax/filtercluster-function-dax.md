@@ -4,6 +4,8 @@ title: "FILTERCLUSTER function (DAX) | Microsoft Docs"
 ---
 # FILTERCLUSTER
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Returns a correlated join table over a set of groups.  
   
 ## Syntax  

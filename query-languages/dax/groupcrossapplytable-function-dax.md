@@ -4,6 +4,8 @@ title: "GROUPCROSSAPPLYTABLE function (DAX) | Microsoft Docs"
 ---
 # GROUPCROSSAPPLYTABLE
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Returns a summary table over a set of groups.  
   
 ## Syntax  

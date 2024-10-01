@@ -4,6 +4,8 @@ title: "SHADOWCLUSTER function (DAX) | Microsoft Docs"
 ---
 # SHADOWCLUSTER
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Modifies how filters are applied while evaluating a GROUPCROSSAPPLY or GROUPCROSSAPPLYTABLE function.
   
 ## Syntax  
