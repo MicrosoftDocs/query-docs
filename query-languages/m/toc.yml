@@ -53,7 +53,7 @@ items:
     - name: Standard date and time format strings
       href: standard-date-and-time-format-strings.md
     - name: Custom date and time format strings
-      href: standard-date-and-time-format-strings.md
+      href: custom-date-and-time-format-strings.md
   - name: Functions
     items:
     - name: Functions overview
