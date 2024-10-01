@@ -583,9 +583,7 @@ in
 
 ## How culture affects date and time format strings
 
-*Culture* is the standard locale that’s determined by the underlying platform where your queries are originally created. By default, your format strings use the current default culture.
-
-The current default culture can vary depending on whether you reference Power Query M on a local machine or a cloud platform. For example, if you develop Power Query M code on your local system in Power BI Desktop, the default culture is the locale settings used on your local system. If you develop Power Query M code in the Power BI service, the default culture is the locale settings used on the cloud service. The [list of Windows input locales](/windows-hardware/manufacture/desktop/default-input-locales-for-windows-language-packs#input-locales) can be used as the culture on the Windows platform. Other platforms, such as macOS, might use a different list of cultures.
+Different countries and language groups have different conventions for formatting numbers. In Power Query, *culture* refers to the locale whose conventions are used to format numbers in Power Query M.
 
 The culture is set to the system locale (Windows, MacOS) when your queries are first authored. If you move your query to a different location that uses a different default culture, your query still uses the culture of the original location.
 
