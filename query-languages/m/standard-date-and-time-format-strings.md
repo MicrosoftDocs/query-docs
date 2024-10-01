@@ -156,7 +156,6 @@ This group includes the following formats:
 - [The RFC1123 ("R", "r") format specifier](#the-rfc1123-r-r-format-specifier)
 - [The sortable ("s") format specifier](#the-sortable-s-format-specifier)
 - [The universal sortable ("u") format specifier](#the-universal-sortable-u-format-specifier)
-- [The universal full ("U") format specifier](#the-universal-full-u-format-specifier)
 
 <a name="FullDateShortTime"></a>
 
@@ -438,7 +437,7 @@ in
 
 The "u" standard format specifier represents a custom date and time format string that is always the same, regardless of the culture used or the format provider supplied. The custom format string is "yyyy'-'MM'-'dd HH':'mm':'ss'Z'".  The pattern reflects a defined standard, and the property is read-only. When this standard format specifier is used, the formatting or parsing operation always uses the invariant culture.
 
-Although the result string should express a time as Coordinated Universal Time (UTC), no conversion of the original **DateTimeZone** value is performed during the formatting operation. Therefore, you must convert a **DateTimeZone** value to UTC by calling the [DateTimeZone.ToUtc](datetimeformat-toutc.md) function before formatting it.
+Although the result string should express a time as Coordinated Universal Time (UTC), no conversion of the original **DateTimeZone** value is performed during the formatting operation. Therefore, you must convert a **DateTimeZone** value to UTC by calling the [DateTimeZone.ToUtc](datetimezone-toutc.md) function before formatting it.
 
 The following example uses the "u" format specifier to display a date and time value.
 

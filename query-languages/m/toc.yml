@@ -48,6 +48,12 @@ items:
     href: metadata.md
   - name: Errors
     href: errors.md
+  - name: Format strings
+    items:
+    - name: Standard date and time format strings
+      href: standard-date-and-time-format-strings.md
+    - name: Custom date and time format strings
+      href: standard-date-and-time-format-strings.md
   - name: Functions
     items:
     - name: Functions overview

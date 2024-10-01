@@ -998,7 +998,7 @@ With **DateTimeZone** values, the "z" custom format specifier represents the sig
 The following table shows how the offset value changes depending on the **DateTimeZone** function.
 
 | DateTimeZone value | Offset value |
-| - | - |
+| --- | --- |
 | [DateTimeZone.LocalNow](datetimezone-localnow.md) | On Power Query Desktop, the signed offset of the local operating system's time zone from UTC. On Power Query Online, returns `+00. |
 | [DateTimeZone.UtcNow](datetimezone-utcnow.md) | Returns `+0`. |
 
@@ -1039,7 +1039,7 @@ With **DateTimeZone** values, the "zz" custom format specifier represents the si
 The following table shows how the offset value changes depending on the **DateTimeZone** function.
 
 | DateTimeZone value | Offset value |
-| - | - |
+| --- | --- |
 | [DateTimeZone.LocalNow](datetimezone-localnow.md) | On Power Query Desktop, the signed offset of the local operating system's time zone from UTC. On Power Query Online, returns `+00. |
 | [DateTimeZone.UtcNow](datetimezone-utcnow.md) | Returns `+00`. |
 
@@ -1078,7 +1078,7 @@ With **DateTimeZone** values, the "zzz" custom format specifier represents the s
 The following table shows how the offset value changes depending on the **DateTimeZone** function.
 
 | DateTimeZoneValue value | Offset value |
-| - | - |
+| --- | --- |
 | [DateTimeZone.LocalNow](datetimezone-localnow.md) | On Power Query Desktop, the signed offset of the local operating system's time zone from UTC. On Power Query Online, returns `+00.|
 | [DateTimeZone.UtcNow](datetimezone-utcnow.md) | Returns `+00:00`. |
 
@@ -1228,7 +1228,7 @@ There are two ways to indicate that characters are to be interpreted as literal 
 
 ### How culture affects date and time format strings
 
-For information on how culture affects numeric format strings, go to [How culture affects date and time format strings](standard-numeric-format-strings.md#how-culture-affects-date-and-time-format-strings).
+For information on how culture affects numeric format strings, go to [How culture affects date and time format strings](standard-date-and-time-format-strings.md#how-culture-affects-date-and-time-format-strings).
 
 ### Using single custom format specifiers
 
