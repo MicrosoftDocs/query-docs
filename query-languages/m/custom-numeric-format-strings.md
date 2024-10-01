@@ -13,7 +13,7 @@ You can create a custom numeric format string, which consists of one or more cus
 |Format specifier|Name|Description|Examples|
 |----------------------|----------|-----------------|--------------|
 |"0"|Zero placeholder|Replaces the zero with the corresponding digit if one is present; otherwise, zero appears in the result string.<br /><br /> More information: [The "0" Custom Specifier](#Specifier0).|1234.5678 ("00000") -> 01235<br /><br /> 0.45678 ("0.00", en-US) -> 0.46<br /><br /> 0.45678 ("0.00", fr-FR) -> 0,46|
-|"#"|Digit placeholder|Replaces the "#" symbol with the corresponding digit if one is present; otherwise, no digit appears in the result string.<br /><br /> Note that no digit appears in the result string if the corresponding digit in the input string is a non-significant 0. For example, 0003 ("####") -> 3.<br /><br /> More information: [The "#" Custom Specifier](#SpecifierD).|1234.5678 ("#####") -> 1235<br /><br /> 0.45678 ("#.##", en-US) -> .46<br /><br /> 0.45678 ("#.##", fr-FR) -> ,46|
+|"#"|Digit placeholder|Replaces the "#" symbol with the corresponding digit if one is present; otherwise, no digit appears in the result string.<br /><br /> No digit appears in the result string if the corresponding digit in the input string is a nonsignificant 0. For example, 0003 ("####") -> 3.<br /><br /> More information: [The "#" Custom Specifier](#SpecifierD).|1234.5678 ("#####") -> 1235<br /><br /> 0.45678 ("#.##", en-US) -> .46<br /><br /> 0.45678 ("#.##", fr-FR) -> ,46|
 |"."|Decimal point|Determines the location of the decimal separator in the result string.<br /><br /> More information: [The "." Custom Specifier](#SpecifierPt).|0.45678 ("0.00", en-US) -> 0.46<br /><br /> 0.45678 ("0.00", fr-FR) -> 0,46|
 |","|Group separator and number scaling|Serves as both a group separator and a number scaling specifier. As a group separator, it inserts a localized group separator character between each group. As a number scaling specifier, it divides a number by 1000 for each comma specified.<br /><br /> More information: [The "," Custom Specifier](#SpecifierTh).|Group separator specifier:<br /><br /> 2147483647 ("##,#", en-US) -> 2,147,483,647<br /><br /> 2147483647 ("##,#", es-ES) -> 2.147.483.647<br /><br /> Scaling specifier:<br /><br /> 2147483647 ("#,#,,", en-US) -> 2,147<br /><br /> 2147483647 ("#,#,,", es-ES) -> 2.147|
 |"%"|Percentage placeholder|Multiplies a number by 100 and inserts a localized percentage symbol in the result string.<br /><br /> More information: [The "%" Custom Specifier](#SpecifierPct).|0.3697 ("%#0.00", en-US) -> %36.97<br /><br /> 0.3697 ("%#0.00", el-GR) -> %36,97<br /><br /> 0.3697 ("##.0 %", en-US) -> 37.0 %<br /><br /> 0.3697 ("##.0 %", el-GR) -> 37,0 %|
@@ -82,7 +82,7 @@ in
 
 The "#" custom format specifier serves as a digit-placeholder symbol. If the value that is being formatted has a digit in the position where the "#" symbol appears in the format string, that digit is copied to the result string. Otherwise, nothing is stored in that position in the result string.
 
-Note that this specifier never displays a zero that is not a significant digit, even if zero is the only digit in the string. It will display zero only if it is a significant digit in the number that is being displayed.
+Note that this specifier never displays a zero that isn't a significant digit, even if zero is the only digit in the string. It displays zero only if it's a significant digit in the number that is being displayed.
 
 The "##" format string causes the value to be rounded to the nearest digit preceding the decimal, where rounding away from zero is always used. For example, formatting 34.5 with "##" would result in the value 35.
 
@@ -132,7 +132,7 @@ in
 
 The "." custom format specifier inserts a localized decimal separator into the result string. The first period in the format string determines the location of the decimal separator in the formatted value; any additional periods are ignored. If the format specifier ends with a "." only the significant digits are formatted into the result string.
 
-The character that is used as the decimal separator in the result string is not always a period; it is determined by the culture that controls formatting.
+The character that is used as the decimal separator in the result string isn't always a period; it's determined by the culture that controls formatting.
 
 The following example uses the "." format specifier to define the location of the decimal point in several result strings.
 
@@ -216,7 +216,7 @@ in
 
 ## The "%" custom specifier
 
-A percent sign (%) in a format string causes a number to be multiplied by 100 before it is formatted. The localized percent symbol is inserted in the number at the location where the % appears in the format string. The percent character used is defined by the culture.
+A percent sign (%) in a format string causes a number to be multiplied by 100 before it's formatted. The localized percent symbol is inserted in the number at the location where the % appears in the format string. The percent character used is defined by the culture.
 
 The following example defines a custom format string that includes the "%" custom specifier.
 
@@ -234,7 +234,7 @@ in
 
 ## The "‰" custom specifier
 
-A per mille character (‰ or \u2030) in a format string causes a number to be multiplied by 1000 before it is formatted. The appropriate per mille symbol is inserted in the returned string at the location where the ‰ symbol appears in the format string. The per mille character used is defined by the culture, which provides culture-specific formatting information.
+A per mille character (‰ or \u2030) in a format string causes a number to be multiplied by 1000 before it's formatted. The appropriate per mille symbol is inserted in the returned string at the location where the ‰ symbol appears in the format string. The per mille character used is defined by the culture, which provides culture-specific formatting information.
 
 The following example defines a custom format string that includes the "‰" custom specifier.
 
@@ -279,7 +279,7 @@ in
 
 ## Escape characters
 
-The "#", "0", ".", ",", "%", and "‰" symbols in a format string are interpreted as format specifiers rather than as literal characters. Depending on their position in a custom format string, the uppercase and lowercase "E" as well as the + and - symbols may also be interpreted as format specifiers.
+The "#", "0", ".", ",", "%", and "‰" symbols in a format string are interpreted as format specifiers rather than as literal characters. Depending on their position in a custom format string, the uppercase and lowercase "E" as well as the + and - symbols can also be interpreted as format specifiers.
 
 To prevent a character from being interpreted as a format specifier, you can:
 
@@ -287,11 +287,11 @@ To prevent a character from being interpreted as a format specifier, you can:
 - Surround it with a single quote.
 - Surround it with two double quotes.
 
-Each of these act as escape characters. The escape character signifies that the following character is a character literal that should be included in the result string unchanged.
+Each of these characters acts as escape characters. The escape character signifies that the following character is a character literal that should be included in the result string unchanged.
 
 To include a backslash in a result string, you must escape it with another backslash (`\\`).
 
-To include a single quote in a result string, you must escape it with a backslash (`\'`). If the single quote was preceded by another single quote that wasn't escaped, the backslash is displayed (`'\'` displays `\`).
+To include a single quote in a result string, you must escape it with a backslash (`\'`). If another single quote that isn't escaped precedes the escaped single quote, the backslash is displayed instead (`'\'` displays `\`).
 
 To include a double quote in a result string, you must escape two of them with a backslash (`\""`).
 
@@ -375,7 +375,7 @@ Format specifiers that appear in a custom numeric format string are always inter
 - [,](#SpecifierTh)
 - [E or e](#SpecifierExponent), depending on its position in the format string.
 
-All other characters are always interpreted as character literals and, in a formatting operation, are included in the result string unchanged.  In a parsing operation, they must match the characters in the input string exactly; the comparison is case-sensitive.
+All other characters are always interpreted as character literals and, in a formatting operation, are included in the result string unchanged. In a parsing operation, they must match the characters in the input string exactly; the comparison is case-sensitive.
 
 The following example illustrates one common use of literal character units (in this case, thousands):
 
