@@ -19,7 +19,7 @@ You can create a custom numeric format string, which consists of one or more cus
 |"%"|Percentage placeholder|Multiplies a number by 100 and inserts a localized percentage symbol in the result string.<br /><br /> More information: [The "%" Custom Specifier](#SpecifierPct).|0.3697 ("%#0.00", en-US) -> %36.97<br /><br /> 0.3697 ("%#0.00", el-GR) -> %36,97<br /><br /> 0.3697 ("##.0 %", en-US) -> 37.0 %<br /><br /> 0.3697 ("##.0 %", el-GR) -> 37,0 %|
 |"‰"|Per mille placeholder|Multiplies a number by 1000 and inserts a localized per mille symbol in the result string.<br /><br /> More information: [The "‰" Custom Specifier](#SpecifierPerMille).|0.03697 ("#0.00‰", en-US) -> 36.97‰<br /><br /> 0.03697 ("#0.00‰", ru-RU) -> 36,97‰|
 |"E0"<br /><br /> "E+0"<br /><br /> "E-0"<br /><br /> "e0"<br /><br /> "e+0"<br /><br /> "e-0"|Exponential notation|If followed by at least one 0 (zero), formats the result using exponential notation. The case of "E" or "e" indicates the case of the exponent symbol in the result string. The number of zeros following the "E" or "e" character determines the minimum number of digits in the exponent. A plus sign (+) indicates that a sign character always precedes the exponent. A minus sign (-) indicates that a sign character precedes only negative exponents.<br /><br /> More information: [The "E" and "e" Custom Specifiers](#SpecifierExponent).|987654 ("#0.0e0") -> 98.8e4<br /><br /> 1503.92311 ("0.0##e+00") -> 1.504e+03<br /><br /> 1.8901385E-16 ("0.0e+00") -> 1.9e-16|
-|"\\"|Escape character|Causes the next character to be interpreted as a literal rather than as a custom format specifier.<br /><br /> More information: [The "\\" Escape Character](#SpecifierEscape).|987654 ("\\###00\\#") -> #987654#|
+|"\\", "''", """"|Escape characters|Causes the next character or characters to be interpreted as a literal rather than as a custom format specifier.<br /><br /> More information: [Escape characters](#SpecifierEscape).|987654 ("\\###00\\#") -> #987654#<br /><br />987654 ("'#'##00'#'") -> #987654#<br /><br />987654 ("""#""##00""#""") -> #987654#|
 |'*string*'<br /><br /> "*string*"|Literal string delimiter|Indicates that the enclosed characters should be copied to the result string unchanged.<br/><br/>More information: [Character literals](#character-literals).|68 ("# 'degrees'") -> 68 degrees<br /><br /> 68 ("#' degrees'") -> 68 degrees|
 |;|Section separator|Defines sections with separate format strings for positive, negative, and zero numbers.<br /><br /> More information: [The ";" Section Separator](#SectionSeparator).|12.345 ("#0.0#;(#0.0#);-\0-") -> 12.35<br /><br /> 0 ("#0.0#;(#0.0#);-\0-") -> -0-<br /><br /> -12.345 ("#0.0#;(#0.0#);-\0-") -> (12.35)<br /><br /> 12.345 ("#0.0#;(#0.0#)") -> 12.35<br /><br /> 0 ("#0.0#;(#0.0#)") -> 0.0<br /><br /> -12.345 ("#0.0#;(#0.0#)") -> (12.35)|
 |Other|All other characters|The character is copied to the result string unchanged.<br/><br/>More information: [Character literals](#character-literals).|68 ("# °") -> 68 °|
@@ -72,7 +72,7 @@ in
 ```
 
 > [!NOTE]
-> The blank text ("") in the last parameter of **Number.ToText** in the previous sample refers to the invariant culture.
+> The blank text value ("") in the last parameter of [Number.ToText](number-totext.md) in the previous sample refers to the invariant culture.
 
 [Back to table](#table)
 
@@ -277,7 +277,7 @@ in
 
 <a name="SpecifierEscape"></a>
 
-## The escape character
+## Escape characters
 
 The "#", "0", ".", ",", "%", and "‰" symbols in a format string are interpreted as format specifiers rather than as literal characters. Depending on their position in a custom format string, the uppercase and lowercase "E" as well as the + and - symbols may also be interpreted as format specifiers.
 
@@ -291,7 +291,11 @@ Each of these act as escape characters. The escape character signifies that the 
 
 To include a backslash in a result string, you must escape it with another backslash (`\\`).
 
-The following example uses the escape character to prevent the formatting operation from interpreting the "#", "0", and "\" characters as either escape characters or format specifiers.
+To include a single quote in a result string, you must escape it with a backslash (`\'`). If the single quote was preceded by another single quote that wasn't escaped, the backslash is displayed (`'\'` displays `\`).
+
+To include a double quote in a result string, you must escape two of them with a backslash (`\""`).
+
+The following example uses escape characters to prevent the formatting operation from interpreting the "#", "0", and "\" characters as either escape characters or format specifiers.
 
 ```powerquery-m
 let
@@ -366,6 +370,7 @@ Format specifiers that appear in a custom numeric format string are always inter
 - [‰](#SpecifierPerMille)
 - '
 - [\\](#SpecifierEscape)
+- [\""](#SpecifierEscape)
 - [.](#SpecifierPt)
 - [,](#SpecifierTh)
 - [E or e](#SpecifierExponent), depending on its position in the format string.
@@ -384,7 +389,7 @@ in
 
 There are two ways to indicate that characters are to be interpreted as literal characters and not as formatting characters, so that they can be included in a result string or successfully parsed in an input string:
 
-- By escaping a formatting character. For more information, go to [The escape character](#SpecifierEscape).
+- By escaping a formatting character. For more information, go to [Escape characters](#SpecifierEscape).
 
 - By enclosing the entire literal string in quotation apostrophes.
 
@@ -406,8 +411,14 @@ let
         Number.ToText(9.3, "##.0'%'"),
         // Displays 9.3%
 
-        Number.ToText(9.3, "'\'##'\'")
+        Number.ToText(9.3, "'\'##'\'"),
         // Displays \9\
+
+        Number.ToText(9.3, "##.0""%"""),
+        // Displays 9.3%
+
+        Number.ToText(9.3, "\""##\""")
+        // Displays "9"
     }
 in
     Source

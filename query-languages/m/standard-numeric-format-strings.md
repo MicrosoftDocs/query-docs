@@ -166,7 +166,7 @@ in
 ```
 
 > [!NOTE]
-> The blank text ("") in the last parameter of **Number.ToText** in the previous sample refers to the invariant culture.
+> The blank text value ("") in the last parameter of [Number.ToText](number-totext.md) in the previous sample refers to the invariant culture.
 
 <a name="FFormatString"></a>
 
