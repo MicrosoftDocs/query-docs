@@ -55,7 +55,7 @@ items:
     - name: Custom date and time format strings
       href: custom-date-and-time-format-strings.md
     - name: How culture affects text formatting
-      href: how-culture-affects-text-formatting
+      href: how-culture-affects-text-formatting.md
   - name: Functions
     items:
     - name: Functions overview
