@@ -48,6 +48,12 @@ items:
     href: metadata.md
   - name: Errors
     href: errors.md
+  - name: Format numbers
+    items:
+    - name: Standard numeric format strings
+      href: standard-numeric-format-strings.md
+    - name: Custom numeric format strings
+      href: custom-numeric-format-strings.md
   - name: Functions
     items:
     - name: Functions overview
