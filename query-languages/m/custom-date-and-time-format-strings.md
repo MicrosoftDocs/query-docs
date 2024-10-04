@@ -1226,10 +1226,6 @@ There are two ways to indicate that characters are to be interpreted as literal 
 
 ## Notes
 
-### How culture affects date and time format strings
-
-For information on how culture affects numeric format strings, go to [How culture affects date and time format strings](standard-date-and-time-format-strings.md#how-culture-affects-date-and-time-format-strings).
-
 ### Using single custom format specifiers
 
 A custom date and time format string consists of two or more characters. Date and time formatting methods interpret any single-character string as a standard date and time format string. If they don't recognize the character as a valid format specifier, they throw an expression error. For example, a format string that consists only of the specifier "h" is interpreted as a standard date and time format string. However, in this particular case, an exception is thrown because there is no "h" standard date and time format specifier.
@@ -1296,6 +1292,7 @@ in
 
 ## Related content
 
+- [How culture affects text formatting](how-culture-affects-text-formatting.md)
 - [Date, Time, DateTime, and DateTimeZone type conversion](type-conversion.md#date-time-datetime-and-datetimezone)
 - [Date functions](date-functions.md)
 - [DateTime functions](datetime-functions.md)

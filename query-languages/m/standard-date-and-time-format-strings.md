@@ -579,27 +579,9 @@ in
 
 [Back to table](#table)
 
-<a name="Notes"></a>
+## Related content
 
-## How culture affects date and time format strings
-
-Different countries and language groups have different conventions for formatting numbers. In Power Query, *culture* refers to the locale whose conventions are used to format numbers in Power Query M.
-
-The culture is set to the system locale (Windows, MacOS) when your queries are first authored. If you move your query to a different location that uses a different default culture, your query still uses the culture of the original location.
-
-However, you can change the default culture in the Power Query settings dialog where you create the query. For example, if you are running Power Query from Excel:
-
-1. In Power Query, select **File** > **Options and settings** > **Query options**.
-1. Under **Current Workbook, select **Regional Settings**.
-1. Select the locale you want to use.
-
-Other versions of Power Query work similarly. In general, within Power Query you select **Options**, which opens the **Options** dialog. Then select **Regional Settings** and select the locale you want to use.
-
-> [!NOTE]
-> The current default culture is different than the invariant culture. To use the current default culture, no culture setting is required. To use the invariant culture, you use `Culture = ""` in the functions that support culture.
-
-## See also
-
+- [How culture affects text formatting](how-culture-affects-text-formatting.md)
 - [Date, Time, DateTime, and DateTimeZone type conversion](type-conversion.md#date-time-datetime-and-datetimezone)
 - [Date functions](date-functions.md)
 - [DateTime functions](datetime-functions.md)

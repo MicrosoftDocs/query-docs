@@ -48,12 +48,14 @@ items:
     href: metadata.md
   - name: Errors
     href: errors.md
-  - name: Format strings
+  - name: Text formatting
     items:
     - name: Standard date and time format strings
       href: standard-date-and-time-format-strings.md
     - name: Custom date and time format strings
       href: custom-date-and-time-format-strings.md
+    - name: How culture affects text formatting
+      href: how-culture-affects-text-formatting
   - name: Functions
     items:
     - name: Functions overview
