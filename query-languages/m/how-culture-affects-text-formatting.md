@@ -3,17 +3,17 @@ title: How culture affects text formatting
 description: Learn about how culture is related to the locale in which queries are authored and how you can change the default culture.
 author: DougKlopfenstein
 ms-author: dougklo
-ms.date: 10/4/2024
+ms.date: 10/7/2024
 ms.topic: reference
 ---
 
 # How culture affects text formatting
 
-Different countries and language groups have different conventions for formatting different kinds of text, such as numbers, dates, and time. In Power Query, *culture* refers to the locale whose conventions are used to format this type of text in Power Query M.
+Different countries and language groups have different conventions for formatting different kinds of text, such as numbers, dates, and time. In Power Query, *culture* refers to the locale whose conventions are used to format this type of text in Power Query M. This locale is generally composed of the language and the country where the language is spoken, for example "en-US" for the English language spoken in the United States of America.
 
 ## Default culture
 
-The default culture is set to the system locale (Windows, MacOS) when your queries are first authored. For example, if you author your queries in Power Query Desktop, the default culture is defined by the locale set on your local computer. However, if you author your queries in the Power Query Online, the default culture is defined by the locale set on the online service. No matter where you author your query, if you move your query to a different location that uses a different default culture, your query still uses the culture of the original location.
+The default culture is set to the system locale (Windows, MacOS) of a particular document where your queries are first authored. For example, if you author your queries in Power Query Desktop, the default culture is defined by the locale set on your local computer. However, if you author your queries in the Power Query Online, the default culture is defined by the locale set on the online service. No matter where you author your query, if you move your query to a different location that uses a different default culture, your query still uses the culture of the original location.
 
 To use the current default culture, no culture setting is required in your Power Query M code.
 
