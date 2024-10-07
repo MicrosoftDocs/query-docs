@@ -1,9 +1,9 @@
 ---
 title: "Custom date and time format strings"
-description: Learn to use custom date and time format strings to convert DateTime or DateTimeOffset values into text representations, or to parse strings for dates & times.
+description: Learn to use custom date and time format strings to convert date and time values into text representations, or to parse strings for dates and times.
 author: DougKlopfenstein
 ms.author: dougklo
-ms.date: 10/1/2024
+ms.date: 10/7/2024
 ms.topic: reference
 ---
 
@@ -1182,7 +1182,7 @@ in
 
 There are two ways to indicate that characters are to be interpreted as literal characters and not as reserve characters, so that they can be included in a result string or successfully parsed in an input string:
 
-- By escaping each reserved character. For more information, go to [Using the escape sequence](#escape).
+- By escaping each reserved character. For more information, go to [Using the escape sequences](#escape).
 
   The following example includes the literal characters "pst" (for Pacific Standard time) to represent the local time zone in a format string. Because both "s" and "t" are custom format strings, both characters must be escaped to be interpreted as character literals.
 
