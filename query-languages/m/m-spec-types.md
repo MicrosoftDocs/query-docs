@@ -2,7 +2,7 @@
 title: M Language types 
 description: Describes using types in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 1/31/2024
+ms.date: 10/7/2024
 ms.custom: "nonautomated-date"
 ---
 
@@ -131,6 +131,20 @@ Types in the M language form a disjoint hierarchy rooted at type `any`, which is
 * `type function`, which classifies function values.
 * `type anynonnull`, which classifies all values excluding null. 
 * `type none`, which classifies no values.
+
+Additional types that don't have shorthand monikers are:
+
+* `Byte.Type`, which classifies an 8-bit number value.
+* `Int8.Type`, which classifies an 8-bit number value.
+* `Int16.Type`, which classifies a 16-bit number value.
+* `Int32.Type`, which classifies a 32-bit number value.
+* `Int64.Type`, which classifies a 64-bit number value.
+* `Single.Type`, which classifies a 9-digit floating number value.
+* `Double.Type`, which classifies a 17-digit floating number value.
+* `Decimal.Type`, which classifies a 15-digit floating number value.
+* `Currency.Type`, which classifies a 19-digit number value with four digits to the right of the "." separator.
+* `Percentage.Type`, which classifies a 15-digit number value with a mask to format the value as a percentage.
+* `Guid.Type`, which classifies a GUID text value.
 
 ## Any Type
 
