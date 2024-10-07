@@ -29,3 +29,7 @@ Comparer.Equals(Comparer.Ordinal, "encyclopædia", "encyclopaedia")
 **Output**
 
 `false`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

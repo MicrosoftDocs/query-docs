@@ -14,7 +14,7 @@ Number.ToText(<b>number</b> as nullable number, optional <b>format</b> as nullab
 
 Converts the numeric value `number` to a text value according to the format specified by `format`.
 
-The format is a text value indicating how the number should be converted. For more details on the supported format values, go to [https://go.microsoft.com/fwlink/?linkid=2241210](https://go.microsoft.com/fwlink/?linkid=2241210) and [https://go.microsoft.com/fwlink/?linkid=2240884](https://go.microsoft.com/fwlink/?linkid=2240884).
+The format is a text value indicating how the number should be converted. For more details on the supported format values, go to [Standard numeric format strings](standard-numeric-format-strings.md) and [Custom numeric format strings](custom-numeric-format-strings.md).
 
 An optional `culture` may also be provided (for example, "en-US") to control the culture-dependent behavior of `format`.
 
@@ -59,3 +59,9 @@ Number.ToText(-0.1234, "P1")
 **Output**
 
 `"-12.3 %"`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)
+* [Standard numeric format strings](standard-numeric-format-strings.md)
+* [Custom numeric format strings](custom-numeric-format-strings.md)

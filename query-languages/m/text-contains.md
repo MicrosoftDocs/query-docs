@@ -102,3 +102,7 @@ in
     {"PTY-507", #date(2023,6,4), 110}
 })
 ```
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

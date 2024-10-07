@@ -44,3 +44,7 @@ Date.DayOfWeek(#date(2011, 02, 21), Day.Monday)
 **Output**
 
 `0`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)
