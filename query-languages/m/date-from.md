@@ -12,7 +12,7 @@ Date.From(<b>value</b> as any, optional <b>culture</b> as nullable text) as null
   
 ## About
 
-Returns a `date` value from the given `value`. An optional `culture`> may also be provided (for example, "en-US"). If the given `value` is `null`, **Date.From** returns `null`. If the given `value` is `date`, `value` is returned. Values of the following types can be converted to a `date` value:
+Returns a `date` value from the given `value`. An optional `culture` may also be provided (for example, "en-US"). If the given `value` is `null`, **Date.From** returns `null`. If the given `value` is `date`, `value` is returned. Values of the following types can be converted to a `date` value:
 
 * `text`: A `date` value from textual representation. Refer to [Date.FromText](date-fromtext.md) for details.
 * `datetime`: The date component of the `value`.
@@ -48,3 +48,9 @@ Date.From(#datetime(1899, 12, 30, 06, 45, 12))
 **Output**
 
 `#date(1899, 12, 30)`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)
+* [Standard date and time format strings](standard-date-and-time-format-strings.md)
+* [Custom date and time format strings](custom-date-and-time-format-strings.md)

@@ -27,3 +27,7 @@ Single.From("1.5")
 **Output**
 
 `1.5`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

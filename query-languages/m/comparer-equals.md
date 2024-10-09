@@ -35,3 +35,7 @@ Comparer.Equals(Comparer.FromCulture("en-US"), "1", "A")
 **Output**
 
 `false`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

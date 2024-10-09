@@ -14,7 +14,7 @@ DateTime.FromText(<b>text</b> as nullable text, optional <b>options</b> as any) 
 
 Creates a `datetime` value from a textual representation, `text`. An optional `record` parameter, `options`, may be provided to specify additional properties. The `record` can contain the following fields:
 
-* `Format`: A `text` value indicating the format to use. For more details, go to https://go.microsoft.com/fwlink/?linkid=2180104 and https://go.microsoft.com/fwlink/?linkid=2180105. Omitting this field or providing `null` will result in parsing the date using a best effort.
+* `Format`: A `text` value indicating the format to use. For more details, go to [Standard date and time format strings](standard-date-and-time-format-strings.md) and [Custom date and time format strings](custom-date-and-time-format-strings.md). Omitting this field or providing `null` will result in parsing the date using a best effort.
 
 * `Culture`: When `Format` is not null, `Culture` controls some format specifiers. For example, in `"en-US"` `"MMM"` is `"Jan", "Feb", "Mar", ...`, while in `"ru-RU"` `"MMM"` is `"янв", "фев", "мар", ...`. When `Format` is `null`, `Culture` controls the default format to use. When `Culture` is `null` or omitted, [Culture.Current](culture-current.md) is used.
 
@@ -75,3 +75,9 @@ DateTime.FromText("20101231T013000", [Format="yyyyMMdd'T'HHmmss", Culture="en-US
 **Output**
 
 `#datetime(2010, 12, 31, 1, 30, 0)`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)
+* [Standard date and time format strings](standard-date-and-time-format-strings.md)
+* [Custom date and time format strings](custom-date-and-time-format-strings.md)
