@@ -21,3 +21,7 @@ Returns a table of multidimensional cubes or tabular models from the Analysis Se
 * `ConnectionTimeout`: A duration that controls how long to wait before abandoning an attempt to make a connection to the server. The default value is driver-dependent.
 * `SubQueries`: A number (0, 1 or 2) that sets the value of the "SubQueries" property in the connection string. This controls the behavior of calculated members on subselects or subcubes. (The default value is 2).
 * `Implementation`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

@@ -16,7 +16,7 @@ Returns a comparer function that uses the `culture` and the case-sensitivity spe
 
 A comparer function accepts two arguments and returns -1, 0, or 1 based on whether the first value is less than, equal to, or greater than the second.
 
-The default value for `ignoreCase` is false. The `culture` should be one of the locales supported by the .NET framework (for example, "en-US").
+The default value for `ignoreCase` is false. The `culture` should be one of the locales supported by the operating system (for example, "en-US").
 
 ## Example 1
 

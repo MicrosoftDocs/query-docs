@@ -355,23 +355,6 @@ in
 
 This section contains additional information about using standard numeric format strings.
 
-### How culture affects numeric format strings
-
-Different countries and language groups have different conventions for formatting numbers. In Power Query, *culture* refers to the locale whose conventions are used to format numbers in Power Query M.
-
-The culture is set to the system locale (Windows, MacOS) when your queries are first authored. If you move your query to a different location that uses a different default culture, your query still uses the culture of the original location.
-
-However, you can change the default culture in the Power Query settings dialog where you create the query. For example, if you are running Power Query from Excel:
-
-1. In Power Query, select **File** > **Options and settings** > **Query options**.
-1. Under **Current Workbook**, select **Regional Settings**.
-1. Select the locale you want to use.
-
-Other versions of Power Query work similarly. In general, within Power Query you select **Options**, which opens the **Options** dialog. Then select **Regional Settings** and select the locale you want to use.
-
-> [!NOTE]
-> The current default culture is different than the invariant culture. To use the current default culture, no culture setting is required in your Power Query M code. To use the invariant culture, you use the blank text value ("") in the number functions that support culture.
-
 ### Integral and floating-point numeric types
 
 Some descriptions of standard numeric format specifiers refer to integral or floating-point numeric types. The integral numeric types are `Byte.Type`, `Int8.Type`, `Int16.Type`, `Int32.Type`, and`Int64.Type`. The floating-point numeric types are `Decimal.Type`, `Single.Type`, and `Double.Type`.
@@ -422,6 +405,7 @@ in
 
 ## Related content
 
+- [How culture affects text formatting](how-culture-affects-text-formatting.md)
 - [Number type conversion](type-conversion.md#number)
 - [Data Types in Power Query](/power-query/data-types)
 - [Custom Numeric Format Strings](custom-numeric-format-strings.md)

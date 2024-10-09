@@ -55,3 +55,7 @@ Table.TransformColumnNames(
 **Output**
 
 `Table.FromRecords({[Column = 1, cOlum1 = 2, coLum2 = 3]})`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

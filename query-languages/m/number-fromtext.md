@@ -44,3 +44,9 @@ Number.FromText("5.0e-10")
 **Output**
 
 `5E-10`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)
+* [Standard numeric format strings](standard-numeric-format-strings.md)
+* [Custom numeric format strings](custom-numeric-format-strings.md)

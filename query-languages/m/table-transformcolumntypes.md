@@ -39,3 +39,7 @@ Table.FromRecords({
     [a = "3", b = 4]
 })
 ```
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)
