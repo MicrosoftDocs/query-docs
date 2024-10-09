@@ -27,3 +27,7 @@ Percentage.From("12.3%")
 **Output**
 
 `0.123`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

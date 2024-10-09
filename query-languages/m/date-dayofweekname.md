@@ -28,3 +28,7 @@ Date.DayOfWeekName(#date(2011, 12, 31), "en-US")
 **Output**
 
 `"Saturday"`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

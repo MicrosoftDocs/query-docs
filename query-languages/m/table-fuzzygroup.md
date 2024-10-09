@@ -57,3 +57,7 @@ Table.FromRecords({
     [Location = "Vancouver", Count = 3]
 })
 ```
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

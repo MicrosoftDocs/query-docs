@@ -27,3 +27,11 @@ Text.From(3)
 **Output**
 
 `"3"`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)
+* [Standard numeric format strings](standard-numeric-format-strings.md)
+* [Custom numeric format strings](custom-numeric-format-strings.md)
+* [Standard date and time format strings](standard-date-and-time-format-strings.md)
+* [Custom date and time format strings](custom-date-and-time-format-strings.md)

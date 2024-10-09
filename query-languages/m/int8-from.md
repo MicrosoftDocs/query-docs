@@ -41,3 +41,7 @@ Int8.From("4.5", null, RoundingMode.AwayFromZero)
 **Output**
 
 `5`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)
