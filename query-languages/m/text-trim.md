@@ -15,7 +15,7 @@ Text.Trim(<b>text</b> as nullable text, optional <b>trim</b> as any) as nullable
 Returns the result of removing all leading and trailing characters from the specified `text`. By default, all the leading and trailing whitespace characters are removed.
 
 * `text`: The text from which the leading and trailing characters are to be removed.
-* `trim`" Overrides the whitespace characters that are trimmed by default. This parameter can either be a single character or a list of single characters. Each leading and trailing trim operation stops when a non-trimmed character is encountered.
+* `trim`: Overrides the whitespace characters that are trimmed by default. This parameter can either be a single character or a list of single characters. Each leading and trailing trim operation stops when a non-trimmed character is encountered.
 
 ## Example 1
 
