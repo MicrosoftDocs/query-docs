@@ -44,7 +44,7 @@ Date.ToText(#date(2023, 12, 26), [Format="dd MMM yyyy", Culture="de-DE"])
 
 **Output**
 
-`26 Dez 2023`
+`"26 Dez 2023"`
 
 ## Example 3
 

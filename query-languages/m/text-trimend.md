@@ -15,7 +15,7 @@ Text.TrimEnd(<b>text</b> as nullable text, optional <b>trim</b> as any) as nulla
 Returns the result of removing all trailing characters from the specified `text`. By default, all the trailing whitespace characters are removed.
 
 * `text`: The text from which the trailing characters are to be removed.
-* `trim`" Overrides the whitespace characters that are trimmed by default. This parameter can either be a single character or a list of single characters. Each trailing trim operation stops when a non-trimmed character is encountered.
+* `trim`: Overrides the whitespace characters that are trimmed by default. This parameter can either be a single character or a list of single characters. Each trailing trim operation stops when a non-trimmed character is encountered.
 
 ## Example 1
 
@@ -61,7 +61,7 @@ let
         {"Leslie", "FR-4648****@**", 3.8392},
         {"Ringo", "DE-2046790@***", 12.6600}
     }),
-    #"Trimmed Account" = Table.TransformColumns(Source, {{"Account Name", each Text.TrimEnd(_, {"*", "@"})}})
+    #"Trimmed Account" = Table.TransformColumns(Source, {"Account Name", each Text.TrimEnd(_, {"*", "@"})})
 in
     #"Trimmed Account"
 ```

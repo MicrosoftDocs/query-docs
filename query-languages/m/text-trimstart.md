@@ -15,7 +15,7 @@ Text.TrimStart(<b>text</b> as nullable text, optional <b>trim</b> as any) as nul
 Returns the result of removing all leadling characters from the specified `text`. By default, all the leading whitespace characters are removed.
 
 * `text`: The text from which the leading characters are to be removed.
-* `trim`" Overrides the whitespace characters that are trimmed by default. This parameter can either be a single character or a list of single characters. Each leading trim operation stops when a non-trimmed character is encountered.
+* `trim`: Overrides the whitespace characters that are trimmed by default. This parameter can either be a single character or a list of single characters. Each leading trim operation stops when a non-trimmed character is encountered.
 
 ## Example 1
 
@@ -61,7 +61,7 @@ let
         {"Leslie", "@******4648-FR", 3.8392},
         {"Ringo", "@*****24679-DE", 12.6600}
     }),
-    #"Trimmed Account" = Table.TransformColumns(Source, {{"Account Name", each Text.TrimStart(_, {"*", "@"})}})
+    #"Trimmed Account" = Table.TransformColumns(Source, {"Account Name", each Text.TrimStart(_, {"*", "@"})})
 in
     #"Trimmed Account"
 ```
