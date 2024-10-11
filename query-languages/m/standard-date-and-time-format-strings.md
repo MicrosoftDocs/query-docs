@@ -3,7 +3,7 @@ title: "Standard date and time format strings"
 description: Learn how to use a standard date and time format string to define the text representation of a date and time value in Power Query M.
 author: DougKlopfenstein
 ms-author: dougklo
-ms.date: 10/7/2024
+ms.date: 10/11/2024
 ms.topic: reference
 ---
 # Standard date and time format strings
@@ -23,9 +23,9 @@ A standard date and time format string uses a single character as the format spe
 |"g"|General date/time pattern (short time).<br /><br /> More information: [The general date short time ("g") format specifier](#GeneralDateShortTime).|2009-06-15T13:45:30 -> 6/15/2009 1:45 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 15/06/2009 13:45 (es-ES)<br /><br /> 2009-06-15T13:45:30 -> 2009/6/15 13:45 (zh-CN)|
 |"G"|General date/time pattern (long time).<br /><br /> More information: [The general date long time ("G") format specifier](#GeneralDateLongTime).|2009-06-15T13:45:30 -> 6/15/2009 1:45:30 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 15/06/2009 13:45:30 (es-ES)<br /><br /> 2009-06-15T13:45:30 -> 2009/6/15 13:45:30 (zh-CN)|
 |"M", "m"|Month/day pattern.<br /><br /> More information: [The month ("M", "m") format specifier](#MonthDay).|2009-06-15T13:45:30 -> June 15 (en-US)<br /><br /> 2009-06-15T13:45:30 -> 15. juni (da-DK)<br /><br /> 2009-06-15T13:45:30 -> 15 Juni (id-ID)|
-|"O", "o"|round-trip date/time pattern.<br /><br /> More information: [The round-trip ("O", "o") format specifier](#Roundtrip).|2009-06-15T13:45:30 (DateTimeKind.Local) --> 2009-06-15T13:45:30.0000000-07:00<br /><br /> 2009-06-15T13:45:30 (DateTimeKind.Utc) --> 2009-06-15T13:45:30.0000000Z<br /><br /> 2009-06-15T13:45:30 (DateTimeKind.Unspecified) --> 2009-06-15T13:45:30.0000000|
+|"O", "o"|round-trip date/time pattern.<br /><br /> More information: [The round-trip ("O", "o") format specifier](#Roundtrip).|2009-06-15T13:45:30 (Local) --> 2009-06-15T13:45:30.0000000-07:00<br /><br /> 2009-06-15T13:45:30 (Utc) --> 2009-06-15T13:45:30.0000000+00:00<br /><br /> 2009-06-15T13:45:30 (Unspecified) --> 2009-06-15T13:45:30.0000000|
 |"R", "r"|RFC1123 pattern.<br /><br /> More information: [The RFC1123 ("R", "r") format specifier](#RFC1123).|2009-06-15T13:45:30 -> Mon, 15 Jun 2009 13:45:30 GMT |
-|"s"|Sortable date/time pattern.<br /><br /> More information: [The sortable ("s") format specifier](#Sortable).|2009-06-15T13:45:30 (DateTimeKind.Local) -> 2009-06-15T13:45:30<br /><br /> 2009-06-15T13:45:30 (DateTimeKind.Utc) -> 2009-06-15T13:45:30|
+|"s"|Sortable date/time pattern.<br /><br /> More information: [The sortable ("s") format specifier](#Sortable).|2009-06-15T13:45:30 (Local) -> 2009-06-15T13:45:30<br /><br /> 2009-06-15T13:45:30 (Utc) -> 2009-06-15T13:45:30|
 |"t"|Short time pattern.<br /><br /> More information: [The short time ("t") format specifier](#ShortTime).|2009-06-15T13:45:30 -> 1:45 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 13:45 (hr-HR)<br /><br /> 2009-06-15T13:45:30 -> 01:45 م (ar-EG)|
 |"T"|Long time pattern.<br /><br /> More information: [The long time ("T") format specifier](#LongTime).|2009-06-15T13:45:30 -> 1:45:30 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 13:45:30 (hr-HR)<br /><br /> 2009-06-15T13:45:30 -> 01:45:30 م (ar-EG)|
 |"u"|Universal sortable date/time pattern.<br /><br /> More information: [The universal sortable ("u") format specifier](#UniversalSortable).|2009-06-15T13:45:30 -> 2009-06-15 13:45:30Z|
@@ -278,7 +278,7 @@ The "O" or "o" standard format specifier represents a custom date and time forma
 
 The "O" or "o" standard format specifier corresponds to the "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'fffffffxxx" custom format string for **DateTimeZone** values. In this text, the pairs of single quotation marks that delimit individual characters, such as the hyphens, the colons, and the letter "T", indicate that the individual character is a literal that can't be changed. The apostrophes don't appear in the output string.
 
-The "O" or "o" standard format specifier (and the "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'fffffffxxx"  custom format) takes advantage of the three ways that ISO 8601 represents time zone information to preserve the **DateTimeZone** values:
+The "O" or "o" standard format specifier (and the "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'fffffffxxx"  custom format) takes advantage of the ways that ISO 8601 represents time zone information to preserve the **DateTimeZone** values:
 
 - The time zone component of [DateTimeZone.ToLocal](datetimezone-tolocal.md) date and time values is an offset from UTC (for example, +01:00, -07:00).
 
