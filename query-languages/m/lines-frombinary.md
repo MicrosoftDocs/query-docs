@@ -7,7 +7,7 @@ title: "Lines.FromBinary"
 ## Syntax
 
 <pre>
-Lines.FromBinary(<b>binary</b> as binary, optional <b>quoteStyle</b> as nullable number, optional <b>includeLineSeparators</b> as nullable logical, optional <b>encoding</b> as nullable number) as list
+Lines.FromBinary(<b>binary</b> as binary, optional <b>quoteStyle</b> as any, optional <b>includeLineSeparators</b> as nullable logical, optional <b>encoding</b> as nullable number) as list
 </pre>
 
 ## About
