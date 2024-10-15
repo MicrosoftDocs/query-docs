@@ -42,11 +42,11 @@ A table with the top N rows of *Table* or an empty table if *N_Value* is 0 (zero
 
 - The parameters for TOPNSKIP cannot depend on columns from an external evaluation context, for example referring to outside columns is not allowed. The following example will return an error:
 
-        ```dax
-        DEFINE
-        VAR NValues = SELECTCOLUMNS({10, 15, 20}, "N", [Value])
-        EVALUATE GENERATE(NValues, TOPNSKIP([N], 5, DimProduct, [Size]))
-        ```
+```dax
+DEFINE
+VAR NValues = SELECTCOLUMNS({10, 15, 20}, "N", [Value])
+EVALUATE GENERATE(NValues, TOPNSKIP([N], 5, DimProduct, [Size]))
+```
 
 ## Example
 
