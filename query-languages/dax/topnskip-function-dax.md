@@ -33,10 +33,20 @@ A table with the top N rows of *Table* or an empty table if *N_Value* is 0 (zero
 - If there is a tie, in *Order_By* values, at the N-th row of the table, then all tied rows are returned. Then, when there are ties at the N-th row the function might return more than n rows.  
   
 - If N_Value is 0 (zero) or less, TOPNSKIP returns an empty table.  
-  
+
+- The Table parameter can only be DAX expressions that can be fully pushed down to the Vertipaq Engine.
+
 - TOPNSKIP does not guarantee any sort order for the results.  
 
-- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+- This function is not supported for use in DirectQuery mode, except to semantic models.
+
+- The parameters for TOPNSKIP cannot depend on columns from an external evaluation context, for example referring to outside columns is not allowed. The following example will return an error:
+
+        ```dax
+        DEFINE
+        VAR NValues = SELECTCOLUMNS({10, 15, 20}, "N", [Value])
+        EVALUATE GENERATE(NValues, TOPNSKIP([N], 5, DimProduct, [Size]))
+        ```
 
 ## Example
 
