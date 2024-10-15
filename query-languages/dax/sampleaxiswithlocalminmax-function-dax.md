@@ -37,7 +37,7 @@ SAMPLEAXISWITHLOCALMINMAX(<Size>, <Table>, <Axis>, <Measure>, [<Measure> [, ...]
 The sample from Table consisting of Size number of rows.
 
 ## Remarks
-- if the number of rows in Table are less than the specified Size, then no binning will occur and all rows will be returned.
+- If the number of rows in Table are less than the specified Size, then no binning will occur and all rows will be returned.
 - The selected bin-sizes will be less than MinResolution
 - SAMPLEAXISWITHLOCALMINMAX is used by Power BI to reduce the number of points in a line chart with a continuous (numeric) X-axis.
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
