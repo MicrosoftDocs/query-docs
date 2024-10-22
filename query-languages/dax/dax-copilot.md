@@ -2,7 +2,7 @@
 title: "Write DAX queries with Copilot | Microsoft Docs"
 description: Use Copilot to create a DAX queries query. Type in a prompt to describe what DAX query you would like generated, and Copilot can create it.
 ms.service: powerbi 
-ms.date: 03/28/2024
+ms.date: 10/21/2024
 ms.reviewer: 
 ms.topic: how-to
 author: maggiesMSFT
@@ -31,6 +31,15 @@ Check to make sure you meet the [Fabric Copilot requirements](/fabric/get-starte
 Then navigate to the **DAX query view** and select the **Copilot** button or <kbd>CTRL+I</kbd> to launch the in-line Copilot.  
 
 Let’s try some Copilot prompts, using sample data in Power BI Desktop, with some additional measures.  
+
+## Use Copilot to write and explain DAX queries
+
+With DAX query view in Power BI, you can use Copilot to write and explain DAX queries in DAX query view with Data Analysis Expressions (DAX) queries in semantic models. DAX query view comes with several ways to help you be as productive as possible with DAX queries. This feature is currently in public preview.
+
+Copilot can write and explain DAX queries in DAX query view in public preview. DAX query view includes an inline Fabric Copilot to write and explain DAX queries, which remain in public preview.
+
+> [!NOTE]
+> DirectQuery model authors can also use DAX query view. View the data in your tables whenever you want.
 
 ## Sample prompts for writing DAX queries
 
