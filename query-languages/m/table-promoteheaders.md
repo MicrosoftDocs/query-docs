@@ -55,3 +55,7 @@ Table.PromoteHeaders(
 **Output**
 
 `Table.FromRecords({[1 = 1, Name = "Bob", #"1/1/1980" = #date(1980, 1, 1)]})`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

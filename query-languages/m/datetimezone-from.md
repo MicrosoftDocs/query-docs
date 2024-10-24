@@ -35,3 +35,9 @@ DateTimeZone.From("2020-10-30T01:30:00-08:00")
 **Output**
 
 `#datetimezone(2020, 10, 30, 01, 30, 00, -8, 00)`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)
+* [Standard date and time format strings](standard-date-and-time-format-strings.md)
+* [Custom date and time format strings](custom-date-and-time-format-strings.md)

@@ -428,10 +428,6 @@ in
 
 ## Notes
 
-### How culture affects numeric format strings
-
-For information on how culture affects numeric format strings, go to [How culture affects numeric format strings](standard-numeric-format-strings.md#how-culture-affects-numeric-format-strings).
-
 ### Floating-Point infinities and NaN
 
 Regardless of the format string, if the value of a `Decimal.Type`, `Single.Type` or `Double.Type` floating-point type is positive infinity, negative infinity, or not a number (NaN), the formatted string is the value of the respective [Number.PositiveInfinity](number-positiveinfinity.md), [Number.NegativeInfinity](number-negativeinfinity.md), or [Number.NaN](number-nan.md) constants specified by the currently applicable culture.
@@ -466,6 +462,7 @@ in
 
 ## Related content
 
+- [How culture affects text formatting](how-culture-affects-text-formatting.md)
 - [Number type conversion](type-conversion.md#number)
 - [Data Types in Power Query](/power-query/data-types)
 - [Standard Numeric Format Strings](standard-numeric-format-strings.md)

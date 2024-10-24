@@ -49,3 +49,7 @@ Text.EndsWith("Hello, World", "World")
 **Output**
 
 `true`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

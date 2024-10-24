@@ -49,3 +49,7 @@ Text.PositionOf("Hello, World! Hello, World!", "World", Occurrence.Last)
 **Output**
 
 `21`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

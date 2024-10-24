@@ -67,3 +67,7 @@ Text.StartsWith("Hello, World", "hello", Comparer.OrdinalIgnoreCase)
 **Output**
 
 `true`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

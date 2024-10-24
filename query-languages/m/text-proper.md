@@ -27,3 +27,7 @@ Text.Proper("the QUICK BrOWn fOx jUmPs oVER tHe LAzy DoG")
 **Output**
 
 `"The Quick Brown Fox Jumps Over The Lazy Dog"`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

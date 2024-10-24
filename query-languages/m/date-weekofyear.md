@@ -45,3 +45,7 @@ Date.WeekOfYear(#date(2011, 03, 27), Day.Monday)
 **Output**
 
 `13`
+
+## Related content
+
+- [How culture affects text formatting](how-culture-affects-text-formatting.md)
