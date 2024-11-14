@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DateTimeZone functions"
 title: "DateTimeZone functions"
-ms.date: 5/16/2022
+ms.date: 11/13/2024
 ms.custom: "nonautomated-date"
 ---
 # DateTimeZone functions
