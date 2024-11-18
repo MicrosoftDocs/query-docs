@@ -31,17 +31,17 @@ parameter:<br/>
 parameter-name:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier<br/>
 parameter-type:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;non-custom-type-assertion<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primitive-or-nullable-primitive-type-assertion<br/>
 return-type:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;non-custom-type-assertion<br/>
-non-custom-type-assertion:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as`  _non-custom-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primitive-or-nullable-primitive-type-assertion<br/>
+primitive-or-nullable-primitive-type-assertion:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as`  _primitive-or-nullable-primitive-type<br/>
 optional-parameter-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter_  `,`  _optional-parameter-list<br/>
 optional-parameter:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional`  _parameter_<br />
-_non-custom-type:_<br/>
+_primitive-or-nullable-primitive-type:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`_<sub>opt</sub>  primitive-type_
 
 The following is an example of a function that requires exactly two values `x` and `y`, and produces the result of applying the `+` operator to those values. The `x` and `y` are _parameters_ that are part of the _parameter-list_ of the function, and the `x + y` is the _function-body_:

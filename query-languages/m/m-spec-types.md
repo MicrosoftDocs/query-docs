@@ -26,12 +26,12 @@ A _type value_ is a value that _classifies_ other values. A value that is classi
 
 The set of _primitive types_ includes the types of primitive values, and a number of _abstract types_, which are types that do not uniquely classify any values: `function`, `table`, `any`, `anynonnull` and `none`. All function values conform to the abstract type `function`, all table values to the abstract type `table`, all values to the abstract type `any`, all non-null values to the abstract type `anynonnull`, and no values to the abstract type `none`. An expression of type `none` must raise an error or fail to terminate since no value could be produced that conforms to type `none`. Note that the primitive types `function` and `table` are abstract because no function or table is directly of those types, respectively. The primitive types `record` and `list` are non-abstract because they represent an open record with no defined fields and a list of type any, respectively.
 
-The set of _primitive types_ plus their nullable counterparts are known as _non-custom types_. 
+The set of _primitive types_ plus their nullable counterparts are known as the _primitive-or-nullable-primitive-types_ or alternately as the _non-custom types_. 
 
 _primitive-type:_ one of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`any anynonnull binary date datetime datetimezone duration function list logical`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`none null number record table text time type`<br/>
-_non-custom-type:_<br/>
+_primitive-or-nullable-primitive-type:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`_<sub>opt</sub>  primitive-type_<br />
 
 All other types are collectively referred to as _custom types_. Custom types can be written using a `type-expression`:
@@ -96,7 +96,7 @@ Value.Type( 1 as number )   // type number
 {2} as text                 // error, type mismatch
 ```
 
-Note that the `is` and `as` operators only accept a _non-custom type_ as their right operand. M does not provide means to check values for conformance to custom types.
+Note that the `is` and `as` operators only accept a _primitive or nullable primitive type_ (i.e. a _non-custom type_) as their right operand. M does not provide means to check values for conformance to custom types.
 
 A type `X` is _compatible_ with a type `Y` if and only if all values that conform to `X` also conform to `Y`. All types are compatible with type `any` and no types (but `none` itself) are compatible with type `none`. The following graph shows the compatibility relation. (Type compatibility is reflexive and transitive. It forms a lattice with type `any` as the top and type `none` as the bottom value.) The names of abstract types are set in _italics_. 
 
@@ -365,7 +365,7 @@ Value.Type( Value.ReplaceType( {1}, type {number} )
 
 Type equivalence is not defined in M. An M implementation may optionally choose to use its own rules to perform equality comparisons between type values. Comparing two type values for equality should evaluate to `true` if they are considered identical by the implementation, and `false` otherwise. In either case, the response returned must be consistent if the same two values are repeatedly compared. Note that within a given implementation, comparing some identical type values (such as `(type text) = (type text)`) may return `true`, while comparing others (such as `(type [a = text]) = (type [a = text])`) may not.
 
-Compatibility between a given type and a _non-custom type_ can be determined using the library function `Type.Is`, which accepts an arbitrary type value as its first and a _non-custom type_ value as its second argument:
+Compatibility between a given type and a _non-custom type_ can be determined using the library function `Type.Is`, which accepts an arbitrary type value as its first and a _primitive or nullable primitive_ value as its second argument:
 
 ```powerquery-m
 Type.Is(type text, type nullable text)  // true 

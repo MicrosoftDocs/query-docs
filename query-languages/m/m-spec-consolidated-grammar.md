@@ -259,13 +259,13 @@ logical-and-expression:<br/>
 
 _is-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is-expression_ `is`  _non-custom-type_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is-expression_ `is`  _primitive-or-nullable-primitive-type_
 
 #### As expression
 
 _as-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;equality-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as-expression_  `as`  _non-custom-type_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as-expression_  `as`  _primitive-or-nullable-primitive-type_
 
 #### Equality expression
 
@@ -449,11 +449,11 @@ parameter:<br/>
 parameter-name:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier<br/>
 parameter-type:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;non-custom-type-assertion<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primitive-or-nullable-primitive-type-assertion<br/>
 return-type:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;non-custom-type-assertion<br/>
-non-custom-type-assertion:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as`  _non-custom-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primitive-or-nullable-primitive-type-assertion<br/>
+primitive-or-nullable-primitive-type-assertion:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as`  _primitive-or-nullable-primitive-type<br/>
 optional-parameter-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter_  `,`  _optional-parameter-list<br/>
@@ -508,7 +508,7 @@ primary-type:<br/>
 primitive-type:_ one of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`any anynonnull binary date datetime datetimezone duration function`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`list logical none null number record table text time type`<br/>
-_non-custom-type:_<br/>
+_primitive-or-nullable-primitive-type:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`_<sub>opt</sub>  primitive-type_<br />
 _record-type:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`  _open-record-marker_  `]`<br/>
