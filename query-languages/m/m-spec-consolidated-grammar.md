@@ -547,7 +547,7 @@ optional-parameter-specification-list:<br/>
 optional-parameter-specification:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional` _parameter-specification<br/> 
 parameter-specification:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-name  parameter-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-name parameter-type<br/>
 parameter-type:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assertion<br/>
 assertion:_<br/>
