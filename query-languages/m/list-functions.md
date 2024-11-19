@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List functions"
 title: "List functions"
-ms.date: 10/7/2022
+ms.date: 11/14/2022
 ms.custom: "nonautomated-date"
 ---
 # List functions
@@ -13,15 +13,15 @@ These functions create and manipulate list values.
 |Name|Description|
 |------------|---------------|
 |[List.Count](list-count.md)|Returns the number of items in a list.|
-|[List.NonNullCount](list-nonnullcount.md)|Returns the number of items in a list excluding null values|
-|[List.IsEmpty](list-isempty.md)|Returns whether a list is empty.|
+|[List.NonNullCount](list-nonnullcount.md)|Returns the number of non-null items in the list.|
+|[List.IsEmpty](list-isempty.md)|Returns true if the list is empty.|
 
 ## Selection
 
 |Name|Description|
 |------------|---------------|
-|[List.Alternate](list-alternate.md)|Returns a list with the items alternated from the original list based on a count, optional repeatInterval, and an optional offset.|
-|[List.Buffer](list-buffer.md)|Buffers the list in memory. The result of this call is a stable list, which means it will have a determinimic count, and order of items.|
+|[List.Alternate](list-alternate.md)|Returns a list comprised of all the odd numbered offset elements in a list.|
+|[List.Buffer](list-buffer.md)|Buffers a list in memory. The result of this call is a stable list, which means it has a deterministic count, and order of items.|
 |[List.Distinct](list-distinct.md)|Filters a list down by removing duplicates. An optional equation criteria value can be specified to control equality comparison. The first value from each equality group is chosen.|
 |[List.FindText](list-findtext.md)|Searches a list of values, including record fields, for a text value.|
 |[List.First](list-first.md)|Returns the first value of the list or the specified default if empty. Returns the first item in the list, or the optional default value, if the list is empty. If the list is empty and a default value is not specified, the function returns.|
