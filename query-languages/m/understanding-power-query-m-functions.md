@@ -2,7 +2,7 @@
 description: "Learn more about: Understanding Power Query M functions"
 title: "Understanding Power Query M functions"
 ms.topic: conceptual
-ms.date: 11/14/2024
+ms.date: 8/2/2022
 ms.custom: "nonautomated-date"
 ---
 
@@ -10,9 +10,9 @@ ms.custom: "nonautomated-date"
 
 In the Power Query M formula language, a *function* is a mapping from a set of input values to a single output value. A function is written by first naming the function parameters, and then providing an expression to compute the result of the function. The body of the function follows the goes-to (=&gt;) symbol. Optionally, type information can be included on parameters and the function return value. A function is defined and invoked in the body of a **let** statement. Parameters and/or return value can be implicit or explicit. Implicit parameters and/or return value are of type **any**. Type **any** is similar to an object type in other languages. All types in M derive from type **any**.  
   
-A function is a value just like a number or a text value, and can be included in-line just like any other expression. The following example shows a function that is the value of an **Add** variable, which is then invoked, or executed, from several other variables. When a function is invoked, a set of values are specified that logically substitute for the required set of input values within the function body expression.  
+A **function** is a value just like a number or a text value, and can be included in-line just like any other expression. The following example shows a function which is the value of an Add variable which is then invoked, or executed, from several other variables. When a function is invoked, a set of values are specified which are logically substituted for the required set of input values within the function body expression.  
   
-**Example - Explicit parameters and return value**
+**Example – Explicit parameters and return value**
   
 ```powerquery-m
 let  
@@ -23,7 +23,7 @@ in
     CalcAddOne  
 ```
 
-**Example - Implicit parameters and return value**
+**Example – Implicit parameters and return value**
   
 ```powerquery-m
 let  
@@ -67,12 +67,12 @@ in
 
 **Each keyword**
   
-The **each** keyword is used to easily create simple functions. `each ...` is syntactic sugar for a function signature that takes the `_` parameter `(_) =&gt; ...`.
+The **each** keyword is used to easily create simple functions. "each ..." is syntactic sugar for a function signature that takes the _ parameter "(\_) =&gt; ..."  
   
-The **each** keyword is useful when combined with the lookup operator, which is applied by default to `_`.
-For example, `each [CustomerID]` is the same as `each _[CustomerID]`, which is the same as `(_) =&gt; _[CustomerID]`.
+Each is useful when combined with the lookup operator, which is applied by default to _  
+For example,  each [CustomerID] is the same as each \_[CustomerID], which is the same as (\_) =&gt; \_[CustomerID]  
   
-**Example - Using each in table row filter**
+**Example – Using each in table row filter**
   
 ```powerquery-m
 Table.SelectRows(  

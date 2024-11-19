@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Combiner functions"
 title: "Combiner functions"
-ms.date: 11/14/2024
+ms.date: 10/19/2023
 ms.custom: "nonautomated-date"
 ---
 # Combiner functions
