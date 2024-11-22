@@ -47,3 +47,7 @@ Table.Max(#table({"a"}, {}), "a", -1)
 **Output**
 
 `-1`
+
+## Related content
+
+[Comparison criteria](table-functions.md#comparison-criteria)

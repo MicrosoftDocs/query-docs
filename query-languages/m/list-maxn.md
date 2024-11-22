@@ -17,3 +17,7 @@ Returns the maximum value(s) in the list, `list`. After the rows are sorted, opt
 * `list`: The list of values.
 * `countOrCondition`: If a number is specified, a list of up to `countOrCondition` items in ascending order is returned. If a condition is specified, a list of items that initially meet the condition is returned. Once an item fails the condition, no further items are considered.
 * `comparisonCriteria`: _[Optional]_ An optional `comparisonCriteria` value can be specified to determine how to compare the items in the list. If this parameter is null, the default comparer is used.
+
+## Related content
+
+[Comparison criteria](list-functions.md#comparison-criteria)
