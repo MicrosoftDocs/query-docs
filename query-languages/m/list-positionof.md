@@ -29,3 +29,7 @@ List.PositionOf({1, 2, 3}, 3)
 **Output**
 
 `2`
+
+## Related content
+
+[Equation criteria](list-functions.md#equation-criteria)

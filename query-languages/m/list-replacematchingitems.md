@@ -27,3 +27,7 @@ List.ReplaceMatchingItems({1, 2, 3, 4, 5}, {{5, -5}, {1, -1}})
 **Output**
 
 `{-1, 2, 3, 4, -5}`
+
+## Related content
+
+[Equation criteria](list-functions.md#equation-criteria)

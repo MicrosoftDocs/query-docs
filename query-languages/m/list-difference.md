@@ -39,3 +39,7 @@ List.Difference({1, 2}, {1, 2, 3})
 **Output**
 
 `{}`
+
+## Related content
+
+[Equation criteria](list-functions.md#equation-criteria)

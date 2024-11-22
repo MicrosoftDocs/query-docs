@@ -131,3 +131,7 @@ Table.FromRecords({
     [Name = "Bob", Country = "CA"]
 })
 ```
+
+## Related content
+
+[Replacer functions](replacer-functions.md)

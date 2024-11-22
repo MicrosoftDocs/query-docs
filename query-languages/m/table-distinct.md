@@ -66,3 +66,7 @@ Table.FromRecords({
     [a = "A", b = "b"]
 })
 ```
+
+## Related content
+
+[Equation criteria](table-functions.md#equation-criteria)

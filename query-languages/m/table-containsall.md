@@ -64,3 +64,7 @@ Table.ContainsAll(
 **Output**
 
 `false`
+
+## Related content
+
+[Equation criteria](table-functions.md#equation-criteria)

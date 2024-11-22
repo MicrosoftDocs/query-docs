@@ -27,3 +27,7 @@ powerquery-mList.Median({5, 3, 1, 7, 9})
 **Output**
 
 `5`  
+
+## Related content
+
+[Comparison criteria](list-functions.md#comparison-criteria)
