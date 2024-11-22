@@ -14,14 +14,17 @@ Excel.Workbook(<b>workbook</b> as binary, optional <b>useHeaders</b> as any, opt
 
 Returns the contents of the Excel workbook.
 
-* `useHeaders` can be null, a logical (true/false) value indicating whether the first row of each returned table should be treated as a header, or an options record. Default: false. This option converts numbers and dates to text using the current culture, and thus behaves differently when run in environments with different operating system cultures set. We recommend using [Table.PromoteHeaders](table-promoteheaders.md) instead.
+* `useHeaders` can be null, a logical (true/false) value indicating whether the first row of each returned table should be treated as a header, or an options record. Default: false.
 * `delayTypes` can be null or a logical (true/false) value indicating whether the columns of each returned table should be left untyped. Default: false.
 
 If a record is specified for `useHeaders` (and `delayTypes` is null), the following record fields may be provided:
 
-* `UseHeaders`: Can be null or a logical (true/false) value indicating whether the first row of each returned table should be treated as a header. Default: false. The `useHeaders` option converts numbers and dates to text using the current culture, and thus behaves differently when run in environments with different operating system cultures set. We recommend using [Table.PromoteHeaders](table-promoteheaders.md) instead.
+* `UseHeaders`: Can be null or a logical (true/false) value indicating whether the first row of each returned table should be treated as a header. Default: false.
 * `DelayTypes`: Can be null or a logical (true/false) value indicating whether the columns of each returned table should be left untyped. Default: false.
 * `InferSheetDimensions`: Can be null or a logical (true/false) value indicating whether the area of a worksheet that contains data should be inferred by reading the worksheet itself, rather than by reading the dimensions metadata from the file. This can be useful in cases where the dimensions metadata is incorrect. Note that this option is only supported for Open XML Excel files, not for legacy Excel files. Default: false.
+
+> [!NOTE]
+> The `useHeaders` parameter or the `UseHeaders` record field converts numbers and dates to text using the current culture, and thus behaves differently when run in environments with different operating system cultures set. We recommend using [Table.PromoteHeaders](table-promoteheaders.md) instead. For example, instead of using `Excel.Workbook(File.Contents("C:\myfile.xlsx", true, true))` or `Excel.Workbook(File.Contents("C:\myfile.xlsx", [UseHeaders = true], null))`, use `Table.PromoteHeaders(Excel.Workbook(File.Contents("C:\myfile.xlsx", null, true), [PromoteAllScalars = true]))` instead.
 
 ## Example 1
 
