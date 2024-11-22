@@ -44,3 +44,7 @@ Table.FromRecords({
     [CustomerID = 4, Name = "Ringo", Revenue = 50, RevenueRank = 4]
 })
 ```
+
+## Related content
+
+[Comparison criteria](table-functions.md#comparison-criteria)

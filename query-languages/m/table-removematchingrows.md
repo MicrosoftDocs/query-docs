@@ -35,3 +35,7 @@ Table.RemoveMatchingRows(
 **Output**
 
 `Table.FromRecords({[a = 3, b = 4]})`
+
+## Related content
+
+[Equation criteria](table-functions.md#equation-criteria)

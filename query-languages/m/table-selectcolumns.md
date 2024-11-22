@@ -16,7 +16,7 @@ Returns the `table` with only the specified `columns`.
 
 * `table`: The provided table.
 * `columns`: The list of columns from the table `table` to return. Columns in the returned table are in the order listed in `columns`.
-* `missingField`: *(Optional)* What to do if the column does not exist. Example: `MissingField.UseNull` or `MissingField.Ignore`.
+* `missingField`: *(Optional)* What to do if the column does not exist. Example: [MissingField.UseNull](missingfield-type.md) or [MissingField.Ignore](missingfield-type.md).
 
 ## Example 1
 

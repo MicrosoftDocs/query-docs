@@ -45,3 +45,7 @@ Table.FromRecords({
     [a = -1, b = -2]
 })
 ```
+
+## Related content
+
+[Equation criteria](table-functions.md#equation-criteria)

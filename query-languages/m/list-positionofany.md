@@ -29,3 +29,7 @@ List.PositionOfAny({1, 2, 3}, {2, 3})
 **Output**
 
 `1`
+
+## Related content
+
+[Equation criteria](list-functions.md#equation-criteria)

@@ -58,3 +58,7 @@ List.Contains({"Pears", "Bananas", "Rhubarb", "Peaches"},
 **Output**
 
 `true`
+
+## Related content
+
+[Equation criteria](list-functions.md#equation-criteria)

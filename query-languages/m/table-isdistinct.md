@@ -56,3 +56,7 @@ Table.IsDistinct(
 **Output**
 
 `false`
+
+## Related content
+
+[Comparison criteria](table-functions.md#comparison-criteria)

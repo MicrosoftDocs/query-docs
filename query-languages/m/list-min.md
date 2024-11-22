@@ -41,3 +41,7 @@ List.Min({}, -1)
 **Output**
 
 `-1`
+
+## Related content
+
+[Comparison criteria](list-functions.md#comparison-criteria)

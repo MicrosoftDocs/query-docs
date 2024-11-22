@@ -83,3 +83,7 @@ Table.ContainsAny(
 **Output**
 
 `true`
+
+## Related content
+
+[Equation criteria](table-functions.md#equation-criteria)

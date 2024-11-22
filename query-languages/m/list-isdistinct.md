@@ -41,3 +41,7 @@ List.IsDistinct({1, 2, 3, 3})
 **Output**
 
 `false`
+
+## Related content
+
+[Equation criteria](list-functions.md#equation-criteria)
