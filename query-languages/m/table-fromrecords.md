@@ -57,3 +57,7 @@ Table.ColumnsOfType(
 **Output**
 
 `{"CustomerID"}`
+
+## Related content
+
+[Missing field](missingfield-type.md)

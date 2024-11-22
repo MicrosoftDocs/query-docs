@@ -64,3 +64,7 @@ Table.MinN(
 **Output**
 
 `Table.FromRecords({})`
+
+## Related content
+
+[Comparison criteria](table-functions.md#comparison-criteria)

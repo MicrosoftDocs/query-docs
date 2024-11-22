@@ -133,3 +133,7 @@ Table.FromRecords({
     [OrderID = 9, CustomerID = 6, Item = "Bait", Price = 3.25]
 })
 ```
+
+## Related content
+
+[Comparison criteria](table-functions.md#comparison-criteria)

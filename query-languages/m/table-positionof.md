@@ -86,3 +86,7 @@ Table.PositionOf(
 **Output**
 
 `{0, 2}`
+
+## Related content
+
+[Equation criteria](table-functions.md#equation-criteria)

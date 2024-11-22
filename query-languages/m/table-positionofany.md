@@ -69,3 +69,7 @@ Table.PositionOfAny(
 **Output**
 
 `{0, 1, 2}`
+
+## Related content
+
+[Equation criteria](table-functions.md#equation-criteria)

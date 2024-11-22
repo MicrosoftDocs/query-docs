@@ -50,3 +50,7 @@ Table.FromRecords({
     [CustomerToCall = 3, CustomerDetails = Table.FromRecords({[CustomerID = 3, Name = "Paul", Phone = "543-7890"]})]
 })
 ```
+
+## Related content
+
+[Join kind](joinkind-type.md)
