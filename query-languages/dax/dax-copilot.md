@@ -67,7 +67,7 @@ You can **Run** the DAX query then decide to **Keep** or **Discard** the DAX que
 
 After the initial DAX query is generated, you can simply adjust by typing in additional user prompts. 
 
-:::image type="content" source="media/dax-copilot/copilot-explain-query.png" alt-text="Screenshot of asking DAX to explain the query." lightbox=source="media/dax-copilot/copilot-explain-query.png"::: 
+:::image type="content" source="media/dax-copilot/copilot-explain-query.png" alt-text="Screenshot of asking DAX to explain the query." lightbox="media/dax-copilot/copilot-explain-query.png"::: 
 
 ### 3. Syntax checks on the generated DAX query
 
