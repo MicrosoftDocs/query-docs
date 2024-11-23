@@ -83,7 +83,7 @@ Type in a prompt or select any of these buttons to see quickly what you can do w
 
 ## Sample prompts
 
-Here is a collection of sample prompts to illustrate how to use Copilot to write DAX queries.
+These sample prompts can illustrate how to use Copilot to write DAX queries.
 
 - [Write a DAX query](#write-a-dax-query)
 - [Add a column with the diff view](#add-a-column-with-the-diff-view)
@@ -114,7 +114,7 @@ When I select **keep query**, the query is added to the query tab.
 
 ### Add a column with the diff view
 
-Let's now add a column to the existing DAX query. First I select the DAX query, then invoke Copilot. This time the selection is showing fitted to the text and the background shading highlights what is being sent with the request to Copilot. Type in this request, and hit <kbd>enter</kbd>
+Let's now add a column to the existing DAX query. First I select the DAX query, then invoke Copilot. This time the selection is showing fitted to the text and the background shading highlights what is being sent with the request to Copilot. Type in this request, and hit <kbd>enter</kbd>:
 
 "Add a column to show profit per order"
 
@@ -146,7 +146,7 @@ Now I understand each part and the DAX functions used.
 
 ### Explain a DAX topic
 
-Copilot can also explain DAX functions with more detail. Let's ask about SUMMARIZECOLUMNS. In a new query tab, invoke Copilot, and sent the following request. 
+Copilot can also explain DAX functions with more detail. Let's ask about SUMMARIZECOLUMNS. In a new query tab, invoke Copilot, and sent the following request: 
 
 "Explain what SUMMARIZECOLUMNS is for"
 
@@ -156,11 +156,11 @@ Again, Copilot generates brief description:
 
 :::image type="content" source="media/dax-copilot/dax-copilot-summarize-columns-brief.png" alt-text="Screenshot showing a brief description of the SUMMARIZECOLUMNS DAX funtion.":::
 
-I select **Show more**. 
+I can select **Show more** to see a more detailed explanation with an example. 
 
 :::image type="content" source="media/dax-copilot/dax-copilot-summarize-columns-more.png" alt-text="Screenshot showing Copilot generates a much more in-depth description.":::
 
-Because I asked Copilot in the context of a Power BI semantic model, it gave me an exmaple using the columns in my model.
+The example also uses columns in my model.
 
 
 ## Fabric Copilot to help write DAX queries: Responsible AI FAQ
@@ -169,7 +169,7 @@ Because I asked Copilot in the context of a Power BI semantic model, it gave me 
 An inline Copilot found in Power BI DAX query view, available in the DAX query view of Power BI Desktop or write DAX queries in Power BI workspace, for model authors and consumers to request help creating DAX queries. The help can include explaining a DAX query and DAX topics, in addition to creating DAX queries themselves. 
 
 ### What can Fabric Copilot to help write DAX queries do? 
-The user request can be returned by Copilot as a DAX query the user can see, then run to see the data returned in the results grid. Additional requests can be made, and a new DAX query can be returned, creating a DAX query conversationally. If the request is about explaining a DAX query or topic, a natural language response is generated in the inline Copilot. DAX topics can include what a DAX function does, or which DAX function is good for returning data in a specific way. 
+The user request can be returned by Copilot as a DAX query the user can see, then run to see the data returned in the results grid. Additional requests can be made, and a new DAX query can be returned, creating a DAX query conversationally. If the request is about explaining a DAX query or topic, a natural language response is generated in the inline Copilot. DAX topics can include what a DAX function does or which DAX function is good for returning data in a specific way. 
 
 ### What is Fabric Copilot to help write DAX queries’ intended use?
 Copilot’s intended use is to help create DAX queries on a specific semantic model the user is currently working with in Power BI.
