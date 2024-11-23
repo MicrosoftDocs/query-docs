@@ -27,12 +27,16 @@ In Power BI Desktop, in the **Preview features** section of the **Options**, ena
 1. Create a new query tab.
 1. Open Copilot by clicking on the **Copilot** button or using <kbd>CTRL + I</kbd>.
 
+:::image type="content" source="media/dax-copilot/copilot-power-bi-desktop.png" alt-text="Screenshot showing Power BI Desktop with Fabric Copilot in DAX query view." lightbox="media/dax-copilot/copilot-power-bi-desktop.png":::
+
 ### Power BI service or workspace
 
 1. Choose a published semantic model in a workspace.
 2. From the context menu choose **Write DAX queries**. If **Write DAX queries** is greyed out, you may need to enable **Users can edit data models in the Power BI service (preview)** in the **Power BI** **General** section of **Workspace settings**.
 3. Create a new query tab.
 4. Open Copilot by clicking on the Copilot button or using <kbd>CTRL + I</kbd>.
+
+:::image type="content" source="media/dax-copilot/copilot-power-bi-service-write-dax-queries.png" alt-text="Screenshot showing Power BI service with Fabric Copilot in DAX query view." lightbox="media/dax-copilot/copilot-power-bi-service-write-dax-queries.png":::
 
 > [!NOTE]
 > DirectQuery and Direct Lake model authors can also use DAX query view. View the data in your tables whenever you want.
@@ -57,13 +61,13 @@ To use Copilot to explain a DAX topic, click the **Explain a DAX topic** inspire
 
 You can **Run** the DAX query then decide to **Keep** or **Discard** the DAX query. 
 
-:::image type="content" source="media/dax-copilot/copilot-run-query.png" alt-text="Screenshot of running the DAX query before you save it.":::
+:::image type="content" source="media/dax-copilot/copilot-run-query.png" alt-text="Screenshot of running the DAX query before you save it." lightbox="media/dax-copilot/copilot-run-query.png":::
 
 ### 2. Build the DAX query conversationally
 
 After the initial DAX query is generated, you can simply adjust by typing in additional user prompts. 
 
-:::image type="content" source="media/dax-copilot/copilot-explain-query.png" alt-text="Screenshot of asking DAX to explain the query."::: 
+:::image type="content" source="media/dax-copilot/copilot-explain-query.png" alt-text="Screenshot of asking DAX to explain the query." lightbox=source="media/dax-copilot/copilot-explain-query.png"::: 
 
 ### 3. Syntax checks on the generated DAX query
 
@@ -75,7 +79,7 @@ The generated DAX query syntax is checked, and the prompt automatically retried 
  
 Type in a prompt or select any of these buttons to see quickly what you can do with Copilot.
 
-:::image type="content" source="media/dax-copilot/copilot-inspire-buttons-get-started.png" alt-text="Screenshot of showing Copilot offers suggestions."::: 
+:::image type="content" source="media/dax-copilot/copilot-inspire-buttons-get-started.png" alt-text="Screenshot of showing Copilot offers suggestions." lightbox="media/dax-copilot/copilot-inspire-buttons-get-started.png"::: 
 
 ## Sample prompts
 
