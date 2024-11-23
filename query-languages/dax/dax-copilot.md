@@ -57,13 +57,13 @@ To use Copilot to explain a DAX topic, click the Explain a DAX topic inspire but
 
 You can **Run** the DAX query then decide to **Keep** or **Discard** the DAX query. 
 
-:::image type="content" source="media/dax-query-copilot/copilot-run-query.png" alt-text="Screenshot of running the DAX query before you save it.":::
+:::image type="content" source="/power-bi/transform-model/media/dax-query-copilot/copilot-run-query.png" alt-text="Screenshot of running the DAX query before you save it.":::
 
 ### 2. Build the DAX query conversationally
 
 After the initial DAX query is generated, you can simply adjust by typing in additional user prompts. 
 
-:::image type="content" source="media/dax-query-copilot/copilot-explain-query.png" alt-text="Screenshot of asking DAX to explain the query."::: 
+:::image type="content" source="/power-bi/transform-model/media/dax-query-copilot/copilot-explain-query.png" alt-text="Screenshot of asking DAX to explain the query."::: 
 
 ### 3. Syntax checks on the generated DAX query
 
@@ -75,7 +75,7 @@ The generated DAX query syntax is checked, and the prompt automatically retried 
  
 Type in a prompt or select any of these buttons to see quickly what you can do with Copilot.
 
-:::image type="content" source="media/dax-query-copilot/copilot-inspire-buttons-get-started.png" alt-text="Screenshot of showing Copilot offers suggestions."::: 
+:::image type="content" source="/power-bi/transform-model/media/dax-query-copilot/copilot-inspire-buttons-get-started.png" alt-text="Screenshot of showing Copilot offers suggestions."::: 
 
 ## Sample prompts
 
