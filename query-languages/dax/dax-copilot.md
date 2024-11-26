@@ -96,7 +96,7 @@ In a blank query tab, invoke Copilot with <kbd>CTRL+I</kbd> and enter this reque
 
 "Write a DAX query to show profit by product"
 
-:::image type="content" source="media/dax-copilot/dax-list-products.png" alt-text="Screenshot showing Copilot with the prompt Write a DAX query to show profit by product" lightbox="media/dax-copilot/dax-list-products.png":::
+:::image type="content" source="media/dax-copilot/dax-list-products.png" alt-text="Screenshot showing Copilot with the prompt Write a DAX query to show profit by product." lightbox="media/dax-copilot/dax-list-products.png":::
 
 After a few moments I get a DAX query. 
 
@@ -118,7 +118,7 @@ Let's now add a column to the existing DAX query. First I select the DAX query, 
 
 "Add a column to show profit per order"
 
-:::image type="content" source="media/dax-copilot/dax-copilot-show-diff.png" alt-text="Screenshot showing a selection included with the Copilot prompt" lightbox="media/dax-copilot/dax-copilot-show-diff.png":::
+:::image type="content" source="media/dax-copilot/dax-copilot-show-diff.png" alt-text="Screenshot showing a selection included with the Copilot prompt." lightbox="media/dax-copilot/dax-copilot-show-diff.png":::
 
 Now the diff styling in the DAX query editor shows exactly what Copilot has changed.  
 
@@ -126,7 +126,7 @@ Now the diff styling in the DAX query editor shows exactly what Copilot has chan
 
 I select **run** to see the results, and **keep query** to add it to the query editor. 
 
-:::image type="content" source="media/dax-copilot/dax-copilot-updated-query.png" alt-text="Screenshot showing the query in the DAX query editor" lightbox="media/dax-copilot/dax-copilot-updated-query.png":::
+:::image type="content" source="media/dax-copilot/dax-copilot-updated-query.png" alt-text="Screenshot showing the query in the DAX query editor." lightbox="media/dax-copilot/dax-copilot-updated-query.png":::
 
 ### Explain a DAX query
 
