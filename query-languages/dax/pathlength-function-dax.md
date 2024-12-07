@@ -17,7 +17,7 @@ PATHLENGTH(<path>)
 
 |Term|Definition|  
 |--------|--------------|  
-| path |  A text expression resulting from evaluation of a PATH function. |  
+|`path`|  A text expression resulting from evaluation of a PATH function. |  
   
 ## Return value
 

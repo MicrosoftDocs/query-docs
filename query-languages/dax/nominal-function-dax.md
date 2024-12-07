@@ -20,8 +20,8 @@ NOMINAL(<effect_rate>, <npery>)
 
 |Term|Definition|  
 |--------|--------------|  
-|effect_rate|The effective interest rate.|
-|npery|The number of compounding periods per year.|
+|`effect_rate`|The effective interest rate.|
+|`npery`|The number of compounding periods per year.|
 
 ## Return Value
 

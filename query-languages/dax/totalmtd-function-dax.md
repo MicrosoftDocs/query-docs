@@ -6,7 +6,7 @@ title: "TOTALMTD function (DAX) | Microsoft Docs"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Evaluates the value of the **expression** for the month to date, in the current context.  
+Evaluates the value of the `expression` for the month to date, in the current context.  
   
 ## Syntax  
   
@@ -18,24 +18,24 @@ TOTALMTD(<expression>,<dates>[,<filter>])
   
 |Parameter|Definition|  
 |-------------|--------------|  
-|expression|An expression that returns a scalar value.|  
-|dates|A column that contains dates.|  
-|filter|(optional) An expression that specifies a filter to apply to the current context.|  
+|`expression`|An expression that returns a scalar value.|  
+|`dates`|A column that contains dates.|  
+|`filter`|(optional) An expression that specifies a filter to apply to the current context.|  
   
 ## Return value
 
-A scalar value that represents the **expression** evaluated for the dates in the current month-to-date, given the dates in **dates**.  
+A scalar value that represents the `expression` evaluated for the dates in the current month-to-date, given the dates in `dates`.  
   
 ## Remarks
 
-- The **dates** argument can be any of the following:  
+- The `dates` argument can be any of the following:  
   - A reference to a date/time column.  
   - A table expression that returns a single column of date/time values.  
   - A Boolean expression that defines a single-column table of date/time values.  
 
 - Constraints on Boolean expressions are described in the topic, [CALCULATE](calculate-function-dax.md).  
   
-- The **filter** expression has restrictions described in the topic, [CALCULATE](calculate-function-dax.md).  
+- The `filter` expression has restrictions described in the topic, [CALCULATE](calculate-function-dax.md).  
   
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   

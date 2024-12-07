@@ -18,7 +18,7 @@ INT(<number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|The number you want to round down to an integer|  
+|`number`|The number you want to round down to an integer|  
   
 ## Return value
 

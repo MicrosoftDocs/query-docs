@@ -18,7 +18,7 @@ KEEPFILTERS(<expression>)
   
 |Term|Definition|  
 |--------|--------------|  
-|expression|Any expression.|  
+|`expression`|Any expression.|  
   
 ## Return value
 
@@ -92,18 +92,18 @@ When this expression is evaluated against the sample database AdventureWorks DW,
   
 |Column|Value|  
 |----------|---------|  
-|[$$ in WA]|$  2,467,248.34|  
-|[$$ in WA and OR]|$  3,638,239.88|  
-|[$$ in WA and BC]|$  4,422,588.44|  
-|[$$ in WA and OR ??]|$  3,638,239.88|  
-|[$$ in WA !!]|$  2,467,248.34|  
+|`[$$ in WA]`|$  2,467,248.34|  
+|`[$$ in WA and OR]`|$  3,638,239.88|  
+|`[$$ in WA and BC]`|$  4,422,588.44|  
+|`[$$ in WA and OR ??]`|$  3,638,239.88|  
+|`[$$ in WA !!]`|$  2,467,248.34|  
   
 > [!NOTE]  
 > The above results were formatted to a table, instead of a single row, for educational purposes.  
   
-First, examine the expression, **[$$ in WA and OR ??]**. You might wonder how this formula could return the value for sales in Washington and Oregon, since the outer CALCULATE expression includes a filter for Washington and British Columbia. The answer is that the default behavior of CALCULATE overrides the outer filters in 'Geography'[State Province Code] and substitutes its own filter arguments, because the filters apply to the same column.  
+First, examine the expression, `[$$ in WA and OR ??]`. You might wonder how this formula could return the value for sales in Washington and Oregon, since the outer CALCULATE expression includes a filter for Washington and British Columbia. The answer is that the default behavior of CALCULATE overrides the outer filters in 'Geography'[State Province Code] and substitutes its own filter arguments, because the filters apply to the same column.  
   
-Next, examine the expression, **[$$ in WA !!]**. You might wonder how this formula could return the value for sales in Washington and nothing else, since the argument filter includes Oregon and the outer CALCULATE expression includes a filter in Washington and British Columbia. The answer is that KEEPFILTERS modifies the default behavior of CALCULATE and adds an additional filter. Because the intersection of filters is used, now the outer filter **'Geography'[State Province Code]="WA" || 'Geography'[State Province Code]="BC")** is added to the filter argument **'Geography'[State Province Code]="WA" || 'Geography'[State Province Code]="OR"**,. Because both filters apply to the same column, the resulting filter **'Geography'[State Province Code]="WA"** is the filter that is applied when evaluating the expression.  
+Next, examine the expression, `[$$ in WA !!]`. You might wonder how this formula could return the value for sales in Washington and nothing else, since the argument filter includes Oregon and the outer CALCULATE expression includes a filter in Washington and British Columbia. The answer is that KEEPFILTERS modifies the default behavior of CALCULATE and adds an additional filter. Because the intersection of filters is used, now the outer filter `'Geography'[State Province Code]="WA" || 'Geography'[State Province Code]="BC")` is added to the filter argument `'Geography'[State Province Code]="WA" || 'Geography'[State Province Code]="OR"`,. Because both filters apply to the same column, the resulting filter `'Geography'[State Province Code]="WA"` is the filter that is applied when evaluating the expression.  
   
 ## Related content
 

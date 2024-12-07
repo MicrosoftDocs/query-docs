@@ -18,7 +18,7 @@ COTH (<number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|The hyperbolic angle in radians for which you want the hyperbolic cotangent.|  
+|`number`|The hyperbolic angle in radians for which you want the hyperbolic cotangent.|  
   
 ## Return value
 

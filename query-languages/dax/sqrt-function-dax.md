@@ -18,7 +18,7 @@ SQRT(<number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|The number for which you want the square root, a column that contains numbers, or an expression that evaluates to a number.|  
+|`number`|The number for which you want the square root, a column that contains numbers, or an expression that evaluates to a number.|  
   
 ## Return value
 

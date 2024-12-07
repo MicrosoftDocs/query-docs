@@ -6,7 +6,7 @@ title: "PREVIOUSYEAR function (DAX) | Microsoft Docs"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns a table that contains a column of all dates from the previous year, given the last date in the **dates** column, in the current context.  
+Returns a table that contains a column of all dates from the previous year, given the last date in the `dates` column, in the current context.  
   
 ## Syntax  
   
@@ -18,8 +18,8 @@ PREVIOUSYEAR(<dates>[,<year_end_date>])
   
 |Term|Definition|  
 |--------|--------------|  
-|dates|A column containing dates.|  
-|year_end_date|(optional) A literal string with a date that defines the year-end date. The default is December 31.|  
+|`dates`|A column containing dates.|  
+|`year_end_date`|(optional) A literal string with a date that defines the year-end date. The default is December 31.|  
   
 ## Return value
 
@@ -27,16 +27,16 @@ A table containing a single column of date values.
   
 ## Remarks
 
-- This function returns all dates from the previous year given the latest date in the input parameter. For example, if the latest date in the **dates** argument refers to the year 2009, then this function returns all dates for the year of 2008, up to the specified **year_end_date**.  
+- This function returns all dates from the previous year given the latest date in the input parameter. For example, if the latest date in the `dates` argument refers to the year 2009, then this function returns all dates for the year of 2008, up to the specified `year_end_date`.  
   
-- The **dates** argument can be any of the following:  
+- The `dates` argument can be any of the following:  
   - A reference to a date/time column.
   - A table expression that returns a single column of date/time values.
   - A Boolean expression that defines a single-column table of date/time values.  
   
 - Constraints on Boolean expressions are described in the topic, [CALCULATE](calculate-function-dax.md).  
   
-- The **year_end_date** parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is ignored.  
+- The `year_end_date` parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is ignored.  
   
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   

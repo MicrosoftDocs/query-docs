@@ -19,7 +19,7 @@ ABS(<number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|The number for which you want the absolute value.|  
+|`number`|The number for which you want the absolute value.|  
   
 ## Return value
 

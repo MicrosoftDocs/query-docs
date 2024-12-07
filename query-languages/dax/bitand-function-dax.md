@@ -18,7 +18,7 @@ BITAND(<number>, <number>)
 
 |Term|Definition|
 |--------|--------------|
-|Number|Any scalar expression that returns number. If not an integer, it is truncated.|
+|`Number`|Any scalar expression that returns number. If not an integer, it is truncated.|
   
 ## Return value
 

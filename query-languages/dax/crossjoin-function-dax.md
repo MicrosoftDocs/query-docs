@@ -18,7 +18,7 @@ CROSSJOIN(<table>, <table>[, <table>]…)
 
 |Term|Definition|  
 |--------|--------------|  
-|table|Any DAX expression that returns a table of data|  
+|`table`|Any DAX expression that returns a table of data|  
   
 ## Return value
 
@@ -26,7 +26,7 @@ A table that contains the Cartesian product of all rows from all tables in the a
   
 ## Remarks  
   
-- Column names from *table* arguments must all be different in all tables or an error is returned.  
+- Column names from `table` arguments must all be different in all tables or an error is returned.  
   
 - The total number of rows returned by CROSSJOIN() is equal to the product of the number of rows from all tables in the arguments; also, the total number of columns in the result table is the sum of the number of columns in all tables. For example, if **TableA** has **rA** rows and **cA** columns, and **TableB** has **rB** rows and **cB** columns, and **TableC** has **rC** rows and **cC** column; then, the resulting table has **rA × rb × rC** rows and **cA + cB + cC** columns.  
 

@@ -35,10 +35,10 @@ COLLAPSE ( <column>[, <column>] ... )
 
 |Term|Definition|
 |--------|--------------|
-|expression|The expression to be evaluated in the new context.|
-|axis|An axis reference.|
-|column|A column in the data grid.|
-|N|(Optional) The number of levels to collapse. If omitted, the default value is 1.|
+|`expression`|The expression to be evaluated in the new context.|
+|`axis`|An axis reference.|
+|`column`|A column in the data grid.|
+|`N`|(Optional) The number of levels to collapse. If omitted, the default value is 1.|
 
 ## Return value
 

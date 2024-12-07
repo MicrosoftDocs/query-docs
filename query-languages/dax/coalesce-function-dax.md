@@ -18,7 +18,7 @@ COALESCE(<expression>, <expression>[, <expression>]…)
   
 |Term|Definition|  
 |--------|--------------|  
-|expression|Any DAX expression that returns a scalar expression.|  
+|`expression`|Any DAX expression that returns a scalar expression.|  
   
 ## Return value
 

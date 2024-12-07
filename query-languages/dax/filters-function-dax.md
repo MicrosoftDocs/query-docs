@@ -6,7 +6,7 @@ title: "FILTERS function (DAX) | Microsoft Docs"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Returns the values that are directly applied as filters to *columnName*.  
+Returns the values that are directly applied as filters to `columnName`.  
   
 ## Syntax
   
@@ -18,11 +18,11 @@ FILTERS(<columnName>)
 
 |Term  |Description|  
 |---------|---------|
-|columnName      | The name of an existing column, using standard DAX syntax. It cannot be an expression.  |
+|`columnName`| The name of an existing column, using standard DAX syntax. It cannot be an expression.  |
 
 ## Return value
 
-The values that are directly applied as filters to *columnName*.  
+The values that are directly applied as filters to `columnName`.  
   
 ## Remarks
 

@@ -18,7 +18,7 @@ NONVISUAL(<expression>)
 
 |Term|Definition|  
 |--------|--------------|  
-|expression|Any DAX expression that returns a single value (not a table).|
+|`expression`|Any DAX expression that returns a single value (not a table).|
 
 ## Return value
 

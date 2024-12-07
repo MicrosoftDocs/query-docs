@@ -20,9 +20,9 @@ RRI(<nper>, <pv>, <fv>)
 
 |Term|Definition|  
 |--------|--------------|  
-|nper|The number of periods for the investment.|
-|pv|The present value of the investment.|
-|fv|The future value of the investment.|
+|`nper`|The number of periods for the investment.|
+|`pv`|The present value of the investment.|
+|`fv`|The future value of the investment.|
 
 ## Return Value
 

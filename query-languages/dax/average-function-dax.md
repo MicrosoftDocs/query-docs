@@ -18,7 +18,7 @@ AVERAGE(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|The column that contains the numbers for which you want the average.|  
+|`column`|The column that contains the numbers for which you want the average.|  
   
 ## Return value
 

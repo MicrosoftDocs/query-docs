@@ -6,7 +6,7 @@ title: "PREVIOUSDAY function (DAX) | Microsoft Docs"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns a table that contains a column of all dates representing the day that is previous to the first date in the **dates** column, in the current context.  
+Returns a table that contains a column of all dates representing the day that is previous to the first date in the `dates` column, in the current context.  
   
 ## Syntax  
   
@@ -18,7 +18,7 @@ PREVIOUSDAY(<dates>)
   
 |Term|Definition|  
 |--------|--------------|  
-|dates|A column containing dates.|  
+|`dates`|A column containing dates.|  
   
 ## Return value
 
@@ -26,9 +26,9 @@ A table containing a single column of date values.
   
 ## Remarks
 
-- This function determines the first date in the input parameter, and then returns all dates corresponding to the day previous to that first date. For example, if the first date in the **dates** argument refers to June 10, 2009; this function returns all dates equal to June 9, 2009.  
+- This function determines the first date in the input parameter, and then returns all dates corresponding to the day previous to that first date. For example, if the first date in the `dates` argument refers to June 10, 2009; this function returns all dates equal to June 9, 2009.  
   
-- The **dates** argument can be any of the following:  
+- The `dates` argument can be any of the following:  
   - A reference to a date/time column.  
   - A table expression that returns a single column of date/time values.  
   - A Boolean expression that defines a single-column table of date/time values.  

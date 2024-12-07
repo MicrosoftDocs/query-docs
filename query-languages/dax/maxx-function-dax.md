@@ -18,9 +18,9 @@ MAXX(<table>,<expression>,[<variant>])
   
 |Term|Definition|  
 |--------|--------------|  
-|table|The table containing the rows for which the expression will be evaluated.|  
-|expression|The expression to be evaluated for each row of the table.|  
-|variant|(Optional) If TRUE, and if there are variant or mixed value types, the highest value based on ORDER BY DESC is returned.|
+|`table`|The table containing the rows for which the expression will be evaluated.|  
+|`expression`|The expression to be evaluated for each row of the table.|  
+|`variant`|(Optional) If `TRUE`, and if there are variant or mixed value types, the highest value based on ORDER BY DESC is returned.|
   
 ## Return value
 
@@ -28,16 +28,16 @@ The highest value.
   
 ## Remarks
 
-- The **table** argument to the MAXX function can be a table name or an expression that evaluates to a table. The second argument indicates the expression to be evaluated for each row of the table.  
+- The `table` argument to the MAXX function can be a table name or an expression that evaluates to a table. The second argument indicates the expression to be evaluated for each row of the table.  
   
 - Of the values to evaluate, only the following are counted:  
   - Numbers
   - Texts
   - Dates
   
-- Blank values are skipped. TRUE/FALSE values are not supported.
+- Blank values are skipped. `TRUE`/`FALSE` values are not supported.
 
-- If the expression has variant or mixed value types such as text and number, then by default MAXX considers only numbers. If `<variant> = TRUE`, the maximum value is returned.
+- If the expression has variant or mixed value types such as text and number, then by default MAXX considers only numbers. If `<variant> = `TRUE``, the maximum value is returned.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 

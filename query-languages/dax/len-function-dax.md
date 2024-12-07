@@ -18,7 +18,7 @@ LEN(<text>)
   
 |Term|Definition|  
 |--------|--------------|  
-|text|The text whose length you want to find, or a column that contains text. Spaces count as characters.|  
+|`text`|The text whose length you want to find, or a column that contains text. Spaces count as characters.|  
   
 ## Return value
 

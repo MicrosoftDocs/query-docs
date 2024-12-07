@@ -18,7 +18,7 @@ LCM(number1, [number2], ...)
   
 |Term|Definition|  
 |--------|--------------|  
-|number1, number2,...|Number1 is required, subsequent numbers are optional. 1 to 255 values for which you want the least common multiple. If value is not an integer, it is truncated.|  
+|`number1, number2,...`|Number1 is required, subsequent numbers are optional. 1 to 255 values for which you want the least common multiple. If value is not an integer, it is truncated.|  
   
 ## Return value
 
@@ -38,5 +38,5 @@ Returns the least common multiple of integers.
   
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
-|= LCM(5, 2)|Least common multiple of 5 and 2.|10|  
-|= LCM(24, 36)|Least common multiple of 24 and 36.|72|  
+|`= LCM(5, 2)`|Least common multiple of 5 and 2.|10|  
+|`= LCM(24, 36)`|Least common multiple of 24 and 36.|72|  

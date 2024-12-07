@@ -16,7 +16,7 @@ TODAY()
 
 ## Return value
 
-A date (**datetime**).  
+A date (`datetime`).  
   
 ## Remarks
 

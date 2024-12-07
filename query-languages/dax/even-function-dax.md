@@ -18,7 +18,7 @@ EVEN(number)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|The value to round.|  
+|`number`|The value to round.|  
   
 ## Return value
 
@@ -26,7 +26,7 @@ Returns number rounded up to the nearest even integer.
   
 ## Remarks
 
-- If number is nonnumeric, EVEN returns the #VALUE! error value.  
+- If `number` is nonnumeric, EVEN returns the #VALUE! error value.  
   
 - Regardless of the sign of number, a value is rounded up when adjusted away from zero. If number is an even integer, no rounding occurs.  
 
@@ -36,8 +36,7 @@ Returns number rounded up to the nearest even integer.
   
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
-|= EVEN(1.5)|Rounds 1.5 to the nearest even integer|2|  
-|= EVEN(3)|Rounds 3 to the nearest even integer|4|  
-|= EVEN(2)|Rounds 2 to the nearest even integer|2|  
-|= EVEN(-1)|Rounds -1 to the nearest even integer|-2|  
-  
+|`= EVEN(1.5)`|Rounds 1.5 to the nearest even integer|2|  
+|`= EVEN(3)`|Rounds 3 to the nearest even integer|4|  
+|`= EVEN(2)`|Rounds 2 to the nearest even integer|2|  
+|`= EVEN(-1)`|Rounds -1 to the nearest even integer|-2|  

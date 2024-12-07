@@ -6,7 +6,7 @@ title: "HASONEFILTER function (DAX) | Microsoft Docs"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Returns **TRUE** when the number of directly filtered values on *columnName* is one; otherwise returns **FALSE**.  
+Returns `TRUE` when the number of directly filtered values on `columnName` is one; otherwise returns `FALSE`.  
   
 ## Syntax  
   
@@ -18,11 +18,11 @@ HASONEFILTER(<columnName>)
 
 |Term|Definition|  
 |--------|--------------|  
-| columnName   |  The name of an existing column, using standard DAX syntax. It cannot be an expression.  |  
+|`columnName`|  The name of an existing column, using standard DAX syntax. It cannot be an expression.  |  
   
 ## Return value
 
-**TRUE** when the number of directly filtered values on *columnName* is one; otherwise returns **FALSE**.  
+`TRUE` when the number of directly filtered values on `columnName` is one; otherwise returns `FALSE`.  
   
 ## Remarks  
   

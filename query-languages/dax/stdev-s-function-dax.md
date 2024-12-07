@@ -18,7 +18,7 @@ STDEV.S(<ColumnName>)
 
 |Term|Definition|  
 |--------|--------------|  
-| columnName | The name of an existing column using standard DAX syntax, usually fully qualified. It cannot be an expression.   |  
+| `columnName` | The name of an existing column using standard DAX syntax, usually fully qualified. It cannot be an expression.   |  
 
 ## Return value
 
@@ -36,9 +36,9 @@ A number that represents the standard deviation of a sample population.
   
     where x̃ is the average value of x for the sample population and n is the population size.  
   
-- Blank rows are filtered out from *columnName* and not considered in the calculations.  
+- Blank rows are filtered out from `columnName` and not considered in the calculations.  
   
-- An error is returned if *columnName* contains less than 2 non-blank rows.  
+- An error is returned if `columnName` contains less than 2 non-blank rows.  
   
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   

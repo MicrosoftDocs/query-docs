@@ -20,11 +20,11 @@ Introduces a measure definition in a DEFINE statement of a [DAX query](dax-queri
 
 ### Parameters
 
-|Term  |Definition  |
+|Term|Definition|
 |---------|---------|
-|  table name     |   The name of a table containing the measure.  |
-|  measure name     |  The name of the measure. It cannot be an expression. The name does not have to be unique. The name exists only for the duration of the query.   |
-|  scalar expression     | A DAX expression that returns a scalar value.  |
+|`table name`|   The name of a table containing the measure.  |
+|`measure name`|  The name of the measure. It cannot be an expression. The name does not have to be unique. The name exists only for the duration of the query.   |
+|`scalar expression`| A DAX expression that returns a scalar value.  |
 
 ## Return value
 

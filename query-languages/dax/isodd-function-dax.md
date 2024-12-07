@@ -6,7 +6,7 @@ title: "ISODD function (DAX) | Microsoft Docs"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Returns TRUE if number is odd, or FALSE if number is even.  
+Returns `TRUE` if number is odd, or `FALSE` if number is even.  
   
 ## Syntax  
   
@@ -18,11 +18,11 @@ ISODD(number)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|The value to test. If number is not an integer, it is truncated.|  
+|`number`|The value to test. If number is not an integer, it is truncated.|  
   
 ## Return value
 
-Returns TRUE if number is odd, or FALSE if number is even.  
+Returns `TRUE` if number is odd, or `FALSE` if number is even.  
   
 ## Remarks
 

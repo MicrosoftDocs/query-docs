@@ -18,8 +18,8 @@ ALLNOBLANKROW( {<table> | <column>[, <column>[, <column>[,…]]]} )
   
 |Term|Definition|  
 |--------|--------------|  
-|table|The table over which all context filters are removed.|  
-|column|A column over which all context filters are removed.|  
+|`table`|The table over which all context filters are removed.|  
+|`column`|A column over which all context filters are removed.|  
   
 Only one parameter must be passed; the parameter is either a table or a column.  
   
@@ -31,14 +31,14 @@ A table, when the passed parameter was a table, or a column of values, when the 
 
 - The ALLNOBLANKROW function only filters the blank row that a parent table, in a relationship, will show when there are one or more rows in the child table that have non-matching values to the parent column. See the example below for a thorough explanation.  
   
-- The following table summarizes the variations of ALL that are provided in DAX, and their differences:  
+- The following table summarizes the variations of `ALL` that are provided in DAX, and their differences:  
   
     |Function and usage|Description|  
     |----------------------|---------------|  
-    |ALL(Column)|Removes all filters from the specified column in the table; all other filters in the table, over other columns, still apply.|  
-    |ALL(Table)|Removes all filters from the specified table.|  
-    |ALLEXCEPT(Table,Col1,Col2...)|Overrides all context filters in the table except over the specified columns.|  
-    |ALLNOBLANK(table&#124;column)|From the parent table of a relationship, returns all rows but the blank row, or all distinct values of a column but the blank row, and disregards any context filters that might exist|  
+    |`ALL(Column)`|Removes all filters from the specified column in the table; all other filters in the table, over other columns, still apply.|  
+    |`ALL(Table)`|Removes all filters from the specified table.|  
+    |`ALLEXCEPT(Table,Col1,Col2...)`|Overrides all context filters in the table except over the specified columns.|  
+    |`ALLNOBLANK(table|column)`| From the parent table of a relationship, returns all rows but the blank row, or all distinct values of a column but the blank row, and disregards any context filters that might exist|  
 
     For a general description of how the ALL function works, together with step-by-step examples that use ALL(Table) and ALL(Column), see [ALL function](all-function-dax.md).  
 
@@ -50,7 +50,7 @@ In the sample data, the ResellerSales_USD table contains one row that has no val
   
 Step 1: Verify the unrelated data 
   
-Open the **Power Pivot window**, then select the ResellerSales_USD table. In the ProductKey column, filter for blank values. One row will remain. In that row, all column values should be blank except for SalesOrderLineNumber.  
+Open the `Power Pivot window`, then select the ResellerSales_USD table. In the ProductKey column, filter for blank values. One row will remain. In that row, all column values should be blank except for SalesOrderLineNumber.  
   
 Step 2: Create a PivotTable  
   

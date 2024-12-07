@@ -20,8 +20,8 @@ PERCENTILE.INC(<column>, <k>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|A column containing the values that define relative standing.|  
-|k|The percentile value in the range 0..1, inclusive.|  
+|`column`|A column containing the values that define relative standing.|  
+|`k`|The percentile value in the range 0..1, inclusive.|  
   
 ## Return value
 

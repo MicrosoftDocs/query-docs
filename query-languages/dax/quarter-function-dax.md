@@ -19,7 +19,7 @@ QUARTER(<date>)
   
 |Term|Definition|  
 |--------|--------------|  
-|date|A date.|  
+|`date`|A date.|  
   
 ## Return value  
 

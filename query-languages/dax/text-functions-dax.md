@@ -13,7 +13,7 @@ Data Analysis Expressions (DAX) includes a set of text functions based on the li
 |[COMBINEVALUES](combinevalues-function-dax.md)     |   Joins two or more text strings into one text string.       |
 |[CONCATENATE](concatenate-function-dax.md)     | Joins two text strings into one text string.         |
 |[CONCATENATEX](concatenatex-function-dax.md)      | Concatenates the result of an expression evaluated for each row in a table.          |
-|[EXACT](exact-function-dax.md)      | Compares two text strings and returns TRUE if they are exactly the same, FALSE otherwise.        |
+|[EXACT](exact-function-dax.md)      | Compares two text strings and returns ``TRUE`` if they are exactly the same, `FALSE` otherwise.        |
 |[FIND](find-function-dax.md)     |  Returns the starting position of one text string within another text string.       |
 |[FIXED](fixed-function-dax.md)     | Rounds a number to the specified number of decimals and returns the result as text.        |
 |[FORMAT](format-function-dax.md)    |  Converts a value to text according to the specified format.         |

@@ -6,7 +6,7 @@ title: "ISLOGICAL function (DAX) | Microsoft Docs"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Checks whether a value is a logical value, (TRUE or FALSE), and returns TRUE or FALSE.  
+Checks whether a value is a logical value, (`TRUE` or `FALSE`), and returns `TRUE` or `FALSE`.  
   
 ## Syntax  
   
@@ -18,11 +18,11 @@ ISLOGICAL(<value>)
   
 |Term|Definition|  
 |--------|--------------|  
-|value|The value that you want to test.|  
+|`value`|The value that you want to test.|  
   
 ## Return value
 
-TRUE if the value is a logical value; FALSE if any value other than TRUE OR FALSE.  
+`TRUE` if the value is a logical value; `FALSE` if any value other than `TRUE` OR `FALSE`.  
 
 ## Remarks
 

@@ -92,7 +92,7 @@ Also called *report-level measures*. They're added to a live connection report i
 
 ## Row-level security
 
-Also called *RLS*. Design technique to restrict access to subsets of data for specific users. In a tabular model, it's achieved by creating model roles. Roles have rules, which are DAX expressions to filter table rows.
+Also called `RLS`. Design technique to restrict access to subsets of data for specific users. In a tabular model, it's achieved by creating model roles. Roles have rules, which are DAX expressions to filter table rows.
 
 ## Scalar
 

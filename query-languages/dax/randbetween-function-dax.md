@@ -18,8 +18,8 @@ RANDBETWEEN(<bottom>,<top>)
   
 |Term|Definition|  
 |--------|--------------|  
-|Bottom|The smallest integer the function will return.|  
-|Top|The largest integer the function will return.|  
+|`Bottom`|The smallest integer the function will return.|  
+|`Top`|The largest integer the function will return.|  
   
 ## Return value
 

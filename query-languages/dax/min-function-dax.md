@@ -22,8 +22,8 @@ MIN(<expression1>, <expression2>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|The column in which you want to find the smallest value.|  
-|expression|Any DAX expression which returns a single value.|  
+|`column`|The column in which you want to find the smallest value.|  
+|`expression`|Any DAX expression which returns a single value.|  
   
 ## Return value
 
@@ -39,7 +39,7 @@ The smallest value.
 
 - When comparing expressions, blank is treated as 0 when comparing. That is, Min(1,Blank() ) returns 0, and Min( -1, Blank() ) returns -1. If both arguments are blank, MIN returns a blank. If either expression returns a value which is not allowed, MIN returns an error.
 
-- TRUE/FALSE values are not supported. If you want to evaluate a column of TRUE/FALSE values, use the MINA function.
+- `TRUE`/`FALSE` values are not supported. If you want to evaluate a column of `TRUE`/`FALSE` values, use the MINA function.
   
 ## Example 1
 

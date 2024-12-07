@@ -20,17 +20,17 @@ SAMPLEAXISWITHLOCALMINMAX(<Size>, <Table>, <Axis>, <Measure>, [<Measure> [, ...]
 
 |Term|Definition|  
 |--------|--------------|  
-|Size|Number of rows in the sample to return|
-|Table|Any DAX expression that returns a table of data from where to return a sample subset from.|
-|Axis|The numerical or datetime column from Table to be binned.|
-|Measure| Column reference from Table to be sampled. At least one Measure is required, but you can specify multiple.|
-|MinResolution| Minimum number of selected rows that spans the full non-empty range of X|
-|DynamicSeries| (Optional) Column to be used as series. You can specify zero, or or multiple.|
-|DynamicSeriesSelectionCriteria| (Optional) Decides which series values to retain if not all DynamicSeries can be preserved. Valid values are NONE or ALPHABETICAL|
-|DynamicSeriesSelectionOrder| (Optional) Decides to use ascending or descending sorting on the criteria identified by DynamicSeriesSelectionCriteria. Valid values are ASC or DESC.|
-|MaxResolution| Maximum number of selected rows for a line that spans the full non-empty range of X|
-|MaxDynamicSeries|Maximum allowed DynamicSeries. If the number of DynamicSeries is higher than MaxDynamicSeries remove DynamicSeries based on DynamicSeriesSelectionCriteria.|
-|MaxIterations|Maximum number of iterations to try to reach the Size number of rows.
+|`Size`|Number of rows in the sample to return|
+|`Table`|Any DAX expression that returns a table of data from where to return a sample subset from.|
+|`Axis`|The numerical or datetime column from Table to be binned.|
+|`Measure`| Column reference from Table to be sampled. At least one Measure is required, but you can specify multiple.|
+|`MinResolution`| Minimum number of selected rows that spans the full non-empty range of X|
+|`DynamicSeries`| (Optional) Column to be used as series. You can specify zero, or or multiple.|
+|`DynamicSeriesSelectionCriteria`| (Optional) Decides which series values to retain if not all DynamicSeries can be preserved. Valid values are NONE or ALPHABETICAL|
+|`DynamicSeriesSelectionOrder`| (Optional) Decides to use ascending or descending sorting on the criteria identified by DynamicSeriesSelectionCriteria. Valid values are ASC or DESC.|
+|`MaxResolution`| Maximum number of selected rows for a line that spans the full non-empty range of X|
+|`MaxDynamicSeries`|Maximum allowed DynamicSeries. If the number of DynamicSeries is higher than MaxDynamicSeries remove DynamicSeries based on DynamicSeriesSelectionCriteria.|
+|`MaxIterations`|Maximum number of iterations to try to reach the Size number of rows.
 
 ## Return Value
 

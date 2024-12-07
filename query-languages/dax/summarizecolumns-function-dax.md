@@ -18,10 +18,10 @@ SUMMARIZECOLUMNS( <groupBy_columnName> [, < groupBy_columnName >]…, [<filterTa
   
 |Term|Definition|  
 |--------|--------------|  
-|groupBy_columnName|A fully qualified column reference (Table[Column]) to a base table for which the distinct values are included in the returned table. Each groupBy_columnName column is cross-joined (different tables) or auto-existed (same table) with the subsequent specified columns.|  
-|filterTable|A table expression which is added to the filter context of all columns specified as groupBy_columnName arguments. The values present in the filter table are used to filter before cross-join/auto-exist is performed.|  
-|name|A string representing the column name to use for the subsequent expression specified.|  
-|expression|Any DAX expression that returns a single value (not a table).|  
+|`groupBy_columnName`|A fully qualified column reference (Table[Column]) to a base table for which the distinct values are included in the returned table. Each groupBy_columnName column is cross-joined (different tables) or auto-existed (same table) with the subsequent specified columns.|  
+|`filterTable`|A table expression which is added to the filter context of all columns specified as groupBy_columnName arguments. The values present in the filter table are used to filter before cross-join/auto-exist is performed.|  
+|`name`|A string representing the column name to use for the subsequent expression specified.|  
+|`expression`|Any DAX expression that returns a single value (not a table).|  
   
 ## Return value
 
@@ -211,20 +211,20 @@ Returns the following table,
   
 |CustomerID|IsCustomerSubtotal|State|Total Qty|Date|IsDateSubtotal|  
 |--------------|----------------------|---------|-------------|--------|------------------|  
-|A|FALSE|WA|5|7/10/2014||  
-|B|FALSE|WA|1|7/10/2014||  
-|B|FALSE|WA|2|7/11/2014||  
-|C|FALSE|OR|2|7/10/2014||  
-|C|FALSE|OR|1|7/11/2014||  
-||TRUE|WA|6|7/10/2014||  
-||TRUE|WA|2|7/11/2014||  
-||TRUE|OR|2|7/10/2014||  
-||TRUE|OR|1|7/11/2014||  
-|A|FALSE|WA|5||TRUE|  
-|B|FALSE|WA|3||TRUE|  
-|C|FALSE|OR|3||TRUE|  
-||TRUE|WA|8||TRUE|  
-||TRUE|OR|3||TRUE|  
+|A|`FALSE`|WA|5|7/10/2014||  
+|B|`FALSE`|WA|1|7/10/2014||  
+|B|`FALSE`|WA|2|7/11/2014||  
+|C|`FALSE`|OR|2|7/10/2014||  
+|C|`FALSE`|OR|1|7/11/2014||  
+||`TRUE`|WA|6|7/10/2014||  
+||`TRUE`|WA|2|7/11/2014||  
+||`TRUE`|OR|2|7/10/2014||  
+||`TRUE`|OR|1|7/11/2014||  
+|A|`FALSE`|WA|5||`TRUE`|  
+|B|`FALSE`|WA|3||`TRUE`|  
+|C|`FALSE`|OR|3||`TRUE`|  
+||`TRUE`|WA|8||`TRUE`|  
+||`TRUE`|OR|3||`TRUE`|  
   
 ## With ROLLUPGROUP
 
@@ -243,18 +243,18 @@ Still grouped by City and State, but rolled together when reporting a subtotal r
 
 |State|CustomerId|IsCustomerSubtotal|Total Qty|City|IsCityStateSubtotal|  
 |---------|--------------|----------------------|-------------|--------|-----------------------|  
-|WA|A|FALSE|2|Bellevue|FALSE|  
-|WA|B|FALSE|2|Bellevue|FALSE|  
-|WA|A|FALSE|3|Redmond|FALSE|  
-|WA|B|FALSE|1|Redmond|FALSE|  
-|OR|C|FALSE|3|Portland|FALSE|  
-|WA||TRUE|4|Bellevue|FALSE|  
-|WA||TRUE|4|Redmond|FALSE|  
-|OR||TRUE|3|Portland|FALSE|  
-||A|FALSE|5||FALSE|  
-||B|FALSE|3||TRUE|  
-||C|FALSE|3||TRUE|  
-|||TRUE|11||TRUE|  
+|WA|A|`FALSE`|2|Bellevue|`FALSE`|  
+|WA|B|`FALSE`|2|Bellevue|`FALSE`|  
+|WA|A|`FALSE`|3|Redmond|`FALSE`|  
+|WA|B|`FALSE`|1|Redmond|`FALSE`|  
+|OR|C|`FALSE`|3|Portland|`FALSE`|  
+|WA||`TRUE`|4|Bellevue|`FALSE`|  
+|WA||`TRUE`|4|Redmond|`FALSE`|  
+|OR||`TRUE`|3|Portland|`FALSE`|  
+||A|`FALSE`|5||`FALSE`|  
+||B|`FALSE`|3||`TRUE`|  
+||C|`FALSE`|3||`TRUE`|  
+|||`TRUE`|11||`TRUE`|  
 
 ## Contextual SummarizeColumns ##
 ### Background

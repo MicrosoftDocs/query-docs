@@ -6,7 +6,7 @@ title: "PATHCONTAINS function (DAX) | Microsoft Docs"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Returns **TRUE** if the specified *item* exists within the specified *path*.  
+Returns `TRUE` if the specified `item` exists within the specified `path`.  
   
 ## Syntax  
   
@@ -18,16 +18,16 @@ PATHCONTAINS(<path>, <item>)
 
 |Term|Definition|  
 |--------|--------------|  
-|  path  | A string created as the result of evaluating a PATH function.  |  
-| item |  A text expression to look for in the path result.  |
+|`path`| A string created as the result of evaluating a PATH function.  |  
+|`item`|  A text expression to look for in the path result.  |
 
 ## Return value
 
-A value of **TRUE** if *item* exists in *path*; otherwise **FALSE**.  
+A value of `TRUE` if `item` exists in `path`; otherwise `FALSE`.  
   
 ## Remarks
 
-- If *item* is an integer number it is converted to text and then the function is evaluated. If conversion fails then the function returns an error.  
+- If `item` is an integer number it is converted to text and then the function is evaluated. If conversion fails then the function returns an error.  
   
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   

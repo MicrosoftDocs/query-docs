@@ -18,9 +18,9 @@ POISSON.DIST(x,mean,cumulative)
   
 |Term|Definition|  
 |--------|--------------|  
-|x|Required. The number of events.|  
-|mean|Required. The expected numeric value.|  
-|cumulative|Required. A logical value that determines the form of the probability distribution returned. If cumulative is TRUE, POISSON.DIST returns the cumulative Poisson probability that the number of random events occurring will be between zero and x inclusive; if FALSE, it returns the Poisson probability mass function that the number of events occurring will be exactly x.|  
+|`x`|Required. The number of events.|  
+|`mean`|Required. The expected numeric value.|  
+|`cumulative`|Required. A logical value that determines the form of the probability distribution returned. If cumulative is `TRUE`, POISSON.DIST returns the cumulative Poisson probability that the number of random events occurring will be between zero and x inclusive; if `FALSE`, it returns the Poisson probability mass function that the number of events occurring will be exactly x.|  
   
 ## Return value
 
@@ -38,11 +38,11 @@ Returns the Poisson distribution.
 
 - POISSON.DIST is calculated as follows.  
 
-  - For cumulative = FALSE:  
+  - For cumulative = `FALSE`:  
 
     $$\text{POISSON} = \frac{e^{-\lambda} \lambda^{x}}{x!}$$
 
-  - For cumulative = TRUE:  
+  - For cumulative = `TRUE`:  
 
     $$\text{CUMPOISSON} = \sum^{x}\_{k=0} \frac{e^{-\lambda} \lambda^{x}}{k!}$$
 

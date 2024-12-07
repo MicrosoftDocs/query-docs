@@ -18,7 +18,7 @@ TRIM(<text>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**text**|The text from which you want spaces removed, or a column that contains text.|  
+|`text`|The text from which you want spaces removed, or a column that contains text.|  
   
 ## Return value
 

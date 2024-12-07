@@ -19,7 +19,7 @@ These functions return a table or manipulate existing tables.
 |[DISTINCT column](distinct-function-dax.md)      |  Returns a one-column table that contains the distinct values from the specified column.       |
 |[DISTINCT table](distinct-table-function-dax.md)      |  Returns a table by removing duplicate rows from another table or expression.       |
 |[EXCEPT](except-function-dax.md)     |  Returns the rows of one table which do not appear in another table.       |
-|[FILTERS](filters-function-dax.md)     |  Returns a table of values directly applied as filters to *columnName*.        |
+|[FILTERS](filters-function-dax.md)     |  Returns a table of values directly applied as filters to `columnName`.        |
 |[GENERATE](generate-function-dax.md)      |  Returns a table with the Cartesian product between each row in *table1* and the table that results from evaluating *table2* in the context of the current row from *table1*.       |
 |[GENERATEALL](generateall-function-dax.md)     |  Returns a table with the Cartesian product between each row in *table1* and the table that results from evaluating *table2* in the context of the current row from *table1*.         |
 |[GENERATESERIES](generateseries-function-dax.md)     | Returns a single column table containing the values of an arithmetic series.        |

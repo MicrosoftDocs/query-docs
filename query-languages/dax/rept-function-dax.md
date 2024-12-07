@@ -18,8 +18,8 @@ REPT(<text>, <num_times>)
   
 |Term|Definition|  
 |--------|--------------|  
-|text|The text you want to repeat.|  
-|num_times|A positive number specifying the number of times to repeat text.|  
+|`text`|The text you want to repeat.|  
+|`num_times`|A positive number specifying the number of times to repeat text.|  
   
 ## Return value
 
@@ -27,9 +27,9 @@ A string containing the changes.
   
 ## Remarks
 
-- If **number_times** is 0 (zero), REPT returns a blank.  
+- If `num_times` is 0 (zero), REPT returns a blank.  
   
-- If **number_times** is not an integer, it is truncated.  
+- If `num_times` is not an integer, it is truncated.  
   
 - The result of the REPT function cannot be longer than 32,767 characters, or REPT returns an error.  
 

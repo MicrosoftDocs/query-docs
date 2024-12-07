@@ -18,8 +18,8 @@ ROW(<name>, <expression>[[,<name>, <expression>]…])
 
 |Term|Definition|  
 |--------|--------------|  
-|  name|  The name given to the column, enclosed in double quotes. |  
-|  expression| Any DAX expression that returns a single scalar value to populate. *name*.  |
+|`name`|  The name given to the column, enclosed in double quotes. |  
+|`expression`| Any DAX expression that returns a single scalar value to populate. `name`.  |
 
 ## Return value
 
@@ -27,7 +27,7 @@ A single row table
   
 ## Remarks
 
-- Arguments must always come in pairs of *name* and *expression*.
+- Arguments must always come in pairs of `name` and `expression`.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]  
   

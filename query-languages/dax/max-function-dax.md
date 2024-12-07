@@ -22,8 +22,8 @@ MAX(<expression1>, <expression2>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|The column in which you want to find the largest value.|  
-|expression|Any DAX expression which returns a single value.|  
+|`column`|The column in which you want to find the largest value.|  
+|`expression`|Any DAX expression which returns a single value.|  
   
 ## Return value
 
@@ -33,7 +33,7 @@ The largest value.
 
 - When comparing two expressions, blank is treated as 0 when comparing. That is, Max(1, Blank() ) returns 1, and Max( -1, Blank() ) returns 0. If both arguments are blank, MAX returns a blank. If either expression returns a value which is not allowed, MAX returns an error.
 
-- TRUE/FALSE values are not supported. If you want to evaluate a column of TRUE/FALSE values, use the MAXA function.
+- `TRUE`/`FALSE` values are not supported. If you want to evaluate a column of `TRUE`/`FALSE` values, use the MAXA function.
   
 ## Example 1
 

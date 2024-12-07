@@ -20,9 +20,9 @@ TBILLEQ(<settlement>, <maturity>, <discount>)
 
 |Term|Definition|  
 |--------|--------------|  
-|settlement|The Treasury bill's settlement date. The security settlement date is the date after the issue date when the Treasury bill is traded to the buyer.|
-|maturity|The Treasury bill's maturity date. The maturity date is the date when the Treasury bill expires.|
-|discount|The Treasury bill's discount rate.|
+|`settlement`|The Treasury bill's settlement date. The security settlement date is the date after the issue date when the Treasury bill is traded to the buyer.|
+|`maturity`|The Treasury bill's maturity date. The maturity date is the date when the Treasury bill expires.|
+|`discount`|The Treasury bill's discount rate.|
 
 ## Return Value
 

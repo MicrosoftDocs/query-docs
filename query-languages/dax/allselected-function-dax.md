@@ -20,8 +20,8 @@ ALLSELECTED([<tableName> | <columnName>[, <columnName>[, <columnName>[,…]]]] )
 
 |Term|Definition|  
 |--------|--------------|  
-|tableName|The name of an existing table, using standard DAX syntax. This parameter cannot be an expression. This parameter is optional.  | 
-|columnName|The name of an existing column using standard DAX syntax, usually fully qualified. It cannot be an expression. This parameter is optional.    |
+|`tableName`|The name of an existing table, using standard DAX syntax. This parameter cannot be an expression. This parameter is optional.  |
+|`columnName`|The name of an existing column using standard DAX syntax, usually fully qualified. It cannot be an expression. This parameter is optional.    |
   
 ## Return value
 
@@ -29,7 +29,7 @@ The context of the query without any column and row filters.
   
 ## Remarks  
   
-- If there is one argument, the argument is either *tableName* or *columnName*. If there is more than one argument, they must be columns from the same table.  
+- If there is one argument, the argument is either `tableName` or `columnName`. If there is more than one argument, they must be columns from the same table.  
   
 - This function is different from ALL() because it retains all filters explicitly set within the query, and it retains all context filters other than row and column filters.  
 

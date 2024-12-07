@@ -18,9 +18,9 @@ GENERATESERIES(<startValue>, <endValue>[, <incrementValue>])
   
 |Term|Definition|  
 |--------|--------------|  
-|startValue|The initial value used to generate the sequence.|
-|endValue|The end value used to generate the sequence.|  
-|incrementValue|(Optional) The increment value of the sequence. When not provided, the default value is 1.|
+|`startValue`|The initial value used to generate the sequence.|
+|`endValue`|The end value used to generate the sequence.|  
+|`incrementValue`|(Optional) The increment value of the sequence. When not provided, the default value is 1.|
   
 ## Return value
 

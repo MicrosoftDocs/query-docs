@@ -18,7 +18,7 @@ GCD(number1, [number2], ...)
   
 |Term|Definition|  
 |--------|--------------|  
-|number1, number2, ...|Number1 is required, subsequent numbers are optional. 1 to 255 values. If any value is not an integer, it is truncated.|  
+|`number1, number2, ...`|Number1 is required, subsequent numbers are optional. 1 to 255 values. If any value is not an integer, it is truncated.|  
   
 ## Return value
 
@@ -40,8 +40,8 @@ The greatest common divisor of two or more integers.
 
 ## Example  
   
-|Formula|Description|Result|  
+Description|Result|  
 |-----------|---------------|----------|  
-|= GCD(5, 2)|Greatest common divisor of 5 and 2.|1|  
-|= GCD(24, 36)|Greatest common divisor of 24 and 36.|12|  
-|= GCD(7, 1)|Greatest common divisor of 7 and 1.|1|  
+|`= GCD(5, 2)`|Greatest common divisor of 5 and 2.|1|  
+|`= GCD(24, 36)`|Greatest common divisor of 24 and 36.|12|  
+|`= GCD(7, 1)`|Greatest common divisor of 7 and 1.|1|  

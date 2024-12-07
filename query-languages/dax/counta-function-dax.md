@@ -18,7 +18,7 @@ COUNTA(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|The column that contains the values to be counted.|  
+|`column`|The column that contains the values to be counted.|  
   
 ## Return value
 

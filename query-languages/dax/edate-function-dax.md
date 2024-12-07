@@ -18,20 +18,20 @@ EDATE(<start_date>, <months>)
   
 |Term|Definition|  
 |--------|--------------|  
-|start_date|A date in **datetime** or **text** format that represents the start date.|  
-|months|An integer that represents the number of months before or after **start_date**.|  
+|`start_date`|A date in `datetime` or `text` format that represents the start date.|  
+|`months`|An integer that represents the number of months before or after `start_date`.|  
   
 ## Return value
 
-A date (**datetime**).  
+A date (`datetime`).  
   
 ## Remarks
 
-- In contrast to Microsoft Excel, which stores dates as sequential serial numbers, DAX works with dates in a **datetime** format. Dates stored in other formats are converted implicitly.  
+- In contrast to Microsoft Excel, which stores dates as sequential serial numbers, DAX works with dates in a `datetime` format. Dates stored in other formats are converted implicitly.  
   
-- If **start_date** is not a valid date, EDATE returns an error. Make sure that the column reference or date that you supply as the first argument is a date.  
+- If `start_date` is not a valid date, EDATE returns an error. Make sure that the column reference or date that you supply as the first argument is a date.  
   
-- If **months** is not an integer, it is truncated.  
+- If `months` is not an integer, it is truncated.  
   
 - When the date argument is a text representation of the date, the EDATE function uses the locale and date time settings of the client computer to understand the text value in order to perform the conversion. If the current date time settings represent a date in the format of Month/Day/Year, then the following string "1/8/2009" is interpreted as a datetime value equivalent to January 8th of 2009. However, if the current date time settings represent a date in the format of Day/Month/Year, the same string would be interpreted as a datetime value equivalent to August 1st of 2009.  
   

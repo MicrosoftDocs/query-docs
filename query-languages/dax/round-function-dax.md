@@ -18,8 +18,8 @@ ROUND(<number>, <num_digits>)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|The number you want to round.|  
-|num_digits|The number of digits to which you want to round. A negative value rounds digits to the left of the decimal point; a value of zero rounds to the nearest integer.|  
+|`number`|The number you want to round.|  
+|`num_digits`|The number of digits to which you want to round. A negative value rounds digits to the left of the decimal point; a value of zero rounds to the nearest integer.|  
   
 ## Return value
 
@@ -27,11 +27,11 @@ A decimal number.
   
 ## Remarks
 
-- If **num_digits** is greater than 0 (zero), then number is rounded to the specified number of decimal places.  
+- If `num_digits` is greater than 0 (zero), then number is rounded to the specified number of decimal places.  
   
-- If **num_digits** is 0, the number is rounded to the nearest integer.  
+- If `num_digits` is 0, the number is rounded to the nearest integer.  
   
-- If **num_digits** is less than 0, the number is rounded to the left of the decimal point.  
+- If `num_digits` is less than 0, the number is rounded to the left of the decimal point.  
   
 - Related functions
   - To always round up (away from zero), use the ROUNDUP function.  

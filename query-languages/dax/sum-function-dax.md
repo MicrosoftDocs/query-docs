@@ -18,7 +18,7 @@ SUM(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|The column that contains the numbers to sum.|  
+|`column`|The column that contains the numbers to sum.|  
   
 ## Return value
 

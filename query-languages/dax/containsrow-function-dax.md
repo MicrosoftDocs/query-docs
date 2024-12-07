@@ -6,7 +6,7 @@ title: "CONTAINSROW function | Microsoft Docs"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Returns TRUE if there exists at least one row where all columns have specified values.
+Returns `TRUE` if there exists at least one row where all columns have specified values.
 
 ## Syntax
 
@@ -18,16 +18,16 @@ CONTAINSROW(<Table>, <Value> [, <Value> [, …] ] )
   
 |Term|Definition|  
 |--------|--------------|  
-|Table|A table to test.|  
-|Value|Any valid DAX expression that returns a scalar value.|  
+|`Table`|A table to test.|  
+|`Value`|Any valid DAX expression that returns a scalar value.|  
 
 ## Return value
 
-TRUE or FALSE.
+ `TRUE`  or `FALSE`.
   
 ## Remarks
 
-- Except syntax, the **IN** operator and CONTAINSROW function are functionally equivalent.
+- Except syntax, the `IN` operator and CONTAINSROW function are functionally equivalent.
   
     ```dax
     <scalarExpr> IN <tableExpr> 

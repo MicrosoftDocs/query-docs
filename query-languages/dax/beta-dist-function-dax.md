@@ -18,11 +18,11 @@ BETA.DIST(x,alpha,beta,cumulative,[A],[B])
   
 |Term|Definition|  
 |--------|--------------|  
-|x|The value between A and B at which to evaluate the function|  
-|Alpha|A parameter of the distribution.|  
-|Beta|A parameter of the distribution.|  
-|A|Optional. A lower bound to the interval of x.|  
-|B|Optional. An upper bound to the interval of x.|  
+|`x`|The value between A and B at which to evaluate the function|  
+|`Alpha`|A parameter of the distribution.|  
+|`Beta`|A parameter of the distribution.|  
+|`A`|Optional. A lower bound to the interval of x.|  
+|`B`|Optional. An upper bound to the interval of x.|  
   
 ## Return value
 

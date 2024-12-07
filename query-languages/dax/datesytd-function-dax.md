@@ -18,8 +18,8 @@ DATESYTD(<dates> [,<year_end_date>])
   
 |Term|Definition|  
 |--------|--------------|  
-|dates|A column that contains dates.|  
-|year_end_date|(optional) A literal string with a date that defines the year-end date. The default is December 31.|  
+|`dates`|A column that contains dates.|  
+|`year_end_date`|(optional) A literal string with a date that defines the year-end date. The default is December 31.|  
   
 ## Return value
 
@@ -27,7 +27,7 @@ A table containing a single column of date values.
   
 ## Remarks
 
-The **dates** argument can be any of the following:  
+The `dates` argument can be any of the following:  
   
 - A reference to a date/time column,  
   
@@ -38,7 +38,7 @@ The **dates** argument can be any of the following:
     > [!NOTE]  
     > Constraints on Boolean expressions are described in the topic, [CALCULATE function](calculate-function-dax.md).  
   
-- The **year_end_date** parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is ignored.  Depending on locale, the format might be something like "m-dd" or "dd-m".
+- The `year_end_date` parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is ignored.  Depending on locale, the format might be something like "m-dd" or "dd-m".
   
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   

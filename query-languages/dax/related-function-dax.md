@@ -18,7 +18,7 @@ RELATED(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|The column that contains the values you want to retrieve.|  
+|`column`|The column that contains the values you want to retrieve.|  
   
 ## Return value
 

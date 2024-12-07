@@ -23,9 +23,9 @@ DATESBETWEEN(<Dates>, <StartDate>, <EndDate>)
 
 |Term|Definition|
 |--------|--------------|
-|Dates|A date column.|
-|StartDate|A date expression.|
-|EndDate|A date expression.|
+|`Dates`|A date column.|
+|`StartDate`|A date expression.|
+|`EndDate`|A date expression.|
 
 ## Return value
 
@@ -33,15 +33,15 @@ A table containing a single column of date values.
 
 ## Remarks
 
-- In the most common use case, **Dates** is a reference to the date column of a marked date table.
+- In the most common use case, `dates` is a reference to the date column of a marked date table.
 
-- If **StartDate** is BLANK, then **StartDate** will be the earliest value in the **Dates** column.
+- If `StartDate` is BLANK, then `StartDate` will be the earliest value in the `dates` column.
 
-- If **EndDate** is BLANK, then **EndDate** will be the latest value in the **Dates** column.
+- If `EndDate` is BLANK, then `EndDate` will be the latest value in the `dates` column.
 
-- Dates used as the **StartDate** and **EndDate** are inclusive. So, for example, if the **StartDate** value is July 1, 2019, then that date will be included in the returned table (providing the date exists in the **Dates** column).
+- Dates used as the `StartDate` and `EndDate` are inclusive. So, for example, if the `StartDate` value is July 1, 2019, then that date will be included in the returned table (providing the date exists in the `dates` column).
 
-- The returned table can only contain dates stored in the **Dates** column. So, for example, if the **Dates** column starts from July 1, 2017, and the **StartDate** value is July 1, 2016, the returned table will start from July 1, 2017.
+- The returned table can only contain dates stored in the `Dates` column. So, for example, if the `Dates` column starts from July 1, 2017, and the `StartDate` value is July 1, 2016, the returned table will start from July 1, 2017.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 

@@ -15,7 +15,7 @@ DAX queries have a simple syntax comprised of just one required keyword, EVALUAT
 
 ### EVALUATE (Required)
 
-At the most basic level, a DAX query is an **EVALUATE** statement containing a table expression. At least one EVALUATE statement is required, however, a query can contain any number of EVALUATE statements.
+At the most basic level, a DAX query is an `EVALUATE` statement containing a table expression. At least one EVALUATE statement is required, however, a query can contain any number of EVALUATE statements.
 
 #### EVALUATE Syntax
   
@@ -42,7 +42,7 @@ Returns all rows and columns from the Internet Sales table, as a table.
 
 ### ORDER BY (Optional)
 
-The optional **ORDER BY** keyword defines one or more expressions used to sort query results. Any expression that can be evaluated for each row of the result is valid.  
+The optional `ORDER BY` keyword defines one or more expressions used to sort query results. Any expression that can be evaluated for each row of the result is valid.  
 
 #### ORDER BY Syntax
 
@@ -75,7 +75,7 @@ Returns all rows and columns from the Internet Sales table, in ascending order b
 
 ### START AT (Optional)
 
-The optional **START AT** keyword is used inside an **ORDER BY** clause. It defines the value at which the query results begin.
+The optional `START AT` keyword is used inside an `ORDER BY` clause. It defines the value at which the query results begin.
 
 #### START AT Syntax
 
@@ -113,7 +113,7 @@ Returns all rows and columns from the Internet Sales table, in ascending order b
 
 ### DEFINE (Optional)
 
-The optional **DEFINE** keyword introduces one or more calculated entity definitions that exist only for the duration of the query. Definitions precede the EVALUATE statement and are valid for all EVALUATE statements in the query. Definitions can be variables, measures, tables<sup>[1](#not-rec)</sup>, and columns<sup>[1](#not-rec)</sup>. Definitions can reference other definitions that appear before or after the current definition. At least one definition is required if the DEFINE keyword is included in a query.
+The optional `DEFINE` keyword introduces one or more calculated entity definitions that exist only for the duration of the query. Definitions precede the EVALUATE statement and are valid for all EVALUATE statements in the query. Definitions can be variables, measures, tables<sup>[1](#not-rec)</sup>, and columns<sup>[1](#not-rec)</sup>. Definitions can reference other definitions that appear before or after the current definition. At least one definition is required if the DEFINE keyword is included in a query.
 
 #### DEFINE Syntax
 
@@ -134,9 +134,9 @@ The optional **DEFINE** keyword introduces one or more calculated entity definit
 
 |Term|Definition|  
 |--------|--------------|  
-|Entity|MEASURE, VAR, TABLE<sup>[1](#not-rec)</sup>, or COLUMN<sup>[1](#not-rec)</sup>. |
-|name|The name of a measure, var, table, or column definition. It cannot be an expression. The name does not have to be unique. The name exists only for the duration of the query.|  
-|expression|Any DAX expression that returns a table or scalar value. The expression can use any of the defined entities. If there is a need to convert a scalar expression into a table expression, wrap the expression inside a table constructor with curly braces `{}`, or use the `ROW()` function to return a single row table.|  
+|`Entity`|MEASURE, VAR, TABLE<sup>[1](#not-rec)</sup>, or COLUMN<sup>[1](#not-rec)</sup>. |
+|`name`|The name of a measure, var, table, or column definition. It cannot be an expression. The name does not have to be unique. The name exists only for the duration of the query.|  
+|`expression`|Any DAX expression that returns a table or scalar value. The expression can use any of the defined entities. If there is a need to convert a scalar expression into a table expression, wrap the expression inside a table constructor with curly braces `{}`, or use the `ROW()` function to return a single row table.|  
 
 <a name="not-rec">[1]</a> **Caution:** Query scoped TABLE and COLUMN definitions are meant for internal use only. While you can define TABLE and COLUMN expressions for a query without syntax error, they may produce runtime errors and are not recommended.
 
@@ -190,8 +190,8 @@ The [Execute Method (XMLA)](/analysis-services/xmla/xml-elements-methods-execute
 Reference XMLA parameters by prefixing the name of the parameter with an `@` character. Any place in the syntax where a value is allowed, the value can be replaced with a parameter call. All XMLA parameters are typed as text.  
   
 > [!IMPORTANT]
-> Parameters defined in the parameters section and not used in the **\<STATEMENT>** element generate an error response in XMLA.
-> Parameters used and not defined in the **\<Parameters>** element generate an error response in XMLA.
+> Parameters defined in the parameters section and not used in the `<STATEMENT>` element generate an error response in XMLA.
+> Parameters used and not defined in the `<Parameters>` element generate an error response in XMLA.
   
 ## Related content
 

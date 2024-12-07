@@ -19,8 +19,8 @@ COMBIN(number, number_chosen)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|The number of items.|  
-|number_chosen|The number of items in each combination.|  
+|`number`|The number of items.|  
+|`number_chosen`|The number of items in each combination.|  
   
 ## Return value
 
@@ -50,4 +50,4 @@ Returns the number of combinations for a given number of items.
   
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
-|= COMBIN(8,2)|Possible two-person teams that can be formed from 8 candidates.|28|  
+|`= COMBIN(8,2)`|Possible two-person teams that can be formed from 8 candidates.|28|  

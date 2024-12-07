@@ -18,7 +18,7 @@ ACOT(number)
   
 |Term|Definition|  
 |--------|--------------|  
-|Number|The cosine of the angle you want. Must be a real number.|  
+|`Number`|The cosine of the angle you want. Must be a real number.|  
   
 ## Return value
 

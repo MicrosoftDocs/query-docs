@@ -6,7 +6,7 @@ title: "ASIN function (DAX) | Microsoft Docs"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Returns the arcsine, or inverse sine, of a number. The arcsine is the angle whose sine is *number*. The returned angle is given in radians in the range -pi/2 to pi/2.  
+Returns the arcsine, or inverse sine, of a number. The arcsine is the angle whose sine is `number`. The returned angle is given in radians in the range -pi/2 to pi/2.  
   
 ## Syntax  
   
@@ -18,7 +18,7 @@ ASIN(number)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|The sine of the angle you want and must be from -1 to 1.|  
+|`number`|The sine of the angle you want and must be from -1 to 1.|  
   
 ## Return value
 
@@ -30,7 +30,7 @@ To express the arcsine in degrees, multiply the result by 180/PI( ) or use the D
   
 ## Example  
   
-|Formula|Description|Result|  
+|`Formula`|Description|Result|  
 |-----------|---------------|----------|  
 |= ASIN(-0.5)|Arcsine of -0.5 in radians, -pi/6|-0.523598776|  
 |= ASIN(-0.5)*180/PI()|Arcsine of -0.5 in degrees|-30|  

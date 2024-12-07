@@ -20,8 +20,8 @@ CHISQ.INV.RT(probability,deg_freedom)
   
 |Term|Definition|  
 |--------|--------------|  
-|Probability|A probability associated with the chi-squared distribution.|  
-|Deg_freedom|The number of degrees of freedom.|  
+|`Probability`|A probability associated with the chi-squared distribution.|  
+|`Deg_freedom`|The number of degrees of freedom.|  
   
 ## Return value
 

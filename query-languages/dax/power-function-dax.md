@@ -18,8 +18,8 @@ POWER(<number>, <power>)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|The base number, which can be any real number.|  
-|power|The exponent to which the base number is raised.|  
+|`number`|The base number, which can be any real number.|  
+|`power`|The exponent to which the base number is raised.|  
   
 ## Return value
 

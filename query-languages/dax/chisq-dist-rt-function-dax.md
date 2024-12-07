@@ -20,8 +20,8 @@ CHISQ.DIST.RT(<x>, <deg_freedom>)
   
 |Term|Definition|  
 |--------|--------------|  
-|x|The value at which you want to evaluate the distribution.|  
-|Deg_freedom|The number of degrees of freedom.|
+|`x`|The value at which you want to evaluate the distribution.|  
+|`Deg_freedom`|The number of degrees of freedom.|
   
 ## Return value
 

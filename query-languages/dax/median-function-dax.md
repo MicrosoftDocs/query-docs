@@ -20,7 +20,7 @@ MEDIAN(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|The column that contains the numbers for which the median is to be computed.|  
+|`column`|The column that contains the numbers for which the median is to be computed.|  
   
 ## Return value
 

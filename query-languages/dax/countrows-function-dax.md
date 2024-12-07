@@ -18,7 +18,7 @@ COUNTROWS([<table>])
   
 |Term|Definition|  
 |--------|--------------|  
-|table|(Optional) The name of the table that contains the rows to be counted, or an expression that returns a table. When not provided, the default value is the home table of the current expression. |  
+|`table`|(Optional) The name of the table that contains the rows to be counted, or an expression that returns a table. When not provided, the default value is the home table of the current expression. |  
   
 ## Return value
 

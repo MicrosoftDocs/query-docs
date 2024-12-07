@@ -18,10 +18,10 @@ ADDMISSINGITEMS ( [<showAll_columnName> [, <showAll_columnName> [, … ] ] ], <t
   
 |Term|Definition|  
 |--------|--------------|  
-|showAll_columnName| (Optional) A column for which to return items with no data for the measures used. If not specified, all columns are returned.|  
-|table|A SUMMARIZECOLUMNS table.|  
-|groupBy_columnName|(Optional) A column to group by in the supplied table argument.|
-|filterTable|(Optional) A table expression that defines which rows are returned.|  
+|`showAll_columnName`| (Optional) A column for which to return items with no data for the measures used. If not specified, all columns are returned.|  
+|`table`|A SUMMARIZECOLUMNS table.|  
+|`groupBy_columnName`|(Optional) A column to group by in the supplied table argument.|
+|`filterTable`|(Optional) A table expression that defines which rows are returned.|  
 
 ## Return value
 

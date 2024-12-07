@@ -18,7 +18,7 @@ SINH(number)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|Required. Any real number.|  
+|`number`|Required. Any real number.|  
   
 ## Return value
 

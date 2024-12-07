@@ -18,7 +18,7 @@ UNICHAR(number)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|The Unicode number that represents the character.|  
+|`number`|The Unicode number that represents the character.|  
   
 ## Return value
 

@@ -21,9 +21,9 @@ LINEST ( <columnY>, <columnX>[, …][, <const>] )
 
 |Term|Definition|
 |--------|--------------|
-|columnY|The column of known y-values. Must have scalar type.|
-|columnX|The columns of known x-values. Must have scalar type. At least one must be provided.|
-|const|(Optional) A constant TRUE/FALSE value specifying whether to force the constant **Intercept** to equal 0.</br>If TRUE or omitted, the **Intercept** value is calculated normally; If FALSE, the **Intercept** value is set to zero.|
+|`columnY`|The column of known y-values. Must have scalar type.|
+|`columnX`|The columns of known x-values. Must have scalar type. At least one must be provided.|
+|`const`|(Optional) A constant `TRUE`/`FALSE` value specifying whether to force the constant **Intercept** to equal 0.</br>If `TRUE` or omitted, the **Intercept** value is calculated normally; If `FALSE`, the **Intercept** value is set to zero.|
 
 ## Return value
 

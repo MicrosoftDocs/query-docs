@@ -20,11 +20,11 @@ DB(<cost>, <salvage>, <life>, <period>[, <month>])
 
 |Term|Definition|  
 |--------|--------------|  
-|cost|The initial cost of the asset.|
-|salvage|The value at the end of the depreciation (sometimes called the salvage value of the asset). This value can be 0.|
-|life|The number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).|
-|period|The period for which you want to calculate the depreciation. Period must use the same units as life. Must be between 1 and life (inclusive).|
-|month|(Optional) The number of months in the first year. If month is omitted, it is assumed to be 12.|
+|`cost`|The initial cost of the asset.|
+|`salvage`|The value at the end of the depreciation (sometimes called the salvage value of the asset). This value can be 0.|
+|`life`|The number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).|
+|`period`|The period for which you want to calculate the depreciation. Period must use the same units as life. Must be between 1 and life (inclusive).|
+|`month`|(Optional) The number of months in the first year. If month is omitted, it is assumed to be 12.|
 
 ## Return Value
 

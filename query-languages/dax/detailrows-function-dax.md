@@ -18,7 +18,7 @@ DETAILROWS([Measure])
   
 |Term|Definition|  
 |--------|--------------|  
-|Measure|Name of a measure.|  
+|`Measure`|Name of a measure.|  
   
 ## Return value
 

@@ -18,8 +18,8 @@ T.DIST.2T(X,Deg_freedom)
   
 |Term|Definition|  
 |--------|--------------|  
-|X|The numeric value at which to evaluate the distribution.|  
-|Deg_freedom |An integer indicating the number of degrees of freedom.|
+|`X`|The numeric value at which to evaluate the distribution.|  
+|`Deg_freedom` |An integer indicating the number of degrees of freedom.|
   
 ## Return value
 

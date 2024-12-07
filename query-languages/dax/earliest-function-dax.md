@@ -18,7 +18,7 @@ EARLIEST(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|A reference to a column.|  
+|`column`|A reference to a column.|  
   
 ## Return value
 

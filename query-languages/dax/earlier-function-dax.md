@@ -22,12 +22,12 @@ EARLIER(<column>, <number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|A column or expression that resolves to a column.|  
-|num|(Optional) A positive number to the outer evaluation pass.<br /><br />The next evaluation level out is represented by 1; two levels out is represented by 2 and so on.<br /><br />When omitted default value is 1.|  
+|`column`|A column or expression that resolves to a column.|  
+|`num`|(Optional) A positive number to the outer evaluation pass.<br /><br />The next evaluation level out is represented by 1; two levels out is represented by 2 and so on.<br /><br />When omitted default value is 1.|  
   
 ## Return value
 
-The current value of row, from **column**, at **number** of outer evaluation passes.  
+The current value of row, from `column`, at `number` of outer evaluation passes.  
   
 ## Exceptions
 
@@ -35,9 +35,9 @@ Description of errors
   
 ## Remarks
 
-- **EARLIER** succeeds if there is a row context prior to the beginning of the table scan. Otherwise it returns an error.  
+- `EARLIER` succeeds if there is a row context prior to the beginning of the table scan. Otherwise it returns an error.  
   
-- The performance of **EARLIER** might be slow because theoretically, it might have to perform a number of operations that is close to the total number of rows (in the column) times the same number (depending on the syntax of the expression). For example if you have 10 rows in the column, approximately a 100 operations could be required; if you have 100 rows then close to 10,000 operations might be performed.  
+- The performance of `EARLIER` might be slow because theoretically, it might have to perform a number of operations that is close to the total number of rows (in the column) times the same number (depending on the syntax of the expression). For example if you have 10 rows in the column, approximately a 100 operations could be required; if you have 100 rows then close to 10,000 operations might be performed.  
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
@@ -48,7 +48,7 @@ Description of errors
 
 To illustrate the use of EARLIER, it is necessary to build a scenario that calculates a rank value and then uses that rank value in other calculations.  
   
-The following example is based on this simple table, **ProductSubcategory**, which shows the total sales for each ProductSubcategory.  
+The following example is based on this simple table, `ProductSubcategory`, which shows the total sales for each ProductSubcategory.  
   
 The final table, including the ranking column is shown here.  
   
@@ -104,17 +104,17 @@ A new calculated column, **SubCategorySalesRanking**, is created by using the fo
 
 The following steps describe the method of calculation in more detail.  
   
-1. The **EARLIER** function gets the value of *TotalSubcategorySales* for the current row in the table. In this case, because the process is starting, it is the first row in the table  
+1. The `EARLIER` function gets the value of *TotalSubcategorySales* for the current row in the table. In this case, because the process is starting, it is the first row in the table  
   
-2. **EARLIER**([*TotalSubcategorySales*]) evaluates to $156,167.88, the current row in the outer loop.  
+2. `EARLIER([TotalSubcategorySales])` evaluates to $156,167.88, the current row in the outer loop.  
   
-3. The **FILTER** function now returns a table where all rows have a value of *TotalSubcategorySales* larger than $156,167.88 (which is the current value for **EARLIER**).  
+3. The `FILTER` function now returns a table where all rows have a value of *TotalSubcategorySales* larger than $156,167.88 (which is the current value for `EARLIER`).  
   
-4. The **COUNTROWS** function counts the rows of the filtered table and assigns that value to the new calculated column in the current row plus 1. Adding 1 is needed to prevent the top ranked value from become a Blank.  
+4. The `COUNTROWS` function counts the rows of the filtered table and assigns that value to the new calculated column in the current row plus 1. Adding 1 is needed to prevent the top ranked value from become a Blank.  
   
 5. The calculated column formula moves to the next row and repeats steps 1 to 4. These steps are repeated until the end of the table is reached.  
   
-The **EARLIER** function will always get the value of the column prior to the current table operation. If you need to get a value from the loop before that, set the second argument to 2.  
+The `EARLIER` function will always get the value of the column prior to the current table operation. If you need to get a value from the loop before that, set the second argument to 2.  
   
 ## Related content
 

@@ -22,12 +22,12 @@ This function does not take any parameters.
 
 A table of statistics. Each row of this table represents a different column in the model. Table columns include:
 
-- **Table Name**: The current column’s table.
-- **Column Name**: The current column’s name.
-- **Min**: The minimum value found within the current column.
-- **Max**: The maximum value found within the current column.
-- **Cardinality**: The number of distinct values found within the current column.
-- **Max Length**: The length of the longest string found within the current column (only applicable for string columns).
+- `Table Name`: The current column’s table.
+- `Column Name`: The current column’s name.
+- `Min`: The minimum value found within the current column.
+- `Max`: The maximum value found within the current column.
+- `Cardinality`: The number of distinct values found within the current column.
+- `Max Length`: The length of the longest string found within the current column (only applicable for string columns).
 
 ## Remarks
 

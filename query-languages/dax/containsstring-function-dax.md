@@ -6,7 +6,7 @@ title: "CONTAINSSTRING function (DAX) | Microsoft Docs"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Returns TRUE or FALSE indicating whether one string contains another string.  
+Returns `TRUE` or `FALSE` indicating whether one string contains another string.  
   
 ## Syntax  
   
@@ -18,12 +18,12 @@ CONTAINSSTRING(<within_text>, <find_text>)
   
 |Term|Definition|  
 |--------|--------------|  
-|within_text|The text in which you want to search for find_text.|  
-|find_text|The text you want to find.|
+|`within_text`|The text in which you want to search for find_text.|  
+|`find_text`|The text you want to find.|
   
 ## Return value  
 
-TRUE if find_text is a substring of within_text; otherwise FALSE.
+ `TRUE`  if find_text is a substring of within_text; otherwise `FALSE`.
 
 ## Remarks
 
@@ -49,4 +49,4 @@ Returns
 
 |[Case 1]  |[Case 2]  |[Case 3]  |[Case 4]  |
 |---------|---------|---------|---------|
-|TRUE     | TRUE         | TRUE         |FALSE          |
+|`TRUE`     | `TRUE`         | `TRUE`         |`FALSE`          |

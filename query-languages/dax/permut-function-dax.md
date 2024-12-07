@@ -18,8 +18,8 @@ PERMUT(number, number_chosen)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|Required. An integer that describes the number of objects.|  
-|number_chosen|Required. An integer that describes the number of objects in each permutation.|  
+|`number`|Required. An integer that describes the number of objects.|  
+|`number_chosen`|Required. An integer that describes the number of objects in each permutation.|  
   
 ## Return value
 

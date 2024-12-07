@@ -18,7 +18,7 @@ COUNTBLANK(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|The column that contains the blank cells to be counted.|  
+|`column`|The column that contains the blank cells to be counted.|  
   
 ## Return value
 

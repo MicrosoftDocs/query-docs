@@ -18,7 +18,7 @@ COUNT(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|The column that contains the values to be counted.|  
+|`column`|The column that contains the values to be counted.|  
   
 ## Return value
 
@@ -34,9 +34,9 @@ A whole number.
   
 - When the function finds no rows to count, it returns a blank.
 
-- Blank values are skipped. TRUE/FALSE values are not supported.
+- Blank values are skipped. `TRUE`/`FALSE` values are not supported.
 
-- If you want to evaluate a column of TRUE/FALSE values, use the COUNTA function.
+- If you want to evaluate a column of `TRUE`/`FALSE` values, use the COUNTA function.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 

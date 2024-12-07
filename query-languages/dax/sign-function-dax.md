@@ -18,7 +18,7 @@ SIGN(<number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|Any real number, a column that contains numbers, or an expression that evaluates to a number.|  
+|`number`|Any real number, a column that contains numbers, or an expression that evaluates to a number.|  
   
 ## Return value
 

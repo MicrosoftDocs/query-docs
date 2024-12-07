@@ -18,7 +18,7 @@ CALENDARAUTO([fiscal_year_end_month])
   
 |Term|Definition|  
 |--------|--------------|  
-|fiscal_year_end_month|Any DAX expression that returns an integer from 1 to 12. If omitted, defaults to the value specified in the calendar table template for the current user, if present; otherwise, defaults to 12.|  
+|`fiscal_year_end_month`|Any DAX expression that returns an integer from 1 to 12. If omitted, defaults to the value specified in the calendar table template for the current user, if present; otherwise, defaults to 12.|  
   
 ## Return value
 

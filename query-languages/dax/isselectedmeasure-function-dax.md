@@ -18,7 +18,7 @@ ISSELECTEDMEASURE( M1, M2, ... )
   
 |Term|Definition|  
 |--------|--------------|  
-|M1, M2, ...|A list of measures.|  
+|`M1, M2, ...`|A list of measures.|  
   
 ## Return value  
 
@@ -46,4 +46,4 @@ IF (
 ## Related content
 
 [SELECTEDMEASURE](selectedmeasure-function-dax.md)  
-[SELECTEDMEASURENAME](selectedmeasurename-function-dax.md)   
+[SELECTEDMEASURENAME](selectedmeasurename-function-dax.md)

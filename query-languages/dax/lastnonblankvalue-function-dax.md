@@ -18,8 +18,8 @@ LASTNONBLANKVALUE(<column>, <expression>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|A column or an expression that returns a single-column table.|  
-|expression|An expression evaluated for each value of \<column>.|
+|`column`|A column or an expression that returns a single-column table.|  
+|`expression`|An expression evaluated for each value of \<column>.|
   
 ## Return value  
 

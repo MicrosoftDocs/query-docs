@@ -18,7 +18,7 @@ LOWER(<text>)
   
 |Term|Definition|  
 |--------|--------------|  
-|text|The text you want to convert to lowercase, or a reference to a column that contains text.|  
+|`text`|The text you want to convert to lowercase, or a reference to a column that contains text.|  
   
 ## Return value
 
@@ -26,7 +26,7 @@ Text in lowercase.
   
 ## Remarks
 
-Characters that are not letters are not changed. For example, the formula `= LOWER("123ABC")` returns **123abc**.  
+Characters that are not letters are not changed. For example, the formula `= LOWER("123ABC")` returns `123abc`.  
   
 ## Example
 

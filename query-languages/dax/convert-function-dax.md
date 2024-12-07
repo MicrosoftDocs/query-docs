@@ -18,8 +18,8 @@ CONVERT(<Expression>, <Datatype>)
   
 |Term|Definition|  
 |--------|--------------|  
-|Expression|Any valid expression.|  
-|Datatype|An enumeration that includes: INTEGER(Whole Number), DOUBLE(Decimal Number), STRING(Text), BOOLEAN(True/False), CURRENCY(Fixed Decimal Number), DATETIME(Date, Time, etc).|  
+|`Expression`|Any valid expression.|  
+|`Datatype`|An enumeration that includes: INTEGER(Whole Number), DOUBLE(Decimal Number), STRING(Text), BOOLEAN(True/False), CURRENCY(Fixed Decimal Number), DATETIME(Date, Time, etc).|  
   
 ## Return value
 

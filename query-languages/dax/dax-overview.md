@@ -65,7 +65,7 @@ To learn more, see:
 
 ### Row-level security
 
-With row-level security, a DAX formula must evaluate to a Boolean TRUE/FALSE condition, defining which rows can be returned by the results of a query by members of a particular role. For example, for members of the Sales role, the Customers table with the following DAX formula:
+With row-level security, a DAX formula must evaluate to a Boolean `TRUE`/`FALSE` condition, defining which rows can be returned by the results of a query by members of a particular role. For example, for members of the Sales role, the Customers table with the following DAX formula:
 
 ```dax
 = Customers[Country] = "USA"
@@ -202,11 +202,11 @@ The financial functions in DAX are used in formulas that perform financial calcu
   
 ### Information functions  
 
-An information function looks at the cell or row that is provided as an argument and tells you whether the value matches the expected type. For example, the ISERROR function returns TRUE if the value that you reference contains an error. To learn more, see [Information functions](information-functions-dax.md).  
+An information function looks at the cell or row that is provided as an argument and tells you whether the value matches the expected type. For example, the ISERROR function returns `TRUE` if the value that you reference contains an error. To learn more, see [Information functions](information-functions-dax.md).  
   
 ### Logical functions  
 
-Logical functions act upon an expression to return information about the values in the expression. For example, the TRUE function lets you know whether an expression that you are evaluating returns a TRUE value. To learn more, see [Logical functions](logical-functions-dax.md).  
+Logical functions act upon an expression to return information about the values in the expression. For example, the `TRUE` function lets you know whether an expression that you are evaluating returns a `TRUE` value. To learn more, see [Logical functions](logical-functions-dax.md).  
   
 ### Mathematical and trigonometric functions  
 
@@ -263,13 +263,13 @@ In this example, TotalQty can be passed as a named variable to other expressions
   
 |Data type in model|Data type in DAX|Description|  
 |------------------------|----------------------|-----------------|  
-|Whole Number|A 64 bit (eight-bytes) integer value <sup>1, 2</sup>|Numbers that have no decimal places. Integers can be positive or negative numbers, but must be whole numbers between -9,223,372,036,854,775,808 (-2^63) and 9,223,372,036,854,775,807 (2^63-1).|  
-|Decimal Number|A 64 bit (eight-bytes) real number <sup>1, 2</sup>|Real numbers are numbers that can have decimal places. Real numbers cover a wide range of values:<br /><br /> Negative values from -1.79E +308 through -2.23E -308<br /><br /> Zero<br /><br /> Positive values from 2.23E -308 through 1.79E + 308<br /><br /> However, the number of significant digits is limited to 17 decimal digits.|  
-|Boolean|Boolean|Either a True or False value.|  
-|Text|String|A Unicode character data string. Can be strings, numbers or dates represented in a text format.|  
-|Date|Date/time|Dates and times in an accepted date-time representation.<br /><br /> Valid dates are all dates after March 1, 1900.|  
-|Currency|Currency|Currency data type allows values between -922,337,203,685,477.5808 to 922,337,203,685,477.5807 with four decimal digits of fixed precision.|  
-|N/A|Blank|A blank is a data type in DAX that represents and replaces SQL nulls. You can create a blank by using the BLANK function, and test for blanks by using the logical function, ISBLANK.|  
+|`Whole Number`|A 64 bit (eight-bytes) integer value <sup>1, 2</sup>|Numbers that have no decimal places. Integers can be positive or negative numbers, but must be whole numbers between -9,223,372,036,854,775,808 (-2^63) and 9,223,372,036,854,775,807 (2^63-1).|  
+|`Decimal Number`|A 64 bit (eight-bytes) real number <sup>1, 2</sup>|Real numbers are numbers that can have decimal places. Real numbers cover a wide range of values:<br /><br /> Negative values from -1.79E +308 through -2.23E -308<br /><br /> Zero<br /><br /> Positive values from 2.23E -308 through 1.79E + 308<br /><br /> However, the number of significant digits is limited to 17 decimal digits.|  
+|`Boolean`|Boolean|Either a True or False value.|  
+|`Text`|String|A Unicode character data string. Can be strings, numbers or dates represented in a text format.|  
+|`Date`|Date/time|Dates and times in an accepted date-time representation.<br /><br /> Valid dates are all dates after March 1, 1900.|  
+|`Currency`|Currency|Currency data type allows values between -922,337,203,685,477.5808 to 922,337,203,685,477.5807 with four decimal digits of fixed precision.|  
+|`N/A`|Blank|A blank is a data type in DAX that represents and replaces SQL nulls. You can create a blank by using the BLANK function, and test for blanks by using the logical function, ISBLANK.|  
   
 Tabular data models also include the *Table* data type as the input or output to many DAX functions. For example, the FILTER function takes a table as input and outputs another table that contains only the rows that meet the filter conditions. By combining table functions with aggregation functions, you can perform complex calculations over dynamically defined data sets.  
   
@@ -356,7 +356,7 @@ For examples of how to selectively clear and apply filters within formulas, see 
 
 The DAX language uses four different types of calculation operators in formulas:  
   
-- Comparison operators to compare values and return a logical TRUE\FALSE value.  
+- Comparison operators to compare values and return a logical `TRUE`\`FALSE` value.  
 - Arithmetic operators to perform arithmetic calculations that return numeric values.  
 - Text concatenation operators to join two or more text strings.  
 - Logical operators that combine two or more expressions to return a single result.  

@@ -18,7 +18,7 @@ NORM.S.INV(Probability)
   
 |Term|Definition|  
 |--------|--------------|  
-|Probability|A probability corresponding to the normal distribution.|  
+|`Probability`|A probability corresponding to the normal distribution.|  
   
 ## Return value
 

@@ -18,7 +18,7 @@ CURRENCY(<value>)
 
 |Term|Definition|  
 |--------|--------------|  
-|value|Any DAX expression that returns a single scalar value where the expression is to be evaluated exactly once before all other operations. |  
+|`value`|Any DAX expression that returns a single scalar value where the expression is to be evaluated exactly once before all other operations. |  
 
 ## Return value
 

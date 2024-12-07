@@ -20,8 +20,8 @@ CHISQ.INV(probability,deg_freedom)
   
 |Term|Definition|  
 |--------|--------------|  
-|Probability|A probability associated with the chi-squared distribution.|  
-|Deg_freedom|The number of degrees of freedom.|  
+|`Probability`|A probability associated with the chi-squared distribution.|  
+|`Deg_freedom`|The number of degrees of freedom.|  
   
 ## Return value
 
@@ -43,5 +43,5 @@ Returns the inverse of the left-tailed probability of the chi-squared distributi
   
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
-|= CHISQ.INV(0.93,1)|Inverse of the left-tailed probability of the chi-squared distribution for 0.93, using 1 degree of freedom.|5.318520074|  
-|= CHISQ.INV(0.6,2)|Inverse of the left-tailed probability of the chi-squared distribution for 0.6, using 2 degrees of freedom.|1.832581464|  
+|`= CHISQ.INV(0.93,1)`|Inverse of the left-tailed probability of the chi-squared distribution for 0.93, using 1 degree of freedom.|5.318520074|  
+|`= CHISQ.INV(0.6,2)`|Inverse of the left-tailed probability of the chi-squared distribution for 0.6, using 2 degrees of freedom.|1.832581464|  

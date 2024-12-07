@@ -18,7 +18,7 @@ ISEMPTY(<table_expression>)
   
 |Term|Definition|  
 |--------|--------------|  
-|table_expression|A table reference or a DAX expression that returns a table.|  
+|`table_expression`|A table reference or a DAX expression that returns a table.|  
   
 ## Return value
 
@@ -45,4 +45,4 @@ EVALUATE
 ROW("Any countries with count > 25?", NOT(ISEMPTY(FILTER(Info, [County]>25))))  
 ```
 
-Return value: **FALSE**  
+Return value: `FALSE``

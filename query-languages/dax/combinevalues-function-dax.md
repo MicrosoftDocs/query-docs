@@ -7,7 +7,7 @@ title: "COMBINEVALUES function (DAX) | Microsoft Docs"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Joins two or more text strings into one text string. The primary purpose of this function is to support multi-column relationships in DirectQuery models. See **Remarks** for details.  
+Joins two or more text strings into one text string. The primary purpose of this function is to support multi-column relationships in DirectQuery models. See [remarks](#remarks) for details.  
   
 ## Syntax  
   
@@ -19,8 +19,8 @@ COMBINEVALUES(<delimiter>, <expression>, <expression>[, <expression>]…)
   
 |Term|Definition|  
 |--------|--------------|  
-|delimiter|A separator to use during concatenation. Must be a constant value.|  
-|expression|A DAX expression whose value will be joined into a single text string.|  
+|`delimiter`|A separator to use during concatenation. Must be a constant value.|  
+|`expression`|A DAX expression whose value will be joined into a single text string.|  
   
 ## Return value  
 

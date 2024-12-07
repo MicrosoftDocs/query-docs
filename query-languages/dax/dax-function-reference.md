@@ -21,9 +21,9 @@ The DAX function reference provides detailed information including syntax, param
 
 [Financial functions](financial-functions-dax.md) - These functions are used in formulas that perform financial calculations, such as net present value and rate of return.
   
-[Information functions](information-functions-dax.md) - These functions look at a table or column provided as an argument to another function and returns whether the value matches the expected type. For example, the ISERROR function returns TRUE if the value you reference contains an error.  
+[Information functions](information-functions-dax.md) - These functions look at a table or column provided as an argument to another function and returns whether the value matches the expected type. For example, the ISERROR function returns `TRUE` if the value you reference contains an error.  
   
-[Logical functions](logical-functions-dax.md) - These functions return information about values in an expression. For example, the TRUE function lets you know whether an expression that you are evaluating returns a TRUE value.  
+[Logical functions](logical-functions-dax.md) - These functions return information about values in an expression. For example, the `TRUE` function lets you know whether an expression that you are evaluating returns a `TRUE` value.  
   
 [Math and Trig functions](math-and-trig-functions-dax.md) - Mathematical functions in DAX are similar to Excel's mathematical and trigonometric functions. However, there are some differences in the numeric data types used by DAX functions.  
   

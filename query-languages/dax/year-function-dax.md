@@ -18,7 +18,7 @@ YEAR(<date>)
   
 |Term|Definition|  
 |--------|--------------|  
-|date|A date in **datetime** or text format, containing the year you want to find.|  
+|`date`|A date in `datetime` or text format, containing the year you want to find.|  
   
 ## Return value
 
@@ -26,7 +26,7 @@ An integer in the range 1900-9999.
   
 ## Remarks
 
-- In contrast to Microsoft Excel, which stores dates as serial numbers, DAX uses a **datetime** data type to work with dates and times.  
+- In contrast to Microsoft Excel, which stores dates as serial numbers, DAX uses a `datetime` data type to work with dates and times.  
   
 - Dates should be entered by using the DATE function, or as results of other formulas or functions. You can also enter dates in accepted text representations of a date, such as March 3, 2007, or Mar-3-2003.  
   

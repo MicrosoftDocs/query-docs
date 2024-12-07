@@ -18,7 +18,7 @@ ALLCROSSFILTERED(<table>)
   
 |Term|Definition|  
 |--------|--------------|  
-|table|The table that you want to clear filters on. |  
+|`table`|The table that you want to clear filters on. |  
   
 ## Return value  
 

@@ -18,7 +18,7 @@ ACOTH(number)
   
 |Term|Definition|  
 |--------|--------------|  
-|Number|The absolute value of Number must be greater than 1.|  
+|`Number`|The absolute value of Number must be greater than 1.|  
   
 ## Return value
 

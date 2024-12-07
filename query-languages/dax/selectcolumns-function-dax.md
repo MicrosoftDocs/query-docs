@@ -18,9 +18,9 @@ SELECTCOLUMNS(<Table>, [<Name>], <Expression>, [<Name>], …)
 
 |Term|Definition|  
 |--------|--------------|  
-| Table|  Any DAX expression that returns a table. |  
-| Name |  The name given to the column, enclosed in double quotes. |
-| Expression |Any expression that returns a scalar value like a column reference, integer, or string value.|
+|`Table`|  Any DAX expression that returns a table. |  
+|`Name` |  The name given to the column, enclosed in double quotes. |
+|`Expression` |Any expression that returns a scalar value like a column reference, integer, or string value.|
   
 ## Return value
 

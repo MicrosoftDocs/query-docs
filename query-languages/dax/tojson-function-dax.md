@@ -18,12 +18,12 @@ TOJSON(<Table>, [MaxRows])
   
 |Term|Definition|  
 |--------|--------------|  
-|Table|The table to be converted to JSON.|  
-|MaxRows|(Optional) The maximum number fo rows to convert. Default is 10 rows.|  
+|`Table`|The table to be converted to JSON.|  
+|`MaxRows`|(Optional) The maximum number fo rows to convert. Default is 10 rows.|  
   
 ## Return value
 
-A string with JSON representation of the table. The representation contains column names as "header", count-of-rows as “rowCount”, and values as “data”.
+A string with JSON representation of the table. The representation contains column names as "header", count-of-rows as "rowCount", and values as "data".
   
 ## Example
 

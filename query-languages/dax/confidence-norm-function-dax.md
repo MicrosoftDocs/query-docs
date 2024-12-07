@@ -18,9 +18,9 @@ CONFIDENCE.NORM(alpha,standard_dev,size)
   
 |Term|Definition|  
 |--------|--------------|  
-|alpha|The significance level used to compute the confidence level. The confidence level equals 100*(1 - alpha)%, or in other words, an alpha of 0.05 indicates a 95 percent confidence level.|  
-|standard_dev|The population standard deviation for the data range and is assumed to be known.|  
-|standard_dev,size|The sample size.|  
+|`alpha`|The significance level used to compute the confidence level. The confidence level equals 100*(1 - alpha)%, or in other words, an alpha of 0.05 indicates a 95 percent confidence level.|  
+|`standard_dev`|The population standard deviation for the data range and is assumed to be known.|  
+|`standard_dev,size`|The sample size.|  
   
 ## Return value
 

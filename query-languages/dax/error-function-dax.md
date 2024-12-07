@@ -18,7 +18,7 @@ ERROR(<text>)
   
 |Term|Definition|  
 |--------|--------------|  
-|text|A text string containing an error message.|  
+|`text`|A text string containing an error message.|  
   
 ## Return value
 

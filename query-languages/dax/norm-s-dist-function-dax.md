@@ -18,8 +18,8 @@ NORM.S.DIST(Z, Cumulative)
   
 |Term|Definition|  
 |--------|--------------|  
-|Z|The value for which you want the distribution.|  
-|Cumulative|Cumulative is a logical value that determines the form of the function. If cumulative is TRUE, NORM.S.DIST returns the cumulative distribution function; if FALSE, it returns the probability density function.|
+|`Z`|The value for which you want the distribution.|  
+|`Cumulative`|Cumulative is a logical value that determines the form of the function. If cumulative is `TRUE`, NORM.S.DIST returns the cumulative distribution function; if `FALSE`, it returns the probability density function.|
   
 ## Return value
 

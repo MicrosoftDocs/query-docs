@@ -6,7 +6,7 @@ title: "OPENINGBALANCEMONTH function (DAX) | Microsoft Docs"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Evaluates the **expression** at the date corresponding to the end of the previous month in the current context.  
+Evaluates the `expression` at the date corresponding to the end of the previous month in the current context.  
   
 ## Syntax  
   
@@ -18,24 +18,24 @@ OPENINGBALANCEMONTH(<expression>,<dates>[,<filter>])
   
 |Term|Definition|  
 |--------|--------------|  
-|expression|An expression that returns a scalar value.|  
-|dates|A column that contains dates.|  
-|filter|(optional) An expression that specifies a filter to apply to the current context.|  
+|`expression`|An expression that returns a scalar value.|  
+|`dates`|A column that contains dates.|  
+|`filter`|(optional) An expression that specifies a filter to apply to the current context.|  
   
 ## Return value
 
-A scalar value that represents the **expression** evaluated at the first date of the month in the current context.  
+A scalar value that represents the `expression` evaluated at the first date of the month in the current context.  
   
 ## Remarks
 
-- The **dates** argument can be any of the following:  
+- The `dates` argument can be any of the following:  
   - A reference to a date/time column.  
   - A table expression that returns a single column of date/time values.  
   - A Boolean expression that defines a single-column table of date/time values.  
   
 - Constraints on Boolean expressions are described in the topic, [CALCULATE function](calculate-function-dax.md).  
   
-- The **filter** expression has restrictions described in the topic, [CALCULATE function](calculate-function-dax.md).  
+- The `filter` expression has restrictions described in the topic, [CALCULATE function](calculate-function-dax.md).  
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   

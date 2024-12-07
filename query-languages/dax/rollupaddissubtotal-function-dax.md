@@ -18,10 +18,10 @@ ROLLUPADDISSUBTOTAL ( [<grandtotalFilter>], <groupBy_columnName>, <name> [, [<gr
 
 |Term|Definition|  
 |--------|--------------|  
-|grandtotalFilter|(Optional) Filter to be applied to the grandtotal level.|  
-|groupBy_columnName|Name of an existing column used to create summary groups based on the values found in it. Cannot be an expression.|  
+|`grandtotalFilter`|(Optional) Filter to be applied to the grandtotal level.|  
+|`groupBy_columnName`|Name of an existing column used to create summary groups based on the values found in it. Cannot be an expression.|  
 |name |Name of an ISSUBTOTAL column. The values of the column are calculated using the ISSUBTOTAL function.|
-|groupLevelFilter|(Optional) Filter to be applied to the current level.|
+|`groupLevelFilter`|(Optional) Filter to be applied to the current level.|
 
 ## Return value
 

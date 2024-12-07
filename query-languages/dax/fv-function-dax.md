@@ -20,13 +20,13 @@ FV(<rate>, <nper>, <pmt>[, <pv>[, <type>]])
 
 |Term|Definition|  
 |--------|--------------|  
-|rate|The interest rate per period.|
-|nper|The total number of payment periods in an annuity.|
-|pmt|The payment made each period; it cannot change over the life of the annuity. Typically, pmt contains principal and interest but no other fees or taxes.|
-|pv|(Optional) The present value, or the lump-sum amount that a series of future payments is worth right now. If pv is omitted, it is assumed to be BLANK.|
-|type|(Optional) The number 0 or 1 which indicates when payments are due. If type is omitted, it is assumed to be 0. The accepted values are listed below this table.|
+|`rate`|The interest rate per period.|
+|`nper`|The total number of payment periods in an annuity.|
+|`pmt`|The payment made each period; it cannot change over the life of the annuity. Typically, pmt contains principal and interest but no other fees or taxes.|
+|`pv`|(Optional) The present value, or the lump-sum amount that a series of future payments is worth right now. If pv is omitted, it is assumed to be BLANK.|
+|`type`|(Optional) The number 0 or 1 which indicates when payments are due. If type is omitted, it is assumed to be 0. The accepted values are listed below this table.|
 
-The **type** parameter accepts the following values:
+The `type` parameter accepts the following values:
 
 | **Set type equal to** | **If payments are due**        |
 | --------------------- | ------------------------------ |

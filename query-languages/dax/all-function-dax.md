@@ -18,8 +18,8 @@ ALL( [<table> | <column>[, <column>[, <column>[,…]]]] )
   
 |Term|Definition|  
 |--------|--------------|  
-|table|The table that you want to clear filters on.|  
-|column|The column that you want to clear filters on.|  
+|`table`|The table that you want to clear filters on.|  
+|`column`|The column that you want to clear filters on.|  
   
 The argument to the ALL function must be either a reference to a base table or a reference to a base column.  You cannot use table expressions or column expressions with the ALL function.  
   
@@ -31,7 +31,7 @@ The table or column with filters removed.
 
 - This function is not used by itself, but serves as an intermediate function that can be used to change the set of results over which some other calculation is performed.  
 
-- The normal behavior for DAX expressions containing the ALL() function is that any filters applied will be ignored. However, there are some scenarios where this is not the case because of *auto-exist*, a DAX technology that optimizes filtering in order to reduce the amount of processing required for certain DAX queries. An example where auto-exist and ALL() provide unexpected results is when filtering on two or more columns of the same table (like when using slicers), and there is a measure on that same table that uses ALL(). In this case, auto-exist will *merge* the multiple filters into one and will only filter on existing combinations of values. Because of this merge, the measure will be calculated on the existing combinations of values and the result will be based on filtered values instead of all values as expected. To learn more about auto-exist and its effect on calculations, see Microsoft MVP Alberto Ferrari's [Understanding DAX Auto-Exist](https://www.sqlbi.com/articles/understanding-dax-auto-exist/) article on :::no-loc text="sql.bi.com":::.
+- The normal behavior for DAX expressions containing the ALL() function is that any filters applied will be ignored. However, there are some scenarios where this is not the case because of `auto-exist`, a DAX technology that optimizes filtering in order to reduce the amount of processing required for certain DAX queries. An example where auto-exist and ALL() provide unexpected results is when filtering on two or more columns of the same table (like when using slicers), and there is a measure on that same table that uses ALL(). In this case, auto-exist will *merge* the multiple filters into one and will only filter on existing combinations of values. Because of this merge, the measure will be calculated on the existing combinations of values and the result will be based on filtered values instead of all values as expected. To learn more about auto-exist and its effect on calculations, see Microsoft MVP Alberto Ferrari's [Understanding DAX Auto-Exist](https://www.sqlbi.com/articles/understanding-dax-auto-exist/) article on :::no-loc text="sql.bi.com":::.
   
 - The following table describes how you can use the ALL and ALLEXCEPT functions in different scenarios.  
   

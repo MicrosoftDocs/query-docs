@@ -33,8 +33,8 @@ COLLAPSEALL ( <axis> )
 
 |Term|Definition|
 |--------|--------------|
-|expression|The expression to be evaluated in the new context.|
-|axis|An axis reference.|
+|`expression`|The expression to be evaluated in the new context.|
+|`axis`|An axis reference.|
 
 ## Return value
 

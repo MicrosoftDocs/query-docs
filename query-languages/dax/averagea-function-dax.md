@@ -18,7 +18,7 @@ AVERAGEA(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|A column that contains the values for which you want the average.|  
+|`column`|A column that contains the values for which you want the average.|  
   
 ## Return value
 
@@ -28,8 +28,8 @@ A decimal number.
 
 - The AVERAGEA function takes a column and averages the numbers in it, but also handles non-numeric data types according to the following rules:  
   
-  - Values that evaluates to TRUE count as 1.  
-  - Values that evaluate to FALSE count as 0 (zero).  
+  - Values that evaluates to `TRUE` count as 1.  
+  - Values that evaluate to `FALSE` count as 0 (zero).  
   - Values that contain non-numeric text count as 0 (zero).  
   - Empty text ("") counts as 0 (zero).  
   
@@ -49,7 +49,7 @@ The following example returns the average of non-blank cells in the referenced c
 |0000124|20|Counts as 20|  
 |0000125|n/a|Counts as 0|  
 |0000126||Counts as 0|  
-|0000126|TRUE|Counts as 1|  
+|0000126|``TRUE``|Counts as 1|  
   
 ```dax
 = AVERAGEA([Amount])  

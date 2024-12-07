@@ -16,7 +16,7 @@ EVALUATE <table>
   
 |Term|Definition|  
 |--------|--------------|  
-|table|A table expression|  
+|`table`|A table expression|  
   
 ## Return value
 

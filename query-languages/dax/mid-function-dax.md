@@ -18,9 +18,9 @@ MID(<text>, <start_num>, <num_chars>)
   
 |Term|Definition|  
 |--------|--------------|  
-|text|The text string from which you want to extract the characters, or a column that contains text.|  
-|start_num|The position of the first character you want to extract. Positions start at 1.|  
-|num_chars|The number of characters to return.|  
+|`text`|The text string from which you want to extract the characters, or a column that contains text.|  
+|`start_num`|The position of the first character you want to extract. Positions start at 1.|  
+|`num_chars`|The number of characters to return.|  
   
 ## Return value
 A string of text of the specified length.  
@@ -37,7 +37,7 @@ The following expression,
 MID("abcde",2,3))
 ```
 
-Returns **"bcd"**.
+Returns `"bcd"`.
 
 The following expression,
 

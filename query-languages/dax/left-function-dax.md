@@ -18,8 +18,8 @@ LEFT(<text>, <num_chars>)
   
 |Term|Definition|  
 |--------|--------------|  
-|text|The text string containing the characters you want to extract, or a reference to a column that contains text.|  
-|num_chars|(optional) The number of characters you want LEFT to extract; if omitted, 1.|  
+|`text`|The text string containing the characters you want to extract, or a reference to a column that contains text.|  
+|`num_chars`|(optional) The number of characters you want LEFT to extract; if omitted, 1.|  
   
 ## Return value
 
@@ -39,7 +39,7 @@ The following example returns the first five characters of the company name in t
 = CONCATENATE(LEFT('Reseller'[ResellerName],LEFT(GeographyKey,3))  
 ```
 
-If the **num_chars** argument is a number that is larger than the number of characters available, the function returns the maximum characters available and does not raise an error. For example, the column [GeographyKey] contains numbers such as 1, 12 and 311; therefore the result also has variable length.  
+If the `num_chars` argument is a number that is larger than the number of characters available, the function returns the maximum characters available and does not raise an error. For example, the column [GeographyKey] contains numbers such as 1, 12 and 311; therefore the result also has variable length.  
   
 ## Related content
 
