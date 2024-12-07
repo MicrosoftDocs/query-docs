@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: `TRUE` 
-title:  `TRUE` function (DAX) | Microsoft Docs"
+description: "Learn more about: TRUE"
+title: "TRUE function (DAX)"
 ---
 # TRUE
 
