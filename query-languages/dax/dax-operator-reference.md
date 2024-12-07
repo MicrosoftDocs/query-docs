@@ -48,17 +48,17 @@ Use the ampersand (`&`) to join, or concatenate, two or more text strings to pro
   
 |Text operator|Meaning|Example|  
 |-----------------|-----------|-----------|  
-|&amp; (ampersand)|Connects, or concatenates, two values to produce one continuous text value|[Region] &amp; ", " &amp; [City]|  
+|`&` (ampersand)|Connects, or concatenates, two values to produce one continuous text value|`[Region] & ", " & [City]`|  
   
 ### Logical operators
 
-Use logical operators (&amp;&amp;) and (||) to combine expressions to produce a single result.  
+Use logical operators (`&&`) and (`||`) to combine expressions to produce a single result.  
   
 |Text operator|Meaning|Examples|  
 |-----------------|-----------|------------|  
-|&amp;&amp; (double ampersand)|Creates an AND condition between two expressions that each have a Boolean result. If both expressions return `TRUE`, the combination of the expressions also returns `TRUE`; otherwise the combination returns `FALSE`.|([Region] = "France") &amp;&amp; ([BikeBuyer] = "yes"))|  
-|&#124;&#124; (double pipe symbol)|Creates an OR condition between two logical expressions. If either expression returns `TRUE`, the result is `TRUE`; only when both expressions are `FALSE` is the result `FALSE`.|(([Region] = "France") &#124;&#124; ([BikeBuyer] = "yes"))| 
-|IN|Creates a logical OR condition between each row being compared to a table. Note: the table constructor syntax uses curly braces.|'Product'[Color] IN { "Red", "Blue", "Black" }|   
+|`&&`(double ampersand)|Creates an AND condition between two expressions that each have a Boolean result. If both expressions return `TRUE`, the combination of the expressions also returns `TRUE`; otherwise the combination returns `FALSE`.|`([Region] = "France") && ([BikeBuyer] = "yes"))`|  
+|`||` (double pipe symbol)|Creates an OR condition between two logical expressions. If either expression returns `TRUE`, the result is `TRUE`; only when both expressions are `FALSE` is the result `FALSE`. | `(([Region] = "France") || ([BikeBuyer] = "yes"))`| 
+|IN|Creates a logical OR condition between each row being compared to a table. Note: the table constructor syntax uses curly braces.|`'Product'[Color] IN { "Red", "Blue", "Black" }`|
   
 ## Operators and precedence order
 
@@ -76,13 +76,13 @@ If you combine several operators in a single formula, the operations are ordered
   
 |Operator|Description|  
 |------------|---------------|  
-|^|Exponentiation|  
-|–|Sign (as in –1)|  
-|* and /|Multiplication and division|  
-|+ and –|Addition and subtraction|  
-|&amp;|Connects two strings of text (concatenation)|  
-|=,==,<,>,<=,>=,<>,IN|Comparison|  
-|NOT|NOT (unary operator)|  
+|`^`|Exponentiation|  
+|`–`|Sign (such as –1)|  
+|`*` and `/`|Multiplication and division|  
+|`+` and `–`|Addition and subtraction|  
+|`&`|Connects two strings of text (concatenation)|  
+|`=,==,<,>,<=,>=,<>,IN`|Comparison|  
+|`NOT`|`NOT` (unary operator)|  
   
 ### Using parentheses to control calculation order
 
@@ -98,7 +98,7 @@ In contrast, if you use parentheses to change the syntax, the order is changed s
 =(5+2)*3  
 ```
 
-In the following example, the parentheses around the first part of the formula force the calculation to evaluate the expression `(3 + 0.25)` first and then divide the result by the result of the expression, (`3 - 0.25)`.  
+In the following example, the parentheses around the first part of the formula force the calculation to evaluate the expression `(3 + 0.25)` first and then divide the result by the result of the expression, `(3 - 0.25)`.  
   
 ```dax
 =(3 + 0.25)/(3 - 0.25)  

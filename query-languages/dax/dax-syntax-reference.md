@@ -9,9 +9,9 @@ This article describes syntax and requirements for the DAX formula expression la
   
 ## Syntax requirements  
   
-A DAX formula always starts with an equal sign (=). After the equals sign, you can provide any expression that evaluates to a scalar, or an expression that can be converted to a scalar. These include the following:  
+A DAX formula always starts with an equal sign (`=`). After the equals sign, you can provide any expression that evaluates to a scalar, or an expression that can be converted to a scalar. These include the following:  
   
--   A scalar constant, or expression that uses a scalar operator (+,-,*,/,>=,...,&&, ...)  
+-   A scalar constant, or expression that uses a scalar operator (`+,-,*,/,>=,...,&&, ...`)  
   
 -   References to columns or tables. The DAX language always uses tables and columns as inputs to functions, never an array or arbitrary set of values.  
   

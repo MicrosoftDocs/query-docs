@@ -34,7 +34,7 @@ Filters can be:
 - Table filter expressions
 - Filter modification functions
 
-When there are multiple filters, they can be evaluated by using the AND (&&) [logical operator](dax-operator-reference.md#logical-operators), meaning all conditions must be `TRUE`, or by the OR (||) logical operator, meaning either condition can be true.
+When there are multiple filters, they can be evaluated by using the AND (`&&`) [logical operator](dax-operator-reference.md#logical-operators), meaning all conditions must be `TRUE`, or by the OR (`||`) logical operator, meaning either condition can be true.
 
 #### Boolean filter expressions
 
