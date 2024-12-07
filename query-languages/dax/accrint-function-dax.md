@@ -96,7 +96,7 @@ EVALUATE
 
 Returns the accrued interest from issue to settlement, for a security with the terms specified above.
 
-| **Value**    |
+| **[Value]**    |
 | ---------------- |
 | 116.944444444444 |
 
@@ -113,6 +113,6 @@ EVALUATE
 
 Returns the accrued interest from first_interest to settlement, for a security with the terms specified above.
 
-| **Value**    |
+| **[Value]**    |
 | ---------------- |
 | 66.9444444444445 |
