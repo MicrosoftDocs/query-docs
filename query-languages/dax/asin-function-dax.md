@@ -30,8 +30,8 @@ To express the arcsine in degrees, multiply the result by 180/PI( ) or use the D
   
 ## Example  
   
-|`Formula`|Description|Result|  
+|Formula|Description|Result|  
 |-----------|---------------|----------|  
-|= ASIN(-0.5)|Arcsine of -0.5 in radians, -pi/6|-0.523598776|  
-|= ASIN(-0.5)*180/PI()|Arcsine of -0.5 in degrees|-30|  
-|= DEGREES(ASIN(-0.5))|Arcsine of -0.5 in degrees|-30|  
+|`= ASIN(-0.5)`|Arcsine of -0.5 in radians, -pi/6|-0.523598776|  
+|`= ASIN(-0.5)*180/PI()`|Arcsine of -0.5 in degrees|-30|  
+|`= DEGREES(ASIN(-0.5))`|Arcsine of -0.5 in degrees|-30|  
