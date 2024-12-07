@@ -34,7 +34,7 @@ The hyperbolic cosine of a number.
 
 ## Example  
   
-Description|Result|  
+| Description|Result| Resulting value | 
 |-----------|---------------|----------|  
 |`= COSH(4)`|Hyperbolic cosine of 4|27.308233|  
 |`= COSH(EXP(1))`|Hyperbolic cosine of the base of the natural logarithm.|7.6101251|  
