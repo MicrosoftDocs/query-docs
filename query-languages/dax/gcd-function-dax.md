@@ -26,15 +26,15 @@ The greatest common divisor of two or more integers.
   
 ## Remarks
 
-- If any argument is nonnumeric, GCD returns the #VALUE! error value.  
+- If any argument is nonnumeric, GCD returns the `#VALUE!` error value.  
   
-- If any argument is less than zero, GCD returns the #NUM! error value.  
+- If any argument is less than zero, GCD returns the `#NUM!` error value.  
   
 - One divides any value evenly.  
   
 - A prime number has only itself and one as even divisors.  
   
-- If a parameter to GCD is &gt;=2^53, GCD returns the #NUM! error value.  
+- If a parameter to GCD is &gt;=2^53, GCD returns the `#NUM!` error value.  
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 

@@ -28,11 +28,11 @@ Returns the confidence interval for a population mean, using a Student's t distr
   
 ## Remarks
 
-- If any argument is nonnumeric, CONFIDENCE.T returns the #VALUE! error value.  
+- If any argument is nonnumeric, CONFIDENCE.T returns the `#VALUE!` error value.  
   
-- If alpha ≤ 0 or alpha ≥ 1, CONFIDENCE.T returns the #NUM! error value.  
+- If `alpha ≤ 0` or `alpha ≥ 1`, CONFIDENCE.T returns the `#NUM!` error value.  
   
-- If standard_dev ≤ 0, CONFIDENCE.T returns the #NUM! error value.  
+- If `standard_dev ≤ 0`, CONFIDENCE.T returns the `#NUM!` error value.  
   
 - If size is not an integer, it is rounded.  
   

@@ -30,11 +30,11 @@ Returns the Poisson distribution.
 
 - If x is not an integer, it is rounded.  
 
-- If x or mean is nonnumeric, POISSON.DIST returns the #VALUE! error value.  
+- If x or mean is nonnumeric, POISSON.DIST returns the `#VALUE!` error value.  
 
-- If x &lt; 0, POISSON.DIST returns the #NUM! error value.  
+- If x &lt; 0, POISSON.DIST returns the `#NUM!` error value.  
 
-- If mean &lt; 0, POISSON.DIST returns the #NUM! error value.  
+- If mean &lt; 0, POISSON.DIST returns the `#NUM!` error value.  
 
 - POISSON.DIST is calculated as follows.  
 

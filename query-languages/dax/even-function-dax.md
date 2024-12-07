@@ -26,7 +26,7 @@ Returns number rounded up to the nearest even integer.
   
 ## Remarks
 
-- If `number` is nonnumeric, EVEN returns the #VALUE! error value.  
+- If `number` is nonnumeric, EVEN returns the `#VALUE!` error value.  
   
 - Regardless of the sign of number, a value is rounded up when adjusted away from zero. If number is an even integer, no rounding occurs.  
 

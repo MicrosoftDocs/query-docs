@@ -28,15 +28,15 @@ A range of values
   
 ## Remarks
 
-- If any argument is nonnumeric, CONFIDENCE.NORM returns the #VALUE! error value.  
+- If any argument is nonnumeric, CONFIDENCE.NORM returns the `#VALUE!` error value.  
 
-- If alpha ≤ 0 or alpha ≥ 1, CONFIDENCE.NORM returns the #NUM! error value.  
+- If `alpha ≤ 0` or `alpha ≥ 1`, CONFIDENCE.NORM returns the `#NUM!` error value.  
 
-- If standard_dev ≤ 0, CONFIDENCE.NORM returns the #NUM! error value.  
+- If `standard_dev ≤ 0`, CONFIDENCE.NORM returns the `#NUM!` error value.  
 
-- If size is not an integer, it is rounded.  
+- If `size` is not an integer, it is rounded.  
 
-- If size &lt; 1, CONFIDENCE.NORM returns the #NUM! error value.  
+- If `size < 1`, CONFIDENCE.NORM returns the `#NUM!` error value.  
 
 - If we assume alpha equals 0.05, we need to calculate the area under the standard normal curve that equals (1 - alpha), or 95 percent. This value is ± 1.96. The confidence interval is therefore:  
 

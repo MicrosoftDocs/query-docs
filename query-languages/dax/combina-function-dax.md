@@ -28,9 +28,9 @@ Returns the number of combinations (with repetitions) for a given number of item
   
 ## Remarks
 
-- If the value of either argument is outside of its constraints, COMBINA returns the #NUM! error value.  
+- If the value of either argument is outside of its constraints, COMBINA returns the `#NUM!` error value.  
 
-- If either argument is a non-numeric value, COMBINA returns the #VALUE! error value.  
+- If either argument is a non-numeric value, COMBINA returns the `#VALUE!` error value.  
 
 - The following equation is used, where $N$ is Number and $M$ is Number_chosen:  
 
