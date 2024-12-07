@@ -17,11 +17,11 @@ To perform basic mathematical operations such as addition, subtraction, or multi
   
 |Arithmetic operator|Meaning|Example|  
 |-----------------------|-----------|-----------|  
-|+ (plus sign)|Addition|3+3|  
-|– (minus sign)|Subtraction or sign|3–1–1|  
-|* (asterisk)|Multiplication|3*3|  
-|/ (forward slash)|Division|3/3|  
-|^ (caret)|Exponentiation|16^4|  
+|`+` (plus sign)|Addition|`3+3`|  
+|`-` (minus sign)|Subtraction or sign|`3-1-1`|  
+|`*` (asterisk)|Multiplication|`3*3`|  
+|`/` (forward slash)|Division|`3/3`|  
+|`^` (caret)|Exponentiation|`16^4`|  
   
 > [!NOTE]  
 > The plus sign can function both as a *binary operator* and as a *unary operator*. A binary operator requires numbers on both sides of the operator and performs addition. When you use values in a DAX formula on both sides of the binary operator, DAX tries to cast the values to numeric data types if they are not already numbers. In contrast, the unary operator can be applied to any type of argument. The plus symbol does not affect the type or value and is simply ignored, whereas the minus operator creates a negative value, if applied to a numeric value.  
