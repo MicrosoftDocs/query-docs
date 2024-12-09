@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ACOT"
-title: "ACOT function (DAX) | Microsoft Docs"
+title: "ACOT function (DAX)"
 ---
 # ACOT
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SELECTCOLUMNS"
-title: "SELECTCOLUMNS function (DAX) | Microsoft Docs"
+title: "SELECTCOLUMNS function (DAX)"
 ---
 # SELECTCOLUMNS
 

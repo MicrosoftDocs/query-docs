@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CROSSJOIN"
-title: "CROSSJOIN  function (DAX) | Microsoft Docs"
+title: "CROSSJOIN  function (DAX)"
 ---
 # CROSSJOIN
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PREVIOUSMONTH"
-title: "PREVIOUSMONTH function (DAX) | Microsoft Docs"
+title: "PREVIOUSMONTH function (DAX)"
 ---
 # PREVIOUSMONTH
 

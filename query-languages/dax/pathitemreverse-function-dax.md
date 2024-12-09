@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PATHITEMREVERSE"
-title: "PATHITEMREVERSE function (DAX) | Microsoft Docs"
+title: "PATHITEMREVERSE function (DAX)"
 ---
 # PATHITEMREVERSE
 

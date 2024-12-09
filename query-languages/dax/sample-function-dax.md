@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SAMPLE"
-title: "SAMPLE function (DAX) | Microsoft Docs"
+title: "SAMPLE function (DAX)"
 ---
 # SAMPLE
 

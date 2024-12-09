@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: REPT"
-title: "REPT function (DAX) | Microsoft Docs"
+title: "REPT function (DAX)"
 ---
 # REPT
 

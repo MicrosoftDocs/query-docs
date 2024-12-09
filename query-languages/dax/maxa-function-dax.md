@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: MAXA"
-title: "MAXA function (DAX) | Microsoft Docs"
+title: "MAXA function (DAX)"
 ---
 # MAXA
 

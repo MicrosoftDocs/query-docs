@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ROLLUPGROUP"
-title: "ROLLUPGROUP function (DAX) | Microsoft Docs"
+title: "ROLLUPGROUP function (DAX)"
 ---
 # ROLLUPGROUP
 

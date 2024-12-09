@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PERCENTILE.INC"
-title: "PERCENTILE.INC function (DAX) | Microsoft Docs"
+title: "PERCENTILE.INC function (DAX)"
 ---
 # PERCENTILE.INC
 

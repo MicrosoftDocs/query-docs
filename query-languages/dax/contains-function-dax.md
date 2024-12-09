@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CONTAINS"
-title: "CONTAINS function (DAX) | Microsoft Docs"
+title: "CONTAINS function (DAX)"
 ---
 # CONTAINS
 

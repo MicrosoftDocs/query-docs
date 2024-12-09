@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: NORM.INV"
-title: "NORM.INV function (DAX) | Microsoft Docs"
+title: "NORM.INV function (DAX)"
 ---
 # NORM.INV
 

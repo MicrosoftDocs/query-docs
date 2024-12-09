@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: EDATE"
-title: "EDATE function (DAX) | Microsoft Docs"
+title: "EDATE function (DAX)"
 ---
 # EDATE
 

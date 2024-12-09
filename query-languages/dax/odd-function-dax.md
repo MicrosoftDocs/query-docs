@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ODD"
-title: "ODD function (DAX) | Microsoft Docs"
+title: "ODD function (DAX)"
 ---
 # ODD
 

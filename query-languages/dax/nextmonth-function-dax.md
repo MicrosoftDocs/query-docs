@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: NEXTMONTH"
-title: "NEXTMONTH function (DAX) | Microsoft Docs"
+title: "NEXTMONTH function (DAX)"
 ---
 # NEXTMONTH
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: TBILLPRICE"
-title: "TBILLPRICE function (DAX) | Microsoft Docs"
+title: "TBILLPRICE function (DAX)"
 author: jajin7
 ---
 

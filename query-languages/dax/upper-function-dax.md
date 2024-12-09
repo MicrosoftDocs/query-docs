@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: UPPER"
-title: "UPPER function (DAX) | Microsoft Docs"
+title: "UPPER function (DAX)"
 ---
 # UPPER
 

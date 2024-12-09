@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: EFFECT"
-title: "EFFECT function (DAX) | Microsoft Docs"
+title: "EFFECT function (DAX)"
 author: jajin7
 ---
 

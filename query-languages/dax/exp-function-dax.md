@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: EXP"
-title: "EXP function (DAX) | Microsoft Docs"
+title: "EXP function (DAX)"
 ---
 # EXP
 

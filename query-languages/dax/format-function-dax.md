@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: FORMAT"
-title: "FORMAT function (DAX) | Microsoft Docs"
+title: "FORMAT function (DAX)"
 ---
 # FORMAT
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: HOUR"
-title: "HOUR function (DAX) | Microsoft Docs"
+title: "HOUR function (DAX)"
 ---
 # HOUR
 

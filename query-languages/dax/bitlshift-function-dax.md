@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: BITLSHIFT"
-title: "BITLSHIFT function (DAX) | Microsoft Docs"
+title: "BITLSHIFT function (DAX)"
 ---
 # BITLSHIFT
 

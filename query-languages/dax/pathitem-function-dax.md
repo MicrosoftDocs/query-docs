@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PATHITEM"
-title: "PATHITEM function (DAX) | Microsoft Docs"
+title: "PATHITEM function (DAX)"
 ---
 # PATHITEM
 

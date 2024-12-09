@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DATESMTD"
-title: "DATESMTD function (DAX) | Microsoft Docs"
+title: "DATESMTD function (DAX)"
 ---
 # DATESMTD
 

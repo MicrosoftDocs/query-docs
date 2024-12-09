@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SIGN"
-title: "SIGN function (DAX) | Microsoft Docs"
+title: "SIGN function (DAX)"
 ---
 # SIGN
 

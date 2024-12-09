@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COUPDAYSNC"
-title: "COUPDAYSNC function (DAX) | Microsoft Docs"
+title: "COUPDAYSNC function (DAX)"
 ---
 
 # COUPDAYSNC

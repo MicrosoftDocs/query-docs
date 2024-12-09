@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ADDCOLUMNS"
-title: "ADDCOLUMNS function (DAX) | Microsoft Docs"
+title: "ADDCOLUMNS function (DAX)"
 ---
 # ADDCOLUMNS
 

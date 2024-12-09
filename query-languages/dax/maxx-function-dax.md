@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: MAXX"
-title: "MAXX function (DAX) | Microsoft Docs"
+title: "MAXX function (DAX)"
 ---
 # MAXX
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DDB"
-title: "DDB function (DAX) | Microsoft Docs"
+title: "DDB function (DAX)"
 author: jajin7
 ---
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: RRI"
-title: "RRI function (DAX) | Microsoft Docs"
+title: "RRI function (DAX)"
 author: jajin7
 ---
 

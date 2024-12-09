@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ALL"
-title: "ALL function (DAX) | Microsoft Docs"
+title: "ALL function (DAX)"
 ---
 # ALL
 

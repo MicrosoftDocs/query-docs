@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COSH"
-title: "COSH function (DAX) | Microsoft Docs"
+title: "COSH function (DAX)"
 ---
 # COSH
 

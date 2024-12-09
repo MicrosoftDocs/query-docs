@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: LOG"
-title: "LOG function (DAX) | Microsoft Docs"
+title: "LOG function (DAX)"
 ---
 # LOG
 

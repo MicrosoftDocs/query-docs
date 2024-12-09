@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DAX parameter-naming conventions"
-title: "DAX parameter-naming conventions | Microsoft Docs"
+title: "DAX parameter-naming conventions"
 ms.topic: conceptual
 ---
 # DAX parameter-naming conventions

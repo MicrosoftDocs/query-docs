@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CLOSINGBALANCEQUARTER"
-title: "CLOSINGBALANCEQUARTER function (DAX) | Microsoft Docs"
+title: "CLOSINGBALANCEQUARTER function (DAX)"
 ---
 # CLOSINGBALANCEQUARTER
 

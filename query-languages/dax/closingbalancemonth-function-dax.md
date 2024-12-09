@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CLOSINGBALANCEMONTH"
-title: "CLOSINGBALANCEMONTH function (DAX) | Microsoft Docs"
+title: "CLOSINGBALANCEMONTH function (DAX)"
 ---
 # CLOSINGBALANCEMONTH
 

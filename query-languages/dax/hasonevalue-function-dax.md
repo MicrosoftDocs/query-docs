@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: HASONEVALUE"
-title: "HASONEVALUE function (DAX) | Microsoft Docs"
+title: "HASONEVALUE function (DAX)"
 ---
 # HASONEVALUE
 

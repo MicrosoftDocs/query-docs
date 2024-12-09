@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PREVIOUSYEAR"
-title: "PREVIOUSYEAR function (DAX) | Microsoft Docs"
+title: "PREVIOUSYEAR function (DAX)"
 ---
 # PREVIOUSYEAR
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SAMEPERIODLASTYEAR"
-title: "SAMEPERIODLASTYEAR function (DAX) | Microsoft Docs"
+title: "SAMEPERIODLASTYEAR function (DAX)"
 ---
 # SAMEPERIODLASTYEAR
 

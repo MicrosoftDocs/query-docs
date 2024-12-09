@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CHISQ.DIST.RT"
-title: "CHISQ.DIST.RT function (DAX) | Microsoft Docs"
+title: "CHISQ.DIST.RT function (DAX)"
 ---
 # CHISQ.DIST.RT
 

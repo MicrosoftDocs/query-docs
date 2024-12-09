@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: T.DIST.RT"
-title: "T.DIST.RT function (DAX) | Microsoft Docs"
+title: "T.DIST.RT function (DAX)"
 ---
 # T.DIST.RT
 

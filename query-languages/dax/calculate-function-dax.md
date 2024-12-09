@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CALCULATE"
-title: "CALCULATE function (DAX) | Microsoft Docs"
+title: "CALCULATE function (DAX)"
 ---
 # CALCULATE
 

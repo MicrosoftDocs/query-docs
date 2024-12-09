@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CONFIDENCE.NORM"
-title: "CONFIDENCE.NORM function (DAX) | Microsoft Docs"
+title: "CONFIDENCE.NORM function (DAX)"
 ---
 # CONFIDENCE.NORM
 

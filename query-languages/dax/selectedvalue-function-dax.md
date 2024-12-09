@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SELECTEDVALUE"
-title: "SELECTEDVALUE function | Microsoft Docs"
+title: "SELECTEDVALUE function"
 ---
 # SELECTEDVALUE
 

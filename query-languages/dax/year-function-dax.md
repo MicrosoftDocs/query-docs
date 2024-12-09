@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: YEAR"
-title: "YEAR function (DAX) | Microsoft Docs"
+title: "YEAR function (DAX)"
 ---
 # YEAR
 

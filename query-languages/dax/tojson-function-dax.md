@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: TOJSON"
-title: "TOJSON function (DAX) | Microsoft Docs"
+title: "TOJSON function (DAX)"
 ---
 # TOJSON
 

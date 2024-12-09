@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CALENDAR"
-title: "CALENDAR function (DAX) | Microsoft Docs"
+title: "CALENDAR function (DAX)"
 ---
 # CALENDAR
 

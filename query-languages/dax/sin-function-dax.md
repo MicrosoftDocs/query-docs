@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SIN"
-title: "SIN function (DAX) | Microsoft Docs"
+title: "SIN function (DAX)"
 ---
 # SIN
 

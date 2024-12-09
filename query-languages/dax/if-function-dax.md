@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: IF"
-title: "IF function (DAX) | Microsoft Docs"
+title: "IF function (DAX)"
 ---
 # IF
 

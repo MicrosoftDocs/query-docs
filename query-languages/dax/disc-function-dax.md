@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DISC"
-title: "DISC function (DAX) | Microsoft Docs"
+title: "DISC function (DAX)"
 author: jajin7
 ---
 

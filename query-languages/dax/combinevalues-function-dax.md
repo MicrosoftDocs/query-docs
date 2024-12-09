@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COMBINEVALUES"
-title: "COMBINEVALUES function (DAX) | Microsoft Docs"
+title: "COMBINEVALUES function (DAX)"
 ---
 
 # COMBINEVALUES

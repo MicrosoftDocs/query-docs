@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: TOTALYTD"
-title: "TOTALYTD function (DAX) | Microsoft Docs"
+title: "TOTALYTD function (DAX)"
 ---
 # TOTALYTD
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: LEFT"
-title: "LEFT function (DAX) | Microsoft Docs"
+title: "LEFT function (DAX)"
 ---
 # LEFT
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: EVEN"
-title: "EVEN function (DAX) | Microsoft Docs"
+title: "EVEN function (DAX)"
 ---
 # EVEN
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: EVALUATE"
-title: "EVALUATE keyword (DAX) | Microsoft Docs"
+title: "EVALUATE keyword (DAX)"
 ---
 # EVALUATE
   

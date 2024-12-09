@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COLUMNSTATISTICS"
-title: "COLUMNSTATISTICS function (DAX) | Microsoft Docs"
+title: "COLUMNSTATISTICS function (DAX)"
 ---
 # COLUMNSTATISTICS
 

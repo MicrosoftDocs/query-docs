@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: NOMINAL"
-title: "NOMINAL function (DAX) | Microsoft Docs"
+title: "NOMINAL function (DAX)"
 author: jajin7
 ---
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DB"
-title: "DB function (DAX) | Microsoft Docs"
+title: "DB function (DAX)"
 author: jajin7
 ---
 

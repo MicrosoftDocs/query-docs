@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ISEVEN"
-title: "ISEVEN function (DAX) | Microsoft Docs"
+title: "ISEVEN function (DAX)"
 ---
 # ISEVEN
 

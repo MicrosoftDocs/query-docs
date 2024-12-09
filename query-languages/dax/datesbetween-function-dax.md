@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DATESBETWEEN"
-title: "DATESBETWEEN function (DAX) | Microsoft Docs"
+title: "DATESBETWEEN function (DAX)"
 ---
 # DATESBETWEEN
 

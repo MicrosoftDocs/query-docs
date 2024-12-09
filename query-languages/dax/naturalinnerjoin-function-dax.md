@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: NATURALINNERJOIN"
-title: "NATURALINNERJOIN function (DAX) | Microsoft Docs"
+title: "NATURALINNERJOIN function (DAX)"
 ---
 # NATURALINNERJOIN
 

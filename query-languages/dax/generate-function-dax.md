@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: GENERATE"
-title: "GENERATE  function (DAX) | Microsoft Docs"
+title: "GENERATE  function (DAX)"
 ---
 # GENERATE
 

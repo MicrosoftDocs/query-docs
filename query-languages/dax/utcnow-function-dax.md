@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: UTCNOW"
-title: "UTCNOW function (DAX) | Microsoft Docs"
+title: "UTCNOW function (DAX)"
 ---
 # UTCNOW
 

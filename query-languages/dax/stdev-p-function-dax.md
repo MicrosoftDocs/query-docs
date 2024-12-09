@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: STDEV.P"
-title: "STDEV.P function (DAX) | Microsoft Docs"
+title: "STDEV.P function (DAX)"
 ---
 # STDEV.P
 

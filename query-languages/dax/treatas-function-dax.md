@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: TREATAS"
-title: "TREATAS function | Microsoft Docs"
+title: "TREATAS function"
 ---
 # TREATAS
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DATESINPERIOD"
-title: "DATESINPERIOD function (DAX) | Microsoft Docs"
+title: "DATESINPERIOD function (DAX)"
 ---
 # DATESINPERIOD
 

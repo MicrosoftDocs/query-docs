@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: HASONEFILTER"
-title: "HASONEFILTER function (DAX) | Microsoft Docs"
+title: "HASONEFILTER function (DAX)"
 ---
 # HASONEFILTER
 

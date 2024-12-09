@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: KEEPFILTERS"
-title: "KEEPFILTERS function (DAX) | Microsoft Docs"
+title: "KEEPFILTERS function (DAX)"
 ---
 # KEEPFILTERS
 

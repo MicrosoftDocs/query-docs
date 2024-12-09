@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: YIELDMAT"
-title: "YIELDMAT function (DAX) | Microsoft Docs"
+title: "YIELDMAT function (DAX)"
 author: jajin7
 ---
 

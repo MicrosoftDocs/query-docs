@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: NEXTQUARTER"
-title: "NEXTQUARTER function (DAX) | Microsoft Docs"
+title: "NEXTQUARTER function (DAX)"
 ---
 # NEXTQUARTER
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: GENERATESERIES"
-title: "GENERATESERIES function | Microsoft Docs"
+title: "GENERATESERIES function"
 ---
 # GENERATESERIES
 

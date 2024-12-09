@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SUMMARIZECOLUMNS"
-title: "SUMMARIZECOLUMNS function (DAX) | Microsoft Docs"
+title: "SUMMARIZECOLUMNS function (DAX)"
 ---
 # SUMMARIZECOLUMNS
 

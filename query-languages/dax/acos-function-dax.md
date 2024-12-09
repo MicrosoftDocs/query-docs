@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ACOS"
-title: "ACOS function (DAX) | Microsoft Docs"
+title: "ACOS function (DAX)"
 ---
 # ACOS
 

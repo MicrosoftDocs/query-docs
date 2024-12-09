@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: STARTOFQUARTER"
-title: "STARTOFQUARTER function (DAX) | Microsoft Docs"
+title: "STARTOFQUARTER function (DAX)"
 ---
 # STARTOFQUARTER
 

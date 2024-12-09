@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ISTEXT"
-title: "ISTEXT function (DAX) | Microsoft Docs"
+title: "ISTEXT function (DAX)"
 ---
 # ISTEXT
 

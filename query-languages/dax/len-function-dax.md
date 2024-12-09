@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: LEN"
-title: "LEN function (DAX) | Microsoft Docs"
+title: "LEN function (DAX)"
 ---
 # LEN
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: NONVISUAL"
-title: "NONVISUAL function (DAX) | Microsoft Docs"
+title: "NONVISUAL function (DAX)"
 ---
 # NONVISUAL
 

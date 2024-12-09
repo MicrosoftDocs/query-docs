@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: XNPV"
-title: "XNPV function (DAX) | Microsoft Docs"
+title: "XNPV function (DAX)"
 ---
 # XNPV
 

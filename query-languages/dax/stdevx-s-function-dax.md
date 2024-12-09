@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: STDEVX.S"
-title: "STDEVX.S function (DAX) | Microsoft Docs"
+title: "STDEVX.S function (DAX)"
 ---
 # STDEVX.S
 

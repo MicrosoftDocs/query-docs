@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: AVERAGE"
-title: "AVERAGE function (DAX) | Microsoft Docs"
+title: "AVERAGE function (DAX)"
 ---
 # AVERAGE
 

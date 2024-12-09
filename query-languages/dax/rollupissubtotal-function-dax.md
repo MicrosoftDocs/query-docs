@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ROLLUPISSUBTOTAL"
-title: "ROLLUPISSUBTOTAL function (DAX) | Microsoft Docs"
+title: "ROLLUPISSUBTOTAL function (DAX)"
 ---
 # ROLLUPISSUBTOTAL
 

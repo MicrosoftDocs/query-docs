@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ASINH"
-title: "ASINH function (DAX) | Microsoft Docs"
+title: "ASINH function (DAX)"
 ---
 # ASINH
 

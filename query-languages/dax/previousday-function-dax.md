@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PREVIOUSDAY"
-title: "PREVIOUSDAY function (DAX) | Microsoft Docs"
+title: "PREVIOUSDAY function (DAX)"
 ---
 # PREVIOUSDAY
 

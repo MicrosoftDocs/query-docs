@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: LOOKUPVALUE"
-title: "LOOKUPVALUE function (DAX) | Microsoft Docs"
+title: "LOOKUPVALUE function (DAX)"
 ---
 # LOOKUPVALUE
 

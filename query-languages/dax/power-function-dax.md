@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: POWER"
-title: "POWER function (DAX) | Microsoft Docs"
+title: "POWER function (DAX)"
 ---
 # POWER
 

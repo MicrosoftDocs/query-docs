@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: INDEX"
-title: "INDEX function (DAX) | Microsoft Docs"
+title: "INDEX function (DAX)"
 ---
 
 # INDEX

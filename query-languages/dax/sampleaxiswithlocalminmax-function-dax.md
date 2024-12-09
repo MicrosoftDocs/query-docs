@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SAMPLEAXISWITHLOCALMINMAX"
-title: "SAMPLEAXISWITHLOCALMINMAX function (DAX) | Microsoft Docs"
+title: "SAMPLEAXISWITHLOCALMINMAX function (DAX)"
 author: jterh
 ---
 

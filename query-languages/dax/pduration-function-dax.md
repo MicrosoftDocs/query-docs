@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PDURATION"
-title: "PDURATION function (DAX) | Microsoft Docs"
+title: "PDURATION function (DAX)"
 author: jajin7
 ---
 

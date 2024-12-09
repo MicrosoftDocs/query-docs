@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CUSTOMDATA"
-title: "CUSTOMDATA function (DAX) | Microsoft Docs"
+title: "CUSTOMDATA function (DAX)"
 ---
 # CUSTOMDATA
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: T.DIST"
-title: "T.DIST function (DAX) | Microsoft Docs"
+title: "T.DIST function (DAX)"
 ---
 # T.DIST
 

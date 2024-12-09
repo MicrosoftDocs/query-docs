@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: FACT"
-title: "FACT function (DAX) | Microsoft Docs"
+title: "FACT function (DAX)"
 ---
 # FACT
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: LOG10"
-title: "LOG10 function (DAX) | Microsoft Docs"
+title: "LOG10 function (DAX)"
 ---
 # LOG10
 

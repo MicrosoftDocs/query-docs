@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: LINESTX"
-title: "LINESTX function (DAX) | Microsoft Docs"
+title: "LINESTX function (DAX)"
 author: masanto-msft
 ms.author: masanto
 ---

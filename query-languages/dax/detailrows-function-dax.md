@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DETAILROWS"
-title: "DETAILROWS function (DAX) | Microsoft Docs"
+title: "DETAILROWS function (DAX)"
 ---
 # DETAILROWS
 

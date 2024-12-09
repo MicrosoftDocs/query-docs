@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CALCULATETABLE"
-title: "CALCULATETABLE function (DAX) | Microsoft Docs"
+title: "CALCULATETABLE function (DAX)"
 ---
 # CALCULATETABLE
 

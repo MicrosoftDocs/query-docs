@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: LINEST"
-title: "LINEST function (DAX) | Microsoft Docs"
+title: "LINEST function (DAX)"
 author: masanto-msft
 ms.author: masanto
 ---

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COUPDAYS"
-title: "COUPDAYS function (DAX) | Microsoft Docs"
+title: "COUPDAYS function (DAX)"
 ---
 
 # COUPDAYS

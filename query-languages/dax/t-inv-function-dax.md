@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: T.INV"
-title: "T.INV function (DAX) | Microsoft Docs"
+title: "T.INV function (DAX)"
 ---
 # T.INV
 

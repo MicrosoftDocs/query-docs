@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DATESYTD"
-title: "DATESYTD function (DAX) | Microsoft Docs"
+title: "DATESYTD function (DAX)"
 ---
 # DATESYTD
 

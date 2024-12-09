@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PRICEDISC"
-title: "PRICEDISC function (DAX) | Microsoft Docs"
+title: "PRICEDISC function (DAX)"
 author: jajin7
 ---
 

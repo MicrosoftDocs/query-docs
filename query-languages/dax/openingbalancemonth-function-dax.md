@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: OPENINGBALANCEMONTH"
-title: "OPENINGBALANCEMONTH function (DAX) | Microsoft Docs"
+title: "OPENINGBALANCEMONTH function (DAX)"
 ---
 # OPENINGBALANCEMONTH
 

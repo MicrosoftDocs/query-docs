@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: TRIM"
-title: "TRIM function (DAX) | Microsoft Docs"
+title: "TRIM function (DAX)"
 ---
 # TRIM
 

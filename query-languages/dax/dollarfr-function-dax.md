@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DOLLARFR"
-title: "DOLLARFR function (DAX) | Microsoft Docs"
+title: "DOLLARFR function (DAX)"
 author: jajin7
 ---
 

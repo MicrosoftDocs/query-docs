@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SQRTPI"
-title: "SQRTPI function (DAX) | Microsoft Docs"
+title: "SQRTPI function (DAX)"
 ---
 # SQRTPI
 

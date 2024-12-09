@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: FIND"
-title: "FIND function (DAX) | Microsoft Docs"
+title: "FIND function (DAX)"
 ---
 # FIND
 

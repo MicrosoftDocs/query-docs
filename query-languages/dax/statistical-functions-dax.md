@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Statistical functions"
-title: "Statistical functions (DAX) | Microsoft Docs"
+title: "Statistical functions (DAX)"
 ---
 # Statistical functions
 

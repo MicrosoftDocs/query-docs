@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: TOCSV"
-title: "TOCSV function (DAX) | Microsoft Docs"
+title: "TOCSV function (DAX)"
 ---
 # TOCSV
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COMBINA"
-title: "COMBINA function (DAX) | Microsoft Docs"
+title: "COMBINA function (DAX)"
 ---
 
 # COMBINA

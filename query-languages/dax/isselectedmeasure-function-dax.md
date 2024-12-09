@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ISSELECTEDMEASURE"
-title: "ISSELECTEDMEASURE function (DAX) | Microsoft Docs"
+title: "ISSELECTEDMEASURE function (DAX)"
 ---
 # ISSELECTEDMEASURE
 

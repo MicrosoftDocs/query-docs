@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COT"
-title: "COT function (DAX) | Microsoft Docs"
+title: "COT function (DAX)"
 ---
 # COT
 

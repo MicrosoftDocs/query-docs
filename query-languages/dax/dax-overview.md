@@ -1,5 +1,5 @@
 ---
-title: "DAX overview | Microsoft Docs"
+title: "DAX overview"
 description: Describes the Data Analysis Expressions (DAX) language.
 ms.topic: conceptual
 ---

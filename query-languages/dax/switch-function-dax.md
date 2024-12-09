@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SWITCH"
-title: "SWITCH function (DAX) | Microsoft Docs"
+title: "SWITCH function (DAX)"
 ---
 # SWITCH
 

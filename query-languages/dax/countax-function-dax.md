@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COUNTAX"
-title: "COUNTAX function (DAX) | Microsoft Docs"
+title: "COUNTAX function (DAX)"
 ---
 # COUNTAX
 

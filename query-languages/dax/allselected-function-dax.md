@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ALLSELECTED"
-title: "ALLSELECTED function (DAX) | Microsoft Docs"
+title: "ALLSELECTED function (DAX)"
 ---
 # ALLSELECTED
 

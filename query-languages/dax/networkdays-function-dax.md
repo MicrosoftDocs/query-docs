@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: NETWORKDAYS"
-title: "NETWORKDAYS function (DAX) | Microsoft Docs"
+title: "NETWORKDAYS function (DAX)"
 ---
 
 # NETWORKDAYS

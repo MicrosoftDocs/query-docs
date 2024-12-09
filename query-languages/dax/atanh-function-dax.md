@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ATANH"
-title: "ATANH function (DAX) | Microsoft Docs"
+title: "ATANH function (DAX)"
 ---
 # ATANH
 

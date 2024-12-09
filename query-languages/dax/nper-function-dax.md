@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: NPER"
-title: "NPER function (DAX) | Microsoft Docs"
+title: "NPER function (DAX)"
 author: jajin7
 ---
 

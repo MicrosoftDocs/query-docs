@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ODDFPRICE"
-title: "ODDFPRICE function (DAX) | Microsoft Docs"
+title: "ODDFPRICE function (DAX)"
 author: jajin7
 ---
 

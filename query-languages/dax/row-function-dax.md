@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ROW function"
-title: "ROW function (DAX) | Microsoft Docs"
+title: "ROW function (DAX)"
 ---
 # ROW function
 

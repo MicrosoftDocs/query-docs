@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PREVIOUSQUARTER"
-title: "PREVIOUSQUARTER function (DAX) | Microsoft Docs"
+title: "PREVIOUSQUARTER function (DAX)"
 ---
 # PREVIOUSQUARTER
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ISAFTER"
-title: "ISAFTER function (DAX) | Microsoft Docs"
+title: "ISAFTER function (DAX)"
 ---
 # ISAFTER
 

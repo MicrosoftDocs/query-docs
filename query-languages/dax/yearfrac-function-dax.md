@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: YEARFRAC"
-title: "YEARFRAC function (DAX) | Microsoft Docs"
+title: "YEARFRAC function (DAX)"
 ---
 # YEARFRAC
 

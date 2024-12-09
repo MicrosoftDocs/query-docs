@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: EXPAND"
-title: "EXPAND function (DAX) | Microsoft Docs"
+title: "EXPAND function (DAX)"
 ms.service: powerbi
 ms.subservice: dax
 ms.date: 02/20/2024

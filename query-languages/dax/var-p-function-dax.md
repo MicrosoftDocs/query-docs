@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: VAR.P"
-title: "VAR.P function (DAX) | Microsoft Docs"
+title: "VAR.P function (DAX)"
 ---
 # VAR.P
 

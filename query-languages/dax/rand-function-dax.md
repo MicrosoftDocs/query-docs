@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: RAND"
-title: "RAND function (DAX) | Microsoft Docs"
+title: "RAND function (DAX)"
 ---
 # RAND
 

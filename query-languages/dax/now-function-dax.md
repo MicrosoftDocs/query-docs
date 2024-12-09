@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: NOW"
-title: "NOW function (DAX) | Microsoft Docs"
+title: "NOW function (DAX)"
 ---
 # NOW
 

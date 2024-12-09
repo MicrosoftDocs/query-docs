@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: FIXED"
-title: "FIXED function (DAX) | Microsoft Docs"
+title: "FIXED function (DAX)"
 ---
 # FIXED
 

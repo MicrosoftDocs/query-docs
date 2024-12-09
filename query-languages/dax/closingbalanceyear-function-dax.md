@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CLOSINGBALANCEYEAR"
-title: "CLOSINGBALANCEYEAR function (DAX) | Microsoft Docs"
+title: "CLOSINGBALANCEYEAR function (DAX)"
 ---
 # CLOSINGBALANCEYEAR
 

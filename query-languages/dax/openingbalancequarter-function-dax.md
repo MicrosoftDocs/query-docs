@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: OPENINGBALANCEQUARTER"
-title: "OPENINGBALANCEQUARTER function (DAX) | Microsoft Docs"
+title: "OPENINGBALANCEQUARTER function (DAX)"
 ---
 # OPENINGBALANCEQUARTER
 

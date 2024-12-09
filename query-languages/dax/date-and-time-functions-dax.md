@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Date and time functions"
-title: "Date and time functions (DAX) | Microsoft Docs"
+title: "Date and time functions (DAX)"
 ---
 # Date and time functions
 

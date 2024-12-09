@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: FIRSTNONBLANK"
-title: "FIRSTNONBLANK function (DAX) | Microsoft Docs"
+title: "FIRSTNONBLANK function (DAX)"
 ---
 # FIRSTNONBLANK
 

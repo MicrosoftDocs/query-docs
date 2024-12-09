@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: VALUE"
-title: "VALUE function (DAX) | Microsoft Docs"
+title: "VALUE function (DAX)"
 ---
 # VALUE
 

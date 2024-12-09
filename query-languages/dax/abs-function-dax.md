@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ABS"
-title: "ABS function (DAX) | Microsoft Docs"
+title: "ABS function (DAX) "
 ---
 
 # ABS

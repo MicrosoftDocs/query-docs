@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: OFFSET"
-title: "OFFSET function (DAX) | Microsoft Docs"
+title: "OFFSET function (DAX)"
 ---
 
 # OFFSET

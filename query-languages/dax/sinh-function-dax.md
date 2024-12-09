@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SINH"
-title: "SINH function (DAX) | Microsoft Docs"
+title: "SINH function (DAX)"
 ---
 # SINH
 

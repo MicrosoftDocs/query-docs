@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ISLOGICAL"
-title: "ISLOGICAL function (DAX) | Microsoft Docs"
+title: "ISLOGICAL function (DAX)"
 ---
 # ISLOGICAL
 

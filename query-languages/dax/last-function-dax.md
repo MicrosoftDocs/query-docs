@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: LAST"
-title: "LAST function (DAX) | Microsoft Docs"
+title: "LAST function (DAX)"
 ---
 
 # LAST

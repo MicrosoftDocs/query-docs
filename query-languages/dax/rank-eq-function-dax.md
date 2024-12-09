@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: RANK.EQ"
-title: "RANK.EQ  function (DAX) | Microsoft Docs"
+title: "RANK.EQ  function (DAX)"
 ---
 # RANK.EQ
 

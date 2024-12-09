@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table manipulation functions"
-title: "Table manipulation functions (DAX) | Microsoft Docs"
+title: "Table manipulation functions (DAX)"
 ---
 # Table manipulation functions
 

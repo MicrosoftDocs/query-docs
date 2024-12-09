@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COUNTA"
-title: "COUNTA function (DAX) | Microsoft Docs"
+title: "COUNTA function (DAX)"
 ---
 # COUNTA
 

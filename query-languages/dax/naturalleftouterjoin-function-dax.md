@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: NATURALLEFTOUTERJOIN"
-title: "NATURALLEFTOUTERJOIN function (DAX) | Microsoft Docs"
+title: "NATURALLEFTOUTERJOIN function (DAX)"
 ---
 # NATURALLEFTOUTERJOIN
 

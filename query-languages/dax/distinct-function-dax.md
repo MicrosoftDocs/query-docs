@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DISTINCT (column)"
-title: "DISTINCT (column) function (DAX) | Microsoft Docs"
+title: "DISTINCT (column) function (DAX)"
 ---
 # DISTINCT (column)
 

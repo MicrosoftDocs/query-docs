@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: UNION"
-title: "UNION function (DAX) | Microsoft Docs"
+title: "UNION function (DAX)"
 ---
 # UNION
 

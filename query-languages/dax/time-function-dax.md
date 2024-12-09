@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: TIME"
-title: "TIME function (DAX) | Microsoft Docs"
+title: "TIME function (DAX)"
 ---
 # TIME
 

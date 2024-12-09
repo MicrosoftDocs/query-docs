@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CURRENCY"
-title: "CURRENCY function (DAX) | Microsoft Docs"
+title: "CURRENCY function (DAX)"
 ---
 # CURRENCY
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: RELATED"
-title: "RELATED function (DAX) | Microsoft Docs"
+title: "RELATED function (DAX)"
 ---
 # RELATED
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: OPENINGBALANCEYEAR"
-title: "OPENINGBALANCEYEAR function (DAX) | Microsoft Docs"
+title: "OPENINGBALANCEYEAR function (DAX)"
 ---
 # OPENINGBALANCEYEAR
 

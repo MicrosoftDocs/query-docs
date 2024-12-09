@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ENDOFMONTH"
-title: "ENDOFMONTH function (DAX) | Microsoft Docs"
+title: "ENDOFMONTH function (DAX)"
 ---
 # ENDOFMONTH
 

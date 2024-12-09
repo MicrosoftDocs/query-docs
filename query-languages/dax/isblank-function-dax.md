@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ISBLANK"
-title: "ISBLANK function (DAX) | Microsoft Docs"
+title: "ISBLANK function (DAX)"
 ---
 # ISBLANK
 

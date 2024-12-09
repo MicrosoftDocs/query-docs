@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DEFINE"
-title: "DEFINE keyword (DAX) | Microsoft Docs"
+title: "DEFINE keyword (DAX)"
 ---
 # DEFINE
   

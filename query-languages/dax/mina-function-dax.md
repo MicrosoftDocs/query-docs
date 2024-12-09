@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: MINA"
-title: "MINA function (DAX) | Microsoft Docs"
+title: "MINA function (DAX)"
 ---
 # MINA
 

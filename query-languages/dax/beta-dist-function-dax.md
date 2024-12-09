@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: BETA.DIST"
-title: "BETA.DIST function (DAX) | Microsoft Docs"
+title: "BETA.DIST function (DAX)"
 ---
 # BETA.DIST
 

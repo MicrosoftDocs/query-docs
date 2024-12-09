@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: RIGHT"
-title: "RIGHT function (DAX) | Microsoft Docs"
+title: "RIGHT function (DAX)"
 ---
 # RIGHT
 

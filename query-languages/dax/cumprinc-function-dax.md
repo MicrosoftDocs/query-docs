@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CUMPRINC"
-title: "CUMPRINC function (DAX) | Microsoft Docs"
+title: "CUMPRINC function (DAX)"
 author: jajin7
 ---
 

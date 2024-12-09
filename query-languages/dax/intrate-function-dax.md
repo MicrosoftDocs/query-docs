@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: INTRATE"
-title: "INTRATE function (DAX) | Microsoft Docs"
+title: "INTRATE function (DAX)"
 ---
 
 # INTRATE

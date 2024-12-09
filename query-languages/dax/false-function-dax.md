@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: FALSE"
-title: "FALSE function (DAX) | Microsoft Docs"
+title: "FALSE function (DAX)"
 ---
 # FALSE
 

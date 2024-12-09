@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COTH"
-title: "COTH function (DAX) | Microsoft Docs"
+title: "COTH function (DAX)"
 ---
 # COTH
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SUBSTITUTE"
-title: "SUBSTITUTE function (DAX) | Microsoft Docs"
+title: "SUBSTITUTE function (DAX)"
 ---
 # SUBSTITUTE
 

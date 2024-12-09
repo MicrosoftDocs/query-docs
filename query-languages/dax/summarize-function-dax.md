@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SUMMARIZE"
-title: "SUMMARIZE function (DAX) | Microsoft Docs"
+title: "SUMMARIZE function (DAX)"
 ---
 # SUMMARIZE
 

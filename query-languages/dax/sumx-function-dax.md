@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SUMX"
-title: "SUMX function (DAX) | Microsoft Docs"
+title: "SUMX function (DAX)"
 ---
 # SUMX
 

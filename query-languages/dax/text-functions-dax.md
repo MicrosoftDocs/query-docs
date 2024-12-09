@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Text functions"
-title: "Text functions (DAX) | Microsoft Docs"
+title: "Text functions (DAX)"
 ---
 # Text functions
 

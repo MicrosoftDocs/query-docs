@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COUPDAYBS"
-title: "COUPDAYBS function (DAX) | Microsoft Docs"
+title: "COUPDAYBS function (DAX)"
 ---
 
 # COUPDAYBS

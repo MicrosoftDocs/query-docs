@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COLLAPSE"
-title: "COLLAPSE function (DAX) | Microsoft Docs"
+title: "COLLAPSE function (DAX)"
 ms.service: powerbi
 ms.subservice: dax
 ms.date: 02/20/2024

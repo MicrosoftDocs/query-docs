@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COUNTROWS"
-title: "COUNTROWS function (DAX) | Microsoft Docs"
+title: "COUNTROWS function (DAX)"
 ---
 # COUNTROWS
 

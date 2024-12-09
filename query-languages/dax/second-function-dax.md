@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SECOND"
-title: "SECOND function (DAX) | Microsoft Docs"
+title: "SECOND function (DAX)"
 ---
 # SECOND
 

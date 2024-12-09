@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: GEOMEANX"
-title: "GEOMEANX function (DAX) | Microsoft Docs"
+title: "GEOMEANX function (DAX)"
 ---
 # GEOMEANX
 

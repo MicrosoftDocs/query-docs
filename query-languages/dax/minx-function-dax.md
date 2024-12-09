@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: MINX"
-title: "MINX function (DAX) | Microsoft Docs"
+title: "MINX function (DAX)"
 ---
 # MINX
 

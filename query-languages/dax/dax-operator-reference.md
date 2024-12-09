@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DAX operators"
-title: "DAX operators | Microsoft Docs"
+title: "DAX operators"
 ms.topic: conceptual
 ---
 # DAX operators

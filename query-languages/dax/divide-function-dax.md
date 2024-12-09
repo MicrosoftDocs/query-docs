@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DIVIDE"
-title: "DIVIDE function (DAX) | Microsoft Docs"
+title: "DIVIDE function (DAX)"
 ---
 # DIVIDE
 

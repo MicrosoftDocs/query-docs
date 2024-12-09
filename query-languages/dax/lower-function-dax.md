@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: LOWER"
-title: "LOWER function (DAX) | Microsoft Docs"
+title: "LOWER function (DAX)"
 ---
 # LOWER
 

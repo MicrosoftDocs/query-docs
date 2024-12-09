@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: GENERATEALL"
-title: "GENERATEALL function (DAX) | Microsoft Docs"
+title: "GENERATEALL function (DAX)"
 ---
 # GENERATEALL
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: BITAND"
-title: "BITAND function (DAX) | Microsoft Docs"
+title: "BITAND function (DAX)"
 ---
 # BITAND
 

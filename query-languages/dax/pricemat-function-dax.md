@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PRICEMAT"
-title: "PRICEMAT function (DAX) | Microsoft Docs"
+title: "PRICEMAT function (DAX)"
 author: jajin7
 ---
 

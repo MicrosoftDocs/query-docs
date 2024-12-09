@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: MINUTE"
-title: "MINUTE function (DAX) | Microsoft Docs"
+title: "MINUTE function (DAX)"
 ---
 # MINUTE
 

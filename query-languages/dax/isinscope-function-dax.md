@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ISINSCOPE"
-title: "ISINSCOPE function (DAX) | Microsoft Docs"
+title: "ISINSCOPE function (DAX)"
 ---
 # ISINSCOPE
 

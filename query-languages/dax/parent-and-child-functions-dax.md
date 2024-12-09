@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Parent and Child functions"
-title: "Parent and Child functions (DAX) | Microsoft Docs"
+title: "Parent and Child functions (DAX)"
 ---
 # Parent and Child functions
 

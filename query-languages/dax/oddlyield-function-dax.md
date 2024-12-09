@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ODDLYIELD"
-title: "ODDLYIELD function (DAX) | Microsoft Docs"
+title: "ODDLYIELD function (DAX)"
 author: jajin7
 ---
 

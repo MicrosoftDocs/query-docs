@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CONTAINSSTRINGEXACT"
-title: "CONTAINSSTRINGEXACT function (DAX) | Microsoft Docs"
+title: "CONTAINSSTRINGEXACT function (DAX)"
 ---
 # CONTAINSSTRINGEXACT
 

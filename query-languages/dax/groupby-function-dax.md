@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: GROUPBY"
-title: "GROUPBY function (DAX) | Microsoft Docs"
+title: "GROUPBY function (DAX)"
 ---
 # GROUPBY
 

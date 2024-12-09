@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SUM"
-title: "SUM function (DAX) | Microsoft Docs"
+title: "SUM function (DAX)"
 ---
 # SUM
 

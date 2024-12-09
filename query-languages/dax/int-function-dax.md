@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: INT"
-title: "INT function (DAX) | Microsoft Docs"
+title: "INT function (DAX)"
 ---
 # INT
 

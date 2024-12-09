@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ISNUMBER"
-title: "ISNUMBER function (DAX) | Microsoft Docs"
+title: "ISNUMBER function (DAX)"
 ---
 # ISNUMBER
 

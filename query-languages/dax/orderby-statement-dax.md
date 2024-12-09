@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ORDER BY"
-title: "ORDER BY keyword (DAX) | Microsoft Docs"
+title: "ORDER BY keyword (DAX)"
 ---
 # ORDER BY
   

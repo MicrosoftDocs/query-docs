@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DOLLARDE"
-title: "DOLLARDE function (DAX) | Microsoft Docs"
+title: "DOLLARDE function (DAX)"
 author: jajin7
 ---
 

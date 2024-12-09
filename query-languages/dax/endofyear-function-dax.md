@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ENDOFYEAR"
-title: "ENDOFYEAR function (DAX) | Microsoft Docs"
+title: "ENDOFYEAR function (DAX)"
 ---
 # ENDOFYEAR
 

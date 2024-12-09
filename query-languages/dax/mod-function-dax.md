@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: MOD"
-title: "MOD function (DAX) | Microsoft Docs"
+title: "MOD function (DAX)"
 ---
 # MOD
 

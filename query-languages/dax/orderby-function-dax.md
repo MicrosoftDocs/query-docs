@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ORDERBY"
-title: "ORDERBY function (DAX) | Microsoft Docs"
+title: "ORDERBY function (DAX)"
 ---
 
 # ORDERBY

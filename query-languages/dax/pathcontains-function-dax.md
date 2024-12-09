@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PATHCONTAINS"
-title: "PATHCONTAINS function (DAX) | Microsoft Docs"
+title: "PATHCONTAINS function (DAX)"
 ---
 # PATHCONTAINS
 

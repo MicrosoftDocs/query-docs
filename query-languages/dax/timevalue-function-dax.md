@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: TIMEVALUE"
-title: "TIMEVALUE function (DAX) | Microsoft Docs"
+title: "TIMEVALUE function (DAX)"
 ---
 # TIMEVALUE
 

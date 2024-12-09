@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ISPMT"
-title: "ISPMT function (DAX) | Microsoft Docs"
+title: "ISPMT function (DAX)"
 author: jajin7
 ---
 

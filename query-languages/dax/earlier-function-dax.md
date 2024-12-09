@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: EARLIER"
-title: "EARLIER function (DAX) | Microsoft Docs"
+title: "EARLIER function (DAX)"
 ---
 # EARLIER
 

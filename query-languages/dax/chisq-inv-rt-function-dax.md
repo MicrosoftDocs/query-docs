@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CHISQ.INV.RT"
-title: "CHISQ.INV.RT function (DAX) | Microsoft Docs"
+title: "CHISQ.INV.RT function (DAX)"
 ---
 # CHISQ.INV.RT
 

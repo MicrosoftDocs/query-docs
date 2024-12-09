@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COUPNCD"
-title: "COUPNCD function (DAX) | Microsoft Docs"
+title: "COUPNCD function (DAX)"
 ---
 
 # COUPNCD

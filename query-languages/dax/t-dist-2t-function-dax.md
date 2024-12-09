@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: T.DIST.2T"
-title: "T.DIST.2T function (DAX) | Microsoft Docs"
+title: "T.DIST.2T function (DAX)"
 ---
 # T.DIST.2T
 

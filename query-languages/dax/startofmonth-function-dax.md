@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: STARTOFMONTH"
-title: "STARTOFMONTH function (DAX) | Microsoft Docs"
+title: "STARTOFMONTH function (DAX)"
 ---
 # STARTOFMONTH
 

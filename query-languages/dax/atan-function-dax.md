@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ATAN"
-title: "ATAN function (DAX) | Microsoft Docs"
+title: "ATAN function (DAX)"
 ---
 # ATAN
 

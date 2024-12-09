@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: UNICODE"
-title: "UNICODE function (DAX) | Microsoft Docs"
+title: "UNICODE function (DAX)"
 ---
 # UNICODE
 

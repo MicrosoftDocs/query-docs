@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: BETA.INV"
-title: "BETA.INV function (DAX) | Microsoft Docs"
+title: "BETA.INV function (DAX)"
 ---
 # BETA.INV
 

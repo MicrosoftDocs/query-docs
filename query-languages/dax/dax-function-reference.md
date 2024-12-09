@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DAX function reference"
-title: "DAX function reference | Microsoft Docs"
+title: "DAX function reference"
 ---
 # DAX function reference
 

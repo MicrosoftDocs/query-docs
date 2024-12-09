@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DEGREES"
-title: "DEGREES function (DAX) | Microsoft Docs"
+title: "DEGREES function (DAX)"
 ---
 # DEGREES
 

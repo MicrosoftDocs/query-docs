@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: RANGE"
-title: "RANGE function (DAX) | Microsoft Docs"
+title: "RANGE function (DAX)"
 ms.service: powerbi
 ms.subservice: dax
 ms.date: 01/17/2023

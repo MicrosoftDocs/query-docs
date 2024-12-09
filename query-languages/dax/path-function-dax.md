@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PATH"
-title: "PATH function (DAX) | Microsoft Docs"
+title: "PATH function (DAX)"
 ---
 # PATH
 

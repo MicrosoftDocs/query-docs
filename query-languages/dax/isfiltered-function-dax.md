@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ISFILTERED"
-title: "ISFILTERED function (DAX) | Microsoft Docs"
+title: "ISFILTERED function (DAX)"
 ---
 # ISFILTERED
 

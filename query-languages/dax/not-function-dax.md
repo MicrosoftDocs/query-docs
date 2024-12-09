@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: NOT"
-title: "NOT function (DAX) | Microsoft Docs"
+title: "NOT function (DAX)"
 ---
 # NOT
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ISNONTEXT"
-title: "ISNONTEXT function (DAX) | Microsoft Docs"
+title: "ISNONTEXT function (DAX)"
 ---
 # ISNONTEXT
 

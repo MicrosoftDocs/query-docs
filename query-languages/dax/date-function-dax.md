@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DATE"
-title: "DATE function (DAX) | Microsoft Docs"
+title: "DATE function (DAX)"
 ---
 # DATE
 

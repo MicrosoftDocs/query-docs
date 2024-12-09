@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: BITXOR"
-title: "BITXOR function (DAX) | Microsoft Docs"
+title: "BITXOR function (DAX)"
 ---
 # BITXOR
 

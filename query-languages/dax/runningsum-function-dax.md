@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: RUNNINGSUM"
-title: "RUNNINGSUM function (DAX) | Microsoft Docs"
+title: "RUNNINGSUM function (DAX)"
 ms.service: powerbi
 ms.subservice: dax
 ms.date: 01/17/2023

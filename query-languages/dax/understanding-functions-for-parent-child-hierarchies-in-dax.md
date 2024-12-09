@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Understanding functions for parent-child hierarchies in DAX"
-title: "Understanding functions for parent-child hierarchies in DAX | Microsoft Docs"
+title: "Understanding functions for parent-child hierarchies in DAX"
 ---
 # Understanding functions for parent-child hierarchies in DAX
 

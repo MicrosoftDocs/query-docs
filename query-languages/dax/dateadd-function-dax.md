@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DATEADD"
-title: "DATEADD function (DAX) | Microsoft Docs"
+title: "DATEADD function (DAX)"
 ---
 # DATEADD
 

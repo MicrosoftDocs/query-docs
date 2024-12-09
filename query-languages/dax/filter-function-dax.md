@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: FILTER"
-title: "FILTER function (DAX) | Microsoft Docs"
+title: "FILTER function (DAX)"
 ---
 # FILTER
 

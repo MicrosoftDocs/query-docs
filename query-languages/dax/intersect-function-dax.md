@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: INTERSECT"
-title: "INTERSECT function (DAX) | Microsoft Docs"
+title: "INTERSECT function (DAX)"
 ---
 # INTERSECT
 

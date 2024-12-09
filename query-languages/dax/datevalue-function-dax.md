@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DATEVALUE"
-title: "DATEVALUE function (DAX) | Microsoft Docs"
+title: "DATEVALUE function (DAX)"
 ---
 # DATEVALUE
 

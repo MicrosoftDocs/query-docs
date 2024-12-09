@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: UNICHAR"
-title: "UNICHAR function (DAX) | Microsoft Docs"
+title: "UNICHAR function (DAX)"
 ---
 # UNICHAR
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: EXACT"
-title: "EXACT function (DAX) | Microsoft Docs"
+title: "EXACT function (DAX)"
 ---
 # EXACT
 

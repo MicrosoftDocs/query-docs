@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CONTAINSROW function"
-title: "CONTAINSROW function | Microsoft Docs"
+title: "CONTAINSROW function"
 ---
 # CONTAINSROW function
 

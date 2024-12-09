@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: RELATEDTABLE"
-title: "RELATEDTABLE function (DAX) | Microsoft Docs"
+title: "RELATEDTABLE function (DAX)"
 ---
 # RELATEDTABLE
 

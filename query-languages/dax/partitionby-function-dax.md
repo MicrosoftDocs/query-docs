@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PARTITIONBY"
-title: "PARTITIONBY function (DAX) | Microsoft Docs"
+title: "PARTITIONBY function (DAX)"
 ---
 
 # PARTITIONBY

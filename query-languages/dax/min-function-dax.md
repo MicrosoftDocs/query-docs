@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: MIN"
-title: "MIN function (DAX) | Microsoft Docs"
+title: "MIN function (DAX)"
 ---
 # MIN
 

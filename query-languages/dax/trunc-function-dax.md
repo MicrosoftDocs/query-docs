@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: TRUNC"
-title: "TRUNC function (DAX) | Microsoft Docs"
+title: "TRUNC function (DAX)"
 ---
 # TRUNC
 

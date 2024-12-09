@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: AMORLINC"
-title: "AMORLINC function (DAX) | Microsoft Docs"
+title: "AMORLINC function (DAX)"
 author: jajin7
 ---
 
@@ -48,13 +48,13 @@ The depreciation for each accounting period.
 - period and basis are rounded to the nearest integer.
 
 - An error is returned if:
-  - cost < 0.
-  - first_period or date_purchased is not a valid date.
-  - date_purchased > first_period.
-  - salvage < 0 or salvage > cost.
-  - period < 0.
-  - rate ≤ 0.
-  - basis is any number other than 0, 1, 3, or 4.
+  - `cost` < 0.
+  - `first_period` or `date_purchased` is not a valid date.
+  - `date_purchased` > `first_period`.
+  - `salvage` < 0 or `salvage` > `cost`.
+  - `period` < 0.
+  - `rate` ≤ 0.
+  - `basis` is any number other than 0, 1, 3, or 4.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 

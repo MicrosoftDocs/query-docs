@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DATATABLE"
-title: "DATATABLE function | Microsoft Docs"
+title: "DATATABLE function"
 ---
 # DATATABLE
 

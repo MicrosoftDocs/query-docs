@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: WINDOW"
-title: "WINDOW function (DAX) | Microsoft Docs"
+title: "WINDOW function (DAX)"
 ---
 
 # WINDOW

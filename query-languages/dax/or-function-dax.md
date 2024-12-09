@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: OR"
-title: "OR function (DAX) | Microsoft Docs"
+title: "OR function (DAX)"
 ---
 
 # OR

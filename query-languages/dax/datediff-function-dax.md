@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DATEDIFF"
-title: "DATEDIFF function (DAX) | Microsoft Docs"
+title: "DATEDIFF function (DAX)"
 ---
 # DATEDIFF
 

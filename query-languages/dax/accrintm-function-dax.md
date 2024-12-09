@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ACCRINTM"
-title: "ACCRINTM function (DAX) | Microsoft Docs"
+title: "ACCRINTM function (DAX) "
 author: jajin7
 ---
 

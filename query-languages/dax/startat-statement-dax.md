@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: START AT"
-title: "START AT keyword (DAX) | Microsoft Docs"
+title: "START AT keyword (DAX)"
 ---
 # START AT
   

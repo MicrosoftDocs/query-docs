@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CONVERT"
-title: "CONVERT function (DAX) | Microsoft Docs"
+title: "CONVERT function (DAX)"
 ---
 # CONVERT
 

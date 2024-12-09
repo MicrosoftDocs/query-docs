@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ISO.CEILING"
-title: "ISO.CEILING function (DAX) | Microsoft Docs"
+title: "ISO.CEILING function (DAX)"
 ---
 # ISO.CEILING
 

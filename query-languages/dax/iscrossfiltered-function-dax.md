@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ISCROSSFILTERED"
-title: "ISCROSSFILTERED function (DAX) | Microsoft Docs"
+title: "ISCROSSFILTERED function (DAX)"
 ---
 # ISCROSSFILTERED
 

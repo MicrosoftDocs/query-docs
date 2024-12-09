@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: RANKX"
-title: "RANKX function (DAX) | Microsoft Docs"
+title: "RANKX function (DAX)"
 ---
 # RANKX
 

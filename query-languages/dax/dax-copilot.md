@@ -1,5 +1,5 @@
 ---
-title: "Write DAX queries with Copilot | Microsoft Docs"
+title: "Write DAX queries with Copilot"
 description: Use Copilot to create a DAX queries query. Type in a prompt to describe what DAX query you would like generated, and Copilot can create it.
 ms.service: powerbi 
 ms.date: 10/21/2024

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: IGNORE"
-title: "IGNORE function (DAX) | Microsoft Docs"
+title: "IGNORE function (DAX)"
 ---
 # IGNORE
 

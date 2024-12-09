@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: NORM.S.DIST"
-title: "NORM.S.DIST function (DAX) | Microsoft Docs"
+title: "NORM.S.DIST function (DAX)"
 ---
 # NORM.S.DIST
 

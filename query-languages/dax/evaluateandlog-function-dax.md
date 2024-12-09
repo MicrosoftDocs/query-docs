@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: EVALUATEANDLOG"
-title: "EVALUATEANDLOG function (DAX) | Microsoft Docs"
+title: "EVALUATEANDLOG function (DAX)"
 ---
 # EVALUATEANDLOG
 

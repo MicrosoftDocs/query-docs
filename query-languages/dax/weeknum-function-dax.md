@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: WEEKNUM"
-title: "WEEKNUM function (DAX) | Microsoft Docs"
+title: "WEEKNUM function (DAX)"
 ---
 # WEEKNUM
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: EXPANDALL"
-title: "EXPANDALL function (DAX) | Microsoft Docs"
+title: "EXPANDALL function (DAX)"
 ms.service: powerbi
 ms.subservice: dax
 ms.date: 02/21/2024

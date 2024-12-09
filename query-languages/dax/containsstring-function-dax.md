@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CONTAINSSTRING"
-title: "CONTAINSSTRING function (DAX) | Microsoft Docs"
+title: "CONTAINSSTRING function (DAX)"
 ---
 # CONTAINSSTRING
 

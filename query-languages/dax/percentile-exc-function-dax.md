@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PERCENTILE.EXC"
-title: "PERCENTILE.EXC function (DAX) | Microsoft Docs"
+title: "PERCENTILE.EXC function (DAX)"
 ---
 # PERCENTILE.EXC
 

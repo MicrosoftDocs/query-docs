@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COS"
-title: "COS function (DAX) | Microsoft Docs"
+title: "COS function (DAX)"
 ---
 # COS
 

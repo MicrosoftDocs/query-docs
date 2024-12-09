@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DAX syntax"
-title: "DAX syntax | Microsoft Docs"
+title: "DAX syntax"
 ms.topic: conceptual
 ---
 # DAX syntax

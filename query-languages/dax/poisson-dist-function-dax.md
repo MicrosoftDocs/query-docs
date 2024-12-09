@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: POISSON.DIST"
-title: "POISSON.DIST function (DAX) | Microsoft Docs"
+title: "POISSON.DIST function (DAX)"
 ---
 # POISSON.DIST
 

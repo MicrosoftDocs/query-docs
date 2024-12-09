@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ERROR"
-title: "ERROR function | Microsoft Docs"
+title: "ERROR function"
 ---
 # ERROR
 

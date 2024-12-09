@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: EOMONTH"
-title: "EOMONTH function (DAX) | Microsoft Docs"
+title: "EOMONTH function (DAX)"
 ---
 # EOMONTH
 

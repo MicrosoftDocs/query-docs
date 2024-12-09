@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PRODUCT"
-title: "PRODUCT function (DAX) | Microsoft Docs"
+title: "PRODUCT function (DAX)"
 ---
 # PRODUCT
 

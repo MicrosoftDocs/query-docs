@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table constructor"
-title: "Table constructor | Microsoft Docs"
+title: "Table constructor"
 ---
 # Table constructor
 

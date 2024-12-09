@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DAY"
-title: "DAY function (DAX) | Microsoft Docs"
+title: "DAY function (DAX)"
 ---
 # DAY
 

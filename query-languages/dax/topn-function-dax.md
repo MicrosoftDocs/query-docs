@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: TOPN"
-title: "TOPN function (DAX) | Microsoft Docs"
+title: "TOPN function (DAX)"
 ---
 # TOPN
 

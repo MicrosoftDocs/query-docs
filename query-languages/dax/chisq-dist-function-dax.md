@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CHISQ.DIST"
-title: "CHISQ.DIST function (DAX) | Microsoft Docs"
+title: "CHISQ.DIST function (DAX)"
 ---
 # CHISQ.DIST
 

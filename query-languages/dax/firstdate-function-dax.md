@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: FIRSTDATE"
-title: "FIRSTDATE function (DAX) | Microsoft Docs"
+title: "FIRSTDATE function (DAX)"
 ---
 # FIRSTDATE
 

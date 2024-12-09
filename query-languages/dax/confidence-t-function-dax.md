@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CONFIDENCE.T"
-title: "CONFIDENCE.T function (DAX) | Microsoft Docs"
+title: "CONFIDENCE.T function (DAX)"
 ---
 # CONFIDENCE.T
 

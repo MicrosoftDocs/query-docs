@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: MONTH"
-title: "MONTH function (DAX) | Microsoft Docs"
+title: "MONTH function (DAX)"
 ---
 # MONTH
 

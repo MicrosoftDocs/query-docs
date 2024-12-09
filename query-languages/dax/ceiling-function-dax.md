@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CEILING"
-title: "CEILING function (DAX) | Microsoft Docs"
+title: "CEILING function (DAX)"
 ---
 # CEILING
 

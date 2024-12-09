@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ACCRINT"
-title: "ACCRINT function (DAX) | Microsoft Docs"
+title: "ACCRINT function (DAX) "
 author: jajin7
 ---
 

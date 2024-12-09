@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COUNT"
-title: "COUNT function (DAX) | Microsoft Docs"
+title: "COUNT function (DAX)"
 ---
 # COUNT
 

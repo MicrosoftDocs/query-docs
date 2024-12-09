@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: MEASURE"
-title: "MEASURE keyword (DAX) | Microsoft Docs"
+title: "MEASURE keyword (DAX)"
 ---
 # MEASURE
 

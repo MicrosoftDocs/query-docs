@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CALENDARAUTO"
-title: "CALENDARAUTO function (DAX) | Microsoft Docs"
+title: "CALENDARAUTO function (DAX)"
 ---
 # CALENDARAUTO
 

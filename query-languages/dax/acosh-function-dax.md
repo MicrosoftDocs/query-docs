@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ACOSH"
-title: "ACOSH function (DAX) | Microsoft Docs"
+title: "ACOSH function (DAX)"
 ---
 # ACOSH
 

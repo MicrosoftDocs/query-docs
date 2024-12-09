@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: MOVINGAVERAGE"
-title: "MOVINGAVERAGE function (DAX) | Microsoft Docs"
+title: "MOVINGAVERAGE function (DAX)"
 ms.service: powerbi
 ms.subservice: dax
 ms.date: 01/17/2023

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: NEXTDAY"
-title: "NEXTDAY function (DAX) | Microsoft Docs"
+title: "NEXTDAY function (DAX)"
 ---
 # NEXTDAY
 

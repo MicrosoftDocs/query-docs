@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: BITOR"
-title: "BITOR function (DAX) | Microsoft Docs"
+title: "BITOR function (DAX)"
 ---
 # BITOR
 

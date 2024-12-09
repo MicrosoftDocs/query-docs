@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: MID"
-title: "MID function (DAX) | Microsoft Docs"
+title: "MID function (DAX)"
 ---
 # MID
 

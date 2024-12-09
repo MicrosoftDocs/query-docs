@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PREVIOUS"
-title: "PREVIOUS function (DAX) | Microsoft Docs"
+title: "PREVIOUS function (DAX)"
 ---
 
 # PREVIOUS

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ASIN"
-title: "ASIN function (DAX) | Microsoft Docs"
+title: "ASIN function (DAX)"
 ---
 # ASIN
 

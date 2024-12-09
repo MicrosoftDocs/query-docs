@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: TANH"
-title: "TANH function (DAX) | Microsoft Docs"
+title: "TANH function (DAX)"
 ---
 # TANH
 

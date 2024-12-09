@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: FIRST"
-title: "FIRST function (DAX) | Microsoft Docs"
+title: "FIRST function (DAX)"
 ---
 
 # FIRST

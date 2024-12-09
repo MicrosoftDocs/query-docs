@@ -1,5 +1,5 @@
 ---
-title: "DAX glossary | Microsoft Docs"
+title: "DAX glossary"
 description: Describes common terms used in the Data Analysis Expressions (DAX) language.
 ms.topic: conceptual
 ---

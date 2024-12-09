@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: USERELATIONSHIP"
-title: "USERELATIONSHIP function (DAX) | Microsoft Docs"
+title: "USERELATIONSHIP function (DAX)"
 ---
 # USERELATIONSHIP
 

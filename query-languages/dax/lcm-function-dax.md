@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: LCM"
-title: "LCM function (DAX) | Microsoft Docs"
+title: "LCM function (DAX)"
 ---
 # LCM
 

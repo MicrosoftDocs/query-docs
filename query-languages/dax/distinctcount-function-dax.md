@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DISTINCTCOUNT"
-title: "DISTINCTCOUNT function (DAX) | Microsoft Docs"
+title: "DISTINCTCOUNT function (DAX)"
 ---
 # DISTINCTCOUNT
 

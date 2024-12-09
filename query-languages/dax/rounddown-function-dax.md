@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ROUNDDOWN"
-title: "ROUNDDOWN function (DAX) | Microsoft Docs"
+title: "ROUNDDOWN function (DAX)"
 ---
 # ROUNDDOWN
 

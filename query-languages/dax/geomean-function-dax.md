@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: GEOMEAN"
-title: "GEOMEAN function (DAX) | Microsoft Docs"
+title: "GEOMEAN function (DAX)"
 ---
 # GEOMEAN
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: APPROXIMATEDISTINCTCOUNT"
-title: "APPROXIMATEDISTINCTCOUNT function (DAX) | Microsoft Docs"
+title: "APPROXIMATEDISTINCTCOUNT function (DAX)"
 ---
 # APPROXIMATEDISTINCTCOUNT
 

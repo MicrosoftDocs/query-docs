@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: VAR.S"
-title: "VAR.S function (DAX) | Microsoft Docs"
+title: "VAR.S function (DAX)"
 ---
 # VAR.S
 

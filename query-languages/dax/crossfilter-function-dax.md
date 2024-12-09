@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CROSSFILTER"
-title: "CROSSFILTER function | Microsoft Docs"
+title: "CROSSFILTER function"
 ---
 # CROSSFILTER
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: GCD"
-title: "GCD function (DAX) | Microsoft Docs"
+title: "GCD function (DAX)"
 ---
 # GCD
 

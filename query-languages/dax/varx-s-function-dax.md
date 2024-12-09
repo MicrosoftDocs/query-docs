@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: VARX.S"
-title: "VARX.S function (DAX) | Microsoft Docs"
+title: "VARX.S function (DAX)"
 ---
 # VARX.S
 

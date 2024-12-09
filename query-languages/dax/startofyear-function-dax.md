@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: STARTOFYEAR"
-title: "STARTOFYEAR function (DAX) | Microsoft Docs"
+title: "STARTOFYEAR function (DAX)"
 ---
 # STARTOFYEAR
 

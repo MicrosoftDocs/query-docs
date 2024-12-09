@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CONCATENATEX"
-title: "CONCATENATEX function (DAX) | Microsoft Docs"
+title: "CONCATENATEX function (DAX)"
 ---
 # CONCATENATEX
 

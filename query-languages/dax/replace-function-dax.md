@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: REPLACE"
-title: "REPLACE function (DAX) | Microsoft Docs"
+title: "REPLACE function (DAX)"
 ---
 # REPLACE
 

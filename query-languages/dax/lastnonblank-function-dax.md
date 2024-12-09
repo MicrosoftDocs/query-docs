@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: LASTNONBLANK"
-title: "LASTNONBLANK function (DAX) | Microsoft Docs"
+title: "LASTNONBLANK function (DAX)"
 ---
 # LASTNONBLANK
 

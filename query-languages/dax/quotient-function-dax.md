@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: QUOTIENT"
-title: "QUOTIENT function (DAX) | Microsoft Docs"
+title: "QUOTIENT function (DAX)"
 ---
 # QUOTIENT
 

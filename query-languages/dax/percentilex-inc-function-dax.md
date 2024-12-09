@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PERCENTILEX.INC"
-title: "PERCENTILEX.INC function (DAX) | Microsoft Docs"
+title: "PERCENTILEX.INC function (DAX)"
 ---
 # PERCENTILEX.INC
 

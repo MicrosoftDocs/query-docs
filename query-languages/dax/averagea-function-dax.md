@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: AVERAGEA"
-title: "AVERAGEA function (DAX) | Microsoft Docs"
+title: "AVERAGEA function (DAX)"
 ---
 # AVERAGEA
 

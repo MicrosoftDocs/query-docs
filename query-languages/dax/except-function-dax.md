@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: EXCEPT"
-title: "EXCEPT function (DAX) | Microsoft Docs"
+title: "EXCEPT function (DAX)"
 ---
 # EXCEPT
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PATHLENGTH"
-title: "PATHLENGTH function (DAX) | Microsoft Docs"
+title: "PATHLENGTH function (DAX)"
 ---
 # PATHLENGTH
 

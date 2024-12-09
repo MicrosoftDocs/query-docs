@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COLLAPSEALL"
-title: "COLLAPSEALL function (DAX) | Microsoft Docs"
+title: "COLLAPSEALL function (DAX)"
 ms.service: powerbi
 ms.subservice: dax
 ms.date: 02/20/2024

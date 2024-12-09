@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: IF.EAGER"
-title: "IF.EAGER function (DAX) | Microsoft Docs"
+title: "IF.EAGER function (DAX)"
 ---
 # IF.EAGER
 

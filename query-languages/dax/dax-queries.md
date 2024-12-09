@@ -1,5 +1,5 @@
 ---
-title: "DAX Queries | Microsoft Docs"
+title: "DAX Queries"
 description: Describes Data Analysis Expressions (DAX) language queries.
 ms.topic: conceptual
 ---

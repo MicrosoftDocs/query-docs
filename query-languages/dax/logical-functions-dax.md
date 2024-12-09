@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Logical functions"
-title: "Logical functions (DAX) | Microsoft Docs"
+title: "Logical functions (DAX)"
 ---
 # Logical functions
 

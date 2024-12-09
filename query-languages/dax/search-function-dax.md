@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SEARCH"
-title: "SEARCH function (DAX) | Microsoft Docs"
+title: "SEARCH function (DAX)"
 ---
 # SEARCH
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PV"
-title: "PV function (DAX) | Microsoft Docs"
+title: "PV function (DAX)"
 author: jajin7
 ---
 

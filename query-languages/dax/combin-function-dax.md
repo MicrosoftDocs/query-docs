@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COMBIN"
-title: "COMBIN function (DAX) | Microsoft Docs"
+title: "COMBIN function (DAX)"
 ---
 
 # COMBIN

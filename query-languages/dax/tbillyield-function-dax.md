@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: TBILLYIELD"
-title: "TBILLYIELD function (DAX) | Microsoft Docs"
+title: "TBILLYIELD function (DAX)"
 author: jajin7
 ---
 

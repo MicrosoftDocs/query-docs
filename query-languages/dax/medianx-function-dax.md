@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: MEDIANX"
-title: "MEDIANX function (DAX) | Microsoft Docs"
+title: "MEDIANX function (DAX)"
 ---
 # MEDIANX
 

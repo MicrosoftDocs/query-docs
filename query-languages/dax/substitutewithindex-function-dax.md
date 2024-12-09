@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SUBSTITUTEWITHINDEX"
-title: "SUBSTITUTEWITHINDEX function (DAX) | Microsoft Docs"
+title: "SUBSTITUTEWITHINDEX function (DAX)"
 ---
 # SUBSTITUTEWITHINDEX
 

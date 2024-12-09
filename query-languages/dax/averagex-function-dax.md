@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: AVERAGEX"
-title: "AVERAGEX function (DAX) | Microsoft Docs"
+title: "AVERAGEX function (DAX)"
 ---
 # AVERAGEX
 

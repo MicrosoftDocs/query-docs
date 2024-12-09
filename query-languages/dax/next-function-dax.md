@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: NEXT"
-title: "NEXT function (DAX) | Microsoft Docs"
+title: "NEXT function (DAX)"
 ---
 
 # NEXT

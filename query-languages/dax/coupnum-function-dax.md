@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COUPNUM"
-title: "COUPNUM function (DAX) | Microsoft Docs"
+title: "COUPNUM function (DAX)"
 ---
 
 # COUPNUM

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: RATE"
-title: "RATE function (DAX) | Microsoft Docs"
+title: "RATE function (DAX)"
 author: jajin7
 ---
 

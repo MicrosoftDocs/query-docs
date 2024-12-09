@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: FLOOR"
-title: "FLOOR function (DAX) | Microsoft Docs"
+title: "FLOOR function (DAX)"
 ---
 # FLOOR
 

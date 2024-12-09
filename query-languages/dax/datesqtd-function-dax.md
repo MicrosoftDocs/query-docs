@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DATESQTD"
-title: "DATESQTD function (DAX) | Microsoft Docs"
+title: "DATESQTD function (DAX)"
 ---
 # DATESQTD
 

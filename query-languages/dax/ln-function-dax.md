@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: LN"
-title: "LN function (DAX) | Microsoft Docs"
+title: "LN function (DAX)"
 ---
 # LN
 

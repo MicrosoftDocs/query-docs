@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: LASTDATE"
-title: "LASTDATE function (DAX) | Microsoft Docs"
+title: "LASTDATE function (DAX)"
 ---
 # LASTDATE
 

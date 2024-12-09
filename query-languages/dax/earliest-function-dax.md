@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: EARLIEST"
-title: "EARLIEST function (DAX) | Microsoft Docs"
+title: "EARLIEST function (DAX)"
 ---
 # EARLIEST
 

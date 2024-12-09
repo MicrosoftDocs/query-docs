@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PRICE"
-title: "PRICE function (DAX) | Microsoft Docs"
+title: "PRICE function (DAX)"
 author: jajin7
 ---
 

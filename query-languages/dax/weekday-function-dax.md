@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: WEEKDAY"
-title: "WEEKDAY function (DAX) | Microsoft Docs"
+title: "WEEKDAY function (DAX)"
 ---
 # WEEKDAY
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PRODUCTX"
-title: "PRODUCTX function (DAX) | Microsoft Docs"
+title: "PRODUCTX function (DAX)"
 ---
 # PRODUCTX
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Information functions"
-title: "Information functions (DAX) | Microsoft Docs"
+title: "Information functions (DAX)"
 ---
 # Information functions
 

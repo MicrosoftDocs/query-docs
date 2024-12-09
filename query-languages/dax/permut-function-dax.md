@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PERMUT"
-title: "PERMUT function (DAX) | Microsoft Docs"
+title: "PERMUT function (DAX)"
 ---
 # PERMUT
 

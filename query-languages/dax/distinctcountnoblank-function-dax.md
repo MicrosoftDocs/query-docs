@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DISTINCTCOUNTNOBLANK"
-title: "DISTINCTCOUNTNOBLANK function (DAX) | Microsoft Docs"
+title: "DISTINCTCOUNTNOBLANK function (DAX)"
 ---
 # DISTINCTCOUNTNOBLANK
 

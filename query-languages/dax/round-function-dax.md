@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ROUND"
-title: "ROUND function (DAX) | Microsoft Docs"
+title: "ROUND function (DAX)"
 ---
 # ROUND
 

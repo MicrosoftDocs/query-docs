@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: MDURATION"
-title: "MDURATION function (DAX) | Microsoft Docs"
+title: "MDURATION function (DAX)"
 author: jajin7
 ---
 

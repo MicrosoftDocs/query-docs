@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: AND"
-title: "AND function (DAX) | Microsoft Docs"
+title: "AND function (DAX)"
 ---
 # AND
 

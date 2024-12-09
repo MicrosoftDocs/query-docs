@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: NEXTYEAR"
-title: "NEXTYEAR function (DAX) | Microsoft Docs"
+title: "NEXTYEAR function (DAX)"
 ---
 # NEXTYEAR
 

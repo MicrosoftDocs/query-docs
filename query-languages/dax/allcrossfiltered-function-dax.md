@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ALLCROSSFILTERED"
-title: "ALLCROSSFILTERED function (DAX) | Microsoft Docs"
+title: "ALLCROSSFILTERED function (DAX)"
 ---
 # ALLCROSSFILTERED
 
