@@ -17,11 +17,11 @@ To perform basic mathematical operations such as addition, subtraction, or multi
   
 |Arithmetic operator|Meaning|Example|  
 |-----------------------|-----------|-----------|  
-|+ (plus sign)|Addition|3+3|  
-|– (minus sign)|Subtraction or sign|3–1–1|  
-|* (asterisk)|Multiplication|3*3|  
-|/ (forward slash)|Division|3/3|  
-|^ (caret)|Exponentiation|16^4|  
+|`+` (plus sign)|Addition|`3+3`|  
+|`-` (minus sign)|Subtraction or sign|`3-1-1`|  
+|`*` (asterisk)|Multiplication|`3*3`|  
+|`/` (forward slash)|Division|`3/3`|  
+|`^` (caret)|Exponentiation|`16^4`|  
   
 > [!NOTE]  
 > The plus sign can function both as a *binary operator* and as a *unary operator*. A binary operator requires numbers on both sides of the operator and performs addition. When you use values in a DAX formula on both sides of the binary operator, DAX tries to cast the values to numeric data types if they are not already numbers. In contrast, the unary operator can be applied to any type of argument. The plus symbol does not affect the type or value and is simply ignored, whereas the minus operator creates a negative value, if applied to a numeric value.  
@@ -32,13 +32,13 @@ You can compare two values with the following operators. When two values are com
   
 |Comparison operator|Meaning|Example|  
 |-----------------------|-----------|-----------|  
-|=|Equal to|[Region] = "USA"| 
-|==|Strict equal to|[Region] == "USA"|  
-|&gt;|Greater than|[Sales Date] &gt; "Jan 2009"|  
-|&lt;|Less than|[Sales Date] &lt; "Jan 1 2009"|  
-|&gt;=|Greater than or equal to|[Amount] &gt;= 20000|  
-|&lt;=|Less than or equal to|[Amount] &lt;= 100|  
-|&lt;&gt;|Not equal to|[Region] &lt;&gt; "USA"| 
+|`=`|Equal to|[Region] = "USA"| 
+|`==`|Strict equal to|[Region] == "USA"|  
+|`>`|Greater than|[Sales Date] &gt; "Jan 2009"|  
+|`<`|Less than|[Sales Date] &lt; "Jan 1 2009"|  
+|`>=`|Greater than or equal to|[Amount] &gt;= 20000|  
+|`<=`|Less than or equal to|[Amount] &lt;= 100|  
+|`<>`|Not equal to|[Region] &lt;&gt; "USA"| 
 
 All comparison operators except == treat BLANK as equal to number 0, empty string "", DATE(1899, 12, 30), or `FALSE`. As a result, [Column] = 0 will be true when the value of [Column] is either 0 or BLANK. In contrast, [Column] == 0 is true only when the value of [Column] is 0.
 
@@ -58,7 +58,7 @@ Use logical operators (`&&`) and (`||`) to combine expressions to produce a sing
 |-----------------|-----------|------------|  
 |`&&`(double ampersand)|Creates an AND condition between two expressions that each have a Boolean result. If both expressions return `TRUE`, the combination of the expressions also returns `TRUE`; otherwise the combination returns `FALSE`.|`([Region] = "France") && ([BikeBuyer] = "yes"))`|  
 |`||` (double pipe symbol)|Creates an OR condition between two logical expressions. If either expression returns `TRUE`, the result is `TRUE`; only when both expressions are `FALSE` is the result `FALSE`. | `(([Region] = "France") || ([BikeBuyer] = "yes"))`| 
-|IN|Creates a logical OR condition between each row being compared to a table. Note: the table constructor syntax uses curly braces.|`'Product'[Color] IN { "Red", "Blue", "Black" }`|
+|`IN`|Creates a logical OR condition between each row being compared to a table. Note: the table constructor syntax uses curly braces.|`'Product'[Color] IN { "Red", "Blue", "Black" }`|
   
 ## Operators and precedence order
 

@@ -133,7 +133,7 @@ The following table lists the operators that are supported by DAX. For more info
 |Operator type|Symbol and use|  
 |-----------------|------------------|  
 |Parenthesis operator|`()` precedence order and grouping of arguments|  
-|Arithmetic operators|`+` (addition)<br /><br />`-` (subtraction/<br /><br />sign)<br /><br />`*` (multiplication)<br /><br />`/` (division)<br /><br />`^` (exponentiation)|  
+|Arithmetic operators|`+` (addition)<br /><br />`-` (subtraction)<br /><br />`*` (multiplication)<br /><br />`/` (division)<br /><br />`^` (exponentiation)|  
 |Comparison operators|`=` (equal to)<br /><br />`>` (greater than)<br /><br />`<` (less than)<br /><br />`>=` (greater than or equal to)<br /><br />`<=` (less than or equal to)<br /><br />`<>` (not equal to)|  
 |Text concatenation operator|`&` (concatenation)|  
 |Logic operators|`&&` (and)<br /><br />`||` (or)|  
