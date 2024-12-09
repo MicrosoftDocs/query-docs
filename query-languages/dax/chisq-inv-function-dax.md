@@ -33,9 +33,9 @@ Returns the inverse of the left-tailed probability of the chi-squared distributi
   
 - If probability \< 0 or probability > 1, CHISQ.INV returns the `#NUM!` error value.  
   
-- If deg_freedom is not an integer, it is rounded.  
+- If `deg_freedom` is not an integer, it is rounded.  
   
-- If deg_freedom \< 0 or deg_freedom > 10^10, CHISQ.INV returns the `#NUM!` error value.  
+- If `deg_freedom` \< 0 or `deg_freedom` > 10^10, CHISQ.INV returns the `#NUM!` error value.  
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 

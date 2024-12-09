@@ -41,7 +41,7 @@ A table with the selected columns for the groupBy_columnName arguments and the e
   
 - Each column for which you define a name must have a corresponding expression; otherwise, an error is returned. The first argument, name, defines the name of the column in the results. The second argument, expression, defines the calculation performed to obtain the value for each row in that column.  
   
-- groupBy_columnName must be either in table or in a related table.  
+- `groupBy_columnName` must be either in table or in a related table.  
   
 - Each name must be enclosed in double quotation marks.  
   
