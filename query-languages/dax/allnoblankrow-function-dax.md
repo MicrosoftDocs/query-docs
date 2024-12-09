@@ -50,7 +50,7 @@ In the sample data, the ResellerSales_USD table contains one row that has no val
   
 Step 1: Verify the unrelated data 
   
-Open the `Power Pivot window`, then select the ResellerSales_USD table. In the ProductKey column, filter for blank values. One row will remain. In that row, all column values should be blank except for SalesOrderLineNumber.  
+Open the **Power Pivot window**, then select the ResellerSales_USD table. In the ProductKey column, filter for blank values. One row will remain. In that row, all column values should be blank except for SalesOrderLineNumber.  
   
 Step 2: Create a PivotTable  
   
