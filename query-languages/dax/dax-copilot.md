@@ -181,7 +181,9 @@ DAX queries from multiple Power BI semantic models using a variety of user reque
 - To use Copilot to help write DAX queries, you need to select a workspace with a Fabric capacity.
 - Copilot uses the model metadata (tables, columns, measures), so DAX query responses will answer only in context of the current semantic model.
 - Copilot uses the model metadata (tables, columns, measures), so providing rich metadata that is descriptive and understandable will yield better results.
-- Copilot cannot use the data in the tables of the semantic model.
+- Copilot may use min/max to get sample values in import storage mode, but cannot use other data in the tables of the semantic model.
+- Copilot may not be available or only see limited model metadata (tables, columns, measures) when the number of model metadata items exceeds 100 tables, 250 columns or measures in a table, 100 relationhips, 5,000 total columns or measures, 1,024 characters in a single DAX expression, or 256 characters in a name.
+- Copilot may use the description property on model metadata, but is limited to only the first 200 characters.
 - DAX functions added recently may not be known to the Copilot, and explanations may be incorrect.
 - Copilot requests include all text in the current query window, and if text is selected the selection information it is noted as selected, but all text in the query window is included.
 
