@@ -78,11 +78,13 @@ EVALUATE
 		'Date'[Month Name],
 		'Date'[Month of Year],
 		'Product'[Category],
+
 		// Optional filters
 		FILTER(
 			VALUES('Product'[Category]),
 			[Category] = "Clothing"
 		),
+
 		// Measures or explicit DAX formulas to aggregate and analyze the data by row
 		"Orders", [Orders],
 		"Avg Profit per Order", DIVIDE(
@@ -90,6 +92,7 @@ EVALUATE
 			[Orders]
 		)
 	)
+
 	// DAX queries do not use sort order defined in Power BI, 
 	// sort by columns must be included in the DAX query to be used in order by
 	ORDER BY 'Date'[Month of Year] ASC
@@ -100,6 +103,22 @@ Returns clothing orders and average profit per order by month, in ascending orde
 ![DAX Evaluate order by statement](media/dax-queries/dax-evaluate-orderby.png)
 
 TOPN does not choose the specified number of rows to return based on the sort order specified in ORDER BY. Instead, TOPN has its own syntax to optionally specify a sort before the top 100 rows are return. ORDER BY only sorts the result table returned by TOPN. 
+
+```dax
+EVALUATE
+	TOPN(
+		100,
+		'Sales Order',
+		// The way the data is sorted before the top 100 rows are selected
+		'Sales Order'[SalesOrderLineKey], ASC
+	)
+	// The way the data is sorted for the results
+	ORDER BY
+		'Sales Order'[Sales Order] ASC,
+		'Sales Order'[Sales Order Line] ASC
+```
+
+Returns the top 100 sales orders sorted by SalesOrderLienKey ascending, then sorts the results first by sales order, then by sales order line.
 
 ![DAX Evaluate order by with topn statement](media/dax-queries/dax-evaluate-topn.png)
 
