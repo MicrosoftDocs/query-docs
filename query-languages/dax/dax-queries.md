@@ -14,9 +14,9 @@ Before learning about queries, it is important you have a solid understanding of
 DAX queries have a simple syntax comprised of just one required keyword, EVALUATE. EVALUATE is followed by a table expression, such as  a DAX function or table name, that when run outputs a result table. 
 Table expressions that output a result table include:
 
-1.	Common DAX functions that output a table, such as [SUMMARIZE](summarize-function-dax), [SUMMARIZECOLUMNS](summarizecolumns-function-dax), [SELECTCOLUMNS](selectcolumns-function-dax), [FILTER](filter-function-dax), [UNION](union-function-dax), [TOPN](topn-function-dax), [ADDCOLUMNS](addcolumns-function-dax), [DATATABLE](datatable-function-dax), and many others, work with EVALUATE to output a result table. 
+1.	Common DAX functions that output a table, such as [SUMMARIZE](summarize-function-dax.md), [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md), [SELECTCOLUMNS](selectcolumns-function-dax), [FILTER](filter-function-dax.md), [UNION](union-function-dax.md), [TOPN](topn-function-dax.md), [ADDCOLUMNS](addcolumns-function-dax.md), [DATATABLE](datatable-function-dax.md), and many others, work with EVALUATE to output a result table. 
 2.	Tables in the model when referenced by name work with EVALUATE to output a result table showing the data in the table. For example, **EVALUATE ‘Table name’** can be ran as a DAX query.
-3.	Measures in the model or any DAX formula, which return a scalar value, work with EVALUATE to show the value as a result table when enclosed in curly braces. For example, **EVALUATE {[Total Sales]}** or **EVALUATE {COUNTROWS(‘Sales’)}** can be ran as a DAX query. These are called [table constructors](table-constructor).
+3.	Measures in the model or any DAX formula, which return a scalar value, work with EVALUATE to show the value as a result table when enclosed in curly braces. For example, **EVALUATE {[Total Sales]}** or **EVALUATE {COUNTROWS(‘Sales’)}** can be ran as a DAX query. These are called [table constructors](table-constructor.md).
 
 There are several optional keywords specific to DAX queries: ORDER BY, START AT, DEFINE, MEASURE, VAR, TABLE, and COLUMN. 
 
@@ -44,7 +44,7 @@ EVALUATE
 	'Sales Order'
 ```
 
-Returns all rows and columns from the Sales Order table, as a result table. This can be limited with the use of [TOPN](topn-function-dax) or [FILTER](filter-function-dax), and sorted with ORDER BY.
+Returns all rows and columns from the Sales Order table, as a result table. This can be limited with the use of [TOPN](topn-function-dax.md) or [FILTER](filter-function-dax.md), and sorted with ORDER BY.
 
 ![DAX Evaluate statement](media/dax-queries/dax-evaluate.png)
 
