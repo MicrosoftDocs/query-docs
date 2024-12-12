@@ -104,7 +104,7 @@ EVALUATE
 
 Returns clothing orders and average profit per order by month, in ascending order by month, as a result table.
 
-![DAX Evaluate order by statement](media/dax-queries/dax-evaluate-orderby.png)
+:::image type="content" source="media/dax-queries/dax-evaluate-orderby.png" alt-text="Screenshot showing how to use ORDER BY for a DAX query in DAX query view of Power BI Desktop." lightbox="media/dax-queries/dax-evaluate-orderby.png":::
 
 TOPN does not choose the specified number of rows to return based on the sort order specified in ORDER BY. Instead, TOPN has its own syntax to optionally specify a sort before the top 100 rows are return. ORDER BY only sorts the result table returned by TOPN. 
 
@@ -124,7 +124,7 @@ EVALUATE
 
 Returns the top 100 sales orders sorted by SalesOrderLienKey ascending, then sorts the results first by sales order, then by sales order line.
 
-![DAX Evaluate order by with topn statement](media/dax-queries/dax-evaluate-topn.png)
+:::image type="content" source="media/dax-queries/dax-evaluate-topn.png" alt-text="Screenshot showing how to use TOPN and ORDER BY for a DAX query in DAX query view of Power BI Desktop." lightbox="media/dax-queries/dax-evaluate-topn.png":::
 
 ### START AT (Optional)
 
@@ -161,7 +161,7 @@ EVALUATE
 
 Returns all columns from the Sales Order table, in ascending order by Sales Order, beginning at SO43661. Rows before this sales order are not included in the result table.
 
-![DAX Evaluate order by Sales order number statement](media/dax-queries/dax-evaluate-startat.png)
+:::image type="content" source="media/dax-queries/dax-evaluate-startat.png" alt-text="Screenshot showing how to use ORDER BY and START AT for a DAX query in DAX query view of Power BI Desktop." lightbox="media/dax-queries/dax-evaluate-startat.png":::
 
 ### DEFINE (Optional)
 
@@ -225,7 +225,7 @@ EVALUATE
 
 Returns the table defined in the DAX query to show unbought products with an additional defined column referencing defined variables. A measures is also defined and evulated counting the rows of unbought products.
 
-![DAX Evaluate with define defnitions](media/dax-queries/dax-evaluate-define.png)
+:::image type="content" source="media/dax-queries/dax-evaluate-define.png" alt-text="Screenshot showing how to use DEFINE for a DAX query in DAX query view of Power BI Desktop." lightbox="media/dax-queries/dax-evaluate-define.png":::
 
 ```dax
 DEFINE
@@ -253,7 +253,7 @@ EVALUATE
 ```
 Returns a table evaluating three defined measures to show the results by fiscal year. All measures also exist in the model, and Orders per Customer is modified in the DAX query.
 
-![DAX Evaluate with measure defnitions](media/dax-queries/dax-evaluate-define-measures.png)
+:::image type="content" source="media/dax-queries/dax-evaluate-define-measures.png" alt-text="Screenshot showing how to use DEFINE MEASURE for a DAX query in DAX query view of Power BI Desktop." lightbox="media/dax-queries/dax-evaluate-define-measures.png":::
 
 ## Parameters in DAX queries  
 
