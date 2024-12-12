@@ -154,7 +154,7 @@ Copilot can also explain DAX functions with more detail. Let's ask about SUMMARI
 
 Again, Copilot generates brief description: 
 
-:::image type="content" source="media/dax-copilot/dax-copilot-summarize-columns-brief.png" alt-text="Screenshot showing a brief description of the SUMMARIZECOLUMNS DAX funtion.":::
+:::image type="content" source="media/dax-copilot/dax-copilot-summarize-columns-brief.png" alt-text="Screenshot showing a brief description of the SUMMARIZECOLUMNS DAX function.":::
 
 I can select **Show more** to see a more detailed explanation with an example. 
 
@@ -182,7 +182,7 @@ DAX queries from multiple Power BI semantic models using a variety of user reque
 - Copilot uses the model metadata (tables, columns, measures), so DAX query responses will answer only in context of the current semantic model.
 - Copilot uses the model metadata (tables, columns, measures), so providing rich metadata that is descriptive and understandable will yield better results.
 - Copilot may use min/max to get sample values in import storage mode, but cannot use other data in the tables of the semantic model.
-- Copilot may not be available or use reduced version of the model metadata (tables, columns, measures) when the number of model metadata items exceeds 500 tables, 1,000 columns or 3,000 measures in a table, 2,000 relationhips, 10,000 total columns, 5,000 total measures, 5,000 characters in a single DAX expression, or 256 characters in a name. 
+- Copilot may not be available or use reduced version of the model metadata (tables, columns, measures) when the number of model metadata items exceeds 500 tables, 1,000 columns or 3,000 measures in a table, 2,000 relationships, 10,000 total columns, 5,000 total measures, 5,000 characters in a single DAX expression, or 256 characters in a name. 
 - Copilot may use the description property on model metadata, but is limited to only the first 200 characters.
 - DAX functions added recently may not be known to the Copilot, and explanations may be incorrect.
 - Copilot requests include all text in the current query window, and if text is selected the selection information it is noted as selected, but all text in the query window is included.
