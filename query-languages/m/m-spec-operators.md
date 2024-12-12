@@ -2,7 +2,7 @@
 title: M Language Operators 
 description: Describes using operators in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 7/31/2024
+ms.date: 12/12/2024
 ms.custom: "nonautomated-date"
 ---
 
@@ -335,7 +335,7 @@ For example:
 [A=1,B=2][C]?      // null
 ```
 
-Collective access of multiple fields is supported by the operators for _required record projection_ and _optional record projection_. The operator `x[[y1],[y2],...]` projects the record to a new record with fewer fields (selected by `y1`, `y2`, `...`). If a selected field does not exist, an error is raised. The operator `x[[y1],[y2],...]` projects the record to a new record with the fields selected by `y1`, `y2`, `...`; if a field is missing, `null` is used instead. 
+Collective access of multiple fields is supported by the operators for _required record projection_ and _optional record projection_. The operator `x[[y1],[y2],...]` projects the record to a new record with fewer fields (selected by `y1`, `y2`, `...`). If a selected field does not exist, an error is raised. The operator `x[[y1],[y2],...]?` projects the record to a new record with the fields selected by `y1`, `y2`, `...`; if a field is missing, `null` is used instead. 
 For example:
 
 ```powerquery-m
