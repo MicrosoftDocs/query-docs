@@ -50,7 +50,7 @@ EVALUATE
 
 Returns all rows and columns from the Sales Order table, as a result table. This can be limited with the use of [TOPN](topn-function-dax.md) or [FILTER](filter-function-dax.md), and sorted with ORDER BY.
 
-![DAX Evaluate statement](media/dax-queries/dax-evaluate.png)
+:::image type="content" source="media/dax-queries/dax-evaluate.png" alt-text="Screenshot showing how to use EVALUATE for a DAX query in DAX query view of Power BI Desktop." lightbox="media/dax-queries/dax-evaluate.png":::
 
 ### ORDER BY (Optional)
 
