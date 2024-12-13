@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: IGNORE"
-title: "IGNORE function (DAX) | Microsoft Docs"
+title: "IGNORE function (DAX)"
 ---
 # IGNORE
 
@@ -24,7 +24,7 @@ SUMMARIZECOLUMNS(<groupBy_columnName>[, < groupBy_columnName >]…, [<filterTabl
 
 |Term|Definition|  
 |--------|--------------|  
-|expression|Any DAX expression that returns a single value (not a table).|
+|`expression`|Any DAX expression that returns a single value (not a table).|
 
 ## Return value
 

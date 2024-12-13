@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: TRUE"
-title: "TRUE function (DAX) | Microsoft Docs"
+title: "TRUE function (DAX)"
 ---
 # TRUE
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Returns the logical value TRUE.  
+Returns the logical value `TRUE`.
   
 ## Syntax  
   
@@ -16,15 +16,15 @@ TRUE()
   
 ## Return value
 
-Always TRUE.  
+Always `TRUE`.
   
 ## Remarks
 
-The word TRUE is also interpreted as the logical value TRUE.  
+The word `TRUE` is also interpreted as the logical value `TRUE`.  
   
 ## Example
 
-The formula returns the logical value TRUE when the value in the column, 'InternetSales_USD'[SalesAmount_USD], is greater than 200000.  
+The formula returns the logical value `TRUE` when the value in the column, 'InternetSales_USD'[SalesAmount_USD], is greater than 200000.  
   
 ```dax
 = IF(SUM('InternetSales_USD'[SalesAmount_USD]) >200000, TRUE(), false())  
@@ -34,12 +34,12 @@ The following table shows the results when the example formula is used in a repo
   
 |Row Labels|2005|2006|2007|2008|-|Grand Total|
 |---------------|-----------------|----|----|----|----|----|  
-|Accessories|FALSE|FALSE|TRUE|TRUE|FALSE|TRUE|  
-|Bikes|TRUE|TRUE|TRUE|TRUE|FALSE|TRUE|  
-|Clothing|FALSE|FALSE|FALSE|FALSE|FALSE|TRUE|  
-|Components|FALSE|FALSE|FALSE|FALSE|FALSE|FALSE|  
-||FALSE|FALSE|FALSE|FALSE|FALSE|FALSE|  
-|Grand Total|TRUE|TRUE|TRUE|TRUE|FALSE|TRUE|  
+|Accessories|`FALSE`|`FALSE`|`TRUE`|`TRUE`|`FALSE`|`TRUE`|  
+|Bikes|`TRUE`|`TRUE`|`TRUE`|`TRUE`|`FALSE`|`TRUE`|  
+|Clothing|`FALSE`|`FALSE`|`FALSE`|`FALSE`|`FALSE`|`TRUE`|  
+|Components|`FALSE`|`FALSE`|`FALSE`|`FALSE`|`FALSE`|`FALSE`|  
+||`FALSE`|`FALSE`|`FALSE`|`FALSE`|`FALSE`|`FALSE`|  
+|Grand Total|`TRUE`|`TRUE`|`TRUE`|`TRUE`|`FALSE`|`TRUE`|  
   
 ## Related content
 

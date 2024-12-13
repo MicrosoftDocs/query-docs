@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DATESMTD"
-title: "DATESMTD function (DAX) | Microsoft Docs"
+title: "DATESMTD function (DAX)"
 ---
 # DATESMTD
 
@@ -18,7 +18,7 @@ DATESMTD(<dates>)
   
 |Term|Definition|  
 |--------|--------------|  
-|dates|A column that contains dates.|  
+|`dates`|A column that contains dates.|  
   
 ## Return value
 
@@ -26,7 +26,7 @@ A table containing a single column of date values.
   
 ## Remarks
 
-The **dates** argument can be any of the following:  
+The `dates` argument can be any of the following:  
   
 - A reference to a date/time column.  
   

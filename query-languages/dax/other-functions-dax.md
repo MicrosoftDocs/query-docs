@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Other functions"
-title: "Other functions (DAX) | Microsoft Docs"
+title: "Other functions (DAX)"
 ---
 # Other functions
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CALENDAR"
-title: "CALENDAR function (DAX) | Microsoft Docs"
+title: "CALENDAR function (DAX)"
 ---
 # CALENDAR
 
@@ -18,8 +18,8 @@ CALENDAR(<start_date>, <end_date>)
   
 |Term|Definition|  
 |--------|--------------|  
-|start_date|Any DAX expression that returns a datetime value.|  
-|end_date|Any DAX expression that returns a datetime value.|  
+|`start_date`|Any DAX expression that returns a datetime value.|  
+|`end_date`|Any DAX expression that returns a datetime value.|  
   
 ## Return value
 

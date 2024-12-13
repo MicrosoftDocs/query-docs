@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: BITOR"
-title: "BITOR function (DAX) | Microsoft Docs"
+title: "BITOR function (DAX)"
 ---
 # BITOR
 
@@ -18,7 +18,7 @@ BITOR(<number>, <number>)
 
 |Term|Definition|
 |--------|--------------|
-|Number|Any scalar expression that returns number. If not an integer, it is truncated.|
+|`Number`|Any scalar expression that returns number. If not an integer, it is truncated.|
   
 ## Return value
 

@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: PARALLELPERIOD"
-title: "PARALLELPERIOD function (DAX) | Microsoft Docs"
+title: "PARALLELPERIOD function (DAX)"
 ---
 # PARALLELPERIOD
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns a table that contains a column of dates that represents a period parallel to the dates in the specified **dates** column, in the current context, with the dates shifted a number of intervals either forward in time or back in time.  
+Returns a table that contains a column of dates that represents a period parallel to the dates in the specified `dates` column, in the current context, with the dates shifted a number of intervals either forward in time or back in time.  
   
 ## Syntax  
   
@@ -18,9 +18,9 @@ PARALLELPERIOD(<dates>,<number_of_intervals>,<interval>)
   
 |Term|Definition|  
 |--------|--------------|  
-|dates|A column that contains dates.|  
-|number_of_intervals|An integer that specifies the number of intervals to add to or subtract from the dates.|  
-|interval|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`.|  
+|`dates`|A column that contains dates.|  
+|`number_of_intervals`|An integer that specifies the number of intervals to add to or subtract from the dates.|  
+|`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`.|  
   
 ## Return value
 
@@ -28,18 +28,18 @@ A table containing a single column of date values.
   
 ## Remarks
 
-- This function takes the current set of dates in the column specified by **dates**, shifts the first date and the last date the specified number of intervals, and then returns all contiguous dates between the two shifted dates. If the interval is a partial range of month, quarter, or year then any partial months in the result are also filled out to complete the entire interval.  
+- This function takes the current set of dates in the column specified by `dates`, shifts the first date and the last date the specified number of intervals, and then returns all contiguous dates between the two shifted dates. If the interval is a partial range of month, quarter, or year then any partial months in the result are also filled out to complete the entire interval.  
   
-- The **dates** argument can be any of the following:  
+- The `dates` argument can be any of the following:  
   - A reference to a date/time column,  
   - A table expression that returns a single column of date/time values,  
   - A Boolean expression that defines a single-column table of date/time values.  
   
 - Constraints on Boolean expressions are described in the topic, [CALCULATE function](calculate-function-dax.md).  
   
-- If the number specified for **number_of_intervals** is positive, the dates in **dates** are moved forward in time; if the number is negative, the dates in **dates** are shifted back in time.  
+- If the number specified for `number_of_intervals` is positive, the dates in `dates` are moved forward in time; if the number is negative, the dates in `dates` are shifted back in time.  
   
-- The **interval** parameter is an enumeration, not a set of strings; therefore values should not be enclosed in quotation marks. Also, the values: `year`, `quarter`, `month` should be spelled in full when using them.  
+- The `interval` parameter is an enumeration, not a set of strings; therefore values should not be enclosed in quotation marks. Also, the values: `year`, `quarter`, `month` should be spelled in full when using them.  
   
 - The result table includes only dates that appear in the values of the underlying table column.  
   

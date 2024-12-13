@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: New DAX functions"
-title: "New DAX functions | Microsoft Docs"
+title: "New DAX functions"
 ---
 # New DAX functions
 

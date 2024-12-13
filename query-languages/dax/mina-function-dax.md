@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: MINA"
-title: "MINA function (DAX) | Microsoft Docs"
+title: "MINA function (DAX)"
 ---
 # MINA
 
@@ -18,7 +18,7 @@ MINA(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|The column for which you want to find the minimum value.|  
+|`column`|The column for which you want to find the minimum value.|  
   
 ## Return value
 
@@ -28,7 +28,7 @@ The smallest value.
 
 - The MINA function takes as argument a column that contains numbers, and determines the smallest value as follows:  
   - If the column contains no values, MINA returns 0 (zero).  
-  - Rows in the column that evaluates to logical values, such as TRUE and FALSE are treated as 1 if TRUE and 0 (zero) if FALSE.
+  - Rows in the column that evaluates to logical values, such as `TRUE` and `FALSE` are treated as 1 if `TRUE` and 0 (zero) if `FALSE`.
   - Empty cells are ignored.  
   
 - If you want to compare text values, use the MIN function.

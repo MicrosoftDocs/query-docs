@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COUNTBLANK"
-title: "COUNTBLANK function (DAX) | Microsoft Docs"
+title: "COUNTBLANK function (DAX)"
 ---
 # COUNTBLANK
 
@@ -18,7 +18,7 @@ COUNTBLANK(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|The column that contains the blank cells to be counted.|  
+|`column`|The column that contains the blank cells to be counted.|  
   
 ## Return value
 

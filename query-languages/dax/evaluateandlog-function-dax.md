@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: EVALUATEANDLOG"
-title: "EVALUATEANDLOG function (DAX) | Microsoft Docs"
+title: "EVALUATEANDLOG function (DAX)"
 ---
 # EVALUATEANDLOG
 
@@ -18,9 +18,9 @@ EVALUATEANDLOG(<Value>, [Label], [MaxRows])
   
 |Term|Definition|  
 |--------|--------------|  
-|Value|Any scalar expression or table expression to be evaluated and logged.|  
-|Label|(Optional) A constant string included in both the json text and the Label column of the DAX Evaluation Log event that can be used to easily identify an instance of the function call.|  
-|MaxRows|(Optional) The maximum number of rows in the json text of the DAX Evaluation Log event when the first argument is a table expression. Default is 10.|
+|`Value`|Any scalar expression or table expression to be evaluated and logged.|  
+|`Label`|(Optional) A constant string included in both the json text and the Label column of the DAX Evaluation Log event that can be used to easily identify an instance of the function call.|  
+|`MaxRows`|(Optional) The maximum number of rows in the json text of the DAX Evaluation Log event when the first argument is a table expression. Default is 10.|
   
 ## Return value
 
@@ -28,12 +28,12 @@ The value of the first argument.
 
 The JSON structure logged in a DAX Evaluation Log profiler event includes:
 
-- “expression” is the text version of the first argument.
-- “label” is the Label parameter when specified in the expression.
-- “inputs” is a list of columns in the evaluation context that affects the values of the first argument.
-- “outputs” is a list of a single column [Value] when the first argument is a scalar expression and a list of output columns when the first argument is a table expression.
-- “data” is a list of input values and output values when the first argument is a scalar expression, and a list of input values and corresponding output rows when the first argument is a table expression.
-- “rowCount” is the number of rows when the first argument is a table expression. Even though the number of rows in the json output is truncated by the MaxRows parameter, rowCount is the real number of rows without truncation.
+- `expression` is the text version of the first argument.
+- `label` is the Label parameter when specified in the expression.
+- `inputs` is a list of columns in the evaluation context that affects the values of the first argument.
+- `outputs` is a list of a single column [Value] when the first argument is a scalar expression and a list of output columns when the first argument is a table expression.
+- `data` is a list of input values and output values when the first argument is a scalar expression, and a list of input values and corresponding output rows when the first argument is a table expression.
+- `rowCount` is the number of rows when the first argument is a table expression. Even though the number of rows in the json output is truncated by the MaxRows parameter, rowCount is the real number of rows without truncation.
 
 ## Remarks
 

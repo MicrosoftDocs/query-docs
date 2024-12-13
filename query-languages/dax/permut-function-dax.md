@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PERMUT"
-title: "PERMUT function (DAX) | Microsoft Docs"
+title: "PERMUT function (DAX)"
 ---
 # PERMUT
 
@@ -18,8 +18,8 @@ PERMUT(number, number_chosen)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|Required. An integer that describes the number of objects.|  
-|number_chosen|Required. An integer that describes the number of objects in each permutation.|  
+|`number`|Required. An integer that describes the number of objects.|  
+|`number_chosen`|Required. An integer that describes the number of objects in each permutation.|  
   
 ## Return value
 
@@ -29,11 +29,11 @@ Returns the number of permutations for a given number of objects that can be sel
 
 - Both arguments are truncated to integers.  
 
-- If number or number_chosen is nonnumeric, PERMUT returns the #VALUE! error value.  
+- If number or number_chosen is nonnumeric, PERMUT returns the `#VALUE!` error value.  
 
-- If number ≤ 0 or if number_chosen &lt; 0, PERMUT returns the #NUM! error value.  
+- If number ≤ 0 or if number_chosen &lt; 0, PERMUT returns the `#NUM!` error value.  
 
-- If number &lt; number_chosen, PERMUT returns the #NUM! error value.  
+- If number &lt; number_chosen, PERMUT returns the `#NUM!` error value.  
 
 - The equation for the number of permutations is:  
 

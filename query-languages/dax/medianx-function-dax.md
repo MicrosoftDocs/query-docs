@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: MEDIANX"
-title: "MEDIANX function (DAX) | Microsoft Docs"
+title: "MEDIANX function (DAX)"
 ---
 # MEDIANX
 
@@ -20,8 +20,8 @@ MEDIANX(<table>, <expression>)
   
 |Term|Definition|  
 |--------|--------------|  
-|table|The table containing the rows for which the expression will be evaluated.|  
-|expression|The expression to be evaluated for each row of the table.|  
+|`table`|The table containing the rows for which the expression will be evaluated.|  
+|`expression`|The expression to be evaluated for each row of the table.|  
   
 ## Return value
 

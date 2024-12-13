@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: RIGHT"
-title: "RIGHT function (DAX) | Microsoft Docs"
+title: "RIGHT function (DAX)"
 ---
 # RIGHT
 
@@ -18,8 +18,8 @@ RIGHT(<text>, <num_chars>)
   
 |Term|Definition|  
 |--------|--------------|  
-|text|The text string that contains the characters you want to extract, or a reference to a column that contains text.|  
-|num_chars|(optional) The number of characters you want RIGHT to extract; is omitted, 1. You can also use a reference to a column that contains numbers.|  
+|`text`|The text string that contains the characters you want to extract, or a reference to a column that contains text.|  
+|`num_chars`|(optional) The number of characters you want RIGHT to extract; is omitted, 1. You can also use a reference to a column that contains numbers.|  
   
 If the column reference does not contain text, it is implicitly cast as text.  
   

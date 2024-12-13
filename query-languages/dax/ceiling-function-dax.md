@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CEILING"
-title: "CEILING function (DAX) | Microsoft Docs"
+title: "CEILING function (DAX)"
 ---
 # CEILING
 
@@ -18,8 +18,8 @@ CEILING(<number>, <significance>)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|The number you want to round, or a reference to a column that contains numbers.|  
-|significance|The multiple of significance to which you want to round. For example, to round to the nearest integer, type 1.|  
+|`number`|The number you want to round, or a reference to a column that contains numbers.|  
+|`significance`|The multiple of significance to which you want to round. For example, to round to the nearest integer, type 1.|  
   
 ## Return value
 

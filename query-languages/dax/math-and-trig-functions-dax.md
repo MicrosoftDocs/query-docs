@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Math and Trig functions"
-title: "Math and Trig functions (DAX) | Microsoft Docs"
+title: "Math and Trig functions (DAX)"
 ---
 # Math and Trig functions
 

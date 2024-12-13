@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COUNTX"
-title: "COUNTX function (DAX) | Microsoft Docs"
+title: "COUNTX function (DAX)"
 ---
 # COUNTX
 
@@ -18,8 +18,8 @@ COUNTX(<table>,<expression>)
   
 |Term|Definition|  
 |--------|--------------|  
-|table|The table containing the rows to be counted.|  
-|expression|An expression that returns the set of values that contains the values you want to count.|  
+|`table`|The table containing the rows to be counted.|  
+|`expression`|An expression that returns the set of values that contains the values you want to count.|  
   
 ## Return value
 

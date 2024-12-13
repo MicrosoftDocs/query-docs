@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Aggregation functions"
-title: "Aggregation functions (DAX) | Microsoft Docs"
+title: "Aggregation functions (DAX)"
 ---
 # Aggregation functions
 

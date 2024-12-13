@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: UPPER"
-title: "UPPER function (DAX) | Microsoft Docs"
+title: "UPPER function (DAX)"
 ---
 # UPPER
 
@@ -18,7 +18,7 @@ UPPER (<text>)
   
 |Term|Definition|  
 |--------|--------------|  
-|text|The text you want converted to uppercase, or a reference to a column that contains text.|  
+|`text`|The text you want converted to uppercase, or a reference to a column that contains text.|  
   
 ## Return value
 

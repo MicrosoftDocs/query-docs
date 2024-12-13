@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PDURATION"
-title: "PDURATION function (DAX) | Microsoft Docs"
+title: "PDURATION function (DAX)"
 author: jajin7
 ---
 
@@ -20,9 +20,9 @@ PDURATION(<rate>, <pv>, <fv>)
 
 |Term|Definition|  
 |--------|--------------|  
-|rate|The interest rate per period.|
-|pv|The present value of the investment.|
-|fv|The desired future value of the investment.|
+|`rate`|The interest rate per period.|
+|`pv`|The present value of the investment.|
+|`fv`|The desired future value of the investment.|
 
 ## Return Value
 

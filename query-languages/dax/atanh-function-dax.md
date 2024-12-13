@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: ATANH"
-title: "ATANH function (DAX) | Microsoft Docs"
+title: "ATANH function (DAX)"
 ---
 # ATANH
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Returns the inverse hyperbolic tangent of a number. Number must be between -1 and 1 (excluding -1 and 1). The inverse hyperbolic tangent is the value whose hyperbolic tangent is *number*, so ATANH(TANH(number)) equals *number*.  
+Returns the inverse hyperbolic tangent of a number. Number must be between -1 and 1 (excluding -1 and 1). The inverse hyperbolic tangent is the value whose hyperbolic tangent is `number`, so ATANH(TANH(number)) equals `number`.  
   
 ## Syntax  
   
@@ -18,7 +18,7 @@ ATANH(number)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|Any real number between 1 and -1.|  
+|`number`|Any real number between 1 and -1.|  
   
 ## Return value
 
@@ -32,9 +32,8 @@ Returns the inverse hyperbolic tangent of a number.
   
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
-|= ATANH(0.76159416)|Inverse hyperbolic tangent of 0.76159416|1.00000001|  
-|= ATANH(-0.1)||-0.100335348|  
-||||  
+|`= ATANH(0.76159416)`|Inverse hyperbolic tangent of 0.76159416|1.00000001|  
+|`= ATANH(-0.1)`||-0.100335348|  
 
 ## Related content
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: UTCNOW"
-title: "UTCNOW function (DAX) | Microsoft Docs"
+title: "UTCNOW function (DAX)"
 ---
 # UTCNOW
 
@@ -16,11 +16,11 @@ UTCNOW()
   
 ## Return value
 
-A (**datetime)**.  
+A `datetime`.
   
 ## Remarks  
 
-The result of the UTCNOW function changes only when the formula is refreshed. It is not continuously updated. 
+The result of the UTCNOW function changes only when the formula is refreshed. It is not continuously updated.
   
 ## Example
 
@@ -32,7 +32,7 @@ EVALUATE { FORMAT(UTCNOW(), "General Date") }
 
 Returns:
 
-|[Value]  |
+|Value  |
 |---------|
 |2/2/2018 4:48:08 AM    |
 

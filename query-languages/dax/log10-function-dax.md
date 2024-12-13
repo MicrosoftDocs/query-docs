@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: LOG10"
-title: "LOG10 function (DAX) | Microsoft Docs"
+title: "LOG10 function (DAX)"
 ---
 # LOG10
 
@@ -18,7 +18,7 @@ LOG10(<number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|A positive number for which you want the base-10 logarithm.|  
+|`number`|A positive number for which you want the base-10 logarithm.|  
   
 ## Return value
 

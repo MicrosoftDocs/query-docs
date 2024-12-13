@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DISTINCTCOUNT"
-title: "DISTINCTCOUNT function (DAX) | Microsoft Docs"
+title: "DISTINCTCOUNT function (DAX)"
 ---
 # DISTINCTCOUNT
 
@@ -18,11 +18,11 @@ DISTINCTCOUNT(<column>)
 
 |Term  |Description|  
 |---------|---------|
-|column     | The column that contains the values to be counted |
+|`column`| The column that contains the values to be counted |
 
 ## Return value
 
-The number of distinct values in *column*.  
+The number of distinct values in `column`.  
   
 ## Remarks
 

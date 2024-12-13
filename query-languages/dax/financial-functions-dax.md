@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Financial functions"
-title: "Financial functions (DAX) | Microsoft Docs"
+title: "Financial functions (DAX)"
 ---
 # Financial functions
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: USERNAME"
-title: "USERNAME function (DAX) | Microsoft Docs"
+title: "USERNAME function (DAX)"
 ---
 # USERNAME
 

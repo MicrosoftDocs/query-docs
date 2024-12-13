@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DEGREES"
-title: "DEGREES function (DAX) | Microsoft Docs"
+title: "DEGREES function (DAX)"
 ---
 # DEGREES
 
@@ -18,10 +18,10 @@ DEGREES(angle)
   
 |Term|Definition|  
 |--------|--------------|  
-|angle|Required. The angle in radians that you want to convert.|  
+|`angle`|Required. The angle in radians that you want to convert.|  
   
 ## Example  
   
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
-|= DEGREES(PI())|Degrees of pi radians|180|  
+|`= DEGREES(PI())`|Degrees of pi radians|180|  

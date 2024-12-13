@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: NEXTMONTH"
-title: "NEXTMONTH function (DAX) | Microsoft Docs"
+title: "NEXTMONTH function (DAX)"
 ---
 # NEXTMONTH
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns a table that contains a column of all dates from the next month, based on the first date in the **dates** column in the current context.  
+Returns a table that contains a column of all dates from the next month, based on the first date in the `dates` column in the current context.  
   
 ## Syntax  
   
@@ -18,7 +18,7 @@ NEXTMONTH(<dates>)
   
 |Term|Definition|  
 |--------|--------------|  
-|dates|A column containing dates.|  
+|`dates`|A column containing dates.|  
   
 ## Return value
 
@@ -26,9 +26,9 @@ A table containing a single column of date values.
   
 ## Remarks
 
-- This function returns all dates from the next day to the first date in the input parameter. For example, if the first date in the **dates** argument refers to June 10, 2009; then this function returns all dates for the month of July, 2009.  
+- This function returns all dates from the next day to the first date in the input parameter. For example, if the first date in the `dates` argument refers to June 10, 2009; then this function returns all dates for the month of July, 2009.  
   
-- The **dates** argument can be any of the following:  
+- The `dates` argument can be any of the following:  
   - A reference to a date/time column.  
   - A table expression that returns a single column of date/time values.  
   - A Boolean expression that defines a single-column table of date/time values.  

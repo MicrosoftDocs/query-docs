@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: EARLIEST"
-title: "EARLIEST function (DAX) | Microsoft Docs"
+title: "EARLIEST function (DAX)"
 ---
 # EARLIEST
 
@@ -18,7 +18,7 @@ EARLIEST(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|A reference to a column.|  
+|`column`|A reference to a column.|  
   
 ## Return value
 

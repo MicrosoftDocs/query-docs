@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DISTINCT (column)"
-title: "DISTINCT (column) function (DAX) | Microsoft Docs"
+title: "DISTINCT (column) function (DAX)"
 ---
 # DISTINCT (column)
 
@@ -21,7 +21,7 @@ DISTINCT(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|The column from which unique values are to be returned. Or, an expression that returns a column.|  
+|`column`|The column from which unique values are to be returned. Or, an expression that returns a column.|  
   
 ## Return value
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: RELATED"
-title: "RELATED function (DAX) | Microsoft Docs"
+title: "RELATED function (DAX)"
 ---
 # RELATED
 
@@ -18,7 +18,7 @@ RELATED(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|The column that contains the values you want to retrieve.|  
+|`column`|The column that contains the values you want to retrieve.|  
   
 ## Return value
 

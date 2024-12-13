@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: LOG"
-title: "LOG function (DAX) | Microsoft Docs"
+title: "LOG function (DAX)"
 ---
 # LOG
 
@@ -18,8 +18,8 @@ LOG(<number>,<base>)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|The positive number for which you want the logarithm.|  
-|base|The base of the logarithm. If omitted, the base is 10.|  
+|`number`|The positive number for which you want the logarithm.|  
+|`base`|The base of the logarithm. If omitted, the base is 10.|  
   
 ## Return value
 

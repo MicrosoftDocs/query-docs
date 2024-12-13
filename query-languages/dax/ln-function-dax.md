@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: LN"
-title: "LN function (DAX) | Microsoft Docs"
+title: "LN function (DAX)"
 ---
 # LN
 
@@ -18,7 +18,7 @@ LN(<number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|The positive number for which you want the natural logarithm.|  
+|`number`|The positive number for which you want the natural logarithm.|  
   
 ## Return value
 

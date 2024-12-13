@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SUM"
-title: "SUM function (DAX) | Microsoft Docs"
+title: "SUM function (DAX)"
 ---
 # SUM
 
@@ -18,7 +18,7 @@ SUM(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|The column that contains the numbers to sum.|  
+|`column`|The column that contains the numbers to sum.|  
   
 ## Return value
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Statements"
-title: "Statements(DAX) | Microsoft Docs"
+title: "Statements(DAX)"
 ---
 # Statements
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: FIND"
-title: "FIND function (DAX) | Microsoft Docs"
+title: "FIND function (DAX)"
 ---
 # FIND
 
@@ -18,10 +18,10 @@ FIND(<find_text>, <within_text>[, [<start_num>][, <NotFoundValue>]])
   
 |Term|Definition|  
 |--------|--------------|  
-|find_text|The text you want to find. Use double quotes (empty text) to match the first character in **within_text**. |
-|within_text|The text containing the text you want to find.|  
-|start_num|(optional) The character at which to start the search; if omitted, **start_num** = 1. The first character in **within_text** is character number 1.|  
-|NotFoundValue|(optional, but strongly recommended) The value that should be returned when the operation does not find a matching substring, typically 0, -1, or BLANK(). If not specified, an error is returned.|  
+|`find_text`|The text you want to find. Use double quotes (empty text) to match the first character in `within_text`. |
+|`within_text`|The text containing the text you want to find.|  
+|`start_num`|(optional) The character at which to start the search; if omitted, `start_num` = 1. The first character in `within_text` is character number 1.|  
+|`NotFoundValue`|(optional, but strongly recommended) The value that should be returned when the operation does not find a matching substring, typically 0, -1, or BLANK(). If not specified, an error is returned.|  
   
 ## Return value
 
@@ -39,7 +39,7 @@ Number that shows the starting point of the text string you want to find.
 
 The following DAX query finds the position of the first letter of "Bike", in the string that contains the reseller name. If not found, Blank is returned.
 
-Keep in mind, FIND is case-sensitive. In this example, if "bike" were used in the \<find_text> argument, no results would be returned. Use [SEARCH](search-function-dax.md) for case-insensitive.
+Keep in mind, FIND is case-sensitive. In this example, if "bike" were used in the `find_text` argument, no results would be returned. Use [SEARCH](search-function-dax.md) for case-insensitive.
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
   

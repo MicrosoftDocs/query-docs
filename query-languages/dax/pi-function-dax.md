@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PI"
-title: "PI function (DAX) | Microsoft Docs"
+title: "PI function (DAX)"
 ---
 # PI
 

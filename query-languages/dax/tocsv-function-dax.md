@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: TOCSV"
-title: "TOCSV function (DAX) | Microsoft Docs"
+title: "TOCSV function (DAX)"
 ---
 # TOCSV
 
@@ -18,10 +18,10 @@ TOCSV(<Table>, [MaxRows], [Delimiter], [IncludeHeaders])
   
 |Term|Definition|  
 |--------|--------------|  
-|Table|The table to be converted to CSV.|  
-|MaxRows| (Optional) The maximum number fo rows to convert. Default is 10 rows.|  
-|Delimiter|(Optional) A column delimiter. Default is comma ",".|  
-|IncludeHeaders|(Optional) Specifies a header with column name as the first row. Default is True.|
+|`Table`|The table to be converted to CSV.|  
+|`MaxRows`| (Optional) The maximum number fo rows to convert. Default is 10 rows.|  
+|`Delimiter`|(Optional) A column delimiter. Default is comma ",".|  
+|`IncludeHeaders`|(Optional) Specifies a header with column name as the first row. Default is True.|
   
 ## Return value
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ROUNDUP"
-title: "ROUNDUP function (DAX) | Microsoft Docs"
+title: "ROUNDUP function (DAX)"
 ---
 # ROUNDUP
 
@@ -18,8 +18,8 @@ ROUNDUP(<number>, <num_digits>)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|A real number that you want to round up.|  
-|num_digits|The number of digits to which you want to round. A negative value for **num_digits** rounds to the left of the decimal point; if **num_digits** is zero or is omitted, **number** is rounded to the nearest integer.|  
+|`number`|A real number that you want to round up.|  
+|`num_digits`|The number of digits to which you want to round. A negative value for `num_digits` rounds to the left of the decimal point; if `num_digits` is zero or is omitted, `number` is rounded to the nearest integer.|  
   
 ## Return value
 
@@ -27,11 +27,11 @@ A decimal number.
   
 ## Remarks
 
-- If **num_digits** is greater than 0 (zero), then the number is rounded up to the specified number of decimal places.  
+- If `num_digits` is greater than 0 (zero), then the number is rounded up to the specified number of decimal places.  
   
-- If **num_digits** is 0, then number is rounded up to the nearest integer.  
+- If `num_digits` is 0, then number is rounded up to the nearest integer.  
   
-- If **num_digits** is less than 0, then number is rounded up to the left of the decimal point.  
+- If `num_digits` is less than 0, then number is rounded up to the left of the decimal point.  
   
 - ROUNDUP behaves like ROUND, except that it always rounds a number up.  
   
@@ -59,7 +59,7 @@ The following formula rounds the value in the column, **FreightCost**, with the 
 = ROUNDUP([Values],-1)  
 ```
 
-When **num_digits** is less than zero, the number of places to the left of the decimal sign is increased by the value you specify.  
+When `num_digits` is less than zero, the number of places to the left of the decimal sign is increased by the value you specify.  
   
 |FreightCost|Expected Result|  
 |---------------|-------------------|  

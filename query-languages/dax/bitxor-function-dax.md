@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: BITXOR"
-title: "BITXOR function (DAX) | Microsoft Docs"
+title: "BITXOR function (DAX)"
 ---
 # BITXOR
 
@@ -18,7 +18,7 @@ BITXOR(<number>, <number>)
 
 |Term|Definition|
 |--------|--------------|
-|Number|Any scalar expression that returns number. If not an integer, it is truncated.|
+|`Number`|Any scalar expression that returns number. If not an integer, it is truncated.|
   
 ## Return value
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SIGN"
-title: "SIGN function (DAX) | Microsoft Docs"
+title: "SIGN function (DAX)"
 ---
 # SIGN
 
@@ -18,7 +18,7 @@ SIGN(<number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|Any real number, a column that contains numbers, or an expression that evaluates to a number.|  
+|`number`|Any real number, a column that contains numbers, or an expression that evaluates to a number.|  
   
 ## Return value
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SUMMARIZE"
-title: "SUMMARIZE function (DAX) | Microsoft Docs"
+title: "SUMMARIZE function (DAX)"
 ---
 # SUMMARIZE
 
@@ -18,20 +18,20 @@ SUMMARIZE (<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, <name>, <e
 
 |Term|Definition|  
 |--------|--------------|  
-| table |  Any DAX expression that returns a table of data.  |  
-| groupBy_ColumnName | (Optional) The qualified name of an existing column used to create summary groups based on the values found in it. This parameter cannot be an expression.  |
-| name | The name given to a total or summarize column, enclosed in double quotes. |
-| expression |Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context). |
+| `table` |  Any DAX expression that returns a table of data.  |  
+| `groupBy_ColumnName` | (Optional) The qualified name of an existing column used to create summary groups based on the values found in it. This parameter cannot be an expression.  |
+| `name` | The name given to a total or summarize column, enclosed in double quotes. |
+| `expression` |Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context). |
 
 ## Return value
 
-A table with the selected columns for the *groupBy_columnName* arguments and the summarized columns designed by the name arguments.  
+A table with the selected columns for the `groupBy_columnName` arguments and the summarized columns designed by the name arguments.  
   
 ## Remarks  
   
 - Each column for which you define a name must have a corresponding expression; otherwise, an error is returned. The first argument, name, defines the name of the column in the results. The second argument, expression, defines the calculation performed to obtain the value for each row in that column.  
 
-- groupBy_columnName must be either in *table* or in a related table to *table*.  
+- groupBy_columnName must be either in `table` or in a related table to `table`.  
 
 - Each name must be enclosed in double quotation marks.  
 
@@ -175,29 +175,29 @@ Returns the following table,
   
 |**[Is Sub Total for DateTimeCalendarYear]**|**[Is Sub Total for ProductCategoryName]**|**DateTime[CalendarYear]**|**ProductCategory[ProductCategoryName]**|**[Sales Amount (USD)]**|**[Discount Amount (USD)]**|  
 |---------|---------|---------|---------|---------|---------|  
-|FALSE|FALSE|||||  
-|FALSE|FALSE|2008|Bikes|12968255.42|36167.6592|  
-|FALSE|FALSE|2005|Bikes|6958251.043|4231.1621|  
-|FALSE|FALSE|2006|Bikes|18901351.08|178175.8399|  
-|FALSE|FALSE|2007|Bikes|24256817.5|276065.992|  
-|FALSE|FALSE|2008|Components|2008052.706|39.9266|  
-|FALSE|FALSE|2005|Components|574256.9865|0|  
-|FALSE|FALSE|2006|Components|3428213.05|948.7674|  
-|FALSE|FALSE|2007|Components|5195315.216|4226.0444|  
-|FALSE|FALSE|2008|Clothing|366507.844|4151.1235|  
-|FALSE|FALSE|2005|Clothing|31851.1628|90.9593|  
-|FALSE|FALSE|2006|Clothing|455730.9729|4233.039|  
-|FALSE|FALSE|2007|Clothing|815853.2868|12489.3835|  
-|FALSE|FALSE|2008|Accessories|153299.924|865.5945|  
-|FALSE|FALSE|2005|Accessories|18594.4782|4.293|  
-|FALSE|FALSE|2006|Accessories|86612.7463|1061.4872|  
-|FALSE|FALSE|2007|Accessories|275794.8403|4756.6546|  
-|FALSE|TRUE|||||  
-|FALSE|TRUE|2008||15496115.89|41224.3038|  
-|FALSE|TRUE|2005||7582953.67|4326.4144|  
-|FALSE|TRUE|2006||22871907.85|184419.1335|  
-|FALSE|TRUE|2007||30543780.84|297538.0745|  
-|TRUE|TRUE|||76494758.25|527507.9262|  
+|`FALSE`|`FALSE`|||||  
+|`FALSE`|`FALSE`|2008|Bikes|12968255.42|36167.6592|  
+|`FALSE`|`FALSE`|2005|Bikes|6958251.043|4231.1621|  
+|`FALSE`|`FALSE`|2006|Bikes|18901351.08|178175.8399|  
+|`FALSE`|`FALSE`|2007|Bikes|24256817.5|276065.992|  
+|`FALSE`|`FALSE`|2008|Components|2008052.706|39.9266|  
+|`FALSE`|`FALSE`|2005|Components|574256.9865|0|  
+|`FALSE`|`FALSE`|2006|Components|3428213.05|948.7674|  
+|`FALSE`|`FALSE`|2007|Components|5195315.216|4226.0444|  
+|`FALSE`|`FALSE`|2008|Clothing|366507.844|4151.1235|  
+|`FALSE`|`FALSE`|2005|Clothing|31851.1628|90.9593|  
+|`FALSE`|`FALSE`|2006|Clothing|455730.9729|4233.039|  
+|`FALSE`|`FALSE`|2007|Clothing|815853.2868|12489.3835|  
+|`FALSE`|`FALSE`|2008|Accessories|153299.924|865.5945|  
+|`FALSE`|`FALSE`|2005|Accessories|18594.4782|4.293|  
+|`FALSE`|`FALSE`|2006|Accessories|86612.7463|1061.4872|  
+|`FALSE`|`FALSE`|2007|Accessories|275794.8403|4756.6546|  
+|`FALSE`|`TRUE`|||||  
+|`FALSE`|`TRUE`|2008||15496115.89|41224.3038|  
+|`FALSE`|`TRUE`|2005||7582953.67|4326.4144|  
+|`FALSE`|`TRUE`|2006||22871907.85|184419.1335|  
+|`FALSE`|`TRUE`|2007||30543780.84|297538.0745|  
+|`TRUE`|`TRUE`|||76494758.25|527507.9262|  
 
 ## Related content
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: GENERATEALL"
-title: "GENERATEALL function (DAX) | Microsoft Docs"
+title: "GENERATEALL function (DAX)"
 ---
 # GENERATEALL
 
@@ -18,8 +18,8 @@ GENERATEALL(<table1>, <table2>)
 
 |Term|Definition|  
 |--------|--------------|  
-|table1|Any DAX expression that returns a table. |  
-|table2|Any DAX expression that returns a table. |  
+|`table1`|Any DAX expression that returns a table. |  
+|`table2`|Any DAX expression that returns a table. |  
   
 ## Return value
 

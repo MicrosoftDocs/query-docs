@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ORDER BY"
-title: "ORDER BY keyword (DAX) | Microsoft Docs"
+title: "ORDER BY keyword (DAX)"
 ---
 # ORDER BY
   
@@ -16,9 +16,9 @@ Introduces a statement that defines sort order of query results returned by an E
   
 |Term|Definition|  
 |--------|--------------|  
-|expression|Any DAX expression that returns a single scalar value.|  
-|ASC|(default) Ascending sort order.|  
-|DESC|Descending sort order.|  
+|`expression`|Any DAX expression that returns a single scalar value.|  
+|`ASC`|(default) Ascending sort order.|  
+|`DESC`|Descending sort order.|  
   
 ## Return value
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PERCENTILEX.INC"
-title: "PERCENTILEX.INC function (DAX) | Microsoft Docs"
+title: "PERCENTILEX.INC function (DAX)"
 ---
 # PERCENTILEX.INC
 
@@ -20,9 +20,9 @@ PERCENTILEX.INC(<table>, <expression>;, k)
   
 |Term|Definition|  
 |--------|--------------|  
-|table|The table containing the rows for which the expression will be evaluated.|  
-|expression|The expression to be evaluated for each row of the table.|  
-|k|The desired percentile value in the range 0 to 1 inclusive.|  
+|`table`|The table containing the rows for which the expression will be evaluated.|  
+|`expression`|The expression to be evaluated for each row of the table.|  
+|`k`|The desired percentile value in the range 0 to 1 inclusive.|  
   
 ## Return value
 

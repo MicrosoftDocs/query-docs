@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: ISBLANK"
-title: "ISBLANK function (DAX) | Microsoft Docs"
+title: "ISBLANK function (DAX)"
 ---
 # ISBLANK
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Checks whether a value is blank, and returns TRUE or FALSE.  
+Checks whether a value is blank, and returns `TRUE` or `FALSE`.  
   
 ## Syntax  
   
@@ -18,11 +18,11 @@ ISBLANK(<value>)
   
 |Term|Definition|  
 |--------|--------------|  
-|value|The value or expression you want to test.|  
+|`value`|The value or expression you want to test.|  
   
 ## Return value
 
-A Boolean value of TRUE if the value is blank; otherwise FALSE.  
+A Boolean value of `TRUE` if the value is blank; otherwise `FALSE`.  
 
 ## Remarks
 

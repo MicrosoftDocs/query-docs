@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: LASTNONBLANKVALUE"
-title: "LASTNONBLANKVALUE function (DAX) | Microsoft Docs"
+title: "LASTNONBLANKVALUE function (DAX)"
 ---
 # LASTNONBLANKVALUE
 
@@ -18,12 +18,12 @@ LASTNONBLANKVALUE(<column>, <expression>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|A column or an expression that returns a single-column table.|  
-|expression|An expression evaluated for each value of \<column>.|
+|`column`|A column or an expression that returns a single-column table.|  
+|`expression`|An expression evaluated for each value of `column`.|
   
 ## Return value  
 
-The last non-blank value of \<expression> corresponding to the sorted values of \<column>.
+The last non-blank value of `expression` corresponding to the sorted values of `column`.
   
 ## Remarks  
 
@@ -31,7 +31,7 @@ The last non-blank value of \<expression> corresponding to the sorted values of 
   - A reference to any column.
   - A table with a single column.
 
-- This function is different from LASTNONBLANK in that the \<column> is added to the filter context for the evaluation of \<expression>.
+- This function is different from LASTNONBLANK in that the `column` is added to the filter context for the evaluation of `expression`.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: USEROBJECTID"
-title: "USEROBJECTID function (DAX) | Microsoft Docs"
+title: "USEROBJECTID function (DAX)"
 ---
 # USEROBJECTID
 
