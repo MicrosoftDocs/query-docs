@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: AND"
-title: "AND function (DAX) | Microsoft Docs"
+title: "AND function (DAX)"
 ---
 # AND
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Checks whether both arguments are TRUE, and returns TRUE if both arguments are TRUE. Otherwise returns false.  
+Checks whether both arguments are `TRUE`, and returns `TRUE` if both arguments are `TRUE`. Otherwise returns `FALSE`.  
   
 ## Syntax  
   
@@ -18,7 +18,7 @@ AND(<logical1>,<logical2>)
   
 |Term|Definition|  
 |--------|--------------|  
-|logical_1, logical_2|The logical values you want to test.|  
+|`logical_1, logical_2`|The logical values you want to test.|  
   
 ## Return value
 
@@ -26,21 +26,21 @@ Returns true or false depending on the combination of values that you test.
   
 ## Remarks
 
-The **AND** function in DAX accepts only two (2) arguments. If you need to perform an AND operation on multiple expressions, you can create a series of calculations or, better, use the AND operator (**&&**) to join all of them in a simpler expression.  
+The `AND` function in DAX accepts only two (2) arguments. If you need to perform an AND operation on multiple expressions, you can create a series of calculations or, better, use the `AND` operator (`&&`) to join all of them in a simpler expression.  
   
 ## Example 1
 
-The following formula shows the syntax of the AND function.  
+The following formula shows the syntax of the `AND` function.  
   
 ```dax
 = IF(AND(10 > 9, -10 < -1), "All true", "One or more false"  
 ```
 
-Because both conditions, passed as arguments, to the AND function are true, the formula returns "All True".  
+Because both conditions, passed as arguments, to the `AND` function are true, the formula returns "All True".  
   
 ## Example 2
 
-The following sample uses the AND function with nested formulas to compare two sets of calculations at the same time. For each product category, the formula determines if the current year sales and previous year sales of the Internet channel are larger than the Reseller channel for the same periods. If both conditions are true, for each category the formula returns the value, "Internet hit".  
+The following sample uses the `AND` function with nested formulas to compare two sets of calculations at the same time. For each product category, the formula determines if the current year sales and previous year sales of the Internet channel are larger than the Reseller channel for the same periods. If both conditions are true, for each category the formula returns the value, "Internet hit".  
 
 ```dax
 = IF( AND(  SUM( 'InternetSales_USD'[SalesAmount_USD])  

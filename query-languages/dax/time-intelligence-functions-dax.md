@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Time intelligence functions"
-title: "Time intelligence functions (DAX) | Microsoft Docs"
+title: "Time intelligence functions (DAX)"
 ---
 # Time intelligence functions
 

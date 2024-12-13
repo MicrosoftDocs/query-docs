@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: TODAY"
-title: "TODAY function (DAX) | Microsoft Docs"
+title: "TODAY function (DAX)"
 ---
 # TODAY
 
@@ -16,7 +16,7 @@ TODAY()
 
 ## Return value
 
-A date (**datetime**).  
+A date (`datetime`).  
   
 ## Remarks
 

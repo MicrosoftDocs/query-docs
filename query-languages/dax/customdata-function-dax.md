@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: CUSTOMDATA"
-title: "CUSTOMDATA function (DAX) | Microsoft Docs"
+title: "CUSTOMDATA function (DAX)"
 ---
 # CUSTOMDATA
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Returns the content of the **CustomData** property in the connection string.  
+Returns the content of the `CustomData` property in the connection string.  
   
 ## Syntax  
   
@@ -16,9 +16,9 @@ CUSTOMDATA()
   
 ## Return value
 
-The content of the **CustomData** property in the connection string.  
+The content of the `CustomData` property in the connection string.  
   
-Blank, if **CustomData** property was not defined at connection time.  
+Blank, if `CustomData` property was not defined at connection time.  
 
 ## Remarks
 
@@ -26,7 +26,7 @@ Blank, if **CustomData** property was not defined at connection time.
 
 ## Example
 
-The following DAX formula verifies if the CustomData property was set to **"OK"**.  
+The following DAX formula verifies if the CustomData property was set to **`OK`**.
   
 ```dax
 = IF(CUSTOMDATA()="OK", "Correct Custom data in connection string", "No custom data in connection string property or unexpected value")  

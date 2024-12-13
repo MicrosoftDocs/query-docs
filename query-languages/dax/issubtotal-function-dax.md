@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ISSUBTOTAL"
-title: "ISSUBTOTAL function (DAX) | Microsoft Docs"
+title: "ISSUBTOTAL function (DAX)"
 ---
 # ISSUBTOTAL
 
@@ -24,7 +24,7 @@ SUMMARIZE(<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, ROLLUP(<gro
 
 |Term|Definition|  
 |--------|--------------|
-|columnName  |The name of any column in table of the SUMMARIZE function or any column in a related table to table.  |
+|`columnName`  |The name of any column in table of the SUMMARIZE function or any column in a related table to table.  |
 
 ## Return value
 

@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: NOT"
-title: "NOT function (DAX) | Microsoft Docs"
+title: "NOT function (DAX)"
 ---
 # NOT
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Changes FALSE to TRUE, or TRUE to FALSE.  
+Changes `FALSE` to `TRUE`, or `TRUE` to `FALSE`.  
   
 ## Syntax  
   
@@ -18,11 +18,11 @@ NOT(<logical>)
   
 |Term|Definition|  
 |--------|--------------|  
-|logical|A value or expression that can be evaluated to TRUE or FALSE.|  
+|`logical`|A value or expression that can be evaluated to `TRUE` or `FALSE`.|  
   
 ## Return value
 
-TRUE OR FALSE.  
+`TRUE` OR `FALSE`.  
   
 ## Example
 
@@ -36,7 +36,7 @@ Now create a new calculated column, **Calculated Column2**, and type the followi
 = NOT([CalculatedColumn1])  
 ```
 
-For each row in **Calculated Column1**, the values "true" and "false" are interpreted as the logical values TRUE or FALSE, and the NOT function returns the logical opposite of that value.  
+For each row in **Calculated Column1**, the values "true" and "false" are interpreted as the logical values `TRUE` or `FALSE`, and the NOT function returns the logical opposite of that value.  
   
 ## Related content
 

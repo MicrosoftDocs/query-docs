@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: T.INV.2T"
-title: "T.INV.2T function (DAX) | Microsoft Docs"
+title: "T.INV.2T function (DAX)"
 ---
 # T.INV.2T
 
@@ -18,8 +18,8 @@ T.INV.2T(Probability,Deg_freedom)
   
 |Term|Definition|  
 |--------|--------------|  
-|Probability|The probability associated with the Student's t-distribution.|  
-|Deg_freedom|The number of degrees of freedom with which to characterize the distribution.|
+|`Probability`|The probability associated with the Student's t-distribution.|  
+|`Deg_freedom`|The number of degrees of freedom with which to characterize the distribution.|
   
 ## Return value
 

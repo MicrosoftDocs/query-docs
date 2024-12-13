@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ACOTH"
-title: "ACOTH function (DAX) | Microsoft Docs"
+title: "ACOTH function (DAX)"
 ---
 # ACOTH
 
@@ -18,7 +18,7 @@ ACOTH(number)
   
 |Term|Definition|  
 |--------|--------------|  
-|Number|The absolute value of Number must be greater than 1.|  
+|`Number`|The absolute value of Number must be greater than 1.|  
   
 ## Return value
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ABS"
-title: "ABS function (DAX) | Microsoft Docs"
+title: "ABS function (DAX) "
 ---
 
 # ABS
@@ -19,7 +19,7 @@ ABS(<number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|The number for which you want the absolute value.|  
+|`number`|The number for which you want the absolute value.|  
   
 ## Return value
 

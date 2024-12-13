@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Filter functions"
-title: "Filter functions (DAX) | Microsoft Docs"
+title: "Filter functions (DAX)"
 ---
 # Filter functions
 
@@ -30,7 +30,7 @@ The filter and value functions in DAX are some of the most complex and powerful,
 |[NEXT](next-function-dax.md)    | Used in visual calculations only. Retrieves a value in the next row of an axis in the visual matrix.        |
 |[OFFSET](offset-function-dax.md)|Returns a single row that is positioned either before or after the *current row* within the same table, by a given offset. |
 |[ORDERBY](orderby-function-dax.md)|Defines the columns that determine the sort order within each of a window function’s partitions.|
-|[PARTITIONBY](partitionby-function-dax.md)|Defines the columns that are used to partition a window function’s \<relation> parameter.|
+|[PARTITIONBY](partitionby-function-dax.md)|Defines the columns that are used to partition a window function’s `relation` parameter.|
 |[PREVIOUS](previous-function-dax.md)| Used in visual calculations only. Retrieves a value in the previous row of an axis in the visual matrix. |
 |[RANGE](range-function-dax.md)|Returns an interval of rows within the given axis, relative to the current row. A shortcut for WINDOW.|
 |[RANK](rank-function-dax.md)| Returns the ranking of a row within the given interval.  |

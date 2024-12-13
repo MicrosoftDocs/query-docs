@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CONVERT"
-title: "CONVERT function (DAX) | Microsoft Docs"
+title: "CONVERT function (DAX)"
 ---
 # CONVERT
 
@@ -18,12 +18,12 @@ CONVERT(<Expression>, <Datatype>)
   
 |Term|Definition|  
 |--------|--------------|  
-|Expression|Any valid expression.|  
-|Datatype|An enumeration that includes: INTEGER(Whole Number), DOUBLE(Decimal Number), STRING(Text), BOOLEAN(True/False), CURRENCY(Fixed Decimal Number), DATETIME(Date, Time, etc).|  
+|`Expression`|Any valid expression.|  
+|`Datatype`|An enumeration that includes: INTEGER(Whole Number), DOUBLE(Decimal Number), STRING(Text), BOOLEAN(True/False), CURRENCY(Fixed Decimal Number), DATETIME(Date, Time, etc).|  
   
 ## Return value
 
-Returns the value of \<Expression>, translated to \<Datatype>.
+Returns the value of `Expression`, translated to `Datatype`.
   
 ## Remarks  
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: STDEVX.P"
-title: "STDEVX.P function (DAX) | Microsoft Docs"
+title: "STDEVX.P function (DAX)"
 ---
 # STDEVX.P
 
@@ -18,8 +18,8 @@ STDEVX.P(<table>, <expression>)
 
 |Term|Definition|  
 |--------|--------------|  
-| table  | Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context).  |  
-|expression   | Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context).   |
+|`table`  | Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context).  |  
+|`expression`   | Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context).   |
   
 ## Return value
 
@@ -27,7 +27,7 @@ A number that represents the standard deviation of the entire population.
   
 ## Remarks  
   
-- STDEVX.P evaluates *expression* for each row of *table* and returns the standard deviation of expression assuming that table refers to the entire population. If the data in *table* represents a sample of the population, you should compute the standard deviation by using STDEVX.S instead.  
+- STDEVX.P evaluates `expression` for each row of `table` and returns the standard deviation of expression assuming that table refers to the entire population. If the data in `table` represents a sample of the population, you should compute the standard deviation by using STDEVX.S instead.  
   
 - STDEVX.P uses the following formula:  
   
@@ -35,9 +35,9 @@ A number that represents the standard deviation of the entire population.
   
     where x̃ is the average value of x for the entire population and n is the population size.
   
-- Blank rows are filtered out from *columnName* and not considered in the calculations.  
+- Blank rows are filtered out from `columnName` and not considered in the calculations.  
   
-- An error is returned if *columnName* contains less than 2 non-blank rows  
+- An error is returned if `columnName` contains less than 2 non-blank rows  
   
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   

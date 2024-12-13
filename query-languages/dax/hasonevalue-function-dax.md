@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: HASONEVALUE"
-title: "HASONEVALUE function (DAX) | Microsoft Docs"
+title: "HASONEVALUE function (DAX)"
 ---
 # HASONEVALUE
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Returns **TRUE** when the context for *columnName* has been filtered down to one distinct value only. Otherwise is **FALSE**.  
+Returns `TRUE` when the context for `columnName` has been filtered down to one distinct value only. Otherwise is `FALSE`.  
   
 ## Syntax  
   
@@ -22,7 +22,7 @@ HASONEVALUE(<columnName>)
 
 ## Return value
 
-**TRUE** when the context for *columnName* has been filtered down to one distinct value only. Otherwise is **FALSE**.  
+`TRUE` when the context for `columnName` has been filtered down to one distinct value only. Otherwise is `FALSE`.  
   
 ## Remarks  
   

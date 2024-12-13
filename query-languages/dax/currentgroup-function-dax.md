@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CURRENTGROUP"
-title: "CURRENTGROUP function (DAX) | Microsoft Docs"
+title: "CURRENTGROUP function (DAX)"
 ---
 # CURRENTGROUP
 

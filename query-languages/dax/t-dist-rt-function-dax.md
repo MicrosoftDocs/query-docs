@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: T.DIST.RT"
-title: "T.DIST.RT function (DAX) | Microsoft Docs"
+title: "T.DIST.RT function (DAX)"
 ---
 # T.DIST.RT
 
@@ -18,8 +18,8 @@ T.DIST.RT(X,Deg_freedom)
   
 |Term|Definition|  
 |--------|--------------|  
-|X|The numeric value at which to evaluate the distribution.|  
-|Deg_freedom |An integer indicating the number of degrees of freedom.|
+|`X`|The numeric value at which to evaluate the distribution.|  
+|`Deg_freedom` |An integer indicating the number of degrees of freedom.|
   
 ## Return value
 

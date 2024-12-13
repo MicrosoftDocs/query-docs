@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: FIRSTNONBLANK"
-title: "FIRSTNONBLANK function (DAX) | Microsoft Docs"
+title: "FIRSTNONBLANK function (DAX)"
 ---
 # FIRSTNONBLANK
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns the first value in the column, **column**, filtered by the current context, where the expression is not blank.  
+Returns the first value in the column, `<column>`, filtered by the current context, where the expression is not blank.  
   
 ## Syntax  
   
@@ -18,8 +18,8 @@ FIRSTNONBLANK(<column>,<expression>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|A column expression.|  
-|expression|An expression evaluated for blanks for each value of **column**.|  
+|`column`|A column expression.|  
+|`expression`|An expression evaluated for blanks for each value of `column`.|  
   
 ## Return value
 
@@ -27,7 +27,7 @@ A table containing a single column and single row with the computed first value.
   
 ## Remarks
 
-- The **column** argument can be any of the following:  
+- The `column` argument can be any of the following:  
   - A reference to any column.  
   - A table with a single column.  
   

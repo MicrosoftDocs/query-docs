@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: MAXA"
-title: "MAXA function (DAX) | Microsoft Docs"
+title: "MAXA function (DAX)"
 ---
 # MAXA
 
@@ -18,7 +18,7 @@ MAXA(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|The column in which you want to find the largest value.|  
+|`column`|The column in which you want to find the largest value.|  
   
 ## Return value
 
@@ -30,7 +30,7 @@ The largest value.
   - Numbers  
   - Dates  
   
-- Logical values, such as TRUE and FALSE. Rows that evaluate to TRUE count as 1; rows that evaluate to FALSE count as 0 (zero).  
+- Logical values, such as `TRUE` and `FALSE`. Rows that evaluate to `TRUE` count as 1; rows that evaluate to `FALSE` count as 0 (zero).  
   
 - Empty cells are ignored. If the column contains no values that can be used, MAXA returns 0 (zero).  
 

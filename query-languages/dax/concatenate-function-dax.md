@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CONCATENATE"
-title: "CONCATENATE function (DAX) | Microsoft Docs"
+title: "CONCATENATE function (DAX)"
 ---
 # CONCATENATE
 
@@ -18,8 +18,8 @@ CONCATENATE(<text1>, <text2>)
   
 |Term|Definition|  
 |--------|--------------|  
-|text1|The first text string to be joined into a single text string. The string can include text or numbers. You can also use column references.|  
-|text2|The second text string to be joined into a single text string. The string can include text or numbers. You can also use column references.|
+|`text1`|The first text string to be joined into a single text string. The string can include text or numbers. You can also use column references.|  
+|`text2`|The second text string to be joined into a single text string. The string can include text or numbers. You can also use column references.|
   
 ## Return value
 
@@ -29,7 +29,7 @@ A concatenated string.
 
 - The CONCATENATE function joins two text strings into one text string. The joined items can be text, numbers, Boolean values represented as text, or a combination of those items. You can also use a column reference if the column contains appropriate values.  
   
-- The CONCATENATE function in DAX accepts only two arguments, whereas the Excel CONCATENATE function accepts up to 255 arguments. If you need to concatenate multiple columns, you can create a series of calculations or use the concatenation operator (**&**) to join all of them in a simpler expression.  
+- The CONCATENATE function in DAX accepts only two arguments, whereas the Excel CONCATENATE function accepts up to 255 arguments. If you need to concatenate multiple columns, you can create a series of calculations or use the concatenation operator (`&`) to join all of them in a simpler expression.  
   
 - If you want to use text strings directly, rather than using a column reference, you must enclose each string in double quotation marks.  
   
@@ -59,7 +59,7 @@ The sample formula creates a new calculated column in the Customer table with th
 = CONCATENATE( [FirstName]&" ", CONCATENATE( IF( LEN([MiddleName])>1, LEFT([MiddleName],1)&". ", ""), [LastName]))
 ```
   
-This formula uses nested CONCATENATE and IF functions, together with the ampersand (**&amp;**) operator, to conditionally concatenate three string values and add spaces as separators.  
+This formula uses nested CONCATENATE and IF functions, together with the ampersand (`&`) operator, to conditionally concatenate three string values and add spaces as separators.  
   
 ## Example: Concatenation of columns with different data types
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: VARX.S"
-title: "VARX.S function (DAX) | Microsoft Docs"
+title: "VARX.S function (DAX)"
 ---
 # VARX.S
 
@@ -18,8 +18,8 @@ VARX.S(<table>, <expression>)
 
 |Term|Definition|  
 |--------|--------------|  
-|  table | Any DAX expression that returns a table of data. |  
-| expression  |  Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context).  |
+|`table` | Any DAX expression that returns a table of data. |  
+|`expression` |  Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context).  |
 
 ## Return value
 
@@ -27,7 +27,7 @@ A number that represents the variance of a sample population.
 
 ## Remarks  
   
-- VARX.S evaluates *expression* for each row of *table* and returns the variance of *expression*; on the assumption that *table* refers to a sample of the population. If *table* represents the entire population, then you should compute the variance by using VARX.P.  
+- VARX.S evaluates `expression` for each row of `table` and returns the variance of `expression`; on the assumption that `table` refers to a sample of the population. If `table` represents the entire population, then you should compute the variance by using VARX.P.  
   
 - VAR.S uses the following formula:  
   
@@ -37,9 +37,9 @@ A number that represents the variance of a sample population.
   
     and n is the population size  
   
-- Blank rows are filtered out from *columnName* and not considered in the calculations.  
+- Blank rows are filtered out from `columnName` and not considered in the calculations.  
   
-- An error is returned if *columnName* contains less than 2 non-blank rows.  
+- An error is returned if `columnName` contains less than 2 non-blank rows.  
   
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   

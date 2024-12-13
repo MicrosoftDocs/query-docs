@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: INTRATE"
-title: "INTRATE function (DAX) | Microsoft Docs"
+title: "INTRATE function (DAX)"
 ---
 
 # INTRATE
@@ -19,15 +19,15 @@ INTRATE(<settlement>, <maturity>, <investment>, <redemption>[, <basis>])
 
 |Term|Definition|  
 |--------|--------------|  
-|settlement|The security's settlement date. The security settlement date is the date after the issue date when the security is traded to the buyer.|
-|maturity|The security's maturity date. The maturity date is the date when the security expires.|
-|investment|The amount invested in the security.|
-|redemption|The amount to be received at maturity.|
-|basis|(Optional) The type of day count basis to use. If basis is omitted, it is assumed to be 0. The accepted values are listed below this table.|
+|`settlement`|The security's settlement date. The security settlement date is the date after the issue date when the security is traded to the buyer.|
+|`maturity`|The security's maturity date. The maturity date is the date when the security expires.|
+|`investment`|The amount invested in the security.|
+|`redemption`|The amount to be received at maturity.|
+|`basis`|(Optional) The type of day count basis to use. If basis is omitted, it is assumed to be 0. The accepted values are listed below this table.|
 
-The **basis** parameter accepts the following values:
+The `basis` parameter accepts the following values:
 
-| **Basis**    | **Day count basis** |
+| `Basis`    | **Day count basis** |
 | ------------ | ------------------- |
 | 0 or omitted | US (NASD) 30/360    |
 | 1            | Actual/actual       |

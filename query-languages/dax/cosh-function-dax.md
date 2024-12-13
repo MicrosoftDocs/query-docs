@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COSH"
-title: "COSH function (DAX) | Microsoft Docs"
+title: "COSH function (DAX)"
 ---
 # COSH
 
@@ -18,7 +18,7 @@ COSH(number)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|Required. Any real number for which you want to find the hyperbolic cosine.|  
+|`number`|Required. Any real number for which you want to find the hyperbolic cosine.|  
   
 ## Return value
 
@@ -34,7 +34,7 @@ The hyperbolic cosine of a number.
 
 ## Example  
   
-|Formula|Description|Result|  
+|DAX expression|Description|Result|
 |-----------|---------------|----------|  
-|= COSH(4)|Hyperbolic cosine of 4|27.308233|  
-|= COSH(EXP(1))|Hyperbolic cosine of the base of the natural logarithm.|7.6101251|  
+|`= COSH(4)`|Hyperbolic cosine of 4|27.308233|  
+|`= COSH(EXP(1))`|Hyperbolic cosine of the base of the natural logarithm.|7.6101251|  

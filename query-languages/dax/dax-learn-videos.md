@@ -1,5 +1,5 @@
 ---
-title: "Learn DAX videos | Microsoft Docs"
+title: "Learn DAX videos"
 description: Describes helpful videos used to learn Data Analysis Expressions (DAX) language.
 ms.topic: conceptual
 ---

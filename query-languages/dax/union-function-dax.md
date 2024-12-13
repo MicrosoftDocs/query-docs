@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: UNION"
-title: "UNION function (DAX) | Microsoft Docs"
+title: "UNION function (DAX)"
 ---
 # UNION
 
@@ -18,7 +18,7 @@ UNION(<table_expression1>, <table_expression2> [,<table_expression>]…)
   
 |Term|Definition|  
 |--------|--------------|  
-|table_expression|Any DAX expression that returns a table.|  
+|`table_expression`|Any DAX expression that returns a table.|  
   
 ## Return value
 

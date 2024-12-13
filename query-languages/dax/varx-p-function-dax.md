@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: VARX.P"
-title: "VARX.P function (DAX) | Microsoft Docs"
+title: "VARX.P function (DAX)"
 ---
 # VARX.P
 
@@ -18,8 +18,8 @@ VARX.P(<table>, <expression>)
 
 |Term|Definition|  
 |--------|--------------|  
-|  table|  Any DAX expression that returns a table of data. |  
-| expression |  Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context).  |
+|`table`|  Any DAX expression that returns a table of data. |  
+|`expression`|  Any DAX expression that returns a single scalar value, where the expression is to be evaluated multiple times (for each row/context).  |
   
 ## Return value
 
@@ -37,9 +37,9 @@ A number with the variance of the entire population.
   
     and n is the population size  
   
-- Blank rows are filtered out from *columnName* and not considered in the calculations.  
+- Blank rows are filtered out from `columnName` and not considered in the calculations.  
   
-- An error is returned if *columnName* contains less than 2 non-blank rows  
+- An error is returned if `columnName` contains less than 2 non-blank rows  
   
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   

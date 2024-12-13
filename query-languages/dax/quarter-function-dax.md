@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: QUARTER"
-title: "QUARTER function (DAX) | Microsoft Docs"
+title: "QUARTER function (DAX)"
 ---
 
 # QUARTER
@@ -19,7 +19,7 @@ QUARTER(<date>)
   
 |Term|Definition|  
 |--------|--------------|  
-|date|A date.|  
+|`date`|A date.|  
   
 ## Return value  
 

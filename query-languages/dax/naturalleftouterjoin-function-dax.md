@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: NATURALLEFTOUTERJOIN"
-title: "NATURALLEFTOUTERJOIN function (DAX) | Microsoft Docs"
+title: "NATURALLEFTOUTERJOIN function (DAX)"
 ---
 # NATURALLEFTOUTERJOIN
 
@@ -18,8 +18,8 @@ NATURALLEFTOUTERJOIN(<LeftTable>, <RightTable>)
   
 |Term|Definition|  
 |--------|--------------|  
-|LeftTable|A table expression defining the table on the left side of the join.|  
-|RightTable|A table expression defining the table on the right side of the join.|  
+|`LeftTable`|A table expression defining the table on the left side of the join.|  
+|`RightTable`|A table expression defining the table on the right side of the join.|  
   
 ## Return value
 

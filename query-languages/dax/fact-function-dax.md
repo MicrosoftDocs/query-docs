@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: FACT"
-title: "FACT function (DAX) | Microsoft Docs"
+title: "FACT function (DAX)"
 ---
 # FACT
 
@@ -18,7 +18,7 @@ FACT(<number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|The non-negative number for which you want to calculate the factorial.|  
+|`number`|The non-negative number for which you want to calculate the factorial.|  
   
 ## Return value
 

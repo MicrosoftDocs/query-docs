@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: GEOMEAN"
-title: "GEOMEAN function (DAX) | Microsoft Docs"
+title: "GEOMEAN function (DAX)"
 ---
 # GEOMEAN
 
@@ -20,7 +20,7 @@ GEOMEAN(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|The column that contains the numbers for which the geometric mean is to be computed.|  
+|`column`|The column that contains the numbers for which the geometric mean is to be computed.|  
   
 ## Return value
 

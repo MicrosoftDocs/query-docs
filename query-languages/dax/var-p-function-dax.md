@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: VAR.P"
-title: "VAR.P function (DAX) | Microsoft Docs"
+title: "VAR.P function (DAX)"
 ---
 # VAR.P
 
@@ -18,7 +18,7 @@ VAR.P(<columnName>)
 
 |Term|Definition|  
 |--------|--------------|  
-|  columnName  |  The name of an existing column using standard DAX syntax, usually fully qualified. It cannot be an expression.  |  
+|`columnName` |  The name of an existing column using standard DAX syntax, usually fully qualified. It cannot be an expression.  |  
   
 ## Return value
 
@@ -36,9 +36,9 @@ A number with the variance of the entire population.
   
     and n is the population size  
   
-- Blank rows are filtered out from *columnName* and not considered in the calculations.  
+- Blank rows are filtered out from `columnName` and not considered in the calculations.  
   
-- An error is returned if *columnName* contains less than 2 non-blank rows  
+- An error is returned if `columnName` contains less than 2 non-blank rows  
   
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   

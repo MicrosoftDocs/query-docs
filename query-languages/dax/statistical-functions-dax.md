@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Statistical functions"
-title: "Statistical functions (DAX) | Microsoft Docs"
+title: "Statistical functions (DAX)"
 ---
 # Statistical functions
 
@@ -38,7 +38,7 @@ Statistical functions calculate values related to statistical distributions and 
 |[PERMUT](permut-function-dax.md)    | Returns the number of permutations for a given number of objects that can be selected from number objects.        |
 |[POISSON.DIST](poisson-dist-function-dax.md)      |  Returns the Poisson distribution.       |
 |[RANK.EQ](rank-eq-function-dax.md)    | Returns the ranking of a number in a list of numbers.        |
-|[RANKX](rankx-function-dax.md)      | Returns the ranking of a number in a list of numbers for each row in the *table* argument.          |
+|[RANKX](rankx-function-dax.md)      | Returns the ranking of a number in a list of numbers for each row in the `table` argument.          |
 |[SAMPLE](sample-function-dax.md)       |  Returns a sample of N rows from the specified table.        |
 |[STDEV.P](stdev-p-function-dax.md)     |  Returns the standard deviation of the entire population.        |
 |[STDEV.S](stdev-s-function-dax.md)      |  Returns the standard deviation of a sample population.        |

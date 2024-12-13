@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DIVIDE"
-title: "DIVIDE function (DAX) | Microsoft Docs"
+title: "DIVIDE function (DAX)"
 ---
 # DIVIDE
 
@@ -18,9 +18,9 @@ DIVIDE(<numerator>, <denominator> [,<alternateresult>])
   
 |Term|Definition|  
 |--------|--------------|  
-|numerator|The dividend or number to divide.|  
-|denominator|The divisor or number to divide by.|  
-|alternateresult|(Optional) The value returned when division by zero results in an error. When not provided, the default value is BLANK().|  
+|`numerator`|The dividend or number to divide.|  
+|`denominator`|The divisor or number to divide by.|  
+|`alternateresult`|(Optional) The value returned when division by zero results in an error. When not provided, the default value is BLANK().|  
   
 ## Return value
 

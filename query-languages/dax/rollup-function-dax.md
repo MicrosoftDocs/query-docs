@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ROLLUP"
-title: "ROLLUP function (DAX) | Microsoft Docs"
+title: "ROLLUP function (DAX)"
 ---
 # ROLLUP
 

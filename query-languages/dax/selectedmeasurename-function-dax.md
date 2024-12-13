@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SELECTEDMEASURENAME"
-title: "SELECTEDMEASURENAME function (DAX) | Microsoft Docs"
+title: "SELECTEDMEASURENAME function (DAX)"
 ---
 # SELECTEDMEASURENAME
 

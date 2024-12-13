@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: MOD"
-title: "MOD function (DAX) | Microsoft Docs"
+title: "MOD function (DAX)"
 ---
 # MOD
 
@@ -18,8 +18,8 @@ MOD(<number>, <divisor>)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|The number for which you want to find the remainder after the division is performed.|  
-|divisor|The number by which you want to divide.|  
+|`number`|The number for which you want to find the remainder after the division is performed.|  
+|`divisor`|The number by which you want to divide.|  
   
 ## Return value
 

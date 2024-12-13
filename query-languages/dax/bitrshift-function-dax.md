@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: BITRSHIFT"
-title: "BITRSHIFT function (DAX) | Microsoft Docs"
+title: "BITRSHIFT function (DAX)"
 ---
 # BITRSHIFT
 
@@ -18,8 +18,8 @@ BITRSHIFT(<Number>, <Shift_Amount>)
 
 |Term|Definition|
 |--------|--------------|
-|Number|Any DAX expression that returns an integer expression.|
-|Shift_Amount|Any DAX expression that returns an integer expression.|
+|`Number`|Any DAX expression that returns an integer expression.|
+|`Shift_Amount`|Any DAX expression that returns an integer expression.|
   
 ## Return value
 

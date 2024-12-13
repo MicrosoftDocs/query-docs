@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: INTERSECT"
-title: "INTERSECT function (DAX) | Microsoft Docs"
+title: "INTERSECT function (DAX)"
 ---
 # INTERSECT
 
@@ -18,7 +18,7 @@ INTERSECT(<table_expression1>, <table_expression2>)
   
 |Term|Definition|  
 |--------|--------------|  
-|Table_expression|Any DAX expression that returns a table.|  
+|`Table_expression`|Any DAX expression that returns a table.|  
   
 ## Return value
 

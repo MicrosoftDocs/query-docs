@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: UTCTODAY"
-title: "UTCTODAY function (DAX) | Microsoft Docs"
+title: "UTCTODAY function (DAX)"
 ---
 # UTCTODAY
 

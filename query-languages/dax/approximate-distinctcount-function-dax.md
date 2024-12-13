@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: APPROXIMATEDISTINCTCOUNT"
-title: "APPROXIMATEDISTINCTCOUNT function (DAX) | Microsoft Docs"
+title: "APPROXIMATEDISTINCTCOUNT function (DAX)"
 ---
 # APPROXIMATEDISTINCTCOUNT
 
@@ -18,11 +18,11 @@ APPROXIMATEDISTINCTCOUNT(<columnName>)
 
 |Term  |Description|  
 |---------|---------|
-|column     | The column that contains the values to be counted. This cannot be an expression.  |
+|`column` | The column that contains the values to be counted. This cannot be an expression.  |
 
 ## Return value
 
-The approximate number of distinct values in *column*.  
+The approximate number of distinct values in `column`.  
   
 ## Remarks  
 

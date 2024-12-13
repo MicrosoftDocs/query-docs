@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ERROR"
-title: "ERROR function | Microsoft Docs"
+title: "ERROR function"
 ---
 # ERROR
 
@@ -18,7 +18,7 @@ ERROR(<text>)
   
 |Term|Definition|  
 |--------|--------------|  
-|text|A text string containing an error message.|  
+|`text`|A text string containing an error message.|  
   
 ## Return value
 

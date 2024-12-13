@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PERCENTILEX.EXC"
-title: "PERCENTILEX.EXC function (DAX) | Microsoft Docs"
+title: "PERCENTILEX.EXC function (DAX)"
 ---
 # PERCENTILEX.EXC
 
@@ -20,9 +20,9 @@ PERCENTILEX.EXC(<table>, <expression>, k)
   
 |Term|Definition|  
 |--------|--------------|  
-|table|The table containing the rows for which the expression will be evaluated.|  
-|expression|The expression to be evaluated for each row of the table.|  
-|k|The desired percentile value in the range 0 to 1 exclusive.|  
+|`table`|The table containing the rows for which the expression will be evaluated.|  
+|`expression`|The expression to be evaluated for each row of the table.|  
+|`k`|The desired percentile value in the range 0 to 1 exclusive.|  
   
 ## Return value
 

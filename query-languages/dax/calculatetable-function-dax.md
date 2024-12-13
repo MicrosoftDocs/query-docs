@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CALCULATETABLE"
-title: "CALCULATETABLE function (DAX) | Microsoft Docs"
+title: "CALCULATETABLE function (DAX)"
 ---
 # CALCULATETABLE
 
@@ -23,8 +23,8 @@ CALCULATETABLE(<expression>[, <filter1> [, <filter2> [, …]]])
 
 |Term|Definition|  
 |--------|--------------|  
-|expression|The table expression to be evaluated.|
-|filter1, filter2,…|(Optional) Boolean expressions or table expressions that defines filters, or filter modifier functions.|
+|`expression`|The table expression to be evaluated.|
+|`filter1, filter2,…`|(Optional) Boolean expressions or table expressions that defines filters, or filter modifier functions.|
 
 The expression used as the first parameter must be a model table or a function that returns a table.
 
@@ -34,11 +34,11 @@ Filters can be:
 - Table filter expressions
 - Filter modification functions
 
-When there are multiple filters, they're evaluated by using the AND [logical operator](dax-operator-reference.md#logical-operators). That means all conditions must be TRUE at the same time.
+When there are multiple filters, they're evaluated by using the AND [logical operator](dax-operator-reference.md#logical-operators). That means all conditions must be `TRUE` at the same time.
 
 #### Boolean filter expressions
 
-A Boolean expression filter is an expression that evaluates to TRUE or FALSE. There are several rules that they must abide by:
+A Boolean expression filter is an expression that evaluates to `TRUE` or `FALSE`. There are several rules that they must abide by:
 
 - They can reference only a single column.
 - They cannot reference measures.

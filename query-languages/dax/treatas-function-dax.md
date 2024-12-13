@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: TREATAS"
-title: "TREATAS function | Microsoft Docs"
+title: "TREATAS function"
 ---
 # TREATAS
 
@@ -18,8 +18,8 @@ TREATAS(table_expression, <column>[, <column>[, <column>[,…]]]} )
   
 |Term|Definition|  
 |--------|--------------|  
-|table_expression|An expression that results in a table.|
-|column|One or more existing columns. It cannot be an expression. |  
+|`table_expression`|An expression that results in a table.|
+|`column`|One or more existing columns. It cannot be an expression. |  
 
 ## Return value  
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: FLOOR"
-title: "FLOOR function (DAX) | Microsoft Docs"
+title: "FLOOR function (DAX)"
 ---
 # FLOOR
 
@@ -18,8 +18,8 @@ FLOOR(<number>, <significance>)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|The numeric value you want to round.|  
-|significance|The multiple to which you want to round. The arguments**number** and **significance** must either both be positive, or both be negative.|  
+|`number`|The numeric value you want to round.|  
+|`significance`|The multiple to which you want to round. The arguments`number` and `significance` must either both be positive, or both be negative.|  
   
 ## Return value
 
@@ -27,9 +27,9 @@ A decimal number.
   
 ## Remarks
 
-- If either argument is nonnumeric, FLOOR returns **#VALUE!**error value.  
+- If either argument is nonnumeric, FLOOR returns `#VALUE!` error value.  
   
-- If number and significance have different signs, FLOOR returns the **#NUM!**error value.  
+- If number and significance have different signs, FLOOR returns the `#NUM!` error value.  
   
 - Regardless of the sign of the number, a value is rounded down when adjusted away from zero. If the number is an exact multiple of significance, no rounding occurs.  
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DATEDIFF"
-title: "DATEDIFF function (DAX) | Microsoft Docs"
+title: "DATEDIFF function (DAX)"
 ---
 # DATEDIFF
 
@@ -18,9 +18,9 @@ DATEDIFF(<Date1>, <Date2>, <Interval>)
   
 |Term|Definition|  
 |--------|--------------|  
-|Date1|A scalar datetime value.|  
-|Date2|A scalar datetime value.|  
-|Interval|The interval to use when comparing dates. The value can be one of the following:<br /><br />-   SECOND<br />-   MINUTE<br />-   HOUR<br />-   DAY<br />-   WEEK<br />-  MONTH<br />-   QUARTER<br />-   YEAR|  
+|`Date1`|A scalar datetime value.|  
+|`Date2`|A scalar datetime value.|  
+|`Interval`|The interval to use when comparing dates. The value can be one of the following:<br /><br />-   SECOND<br />-   MINUTE<br />-   HOUR<br />-   DAY<br />-   WEEK<br />-  MONTH<br />-   QUARTER<br />-   YEAR|  
   
 ## Return value
 

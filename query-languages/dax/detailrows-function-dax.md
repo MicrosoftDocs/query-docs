@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DETAILROWS"
-title: "DETAILROWS function (DAX) | Microsoft Docs"
+title: "DETAILROWS function (DAX)"
 ---
 # DETAILROWS
 
@@ -18,7 +18,7 @@ DETAILROWS([Measure])
   
 |Term|Definition|  
 |--------|--------------|  
-|Measure|Name of a measure.|  
+|`Measure`|Name of a measure.|  
   
 ## Return value
 

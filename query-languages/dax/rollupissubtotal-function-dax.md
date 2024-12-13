@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ROLLUPISSUBTOTAL"
-title: "ROLLUPISSUBTOTAL function (DAX) | Microsoft Docs"
+title: "ROLLUPISSUBTOTAL function (DAX)"
 ---
 # ROLLUPISSUBTOTAL
 
@@ -18,10 +18,10 @@ ROLLUPISSUBTOTAL ( [<grandTotalFilter>], <groupBy_columnName>, <isSubtotal_colum
 
 |Term|Definition|  
 |--------|--------------|  
-|grandTotalFilter|(Optional) Filter to be applied to the grandtotal level.|  
-|groupBy_columnName|Name of an existing column used to create summary groups based on the values found in it. Cannot be an expression.|  
+|`grandTotalFilter`|(Optional) Filter to be applied to the grandtotal level.|  
+|`groupBy_columnName`|Name of an existing column used to create summary groups based on the values found in it. Cannot be an expression.|  
 |isSubtotal_columnName |Name of an ISSUBTOTAL column. The values of the column are calculated using the ISSUBTOTAL function. |
-|groupLevelFilter|(Optional) Filter to be applied to the current level.|
+|`groupLevelFilter`|(Optional) Filter to be applied to the current level.|
 
 ## Return value
 

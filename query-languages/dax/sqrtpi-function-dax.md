@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SQRTPI"
-title: "SQRTPI function (DAX) | Microsoft Docs"
+title: "SQRTPI function (DAX)"
 ---
 # SQRTPI
 
@@ -18,7 +18,7 @@ SQRTPI(number)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|Required. The number by which pi is multiplied.|  
+|`number`|Required. The number by which pi is multiplied.|  
   
 ## Return value
 
@@ -28,5 +28,5 @@ Returns the square root of (number * pi).
   
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
-|= SQRTPI(1)|Square root of pi.|1.772454|  
-|= SQRTPI(2)|Square root of 2 * pi.|2.506628|  
+|`= SQRTPI(1)`|Square root of pi.|1.772454|  
+|`= SQRTPI(2)`|Square root of 2 * pi.|2.506628|  

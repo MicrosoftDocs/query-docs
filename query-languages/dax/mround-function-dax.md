@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: MROUND"
-title: "MROUND function (DAX) | Microsoft Docs"
+title: "MROUND function (DAX)"
 ---
 # MROUND
 
@@ -18,8 +18,8 @@ MROUND(<number>, <multiple>)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|The number to round.|  
-|multiple|The multiple of significance to which you want to round the number.|  
+|`number`|The number to round.|  
+|`multiple`|The multiple of significance to which you want to round the number.|  
   
 ## Return value
 
@@ -27,7 +27,7 @@ A decimal number.
   
 ## Remarks
 
-MROUND rounds up, away from zero, if the remainder of dividing **number** by the specified **multiple** is greater than or equal to half the value of **multiple**.  
+MROUND rounds up, away from zero, if the remainder of dividing `number` by the specified `multiple` is greater than or equal to half the value of `multiple`.  
   
 ## Example: Decimal Places  
 

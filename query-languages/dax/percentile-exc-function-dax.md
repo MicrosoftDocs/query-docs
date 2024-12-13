@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PERCENTILE.EXC"
-title: "PERCENTILE.EXC function (DAX) | Microsoft Docs"
+title: "PERCENTILE.EXC function (DAX)"
 ---
 # PERCENTILE.EXC
 
@@ -20,8 +20,8 @@ PERCENTILE.EXC(<column>, <k>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|A column containing the values that define relative standing.|  
-|k|The percentile value in the range 0..1, exclusive.|  
+|`column`|A column containing the values that define relative standing.|  
+|`k`|The percentile value in the range 0..1, exclusive.|  
   
 ## Return value
 

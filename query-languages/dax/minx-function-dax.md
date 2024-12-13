@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: MINX"
-title: "MINX function (DAX) | Microsoft Docs"
+title: "MINX function (DAX)"
 ---
 # MINX
 
@@ -18,9 +18,9 @@ MINX(<table>, < expression>,[<variant>])
   
 |Term|Definition|  
 |--------|--------------|  
-|table|The table containing the rows for which the expression will be evaluated.|  
-|expression|The expression to be evaluated for each row of the table.|  
-|variant|(Optional) If TRUE, and if there are variant or mixed value types, the lowest value based on ORDER BY ASC is returned.|
+|`table`|The table containing the rows for which the expression will be evaluated.|  
+|`expression`|The expression to be evaluated for each row of the table.|  
+|`variant`|(Optional) If `TRUE`, and if there are variant or mixed value types, the lowest value based on ORDER BY ASC is returned.|
   
 ## Return value
 
@@ -30,7 +30,7 @@ The lowest value.
 
 - The MINX function takes as its first argument a table or an expression that returns a table. The second argument contains the expression that is evaluated for each row of the table.  
   
-- Blank values are skipped. TRUE/FALSE values are not supported.
+- Blank values are skipped. `TRUE`/`FALSE` values are not supported.
 
 - If the expression has variant or mixed value types such as text and number, then by default MINX considers only numbers. If `<variant> = TRUE`, the minimum value is returned.
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Understanding functions for parent-child hierarchies in DAX"
-title: "Understanding functions for parent-child hierarchies in DAX | Microsoft Docs"
+title: "Understanding functions for parent-child hierarchies in DAX"
 ---
 # Understanding functions for parent-child hierarchies in DAX
 
@@ -68,7 +68,7 @@ The following table presents the available functions, a brief description of the
 |221|162|112&#124;14&#124;3&#124;162&#124;221|162|  
 |81|162|112&#124;14&#124;3&#124;162&#124;81|162|  
   
-[PATHITEMREVERSE function](pathitemreverse-function-dax.md) - Returns the item at *position* from a PATH() like function result, counting backwards from right to left.  
+[PATHITEMREVERSE function](pathitemreverse-function-dax.md) - Returns the item at `position` from a PATH() like function result, counting backwards from right to left.  
                 In the following example column PathItemReverse - 3rd from right is defined as '`= PATHITEMREVERSE([Path], 3)`'; this example returns the EmployeKey at third position in the Path string from the right, using the same sample data from the Path() example.  
   
 |EmployeeKey|ParentEmployeeKey|Path|PathItemReverse - 3rd from right|  
@@ -83,14 +83,14 @@ The following table presents the available functions, a brief description of the
 |221|162|112&#124;14&#124;3&#124;162&#124;221|3|  
 |81|162|112&#124;14&#124;3&#124;162&#124;81|3|  
   
-[PATHCONTAINS function](pathcontains-function-dax.md) - Returns **TRUE** if the specified *item* exists within the specified *path*. In the following example column PathContains - employee 162 is defined as '`= PATHCONTAINS([Path], "162")`'; this example returns **TRUE** if the given path contains employee 162. This example uses the results from the Path() example above.  
+[PATHCONTAINS function](pathcontains-function-dax.md) - Returns `TRUE` if the specified `item` exists within the specified `path`. In the following example column PathContains - employee 162 is defined as '`= PATHCONTAINS([Path], "162")`'; this example returns `TRUE` if the given path contains employee 162. This example uses the results from the Path() example above.  
 
 |EmployeeKey|ParentEmployeeKey|Path|PathContains - employee 162|  
 |---------------|---------------------|--------|-------------------------------------|  
-|112||112|FALSE|  
-|14|112|112&#124;14|FALSE|  
-|3|14|112&#124;14&#124;3|FALSE|  
-|11|3|112&#124;14&#124;3&#124;11|FALSE|  
-|13|3|112&#124;14&#124;3&#124;13|FALSE|  
-|162|3|112&#124;14&#124;3&#124;162|TRUE|  
-|117|162|112&#124;14&#124;3&#124;162&#124;117|TRUE|  
+|112||112|`FALSE`|  
+|14|112|112&#124;14|`FALSE`|  
+|3|14|112&#124;14&#124;3|`FALSE`|  
+|11|3|112&#124;14&#124;3&#124;11|`FALSE`|  
+|13|3|112&#124;14&#124;3&#124;13|`FALSE`|  
+|162|3|112&#124;14&#124;3&#124;162|`TRUE`|  
+|117|162|112&#124;14&#124;3&#124;162&#124;117|`TRUE`|  

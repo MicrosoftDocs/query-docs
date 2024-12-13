@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: START AT"
-title: "START AT keyword (DAX) | Microsoft Docs"
+title: "START AT keyword (DAX)"
 ---
 # START AT
   
@@ -16,8 +16,8 @@ Introduces a statement that defines the starting value at which the query result
 
 |Term  |Definition  |
 |---------|---------|
-|  value     |   A constant value. Cannot be an expression.  |
-|  parameter     |   The name of a parameter in an XMLA statement prefixed with an `@` character.  |
+|  `value`     |   A constant value. Cannot be an expression.  |
+|  `parameter`     |   The name of a parameter in an XMLA statement prefixed with an `@` character.  |
 
 ## Remarks
   

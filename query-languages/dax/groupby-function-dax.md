@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: GROUPBY"
-title: "GROUPBY function (DAX) | Microsoft Docs"
+title: "GROUPBY function (DAX)"
 ---
 # GROUPBY
 
@@ -18,10 +18,10 @@ GROUPBY (<table> [, <groupBy_columnName> [, <groupBy_columnName> [, …]]] [, <n
   
 |Term|Definition|  
 |--------|--------------|  
-|table|Any DAX expression that returns a table of data.|  
-|groupBy_columnName|The name of an existing column in the table (or in a related table,) by which the data is to be grouped. This parameter cannot be an expression.|  
-|name|The name given to a new column that is being added to the list of GroupBy columns, enclosed in double quotes.|  
-|expression|One of the X aggregation functions with the first argument being CURRENTGROUP(). See With CURRENTGROUP section below for the full list of supported X aggregation functions.|  
+|`table`|Any DAX expression that returns a table of data.|  
+|`groupBy_columnName`|The name of an existing column in the table (or in a related table,) by which the data is to be grouped. This parameter cannot be an expression.|  
+|`name`|The name given to a new column that is being added to the list of GroupBy columns, enclosed in double quotes.|  
+|`expression`|One of the X aggregation functions with the first argument being CURRENTGROUP(). See With CURRENTGROUP section below for the full list of supported X aggregation functions.|  
   
 ## Return value
 
@@ -41,7 +41,7 @@ A table with the selected columns for the groupBy_columnName arguments and the e
   
 - Each column for which you define a name must have a corresponding expression; otherwise, an error is returned. The first argument, name, defines the name of the column in the results. The second argument, expression, defines the calculation performed to obtain the value for each row in that column.  
   
-- groupBy_columnName must be either in table or in a related table.  
+- `groupBy_columnName` must be either in table or in a related table.  
   
 - Each name must be enclosed in double quotation marks.  
   

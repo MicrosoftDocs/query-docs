@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SINH"
-title: "SINH function (DAX) | Microsoft Docs"
+title: "SINH function (DAX)"
 ---
 # SINH
 
@@ -18,7 +18,7 @@ SINH(number)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|Required. Any real number.|  
+|`number`|Required. Any real number.|  
   
 ## Return value
 

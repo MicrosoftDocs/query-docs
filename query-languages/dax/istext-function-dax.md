@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: ISTEXT"
-title: "ISTEXT function (DAX) | Microsoft Docs"
+title: "ISTEXT function (DAX)"
 ---
 # ISTEXT
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Checks if a value is text, and returns TRUE or FALSE.  
+Checks if a value is text, and returns `TRUE` or `FALSE`.  
   
 ## Syntax  
   
@@ -18,11 +18,11 @@ ISTEXT(<value>)
   
 |Term|Definition|  
 |--------|--------------|  
-|value|The value you want to check.|  
+|`value`|The value you want to check.|  
   
 ## Return value
 
-TRUE if the value is text; otherwise FALSE.
+`TRUE` if the value is text; otherwise `FALSE`.
 
 ## Remarks
 

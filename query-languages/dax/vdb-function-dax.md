@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: VDB"
-title: "VDB function (DAX) | Microsoft Docs"
+title: "VDB function (DAX)"
 author: jajin7
 ---
 
@@ -20,13 +20,13 @@ VDB(<cost>, <salvage>, <life>, <start_period>, <end_period>[, <factor>[, <no_swi
 
 |Term|Definition|  
 |--------|--------------|  
-|cost|The initial cost of the asset.|
-|salvage|The value at the end of the depreciation (sometimes called the salvage value of the asset). This value can be 0.|
-|life|The number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).|
-|start_period|The starting period for which you want to calculate the depreciation. Start_period must use the same units as life. Must be between 1 and life (inclusive).|
-|end_period|The ending period for which you want to calculate the depreciation. End_period must use the same units as life. Must be between start_period and life (inclusive).|
-|factor|(Optional) The rate at which the balance declines. If factor is omitted, it is assumed to be 2 (the double-declining balance method). Change factor if you do not want to use the double-declining balance method. For a description of the double-declining balance method, see DDB.|
-|no_switch|(Optional) A logical value specifying whether to switch to straight-line depreciation when depreciation is greater than the declining balance calculation. If omitted, it is assumed to be FALSE. <br/> - If no_switch evaluates to TRUE, VDB does not switch to straight-line depreciation, even when the depreciation is greater than the declining balance calculation. <br/> - If no_switch evaluates to FALSE or is omitted, VDB switches to straight-line depreciation when depreciation is greater than the declining balance calculation.|
+|`cost`|The initial cost of the asset.|
+|`salvage`|The value at the end of the depreciation (sometimes called the salvage value of the asset). This value can be 0.|
+|`life`|The number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).|
+|`start_period`|The starting period for which you want to calculate the depreciation. Start_period must use the same units as life. Must be between 1 and life (inclusive).|
+|`end_period`|The ending period for which you want to calculate the depreciation. End_period must use the same units as life. Must be between start_period and life (inclusive).|
+|`factor`|(Optional) The rate at which the balance declines. If factor is omitted, it is assumed to be 2 (the double-declining balance method). Change factor if you do not want to use the double-declining balance method. For a description of the double-declining balance method, see DDB.|
+|`no_switch`|(Optional) A logical value specifying whether to switch to straight-line depreciation when depreciation is greater than the declining balance calculation. If omitted, it is assumed to be `FALSE`. <br/> - If no_switch evaluates to `TRUE`  VDB does not switch to straight-line depreciation, even when the depreciation is greater than the declining balance calculation. <br/> - If no_switch evaluates to `FALSE` or is omitted, VDB switches to straight-line depreciation when depreciation is greater than the declining balance calculation.|
 
 ## Return Value
 
@@ -41,7 +41,7 @@ The depreciation over the specified period.
   - start_period < 1 or start_period > end_period.
   - end_period < start_period or end_period > life.
   - factor < 0.
-  - no_switch does not evaluate to either TRUE or FALSE.
+  - no_switch does not evaluate to either `TRUE` or `FALSE`.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 

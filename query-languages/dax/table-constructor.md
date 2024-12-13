@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table constructor"
-title: "Table constructor | Microsoft Docs"
+title: "Table constructor"
 ---
 # Table constructor
 
@@ -17,7 +17,7 @@ Returns a table of one or more columns.
   
 |Term|Definition|  
 |--------|--------------|  
-|scalarExprN|Any DAX expression that returns a scalar value.|  
+|`scalarExprN`|Any DAX expression that returns a scalar value.|  
   
 ## Return value
 
@@ -88,5 +88,5 @@ Returns the following table of a single column of String data type:
 |---------|
 |1     |
 |1/1/2017     |
-|TRUE    |
+|``TRUE``    |
 |A  |

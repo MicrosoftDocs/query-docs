@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COUNTAX"
-title: "COUNTAX function (DAX) | Microsoft Docs"
+title: "COUNTAX function (DAX)"
 ---
 # COUNTAX
 
@@ -18,8 +18,8 @@ COUNTAX(<table>,<expression>)
   
 |Term|Definition|  
 |--------|--------------|  
-|table|The table containing the rows for which the expression will be evaluated.|  
-|expression|The expression to be evaluated for each row of the table.|  
+|`table`|The table containing the rows for which the expression will be evaluated.|  
+|`expression`|The expression to be evaluated for each row of the table.|  
   
 ## Return value
 
@@ -35,7 +35,7 @@ A whole number.
   
 ## Example
 
-The following example counts the number of nonblank rows in the column, Phone, using the table that results from filtering the Reseller table on [Status] = **Active**.  
+The following example counts the number of nonblank rows in the column, Phone, using the table that results from filtering the Reseller table on `[Status] = Active`.  
   
 ```dax
 = COUNTAX(FILTER('Reseller',[Status]="Active"),[Phone])  

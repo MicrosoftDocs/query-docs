@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CONFIDENCE.NORM"
-title: "CONFIDENCE.NORM function (DAX) | Microsoft Docs"
+title: "CONFIDENCE.NORM function (DAX)"
 ---
 # CONFIDENCE.NORM
 
@@ -18,9 +18,9 @@ CONFIDENCE.NORM(alpha,standard_dev,size)
   
 |Term|Definition|  
 |--------|--------------|  
-|alpha|The significance level used to compute the confidence level. The confidence level equals 100*(1 - alpha)%, or in other words, an alpha of 0.05 indicates a 95 percent confidence level.|  
-|standard_dev|The population standard deviation for the data range and is assumed to be known.|  
-|standard_dev,size|The sample size.|  
+|`alpha`|The significance level used to compute the confidence level. The confidence level equals 100*(1 - alpha)%, or in other words, an alpha of 0.05 indicates a 95 percent confidence level.|  
+|`standard_dev`|The population standard deviation for the data range and is assumed to be known.|  
+|`standard_dev,size`|The sample size.|  
   
 ## Return value
 
@@ -28,15 +28,15 @@ A range of values
   
 ## Remarks
 
-- If any argument is nonnumeric, CONFIDENCE.NORM returns the #VALUE! error value.  
+- If any argument is nonnumeric, CONFIDENCE.NORM returns the `#VALUE!` error value.  
 
-- If alpha ≤ 0 or alpha ≥ 1, CONFIDENCE.NORM returns the #NUM! error value.  
+- If `alpha ≤ 0` or `alpha ≥ 1`, CONFIDENCE.NORM returns the `#NUM!` error value.  
 
-- If standard_dev ≤ 0, CONFIDENCE.NORM returns the #NUM! error value.  
+- If `standard_dev ≤ 0`, CONFIDENCE.NORM returns the `#NUM!` error value.  
 
-- If size is not an integer, it is rounded.  
+- If `size` is not an integer, it is rounded.  
 
-- If size &lt; 1, CONFIDENCE.NORM returns the #NUM! error value.  
+- If `size < 1`, CONFIDENCE.NORM returns the `#NUM!` error value.  
 
 - If we assume alpha equals 0.05, we need to calculate the area under the standard normal curve that equals (1 - alpha), or 95 percent. This value is ± 1.96. The confidence interval is therefore:  
 

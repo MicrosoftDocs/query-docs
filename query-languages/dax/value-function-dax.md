@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: VALUE"
-title: "VALUE function (DAX) | Microsoft Docs"
+title: "VALUE function (DAX)"
 ---
 # VALUE
 
@@ -18,7 +18,7 @@ VALUE(<text>)
   
 |Term|Definition|  
 |--------|--------------|  
-|text|The text to be converted.|  
+|`text`|The text to be converted.|  
   
 ## Return value
 
@@ -26,7 +26,7 @@ The converted number in decimal data type.
   
 ## Remarks
 
-- The value passed as the **text** parameter can be in any of the constant, number, date, or time formats recognized by the application or services you are using. If **text** is not in one of these formats, an error is returned. 
+- The value passed as the `text` parameter can be in any of the constant, number, date, or time formats recognized by the application or services you are using. If `text` is not in one of these formats, an error is returned. 
   
 - You do not generally need to use the VALUE function in a formula because the engine implicitly converts text to numbers as necessary.  
   

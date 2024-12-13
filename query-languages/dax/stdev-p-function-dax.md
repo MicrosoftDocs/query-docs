@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: STDEV.P"
-title: "STDEV.P function (DAX) | Microsoft Docs"
+title: "STDEV.P function (DAX)"
 ---
 # STDEV.P
 
@@ -18,7 +18,7 @@ STDEV.P(<ColumnName>)
 
 |Term|Definition|  
 |--------|--------------|  
-| columnName | The name of an existing column using standard DAX syntax, usually fully qualified. It cannot be an expression.   |  
+| `columnName` | The name of an existing column using standard DAX syntax, usually fully qualified. It cannot be an expression.   |  
   
 ## Return value
 
@@ -34,9 +34,9 @@ A number representing the standard deviation of the entire population.
   
     where x̃ is the average value of x for the entire population and n is the population size.
   
-- Blank rows are filtered out from *columnName* and not considered in the calculations.  
+- Blank rows are filtered out from `columnName` and not considered in the calculations.  
   
-- An error is returned if *columnName* contains less than 2 non-blank rows  
+- An error is returned if `columnName` contains less than 2 non-blank rows  
   
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   
