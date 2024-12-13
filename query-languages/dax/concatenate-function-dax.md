@@ -56,7 +56,7 @@ The sample formula returns the customer's full name as listed in a phone book. N
 The sample formula creates a new calculated column in the Customer table with the full customer name as a combination of first name, middle initial, and last name. If there is no middle name, the last name comes directly after the first name. If there is a middle name, only the first letter of the middle name is used and the initial letter is followed by a period.  
 
 ```dax
-= CONCATENATE( [FirstName]&" ", CONCATENATE( IF( LEN([MiddleName])>1, LEFT([MiddleName],1)&" ", ""), [LastName]))
+= CONCATENATE( [FirstName]&" ", CONCATENATE( IF( LEN([MiddleName])>1, LEFT([MiddleName],1)&". ", ""), [LastName]))
 ```
   
 This formula uses nested CONCATENATE and IF functions, together with the ampersand (`&`) operator, to conditionally concatenate three string values and add spaces as separators.  
