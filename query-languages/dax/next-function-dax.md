@@ -28,7 +28,7 @@ NEXT ( <column>[, <steps>][, <axis>][, <blanks>][, reset] )
 
 ## Return value
 
-The value of \<column> from the next element of the axis.
+The value of `column` from the next element of the axis.
   
 ## Remarks
 

@@ -23,7 +23,7 @@ CONVERT(<Expression>, <Datatype>)
   
 ## Return value
 
-Returns the value of \<Expression>, translated to \<Datatype>.
+Returns the value of `Expression`, translated to `Datatype`.
   
 ## Remarks  
 

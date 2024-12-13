@@ -20,7 +20,7 @@ MATCHBY ( [<matchBy_columnName>[, matchBy_columnName [, …]]] )
 
 |Term|Definition|  
 |--------|--------------|  
-|`matchBy_columnName`| (Optional) The name of an existing column to be used to identify current row in the window function’s \<relation>.</br> RELATED() may also be used to refer to a column in a table related to \<relation>.|
+|`matchBy_columnName`| (Optional) The name of an existing column to be used to identify current row in the window function’s `relation`.</br> RELATED() may also be used to refer to a column in a table related to `relation`.|
 
 ## Return value
 

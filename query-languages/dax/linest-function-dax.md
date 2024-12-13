@@ -42,7 +42,7 @@ A single-row table describing the line, plus additional statistics. These are th
 
 ## Remarks
 
-\<columnY> and the \<columnX>’s must all belong to the same table.
+`columnY` and the `columnX`’s must all belong to the same table.
 
 ## Example 1
 

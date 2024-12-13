@@ -15,7 +15,7 @@ recommendations: false
 
 [!INCLUDE[applies-to-visual-calculations](includes/applies-to-visual-calculations.md)]
 
-Returns an interval of rows within the given axis, relative to the current row. This interval will be comprised of either the last \<step> rows before the current one, or the first \<step> rows after the current one.
+Returns an interval of rows within the given axis, relative to the current row. This interval will be comprised of either the last `step` rows before the current one, or the first `step` rows after the current one.
 
 ## Syntax
 
@@ -41,7 +41,7 @@ An interval of data rows.
 
 This function can be used in visual calculations only.
 
-The \<includeCurrent>, \<axis>, \<blanks> and \<reset> parameters can be omitted.
+The `includeCurrent`, `axis`, `blanks` and `reset` parameters can be omitted.
 
 ## Example 1
 

@@ -28,7 +28,7 @@ PREVIOUS ( <column>[, <steps>][, <axis>][, <blanks>][, reset] )
 
 ## Return value
 
-The value of \<column> from the previous element of the axis.
+The value of `column` from the previous element of the axis.
   
 ## Remarks
 

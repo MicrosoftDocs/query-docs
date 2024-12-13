@@ -40,7 +40,7 @@ A scalar value, the running sum up to the current element of the axis.
 
 This function can be used in visual calculations only.
 
-The \<axis>, \<blanks> and \<reset> parameters can be omitted.
+The `axis`, `blanks` and `reset` parameters can be omitted.
 
 ## Example
 

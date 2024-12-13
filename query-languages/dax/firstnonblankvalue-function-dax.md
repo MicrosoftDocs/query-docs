@@ -19,11 +19,11 @@ FIRSTNONBLANKVALUE(<column>, <expression>)
 |Term|Definition|  
 |--------|--------------|  
 |`column`|A column or an expression that returns a single-column table.|  
-|`expression`|An expression evaluated for each value of \<column>.|
+|`expression`|An expression evaluated for each value of `column`.|
   
 ## Return value  
 
-The first non-blank value of \<expression> corresponding to the sorted values of \<column>.
+The first non-blank value of `expression` corresponding to the sorted values of `column`.
   
 ## Remarks  
 
@@ -31,7 +31,7 @@ The first non-blank value of \<expression> corresponding to the sorted values of
   - A reference to any column.
   - A table with a single column.
 
-- This function is different from FIRSTNONBLANK in that the \<column> is added to the filter context for the evaluation of \<expression>.
+- This function is different from FIRSTNONBLANK in that the `column` is added to the filter context for the evaluation of `expression`.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]  
 

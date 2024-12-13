@@ -27,7 +27,7 @@ LAST ( <column>[, <axis>][, <blanks>][, reset] )
 
 ## Return value
 
-The value of \<column> from the last element of the axis.
+The value of `column` from the last element of the axis.
   
 ## Remarks
 

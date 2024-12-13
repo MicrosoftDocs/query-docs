@@ -15,7 +15,7 @@ recommendations: false
 
 [!INCLUDE[applies-to-visual-calculations](includes/applies-to-visual-calculations.md)]
 
-Returns a moving average calculated along the given axis of the visual matrix. That is, the average of the given column calculated over the last \<windowSize> rows.
+Returns a moving average calculated along the given axis of the visual matrix. That is, the average of the given column calculated over the last `windowSize` rows.
 
 ## Syntax
 
@@ -42,7 +42,7 @@ A scalar value, the moving average at the current element of the axis.
 
 This function can be used in visual calculations only.
 
-The \<includeCurrent>, \<axis>, \<blanks> and \<reset> parameters can be omitted.
+The `includeCurrent`, `axis`, `blanks` and `reset` parameters can be omitted.
 
 ## Example 1
 

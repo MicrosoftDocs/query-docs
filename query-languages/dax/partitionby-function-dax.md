@@ -7,7 +7,7 @@ title: "PARTITIONBY function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Defines the columns that are used to partition a window function’s \<relation> parameter.
+Defines the columns that are used to partition a window function’s `relation` parameter.
   
 ## Syntax  
   
@@ -19,7 +19,7 @@ PARTITIONBY ( [<partitionBy_columnName>[, partitionBy_columnName [, …]]] )
   
 |Term|Definition|  
 |--------|--------------|  
-|`partitionBy_columnName`| (Optional) The name of an existing column to be used to partition the window function’s \<relation>.</br> RELATED() may also be used to refer to a column in a table related to \<relation>.|
+|`partitionBy_columnName`| (Optional) The name of an existing column to be used to partition the window function’s `relation`.</br> RELATED() may also be used to refer to a column in a table related to `relation`.|
 
 ## Return value
 

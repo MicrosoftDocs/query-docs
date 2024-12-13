@@ -24,11 +24,11 @@ SELECTCOLUMNS(<Table>, [<Name>], <Expression>, [<Name>], …)
   
 ## Return value
 
-A table with the same number of rows as the table specified as the first argument. The returned table has one column for each pair of \<Name>, \<Expression> arguments, and each expression is evaluated in the context of a row from the specified \<Table> argument.
+A table with the same number of rows as the table specified as the first argument. The returned table has one column for each pair of `Name`, `Expression` arguments, and each expression is evaluated in the context of a row from the specified `Table` argument.
   
 ## Remarks  
 
-SELECTCOLUMNS has the same signature as ADDCOLUMNS, and has the same behavior except that instead of starting with the \<Table> specified, SELECTCOLUMNS starts with an empty table before adding columns.
+SELECTCOLUMNS has the same signature as ADDCOLUMNS, and has the same behavior except that instead of starting with the `Table` specified, SELECTCOLUMNS starts with an empty table before adding columns.
 
 [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
   

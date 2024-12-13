@@ -27,7 +27,7 @@ FIRST ( <column>[, <axis>][, <blanks>][, reset] )
 
 ## Return value
 
-The value of \<column> from the first element of the axis.
+The value of `column` from the first element of the axis.
   
 ## Remarks
 
