@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DISTINCT (table)"
-title: "DISTINCT (table) function (DAX) | Microsoft Docs"
+title: "DISTINCT (table) function (DAX)"
 ---
 # DISTINCT (table)
 
@@ -18,7 +18,7 @@ DISTINCT(<table>)
   
 |Term|Definition|  
 |--------|--------------|  
-|table|The table from which unique rows are to be returned. The table can also be an expression that results in a table.|  
+|`table`|The table from which unique rows are to be returned. The table can also be an expression that results in a table.|  
   
 ## Return value
 

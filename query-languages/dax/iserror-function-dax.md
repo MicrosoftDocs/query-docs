@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: ISERROR"
-title: "ISERROR function (DAX) | Microsoft Docs"
+title: "ISERROR function (DAX)"
 ---
 # ISERROR
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Checks whether a value is an error, and returns TRUE or FALSE.  
+Checks whether a value is an error, and returns `TRUE` or `FALSE`.  
   
 ## Syntax  
   
@@ -18,11 +18,11 @@ ISERROR(<value>)
   
 |Term|Definition|  
 |--------|--------------|  
-|value|The value you want to test.|  
+|`value`|The value you want to test.|  
   
 ## Return value
 
-A Boolean value of TRUE if the value is an error; otherwise FALSE.  
+A Boolean value of `TRUE` if the value is an error; otherwise `FALSE`.  
 
 ## Remarks
 

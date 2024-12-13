@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: T.DIST"
-title: "T.DIST function (DAX) | Microsoft Docs"
+title: "T.DIST function (DAX)"
 ---
 # T.DIST
 
@@ -18,9 +18,9 @@ T.DIST(X,Deg_freedom,Cumulative)
   
 |Term|Definition|  
 |--------|--------------|  
-|X|The numeric value at which to evaluate the distribution.|  
-|Deg_freedom |An integer indicating the number of degrees of freedom.|
-|Cumulative|A logical value that determines the form of the function. If cumulative is TRUE, T.DIST returns the cumulative distribution function; if FALSE, it returns the probability density function.|
+|`X`|The numeric value at which to evaluate the distribution.|  
+|`Deg_freedom` |An integer indicating the number of degrees of freedom.|
+|`Cumulative`|A logical value that determines the form of the function. If cumulative is `TRUE`, T.DIST returns the cumulative distribution function; if `FALSE`, it returns the probability density function.|
   
 ## Return value
 

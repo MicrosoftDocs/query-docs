@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COUNTA"
-title: "COUNTA function (DAX) | Microsoft Docs"
+title: "COUNTA function (DAX)"
 ---
 # COUNTA
 
@@ -18,7 +18,7 @@ COUNTA(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|The column that contains the values to be counted.|  
+|`column`|The column that contains the values to be counted.|  
   
 ## Return value
 

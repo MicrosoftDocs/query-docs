@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: UNICODE"
-title: "UNICODE function (DAX) | Microsoft Docs"
+title: "UNICODE function (DAX)"
 ---
 # UNICODE
 
@@ -18,7 +18,7 @@ UNICODE( <Text> )
   
 |Term|Definition|  
 |--------|--------------|  
-|Text|Text is the character for which you want the Unicode value.|  
+|`Text`|Text is the character for which you want the Unicode value.|  
   
 ## Return value
 

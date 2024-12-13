@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: NORM.INV"
-title: "NORM.INV function (DAX) | Microsoft Docs"
+title: "NORM.INV function (DAX)"
 ---
 # NORM.INV
 
@@ -19,9 +19,9 @@ NORM.INV(Probability, Mean, Standard_dev)
   
 |Term|Definition|  
 |--------|--------------|  
-|Probability|A probability corresponding to the normal distribution.|  
-|Mean|The arithmetic mean of the distribution.|
-|Standard_dev|The standard deviation of the distribution.|
+|`Probability`|A probability corresponding to the normal distribution.|  
+|`Mean`|The arithmetic mean of the distribution.|
+|`Standard_dev`|The standard deviation of the distribution.|
   
 ## Return value
 

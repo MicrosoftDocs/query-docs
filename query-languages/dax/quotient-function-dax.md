@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: QUOTIENT"
-title: "QUOTIENT function (DAX) | Microsoft Docs"
+title: "QUOTIENT function (DAX)"
 ---
 # QUOTIENT
 
@@ -18,8 +18,8 @@ QUOTIENT(<numerator>, <denominator>)
   
 |Term|Definition|  
 |--------|--------------|  
-|numerator|The dividend, or number to divide.|  
-|denominator|The divisor, or number to divide by.|  
+|`numerator`|The dividend, or number to divide.|  
+|`denominator`|The divisor, or number to divide by.|  
   
 ## Return value
 
@@ -27,7 +27,7 @@ A whole number.
   
 ## Remarks
 
-- If either argument is non-numeric, QUOTIENT returns the **#VALUE!** error value.  
+- If either argument is non-numeric, QUOTIENT returns the `#VALUE!` error value.  
   
 - You can use a column reference instead of a literal value for either argument. However, if the column that you reference contains a 0 (zero), an error is returned for the entire column of values.  
   

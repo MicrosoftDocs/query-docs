@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: ISNUMBER"
-title: "ISNUMBER function (DAX) | Microsoft Docs"
+title: "ISNUMBER function (DAX)"
 ---
 # ISNUMBER
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Checks whether a value is a number, and returns TRUE or FALSE.  
+Checks whether a value is a number, and returns `TRUE` or `FALSE`.  
   
 ## Syntax  
   
@@ -18,11 +18,11 @@ ISNUMBER(<value>)
   
 |Term|Definition|  
 |--------|--------------|  
-|value|The value you want to test.|  
+|`value`|The value you want to test.|  
   
 ## Return value
 
-TRUE if the value is numeric; otherwise FALSE.  
+`TRUE` if the value is numeric; otherwise `FALSE`.  
 
 ## Remarks
 

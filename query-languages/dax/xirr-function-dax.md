@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: XIRR"
-title: "XIRR function (DAX) | Microsoft Docs"
+title: "XIRR function (DAX)"
 ---
 # XIRR
 
@@ -18,11 +18,11 @@ XIRR(<table>, <values>, <dates>, [, <guess>[, <alternateResult>]])
   
 |Term|Definition|  
 |--------|--------------|  
-|table|A table for which the values and dates expressions should be calculated.|  
-|values|An expression that returns the cash flow value for each row of the table.|  
-|dates|An expression that returns the cash flow date for each row of the table.|  
-|guess|(Optional) An initial guess for the internal rate of return. If omitted, the default guess of 0.1 is used.|  
-|alternateResult | (Optional) A value returned in place of an error when a solution cannot be determined.|
+|`table`|A table for which the values and dates expressions should be calculated.|  
+|`values`|An expression that returns the cash flow value for each row of the table.|  
+|`dates`|An expression that returns the cash flow date for each row of the table.|  
+|`guess`|(Optional) An initial guess for the internal rate of return. If omitted, the default guess of 0.1 is used.|  
+|`alternateResult` | (Optional) A value returned in place of an error when a solution cannot be determined.|
   
 ## Return value
 

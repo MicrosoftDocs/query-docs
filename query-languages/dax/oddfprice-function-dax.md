@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ODDFPRICE"
-title: "ODDFPRICE function (DAX) | Microsoft Docs"
+title: "ODDFPRICE function (DAX)"
 author: jajin7
 ---
 
@@ -20,19 +20,19 @@ ODDFPRICE(<settlement>, <maturity>, <issue>, <first_coupon>, <rate>, <yld>, <red
 
 |Term|Definition|  
 |--------|--------------|  
-|settlement|The security's settlement date. The security settlement date is the date after the issue date when the security is traded to the buyer.|
-|maturity|The security's maturity date. The maturity date is the date when the security expires.|
-|issue|The security's issue date.|
-|first_coupon|The security's first coupon date.|
-|rate|The security's interest rate.|
-|yld|The security's annual yield.|
-|redemption|The security's redemption value per \\$100 face value.|
-|frequency|The number of coupon payments per year. For annual payments, frequency = 1; for semiannual, frequency = 2; for quarterly, frequency = 4.|
-|basis|(Optional) The type of day count basis to use. If basis is omitted, it is assumed to be 0. The accepted values are listed below this table.|
+|`settlement`|The security's settlement date. The security settlement date is the date after the issue date when the security is traded to the buyer.|
+|`maturity`|The security's maturity date. The maturity date is the date when the security expires.|
+|`issue`|The security's issue date.|
+|`first_coupon`|The security's first coupon date.|
+|`rate`|The security's interest rate.|
+|`yld`|The security's annual yield.|
+|`redemption`|The security's redemption value per \\$100 face value.|
+|`frequency`|The number of coupon payments per year. For annual payments, frequency = 1; for semiannual, frequency = 2; for quarterly, frequency = 4.|
+|`basis`|(Optional) The type of day count basis to use. If basis is omitted, it is assumed to be 0. The accepted values are listed below this table.|
 
-The **basis** parameter accepts the following values:
+The `basis` parameter accepts the following values:
 
-| **Basis**    | **Day count basis** |
+| `Basis`    | **Day count basis** |
 | ------------ | ------------------- |
 | 0 or omitted | US (NASD) 30/360    |
 | 1            | Actual/actual       |

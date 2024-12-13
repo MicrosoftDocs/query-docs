@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SELECTEDMEASUREFORMATSTRING"
-title: "SELECTEDMEASUREFORMATSTRING function (DAX) | Microsoft Docs"
+title: "SELECTEDMEASUREFORMATSTRING function (DAX)"
 ---
 # SELECTEDMEASUREFORMATSTRING
 

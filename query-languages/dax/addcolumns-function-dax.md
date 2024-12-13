@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ADDCOLUMNS"
-title: "ADDCOLUMNS function (DAX) | Microsoft Docs"
+title: "ADDCOLUMNS function (DAX)"
 ---
 # ADDCOLUMNS
 
@@ -18,9 +18,9 @@ ADDCOLUMNS(<table>, <name>, <expression>[, <name>, <expression>]…)
 
 |Term|Definition|  
 |--------|--------------|  
-|table|Any DAX expression that returns a table of data.| 
-|name|The name given to the column, enclosed in double quotes.  |
-|expression|Any DAX expression that returns a scalar expression, evaluated for each row of *table*. | 
+|`table`|Any DAX expression that returns a table of data.| 
+|`name`|The name given to the column, enclosed in double quotes.  |
+|`expression`|Any DAX expression that returns a scalar expression, evaluated for each row of `table`. | 
   
 ## Return value
 

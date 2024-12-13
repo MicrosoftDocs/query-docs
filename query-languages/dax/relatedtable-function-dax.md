@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: RELATEDTABLE"
-title: "RELATEDTABLE function (DAX) | Microsoft Docs"
+title: "RELATEDTABLE function (DAX)"
 ---
 # RELATEDTABLE
 
@@ -18,7 +18,7 @@ RELATEDTABLE(<tableName>)
   
 |Term|Definition|  
 |--------|--------------|  
-|tableName|The name of an existing table using standard DAX syntax. It cannot be an expression.|  
+|`tableName`|The name of an existing table using standard DAX syntax. It cannot be an expression.|  
   
 ## Return value
 

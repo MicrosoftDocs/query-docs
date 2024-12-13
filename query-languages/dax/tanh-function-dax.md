@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: TANH"
-title: "TANH function (DAX) | Microsoft Docs"
+title: "TANH function (DAX)"
 ---
 # TANH
 
@@ -18,7 +18,7 @@ TANH(number)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|Required. Any real number.|  
+|`number`|Required. Any real number.|  
   
 ## Return value
 
@@ -36,6 +36,6 @@ Returns the hyperbolic tangent of a number.
   
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
-|= TANH(-2)|Hyperbolic tangent of -2 (-0.96403)|-0.964028|  
-|= TANH(0)|Hyperbolic tangent of 0 (0)|0|  
-|= TANH(0.5)|Hyperbolic tangent of 0.5 (0.462117)|0.462117|  
+|`= TANH(-2)`|Hyperbolic tangent of -2 (-0.96403)|-0.964028|  
+|`= TANH(0)`|Hyperbolic tangent of 0 (0)|0|  
+|`= TANH(0.5)`|Hyperbolic tangent of 0.5 (0.462117)|0.462117|  

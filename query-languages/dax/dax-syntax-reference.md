@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DAX syntax"
-title: "DAX syntax | Microsoft Docs"
+title: "DAX syntax"
 ms.topic: conceptual
 ---
 # DAX syntax
@@ -9,9 +9,9 @@ This article describes syntax and requirements for the DAX formula expression la
   
 ## Syntax requirements  
   
-A DAX formula always starts with an equal sign (=). After the equals sign, you can provide any expression that evaluates to a scalar, or an expression that can be converted to a scalar. These include the following:  
+A DAX formula always starts with an equal sign (`=`). After the equals sign, you can provide any expression that evaluates to a scalar, or an expression that can be converted to a scalar. These include the following:  
   
--   A scalar constant, or expression that uses a scalar operator (+,-,*,/,>=,...,&&, ...)  
+-   A scalar constant, or expression that uses a scalar operator (`+,-,*,/,>=,...,&&, ...`)  
   
 -   References to columns or tables. The DAX language always uses tables and columns as inputs to functions, never an array or arbitrary set of values.  
   
@@ -27,11 +27,11 @@ For example, the following are all valid formulas.
   
 |Formula|Result|  
 |-----------|----------|  
-|= 3|3|  
-|= "**Sales**"|**Sales**|  
-|= 'Sales'[Amount]|If you use this formula within the Sales table, you will get the value of the column Amount in the Sales table for the current row.|  
-|= (0.03 *[Amount])<br /><br />=0.03 \* [Amount]|Three percent of the value in the Amount column of the current table.<br /><br />Although this formula can be used to calculate a percentage, the result is not shown as a percentage unless you apply formatting in the table.|  
-|= PI()|The value of the constant pi.|  
+|`= 3`|3|  
+|`= "Sales"`|**Sales**|  
+|`= 'Sales'[Amount]`|If you use this formula within the Sales table, you will get the value of the column Amount in the Sales table for the current row.|  
+|`= (0.03 *[Amount])`<br /><br />`=0.03 * [Amount]`|Three percent of the value in the Amount column of the current table.<br /><br />Although this formula can be used to calculate a percentage, the result is not shown as a percentage unless you apply formatting in the table.|  
+|`= PI()`|The value of the constant pi.|  
   
 Formulas can behave differently depending on how they are used. You must always be aware of the context and how the data that you use in the formula is related to other data that might be used in the calculation.  
   
@@ -43,13 +43,13 @@ Each column and measure you add to an existing data model must belong to a speci
   
 When you use a table or column as an input to a function, you must generally *qualify* the column name. The *fully qualified* name of a column is the table name, followed by the column name in square brackets: for examples, 'U.S. Sales'[Products]. A fully qualified name is always required when you reference a column in the following contexts:  
   
--   As an argument to the function, VALUES  
+-   As an argument to the function, `VALUES`  
   
--   As an argument to the functions, ALL or ALLEXCEPT  
+-   As an argument to the functions, `ALL` or `ALLEXCEPT` 
   
--   In a filter argument for the functions, CALCULATE or CALCULATETABLE  
+-   In a filter argument for the functions, `CALCULATE` or `CALCULATETABLE`  
   
--   As an argument to the function, RELATEDTABLE  
+-   As an argument to the function, `RELATEDTABLE`  
   
 -   As an argument to any time intelligence function  
   
@@ -97,7 +97,7 @@ The following characters and character types are not valid in the names of table
   
 -   The following characters that are not valid in the names of objects:  
   
-    .,;':/\\*|?&%$!+=()[]{}<>  
+    `.,;':/\\*|?&%$!+=()[]{}<>`
   
 #### Examples of object names  
 
@@ -132,11 +132,11 @@ The following table lists the operators that are supported by DAX. For more info
   
 |Operator type|Symbol and use|  
 |-----------------|------------------|  
-|Parenthesis operator|() precedence order and grouping of arguments|  
-|Arithmetic operators|+ (addition)<br /><br />- (subtraction/<br /><br />sign)<br /><br />* (multiplication)<br /><br />/ (division)<br /><br />^ (exponentiation)|  
-|Comparison operators|= (equal to)<br /><br />> (greater than)<br /><br />< (less than)<br /><br />>= (greater than or equal to)<br /><br /><= (less than or equal to)<br /><br /><> (not equal to)|  
-|Text concatenation operator|& (concatenation)|  
-|Logic operators|&& (and)<br /><br />&#124;&#124; (or)|  
+|Parenthesis operator|`()` precedence order and grouping of arguments|  
+|Arithmetic operators|`+` (addition)<br /><br />`-` (subtraction)<br /><br />`*` (multiplication)<br /><br />`/` (division)<br /><br />`^` (exponentiation)|  
+|Comparison operators|`=` (equal to)<br /><br />`>` (greater than)<br /><br />`<` (less than)<br /><br />`>=` (greater than or equal to)<br /><br />`<=` (less than or equal to)<br /><br />`<>` (not equal to)|  
+|Text concatenation operator|`&` (concatenation)|  
+|Logic operators|`&&` (and)<br /><br />`||` (or)|  
   
 ## </a>Data types  
 

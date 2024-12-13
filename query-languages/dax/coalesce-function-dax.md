@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COALESCE"
-title: "COALESCE function (DAX) | Microsoft Docs"
+title: "COALESCE function (DAX)"
 ---
 # COALESCE
 
@@ -18,7 +18,7 @@ COALESCE(<expression>, <expression>[, <expression>]…)
   
 |Term|Definition|  
 |--------|--------------|  
-|expression|Any DAX expression that returns a scalar expression.|  
+|`expression`|Any DAX expression that returns a scalar expression.|  
   
 ## Return value
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: EFFECT"
-title: "EFFECT function (DAX) | Microsoft Docs"
+title: "EFFECT function (DAX)"
 author: jajin7
 ---
 
@@ -20,8 +20,8 @@ EFFECT(<nominal_rate>, <npery>)
 
 |Term|Definition|  
 |--------|--------------|  
-|nominal_rate|The nominal interest rate.|
-|npery|The number of compounding periods per year.|
+|`nominal_rate`|The nominal interest rate.|
+|`npery`|The number of compounding periods per year.|
 
 ## Return Value
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ISATLEVEL"
-title: "ISATLEVEL function (DAX) | Microsoft Docs"
+title: "ISATLEVEL function (DAX)"
 ms.service: powerbi
 ms.subservice: dax
 ms.date: 02/20/2024
@@ -27,11 +27,11 @@ ISATLEVEL ( <column> )
 
 |Term|Definition|
 |--------|--------------|
-|column|A grouping column in the data grid.|
+|`column`|A grouping column in the data grid.|
 
 ## Return value
 
-TRUE or FALSE that indicates whether the grouping column is at the current level in the context.
+`TRUE` or `FALSE` that indicates whether the grouping column is at the current level in the context.
 
 ## Remarks
 

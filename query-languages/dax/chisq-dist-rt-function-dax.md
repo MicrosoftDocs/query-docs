@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: CHISQ.DIST.RT"
-title: "CHISQ.DIST.RT function (DAX) | Microsoft Docs"
+title: "CHISQ.DIST.RT function (DAX)"
 ---
 # CHISQ.DIST.RT
 
@@ -20,8 +20,8 @@ CHISQ.DIST.RT(<x>, <deg_freedom>)
   
 |Term|Definition|  
 |--------|--------------|  
-|x|The value at which you want to evaluate the distribution.|  
-|Deg_freedom|The number of degrees of freedom.|
+|`x`|The value at which you want to evaluate the distribution.|  
+|`Deg_freedom`|The number of degrees of freedom.|
   
 ## Return value
 
@@ -29,13 +29,13 @@ The right-tailed probability of the chi-squared distribution.
   
 ## Remarks
 
-- If x or deg_freedom is nonnumeric, an error is returned.
+- If `x` or `deg_freedom` is nonnumeric, an error is returned.
 
-- If deg_freedom is not an integer, it is rounded.
+- If `deg_freedom` is not an integer, it is rounded.
 
-- If x < 0, an error is returned.
+- If `x` < 0, an error is returned.
 
-- If deg_freedom < 1 or deg_freedom > 10^10, an error is returned.
+- If `deg_freedom` < 1 or `deg_freedom` > 10^10, an error is returned.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 

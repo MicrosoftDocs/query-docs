@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ISONORAFTER"
-title: "ISONORAFTER function (DAX) | Microsoft Docs"
+title: "ISONORAFTER function (DAX)"
 ---
 # ISONORAFTER
 
@@ -20,8 +20,8 @@ ISONORAFTER(<scalar_expression>, <scalar_expression>[, sort_order [, <scalar_exp
   
 |Term|Definition|  
 |--------|--------------|  
-|scalar expression|Any expression that returns a scalar value like a column reference or integer or string value. Typically the first parameter is a column reference and the second parameter is a scalar value.|  
-|sort order|(optional) The order in which the column is sorted. Can be ascending (ASC) or descending (DESC). By default the sort order is ascending.|  
+|`scalar expression`|Any expression that returns a scalar value like a column reference or integer or string value. Typically the first parameter is a column reference and the second parameter is a scalar value.|  
+|`sort order`|(optional) The order in which the column is sorted. Can be ascending (ASC) or descending (DESC). By default the sort order is ascending.|  
   
 ## Return value
 

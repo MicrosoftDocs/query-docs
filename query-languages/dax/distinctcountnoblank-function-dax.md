@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DISTINCTCOUNTNOBLANK"
-title: "DISTINCTCOUNTNOBLANK function (DAX) | Microsoft Docs"
+title: "DISTINCTCOUNTNOBLANK function (DAX)"
 ---
 # DISTINCTCOUNTNOBLANK
 
@@ -18,11 +18,11 @@ DISTINCTCOUNTNOBLANK(<column>)
 
 |Term  |Description|  
 |---------|---------|
-|column     | The column that contains the values to be counted |
+|`column`| The column that contains the values to be counted |
 
 ## Return value
 
-The number of distinct values in *column*.  
+The number of distinct values in `column`.  
   
 ## Remarks  
 

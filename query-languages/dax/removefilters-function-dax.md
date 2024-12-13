@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: REMOVEFILTERS"
-title: "REMOVEFILTERS function (DAX) | Microsoft Docs"
+title: "REMOVEFILTERS function (DAX)"
 ---
 # REMOVEFILTERS
 

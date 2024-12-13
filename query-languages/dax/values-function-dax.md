@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: VALUES"
-title: "VALUES function (DAX) | Microsoft Docs"
+title: "VALUES function (DAX)"
 ---
 # VALUES
 
@@ -21,7 +21,7 @@ VALUES(<TableNameOrColumnName>)
   
 |Term|Definition|  
 |--------|--------------|  
-|TableName or ColumnName|A column from which unique values are to be returned, or a table from which rows are to be returned.|  
+|`TableName` or `ColumnName`|A column from which unique values are to be returned, or a table from which rows are to be returned.|  
   
 ## Return value
 
@@ -37,7 +37,7 @@ When the input parameter is a column name, a single column table. When the input
 
 ## Related functions
 
-In most scenarios, when the argument is a column name, the results of the VALUES function are identical to those of the **DISTINCT** function. Both functions remove duplicates and return a list of the possible values in the specified column. However, the VALUES function can also return a blank value. This blank value is useful in cases where you are looking up distinct values from a related table, but a value used in the relationship is missing from one table. In database terminology, this is termed a violation of referential integrity. Such mismatches in data can occur when one table is being updated and the related table is not. 
+In most scenarios, when the argument is a column name, the results of the VALUES function are identical to those of the `DISTINCT` function. Both functions remove duplicates and return a list of the possible values in the specified column. However, the VALUES function can also return a blank value. This blank value is useful in cases where you are looking up distinct values from a related table, but a value used in the relationship is missing from one table. In database terminology, this is termed a violation of referential integrity. Such mismatches in data can occur when one table is being updated and the related table is not. 
 
 When the argument is a table name, the result of the VALUES function returns all rows in the specified table plus a blank row, if there is a violation of referential integrity. The DISTINCT function removes duplicate rows and returns unique rows in the specified table.
 

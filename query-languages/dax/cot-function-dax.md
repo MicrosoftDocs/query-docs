@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COT"
-title: "COT function (DAX) | Microsoft Docs"
+title: "COT function (DAX)"
 ---
 # COT
 
@@ -18,7 +18,7 @@ COT (<number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|The angle in radians for which you want the cotangent.|  
+|`number`|The angle in radians for which you want the cotangent.|  
   
 ## Return value
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: USERCULTURE"
-title: "USERCULTURE function (DAX) | Microsoft Docs"
+title: "USERCULTURE function (DAX)"
 ---
 # USERCULTURE
 

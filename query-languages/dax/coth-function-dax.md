@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COTH"
-title: "COTH function (DAX) | Microsoft Docs"
+title: "COTH function (DAX)"
 ---
 # COTH
 
@@ -18,7 +18,7 @@ COTH (<number>)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|The hyperbolic angle in radians for which you want the hyperbolic cotangent.|  
+|`number`|The hyperbolic angle in radians for which you want the hyperbolic cotangent.|  
   
 ## Return value
 

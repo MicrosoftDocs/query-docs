@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SELECTEDVALUE"
-title: "SELECTEDVALUE function | Microsoft Docs"
+title: "SELECTEDVALUE function"
 ---
 # SELECTEDVALUE
 
@@ -18,8 +18,8 @@ SELECTEDVALUE(<columnName>[, <alternateResult>])
   
 |Term|Definition|  
 |----------|--------------|  
-| columnName |The name of an existing column, using standard DAX syntax. It cannot be an expression. |  
-| alternateResult |(Optional) The value returned when the context for columnName has been filtered down to zero or more than one distinct value. When not provided, the default value is BLANK().|
+| `columnName` |The name of an existing column, using standard DAX syntax. It cannot be an expression. |  
+| `alternateResult` |(Optional) The value returned when the context for columnName has been filtered down to zero or more than one distinct value. When not provided, the default value is BLANK().|
 
 ## Return value
 
@@ -51,14 +51,14 @@ Returns the following:
 
 DimProduct[Color]  |[Is Total]  |[Selected Color]
 ---------|---------|---------|
-Black     |  FALSE       |   Black      |
-Blue     |   FALSE      |    Blue     |
-Grey     |  FALSE       |   Grey      |
-Multi     |   FALSE      |   Multi     |
-NA     |   FALSE      |      NA   |
-Red     |  FALSE       |   Red     |
-Silver     |  FALSE       |  Silver   |
-Silver/Black     | FALSE        |   Silver/Black |
-White     |   FALSE      |  White       |
-Yellow    | FALSE        |  Yellow       |
-| | TRUE | No Single Selection|
+Black     |  `FALSE`       |   Black      |
+Blue     |   `FALSE`      |    Blue     |
+Grey     |  `FALSE`       |   Grey      |
+Multi     |   `FALSE`      |   Multi     |
+NA     |   `FALSE`      |      NA   |
+Red     |  `FALSE`       |   Red     |
+Silver     |  `FALSE`       |  Silver   |
+Silver/Black     | `FALSE`        |   Silver/Black |
+White     |   `FALSE`      |  White       |
+Yellow    | `FALSE`        |  Yellow       |
+|``| `TRUE` | No Single Selection|

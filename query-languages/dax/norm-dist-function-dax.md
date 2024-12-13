@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: NORM.DIST"
-title: "NORM.DIST function (DAX) | Microsoft Docs"
+title: "NORM.DIST function (DAX)"
 ---
 # NORM.DIST
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Returns the normal distribution for the specified mean and standard deviation. 
+Returns the normal distribution for the specified mean and standard deviation.
 
 ## Syntax  
   
@@ -18,10 +18,10 @@ NORM.DIST(X, Mean, Standard_dev, Cumulative)
   
 |Term|Definition|  
 |--------|--------------|  
-|X|The value for which you want the distribution.|  
-|Mean |The arithmetic mean of the distribution.|
-|Standard_dev|The standard deviation of the distribution.|
-|Cumulative*|A logical value that determines the form of the function. If cumulative is TRUE, NORM.DIST returns the cumulative distribution function; if FALSE, it returns the probability density function.|
+|`X`|The value for which you want the distribution.|  
+|`Mean`|The arithmetic mean of the distribution.|
+|`Standard_dev`|The standard deviation of the distribution.|
+|`Cumulative*`|A logical value that determines the form of the function. If cumulative is `TRUE`, NORM.DIST returns the cumulative distribution function; if `FALSE`, it returns the probability density function.|
   
 ## Return value
 
@@ -42,7 +42,6 @@ Returns
 |[Value]  |
 |---------|
 |0.908788780274132     |
-
 
 ## Related content  
 

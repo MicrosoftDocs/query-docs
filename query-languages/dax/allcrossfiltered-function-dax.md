@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ALLCROSSFILTERED"
-title: "ALLCROSSFILTERED function (DAX) | Microsoft Docs"
+title: "ALLCROSSFILTERED function (DAX)"
 ---
 # ALLCROSSFILTERED
 
@@ -18,7 +18,7 @@ ALLCROSSFILTERED(<table>)
   
 |Term|Definition|  
 |--------|--------------|  
-|table|The table that you want to clear filters on. |  
+|`table`|The table that you want to clear filters on. |  
   
 ## Return value  
 

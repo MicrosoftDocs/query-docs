@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: LASTDATE"
-title: "LASTDATE function (DAX) | Microsoft Docs"
+title: "LASTDATE function (DAX)"
 ---
 # LASTDATE
 
@@ -18,7 +18,7 @@ LASTDATE(<dates>)
   
 |Term|Definition|  
 |--------|--------------|  
-|dates|A column that contains dates.|  
+|`dates`|A column that contains dates.|  
   
 ## Return value
 
@@ -26,7 +26,7 @@ A table containing a single column and single row with a date value.
   
 ## Remarks
 
-- The **dates** argument can be any of the following:   
+- The `dates` argument can be any of the following:   
   - A reference to a date/time column,  
   - A table expression that returns a single column of date/time values,  
   - A Boolean expression that defines a single-column table of date/time values.  

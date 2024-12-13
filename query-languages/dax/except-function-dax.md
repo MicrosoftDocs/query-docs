@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: EXCEPT"
-title: "EXCEPT function (DAX) | Microsoft Docs"
+title: "EXCEPT function (DAX)"
 ---
 # EXCEPT
 
@@ -18,7 +18,7 @@ EXCEPT(<table_expression1>, <table_expression2>)
   
 |Term|Definition|  
 |--------|--------------|  
-|Table_expression|Any DAX expression that returns a table.|  
+|`Table_expression`|Any DAX expression that returns a table.|  
   
 ## Return value
 

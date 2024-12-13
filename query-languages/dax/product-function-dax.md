@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: PRODUCT"
-title: "PRODUCT function (DAX) | Microsoft Docs"
+title: "PRODUCT function (DAX)"
 ---
 # PRODUCT
 
@@ -18,7 +18,7 @@ PRODUCT(<column>)
   
 |Term|Definition|  
 |--------|--------------|  
-|column|The column that contains the numbers for which the product is to be computed.|  
+|`column`|The column that contains the numbers for which the product is to be computed.|  
   
 ## Return value
 

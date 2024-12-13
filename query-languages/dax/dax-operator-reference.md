@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: DAX operators"
-title: "DAX operators | Microsoft Docs"
+title: "DAX operators"
 ms.topic: conceptual
 ---
 # DAX operators
@@ -17,48 +17,48 @@ To perform basic mathematical operations such as addition, subtraction, or multi
   
 |Arithmetic operator|Meaning|Example|  
 |-----------------------|-----------|-----------|  
-|+ (plus sign)|Addition|3+3|  
-|– (minus sign)|Subtraction or sign|3–1–1|  
-|* (asterisk)|Multiplication|3*3|  
-|/ (forward slash)|Division|3/3|  
-|^ (caret)|Exponentiation|16^4|  
+|`+` (plus sign)|Addition|`3+3`|  
+|`-` (minus sign)|Subtraction or sign|`3-1-1`|  
+|`*` (asterisk)|Multiplication|`3*3`|  
+|`/` (forward slash)|Division|`3/3`|  
+|`^` (caret)|Exponentiation|`16^4`|  
   
 > [!NOTE]  
 > The plus sign can function both as a *binary operator* and as a *unary operator*. A binary operator requires numbers on both sides of the operator and performs addition. When you use values in a DAX formula on both sides of the binary operator, DAX tries to cast the values to numeric data types if they are not already numbers. In contrast, the unary operator can be applied to any type of argument. The plus symbol does not affect the type or value and is simply ignored, whereas the minus operator creates a negative value, if applied to a numeric value.  
   
 ### Comparison operators
 
-You can compare two values with the following operators. When two values are compared by using these operators, the result is a logical value, either TRUE or FALSE.  
+You can compare two values with the following operators. When two values are compared by using these operators, the result is a logical value, either `TRUE` or `FALSE`.  
   
 |Comparison operator|Meaning|Example|  
 |-----------------------|-----------|-----------|  
-|=|Equal to|[Region] = "USA"| 
-|==|Strict equal to|[Region] == "USA"|  
-|&gt;|Greater than|[Sales Date] &gt; "Jan 2009"|  
-|&lt;|Less than|[Sales Date] &lt; "Jan 1 2009"|  
-|&gt;=|Greater than or equal to|[Amount] &gt;= 20000|  
-|&lt;=|Less than or equal to|[Amount] &lt;= 100|  
-|&lt;&gt;|Not equal to|[Region] &lt;&gt; "USA"| 
+|`=`|Equal to|[Region] = "USA"| 
+|`==`|Strict equal to|[Region] == "USA"|  
+|`>`|Greater than|[Sales Date] &gt; "Jan 2009"|  
+|`<`|Less than|[Sales Date] &lt; "Jan 1 2009"|  
+|`>=`|Greater than or equal to|[Amount] &gt;= 20000|  
+|`<=`|Less than or equal to|[Amount] &lt;= 100|  
+|`<>`|Not equal to|[Region] &lt;&gt; "USA"| 
 
-All comparison operators except == treat BLANK as equal to number 0, empty string "", DATE(1899, 12, 30), or FALSE. As a result, [Column] = 0 will be true when the value of [Column] is either 0 or BLANK. In contrast, [Column] == 0 is true only when the value of [Column] is 0.
+All comparison operators except == treat BLANK as equal to number 0, empty string "", DATE(1899, 12, 30), or `FALSE`. As a result, [Column] = 0 will be true when the value of [Column] is either 0 or BLANK. In contrast, [Column] == 0 is true only when the value of [Column] is 0.
 
 ### Text concatenation operator
 
-Use the ampersand (**&**) to join, or concatenate, two or more text strings to produce a single piece of text.  
+Use the ampersand (`&`) to join, or concatenate, two or more text strings to produce a single piece of text.  
   
 |Text operator|Meaning|Example|  
 |-----------------|-----------|-----------|  
-|&amp; (ampersand)|Connects, or concatenates, two values to produce one continuous text value|[Region] &amp; ", " &amp; [City]|  
+|`&` (ampersand)|Connects, or concatenates, two values to produce one continuous text value|`[Region] & ", " & [City]`|  
   
 ### Logical operators
 
-Use logical operators (&amp;&amp;) and (||) to combine expressions to produce a single result.  
+Use logical operators (`&&`) and (`||`) to combine expressions to produce a single result.  
   
 |Text operator|Meaning|Examples|  
 |-----------------|-----------|------------|  
-|&amp;&amp; (double ampersand)|Creates an AND condition between two expressions that each have a Boolean result. If both expressions return TRUE, the combination of the expressions also returns TRUE; otherwise the combination returns FALSE.|([Region] = "France") &amp;&amp; ([BikeBuyer] = "yes"))|  
-|&#124;&#124; (double pipe symbol)|Creates an OR condition between two logical expressions. If either expression returns TRUE, the result is TRUE; only when both expressions are FALSE is the result FALSE.|(([Region] = "France") &#124;&#124; ([BikeBuyer] = "yes"))| 
-|IN|Creates a logical OR condition between each row being compared to a table. Note: the table constructor syntax uses curly braces.|'Product'[Color] IN { "Red", "Blue", "Black" }|   
+|`&&`(double ampersand)|Creates an AND condition between two expressions that each have a Boolean result. If both expressions return `TRUE`, the combination of the expressions also returns `TRUE`; otherwise the combination returns `FALSE`.|`([Region] = "France") && ([BikeBuyer] = "yes"))`|  
+|`||` (double pipe symbol)|Creates an OR condition between two logical expressions. If either expression returns `TRUE`, the result is `TRUE`; only when both expressions are `FALSE` is the result `FALSE`. | `(([Region] = "France") || ([BikeBuyer] = "yes"))`| 
+|`IN`|Creates a logical OR condition between each row being compared to a table. Note: the table constructor syntax uses curly braces.|`'Product'[Color] IN { "Red", "Blue", "Black" }`|
   
 ## Operators and precedence order
 
@@ -76,13 +76,13 @@ If you combine several operators in a single formula, the operations are ordered
   
 |Operator|Description|  
 |------------|---------------|  
-|^|Exponentiation|  
-|–|Sign (as in –1)|  
-|* and /|Multiplication and division|  
-|+ and –|Addition and subtraction|  
-|&amp;|Connects two strings of text (concatenation)|  
-|=,==,<,>,<=,>=,<>,IN|Comparison|  
-|NOT|NOT (unary operator)|  
+|`^`|Exponentiation|  
+|`–`|Sign (such as –1)|  
+|`*` and `/`|Multiplication and division|  
+|`+` and `–`|Addition and subtraction|  
+|`&`|Connects two strings of text (concatenation)|  
+|`=,==,<,>,<=,>=,<>,IN`|Comparison|  
+|`NOT`|`NOT` (unary operator)|  
   
 ### Using parentheses to control calculation order
 
@@ -98,7 +98,7 @@ In contrast, if you use parentheses to change the syntax, the order is changed s
 =(5+2)*3  
 ```
 
-In the following example, the parentheses around the first part of the formula force the calculation to evaluate the expression `(3 + 0.25)` first and then divide the result by the result of the expression, (`3 - 0.25)`.  
+In the following example, the parentheses around the first part of the formula force the calculation to evaluate the expression `(3 + 0.25)` first and then divide the result by the result of the expression, `(3 - 0.25)`.  
   
 ```dax
 =(3 + 0.25)/(3 - 0.25)  

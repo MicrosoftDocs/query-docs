@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: TAN"
-title: "TAN function (DAX) | Microsoft Docs"
+title: "TAN function (DAX)"
 ---
 # TAN
 
@@ -18,7 +18,7 @@ TAN(number)
   
 |Term|Definition|  
 |--------|--------------|  
-|number|Required. The angle in radians for which you want the tangent.|  
+|`number`|Required. The angle in radians for which you want the tangent.|  
   
 ## Return value
 
@@ -32,6 +32,6 @@ If your argument is in degrees, multiply it by PI()/180 or use the RADIANS funct
   
 |Formula|Description|Result|  
 |-----------|---------------|----------|  
-|= TAN(0.785)|Tangent of 0.785 radians (0.99920)|0.99920|  
-|= TAN(45*PI()/180)|Tangent of 45 degrees (1)|1|  
-|= TAN(RADIANS(45))|Tangent of 45 degrees (1)|1|  
+|`= TAN(0.785)`|Tangent of 0.785 radians (0.99920)|0.99920|  
+|`= TAN(45*PI()/180)`|Tangent of 45 degrees (1)|1|  
+|`= TAN(RADIANS(45))`|Tangent of 45 degrees (1)|1|  

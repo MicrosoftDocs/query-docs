@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: HOUR"
-title: "HOUR function (DAX) | Microsoft Docs"
+title: "HOUR function (DAX)"
 ---
 # HOUR
 
@@ -18,7 +18,7 @@ HOUR(<datetime>)
   
 |Term|Definition|  
 |--------|--------------|  
-|datetime|A **datetime** value, such as 16:48:00 or 4:48 PM.|  
+|`datetime`|A `datetime` value, such as 16:48:00 or 4:48 PM.|  
   
 ## Return value
 
@@ -26,9 +26,9 @@ An integer number from 0 to 23.
 
 ## Remarks
 
-- The HOUR function takes as argument the time that contains the hour you want to find. You can supply the time by using a date/time function, an expression that returns a **datetime**, or by typing the value directly in one of the accepted time formats. Times can also be entered as any accepted text representation of a time.  
+- The HOUR function takes as argument the time that contains the hour you want to find. You can supply the time by using a date/time function, an expression that returns a `datetime`, or by typing the value directly in one of the accepted time formats. Times can also be entered as any accepted text representation of a time.  
   
-- When the **datetime** argument is a text representation of the date and time, the function uses the locale and date/time settings of the client computer to understand the text value in order to perform the conversion. Most locales use the colon (:) as the time separator and any input text using colons as time separators will parse correctly. Review your locale settings to understand your results.  
+- When the `datetime` argument is a text representation of the date and time, the function uses the locale and date/time settings of the client computer to understand the text value in order to perform the conversion. Most locales use the colon (:) as the time separator and any input text using colons as time separators will parse correctly. Review your locale settings to understand your results.  
   
 ## Example 1
 

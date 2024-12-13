@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: GENERATE"
-title: "GENERATE  function (DAX) | Microsoft Docs"
+title: "GENERATE  function (DAX)"
 ---
 # GENERATE
 
@@ -18,8 +18,8 @@ GENERATE(<table1>, <table2>)
 
 |Term|Definition|  
 |--------|--------------|  
-|table1|Any DAX expression that returns a table. |  
-|table2|Any DAX expression that returns a table. |  
+|`table1`|Any DAX expression that returns a table. |  
+|`table2`|Any DAX expression that returns a table. |  
 
 ## Return value
 

@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: SAMEPERIODLASTYEAR"
-title: "SAMEPERIODLASTYEAR function (DAX) | Microsoft Docs"
+title: "SAMEPERIODLASTYEAR function (DAX)"
 ---
 # SAMEPERIODLASTYEAR
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns a table that contains a column of dates shifted one year back in time from the dates in the specified **dates** column, in the current context.  
+Returns a table that contains a column of dates shifted one year back in time from the dates in the specified `dates` column, in the current context.  
   
 ## Syntax  
   
@@ -18,7 +18,7 @@ SAMEPERIODLASTYEAR(<dates>)
   
 |Term|Definition|  
 |--------|--------------|  
-|**dates**|A column containing dates.|  
+|`dates`|A column containing dates.|  
   
 ## Return value
 
@@ -26,7 +26,7 @@ A single-column table of date values.
   
 ## Remarks
 
-- The **dates** argument can be any of the following:  
+- The `dates` argument can be any of the following:  
   - A reference to a date/time column,  
   - A table expression that returns a single column of date/time values,  
   - A Boolean expression that defines a single-column table of date/time values.  

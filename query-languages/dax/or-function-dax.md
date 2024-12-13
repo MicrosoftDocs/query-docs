@@ -1,13 +1,13 @@
 ---
 description: "Learn more about: OR"
-title: "OR function (DAX) | Microsoft Docs"
+title: "OR function (DAX)"
 ---
 
 # OR
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Checks whether one of the arguments is TRUE to return TRUE. The function returns FALSE if both arguments are FALSE.  
+Checks whether one of the arguments is `TRUE` to return `TRUE`. The function returns `FALSE` if both arguments are `FALSE`.  
   
 ## Syntax  
   
@@ -19,17 +19,17 @@ OR(<logical1>,<logical2>)
   
 |Term|Definition|  
 |--------|--------------|  
-|logical_1, logical_2|The logical values you want to test.|  
+|`logical_1, logical_2`|The logical values you want to test.|  
   
 ## Return value
 
-A Boolean value. The value is TRUE if any of the two arguments is TRUE; the value is FALSE if both the arguments are FALSE.  
+A Boolean value. The value is `TRUE` if any of the two arguments is `TRUE`; the value is FALSE if both the arguments are `FALSE`.  
   
 ## Remarks
 
-- The **OR** function in DAX accepts only two (2) arguments. If you need to perform an OR operation on multiple expressions, you can create a series of calculations or, better, use the OR operator (**||**) to join all of them in a simpler expression.  
+- The `OR` function in DAX accepts only two (2) arguments. If you need to perform an OR operation on multiple expressions, you can create a series of calculations or, better, use the OR operator (**||**) to join all of them in a simpler expression.  
   
-- The function evaluates the arguments until the first TRUE argument, then returns TRUE.  
+- The function evaluates the arguments until the first `TRUE` argument, then returns `TRUE`.  
   
 ## Example
 

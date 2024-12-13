@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: REPLACE"
-title: "REPLACE function (DAX) | Microsoft Docs"
+title: "REPLACE function (DAX)"
 ---
 # REPLACE
 
@@ -18,10 +18,10 @@ REPLACE(<old_text>, <start_num>, <num_chars>, <new_text>)
   
 |Term|Definition|  
 |--------|--------------|  
-|old_text|The string of text that contains the characters you want to replace, or a reference to a column that contains text.|  
-|start_num|The position of the character in **old_text** that you want to replace with **new_text**.|  
-|num_chars|The number of characters that you want to replace. **Warning:** If the argument, *num_chars*, is a blank or references a column that evaluates to a blank, the string for *new_text* is inserted at the position, *start_num*, without replacing any characters. This is the same behavior as in Excel.|  
-|new_text|The replacement text for the specified characters in **old_text**.|  
+|`old_text`|The string of text that contains the characters you want to replace, or a reference to a column that contains text.|  
+|`start_num`|The position of the character in `old_text` that you want to replace with `new_text`.|  
+|`num_chars`|The number of characters that you want to replace. **Warning:** If the argument, `num_chars`, is a blank or references a column that evaluates to a blank, the string for `new_text` is inserted at the position, `start_num`, without replacing any characters. This is the same behavior as in Excel.|  
+|`new_text`|The replacement text for the specified characters in `old_text`.|  
   
 ## Return value
 

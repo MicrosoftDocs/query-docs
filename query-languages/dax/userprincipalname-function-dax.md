@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: USERPRINCIPALNAME"
-title: "USERPRINCIPALNAME function (DAX) | Microsoft Docs"
+title: "USERPRINCIPALNAME function (DAX)"
 ---
 # USERPRINCIPALNAME
 

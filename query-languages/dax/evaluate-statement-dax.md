@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: EVALUATE"
-title: "EVALUATE keyword (DAX) | Microsoft Docs"
+title: "EVALUATE keyword (DAX)"
 ---
 # EVALUATE
   
@@ -16,7 +16,7 @@ EVALUATE <table>
   
 |Term|Definition|  
 |--------|--------------|  
-|table|A table expression|  
+|`table`|A table expression|  
   
 ## Return value
 

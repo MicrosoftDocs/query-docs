@@ -1,5 +1,5 @@
 ---
-title: "DAX Queries | Microsoft Docs"
+title: "DAX Queries"
 description: Describes Data Analysis Expressions (DAX) language queries.
 ms.topic: conceptual
 ---
@@ -27,7 +27,7 @@ There are several optional keywords specific to DAX queries: ORDER BY, START AT,
 
 ### EVALUATE (Required)
 
-At the most basic level, a DAX query is an **EVALUATE** statement containing a table expression. At least one EVALUATE statement is required, however, a query can contain any number of EVALUATE statements.
+At the most basic level, a DAX query is an `EVALUATE` statement containing a table expression. At least one EVALUATE statement is required, however, a query can contain any number of EVALUATE statements.
 
 #### EVALUATE Syntax
   
@@ -39,7 +39,7 @@ EVALUATE <table>
 
 |Term  |Definition  |
 |---------|---------|
-|  table     |   A table expression.  |
+|  `table`     |   A table expression.  |
 
 #### EVALUATE Example
 
@@ -54,9 +54,10 @@ Returns all rows and columns from the Sales Order table, as a result table. This
 
 ### ORDER BY (Optional)
 
-The optional **ORDER BY** keyword defines one or more columns in the query or expressions used to sort query results. Any expression that can be evaluated for each row of the result is valid. Any column in the query itself is also valid.
+The optional `ORDER BY` keyword defines one or more columns in the query or expressions used to sort query results. Any expression that can be evaluated for each row of the result is valid. Any column in the query itself is also valid.
 
 Sort by column property in semantic models do not apply to DAX query results. If a column should be sorted by a different column in the model, such as in the case of Month Name, the sort by column should also be included in the DAX query to be used in the ORDER BY.
+
 
 #### ORDER BY Syntax
 
@@ -69,9 +70,9 @@ EVALUATE <table>
 
 |Term  |Definition  |
 |---------|---------|
-|  expression     |   Any DAX expression that returns a single scalar value, or column included in the DAX query.  |
-| ASC  | (default) Ascending sort order. |
-| DESC  | Descending sort order. |
+| `expression`     |   Any DAX expression that returns a single scalar value, or column included in the DAX query.  |
+| `ASC`  | (default) Ascending sort order. |
+| `DESC`  | Descending sort order. |
 
 #### ORDER BY Example
 
@@ -128,7 +129,8 @@ Returns the top 100 sales orders sorted by SalesOrderLienKey ascending, then sor
 
 ### START AT (Optional)
 
-The optional **START AT** keyword is used inside an **ORDER BY** clause. It defines the value at which the query results begin. 
+
+The optional `START AT` keyword is used inside an `ORDER BY` clause. It defines the value at which the query results begin.
 
 #### START AT Syntax
 
@@ -142,8 +144,8 @@ EVALUATE <table>
 
 |Term  |Definition  |
 |---------|---------|
-|  value     |   A constant value. Cannot be an expression.  |
-|  parameter     |   The name of a parameter in an XMLA statement prefixed with an `@` character.  |
+|  `value`   |   A constant value. Cannot be an expression.  |
+|  `parameter`     |   The name of a parameter in an XMLA statement prefixed with an `@` character.  |
 
 #### START AT Remarks
   
@@ -165,11 +167,11 @@ Returns all columns from the Sales Order table, in ascending order by Sales Orde
 
 ### DEFINE (Optional)
 
-The optional **DEFINE** keyword introduces one or more calculated entity definitions that exist only for the duration of the query. Unlike EVALUATE, there can only be one DEFINE block with one or more definitions in a DAX query. DEFINE must precede the first EVALUATE statement and are valid for all EVALUATE statements in the query. Definitions can be variables, measures, tables<sup>[1](#not-rec)</sup>, and columns<sup>[1](#not-rec)</sup>. Definitions can reference other definitions that appear before or after the current definition. At least one definition is required if the DEFINE keyword is included in a query.
+The optional `DEFINE` keyword introduces one or more calculated entity definitions that exist only for the duration of the query. Unlike `EVALUATE`, there can only be one `DEFINE` block with one or more definitions in a DAX query. `DEFINE` must precede the first `EVALUATE` statement and are valid for all EVALUATE statements in the query. Definitions can be variables, measures, tables<sup>[1](#not-rec)</sup>, and columns<sup>[1](#not-rec)</sup>. Definitions can reference other definitions that appear before or after the current definition. At least one definition is required if the `DEFINE` keyword is included in a query.
 
-**DEFINE MEASURE** is a common scenario to build new measures or edit existing measures in a semantic model. When the measure already exists in the model, the DAX query will use the measure DAX formula defined in the query. This is helpful for testing measures with a DAX query before updating the model. 
+`DEFINE MEASURE` is a common scenario to build new measures or edit existing measures in a semantic model. When the measure already exists in the model, the DAX query will use the measure DAX formula defined in the query. This is helpful for testing measures with a DAX query before updating the model. 
 
-**DEFINE MEASURE** is also helpful to build additional analysis with DAX formulas for a specific DAX query where you may not have permission to add a model measure or it is not necessary to have it in the model. 
+`DEFINE MEASURE` is also helpful to build additional analysis with DAX formulas for a specific DAX query where you may not have permission to add a model measure or it is not necessary to have it in the model. 
 
 #### DEFINE Syntax
 
@@ -190,9 +192,9 @@ The optional **DEFINE** keyword introduces one or more calculated entity definit
 
 |Term|Definition|  
 |--------|--------------|  
-|Entity|MEASURE, VAR, TABLE<sup>[1](#not-rec)</sup>, or COLUMN<sup>[1](#not-rec)</sup>. |
-|name|The name of a measure, var, table, or column definition. It cannot be an expression. The name does not have to be unique. The name exists only for the duration of the query.|  
-|expression|Any DAX expression that returns a table or scalar value. The expression can use any of the defined entities. If there is a need to convert a scalar expression into a table expression, wrap the expression inside a table constructor with curly braces `{}`, or use the `ROW()` function to return a single row table.|  
+|`Entity`|MEASURE, VAR, TABLE<sup>[1](#not-rec)</sup>, or COLUMN<sup>[1](#not-rec)</sup>. |
+|`name`|The name of a measure, var, table, or column definition. It cannot be an expression. The name does not have to be unique. The name exists only for the duration of the query.|  
+|`expression`|Any DAX expression that returns a table or scalar value. The expression can use any of the defined entities. If there is a need to convert a scalar expression into a table expression, wrap the expression inside a table constructor with curly braces `{}`, or use the `ROW()` function to return a single row table.|  
 
 <a name="not-rec">[1]</a> **Caution:** Query scoped TABLE and COLUMN definitions are meant for internal use only. While you can define TABLE and COLUMN expressions for a query without syntax error, they may produce runtime errors and are not recommended.
 
@@ -264,8 +266,8 @@ The [Execute Method (XMLA)](/analysis-services/xmla/xml-elements-methods-execute
 Reference XMLA parameters by prefixing the name of the parameter with an `@` character. Any place in the syntax where a value is allowed, the value can be replaced with a parameter call. All XMLA parameters are typed as text.  
   
 > [!IMPORTANT]
-> Parameters defined in the parameters section and not used in the **\<STATEMENT>** element generate an error response in XMLA.
-> Parameters used and not defined in the **\<Parameters>** element generate an error response in XMLA.
+> Parameters defined in the parameters section and not used in the `<STATEMENT>` element generate an error response in XMLA.
+> Parameters used and not defined in the `<Parameters>` element generate an error response in XMLA.
   
 ## Related content
 

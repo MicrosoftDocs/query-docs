@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: ISNONTEXT"
-title: "ISNONTEXT function (DAX) | Microsoft Docs"
+title: "ISNONTEXT function (DAX)"
 ---
 # ISNONTEXT
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Checks if a value is not text (blank cells are not text), and returns TRUE or FALSE.  
+Checks if a value is not text (blank cells are not text), and returns `TRUE` or `FALSE`.  
   
 ## Syntax  
   
@@ -18,11 +18,11 @@ ISNONTEXT(<value>)
   
 |Term|Definition|  
 |--------|--------------|  
-|value|The value you want to check.|  
+|`value`|The value you want to check.|  
   
 ## Return value
 
-TRUE if the value is not text or blank; FALSE if the value is text.  
+`TRUE` if the value is not text or blank; `FALSE` if the value is text.  
   
 ## Remarks
 
