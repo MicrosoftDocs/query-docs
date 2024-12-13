@@ -165,7 +165,7 @@ Returns all columns from the Sales Order table, in ascending order by Sales Orde
 
 ### DEFINE (Optional)
 
-The optional **DEFINE** keyword introduces one or more calculated entity definitions that exist only for the duration of the query. Unlike EVALUATE, there can only be one DEFINE block with one or more definitions in a DAX query. DEFINE must precede the first EVALUATE statement and are valid for all EVALUATE statements in the query. Definitions can be variables, measures, tables<sup>[1](#not-rec)</sup>, and columns<sup>[1](#not-rec)</sup>.Definitions can reference other definitions that appear before or after the current definition. At least one definition is required if the DEFINE keyword is included in a query.
+The optional **DEFINE** keyword introduces one or more calculated entity definitions that exist only for the duration of the query. Unlike EVALUATE, there can only be one DEFINE block with one or more definitions in a DAX query. DEFINE must precede the first EVALUATE statement and are valid for all EVALUATE statements in the query. Definitions can be variables, measures, tables<sup>[1](#not-rec)</sup>, and columns<sup>[1](#not-rec)</sup>. Definitions can reference other definitions that appear before or after the current definition. At least one definition is required if the DEFINE keyword is included in a query.
 
 **DEFINE MEASURE** is a common scenario to build new measures or edit existing measures in a semantic model. When the measure already exists in the model, the DAX query will use the measure DAX formula defined in the query. This is helpful for testing measures with a DAX query before updating the model. 
 
@@ -223,7 +223,7 @@ EVALUATE
 	{[Unbought products]}
 ```
 
-Returns the table defined in the DAX query to show unbought products with an additional defined column referencing defined variables. A measures is also defined and evulated counting the rows of unbought products.
+Returns the table defined in the DAX query to show unbought products with an additional defined column referencing defined variables. A measure is also defined and evaluated to count the rows of unbought products.
 
 :::image type="content" source="media/dax-queries/dax-evaluate-define.png" alt-text="Screenshot showing how to use DEFINE for a DAX query in DAX query view of Power BI Desktop." lightbox="media/dax-queries/dax-evaluate-define.png":::
 
