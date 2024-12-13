@@ -16,7 +16,7 @@ ACOS(number)
   
 ### Parameters  
   
-|`Term`|Definition|  
+|Term|Definition|  
 |--------|--------------|  
 |`Number`|The cosine of the angle you want and must be from -1 to 1.|  
   
