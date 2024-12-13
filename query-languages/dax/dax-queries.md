@@ -39,7 +39,7 @@ EVALUATE <table>
 
 |Term  |Definition  |
 |---------|---------|
-|  table     |   A table expression.  |
+|  `table`     |   A table expression.  |
 
 #### EVALUATE Example
 
@@ -70,9 +70,9 @@ EVALUATE <table>
 
 |Term  |Definition  |
 |---------|---------|
-|  expression     |   Any DAX expression that returns a single scalar value, or column included in the DAX query.  |
-| ASC  | (default) Ascending sort order. |
-| DESC  | Descending sort order. |
+| `expression`     |   Any DAX expression that returns a single scalar value, or column included in the DAX query.  |
+| `ASC`  | (default) Ascending sort order. |
+| `DESC`  | Descending sort order. |
 
 #### ORDER BY Example
 
@@ -144,8 +144,8 @@ EVALUATE <table>
 
 |Term  |Definition  |
 |---------|---------|
-|  value     |   A constant value. Cannot be an expression.  |
-|  parameter     |   The name of a parameter in an XMLA statement prefixed with an `@` character.  |
+|  `value`   |   A constant value. Cannot be an expression.  |
+|  `parameter`     |   The name of a parameter in an XMLA statement prefixed with an `@` character.  |
 
 #### START AT Remarks
   
