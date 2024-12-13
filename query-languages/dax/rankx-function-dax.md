@@ -53,7 +53,7 @@ The rank number of `value` among all possible values of `expression` evaluated f
   
 - If `value` is not among all possible values of `expression` then RANKX temporarily adds `value` to the values from `expression` and re-evaluates RANKX to determine the proper rank of `value`.  
   
-- Optional arguments might be skipped by placing an empty comma (,) in the argument list, i.e. RANKX(Inventory, [InventoryCost],,,"Dense")  
+- Optional arguments might be skipped by placing an empty comma (,) in the argument list, such as `RANKX(Inventory, [InventoryCost],,,"Dense")`.
 
 - Equality related comparisons (`=`, `<`, `>`, `>=` and `<=`) between values with the *Decimal Number* data type can potentially return unexpected results when using RANKX function. Incorrect results can occur because values with *Decimal Number* data type are stored as IEEE Standard 754 floating point numbers and have inherent limitations in their precision. To avoid unexpected results, change the data type to *Fixed Decimal Number* or do a forced rounding using [ROUND](/dax/round-function-dax).
 
