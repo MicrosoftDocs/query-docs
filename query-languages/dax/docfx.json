@@ -50,7 +50,7 @@
       "ms.date": "10/20/2023",
       "show_latex": true,
       "contributors_to_exclude": [ "mikekinsman" ],
-      "noloc": [
+      "no-loc": [
         "ABS",
         "ACCRINT",
         "ACCRINTM",
