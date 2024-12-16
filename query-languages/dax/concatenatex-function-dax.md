@@ -29,7 +29,7 @@ The optional `order` parameter accepts the following values:
 |Value|Alternate Values|Description|
 |-----|-----|-----|
 |0 (zero)|`FALSE`, DESC|Sorts in descending order of values of `orderBy_expression`. This is the default value when the `order` parameter is omitted.|
-|1|`TRUE`, ASC|Sorts in ascending order of values of `orderBy_expression`.|
+|1|`TRUE`, `ASC`|Sorts in ascending order of values of `orderBy_expression`.|
 
 ## Return value
 
