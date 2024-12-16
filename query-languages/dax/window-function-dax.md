@@ -20,16 +20,16 @@ WINDOW ( from[, from_type], to[, to_type][, <relation> or <axis>][, <orderBy>][,
 |Term|Definition|  
 |--------|--------------|  
 |`from`|Indicates where the window starts. It can be any DAX expression that returns a scalar value. </br>The behavior depends on the `from_type` parameter: </br> - If `from_type` is REL, the number of rows to go back (negative value) or forward (positive value) from the current row to get the first row in the window. </br> - If `from_type` is ABS, and `from` is positive, then it’s the position of the start of the window from beginning of the partition. Indexing is 1-based. For example, 1 means window starts from the beginning of the partition.  If `from` is negative, then it’s the position of the start of the window from the end of the partition. -1 means the last row in the partition.  |
-|from_type |Modifies behavior of the `from` parameter. Possible values are ABS (absolute) and REL (relative). Default is REL.|
+|`from_type` |Modifies behavior of the `from` parameter. Possible values are ABS (absolute) and REL (relative). Default is REL.|
 |`to`|Same as `from`, but indicates the end of the window. The last row is included in the window.|
 |`to_type`|Same as `from_type`, but modifies the behavior of `to`.|
 |`relation`|(Optional) A table expression from which the output rows are returned. </br>If specified, all columns in `partitionBy` must come from it or a related table. </br>If omitted: </br>- `orderBy` must be explicitly specified.</br>- All `orderBy` and `partitionBy` expressions must be fully qualified column names and come from a single table. </br>- Defaults to ALLSELECTED() of all columns in `orderBy` and `partitionBy`.|
 |`axis`|(Optional) An axis in the visual shape. Available in visual calculations only, and replaces `relation`.
 |`orderBy`|(Optional) An ORDERBY() clause containing the expressions that define how each partition is sorted. </br>If omitted: </br>- `relation` must be explicitly specified. </br>- Defaults to ordering by every column in `relation` that is not already specified in `partitionBy`.|
-|`blanks`|(Optional) An enumeration that defines how to handle blank values when sorting. </br>This parameter is reserved for future use. </br>Currently, the only supported value is DEFAULT, where the behavior for numerical values is blank values are ordered between zero and negative values. The behavior for strings is blank values are ordered before all strings, including empty strings.|
+|`blanks`|(Optional) An enumeration that defines how to handle blank values when sorting. </br>This parameter is reserved for future use. </br>Currently, the only supported value is `DEFAULT`,  where the behavior for numerical values is blank values are ordered between zero and negative values. The behavior for strings is blank values are ordered before all strings, including empty strings.|
 |`partitionBy`|(Optional) A PARTITIONBY() clause containing the columns that define how `relation` is partitioned. If omitted, `relation` is treated as a single partition.|
 |`matchBy`|(Optional) A MATCHBY() clause containing the columns that define how to match data and identify the current row. |  
-|`reset`|(Optional) Available in visual calculations only. Indicates if the calculation resets, and at which level of the visual shape's column hierarchy. Accepted values are: NONE, LOWESTPARENT, HIGHESTPARENT, or an integer. The behavior depends on the integer sign: </br> - If zero or omitted, the calculation does not reset. Equivalent to NONE. </br> - If positive, the integer identifies the column starting from the highest, independent of grain. HIGHESTPARENT is equivalent to 1. </br> - If negative, the integer identifies the column starting from the lowest, relative to the current grain. LOWESTPARENT is equivalent to -1. |
+|`reset`|(Optional) Available in visual calculations only. Indicates if the calculation resets, and at which level of the visual shape's column hierarchy. Accepted values are: `NONE`, `LOWESTPARENT`, `HIGHESTPARENT`, or an integer. The behavior depends on the integer sign: </br> - If zero or omitted, the calculation does not reset. Equivalent to `NONE`. </br> - If positive, the integer identifies the column starting from the highest, independent of grain. `HIGHESTPARENT` is equivalent to 1. </br> - If negative, the integer identifies the column starting from the lowest, relative to the current grain. `LOWESTPARENT` is equivalent to -1. |
 
 ## Return value
 
@@ -155,7 +155,7 @@ The following visual calculation DAX query:
 TotalSalesRunningSumByYear = SUMX(WINDOW(0, ABS, 0, REL, ROWS, HIGHESTPARENT), [SalesAmount])
 ```
 
-Returns the cumulative total sales by month, calculated along each year. The values 1 and -2 could be used instead of HIGHESTPARENT, with the same results.
+Returns the cumulative total sales by month, calculated along each year. The values 1 and -2 could be used instead of `HIGHESTPARENT`, with the same results.
 
 The screenshot below shows the visual matrix and the visual calculation expression:
 
