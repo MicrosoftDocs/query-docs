@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Splitter.SplitTextByWhitespace"
 title: "Splitter.SplitTextByWhitespace"
+ms.subservice: m-source
 ---
 # Splitter.SplitTextByWhitespace
 

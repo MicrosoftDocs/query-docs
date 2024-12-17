@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Cube.Parameters"
 title: "Cube.Parameters"
+ms.subservice: m-source
 ---
 # Cube.Parameters
 

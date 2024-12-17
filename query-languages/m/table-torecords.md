@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.ToRecords"
 title: "Table.ToRecords"
+ms.subservice: m-source
 ---
 # Table.ToRecords
 

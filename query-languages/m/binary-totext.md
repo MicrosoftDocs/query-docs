@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Binary.ToText"
 title: "Binary.ToText"
+ms.subservice: m-source
 ---
 # Binary.ToText
 

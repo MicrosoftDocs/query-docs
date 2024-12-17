@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Cube.MeasureProperties"
 title: "Cube.MeasureProperties"
+ms.subservice: m-source
 ---
 # Cube.MeasureProperties
 

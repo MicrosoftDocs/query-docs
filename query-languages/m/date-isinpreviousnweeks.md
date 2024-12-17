@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Date.IsInPreviousNWeeks"
 title: "Date.IsInPreviousNWeeks"
+ms.subservice: m-source
 ---
 # Date.IsInPreviousNWeeks
 

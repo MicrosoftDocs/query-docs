@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: BufferMode.Type"
 title: "BufferMode.Type"
+ms.subservice: m-source
 ---
 # BufferMode.Type
 

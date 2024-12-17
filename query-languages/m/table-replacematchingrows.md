@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.ReplaceMatchingRows"
 title: "Table.ReplaceMatchingRows"
+ms.subservice: m-source
 ---
 # Table.ReplaceMatchingRows
 

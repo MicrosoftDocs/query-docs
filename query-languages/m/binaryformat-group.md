@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.Group"
 title: "BinaryFormat.Group"
+ms.subservice: m-source
 ---
 # BinaryFormat.Group
 

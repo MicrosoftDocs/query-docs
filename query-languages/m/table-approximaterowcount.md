@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.ApproximateRowCount"
 title: "Table.ApproximateRowCount"
+ms.subservice: m-source
 ---
 # Table.ApproximateRowCount
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.IsDistinct"
 title: "Table.IsDistinct"
+ms.subservice: m-source
 ---
 # Table.IsDistinct
 

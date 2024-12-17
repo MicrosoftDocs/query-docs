@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Order.Type"
 title: "Order.Type"
+ms.subservice: m-source
 ---
 # Order.Type
 

@@ -4,6 +4,8 @@ title: "Expressions, values, and let expression"
 ms.topic: conceptual
 ms.date: 7/9/2024
 ms.custom: "nonautomated-date"
+ms.subservice: m-background
+
 ---
 # Expressions, values, and let expression
 

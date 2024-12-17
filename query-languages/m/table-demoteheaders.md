@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.DemoteHeaders"
 title: "Table.DemoteHeaders"
+ms.subservice: m-source
 ---
 # Table.DemoteHeaders
 

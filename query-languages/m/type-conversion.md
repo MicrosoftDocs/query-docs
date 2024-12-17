@@ -4,6 +4,7 @@ title: "Type conversion"
 ms.topic: conceptual
 ms.date: 11/14/2024
 ms.custom: "nonautomated-date"
+ms.subservice: m-background
 ---
 
 # Type conversion

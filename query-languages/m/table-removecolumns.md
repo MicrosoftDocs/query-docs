@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.RemoveColumns"
 title: "Table.RemoveColumns"
+ms.subservice: m-source
 ---
 # Table.RemoveColumns
 

@@ -4,6 +4,7 @@ title: "Understanding Power Query M functions"
 ms.topic: conceptual
 ms.date: 11/14/2024
 ms.custom: "nonautomated-date"
+ms.subservice: m-background
 ---
 
 # Understanding Power Query M functions

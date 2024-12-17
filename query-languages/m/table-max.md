@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.Max"
 title: "Table.Max"
+ms.subservice: m-source
 ---
 # Table.Max
 

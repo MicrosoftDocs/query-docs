@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.Single"
 title: "BinaryFormat.Single"
+ms.subservice: m-source
 ---
 # BinaryFormat.Single
 

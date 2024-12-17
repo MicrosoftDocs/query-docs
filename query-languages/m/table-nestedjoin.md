@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.NestedJoin"
 title: "Table.NestedJoin"
+ms.subservice: m-source
 ---
 # Table.NestedJoin
 

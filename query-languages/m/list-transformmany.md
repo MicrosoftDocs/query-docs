@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.TransformMany"
 title: "List.TransformMany"
+ms.subservice: m-source
 ---
 # List.TransformMany
 

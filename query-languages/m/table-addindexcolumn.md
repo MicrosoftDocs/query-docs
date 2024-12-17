@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.AddIndexColumn"
 title: "Table.AddIndexColumn"
+ms.subservice: m-source
 ---
 # Table.AddIndexColumn
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.BetweenDelimiters"
 title: "Text.BetweenDelimiters"
+ms.subservice: m-source
 ---
 # Text.BetweenDelimiters
 
