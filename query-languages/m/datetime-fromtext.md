@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DateTime.FromText"
 title: "DateTime.FromText"
+ms.subservice: m-source
 ---
 # DateTime.FromText
 

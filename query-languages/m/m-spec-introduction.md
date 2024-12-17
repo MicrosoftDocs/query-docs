@@ -4,6 +4,7 @@ description: Provides an overview of the Power Query M formula language
 ms.topic: overview
 ms.date: 7/21/2023
 ms.custom: "nonautomated-date"
+ms.subservice: m-specification
 ---
 
 # Introduction

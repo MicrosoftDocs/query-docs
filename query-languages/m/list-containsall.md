@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.ContainsAll"
 title: "List.ContainsAll"
+ms.subservice: m-source
 ---
 # List.ContainsAll
 

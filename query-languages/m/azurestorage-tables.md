@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: AzureStorage.Tables"
 title: "AzureStorage.Tables"
+ms.subservice: m-source
 ---
 # AzureStorage.Tables
 

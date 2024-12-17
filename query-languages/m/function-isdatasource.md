@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Function.IsDataSource"
 title: "Function.IsDataSource"
+ms.subservice: m-source
 ---
 # Function.IsDataSource
 

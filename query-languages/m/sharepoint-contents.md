@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SharePoint.Contents"
 title: "SharePoint.Contents"
+ms.subservice: m-source
 ---
 # SharePoint.Contents
 

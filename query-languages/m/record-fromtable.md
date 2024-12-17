@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Record.FromTable"
 title: "Record.FromTable"
+ms.subservice: m-source
 ---
 # Record.FromTable
 

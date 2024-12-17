@@ -5,6 +5,7 @@ author: DougKlopfenstein
 ms-author: dougklo
 ms.date: 10/11/2024
 ms.topic: reference
+ms.subservice: m-background
 ---
 # Standard date and time format strings
 

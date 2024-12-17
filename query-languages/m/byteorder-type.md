@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ByteOrder.Type"
 title: "ByteOrder.Type"
+ms.subservice: m-source
 ---
 # ByteOrder.Type
 

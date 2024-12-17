@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Date.WeekOfYear"
 title: "Date.WeekOfYear"
+ms.subservice: m-source
 ---
 # Date.WeekOfYear
 

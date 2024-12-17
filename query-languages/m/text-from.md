@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.From"
 title: "Text.From"
+ms.subservice: m-source
 ---
 # Text.From
 

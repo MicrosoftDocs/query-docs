@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Random"
 title: "List.Random"
+ms.subservice: m-source
 ---
 # List.Random
 

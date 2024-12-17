@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Type.ClosedRecord"
 title: "Type.ClosedRecord"
+ms.subservice: m-source
 ---
 # Type.ClosedRecord
 

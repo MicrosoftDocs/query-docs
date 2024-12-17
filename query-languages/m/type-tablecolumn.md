@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Type.TableColumn"
 title: "Type.TableColumn"
+ms.subservice: m-source
 ---
 # Type.TableColumn
 

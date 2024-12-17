@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Duration.TotalSeconds"
 title: "Duration.TotalSeconds"
+ms.subservice: m-source
 ---
 # Duration.TotalSeconds
 

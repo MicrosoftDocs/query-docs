@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Type.RecordFields"
 title: "Type.RecordFields"
+ms.subservice: m-source
 ---
 # Type.RecordFields
 

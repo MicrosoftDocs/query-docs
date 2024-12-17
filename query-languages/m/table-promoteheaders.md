@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.PromoteHeaders"
 title: "Table.PromoteHeaders"
+ms.subservice: m-source
 ---
 # Table.PromoteHeaders
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Mode"
 title: "List.Mode"
+ms.subservice: m-source
 ---
 # List.Mode
 

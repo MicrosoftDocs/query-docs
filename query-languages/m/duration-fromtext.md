@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Duration.FromText"
 title: "Duration.FromText"
+ms.subservice: m-source
 ---
 # Duration.FromText
 

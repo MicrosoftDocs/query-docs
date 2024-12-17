@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Binary.Split"
 title: "Binary.Split"
+ms.subservice: m-source
 ---
 # Binary.Split
 

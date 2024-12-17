@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.ColumnCount"
 title: "Table.ColumnCount"
+ms.subservice: m-source
 ---
 # Table.ColumnCount
 

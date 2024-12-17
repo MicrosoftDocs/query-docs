@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.ReplaceRelationshipIdentity"
 title: "Table.ReplaceRelationshipIdentity"
+ms.subservice: m-source
 ---
 # Table.ReplaceRelationshipIdentity
 

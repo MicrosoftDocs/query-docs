@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.Remove"
 title: "Text.Remove"
+ms.subservice: m-source
 ---
 # Text.Remove
 

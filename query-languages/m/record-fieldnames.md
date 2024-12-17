@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Record.FieldNames"
 title: "Record.FieldNames"
+ms.subservice: m-source
 ---
 # Record.FieldNames
 

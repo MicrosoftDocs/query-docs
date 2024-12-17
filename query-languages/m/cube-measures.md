@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Cube.Measures"
 title: "Cube.Measures"
+ms.subservice: m-source
 ---
 # Cube.Measures
 

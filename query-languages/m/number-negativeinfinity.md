@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Number.NegativeInfinity"
 title: "Number.NegativeInfinity"
+ms.subservice: m-source
 ---
 # Number.NegativeInfinity
 

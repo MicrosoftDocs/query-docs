@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.Range"
 title: "Table.Range"
+ms.subservice: m-source
 ---
 # Table.Range
 
