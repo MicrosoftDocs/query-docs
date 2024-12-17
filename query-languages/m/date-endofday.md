@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Date.EndOfDay"
 title: "Date.EndOfDay"
+ms.subservice: m-source
 ---
 # Date.EndOfDay
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Precision.Type"
 title: "Precision.Type"
+ms.subservice: m-source
 ---
 # Precision.Type
 

@@ -4,6 +4,7 @@ title: "Quick tour"
 ms.date: 12/22/2023
 ms.custom: nonautomated-date, intro-internal
 ms.topic: conceptual
+ms.subservice: m-background
 ---
 # Quick tour of the Power Query M formula language
 

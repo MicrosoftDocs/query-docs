@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Number.BitwiseOr"
 title: "Number.BitwiseOr"
+ms.subservice: m-source
 ---
 # Number.BitwiseOr
 

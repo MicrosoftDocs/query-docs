@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.RemoveMatchingRows"
 title: "Table.RemoveMatchingRows"
+ms.subservice: m-source
 ---
 # Table.RemoveMatchingRows
 

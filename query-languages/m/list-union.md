@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Union"
 title: "List.Union"
+ms.subservice: m-source
 ---
 # List.Union
 

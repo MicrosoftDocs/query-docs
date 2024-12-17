@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.Upper"
 title: "Text.Upper"
+ms.subservice: m-source
 ---
 # Text.Upper
 

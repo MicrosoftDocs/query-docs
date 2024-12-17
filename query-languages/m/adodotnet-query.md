@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: AdoDotNet.Query"
 title: "AdoDotNet.Query"
+ms.subservice: m-source
 ---
 # AdoDotNet.Query
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Value.RemoveMetadata"
 title: "Value.RemoveMetadata"
+ms.subservice: m-source
 ---
 # Value.RemoveMetadata
 

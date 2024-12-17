@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.ContainsAny"
 title: "Table.ContainsAny"
+ms.subservice: m-source
 ---
 # Table.ContainsAny
 

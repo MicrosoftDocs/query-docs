@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Type.Is"
 title: "Type.Is"
+ms.subservice: m-source
 ---
 # Type.Is
 

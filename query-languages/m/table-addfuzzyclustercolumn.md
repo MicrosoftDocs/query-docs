@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.AddFuzzyClusterColumn"
 title: "Table.AddFuzzyClusterColumn"
+ms.subservice: m-source
 ---
 # Table.AddFuzzyClusterColumn
 

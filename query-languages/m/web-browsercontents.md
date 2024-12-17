@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Web.BrowserContents"
 title: "Web.BrowserContents"
+ms.subservice: m-source
 ---
 # Web.BrowserContents
 

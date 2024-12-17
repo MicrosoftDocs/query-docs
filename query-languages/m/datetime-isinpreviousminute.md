@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DateTime.IsInPreviousMinute"
 title: "DateTime.IsInPreviousMinute"
+ms.subservice: m-source
 ---
 # DateTime.IsInPreviousMinute
 

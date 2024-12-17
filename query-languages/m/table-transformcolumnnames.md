@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.TransformColumnNames"
 title: "Table.TransformColumnNames"
+ms.subservice: m-source
 ---
 # Table.TransformColumnNames
 

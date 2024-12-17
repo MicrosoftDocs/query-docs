@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.ReplaceValue"
 title: "Table.ReplaceValue"
+ms.subservice: m-source
 ---
 # Table.ReplaceValue
 

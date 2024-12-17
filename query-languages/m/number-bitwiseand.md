@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Number.BitwiseAnd"
 title: "Number.BitwiseAnd"
+ms.subservice: m-source
 ---
 # Number.BitwiseAnd
 

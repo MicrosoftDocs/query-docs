@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.FromPartitions"
 title: "Table.FromPartitions"
+ms.subservice: m-source
 ---
 # Table.FromPartitions
 

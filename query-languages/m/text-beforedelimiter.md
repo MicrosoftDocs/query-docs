@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.BeforeDelimiter"
 title: "Text.BeforeDelimiter"
+ms.subservice: m-source
 ---
 # Text.BeforeDelimiter
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Comparer.Equals"
 title: "Comparer.Equals"
+ms.subservice: m-source
 ---
 # Comparer.Equals
 

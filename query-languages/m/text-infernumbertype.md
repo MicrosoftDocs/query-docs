@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.InferNumberType"
 title: "Text.InferNumberType"
+ms.subservice: m-source
 ---
 # Text.InferNumberType
 

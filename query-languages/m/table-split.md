@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.Split"
 title: "Table.Split"
+ms.subservice: m-source
 ---
 # Table.Split
 

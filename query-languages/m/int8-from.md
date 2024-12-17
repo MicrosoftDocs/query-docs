@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Int8.From"
 title: "Int8.From"
+ms.subservice: m-source
 ---
 # Int8.From
 

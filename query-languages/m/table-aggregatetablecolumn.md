@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.AggregateTableColumn"
 title: "Table.AggregateTableColumn"
+ms.subservice: m-source
 ---
 # Table.AggregateTableColumn
 

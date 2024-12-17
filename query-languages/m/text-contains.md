@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.Contains"
 title: "Text.Contains"
+ms.subservice: m-source
 ---
 # Text.Contains
 
