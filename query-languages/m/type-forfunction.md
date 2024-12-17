@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Type.ForFunction"
 title: "Type.ForFunction"
+ms.subservice: m-source
 ---
 # Type.ForFunction
 

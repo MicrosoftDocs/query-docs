@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.FuzzyJoin"
 title: "Table.FuzzyJoin"
+ms.subservice: m-source
 ---
 # Table.FuzzyJoin
   

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.SplitAny"
 title: "Text.SplitAny"
+ms.subservice: m-source
 ---
 # Text.SplitAny
 

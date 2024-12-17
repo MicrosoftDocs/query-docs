@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SapHanaRangeOperator.Type"
 title: "SapHanaRangeOperator.Type"
+ms.subservice: m-source
 ---
 # SapHanaRangeOperator.Type
 

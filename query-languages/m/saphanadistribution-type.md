@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SapHanaDistribution.Type"
 title: "SapHanaDistribution.Type"
+ms.subservice: m-source
 ---
 # SapHanaDistribution.Type
 

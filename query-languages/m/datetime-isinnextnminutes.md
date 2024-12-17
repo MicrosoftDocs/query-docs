@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DateTime.IsInNextNMinutes"
 title: "DateTime.IsInNextNMinutes"
+ms.subservice: m-source
 ---
 # DateTime.IsInNextNMinutes
 

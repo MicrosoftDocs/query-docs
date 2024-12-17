@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Splitter.SplitTextByPositions"
 title: "Splitter.SplitTextByPositions"
+ms.subservice: m-source
 ---
 # Splitter.SplitTextByPositions
 

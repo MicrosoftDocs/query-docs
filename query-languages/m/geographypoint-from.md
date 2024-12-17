@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: GeographyPoint.From"
 title: "GeographyPoint.From"
+ms.subservice: m-source
 ---
 # GeographyPoint.From
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DateTime.IsInNextHour"
 title: "DateTime.IsInNextHour"
+ms.subservice: m-source
 ---
 # DateTime.IsInNextHour
 

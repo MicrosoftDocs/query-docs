@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Exchange.Contents"
 title: "Exchange.Contents"
+ms.subservice: m-source
 ---
 # Exchange.Contents
 

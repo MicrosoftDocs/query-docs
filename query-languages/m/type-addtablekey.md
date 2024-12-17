@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Type.AddTableKey"
 title: "Type.AddTableKey"
+ms.subservice: m-source
 ---
 # Type.AddTableKey
 

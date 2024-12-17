@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.ReplaceRows"
 title: "Table.ReplaceRows"
+ms.subservice: m-source
 ---
 # Table.ReplaceRows
 

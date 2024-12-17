@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.CombineColumns"
 title: "Table.CombineColumns"
+ms.subservice: m-source
 ---
 # Table.CombineColumns
 

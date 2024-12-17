@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.AnyTrue"
 title: "List.AnyTrue"
+ms.subservice: m-source
 ---
 # List.AnyTrue
 

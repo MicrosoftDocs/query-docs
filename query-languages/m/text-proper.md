@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.Proper"
 title: "Text.Proper"
+ms.subservice: m-source
 ---
 # Text.Proper
 

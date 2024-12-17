@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.AddColumn"
 title: "Table.AddColumn"
+ms.subservice: m-source
 ---
 # Table.AddColumn
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: RowExpression.Column"
 title: "RowExpression.Column"
+ms.subservice: m-source
 ---
 # RowExpression.Column
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.FuzzyNestedJoin"
 title: "Table.FuzzyNestedJoin"
+ms.subservice: m-source
 ---
 # Table.FuzzyNestedJoin
   

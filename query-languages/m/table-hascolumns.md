@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.HasColumns"
 title: "Table.HasColumns"
+ms.subservice: m-source
 ---
 # Table.HasColumns
 

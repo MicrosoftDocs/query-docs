@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Skip"
 title: "List.Skip"
+ms.subservice: m-source
 ---
 # List.Skip
 

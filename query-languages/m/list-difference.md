@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Difference"
 title: "List.Difference"
+ms.subservice: m-source
 ---
 # List.Difference
 
