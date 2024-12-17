@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Value.FromText"
 title: "Value.FromText"
+ms.subservice: m-source
 ---
 # Value.FromText
 

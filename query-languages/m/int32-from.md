@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Int32.From"
 title: "Int32.From"
+ms.subservice: m-source
 ---
 # Int32.From
 

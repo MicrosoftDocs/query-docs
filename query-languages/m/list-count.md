@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Count"
 title: "List.Count"
+ms.subservice: m-source
 ---
 # List.Count
 

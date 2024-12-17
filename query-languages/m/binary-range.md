@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Binary.Range"
 title: "Binary.Range"
+ms.subservice: m-source
 ---
 # Binary.Range
 

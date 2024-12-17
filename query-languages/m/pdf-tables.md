@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Pdf.Tables"
 title: "Pdf.Tables"
+ms.subservice: m-source
 ---
 # Pdf.Tables
 

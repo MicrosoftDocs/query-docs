@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.Partition"
 title: "Table.Partition"
+ms.subservice: m-source
 ---
 # Table.Partition
 

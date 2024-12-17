@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DateTime.IsInCurrentSecond"
 title: "DateTime.IsInCurrentSecond"
+ms.subservice: m-source
 ---
 # DateTime.IsInCurrentSecond
 

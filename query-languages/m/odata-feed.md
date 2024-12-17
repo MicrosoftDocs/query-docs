@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: OData.Feed"
 title: "OData.Feed"
+ms.subservice: m-source
 ---
 # OData.Feed
 

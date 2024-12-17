@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.RemoveFirstN"
 title: "List.RemoveFirstN"
+ms.subservice: m-source
 ---
 # List.RemoveFirstN
 

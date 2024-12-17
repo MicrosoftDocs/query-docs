@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Number.Tanh"
 title: "Number.Tanh"
+ms.subservice: m-source
 ---
 # Number.Tanh
 

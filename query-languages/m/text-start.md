@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.Start"
 title: "Text.Start"
+ms.subservice: m-source
 ---
 # Text.Start
 

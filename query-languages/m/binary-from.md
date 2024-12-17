@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Binary.From"
 title: "Binary.From"
+ms.subservice: m-source
 ---
 # Binary.From
 

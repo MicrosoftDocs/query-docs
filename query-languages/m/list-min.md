@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Min"
 title: "List.Min"
+ms.subservice: m-source
 ---
 # List.Min
 

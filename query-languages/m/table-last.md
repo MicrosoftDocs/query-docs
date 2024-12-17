@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.Last"
 title: "Table.Last"
+ms.subservice: m-source
 ---
 # Table.Last
 

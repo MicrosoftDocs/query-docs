@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.FromRows"
 title: "Table.FromRows"
+ms.subservice: m-source
 ---
 # Table.FromRows
 

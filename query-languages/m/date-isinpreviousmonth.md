@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Date.IsInPreviousMonth"
 title: "Date.IsInPreviousMonth"
+ms.subservice: m-source
 ---
 # Date.IsInPreviousMonth
 

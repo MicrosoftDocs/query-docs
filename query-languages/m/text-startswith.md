@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.StartsWith"
 title: "Text.StartsWith"
+ms.subservice: m-source
 ---
 # Text.StartsWith
 

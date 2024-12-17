@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Cdm.Contents"
 title: "Cdm.Contents"
+ms.subservice: m-source
 ---
 # Cdm.Contents
 

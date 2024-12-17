@@ -4,6 +4,7 @@ description: Describes using conditionals in the Power Query M formula language
 ms.topic: conceptual
 ms.date: 03/29/2024
 ms.custom: "nonautomated-date"
+ms.subservice: m-specification
 ---
 
 

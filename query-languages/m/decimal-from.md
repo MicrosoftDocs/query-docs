@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Decimal.From"
 title: "Decimal.From"
+ms.subservice: m-source
 ---
 # Decimal.From
 

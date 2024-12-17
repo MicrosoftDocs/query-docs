@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Binary.View"
 title: "Binary.View"
+ms.subservice: m-source
 ---
 # Binary.View
 

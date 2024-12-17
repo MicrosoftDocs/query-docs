@@ -4,6 +4,7 @@ description: Describes using operators in the Power Query M formula language
 ms.topic: conceptual
 ms.date: 12/12/2024
 ms.custom: "nonautomated-date"
+ms.subservice: m-specification
 ---
 
 # Operator behavior

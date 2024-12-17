@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Date.IsInCurrentDay"
 title: "Date.IsInCurrentDay"
+ms.subservice: m-source
 ---
 # Date.IsInCurrentDay
 

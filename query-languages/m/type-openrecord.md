@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Type.OpenRecord"
 title: "Type.OpenRecord"
+ms.subservice: m-source
 ---
 # Type.OpenRecord
 

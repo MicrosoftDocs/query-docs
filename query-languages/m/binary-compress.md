@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Binary.Compress"
 title: "Binary.Compress"
+ms.subservice: m-source
 ---
 # Binary.Compress
 
