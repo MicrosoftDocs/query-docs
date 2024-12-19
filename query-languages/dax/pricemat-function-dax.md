@@ -18,8 +18,8 @@ PRICEMAT(<settlement>, <maturity>, <issue>, <rate>, <yld>[, <basis>])
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
+|Term|Definition|
+|--------|--------------|
 |`settlement`|The security's settlement date. The security settlement date is the date after the issue date when the security is traded to the buyer.|
 |`maturity`|The security's maturity date. The maturity date is the date when the security expires.|
 |`issue`|The security's issue date.|

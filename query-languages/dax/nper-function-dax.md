@@ -18,8 +18,8 @@ NPER(<rate>, <pmt>, <pv>[, <fv>[, <type>]])
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
+|Term|Definition|
+|--------|--------------|
 |`rate`|The interest rate per period.|
 |`pmt`|The payment made each period; it cannot change over the life of the annuity. Typically, pmt contains principal and interest but no other fees or taxes.|
 |`pv`|The present value, or the lump-sum amount that a series of future payments is worth right now.|

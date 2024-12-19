@@ -18,8 +18,8 @@ SAMPLEAXISWITHLOCALMINMAX(<Size>, <Table>, <Axis>, <Measure>, [<Measure> [, ...]
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
+|Term|Definition|
+|--------|--------------|
 |`Size`|Number of rows in the sample to return|
 |`Table`|Any DAX expression that returns a table of data from where to return a sample subset from.|
 |`Axis`|The numerical or datetime column from Table to be binned.|

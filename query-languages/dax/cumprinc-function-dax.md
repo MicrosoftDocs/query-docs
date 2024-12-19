@@ -18,8 +18,8 @@ CUMPRINC(<rate>, <nper>, <pv>, <start_period>, <end_period>, <type>)
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
+|Term|Definition|
+|--------|--------------|
 |`rate`|The interest rate.|
 |`nper`|The total number of payment periods.|
 |`pv`|The present value.|

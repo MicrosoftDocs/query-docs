@@ -37,7 +37,6 @@ A table of statistics. Each row of this table represents a different column in t
 
 - For binary-typed columns, the Min and Max statistics will have BLANK values.
 
-
 ## Example
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
@@ -64,5 +63,5 @@ Returns a table with statistics regarding all columns from all tables in the mod
 
 ## Related content
 
-[Filter context](dax-overview.md#filter-context)  
-[CALCULATETABLE function](calculatetable-function-dax.md)  
+[Filter context](dax-overview.md#filter-context)
+[CALCULATETABLE function](calculatetable-function-dax.md)

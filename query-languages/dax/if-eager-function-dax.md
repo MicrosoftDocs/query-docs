@@ -18,7 +18,7 @@ IF.EAGER(<logical_test>, <value_if_true>[, <value_if_false>])
 
 |Term|Definition|
 |--------|--------------|
-|`logical_test`|Any value or expression that can be evaluated to `TRUE` or `FALSE`.|  
+|`logical_test`|Any value or expression that can be evaluated to `TRUE` or `FALSE`.|
 |`value_if_true`|The value that's returned if the logical test is `TRUE`.|
 |`value_if_false`|(Optional) The value that's returned if the logical test is `FALSE`. If omitted, `BLANK` is returned.|
 
@@ -35,7 +35,7 @@ Either `value_if_true`, `value_if_false`, or `BLANK`.
 - IF.EAGER has the same functional behavior as the IF function, but performance may differ due to differences in execution plans. `IF.EAGER(<logical_test>, <value_if_true>, <value_if_false>)` has the same execution plan as the following DAX expression:
 
     ```dax
-    
+  
     VAR _value_if_true = <value_if_true>
     VAR _value_if_false = <value_if_false>
     RETURN
@@ -50,5 +50,5 @@ See [IF Examples](if-function-dax.md#examples).
 
 ## Related content
 
-[IF function](if-function-dax.md)  
-[Logical functions](logical-functions-dax.md)  
+[IF function](if-function-dax.md)
+[Logical functions](logical-functions-dax.md)

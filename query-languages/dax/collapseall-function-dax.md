@@ -61,8 +61,7 @@ The screenshot below shows the matrix with the visual calculation.
 
 ## See also
 
-[EXPAND](expand-function-dax.md)  
-[EXPANDALL](expandall-function-dax.md)  
-[COLLAPSE](collapse-function-dax.md)  
-
+[EXPAND](expand-function-dax.md)
+[EXPANDALL](expandall-function-dax.md)
+[COLLAPSE](collapse-function-dax.md)
 

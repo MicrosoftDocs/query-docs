@@ -18,8 +18,8 @@ PMT(<rate>, <nper>, <pv>[, <fv>[, <type>]])
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
+|Term|Definition|
+|--------|--------------|
 |`rate`|The interest rate for the loan.|
 |`nper`|The total number of payments for the loan.|
 |`pv`|The present value, or the total amount that a series of future payments is worth now; also known as the principal.|

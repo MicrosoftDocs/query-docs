@@ -18,8 +18,8 @@ SYD(<cost>, <salvage>, <life>, <per>)
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
+|Term|Definition|
+|--------|--------------|
 |`cost`|The initial cost of the asset.|
 |`salvage`|The value at the end of the depreciation (sometimes called the salvage value of the asset).|
 |`life`|The number of periods over which the asset is depreciated (sometimes called the useful life of the asset).|

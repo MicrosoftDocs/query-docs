@@ -13,7 +13,7 @@ Evaluates a table expression in a modified filter context.
 >
 >
 
-## Syntax  
+## Syntax
 
 ```dax
 CALCULATETABLE(<expression>[, <filter1> [, <filter2> [, …]]])
@@ -21,8 +21,8 @@ CALCULATETABLE(<expression>[, <filter1> [, <filter2> [, …]]])
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
+|Term|Definition|
+|--------|--------------|
 |`expression`|The table expression to be evaluated.|
 |`filter1, filter2,…`|(Optional) Boolean expressions or table expressions that defines filters, or filter modifier functions.|
 
@@ -81,7 +81,7 @@ A table of values.
 
 ## Example
 
-The following example uses the CALCULATETABLE function to get the sum of Internet sales for 2006. This value is later used to calculate the ratio of Internet sales compared to all sales for the year 2006.  
+The following example uses the CALCULATETABLE function to get the sum of Internet sales for 2006. This value is later used to calculate the ratio of Internet sales compared to all sales for the year 2006.
 
 The following formula:
 
@@ -92,18 +92,18 @@ The following formula:
         'DateTime'[CalendarYear] = 2006
     ),
     [SalesAmount_USD]
-)  
+)
 ```
 
 It results in the following table:
 
-|Row Labels|Internet SalesAmount_USD|CalculateTable 2006 Internet Sales|Internet Sales to 2006 ratio|  
-|--------------|-----------------------------|--------------------------------------|--------------------------------|  
-|2005|$2,627,031.40|$5,681,440.58|0.46|  
-|2006|$5,681,440.58|$5,681,440.58|1.00|  
-|2007|$8,705,066.67|$5,681,440.58|1.53|  
-|2008|$9,041,288.80|$5,681,440.58|1.59|  
-|Grand Total|$26,054,827.45|$5,681,440.58|4.59|  
+|Row Labels|Internet SalesAmount_USD|CalculateTable 2006 Internet Sales|Internet Sales to 2006 ratio|
+|--------------|-----------------------------|--------------------------------------|--------------------------------|
+|2005|$2,627,031.40|$5,681,440.58|0.46|
+|2006|$5,681,440.58|$5,681,440.58|1.00|
+|2007|$8,705,066.67|$5,681,440.58|1.53|
+|2008|$9,041,288.80|$5,681,440.58|1.59|
+|Grand Total|$26,054,827.45|$5,681,440.58|4.59|
 
 ## Related content
 

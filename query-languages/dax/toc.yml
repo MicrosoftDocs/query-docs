@@ -169,7 +169,7 @@ items:
             - name: FIRSTNONBLANK
               href: firstnonblank-function-dax.md
             - name: FIRSTNONBLANKVALUE
-              href: firstnonblankvalue-function-dax.md  
+              href: firstnonblankvalue-function-dax.md
             - name: INDEX
               href: index-function-dax.md
             - name: KEEPFILTERS
@@ -177,7 +177,7 @@ items:
             - name: LASTNONBLANK
               href: lastnonblank-function-dax.md
             - name: LASTNONBLANKVALUE
-              href: lastnonblankvalue-function-dax.md  
+              href: lastnonblankvalue-function-dax.md
             - name: LOOKUPVALUE
               href: lookupvalue-function-dax.md
             - name: MATCHBY
