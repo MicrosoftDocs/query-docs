@@ -56,8 +56,8 @@ The screenshot below shows the visual matrix and the visual calculation expressi
 
 ## See also
 
-[INDEX](index-function-dax.md)  
-[MOVINGAVERAGE](movingaverage-function-dax.md)  
-[ORDERBY](orderby-function-dax.md)  
-[PARTITIONBY](partitionby-function-dax.md)  
-[WINDOW](window-function-dax.md)  
+[INDEX](index-function-dax.md)
+[MOVINGAVERAGE](movingaverage-function-dax.md)
+[ORDERBY](orderby-function-dax.md)
+[PARTITIONBY](partitionby-function-dax.md)
+[WINDOW](window-function-dax.md)

@@ -133,7 +133,7 @@ That definition above is equivalent to:
             OFFSET (
                 -1,
                 vRelation,
-                ORDERBY ([Color], ASC, [CalendarYear], ASC, [CurrentYearSales], ASC)      
+                ORDERBY ([Color], ASC, [CalendarYear], ASC, [CurrentYearSales], ASC)
             ),
             [CurrentYearSales]
         )
@@ -218,12 +218,10 @@ UsingPARTITIONBYWithoutORDERBY =
             [CurrentYearSales]
         )
     )
-
-
 ```
 
 > [!NOTE]
-> While ORDERBY is set to CalendarYear and CurrentYearSales automatically, no guarantee is given as to what order in which they'll be added. If CurrentYearSales is added before CalendarYear, the resulting order isn't inline with what's expected. **Be explicit when specifying ORDERBY and PARTITIONBY to avoid confusion and unexpected results**.  
+> While ORDERBY is set to CalendarYear and CurrentYearSales automatically, no guarantee is given as to what order in which they'll be added. If CurrentYearSales is added before CalendarYear, the resulting order isn't inline with what's expected. **Be explicit when specifying ORDERBY and PARTITIONBY to avoid confusion and unexpected results**.
 
 Both expressions return the result we're after:
 
@@ -485,11 +483,11 @@ And this expression does indeed return the results we're after:
 
 ## Related content
 
-[ORDERBY](../orderby-function-dax.md)  
-[PARTITIONBY](../partitionby-function-dax.md)  
-[MATCHBY](../matchby-function-dax.md)  
-[INDEX](../index-function-dax.md)  
-[OFFSET](../offset-function-dax.md)  
-[WINDOW](../window-function-dax.md)  
-[RANK](../rank-function-dax.md)  
+[ORDERBY](../orderby-function-dax.md)
+[PARTITIONBY](../partitionby-function-dax.md)
+[MATCHBY](../matchby-function-dax.md)
+[INDEX](../index-function-dax.md)
+[OFFSET](../offset-function-dax.md)
+[WINDOW](../window-function-dax.md)
+[RANK](../rank-function-dax.md)
 [ROWNUMBER](../rownumber-function-dax.md)

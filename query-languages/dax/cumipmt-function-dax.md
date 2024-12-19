@@ -18,9 +18,9 @@ CUMIPMT(<rate>, <nper>, <pv>, <start_period>, <end_period>, <type>)
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|`rate`|The interest rate.|  
+|Term|Definition|
+|--------|--------------|
+|`rate`|The interest rate.|
 |`nper`|The total number of payment periods.|
 |`pv`|The present value.|
 |`start_period`|The first period in the calculation. Must be between 1 and end_period (inclusive).|

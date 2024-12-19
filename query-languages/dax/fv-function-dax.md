@@ -18,8 +18,8 @@ FV(<rate>, <nper>, <pmt>[, <pv>[, <type>]])
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
+|Term|Definition|
+|--------|--------------|
 |`rate`|The interest rate per period.|
 |`nper`|The total number of payment periods in an annuity.|
 |`pmt`|The payment made each period; it cannot change over the life of the annuity. Typically, pmt contains principal and interest but no other fees or taxes.|

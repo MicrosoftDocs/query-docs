@@ -31,7 +31,7 @@ landingContent:
         links:
           - text: New DAX functions
             url: new-dax-functions.md
-  
+
   # Card
   - title: Learn about DAX
     linkLists:
@@ -47,7 +47,7 @@ landingContent:
         links:
           - text: Use DAX in Power BI Desktop
             url: /training/paths/dax-power-bi/
-      
+    
 
   # Card
   - title: Understand

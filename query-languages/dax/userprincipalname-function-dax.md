@@ -7,17 +7,17 @@ title: "USERPRINCIPALNAME function (DAX)"
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns the user principal name.
-  
-## Syntax  
-  
+
+## Syntax
+
 ```dax
-USERPRINCIPALNAME()  
+USERPRINCIPALNAME()
 ```
-  
-### Parameters  
+
+### Parameters
 
 This expression has no parameters.
-  
+
 ## Return value
 
 The userprincipalname at connection time.

@@ -6,22 +6,22 @@ title: "CONTAINSSTRING function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Returns `TRUE` or `FALSE` indicating whether one string contains another string.  
-  
-## Syntax  
-  
+Returns `TRUE` or `FALSE` indicating whether one string contains another string.
+
+## Syntax
+
 ```dax
 CONTAINSSTRING(<within_text>, <find_text>) 
 ```
-  
-### Parameters  
-  
-|Term|Definition|  
-|--------|--------------|  
-|`within_text`|The text in which you want to search for find_text.|  
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|`within_text`|The text in which you want to search for find_text.|
 |`find_text`|The text you want to find.|
-  
-## Return value  
+
+## Return value
 
  `TRUE`  if find_text is a substring of within_text; otherwise `FALSE`.
 
@@ -31,7 +31,7 @@ CONTAINSSTRING(<within_text>, <find_text>)
 
 - You can use `?` and `*` wildcard characters. Use `~` to escape wildcard characters.
 
-## Example  
+## Example
 
 DAX query
 

@@ -7,28 +7,28 @@ title: "DISTINCT (table) function (DAX)"
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns a table by removing duplicate rows from another table or expression.
-  
-## Syntax  
-  
+
+## Syntax
+
 ```dax
-DISTINCT(<table>)  
+DISTINCT(<table>)
 ```
-  
-### Parameters  
-  
-|Term|Definition|  
-|--------|--------------|  
-|`table`|The table from which unique rows are to be returned. The table can also be an expression that results in a table.|  
-  
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|`table`|The table from which unique rows are to be returned. The table can also be an expression that results in a table.|
+
 ## Return value
 
-A table containing only distinct rows.  
-  
+A table containing only distinct rows.
+
 ## Related functions
 
 There is another version of the DISTINCT function, [DISTINCT (column)](distinct-function-dax.md), that takes a column name as input parameter.
-  
-## Example  
+
+## Example
 
 The following query:
 
@@ -45,8 +45,8 @@ Returns table:
 
 ## Related content
 
-[Filter functions](filter-functions-dax.md)  
-[DISTINCT (column)](distinct-function-dax.md)  
-[FILTER function](filter-function-dax.md)  
-[RELATED function](related-function-dax.md)  
-[VALUES function](values-function-dax.md)  
+[Filter functions](filter-functions-dax.md)
+[DISTINCT (column)](distinct-function-dax.md)
+[FILTER function](filter-function-dax.md)
+[RELATED function](related-function-dax.md)
+[VALUES function](values-function-dax.md)

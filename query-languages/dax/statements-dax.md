@@ -4,7 +4,7 @@ title: "Statements(DAX)"
 ---
 # Statements
 
-## In this category  
+## In this category
 
 |Statement |Description  |
 |---------|---------|

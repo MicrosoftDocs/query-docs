@@ -5,7 +5,7 @@ title: "Financial functions (DAX)"
 # Financial functions
 
 Financial functions in DAX are used in formulas that perform financial calculations, such as net present value and rate of return. These functions are similar to financial functions used in Microsoft Excel.
-  
+
 ## In this category
 
 |Function  |Description  |

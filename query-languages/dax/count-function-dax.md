@@ -7,31 +7,31 @@ title: "COUNT function (DAX)"
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Counts the number of rows in the specified column that contain non-blank values.
-  
-## Syntax  
-  
+
+## Syntax
+
 ```dax
-COUNT(<column>)  
+COUNT(<column>)
 ```
-  
-### Parameters  
-  
-|Term|Definition|  
-|--------|--------------|  
-|`column`|The column that contains the values to be counted.|  
-  
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|`column`|The column that contains the values to be counted.|
+
 ## Return value
 
-A whole number.  
-  
+A whole number.
+
 ## Remarks
 
-- The only argument allowed to this function is a column. The COUNT function counts rows that contain the following kinds of values:  
-  
-  - Numbers  
-  - Dates  
+- The only argument allowed to this function is a column. The COUNT function counts rows that contain the following kinds of values:
+
+  - Numbers
+  - Dates
   - Strings
-  
+
 - When the function finds no rows to count, it returns a blank.
 
 - Blank values are skipped. `TRUE`/`FALSE` values are not supported.
@@ -44,17 +44,17 @@ A whole number.
 
 ## Example
 
-The following example shows how to count the number of values in the column, ShipDate.  
-  
+The following example shows how to count the number of values in the column, ShipDate.
+
 ```dax
-= COUNT([ShipDate])  
+= COUNT([ShipDate])
 ```
 
-To count logical values or text, use the COUNTA or COUNTAX functions.  
-  
-## Related content  
+To count logical values or text, use the COUNTA or COUNTAX functions.
 
-[COUNTA function](counta-function-dax.md)  
-[COUNTAX function](countax-function-dax.md)  
-[COUNTX function](countx-function-dax.md)  
-[Statistical functions](statistical-functions-dax.md)  
+## Related content
+
+[COUNTA function](counta-function-dax.md)
+[COUNTAX function](countax-function-dax.md)
+[COUNTX function](countx-function-dax.md)
+[Statistical functions](statistical-functions-dax.md)

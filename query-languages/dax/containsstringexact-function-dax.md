@@ -7,21 +7,21 @@ title: "CONTAINSSTRINGEXACT function (DAX)"
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns `TRUE` or `FALSE` indicating whether one string contains another string.
-  
-## Syntax  
-  
+
+## Syntax
+
 ```dax
 CONTAINSSTRINGEXACT(<within_text>, <find_text>)
 ```
-  
-### Parameters  
-  
-|Term|Definition|  
-|--------|--------------|  
-|`within_text`|The text in which you want to search for find_text.|  
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|`within_text`|The text in which you want to search for find_text.|
 |`find_text`|The text you want to find.|
-  
-## Return value  
+
+## Return value
 
  `TRUE`  if find_text is a substring of within_text; otherwise `FALSE`.
 
@@ -29,7 +29,7 @@ CONTAINSSTRINGEXACT(<within_text>, <find_text>)
 
 CONTAINSSTRINGEXACT is case-sensitive.
 
-## Example  
+## Example
 
 DAX query
 
