@@ -7,9 +7,9 @@ title: "BITXOR function (DAX)"
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns a bitwise XOR of two numbers.
-  
-## Syntax  
-  
+
+## Syntax
+
 ```dax
 BITXOR(<number>, <number>)
 ```
@@ -19,11 +19,11 @@ BITXOR(<number>, <number>)
 |Term|Definition|
 |--------|--------------|
 |`Number`|Any scalar expression that returns number. If not an integer, it is truncated.|
-  
+
 ## Return value
 
 A bitwise XOR of two numbers.
-  
+
 ## Remarks
 
 - This function supports both positive and negative numbers.
@@ -40,7 +40,7 @@ Returns 3.
 
 ## Related content
 
-[BITOR](bitor-function-dax.md)  
-[BITAND](bitand-function-dax.md)  
-[BITLSHIFT](bitlshift-function-dax.md)  
-[BITRSHIFT](bitrshift-function-dax.md)  
+[BITOR](bitor-function-dax.md)
+[BITAND](bitand-function-dax.md)
+[BITLSHIFT](bitlshift-function-dax.md)
+[BITRSHIFT](bitrshift-function-dax.md)

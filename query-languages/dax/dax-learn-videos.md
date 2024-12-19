@@ -5,7 +5,7 @@ ms.topic: conceptual
 ---
 # Videos
 
-Whether you're using Power BI Desktop, Power Pivot in Excel, or Analysis Services, learning Data Analysis Expressions (DAX) is essential to creating effective data models. Here are some videos to help you get started using this powerful expression language.  
+Whether you're using Power BI Desktop, Power Pivot in Excel, or Analysis Services, learning Data Analysis Expressions (DAX) is essential to creating effective data models. Here are some videos to help you get started using this powerful expression language.
 
 ## DAX 101
 

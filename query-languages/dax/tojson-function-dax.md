@@ -8,23 +8,23 @@ title: "TOJSON function (DAX)"
 
 Returns a table as a string using JSON format.
 
-## Syntax  
-  
+## Syntax
+
 ```dax
 TOJSON(<Table>, [MaxRows])
 ```
-  
-### Parameters  
-  
-|Term|Definition|  
-|--------|--------------|  
-|`Table`|The table to be converted to JSON.|  
-|`MaxRows`|(Optional) The maximum number fo rows to convert. Default is 10 rows.|  
-  
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|`Table`|The table to be converted to JSON.|
+|`MaxRows`|(Optional) The maximum number fo rows to convert. Default is 10 rows.|
+
 ## Return value
 
 A string with JSON representation of the table. The representation contains column names as "header", count-of-rows as "rowCount", and values as "data".
-  
+
 ## Example
 
 The following DAX query:
@@ -57,5 +57,5 @@ Returns:
 
 ## Related content
 
-[TOCSV](tocsv-function-dax.md)  
-[EVALUATEANDLOG](evaluateandlog-function-dax.md)  
+[TOCSV](tocsv-function-dax.md)
+[EVALUATEANDLOG](evaluateandlog-function-dax.md)

@@ -7,19 +7,19 @@ title: "ACOT function (DAX)"
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns the principal value of the arccotangent, or inverse cotangent of a number.
-  
-## Syntax  
-  
+
+## Syntax
+
 ```dax
-ACOT(number)  
+ACOT(number)
 ```
-  
-### Parameters  
-  
-|Term|Definition|  
-|--------|--------------|  
-|`Number`|The cosine of the angle you want. Must be a real number.|  
-  
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|`Number`|The cosine of the angle you want. Must be a real number.|
+
 ## Return value
 
-A single decimal value.  
+A single decimal value.

@@ -18,8 +18,8 @@ PV(<rate>, <nper>, <pmt>[, <fv>[, <type>]])
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
+|Term|Definition|
+|--------|--------------|
 |`rate`|The interest rate per period. For example, if you obtain an automobile loan at a 10 percent annual interest rate and make monthly payments, your interest rate per month is 0.1/12, or 0.0083. You would enter 0.1/12, or 0.0083, into the formula as the rate.|
 |`nper`|The total number of payment periods in an annuity. For example, if you get a four-year car loan and make monthly payments, your loan has 4*12 (or 48) periods. You would enter 48 into the formula for nper.|
 |`pmt`|The payment made each period that cannot change over the life of the annuity. Typically, pmt includes principal and interest but no other fees or taxes. For example, the monthly payments on a \\$10,000, four-year car loan at 12 percent are \\$263.33. You would enter -263.33 into the formula as the pmt.|

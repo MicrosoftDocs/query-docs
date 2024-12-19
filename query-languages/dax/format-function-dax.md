@@ -48,26 +48,26 @@ A string containing `value` formatted as defined by `format_string`.
 #### Format strings
 
 ```dax
-= FORMAT( 12345.67, "General Number")  
-= FORMAT( 12345.67, "Currency")  
-= FORMAT( 12345.67, "Fixed")  
-= FORMAT( 12345.67, "Standard")  
-= FORMAT( 12345.67, "Percent")  
+= FORMAT( 12345.67, "General Number")
+= FORMAT( 12345.67, "Currency")
+= FORMAT( 12345.67, "Fixed")
+= FORMAT( 12345.67, "Standard")
+= FORMAT( 12345.67, "Percent")
 = FORMAT( 12345.67, "Scientific")
 ```
 
-Returns:  
+Returns:
 
-**12345.67** "General Number" displays the number with no formatting.  
-  
-**$12,345.67** "Currency" displays the number with your currency locale formatting. The sample here shows the default United States currency formatting.  
-  
-**12345.67** "Fixed" displays at least one digit to the left of the decimal separator and two digits to the right of the decimal separator.  
-  
-**12,345.67** "Standard" displays at least one digit to the left of the decimal separator and two digits to the right of the decimal separator, and includes thousand separators. The sample here shows the default United States number formatting.  
-  
-**1,234,567.00 %** "Percent" displays the number as a percentage (multiplied by 100) with formatting and the percent sign at the right of the number separated by a single space.  
-  
+**12345.67** "General Number" displays the number with no formatting.
+
+**$12,345.67** "Currency" displays the number with your currency locale formatting. The sample here shows the default United States currency formatting.
+
+**12345.67** "Fixed" displays at least one digit to the left of the decimal separator and two digits to the right of the decimal separator.
+
+**12,345.67** "Standard" displays at least one digit to the left of the decimal separator and two digits to the right of the decimal separator, and includes thousand separators. The sample here shows the default United States number formatting.
+
+**1,234,567.00 %** "Percent" displays the number as a percentage (multiplied by 100) with formatting and the percent sign at the right of the number separated by a single space.
+
 **1.23E+04** "Scientific" displays the number in scientific notation with two decimal digits.
 
 #### Datetime with optional locale_name
@@ -84,23 +84,23 @@ Returns:
 
 **15/12/2020 12:30:59** Where day precedes month and time is 24-hour format.
 
-**12/15/2020 12:30:59** Where month precedes day and time is 24-hour format. Because a non-locale dependent format string is specified, the locale is not applied and the non-locale format is returned.  
+**12/15/2020 12:30:59** Where month precedes day and time is 24-hour format. Because a non-locale dependent format string is specified, the locale is not applied and the non-locale format is returned.
 
 ## Predefined numeric formats
 
-The following predefined numeric formats can be specified in the `format_string` argument:  
-  
-|`Format`|Description|  
-|------------------------|---------------|  
-|`"General Number"`|Displays number with no thousand separators.|  
-|`"Currency"`|Displays number with thousand separators, if appropriate; displays two digits to the right of the decimal separator. Output is based on system locale settings.|  
-|`"Fixed"`|Displays at least one digit to the left and two digits to the right of the decimal separator.|  
-|`"Standard"`|Displays number with thousand separators, at least one digit to the left and two digits to the right of the decimal separator.|  
-|`"Percent"`|Displays number multiplied by 100 with a percent sign (%) appended immediately to the right; always displays two digits to the right of the decimal separator.|  
-|`"Scientific"`|Uses standard scientific notation, providing two significant digits.|  
-|`"Yes/No"`|Displays No if number is 0; otherwise, displays Yes.|  
-|`"True/False"`|Displays False if number is 0; otherwise, displays True.|  
-|`"On/Off"`|Displays Off if number is 0; otherwise, displays On.|   
+The following predefined numeric formats can be specified in the `format_string` argument:
+
+|`Format`|Description|
+|------------------------|---------------|
+|`"General Number"`|Displays number with no thousand separators.|
+|`"Currency"`|Displays number with thousand separators, if appropriate; displays two digits to the right of the decimal separator. Output is based on system locale settings.|
+|`"Fixed"`|Displays at least one digit to the left and two digits to the right of the decimal separator.|
+|`"Standard"`|Displays number with thousand separators, at least one digit to the left and two digits to the right of the decimal separator.|
+|`"Percent"`|Displays number multiplied by 100 with a percent sign (%) appended immediately to the right; always displays two digits to the right of the decimal separator.|
+|`"Scientific"`|Uses standard scientific notation, providing two significant digits.|
+|`"Yes/No"`|Displays No if number is 0; otherwise, displays Yes.|
+|`"True/False"`|Displays False if number is 0; otherwise, displays True.|
+|`"On/Off"`|Displays Off if number is 0; otherwise, displays On.| 
 
 ## Custom numeric formats
 
@@ -126,7 +126,7 @@ If you include semicolons with nothing between them, the missing section is show
 
 ### Custom numeric format characters
 
-The following custom numeric format characters can be specified in the `format_string` argument:  
+The following custom numeric format characters can be specified in the `format_string` argument:
 
 |Character|Description|
 |:-----|:-----|
@@ -151,7 +151,7 @@ The following predefined date/time formats can be specified in the `format_strin
 |------------------------|---------------|
 |`"General Date"`|Displays a date and/or time. For example, 3/12/2008 11:07:31 AM. Date display is determined by your application's current culture value.|
 |`"Long Date"` or `"Medium Date"`|Displays a date according to your current culture's long date format. For example, Wednesday, March 12, 2008.|
-|`"Short Date"`|Displays a date using your current culture's short date format. For example, 3/12/2008.|  
+|`"Short Date"`|Displays a date using your current culture's short date format. For example, 3/12/2008.|
 |`"Long Time"` or|Displays a time using your current culture's long time format; typically includes hours, minutes, seconds. For example, 11:07:31 AM.|
 |`"Medium Time"`|Displays a time in 12 hour format. For example, 11:07 AM.|
 |`"Short Time"`|Displays a time in 24 hour format. For example, 11:07.|
@@ -235,5 +235,4 @@ The following examples use the date/time Thursday, June 25, 2020, at 1:23:45 PM.
 |`"ttttt"`|13:23:45|13:23:45|
 |`"ttttt AMPM"`|13:23:45 PM|13:23:45|
 |`"mm/dd/yyyy hh:nn:ss AMPM"`|06/25/2020 01:23:45 PM|6.25.2020 01:23:45|
-
 

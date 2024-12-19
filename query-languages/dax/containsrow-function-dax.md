@@ -13,22 +13,22 @@ Returns `TRUE` if there exists at least one row where all columns have specified
 ```dax
 CONTAINSROW(<Table>, <Value> [, <Value> [, …] ] ) 
 ```
-  
-### Parameters  
-  
-|Term|Definition|  
-|--------|--------------|  
-|`Table`|A table to test.|  
-|`Value`|Any valid DAX expression that returns a scalar value.|  
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|`Table`|A table to test.|
+|`Value`|Any valid DAX expression that returns a scalar value.|
 
 ## Return value
 
  `TRUE`  or `FALSE`.
-  
+
 ## Remarks
 
 - Except syntax, the `IN` operator and CONTAINSROW function are functionally equivalent.
-  
+
     ```dax
     <scalarExpr> IN <tableExpr> 
     ( <scalarExpr1>, <scalarExpr2>, … ) IN <tableExpr>
@@ -129,7 +129,7 @@ Return the following table with a single column:
 ---------|---------
 Black     |
 Grey     |
-Multi  |  
+Multi  |
 NA   |
 Silver  |
 Silver\Black  |
@@ -137,5 +137,5 @@ White |
 
 ## Related content
 
-[IN operator](dax-operator-reference.md#logical-operators)  
+[IN operator](dax-operator-reference.md#logical-operators)
 [DAX queries](dax-queries.md)

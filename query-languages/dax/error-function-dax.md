@@ -6,24 +6,24 @@ title: "ERROR function"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Raises an error with an error message.  
-  
-## Syntax  
-  
+Raises an error with an error message.
+
+## Syntax
+
 ```dax
-ERROR(<text>)  
+ERROR(<text>)
 ```
-  
-### Parameters  
-  
-|Term|Definition|  
-|--------|--------------|  
-|`text`|A text string containing an error message.|  
-  
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|`text`|A text string containing an error message.|
+
 ## Return value
 
 None
-  
+
 ## Remarks
 
 - The ERROR function can be placed in a DAX expression anywhere a scalar value is expected.
@@ -69,14 +69,14 @@ Returns the following table:
 DimProduct[Color]  |[Measure]
 ---------|---------
 Black     |        Black
-Blue     |       Blue  
+Blue     |       Blue
 Grey     |      Grey
 Multi     |    Multi
 NA     |        NA
 Red     |     Red
 Silver     |     Silver
 Silver\Black     |   Silver\Black
-White    |       White  
+White    |       White
 Yellow    |        Yellow
 
 Because Magenta is not one of the product colors, the ERROR function is not executed.

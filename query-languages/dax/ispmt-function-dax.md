@@ -18,8 +18,8 @@ ISPMT(<rate>, <per>, <nper>, <pv>)
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
+|Term|Definition|
+|--------|--------------|
 |`rate`|The interest rate for the investment.|
 |`per`|The period for which you want to find the interest. Must be between 0 and nper-1 (inclusive).|
 |`nper`|The total number of payment periods for the investment.|

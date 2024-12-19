@@ -18,8 +18,8 @@ PDURATION(<rate>, <pv>, <fv>)
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
+|Term|Definition|
+|--------|--------------|
 |`rate`|The interest rate per period.|
 |`pv`|The present value of the investment.|
 |`fv`|The desired future value of the investment.|
