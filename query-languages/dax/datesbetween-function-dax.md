@@ -58,9 +58,9 @@ Customers LTD =
 CALCULATE(
     DISTINCTCOUNT(Sales[CustomerKey]),
     DATESBETWEEN(
-        'Date'[Date],  
-        BLANK(),  
-        MAX('Date'[Date])  
+        'Date'[Date],
+        BLANK(),
+        MAX('Date'[Date])
     )
 )
 ```

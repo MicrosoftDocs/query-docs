@@ -5,7 +5,7 @@ title: "Statistical functions (DAX)"
 # Statistical functions
 
 Statistical functions calculate values related to statistical distributions and probability, such as standard deviation and number of permutations.
-  
+
 ## In this category
 
 |Function  |Description  |

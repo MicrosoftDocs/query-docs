@@ -114,7 +114,7 @@ The CALCULATE function evaluates the sum of the **Sales** table **Sales Amount**
 
 The following **Sales** table measure definition produces a ratio of sales over sales for all sales channels.
 
-|Channel|Sales Amount|Revenue % Total Channel|  
+|Channel|Sales Amount|Revenue % Total Channel|
 |-------|------------|-----------------------|
 |Internet|$29,358,677.22|26.74%|
 |Reseller|$80,450,596.98|73.26%|
@@ -148,7 +148,7 @@ In this example, row context is converted to the filter context. It's known as _
 
 ## Related content
 
-[Filter context](dax-overview.md#filter-context)  
-[Row context](dax-overview.md#row-context)  
-[CALCULATETABLE function](calculatetable-function-dax.md)  
-[Filter functions](filter-functions-dax.md)  
+[Filter context](dax-overview.md#filter-context)
+[Row context](dax-overview.md#row-context)
+[CALCULATETABLE function](calculatetable-function-dax.md)
+[Filter functions](filter-functions-dax.md)

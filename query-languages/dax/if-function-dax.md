@@ -18,7 +18,7 @@ IF(<logical_test>, <value_if_true>[, <value_if_false>])
 
 |Term|Definition|
 |--------|--------------|
-|`logical_test`|Any value or expression that can be evaluated to `TRUE` or `FALSE`.|  
+|`logical_test`|Any value or expression that can be evaluated to `TRUE` or `FALSE`.|
 |`value_if_true`|The value that's returned if the logical test is `TRUE`.|
 |`value_if_false`|(Optional) The value that's returned if the logical test is `FALSE`. If omitted, BLANK is returned.|
 
@@ -81,6 +81,6 @@ IF(
 
 ## Related content
 
-[IF.EAGER function](if-eager-function-dax.md)   
-[SWITCH function (DAX)](switch-function-dax.md)  
-[Logical functions](logical-functions-dax.md)  
+[IF.EAGER function](if-eager-function-dax.md) 
+[SWITCH function (DAX)](switch-function-dax.md)
+[Logical functions](logical-functions-dax.md)

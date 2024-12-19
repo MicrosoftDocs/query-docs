@@ -18,9 +18,9 @@ ACCRINT(<issue>, <first_interest>, <settlement>, <rate>, <par>, <frequency>[, <b
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|`issue`|The security's issue date.|  
+|Term|Definition|
+|--------|--------------|
+|`issue`|The security's issue date.|
 |`first_interest`|The security's first interest date.|
 |`settlement`|The security's settlement date. The security settlement date is the date after the issue date when the security is traded to the buyer.|
 |`rate`|The security's annual coupon rate.|

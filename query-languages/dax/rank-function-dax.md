@@ -9,17 +9,17 @@ author: rahulten
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns the ranking for the current context within the specified partition, sorted by the specified order. If a match cannot be found then then rank is blank.
-  
-## Syntax  
-  
+
+## Syntax
+
 ```dax
 RANK ( [<ties>][, <relation> or <axis>][, <orderBy>][, <blanks>][, <partitionBy>][, <matchBy>][, <reset>] )
 ```
-  
-### Parameters  
-  
-|Term|Definition|  
-|--------|--------------|  
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
 |`ties`|(Optional) Defines how to handle the ranking when two or more rows are tied. </br>If specified, the supported value is either DENSE, or SKIP. </br>If omitted:</br>- Defaults to SKIP |
 |`relation`|(Optional) A table expression from which the output row is returned. </br>If specified, all columns in `orderBy` and `partitionBy` must come from it. </br>If omitted: </br>- `orderBy` must be explicitly specified.</br>- All `orderBy` and `partitionBy` columns must be fully qualified and come from a single table. </br>- Defaults to ALLSELECTED() of all columns in `orderBy` and `partitionBy`.|
 |`axis`|(Optional) An axis in the visual shape. Available in visual calculations only, and replaces `relation`.
@@ -28,11 +28,11 @@ RANK ( [<ties>][, <relation> or <axis>][, <orderBy>][, <blanks>][, <partitionBy>
 |`partitionBy`|(Optional) A PARTITIONBY() clause containing the columns that define how `relation` is partitioned. </br> If omitted, `relation` is treated as a single partition. |
 |`matchBy`|(Optional) A MATCHBY() clause containing the columns that define how to match data and identify the current row. |
 |`reset`|(Optional) Available in visual calculations only. Indicates if the calculation resets, and at which level of the visual shape's column hierarchy. Accepted values are: `NONE`, `LOWESTPARENT`, `HIGHESTPARENT`, or an integer. The behavior depends on the integer sign: </br> - If zero or omitted, the calculation does not reset. Equivalent to `NONE`. </br> - If positive, the integer identifies the column starting from the highest, independent of grain. `HIGHESTPARENT` is equivalent to 1. </br> - If negative, the integer identifies the column starting from the lowest, relative to the current grain. `LOWESTPARENT` is equivalent to -1. |
-  
+
 ## Return value
 
 The rank number for the current context.
-  
+
 ## Remarks
 
 - Each `orderBy`, `partitionBy`, and `matchBy` column must have a corresponding outer value to help define the current row on which to operate, with the following behavior:
@@ -51,7 +51,7 @@ The rank number for the current context.
 ## Example 1 - calculated column
 
 The following DAX query:
-  
+
 ```dax
 EVALUATE
 ADDCOLUMNS(
@@ -89,8 +89,8 @@ The screenshot below shows the visual matrix and the first visual calculation ex
 
 ## Related content
 
-[INDEX](index-function-dax.md)  
-[ORDERBY](orderby-function-dax.md)  
-[PARTITIONBY](partitionby-function-dax.md)  
-[WINDOW](window-function-dax.md)  
+[INDEX](index-function-dax.md)
+[ORDERBY](orderby-function-dax.md)
+[PARTITIONBY](partitionby-function-dax.md)
+[WINDOW](window-function-dax.md)
 [ROWNUMBER](rownumber-function-dax.md)

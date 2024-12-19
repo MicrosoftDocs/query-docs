@@ -18,8 +18,8 @@ ACCRINTM(<issue>, <maturity>, <rate>, <par>[, <basis>])
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
+|Term|Definition|
+|--------|--------------|
 |`issue`|The security's issue date.|
 |`maturity`|The security's maturity date.|
 |`rate`|The security's annual coupon rate.|

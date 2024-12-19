@@ -17,8 +17,8 @@ IPMT(<rate>, <per>, <nper>, <pv>[, <fv>[, <type>]])
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
+|Term|Definition|
+|--------|--------------|
 |`rate`|The interest rate per period.|
 |`per`|The period for which you want to find the interest. Must be between 1 and nper (inclusive).|
 |`nper`|The total number of payment periods in an annuity.|

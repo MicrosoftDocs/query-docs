@@ -18,9 +18,9 @@ AMORDEGRC(<cost>, <date_purchased>, <first_period>, <salvage>, <period>, <rate>[
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|`cost`|The cost of the asset.|  
+|Term|Definition|
+|--------|--------------|
+|`cost`|The cost of the asset.|
 |`date_purchased`|The date of the purchase of the asset.|
 |`first_period`|The date of the end of the first period.|
 |`salvage`|The salvage value at the end of the life of the asset.|
