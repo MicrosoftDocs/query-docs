@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: RANGE"
+description: "Learn more about: RANGE function"
 title: "RANGE function (DAX)"
 ms.service: powerbi
 ms.subservice: dax
@@ -11,7 +11,7 @@ recommendations: false
 
 ---
 
-# RANGE
+# RANGE 
 
 [!INCLUDE[applies-to-visual-calculations](includes/applies-to-visual-calculations.md)]
 
