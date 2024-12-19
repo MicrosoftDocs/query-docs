@@ -18,8 +18,8 @@ DOLLARFR(<decimal_dollar>, <fraction>)
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
+|Term|Definition|
+|--------|--------------|
 |`decimal_dollar`|A decimal number.|
 |`fraction`|The integer to use in the denominator of the fraction.|
 

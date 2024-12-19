@@ -8,19 +8,19 @@ title: "T.INV function (DAX)"
 
 Returns the left-tailed inverse of the Student's t-distribution.
 
-## Syntax  
-  
+## Syntax
+
 ```dax
 T.INV(Probability,Deg_freedom)
 ```
-  
-### Parameters  
-  
-|Term|Definition|  
-|--------|--------------|  
-|`Probability`|The probability associated with the Student's t-distribution.|  
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|`Probability`|The probability associated with the Student's t-distribution.|
 |`Deg_freedom`|The number of degrees of freedom with which to characterize the distribution.|
-  
+
 ## Return value
 
 The left-tailed inverse of the Student's t-distribution.
@@ -29,8 +29,8 @@ The left-tailed inverse of the Student's t-distribution.
 
 [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-## Example  
-  
+## Example
+
 ```dax
 EVALUATE { T.INV(0.75, 2) }
 ```
@@ -41,9 +41,9 @@ Returns
 |---------|
 |0.816496580927726   |
 
-## Related content  
+## Related content
 
-[T.INV.2T](t-inv-2t-function-dax.md)  
-[T.DIST](t-dist-function-dax.md)  
-[T.DIST.2T](t-dist-2t-function-dax.md)  
-[T.DIST.RT](t-dist-rt-function-dax.md)  
+[T.INV.2T](t-inv-2t-function-dax.md)
+[T.DIST](t-dist-function-dax.md)
+[T.DIST.2T](t-dist-2t-function-dax.md)
+[T.DIST.RT](t-dist-rt-function-dax.md)

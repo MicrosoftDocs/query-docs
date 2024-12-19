@@ -7,25 +7,25 @@ title: "UTCNOW function (DAX)"
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns the current UTC date and time.
-  
-## Syntax  
-  
+
+## Syntax
+
 ```dax
-UTCNOW()  
+UTCNOW()
 ```
-  
+
 ## Return value
 
 A `datetime`.
-  
-## Remarks  
+
+## Remarks
 
 The result of the UTCNOW function changes only when the formula is refreshed. It is not continuously updated.
-  
+
 ## Example
 
 The following:
-  
+
 ```dax
 EVALUATE { FORMAT(UTCNOW(), "General Date") }
 ```
@@ -38,5 +38,5 @@ Returns:
 
 ## Related content
 
-[NOW function](now-function-dax.md)  
-[UTCTODAY function](utctoday-function-dax.md)  
+[NOW function](now-function-dax.md)
+[UTCTODAY function](utctoday-function-dax.md)

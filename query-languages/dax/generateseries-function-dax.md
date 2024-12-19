@@ -6,26 +6,26 @@ title: "GENERATESERIES function"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Returns a single column table containing the values of an arithmetic series, that is, a sequence of values in which each differs from the preceding by a constant quantity. The name of the column returned is Value.  
-  
-## Syntax  
-  
+Returns a single column table containing the values of an arithmetic series, that is, a sequence of values in which each differs from the preceding by a constant quantity. The name of the column returned is Value.
+
+## Syntax
+
 ```dax
 GENERATESERIES(<startValue>, <endValue>[, <incrementValue>])
 ```
-  
-### Parameters  
-  
-|Term|Definition|  
-|--------|--------------|  
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
 |`startValue`|The initial value used to generate the sequence.|
-|`endValue`|The end value used to generate the sequence.|  
+|`endValue`|The end value used to generate the sequence.|
 |`incrementValue`|(Optional) The increment value of the sequence. When not provided, the default value is 1.|
-  
+
 ## Return value
 
 A single column table containing the values of an arithmetic series. The name of the column is Value.
-  
+
 ## Remarks
 
 - When endValue is less than startValue, an empty table is returned.

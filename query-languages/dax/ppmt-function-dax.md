@@ -18,8 +18,8 @@ PPMT(<rate>, <per>, <nper>, <pv>[, <fv>[, <type>]])
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
+|Term|Definition|
+|--------|--------------|
 |`rate`|The interest rate for the loan.|
 |`per`|Specifies the period. Must be between 1 and nper (inclusive).|
 |`nper`|The total number of payment periods in an annuity.|

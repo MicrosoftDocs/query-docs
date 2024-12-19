@@ -18,8 +18,8 @@ VDB(<cost>, <salvage>, <life>, <start_period>, <end_period>[, <factor>[, <no_swi
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
+|Term|Definition|
+|--------|--------------|
 |`cost`|The initial cost of the asset.|
 |`salvage`|The value at the end of the depreciation (sometimes called the salvage value of the asset). This value can be 0.|
 |`life`|The number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).|

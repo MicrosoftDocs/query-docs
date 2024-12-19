@@ -7,24 +7,24 @@ title: "TREATAS function"
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Applies the result of a table expression as filters to columns from an unrelated table. 
-  
-## Syntax  
-  
-```dax
-TREATAS(table_expression, <column>[, <column>[, <column>[,…]]]} )  
-```
-  
-### Parameters  
-  
-|Term|Definition|  
-|--------|--------------|  
-|`table_expression`|An expression that results in a table.|
-|`column`|One or more existing columns. It cannot be an expression. |  
 
-## Return value  
+## Syntax
+
+```dax
+TREATAS(table_expression, <column>[, <column>[, <column>[,…]]]} )
+```
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|`table_expression`|An expression that results in a table.|
+|`column`|One or more existing columns. It cannot be an expression. |
+
+## Return value
 
 A table that contains all the rows in column(s) that are also in table_expression.
-  
+
 ## Remarks
 
 - The number of columns specified must match the number of columns in the table expression and be in the same order.
@@ -51,6 +51,6 @@ CALCULATE(
 
 ## Related content
 
-[INTERSECT](intersect-function-dax.md)  
-[FILTER](filter-function-dax.md)  
-[USERELATIONSHIP](userelationship-function-dax.md)  
+[INTERSECT](intersect-function-dax.md)
+[FILTER](filter-function-dax.md)
+[USERELATIONSHIP](userelationship-function-dax.md)

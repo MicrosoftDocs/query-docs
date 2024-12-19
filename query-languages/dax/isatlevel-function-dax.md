@@ -57,12 +57,11 @@ The screenshot below shows the matrix with the five visual calculations.
 
 ## See also
 
-[EXPAND](expand-function-dax.md)  
-[EXPANDALL](expandall-function-dax.md)  
-[COLLAPSE](collapse-function-dax.md)  
-[COLLAPSEALL](collapseall-function-dax.md)  
-[ISINSCOPE](isinscope-function-dax.md)  
-[ISFILTERED](isfiltered-function-dax.md)  
-[HASONEVALUE](hasonevalue-function-dax.md)  
-
+[EXPAND](expand-function-dax.md)
+[EXPANDALL](expandall-function-dax.md)
+[COLLAPSE](collapse-function-dax.md)
+[COLLAPSEALL](collapseall-function-dax.md)
+[ISINSCOPE](isinscope-function-dax.md)
+[ISFILTERED](isfiltered-function-dax.md)
+[HASONEVALUE](hasonevalue-function-dax.md)
 

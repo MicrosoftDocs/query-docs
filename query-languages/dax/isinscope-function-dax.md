@@ -7,19 +7,19 @@ title: "ISINSCOPE function (DAX)"
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns true when the specified column is the level in a hierarchy of levels.
-  
-## Syntax  
-  
+
+## Syntax
+
 ```dax
 ISINSCOPE(<columnName>)
 ```
-  
-### Parameters  
-  
-|Term|Definition|  
-|--------|--------------|  
-|`columnName`|The name of an existing column, using standard DAX syntax. It cannot be an expression.|  
-  
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|`columnName`|The name of an existing column, using standard DAX syntax. It cannot be an expression.|
+
 ## Return value
 
 `TRUE` when the specified column is the level in a hierarchy of levels.
@@ -28,7 +28,7 @@ ISINSCOPE(<columnName>)
 
 [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-## Example  
+## Example
 
 ```dax
 DEFINE
@@ -84,5 +84,5 @@ Returns,
 
 ## Related content
 
-[SUMMARIZECOLUMNS function](summarizecolumns-function-dax.md)  
+[SUMMARIZECOLUMNS function](summarizecolumns-function-dax.md)
 [CALCULATE function](calculate-function-dax.md)

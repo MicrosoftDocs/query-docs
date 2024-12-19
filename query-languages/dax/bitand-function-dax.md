@@ -7,9 +7,9 @@ title: "BITAND function (DAX)"
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns a bitwise AND of two numbers.
-  
-## Syntax  
-  
+
+## Syntax
+
 ```dax
 BITAND(<number>, <number>)
 ```
@@ -19,11 +19,11 @@ BITAND(<number>, <number>)
 |Term|Definition|
 |--------|--------------|
 |`Number`|Any scalar expression that returns number. If not an integer, it is truncated.|
-  
+
 ## Return value
 
 A bitwise AND of two numbers.
-  
+
 ## Remarks
 
 - This function supports both positive and negative numbers.
@@ -40,7 +40,7 @@ Returns 9.
 
 ## Related content
 
-[BITLSHIFT](bitlshift-function-dax.md)  
-[BITRSHIFT](bitrshift-function-dax.md)  
-[BITOR](bitor-function-dax.md)  
+[BITLSHIFT](bitlshift-function-dax.md)
+[BITRSHIFT](bitrshift-function-dax.md)
+[BITOR](bitor-function-dax.md)
 [BITXOR](bitxor-function-dax.md)

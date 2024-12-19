@@ -24,15 +24,14 @@ Table expressions that output a result table include:
 
 There are several optional keywords specific to DAX queries: ORDER BY, START AT, DEFINE, MEASURE, VAR, TABLE, and COLUMN. 
 
-
 ### EVALUATE (Required)
 
 At the most basic level, a DAX query is an `EVALUATE` statement containing a table expression. At least one EVALUATE statement is required, however, a query can contain any number of EVALUATE statements.
 
 #### EVALUATE Syntax
-  
+
 ```dax
-EVALUATE <table>  
+EVALUATE <table>
 ```
 
 #### EVALUATE Parameters
@@ -58,12 +57,11 @@ The optional `ORDER BY` keyword defines one or more columns in the query or expr
 
 Sort by column property in semantic models do not apply to DAX query results. If a column should be sorted by a different column in the model, such as in the case of Month Name, the sort by column should also be included in the DAX query to be used in the ORDER BY.
 
-
 #### ORDER BY Syntax
 
 ```dax
-EVALUATE <table>  
-[ORDER BY {<expression> [{ASC | DESC}]}[, …]]  
+EVALUATE <table>
+[ORDER BY {<expression> [{ASC | DESC}]}[, …]]
 ```
 
 #### ORDER BY Parameters
@@ -129,14 +127,13 @@ Returns the top 100 sales orders sorted by SalesOrderLienKey ascending, then sor
 
 ### START AT (Optional)
 
-
 The optional `START AT` keyword is used inside an `ORDER BY` clause. It defines the value at which the query results begin.
 
 #### START AT Syntax
 
 ```dax
-EVALUATE <table>  
-[ORDER BY {<expression> [{ASC | DESC}]}[, …]  
+EVALUATE <table>
+[ORDER BY {<expression> [{ASC | DESC}]}[, …]
 [START AT {<value>|<parameter>} [, …]]]
 ```
 
@@ -148,8 +145,8 @@ EVALUATE <table>
 |  `parameter`     |   The name of a parameter in an XMLA statement prefixed with an `@` character.  |
 
 #### START AT Remarks
-  
-START AT arguments have a one-to-one correspondence with the columns in the ORDER BY clause. There can be as many arguments in the START AT clause as there are in the ORDER BY clause, but not more. The first argument in the START AT defines the starting value in column 1 of the ORDER BY columns. The second argument in the START AT defines the starting value in column 2 of the ORDER BY columns within the rows that meet the first value for column 1.  
+
+START AT arguments have a one-to-one correspondence with the columns in the ORDER BY clause. There can be as many arguments in the START AT clause as there are in the ORDER BY clause, but not more. The first argument in the START AT defines the starting value in column 1 of the ORDER BY columns. The second argument in the START AT defines the starting value in column 2 of the ORDER BY columns within the rows that meet the first value for column 1.
 
 #### START AT Example
 
@@ -190,11 +187,11 @@ The optional `DEFINE` keyword introduces one or more calculated entity definitio
 
 #### DEFINE Parameters
 
-|Term|Definition|  
-|--------|--------------|  
+|Term|Definition|
+|--------|--------------|
 |`Entity`|MEASURE, VAR, TABLE<sup>[1](#not-rec)</sup>, or COLUMN<sup>[1](#not-rec)</sup>. |
-|`name`|The name of a measure, var, table, or column definition. It cannot be an expression. The name does not have to be unique. The name exists only for the duration of the query.|  
-|`expression`|Any DAX expression that returns a table or scalar value. The expression can use any of the defined entities. If there is a need to convert a scalar expression into a table expression, wrap the expression inside a table constructor with curly braces `{}`, or use the `ROW()` function to return a single row table.|  
+|`name`|The name of a measure, var, table, or column definition. It cannot be an expression. The name does not have to be unique. The name exists only for the duration of the query.|
+|`expression`|Any DAX expression that returns a table or scalar value. The expression can use any of the defined entities. If there is a need to convert a scalar expression into a table expression, wrap the expression inside a table constructor with curly braces `{}`, or use the `ROW()` function to return a single row table.|
 
 <a name="not-rec">[1]</a> **Caution:** Query scoped TABLE and COLUMN definitions are meant for internal use only. While you can define TABLE and COLUMN expressions for a query without syntax error, they may produce runtime errors and are not recommended.
 
@@ -257,19 +254,19 @@ Returns a table evaluating three defined measures to show the results by fiscal 
 
 :::image type="content" source="media/dax-queries/dax-evaluate-define-measures.png" alt-text="Screenshot showing how to use DEFINE MEASURE for a DAX query in DAX query view of Power BI Desktop." lightbox="media/dax-queries/dax-evaluate-define-measures.png":::
 
-## Parameters in DAX queries  
+## Parameters in DAX queries
 
-A well-defined DAX query statement can be parameterized and then used over and over with just changes in the parameter values.  
-  
-The [Execute Method (XMLA)](/analysis-services/xmla/xml-elements-methods-execute) method has a [Parameters Element (XMLA)](/analysis-services/xmla/xml-elements-properties/parameters-element-xmla) collection element that allows parameters to be defined and assigned a value. Within the collection, each [Parameter Element (XMLA)](/analysis-services/xmla/xml-elements-properties/parameter-element-xmla) element defines the name of the parameter and a value to it.  
-  
-Reference XMLA parameters by prefixing the name of the parameter with an `@` character. Any place in the syntax where a value is allowed, the value can be replaced with a parameter call. All XMLA parameters are typed as text.  
-  
+A well-defined DAX query statement can be parameterized and then used over and over with just changes in the parameter values.
+
+The [Execute Method (XMLA)](/analysis-services/xmla/xml-elements-methods-execute) method has a [Parameters Element (XMLA)](/analysis-services/xmla/xml-elements-properties/parameters-element-xmla) collection element that allows parameters to be defined and assigned a value. Within the collection, each [Parameter Element (XMLA)](/analysis-services/xmla/xml-elements-properties/parameter-element-xmla) element defines the name of the parameter and a value to it.
+
+Reference XMLA parameters by prefixing the name of the parameter with an `@` character. Any place in the syntax where a value is allowed, the value can be replaced with a parameter call. All XMLA parameters are typed as text.
+
 > [!IMPORTANT]
 > Parameters defined in the parameters section and not used in the `<STATEMENT>` element generate an error response in XMLA.
 > Parameters used and not defined in the `<Parameters>` element generate an error response in XMLA.
-  
+
 ## Related content
 
-[DAX statements](statements-dax.md)  
-[SUMMARIZECOLUMNS](summarizecolumns-function-dax.md)  
+[DAX statements](statements-dax.md)
+[SUMMARIZECOLUMNS](summarizecolumns-function-dax.md)

@@ -7,26 +7,26 @@ title: "TOCSV function (DAX)"
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns a table as a string in CSV format.
-  
-## Syntax  
-  
+
+## Syntax
+
 ```dax
 TOCSV(<Table>, [MaxRows], [Delimiter], [IncludeHeaders])
 ```
-  
-### Parameters  
-  
-|Term|Definition|  
-|--------|--------------|  
-|`Table`|The table to be converted to CSV.|  
-|`MaxRows`| (Optional) The maximum number fo rows to convert. Default is 10 rows.|  
-|`Delimiter`|(Optional) A column delimiter. Default is comma ",".|  
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|`Table`|The table to be converted to CSV.|
+|`MaxRows`| (Optional) The maximum number fo rows to convert. Default is 10 rows.|
+|`Delimiter`|(Optional) A column delimiter. Default is comma ",".|
 |`IncludeHeaders`|(Optional) Specifies a header with column name as the first row. Default is True.|
-  
+
 ## Return value
 
 A string with CSV representation of the table.
-  
+
 ## Example
 
 The following DAX query:
@@ -55,5 +55,5 @@ Returns:
 
 ## Related content
 
-[TOJSON](tojson-function-dax.md)  
-[EVALUATEANDLOG](evaluateandlog-function-dax.md)  
+[TOJSON](tojson-function-dax.md)
+[EVALUATEANDLOG](evaluateandlog-function-dax.md)

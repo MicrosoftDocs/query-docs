@@ -7,21 +7,21 @@ title: "EVALUATEANDLOG function (DAX)"
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns the value of the first argument and logs it in a DAX Evaluation Log profiler event. This function is fully functional in Power BI Desktop only. It acts as a simple passthrough function in other environments.
-  
-## Syntax  
-  
+
+## Syntax
+
 ```dax
 EVALUATEANDLOG(<Value>, [Label], [MaxRows])
 ```
-  
-### Parameters  
-  
-|Term|Definition|  
-|--------|--------------|  
-|`Value`|Any scalar expression or table expression to be evaluated and logged.|  
-|`Label`|(Optional) A constant string included in both the json text and the Label column of the DAX Evaluation Log event that can be used to easily identify an instance of the function call.|  
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|`Value`|Any scalar expression or table expression to be evaluated and logged.|
+|`Label`|(Optional) A constant string included in both the json text and the Label column of the DAX Evaluation Log event that can be used to easily identify an instance of the function call.|
 |`MaxRows`|(Optional) The maximum number of rows in the json text of the DAX Evaluation Log event when the first argument is a table expression. Default is 10.|
-  
+
 ## Return value
 
 The value of the first argument.
@@ -49,7 +49,7 @@ The JSON structure logged in a DAX Evaluation Log profiler event includes:
 - In some cases, this function is not executed due to optimizations.
 
 - If the DAX Evaluation Log event is greater than one million characters, it's truncated to preserve correct json structure.
-  
+
 ## Example 1
 
 The following DAX query:
@@ -142,5 +142,5 @@ Returns the following DAX Evaluation Log event:
 
 ## Related content
 
-[TOCSV](tocsv-function-dax.md)  
-[TOJSON](tojson-function-dax.md)  
+[TOCSV](tocsv-function-dax.md)
+[TOJSON](tojson-function-dax.md)

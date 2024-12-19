@@ -18,8 +18,8 @@ RRI(<nper>, <pv>, <fv>)
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
+|Term|Definition|
+|--------|--------------|
 |`nper`|The number of periods for the investment.|
 |`pv`|The present value of the investment.|
 |`fv`|The future value of the investment.|

@@ -66,6 +66,6 @@ Consider that the report is filtered by the month of June 2020. The MAX function
 
 ## Related content
 
-[Time intelligence functions (DAX)](time-intelligence-functions-dax.md)  
-[Date and time functions (DAX)](date-and-time-functions-dax.md)  
-[DATESBETWEEN function (DAX)](datesbetween-function-dax.md)  
+[Time intelligence functions (DAX)](time-intelligence-functions-dax.md)
+[Date and time functions (DAX)](date-and-time-functions-dax.md)
+[DATESBETWEEN function (DAX)](datesbetween-function-dax.md)
