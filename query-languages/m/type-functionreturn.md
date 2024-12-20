@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Type.FunctionReturn"
 title: "Type.FunctionReturn"
+ms.subservice: m-source
 ---
 # Type.FunctionReturn
 

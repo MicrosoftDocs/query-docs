@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.Min"
 title: "Table.Min"
+ms.subservice: m-source
 ---
 # Table.Min
 
@@ -47,3 +48,7 @@ Table.Min(#table({"a"}, {}), "a", -1)
 **Output**
 
 `-1`
+
+## Related content
+
+[Comparison criteria](table-functions.md#comparison-criteria)

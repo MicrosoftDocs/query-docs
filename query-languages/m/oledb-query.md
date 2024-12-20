@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: OleDb.Query"
 title: "OleDb.Query"
+ms.subservice: m-source
 ---
 # OleDb.Query
 

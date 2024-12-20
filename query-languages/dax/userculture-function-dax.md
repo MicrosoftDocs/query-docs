@@ -1,29 +1,29 @@
 ---
 description: "Learn more about: USERCULTURE"
-title: "USERCULTURE function (DAX) | Microsoft Docs"
+title: "USERCULTURE function (DAX)"
 ---
 # USERCULTURE
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
-  
-Returns the locale \(language code-country code) for the current user, determined by the operating system, browser settings, or Power BI service.  
+
+Returns the locale \(language code-country code) for the current user, determined by the operating system, browser settings, or Power BI service.
 
 **Note:** This function is currently supported in Power BI Premium per capacity, Power BI Premium per user, and Power BI Embedded only.
-  
-## Syntax  
-  
+
+## Syntax
+
 ```dax
 USERCULTURE()
 ```
-  
-### Parameters  
-  
+
+### Parameters
+
 This expression has no parameters.
-  
+
 ## Return value
 
 Locale as a string.
-  
+
 ## Remarks
 
 - In the Power BI service, locale is determined by **Settings** > **Language** > **Language Settings**. The default is determined by the user's browser language setting.
@@ -61,7 +61,7 @@ Depending on the language setting for the current user, :::no-loc text="USERCULT
 
 ## Related content
 
-[Expression-based titles in Power BI](/power-bi/create-reports/desktop-conditional-format-visual-titles)  
-[USERNAME](username-function-dax.md)  
-[USERPRINCIPALNAME](userprincipalname-function-dax.md)  
-[USEROBJECTID](userobjectid-function-dax.md)  
+[Expression-based titles in Power BI](/power-bi/create-reports/desktop-conditional-format-visual-titles)
+[USERNAME](username-function-dax.md)
+[USERPRINCIPALNAME](userprincipalname-function-dax.md)
+[USEROBJECTID](userobjectid-function-dax.md)

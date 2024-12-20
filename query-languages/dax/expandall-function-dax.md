@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: EXPANDALL"
-title: "EXPANDALL function (DAX) | Microsoft Docs"
+title: "EXPANDALL function (DAX)"
 ms.service: powerbi
 ms.subservice: dax
 ms.date: 02/21/2024
@@ -33,8 +33,8 @@ EXPANDALL ( <axis> )
 
 |Term|Definition|
 |--------|--------------|
-|expression|The expression to be evaluated in the new context.|
-|axis|An axis reference.|
+|`expression`|The expression to be evaluated in the new context.|
+|`axis`|An axis reference.|
 
 ## Return value
 
@@ -62,8 +62,7 @@ The screenshot below shows the matrix with the visual calculation.
 
 ## See also
 
-[EXPAND](expand-function-dax.md)  
-[COLLAPSE](collapse-function-dax.md)  
-[COLLAPSEALL](collapseall-function-dax.md)  
-
+[EXPAND](expand-function-dax.md)
+[COLLAPSE](collapse-function-dax.md)
+[COLLAPSEALL](collapseall-function-dax.md)
 

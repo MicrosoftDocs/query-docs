@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Comparer.FromCulture"
 title: "Comparer.FromCulture"
+ms.subservice: m-source
 ---
 # Comparer.FromCulture
 

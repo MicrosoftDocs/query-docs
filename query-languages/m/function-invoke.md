@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Function.Invoke"
 title: "Function.Invoke"
+ms.subservice: m-source
 ---
 # Function.Invoke
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.Trim"
 title: "Text.Trim"
+ms.subservice: m-source
 ---
 # Text.Trim
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Hdfs.Files"
 title: "Hdfs.Files"
+ms.subservice: m-source
 ---
 # Hdfs.Files
 

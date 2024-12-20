@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Numbers"
 title: "List.Numbers"
+ms.subservice: m-source
 ---
 # List.Numbers
 
@@ -16,7 +17,7 @@ Returns a list of numbers given an initial value, count, and optional increment 
 
 * `start`: The initial value in the list.
 * `count`: The number of values to create.
-* `increment: _[Optional]_ The value to increment by. If omitted values are incremented by 1.
+* `increment`: _[Optional]_ The value to increment by. If omitted values are incremented by 1.
 
 ## Example 1
 

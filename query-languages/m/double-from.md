@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Double.From"
 title: "Double.From"
+ms.subservice: m-source
 ---
 # Double.From
 

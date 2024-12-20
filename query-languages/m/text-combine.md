@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.Combine"
 title: "Text.Combine"
+ms.subservice: m-source
 ---
 # Text.Combine
 

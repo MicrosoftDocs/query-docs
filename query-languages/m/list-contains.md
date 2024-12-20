@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Contains"
 title: "List.Contains"
+ms.subservice: m-source
 ---
 # List.Contains
 
@@ -58,3 +59,7 @@ List.Contains({"Pears", "Bananas", "Rhubarb", "Peaches"},
 **Output**
 
 `true`
+
+## Related content
+
+[Equation criteria](list-functions.md#equation-criteria)

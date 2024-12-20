@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.MaxN"
 title: "Table.MaxN"
+ms.subservice: m-source
 ---
 # Table.MaxN
 
@@ -65,3 +66,7 @@ Table.MaxN(
 **Output**
 
 `Table.FromRecords({})`
+
+## Related content
+
+[Comparison criteria](table-functions.md#comparison-criteria)

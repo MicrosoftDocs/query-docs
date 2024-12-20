@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: AnalysisServices.Databases"
 title: "AnalysisServices.Databases"
+ms.subservice: m-source
 ---
 # AnalysisServices.Databases
 

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Relationship functions"
-title: "Relationship functions (DAX) | Microsoft Docs"
+title: "Relationship functions (DAX)"
 ---
 # Relationship functions
 

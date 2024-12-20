@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Modes"
 title: "List.Modes"
+ms.subservice: m-source
 ---
 # List.Modes
 
@@ -27,3 +28,7 @@ List.Modes({"A", 1, 2, 3, 3, 4, 5, 5})
 **Output**
 
 `{3, 5}`
+
+## Related content
+
+[Equation criteria](list-functions.md#equation-criteria)

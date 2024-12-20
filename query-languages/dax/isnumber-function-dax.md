@@ -1,28 +1,28 @@
 ---
 description: "Learn more about: ISNUMBER"
-title: "ISNUMBER function (DAX) | Microsoft Docs"
+title: "ISNUMBER function (DAX)"
 ---
 # ISNUMBER
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Checks whether a value is a number, and returns TRUE or FALSE.  
-  
-## Syntax  
-  
+Checks whether a value is a number, and returns `TRUE` or `FALSE`.
+
+## Syntax
+
 ```dax
-ISNUMBER(<value>)  
+ISNUMBER(<value>)
 ```
-  
-### Parameters  
-  
-|Term|Definition|  
-|--------|--------------|  
-|value|The value you want to test.|  
-  
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|`value`|The value you want to test.|
+
 ## Return value
 
-TRUE if the value is numeric; otherwise FALSE.  
+`TRUE` if the value is numeric; otherwise `FALSE`.
 
 ## Remarks
 
@@ -30,19 +30,19 @@ TRUE if the value is numeric; otherwise FALSE.
 
 ## Example
 
-The following three samples show the behavior of ISNUMBER.  
-  
+The following three samples show the behavior of ISNUMBER.
+
 ```dax
-//RETURNS: Is number  
-= IF(ISNUMBER(0), "Is number", "Is Not number")  
-  
-//RETURNS: Is number  
-= IF(ISNUMBER(3.1E-1),"Is number", "Is Not number")  
-  
-//RETURNS: Is Not number  
-= IF(ISNUMBER("123"), "Is number", "Is Not number")  
+//RETURNS: Is number
+= IF(ISNUMBER(0), "Is number", "Is Not number")
+
+//RETURNS: Is number
+= IF(ISNUMBER(3.1E-1),"Is number", "Is Not number")
+
+//RETURNS: Is Not number
+= IF(ISNUMBER("123"), "Is number", "Is Not number")
 ```
-  
+
 ## Related content
 
-[Information functions](information-functions-dax.md)  
+[Information functions](information-functions-dax.md)

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.RemoveMatchingItems"
 title: "List.RemoveMatchingItems"
+ms.subservice: m-source
 ---
 # List.RemoveMatchingItems
 
@@ -27,3 +28,7 @@ List.RemoveMatchingItems({1, 2, 3, 4, 5, 5}, {1, 5})
 **Output**
 
 `{2, 3, 4}`
+
+## Related content
+
+[Equation criteria](list-functions.md#equation-criteria)

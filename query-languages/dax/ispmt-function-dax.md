@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ISPMT"
-title: "ISPMT function (DAX) | Microsoft Docs"
+title: "ISPMT function (DAX)"
 author: jajin7
 ---
 
@@ -18,12 +18,12 @@ ISPMT(<rate>, <per>, <nper>, <pv>)
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|rate|The interest rate for the investment.|
-|per|The period for which you want to find the interest. Must be between 0 and nper-1 (inclusive).|
-|nper|The total number of payment periods for the investment.|
-|pv|The present value of the investment. For a loan, pv is the loan amount.|
+|Term|Definition|
+|--------|--------------|
+|`rate`|The interest rate for the investment.|
+|`per`|The period for which you want to find the interest. Must be between 0 and nper-1 (inclusive).|
+|`nper`|The total number of payment periods for the investment.|
+|`pv`|The present value of the investment. For a loan, pv is the loan amount.|
 
 ## Return Value
 

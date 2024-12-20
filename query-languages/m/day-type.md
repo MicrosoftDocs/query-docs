@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Day.Type"
 title: "Day.Type"
+ms.subservice: m-source
 ---
 # Day.Type
 

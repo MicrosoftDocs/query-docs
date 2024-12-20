@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Average"
 title: "List.Average"
+ms.subservice: m-source
 ---
 # List.Average
 

@@ -4,6 +4,7 @@ description: Describes using functions in the Power Query M formula language
 ms.topic: conceptual
 ms.date: 7/7/2023
 ms.custom: "nonautomated-date"
+ms.subservice: m-specification
 ---
 
 
