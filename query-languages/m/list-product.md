@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Product"
 title: "List.Product"
+ms.subservice: m-source
 ---
 # List.Product
 

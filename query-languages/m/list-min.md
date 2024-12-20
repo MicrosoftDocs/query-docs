@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Min"
 title: "List.Min"
+ms.subservice: m-source
 ---
 # List.Min
 
@@ -41,3 +42,7 @@ List.Min({}, -1)
 **Output**
 
 `-1`
+
+## Related content
+
+[Comparison criteria](list-functions.md#comparison-criteria)

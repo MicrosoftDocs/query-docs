@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.AddRankColumn"
 title: "Table.AddRankColumn"
+ms.subservice: m-source
 ---
 # Table.AddRankColumn
 
@@ -44,3 +45,7 @@ Table.FromRecords({
     [CustomerID = 4, Name = "Ringo", Revenue = 50, RevenueRank = 4]
 })
 ```
+
+## Related content
+
+[Comparison criteria](table-functions.md#comparison-criteria)

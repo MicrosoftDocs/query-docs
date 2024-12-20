@@ -3,6 +3,7 @@ title: Standard numeric format strings
 description: In this article, learn to use standard numeric format strings to format common numeric types into text representations in Power Query M.
 ms.date: 9/30/2024
 ms.topic: reference
+ms.subservice: m-background
 ---
 
 # Standard numeric format strings

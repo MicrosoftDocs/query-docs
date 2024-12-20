@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.Schema"
 title: "Table.Schema"
+ms.subservice: m-source
 ---
 # Table.Schema
 

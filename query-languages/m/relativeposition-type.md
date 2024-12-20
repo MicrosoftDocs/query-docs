@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: RelativePosition.Type"
 title: "RelativePosition.Type"
+ms.subservice: m-source
 ---
 # RelativePosition.Type
 

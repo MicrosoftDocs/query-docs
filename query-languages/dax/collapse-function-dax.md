@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COLLAPSE"
-title: "COLLAPSE function (DAX) | Microsoft Docs"
+title: "COLLAPSE function (DAX)"
 ms.service: powerbi
 ms.subservice: dax
 ms.date: 02/20/2024
@@ -35,10 +35,10 @@ COLLAPSE ( <column>[, <column>] ... )
 
 |Term|Definition|
 |--------|--------------|
-|expression|The expression to be evaluated in the new context.|
-|axis|An axis reference.|
-|column|A column in the data grid.|
-|N|(Optional) The number of levels to collapse. If omitted, the default value is 1.|
+|`expression`|The expression to be evaluated in the new context.|
+|`axis`|An axis reference.|
+|`column`|A column in the data grid.|
+|`N`|(Optional) The number of levels to collapse. If omitted, the default value is 1.|
 
 ## Return value
 
@@ -71,8 +71,7 @@ The screenshot below shows the matrix with the three visual calculations.
 
 ## See also
 
-[EXPAND](expand-function-dax.md)  
-[EXPANDALL](expandall-function-dax.md)  
-[COLLAPSEALL](collapseall-function-dax.md)  
-
+[EXPAND](expand-function-dax.md)
+[EXPANDALL](expandall-function-dax.md)
+[COLLAPSEALL](collapseall-function-dax.md)
 

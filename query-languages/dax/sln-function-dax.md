@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: SLN"
-title: "SLN function (DAX) | Microsoft Docs"
+title: "SLN function (DAX)"
 author: jajin7
 ---
 
@@ -18,11 +18,11 @@ SLN(<cost>, <salvage>, <life>)
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|cost|The initial cost of the asset.|
-|salvage|The value at the end of the depreciation (sometimes called the salvage value of the asset).|
-|life|The number of periods over which the asset is depreciated (sometimes called the useful life of the asset).|
+|Term|Definition|
+|--------|--------------|
+|`cost`|The initial cost of the asset.|
+|`salvage`|The value at the end of the depreciation (sometimes called the salvage value of the asset).|
+|`life`|The number of periods over which the asset is depreciated (sometimes called the useful life of the asset).|
 
 ## Return Value
 
@@ -30,7 +30,7 @@ The straight-line depreciation for one period.
 
 ## Remarks
 
-- An error is returned if:  
+- An error is returned if:
   life = 0.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]

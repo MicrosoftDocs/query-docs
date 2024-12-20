@@ -4,6 +4,7 @@ title: "Types and type conversion"
 ms.topic: conceptual
 ms.date: 12/20/2024
 ms.custom: "nonautomated-date"
+ms.subservice: m-background
 ---
 
 # Types and type conversion
@@ -108,14 +109,15 @@ The Power Query M formula language has formulas to convert between types. The fo
 |Single.From(value as any) as number|Returns a Single number value from the given value.|  
 |Double.From(value as any) as number|Returns a Double number value from the given value.|  
 |Decimal.From(value as any) as number|Returns a Decimal number value from the given value.|  
-|Currency.From(value as any) as number|Returns a Currency number value from the given value.|
+|Currency.From(value as any) as number|Returns a Currency number value from the given value.|  
 |Percentage.From(value as any) as number|Returns a Percentage number value from the given value.|
   
 ### Text  
   
 |Type conversion|Description|  
 |-------------------|---------------|  
-|Text.From(value as any) as text|Returns the text representation of a number, date, time, datetime, datetimezone, logical, duration, or binary value.|  
+|Text.From(value as any) as text|Returns the text representation of a number, date, time, datetime, datetimezone, logical, duration or binary value.|  
+|Guid.From(value as text) as text|Returns the GUID representation of the specified text.|
   
 ### Logical  
   
@@ -130,6 +132,6 @@ The Power Query M formula language has formulas to convert between types. The fo
 |Type conversion|Description|  
 |-------------------|---------------|  
 |.FromText(text as text) as date, time, datetime, or datetimezone|Returns a date, time, datetime, or datetimezone value from a set of date formats and culture value.|  
-|.ToText(date, time, dateTime, or dateTimeZone as <br />date, time, datetime, or datetimezone) as text|Returns a text value from a date, time, datetime, or datetimezone value.|  
+|.ToText(date, time, dateTime, or dateTimeZone as date, time, datetime, or datetimezone) as text|Returns a text value from a date, time, datetime, or datetimezone value.|  
 |.From(value as any)|Returns a date, time, datetime, or datetimezone value from a value.|  
 |.ToRecord(date, time, dateTime, or dateTimeZone as date, time, datetime, or datetimezone)|Returns a record containing parts of a date, time, datetime, or datetimezone value.|  

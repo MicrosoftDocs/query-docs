@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: T.DIST.RT"
-title: "T.DIST.RT function (DAX) | Microsoft Docs"
+title: "T.DIST.RT function (DAX)"
 ---
 # T.DIST.RT
 
@@ -8,19 +8,19 @@ title: "T.DIST.RT function (DAX) | Microsoft Docs"
 
 Returns the right-tailed Student's t-distribution.
 
-## Syntax  
-  
+## Syntax
+
 ```dax
 T.DIST.RT(X,Deg_freedom)
 ```
-  
-### Parameters  
-  
-|Term|Definition|  
-|--------|--------------|  
-|X|The numeric value at which to evaluate the distribution.|  
-|Deg_freedom |An integer indicating the number of degrees of freedom.|
-  
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|`X`|The numeric value at which to evaluate the distribution.|
+|`Deg_freedom` |An integer indicating the number of degrees of freedom.|
+
 ## Return value
 
 The right-tailed Student's t-distribution.
@@ -29,8 +29,8 @@ The right-tailed Student's t-distribution.
 
 [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-## Example  
-  
+## Example
+
 ```dax
 EVALUATE { T.DIST.RT(1.959999998, 60) }
 ```
@@ -41,9 +41,9 @@ Returns
 |---------|
 |0.0273224649879605     |
 
-## Related content  
+## Related content
 
-[T.DIST](t-dist-function-dax.md)  
-[T.DIST.2T](t-dist-2t-function-dax.md)  
-[T.INV](t-inv-function-dax.md)  
-[T.INV.2t](t-inv-2t-function-dax.md)  
+[T.DIST](t-dist-function-dax.md)
+[T.DIST.2T](t-dist-2t-function-dax.md)
+[T.INV](t-inv-function-dax.md)
+[T.INV.2t](t-inv-2t-function-dax.md)

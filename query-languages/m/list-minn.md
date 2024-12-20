@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.MinN"
 title: "List.MinN"
+ms.subservice: m-source
 ---
 # List.MinN
 
@@ -31,3 +32,7 @@ List.MinN({3, 4, 5, -1, 7, 8, 2}, 5)
 **Output**
 
 `{-1, 2, 3, 4, 5}`
+
+## Related content
+
+[Comparison criteria](list-functions.md#comparison-criteria)

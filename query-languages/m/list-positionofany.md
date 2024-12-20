@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.PositionOfAny"
 title: "List.PositionOfAny"
+ms.subservice: m-source
 ---
 # List.PositionOfAny
 
@@ -29,3 +30,7 @@ List.PositionOfAny({1, 2, 3}, {2, 3})
 **Output**
 
 `1`
+
+## Related content
+
+[Equation criteria](list-functions.md#equation-criteria)

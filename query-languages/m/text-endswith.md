@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.EndsWith"
 title: "Text.EndsWith"
+ms.subservice: m-source
 ---
 # Text.EndsWith
 

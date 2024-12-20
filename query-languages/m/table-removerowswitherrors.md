@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.RemoveRowsWithErrors"
 title: "Table.RemoveRowsWithErrors"
+ms.subservice: m-source
 ---
 # Table.RemoveRowsWithErrors
 

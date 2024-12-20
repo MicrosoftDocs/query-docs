@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.PositionOf"
 title: "Table.PositionOf"
+ms.subservice: m-source
 ---
 # Table.PositionOf
 
@@ -86,3 +87,7 @@ Table.PositionOf(
 **Output**
 
 `{0, 2}`
+
+## Related content
+
+[Equation criteria](table-functions.md#equation-criteria)

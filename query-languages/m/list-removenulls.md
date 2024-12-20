@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.RemoveNulls"
 title: "List.RemoveNulls"
+ms.subservice: m-source
 ---
 # List.RemoveNulls
 

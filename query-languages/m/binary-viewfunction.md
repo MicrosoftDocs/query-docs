@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Binary.ViewFunction"
 title: "Binary.ViewFunction"
+ms.subservice: m-source
 ---
 # Binary.ViewFunction
 

@@ -3,6 +3,7 @@ title: "Custom numeric format strings"
 description: Learn how to create a custom numeric format string to format numeric data in .NET. A custom numeric format string has one or more custom numeric specifiers.
 ms.date: 9/30/2024
 ms.topic: reference
+ms.subservice: m-background
 ---
 # Custom numeric format strings
 

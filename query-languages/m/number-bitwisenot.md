@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Number.BitwiseNot"
 title: "Number.BitwiseNot"
+ms.subservice: m-source
 ---
 # Number.BitwiseNot
 

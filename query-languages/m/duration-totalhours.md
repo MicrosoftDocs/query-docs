@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Duration.TotalHours"
 title: "Duration.TotalHours"
+ms.subservice: m-source
 ---
 # Duration.TotalHours
 

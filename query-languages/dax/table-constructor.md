@@ -1,28 +1,28 @@
 ---
 description: "Learn more about: Table constructor"
-title: "Table constructor | Microsoft Docs"
+title: "Table constructor"
 ---
 # Table constructor
 
 Returns a table of one or more columns.
-  
-## Syntax  
-  
+
+## Syntax
+
 ```dax
 { <scalarExpr1>, <scalarExpr2>, … } 
 { ( <scalarExpr1>, <scalarExpr2>, … ), ( <scalarExpr1>, <scalarExpr2>, … ), … }
 ```
-  
-### Parameters  
-  
-|Term|Definition|  
-|--------|--------------|  
-|scalarExprN|Any DAX expression that returns a scalar value.|  
-  
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|`scalarExprN`|Any DAX expression that returns a scalar value.|
+
 ## Return value
 
 A table of one or more columns. When there is only one column, the name of the column is Value. When there are N columns where N > 1, the names of the columns from left to right are Value1, Value2, …, ValueN.
-  
+
 ## Remarks
 
 - The first syntax returns a table of a single column. The second syntax returns a table of one or more columns.
@@ -68,7 +68,7 @@ EVALUATE
 
 Returns,
 
-[Value1]  |[Value2]  |[Value3]  |[Value4]  
+[Value1]  |[Value2]  |[Value3]  |[Value4]
 ---------|---------|---------|---------
 1.5    |    1/1/2017     |   199.99      |     A
 2.5     |   1/2/2017      |    249.99     |         B
@@ -88,5 +88,5 @@ Returns the following table of a single column of String data type:
 |---------|
 |1     |
 |1/1/2017     |
-|TRUE    |
+|``TRUE``    |
 |A  |

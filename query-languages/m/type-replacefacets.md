@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Type.ReplaceFacets"
 title: "Type.ReplaceFacets"
+ms.subservice: m-source
 ---
 # Type.ReplaceFacets
 

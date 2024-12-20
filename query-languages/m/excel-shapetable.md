@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Excel.ShapeTable"
 title: "Excel.ShapeTable"
+ms.subservice: m-source
 ---
 # Excel.ShapeTable
 

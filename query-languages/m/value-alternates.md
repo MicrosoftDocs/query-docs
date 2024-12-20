@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Value.Alternates"
 title: "Value.Alternates"
+ms.subservice: m-source
 ---
 # Value.Alternates
 

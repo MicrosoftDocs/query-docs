@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Split"
 title: "List.Split"
+ms.subservice: m-source
 ---
 # List.Split
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.SingleRow"
 title: "Table.SingleRow"
+ms.subservice: m-source
 ---
 # Table.SingleRow
 

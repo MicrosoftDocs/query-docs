@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.CombineColumnsToRecord"
 title: "Table.CombineColumnsToRecord"
+ms.subservice: m-source
 ---
 # Table.CombineColumnsToRecord
 

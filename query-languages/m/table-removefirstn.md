@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.RemoveFirstN"
 title: "Table.RemoveFirstN"
+ms.subservice: m-source
 ---
 # Table.RemoveFirstN
   

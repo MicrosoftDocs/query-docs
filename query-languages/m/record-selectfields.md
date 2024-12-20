@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Record.SelectFields"
 title: "Record.SelectFields"
+ms.subservice: m-source
 ---
 # Record.SelectFields
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.RenameColumns"
 title: "Table.RenameColumns"
+ms.subservice: m-source
 ---
 # Table.RenameColumns
 
@@ -12,7 +13,7 @@ Table.RenameColumns(<b>table</b> as table, <b>renames</b> as list, optional <b>m
   
 ## About
 
-Performs the given renames to the columns in table `table`. A replacement operation `renames` consists of a list of two values, the old column name and new column name, provided in a list. If the column doesn't exist, an exception is thrown unless the optional parameter `missingField` specifies an alternative (eg. `MissingField.UseNull` or `MissingField.Ignore`).
+Performs the given renames to the columns in table `table`. A replacement operation `renames` consists of a list of two values, the old column name and new column name, provided in a list. If the column doesn't exist, an exception is thrown unless the optional parameter `missingField` specifies an alternative (eg. [MissingField.UseNull](missingfield-type.md) or [MissingField.Ignore](missingfield-type.md)).
 
 ## Example 1
 
