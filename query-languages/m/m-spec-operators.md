@@ -2,7 +2,7 @@
 title: M Language Operators 
 description: Describes using operators in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 5/25/2023
+ms.date: 1/23/2025
 ms.custom: "nonautomated-date"
 ---
 
@@ -1280,7 +1280,7 @@ The type assertion operator `x as y` is defined for the following types of value
 | --- | --- | --- |
 | `type any` | _primitive-or-nullable-primitive-type_ | `type any` |
 
-The expression `x as y` asserts that the value `x` is compatible with `y` as per the `is` operator. If it is not compatible, an error is raised. `y` must be a _primitive-or-nullable-primitive-type_.
+The expression `x as y` asserts that the value `x` is compatible with `y` as per the `is` operator. If it is not compatible, an error is raised. `y` must be a primitive type or a nullable primitive type.
 
 _as-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;equality-expression<br/>
