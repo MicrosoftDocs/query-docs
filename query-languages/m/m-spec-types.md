@@ -2,7 +2,7 @@
 title: M Language types 
 description: Describes using types in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 1/31/2024
+ms.date: 1/3/2025
 ms.custom: "nonautomated-date"
 ---
 
@@ -26,7 +26,7 @@ A _type value_ is a value that _classifies_ other values. A value that is classi
 
 The set of _primitive types_ includes the types of primitive values, and a number of _abstract types_, which are types that do not uniquely classify any values: `function`, `table`, `any`, `anynonnull` and `none`. All function values conform to the abstract type `function`, all table values to the abstract type `table`, all values to the abstract type `any`, all non-null values to the abstract type `anynonnull`, and no values to the abstract type `none`. An expression of type `none` must raise an error or fail to terminate since no value could be produced that conforms to type `none`. Note that the primitive types `function` and `table` are abstract because no function or table is directly of those types, respectively. The primitive types `record` and `list` are non-abstract because they represent an open record with no defined fields and a list of type any, respectively.
 
-The set of _primitive types_ plus their nullable counterparts are known as the _primitive-or-nullable-primitive-types_ or alternately as the _non-custom types_. 
+All types that are not members of the closed set of primitive types plus their nullable counterparts are collectively referred to as _custom types_. Custom types can be written using a `type-expression`:
 
 _primitive-type:_ one of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`any anynonnull binary date datetime datetimezone duration function list logical`<br/>
@@ -365,7 +365,7 @@ Value.Type( Value.ReplaceType( {1}, type {number} )
 
 Type equivalence is not defined in M. An M implementation may optionally choose to use its own rules to perform equality comparisons between type values. Comparing two type values for equality should evaluate to `true` if they are considered identical by the implementation, and `false` otherwise. In either case, the response returned must be consistent if the same two values are repeatedly compared. Note that within a given implementation, comparing some identical type values (such as `(type text) = (type text)`) may return `true`, while comparing others (such as `(type [a = text]) = (type [a = text])`) may not.
 
-Compatibility between a given type and a _non-custom type_ can be determined using the library function `Type.Is`, which accepts an arbitrary type value as its first and a _primitive or nullable primitive_ value as its second argument:
+Compatibility between a given type and either a primitive type or a nullable primitive type can be determined using the library function `Type.Is`, which accepts an arbitrary type value as its first argument and a primitive or nullable primitive type value as its second argument:
 
 ```powerquery-m
 Type.Is(type text, type nullable text)  // true 
