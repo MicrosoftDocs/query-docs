@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Uri.EscapeDataString"
 title: "Uri.EscapeDataString"
+ms.subservice: m-source
 ---
 # Uri.EscapeDataString
 

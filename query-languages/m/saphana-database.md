@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SapHana.Database"
 title: "SapHana.Database"
+ms.subservice: m-source
 ---
 # SapHana.Database
 

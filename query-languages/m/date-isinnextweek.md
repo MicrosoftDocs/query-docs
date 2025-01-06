@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Date.IsInNextWeek"
 title: "Date.IsInNextWeek"
+ms.subservice: m-source
 ---
 # Date.IsInNextWeek
 

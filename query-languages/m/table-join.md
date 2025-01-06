@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.Join"
 title: "Table.Join"
+ms.subservice: m-source
 ---
 # Table.Join
 

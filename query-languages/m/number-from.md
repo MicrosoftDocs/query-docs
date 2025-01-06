@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Number.From"
 title: "Number.From"
+ms.subservice: m-source
 ---
 # Number.From
 
@@ -65,3 +66,9 @@ Number.From("12.3%")
 **Output**
 
 `0.123`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)
+* [Standard numeric format strings](standard-numeric-format-strings.md)
+* [Custom numeric format strings](custom-numeric-format-strings.md)

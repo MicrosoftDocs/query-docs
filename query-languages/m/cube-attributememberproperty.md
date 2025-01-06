@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Cube.AttributeMemberProperty"
 title: "Cube.AttributeMemberProperty"
+ms.subservice: m-source
 ---
 # Cube.AttributeMemberProperty
 

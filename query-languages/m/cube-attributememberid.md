@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Cube.AttributeMemberId"
 title: "Cube.AttributeMemberId"
+ms.subservice: m-source
 ---
 # Cube.AttributeMemberId
 

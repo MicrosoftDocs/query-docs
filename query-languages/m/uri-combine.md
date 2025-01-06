@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Uri.Combine"
 title: "Uri.Combine"
+ms.subservice: m-source
 ---
 # Uri.Combine
 

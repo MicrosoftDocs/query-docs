@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DateTime.From"
 title: "DateTime.From"
+ms.subservice: m-source
 ---
 # DateTime.From
 
@@ -49,3 +50,9 @@ DateTime.From(#date(1975, 4, 4))
 **Output**
 
 `#datetime(1975, 4, 4, 0, 0, 0)`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)
+* [Standard date and time format strings](standard-date-and-time-format-strings.md)
+* [Custom date and time format strings](custom-date-and-time-format-strings.md)

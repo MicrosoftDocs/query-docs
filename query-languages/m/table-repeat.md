@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.Repeat"
 title: "Table.Repeat"
+ms.subservice: m-source
 ---
 # Table.Repeat
 

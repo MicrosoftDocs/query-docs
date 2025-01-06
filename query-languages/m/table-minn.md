@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.MinN"
 title: "Table.MinN"
+ms.subservice: m-source
 ---
 # Table.MinN
 
@@ -64,3 +65,7 @@ Table.MinN(
 **Output**
 
 `Table.FromRecords({})`
+
+## Related content
+
+[Comparison criteria](table-functions.md#comparison-criteria)

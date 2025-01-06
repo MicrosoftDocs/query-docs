@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: TBILLEQ"
-title: "TBILLEQ function (DAX) | Microsoft Docs"
+title: "TBILLEQ function (DAX)"
 author: jajin7
 ---
 
@@ -18,11 +18,11 @@ TBILLEQ(<settlement>, <maturity>, <discount>)
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|settlement|The Treasury bill's settlement date. The security settlement date is the date after the issue date when the Treasury bill is traded to the buyer.|
-|maturity|The Treasury bill's maturity date. The maturity date is the date when the Treasury bill expires.|
-|discount|The Treasury bill's discount rate.|
+|Term|Definition|
+|--------|--------------|
+|`settlement`|The Treasury bill's settlement date. The security settlement date is the date after the issue date when the Treasury bill is traded to the buyer.|
+|`maturity`|The Treasury bill's maturity date. The maturity date is the date when the Treasury bill expires.|
+|`discount`|The Treasury bill's discount rate.|
 
 ## Return Value
 

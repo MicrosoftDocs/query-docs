@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.ContainsAny"
 title: "Table.ContainsAny"
+ms.subservice: m-source
 ---
 # Table.ContainsAny
 
@@ -83,3 +84,7 @@ Table.ContainsAny(
 **Output**
 
 `true`
+
+## Related content
+
+[Equation criteria](table-functions.md#equation-criteria)

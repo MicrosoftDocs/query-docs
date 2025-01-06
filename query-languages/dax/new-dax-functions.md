@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: New DAX functions"
-title: "New DAX functions | Microsoft Docs"
+title: "New DAX functions"
 ---
 # New DAX functions
 
@@ -10,7 +10,7 @@ While functions and functionality are being updated all the time, only those upd
 
 > [!IMPORTANT]
 > Not all functions are supported in all versions of Power BI Desktop, Analysis Services, and Power Pivot in Excel. New and updated functions are typically first introduced in Power BI Desktop, and then later in Analysis Services, Power Pivot in Excel, and tools.
-  
+
 ## New functions
 
 |Function  |Month  | Description |

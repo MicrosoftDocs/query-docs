@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Single.From"
 title: "Single.From"
+ms.subservice: m-source
 ---
 # Single.From
 
@@ -27,3 +28,7 @@ Single.From("1.5")
 **Output**
 
 `1.5`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

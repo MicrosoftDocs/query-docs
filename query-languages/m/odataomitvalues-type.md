@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ODataOmitValues.Type"
 title: "ODataOmitValues.Type"
+ms.subservice: m-source
 ---
 # ODataOmitValues.Type
 

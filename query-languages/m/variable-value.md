@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Variable.Value"
 title: "Variable.Value"
+ms.subservice: m-source
 ---
 # Variable.Value
 

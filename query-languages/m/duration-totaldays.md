@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Duration.TotalDays"
 title: "Duration.TotalDays"
+ms.subservice: m-source
 ---
 # Duration.TotalDays
 

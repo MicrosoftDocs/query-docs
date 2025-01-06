@@ -1,36 +1,36 @@
 ---
 description: "Learn more about: ALLCROSSFILTERED"
-title: "ALLCROSSFILTERED function (DAX) | Microsoft Docs"
+title: "ALLCROSSFILTERED function (DAX)"
 ---
 # ALLCROSSFILTERED
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Clear all filters which are applied to a table.
-  
-## Syntax  
-  
+
+## Syntax
+
 ```dax
 ALLCROSSFILTERED(<table>)
 ```
-  
-### Parameters  
-  
-|Term|Definition|  
-|--------|--------------|  
-|table|The table that you want to clear filters on. |  
-  
-## Return value  
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|`table`|The table that you want to clear filters on. |
+
+## Return value
 
 N/A. See remarks.
-  
-## Remarks  
+
+## Remarks
 
 - ALLCROSSFILTERED can only be used to clear filters but not to return a table.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-## Example  
+## Example
 
 ```dax
 DEFINE

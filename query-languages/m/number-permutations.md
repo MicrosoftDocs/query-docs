@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Number.Permutations"
 title: "Number.Permutations"
+ms.subservice: m-source
 ---
 # Number.Permutations
 

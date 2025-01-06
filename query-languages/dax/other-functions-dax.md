@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: Other functions"
-title: "Other functions (DAX) | Microsoft Docs"
+title: "Other functions (DAX)"
 ---
 # Other functions
 
 These functions perform unique actions that cannot be defined by any of the categories.
-  
-## In this category  
+
+## In this category
 
 |Function  |Description  |
 |---------|---------|

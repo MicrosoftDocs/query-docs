@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Cube.AddAndExpandDimensionColumn"
 title: "Cube.AddAndExpandDimensionColumn"
+ms.subservice: m-source
 ---
 # Cube.AddAndExpandDimensionColumn
 

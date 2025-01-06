@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.ReplaceMatchingRows"
 title: "Table.ReplaceMatchingRows"
+ms.subservice: m-source
 ---
 # Table.ReplaceMatchingRows
 
@@ -45,3 +46,7 @@ Table.FromRecords({
     [a = -1, b = -2]
 })
 ```
+
+## Related content
+
+[Equation criteria](table-functions.md#equation-criteria)

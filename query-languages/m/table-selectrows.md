@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.SelectRows"
 title: "Table.SelectRows"
+ms.subservice: m-source
 ---
 # Table.SelectRows
 

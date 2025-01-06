@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.Contains"
 title: "Text.Contains"
+ms.subservice: m-source
 ---
 # Text.Contains
 
@@ -102,3 +103,7 @@ in
     {"PTY-507", #date(2023,6,4), 110}
 })
 ```
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

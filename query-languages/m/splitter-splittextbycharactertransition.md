@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Splitter.SplitTextByCharacterTransition"
 title: "Splitter.SplitTextByCharacterTransition"
+ms.subservice: m-source
 ---
 # Splitter.SplitTextByCharacterTransition
 

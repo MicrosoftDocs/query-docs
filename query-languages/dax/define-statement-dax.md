@@ -1,13 +1,13 @@
 ---
 description: "Learn more about: DEFINE"
-title: "DEFINE keyword (DAX) | Microsoft Docs"
+title: "DEFINE keyword (DAX)"
 ---
 # DEFINE
-  
+
 Introduces a statement with one or more entity definitions that can be applied to one or more EVALUATE statements of a [DAX query](dax-queries.md).
 
-## Syntax  
-  
+## Syntax
+
 ```dax
 [DEFINE 
     (
@@ -20,14 +20,14 @@ Introduces a statement with one or more entity definitions that can be applied t
 
 (EVALUATE <table expression>) +
 ```
-  
+
 ### Parameters
-  
-|Term|Definition|  
-|--------|--------------|  
-|Entity|MEASURE, VAR, TABLE<sup>[1](#not-rec)</sup>, or COLUMN<sup>[1](#not-rec)</sup>. |
-|name|The name of a measure, var, table, or column definition. It cannot be an expression. The name does not have to be unique. The name exists only for the duration of the query.|  
-|expression|Any DAX expression that returns a table or scalar value. The expression can use any of the defined entities. If there is a need to convert a scalar expression into a table expression, wrap the expression inside a table constructor with curly braces `{}`, or use the `ROW()` function to return a single row table.|
+
+|Term|Definition|
+|--------|--------------|
+|`Entity`|MEASURE, VAR, TABLE<sup>[1](#not-rec)</sup>, or COLUMN<sup>[1](#not-rec)</sup>. |
+|`name`|The name of a measure, var, table, or column definition. It cannot be an expression. The name does not have to be unique. The name exists only for the duration of the query.|
+|`expression`|Any DAX expression that returns a table or scalar value. The expression can use any of the defined entities. If there is a need to convert a scalar expression into a table expression, wrap the expression inside a table constructor with curly braces `{}`, or use the `ROW()` function to return a single row table.|
 
 <a name="not-rec">[1]</a> **Caution:** Query scoped TABLE and COLUMN definitions are meant for internal use only. While you can define TABLE and COLUMN expressions for a query without syntax error, they may produce runtime errors and are not recommended.
 

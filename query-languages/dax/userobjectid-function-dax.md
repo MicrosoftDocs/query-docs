@@ -1,21 +1,21 @@
 ---
 description: "Learn more about: USEROBJECTID"
-title: "USEROBJECTID function (DAX) | Microsoft Docs"
+title: "USEROBJECTID function (DAX)"
 ---
 # USEROBJECTID
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns the current user's Object ID from Microsoft Entra ID or security identifier (SID).
-  
-## Syntax  
-  
+
+## Syntax
+
 ```dax
-USEROBJECTID()  
+USEROBJECTID()
 ```
-  
-### Parameters  
-  
+
+### Parameters
+
 This expression has no parameters.
 
 ## Return value

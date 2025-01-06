@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: RATE"
-title: "RATE function (DAX) | Microsoft Docs"
+title: "RATE function (DAX)"
 author: jajin7
 ---
 
@@ -18,18 +18,18 @@ RATE(<nper>, <pmt>, <pv>[, <fv>[, <type>[, <guess>]]])
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|nper|The total number of payment periods in an annuity.|
-|pmt|The payment made each period and cannot change over the life of the annuity. Typically, pmt includes principal and interest but no other fees or taxes.|
-|pv|The present value — the total amount that a series of future payments is worth now.|
-|fv|(Optional) The future value, or a cash balance you want to attain after the last payment is made. If fv is omitted, it is assumed to be 0 (the future value of a loan, for example, is 0).|
-|type|(Optional) The number 0 or 1 which indicates when payments are due. If type is omitted, it is assumed to be 0. The accepted values are listed below this table.|
-|guess|(Optional) Your guess for what the rate will be. <br/> - If omitted, it is assumed to be 10%. <br/> - If RATE does not converge, try different values for guess. RATE usually converges if guess is between 0 and 1.|
+|Term|Definition|
+|--------|--------------|
+|`nper`|The total number of payment periods in an annuity.|
+|`pmt`|The payment made each period and cannot change over the life of the annuity. Typically, pmt includes principal and interest but no other fees or taxes.|
+|`pv`|The present value — the total amount that a series of future payments is worth now.|
+|`fv`|(Optional) The future value, or a cash balance you want to attain after the last payment is made. If fv is omitted, it is assumed to be 0 (the future value of a loan, for example, is 0).|
+|`type`|(Optional) The number 0 or 1 which indicates when payments are due. If type is omitted, it is assumed to be 0. The accepted values are listed below this table.|
+|`guess`|(Optional) Your guess for what the rate will be. <br/> - If omitted, it is assumed to be 10%. <br/> - If RATE does not converge, try different values for guess. RATE usually converges if guess is between 0 and 1.|
 
-The **type** parameter accepts the following values:
+The `type` parameter accepts the following values:
 
-| **Set type equal to** | **If payments are due**        |
+| **Set `type` equal to** | **If payments are due**        |
 | --------------------- | ------------------------------ |
 | 0 or omitted          | At the end of the period       |
 | 1                     | At the beginning of the period |

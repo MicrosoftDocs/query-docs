@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.ToList"
 title: "Table.ToList"
+ms.subservice: m-source
 ---
 # Table.ToList
 
@@ -34,3 +35,7 @@ Table.ToList(
 **Output**
 
 `{"1,Bob,123-4567", "2,Jim,987-6543", "3,Paul,543-7890"}`
+
+## Related content
+
+[Combiner functions](combiner-functions.md)

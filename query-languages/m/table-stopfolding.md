@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.StopFolding"
 title: "Table.StopFolding"
+ms.subservice: m-source
 ---
 # Table.StopFolding
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Type.Facets"
 title: "Type.Facets"
+ms.subservice: m-source
 ---
 # Type.Facets
 

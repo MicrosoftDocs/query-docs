@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: LINESTX"
-title: "LINESTX function (DAX) | Microsoft Docs"
+title: "LINESTX function (DAX)"
 author: masanto-msft
 ms.author: masanto
 ---
@@ -21,10 +21,10 @@ LINESTX ( <table>, <expressionY>, <expressionX>[, …][, <const>] )
 
 |Term|Definition|
 |--------|--------------|
-|table|The table containing the rows for which the expressions will be evaluated.|
-|expressionY|The expression to be evaluated for each row of the table, to obtain the known y-values. Must have scalar type. |
-|expressionX|The expressions to be evaluated for each row of the table, to obtain the known x-values. Must have scalar type. At least one must be provided.|
-|const|(Optional) A constant TRUE/FALSE value specifying whether to force the constant **Intercept** to equal 0.</br>If TRUE or omitted, the **Intercept** value is calculated normally; If FALSE, the **Intercept** value is set to zero.|
+|`table`|The table containing the rows for which the expressions will be evaluated.|
+|`expressionY`|The expression to be evaluated for each row of the table, to obtain the known y-values. Must have scalar type. |
+|`expressionX`|The expressions to be evaluated for each row of the table, to obtain the known x-values. Must have scalar type. At least one must be provided.|
+|`const`|(Optional) A constant `TRUE`/`FALSE` value specifying whether to force the constant **Intercept** to equal 0.</br>If `TRUE` or omitted, the **Intercept** value is calculated normally; If `FALSE`, the **Intercept** value is set to zero.|
 
 ## Return value
 
@@ -119,5 +119,5 @@ Total Sales = Slope1 * Age + Slope2 * NumOfChildren + Intercept
 
 ## Related content
 
-[LINEST](linest-function-dax.md)  
-[Statistical functions](statistical-functions-dax.md)  
+[LINEST](linest-function-dax.md)
+[Statistical functions](statistical-functions-dax.md)

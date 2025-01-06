@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Csv.Document"
 title: "Csv.Document"
+ms.subservice: m-source
 ---
 # Csv.Document
 
@@ -17,7 +18,7 @@ Returns the contents of the CSV document as a table.
 * `columns` can be null, the number of columns, a list of column names, a table type, or an options record.
 * `delimiter` can be a single character, a list of characters, or the value `""`, which indicates rows should be split by consecutive whitespace characters. Default: `","`.
 * Refer to [ExtraValues.Type](extravalues-type.md) for the supported values of `extraValues`.
-* `encoding` specifies the text encoding type.
+* `encoding` specifies the [text encoding](textencoding-type.md) type.
 
 If a record is specified for `columns` (and `delimiter`, `extraValues`, and `encoding` are null), the following record fields may be provided:
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.Distinct"
 title: "Table.Distinct"
+ms.subservice: m-source
 ---
 # Table.Distinct
 
@@ -66,3 +67,7 @@ Table.FromRecords({
     [a = "A", b = "b"]
 })
 ```
+
+## Related content
+
+[Equation criteria](table-functions.md#equation-criteria)

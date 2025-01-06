@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.FuzzyGroup"
 title: "Table.FuzzyGroup"
+ms.subservice: m-source
 ---
 # Table.FuzzyGroup
   
@@ -57,3 +58,7 @@ Table.FromRecords({
     [Location = "Vancouver", Count = 3]
 })
 ```
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Excel.CurrentWorkbook"
 title: "Excel.CurrentWorkbook"
+ms.subservice: m-source
 ---
 # Excel.CurrentWorkbook
 

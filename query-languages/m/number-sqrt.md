@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Number.Sqrt"
 title: "Number.Sqrt"
+ms.subservice: m-source
 ---
 # Number.Sqrt
 

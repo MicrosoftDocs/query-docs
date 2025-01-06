@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.Transpose"
 title: "Table.Transpose"
+ms.subservice: m-source
 ---
 # Table.Transpose
 

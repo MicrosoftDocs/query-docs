@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Comparer.Equals"
 title: "Comparer.Equals"
+ms.subservice: m-source
 ---
 # Comparer.Equals
 
@@ -35,3 +36,7 @@ Comparer.Equals(Comparer.FromCulture("en-US"), "1", "A")
 **Output**
 
 `false`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

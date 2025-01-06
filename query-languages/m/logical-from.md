@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Logical.From"
 title: "Logical.From"
+ms.subservice: m-source
 ---
 # Logical.From
 

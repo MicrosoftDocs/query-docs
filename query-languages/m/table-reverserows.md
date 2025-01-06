@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.ReverseRows"
 title: "Table.ReverseRows"
+ms.subservice: m-source
 ---
 # Table.ReverseRows
 

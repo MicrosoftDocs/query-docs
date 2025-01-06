@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.ToList"
 title: "Text.ToList"
+ms.subservice: m-source
 ---
 # Text.ToList
 

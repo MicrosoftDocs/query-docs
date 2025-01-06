@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Byte.From"
 title: "Byte.From"
+ms.subservice: m-source
 ---
 # Byte.From
 
@@ -41,3 +42,7 @@ Byte.From("4.5", null, RoundingMode.AwayFromZero)
 **Output**
 
 `5`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

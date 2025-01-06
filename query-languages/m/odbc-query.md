@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Odbc.Query"
 title: "Odbc.Query"
+ms.subservice: m-source
 ---
 # Odbc.Query
 

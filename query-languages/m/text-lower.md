@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.Lower"
 title: "Text.Lower"
+ms.subservice: m-source
 ---
 # Text.Lower
 
@@ -27,3 +28,7 @@ Text.Lower("AbCd")
 **Output**
 
 `"abcd"`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

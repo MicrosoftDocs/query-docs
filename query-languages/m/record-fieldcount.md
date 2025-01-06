@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Record.FieldCount"
 title: "Record.FieldCount"
+ms.subservice: m-source
 ---
 # Record.FieldCount
 
