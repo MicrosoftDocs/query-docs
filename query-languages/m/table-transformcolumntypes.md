@@ -13,7 +13,10 @@ Table.TransformColumnTypes(<b>table</b> as table, <b>typeTransformations</b> as 
   
 ## About
 
-Returns a table from the input `table` by applying the transform operation to the columns specified in the parameter `typeTransformations` (where format is { column name, [type](/powerquery-m/m-spec-types#primitive-types) name}), using the specified culture in the optional parameter [`culture`](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c) (for example, "en-US"). If the column doesn't exist, an exception is thrown.
+Returns a table from the input `table` by applying the transform operation to the columns specified in the parameter `typeTransformations` (where format is {column name, type name}), using the specified culture in the optional parameter `culture` (for example, "en-US"). If the column doesn't exist, an exception is thrown.
+
+- [Type](/powerquery-m/type-conversion) - Power Query M uses types to classify values to have a more structured data set. The article linked describes the most commonly used types.
+- [Culture](/powerquery-m/how-culture-affects-text-formatting) - The default culture is set to the system locale ([Windows](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c), MacOS) of a particular document where your queries are first authored. 
 
 ## Example 1
 
