@@ -1,10 +1,10 @@
 ---
-description: "Learn more about: SAMPLESCARTESIANPOINTSBYCOVER"
-title: "SAMPLESCARTESIANPOINTSBYCOVER function (DAX) | Microsoft Docs"
+description: "Learn more about: SAMPLECARTESIANPOINTSBYCOVER"
+title: "SAMPLECARTESIANPOINTSBYCOVER function (DAX) | Microsoft Docs"
 author: jajin7
 ---
 
-# SAMPLESCARTESIANPOINTSBYCOVER
+# SAMPLECARTESIANPOINTSBYCOVER
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
@@ -33,8 +33,8 @@ SAMPLECARTESIANPOINTSBYCOVER(<Size>, <Table>, <XAxis>, <YAxis>[, <Radius>] [, <M
 The sample from Table consisting of Size number of rows.
 
 ## Remarks
-- if Size is less than or equal to 0, SAMPLECARTESIANPOINTSBYCOVER returns an empty table
-- if Radius is specified, MaxMinRatio and MaxBlankRatio need to be specified and set to a value larger than 1. If not, SAMPLECARTESIANPOINTSBYCOVER returns an error
+- If Size is less than or equal to 0, SAMPLECARTESIANPOINTSBYCOVER returns an empty table
+- If Radius is specified, MaxMinRatio and MaxBlankRatio need to be specified and set to a value larger than 1. If not, SAMPLECARTESIANPOINTSBYCOVER returns an error
 - Set MaxMinRatio to the maximum of Radius divided by the minimum of Radius. For example, if the minimum Radius is 20 and the maximum Radius is 60, the MaxMinRatio parameter should be set to 60/20 = 3.
 - Set MaxBlankRatio to the maximum of Radius divided by the Radius for blank values. For example, if the maximum Radius is 60 and the Radius for blank values is 6, then MaxBlankRatio should be set to 60/6 = 10.
 
