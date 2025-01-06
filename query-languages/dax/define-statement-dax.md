@@ -13,7 +13,7 @@ Introduces a statement with one or more entity definitions that can be applied t
     (
      (MEASURE <table name>[<measure name>] = <scalar expression>) | 
      (VAR <var name> = <table or scalar expression>) |
-     (TABLE <table name> = <table expression>) | 
+     (TABLE <table name> = <virtual table definition>) | 
      (COLUMN <table name>[<column name>] = <scalar expression>) | 
     ) + 
 ]
@@ -43,9 +43,15 @@ Introduces a statement with one or more entity definitions that can be applied t
 
 - To learn more about how a DEFINE statement is used, see [DAX queries](dax-queries.md).
 
+- To learn more about virtual column, see [Virtual Column](virtual-column-statement-dax.md)
+
+- To learn more about virtual table, see [Virtual Table](virtual-table-statement-dax.md)
+
 ## Related content
 
-[EVALUATE](evaluate-statement-dax.md)
-[VAR](var-dax.md)
-[MEASURE](measure-statement-dax.md)
+[EVALUATE](evaluate-statement-dax.md)  
+[VAR](var-dax.md)  
+[MEASURE](measure-statement-dax.md)  
+[Virtual Column](virtual-column-statement-dax.md)
+[Virtual Table](virtual-table-statement-dax.md)
 [DAX queries](dax-queries.md)
