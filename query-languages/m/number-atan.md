@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Number.Atan"
 title: "Number.Atan"
+ms.subservice: m-source
 ---
 # Number.Atan
 

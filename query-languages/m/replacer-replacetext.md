@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Replacer.ReplaceText"
 title: "Replacer.ReplaceText"
+ms.subservice: m-source
 ---
 # Replacer.ReplaceText
 

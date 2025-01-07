@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.ContainsAny"
 title: "List.ContainsAny"
+ms.subservice: m-source
 ---
 # List.ContainsAny
 
@@ -41,3 +42,7 @@ List.ContainsAny({1, 2, 3, 4, 5}, {6, 7})
 **Output**
 
 `false`
+
+## Related content
+
+[Equation criteria](list-functions.md#equation-criteria)

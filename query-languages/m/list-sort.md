@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Sort"
 title: "List.Sort"
+ms.subservice: m-source
 ---
 # List.Sort
 

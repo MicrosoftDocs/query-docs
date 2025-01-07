@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.PositionOfAny"
 title: "Table.PositionOfAny"
+ms.subservice: m-source
 ---
 # Table.PositionOfAny
 
@@ -69,3 +70,7 @@ Table.PositionOfAny(
 **Output**
 
 `{0, 1, 2}`
+
+## Related content
+
+[Equation criteria](table-functions.md#equation-criteria)

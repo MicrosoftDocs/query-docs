@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DateTime.IsInNextSecond"
 title: "DateTime.IsInNextSecond"
+ms.subservice: m-source
 ---
 # DateTime.IsInNextSecond
 

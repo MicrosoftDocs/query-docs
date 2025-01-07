@@ -4,6 +4,7 @@ description: Describes using types in the Power Query M formula language
 ms.topic: conceptual
 ms.date: 1/3/2025
 ms.custom: "nonautomated-date"
+ms.subservice: m-specification
 ---
 
 # Types

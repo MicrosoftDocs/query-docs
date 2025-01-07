@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Binary.ApproximateLength"
 title: "Binary.ApproximateLength"
+ms.subservice: m-source
 ---
 # Binary.ApproximateLength
 

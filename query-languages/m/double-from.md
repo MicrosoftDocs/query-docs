@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Double.From"
 title: "Double.From"
+ms.subservice: m-source
 ---
 # Double.From
 
@@ -27,3 +28,7 @@ Double.From("4.5")
 **Output**
 
 `4.5`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

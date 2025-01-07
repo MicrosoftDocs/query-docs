@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DateTime.ToText"
 title: "DateTime.ToText"
+ms.subservice: m-source
 ---
 # DateTime.ToText
 
@@ -14,7 +15,7 @@ DateTime.ToText(<b>dateTime</b> as nullable datetime, optional <b>options</b> as
 
 Returns a textual representation of `dateTime`. An optional `record` parameter, `options`, may be provided to specify additional properties. `culture` is only used for legacy workflows. The `record` can contain the following fields:
 
-* `Format`: A `text` value indicating the format to use. For more details, go to https://go.microsoft.com/fwlink/?linkid=2180104 and https://go.microsoft.com/fwlink/?linkid=2180105. Omitting this field or providing `null` will result in formatting the date using the default defined by `Culture`.
+* `Format`: A `text` value indicating the format to use. For more details, go to [Standard date and time format strings](standard-date-and-time-format-strings.md) and [Custom date and time format strings](custom-date-and-time-format-strings.md). Omitting this field or providing `null` will result in formatting the date using the default defined by `Culture`.
 
 * `Culture`: When `Format` is not null, `Culture` controls some format specifiers. For example, in `"en-US"` `"MMM"` is `"Jan", "Feb", "Mar", ...`, while in `"ru-RU"` `"MMM"` is `"янв", "фев", "мар", ...`. When `Format` is `null`, `Culture` controls the default format to use. When `Culture` is `null` or omitted, [Culture.Current](culture-current.md) is used.
 
@@ -61,3 +62,9 @@ DateTime.ToText(#datetime(2000, 2, 8, 3, 45, 12),[Format="yyyy-MM-dd'T'HH:mm:ss'
 **Output**
 
 `"2000-02-08T03:45:12Z"`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)
+* [Standard date and time format strings](standard-date-and-time-format-strings.md)
+* [Custom date and time format strings](custom-date-and-time-format-strings.md)

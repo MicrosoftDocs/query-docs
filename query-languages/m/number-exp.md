@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Number.Exp"
 title: "Number.Exp"
+ms.subservice: m-source
 ---
 # Number.Exp
 

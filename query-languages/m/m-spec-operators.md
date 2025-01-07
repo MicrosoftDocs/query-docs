@@ -2,8 +2,9 @@
 title: M Language Operators 
 description: Describes using operators in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 1/23/2025
+ms.date: 1/7/2025
 ms.custom: "nonautomated-date"
+ms.subservice: m-specification
 ---
 
 # Operator behavior
@@ -335,7 +336,7 @@ For example:
 [A=1,B=2][C]?      // null
 ```
 
-Collective access of multiple fields is supported by the operators for _required record projection_ and _optional record projection_. The operator `x[[y1],[y2],...]` projects the record to a new record with fewer fields (selected by `y1`, `y2`, `...`). If a selected field does not exist, an error is raised. The operator `x[[y1],[y2],...]` projects the record to a new record with the fields selected by `y1`, `y2`, `...`; if a field is missing, `null` is used instead. 
+Collective access of multiple fields is supported by the operators for _required record projection_ and _optional record projection_. The operator `x[[y1],[y2],...]` projects the record to a new record with fewer fields (selected by `y1`, `y2`, `...`). If a selected field does not exist, an error is raised. The operator `x[[y1],[y2],...]?` projects the record to a new record with the fields selected by `y1`, `y2`, `...`; if a field is missing, `null` is used instead. 
 For example:
 
 ```powerquery-m
@@ -364,7 +365,7 @@ The form `[[y1],[y2],...]` and `[[y1],[y2],...]?` are also supported as a shorth
 _[[A],[B]]
 ```
 
-The shorthand form is particularly useful in combination with the `each` shorthand, a way to introduce a function of a single parameter named `_` (for details, see [Simplified declarations](m-spec-functions.md#simplified-declarations). Together, the two shorthands simplify common higher-order functional expressions:
+The shorthand form is particularly useful in combination with the `each` shorthand, a way to introduce a function of a single parameter named `_` (for details, see [Simplified declarations](m-spec-functions.md#simplified-declarations)). Together, the two shorthands simplify common higher-order functional expressions:
 
 ```powerquery-m
 List.Select( {[a=1, b=1], [a=2, b=4]}, each [a] = [b]) 
@@ -594,7 +595,7 @@ _relational-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression_  `<`  _relational-expression<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression_  `>`  _relational-expression<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression_  `<=`  _relational-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression  `>=`  _relational-expression_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression_  `>=`  _relational-expression_
 
 These operators are used to determine the relative ordering relationship between two values, as shown in the following table:
 
@@ -1008,7 +1009,7 @@ The interpretation of the division operator (`x / y`) is dependent on the kind o
 | `type number` | `null` | `null` | |
 | `null` | `type number` | `null` | |
 | `type duration` | `type number` | `type duration` | Fraction of duration |
-| `type duration` | `type duration` | `type duration` | Numeric quotient of durations |
+| `type duration` | `type duration` | `type number` | Numeric quotient of durations |
 | `type duration` | `null` | `null` | |
 | `null` | `type duration` | `null` | |
 

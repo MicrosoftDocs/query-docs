@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.ToBinary"
 title: "Text.ToBinary"
+ms.subservice: m-source
 ---
 # Text.ToBinary
 

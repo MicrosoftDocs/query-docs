@@ -4,6 +4,7 @@ description: Describes all of the grammar associated with the Power Query M form
 ms.topic: conceptual
 ms.date: 02/02/2024
 ms.custom: "nonautomated-date"
+ms.subservice: m-specification
 ---
 
 # Consolidated Grammar

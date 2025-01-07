@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.Upper"
 title: "Text.Upper"
+ms.subservice: m-source
 ---
 # Text.Upper
 
@@ -27,3 +28,7 @@ Text.Upper("aBcD")
 **Output**
 
 `"ABCD"`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Accessing data functions"
 title: "Accessing data functions"
-ms.date: 5/16/2023
+ms.date: 11/21/2024
 ms.custom: "nonautomated-date"
 ---
 # Accessing data functions
@@ -15,81 +15,81 @@ These functions access data and return table values. Most of these functions ret
 |[ActiveDirectory.Domains](activedirectory-domains.md)|Returns a list of Active Directory domains in the same forest as the specified domain or of the current machine's domain if none is specified.|
 |[AdobeAnalytics.Cubes](adobeanalytics-cubes.md) | Returns the report suites in Adobe Analytics.|
 |[AdoDotNet.DataSource](adodotnet-datasource.md)|Returns the schema collection for an ADO.NET data source.|
-|[AdoDotNet.Query](adodotnet-query.md)|Returns the schema collection for an ADO.NET data source.|
+|[AdoDotNet.Query](adodotnet-query.md)|Returns the result of running a native query on an ADO.NET data source.|
 |[AnalysisServices.Database](analysisservices-database.md)|Returns a table of multidimensional cubes or tabular models from the Analysis Services database.|
 |[AnalysisServices.Databases](analysisservices-databases.md)|Returns the Analysis Services databases on a particular host.|
-|[AzureStorage.BlobContents](azurestorage-blobcontents.md) | Returns the content of the specified blob from an Azure storage vault. |
-|[AzureStorage.Blobs](azurestorage-blobs.md)|Returns a navigational table containing all containers found in the Azure Storage account. Each row has the container name and a link to the container blobs.|
+|[AzureStorage.BlobContents](azurestorage-blobcontents.md) |Returns the content of the specified blob from an Azure storage vault. |
+|[AzureStorage.Blobs](azurestorage-blobs.md)|Returns a navigational table containing the containers found in the specified account from an Azure storage vault. Each row has the container name and a link to the container blobs.|
 |[AzureStorage.DataLake](azurestorage-datalake.md)|Returns a navigational table containing the documents found in the specified container and its subfolders from Azure Data Lake Storage.|
 |[AzureStorage.DataLakeContents](azurestorage-datalakecontents.md)|Returns the content of the specified file from an Azure Data Lake Storage filesystem.|
-|[AzureStorage.Tables](azurestorage-tables.md)|Returns a navigational table containing a row for each table found at the account URL from an Azure storage vault. Each row contains a link to the azure table.|
+|[AzureStorage.Tables](azurestorage-tables.md)|Returns a navigational table containing the tables found in the specified account from an Azure storage vault. Each row contains a link to the azure table.|
 |[Cdm.Contents](cdm-contents.md)|This function is unavailable because it requires .NET 4.5.|
-|[Csv.Document](csv-document.md)|Returns the contents of a CSV document as a table using the specified encoding.|
-|[Cube.AddAndExpandDimensionColumn](cube-addandexpanddimensioncolumn.md)|Merges the specified dimension table, dimensionSelector, into the cube's, cube, filter context and changes the dimensional granularity by expanding the specified set, attributeNames, of dimension attributes. |
-|[Cube.AddMeasureColumn](cube-addmeasurecolumn.md)|Adds a column with the name column to the cube that contains the results of the measure measureSelector applied in the row context of each row. |
-|[Cube.ApplyParameter](cube-applyparameter.md)|Returns a cube after applying parameter with arguments to cube.|
-|[Cube.AttributeMemberId](cube-attributememberid.md)|Returns the unique member identifier from a member property value.|
-|[Cube.AttributeMemberProperty](cube-attributememberproperty.md) | Returns the property `propertyName` of dimension attribute `attribute`.|
-|[Cube.CollapseAndRemoveColumns](cube-collapseandremovecolumns.md)|Changes the dimensional granularity of the filter context for the cube by collapsing the attributes mapped to the specified columns columnNames.|
-|[Cube.Dimensions](cube-dimensions.md)|Returns a table containing the set of available dimensions within the cube.|
+|[Csv.Document](csv-document.md)|Returns the contents of the CSV document as a table using the specified encoding.|
+|[Cube.AddAndExpandDimensionColumn](cube-addandexpanddimensioncolumn.md)|Merges the specified dimension table into the cube’s filter context and changes the dimensional granularity of the filter context by expanding the specified set of dimension attributes.|
+|[Cube.AddMeasureColumn](cube-addmeasurecolumn.md)|AAdds a column to the cube that contains the results of the measure applied in the row context of each row.|
+|[Cube.ApplyParameter](cube-applyparameter.md)|Returns a cube after applying a parameter to it.|
+|[Cube.AttributeMemberId](cube-attributememberid.md)|Returns the unique member identifier from members property value.|
+|[Cube.AttributeMemberProperty](cube-attributememberproperty.md) | Returns a property of a dimension attribute.|
+|[Cube.CollapseAndRemoveColumns](cube-collapseandremovecolumns.md)|Changes the dimensional granularity of the filter context for the cube by collapsing the attributes mapped to the specified columns.|
+|[Cube.Dimensions](cube-dimensions.md)|Returns a table containing the set of available dimensions.|
 |[Cube.DisplayFolders](cube-displayfolders.md)|Returns a nested tree of tables representing the display folder hierarchy of the objects (for example, dimensions and measures).|
-|[Cube.MeasureProperties](cube-measureproperties.md)|Returns a table containing the set of available properties for measures that are expanded in the cube.|
-|[Cube.MeasureProperty](cube-measureproperty.md)|Returns the property of a measure.|
-|[Cube.Measures](cube-measures.md)|Returns a table containing the set of available measures within the cube.|
-|[Cube.Parameters](cube-parameters.md)|Returns a table containing the set of parameters that can be applied to cube.|
+|[Cube.MeasureProperties](cube-measureproperties.md)|Returns a table containing the set of available measure properties that are expanded in the cube.|
+|[Cube.MeasureProperty](cube-measureproperty.md)|Returns a property of a measure (cell property).|
+|[Cube.Measures](cube-measures.md)|Returns a table containing the set of available measures.|
+|[Cube.Parameters](cube-parameters.md)|Returns a table containing the set of parameters that can be applied to the cube.|
 |[Cube.Properties](cube-properties.md)|Returns a table containing the set of available properties for dimensions that are expanded in the cube.|
-|[Cube.PropertyKey](cube-propertykey.md) | Returns the key of property `property`.|
+|[Cube.PropertyKey](cube-propertykey.md) | Returns the key of a property.|
 |[Cube.ReplaceDimensions](cube-replacedimensions.md)|Replaces the set of dimensions returned by [Cube.Dimensions](/powerquery-m/cube-dimensions).|
-|[Cube.Transform](cube-transform.md)|Applies the list cube functions, transforms, on the cube.|
+|[Cube.Transform](cube-transform.md)|Applies a list of cube functions.|
 |[DB2.Database](db2-database.md)|Returns a table of SQL tables and views available in a Db2 database.|
-|[DeltaLake.Table](deltalake-table.md)| Returns the contents of the Delta Lake table.|
+|[DeltaLake.Table](deltalake-table.md)|Returns the contents of the Delta Lake table.|
 |[Essbase.Cubes](essbase-cubes.md)|Returns the cubes in an Essbase instance grouped by Essbase server.|
-|[Excel.CurrentWorkbook](excel-currentworkbook.md)|Returns the tables in the current Excel Workbook.|
-|[Excel.Workbook](excel-workbook.md)|Returns a table representing sheets in the given excel workbook.|
+|[Excel.CurrentWorkbook](excel-currentworkbook.md)|Returns the contents of the current Excel workbook.|
+|[Excel.Workbook](excel-workbook.md)|Returns the contents of the Excel workbook.|
 |[Exchange.Contents](exchange-contents.md)|Returns a table of contents from a Microsoft Exchange account.|
-|[File.Contents](file-contents.md)|Returns the binary contents of the file located at a path.|
+|[File.Contents](file-contents.md)|Returns the contents of the specified file as binary.|
 |[Folder.Contents](folder-contents.md)|Returns a table containing the properties and contents of the files and folders found in the specified folder.|
-|[Folder.Files](folder-files.md)|Returns a table containing a row for each file found at a folder path, and subfolders. Each row contains properties of the folder or file and a link to its content.|
+|[Folder.Files](folder-files.md)|Returns a table containing the properties and contents of the files found in the specified folder and subfolders. Each row contains properties of the folder or file and a link to its content.|
 |[GoogleAnalytics.Accounts](googleanalytics-accounts.md)|Returns the Google Analytics accounts for the current credential.|
-|[Hdfs.Contents](hdfs-contents.md)|Returns a table containing a row for each folder and file found at the folder url, {0}, from a Hadoop file system. Each row contains properties of the folder or file and a link to its content.|
-|[Hdfs.Files](hdfs-files.md)|Returns a table containing a row for each file found at the folder url, {0}, and subfolders from a Hadoop file system. Each row contains properties of the file and a link to its content.|
-|[HdInsight.Containers](hdinsight-containers.md)|Returns a navigational table containing all containers found in the HDInsight account. Each row has the container name and table containing its files.|
-|[HdInsight.Contents](hdinsight-contents.md)|Returns a navigational table containing all containers found in the HDInsight account. Each row has the container name and table containing its files.|
-|[HdInsight.Files](hdinsight-files.md)|Returns a table containing a row for each folder and file found at the container URL, and subfolders from an HDInsight account. Each row contains properties of the file/folder and a link to its content.|
+|[Hdfs.Contents](hdfs-contents.md)|Returns a table containing the properties and contents of the files and folders found in the specified folder from a Hadoop file system. Each row contains properties of the folder or file and a link to its content.|
+|[Hdfs.Files](hdfs-files.md)|Returns a table containing the properties and contents of the files found in the specified folder and subfolders from a Hadoop file system. Each row contains properties of the file and a link to its content.|
+|[HdInsight.Containers](hdinsight-containers.md)|Returns a navigational table containing the containers found in the specified account from an Azure storage vault. Each row has the container name and table containing its files.|
+|[HdInsight.Contents](hdinsight-contents.md)|Returns a navigational table containing the containers found in the specified account from an Azure storage vault. Each row has the container name and table containing its files.|
+|[HdInsight.Files](hdinsight-files.md)|Returns a table containing the properties and contents of the blobs found in the specified container from an Azure storage vault. Each row contains properties of the file/folder and a link to its content.|
 |[Html.Table](html-table.md)|Returns a table containing the results of running the specified CSS selectors against the provided HTML.|
 |[Identity.From](identity-from.md)|Creates an identity.|
 |[Identity.IsMemberOf](identity-ismemberof.md)|Determines whether an identity is a member of an identity collection.|
 |[IdentityProvider.Default](identityprovider-default.md)|The default identity provider for the current host.|
-|[Informix.Database](informix-database.md)|Returns a table of SQL tables and views available in an Informix database on server `server` in the database instance named `database`.|
-|[Json.Document](json-document.md)|Returns the contents of a JSON document. The contents may be directly passed to the function as text, or it may be the binary value returned by a function like File.Contents.|
+|[Informix.Database](informix-database.md)|Returns a table of SQL tables and views available in an Informix database.|
+|[Json.Document](json-document.md)|Returns the content of the JSON document. The contents can be directly passed to the function as text, or it can be the binary value returned by a function like [File.Contents](file-contents.md).|
 |[Json.FromValue](json-fromvalue.md)|Produces a JSON representation of a given value value with a text encoding specified by encoding.|
-|[MySQL.Database](mysql-database.md)|Returns a table with data relating to the tables in the specified MySQL Database.|
-|[OData.Feed](odata-feed.md)|Returns a table of OData feeds offered by an OData serviceUri.|
-|[Odbc.DataSource](odbc-datasource.md)|Returns a table of SQL tables and views from the ODBC data source specified by the connection string `connectionString`. |
+|[MySQL.Database](mysql-database.md)|Returns a table of SQL tables, views, and stored scalar functions available in a MySQL database.|
+|[OData.Feed](odata-feed.md)|Returns a table of OData feeds offered by an OData service.|
+|[Odbc.DataSource](odbc-datasource.md)|Returns a table of SQL tables and views from the ODBC data source.|
 |[Odbc.InferOptions](odbc-inferoptions.md)|Returns the result of trying to infer SQL capabilities for an ODBC driver. |
-|[Odbc.Query](odbc-query.md)|Connects to a generic provider with the given connection string and returns the result of evaluating the query.|
-|[OleDb.DataSource](oledb-datasource.md)|Returns a table of SQL tables and views from the OLE DB data source specified by the connection string.|
+|[Odbc.Query](odbc-query.md)|Returns the result of running a native query on an ODBC data source.|
+|[OleDb.DataSource](oledb-datasource.md)|Returns a table of SQL tables and views from the OLE DB data source.|
 |[OleDb.Query](oledb-query.md)|Returns the result of running a native query on an OLE DB data source.|
-|[Oracle.Database](oracle-database.md)|Returns a table with data relating to the tables in the specified Oracle Database.|
+|[Oracle.Database](oracle-database.md)|Returns a table of SQL tables and views from the Oracle database.|
 |[Pdf.Tables](pdf-tables.md)|Returns any tables found in a PDF file.|
-|[PostgreSQL.Database](postgresql-database.md)|Returns a table with data relating to the tables in the specified PostgreSQL Database.|
+|[PostgreSQL.Database](postgresql-database.md)|Returns a table of SQL tables and views available in a PostgreSQL database.|
 |[RData.FromBinary](rdata-frombinary.md)|Returns a record of data frames from the RData file.|
-|[Salesforce.Data](salesforce-data.md)|Connects to the Salesforce Objects API and returns the set of available objects (i.e. Accounts).|
-|[Salesforce.Reports](salesforce-reports.md)|Connects to the Salesforce Reports API and returns the set of available reports.|
+|[Salesforce.Data](salesforce-data.md)|Returns the objects from the Salesforce account.|
+|[Salesforce.Reports](salesforce-reports.md)|Returns the reports from the Salesforce account.|
 |[SapBusinessWarehouse.Cubes](sapbusinesswarehouse-cubes.md)|Returns the InfoCubes and queries in an SAP Business Warehouse system grouped by InfoArea.|
 |[SapHana.Database](saphana-database.md)|Returns the packages in an SAP HANA database.|
-|[SharePoint.Contents](sharepoint-contents.md)|Returns a table containing a row for each folder and document found at the SharePoint site url. Each row contains properties of the folder or file and a link to its content.|
-|[SharePoint.Files](sharepoint-files.md)|Returns a table containing a row for each document found at the SharePoint site url, and subfolders. Each row contains properties of the folder or file and a link to its content.|
-|[SharePoint.Tables](sharepoint-tables.md)|Returns a table containing the result of a SharePoint List as an OData feed.|
-|[Soda.Feed](soda-feed.md)|Returns the resulting table of a CSV file that can be accessed using the SODA 2.0 API. The URL must point to a valid SODA-compliant source that ends in a .csv extension.|
-|[Sql.Database](sql-database.md)|Returns a table containing SQL tables located on a SQL Server instance database.|
-|[Sql.Databases](sql-databases.md)|Returns a table with references to databases located on a SQL Server instance. Returns a navigation table.|
-|[Sybase.Database](sybase-database.md)|Returns a table with data relating to the tables in the specified Sybase Database.|
-|[Teradata.Database](teradata-database.md)|Returns a table with data relating to the tables in the specified Teradata Database.|
+|[SharePoint.Contents](sharepoint-contents.md)|Returns a table containing content from a SharePoint site. Each row contains properties of the folder or file and a link to its content.|
+|[SharePoint.Files](sharepoint-files.md)|Returns a table containing documents from a SharePoint site. Each row contains properties of the folder or file and a link to its content.|
+|[SharePoint.Tables](sharepoint-tables.md)|Returns a table containing content from a SharePoint List.|
+|[Soda.Feed](soda-feed.md)|Returns a table from the contents at the specified URL formatted according to the SODA 2.0 API. The URL must point to a valid SODA-compliant source that ends in a .csv extension.|
+|[Sql.Database](sql-database.md)|Returns a table of SQL tables, views, and stored functions from the SQL Server database.|
+|[Sql.Databases](sql-databases.md)|Returns a table of databases on a SQL Server.|
+|[Sybase.Database](sybase-database.md)|Returns a table of SQL tables and views available in a Sybase database.|
+|[Teradata.Database](teradata-database.md)|Returns a table of SQL tables and views from the Teradata database.|
 |[WebAction.Request](webaction-request.md)|Creates an action that, when executed, will return the results of performing a method request against url using HTTP as a binary value.|
 |[Web.BrowserContents](web-browsercontents.md)|Returns the HTML for the specified URL, as viewed by a web browser.|
-|[Web.Contents](web-contents.md)|Returns the contents downloaded from a web URL as a binary value.|
+|[Web.Contents](web-contents.md)|Returns the contents downloaded from the URL as binary.|
 |[Web.Headers](web-headers.md)|Returns the HTTP headers downloaded from the URL as a record value.|
-|[Web.Page](web-page.md)|Returns the contents of an HTML webpage as a table.|
-|[Xml.Document](xml-document.md)|Returns the contents of an XML document as a hierarchical table (list of records).|
+|[Web.Page](web-page.md)|Returns the contents of the HTML document broken into its constituent structures, as well as a representation of the full document and its text after removing tags.|
+|[Xml.Document](xml-document.md)|Returns the contents of the XML document as a hierarchical table (list of records).|
 |[Xml.Tables](xml-tables.md)|Returns the contents of an XML document as a nested collection of flattened tables.|

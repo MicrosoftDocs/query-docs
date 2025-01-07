@@ -1,5 +1,5 @@
 ---
-title: "DAX glossary | Microsoft Docs"
+title: "DAX glossary"
 description: Describes common terms used in the Data Analysis Expressions (DAX) language.
 ms.topic: conceptual
 ---
@@ -80,7 +80,7 @@ A model table that contains at least one measure, and has no hierarchies or visi
 
 ## Model calculation
 
-A named formula that's used to add a calculated table, calculated column, or measure to a tabular data model. Its structure is \<NAME> = \<FORMULA>. Most calculations are added by data modelers in Power BI Desktop, but measures can also be added to a live connection report. See [Report measures](#report-measures).
+A named formula that's used to add a calculated table, calculated column, or measure to a tabular data model. Its structure is `NAME` = `FORMULA`. Most calculations are added by data modelers in Power BI Desktop, but measures can also be added to a live connection report. See [Report measures](#report-measures).
 
 ## Quick measures
 
@@ -92,7 +92,7 @@ Also called *report-level measures*. They're added to a live connection report i
 
 ## Row-level security
 
-Also called *RLS*. Design technique to restrict access to subsets of data for specific users. In a tabular model, it's achieved by creating model roles. Roles have rules, which are DAX expressions to filter table rows.
+Also called `RLS`. Design technique to restrict access to subsets of data for specific users. In a tabular model, it's achieved by creating model roles. Roles have rules, which are DAX expressions to filter table rows.
 
 ## Scalar
 

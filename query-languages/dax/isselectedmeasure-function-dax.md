@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ISSELECTEDMEASURE"
-title: "ISSELECTEDMEASURE function (DAX) | Microsoft Docs"
+title: "ISSELECTEDMEASURE function (DAX)"
 ---
 # ISSELECTEDMEASURE
 
@@ -8,19 +8,19 @@ title: "ISSELECTEDMEASURE function (DAX) | Microsoft Docs"
 
 Used by expressions for calculation items to determine the measure that is in context is one of those specified in a list of measures. 
 
-## Syntax  
-  
+## Syntax
+
 ```dax
-ISSELECTEDMEASURE( M1, M2, ... )  
+ISSELECTEDMEASURE( M1, M2, ... )
 ```
-  
-### Parameters  
-  
-|Term|Definition|  
-|--------|--------------|  
-|M1, M2, ...|A list of measures.|  
-  
-## Return value  
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|`M1, M2, ...`|A list of measures.|
+
+## Return value
 
 A Boolean indicating whether the measure that is currently in context is one of those specified in the list of parameters. 
 
@@ -30,10 +30,10 @@ A Boolean indicating whether the measure that is currently in context is one of 
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-## Example  
+## Example
 
 The following calculation item expression checks if the current measure is one of those specified in the list of parameters. If the measures are renamed, formula fixup will reflect the name changes in the expression.
-  
+
 ```dax
 IF (
     ISSELECTEDMEASURE ( [Expense Ratio 1], [Expense Ratio 2] ),
@@ -42,8 +42,8 @@ IF (
 )
 
 ```
-  
+
 ## Related content
 
-[SELECTEDMEASURE](selectedmeasure-function-dax.md)  
-[SELECTEDMEASURENAME](selectedmeasurename-function-dax.md)   
+[SELECTEDMEASURE](selectedmeasure-function-dax.md)
+[SELECTEDMEASURENAME](selectedmeasurename-function-dax.md)

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.RemoveRange"
 title: "List.RemoveRange"
+ms.subservice: m-source
 ---
 # List.RemoveRange
 

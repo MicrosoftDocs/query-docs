@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.MatchesAll"
 title: "List.MatchesAll"
+ms.subservice: m-source
 ---
 # List.MatchesAll
 

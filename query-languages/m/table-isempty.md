@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.IsEmpty"
 title: "Table.IsEmpty"
+ms.subservice: m-source
 ---
 # Table.IsEmpty
 

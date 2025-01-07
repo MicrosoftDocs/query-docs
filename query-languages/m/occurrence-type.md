@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Occurrence.Type"
 title: "Occurrence.Type"
+ms.subservice: m-source
 ---
 # Occurrence.Type
 

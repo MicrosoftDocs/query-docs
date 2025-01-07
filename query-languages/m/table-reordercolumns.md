@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.ReorderColumns"
 title: "Table.ReorderColumns"
+ms.subservice: m-source
 ---
 # Table.ReorderColumns
 
@@ -12,7 +13,7 @@ Table.ReorderColumns(<b>table</b> as table, <b>columnOrder</b> as list, optional
   
 ## About
 
-Returns a table from the input `table`, with the columns in the order specified by `columnOrder`. Columns that are not specified in the list will not be reordered. If the column doesn't exist, an exception is thrown unless the optional parameter `missingField` specifies an alternative (eg. `MissingField.UseNull` or `MissingField.Ignore`).
+Returns a table from the input `table`, with the columns in the order specified by `columnOrder`. Columns that are not specified in the list will not be reordered. If the column doesn't exist, an exception is thrown unless the optional parameter `missingField` specifies an alternative (eg. [MissingField.UseNull](missingfield-type.md) or [MissingField.Ignore](missingfield-type.md)).
 
 ## Example 1
 

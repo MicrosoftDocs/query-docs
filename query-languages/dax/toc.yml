@@ -1,3 +1,4 @@
+items:
 - name: Data Analysis Expressions (DAX) Reference
   href: index.yml
   expanded: true
@@ -165,10 +166,18 @@
               href: earliest-function-dax.md
             - name: FILTER
               href: filter-function-dax.md
+            - name: FIRSTNONBLANK
+              href: firstnonblank-function-dax.md
+            - name: FIRSTNONBLANKVALUE
+              href: firstnonblankvalue-function-dax.md
             - name: INDEX
               href: index-function-dax.md
             - name: KEEPFILTERS
               href: keepfilters-function-dax.md
+            - name: LASTNONBLANK
+              href: lastnonblank-function-dax.md
+            - name: LASTNONBLANKVALUE
+              href: lastnonblankvalue-function-dax.md
             - name: LOOKUPVALUE
               href: lookupvalue-function-dax.md
             - name: MATCHBY
@@ -611,6 +620,8 @@
               href: rankx-function-dax.md
             - name: SAMPLE
               href: sample-function-dax.md
+            - name: SAMPLECARTESIANPOINTSBYCOVER
+              href: samplecartesianpointsbycover-function-dax.md
             - name: STDEV.S
               href: stdev-s-function-dax.md
             - name: STDEV.P
@@ -781,16 +792,8 @@
               href: endofyear-function-dax.md
             - name: FIRSTDATE
               href: firstdate-function-dax.md
-            - name: FIRSTNONBLANK
-              href: firstnonblank-function-dax.md
-            - name: FIRSTNONBLANKVALUE
-              href: firstnonblankvalue-function-dax.md
             - name: LASTDATE
               href: lastdate-function-dax.md
-            - name: LASTNONBLANK
-              href: lastnonblank-function-dax.md
-            - name: LASTNONBLANKVALUE
-              href: lastnonblankvalue-function-dax.md
             - name: NEXTDAY
               href: nextday-function-dax.md
             - name: NEXTMONTH

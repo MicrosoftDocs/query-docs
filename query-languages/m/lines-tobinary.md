@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Lines.ToBinary"
 title: "Lines.ToBinary"
+ms.subservice: m-source
 ---
 # Lines.ToBinary
 
