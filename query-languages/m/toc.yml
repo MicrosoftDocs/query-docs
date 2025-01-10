@@ -42,7 +42,7 @@ items:
     href: evaluation-model.md
   - name: Operators
     href: operators.md
-  - name: Type conversion
+  - name: Types and type conversion
     href: type-conversion.md
   - name: Metadata
     href: metadata.md
