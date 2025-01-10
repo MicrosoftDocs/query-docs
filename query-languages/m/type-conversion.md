@@ -13,7 +13,7 @@ Power Query M uses types to classify values to have a more structured data set. 
 
 ## Commonly-used types
 
-Data types refers to any type that's used to clarify the structure of specific data. The most commonly used data types used are primitive types. These types include:
+Data types refers to any type that's used to clarify the structure of specific data. The most commonly used data types are primitive types. These types include:
 
 * `type any`, which classifies any value.
 * `type null`, which classifies the null value.
@@ -36,7 +36,7 @@ Data types refers to any type that's used to clarify the structure of specific d
 
 For more information about these types, go to [Types](m-spec-types.md).
 
-In addition to these common data types, there are also a set of data types using the format `*.Type`. The most commonly used data types of this format are:
+In addition to these common data types, there is also a set of data types using the format `*.Type`. The most commonly used data types of this format are:
 
 * `Byte.Type`, which classifies an 8-bit number value.
 * `Int8.Type`, which classifies an 8-bit number value.
@@ -64,7 +64,7 @@ The following table contains more information about each of these types.
 |`null`| Represents the absence of a value, or a value of indeterminate or unknown state. |
 |`anynonnull`| Represents any type that is nonnullable.|
 |`date` | Represents just a date (no time portion).|
-|`time`|Represents just time (no date portion)|
+|`time`|Represents just time (no date portion).|
 |`datetime` |Represents both a date and time value. The time portion of a date is stored as a fraction to whole multiples of 1/300 seconds (3.33 ms). Dates between the years 1900 and 9999 are supported.|
 |`datetimezone` |Represents a UTC date and time with a time-zone offset.|
 |`duration`| Represents a length of time. This type can be added or subtracted from a `datetime` field with correct results. For more information, go to [Duration](m-spec-values.md#duration).|
@@ -81,11 +81,11 @@ The following table contains more information about each of these types.
 |`Int8.Type`| Represents an 8-bit (one-byte) signed integer value. Because it's an integer, it has no digits to the right of the decimal place. It allows for 3 digits; a positive or negative whole number between &ndash;128 and 127. As with the `Currency.Type`, the `Int8.Type` can be useful in cases where you need to control rounding.|
 |`Int16.Type`| Represents a 16-bit (two-byte) signed integer value. Because it's an integer, it has no digits to the right of the decimal place. It allows for 6 digits; a positive or negative whole number between &ndash;32,768 (&ndash;2^15) and 32,767 (2^15-1). As with the `Currency.Type`, the `Int16.Type` can be useful in cases where you need to control rounding.|
 |`Int32.Type`| Represents a 32-bit (four-byte) signed integer value. Because it's an integer, it has no digits to the right of the decimal place. It allows for 10 digits; a positive or negative whole number between &ndash;2,147,483,648 (&ndash;2^31) and 2,147,483,647 (2^31&ndash;1). As with the `Currency.Type`, the `Int32.Type` can be useful in cases where you need to control rounding.|
-|`Int64.Type` | Represents a 64-bit (eight-byte) signed integer value. Because it's an integer, it has no digits to the right of the decimal place. It allows for 19 digits; a positive or negative whole numbers between &ndash;9,223,372,036,854,775,808 (&ndash;2^63) and 9,223,372,036,854,775,807 (2^63&ndash;1). It can represent the largest possible precision of the various numeric data types. As with the `Currency.Type`, the `Int64.Type` can be useful in cases where you need to control rounding. |
+|`Int64.Type` | Represents a 64-bit (eight-byte) signed integer value. Because it's an integer, it has no digits to the right of the decimal place. It allows for 19 digits; a positive or negative whole number between &ndash;9,223,372,036,854,775,808 (&ndash;2^63) and 9,223,372,036,854,775,807 (2^63&ndash;1). It can represent the largest possible precision of the various numeric data types. As with the `Currency.Type`, the `Int64.Type` can be useful in cases where you need to control rounding. |
 |`Byte.Type`| Represents an 8-bit (one-byte) unsigned integer value. Because it's an unsigned integer, it has no digits to the right of the decimal place and can only contain positive values. It allows for 3 digits; a positive number between 0 and 255.|
 |`Single.Type`| Represents a single-precision floating-point number. It has an approximate range of &ndash;3.99 X 10<sup>38</sup> to 3.99 X 10<sup>38</sup> and supports approximately 9 digits of precision. It can also represent positive and negative infinity, and NaN (Not a Number).|
 |`Double.Type`| Represents a double-precision floating-point number. It has an approximate range of &ndash;1.7976931348623158 X 10<sup>307</sup> to 1.7976931348623158 X 10<sup>307</sup> and supports approximately 17 digits of precision. It can also represent positive and negative infinity, and NaN (Not a Number).|
-|`Guid.Type`| Represents a 128-bit text value consisting of 32 hexidecimal values using the form factor of \<8 hex values>-\<4 hex values>-\<4 hex values>-\<4 hex values>-\<12 hex values>, which make up the GUID value.|
+|`Guid.Type`| Represents a 128-bit text value consisting of 32 hexadecimal values using the form factor of \<8 hex values>-\<4 hex values>-\<4 hex values>-\<4 hex values>-\<12 hex values>, which make up the GUID value.|
 |`none`|The data type that classifies no values. |
 
 The only other commonly used `*.Type` values are enumerations. For more information, go to [Enumerations](enumerations.md).
