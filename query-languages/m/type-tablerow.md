@@ -31,3 +31,7 @@ in
 **Output**
 
 `[Column1 = [Type = type any, Optional = false]]`
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)

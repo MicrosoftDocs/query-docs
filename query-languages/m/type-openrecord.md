@@ -28,3 +28,7 @@ Type.OpenRecord(type [A = number])
 **Output**
 
 `type [A = number, ...]`
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)

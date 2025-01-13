@@ -28,3 +28,7 @@ Type.NonNullable(type nullable number)
 **Output**
 
 `type number`
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)

@@ -170,12 +170,9 @@ _An open record type is compatible with another open record type with one fewer 
 (47) _t<sub>a</sub>_ &#8712; _T<sub>T</sub>_ = (_&#934;_, &#10216;<em>i</em>, &#10216;<em>n</em>, _u<sub>a</sub>_&#10217;&#10217;), _t<sub>b</sub>_ &#8712;  _T<sub>T</sub>_ = (_&#934;_, &#10216;<em>i</em>, &#10216;<em>n</em>, _u<sub>b</sub>_&#10217;&#10217;) &#8743; _u<sub>a</sub>_ &#8804; _u<sub>b</sub>_ &#8594; _t<sub>a</sub>_ &#8804; _t<sub>b</sub>_<br/>
 _A table type is compatible with a second table type, which is identical but for one column having a differing type, when the types for that column are compatible._
 
-## REFERENCES
+## Related content
 
-Microsoft Corporation (2015 August)<br/>
-Microsoft Power Query for Excel Formula Language Specification [PDF]<br/>
-Retrieved from https://msdn.microsoft.com/library/mt807488.aspx
-
-Microsoft Corporation (n.d.)<br/>
-Power Query M function reference [web page]<br/>
-Retrieved from https://msdn.microsoft.com/library/mt779182.aspx
+* [Power Query M language specification](power-query-m-language-specification.md)
+* [Power Query M function reference](power-query-m-function-reference.md)
+* [Types and type conversion](type-conversion.md)
+* [Types](m-spec-types.md)

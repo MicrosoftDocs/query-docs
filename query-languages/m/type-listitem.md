@@ -28,3 +28,7 @@ Type.ListItem(type {number})
 **Output**
 
 `type number`
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)

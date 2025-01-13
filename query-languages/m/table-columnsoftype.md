@@ -34,3 +34,7 @@ Table.ColumnsOfType(
 **Output**
 
 `{"a"}`
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)
