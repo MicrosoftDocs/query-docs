@@ -22,7 +22,7 @@ Determine if the table has the column [Name].
 **Usage**
 
 ```powerquery-m
-TTable.HasColumns(
+Table.HasColumns(
     Table.FromRecords({
         [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
         [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
