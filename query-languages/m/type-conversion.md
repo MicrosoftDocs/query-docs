@@ -135,3 +135,8 @@ The Power Query M formula language has formulas to convert between types. The fo
 |.ToText(date, time, dateTime, or dateTimeZone as date, time, datetime, or datetimezone) as text|Returns a text value from a date, time, datetime, or datetimezone value.|  
 |.From(value as any)|Returns a date, time, datetime, or datetimezone value from a value.|  
 |.ToRecord(date, time, dateTime, or dateTimeZone as date, time, datetime, or datetimezone)|Returns a record containing parts of a date, time, datetime, or datetimezone value.|  
+
+## Related content
+
+* [Types](m-spec-types.md)
+* [Power Query M type system](power-query-m-type-system.md)
