@@ -401,5 +401,5 @@ Type.FunctionReturn(
 
 ## Related content
 
-* [Types and type conversion](type-conversion)
+* [Types and type conversion](type-conversion.md)
 * [Types in the Power Query M formula language](power-query-m-type-system.md)
