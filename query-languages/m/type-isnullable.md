@@ -42,3 +42,7 @@ Type.IsNullable(type nullable number)
 **Output**
 
 `true`
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)

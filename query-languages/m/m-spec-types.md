@@ -398,3 +398,8 @@ Type.FunctionReturn(
         type function (x as number, optional y as text) as number) 
   // type number 
 ```
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)
+* [Types in the Power Query M formula language](power-query-m-type-system.md)
