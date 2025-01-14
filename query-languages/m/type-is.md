@@ -42,3 +42,7 @@ Type.Is(type any, type number)
 **Output**
 
 `false`
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)

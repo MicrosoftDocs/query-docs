@@ -17,3 +17,7 @@ Combines the specified columns of `table` into a new record-valued column named 
 
 * `DisplayNameColumn`: When specified as text, indicates that the given column name should be treated as the display name of the record. This need not be one of the columns in the record itself.
 * `TypeName`: When specified as text, supplies a logical type name for the resulting record which can be used during data load to drive behavior by the loading environment.
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)

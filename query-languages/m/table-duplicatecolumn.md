@@ -40,3 +40,7 @@ Table.FromRecords({
     [a = 3, b = 4, #"copied column" = 3]
 })
 ```
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)

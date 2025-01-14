@@ -33,3 +33,7 @@ Type.RecordFields(type [A = number, optional B = any])
     B = [Type = type any, Optional = true]
 ]
 ```
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)
