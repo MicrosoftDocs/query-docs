@@ -72,7 +72,7 @@ Text.From(Binary.FromText("10FF", BinaryEncoding.Hex))
 
 **Output**
 
-"EP8="
+`"EP8="`
 
 ## Example 5
 
