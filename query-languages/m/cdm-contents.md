@@ -13,4 +13,4 @@ Cdm.Contents(<b>table</b> as table) as table
 
 ## About
 
-This function is unavailable because it requires .NET 4.5.
+This function is unavailable in the current context.
