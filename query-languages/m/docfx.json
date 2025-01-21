@@ -48,7 +48,7 @@
       "author": "dougklopfenstein",
       "ms.author": "dougklo",
       "searchScope": ["Power Query","M formula language"],
-      "ms.date": "11/13/2024",
+      "ms.date": "1/17/2025",
       "no-loc": [
         "#binary",
         "#date",
@@ -249,6 +249,7 @@
         "Day.Type",
         "DB2.Database",
         "Decimal.From",
+        "DeltaLake.Metadata",
         "DeltaLake.Table",
         "Diagnostics.ActivityId",
         "Diagnostics.CorrelationId",
