@@ -15,17 +15,11 @@ Table.TransformColumnTypes(<b>table</b> as table, <b>typeTransformations</b> as 
 
 Returns a table by applying the transform operation to the specified columns using an optional culture.
 
-* `table`: The transform operation is applied to this input table.
-* `typeTransformations`: The names of the column and type to be applied. The format for the transformation is { column name, type name }. A list of transformations can be used to change the types of more than one column at a time. If the specified column doesn't exist, an exception is thrown.
-* `culture`: (Optional) The culture to use when transforming the column type (for example, "en-US").
+* `table`: The input table to transform.
+* `typeTransformations`: The type transformations to apply. The format for a single transformation is { column name, type name }. A list of transformations can be used to change the types of more than one column at a time. If a column doesn't exist, an error is raised.
+* `culture`: (Optional) The culture to use when transforming the column types (for example, "en-US").
 
-The type name in the `typeTransformations` parameter can be any of the commonly-used data types except for the following:
-
-* `type list`, or `List.Type`
-* `type record`, or `Record.Type`
-* `type table`, or `Table.Type`
-* `type function`, or `Function.Type`
-* `type none`, or `None.Type`
+The type value in the `typeTransformations` parameter can be any, all the numeric types, text, all the date/time/duration types, logical, or binary. Lists, records, tables, or functions aren't valid type values for this parameter.
 
 ## Example 1
 
@@ -99,7 +93,7 @@ in
 
 ## Example 3
 
-Transform the dates in the table to their German text equivalents and the values in the table to percentages.
+Transform the dates in the table to their German text equivalents, and the values in the table to percentages.
 
 **Usage**
 
