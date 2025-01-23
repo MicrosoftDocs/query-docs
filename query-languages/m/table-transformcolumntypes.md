@@ -16,10 +16,10 @@ Table.TransformColumnTypes(<b>table</b> as table, <b>typeTransformations</b> as 
 Returns a table by applying the transform operations to the specified columns using an optional culture.
 
 * `table`: The input table to transform.
-* `typeTransformations`: The type transformations to apply. The format for a single transformation is { column name, type name }. A list of transformations can be used to change the types of more than one column at a time. If a column doesn't exist, an error is raised.
+* `typeTransformations`: The type transformations to apply. The format for a single transformation is { column name, type value }. A list of transformations can be used to change the types of more than one column at a time. If a column doesn't exist, an error is raised.
 * `culture`: (Optional) The culture to use when transforming the column types (for example, "en-US").
 
-The type value in the `typeTransformations` parameter can be `any`, all of the `number` types, `text`, all of the `date`, `time`, `datetime`, `datetimezone`, and `duration` types, `logical`, or `binary` values. The `list`, `record`, `table`, or `function` types aren’t valid values for this parameter.
+The type value in the `typeTransformations` parameter can be `any`, all of the `number` types, `text`, all of the `date`, `time`, `datetime`, `datetimezone`, and `duration` types, `logical`, or `binary` values. The `list`, `record`, `table`, or `function` types aren't valid for this parameter.
 
 ## Example 1
 
