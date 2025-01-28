@@ -205,8 +205,8 @@ More information: [Table.FirstN](table-firstn.md), [Table.MaxN](table-maxn.md)
 
 Extra values are used to indicate how the function should handle extra values in a row. This parameter is specified as a number, which maps to the following options:
 
-`ExtraValues.List = 0`
-`ExtraValues.Error = 1`
+`ExtraValues.List = 0`<br/>
+`ExtraValues.Error = 1`<br/>
 `ExtraValues.Ignore = 2`
 
 More information: [Table.FromList](table-fromlist.md), [ExtraValues.Type](extravalues-type.md)
@@ -215,8 +215,8 @@ More information: [Table.FromList](table-fromlist.md), [ExtraValues.Type](extrav
 
 This parameter is used to indicate how the function should handle missing columns. This parameter is specified as a number, which maps to the following options:
 
-`MissingField.Error = 0`
-`MissingField.Ignore = 1`
+`MissingField.Error = 0`<br/>
+`MissingField.Ignore = 1`<br/>
 `MissingField.UseNull = 2;`
 
 This parameter is used in column or transformation operations, for examples, in [Table.TransformColumns](table-transformcolumns.md). More information: [MissingField.Type](missingfield-type.md)
@@ -225,7 +225,7 @@ This parameter is used in column or transformation operations, for examples, in 
 
 Sort ordering is used to indicate how the results should be sorted. This parameter is specified as a number, which maps to the following options:
 
-`Order.Ascending = 0`
+`Order.Ascending = 0`<br/>
 `Order.Descending = 1`
 
 More information: [Order.Type](order-type.md)
