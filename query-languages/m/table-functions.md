@@ -13,6 +13,7 @@ These functions create and manipulate table values.
 
 |Name|Description|
 |------------|---------------|
+[#table](sharptable.md) | Creates a table value from columns and rows.|
 |[ItemExpression.From](itemexpression-from.md) | Returns the abstract syntax tree (AST) for the body of a function.|
 |[ItemExpression.Item](itemexpression-item.md) | An abstract syntax tree (AST) node representing the item in an item expression.|
 |[RowExpression.Column](rowexpression-column.md)|Returns an abstract syntax tree (AST) that represents access to a column within a row expression.|
@@ -22,11 +23,11 @@ These functions create and manipulate table values.
 |[Table.FromList](table-fromlist.md)|Converts a list into a table by applying the specified splitting function to each item in the list.|
 |[Table.FromRecords](table-fromrecords.md)|Converts a list of records into a table.|
 |[Table.FromRows](table-fromrows.md)|Creates a table from a list of row values and optional columns.|
-|[Table.FromValue](table-fromvalue.md)|Creates a table with a column from the provided value(s).|
+|[Table.FromValue](table-fromvalue.md)|Creates a table with a column from the provided value or values.|
 |[Table.WithErrorContext](table-witherrorcontext.md) | This function is intended for internal use only.|
 |[Table.View](table-view.md)|Creates or extends a table with user-defined handlers for query and action operations.|
 |[Table.ViewError](table-viewerror.md) | Creates a modified error record that won't trigger a fallback when thrown by a handler defined on a view (via [Table.View](table-view.md)).|
-|[Table.ViewFunction](table-viewfunction.md) | Creates a function that can be intercepted by a handler defined on a view (via **Table.View**).|
+|[Table.ViewFunction](table-viewfunction.md) | Creates a function that can be intercepted by a handler defined on a view (via [Table.View](table-view.md)).|
 
 ## Conversions
 
@@ -73,7 +74,7 @@ These functions create and manipulate table values.
 |[Table.RemoveRows](table-removerows.md)|Removes the specified number of rows.|
 |[Table.RemoveRowsWithErrors](table-removerowswitherrors.md)|Returns a table with the rows removed from the input table that contain an error in at least one of the cells. If a columns list is specified, then only the cells in the specified columns are inspected for errors.|
 |[Table.Repeat](table-repeat.md)|Repeats the rows of the tables a specified number of times.|
-|[Table.ReplaceRows](table-replacerows.md)|Replaces the specified range of rows with the provided row(s).|
+|[Table.ReplaceRows](table-replacerows.md)|Replaces the specified range of rows with the provided row or rows.|
 |[Table.ReverseRows](table-reverserows.md)|Returns a table with the rows in reverse order.|
 |[Table.SelectRows](table-selectrows.md)|Selects the rows that meet the condition function.|
 |[Table.SelectRowsWithErrors](table-selectrowswitherrors.md)|Returns a table with only those rows of the input table that contain an error in at least one of the cells. If a columns list is specified, then only the cells in the specified columns are inspected for errors.|
@@ -90,7 +91,7 @@ These functions create and manipulate table values.
 |[Table.ColumnsOfType](table-columnsoftype.md)|Returns a list with the names of the columns that match the specified types.|
 |[Table.DemoteHeaders](table-demoteheaders.md)|Demotes the column headers to the first row of values.|
 |[Table.DuplicateColumn](table-duplicatecolumn.md) | Duplicates a column with the specified name. Values and type are copied from the source column.|
-|[Table.HasColumns](table-hascolumns.md)|Indicates whether the table contains the specified column(s).|
+|[Table.HasColumns](table-hascolumns.md)|Indicates whether the table contains the specified column or columns.|
 |[Table.Pivot](table-pivot.md)|Given a pair of columns representing attribute-value pairs, rotates the data in the attribute column into a column headings.|
 |[Table.PrefixColumns](table-prefixcolumns.md)|Returns a table where the columns have all been prefixed with the given text.|
 |[Table.PromoteHeaders](table-promoteheaders.md)|Promotes the first row of values as the new column headers (that is, as column names).|
