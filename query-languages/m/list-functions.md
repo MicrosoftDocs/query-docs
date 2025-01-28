@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List functions"
 title: "List functions"
-ms.date: 10/7/2022
+ms.date: 1/28/2025
 ms.custom: "nonautomated-date"
 ---
 # List functions
@@ -13,53 +13,54 @@ These functions create and manipulate list values.
 |Name|Description|
 |------------|---------------|
 |[List.Count](list-count.md)|Returns the number of items in a list.|
-|[List.NonNullCount](list-nonnullcount.md)|Returns the number of items in a list excluding null values|
-|[List.IsEmpty](list-isempty.md)|Returns whether a list is empty.|
+|[List.IsEmpty](list-isempty.md)|Returns `true` if the list is empty.|
+|[List.NonNullCount](list-nonnullcount.md)|Returns the number of non-null items in the list.|
 
 ## Selection
 
 |Name|Description|
 |------------|---------------|
-|[List.Alternate](list-alternate.md)|Returns a list with the items alternated from the original list based on a count, optional repeatInterval, and an optional offset.|
-|[List.Buffer](list-buffer.md)|Buffers the list in memory. The result of this call is a stable list, which means it will have a determinimic count, and order of items.|
-|[List.Distinct](list-distinct.md)|Filters a list down by removing duplicates. An optional equation criteria value can be specified to control equality comparison. The first value from each equality group is chosen.|
-|[List.FindText](list-findtext.md)|Searches a list of values, including record fields, for a text value.|
-|[List.First](list-first.md)|Returns the first value of the list or the specified default if empty. Returns the first item in the list, or the optional default value, if the list is empty. If the list is empty and a default value is not specified, the function returns.|
-|[List.FirstN](list-firstn.md)|Returns the first set of items in the list by specifying how many items to return or a qualifying condition provided by `countOrCondition`.|
-|[List.InsertRange](list-insertrange.md)|Inserts items from values at the given index in the input list.|
-|[List.IsDistinct](list-isdistinct.md)|Returns whether a list is distinct.|
-|[List.Last](list-last.md)|Returns the last set of items in the list by specifying how many items to return or a qualifying condition provided by `countOrCondition`.|
-|[List.LastN](list-lastn.md)|Returns the last set of items in a list by specifying how many items to return or a qualifying condition.|
-|[List.MatchesAll](list-matchesall.md)|Returns true if all items in a list meet a condition.|
-|[List.MatchesAny](list-matchesany.md)|Returns true if any item in a list meets a condition.|
-|[List.Positions](list-positions.md)|Returns a list of positions for an input list.|
-|[List.Range](list-range.md)|Returns a count items starting at an offset.|
-|[List.Select](list-select.md)|Selects the items that match a condition.|
-|[List.Single](list-single.md)|Returns the single item of the list or throws an `Expression.Error` if the list has more than one item.|
-|[List.SingleOrDefault](list-singleordefault.md)|Returns a single item from a list.|
-|[List.Skip](list-skip.md)|Skips the first item of the list. Given an empty list, it returns an empty list. This function takes an optional parameter `countOrCondition` to support skipping multiple values.|
+|[List.Alternate](list-alternate.md)|Returns a list comprised of all the odd numbered offset elements in a list.|
+|[List.Buffer](list-buffer.md)|Buffers a list.|
+|[List.Distinct](list-distinct.md)|Returns a list of values with duplicates removed.|
+|[List.FindText](list-findtext.md)|Returns a list of values (including record fields) that contain the specified text.|
+|[List.First](list-first.md)|Returns the first value of the list or the specified default if empty.|
+|[List.FirstN](list-firstn.md)|Returns the first set of items in the list by specifying how many items to return or a qualifying condition.|
+|[List.InsertRange](list-insertrange.md)|Inserts values into a list at the given index.|
+|[List.IsDistinct](list-isdistinct.md)|Indicates whether there are duplicates in the list.|
+|[List.Last](list-last.md)|Returns the last value of the list or the specified default if empty.|
+|[List.LastN](list-lastn.md)|Returns the last value in the list. Can optionally specify how many values to return or a qualifying condition.|
+|[List.MatchesAll](list-matchesall.md)|Returns `true` if the condition function is satisfied by all values in the list.|
+|[List.MatchesAny](list-matchesany.md)|Returns `true` if the condition function is satisfied by any value.|
+|[List.Positions](list-positions.md)|Returns a list of offsets for the input.|
+|[List.Range](list-range.md)|Returns a subset of the list beginning at an offset.|
+|[List.Select](list-select.md)|Returns a list of values that match the condition.|
+|[List.Single](list-single.md)|Returns the one list item for a list of length one, otherwise throws an exception.|
+|[List.SingleOrDefault](list-singleordefault.md)|Returns the one list item for a list of length one and the default value for an empty list.|
+|[List.Skip](list-skip.md)|Returns a list that skips the specified number of elements at the beginning of the list.|
 
 ## Transformation functions
 
 |Name|Description|
 |------------|---------------|
-|[List.Accumulate](list-accumulate.md)|Accumulates a result from the list. Starting from the initial value seed this function applies the accumulator function and returns the final result.|
-|[List.Combine](list-combine.md)|Merges a list of lists into single list.|
+|[List.Accumulate](list-accumulate.md)|AAccumulates a summary value from the items in the list.|
+|[List.Combine](list-combine.md)|Returns a single list by combining multiple lists.|
 |[List.ConformToPageReader](list-conformtopagereader.md)|This function is intended for internal use only.|
-|[List.RemoveRange](list-removerange.md)|Returns a list that removes count items starting at offset. The default count is 1.|
-|[List.RemoveFirstN](list-removefirstn.md)|Returns a list with the specified number of elements removed from the list starting at the first element. The number of elements removed depends on the optional `countOrCondition` parameter.|
-|[List.RemoveItems](list-removeitems.md)|Removes items from `list1` that are present in `list2`, and returns a new list.|
-|[List.RemoveLastN](list-removelastn.md)|Returns a list with the specified number of elements removed from the list starting at the last element. The number of elements removed depends on the optional `countOrCondition` parameter.|
-|[List.Repeat](list-repeat.md)|Returns a list that repeats the contents of an input list count times.|
-|[List.ReplaceRange](list-replacerange.md)|Returns a list that replaces count values in a list with a `replaceWith` list starting at an index.|
-|[List.RemoveMatchingItems](list-removematchingitems.md)|Removes all occurrences of the given values in the list.|
-|[List.RemoveNulls](list-removenulls.md)|Removes null values from a list.|
-|[List.ReplaceMatchingItems](list-replacematchingitems.md)|Replaces occurrences of existing values in the list with new values using the provided `equationCriteria`. Old and new values are provided by the `replacements` parameters. An optional equation criteria value can be specified to control equality comparisons. For details of replacement operations and equation criteria, go to [Parameter values](#parameter-values).|
-|[List.ReplaceValue](list-replacevalue.md)|Searches a list of values for the value and replaces each occurrence with the replacement value.|
-|[List.Reverse](list-reverse.md)|Returns a list that reverses the items in a list.|
+|[List.RemoveFirstN](list-removefirstn.md)|Returns a list that skips the specified number of elements at the beginning of the list.|
+|[List.RemoveItems](list-removeitems.md)|Removes items from the first list that are present in the second list.|
+|[List.RemoveLastN](list-removelastn.md)|Returns a list that removes the specified number of elements from the end of the list.|
+|[List.RemoveMatchingItems](list-removematchingitems.md)|Removes all occurrences of the input values.|
+|[List.RemoveNulls](list-removenulls.md)|Removes all `null` values from the specified list.|
+|[List.RemoveRange](list-removerange.md)|Removes count number of values starting at the specified position.|
+|[List.Repeat](list-repeat.md)|Returns a list that is `count` repetitions of the original list.|
+|[List.ReplaceMatchingItems](list-replacematchingitems.md)|Replaces occurrences of existing values in the list with new values that match the condition.|
+|[List.ReplaceRange](list-replacerange.md)|Replaces `count` number of values starting at `position` with the replacement values.|
+|[List.ReplaceValue](list-replacevalue.md)|Searches a list for the specified value and replaces it.|
+|[List.Reverse](list-reverse.md)|Reverses the order of values in the list.|
 |[List.Split](list-split.md)|Splits the specified list into a list of lists using the specified page size.|
-|[List.Transform](list-transform.md)|Performs the function on each item in the list and returns the new list.|
-|[List.TransformMany](list-transformmany.md)|Returns a list whose elements are projected from the input list.|
+|[List.Transform](list-transform.md)|Returns a new list of values computed from this list.|
+|[List.TransformMany](list-transformmany.md)|Returns a list whose elements are transformed from the input list using specified functions.|
+|[List.Zip](list-zip.md)|Returns a list of lists by combining items at the same position in multiple lists.|
 
 ## Membership functions
 
@@ -67,22 +68,21 @@ Since all values can be tested for equality, these functions can operate over he
 
 |Name|Description|
 |------------|---------------|
-|[List.AllTrue](list-alltrue.md)|Returns true if all expressions in a list are true|
-|[List.AnyTrue](list-anytrue.md)|Returns true if any expression in a list in true|
-|[List.Contains](list-contains.md)|Returns true if a value is found in a list.|
-|[List.ContainsAll](list-containsall.md)|Returns true if all items in values are found in a list.|
-|[List.ContainsAny](list-containsany.md)|Returns true if any item in values is found in a list.|
-|[List.PositionOf](list-positionof.md)|Finds the first occurrence of a value in a list and returns its position.|
-|[List.PositionOfAny](list-positionofany.md)|Finds the first occurrence of any value in values and returns its position.|
+|[List.AllTrue](list-alltrue.md)|Returns `true` if all expressions are true.|
+|[List.AnyTrue](list-anytrue.md)|Returns true if any expression is true.|
+|[List.Contains](list-contains.md)|Indicates whether the list contains the value.|
+|[List.ContainsAll](list-containsall.md)|Indicates where a list includes all the values in another list.|
+|[List.ContainsAny](list-containsany.md)|Indicates where a list includes any of the values in another list.|
+|[List.PositionOf](list-positionof.md)|Returns the offset(s) of a value in a list.|
+|[List.PositionOfAny](list-positionofany.md)|Returns the first offset of a value in a list.|
 
 ## Set operations
 
 |Name|Description|
 |------------|---------------|
-|[List.Difference](list-difference.md)|Returns the items in list 1 that do not appear in list 2. Duplicate values are supported.|
-|[List.Intersect](list-intersect.md)|Returns a list from a list of lists and intersects common items in individual lists. Duplicate values are supported.|
-|[List.Union](list-union.md)|Returns a list from a list of lists and unions the items in the individual lists. The returned list contains all items in any input lists. Duplicate values are matched as part of the Union.|
-|[List.Zip](list-zip.md)|Returns a list of lists combining items at the same position.|
+|[List.Difference](list-difference.md)|Returns the difference of the two given lists.|
+|[List.Intersect](list-intersect.md)|Returns the intersection of the list values found in the input.|
+|[List.Union](list-union.md)|Returns the union of the list values found in the input.|
 
 ## Ordering
 
@@ -99,13 +99,13 @@ Comparable data types include:
 
 |Name|Description|
 |------------|---------------|
-|[List.Max](list-max.md)|Returns the maximum item in a list, or the optional default value if the list is empty.|
-|[List.MaxN](list-maxn.md)|Returns the maximum values in the list. The number of values to return or a filtering condition must be specified.|
-|[List.Median](list-median.md)|Returns the median item from a list.|
-|[List.Min](list-min.md)|Returns the minimum item in a list, or the optional default value if the list is empty.|
-|[List.MinN](list-minn.md)|Returns the minimum values in a list. The number of values to return or a filtering condition may be specified.|
-|[List.Sort](list-sort.md)|Returns a sorted list using comparison criterion.|
-|[List.Percentile](list-percentile.md) | Returns one or more sample percentiles corresponding to the given probabilities.|
+|[List.Max](list-max.md)|Returns the maximum value or the default value for an empty list.|
+|[List.MaxN](list-maxn.md)|Returns the maximum value(s) in the list. The number of values to return or a filtering condition must be specified.|
+|[List.Median](list-median.md)|Returns the median value in the list.|
+|[List.Min](list-min.md)|Returns the minimum value or the default value for an empty list.|
+|[List.MinN](list-minn.md)|Returns the minimum value(s) in the list. The number of values to return or a filtering condition may be specified.|
+|[List.Sort](list-sort.md)|Sorts a list of data according to the criteria specified.|
+|[List.Percentile](list-percentile.md)|Returns one or more sample percentiles corresponding to the given probabilities.|
 
 ## Averages
 
@@ -113,10 +113,10 @@ These functions operate over homogeneous lists of Numbers, DateTimes, and Durati
 
 |Name|Description|
 |------------|---------------|
-|[List.Average](list-average.md)|Returns an average value from a list in the datatype of the values in the list.|
-|[List.Mode](list-mode.md)|Returns an item that appears most commonly in a list.|
-|[List.Modes](list-modes.md)|Returns all items that appear with the same maximum frequency.|
-|[List.StandardDeviation](list-standarddeviation.md)|Returns the standard deviation from a list of values. **List.StandardDeviation** performs a sample based estimate. The result is a number for numbers, and a duration for DateTimes and Durations.|
+|[List.Average](list-average.md)|Returns the average of the values. Works with number, date, datetime, datetimezone and duration values.|
+|[List.Mode](list-mode.md)|Returns the most frequent value in the list.|
+|[List.Modes](list-modes.md)|Returns a list of the most frequent values in the list.|
+|[List.StandardDeviation](list-standarddeviation.md)|Returns a sample based estimate of the standard deviation. This function performs a sample based estimate. The result is a number for numbers, and a duration for DateTimes and Durations.|
 
 ## Addition
 
@@ -124,7 +124,7 @@ These functions work over homogeneous lists of Numbers or Durations.
 
 |Name|Description|
 |------------|---------------|
-|[List.Sum](list-sum.md)|Returns the sum from a list.|
+|[List.Sum](list-sum.md)|Returns the sum of the items in the list.|
 
 ## Numerics
 
@@ -132,8 +132,8 @@ These functions only work over numbers.
 
 |Name|Description|
 |------------|---------------|
-|[List.Covariance](list-covariance.md)|Returns the covariance from two lists as a number.|
-|[List.Product](list-product.md)|Returns the product from a list of numbers.|
+|[List.Covariance](list-covariance.md)|Returns the covariance between the two lists of numbers.|
+|[List.Product](list-product.md)|Returns the product of the numbers in the list.|
 
 ## Generators
 
@@ -141,14 +141,14 @@ These functions generate list of values.
 
 |Name|Description|
 |------------|---------------|
-|[List.Dates](list-dates.md)|Returns a list of date values from size count, starting at start and adds an increment to every value.|
-|[List.DateTimes](list-datetimes.md)|Returns a list of datetime values from size count, starting at start and adds an increment to every value.|
-|[List.DateTimeZones](list-datetimezones.md)|Returns a list of of datetimezone values from size count, starting at start and adds an increment to every value.|
-|[List.Durations](list-durations.md)|Returns a list of durations values from size count, starting at start and adds an increment to every value.|
+|[List.Dates](list-dates.md)|Generates a list of `date` values given an initial value, count, and incremental duration value.|
+|[List.DateTimes](list-datetimes.md)|Generates a list of `datetime` values given an initial value, count, and incremental duration value.|
+|[List.DateTimeZones](list-datetimezones.md)|Generates a list of `datetimezone` values given an initial value, count, and incremental duration value.|
+|[List.Durations](list-durations.md)|Generates a list of `duration` values given an initial value, count, and incremental duration value.|
 |[List.Generate](list-generate.md)|Generates a list of values.|
-|[List.Numbers](list-numbers.md)|Returns a list of numbers from size count starting at initial, and adds an increment. The increment defaults to 1.|
-|[List.Random](list-random.md)|Returns a list of count random numbers, with an optional seed parameter.|
-|[List.Times](list-times.md)|Returns a list of time values of size count, starting at start.|
+|[List.Numbers](list-numbers.md)|Returns a list of numbers given an initial value, count, and optional increment value.|
+|[List.Random](list-random.md)|Returns a list of random numbers.|
+|[List.Times](list-times.md)|Generates a list of `time` values given an initial value, count, and incremental duration value.|
 
 ## Parameter values
 
