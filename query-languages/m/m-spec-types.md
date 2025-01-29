@@ -2,7 +2,7 @@
 title: M Language types 
 description: Describes using types in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 1/3/2025
+ms.date: 1/29/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-specification
 ---
@@ -29,24 +29,21 @@ The set of _primitive types_ includes the types of primitive values, and a numbe
 
 All types that are not members of the closed set of primitive types plus their nullable counterparts are collectively referred to as _custom types_. Custom types can be written using a `type-expression`:
 
-_primitive-type:_ one of<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`any anynonnull binary date datetime datetimezone duration function list logical`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`none null number record table text time type`<br/>
-_primitive-or-nullable-primitive-type:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`_<sub>opt</sub>  primitive-type_<br />
-
-All other types are collectively referred to as _custom types_. Custom types can be written using a `type-expression`:
-
 _type-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`type` _primary-type<br/> 
 primary-type:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primitive-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primitive-or-nullable-primitive-type<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;record-type<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list-type<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function-type<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;table-type<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nullable-type_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nullable-type_<br />
+_primitive-or-nullable-primitive-type:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`_<sub>opt</sub> primitive-type_<br />
+_primitive-type:_ one of<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`any anynonnull binary date datetime datetimezone duration function list logical`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`none null number record table text time type`<br/>
 
 The _primitive-type_ names are _contextual keywords_ recognized only in a _type_ context. The use of parentheses in a _type_ context moves the grammar back to a regular expression context, requiring the use of the type keyword to move back into a type context. For example, to invoke a function in a _type_ context, parentheses can be used:
 
