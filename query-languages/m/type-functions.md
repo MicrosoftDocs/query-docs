@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Type functions"
 title: "Type functions"
-ms.date: 5/16/2022
+ms.date: 10/24/2024
 ms.custom: "nonautomated-date"
 ---
 # Type functions
@@ -13,7 +13,7 @@ These functions create and manipulate type values.
 |[Type.AddTableKey](type-addtablekey.md)|Add a key to a table type.|
 |[Type.ClosedRecord](type-closedrecord.md)|The given type must be a record type returns a closed version of the given record type (or the same type, if it is already closed)|
 |[Type.Facets](type-facets.md) | Returns the facets of a type.|
-|[Type.ForFunction](type-forfunction.md)|Creates a function type from the given .|
+|[Type.ForFunction](type-forfunction.md)|Returns a type that represents functions with specific parameter and return type constraints.|
 |[Type.ForRecord](type-forrecord.md)|Returns a Record type from a fields record.|
 |[Type.FunctionParameters](type-functionparameters.md)|Returns a record with field values set to the name of the parameters of a function type, and their values set to their corresponding types.|
 |[Type.FunctionRequiredParameters](type-functionrequiredparameters.md)|Returns a number indicating the minimum number of parameters required to invoke the a type of function.|

@@ -42,7 +42,7 @@ items:
     href: evaluation-model.md
   - name: Operators
     href: operators.md
-  - name: Type conversion
+  - name: Types and type conversion
     href: type-conversion.md
   - name: Metadata
     href: metadata.md
@@ -134,6 +134,8 @@ items:
         href: cube-transform.md
       - name: DB2.Database
         href: db2-database.md
+      - name: DeltaLake.Metadata
+        href: deltalake-metadata.md
       - name: DeltaLake.Table
         href: deltalake-table.md
       - name: Essbase.Cubes
