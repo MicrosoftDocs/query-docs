@@ -2,7 +2,7 @@
 title: M Language Operators 
 description: Describes using operators in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 1/7/2025
+ms.date: 1/29/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-specification
 ---
@@ -133,12 +133,12 @@ The following table summarizes the M operators, listing the operator categories 
     <tr>
         <td>Type assertion</td>
         <td><em>x</em> <code>as</code> <em>y</em></td>
-        <td>Is compatible with primitive or nullable primitive type or error</td>
+        <td>Test if value is compatible with primitive type or nullable primitive type</td>
     </tr>
     <tr>
         <td>Type conformance</td>
         <td><em>x</em> <code>is</code> <em>y</em></td>
-        <td>Test if compatible with primitive or nullable primitive type</td>
+        <td>Test if type is compatible with primitive type or nullable primitive type</td>
     </tr>
     <tr>
         <td>Logical AND</td>
@@ -1255,7 +1255,7 @@ The type compatibility operator `x is y`  is defined for the following types of 
 | --- | --- | --- |
 | `type any` | _primitive-or-nullable-primitive-type_ | `type logical` |
 
-The expression `x is y` returns `true` if the ascribed type of `x` is compatible with `y`, and returns `false` if it is not compatible. `y` must be a _primitive-or-nullable-primitive-type_.
+The expression `x is y` returns `true` if the ascribed type of `x` is compatible with `y`, and returns `false` if it is not compatible. `y` must be a primitive type or a nullable primitive type.
 
 _is-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as-expression<br/>
@@ -1265,7 +1265,7 @@ primitive-or-nullable-primitive-type:_<br/>
 
 Type compatibility, as supported by the `is` operator, is a subset of [general type compatibility](m-spec-types.md) and is defined using the following rules:
 
-* If `x` is null then it is compatible if `y` is the type `any`, the type `null`, or a nullable type.
+* If `x` is null then it is compatible if `y` is the type `any`, the type `null`, or a nullable primitive type.
 
 * If `x` is non-null then it is a compatible if the primitive type of `x` is the same as `y`.
 
