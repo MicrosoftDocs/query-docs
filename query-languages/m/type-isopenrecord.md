@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Type.IsOpenRecord"
 title: "Type.IsOpenRecord"
+ms.subservice: m-source
 ---
 # Type.IsOpenRecord
 

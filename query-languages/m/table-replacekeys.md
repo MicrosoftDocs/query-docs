@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.ReplaceKeys"
 title: "Table.ReplaceKeys"
+ms.subservice: m-source
 ---
 # Table.ReplaceKeys
 

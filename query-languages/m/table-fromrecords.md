@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.FromRecords"
 title: "Table.FromRecords"
+ms.subservice: m-source
 ---
 # Table.FromRecords
 
@@ -57,3 +58,7 @@ Table.ColumnsOfType(
 **Output**
 
 `{"CustomerID"}`
+
+## Related content
+
+[Missing field](missingfield-type.md)

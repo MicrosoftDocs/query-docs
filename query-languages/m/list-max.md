@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Max"
 title: "List.Max"
+ms.subservice: m-source
 ---
 # List.Max
 
@@ -41,3 +42,7 @@ List.Max({}, -1)
 **Output**
 
 `-1`
+
+## Related content
+
+[Comparison criteria](list-functions.md#comparison-criteria)

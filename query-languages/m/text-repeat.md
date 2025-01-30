@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.Repeat"
 title: "Text.Repeat"
+ms.subservice: m-source
 ---
 # Text.Repeat
 

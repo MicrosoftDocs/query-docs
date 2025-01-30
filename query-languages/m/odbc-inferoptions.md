@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Odbc.InferOptions"
 title: "Odbc.InferOptions"
+ms.subservice: m-source
 ---
 # Odbc.InferOptions
 

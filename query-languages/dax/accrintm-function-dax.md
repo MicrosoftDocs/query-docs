@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ACCRINTM"
-title: "ACCRINTM function (DAX) | Microsoft Docs"
+title: "ACCRINTM function (DAX) "
 author: jajin7
 ---
 
@@ -18,17 +18,17 @@ ACCRINTM(<issue>, <maturity>, <rate>, <par>[, <basis>])
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|issue|The security's issue date.|
-|maturity|The security's maturity date.|
-|rate|The security's annual coupon rate.|
-|par|The security's par value.|
-|basis|(Optional) The type of day count basis to use. If basis is omitted, it is assumed to be 0. The accepted values are listed below this table.|
+|Term|Definition|
+|--------|--------------|
+|`issue`|The security's issue date.|
+|`maturity`|The security's maturity date.|
+|`rate`|The security's annual coupon rate.|
+|`par`|The security's par value.|
+|`basis`|(Optional) The type of day count basis to use. If basis is omitted, it is assumed to be 0. The accepted values are listed below this table.|
 
-The **basis** parameter accepts the following values:
+The `basis` parameter accepts the following values:
 
-| **Basis**    | **Day count basis** |
+| `Basis`    | **Day count basis** |
 | ------------ | ------------------- |
 | 0 or omitted | US (NASD) 30/360    |
 | 1            | Actual/actual       |

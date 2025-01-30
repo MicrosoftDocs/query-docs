@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.PositionOf"
 title: "List.PositionOf"
+ms.subservice: m-source
 ---
 # List.PositionOf
 
@@ -29,3 +30,7 @@ List.PositionOf({1, 2, 3}, 3)
 **Output**
 
 `2`
+
+## Related content
+
+[Equation criteria](list-functions.md#equation-criteria)

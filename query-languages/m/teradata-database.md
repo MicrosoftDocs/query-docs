@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Teradata.Database"
 title: "Teradata.Database"
+ms.subservice: m-source
 ---
 # Teradata.Database
 

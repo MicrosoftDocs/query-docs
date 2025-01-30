@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Combiner.CombineTextByRanges"
 title: "Combiner.CombineTextByRanges"
+ms.subservice: m-source
 ---
 # Combiner.CombineTextByRanges
 

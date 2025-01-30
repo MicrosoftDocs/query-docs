@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: JoinSide.Type"
 title: "JoinSide.Type"
+ms.subservice: m-source
 ---
 # JoinSide.Type
 

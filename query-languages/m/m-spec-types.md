@@ -2,8 +2,9 @@
 title: M Language types 
 description: Describes using types in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 1/31/2024
+ms.date: 10/7/2024
 ms.custom: "nonautomated-date"
+ms.subservice: m-specification
 ---
 
 # Types
@@ -129,7 +130,7 @@ Types in the M language form a disjoint hierarchy rooted at type `any`, which is
 * `type record`, which classifies record values.
 * `type table`, which classifies table values.
 * `type function`, which classifies function values.
-* `type anynonnull`, which classifies all values excluding null. 
+* `type anynonnull`, which classifies all values excluding null.
 * `type none`, which classifies no values.
 
 ## Any Type
@@ -397,3 +398,8 @@ Type.FunctionReturn(
         type function (x as number, optional y as text) as number) 
   // type number 
 ```
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)
+* [Types in the Power Query M formula language](power-query-m-type-system.md)

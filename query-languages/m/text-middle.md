@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.Middle"
 title: "Text.Middle"
+ms.subservice: m-source
 ---
 # Text.Middle
 
@@ -41,3 +42,17 @@ Text.Middle("Hello World", 6, 20)
 **Output**
 
 `"World"`
+
+## Example 3
+
+Find the substring from the text "Hello World" starting at index 0 spanning 2 characters.
+
+**Usage**
+
+```powerquery-m
+Text.Middle("Hello World", 0, 2)
+```
+
+**Output**
+
+`"He"`

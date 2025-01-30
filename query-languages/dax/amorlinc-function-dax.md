@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: AMORLINC"
-title: "AMORLINC function (DAX) | Microsoft Docs"
+title: "AMORLINC function (DAX)"
 author: jajin7
 ---
 
@@ -18,19 +18,19 @@ AMORLINC(<cost>, <date_purchased>, <first_period>, <salvage>, <period>, <rate>[,
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|cost|The cost of the asset.|  
-|date_purchased|The date of the purchase of the asset.|
-|first_period|The date of the end of the first period.|
-|salvage|The salvage value at the end of the life of the asset.|
-|period|The period.|
-|rate|The rate of depreciation.|
-|basis|(Optional) The type of day count basis to use. If basis is omitted, it is assumed to be 0. The accepted values are listed below this table.|
+|Term|Definition|
+|--------|--------------|
+|`cost`|The cost of the asset.|
+|`date_purchased`|The date of the purchase of the asset.|
+|`first_period`|The date of the end of the first period.|
+|`salvage`|The salvage value at the end of the life of the asset.|
+|`period`|The period.|
+|`rate`|The rate of depreciation.|
+|`basis`|(Optional) The type of day count basis to use. If basis is omitted, it is assumed to be 0. The accepted values are listed below this table.|
 
-The **basis** parameter accepts the following values:
+The `basis` parameter accepts the following values:
 
-| **Basis**    | **Date system**                      |
+| `Basis`    | **Date system**                      |
 | ------------ | ------------------------------------ |
 | 0 or omitted | 360 days (NASD method)               |
 | 1            | Actual                               |
@@ -48,13 +48,13 @@ The depreciation for each accounting period.
 - period and basis are rounded to the nearest integer.
 
 - An error is returned if:
-  - cost < 0.
-  - first_period or date_purchased is not a valid date.
-  - date_purchased > first_period.
-  - salvage < 0 or salvage > cost.
-  - period < 0.
-  - rate ≤ 0.
-  - basis is any number other than 0, 1, 3, or 4.
+  - `cost` < 0.
+  - `first_period` or `date_purchased` is not a valid date.
+  - `date_purchased` > `first_period`.
+  - `salvage` < 0 or `salvage` > `cost`.
+  - `period` < 0.
+  - `rate` ≤ 0.
+  - `basis` is any number other than 0, 1, 3, or 4.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 

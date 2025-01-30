@@ -4,6 +4,7 @@ description: Describes the lexical structure of the Power Query M formula langua
 ms.topic: conceptual
 ms.date: 8/2/2022
 ms.custom: "nonautomated-date"
+ms.subservice: m-specification
 ---
 
 

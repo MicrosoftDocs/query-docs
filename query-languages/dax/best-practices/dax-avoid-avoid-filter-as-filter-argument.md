@@ -57,7 +57,7 @@ CALCULATE(
     [Sales],
     FILTER(
         VALUES('Date'[Month]),
-        [Profit] > 0)
+        [Profit] > 0
     )
 )
 ```

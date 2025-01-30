@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.IsEmpty"
 title: "List.IsEmpty"
+ms.subservice: m-source
 ---
 # List.IsEmpty
 

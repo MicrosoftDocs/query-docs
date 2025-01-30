@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Record.RenameFields"
 title: "Record.RenameFields"
+ms.subservice: m-source
 ---
 # Record.RenameFields
 

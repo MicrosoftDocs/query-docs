@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Contains"
 title: "List.Contains"
+ms.subservice: m-source
 ---
 # List.Contains
 
@@ -41,3 +42,24 @@ List.Contains({1, 2, 3, 4, 5}, 6)
 **Output**
 
 `false`
+
+## Example 3
+
+Ignoring case, find if the list contains "rhubarb".
+
+**Usage**
+
+```powerquery-m
+List.Contains({"Pears", "Bananas", "Rhubarb", "Peaches"},
+    "rhubarb",
+    Comparer.OrdinalIgnoreCase
+)
+```
+
+**Output**
+
+`true`
+
+## Related content
+
+[Equation criteria](list-functions.md#equation-criteria)

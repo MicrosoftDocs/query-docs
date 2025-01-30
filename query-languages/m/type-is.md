@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Type.Is"
 title: "Type.Is"
+ms.subservice: m-source
 ---
 # Type.Is
 
@@ -41,3 +42,7 @@ Type.Is(type any, type number)
 **Output**
 
 `false`
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)

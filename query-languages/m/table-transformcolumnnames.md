@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.TransformColumnNames"
 title: "Table.TransformColumnNames"
+ms.subservice: m-source
 ---
 # Table.TransformColumnNames
 
@@ -55,3 +56,7 @@ Table.TransformColumnNames(
 **Output**
 
 `Table.FromRecords({[Column = 1, cOlum1 = 2, coLum2 = 3]})`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Splitter.SplitTextByLengths"
 title: "Splitter.SplitTextByLengths"
+ms.subservice: m-source
 ---
 # Splitter.SplitTextByLengths
 

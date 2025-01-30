@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.AddColumn"
 title: "Table.AddColumn"
+ms.subservice: m-source
 ---
 # Table.AddColumn
 
@@ -42,3 +43,7 @@ Table.FromRecords({
     [OrderID = 3, CustomerID = 2, Item = "Fishing net", Price = 25, Shipping = 10, TotalPrice = 35]
 })
 ```
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)

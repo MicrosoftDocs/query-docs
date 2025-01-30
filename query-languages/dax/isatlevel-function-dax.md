@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: ISATLEVEL"
-title: "ISATLEVEL function (DAX) | Microsoft Docs"
+title: "ISATLEVEL function (DAX)"
 ms.service: powerbi
 ms.subservice: dax
 ms.date: 02/20/2024
@@ -27,11 +27,11 @@ ISATLEVEL ( <column> )
 
 |Term|Definition|
 |--------|--------------|
-|column|A grouping column in the data grid.|
+|`column`|A grouping column in the data grid.|
 
 ## Return value
 
-TRUE or FALSE that indicates whether the grouping column is at the current level in the context.
+`TRUE` or `FALSE` that indicates whether the grouping column is at the current level in the context.
 
 ## Remarks
 
@@ -57,12 +57,11 @@ The screenshot below shows the matrix with the five visual calculations.
 
 ## See also
 
-[EXPAND](expand-function-dax.md)  
-[EXPANDALL](expandall-function-dax.md)  
-[COLLAPSE](collapse-function-dax.md)  
-[COLLAPSEALL](collapseall-function-dax.md)  
-[ISINSCOPE](isinscope-function-dax.md)  
-[ISFILTERED](isfiltered-function-dax.md)  
-[HASONEVALUE](hasonevalue-function-dax.md)  
-
+[EXPAND](expand-function-dax.md)
+[EXPANDALL](expandall-function-dax.md)
+[COLLAPSE](collapse-function-dax.md)
+[COLLAPSEALL](collapseall-function-dax.md)
+[ISINSCOPE](isinscope-function-dax.md)
+[ISFILTERED](isfiltered-function-dax.md)
+[HASONEVALUE](hasonevalue-function-dax.md)
 

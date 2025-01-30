@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: WebMethod.Type"
 title: "WebMethod.Type"
+ms.subservice: m-source
 ---
 # WebMethod.Type
 

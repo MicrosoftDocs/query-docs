@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Binary.Combine"
 title: "Binary.Combine"
+ms.subservice: m-source
 ---
 # Binary.Combine
 

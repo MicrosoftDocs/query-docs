@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Int64.From"
 title: "Int64.From"
+ms.subservice: m-source
 ---
 # Int64.From
 
@@ -41,3 +42,7 @@ Int64.From("4.5", null, RoundingMode.AwayFromZero)
 **Output**
 
 `5`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: #binary"
 title: "#binary"
+ms.subservice: m-source
 ---
 # #binary
 ## Syntax
