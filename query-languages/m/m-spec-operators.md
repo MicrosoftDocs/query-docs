@@ -133,7 +133,7 @@ The following table summarizes the M operators, listing the operator categories 
     <tr>
         <td>Type assertion</td>
         <td><em>x</em> <code>as</code> <em>y</em></td>
-        <td>Test if value is compatible with primitive type or nullable primitive type</td>
+        <td>Is compatible primitive/nullable primitive type or error</td>
     </tr>
     <tr>
         <td>Type conformance</td>
