@@ -228,8 +228,8 @@ optional-parameter-specification:_<br/>
 parameter-specification:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-name  parameter-type<br/>
 parameter-type:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assertion<br/>
-assertion:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type-assertion<br/>
+type-assertion:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as` _type_
 
 The result of evaluating a _function-type_ is a type value whose base type is `function`.
