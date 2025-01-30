@@ -40,7 +40,7 @@ Lookup Example 1 = LOOKUP(SUM([Sales Amount]),  [Category], "Bikes")
 Lookup Example 2 = LOOKUP([Sales Amount], [Category], "Bikes")
 ```
 
-The screenshot below shows the matrix with the three visual calculations.
+The screenshot below shows the matrix with two visual calculations.
 
 ![DAX visual calculation](media/dax-queries/dax-visualcalc-lookup.png)
 
