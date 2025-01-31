@@ -37,7 +37,7 @@ A string containing `value` formatted as defined by `format_string`.
 
 - The format strings supported as an argument to the DAX FORMAT function are based on the format strings used by Visual Basic (OLE Automation), not on the format strings used by the .NET Framework. Therefore, you might get unexpected results or an error if the argument doesn't match any defined format strings. For example, "p" as an abbreviation for "Percent" isn't supported. Strings that you provide as an argument to the FORMAT function that aren't included in the list of predefined format strings are handled as part of a custom format string, or as a string literal.
 
-- To learn more specifying a locale with FORMAT, check out this [video](https://www.microsoft.com/videoplayer/embed/RWLjrD).
+- To learn more specifying a locale with FORMAT, check out this [video](https://learn-video.azurefd.net/vod/player?id=95820b42-974a-4adb-a4d5-418e923dcd2a).
 
 - Using FORMAT changes a measure result to a text data type. If the measure result is originally of numeric data type, then with FORMAT, the measure can't be used on visuals where the values section requires a numeric data type, like with charts. In Power BI, you can alternatively use **Dynamic format strings for measures** specify a conditional format string that maintains the numeric data type of the measure.
 

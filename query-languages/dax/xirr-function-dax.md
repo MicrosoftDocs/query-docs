@@ -44,7 +44,7 @@ Internal rate of return for the given inputs. If the calculation fails to return
 
 - Avoid using ISERROR or IFERROR functions to capture an error returned by XIRR. If some inputs to the function may result in a no solution error, providing an alternateResult parameter is the most reliable and highest performing way to handle the error.
 
-- To learn more about using the alternateResult parameter, be to check out this [video](https://www.microsoft.com/videoplayer/embed/RWLzrC).
+- To learn more about using the alternateResult parameter, be to check out this [video](https://learn-video.azurefd.net/vod/player?id=f3170134-1c7f-47ff-82d7-f419404e3a0e).
 
 - When the absolute value of initial payment is small, the calculation likely fails to return a valid result.
 
