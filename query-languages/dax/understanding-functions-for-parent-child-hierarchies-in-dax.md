@@ -4,7 +4,7 @@ title: "Understanding functions for parent-child hierarchies in DAX"
 ---
 # Understanding functions for parent-child hierarchies in DAX
 
-DAX provides five functions to help users manage data that is presented as a parent-child hierarchy in their models. With this functions a user can obtain the entire lineage of parents a row has, how many levels has the lineage to the top parent, who is the parent n-levels above the current row, who is the n-descendant from the top of the current row hierarchy and is certain parent a parent in the current row hierarchy?
+DAX provides five functions to help users manage data that is presented as a parent-child hierarchy in their models. With these functions a user can obtain the entire lineage of parents a row has, how many levels has the lineage to the top parent, who is the parent n-levels above the current row, who is the n-descendant from the top of the current row hierarchy and is certain parent a parent in the current row hierarchy?
 
 ## Parent-child functions in DAX
 
