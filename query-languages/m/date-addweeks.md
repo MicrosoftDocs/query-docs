@@ -31,3 +31,9 @@ Date.AddWeeks(#date(2011, 5, 14), 2)
 **Output**
 
 `#date(2011, 5, 28)`
+
+## Related content
+
+* [#date](sharpdate.md)
+* [#datetime](sharpdatetime.md)
+* [#datetimezone](sharpdatetimezone.md)
