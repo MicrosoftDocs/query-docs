@@ -45,3 +45,9 @@ Date.AddYears(#datetime(2011, 5, 14, 8, 15, 22), 10)
 **Output**
 
 `#datetime(2021, 5, 14, 8, 15, 22)`
+
+## Related content
+
+* [#date](sharpdate.md)
+* [#datetime](sharpdatetime.md)
+* [#datetimezone](sharpdatetimezone.md)
