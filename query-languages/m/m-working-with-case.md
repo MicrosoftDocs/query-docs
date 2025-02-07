@@ -116,9 +116,9 @@ This code produces the following output:
 
 ## Changing case in tables
 
-When changing case in tables, the most common function to use is [Table.TransformColumn](table-transformcolumn.md). There's also a function you can use to change the case of text that's contained in a row, called [Table.TransformRow](table-transformrow.md). However, this function isn't used as often.
+When changing case in tables, the most common function to use is [Table.TransformColumns](table-transformcolumns.md). There's also a function you can use to change the case of text that's contained in a row, called [Table.TransformRows](table-transformrows.md). However, this function isn't used as often.
 
-The following simple examples demonstrate how the `Table.TransformColumn` function can be used to change the case in tables.
+The following simple examples demonstrate how the `Table.TransformColumns` function can be used to change the case in tables.
 
 ### Convert all items in a table column to lower case
 
@@ -349,7 +349,7 @@ This code produces the following output:
 
 ### Ignoring case in tables
 
-Tables have several ways to ignore case. Table functions such as [Table.Contains](table-contains.md), [Table.Distinct](table-distinct.md), and [Table.PositionOf](table-positionof.md) all contain `equationCriteria` parameters. These parameters can use the [Comparer.OrdinalIgnoreCase](comparer-ordinalignorecase.md) function to ignore case in tables, in much the same way as the lists in the previous sections. Table functions, such as [Table.MatchesAnyRow](table-matchesanyrow.md) that contain a `condition` parameter can also use [Comparer.OrdinalIgnoreCase](comparer-ordinalignorecase.md) wrapped in other table functions to ignore case. Other table functions, specifically for fuzzy matching, can use the `IgnoreCase` option.
+Tables have several ways to ignore case. Table functions such as [Table.Contains](table-contains.md), [Table.Distinct](table-distinct.md), and [Table.PositionOf](table-positionof.md) all contain `equationCriteria` parameters. These parameters can use the [Comparer.OrdinalIgnoreCase](comparer-ordinalignorecase.md) function to ignore case in tables, in much the same way as the lists in the previous sections. Table functions, such as [Table.MatchesAnyRows](table-matchesanyrows.md) that contain a `condition` parameter can also use [Comparer.OrdinalIgnoreCase](comparer-ordinalignorecase.md) wrapped in other table functions to ignore case. Other table functions, specifically for fuzzy matching, can use the `IgnoreCase` option.
 
 The following example demonstrates how to select specific rows that contain the word "pear" while ignoring case. This example uses the `condition` parameter of [Table.SelectRows](table-selectrows.md) with [Text.Contains](text-contains.md) as the conditional to make the comparisons while ignoring case.
 
@@ -376,7 +376,7 @@ This code produces the following output:
 
 :::image type="content" source="media/ignore-case-table.png" alt-text="Screenshot of the table created by the table select rows function while ignoring case.":::
 
-The following sample shows how to determine if any of the rows in a table contain a `pear` in the `FRUIT` column. This example uses [Comparer.OrdinalIgnoreCase](comparer-ordinalignorecase.md) in a [Text.Contains](text-contains.md) function using the `condition` parameter of the [Table.MatchesAnyRow](table-matchesanyrow.md) function.
+The following sample shows how to determine if any of the rows in a table contain a `pear` in the `FRUIT` column. This example uses [Comparer.OrdinalIgnoreCase](comparer-ordinalignorecase.md) in a [Text.Contains](text-contains.md) function using the `condition` parameter of the [Table.MatchesAnyRows](table-matchesanyrows.md) function.
 
 ```powerquery-m
 let
