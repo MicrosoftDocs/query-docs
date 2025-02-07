@@ -465,10 +465,4 @@ Although not common, you might have a mix of upper and lower case letters in tex
 1. If there is matching text, the text with the maximum number of upper case letters to the left is done next.
 1. Lower case is then sorted, with the maximum number of upper case letters to the right done first.
 
-In in this case, it might be more convenient to convert the text to a consistent case before sorting.
-
-
-
-## Example
-
-
+In this case, it might be more convenient to convert the text to a consistent case before sorting.
