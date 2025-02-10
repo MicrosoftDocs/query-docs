@@ -25,7 +25,7 @@ Fetches data from a SQL table in a way that prevents any downstream operations f
 let
     Source = Sql.Database("SomeSQLServer", "MyDb"),
     MyTable = Source{[Item="MyTable"]}[Data],
-    MyLocalTable = Table.StopFolding(dbo_MyTable)
+    MyLocalTable = Table.StopFolding(MyTable)
 in
     MyLocalTable
 ```
