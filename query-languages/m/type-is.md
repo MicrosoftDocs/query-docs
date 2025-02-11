@@ -13,9 +13,7 @@ Type.Is(<b>type1</b> as type, <b>type2</b> as type) as logical
 
 ## About
 
-Determines if a value of `type1` is always compatible with `type2`. 
-
-Parameter `type2` should be a primitive (or nullable primitive) type value. Otherwise, this function's behavior is undefined and shouldn't be relied on.
+Determines if a value of `type1` is always compatible with `type2`. Parameter `type2` should be a primitive (or nullable primitive) type value. Otherwise, this function's behavior is undefined and shouldn't be relied on.
 
 ## Example 1
 
