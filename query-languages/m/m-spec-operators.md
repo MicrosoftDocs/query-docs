@@ -2,7 +2,7 @@
 title: M Language Operators 
 description: Describes using operators in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 1/29/2025
+ms.date: 2/13/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-specification
 ---
@@ -1267,7 +1267,7 @@ Type compatibility, as supported by the `is` operator, is a subset of [general t
 
 * If `x` is null then it is compatible if `y` is the type `any`, the type `null`, or a nullable primitive type.
 
-* If `x` is non-null then it is a compatible if the primitive type of `x` is the same as `y`.
+* If `x` is non-null then it is compatible if the primitive type of `x` is the same as `y`.
 
 The following holds when evaluating the expression `x is y`:
 
