@@ -2,7 +2,7 @@
 title: M Language types 
 description: Describes using types in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 10/7/2024
+ms.date: 1/29/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-specification
 ---
@@ -32,19 +32,18 @@ All types that are not members of the closed set of primitive types plus their n
 _type-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`type` _primary-type<br/> 
-type:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-type<br/>
 primary-type:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primitive-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primitive-or-nullable-primitive-type<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;record-type<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list-type<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function-type<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;table-type<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nullable-type<br/>
-primitive-type:_ one of<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nullable-type_<br />
+_primitive-or-nullable-primitive-type:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`_<sub>opt</sub> primitive-type_<br />
+_primitive-type:_ one of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`any anynonnull binary date datetime datetimezone duration function list logical`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`none null number record table text time type`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`none null number record table text time type`<br/>
 
 The _primitive-type_ names are _contextual keywords_ recognized only in a _type_ context. The use of parentheses in a _type_ context moves the grammar back to a regular expression context, requiring the use of the type keyword to move back into a type context. For example, to invoke a function in a _type_ context, parentheses can be used:
 
@@ -95,7 +94,7 @@ Value.Type( 1 as number )   // type number
 {2} as text                 // error, type mismatch
 ```
 
-Note that the `is` and `as` operators only accept nullable primitive types as their right operand. M does not provide means to check values for conformance to custom types.
+Note that the `is` and `as` operators only accept a _primitive or nullable primitive type_ (i.e. a _non-custom type_) as their right operand. M does not provide means to check values for conformance to custom types.
 
 A type `X` is _compatible_ with a type `Y` if and only if all values that conform to `X` also conform to `Y`. All types are compatible with type `any` and no types (but `none` itself) are compatible with type `none`. The following graph shows the compatibility relation. (Type compatibility is reflexive and transitive. It forms a lattice with type `any` as the top and type `none` as the bottom value.) The names of abstract types are set in _italics_. 
 
@@ -210,28 +209,28 @@ A conforming value may contain field names not listed in the field specification
 
 Any function value conforms to the primitive type `function`, which does not place any restrictions on the types of the function's formal parameters or the function's return value. A custom _function-type value_ is used to place type restrictions on the signatures of conformant function values.
 
-_function-type:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`function (`  _parameter-specification-list<sub>opt</sub>_ `)` _function-return-type<br/>
+function-type:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`function (`  _parameter-specification-list<sub>opt</sub>_  `)`  _return-type<br/>
 parameter-specification-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-parameter-specification-list<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-parameter-specification-list_  `,`  _optional-parameter-specification-list<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter-specification-list<br/>
 required-parameter-specification-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-parameter-specification<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-parameter-specification_ `,` _required-parameter-specification-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-parameter-specification_  `,`  _required-parameter-specification-list<br/>
 required-parameter-specification:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-specification<br/>
 optional-parameter-specification-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter-specification<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter-specification_ `,` _optional-parameter-specification-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter-specification_  `,`  _optional-parameter-specification-list<br/>
 optional-parameter-specification:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional` _parameter-specification<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional` _parameter-specification<br/> 
 parameter-specification:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-name parameter-type<br/> 
-function-return-type:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assertion<br/>
-assertion:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as`  _nullable-primitive-type_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-name  parameter-type<br/>
+parameter-type:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type-assertion<br/>
+type-assertion:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as` _type_
 
 The result of evaluating a _function-type_ is a type value whose base type is `function`.
 
@@ -364,7 +363,7 @@ Value.Type( Value.ReplaceType( {1}, type {number} )
 
 Type equivalence is not defined in M. An M implementation may optionally choose to use its own rules to perform equality comparisons between type values. Comparing two type values for equality should evaluate to `true` if they are considered identical by the implementation, and `false` otherwise. In either case, the response returned must be consistent if the same two values are repeatedly compared. Note that within a given implementation, comparing some identical type values (such as `(type text) = (type text)`) may return `true`, while comparing others (such as `(type [a = text]) = (type [a = text])`) may not.
 
-Compatibility between a given type and a nullable primitive type can be determined using the library function `Type.Is`, which accepts an arbitrary type value as its first and a nullable primitive type value as its second argument:
+Compatibility between a given type and either a primitive type or a nullable primitive type can be determined using the library function `Type.Is`, which accepts an arbitrary type value as its first argument and a primitive or nullable primitive type value as its second argument:
 
 ```powerquery-m
 Type.Is(type text, type nullable text)  // true 
