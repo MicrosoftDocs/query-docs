@@ -269,7 +269,7 @@ In this example, TotalQty can be passed as a named variable to other expressions
 |`Text`|String|A Unicode character data string. Can be strings, numbers or dates represented in a text format. Maximum size is 64,000 characters.|
 |`Date`|Date/time|Dates and times in an accepted date-time representation.<br /><br /> Valid dates are all dates after March 1, 1900.|
 |`Currency`|Currency|Currency data type allows values between -922,337,203,685,477.5808 to 922,337,203,685,477.5807 with four decimal digits of fixed precision.|
-|`Variant`|Variant|Used for expressions, such as DAX measures, that return different data types. For example, a DAX measure that returns either a whole number or a string will be of type variant.|
+|`Variant`|Variant|Used for expressions, such as DAX measures, that may return different data types. For example, a DAX measure that returns either a whole number or a string will be of type variant.|
 |`N/A`|Blank|A blank is a data type in DAX that represents and replaces SQL nulls. You can create a blank by using the BLANK function, and test for blanks by using the logical function, ISBLANK.|
 
 Tabular data models also include the *Table* data type as the input or output to many DAX functions. For example, the FILTER function takes a table as input and outputs another table that contains only the rows that meet the filter conditions. By combining table functions with aggregation functions, you can perform complex calculations over dynamically defined data sets.
