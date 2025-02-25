@@ -266,9 +266,10 @@ In this example, TotalQty can be passed as a named variable to other expressions
 |`Whole Number`|A 64 bit (eight-bytes) integer value <sup>1, 2</sup>|Numbers that have no decimal places. Integers can be positive or negative numbers, but must be whole numbers between -9,223,372,036,854,775,808 (-2^63) and 9,223,372,036,854,775,807 (2^63-1).|
 |`Decimal Number`|A 64 bit (eight-bytes) real number <sup>1, 2</sup>|Real numbers are numbers that can have decimal places. Real numbers cover a wide range of values:<br /><br /> Negative values from -1.79E +308 through -2.23E -308<br /><br /> Zero<br /><br /> Positive values from 2.23E -308 through 1.79E + 308<br /><br /> However, the number of significant digits is limited to 17 decimal digits.|
 |`Boolean`|Boolean|Either a True or False value.|
-|`Text`|String|A Unicode character data string. Can be strings, numbers or dates represented in a text format.|
+|`Text`|String|A Unicode character data string. Can be strings, numbers or dates represented in a text format. Maximum size is 64,000 characters.|
 |`Date`|Date/time|Dates and times in an accepted date-time representation.<br /><br /> Valid dates are all dates after March 1, 1900.|
 |`Currency`|Currency|Currency data type allows values between -922,337,203,685,477.5808 to 922,337,203,685,477.5807 with four decimal digits of fixed precision.|
+|`Variant`|Variant|Used for expressions, such as DAX measures, that return different data types. For example, a DAX measure that returns either a whole number or a string will be of type variant.|
 |`N/A`|Blank|A blank is a data type in DAX that represents and replaces SQL nulls. You can create a blank by using the BLANK function, and test for blanks by using the logical function, ISBLANK.|
 
 Tabular data models also include the *Table* data type as the input or output to many DAX functions. For example, the FILTER function takes a table as input and outputs another table that contains only the rows that meet the filter conditions. By combining table functions with aggregation functions, you can perform complex calculations over dynamically defined data sets.
@@ -331,7 +332,7 @@ In a report, context is changed by filtering, adding or removing fields, and usi
 
 ### Filter context
 
-*Filter context* is the set of values allowed in each column, or in the values retrieved from a related table. Filters can be applied to the column in the designer, or in the presentation layer (reports and PivotTables). Filters can also be defined explicitly by filter expressions within the formula.
+*Filter context* is the set of values allowed in each column, or in the values retrieved from a related table. Filters can be applied to the column in Desktop, or in the presentation layer (reports and PivotTables). Filters can also be defined explicitly by filter expressions within the formula.
 
 Filter context is added when you specify filter constraints on the set of values allowed in a column or table, by using arguments to a formula. Filter context applies on top of other contexts, such as row context or query context.
 
