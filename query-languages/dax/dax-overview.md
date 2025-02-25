@@ -266,7 +266,7 @@ In this example, TotalQty can be passed as a named variable to other expressions
 |`Whole Number`|A 64 bit (eight-bytes) integer value <sup>1, 2</sup>|Numbers that have no decimal places. Integers can be positive or negative numbers, but must be whole numbers between -9,223,372,036,854,775,808 (-2^63) and 9,223,372,036,854,775,807 (2^63-1).|
 |`Decimal Number`|A 64 bit (eight-bytes) real number <sup>1, 2</sup>|Real numbers are numbers that can have decimal places. Real numbers cover a wide range of values:<br /><br /> Negative values from -1.79E +308 through -2.23E -308<br /><br /> Zero<br /><br /> Positive values from 2.23E -308 through 1.79E + 308<br /><br /> However, the number of significant digits is limited to 17 decimal digits.|
 |`Boolean`|Boolean|Either a True or False value.|
-|`Text`|String|A Unicode character data string. Can be strings, numbers or dates represented in a text format. Maximum size is 64,000 characters.|
+|`Text`|String|A Unicode character data string. Can be strings, numbers or dates represented in a text format.|
 |`Date`|Date/time|Dates and times in an accepted date-time representation.<br /><br /> Valid dates are all dates after March 1, 1900.|
 |`Currency`|Currency|Currency data type allows values between -922,337,203,685,477.5808 to 922,337,203,685,477.5807 with four decimal digits of fixed precision.|
 |`Variant`|Variant|Used for expressions, such as DAX measures, that may return different data types. For example, a DAX measure that returns either a whole number or a string will be of type variant.|
@@ -275,6 +275,9 @@ In this example, TotalQty can be passed as a named variable to other expressions
 Tabular data models also include the *Table* data type as the input or output to many DAX functions. For example, the FILTER function takes a table as input and outputs another table that contains only the rows that meet the filter conditions. By combining table functions with aggregation functions, you can perform complex calculations over dynamically defined data sets.
 
 While data types are typically automatically set, it is important to understand data types and how they apply, in-particular, to DAX formulas. Errors in formulas or unexpected results, for example, are often caused by using a particular operator that cannot be used with a data type specified in an argument. For example, the formula, `= 1 & 2`, returns a string result of 12. The formula, `= "1" + "2"`, however, returns an integer result of 3.
+
+> [!NOTE]
+> Calculations on string data types may be constrained to 64kb.
 
 ## Context
 
