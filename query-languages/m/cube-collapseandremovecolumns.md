@@ -1,13 +1,14 @@
 ---
 description: "Learn more about: Cube.CollapseAndRemoveColumns"
 title: "Cube.CollapseAndRemoveColumns"
+ms.subservice: m-source
 ---
 # Cube.CollapseAndRemoveColumns
 
 ## Syntax
 
 <pre>
-Cube.CollapseAndRemoveColumns(**cube** as table, **columnNames** as list) as table
+Cube.CollapseAndRemoveColumns(<b>cube</b> as table, <b>columnNames</b> as list) as table
 </pre>
 
 ## About

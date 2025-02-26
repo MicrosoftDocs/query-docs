@@ -2,8 +2,9 @@
 title: M Language Consolidated Grammar 
 description: Describes all of the grammar associated with the Power Query M formula language
 ms.topic: conceptual
-ms.date: 9/15/2023
+ms.date: 01/29/2025
 ms.custom: "nonautomated-date"
+ms.subservice: m-specification
 ---
 
 # Consolidated Grammar
@@ -16,7 +17,8 @@ lexical-elements:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lexical-element lexical-elements<sub>opt</sub><br/>
 lexical-element:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;whitespace<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;token comment_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;token<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;comment_
 
 ### White space
 
@@ -258,15 +260,13 @@ logical-and-expression:<br/>
 
 _is-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is-expression_ `is`  _nullable-primitive-type<br/>
-nullable-primitive-type:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`_<sub>opt</sub>  primitive-type_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is-expression_ `is`  _primitive-or-nullable-primitive-type_
 
 #### As expression
 
 _as-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;equality-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as-expression_  `as`  _nullable-primitive-type_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as-expression_  `as`  _primitive-or-nullable-primitive-type_
 
 #### Equality expression
 
@@ -416,9 +416,6 @@ required-field-selector:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-name_  `]`<br/>
 _optional-field-selector:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-name_  `] ?`<br/>
-_field-name:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quoted-identifier<br/>
 implicit-target-field-selection:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-selector<br/>
 projection:<br/>
@@ -449,15 +446,15 @@ fixed-parameter-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter_  `,`  _fixed-parameter-list<br/>
 parameter:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-name  primitive-parameter-type<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-name parameter-type<sub>opt</sub><br/>
 parameter-name:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier<br/>
-primitive-parameter-type:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primitive-assertion<br/>
+parameter-type:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primitive-or-nullable-primitive-type-assertion<br/>
 return-type:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primitive-assertion<br/>
-primitive-assertion:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as`  _nullable-primitive-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primitive-or-nullable-primitive-type-assertion<br/>
+primitive-or-nullable-primitive-type-assertion:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as`  _primitive-or-nullable-primitive-type<br/>
 optional-parameter-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter_  `,`  _optional-parameter-list<br/>
@@ -503,15 +500,17 @@ type:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-type<br/>
 primary-type:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primitive-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primitive-or-nullable-primitive-type<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;record-type<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list-type<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function-type<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;table-type<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nullable-type<br/>
-primitive-type:_ one of<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`any anynonnull binary date datetime datetimezone duration function`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`list logical none null number record table text time type`<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nullable-type_<br />
+_primitive-or-nullable-primitive-type:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`_<sub>opt</sub> primitive-type_<br />
+_primitive-type:_ one of<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`any anynonnull binary date datetime datetimezone duration function list logical`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`none null number record table text time type`<br/>
 _record-type:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`  _open-record-marker_  `]`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-specification-list<sub>opt</sub>_  `]`<br/>
@@ -549,10 +548,10 @@ optional-parameter-specification-list:<br/>
 optional-parameter-specification:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional` _parameter-specification<br/> 
 parameter-specification:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-name  parameter-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-name parameter-type<br/>
 parameter-type:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assertion<br/>
-assertion:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type-assertion<br/>
+type-assertion:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as` _type<br/>
 table-type:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`table`  _row-type<br/>

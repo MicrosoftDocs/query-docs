@@ -1,10 +1,12 @@
 ---
 description: "Learn more about: PRICEMAT"
-title: "PRICEMAT function (DAX) | Microsoft Docs"
+title: "PRICEMAT function (DAX)"
 author: jajin7
 ---
 
 # PRICEMAT
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns the price per \\$100 face value of a security that pays interest at maturity.
 
@@ -16,18 +18,18 @@ PRICEMAT(<settlement>, <maturity>, <issue>, <rate>, <yld>[, <basis>])
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|settlement|The security's settlement date. The security settlement date is the date after the issue date when the security is traded to the buyer.|
-|maturity|The security's maturity date. The maturity date is the date when the security expires.|
-|issue|The security's issue date.|
-|rate|The security's interest rate at date of issue.|
-|yld|The security's annual yield.|
-|basis|(Optional) The type of day count basis to use. If basis is omitted, it is assumed to be 0. The accepted values are listed below this table.|
+|Term|Definition|
+|--------|--------------|
+|`settlement`|The security's settlement date. The security settlement date is the date after the issue date when the security is traded to the buyer.|
+|`maturity`|The security's maturity date. The maturity date is the date when the security expires.|
+|`issue`|The security's issue date.|
+|`rate`|The security's interest rate at date of issue.|
+|`yld`|The security's annual yield.|
+|`basis`|(Optional) The type of day count basis to use. If basis is omitted, it is assumed to be 0. The accepted values are listed below this table.|
 
-The **basis** parameter accepts the following values:
+The `basis` parameter accepts the following values:
 
-| **Basis**    | **Day count basis** |
+| `Basis`    | **Day count basis** |
 | ------------ | ------------------- |
 | 0 or omitted | US (NASD) 30/360    |
 | 1            | Actual/actual       |

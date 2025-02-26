@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.AddIndexColumn"
 title: "Table.AddIndexColumn"
+ms.subservice: m-source
 ---
 # Table.AddIndexColumn
 
@@ -73,3 +74,7 @@ Table.FromRecords({
     [CustomerID = 4, Name = "Ringo", Phone = "232-1550", Index = 25]
 })
 ```
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)

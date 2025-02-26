@@ -1,29 +1,31 @@
 ---
 description: "Learn more about: REMOVEFILTERS"
-title: "REMOVEFILTERS function (DAX) | Microsoft Docs"
+title: "REMOVEFILTERS function (DAX)"
 ---
 # REMOVEFILTERS
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Clear filters from the specified tables or columns.
-  
-## Syntax  
-  
+
+## Syntax
+
 ```dax
 REMOVEFILTERS([<table> | <column>[, <column>[, <column>[,…]]]])
 ```
-  
+
 ### Parameters
-  
-|Term|Definition|  
-|--------|--------------|  
-|table|The table that you want to clear filters on. |  
-|column|The column that you want to clear filters on.|  
-  
+
+|Term|Definition|
+|--------|--------------|
+|table|The table that you want to clear filters on. |
+|column|The column that you want to clear filters on.|
+
 ## Return value
 
 N/A. See remarks.
-  
-## Remarks  
+
+## Remarks
 
 - REMOVEFILTERS can only be used to clear filters but not to return a table.
 

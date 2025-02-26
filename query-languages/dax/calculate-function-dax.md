@@ -1,8 +1,10 @@
 ---
 description: "Learn more about: CALCULATE"
-title: "CALCULATE function (DAX) | Microsoft Docs"
+title: "CALCULATE function (DAX)"
 ---
 # CALCULATE
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Evaluates an expression in a modified filter context.
 
@@ -21,8 +23,8 @@ CALCULATE(<expression>[, <filter1> [, <filter2> [, …]]])
 
 |Term|Definition|
 |--------|--------------|
-|expression|The expression to be evaluated.|
-|filter1, filter2,…|(Optional) Boolean expressions or table expressions that defines filters, or filter modifier functions.|
+|`expression`|The expression to be evaluated.|
+|`filter1, filter2,…`|(Optional) Boolean expressions or table expressions that defines filters, or filter modifier functions.|
 
 The expression used as the first parameter is essentially the same as a measure.
 
@@ -32,11 +34,11 @@ Filters can be:
 - Table filter expressions
 - Filter modification functions
 
-When there are multiple filters, they can be evaluated by using the AND (&&) [logical operator](dax-operator-reference.md#logical-operators), meaning all conditions must be TRUE, or by the OR (||) logical operator, meaning either condition can be true.
+When there are multiple filters, they can be evaluated by using the AND (`&&`) [logical operator](dax-operator-reference.md#logical-operators), meaning all conditions must be `TRUE`, or by the OR (`||`) logical operator, meaning either condition can be true.
 
 #### Boolean filter expressions
 
-A Boolean expression filter is an expression that evaluates to TRUE or FALSE. There are several rules that they must abide by:
+A Boolean expression filter is an expression that evaluates to `TRUE` or `FALSE`. There are several rules that they must abide by:
 
 - They can reference columns from a single table.
 - They cannot reference measures.
@@ -68,7 +70,7 @@ Filter modifier functions allow you to do more than simply add filters. They pro
 |[ALL](all-function-dax.md) <sup>1</sup>, [ALLEXCEPT](allexcept-function-dax.md), [ALLNOBLANKROW](allnoblankrow-function-dax.md)|Remove filters from one or more columns, or from all columns of a single table.|
 |[KEEPFILTERS](keepfilters-function-dax.md)|Add filter without removing existing filters on the same columns.|
 |[USERELATIONSHIP](userelationship-function-dax.md)|Engage an inactive relationship between related columns, in which case the active relationship will automatically become inactive.|
-|[CROSSFILTER](crossfilter-function.md)|Modify filter direction (from both to single, or from single to both) or disable a relationship.|
+|[CROSSFILTER](crossfilter-function-dax.md)|Modify filter direction (from both to single, or from single to both) or disable a relationship.|
 
 <sup>1</sup> The ALL function and its variants behave as both filter modifiers and as functions that return table objects. If the REMOVEFILTERS function is supported by your tool, it's better to use it to remove filters.
 
@@ -112,7 +114,7 @@ The CALCULATE function evaluates the sum of the **Sales** table **Sales Amount**
 
 The following **Sales** table measure definition produces a ratio of sales over sales for all sales channels.
 
-|Channel|Sales Amount|Revenue % Total Channel|  
+|Channel|Sales Amount|Revenue % Total Channel|
 |-------|------------|-----------------------|
 |Internet|$29,358,677.22|26.74%|
 |Reseller|$80,450,596.98|73.26%|
@@ -146,7 +148,7 @@ In this example, row context is converted to the filter context. It's known as _
 
 ## Related content
 
-[Filter context](dax-overview.md#filter-context)  
-[Row context](dax-overview.md#row-context)  
-[CALCULATETABLE function](calculatetable-function-dax.md)  
-[Filter functions](filter-functions-dax.md)  
+[Filter context](dax-overview.md#filter-context)
+[Row context](dax-overview.md#row-context)
+[CALCULATETABLE function](calculatetable-function-dax.md)
+[Filter functions](filter-functions-dax.md)

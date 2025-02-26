@@ -1,28 +1,30 @@
 ---
 description: "Learn more about: NONVISUAL"
-title: "NONVISUAL function (DAX) | Microsoft Docs"
+title: "NONVISUAL function (DAX)"
 ---
 # NONVISUAL
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Marks a value filter in a [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) expression as non-visual. This function can only be used within a [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) expression.
 
-## Syntax  
-  
+## Syntax
+
 ```dax
 NONVISUAL(<expression>)
 ```
-  
-### Parameters  
 
-|Term|Definition|  
-|--------|--------------|  
-|expression|Any DAX expression that returns a single value (not a table).|
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|`expression`|Any DAX expression that returns a single value (not a table).|
 
 ## Return value
 
 A table of values.
-  
-## Remarks  
+
+## Remarks
 
 - Marks a value filter in [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) as not affecting measure values, but only applying to group-by columns.
 

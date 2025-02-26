@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: HdInsight.Files"
 title: "HdInsight.Files"
+ms.subservice: m-source
 ---
 # HdInsight.Files
 

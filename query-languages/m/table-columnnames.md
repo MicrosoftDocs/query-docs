@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.ColumnNames"
 title: "Table.ColumnNames"
+ms.subservice: m-source
 ---
 # Table.ColumnNames
 

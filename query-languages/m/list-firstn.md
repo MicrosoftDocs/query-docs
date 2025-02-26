@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.FirstN"
 title: "List.FirstN"
+ms.subservice: m-source
 ---
 # List.FirstN
 

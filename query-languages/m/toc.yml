@@ -42,12 +42,24 @@ items:
     href: evaluation-model.md
   - name: Operators
     href: operators.md
-  - name: Type conversion
+  - name: Types and type conversion
     href: type-conversion.md
   - name: Metadata
     href: metadata.md
   - name: Errors
     href: errors.md
+  - name: Text formatting
+    items:
+    - name: Standard numeric format strings
+      href: standard-numeric-format-strings.md
+    - name: Custom numeric format strings
+      href: custom-numeric-format-strings.md
+    - name: Standard date and time format strings
+      href: standard-date-and-time-format-strings.md
+    - name: Custom date and time format strings
+      href: custom-date-and-time-format-strings.md
+    - name: How culture affects text formatting
+      href: how-culture-affects-text-formatting.md
   - name: Functions
     items:
     - name: Functions overview
@@ -122,6 +134,8 @@ items:
         href: cube-transform.md
       - name: DB2.Database
         href: db2-database.md
+      - name: DeltaLake.Metadata
+        href: deltalake-metadata.md
       - name: DeltaLake.Table
         href: deltalake-table.md
       - name: Essbase.Cubes
@@ -1402,6 +1416,8 @@ items:
         href: excel-shapetable.md
       - name: Graph.Nodes
         href: graph-nodes.md
+      - name: Module.Versions
+        href: module-versions.md
       - name: Progress.DataSourceProgress
         href: progress-datasourceprogress.md
       - name: SqlExpression.SchemaFrom

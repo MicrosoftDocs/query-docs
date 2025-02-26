@@ -1,10 +1,12 @@
 ---
 description: "Learn more about: FV"
-title: "FV function (DAX) | Microsoft Docs"
+title: "FV function (DAX)"
 author: jajin7
 ---
 
 # FV
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Calculates the future value of an investment based on a constant interest rate. You can use FV with either periodic, constant payments, and/or a single lump sum payment.
 
@@ -16,15 +18,15 @@ FV(<rate>, <nper>, <pmt>[, <pv>[, <type>]])
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|rate|The interest rate per period.|
-|nper|The total number of payment periods in an annuity.|
-|pmt|The payment made each period; it cannot change over the life of the annuity. Typically, pmt contains principal and interest but no other fees or taxes.|
-|pv|(Optional) The present value, or the lump-sum amount that a series of future payments is worth right now. If pv is omitted, it is assumed to be BLANK.|
-|type|(Optional) The number 0 or 1 which indicates when payments are due. If type is omitted, it is assumed to be 0. The accepted values are listed below this table.|
+|Term|Definition|
+|--------|--------------|
+|`rate`|The interest rate per period.|
+|`nper`|The total number of payment periods in an annuity.|
+|`pmt`|The payment made each period; it cannot change over the life of the annuity. Typically, pmt contains principal and interest but no other fees or taxes.|
+|`pv`|(Optional) The present value, or the lump-sum amount that a series of future payments is worth right now. If pv is omitted, it is assumed to be BLANK.|
+|`type`|(Optional) The number 0 or 1 which indicates when payments are due. If type is omitted, it is assumed to be 0. The accepted values are listed below this table.|
 
-The **type** parameter accepts the following values:
+The `type` parameter accepts the following values:
 
 | **Set type equal to** | **If payments are due**        |
 | --------------------- | ------------------------------ |

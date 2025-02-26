@@ -1,13 +1,14 @@
 ---
 description: "Learn more about: Cube.DisplayFolders"
 title: "Cube.DisplayFolders"
+ms.subservice: m-source
 ---
 # Cube.DisplayFolders
 
 ## Syntax
 
 <pre>
-Cube.DisplayFolders(**cube** as table) as table
+Cube.DisplayFolders(<b>cube</b> as table) as table
 </pre>
 
 ## About

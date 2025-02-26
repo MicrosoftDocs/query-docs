@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.Reverse"
 title: "Text.Reverse"
+ms.subservice: m-source
 ---
 # Text.Reverse
 

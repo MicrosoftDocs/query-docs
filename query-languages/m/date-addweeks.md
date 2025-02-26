@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Date.AddWeeks"
 title: "Date.AddWeeks"
+ms.subservice: m-source
 ---
 # Date.AddWeeks
 
@@ -30,3 +31,9 @@ Date.AddWeeks(#date(2011, 5, 14), 2)
 **Output**
 
 `#date(2011, 5, 28)`
+
+## Related content
+
+* [#date](sharpdate.md)
+* [#datetime](sharpdatetime.md)
+* [#datetimezone](sharpdatetimezone.md)

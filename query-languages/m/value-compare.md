@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Value.Compare"
 title: "Value.Compare"
+ms.subservice: m-source
 ---
 # Value.Compare
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Type.NonNullable"
 title: "Type.NonNullable"
+ms.subservice: m-source
 ---
 # Type.NonNullable
 
@@ -27,3 +28,7 @@ Type.NonNullable(type nullable number)
 **Output**
 
 `type number`
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)

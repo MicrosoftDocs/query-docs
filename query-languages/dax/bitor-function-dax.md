@@ -1,13 +1,15 @@
 ---
 description: "Learn more about: BITOR"
-title: "BITOR function (DAX) | Microsoft Docs"
+title: "BITOR function (DAX)"
 ---
 # BITOR
 
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
 Returns a bitwise OR of two numbers.
-  
-## Syntax  
-  
+
+## Syntax
+
 ```dax
 BITOR(<number>, <number>)
 ```
@@ -16,12 +18,12 @@ BITOR(<number>, <number>)
 
 |Term|Definition|
 |--------|--------------|
-|Number|Any scalar expression that returns number. If not an integer, it is truncated.|
-  
+|`Number`|Any scalar expression that returns number. If not an integer, it is truncated.|
+
 ## Return value
 
 A bitwise OR of two numbers.
-  
+
 ## Remarks
 
 - This function supports both positive and negative numbers.
@@ -39,7 +41,7 @@ Returns 11.
 
 ## Related content
 
-[BITAND](bitand-function-dax.md)  
-[BITXOR](bitxor-function-dax.md)  
-[BITLSHIFT](bitlshift-function-dax.md)  
-[BITRSHIFT](bitrshift-function-dax.md)  
+[BITAND](bitand-function-dax.md)
+[BITXOR](bitxor-function-dax.md)
+[BITLSHIFT](bitlshift-function-dax.md)
+[BITRSHIFT](bitrshift-function-dax.md)

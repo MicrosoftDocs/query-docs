@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.ColumnsOfType"
 title: "Table.ColumnsOfType"
+ms.subservice: m-source
 ---
 # Table.ColumnsOfType
 
@@ -33,3 +34,7 @@ Table.ColumnsOfType(
 **Output**
 
 `{"a"}`
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)

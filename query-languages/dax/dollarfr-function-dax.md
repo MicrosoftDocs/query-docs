@@ -1,10 +1,12 @@
 ---
 description: "Learn more about: DOLLARFR"
-title: "DOLLARFR function (DAX) | Microsoft Docs"
+title: "DOLLARFR function (DAX)"
 author: jajin7
 ---
 
 # DOLLARFR
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Converts a dollar price expressed as a decimal number into a dollar price expressed as an integer part and a fraction part, such as 1.02. Fractional dollar numbers are sometimes used for security prices.
 
@@ -16,14 +18,14 @@ DOLLARFR(<decimal_dollar>, <fraction>)
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|decimal_dollar|A decimal number.|
-|fraction|The integer to use in the denominator of the fraction.|
+|Term|Definition|
+|--------|--------------|
+|`decimal_dollar`|A decimal number.|
+|`fraction`|The integer to use in the denominator of the fraction.|
 
 ## Return Value
 
-The fractional value of *decimal_dollar*, expressed as an integer part and a fraction part.
+The fractional value of `decimal_dollar`, expressed as an integer part and a fraction part.
 
 ## Remarks
 

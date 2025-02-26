@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Distinct"
 title: "List.Distinct"
+ms.subservice: m-source
 ---
 # List.Distinct
 
@@ -27,3 +28,7 @@ List.Distinct({1, 1, 2, 3, 3, 3})
 **Output**
 
 `{1, 2, 3}`
+
+## Related content
+
+[Equation criteria](list-functions.md#equation-criteria)

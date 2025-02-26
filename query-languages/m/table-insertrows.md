@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.InsertRows"
 title: "Table.InsertRows"
+ms.subservice: m-source
 ---
 # Table.InsertRows
 

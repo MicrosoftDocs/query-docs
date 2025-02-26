@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Comparer.OrdinalIgnoreCase"
 title: "Comparer.OrdinalIgnoreCase"
+ms.subservice: m-source
 ---
 # Comparer.OrdinalIgnoreCase
 

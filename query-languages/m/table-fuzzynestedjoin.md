@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.FuzzyNestedJoin"
 title: "Table.FuzzyNestedJoin"
+ms.subservice: m-source
 ---
 # Table.FuzzyNestedJoin
   
@@ -18,12 +19,14 @@ Fuzzy matching is a comparison based on similarity of text rather than equality 
 
 The optional `joinKind` specifies the kind of join to perform. By default, a left outer join is performed if a `joinKind` is not specified. Options include:
 
-* `JoinKind.Inner`
-* `JoinKind.LeftOuter`
-* `JoinKind.RightOuter`
-* `JoinKind.FullOuter`
-* `JoinKind.LeftAnti`
-* `JoinKind.RightAnti`
+* [JoinKind.Inner](joinkind-type.md)
+* [JoinKind.LeftOuter](joinkind-type.md)
+* [JoinKind.RightOuter](joinkind-type.md)
+* [JoinKind.FullOuter](joinkind-type.md)
+* [JoinKind.LeftAnti](joinkind-type.md)
+* [JoinKind.RightAnti](joinkind-type.md)
+* [JoinKind.LeftSemi](joinkind-type.md)
+* [JoinKind.RightSemi](joinkind-type.md)
 
 An optional set of `joinOptions` may be included to specify how to compare the key columns. Options include:
 
@@ -95,3 +98,7 @@ Table.FromRecords({
     ]
 })
 ```
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

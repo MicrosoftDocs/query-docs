@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DateTime.IsInCurrentHour"
 title: "DateTime.IsInCurrentHour"
+ms.subservice: m-source
 ---
 # DateTime.IsInCurrentHour
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Sum"
 title: "List.Sum"
+ms.subservice: m-source
 ---
 # List.Sum
 

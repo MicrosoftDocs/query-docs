@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SharePoint.Tables"
 title: "SharePoint.Tables"
+ms.subservice: m-source
 ---
 # SharePoint.Tables
 

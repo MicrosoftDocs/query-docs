@@ -1,10 +1,12 @@
 ---
 description: "Learn more about: TBILLPRICE"
-title: "TBILLPRICE function (DAX) | Microsoft Docs"
+title: "TBILLPRICE function (DAX)"
 author: jajin7
 ---
 
 # TBILLPRICE
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns the price per \\$100 face value for a Treasury bill.
 
@@ -16,11 +18,11 @@ TBILLPRICE(<settlement>, <maturity>, <discount>)
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|settlement|The Treasury bill's settlement date. The security settlement date is the date after the issue date when the Treasury bill is traded to the buyer.|
-|maturity|The Treasury bill's maturity date. The maturity date is the date when the Treasury bill expires.|
-|discount|The Treasury bill's discount rate.|
+|Term|Definition|
+|--------|--------------|
+|`settlement`|The Treasury bill's settlement date. The security settlement date is the date after the issue date when the Treasury bill is traded to the buyer.|
+|`maturity`|The Treasury bill's maturity date. The maturity date is the date when the Treasury bill expires.|
+|`discount`|The Treasury bill's discount rate.|
 
 ## Return Value
 

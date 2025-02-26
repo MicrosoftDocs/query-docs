@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Number.Cosh"
 title: "Number.Cosh"
+ms.subservice: m-source
 ---
 # Number.Cosh
 

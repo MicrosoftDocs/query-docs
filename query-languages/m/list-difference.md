@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Difference"
 title: "List.Difference"
+ms.subservice: m-source
 ---
 # List.Difference
 
@@ -39,3 +40,7 @@ List.Difference({1, 2}, {1, 2, 3})
 **Output**
 
 `{}`
+
+## Related content
+
+[Equation criteria](list-functions.md#equation-criteria)

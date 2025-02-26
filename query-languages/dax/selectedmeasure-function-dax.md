@@ -1,22 +1,24 @@
 ---
 description: "Learn more about: SELECTEDMEASURE"
-title: "SELECTEDMEASURE function (DAX) | Microsoft Docs"
+title: "SELECTEDMEASURE function (DAX)"
 ---
 # SELECTEDMEASURE
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Used by expressions for calculation items or dynamic format strings to reference the measure that is in context.
-  
-## Syntax  
-  
+
+## Syntax
+
 ```dax
 SELECTEDMEASURE()
 ```
-  
-### Parameters  
-  
-None  
-  
-## Return value  
+
+### Parameters
+
+None
+
+## Return value
 
 A reference to the measure that is currently in context when the calculation item or format string is evaluated.
 
@@ -26,10 +28,10 @@ A reference to the measure that is currently in context when the calculation ite
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-## Example  
+## Example
 
 The following calculation item expression calculates the year-to-date for whatever the measure is in context.
-  
+
 ```dax
 CALCULATE(SELECTEDMEASURE(), DATESYTD(DimDate[Date]))
 ```
@@ -44,8 +46,8 @@ SELECTEDMEASURE() < 1000000, "$#,##0,.0 K",   //Values between 1000 and 1000000 
 "$#,##0,,.0 M"                                //Values greater than 1000000 are formatted as #.## M
 )
 ```
-  
+
 ## Related content
 
-[SELECTEDMEASURENAME](selectedmeasurename-function-dax.md)  
-[ISSELECTEDMEASURE](isselectedmeasure-function-dax.md)   
+[SELECTEDMEASURENAME](selectedmeasurename-function-dax.md)
+[ISSELECTEDMEASURE](isselectedmeasure-function-dax.md) 

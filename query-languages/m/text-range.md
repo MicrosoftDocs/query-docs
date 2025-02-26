@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.Range"
 title: "Text.Range"
+ms.subservice: m-source
 ---
 # Text.Range
 

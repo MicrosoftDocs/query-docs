@@ -2,8 +2,9 @@
 description: "Learn more about: Operators"
 title: "Operators"
 ms.topic: conceptual
-ms.date: 8/2/2022
+ms.date: 03/29/2024
 ms.custom: "nonautomated-date"
+ms.subservice: m-background
 ---
 
 # Operators

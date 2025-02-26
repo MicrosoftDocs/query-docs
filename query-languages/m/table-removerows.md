@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.RemoveRows"
 title: "Table.RemoveRows"
+ms.subservice: m-source
 ---
 # Table.RemoveRows
 

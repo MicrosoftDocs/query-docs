@@ -1,13 +1,15 @@
 ---
 description: "Learn more about: BITLSHIFT"
-title: "BITLSHIFT function (DAX) | Microsoft Docs"
+title: "BITLSHIFT function (DAX)"
 ---
 # BITLSHIFT
 
-Returns a number shifted left by the specified number of bits.  
-  
-## Syntax  
-  
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+
+Returns a number shifted left by the specified number of bits.
+
+## Syntax
+
 ```dax
 BITLSHIFT(<Number>, <Shift_Amount>) 
 ```
@@ -16,13 +18,13 @@ BITLSHIFT(<Number>, <Shift_Amount>)
 
 |Term|Definition|
 |--------|--------------|
-|Number|Any DAX expression that returns an integer expression.|
-|Shift_Amount|Any DAX expression that returns an integer expression.|
+|`Number`|Any DAX expression that returns an integer expression.|
+|`Shift_Amount`|Any DAX expression that returns an integer expression.|
 
 ## Return value
 
 An integer value.
-  
+
 ## Remarks
 
 - Be sure to understand the nature of bitshift operations and overflow/underflow of integers before using DAX bitshift functions.
@@ -74,7 +76,7 @@ Shifts left each sales amount with 3 bits and returns the bit-shifted sales amou
 
 ## Related content
 
-[BITRSHIFT](bitrshift-function-dax.md)  
-[BITAND](bitand-function-dax.md)  
-[BITOR](bitor-function-dax.md)  
+[BITRSHIFT](bitrshift-function-dax.md)
+[BITAND](bitand-function-dax.md)
+[BITOR](bitor-function-dax.md)
 [BITXOR](bitxor-function-dax.md)

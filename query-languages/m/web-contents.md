@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Web.Contents"
 title: "Web.Contents"
+ms.subservice: m-source
 ---
 # Web.Contents
 
@@ -91,3 +92,7 @@ Web.Contents("https://contoso.com/api/customers/get", [ApiKeyName="api_key"])
 **Output**
 
 `binary`
+
+## More information
+
+[Status code handling with Web.Contents in custom connectors](/power-query/handling-status-codes)

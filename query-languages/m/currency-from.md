@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Currency.From"
 title: "Currency.From"
+ms.subservice: m-source
 ---
 # Currency.From
 
@@ -41,3 +42,7 @@ Currency.From("1.23455", "en-US", RoundingMode.Down)
 **Output**
 
 `1.2345`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

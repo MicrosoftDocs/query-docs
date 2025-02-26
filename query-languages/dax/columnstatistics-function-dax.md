@@ -1,8 +1,10 @@
 ---
 description: "Learn more about: COLUMNSTATISTICS"
-title: "COLUMNSTATISTICS function (DAX) | Microsoft Docs"
+title: "COLUMNSTATISTICS function (DAX)"
 ---
 # COLUMNSTATISTICS
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
 Returns a table of statistics regarding every column in every table in the model.
 
@@ -20,12 +22,12 @@ This function does not take any parameters.
 
 A table of statistics. Each row of this table represents a different column in the model. Table columns include:
 
-- **Table Name**: The current column’s table.
-- **Column Name**: The current column’s name.
-- **Min**: The minimum value found within the current column.
-- **Max**: The maximum value found within the current column.
-- **Cardinality**: The number of distinct values found within the current column.
-- **Max Length**: The length of the longest string found within the current column (only applicable for string columns).
+- `Table Name`: The current column’s table.
+- `Column Name`: The current column’s name.
+- `Min`: The minimum value found within the current column.
+- `Max`: The maximum value found within the current column.
+- `Cardinality`: The number of distinct values found within the current column.
+- `Max Length`: The length of the longest string found within the current column (only applicable for string columns).
 
 ## Remarks
 
@@ -33,6 +35,7 @@ A table of statistics. Each row of this table represents a different column in t
 
 - If a filter from the filter context is applied to COLUMNSTATISTICS(), an error is returned.
 
+- For binary-typed columns, the Min and Max statistics will have BLANK values.
 
 ## Example
 
@@ -60,5 +63,5 @@ Returns a table with statistics regarding all columns from all tables in the mod
 
 ## Related content
 
-[Filter context](dax-overview.md#filter-context)  
-[CALCULATETABLE function](calculatetable-function-dax.md)  
+[Filter context](dax-overview.md#filter-context)
+[CALCULATETABLE function](calculatetable-function-dax.md)

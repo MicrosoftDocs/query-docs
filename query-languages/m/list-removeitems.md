@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.RemoveItems"
 title: "List.RemoveItems"
+ms.subservice: m-source
 ---
 # List.RemoveItems
 

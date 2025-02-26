@@ -1,10 +1,12 @@
 ---
 description: "Learn more about: EFFECT"
-title: "EFFECT function (DAX) | Microsoft Docs"
+title: "EFFECT function (DAX)"
 author: jajin7
 ---
 
 # EFFECT
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns the effective annual interest rate, given the nominal annual interest rate and the number of compounding periods per year.
 
@@ -16,10 +18,10 @@ EFFECT(<nominal_rate>, <npery>)
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|nominal_rate|The nominal interest rate.|
-|npery|The number of compounding periods per year.|
+|Term|Definition|
+|--------|--------------|
+|`nominal_rate`|The nominal interest rate.|
+|`npery`|The number of compounding periods per year.|
 
 ## Return Value
 

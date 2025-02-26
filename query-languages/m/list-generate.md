@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Generate"
 title: "List.Generate"
+ms.subservice: m-source
 ---
 # List.Generate
 

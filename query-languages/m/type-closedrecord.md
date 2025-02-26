@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Type.ClosedRecord"
 title: "Type.ClosedRecord"
+ms.subservice: m-source
 ---
 # Type.ClosedRecord
 
@@ -27,3 +28,7 @@ Type.ClosedRecord(type [A = number, ...])
 **Output**
 
 `type [A = number]`
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)

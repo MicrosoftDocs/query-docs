@@ -1,8 +1,10 @@
 ---
 description: "Learn more about: CALCULATETABLE"
-title: "CALCULATETABLE function (DAX) | Microsoft Docs"
+title: "CALCULATETABLE function (DAX)"
 ---
 # CALCULATETABLE
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Evaluates a table expression in a modified filter context.
 
@@ -11,7 +13,7 @@ Evaluates a table expression in a modified filter context.
 >
 >
 
-## Syntax  
+## Syntax
 
 ```dax
 CALCULATETABLE(<expression>[, <filter1> [, <filter2> [, …]]])
@@ -19,10 +21,10 @@ CALCULATETABLE(<expression>[, <filter1> [, <filter2> [, …]]])
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|expression|The table expression to be evaluated.|
-|filter1, filter2,…|(Optional) Boolean expressions or table expressions that defines filters, or filter modifier functions.|
+|Term|Definition|
+|--------|--------------|
+|`expression`|The table expression to be evaluated.|
+|`filter1, filter2,…`|(Optional) Boolean expressions or table expressions that defines filters, or filter modifier functions.|
 
 The expression used as the first parameter must be a model table or a function that returns a table.
 
@@ -32,11 +34,11 @@ Filters can be:
 - Table filter expressions
 - Filter modification functions
 
-When there are multiple filters, they're evaluated by using the AND [logical operator](dax-operator-reference.md#logical-operators). That means all conditions must be TRUE at the same time.
+When there are multiple filters, they're evaluated by using the AND [logical operator](dax-operator-reference.md#logical-operators). That means all conditions must be `TRUE` at the same time.
 
 #### Boolean filter expressions
 
-A Boolean expression filter is an expression that evaluates to TRUE or FALSE. There are several rules that they must abide by:
+A Boolean expression filter is an expression that evaluates to `TRUE` or `FALSE`. There are several rules that they must abide by:
 
 - They can reference only a single column.
 - They cannot reference measures.
@@ -61,7 +63,7 @@ Filter modifier functions allow you to do more than simply add filters. They pro
 |[ALL](all-function-dax.md) <sup>1</sup>, [ALLEXCEPT](allexcept-function-dax.md), [ALLNOBLANKROW](allnoblankrow-function-dax.md)|Remove filters from one or more columns, or from all columns of a single table.|
 |[KEEPFILTERS](keepfilters-function-dax.md)|Add filter without removing existing filters on the same columns.|
 |[USERELATIONSHIP](userelationship-function-dax.md)|Engage an inactive relationship between related columns, in which case the active relationship will automatically become inactive.|
-|[CROSSFILTER](crossfilter-function.md)|Modify filter direction (from both to single, or from single to both) or disable a relationship.|
+|[CROSSFILTER](crossfilter-function-dax.md)|Modify filter direction (from both to single, or from single to both) or disable a relationship.|
 
 <sup>1</sup> The ALL function and its variants behave as both filter modifiers and as functions that return table objects. If the REMOVEFILTERS function is supported by your tool, it's better to use it to remove filters.
 
@@ -79,7 +81,7 @@ A table of values.
 
 ## Example
 
-The following example uses the CALCULATETABLE function to get the sum of Internet sales for 2006. This value is later used to calculate the ratio of Internet sales compared to all sales for the year 2006.  
+The following example uses the CALCULATETABLE function to get the sum of Internet sales for 2006. This value is later used to calculate the ratio of Internet sales compared to all sales for the year 2006.
 
 The following formula:
 
@@ -90,18 +92,18 @@ The following formula:
         'DateTime'[CalendarYear] = 2006
     ),
     [SalesAmount_USD]
-)  
+)
 ```
 
 It results in the following table:
 
-|Row Labels|Internet SalesAmount_USD|CalculateTable 2006 Internet Sales|Internet Sales to 2006 ratio|  
-|--------------|-----------------------------|--------------------------------------|--------------------------------|  
-|2005|$2,627,031.40|$5,681,440.58|0.46|  
-|2006|$5,681,440.58|$5,681,440.58|1.00|  
-|2007|$8,705,066.67|$5,681,440.58|1.53|  
-|2008|$9,041,288.80|$5,681,440.58|1.59|  
-|Grand Total|$26,054,827.45|$5,681,440.58|4.59|  
+|Row Labels|Internet SalesAmount_USD|CalculateTable 2006 Internet Sales|Internet Sales to 2006 ratio|
+|--------------|-----------------------------|--------------------------------------|--------------------------------|
+|2005|$2,627,031.40|$5,681,440.58|0.46|
+|2006|$5,681,440.58|$5,681,440.58|1.00|
+|2007|$8,705,066.67|$5,681,440.58|1.53|
+|2008|$9,041,288.80|$5,681,440.58|1.59|
+|Grand Total|$26,054,827.45|$5,681,440.58|4.59|
 
 ## Related content
 

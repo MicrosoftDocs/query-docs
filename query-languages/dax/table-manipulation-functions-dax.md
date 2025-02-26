@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Table manipulation functions"
-title: "Table manipulation functions (DAX) | Microsoft Docs"
+title: "Table manipulation functions (DAX)"
 ---
 # Table manipulation functions
 
@@ -14,15 +14,15 @@ These functions return a table or manipulate existing tables.
 |[ADDMISSINGITEMS](addmissingitems-function-dax.md)       |     Adds combinations of items from multiple columns to a table if they do not already exist.    |
 |[CROSSJOIN](crossjoin-function-dax.md)      |  Returns a table that contains the Cartesian product of all rows from all tables in the arguments.      |
 |[CURRENTGROUP](currentgroup-function-dax.md)      |  Returns a set of rows from the table argument of a GROUPBY expression.      |
-|[DATATABLE](datatable-function.md)    |  Provides a mechanism for declaring an inline set of data values.        |
+|[DATATABLE](datatable-function-dax.md)    |  Provides a mechanism for declaring an inline set of data values.        |
 |[DETAILROWS](detailrows-function-dax.md)    |  Evaluates a Detail Rows Expression defined for a measure and returns the data.        |
 |[DISTINCT column](distinct-function-dax.md)      |  Returns a one-column table that contains the distinct values from the specified column.       |
 |[DISTINCT table](distinct-table-function-dax.md)      |  Returns a table by removing duplicate rows from another table or expression.       |
 |[EXCEPT](except-function-dax.md)     |  Returns the rows of one table which do not appear in another table.       |
-|[FILTERS](filters-function-dax.md)     |  Returns a table of values directly applied as filters to *columnName*.        |
+|[FILTERS](filters-function-dax.md)     |  Returns a table of values directly applied as filters to `columnName`.        |
 |[GENERATE](generate-function-dax.md)      |  Returns a table with the Cartesian product between each row in *table1* and the table that results from evaluating *table2* in the context of the current row from *table1*.       |
 |[GENERATEALL](generateall-function-dax.md)     |  Returns a table with the Cartesian product between each row in *table1* and the table that results from evaluating *table2* in the context of the current row from *table1*.         |
-|[GENERATESERIES](generateseries-function.md)     | Returns a single column table containing the values of an arithmetic series.        |
+|[GENERATESERIES](generateseries-function-dax.md)     | Returns a single column table containing the values of an arithmetic series.        |
 |[GROUPBY](groupby-function-dax.md)      |  Similar to the SUMMARIZE function, GROUPBY does not do an implicit CALCULATE for any extension columns that it adds.       |
 |[IGNORE](ignore-function-dax.md)      |   Modifies SUMMARIZECOLUMNS by omitting specific expressions from the BLANK/NULL evaluation.      |
 |[INTERSECT](intersect-function-dax.md)       |   Returns the row intersection of two tables, retaining duplicates.       |
@@ -39,6 +39,6 @@ These functions return a table or manipulate existing tables.
 |[SUMMARIZECOLUMNS](summarizecolumns-function-dax.md)      |  Returns a summary table over a set of groups.        |
 |[Table Constructor](table-Constructor.md)    |  Returns a table of one or more columns.       |
 |[TOPN](topn-function-dax.md)     |  Returns the top N rows of the specified table.       |
-|[TREATAS](treatas-function.md)     |  Applies the result of a table expression as filters to columns from an unrelated table.        |
+|[TREATAS](treatas-function-dax.md)     |  Applies the result of a table expression as filters to columns from an unrelated table.        |
 |[UNION](union-function-dax.md)     |  Creates a union (join) table from a pair of tables.         |
 |[VALUES](values-function-dax.md)     |  Returns a one-column table that contains the distinct values from the specified table or column.       |
