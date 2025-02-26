@@ -42,7 +42,7 @@ Lookup Example 2 = LOOKUP([Sales Amount], [Category], "Bikes")
 
 The screenshot below shows the matrix with two visual calculations.
 
-![DAX visual calculation](media/dax-queries/dax-visualcalc-lookup.png)
+![lookup example 1](media/dax-queries/dax-visualcalc-lookup.png)
 
 ## Example 2
 In this example, LOOKUP example 2retrieves the sum of sale for filters: [Fiscal Year] = "FY2018". Notice that quarter filter from row will be used if we don't specify it directly. Example 3 specify 2018 Q1 so it will lock down to specific row.
@@ -52,7 +52,7 @@ LookupExample2 = LOOKUP([Sales Amount], [Fiscal Year], "FY2018")
 LookupExample3 = LOOKUP([Sales Amount], [Fiscal Year], "FY2018", [Fiscal Quarter], "FY2018 Q1")
 ```
 
-![DAX visual calculation](media/dax-queries/dax-visualcalc-lookup-example2.png)
+![lookup example 2](media/dax-queries/dax-visualcalc-lookup-example2.png)
 
 
 ## Related content

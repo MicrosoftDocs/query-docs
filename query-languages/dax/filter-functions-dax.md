@@ -25,6 +25,7 @@ The filter and value functions in DAX are some of the most complex and powerful,
 |[KEEPFILTERS](keepfilters-function-dax.md)      | Modifies how filters are applied while evaluating a CALCULATE or CALCULATETABLE function.         |
 |[LAST](last-function-dax.md)    | Used in visual calculations only. Retrieves a value in the visual matrix from the last row of an axis.        |
 |[LOOKUP](lookup-function-dax.md)              | In visual calculation mode only. Look up the value when filters applied.|
+|[LOOKUPWITHTOTALS](lookupwithtotals-function-dax.md)              | In visual calculation mode only. Look up the value when filters applied. Filters not specified will not be inferred.|
 |[LOOKUPVALUE](lookupvalue-function-dax.md)    | Returns the value for the row that meets all criteria specified by search conditions. The function can apply one or more search conditions.        |
 |[MATCHBY](matchby-function-dax.md)    | In window functions, defines the columns that are used to determine how to match data and identify the *current row*.        |
 |[MOVINGAVERAGE](movingaverage-function-dax.md)|Returns a moving average calculated along the given axis of the visual matrix.|

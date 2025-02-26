@@ -44,7 +44,7 @@ LookupExample1 = LOOKUP([Sales Amount], [Fiscal Year], "FY2018")
 
 The screenshot below shows the matrix with two visual calculations.
 
-![DAX visual calculation lookupwithTotals](media/dax-queries/dax-visualcalc-lookupwithtotals-example1.png)
+![lookupwithTotals example 1](media/dax-queries/dax-visualcalc-lookupwithtotals-example1.png)
 
 ## Example 2
 In this example, LOOKUPWITHTOTALS retrieves the sum of sale for filters: [Category] = "Bikes". Notices that it get total grain for other filters. In other words, it is not filtered. It's useful when we want to do comparison since lookupwithtoal result is locked to a certain value.
@@ -53,7 +53,7 @@ In this example, LOOKUPWITHTOTALS retrieves the sum of sale for filters: [Catego
 LookupWithTotalExample2 = lookupWithTotals([Sales Amount], [Category], "Bikes")
 ```
 
-![DAX visual calculation lookupwithTotals2](media/dax-queries/dax-visualcalc-lookupwithtotals-example2.png)
+![lookupwithTotals example 2](media/dax-queries/dax-visualcalc-lookupwithtotals-example2.png)
 
 ## Related content
 
