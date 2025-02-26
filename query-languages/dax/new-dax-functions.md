@@ -15,7 +15,7 @@ While functions and functionality are being updated all the time, only those upd
 
 |Function  |Month  | Description |
 |---------|---------|---------|
-|[LOOKUP](lookup-function-dax.md)|June, 2024| Used in Visual Calculations only. Look up the value when filters are applied. |
+|[LOOKUP](lookup-function-dax.md)|June, 2024| Used in visual Calculations only. Look up the value when filters are applied. |
 |[FIRST](first-function-dax.md)|January, 2024|Used in visual calculations only. Retrieves a value in the visual matrix from the first row of an axis.|
 |[LAST](last-function-dax.md)|January, 2024|Used in visual calculations only. Retrieves a value in the visual matrix from the last row of an axis.|
 |[NEXT](next-function-dax.md)|January, 2024|Used in visual calculations only. Retrieves a value in the next row of an axis in the visual matrix.|
