@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: QuoteStyle.Type"
 title: "QuoteStyle.Type"
+ms.subservice: m-source
 ---
 # QuoteStyle.Type
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Accumulate"
 title: "List.Accumulate"
+ms.subservice: m-source
 ---
 # List.Accumulate
 

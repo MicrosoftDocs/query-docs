@@ -1,33 +1,33 @@
 ---
 description: "Learn more about: DEFINE"
-title: "DEFINE keyword (DAX) | Microsoft Docs"
+title: "DEFINE keyword (DAX)"
 ---
 # DEFINE
-  
+
 Introduces a statement with one or more entity definitions that can be applied to one or more EVALUATE statements of a [DAX query](dax-queries.md).
 
-## Syntax  
-  
+## Syntax
+
 ```dax
 [DEFINE 
     (
      (MEASURE <table name>[<measure name>] = <scalar expression>) | 
      (VAR <var name> = <table or scalar expression>) |
-     (TABLE <table name> = <table expression>) | 
+     (TABLE <table name> = <virtual table definition>) | 
      (COLUMN <table name>[<column name>] = <scalar expression>) | 
     ) + 
 ]
 
 (EVALUATE <table expression>) +
 ```
-  
+
 ### Parameters
-  
-|Term|Definition|  
-|--------|--------------|  
-|Entity|MEASURE, VAR, TABLE<sup>[1](#not-rec)</sup>, or COLUMN<sup>[1](#not-rec)</sup>. |
-|name|The name of a measure, var, table, or column definition. It cannot be an expression. The name does not have to be unique. The name exists only for the duration of the query.|  
-|expression|Any DAX expression that returns a table or scalar value. The expression can use any of the defined entities. If there is a need to convert a scalar expression into a table expression, wrap the expression inside a table constructor with curly braces `{}`, or use the `ROW()` function to return a single row table.|
+
+|Term|Definition|
+|--------|--------------|
+|`Entity`|MEASURE, VAR, TABLE<sup>[1](#not-rec)</sup>, or COLUMN<sup>[1](#not-rec)</sup>. |
+|`name`|The name of a measure, var, table, or column definition. It cannot be an expression. The name does not have to be unique. The name exists only for the duration of the query.|
+|`expression`|Any DAX expression that returns a table or scalar value. The expression can use any of the defined entities. If there is a need to convert a scalar expression into a table expression, wrap the expression inside a table constructor with curly braces `{}`, or use the `ROW()` function to return a single row table.|
 
 <a name="not-rec">[1]</a> **Caution:** Query scoped TABLE and COLUMN definitions are meant for internal use only. While you can define TABLE and COLUMN expressions for a query without syntax error, they may produce runtime errors and are not recommended.
 
@@ -43,9 +43,15 @@ Introduces a statement with one or more entity definitions that can be applied t
 
 - To learn more about how a DEFINE statement is used, see [DAX queries](dax-queries.md).
 
+- To learn more about virtual column, see [Virtual Column](virtual-column-statement-dax.md)
+
+- To learn more about virtual table, see [Virtual Table](virtual-table-statement-dax.md)
+
 ## Related content
 
 [EVALUATE](evaluate-statement-dax.md)  
 [VAR](var-dax.md)  
 [MEASURE](measure-statement-dax.md)  
+[Virtual Column](virtual-column-statement-dax.md)
+[Virtual Table](virtual-table-statement-dax.md)
 [DAX queries](dax-queries.md)

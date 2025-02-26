@@ -1,29 +1,29 @@
 ---
 description: "Learn more about: COTH"
-title: "COTH function (DAX) | Microsoft Docs"
+title: "COTH function (DAX)"
 ---
 # COTH
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns the hyperbolic cotangent of a hyperbolic angle.
-  
-## Syntax  
-  
+
+## Syntax
+
 ```dax
 COTH (<number>)
 ```
-  
+
 ### Parameters
-  
-|Term|Definition|  
-|--------|--------------|  
-|number|The hyperbolic angle in radians for which you want the hyperbolic cotangent.|  
-  
+
+|Term|Definition|
+|--------|--------------|
+|`number`|The hyperbolic angle in radians for which you want the hyperbolic cotangent.|
+
 ## Return value
 
-The hyperbolic cotangent of the given angle.  
-  
+The hyperbolic cotangent of the given angle.
+
 ## Remarks
 
 - The hyperbolic cotangent is an analog of the ordinary (circular) cotangent.
@@ -40,10 +40,10 @@ The hyperbolic cotangent of the given angle.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-## Example  
-  
+## Example
+
 The following DAX query,
-  
+
 ```dax
 EVALUATE { COTH(2) }
 ```

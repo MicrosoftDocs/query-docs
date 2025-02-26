@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Logical.FromText"
 title: "Logical.FromText"
+ms.subservice: m-source
 ---
 # Logical.FromText
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Binary.InferContentType"
 title: "Binary.InferContentType"
+ms.subservice: m-source
 ---
 # Binary.InferContentType
 

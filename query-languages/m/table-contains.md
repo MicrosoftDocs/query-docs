@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.Contains"
 title: "Table.Contains"
+ms.subservice: m-source
 ---
 # Table.Contains
 
@@ -80,3 +81,7 @@ Table.Contains(
 **Output**
 
 `true`
+
+## Related content
+
+[Equation criteria](table-functions.md#equation-criteria)

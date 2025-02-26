@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.AddFuzzyClusterColumn"
 title: "Table.AddFuzzyClusterColumn"
+ms.subservice: m-source
 ---
 # Table.AddFuzzyClusterColumn
 
@@ -65,3 +66,7 @@ Table.FromRecords(
     type table [EmployeeID = nullable number, Location = nullable text, Location_Cleaned = nullable text]
 )
 ```
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

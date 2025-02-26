@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.PromoteHeaders"
 title: "Table.PromoteHeaders"
+ms.subservice: m-source
 ---
 # Table.PromoteHeaders
 
@@ -55,3 +56,7 @@ Table.PromoteHeaders(
 **Output**
 
 `Table.FromRecords({[1 = 1, Name = "Bob", #"1/1/1980" = #date(1980, 1, 1)]})`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

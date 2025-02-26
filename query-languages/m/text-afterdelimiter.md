@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.AfterDelimiter"
 title: "Text.AfterDelimiter"
+ms.subservice: m-source
 ---
 # Text.AfterDelimiter
 

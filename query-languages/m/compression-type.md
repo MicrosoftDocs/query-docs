@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Compression.Type"
 title: "Compression.Type"
+ms.subservice: m-source
 ---
 # Compression.Type
 

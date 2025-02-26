@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: File.Contents"
 title: "File.Contents"
+ms.subservice: m-source
 ---
 # File.Contents
 

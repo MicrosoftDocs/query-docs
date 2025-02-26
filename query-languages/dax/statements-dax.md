@@ -1,10 +1,10 @@
 ---
 description: "Learn more about: Statements"
-title: "Statements(DAX) | Microsoft Docs"
+title: "Statements(DAX)"
 ---
 # Statements
 
-## In this category  
+## In this category
 
 |Statement |Description  |
 |---------|---------|

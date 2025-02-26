@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: YIELDMAT"
-title: "YIELDMAT function (DAX) | Microsoft Docs"
+title: "YIELDMAT function (DAX)"
 author: jajin7
 ---
 
@@ -18,18 +18,18 @@ YIELDMAT(<settlement>, <maturity>, <issue>, <rate>, <pr>[, <basis>])
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|settlement|The security's settlement date. The security settlement date is the date after the issue date when the security is traded to the buyer.|
-|maturity|The security's maturity date. The maturity date is the date when the security expires.|
-|issue|The security's issue date.|
-|rate|The security's interest rate at date of issue.|
-|pr|The security's price per \\$100 face value.|
-|basis|(Optional) The type of day count basis to use. If basis is omitted, it is assumed to be 0. The accepted values are listed below this table.|
+|Term|Definition|
+|--------|--------------|
+|`settlement`|The security's settlement date. The security settlement date is the date after the issue date when the security is traded to the buyer.|
+|`maturity`|The security's maturity date. The maturity date is the date when the security expires.|
+|`issue`|The security's issue date.|
+|`rate`|The security's interest rate at date of issue.|
+|`pr`|The security's price per \\$100 face value.|
+|`basis`|(Optional) The type of day count basis to use. If basis is omitted, it is assumed to be 0. The accepted values are listed below this table.|
 
-The **basis** parameter accepts the following values:
+The `basis` parameter accepts the following values:
 
-| **Basis**    | **Day count basis** |
+| `Basis`    | **Day count basis** |
 | ------------ | ------------------- |
 | 0 or omitted | US (NASD) 30/360    |
 | 1            | Actual/actual       |
@@ -82,6 +82,6 @@ EVALUATE
 
 Returns the yield for a security using the terms specified above.
 
-| **[Value]**      |
+| Value      |
 | ------------------ |
 | 0.0609543336915387 |

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.SignedInteger32"
 title: "BinaryFormat.SignedInteger32"
+ms.subservice: m-source
 ---
 # BinaryFormat.SignedInteger32
 

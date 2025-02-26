@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Geometry.FromWellKnownText"
 title: "Geometry.FromWellKnownText"
+ms.subservice: m-source
 ---
 # Geometry.FromWellKnownText
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Date.MonthName"
 title: "Date.MonthName"
+ms.subservice: m-source
 ---
 # Date.MonthName
 
@@ -27,3 +28,7 @@ Date.MonthName(#datetime(2011, 12, 31, 5, 0, 0), "en-US")
 **Output**
 
 `"December"`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

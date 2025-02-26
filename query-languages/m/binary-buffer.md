@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Binary.Buffer"
 title: "Binary.Buffer"
+ms.subservice: m-source
 ---
 # Binary.Buffer
 

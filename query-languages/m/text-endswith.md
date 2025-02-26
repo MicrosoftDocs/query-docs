@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.EndsWith"
 title: "Text.EndsWith"
+ms.subservice: m-source
 ---
 # Text.EndsWith
 
@@ -49,3 +50,7 @@ Text.EndsWith("Hello, World", "World")
 **Output**
 
 `true`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

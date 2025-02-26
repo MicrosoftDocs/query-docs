@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Type.OpenRecord"
 title: "Type.OpenRecord"
+ms.subservice: m-source
 ---
 # Type.OpenRecord
 
@@ -27,3 +28,7 @@ Type.OpenRecord(type [A = number])
 **Output**
 
 `type [A = number, ...]`
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)

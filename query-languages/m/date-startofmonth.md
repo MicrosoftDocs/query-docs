@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Date.StartOfMonth"
 title: "Date.StartOfMonth"
+ms.subservice: m-source
 ---
 # Date.StartOfMonth
 

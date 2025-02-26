@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: JoinAlgorithm.Type"
 title: "JoinAlgorithm.Type"
+ms.subservice: m-source
 ---
 # JoinAlgorithm.Type
 

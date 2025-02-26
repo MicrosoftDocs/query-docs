@@ -4,6 +4,8 @@ description: Discusses basic concepts that appear throughout the subsequent sect
 ms.topic: conceptual
 ms.date: 8/2/2022
 ms.custom: nonautomated-date, intro-internal
+ms.subservice: m-specification
+
 ---
 
 # Basic concepts

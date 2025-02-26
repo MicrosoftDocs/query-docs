@@ -78,7 +78,7 @@ These functions create and manipulate text values.
 |[Text.Reverse](text-reverse.md)|Reverses the provided text.|
 |[Text.Split](text-split.md)|Returns a list containing parts of a text value that are delimited by a separator text value.|
 |[Text.SplitAny](text-splitany.md)|Returns a list containing parts of a text value that are delimited by any separator text values.|
-|[Text.Trim](text-trim.md)|Removes all leading and trailing whitespace.|
-|[Text.TrimEnd](text-trimend.md)|Removes all trailing whitespace.|
-|[Text.TrimStart](text-trimstart.md)|Removes all leading whitespace.|
+|[Text.Trim](text-trim.md)|Removes all the specified leading and trailing characters.|
+|[Text.TrimEnd](text-trimend.md)|Removes all specified trailing characters.|
+|[Text.TrimStart](text-trimstart.md)|Removes all specified leading characters.|
 |[Text.Upper](text-upper.md)|Returns the uppercase of a text value.|

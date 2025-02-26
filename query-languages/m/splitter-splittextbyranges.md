@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Splitter.SplitTextByRanges"
 title: "Splitter.SplitTextByRanges"
+ms.subservice: m-source
 ---
 # Splitter.SplitTextByRanges
 

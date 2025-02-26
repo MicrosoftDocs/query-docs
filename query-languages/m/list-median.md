@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Median"
 title: "List.Median"
+ms.subservice: m-source
 ---
 # List.Median
 
@@ -27,3 +28,7 @@ powerquery-mList.Median({5, 3, 1, 7, 9})
 **Output**
 
 `5`  
+
+## Related content
+
+[Comparison criteria](list-functions.md#comparison-criteria)

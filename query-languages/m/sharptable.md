@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: #table"
 title: "#table"
+ms.subservice: m-source
 ---
 # #table
 
@@ -93,3 +94,7 @@ Create a table with an explicit type.
 ```powerquery-m
 #table(type table [Name = text, Score = number], {{"Betty", 90.3}, {"Carl", 89.5}})
 ```
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)

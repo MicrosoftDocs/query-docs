@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.ToRows"
 title: "Table.ToRows"
+ms.subservice: m-source
 ---
 # Table.ToRows
 

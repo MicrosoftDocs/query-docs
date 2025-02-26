@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Number.IsOdd"
 title: "Number.IsOdd"
+ms.subservice: m-source
 ---
 # Number.IsOdd
 

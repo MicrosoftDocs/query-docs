@@ -2,8 +2,9 @@
 title: M Language Operators 
 description: Describes using operators in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 5/25/2023
+ms.date: 2/13/2025
 ms.custom: "nonautomated-date"
+ms.subservice: m-specification
 ---
 
 # Operator behavior
@@ -132,12 +133,12 @@ The following table summarizes the M operators, listing the operator categories 
     <tr>
         <td>Type assertion</td>
         <td><em>x</em> <code>as</code> <em>y</em></td>
-        <td>Is compatible nullable-primitive type or error</td>
+        <td>Is compatible primitive/nullable primitive type or error</td>
     </tr>
     <tr>
         <td>Type conformance</td>
         <td><em>x</em> <code>is</code> <em>y</em></td>
-        <td>Test if compatible nullable-primitive type</td>
+        <td>Test if type is compatible with primitive type or nullable primitive type</td>
     </tr>
     <tr>
         <td>Logical AND</td>
@@ -335,7 +336,7 @@ For example:
 [A=1,B=2][C]?      // null
 ```
 
-Collective access of multiple fields is supported by the operators for _required record projection_ and _optional record projection_. The operator `x[[y1],[y2],...]` projects the record to a new record with fewer fields (selected by `y1`, `y2`, `...`). If a selected field does not exist, an error is raised. The operator `x[[y1],[y2],...]` projects the record to a new record with the fields selected by `y1`, `y2`, `...`; if a field is missing, `null` is used instead. 
+Collective access of multiple fields is supported by the operators for _required record projection_ and _optional record projection_. The operator `x[[y1],[y2],...]` projects the record to a new record with fewer fields (selected by `y1`, `y2`, `...`). If a selected field does not exist, an error is raised. The operator `x[[y1],[y2],...]?` projects the record to a new record with the fields selected by `y1`, `y2`, `...`; if a field is missing, `null` is used instead. 
 For example:
 
 ```powerquery-m
@@ -364,7 +365,7 @@ The form `[[y1],[y2],...]` and `[[y1],[y2],...]?` are also supported as a shorth
 _[[A],[B]]
 ```
 
-The shorthand form is particularly useful in combination with the `each` shorthand, a way to introduce a function of a single parameter named `_` (for details, see [Simplified declarations](m-spec-functions.md#simplified-declarations). Together, the two shorthands simplify common higher-order functional expressions:
+The shorthand form is particularly useful in combination with the `each` shorthand, a way to introduce a function of a single parameter named `_` (for details, see [Simplified declarations](m-spec-functions.md#simplified-declarations)). Together, the two shorthands simplify common higher-order functional expressions:
 
 ```powerquery-m
 List.Select( {[a=1, b=1], [a=2, b=4]}, each [a] = [b]) 
@@ -594,7 +595,7 @@ _relational-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression_  `<`  _relational-expression<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression_  `>`  _relational-expression<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression_  `<=`  _relational-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression  `>=`  _relational-expression_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression_  `>=`  _relational-expression_
 
 These operators are used to determine the relative ordering relationship between two values, as shown in the following table:
 
@@ -1008,7 +1009,7 @@ The interpretation of the division operator (`x / y`) is dependent on the kind o
 | `type number` | `null` | `null` | |
 | `null` | `type number` | `null` | |
 | `type duration` | `type number` | `type duration` | Fraction of duration |
-| `type duration` | `type duration` | `type duration` | Numeric quotient of durations |
+| `type duration` | `type duration` | `type number` | Numeric quotient of durations |
 | `type duration` | `null` | `null` | |
 | `null` | `type duration` | `null` | |
 
@@ -1252,21 +1253,21 @@ The type compatibility operator `x is y`  is defined for the following types of 
 
 | X | Y | Result |
 | --- | --- | --- |
-| `type any` | _nullable-primitive-type_ | `type logical` |
+| `type any` | _primitive-or-nullable-primitive-type_ | `type logical` |
 
-The expression `x is y` returns `true` if the ascribed type of `x` is compatible with `y`, and returns `false` if the ascribed type of `x` is incompatible with `y`. `y` must be a _nullable-primitivetype_.
+The expression `x is y` returns `true` if the ascribed type of `x` is compatible with `y`, and returns `false` if it is not compatible. `y` must be a primitive type or a nullable primitive type.
 
 _is-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is-expression_  `is`  _nullable-primitive-type<br/> 
-nullable-primitive-type:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`_<sub>opt</sub> primitive-type_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is-expression_ `is`  _primitive-or-nullable-primitive-type<br /> 
+primitive-or-nullable-primitive-type:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`_<sub>opt</sub> primitive-type_<br />
 
 Type compatibility, as supported by the `is` operator, is a subset of [general type compatibility](m-spec-types.md) and is defined using the following rules:
 
-* If `x` is null then it is compatible if `y` is the type `any`, the type `null`, or a nullable type.
+* If `x` is null then it is compatible if `y` is the type `any`, the type `null`, or a nullable primitive type.
 
-* If `x` is non-null then if it is a compatible if the the primitive type of `x` is the same as `y`.
+* If `x` is non-null then it is compatible if the primitive type of `x` is the same as `y`.
 
 The following holds when evaluating the expression `x is y`:
 
@@ -1278,13 +1279,15 @@ The type assertion operator `x as y` is defined for the following types of value
 
 | X | Y | Result |
 | --- | --- | --- |
-| `type any` | _nullable-primitive-type_ | `type any` |
+| `type any` | _primitive-or-nullable-primitive-type_ | `type any` |
 
-The expression `x as y` asserts that the value `x` is compatible with `y` as per the `is` operator. If it is not compatible, an error is raised. `y` must be a _nullable-primitive-type_.
+The expression `x as y` asserts that the value `x` is compatible with `y` as per the `is` operator. If it is not compatible, an error is raised. `y` must be a primitive type or a nullable primitive type.
 
 _as-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;equality-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as-expression_  `as`  _nullable-primitive-type_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as-expression_  `as`  _primitive-or-nullable-primitive-type<br />
+primitive-or-nullable-primitive-type:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`_<sub>opt</sub>  primitive-type_
 
 The expression `x as y` is evaluated as follows:
 

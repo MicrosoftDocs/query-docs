@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.RemoveMatchingRows"
 title: "Table.RemoveMatchingRows"
+ms.subservice: m-source
 ---
 # Table.RemoveMatchingRows
 
@@ -35,3 +36,7 @@ Table.RemoveMatchingRows(
 **Output**
 
 `Table.FromRecords({[a = 3, b = 4]})`
+
+## Related content
+
+[Equation criteria](table-functions.md#equation-criteria)

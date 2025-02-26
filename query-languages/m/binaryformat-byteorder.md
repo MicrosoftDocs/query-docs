@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.ByteOrder"
 title: "BinaryFormat.ByteOrder"
+ms.subservice: m-source
 ---
 # BinaryFormat.ByteOrder
 
