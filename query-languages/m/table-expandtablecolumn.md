@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.ExpandTableColumn"
 title: "Table.ExpandTableColumn"
+ms.subservice: m-source
 ---
 # Table.ExpandTableColumn
 

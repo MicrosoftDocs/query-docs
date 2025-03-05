@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Date.AddMonths"
 title: "Date.AddMonths"
+ms.subservice: m-source
 ---
 # Date.AddMonths
 
@@ -44,3 +45,9 @@ Date.AddMonths(#datetime(2011, 5, 14, 8, 15, 22), 18)
 **Output**
 
 `#datetime(2012, 11, 14, 8, 15, 22)`
+
+## Related content
+
+* [#date](sharpdate.md)
+* [#datetime](sharpdatetime.md)
+* [#datetimezone](sharpdatetimezone.md)

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: #duration"
 title: "#duration"
+ms.subservice: m-source
 ---
 # #duration
 

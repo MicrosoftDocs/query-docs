@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Cube.PropertyKey"
 title: "Cube.PropertyKey"
+ms.subservice: m-source
 ---
 # Cube.PropertyKey
 

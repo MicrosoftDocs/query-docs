@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.FromPartitions"
 title: "Table.FromPartitions"
+ms.subservice: m-source
 ---
 # Table.FromPartitions
 
@@ -86,3 +87,7 @@ Table.FromRecords({
     ]
 })
 ```
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)

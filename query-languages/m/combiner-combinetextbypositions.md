@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Combiner.CombineTextByPositions"
 title: "Combiner.CombineTextByPositions"
+ms.subservice: m-source
 ---
 # Combiner.CombineTextByPositions
 

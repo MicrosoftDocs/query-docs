@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DateTime.Date"
 title: "DateTime.Date"
+ms.subservice: m-source
 ---
 # DateTime.Date
 
@@ -12,7 +13,7 @@ DateTime.Date(<b>dateTime</b> as any) as nullable date
   
 ## About
 
-Returns the date component of `dateTime`, the given `date`, `datetime`, or `datetimezone` value.
+Returns the date component of the `dateTime` parameter if the parameter is a `date`, `datetime`, or `datetimezone` value, or `null` if the parameter is `null`.
 
 ## Example 1
 

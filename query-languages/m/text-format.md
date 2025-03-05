@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.Format"
 title: "Text.Format"
+ms.subservice: m-source
 ---
 # Text.Format
 
@@ -50,3 +51,7 @@ Text.Format(
 **Output**
 
 `"The time for the 10 km run held in Seattle on 3/10/2015 was 00:54:40."`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

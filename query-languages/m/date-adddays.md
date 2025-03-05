@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Date.AddDays"
 title: "Date.AddDays"
+ms.subservice: m-source
 ---
 # Date.AddDays
 
@@ -30,3 +31,9 @@ Date.AddDays(#date(2011, 5, 14), 5)
 **Output**
 
 `#date(2011, 5, 19)`
+
+## Related content
+
+* [#date](sharpdate.md)
+* [#datetime](sharpdatetime.md)
+* [#datetimezone](sharpdatetimezone.md)

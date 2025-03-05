@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.ContainsAll"
 title: "Table.ContainsAll"
+ms.subservice: m-source
 ---
 # Table.ContainsAll
 
@@ -64,3 +65,7 @@ Table.ContainsAll(
 **Output**
 
 `false`
+
+## Related content
+
+[Equation criteria](table-functions.md#equation-criteria)

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.FuzzyNestedJoin"
 title: "Table.FuzzyNestedJoin"
+ms.subservice: m-source
 ---
 # Table.FuzzyNestedJoin
   
@@ -97,3 +98,7 @@ Table.FromRecords({
     ]
 })
 ```
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

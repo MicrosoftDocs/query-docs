@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: LINEST"
-title: "LINEST function (DAX) | Microsoft Docs"
+title: "LINEST function (DAX)"
 author: masanto-msft
 ms.author: masanto
 ---
 
 # LINEST
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Uses the Least Squares method to calculate a straight line that best fits the given data, then returns a table describing the line. The equation for the line is of the form: y = **Slope1**\*x1 + **Slope2**\*x2 + ... + **Intercept**.
 
@@ -19,9 +21,9 @@ LINEST ( <columnY>, <columnX>[, …][, <const>] )
 
 |Term|Definition|
 |--------|--------------|
-|columnY|The column of known y-values. Must have scalar type.|
-|columnX|The columns of known x-values. Must have scalar type. At least one must be provided.|
-|const|(Optional) A constant TRUE/FALSE value specifying whether to force the constant **Intercept** to equal 0.</br>If TRUE or omitted, the **Intercept** value is calculated normally; If FALSE, the **Intercept** value is set to zero.|
+|`columnY`|The column of known y-values. Must have scalar type.|
+|`columnX`|The columns of known x-values. Must have scalar type. At least one must be provided.|
+|`const`|(Optional) A constant `TRUE`/`FALSE` value specifying whether to force the constant **Intercept** to equal 0.</br>If `TRUE` or omitted, the **Intercept** value is calculated normally; If `FALSE`, the **Intercept** value is set to zero.|
 
 ## Return value
 
@@ -40,7 +42,7 @@ A single-row table describing the line, plus additional statistics. These are th
 
 ## Remarks
 
-\<columnY> and the \<columnX>’s must all belong to the same table.
+`columnY` and the `columnX`’s must all belong to the same table.
 
 ## Example 1
 
@@ -111,5 +113,5 @@ TotalSalesAmount = Slope1 * YearlyIncome + Slope2 * TotalChildren + Slope3 * Bir
 
 ## Related content
 
-[LINESTX](linestx-function-dax.md)  
-[Statistical functions](statistical-functions-dax.md)  
+[LINESTX](linestx-function-dax.md)
+[Statistical functions](statistical-functions-dax.md)

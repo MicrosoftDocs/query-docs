@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.SplitColumn"
 title: "Table.SplitColumn"
+ms.subservice: m-source
 ---
 # Table.SplitColumn
 
@@ -29,7 +30,7 @@ let
         [CustomerID = 4, Name = "Cristina", Phone = "232-1550"]
     })
 in
-    Table.SplitColumn(Customers, "Name", Splitter.SplitTextByDelimiter("i"), 2
+    Table.SplitColumn(Customers, "Name", Splitter.SplitTextByDelimiter("i"), 2)
 ```
 
 **Output**

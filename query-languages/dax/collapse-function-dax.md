@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COLLAPSE"
-title: "COLLAPSE function (DAX) | Microsoft Docs"
+title: "COLLAPSE function (DAX)"
 ms.service: powerbi
 ms.subservice: dax
 ms.date: 02/20/2024
@@ -12,6 +12,8 @@ recommendations: false
 ---
 
 # COLLAPSE
+
+[!INCLUDE[applies-to-visual-calculations](includes/applies-to-visual-calculations.md)]
 
 Retrieves a context at a higher level compared to the current context. If an expression is provided, returns its value in the new context, allowing for navigation in hierarchies and calculation at a higher level.
 
@@ -33,10 +35,10 @@ COLLAPSE ( <column>[, <column>] ... )
 
 |Term|Definition|
 |--------|--------------|
-|expression|The expression to be evaluated in the new context.|
-|axis|An axis reference.|
-|column|A column in the data grid.|
-|N|(Optional) The number of levels to collapse. If omitted, the default value is 1.|
+|`expression`|The expression to be evaluated in the new context.|
+|`axis`|An axis reference.|
+|`column`|A column in the data grid.|
+|`N`|(Optional) The number of levels to collapse. If omitted, the default value is 1.|
 
 ## Return value
 
@@ -69,8 +71,7 @@ The screenshot below shows the matrix with the three visual calculations.
 
 ## See also
 
-[EXPAND](expand-function-dax.md)  
-[EXPANDALL](expandall-function-dax.md)  
-[COLLAPSEALL](collapseall-function-dax.md)  
-
+[EXPAND](expand-function-dax.md)
+[EXPANDALL](expandall-function-dax.md)
+[COLLAPSEALL](collapseall-function-dax.md)
 

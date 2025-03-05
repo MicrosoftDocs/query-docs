@@ -1,10 +1,12 @@
 ---
 description: "Learn more about: CUMIPMT"
-title: "CUMIPMT function (DAX) | Microsoft Docs"
+title: "CUMIPMT function (DAX)"
 author: jajin7
 ---
 
 # CUMIPMT
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns the cumulative interest paid on a loan between start_period and end_period.
 
@@ -16,18 +18,18 @@ CUMIPMT(<rate>, <nper>, <pv>, <start_period>, <end_period>, <type>)
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|rate|The interest rate.|  
-|nper|The total number of payment periods.|
-|pv|The present value.|
-|start_period|The first period in the calculation. Must be between 1 and end_period (inclusive).|
-|end_period|The last period in the calculation. Must be between start_period and nper (inclusive).|
-|type|The timing of the payment. The accepted values are listed below this table.|
+|Term|Definition|
+|--------|--------------|
+|`rate`|The interest rate.|
+|`nper`|The total number of payment periods.|
+|`pv`|The present value.|
+|`start_period`|The first period in the calculation. Must be between 1 and end_period (inclusive).|
+|`end_period`|The last period in the calculation. Must be between start_period and nper (inclusive).|
+|`type`|The timing of the payment. The accepted values are listed below this table.|
 
-The **type** parameter accepts the following values:
+The `type` parameter accepts the following values:
 
-| **Type** | **Timing**                             |
+| `Type` | **Timing**                             |
 | -------- | -------------------------------------- |
 | 0 (zero) | Payment at the end of the period       |
 | 1        | Payment at the beginning of the period |

@@ -1,3 +1,4 @@
+items:
 - name: Data Analysis Expressions (DAX) Reference
   href: index.yml
   expanded: true
@@ -10,6 +11,8 @@
           href: dax-learn-videos.md
         - name: Use DAX in Power BI Desktop Learn path
           href: https://aka.ms/learndax
+        - name: Write DAX queries with Copilot
+          href: dax-copilot.md
         - name: "Sample model"
           href: dax-sample-model.md 
         - name: Best practices
@@ -114,7 +117,7 @@
             - name: MONTH
               href: month-function-dax.md
             - name: NETWORKDAYS
-              href: networkdays-dax.md
+              href: networkdays-function-dax.md
             - name: NOW
               href: now-function-dax.md
             - name: QUARTER
@@ -163,10 +166,18 @@
               href: earliest-function-dax.md
             - name: FILTER
               href: filter-function-dax.md
+            - name: FIRSTNONBLANK
+              href: firstnonblank-function-dax.md
+            - name: FIRSTNONBLANKVALUE
+              href: firstnonblankvalue-function-dax.md
             - name: INDEX
               href: index-function-dax.md
             - name: KEEPFILTERS
               href: keepfilters-function-dax.md
+            - name: LASTNONBLANK
+              href: lastnonblank-function-dax.md
+            - name: LASTNONBLANKVALUE
+              href: lastnonblankvalue-function-dax.md
             - name: LOOKUPVALUE
               href: lookupvalue-function-dax.md
             - name: MATCHBY
@@ -190,7 +201,7 @@
             - name: RUNNINGSUM
               href: runningsum-function-dax.md
             - name: SELECTEDVALUE
-              href: selectedvalue-function.md
+              href: selectedvalue-function-dax.md
             - name: WINDOW
               href: window-function-dax.md
         - name: Financial functions
@@ -510,7 +521,7 @@
             - name: BLANK
               href: blank-function-dax.md
             - name: ERROR
-              href: error-function.md
+              href: error-function-dax.md
             - name: EVALUATEANDLOG
               href: evaluateandlog-function-dax.md
             - name: TOCSV
@@ -538,7 +549,7 @@
             - name: Relationship functions
               href: relationship-functions-dax.md
             - name: CROSSFILTER
-              href: crossfilter-function.md
+              href: crossfilter-function-dax.md
             - name: RELATED
               href: related-function-dax.md
             - name: RELATEDTABLE
@@ -584,13 +595,13 @@
             - name: MEDIANX
               href: medianx-function-dax.md
             - name: NORM.DIST
-              href: norm-dist-dax.md
+              href: norm-dist-function-dax.md
             - name: NORM.INV
-              href: norm-inv-dax.md
+              href: norm-inv-function-dax.md
             - name: NORM.S.DIST
-              href: norm-s-dist-dax.md
+              href: norm-s-dist-function-dax.md
             - name: NORM.S.INV
-              href: norm-s-inv-dax.md
+              href: norm-s-inv-function-dax.md
             - name: PERCENTILE.EXC
               href: percentile-exc-function-dax.md
             - name: PERCENTILE.INC
@@ -609,6 +620,8 @@
               href: rankx-function-dax.md
             - name: SAMPLE
               href: sample-function-dax.md
+            - name: SAMPLECARTESIANPOINTSBYCOVER
+              href: samplecartesianpointsbycover-function-dax.md
             - name: STDEV.S
               href: stdev-s-function-dax.md
             - name: STDEV.P
@@ -618,15 +631,15 @@
             - name: STDEVX.P
               href: stdevx-p-function-dax.md
             - name: T.DIST
-              href: t-dist-dax.md
+              href: t-dist-function-dax.md
             - name: T.DIST.2T
-              href: t-dist-2t-dax.md
+              href: t-dist-2t-function-dax.md
             - name: T.DIST.RT
-              href: t-dist-rt-dax.md
+              href: t-dist-rt-function-dax.md
             - name: T.INV
-              href: t-inv-dax.md
+              href: t-inv-function-dax.md
             - name: T.INV.2T
-              href: t-inv-2t-dax.md
+              href: t-inv-2t-function-dax.md
             - name: VAR.S
               href: var-s-function-dax.md
             - name: VAR.P
@@ -648,7 +661,7 @@
             - name: CURRENTGROUP 
               href: currentgroup-function-dax.md
             - name: DATATABLE
-              href: datatable-function.md
+              href: datatable-function-dax.md
             - name: DETAILROWS
               href: detailrows-function-dax.md
             - name: DISTINCT (column)
@@ -664,7 +677,7 @@
             - name: GENERATEALL
               href: generateall-function-dax.md
             - name: GENERATESERIES
-              href: generateseries-function.md
+              href: generateseries-function-dax.md
             - name: GROUPBY
               href: groupby-function-dax.md
             - name: IGNORE
@@ -698,7 +711,7 @@
             - name: TOPN
               href: topn-function-dax.md
             - name: TREATAS
-              href: treatas-function.md
+              href: treatas-function-dax.md
             - name: UNION
               href: union-function-dax.md
             - name: VALUES
@@ -779,16 +792,8 @@
               href: endofyear-function-dax.md
             - name: FIRSTDATE
               href: firstdate-function-dax.md
-            - name: FIRSTNONBLANK
-              href: firstnonblank-function-dax.md
-            - name: FIRSTNONBLANKVALUE
-              href: firstnonblankvalue-function-dax.md
             - name: LASTDATE
               href: lastdate-function-dax.md
-            - name: LASTNONBLANK
-              href: lastnonblank-function-dax.md
-            - name: LASTNONBLANKVALUE
-              href: lastnonblankvalue-function-dax.md
             - name: NEXTDAY
               href: nextday-function-dax.md
             - name: NEXTMONTH

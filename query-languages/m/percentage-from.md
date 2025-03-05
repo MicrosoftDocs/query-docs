@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Percentage.From"
 title: "Percentage.From"
+ms.subservice: m-source
 ---
 # Percentage.From
 
@@ -27,3 +28,7 @@ Percentage.From("12.3%")
 **Output**
 
 `0.123`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

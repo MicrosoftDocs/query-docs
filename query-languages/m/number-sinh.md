@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Number.Sinh"
 title: "Number.Sinh"
+ms.subservice: m-source
 ---
 # Number.Sinh
 

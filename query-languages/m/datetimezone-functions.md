@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DateTimeZone functions"
 title: "DateTimeZone functions"
-ms.date: 5/16/2022
+ms.date: 11/13/2024
 ms.custom: "nonautomated-date"
 ---
 # DateTimeZone functions
@@ -23,6 +23,6 @@ These functions create and manipulate datetimezone values.
 |[DateTimeZone.ToText](datetimezone-totext.md)|Returns a text value from a DateTime value.|
 |[DateTimeZone.ToUtc](datetimezone-toutc.md)|Returns a DateTime value to the Utc time zone.|
 |[DateTimeZone.UtcNow](datetimezone-utcnow.md)|Returns a DateTime value set to the current system date and time in the Utc timezone.|
-|[DateTimeZone.ZoneHours](datetimezone-zonehours.md)|Returns a time zone hour value from a DateTime value.|
-|[DateTimeZone.ZoneMinutes](datetimezone-zoneminutes.md)|Returns a time zone minute value from a DateTime value.|
+|[DateTimeZone.ZoneHours](datetimezone-zonehours.md)|Gets the timezone hour of the value.|
+|[DateTimeZone.ZoneMinutes](datetimezone-zoneminutes.md)|Gets the timezone minute of the value.|
 |[#datetimezone](sharpdatetimezone.md)|Creates a datetimezone value from year, month, day, hour, minute, second, offset-hours, and offset-minutes.|

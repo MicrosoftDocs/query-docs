@@ -1,13 +1,14 @@
 ---
 description: "Learn more about: SapHana.Database"
 title: "SapHana.Database"
+ms.subservice: m-source
 ---
 # SapHana.Database
 
 ## Syntax
 
 <pre>
-SapHana.Database(**server** as text, optional **options** as nullable record) as table
+SapHana.Database(<b>server</b> as text, optional <b>options</b> as nullable record) as table
 </pre>
 
 ## About

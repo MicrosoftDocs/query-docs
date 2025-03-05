@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Number.Log10"
 title: "Number.Log10"
+ms.subservice: m-source
 ---
 # Number.Log10
 

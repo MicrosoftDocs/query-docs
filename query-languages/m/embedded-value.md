@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Embedded.Value"
 title: "Embedded.Value"
+ms.subservice: m-source
 ---
 # Embedded.Value
 

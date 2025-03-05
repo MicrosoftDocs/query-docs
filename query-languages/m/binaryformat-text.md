@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.Text"
 title: "BinaryFormat.Text"
+ms.subservice: m-source
 ---
 # BinaryFormat.Text
 

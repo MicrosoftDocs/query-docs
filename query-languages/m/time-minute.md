@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Time.Minute"
 title: "Time.Minute"
+ms.subservice: m-source
 ---
 # Time.Minute
 

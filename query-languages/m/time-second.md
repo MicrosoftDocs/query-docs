@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Time.Second"
 title: "Time.Second"
+ms.subservice: m-source
 ---
 # Time.Second
 

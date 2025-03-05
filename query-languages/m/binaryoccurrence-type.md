@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: BinaryOccurrence.Type"
 title: "BinaryOccurrence.Type"
+ms.subservice: m-source
 ---
 # BinaryOccurrence.Type
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Type.IsNullable"
 title: "Type.IsNullable"
+ms.subservice: m-source
 ---
 # Type.IsNullable
 
@@ -41,3 +42,7 @@ Type.IsNullable(type nullable number)
 **Output**
 
 `true`
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)

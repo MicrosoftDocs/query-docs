@@ -1,10 +1,12 @@
 ---
 description: "Learn more about: ACCRINT"
-title: "ACCRINT function (DAX) | Microsoft Docs"
+title: "ACCRINT function (DAX) "
 author: jajin7
 ---
 
 # ACCRINT
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns the accrued interest for a security that pays periodic interest.
 
@@ -16,20 +18,20 @@ ACCRINT(<issue>, <first_interest>, <settlement>, <rate>, <par>, <frequency>[, <b
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|issue|The security's issue date.|  
-|first_interest|The security's first interest date.|
-|settlement|The security's settlement date. The security settlement date is the date after the issue date when the security is traded to the buyer.|
-|rate|The security's annual coupon rate.|
-|par|The security's par value.|
-|frequency|The number of coupon payments per year. For annual payments, frequency = 1; for semiannual, frequency = 2; for quarterly, frequency = 4.|
-|basis|(Optional) The type of day count basis to use. If basis is omitted, it is assumed to be 0. The accepted values are listed below this table.|
-|calc_method|(Optional) A logical value that specifies the way to calculate the total accrued interest when the date of settlement is later than the date of first_interest. If calc_method is omitted, it is assumed to be TRUE. <br/> - If calc_method evaluates to TRUE or is omitted, ACCRINT returns the total accrued interest from issue to settlement. <br/> - If calc_method evaluates to FALSE, ACCRINT returns the accrued interest from first_interest to settlement.|
+|Term|Definition|
+|--------|--------------|
+|`issue`|The security's issue date.|
+|`first_interest`|The security's first interest date.|
+|`settlement`|The security's settlement date. The security settlement date is the date after the issue date when the security is traded to the buyer.|
+|`rate`|The security's annual coupon rate.|
+|`par`|The security's par value.|
+|`frequency`|The number of coupon payments per year. For annual payments, frequency = 1; for semiannual, frequency = 2; for quarterly, frequency = 4.|
+|`basis`|(Optional) The type of day count basis to use. If basis is omitted, it is assumed to be 0. The accepted values are listed below this table.|
+|`calc_method`|(Optional) A logical value that specifies the way to calculate the total accrued interest when the date of settlement is later than the date of first_interest. If calc_method is omitted, it is assumed to be `TRUE`. <br/> - If calc_method evaluates to `TRUE` or is omitted, ACCRINT returns the total accrued interest from issue to settlement. <br/> - If calc_method evaluates to `FALSE`, ACCRINT returns the accrued interest from first_interest to settlement.|
 
-The **basis** parameter accepts the following values:
+The `basis` parameter accepts the following values:
 
-| **Basis**    | **Day count basis** |
+| `Basis`    | **Day count basis** |
 | ------------ | ------------------- |
 | 0 or omitted | US (NASD) 30/360    |
 | 1            | Actual/actual       |

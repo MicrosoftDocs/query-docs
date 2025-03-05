@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.FromValue"
 title: "Table.FromValue"
+ms.subservice: m-source
 ---
 # Table.FromValue
 

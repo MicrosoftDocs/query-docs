@@ -1,10 +1,12 @@
 ---
 description: "Learn more about: PDURATION"
-title: "PDURATION function (DAX) | Microsoft Docs"
+title: "PDURATION function (DAX)"
 author: jajin7
 ---
 
 # PDURATION
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns the number of periods required by an investment to reach a specified value.
 
@@ -16,11 +18,11 @@ PDURATION(<rate>, <pv>, <fv>)
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|rate|The interest rate per period.|
-|pv|The present value of the investment.|
-|fv|The desired future value of the investment.|
+|Term|Definition|
+|--------|--------------|
+|`rate`|The interest rate per period.|
+|`pv`|The present value of the investment.|
+|`fv`|The desired future value of the investment.|
 
 ## Return Value
 

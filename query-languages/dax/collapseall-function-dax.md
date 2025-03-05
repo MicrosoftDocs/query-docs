@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: COLLAPSEALL"
-title: "COLLAPSEALL function (DAX) | Microsoft Docs"
+title: "COLLAPSEALL function (DAX)"
 ms.service: powerbi
 ms.subservice: dax
 ms.date: 02/20/2024
@@ -12,6 +12,8 @@ recommendations: false
 ---
 
 # COLLAPSEALL
+
+[!INCLUDE[applies-to-visual-calculations](includes/applies-to-visual-calculations.md)]
 
 Retrieves a context at the highest level compared to the current context. If an expression is provided, returns its value in the new context, allowing for navigation in hierarchies and calculation at the highest level.
 
@@ -31,8 +33,8 @@ COLLAPSEALL ( <axis> )
 
 |Term|Definition|
 |--------|--------------|
-|expression|The expression to be evaluated in the new context.|
-|axis|An axis reference.|
+|`expression`|The expression to be evaluated in the new context.|
+|`axis`|An axis reference.|
 
 ## Return value
 
@@ -59,8 +61,7 @@ The screenshot below shows the matrix with the visual calculation.
 
 ## See also
 
-[EXPAND](expand-function-dax.md)  
-[EXPANDALL](expandall-function-dax.md)  
-[COLLAPSE](collapse-function-dax.md)  
-
+[EXPAND](expand-function-dax.md)
+[EXPANDALL](expandall-function-dax.md)
+[COLLAPSE](collapse-function-dax.md)
 

@@ -1,9 +1,11 @@
 ---
 description: "Learn more about: IPMT"
-title: "IPMT function (DAX) | Microsoft Docs"
+title: "IPMT function (DAX)"
 ---
 
 # IPMT
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns the interest payment for a given period for an investment based on periodic, constant payments and a constant interest rate.
 
@@ -15,18 +17,18 @@ IPMT(<rate>, <per>, <nper>, <pv>[, <fv>[, <type>]])
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|rate|The interest rate per period.|
-|per|The period for which you want to find the interest. Must be between 1 and nper (inclusive).|
-|nper|The total number of payment periods in an annuity.|
-|pv|The present value, or the lump-sum amount that a series of future payments is worth right now.|
-|fv|(Optional) The future value, or a cash balance you want to attain after the last payment is made. If fv is omitted, it is assumed to be BLANK.|
-|type|(Optional) The number 0 or 1 which indicates when payments are due. If type is omitted, it is assumed to be 0. The accepted values are listed below this table.|
+|Term|Definition|
+|--------|--------------|
+|`rate`|The interest rate per period.|
+|`per`|The period for which you want to find the interest. Must be between 1 and nper (inclusive).|
+|`nper`|The total number of payment periods in an annuity.|
+|`pv`|The present value, or the lump-sum amount that a series of future payments is worth right now.|
+|`fv`|(Optional) The future value, or a cash balance you want to attain after the last payment is made. If fv is omitted, it is assumed to be BLANK.|
+|`type`|(Optional) The number 0 or 1 which indicates when payments are due. If type is omitted, it is assumed to be 0. The accepted values are listed below this table.|
 
-The **type** parameter accepts the following values:
+The `type` parameter accepts the following values:
 
-| **Set type equal to** | **If payments are due**        |
+| **Set `type` equal to** | **If payments are due**        |
 | --------------------- | ------------------------------ |
 | 0 or omitted          | At the end of the period       |
 | 1                     | At the beginning of the period |

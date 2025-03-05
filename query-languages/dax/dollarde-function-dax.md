@@ -1,10 +1,12 @@
 ---
 description: "Learn more about: DOLLARDE"
-title: "DOLLARDE function (DAX) | Microsoft Docs"
+title: "DOLLARDE function (DAX)"
 author: jajin7
 ---
 
 # DOLLARDE
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Converts a dollar price expressed as an integer part and a fraction part, such as 1.02, into a dollar price expressed as a decimal number. Fractional dollar numbers are sometimes used for security prices.
 
@@ -16,14 +18,14 @@ DOLLARDE(<fractional_dollar>, <fraction>)
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|fractional_dollar|A number expressed as an integer part and a fraction part, separated by a decimal symbol.|
-|fraction|The integer to use in the denominator of the fraction.|
+|Term|Definition|
+|--------|--------------|
+|`fractional_dollar`|A number expressed as an integer part and a fraction part, separated by a decimal symbol.|
+|`fraction`|The integer to use in the denominator of the fraction.|
 
 ## Return Value
 
-The decimal value of *fractional_dollar*.
+The decimal value of `fractional_dollar`.
 
 ## Remarks
 

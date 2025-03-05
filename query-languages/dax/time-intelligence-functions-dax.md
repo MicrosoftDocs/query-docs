@@ -1,11 +1,11 @@
 ---
 description: "Learn more about: Time intelligence functions"
-title: "Time intelligence functions (DAX) | Microsoft Docs"
+title: "Time intelligence functions (DAX)"
 ---
 # Time intelligence functions
 
 Data Analysis Expressions (DAX) includes time-intelligence functions that enable you to manipulate data using time periods, including days, months, quarters, and years, and then build and compare calculations over those periods. Before using any time-intelligence functions, make sure to mark one of the tables containing date column as Date Table.
-  
+
 ## In this category
 
 |Function  |Description  |
@@ -23,9 +23,7 @@ Data Analysis Expressions (DAX) includes time-intelligence functions that enable
 |[ENDOFQUARTER](endofquarter-function-dax.md)      |  Returns the last date of the quarter in the current context for the specified column of dates.         |
 |[ENDOFYEAR](endofyear-function-dax.md)     | Returns the last date of the year in the current context for the specified column of dates.        |
 |[FIRSTDATE](firstdate-function-dax.md)     | Returns the first date in the current context for the specified column of dates.         |
-|[FIRSTNONBLANK](firstnonblank-function-dax.md)     | Returns the first value in the column, column, filtered by the current context, where the expression is not blank        |
 |[LASTDATE](lastdate-function-dax.md)      |  Returns the last date in the current context for the specified column of dates.       |
-|[LASTNONBLANK](lastnonblank-function-dax.md)      |  Returns the last value in the column, column, filtered by the current context, where the expression is not blank.       |
 |[NEXTDAY](nextday-function-dax.md)      |  Returns a table that contains a column of all dates from the next day, based on the first date specified in the dates column in the current context.       |
 |[NEXTMONTH](nextmonth-function-dax.md)     |  Returns a table that contains a column of all dates from the next month, based on the first date in the dates column in the current context.       |
 |[NEXTQUARTER](nextquarter-function-dax.md)     |  Returns a table that contains a column of all dates in the next quarter, based on the first date specified in the dates column, in the current context.        |

@@ -1,10 +1,12 @@
 ---
 description: "Learn more about: SYD"
-title: "SYD function (DAX) | Microsoft Docs"
+title: "SYD function (DAX)"
 author: jajin7
 ---
 
 # SYD
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns the sum-of-years' digits depreciation of an asset for a specified period.
 
@@ -16,12 +18,12 @@ SYD(<cost>, <salvage>, <life>, <per>)
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|cost|The initial cost of the asset.|
-|salvage|The value at the end of the depreciation (sometimes called the salvage value of the asset).|
-|life|The number of periods over which the asset is depreciated (sometimes called the useful life of the asset).|
-|per|The period. Must use the same units as life. Must be between 1 and life (inclusive).|
+|Term|Definition|
+|--------|--------------|
+|`cost`|The initial cost of the asset.|
+|`salvage`|The value at the end of the depreciation (sometimes called the salvage value of the asset).|
+|`life`|The number of periods over which the asset is depreciated (sometimes called the useful life of the asset).|
+|`per`|The period. Must use the same units as life. Must be between 1 and life (inclusive).|
 
 ## Return Value
 

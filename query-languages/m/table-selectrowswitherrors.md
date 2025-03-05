@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table.SelectRowsWithErrors"
 title: "Table.SelectRowsWithErrors"
+ms.subservice: m-source
 ---
 # Table.SelectRowsWithErrors
 

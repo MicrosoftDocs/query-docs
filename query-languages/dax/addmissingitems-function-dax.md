@@ -1,25 +1,27 @@
 ---
 description: "Learn more about: ADDMISSINGITEMS"
-title: "ADDMISSINGITEMS function (DAX) | Microsoft Docs"
+title: "ADDMISSINGITEMS function (DAX)"
 ---
 # ADDMISSINGITEMS
 
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
 Adds rows with empty values to a table returned by [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md).
-  
-## Syntax  
-  
+
+## Syntax
+
 ```dax
 ADDMISSINGITEMS ( [<showAll_columnName> [, <showAll_columnName> [, … ] ] ], <table> [, <groupBy_columnName> [, [<filterTable>] [, <groupBy_columnName> [, [<filterTable>] [, … ] ] ] ] ] ] )
 ```
-  
-### Parameters  
-  
-|Term|Definition|  
-|--------|--------------|  
-|showAll_columnName| (Optional) A column for which to return items with no data for the measures used. If not specified, all columns are returned.|  
-|table|A SUMMARIZECOLUMNS table.|  
-|groupBy_columnName|(Optional) A column to group by in the supplied table argument.|
-|filterTable|(Optional) A table expression that defines which rows are returned.|  
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|`showAll_columnName`| (Optional) A column for which to return items with no data for the measures used. If not specified, all columns are returned.|
+|`table`|A SUMMARIZECOLUMNS table.|
+|`groupBy_columnName`|(Optional) A column to group by in the supplied table argument.|
+|`filterTable`|(Optional) A table expression that defines which rows are returned.|
 
 ## Return value
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: RankKind.Type"
 title: "RankKind.Type"
+ms.subservice: m-source
 ---
 # RankKind.Type
 

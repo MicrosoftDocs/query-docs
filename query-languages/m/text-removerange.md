@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text.RemoveRange"
 title: "Text.RemoveRange"
+ms.subservice: m-source
 ---
 # Text.RemoveRange
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Type.RecordFields"
 title: "Type.RecordFields"
+ms.subservice: m-source
 ---
 # Type.RecordFields
 
@@ -32,3 +33,7 @@ Type.RecordFields(type [A = number, optional B = any])
     B = [Type = type any, Optional = true]
 ]
 ```
+
+## Related content
+
+* [Types and type conversion](type-conversion.md)

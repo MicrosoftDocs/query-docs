@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DeltaLake.Table"
 title: "DeltaLake.Table"
+ms.subservice: m-source
 ---
 # DeltaLake.Table
 

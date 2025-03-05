@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: List.Range"
 title: "List.Range"
+ms.subservice: m-source
 ---
 # List.Range
 
@@ -12,7 +13,7 @@ List.Range(<b>list</b> as list, <b>offset</b> as number, optional <b>count</b> a
   
 ## About
 
-Returns a subset of the list beginning at the offset `list`. An optional parameter, `offset`, sets the maximum number of items in the subset.
+Returns a subset of `list` beginning at `offset`. An optional parameter, `count`, sets the maximum number of items in the subset.
 
 ## Example 1
 

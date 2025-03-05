@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Comparer.Ordinal"
 title: "Comparer.Ordinal"
+ms.subservice: m-source
 ---
 # Comparer.Ordinal
 
@@ -29,3 +30,7 @@ Comparer.Equals(Comparer.Ordinal, "encyclopædia", "encyclopaedia")
 **Output**
 
 `false`
+
+## Related content
+
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

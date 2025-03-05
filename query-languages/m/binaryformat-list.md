@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.List"
 title: "BinaryFormat.List"
+ms.subservice: m-source
 ---
 # BinaryFormat.List
 

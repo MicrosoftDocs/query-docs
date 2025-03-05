@@ -1,11 +1,11 @@
 ---
 description: "Learn more about: Filter functions"
-title: "Filter functions (DAX) | Microsoft Docs"
+title: "Filter functions (DAX)"
 ---
 # Filter functions
 
-The filter and value functions in DAX are some of the most complex and powerful, and differ greatly from Excel functions. The lookup functions work by using tables and relationships, like a database. The filtering functions let you manipulate data context to create dynamic calculations.  
-  
+The filter and value functions in DAX are some of the most complex and powerful, and differ greatly from Excel functions. The lookup functions work by using tables and relationships, like a database. The filtering functions let you manipulate data context to create dynamic calculations.
+
 ## In this category
 
 |Function  |Description  |
@@ -26,16 +26,16 @@ The filter and value functions in DAX are some of the most complex and powerful,
 |[LAST](last-function-dax.md)    | Used in visual calculations only. Retrieves a value in the visual matrix from the last row of an axis.        |
 |[LOOKUPVALUE](lookupvalue-function-dax.md)    | Returns the value for the row that meets all criteria specified by search conditions. The function can apply one or more search conditions.        |
 |[MATCHBY](matchby-function-dax.md)    | In window functions, defines the columns that are used to determine how to match data and identify the *current row*.        |
-|[MOVINGAVERAGE](movingaverage-function-dax.md)|Returns a moving average calculated along the given axis of the visual calculation data grid.|
+|[MOVINGAVERAGE](movingaverage-function-dax.md)|Returns a moving average calculated along the given axis of the visual matrix.|
 |[NEXT](next-function-dax.md)    | Used in visual calculations only. Retrieves a value in the next row of an axis in the visual matrix.        |
 |[OFFSET](offset-function-dax.md)|Returns a single row that is positioned either before or after the *current row* within the same table, by a given offset. |
 |[ORDERBY](orderby-function-dax.md)|Defines the columns that determine the sort order within each of a window function’s partitions.|
-|[PARTITIONBY](partitionby-function-dax.md)|Defines the columns that are used to partition a window function’s \<relation> parameter.|
+|[PARTITIONBY](partitionby-function-dax.md)|Defines the columns that are used to partition a window function’s `relation` parameter.|
 |[PREVIOUS](previous-function-dax.md)| Used in visual calculations only. Retrieves a value in the previous row of an axis in the visual matrix. |
 |[RANGE](range-function-dax.md)|Returns an interval of rows within the given axis, relative to the current row. A shortcut for WINDOW.|
 |[RANK](rank-function-dax.md)| Returns the ranking of a row within the given interval.  |
 |[REMOVEFILTERS](removefilters-function-dax.md)|Clears filters from the specified tables or columns.|
 |[ROWNUMBER](rownumber-function-dax.md)| Returns the unique ranking of a row within the given interval.  |
-|[RUNNINGSUM](runningsum-function-dax.md)|Returns a running sum calculated along the given axis of the visual calculation data grid.|
-|[SELECTEDVALUE](selectedvalue-function.md)     |  Returns the value when the context for columnName has been filtered down to one distinct value only. Otherwise returns alternateResult.         |
+|[RUNNINGSUM](runningsum-function-dax.md)|Returns a running sum calculated along the given axis of the visual matrix.|
+|[SELECTEDVALUE](selectedvalue-function-dax.md)     |  Returns the value when the context for columnName has been filtered down to one distinct value only. Otherwise returns alternateResult.         |
 |[WINDOW](window-function-dax.md)| Returns multiple rows which are positioned within the given interval.  |

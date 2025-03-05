@@ -1,10 +1,12 @@
 ---
 description: "Learn more about: TBILLYIELD"
-title: "TBILLYIELD function (DAX) | Microsoft Docs"
+title: "TBILLYIELD function (DAX)"
 author: jajin7
 ---
 
 # TBILLYIELD
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns the yield for a Treasury bill.
 
@@ -16,11 +18,11 @@ TBILLYIELD(<settlement>, <maturity>, <pr>)
 
 ### Parameters
 
-|Term|Definition|  
-|--------|--------------|  
-|settlement|The Treasury bill's settlement date. The security settlement date is the date after the issue date when the Treasury bill is traded to the buyer.|
-|maturity|The Treasury bill's maturity date. The maturity date is the date when the Treasury bill expires.|
-|pr|The Treasury bill's price per \\$100 face value.|
+|Term|Definition|
+|--------|--------------|
+|`settlement`|The Treasury bill's settlement date. The security settlement date is the date after the issue date when the Treasury bill is traded to the buyer.|
+|`maturity`|The Treasury bill's maturity date. The maturity date is the date when the Treasury bill expires.|
+|`pr`|The Treasury bill's price per \\$100 face value.|
 
 ## Return Value
 

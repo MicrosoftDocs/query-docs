@@ -1,56 +1,58 @@
 ---
 description: "Learn more about: RELATEDTABLE"
-title: "RELATEDTABLE function (DAX) | Microsoft Docs"
+title: "RELATEDTABLE function (DAX)"
 ---
 # RELATEDTABLE
 
-Evaluates a table expression in a context modified by the given filters.  
-  
-## Syntax  
-  
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
+
+Evaluates a table expression in a context modified by the given filters.
+
+## Syntax
+
 ```dax
-RELATEDTABLE(<tableName>)  
+RELATEDTABLE(<tableName>)
 ```
-  
-### Parameters  
-  
-|Term|Definition|  
-|--------|--------------|  
-|tableName|The name of an existing table using standard DAX syntax. It cannot be an expression.|  
-  
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|`tableName`|The name of an existing table using standard DAX syntax. It cannot be an expression.|
+
 ## Return value
 
-A table of values.  
-  
+A table of values.
+
 ## Remarks
 
-- The RELATEDTABLE function changes the context in which the data is filtered, and evaluates the expression in the new context that you specify.  
-  
-- This function is a shortcut for CALCULATETABLE function with no logical expression.  
+- The RELATEDTABLE function changes the context in which the data is filtered, and evaluates the expression in the new context that you specify.
+
+- This function is a shortcut for CALCULATETABLE function with no logical expression.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example
 
-The following example uses the RELATEDTABLE function to create a calculated column with the Internet Sales in the Product Category table:  
+The following example uses the RELATEDTABLE function to create a calculated column with the Internet Sales in the Product Category table:
 
 ```dax
-= SUMX( RELATEDTABLE('InternetSales_USD')  
-     , [SalesAmount_USD])  
+= SUMX( RELATEDTABLE('InternetSales_USD')
+     , [SalesAmount_USD])
 ```
 
-The following table shows the results:  
+The following table shows the results:
 
-|:::no-loc text="Product Category Key":::|:::no-loc text="Product Category AlternateKey":::|:::no-loc text="Product Category Name":::|:::no-loc text="Internet Sales":::|  
-|-----|------|------|------|  
-|1|1|Bikes|$28,318,144.65|  
-|2|2|Components||  
-|3|3|Clothing|$339,772.61|  
-|4|4|Accessories|$700,759.96|  
-  
+|:::no-loc text="Product Category Key":::|:::no-loc text="Product Category AlternateKey":::|:::no-loc text="Product Category Name":::|:::no-loc text="Internet Sales":::|
+|-----|------|------|------|
+|1|1|Bikes|$28,318,144.65|
+|2|2|Components||
+|3|3|Clothing|$339,772.61|
+|4|4|Accessories|$700,759.96|
 
-  
+
+
 ## Related content
 
-[CALCULATETABLE](calculatetable-function-dax.md)  
+[CALCULATETABLE](calculatetable-function-dax.md)
 [Filter functions](filter-functions-dax.md)
