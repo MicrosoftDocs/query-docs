@@ -24,6 +24,7 @@ INFO.VIEW.TABLES contains information about the tables in the model, such as the
 EVALUATE INFO.VIEW.TABLES()
 ```
 
+This is an example of using this DAX function in DAX query view. This is from the ""Regional Sales Sample** available from **Learn** in the Power BI service.
 :::image type="content" source="media/info-functions-dax/info-view-tables-dax-query.png" alt-text="Screenshot showing the output of INFO.VIEW.TABLES() DAX function in DAX query view." lightbox="media/info-functions-dax/info-view-tables-dax-query.png":::
 
 ### INFO.VIEW.COLUMNS
@@ -34,6 +35,7 @@ INFO.VIEW.COLUMNS contains information about the columns in a model, such as the
 EVALUATE INFO.VIEW.COLUMNS()
 ```
 
+This is an example of using this DAX function in DAX query view. This is from the ""Regional Sales Sample** available from **Learn** in the Power BI service.
 :::image type="content" source="media/info-functions-dax/info-view-columns-dax-query.png" alt-text="Screenshot showing the output of INFO.VIEW.COLUMNS() DAX function in DAX query view." lightbox="media/info-functions-dax/info-view-columns-dax-query.png":::
 
 ### INFO.VIEW.MEASURES
@@ -44,6 +46,7 @@ INFO.VIEW.MEASURES contains information about the measures in the model, such as
 EVALUATE INFO.VIEW.MEASURES()
 ```
 
+This is an example of using this DAX function in DAX query view. This is from the ""Regional Sales Sample** available from **Learn** in the Power BI service.
 :::image type="content" source="media/info-functions-dax/info-view-measures-dax-query.png" alt-text="Screenshot showing the output of INFO.VIEW.MEASURES() DAX function in DAX query view." lightbox="media/info-functions-dax/info-view-measures-dax-query.png":::
 
 ### INFO.VIEW.RELATIONSHIPS
@@ -54,6 +57,7 @@ INFO.VIEW.RELATIONSHIPS contains information about the relationships in the mode
 EVALUATE INFO.VIEW.RELATIONSHIPS()
 ```
 
+This is an example of using this DAX function in DAX query view. This is from the ""Regional Sales Sample** available from **Learn** in the Power BI service.
 :::image type="content" source="media/info-functions-dax/info-view-relationships-dax-query.png" alt-text="Screenshot showing the output of INFO.VIEW.RELATIONSHIPS() DAX function in DAX query view." lightbox="media/info-functions-dax/info-view-relationships-dax-query.png":::
 
 ## INFO DAX functions
