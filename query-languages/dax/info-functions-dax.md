@@ -1,7 +1,6 @@
-
 ---
-description: "Learn more about: INFO functions"
 title: "INFO functions (DAX)"
+description: "Learn more about: INFO functions"
 ---
 # INFO functions
 
