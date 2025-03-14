@@ -1,14 +1,35 @@
 ---
 title: "INFO functions (DAX)"
-description: "Learn more about: INFO functions"
+description: "Learn more about: INFO DAX functions"
+author: DataZoeMS
+ms.author: zoedouglas
+ms.date: 03/13/2025
+ms.topic: overview
+ms.service: powerbi
+ms.subservice: dax
 ---
 # INFO functions
 
-Data Analysis Expressions (DAX) includes a set of INFO functions based on the library of [Dynamic Management Views (DMVs) in Analysis Services](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services), which have been modified to work as DAX functions. INFO DAX functions output as a table data type. As tables they can be used with other DAX functions such as FiLTER, SELECTCOLUMNS, ADDCOLUMNS, and others. This section describes INFO functions available in the DAX language.
+Data Analysis Expressions (DAX) includes a set of INFO functions based on the library of [Dynamic Management Views (DMVs) in Analysis Services](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services), which have been modified to work as DAX functions. INFO DAX functions output as a table data type. As tables they can be used with other DAX functions such as FILTER, SELECTCOLUMNS, ADDCOLUMNS, and others. This section describes INFO functions available in the DAX language.
 
 For Power BI semantic models, just like DMVs, the INFO DAX functions require semantic model admin permissions. Some also require workspace admin permissions. 
 
-As DAX functions these INFO DAX functions go beyond the capability of the DMVs, which use a SQL like syntax and return a row set. As these new functions are DAX functions, they can be used like any table in a DAX query – further combined and structured in the DAX query.
+As DAX functions these INFO functions go beyond the capability of the DMVs, which use a SQL-like syntax and return a row set. As these new functions are DAX functions, they can be used like any table in a DAX query – further combined and structured in the DAX query.
+
+```dax
+EVALUATE
+	ADDCOLUMNS(
+		SELECTCOLUMNS(
+			INFO.VIEW.MEASURES(),
+			"Measure", [Name],
+			[Description],
+			"DAX Formula", [Expression],
+			"State", [State]
+		),
+		"Model name", "My semantic model",
+		"As of date", NOW()
+	)
+```
 
 INFO functions are supported on Power BI semantic models but not on SQL Server Analysis Services models, Azure Analysis Services models, or PowerPivot models.
 
@@ -24,7 +45,8 @@ INFO.VIEW.TABLES contains information about the tables in the model, such as the
 EVALUATE INFO.VIEW.TABLES()
 ```
 
-This is an example of using this DAX function in [DAX query view](/power-bi/transform-model/dax-query-view). This is using **Regional Sales Sample** available from **Learn** in the Power BI service.
+The following screenshot is an example of using this DAX function in [DAX query view](/power-bi/transform-model/dax-query-view) with the **Regional Sales Sample** available from **Learn** in the Power BI service.
+
 :::image type="content" source="media/info-functions-dax/info-view-tables-dax-query.png" alt-text="Screenshot showing the output of INFO.VIEW.TABLES() DAX function in DAX query view." lightbox="media/info-functions-dax/info-view-tables-dax-query.png":::
 
 ### INFO.VIEW.COLUMNS
@@ -35,7 +57,8 @@ INFO.VIEW.COLUMNS contains information about the columns in a model, such as the
 EVALUATE INFO.VIEW.COLUMNS()
 ```
 
-This is an example of using this DAX function in [DAX query view](/power-bi/transform-model/dax-query-view). This is using **Regional Sales Sample** available from **Learn** in the Power BI service.
+The following screenshot is an example of using this DAX function in [DAX query view](/power-bi/transform-model/dax-query-view) with the **Regional Sales Sample** available from **Learn** in the Power BI service.
+
 :::image type="content" source="media/info-functions-dax/info-view-columns-dax-query.png" alt-text="Screenshot showing the output of INFO.VIEW.COLUMNS() DAX function in DAX query view." lightbox="media/info-functions-dax/info-view-columns-dax-query.png":::
 
 ### INFO.VIEW.MEASURES
@@ -46,7 +69,8 @@ INFO.VIEW.MEASURES contains information about the measures in the model, such as
 EVALUATE INFO.VIEW.MEASURES()
 ```
 
-This is an example of using this DAX function in [DAX query view](/power-bi/transform-model/dax-query-view). This is using **Regional Sales Sample** available from **Learn** in the Power BI service.
+The following screenshot is an example of using this DAX function in [DAX query view](/power-bi/transform-model/dax-query-view) with the **Regional Sales Sample** available from **Learn** in the Power BI service.
+
 :::image type="content" source="media/info-functions-dax/info-view-measures-dax-query.png" alt-text="Screenshot showing the output of INFO.VIEW.MEASURES() DAX function in DAX query view." lightbox="media/info-functions-dax/info-view-measures-dax-query.png":::
 
 ### INFO.VIEW.RELATIONSHIPS
@@ -57,7 +81,8 @@ INFO.VIEW.RELATIONSHIPS contains information about the relationships in the mode
 EVALUATE INFO.VIEW.RELATIONSHIPS()
 ```
 
-This is an example of using this DAX function in [DAX query view](/power-bi/transform-model/dax-query-view). This is using **Regional Sales Sample** available from **Learn** in the Power BI service.
+The following screenshot is an example of using this DAX function in [DAX query view](/power-bi/transform-model/dax-query-view) with the **Regional Sales Sample** available from **Learn** in the Power BI service.
+
 :::image type="content" source="media/info-functions-dax/info-view-relationships-dax-query.png" alt-text="Screenshot showing the output of INFO.VIEW.RELATIONSHIPS() DAX function in DAX query view." lightbox="media/info-functions-dax/info-view-relationships-dax-query.png":::
 
 ## INFO DAX functions
