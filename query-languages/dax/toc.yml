@@ -310,6 +310,10 @@ items:
               href: yielddisc-function-dax.md
             - name: YIELDMAT
               href: yieldmat-function-dax.md
+        - name: INFO functions
+          items: 
+            - name: INFO functions overview
+              href: info-functions-dax.md
         - name: Information functions
           items: 
             - name: Information functions overview
