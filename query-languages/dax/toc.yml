@@ -832,6 +832,10 @@ items:
               href: totalqtd-function-dax.md
             - name: TOTALYTD
               href: totalytd-function-dax.md
+        - name: INFO functions
+          items: 
+            - name: INFO functions overview
+              href: info-functions-dax.md
     - name: DAX statements
       items:
       - name: Statements overview
