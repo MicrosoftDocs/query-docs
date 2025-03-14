@@ -59,9 +59,9 @@ The following formula calculates dates that are one year before the dates in the
 
 ## Special behavior
 
-When selection includes last two days of month, it will use "extension" semantics and will include days till end of month. For example, when Feb 27 and 28 of 2013 are included and a month is added, it will get March 27 to 31.
+When the selection includes the last two days of month, DATEADD will use "extension" semantics and will include the days till the end of month. For example, when Feb 27 and 28 of 2013 are included in the selection and a month is added, DATEADD will return March 27 to 31.
 
-This behavior only happens when last two days of month are included. If only Feb 27 is selected, it will go to March 27.
+This behavior only happens when last two days of month are included in the selection. If only Feb 27 is selected, it will go to March 27.
 
 ```dax
 = DATEADD(DateTime[DateKey], 1, month)
