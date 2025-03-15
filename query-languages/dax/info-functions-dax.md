@@ -31,7 +31,7 @@ EVALUATE
 	)
 ```
 
-INFO functions are supported on Power BI semantic models but not on SQL Server Analysis Services models, Azure Analysis Services models, or PowerPivot models.
+INFO functions are supported on Power BI semantic models but not on SQL Server Analysis Services models, Azure Analysis Services models, or PowerPivot models. INFO.VIEW DAX functions can be run in calculated tables, columns, measures, and DAX queries, but other INFO DAX functions can only be run in DAX queries.
 
 ## INFO.VIEW DAX functions
 
