@@ -109,7 +109,7 @@ xTables2 =
 ```
 This calculated table shows the same information as the DAX query in example 2 in a table in the model itself.
 
-:::image type="content" source="media/info-view-tables-function-dax/calculated-table-example-3.png" alt-text="Screenshot showing the output of INFO.VIEW.TABLES() with selected columns in DAX query view." lightbox="media/info-view-tables-function-dax/calculated-table-example-3.png":::
+:::image type="content" source="media/info-view-tables-function-dax/calculated-table-example-3.png" alt-text="Screenshot showing the output of INFO.VIEW.TABLES() with selected columns in a calculated table." lightbox="media/info-view-tables-function-dax/calculated-table-example-3.png":::
 
 ## Example 4 - measure
 
