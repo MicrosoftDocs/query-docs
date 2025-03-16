@@ -3,11 +3,11 @@ description: "Learn more about: INFO.ANNOTATIONS"
 title: "INFO.ANNOTATIONS function (DAX)"
 author: DataZoeMS
 ---
-# INFO.VIEW.ANNOTATIONS
+# INFO.ANNOTATIONS
 
 [!INCLUDE[applies-to-query-only](includes/applies-to-query-only.md)]
 
-Returns a table with information about each column in the semantic model, such as name, description, and format string. This information helps you understand the model and to self-document the model when used in calculated tables. 
+Returns a table with information about each annotation in the semantic model. This information helps you understand the model.
 
 ## Syntax
 
@@ -33,10 +33,6 @@ A table with the following columns:
 ## Remarks
 
 Can only be ran by users with write permission on the semantic model and not when live connected to the semantic model in Power BI Desktop. This function can be used in DAX queries, and can't be used in calculations.
-
-[!INCLUDE[enum-for-info-dax-functions](includes/enum-title-for-info-dax-functions.md)]
-
-[!INCLUDE[enum-objecttype](includes/enum-objecttype.md)]
 
 ## Example 1 - DAX query
 
@@ -157,3 +153,7 @@ EVALUATE
 ```
 
 This DAX query returns a table with only the specified columns and joining to other INFO DAX functions and the enumeration table.
+
+[!INCLUDE[enum-for-info-dax-functions](includes/enum-title-for-info-dax-functions.md)]
+
+[!INCLUDE[enum-objecttype](includes/enum-objecttype.md)]
