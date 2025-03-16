@@ -71,13 +71,13 @@ EVALUATE
 	)
 ```
 
-This DAX query returns a table with only the specified columns and rows meeting the filter condition with a DAX formula.
+This DAX query returns a table with only the specified columns.
 
 :::image type="content" source="media/info-view-measures-function-dax/dax-query-example-2.png" alt-text="Screenshot showing the output of INFO.VIEW.MEASURES() with selected columns in DAX query view." lightbox="media/info-view-measures-function-dax/dax-query-example-2.png":::
 
 ## Example 3 - calculated table with SELECTCOLUMNS
 
-Either of the above examples work in a calculated table when the EVALUATE and ORDER BY keywords are removed and a table name added. Here is example 2 in a calculated table:
+Either of the above examples work in a calculated table when the EVALUATE keyword is removed and a table name added. Here is example 2 in a calculated table:
 
 ```dax
 Measures in this semantic model = 
