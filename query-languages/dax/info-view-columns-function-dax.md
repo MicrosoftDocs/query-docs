@@ -156,5 +156,3 @@ EVALUATE
 		"Number of text columns", [Number of text columns]
 	)
 ```
-
-:::image type="content" source="media/info-view-tables-function-dax/measure-example-4-dax-query.png" alt-text="Screenshot showing the output of INFO.VIEW.TABLES() with a measure then used in a DAX query in DAX query view." lightbox="media/info-view-tables-function-dax/measure-example-4-dax-query.png":::
