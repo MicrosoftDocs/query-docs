@@ -70,7 +70,7 @@ EVALUATE
 
 This DAX query returns a table with only the specified columns.
 
-:::image type="content" source="media/info-view-measures-function-dax/dax-query-example-2.png" alt-text="Screenshot showing the output of INFO.VIEW.MEASURES() with selected columns in DAX query view." lightbox="media/info-view-measures-function-dax/dax-query-example-2.png":::
+:::image type="content" source="media/info-view-relationships-function-dax/dax-query-example-2.png" alt-text="Screenshot showing the output of INFO.VIEW.RELATIONSHIPS() with selected columns in DAX query view." lightbox="media/info-view-relationships-function-dax/dax-query-example-2.png":::
 
 ## Example 3 - calculated table with SELECTCOLUMNS
 
@@ -88,7 +88,7 @@ This calculated table shows the same information as the DAX query in example 2 i
 
 ## Example 4 - measure
 
-The following measure can be added to count the number of text columns in a semantic model:
+The following measure can be added to count the number of relationships in a semantic model:
 
 ```dax
 Number of relationships = 
@@ -98,7 +98,7 @@ This will show a scalar value with the number of relationships in my model.
 
 This can be shown in a visual:
 
-:::image type="content" source="media/info-view-measures-function-dax/measure-example-4-visuals.png" alt-text="Screenshot showing the output of INFO.VIEW.MEASURES() with a measure then used in report visuals." lightbox="media/info-view-measures-function-dax/measure-example-4-visuals.png":::
+:::image type="content" source="media/info-view-relationships-function-dax/measure-example-4-visuals.png" alt-text="Screenshot showing the output of INFO.VIEW.RELATIONSHIPS() with a measure then used in report visuals." lightbox="media/info-view-relationships-function-dax/measure-example-4-visuals.png":::
 
 Or a DAX query in [DAX query view](/power-bi/transform-model/dax-query-view): 
 
@@ -112,4 +112,4 @@ EVALUATE
     )
 ```
 
-:::image type="content" source="media/info-view-measures-function-dax/measure-example-4-dax-query.png" alt-text="Screenshot showing the output of INFO.VIEW.MEASURES() with a measure then used in a DAX query in DAX query view." lightbox="media/info-view-measures-function-dax/measure-example-4-dax-query.png":::
+:::image type="content" source="media/info-view-relationships-function-dax/measure-example-4-dax-query.png" alt-text="Screenshot showing the output of INFO.VIEW.RELATIONSHIPS() with a measure then used in a DAX query in DAX query view." lightbox="media/info-view-relationships-function-dax/measure-example-4-dax-query.png":::
