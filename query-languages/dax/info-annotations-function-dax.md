@@ -15,7 +15,7 @@ Returns a table with information about each column in the semantic model, such a
 INFO.ANNOTATIONS([<Restriction name>, <Restriction value>], ...)
 ```
 
-[!INCLUDE[parameters-for-info-dax-functions](parameters-for-info-dax-functions.md)]
+[!INCLUDE[parameters-for-info-dax-functions](includes/parameters-for-info-dax-functions.md)]
 
 ## Return value
 
@@ -34,9 +34,9 @@ A table with the following columns:
 
 Can only be ran by users with write permission on the semantic model and not when live connected to the semantic model in Power BI Desktop. This function can be used in DAX queries, and can't be used in calculations.
 
-[!INCLUDE[enum-for-info-dax-functions](enum-for-info-dax-functions.md)]
+[!INCLUDE[enum-for-info-dax-functions](includes/enum-for-info-dax-functions.md)]
 
-[!INCLUDE[enum-objecttype](enum-objecttype.md)]
+[!INCLUDE[enum-objecttype](includes/enum-objecttype.md)]
 
 ## Example 1 - DAX query
 
