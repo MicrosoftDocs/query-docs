@@ -24,8 +24,8 @@ A table with the following columns:
 | [ID] | The unique ID for each table in this semantic model as an integer. |
 | [Name] | The name of each table in this semantic model as a string. |
 | [Model] | The ID of the table's semantic model as a GUID. |
-| [DataCategory] | The data category of each tablein this semantic model  as a string. |
-| [Description] | The description of each tablein this semantic model  as a string. |
+| [DataCategory] | The data category of each table in this semantic model  as a string. |
+| [Description] | The description of each table in this semantic model  as a string. |
 | [IsHidden] | The hidden state of each table in this semantic model as TRUE or FALSE. |
 | [StorageMode] | The storage mode of each table in this semantic model as a string. |
 | [TableStorage] | The name and unique ID of each table in this semantic model as a string. |
