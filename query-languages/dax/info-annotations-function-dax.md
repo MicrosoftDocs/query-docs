@@ -154,6 +154,6 @@ EVALUATE
 
 This DAX query returns a table with only the specified columns and joining to other INFO DAX functions and the enumeration table.
 
-[!INCLUDE[enum-for-info-dax-functions](includes/enum-title-for-info-dax-functions.md)]
+[!INCLUDE[enum-title-for-info-dax-functions](includes/enum-title-for-info-dax-functions.md)]
 
 [!INCLUDE[enum-objecttype](includes/enum-objecttype.md)]
