@@ -7,7 +7,7 @@ author: DataZoeMS
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Returns a table with information about each relationship in the semantic model, such as name, cardinality, and cross-filtering behavior. This information helps you understand the model and to self-document the model when used in calculated tables. 
+Returns a table with information about each [relationship](/power-bi/transform-model/desktop-create-and-manage-relationships) in the semantic model, such as name, cardinality, and cross-filtering behavior. This information helps you understand the model and to self-document the model when used in calculated tables. 
 
 ## Syntax
 
@@ -27,7 +27,7 @@ A table with the following columns:
 | [Model] | The relationship's semantic model ID, usually a GUID. |
 | [IsActive] | The is active property of each relationship in this semantic model as True or False. |
 | [CrossFilteringBehavior] | The cross-filter behavior or direction of each relationship in this semantic model as a string. |
-| [RelyOnReferentialIntegrity] | The rely on referential integrity property of each relationship in this semantic model as a string. Also called assume referential integrity in the relationship editor, as it assumes all rows in the column in the many table have a match to a row in the one side table. |
+| [RelyOnReferentialIntegrity] | The rely on referential integrity property of each relationship in this semantic model as a string. Also called [assume referential integrity](/power-bi/connect-data/desktop-assume-referential-integrity) in the relationship editor, as it assumes all rows in the column in the many table have a match to a row in the one side table. |
 | [FromTable] | The from table name of each relationship in this semantic model as a string. |
 | [FromColumn] | The from column name of each relationship in this semantic model as a string. |
 | [FromCardinality] | The from column cardinality of each relationship in this semantic model as a string. |
