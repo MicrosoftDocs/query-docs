@@ -322,6 +322,8 @@ items:
               href: info-view-relationships-function-dax.md
             - name: INFO.VIEW.TABLES
               href: info-view-tables-function-dax.md
+            - name: INFO.ANNOTATIONS
+              href: info-annotations-function-dax.md
         - name: Information functions
           items: 
             - name: Information functions overview
