@@ -15,18 +15,7 @@ Returns a table with information about each column in the semantic model, such a
 INFO.ANNOTATIONS([<Restriction name>, <Restriction value>], ...)
 ```
 
-## Parameters
-
-Parameters are optional for this DAX function. When parameters are used, both must be given. More than one pair of parameters is allowed.
-
-| Term | Definition |
-|---|---|
-| Restriction Name | Name of the restriction used to filter the results. |
-| Restriction Value | Value used to filter the results of the restriction. |
-
-## Restrictions
-
-Typically, all columns of the DAX function results can be used as a restriction. Addtional restrictions may also be allowed.
+[!INCLUDE[parameters-for-info-dax-functions](parameters for info-dax-functions.md)]
 
 ## Return value
 
