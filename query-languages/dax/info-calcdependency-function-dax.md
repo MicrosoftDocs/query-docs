@@ -28,7 +28,7 @@ A table with the following columns:
 | [TABLE] | The object's table name. |
 | [OBJECT] | The name of the object. |
 | [EXPRESSION] | The DAX formula of the object. |
-| [REFERENCED_OBJECT_TYPE] | The type of object this object references. |
+| [REFERENCED_OBJECT_TYPE] | The type of object this object references. The "Object" is dependent on this object. |
 | [REFERENCED_TABLE] | The referenced object's table name. |
 | [REFERENCED_OBJECT] | The referenced object's name. | 
 | [REFERENCED_EXPRESSION] | The refrenced object's DAX formula. |
