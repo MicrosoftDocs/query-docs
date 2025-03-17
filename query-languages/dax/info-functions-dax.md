@@ -91,6 +91,10 @@ Here is the list of INFO functions. Some work only on specific compat levels and
 
 | [Function]                                    | [Description]                                                                                                                                   |
 |-----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| INFO.VIEW.COLUMNS                             | Returns a list of all columns in the current model. Can use in calculations, including calculated tables.                                       |
+| INFO.VIEW.MEASURES                            | Returns a list of all measures in the current model. Can use in calculations, including calculated tables.                                      |
+| INFO.VIEW.RELATIONSHIPS                       | Returns a list of all relationships in the current model. Can use in calculations, including calculated tables.                                 |
+| INFO.VIEW.TABLES                              | Returns a list of all tables in the current model. Can use in calculations, including calculated tables.                                        |
 | INFO.ALTERNATEOFDEFINITIONS                   |                                                                                                                                                 |
 | INFO.ANNOTATIONS                              | Returns a list of all annotations in the current model with columns matching the schema rowset for annotation objects.                          |
 | INFO.ATTRIBUTEHIERARCHIES                     | Represents the TMSCHEMA_ATTRIBUTE_HIERARCHIES DMV query function.                                                                               |
@@ -155,7 +159,3 @@ Here is the list of INFO functions. Some work only on specific compat levels and
 | INFO.TABLES                                   | Returns a list of all tables in the current model with columns matching the schema rowset for table objects.                                    |
 | INFO.TABLESTORAGES                            | Returns a list of all table storages in the current model with columns matching the schema rowset for table storage objects.                    |
 | INFO.VARIATIONS                               | Returns a list of all variations in the current model with columns matching the schema rowset for variations objects.                           |
-| INFO.VIEW.COLUMNS                             | Returns a list of all columns in the current model.                                                                                             |
-| INFO.VIEW.MEASURES                            | Returns a list of all measures in the current model.                                                                                            |
-| INFO.VIEW.RELATIONSHIPS                       | Returns a list of all relationships in the current model.                                                                                       |
-| INFO.VIEW.TABLES                              | Returns a list of all tables in the current model.                                                                                              |
