@@ -21,6 +21,8 @@ The DAX function reference provides detailed information including syntax, param
 
 [Financial functions](financial-functions-dax.md) - These functions are used in formulas that perform financial calculations, such as net present value and rate of return.
 
+[INFO functions](info-functions-dax.md) - These functions return metadata about your semantic model, such as the tables, columns, relationships, and calculation DAX formulas. They can help you understand and document the model. They are based on the library of [Dynamic Management Views (DMVs) in Analysis Services](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services), which have been modified to work as DAX functions.
+
 [Information functions](information-functions-dax.md) - These functions look at a table or column provided as an argument to another function and returns whether the value matches the expected type. For example, the ISERROR function returns `TRUE` if the value you reference contains an error.
 
 [Logical functions](logical-functions-dax.md) - These functions return information about values in an expression. For example, the `TRUE` function lets you know whether an expression that you are evaluating returns a `TRUE` value.
