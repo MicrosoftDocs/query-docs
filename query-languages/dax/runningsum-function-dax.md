@@ -42,6 +42,8 @@ This function can be used in visual calculations only.
 
 The `axis`, `blanks` and `reset` parameters can be omitted.
 
+In the case when the value of `reset` is absolute (i.e., a positive integer, `HIGHESTPARENT` or a field reference), at or above the target level in the hierarchy, the calculation resets for each individual element. That is, the function is evaluated within a partition containing only that single element.
+
 ## Example
 
 Given a table that summarizes the total sales for each product category and calendar year, the following DAX query adds a column with the total sales for that category up to a given year.
