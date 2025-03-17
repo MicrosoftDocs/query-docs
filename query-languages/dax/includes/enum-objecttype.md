@@ -1,3 +1,11 @@
+---
+author: DataZoeMS
+ms.author: zoedouglas
+ms.date: 03/17/2025
+ms.topic: include
+ms.service: powerbi
+ms.subservice: dax
+---
 ### ObjectType
 
 | Number | Value                  |
