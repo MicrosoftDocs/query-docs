@@ -31,7 +31,7 @@ A table with the following columns:
 | [REFERENCED_OBJECT_TYPE] | The type of object this object references. The "Object" is dependent on this object. |
 | [REFERENCED_TABLE] | The referenced object's table name. |
 | [REFERENCED_OBJECT] | The referenced object's name. | 
-| [REFERENCED_EXPRESSION] | The refrenced object's DAX formula. |
+| [REFERENCED_EXPRESSION] | The referenced object's DAX formula. |
 | [QUERY] | The query, if specified as a restriction. |
 
 ## Remarks
