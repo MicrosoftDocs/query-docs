@@ -93,4 +93,4 @@ EVALUATE
 	ORDER BY [Table Storage Name]
 ```
 
-This DAX query returns a table with only the specified columns and joining to other INFO DAX functions and the variations table.
+This DAX query returns a table with only the specified columns and joining to other INFO DAX functions and the table storages table.
