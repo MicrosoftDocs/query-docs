@@ -27,9 +27,9 @@ A table with the following columns:
 | [TableID] | The ID of the table.|
 | [Name] | The name of each table in this semantic model as a string followed by the table ID in paranthesis. |
 | [Version] | |
-| [Settings] | |
-| [RIViolationCount]| |
-| [StorageFolderID]| |
+| [Settings] | This column is for internal use only. |
+| [RIViolationCount]| This is a deprecated column set to 0. |
+| [StorageFolderID]| The ID of the storage folder that contains the table storage. |
 
 
 ## Remarks
@@ -42,7 +42,7 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 
 ```dax
 EVALUATE
-	INFO.VARIATIONS()
+	INFO.TABLESTORAGES()
 ```
 
 This DAX query returns a table with all of the columns of this DAX function.
@@ -54,81 +54,43 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 ```dax
 EVALUATE
 	VAR _INFO =
-	INFO.TABLES()
+	INFO.TABLESTORAGES()
 
-	VAR _ModelModel = 
+	VAR _ModelTables = 
 		SELECTCOLUMNS(
-			INFO.MODEL(),
-			"ModelID", [ID],
-			"Model Name", [Name]
+			INFO.TABLES(),
+			"TableID", [ID],
+			"Table Name", [Name]
 		)
-	VAR _ModelTableStorage = 
+	VAR _ModelStorageFolders = 
 		SELECTCOLUMNS(
-			INFO.TABLESTORAGES(),
-			"TableStorageID", [ID],
-			"Table Storage Name", [Name]
+			INFO.STORAGEFOLDERS(),
+			"StorageFolderID", [ID],
+			"Storage Folder Path", [Path]
 		)
-	VAR _ModelRelationships = 
-		SELECTCOLUMNS(
-			INFO.DETAILROWSDEFINITIONS(),
-			"DefaultDetailRowsDefinitionID", [ID],
-			"Default Details Rows Definition Object ID", [ObjectID]
-		)
-	VAR _ModelRefreshPolicy = 
-		SELECTCOLUMNS(
-			INFO.CALCULATIONGROUPS(),
-			"CalculationGroupID", [ID],
-			"Calculation groups description", [Description]
-		)
-	
 
-	VAR _CombinedTable2 =
+	VAR _CombinedTable1 =
 	NATURALLEFTOUTERJOIN(
 		_INFO,
-		_ModelModel
+		_ModelTables
 	)
-	VAR _CombinedTable3 =
+	VAR _CombinedTable2 =
 	NATURALLEFTOUTERJOIN(
-		_CombinedTable2,
-		_ModelTableStorage
+		_CombinedTable1,
+		_ModelStorageFolders
 	)
 	
-	VAR _CombinedTable4 = 
-	NATURALLEFTOUTERJOIN(
-		_CombinedTable3,
-		_ModelRelationships
-	)
-	
-	VAR _CombinedTable5 = 
-	NATURALLEFTOUTERJOIN(
-		_CombinedTable4,
-		_ModelRefreshPolicy
-	)
-
 	RETURN
 		SELECTCOLUMNS(
-			_CombinedTable5,
-			"Model ID", [ModelID],
-			"Model Name", [Model Name],
-			"Table Name", [Name],
-			"Data Category", [DataCategory],
-			"Table Description", [Description],
-			"Is Hidden", [IsHidden],
-			"Table storage Name", [Table Storage Name],
-			"Modified Time", [ModifiedTime],
-			"Structure Modified Time", [StructureModifiedTime],
-			"System Flags", [SystemFlags],
-			"Show as variation only", [ShowAsVariationsOnly],
-			"Is Private", [IsPrivate],
-			"Alternate Source Precedence", [AlternateSourcePrecedence],
-			"Exclude from model refresh", [ExcludeFromModelRefresh],
-			"Lineage Tag", [LineageTag],
-			"Source lineage tag", [SourceLineageTag],
-			"Default Details Rows Definition Object ID", [Default Details Rows Definition Object ID],
-			"Calculation groups description", [Calculation groups description]
+			_CombinedTable2,
+			"Table Storage ID", [ID],
+			"Table Storage Name", [Name],
+			"Table Storage Version", [Version],
+            "Table Name", [Table Name],
+			"Storage folder Path", [Storage Folder Path]
 			)
 			
-	ORDER BY [Table Name]
+	ORDER BY [Table Storage Name]
 ```
 
 This DAX query returns a table with only the specified columns and joining to other INFO DAX functions and the variations table.
