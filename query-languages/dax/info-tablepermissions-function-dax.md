@@ -28,7 +28,7 @@ A table with the following columns:
 | [TableID] | The ID of the table on which this permission applies.|
 | [FilterExpression] | The filter expression in the permission. |
 | [ModifiedTime] | When the permission was last modified. |
-| [State] | The state of the permission |
+| [State] | The numerical repesentation of the state of the permission. |
 | [ErrorMessage] | Any error message with the permission.|
 | [MetadataPermission]| A numerical representation of the permission provided. 0 means no access control is enforced, while 1 means access is restricted and 2 means access is unrestricted |
 
@@ -65,11 +65,31 @@ EVALUATE
 	{2,"Access to the data is unrestricted"}
 	}
 	)
-
+    VAR StateEnum =
+    DATATABLE(
+    	"State",INTEGER,
+    	"StateName",STRING,
+    	{
+        	{1,"Ready"},
+        	{3,"NoData"},
+        	{4,"CalculationNeeded"},
+        	{5,"SemanticError"},
+        	{6,"EvaluationError"},
+        	{7,"DependencyError"},
+        	{8,"Incomplete"},
+        	{10,"ForceCalculationNeeded"}
+    	}
+    	)
 	VAR _CombinedTable =
 	NATURALLEFTOUTERJOIN(
 		_INFO,
 		MetadataPermissionEnum
+	)
+
+    VAR _CombinedTable2 =
+	NATURALLEFTOUTERJOIN(
+		_CombinedTable,
+		StateEnum
 	)
 
     VAR _ModelRoles = 
@@ -85,25 +105,25 @@ EVALUATE
 			"Table Name", [Name]
 		)
 
-	VAR _CombinedTable1 =
+	VAR _CombinedTable3 =
 	NATURALLEFTOUTERJOIN(
-		_CombinedTable,
+		_CombinedTable2,
 		_ModelRoles
 	)
-	VAR _CombinedTable2 =
+	VAR _CombinedTable4 =
 	NATURALLEFTOUTERJOIN(
-		_CombinedTable1,
+		_CombinedTable3,
 		_ModelTables
 	)
 	
 	RETURN
 	
 		SELECTCOLUMNS(
-			_CombinedTable2,
+			_CombinedTable4,
 			"Table Permission ID", [ID],
 			"Filter Expression", [FilterExpression],
 			"Modified Time", [ModifiedTime],
-            "State", [State],
+            "State Name", [StateName],
 			"Error Message", [ErrorMessage],
 			"Metadata permission description", [MetadataDescription],
 			"Role Name", [Role Name],
@@ -114,3 +134,7 @@ EVALUATE
 ```
 
 This DAX query returns a table with only the specified columns and joining to other INFO DAX functions and the table permissions table.
+
+[!INCLUDE[enum-title-for-info-dax-functions](includes/enum-title-for-info-dax-functions.md)]
+
+[!INCLUDE[enum-objectstate](includes/enum-objectstate.md)]
