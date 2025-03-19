@@ -6,7 +6,7 @@ title: "LOOKUP function (DAX) | Microsoft Docs"
 
 [!INCLUDE[applies-to-visual-calculations](includes/applies-to-visual-calculations.md)]
 
-Returns value from cell in visual matrix by absolute navigation. You can specify value as a filter for any axis on the visual matrix. Anything not specified is inferred from the context. If Lookup can’t result in single value, an error is returned.
+Returns the value from a cell in the visual matrix using absolute navigation. Filters can be provided for any axis on the visual matrix. Any omitted filters are inferred from the context. If no single value can be determined, an error is returned.
 
 ## Syntax
 
@@ -18,8 +18,8 @@ LOOKUP(<expression>, <colref>, <expression>[, <colref>, <expression>]...)
 
 |Term|Definition|
 |--------|--------------|
-|expression| The expression that we wants to get. |
-|colref|(Optional) The column to be filtered. For example, when we want [Category] = "Bikes", we put [Category] here.|
+|expression| The expression to evaluate. |
+|colref|(Optional) The column to be filtered.|
 |expression|(Optional) The value to filter. In above example, put "Bikes" here.|
 
 ## Return value
@@ -32,7 +32,7 @@ If multiple rows match the filters, an error is returned.
 
 ## Example 1
 
-In this example, LOOKUP retrieves the sum of sale for filters: [Category] = "Bikes".
+In this example, LOOKUP retrieves the sum of sales for the Bikes Category.
 The first argument could be a column or a scalar expression.
 
 ```dax
@@ -45,7 +45,7 @@ The screenshot below shows the matrix with two visual calculations.
 ![lookup example 1](media/dax-queries/dax-visualcalc-lookup.png)
 
 ## Example 2
-In this example, LOOKUP example 2retrieves the sum of sale for filters: [Fiscal Year] = "FY2018". Notice that quarter filter from row will be used if we don't specify it directly. Example 3 specify 2018 Q1 so it will lock down to specific row.
+In this example, the LookupExample2 visual calculation retrieves the sum of Sales for Fiscal Year FY2018. Notice that quarter filter from the row will be used since its not specified explicitly. LookupExample3 explicitly specifies the quarter so does not take into account the quarter on the row.
 
 ```dax
 LookupExample2 = LOOKUP([Sales Amount], [Fiscal Year], "FY2018")
