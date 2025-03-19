@@ -20,7 +20,7 @@ LOOKUP(<expression>, <colref>, <expression>[, <colref>, <expression>]...)
 |--------|--------------|
 |expression| The expression to evaluate. |
 |colref|(Optional) The column to be filtered.|
-|expression|(Optional) The value to filter. In above example, put "Bikes" here.|
+|expression|(Optional) The value to filter.|
 
 ## Return value
 
