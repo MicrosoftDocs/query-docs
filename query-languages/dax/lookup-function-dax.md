@@ -32,7 +32,7 @@ If multiple rows match the filters, an error is returned.
 
 ## Example 1
 
-In this example, LOOKUP retrieves the sum of sales for the Bikes Category.
+In this example, LOOKUP retrieves the sum of sales for Bikes Category.
 The first argument could be a column or a scalar expression.
 
 ```dax
