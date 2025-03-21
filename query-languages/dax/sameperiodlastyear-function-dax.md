@@ -45,16 +45,6 @@ The following sample formula creates a measure that calculates the previous year
 = CALCULATE(SUM(ResellerSales_USD[SalesAmount_USD]), SAMEPERIODLASTYEAR(DateTime[DateKey]))
 ```
 
-## Special behavior
-
-When the selection includes last two days of month, SAMEPERIODLASTYEAR will use "extension" semantics and will include the days till the end of month. For example, when Feb 27 and 28 of 2009 are included in the selection, SAMEPERIODLASTYEAR will return Feb 27 to 29 of 2008.
-
-This behavior only happens when last two days of month are included in the selection. If only Feb 27 is selected, it will go to Feb 27.
-
-```dax
-= SAMEPERIODLASTYEAR(DateTime[DateKey])
-```
-
 ## Related content
 
 [Time intelligence functions](time-intelligence-functions-dax.md)
