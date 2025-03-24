@@ -120,7 +120,7 @@ Here is the list of INFO functions. Some work only on specific compat levels and
 | INFO.EXPRESSIONS                              | Returns a list of all expressions in the current model with columns matching the schema rowset for expressions objects.                         |
 | INFO.EXTENDEDPROPERTIES                       | Returns a list of all extended properties in the current model with columns matching the schema rowset for extended properties objects.         |
 | INFO.FORMATSTRINGDEFINITIONS                  |                                                                                                                                                 |
-| INFO.FUNCTIONS                                | Returns information about the functions that are currently available for use in the DAX programming language.                                   |
+| INFO.FUNCTIONS                                | Returns information about the functions that are currently available for use in the DAX programming language. If the `origin` restriction is not specified, then it defaults to 3 or 4. |
 | INFO.GENERALSEGMENTMAPSEGMENTMETADATASTORAGES |                                                                                                                                                 |
 | INFO.GROUPBYCOLUMNS                           |                                                                                                                                                 |
 | INFO.HIERARCHIES                              | Represents the TMSCHEMA_HIERARCHIES DMV query function.                                                                                         |
