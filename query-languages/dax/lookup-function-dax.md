@@ -45,7 +45,7 @@ The screenshot below shows the matrix with two visual calculations.
 ![lookup example 1](media/dax-queries/dax-visualcalc-lookup.png)
 
 ## Example 2
-In this example, the LookupExample2 visual calculation retrieves the sum of Sales for Fiscal Year FY2018. Notice that quarter filter from the row will be used since its not specified explicitly. LookupExample3 explicitly specifies the quarter so does not take into account the quarter on the row.
+In this example, the **LookupExample2** visual calculation retrieves the sum of Sales for Fiscal Year **FY2018**. Notice that quarter filter from the row will be used since its not specified explicitly, resulting in no results being returned for **FY2019 Q1** to **FY2019 Q4** since the combination of **FY2018** and **FY2019 Q1** to **FY2019 Q4** does not exist. **LookupExample3** explicitly specifies the quarter so does not take into account the current quarter on the row.
 
 ```dax
 LookupExample2 = LOOKUP([Sales Amount], [Fiscal Year], "FY2018")

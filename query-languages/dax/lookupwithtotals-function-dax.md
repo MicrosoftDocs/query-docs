@@ -32,9 +32,7 @@ If multiple rows match the filters, an error is returned.
 
 ## Example 1
 
-In this example, LOOKUPWITHTOTALS retrieves the sum of sales for Fiscal Year 2018.
-The first argument could be a column or a scalar expression.
-Please note that in the example below, Lookupwithtotals retrieves values from FY2018 and disregards the quarter. On the other hand, Lookup applies filters for each quarter, resulting in row-specific changes 
+The **Lookupwithtotals** visual calculation retrieves values for **FY2018** and all quarters since no value for quarter was specified as an argument. On the other hand, the **Lookup** visual calculation takes into account the current context. Therefore, the results are different and the **Lookup** visual calculation returns the **Sales Amount** for **FY2018** for each quarter. This also explains why the results for the **Lookup** visual calculation are empty because there is no combination of **FY2019 Q1** to **FY2019 Q4** and **FY2018**.
 
 
 ```dax
@@ -48,7 +46,7 @@ The screenshot below shows the matrix with two visual calculations.
 ![lookupwithTotals example 1](media/dax-queries/dax-visualcalc-lookupwithtotals-example1.png)
 
 ## Example 2
-In this example, LookupWithTotalExample2 retrieves the sum of sales for Bikes Category. Notices that it get total grain for other dimension. In other words, it is not filtered. It's useful when we want to do comparison since lookupwithtoal result is locked to a certain value.
+In this example, **LookupWithTotalExample2** retrieves the sum of sales for Bikes Category. Notices that uses the total for other the dimensions since they were not specified. In other words, those dimensions are not filtered. It's useful when we want to do comparison since the result is locked to one value.
 
 ```dax
 LookupWithTotalExample2 = lookupWithTotals([Sales Amount], [Category], "Bikes")
