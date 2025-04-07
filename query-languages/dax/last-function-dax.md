@@ -32,7 +32,7 @@ The value of `column` from the last element of the axis.
 
 This function can only be used in a visual calculation.
 
-In the case when the value of `reset` is absolute (i.e., a positive integer, `HIGHESTPARENT` or a field reference), at or above the target level in the hierarchy, the calculation resets for each individual element. That is, the function is evaluated within a partition containing only that single element.
+If the value of `reset` is absolute (i.e., a positive integer, `HIGHESTPARENT` or a field reference) and the calculation is evaluated at or above the target level in the hierarchy, the calculation resets for each individual element. That is, the function is evaluated within a partition containing only that specific element.
 
 ## Example
 

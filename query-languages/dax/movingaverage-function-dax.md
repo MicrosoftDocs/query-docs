@@ -44,7 +44,7 @@ This function can be used in visual calculations only.
 
 The `includeCurrent`, `axis`, `blanks` and `reset` parameters can be omitted.
 
-In the case when the value of `reset` is absolute (i.e., a positive integer, `HIGHESTPARENT` or a field reference), at or above the target level in the hierarchy, the calculation resets for each individual element. That is, the function is evaluated within a partition containing only that single element.
+If the value of `reset` is absolute (i.e., a positive integer, `HIGHESTPARENT` or a field reference) and the calculation is evaluated at or above the target level in the hierarchy, the calculation resets for each individual element. That is, the function is evaluated within a partition containing only that specific element.
 
 ## Example 1
 
