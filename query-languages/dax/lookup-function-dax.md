@@ -6,7 +6,7 @@ title: "LOOKUP function (DAX) | Microsoft Docs"
 
 [!INCLUDE[applies-to-visual-calculations](includes/applies-to-visual-calculations.md)]
 
-Returns the value from a cell in the visual matrix using absolute navigation. Filters can be provided for any axis on the visual matrix. Any omitted filters are inferred from the context. If no single value can be determined, an error is returned.
+Returns the value or evaluate expression from the visual matrix using absolute navigation. Filters can be provided for any axis on the visual matrix. Any omitted filters are inferred from the context. If no single value can be determined, an error is returned.
 
 ## Syntax
 
