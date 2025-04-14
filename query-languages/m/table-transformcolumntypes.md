@@ -21,6 +21,8 @@ Returns a table by applying the transform operations to the specified columns us
 
 The type value in the `typeTransformations` parameter can be `any`, all of the `number` types, `text`, all of the `date`, `time`, `datetime`, `datetimezone`, and `duration` types, `logical`, or `binary`. The `list`, `record`, `table`, or `function` types aren't valid for this parameter.
 
+For each column listed in `typeTransformations`, the ".From" method corresponding to the specified type value is normally used to perform the transformation. For example, if a `Currency.Type` type value is given for a column, the transformation function `Currency.From` is applied to each value in that column.
+
 ## Example 1
 
 Transform the number values in the first column to text values.
