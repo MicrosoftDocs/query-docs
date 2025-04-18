@@ -2,7 +2,7 @@
 title: M Language types 
 description: Describes using types in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 1/29/2025
+ms.date: 4/18/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-specification
 ---
@@ -397,6 +397,12 @@ Type.FunctionReturn(
         type function (x as number, optional y as text) as number) 
   // type number 
 ```
+
+## Subtype Claims
+An M implementation may optionally allow type values to be annotated with a _subtype claim_. From the mashup engine's perspective, subtype claims are simply informational annotations. They are not validated by mashup engine nor do they affect the mashup engine's behavior.
+
+This specification does not define a mechanism allowing users to arbitrarily set subtype claims. However, the standard library includes a number of predefined type values that are already annotated with a subtype claim. For example, `Int64.Type` is the equivalent of `type number` with the addition of the subtype claim "Int64.Type".
+
 
 ## Related content
 
