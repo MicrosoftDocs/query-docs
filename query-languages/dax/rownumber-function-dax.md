@@ -54,6 +54,8 @@ If the columns specified within `orderBy` and `partitionBy` cannot uniquely iden
 
 `reset` can be used in visual calculations only, and cannot be used in combination with `orderBy` or `partitionBy`. If `reset` is present, `axis` can be specified but `relation` cannot.
 
+If the value of `reset` is absolute (i.e., a positive integer, `HIGHESTPARENT` or a field reference) and the calculation is evaluated at or above the target level in the hierarchy, the calculation resets for each individual element. That is, the function is evaluated within a partition containing only that specific element.
+
 ## Example 1 - calculated column
 
 The following DAX query:
