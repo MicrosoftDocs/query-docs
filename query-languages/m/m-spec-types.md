@@ -77,7 +77,6 @@ In several cases, a primitive type can alternately be written using a custom typ
 
 Otherwise, M makes no guarantee that two equivalently-defined types will evaluate to the same value. For example, in `type [A = text] = type [A = text]`, the two type expressions may or may not to evaluate to the same value.
 
-
 The ascribed type of a value is obtained using the standard library function [Value.Type](value-type.md), as shown in the following examples:
 
 ```powerquery-m
