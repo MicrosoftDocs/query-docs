@@ -2,7 +2,7 @@
 title: M Language types 
 description: Describes using types in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 4/18/2025
+ms.date: 4/23/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-specification
 ---
@@ -70,6 +70,13 @@ Similarly, the following example defines a custom type that classifies records w
 ```powerquery-m
 type [ X = number, Y = number ]
 ```
+
+Multiple expressions defining the same primitive type always evaluate to the same value. For example, in `type number = type number`, both type expressions evaluate to the same value.
+
+In several cases, a primitive type can alternately be written using a custom type-styled `type-expression`. Per the preceding rule, such a type expression will evaluate to the same value as would the respective primitive type keyword. For example, `type { any }` evaluates to the same type value as `type list`.
+
+Otherwise, M makes no guarantee that two equivalently-defined types will evaluate to the same value. For example, in `type [A = text] = type [A = text]`, the two type expressions may or may not to evaluate to the same value.
+
 
 The ascribed type of a value is obtained using the standard library function [Value.Type](value-type.md), as shown in the following examples:
 
@@ -359,10 +366,16 @@ Value.Type( Value.ReplaceType( {1}, type {number} )
 // type {number}
 ```
 
-## Type equivalence and compatibility
+## Type equivalence
+Type facets have no effect on type equality comparisons.
 
-Type equivalence is not defined in M. An M implementation may optionally choose to use its own rules to perform equality comparisons between type values. Comparing two type values for equality should evaluate to `true` if they are considered identical by the implementation, and `false` otherwise. In either case, the response returned must be consistent if the same two values are repeatedly compared. Note that within a given implementation, comparing some identical type values (such as `(type text) = (type text)`) may return `true`, while comparing others (such as `(type [a = text]) = (type [a = text])`) may not.
+Two nullable types are equal if their non-nullable types (i.e. the values returned by `Type.NonNullable`) are equal.
 
+A type value is equal to itself.
+
+Otherwise, type equivalence is not defined in M. An M implementation may optionally choose to use its own rules to perform equality comparisons between type values. Comparing two type values for equality should evaluate to `true` if they are considered identical by the implementation, and `false` if not. In either case, the response returned must be consistent if the same two values are repeatedly compared. 
+
+## Type compatibility
 Compatibility between a given type and either a primitive type or a nullable primitive type can be determined using the library function `Type.Is`, which accepts an arbitrary type value as its first argument and a primitive or nullable primitive type value as its second argument:
 
 ```powerquery-m
@@ -397,12 +410,6 @@ Type.FunctionReturn(
         type function (x as number, optional y as text) as number) 
   // type number 
 ```
-
-## Subtype Claims
-An M implementation may optionally allow type values to be annotated with a _subtype claim_. From the mashup engine's perspective, subtype claims are simply informational annotations. They are not validated by mashup engine nor do they affect the mashup engine's behavior.
-
-This specification does not define a mechanism allowing users to arbitrarily set subtype claims. However, the standard library includes a number of predefined type values that are already annotated with a subtype claim. For example, `Int64.Type` is the equivalent of `type number` with the addition of the subtype claim "Int64.Type".
-
 
 ## Related content
 
