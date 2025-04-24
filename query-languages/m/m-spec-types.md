@@ -77,6 +77,7 @@ In several cases, a primitive type can alternately be written using a custom typ
 
 Otherwise, M makes no guarantee that two equivalently-defined types will evaluate to the same value. For example, in `type [A = text] = type [A = text]`, the two type expressions may or may not to evaluate to the same value.
 
+
 The ascribed type of a value is obtained using the standard library function [Value.Type](value-type.md), as shown in the following examples:
 
 ```powerquery-m
@@ -372,7 +373,7 @@ Two nullable types are equal if their non-nullable types (i.e. the values return
 
 A type value is equal to itself.
 
-Otherwise, type equivalence is not defined in M. An M implementation may optionally choose to use its own rules to perform equality comparisons between type values. Comparing two type values for equality should evaluate to `true` if they are considered identical by the implementation, and `false` if not. In either case, the response returned must be consistent if the same two values are repeatedly compared. 
+Otherwise, type equivalence is not defined in M. An M implementation may optionally choose to augment the above with its own rules for performing equality comparisons between type values. Comparing two type values for equality should evaluate to `true` if they are considered identical by the implementation, and `false` if not. In either case, the response returned must be consistent if the same two values are repeatedly compared. 
 
 ## Type compatibility
 Compatibility between a given type and either a primitive type or a nullable primitive type can be determined using the library function `Type.Is`, which accepts an arbitrary type value as its first argument and a primitive or nullable primitive type value as its second argument:
