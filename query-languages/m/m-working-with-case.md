@@ -469,7 +469,7 @@ In this case, it might be more convenient to convert the text to a consistent ca
 
 ## Power BI Desktop normalization
 
-Power Query M is case sensitive and distinguishes between different capitalizations of the same text. For example, "Foo", "foo", and "FOO" are treated as different. However, when the data is loaded into Power BI Desktop, the text values are normalized, meaning Power BI Desktop treats them as the same value regardless of their capitalization. Therefore, if you need to maintain case sensitivity in your data, you should handle the data in Power Query before loading the data to Power BI Desktop.
+Power Query M is case sensitive and distinguishes between different capitalizations of the same text. For example, "Foo", "foo", and "FOO" are treated as different. However, when the data is loaded into Power BI Desktop, the text values are normalized, meaning Power BI Desktop treats them as the same value regardless of their capitalization. Therefore, if you need to transform data while maintaining case sensitivity in your data, you should handle and data transformation in Power Query before loading the data to Power BI Desktop.
 
 For example, the following table in Power Query shows different cases in each row of the table.
 
@@ -479,4 +479,4 @@ When this table is loaded into Power BI Desktop, the text values become normaliz
 
 :::image type="content" source="media/table-loaded-power-bi-desktop.png" alt-text="Screenshot of the same table loaded in Power BI Desktop, with the case of each word normalized.":::
 
-In this case, the first instance of "foo" and the first instance of "too" determine the case of "foo" and "too" throughout the rest of the rows in the table.
+The first instance of "foo" and the first instance of "too" determine the case of "foo" and "too" throughout the rest of the rows in the Power BI Desktop table. In this example, all instances of "foo" are normalized to the value "Foo" and all instances of "too" are normalized to the value "TOO".
