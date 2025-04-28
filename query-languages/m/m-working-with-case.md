@@ -1,17 +1,17 @@
 ---
 description: "Learn more about: Capitalization in Power Query M"
-title: "Capitalization of data in Power Query M"
-ms.date: 2/7/2025
+title: "Capitalization of text in Power Query M"
+ms.date: 4/25/2025
 ms.subservice: m-background
 ---
 
 # Capitalization in Power Query M
 
-One of the problems of presenting data is that some data can be messy. One example is that names and places could exist in a database with random capitalization of their letters. This could cause a problem when manipulating the data because the Power Query M formula language is case-sensitive.
+One of the problems of presenting data is that some text can be messy. One example is that names and places could exist in a database with random capitalization of their letters. This could cause a problem when manipulating the data because the Power Query M formula language is case-sensitive.
 
 To clean data with random capitalization, Power Query M provides functions to change the case of the data to be examined. There are methods to convert data to lower case (abc), upper case (ABC), or proper case (Abc). In addition, Power Query M also provides several ways to ignore the data's case altogether.
 
-In this article, you'll learn how to change the capitalization of words in text, lists, and tables. In addition, this article also demonstrates various ways of ignoring case while manipulating data in text, lists, and tables.
+In this article, you learn how to change the capitalization of words in text, lists, and tables. In addition, this article also demonstrates various ways of ignoring case while manipulating data in text, lists, and tables. Also, sorting according to case is also described.
 
 ## Changing case in text
 
@@ -466,3 +466,17 @@ Although not common, you might have a mix of upper and lower case letters in tex
 1. Lower case is then sorted, with the maximum number of upper case letters to the right done first.
 
 In this case, it might be more convenient to convert the text to a consistent case before sorting.
+
+## Power BI Desktop normalization
+
+Power Query M is case sensitive and distinguishes between different capitalizations of the same text. For example, "Foo", "foo", and "FOO" are treated as different. However, when the data is loaded into Power BI Desktop, the text values are normalized, meaning Power BI Desktop treats them as the same value regardless of their capitalization. Therefore, if you need to maintain case sensitivity in your data, you should handle the data in Power Query before loading the data to Power BI Desktop.
+
+For example, the following table in Power Query shows different cases in each row of the table.
+
+:::image type="content" source="media/table-case-sensitive.png" alt-text="Screenshot of a table containing the text foo and too with various cases.":::
+
+When this table is loaded into Power BI Desktop, the text values become normalized, resulting in the following table.
+
+:::image type="content" source="media/table-loaded-power-bi-desktop.png" alt-text="Screenshot of the same table loaded in Power BI Desktop, with the case of each word normalized.":::
+
+In this case, the first instance of "foo" and the first instance of "too" determine the case of "foo" and "too" throughout the rest of the rows in the table.
