@@ -17,7 +17,7 @@ Returns a list of `date` values of size `count`, starting at `start`. The given 
 
 ## Example 1
 
-Create a list of 5 values starting from New Year's Eve (#date(2011, 12, 31)) incrementing by 1 day(#duration(1, 0, 0, 0)).
+Create a list of 5 values starting from New Year's Eve (#date(2011, 12, 31)) incrementing by 1 day (#duration(1, 0, 0, 0)).
 
 **Usage**
 
@@ -36,3 +36,7 @@ List.Dates(#date(2011, 12, 31), 5, #duration(1, 0, 0, 0))
     #date(2012, 1, 4)
 }
 ```
+
+## Related content
+
+[#duration](sharpduration.md)
