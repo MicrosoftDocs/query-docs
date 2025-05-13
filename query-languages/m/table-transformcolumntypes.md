@@ -17,11 +17,13 @@ Returns a table by applying the transform operations to the specified columns us
 
 * `table`: The input table to transform.
 * `typeTransformations`: The type transformations to apply. The format for a single transformation is { column name, type value }. A list of transformations can be used to change the types of more than one column at a time. If a column doesn't exist, an error is raised.
-* `culture`: (Optional) The culture to use when transforming the column types (for example, "en-US").
+* `culture`: (Optional) The culture to use when transforming the column types (for example, "en-US"). If a record is specified for `culture`, it can contain the following fields:
+  * `Culture`: The culture to use when transforming the column types (for example, "en-US").
+  * `MissingField`: If a column doesn't exist, an error is raised unless this field provides an alternative behavior (for example, [MissingField.UseNull](missingfield-type.md) or [MissingField.Ignore](missingfield-type.md)).
 
 The type value in the `typeTransformations` parameter can be `any`, all of the `number` types, `text`, all of the `date`, `time`, `datetime`, `datetimezone`, and `duration` types, `logical`, or `binary`. The `list`, `record`, `table`, or `function` types aren't valid for this parameter.
 
-For each column listed in `typeTransformations`, the ".From" method corresponding to the specified type value is normally used to perform the transformation. For example, if a `Currency.Type` type value is given for a column, the transformation function `Currency.From` is applied to each value in that column.
+For each column listed in `typeTransformations`, the ".From" method corresponding to the specified type value is normally used to perform the transformation. For example, if a [Currency.Type](type-conversion.md#commonly-used-types) type value is given for a column, the transformation function [Currency.From](currency-from.md) is applied to each value in that column.
 
 ## Example 1
 
