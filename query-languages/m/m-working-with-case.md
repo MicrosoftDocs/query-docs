@@ -1,17 +1,17 @@
 ---
 description: "Learn more about: Capitalization in Power Query M"
 title: "Capitalization of text in Power Query M"
-ms.date: 4/25/2025
+ms.date: 5/14/2025
 ms.subservice: m-background
 ---
 
 # Capitalization in Power Query M
 
-One of the problems of presenting data is that some text can be messy. One example is that names and places could exist in a database with random capitalization of their letters. This could cause a problem when manipulating the data because the Power Query M formula language is case-sensitive.
+Working with text data can sometimes be messy. For example, the name of the city Redmond might be represented in a database using different casings ("Redmond", "redmond", and "REDMOND"). This could cause a problem when transforming the data in Power Query because the Power Query M formula language is case-sensitive.
 
-To clean data with random capitalization, Power Query M provides functions to change the case of the data to be examined. There are methods to convert data to lower case (abc), upper case (ABC), or proper case (Abc). In addition, Power Query M also provides several ways to ignore the data's case altogether.
+Thankfully, Power Query M provides functions to clean and normalize the case of text data. There are functions to convert text to lower case (abc), upper case (ABC), or proper case (Abc). In addition, Power Query M also provides several ways to ignore case altogether.
 
-In this article, you learn how to change the capitalization of words in text, lists, and tables. In addition, this article also demonstrates various ways of ignoring case while manipulating data in text, lists, and tables. Also, sorting according to case is also described.
+In this article, you learn how to change the capitalization of words in text, lists, and tables. You also learn various ways of ignoring case while manipulating data in text, lists, and tables. In addition, you learn how to sort according to case.
 
 ## Changing case in text
 
