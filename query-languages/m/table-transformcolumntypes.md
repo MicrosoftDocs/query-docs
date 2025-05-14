@@ -133,4 +133,3 @@ in
 
 * [Types and type conversion](type-conversion.md)
 * [How culture affects text formatting](how-culture-affects-text-formatting.md)
-* [Types and type conversion](type-conversion.md)
