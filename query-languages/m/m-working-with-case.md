@@ -11,7 +11,7 @@ Working with text data can sometimes be messy. For example, the name of the city
 
 Thankfully, Power Query M provides functions to clean and normalize the case of text data. There are functions to convert text to lower case (abc), upper case (ABC), or proper case (Abc). In addition, Power Query M also provides several ways to ignore case altogether.
 
-In this article, you learn how to change the capitalization of words in text, lists, and tables. You also learn various ways of ignoring case while manipulating data in text, lists, and tables. In addition, you learn how to sort according to case.
+This article shows you how to change the capitalization of words in text, lists, and tables. It also describes various ways to ignore case while manipulating data in text, lists, and tables. In addition, this article discusses how to sort according to case.
 
 ## Changing case in text
 
@@ -328,7 +328,7 @@ This code produces the following output:
 
 :::image type="content" source="media/list-distinct.png" alt-text="Screenshot of the list created by the list distinct function while ignoring case.":::
 
-In the previous example, the output displays the case of the first unique item found in the list. So, although there are two apples (`ApPle` and `APPLE`), only the first example found is displayed.
+In the previous example, the output displays the case of the first unique item found in the list. So, although there are two apples (`ApPlE` and `APPLE`), only the first example found is displayed.
 
 The following example keeps only unique items while ignoring case, but also returns all lower case results.
 
@@ -469,7 +469,7 @@ In this case, it might be more convenient to convert the text to a consistent ca
 
 ## Power BI Desktop normalization
 
-Power Query M is case sensitive and distinguishes between different capitalizations of the same text. For example, "Foo", "foo", and "FOO" are treated as different. However, when the data is loaded into Power BI Desktop, the text values are normalized, meaning Power BI Desktop treats them as the same value regardless of their capitalization. Therefore, if you need to transform data while maintaining case sensitivity in your data, you should handle and data transformation in Power Query before loading the data to Power BI Desktop.
+Power Query M is case sensitive and distinguishes between different capitalizations of the same text. For example, "Foo", "foo", and "FOO" are treated as different. However, when the data is loaded into Power BI Desktop, the text values are normalized, meaning Power BI Desktop treats them as the same value regardless of their capitalization. Therefore, if you need to transform data while maintaining case sensitivity in your data, you should handle data transformation in Power Query before loading the data to Power BI Desktop.
 
 For example, the following table in Power Query shows different cases in each row of the table.
 
