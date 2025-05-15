@@ -33,6 +33,8 @@ The value of `column` from the next element of the axis.
 
 This function can only be used in a visual calculation.
 
+If the value of `reset` is absolute (i.e., a positive integer, `HIGHESTPARENT` or a field reference) and the calculation is evaluated at or above the target level in the hierarchy, the calculation resets for each individual element. That is, the function is evaluated within a partition containing only that specific element.
+
 ## Example
 
 The following visual calculation returns the sales amount of the next row on ROWS axis, that resets on the lowest parent. 
@@ -44,6 +46,7 @@ NextInternetSalesAmount = NEXT ( [Sum of SalesAmount], ROWS, LowestParent )
 The screenshot below shows the visual matrix and the visual calculation expression:
 
 ![DAX visual calculation](media/dax-queries/dax-visualcalc-next.png)
+
 ## Related content
 
 [FIRST](first-function-dax.md)

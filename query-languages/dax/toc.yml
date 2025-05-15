@@ -314,6 +314,22 @@ items:
               href: yielddisc-function-dax.md
             - name: YIELDMAT
               href: yieldmat-function-dax.md
+        - name: INFO functions
+          items: 
+            - name: INFO functions overview
+              href: info-functions-dax.md
+            - name: INFO.VIEW.COLUMNS
+              href: info-view-columns-function-dax.md
+            - name: INFO.VIEW.MEASURES
+              href: info-view-measures-function-dax.md
+            - name: INFO.VIEW.RELATIONSHIPS
+              href: info-view-relationships-function-dax.md
+            - name: INFO.VIEW.TABLES
+              href: info-view-tables-function-dax.md
+            - name: INFO.ANNOTATIONS
+              href: info-annotations-function-dax.md
+            - name: INFO.CALCDEPENDENCY
+              href: info-calcdependency-function-dax.md
         - name: Information functions
           items: 
             - name: Information functions overview

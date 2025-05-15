@@ -23,8 +23,7 @@ WINDOW ( from[, from_type], to[, to_type][, <relation> or <axis>][, <orderBy>][,
 |`from_type` |Modifies behavior of the `from` parameter. Possible values are ABS (absolute) and REL (relative). Default is REL.|
 |`to`|Same as `from`, but indicates the end of the window. The last row is included in the window.|
 |`to_type`|Same as `from_type`, but modifies the behavior of `to`.|
-|`relation`|(Optional) A table expression from which the output rows are returned. </br>If specified, all columns in `partitionBy` must come from it or a related table. </br>If omitted: </br>- `orderBy` must be explicitly specified.</br>- All `orderBy` and `partitionBy` expressions must be fully qualified column names and come from a single table. </br>- Defaults to ALLSELECTED() of all columns in `orderBy` and `partitionBy`.|
-|`axis`|(Optional) An axis in the visual shape. Available in visual calculations only, and replaces `relation`.
+|`relation`|(Optional) A table expression from which the output rows are returned. If used in visual calculations, this parameter accepts an axis in the visual shape. </br>If specified, all columns in `partitionBy` must come from it or a related table. </br>If omitted: </br>- `orderBy` must be explicitly specified.</br>- All `orderBy` and `partitionBy` expressions must be fully qualified column names and come from a single table. </br>- Defaults to ALLSELECTED() of all columns in `orderBy` and `partitionBy`.|
 |`orderBy`|(Optional) An ORDERBY() clause containing the expressions that define how each partition is sorted. </br>If omitted: </br>- `relation` must be explicitly specified. </br>- Defaults to ordering by every column in `relation` that is not already specified in `partitionBy`.|
 |`blanks`|(Optional) An enumeration that defines how to handle blank values when sorting the `relation` or `axis`. </br>The supported values are:<ul><li>`DEFAULT` (the default value), where the behavior for numerical values is blank values are ordered between zero and negative values. The behavior for strings is blank values are ordered before all strings, including empty strings.</li><li>`FIRST`, blanks are always ordered on the beginning, regardless of ascending or descending sorting order.</li><li>`LAST`, blanks are always ordered on the end, regardless of ascending or descending sorting order. </li></ul></br>Note, when the `blanks` parameter and blanks in the [ORDERBY()](orderby-function-dax.md) function on individual expressions are both specified, `blanks` on individual orderBy expression takes priority for the relevant orderBy expression, and orderBy expressions without `blanks` being specified will honor the `blanks` parameter on the parent function.|
 |`partitionBy`|(Optional) A [PARTITIONBY()](partitionby-function-dax.md) clause containing the columns that define how `relation` is partitioned. If omitted, `relation` is treated as a single partition.|
@@ -64,6 +63,8 @@ If WINDOW is used within a calculated column defined on the same table as `relat
 If the beginning of the window turns out be before the first row, then it’s set to the first row. Similarly, if the end of the window is after the last row of the partition, then it's set to the last row.
 
 `reset` can be used in visual calculations only, and cannot be used in combination with `orderBy` or `partitionBy`. If `reset` is present, `axis` can be specified but `relation` cannot.
+
+If the value of `reset` is absolute (i.e., a positive integer, `HIGHESTPARENT` or a field reference) and the calculation is evaluated at or above the target level in the hierarchy, the calculation resets for each individual element. That is, the function is evaluated within a partition containing only that specific element.
 
 ## Example 1 - measure
 
@@ -155,7 +156,7 @@ The following visual calculation DAX query:
 TotalSalesRunningSumByYear = SUMX(WINDOW(0, ABS, 0, REL, ROWS, HIGHESTPARENT), [SalesAmount])
 ```
 
-Returns the cumulative total sales by month, calculated along each year. The values 1 and -2 could be used instead of `HIGHESTPARENT`, with the same results.
+Returns the cumulative total sales by month, calculated along each year. The value 1 could be used instead of `HIGHESTPARENT`, with the same result.
 
 The screenshot below shows the visual matrix and the visual calculation expression:
 
@@ -170,6 +171,7 @@ TotalSalesRunningSumByQuarter = SUMX(WINDOW(0, ABS, 0, REL, , -1), [SalesAmount]
 ```
 
 Returns the cumulative total sales by month, calculated along each quarter.
+The value `LOWESTPARENT` could be used instead of -1, with the same result.
 
 ## Related content
 
