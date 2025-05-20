@@ -13,11 +13,11 @@ List.ContainsAll(<b>list</b> as list, <b>values</b> as list, optional <b>equatio
 
 ## About
 
-Indicates whether the list includes all of the values from another list. Returns `true` if all the values are found in the list, `false` otherwise.
+Indicates whether the list includes all the values from another list. Returns `true` if all the values are found in the list, `false` otherwise.
 
-`list`: The list to search.
-`values`: The list of values to search for in the first list.
-`equationCriteria`: (Optional) The comparer used to determine if the two values are equal.
+* `list`: The list to search.
+* `values`: The list of values to search for in the first list.
+* `equationCriteria`: (Optional) The comparer used to determine if the two values are equal.
 
 ## Example 1
 
@@ -75,7 +75,7 @@ in
     ContainsDates
 ```
 
-**Output
+**Output**
 
 `true`
 

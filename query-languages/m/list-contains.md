@@ -66,14 +66,14 @@ List.Contains({"Pears", "Bananas", "Rhubarb", "Peaches"},
 
 ## Example 4
 
-Determine if the list contains a date of April 8, 2022.
+Determine if the list contains a date April 8, 2022.
 
 **Usage**
 
 ```powerquery-m
 let
     Source = {#date(2024, 2, 23), #date(2023, 12, 2), #date(2022, 4, 8), #date(2021, 7, 6)},
-    ContainsDate = List.Contains(Source, #date(2022, 4, 8))
+    ContainsDate = List.Contains(Source, Date.From("4/8/2022"))
 in
     ContainsDate
 ```

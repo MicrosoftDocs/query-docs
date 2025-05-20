@@ -15,9 +15,9 @@ List.ContainsAny(<b>list</b> as list, <b>values</b> as list, optional <b>equatio
 
 Indicates whether the list contains any of the values from another list. Returns `true` if the values are found in the list, `false` otherwise.
 
-`list`: The list to search.
-`values`: The list of values to search for in the first list.
-`equationCriteria`: (Optional) The comparer used to determine if the two values are equal.
+* `list`: The list to search.
+* `values`: The list of values to search for in the first list.
+* `equationCriteria`: (Optional) The comparer used to determine if the two values are equal.
 
 ## Example 1
 
@@ -70,12 +70,12 @@ Determine if the list contains a date of either April 8, 2022 or January 12, 202
 ```powerquery-m
 let
     Source = {#date(2024, 2, 23), #date(2023, 12, 2), #date(2022, 4, 8), #date(2021, 7, 6)},
-    ContainsDates = List.ContainsAny(Source, {#date(2022, 4, 8), #date(2021, 1, 11)})
+    ContainsDates = List.ContainsAny(Source, {Date.From("Apr 8, 2022"), Date.From("Jan 11, 2021")})
 in
     ContainsDates
 ```
 
-**Output
+**Output**
 
 `true`
 
