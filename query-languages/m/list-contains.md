@@ -13,11 +13,15 @@ List.Contains(<b>list</b> as list, <b>value</b> as any, optional <b>equationCrit
 
 ## About
 
-Indicates whether the list `list` contains the value `value`. Returns true if value is found in the list, false otherwise. An optional equation criteria value, `equationCriteria`, can be specified to control equality testing.
+Indicates whether the list contains the specified value. Returns `true` if the value is found in the list, `false` otherwise.
+
+* `list`: The list to search.
+* `value`: The value to search for in the list.
+* `equationCriteria`: (Optional) The comparer used to determine if the two values are equal.
 
 ## Example 1
 
-Find if the list {1, 2, 3, 4, 5} contains 3.
+Determine if the list {1, 2, 3, 4, 5} contains 3.
 
 **Usage**
 
@@ -31,7 +35,7 @@ List.Contains({1, 2, 3, 4, 5}, 3)
 
 ## Example 2
 
-Find if the list {1, 2, 3, 4, 5} contains 6.
+Determine if the list {1, 2, 3, 4, 5} contains 6.
 
 **Usage**
 
@@ -45,7 +49,7 @@ List.Contains({1, 2, 3, 4, 5}, 6)
 
 ## Example 3
 
-Ignoring case, find if the list contains "rhubarb".
+Ignoring case, determine if the list contains "rhubarb".
 
 **Usage**
 
@@ -57,6 +61,24 @@ List.Contains({"Pears", "Bananas", "Rhubarb", "Peaches"},
 ```
 
 **Output**
+
+`true`
+
+## Example 4
+
+Determine if the list contains a date of April 8, 2022.
+
+**Usage**
+
+```powerquery-m
+let
+    Source = {#date(2024, 2, 23), #date(2023, 12, 2), #date(2022, 4, 8), #date(2021, 7, 6)},
+    ContainsDate = List.Contains(Source, #date(2022, 4, 8))
+in
+    ContainsDate
+```
+
+**Output
 
 `true`
 
