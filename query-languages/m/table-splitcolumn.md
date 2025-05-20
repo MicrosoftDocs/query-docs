@@ -17,7 +17,7 @@ Splits the specified column into a set of additional columns using the specified
 
 * **table**: The table containing the column to split.
 * **sourceColumn**: The name of the column to split.
-* **splitter**: The [splitter function](splitter-functions.md) used to split the column (for example, [Splitter.SplitTextByDelimiter](splitter-splittextbydelimiter.md) or [Splitter.SplitTextByPosition](splitter-splittextbyposition.md)).
+* **splitter**: The [splitter function](splitter-functions.md) used to split the column (for example, [Splitter.SplitTextByDelimiter](splitter-splittextbydelimiter.md) or [Splitter.SplitTextByPositions](splitter-splittextbypositions.md)).
 * **columnNamesOrNumber**: Either a list of new column names to create, or the number of new columns.
 * **default**: Overrides the value used when there aren't enough split values to fill all of the new columns. The default for this parameter is `null`.
 * **extraColumns**: Specifies what to do if there might be more split values than the number of new columns. You can pass an [ExtraValues.Type](extravalues-type.md) enumeration value to this parameter. The default is `ExtraValues.Ignore`.
