@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Date functions"
 title: "Date functions"
-ms.date: 03/29/2024
+ms.date: 6/28/2025
 ms.custom: "nonautomated-date"
 ---
 # Date functions
@@ -13,7 +13,7 @@ These functions create and manipulate the date component of date, datetime, and 
 |[Date.AddDays](date-adddays.md)|Returns a Date/DateTime/DateTimeZone value with the day portion incremented by the number of days provided. It also handles incrementing the month and year potions of the value as appropriate.|
 |[Date.AddMonths](date-addmonths.md)|Returns a DateTime value with the month portion incremented by n months.|
 |[Date.AddQuarters](date-addquarters.md)|Returns a Date/DateTime/DateTimeZone value incremented by the number of quarters provided. Each quarter is defined as a duration of three months. It also handles incrementing the year potion of the value as appropriate.|
-|[Date.AddWeeks](date-addweeks.md)|Returns a Date/DateTime/DateTimeZone value incremented by the number of weeks provided. Each week is defined as a duration of seven days. It also handles incrementing the month and year potions of the value as appropriate.|
+|[Date.AddWeeks](date-addweeks.md)|Returns a Date/DateTime/DateTimeZone value incremented by the number of weeks provided. Each week is defined as a duration of seven days. It also handles incrementing the month and year portions of the value as appropriate.|
 |[Date.AddYears](date-addyears.md)|Returns a DateTime value with the year portion incremented by n years.|
 |[Date.Day](date-day.md)|Returns the day for a DateTime value.|
 |[Date.DayOfWeek](date-dayofweek.md)|Returns a number (from 0 to 6) indicating the day of the week of the provided value.|
