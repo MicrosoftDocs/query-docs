@@ -222,7 +222,7 @@ in
 
 This code produces the following output:
 
-`TRUE`
+`true`
 
 The following example shows how to retrieve the initial position of the last occurrence of the word "the" in the sentence, regardless of case.
 
@@ -261,7 +261,7 @@ in
 
 This code produces the following output:
 
- `TRUE`
+ `true`
 
 The following examples check whether a list contains all the specified items in the second parameter (`value`), while ignoring case. If any one item isn't contained in the list, such as `cucumber` in the second example, the function returns FALSE.
 
@@ -278,7 +278,7 @@ in
 
 This code produces the following output:
 
- `TRUE`
+ `true`
 
 ```powerquery-m
 let
@@ -293,7 +293,7 @@ in
 
 This code produces the following output:
 
- `FALSE`
+ `false`
 
 The following example checks whether any of the items in the list are apples or pears, while ignoring case.
 
@@ -310,7 +310,7 @@ in
 
 This code produces the following output:
 
- `TRUE`
+ `true`
 
 The following example keeps only unique items, while ignoring case.
 
@@ -449,7 +449,8 @@ For example, the following sample has a mixture of all lower case, all upper cas
 
 ```powerquery-m
 let
-    Source = { "Alpha", "Beta", "Zulu", "ALPHA", "gamma", "alpha", "beta", "Gamma", "Sierra", "zulu", "GAMMA", "ZULU" },
+    Source = { "Alpha", "Beta", "Zulu", "ALPHA", "gamma", "alpha", 
+        "beta", "Gamma", "Sierra", "zulu", "GAMMA", "ZULU" },
     SortedList = List.Sort(Source, Order.Ascending)
 in
     SortedList
