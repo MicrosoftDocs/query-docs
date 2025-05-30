@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Capitalization in Power Query M"
 title: "Capitalization of text in Power Query M"
-ms.date: 5/22/2025
+ms.date: 5/30/2025
 ms.subservice: m-background
 ---
 
@@ -466,7 +466,7 @@ Although not common, you might have a mix of upper and lower case letters in tex
 1. If there is matching text, the text with the maximum number of upper case letters to the left is done next.
 1. Lower case is then sorted, with the maximum number of upper case letters to the right done first.
 
-In this case, it might be more convenient to convert the text to a consistent case before sorting.
+In any case, it might be more convenient to convert the text to a consistent case before sorting.
 
 ## Power BI Desktop normalization
 
