@@ -67,11 +67,14 @@ let
     ),
 
     // Format both datetime columns
-    FormatLocalNow = Table.TransformColumns(TableWithTimes, {{"LocalNow", each DateTime.ToText(_, "yyyy-MM-ddThh:mm:ss.fff")}}),
-    FormatFixedNow = Table.TransformColumns(FormatLocalNow, {{"FixedLocalNow", each DateTime.ToText(_, "yyyy-MM-ddThh:mm:ss.fff")}}),
+    FormatLocalNow = Table.TransformColumns(TableWithTimes, 
+        {{"LocalNow", each DateTime.ToText(_, "yyyy-MM-ddThh:mm:ss.fff")}}),
+    FormatFixedNow = Table.TransformColumns(FormatLocalNow, 
+        {{"FixedLocalNow", each DateTime.ToText(_, "yyyy-MM-ddThh:mm:ss.fff")}}),
 
     // Change the table types
-    FinalTable =  Table.TransformColumnTypes(FormatFixedNow, {{"Index", Int64.Type}, {"LocalNow", type text}, {"FixedLocalNow", type text}})
+    FinalTable =  Table.TransformColumnTypes(FormatFixedNow, {{"Index", Int64.Type}, 
+        {"LocalNow", type text}, {"FixedLocalNow", type text}})
 
 in
     FinalTable
@@ -99,11 +102,14 @@ let
     ),
 
     // Format both datetimezone columns
-    FormatLocalNow = Table.TransformColumns(TableWithTimes, {{"LocalNow", each DateTimeZone.ToText(_, "yyyy-MM-ddThh:mm:ss.fff:zzz")}}),
-    FormatFixedNow = Table.TransformColumns(FormatLocalNow, {{"FixedLocalNow", each DateTimeZone.ToText(_, "yyyy-MM-ddThh:mm:ss.fff:zzz")}}),
+    FormatLocalNow = Table.TransformColumns(TableWithTimes, 
+        {{"LocalNow", each DateTimeZone.ToText(_, "yyyy-MM-ddThh:mm:ss.fff:zzz")}}),
+    FormatFixedNow = Table.TransformColumns(FormatLocalNow, 
+        {{"FixedLocalNow", each DateTimeZone.ToText(_, "yyyy-MM-ddThh:mm:ss.fff:zzz")}}),
 
     //  Change the table types
-    FinalTable =  Table.TransformColumnTypes(FormatFixedNow, {{"Index", Int64.Type}, {"LocalNow", type text}, {"FixedLocalNow", type text}})
+    FinalTable =  Table.TransformColumnTypes(FormatFixedNow, 
+        {{"Index", Int64.Type}, {"LocalNow", type text}, {"FixedLocalNow", type text}})
 in
     FinalTable
 ```
@@ -138,8 +144,10 @@ let
     ),
 
     // Format both datetimezone columns
-    FormatLocalNow = Table.TransformColumns(TableWithTimes, {{"UtcNow", each DateTimeZone.ToText(_, "yyyy-MM-ddThh:mm:ss.fff:zzz")}}),
-    FormatFixedNow = Table.TransformColumns(FormatLocalNow, {{"FixedUtcNow", each DateTimeZone.ToText(_, "yyyy-MM-ddThh:mm:ss.fff:zzz")}}),
+    FormatLocalNow = Table.TransformColumns(TableWithTimes, 
+        {{"UtcNow", each DateTimeZone.ToText(_, "yyyy-MM-ddThh:mm:ss.fff:zzz")}}),
+    FormatFixedNow = Table.TransformColumns(FormatLocalNow, 
+        {{"FixedUtcNow", each DateTimeZone.ToText(_, "yyyy-MM-ddThh:mm:ss.fff:zzz")}}),
 
     //  Change the table types
     FinalTable =  Table.TransformColumnTypes(FormatFixedNow, {{"Index", Int64.Type}, {"UtcNow", type text}, {"FixedUtcNow", type text}})
