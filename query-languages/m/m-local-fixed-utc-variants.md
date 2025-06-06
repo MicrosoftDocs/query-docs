@@ -1,13 +1,13 @@
 ---
-description: "Learn more about: Local, fixed, and UTC variants of Power Query M time functions"
-title: "Local, fixed, and UTC variants of Power Query M time functions"
+description: "Learn more about: Local, fixed, and UTC variants of current time functions"
+title: "Local, fixed, and UTC variants of current time functions"
 ms.topic: conceptual
-ms.date: 6/4/2025
+ms.date: 6/6/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-background
 ---
 
-# Local, fixed, and UTC variants of Power Query M time functions
+# Local, fixed, and UTC variants of current time functions
 
 When you work with Power Query in tools like Excel and Power BI, handling date and time values accurately is essential&mdash;especially when your data transformations depend on the current time. Power Query offers various functions to retrieve the current date and time, including:
 
@@ -18,24 +18,24 @@ When you work with Power Query in tools like Excel and Power BI, handling date a
 * [DateTimeZone.UtcNow](datetimezone-utcnow.md)
 * [DateTimeZone.FixedUtcNow](datetimezone-fixedutcnow.md).
 
-At first glance, these functions might seem interchangeable. However, they differ in subtle but important ways. These differences include whether they return local or UTC time and whether the result is fixed or dynamic. They also include how the functions behave differently depending on whether you're running Power Query on the desktop or online.
+At first glance, these current time functions might seem interchangeable. However, they differ in subtle but important ways. These differences include whether they return local or UTC time and whether the result is fixed or dynamic. They also include how the functions behave differently depending on whether you're running Power Query on the desktop or online.
 
 This article explores the distinctions between these functions and clarifies when and why to use each one. In addition, it highlights a critical but often overlooked detail. Power Query Online always returns UTC time even when using a function labeled as "Local." Understanding these nuances can help you avoid unexpected results, especially when building time-sensitive reports or automating refreshes in apps such as Power BI service or Power Apps.
 
 ## Differences between functions
 
-The date and time function each have subtle but important differences. These functions vary in terms of time zone awareness, volatility (whether the value changes on refresh), and how they behave in different environments (desktop vs. online). The following table contains a breakdown of each function.
+Each of the current time functions have important differences. These functions vary in terms of time zone awareness, volatility (whether the value changes when called multiple times in the same query), and how they behave in different environments (desktop vs. online). The following table contains a breakdown of each function.
 
 | Function                  | Returns         | Volatility | Desktop behavior                    | Online behavior       | Typical use case                                      |
 |------------------------------|-----------------------------------------------|----------------|--------------------------------------------|--------------------------------------------------|-----------------------------------------------------------|
-| `DateTime.LocalNow`          | A `datetime` representing the current local time          | Dynamic&mdash;recalculates every time the query is refreshed       | Returns local machine time                 | Returns UTC time  | Quick local timestamp without time zone context          |
-| `DateTimeZone.LocalNow`      | A `datetimezone` value representing the current local time with time zone offset     | Dynamic&mdash;recalculates on each refresh        | Returns local time with offset             | Returns UTC time with `+00:00` offset            | Local time with time zone awareness                      |
-| `DateTime.FixedLocalNow`     | A `datetime` value representing the local time at the moment the query is loaded         | Fixed&mdash;value doesn't change on refresh unless the query is reloaded          | Captures local time at load                | Captures UTC time at load                        | Snapshot of local time without time zone                 |
-| `DateTimeZone.FixedLocalNow` | A `datetimezone` value representing the local time with offset at the moment the query is loaded     | Fixed&mdash;value doesn't update on refresh          | Captures local time with offset at load    | Captures UTC time with `+00:00` offset at load   | Snapshot of local time with time zone                    |
-| `DateTimeZone.UtcNow`        | A `datetimezone`  value representing the current UTC time     | Dynamic&mdash;updates on each refresh        | Returns current UTC time                   | Returns current UTC time                         | Consistent UTC timestamp for dynamic scenarios           |
-| `DateTimeZone.FixedUtcNow`   | A `datetimezone` value representing the UTC time at the moment the query is loaded      | Fixed&mdash;doesn't change on refresh          | Captures UTC time at load                  | Captures UTC time at load                        | Fixed UTC timestamp for logging or auditing              |
+| `DateTime.LocalNow`          | A `datetime` representing the current local time          | Dynamic&mdash;returns a new value each time it's invoked during query evaluation       | Returns local machine time                 | Returns UTC time  | Quick local timestamp without time zone context          |
+| `DateTimeZone.LocalNow`      | A `datetimezone` value representing the current local time with time zone offset     | Dynamic&mdash;returns a new value each time it's invoked during query evaluation       | Returns local time with offset             | Returns UTC time with `+00:00` offset            | Local time with time zone awareness                      |
+| `DateTime.FixedLocalNow`     | A `datetime` value representing the local time at the moment the query is loaded         | Fixed&mdash;returns the same value throughout a single query evaluation          | Captures local time at load                | Captures UTC time at load                        | Snapshot of local time without time zone                 |
+| `DateTimeZone.FixedLocalNow` | A `datetimezone` value representing the local time with offset at the moment the query is loaded     | Fixed&mdash;returns the same value throughout a single query evaluation          | Captures local time with offset at load    | Captures UTC time with `+00:00` offset at load   | Snapshot of local time with time zone                    |
+| `DateTimeZone.UtcNow`        | A `datetimezone`  value representing the current UTC time     | Dynamic&mdash;returns a new value each time it's invoked during query evaluation        | Returns current UTC time                   | Returns current UTC time                         | Consistent UTC timestamp for dynamic scenarios           |
+| `DateTimeZone.FixedUtcNow`   | A `datetimezone` value representing the UTC time at the moment the query is loaded      | Fixed&mdash;returns the same value throughout a single query evaluation          | Captures UTC time at load                  | Captures UTC time at load                        | Fixed UTC timestamp for logging or auditing              |
 
-In Power Query M, choosing between local time and UTC-based datetime functions is a critical design decision that affects the consistency, accuracy, and portability of your queries. Functions like `DateTime.LocalNow` and `DateTime.FixedLocalNow` are useful when your logic depends on the local system time, such as filtering for records that occurred "today" or generating timestamps for user-facing reports. These functions reflect the time zone of the environment in which the query is executed, making them suitable for Power BI Desktop scenarios where the local context is well-defined.
+In Power Query M, choosing between local time and UTC-based datetime functions is a critical design decision that affects the consistency, accuracy, and portability of your queries. Functions like `DateTime.LocalNow` and `DateTime.FixedLocalNow` are useful when your logic depends on the local system time, such as filtering for records that occurred "today" or generating timestamps for user-facing reports. These functions reflect the time zone of the environment in which the query is executed, making them suitable for Power Query Desktop scenarios where the local context is well-defined.
 
 However, in distributed or cloud-based environments like Power Query Online, these same functions return UTC time, not the actual local time of the user. This discrepancy can lead to subtle bugs or inconsistencies if your logic assumes a local time context. In contrast, `DateTimeZone.UtcNow` and `DateTimeZone.FixedUtcNow` provide a time-zone-neutral reference point that is consistent across environments and unaffected by daylight saving time or regional settings. These UTC-based functions are the preferred choice for scenarios involving data integration, logging, auditing, or any logic that must behave identically regardless of where or when the query runs.
 
@@ -163,9 +163,9 @@ The output of this example in Power Query Desktop and Power Query Online is:
 
 Choosing the right time function in Power Query depends on your specific use case, the environment in which your query runs (desktop vs. online), and whether you need a dynamic or fixed timestamp. Here are some best practices to help guide your decision:
 
-* **Be explicit about time zones**: Use the DateTimeZone functions instead of DateTime functions when time zone context matters. Use `DateTimeZone.UtcNow` or `DateTimeZone.FixedUtcNow` for consistency across environments, especially in cloud-based solutions like Power BI Service.
-* **Use fixed functions for repeatable results**: Use the fixed variants (such as `DateTimeZone.FixedUtcNow`) when you want the timestamp to remain constant across refreshes. This method is especially useful for logging, auditing, or capturing the time of data ingestion.
-* **Avoid local functions in Power Query Online**: Functions like `DateTime.LocalNow` and `DateTimeZone.LocalNow` return UTC time in cloud-based solutions like Power BI Service, which can lead to confusion or incorrect assumptions. If you need actual local time in the service, consider adjusting UTC manually using known offsets (although this adjustment can be brittle).
+* **Be explicit about time zones**: Use the DateTimeZone functions instead of DateTime functions when time zone context matters. Use `DateTimeZone.UtcNow` or `DateTimeZone.FixedUtcNow` for consistency across environments, especially in cloud-based solutions like Power BI service.
+* **Use fixed functions for repeatable results**: Use the fixed variants (such as `DateTimeZone.FixedUtcNow`) when you want the timestamp to remain constant across query evaluations. This method is especially useful for logging, auditing, or capturing the time of data ingestion.
+* **Avoid local functions in Power Query Online**: Functions like `DateTime.LocalNow` and `DateTimeZone.LocalNow` return UTC time in cloud-based solutions like Power BI service, which can lead to confusion or incorrect assumptions. If you need actual local time in the service, consider adjusting UTC manually using known offsets (although this adjustment can be brittle, for example, due to daylight savings time).
 * **Test in both desktop and online environments**: Always test your queries in both Power Query Desktop and Power Query Online if your logic depends on current time. This testing helps catch discrepancies early, especially for scheduled refresh scenarios.
 * **Document your time logic**: Clearly comment or document why a specific time function is used, especially if you're using a workaround for time zone handling. This information helps future collaborators understand the intent behind the logic.
 * **Use UTC for scheduled workflows**: For scheduled refreshes or automated pipelines, UTC is the safest and most predictable choice. It avoids ambiguity caused by daylight saving time or regional time zone shifts.
