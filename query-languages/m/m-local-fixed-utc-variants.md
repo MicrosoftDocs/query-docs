@@ -9,7 +9,7 @@ ms.subservice: m-background
 
 # Local, fixed, and UTC variants of current time functions
 
-When you work with Power Query in tools like Excel and Power BI, handling date and time values accurately is essential&mdash;especially when your data transformations depend on the current time. Power Query offers various functions to retrieve the current date and time, including:
+When you work with Power Query in tools like Excel and Power BI, handling date and time values accurately is essential&mdash;especially when your data transformations depend on the current time. Power Query offers various functions to retrieve the current date and time:
 
 * [DateTime.LocalNow](datetime-localnow.md)
 * [DateTimeZone.LocalNow](datetimezone-localnow.md)
@@ -17,8 +17,6 @@ When you work with Power Query in tools like Excel and Power BI, handling date a
 * [DateTimeZone.FixedLocalNow](datetimezone-fixedlocalnow.md)
 * [DateTimeZone.UtcNow](datetimezone-utcnow.md)
 * [DateTimeZone.FixedUtcNow](datetimezone-fixedutcnow.md).
-
-At first glance, these current time functions might seem interchangeable. However, they differ in subtle but important ways. These differences include whether they return local or UTC time and whether the result is fixed or dynamic. They also include how the functions behave differently depending on whether you're running Power Query on the desktop or online.
 
 This article explores the distinctions between these functions and clarifies when and why to use each one. In addition, it highlights a critical but often overlooked detail. Power Query Online always returns UTC time even when using a function labeled as "Local." Understanding these nuances can help you avoid unexpected results, especially when building time-sensitive reports or automating refreshes in apps such as Power BI service or Power Apps.
 
@@ -37,7 +35,7 @@ Each of the current time functions have important differences. These functions v
 
 In Power Query M, choosing between local time and UTC-based datetime functions is a critical design decision that affects the consistency, accuracy, and portability of your queries. Functions like `DateTime.LocalNow` and `DateTime.FixedLocalNow` are useful when your logic depends on the local system time, such as filtering for records that occurred "today" or generating timestamps for user-facing reports. These functions reflect the time zone of the environment in which the query is executed, making them suitable for Power Query Desktop scenarios where the local context is well-defined.
 
-However, in distributed or cloud-based environments like Power Query Online, these same functions return UTC time, not the actual local time of the user. This discrepancy can lead to subtle bugs or inconsistencies if your logic assumes a local time context. In contrast, `DateTimeZone.UtcNow` and `DateTimeZone.FixedUtcNow` provide a time-zone-neutral reference point that is consistent across environments and unaffected by daylight saving time or regional settings. These UTC-based functions are the preferred choice for scenarios involving data integration, logging, auditing, or any logic that must behave identically regardless of where or when the query runs.
+However, in distributed or cloud-based environments like Power Query Online, these same functions return UTC time, not the actual local time of the user. This discrepancy can lead to subtle inconsistencies if your logic assumes a local time context. In contrast, `DateTimeZone.UtcNow` and `DateTimeZone.FixedUtcNow` provide a time-zone-neutral reference point that is consistent across environments and unaffected by daylight saving time or regional settings. These UTC-based functions are the preferred choice for scenarios involving data integration, logging, auditing, or any logic that must behave identically regardless of where or when the query runs.
 
 ## Differences between the LocalNow and FixedLocalNow functions
 
@@ -84,7 +82,7 @@ The output of this example is:
 
 :::image type="content" source="media/localnow-vs-fixedlocalnow.png" alt-text="Screenshot of the table created by DateTime.LocalNow with dynamic dates and times and DateTime.FixedLocalNow with fixed dates and times.":::
 
-If you look at the output, you might notice that the initial dates and times in the first row don't match. Even though the `DateTime.LocalNow` function appears first in the code, the value returned for `DateTime.FixedLocalNow` shows a time that occurs before the `DateTime.LocalTime` time. Even though `DateTime.LocalNow` is listed first in the table construction, the order of evaluation in Power Query M isn't guaranteed to follow the order of fields in a table. Instead, Power Query uses a lazy evaluation model. Using this model means that fields are only evaluated when needed and the engine determines the evaluation order, not the order in your code. In this case, the `DateTime.FixedLocalNow` function is evaluated first, so the first time returned for this function occurs before the first time returned for `DateTime.LocalNow`.
+If you look at the output, you might notice that the initial dates and times in the first row don't match. Also, even though the `DateTime.LocalNow` function appears first in the code, the value returned for `DateTime.FixedLocalNow` shows a time that occurs before the `DateTime.LocalTime` time. Even though `DateTime.LocalNow` is listed first in the table construction, the order of evaluation in Power Query M isn't guaranteed to follow the order of fields in a table. Instead, Power Query uses a lazy evaluation model. Using this model means that fields are only evaluated when needed and the engine determines the evaluation order, not the order in your code. In this case, the `DateTime.FixedLocalNow` function is evaluated first, so the first time returned for this function occurs before the first time returned for `DateTime.LocalNow`.
 
 The following example shows how to produce similar results using `DateTimeZone.LocalNow` and `DateTimeZone.FixedLocalNow`.
 
@@ -150,12 +148,13 @@ let
         {{"FixedUtcNow", each DateTimeZone.ToText(_, "yyyy-MM-ddThh:mm:ss.fff:zzz")}}),
 
     //  Change the table types
-    FinalTable =  Table.TransformColumnTypes(FormatFixedNow, {{"Index", Int64.Type}, {"UtcNow", type text}, {"FixedUtcNow", type text}})
+    FinalTable =  Table.TransformColumnTypes(FormatFixedNow, 
+        {{"Index", Int64.Type}, {"UtcNow", type text}, {"FixedUtcNow", type text}})
 in
     FinalTable
 ```
 
-The output of this example in Power Query Desktop and Power Query Online is:
+The output of this example in both Power Query Desktop and Power Query Online is:
 
 :::image type="content" source="media/zone-utcnow-vs-fixedutcnow.png" alt-text="Screenshot of the table created by DateTimeZone.UtcNow with dynamic dates and times and DateTimeZone.FixedUtcNow with fixed dates and times.":::
 
@@ -165,7 +164,7 @@ Choosing the right time function in Power Query depends on your specific use cas
 
 * **Be explicit about time zones**: Use the DateTimeZone functions instead of DateTime functions when time zone context matters. Use `DateTimeZone.UtcNow` or `DateTimeZone.FixedUtcNow` for consistency across environments, especially in cloud-based solutions like Power BI service.
 * **Use fixed functions for repeatable results**: Use the fixed variants (such as `DateTimeZone.FixedUtcNow`) when you want the timestamp to remain constant across query evaluations. This method is especially useful for logging, auditing, or capturing the time of data ingestion.
-* **Avoid local functions in Power Query Online**: Functions like `DateTime.LocalNow` and `DateTimeZone.LocalNow` return UTC time in cloud-based solutions like Power BI service, which can lead to confusion or incorrect assumptions. If you need actual local time in the service, consider adjusting UTC manually using known offsets (although this adjustment can be brittle, for example, due to daylight savings time).
+* **Avoid local functions in Power Query Online**: Functions like `DateTime.LocalNow` and `DateTimeZone.LocalNow` return UTC time in cloud-based solutions like Power BI service, which can lead to confusion or incorrect assumptions. If you need actual local time in the service, consider adjusting UTC manually using known offsets (although this adjustment can be brittle, for example, due to daylight savings time or regional settings).
 * **Test in both desktop and online environments**: Always test your queries in both Power Query Desktop and Power Query Online if your logic depends on current time. This testing helps catch discrepancies early, especially for scheduled refresh scenarios.
 * **Document your time logic**: Clearly comment or document why a specific time function is used, especially if you're using a workaround for time zone handling. This information helps future collaborators understand the intent behind the logic.
 * **Use UTC for scheduled workflows**: For scheduled refreshes or automated pipelines, UTC is the safest and most predictable choice. It avoids ambiguity caused by daylight saving time or regional time zone shifts.
