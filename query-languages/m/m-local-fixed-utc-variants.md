@@ -158,6 +158,9 @@ The output of this example in both Power Query Desktop and Power Query Online is
 
 :::image type="content" source="media/zone-utcnow-vs-fixedutcnow.png" alt-text="Screenshot of the table created by DateTimeZone.UtcNow with dynamic dates and times and DateTimeZone.FixedUtcNow with fixed dates and times.":::
 
+> [!NOTE]
+>You can't get local time using any of the other date and time `Local` functions on Power Query Online. For example, using `DateTimeZone.ToLocal(DateTimeZone.UtcNow())` still returns UTC time on Power Query Online.  
+
 ## Best practices and recommendations
 
 Choosing the right time function in Power Query depends on your specific use case, the environment in which your query runs (desktop vs. online), and whether you need a dynamic or fixed timestamp. Here are some best practices to help guide your decision:
