@@ -158,8 +158,13 @@ The output of this example in both Power Query Desktop and Power Query Online is
 
 :::image type="content" source="media/zone-utcnow-vs-fixedutcnow.png" alt-text="Screenshot of the table created by DateTimeZone.UtcNow with dynamic dates and times and DateTimeZone.FixedUtcNow with fixed dates and times.":::
 
-> [!NOTE]
->You can't get local time using any of the other date and time `Local` functions on Power Query Online. For example, using `DateTimeZone.ToLocal(DateTimeZone.UtcNow())` still returns UTC time on Power Query Online.  
+## Affects on other functions
+
+Other Power Query M functions that depend on the current date and time can also be affected by how the local time is returned on either Power Query Desktop or Power Query Online. For example, if you use the [DateTimeZone.ToLocal](datetimezone-tolocal.md) function to convert UTC time to local time, it still returns the UTC time on Power Query Online.
+
+Another example is any function that can use the current system time as a parameter. These functions include [Date.Month](date-month.md), [Date.DayOfYear](date-dayofyear.md), [DateTime.IsInCurrentYear](datetime-isincurrenthour.md ), [DateTimeZone.ZoneHours](datetimezone-zonehours.md), or any other function that can evaluate the current date and time.
+
+In all of these functions, if your logic depends on whether a value falls within the current day, hour, month, or year, the results might differ between environments. These differences between environments are especially noticeable if the query runs near a boundary (for example, just before or after midnight, the start of a new month, or a new year). If consistency is crucial across different environments, use the `DateTimeZone.UtcNow` or `DateTimeZone.FixedUtcNow` functions to retrieve the date and time.
 
 ## Best practices and recommendations
 
