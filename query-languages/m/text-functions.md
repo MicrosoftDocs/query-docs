@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Text functions"
 title: "Text functions"
-ms.date: 3/27/2024
+ms.date: 6/9/2025
 ms.custom: "nonautomated-date"
 ---
 # Text functions
@@ -12,7 +12,7 @@ These functions create and manipulate text values.
 
 |Name|Description|
 |------------|---------------|
-|[Text.InferNumberType](text-infernumbertype.md)|Infers the granular number type (Int64.Type, Double.Type, and so on) of a number encoded in text.|
+|[Text.InferNumberType](text-infernumbertype.md)|Infers the granular number type (`Int64.Type`, `Double.Type`, and so on) of a number encoded in text.|
 |[Text.Length](text-length.md)|Returns the number of characters in a text value.|
 
 ## Text Comparisons
@@ -55,7 +55,7 @@ These functions create and manipulate text values.
 
 |Name|Description|
 |------------|---------------|
-|[Text.Contains](text-contains.md)|Returns true if a text value substring was found within a text value string; otherwise, false.|
+|[Text.Contains](text-contains.md)|Returns `true` if a text value substring was found within a text value string; otherwise, `false`.|
 |[Text.EndsWith](text-endswith.md)|Returns a logical value indicating whether a text value substring was found at the end of a string.|
 |[Text.PositionOf](text-positionof.md)|Returns the first position of the value (-1 if not found).|
 |[Text.PositionOfAny](text-positionofany.md)|Returns the first position in the text value of any listed character (-1 if not found).|
@@ -67,7 +67,7 @@ These functions create and manipulate text values.
 |------------|---------------|
 |[Text.AfterDelimiter](text-afterdelimiter.md)|Returns the portion of text after the specified delimiter.|
 |[Text.BeforeDelimiter](text-beforedelimiter.md)|Returns the portion of text before the specified delimiter.|
-|[Text.BetweenDelimiters](text-betweendelimiters.md)|Returns the portion of text between the specified startDelimiter and endDelimiter.|
+|[Text.BetweenDelimiters](text-betweendelimiters.md)|Returns the portion of text between the specified `startDelimiter` and `endDelimiter`.|
 |[Text.Clean](text-clean.md)|Returns the original text value with non-printable characters removed.|
 |[Text.Combine](text-combine.md)|Returns a text value that is the result of joining all text values with each value separated by a separator.|
 |[Text.Lower](text-lower.md)|Returns the lowercase of a text value.|
