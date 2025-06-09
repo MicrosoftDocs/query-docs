@@ -1,10 +1,8 @@
 ---
+description: "Learn more about: How culture affects text formatting"
 title: How culture affects text formatting
-description: Learn about how culture is related to the locale in which queries are authored and how you can change the default culture.
-author: DougKlopfenstein
-ms-author: dougklo
 ms.date: 10/7/2024
-ms.topic: reference
+ms.custom: "nonautomated-date"
 ms.subservice: m-background
 
 ---
