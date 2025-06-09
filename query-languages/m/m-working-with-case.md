@@ -2,6 +2,7 @@
 description: "Learn more about: Capitalization in Power Query M"
 title: "Capitalization of text in Power Query M"
 ms.date: 5/30/2025
+ms.custom: "nonautomated-date"
 ms.subservice: m-background
 ---
 
