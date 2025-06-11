@@ -80,7 +80,7 @@ in
 
 The output of this example is:
 
-:::image type="content" source="media/localnow-vs-fixedlocalnow.png" alt-text="Screenshot of the table created by DateTime.LocalNow with dynamic dates and times and DateTime.FixedLocalNow with fixed dates and times.":::
+:::image type="content" source="media/m-local-fixed-utc-variants/localnow-versus-fixedlocalnow.png" alt-text="Screenshot of the table created by DateTime.LocalNow with dynamic dates and times and DateTime.FixedLocalNow with fixed dates and times.":::
 
 If you look at the output, you might notice that even though the `DateTime.LocalNow` function appears first in the code, the value returned for `DateTime.FixedLocalNow` shows a time that occurs before the `DateTime.LocalTime` time. Even though `DateTime.LocalNow` is listed first in the table construction, the order of evaluation in Power Query M isn't guaranteed to follow the order of fields in a table. Instead, Power Query uses a lazy evaluation model. Using this model means that fields are only evaluated when needed and the engine determines the evaluation order, not the order in your code. In this case, the `DateTime.FixedLocalNow` function is evaluated first, so the first time returned for this function occurs before the first time returned for `DateTime.LocalNow`.
 
@@ -114,7 +114,7 @@ in
 
 The output of this example in Power Query Desktop is:
 
-:::image type="content" source="media/zone-localnow-vs-fixedlocalnow.png" alt-text="Screenshot of the table created by DateTimeZone.LocalNow with dynamic dates and times and DateTimeZone.FixedLocalNow with fixed dates and times.":::
+:::image type="content" source="media/m-local-fixed-utc-variants/zone-localnow-versus-fixedlocalnow.png" alt-text="Screenshot of the table created by DateTimeZone.LocalNow with dynamic dates and times and DateTimeZone.FixedLocalNow with fixed dates and times.":::
 
 > [!NOTE]
 >If you run this example in Power Query Online, the time returned is always UTC time and the time zone portion of the returned values are always `+00:00`.
@@ -156,7 +156,7 @@ in
 
 The output of this example in both Power Query Desktop and Power Query Online is:
 
-:::image type="content" source="media/zone-utcnow-vs-fixedutcnow.png" alt-text="Screenshot of the table created by DateTimeZone.UtcNow with dynamic dates and times and DateTimeZone.FixedUtcNow with fixed dates and times.":::
+:::image type="content" source="media/m-local-fixed-utc-variants/zone-utcnow-versus-fixedutcnow.png" alt-text="Screenshot of the table created by DateTimeZone.UtcNow with dynamic dates and times and DateTimeZone.FixedUtcNow with fixed dates and times.":::
 
 ## Effects on other functions
 
