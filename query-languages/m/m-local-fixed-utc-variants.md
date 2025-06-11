@@ -2,7 +2,7 @@
 description: "Learn more about: Local, fixed, and UTC variants of current time functions"
 title: "Local, fixed, and UTC variants of current time functions"
 ms.topic: conceptual
-ms.date: 6/6/2025
+ms.date: 6/11/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-background
 ---
@@ -158,7 +158,7 @@ The output of this example in both Power Query Desktop and Power Query Online is
 
 :::image type="content" source="media/zone-utcnow-vs-fixedutcnow.png" alt-text="Screenshot of the table created by DateTimeZone.UtcNow with dynamic dates and times and DateTimeZone.FixedUtcNow with fixed dates and times.":::
 
-## Affects on other functions
+## Effects on other functions
 
 Other Power Query M functions that depend on the current date and time can also be affected by how the local time is returned on either Power Query Desktop or Power Query Online. For example, if you use the [DateTimeZone.ToLocal](datetimezone-tolocal.md) function to convert UTC time to local time, it still returns the UTC time on Power Query Online.
 
