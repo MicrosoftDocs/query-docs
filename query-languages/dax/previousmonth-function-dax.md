@@ -39,10 +39,10 @@ A table containing a single column of date values.
 
 ## Example
 
-The following sample formula creates a measure that calculates the 'previous month sales' for Internet sales.
+The following sample formula creates a measure that calculates the 'previous month sales' for sales.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSMONTH('DateTime'[DateKey]))
+= CALCULATE ( SUM ( 'Sales'[Sales Amount] ), PREVIOUSMONTH ( 'Date'[Date] ) )
 ```
 
 ## Related content
