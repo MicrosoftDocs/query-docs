@@ -36,7 +36,7 @@ A text string.
 The following example returns the first five characters of the company name in the column [ResellerName] and the first five letters of the geographical code in the column [GeographyKey] and concatenates them, to create an identifier.
 
 ```dax
-= CONCATENATE(LEFT('Reseller'[ResellerName],LEFT(GeographyKey,3))
+= CONCATENATE(LEFT('Reseller'[ResellerName], 5), LEFT('Reseller'[GeographyKey], 5))
 ```
 
 If the `num_chars` argument is a number that is larger than the number of characters available, the function returns the maximum characters available and does not raise an error. For example, the column [GeographyKey] contains numbers such as 1, 12 and 311; therefore the result also has variable length.
