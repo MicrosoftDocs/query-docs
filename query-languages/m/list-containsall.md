@@ -21,7 +21,7 @@ Indicates whether the list includes all the values from another list. Returns `t
 
 ## Example 1
 
-Find out if the list {1, 2, 3, 4, 5} contains 3 and 4.
+Determine if the list {1, 2, 3, 4, 5} contains 3 and 4.
 
 **Usage**
 
