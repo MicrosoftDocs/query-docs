@@ -66,7 +66,7 @@ List.Contains({"Pears", "Bananas", "Rhubarb", "Peaches"},
 
 ## Example 4
 
-Determine if the list contains a date April 8, 2022.
+Determine if the list contains the date April 8, 2022.
 
 **Usage**
 
