@@ -13,7 +13,7 @@ Record.ReorderFields(<b>record</b> as record, <b>fieldOrder</b> as list, optiona
   
 ## About
 
-Reorders fields in a record to match the order of a list of field names.
+Reorders the fields of a record to match the order of a list of field names.
 
 * `record`: The record containing the fields to reorder.
 * `fieldOrder`: A list containing the new order of the fields to apply to the record. Field values are maintained and fields not listed in this parameter are left in their original positions.
