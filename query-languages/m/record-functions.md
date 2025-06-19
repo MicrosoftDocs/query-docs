@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Record functions"
 title: "Record functions"
-ms.date: 2/18/2025
+ms.date: 6/19/2025
 ms.custom: "nonautomated-date"
 ---
 # Record functions
@@ -29,7 +29,7 @@ These functions create and manipulate record values.
 |[Record.Combine](record-combine.md)|Combines the records in a list.|
 |[Record.RemoveFields](record-removefields.md)|Removes the specified field(s) from the input record.|
 |[Record.RenameFields](record-renamefields.md)|Returns a new record that renames the fields specified. The resultant fields will retain their original order. This function supports swapping and chaining field names. However, all target names plus remaining field names must constitute a unique set or an error will occur.|
-|[Record.ReorderFields](record-reorderfields.md)|Reorders fields in a record to match the order of a list of field names.|
+|[Record.ReorderFields](record-reorderfields.md)|Reorders record fields to match the order of a list of field names.|
 |[Record.TransformFields](record-transformfields.md)|Transforms fields by applying transformOperations. For more more information about values supported by transformOperations, go to [Parameter Values](#parameter-values).|
 
 ## Selection
