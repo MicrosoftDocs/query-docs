@@ -78,7 +78,7 @@ in
     ContainsDate
 ```
 
-**Output
+**Output**
 
 `true`
 
