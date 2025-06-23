@@ -34,7 +34,7 @@ A scalar value that represents the `expression` evaluated for the current year-t
   - A table expression that returns a single column of date/time values.
   - A Boolean expression that defines a single-column table of date/time values.
   
-- In addition to `dates`, a calendar reference could also be used at second argument of TotalYTD.
+- In addition to `dates`, a calendar reference could also be used at second argument.
 
 - Constraints on Boolean expressions are described in the topic, [CALCULATE](calculate-function-dax.md).
 
@@ -58,6 +58,14 @@ The following sample formula creates a measure that calculates the 'year running
 
 ```dax
 = TOTALYTD(SUM(InternetSales_USD[SalesAmount_USD]),DateTime[DateKey])
+```
+
+## Example for calendar based time intelligence
+
+The following sample formula creates a measure that calculates the 'year running total' or 'year running sum' for Internet sales in terms of fiscal calendar.
+
+```dax
+= TOTALYTD(SUM(InternetSales_USD[SalesAmount_USD]), FiscalCalendar)
 ```
 
 ## Related content

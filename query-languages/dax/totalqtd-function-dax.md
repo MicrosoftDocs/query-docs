@@ -11,7 +11,7 @@ Evaluates the value of the `expression` for the dates in the quarter to date, in
 ## Syntax
 
 ```dax
-TOTALQTD(<expression>,<dates>[,<filter>])
+TOTALQTD(<expression>,<dates|calendar>[,<filter>])
 ```
 
 ### Parameters
@@ -19,7 +19,7 @@ TOTALQTD(<expression>,<dates>[,<filter>])
 |Parameter|Definition|
 |-------------|--------------|
 |`expression`|An expression that returns a scalar value.|
-|`dates`|A column that contains dates.|
+|`dates`|A column that contains dates or a calendar reference.|
 |`filter`|(optional) An expression that specifies a filter to apply to the current context.|
 
 ## Return value
@@ -33,9 +33,13 @@ A scalar value that represents the `expression` evaluated for all dates in the c
   - A table expression that returns a single column of date/time values.
   - A Boolean expression that defines a single-column table of date/time values.
 
+- In addition to `dates`, a calendar reference could also be used at second argument.
+
 - Constraints on Boolean expressions are described in the topic, [CALCULATE](calculate-function-dax.md).
 
 - The `filter` expression has restrictions described in the topic, [CALCULATE](calculate-function-dax.md).
+
+- The `year_end_date` parameter must not be specified when a calendar is used.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
@@ -45,6 +49,14 @@ The following sample formula creates a measure that calculates the 'quarter runn
 
 ```dax
 = TOTALQTD(SUM(InternetSales_USD[SalesAmount_USD]),DateTime[DateKey])
+```
+
+## Example for calendar based time intelligence
+
+The following sample formula creates a measure that calculates the 'quarter running total' or 'quarter running sum' for Internet sales in terms of fiscal calendar.
+
+```dax
+= TOTALQTD(SUM(InternetSales_USD[SalesAmount_USD]), FiscalCalendar)
 ```
 
 ## Related content
