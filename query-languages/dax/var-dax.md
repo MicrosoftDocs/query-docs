@@ -42,37 +42,40 @@ A named variable containing the result of the expression argument.
 To calculate a percentage of year-over-year growth without using a variable, you could create three separate measures. This first measure calculates Sum of Sales Amount:
 
 ```dax
-Sum of SalesAmount = SUM(SalesTable[SalesAmount])
+Sum of Sales Amount =
+SUM ( Sales[Sales Amount] )
 ```
 
 A second measure calculates the sales amount for the previous year:
 
 ```dax
-SalesAmount PreviousYear =
-    CALCULATE([Sum of SalesAmount],
-    SAMEPERIODLASTYEAR(Calendar[Date])
-    )
+Sales Amount PreviousYear =
+CALCULATE ( [Sum of Sales Amount], SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
 ```
 
 You can then create a third measure that combines the other two measures to calculate a growth percentage. Notice the Sum of SalesAmount measure is used in two places; first to determine if there is a sale, then again to calculate a percentage.
 
 ```dax
-Sum of SalesAmount YoY%: = 
-    IF([Sum of SalesAmount] ,
-        DIVIDE(([Sum of SalesAmount] – [SalesAmount PreviousYear]), [Sum of SalesAmount])
+Sum of SalesAmount YoY%: =
+IF (
+    [Sum of Sales Amount] && [Sales Amount PreviousYear],
+    DIVIDE (
+        ( [Sum of Sales Amount] - [Sales Amount PreviousYear] ),
+        [Sales Amount PreviousYear]
     )
+)
 ```
 
 By using a variable, you can create a single measure that calculates the same result:
 
 ```dax
 YoY% =
-  VAR Sales = 
-      SUM(SalesTable[SalesAmount])
-  VAR SalesLastYear =
-      CALCULATE ( SUM ( SalesTable[SalesAmount] ), SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
-
-  return if(Sales, DIVIDE(Sales – SalesLastYear, Sales))
+VAR Sales =
+    SUM ( Sales[Sales Amount] )
+VAR SalesLastYear =
+    CALCULATE ( SUM ( Sales[Sales Amount] ), SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+RETURN
+    IF ( Sales && SalesLastYear, DIVIDE ( Sales - SalesLastYear, SalesLastYear ) )
 ```
 
 By using a variable, you can get the same outcome, but in a more readable way. And because the result of the expression is stored in the variable, the measure's performance can be significantly improved because it doesn't have to be recalculated each time it's used.
