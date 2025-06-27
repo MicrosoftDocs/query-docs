@@ -48,6 +48,10 @@ items:
     href: metadata.md
   - name: Errors
     href: errors.md
+  - name: Date and time
+    items:
+    - name: Local, fixed, and UTC variants
+      href: m-local-fixed-utc-variants.md
   - name: Text formatting
     items:
     - name: Standard numeric format strings
