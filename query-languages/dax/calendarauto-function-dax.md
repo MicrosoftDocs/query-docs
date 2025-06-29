@@ -42,4 +42,4 @@ In this example, the MinDate and MaxDate in the data model are July 1, 2010 and 
 
 `CALENDARAUTO()` will return all dates between January 1, 2010 and December 31, 2011.
 
-`CALENDARAUTO(3)` will return all dates between April 1, 2010 and March 31, 2012. As in this example `fiscal_year_end_month` is 3, the first years starts on April 1st and ends on March 31st. As a result, the range is determined by selecting the first day of the fiscal year on or before the MinDate's year (April 1, 2010) and the last day of the fiscal year after or within the MaxDate's year (March 31, 2012).
+`CALENDARAUTO(3)` will return all dates between April 1, 2010 and March 31, 2011. As in this example `fiscal_year_end_month` is 3, the first years starts on April 1st and ends on March 31st. As a result, the range is determined by selecting the first day of the fiscal year on or before the MinDate's year (April 1, 2010) and the last day of the fiscal year after or within the MaxDate's year (March 31, 2011).
