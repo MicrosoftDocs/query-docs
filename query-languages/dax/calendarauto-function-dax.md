@@ -38,8 +38,18 @@ Returns a table with a single column named "Date" that contains a contiguous set
 
 ## Example
 
-In this example, the MinDate and MaxDate in the data model are July 1, 2010 and June 30, 2011.
+In this example, the MinDate and MaxDate in the data model are July 1, 2018 and June 30, 2019. In this model two calculated tables are defined:
 
-`CALENDARAUTO()` will return all dates between January 1, 2010 and December 31, 2011.
+- **CalendarAuto**. Defined as `CALENDARAUTO()` will return all dates between January 1, 2018 and December 31, 2019.
+- **CalendarAuto3**. Defined as `CALENDARAUTO(3)` will return all dates between April 1, 2018 and March 31, 2020. As in this example `fiscal_year_end_month` is 3, the first years starts on April 1st and ends on March 31st. As a result, the range is determined by selecting the first day of the fiscal year on or before the MinDate's year (April 1, 2018) and the last day of the fiscal year after or within the MaxDate's year (March 31, 2020).
 
-`CALENDARAUTO(3)` will return all dates between April 1, 2010 and March 31, 2012. As in this example `fiscal_year_end_month` is 3, the first years starts on April 1st and ends on March 31st. As a result, the range is determined by selecting the first day of the fiscal year on or before the MinDate's year (April 1, 2010) and the last day of the fiscal year after or within the MaxDate's year (March 31, 2012).
+Below are measure definitions and their return values on the example model:
+
+```dax
+MinDate = MIN('Date'[Date]) //returns July 1, 2018
+MaxDate = MAX('Date'[Date]) //returns June 30, 2019
+MinCalendarAuto = MIN('CalendarAuto'[Date]) //returns January 1, 2018
+MaxCalendarAuto = MAX('CalendarAuto'[Date]) //returns December 31, 2019
+MinCalendarAuto3 = MIN('CalendarAuto3'[Date]) //returns April 1, 2018
+MaxCalendarAuto3 = MAX('CalendarAuto3'[Date]) //returns March 31, 2020
+```
