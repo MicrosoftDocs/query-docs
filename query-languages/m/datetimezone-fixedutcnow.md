@@ -14,3 +14,7 @@ DateTimeZone.FixedUtcNow() as datetimezone
 ## About
 
 Returns the current date and time in UTC (the GMT timezone). This value is fixed and will not change with successive calls.
+
+## Related content
+
+[Local, fixed, and UTC variants of current time functions](m-local-fixed-utc-variants.md)
