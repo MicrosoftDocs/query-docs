@@ -14,3 +14,7 @@ DateTimeZone.LocalNow() as datetimezone
 ## About
 
 Returns a `datetimezone` value set to the current date and time on the system. The returned value contains timezone information representing the local timezone.
+
+## Related content
+
+[Local, fixed, and UTC variants of current time functions](m-local-fixed-utc-variants.md)
