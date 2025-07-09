@@ -800,6 +800,8 @@ items:
               href: datesbetween-function-dax.md
             - name: DATESINPERIOD
               href: datesinperiod-function-dax.md
+            - name: DATESWTD
+              href: dateswtd-function-dax.md
             - name: DATESMTD
               href: datesmtd-function-dax.md
             - name: DATESQTD

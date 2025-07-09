@@ -17,6 +17,7 @@ Data Analysis Expressions (DAX) includes time-intelligence functions that enable
 |[DATEADD](dateadd-function-dax.md)      |  Returns a table that contains a column of dates, shifted either forward or backward in time by the specified number of intervals from the dates in the current context.       |
 |[DATESBETWEEN](datesbetween-function-dax.md)      |   Returns a table that contains a column of dates that begins with a specified start date and continues until a specified end date.        |
 |[DATESINPERIOD](datesinperiod-function-dax.md)      |  Returns a table that contains a column of dates that begins with a specified start date and continues for the specified number and type of date intervals.     |
+|[DATESWTD](dateswtd-function-dax.md)      |  Returns a table that contains a column of the dates for the week to date, in the current context.
 |[DATESMTD](datesmtd-function-dax.md)      |  Returns a table that contains a column of the dates for the month to date, in the current context.         |
 |[DATESQTD](datesqtd-function-dax.md)      |  Returns a table that contains a column of the dates for the quarter to date, in the current context.         |
 |[DATESYTD](datesytd-function-dax.md)      |  Returns a table that contains a column of the dates for the year to date, in the current context.        |

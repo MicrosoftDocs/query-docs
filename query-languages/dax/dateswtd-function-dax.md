@@ -1,18 +1,18 @@
 ---
-description: "Learn more about: DATESMTD"
-title: "DATESMTD function (DAX)"
+description: "Learn more about: DATESWTD"
+title: "DATESWTD function (DAX)"
 ---
 # DATESMTD
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-For date column input, returns a table that contains a column of the dates for the month to date, in the current context.
-For calendar input, returns a table that contains all the tagged column for the month to date, in the current context.
+For date column input, returns a table that contains a column of the dates for week to date, in the current context.
+For calendar input, returns a table that contains all the tagged column for week to date, in the current context.
 
 ## Syntax
 
 ```dax
-DATESMTD(<dates|calendar>)
+DATESWTD(<dates|calendar>)
 ```
 
 ### Parameters
@@ -24,7 +24,7 @@ DATESMTD(<dates|calendar>)
 ## Return value
 
 For date column input, a table containing a single column of date values.
-For calendar input, a table that contains all the tagged column for the month to date, in the current context.
+For calendar input, a table that contains all the tagged column for week to date, in the current context.
 
 ## Remarks
 
@@ -45,18 +45,18 @@ The `dates` argument can be any of the following:
 
 ## Example
 
-The following sample formula creates a measure that calculates the 'Month To Date Total' for Internet Sales.
+The following sample formula creates a measure that calculates the 'Week To Date Total' for Internet Sales.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESMTD(DateTime[DateKey]))
+= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESWTD(DateTime[DateKey]))
 ```
 
 ## Example for calendar based time intelligence
 
-The following sample formula creates a measure that calculates the 'Monthly Running Total' for Internet sales uing fiscal calendar.
+The following sample formula creates a measure that calculates the 'Week To Date Total' for Internet sales uing fiscal calendar.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESMTD(FiscalCalendar))
+= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESWTD(FiscalCalendar))
 ```
 
 ## Related content
@@ -65,3 +65,4 @@ The following sample formula creates a measure that calculates the 'Monthly Runn
 [Date and time functions](date-and-time-functions-dax.md)
 [DATESYTD function](datesytd-function-dax.md)
 [DATESQTD function](datesqtd-function-dax.md)
+[DATESMTD function](datesmtd-function-dax.md)

@@ -44,6 +44,8 @@ A scalar value that represents the `expression` evaluated at the last date of th
 
 - In addition to `dates`, a calendar reference could also be used at second argument.
 
+- The `year_end_date` parameter must not be specified when a calendar is used.
+
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example

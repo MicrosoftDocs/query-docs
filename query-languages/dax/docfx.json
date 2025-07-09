@@ -143,6 +143,7 @@
         "DATEDIFF",
         "DATESBETWEEN",
         "DATESINPERIOD",
+        "DATESWTD",
         "DATESMTD",
         "DATESQTD",
         "DATESYTD",
