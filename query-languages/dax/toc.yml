@@ -808,6 +808,8 @@ items:
               href: datesqtd-function-dax.md
             - name: DATESYTD
               href: datesytd-function-dax.md
+            - name: ENDOFWEEK
+              href: endofweek-function-dax.md
             - name: ENDOFMONTH
               href: endofmonth-function-dax.md
             - name: ENDOFQUARTER
@@ -846,6 +848,8 @@ items:
               href: previousyear-function-dax.md
             - name: SAMEPERIODLASTYEAR
               href: sameperiodlastyear-function-dax.md
+            - name: STARTOFWEEK
+              href: startofweek-function-dax.md
             - name: STARTOFMONTH
               href: startofmonth-function-dax.md
             - name: STARTOFQUARTER

@@ -21,6 +21,7 @@ Data Analysis Expressions (DAX) includes time-intelligence functions that enable
 |[DATESMTD](datesmtd-function-dax.md)      |  Returns a table that contains a column of the dates for the month to date, in the current context.         |
 |[DATESQTD](datesqtd-function-dax.md)      |  Returns a table that contains a column of the dates for the quarter to date, in the current context.         |
 |[DATESYTD](datesytd-function-dax.md)      |  Returns a table that contains a column of the dates for the year to date, in the current context.        |
+|[ENDOFWEEK](endofweek-function-dax.md)     | Returns the last date of the week in the current context for the specified column of dates.          |
 |[ENDOFMONTH](endofmonth-function-dax.md)    | Returns the last date of the month in the current context for the specified column of dates.          |
 |[ENDOFQUARTER](endofquarter-function-dax.md)      |  Returns the last date of the quarter in the current context for the specified column of dates.         |
 |[ENDOFYEAR](endofyear-function-dax.md)     | Returns the last date of the year in the current context for the specified column of dates.        |
@@ -40,6 +41,7 @@ Data Analysis Expressions (DAX) includes time-intelligence functions that enable
 |[PREVIOUSQUARTER](previousquarter-function-dax.md)      |  Returns a table that contains a column of all dates from the previous quarter, based on the first date in the dates column, in the current context.       |
 |[PREVIOUSYEAR](previousyear-function-dax.md)       |  Returns a table that contains a column of all dates from the previous year, given the last date in the dates column, in the current context.        |
 |[SAMEPERIODLASTYEAR](sameperiodlastyear-function-dax.md)     |  Returns a table that contains a column of dates shifted one year back in time from the dates in the specified dates column, in the current context.       |
+|[STARTOFWEEK](startofweek-function-dax.md)     | Returns the first date of the week in the current context for the specified column of dates.          |
 |[STARTOFMONTH](startofmonth-function-dax.md)     | Returns the first date of the month in the current context for the specified column of dates.          |
 |[STARTOFQUARTER](startofquarter-function-dax.md)     |  Returns the first date of the quarter in the current context for the specified column of dates.         |
 |[STARTOFYEAR](startofyear-function-dax.md)     |  Returns the first date of the year in the current context for the specified column of dates.       |
