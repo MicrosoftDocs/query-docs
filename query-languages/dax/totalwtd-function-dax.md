@@ -1,17 +1,17 @@
 ---
 description: "Learn more about: TOTALWTD"
-title: "TOTALMTD function (DAX)"
+title: "TOTALWTD function (DAX)"
 ---
-# TOTALMTD
+# TOTALWTD
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Evaluates the value of the `expression` for the month to date, in the current context.
+Evaluates the value of the `expression` for the week to date, in the current context.
 
 ## Syntax
 
 ```dax
-TOTALMTD(<expression>,<dates|calendar>[,<filter>])
+TOTALWTD(<expression>,<dates|calendar>[,<filter>])
 ```
 
 ### Parameters
@@ -24,7 +24,7 @@ TOTALMTD(<expression>,<dates|calendar>[,<filter>])
 
 ## Return value
 
-A scalar value that represents the `expression` evaluated for the dates in the current month-to-date, given the dates in `dates` or `calendar`.
+A scalar value that represents the `expression` evaluated for the dates in the current week-to-date, given the dates in `dates` or `calendar`.
 
 ## Remarks
 
@@ -45,18 +45,18 @@ A scalar value that represents the `expression` evaluated for the dates in the c
 
 ## Example
 
-The following sample formula creates a measure that calculates the 'month running total' or 'month running sum' for Internet sales.
+The following sample formula creates a measure that calculates the 'week running total' or 'week running sum' for Internet sales.
 
 ```dax
-= TOTALMTD(SUM(InternetSales_USD[SalesAmount_USD]),DateTime[DateKey])
+= TOTALWTD(SUM(InternetSales_USD[SalesAmount_USD]),DateTime[DateKey])
 ```
 
 ## Example for calendar based time intelligence
 
-The following sample formula creates a measure that calculates the 'month running total' or 'month running sum' for Internet sales in terms of fiscal calendar.
+The following sample formula creates a measure that calculates the 'week running total' or 'week running sum' for Internet sales in terms of fiscal calendar.
 
 ```dax
-= TOTALMTD(SUM(InternetSales_USD[SalesAmount_USD]), FiscalCalendar)
+= TOTALWTD(SUM(InternetSales_USD[SalesAmount_USD]), FiscalCalendar)
 ```
 
 ## Related content
@@ -65,3 +65,4 @@ The following sample formula creates a measure that calculates the 'month runnin
 [CALCULATE](calculate-function-dax.md)
 [TOTALYTD](totalytd-function-dax.md)
 [TOTALQTD](totalqtd-function-dax.md)
+[TOTALMTD](totalqtd-function-dax.md)

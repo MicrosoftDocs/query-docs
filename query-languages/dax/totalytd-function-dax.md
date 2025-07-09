@@ -75,3 +75,4 @@ The following sample formula creates a measure that calculates the 'year running
 [DATESYTD](datesytd-function-dax.md)
 [TOTALMTD](totalmtd-function-dax.md)
 [TOTALQTD](totalqtd-function-dax.md)
+[TOTALWTD](totalwtd-function-dax.md)

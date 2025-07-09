@@ -65,3 +65,4 @@ The following sample formula creates a measure that calculates the 'quarter runn
 [CALCULATE](calculate-function-dax.md)
 [TOTALYTD](totalytd-function-dax.md)
 [TOTALMTD](totalmtd-function-dax.md)
+[TOTALWTD](totalwtd-function-dax.md)
