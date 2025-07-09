@@ -11,7 +11,7 @@ Evaluates the `expression` at the last date of the quarter in the current contex
 ## Syntax
 
 ```dax
-CLOSINGBALANCEQUARTER(<expression>,<dates>[,<filter>])
+CLOSINGBALANCEQUARTER(<expression>,<dates|calendar>[,<filter>])
 ```
 
 ### Parameters
@@ -19,7 +19,7 @@ CLOSINGBALANCEQUARTER(<expression>,<dates>[,<filter>])
 |Term|Definition|
 |--------|--------------|
 |`expression`|An expression that returns a scalar value.|
-|`dates`|A column that contains dates.|
+|`dates/calendar`|A column that contains dates or a calendar reference.|
 |`filter`|(optional) An expression that specifies a filter to apply to the current context.|
 
 ## Return value
@@ -42,6 +42,8 @@ A scalar value that represents the `expression` evaluated at the last date of th
     > [!NOTE]
     > The `filter` expression has restrictions described in [CALCULATE function](calculate-function-dax.md).
 
+- In addition to `dates`, a calendar reference could also be used at second argument.
+
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example
@@ -52,8 +54,17 @@ The following sample formula creates a measure that calculates the 'Quarter End 
 = CLOSINGBALANCEQUARTER(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])
 ```
 
+## Example for calendar based time intelligence
+
+The following sample formula creates a measure that calculates the 'Quarter End Inventory Value' of the product inventory in terms of fiscal calendar.
+
+```dax
+= CLOSINGBALANCEQUARTER(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]), FiscalCalendar)
+```
+
 ## Related content
 
 [Time intelligence functions](time-intelligence-functions-dax.md)
 [CLOSINGBALANCEYEAR function](closingbalanceyear-function-dax.md)
 [CLOSINGBALANCEMONTH function](closingbalancemonth-function-dax.md)
+[CLOSINGBALANCEWEEK function](closingbalanceweek-function-dax.md)

@@ -11,7 +11,7 @@ Evaluates the `expression` at the date corresponding to the end of the previous 
 ## Syntax
 
 ```dax
-OPENINGBALANCEMONTH(<expression>,<dates/calendar>[,<filter>])
+OPENINGBALANCEMONTH(<expression>,<dates|calendar>[,<filter>])
 ```
 
 ### Parameters

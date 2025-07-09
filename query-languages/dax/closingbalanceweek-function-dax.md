@@ -1,32 +1,35 @@
 ---
-description: "Learn more about: CLOSINGBALANCEMONTH"
-title: "CLOSINGBALANCEMONTH function (DAX)"
+description: "Learn more about: CLOSINGBALANCEWEEK"
+title: "CLOSINGBALANCEWEEK function (DAX)"
 ---
-# CLOSINGBALANCEMONTH
+# CLOSINGBALANCEWEEK
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Evaluates the `expression` at the last date of the month in the current context.
+Evaluates the `expression` at the last date of the week in the current context.
 
 ## Syntax
 
 ```dax
-CLOSINGBALANCEMONTH(<expression>,<dates|calendar>[,<filter>])
+CLOSINGBALANCEWEEK(<expression>,<dates|calendar>[,<filter>][,<year_end_date>])
 ```
 
 ### Parameters
 
-|Parameter|Definition|
-|-------------|--------------|
+|Term|Definition|
+|--------|--------------|
 |`expression`|An expression that returns a scalar value.|
 |`dates/calendar`|A column that contains dates or a calendar reference.|
 |`filter`|(optional) An expression that specifies a filter to apply to the current context.|
+|`year_end_date`|(optional) A literal string with a date that defines the year-end date. The default is December 31.|
 
 ## Return value
 
-A scalar value that represents the `expression` evaluated at the last date of the month in the current context.
+A scalar value that represents the `expression` evaluated at the last date of the week in the current context.
 
 ## Remarks
+
+- The `year_end_date` parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is ignored.
 
 - The `dates` argument can be any of the following:
 
@@ -48,18 +51,18 @@ A scalar value that represents the `expression` evaluated at the last date of th
 
 ## Example
 
-The following sample formula creates a measure that calculates the 'Month End Inventory Value' of the product inventory.
+The following sample formula creates a measure that calculates the 'Year End Inventory Value' of the product inventory.
 
 ```dax
-= CLOSINGBALANCEMONTH(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])
+= CLOSINGBALANCEYEAR(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])
 ```
 
 ## Example for calendar based time intelligence
 
-The following sample formula creates a measure that calculates the 'Month End Inventory Value' of the product inventory in terms of fiscal calendar.
+The following sample formula creates a measure that calculates the 'Year End Inventory Value' of the product inventory in terms of fiscal calendar.
 
 ```dax
-= CLOSINGBALANCEMONTH(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]), FiscalCalendar)
+= CLOSINGBALANCEYEAR(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]), FiscalCalendar)
 ```
 
 ## Related content
@@ -67,4 +70,4 @@ The following sample formula creates a measure that calculates the 'Month End In
 [Time intelligence functions](time-intelligence-functions-dax.md)
 [CLOSINGBALANCEYEAR function](closingbalanceyear-function-dax.md)
 [CLOSINGBALANCEQUARTER function](closingbalancequarter-function-dax.md)
-[CLOSINGBALANCEWEEK function](closingbalanceweek-function-dax.md)
+[CLOSINGBALANCEMONTH function](closingbalancemonth-function-dax.md)
