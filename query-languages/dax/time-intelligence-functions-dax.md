@@ -10,6 +10,7 @@ Data Analysis Expressions (DAX) includes time-intelligence functions that enable
 
 |Function  |Description  |
 |---------|---------|
+|[CLOSINGBALANCEWEEK](closingbalanceweek-function-dax.md)      |  Evaluates the expression at the last date of the week in the current context.       |
 |[CLOSINGBALANCEMONTH](closingbalancemonth-function-dax.md)      |  Evaluates the expression at the last date of the month in the current context.       |
 |[CLOSINGBALANCEQUARTER](closingbalancequarter-function-dax.md)       | Evaluates the expression at the last date of the quarter in the current context.          |
 |[CLOSINGBALANCEYEAR](closingbalanceyear-function-dax.md)      |  Evaluates the expression at the last date of the year in the current context.       |
@@ -28,6 +29,7 @@ Data Analysis Expressions (DAX) includes time-intelligence functions that enable
 |[NEXTMONTH](nextmonth-function-dax.md)     |  Returns a table that contains a column of all dates from the next month, based on the first date in the dates column in the current context.       |
 |[NEXTQUARTER](nextquarter-function-dax.md)     |  Returns a table that contains a column of all dates in the next quarter, based on the first date specified in the dates column, in the current context.        |
 |[NEXTYEAR](nextyear-function-dax.md)      | Returns a table that contains a column of all dates in the next year, based on the first date in the dates column, in the current context.          |
+|[OPENINGBALANCEWEEK](openingbalanceweek-function-dax.md)     | Evaluates the expression at the first date of the week in the current context.         |
 |[OPENINGBALANCEMONTH](openingbalancemonth-function-dax.md)     | Evaluates the expression at the first date of the month in the current context.         |
 |[OPENINGBALANCEQUARTER](openingbalancequarter-function-dax.md)     | Evaluates the expression at the first date of the quarter, in the current context.         |
 |[OPENINGBALANCEYEAR](openingbalanceyear-function-dax.md)       |  Evaluates the expression at the first date of the year in the current context.       |

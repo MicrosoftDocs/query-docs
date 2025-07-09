@@ -786,6 +786,8 @@ items:
           items: 
             - name: Time intelligence functions overview
               href: time-intelligence-functions-dax.md
+            - name: CLOSINGBALANCEWEEK
+              href: closingbalanceweek-function-dax.md
             - name: CLOSINGBALANCEMONTH
               href: closingbalancemonth-function-dax.md
             - name: CLOSINGBALANCEQUARTER
@@ -822,6 +824,8 @@ items:
               href: nextquarter-function-dax.md
             - name: NEXTYEAR
               href: nextyear-function-dax.md
+            - name: OPENINGBALANCEWEEK
+              href: openingbalanceweek-function-dax.md
             - name: OPENINGBALANCEMONTH
               href: openingbalancemonth-function-dax.md
             - name: OPENINGBALANCEQUARTER
