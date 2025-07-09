@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: TOTALMTD"
+description: "Learn more about: TOTALWTD"
 title: "TOTALMTD function (DAX)"
 ---
 # TOTALMTD

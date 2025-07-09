@@ -19,13 +19,13 @@ TOTALYTD(<expression>,<dates|calendar>[,<filter>][,<year_end_date>])
 |Parameter|Definition|
 |-------------|--------------|
 |`expression`|An expression that returns a scalar value.|
-|`dates or calendar`|A column that contains dates or a calendar reference|
+|`dates/calendar`|A column that contains dates or a calendar reference|
 |`filter`|(optional) An expression that specifies a filter to apply to the current context.|
 |`year_end_date`|(optional) A literal string with a date that defines the year-end date. The default is December 31.|
 
 ## Return value
 
-A scalar value that represents the `expression` evaluated for the current year-to-date `dates`.
+A scalar value that represents the `expression` evaluated for the current year-to-date `dates` or `calendar`.
 
 ## Remarks
 

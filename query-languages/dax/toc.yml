@@ -846,6 +846,8 @@ items:
               href: startofquarter-function-dax.md
             - name: STARTOFYEAR
               href: startofyear-function-dax.md
+            - name: TOTALWTD
+              href: totalwtd-function-dax.md
             - name: TOTALMTD
               href: totalmtd-function-dax.md
             - name: TOTALQTD

@@ -40,6 +40,7 @@ Data Analysis Expressions (DAX) includes time-intelligence functions that enable
 |[STARTOFMONTH](startofmonth-function-dax.md)     | Returns the first date of the month in the current context for the specified column of dates.          |
 |[STARTOFQUARTER](startofquarter-function-dax.md)     |  Returns the first date of the quarter in the current context for the specified column of dates.         |
 |[STARTOFYEAR](startofyear-function-dax.md)     |  Returns the first date of the year in the current context for the specified column of dates.       |
+|[TOTALWTD](totalwtd-function-dax.md)      |  Evaluates the value of the expression for the week to date, in the current context.
 |[TOTALMTD](totalmtd-function-dax.md)      |  Evaluates the value of the expression for the month to date, in the current context.       |
 |[TOTALQTD](totalqtd-function-dax.md)     |  Evaluates the value of the expression for the dates in the quarter to date, in the current context.       |
 |[TOTALYTD](totalytd-function-dax.md)     | Evaluates the year-to-date value of the expression in the current context.       |

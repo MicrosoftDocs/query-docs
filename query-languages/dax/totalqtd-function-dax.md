@@ -19,12 +19,12 @@ TOTALQTD(<expression>,<dates|calendar>[,<filter>])
 |Parameter|Definition|
 |-------------|--------------|
 |`expression`|An expression that returns a scalar value.|
-|`dates`|A column that contains dates or a calendar reference.|
+|`dates/calendar`|A column that contains dates or a calendar reference.|
 |`filter`|(optional) An expression that specifies a filter to apply to the current context.|
 
 ## Return value
 
-A scalar value that represents the `expression` evaluated for all dates in the current quarter to date, given the dates in `dates`.
+A scalar value that represents the `expression` evaluated for all dates in the current quarter to date, given the dates in `dates` or `calendar`.
 
 ## Remarks
 

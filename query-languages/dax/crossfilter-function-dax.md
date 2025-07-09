@@ -30,7 +30,7 @@ The function returns no value; the function only sets the cross-filtering direct
 
 - In the case of a 1:1 relationship, there is no difference between the one and both direction.
 
-- CROSSFILTER can only be used in functions that take a filter as an argument, for example: CALCULATE, CALCULATETABLE, CLOSINGBALANCEMONTH, CLOSINGBALANCEQUARTER, CLOSINGBALANCEYEAR, OPENINGBALANCEMONTH, OPENINGBALANCEQUARTER, OPENINGBALANCEYEAR, TOTALMTD, TOTALQTD and TOTALYTD functions.
+- CROSSFILTER can only be used in functions that take a filter as an argument, for example: CALCULATE, CALCULATETABLE, CLOSINGBALANCEMONTH, CLOSINGBALANCEQUARTER, CLOSINGBALANCEYEAR, OPENINGBALANCEMONTH, OPENINGBALANCEQUARTER, OPENINGBALANCEYEAR, TOTALWTD, TOTALMTD, TOTALQTD and TOTALYTD functions.
 
 - CROSSFILTER uses existing relationships in the model, identifying relationships by their ending point columns.
 
