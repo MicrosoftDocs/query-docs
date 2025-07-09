@@ -1,17 +1,17 @@
 ---
-description: "Learn more about: OPENINGBALANCEMONTH"
-title: "OPENINGBALANCEMONTH function (DAX)"
+description: "Learn more about: OPENINGBALANCEWEEK"
+title: "OPENINGBALANCEWEEK function (DAX)"
 ---
-# OPENINGBALANCEMONTH
+# OPENINGBALANCEWEEK
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Evaluates the `expression` at the date corresponding to the end of the previous month in the current context.
+Evaluates the `expression` at the date corresponding to the end of the previous week in the current context.
 
 ## Syntax
 
 ```dax
-OPENINGBALANCEMONTH(<expression>,<dates/calendar>[,<filter>])
+OPENINGBALANCEWEEK(<expression>,<dates|calendar>[,<filter>])
 ```
 
 ### Parameters
@@ -24,7 +24,7 @@ OPENINGBALANCEMONTH(<expression>,<dates/calendar>[,<filter>])
 
 ## Return value
 
-A scalar value that represents the `expression` evaluated at the first date of the month in the current context.
+A scalar value that represents the `expression` evaluated at the first date of the week in the current context.
 
 ## Remarks
 
@@ -32,7 +32,7 @@ A scalar value that represents the `expression` evaluated at the first date of t
   - A reference to a date/time column.
   - A table expression that returns a single column of date/time values.
   - A Boolean expression that defines a single-column table of date/time values.
-
+  
 - In addition to `dates`, a calendar reference could also be used at second argument.
 
 - Constraints on Boolean expressions are described in the topic, [CALCULATE function](calculate-function-dax.md).
@@ -43,24 +43,24 @@ A scalar value that represents the `expression` evaluated at the first date of t
 
 ## Example
 
-The following sample formula creates a measure that calculates the 'Month Start Inventory Value' of the product inventory.
+The following sample formula creates a measure that calculates the 'Week Start Inventory Value' of the product inventory.
 
 ```dax
-= OPENINGBALANCEMONTH(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])
+= OPENINGBALANCEWEEK(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])
 ```
 
 ## Example for calendar based time intelligence
 
-The following sample formula creates a measure that calculates the 'Month Start Inventory Value' of the product inventory in terms of fiscal calendar.
+The following sample formula creates a measure that calculates the 'Week Start Inventory Value' of the product inventory in terms of fiscal calendar.
 
 ```dax
-= OPENINGBALANCEMONTH(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]), FiscalCalendar)
+= OPENINGBALANCEWEEK(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]), FiscalCalendar)
 ```
 
 ## Related content
 
-[OPENINGBALANCEWEEK function](openingbalanceweek-function-dax.md)
 [OPENINGBALANCEYEAR function](openingbalanceyear-function-dax.md)
 [OPENINGBALANCEQUARTER function](openingbalancequarter-function-dax.md)
+[OPENINGBALANCEMONTH function](openingbalancemonth-function-dax.md)
 [Time intelligence functions](time-intelligence-functions-dax.md)
 [CLOSINGBALANCEMONTH function](closingbalancemonth-function-dax.md)
