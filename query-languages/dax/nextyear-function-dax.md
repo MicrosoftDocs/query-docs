@@ -11,19 +11,20 @@ Returns a table that contains a column of all dates in the next year, based on t
 ## Syntax
 
 ```dax
-NEXTYEAR(<dates>[,<year_end_date>])
+NEXTYEAR(<dates|calendar>[,<year_end_date>])
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates`|A column containing dates.|
+|`dates/calendar`|A column that contains dates or a calendar reference|
 |`year_end_date`|(optional) A literal string with a date that defines the year-end date. The default is December 31.|
 
 ## Return value
 
-A table containing a single column of date values.
+For date column input, a table containing a single column of date values.
+For calendar input, a table that contains primary tagged columns for next quarter, in the current context.
 
 ## Remarks
 
@@ -36,7 +37,7 @@ A table containing a single column of date values.
 
 - Constraints on Boolean expressions are described in the topic, [CALCULATE function](calculate-function-dax.md).
 
-- The `year_end_date` parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is ignored.
+- The `year_end_date` parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is ignored. This parameter does not apply when calendar is used.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
@@ -46,6 +47,14 @@ The following sample formula creates a measure that calculates the 'next year sa
 
 ```dax
 = CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), NEXTYEAR('DateTime'[DateKey]))
+```
+
+## Example for calendar
+
+The following sample formula creates a measure that calculates the 'next year sales' for Internet sales.
+
+```dax
+= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), NEXTYEAR(FiscalCalendar))
 ```
 
 ## Related content

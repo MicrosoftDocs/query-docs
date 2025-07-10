@@ -6,23 +6,26 @@ title: "NEXTQUARTER function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns a table that contains a column of all dates in the next quarter, based on the first date specified in the `dates` column, in the current context.
+For date column input, returns a table that contains a column of all dates in the next quarter, based on the first date specified in the `dates` column, in the current context.
+
+For calendar input, returns primary tagged columns of all dates from the next quarter, based on the first date in the current context.
 
 ## Syntax
 
 ```dax
-NEXTQUARTER(<dates>)
+NEXTQUARTER(<dates|calendar>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates`|A column containing dates.|
+|`dates/calendar`|A column that contains dates or a calendar reference|
 
 ## Return value
 
-A table containing a single column of date values.
+For date column input, a table containing a single column of date values.
+For calendar input, a table that contains primary tagged columns for next quarter, in the current context.
 
 ## Remarks
 
@@ -43,6 +46,14 @@ The following sample formula creates a measure that calculates the 'next quarter
 
 ```dax
 = CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), NEXTQUARTER('DateTime'[DateKey]))
+```
+
+## Example for calendar
+
+The following sample formula creates a measure that calculates the 'next quarter sales' for Internet sales.
+
+```dax
+= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), NEXTQUARTER(FiscalCalendar))
 ```
 
 ## Related content
