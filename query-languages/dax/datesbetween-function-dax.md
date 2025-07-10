@@ -6,7 +6,9 @@ title: "DATESBETWEEN function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns a table that contains a column of dates that begins with a specified start date and continues until a specified end date.
+For date column input, returns a table that contains a column of dates that begins with a specified start date and continues until a specified end date.
+
+For calendar input, returns a table that contains all primary tagged columns that begins with a specified start date and continues until a specified end date.
 
 This function is suited to pass as a filter to the [CALCULATE](calculate-function-dax.md) function. Use it to filter an expression by a custom date range.
 
@@ -16,16 +18,16 @@ This function is suited to pass as a filter to the [CALCULATE](calculate-functio
 ## Syntax
 
 ```dax
-DATESBETWEEN(<Dates>, <StartDate>, <EndDate>)
+DATESBETWEEN(<Dates|Calendar>, <StartDate>, <EndDate>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`Dates`|A date column.|
-|`StartDate`|A date expression.|
-|`EndDate`|A date expression.|
+|`dates/calendar`|A column that contains dates or a calendar reference|
+|`StartDate`|A date/day expression. For calendar, please use the same data type as column that is tagged by Day.|
+|`EndDate`|A date/day expression. For calendar, please use the same data type as column that is tagged by Day.|
 
 ## Return value
 
@@ -35,13 +37,13 @@ A table containing a single column of date values.
 
 - In the most common use case, `dates` is a reference to the date column of a marked date table.
 
-- If `StartDate` is BLANK, then `StartDate` will be the earliest value in the `dates` column.
+- If `StartDate` is BLANK, then `StartDate` will be the earliest value in the `dates` column. For calendar, it will be the first value in column that is tagged as day.
 
-- If `EndDate` is BLANK, then `EndDate` will be the latest value in the `dates` column.
+- If `EndDate` is BLANK, then `EndDate` will be the latest value in the `dates` column. For calendar, it will be the last value in column that is tagged as day.
 
 - Dates used as the `StartDate` and `EndDate` are inclusive. So, for example, if the `StartDate` value is July 1, 2019, then that date will be included in the returned table (providing the date exists in the `dates` column).
 
-- The returned table can only contain dates stored in the `Dates` column. So, for example, if the `Dates` column starts from July 1, 2017, and the `StartDate` value is July 1, 2016, the returned table will start from July 1, 2017.
+- For date column input, the returned table can only contain dates stored in the `Dates` column. So, for example, if the `Dates` column starts from July 1, 2017, and the `StartDate` value is July 1, 2016, the returned table will start from July 1, 2017.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
@@ -66,6 +68,27 @@ CALCULATE(
 ```
 
 Consider that the earliest date stored in the **Date** table is July 1, 2017. So, when a report filters the measure by the month of June 2020, the DATESBETWEEN function returns a date range from July 1, 2017 until June 30, 2020.
+
+## Example for calendar based time intelligence
+This example calculates sum of sales for each month. It utilizes min/max to get inputs for datesbetween. Notice that we need to use day column as input when the column is tagged as day unit in fiscal calendar.
+
+```dax
+EVALUATE
+SUMMARIZECOLUMNS(
+    DimCalendar[Year], 
+    DimCalendar[MonthOfYear],
+    TREATAS( { 2013 }, DimCalendar[Year] ),
+    "Sum of Sales", 
+    CALCULATE(
+	SUm(FactInternetSales[SalesAmount]),
+        DatesBetween(
+            FiscalCalendar,
+            min(DimCalendar[Day]),
+            max(DimCalendar[Day])
+        )
+    )
+)
+```
 
 ## Related content
 
