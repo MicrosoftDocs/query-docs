@@ -1,18 +1,17 @@
 ---
-description: "Learn more about: STARTOFQUARTER"
-title: "STARTOFQUARTER function (DAX)"
+description: "Learn more about: STARTOFWEEK"
+title: "STARTOFWEEK function (DAX)"
 ---
-# STARTOFQUARTER
+# STARTOFMONTH
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
-
-For date column input, returns the first date of quarter in the current context for the specified column of dates.
-For calendar input, returns a table that contains all the tagged columns for first date of quarter, in the current context.
+For date column input, returns the first date of week in the current context for the specified column of dates.
+For calendar input, returns a table that contains all the tagged columns for first date of week, in the current context.
 
 ## Syntax
 
 ```dax
-STARTOFQUARTER(<dates|calendar>)
+STARTOFWEEK(<dates|calendar>)
 ```
 
 ### Parameters
@@ -24,7 +23,7 @@ STARTOFQUARTER(<dates|calendar>)
 ## Return value
 
 For date column input, a table containing a single column and single row with a date value.
-For calendar input, a table that contains all the tagged column for first date of month, in the current context.
+For calendar input, a table that contains all the tagged column for first date of week, in the current context.
 
 ## Remarks
 
@@ -41,23 +40,24 @@ For calendar input, a table that contains all the tagged column for first date o
 
 ## Example
 
-The following sample formula creates a measure that returns the start of the quarter, for the current context.
+The following sample formula creates a measure that returns the start of the week, for the current context.
 
 ```dax
-= STARTOFQUARTER(DateTime[DateKey])
+= STARTOFWEEK(DateTime[DateKey])
 ```
 
 ## Example for calendar based time intelligence
 
-The following sample formula creates a table that returns tagged columns that corresponds to the start of the quarter, for the fiscal calendar.
+The following sample formula creates a table that returns tagged columns that corresponds to the start of the week, for the fiscal calendar.
 
 ```dax
-= STARTOFQUARTER(FiscalCalendar)
+= STARTOFWEEK(FiscalCalendar)
 ```
 
 ## Related content
+
 [Date and time functions](date-and-time-functions-dax.md)
 [Time intelligence functions](time-intelligence-functions-dax.md)
 [STARTOFYEAR](startofyear-function-dax.md)
+[STARTOFQUARTER](startofquarter-function-dax.md)
 [STARTOFMONTH](startofmonth-function-dax.md)
-[STARTOFWEEK](startofweek-function-dax.md)

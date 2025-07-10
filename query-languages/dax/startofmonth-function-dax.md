@@ -5,23 +5,25 @@ title: "STARTOFMONTH function (DAX)"
 # STARTOFMONTH
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
-Returns the first date of the month in the current context for the specified column of dates.
+For date column input, returns the first date of month in the current context for the specified column of dates.
+For calendar input, returns a table that contains all the tagged columns for first date of month, in the current context.
 
 ## Syntax
 
 ```dax
-STARTOFMONTH(<dates>)
+STARTOFMONTH(<dates|calendar>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates`|A column that contains dates.|
+|`dates/calendar`|A column that contains dates or a calendar reference|
 
 ## Return value
 
-A table containing a single column and single row with a date value.
+For date column input, a table containing a single column and single row with a date value.
+For calendar input, a table that contains all the tagged column for first date of month, in the current context.
 
 ## Remarks
 
@@ -31,6 +33,8 @@ A table containing a single column and single row with a date value.
   - A Boolean expression that defines a single-column table of date/time values.
 
 - Constraints on Boolean expressions are described in the topic, [CALCULATE](calculate-function-dax.md).
+
+- In addition to `dates`, a calendar reference could also be used at first argument.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
@@ -42,9 +46,18 @@ The following sample formula creates a measure that returns the start of the mon
 = STARTOFMONTH(DateTime[DateKey])
 ```
 
+## Example for calendar based time intelligence
+
+The following sample formula creates a table that returns tagged columns that corresponds to the start of the month, for the fiscal calendar.
+
+```dax
+= STARTOFMONTH(FiscalCalendar)
+```
+
 ## Related content
 
 [Date and time functions](date-and-time-functions-dax.md)
 [Time intelligence functions](time-intelligence-functions-dax.md)
 [STARTOFYEAR](startofyear-function-dax.md)
 [STARTOFQUARTER](startofquarter-function-dax.md)
+[STARTOFWEEK](startofweek-function-dax.md)
