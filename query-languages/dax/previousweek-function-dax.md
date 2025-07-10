@@ -1,0 +1,53 @@
+---
+description: "Learn more about: PREVIOUSWEEK"
+title: "PREVIOUSWEEK function (DAX)"
+---
+# PREVIOUSDAY
+
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+
+For calendar input, returns primary tagged columns of all dates from the previous week, based on the first date in the current context.
+
+Note: weeks function only work with calendar based time intelligence.
+
+## Syntax
+
+```dax
+PREVIOUSWEEK(<calendar>)
+```
+
+### Parameters
+
+|Term|Definition|
+|--------|--------------|
+|`calendar`|A calendar reference|
+
+## Return value
+
+For calendar input, a table that contains primary tagged columns for previous dates, in the current context.
+
+## Remarks
+
+- This function determines the first date in the calendar, and then returns all dates corresponding to the week previous to that first date. For example, if the first date in the `dates` argument refers to June 10, 2009; this function returns all dates equal to June 9, 2009.
+
+- Constraints on Boolean expressions are described in the topic, [CALCULATE function](calculate-function-dax.md).
+
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+
+
+## Example for calendar
+
+The following sample formula creates a measure that calculates the 'previous week sales' for Internet sales in terms of fiscal calendar.
+
+```dax
+= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSWEEK(FiscalCalendar))
+```
+
+## Related content
+
+[Time intelligence functions](time-intelligence-functions-dax.md)
+[Date and time functions](date-and-time-functions-dax.md)
+[PREVIOUSMONTH function](previousmonth-function-dax.md)
+[PREVIOUSQUARTER function](previousquarter-function-dax.md)
+[PREVIOUSYEAR function](previousyear-function-dax.md)
+

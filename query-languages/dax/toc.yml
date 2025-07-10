@@ -822,6 +822,8 @@ items:
               href: lastdate-function-dax.md
             - name: NEXTDAY
               href: nextday-function-dax.md
+            - name: NEXTWEEK
+              href: nextweek-function-dax.md
             - name: NEXTMONTH
               href: nextmonth-function-dax.md
             - name: NEXTQUARTER
@@ -840,6 +842,8 @@ items:
               href: parallelperiod-function-dax.md
             - name: PREVIOUSDAY
               href: previousday-function-dax.md
+            - name: PREVIOUSWEEK
+              href: previousweek-function-dax.md
             - name: PREVIOUSMONTH
               href: previousmonth-function-dax.md
             - name: PREVIOUSQUARTER
