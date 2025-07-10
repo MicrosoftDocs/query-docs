@@ -26,11 +26,12 @@ PARALLELPERIOD(<dates|calendar>,<number_of_intervals>,<interval>)
 
 ## Return value
 
-A table containing a single column of date values.
+For date column input, a table containing a single column of date values.
+For calendar input, a table that contains all the tagged column for the year to date, in the current context.
 
 ## Remarks
 
-- This function takes the current set of dates in the column specified by `dates`, shifts the first date and the last date the specified number of intervals, and then returns all contiguous dates between the two shifted dates. If the interval is a partial range of month, quarter, or year then any partial months in the result are also filled out to complete the entire interval.
+- For date column input, this function takes the current set of dates in the column specified by `dates`, shifts the first date and the last date the specified number of intervals, and then returns all contiguous dates between the two shifted dates. If the interval is a partial range of month, quarter, or year then any partial months in the result are also filled out to complete the entire interval.
 
 - The `dates` argument can be any of the following:
   - A reference to a date/time column,
@@ -55,6 +56,14 @@ The following sample formula creates a measure that calculates the previous year
 
 ```dax
 = CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PARALLELPERIOD(DateTime[DateKey],-1,year))
+```
+
+## Example for calendar based time intelligence
+
+The following sample formula creates a measure that calculates the previous year sales for Internet sales using fiscal calendar.
+
+```dax
+= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PARALLELPERIOD(FiscalCalendar,-1,year))
 ```
 
 ## Related content
