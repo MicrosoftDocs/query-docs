@@ -11,7 +11,7 @@ Evaluates the `expression` at the date corresponding to the end of the previous 
 ## Syntax
 
 ```dax
-OPENINGBALANCEWEEK(<expression>,<dates|calendar>[,<filter>])
+OPENINGBALANCEWEEK(<expression>,<calendar>[,<filter>])
 ```
 
 ### Parameters
@@ -19,7 +19,7 @@ OPENINGBALANCEWEEK(<expression>,<dates|calendar>[,<filter>])
 |Term|Definition|
 |--------|--------------|
 |`expression`|An expression that returns a scalar value.|
-|`dates/calendar`|A column that contains dates or a calendar reference.|
+|`calendar`|A calendar reference.|
 |`filter`|(optional) An expression that specifies a filter to apply to the current context.|
 
 ## Return value

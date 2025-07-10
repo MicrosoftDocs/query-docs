@@ -7,11 +7,12 @@ title: "TOTALWTD function (DAX)"
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
 Evaluates the value of the `expression` for the week to date, in the current context.
+Note: week function only works with calendar based time intelligence.
 
 ## Syntax
 
 ```dax
-TOTALWTD(<expression>,<dates|calendar>[,<filter>])
+TOTALWTD(<expression>,<calendar>[,<filter>])
 ```
 
 ### Parameters
@@ -19,7 +20,7 @@ TOTALWTD(<expression>,<dates|calendar>[,<filter>])
 |Parameter|Definition|
 |-------------|--------------|
 |`expression`|An expression that returns a scalar value.|
-|`dates/calendar`|A column that contains dates or a calendar reference.|
+|`calendar`|A calendar reference.|
 |`filter`|(optional) An expression that specifies a filter to apply to the current context.|
 
 ## Return value
@@ -28,28 +29,12 @@ A scalar value that represents the `expression` evaluated for the dates in the c
 
 ## Remarks
 
-- The `dates` argument can be any of the following:
-  - A reference to a date/time column.
-  - A table expression that returns a single column of date/time values.
-  - A Boolean expression that defines a single-column table of date/time values.
-
-- In addition to `dates`, a calendar reference could also be used at second argument.
-
 - Constraints on Boolean expressions are described in the topic, [CALCULATE](calculate-function-dax.md).
 
 - The `filter` expression has restrictions described in the topic, [CALCULATE](calculate-function-dax.md).
 
-- The `year_end_date` parameter must not be specified when a calendar is used.
-
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-## Example
-
-The following sample formula creates a measure that calculates the 'week running total' or 'week running sum' for Internet sales.
-
-```dax
-= TOTALWTD(SUM(InternetSales_USD[SalesAmount_USD]),DateTime[DateKey])
-```
 
 ## Example for calendar based time intelligence
 

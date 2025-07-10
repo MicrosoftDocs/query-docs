@@ -6,7 +6,7 @@ title: "STARTOFMONTH function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 For date column input, returns the first date of month in the current context for the specified column of dates.
-For calendar input, returns a table that contains all the tagged columns for first date of month, in the current context.
+For calendar input, returns a table that contains all primary tagged columns for first date of month, in the current context.
 
 ## Syntax
 
@@ -48,7 +48,7 @@ The following sample formula creates a measure that returns the start of the mon
 
 ## Example for calendar based time intelligence
 
-The following sample formula creates a table that returns tagged columns that corresponds to the start of the month, for the fiscal calendar.
+The following sample formula creates a table that returns tagged primary columns that corresponds to the start of the month, for the fiscal calendar.
 
 ```dax
 = STARTOFMONTH(FiscalCalendar)
