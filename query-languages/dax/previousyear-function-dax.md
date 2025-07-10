@@ -6,24 +6,27 @@ title: "PREVIOUSYEAR function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns a table that contains a column of all dates from the previous year, given the last date in the `dates` column, in the current context.
+For date column input, Returns a table that contains a column of all dates from the previous year, given the last date in the `dates` column, in the current context.
+
+For calendar input, returns primary tagged columns of all dates from the previous year, based on the first date in the current context.
 
 ## Syntax
 
 ```dax
-PREVIOUSYEAR(<dates>[,<year_end_date>])
+PREVIOUSYEAR(<dates|calendar>[,<year_end_date>])
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates`|A column containing dates.|
+|`dates/calendar`|A column that contains dates or a calendar reference|
 |`year_end_date`|(optional) A literal string with a date that defines the year-end date. The default is December 31.|
 
 ## Return value
 
-A table containing a single column of date values.
+For date column input, a table containing a single column of date values.
+For calendar input, a table that contains primary tagged columns for previous year, in the current context.
 
 ## Remarks
 
@@ -46,6 +49,14 @@ The following sample formula creates a measure that calculates the previous year
 
 ```dax
 = CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSYEAR('DateTime'[DateKey]))
+```
+
+## Example for calendar
+
+The following sample formula creates a measure that calculates the 'previous quarter sales' for Internet sales in terms of fiscal calendar.
+
+```dax
+= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSYEAR(FiscalCalendar))
 ```
 
 ## Related content

@@ -6,23 +6,26 @@ title: "PREVIOUSQUARTER function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns a table that contains a column of all dates from the previous quarter, based on the first date in the `dates` column, in the current context.
+For date column input, returns a table that contains a column of all dates from the previous quarter, based on the first date in the `dates` column, in the current context.
+
+For calendar input, returns primary tagged columns of all dates from the previous quarter, based on the first date in the current context.
 
 ## Syntax
 
 ```dax
-PREVIOUSQUARTER(<dates>)
+PREVIOUSQUARTER(<dates|calendar>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates`|A column containing dates.|
+|`dates/calendar`|A column that contains dates or a calendar reference|
 
 ## Return value
 
-A table containing a single column of date values.
+For date column input, a table containing a single column of date values.
+For calendar input, a table that contains primary tagged columns for previous quarter, in the current context.
 
 ## Remarks
 
@@ -43,6 +46,14 @@ The following sample formula creates a measure that calculates the 'previous qua
 
 ```dax
 = CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSQUARTER('DateTime'[DateKey]))
+```
+
+## Example for calendar
+
+The following sample formula creates a measure that calculates the 'previous quarter sales' for Internet sales in terms of fiscal calendar.
+
+```dax
+= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSQUARTER(FiscalCalendar))
 ```
 
 ## Related content
