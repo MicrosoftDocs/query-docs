@@ -46,7 +46,7 @@ For calendar input, a table that contains all the tagged column for the dates be
 
 - For date column input, the returned table can only contain dates stored in the `Dates` column. So, for example, if the `Dates` column starts from July 1, 2017, and the `StartDate` value is July 1, 2016, the returned table will start from July 1, 2017.
 
-- For calendar input, if the input date is not found in tagged day column, the result will be undefined. Please provide valid date input.
+- For calendar input, if the input date is not found in tagged day column, it will be treated as BLANK and thus the first/last value will be used.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
