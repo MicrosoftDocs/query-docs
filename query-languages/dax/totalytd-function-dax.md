@@ -33,8 +33,6 @@ A scalar value that represents the `expression` evaluated for the current year-t
   - A reference to a date/time column.
   - A table expression that returns a single column of date/time values.
   - A Boolean expression that defines a single-column table of date/time values.
-  
-- In addition to `dates`, a calendar reference could also be used at second argument.
 
 - Constraints on Boolean expressions are described in the topic, [CALCULATE](calculate-function-dax.md).
 

@@ -39,8 +39,6 @@ The `dates` argument can be any of the following:
     > [!NOTE]
     > Constraints on Boolean expressions are described in the topic, [CALCULATE function](calculate-function-dax.md).
 
-- In addition to `dates`, a calendar reference could also be used for first argument.
-
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example

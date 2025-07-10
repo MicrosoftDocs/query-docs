@@ -42,8 +42,6 @@ The `dates` argument can be any of the following:
 
 - The `year_end_date` parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is ignored.  Depending on locale, the format might be something like "m-dd" or "dd-m".
 
-- In addition to `dates`, a calendar reference could also be used for first argument.
-
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example

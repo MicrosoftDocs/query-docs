@@ -35,8 +35,6 @@ For calendar input, a table that contains all the tagged column for first date o
 
 - Constraints on Boolean expressions are described in the topic, [CALCULATE](calculate-function-dax.md).
 
-- In addition to `dates`, a calendar reference could also be used at first argument.
-
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example

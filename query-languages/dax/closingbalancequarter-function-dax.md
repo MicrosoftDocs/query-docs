@@ -42,8 +42,6 @@ A scalar value that represents the `expression` evaluated at the last date of th
     > [!NOTE]
     > The `filter` expression has restrictions described in [CALCULATE function](calculate-function-dax.md).
 
-- In addition to `dates`, a calendar reference could also be used at second argument.
-
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example
