@@ -6,7 +6,7 @@ title: "DATESINPERIOD function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns a table that contains a column of dates that begins with a specified start date and continues for the specified number and type of date intervals.
+For date column input, returns a table that contains a column of dates that begins with a specified start date and continues for the specified number and type of date intervals.
 
 For calendar input, returns a table that contains all primary tagged columns that begins with a specified start date and continues for the specified number and type of date intervals.
 

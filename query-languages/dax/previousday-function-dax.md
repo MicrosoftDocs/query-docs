@@ -6,23 +6,26 @@ title: "PREVIOUSDAY function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns a table that contains a column of all dates representing the day that is previous to the first date in the `dates` column, in the current context.
+For date column input, returns a table that contains a column of all dates representing the day that is previous to the first date in the `dates` column, in the current context.
+
+For calendar input, returns primary tagged columns that is previous to the first date in the calendar, in the current context.
 
 ## Syntax
 
 ```dax
-PREVIOUSDAY(<dates>)
+PREVIOUSDAY(<dates|calendar>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates`|A column containing dates.|
+|`dates/calendar`|A column that contains dates or a calendar reference|
 
 ## Return value
 
-A table containing a single column of date values.
+For date column input, a table containing a single column of date values.
+For calendar input, a table that contains primary tagged columns for previous dates, in the current context.
 
 ## Remarks
 
@@ -43,6 +46,14 @@ The following sample formula creates a measure that calculates the 'previous day
 
 ```dax
 = CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSDAY('DateTime'[DateKey]))
+```
+
+## Example for calendar
+
+The following sample formula creates a measure that calculates the 'previous day sales' for Internet sales in terms of fiscal calendar.
+
+```dax
+= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSDAY(FiscalCalendar))
 ```
 
 ## Related content
