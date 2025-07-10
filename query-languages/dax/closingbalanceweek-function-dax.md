@@ -7,7 +7,7 @@ title: "CLOSINGBALANCEWEEK function (DAX)"
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
 Evaluates the `expression` at the last date of the week in the current context.
-Note: week function only works with calendar based time intelligence.
+Note: week functions only work with calendar based time intelligence.
 
 ## Syntax
 
@@ -34,10 +34,10 @@ A scalar value that represents the `expression` evaluated at the last date of th
 
 ## Example for calendar based time intelligence
 
-The following sample formula creates a measure that calculates the 'Year End Inventory Value' of the product inventory in terms of fiscal calendar.
+The following sample formula creates a measure that calculates the 'Week End Inventory Value' of the product inventory in terms of fiscal calendar.
 
 ```dax
-= CLOSINGBALANCEYEAR(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]), FiscalCalendar)
+= CLOSINGBALANCEWEEK(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]), FiscalCalendar)
 ```
 
 ## Related content
