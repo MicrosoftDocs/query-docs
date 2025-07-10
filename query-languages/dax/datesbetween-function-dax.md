@@ -26,12 +26,13 @@ DATESBETWEEN(<Dates|Calendar>, <StartDate>, <EndDate>)
 |Term|Definition|
 |--------|--------------|
 |`dates/calendar`|A column that contains dates or a calendar reference|
-|`StartDate`|A date/day expression. For calendar, please use the same data type as column that is tagged by Day.|
-|`EndDate`|A date/day expression. For calendar, please use the same data type as column that is tagged by Day.|
+|`StartDate`|A date/day expression. For calendar, please use the same data type and string format as column that is tagged by Day.|
+|`EndDate`|A date/day expression. For calendar, please use the same data type and string format as column that is tagged by Day.|
 
 ## Return value
 
-A table containing a single column of date values.
+For date column input, a table containing a single column of date values.
+For calendar input, a table that contains all the tagged column for the dates between, in the current context.
 
 ## Remarks
 
@@ -44,6 +45,8 @@ A table containing a single column of date values.
 - Dates used as the `StartDate` and `EndDate` are inclusive. So, for example, if the `StartDate` value is July 1, 2019, then that date will be included in the returned table (providing the date exists in the `dates` column).
 
 - For date column input, the returned table can only contain dates stored in the `Dates` column. So, for example, if the `Dates` column starts from July 1, 2017, and the `StartDate` value is July 1, 2016, the returned table will start from July 1, 2017.
+
+- For calendar input, if the input date is not found in tagged day column, the result will be undefined. Please provide valid date input.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
