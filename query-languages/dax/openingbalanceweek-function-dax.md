@@ -7,6 +7,7 @@ title: "OPENINGBALANCEWEEK function (DAX)"
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
 Evaluates the `expression` at the date corresponding to the end of the previous week in the current context.
+Note: week function only works with calendar based time intelligence.
 
 ## Syntax
 
@@ -28,26 +29,12 @@ A scalar value that represents the `expression` evaluated at the first date of t
 
 ## Remarks
 
-- The `dates` argument can be any of the following:
-  - A reference to a date/time column.
-  - A table expression that returns a single column of date/time values.
-  - A Boolean expression that defines a single-column table of date/time values.
-  
-- In addition to `dates`, a calendar reference could also be used at second argument.
-
 - Constraints on Boolean expressions are described in the topic, [CALCULATE function](calculate-function-dax.md).
 
 - The `filter` expression has restrictions described in the topic, [CALCULATE function](calculate-function-dax.md).
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-## Example
-
-The following sample formula creates a measure that calculates the 'Week Start Inventory Value' of the product inventory.
-
-```dax
-= OPENINGBALANCEWEEK(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])
-```
 
 ## Example for calendar based time intelligence
 
@@ -63,4 +50,4 @@ The following sample formula creates a measure that calculates the 'Week Start I
 [OPENINGBALANCEQUARTER function](openingbalancequarter-function-dax.md)
 [OPENINGBALANCEMONTH function](openingbalancemonth-function-dax.md)
 [Time intelligence functions](time-intelligence-functions-dax.md)
-[CLOSINGBALANCEMONTH function](closingbalancemonth-function-dax.md)
+[CLOSINGBALANCEWEEK function](closingbalanceweek-function-dax.md)
