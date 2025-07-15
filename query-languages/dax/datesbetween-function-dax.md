@@ -73,22 +73,18 @@ CALCULATE(
 Consider that the earliest date stored in the **Date** table is July 1, 2017. So, when a report filters the measure by the month of June 2020, the DATESBETWEEN function returns a date range from July 1, 2017 until June 30, 2020.
 
 ## Example for calendar based time intelligence
-This example calculates sum of sales for each month. It utilizes min/max to get inputs for datesbetween. Notice that we need to use day column as input when the column is tagged as day unit in fiscal calendar.
+The following **Sales** table measure definition uses the DATESBETWEEN function to produce a _life-to-date_ (LTD) calculation. Life-to-date represents the accumulation of a measure over time since the very beginning of time.
+
+Notice that the formula uses the [MAX](max-function-dax.md) function. This function returns the max datekey that's in the filter context. So, the DATESBETWEEN function returns a table of dates beginning from the earliest date until the latest date being reported.The example use datekey as example to show that calendar could tag on column other than date type.
 
 ```dax
-EVALUATE
-SUMMARIZECOLUMNS(
-    DimCalendar[Year], 
-    DimCalendar[MonthOfYear],
-    TREATAS( { 2013 }, DimCalendar[Year] ),
-    "Sum of Sales", 
-    CALCULATE(
-	SUm(FactInternetSales[SalesAmount]),
-        DatesBetween(
-            FiscalCalendar,
-            min(DimCalendar[Day]),
-            max(DimCalendar[Day])
-        )
+Customers LTD =
+CALCULATE(
+    DISTINCTCOUNT(Sales[CustomerKey]),
+    DATESBETWEEN(
+        FiscalCalendar,
+        BLANK(),
+        MAX('Date'[DateKey])
     )
 )
 ```

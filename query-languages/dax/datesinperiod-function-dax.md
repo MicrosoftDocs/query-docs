@@ -73,7 +73,7 @@ Consider that the report is filtered by the month of June 2020. The MAX function
 
 The following **Sales** table measure definition uses the DATESINPERIOD function to calculate revenue for the prior year (PY).
 
-Notice the formula uses the [MAX](max-function-dax.md) function. This function returns the latest date that's in the filter context. So, the DATESINPERIOD function returns primary columns beginning from latest date for the last year. Notice that input value needs to have same type and string format for day column that get tagged.
+Notice the formula uses the [MAX](max-function-dax.md) function. This function returns the latest date that's in the filter context. So, the DATESINPERIOD function returns primary columns beginning from latest date for the last year.  The example use datekey as example to show that calendar could tag on column other than date type.
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
 
@@ -83,7 +83,7 @@ CALCULATE(
     SUM(Sales[Sales Amount]),
     DATESINPERIOD(
         FiscalCalendar,
-        MAX('Date'[Day]),
+        MAX('Date'[DateKey]),
         -1,
         YEAR
     )
