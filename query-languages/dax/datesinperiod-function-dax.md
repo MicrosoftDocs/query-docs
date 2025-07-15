@@ -15,14 +15,14 @@ This function is suited to pass as a filter to the [CALCULATE](calculate-functio
 ## Syntax
 
 ```dax
-DATESINPERIOD(<Dates|Calendar>, <start_date>, <number_of_intervals>, <interval>)
+DATESINPERIOD(<dates> or <calendar>, <start_date>, <number_of_intervals>, <interval>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates/calendar`|A column that contains dates or a calendar reference|
+|`dates or calendar`|A column that contains dates or a calendar reference|
 |`start_date`|A date expression. For calendar, please use the same data type and string format as column that is tagged by Day.|
 |`number_of_intervals`|An integer that specifies the number of intervals to add to, or subtract from, the dates.|
 |`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `DAY`, `WEEK`, `MONTH`, `QUARTER`, and `YEAR`. Week could only be used with calendar.|

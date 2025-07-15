@@ -12,14 +12,14 @@ If input is calendar, returns periods of date in different period of window base
 ## Syntax
 
 ```dax
-DATEADD(<dates|calendar>,<number_of_intervals>,<interval>, <Extension>, <Truncation>)
+DATEADD(<dates> or <calendar>,<number_of_intervals>,<interval>, <Extension>, <Truncation>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates/calendar`|A column that contains dates or a calendar reference.|
+|`dates or calendar`|A column that contains dates or a calendar reference.|
 |`number_of_intervals`|An integer that specifies the number of intervals to add to or subtract from the dates.|
 |`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`, `day`|
 |`extension`|Only apply in calendar scenario. Define behavior when the original time period has fewer dates than the resulting time period. Valid values are: EXTENDING, PRECISE.|

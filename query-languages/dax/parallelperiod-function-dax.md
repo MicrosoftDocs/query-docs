@@ -13,14 +13,14 @@ For calendar input, returns a table that contains all primary tagged columns tha
 ## Syntax
 
 ```dax
-PARALLELPERIOD(<dates|calendar>,<number_of_intervals>,<interval>)
+PARALLELPERIOD(<dates> or <calendar>,<number_of_intervals>,<interval>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates/calendar`|A column that contains dates or a calendar reference|
+|`dates or calendar`|A column that contains dates or a calendar reference|
 |`number_of_intervals`|An integer that specifies the number of intervals to add to or subtract from the dates.|
 |`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`.|
 

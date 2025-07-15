@@ -11,7 +11,7 @@ Evaluates the value of the `expression` for the month to date, in the current co
 ## Syntax
 
 ```dax
-TOTALMTD(<expression>,<dates|calendar>[,<filter>])
+TOTALMTD(<expression>,<dates> or <calendar>[,<filter>])
 ```
 
 ### Parameters
@@ -19,7 +19,7 @@ TOTALMTD(<expression>,<dates|calendar>[,<filter>])
 |Parameter|Definition|
 |-------------|--------------|
 |`expression`|An expression that returns a scalar value.|
-|`dates/calendar`|A column that contains dates or a calendar reference.|
+|`dates or calendar`|A column that contains dates or a calendar reference.|
 |`filter`|(optional) An expression that specifies a filter to apply to the current context.|
 
 ## Return value

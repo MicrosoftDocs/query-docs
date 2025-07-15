@@ -12,14 +12,14 @@ For calendar input, returns a table that contains all the tagged columns for fir
 ## Syntax
 
 ```dax
-STARTOFQUARTER(<dates|calendar>)
+STARTOFQUARTER(<dates> or <calendar>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates/calendar`|A column that contains dates or a calendar reference|
+|`dates or calendar`|A column that contains dates or a calendar reference|
 
 ## Return value
 

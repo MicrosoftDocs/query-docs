@@ -13,14 +13,14 @@ For calendar input, returns primary tagged columns of all dates from the previou
 ## Syntax
 
 ```dax
-PREVIOUSMONTH(<Dates|Calendar>)
+PREVIOUSMONTH(<dates> or <calendar>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates/calendar`|A column that contains dates or a calendar reference|
+|`dates or calendar`|A column that contains dates or a calendar reference|
 
 ## Return value
 

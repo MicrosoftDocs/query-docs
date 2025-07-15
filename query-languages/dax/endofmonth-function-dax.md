@@ -12,14 +12,14 @@ For calendar input, returns a table that contains all primary tagged columns for
 ## Syntax
 
 ```dax
-ENDOFMONTH(<dates|calendar>)
+ENDOFMONTH(<dates> or <calendar>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates/calendar`|A column that contains dates or a calendar reference|
+|`dates or calendar`|A column that contains dates or a calendar reference|
 
 ## Return value
 

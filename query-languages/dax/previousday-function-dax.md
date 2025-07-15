@@ -13,14 +13,14 @@ For calendar input, returns primary tagged columns that is previous to the first
 ## Syntax
 
 ```dax
-PREVIOUSDAY(<dates|calendar>)
+PREVIOUSDAY(<dates> or <calendar>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates/calendar`|A column that contains dates or a calendar reference|
+|`dates or calendar`|A column that contains dates or a calendar reference|
 
 ## Return value
 

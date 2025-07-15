@@ -11,14 +11,14 @@ Returns a table that contains a column of all dates in the next year, based on t
 ## Syntax
 
 ```dax
-NEXTYEAR(<dates|calendar>[,<year_end_date>])
+NEXTYEAR(<dates> or <calendar>[,<year_end_date>])
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates/calendar`|A column that contains dates or a calendar reference|
+|`dates or calendar`|A column that contains dates or a calendar reference|
 |`year_end_date`|(optional) A literal string with a date that defines the year-end date. The default is December 31.|
 
 ## Return value

@@ -13,14 +13,14 @@ For calendar input, returns primary tagged columns of all dates from the next qu
 ## Syntax
 
 ```dax
-NEXTQUARTER(<dates|calendar>)
+NEXTQUARTER(<dates> or <calendar>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates/calendar`|A column that contains dates or a calendar reference|
+|`dates or calendar`|A column that contains dates or a calendar reference|
 
 ## Return value
 

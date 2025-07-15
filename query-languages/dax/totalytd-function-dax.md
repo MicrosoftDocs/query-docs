@@ -11,7 +11,7 @@ Evaluates the year-to-date value of the `expression` in the current context.
 ## Syntax
 
 ```dax
-TOTALYTD(<expression>,<dates|calendar>[,<filter>][,<year_end_date>])
+TOTALYTD(<expression>,<dates> or <calendar>[,<filter>][,<year_end_date>])
 ```
 
 ### Parameters
@@ -19,7 +19,7 @@ TOTALYTD(<expression>,<dates|calendar>[,<filter>][,<year_end_date>])
 |Parameter|Definition|
 |-------------|--------------|
 |`expression`|An expression that returns a scalar value.|
-|`dates/calendar`|A column that contains dates or a calendar reference|
+|`dates or calendar`|A column that contains dates or a calendar reference|
 |`filter`|(optional) An expression that specifies a filter to apply to the current context.|
 |`year_end_date`|(optional) A literal string with a date that defines the year-end date. The default is December 31.|
 

@@ -18,14 +18,14 @@ This function is suited to pass as a filter to the [CALCULATE](calculate-functio
 ## Syntax
 
 ```dax
-DATESBETWEEN(<Dates|Calendar>, <StartDate>, <EndDate>)
+DATESBETWEEN(<dates> or <calendar>, <StartDate>, <EndDate>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates/calendar`|A column that contains dates or a calendar reference|
+|`dates or calendar`|A column that contains dates or a calendar reference|
 |`StartDate`|A date/day expression. For calendar, please use the same data type and string format as column that is tagged by Day.|
 |`EndDate`|A date/day expression. For calendar, please use the same data type and string format as column that is tagged by Day.|
 
