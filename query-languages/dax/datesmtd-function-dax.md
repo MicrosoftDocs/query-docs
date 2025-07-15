@@ -54,7 +54,11 @@ The following sample formula creates a measure that calculates the 'Month To Dat
 The following sample formula creates a measure that calculates the 'Monthly Running Total' for Internet sales uing fiscal calendar.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESMTD(FiscalCalendar))
+=
+CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    DATESMTD ( FiscalCalendar )
+)
 ```
 
 ## Related content

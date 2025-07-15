@@ -55,7 +55,14 @@ The following sample formula creates a measure that calculates the 'Year Start I
 The following sample formula creates a measure that calculates the 'Year Start Inventory Value' of the product inventory in terms of fiscal calendar.
 
 ```dax
-= OPENINGBALANCEYEAR(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]), FiscalCalendar)
+=
+OPENINGBALANCEYEAR (
+    SUMX (
+        ProductInventory,
+        ProductInventory[UnitCost] * ProductInventory[UnitsBalance]
+    ),
+    FiscalCalendar
+)
 ```
 
 ## Related content

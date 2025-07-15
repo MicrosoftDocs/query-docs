@@ -57,7 +57,14 @@ The following sample formula creates a measure that calculates the 'Quarter End 
 The following sample formula creates a measure that calculates the 'Quarter End Inventory Value' of the product inventory in terms of fiscal calendar.
 
 ```dax
-= CLOSINGBALANCEQUARTER(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]), FiscalCalendar)
+=
+CLOSINGBALANCEQUARTER (
+    SUMX (
+        ProductInventory,
+        ProductInventory[UnitCost] * ProductInventory[UnitsBalance]
+    ),
+    FiscalCalendar
+)
 ```
 
 ## Related content

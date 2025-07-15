@@ -63,7 +63,11 @@ The following sample formula creates a measure that calculates the previous year
 The following sample formula creates a measure that calculates the previous year sales for Internet sales using fiscal calendar.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PARALLELPERIOD(FiscalCalendar,-1,year))
+=
+CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    PARALLELPERIOD ( FiscalCalendar, -1, YEAR )
+)
 ```
 
 ## Related content

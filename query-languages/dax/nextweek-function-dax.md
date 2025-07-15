@@ -39,7 +39,11 @@ For calendar input, a table that contains primary tagged columns for next week, 
 The following sample formula creates a measure that calculates the 'next week sales' for Internet sales.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), NEXTWEEK(FiscalCalendar))
+=
+CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    NEXTWEEK ( FiscalCalendar )
+)
 ```
 
 ## Related content

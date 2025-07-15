@@ -41,7 +41,14 @@ A scalar value that represents the `expression` evaluated at the first date of t
 The following sample formula creates a measure that calculates the 'Week Start Inventory Value' of the product inventory in terms of fiscal calendar.
 
 ```dax
-= OPENINGBALANCEWEEK(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]), FiscalCalendar)
+=
+OPENINGBALANCEWEEK (
+    SUMX (
+        ProductInventory,
+        ProductInventory[UnitCost] * ProductInventory[UnitsBalance]
+    ),
+    FiscalCalendar
+)
 ```
 
 ## Related content

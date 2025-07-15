@@ -53,7 +53,11 @@ The following sample formula creates a measure that calculates the 'next month s
 The following sample formula creates a measure that calculates the 'next month sales' for Internet sales.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), NEXTMONTH(FiscalCalendar))
+=
+CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    NEXTMONTH ( FiscalCalendar )
+)
 ```
 
 ## Related content

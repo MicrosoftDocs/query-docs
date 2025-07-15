@@ -53,7 +53,11 @@ The following sample formula creates a measure that calculates the 'next quarter
 The following sample formula creates a measure that calculates the 'next quarter sales' for Internet sales.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), NEXTQUARTER(FiscalCalendar))
+=
+CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    NEXTQUARTER ( FiscalCalendar )
+)
 ```
 
 ## Related content

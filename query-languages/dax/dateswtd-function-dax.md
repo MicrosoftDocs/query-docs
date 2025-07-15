@@ -35,7 +35,11 @@ For calendar input, a table that contains all primary tagged columns for week to
 The following sample formula creates a measure that calculates the 'Week To Date Total' for Internet sales uing fiscal calendar.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESWTD(FiscalCalendar))
+=
+CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    DATESWTD ( FiscalCalendar )
+)
 ```
 
 ## Related content

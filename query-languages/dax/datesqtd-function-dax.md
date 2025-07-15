@@ -54,7 +54,11 @@ The following sample formula creates a measure that calculates the 'Quarterly Ru
 The following sample formula creates a measure that calculates the 'Quarterly Running Total' for Internet sales uing fiscal calendar.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESQTD(FiscalCalendar))
+=
+CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    DATESQTD ( FiscalCalendar )
+)
 ```
 
 ## Related content

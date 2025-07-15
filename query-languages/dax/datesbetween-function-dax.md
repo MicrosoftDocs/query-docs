@@ -79,13 +79,9 @@ Notice that the formula uses the [MAX](max-function-dax.md) function. This funct
 
 ```dax
 Customers LTD =
-CALCULATE(
-    DISTINCTCOUNT(Sales[CustomerKey]),
-    DATESBETWEEN(
-        FiscalCalendar,
-        BLANK(),
-        MAX('Date'[DateKey])
-    )
+CALCULATE (
+    DISTINCTCOUNT ( Sales[CustomerKey] ),
+    DATESBETWEEN ( FiscalCalendar, BLANK (), MAX ( 'Date'[DateKey] ) )
 )
 ```
 

@@ -54,7 +54,11 @@ The following sample formula creates a measure that calculates the 'next year sa
 The following sample formula creates a measure that calculates the 'next year sales' for Internet sales.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), NEXTYEAR(FiscalCalendar))
+=
+CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    NEXTYEAR ( FiscalCalendar )
+)
 ```
 
 ## Related content

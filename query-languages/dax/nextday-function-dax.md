@@ -55,7 +55,11 @@ The following sample formula creates a measure that calculates the 'next day sal
 The following sample formula creates a measure that calculates the 'next day sales' of Internet sales.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), NEXTDAY(FiscalCalendar))
+=
+CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    NEXTDAY ( FiscalCalendar )
+)
 ```
 
 ## Related content

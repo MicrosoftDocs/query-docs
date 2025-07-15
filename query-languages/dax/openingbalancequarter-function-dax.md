@@ -52,7 +52,14 @@ The following sample formula creates a measure that calculates the 'Quarter Star
 The following sample formula creates a measure that calculates the 'Quarter Start Inventory Value' of the product inventory in terms of fiscal calendar.
 
 ```dax
-= OPENINGBALANCEQUARTER(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]), FiscalCalendar)
+=
+OPENINGBALANCEQUARTER (
+    SUMX (
+        ProductInventory,
+        ProductInventory[UnitCost] * ProductInventory[UnitsBalance]
+    ),
+    FiscalCalendar
+)
 ```
 
 ## Related content

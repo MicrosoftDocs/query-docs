@@ -53,7 +53,10 @@ The following sample formula creates a measure that calculates the 'previous mon
 The following sample formula creates a measure that calculates the 'previous month sales' for Internet sales in terms of fiscal calendar.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSMONTH(FiscalCalendar))
+= CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    PREVIOUSMONTH ( FiscalCalendar )
+)
 ```
 
 ## Related content

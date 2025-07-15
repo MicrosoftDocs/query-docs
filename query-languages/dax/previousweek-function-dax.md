@@ -40,7 +40,10 @@ For calendar input, a table that contains primary tagged columns for previous da
 The following sample formula creates a measure that calculates the 'previous week sales' for Internet sales in terms of fiscal calendar.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSWEEK(FiscalCalendar))
+= CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    PREVIOUSWEEK ( FiscalCalendar )
+)
 ```
 
 ## Related content
