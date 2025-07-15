@@ -10,7 +10,7 @@ Evaluates the `expression` at the last date of the year in the current context.
 
 ## Syntax
 
-```dax
+```
 CLOSINGBALANCEYEAR(<expression>,<dates> or <calendar>[,<filter>][,<year_end_date>])
 ```
 
