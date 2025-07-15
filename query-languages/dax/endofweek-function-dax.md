@@ -11,7 +11,7 @@ Note: week function only works with calendar based time intelligence.
 
 ## Syntax
 
-```dax
+```
 ENDOFWEEK(<calendar>)
 ```
 

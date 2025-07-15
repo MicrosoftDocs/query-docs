@@ -11,7 +11,7 @@ For calendar input, returns a table that contains all primary tagged columns for
 
 ## Syntax
 
-```dax
+```
 ENDOFQUARTER(<dates> or <calendar>)
 ```
 

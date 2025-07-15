@@ -12,7 +12,7 @@ For calendar input, returns primary tagged columns of all dates from the previou
 
 ## Syntax
 
-```dax
+```
 PREVIOUSQUARTER(<dates> or <calendar>)
 ```
 
@@ -45,7 +45,10 @@ For calendar input, a table that contains primary tagged columns for previous qu
 The following sample formula creates a measure that calculates the 'previous quarter sales' for Internet sales.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSQUARTER('DateTime'[DateKey]))
+= CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    PREVIOUSQUARTER ( 'DateTime'[DateKey] )
+)
 ```
 
 ## Example for calendar

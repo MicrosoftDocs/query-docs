@@ -10,7 +10,7 @@ Evaluates the value of the `expression` for the dates in the quarter to date, in
 
 ## Syntax
 
-```dax
+```
 TOTALQTD(<expression>,<dates> or <calendar>[,<filter>])
 ```
 

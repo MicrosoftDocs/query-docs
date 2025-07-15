@@ -12,7 +12,7 @@ For calendar input, returns primary tagged columns of all dates from the previou
 
 ## Syntax
 
-```dax
+```
 PREVIOUSMONTH(<dates> or <calendar>)
 ```
 

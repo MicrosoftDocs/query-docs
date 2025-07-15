@@ -10,7 +10,7 @@ Returns a table that contains a column of all dates in the next year, based on t
 
 ## Syntax
 
-```dax
+```
 NEXTYEAR(<dates> or <calendar>[,<year_end_date>])
 ```
 
@@ -46,7 +46,10 @@ For calendar input, a table that contains primary tagged columns for next quarte
 The following sample formula creates a measure that calculates the 'next year sales' for Internet sales.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), NEXTYEAR('DateTime'[DateKey]))
+= CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    NEXTYEAR ( 'DateTime'[DateKey] )
+)
 ```
 
 ## Example for calendar
@@ -54,8 +57,7 @@ The following sample formula creates a measure that calculates the 'next year sa
 The following sample formula creates a measure that calculates the 'next year sales' for Internet sales.
 
 ```dax
-=
-CALCULATE (
+= CALCULATE (
     SUM ( InternetSales_USD[SalesAmount_USD] ),
     NEXTYEAR ( FiscalCalendar )
 )

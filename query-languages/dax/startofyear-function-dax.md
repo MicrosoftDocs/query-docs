@@ -11,7 +11,7 @@ For calendar input, returns a table that contains all the tagged columns for fir
 
 ## Syntax
 
-```dax
+```
 STARTOFYEAR(<dates> or <calendar>)
 ```
 

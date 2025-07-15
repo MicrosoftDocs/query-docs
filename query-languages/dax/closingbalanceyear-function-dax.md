@@ -52,7 +52,13 @@ A scalar value that represents the `expression` evaluated at the last date of th
 The following sample formula creates a measure that calculates the 'Year End Inventory Value' of the product inventory.
 
 ```dax
-= CLOSINGBALANCEYEAR(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])
+= CLOSINGBALANCEYEAR (
+    SUMX (
+        ProductInventory,
+        ProductInventory[UnitCost] * ProductInventory[UnitsBalance]
+    ),
+    DateTime[DateKey]
+)
 ```
 
 ## Example for calendar based time intelligence

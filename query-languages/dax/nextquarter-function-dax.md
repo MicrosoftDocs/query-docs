@@ -12,7 +12,7 @@ For calendar input, returns primary tagged columns of all dates from the next qu
 
 ## Syntax
 
-```dax
+```
 NEXTQUARTER(<dates> or <calendar>)
 ```
 
@@ -45,7 +45,10 @@ For calendar input, a table that contains primary tagged columns for next quarte
 The following sample formula creates a measure that calculates the 'next quarter sales' for Internet sales.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), NEXTQUARTER('DateTime'[DateKey]))
+= CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    NEXTQUARTER ( 'DateTime'[DateKey] )
+)
 ```
 
 ## Example for calendar

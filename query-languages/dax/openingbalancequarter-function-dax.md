@@ -10,7 +10,7 @@ Evaluates the `expression` at the date corresponding to the end of the previous 
 
 ## Syntax
 
-```dax
+```
 OPENINGBALANCEQUARTER(<expression>,<dates> or <calendar>[,<filter>])
 ```
 
@@ -44,7 +44,14 @@ A scalar value that represents the `expression` evaluated at the first date of t
 The following sample formula creates a measure that calculates the 'Quarter Start Inventory Value' of the product inventory.
 
 ```dax
-= OPENINGBALANCEQUARTER(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])
+=
+OPENINGBALANCEQUARTER (
+    SUMX (
+        ProductInventory,
+        ProductInventory[UnitCost] * ProductInventory[UnitsBalance]
+    ),
+    DateTime[DateKey]
+)
 ```
 
 ## Example for calendar based time intelligence

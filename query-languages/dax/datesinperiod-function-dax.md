@@ -14,7 +14,7 @@ This function is suited to pass as a filter to the [CALCULATE](calculate-functio
 
 ## Syntax
 
-```dax
+```
 DATESINPERIOD(<dates> or <calendar>, <start_date>, <number_of_intervals>, <interval>)
 ```
 
@@ -56,14 +56,9 @@ Notice the formula uses the [MAX](max-function-dax.md) function. This function r
 
 ```dax
 Revenue PY =
-CALCULATE(
-    SUM(Sales[Sales Amount]),
-    DATESINPERIOD(
-        'Date'[Date],
-        MAX('Date'[Date]),
-        -1,
-        YEAR
-    )
+CALCULATE (
+    SUM ( Sales[Sales Amount] ),
+    DATESINPERIOD ( 'Date'[Date], MAX ( 'Date'[Date] ), -1, YEAR )
 )
 ```
 

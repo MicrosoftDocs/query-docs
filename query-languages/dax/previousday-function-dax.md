@@ -12,7 +12,7 @@ For calendar input, returns primary tagged columns that is previous to the first
 
 ## Syntax
 
-```dax
+```
 PREVIOUSDAY(<dates> or <calendar>)
 ```
 
@@ -45,7 +45,10 @@ For calendar input, a table that contains primary tagged columns for previous da
 The following sample formula creates a measure that calculates the 'previous day sales' for Internet sales.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSDAY('DateTime'[DateKey]))
+= CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    PREVIOUSDAY ( 'DateTime'[DateKey] )
+)
 ```
 
 ## Example for calendar

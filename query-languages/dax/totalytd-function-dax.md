@@ -10,7 +10,7 @@ Evaluates the year-to-date value of the `expression` in the current context.
 
 ## Syntax
 
-```dax
+```
 TOTALYTD(<expression>,<dates> or <calendar>[,<filter>][,<year_end_date>])
 ```
 

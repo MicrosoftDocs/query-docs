@@ -11,7 +11,7 @@ If input is calendar, returns periods of date in different period of window base
 
 ## Syntax
 
-```dax
+```
 DATEADD(<dates> or <calendar>,<number_of_intervals>,<interval>, <Extension>, <Truncation>)
 ```
 
@@ -65,7 +65,7 @@ In calendar scenario, the extension enum controls behavior when it shift from sm
 The following formula calculates dates that are one year before the dates in the current context.
 
 ```dax
-= DATEADD(DateTime[DateKey],-1,year)
+= DATEADD ( DateTime[DateKey], -1, YEAR )
 ```
 
 ## Special behavior when input is date column
@@ -84,7 +84,7 @@ Calendar based time intelligence provides more control by two specific enums. Pl
 The following formula calculates dates that are one year before the dates in the current context.
 
 ```dax
-= DATEADD(FiscalCalendar,-1,year)
+DATEADD ( FiscalCalendar, -1, YEAR )
 ```
 
 ## Related content

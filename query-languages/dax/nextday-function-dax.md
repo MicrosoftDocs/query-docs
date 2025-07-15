@@ -12,7 +12,7 @@ For calendar input, returns primary tagged columns of all dates from the next da
 
 ## Syntax
 
-```dax
+```
 NEXTDAY(<dates> or <calendar>)
 ```
 
@@ -47,7 +47,10 @@ For calendar input, a table that contains primary tagged columns for next day, i
 The following sample formula creates a measure that calculates the 'next day sales' of Internet sales.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), NEXTDAY('DateTime'[DateKey]))
+= CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    NEXTDAY ( 'DateTime'[DateKey] )
+)
 ```
 
 ## Example for calendar

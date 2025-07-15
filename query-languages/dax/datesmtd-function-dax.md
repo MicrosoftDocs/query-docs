@@ -11,7 +11,7 @@ For calendar input, returns a table that contains all the tagged column for the 
 
 ## Syntax
 
-```dax
+```
 DATESMTD(<dates> or <calendar>)
 ```
 
@@ -46,7 +46,10 @@ The `dates` argument can be any of the following:
 The following sample formula creates a measure that calculates the 'Month To Date Total' for Internet Sales.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESMTD(DateTime[DateKey]))
+= CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    DATESMTD ( DateTime[DateKey] )
+)
 ```
 
 ## Example for calendar based time intelligence

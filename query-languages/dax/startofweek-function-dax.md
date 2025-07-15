@@ -10,7 +10,7 @@ Note: week functions only work with calendar based time intelligence.
 
 ## Syntax
 
-```dax
+```
 STARTOFWEEK(<calendar>)
 ```
 

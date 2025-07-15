@@ -17,7 +17,7 @@ This function is suited to pass as a filter to the [CALCULATE](calculate-functio
 
 ## Syntax
 
-```dax
+```
 DATESBETWEEN(<dates> or <calendar>, <StartDate>, <EndDate>)
 ```
 
@@ -60,13 +60,9 @@ Notice that the formula uses the [MAX](max-function-dax.md) function. This funct
 
 ```dax
 Customers LTD =
-CALCULATE(
-    DISTINCTCOUNT(Sales[CustomerKey]),
-    DATESBETWEEN(
-        'Date'[Date],
-        BLANK(),
-        MAX('Date'[Date])
-    )
+CALCULATE (
+    DISTINCTCOUNT ( Sales[CustomerKey] ),
+    DATESBETWEEN ( 'Date'[Date], BLANK (), MAX ( 'Date'[Date] ) )
 )
 ```
 

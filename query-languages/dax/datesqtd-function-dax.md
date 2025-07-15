@@ -11,7 +11,7 @@ For calendar input, returns a table that contains all the tagged column for quar
 
 ## Syntax
 
-```dax
+```
 DATESQTD(<dates> or <calendar>)
 ```
 
@@ -46,7 +46,10 @@ The `dates` argument can be any of the following:
 The following sample formula creates a measure that calculates the 'Quarterly Running Total' of Internet Sales.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESQTD(DateTime[DateKey]))
+= CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    DATESQTD ( DateTime[DateKey] )
+)
 ```
 
 ## Example for calendar based time intelligence
@@ -54,8 +57,7 @@ The following sample formula creates a measure that calculates the 'Quarterly Ru
 The following sample formula creates a measure that calculates the 'Quarterly Running Total' for Internet sales uing fiscal calendar.
 
 ```dax
-=
-CALCULATE (
+= CALCULATE (
     SUM ( InternetSales_USD[SalesAmount_USD] ),
     DATESQTD ( FiscalCalendar )
 )

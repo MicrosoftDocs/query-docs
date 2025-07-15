@@ -10,7 +10,7 @@ Evaluates the `expression` at the date corresponding to the end of the previous 
 
 ## Syntax
 
-```dax
+```
 OPENINGBALANCEYEAR(<expression>,<dates> or <calendar>[,<filter>][,<year_end_date>])
 ```
 
@@ -47,7 +47,14 @@ A scalar value that represents the `expression` evaluated at the first date of t
 The following sample formula creates a measure that calculates the 'Year Start Inventory Value' of the product inventory.
 
 ```dax
-= OPENINGBALANCEYEAR(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])
+=
+OPENINGBALANCEYEAR (
+    SUMX (
+        ProductInventory,
+        ProductInventory[UnitCost] * ProductInventory[UnitsBalance]
+    ),
+    DateTime[DateKey]
+)
 ```
 
 ## Example for calendar based time intelligence

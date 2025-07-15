@@ -12,7 +12,7 @@ For calendar input, returns a table that contains all primary tagged columns tha
 
 ## Syntax
 
-```dax
+```
 PARALLELPERIOD(<dates> or <calendar>,<number_of_intervals>,<interval>)
 ```
 
@@ -55,7 +55,10 @@ For calendar input, a table that contains all the tagged column for the year to 
 The following sample formula creates a measure that calculates the previous year sales for Internet sales.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PARALLELPERIOD(DateTime[DateKey],-1,year))
+= CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    PARALLELPERIOD ( DateTime[DateKey], -1, YEAR )
+)
 ```
 
 ## Example for calendar based time intelligence
@@ -63,8 +66,7 @@ The following sample formula creates a measure that calculates the previous year
 The following sample formula creates a measure that calculates the previous year sales for Internet sales using fiscal calendar.
 
 ```dax
-=
-CALCULATE (
+= CALCULATE (
     SUM ( InternetSales_USD[SalesAmount_USD] ),
     PARALLELPERIOD ( FiscalCalendar, -1, YEAR )
 )

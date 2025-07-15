@@ -11,7 +11,7 @@ Note: weeks function only work with calendar based time intelligence.
 
 ## Syntax
 
-```dax
+```
 DATESWTD(<calendar>)
 ```
 

@@ -48,7 +48,10 @@ For calendar input, a table that contains primary tagged columns for previous ye
 The following sample formula creates a measure that calculates the previous year sales for Internet sales.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSYEAR('DateTime'[DateKey]))
+= CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    PREVIOUSYEAR ( 'DateTime'[DateKey] )
+)
 ```
 
 ## Example for calendar

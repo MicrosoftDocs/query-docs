@@ -11,7 +11,7 @@ For calendar input, returns a table that contains all the tagged column for year
 
 ## Syntax
 
-```dax
+```
 DATESYTD(<dates> or <calendar> [,<year_end_date>])
 ```
 
@@ -49,7 +49,10 @@ The `dates` argument can be any of the following:
 The following sample formula creates a measure that calculates the 'Running Total' for Internet sales.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESYTD(DateTime[DateKey]))
+= CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    DATESYTD ( DateTime[DateKey] )
+)
 ```
 
 The following sample formula creates a measure that calculates the 'Fiscal Year Running Total' for Internet sales, using a US Locale for the Date format.

@@ -12,7 +12,7 @@ Note: weeks function only work with calendar based time intelligence.
 
 ## Syntax
 
-```dax
+```
 NEXTWEEK(<calendar>)
 ```
 

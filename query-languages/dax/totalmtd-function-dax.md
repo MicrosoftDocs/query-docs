@@ -10,7 +10,7 @@ Evaluates the value of the `expression` for the month to date, in the current co
 
 ## Syntax
 
-```dax
+```
 TOTALMTD(<expression>,<dates> or <calendar>[,<filter>])
 ```
 
