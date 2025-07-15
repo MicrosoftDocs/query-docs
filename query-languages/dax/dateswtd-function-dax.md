@@ -2,7 +2,7 @@
 description: "Learn more about: DATESWTD"
 title: "DATESWTD function (DAX)"
 ---
-# DATESMTD
+# DATESWTD
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 

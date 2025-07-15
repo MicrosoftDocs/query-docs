@@ -2,7 +2,7 @@
 description: "Learn more about: PREVIOUSWEEK"
 title: "PREVIOUSWEEK function (DAX)"
 ---
-# PREVIOUSDAY
+# PREVIOUSWEEK
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 

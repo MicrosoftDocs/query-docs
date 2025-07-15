@@ -2,7 +2,7 @@
 description: "Learn more about: STARTOFWEEK"
 title: "STARTOFWEEK function (DAX)"
 ---
-# STARTOFMONTH
+# STARTOFWEEK
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 For calendar input, returns a table that contains all the tagged columns for first date of week, in the current context.
