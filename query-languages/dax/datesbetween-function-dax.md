@@ -31,7 +31,7 @@ DATESBETWEEN(<dates> or <calendar>, <StartDate>, <EndDate>)
 
 ## Return value
 
-For date column input, a table containing a single column of date values.
+For date column input, a table containing a single column of date values.  
 For calendar input, a table that contains all the tagged column for the dates between, in the current context.
 
 ## Remarks

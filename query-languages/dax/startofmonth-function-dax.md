@@ -5,7 +5,7 @@ title: "STARTOFMONTH function (DAX)"
 # STARTOFMONTH
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
-For date column input, returns the first date of month in the current context for the specified column of dates.
+For date column input, returns the first date of month in the current context for the specified column of dates.  
 For calendar input, returns a table that contains all primary tagged columns for first date of month, in the current context.
 
 ## Syntax
@@ -22,7 +22,7 @@ STARTOFMONTH(<dates> or <calendar>)
 
 ## Return value
 
-For date column input, a table containing a single column and single row with a date value.
+For date column input, a table containing a single column and single row with a date value.  
 For calendar input, a table that contains all the tagged column for first date of month, in the current context.
 
 ## Remarks

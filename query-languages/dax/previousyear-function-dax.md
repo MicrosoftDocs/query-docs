@@ -25,7 +25,7 @@ PREVIOUSYEAR(<dates> or <calendar>[,<year_end_date>])
 
 ## Return value
 
-For date column input, a table containing a single column of date values.
+For date column input, a table containing a single column of date values.  
 For calendar input, a table that contains primary tagged columns for previous year, in the current context.
 
 ## Remarks
@@ -54,7 +54,7 @@ The following sample formula creates a measure that calculates the previous year
 )
 ```
 
-## Example for calendar
+## Example for calendar based time intelligence
 
 The following sample formula creates a measure that calculates the 'previous quarter sales' for Internet sales in terms of fiscal calendar.
 

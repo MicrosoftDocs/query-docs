@@ -6,7 +6,7 @@ title: "DATESQTD function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-For date column input, returns a table that contains a column of the dates for quarter to date, in the current context.
+For date column input, returns a table that contains a column of the dates for quarter to date, in the current context.    
 For calendar input, returns a table that contains all the tagged column for quarter to date, in the current context.
 
 ## Syntax

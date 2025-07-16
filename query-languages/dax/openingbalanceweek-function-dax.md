@@ -6,7 +6,7 @@ title: "OPENINGBALANCEWEEK function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Evaluates the `expression` at the date corresponding to the end of the previous week in the current context.
+Evaluates the `expression` at the date corresponding to the end of the previous week in the current context.  
 Note: week functions only work with calendar based time intelligence.
 
 ## Syntax

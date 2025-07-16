@@ -51,7 +51,7 @@ The following sample formula creates a measure that calculates the 'next month s
 )
 ```
 
-## Example for calendar
+## Example for calendar based time intelligence
 
 The following sample formula creates a measure that calculates the 'next month sales' for Internet sales.
 

@@ -6,7 +6,7 @@ title: "DATESYTD function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-For date column input, returns a table that contains a column of the dates for year to date, in the current context.
+For date column input, returns a table that contains a column of the dates for year to date, in the current context.  
 For calendar input, returns a table that contains all the tagged column for year to date, in the current context.
 
 ## Syntax
@@ -24,7 +24,7 @@ DATESYTD(<dates> or <calendar> [,<year_end_date>])
 
 ## Return value
 
-For date column input, a table containing a single column of date values.
+For date column input, a table containing a single column of date values.  
 For calendar input, a table that contains all the tagged column for the year to date, in the current context.
 
 ## Remarks

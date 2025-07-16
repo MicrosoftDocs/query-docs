@@ -24,7 +24,7 @@ NEXTQUARTER(<dates> or <calendar>)
 
 ## Return value
 
-For date column input, a table containing a single column of date values.
+For date column input, a table containing a single column of date values.  
 For calendar input, a table that contains primary tagged columns for next quarter, in the current context.
 
 ## Remarks
@@ -51,7 +51,7 @@ The following sample formula creates a measure that calculates the 'next quarter
 )
 ```
 
-## Example for calendar
+## Example for calendar based time intelligence
 
 The following sample formula creates a measure that calculates the 'next quarter sales' for Internet sales.
 

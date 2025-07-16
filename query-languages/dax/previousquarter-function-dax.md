@@ -24,7 +24,7 @@ PREVIOUSQUARTER(<dates> or <calendar>)
 
 ## Return value
 
-For date column input, a table containing a single column of date values.
+For date column input, a table containing a single column of date values.  
 For calendar input, a table that contains primary tagged columns for previous quarter, in the current context.
 
 ## Remarks

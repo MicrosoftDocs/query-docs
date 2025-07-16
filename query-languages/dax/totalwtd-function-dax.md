@@ -6,7 +6,7 @@ title: "TOTALWTD function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Evaluates the value of the `expression` for the week to date, in the current context.
+Evaluates the value of the `expression` for the week to date, in the current context.  
 Note: weeks function only work with calendar based time intelligence.
 
 ## Syntax
@@ -50,4 +50,4 @@ The following sample formula creates a measure that calculates the 'week running
 [CALCULATE](calculate-function-dax.md)
 [TOTALYTD](totalytd-function-dax.md)
 [TOTALQTD](totalqtd-function-dax.md)
-[TOTALMTD](totalqtd-function-dax.md)
+[TOTALMTD](totalmtd-function-dax.md)

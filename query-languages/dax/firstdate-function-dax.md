@@ -6,7 +6,7 @@ title: "FIRSTDATE function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-For date column input, returns the first date in the current context for the specified column of dates.
+For date column input, returns the first date in the current context for the specified column of dates.  
 
 For calendar input, returns the first date in the current context from calendar.
 
@@ -51,7 +51,7 @@ The following sample formula creates a measure that obtains the first date when 
 = FIRSTDATE('InternetSales_USD'[SaleDateKey])
 ```
 
-## Example for calendar
+## Example for calendar based time intelligence
 
 The following sample formula creates a measure that obtains the first date when a sale was made in the Internet sales channel for the current context.
 

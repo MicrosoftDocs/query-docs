@@ -24,7 +24,7 @@ PREVIOUSMONTH(<dates> or <calendar>)
 
 ## Return value
 
-For date column input, a table containing a single column of date values.
+For date column input, a table containing a single column of date values.  
 For calendar input, a table that contains primary tagged columns for previous month, in the current context.
 
 ## Remarks

@@ -35,7 +35,7 @@ For calendar input, a table that contains primary tagged columns for previous da
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 
-## Example for calendar
+## ## Example for calendar based time intelligence
 
 The following sample formula creates a measure that calculates the 'previous week sales' for Internet sales in terms of fiscal calendar.
 

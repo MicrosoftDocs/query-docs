@@ -6,7 +6,9 @@ title: "NEXTYEAR function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns a table that contains a column of all dates in the next year, based on the first date in the `dates` column, in the current context.
+For date column input, returns a table that contains a column of all dates in the next year, based on the first date in the `dates` column, in the current context.
+
+For calendar input, returns primary tagged columns of all dates from the next year, based on the first date in the current context.
 
 ## Syntax
 
@@ -23,7 +25,7 @@ NEXTYEAR(<dates> or <calendar>[,<year_end_date>])
 
 ## Return value
 
-For date column input, a table containing a single column of date values.
+For date column input, a table containing a single column of date values.  
 For calendar input, a table that contains primary tagged columns for next quarter, in the current context.
 
 ## Remarks
@@ -52,7 +54,7 @@ The following sample formula creates a measure that calculates the 'next year sa
 )
 ```
 
-## Example for calendar
+## Example for calendar based time intelligence
 
 The following sample formula creates a measure that calculates the 'next year sales' for Internet sales.
 

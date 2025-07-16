@@ -6,13 +6,13 @@ title: "LASTDATE function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-For date column input, returns the last date in the current context for the specified column of dates.
+For date column input, returns the last date in the current context for the specified column of dates.  
 
 For calendar input, returns the last date in the current context from calendar.
 
 ## Syntax
 
-```dax
+```
 LASTDATE(<dates> or <calendar>)
 ```
 
@@ -51,12 +51,12 @@ The following sample formula creates a measure that obtains the last date, for t
 = LASTDATE('InternetSales_USD'[SaleDateKey])
 ```
 
-## Example for calendar
+## Example for calendar based time intelligence
 
 The following sample formula creates a measure that obtains the last date, for the current context, when a sale was made in the Internet sales channel.
 
 ```dax
-= LASTDATE('InternetSales_USD'[SaleDateKey])
+= LASTDATE(FiscalCalendar)
 ```
 
 ## Related content

@@ -6,7 +6,7 @@ title: "ENDOFWEEK function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-For calendar input, returns all primary tagged columns for last date of week, in the current context.
+For calendar input, returns all primary tagged columns for last date of week, in the current context.  
 Note: week function only works with calendar based time intelligence.
 
 ## Syntax
@@ -33,7 +33,7 @@ For calendar input, a table that contains all primary tagged columns for end dat
 
 ## Example for calendar based time intelligence
 
-The following sample formula returns tagged primary columns that corresponds to the end of the month, for the fiscal calendar.
+The following sample formula returns tagged primary columns that corresponds to the end of the week, for the fiscal calendar.
 
 ```dax
 = ENDOFWEEK(FiscalCalendar)

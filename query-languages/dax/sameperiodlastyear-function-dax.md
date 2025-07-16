@@ -6,23 +6,26 @@ title: "SAMEPERIODLASTYEAR function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns a table that contains a column of dates shifted one year back in time from the dates in the specified `dates` column, in the current context.
+For date column input, returns a table that contains a column of dates shifted one year back in time from the dates in the specified `dates` column, in the current context.
+
+For calendar input, returns primary tagged columns that shifted one year back in time from the dates in calendar, in the current context.
 
 ## Syntax
 
-```dax
-SAMEPERIODLASTYEAR(<dates>)
+```
+SAMEPERIODLASTYEAR(<dates> or <calendar>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates`|A column containing dates.|
+|`dates or calendar`|A column that contains dates or a calendar reference|
 
 ## Return value
 
-A single-column table of date values.
+For date column input, return a single-column table of date values.  
+For calendar input, return a table that contains primary tagged columns.
 
 ## Remarks
 
@@ -53,6 +56,14 @@ This behavior only happens when last two days of month are included in the selec
 
 ```dax
 = SAMEPERIODLASTYEAR(DateTime[DateKey])
+```
+
+## Example for calendar based time intelligence
+
+The following sample formula creates a measure that calculates the previous year sales of Reseller sales.
+
+```dax
+= CALCULATE(SUM(ResellerSales_USD[SalesAmount_USD]), SAMEPERIODLASTYEAR(FiscalCalendar))
 ```
 
 ## Related content
