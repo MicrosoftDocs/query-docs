@@ -2,7 +2,7 @@
 description: "Learn more about: Local, fixed, and UTC variants of current time functions"
 title: "Local, fixed, and UTC variants of current time functions"
 ms.topic: conceptual
-ms.date: 6/11/2025
+ms.date: 7/16/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-background
 ---
@@ -44,7 +44,7 @@ Power Query M provides four functions for retrieving the current local time:
 * `DateTime.LocalNow` returns the current local `datetime` each time the expression is evaluated.
 * `DateTime.FixedLocalNow` returns the local `datetime` once per query evaluation, acting as a snapshot.
 * `DateTimeZone.LocalNow` returns the current local `datetimezone` each time the expression is evaluated.
-* `DateTimeZone.FixedLocal` now returns the local `datetimezone` once per query evaluation, acting as a snapshot
+* `DateTimeZone.FixedLocalNow` returns the local `datetimezone` once per query evaluation, acting as a snapshot
 
 To demonstrate the difference, the following example generates a table with multiple rows. Each row captures a fresh `DateTime.LocalNow` value using a delay to ensure distinct timestamps, while each captured `DateTime.FixedLocalNow` value remains constant across all rows.
 
