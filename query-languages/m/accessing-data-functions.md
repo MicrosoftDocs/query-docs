@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Accessing data functions"
 title: "Accessing data functions"
-ms.date: 1/17/2025
+ms.date: 7/16/2025
 ms.custom: "nonautomated-date"
 ---
 # Accessing data functions
@@ -42,8 +42,8 @@ These functions access data and return table values. Most of these functions ret
 |[Cube.ReplaceDimensions](cube-replacedimensions.md)|Replaces the set of dimensions returned by [Cube.Dimensions](/powerquery-m/cube-dimensions).|
 |[Cube.Transform](cube-transform.md)|Applies a list of cube functions.|
 |[DB2.Database](db2-database.md)|Returns a table of SQL tables and views available in a Db2 database.|
-|[DeltaLake.Metadata](deltalake-metadata.md)|Given a Delta Lake table, returns the log entries for that table.|
-|[DeltaLake.Table](deltalake-table.md)|Returns the contents of the Delta Lake table.|
+|[DeltaLake.Metadata](deltalake-metadata.md)|This function is unavailable in the current context.|
+|[DeltaLake.Table](deltalake-table.md)|This function is unavailable in the current context.|
 |[Essbase.Cubes](essbase-cubes.md)|Returns the cubes in an Essbase instance grouped by Essbase server.|
 |[Excel.CurrentWorkbook](excel-currentworkbook.md)|Returns the contents of the current Excel workbook.|
 |[Excel.Workbook](excel-workbook.md)|Returns the contents of the Excel workbook.|
@@ -72,7 +72,7 @@ These functions access data and return table values. Most of these functions ret
 |[OleDb.DataSource](oledb-datasource.md)|Returns a table of SQL tables and views from the OLE DB data source.|
 |[OleDb.Query](oledb-query.md)|Returns the result of running a native query on an OLE DB data source.|
 |[Oracle.Database](oracle-database.md)|Returns a table of SQL tables and views from the Oracle database.|
-|[Pdf.Tables](pdf-tables.md)|Returns any tables found in a PDF file.|
+|[Pdf.Tables](pdf-tables.md)|This function is unavailable in the current context.|
 |[PostgreSQL.Database](postgresql-database.md)|Returns a table of SQL tables and views available in a PostgreSQL database.|
 |[RData.FromBinary](rdata-frombinary.md)|Returns a record of data frames from the RData file.|
 |[Salesforce.Data](salesforce-data.md)|Returns the objects from the Salesforce account.|

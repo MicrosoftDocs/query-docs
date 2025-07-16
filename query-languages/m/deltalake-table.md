@@ -8,9 +8,9 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-DeltaLake.Table(<b>directory</b> as table, optional <b>options</b> as nullable record) as any
+DeltaLake.Table() as nullable none
 </pre>
 
 ## About
 
-Returns the contents of the Delta Lake table.
+This function is unavailable in the current context.
