@@ -12,7 +12,7 @@ If input is calendar, returns periods of date in different period of window base
 ## Syntax
 
 ```
-DATEADD(<dates> or <calendar>,<number_of_intervals>,<interval>, <Extension>, <Truncation>)
+DATEADD(<dates> or <calendar>, <number_of_intervals>, <interval>[,<Extension>],[,<Truncation>])
 ```
 
 ### Parameters

@@ -12,7 +12,7 @@ Note: week functions only work with calendar based time intelligence.
 ## Syntax
 
 ```
-CLOSINGBALANCEWEEK(<expression>,<calendar>[,<filter>])
+CLOSINGBALANCEWEEK(<expression>, <calendar>[,<filter>])
 ```
 
 ### Parameters

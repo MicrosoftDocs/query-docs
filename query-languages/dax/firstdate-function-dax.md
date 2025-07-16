@@ -6,23 +6,27 @@ title: "FIRSTDATE function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns the first date in the current context for the specified column of dates.
+For date column input, returns the first date in the current context for the specified column of dates.
+
+For calendar input, returns the first date in the current context from calendar.
 
 ## Syntax
 
-```dax
-FIRSTDATE(<dates>)
+```
+FIRSTDATE(<dates> or <calendar>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates`|A column that contains dates.|
+|`dates or calendar`|A column that contains dates or a calendar reference|
 
 ## Return value
 
-A table containing a single column and single row with a date value.
+For date column input, a table containing a single column and single row with a date value.
+
+For calendar input, a table that contains primary tagged columns for first day, in the current context.
 
 ## Remarks
 
@@ -35,7 +39,7 @@ A table containing a single column and single row with a date value.
 
 - When the current context is a single date, the date returned by the FIRSTDATE and LASTDATE functions will be equal.
 
-- The Return value is a table that contains a single column and single value. Therefore, this function can be used as an argument to any function that requires a table in its arguments. Also, the returned value can be used whenever a date value is required.
+- For date column input, the Return value is a table that contains a single column and single value. Therefore, this function can be used as an argument to any function that requires a table in its arguments. Also, the returned value can be used whenever a date value is required.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
@@ -45,6 +49,14 @@ The following sample formula creates a measure that obtains the first date when 
 
 ```dax
 = FIRSTDATE('InternetSales_USD'[SaleDateKey])
+```
+
+## Example for calendar
+
+The following sample formula creates a measure that obtains the first date when a sale was made in the Internet sales channel for the current context.
+
+```dax
+= FIRSTDATE(FiscalCalendar)
 ```
 
 ## Related content

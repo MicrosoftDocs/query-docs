@@ -71,8 +71,7 @@ The following sample formula creates a measure that calculates the 'Fiscal Year 
 The following sample formula creates a measure that calculates the 'Running Total' for Internet sales uing fiscal calendar.
 
 ```dax
-=
-CALCULATE (
+= CALCULATE (
     SUM ( InternetSales_USD[SalesAmount_USD] ),
     DATESYTD ( FiscalCalendar )
 )
