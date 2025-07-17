@@ -8,7 +8,7 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Cdm.Contents() as nullable none
+Cdm.Contents(<b>table</b> as table) as table
 </pre>
 
 ## About

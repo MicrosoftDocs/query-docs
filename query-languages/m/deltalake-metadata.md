@@ -8,9 +8,9 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-DeltaLake.Metadata() as nullable none
+DeltaLake.Metadata(<b>table</b> as table) as table
 </pre>
 
 ## About
 
-This function is unavailable in the current context.
+Given a Delta Lake table, returns the log entries for that table.
