@@ -1124,6 +1124,8 @@ items:
         href: table-nestedjoin.md
       - name: Table.Partition
         href: table-partition.md
+      - name: Table.PartionKey
+        href: table-partitionkey.md
       - name: Table.PartitionValues
         href: table-partitionvalues.md
       - name: Table.Pivot
@@ -1164,6 +1166,8 @@ items:
         href: table-replacekeys.md
       - name: Table.ReplaceMatchingRows
         href: table-replacematchingrows.md
+      - name: Table.ReplacePartitionKey
+        href: table-replacepartitionkey.md
       - name: Table.ReplaceRelationshipIdentity
         href: table-replacerelationshipidentity.md
       - name: Table.ReplaceRows
@@ -1386,10 +1390,14 @@ items:
         href: type-replacefacets.md
       - name: Type.ReplaceTableKeys
         href: type-replacetablekeys.md
+      - name: Type.ReplaceTablePartitionKey
+        href: type-replacetablepartitionkey.md
       - name: Type.TableColumn
         href: type-tablecolumn.md
       - name: Type.TableKeys
         href: type-tablekeys.md
+      - name: Type.TablePartitionKey
+        href: type-tablepartitionkey.md
       - name: Type.TableRow
         href: type-tablerow.md
       - name: Type.TableSchema
@@ -1484,6 +1492,8 @@ items:
         href: value-viewfunction.md
       - name: Variable.Value
         href: variable-value.md
+      - name: Variable.ValueOrDefault
+        href: variable-valueordefault.md  
   - name: Enumerations
     items:
     - name: Enumerations
