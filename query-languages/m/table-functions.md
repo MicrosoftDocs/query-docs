@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table functions"
 title: "Table functions"
-ms.date: 6/19/2025
+ms.date: 7/16/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-source
 ---
@@ -129,8 +129,10 @@ These functions create and manipulate table values.
 |[Table.Join](table-join.md)|Joins the rows from the two tables that match based on the given keys.|
 |[Table.Keys](table-keys.md)|Returns the keys of the specified table.|
 |[Table.NestedJoin](table-nestedjoin.md)|Performs a join between tables on supplied columns and produces the join result in a new column.|
+|[Table.PartitionKey](table-partitionkey.md) | Returns the partition key of the specified table.|
 |[Table.ReplaceErrorValues](table-replaceerrorvalues.md)|Replaces the error values in the specified columns with the corresponding specified value.|
 |[Table.ReplaceKeys](table-replacekeys.md)|Replaces the keys of the specified table.|
+|[Table.ReplacePartitionKey](table-replacepartitionkey.md) | Replaces the partition key of the specified table.|
 |[Table.ReplaceRelationshipIdentity](table-replacerelationshipidentity.md)|This function is intended for internal use only.|
 |[Table.ReplaceValue](table-replacevalue.md)|Replaces one value with another in the specified columns.|
 |[Table.Split](table-split.md)|Splits the specified table into a list of tables using the specified page size.|
