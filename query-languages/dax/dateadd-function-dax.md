@@ -56,7 +56,7 @@ When input is calendar, below algorithm is executed when selection is on date le
 - Secondly, month is shifted.
 - Thirdly, 3rd-10th date of new month is returned.
 
-In calendar scenario, the extension enum controls behavior when it shift from small month to big month. Extending will get current dates toward the end of month. Precise will gets current dates only. Truncation enum controls behavior when big month goes to small month. Anchored will capture last date of month. For example, March 31 will go to Feb 28. For blanks, March 31 will get blank when it shifts to Feb.
+In calendar scenario, the extension parameter controls behavior when it shift from small month to big month. Extending will get current dates toward the end of month. Precise will gets current dates only. Truncation enum controls behavior when big month goes to small month. Anchored will capture last date of month. For example, March 31 will go to Feb 28. For blanks, March 31 will get blank when it shifts to Feb.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
