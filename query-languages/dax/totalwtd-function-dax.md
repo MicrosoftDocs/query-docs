@@ -7,7 +7,9 @@ title: "TOTALWTD function (DAX)"
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
 Evaluates the value of the `expression` for the week to date, in the current context.  
-Note: weeks function only work with calendar based time intelligence.
+
+> [!NOTE]
+> Week functions only work with calendar based time intelligence. 
 
 ## Syntax
 

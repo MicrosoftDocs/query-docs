@@ -8,7 +8,8 @@ title: "NEXTWEEK function (DAX)"
 
 For calendar input, returns primary tagged columns of all dates from the next week, based on the first date in the current context.
 
-Note: weeks function only work with calendar based time intelligence.
+> [!NOTE]
+> Week functions only work with calendar based time intelligence. 
 
 ## Syntax
 

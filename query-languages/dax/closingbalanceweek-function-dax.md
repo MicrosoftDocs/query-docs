@@ -6,8 +6,10 @@ title: "CLOSINGBALANCEWEEK function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Evaluates the `expression` at the last date of the week in the current context.  
-Note: week functions only work with calendar based time intelligence.
+Evaluates the `expression` at the last date of the week in the current context. 
+
+> [!NOTE]
+> Week functions only work with calendar based time intelligence. 
 
 ## Syntax
 
