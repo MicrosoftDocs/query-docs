@@ -6,9 +6,9 @@ title: "NEXTDAY function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-For date column input, returns a table that contains a column of all dates from the next day, based on the first date specified in the `dates` column in the current context.    
+For date column input, returns a table that contains a column of all dates from the next day, based on the last date specified in the `dates` column in the current context.    
 
-For calendar input, returns primary tagged columns of all dates from the next day, based on the first date in the current context.
+For calendar input, returns primary tagged columns of all dates from the next day, based on the last date in the current context.
 
 ## Syntax
 
@@ -29,7 +29,7 @@ For calendar input, a table that contains primary tagged columns for next day, i
 
 ## Remarks
 
-- For date column input, this function returns all dates from the next day to the first date in the input parameter. For example, if the first date in the `dates` argument refers to June 10, 2009; then this function returns all dates equal to June 11, 2009.
+- For date column input, this function returns all dates from the next day to the last date in the input parameter. For example, if the last date in the `dates` argument refers to June 10, 2009; then this function returns all dates equal to June 11, 2009.
 
 - The `dates` argument can be any of the following:
   - A reference to a date/time column.
@@ -69,6 +69,7 @@ CALCULATE (
 
 [Time intelligence functions](time-intelligence-functions-dax.md)
 [Date and time functions](date-and-time-functions-dax.md)
-[NEXTQUARTER function](nextquarter-function-dax.md)
+[NEXTWEEK function](nextweek-function-dax.md)
 [NEXTMONTH function](nextmonth-function-dax.md)
+[NEXTQUARTER function](nextquarter-function-dax.md)
 [NEXTYEAR function](nextyear-function-dax.md)

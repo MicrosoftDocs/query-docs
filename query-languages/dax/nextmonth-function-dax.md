@@ -6,9 +6,9 @@ title: "NEXTMONTH function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-For date column input, returns a table that contains a column of all dates from the next month, based on the first date in the `dates` column in the current context.
+For date column input, returns a table that contains a column of all dates from the next month, based on the last date in the `dates` column in the current context.
 
-For calendar input, returns primary tagged columns of all dates from the next month, based on the first date in the current context.
+For calendar input, returns primary tagged columns of all dates from the next month, based on the last date in the current context.
 
 ## Syntax
 
@@ -29,7 +29,7 @@ For calendar input, a table that contains primary tagged columns for next month,
 
 ## Remarks
 
-- This function returns all dates from the next month to the first date in the input parameter. For example, if the first date in the `dates` argument refers to June 10, 2009; then this function returns all dates for the month of July, 2009.
+- This function returns all dates from the next month to the last date in the input parameter. For example, if the last date in the `dates` argument refers to June 10, 2009; then this function returns all dates for the month of July, 2009.
 
 - The `dates` argument can be any of the following:
   - A reference to a date/time column.

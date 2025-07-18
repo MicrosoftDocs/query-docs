@@ -6,9 +6,9 @@ title: "NEXTYEAR function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-For date column input, returns a table that contains a column of all dates in the next year, based on the first date in the `dates` column, in the current context.
+For date column input, returns a table that contains a column of all dates in the next year, based on the last date in the `dates` column, in the current context.
 
-For calendar input, returns primary tagged columns of all dates from the next year, based on the first date in the current context.
+For calendar input, returns primary tagged columns of all dates from the next year, based on the last date in the current context.
 
 ## Syntax
 
@@ -30,7 +30,7 @@ For calendar input, a table that contains primary tagged columns for next year, 
 
 ## Remarks
 
-- This function returns all dates in the next year, based on the first date in the input column. For example, if the first date in the `dates` column refers to the year 2007, this function returns all dates for the year 2008.
+- This function returns all dates in the next year, based on the last date in the input column. For example, if the last date in the `dates` column refers to the year 2007, this function returns all dates for the year 2008.
 
 - The `dates` argument can be any of the following:
   - A reference to a date/time column.
