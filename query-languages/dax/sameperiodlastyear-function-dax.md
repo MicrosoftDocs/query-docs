@@ -8,7 +8,7 @@ title: "SAMEPERIODLASTYEAR function (DAX)"
 
 For date column input, returns a table that contains a column of dates shifted one year back in time from the dates in the specified `dates` column, in the current context.
 
-For calendar input, returns primary tagged columns that shifted one year back in time from the dates in calendar, in the current context.
+For calendar input, returns primary tagged columns shifted one year back in time from the dates in the current context, based on the calendar.
 
 ## Syntax
 

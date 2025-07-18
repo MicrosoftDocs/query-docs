@@ -26,7 +26,7 @@ NEXTYEAR(<dates> or <calendar>[,<year_end_date>])
 ## Return value
 
 For date column input, a table containing a single column of date values.  
-For calendar input, a table that contains primary tagged columns for next quarter, in the current context.
+For calendar input, a table that contains primary tagged columns for next year, in the current context.
 
 ## Remarks
 
@@ -40,6 +40,8 @@ For calendar input, a table that contains primary tagged columns for next quarte
 - Constraints on Boolean expressions are described in the topic, [CALCULATE function](calculate-function-dax.md).
 
 - The `year_end_date` parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is ignored. This parameter does not apply when calendar is used.
+
+- The `year_end_date` parameter must not be specified when a calendar is used.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 

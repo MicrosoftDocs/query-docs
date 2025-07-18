@@ -37,8 +37,6 @@ A scalar value that represents the `expression` evaluated for the dates in the c
 
 - The `filter` expression has restrictions described in the topic, [CALCULATE](calculate-function-dax.md).
 
-- The `year_end_date` parameter must not be specified when a calendar is used.
-
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example

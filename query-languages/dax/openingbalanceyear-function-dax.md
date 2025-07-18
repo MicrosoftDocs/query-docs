@@ -25,7 +25,7 @@ OPENINGBALANCEYEAR(<expression>,<dates> or <calendar>[,<filter>][,<year_end_date
 
 ## Return value
 
-A scalar value that represents the `expression` evaluated at the first date of the year in the current context.
+A scalar value that represents the `expression` evaluated at the end of the previous year in the current context.
 
 ## Remarks
 
@@ -39,6 +39,8 @@ A scalar value that represents the `expression` evaluated at the first date of t
 - The `filter` expression has restrictions described in the topic, [CALCULATE function](calculate-function-dax.md).
 
 - The `year_end_date` parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is ignored.
+
+- The `year_end_date` parameter must not be specified when a calendar is used.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 

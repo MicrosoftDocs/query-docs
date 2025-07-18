@@ -24,7 +24,7 @@ OPENINGBALANCEQUARTER(<expression>,<dates> or <calendar>[,<filter>])
 
 ## Return value
 
-A scalar value that represents the `expression` evaluated at the first date of the quarter in the current context.
+A scalar value that represents the `expression` at the end of the previous quarter in the current context.
 
 ## Remarks
 

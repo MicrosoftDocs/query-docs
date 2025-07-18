@@ -27,12 +27,12 @@ DATESBETWEEN(<dates> or <calendar>, <StartDate>, <EndDate>)
 |--------|--------------|
 |`dates or calendar`|A column that contains dates or a calendar reference|
 |`StartDate`|A date/day expression. For calendar, please use the same data type and string format as column that is tagged by Day.|
-|`EndDate`|A date/day expression. For calendar, please use the same data type and string format as column that is tagged by Day.|
+|`EndDate`|A date/day expression. For calendar, please use the same data type and format as the primary column tagged to the Day category.|
 
 ## Return value
 
 For date column input, a table containing a single column of date values.  
-For calendar input, a table that contains all the tagged column for the dates between, in the current context.
+For calendar input, a table that contains all primary tagged columns.
 
 ## Remarks
 

@@ -24,7 +24,7 @@ STARTOFQUARTER(<dates> or <calendar>)
 ## Return value
 
 For date column input, a table containing a single column and single row with a date value.  
-For calendar input, a table that contains all the tagged column for first date of month, in the current context.
+For calendar input, a table that contains primary tagged columns for the first date of the quarter, in the current context.
 
 ## Remarks
 

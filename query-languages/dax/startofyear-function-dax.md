@@ -36,6 +36,8 @@ For calendar input, a table that contains all the tagged column for first date o
 
 - Constraints on Boolean expressions are described in the topic, [CALCULATE](calculate-function-dax.md).
 
+- The `year_end_date` parameter must not be specified when a calendar is used.
+
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example

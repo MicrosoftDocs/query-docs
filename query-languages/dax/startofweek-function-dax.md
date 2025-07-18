@@ -24,7 +24,7 @@ STARTOFWEEK(<calendar>)
 
 ## Return value
 
-For calendar input, a table that contains all the tagged column for first date of week, in the current context.
+A table that contains all primary tagged columns for the first date of the week, in the current context.
 
 ## Remarks
 
@@ -35,7 +35,7 @@ For calendar input, a table that contains all the tagged column for first date o
 
 ## Example for calendar based time intelligence
 
-The following sample formula returns primary tagged columns that corresponds to the start of the week, for the fiscal calendar.
+The following sample formula returns primary tagged columns for the first date of the week, for the fiscal calendar.
 
 ```dax
 = STARTOFWEEK(FiscalCalendar)

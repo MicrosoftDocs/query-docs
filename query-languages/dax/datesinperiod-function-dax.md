@@ -23,14 +23,14 @@ DATESINPERIOD(<dates> or <calendar>, <start_date>, <number_of_intervals>, <inter
 |Term|Definition|
 |--------|--------------|
 |`dates or calendar`|A column that contains dates or a calendar reference|
-|`start_date`|A date expression. For calendar, please use the same data type and string format as column that is tagged by Day.|
+|`start_date`|A date expression. For calendar, please use the same data type and format as the primary column tagged to the Day category.|
 |`number_of_intervals`|An integer that specifies the number of intervals to add to, or subtract from, the dates.|
 |`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `DAY`, `WEEK`, `MONTH`, `QUARTER`, and `YEAR`. Week could only be used with calendar.|
 
 ## Return value
 
 For date column input, a table containing a single column of date values.  
-For calendar input, a table that contains all the tagged column for the dates between, in the current context.
+For calendar input, a table that contains all primary tagged columns.
 
 ## Remarks
 
@@ -68,7 +68,7 @@ Consider that the report is filtered by the month of June 2020. The MAX function
 
 The following **Sales** table measure definition uses the DATESINPERIOD function to calculate revenue for the prior year (PY).
 
-Notice the formula uses the [MAX](max-function-dax.md) function. This function returns the latest date that's in the filter context. So, the DATESINPERIOD function returns primary columns beginning from latest date for the last year. The example use datekey as example to show that calendar could tag on column other than date type.
+Notice the formula uses the [MAX](max-function-dax.md) function. This function returns the latest date that's in the filter context. So, the DATESINPERIOD function returns primary columns beginning from latest date for the last year. DateKey is used as an example to show that the "Day" category can be tagged with a column that is not date-typed.
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
 

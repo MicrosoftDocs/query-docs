@@ -41,6 +41,8 @@ For calendar input, a table that contains primary tagged columns for previous ye
 
 - The `year_end_date` parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is ignored.
 
+- The `year_end_date` parameter must not be specified when a calendar is used.
+
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example
@@ -69,6 +71,7 @@ The following sample formula creates a measure that calculates the 'previous qua
 
 [Time intelligence functions](time-intelligence-functions-dax.md)
 [Date and time functions](date-and-time-functions-dax.md)
-[PREVIOUSMONTH](previousmonth-function-dax.md)
 [PREVIOUSDAY](previousday-function-dax.md)
+[PREVIOUSWEEK](previousweek-function-dax.md)
+[PREVIOUSMONTH](previousmonth-function-dax.md)
 [PREVIOUSQUARTER](previousquarter-function-dax.md)

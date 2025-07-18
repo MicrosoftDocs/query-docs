@@ -8,7 +8,7 @@ title: "PARALLELPERIOD function (DAX)"
 
 For date column input, returns a table that contains a column of dates that represents a period parallel to the dates in the specified `dates` column, in the current context, with the dates shifted a number of intervals either forward in time or back in time.
 
-For calendar input, returns a table that contains all primary tagged columns that represent a period parallel to the dates in the specified `dates` column, in the current context, with the dates shifted a number of intervals either forward in time or back in time.
+For calendar input, returns a table that contains all primary tagged columns that represent a period pparallel to the dates in the current context, based on the calendar, with the dates shifted a number of intervals either forward in time or back in time.
 
 ## Syntax
 
@@ -22,12 +22,12 @@ PARALLELPERIOD(<dates> or <calendar>,<number_of_intervals>,<interval>)
 |--------|--------------|
 |`dates or calendar`|A column that contains dates or a calendar reference|
 |`number_of_intervals`|An integer that specifies the number of intervals to add to or subtract from the dates.|
-|`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`.|
+|`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`, `week`. Week could only be used for calendar.|
 
 ## Return value
 
 For date column input, a table containing a single column of date values.  
-For calendar input, a table that contains all the tagged column for the year to date, in the current context.
+For calendar input, a table that contains all primary tagged columns.
 
 ## Remarks
 

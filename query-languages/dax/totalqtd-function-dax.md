@@ -33,13 +33,9 @@ A scalar value that represents the `expression` evaluated for all dates in the c
   - A table expression that returns a single column of date/time values.
   - A Boolean expression that defines a single-column table of date/time values.
 
-- In addition to `dates`, a calendar reference could also be used at second argument.
-
 - Constraints on Boolean expressions are described in the topic, [CALCULATE](calculate-function-dax.md).
 
 - The `filter` expression has restrictions described in the topic, [CALCULATE](calculate-function-dax.md).
-
-- The `year_end_date` parameter must not be specified when a calendar is used.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
