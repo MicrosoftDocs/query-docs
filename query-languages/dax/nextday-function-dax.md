@@ -55,7 +55,7 @@ The following sample formula creates a measure that calculates the 'next day sal
 
 ## Example for calendar based time intelligence
 
-The following sample formula creates a measure that calculates the 'next day sales' of Internet sales.
+The following sample formula creates a measure that calculates the 'next day sales' of Internet sales for fiscal calendar.
 
 ```dax
 =

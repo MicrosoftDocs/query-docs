@@ -20,7 +20,7 @@ ENDOFYEAR(<dates> or <calendar> [,<year_end_date>])
 |Term|Definition|
 |--------|--------------|
 |`dates or calendar`|A column that contains dates or a calendar reference|
-|`year_end_date`|(optional) A literal string with a date that defines the year-end date. The default is December 31.|
+|`year_end_date`|(optional) A literal string with a date that defines the year-end date. The default is December 31. This only applies when date column is used.|
 
 ## Return value
 
