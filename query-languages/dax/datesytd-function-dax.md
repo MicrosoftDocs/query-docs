@@ -20,7 +20,7 @@ DATESYTD(<dates> or <calendar> [,<year_end_date>])
 |Term|Definition|
 |--------|--------------|
 |`dates or calendar`|A column that contains dates or a calendar reference.|
-|`year_end_date`|(optional) A literal string with a date that defines the year-end date. The default is December 31.|
+|`year_end_date`|(optional) A literal string with a date that defines the year-end date. The default is December 31. This only applies for date column input.|
 
 ## Return value
 
@@ -84,6 +84,6 @@ The following sample formula creates a measure that calculates the 'Running Tota
 
 [Time intelligence functions](time-intelligence-functions-dax.md)
 [Date and time functions](date-and-time-functions-dax.md)
-[DATESYTD function](datesytd-function-dax.md)
+[DATESWTD function](dateswtd-function-dax.md)
 [DATESMTD function](datesmtd-function-dax.md)
 [DATESQTD function](datesqtd-function-dax.md)

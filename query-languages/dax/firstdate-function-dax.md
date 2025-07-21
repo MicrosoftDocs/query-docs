@@ -8,7 +8,7 @@ title: "FIRSTDATE function (DAX)"
 
 For date column input, returns the first date in the current context for the specified column of dates.  
 
-For calendar input, returns the first date in the current context from calendar.
+For calendar input, returns the first date in the current context based on the calendar.
 
 ## Syntax
 

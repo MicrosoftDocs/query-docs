@@ -45,6 +45,8 @@ A scalar value that represents the `expression` evaluated at the last date of th
     > [!NOTE]
     > The `filter` expression has restrictions described in [CALCULATE function](calculate-function-dax.md).
 
+- The `year_end_date` parameter must not be specified when a calendar is used.
+
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example
@@ -63,7 +65,7 @@ The following sample formula creates a measure that calculates the 'Year End Inv
 
 ## Example for calendar based time intelligence
 
-The following sample formula creates a measure that calculates the 'Year End Inventory Value' of the product inventory in terms of fiscal calendar.
+The following sample formula creates a measure that calculates the 'Year End Inventory Value' of the product inventory using a fiscal calendar.
 
 ```dax
 = CLOSINGBALANCEYEAR (

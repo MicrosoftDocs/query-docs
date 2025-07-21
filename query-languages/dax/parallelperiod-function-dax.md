@@ -8,7 +8,7 @@ title: "PARALLELPERIOD function (DAX)"
 
 For date column input, returns a table that contains a column of dates that represents a period parallel to the dates in the specified `dates` column, in the current context, with the dates shifted a number of intervals either forward in time or back in time.
 
-For calendar input, returns a table that contains all primary tagged columns that represent a period pparallel to the dates in the current context, based on the calendar, with the dates shifted a number of intervals either forward in time or back in time.
+For calendar input, returns a table that contains all primary tagged columns that represent a period parallel to the dates in the current context, based on the calendar, with the dates shifted a number of intervals either forward in time or back in time.
 
 ## Syntax
 

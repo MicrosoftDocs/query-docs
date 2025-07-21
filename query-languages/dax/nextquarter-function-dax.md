@@ -68,5 +68,6 @@ CALCULATE (
 [Time intelligence functions](time-intelligence-functions-dax.md)
 [Date and time functions](date-and-time-functions-dax.md)
 [NEXTDAY function](nextday-function-dax.md)
+[NEXTWEEK function](nextweek-function-dax.md)
 [NEXTMONTH function](nextmonth-function-dax.md)
 [NEXTYEAR function](nextyear-function-dax.md)

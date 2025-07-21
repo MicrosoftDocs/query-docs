@@ -8,7 +8,7 @@ title: "LASTDATE function (DAX)"
 
 For date column input, returns the last date in the current context for the specified column of dates.  
 
-For calendar input, returns the last date in the current context from calendar.
+For calendar input, returns the last date based on the calendar.
 
 ## Syntax
 

@@ -25,7 +25,7 @@ PREVIOUSWEEK(<calendar>)
 
 ## Return value
 
-A table that contains primary tagged columns for dates of the previous week, in the current context.
+A table that contains primary tagged columns for the previous week, in the current context.
 
 ## Remarks
 
@@ -49,6 +49,7 @@ The following sample formula creates a measure that calculates the 'previous wee
 
 [Time intelligence functions](time-intelligence-functions-dax.md)
 [Date and time functions](date-and-time-functions-dax.md)
+[PREVIOUSDAY function](previousday-function-dax.md)
 [PREVIOUSMONTH function](previousmonth-function-dax.md)
 [PREVIOUSQUARTER function](previousquarter-function-dax.md)
 [PREVIOUSYEAR function](previousyear-function-dax.md)

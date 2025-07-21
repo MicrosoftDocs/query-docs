@@ -36,7 +36,7 @@ For calendar input, a table that contains primary tagged columns for next day, i
   - A table expression that returns a single column of date/time values.
   - A Boolean expression that defines a single-column table of date/time values.
   
-- For calendar input, this function returns next day to the first date in calendar.
+- For calendar input, this function returns next day of the last date in calendar.
 
 - Constraints on Boolean expressions are described in the topic, [CALCULATE function](calculate-function-dax.md).
 

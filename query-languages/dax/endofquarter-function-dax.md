@@ -6,8 +6,8 @@ title: "ENDOFQUARTER function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-For date column input, returns the last date of month in the current context for the specified column of dates.  
-For calendar input, returns a table that contains all primary tagged columns for last date of month, in the current context.
+For date column input, returns the last date of quarter in the current context for the specified column of dates.  
+For calendar input, returns a table that contains all primary tagged columns for last date of quarter, in the current context.
 
 ## Syntax
 
@@ -35,8 +35,6 @@ For calendar input, a table that contains all primary tagged columns for last da
 
 - Constraints on Boolean expressions are described in the topic, [CALCULATE function](calculate-function-dax.md).
 
-- The `year_end_date` parameter must not be specified when a calendar is used.
-
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example
@@ -59,6 +57,6 @@ The following sample formula returns tagged primary columns that corresponds to 
 
 [Date and time functions](date-and-time-functions-dax.md)
 [Time intelligence functions](time-intelligence-functions-dax.md)
-[ENDOFYEAR function](endofyear-function-dax.md)
-[ENDOFMONTH function](endofmonth-function-dax.md)
 [ENDOFWEEK function](endofweek-function-dax.md)
+[ENDOFMONTH function](endofmonth-function-dax.md)
+[ENDOFYEAR function](endofyear-function-dax.md)

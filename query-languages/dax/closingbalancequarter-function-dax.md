@@ -60,7 +60,7 @@ The following sample formula creates a measure that calculates the 'Quarter End 
 
 ## Example for calendar based time intelligence
 
-The following sample formula creates a measure that calculates the 'Quarter End Inventory Value' of the product inventory in terms of fiscal calendar.
+The following sample formula creates a measure that calculates the 'Quarter End Inventory Value' of the product inventory using a fiscal calendar.
 
 ```dax
 = CLOSINGBALANCEQUARTER (

@@ -20,7 +20,7 @@ STARTOFYEAR(<dates> or <calendar>)
 |Term|Definition|
 |--------|--------------|
 |`dates or calendar`|A column that contains dates or a calendar reference.|
-|`YearEndDate`|(Optional) A year end date value.|
+|`YearEndDate`|(Optional) A year end date value. Only applies for date column input.|
 
 ## Return value
 

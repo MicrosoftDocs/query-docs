@@ -71,7 +71,7 @@ Consider that the earliest date stored in the **Date** table is July 1, 2017. So
 ## Example for calendar based time intelligence
 The following **Sales** table measure definition uses the DATESBETWEEN function to produce a _life-to-date_ (LTD) calculation. Life-to-date represents the accumulation of a measure over time since the very beginning of time.
 
-Notice that the formula uses the [MAX](max-function-dax.md) function. This function returns the max datekey that's in the filter context. So, the DATESBETWEEN function returns a table of dates beginning from the earliest date until the latest date being reported.The example use datekey as example to show that calendar could tag on column other than date type.
+Notice that the formula uses the [MAX](max-function-dax.md) function. This function returns the max datekey that's in the filter context. So, the DATESBETWEEN function returns a table of dates beginning from the earliest date until the latest date being reported. DateKey is used as an example to show that the "Day" category can be tagged with a column that is not date-typed
 
 ```dax
 Customers LTD =
