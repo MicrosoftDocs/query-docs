@@ -21,9 +21,9 @@ DATEADD(<dates> or <calendar>, <number_of_intervals>, <interval>[,<Extension>],[
 |--------|--------------|
 |`dates or calendar`|A column that contains dates or a calendar reference.|
 |`number_of_intervals`|An integer that specifies the number of intervals to add to or subtract from the dates.|
-|`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`, `day`|
-|`extension`|Only applies when using a calendar. Define behavior when the original time period has fewer dates than the resulting time period. Valid values are: EXTENDING, PRECISE.|
-|`truncation`|Only applies when using a calendar. Define behavior when the original time period has more dates than the resulting time period. Valid values are: ANCHORED, BLANKS.|
+|`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`, `week`, `day`. Week only applies for calendar.|
+|`extension`|Only applies for calendar. Define behavior when the original time period has fewer dates than the resulting time period. Valid values are: EXTENDING, PRECISE.|
+|`truncation`|Only applies for calendar. Define behavior when the original time period has more dates than the resulting time period. Valid values are: ANCHORED, BLANKS.|
 
 ## Return value
 
@@ -51,13 +51,6 @@ The `dates` argument can be any of the following:
 
 - When input is date column, there is contiguous check. In other words, if the dates in the current context do not form a contiguous interval, the function returns an error.
 
-When input is calendar, below algorithm is executed when selection is on date level and shift by month:
-- Firstly, index of current window is identified. For example, current dates are 3rd-10th of month.
-- Secondly, month is shifted.
-- Thirdly, 3rd-10th date of new month is returned.
-
-In calendar scenario, the extension parameter controls behavior when it shift from small month to big month. Extending will get current dates toward the end of month. Precise will gets current dates only. Truncation enum controls behavior when big month goes to small month. Anchored will capture last date of month. For example, March 31 will go to Feb 28. For blanks, March 31 will get blank when it shifts to Feb.
-
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example - Shifting a set of dates
@@ -79,6 +72,46 @@ This behavior only happens when last two days of month are included in the selec
 ```
 
 Calendar based time intelligence provides more control by two specific enums. Please check above remarks.
+
+## Behavior for calendar based DateAdd when selection is at finer grain than the shift level
+
+When the input is a calendar table, and the current selection is at the date level, the following logic is applied when shifting by month:
+
+- Identify the current date window
+Determine the position of the current selection within the month.
+For example, if the current selection spans March 3–10, the window is from the 3rd to the 10th day of the month.
+
+- Shift the month
+Apply the month shift — e.g., +1 shifts March to April.
+
+- Return the same relative window
+Retrieve the 3rd–10th of the new month (e.g., April 3–10).
+
+The same logic applies when selection is at a finer grain than the shift level.
+
+## Paramters for calendar based DateAdd when selection is at a finer grain than the shift level
+
+When the selection granularity is **finer** than the shift unit (e.g., selecting individual dates while shifting by month), the **index-based behavior** can lead to **ambiguities**, especially across months of varying lengths. To handle these edge cases, two parameters are introduced:
+
+### Extension parameter (for small → large month shifts):
+
+Controls how the function behaves when the destination month is **longer** than the current one.
+
+- **`Precise`**: Keeps the original date range strictly.  
+  → `March 3–10` → `April 3–10`
+
+- **`Extended`**: Allows the window to expand toward the **end of the month** if needed.  
+  → `Feb 25–28` → `March 25–31`
+
+### Truncation Parameter (for large → small month shifts)
+
+Controls how the function behaves when the destination month is **shorter** than the current one.
+
+- **`Anchored`**: Anchors the result to the **last valid date** of the smaller month.  
+  → `March 31` → `Feb 28`
+
+- **`Blank`**: Returns **blank** when the shifted date doesn't exist.  
+  → `March 31` → _(blank)_ (since February doesn't have 31st)
 
 ## Example for calendar based time intelligence
 The following formula calculates dates that are one year before the dates in the current context.
