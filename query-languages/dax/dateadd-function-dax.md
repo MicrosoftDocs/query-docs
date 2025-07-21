@@ -22,8 +22,8 @@ DATEADD(<dates> or <calendar>, <number_of_intervals>, <interval>[,<Extension>],[
 |`dates or calendar`|A column that contains dates or a calendar reference.|
 |`number_of_intervals`|An integer that specifies the number of intervals to add to or subtract from the dates.|
 |`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`, `week`, `day`. Week only applies for calendar.|
-|`extension`|Only applies for calendar. Define behavior when the original time period has fewer dates than the resulting time period. Valid values are: EXTENDING, PRECISE.|
-|`truncation`|Only applies for calendar. Define behavior when the original time period has more dates than the resulting time period. Valid values are: ANCHORED, BLANKS.|
+|`extension`|Only applies for calendar. Define behavior when the original time period has fewer dates than the resulting time period. Valid values are: EXTENDING (Default), PRECISE.|
+|`truncation`|Only applies for calendar. Define behavior when the original time period has more dates than the resulting time period. Valid values are: BLANKS (Default), Anchored.|
 
 ## Return value
 
