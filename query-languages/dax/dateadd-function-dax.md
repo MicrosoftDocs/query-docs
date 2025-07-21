@@ -89,7 +89,7 @@ Retrieve the 3rd–10th of the new month (e.g., April 3–10).
 
 The same logic applies when selection is at a finer grain than the shift level.
 
-## Paramters for calendar based DateAdd when selection is at a finer grain than the shift level
+## Paramters for calendar based DateAdd when selection is at finer grain than the shift level
 
 When the selection granularity is **finer** than the shift unit (e.g., selecting individual dates while shifting by month), the **index-based behavior** can lead to **ambiguities**, especially across months of varying lengths. To handle these edge cases, two parameters are introduced:
 
