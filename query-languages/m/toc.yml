@@ -52,7 +52,7 @@ items:
     items:
     - name: Local, fixed, and UTC variants
       href: m-local-fixed-utc-variants.md
-    - name: Working with duration-seconds.md
+    - name: Working with durations
       href: m-working-with-durations.md
   - name: Text formatting
     items:

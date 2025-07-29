@@ -16,7 +16,7 @@ This article explores the structure, creation, and manipulation of durations in 
 
 A duration is defined by the `#duration(<days>, <hours>, <minutes>, <seconds>)` function. For example, `#duration(2, 3, 0, 0)` represents a duration of 2 days and 3 hours. Power Query M provides several ways to create a duration, depending on the context and the level of precision required.
 
-### Use the #duration constructor
+### Use the #duration function
 
 The most direct way to create a duration is with the `#duration(<days>, <hours>, <minutes>, <seconds>)` syntax. Each argument must be a number, and the result is a duration value.
 
@@ -52,7 +52,7 @@ in
 > [!NOTE]
 > Subtracting one date and time function from a different date and time function (for example, subtracting a `#date` function from a `#datetime` function) results in an error. If you must use different date and time functions to determine a duration, use functions such as [Date.From](date-from.md), [DateTime.From](datetime-from.md), or [DateTimeZone.From](datetimezone-from.md) to explicitly change one of the date and time functions.
 
-### Converting from other types
+### Converting from compatible values
 
 The [Duration.From](duration-from.md) function can convert compatible values into durations. For more information, go to [Duration.From(value)](#durationfromvalue).
 
@@ -237,7 +237,7 @@ In most cases, duration is composed of days, hours (maximum 23 hours), minutes (
 * Minutes overflow into hours
 * Hours overflow into days
 
-For example, suppose you have a column that provides the start date and time for a running process. In addition, you have a column that shows how many seconds it took for the process to complete, in seconds. You want to create a third column that shows the date and time that the process completes.
+For example, suppose you have a column that provides the start date and time for a running process. In addition, you have a column that shows how long it took for the process to complete, in seconds. You want to create a third column that shows the date and time that the process completes.
 
 ```powerquery-m
 let
@@ -261,7 +261,7 @@ The following table is the result of these calculations.
 
 :::image type="content" source="media/m-working-with-durations/adding-seconds-for-duration.png" alt-text="Screenshot of the table containing the end date and time column derived from the start time and duration in seconds.":::
 
-So, even though you only had the number of seconds that a process took place, Power Query M rolls that duration value up into minutes and hours when the result is evaluated.
+So, even though you only had the number of seconds that a process took place, Power Query M rolls that duration value up into minutes, hours, and days when the result is evaluated.
 
 ## Representing weeks, months, and years
 
