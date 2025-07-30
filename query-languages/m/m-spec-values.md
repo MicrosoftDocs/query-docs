@@ -2,7 +2,7 @@
 title: M Language values 
 description: Describes using values in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 8/2/2022
+ms.date: 3/28/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-specification
 ---
@@ -335,6 +335,7 @@ Additionally, the following operators allow one or both of their operands to be 
 | `x * y` | `duration` | `number` | N times a duration |
 | `x * y` | `number` | `duration` | N times a duration |
 | `x / y` | `duration` | `number` | Fraction of a duration |
+| `x / y` | `duration` | `duration` | Numeric quotient of durations |
 
 The native type of duration values is the intrinsic type `duration`.
 

@@ -2,7 +2,7 @@
 description: "Learn more about: Understanding Power Query M functions"
 title: "Understanding Power Query M functions"
 ms.topic: conceptual
-ms.date: 11/14/2024
+ms.date: 2/14/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-background
 ---
@@ -68,10 +68,10 @@ in
 
 **Each keyword**
 
-The **each** keyword is used to easily create simple functions. `each ...` is syntactic sugar for a function signature that takes the `_` parameter `(_) =&gt; ...`.
+The **each** keyword is used to easily create simple functions. `each ...` is syntactic sugar for a function signature that takes the `_` parameter `(_) => ...`.
 
 The **each** keyword is useful when combined with the lookup operator, which is applied by default to `_`.
-For example, `each [CustomerID]` is the same as `each _[CustomerID]`, which is the same as `(_) =&gt; _[CustomerID]`.
+For example, `each [CustomerID]` is the same as `each _[CustomerID]`, which is the same as `(_) => _[CustomerID]`.
 
 **Example - Using each in table row filter**
 

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Record functions"
 title: "Record functions"
-ms.date: 5/16/2022
+ms.date: 6/19/2025
 ms.custom: "nonautomated-date"
 ---
 # Record functions
@@ -27,9 +27,9 @@ These functions create and manipulate record values.
 |[GeometryPoint.From](geometrypoint-from.md)|Creates a record representing a geometric point from parts.|
 |[Record.AddField](record-addfield.md)|Adds a field from a field name and value.|
 |[Record.Combine](record-combine.md)|Combines the records in a list.|
-|[Record.RemoveFields](record-removefields.md)|Returns a new record that reorders the given fields with respect to each other. Any fields not specified remain in their original locations.|
+|[Record.RemoveFields](record-removefields.md)|Removes the specified field(s) from the input record.|
 |[Record.RenameFields](record-renamefields.md)|Returns a new record that renames the fields specified. The resultant fields will retain their original order. This function supports swapping and chaining field names. However, all target names plus remaining field names must constitute a unique set or an error will occur.|
-|[Record.ReorderFields](record-reorderfields.md)|Returns a new record that reorders fields relative to each other. Any fields not specified remain in their original locations. Requires two or more fields.|
+|[Record.ReorderFields](record-reorderfields.md)|Reorders record fields to match the order of a list of field names.|
 |[Record.TransformFields](record-transformfields.md)|Transforms fields by applying transformOperations. For more more information about values supported by transformOperations, go to [Parameter Values](#parameter-values).|
 
 ## Selection

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Accessing data functions"
 title: "Accessing data functions"
-ms.date: 11/21/2024
+ms.date: 7/16/2025
 ms.custom: "nonautomated-date"
 ---
 # Accessing data functions
@@ -42,6 +42,7 @@ These functions access data and return table values. Most of these functions ret
 |[Cube.ReplaceDimensions](cube-replacedimensions.md)|Replaces the set of dimensions returned by [Cube.Dimensions](/powerquery-m/cube-dimensions).|
 |[Cube.Transform](cube-transform.md)|Applies a list of cube functions.|
 |[DB2.Database](db2-database.md)|Returns a table of SQL tables and views available in a Db2 database.|
+|[DeltaLake.Metadata](deltalake-metadata.md)|Given a Delta Lake table, returns the log entries for that table.|
 |[DeltaLake.Table](deltalake-table.md)|Returns the contents of the Delta Lake table.|
 |[Essbase.Cubes](essbase-cubes.md)|Returns the cubes in an Essbase instance grouped by Essbase server.|
 |[Excel.CurrentWorkbook](excel-currentworkbook.md)|Returns the contents of the current Excel workbook.|

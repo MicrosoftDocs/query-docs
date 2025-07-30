@@ -34,15 +34,14 @@
     }
   ],
   "notification_subscribers": [
-    "owend@microsoft.com"
+    "dougklo@microsoft.com"
   ],
   "sync_notification_subscribers": [
-    "owend@microsoft.com"
+    "didocs@microsoft.com"
   ],
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/query-docs",
   "git_repository_branch_open_to_public_contributors": "main",
-  "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "dependent_repositories": [
     {
@@ -70,6 +69,7 @@
     }
   },
   "docs_build_engine": {},
+  "skip_source_output_uploading": false,
   "contribution_branch_mappings": {},
   "need_generate_pdf_url_template": true
 }

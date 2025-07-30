@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Value functions"
 title: "Value functions"
-ms.date: 4/24/2024
+ms.date: 7/16/2025
 ms.custom: "nonautomated-date"
 ---
 # Value functions
@@ -52,6 +52,7 @@ These functions evaluate and perform operations on values.
 |[Value.ViewError](value-viewerror.md) | This function is intended for internal use only.|
 |[Value.ViewFunction](value-viewfunction.md) | This function is intended for internal use only.|
 |[Variable.Value](variable-value.md) | This function is intended for internal use only.|
+|[Variable.ValueOrDefault](variable-valueordefault.md) | This function is intended for internal use only.|
 
 ## Metadata
 
