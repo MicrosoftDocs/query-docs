@@ -355,6 +355,39 @@ In the above expression, there are two filters on the 'Geography' table: one wit
 
 Please note that this restriction is temporary. We are actively developing solutions to remove this limitation in future updates. If you encounter this error, we advise adjusting the filters within SummarizeColumns by adding or removing KeepFilters as necessary to ensure consistent overriding behavior on each table.
 
+### ValueFilterBehavior ###
+
+ValueFilterBehavior is a model property that controls how value filter is applied to filter context. Allowed values are "Coalesced" and "Independent".
+
+Coalesced means all value filters on the same table will be applied together as a single conceptual filter to measure.
+
+Independent means only value filters filtering on group-by columns will be applied together. Filters that do not participate in group-by will be applied independently.
+
+As an example to illustrate the difference, consider the following data on Product table:
+
+|Color|Size|
+|-----|----|
+|Black|S|
+|White|M|
+|Blue|L|
+|Black|XL|
+
+Now consider the following SummarizeColumns:
+
+```dax
+Evaluate SummarizeColumns(
+  TreatAs({"Black", "White"}, Product[Color]),
+  TreatAs({"S", "L"}, Product[Size]),
+  , "Measure", Calculate(CountRows(Product), ALL(Product[Color]))
+)
+```
+
+Under ValueFilterBehavior=Coalesced, the two TreatAs value filters are applied togeter as a single filter. Due to the Product table data, this single filter is equivalent to a single row of ("Black","S") on Product[Color] and Product[Size] columns. When the measure clears filter context on Product[Color], it will then see Product[Size]="S" in filter context and therefore computes 1 as measure value, because there is only a single row of [Size]="S" in our example Product table.
+
+Under ValueFilterBehavior=Independent, the two TreatAs value filters do not interact with each other. When measure clears filter context on Product[Color], it ignores the first value filter and picks up the original second filter on Product[Size] column with both values "S" and "L". This will make measure compute 2 as measure value, because there are two rows of [Size]="S" or "L".
+
+It is decided that ValueFilterBehavior being Independent is the better behavior, and we will move the default of future models to Independent at some point.
+
 ## Related content
 
 [SUMMARIZE](summarize-function-dax.md)
