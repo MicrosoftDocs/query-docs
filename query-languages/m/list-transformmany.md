@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-List.TransformMany(<b>list</b> as list, <b>collectionTransform</b> as function, <b>resultTransform</b> as function) as list
+List.TransformMany(
+    <b>list</b> as list,
+    <b>collectionTransform</b> as function,
+    <b>resultTransform</b> as function
+) as list
 </pre>
 
 ## About

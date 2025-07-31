@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-List.ReplaceValue(<b>list</b> as list, <b>oldValue</b> as any, <b>newValue</b> as any, <b>replacer</b> as function) as list
+List.ReplaceValue(
+    <b>list</b> as list,
+    <b>oldValue</b> as any,
+    <b>newValue</b> as any,
+    <b>replacer</b> as function
+) as list
 </pre>
   
 ## About

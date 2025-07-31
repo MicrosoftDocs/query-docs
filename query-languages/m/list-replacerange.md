@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-List.ReplaceRange(<b>list</b> as list, <b>index</b> as number, <b>count</b> as number, <b>replaceWith</b> as list) as list
+List.ReplaceRange(
+    <b>list</b> as list,
+    <b>index</b> as number,
+    <b>count</b> as number,
+    <b>replaceWith</b> as list
+) as list
 </pre>
   
 ## About

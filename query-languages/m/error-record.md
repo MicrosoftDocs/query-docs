@@ -8,7 +8,13 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Error.Record(<b>reason</b> as text, optional <b>message</b> as nullable text, optional <b>detail</b> as any, optional <b>parameters</b> as nullable list, optional <b>errorCode</b> as nullable text) as record
+Error.Record(
+    <b>reason</b> as text,
+    optional <b>message</b> as nullable text,
+    optional <b>detail</b> as any,
+    optional <b>parameters</b> as nullable list,
+    optional <b>errorCode</b> as nullable text
+) as record
 </pre>
 
 ## About

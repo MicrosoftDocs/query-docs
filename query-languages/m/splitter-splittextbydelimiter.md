@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Splitter.SplitTextByDelimiter(<b>delimiter</b> as text, optional <b>quoteStyle</b> as nullable number, optional <b>csvStyle</b> as nullable number) as function
+Splitter.SplitTextByDelimiter(
+    <b>delimiter</b> as text,
+    optional <b>quoteStyle</b> as nullable number,
+    optional <b>csvStyle</b> as nullable number
+) as function
 </pre>
   
 ## About

@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Diagnostics.Trace(<b>traceLevel</b> as number, <b>message</b> as anynonnull, <b>value</b> as any, optional <b>delayed</b> as nullable logical) as any
+Diagnostics.Trace(
+    <b>traceLevel</b> as number,
+    <b>message</b> as anynonnull,
+    <b>value</b> as any,
+    optional <b>delayed</b> as nullable logical
+) as any
 </pre>
 
 ## About

@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Text.ReplaceRange(<b>text</b> as nullable text, <b>offset</b> as number, <b>count</b> as number, <b>newText</b> as text) as nullable text
+Text.ReplaceRange(
+    <b>text</b> as nullable text,
+    <b>offset</b> as number,
+    <b>count</b> as number,
+    <b>newText</b> as text
+) as nullable text
 </pre>
   
 ## About

@@ -8,7 +8,15 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.Join(<b>table1</b> as table, <b>key1</b> as any, <b>table2</b> as table, <b>key2</b> as any, optional <b>joinKind</b> as nullable number, optional <b>joinAlgorithm</b> as nullable number, optional <b>keyEqualityComparers</b> as nullable list) as table
+Table.Join(
+    <b>table1</b> as table,
+    <b>key1</b> as any,
+    <b>table2</b> as table,
+    <b>key2</b> as any,
+    optional <b>joinKind</b> as nullable number,
+    optional <b>joinAlgorithm</b> as nullable number,
+    optional <b>keyEqualityComparers</b> as nullable list
+) as table
 </pre>
 
 ## About

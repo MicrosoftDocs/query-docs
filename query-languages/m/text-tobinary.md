@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Text.ToBinary(<b>text</b> as nullable text, optional <b>encoding</b> as nullable number, optional <b>includeByteOrderMark</b> as nullable logical) as nullable binary
+Text.ToBinary(
+    <b>text</b> as nullable text,
+    optional <b>encoding</b> as nullable number,
+    optional <b>includeByteOrderMark</b> as nullable logical
+) as nullable binary
 </pre>
 
 ## About

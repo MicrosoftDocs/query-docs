@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Date.ToText(<b>date</b> as nullable date, optional <b>options</b> as any, optional <b>culture</b> as nullable text) as nullable text
+Date.ToText(
+    <b>date</b> as nullable date,
+    optional <b>options</b> as any,
+    optional <b>culture</b> as nullable text
+) as nullable text
 </pre>
 
 ## About

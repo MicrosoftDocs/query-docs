@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-List.Accumulate(<b>list</b> as list, <b>seed</b> as any, <b>accumulator</b> as function) as any
+List.Accumulate(
+    <b>list</b> as list,
+    <b>seed</b> as any,
+    <b>accumulator</b> as function
+) as any
 </pre>
 
 ## About

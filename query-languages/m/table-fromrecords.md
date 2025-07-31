@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.FromRecords(<b>records</b> as list, optional <b>columns</b> as any, optional <b>missingField</b> as nullable number) as table
+Table.FromRecords(
+    <b>records</b> as list,
+    optional <b>columns</b> as any,
+    optional <b>missingField</b> as nullable number
+) as table
 </pre>
 
 ## About

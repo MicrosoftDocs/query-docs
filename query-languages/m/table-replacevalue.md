@@ -8,7 +8,13 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.ReplaceValue(<b>table</b> as table, <b>oldValue</b> as any, <b>newValue</b> as any, <b>replacer</b> as function, <b>columnsToSearch</b> as list) as table
+Table.ReplaceValue(
+    <b>table</b> as table,
+    <b>oldValue</b> as any,
+    <b>newValue</b> as any,
+    <b>replacer</b> as function,
+    <b>columnsToSearch</b> as list
+) as table
 </pre>
   
 ## About

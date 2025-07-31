@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.AggregateTableColumn(<b>table</b> as table, <b>column</b> as text, <b>aggregations</b> as list) as table
+Table.AggregateTableColumn(
+    <b>table</b> as table,
+    <b>column</b> as text,
+    <b>aggregations</b> as list
+) as table
 </pre>
   
 ## About

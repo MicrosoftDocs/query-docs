@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-List.ContainsAny(<b>list</b> as list, <b>values</b> as list, optional <b>equationCriteria</b> as any) as logical
+List.ContainsAny(
+    <b>list</b> as list,
+    <b>values</b> as list,
+    optional <b>equationCriteria</b> as any
+) as logical
 </pre>
 
 ## About

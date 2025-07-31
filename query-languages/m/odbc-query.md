@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Odbc.Query(<b>connectionString</b> as any, <b>query</b> as text, optional <b>options</b> as nullable record) as table
+Odbc.Query(
+    <b>connectionString</b> as any,
+    <b>query</b> as text,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
 
 ## About
