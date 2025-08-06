@@ -8,7 +8,16 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-#datetimezone(<b>year</b> as number, <b>month</b> as number, <b>day</b> as number, <b>hour</b> as number, <b>minute</b> as number, <b>second</b> as number, <b>offsetHours</b> as number, <b>offsetMinutes</b> as number) as datetimezone
+#datetimezone(
+    <b>year</b> as number,
+    <b>month</b> as number,
+    <b>day</b> as number,
+    <b>hour</b> as number,
+    <b>minute</b> as number,
+    <b>second</b> as number,
+    <b>offsetHours</b> as number,
+    <b>offsetMinutes</b> as number
+) as datetimezone
 </pre>
 
 ## About

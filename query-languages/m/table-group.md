@@ -8,7 +8,13 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.Group(<b>table</b> as table, <b>key</b> as any, <b>aggregatedColumns</b> as list, optional <b>groupKind</b> as nullable number, optional <b>comparer</b> as nullable function) as table
+Table.Group(
+    <b>table</b> as table,
+    <b>key</b> as any,
+    <b>aggregatedColumns</b> as list,
+    optional <b>groupKind</b> as nullable number,
+    optional <b>comparer</b> as nullable function
+) as table
 </pre>
   
 ## About

@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.SelectColumns(<b>table</b> as table, <b>columns</b> as any, optional <b>missingField</b> as nullable number) as table
+Table.SelectColumns(
+    <b>table</b> as table,
+    <b>columns</b> as any,
+    optional <b>missingField</b> as nullable number
+) as table
 </pre>
   
 ## About

@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-DateTimeZone.ToText(<b>dateTimeZone</b> as nullable datetimezone, optional <b>options</b> as any, optional <b>culture</b> as nullable text) as nullable text
+DateTimeZone.ToText(
+    <b>dateTimeZone</b> as nullable datetimezone,
+    optional <b>options</b> as any,
+    optional <b>culture</b> as nullable text
+) as nullable text
 </pre>
   
 ## About

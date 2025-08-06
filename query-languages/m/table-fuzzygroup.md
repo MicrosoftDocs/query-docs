@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.FuzzyGroup(<b>table</b> as table, <b>key</b> as any, <b>aggregatedColumns</b> as list, optional <b>options</b> as nullable record) as table
+Table.FuzzyGroup(
+    <b>table</b> as table,
+    <b>key</b> as any,
+    <b>aggregatedColumns</b> as list,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
   
 ## About

@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Binary.Range(<b>binary</b> as binary, <b>offset</b> as number, optional <b>count</b> as nullable number) as binary
+Binary.Range(
+    <b>binary</b> as binary,
+    <b>offset</b> as number,
+    optional <b>count</b> as nullable number
+) as binary
 </pre>
 
 ## About

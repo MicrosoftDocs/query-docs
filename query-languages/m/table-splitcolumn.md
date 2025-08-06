@@ -8,7 +8,14 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.SplitColumn(<b>table</b> as table, <b>sourceColumn</b> as text, <b>splitter</b> as function, optional <b>columnNamesOrNumber</b> as any, optional <b>default</b> as any, optional <b>extraColumns</b> as any) as table
+Table.SplitColumn(
+    <b>table</b> as table,
+    <b>sourceColumn</b> as text,
+    <b>splitter</b> as function,
+    optional <b>columnNamesOrNumber</b> as any,
+    optional <b>default</b> as any,
+    optional <b>extraColumns</b> as any
+) as table
 </pre>
   
 ## About

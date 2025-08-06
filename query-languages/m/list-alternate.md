@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-List.Alternate(<b>list</b> as list, <b>count</b> as number, optional <b>repeatInterval</b> as nullable number, optional <b>offset</b> as nullable number) as list
+List.Alternate(
+    <b>list</b> as list,
+    <b>count</b> as number,
+    optional <b>repeatInterval</b> as nullable number,
+    optional <b>offset</b> as nullable number
+) as list
 </pre>
 
 ## About

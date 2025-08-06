@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.RenameColumns(<b>table</b> as table, <b>renames</b> as list, optional <b>missingField</b> as nullable number) as table
+Table.RenameColumns(
+    <b>table</b> as table,
+    <b>renames</b> as list,
+    optional <b>missingField</b> as nullable number
+) as table
 </pre>
   
 ## About

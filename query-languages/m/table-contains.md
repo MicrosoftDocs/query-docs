@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.Contains(<b>table</b> as table, <b>row</b> as record, optional <b>equationCriteria</b> as any) as logical
+Table.Contains(
+    <b>table</b> as table,
+    <b>row</b> as record,
+    optional <b>equationCriteria</b> as any
+) as logical
 </pre>
   
 ## About

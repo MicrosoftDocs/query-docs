@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-AdoDotNet.DataSource(<b>providerName</b> as text, <b>connectionString</b> as any, optional <b>options</b> as nullable record) as table
+AdoDotNet.DataSource(
+    <b>providerName</b> as text,
+    <b>connectionString</b> as any,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
 
 ## About

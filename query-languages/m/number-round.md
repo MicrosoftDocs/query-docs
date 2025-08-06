@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Number.Round(<b>number</b> as nullable number, optional <b>digits</b> as nullable number, optional <b>roundingMode</b> as nullable number) as nullable number
+Number.Round(
+    <b>number</b> as nullable number,
+    optional <b>digits</b> as nullable number,
+    optional <b>roundingMode</b> as nullable number
+) as nullable number
 </pre>
 
 ## About

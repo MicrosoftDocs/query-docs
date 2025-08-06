@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-List.Percentile(<b>list</b> as list, <b>percentiles</b> as any, optional <b>options</b> as nullable record) as any
+List.Percentile(
+    <b>list</b> as list,
+    <b>percentiles</b> as any,
+    optional <b>options</b> as nullable record
+) as any
 </pre>
   
 ## About

@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.ContainsAny(<b>table</b> as table, <b>rows</b> as list, optional <b>equationCriteria</b> as any) as logical
+Table.ContainsAny(
+    <b>table</b> as table,
+    <b>rows</b> as list,
+    optional <b>equationCriteria</b> as any
+) as logical
 </pre>
   
 ## About

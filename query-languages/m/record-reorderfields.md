@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Record.ReorderFields(<b>record</b> as record, <b>fieldOrder</b> as list, optional <b>missingField</b> as nullable number) as record
+Record.ReorderFields(
+    <b>record</b> as record,
+    <b>fieldOrder</b> as list,
+    optional <b>missingField</b> as nullable number
+) as record
 </pre>
   
 ## About

@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Text.Format(<b>formatString</b> as text, <b>arguments</b> as any, optional <b>culture</b> as nullable text) as text
+Text.Format(
+    <b>formatString</b> as text,
+    <b>arguments</b> as any,
+    optional <b>culture</b> as nullable text
+) as text
 </pre>
   
 ## About

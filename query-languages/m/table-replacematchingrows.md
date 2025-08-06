@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.ReplaceMatchingRows(<b>table</b> as table, <b>replacements</b> as list, optional <b>equationCriteria</b> as any) as table
+Table.ReplaceMatchingRows(
+    <b>table</b> as table,
+    <b>replacements</b> as list,
+    optional <b>equationCriteria</b> as any
+) as table
 </pre>
   
 ## About

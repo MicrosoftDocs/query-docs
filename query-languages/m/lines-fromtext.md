@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Lines.FromText(<b>text</b> as text, optional <b>quoteStyle</b> as any, optional <b>includeLineSeparators</b> as nullable logical) as list
+Lines.FromText(
+    <b>text</b> as text,
+    optional <b>quoteStyle</b> as any,
+    optional <b>includeLineSeparators</b> as nullable logical
+) as list
 </pre>
 
 ## About

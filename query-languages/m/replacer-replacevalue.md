@@ -8,7 +8,10 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Replacer.ReplaceValue(<b>value</b> as any, <b>old</b> as any, <b>new</b> as any) as any
+Replacer.ReplaceValue(
+    <b>value</b> as any,
+    <b>old</b> as any,
+    <b>new</b> as any) as any
 </pre>
   
 ## About

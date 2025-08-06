@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Record.TransformFields(<b>record</b> as record, <b>transformOperations</b> as list, optional <b>missingField</b> as nullable number) as record
+Record.TransformFields(
+    <b>record</b> as record,
+    <b>transformOperations</b> as list,
+    optional <b>missingField</b> as nullable number
+) as record
 </pre>
 
 ## About

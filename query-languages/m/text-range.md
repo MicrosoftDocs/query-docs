@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Text.Range(<b>text</b> as nullable text, <b>offset</b> as number, optional <b>count</b> as nullable number) as nullable text
+Text.Range(
+    <b>text</b> as nullable text,
+    <b>offset</b> as number,
+    optional <b>count</b> as nullable number
+) as nullable text
 </pre>
   
 ## About
