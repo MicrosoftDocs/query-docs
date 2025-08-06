@@ -68,7 +68,7 @@ in
 
 ## Example 3
 
-Find the position in the list of last occurrence of the word dog, ignoring case.
+Find the position in the list of the last occurrence of the word dog, ignoring case.
 
 **Usage**
 
@@ -113,4 +113,5 @@ in
 
 ## Related content
 
-[Equation criteria](list-functions.md#equation-criteria)
+* [Occurrence.Type](occurrence-type.md)
+* [Equation criteria](list-functions.md#equation-criteria)
