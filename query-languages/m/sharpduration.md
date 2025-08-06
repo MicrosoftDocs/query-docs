@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-#duration(<b>days</b> as number, <b>hours</b> as number, <b>minutes</b> as number, <b>seconds</b> as number) as duration
+#duration(
+    <b>days</b> as number,
+    <b>hours</b> as number,
+    <b>minutes</b> as number,
+    <b>seconds</b> as number
+) as duration
 </pre>
 
 ## About

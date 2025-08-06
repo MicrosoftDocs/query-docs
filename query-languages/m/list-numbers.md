@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-List.Numbers(<b>start</b> as number, <b>count</b> as number, optional <b>increment</b> as nullable number) as list
+List.Numbers(
+    <b>start</b> as number,
+    <b>count</b> as number,
+    optional <b>increment</b> as nullable number
+) as list
 </pre>
 
 ## About

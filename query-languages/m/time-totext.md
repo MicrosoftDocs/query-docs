@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Time.ToText(<b>time</b> as nullable time, optional <b>options</b> as any, optional <b>culture</b> as nullable text) as nullable text
+Time.ToText(
+    <b>time</b> as nullable time,
+    optional <b>options</b> as any,
+    optional <b>culture</b> as nullable text
+) as nullable text
 </pre>
 
 ## About

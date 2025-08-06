@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Text.PositionOf(<b>text</b> as text, <b>substring</b> as text, optional <b>occurrence</b> as nullable number, optional <b>comparer</b> as nullable function) as any
+Text.PositionOf(
+    <b>text</b> as text,
+    <b>substring</b> as text,
+    optional <b>occurrence</b> as nullable number,
+    optional <b>comparer</b> as nullable function
+) as any
 </pre>
 
 ## About

@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-List.RemoveMatchingItems(<b>list1</b> as list, <b>list2</b> as list, optional <b>equationCriteria</b> as any) as list
+List.RemoveMatchingItems(
+    <b>list1</b> as list,
+    <b>list2</b> as list,
+    optional <b>equationCriteria</b> as any
+) as list
 </pre>
   
 ## About

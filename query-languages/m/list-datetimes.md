@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-List.DateTimes(<b>start</b> as datetime, <b>count</b> as number, <b>step</b> as duration) as list
+List.DateTimes(
+    <b>start</b> as datetime,
+    <b>count</b> as number,
+    <b>step</b> as duration
+) as list
 </pre>
 
 ## About

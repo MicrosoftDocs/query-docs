@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-#date(<b>year</b> as number, <b>month</b> as number, <b>day</b> as number) as date
+#date(
+    <b>year</b> as number,
+    <b>month</b> as number,
+    <b>day</b> as number
+) as date
 </pre>
 
 ## About

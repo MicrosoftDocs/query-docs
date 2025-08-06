@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-List.Dates(<b>start</b> as date, <b>count</b> as number, <b>step</b> as duration) as list
+List.Dates(
+    <b>start</b> as date,
+    <b>count</b> as number,
+    <b>step</b> as duration
+) as list
 </pre>
 
 ## About

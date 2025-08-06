@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.CombineColumns(<b>table</b> as table, <b>sourceColumns</b> as list, <b>combiner</b> as function, <b>column</b> as text) as table
+Table.CombineColumns(
+    <b>table</b> as table,
+    <b>sourceColumns</b> as list,
+    <b>combiner</b> as function,
+    <b>column</b> as text
+) as table
 </pre>
   
 ## About

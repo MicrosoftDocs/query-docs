@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.FromPartitions(<b>partitionColumn</b> as text, <b>partitions</b> as list, optional <b>partitionColumnType</b> as nullable type) as table
+Table.FromPartitions(
+    <b>partitionColumn</b> as text,
+    <b>partitions</b> as list,
+    optional <b>partitionColumnType</b> as nullable type
+) as table
 </pre>
   
 ## About
