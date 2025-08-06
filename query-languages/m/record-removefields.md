@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Record.RemoveFields(<b>record</b> as record, <b>fields</b> as any, optional <b>missingField</b> as nullable number) as record
+Record.RemoveFields(
+    <b>record</b> as record,
+    <b>fields</b> as any,
+    optional <b>missingField</b> as nullable number
+) as record
 </pre>
   
 ## About

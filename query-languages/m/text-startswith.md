@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Text.StartsWith(<b>text</b> as nullable text, <b>substring</b> as text, optional <b>comparer</b> as nullable function) as nullable logical
+Text.StartsWith(
+    <b>text</b> as nullable text,
+    <b>substring</b> as text,
+    optional <b>comparer</b> as nullable function
+) as nullable logical
 </pre>
   
 ## About

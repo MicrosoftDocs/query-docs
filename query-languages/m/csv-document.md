@@ -8,7 +8,13 @@ ms.subservice: m-source
 ## Syntax
 
 <pre> 
-Csv.Document(<b>source</b> as any, optional <b>columns</b> as any, optional <b>delimiter</b> as any, optional <b>extraValues</b> as nullable number, optional <b>encoding</b> as nullable number) as table
+Csv.Document(
+    <b>source</b> as any,
+    optional <b>columns</b> as any,
+    optional <b>delimiter</b> as any,
+    optional <b>extraValues</b> as nullable number,
+    optional <b>encoding</b> as nullable number
+) as table
 </pre>
 
 ## About

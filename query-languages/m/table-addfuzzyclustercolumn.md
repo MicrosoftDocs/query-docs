@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.AddFuzzyClusterColumn(<b>table</b> as table, <b>columnName</b> as text, <b>newColumnName</b> as text, optional <b>options</b> as nullable record) as table
+Table.AddFuzzyClusterColumn(
+    <b>table</b> as table,
+    <b>columnName</b> as text,
+    <b>newColumnName</b> as text,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
 
 ## About

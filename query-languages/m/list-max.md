@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-List.Max(<b>list</b> as list, optional <b>default</b> as any, optional <b>comparisonCriteria</b> as any, optional <b>includeNulls</b> as nullable logical) as any
+List.Max(
+    <b>list</b> as list,
+    optional <b>default</b> as any,
+    optional <b>comparisonCriteria</b> as any,
+    optional <b>includeNulls</b> as nullable logical
+) as any
 </pre>
   
 ## About

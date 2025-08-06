@@ -8,7 +8,13 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-GeometryPoint.From(<b>x</b> as number, <b>y</b> as number, optional <b>z</b> as nullable number, optional <b>m</b> as nullable number, optional <b>srid</b> as nullable number) as record
+GeometryPoint.From(
+    <b>x</b> as number,
+    <b>y</b> as number,
+    optional <b>z</b> as nullable number,
+    optional <b>m</b> as nullable number,
+    optional <b>srid</b> as nullable number
+) as record
 </pre>
 
 ## About

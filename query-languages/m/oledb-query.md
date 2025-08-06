@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-OleDb.Query(<b>connectionString</b> as any, <b>query</b> as text, optional <b>options</b> as nullable record) as table
+OleDb.Query(
+    <b>connectionString</b> as any,
+    <b>query</b> as text,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
 
 ## About

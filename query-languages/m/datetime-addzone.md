@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-DateTime.AddZone(<b>dateTime</b> as nullable datetime, <b>timezoneHours</b> as number, optional <b>timezoneMinutes</b> as nullable number) as nullable datetimezone
+DateTime.AddZone(
+    <b>dateTime</b> as nullable datetime,
+    <b>timezoneHours</b> as number,
+    optional <b>timezoneMinutes</b> as nullable number
+) as nullable datetimezone
 </pre>
   
 ## About

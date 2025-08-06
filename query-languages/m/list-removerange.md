@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-List.RemoveRange(<b>list</b> as list, <b>index</b> as number, optional <b>count</b> as nullable number) as list
+List.RemoveRange(
+    <b>list</b> as list,
+    <b>index</b> as number,
+    optional <b>count</b> as nullable number
+) as list
 </pre>
   
 ## About

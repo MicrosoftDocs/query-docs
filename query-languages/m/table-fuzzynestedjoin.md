@@ -8,7 +8,15 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.FuzzyNestedJoin(<b>table1</b> as table, <b>key1</b> as any, <b>table2</b> as table, <b>key2</b> as any, <b>newColumnName</b> as text, optional <b>joinKind</b> as nullable number, optional <b>joinOptions</b> as nullable record) as table
+Table.FuzzyNestedJoin(
+    <b>table1</b> as table,
+    <b>key1</b> as any,
+    <b>table2</b> as table,
+    <b>key2</b> as any,
+    <b>newColumnName</b> as text,
+    optional <b>joinKind</b> as nullable number,
+    optional <b>joinOptions</b> as nullable record
+) as table
 </pre>
   
 ## About

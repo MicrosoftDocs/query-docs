@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Text.Insert(<b>text</b> as nullable text, <b>offset</b> as number, <b>newText</b> as text) as nullable text
+Text.Insert(
+    <b>text</b> as nullable text,
+    <b>offset</b> as number,
+    <b>newText</b> as text
+) as nullable text
 </pre>
   
 ## About
