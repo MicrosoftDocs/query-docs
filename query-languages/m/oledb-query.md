@@ -2,6 +2,7 @@
 description: "Learn more about: OleDb.Query"
 title: "OleDb.Query"
 ms.subservice: m-source
+ms.custom: sfi-ropc-nochange
 ---
 # OleDb.Query
 

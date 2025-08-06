@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: COLUMNSTATISTICS"
 title: "COLUMNSTATISTICS function (DAX)"
+ms.custom: sfi-image-nochange
 ---
 # COLUMNSTATISTICS
 
