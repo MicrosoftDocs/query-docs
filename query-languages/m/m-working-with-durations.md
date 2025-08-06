@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Working with durations in Power Query M"
 title: "Working with durations in Power Query M"
-ms.date: 7/28/2025
+ms.date: 8/6/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-background
 ---
@@ -50,7 +50,7 @@ in
 ```
 
 > [!NOTE]
-> Subtracting one date and time function from a different date and time function (for example, subtracting a `#date` function from a `#datetime` function) results in an error. If you must use different date and time functions to determine a duration, use functions such as [Date.From](date-from.md), [DateTime.From](datetime-from.md), or [DateTimeZone.From](datetimezone-from.md) to explicitly change one of the date and time functions.
+> Subtracting one date and time function from a different date and time function (for example, subtracting a `#date` function from a `#datetime` function) results in an error. If you must use different date and time functions to determine a duration, use the [Date.From](date-from.md), [DateTime.From](datetime-from.md), [DateTimeZone.From](datetimezone-from.md), or [Time.From](time-from.md) functions to explicitly change one of the date and time functions.
 
 ### Converting from compatible values
 
@@ -130,7 +130,7 @@ in
 
 This calculation allows durations to be used in conditional logic, such as filtering rows based on elapsed time.
 
-### Type Compatibility
+### Type compatibility
 
 Durations are compatible with date and time values in arithmetic expressions but not interchangeable with them. For example, subtracting two date and time values yields a `duration`, but adding two date and time values is invalid.
 
@@ -147,7 +147,7 @@ in
     Source
 ```
 
-## Duration Functions in M
+## Duration functions in M
 
 Power Query M includes a set of built-in functions for working with durations. These functions allow for conversion, extraction of components, and aggregation of duration values, making them essential tools for time-based transformations.
 
@@ -168,9 +168,7 @@ in
     Source
 ```
 
-This conversion is helpful when durations are stored as decimal values in source data.
-
-### Component Accessors
+### Component accessors
 
 These functions extract specific parts of a duration:
 
@@ -207,7 +205,7 @@ in
     TextFormat
 ```
 
-### Total Value Functions
+### Total value functions
 
 These functions return the total value of a duration in a single unit, including fractional parts:
 
@@ -271,4 +269,4 @@ Since durations are based on fixed units (days, hours, minutes, seconds), there'
 * One month (approximate): #duration(30, 0, 0, 0)
 * One year (not leap year): #duration(365, 0, 0, 0)
 
-A `duration` type in Power Query M is a fixed structure that doesn’t account for calendar rules. For accurate spans over months or years, subtract one date and time from another instead of using fixed durations. This approach correctly handles leap years, varying month lengths, and daylight savings time (DST). However, also note that some date and time behavior might differ depending on whether the query runs locally (on Power Query Desktop) or online (on Power Query Online). For details, go to [Local, fixed, and UTC variants of current date and time](m-local-fixed-utc-variants.md). In general, avoid relying on fixed durations for long-term calculations.
+A `duration` type in Power Query M is a fixed structure that doesn’t account for calendar rules. For accurate duration spans over months or years, subtract one date and time from another instead of using fixed durations. This approach correctly handles leap years, varying month lengths, and daylight savings time (DST). However, also note that some date and time behavior might differ depending on whether the query runs locally (on Power Query Desktop) or online (on Power Query Online). For details, go to [Local, fixed, and UTC variants of current date and time](m-local-fixed-utc-variants.md). In general, avoid relying on fixed durations for long-term calculations.
