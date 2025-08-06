@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-List.Generate(<b>initial</b> as function, <b>condition</b> as function, <b>next</b> as function, optional <b>selector</b> as nullable function) as list
+List.Generate(
+    <b>initial</b> as function,
+    <b>condition</b> as function,
+    <b>next</b> as function,
+    optional <b>selector</b> as nullable function
+) as list
 </pre>
 
 ## About

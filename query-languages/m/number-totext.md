@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Number.ToText(<b>number</b> as nullable number, optional <b>format</b> as nullable text, optional <b>culture</b> as nullable text) as nullable text
+Number.ToText(
+    <b>number</b> as nullable number,
+    optional <b>format</b> as nullable text,
+    optional <b>culture</b> as nullable text
+) as nullable text
 </pre>
   
 ## About

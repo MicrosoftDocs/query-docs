@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Cube.AddAndExpandDimensionColumn(<b>cube</b> as table, <b>dimensionSelector</b> as any, <b>attributeNames</b> as list, optional <b>newColumnNames</b> as any) as table
+Cube.AddAndExpandDimensionColumn(
+    <b>cube</b> as table,
+    <b>dimensionSelector</b> as any,
+    <b>attributeNames</b> as list,
+    optional <b>newColumnNames</b> as any
+) as table
 </pre>
 
 ## About

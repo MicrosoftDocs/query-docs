@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.PositionOf(<b>table</b> as table, <b>row</b> as record, optional <b>occurrence</b> as any, optional <b>equationCriteria</b> as any) as any
+Table.PositionOf(
+    <b>table</b> as table,
+    <b>row</b> as record,
+    optional <b>occurrence</b> as any,
+    optional <b>equationCriteria</b> as any
+) as any
 </pre>
   
 ## About

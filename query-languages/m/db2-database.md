@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-DB2.Database(<b>server</b> as text, <b>database</b> as text, optional <b>options</b> as nullable record) as table
+DB2.Database(
+    <b>server</b> as text,
+    <b>database</b> as text,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
 
 ## About

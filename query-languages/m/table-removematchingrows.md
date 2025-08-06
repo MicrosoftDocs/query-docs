@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.RemoveMatchingRows(<b>table</b> as table, <b>rows</b> as list, optional <b>equationCriteria</b> as any) as table
+Table.RemoveMatchingRows(
+    <b>table</b> as table,
+    <b>rows</b> as list,
+    optional <b>equationCriteria</b> as any
+) as table
 </pre>
   
 ## About

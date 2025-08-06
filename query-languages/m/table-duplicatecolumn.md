@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.DuplicateColumn(<b>table</b> as table, <b>columnName</b> as text, <b>newColumnName</b> as text, optional <b>columnType</b> as nullable type) as table
+Table.DuplicateColumn(
+    <b>table</b> as table,
+    <b>columnName</b> as text,
+    <b>newColumnName</b> as text,
+    optional <b>columnType</b> as nullable type
+) as table
 </pre>
 
 ## About

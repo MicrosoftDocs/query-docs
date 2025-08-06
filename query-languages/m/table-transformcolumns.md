@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.TransformColumns(<b>table</b> as table, <b>transformOperations</b> as list, optional <b>defaultTransformation</b> as nullable function, optional <b>missingField</b> as nullable number) as table
+Table.TransformColumns(
+    <b>table</b> as table,
+    <b>transformOperations</b> as list,
+    optional <b>defaultTransformation</b> as nullable function,
+    optional <b>missingField</b> as nullable number
+) as table
 </pre>
   
 ## About

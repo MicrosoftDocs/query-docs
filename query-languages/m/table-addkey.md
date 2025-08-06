@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.AddKey(<b>table</b> as table, <b>columns</b> as list, <b>isPrimary</b> as logical) as table
+Table.AddKey(
+    <b>table</b> as table,
+    <b>columns</b> as list,
+    <b>isPrimary</b> as logical
+) as table
 </pre>
   
 ## About

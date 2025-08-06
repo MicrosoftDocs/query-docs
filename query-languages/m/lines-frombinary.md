@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Lines.FromBinary(<b>binary</b> as binary, optional <b>quoteStyle</b> as any, optional <b>includeLineSeparators</b> as nullable logical, optional <b>encoding</b> as nullable number) as list
+Lines.FromBinary(
+    <b>binary</b> as binary,
+    optional <b>quoteStyle</b> as any,
+    optional <b>includeLineSeparators</b> as nullable logical,
+    optional <b>encoding</b> as nullable number
+) as list
 </pre>
 
 ## About

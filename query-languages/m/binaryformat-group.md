@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-BinaryFormat.Group(<b>binaryFormat</b> as function, <b>group</b> as list, optional <b>extra</b> as nullable function, optional <b>lastKey</b> as any) as function
+BinaryFormat.Group(
+    <b>binaryFormat</b> as function,
+    <b>group</b> as list,
+    optional <b>extra</b> as nullable function,
+    optional <b>lastKey</b> as any
+) as function
 </pre>
 
 ## About

@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Record.AddField(<b>record</b> as record, <b>fieldName</b> as text, <b>value</b> as any, optional <b>delayed</b> as nullable logical) as record
+Record.AddField(
+    <b>record</b> as record,
+    <b>fieldName</b> as text,
+    <b>value</b> as any,
+    optional <b>delayed</b> as nullable logical
+) as record
 </pre>
   
 ## About

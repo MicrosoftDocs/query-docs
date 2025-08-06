@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-DateTimeZone.SwitchZone(<b>dateTimeZone</b> as nullable datetimezone, <b>timezoneHours</b> as number, optional <b>timezoneMinutes</b> as nullable number) as nullable datetimezone
+DateTimeZone.SwitchZone(
+    <b>dateTimeZone</b> as nullable datetimezone,
+    <b>timezoneHours</b> as number,
+    optional <b>timezoneMinutes</b> as nullable number
+) as nullable datetimezone
 </pre>
   
 ## About

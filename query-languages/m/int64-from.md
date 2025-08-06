@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Int64.From(<b>value</b> as any, optional <b>culture</b> as nullable text, optional <b>roundingMode</b> as nullable number) as nullable number
+Int64.From(
+    <b>value</b> as any,
+    optional <b>culture</b> as nullable text,
+    optional <b>roundingMode</b> as nullable number
+) as nullable number
 </pre>
 
 ## About
