@@ -50,7 +50,7 @@ in
 ```
 
 > [!NOTE]
-> Subtracting one date and time function from a different date and time function (for example, subtracting a `#date` function from a `#datetime` function) results in an error. If you must use different date and time functions to determine a duration, use the [Date.From](date-from.md), [DateTime.From](datetime-from.md), [DateTimeZone.From](datetimezone-from.md), or [Time.From](time-from.md) functions to explicitly change one of the date and time functions.
+> Subtracting one date and time type from a different date and time type (for example, subtracting a `date` value from a `datetime` value) results in an error. If you must use different date and time types to determine a duration, use the [Date.From](date-from.md), [DateTime.From](datetime-from.md), [DateTimeZone.From](datetimezone-from.md), or [Time.From](time-from.md) functions to explicitly change one of the date and time types.
 
 ### Converting from compatible values
 
@@ -263,10 +263,4 @@ So, even though you only had the number of seconds that a process took place, Po
 
 ## Representing weeks, months, and years
 
-Since durations are based on fixed units (days, hours, minutes, seconds), there's no native concept of weeks, months, or years, which vary in length. However, approximate equivalents can be created by converting to days:
-
-* One week: #duration(7, 0, 0, 0)
-* One month (approximate): #duration(30, 0, 0, 0)
-* One year (not leap year): #duration(365, 0, 0, 0)
-
-A `duration` type in Power Query M is a fixed structure that doesn’t account for calendar rules. For accurate duration spans over months or years, subtract one date and time from another instead of using fixed durations. This approach correctly handles leap years, varying month lengths, and daylight savings time (DST). However, also note that some date and time behavior might differ depending on whether the query runs locally (on Power Query Desktop) or online (on Power Query Online). For details, go to [Local, fixed, and UTC variants of current date and time](m-local-fixed-utc-variants.md). In general, avoid relying on fixed durations for long-term calculations.
+Since durations are based on fixed units (days, hours, minutes, seconds), there's no native concept of weeks, months, or years, which vary in length. A `duration` type in Power Query M is a fixed structure that doesn’t account for calendar rules. For accurate duration spans over months or years, subtract one date and time from another instead of using fixed durations. This approach correctly handles leap years, varying month lengths, and daylight savings time (DST). However, also note that some date and time behavior might differ depending on whether the query runs locally (on Power Query Desktop) or online (on Power Query Online). For details, go to [Local, fixed, and UTC variants of current date and time](m-local-fixed-utc-variants.md). In general, avoid relying on fixed durations for long-term calculations.
