@@ -113,5 +113,4 @@ in
 
 ## Related content
 
-* [Occurrence.Type](occurrence-type.md)
-* [Equation criteria](list-functions.md#equation-criteria)
+[Equation criteria](list-functions.md#equation-criteria)
