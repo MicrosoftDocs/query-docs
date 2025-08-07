@@ -23,7 +23,7 @@ DATESINPERIOD(<dates> or <calendar>, <start_date>, <number_of_intervals>, <inter
 |Term|Definition|
 |--------|--------------|
 |`dates or calendar`|A column that contains dates or a calendar reference|
-|`start_date`|A date expression. For calendar, please use the same data type and format as the primary column tagged to the Day category.|
+|`start_date`|A date expression. If calendar syntax is used, please use the same data type as the primary column tagged to the Day category.|
 |`number_of_intervals`|An integer that specifies the number of intervals to add to, or subtract from, the dates.|
 |`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `DAY`, `WEEK`, `MONTH`, `QUARTER`, and `YEAR`. Week could only be used with calendar.|
 

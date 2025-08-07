@@ -21,7 +21,7 @@ NEXTYEAR(<dates> or <calendar>[,<year_end_date>])
 |Term|Definition|
 |--------|--------------|
 |`dates or calendar`|A column that contains dates or a calendar reference|
-|`year_end_date`|(optional) A literal string with a date that defines the year-end date. The default is December 31.|
+|`year_end_date`|(optional) A literal string with a date that defines the year-end date. The default is December 31. This parameter is permitted only when the date column syntax is used. |
 
 ## Return value
 

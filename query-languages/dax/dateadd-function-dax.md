@@ -75,9 +75,9 @@ Calendar based time intelligence provides more control by two specific enums. Pl
 
 ## Behavior for calendar based DateAdd when selection is at a finer grain than the shift level
 
-When calendar reference is used and the selection is at a finger grain than the shift level, an index-based approach is taken. To illustrate this behavior, let's consider the scenario where the selection is at the date level and DATEADD() is shifting by month. Here is what DateAdd will do:
+When calendar reference is used and the selection is at a finer grain than the shift level, an index-based approach is taken. To illustrate this behavior, let's consider the scenario where the selection is at the date level and DATEADD() is shifting by month. Here is what DateAdd will do:
 
-- Determine the positions of the current selection within the month
+- Determine the positions of the current selection within the month.  
 For example, if the current selection spans March 3–10, the positions are from the 3rd to the 10th day of the month.
 
 - Shift the month

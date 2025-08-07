@@ -8,7 +8,7 @@ title: "NEXTDAY function (DAX)"
 
 For date column input, returns a table that contains a column of all dates from the next day, based on the last date specified in the `dates` column in the current context.    
 
-For calendar input, returns returns the next day of the last date in the current context, based on the calendar. The output will include all primary tagged columns for that day.
+For calendar input, returns the next day of the last date in the current context, based on the calendar. The output will include all primary tagged columns for that day.
 
 
 ## Syntax
