@@ -1,18 +1,18 @@
 ---
-description: "Learn more about: Working with durations in Power Query M"
-title: "Working with durations in Power Query M"
+description: "Learn more about: Durations in Power Query M"
+title: "Durations in Power Query M"
 ms.date: 8/6/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-background
 ---
 
-# Working with durations in Power Query M
+# Duration support in Power Query M
 
 A duration in Power Query M represents the difference between two points in time, expressed in days, hours, minutes, and seconds. Whether you're calculating the time between customer interactions, filtering records based on elapsed time, or building dynamic time-based logic, durations are essential for creating robust and intelligent data models.
 
 This article explores the structure, creation, and manipulation of durations in Power Query M. It includes practical examples and shares tips to help you use durations effectively in your own data workflows.
 
-## Creating durations
+## Create a duration
 
 A duration is defined by the `#duration(<days>, <hours>, <minutes>, <seconds>)` function. For example, `#duration(2, 3, 0, 0)` represents a duration of 2 days and 3 hours. Power Query M provides several ways to create a duration, depending on the context and the level of precision required.
 
@@ -52,11 +52,11 @@ in
 > [!NOTE]
 > Subtracting one date and time type from a different date and time type (for example, subtracting a `date` value from a `datetime` value) results in an error. If you must use different date and time types to determine a duration, use the [Date.From](date-from.md), [DateTime.From](datetime-from.md), [DateTimeZone.From](datetimezone-from.md), or [Time.From](time-from.md) functions to explicitly change one of the date and time types.
 
-### Converting from compatible values
+### Convert from compatible values
 
 The [Duration.From](duration-from.md) function can convert compatible values into durations. For more information, go to [Duration.From(value)](#durationfromvalue).
 
-## Working with durations
+## Work with durations
 
 Once a duration is created in Power Query M, it can be manipulated using various operations and functions. These capabilities make durations highly versatile for time-based logic and calculations.
 
@@ -257,10 +257,10 @@ in
 
 The following table is the result of these calculations.
 
-:::image type="content" source="media/m-working-with-durations/adding-seconds-for-duration.png" alt-text="Screenshot of the table containing the end date and time column derived from the start time and duration in seconds.":::
+:::image type="content" source="media/durations/add-seconds-for-duration.png" alt-text="Screenshot of the table containing the end date and time column derived from the start time and duration in seconds.":::
 
 So, even though you only had the number of seconds that a process took place, Power Query M rolls that duration value up into minutes, hours, and days when the result is evaluated.
 
-## Representing weeks, months, and years
+## Represent weeks, months, and years
 
 Since durations are based on fixed units (days, hours, minutes, seconds), there's no native concept of weeks, months, or years, which vary in length. A `duration` type in Power Query M is a fixed structure that doesn’t account for calendar rules. For accurate duration spans over months or years, subtract one date and time from another instead of using fixed durations. This approach correctly handles leap years, varying month lengths, and daylight savings time (DST). However, also note that some date and time behavior might differ depending on whether the query runs locally (on Power Query Desktop) or online (on Power Query Online). For details, go to [Local, fixed, and UTC variants of current date and time](m-local-fixed-utc-variants.md). In general, avoid relying on fixed durations for long-term calculations.
