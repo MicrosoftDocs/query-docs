@@ -52,6 +52,8 @@ items:
     items:
     - name: Local, fixed, and UTC variants
       href: m-local-fixed-utc-variants.md
+    - name: Durations in Power Query M
+      href: durations.md
   - name: Text formatting
     items:
     - name: Standard numeric format strings
