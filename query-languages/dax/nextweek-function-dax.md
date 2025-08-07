@@ -9,7 +9,7 @@ title: "NEXTWEEK function (DAX)"
 > [!NOTE]
 > Week functions only work with calendar based time intelligence. 
 
-Returns all primary tagged columns of all dates from the next week, based on the last date in the current context.
+Returns a table of all dates from the next week, based on the last date in the current context. The table contains all primary tagged columns and all time related columns.
 
 
 ## Syntax
@@ -26,7 +26,7 @@ NEXTWEEK(<calendar>)
 
 ## Return value
 
-A table that contains primary tagged columns for next week, in the current context.
+A table contains all primary tagged columns and all time related columns.
 
 ## Remarks
 

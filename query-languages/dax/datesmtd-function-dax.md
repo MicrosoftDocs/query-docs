@@ -7,7 +7,7 @@ title: "DATESMTD function (DAX)"
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
 For date column input, returns a table that contains a column of the dates for the month to date, in the current context.  
-For calendar input, returns a table that contains primary tagged columns for the month to date, in the current context.
+For calendar input, returns a table for the month to date, in the current context. The table contains all primary tagged columns and all time related columns.
 
 ## Syntax
 
@@ -24,7 +24,7 @@ DATESMTD(<dates> or <calendar>)
 ## Return value
 
 For date column input, a table containing a single column of date values.  
-For calendar input, a table that contains all primary tagged columns.
+For calendar input, a table that contains all primary tagged columns and all time related columns.
 
 ## Remarks
 

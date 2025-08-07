@@ -26,7 +26,7 @@ LASTDATE(<dates> or <calendar>)
 
 For date column input, a table containing a single column and single row with a date value.
 
-For calendar input, a table containing a single column and single row with a date value.
+For calendar input, a single row table that contains all primary tagged columns and all time related columns.
 
 ## Remarks
 

@@ -7,7 +7,7 @@ title: "DATEADD function (DAX)"
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
 If input is date column, returns a table that contains a column of dates, shifted either forward or backward in time by the specified number of intervals from the dates in the current context.  
-If input is calendar, returns primary tagged columns shifted either forward or backward in time by the specified number of intervals, from the dates in the current context, based on the calendar.
+If the input is a calendar, the function returns dates shifted forward or backward in time by the specified number of intervals, based on the current context. The output includes the primary tagged columns as well as time-related columns.
 
 ## Syntax
 
@@ -28,7 +28,7 @@ DATEADD(<dates> or <calendar>, <number_of_intervals>, <interval>[,<Extension>],[
 ## Return value
 
 For date column input, a table containing a single column of date values.  
-For calendar input, a table that contains all the tagged column for the shifted periods, in the current context.
+For calendar input, a table that contains all primary tagged columns and time related columns for the shifted periods, in the current context.
 
 ## Remarks
 

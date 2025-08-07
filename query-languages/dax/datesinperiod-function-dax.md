@@ -8,7 +8,7 @@ title: "DATESINPERIOD function (DAX)"
 
 For date column input, returns a table that contains a column of dates that begins with a specified start date and continues for the specified number and type of date intervals.
 
-For calendar input, returns a table that contains all primary tagged columns that begins with a specified start date and continues for the specified number and type of date intervals.
+For calendar input, returns a table that begins with a specified start date and continues for the specified number and type of date intervals. The table contains all primary tagged columns and all time related columns.
 
 This function is suited to pass as a filter to the [CALCULATE](calculate-function-dax.md) function. Use it to filter an expression by standard date intervals such as days, months, quarters, or years.
 
@@ -30,7 +30,7 @@ DATESINPERIOD(<dates> or <calendar>, <start_date>, <number_of_intervals>, <inter
 ## Return value
 
 For date column input, a table containing a single column of date values.  
-For calendar input, a table that contains all primary tagged columns.
+For calendar input, a table that contains all primary tagged columns and all time related columns.
 
 ## Remarks
 

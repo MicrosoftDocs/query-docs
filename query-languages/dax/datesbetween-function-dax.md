@@ -8,7 +8,7 @@ title: "DATESBETWEEN function (DAX)"
 
 For date column input, returns a table that contains a column of dates that begins with a specified start date and continues until a specified end date.
 
-For calendar input, returns a table that contains all primary tagged columns that begins with a specified start date and continues until a specified end date.
+For calendar input, returns a table that begins with a specified start date and continues until a specified end date. The table contains all primary tagged columns and all time related columns.
 
 This function is suited to pass as a filter to the [CALCULATE](calculate-function-dax.md) function. Use it to filter an expression by a custom date range.
 
@@ -32,7 +32,7 @@ DATESBETWEEN(<dates> or <calendar>, <StartDate>, <EndDate>)
 ## Return value
 
 For date column input, a table containing a single column of date values.  
-For calendar input, a table that contains all primary tagged columns.
+For calendar input, a table that contains all primary tagged columns and all time related columns.
 
 ## Remarks
 

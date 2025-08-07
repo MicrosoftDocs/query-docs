@@ -7,7 +7,7 @@ title: "ENDOFMONTH function (DAX)"
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
 For date column input, returns the last date of the month in the current context for the specified column of dates.  
-For calendar input, returns a table that contains all primary tagged columns for the last date of the month, in the current context.
+For calendar input, returns a table for the last date of the month, in the current context. The table contains all primary tagged columns and all time related columns.
 
 ## Syntax
 
@@ -24,7 +24,7 @@ ENDOFMONTH(<dates> or <calendar>)
 ## Return value
 
 For date column input, a table containing a single column and single row with a date value.  
-For calendar input, a table with a single row that contains all primary tagged columns.
+For calendar input, a table with a single row that contains all primary tagged columns and all time related columns.
 
 ## Remarks
 

@@ -8,7 +8,7 @@ title: "NEXTQUARTER function (DAX)"
 
 For date column input, returns a table that contains a column of all dates in the next quarter, based on the last date specified in the `dates` column, in the current context.
 
-For calendar input, returns primary tagged columns of all dates from the next quarter, based on the last date in the current context.
+For calendar input, returns a table of all dates from the next quarter, based on the last date in the current context. The table contains all primary tagged columns and all time related columns.
 
 ## Syntax
 
@@ -25,7 +25,7 @@ NEXTQUARTER(<dates> or <calendar>)
 ## Return value
 
 For date column input, a table containing a single column of date values.  
-For calendar input, a table that contains primary tagged columns for next quarter, in the current context.
+For calendar input, a table for next quarter, in the current context. The table contains all primary tagged columns and all time related columns.
 
 ## Remarks
 
