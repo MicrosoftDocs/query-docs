@@ -22,7 +22,7 @@ PARALLELPERIOD(<dates> or <calendar>,<number_of_intervals>,<interval>)
 |--------|--------------|
 |`dates or calendar`|A column that contains dates or a calendar reference|
 |`number_of_intervals`|An integer that specifies the number of intervals to add to or subtract from the dates.|
-|`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`, `week`. Week could only be used for calendar.|
+|`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`, `week`. The week value is only applicable when calendar syntax is used.|
 
 ## Return value
 

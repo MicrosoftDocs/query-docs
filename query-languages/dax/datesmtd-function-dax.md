@@ -24,7 +24,7 @@ DATESMTD(<dates> or <calendar>)
 ## Return value
 
 For date column input, a table containing a single column of date values.  
-For calendar input, a table that contains primary tagged columns for the month to date, in the current context.
+For calendar input, a table that contains all primary tagged columns.
 
 ## Remarks
 

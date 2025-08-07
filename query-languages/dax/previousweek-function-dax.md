@@ -25,7 +25,7 @@ PREVIOUSWEEK(<calendar>)
 
 ## Return value
 
-A table that contains primary tagged columns for the previous week, in the current context.
+A table that contains all primary tagged columns.
 
 ## Remarks
 

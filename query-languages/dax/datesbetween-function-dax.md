@@ -26,8 +26,8 @@ DATESBETWEEN(<dates> or <calendar>, <StartDate>, <EndDate>)
 |Term|Definition|
 |--------|--------------|
 |`dates or calendar`|A column that contains dates or a calendar reference|
-|`StartDate`|A date/day expression. For calendar, please use the same data type and string format as column that is tagged by Day.|
-|`EndDate`|A date/day expression. For calendar, please use the same data type and format as the primary column tagged to the Day category.|
+|`StartDate`|A date/day expression. If calendar syntax is used, please use the same data type as the primary column tagged to the Day category.|
+|`EndDate`|A date/day expression. If calendar syntax is used, please use the same data type as the primary column tagged to the Day category.|
 
 ## Return value
 

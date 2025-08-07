@@ -27,7 +27,7 @@ OPENINGBALANCEWEEK(<expression>,<calendar>[,<filter>])
 
 ## Return value
 
-A scalar value that represents the `expression` evaluated to the end of the previous week in the current context.
+A scalar value that represents the `expression` evaluated at the end of the previous week in the current context.
 
 ## Remarks
 

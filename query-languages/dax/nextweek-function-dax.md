@@ -6,7 +6,7 @@ title: "NEXTWEEK function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Return primary tagged columns of all dates from the next week, based on the last date in the current context.
+Returns all primary tagged columns of all dates from the next week, based on the last date in the current context.
 
 > [!NOTE]
 > Week functions only work with calendar based time intelligence. 

@@ -21,7 +21,7 @@ CLOSINGBALANCEYEAR(<expression>,<dates> or <calendar>[,<filter>][,<year_end_date
 |`expression`|An expression that returns a scalar value.|
 |`dates or calendar`|A column that contains dates or a calendar reference.|
 |`filter`|(optional) An expression that specifies a filter to apply to the current context.|
-|`year_end_date`|(optional) A literal string with a date that defines the year-end date. The default is December 31. This only applies when date column is used.|
+|`year_end_date`|(optional) A literal string with a date that defines the year-end date. The default is December 31. This parameter is permitted only when the date column syntax is used.|
 
 ## Return value
 
@@ -45,7 +45,7 @@ A scalar value that represents the `expression` evaluated at the last date of th
     > [!NOTE]
     > The `filter` expression has restrictions described in [CALCULATE function](calculate-function-dax.md).
 
-- The `year_end_date` parameter must not be specified when a calendar is used.
+- The `year_end_date` parameter is permitted only when the date column syntax is used.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 

@@ -41,7 +41,7 @@ For calendar input, a table that contains primary tagged columns for next year, 
 
 - The `year_end_date` parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is ignored. This parameter does not apply when calendar is used.
 
-- The `year_end_date` parameter must not be specified when a calendar is used.
+- The `year_end_date` parameter is permitted only when the date column syntax is used.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 

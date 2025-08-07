@@ -21,9 +21,9 @@ DATEADD(<dates> or <calendar>, <number_of_intervals>, <interval>[,<Extension>],[
 |--------|--------------|
 |`dates or calendar`|A column that contains dates or a calendar reference.|
 |`number_of_intervals`|An integer that specifies the number of intervals to add to or subtract from the dates.|
-|`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`, `week`, `day`. Week only applies for calendar.|
-|`extension`|Only applies for calendar. Define behavior when the original time period has fewer dates than the resulting time period. Valid values are: EXTENDING (Default), PRECISE.|
-|`truncation`|Only applies for calendar. Define behavior when the original time period has more dates than the resulting time period. Valid values are: BLANKS (Default), Anchored.|
+|`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`, `week`, `day`. The week enum is only applicable when a calendar reference is provided.|
+|`extension`|Only applicable when a calendar reference is provided. Define behavior when the original time period has fewer dates than the resulting time period. Valid values are: EXTENDING (Default), PRECISE. |
+|`truncation`|Only applicable when a calendar reference is provided. Define behavior when the original time period has more dates than the resulting time period. Valid values are: BLANKS (Default), Anchored.|
 
 ## Return value
 
@@ -73,23 +73,20 @@ This behavior only happens when last two days of month are included in the selec
 
 Calendar based time intelligence provides more control by two specific enums. Please check above remarks.
 
-## Behavior for calendar based DateAdd when selection is at finer grain than the shift level
+## Behavior for calendar based DateAdd when selection is at a finer grain than the shift level
 
-When the input is a calendar table, and the current selection is at the date level, the following logic is applied when shifting by month:
+When calendar reference is used and the selection is at a finger grain than the shift level, an index-based approach is taken. To illustrate this behavior, let's consider the scenario where the selection is at the date level and DATEADD() is shifting by month. Here is what DateAdd will do:
 
-- Identify the current date window
-Determine the position of the current selection within the month.
-For example, if the current selection spans March 3–10, the window is from the 3rd to the 10th day of the month.
+- Determine the positions of the current selection within the month
+For example, if the current selection spans March 3–10, the positions are from the 3rd to the 10th day of the month.
 
 - Shift the month
-Apply the month shift — e.g., +1 shifts March to April.
+Apply the month shift — e.g., a shift of +1 changes March to April.
 
-- Return the same relative window
-Retrieve the 3rd–10th of the new month (e.g., April 3–10).
+- Return the same relative positions in the shifted month
+Retrieve the 3rd to the 10th of the new month (e.g., April 3–10).
 
-The same logic applies when selection is at a finer grain than the shift level.
-
-## Paramters for calendar based DateAdd when selection is at finer grain than the shift level
+## Parameters for calendar based DateAdd when selection is at a finer grain than the shift level
 
 When the selection granularity is **finer** than the shift unit (e.g., selecting individual dates while shifting by month), the **index-based behavior** can lead to **ambiguities**, especially across months of varying lengths. To handle these edge cases, two parameters are introduced:
 
@@ -98,7 +95,7 @@ When the selection granularity is **finer** than the shift unit (e.g., selecting
 Controls how the function behaves when the destination month is **longer** than the current one.
 
 - **`Precise`**: Keeps the original date range strictly.  
-  → `March 3–10` → `April 3–10`
+  → `Feb 25–28` → `March 25–28`
 
 - **`Extended`**: Allows the window to expand toward the **end of the month** if needed.  
   → `Feb 25–28` → `March 25–31`

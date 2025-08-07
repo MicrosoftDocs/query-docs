@@ -8,7 +8,8 @@ title: "NEXTDAY function (DAX)"
 
 For date column input, returns a table that contains a column of all dates from the next day, based on the last date specified in the `dates` column in the current context.    
 
-For calendar input, returns primary tagged columns of all dates from the next day, based on the last date in the current context.
+For calendar input, returns returns the next day of the last date in the current context, based on the calendar. The output will include all primary tagged columns for that day.
+
 
 ## Syntax
 
@@ -35,8 +36,6 @@ For calendar input, a table that contains primary tagged columns for next day, i
   - A reference to a date/time column.
   - A table expression that returns a single column of date/time values.
   - A Boolean expression that defines a single-column table of date/time values.
-  
-- For calendar input, this function returns next day of the last date in calendar.
 
 - Constraints on Boolean expressions are described in the topic, [CALCULATE function](calculate-function-dax.md).
 
@@ -55,7 +54,7 @@ The following sample formula creates a measure that calculates the 'next day sal
 
 ## Example for calendar based time intelligence
 
-The following sample formula creates a measure that calculates the 'next day sales' of Internet sales for fiscal calendar.
+The following sample formula creates a measure that calculates the 'next day sales' of Internet sales for a fiscal calendar.
 
 ```dax
 =

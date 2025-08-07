@@ -5,7 +5,7 @@ title: "STARTOFWEEK function (DAX)"
 # STARTOFWEEK
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
-Returns a table that contains all the tagged columns for first date of week, in the current context.  
+Returns a table that contains all the primary tagged columns for the first date of week in the current context, based on the calendar.
 
 > [!NOTE]
 > Week functions only work with calendar based time intelligence. 
@@ -24,7 +24,7 @@ STARTOFWEEK(<calendar>)
 
 ## Return value
 
-A table that contains all primary tagged columns for the first date of the week, in the current context.
+A table that contains all primary tagged columns
 
 ## Remarks
 
