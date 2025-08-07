@@ -8,7 +8,7 @@ title: "PREVIOUSMONTH function (DAX)"
 
 For date column input, returns a table that contains a column of all dates from the previous month, based on the first date in the `<Dates>` column, in the current context.
 
-For calendar input, returns primary tagged columns of all dates from the previous month, based on the first date in the current context.
+For calendar input, returns a table of all dates from the previous month, based on the first date in the current context. The table contains all primary tagged columns and all time related columns.
 
 ## Syntax
 
@@ -25,7 +25,7 @@ PREVIOUSMONTH(<dates> or <calendar>)
 ## Return value
 
 For date column input, a table containing a single column of date values.  
-For calendar input, a table that contains primary tagged columns for previous month, in the current context.
+For calendar input, a table that contains all primary tagged columns and all time related columns.
 
 ## Remarks
 

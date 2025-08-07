@@ -6,7 +6,7 @@ title: "PREVIOUSWEEK function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns primary tagged columns of all dates from the previous week, based on the first date in the current context.
+Returns a table of all dates from the previous week, based on the first date in the current context. The table contains all primary tagged columns and all time related columns.
 
 > [!NOTE]
 > Week functions only work with calendar based time intelligence. 
@@ -25,7 +25,7 @@ PREVIOUSWEEK(<calendar>)
 
 ## Return value
 
-A table that contains all primary tagged columns.
+A table that contains all primary tagged columns and all time related columns.
 
 ## Remarks
 

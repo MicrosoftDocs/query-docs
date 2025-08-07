@@ -8,7 +8,7 @@ title: "PREVIOUSYEAR function (DAX)"
 
 For date column input, Returns a table that contains a column of all dates from the previous year, given the last date in the `dates` column, in the current context.
 
-For calendar input, returns primary tagged columns of all dates from the previous year, based on the first date in the current context.
+For calendar input, returns all dates from the previous year, based on the first date in the current context. The table contains all primary tagged columns and all time related columns
 
 ## Syntax
 
@@ -26,7 +26,7 @@ PREVIOUSYEAR(<dates> or <calendar>[,<year_end_date>])
 ## Return value
 
 For date column input, a table containing a single column of date values.  
-For calendar input, a table that contains primary tagged columns for previous year, in the current context.
+For calendar input, a table that contains all primary tagged columns and all time related columns.
 
 ## Remarks
 

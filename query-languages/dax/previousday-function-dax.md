@@ -8,7 +8,7 @@ title: "PREVIOUSDAY function (DAX)"
 
 For date column input, returns a table that contains a column of all dates representing the day that is previous to the first date in the `dates` column, in the current context.
 
-For calendar input, returns primary tagged columns that is previous to the first date in the calendar, in the current context.
+For calendar input, returns a table that is previous to the first date in the calendar, in the current context. The table contains all primary tagged columns and all time related columns.
 
 ## Syntax
 
@@ -25,7 +25,7 @@ PREVIOUSDAY(<dates> or <calendar>)
 ## Return value
 
 For date column input, a table containing a single column of date values.  
-For calendar input, a table that contains primary tagged columns for previous dates, in the current context.
+For calendar input, a table that contains all primary tagged columns and all time related columns.
 
 ## Remarks
 

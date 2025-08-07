@@ -8,7 +8,7 @@ title: "PREVIOUSQUARTER function (DAX)"
 
 For date column input, returns a table that contains a column of all dates from the previous quarter, based on the first date in the `dates` column, in the current context.
 
-For calendar input, returns primary tagged columns of all dates from the previous quarter, based on the first date in the current context.
+For calendar input, returns a table of all dates from the previous quarter, based on the first date in the current context. The table contains all primary tagged columns and all time related columns.
 
 ## Syntax
 
@@ -25,7 +25,7 @@ PREVIOUSQUARTER(<dates> or <calendar>)
 ## Return value
 
 For date column input, a table containing a single column of date values.  
-For calendar input, a table that contains primary tagged columns for previous quarter, in the current context.
+For calendar input, a table for previous quarter. The table contains all primary tagged columns and all time related columns.
 
 ## Remarks
 
