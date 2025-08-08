@@ -66,6 +66,9 @@ The following sample formula creates a measure that calculates the previous year
 = CALCULATE(SUM(ResellerSales_USD[SalesAmount_USD]), SAMEPERIODLASTYEAR(FiscalCalendar))
 ```
 
+## Behavior difference about lunar year betwen calendar time intelligence and classic time intelligence
+For a lunar year, SamePeriodLastYear will produce different results at the date granularity. In calendar-based time intelligence, shifting Feb 29 2008 back one year results in Mar 1 2007, because it is treated as the 60th day of the year. In classic time intelligence, the same shift returns Feb 28 2007.
+
 ## Related content
 
 [Time intelligence functions](time-intelligence-functions-dax.md)
