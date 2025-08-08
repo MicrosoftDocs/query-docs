@@ -44,6 +44,8 @@ For calendar input, a table that contains all primary tagged columns and all tim
 
 - For calendar input, if the input date is not found in tagged day column, the result will be undefined. Please provide valid date input.
 
+- For calendar input, use the same data type and format as the tagged day column for the start date. For example, if the column uses the format YYYY-Sn-Qn-Mnn-Wnn-Dnn (e.g., "2014-S2-Q4-M11-W45-D03"), the start date must follow the same format (e.g., "2015-S2-Q4-M11-W45-D03"). Otherwise, the behavior is undefined.
+
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example
@@ -81,6 +83,9 @@ CALCULATE (
 ```
 
 Consider that the report is filtered by the month of June 2020. The MAX function returns June 30, 2020. The DATESINPERIOD function then returns a range from July 1, 2019 until June 30, 2020. It's a year  starting from June 30, 2020 for the last year.
+
+## Behavior difference about lunar year betwen calendar time intelligence and classic time intelligence
+Internally, DATESINPERIOD uses the same logic as DATEADD to determine the end date from the start date, and then calculates the range. For a lunar year, DATEADD produces different results at the date granularity, so the result of DATESINPERIOD will differ as well. In calendar-based time intelligence, shifting Feb 29 2008 back one year results in Mar 1 2007, because it is treated as the 60th day of the year. In classic time intelligence, the same shift returns Feb 28 2007. Because the end date differs, the output of DATESINPERIOD will also differ.
 
 ## Related content
 

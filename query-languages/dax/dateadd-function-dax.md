@@ -61,6 +61,13 @@ The following formula calculates dates that are one year before the dates in the
 = DATEADD ( DateTime[DateKey], -1, YEAR )
 ```
 
+## Example for calendar based time intelligence
+The following formula returns a table of dates shifted one year back from the dates in the current context.
+
+```dax
+DATEADD ( FiscalCalendar, -1, YEAR )
+```
+
 ## Special behavior when input is date column
 
 When the selection includes the last two days of month, DATEADD will use "extension" semantics and will include the days till the end of month. For example, when Feb 27 and 28 of 2013 are included in the selection and a month is added, DATEADD will return March 27 to 31.
@@ -109,13 +116,9 @@ Controls how the function behaves when the destination month is **shorter** than
 
 - **`Blank`**: Returns **blank** when the shifted date doesn't exist.  
   → `March 31` → _(blank)_ (since February doesn't have 31st)
-
-## Example for calendar based time intelligence
-The following formula calculates dates that are one year before the dates in the current context.
-
-```dax
-DATEADD ( FiscalCalendar, -1, YEAR )
-```
+  
+## Behavior difference about lunar year betwen calendar time intelligence and classic time intelligence
+For a lunar year, DATEADD will produce different results at the date granularity. In calendar-based time intelligence, shifting Feb 29 2008 back one year results in Mar 1 2007, because it is treated as the 60th day of the year. In classic time intelligence, the same shift returns Feb 28 2007.
 
 ## Related content
 

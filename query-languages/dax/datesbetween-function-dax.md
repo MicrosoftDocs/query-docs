@@ -48,6 +48,8 @@ For calendar input, a table that contains all primary tagged columns and all tim
 
 - For calendar input, if the input date is not found in tagged day column, it will be treated as BLANK and thus the first/last value will be used.
 
+- For calendar input, use the same data type and format as the tagged day column for the start date and end date. For example, if the column uses the format YYYY-Sn-Qn-Mnn-Wnn-Dnn (e.g., "2014-S2-Q4-M11-W45-D03"), the start date and end date must follow the same format (e.g., "2015-S2-Q4-M11-W45-D03"). Otherwise, the behavior is undefined.
+
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example
