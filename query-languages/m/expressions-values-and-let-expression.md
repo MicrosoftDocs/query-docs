@@ -211,10 +211,10 @@ Structured data can contain any M value. Here are some examples:
 let
     Source =
     {
-       1,
-       "Bob",
-       DateTime.ToText(DateTime.LocalNow(), "yyyy-MM-dd"),
-       [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0]
+        1,
+        "Bob",
+        DateTime.ToText(DateTime.LocalNow(), "yyyy-MM-dd"),
+        [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0]
     }
 in
     Source
