@@ -6,7 +6,7 @@ title: "DATEADD function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-If input is date column, returns a table that contains a column of dates, shifted either forward or backward in time by the specified number of intervals from the dates in the current context.  
+If input is a date column, returns a table that contains a column of dates, shifted either forward or backward in time by the specified number of intervals from the dates in the current context.  
 If the input is a calendar, the function returns dates shifted forward or backward in time by the specified number of intervals, based on the current context. The output includes the primary tagged columns as well as time-related columns.
 
 ## Syntax
@@ -23,7 +23,7 @@ DATEADD(<dates> or <calendar>, <number_of_intervals>, <interval>[,<Extension>],[
 |`number_of_intervals`|An integer that specifies the number of intervals to add to or subtract from the dates.|
 |`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`, `week`, `day`. The week enum is only applicable when a calendar reference is provided.|
 |`extension`|Only applicable when a calendar reference is provided. Define behavior when the original time period has fewer dates than the resulting time period. Valid values are: EXTENDING (Default), PRECISE. |
-|`truncation`|Only applicable when a calendar reference is provided. Define behavior when the original time period has more dates than the resulting time period. Valid values are: BLANKS (Default), Anchored.|
+|`truncation`|Only applicable when a calendar reference is provided. Define behavior when the original time period has more dates than the resulting time period. Valid values are: BLANKS (Default), ANCHORED.|
 
 ## Return value
 
@@ -49,7 +49,7 @@ The `dates` argument can be any of the following:
 
 - The result table includes only dates that exist in the `dates` column.
 
-- When input is date column, there is contiguous check. In other words, if the dates in the current context do not form a contiguous interval, the function returns an error.
+- When input is a date column, there is contiguous check. In other words, if the dates in the current context do not form a contiguous interval, the function returns an error.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
