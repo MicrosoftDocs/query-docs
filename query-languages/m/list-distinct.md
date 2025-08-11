@@ -89,7 +89,9 @@ let
         {each _{0}, Comparer.OrdinalIgnoreCase}
     ),
     ToTable = Table.FromRows(DistinctByCountry, {"Country", "Date", "Value"}),
-    ChangeTypes = Table.TransformColumnTypes(ToTable, {{"Country", type text}, {"Date", type date}, {"Value", Int64.Type}})
+    ChangeTypes = Table.TransformColumnTypes(
+        ToTable, {{"Country", type text}, {"Date", type date}, {"Value", Int64.Type}}
+    )
 in
     ChangeTypes
 ```
