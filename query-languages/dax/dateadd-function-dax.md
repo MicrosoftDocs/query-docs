@@ -68,7 +68,7 @@ The following formula returns a table of dates shifted one year back from the da
 DATEADD ( FiscalCalendar, -1, YEAR )
 ```
 
-## Special behavior when input is date column
+## Special behavior when input is a date column
 
 When the selection includes the last two days of month, DATEADD will use "extension" semantics and will include the days till the end of month. For example, when Feb 27 and 28 of 2013 are included in the selection and a month is added, DATEADD will return March 27 to 31.
 
