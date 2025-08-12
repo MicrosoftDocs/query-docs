@@ -2,6 +2,7 @@
 description: "Learn more about: AdoDotNet.Query"
 title: "AdoDotNet.Query"
 ms.subservice: m-source
+ms.custom: sfi-ropc-nochange
 ---
 # AdoDotNet.Query
 
