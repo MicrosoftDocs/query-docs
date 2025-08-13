@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.InsertRows(<b>table</b> as table, <b>offset</b> as number, <b>rows</b> as list) as table
+Table.InsertRows(
+    <b>table</b> as table,
+    <b>offset</b> as number,
+    <b>rows</b> as list
+) as table
 </pre>
   
 ## About

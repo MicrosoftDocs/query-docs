@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Xml.Tables(<b>contents</b> as any, optional <b>options</b> as nullable record, optional <b>encoding</b> as nullable number) as table
+Xml.Tables(
+    <b>contents</b> as any,
+    optional <b>options</b> as nullable record,
+    optional <b>encoding</b> as nullable number
+) as table
 </pre>
 
 ## About

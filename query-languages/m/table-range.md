@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.Range(<b>table</b> as table, <b>offset</b> as number, optional <b>count</b> as nullable number) as table
+Table.Range(
+    <b>table</b> as table,
+    <b>offset</b> as number,
+    optional <b>count</b> as nullable number
+) as table
 </pre>
   
 ## About

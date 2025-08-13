@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-List.InsertRange(<b>list</b> as list, <b>index</b> as number, <b>values</b> as list) as list
+List.InsertRange(
+    <b>list</b> as list,
+    <b>index</b> as number,
+    <b>values</b> as list
+) as list
 </pre>
 
 ## About

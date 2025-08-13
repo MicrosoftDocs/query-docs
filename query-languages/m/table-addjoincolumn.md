@@ -8,7 +8,13 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.AddJoinColumn(table1 as table, key1 as any, table2 as function, key2 as any, newColumnName as text) as table
+Table.AddJoinColumn(
+    <b>table1</b> as table,
+    <b>key1</b> as any,
+    <b>table2</b> as function,
+    <b>key2</b> as any,
+    <b>newColumnName</b> as text
+) as table
 </pre>
 
 ## About

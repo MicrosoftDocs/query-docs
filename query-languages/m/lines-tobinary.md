@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Lines.ToBinary(<b>lines</b> as list, optional <b>lineSeparator</b> as nullable text, optional <b>encoding</b> as nullable number, optional <b>includeByteOrderMark</b> as nullable logical) as binary
+Lines.ToBinary(
+    <b>lines</b> as list,
+    optional <b>lineSeparator</b> as nullable text,
+    optional <b>encoding</b> as nullable number,
+    optional <b>includeByteOrderMark</b> as nullable logical
+) as binary
 </pre>
 
 ## About

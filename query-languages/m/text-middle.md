@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Text.Middle(<b>text</b> as nullable text, <b>start</b> as number, optional <b>count</b> as nullable number) as nullable text
+Text.Middle(
+    <b>text</b> as nullable text,
+    <b>start</b> as number,
+    optional <b>count</b> as nullable number
+) as nullable text
 </pre>
   
 ## About

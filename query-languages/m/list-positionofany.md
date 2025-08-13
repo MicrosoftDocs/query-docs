@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-List.PositionOfAny(<b>list</b> as list, <b>values</b> as list, optional <b>occurrence</b> as nullable number, optional <b>equationCriteria</b> as any) as any
+List.PositionOfAny(
+    <b>list</b> as list,
+    <b>values</b> as list,
+    optional <b>occurrence</b> as nullable number,
+    optional <b>equationCriteria</b> as any
+) as any
 </pre>
   
 ## About

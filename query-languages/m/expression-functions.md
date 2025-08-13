@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Expression functions"
 title: "Expression functions"
-ms.date: 5/16/2022
+ms.date: 8/11/2025
 ms.custom: "nonautomated-date"
 ---
 # Expression functions

@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-List.Range(<b>list</b> as list, <b>offset</b> as number, optional <b>count</b> as nullable number) as list
+List.Range(
+    <b>list</b> as list,
+    <b>offset</b> as number,
+    optional <b>count</b> as nullable number
+) as list
 </pre>
   
 ## About

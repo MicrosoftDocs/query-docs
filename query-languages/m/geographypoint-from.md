@@ -8,7 +8,13 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-GeographyPoint.From(<b>longitude</b> as number, <b>latitude</b> as number, optional <b>z</b> as nullable number, optional <b>m</b> as nullable number, optional <b>srid</b> as nullable number) as record
+GeographyPoint.From(
+    <b>longitude</b> as number,
+    <b>latitude</b> as number,
+    optional <b>z</b> as nullable number,
+    optional <b>m</b> as nullable number,
+    optional <b>srid</b> as nullable number
+) as record
 </pre>
 
 ## About

@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.Unpivot(<b>table</b> as table, <b>pivotColumns</b> as list, <b>attributeColumn</b> as text, <b>valueColumn</b> as text) as table
+Table.Unpivot(
+    <b>table</b> as table,
+    <b>pivotColumns</b> as list,
+    <b>attributeColumn</b> as text,
+    <b>valueColumn</b> as text
+) as table
 </pre>
   
 ## About

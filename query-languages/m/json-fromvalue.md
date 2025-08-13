@@ -18,9 +18,9 @@ Produces a JSON representation of a given value `value` with a text encoding spe
 * Null, text and logical values are represented as the corresponding JSON types
 * Numbers are represented as numbers in JSON, except that `#infinity`, `-#infinity` and `#nan` are converted to null
 * Lists are represented as JSON arrays
-* Records are represnted as JSON objects
+* Records are represented as JSON objects
 * Tables are represented as an array of objects
-* Dates, times, datetimes, datetimezones and durations are represented as ISO-8601 text
+* Dates, times, datetimes, datetimezones, and durations are represented as ISO-8601 text
 * Binary values are represented as base-64 encoded text
 * Types and functions produce an error
 

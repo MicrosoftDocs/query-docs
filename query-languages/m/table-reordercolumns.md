@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.ReorderColumns(<b>table</b> as table, <b>columnOrder</b> as list, optional <b>missingField</b> as nullable number) as table
+Table.ReorderColumns(
+    <b>table</b> as table,
+    <b>columnOrder</b> as list,
+    optional <b>missingField</b> as nullable number
+) as table
 </pre>
   
 ## About

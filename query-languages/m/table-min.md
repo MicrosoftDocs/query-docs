@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.Min(<b>table</b> as table, <b>comparisonCriteria</b> as any, optional <b>default</b> as any) as any
+Table.Min(
+    <b>table</b> as table,
+    <b>comparisonCriteria</b> as any,
+    optional <b>default</b> as any
+) as any
 </pre>
   
 ## About

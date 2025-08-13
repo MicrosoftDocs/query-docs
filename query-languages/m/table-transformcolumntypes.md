@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.TransformColumnTypes(<b>table</b> as table, <b>typeTransformations</b> as list, optional <b>culture</b> as nullable text) as table
+Table.TransformColumnTypes(
+    <b>table</b> as table,
+    <b>typeTransformations</b> as list,
+    optional <b>culture</b> as nullable text
+) as table
 </pre>
   
 ## About

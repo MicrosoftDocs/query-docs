@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Splitter.SplitTextByEachDelimiter(<b>delimiters</b> as list, optional <b>quoteStyle</b> as nullable number, optional <b>startAtEnd</b> as nullable logical) as function
+Splitter.SplitTextByEachDelimiter(
+    <b>delimiters</b> as list,
+    optional <b>quoteStyle</b> as nullable number,
+    optional <b>startAtEnd</b> as nullable logical
+) as function
 </pre>
   
 ## About

@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.TransformColumnNames(<b>table</b> as table, <b>nameGenerator</b> as function, optional <b>options</b> as nullable record) as table
+Table.TransformColumnNames(
+    <b>table</b> as table,
+    <b>nameGenerator</b> as function,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
   
 ## About

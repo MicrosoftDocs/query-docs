@@ -8,7 +8,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.CombineColumnsToRecord(<b>table</b> as table, <b>newColumnName</b> as text, <b>sourceColumns</b> as list, optional <b>options</b> as nullable record) as table
+Table.CombineColumnsToRecord(
+    <b>table</b> as table,
+    <b>newColumnName</b> as text,
+    <b>sourceColumns</b> as list,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
 
 ## About

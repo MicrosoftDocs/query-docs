@@ -8,7 +8,7 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Cube.Parameters(cube as table) as table
+Cube.Parameters(<b>cube</b> as table) as table
 </pre>
 
 ## About

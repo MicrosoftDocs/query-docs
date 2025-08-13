@@ -7,7 +7,12 @@ ms.subservice: m-source
 
 ## Syntax
 
-<pre>Value.NativeQuery(<b>target</b> as any, <b>query</b> as text, optional <b>parameters</b> as any, optional <b>options</b> as nullable record) as any
+<pre>Value.NativeQuery(
+    <b>target</b> as any,
+    <b>query</b> as text,
+    optional <b>parameters</b> as any,
+    optional <b>options</b> as nullable record
+) as any
 </pre>
 
 ## About

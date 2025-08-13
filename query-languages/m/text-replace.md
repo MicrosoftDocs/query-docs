@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Text.Replace(<b>text</b> as nullable text, <b>old</b> as text, <b>new</b> as text) as nullable text
+Text.Replace(
+    <b>text</b> as nullable text,
+    <b>old</b> as text,
+    <b>new</b> as text
+) as nullable text
 </pre>
   
 ## About
