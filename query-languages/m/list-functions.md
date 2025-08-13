@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: List functions"
 title: "List functions"
-ms.date: 1/28/2025
+ms.date: 8/13/2025
 ms.custom: "nonautomated-date"
 ---
 # List functions
@@ -165,17 +165,25 @@ These functions generate list of values.
 
 ### Equation criteria
 
-Equation criteria for list values can be specified as either:
+In many of the list functions, the `equationCriteria` parameter indicates how equality is determined between list elements. Equation criteria for list values can be specified as either:
 
 - A function value that is either:
   - A key selector that determines the value in the list to apply the equality criteria.
-  - A comparer function that is used to specify the kind of comparison to apply. Built in comparer functions can be specified&mdash;go to [Comparer functions](comparer-functions.md).
+  - A comparer function that is used to specify the kind of comparison to apply. Built-in comparer functions can be specified&mdash;go to [Comparer functions](comparer-functions.md).
 - A list value that has:
   - Exactly two items.
   - The first element is the key selector as specified above.
   - The second element is a comparer as specified above.
 
-For more information and examples, go to [List.Distinct](list-distinct.md).
+In most list functions, the comparer function used in the `equationCriteria` parameter must be one of the built-in [comparer functions](comparer-functions.md). In those list functions, using a custom comparer results in an error. However, the following list functions allow you to use a custom comparer:
+
+- [List.Contains](list-contains.md)
+- [List.ContainsAll](list-containsall.md)
+- [List.ContainsAny](list-containsany.md)
+- [List.PositionOf](list-positionof.md)
+- [List.PositionOfAny](list-positionofany.md)
+
+For more information and examples, go to [List.Distinct](list-distinct.md) and [List.PositionOf](list-positionof.md).
 
 ### Comparison criteria
 
