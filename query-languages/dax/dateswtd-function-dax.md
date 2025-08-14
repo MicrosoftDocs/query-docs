@@ -9,7 +9,7 @@ title: "DATESWTD function (DAX)"
 > [!NOTE]
 > Week functions only work with calendar based time intelligence. 
 
-For calendar input, returns a table for week to date, in the current context. The table contains all primary tagged columns and all time related columns.
+Returns a table for week to date, in the current context. The table contains all primary tagged columns and all time related columns.
 
 ## Syntax
 
