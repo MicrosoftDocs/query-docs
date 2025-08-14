@@ -84,8 +84,8 @@ CALCULATE (
 
 Consider that the report is filtered by the month of June 2020. The MAX function returns June 30, 2020. The DATESINPERIOD function then returns a range from July 1, 2019 until June 30, 2020. It's a year  starting from June 30, 2020 for the last year.
 
-## Behavior difference about lunar year betwen calendar time intelligence and classic time intelligence
-Internally, DATESINPERIOD uses the same logic as DATEADD to determine the end date from the start date, and then calculates the range. For a lunar year, DATEADD produces different results at the date granularity, so the result of DATESINPERIOD will differ as well. In calendar-based time intelligence, shifting Feb 29 2008 back one year results in Mar 1 2007, because it is treated as the 60th day of the year. In classic time intelligence, the same shift returns Feb 28 2007. Because the end date differs, the output of DATESINPERIOD will also differ.
+## Differences in behavior between classic and calendar time intelligence
+Internally, DATESINPERIOD uses the same logic as DATEADD to determine the end date from the start date, and then calculates the range. Some scenarios may yield different results when comparing classic and calendar time intelligence. For example, in a lunar year, DATEADD produces different results at the date granularity, so the result of DATESINPERIOD will differ as well. In calendar-based time intelligence, shifting Feb 29 2008 back one year results in Mar 1 2007, because it is treated as the 60th day of the year. In classic time intelligence, the same shift returns Feb 28 2007. Because the end date differs, the output of DATESINPERIOD will also differ. The workaround is to use DATEADD(Calendar, -<number of a year>, month) to calculate end date. For example, if a year has 13 months in calendar, use DATEADD(Calendar, -13, month). This approach will shift by month so Feb 2008 will go to Feb 2007. Then, write a custom datesInPeriod based on the new end date.
 
 ## Related content
 

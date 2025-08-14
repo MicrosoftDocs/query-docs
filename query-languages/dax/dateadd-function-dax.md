@@ -49,7 +49,7 @@ The `dates` argument can be any of the following:
 
 - The result table includes only dates that exist in the `dates` column.
 
-- When input is a date column, there is contiguous check. In other words, if the dates in the current context do not form a contiguous interval, the function returns an error.
+- If the date column syntax is used and the dates in the current context do not form a contiguous interval, the function returns an error.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
@@ -70,7 +70,7 @@ DATEADD ( FiscalCalendar, -1, YEAR )
 
 ## Special behavior when input is a date column
 
-When the selection includes the last two days of month, DATEADD will use "extension" semantics and will include the days till the end of month. For example, when Feb 27 and 28 of 2013 are included in the selection and a month is added, DATEADD will return March 27 to 31.
+When the selection includes the last two days of month, DATEADD will use "extension" semantics and will include the days until the end of month. For example, when Feb 27 and 28 of 2013 are included in the selection and a month is added, DATEADD will return March 27 to 31.
 
 This behavior only happens when last two days of month are included in the selection. If only Feb 27 is selected, it will go to March 27.
 
@@ -78,7 +78,7 @@ This behavior only happens when last two days of month are included in the selec
 = DATEADD(DateTime[DateKey], 1, month)
 ```
 
-Calendar based time intelligence provides more control by two specific enums. Please check above remarks.
+Calendar based time intelligence provides more control via two optional parameters: "Extension" and "Truncation". Please see the above parameter descriptions for details.
 
 ## Behavior for calendar based DateAdd when selection is at a finer grain than the shift level
 
@@ -117,8 +117,8 @@ Controls how the function behaves when the destination month is **shorter** than
 - **`Blank`**: Returns **blank** when the shifted date doesn't exist.  
   → `March 31` → _(blank)_ (since February doesn't have 31st)
   
-## Behavior difference about lunar year betwen calendar time intelligence and classic time intelligence
-For a lunar year, DATEADD will produce different results at the date granularity. In calendar-based time intelligence, shifting Feb 29 2008 back one year results in Mar 1 2007, because it is treated as the 60th day of the year. In classic time intelligence, the same shift returns Feb 28 2007.
+## Differences in behavior between classic and calendar time intelligence
+Some scenarios may yield different results when comparing classic and calendar time intelligence. For example, in a lunar year, SamePeriodLastYear will produce different results at the date granularity. In calendar-based time intelligence, shifting Feb 29 2008 back one year results in Mar 1 2007, because it is treated as the 60th day of the year. In classic time intelligence, the same shift returns Feb 28 2007.The workaround is to use DATEADD(Calendar, -<number of a year>, month). For example, if a year has 13 months in calendar, use DATEADD(Calendar, -13, month). This approach will shift by month so Feb 2008 will go to Feb 2007.
 
 ## Related content
 
