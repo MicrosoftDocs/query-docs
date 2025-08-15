@@ -45,5 +45,5 @@ EVALUATE
 
 ## Related content
 
-- [ISNUMERIC](/dax/isnumeric-function-dax.md)
+- [ISNUMBER](/dax/isnumber-function-dax.md)
 - [Information functions](information-functions-dax.md)
