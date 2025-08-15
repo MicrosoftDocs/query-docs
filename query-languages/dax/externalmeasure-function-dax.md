@@ -20,7 +20,7 @@ ms.custom: AW2020Example
 |Term|Definition|
 |--------|--------------|
 |`measurename`|Name of the measure as defined in the remote model.|
-|`datatype`|An enumeration that includes: BOOLEAN/LOGICAL, CURRENCY/DECIMAL, DATETIME, DOUBLE, INTEGER/INT64, STRING/TEXT.|
+|`datatype`|An enumeration that includes: BOOLEAN/LOGICAL, CURRENCY/DECIMAL, DATETIME, DOUBLE, INTEGER/INT64, STRING/TEXT, VARIANT.|
 |`connection`|The name of the connection to the remote model.|
 
 ## Return value

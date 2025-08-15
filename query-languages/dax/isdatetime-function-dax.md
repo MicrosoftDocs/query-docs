@@ -36,11 +36,11 @@ The following DAX query shows the behavior of ISDATETIME.
 ```dax
 EVALUATE
 {
-    IF ( ISDATETIME ( 42 ), "Is datetime", "Is not datetime" ), //RETURNS: Is not datetime
-    IF ( ISDATETIME ( "42" ), "Is datetime", "Is not datetime" ), //RETURNS: Is not datetime
-    IF ( ISDATETIME ( "2025-07-01" ), "Is datetime", "Is not datetime" ), //RETURNS: Is not datetime
-    IF ( ISDATETIME ( dt"2025-07-01" ), "Is datetime", "Is not datetime" ), //RETURNS: Is datetime
-    IF ( ISDATETIME ( DATE ( 2025, 7, 1 ) ), "Is datetime", "Is not datetime" ) //RETURNS: Is datetime
+    IF ( ISDATETIME ( 42 ), "Is datetime", "Is not datetime" ), // RETURNS: Is not datetime
+    IF ( ISDATETIME ( "42" ), "Is datetime", "Is not datetime" ), // RETURNS: Is not datetime
+    IF ( ISDATETIME ( "2025-07-01" ), "Is datetime", "Is not datetime" ), // RETURNS: Is not datetime
+    IF ( ISDATETIME ( dt"2025-07-01" ), "Is datetime", "Is not datetime" ), // RETURNS: Is datetime
+    IF ( ISDATETIME ( DATE ( 2025, 7, 1 ) ), "Is datetime", "Is not datetime" ) // RETURNS: Is datetime
 }
 ```
 

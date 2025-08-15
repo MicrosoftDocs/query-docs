@@ -37,10 +37,10 @@ The following DAX query shows the behavior of the ISTEXT function.
 ```dax
 EVALUATE
 {
-    IF ( ISTEXT ( "text" ), "Is Text", "Is Non-Text" ), //RETURNS: Is Text
-    IF ( ISTEXT ( "" ), "Is Text", "Is Non-Text" ), //RETURNS: Is Text
-    IF ( ISTEXT ( 42 ), "Is Text", "Is Non-Text" ), //RETURNS: Is Non-Text
-    IF ( ISTEXT ( BLANK () ), "Is Text", "Is Non-Text" ) //RETURNS: Is Non-Text
+    IF ( ISTEXT ( "text" ), "Is Text", "Is Non-Text" ), // RETURNS: Is Text
+    IF ( ISTEXT ( "" ), "Is Text", "Is Non-Text" ), // RETURNS: Is Text
+    IF ( ISTEXT ( 42 ), "Is Text", "Is Non-Text" ), // RETURNS: Is Non-Text
+    IF ( ISTEXT ( BLANK () ), "Is Text", "Is Non-Text" ) // RETURNS: Is Non-Text
 }
 ```
 

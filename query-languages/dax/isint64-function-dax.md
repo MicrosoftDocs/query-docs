@@ -37,10 +37,10 @@ The following DAX query shows the behavior of ISINT64.
 ```dax
 EVALUATE
 {
-    IF ( ISINT64 ( 4.2 ), "Is integer", "Is not integer" ), //RETURNS: Is not integer
-    IF ( ISINT64 ( 3.1E-1 ), "Is integer", "Is not integer" ), //RETURNS: Is not integer
-    IF ( ISINT64 ( "42" ), "Is integer", "Is not integer" ), //RETURNS: Is not integer
-    IF ( ISINT64 ( 42 ), "Is integer", "Is not integer" ) //RETURNS: Is integer
+    IF ( ISINT64 ( 4.2 ), "Is integer", "Is not integer" ), // RETURNS: Is not integer
+    IF ( ISINT64 ( 3.1E-1 ), "Is integer", "Is not integer" ), // RETURNS: Is not integer
+    IF ( ISINT64 ( "42" ), "Is integer", "Is not integer" ), // RETURNS: Is not integer
+    IF ( ISINT64 ( 42 ), "Is integer", "Is not integer" ) // RETURNS: Is integer
 }
 ```
 

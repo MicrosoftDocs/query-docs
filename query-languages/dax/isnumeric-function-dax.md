@@ -37,9 +37,9 @@ The following DAX query shows the behavior of ISNUMERIC.
 ```dax
 EVALUATE
 {
-    IF ( ISNUMERIC ( 0 ), "Is number", "Is Not number" ), //RETURNS: Is number
-    IF ( ISNUMERIC ( 3.1E-1 ), "Is number", "Is Not number" ), //RETURNS: Is number
-    IF ( ISNUMERIC ( "42" ), "Is number", "Is Not number" ) //RETURNS: Is Not number
+    IF ( ISNUMERIC ( 0 ), "Is number", "Is Not number" ), // RETURNS: Is number
+    IF ( ISNUMERIC ( 3.1E-1 ), "Is number", "Is Not number" ), // RETURNS: Is number
+    IF ( ISNUMERIC ( "42" ), "Is number", "Is Not number" ) // RETURNS: Is Not number
 }
 ```
 

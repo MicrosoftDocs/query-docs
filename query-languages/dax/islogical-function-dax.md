@@ -37,9 +37,9 @@ The following DAX query shows the behavior of ISLOGICAL.
 ```dax
 EVALUATE
 {
-    IF ( ISLOGICAL ( TRUE ), "Is Boolean type or Logical", "Is different type" ), //RETURNS: Is Boolean type or Logical
-    IF ( ISLOGICAL ( FALSE ), "Is Boolean type or Logical", "Is different type" ), //RETURNS: Is Boolean type or Logical
-    IF ( ISLOGICAL ( 42 ), "Is Boolean type or Logical", "Is different type" ) //RETURNS: Is different type
+    IF ( ISLOGICAL ( TRUE ), "Is Boolean type or Logical", "Is different type" ), // RETURNS: Is Boolean type or Logical
+    IF ( ISLOGICAL ( FALSE ), "Is Boolean type or Logical", "Is different type" ), // RETURNS: Is Boolean type or Logical
+    IF ( ISLOGICAL ( 42 ), "Is Boolean type or Logical", "Is different type" ) // RETURNS: Is different type
 }
 ```
 

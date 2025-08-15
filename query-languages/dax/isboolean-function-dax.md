@@ -37,9 +37,9 @@ The following DAX query shows the behavior of ISBOOLEAN.
 ```dax
 EVALUATE
 {
-    IF ( ISBOOLEAN ( TRUE ), "Is Boolean type or Logical", "Is different type" ), //RETURNS: Is Boolean type or Logical
-    IF ( ISBOOLEAN ( FALSE ), "Is Boolean type or Logical", "Is different type" ), //RETURNS: Is Boolean type or Logical
-    IF ( ISBOOLEAN ( 42 ), "Is Boolean type or Logical", "Is different type" ) //RETURNS: Is different type
+    IF ( ISBOOLEAN ( TRUE ), "Is Boolean type or Logical", "Is different type" ), // RETURNS: Is Boolean type or Logical
+    IF ( ISBOOLEAN ( FALSE ), "Is Boolean type or Logical", "Is different type" ), // RETURNS: Is Boolean type or Logical
+    IF ( ISBOOLEAN ( 42 ), "Is Boolean type or Logical", "Is different type" ) // RETURNS: Is different type
 }
 ```
 

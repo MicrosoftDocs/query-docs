@@ -38,10 +38,10 @@ The following DAX query shows the behavior of the ISSTRING function.
 ```dax
 EVALUATE
 {
-    IF ( ISSTRING ( "text" ), "Is Text", "Is Non-Text" ), //RETURNS: Is Text
-    IF ( ISSTRING ( "" ), "Is Text", "Is Non-Text" ), //RETURNS: Is Text
-    IF ( ISSTRING ( 42 ), "Is Text", "Is Non-Text" ), //RETURNS: Is Non-Text
-    IF ( ISSTRING ( BLANK () ), "Is Text", "Is Non-Text" ) //RETURNS: Is Non-Text
+    IF ( ISSTRING ( "text" ), "Is Text", "Is Non-Text" ), // RETURNS: Is Text
+    IF ( ISSTRING ( "" ), "Is Text", "Is Non-Text" ), // RETURNS: Is Text
+    IF ( ISSTRING ( 42 ), "Is Text", "Is Non-Text" ), // RETURNS: Is Non-Text
+    IF ( ISSTRING ( BLANK () ), "Is Text", "Is Non-Text" ) // RETURNS: Is Non-Text
 }
 ```
 

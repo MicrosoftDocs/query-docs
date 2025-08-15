@@ -36,10 +36,10 @@ The following DAX query shows the behavior of ISDOUBLE.
 ```dax
 EVALUATE
 {
-    IF ( ISDOUBLE ( 4.2 ), "Is double", "Is not double" ), //RETURNS: Is double
-    IF ( ISDOUBLE ( 3.1E-1 ), "Is double", "Is not double" ), //RETURNS: Is double
-    IF ( ISDOUBLE ( "42" ), "Is double", "Is not double" ), //RETURNS: Is not double
-    IF ( ISDOUBLE ( 42 ), "Is double", "Is not double" ), //RETURNS: Is not double
+    IF ( ISDOUBLE ( 4.2 ), "Is double", "Is not double" ), // RETURNS: Is double
+    IF ( ISDOUBLE ( 3.1E-1 ), "Is double", "Is not double" ), // RETURNS: Is double
+    IF ( ISDOUBLE ( "42" ), "Is double", "Is not double" ), // RETURNS: Is not double
+    IF ( ISDOUBLE ( 42 ), "Is double", "Is not double" ), // RETURNS: Is not double
 }
 ```
 

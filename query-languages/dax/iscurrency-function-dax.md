@@ -37,10 +37,10 @@ The following DAX query shows the behavior of ISCURRENCY.
 ```dax
 EVALUATE
 {
-    IF ( ISCURRENCY ( 3.1E-1 ), "Is currency", "Is not currency" ), //RETURNS: Is not currency
-    IF ( ISCURRENCY ( "42" ), "Is currency", "Is not currency" ), //RETURNS: Is not currency
-    IF ( ISCURRENCY ( 42 ), "Is currency", "Is not currency" ), //RETURNS: Is not currency
-    IF ( ISCURRENCY ( CURRENCY ( 4.2421 ) ), "Is currency", "Is not currency" ) //RETURNS: Is currency
+    IF ( ISCURRENCY ( 3.1E-1 ), "Is currency", "Is not currency" ), // RETURNS: Is not currency
+    IF ( ISCURRENCY ( "42" ), "Is currency", "Is not currency" ), // RETURNS: Is not currency
+    IF ( ISCURRENCY ( 42 ), "Is currency", "Is not currency" ), // RETURNS: Is not currency
+    IF ( ISCURRENCY ( CURRENCY ( 4.2421 ) ), "Is currency", "Is not currency" ) // RETURNS: Is currency
 }
 ```
 

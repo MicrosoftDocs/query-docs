@@ -37,10 +37,10 @@ The following DAX query shows the behavior of ISDECIMAL.
 ```dax
 EVALUATE
 {
-    IF ( ISDECIMAL ( 3.1E-1 ), "Is decimal", "Is not decimal" ), //RETURNS: Is not decimal
-    IF ( ISDECIMAL ( "42" ), "Is decimal", "Is not decimal" ), //RETURNS: Is not decimal
-    IF ( ISDECIMAL ( 42 ), "Is decimal", "Is not decimal" ), //RETURNS: Is not decimal
-    IF ( ISDECIMAL ( CURRENCY ( 4.2421 ) ), "Is decimal", "Is not decimal" ) //RETURNS: Is decimal
+    IF ( ISDECIMAL ( 3.1E-1 ), "Is decimal", "Is not decimal" ), // RETURNS: Is not decimal
+    IF ( ISDECIMAL ( "42" ), "Is decimal", "Is not decimal" ), // RETURNS: Is not decimal
+    IF ( ISDECIMAL ( 42 ), "Is decimal", "Is not decimal" ), // RETURNS: Is not decimal
+    IF ( ISDECIMAL ( CURRENCY ( 4.2421 ) ), "Is decimal", "Is not decimal" ) // RETURNS: Is decimal
 }
 ```
 

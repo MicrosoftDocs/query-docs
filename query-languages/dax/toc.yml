@@ -562,6 +562,8 @@ items:
               href: error-function-dax.md
             - name: EVALUATEANDLOG
               href: evaluateandlog-function-dax.md
+            - name: EXTERNALMEASURE
+              href: externalmeasure-function-dax.md
             - name: TOCSV
               href: tocsv-function-dax.md
             - name: TOJSON
@@ -878,6 +880,8 @@ items:
         href: define-statement-dax.md
       - name: EVALUATE
         href: evaluate-statement-dax.md
+      - name: function
+        href: function-statement-dax.md
       - name: MEASURE
         href: measure-statement-dax.md
       - name: ORDER BY

@@ -37,9 +37,9 @@ The following DAX query shows the behavior of ISNUMBER.
 ```dax
 EVALUATE
 {
-    IF ( ISNUMBER ( 0 ), "Is number", "Is Not number" ), //RETURNS: Is number
-    IF ( ISNUMBER ( 3.1E-1 ), "Is number", "Is Not number" ), //RETURNS: Is number
-    IF ( ISNUMBER ( "42" ), "Is number", "Is Not number" ) //RETURNS: Is Not number
+    IF ( ISNUMBER ( 0 ), "Is number", "Is Not number" ), // RETURNS: Is number
+    IF ( ISNUMBER ( 3.1E-1 ), "Is number", "Is Not number" ), // RETURNS: Is number
+    IF ( ISNUMBER ( "42" ), "Is number", "Is Not number" ) // RETURNS: Is Not number
 }
 ```
 

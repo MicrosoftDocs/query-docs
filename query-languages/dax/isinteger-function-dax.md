@@ -37,10 +37,10 @@ The following DAX query shows the behavior of ISINTEGER.
 ```dax
 EVALUATE
 {
-    IF ( ISINTEGER ( 4.2 ), "Is integer", "Is not integer" ), //RETURNS: Is not integer
-    IF ( ISINTEGER ( 3.1E-1 ), "Is integer", "Is not integer" ), //RETURNS: Is not integer
-    IF ( ISINTEGER ( "42" ), "Is integer", "Is not integer" ), //RETURNS: Is not integer
-    IF ( ISINTEGER ( 42 ), "Is integer", "Is not integer" ) //RETURNS: Is integer
+    IF ( ISINTEGER ( 4.2 ), "Is integer", "Is not integer" ), // RETURNS: Is not integer
+    IF ( ISINTEGER ( 3.1E-1 ), "Is integer", "Is not integer" ), // RETURNS: Is not integer
+    IF ( ISINTEGER ( "42" ), "Is integer", "Is not integer" ), // RETURNS: Is not integer
+    IF ( ISINTEGER ( 42 ), "Is integer", "Is not integer" ) // RETURNS: Is integer
 }
 ```
 
