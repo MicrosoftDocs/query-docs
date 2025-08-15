@@ -3,7 +3,7 @@ description: "Learn more about: ISBOOLEAN"
 title: "ISBOOLEAN function (DAX)"
 ms.custom: ExampleTypeGeneric
 ---
-# ISLOGICAL
+# ISBOOLEAN
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
@@ -28,7 +28,7 @@ ISBOOLEAN(<value>)
 ## Remarks
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
-- This function is an alias of [ISLOGICAL](/dax/islogical-function-dax.md)
+- This function is an alias of [ISLOGICAL](islogical-function-dax.md)
 
 ## Example
 
@@ -44,5 +44,5 @@ EVALUATE
 ```
 
 ## Related content
-- [ISLOGICAL](/dax/islogical-function-dax.md)
+- [ISLOGICAL](islogical-function-dax.md)
 - [Information functions](information-functions-dax.md)

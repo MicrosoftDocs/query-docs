@@ -28,7 +28,7 @@ ISNUMBER(<value>)
 ## Remarks
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
-- This function is an alias of [ISNUMERIC](/dax/isnumeric-function-dax.md).
+- This function is an alias of [ISNUMERIC](isnumeric-function-dax.md).
 
 ## Example
 
@@ -45,5 +45,5 @@ EVALUATE
 
 ## Related content
 
-- [ISNUMERIC](/dax/isnumeric-function-dax.md)
+- [ISNUMERIC](isnumeric-function-dax.md)
 - [Information functions](information-functions-dax.md)

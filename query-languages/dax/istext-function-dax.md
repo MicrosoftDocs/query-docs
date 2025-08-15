@@ -28,7 +28,7 @@ ISTEXT(<value>)
 ## Remarks
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
-- This function is an alias of [ISSTRING](/dax/isstring-function-dax.md).
+- This function is an alias of [ISSTRING](isstring-function-dax.md).
 
 ## Example
 
@@ -46,5 +46,5 @@ EVALUATE
 
 ## Related content
 
-- [ISSTRING](/dax/isstring-function-dax.md)
+- [ISSTRING](isstring-function-dax.md)
 - [Information functions](information-functions-dax.md)

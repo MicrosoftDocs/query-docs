@@ -28,7 +28,7 @@ ISLOGICAL(<value>)
 ## Remarks
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
-- This function is an alias of [ISBOOLEAN](/dax/isboolean-function-dax.md)
+- This function is an alias of [ISBOOLEAN](isboolean-function-dax.md)
 
 ## Example
 
@@ -44,5 +44,5 @@ EVALUATE
 ```
 
 ## Related content
-- [ISBOOLEAN](/dax/isboolean-function-dax.md)
+- [ISBOOLEAN](isboolean-function-dax.md)
 - [Information functions](information-functions-dax.md)

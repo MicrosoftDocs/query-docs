@@ -28,7 +28,7 @@ ISINTEGER(<value>)
 ## Remarks
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
-- This function is an alias of [ISINT64](/dax/isint64-function-dax.md)
+- This function is an alias of [ISINT64](isint64-function-dax.md)
 
 ## Example
 
@@ -46,5 +46,5 @@ EVALUATE
 
 ## Related content
 
-- [ISINTEGER](/dax/isinteger-function-dax.md)
+- [ISINTEGER](isinteger-function-dax.md)
 - [Information functions](information-functions-dax.md)
