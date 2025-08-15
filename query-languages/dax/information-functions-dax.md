@@ -33,7 +33,7 @@ DAX information functions look at the cell or row that is provided as an argumen
 |[ISINSCOPE](isinscope-function-dax.md)      | Returns true when the specified column is the level in a hierarchy of levels.        |
 |[ISINT64](isint64-function-dax.md)|Checks whether a value is a whole number, and returns `TRUE` or `FALSE`. Alias of [ISINTEGER](isinteger-function-dax.md).|
 |[ISINTEGER](isinteger-function-dax.md)|Checks whether a value is a whole number, and returns `TRUE` or `FALSE`. Alias of [ISINT64](isint64-function-dax.md).|
-|[ISLOGICAL](islogical-function-dax.md)     | Checks whether a value is a logical value, (`TRUE` or `FALSE`), and returns `TRUE` or `FALSE`.          |
+|[ISLOGICAL](islogical-function-dax.md)     | Checks whether a value is a logical value, (`TRUE` or `FALSE`), and returns `TRUE` or `FALSE`. Alias of [ISBOOLEAN](isboolean-function-dax.md).|
 |[ISNONTEXT](isnontext-function-dax.md)     | Checks if a value is not text (blank cells are not text), and returns `TRUE` or `FALSE`.          |
 |[ISNUMBER](isnumber-function-dax.md)      | Checks whether a value is a number, and returns `TRUE` or `FALSE`. Alias of [ISNUMERIC](isnumeric-function-dax.md).|
 |[ISNUMERIC](isnumeric-function-dax.md)      | Checks whether a value is a number, and returns `TRUE` or `FALSE`. Alias of [ISNUMBER](isnumber-function-dax.md).|
