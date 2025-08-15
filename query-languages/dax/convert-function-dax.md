@@ -20,7 +20,7 @@ CONVERT(<Expression>, <Datatype>)
 |Term|Definition|
 |--------|--------------|
 |`Expression`|Any valid expression.|
-|`Datatype`|An enumeration that includes: BOOLEAN, CURRENCY, DATETIME, DECIMAL, DOUBLE, INT64, INTEGER, LOGICAL, STRING, TEXT.|
+|`Datatype`|An enumeration that includes: BOOLEAN/LOGICAL, CURRENCY/DECIMAL, DATETIME, DOUBLE, INTEGER/INT64, STRING/TEXT.|
 
 ## Return value
 
