@@ -31,8 +31,7 @@ DAX information functions look at the cell or row that is provided as an argumen
 |[ISEVEN](iseven-function-dax.md)      |  Returns `TRUE` if number is even, or `FALSE` if number is odd.       |
 |[ISFILTERED](isfiltered-function-dax.md)     |  Returns `TRUE` when `columnName` is being filtered directly.       |
 |[ISINSCOPE](isinscope-function-dax.md)      | Returns true when the specified column is the level in a hierarchy of levels.        |
-|[ISINT64](isint64-function-dax.md)|Checks whether a value is a whole number, and returns `TRUE` or `FALSE`. Alias of [ISINTEGER]
-(isinteger-function-dax.md).|
+|[ISINT64](isint64-function-dax.md)|Checks whether a value is a whole number, and returns `TRUE` or `FALSE`. Alias of [ISINTEGER](isinteger-function-dax.md).|
 |[ISINTEGER](isinteger-function-dax.md)|Checks whether a value is a whole number, and returns `TRUE` or `FALSE`. Alias of [ISINT64](isint64-function-dax.md).|
 |[ISLOGICAL](islogical-function-dax.md)     | Checks whether a value is a logical value, (`TRUE` or `FALSE`), and returns `TRUE` or `FALSE`.          |
 |[ISNONTEXT](isnontext-function-dax.md)     | Checks if a value is not text (blank cells are not text), and returns `TRUE` or `FALSE`.          |
