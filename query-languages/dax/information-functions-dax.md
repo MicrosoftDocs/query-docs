@@ -20,7 +20,7 @@ DAX information functions look at the cell or row that is provided as an argumen
 |[HASONEVALUE](hasonevalue-function-dax.md)     |  Returns `TRUE` when the context for `columnName` has been filtered down to one distinct value only. Otherwise is `FALSE`.        |
 |[ISAFTER](isafter-function-dax.md)     | A boolean function that emulates the behavior of a Start At clause and returns true for a row that meets all of the condition parameters.        |
 |[ISBLANK](isblank-function-dax.md)     | Checks whether a value is blank, and returns `TRUE` or `FALSE`.         |
-|[ISBOOLEAN](isboolean-function-dax.md) | Checks whether a value is a logical value, (`TRUE` or `FALSE`), and returns `TRUE` or `FALSE`. Alias of [ISLOGICAL](islogical-function-dax.md).|
+|[ISBOOLEAN](isboolean-function-dax.md) | Checks whether a value is a logical value, (`TRUE` or `FALSE`), and returns `TRUE` or `FALSE`. Alias of [ISLOGICAL](islogical-function-dax.md). |
 |[ISCROSSFILTERED](iscrossfiltered-function-dax.md)      |  Returns `TRUE` when `columnName` or another column in the same or related table is being filtered.         |
 |[ISCURRENCY](iscurrency-function-dax.md)|Checks whether a value is a decimal number, and returns `TRUE` or `FALSE`. Alias of [ISDECIMAL](isdecimal-function-dax.md).|
 |[ISDATETIME](isdatetime-function-dax.md)|Checks whether a value is a date / time, and returns `TRUE` or `FALSE`.|
