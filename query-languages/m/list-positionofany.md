@@ -22,7 +22,7 @@ Returns the offset at which an item from the specified list of values appears in
 
 * `list`: The list to search.
 * `values`: The list of values to find in the original list.
-* `occurrence`: (Optional) The specific occurrence to report. This value can be [Occurrence.First](occurrence-first.md), [Occurrence.Last](occurrence-last.md), or [Occurrence.All](occurrence-all.md). If no `occurrence` is specified, `Occurrence.First` is used.
+* `occurrence`: (Optional) The specific occurrence to report. This value can be [Occurrence.First](occurrence-type.md), [Occurrence.Last](occurrence-type.md), or [Occurrence.All](occurrence-type.md). If no `occurrence` is specified, `Occurrence.First` is used.
 * `equationCriteria`: (Optional) Specifies how equality is determined when comparing values. This parameter can be a key selector function, a comparer function, or a list containing both a key selector and a comparer.
 
 ## Example 1
