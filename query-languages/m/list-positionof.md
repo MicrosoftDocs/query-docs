@@ -22,7 +22,7 @@ Returns the offset at which the specified value appears in a list. Returns -1 if
 
 * `list`: The list to search.
 * `value`: The value to find in the list.
-* `occurrence`: (Optional) The specific occurrence to report. This value can be [Occurrence.First](occurrence-type.md), [Occurrence.Last](occurrence-type.md), or [Occurrence.All](occurrence-type.md).
+* `occurrence`: (Optional) The specific occurrence to report. This value can be [Occurrence.First](occurrence-type.md), [Occurrence.Last](occurrence-type.md), or [Occurrence.All](occurrence-type.md). If no `occurrence` is specified, `Occurrence.First` is used.
 * `equationCriteria`: (Optional) Specifies how equality is determined when comparing values. This parameter can be a key selector function, a comparer function, or a list containing both a key selector and a comparer.
 
 ## Example 1
@@ -90,7 +90,7 @@ in
 
 ## Example 4
 
-Find the position in the list that is within two units of the number 28.
+Find the position in the list that's within two units of the number 28.
 
 **Usage**
 
