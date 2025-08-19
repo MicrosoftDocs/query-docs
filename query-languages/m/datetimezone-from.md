@@ -34,7 +34,7 @@ The value of the offset corresponding to the local time zone is different when r
 
 ## Example 1
 
-Convert the textual representation of a date, time, and timezone to a 'datetimezone` value.
+Convert the textual representation of a date, time, and timezone to a `datetimezone` value.
 
 **Usage**
 
