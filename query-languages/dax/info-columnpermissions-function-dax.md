@@ -19,7 +19,16 @@ INFO.COLUMNPERMISSIONS ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for column permissions in the current semantic model.
+A table with the following columns:
+
+| Column name | Data type | Description |
+|-------------|-----------|-------------|
+| [ID] | Integer | The unique identifier of the column permission |
+| [RoleID] | Integer | The identifier of the role that has the column permission |
+| [TableID] | Integer | The identifier of the table containing the column |
+| [ColumnID] | Integer | The identifier of the column |
+| [State] | Integer | The state of the column permission |
+| [MetadataPermission] | Integer | The metadata permission level for the column |
 
 ## Remarks
 
@@ -33,34 +42,4 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 ```dax
 EVALUATE
 	INFO.COLUMNPERMISSIONS()
-```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.COLUMNPERMISSIONS(),
-        "RoleID", [RoleID],
-        "ColumnID", [ColumnID],
-        "State", [State]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Column Permissions =
-SELECTCOLUMNS(
-    INFO.COLUMNPERMISSIONS(),
-    "RoleID", [RoleID],
-    "ColumnID", [ColumnID]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Column Permissions =
-COUNTROWS(INFO.COLUMNPERMISSIONS())
 ```

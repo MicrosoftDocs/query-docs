@@ -19,7 +19,14 @@ INFO.CHANGEDPROPERTIES ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for changed properties in the current semantic model.
+A table with the following columns:
+
+| Column name | Data type | Description |
+|-------------|-----------|-------------|
+| [ID] | Integer | The unique identifier of the changed property |
+| [ObjectID] | Integer | The identifier of the object that has the changed property |
+| [ObjectType] | Integer | The type of object that has the changed property |
+| [Property] | String | The name of the property that was changed |
 
 ## Remarks
 
@@ -33,34 +40,4 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 ```dax
 EVALUATE
 	INFO.CHANGEDPROPERTIES()
-```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.CHANGEDPROPERTIES(),
-        "ObjectID", [ObjectID],
-        "PropertyName", [PropertyName],
-        "Value", [Value]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Changed Properties =
-SELECTCOLUMNS(
-    INFO.CHANGEDPROPERTIES(),
-    "ObjectID", [ObjectID],
-    "PropertyName", [PropertyName]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Changed Properties =
-COUNTROWS(INFO.CHANGEDPROPERTIES())
 ```
