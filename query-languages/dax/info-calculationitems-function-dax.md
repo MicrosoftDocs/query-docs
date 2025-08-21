@@ -19,7 +19,20 @@ INFO.CALCULATIONITEMS ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for calculation items in the current semantic model.
+A table with the following columns:
+
+| Column name | Data type | Description |
+| --- | --- | --- |
+| [ID] | Integer | The unique identifier of the calculation item |
+| [CalculationGroupID] | Integer | The unique identifier of the calculation group that contains this calculation item |
+| [FormatStringDefinition] | String | The format string definition for the calculation item |
+| [Name] | String | The name of the calculation item |
+| [Description] | String | The description of the calculation item |
+| [ModifiedTime] | DateTime | The date and time when the calculation item was last modified |
+| [State] | String | The state of the calculation item |
+| [ErrorMessage] | String | Any error message associated with the calculation item |
+| [Expression] | String | The DAX expression for the calculation item |
+| [Ordinal] | Integer | The ordinal position of the calculation item within its calculation group |
 
 ## Remarks
 
@@ -33,34 +46,4 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 ```dax
 EVALUATE
 	INFO.CALCULATIONITEMS()
-```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.CALCULATIONITEMS(),
-        "Name", [Name],
-        "Expression", [Expression],
-        "Ordinal", [Ordinal]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Calculation Items =
-SELECTCOLUMNS(
-    INFO.CALCULATIONITEMS(),
-    "Name", [Name],
-    "Expression", [Expression]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Calculation Items =
-COUNTROWS(INFO.CALCULATIONITEMS())
 ```

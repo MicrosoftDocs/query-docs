@@ -19,7 +19,15 @@ INFO.CALCULATIONGROUPS ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for calculation groups in the current semantic model.
+A table with the following columns:
+
+| Column name | Data type | Description |
+| --- | --- | --- |
+| [ID] | Integer | The unique identifier of the calculation group |
+| [TableID] | Integer | The unique identifier of the table that contains the calculation group |
+| [Description] | String | The description of the calculation group |
+| [ModifiedTime] | DateTime | The date and time when the calculation group was last modified |
+| [Precedence] | Integer | The precedence value of the calculation group for evaluation order |
 
 ## Remarks
 
@@ -33,34 +41,4 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 ```dax
 EVALUATE
 	INFO.CALCULATIONGROUPS()
-```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.CALCULATIONGROUPS(),
-        "Name", [Name],
-        "Description", [Description],
-        "Precedence", [Precedence]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Calculation Groups =
-SELECTCOLUMNS(
-    INFO.CALCULATIONGROUPS(),
-    "Name", [Name],
-    "Description", [Description]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Calculation Groups =
-COUNTROWS(INFO.CALCULATIONGROUPS())
 ```
