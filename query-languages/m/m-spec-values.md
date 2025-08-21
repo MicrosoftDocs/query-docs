@@ -2,7 +2,7 @@
 title: M Language values 
 description: Describes using values in the Power Query M formula language
 ms.topic: conceptual
-ms.date: 3/28/2025
+ms.date: 8/21/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-specification
 ---
@@ -535,7 +535,7 @@ Record.FieldNames([ y = 1, x = 2 ]) // [ "y", "x" ]
 The number of fields in a record can be determined using the `Record.FieldCount` function. For example:
 
 ```powerquery-m
-Record.FieldCount([ x = 1, y = 2 })  // 2 
+Record.FieldCount([ x = 1, y = 2 ])  // 2 
 Record.FieldCount([])                // 0
 ```
 
