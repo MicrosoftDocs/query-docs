@@ -12,7 +12,7 @@ Returns a table with information about each annotation in the semantic model. Th
 ## Syntax
 
 ```dax
-INFO.ANNOTATIONS([<Restriction name>, <Restriction value>], ...)
+INFO.ANNOTATIONS ( [<Restriction name>, <Restriction value>], ... )
 ```
 
 [!INCLUDE[parameters-for-info-dax-functions](includes/parameters-for-info-dax-functions.md)]
