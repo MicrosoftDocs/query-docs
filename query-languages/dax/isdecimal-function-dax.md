@@ -28,7 +28,7 @@ ISDECIMAL(<value>)
 ## Remarks
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
-- This functions is an alias of [ISCURRENCY](iscurrency-function-dax.md)
+- This functions is an alias of [ISCURRENCY](iscurrency-function-dax.md).
 
 ## Example
 

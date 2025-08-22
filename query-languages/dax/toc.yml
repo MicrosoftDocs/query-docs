@@ -880,7 +880,7 @@ items:
         href: define-statement-dax.md
       - name: EVALUATE
         href: evaluate-statement-dax.md
-      - name: function
+      - name: FUNCTION
         href: function-statement-dax.md
       - name: MEASURE
         href: measure-statement-dax.md

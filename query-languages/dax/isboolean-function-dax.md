@@ -28,7 +28,7 @@ ISBOOLEAN(<value>)
 ## Remarks
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
-- This function is an alias of [ISLOGICAL](islogical-function-dax.md)
+- This function is an alias of [ISLOGICAL](islogical-function-dax.md).
 
 ## Example
 

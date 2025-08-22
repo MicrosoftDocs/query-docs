@@ -12,7 +12,7 @@ Introduces a statement with one or more entity definitions that can be applied t
 [DEFINE 
     (
      (COLUMN <table name>[<column name>] = <scalar expression>) |
-     (FUNCTION <function name> = ([parameter name]: [parameter type], ..) => <function body>) |
+     (FUNCTION <function name> = ([parameter name]: [parameter type], ...) => <function body>) |
      (MEASURE <table name>[<measure name>] = <scalar expression>) | 
      (TABLE <table name> = <virtual table definition>) | 
      (VAR <var name> = <table or scalar expression>) |
