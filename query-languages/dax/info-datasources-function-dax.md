@@ -56,3 +56,37 @@ EVALUATE
 	INFO.DATASOURCES()
 ```
 
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+	VAR _DataSources =
+		INFO.DATASOURCES()
+
+	VAR _Model = 
+		SELECTCOLUMNS(
+			INFO.MODEL(),
+			"ModelID", [ID],
+			"Model Name", [Name]
+		)
+
+	VAR _CombinedTable =
+		NATURALLEFTOUTERJOIN(
+			_DataSources,
+			_Model
+		)
+
+	RETURN
+		SELECTCOLUMNS(
+			_CombinedTable,
+			"Model Name", [Model Name],
+			"Data Source Name", [Name],
+			"Data Source Type", [Type],
+			"Max Connections", [MaxConnections],
+			"Modified Time", [ModifiedTime]
+		)
+	ORDER BY [Data Source Name]
+```
+

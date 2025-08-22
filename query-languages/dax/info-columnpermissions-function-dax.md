@@ -43,3 +43,62 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.COLUMNPERMISSIONS()
 ```
+
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+	VAR _ColumnPermissions =
+		INFO.COLUMNPERMISSIONS()
+
+	VAR _Roles = 
+		SELECTCOLUMNS(
+			INFO.ROLES(),
+			"RoleID", [ID],
+			"Role Name", [Name]
+		)
+
+	VAR _Tables = 
+		SELECTCOLUMNS(
+			INFO.TABLES(),
+			"TableID", [ID],
+			"Table Name", [Name]
+		)
+
+	VAR _Columns = 
+		SELECTCOLUMNS(
+			INFO.COLUMNS(),
+			"ColumnID", [ID],
+			"Column Name", [ExplicitName]
+		)
+
+	VAR _CombinedWithRoles =
+		NATURALLEFTOUTERJOIN(
+			_ColumnPermissions,
+			_Roles
+		)
+
+	VAR _CombinedWithTables =
+		NATURALLEFTOUTERJOIN(
+			_CombinedWithRoles,
+			_Tables
+		)
+
+	VAR _CombinedWithColumns =
+		NATURALLEFTOUTERJOIN(
+			_CombinedWithTables,
+			_Columns
+		)
+
+	RETURN
+		SELECTCOLUMNS(
+			_CombinedWithColumns,
+			"Role Name", [Role Name],
+			"Table Name", [Table Name],
+			"Column Name", [Column Name],
+			"Metadata Permission", [MetadataPermission]
+		)
+	ORDER BY [Role Name], [Table Name], [Column Name]
+```

@@ -50,3 +50,39 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.PARQUETFILESTORAGES()
 ```
+
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+	VAR _ParquetFileStorages =
+		INFO.PARQUETFILESTORAGES()
+
+	VAR _DeltaTableMetadataStorages = 
+		SELECTCOLUMNS(
+			INFO.DELTATABLEMETADATASTORAGES(),
+			"DeltaTableMetadataStorageID", [ID],
+			"Table Name", [TableName],
+			"Root Location", [RootLocation]
+		)
+
+	VAR _CombinedTable =
+		NATURALLEFTOUTERJOIN(
+			_ParquetFileStorages,
+			_DeltaTableMetadataStorages
+		)
+
+	RETURN
+		SELECTCOLUMNS(
+			_CombinedTable,
+			"Table Name", [Table Name],
+			"File Location", [Location],
+			"File Size", [Size],
+			"Rowgroup Count", [RowgroupCount],
+			"Created Version", [CreatedVersion],
+			"Deleted Version", [DeletedVersion]
+		)
+	ORDER BY [Table Name], [Created Version]
+```

@@ -52,3 +52,37 @@ EVALUATE
 	INFO.DELTATABLEMETADATASTORAGES()
 ```
 
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+	VAR _DeltaTableMetadataStorages =
+		INFO.DELTATABLEMETADATASTORAGES()
+
+	VAR _PartitionStorages = 
+		SELECTCOLUMNS(
+			INFO.PARTITIONSTORAGES(),
+			"PartitionStorageID", [ID],
+			"Partition Storage Name", [Name]
+		)
+
+	VAR _CombinedTable =
+		NATURALLEFTOUTERJOIN(
+			_DeltaTableMetadataStorages,
+			_PartitionStorages
+		)
+
+	RETURN
+		SELECTCOLUMNS(
+			_CombinedTable,
+			"Table Name", [TableName],
+			"Partition Storage Name", [Partition Storage Name],
+			"Current Version", [CurrentVersion],
+			"Root Location", [RootLocation],
+			"Fallback Reason", [FallbackReason]
+		)
+	ORDER BY [Table Name]
+```
+

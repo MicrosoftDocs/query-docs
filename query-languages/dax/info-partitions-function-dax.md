@@ -60,3 +60,50 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.PARTITIONS()
 ```
+
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+	VAR _Partitions =
+		INFO.PARTITIONS()
+
+	VAR _Tables = 
+		SELECTCOLUMNS(
+			INFO.TABLES(),
+			"TableID", [ID],
+			"Table Name", [Name]
+		)
+
+	VAR _DataSources = 
+		SELECTCOLUMNS(
+			INFO.DATASOURCES(),
+			"DataSourceID", [ID],
+			"Data Source Name", [Name]
+		)
+
+	VAR _CombinedWithTables =
+		NATURALLEFTOUTERJOIN(
+			_Partitions,
+			_Tables
+		)
+
+	VAR _CombinedWithDataSources =
+		NATURALLEFTOUTERJOIN(
+			_CombinedWithTables,
+			_DataSources
+		)
+
+	RETURN
+		SELECTCOLUMNS(
+			_CombinedWithDataSources,
+			"Table Name", [Table Name],
+			"Partition Name", [Name],
+			"Data Source Name", [Data Source Name],
+			"Type", [Type],
+			"Refreshed Time", [RefreshedTime]
+		)
+	ORDER BY [Table Name], [Partition Name]
+```

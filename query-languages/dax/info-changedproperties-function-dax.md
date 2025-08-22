@@ -41,3 +41,47 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.CHANGEDPROPERTIES()
 ```
+
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+	VAR _ChangedProperties =
+		INFO.CHANGEDPROPERTIES()
+
+	VAR _Tables = 
+		SELECTCOLUMNS(
+			INFO.TABLES(),
+			"ObjectID", [ID],
+			"Object Name", [Name],
+			"Object Type Number", 1  -- Tables are typically object type 1
+		)
+
+	VAR _Columns = 
+		SELECTCOLUMNS(
+			INFO.COLUMNS(),
+			"ObjectID", [ID],
+			"Object Name", [ExplicitName],
+			"Object Type Number", 2  -- Columns are typically object type 2
+		)
+
+	VAR _AllObjects = 
+		UNION(_Tables, _Columns)
+
+	VAR _CombinedTable =
+		NATURALLEFTOUTERJOIN(
+			_ChangedProperties,
+			_AllObjects
+		)
+
+	RETURN
+		SELECTCOLUMNS(
+			_CombinedTable,
+			"Object Name", [Object Name],
+			"Object Type", [ObjectType],
+			"Changed Property", [Property]
+		)
+	ORDER BY [Object Name], [Changed Property]
+```

@@ -48,3 +48,51 @@ EVALUATE
 	INFO.DEPENDENCIES()
 ```
 
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+	VAR _Dependencies =
+		INFO.DEPENDENCIES()
+
+	VAR _Tables = 
+		SELECTCOLUMNS(
+			INFO.TABLES(),
+			"TABLE", [Name],
+			"Table ID", [ID]
+		)
+
+	VAR _ReferencedTables = 
+		SELECTCOLUMNS(
+			INFO.TABLES(),
+			"REFERENCED_TABLE", [Name],
+			"Referenced Table ID", [ID]
+		)
+
+	VAR _CombinedWithTables =
+		NATURALLEFTOUTERJOIN(
+			_Dependencies,
+			_Tables
+		)
+
+	VAR _CombinedWithReferencedTables =
+		NATURALLEFTOUTERJOIN(
+			_CombinedWithTables,
+			_ReferencedTables
+		)
+
+	RETURN
+		SELECTCOLUMNS(
+			_CombinedWithReferencedTables,
+			"Object Type", [OBJECT_TYPE],
+			"Table", [TABLE],
+			"Object", [OBJECT],
+			"Referenced Object Type", [REFERENCED_OBJECT_TYPE],
+			"Referenced Table", [REFERENCED_TABLE],
+			"Referenced Object", [REFERENCED_OBJECT]
+		)
+	ORDER BY [TABLE], [OBJECT]
+```
+

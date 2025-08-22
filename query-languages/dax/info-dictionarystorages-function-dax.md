@@ -52,3 +52,66 @@ EVALUATE
 	INFO.DICTIONARYSTORAGES()
 ```
 
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+	VAR _DictionaryStorages =
+		INFO.DICTIONARYSTORAGES()
+
+	VAR _ColumnStorages = 
+		SELECTCOLUMNS(
+			INFO.COLUMNSTORAGES(),
+			"ColumnStorageID", [ID],
+			"Column Storage Name", [Name],
+			"ColumnID", [ColumnID]
+		)
+
+	VAR _Columns = 
+		SELECTCOLUMNS(
+			INFO.COLUMNS(),
+			"ColumnID", [ID],
+			"Column Name", [ExplicitName],
+			"TableID", [TableID]
+		)
+
+	VAR _Tables = 
+		SELECTCOLUMNS(
+			INFO.TABLES(),
+			"TableID", [ID],
+			"Table Name", [Name]
+		)
+
+	VAR _CombinedWithColumnStorages =
+		NATURALLEFTOUTERJOIN(
+			_DictionaryStorages,
+			_ColumnStorages
+		)
+
+	VAR _CombinedWithColumns =
+		NATURALLEFTOUTERJOIN(
+			_CombinedWithColumnStorages,
+			_Columns
+		)
+
+	VAR _CombinedWithTables =
+		NATURALLEFTOUTERJOIN(
+			_CombinedWithColumns,
+			_Tables
+		)
+
+	RETURN
+		SELECTCOLUMNS(
+			_CombinedWithTables,
+			"Table Name", [Table Name],
+			"Column Name", [Column Name],
+			"Dictionary Type", [Type],
+			"Data Type", [DataType],
+			"Is Nullable", [IsNullable],
+			"Size", [Size]
+		)
+	ORDER BY [Table Name], [Column Name]
+```
+

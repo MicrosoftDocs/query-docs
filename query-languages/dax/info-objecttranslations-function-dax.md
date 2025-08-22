@@ -44,3 +44,37 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.OBJECTTRANSLATIONS()
 ```
+
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+	VAR _ObjectTranslations =
+		INFO.OBJECTTRANSLATIONS()
+
+	VAR _Cultures = 
+		SELECTCOLUMNS(
+			INFO.CULTURES(),
+			"CultureID", [ID],
+			"Culture Name", [Name]
+		)
+
+	VAR _CombinedTable =
+		NATURALLEFTOUTERJOIN(
+			_ObjectTranslations,
+			_Cultures
+		)
+
+	RETURN
+		SELECTCOLUMNS(
+			_CombinedTable,
+			"Culture Name", [Culture Name],
+			"Object Type", [ObjectType],
+			"Property", [Property],
+			"Translated Value", [Value],
+			"Modified Time", [ModifiedTime]
+		)
+	ORDER BY [Culture Name], [ObjectType], [Property]
+```

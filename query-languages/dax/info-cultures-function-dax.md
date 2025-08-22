@@ -43,3 +43,36 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.CULTURES()
 ```
+
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+	VAR _Cultures =
+		INFO.CULTURES()
+
+	VAR _Model = 
+		SELECTCOLUMNS(
+			INFO.MODEL(),
+			"ModelID", [ID],
+			"Model Name", [Name]
+		)
+
+	VAR _CombinedTable =
+		NATURALLEFTOUTERJOIN(
+			_Cultures,
+			_Model
+		)
+
+	RETURN
+		SELECTCOLUMNS(
+			_CombinedTable,
+			"Model Name", [Model Name],
+			"Culture Name", [Name],
+			"Modified Time", [ModifiedTime],
+			"Structure Modified Time", [StructureModifiedTime]
+		)
+	ORDER BY [Culture Name]
+```

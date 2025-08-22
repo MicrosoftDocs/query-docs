@@ -47,3 +47,36 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.CALCULATIONITEMS()
 ```
+
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+	VAR _CalculationItems =
+		INFO.CALCULATIONITEMS()
+
+	VAR _CalculationGroups = 
+		SELECTCOLUMNS(
+			INFO.CALCULATIONGROUPS(),
+			"CalculationGroupID", [ID],
+			"Calculation Group Name", [Name]
+		)
+
+	VAR _CombinedTable =
+		NATURALLEFTOUTERJOIN(
+			_CalculationItems,
+			_CalculationGroups
+		)
+
+	RETURN
+		SELECTCOLUMNS(
+			_CombinedTable,
+			"Calculation Item Name", [Name],
+			"Calculation Group Name", [Calculation Group Name],
+			"Expression", [Expression],
+			"Ordinal", [Ordinal]
+		)
+	ORDER BY [Calculation Group Name], [Ordinal]
+```

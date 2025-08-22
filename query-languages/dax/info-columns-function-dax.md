@@ -79,3 +79,37 @@ EVALUATE
 	INFO.COLUMNS()
 ```
 
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+	VAR _Columns =
+		INFO.COLUMNS()
+
+	VAR _Tables = 
+		SELECTCOLUMNS(
+			INFO.TABLES(),
+			"TableID", [ID],
+			"Table Name", [Name]
+		)
+
+	VAR _CombinedTable =
+		NATURALLEFTOUTERJOIN(
+			_Columns,
+			_Tables
+		)
+
+	RETURN
+		SELECTCOLUMNS(
+			_CombinedTable,
+			"Table Name", [Table Name],
+			"Column Name", [ExplicitName],
+			"Data Type", [ExplicitDataType],
+			"Is Hidden", [IsHidden],
+			"Is Key", [IsKey]
+		)
+	ORDER BY [Table Name], [ExplicitName]
+```
+

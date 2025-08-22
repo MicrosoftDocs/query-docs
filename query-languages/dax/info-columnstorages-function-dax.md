@@ -61,3 +61,51 @@ EVALUATE
 	INFO.COLUMNSTORAGES()
 ```
 
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+	VAR _ColumnStorages =
+		INFO.COLUMNSTORAGES()
+
+	VAR _Columns = 
+		SELECTCOLUMNS(
+			INFO.COLUMNS(),
+			"ColumnID", [ID],
+			"Column Name", [ExplicitName],
+			"TableID", [TableID]
+		)
+
+	VAR _Tables = 
+		SELECTCOLUMNS(
+			INFO.TABLES(),
+			"TableID", [ID],
+			"Table Name", [Name]
+		)
+
+	VAR _CombinedWithColumns =
+		NATURALLEFTOUTERJOIN(
+			_ColumnStorages,
+			_Columns
+		)
+
+	VAR _CombinedWithTables =
+		NATURALLEFTOUTERJOIN(
+			_CombinedWithColumns,
+			_Tables
+		)
+
+	RETURN
+		SELECTCOLUMNS(
+			_CombinedWithTables,
+			"Table Name", [Table Name],
+			"Column Name", [Column Name],
+			"Storage Name", [Name],
+			"Storage Position", [StoragePosition],
+			"Statistics Row Count", [Statistics_RowCount]
+		)
+	ORDER BY [Table Name], [Column Name]
+```
+

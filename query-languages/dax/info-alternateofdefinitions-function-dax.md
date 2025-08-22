@@ -43,3 +43,63 @@ EVALUATE
 	INFO.ALTERNATEOFDEFINITIONS()
 ```
 
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+	VAR _AlternateOfDefinitions =
+		INFO.ALTERNATEOFDEFINITIONS()
+
+	VAR _Columns = 
+		SELECTCOLUMNS(
+			INFO.COLUMNS(),
+			"ColumnID", [ID],
+			"Column Name", [ExplicitName],
+			"TableID", [TableID]
+		)
+
+	VAR _BaseColumns = 
+		SELECTCOLUMNS(
+			INFO.COLUMNS(),
+			"BaseColumnID", [ID],
+			"Base Column Name", [ExplicitName]
+		)
+
+	VAR _BaseTables = 
+		SELECTCOLUMNS(
+			INFO.TABLES(),
+			"BaseTableID", [ID],
+			"Base Table Name", [Name]
+		)
+
+	VAR _CombinedWithColumns =
+		NATURALLEFTOUTERJOIN(
+			_AlternateOfDefinitions,
+			_Columns
+		)
+
+	VAR _CombinedWithBaseColumns =
+		NATURALLEFTOUTERJOIN(
+			_CombinedWithColumns,
+			_BaseColumns
+		)
+
+	VAR _CombinedWithBaseTables =
+		NATURALLEFTOUTERJOIN(
+			_CombinedWithBaseColumns,
+			_BaseTables
+		)
+
+	RETURN
+		SELECTCOLUMNS(
+			_CombinedWithBaseTables,
+			"Column Name", [Column Name],
+			"Base Table Name", [Base Table Name],
+			"Base Column Name", [Base Column Name],
+			"Summarization", [Summarization]
+		)
+	ORDER BY [Column Name]
+```
+
