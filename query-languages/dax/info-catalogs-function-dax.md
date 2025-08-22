@@ -5,57 +5,45 @@ author: jeroenterheerdt
 ---
 # INFO.CATALOGS
 
-[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+[!INCLUDE[applies-to-query-only](includes/applies-to-query-only.md)]
 
 Returns a table with information about each catalog in the semantic model. This function provides metadata about the catalogs available in the current context.
 
 ## Syntax
 
 ```dax
-INFO.CATALOGS()
+INFO.CATALOGS ( [<Restriction name>, <Restriction value>], ... )
 ```
+
+[!INCLUDE[parameters-for-info-dax-functions](includes/parameters-for-info-dax-functions.md)]
 
 ## Return value
 
-A table whose columns match the schema rowset for catalogs in the current semantic model.
+A table with the following columns:
+
+| Column name | Data type | Description |
+|-------------|-----------|-------------|
+| [CATALOG_NAME] | String | The name of the catalog |
+| [DESCRIPTION] | String | The description of the catalog |
+| [ROLES] | String | The roles associated with the catalog |
+| [DATE_MODIFIED] | DateTime | The date and time when the catalog was last modified |
+| [COMPATIBILITY_LEVEL] | Integer | The compatibility level of the catalog |
+| [TYPE] | Integer | The type of the catalog |
+| [VERSION] | Integer | The version of the catalog |
+| [DATABASE_ID] | String | The unique identifier of the database |
+| [DATABASE_GUID] | String | The GUID of the database |
+| [DATE_QUERIED] | DateTime | The date and time when the catalog was queried |
 
 ## Remarks
 
 - Typically used in DAX queries to inspect and document model metadata.
 - Permissions required depend on the host. Querying full metadata may require model admin permissions.
 
-## Example 1 - DAX query
+## Example
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
 
 ```dax
 EVALUATE
-    INFO.CATALOGS()
-```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.CATALOGS(),
-        "CatalogName", [CATALOG_NAME],
-        "Description", [DESCRIPTION]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Catalogs =
-SELECTCOLUMNS(
-    INFO.CATALOGS(),
-    "CatalogName", [CATALOG_NAME],
-    "Description", [DESCRIPTION]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Catalogs =
-COUNTROWS(INFO.CATALOGS())
+	INFO.CATALOGS()
 ```

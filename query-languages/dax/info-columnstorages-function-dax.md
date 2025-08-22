@@ -5,58 +5,59 @@ author: jeroenterheerdt
 ---
 # INFO.COLUMNSTORAGES
 
-[!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
+[!INCLUDE[applies-to-query-only](includes/applies-to-query-only.md)]
 
 Returns a table with information about each column storage in the semantic model. This function provides metadata about how columns are stored and their storage characteristics.
 
 ## Syntax
 
 ```dax
-INFO.COLUMNSTORAGES()
+INFO.COLUMNSTORAGES ( [<Restriction name>, <Restriction value>], ... )
 ```
+
+[!INCLUDE[parameters-for-info-dax-functions](includes/parameters-for-info-dax-functions.md)]
 
 ## Return value
 
-A table whose columns match the schema rowset for column storages in the current semantic model.
+A table with the following columns:
+
+| Column | Data type | Description |
+| ------ | --------- | ----------- |
+| [ID] | Integer | Unique identifier for the column storage |
+| [ColumnID] | Integer | Identifier of the column that this storage belongs to |
+| [Name] | String | Name of the column storage |
+| [StoragePosition] | Integer | Position of the column in storage |
+| [DictionaryStorageID] | Integer | Identifier for the dictionary storage |
+| [Settings] | String | Storage settings and configuration |
+| [ColumnFlags] | Integer | Flags indicating column storage properties |
+| [Collation] | String | Collation settings for the column |
+| [OrderByColumn] | String | Column used for ordering |
+| [Locale] | String | Locale information for the column |
+| [BinaryCharacters] | String | Binary character information |
+| [Statistics_DistinctStates] | Integer | Number of distinct states in statistics |
+| [Statistics_MinDataID] | Integer | Minimum data ID in statistics |
+| [Statistics_MaxDataID] | Integer | Maximum data ID in statistics |
+| [Statistics_OriginalMinSegmentDataID] | Integer | Original minimum segment data ID |
+| [Statistics_RLESortOrder] | Integer | RLE sort order in statistics |
+| [Statistics_RowCount] | Integer | Row count in statistics |
+| [Statistics_HasNulls] | Boolean | Whether statistics contain nulls |
+| [Statistics_RLERuns] | Integer | Number of RLE runs in statistics |
+| [Statistics_OthersRLERuns] | Integer | Number of other RLE runs |
+| [Statistics_Usage] | Integer | Usage statistics |
+| [Statistics_DBType] | Integer | Database type in statistics |
+| [Statistics_XMType] | Integer | XML type in statistics |
 
 ## Remarks
 
 - Typically used in DAX queries to inspect and document model metadata.
 - Permissions required depend on the host. Querying full metadata may require model admin permissions.
 
-## Example 1 - DAX query
+## Example
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
 
 ```dax
 EVALUATE
-    INFO.COLUMNSTORAGES()
+	INFO.COLUMNSTORAGES()
 ```
 
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.COLUMNSTORAGES(),
-        "ColumnID", [ColumnID],
-        "State", [State],
-        "CompressionType", [CompressionType]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Column Storages =
-SELECTCOLUMNS(
-    INFO.COLUMNSTORAGES(),
-    "ColumnID", [ColumnID],
-    "State", [State]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Column Storages =
-COUNTROWS(INFO.COLUMNSTORAGES())
-```
