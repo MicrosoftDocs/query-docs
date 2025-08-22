@@ -19,7 +19,33 @@ INFO.COLUMNSTORAGES ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for column storages in the current semantic model.
+A table with the following columns:
+
+| Column | Data type | Description |
+| ------ | --------- | ----------- |
+| [ID] | Integer | Unique identifier for the column storage |
+| [ColumnID] | Integer | Identifier of the column that this storage belongs to |
+| [Name] | String | Name of the column storage |
+| [StoragePosition] | Integer | Position of the column in storage |
+| [DictionaryStorageID] | Integer | Identifier for the dictionary storage |
+| [Settings] | String | Storage settings and configuration |
+| [ColumnFlags] | Integer | Flags indicating column storage properties |
+| [Collation] | String | Collation settings for the column |
+| [OrderByColumn] | String | Column used for ordering |
+| [Locale] | String | Locale information for the column |
+| [BinaryCharacters] | String | Binary character information |
+| [Statistics_DistinctStates] | Integer | Number of distinct states in statistics |
+| [Statistics_MinDataID] | Integer | Minimum data ID in statistics |
+| [Statistics_MaxDataID] | Integer | Maximum data ID in statistics |
+| [Statistics_OriginalMinSegmentDataID] | Integer | Original minimum segment data ID |
+| [Statistics_RLESortOrder] | Integer | RLE sort order in statistics |
+| [Statistics_RowCount] | Integer | Row count in statistics |
+| [Statistics_HasNulls] | Boolean | Whether statistics contain nulls |
+| [Statistics_RLERuns] | Integer | Number of RLE runs in statistics |
+| [Statistics_OthersRLERuns] | Integer | Number of other RLE runs |
+| [Statistics_Usage] | Integer | Usage statistics |
+| [Statistics_DBType] | Integer | Database type in statistics |
+| [Statistics_XMType] | Integer | XML type in statistics |
 
 ## Remarks
 
@@ -35,32 +61,3 @@ EVALUATE
 	INFO.COLUMNSTORAGES()
 ```
 
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.COLUMNSTORAGES(),
-        "ColumnID", [ColumnID],
-        "State", [State],
-        "CompressionType", [CompressionType]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Column Storages =
-SELECTCOLUMNS(
-    INFO.COLUMNSTORAGES(),
-    "ColumnID", [ColumnID],
-    "State", [State]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Column Storages =
-COUNTROWS(INFO.COLUMNSTORAGES())
-```
