@@ -19,7 +19,17 @@ INFO.DETAILROWSDEFINITIONS ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for detail rows definitions in the current semantic model.
+A table with the following columns:
+
+| Column name | Data type | Description |
+| --- | --- | --- |
+| [ID] | Integer | Unique identifier for the detail rows definition |
+| [ObjectID] | Integer | Identifier of the object this detail rows definition belongs to |
+| [ObjectType] | String | Type of the object (e.g., measure, table) |
+| [Expression] | String | DAX expression for the detail rows definition |
+| [ModifiedTime] | DateTime | Date and time when the detail rows definition was last modified |
+| [State] | Integer | State of the detail rows definition |
+| [ErrorMessage] | String | Error message if the detail rows definition has an error |
 
 ## Remarks
 
@@ -35,32 +45,3 @@ EVALUATE
 	INFO.DETAILROWSDEFINITIONS()
 ```
 
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.DETAILROWSDEFINITIONS(),
-        "Name", [Name],
-        "Expression", [Expression],
-        "State", [State]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Detail Rows Definitions =
-SELECTCOLUMNS(
-    INFO.DETAILROWSDEFINITIONS(),
-    "Name", [Name],
-    "Expression", [Expression]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Detail Rows Definitions =
-COUNTROWS(INFO.DETAILROWSDEFINITIONS())
-```

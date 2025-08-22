@@ -19,7 +19,28 @@ INFO.DATASOURCES ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for data sources in the current semantic model.
+A table with the following columns:
+
+| Column name | Data type | Description |
+| --- | --- | --- |
+| [ID] | Integer | Unique identifier for the data source |
+| [ModelID] | Integer | Identifier of the semantic model |
+| [Name] | String | Name of the data source |
+| [Description] | String | Description of the data source |
+| [Type] | String | Type of the data source |
+| [ConnectionString] | String | Connection string for the data source |
+| [ImpersonationMode] | String | Impersonation mode used for the data source |
+| [Account] | String | Account used for impersonation |
+| [Password] | String | Password for the data source (typically masked) |
+| [MaxConnections] | Integer | Maximum number of connections allowed |
+| [Isolation] | String | Isolation level for the data source |
+| [Timeout] | Integer | Timeout value for connections |
+| [Provider] | String | Data provider for the data source |
+| [ModifiedTime] | DateTime | Date and time when the data source was last modified |
+| [ConnectionDetails] | String | Additional connection details |
+| [Options] | String | Additional options for the data source |
+| [Credential] | String | Credential information |
+| [ContextExpression] | String | Context expression for the data source |
 
 ## Remarks
 
@@ -35,32 +56,3 @@ EVALUATE
 	INFO.DATASOURCES()
 ```
 
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.DATASOURCES(),
-        "Name", [Name],
-        "Description", [Description],
-        "Type", [Type]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Data Sources =
-SELECTCOLUMNS(
-    INFO.DATASOURCES(),
-    "Name", [Name],
-    "Type", [Type]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Data Sources =
-COUNTROWS(INFO.DATASOURCES())
-```

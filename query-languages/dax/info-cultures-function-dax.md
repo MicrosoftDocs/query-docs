@@ -19,7 +19,16 @@ INFO.CULTURES ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for cultures in the current semantic model.
+A table with the following columns:
+
+| Column name | Data type | Description |
+| --- | --- | --- |
+| [ID] | Integer | Unique identifier for the culture |
+| [ModelID] | Integer | Identifier of the semantic model |
+| [Name] | String | Name of the culture (e.g., en-US) |
+| [LinguisticMetadataID] | Integer | Identifier for linguistic metadata associated with the culture |
+| [ModifiedTime] | DateTime | Date and time when the culture was last modified |
+| [StructureModifiedTime] | DateTime | Date and time when the culture structure was last modified |
 
 ## Remarks
 
@@ -33,34 +42,4 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 ```dax
 EVALUATE
 	INFO.CULTURES()
-```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.CULTURES(),
-        "Name", [Name],
-        "Description", [Description],
-        "LinguisticMetadataID", [LinguisticMetadataID]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Cultures =
-SELECTCOLUMNS(
-    INFO.CULTURES(),
-    "Name", [Name],
-    "Description", [Description]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Cultures =
-COUNTROWS(INFO.CULTURES())
 ```

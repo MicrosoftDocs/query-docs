@@ -19,7 +19,24 @@ INFO.DICTIONARYSTORAGES ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for dictionary storages in the current semantic model.
+A table with the following columns:
+
+| Column name | Data type | Description |
+| --- | --- | --- |
+| [ID] | Integer | Unique identifier for the dictionary storage |
+| [ColumnStorageID] | Integer | Identifier of the column storage this dictionary belongs to |
+| [Type] | Integer | Type of the dictionary storage |
+| [DataType] | Integer | Data type stored in the dictionary |
+| [DataVersion] | Integer | Version of the data format |
+| [BaseId] | Integer | Base identifier for the dictionary |
+| [Magnitude] | Integer | Magnitude value for the dictionary |
+| [LastId] | Integer | Last identifier used in the dictionary |
+| [IsNullable] | Boolean | Whether the dictionary can contain null values |
+| [IsUnique] | Boolean | Whether all values in the dictionary are unique |
+| [IsOperatingOn32] | Boolean | Whether the dictionary operates on 32-bit values |
+| [DictionaryFlags] | Integer | Flags indicating dictionary characteristics |
+| [StorageFileID] | Integer | Identifier of the storage file containing the dictionary |
+| [Size] | Integer | Size of the dictionary in bytes |
 
 ## Remarks
 
@@ -35,32 +52,3 @@ EVALUATE
 	INFO.DICTIONARYSTORAGES()
 ```
 
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.DICTIONARYSTORAGES(),
-        "DictionaryID", [DictionaryID],
-        "State", [State],
-        "LastUpdateTime", [LastUpdateTime]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Dictionary Storages =
-SELECTCOLUMNS(
-    INFO.DICTIONARYSTORAGES(),
-    "DictionaryID", [DictionaryID],
-    "State", [State]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Dictionary Storages =
-COUNTROWS(INFO.DICTIONARYSTORAGES())
-```

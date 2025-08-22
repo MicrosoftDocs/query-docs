@@ -19,7 +19,20 @@ INFO.DEPENDENCIES ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for dependencies in the current semantic model.
+A table with the following columns:
+
+| Column name | Data type | Description |
+| --- | --- | --- |
+| [DATABASE_NAME] | String | Name of the database containing the object |
+| [OBJECT_TYPE] | String | Type of the object (e.g., ATTRIBUTE_HIERARCHY, HIERARCHY, MEASURE) |
+| [TABLE] | String | Name of the table containing the object |
+| [OBJECT] | String | Name of the object |
+| [EXPRESSION] | String | Expression associated with the object |
+| [REFERENCED_OBJECT_TYPE] | String | Type of the referenced object |
+| [REFERENCED_TABLE] | String | Name of the table containing the referenced object |
+| [REFERENCED_OBJECT] | String | Name of the referenced object |
+| [REFERENCED_EXPRESSION] | String | Expression of the referenced object |
+| [QUERY] | String | Query context for the dependency |
 
 ## Remarks
 
@@ -35,32 +48,3 @@ EVALUATE
 	INFO.DEPENDENCIES()
 ```
 
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.DEPENDENCIES(),
-        "ObjectID", [ObjectID],
-        "ReferencedObjectID", [ReferencedObjectID],
-        "DependencyType", [DependencyType]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Dependencies =
-SELECTCOLUMNS(
-    INFO.DEPENDENCIES(),
-    "ObjectID", [ObjectID],
-    "ReferencedObjectID", [ReferencedObjectID]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Dependencies =
-COUNTROWS(INFO.DEPENDENCIES())
-```

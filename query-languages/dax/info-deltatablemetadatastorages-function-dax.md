@@ -19,7 +19,24 @@ INFO.DELTATABLEMETADATASTORAGES ( [<Restriction name>, <Restriction value>], ...
 
 ## Return value
 
-A table whose columns match the schema rowset for delta table metadata storages in the current semantic model.
+A table with the following columns:
+
+| Column name | Data type | Description |
+| --- | --- | --- |
+| [ID] | Integer | Unique identifier for the delta table metadata storage |
+| [PartitionStorageID] | Integer | Identifier of the partition storage |
+| [DataSourceReference] | String | Reference to the data source |
+| [TableName] | String | Name of the delta table |
+| [RootLocation] | String | Root location of the delta table |
+| [CurrentVersion] | Integer | Current version of the delta table |
+| [TableObjectID] | String | Object identifier for the table |
+| [DatamartObjectID] | String | Object identifier for the datamart |
+| [FramedSchemaName] | String | Name of the framed schema |
+| [FallbackReason] | String | Reason for fallback behavior |
+| [DeltaColumnMappingMode] | String | Column mapping mode for the delta table |
+| [DeltaLogETag] | String | ETag for the delta log |
+| [ArtifactObjectId] | String | Object identifier for the artifact |
+| [ArtifactSecurityVersion] | String | Security version of the artifact |
 
 ## Remarks
 
@@ -35,32 +52,3 @@ EVALUATE
 	INFO.DELTATABLEMETADATASTORAGES()
 ```
 
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.DELTATABLEMETADATASTORAGES(),
-        "TableID", [TableID],
-        "State", [State],
-        "LastUpdateTime", [LastUpdateTime]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Delta Table Metadata Storages =
-SELECTCOLUMNS(
-    INFO.DELTATABLEMETADATASTORAGES(),
-    "TableID", [TableID],
-    "State", [State]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Delta Table Metadata Storages =
-COUNTROWS(INFO.DELTATABLEMETADATASTORAGES())
-```
