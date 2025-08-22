@@ -12,7 +12,7 @@ Returns a table with information about each calculation dependency in the semant
 ## Syntax
 
 ```dax
-INFO.CALCDEPENDENCY([<Restriction name>, <Restriction value>], ...)
+INFO.CALCDEPENDENCY ( [<Restriction name>, <Restriction value>], ... )
 ```
 
 [!INCLUDE[parameters-for-info-dax-functions](includes/parameters-for-info-dax-functions.md)]
