@@ -19,7 +19,34 @@ INFO.MODEL ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for the model in the current semantic model.
+A table with the following columns:
+
+| Column | Data Type | Description |
+|--------|-----------|-------------|
+| [ID] | Integer | Unique identifier for the model |
+| [Name] | String | Name of the model |
+| [Description] | String | Description of the model |
+| [StorageLocation] | Integer | Storage location indicator |
+| [DefaultMode] | Integer | Default processing mode for the model |
+| [DefaultDataView] | Integer | Default data view setting |
+| [Culture] | String | Culture identifier for the model (e.g., "en-US") |
+| [Collation] | String | Collation setting for the model |
+| [ModifiedTime] | DateTime | Date and time when the model was last modified |
+| [StructureModifiedTime] | DateTime | Date and time when the model structure was last modified |
+| [Version] | Integer | Version number of the model |
+| [DataAccessOptions] | String | JSON object containing data access configuration options |
+| [DefaultMeasureID] | Integer | ID of the default measure, if any |
+| [DefaultPowerBIDataSourceVersion] | Integer | Default Power BI data source version |
+| [ForceUniqueNames] | Boolean | Whether unique names are enforced |
+| [DiscourageImplicitMeasures] | Boolean | Whether implicit measures are discouraged |
+| [DataSourceVariablesOverrideBehavior] | Integer | Behavior for data source variable overrides |
+| [DataSourceDefaultMaxConnections] | Integer | Default maximum connections for data sources |
+| [SourceQueryCulture] | String | Culture used for source queries |
+| [MAttributes] | String | Model attributes |
+| [DiscourageCompositeModels] | Boolean | Whether composite models are discouraged |
+| [AutomaticAggregationOptions] | String | Options for automatic aggregations |
+| [DisableAutoExists] | Integer | Auto exists disable setting |
+| [VersionMarker] | String | Version marker for the model |
 
 ## Remarks
 
@@ -33,34 +60,4 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 ```dax
 EVALUATE
 	INFO.MODEL()
-```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.MODEL(),
-        "Name", [Name],
-        "Description", [Description],
-        "Version", [Version]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Model Info =
-SELECTCOLUMNS(
-    INFO.MODEL(),
-    "Name", [Name],
-    "Description", [Description]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Model Count =
-COUNTROWS(INFO.MODEL())
 ```

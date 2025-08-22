@@ -19,7 +19,23 @@ INFO.PARQUETFILESTORAGES ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for Parquet file storages in the current semantic model.
+A table with the following columns:
+
+| Column | Data Type | Description |
+|--------|-----------|-------------|
+| [ID] | Integer | Unique identifier for the Parquet file storage |
+| [DeltaTableMetadataStorageID] | Integer | ID of the associated delta table metadata storage |
+| [Size] | Integer | Size of the Parquet file in bytes |
+| [Location] | String | Location path of the Parquet file |
+| [CreatedVersion] | Integer | Version when the file was created |
+| [DeletedVersion] | Integer | Version when the file was deleted, if applicable |
+| [RowgroupCount] | Integer | Number of row groups in the Parquet file |
+| [Ordinal] | Integer | Ordinal position of the file |
+| [ETag] | String | Entity tag for file versioning and caching |
+| [DeletionVectorFileLocation] | String | Location of the deletion vector file |
+| [DeletionVectorBitmapOffset] | Integer | Offset for the deletion vector bitmap |
+| [DeletionVectorBitmapSize] | Integer | Size of the deletion vector bitmap |
+| [DeletionVectorFileETag] | String | Entity tag for the deletion vector file |
 
 ## Remarks
 
@@ -33,34 +49,4 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 ```dax
 EVALUATE
 	INFO.PARQUETFILESTORAGES()
-```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.PARQUETFILESTORAGES(),
-        "FileID", [FileID],
-        "State", [State],
-        "LastUpdateTime", [LastUpdateTime]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Parquet File Storages =
-SELECTCOLUMNS(
-    INFO.PARQUETFILESTORAGES(),
-    "FileID", [FileID],
-    "State", [State]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Parquet File Storages =
-COUNTROWS(INFO.PARQUETFILESTORAGES())
 ```

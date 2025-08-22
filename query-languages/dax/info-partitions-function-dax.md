@@ -19,7 +19,33 @@ INFO.PARTITIONS ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for partitions in the current semantic model.
+A table with the following columns:
+
+| Column | Data Type | Description |
+|--------|-----------|-------------|
+| [ID] | Integer | Unique identifier for the partition |
+| [TableID] | Integer | ID of the table this partition belongs to |
+| [Name] | String | Name of the partition |
+| [Description] | String | Description of the partition |
+| [DataSourceID] | Integer | ID of the data source for this partition |
+| [QueryDefinition] | String | Query definition used to populate the partition |
+| [State] | Integer | Current state of the partition |
+| [Type] | Integer | Type of partition |
+| [PartitionStorageID] | Integer | ID of the partition storage |
+| [Mode] | Integer | Processing mode for the partition |
+| [DataView] | Integer | Data view setting for the partition |
+| [ModifiedTime] | DateTime | Date and time when the partition was last modified |
+| [RefreshedTime] | DateTime | Date and time when the partition was last refreshed |
+| [SystemFlags] | Integer | System flags for the partition |
+| [ErrorMessage] | String | Error message if the partition is in an error state |
+| [RetainDataTillForceCalculate] | Boolean | Whether to retain data until force calculate |
+| [RangeStart] | String | Start range for incremental refresh, if applicable |
+| [RangeEnd] | String | End range for incremental refresh, if applicable |
+| [RangeGranularity] | Integer | Granularity for range-based partitioning |
+| [RefreshBookmark] | String | Bookmark for incremental refresh operations |
+| [QueryGroupID] | Integer | ID of the query group this partition belongs to |
+| [ExpressionSourceID] | Integer | ID of the expression source |
+| [MAttributes] | String | Additional partition attributes |
 
 ## Remarks
 
@@ -33,34 +59,4 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 ```dax
 EVALUATE
 	INFO.PARTITIONS()
-```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.PARTITIONS(),
-        "Name", [Name],
-        "Description", [Description],
-        "Mode", [Mode]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Partitions =
-SELECTCOLUMNS(
-    INFO.PARTITIONS(),
-    "Name", [Name],
-    "Mode", [Mode]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Partitions =
-COUNTROWS(INFO.PARTITIONS())
 ```

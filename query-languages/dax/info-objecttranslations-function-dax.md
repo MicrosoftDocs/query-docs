@@ -19,7 +19,17 @@ INFO.OBJECTTRANSLATIONS ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for object translations in the current semantic model.
+A table with the following columns:
+
+| Column | Data Type | Description |
+|--------|-----------|-------------|
+| [ID] | Integer | Unique identifier for the object translation |
+| [CultureID] | Integer | ID of the culture this translation applies to |
+| [ObjectID] | Integer | ID of the object being translated |
+| [ObjectType] | Integer | Type of object being translated |
+| [Property] | String | Property name that is being translated |
+| [Value] | String | Translated value for the property |
+| [ModifiedTime] | DateTime | Date and time when the translation was last modified |
 
 ## Remarks
 
@@ -33,34 +43,4 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 ```dax
 EVALUATE
 	INFO.OBJECTTRANSLATIONS()
-```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.OBJECTTRANSLATIONS(),
-        "ObjectID", [ObjectID],
-        "CultureID", [CultureID],
-        "Property", [Property]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Object Translations =
-SELECTCOLUMNS(
-    INFO.OBJECTTRANSLATIONS(),
-    "ObjectID", [ObjectID],
-    "CultureID", [CultureID]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Object Translations =
-COUNTROWS(INFO.OBJECTTRANSLATIONS())
 ```
