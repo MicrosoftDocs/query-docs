@@ -11,7 +11,7 @@ ms.date: 09/15/2025
 > [!NOTE]
 > DAX user-defined functions are currently in **preview**.
 
-DAX user-defined functions (UDFs) let you package DAX logic once and reuse it across measures, calculated columns, visual calculations, and even other user-defined functions. UDFs introduce a new `FUNCTION` keyword, optional [parameters](#parameters) (scalar, table, and references), and [type checking](#type-checking) helpers that make authoring safer and clearer. Functions are first-class model objects you can create and manage in [DAX query view](https://learn.microsoft.com/en-us/power-bi/transform-model/dax-query-view) and [TMDL view](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-tmdl-view), and they can be viewed in [Model explorer](https://learn.microsoft.com/en-us/power-bi/transform-model/model-explorer) under the *Functions* node.
+DAX user-defined functions (UDFs) let you package DAX logic once and reuse it across measures, calculated columns, visual calculations, and even other user-defined functions. UDFs introduce a new `FUNCTION` keyword, optional [parameters](#parameters) (scalar, table, and references), and [type checking](#type-checking) helpers that make authoring safer and clearer. Functions are first-class model objects you can create and manage in [DAX query view](/power-bi/transform-model/dax-query-view) and [TMDL view](/power-bi/transform-model/desktop-tmdl-view), and they can be viewed in [Model explorer](/power-bi/transform-model/model-explorer) under the *Functions* node.
 
 UDFs give you parameterized reuse similar to methods in programming so you can centralize business rules, improve maintainability, and evolve calculations safely over time.
 
@@ -31,7 +31,7 @@ There are several locations to define and manage functions:
 
 
 ### Using DAX query view
-You can define, update and/or evaluate user-defined functions in DAX query view. For addtional information on DAX query view, see [DAX query view](https://learn.microsoft.com/en-us/power-bi/transform-model/dax-query-view).
+You can define, update and/or evaluate user-defined functions in DAX query view. For addtional information on DAX query view, see [DAX query view](/power-bi/transform-model/dax-query-view).
 #### General form
 ```dax
 DEFINE
@@ -62,7 +62,7 @@ To save a UDF from DAX query view to the model:
 
 
 ### Using TMDL view
-You can define and/or update user-defined functions in TMDL view. For addtional information on TMDL view, see [TMDL view](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-tmdl-view).
+You can define and/or update user-defined functions in TMDL view. For addtional information on TMDL view, see [TMDL view](/power-bi/transform-model/desktop-tmdl-view).
 #### General form
 ```tmdl
 createOrReplace
@@ -85,12 +85,12 @@ Click the **Apply** button at the top of the view to save all UDFs in the script
 :::image type="content" source="media/dax-user-defined-functions/TMDLsaveToModel.png" alt-text="Screenshot of TMDL view in Power BI Desktop, highlighting the \"Apply\" button at the top of the view. This is the location where you can save a user-defined function." lightbox="media/dax-user-defined-functions/TMDLsaveToModel.png":::
 
 #### Using TMDL script in a Power BI Project
-UDFs are also included in the semantic model TMDL script when using a [Power BI project](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-overview). They can be found in `functions.tmdl` within the *definiton* folder.
+UDFs are also included in the semantic model TMDL script when using a [Power BI project](/power-bi/developer/projects/projects-overview). They can be found in `functions.tmdl` within the *definiton* folder.
 
 :::image type="content" source="media/dax-user-defined-functions/TMDLScriptPBIR.png" alt-text="Visual Studio Code screenshot of a Power BI project. Explorer is open to the semantic model folder. 'functions.tmdl' is open in the code editor. Three functions are displayed: CustomerLifetimeValue, AverageOrderValue, and AddTax." lightbox="media/dax-user-defined-functions/TMDLScriptPBIR.png":::
 
 ### Using Model explorer
-You can view all user-defined functions in the model from Model explorer under the *Functions* node. For addtional information on Model explorer, see [Model explorer](https://learn.microsoft.com/en-us/power-bi/transform-model/model-explorer).
+You can view all user-defined functions in the model from Model explorer under the *Functions* node. For addtional information on Model explorer, see [Model explorer](/power-bi/transform-model/model-explorer).
 
 :::image type="content" source="media/dax-user-defined-functions/ModelExplorerViewFunctions.png" alt-text="Model explorer panel in Power BI Desktop showing the expanded Functions node. Three user-defined functions are listed: AddTax, AverageOrderValue, and CustomerLifetimeValue." lightbox="media/dax-user-defined-functions/ModelExplorerViewFunctions.png":::
 
@@ -100,7 +100,7 @@ In [DAX query view](#using-dax-query-view) you can use **Quick quieries** in the
 
 In [TMDL view](#using-tmdl-view) you can **drag and drop** functions into the canvas or use **Script TMDL to** in the right-click menu of a UDF within Model explorer to generate scripts.
 
-:::image type="content" source="media/dax-user-defined-functions/ModelExplorerModelExplorerScriptTMDLTo.png" alt-text="Model explorer pane in Power BI Desktop displays the expanded Functions node. Two context menus are open: the first menu provides Script TMDL to, Rename, Delete from model, Hide in report view, Unhide all, Collapse all, and Expand all. Script to TMDL is highlighted and selected. The second menu is highlighted and offers Script to TMDL options Script tab and Clipboard." lightbox="media/dax-user-defined-functions/ModelExplorerScriptTMDLTo.png":::
+:::image type="content" source="media/dax-user-defined-functions/ModelExplorerScriptTMDLTo.png" alt-text="Model explorer pane in Power BI Desktop displays the expanded Functions node. Two context menus are open: the first menu provides Script TMDL to, Rename, Delete from model, Hide in report view, Unhide all, Collapse all, and Expand all. Script to TMDL is highlighted and selected. The second menu is highlighted and offers Script to TMDL options Script tab and Clipboard." lightbox="media/dax-user-defined-functions/ModelExplorerScriptTMDLTo.png":::
 
 ## Using a user-defined function
 Once a UDF is defined and saved to the model, you can call it from measures, calculated columns, visual calculations, and other UDFs. This works the same as calling built-in DAX functions.
@@ -130,7 +130,7 @@ We can see this example measure in the table below:
 :::image type="content" source="media/dax-user-defined-functions/UDFCalculatedColumn.png" alt-text="Tabel showing Sales Amount and Sales amount with Tax. Sales Amount with Tax is highlighted. Visulizations pane is open. Sales Amount with Tax is highlighted in the Columns field well." lightbox="media/dax-user-defined-functions/UDFCalculatedColumn.png":::
 
 ### Calling in a visual calculation
-You can use UDFs in a visual calculation to apply logic directly to the visual. For additional information on visual calculations, see [Visual Calculations](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-visual-calculations-overview).
+You can use UDFs in a visual calculation to apply logic directly to the visual. For additional information on visual calculations, see [Visual Calculations](/power-bi/transform-model/desktop-visual-calculations-overview).
 
 > [!NOTE]
 > Visual calculations only operate on fields present in the visual. They cannot access model objects that aren't part of the visual, and you cannot pass model objects (such as columns or measures not in the visual) into a UDF in this context.
@@ -431,7 +431,7 @@ convertToCurrency (
 )
 ```
 
-This may be optionally paired with a [dynamic format string](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-dynamic-format-strings) to display the result in the appropriate currency format.
+This may be optionally paired with a [dynamic format string](/power-bi/create-reports/desktop-dynamic-format-strings) to display the result in the appropriate currency format.
 
 ```dax
 CALCULATE (
@@ -464,8 +464,7 @@ User-defined functions are currently in preview, and during preview, you should 
 - You cannot hide/unhide UDFs.
 
 ## Related content
-- [DAX Query view](https://learn.microsoft.com/en-us/power-bi/transform-model/dax-query-view)
-- [TMDL view](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-tmdl-view)
-- [Model explorer](https://learn.microsoft.com/en-us/power-bi/transform-model/model-explorer)
-- [Visual Calculations](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-visual-calculations-overview)
-- [Dynamic Format Strings](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-dynamic-format-strings)
+
+- Learning path: [Use DAX in Power BI Desktop](/training/paths/dax-power-bi/)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
