@@ -527,7 +527,7 @@ User-defined functions are currently in preview, and during preview, you should 
 - UDFs are not supported for use in a model without any tables.
 - TMDL view does not have proper IntelliSense support for UDFs.
 - Return types for UDFs cannot be specified.
-- Parameter descriptiosn cannot be provided.
+- Parameter descriptions cannot be provided.
 - Function overload (same signature, different parameters or parameter types) are not available.
 - You cannot define optional parameters for functions.
 - You cannot put UDFs in display folders.
