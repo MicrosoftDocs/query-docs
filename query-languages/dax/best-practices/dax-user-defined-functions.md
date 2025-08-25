@@ -82,7 +82,7 @@ createOrReplace
 #### Saving to the model
 Click the **Apply** button at the top of the view to save all UDFs in the script to the model.
 
-:::image type="content" source="media/dax-user-defined-functions/tmdl-save-to-model.png" alt-text="Screenshot of TMDL view in Power BI Desktop, highlighting the Apply button at the top of the view. This is the location where you can save a user-defined function." lightbox="media/dax-user-defined-functions/tmdl-save-to-model.png":::
+:::image type="content" source="media/dax-user-defined-functions/view-save-to-model.png" alt-text="Screenshot of TMDL view in Power BI Desktop, highlighting the Apply button at the top of the view. This is the location where you can save a user-defined function." lightbox="media/dax-user-defined-functions/view-save-to-model.png":::
 
 #### Using TMDL script in a Power BI Project
 UDFs are also included in the semantic model TMDL script when using a [Power BI project](/power-bi/developer/projects/projects-overview). They can be found in `functions.tmdl` within the *definiton* folder.
@@ -141,7 +141,7 @@ Sales Amount with Tax = AddTax ( [Sales Amount] )
 
 We can see this example measure in the table below:
 
-:::image type="content" source="media/dax-user-defined-functions/visual-calculation.png" alt-text="Tabel showing Sales Amount and Sales amount with Tax. Sales Amount with Tax is highlighted. Visulizations pane is open. Sales Amount with Tax is highlighted in the Columns field well." lightbox="media/dax-user-defined-functions/visual-calculation.png":::
+:::image type="content" source="media/dax-user-defined-functions/visual-calculation.png" alt-text="In visual calculation edit mode. Tabel showing Sales Amount and Sales amount with Tax. Sales Amount with Tax is highlighted. Visual calculation formula for Sales amount with Tax is highlighted." lightbox="media/dax-user-defined-functions/visual-calculation.png":::
 
 ### Calling in another user-defined function
 You can nest UDFs by calling a function from another. In this example we define our simple AddTax UDF and call it in another UDF, AddTaxAndDiscount.
