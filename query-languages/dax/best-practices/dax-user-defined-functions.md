@@ -1,0 +1,471 @@
+---
+title: "Use DAX user defined functions (preview)"
+description: Best practices for using DAX user defined functions.
+author: hsteffens30
+ms.topic: conceptual
+ms.date: 09/15/2025
+---
+
+# DAX user-defined functions (preview)
+
+> [!NOTE]
+> DAX user-defined functions are currently in **preview**.
+
+DAX user-defined functions (UDFs) let you package DAX logic once and reuse it across measures, calculated columns, visual calculations, and even other user-defined functions. UDFs introduce a new `FUNCTION` keyword, optional [parameters](#parameters) (scalar, table, and references), and [type checking](#type-checking) helpers that make authoring safer and clearer. Functions are first-class model objects you can create and manage in [DAX query view](https://learn.microsoft.com/en-us/power-bi/transform-model/dax-query-view) and [TMDL view](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-tmdl-view), and they can be viewed in [Model explorer](https://learn.microsoft.com/en-us/power-bi/transform-model/model-explorer) under the *Functions* node.
+
+UDFs give you parameterized reuse similar to methods in programming so you can centralize business rules, improve maintainability, and evolve calculations safely over time.
+
+
+## Enable user-defined functions
+To try UDFs in Desktop:
+1. Go to **File > Options and settings > Options**.
+2. Select **Preview features** and check **DAX user-defined functions**.
+3. Select **OK** and **restart** Power BI Desktop.
+
+
+## Define and manage user-define functions
+There are several locations to define and manage functions:
+- **DAX query view** (DQV). Define and modify functions in DQV. DQV also includes context-menu **Quick quieries** (Evaluate, Define and evaluate, and Define all functions in this model) to help you test and manage UDFs fast.
+- **TMDL view**. UDFs can also be authored and edited in TMDL. TMDL view also includes context-menu **Script TMDL to**.
+- **Model explorer**. Exisiting functions can be viewed under the *Functions* node in Model explorer.
+
+
+### Using DAX query view
+You can define, update and/or evaluate user-defined functions in DAX query view. For addtional information on DAX query view, see [DAX query view](https://learn.microsoft.com/en-us/power-bi/transform-model/dax-query-view).
+#### General form
+```dax
+DEFINE
+    // Optional description above the function
+    FUNCTION <FunctionName> = ([ParameterName]:[ParameterType]) => <FunctionBody>
+```
+
+#### Example: Simple tax function
+```dax
+DEFINE
+    // AddTax takes in amount and returns amount including tax
+    FUNCTION AddTax = (
+            amount : NUMERIC
+        ) =>
+        amount * 1.1
+
+EVALUATE
+{ AddTax ( 10 ) }
+// Returns 11
+```
+
+#### Saving to the model
+To save a UDF from DAX query view to the model:
+- Click **Update model with changes** to save all UDFs in the query.
+- Or click **Update model: Add new function** above the defined function to save a single UDF.
+
+:::image type="content" source="media/dax-user-defined-functions/DQVsaveToModel.png" alt-text="Screenshot of DAX query view in Power BI Desktop, highlighting two locations where you can save a user-defined function. The first is the \"Update model with changes\" button at the top of the view. The second is a status line in the code editor labeled \"Update model: Add new function\"" lightbox="media/dax-user-defined-functions/DQVsaveToModel.png":::
+
+
+### Using TMDL view
+You can define and/or update user-defined functions in TMDL view. For addtional information on TMDL view, see [TMDL view](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-tmdl-view).
+#### General form
+```tmdl
+createOrReplace
+    /// Optional description above the function
+    function <FunctionName> = ([ParameterName]:[ParameterType]) => <FunctionBody>
+```
+
+#### Example: Simple tax function
+```tmdl
+createOrReplace
+    /// AddTax takes in amount and returns amount including tax
+    function AddTax = 
+        (amount : NUMERIC) =>
+            amount * 1.1
+```
+
+#### Saving to the model
+Click the **Apply** button at the top of the view to save all UDFs in the script to the model.
+
+:::image type="content" source="media/dax-user-defined-functions/TMDLsaveToModel.png" alt-text="Screenshot of TMDL view in Power BI Desktop, highlighting the \"Apply\" button at the top of the view. This is the location where you can save a user-defined function." lightbox="media/dax-user-defined-functions/TMDLsaveToModel.png":::
+
+#### Using TMDL script in a Power BI Project
+UDFs are also included in the semantic model TMDL script when using a [Power BI project](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-overview). They can be found in `functions.tmdl` within the *definiton* folder.
+
+:::image type="content" source="media/dax-user-defined-functions/TMDLScriptPBIR.png" alt-text="Visual Studio Code screenshot of a Power BI project. Explorer is open to the semantic model folder. 'functions.tmdl' is open in the code editor. Three functions are displayed: CustomerLifetimeValue, AverageOrderValue, and AddTax." lightbox="media/dax-user-defined-functions/TMDLScriptPBIR.png":::
+
+### Using Model explorer
+You can view all user-defined functions in the model from Model explorer under the *Functions* node. For addtional information on Model explorer, see [Model explorer](https://learn.microsoft.com/en-us/power-bi/transform-model/model-explorer).
+
+:::image type="content" source="media/dax-user-defined-functions/ModelExplorerViewFunctions.png" alt-text="Model explorer panel in Power BI Desktop showing the expanded Functions node. Three user-defined functions are listed: AddTax, AverageOrderValue, and CustomerLifetimeValue." lightbox="media/dax-user-defined-functions/ModelExplorerViewFunctions.png":::
+
+In [DAX query view](#using-dax-query-view) you can use **Quick quieries** in the right-click menu of a UDF within Model explorer to easily define and evaluate functions.
+
+:::image type="content" source="media/dax-user-defined-functions/ModelExplorerQuickQueries.png" alt-text="Model explorer pane in Power BI Desktop displays the expanded Functions node. Two context menus are open: the first menu provides Quick queries, Rename, Delete from model, Hide in report view, Unhide all, Collapse all, and Expand all. Quick queries is highlighted and selected. The second menu is highlighted and offers Quick queries options Evaluate, Define and evaluate, Define new function, and Define all functions in this model." lightbox="media/dax-user-defined-functions/ModelExplorerQuickQueries.png":::
+
+In [TMDL view](#using-tmdl-view) you can **drag and drop** functions into the canvas or use **Script TMDL to** in the right-click menu of a UDF within Model explorer to generate scripts.
+
+:::image type="content" source="media/dax-user-defined-functions/ModelExplorerModelExplorerScriptTMDLTo.png" alt-text="Model explorer pane in Power BI Desktop displays the expanded Functions node. Two context menus are open: the first menu provides Script TMDL to, Rename, Delete from model, Hide in report view, Unhide all, Collapse all, and Expand all. Script to TMDL is highlighted and selected. The second menu is highlighted and offers Script to TMDL options Script tab and Clipboard." lightbox="media/dax-user-defined-functions/ModelExplorerScriptTMDLTo.png":::
+
+## Using a user-defined function
+Once a UDF is defined and saved to the model, you can call it from measures, calculated columns, visual calculations, and other UDFs. This works the same as calling built-in DAX functions.
+
+### Calling in a measure
+Use a UDF in a measure to apply reusable logic with full filter context.
+```dax
+Total Sales with Tax = AddTax ( [Total Sales] )
+```
+We can see this example measure in the table below:
+
+:::image type="content" source="media/dax-user-defined-functions/UDFMeasure.png" alt-text="Tabel showing Total Sales and Total Sales with Tax. Total Sales with Tax is highlighted. Visulizations pane is open. Total Sales with Tax is highlighted in the Columns field well." lightbox="media/dax-user-defined-functions/UDFMeasure.png":::
+
+
+### Calling in a calculated column
+UDFs can be used in a calculated column to apply reusable logic to every row in a table.
+
+> [!NOTE]
+> When using a UDF in a calculated column, ensure the function returns a scalar of a consistent type. See [Parameters](#parameters) for more information. If needed, convert the result to the desired type using [CONVERT](../convert-function-dax.md) or similar functions.
+
+```dax
+Sales Amount with Tax = CONVERT ( AddTax ( 'Sales'[Sales Amount] ), CURRENCY )
+```
+
+We can see this example measure in the table below:
+
+:::image type="content" source="media/dax-user-defined-functions/UDFCalculatedColumn.png" alt-text="Tabel showing Sales Amount and Sales amount with Tax. Sales Amount with Tax is highlighted. Visulizations pane is open. Sales Amount with Tax is highlighted in the Columns field well." lightbox="media/dax-user-defined-functions/UDFCalculatedColumn.png":::
+
+### Calling in a visual calculation
+You can use UDFs in a visual calculation to apply logic directly to the visual. For additional information on visual calculations, see [Visual Calculations](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-visual-calculations-overview).
+
+> [!NOTE]
+> Visual calculations only operate on fields present in the visual. They cannot access model objects that aren't part of the visual, and you cannot pass model objects (such as columns or measures not in the visual) into a UDF in this context.
+
+```dax
+Sales Amount with Tax = AddTax ( [Sales Amount] )
+```
+
+We can see this example measure in the table below:
+
+:::image type="content" source="media/dax-user-defined-functions/UDFCalculatedColumn.png" alt-text="Tabel showing Sales Amount and Sales amount with Tax. Sales Amount with Tax is highlighted. Visulizations pane is open. Sales Amount with Tax is highlighted in the Columns field well." lightbox="media/dax-user-defined-functions/UDFCalculatedColumn.png":::
+
+### Calling in another user-defined function
+You can nest UDFs by calling a function from another. In this example we define our simple AddTax UDF and call it in another UDF, AddTaxAndDiscount.
+```dax
+DEFINE
+    // AddTax takes in amount and returns amount including tax
+    FUNCTION AddTax = (
+            amount : NUMERIC
+        ) =>
+        amount * 1.1
+	FUNCTION AddTaxAndDiscount = (
+			amount : NUMERIC,
+			discount : NUMERIC
+		) =>
+		AddTax ( amount - discount )
+
+EVALUATE
+{ AddTaxAndDiscount ( 10, 2 ) }
+// Returns 8.8
+```
+
+## Parameters
+DAX UDFs can accept zero or more parameters. When you define parameters for a UDF, you can optionally specify type hints for each parameter:
+- **Type**: what type of value the parameter accepts (`AnyVal`, `Scalar`, `Table`, or `AnyRef`).
+- **Subtype** (only for scalar type): the specific scalar data type (`Variant`, `Int64`, `Decimal`, `Double`, `String`, `DateTime`, `Boolean`, or `Numeric`). 
+- **ParameterMode**: how the argument is evaluated (`val` or `expr`).
+
+Type hints are in the form: `[type] [subtype] [parameterMode]`
+
+You can include, all, some, or none of these type hints for each parameter to make your functions safer and more predictable at call sites. If you omit everything and just write the parameter name it behaves as `AnyVal val`, meaning the argument is evaluated immediately at call time. This is useful for simple functions.
+
+### Type
+Type defines the category of argument your parameter accepts and whether it is passed as a **value** or an **expression**.
+
+There are two type families in DAX UDF parameters: **value types** and **expression types**:
+- **Value types**: this argument is **evaluated immediately** (eagerly evaluated) at the call site and the resulting value is passed into the function.
+    - **`AnyVal`**: Accepts a scalar or a table. This is the default if you omit type for a parameter.
+    - **`Scalar`**: Accepts a scalar value (can additional add a subtype).
+    - **`Table`**: Accepts a table.
+- **Expression types**: this arugement passes an **unevaluated expression** (lazily evaluated). The function decides when and in what context to evaluate it. This is required for reference parameters and useful when you need to control filter context (e.g. inside `CALCULATE`). `expr` types can be references to a column, table, calendar, or measure.
+    - **`AnyRef`**: Accepts a reference (a column, table, calendar, or measure).
+
+### Subtype
+Subtype lets you define a specific `Scalar` data type. If you define a subtype you do not need to explicitly define the parameter as a `Scalar` type, this is automatically assumed.
+
+Subtypes are:
+- **`Variant`**: Accepts any scalar.
+- **`Int64`**: Accepts a whole numner.
+- **`Decimal`**: Accepts a fixed-precision decimal (such as Currency or Money).
+- **`Double`**: Accepts a floating-point decimal.
+- **`String`**: Accepts text.
+- **`DateTime`**: Accepts date/time.
+- **`Boolean`**: Accepts TRUE/FALSE.
+- **`Numeric`**: Accepts any numerical value (`Int64`, `Decimal`, or `Double` subtypes)
+
+### ParameterMode
+ParameterMode controls evalutation timing. These are:
+- **`val` (eager evaluation)**: evaluates the value immediatelt at the call site and the resulting value is passed into the function. This is common for simple scalar or table inputs. This is the default if you omit parameterMode for a parameter.
+- **`expr` (lazy evaluation)**: passes an unevaluated expression into the function to be evaluated later in the function body as necessary. This is required for reference parameters and useful when you need to control filter context.
+
+### Example: Type casting
+```dax
+DEFINE
+    // returns x cast to an Int64
+    FUNCTION returnX = (
+            x : SCALAR INT64 VAL
+        ) =>
+        x
+
+EVALUATE
+{ returnX ( 3.4 ), returnX ( 3.5 ), returnX ( "5" ) }
+// returns 3, 4, 5
+```
+This uses a `Scalar` type, `Int64` subtype, and `val` parameterMode for predicatable rounding and text-to-number coercion, as well as ensuring any expressions are eagerly evaluated. You can also achieve this by just including the `Int64` subtype as seen in the example below. Non-numeric strings will result in an error.
+```dax
+DEFINE
+    // returns x as an Int64
+    FUNCTION returnX = (
+            x : INT64
+        ) =>
+        x
+
+EVALUATE
+{ returnX ( 3.4 ), returnX ( 3.5 ), returnX ( "5" ) }
+// returns 3, 4, 5
+```
+
+### Example: Table parameter (value vs expression)
+To illustrate how UDF parameter modes affect filter context. consider two functions that both count rows in the 'Sales' table. Both use `CALCULATETABLE(t, ALL('Date'))` in their bodies, but one parameter is declared as a `val` (eager evaluation) and the other as `expr` (lazy evaluation):
+```dax
+DEFINE
+    // Table val: receives a materialized table, context can't be changed
+    FUNCTION CountRowsNow = (
+            t : TABLE VAL
+        ) =>
+        COUNTROWS ( CALCULATETABLE ( t, ALL ( 'Date' ) ) )
+    // Table expr: receives an unevaluated expression, context CAN be changed
+    FUNCTION CountRowsLater = (
+            t : TABLE EXPR
+        ) =>
+        COUNTROWS ( CALCULATETABLE ( t, ALL ( 'Date' ) ) )
+
+EVALUATE
+{
+    CALCULATE ( CountRowsNow ( 'Sales' ), 'Date'[Fiscal Year] = "FY2020" ),
+    CALCULATE ( CountRowsLater ( 'Sales' ), 'Date'[Fiscal Year] = "FY2020" )
+}
+// returns 121253, 84285
+```
+CountRowsNow returns the count of sales for FY2020 only. The 'Sales' table is already filtered by the year before entering the function, so `ALL('Date')` inside the function has no effect.
+
+CountRowsLater returns the count of sales for all years. The function recieves an unevaluated table expression and evaluates it under `ALL('Date')`, removing the external year filter.
+
+## Type checking
+Type checking in UDFs can be done with new and exisiting type checking functions you can call inside your function body to confirm the runtime type of passed parameters. This allows UDFs to use context control, validate parameters up front, normalize inputs before calculation.
+
+> [!NOTE]
+> For `expr` parameterMode parameters, type checks occur when the parameter is referenced in the function body (not at function call time).
+
+### Available type checking functions
+UDFs can use the following functions to test scalar values. Each returns `TRUE`/`FALSE` depending on whether the value provided is of that type.
+
+| Category     | Functions                                                                             |        
+|--------------|---------------------------------------------------------------------------------------|
+| Numeric      | [ISNUMERIC](../isnumeric-function-dax.md), [ISNUMBER](../isnumber-function-dax.md)    |
+| Double       | [ISDOUBLE](../isdouble-function-dax.md)                                               |
+| Whole number | [ISINT64](../isint64-function-dax.md), [ISINTEGER](../isinteger-function-dax.md)      |
+| Decimal      | [ISDECIMAL](../isdecimal-function-dax.md), [ISCURRENCY](../iscurrency-function-dax.md)|
+| String       | [ISSTRING](../isstring-function-dax.md), [ISTEXT](../istext-function-dax.md)          |
+| Boolean      | [ISBOOLEAN](../isboolean-function-dax.md), [ISLOGICAL](../islogical-function-dax.md)  |
+| Date and Time| [ISDATETIME](../isdatetime-function-dax.md)                                           |
+
+### Example: Check if parameter is a string
+```dax
+DEFINE
+    /// Returns the length of a string, or BLANK if not a string
+    FUNCTION StringLength = (
+            s
+        ) =>
+        IF ( ISSTRING ( s ), LEN ( s ), BLANK () )
+
+EVALUATE
+{ StringLength ( "hello" ), StringLength ( 123 ) }
+// Returns: 5, BLANK
+```
+This prevents errors and allows you to decide how to handle non-string input into the function (in this example, returns `BLANK`).
+
+### Example: Accept multiple parameter types
+```dax
+DEFINE
+    // Helper 1: get currency nume by int64 key
+    FUNCTION GetCurrencyNameByKey = (
+            k : INT64
+        ) =>
+        LOOKUPVALUE ( 'Currency'[Currency], 'Currency'[CurrencyKey], k )
+    // Helper 2: get currency name by string code
+    FUNCTION GetCurrencyNameByCode = (
+            code : STRING
+        ) =>
+        LOOKUPVALUE ( 'Currency'[Currency], 'Currency'[Code], code )
+    // Accepts key (int64) or code (string) and returns the currency name
+    FUNCTION GetCurrencyName = (
+            currency
+        ) =>
+        IF (
+            ISINT64 ( currency ),
+            GetCurrencyNameByKey ( currency ),
+            GetCurrencyNameByCode ( currency )
+        )
+
+EVALUATE
+{ GetCurrencyName ( 36 ), GetCurrencyName ( "USD" ) }
+// returns "Euro", "US Dollar"
+```
+This example shows how to use type checking in UDFs to safely accept multiple input types and return a single, predictable result. `GetCurrencyName` takes one argument, `currency`, which can be either a whole-number currency key or a text currency code. The function checks the argument type with `ISINT64`. If the input is an integer, it calls the helper `GetCurrencyNameByKey` that looks up the currency name based on the currency key. If the input is not an integer, it calls the helper `GetCurrencyNameByCode` that looks up the currency name based on the currency code.
+
+## Define multiple functions at once
+UDFs allow you to define several functions in a single query or script, making it easy to organize reusable logic. This is especially useful when you want to encapsulate related calculations or helper routines together. Functions can be evaluated together or individually.
+
+```dax
+DEFINE
+    /// Multiplies two numbers
+    FUNCTION Multiply = (
+            a,
+            b
+        ) =>
+        a * b
+    /// Adds two numbers and 1
+    FUNCTION AddOne = (
+            x,
+            y
+        ) =>
+        x + y + 1
+    /// Returns a random integer between 10 and 100
+    FUNCTION RandomInt = () =>
+        RANDBETWEEN ( 10, 100 )
+
+EVALUATE
+{ Multiply ( 3, 5 ), AddOne ( 1, 2 ), RandomInt () }
+// returns 15, 4, 98
+```
+
+## Advanced example: Flexible currency conversion
+To show how DAX UDFs can handle more complex logic we will look at a currency conversion scenario. This example uses type checking and nested functions to convert a given amount into a target currency using either the average or end-of-day exchange rate for a given date.
+
+```tmdl
+createOrReplace 
+	function convertDateToDateKey =  
+		( 
+			p_date: scalar variant 
+		) => 
+		YEAR ( p_date ) * 10000 + MONTH ( p_date ) * 100 + DAY ( p_date ) 
+	
+	function convertToCurrency = 
+		( 
+			p_currency:scalar variant, 
+			p_date: scalar variant, 
+			p_use_average_rate: scalar boolean, 
+			p_amount: scalar decimal 
+		) => 
+		var currencyKey = 
+			EVALUATEANDLOG ( 
+				IF ( 
+					ISINT64 ( p_currency ), 
+					p_currency, 
+					CALCULATE ( 
+						MAX ( 'Currency'[CurrencyKey] ), 
+						'Currency'[Code] == p_currency 
+					) 
+				) 
+				, "CurrencyKey" 
+			) 
+
+		var dateKey = 
+			EVALUATEANDLOG ( 
+				SWITCH ( 
+					TRUE, 
+					ISINT64 ( p_date ), p_date, 
+					convertDateToDateKey ( p_date ) 
+				) 
+				, "DateKey" 
+			) 
+
+		var exchange_rate = 
+			EVALUATEANDLOG ( 
+				IF ( 
+					p_use_average_rate, 
+					CALCULATE ( 
+						MAX ( 'Currency Rate'[Average Rate] ), 
+						'Currency Rate'[DateKey] == dateKey, 
+						'Currency Rate'[CurrencyKey] == currencyKey 
+					), 
+					CALCULATE ( 
+					MAX ( 'Currency Rate'[End Of Day Rate] ), 
+						'Currency Rate'[DateKey] == dateKey, 
+						'Currency Rate'[CurrencyKey] == currencyKey 
+					) 
+				) 
+				, "ExchangeRate" 
+			) 
+
+		var result = 
+			IF ( 
+				ISBLANK ( p_currency ) || ISBLANK ( p_date ) || ISBLANK ( p_amount ), 
+				BLANK (), 
+				IF ( 
+					ISBLANK ( exchange_rate ) , 
+					"no exchange rate available", 
+					exchange_rate * p_amount 
+				) 
+			) 
+
+		RETURN result
+```
+
+The convertToCurrency function accepts flexible input types for both currency and date. Users can provide either a currencyKey or dateKey directly, or suppy a currencyCode or standard date value. The function checks the type of each input and handles it accordingly: if `p_currency` is a whole number, it is treated as a currencyKey; otherwise, the function assumes a currencyCode and attempts to resolve the corresponding key. `p_date` follows a similar pattern, if it is a whole number, it is treated as a dateKey; otherwise the function assumes it is a standard date value and is concerted to a dateKey using the `convertDateToDateKey` helper function. If the function cannot determine a valid exchnage rate, it returns the message "no exchange rate available".
+
+This logic can then be used to define a measure such as **Total Sales in Local Currency**.
+
+```dax
+Total Sales in Local Currency = 
+convertToCurrency (
+    SELECTEDVALUE ( 'Currency'[Code] ),
+    SELECTEDVALUE ( 'Date'[DateKey] ),
+    TRUE,
+    [Total Sales]
+)
+```
+
+This may be optionally paired with a [dynamic format string](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-dynamic-format-strings) to display the result in the appropriate currency format.
+
+```dax
+CALCULATE (
+    MAX ( 'Currency'[Format String] ),
+    'Currency'[Code] == SELECTEDVALUE ( 'Currency'[Code] )
+)
+```
+
+An example result can be seen in the screenshot below.
+
+:::image type="content" source="media/dax-user-defined-functions/UDFAdvancedEx.png" alt-text="Tabel showing Full Date, Currency, Total Sales in Local Currency, and Total Sales." lightbox="media/dax-user-defined-functions/UDFAdvancedEx.png":::
+
+## Considerations and limitations
+User-defined functions are currently in preview, and during preview, you should be aware of the following considerations and limitations:
+- You cannot author or model DAX UDFs in Service.
+- You cannot define recursive functions or mutually recursive functions.
+- UDFs cannot return an `enum` value. Built-in functions that accept `enum` values as their function parameters will not be able to use UDFs in that context.
+- Unbound parameters of type hint `expr` are not evaluated.
+- There is no 'create function' button in the ribbon.
+- Although UDFs can be used in live connect or composite models, there is no IntelliSense support.
+- Although UDFs can be used in visual calculations, the visual calculations formula bar does not have IntelliSense support for UDFs.
+- UDFs are not supported for use in a model without any tables.
+- TMDL view does not have proper IntelliSense support for UDFs.
+- Return types for UDFs cannot be specified.
+- Parameter descriptiosn cannot be provided.
+- Function overload (same signature, different parameters or parameter types) are not available.
+- You cannot define optional parameters for functions.
+- You cannot put UDFs in display folders.
+- You cannot combine UDFs with translations.
+- You cannot hide/unhide UDFs.
+
+## Related content
+- [DAX Query view](https://learn.microsoft.com/en-us/power-bi/transform-model/dax-query-view)
+- [TMDL view](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-tmdl-view)
+- [Model explorer](https://learn.microsoft.com/en-us/power-bi/transform-model/model-explorer)
+- [Visual Calculations](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-visual-calculations-overview)
+- [Dynamic Format Strings](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-dynamic-format-strings)
