@@ -34,7 +34,7 @@ A table whose columns match the schema rowset for alternate of definitions in th
 * Can only be ran by users with write permission on the semantic model and not when live connected to the semantic model in Power BI Desktop.
 * This function can be used in [DAX queries](/dax/dax-queries), and can't be used in calculations.
 
-## Example
+## Example 1 - DAX query
 
 The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
 

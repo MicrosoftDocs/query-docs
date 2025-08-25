@@ -53,16 +53,14 @@ This DAX query returns a table with all of the columns of this DAX function.
 
 ## Example 2 - DAX query with restriction
 
-The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view): 
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view) and limits the results to the Total Sales measure:
 
 ```dax
 EVALUATE
-	INFO.CALCDEPENDENCY("Query", "EVALUATE { [Orders] }")
+	INFO.CALCDEPENDENCY("Query", "EVALUATE { [Total Sales] }")
 ```
 
-This DAX query returns a table showing the objects in the semantic model needed to run this specified DAX query. The restriction name of "query" is used with the value of a DAX query. This DAX query is getting the output of the measure named Orders. 
-
-If a query has double-quotes they can be escaped with another double-quote and you can optionally use a VAR to hold the value.
+If a restriction has double-quotes they can be escaped with another double-quote and you can optionally use a VAR to hold the value.
 
 ```dax
 EVALUATE
