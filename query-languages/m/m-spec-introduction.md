@@ -2,7 +2,7 @@
 title: Power Query M formula language introduction 
 description: Provides an overview of the Power Query M formula language
 ms.topic: overview
-ms.date: 7/21/2023
+ms.date: 8/25/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-specification
 ---
@@ -96,13 +96,13 @@ The following examples illustrate the different kinds of values available in M. 
 
 The evaluation model of the M language is modeled after the evaluation model commonly found in spreadsheets, where the order of calculation can be determined based on dependencies between the formulas in the cells.
 
-If you've written formulas in a spreadsheet such as Excel, you may recognize the formulas on the left result in the values on the right when calculated:
+If you've written formulas in a spreadsheet such as Excel, you might recognize the formulas on the left result in the values on the right when calculated:
 
-:::image type="content" source="media/m-spec-formula-value.png" alt-text="Image of the formulas on the right resulting in the values on the left.":::
+:::image type="content" source="media/m-spec-formula-value.png" alt-text="Screenshots of of the formulas on the right resulting in the values on the left.":::
 
 In M, parts of an expression can reference other parts of the expression by name, and the evaluation process automatically determines the order in which referenced expressions are calculated.
 
-You can use a record to produce an expression that's equivalent to the previous spreadsheet example. When initializing the value of a field, you can refer to other fields within the record by using the name of the field, as follows:
+You can use a record to produce an expression that's equivalent to the previous spreadsheet example. When initializing the value of a field, you can refer to other fields within the record by using the name of the field, as shown in the following example:
 
 ```powerquery-m
 [  
@@ -112,7 +112,7 @@ You can use a record to produce an expression that's equivalent to the previous 
 ]
 ```
 
-The above expression is equivalent to the following (in that both evaluate to equal values):
+The previous expression is equivalent to the following example (in that both evaluate to equal values):
 
 ```powerquery-m
 [  
@@ -131,7 +131,7 @@ Records can be contained within, or _nest_, within other records. You can use th
 ]
 ```
 
-The above expression is equivalent to the following when it is evaluated:
+The previous expression is equivalent to the following example when it's evaluated:
 
 ```powerquery-m
 [  
@@ -140,7 +140,7 @@ The above expression is equivalent to the following when it is evaluated:
 ]
 ```
 
-Records can also be contained within lists. You can use the _positional index operator_ (`{}`) to access an item in a list by its numeric index. The values within a list are referred to using a zero-based index from the beginning of the list. For example, the indexes `0` and `1` are used to reference the first and second items in the list below:
+Records can also be contained within lists. You can use the _positional index operator_ (`{}`) to access an item in a list by its numeric index. The values within a list are referred to using a zero-based index from the beginning of the list. For example, the indexes `0` and `1` are used to reference the first and second items in the following list:
 
 ```powerquery-m
 [ 
@@ -174,7 +174,7 @@ In M, a _function_ is a mapping from a set of input values to a single output va
 (x, y) =>  x + y                // function that adds two values
 ```
 
-A function is a value just like a number or a text value. The following example shows a function that is the value of an Add field which is then _invoked_, or executed, from several other fields. When a function is invoked, a set of values are specified that are logically substituted for the required set of input values within the function body expression.
+A function is a value just like a number or a text value. The following example shows a function that's the value of an Add field, which is then _invoked_, or executed, from several other fields. When a function is invoked, a set of values are specified that are logically substituted for the required set of input values within the function body expression.
 
 ```powerquery-m
 [ 
@@ -253,7 +253,7 @@ A metadata record can be accessed for a given value using the [Value.Metadata](v
 
 ## Let expression
 
-Many of the examples shown so far have included all the literal values of the expression in the result of the expression. The `let` expression allows a set of values to be computed, assigned names, and then used in a subsequent expression that follows the `in`. For example, in our sales data example, you could do:
+Many of the examples shown so far have included all the literal values of the expression in the result of the expression. The `let` expression allows a set of values to be computed, assigned names, and then used in a subsequent expression that precedes the `in`. For example, in our sales data example, you could do:
 
 ```powerquery-m
 let 
@@ -270,8 +270,10 @@ let
             FirstHalf = 1200,  
             SecondHalf = 1300, 
             Total = FirstHalf + SecondHalf // 2500 
-        ] 
-  in Sales2007[Total] + Sales2008[Total] // 4600
+        ],
+    Result = Sales2007[Total] + Sales2008[Total]
+in
+    Result  // 4600
 ```
 
 The result of the above expression is a number value (`4600`) that's computed from the values bound to the names `Sales2007` and `Sales2008`.
@@ -303,10 +305,12 @@ let Sales =
         UnitPrice = if Units = 0 then error "No Units"
                     else Revenue / Units 
     ], 
-    UnitPrice = try Number.ToText(Sales[UnitPrice])
-in "Unit Price: " & 
-    (if UnitPrice[HasError] then UnitPrice[Error][Message]
-    else UnitPrice[Value])
+    UnitPrice = try Number.ToText(Sales[UnitPrice]),
+    Result = "Unit Price: " & 
+        (if UnitPrice[HasError] then UnitPrice[Error][Message]
+        else UnitPrice[Value])
+in
+    Result
 ```
 
 The above example accesses the `Sales[UnitPrice]` field and formats the value producing the result:
@@ -318,7 +322,7 @@ The above example accesses the `Sales[UnitPrice]` field and formats the value pr
 If the `Units` field had been zero, then the `UnitPrice` field would have raised an error, which would have been handled by the `try`. The resulting value would then have been:
 
 ```powerquery-m
-"No Units"
+"Unit Price: No Units"
 ```
 
 A `try` expression converts proper values and errors into a record value that indicates whether the `try` expression handled an error, or not, and either the proper value or the error record it extracted when handling the error. For example, consider the following expression that raises an error and then handles it right away:
