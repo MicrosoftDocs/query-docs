@@ -58,7 +58,7 @@ To save a UDF from DAX query view to the model:
 - Click **Update model with changes** to save all UDFs in the query.
 - Or click **Update model: Add new function** above the defined function to save a single UDF.
 
-:::image type="content" source="media/dax-user-defined-functions/DQVsaveToModel.png" alt-text="Screenshot of DAX query view in Power BI Desktop, highlighting two locations where you can save a user-defined function. The first is the \"Update model with changes\" button at the top of the view. The second is a status line in the code editor labeled \"Update model: Add new function\"" lightbox="media/dax-user-defined-functions/DQVsaveToModel.png":::
+:::image type="content" source="media/dax-user-defined-functions/dax-query-view-save-to-model.png" alt-text="Screenshot of DAX query view in Power BI Desktop, highlighting two locations where you can save a user-defined function. The first is the Update model with changes button at the top of the view. The second is a status line in the code editor labeled Update model: Add new function" lightbox="media/dax-user-defined-functions/dax-query-view-save-to-model.png":::
 
 
 ### Using TMDL view
@@ -82,25 +82,25 @@ createOrReplace
 #### Saving to the model
 Click the **Apply** button at the top of the view to save all UDFs in the script to the model.
 
-:::image type="content" source="media/dax-user-defined-functions/TMDLsaveToModel.png" alt-text="Screenshot of TMDL view in Power BI Desktop, highlighting the \"Apply\" button at the top of the view. This is the location where you can save a user-defined function." lightbox="media/dax-user-defined-functions/TMDLsaveToModel.png":::
+:::image type="content" source="media/dax-user-defined-functions/tmdl-save-to-model.png" alt-text="Screenshot of TMDL view in Power BI Desktop, highlighting the Apply button at the top of the view. This is the location where you can save a user-defined function." lightbox="media/dax-user-defined-functions/tmdl-save-to-model.png":::
 
 #### Using TMDL script in a Power BI Project
 UDFs are also included in the semantic model TMDL script when using a [Power BI project](/power-bi/developer/projects/projects-overview). They can be found in `functions.tmdl` within the *definiton* folder.
 
-:::image type="content" source="media/dax-user-defined-functions/TMDLScriptPBIR.png" alt-text="Visual Studio Code screenshot of a Power BI project. Explorer is open to the semantic model folder. 'functions.tmdl' is open in the code editor. Three functions are displayed: CustomerLifetimeValue, AverageOrderValue, and AddTax." lightbox="media/dax-user-defined-functions/TMDLScriptPBIR.png":::
+:::image type="content" source="media/dax-user-defined-functions/project-script.png" alt-text="Visual Studio Code screenshot of a Power BI project. Explorer is open to the semantic model folder. 'functions.tmdl' is open in the code editor. Three functions are displayed: CustomerLifetimeValue, AverageOrderValue, and AddTax." lightbox="media/dax-user-defined-functions/project-script.png":::
 
 ### Using Model explorer
 You can view all user-defined functions in the model from Model explorer under the *Functions* node. For addtional information on Model explorer, see [Model explorer](/power-bi/transform-model/model-explorer).
 
-:::image type="content" source="media/dax-user-defined-functions/ModelExplorerViewFunctions.png" alt-text="Model explorer panel in Power BI Desktop showing the expanded Functions node. Three user-defined functions are listed: AddTax, AverageOrderValue, and CustomerLifetimeValue." lightbox="media/dax-user-defined-functions/ModelExplorerViewFunctions.png":::
+:::image type="content" source="media/dax-user-defined-functions/model-explorer-view-functions.png" alt-text="Model explorer panel in Power BI Desktop showing the expanded Functions node. Three user-defined functions are listed: AddTax, AverageOrderValue, and CustomerLifetimeValue." lightbox="media/dax-user-defined-functions/model-explorer-view-functions.png":::
 
 In [DAX query view](#using-dax-query-view) you can use **Quick quieries** in the right-click menu of a UDF within Model explorer to easily define and evaluate functions.
 
-:::image type="content" source="media/dax-user-defined-functions/ModelExplorerQuickQueries.png" alt-text="Model explorer pane in Power BI Desktop displays the expanded Functions node. Two context menus are open: the first menu provides Quick queries, Rename, Delete from model, Hide in report view, Unhide all, Collapse all, and Expand all. Quick queries is highlighted and selected. The second menu is highlighted and offers Quick queries options Evaluate, Define and evaluate, Define new function, and Define all functions in this model." lightbox="media/dax-user-defined-functions/ModelExplorerQuickQueries.png":::
+:::image type="content" source="media/dax-user-defined-functions/model-explorer-quick-queries.png" alt-text="Model explorer pane in Power BI Desktop displays the expanded Functions node. Two context menus are open: the first menu provides Quick queries, Rename, Delete from model, Hide in report view, Unhide all, Collapse all, and Expand all. Quick queries is highlighted and selected. The second menu is highlighted and offers Quick queries options Evaluate, Define and evaluate, Define new function, and Define all functions in this model." lightbox="media/dax-user-defined-functions/model-explorer-quick-queries.png":::
 
 In [TMDL view](#using-tmdl-view) you can **drag and drop** functions into the canvas or use **Script TMDL to** in the right-click menu of a UDF within Model explorer to generate scripts.
 
-:::image type="content" source="media/dax-user-defined-functions/ModelExplorerScriptTMDLTo.png" alt-text="Model explorer pane in Power BI Desktop displays the expanded Functions node. Two context menus are open: the first menu provides Script TMDL to, Rename, Delete from model, Hide in report view, Unhide all, Collapse all, and Expand all. Script to TMDL is highlighted and selected. The second menu is highlighted and offers Script to TMDL options Script tab and Clipboard." lightbox="media/dax-user-defined-functions/ModelExplorerScriptTMDLTo.png":::
+:::image type="content" source="media/dax-user-defined-functions/model-explorer-script-to.png" alt-text="Model explorer pane in Power BI Desktop displays the expanded Functions node. Two context menus are open: the first menu provides Script TMDL to, Rename, Delete from model, Hide in report view, Unhide all, Collapse all, and Expand all. Script to TMDL is highlighted and selected. The second menu is highlighted and offers Script to TMDL options Script tab and Clipboard." lightbox="media/dax-user-defined-functions/model-explorer-script-to.png":::
 
 ## Using a user-defined function
 Once a UDF is defined and saved to the model, you can call it from measures, calculated columns, visual calculations, and other UDFs. This works the same as calling built-in DAX functions.
@@ -112,7 +112,7 @@ Total Sales with Tax = AddTax ( [Total Sales] )
 ```
 We can see this example measure in the table below:
 
-:::image type="content" source="media/dax-user-defined-functions/UDFMeasure.png" alt-text="Tabel showing Total Sales and Total Sales with Tax. Total Sales with Tax is highlighted. Visulizations pane is open. Total Sales with Tax is highlighted in the Columns field well." lightbox="media/dax-user-defined-functions/UDFMeasure.png":::
+:::image type="content" source="media/dax-user-defined-functions/measure.png" alt-text="Tabel showing Total Sales and Total Sales with Tax. Total Sales with Tax is highlighted. Visulizations pane is open. Total Sales with Tax is highlighted in the Columns field well." lightbox="media/dax-user-defined-functions/measure.png":::
 
 
 ### Calling in a calculated column
@@ -127,7 +127,7 @@ Sales Amount with Tax = CONVERT ( AddTax ( 'Sales'[Sales Amount] ), CURRENCY )
 
 We can see this example measure in the table below:
 
-:::image type="content" source="media/dax-user-defined-functions/UDFCalculatedColumn.png" alt-text="Tabel showing Sales Amount and Sales amount with Tax. Sales Amount with Tax is highlighted. Visulizations pane is open. Sales Amount with Tax is highlighted in the Columns field well." lightbox="media/dax-user-defined-functions/UDFCalculatedColumn.png":::
+:::image type="content" source="media/dax-user-defined-functions/calculated-column.png" alt-text="Tabel showing Sales Amount and Sales amount with Tax. Sales Amount with Tax is highlighted. Visulizations pane is open. Sales Amount with Tax is highlighted in the Columns field well." lightbox="media/dax-user-defined-functions/calculated-column.png":::
 
 ### Calling in a visual calculation
 You can use UDFs in a visual calculation to apply logic directly to the visual. For additional information on visual calculations, see [Visual Calculations](/power-bi/transform-model/desktop-visual-calculations-overview).
@@ -141,7 +141,7 @@ Sales Amount with Tax = AddTax ( [Sales Amount] )
 
 We can see this example measure in the table below:
 
-:::image type="content" source="media/dax-user-defined-functions/UDFCalculatedColumn.png" alt-text="Tabel showing Sales Amount and Sales amount with Tax. Sales Amount with Tax is highlighted. Visulizations pane is open. Sales Amount with Tax is highlighted in the Columns field well." lightbox="media/dax-user-defined-functions/UDFCalculatedColumn.png":::
+:::image type="content" source="media/dax-user-defined-functions/visual-calculation.png" alt-text="Tabel showing Sales Amount and Sales amount with Tax. Sales Amount with Tax is highlighted. Visulizations pane is open. Sales Amount with Tax is highlighted in the Columns field well." lightbox="media/dax-user-defined-functions/visual-calculation.png":::
 
 ### Calling in another user-defined function
 You can nest UDFs by calling a function from another. In this example we define our simple AddTax UDF and call it in another UDF, AddTaxAndDiscount.
@@ -442,7 +442,7 @@ CALCULATE (
 
 An example result can be seen in the screenshot below.
 
-:::image type="content" source="media/dax-user-defined-functions/UDFAdvancedEx.png" alt-text="Tabel showing Full Date, Currency, Total Sales in Local Currency, and Total Sales." lightbox="media/dax-user-defined-functions/UDFAdvancedEx.png":::
+:::image type="content" source="media/dax-user-defined-functions/advanced-example.png" alt-text="Tabel showing Full Date, Currency, Total Sales in Local Currency, and Total Sales." lightbox="media/dax-user-defined-functions/advanced-example.png":::
 
 ## Considerations and limitations
 User-defined functions are currently in preview, and during preview, you should be aware of the following considerations and limitations:
