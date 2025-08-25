@@ -271,9 +271,9 @@ let
             SecondHalf = 1300, 
             Total = FirstHalf + SecondHalf // 2500 
         ],
-    Result = Sales2007[Total] + Sales2008[Total]
+    TotalSales = Sales2007[Total] + Sales2008[Total]
 in
-    Result  // 4600
+    TotalSales  // 4600
 ```
 
 The result of the above expression is a number value (`4600`) that's computed from the values bound to the names `Sales2007` and `Sales2008`.
