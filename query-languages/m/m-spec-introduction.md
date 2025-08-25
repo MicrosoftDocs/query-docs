@@ -45,7 +45,7 @@ The central construct in M is the _expression_. An expression can be evaluated (
 
 Although many values can be written literally as an expression, a value isn't an expression. For example, the expression `1` evaluates to the value _1_; the expressions `1+1` evaluates to the value _2_. This distinction is subtle, but important. Expressions are recipes for evaluation; values are the results of evaluation.
 
-The following examples illustrate the different kinds of values available in M. As a convention, a value is written using the literal form in which they would appear in an expression that evaluates to just that value. (Note that the `//` indicates the start of a comment which continues to the end of the line.)
+The following examples illustrate the different kinds of values available in M. As a convention, a value is written using the literal form in which they would appear in an expression that evaluates to just that value. (Note that the `//` indicates the start of a comment that continues to the end of the line.)
 
 * A _primitive_ value is single-part value, such as a number, logical, text, or null. A null value can be used to indicate the absence of any data.
 
