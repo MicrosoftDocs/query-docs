@@ -34,3 +34,10 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.TABLES()
 ```
+
+## See also
+
+[INFO.COLUMNS](info-columns-function-dax.md)
+[INFO.PARTITIONS](info-partitions-function-dax.md)
+[INFO.RELATIONSHIPS](info-relationships-function-dax.md)
+[INFO functions overview](info-functions-dax.md)

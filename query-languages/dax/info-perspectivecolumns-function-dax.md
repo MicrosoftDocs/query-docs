@@ -34,3 +34,11 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.PERSPECTIVECOLUMNS()
 ```
+
+## See also
+
+[INFO.PERSPECTIVES](info-perspectives-function-dax.md)
+[INFO.PERSPECTIVEHIERARCHIES](info-perspectivehierarchies-function-dax.md)
+[INFO.PERSPECTIVEMEASURES](info-perspectivemeasures-function-dax.md)
+[INFO.PERSPECTIVETABLES](info-perspectivetables-function-dax.md)
+[INFO.TABLES](info-tables-function-dax.md)

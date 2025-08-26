@@ -19,7 +19,22 @@ INFO.EXPRESSIONS ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for expressions in the current semantic model.
+A table with the following columns:
+
+| Column name | Data type | Description |
+|--|--|--|
+| [ID] | Integer | Unique identifier for the expression |
+| [ModelID] | Integer | Identifier of the model containing the expression |
+| [Name] | String | Name of the expression |
+| [Description] | String | Description of the expression |
+| [Kind] | Integer | Type of expression (e.g., calculated table, shared expression) |
+| [Expression] | String | DAX expression text |
+| [ModifiedTime] | DateTime | When the expression was last modified |
+| [QueryGroupID] | Integer | Identifier of the query group if applicable |
+| [ParameterValuesColumnID] | Integer | Column identifier for parameter values if applicable |
+| [MAttributes] | String | Additional attributes in JSON format |
+| [LineageTag] | String | Lineage tag for tracking purposes |
+| [SourceLineageTag] | String | Source lineage tag for tracking purposes |
 
 ## Remarks
 
@@ -34,3 +49,11 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.EXPRESSIONS()
 ```
+
+## See also
+
+[INFO.MODEL](info-model-function-dax.md)
+[INFO.PROPERTIES](info-properties-function-dax.md)
+[INFO.CATALOGS](info-catalogs-function-dax.md)
+[INFO.TABLES](info-tables-function-dax.md)
+[INFO.COLUMNS](info-columns-function-dax.md)

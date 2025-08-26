@@ -34,3 +34,11 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.HIERARCHIES()
 ```
+
+## See also
+
+[INFO.ATTRIBUTEHIERARCHIES](info-attributehierarchies-function-dax.md)
+[INFO.HIERARCHYSTORAGES](info-hierarchystorages-function-dax.md)
+[INFO.ATTRIBUTEHIERARCHYSTORAGES](info-attributehierarchystorages-function-dax.md)
+[INFO.LEVELS](info-levels-function-dax.md)
+[INFO.TABLES](info-tables-function-dax.md)

@@ -19,7 +19,17 @@ INFO.FORMATSTRINGDEFINITIONS ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for format string definitions in the current semantic model.
+A table with the following columns:
+
+| Column name | Data type | Description |
+|--|--|--|
+| [ID] | Integer | Unique identifier for the format string definition |
+| [ObjectID] | Integer | Identifier of the object (measure or column) that uses this format string |
+| [ObjectType] | Integer | Type of object (measure, column, etc.) |
+| [Expression] | String | DAX expression that defines the format string |
+| [ModifiedTime] | DateTime | When the format string definition was last modified |
+| [State] | Integer | Current state of the format string definition |
+| [ErrorMessage] | String | Error message if the format string definition is in an error state |
 
 ## Remarks
 
@@ -34,3 +44,10 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.FORMATSTRINGDEFINITIONS()
 ```
+
+## See also
+
+[INFO.TABLES](info-tables-function-dax.md)
+[INFO.COLUMNS](info-columns-function-dax.md)
+[INFO.MEASURES](info-measures-function-dax.md)
+[INFO functions overview](info-functions-dax.md)

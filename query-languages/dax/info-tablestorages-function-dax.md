@@ -94,3 +94,10 @@ EVALUATE
 ```
 
 This DAX query returns a table with only the specified columns and joining to other INFO DAX functions and the table storages table.
+## See also
+
+[INFO.COLUMNSTORAGES](info-columnstorages-function-dax.md)
+[INFO.COLUMNPARTITIONSTORAGES](info-columnpartitionstorages-function-dax.md)
+[INFO.DICTIONARYSTORAGES](info-dictionarystorages-function-dax.md)
+[INFO.SEGMENTSTORAGES](info-segmentstorages-function-dax.md)
+[INFO.STORAGEFILES](info-storagefiles-function-dax.md)
