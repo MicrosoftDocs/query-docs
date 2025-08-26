@@ -21,6 +21,16 @@ INFO.ROLEMEMBERSHIPS ( [<Restriction name>, <Restriction value>], ... )
 
 A table whose columns match the schema rowset for role memberships in the current semantic model.
 
+|Column|Description|
+|---|---|
+|ID|Unique identifier for the role membership|
+|RoleID|Foreign key to the role containing this membership|
+|MemberName|Name of the member (user or group)|
+|MemberID|Unique identifier for the member|
+|IdentityProvider|Identity provider for the member authentication|
+|MemberType|Type of member (e.g., User, Group)|
+|ModifiedTime|Date and time when the role membership was last modified|
+
 ## Remarks
 
 - Typically used in DAX queries to inspect and document model metadata.

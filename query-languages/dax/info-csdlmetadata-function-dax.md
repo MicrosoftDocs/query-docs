@@ -21,6 +21,14 @@ INFO.CSDLMETADATA ( [<Restriction name>, <Restriction value>], ... )
 
 A table whose columns match the schema rowset for CSDL metadata in the current semantic model.
 
+|Column|Description|
+|---|---|
+|CATALOG_NAME|Name of the catalog containing the CSDL metadata|
+|SCHEMA_NAME|Name of the schema containing the CSDL metadata|
+|CSDL_METADATA|The complete CSDL (Conceptual Schema Definition Language) XML metadata|
+|DATE_MODIFIED|Date and time when the CSDL metadata was last modified|
+|SCHEMA_VERSION|Version of the CSDL schema being used|
+
 ## Remarks
 
 - Typically used in DAX queries to inspect and document model metadata.

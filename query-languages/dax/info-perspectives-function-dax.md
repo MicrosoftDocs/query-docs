@@ -21,6 +21,14 @@ INFO.PERSPECTIVES ( [<Restriction name>, <Restriction value>], ... )
 
 A table whose columns match the schema rowset for perspectives in the current semantic model.
 
+|Column|Description|
+|---|---|
+|ID|Unique identifier for the perspective|
+|ModelID|Foreign key to the model containing this perspective|
+|Name|Name of the perspective|
+|Description|Description of the perspective|
+|ModifiedTime|Date and time when the perspective was last modified|
+
 ## Remarks
 
 - Typically used in DAX queries to inspect and document model metadata.
@@ -33,6 +41,60 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 ```dax
 EVALUATE
 	INFO.PERSPECTIVES()
+```
+
+### Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+VAR _Perspectives = 
+    SELECTCOLUMNS(
+        INFO.PERSPECTIVES(),
+        "PerspectiveID", [ID],
+        "Perspective Name", [Name],
+        "Perspective Description", [Description],
+        "Modified", [ModifiedTime]
+    )
+
+VAR _PerspectiveTables = 
+    SELECTCOLUMNS(
+        INFO.PERSPECTIVETABLES(),
+        "PerspectiveID", [PerspectiveID],
+        "TableID", [TableID],
+        "IncludeAll", [IncludeAll]
+    )
+
+VAR _Tables = 
+    SELECTCOLUMNS(
+        INFO.TABLES(),
+        "TableID", [ID],
+        "Table Name", [Name]
+    )
+
+VAR _CombinedTable1 = 
+    NATURALLEFTOUTERJOIN(
+        _Perspectives,
+        _PerspectiveTables
+    )
+
+VAR _CombinedTable2 = 
+    NATURALLEFTOUTERJOIN(
+        _CombinedTable1,
+        _Tables
+    )
+
+RETURN
+    SELECTCOLUMNS(
+        _CombinedTable2,
+        "Perspective Name", [Perspective Name],
+        "Perspective Description", [Perspective Description],
+        "Table Name", [Table Name],
+        "Include All", [IncludeAll],
+        "Modified", [Modified]
+    )
+ORDER BY [Perspective Name], [Table Name]
 ```
 
 ## See also

@@ -21,6 +21,13 @@ INFO.PERSPECTIVEHIERARCHIES ( [<Restriction name>, <Restriction value>], ... )
 
 A table whose columns match the schema rowset for perspective hierarchies in the current semantic model.
 
+|Column|Description|
+|---|---|
+|ID|Unique identifier for the perspective hierarchy relationship|
+|PerspectiveTableID|Foreign key to the perspective table containing this hierarchy|
+|HierarchyID|Foreign key to the hierarchy included in the perspective|
+|ModifiedTime|Date and time when the perspective hierarchy was last modified|
+
 ## Remarks
 
 - Typically used in DAX queries to inspect and document model metadata.
@@ -33,6 +40,71 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 ```dax
 EVALUATE
 	INFO.PERSPECTIVEHIERARCHIES()
+```
+
+### Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+VAR _PerspectiveHierarchies = 
+    SELECTCOLUMNS(
+        INFO.PERSPECTIVEHIERARCHIES(),
+        "PerspectiveTableID", [PerspectiveTableID],
+        "HierarchyID", [HierarchyID],
+        "Modified", [ModifiedTime]
+    )
+
+VAR _PerspectiveTables = 
+    SELECTCOLUMNS(
+        INFO.PERSPECTIVETABLES(),
+        "PerspectiveTableID", [ID],
+        "PerspectiveID", [PerspectiveID],
+        "TableID", [TableID]
+    )
+
+VAR _Hierarchies = 
+    SELECTCOLUMNS(
+        INFO.HIERARCHIES(),
+        "HierarchyID", [ID],
+        "Hierarchy Name", [Name],
+        "Table ID", [TableID]
+    )
+
+VAR _Perspectives = 
+    SELECTCOLUMNS(
+        INFO.PERSPECTIVES(),
+        "PerspectiveID", [ID],
+        "Perspective Name", [Name]
+    )
+
+VAR _CombinedTable1 = 
+    NATURALLEFTOUTERJOIN(
+        _PerspectiveHierarchies,
+        _PerspectiveTables
+    )
+
+VAR _CombinedTable2 = 
+    NATURALLEFTOUTERJOIN(
+        _CombinedTable1,
+        _Hierarchies
+    )
+
+VAR _CombinedTable3 = 
+    NATURALLEFTOUTERJOIN(
+        _CombinedTable2,
+        _Perspectives
+    )
+
+RETURN
+    SELECTCOLUMNS(
+        _CombinedTable3,
+        "Perspective Name", [Perspective Name],
+        "Hierarchy Name", [Hierarchy Name],
+        "Modified", [Modified]
+    )
+ORDER BY [Perspective Name], [Hierarchy Name]
 ```
 
 ## See also

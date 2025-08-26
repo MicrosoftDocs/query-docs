@@ -21,6 +21,13 @@ INFO.SEGMENTSTORAGES ( [<Restriction name>, <Restriction value>], ... )
 
 A table whose columns match the schema rowset for segment storages in the current semantic model.
 
+|Column|Description|
+|---|---|
+|ID|Unique identifier for the segment storage|
+|ColumnPartitionStorageID|Foreign key to the column partition storage using this segment|
+|SegmentCount|Number of segments in the storage|
+|StorageFileID|Foreign key to the storage file containing the segment data|
+
 ## Remarks
 
 - Typically used in DAX queries to inspect and document model metadata.
@@ -33,6 +40,58 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 ```dax
 EVALUATE
 	INFO.SEGMENTSTORAGES()
+```
+
+### Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+VAR _SegmentStorages = 
+    SELECTCOLUMNS(
+        INFO.SEGMENTSTORAGES(),
+        "ColumnPartitionStorageID", [ColumnPartitionStorageID],
+        "Segment Count", [SegmentCount],
+        "StorageFileID", [StorageFileID]
+    )
+
+VAR _ColumnPartitionStorages = 
+    SELECTCOLUMNS(
+        INFO.COLUMNPARTITIONSTORAGES(),
+        "ColumnPartitionStorageID", [ID],
+        "ColumnStorageID", [ColumnStorageID],
+        "PartitionStorageID", [PartitionStorageID]
+    )
+
+VAR _StorageFiles = 
+    SELECTCOLUMNS(
+        INFO.STORAGEFILES(),
+        "StorageFileID", [ID],
+        "File Name", [FileName]
+    )
+
+VAR _CombinedTable1 = 
+    NATURALLEFTOUTERJOIN(
+        _SegmentStorages,
+        _ColumnPartitionStorages
+    )
+
+VAR _CombinedTable2 = 
+    NATURALLEFTOUTERJOIN(
+        _CombinedTable1,
+        _StorageFiles
+    )
+
+RETURN
+    SELECTCOLUMNS(
+        _CombinedTable2,
+        "Column Storage ID", [ColumnStorageID],
+        "Partition Storage ID", [PartitionStorageID],
+        "Segment Count", [Segment Count],
+        "File Name", [File Name]
+    )
+ORDER BY [Column Storage ID]
 ```
 
 ## See also

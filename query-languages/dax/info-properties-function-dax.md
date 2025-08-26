@@ -21,6 +21,15 @@ INFO.PROPERTIES ( [<Restriction name>, <Restriction value>], ... )
 
 A table whose columns match the schema rowset for properties in the current semantic model.
 
+|Column|Description|
+|---|---|
+|PropertyName|Name of the property|
+|PropertyDescription|Description explaining the purpose and usage of the property|
+|PropertyType|Data type of the property value (e.g., String, Integer, Boolean)|
+|PropertyAccessType|Access level of the property (e.g., Read, Write, ReadWrite)|
+|IsRequired|Boolean indicating whether the property is required|
+|Value|Current value of the property|
+
 ## Remarks
 
 - Typically used in DAX queries to inspect and document model metadata.

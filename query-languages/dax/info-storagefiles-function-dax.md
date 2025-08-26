@@ -21,6 +21,14 @@ INFO.STORAGEFILES ( [<Restriction name>, <Restriction value>], ... )
 
 A table whose columns match the schema rowset for storage files in the current semantic model.
 
+|Column|Description|
+|---|---|
+|ID|Unique identifier for the storage file|
+|OwnerID|Identifier of the object that owns this storage file|
+|OwnerType|Type of the object that owns this storage file|
+|StorageFolderID|Foreign key to the storage folder containing this file|
+|FileName|Name of the storage file|
+
 ## Remarks
 
 - Typically used in DAX queries to inspect and document model metadata.
@@ -33,6 +41,45 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 ```dax
 EVALUATE
 	INFO.STORAGEFILES()
+```
+
+### Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+VAR _StorageFiles = 
+    SELECTCOLUMNS(
+        INFO.STORAGEFILES(),
+        "OwnerID", [OwnerID],
+        "Owner Type", [OwnerType],
+        "StorageFolderID", [StorageFolderID],
+        "File Name", [FileName]
+    )
+
+VAR _StorageFolders = 
+    SELECTCOLUMNS(
+        INFO.STORAGEFOLDERS(),
+        "StorageFolderID", [ID],
+        "Folder Name", [Name]
+    )
+
+VAR _CombinedTable = 
+    NATURALLEFTOUTERJOIN(
+        _StorageFiles,
+        _StorageFolders
+    )
+
+RETURN
+    SELECTCOLUMNS(
+        _CombinedTable,
+        "Folder Name", [Folder Name],
+        "File Name", [File Name],
+        "Owner Type", [Owner Type],
+        "Owner ID", [OwnerID]
+    )
+ORDER BY [Folder Name], [File Name]
 ```
 
 ## See also

@@ -21,6 +21,14 @@ INFO.PERSPECTIVETABLES ( [<Restriction name>, <Restriction value>], ... )
 
 A table whose columns match the schema rowset for perspective tables in the current semantic model.
 
+|Column|Description|
+|---|---|
+|ID|Unique identifier for the perspective table relationship|
+|PerspectiveID|Foreign key to the perspective containing this table|
+|TableID|Foreign key to the table included in the perspective|
+|IncludeAll|Boolean indicating whether all objects from the table are included in the perspective|
+|ModifiedTime|Date and time when the perspective table was last modified|
+
 ## Remarks
 
 - Typically used in DAX queries to inspect and document model metadata.
@@ -33,6 +41,60 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 ```dax
 EVALUATE
 	INFO.PERSPECTIVETABLES()
+```
+
+### Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+VAR _PerspectiveTables = 
+    SELECTCOLUMNS(
+        INFO.PERSPECTIVETABLES(),
+        "PerspectiveID", [PerspectiveID],
+        "TableID", [TableID],
+        "Include All", [IncludeAll],
+        "Modified", [ModifiedTime]
+    )
+
+VAR _Perspectives = 
+    SELECTCOLUMNS(
+        INFO.PERSPECTIVES(),
+        "PerspectiveID", [ID],
+        "Perspective Name", [Name],
+        "Perspective Description", [Description]
+    )
+
+VAR _Tables = 
+    SELECTCOLUMNS(
+        INFO.TABLES(),
+        "TableID", [ID],
+        "Table Name", [Name],
+        "Table Description", [Description]
+    )
+
+VAR _CombinedTable1 = 
+    NATURALLEFTOUTERJOIN(
+        _PerspectiveTables,
+        _Perspectives
+    )
+
+VAR _CombinedTable2 = 
+    NATURALLEFTOUTERJOIN(
+        _CombinedTable1,
+        _Tables
+    )
+
+RETURN
+    SELECTCOLUMNS(
+        _CombinedTable2,
+        "Perspective Name", [Perspective Name],
+        "Table Name", [Table Name],
+        "Include All", [Include All],
+        "Modified", [Modified]
+    )
+ORDER BY [Perspective Name], [Table Name]
 ```
 
 ## See also

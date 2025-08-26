@@ -21,6 +21,13 @@ INFO.QUERYGROUPS ( [<Restriction name>, <Restriction value>], ... )
 
 A table whose columns match the schema rowset for query groups in the current semantic model.
 
+|Column|Description|
+|---|---|
+|ID|Unique identifier for the query group|
+|ModelID|Foreign key to the model containing this query group|
+|Folder|Folder path or location for organizing the query group|
+|Description|Description of the query group|
+
 ## Remarks
 
 - Typically used in DAX queries to inspect and document model metadata.

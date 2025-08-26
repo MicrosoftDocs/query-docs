@@ -21,6 +21,15 @@ INFO.ROLES ( [<Restriction name>, <Restriction value>], ... )
 
 A table whose columns match the schema rowset for roles in the current semantic model.
 
+|Column|Description|
+|---|---|
+|ID|Unique identifier for the role|
+|ModelID|Foreign key to the model containing this role|
+|Name|Name of the role|
+|Description|Description of the role|
+|ModelPermission|Permission level for the role (e.g., Read, ReadRefresh, Administrator)|
+|ModifiedTime|Date and time when the role was last modified|
+
 ## Remarks
 
 - Typically used in DAX queries to inspect and document model metadata.
@@ -33,6 +42,49 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 ```dax
 EVALUATE
 	INFO.ROLES()
+```
+
+### Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+VAR _Roles = 
+    SELECTCOLUMNS(
+        INFO.ROLES(),
+        "RoleID", [ID],
+        "Role Name", [Name],
+        "Role Description", [Description],
+        "Model Permission", [ModelPermission],
+        "Modified", [ModifiedTime]
+    )
+
+VAR _RoleMemberships = 
+    SELECTCOLUMNS(
+        INFO.ROLEMEMBERSHIPS(),
+        "RoleID", [RoleID],
+        "Member Name", [MemberName],
+        "Member Type", [MemberType]
+    )
+
+VAR _CombinedTable = 
+    NATURALLEFTOUTERJOIN(
+        _Roles,
+        _RoleMemberships
+    )
+
+RETURN
+    SELECTCOLUMNS(
+        _CombinedTable,
+        "Role Name", [Role Name],
+        "Role Description", [Role Description],
+        "Model Permission", [Model Permission],
+        "Member Name", [Member Name],
+        "Member Type", [Member Type],
+        "Modified", [Modified]
+    )
+ORDER BY [Role Name], [Member Name]
 ```
 
 ## See also
