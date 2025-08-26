@@ -61,7 +61,7 @@ EVALUATE
 		SELECTCOLUMNS(
 			INFO.CALCULATIONGROUPS(),
 			"CalculationGroupID", [ID],
-			"Calculation Group Name", [Name]
+			"Calculation Group Description", [Description]
 		)
 
 	VAR _CombinedTable =
@@ -74,9 +74,10 @@ EVALUATE
 		SELECTCOLUMNS(
 			_CombinedTable,
 			"Calculation Item Name", [Name],
-			"Calculation Group Name", [Calculation Group Name],
+			"Calculation Group Description", [Calculation Group Description],
 			"Expression", [Expression],
 			"Ordinal", [Ordinal]
 		)
-	ORDER BY [Calculation Group Name], [Ordinal]
+		
+	ORDER BY [Calculation Group Description], [Ordinal]
 ```

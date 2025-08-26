@@ -110,6 +110,6 @@ EVALUATE
 			"Is Hidden", [IsHidden],
 			"Is Key", [IsKey]
 		)
-	ORDER BY [Table Name], [ExplicitName]
+	ORDER BY [Table Name], [Column Name]
 ```
 

@@ -55,16 +55,14 @@ EVALUATE
 		SELECTCOLUMNS(
 			INFO.TABLES(),
 			"ObjectID", [ID],
-			"Object Name", [Name],
-			"Object Type Number", 1  -- Tables are typically object type 1
+			"Object Name", [Name]
 		)
 
 	VAR _Columns = 
 		SELECTCOLUMNS(
 			INFO.COLUMNS(),
 			"ObjectID", [ID],
-			"Object Name", [ExplicitName],
-			"Object Type Number", 2  -- Columns are typically object type 2
+			"Object Name", [ExplicitName]
 		)
 
 	VAR _AllObjects = 
