@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-List.ReplaceMatchingItems(<b>list</b> as list, <b>replacements</b> as list, optional <b>equationCriteria</b> as any) as list
+List.ReplaceMatchingItems(
+    <b>list</b> as list,
+    <b>replacements</b> as list,
+    optional <b>equationCriteria</b> as any
+) as list
 </pre>
   
 ## About

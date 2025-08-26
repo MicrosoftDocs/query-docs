@@ -8,7 +8,13 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.AddIndexColumn(<b>table</b> as table, <b>newColumnName</b> as text, optional <b>initialValue</b> as nullable number, optional <b>increment</b> as nullable number, optional <b>columnType</b> as nullable type) as table
+Table.AddIndexColumn(
+    <b>table</b> as table,
+    <b>newColumnName</b> as text,
+    optional <b>initialValue</b> as nullable number,
+    optional <b>increment</b> as nullable number,
+    optional <b>columnType</b> as nullable type
+) as table
 </pre>
   
 ## About

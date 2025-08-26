@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Text.AfterDelimiter(<b>text</b> as nullable text, <b>delimiter</b> as text, optional <b>index</b> as any) as any
+Text.AfterDelimiter(
+    <b>text</b> as nullable text,
+    <b>delimiter</b> as text,
+    optional <b>index</b> as any
+) as any
 </pre>
 
 ## About

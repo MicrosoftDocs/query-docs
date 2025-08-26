@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Type functions"
 title: "Type functions"
-ms.date: 10/24/2024
+ms.date: 7/16/2025
 ms.custom: "nonautomated-date"
 ---
 # Type functions
@@ -27,8 +27,10 @@ These functions create and manipulate type values.
 |[Type.RecordFields](type-recordfields.md)|Returns a record describing the fields of a record type with each field of the returned record type having a corresponding name and a value that is a record of the form `[ Type = type, Optional = logical ]`.|
 |[Type.ReplaceFacets](type-replacefacets.md) | Replaces the facets of a type.|
 |[Type.ReplaceTableKeys](type-replacetablekeys.md)|Replaces the keys in a table type.|
+|[Type.ReplaceTablePartitionKey](type-replacetablepartitionkey.md) | Returns a new table type with the partition key replaced by the specified partition key.|
 |[Type.TableColumn](type-tablecolumn.md) | Returns the type of a column in a table.|
 |[Type.TableKeys](type-tablekeys.md)|Returns keys from a table type.|
+|[Type.TablePartitionKey](type-tablepartitionkey.md) | Returns the partition key for the given table type if it has one.|
 |[Type.TableRow](type-tablerow.md)|Returns a row type from a table type.|
 |[Type.TableSchema](type-tableschema.md) | Returns a table containing a description of the columns (i.e. the schema) of the specified table type.|
 |[Type.Union](type-union.md) | Returns the union of a list of types.|

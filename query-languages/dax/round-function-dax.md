@@ -33,6 +33,12 @@ A decimal number.
 
 - If `num_digits` is less than 0, the number is rounded to the left of the decimal point.
 
+- Ties are broken by rounding half away from zero (also known as commercial rounding).
+  | Examples | Result |
+  | --- | --- |
+  | `= ROUND(1.15, 1)` | 1.2 |
+  | `= ROUND(-1.15, 1)` | -1.2 |
+
 - Related functions
   - To always round up (away from zero), use the ROUNDUP function.
   - To always round down (toward zero), use the ROUNDDOWN function.

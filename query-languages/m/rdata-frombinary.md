@@ -8,7 +8,7 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-RData.FromBinary(stream as binary) as any
+RData.FromBinary(<b>stream</b> as binary) as any
 </pre>
 
 ## About

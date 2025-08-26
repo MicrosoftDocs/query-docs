@@ -28,7 +28,7 @@ Table.FromRows(
         {2, "Jim", "987-6543"}
     },
     {"CustomerID", "Name", "Phone"}
-
+)
 ```
 
 **Output**

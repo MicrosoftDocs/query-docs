@@ -2,7 +2,7 @@
 description: "Learn more about: Expressions, values, and let expression"
 title: "Expressions, values, and let expression"
 ms.topic: conceptual
-ms.date: 7/9/2024
+ms.date: 8/11/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-background
 
@@ -20,13 +20,13 @@ in
     Source
 ```
 
-In the example above, `Text.Proper("hello world")` is evaluated to `"Hello World"`.
+In this example, `Text.Proper("hello world")` is evaluated to `"Hello World"`.
 
 The next sections describe value types in the language.
 
 ## Primitive value
 
-A *primitive* value is single-part value, such as a number, logical, text, or null. A null value can be used to indicate the absence of any data.
+A *primitive* value is single-part value, such as a `number`, `logical`, `text`, or `null`. A `null` value can be used to indicate the absence of any data.
 
 |Type|Example value|
 |--------|-----------------|
@@ -98,7 +98,7 @@ The following are some List examples.
 
 ### Record
 
-A *Record* is a set of fields. A *field* is a name/value pair where the name is a text value that is unique within the field's record. The syntax for record values allows the names to be written without quotes, a form also referred to as *identifiers*. An identifier can take the following two forms:
+A *Record* is a set of fields. A *field* is a name/value pair where the name is a text value that's unique within the field's record. The syntax for record values allows the names to be written without quotes, a form also referred to as *identifiers*. An identifier can take the following two forms:
 
 - identifier_name such as OrderID.
 
@@ -109,14 +109,16 @@ The following is a record containing fields named "OrderID", "CustomerID", "Item
 Here's an example record:
 
 ```powerquery-m
-let Source =
-        [
-              OrderID = 1,
-              CustomerID = 1,
-              Item = "Fishing rod",
-              Price = 100.00
-        ]
-in Source
+let
+    Source =
+    [
+          OrderID = 1,
+          CustomerID = 1,
+          Item = "Fishing rod",
+          Price = 100.00
+    ]
+in
+    Source
 ```
 
 To get the value of an Item, you use square brackets as `Source[Item]`:
@@ -128,8 +130,10 @@ let Source =
           CustomerID = 1,
           Item = "Fishing rod",
           Price = 100.00
-    ]
-in Source[Item] //equals "Fishing rod"
+    ],
+    GetItem = Source[Item] //equals "Fishing rod"
+in
+    GetItem
 ```
 
 ### Table
@@ -140,12 +144,13 @@ A *Table* is a set of values organized into named columns and rows. The column t
 
 ```powerquery-m
 let
-  Source = #table(
-    {"OrderID", "CustomerID", "Item", "Price"},
-      {
-          {1, 1, "Fishing rod", 100.00},
-          {2, 1, "1 lb. worms", 5.00}
-      })
+    Source = #table(
+        {"OrderID", "CustomerID", "Item", "Price"},
+        {
+            {1, 1, "Fishing rod", 100.00},
+            {2, 1, "1 lb. worms", 5.00}
+        }
+    )
 in
     Source
 ```
@@ -157,8 +162,8 @@ let
     Source = #table(
     type table [OrderID = number, CustomerID = number, Item = text, Price = number],
         {
-                {1, 1, "Fishing rod", 100.00},
-             {2, 1, "1 lb. worms", 5.00}
+            {1, 1, "Fishing rod", 100.00},
+            {2, 1, "1 lb. worms", 5.00}
         }
     )
 in
@@ -179,8 +184,8 @@ let
     Source = #table(
     type table [OrderID = number, CustomerID = number, Item = text, Price = number],
         {
-              {1, 1, "Fishing rod", 100.00},
-              {2, 1, "1 lb. worms", 5.00}
+            {1, 1, "Fishing rod", 100.00},
+            {2, 1, "1 lb. worms", 5.00}
          }
     )
 in
@@ -205,12 +210,12 @@ Structured data can contain any M value. Here are some examples:
 ```powerquery-m
 let
     Source =
-{
-   1,
-   "Bob",
-   DateTime.ToText(DateTime.LocalNow(), "yyyy-MM-dd"),
-   [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0]
-}
+    {
+        1,
+        "Bob",
+        DateTime.ToText(DateTime.LocalNow(), "yyyy-MM-dd"),
+        [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0]
+    }
 in
     Source
 ```
@@ -225,9 +230,10 @@ Evaluating this expression can be visualized as:
 let
     Source = [CustomerID = 1, Name = "Bob", Phone = "123-4567", Orders =
         {
-              [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0],
+            [OrderID = 1, CustomerID = 1, Item = "Fishing rod", Price = 100.0],
             [OrderID = 2, CustomerID = 1, Item = "1 lb. worms", Price = 5.0]
-        }]
+        }
+    ]
 in
     Source
 ```
@@ -250,4 +256,4 @@ else
     1 + 1
 ```
 
-The first expression (2 + 2) is selected if the logical expression (2 &gt; 1) is true, and the second expression (1 + 1) is selected if it is false. The selected expression (in this case 2 + 2) is evaluated and becomes the result of the **if** expression (4).
+The first expression (2 + 2) is selected if the logical expression (2 &gt; 1) is true, and the second expression (1 + 1) is selected if it's false. The selected expression (in this case 2 + 2) is evaluated and becomes the result of the **if** expression (4).

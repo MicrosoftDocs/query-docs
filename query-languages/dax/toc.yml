@@ -178,8 +178,12 @@ items:
               href: lastnonblank-function-dax.md
             - name: LASTNONBLANKVALUE
               href: lastnonblankvalue-function-dax.md
+            - name: LOOKUP
+              href: lookup-function-dax.md
             - name: LOOKUPVALUE
               href: lookupvalue-function-dax.md
+            - name: LOOKUPWITHTOTALS
+              href: lookupwithtotals-function-dax.md
             - name: MATCHBY
               href: matchby-function-dax.md
             - name: MOVINGAVERAGE

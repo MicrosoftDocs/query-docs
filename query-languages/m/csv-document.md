@@ -8,7 +8,13 @@ ms.subservice: m-source
 ## Syntax
 
 <pre> 
-Csv.Document(<b>source</b> as any, optional <b>columns</b> as any, optional <b>delimiter</b> as any, optional <b>extraValues</b> as nullable number, optional <b>encoding</b> as nullable number) as table
+Csv.Document(
+    <b>source</b> as any,
+    optional <b>columns</b> as any,
+    optional <b>delimiter</b> as any,
+    optional <b>extraValues</b> as nullable number,
+    optional <b>encoding</b> as nullable number
+) as table
 </pre>
 
 ## About
@@ -31,6 +37,8 @@ If a record is specified for `columns` (and `delimiter`, `extraValues`, and `enc
 * `QuoteStyle`: Specifies how quoted line breaks are handled.
   * [QuoteStyle.Csv](quotestyle-type.md) (default): Quoted line breaks are treated as part of the data, not as the end of the current row.
   * [QuoteStyle.None](quotestyle-type.md): All line breaks are treated as the end of the current row, even when they occur inside a quoted value.
+* `IncludeByteOrderMark`: A logical value indicating whether to include a Byte Order Mark (BOM) at the beginning of the CSV output. When set to `true`, the BOM is written (for example, UTF-8 BOM: `0xEF 0xBB 0xBF`); when set to `false`, no BOM is included. This option is applicable only in output scenarios. Default is `false`.
+* `ExtraValues`: Refer to [ExtraValues.Type](extravalues-type.md) for the supported values of `ExtraValues`.
 
 ## Example 1
 

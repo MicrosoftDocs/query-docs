@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Text.PositionOfAny(<b>text</b> as text, <b>characters</b> as list, optional <b>occurrence</b> as nullable number) as any
+Text.PositionOfAny(
+    <b>text</b> as text,
+    <b>characters</b> as list,
+    optional <b>occurrence</b> as nullable number
+) as any
 </pre>
   
 ## About

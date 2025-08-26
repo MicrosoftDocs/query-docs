@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Number.Mod(<b>number</b> as nullable number, <b>divisor</b> as nullable number, optional <b>precision</b> as nullable number) as nullable number
+Number.Mod(
+    <b>number</b> as nullable number,
+    <b>divisor</b> as nullable number,
+    optional <b>precision</b> as nullable number
+) as nullable number
 </pre>
   
 ## About

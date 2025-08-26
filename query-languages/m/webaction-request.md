@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-WebAction.Request(<b>method</b> as text, <b>url</b> as text, optional <b>options</b> as nullable record) as action
+WebAction.Request(
+    <b>method</b> as text,
+    <b>url</b> as text,
+    optional <b>options</b> as nullable record
+) as action
 </pre>
   
 ## About

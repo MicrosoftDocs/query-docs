@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Comparer.Equals(comparer as function, x as any, y as any) as logical
+Comparer.Equals(
+    <b>comparer</b> as function,
+    <b>x</b> as any,
+    <b>y</b> as any
+) as logical
 </pre>
 
 ## About

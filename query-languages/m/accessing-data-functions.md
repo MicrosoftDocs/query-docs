@@ -1,8 +1,10 @@
 ---
 description: "Learn more about: Accessing data functions"
 title: "Accessing data functions"
-ms.date: 1/17/2025
-ms.custom: "nonautomated-date"
+ms.date: 7/16/2025
+ms.custom:
+  - "nonautomated-date"
+  - sfi-ropc-nochange
 ---
 # Accessing data functions
 

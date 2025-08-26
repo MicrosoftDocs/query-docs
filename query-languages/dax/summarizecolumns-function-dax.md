@@ -355,6 +355,11 @@ In the above expression, there are two filters on the 'Geography' table: one wit
 
 Please note that this restriction is temporary. We are actively developing solutions to remove this limitation in future updates. If you encounter this error, we advise adjusting the filters within SummarizeColumns by adding or removing KeepFilters as necessary to ensure consistent overriding behavior on each table.
 
+### ValueFilterBehavior ###
+
+ValueFilterBehavior is a model property that controls how value filter is applied to filter context. Please check out details in [Work with value filter behavior](/power-bi/transform-model/value-filter-behavior).
+
+
 ## Related content
 
 [SUMMARIZE](summarize-function-dax.md)

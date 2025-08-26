@@ -8,7 +8,13 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.Pivot(<b>table</b> as table, <b>pivotValues</b> as list, <b>attributeColumn</b> as text, <b>valueColumn</b> as text, optional <b>aggregationFunction</b> as nullable function) as table
+Table.Pivot(
+    <b>table</b> as table,
+    <b>pivotValues</b> as list,
+    <b>attributeColumn</b> as text,
+    <b>valueColumn</b> as text,
+    optional <b>aggregationFunction</b> as nullable function
+) as table
 </pre>
 
 ## About

@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Table.MaxN(<b>table</b> as table, <b>comparisonCriteria</b> as any, <b>countOrCondition</b> as any) as table
+Table.MaxN(
+    <b>table</b> as table,
+    <b>comparisonCriteria</b> as any,
+    <b>countOrCondition</b> as any
+) as table
 </pre>
   
 ## About

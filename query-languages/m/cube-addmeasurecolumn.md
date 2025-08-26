@@ -8,7 +8,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Cube.AddMeasureColumn(<b>cube</b> as table, <b>column</b> as text, <b>measureSelector</b> as any) as table
+Cube.AddMeasureColumn(
+    <b>cube</b> as table,
+    <b>column</b> as text,
+    <b>measureSelector</b> as any
+) as table
 </pre>
 
 ## About
