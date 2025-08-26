@@ -34,33 +34,3 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.LINGUISTICMETADATA()
 ```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.LINGUISTICMETADATA(),
-        "Name", [Name],
-        "Description", [Description],
-        "Content", [Content]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Linguistic Metadata =
-SELECTCOLUMNS(
-    INFO.LINGUISTICMETADATA(),
-    "Name", [Name],
-    "Description", [Description]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Linguistic Metadata Entries =
-COUNTROWS(INFO.LINGUISTICMETADATA())
-```

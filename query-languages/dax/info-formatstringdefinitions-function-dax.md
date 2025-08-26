@@ -34,33 +34,3 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.FORMATSTRINGDEFINITIONS()
 ```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.FORMATSTRINGDEFINITIONS(),
-        "Name", [Name],
-        "Expression", [Expression],
-        "State", [State]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Format String Definitions =
-SELECTCOLUMNS(
-    INFO.FORMATSTRINGDEFINITIONS(),
-    "Name", [Name],
-    "Expression", [Expression]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Format String Definitions =
-COUNTROWS(INFO.FORMATSTRINGDEFINITIONS())
-```

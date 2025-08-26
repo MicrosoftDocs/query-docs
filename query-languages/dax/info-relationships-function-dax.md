@@ -34,33 +34,3 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.RELATIONSHIPS()
 ```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.RELATIONSHIPS(),
-        "Name", [Name],
-        "IsActive", [IsActive],
-        "CrossFilteringBehavior", [CrossFilteringBehavior]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Relationships =
-SELECTCOLUMNS(
-    INFO.RELATIONSHIPS(),
-    "Name", [Name],
-    "IsActive", [IsActive]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Relationships =
-COUNTROWS(INFO.RELATIONSHIPS())
-```

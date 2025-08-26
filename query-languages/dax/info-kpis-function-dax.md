@@ -34,33 +34,3 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.KPIS()
 ```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.KPIS(),
-        "Name", [Name],
-        "Description", [Description],
-        "TargetExpression", [TargetExpression]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-KPIs =
-SELECTCOLUMNS(
-    INFO.KPIS(),
-    "Name", [Name],
-    "Description", [Description]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of KPIs =
-COUNTROWS(INFO.KPIS())
-```

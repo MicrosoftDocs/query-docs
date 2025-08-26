@@ -76,5 +76,5 @@ EVALUATE
 			"Translated Value", [Value],
 			"Modified Time", [ModifiedTime]
 		)
-	ORDER BY [Culture Name], [ObjectType], [Property]
+	ORDER BY [Culture Name], [Object Type], [Property]
 ```

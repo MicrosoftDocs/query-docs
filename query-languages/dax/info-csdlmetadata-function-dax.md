@@ -34,32 +34,3 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.CSDLMETADATA()
 ```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.CSDLMETADATA(),
-        "Metadata", [METADATA],
-        "Version", [VERSION]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-CSDL Metadata =
-SELECTCOLUMNS(
-    INFO.CSDLMETADATA(),
-    "Metadata", [METADATA],
-    "Version", [VERSION]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of CSDL Metadata Entries =
-COUNTROWS(INFO.CSDLMETADATA())
-```

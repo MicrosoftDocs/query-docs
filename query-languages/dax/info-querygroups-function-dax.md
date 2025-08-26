@@ -34,33 +34,3 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.QUERYGROUPS()
 ```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.QUERYGROUPS(),
-        "Name", [Name],
-        "Description", [Description],
-        "FolderName", [FolderName]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Query Groups =
-SELECTCOLUMNS(
-    INFO.QUERYGROUPS(),
-    "Name", [Name],
-    "Description", [Description]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Query Groups =
-COUNTROWS(INFO.QUERYGROUPS())
-```

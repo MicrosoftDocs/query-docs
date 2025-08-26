@@ -34,33 +34,3 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.ROLEMEMBERSHIPS()
 ```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.ROLEMEMBERSHIPS(),
-        "RoleID", [RoleID],
-        "MemberName", [MemberName],
-        "MemberType", [MemberType]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Role Memberships =
-SELECTCOLUMNS(
-    INFO.ROLEMEMBERSHIPS(),
-    "RoleID", [RoleID],
-    "MemberName", [MemberName]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Role Memberships =
-COUNTROWS(INFO.ROLEMEMBERSHIPS())
-```

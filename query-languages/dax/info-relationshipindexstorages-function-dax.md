@@ -34,33 +34,3 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.RELATIONSHIPINDEXSTORAGES()
 ```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.RELATIONSHIPINDEXSTORAGES(),
-        "RelationshipID", [RelationshipID],
-        "State", [State],
-        "LastUpdateTime", [LastUpdateTime]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Relationship Index Storages =
-SELECTCOLUMNS(
-    INFO.RELATIONSHIPINDEXSTORAGES(),
-    "RelationshipID", [RelationshipID],
-    "State", [State]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Relationship Index Storages =
-COUNTROWS(INFO.RELATIONSHIPINDEXSTORAGES())
-```

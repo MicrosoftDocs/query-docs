@@ -34,33 +34,4 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.PERSPECTIVEHIERARCHIES()
 ```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.PERSPECTIVEHIERARCHIES(),
-        "PerspectiveID", [PerspectiveID],
-        "HierarchyID", [HierarchyID],
-        "IncludeInPerspective", [IncludeInPerspective]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Perspective Hierarchies =
-SELECTCOLUMNS(
-    INFO.PERSPECTIVEHIERARCHIES(),
-    "PerspectiveID", [PerspectiveID],
-    "HierarchyID", [HierarchyID]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Perspective Hierarchies =
-COUNTROWS(INFO.PERSPECTIVEHIERARCHIES())
 ```

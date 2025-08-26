@@ -34,33 +34,3 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.PERSPECTIVECOLUMNS()
 ```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.PERSPECTIVECOLUMNS(),
-        "PerspectiveID", [PerspectiveID],
-        "ColumnID", [ColumnID],
-        "IncludeInPerspective", [IncludeInPerspective]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Perspective Columns =
-SELECTCOLUMNS(
-    INFO.PERSPECTIVECOLUMNS(),
-    "PerspectiveID", [PerspectiveID],
-    "ColumnID", [ColumnID]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Perspective Columns =
-COUNTROWS(INFO.PERSPECTIVECOLUMNS())
-```

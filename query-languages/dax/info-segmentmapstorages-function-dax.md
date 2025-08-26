@@ -34,33 +34,3 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.SEGMENTMAPSTORAGES()
 ```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.SEGMENTMAPSTORAGES(),
-        "SegmentMapID", [SegmentMapID],
-        "State", [State],
-        "LastUpdateTime", [LastUpdateTime]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Segment Map Storages =
-SELECTCOLUMNS(
-    INFO.SEGMENTMAPSTORAGES(),
-    "SegmentMapID", [SegmentMapID],
-    "State", [State]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Segment Map Storages =
-COUNTROWS(INFO.SEGMENTMAPSTORAGES())
-```

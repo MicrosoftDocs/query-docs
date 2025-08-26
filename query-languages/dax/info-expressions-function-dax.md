@@ -34,33 +34,3 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.EXPRESSIONS()
 ```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.EXPRESSIONS(),
-        "Name", [Name],
-        "Expression", [Expression],
-        "Kind", [Kind]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Expressions =
-SELECTCOLUMNS(
-    INFO.EXPRESSIONS(),
-    "Name", [Name],
-    "Expression", [Expression]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Expressions =
-COUNTROWS(INFO.EXPRESSIONS())
-```

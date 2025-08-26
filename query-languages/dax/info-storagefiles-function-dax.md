@@ -34,33 +34,3 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.STORAGEFILES()
 ```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.STORAGEFILES(),
-        "FileID", [FileID],
-        "State", [State],
-        "FileSize", [FileSize]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Storage Files =
-SELECTCOLUMNS(
-    INFO.STORAGEFILES(),
-    "FileID", [FileID],
-    "State", [State]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Storage Files =
-COUNTROWS(INFO.STORAGEFILES())
-```

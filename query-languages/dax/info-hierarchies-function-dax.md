@@ -34,33 +34,3 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.HIERARCHIES()
 ```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.HIERARCHIES(),
-        "Name", [Name],
-        "Description", [Description],
-        "IsHidden", [IsHidden]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Hierarchies =
-SELECTCOLUMNS(
-    INFO.HIERARCHIES(),
-    "Name", [Name],
-    "Description", [Description]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Hierarchies =
-COUNTROWS(INFO.HIERARCHIES())
-```

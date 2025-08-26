@@ -34,33 +34,3 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.EXTENDEDPROPERTIES()
 ```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.EXTENDEDPROPERTIES(),
-        "Name", [Name],
-        "Value", [Value],
-        "ObjectID", [ObjectID]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Extended Properties =
-SELECTCOLUMNS(
-    INFO.EXTENDEDPROPERTIES(),
-    "Name", [Name],
-    "Value", [Value]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Extended Properties =
-COUNTROWS(INFO.EXTENDEDPROPERTIES())
-```

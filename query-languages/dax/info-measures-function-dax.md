@@ -34,33 +34,3 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.MEASURES()
 ```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.MEASURES(),
-        "Name", [Name],
-        "Expression", [Expression],
-        "State", [State]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Measures in this semantic model =
-SELECTCOLUMNS(
-    INFO.MEASURES(),
-    "Name", [Name],
-    "Expression", [Expression]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of measures =
-COUNTROWS(INFO.MEASURES())
-```

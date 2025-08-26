@@ -34,33 +34,3 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.REFRESHPOLICIES()
 ```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.REFRESHPOLICIES(),
-        "Name", [Name],
-        "Mode", [Mode],
-        "IncrementalGranularity", [IncrementalGranularity]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Refresh Policies =
-SELECTCOLUMNS(
-    INFO.REFRESHPOLICIES(),
-    "Name", [Name],
-    "Mode", [Mode]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Refresh Policies =
-COUNTROWS(INFO.REFRESHPOLICIES())
-```

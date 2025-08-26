@@ -34,32 +34,3 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.TABLES()
 ```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.TABLES(),
-        "Name", [Name],
-        "IsHidden", [IsHidden]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Tables in this semantic model =
-SELECTCOLUMNS(
-    INFO.TABLES(),
-    "Name", [Name],
-    "IsHidden", [IsHidden]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of tables =
-COUNTROWS(INFO.TABLES())
-```

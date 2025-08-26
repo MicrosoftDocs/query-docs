@@ -5,7 +5,7 @@ author: DataZoeMS
 ---
 # INFO.VIEW.MEASURES
 
-[!INCLUDE[applies-to-query-only](includes/applies-to-query-only.md)]
+[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
 Returns a table with information about each measure in the semantic model, such as name, description, and DAX formula. This information helps you understand the model and to self-document the model when used in calculated tables. 
 
@@ -14,8 +14,6 @@ Returns a table with information about each measure in the semantic model, such 
 ```dax
 INFO.VIEW.MEASURES()
 ```
-
-[!INCLUDE[parameters-for-info-dax-functions](includes/parameters-for-info-dax-functions.md)]
 
 ## Return value
 

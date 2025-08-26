@@ -34,33 +34,3 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.LEVELS()
 ```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.LEVELS(),
-        "Name", [Name],
-        "Description", [Description],
-        "Ordinal", [Ordinal]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Levels =
-SELECTCOLUMNS(
-    INFO.LEVELS(),
-    "Name", [Name],
-    "Ordinal", [Ordinal]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Levels =
-COUNTROWS(INFO.LEVELS())
-```

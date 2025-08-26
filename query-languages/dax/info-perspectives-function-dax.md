@@ -34,33 +34,3 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.PERSPECTIVES()
 ```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.PERSPECTIVES(),
-        "Name", [Name],
-        "Description", [Description],
-        "DefaultMeasure", [DefaultMeasure]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Perspectives =
-SELECTCOLUMNS(
-    INFO.PERSPECTIVES(),
-    "Name", [Name],
-    "Description", [Description]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Perspectives =
-COUNTROWS(INFO.PERSPECTIVES())
-```

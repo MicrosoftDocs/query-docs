@@ -34,33 +34,3 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.RELATEDCOLUMNDETAILS()
 ```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.RELATEDCOLUMNDETAILS(),
-        "Name", [Name],
-        "ExplicitName", [ExplicitName],
-        "RelationshipID", [RelationshipID]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Related Column Details =
-SELECTCOLUMNS(
-    INFO.RELATEDCOLUMNDETAILS(),
-    "Name", [Name],
-    "ExplicitName", [ExplicitName]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Related Column Details =
-COUNTROWS(INFO.RELATEDCOLUMNDETAILS())
-```

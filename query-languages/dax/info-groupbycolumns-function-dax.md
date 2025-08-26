@@ -34,33 +34,3 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.GROUPBYCOLUMNS()
 ```
-
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.GROUPBYCOLUMNS(),
-        "Name", [Name],
-        "ExplicitName", [ExplicitName],
-        "ColumnID", [ColumnID]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Group By Columns =
-SELECTCOLUMNS(
-    INFO.GROUPBYCOLUMNS(),
-    "Name", [Name],
-    "ExplicitName", [ExplicitName]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Group By Columns =
-COUNTROWS(INFO.GROUPBYCOLUMNS())
-```
