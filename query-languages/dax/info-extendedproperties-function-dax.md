@@ -19,7 +19,17 @@ INFO.EXTENDEDPROPERTIES ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for extended properties in the current semantic model.
+A table with the following columns:
+
+| Column name | Data type | Description |
+|--|--|--|
+| [ID] | Integer | Unique identifier for the extended property |
+| [ObjectID] | Integer | Identifier of the object that has this extended property |
+| [ObjectType] | Integer | Type of object (table, column, measure, etc.) |
+| [Name] | String | Name of the extended property |
+| [Type] | Integer | Data type of the property value |
+| [Value] | String | Value of the extended property |
+| [ModifiedTime] | DateTime | When the extended property was last modified |
 
 ## Remarks
 
@@ -35,35 +45,6 @@ EVALUATE
 	INFO.EXTENDEDPROPERTIES()
 ```
 
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.EXTENDEDPROPERTIES(),
-        "Name", [Name],
-        "Value", [Value],
-        "ObjectID", [ObjectID]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Extended Properties =
-SELECTCOLUMNS(
-    INFO.EXTENDEDPROPERTIES(),
-    "Name", [Name],
-    "Value", [Value]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Extended Properties =
-COUNTROWS(INFO.EXTENDEDPROPERTIES())
-```
 ## See also
 
 [INFO.TABLES](info-tables-function-dax.md)

@@ -19,7 +19,22 @@ INFO.EXPRESSIONS ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for expressions in the current semantic model.
+A table with the following columns:
+
+| Column name | Data type | Description |
+|--|--|--|
+| [ID] | Integer | Unique identifier for the expression |
+| [ModelID] | Integer | Identifier of the model containing the expression |
+| [Name] | String | Name of the expression |
+| [Description] | String | Description of the expression |
+| [Kind] | Integer | Type of expression (e.g., calculated table, shared expression) |
+| [Expression] | String | DAX expression text |
+| [ModifiedTime] | DateTime | When the expression was last modified |
+| [QueryGroupID] | Integer | Identifier of the query group if applicable |
+| [ParameterValuesColumnID] | Integer | Column identifier for parameter values if applicable |
+| [MAttributes] | String | Additional attributes in JSON format |
+| [LineageTag] | String | Lineage tag for tracking purposes |
+| [SourceLineageTag] | String | Source lineage tag for tracking purposes |
 
 ## Remarks
 
@@ -35,35 +50,6 @@ EVALUATE
 	INFO.EXPRESSIONS()
 ```
 
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.EXPRESSIONS(),
-        "Name", [Name],
-        "Expression", [Expression],
-        "Kind", [Kind]
-    )
-```
-
-## Example 3 - Calculated table
-
-```dax
-Expressions =
-SELECTCOLUMNS(
-    INFO.EXPRESSIONS(),
-    "Name", [Name],
-    "Expression", [Expression]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Expressions =
-COUNTROWS(INFO.EXPRESSIONS())
-```
 ## See also
 
 [INFO.MODEL](info-model-function-dax.md)
