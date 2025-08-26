@@ -47,23 +47,6 @@ EVALUATE
     )
 ```
 
-## Example 3 - Calculated table
-
-```dax
-Storage Files =
-SELECTCOLUMNS(
-    INFO.STORAGEFILES(),
-    "FileID", [FileID],
-    "State", [State]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Storage Files =
-COUNTROWS(INFO.STORAGEFILES())
-```
 ## See also
 
 [INFO.COLUMNSTORAGES](info-columnstorages-function-dax.md)

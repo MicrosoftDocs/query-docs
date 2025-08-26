@@ -47,23 +47,6 @@ EVALUATE
     )
 ```
 
-## Example 3 - Calculated table
-
-```dax
-Perspective Measures =
-SELECTCOLUMNS(
-    INFO.PERSPECTIVEMEASURES(),
-    "PerspectiveID", [PerspectiveID],
-    "MeasureID", [MeasureID]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Perspective Measures =
-COUNTROWS(INFO.PERSPECTIVEMEASURES())
-```
 ## See also
 
 [INFO.PERSPECTIVES](info-perspectives-function-dax.md)

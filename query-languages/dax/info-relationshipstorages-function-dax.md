@@ -47,23 +47,6 @@ EVALUATE
     )
 ```
 
-## Example 3 - Calculated table
-
-```dax
-Relationship Storages =
-SELECTCOLUMNS(
-    INFO.RELATIONSHIPSTORAGES(),
-    "RelationshipID", [RelationshipID],
-    "State", [State]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Relationship Storages =
-COUNTROWS(INFO.RELATIONSHIPSTORAGES())
-```
 ## See also
 
 [INFO.TABLES](info-tables-function-dax.md)

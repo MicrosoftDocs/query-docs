@@ -47,23 +47,6 @@ EVALUATE
     )
 ```
 
-## Example 3 - Calculated table
-
-```dax
-Relationships =
-SELECTCOLUMNS(
-    INFO.RELATIONSHIPS(),
-    "Name", [Name],
-    "IsActive", [IsActive]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Relationships =
-COUNTROWS(INFO.RELATIONSHIPS())
-```
 ## See also
 
 [INFO.TABLES](info-tables-function-dax.md)

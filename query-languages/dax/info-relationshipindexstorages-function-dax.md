@@ -47,23 +47,6 @@ EVALUATE
     )
 ```
 
-## Example 3 - Calculated table
-
-```dax
-Relationship Index Storages =
-SELECTCOLUMNS(
-    INFO.RELATIONSHIPINDEXSTORAGES(),
-    "RelationshipID", [RelationshipID],
-    "State", [State]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Relationship Index Storages =
-COUNTROWS(INFO.RELATIONSHIPINDEXSTORAGES())
-```
 ## See also
 
 [INFO.TABLES](info-tables-function-dax.md)

@@ -46,23 +46,6 @@ EVALUATE
     )
 ```
 
-## Example 3 - Calculated table
-
-```dax
-CSDL Metadata =
-SELECTCOLUMNS(
-    INFO.CSDLMETADATA(),
-    "Metadata", [METADATA],
-    "Version", [VERSION]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of CSDL Metadata Entries =
-COUNTROWS(INFO.CSDLMETADATA())
-```
 ## See also
 
 [INFO.TABLES](info-tables-function-dax.md)

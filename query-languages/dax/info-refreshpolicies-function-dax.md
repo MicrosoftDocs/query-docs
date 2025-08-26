@@ -47,23 +47,6 @@ EVALUATE
     )
 ```
 
-## Example 3 - Calculated table
-
-```dax
-Refresh Policies =
-SELECTCOLUMNS(
-    INFO.REFRESHPOLICIES(),
-    "Name", [Name],
-    "Mode", [Mode]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Refresh Policies =
-COUNTROWS(INFO.REFRESHPOLICIES())
-```
 ## See also
 
 [INFO.TABLES](info-tables-function-dax.md)

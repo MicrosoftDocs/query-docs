@@ -47,23 +47,6 @@ EVALUATE
     )
 ```
 
-## Example 3 - Calculated table
-
-```dax
-Perspective Hierarchies =
-SELECTCOLUMNS(
-    INFO.PERSPECTIVEHIERARCHIES(),
-    "PerspectiveID", [PerspectiveID],
-    "HierarchyID", [HierarchyID]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Perspective Hierarchies =
-COUNTROWS(INFO.PERSPECTIVEHIERARCHIES())
-```
 ## See also
 
 [INFO.PERSPECTIVES](info-perspectives-function-dax.md)

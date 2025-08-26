@@ -19,7 +19,23 @@ INFO.KPIS ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for KPIs in the current semantic model.
+A table with the following columns:
+
+| Column | Description |
+|--------|-------------|
+| [ID] | Unique identifier for the KPI |
+| [MeasureID] | Identifier of the measure associated with the KPI |
+| [Description] | Description of the KPI |
+| [TargetDescription] | Description of the KPI target |
+| [TargetExpression] | DAX expression defining the KPI target value |
+| [TargetFormatString] | Format string for displaying the target value |
+| [StatusGraphic] | Graphic used to display the KPI status |
+| [StatusDescription] | Description of the KPI status |
+| [StatusExpression] | DAX expression defining the KPI status |
+| [TrendGraphic] | Graphic used to display the KPI trend |
+| [TrendDescription] | Description of the KPI trend |
+| [TrendExpression] | DAX expression defining the KPI trend |
+| [ModifiedTime] | Timestamp of when the KPI was last modified |
 
 ## Remarks
 
@@ -35,35 +51,40 @@ EVALUATE
 	INFO.KPIS()
 ```
 
-## Example 2 - DAX query with SELECTCOLUMNS
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
 
 ```dax
 EVALUATE
-    SELECTCOLUMNS(
-        INFO.KPIS(),
-        "Name", [Name],
-        "Description", [Description],
-        "TargetExpression", [TargetExpression]
-    )
+	VAR _KPIs =
+		SELECTCOLUMNS(
+			INFO.KPIS(),
+			"KPIID", [ID],
+			"MeasureID", [MeasureID],
+			"KPI Description", [Description]
+		)
+	VAR _Measures = 
+		SELECTCOLUMNS(
+			INFO.MEASURES(),
+			"MeasureID", [ID],
+			"Measure Name", [Name]
+		)
+	VAR _CombinedTable =
+		NATURALLEFTOUTERJOIN(
+			_KPIs,
+			_Measures
+		)
+	RETURN
+		SELECTCOLUMNS(
+			_CombinedTable,
+			"Measure Name", [Measure Name],
+			"KPI Description", [KPI Description],
+			"Target Expression", [TargetExpression]
+		)
+	ORDER BY [Measure Name]
 ```
 
-## Example 3 - Calculated table
-
-```dax
-KPIs =
-SELECTCOLUMNS(
-    INFO.KPIS(),
-    "Name", [Name],
-    "Description", [Description]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of KPIs =
-COUNTROWS(INFO.KPIS())
-```
 ## See also
 
 [INFO.CALCULATIONGROUPS](info-calculationgroups-function-dax.md)

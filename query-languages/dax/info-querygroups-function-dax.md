@@ -47,23 +47,6 @@ EVALUATE
     )
 ```
 
-## Example 3 - Calculated table
-
-```dax
-Query Groups =
-SELECTCOLUMNS(
-    INFO.QUERYGROUPS(),
-    "Name", [Name],
-    "Description", [Description]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Query Groups =
-COUNTROWS(INFO.QUERYGROUPS())
-```
 ## See also
 
 [INFO.TABLES](info-tables-function-dax.md)

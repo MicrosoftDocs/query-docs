@@ -47,23 +47,6 @@ EVALUATE
     )
 ```
 
-## Example 3 - Calculated table
-
-```dax
-Roles =
-SELECTCOLUMNS(
-    INFO.ROLES(),
-    "Name", [Name],
-    "Description", [Description]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Roles =
-COUNTROWS(INFO.ROLES())
-```
 ## See also
 
 [INFO.ROLEMEMBERSHIPS](info-rolememberships-function-dax.md)

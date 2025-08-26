@@ -19,7 +19,17 @@ INFO.HIERARCHYSTORAGES ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for hierarchy storages in the current semantic model.
+A table with the following columns:
+
+| Column | Description |
+|--------|-------------|
+| [ID] | Unique identifier for the hierarchy storage |
+| [HierarchyID] | Identifier linking to the hierarchy |
+| [Name] | Name of the hierarchy storage |
+| [LevelDefinition] | Definition of levels within the hierarchy |
+| [MaterializationType] | Type of materialization used for the hierarchy storage |
+| [StructureType] | Type of structure used for the hierarchy |
+| [SystemTableID] | Identifier of the system table associated with the hierarchy |
 
 ## Remarks
 
@@ -35,35 +45,40 @@ EVALUATE
 	INFO.HIERARCHYSTORAGES()
 ```
 
-## Example 2 - DAX query with SELECTCOLUMNS
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
 
 ```dax
 EVALUATE
-    SELECTCOLUMNS(
-        INFO.HIERARCHYSTORAGES(),
-        "HierarchyID", [HierarchyID],
-        "State", [State],
-        "LastUpdateTime", [LastUpdateTime]
-    )
+	VAR _HierarchyStorages =
+		SELECTCOLUMNS(
+			INFO.HIERARCHYSTORAGES(),
+			"HierarchyStorageID", [ID],
+			"HierarchyID", [HierarchyID],
+			"Storage Name", [Name]
+		)
+	VAR _Hierarchies = 
+		SELECTCOLUMNS(
+			INFO.HIERARCHIES(),
+			"HierarchyID", [ID],
+			"Hierarchy Name", [Name]
+		)
+	VAR _CombinedTable =
+		NATURALLEFTOUTERJOIN(
+			_HierarchyStorages,
+			_Hierarchies
+		)
+	RETURN
+		SELECTCOLUMNS(
+			_CombinedTable,
+			"Hierarchy Name", [Hierarchy Name],
+			"Storage Name", [Storage Name],
+			"Materialization Type", [MaterializationType]
+		)
+	ORDER BY [Hierarchy Name]
 ```
 
-## Example 3 - Calculated table
-
-```dax
-Hierarchy Storages =
-SELECTCOLUMNS(
-    INFO.HIERARCHYSTORAGES(),
-    "HierarchyID", [HierarchyID],
-    "State", [State]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Hierarchy Storages =
-COUNTROWS(INFO.HIERARCHYSTORAGES())
-```
 ## See also
 
 [INFO.HIERARCHIES](info-hierarchies-function-dax.md)

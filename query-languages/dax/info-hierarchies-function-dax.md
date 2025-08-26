@@ -19,7 +19,24 @@ INFO.HIERARCHIES ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for hierarchies in the current semantic model.
+A table with the following columns:
+
+| Column | Description |
+|--------|-------------|
+| [ID] | Unique identifier for the hierarchy |
+| [TableID] | Identifier of the table containing the hierarchy |
+| [Name] | Name of the hierarchy |
+| [Description] | Description of the hierarchy |
+| [IsHidden] | Boolean indicating if the hierarchy is hidden from client tools |
+| [State] | Current state of the hierarchy (e.g., Ready, Processing) |
+| [HierarchyStorageID] | Identifier linking to the hierarchy storage information |
+| [ModifiedTime] | Timestamp of when the hierarchy was last modified |
+| [StructureModifiedTime] | Timestamp of when the hierarchy structure was last modified |
+| [RefreshedTime] | Timestamp of when the hierarchy was last refreshed |
+| [DisplayFolder] | Display folder for organizing hierarchies in client tools |
+| [HideMembers] | Setting for hiding hierarchy members |
+| [LineageTag] | Lineage tag for tracking data lineage |
+| [SourceLineageTag] | Source lineage tag from the original data source |
 
 ## Remarks
 
@@ -35,35 +52,40 @@ EVALUATE
 	INFO.HIERARCHIES()
 ```
 
-## Example 2 - DAX query with SELECTCOLUMNS
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
 
 ```dax
 EVALUATE
-    SELECTCOLUMNS(
-        INFO.HIERARCHIES(),
-        "Name", [Name],
-        "Description", [Description],
-        "IsHidden", [IsHidden]
-    )
+	VAR _Hierarchies =
+		SELECTCOLUMNS(
+			INFO.HIERARCHIES(),
+			"HierarchyID", [ID],
+			"Hierarchy Name", [Name],
+			"Table ID", [TableID]
+		)
+	VAR _Tables = 
+		SELECTCOLUMNS(
+			INFO.TABLES(),
+			"TableID", [ID],
+			"Table Name", [Name]
+		)
+	VAR _CombinedTable =
+		NATURALLEFTOUTERJOIN(
+			_Hierarchies,
+			_Tables
+		)
+	RETURN
+		SELECTCOLUMNS(
+			_CombinedTable,
+			"Hierarchy Name", [Hierarchy Name],
+			"Table Name", [Table Name],
+			"Is Hidden", [IsHidden]
+		)
+	ORDER BY [Hierarchy Name]
 ```
 
-## Example 3 - Calculated table
-
-```dax
-Hierarchies =
-SELECTCOLUMNS(
-    INFO.HIERARCHIES(),
-    "Name", [Name],
-    "Description", [Description]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Hierarchies =
-COUNTROWS(INFO.HIERARCHIES())
-```
 ## See also
 
 [INFO.ATTRIBUTEHIERARCHIES](info-attributehierarchies-function-dax.md)

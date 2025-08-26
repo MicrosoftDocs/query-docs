@@ -19,7 +19,19 @@ INFO.LEVELS ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for levels in the current semantic model.
+A table with the following columns:
+
+| Column | Description |
+|--------|-------------|
+| [ID] | Unique identifier for the level |
+| [HierarchyID] | Identifier of the hierarchy containing this level |
+| [Ordinal] | Ordinal position of the level within the hierarchy |
+| [Name] | Name of the level |
+| [Description] | Description of the level |
+| [ColumnID] | Identifier of the column associated with this level |
+| [ModifiedTime] | Timestamp of when the level was last modified |
+| [LineageTag] | Lineage tag for tracking data lineage |
+| [SourceLineageTag] | Source lineage tag from the original data source |
 
 ## Remarks
 
@@ -35,35 +47,41 @@ EVALUATE
 	INFO.LEVELS()
 ```
 
-## Example 2 - DAX query with SELECTCOLUMNS
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
 
 ```dax
 EVALUATE
-    SELECTCOLUMNS(
-        INFO.LEVELS(),
-        "Name", [Name],
-        "Description", [Description],
-        "Ordinal", [Ordinal]
-    )
+	VAR _Levels =
+		SELECTCOLUMNS(
+			INFO.LEVELS(),
+			"LevelID", [ID],
+			"HierarchyID", [HierarchyID],
+			"Level Name", [Name],
+			"Ordinal", [Ordinal]
+		)
+	VAR _Hierarchies = 
+		SELECTCOLUMNS(
+			INFO.HIERARCHIES(),
+			"HierarchyID", [ID],
+			"Hierarchy Name", [Name]
+		)
+	VAR _CombinedTable =
+		NATURALLEFTOUTERJOIN(
+			_Levels,
+			_Hierarchies
+		)
+	RETURN
+		SELECTCOLUMNS(
+			_CombinedTable,
+			"Hierarchy Name", [Hierarchy Name],
+			"Level Name", [Level Name],
+			"Ordinal", [Ordinal]
+		)
+	ORDER BY [Hierarchy Name], [Ordinal]
 ```
 
-## Example 3 - Calculated table
-
-```dax
-Levels =
-SELECTCOLUMNS(
-    INFO.LEVELS(),
-    "Name", [Name],
-    "Ordinal", [Ordinal]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Levels =
-COUNTROWS(INFO.LEVELS())
-```
 ## See also
 
 [INFO.HIERARCHIES](info-hierarchies-function-dax.md)

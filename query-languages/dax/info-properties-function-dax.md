@@ -47,23 +47,6 @@ EVALUATE
     )
 ```
 
-## Example 3 - Calculated table
-
-```dax
-Properties =
-SELECTCOLUMNS(
-    INFO.PROPERTIES(),
-    "Name", [Name],
-    "Value", [Value]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Properties =
-COUNTROWS(INFO.PROPERTIES())
-```
 ## See also
 
 [INFO.MODEL](info-model-function-dax.md)

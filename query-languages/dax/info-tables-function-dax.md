@@ -46,23 +46,6 @@ EVALUATE
     )
 ```
 
-## Example 3 - Calculated table
-
-```dax
-Tables in this semantic model =
-SELECTCOLUMNS(
-    INFO.TABLES(),
-    "Name", [Name],
-    "IsHidden", [IsHidden]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of tables =
-COUNTROWS(INFO.TABLES())
-```
 ## See also
 
 [INFO.COLUMNS](info-columns-function-dax.md)

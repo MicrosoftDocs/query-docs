@@ -47,23 +47,6 @@ EVALUATE
     )
 ```
 
-## Example 3 - Calculated table
-
-```dax
-Segment Storages =
-SELECTCOLUMNS(
-    INFO.SEGMENTSTORAGES(),
-    "SegmentID", [SegmentID],
-    "State", [State]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Segment Storages =
-COUNTROWS(INFO.SEGMENTSTORAGES())
-```
 ## See also
 
 [INFO.COLUMNSTORAGES](info-columnstorages-function-dax.md)

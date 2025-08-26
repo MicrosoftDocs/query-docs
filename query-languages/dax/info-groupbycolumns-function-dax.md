@@ -19,7 +19,14 @@ INFO.GROUPBYCOLUMNS ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for group by columns in the current semantic model.
+A table with the following columns:
+
+| Column | Description |
+|--------|-------------|
+| [ID] | Unique identifier for the group by column |
+| [RelatedColumnDetailsID] | Identifier linking to related column details |
+| [GroupingColumnID] | Identifier of the column used for grouping operations |
+| [ModifiedTime] | Timestamp of when the group by column was last modified |
 
 ## Remarks
 
@@ -35,35 +42,42 @@ EVALUATE
 	INFO.GROUPBYCOLUMNS()
 ```
 
-## Example 2 - DAX query with SELECTCOLUMNS
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
 
 ```dax
 EVALUATE
-    SELECTCOLUMNS(
-        INFO.GROUPBYCOLUMNS(),
-        "Name", [Name],
-        "ExplicitName", [ExplicitName],
-        "ColumnID", [ColumnID]
-    )
+	VAR _GroupByColumns =
+		SELECTCOLUMNS(
+			INFO.GROUPBYCOLUMNS(),
+			"GroupByColumnID", [ID],
+			"GroupingColumnID", [GroupingColumnID],
+			"RelatedColumnDetailsID", [RelatedColumnDetailsID]
+		)
+	VAR _Columns = 
+		SELECTCOLUMNS(
+			INFO.COLUMNS(),
+			"ColumnID", [ID],
+			"Column Name", [ExplicitName]
+		)
+	VAR _CombinedTable =
+		NATURALLEFTOUTERJOIN(
+			_GroupByColumns,
+			ADDCOLUMNS(
+				_Columns,
+				"GroupingColumnID", [ColumnID]
+			)
+		)
+	RETURN
+		SELECTCOLUMNS(
+			_CombinedTable,
+			"Column Name", [Column Name],
+			"Modified Time", [ModifiedTime]
+		)
+	ORDER BY [Column Name]
 ```
 
-## Example 3 - Calculated table
-
-```dax
-Group By Columns =
-SELECTCOLUMNS(
-    INFO.GROUPBYCOLUMNS(),
-    "Name", [Name],
-    "ExplicitName", [ExplicitName]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Group By Columns =
-COUNTROWS(INFO.GROUPBYCOLUMNS())
-```
 ## See also
 
 [INFO.TABLES](info-tables-function-dax.md)

@@ -47,23 +47,6 @@ EVALUATE
     )
 ```
 
-## Example 3 - Calculated table
-
-```dax
-Related Column Details =
-SELECTCOLUMNS(
-    INFO.RELATEDCOLUMNDETAILS(),
-    "Name", [Name],
-    "ExplicitName", [ExplicitName]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Related Column Details =
-COUNTROWS(INFO.RELATEDCOLUMNDETAILS())
-```
 ## See also
 
 [INFO.DEPENDENCIES](info-dependencies-function-dax.md)
