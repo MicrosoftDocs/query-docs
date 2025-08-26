@@ -23,14 +23,13 @@ A table with the following columns:
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| [TableID] | Integer | The identifier of the table containing the column |
-| [ColumnID] | Integer | The identifier of the column |
-| [PartitionID] | Integer | The identifier of the partition |
-| [SegmentID] | Integer | The identifier of the segment |
-| [State] | Integer | The state of the column partition storage |
-| [DataSize] | Long | The size of the data in the storage |
-| [DictionarySize] | Long | The size of the dictionary in the storage |
-| [HierarchiesSize] | Long | The size of hierarchies in the storage |
+| [ID] | Integer | The unique identifier of the column partition storage |
+| [ColumnStorageID] | Integer | The identifier of the column storage this partition belongs to |
+| [PartitionStorageID] | Integer | The identifier of the partition storage |
+| [DataVersion] | Integer | The version of the data in the partition storage |
+| [State] | Integer | The current state of the column partition storage |
+| [SegmentStorageID] | Integer | The identifier of the segment storage |
+| [StorageFileID] | Integer | The identifier of the storage file |
 
 ## Remarks
 
@@ -45,3 +44,72 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.COLUMNPARTITIONSTORAGES()
 ```
+
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+	VAR _ColumnPartitionStorages =
+		INFO.COLUMNPARTITIONSTORAGES()
+
+	VAR _ColumnStorages = 
+		SELECTCOLUMNS(
+			INFO.COLUMNSTORAGES(),
+			"ColumnStorageID", [ID],
+			"ColumnID", [ColumnID],
+			"Storage Name", [Name]
+		)
+
+	VAR _Columns = 
+		SELECTCOLUMNS(
+			INFO.COLUMNS(),
+			"ColumnID", [ID],
+			"Column Name", [ExplicitName],
+			"TableID", [TableID]
+		)
+
+	VAR _Tables = 
+		SELECTCOLUMNS(
+			INFO.TABLES(),
+			"TableID", [ID],
+			"Table Name", [Name]
+		)
+
+	VAR _CombinedWithColumnStorages =
+		NATURALLEFTOUTERJOIN(
+			_ColumnPartitionStorages,
+			_ColumnStorages
+		)
+
+	VAR _CombinedWithColumns =
+		NATURALLEFTOUTERJOIN(
+			_CombinedWithColumnStorages,
+			_Columns
+		)
+
+	VAR _CombinedWithTables =
+		NATURALLEFTOUTERJOIN(
+			_CombinedWithColumns,
+			_Tables
+		)
+
+	RETURN
+		SELECTCOLUMNS(
+			_CombinedWithTables,
+			"Table Name", [Table Name],
+			"Column Name", [Column Name],
+			"Storage Name", [Storage Name],
+			"Data Version", [DataVersion],
+			"State", [State]
+		)
+	ORDER BY [Table Name], [Column Name]
+```
+## See also
+
+[INFO.COLUMNSTORAGES](info-columnstorages-function-dax.md)
+[INFO.DICTIONARYSTORAGES](info-dictionarystorages-function-dax.md)
+[INFO.SEGMENTSTORAGES](info-segmentstorages-function-dax.md)
+[INFO.STORAGEFILES](info-storagefiles-function-dax.md)
+[INFO.TABLESTORAGES](info-tablestorages-function-dax.md)

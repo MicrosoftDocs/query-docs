@@ -158,3 +158,10 @@ EVALUATE
 		"Number of text columns", [Number of text columns]
 	)
 ```
+## See also
+
+[INFO.VIEW.TABLES](info-view-tables-function-dax.md)
+[INFO.VIEW.MEASURES](info-view-measures-function-dax.md)
+[INFO.VIEW.RELATIONSHIPS](info-view-relationships-function-dax.md)
+[INFO.TABLES](info-tables-function-dax.md)
+[INFO.COLUMNS](info-columns-function-dax.md)

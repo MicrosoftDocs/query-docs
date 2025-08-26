@@ -64,3 +64,10 @@ SELECTCOLUMNS(
 Number of Hierarchy Storages =
 COUNTROWS(INFO.HIERARCHYSTORAGES())
 ```
+## See also
+
+[INFO.HIERARCHIES](info-hierarchies-function-dax.md)
+[INFO.ATTRIBUTEHIERARCHIES](info-attributehierarchies-function-dax.md)
+[INFO.ATTRIBUTEHIERARCHYSTORAGES](info-attributehierarchystorages-function-dax.md)
+[INFO.LEVELS](info-levels-function-dax.md)
+[INFO.TABLES](info-tables-function-dax.md)

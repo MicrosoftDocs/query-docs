@@ -24,10 +24,9 @@ A table with the following columns:
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
 | [ID] | Integer | The unique identifier of the column permission |
-| [RoleID] | Integer | The identifier of the role that has the column permission |
-| [TableID] | Integer | The identifier of the table containing the column |
+| [TablePermissionID] | Integer | The identifier of the table permission this column permission belongs to |
 | [ColumnID] | Integer | The identifier of the column |
-| [State] | Integer | The state of the column permission |
+| [ModifiedTime] | DateTime | The date and time when the column permission was last modified |
 | [MetadataPermission] | Integer | The metadata permission level for the column |
 
 ## Remarks
@@ -53,6 +52,15 @@ EVALUATE
 	VAR _ColumnPermissions =
 		INFO.COLUMNPERMISSIONS()
 
+	VAR _TablePermissions = 
+		SELECTCOLUMNS(
+			INFO.TABLEPERMISSIONS(),
+			"TablePermissionID", [ID],
+			"Table Permission Name", [Name],
+			"RoleID", [RoleID],
+			"TableID", [TableID]
+		)
+
 	VAR _Roles = 
 		SELECTCOLUMNS(
 			INFO.ROLES(),
@@ -74,9 +82,15 @@ EVALUATE
 			"Column Name", [ExplicitName]
 		)
 
-	VAR _CombinedWithRoles =
+	VAR _CombinedWithTablePermissions =
 		NATURALLEFTOUTERJOIN(
 			_ColumnPermissions,
+			_TablePermissions
+		)
+
+	VAR _CombinedWithRoles =
+		NATURALLEFTOUTERJOIN(
+			_CombinedWithTablePermissions,
 			_Roles
 		)
 
@@ -98,7 +112,15 @@ EVALUATE
 			"Role Name", [Role Name],
 			"Table Name", [Table Name],
 			"Column Name", [Column Name],
-			"Metadata Permission", [MetadataPermission]
+			"Metadata Permission", [MetadataPermission],
+			"Modified Time", [ModifiedTime]
 		)
 	ORDER BY [Role Name], [Table Name], [Column Name]
 ```
+## See also
+
+[INFO.ROLES](info-roles-function-dax.md)
+[INFO.ROLEMEMBERSHIPS](info-rolememberships-function-dax.md)
+[INFO.TABLEPERMISSIONS](info-tablepermissions-function-dax.md)
+[INFO.TABLES](info-tables-function-dax.md)
+[INFO.COLUMNS](info-columns-function-dax.md)

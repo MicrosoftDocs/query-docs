@@ -64,3 +64,10 @@ SELECTCOLUMNS(
 Number of Segment Storages =
 COUNTROWS(INFO.SEGMENTSTORAGES())
 ```
+## See also
+
+[INFO.COLUMNSTORAGES](info-columnstorages-function-dax.md)
+[INFO.COLUMNPARTITIONSTORAGES](info-columnpartitionstorages-function-dax.md)
+[INFO.DICTIONARYSTORAGES](info-dictionarystorages-function-dax.md)
+[INFO.STORAGEFILES](info-storagefiles-function-dax.md)
+[INFO.TABLESTORAGES](info-tablestorages-function-dax.md)

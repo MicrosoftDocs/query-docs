@@ -64,3 +64,10 @@ SELECTCOLUMNS(
 Number of Perspective Measures =
 COUNTROWS(INFO.PERSPECTIVEMEASURES())
 ```
+## See also
+
+[INFO.PERSPECTIVES](info-perspectives-function-dax.md)
+[INFO.PERSPECTIVECOLUMNS](info-perspectivecolumns-function-dax.md)
+[INFO.PERSPECTIVEHIERARCHIES](info-perspectivehierarchies-function-dax.md)
+[INFO.PERSPECTIVETABLES](info-perspectivetables-function-dax.md)
+[INFO.TABLES](info-tables-function-dax.md)

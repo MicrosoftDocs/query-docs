@@ -33,6 +33,12 @@ A table with the following columns:
 | [DATABASE_ID] | String | The unique identifier of the database |
 | [DATABASE_GUID] | String | The GUID of the database |
 | [DATE_QUERIED] | DateTime | The date and time when the catalog was queried |
+| [CURRENTLY_USED] | Boolean | Whether the catalog is currently being used |
+| [POPULARITY] | Double | The popularity score of the catalog |
+| [WEIGHTEDPOPULARITY] | Double | The weighted popularity score of the catalog |
+| [CLIENTCACHEREFRESHPOLICY] | Integer | The client cache refresh policy setting |
+| [ENCRYPTION_LEVEL] | String | The encryption level used for the catalog |
+| [CRYPTOKEY_UPDATED] | DateTime | The date and time when the encryption key was last updated |
 
 ## Remarks
 
@@ -47,3 +53,10 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.CATALOGS()
 ```
+## See also
+
+[INFO.MODEL](info-model-function-dax.md)
+[INFO.PROPERTIES](info-properties-function-dax.md)
+[INFO.EXPRESSIONS](info-expressions-function-dax.md)
+[INFO.TABLES](info-tables-function-dax.md)
+[INFO.COLUMNS](info-columns-function-dax.md)
