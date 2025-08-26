@@ -34,6 +34,7 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 EVALUATE
 	INFO.PERSPECTIVEHIERARCHIES()
 ```
+
 ## See also
 
 [INFO.PERSPECTIVES](info-perspectives-function-dax.md)

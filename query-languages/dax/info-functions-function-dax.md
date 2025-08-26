@@ -19,7 +19,25 @@ INFO.FUNCTIONS ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the MDSCHEMA_FUNCTIONS schema rowset for the current engine/compatibility level.
+A table with the following columns:
+
+| Column | Description |
+|--------|-------------|
+| [FUNCTION_NAME] | The name of the DAX function |
+| [DESCRIPTION] | A description of what the function does |
+| [PARAMETER_LIST] | The list of parameters the function accepts |
+| [RETURN_TYPE] | The data type that the function returns |
+| [ORIGIN] | The origin or source of the function |
+| [INTERFACE_NAME] | The interface name for the function |
+| [LIBRARY_NAME] | The library containing the function |
+| [DLL_NAME] | The DLL file containing the function implementation |
+| [HELP_FILE] | The help file associated with the function |
+| [HELP_CONTEXT] | The help context identifier |
+| [OBJECT] | The object information for the function |
+| [CAPTION] | The display caption for the function |
+| [PARAMETERINFO] | Additional parameter information |
+| [DIRECTQUERY_PUSHABLE] | Whether the function can be pushed down to DirectQuery sources |
+| [VISUAL_CALCULATIONS_INFO] | Information about visual calculations support |
 
 ## Remarks
 
@@ -35,16 +53,22 @@ EVALUATE
 	INFO.FUNCTIONS()
 ```
 
-## Example 2 - DAX query with SELECTCOLUMNS
+## Example 2 - DAX query with filters
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
 
 ```dax
 EVALUATE
     SELECTCOLUMNS(
-        INFO.FUNCTIONS(),
-        "FUNCTION_NAME", [FUNCTION_NAME],
-        "DESCRIPTION", [DESCRIPTION],
-        "CAPTION", [CAPTION]
+        FILTER(
+            INFO.FUNCTIONS(),
+            CONTAINSSTRING([FUNCTION_NAME], "DATE")
+        ),
+        "Function Name", [FUNCTION_NAME],
+        "Description", [DESCRIPTION],
+        "Return Type", [RETURN_TYPE]
     )
+ORDER BY [Function Name]
 ```
 ## See also
 

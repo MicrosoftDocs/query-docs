@@ -19,7 +19,14 @@ INFO.PERSPECTIVECOLUMNS ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for perspective columns in the current semantic model.
+A table with the following columns:
+
+| Column | Description |
+|--------|-------------|
+| [ID] | Unique identifier for the perspective column |
+| [PerspectiveTableID] | Identifier of the perspective table containing this column |
+| [ColumnID] | Identifier of the column included in the perspective |
+| [ModifiedTime] | Timestamp of when the perspective column was last modified |
 
 ## Remarks
 
@@ -33,6 +40,51 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 ```dax
 EVALUATE
 	INFO.PERSPECTIVECOLUMNS()
+```
+
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+	VAR _PerspectiveColumns =
+		SELECTCOLUMNS(
+			INFO.PERSPECTIVECOLUMNS(),
+			"PerspectiveColumnID", [ID],
+			"PerspectiveTableID", [PerspectiveTableID],
+			"ColumnID", [ColumnID]
+		)
+	VAR _Columns = 
+		SELECTCOLUMNS(
+			INFO.COLUMNS(),
+			"ColumnID", [ID],
+			"Column Name", [ExplicitName],
+			"TableID", [TableID]
+		)
+	VAR _Tables = 
+		SELECTCOLUMNS(
+			INFO.TABLES(),
+			"TableID", [ID],
+			"Table Name", [Name]
+		)
+	VAR _CombinedTable1 =
+		NATURALLEFTOUTERJOIN(
+			_PerspectiveColumns,
+			_Columns
+		)
+	VAR _CombinedTable2 =
+		NATURALLEFTOUTERJOIN(
+			_CombinedTable1,
+			_Tables
+		)
+	RETURN
+		SELECTCOLUMNS(
+			_CombinedTable2,
+			"Table Name", [Table Name],
+			"Column Name", [Column Name]
+		)
+	ORDER BY [Table Name], [Column Name]
 ```
 
 ## See also

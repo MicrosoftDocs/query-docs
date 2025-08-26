@@ -47,23 +47,6 @@ EVALUATE
     )
 ```
 
-## Example 3 - Calculated table
-
-```dax
-Excluded Artifacts =
-SELECTCOLUMNS(
-    INFO.EXCLUDEDARTIFACTS(),
-    "ObjectID", [ObjectID],
-    "ObjectType", [ObjectType]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Excluded Artifacts =
-COUNTROWS(INFO.EXCLUDEDARTIFACTS())
-```
 ## See also
 
 [INFO.TABLES](info-tables-function-dax.md)

@@ -47,23 +47,6 @@ EVALUATE
     )
 ```
 
-## Example 3 - Calculated table
-
-```dax
-Data Coverage Definitions =
-SELECTCOLUMNS(
-    INFO.DATACOVERAGEDEFINITIONS(),
-    "Name", [Name],
-    "Expression", [Expression]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of Data Coverage Definitions =
-COUNTROWS(INFO.DATACOVERAGEDEFINITIONS())
-```
 ## See also
 
 [INFO.TABLES](info-tables-function-dax.md)

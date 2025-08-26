@@ -19,7 +19,14 @@ INFO.GROUPBYCOLUMNS ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for group by columns in the current semantic model.
+A table with the following columns:
+
+| Column | Description |
+|--------|-------------|
+| [ID] | Unique identifier for the group by column |
+| [RelatedColumnDetailsID] | Identifier linking to related column details |
+| [GroupingColumnID] | Identifier of the column used for grouping operations |
+| [ModifiedTime] | Timestamp of when the group by column was last modified |
 
 ## Remarks
 
@@ -33,6 +40,38 @@ The following DAX query can be run in [DAX query view](/power-bi/transform-model
 ```dax
 EVALUATE
 	INFO.GROUPBYCOLUMNS()
+```
+
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+	VAR _GroupByColumns =
+		SELECTCOLUMNS(
+			INFO.GROUPBYCOLUMNS(),
+			"GroupByColumnID", [ID],
+			"GroupingColumnID", [GroupingColumnID],
+			"RelatedColumnDetailsID", [RelatedColumnDetailsID]
+		)
+	VAR _Columns = 
+		SELECTCOLUMNS(
+			INFO.COLUMNS(),
+			"ColumnID", [ID],
+			"Column Name", [ExplicitName]
+		)
+	VAR _CombinedTable =
+		NATURALLEFTOUTERJOIN(
+			_GroupByColumns,
+			ADDCOLUMNS(
+				_Columns,
+				"GroupingColumnID", [ColumnID]
+			)
+		)
+	RETURN
+		_CombinedTable
+	ORDER BY [Column Name]
 ```
 
 ## See also

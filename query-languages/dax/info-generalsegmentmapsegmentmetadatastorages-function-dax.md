@@ -19,7 +19,14 @@ INFO.GENERALSEGMENTMAPSEGMENTMETADATASTORAGES ( [<Restriction name>, <Restrictio
 
 ## Return value
 
-A table whose columns match the schema rowset for general segment map segment metadata storages in the current semantic model.
+A table with the following columns:
+
+| Column | Description |
+|--------|-------------|
+| [ID] | Unique identifier for the general segment map segment metadata storage |
+| [SegmentMapStorageID] | Identifier linking to the segment map storage |
+| [RecordCount] | Number of records in the segment |
+| [Ordinal] | Ordinal position of the segment |
 
 ## Remarks
 
@@ -41,29 +48,12 @@ EVALUATE
 EVALUATE
     SELECTCOLUMNS(
         INFO.GENERALSEGMENTMAPSEGMENTMETADATASTORAGES(),
-        "SegmentMapID", [SegmentMapID],
-        "State", [State],
-        "LastUpdateTime", [LastUpdateTime]
+        "Segment Map Storage ID", [SegmentMapStorageID],
+        "Record Count", [RecordCount],
+        "Ordinal", [Ordinal]
     )
 ```
 
-## Example 3 - Calculated table
-
-```dax
-General Segment Map Storages =
-SELECTCOLUMNS(
-    INFO.GENERALSEGMENTMAPSEGMENTMETADATASTORAGES(),
-    "SegmentMapID", [SegmentMapID],
-    "State", [State]
-)
-```
-
-## Example 4 - Measure
-
-```dax
-Number of General Segment Map Storages =
-COUNTROWS(INFO.GENERALSEGMENTMAPSEGMENTMETADATASTORAGES())
-```
 ## See also
 
 [INFO.TABLES](info-tables-function-dax.md)
