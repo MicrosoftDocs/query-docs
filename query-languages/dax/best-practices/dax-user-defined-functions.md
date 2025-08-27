@@ -118,7 +118,7 @@ Click the **Apply** button at the top of the view to save all UDFs in the script
 
 #### Using TMDL script in a Power BI Project
 
-UDFs are also included in the semantic model TMDL script when using a [Power BI project](/power-bi/developer/projects/projects-overview). They can be found in `functions.tmdl` within the *definiton* folder.
+UDFs are also included in the semantic model TMDL script when using a [Power BI project](/power-bi/developer/projects/projects-overview). They can be found in `functions.tmdl` within the *definition* folder.
 
 :::image type="content" source="media/dax-user-defined-functions/project-script.png" alt-text="Visual Studio Code screenshot of a Power BI project. Explorer is open to the semantic model folder. 'functions.tmdl' is open in the code editor. Three functions are displayed: CustomerLifetimeValue, AverageOrderValue, and AddTax." lightbox="media/dax-user-defined-functions/project-script.png":::
 
@@ -308,7 +308,7 @@ EVALUATE
 
 ### Example: Table parameter (value vs expression)
 
-To illustrate how UDF parameter modes affect filter context. consider two functions that both count rows in the 'Sales' table. Both use `CALCULATETABLE(t, ALL('Date'))` in their bodies, but one parameter is declared as a `val` (eager evaluation) and the other as `expr` (lazy evaluation):
+To illustrate how UDF parameterMode affects filter context consider two functions that both count rows in the 'Sales' table. Both use `CALCULATETABLE(t, ALL('Date'))` in their bodies, but one parameter is declared as a `val` (eager evaluation) and the other as `expr` (lazy evaluation):
 
 ```dax
 DEFINE
