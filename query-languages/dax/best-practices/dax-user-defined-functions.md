@@ -56,7 +56,7 @@ DEFINE
 ```
 
 > [!TIP]
-> Use `///` for function descriptions. Single-line (`//`) or multi-line (`/* */`) comments will not appear in IntelliSense.
+> Use `///` for function descriptions. Single-line (`//`) or multi-line (`/* */`) comments will not appear in IntelliSense function descriptions.
 
 
 #### Example: Simple tax function
@@ -129,7 +129,7 @@ You can view all user-defined functions in the model from Model explorer under t
 
 :::image type="content" source="media/dax-user-defined-functions/model-explorer-view-functions.png" alt-text="Model explorer panel in Power BI Desktop showing the expanded Functions node. Three user-defined functions are listed: AddTax, AverageOrderValue, and CustomerLifetimeValue." lightbox="media/dax-user-defined-functions/model-explorer-view-functions.png":::
 
-In [DAX query view](#using-dax-query-view), you can use **Quick quieries** in the right-click menu of a UDF within Model explorer to easily define and evaluate functions.
+In [DAX query view](#using-dax-query-view), you can use **Quick queries** in the right-click menu of a UDF within Model explorer to easily define and evaluate functions.
 
 :::image type="content" source="media/dax-user-defined-functions/model-explorer-quick-queries.png" alt-text="Model explorer pane in Power BI Desktop displays the expanded Functions node. Two context menus are open: the first menu provides Quick queries, Rename, Delete from model, Hide in report view, Unhide all, Collapse all, and Expand all. Quick queries is highlighted and selected. The second menu is highlighted and offers Quick queries options Evaluate, Define and evaluate, Define new function, and Define all functions in this model." lightbox="media/dax-user-defined-functions/model-explorer-quick-queries.png":::
 
