@@ -35,7 +35,7 @@ items:
             href: best-practices/dax-countrows.md
           - name: "Use variables to improve formulas"
             href: best-practices/dax-variables.md
-          - name: "Use DAX user defined functions (preview)"
+          - name: "Use DAX user-defined functions (preview)"
             href: best-practices/dax-user-defined-functions.md
     - name: DAX functions
       expanded: true
