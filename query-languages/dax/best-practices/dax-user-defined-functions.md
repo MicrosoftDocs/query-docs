@@ -136,7 +136,7 @@ In [TMDL view](#using-tmdl-view) you can **drag and drop** functions into the ca
 
 ### Using DMVs to inspect UDFs
 
-You can inspect UDFs in your model using [Dynamic Management Views](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services?view=sql-analysis-services-2025) (DMVs). These views allow you to query information about functions, including UDFs.
+You can inspect UDFs in your model using [Dynamic Management Views](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services?) (DMVs). These views allow you to query information about functions, including UDFs.
 
 You may use the [INFO.FUNCTIONS](..\info-functions-dax.md) function to inspect the UDFs in the model. To restrict the result to UDFs only, specify the `ORIGIN` parameter as `2`.
 
