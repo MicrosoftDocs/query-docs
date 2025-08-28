@@ -52,7 +52,7 @@ You can define, update, and evaluate user-defined functions in DAX query view. F
 ```dax
 DEFINE
     /// Optional description above the function
-    FUNCTION <FunctionName> = ( <ParameterName>: <ParameterType>, ... ) => <FunctionBody>
+    FUNCTION <FunctionName> = ( [ParameterName]: [ParameterType], ... ) => <FunctionBody>
 ```
 
 > [!TIP]
@@ -94,7 +94,7 @@ You can define and/or update user-defined functions in TMDL view. For additional
 ```tmdl
 createOrReplace
     /// Optional description above the function
-    function <FunctionName> = ( <ParameterName>: <ParameterType>, ... ) => <FunctionBody>
+    function <FunctionName> = ( [ParameterName]: [ParameterType], ... ) => <FunctionBody>
 ```
 
 
@@ -446,73 +446,73 @@ EVALUATE
 To show how DAX UDFs can handle more complex logic we will look at a currency conversion scenario. This example uses type checking and nested functions to convert a given amount into a target currency using either the average or end-of-day exchange rate for a given date.
 
 ```tmdl
-createOrReplace 
-	function convertDateToDateKey =  
+createOrReplace
+	function ConvertDateToDateKey =  
 		( 
-			p_date: scalar variant 
+			pDate: scalar variant 
 		) => 
-		YEAR ( p_date ) * 10000 + MONTH ( p_date ) * 100 + DAY ( p_date ) 
+		YEAR ( pDate ) * 10000 + MONTH ( pDate ) * 100 + DAY ( pDate ) 
 	
-	function convertToCurrency = 
+	function ConvertToCurrency = 
 		( 
-			p_currency:scalar variant, 
-			p_date: scalar variant, 
-			p_use_average_rate: scalar boolean, 
-			p_amount: scalar decimal 
+			pCurrency:scalar variant, 
+			pDate: scalar variant, 
+			pUseAverageRate: scalar boolean, 
+			pAmount: scalar decimal 
 		) => 
-		var currencyKey = 
+		var CurrencyKey = 
 			EVALUATEANDLOG ( 
 				IF ( 
-					ISINT64 ( p_currency ), 
-					p_currency, 
+					ISINT64 ( pCurrency ), 
+					pCurrency, 
 					CALCULATE ( 
 						MAX ( 'Currency'[CurrencyKey] ), 
-						'Currency'[Code] == p_currency 
+						'Currency'[Code] == pCurrency 
 					) 
 				) 
 				, "CurrencyKey" 
 			) 
 
-		var dateKey = 
+		var DateKey = 
 			EVALUATEANDLOG ( 
 				SWITCH ( 
 					TRUE, 
-					ISINT64 ( p_date ), p_date, 
-					convertDateToDateKey ( p_date ) 
+					ISINT64 ( pDate ), pDate, 
+					ConvertDateToDateKey ( pDate ) 
 				) 
 				, "DateKey" 
 			) 
 
-		var exchange_rate = 
+		var ExchangeRate = 
 			EVALUATEANDLOG ( 
 				IF ( 
-					p_use_average_rate, 
+					pUseAverageRate, 
 					CALCULATE ( 
 						MAX ( 'Currency Rate'[Average Rate] ), 
-						'Currency Rate'[DateKey] == dateKey, 
-						'Currency Rate'[CurrencyKey] == currencyKey 
+						'Currency Rate'[DateKey] == DateKey, 
+						'Currency Rate'[CurrencyKey] == CurrencyKey 
 					), 
 					CALCULATE ( 
 					MAX ( 'Currency Rate'[End Of Day Rate] ), 
-						'Currency Rate'[DateKey] == dateKey, 
-						'Currency Rate'[CurrencyKey] == currencyKey 
+						'Currency Rate'[DateKey] == DateKey, 
+						'Currency Rate'[CurrencyKey] == CurrencyKey 
 					) 
 				) 
 				, "ExchangeRate" 
 			) 
 
-		var result = 
+		var Result = 
 			IF ( 
-				ISBLANK ( p_currency ) || ISBLANK ( p_date ) || ISBLANK ( p_amount ), 
+				ISBLANK ( pCurrency ) || ISBLANK ( pDate ) || ISBLANK ( pAmount ), 
 				BLANK (), 
 				IF ( 
-					ISBLANK ( exchange_rate ) , 
+					ISBLANK ( ExchangeRate ) , 
 					"no exchange rate available", 
-					exchange_rate * p_amount 
+					ExchangeRate * pAmount 
 				) 
 			) 
 
-		RETURN result
+		RETURN Result
 ```
 
 The convertToCurrency function accepts flexible input types for both currency and date. Users can provide either a currencyKey or dateKey directly, or supply a currencyCode or standard date value. The function checks the type of each input and handles it accordingly: if `p_currency` is a whole number, it is treated as a currencyKey; otherwise, the function assumes a currencyCode and attempts to resolve the corresponding key. `p_date` follows a similar pattern, if it is a whole number, it is treated as a dateKey; otherwise the function assumes it is a standard date value and is converted to a dateKey using the `convertDateToDateKey` helper function. If the function cannot determine a valid exchnage rate, it returns the message "no exchange rate available".
