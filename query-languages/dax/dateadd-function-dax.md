@@ -104,7 +104,7 @@ Controls how the function behaves when the destination month is **longer** than 
 - **`Precise`**: Keeps the original date range strictly.  
   → `Feb 25–28` → `March 25–28`
 
-- **`Extended`**: Allows the window to expand toward the **end of the month** if needed.  
+- **`Extending`**: Allows the window to expand toward the **end of the month** if needed.  
   → `Feb 25–28` → `March 25–31`
 
 ### Truncation Parameter (for large → small month shifts)
@@ -114,7 +114,7 @@ Controls how the function behaves when the destination month is **shorter** than
 - **`Anchored`**: Anchors the result to the **last valid date** of the smaller month.  
   → `March 31` → `Feb 28`
 
-- **`Blank`**: Returns **blank** when the shifted date doesn't exist.  
+- **`Blanks`**: Returns **blank** when the shifted date doesn't exist.  
   → `March 31` → _(blank)_ (since February doesn't have 31st)
   
 ## Differences in behavior between classic and calendar time intelligence
