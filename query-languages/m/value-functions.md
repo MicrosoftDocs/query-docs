@@ -51,8 +51,8 @@ These functions evaluate and perform operations on values.
 |[Value.Firewall](value-firewall.md) | This function is intended for internal use only.|
 |[Value.ViewError](value-viewerror.md) | This function is intended for internal use only.|
 |[Value.ViewFunction](value-viewfunction.md) | This function is intended for internal use only.|
-|[Variable.Value](variable-value.md) | This function is intended for internal use only.|
-|[Variable.ValueOrDefault](variable-valueordefault.md) | This function is intended for internal use only.|
+|[Variable.Value](variable-value.md) | Returns the value of the specified identifier, or an error if the identifier is not defined.|
+|[Variable.ValueOrDefault](variable-valueordefault.md) | Returns the value of the specified identifier, or the optional default value if the identifier is not defined.|
 
 ## Metadata
 
