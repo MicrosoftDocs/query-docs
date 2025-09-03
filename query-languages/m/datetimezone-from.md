@@ -58,11 +58,11 @@ DateTimeZone.From("13 de agosto de 2025 15:43:00 -03:00", "pt-BR")
 
 **Output**
 
-`#datetimezone(2025, 08, 13, 03, 43, 00, -3, 00)`
+`#datetimezone(2025, 08, 13, 15, 43, 00, -3, 00)`
 
 ## Example 3
 
-Convert a number representing January 1, 2025 at 12 PM to a `datetimezone` value.
+Convert a number representing January 1, 2025 at 12 PM to a `datetimezone` value. The timezone in the result depends on whether the example is run locally or online.
 
 **Usage**
 
