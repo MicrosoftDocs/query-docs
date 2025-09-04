@@ -40,7 +40,7 @@ The calculated result of the function body.
 
 ## Related content
 
-[Working with DAX User Defined Functions](todo.md)
-[DEFINE](define-statement-dax.md)
-[EVALUATE](evaluate-statement-dax.md)
-[DAX queries](dax-queries.md)
+- [Working with DAX User Defined Functions](todo.md)
+- [DEFINE](define-statement-dax.md)
+- [EVALUATE](evaluate-statement-dax.md)
+- [DAX queries](dax-queries.md)

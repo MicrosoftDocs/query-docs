@@ -53,11 +53,10 @@ Introduces a statement with one or more entity definitions that can be applied t
 
 ## Related content
 
-[EVALUATE](evaluate-statement-dax.md)  
-[FUNCTION](function-statement-dax.md)
-
-[VAR](var-dax.md)  
-[MEASURE](measure-statement-dax.md)  
-[Virtual Column](virtual-column-statement-dax.md)
-[Virtual Table](virtual-table-statement-dax.md)
-[DAX queries](dax-queries.md)
+- [EVALUATE](evaluate-statement-dax.md)  
+- [FUNCTION](function-statement-dax.md)
+- [VAR](var-dax.md)  
+- [MEASURE](measure-statement-dax.md)  
+- [Virtual Column](virtual-column-statement-dax.md)
+- [Virtual Table](virtual-table-statement-dax.md)
+- [DAX queries](dax-queries.md)
