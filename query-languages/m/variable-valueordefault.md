@@ -13,4 +13,4 @@ Variable.ValueOrDefault(<b>identifier</b> as text, optional <b>defaultValue</b> 
 
 ## About
 
-This function is intended for internal use only.
+Returns the value of the specified variable `identifier` defined by the current evaluation environment. If the variable is not defined, the optional `defaultValue` is returned.
