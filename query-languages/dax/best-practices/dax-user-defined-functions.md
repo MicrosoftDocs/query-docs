@@ -245,7 +245,7 @@ There are two type families in DAX UDF parameters: **value types** and **express
     - **`AnyVal`**: Accepts a scalar or a table. This is the default if you omit type for a parameter.
     - **`Scalar`**: Accepts a scalar value (can additionally add a subtype).
     - **`Table`**: Accepts a table.
-- **Expression types**: this arugement passes an **unevaluated expression** (lazy evaluation). The function decides when and in what context to evaluate it. This is required for reference parameters and useful when you need to control filter context (e.g. inside [CALCULATE](../calculate-function-dax.md)). `expr` types can be references to a column, table, calendar, or measure.
+- **Expression types**: this arguement passes an **unevaluated expression** (lazy evaluation). The function decides when and in what context to evaluate it. This is required for reference parameters and useful when you need to control filter context (e.g. inside [CALCULATE](../calculate-function-dax.md)). `expr` types can be references to a column, table, calendar, or measure.
     - **`AnyRef`**: Accepts a reference (a column, table, calendar, or measure).
 
 
