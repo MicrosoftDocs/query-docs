@@ -25,7 +25,7 @@ To try UDFs in Desktop:
 ## Define and manage user-define functions
 
 There are several locations to define and manage functions:
-- [DAX query view](#using-dax-query-view) (DQV). Define and modify functions in DQV. DQV also includes context-menu **Quick quieries** (Evaluate, Define and evaluate, and Define all functions in this model) to help you test and manage UDFs fast.
+- [DAX query view](#using-dax-query-view) (DQV). Define and modify functions in DQV. DQV also includes context-menu **Quick queries** (Evaluate, Define and evaluate, and Define all functions in this model) to help you test and manage UDFs fast.
 - [TMDL view](#using-tmdl-view). UDFs can also be authored and edited in TMDL. TMDL view also includes context-menu **Script TMDL to**.
 - [Model explorer](#using-model-explorer). Existing functions can be viewed under the *Functions* node in Model explorer.
 
@@ -34,7 +34,7 @@ When defining a UDF, please follow these naming requirements:
 **Function names**:
 - Must be well-formed and unique within the model.
 - Can include periods (dots) for namespacing (e.g. Microsoft.PowerBI.MyFunc). Cannot start or end with a period or have consecutive periods.
-- Other than periods, can only contain alphanumeric characters or underscores. No spaces or special characters allowed.
+- Other than periods, names can only contain alphanumeric characters or underscores. No spaces or special characters allowed.
 - Must not conflict with built-in DAX functions or reserved words (e.g. measure, function, define).
 
 **Parameter names**:
@@ -179,7 +179,7 @@ UDFs can be used in a calculated column to apply reusable logic to every row in 
 Sales Amount with Tax = CONVERT ( AddTax ( 'Sales'[Sales Amount] ), CURRENCY )
 ```
 
-We can see this example measure in the table below:
+We can see this example measure used in the table below:
 
 :::image type="content" source="media/dax-user-defined-functions/calculated-column.png" alt-text="Table showing Sales Amount and Sales amount with Tax. Sales Amount with Tax is highlighted. Visualizations pane is open. Sales Amount with Tax is highlighted in the Columns field well." lightbox="media/dax-user-defined-functions/calculated-column.png":::
 
@@ -233,7 +233,7 @@ DAX UDFs can accept zero or more parameters. When you define parameters for a UD
 
 Type hints are in the form: `[type] [subtype] [parameterMode]`
 
-You can include, all, some, or none of these type hints for each parameter to make your functions safer and more predictable at call sites. If you omit everything and just write the parameter name it behaves as `AnyVal val`, meaning the argument is evaluated immediately at call time. This is useful for simple functions.
+You can include all, some, or none of these type hints for each parameter to make your functions safer and more predictable at call sites. If you omit everything and just write the parameter name it behaves as `AnyVal val`, meaning the argument is evaluated immediately at call time. This is useful for simple functions.
 
 
 ### Type
@@ -245,13 +245,13 @@ There are two type families in DAX UDF parameters: **value types** and **express
     - **`AnyVal`**: Accepts a scalar or a table. This is the default if you omit type for a parameter.
     - **`Scalar`**: Accepts a scalar value (can additionally add a subtype).
     - **`Table`**: Accepts a table.
-- **Expression types**: this arguement passes an **unevaluated expression** (lazy evaluation). The function decides when and in what context to evaluate it. This is required for reference parameters and useful when you need to control filter context (e.g. inside [CALCULATE](../calculate-function-dax.md)). `expr` types can be references to a column, table, calendar, or measure.
+- **Expression types**: this argument passes an **unevaluated expression** (lazy evaluation). The function decides when and in what context to evaluate it. This is required for reference parameters and useful when you need to control filter context (e.g. inside [CALCULATE](../calculate-function-dax.md)). `expr` types can be references to a column, table, calendar, or measure.
     - **`AnyRef`**: Accepts a reference (a column, table, calendar, or measure).
 
 
 ### Subtype
 
-Subtype lets you define a specific `Scalar` data type. If you define a subtype you do not need to explicitly define the parameter as a `Scalar` type, this is automatically assumed.
+Subtype lets you define a specific `Scalar` data type. If you define a subtype, you do not need to explicitly define the parameter as a `Scalar` type, this is automatically assumed.
 
 Subtypes are:
 - **`Variant`**: Accepts any scalar.
@@ -339,7 +339,7 @@ CountRowsLater returns the count of sales for all years. The function receives a
 
 ## Type checking
 
-Type checking in UDFs can be done with new and exisiting type checking functions you can call inside your function body to confirm the runtime type of passed parameters. This allows UDFs to use context control, validate parameters up front, normalize inputs before calculation.
+Type checking in UDFs can be done with new and existing type checking functions you can call inside your function body to confirm the runtime type of passed parameters. This allows UDFs to use context control, validate parameters up front, normalize inputs before calculation.
 
 > [!NOTE]
 > For `expr` parameterMode parameters, type checks occur when the parameter is referenced in the function body (not at function call time).
@@ -347,7 +347,7 @@ Type checking in UDFs can be done with new and exisiting type checking functions
 
 ### Available type checking functions
 
-UDFs can use the following functions to test scalar values. Each returns `TRUE`/`FALSE` depending on whether the value provided is of that type.
+UDFs can use the following functions to test scalar values. Each return `TRUE`/`FALSE` depending on whether the value provided is of that type.
 
 | Category     | Functions                                                                             |        
 |--------------|---------------------------------------------------------------------------------------|
@@ -515,13 +515,13 @@ createOrReplace
 		RETURN Result
 ```
 
-The convertToCurrency function accepts flexible input types for both currency and date. Users can provide either a currencyKey or dateKey directly, or supply a currencyCode or standard date value. The function checks the type of each input and handles it accordingly: if `p_currency` is a whole number, it is treated as a currencyKey; otherwise, the function assumes a currencyCode and attempts to resolve the corresponding key. `p_date` follows a similar pattern, if it is a whole number, it is treated as a dateKey; otherwise the function assumes it is a standard date value and is converted to a dateKey using the `convertDateToDateKey` helper function. If the function cannot determine a valid exchnage rate, it returns the message "no exchange rate available".
+The `ConvertToCurrency` function accepts flexible input types for both currency and date. Users can provide either a xurrency key or date key directly or supply a currency code or standard date value. The function checks the type of each input and handles it accordingly: if `pCurrency` is a whole number, it is treated as a currency key; otherwise, the function assumes a currency code and attempts to resolve the corresponding key. `pDate` follows a similar pattern, if it is a whole number, it is treated as a date key; otherwise the function assumes it is a standard date value and is converted to a date key using the `ConvertDateToDateKey` helper function. If the function cannot determine a valid exchnage rate, it returns the message "no exchange rate available".
 
 This logic can then be used to define a measure such as **Total Sales in Local Currency**.
 
 ```dax
 Total Sales in Local Currency = 
-convertToCurrency (
+ConvertToCurrency (
     SELECTEDVALUE ( 'Currency'[Code] ),
     SELECTEDVALUE ( 'Date'[DateKey] ),
     TRUE,
