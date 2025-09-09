@@ -515,7 +515,7 @@ createOrReplace
 		RETURN Result
 ```
 
-The `ConvertToCurrency` function accepts flexible input types for both currency and date. Users can provide either a xurrency key or date key directly or supply a currency code or standard date value. The function checks the type of each input and handles it accordingly: if `pCurrency` is a whole number, it is treated as a currency key; otherwise, the function assumes a currency code and attempts to resolve the corresponding key. `pDate` follows a similar pattern, if it is a whole number, it is treated as a date key; otherwise the function assumes it is a standard date value and is converted to a date key using the `ConvertDateToDateKey` helper function. If the function cannot determine a valid exchnage rate, it returns the message "no exchange rate available".
+The `ConvertToCurrency` function accepts flexible input types for both currency and date. Users can provide either a currency key or date key directly or supply a currency code or standard date value. The function checks the type of each input and handles it accordingly: if `pCurrency` is a whole number, it is treated as a currency key; otherwise, the function assumes a currency code and attempts to resolve the corresponding key. `pDate` follows a similar pattern, if it is a whole number, it is treated as a date key; otherwise the function assumes it is a standard date value and is converted to a date key using the `ConvertDateToDateKey` helper function. If the function cannot determine a valid exchnage rate, it returns the message "no exchange rate available".
 
 This logic can then be used to define a measure such as **Total Sales in Local Currency**.
 
