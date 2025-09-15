@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Table functions"
 title: "Table functions"
-ms.date: 7/16/2025
+ms.date: 8/29/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-source
 ---
@@ -15,10 +15,8 @@ These functions create and manipulate table values.
 |------------|---------------|
 [#table](sharptable.md) | Creates a table value from columns and rows.|
 |[ItemExpression.From](itemexpression-from.md) | Returns the abstract syntax tree (AST) for the body of a function.|
-|[ItemExpression.Item](itemexpression-item.md) | An abstract syntax tree (AST) node representing the item in an item expression.|
 |[RowExpression.Column](rowexpression-column.md)|Returns an abstract syntax tree (AST) that represents access to a column within a row expression.|
 |[RowExpression.From](rowexpression-from.md)|Returns the abstract syntax tree (AST) for the body of a function.|
-|[RowExpression.Row](rowexpression-row.md)|An abstract syntax tree (AST) node representing the row in a row expression.|
 |[Table.FromColumns](table-fromcolumns.md)|Creates a table from a list of columns and specified values.|
 |[Table.FromList](table-fromlist.md)|Converts a list into a table by applying the specified splitting function to each item in the list.|
 |[Table.FromRecords](table-fromrecords.md)|Converts a list of records into a table.|
