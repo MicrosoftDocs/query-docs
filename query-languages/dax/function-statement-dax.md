@@ -35,12 +35,12 @@ The calculated result of the function body.
 
 ## Remarks
 
-<!--- To learn more about DAX User Defined Functions, see [DAX User Defined Functions](best-practices/dax-user-defined-functions.md).-->
+- To learn more about DAX User Defined Functions, see [DAX User Defined Functions](best-practices/dax-user-defined-functions.md).
 - To learn more about how FUNCTION statements are used, see [DAX queries](dax-queries.md).
 
 ## Related content
 
-<!--- [Working with DAX User Defined Functions](best-practices/dax-user-defined-functions.md)-->
+- [Working with DAX User Defined Functions](best-practices/dax-user-defined-functions.md)
 - [DEFINE](define-statement-dax.md)
 - [EVALUATE](evaluate-statement-dax.md)
 - [DAX queries](dax-queries.md)
