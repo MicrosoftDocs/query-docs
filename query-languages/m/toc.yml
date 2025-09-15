@@ -998,14 +998,10 @@ items:
         href: table-functions.md
       - name: ItemExpression.From
         href: itemexpression-from.md
-      - name: ItemExpression.Item
-        href: itemexpression-item.md
       - name: RowExpression.Column
         href: rowexpression-column.md
       - name: RowExpression.From
         href: rowexpression-from.md
-      - name: RowExpression.Row
-        href: rowexpression-row.md
       - name: Table.AddColumn
         href: table-addcolumn.md
       - name: Table.AddFuzzyClusterColumn
@@ -1564,6 +1560,8 @@ items:
     items:
     - name: Constants
       href: constants.md
+    - name: ItemExpression.Item
+      href: itemexpression-item.md
     - name: Number.E
       href: number-e.md
     - name: Number.Epsilon
@@ -1576,6 +1574,8 @@ items:
       href: number-pi.md
     - name: Number.PositiveInfinity
       href: number-positiveinfinity.md
+    - name: RowExpression.Row
+      href: rowexpression-row.md
   - name: Dynamic values
     items:
     - name: Dynamic values
