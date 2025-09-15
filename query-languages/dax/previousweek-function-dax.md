@@ -34,7 +34,7 @@ A table that contains all primary tagged columns and all time related columns.
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 
-## ## Example for calendar based time intelligence
+## Example for calendar based time intelligence
 
 The following sample formula creates a measure that calculates the 'previous week sales' for Internet sales in terms of fiscal calendar.
 
