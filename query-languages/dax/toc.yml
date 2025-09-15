@@ -786,6 +786,8 @@ items:
           items: 
             - name: Time intelligence functions overview
               href: time-intelligence-functions-dax.md
+            - name: CLOSINGBALANCEWEEK
+              href: closingbalanceweek-function-dax.md
             - name: CLOSINGBALANCEMONTH
               href: closingbalancemonth-function-dax.md
             - name: CLOSINGBALANCEQUARTER
@@ -798,12 +800,16 @@ items:
               href: datesbetween-function-dax.md
             - name: DATESINPERIOD
               href: datesinperiod-function-dax.md
+            - name: DATESWTD
+              href: dateswtd-function-dax.md
             - name: DATESMTD
               href: datesmtd-function-dax.md
             - name: DATESQTD
               href: datesqtd-function-dax.md
             - name: DATESYTD
               href: datesytd-function-dax.md
+            - name: ENDOFWEEK
+              href: endofweek-function-dax.md
             - name: ENDOFMONTH
               href: endofmonth-function-dax.md
             - name: ENDOFQUARTER
@@ -816,12 +822,16 @@ items:
               href: lastdate-function-dax.md
             - name: NEXTDAY
               href: nextday-function-dax.md
+            - name: NEXTWEEK
+              href: nextweek-function-dax.md
             - name: NEXTMONTH
               href: nextmonth-function-dax.md
             - name: NEXTQUARTER
               href: nextquarter-function-dax.md
             - name: NEXTYEAR
               href: nextyear-function-dax.md
+            - name: OPENINGBALANCEWEEK
+              href: openingbalanceweek-function-dax.md
             - name: OPENINGBALANCEMONTH
               href: openingbalancemonth-function-dax.md
             - name: OPENINGBALANCEQUARTER
@@ -832,6 +842,8 @@ items:
               href: parallelperiod-function-dax.md
             - name: PREVIOUSDAY
               href: previousday-function-dax.md
+            - name: PREVIOUSWEEK
+              href: previousweek-function-dax.md
             - name: PREVIOUSMONTH
               href: previousmonth-function-dax.md
             - name: PREVIOUSQUARTER
@@ -840,12 +852,16 @@ items:
               href: previousyear-function-dax.md
             - name: SAMEPERIODLASTYEAR
               href: sameperiodlastyear-function-dax.md
+            - name: STARTOFWEEK
+              href: startofweek-function-dax.md
             - name: STARTOFMONTH
               href: startofmonth-function-dax.md
             - name: STARTOFQUARTER
               href: startofquarter-function-dax.md
             - name: STARTOFYEAR
               href: startofyear-function-dax.md
+            - name: TOTALWTD
+              href: totalwtd-function-dax.md
             - name: TOTALMTD
               href: totalmtd-function-dax.md
             - name: TOTALQTD
