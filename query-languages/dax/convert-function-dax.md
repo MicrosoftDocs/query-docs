@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CONVERT"
 title: "CONVERT function (DAX)"
+ms.custom: ExampleTypeAW2020
 ---
 # CONVERT
 
@@ -19,7 +20,7 @@ CONVERT(<Expression>, <Datatype>)
 |Term|Definition|
 |--------|--------------|
 |`Expression`|Any valid expression.|
-|`Datatype`|An enumeration that includes: INTEGER(Whole Number), DOUBLE(Decimal Number), STRING(Text), BOOLEAN(True/False), CURRENCY(Fixed Decimal Number), DATETIME(Date, Time, etc).|
+|`Datatype`|An enumeration that includes: BOOLEAN/LOGICAL, CURRENCY/DECIMAL, DATETIME, DOUBLE, INTEGER/INT64, STRING/TEXT.|
 
 ## Return value
 
@@ -29,9 +30,15 @@ Returns the value of `Expression`, translated to `Datatype`.
 
 - The function returns an error when a value cannot be converted to the specified data type.
 
-- DAX calculated columns must be of a single data type. Since MEDIAN and MEDIANX functions over an integer column return mixed data types, either integer or double, the following calculated column expression will return an error as a result: `MedianNumberCarsOwned = MEDIAN(DimCustomer[NumberCarsOwned])`.
+- DAX calculated columns must be of a single data type. Since MEDIAN and MEDIANX functions over an integer column return mixed data types, either integer or double, the following calculated column expression will return an error as a result: 
+    ```dax
+    MedianOrderQuantity = MEDIAN ( [Order Quantity] )
+    ```
+
 - To avoid mixed data types, change the expression to always return the double data type, for example:
-    `MedianNumberCarsOwned = MEDIANX(DimCustomer, CONVERT([NumberCarsOwned], DOUBLE))`.
+    ```dax
+    MedianOrderQuantity = MEDIANX('Sales', CONVERT([Order Quantity], DOUBLE))
+    ```
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
