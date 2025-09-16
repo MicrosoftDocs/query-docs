@@ -6,23 +6,25 @@ title: "ENDOFQUARTER function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns the last date of the quarter in the current context for the specified column of dates.
+For date column input, returns the last date of quarter in the current context for the specified column of dates.  
+For calendar input, returns a table for last date of quarter, in the current context. The table contains all primary tagged columns and all time related columns.
 
 ## Syntax
 
-```dax
-ENDOFQUARTER(<dates>)
+```
+ENDOFQUARTER(<dates> or <calendar>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------| 
-|`dates`|A column that contains dates.|
+|`dates or calendar`|A column that contains dates or a calendar reference|
 
 ## Return value
 
-A table containing a single column and single row with a date value.
+For date column input, a table containing a single column and single row with a date value.  
+For calendar input, a table that contains all primary tagged columns and all time related columns.
 
 ## Remarks
 
@@ -43,9 +45,18 @@ The following sample formula creates a measure that returns the end of the quart
 = ENDOFQUARTER(DateTime[DateKey])
 ```
 
+## Example for calendar based time intelligence
+
+The following sample formula returns tagged primary columns that corresponds to end of quarter, for the fiscal calendar.
+
+```dax
+= ENDOFQUARTER(FiscalCalendar)
+```
+
 ## Related content
 
 [Date and time functions](date-and-time-functions-dax.md)
 [Time intelligence functions](time-intelligence-functions-dax.md)
-[ENDOFYEAR function](endofyear-function-dax.md)
+[ENDOFWEEK function](endofweek-function-dax.md)
 [ENDOFMONTH function](endofmonth-function-dax.md)
+[ENDOFYEAR function](endofyear-function-dax.md)

@@ -1,12 +1,15 @@
 ---
 description: "Learn more about: DATESBETWEEN"
 title: "DATESBETWEEN function (DAX)"
+ms.custom: ExampleTypeAW2020
 ---
 # DATESBETWEEN
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns a table that contains a column of dates that begins with a specified start date and continues until a specified end date.
+For date column input, returns a table that contains a column of dates that begins with a specified start date and continues until a specified end date.
+
+For calendar input, returns a table that begins with a specified start date and continues until a specified end date. The table contains all primary tagged columns and all time related columns.
 
 This function is suited to pass as a filter to the [CALCULATE](calculate-function-dax.md) function. Use it to filter an expression by a custom date range.
 
@@ -15,33 +18,38 @@ This function is suited to pass as a filter to the [CALCULATE](calculate-functio
 
 ## Syntax
 
-```dax
-DATESBETWEEN(<Dates>, <StartDate>, <EndDate>)
+```
+DATESBETWEEN(<dates> or <calendar>, <StartDate>, <EndDate>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`Dates`|A date column.|
-|`StartDate`|A date expression.|
-|`EndDate`|A date expression.|
+|`dates or calendar`|A column that contains dates or a calendar reference|
+|`StartDate`|A date/day expression. If calendar syntax is used, please use the same data type as the primary column tagged to the Day category.|
+|`EndDate`|A date/day expression. If calendar syntax is used, please use the same data type as the primary column tagged to the Day category.|
 
 ## Return value
 
-A table containing a single column of date values.
+For date column input, a table containing a single column of date values.  
+For calendar input, a table that contains all primary tagged columns and all time related columns.
 
 ## Remarks
 
 - In the most common use case, `dates` is a reference to the date column of a marked date table.
 
-- If `StartDate` is BLANK, then `StartDate` will be the earliest value in the `dates` column.
+- If `StartDate` is BLANK, then `StartDate` will be the earliest value in the `dates` column. For calendar, it will be the first value in column that is tagged as day.
 
-- If `EndDate` is BLANK, then `EndDate` will be the latest value in the `dates` column.
+- If `EndDate` is BLANK, then `EndDate` will be the latest value in the `dates` column. For calendar, it will be the last value in column that is tagged as day.
 
 - Dates used as the `StartDate` and `EndDate` are inclusive. So, for example, if the `StartDate` value is July 1, 2019, then that date will be included in the returned table (providing the date exists in the `dates` column).
 
-- The returned table can only contain dates stored in the `Dates` column. So, for example, if the `Dates` column starts from July 1, 2017, and the `StartDate` value is July 1, 2016, the returned table will start from July 1, 2017.
+- For date column input, the returned table can only contain dates stored in the `Dates` column. So, for example, if the `Dates` column starts from July 1, 2017, and the `StartDate` value is July 1, 2016, the returned table will start from July 1, 2017.
+
+- For calendar input, if the input date is not found in tagged day column, it will be treated as BLANK and thus the first/last value will be used.
+
+- For calendar input, use the same data type and format as the tagged day column for the start date and end date. For example, if the column uses the format YYYY-Sn-Qn-Mnn-Wnn-Dnn (e.g., "2014-S2-Q4-M11-W45-D03"), the start date and end date must follow the same format (e.g., "2015-S2-Q4-M11-W45-D03"). Otherwise, the behavior is undefined.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
@@ -55,17 +63,26 @@ Notice that the formula uses the [MAX](max-function-dax.md) function. This funct
 
 ```dax
 Customers LTD =
-CALCULATE(
-    DISTINCTCOUNT(Sales[CustomerKey]),
-    DATESBETWEEN(
-        'Date'[Date],
-        BLANK(),
-        MAX('Date'[Date])
-    )
+CALCULATE (
+    DISTINCTCOUNT ( Sales[CustomerKey] ),
+    DATESBETWEEN ( 'Date'[Date], BLANK (), MAX ( 'Date'[Date] ) )
 )
 ```
 
 Consider that the earliest date stored in the **Date** table is July 1, 2017. So, when a report filters the measure by the month of June 2020, the DATESBETWEEN function returns a date range from July 1, 2017 until June 30, 2020.
+
+## Example for calendar based time intelligence
+The following **Sales** table measure definition uses the DATESBETWEEN function to produce a _life-to-date_ (LTD) calculation. Life-to-date represents the accumulation of a measure over time since the very beginning of time.
+
+Notice that the formula uses the [MAX](max-function-dax.md) function. This function returns the max datekey that's in the filter context. So, the DATESBETWEEN function returns a table of dates beginning from the earliest date until the latest date being reported. DateKey is used as an example to show that the "Day" category can be tagged with a column that is not date-typed
+
+```dax
+Customers LTD =
+CALCULATE (
+    DISTINCTCOUNT ( Sales[CustomerKey] ),
+    DATESBETWEEN ( FiscalCalendar, BLANK (), MAX ( 'Date'[DateKey] ) )
+)
+```
 
 ## Related content
 
