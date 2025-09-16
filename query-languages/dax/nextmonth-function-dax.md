@@ -6,27 +6,30 @@ title: "NEXTMONTH function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns a table that contains a column of all dates from the next month, based on the first date in the `dates` column in the current context.
+For date column input, returns a table that contains a column of all dates from the next month, based on the last date in the `dates` column in the current context.
+
+For calendar input, returns a table for all dates from the next month, based on the last date in the current context. The table contains all primary tagged columns and all time related columns.
 
 ## Syntax
 
-```dax
-NEXTMONTH(<dates>)
+```
+NEXTMONTH(<dates> or <calendar>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates`|A column containing dates.|
+|`dates or calendar`|A column that contains dates or a calendar reference|
 
 ## Return value
 
-A table containing a single column of date values.
+For date column input, a table containing a single column of date values.
+For calendar input, a table that contains all primary tagged columns and all time related columns for next month.
 
 ## Remarks
 
-- This function returns all dates from the next day to the first date in the input parameter. For example, if the first date in the `dates` argument refers to June 10, 2009; then this function returns all dates for the month of July, 2009.
+- This function returns all dates from the next month to the last date in the input parameter. For example, if the last date in the `dates` argument refers to June 10, 2009; then this function returns all dates for the month of July, 2009.
 
 - The `dates` argument can be any of the following:
   - A reference to a date/time column.
@@ -42,7 +45,22 @@ A table containing a single column of date values.
 The following sample formula creates a measure that calculates the 'next month sales' for Internet sales.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), NEXTMONTH('DateTime'[DateKey]))
+= CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    NEXTMONTH ( 'DateTime'[DateKey] )
+)
+```
+
+## Example for calendar based time intelligence
+
+The following sample formula creates a measure that calculates the 'next month sales' for Internet sales.
+
+```dax
+=
+CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    NEXTMONTH ( FiscalCalendar )
+)
 ```
 
 ## Related content
@@ -50,5 +68,6 @@ The following sample formula creates a measure that calculates the 'next month s
 [Time intelligence functions](time-intelligence-functions-dax.md)
 [Date and time functions](date-and-time-functions-dax.md)
 [NEXTDAY function](nextday-function-dax.md)
+[NEXTWEEK function](nextweek-function-dax.md)
 [NEXTQUARTER function](nextquarter-function-dax.md)
 [NEXTYEAR function](nextyear-function-dax.md)

@@ -6,23 +6,25 @@ title: "STARTOFQUARTER function (DAX)"
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns the first date of the quarter in the current context for the specified column of dates.
+For date column input, returns the first date of quarter in the current context for the specified column of dates.  
+For calendar input, returns a table for first date of quarter, in the current context. A table that contains all primary tagged columns and all time related columns.
 
 ## Syntax
 
-```dax
-STARTOFQUARTER(<dates>)
+```
+STARTOFQUARTER(<dates> or <calendar>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates`|A column that contains dates.|
+|`dates or calendar`|A column that contains dates or a calendar reference|
 
 ## Return value
 
-A table containing a single column and single row with a date value.
+For date column input, a table containing a single column and single row with a date value.  
+For calendar input, a table that contains all primary tagged columns and all time related columns.
 
 ## Remarks
 
@@ -43,8 +45,17 @@ The following sample formula creates a measure that returns the start of the qua
 = STARTOFQUARTER(DateTime[DateKey])
 ```
 
+## Example for calendar based time intelligence
+
+The following sample formula creates a table that returns tagged columns that corresponds to the start of the quarter, for the fiscal calendar.
+
+```dax
+= STARTOFQUARTER(FiscalCalendar)
+```
+
 ## Related content
 [Date and time functions](date-and-time-functions-dax.md)
 [Time intelligence functions](time-intelligence-functions-dax.md)
 [STARTOFYEAR](startofyear-function-dax.md)
 [STARTOFMONTH](startofmonth-function-dax.md)
+[STARTOFWEEK](startofweek-function-dax.md)

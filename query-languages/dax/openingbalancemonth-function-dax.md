@@ -10,8 +10,8 @@ Evaluates the `expression` at the date corresponding to the end of the previous 
 
 ## Syntax
 
-```dax
-OPENINGBALANCEMONTH(<expression>,<dates>[,<filter>])
+```
+OPENINGBALANCEMONTH(<expression>,<dates> or <calendar>[,<filter>])
 ```
 
 ### Parameters
@@ -19,12 +19,12 @@ OPENINGBALANCEMONTH(<expression>,<dates>[,<filter>])
 |Term|Definition|
 |--------|--------------|
 |`expression`|An expression that returns a scalar value.|
-|`dates`|A column that contains dates.|
+|`dates or calendar`|A column that contains dates or a calendar reference.|
 |`filter`|(optional) An expression that specifies a filter to apply to the current context.|
 
 ## Return value
 
-A scalar value that represents the `expression` evaluated at the first date of the month in the current context.
+A scalar value that represents the `expression` at the end of the previous month in the current context.
 
 ## Remarks
 
@@ -44,11 +44,33 @@ A scalar value that represents the `expression` evaluated at the first date of t
 The following sample formula creates a measure that calculates the 'Month Start Inventory Value' of the product inventory.
 
 ```dax
-= OPENINGBALANCEMONTH(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])
+= OPENINGBALANCEMONTH (
+    SUMX (
+        ProductInventory,
+        ProductInventory[UnitCost] * ProductInventory[UnitsBalance]
+    ),
+    DateTime[DateKey]
+)
+```
+
+## Example for calendar based time intelligence
+
+The following sample formula creates a measure that calculates the 'Month Start Inventory Value' of the product inventory in terms of fiscal calendar.
+
+```dax
+=
+OPENINGBALANCEMONTH (
+    SUMX (
+        ProductInventory,
+        ProductInventory[UnitCost] * ProductInventory[UnitsBalance]
+    ),
+    FiscalCalendar
+)
 ```
 
 ## Related content
 
+[OPENINGBALANCEWEEK function](openingbalanceweek-function-dax.md)
 [OPENINGBALANCEYEAR function](openingbalanceyear-function-dax.md)
 [OPENINGBALANCEQUARTER function](openingbalancequarter-function-dax.md)
 [Time intelligence functions](time-intelligence-functions-dax.md)

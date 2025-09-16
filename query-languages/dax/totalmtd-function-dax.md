@@ -10,8 +10,8 @@ Evaluates the value of the `expression` for the month to date, in the current co
 
 ## Syntax
 
-```dax
-TOTALMTD(<expression>,<dates>[,<filter>])
+```
+TOTALMTD(<expression>,<dates> or <calendar>[,<filter>])
 ```
 
 ### Parameters
@@ -19,12 +19,12 @@ TOTALMTD(<expression>,<dates>[,<filter>])
 |Parameter|Definition|
 |-------------|--------------|
 |`expression`|An expression that returns a scalar value.|
-|`dates`|A column that contains dates.|
+|`dates or calendar`|A column that contains dates or a calendar reference.|
 |`filter`|(optional) An expression that specifies a filter to apply to the current context.|
 
 ## Return value
 
-A scalar value that represents the `expression` evaluated for the dates in the current month-to-date, given the dates in `dates`.
+A scalar value that represents the `expression` evaluated for the dates in the current month-to-date, given the dates in `dates` or `calendar`.
 
 ## Remarks
 
@@ -47,9 +47,18 @@ The following sample formula creates a measure that calculates the 'month runnin
 = TOTALMTD(SUM(InternetSales_USD[SalesAmount_USD]),DateTime[DateKey])
 ```
 
+## Example for calendar based time intelligence
+
+The following sample formula creates a measure that calculates the 'month running total' or 'month running sum' for Internet sales in terms of fiscal calendar.
+
+```dax
+= TOTALMTD(SUM(InternetSales_USD[SalesAmount_USD]), FiscalCalendar)
+```
+
 ## Related content
 
 [ALL](all-function-dax.md)
 [CALCULATE](calculate-function-dax.md)
 [TOTALYTD](totalytd-function-dax.md)
 [TOTALQTD](totalqtd-function-dax.md)
+[TOTALWTD](totalwtd-function-dax.md)
