@@ -65,10 +65,9 @@ DEFINE
 ```dax
 DEFINE
     /// AddTax takes in amount and returns amount including tax
-    FUNCTION AddTax = (
-            amount : NUMERIC
-        ) =>
-        amount * 1.1
+    FUNCTION AddTax = 
+        ( amount : NUMERIC ) =>
+            amount * 1.1
 
 EVALUATE
 { AddTax ( 10 ) }
@@ -208,16 +207,16 @@ You can nest UDFs by calling a function from another. In this example we define 
 ```dax
 DEFINE
     /// AddTax takes in amount and returns amount including tax
-    FUNCTION AddTax = (
-            amount : NUMERIC
-        ) =>
-        amount * 1.1
+    FUNCTION AddTax = 
+        ( amount : NUMERIC ) =>
+            amount * 1.1
 
-	FUNCTION AddTaxAndDiscount = (
+	FUNCTION AddTaxAndDiscount = 
+        (
 			amount : NUMERIC,
 			discount : NUMERIC
 		) =>
-		AddTax ( amount - discount )
+		    AddTax ( amount - discount )
 
 EVALUATE
 { AddTaxAndDiscount ( 10, 2 ) }
@@ -330,7 +329,7 @@ EVALUATE
     CALCULATE ( CountRowsNow ( 'Sales' ), 'Date'[Fiscal Year] = "FY2020" ),
     CALCULATE ( CountRowsLater ( 'Sales' ), 'Date'[Fiscal Year] = "FY2020" )
 }
-// returns 121253, 84285
+// returns 84285, 121253
 ```
 
 CountRowsNow returns the count of sales for FY2020 only. The 'Sales' table is already filtered by the year before entering the function, so `ALL('Date')` inside the function has no effect.
