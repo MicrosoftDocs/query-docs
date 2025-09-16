@@ -330,7 +330,7 @@ EVALUATE
     CALCULATE ( CountRowsNow ( 'Sales' ), 'Date'[Fiscal Year] = "FY2020" ),
     CALCULATE ( CountRowsLater ( 'Sales' ), 'Date'[Fiscal Year] = "FY2020" )
 }
-// returns 121253, 84285
+// returns 84285, 121253
 ```
 
 CountRowsNow returns the count of sales for FY2020 only. The 'Sales' table is already filtered by the year before entering the function, so `ALL('Date')` inside the function has no effect.
