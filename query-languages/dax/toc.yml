@@ -354,8 +354,18 @@ items:
               href: isafter-function-dax.md
             - name: ISBLANK
               href: isblank-function-dax.md
+            - name: ISBOOLEAN
+              href: isboolean-function-dax.md
             - name: ISCROSSFILTERED
               href: iscrossfiltered-function-dax.md
+            - name: ISCURRENCY
+              href: iscurrency-function-dax.md
+            - name: ISDATETIME
+              href: isdatetime-function-dax.md
+            - name: ISDECIMAL
+              href: isdecimal-function-dax.md
+            - name: ISDOUBLE
+              href: isdouble-function-dax.md
             - name: ISEMPTY
               href: isempty-function-dax.md
             - name: ISERROR
@@ -366,18 +376,26 @@ items:
               href: isfiltered-function-dax.md
             - name: ISINSCOPE
               href: isinscope-function-dax.md
+            - name: ISINT64
+              href: isint64-function-dax.md
+            - name: ISINTEGER
+              href: isinteger-function-dax.md
             - name: ISLOGICAL
               href: islogical-function-dax.md
             - name: ISNONTEXT
               href: isnontext-function-dax.md
             - name: ISNUMBER
               href: isnumber-function-dax.md
+            - name: ISNUMERIC
+              href: isnumeric-function-dax.md
             - name: ISODD
               href: isodd-function-dax.md
             - name: ISONORAFTER
               href: isonorafter-function-dax.md
             - name: ISSELECTEDMEASURE
               href: isselectedmeasure-function-dax.md
+            - name: ISSTRING
+              href: isstring-function-dax.md
             - name: ISSUBTOTAL
               href: issubtotal-function-dax.md
             - name: ISTEXT
@@ -544,6 +562,8 @@ items:
               href: error-function-dax.md
             - name: EVALUATEANDLOG
               href: evaluateandlog-function-dax.md
+            - name: EXTERNALMEASURE
+              href: externalmeasure-function-dax.md
             - name: TOCSV
               href: tocsv-function-dax.md
             - name: TOJSON
@@ -876,6 +896,8 @@ items:
         href: define-statement-dax.md
       - name: EVALUATE
         href: evaluate-statement-dax.md
+      - name: FUNCTION
+        href: function-statement-dax.md
       - name: MEASURE
         href: measure-statement-dax.md
       - name: ORDER BY

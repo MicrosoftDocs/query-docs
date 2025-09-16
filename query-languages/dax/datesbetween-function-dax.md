@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DATESBETWEEN"
 title: "DATESBETWEEN function (DAX)"
+ms.custom: ExampleTypeAW2020
 ---
 # DATESBETWEEN
 

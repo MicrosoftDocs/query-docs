@@ -1,9 +1,9 @@
 ---
-description: "Learn more about: ISNUMBER"
-title: "ISNUMBER function (DAX)"
+description: "Learn more about: ISNUMERIC"
+title: "ISNUMERIC function (DAX)"
 ms.custom: ExampleTypeGeneric
 ---
-# ISNUMBER
+# ISNUMERIC
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
@@ -12,7 +12,7 @@ Checks whether a value is a number, and returns `TRUE` or `FALSE`.
 ## Syntax
 
 ```dax
-ISNUMBER(<value>)
+ISNUMERIC(<value>)
 ```
 
 ### Parameters
@@ -28,22 +28,22 @@ ISNUMBER(<value>)
 ## Remarks
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
-- This function is an alias of [ISNUMERIC](isnumeric-function-dax.md).
+- This function is an alias of [ISNUMBER](isnumber-function-dax.md).
 
 ## Example
 
-The following DAX query shows the behavior of ISNUMBER.
+The following DAX query shows the behavior of ISNUMERIC.
 
 ```dax
 EVALUATE
 {
-    IF ( ISNUMBER ( 0 ), "Is number", "Is Not number" ), // RETURNS: Is number
-    IF ( ISNUMBER ( 3.1E-1 ), "Is number", "Is Not number" ), // RETURNS: Is number
-    IF ( ISNUMBER ( "42" ), "Is number", "Is Not number" ) // RETURNS: Is Not number
+    IF ( ISNUMERIC ( 0 ), "Is number", "Is Not number" ), // RETURNS: Is number
+    IF ( ISNUMERIC ( 3.1E-1 ), "Is number", "Is Not number" ), // RETURNS: Is number
+    IF ( ISNUMERIC ( "42" ), "Is number", "Is Not number" ) // RETURNS: Is Not number
 }
 ```
 
 ## Related content
 
-- [ISNUMERIC](isnumeric-function-dax.md)
+- [ISNUMBER](isnumber-function-dax.md)
 - [Information functions](information-functions-dax.md)
