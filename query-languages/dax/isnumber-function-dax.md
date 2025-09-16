@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISNUMBER"
 title: "ISNUMBER function (DAX)"
+ms.custom: ExampleTypeGeneric
 ---
 # ISNUMBER
 
@@ -26,23 +27,23 @@ ISNUMBER(<value>)
 
 ## Remarks
 
-[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+- This function is an alias of [ISNUMERIC](isnumeric-function-dax.md).
 
 ## Example
 
-The following three samples show the behavior of ISNUMBER.
+The following DAX query shows the behavior of ISNUMBER.
 
 ```dax
-//RETURNS: Is number
-= IF(ISNUMBER(0), "Is number", "Is Not number")
-
-//RETURNS: Is number
-= IF(ISNUMBER(3.1E-1),"Is number", "Is Not number")
-
-//RETURNS: Is Not number
-= IF(ISNUMBER("123"), "Is number", "Is Not number")
+EVALUATE
+{
+    IF ( ISNUMBER ( 0 ), "Is number", "Is Not number" ), // RETURNS: Is number
+    IF ( ISNUMBER ( 3.1E-1 ), "Is number", "Is Not number" ), // RETURNS: Is number
+    IF ( ISNUMBER ( "42" ), "Is number", "Is Not number" ) // RETURNS: Is Not number
+}
 ```
 
 ## Related content
 
-[Information functions](information-functions-dax.md)
+- [ISNUMERIC](isnumeric-function-dax.md)
+- [Information functions](information-functions-dax.md)

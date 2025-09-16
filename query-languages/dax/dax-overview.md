@@ -236,6 +236,10 @@ The time intelligence functions provided in DAX let you create calculations that
 
 These functions return a table or manipulate existing tables. For example, by using ADDCOLUMNS you can add calculated columns to a specified table, or you can return a summary table over a set of groups with the SUMMARIZECOLUMNS function. To learn more, see [Table manipulation functions](table-manipulation-functions-dax.md).
 
+### User-defined functions
+
+DAX user-defined functions (UDFs) are a powerful feature that lets you define reusable logic with parameters, just like functions in traditional programming languages. With UDFs, you can write a function once and reuse it across measures, calculated columns, visual calculations, and even other UDFs. This makes your DAX code easier to maintain, debug, and share. To learn more, see [DAX user-defined functions (preview)](best-practices/dax-user-defined-functions.md).
+
 ## Variables
 
 You can create variables within an expression by using [VAR](var-dax.md). VAR is technically not a function, it's a keyword to store the result of an expression as a named variable. That variable can then be passed as an argument to other measure expressions. For example:

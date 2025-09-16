@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISLOGICAL"
 title: "ISLOGICAL function (DAX)"
+ms.custom: ExampleTypeGeneric
 ---
 # ISLOGICAL
 
@@ -26,23 +27,22 @@ ISLOGICAL(<value>)
 
 ## Remarks
 
-[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+- This function is an alias of [ISBOOLEAN](isboolean-function-dax.md).
 
 ## Example
 
-The following three samples show the behavior of ISLOGICAL.
+The following DAX query shows the behavior of ISLOGICAL.
 
 ```dax
-//RETURNS: Is Boolean type or Logical
-= IF(ISLOGICAL(true), "Is Boolean type or Logical", "Is different type")
-
-//RETURNS: Is Boolean type or Logical
-= IF(ISLOGICAL(false), "Is Boolean type or Logical", "Is different type")
-
-//RETURNS: Is different type
-= IF(ISLOGICAL(25), "Is Boolean type or Logical", "Is different type")
+EVALUATE
+{
+    IF ( ISLOGICAL ( TRUE ), "Is Boolean type or Logical", "Is different type" ), // RETURNS: Is Boolean type or Logical
+    IF ( ISLOGICAL ( FALSE ), "Is Boolean type or Logical", "Is different type" ), // RETURNS: Is Boolean type or Logical
+    IF ( ISLOGICAL ( 42 ), "Is Boolean type or Logical", "Is different type" ) // RETURNS: Is different type
+}
 ```
 
 ## Related content
-
-[Information functions](information-functions-dax.md)
+- [ISBOOLEAN](isboolean-function-dax.md)
+- [Information functions](information-functions-dax.md)

@@ -40,7 +40,7 @@ The calculated result of the measure expression.
 
 ## Related content
 
-[DEFINE](define-statement-dax.md)
-[EVALUATE](evaluate-statement-dax.md)
-[VAR](var-dax.md)
-[DAX queries](dax-queries.md)
+- [DEFINE](define-statement-dax.md)
+- [EVALUATE](evaluate-statement-dax.md)
+- [VAR](var-dax.md)
+- [DAX queries](dax-queries.md)
