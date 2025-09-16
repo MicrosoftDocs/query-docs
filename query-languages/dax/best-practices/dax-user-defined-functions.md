@@ -65,10 +65,9 @@ DEFINE
 ```dax
 DEFINE
     /// AddTax takes in amount and returns amount including tax
-    FUNCTION AddTax = (
-            amount : NUMERIC
-        ) =>
-        amount * 1.1
+    FUNCTION AddTax = 
+        ( amount : NUMERIC ) =>
+            amount * 1.1
 
 EVALUATE
 { AddTax ( 10 ) }
@@ -208,16 +207,16 @@ You can nest UDFs by calling a function from another. In this example we define 
 ```dax
 DEFINE
     /// AddTax takes in amount and returns amount including tax
-    FUNCTION AddTax = (
-            amount : NUMERIC
-        ) =>
-        amount * 1.1
+    FUNCTION AddTax = 
+        ( amount : NUMERIC ) =>
+            amount * 1.1
 
-	FUNCTION AddTaxAndDiscount = (
+	FUNCTION AddTaxAndDiscount = 
+        (
 			amount : NUMERIC,
 			discount : NUMERIC
 		) =>
-		AddTax ( amount - discount )
+		    AddTax ( amount - discount )
 
 EVALUATE
 { AddTaxAndDiscount ( 10, 2 ) }
