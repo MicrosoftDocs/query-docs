@@ -10,8 +10,8 @@ Evaluates the `expression` at the date corresponding to the end of the previous 
 
 ## Syntax
 
-```dax
-OPENINGBALANCEYEAR(<expression>,<dates>[,<filter>][,<year_end_date>])
+```
+OPENINGBALANCEYEAR(<expression>,<dates> or <calendar>[,<filter>][,<year_end_date>])
 ```
 
 ### Parameters
@@ -19,13 +19,13 @@ OPENINGBALANCEYEAR(<expression>,<dates>[,<filter>][,<year_end_date>])
 |Term|Definition|
 |--------|--------------|
 |`expression`|An expression that returns a scalar value.|
-|`dates`|A column that contains dates.|
+|`dates or calendar`|A column that contains dates or a calendar reference.|
 |`filter`|(optional) An expression that specifies a filter to apply to the current context.|
-|`year_end_date`|(optional) A literal string with a date that defines the year-end date. The default is December 31.|
+|`year_end_date`|(optional) A literal string with a date that defines the year-end date. The default is December 31. Only applies when date column is used.|
 
 ## Return value
 
-A scalar value that represents the `expression` evaluated at the first date of the year in the current context.
+A scalar value that represents the `expression` evaluated at the end of the previous year in the current context.
 
 ## Remarks
 
@@ -40,6 +40,8 @@ A scalar value that represents the `expression` evaluated at the first date of t
 
 - The `year_end_date` parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is ignored.
 
+- The `year_end_date` parameter must not be specified when a calendar is used.
+
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example
@@ -47,11 +49,34 @@ A scalar value that represents the `expression` evaluated at the first date of t
 The following sample formula creates a measure that calculates the 'Year Start Inventory Value' of the product inventory.
 
 ```dax
-= OPENINGBALANCEYEAR(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])
+=
+OPENINGBALANCEYEAR (
+    SUMX (
+        ProductInventory,
+        ProductInventory[UnitCost] * ProductInventory[UnitsBalance]
+    ),
+    DateTime[DateKey]
+)
+```
+
+## Example for calendar based time intelligence
+
+The following sample formula creates a measure that calculates the 'Year Start Inventory Value' of the product inventory in terms of fiscal calendar.
+
+```dax
+=
+OPENINGBALANCEYEAR (
+    SUMX (
+        ProductInventory,
+        ProductInventory[UnitCost] * ProductInventory[UnitsBalance]
+    ),
+    FiscalCalendar
+)
 ```
 
 ## Related content
 
+[OPENINGBALANCEWEEK function](openingbalanceweek-function-dax.md)
 [OPENINGBALANCEQUARTER function](openingbalancequarter-function-dax.md)
 [OPENINGBALANCEMONTH function](openingbalancemonth-function-dax.md)
 [Time intelligence functions](time-intelligence-functions-dax.md)

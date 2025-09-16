@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISTEXT"
 title: "ISTEXT function (DAX)"
+ms.custom: ExampleTypeGeneric
 ---
 # ISTEXT
 
@@ -26,26 +27,24 @@ ISTEXT(<value>)
 
 ## Remarks
 
-[!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+- [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
+- This function is an alias of [ISSTRING](isstring-function-dax.md).
 
 ## Example
 
-The following examples show the behavior of the ISTEXT function.
+The following DAX query shows the behavior of the ISTEXT function.
 
 ```dax
-//RETURNS: Is Text
-= IF(ISTEXT("text"), "Is Text", "Is Non-Text")
-
-//RETURNS: Is Text
-= IF(ISTEXT(""), "Is Text", "Is Non-Text")
-
-//RETURNS: Is Non-Text
-= IF(ISTEXT(1), "Is Text", "Is Non-Text")
-
-//RETURNS: Is Non-Text
-= IF(ISTEXT(BLANK()), "Is Text", "Is Non-Text")
+EVALUATE
+{
+    IF ( ISTEXT ( "text" ), "Is Text", "Is Non-Text" ), // RETURNS: Is Text
+    IF ( ISTEXT ( "" ), "Is Text", "Is Non-Text" ), // RETURNS: Is Text
+    IF ( ISTEXT ( 42 ), "Is Text", "Is Non-Text" ), // RETURNS: Is Non-Text
+    IF ( ISTEXT ( BLANK () ), "Is Text", "Is Non-Text" ) // RETURNS: Is Non-Text
+}
 ```
 
 ## Related content
 
-[Information functions](information-functions-dax.md)
+- [ISSTRING](isstring-function-dax.md)
+- [Information functions](information-functions-dax.md)

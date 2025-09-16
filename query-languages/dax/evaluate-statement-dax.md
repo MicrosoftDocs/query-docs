@@ -39,8 +39,8 @@ Returns all rows and columns from the Internet Sales table, as a table.
 
 ## Related content
 
-[ORDER BY](orderby-statement-dax.md)
-[START AT](startat-statement-dax.md)
-[DEFINE](define-statement-dax.md)
-[VAR](var-dax.md)
-[DAX queries](dax-queries.md)
+- [ORDER BY](orderby-statement-dax.md)
+- [START AT](startat-statement-dax.md)
+- [DEFINE](define-statement-dax.md)
+- [VAR](var-dax.md)
+- [DAX queries](dax-queries.md)
