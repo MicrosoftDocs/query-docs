@@ -100,10 +100,10 @@ Comparable data types include:
 |Name|Description|
 |------------|---------------|
 |[List.Max](list-max.md)|Returns the maximum value or the default value for an empty list.|
-|[List.MaxN](list-maxn.md)|Returns the maximum value(s) in the list. The number of values to return or a filtering condition must be specified.|
+|[List.MaxN](list-maxn.md)|Returns the maximum value(s) in the list. The number of values to return or a filter condition must be specified.|
 |[List.Median](list-median.md)|Returns the median value in the list.|
 |[List.Min](list-min.md)|Returns the minimum value or the default value for an empty list.|
-|[List.MinN](list-minn.md)|Returns the minimum value(s) in the list. The number of values to return or a filtering condition may be specified.|
+|[List.MinN](list-minn.md)|Returns the minimum value(s) in the list. The number of values to return or a filter condition may be specified.|
 |[List.Sort](list-sort.md)|Sorts a list of data according to the criteria specified.|
 |[List.Percentile](list-percentile.md)|Returns one or more sample percentiles corresponding to the given probabilities.|
 
