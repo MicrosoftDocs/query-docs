@@ -23,7 +23,8 @@ Converts a specified list of records into a table.
 * `columns`: (Optional) A list of the table's column names, or the table's type.
 * `missingField`: (Optional) Specifies how to handle missing fields in a row. Use one of the following values:
   * `MissingField.Error`: Any missing fields produce an error (default).
-  * `MissingField.UseNull`: Any missing fields are included as `null` values.<br/>
+  * `MissingField.UseNull`: Any missing fields are included as `null` values.
+
   Using `MissingField.Ignore` in this parameter produces an error.
 
 ## Example 1
