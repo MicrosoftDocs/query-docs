@@ -79,7 +79,7 @@ let
         #duration(0,2,0,0),
         #duration(0,3,0,0)
     },
-    #"Start Time" = #datetime(2025, 9, 8, 19, 0, 0)
+    #"Start Time" = #datetime(2025, 9, 8, 19, 0, 0),
     #"Process Timeline" = List.Accumulate(
         #"Process Duration",
         {#"Start Time"},
