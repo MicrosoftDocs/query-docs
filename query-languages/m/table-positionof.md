@@ -22,8 +22,8 @@ Returns the row position of the first occurrence of the `row` in the `table` spe
 
 * `table`: The input table.
 * `row`: The row in the table to find the position of.
-* `occurrence`: _[Optional]_ Specifies which occurrences of the row to return.
-* `equationCriteria`: _[Optional]_ Controls the comparison between the table rows.
+* `occurrence`: (Optional) Specifies which occurrences of the row to return.
+* `equationCriteria`: (Optional) Controls the comparison between the table rows.
 
 ## Example 1
 
@@ -95,4 +95,5 @@ Table.PositionOf(
 
 ## Related content
 
-[Equation criteria](table-functions.md#equation-criteria)
+* [Occurrence](occurrence-type.md)
+* [Equation criteria](table-functions.md#equation-criteria)
