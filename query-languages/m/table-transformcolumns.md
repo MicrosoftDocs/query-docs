@@ -118,12 +118,11 @@ Move scheduled maintenance tasks that occur on a US holiday to the next day or, 
 let
     MaintenanceSchedule = #table(type table [Task = text, Date = date],
     {
-        {"HVAC Check", #date(2025, 7, 10)},              // Not a holiday
-        {"Window Washing", #date(2025, 9, 1)},           // Labor Day
-        {"Fire Drill", #date(2025, 9, 17)},              // Not a holiday
-        {"Light Bulb Replacement", #date(2025, 11, 27)}  // Thanksgiving
+        {"HVAC Check", #date(2025, 7, 10)},         // Not a holiday
+        {"Window Washing", #date(2025, 9, 1)},      // Labor Day
+        {"Fire Drill", #date(2025, 9, 17)},         // Not a holiday
+        {"Light Replacement", #date(2025, 11, 27)}  // Thanksgiving
     }),
-
     USHolidays = {
         #date(2025, 1, 1),   // New Year's Day
         #date(2025, 7, 4),   // Independence Day
@@ -131,15 +130,15 @@ let
         #date(2025, 11, 27), // Thanksgiving
         #date(2025, 12, 25)  // Christmas
     },
-
     AdjustedSchedule = Table.TransformColumns(
         MaintenanceSchedule,
         {{"Date", each if List.Contains(USHolidays, _) then
-            if Date.DayOfWeek(_, Day.Sunday) = 5 then Date.AddDays(_, 3) // Friday to Monday
-            else Date.AddDays(_, 1)                                      // Other to next day
+            if Date.DayOfWeek(_, Day.Sunday) = 5 then
+                Date.AddDays(_, 3)     // Friday to Monday
+            else 
+                Date.AddDays(_, 1)     // Other to next day
         else _, type date}}
     )
-
 in
     AdjustedSchedule
 ```
@@ -150,8 +149,8 @@ in
 #table(type table[Task = text, Date = date],
 {
     {"HVAC Check", #date(2025, 7, 10)},
-    {"Elevator Inspection", #date(2025, 9, 2)},
+    {"Window Washing", #date(2025, 9, 2)},
     {"Fire Drill", #date(2025, 9, 17)},
-    {"Generator Test", #date(2025, 11, 28)}
+    {"Light Replacement", #date(2025, 11, 28)}
 })
 ```
