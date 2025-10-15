@@ -21,12 +21,13 @@ List.MaxN(
 Returns the maximum value(s) in the specified list. After the rows are sorted, optional parameters can be specified to further filter the result.
 
 * `list`: The list of values.
-* `countOrCondition`: Specifies the number of values to return or a filtering condition. If a number is specified, a list of up to `countOrCondition` items in ascending order is returned. If a condition is specified, a list of items that initially meet the condition is returned. Once an item fails the condition, no further items are considered.
-* `comparisonCriteria`: (Optional) Specifies how to compare items in the list. If this parameter is `null`, the default comparer is used.
+* `countOrCondition`: Specifies the number of values to return or a filter condition. If a number is specified, a list of up to `countOrCondition` items in descending order is returned. If a condition is specified, the returned list includes all items that meet the condition.
+* `comparisonCriteria`: (Optional) A function that's used to transform the values before they're compared. If this parameter is `null`, then the values are compared without any transformation.
+* `includeNulls`: (Optional) Indicates whether `null` values in the list should be included in determining the maximum item. The default value is `true`.
 
 ## Example 1
 
-Find the top 5 values in the specified list
+Find the top 5 values in the specified list.
 
 **Usage**
 
@@ -40,15 +41,15 @@ List.MaxN({3, 4, 5, -1, 7, 8, 2}, 5)
 
 ## Example 2
 
-Find the word with the maximum number of characters over 3.
+Find the words with more than 3 characters.
 
 **Usage**
 
 ```powerquery-m
-let
-    Source = List.MaxN({"boy", "dog", "pony", "cat", "rabbit", "bat"}, each Text.Length(_) > 3)
-in
-    Source
+List.MaxN(
+        {"boy", "dog", "pony", "cat", "rabbit", "bat"},
+        each Text.Length(_) > 3
+    )
 ```
 
 **Output**
