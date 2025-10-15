@@ -46,7 +46,7 @@ in
 
 ## Example 2
 
-Concantenate each word in the list with a space between, but don't include a space at the beginning.
+Concatenate each word in the list with a space between, but don't include a space at the beginning.
 
 **Usage**
 
