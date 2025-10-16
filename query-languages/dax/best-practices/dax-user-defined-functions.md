@@ -12,7 +12,7 @@ ms.date: 09/15/2025
 > [!NOTE]
 > DAX user-defined functions are currently in **preview**.
 
-DAX user-defined functions (UDFs) let you package DAX logic and reuse it like any other DAX function. UDFs introduce a new `FUNCTION` keyword, optional [parameters](#parameters) (scalar, table, and references), and [type checking](#type-checking) helpers that make authoring safer and clearer. After you [define a UDF](#define-and-manage-user-define-functions), you can use it in a [measure](#calling-a-udf-in-a-measure), [calculated column](#calling-a-udf-in-a-calculated-column), [visual calculation](#calling-a-udf-in-a-visual-calculation), or even other [user-defined functions](#calling-a-udf-in-another-udf). Users can centralize business rules, improve maintainability, and evolve calculations safely over time. Functions are first-class model objects you can create and manage in [DAX query view](/power-bi/transform-model/dax-query-view) and [TMDL view](/power-bi/transform-model/desktop-tmdl-view), and they can be viewed in [Model explorer](/power-bi/transform-model/model-explorer) under the *Functions* node.
+DAX user-defined functions (UDFs) let you package DAX logic and reuse it like any other DAX function. UDFs introduce a new `FUNCTION` keyword, optional [parameters](#parameters) (scalar, table, and references), and [type checking](#type-checking) helpers that make authoring safer and clearer. After you [define a UDF](#define-and-manage-user-defined-functions), you can use it in a [measure](#calling-a-udf-in-a-measure), [calculated column](#calling-a-udf-in-a-calculated-column), [visual calculation](#calling-a-udf-in-a-visual-calculation), or even other [user-defined functions](#calling-a-udf-in-another-udf). Users can centralize business rules, improve maintainability, and evolve calculations safely over time. Functions are first-class model objects you can create and manage in [DAX query view](/power-bi/transform-model/dax-query-view) and [TMDL view](/power-bi/transform-model/desktop-tmdl-view), and they can be viewed in [Model explorer](/power-bi/transform-model/model-explorer) under the *Functions* node.
 
 
 ## Enable user-defined functions
@@ -23,7 +23,7 @@ To try UDFs in Desktop:
 3. Select **OK** and **restart** Power BI Desktop.
 
 
-## Define and manage user-define functions
+## Define and manage user-defined functions
 
 There are several locations to define and manage functions:
 - [DAX query view](#using-dax-query-view) (DQV). Define and modify functions in DQV. DQV also includes context-menu **Quick queries** (Evaluate, Define and evaluate, and Define all functions in this model) to help you test and manage UDFs fast.
