@@ -20,6 +20,8 @@ Specifies the text encoding type.
 |**TextEncoding.Ascii**|20127| Use to choose the ASCII binary form.|
 |**TextEncoding.Utf8**|65001| Use to choose the UTF8 binary form.|
 
+Any text encoding parameter should accept any of the Windows code pages by number. You don’t need an M enumeration for it.
+
 ## Applies to
 
 * [Text functions](text-functions.md)
