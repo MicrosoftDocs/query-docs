@@ -58,7 +58,7 @@ in
 
 ## Example 2
 
-Encode text to binary with a Byte Order Mark (BOM), produces a viewable hexadecimal string, then decode it back to text.
+Encode text to binary with a Byte Order Mark (BOM), produce a viewable hexadecimal string, then decode it back to text.
 
 **Usage**
 
