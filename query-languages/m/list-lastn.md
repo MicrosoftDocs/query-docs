@@ -13,11 +13,12 @@ List.LastN(<b>list</b> as list, optional <b>countOrCondition</b> as any) as any
 
 ## About
 
-Returns the last item of the list `list`. If the list is empty, an exception is thrown. This function takes an optional parameter, `countOrCondition`, to support gathering multiple items or filtering items. `countOrCondition` can be specified in three ways:
+Returns a list of the last item or items in the specified list.
 
-* If a number is specified, up to that many items are returned.
-* If a condition is specified, all items are returned that initially meet the condition, starting at the end of the list. Once an item fails the condition, no further items are considered.
-* If this parameter is null the last item in the list is returned.
+* `list`: The list to examine. If the list is empty, an empty list is returned.
+* `countOrCondition`: (Optional) Supports gathering multiple items or filtering items. Although this parameter is listed as optional, an error occurs if this value isn't provided or is `null`. This parameter can be specified in two ways:
+  * If a number is specified, up to that many items are returned.
+  * If a condition is specified, all items are returned that meet the condition, starting at the end of the list. Once an item fails the condition, no further items are considered.
 
 ## Example 1
 
