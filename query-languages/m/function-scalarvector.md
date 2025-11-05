@@ -37,7 +37,10 @@ let
         scoreChunk = (chunk) => Table.TransformRows(chunk, each Compute.ScoreScalar([left], [right]))
       in
         List.Combine(List.Transform(chunks, scoreChunk)),
-    Compute.Score = Function.ScalarVector(type function (left as number, right as number) as number, Compute.ScoreVector),
+    Compute.Score = Function.ScalarVector(
+        type function (left as number, right as number) as number, 
+        Compute.ScoreVector
+    ),
     Final = Table.AddColumn(
         Table.FromRecords({
             [a = 1, b = 2],
