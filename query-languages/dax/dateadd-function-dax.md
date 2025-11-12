@@ -22,7 +22,7 @@ DATEADD(<dates> or <calendar>, <number_of_intervals>, <interval>[,<Extension>],[
 |`dates or calendar`|A column that contains dates or a calendar reference.|
 |`number_of_intervals`|An integer that specifies the number of intervals to add to or subtract from the dates.|
 |`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`, `week`, `day`. The week enum is only applicable when a calendar reference is provided.|
-|`extension`|Only applicable when a calendar reference is provided. Define behavior when the original time period has fewer dates than the resulting time period. Valid values are: EXTENDING (Default), PRECISE. |
+|`extension`|Only applicable when a calendar reference is provided. Define behavior when the original time period has fewer dates than the resulting time period. Valid values are: EXTENDING (Default), PRECISE, ENDALIGNED. |
 |`truncation`|Only applicable when a calendar reference is provided. Define behavior when the original time period has more dates than the resulting time period. Valid values are: BLANKS (Default), ANCHORED.|
 
 ## Return value
@@ -106,6 +106,9 @@ Controls how the function behaves when the destination month is **longer** than 
 
 - **`Extending`**: Allows the window to expand toward the **end of the month** if needed.  
   → `Feb 25–28` → `March 25–31`
+
+- **`EndAligned`**: Aligns the end date with the end of the destination month when the selection reaches the end of its month; otherwise preserves relative positions.  
+  → `Feb 28` → `March 31`, while `Feb 27` → `March 27`
 
 ### Truncation Parameter (for large → small month shifts)
 
