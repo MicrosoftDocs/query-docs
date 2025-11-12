@@ -41,7 +41,7 @@ For calendar input, a table that contains all primary tagged columns and all tim
 
 - The `interval` parameter is an enumeration. Valid values are `DAY`, `WEEK`, `MONTH`, `QUARTER`, and `YEAR`. Because it's an enumeration, values aren't passed in as strings. So don't enclose them within quotation marks.
 
-- When `EndBehavior` is provided (calendar time intelligence only), the same value is passed to the `Extension` parameter of DATEADD to compute the end point. Use `PRECISE` to keep the shifted date (`Feb 28` → `Mar 28`), or `ENDALIGNED` to align with the destination period's end when the source period ends at its last day (`Feb 28` → `Mar 31`).
+- When `EndBehavior` is provided (calendar time intelligence only), DATESINPERIOD forwards the value to DATEADD's `Extension` parameter. See [Understanding EndBehavior](#understanding-endbehavior-parameter-for-calendar-time-intelligence) for detailed examples.
 
 - For date column input, the returned table can only contain dates stored in the `dates` column. So, for example, if the `dates` column starts from July 1, 2017, and the `start_date` value is July 1, 2016, the returned table will start from July 1, 2017.
 
@@ -89,7 +89,7 @@ Consider that the report is filtered by the month of June 2020. The MAX function
 
 ## Understanding EndBehavior parameter for calendar time intelligence
 
-Internally, DATESINPERIOD computes the ending boundary by calling DATEADD with the same interval, number of intervals, and `EndBehavior` that were passed into DATESINPERIOD. When `number_of_intervals` is negative (common when rolling a window backward), the function returns the range `(endDate, startDate]`, where `endDate = DATEADD(startDate, <number_of_intervals>, <interval>, <EndBehavior>)`. For positive values, the returned interval is `[startDate, endDate)`.
+Internally, DATESINPERIOD computes the ending boundary by calling DATEADD with the same interval, number of intervals, and `EndBehavior` that were passed into DATESINPERIOD. When `number_of_intervals` is negative (common when rolling a window backward), the function returns the range `(endDate, startDate]`, where `endDate` is the date returned by DATEADD after it shifts the calendar context that ends on `startDate` by `<number_of_intervals>` `<interval>` using `<EndBehavior>`. For positive values, the returned interval is `[startDate, endDate)`.
 
 - `PRECISE` keeps the exact value returned by DATEADD.
 - `ENDALIGNED` follows the DATEADD `EndAligned` semantics, moving the boundary to the end of the destination period when the source selection already reached its own end. This is useful when the filter context already ends on the last day of a period and you want a backward-looking window (for example, six months) to use the last day of the shifted period as its boundary.
