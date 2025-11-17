@@ -22,7 +22,7 @@ DATEADD(<dates> or <calendar>, <number_of_intervals>, <interval>[,<Extension>],[
 |`dates or calendar`|A column that contains dates or a calendar reference.|
 |`number_of_intervals`|An integer that specifies the number of intervals to add to or subtract from the dates.|
 |`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`, `week`, `day`. The week enum is only applicable when a calendar reference is provided.|
-|`extension`|Only applicable when a calendar reference is provided. Define behavior when the original time period has fewer dates than the resulting time period. Valid values are: EXTENDING (Default), PRECISE. |
+|`extension`|Only applicable when a calendar reference is provided. Define behavior when the original time period has fewer dates than the resulting time period. Valid values are: EXTENDING (Default), PRECISE, ENDALIGNED. |
 |`truncation`|Only applicable when a calendar reference is provided. Define behavior when the original time period has more dates than the resulting time period. Valid values are: BLANKS (Default), ANCHORED.|
 
 ## Return value
@@ -97,21 +97,24 @@ Retrieve the 3rd to the 10th of the new month (e.g., April 3–10).
 
 When the selection granularity is **finer** than the shift unit (e.g., selecting individual dates while shifting by month), the **index-based behavior** can lead to **ambiguities**, especially across months of varying lengths. To handle these edge cases, two parameters are introduced:
 
-### Extension parameter (for small → large month shifts):
+### Extension parameter (for small → large period shifts):
 
-Controls how the function behaves when the destination month is **longer** than the current one.
+Controls how the function behaves when the destination period is **longer** than the current one. Use moving forward one month as example:
 
 - **`Precise`**: Keeps the original date range strictly.  
   → `Feb 25–28` → `March 25–28`
 
-- **`Extending`**: Allows the window to expand toward the **end of the month** if needed.  
+- **`Extending`**: Allows the window to expand toward the **end of the period** if needed.  
   → `Feb 25–28` → `March 25–31`
 
-### Truncation Parameter (for large → small month shifts)
+- **`EndAligned`**: Aligns the end date with the end of the destination period when the selection reaches the end of its period; otherwise preserves relative positions.  
+  → `Feb 28` → `March 31`, while `Feb 27` → `March 27`
 
-Controls how the function behaves when the destination month is **shorter** than the current one.
+### Truncation Parameter (for large → small period shifts)
 
-- **`Anchored`**: Anchors the result to the **last valid date** of the smaller month.  
+Controls how the function behaves when the destination month is **shorter** than the current one. Use moving backward one month as example:
+
+- **`Anchored`**: Anchors the result to the **last valid date** of the smaller period.  
   → `March 31` → `Feb 28`
 
 - **`Blanks`**: Returns **blank** when the shifted date doesn't exist.  
