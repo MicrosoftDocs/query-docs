@@ -50,6 +50,7 @@ These functions access data and return table values. Most of these functions ret
 |[Excel.CurrentWorkbook](excel-currentworkbook.md)|Returns the contents of the current Excel workbook.|
 |[Excel.Workbook](excel-workbook.md)|Returns the contents of the Excel workbook.|
 |[Exchange.Contents](exchange-contents.md)|Returns a table of contents from a Microsoft Exchange account.|
+|[FabricAI.Prompt](fabricai-prompt.md)|Returns the result of passing the specified input to an AI model.|
 |[File.Contents](file-contents.md)|Returns the contents of the specified file as binary.|
 |[Folder.Contents](folder-contents.md)|Returns a table containing the properties and contents of the files and folders found in the specified folder.|
 |[Folder.Files](folder-files.md)|Returns a table containing the properties and contents of the files found in the specified folder and subfolders. Each row contains properties of the folder or file and a link to its content.|
