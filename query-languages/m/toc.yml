@@ -154,6 +154,8 @@ items:
         href: excel-workbook.md
       - name: Exchange.Contents
         href: exchange-contents.md
+      - name: FabricAI.Prompt
+        href: fabricai-prompt.md
       - name: File.Contents
         href: file-contents.md
       - name: Folder.Contents
