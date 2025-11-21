@@ -2,6 +2,7 @@
 description: "Learn more about: Durations in Power Query M"
 title: "Durations in Power Query M"
 ms.date: 8/6/2025
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ms.subservice: m-background
 ---

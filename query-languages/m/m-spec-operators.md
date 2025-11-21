@@ -1,7 +1,7 @@
 ---
 title: M Language Operators 
 description: Describes using operators in the Power Query M formula language
-ms.topic: conceptual
+ms.topic: language-reference
 ms.date: 2/13/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-specification

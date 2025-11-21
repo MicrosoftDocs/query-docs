@@ -2,6 +2,7 @@
 description: "Learn more about: DateTimeZone functions"
 title: "DateTimeZone functions"
 ms.date: 11/13/2024
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
 # DateTimeZone functions

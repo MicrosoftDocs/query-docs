@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Understanding Power Query M functions"
 title: "Understanding Power Query M functions"
-ms.topic: conceptual
+ms.topic: language-reference
 ms.date: 2/14/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-background

@@ -1,7 +1,7 @@
 ---
 title: M Language values 
 description: Describes using values in the Power Query M formula language
-ms.topic: conceptual
+ms.topic: language-reference
 ms.date: 8/21/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-specification

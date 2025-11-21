@@ -2,6 +2,7 @@
 description: "Learn more about: Comparer functions"
 title: "Comparer functions"
 ms.date: 11/20/2024
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
 # Comparer functions
