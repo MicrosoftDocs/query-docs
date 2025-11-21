@@ -1,8 +1,8 @@
 ---
 description: "Learn more about: Expressions, values, and let expression"
 title: "Expressions, values, and let expression"
-ms.topic: conceptual
 ms.date: 8/11/2025
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ms.subservice: m-background
 

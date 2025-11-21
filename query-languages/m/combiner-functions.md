@@ -2,6 +2,7 @@
 description: "Learn more about: Combiner functions"
 title: "Combiner functions"
 ms.date: 11/14/2024
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
 # Combiner functions

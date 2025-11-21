@@ -2,6 +2,7 @@
 description: "Learn more about: Number functions"
 title: "Number functions"
 ms.date: 8/11/2025
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
 # Number functions

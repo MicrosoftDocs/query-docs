@@ -1,7 +1,7 @@
 ---
 title: M Language lexical structure 
 description: Describes the lexical structure of the Power Query M formula language
-ms.topic: conceptual
+ms.topic: language-reference
 ms.date: 8/2/2022
 ms.custom: "nonautomated-date"
 ms.subservice: m-specification

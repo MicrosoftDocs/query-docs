@@ -2,6 +2,7 @@
 description: "Learn more about: Table functions"
 title: "Table functions"
 ms.date: 8/29/2025
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ms.subservice: m-source
 ---
