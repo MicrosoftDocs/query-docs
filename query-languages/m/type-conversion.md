@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Types and type conversion"
 title: "Types and type conversion"
-ms.topic: conceptual
+ms.topic: language-reference
 ms.date: 12/20/2024
 ms.custom: "nonautomated-date"
 ms.subservice: m-background

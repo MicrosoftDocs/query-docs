@@ -2,6 +2,7 @@
 description: "Learn more about: Record functions"
 title: "Record functions"
 ms.date: 6/19/2025
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
 # Record functions

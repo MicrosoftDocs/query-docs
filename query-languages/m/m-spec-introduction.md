@@ -1,7 +1,7 @@
 ---
 title: Power Query M formula language introduction 
 description: Provides an overview of the Power Query M formula language
-ms.topic: overview
+ms.topic: language-reference
 ms.date: 8/25/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-specification

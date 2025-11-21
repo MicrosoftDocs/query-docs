@@ -2,6 +2,7 @@
 description: "Learn more about: Custom numeric format strings"
 title: "Custom numeric format strings"
 ms.date: 9/30/2024
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ms.subservice: m-background
 ---
