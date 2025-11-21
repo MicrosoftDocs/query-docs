@@ -2,6 +2,7 @@
 description: "Learn more about: Error handling functions"
 title: "Error handling functions"
 ms.date: 7/15/2024
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
 # Error handling functions

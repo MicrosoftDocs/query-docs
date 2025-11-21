@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Operators"
 title: "Operators"
-ms.topic: conceptual
+ms.topic: language-reference
 ms.date: 6/13/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-background
