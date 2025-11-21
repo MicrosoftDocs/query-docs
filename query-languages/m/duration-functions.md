@@ -2,6 +2,7 @@
 description: "Learn more about: Duration functions"
 title: "Duration functions"
 ms.date: 1/28/2025
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
 # Duration functions

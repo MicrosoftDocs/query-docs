@@ -1,8 +1,8 @@
 ---
 description: "Learn more about: Local, fixed, and UTC variants of current time functions"
 title: "Local, fixed, and UTC variants of current time functions"
-ms.topic: conceptual
 ms.date: 7/16/2025
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ms.subservice: m-background
 ---

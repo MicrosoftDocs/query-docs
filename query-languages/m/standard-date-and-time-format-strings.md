@@ -2,8 +2,9 @@
 description: "Learn more about: Standard date and time format strings"
 title: "Standard date and time format strings"
 ms.date: 10/11/2024
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
-s.subservice: m-background
+ms.subservice: m-background
 ---
 # Standard date and time format strings
 

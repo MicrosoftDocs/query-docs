@@ -2,6 +2,7 @@
 description: "Learn more about: How culture affects text formatting"
 title: How culture affects text formatting
 ms.date: 10/7/2024
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ms.subservice: m-background
 

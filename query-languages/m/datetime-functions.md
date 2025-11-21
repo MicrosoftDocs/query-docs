@@ -2,6 +2,7 @@
 description: "Learn more about: DateTime functions"
 title: "DateTime functions"
 ms.date: 11/21/2024
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
 # DateTime functions

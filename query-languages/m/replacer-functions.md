@@ -2,6 +2,7 @@
 description: "Learn more about: Replacer functions"
 title: "Replacer functions"
 ms.date: 5/16/2022
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
 # Replacer functions

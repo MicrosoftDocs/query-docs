@@ -1,7 +1,7 @@
 ---
 title: M Language types 
 description: Describes using types in the Power Query M formula language
-ms.topic: conceptual
+ms.topic: language-reference
 ms.date: 1/29/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-specification

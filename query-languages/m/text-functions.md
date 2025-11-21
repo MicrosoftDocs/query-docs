@@ -2,6 +2,7 @@
 description: "Learn more about: Text functions"
 title: "Text functions"
 ms.date: 6/9/2025
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
 # Text functions
