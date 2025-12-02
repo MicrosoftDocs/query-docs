@@ -47,6 +47,7 @@ DAX information functions look at the cell or row that is provided as an argumen
 |[SELECTEDMEASURE](selectedmeasure-function-dax.md) |   Used by expressions for calculation items to reference the measure that is in context.   |
 |[SELECTEDMEASUREFORMATSTRING](selectedmeasureformatstring-function-dax.md) |   Used by expressions for calculation items to retrieve the format string of the measure that is in context.   |
 |[SELECTEDMEASURENAME](selectedmeasurename-function-dax.md) |   Used by expressions for calculation items to determine the measure that is in context by name.   |
+|[TABLEOF](tableof-function-dax.md) |   Returns a reference to the table associated with a specified column, measure, or calendar.   |
 |[USERCULTURE](userculture-function-dax.md)   |Returns the locale for the current user.    |
 |[USERNAME](username-function-dax.md)    |  Returns the domain name and username from the credentials given to the system at connection time.        |
 |[USEROBJECTID](userobjectid-function-dax.md)    |  Returns the current user's Object ID or SID.       |
