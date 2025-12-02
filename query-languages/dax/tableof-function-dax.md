@@ -11,18 +11,16 @@ Returns a reference to the table associated with a specified column, measure, or
 ## Syntax
 
 ```dax
-TABLEOF(<columnName>)
+TABLEOF(<myColumnRef>)
 TABLEOF(<measureName>)
-TABLEOF(<calendarReference>)
+TABLEOF(<calendar>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`columnName`|The name of an existing column, using standard DAX syntax. It cannot be an expression.|
-|`measureName`|The name of an existing measure.|
-|`calendarReference`|A reference to a calendar.|
+|`reference`|A column, measure, or calendar reference.|
 
 ## Return value
 
@@ -40,43 +38,54 @@ A table reference.
 
 ## Example 1 - Using TABLEOF with a column
 ```dax
-EVALUATE ROW("RowCount", COUNTROWS(TABLEOF('DimCustomer'[CustomerKey])))
+EVALUATE
+ROW ( "RowCount", COUNTROWS ( TABLEOF ( 'Customer'[Customer ID] ) ) )
 ```
 
 Returns:
 
 | **RowCount** |
 | ------------- |
-| 18484 |
+| 18485 |
 
 ## Example 2 - Using TABLEOF with a measure
 ```dax
-DEFINE MEASURE FactInternetSales[Projected Sales] = SUM('FactInternetSales'[SalesAmount])*1.06
-EVALUATE ROW("RowCount", COUNTROWS(TABLEOF([Projected Sales])))
-```
+DEFINE
+    MEASURE Sales[Projected Sales] =
+        SUM ( 'Sales'[Sales Amount] ) * 1.06
 
-Returns:
-
-| **RowCount** |
-| ------------- |
-| 60398 |
-
-## Example 3 - Using TABLEOF in a user-defined function
-```dax
-DEFINE 
-FUNCTION GetTableRowCount = (columnRef : anyref) => COUNTROWS(TABLEOF(columnRef))
-EVALUATE 
-ROW(
-"FactResellerSalesCount", GetTableRowCount('FactResellerSales'[EmployeeKey]),
-"DimCustomerCount", GetTableRowCount('DimCustomer'[CustomerKey])
+EVALUATE
+ROW (
+    "Total Projected Sales", ROUND ( SUMX ( TABLEOF ( [Projected Sales] ), [Projected Sales] ), 2 )
 )
 ```
 
 Returns:
 
-| **FactResellerSalesCount** | **DimCustomerCount** |
+| **Total Projected Sales** |
+| ------------- |
+| 116397830.65 |
+
+## Example 3 - Using TABLEOF in a user-defined function
+```dax
+DEFINE
+    FUNCTION GetTableRowCount = (
+            columnRef : ANYREF
+        ) =>
+        COUNTROWS ( TABLEOF ( columnRef ) )
+
+EVALUATE
+ROW (
+    "ResellerCount", GetTableRowCount ( 'Reseller'[Reseller ID] ),
+    "CustomerCount", GetTableRowCount ( 'Customer'[Customer ID] )
+)
+```
+
+Returns:
+
+| **ResellerCount** | **CustomerCount** |
 | ------------- | ------------- |
-| 60855 | 18484 |
+| 702 | 18485 |
 
 ## Related content
 - [Information functions](information-functions-dax.md)
