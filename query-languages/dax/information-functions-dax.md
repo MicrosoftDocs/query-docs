@@ -44,7 +44,7 @@ DAX information functions look at the cell or row that is provided as an argumen
 |[ISSTRING](isstring-function-dax.md)     | Checks if a value is text, and returns `TRUE` or `FALSE`. Alias of [ISTEXT](istext-function-dax.md).
 |[ISSUBTOTAL](issubtotal-function-dax.md)       |  Creates another column in a SUMMARIZE expression that returns True if the row contains subtotal values for the column given as argument, otherwise returns False.        |
 |[ISTEXT](istext-function-dax.md)     | Checks if a value is text, and returns `TRUE` or `FALSE`. Alias of [ISSTRING](isstring-function-dax.md).|
-|[NAMEOF](nameof-function-dax.md)     |  Returns the name of a table, column, or measure as a text string.       |
+|[NAMEOF](nameof-function-dax.md)     |  Returns the name of a table, column, measure, or calendar as a text string.       |
 |[NONVISUAL](nonvisual-function-dax.md)     |  Marks a value filter in a SUMMARIZECOLUMNS expression as non-visual.       |
 |[SELECTEDMEASURE](selectedmeasure-function-dax.md) |   Used by expressions for calculation items to reference the measure that is in context.   |
 |[SELECTEDMEASUREFORMATSTRING](selectedmeasureformatstring-function-dax.md) |   Used by expressions for calculation items to retrieve the format string of the measure that is in context.   |
