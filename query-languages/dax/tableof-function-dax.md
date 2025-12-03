@@ -11,9 +11,9 @@ Returns a reference to the table associated with a specified column, measure, or
 ## Syntax
 
 ```dax
-TABLEOF(<myColumnRef>)
-TABLEOF(<measureName>)
-TABLEOF(<calendar>)
+TABLEOF ( <myColumnRef> )
+TABLEOF ( <measureName> )
+TABLEOF ( <calendar> )
 ```
 
 ### Parameters
