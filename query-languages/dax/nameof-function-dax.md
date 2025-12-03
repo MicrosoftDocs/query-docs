@@ -12,7 +12,7 @@ Returns the name of a table, column, measure, or calendar as a text string.
 ## Syntax
 
 ```dax
-NAMEOF(<object>)
+NAMEOF ( <object> )
 ```
 
 ### Parameters
