@@ -3,7 +3,7 @@ title: "Use DAX user-defined functions (preview)"
 description: Best practices for using DAX user-defined functions.
 author: hsteffens30
 ms.author: jterh
-ms.topic: conceptual
+ms.topic: article
 ms.date: 09/15/2025
 ---
 
@@ -554,6 +554,13 @@ General:
 - No 'create function' button in the ribbon.
 - Cannot combine UDFs with translations.
 - UDFs are not supported in models without tables.
+- No 'define with references' quick query in DAX query view.
+- [Object-Level Security (OLS)](/fabric/security/service-admin-object-level-security) does not transfer to functions or vise versa. For example, consider the following function `F` that refers to secured measure `MyMeasure`:
+    ```dax
+    function F = () => [MyMeasure] + 42
+    ```
+
+    when the `MyMeasure` is secured using object-level security, function F is not secured automatically. If `F` runs under an identity without access to `MyMeasure`, it acts as if `MyMeasure` doesn’t exist. We recommend to avoid revealing secure objects in function names and descriptions.
 
 Defining a UDF:
 - Recursion or mutual recursion is not supported.
