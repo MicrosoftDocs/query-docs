@@ -31,7 +31,7 @@ The number of the starting position of the first text string from the first char
 
 - The search function is case insensitive. Searching for "N" will find the first occurrence of 'N' or 'n'.
 
-- The search function is kanatype-insensitive, width-insensitive.
+- The search function is kanatype-insensitive, width-insensitive. Searching for "か" will find the first occurrence of 「か」 (hiragana), 「カ」 (katakana), or 「ｶ」 (half-width katakana).
 
 - The search function is accent sensitive. Searching for "á" will find the first occurrence of 'á' but no occurrences of 'a', 'à', or the capitalized versions 'A', 'Á'.
 
