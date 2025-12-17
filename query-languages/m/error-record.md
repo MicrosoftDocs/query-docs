@@ -67,14 +67,13 @@ in
 
 ## Example 2
 
-Create a log entry for a non-existent customer ID error. If no error occurs, create a successful log entry.
+Handle an entry with a non-existent customer ID error. If no error occurs, indicate a successful entry.
 
 **Usage**
 
 ```powerquery-m
 let
     CustomerId = 12345,
-
     result = try if CustomerId > 9999 then
         error Error.Record(
             "CustomerNotFound",
@@ -86,41 +85,26 @@ let
             },
             "ERR404"
         )
-
-    else CustomerId,
-
-    logEntry = if result[HasError] then [
-        Level="Error",
-        Source="Customer API",
-        Reason=result[Error][Reason],
-        Message=result[Error][Message],
-        Detail=result[Error][Detail],
-        Param1=result[Error][Message.Parameters]{0},
-        Param2=result[Error][Message.Parameters]{1},
-        Code=result[Error][ErrorCode]
-        ]
-
-    else [
-        Level="Info",
-        Source="Customer API",
-        Message=Text.Format("Customer ID #{0} is valid.", {result[Value]})
-        ]
-
+    else CustomerId
 in
-    logEntry
+    result
 ```
 
 **Output**
 
 ```powerquery-m
 [
-    Level = "Error",
-    Source = "Customer API",
-    Reason = "CustomerNotFound",
-    Message = "Customer ID 12345 wasn't found.",
-    Detail = "Customer doesn't exist.",
-    Param1 = "Invalid ID = 12345",
-    Param2 = "Valid IDs: https://api.contoso.com/customers",
-    Code = "ERR404"
+    HasError = true,
+    Error = [ 
+        Reason = "CustomerNotFound",
+        Message = "Customer ID 12345 wasn't found.",
+        Detail = "Customer doesn't exist.",
+        Message.Format = "Customer ID 12345 wasn't found.",
+        Message.Parameters = {
+            "Invalid ID = 12345",
+            "Valid IDs: https://api.contoso.com/customers"
+        },
+        ErrorCode = "ERR404"
+    ]
 ]
 ```
