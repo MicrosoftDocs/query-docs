@@ -1,7 +1,7 @@
 ---
 title: M Language basic concepts 
 description: Discusses basic concepts that appear throughout the subsequent sections
-ms.topic: conceptual
+ms.topic: language-reference
 ms.date: 8/2/2022
 ms.custom: nonautomated-date, intro-internal
 ms.subservice: m-specification

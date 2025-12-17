@@ -43,10 +43,10 @@
       "uhfHeaderId": "MSDocsHeader-PowerQueryM",
       "titleSuffix": "PowerQuery M",
       "ms.service": "powerquery",
-      "ms.topic": "article", 
+      "ms.topic": "reference", 
       "ms.reviewer": "ehvonleh",
-      "author": "dougklopfenstein",
-      "ms.author": "dougklo",
+      "author": "whhender",
+      "ms.author": "whhender",
       "searchScope": ["Power Query","M formula language"],
       "ms.date": "9/16/2025",
       "no-loc": [

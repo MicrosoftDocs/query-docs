@@ -2,6 +2,7 @@
 description: "Learn more about: List functions"
 title: "List functions"
 ms.date: 8/13/2025
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
 # List functions
@@ -29,7 +30,7 @@ These functions create and manipulate list values.
 |[List.InsertRange](list-insertrange.md)|Inserts values into a list at the given index.|
 |[List.IsDistinct](list-isdistinct.md)|Indicates whether there are duplicates in the list.|
 |[List.Last](list-last.md)|Returns the last value of the list or the specified default if empty.|
-|[List.LastN](list-lastn.md)|Returns the last value in the list. Can optionally specify how many values to return or a qualifying condition.|
+|[List.LastN](list-lastn.md)|Returns a list of the last item or items in the specified list. Can optionally specify how many values to return or a qualifying condition.|
 |[List.MatchesAll](list-matchesall.md)|Returns `true` if the condition function is satisfied by all values in the list.|
 |[List.MatchesAny](list-matchesany.md)|Returns `true` if the condition function is satisfied by any value.|
 |[List.Positions](list-positions.md)|Returns a list of offsets for the input.|
