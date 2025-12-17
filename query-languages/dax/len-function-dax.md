@@ -32,6 +32,10 @@ A whole number indicating the number of characters in the text string.
 
 - If you use LEN with a column that contains non-text values, such as dates or Booleans, the function implicitly casts the value to text, using the current column format.
 
+- Starting with desktop january release, user can set new model property UnicodeCharacterBehavior. Depending on value of the property, the output of LEN(<text>) function changes.
+- With CodeUnits default value of UnicodeCharacterBehavior property, the len('😀) will return => 2. This is old behavior of LEN function.
+- With CodePoints value of UnicodeCharacterBehavior property, the len('😀) will return => 1. This will be new behavior of LEN function.
+
 ## Example
 
 The following formula sums the lengths of addresses in the columns, [AddressLine1] and [AddressLine2].
