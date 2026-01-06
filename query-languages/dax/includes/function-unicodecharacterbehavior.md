@@ -1,1 +1,1 @@
-This function returns different results depending on on [the UnicodeCharacterBehavior setting of your model](best-practices/dax-unicode-character-behavior.md).
+This function returns different results depending on on [the UnicodeCharacterBehavior setting of your model](../best-practices/dax-unicode-character-behavior.md).

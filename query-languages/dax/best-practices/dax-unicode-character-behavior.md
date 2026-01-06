@@ -46,7 +46,7 @@ Power BI can be configured to respect GB18030‑2022 encoding using the `Unicode
 
 After executing this XMLA command, perform a full refresh of your model.
 
-# Example
+## Example
 
 Adding GB18030‑2022 support in Power BI isn’t just a technical tweak; it’s a compliance safeguard and a way to ensure your reports remain globally accessible. With the above XMLA command, you can align your semantic models with modern encoding standards and avoid downstream issues in multilingual environments.
 
@@ -67,7 +67,7 @@ Here’s a before and after comparison of the result of StringLength on a column
 
 |`UnicodeCharacterBehavior = CodeUnits` (default)|`UnicodeCharacterBehavior = CodePoints`|
 |---|---|
-|:::image type="content" source="media/dax-unicode-character-behavior/unicodecharacterbehavior-codeunits.png" alt-text="Screenshot of a table showing Column 1 and StringLength. StringLength values are 1, 3 and 4" lightbox="media/dax-unicode-character-behavior/unicodecharacterbehavior-codeunits.png":::|:::image type="content" source="media/dax-unicode-character-behavior/unicodecharacterbehavior-codepoints.png" alt-text=""Screenshot of a table showing Column 1 and StringLength. StringLength values are 1, 2 and 2." lightbox="media/dax-unicode-character-behavior/unicodecharacterbehavior-codepoints.png":::|
+|:::image type="content" source="media/dax-unicode-character-behavior/unicodecharacterbehavior-codeunits.png" alt-text="Screenshot of a table showing Column 1 and StringLength. StringLength values are 1, 3 and 4" lightbox="media/dax-unicode-character-behavior/unicodecharacterbehavior-codeunits.png":::|:::image type="content" source="media/dax-unicode-character-behavior/unicodecharacterbehavior-codepoints.png" alt-text="Screenshot of a table showing Column 1 and StringLength. StringLength values are 1, 2 and 2." lightbox="media/dax-unicode-character-behavior/unicodecharacterbehavior-codepoints.png":::|
  	 
 Notice how on the left each Unicode character has length 2, where on the right, each Unicode character has length 1.
 
