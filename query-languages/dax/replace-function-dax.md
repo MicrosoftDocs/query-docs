@@ -33,6 +33,8 @@ A text string.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
+- [!INCLUDE [function-unicodecharacterbehavior](includes/function-unicodecharacterbehavior.md)]
+
 ## Example
 
 The following formula creates a new calculated column that replaces the first two characters of the product code in column, [ProductCode], with a new two-letter code, OB.
