@@ -48,8 +48,6 @@ After executing this XMLA command, perform a full refresh of your model.
 
 ## Example
 
-Adding GB18030‑2022 support in Power BI isn’t just a technical tweak; it’s a compliance safeguard and a way to ensure your reports remain globally accessible. With the above XMLA command, you can align your semantic models with modern encoding standards and avoid downstream issues in multilingual environments.
-
 The UnicodeCharacterBehavior influences any DAX function that determines the length of a text string, which include [FIND](../find-function-dax.md), [LEFT](../left-function-dax.md), [LEN](../len-function-dax.md), [MID](../mid-function-dax.md), [REPLACE](../replace-function-dax.md), [RIGHT](../right-function-dax.md). These functions will exhibit different behaviors when working with text strings that contain Unicode characters.
 Let’s see the difference in action. Here’s a measure that uses LEN to calculate the length of a text string:
 
