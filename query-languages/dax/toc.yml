@@ -438,8 +438,22 @@ items:
               href: info-segmentstorages-function-dax.md
             - name: INFO.STORAGEFILES
               href: info-storagefiles-function-dax.md
+            - name: INFO.STORAGEFOLDERS
+              href: info-storagefolders-function-dax.md
+            - name: INFO.STORAGETABLECOLUMNS
+              href: info-storagetablecolumns-function-dax.md
+            - name: INFO.STORAGETABLECOLUMNSEGMENTS
+              href: info-storagetablecolumnsegments-function-dax.md
+            - name: INFO.STORAGETABLES
+              href: info-storagetables-function-dax.md
+            - name: INFO.TABLEPERMISSIONS
+              href: info-tablepermissions-function-dax.md
             - name: INFO.TABLES
               href: info-tables-function-dax.md
+            - name: INFO.TABLESTORAGES
+              href: info-tablestorages-function-dax.md
+            - name: INFO.VARIATIONS
+              href: info-variations-function-dax.md
         - name: Information functions
           items: 
             - name: Information functions overview
