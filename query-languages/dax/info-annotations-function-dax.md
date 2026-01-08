@@ -12,7 +12,7 @@ Returns a table with information about each annotation in the semantic model. Th
 ## Syntax
 
 ```dax
-INFO.ANNOTATIONS([<Restriction name>, <Restriction value>], ...)
+INFO.ANNOTATIONS ( [<Restriction name>, <Restriction value>], ... )
 ```
 
 [!INCLUDE[parameters-for-info-dax-functions](includes/parameters-for-info-dax-functions.md)]
@@ -157,3 +157,9 @@ This DAX query returns a table with only the specified columns and joining to ot
 [!INCLUDE[enum-title-for-info-dax-functions](includes/enum-title-for-info-dax-functions.md)]
 
 [!INCLUDE[enum-objecttype](includes/enum-objecttype.md)]
+## See also
+
+[INFO.TABLES](info-tables-function-dax.md)
+[INFO.COLUMNS](info-columns-function-dax.md)
+[INFO.MEASURES](info-measures-function-dax.md)
+[INFO functions overview](info-functions-dax.md)
