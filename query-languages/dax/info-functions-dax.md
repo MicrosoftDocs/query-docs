@@ -95,43 +95,43 @@ Here is the list of INFO functions. Some work only on specific compat levels and
 | INFO.VIEW.MEASURES                            | Returns a list of all measures in the current model. Can use in calculations, including calculated tables.                                      |
 | INFO.VIEW.RELATIONSHIPS                       | Returns a list of all relationships in the current model. Can use in calculations, including calculated tables.                                 |
 | INFO.VIEW.TABLES                              | Returns a list of all tables in the current model. Can use in calculations, including calculated tables.                                        |
-| INFO.ALTERNATEOFDEFINITIONS                   |                                                                                                                                                 |
+| INFO.ALTERNATEOFDEFINITIONS                   | Returns a table with information about each alternate of definition in the semantic model with metadata about alternate definitions for model objects. |
 | INFO.ANNOTATIONS                              | Returns a list of all annotations in the current model with columns matching the schema rowset for annotation objects.                          |
 | INFO.ATTRIBUTEHIERARCHIES                     | Represents the TMSCHEMA_ATTRIBUTE_HIERARCHIES DMV query function.                                                                               |
-| INFO.ATTRIBUTEHIERARCHYSTORAGES               |                                                                                                                                                 |
+| INFO.ATTRIBUTEHIERARCHYSTORAGES               | Returns a table with information about each attribute hierarchy storage in the semantic model with metadata about the storage characteristics of attribute hierarchies. |
 | INFO.CALCDEPENDENCY                           | Returns information about the calculation dependency for a DAX query.                                                                           |
-| INFO.CALCULATIONGROUPS                        |                                                                                                                                                 |
-| INFO.CALCULATIONITEMS                         |                                                                                                                                                 |
+| INFO.CALCULATIONGROUPS                        | Returns a table with information about each calculation group in the semantic model with metadata about calculation groups and their properties. |
+| INFO.CALCULATIONITEMS                         | Returns a table with information about each calculation item in the semantic model with metadata about calculation items within calculation groups. |
 | INFO.CATALOGS                                 | Represents the DBSCHEMA_CATALOGS DMV query function.                                                                                            |
 | INFO.CHANGEDPROPERTIES                        | Represents the TMSCHEMA_CHANGED_PROPERTIES DMV query function.                                                                                  |
-| INFO.COLUMNPARTITIONSTORAGES                  |                                                                                                                                                 |
+| INFO.COLUMNPARTITIONSTORAGES                  | Returns a table with information about each column partition storage in the semantic model with metadata about how column partitions are stored. |
 | INFO.COLUMNPERMISSIONS                        | Returns a list of all column permissions in the current model with columns matching the schema rowset for column permissions objects.           |
 | INFO.COLUMNS                                  | Returns a list of all columns in the current model with columns matching the schema rowset for column objects.                                  |
 | INFO.COLUMNSTORAGES                           | Returns a list of all column storages in the current model with columns matching the schema rowset for column storage objects.                  |
 | INFO.CSDLMETADATA                             | Returns information about database metadata in XML format.                                                                                      |
 | INFO.CULTURES                                 | Returns a list of all cultures in the current model with columns matching the schema rowset for culture objects.                                |
-| INFO.DATACOVERAGEDEFINITIONS                  |                                                                                                                                                 |
+| INFO.DATACOVERAGEDEFINITIONS                  | Returns a table with information about each data coverage definition in the semantic model with metadata about data coverage settings and definitions. |
 | INFO.DATASOURCES                              | Represents the TMSCHEMA_DATASOURCES DMV query function.                                                                                         |
-| INFO.DELTATABLEMETADATASTORAGES               |                                                                                                                                                 |
+| INFO.DELTATABLEMETADATASTORAGES               | Returns a table with information about each delta table metadata storage in the semantic model with metadata about delta table storage characteristics. |
 | INFO.DEPENDENCIES                             | Returns information about the calculation dependency for a DAX query.                                                                           |
 | INFO.DETAILROWSDEFINITIONS                    | Returns a list of all detail rows definitions in the current model with columns matching the schema rowset for detail rows definitions objects. |
-| INFO.DICTIONARYSTORAGES                       |                                                                                                                                                 |
+| INFO.DICTIONARYSTORAGES                       | Returns a table with information about each dictionary storage in the semantic model with metadata about dictionary storage characteristics and compression. |
 | INFO.EXCLUDEDARTIFACTS                        | Represents the TMSCHEMA_EXCLUDED_ARTIFACTS DMV query function.                                                                                  |
 | INFO.EXPRESSIONS                              | Returns a list of all expressions in the current model with columns matching the schema rowset for expressions objects.                         |
 | INFO.EXTENDEDPROPERTIES                       | Returns a list of all extended properties in the current model with columns matching the schema rowset for extended properties objects.         |
-| INFO.FORMATSTRINGDEFINITIONS                  |                                                                                                                                                 |
-| INFO.FUNCTIONS                                | Returns information about the functions that are currently available for use in the DAX programming language. Represents the MDSCHEMA_FUNCTIONS DMV query function, but returns only DAX (and not MDX) functions by default. If the ORIGIN restriction is not specified, it defaults to 3 or 4. |
-| INFO.GENERALSEGMENTMAPSEGMENTMETADATASTORAGES |                                                                                                                                                 |
-| INFO.GROUPBYCOLUMNS                           |                                                                                                                                                 |
+| INFO.FORMATSTRINGDEFINITIONS                  | Returns a table with information about each format string definition in the semantic model with metadata about format string definitions for measures and columns. |
+| INFO.FUNCTIONS                                | Returns information about the functions that are currently available for use in the DAX programming language.                                   |
+| INFO.GENERALSEGMENTMAPSEGMENTMETADATASTORAGES | Returns a table with information about each general segment map segment metadata storage in the semantic model with metadata about segment map storage characteristics. |
+| INFO.GROUPBYCOLUMNS                           | Returns a table with information about each group by column in the semantic model with metadata about columns used in group by operations. |
 | INFO.HIERARCHIES                              | Represents the TMSCHEMA_HIERARCHIES DMV query function.                                                                                         |
-| INFO.HIERARCHYSTORAGES                        |                                                                                                                                                 |
+| INFO.HIERARCHYSTORAGES                        | Returns a table with information about each hierarchy storage in the semantic model with metadata about how hierarchies are stored. |
 | INFO.KPIS                                     | Returns a list of all KPIS in the current model with columns matching the schema rowset for KPI objects.                                        |
 | INFO.LEVELS                                   | Returns a list of all levels in the current model with columns matching the schema rowset for level objects.                                    |
 | INFO.LINGUISTICMETADATA                       | Represents the TMSCHEMA_LINGUISTIC_METADATA DMV query function.                                                                                 |
 | INFO.MEASURES                                 | Returns a list of all measures in the current model with columns matching the schema rowset for measure objects.                                |
 | INFO.MODEL                                    | Represents the TMSCHEMA_MODEL DMV query function.                                                                                               |
 | INFO.OBJECTTRANSLATIONS                       | Returns a list of all object translations in the current model with columns matching the schema rowset for object translation objects.          |
-| INFO.PARQUETFILESTORAGES                      |                                                                                                                                                 |
+| INFO.PARQUETFILESTORAGES                      | Returns a table with information about each Parquet file storage in the semantic model with metadata about Parquet file storage characteristics. |
 | INFO.PARTITIONS                               | Represents the TMSCHEMA_PARTITIONS DMV query function.                                                                                          |
 | INFO.PARTITIONSTORAGES                        | Returns a list of all partition storages in the current model with columns matching the schema rowset for partition storage objects.            |
 | INFO.PERSPECTIVECOLUMNS                       | Returns a list of all perspective columns in the current model with columns matching the schema rowset for perspective columns objects.         |
@@ -140,16 +140,16 @@ Here is the list of INFO functions. Some work only on specific compat levels and
 | INFO.PERSPECTIVES                             | Returns a list of all perspectives in the current model with columns matching the schema rowset for perspectives objects.                       |
 | INFO.PERSPECTIVETABLES                        | Returns a list of all perspective tables in the current model with columns matching the schema rowset for perspective tables objects.           |
 | INFO.PROPERTIES                               | Represents the DISCOVER_PROPERTIES DMV query function.                                                                                          |
-| INFO.QUERYGROUPS                              |                                                                                                                                                 |
-| INFO.REFRESHPOLICIES                          |                                                                                                                                                 |
-| INFO.RELATEDCOLUMNDETAILS                     |                                                                                                                                                 |
-| INFO.RELATIONSHIPINDEXSTORAGES                |                                                                                                                                                 |
+| INFO.QUERYGROUPS                              | Returns a table with information about each query group in the semantic model with metadata about query groups defined in the model. |
+| INFO.REFRESHPOLICIES                          | Returns a table with information about each refresh policy in the semantic model with metadata about refresh policies defined for tables. |
+| INFO.RELATEDCOLUMNDETAILS                     | Returns a table with information about each related column detail in the semantic model with metadata about related column details for relationships. |
+| INFO.RELATIONSHIPINDEXSTORAGES                | Returns a table with information about each relationship index storage in the semantic model with metadata about relationship index storage characteristics. |
 | INFO.RELATIONSHIPS                            | Represents the TMSCHEMA_RELATIONSHIPS DMV query function.                                                                                       |
-| INFO.RELATIONSHIPSTORAGES                     |                                                                                                                                                 |
+| INFO.RELATIONSHIPSTORAGES                     | Returns a table with information about each relationship storage in the semantic model with metadata about how relationships are stored. |
 | INFO.ROLEMEMBERSHIPS                          | Returns a list of all role memberships in the current model with columns matching the schema rowset for role memberships objects.               |
 | INFO.ROLES                                    | Returns a list of all roles in the current model with columns matching the schema rowset for roles objects.                                     |
 | INFO.SEGMENTMAPSTORAGES                       | Returns a list of all segment map storages in the current model with columns matching the schema rowset for segment map storage objects.        |
-| INFO.SEGMENTSTORAGES                          |                                                                                                                                                 |
+| INFO.SEGMENTSTORAGES                          | Returns a table with information about each segment storage in the semantic model with metadata about segment storage characteristics. |
 | INFO.STORAGEFILES                             | Returns a list of all storage files in the current model with columns matching the schema rowset for storage file objects.                      |
 | INFO.STORAGEFOLDERS                           | Returns a list of all storage folders in the current model with columns matching the schema rowset for storage folder objects.                  |
 | INFO.STORAGETABLECOLUMNS                      | Returns statistics about the columns of in-memory tables.                                                                                       |
