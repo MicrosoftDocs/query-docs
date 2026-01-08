@@ -328,10 +328,134 @@ items:
               href: info-view-relationships-function-dax.md
             - name: INFO.VIEW.TABLES
               href: info-view-tables-function-dax.md
+            - name: INFO.ALTERNATEOFDEFINITIONS
+              href: info-alternateofdefinitions-function-dax.md
             - name: INFO.ANNOTATIONS
               href: info-annotations-function-dax.md
+            - name: INFO.ATTRIBUTEHIERARCHIES
+              href: info-attributehierarchies-function-dax.md
+            - name: INFO.ATTRIBUTEHIERARCHYSTORAGES
+              href: info-attributehierarchystorages-function-dax.md
             - name: INFO.CALCDEPENDENCY
               href: info-calcdependency-function-dax.md
+            - name: INFO.CALCULATIONGROUPS
+              href: info-calculationgroups-function-dax.md
+            - name: INFO.CALCULATIONITEMS
+              href: info-calculationitems-function-dax.md
+            - name: INFO.CATALOGS
+              href: info-catalogs-function-dax.md
+            - name: INFO.CHANGEDPROPERTIES
+              href: info-changedproperties-function-dax.md
+            - name: INFO.COLUMNPARTITIONSTORAGES
+              href: info-columnpartitionstorages-function-dax.md
+            - name: INFO.COLUMNPERMISSIONS
+              href: info-columnpermissions-function-dax.md
+            - name: INFO.COLUMNS
+              href: info-columns-function-dax.md
+            - name: INFO.COLUMNSTORAGES
+              href: info-columnstorages-function-dax.md
+            - name: INFO.CSDLMETADATA
+              href: info-csdlmetadata-function-dax.md
+            - name: INFO.CULTURES
+              href: info-cultures-function-dax.md
+            - name: INFO.DATACOVERAGEDEFINITIONS
+              href: info-datacoveragedefinitions-function-dax.md
+            - name: INFO.DATASOURCES
+              href: info-datasources-function-dax.md
+            - name: INFO.DELTATABLEMETADATASTORAGES
+              href: info-deltatablemetadatastorages-function-dax.md
+            - name: INFO.DEPENDENCIES
+              href: info-dependencies-function-dax.md
+            - name: INFO.DETAILROWSDEFINITIONS
+              href: info-detailrowsdefinitions-function-dax.md
+            - name: INFO.DICTIONARYSTORAGES
+              href: info-dictionarystorages-function-dax.md
+            - name: INFO.EXCLUDEDARTIFACTS
+              href: info-excludedartifacts-function-dax.md
+            - name: INFO.EXPRESSIONS
+              href: info-expressions-function-dax.md
+            - name: INFO.EXTENDEDPROPERTIES
+              href: info-extendedproperties-function-dax.md
+            - name: INFO.FORMATSTRINGDEFINITIONS
+              href: info-formatstringdefinitions-function-dax.md
+            - name: INFO.FUNCTIONS
+              href: info-functions-function-dax.md
+            - name: INFO.GENERALSEGMENTMAPSEGMENTMETADATASTORAGES
+              href: info-generalsegmentmapsegmentmetadatastorages-function-dax.md
+            - name: INFO.GROUPBYCOLUMNS
+              href: info-groupbycolumns-function-dax.md
+            - name: INFO.HIERARCHIES
+              href: info-hierarchies-function-dax.md
+            - name: INFO.HIERARCHYSTORAGES
+              href: info-hierarchystorages-function-dax.md
+            - name: INFO.KPIS
+              href: info-kpis-function-dax.md
+            - name: INFO.LEVELS
+              href: info-levels-function-dax.md
+            - name: INFO.LINGUISTICMETADATA
+              href: info-linguisticmetadata-function-dax.md
+            - name: INFO.MEASURES
+              href: info-measures-function-dax.md
+            - name: INFO.MODEL
+              href: info-model-function-dax.md
+            - name: INFO.OBJECTTRANSLATIONS
+              href: info-objecttranslations-function-dax.md
+            - name: INFO.PARQUETFILESTORAGES
+              href: info-parquetfilestorages-function-dax.md
+            - name: INFO.PARTITIONS
+              href: info-partitions-function-dax.md
+            - name: INFO.PARTITIONSTORAGES
+              href: info-partitionstorages-function-dax.md
+            - name: INFO.PERSPECTIVECOLUMNS
+              href: info-perspectivecolumns-function-dax.md
+            - name: INFO.PERSPECTIVEHIERARCHIES
+              href: info-perspectivehierarchies-function-dax.md
+            - name: INFO.PERSPECTIVEMEASURES
+              href: info-perspectivemeasures-function-dax.md
+            - name: INFO.PERSPECTIVES
+              href: info-perspectives-function-dax.md
+            - name: INFO.PERSPECTIVETABLES
+              href: info-perspectivetables-function-dax.md
+            - name: INFO.PROPERTIES
+              href: info-properties-function-dax.md
+            - name: INFO.QUERYGROUPS
+              href: info-querygroups-function-dax.md
+            - name: INFO.REFRESHPOLICIES
+              href: info-refreshpolicies-function-dax.md
+            - name: INFO.RELATEDCOLUMNDETAILS
+              href: info-relatedcolumndetails-function-dax.md
+            - name: INFO.RELATIONSHIPINDEXSTORAGES
+              href: info-relationshipindexstorages-function-dax.md
+            - name: INFO.RELATIONSHIPS
+              href: info-relationships-function-dax.md
+            - name: INFO.RELATIONSHIPSTORAGES
+              href: info-relationshipstorages-function-dax.md
+            - name: INFO.ROLEMEMBERSHIPS
+              href: info-rolememberships-function-dax.md
+            - name: INFO.ROLES
+              href: info-roles-function-dax.md
+            - name: INFO.SEGMENTMAPSTORAGES
+              href: info-segmentmapstorages-function-dax.md
+            - name: INFO.SEGMENTSTORAGES
+              href: info-segmentstorages-function-dax.md
+            - name: INFO.STORAGEFILES
+              href: info-storagefiles-function-dax.md
+            - name: INFO.STORAGEFOLDERS
+              href: info-storagefolders-function-dax.md
+            - name: INFO.STORAGETABLECOLUMNS
+              href: info-storagetablecolumns-function-dax.md
+            - name: INFO.STORAGETABLECOLUMNSEGMENTS
+              href: info-storagetablecolumnsegments-function-dax.md
+            - name: INFO.STORAGETABLES
+              href: info-storagetables-function-dax.md
+            - name: INFO.TABLEPERMISSIONS
+              href: info-tablepermissions-function-dax.md
+            - name: INFO.TABLES
+              href: info-tables-function-dax.md
+            - name: INFO.TABLESTORAGES
+              href: info-tablestorages-function-dax.md
+            - name: INFO.VARIATIONS
+              href: info-variations-function-dax.md
         - name: Information functions
           items: 
             - name: Information functions overview

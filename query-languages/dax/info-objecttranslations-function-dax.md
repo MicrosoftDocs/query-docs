@@ -1,0 +1,87 @@
+---
+description: "Learn more about: INFO.OBJECTTRANSLATIONS"
+title: "INFO.OBJECTTRANSLATIONS function (DAX)"
+author: jeroenterheerdt
+---
+# INFO.OBJECTTRANSLATIONS
+
+[!INCLUDE[applies-to-query-only](includes/applies-to-query-only.md)]
+
+Returns a table with information about each object translation in the semantic model. This function provides metadata about translations for model objects.
+
+## Syntax
+
+```dax
+INFO.OBJECTTRANSLATIONS ( [<Restriction name>, <Restriction value>], ... )
+```
+
+[!INCLUDE[parameters-for-info-dax-functions](includes/parameters-for-info-dax-functions.md)]
+
+## Return value
+
+A table with the following columns:
+
+| Column | Data Type | Description |
+|--------|-----------|-------------|
+| [ID] | Integer | Unique identifier for the object translation |
+| [CultureID] | Integer | ID of the culture this translation applies to |
+| [ObjectID] | Integer | ID of the object being translated |
+| [ObjectType] | Integer | Type of object being translated |
+| [Property] | String | Property name that is being translated |
+| [Value] | String | Translated value for the property |
+| [ModifiedTime] | DateTime | Date and time when the translation was last modified |
+
+## Remarks
+
+- Typically used in DAX queries to inspect and document model metadata.
+- Permissions required depend on the host. Querying full metadata may require model admin permissions.
+
+## Example
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+	INFO.OBJECTTRANSLATIONS()
+```
+
+## Example 2 - DAX query with joins
+
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view):
+
+```dax
+EVALUATE
+	VAR _ObjectTranslations =
+		INFO.OBJECTTRANSLATIONS()
+
+	VAR _Cultures = 
+		SELECTCOLUMNS(
+			INFO.CULTURES(),
+			"CultureID", [ID],
+			"Culture Name", [Name]
+		)
+
+	VAR _CombinedTable =
+		NATURALLEFTOUTERJOIN(
+			_ObjectTranslations,
+			_Cultures
+		)
+
+	RETURN
+		SELECTCOLUMNS(
+			_CombinedTable,
+			"Culture Name", [Culture Name],
+			"Object Type", [ObjectType],
+			"Property", [Property],
+			"Translated Value", [Value],
+			"Modified Time", [ModifiedTime]
+		)
+	ORDER BY [Culture Name], [Object Type], [Property]
+```
+## See also
+
+[INFO.CULTURES](info-cultures-function-dax.md)
+[INFO.LINGUISTICMETADATA](info-linguisticmetadata-function-dax.md)
+[INFO.TABLES](info-tables-function-dax.md)
+[INFO.COLUMNS](info-columns-function-dax.md)
+[INFO.MEASURES](info-measures-function-dax.md)
