@@ -69,3 +69,6 @@ Returns:
 | **[Value]** |
 | ------------- |
 | 'Sales'[Projected Sales] |
+
+## Related content
+- [Information functions](information-functions-dax.md)
