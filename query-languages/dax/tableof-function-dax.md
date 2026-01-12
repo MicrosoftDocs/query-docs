@@ -13,7 +13,7 @@ Returns a reference to the table associated with a specified column, measure, or
 ```dax
 TABLEOF ( <myColumnRef> )
 TABLEOF ( <measureName> )
-TABLEOF ( <calendar> )
+TABLEOF ( <myCalendar> )
 ```
 
 ### Parameters
