@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: OPENINGBALANCEQUARTER"
 title: "OPENINGBALANCEQUARTER function (DAX)"
+ms.topic: reference
 ---
 # OPENINGBALANCEQUARTER
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ODD"
 title: "ODD function (DAX)"
+ms.topic: reference
 ---
 # ODD
 

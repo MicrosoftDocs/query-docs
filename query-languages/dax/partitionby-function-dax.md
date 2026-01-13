@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PARTITIONBY"
 title: "PARTITIONBY function (DAX)"
+ms.topic: reference
 ---
 
 # PARTITIONBY

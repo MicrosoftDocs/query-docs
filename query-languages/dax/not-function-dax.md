@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: NOT"
 title: "NOT function (DAX)"
+ms.topic: reference
 ---
 # NOT
 

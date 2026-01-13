@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: MOD"
 title: "MOD function (DAX)"
+ms.topic: reference
 ---
 # MOD
 

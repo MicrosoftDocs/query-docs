@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: NATURALINNERJOIN"
 title: "NATURALINNERJOIN function (DAX)"
+ms.topic: reference
 ---
 # NATURALINNERJOIN
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: New DAX functions"
 title: "New DAX functions"
+ms.topic: whats-new
 ---
 # New DAX functions
 

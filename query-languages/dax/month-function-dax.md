@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: MONTH"
 title: "MONTH function (DAX)"
+ms.topic: reference
 ---
 # MONTH
 

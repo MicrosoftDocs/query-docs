@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: NATURALLEFTOUTERJOIN"
 title: "NATURALLEFTOUTERJOIN function (DAX)"
+ms.topic: reference
 ---
 # NATURALLEFTOUTERJOIN
 

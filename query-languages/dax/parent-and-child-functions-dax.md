@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Parent and Child functions"
 title: "Parent and Child functions (DAX)"
+ms.topic: concept-article
 ---
 # Parent and Child functions
 
