@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Virtual Table"
 title: "Virtual Table (DAX) | Microsoft Docs"
+ms.topic: reference
 ---
 # Virtual Table
 

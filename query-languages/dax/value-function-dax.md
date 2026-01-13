@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: VALUE"
 title: "VALUE function (DAX)"
+ms.topic: reference
 ---
 # VALUE
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TOTALQTD"
 title: "TOTALQTD function (DAX)"
+ms.topic: reference
 ---
 # TOTALQTD
 

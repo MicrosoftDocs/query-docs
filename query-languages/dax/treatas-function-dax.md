@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TREATAS"
 title: "TREATAS function"
+ms.topic: reference
 ---
 # TREATAS
 

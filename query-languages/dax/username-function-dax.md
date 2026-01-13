@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: USERNAME"
 title: "USERNAME function (DAX)"
+ms.topic: reference
 ---
 # USERNAME
 

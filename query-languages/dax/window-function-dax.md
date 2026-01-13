@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: WINDOW"
 title: "WINDOW function (DAX)"
+ms.topic: reference
 ---
 
 # WINDOW

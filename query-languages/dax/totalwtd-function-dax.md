@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TOTALWTD"
 title: "TOTALWTD function (DAX)"
+ms.topic: reference
 ---
 # TOTALWTD
 

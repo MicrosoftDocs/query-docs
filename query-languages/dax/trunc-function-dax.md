@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TRUNC"
 title: "TRUNC function (DAX)"
+ms.topic: reference
 ---
 # TRUNC
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: XIRR"
 title: "XIRR function (DAX)"
+ms.topic: reference
 ---
 # XIRR
 
