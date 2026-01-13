@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TANH"
 title: "TANH function (DAX)"
+ms.topic: reference
 ---
 # TANH
 

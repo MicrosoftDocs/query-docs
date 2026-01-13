@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: T.DIST.RT"
 title: "T.DIST.RT function (DAX)"
+ms.topic: reference
 ---
 # T.DIST.RT
 

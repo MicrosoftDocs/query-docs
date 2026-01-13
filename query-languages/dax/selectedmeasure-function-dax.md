@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SELECTEDMEASURE"
 title: "SELECTEDMEASURE function (DAX)"
+ms.topic: reference
 ---
 # SELECTEDMEASURE
 
