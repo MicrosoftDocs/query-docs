@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: LN"
 title: "LN function (DAX)"
+ms.topic: reference
 ---
 # LN
 

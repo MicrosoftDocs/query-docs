@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISODD"
 title: "ISODD function (DAX)"
+ms.topic: reference
 ---
 # ISODD
 

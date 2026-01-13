@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISEVEN"
 title: "ISEVEN function (DAX)"
+ms.topic: reference
 ---
 # ISEVEN
 

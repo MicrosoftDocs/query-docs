@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISINSCOPE"
 title: "ISINSCOPE function (DAX)"
+ms.topic: reference
 ---
 # ISINSCOPE
 

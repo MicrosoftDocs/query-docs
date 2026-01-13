@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISNUMBER"
 title: "ISNUMBER function (DAX)"
+ms.topic: reference
 ms.custom: ExampleTypeGeneric
 ---
 # ISNUMBER

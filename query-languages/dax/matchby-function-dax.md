@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: MATCHBY"
 title: "MATCHBY function (DAX)"
+ms.topic: reference
 author: keshen
 ---
 

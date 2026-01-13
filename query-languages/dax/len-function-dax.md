@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: LEN"
 title: "LEN function (DAX)"
+ms.topic: reference
 ---
 # LEN
 

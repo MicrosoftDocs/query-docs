@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISPMT"
 title: "ISPMT function (DAX)"
+ms.topic: reference
 author: jajin7
 ---
 

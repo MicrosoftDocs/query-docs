@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: LOOKUPWITHTOTALS"
 title: "LOOKUPWITHTOTALS function (DAX) | Microsoft Docs"
+ms.topic: reference
 ---
 # LOOKUPWITHTOTALS
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISSUBTOTAL"
 title: "ISSUBTOTAL function (DAX)"
+ms.topic: reference
 ---
 # ISSUBTOTAL
 

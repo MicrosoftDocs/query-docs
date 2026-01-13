@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: MINA"
 title: "MINA function (DAX)"
+ms.topic: reference
 ---
 # MINA
 

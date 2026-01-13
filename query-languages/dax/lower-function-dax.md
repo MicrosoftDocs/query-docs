@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: LOWER"
 title: "LOWER function (DAX)"
+ms.topic: reference
 ---
 # LOWER
 
