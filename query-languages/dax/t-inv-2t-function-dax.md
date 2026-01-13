@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: T.INV.2T"
 title: "T.INV.2T function (DAX)"
+ms.topic: reference
 ---
 # T.INV.2T
 

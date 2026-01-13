@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Text functions"
 title: "Text functions (DAX)"
+ms.topic: reference
 ---
 # Text functions
 

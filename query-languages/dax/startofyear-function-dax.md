@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: STARTOFYEAR"
 title: "STARTOFYEAR function (DAX)"
+ms.topic: reference
 ---
 # STARTOFYEAR
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TOCSV"
 title: "TOCSV function (DAX)"
+ms.topic: reference
 ---
 # TOCSV
 

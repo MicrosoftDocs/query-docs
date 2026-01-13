@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: STARTOFWEEK"
 title: "STARTOFWEEK function (DAX)"
+ms.topic: reference
 ---
 # STARTOFWEEK
 

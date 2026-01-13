@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SUBSTITUTE"
 title: "SUBSTITUTE function (DAX)"
+ms.topic: reference
 ---
 # SUBSTITUTE
 

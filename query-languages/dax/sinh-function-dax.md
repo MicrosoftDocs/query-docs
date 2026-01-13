@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SINH"
 title: "SINH function (DAX)"
+ms.topic: reference
 ---
 # SINH
 
