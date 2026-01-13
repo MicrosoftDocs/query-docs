@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DEFINE"
 title: "DEFINE keyword (DAX)"
+ms.topic: reference
 ---
 # DEFINE
 

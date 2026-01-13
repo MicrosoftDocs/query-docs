@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: EARLIER"
 title: "EARLIER function (DAX)"
+ms.topic: reference
 ---
 # EARLIER
 

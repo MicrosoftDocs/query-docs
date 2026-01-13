@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ENDOFMONTH"
 title: "ENDOFMONTH function (DAX)"
+ms.topic: reference
 ---
 # ENDOFMONTH
 

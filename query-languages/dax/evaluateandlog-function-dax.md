@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: EVALUATEANDLOG"
 title: "EVALUATEANDLOG function (DAX)"
+ms.topic: reference
 ---
 # EVALUATEANDLOG
 

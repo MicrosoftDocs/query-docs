@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DISTINCTCOUNTNOBLANK"
 title: "DISTINCTCOUNTNOBLANK function (DAX)"
+ms.topic: reference
 ---
 # DISTINCTCOUNTNOBLANK
 

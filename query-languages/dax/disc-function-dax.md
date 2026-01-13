@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DISC"
 title: "DISC function (DAX)"
+ms.topic: reference
 author: jajin7
 ---
 
