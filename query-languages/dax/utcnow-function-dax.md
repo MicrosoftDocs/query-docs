@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: UTCNOW"
 title: "UTCNOW function (DAX)"
+ms.topic: reference
 ---
 # UTCNOW
 

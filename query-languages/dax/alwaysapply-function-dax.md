@@ -1,6 +1,8 @@
 ---
 description: "Learn more about: ALWAYSAPPLY"
 title: "ALWAYSAPPLY function (DAX) | Microsoft Docs"
+ms.topic: reference
+
 ---
 # ALWAYSAPPLY
 

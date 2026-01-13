@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: LASTDATE"
 title: "LASTDATE function (DAX)"
+ms.topic: reference
 ---
 # LASTDATE
 

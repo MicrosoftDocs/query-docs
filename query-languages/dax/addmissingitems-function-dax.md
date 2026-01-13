@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ADDMISSINGITEMS"
 title: "ADDMISSINGITEMS function (DAX)"
+ms.topic: reference
 ---
 # ADDMISSINGITEMS
 

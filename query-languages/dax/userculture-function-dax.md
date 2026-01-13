@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: USERCULTURE"
 title: "USERCULTURE function (DAX)"
+ms.topic: reference
 ---
 # USERCULTURE
 

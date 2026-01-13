@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CONFIDENCE.NORM"
 title: "CONFIDENCE.NORM function (DAX)"
+ms.topic: reference
 ---
 # CONFIDENCE.NORM
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: NEXTMONTH"
 title: "NEXTMONTH function (DAX)"
+ms.topic: reference
 ---
 # NEXTMONTH
 

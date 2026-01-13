@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PRODUCT"
 title: "PRODUCT function (DAX)"
+ms.topic: reference
 ---
 # PRODUCT
 

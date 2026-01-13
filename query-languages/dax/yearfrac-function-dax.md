@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: YEARFRAC"
 title: "YEARFRAC function (DAX)"
+ms.topic: reference
 ---
 # YEARFRAC
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ERROR"
 title: "ERROR function"
+ms.topic: reference
 ---
 # ERROR
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: FACT"
 title: "FACT function (DAX)"
+ms.topic: reference
 ---
 # FACT
 

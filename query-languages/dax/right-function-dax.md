@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: RIGHT"
 title: "RIGHT function (DAX)"
+ms.topic: reference
 ---
 # RIGHT
 

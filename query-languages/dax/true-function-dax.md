@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TRUE"
 title: "TRUE function (DAX)"
+ms.topic: reference
 ---
 # TRUE
 

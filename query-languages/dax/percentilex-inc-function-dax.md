@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PERCENTILEX.INC"
 title: "PERCENTILEX.INC function (DAX)"
+ms.topic: reference
 ---
 # PERCENTILEX.INC
 

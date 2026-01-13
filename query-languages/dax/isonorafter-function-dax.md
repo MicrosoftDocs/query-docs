@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISONORAFTER"
 title: "ISONORAFTER function (DAX)"
+ms.topic: reference
 ---
 # ISONORAFTER
 

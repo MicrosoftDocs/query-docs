@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ATAN"
 title: "ATAN function (DAX)"
+ms.topic: reference
 ---
 # ATAN
 

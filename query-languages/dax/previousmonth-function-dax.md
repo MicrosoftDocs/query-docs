@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PREVIOUSMONTH"
 title: "PREVIOUSMONTH function (DAX)"
+ms.topic: reference
 ---
 # PREVIOUSMONTH
 

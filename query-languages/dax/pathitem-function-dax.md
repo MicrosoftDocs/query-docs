@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PATHITEM"
 title: "PATHITEM function (DAX)"
+ms.topic: reference
 ---
 # PATHITEM
 

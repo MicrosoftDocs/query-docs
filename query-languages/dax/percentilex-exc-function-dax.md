@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PERCENTILEX.EXC"
 title: "PERCENTILEX.EXC function (DAX)"
+ms.topic: reference
 ---
 # PERCENTILEX.EXC
 

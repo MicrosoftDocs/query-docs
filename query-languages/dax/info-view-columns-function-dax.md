@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: INFO.VIEW.COLUMNS"
 title: "INFO.VIEW.COLUMNS function (DAX)"
+ms.topic: reference
 author: DataZoeMS
 ---
 # INFO.VIEW.COLUMNS

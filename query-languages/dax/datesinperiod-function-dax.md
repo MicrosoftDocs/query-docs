@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DATESINPERIOD"
 title: "DATESINPERIOD function (DAX)"
+ms.topic: reference
 ---
 # DATESINPERIOD
 

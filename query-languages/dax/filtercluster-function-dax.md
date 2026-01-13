@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: FILTERCLUSTER"
 title: "FILTERCLUSTER function (DAX) | Microsoft Docs"
+ms.topic: reference
 ---
 # FILTERCLUSTER
 

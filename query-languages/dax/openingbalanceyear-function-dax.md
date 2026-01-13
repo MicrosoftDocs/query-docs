@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: OPENINGBALANCEYEAR"
 title: "OPENINGBALANCEYEAR function (DAX)"
+ms.topic: reference
 ---
 # OPENINGBALANCEYEAR
 

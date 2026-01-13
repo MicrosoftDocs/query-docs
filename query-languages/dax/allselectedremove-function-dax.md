@@ -1,6 +1,8 @@
 ---
 description: "Learn more about: ALLSELECTEDREMOVE"
 title: "ALLSELECTEDREMOVE function (DAX) | Microsoft Docs"
+ms.topic: reference
+
 ---
 # ALLSELECTEDREMOVE
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: RAND"
 title: "RAND function (DAX)"
+ms.topic: reference
 ---
 # RAND
 

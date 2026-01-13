@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DETAILROWS"
 title: "DETAILROWS function (DAX)"
+ms.topic: reference
 ---
 # DETAILROWS
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: COUPNUM"
 title: "COUPNUM function (DAX)"
+ms.topic: reference
 ---
 
 # COUPNUM

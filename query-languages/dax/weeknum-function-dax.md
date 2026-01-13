@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: WEEKNUM"
 title: "WEEKNUM function (DAX)"
+ms.topic: reference
 ---
 # WEEKNUM
 

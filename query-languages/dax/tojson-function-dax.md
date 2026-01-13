@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TOJSON"
 title: "TOJSON function (DAX)"
+ms.topic: reference
 ---
 # TOJSON
 

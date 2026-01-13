@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DAY"
 title: "DAY function (DAX)"
+ms.topic: reference
 ---
 # DAY
 

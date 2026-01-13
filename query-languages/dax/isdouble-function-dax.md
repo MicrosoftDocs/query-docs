@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISDOUBLE"
 title: "ISDOUBLE function (DAX)"
+ms.topic: reference
 ms.custom: ExampleTypeGeneric
 ---
 # ISDOUBLE

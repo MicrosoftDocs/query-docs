@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: FORMAT"
 title: "FORMAT function (DAX)"
+ms.topic: reference
 ---
 # FORMAT
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CLOSINGBALANCEWEEK"
 title: "CLOSINGBALANCEWEEK function (DAX)"
+ms.topic: reference
 ---
 # CLOSINGBALANCEWEEK
 

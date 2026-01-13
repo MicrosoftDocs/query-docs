@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: LOG10"
 title: "LOG10 function (DAX)"
+ms.topic: reference
 ---
 # LOG10
 

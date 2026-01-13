@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISBOOLEAN"
 title: "ISBOOLEAN function (DAX)"
+ms.topic: reference
 ms.custom: ExampleTypeGeneric
 ---
 # ISBOOLEAN

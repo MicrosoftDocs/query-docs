@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ENDOFWEEK"
 title: "ENDOFWEEK function (DAX)"
+ms.topic: reference
 ---
 # ENDOFWEEK
 

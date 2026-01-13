@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Other functions"
 title: "Other functions (DAX)"
+ms.topic: concept-article
 ---
 # Other functions
 

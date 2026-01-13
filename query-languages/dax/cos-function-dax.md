@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: COS"
 title: "COS function (DAX)"
+ms.topic: reference
 ---
 # COS
 

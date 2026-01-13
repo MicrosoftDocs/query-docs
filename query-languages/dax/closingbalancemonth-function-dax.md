@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CLOSINGBALANCEMONTH"
 title: "CLOSINGBALANCEMONTH function (DAX)"
+ms.topic: reference
 ---
 # CLOSINGBALANCEMONTH
 

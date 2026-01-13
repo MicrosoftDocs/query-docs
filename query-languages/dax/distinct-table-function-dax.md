@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DISTINCT (table)"
 title: "DISTINCT (table) function (DAX)"
+ms.topic: reference
 ---
 # DISTINCT (table)
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: MID"
 title: "MID function (DAX)"
+ms.topic: reference
 ---
 # MID
 

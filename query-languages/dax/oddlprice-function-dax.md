@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ODDLPRICE"
 title: "ODDLPRICE function (DAX)"
+ms.topic: reference
 author: jajin7
 ---
 

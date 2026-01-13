@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: OR"
 title: "OR function (DAX)"
+ms.topic: reference
 ---
 
 # OR

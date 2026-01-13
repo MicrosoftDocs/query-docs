@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISDECIMAL"
 title: "ISDECIMAL function (DAX)"
+ms.topic: reference
 ms.custom: ExampleTypeGeneric
 ---
 # ISDECIMAL

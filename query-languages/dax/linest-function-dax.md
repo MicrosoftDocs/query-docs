@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: LINEST"
 title: "LINEST function (DAX)"
+ms.topic: reference
 author: masanto-msft
 ms.author: masanto
 ---

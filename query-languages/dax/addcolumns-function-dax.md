@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ADDCOLUMNS"
 title: "ADDCOLUMNS function (DAX)"
+ms.topic: reference
 ---
 # ADDCOLUMNS
 

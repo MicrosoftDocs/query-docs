@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: EARLIEST"
 title: "EARLIEST function (DAX)"
+ms.topic: reference
 ---
 # EARLIEST
 

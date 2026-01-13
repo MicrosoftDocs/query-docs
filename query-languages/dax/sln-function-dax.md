@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SLN"
 title: "SLN function (DAX)"
+ms.topic: reference
 author: jajin7
 ---
 

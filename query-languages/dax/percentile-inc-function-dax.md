@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PERCENTILE.INC"
 title: "PERCENTILE.INC function (DAX)"
+ms.topic: reference
 ---
 # PERCENTILE.INC
 

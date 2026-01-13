@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: UNICHAR"
 title: "UNICHAR function (DAX)"
+ms.topic: reference
 ---
 # UNICHAR
 

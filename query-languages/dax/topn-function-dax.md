@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TOPN"
 title: "TOPN function (DAX)"
+ms.topic: reference
 ---
 # TOPN
 

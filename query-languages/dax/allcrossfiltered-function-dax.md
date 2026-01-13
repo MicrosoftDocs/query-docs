@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ALLCROSSFILTERED"
 title: "ALLCROSSFILTERED function (DAX)"
+ms.topic: reference
 ---
 # ALLCROSSFILTERED
 

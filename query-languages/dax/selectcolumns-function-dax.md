@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SELECTCOLUMNS"
 title: "SELECTCOLUMNS function (DAX)"
+ms.topic: reference
 ---
 # SELECTCOLUMNS
 

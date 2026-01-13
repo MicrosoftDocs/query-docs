@@ -1,7 +1,7 @@
 ---
 title: "Learn DAX videos"
 description: Describes helpful videos used to learn Data Analysis Expressions (DAX) language.
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # Videos
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: GENERATE"
 title: "GENERATE  function (DAX)"
+ms.topic: reference
 ---
 # GENERATE
 

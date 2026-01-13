@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: EXACT"
 title: "EXACT function (DAX)"
+ms.topic: reference
 ---
 # EXACT
 

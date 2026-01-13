@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CUMIPMT"
 title: "CUMIPMT function (DAX)"
+ms.topic: reference
 author: jajin7
 ---
 

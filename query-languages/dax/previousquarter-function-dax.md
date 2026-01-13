@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PREVIOUSQUARTER"
 title: "PREVIOUSQUARTER function (DAX)"
+ms.topic: reference
 ---
 # PREVIOUSQUARTER
 

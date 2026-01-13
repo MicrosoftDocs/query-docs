@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: KEEPFILTERS"
 title: "KEEPFILTERS function (DAX)"
+ms.topic: reference
 ---
 # KEEPFILTERS
 

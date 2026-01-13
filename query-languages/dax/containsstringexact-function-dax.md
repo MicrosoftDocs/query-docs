@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CONTAINSSTRINGEXACT"
 title: "CONTAINSSTRINGEXACT function (DAX)"
+ms.topic: reference
 ---
 # CONTAINSSTRINGEXACT
 
