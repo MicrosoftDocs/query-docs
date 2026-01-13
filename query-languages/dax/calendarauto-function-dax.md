@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CALENDARAUTO"
 title: "CALENDARAUTO function (DAX)"
+ms.topic: reference
 ---
 # CALENDARAUTO
 

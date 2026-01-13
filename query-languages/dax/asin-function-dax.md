@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ASIN"
 title: "ASIN function (DAX)"
+ms.topic: reference
 ---
 # ASIN
 

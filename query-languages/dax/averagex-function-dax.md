@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: AVERAGEX"
 title: "AVERAGEX function (DAX)"
+ms.topic: reference
 ---
 # AVERAGEX
 

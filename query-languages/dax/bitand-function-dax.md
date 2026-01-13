@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: BITAND"
 title: "BITAND function (DAX)"
+ms.topic: reference
 ---
 # BITAND
 

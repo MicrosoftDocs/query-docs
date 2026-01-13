@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: AVERAGE"
 title: "AVERAGE function (DAX)"
+ms.topic: reference
 ---
 # AVERAGE
 
