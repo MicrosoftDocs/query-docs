@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: IFERROR"
 title: "IFERROR function (DAX)"
+ms.topic: reference
 ---
 # IFERROR
 

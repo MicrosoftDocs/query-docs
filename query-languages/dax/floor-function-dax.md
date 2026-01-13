@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: FLOOR"
 title: "FLOOR function (DAX)"
+ms.topic: reference
 ---
 # FLOOR
 

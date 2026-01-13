@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: HASONEVALUE"
 title: "HASONEVALUE function (DAX)"
+ms.topic: reference
 ---
 # HASONEVALUE
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: GROUPCROSSAPPLYTABLE"
 title: "GROUPCROSSAPPLYTABLE function (DAX) | Microsoft Docs"
+ms.topic: reference
 ---
 # GROUPCROSSAPPLYTABLE
 

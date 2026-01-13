@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: GENERATEALL"
 title: "GENERATEALL function (DAX)"
+ms.topic: reference
 ---
 # GENERATEALL
 

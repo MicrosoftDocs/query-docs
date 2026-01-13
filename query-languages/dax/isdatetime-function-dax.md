@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISDATETIME"
 title: "ISDATETIME function (DAX)"
+ms.topic: reference
 ms.custom: ExampleTypeGeneric
 ---
 # ISDATETIME

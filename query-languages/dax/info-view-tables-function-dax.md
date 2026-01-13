@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: INFO.VIEW.TABLES"
 title: "INFO.VIEW.TABLES function (DAX)"
+ms.topic: reference
 author: DataZoeMS
 ---
 # INFO.VIEW.TABLES

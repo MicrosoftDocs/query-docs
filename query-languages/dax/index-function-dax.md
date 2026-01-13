@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: INDEX"
 title: "INDEX function (DAX)"
+ms.topic: reference
 ---
 
 # INDEX

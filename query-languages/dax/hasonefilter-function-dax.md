@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: HASONEFILTER"
 title: "HASONEFILTER function (DAX)"
+ms.topic: reference
 ---
 # HASONEFILTER
 

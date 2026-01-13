@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISCURRENCY"
 title: "ISCURRENCY function (DAX)"
+ms.topic: reference
 ms.custom: ExampleTypeGeneric
 ---
 # ISCURRENCY

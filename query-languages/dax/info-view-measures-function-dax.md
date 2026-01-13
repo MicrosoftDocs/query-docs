@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: INFO.VIEW.MEASURES"
 title: "INFO.VIEW.MEASURES function (DAX)"
+ms.topic: reference
 author: DataZoeMS
 ---
 # INFO.VIEW.MEASURES

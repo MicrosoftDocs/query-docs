@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISAFTER"
 title: "ISAFTER function (DAX)"
+ms.topic: reference
 ---
 # ISAFTER
 
