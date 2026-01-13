@@ -2,6 +2,7 @@
 description: "Learn more about: Date.EndOfWeek"
 title: "Date.EndOfWeek"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Date.EndOfWeek
 
