@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ROW function"
 title: "ROW function (DAX)"
+ms.topic: reference
 ---
 # ROW function
 

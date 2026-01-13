@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ROUNDDOWN"
 title: "ROUNDDOWN function (DAX)"
+ms.topic: reference
 ---
 # ROUNDDOWN
 

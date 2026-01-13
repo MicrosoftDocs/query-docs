@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PRODUCTX"
 title: "PRODUCTX function (DAX)"
+ms.topic: reference
 ---
 # PRODUCTX
 
