@@ -2,6 +2,7 @@
 description: "Learn more about: LimitClauseKind.Type"
 title: "LimitClauseKind.Type"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # LimitClauseKind.Type
 

@@ -2,6 +2,7 @@
 description: "Learn more about: GroupKind.Type"
 title: "GroupKind.Type"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # GroupKind.Type
 
