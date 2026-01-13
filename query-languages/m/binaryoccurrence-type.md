@@ -2,6 +2,7 @@
 description: "Learn more about: BinaryOccurrence.Type"
 title: "BinaryOccurrence.Type"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # BinaryOccurrence.Type
 

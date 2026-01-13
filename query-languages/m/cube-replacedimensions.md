@@ -2,6 +2,7 @@
 description: "Learn more about: Cube.ReplaceDimensions"
 title: "Cube.ReplaceDimensions"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Cube.ReplaceDimensions
 
