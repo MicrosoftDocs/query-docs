@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: COTH"
 title: "COTH function (DAX)"
+ms.topic: reference
 ---
 # COTH
 

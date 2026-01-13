@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: COUNTX"
 title: "COUNTX function (DAX)"
+ms.topic: reference
 ---
 # COUNTX
 

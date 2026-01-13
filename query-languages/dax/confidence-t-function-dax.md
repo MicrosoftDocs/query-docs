@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CONFIDENCE.T"
 title: "CONFIDENCE.T function (DAX)"
+ms.topic: reference
 ---
 # CONFIDENCE.T
 

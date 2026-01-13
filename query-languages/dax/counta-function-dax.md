@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: COUNTA"
 title: "COUNTA function (DAX)"
+ms.topic: reference
 ---
 # COUNTA
 

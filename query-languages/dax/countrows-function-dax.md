@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: COUNTROWS"
 title: "COUNTROWS function (DAX)"
+ms.topic: reference
 ---
 # COUNTROWS
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DATEDIFF"
 title: "DATEDIFF function (DAX)"
+ms.topic: reference
 ---
 # DATEDIFF
 

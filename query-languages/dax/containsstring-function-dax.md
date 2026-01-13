@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CONTAINSSTRING"
 title: "CONTAINSSTRING function (DAX)"
+ms.topic: reference
 ---
 # CONTAINSSTRING
 

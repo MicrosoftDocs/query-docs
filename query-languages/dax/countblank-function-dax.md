@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: COUNTBLANK"
 title: "COUNTBLANK function (DAX)"
+ms.topic: reference
 ---
 # COUNTBLANK
 
