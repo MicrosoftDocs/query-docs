@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: MAX"
 title: "MAX function (DAX)"
+ms.topic: reference
 ---
 # MAX
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: LASTNONBLANKVALUE"
 title: "LASTNONBLANKVALUE function (DAX)"
+ms.topic: reference
 ---
 # LASTNONBLANKVALUE
 

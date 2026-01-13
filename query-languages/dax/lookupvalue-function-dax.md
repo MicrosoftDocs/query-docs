@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: LOOKUPVALUE"
 title: "LOOKUPVALUE function (DAX)"
+ms.topic: reference
 ---
 # LOOKUPVALUE
 

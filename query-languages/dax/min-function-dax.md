@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: MIN"
 title: "MIN function (DAX)"
+ms.topic: reference
 ---
 # MIN
 

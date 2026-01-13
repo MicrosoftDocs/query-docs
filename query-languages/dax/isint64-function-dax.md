@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISINT64"
 title: "ISINT64 function (DAX)"
+ms.topic: reference
 ms.custom: ExampleTypeGeneric
 ---
 # ISINT64

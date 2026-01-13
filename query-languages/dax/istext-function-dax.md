@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISTEXT"
 title: "ISTEXT function (DAX)"
+ms.topic: reference
 ms.custom: ExampleTypeGeneric
 ---
 # ISTEXT

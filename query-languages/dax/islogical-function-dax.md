@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISLOGICAL"
 title: "ISLOGICAL function (DAX)"
+ms.topic: reference
 ms.custom: ExampleTypeGeneric
 ---
 # ISLOGICAL
