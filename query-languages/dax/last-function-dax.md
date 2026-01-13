@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: LAST"
 title: "LAST function (DAX)"
+ms.topic: reference
 ---
 
 # LAST

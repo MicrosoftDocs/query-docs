@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ACOTH"
 title: "ACOTH function (DAX)"
+ms.topic: reference
 ---
 # ACOTH
 

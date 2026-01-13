@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SUMX"
 title: "SUMX function (DAX)"
+ms.topic: reference
 ---
 # SUMX
 

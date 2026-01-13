@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ACOT"
 title: "ACOT function (DAX)"
+ms.topic: reference
 ---
 # ACOT
 

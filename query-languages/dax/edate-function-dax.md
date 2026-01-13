@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: EDATE"
 title: "EDATE function (DAX)"
+ms.topic: reference
 ---
 # EDATE
 

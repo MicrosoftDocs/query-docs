@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CROSSFILTER"
 title: "CROSSFILTER function"
+ms.topic: reference
 ---
 # CROSSFILTER
 

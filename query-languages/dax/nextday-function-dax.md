@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: NEXTDAY"
 title: "NEXTDAY function (DAX)"
+ms.topic: reference
 ---
 # NEXTDAY
 

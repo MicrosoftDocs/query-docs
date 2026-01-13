@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: STARTOFMONTH"
 title: "STARTOFMONTH function (DAX)"
+ms.topic: reference
 ---
 # STARTOFMONTH
 

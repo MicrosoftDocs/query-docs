@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DAX syntax"
 title: "DAX syntax"
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # DAX syntax
 

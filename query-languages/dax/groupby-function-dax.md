@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: GROUPBY"
 title: "GROUPBY function (DAX)"
+ms.topic: reference
 ---
 # GROUPBY
 

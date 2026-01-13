@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: NEXTQUARTER"
 title: "NEXTQUARTER function (DAX)"
+ms.topic: reference
 ---
 # NEXTQUARTER
 

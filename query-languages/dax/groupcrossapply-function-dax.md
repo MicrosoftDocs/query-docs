@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: GROUPCROSSAPPLY"
 title: "GROUPCROSSAPPLY function (DAX) | Microsoft Docs"
+ms.topic: reference
 ---
 # GROUPCROSSAPPLY
 

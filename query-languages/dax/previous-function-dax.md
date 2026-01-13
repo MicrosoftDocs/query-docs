@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PREVIOUS"
 title: "PREVIOUS function (DAX)"
+ms.topic: reference
 ---
 
 # PREVIOUS

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: INT"
 title: "INT function (DAX)"
+ms.topic: reference
 ---
 # INT
 

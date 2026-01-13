@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Virtual Column"
 title: "Virtual Column (DAX) | Microsoft Docs"
+ms.topic: reference
 ---
 # Virtual Column
 

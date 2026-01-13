@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: EXTERNALMEASURE"
 title: "EXTERNALMEASURE function (DAX)"
+ms.topic: reference
 ---
 # EXTERNALMEASURE
 

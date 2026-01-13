@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CALCULATETABLE"
 title: "CALCULATETABLE function (DAX)"
+ms.topic: reference
 ---
 # CALCULATETABLE
 

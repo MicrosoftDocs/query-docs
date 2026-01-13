@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISEMPTY"
 title: "ISEMPTY function (DAX)"
+ms.topic: reference
 ---
 # ISEMPTY
 

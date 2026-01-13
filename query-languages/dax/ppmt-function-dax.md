@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PPMT"
 title: "PPMT function (DAX)"
+ms.topic: reference
 author: jajin7
 ---
 

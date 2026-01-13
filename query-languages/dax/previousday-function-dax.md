@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PREVIOUSDAY"
 title: "PREVIOUSDAY function (DAX)"
+ms.topic: reference
 ---
 # PREVIOUSDAY
 

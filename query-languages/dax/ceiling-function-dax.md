@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CEILING"
 title: "CEILING function (DAX)"
+ms.topic: reference
 ---
 # CEILING
 

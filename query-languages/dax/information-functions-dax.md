@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Information functions"
 title: "Information functions (DAX)"
+ms.topic: concept-article
 ---
 # Information functions
 

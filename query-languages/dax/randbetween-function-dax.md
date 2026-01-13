@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: RANDBETWEEN"
 title: "RANDBETWEEN function (DAX)"
+ms.topic: reference
 ---
 # RANDBETWEEN
 

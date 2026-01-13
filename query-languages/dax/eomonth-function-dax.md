@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: EOMONTH"
 title: "EOMONTH function (DAX)"
+ms.topic: reference
 ---
 # EOMONTH
 

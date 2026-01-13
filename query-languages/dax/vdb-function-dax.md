@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: VDB"
 title: "VDB function (DAX)"
+ms.topic: reference
 author: jajin7
 ---
 

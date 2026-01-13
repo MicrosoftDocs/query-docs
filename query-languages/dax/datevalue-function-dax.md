@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DATEVALUE"
 title: "DATEVALUE function (DAX)"
+ms.topic: reference
 ---
 # DATEVALUE
 

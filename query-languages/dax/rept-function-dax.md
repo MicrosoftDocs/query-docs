@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: REPT"
 title: "REPT function (DAX)"
+ms.topic: reference
 ---
 # REPT
 

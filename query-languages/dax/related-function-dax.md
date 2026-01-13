@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: RELATED"
 title: "RELATED function (DAX)"
+ms.topic: reference
 ---
 # RELATED
 

@@ -1,6 +1,8 @@
 ---
 description: "Learn more about: ALLSELECTED"
 title: "ALLSELECTED function (DAX)"
+ms.topic: reference
+
 ---
 # ALLSELECTED
 

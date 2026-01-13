@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: GCD"
 title: "GCD function (DAX)"
+ms.topic: reference
 ---
 # GCD
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: VAR"
 title: "VAR keyword (DAX)"
+ms.topic: reference
 ---
 # VAR
 

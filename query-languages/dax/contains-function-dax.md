@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CONTAINS"
 title: "CONTAINS function (DAX)"
+ms.topic: reference
 ---
 # CONTAINS
 

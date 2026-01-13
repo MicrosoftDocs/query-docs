@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CLOSINGBALANCEQUARTER"
 title: "CLOSINGBALANCEQUARTER function (DAX)"
+ms.topic: reference
 ---
 # CLOSINGBALANCEQUARTER
 

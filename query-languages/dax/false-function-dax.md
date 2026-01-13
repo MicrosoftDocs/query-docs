@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: FALSE"
 title: "FALSE function (DAX)"
+ms.topic: reference
 ---
 # FALSE
 

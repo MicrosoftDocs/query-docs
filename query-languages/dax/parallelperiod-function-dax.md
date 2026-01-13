@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PARALLELPERIOD"
 title: "PARALLELPERIOD function (DAX)"
+ms.topic: reference
 ---
 # PARALLELPERIOD
 

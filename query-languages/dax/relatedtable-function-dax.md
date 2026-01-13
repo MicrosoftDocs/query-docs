@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: RELATEDTABLE"
 title: "RELATEDTABLE function (DAX)"
+ms.topic: reference
 ---
 # RELATEDTABLE
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ENDOFQUARTER"
 title: "ENDOFQUARTER function (DAX)"
+ms.topic: reference
 ---
 # ENDOFQUARTER
 

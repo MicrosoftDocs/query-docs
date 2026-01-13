@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DATESYTD"
 title: "DATESYTD function (DAX)"
+ms.topic: reference
 ---
 # DATESYTD
 

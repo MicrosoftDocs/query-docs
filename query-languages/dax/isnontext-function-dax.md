@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISNONTEXT"
 title: "ISNONTEXT function (DAX)"
+ms.topic: reference
 ---
 # ISNONTEXT
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DEGREES"
 title: "DEGREES function (DAX)"
+ms.topic: reference
 ---
 # DEGREES
 

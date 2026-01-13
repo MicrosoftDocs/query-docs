@@ -1,6 +1,8 @@
 ---
 description: "Learn more about: ALLEXCEPT"
 title: "ALLEXCEPT function (DAX)"
+ms.topic: reference
+
 ---
 # ALLEXCEPT
 

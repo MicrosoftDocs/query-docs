@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: INTERSECT"
 title: "INTERSECT function (DAX)"
+ms.topic: reference
 ---
 # INTERSECT
 

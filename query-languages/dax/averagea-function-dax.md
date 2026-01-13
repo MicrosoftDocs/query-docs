@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: AVERAGEA"
 title: "AVERAGEA function (DAX)"
+ms.topic: reference
 ---
 # AVERAGEA
 

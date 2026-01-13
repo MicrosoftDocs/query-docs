@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SUM"
 title: "SUM function (DAX)"
+ms.topic: reference
 ---
 # SUM
 

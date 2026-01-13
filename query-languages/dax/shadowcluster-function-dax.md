@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SHADOWCLUSTER"
 title: "SHADOWCLUSTER function (DAX) | Microsoft Docs"
+ms.topic: reference
 ---
 # SHADOWCLUSTER
 

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DAX parameter-naming conventions"
 title: "DAX parameter-naming conventions"
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # DAX parameter-naming conventions
 Parameter names are standardized in DAX reference to facilitate the usage and understanding of the functions.

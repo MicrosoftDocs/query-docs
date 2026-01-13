@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DISTINCTCOUNT"
 title: "DISTINCTCOUNT function (DAX)"
+ms.topic: reference
 ---
 # DISTINCTCOUNT
 

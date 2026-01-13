@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CALCULATE"
 title: "CALCULATE function (DAX)"
+ms.topic: reference
 ---
 # CALCULATE
 

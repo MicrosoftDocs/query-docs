@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SELECTEDVALUE"
 title: "SELECTEDVALUE function"
+ms.topic: reference
 ---
 # SELECTEDVALUE
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SECOND"
 title: "SECOND function (DAX)"
+ms.topic: reference
 ---
 # SECOND
 

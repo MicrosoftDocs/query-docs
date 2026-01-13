@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: COMBINA"
 title: "COMBINA function (DAX)"
+ms.topic: reference
 ---
 
 # COMBINA

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISSTRING"
 title: "ISSTRING function (DAX)"
+ms.topic: reference
 ms.custom: ExampleTypeGeneric
 ---
 # ISSTRING

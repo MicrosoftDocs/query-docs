@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: EVALUATE"
 title: "EVALUATE keyword (DAX)"
+ms.topic: reference
 ---
 # EVALUATE
 

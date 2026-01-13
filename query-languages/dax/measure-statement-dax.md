@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: MEASURE"
 title: "MEASURE keyword (DAX)"
+ms.topic: reference
 ---
 # MEASURE
 

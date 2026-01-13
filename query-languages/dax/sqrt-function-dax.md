@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SQRT"
 title: "SQRT function (DAX)"
+ms.topic: reference
 ---
 # SQRT
 

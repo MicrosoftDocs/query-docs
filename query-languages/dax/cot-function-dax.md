@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: COT"
 title: "COT function (DAX)"
+ms.topic: reference
 ---
 # COT
 

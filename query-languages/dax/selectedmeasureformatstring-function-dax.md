@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SELECTEDMEASUREFORMATSTRING"
 title: "SELECTEDMEASUREFORMATSTRING function (DAX)"
+ms.topic: reference
 ---
 # SELECTEDMEASUREFORMATSTRING
 

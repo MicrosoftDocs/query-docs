@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ODDFYIELD"
 title: "ODDFYIELD function (DAX)"
+ms.topic: reference
 author: jajin7
 ---
 

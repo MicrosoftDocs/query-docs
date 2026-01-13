@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CURRENCY"
 title: "CURRENCY function (DAX)"
+ms.topic: reference
 ---
 # CURRENCY
 

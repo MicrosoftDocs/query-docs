@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ACOS"
 title: "ACOS function (DAX)"
+ms.topic: reference
 ---
 # ACOS
 

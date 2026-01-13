@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: NEXT"
 title: "NEXT function (DAX)"
+ms.topic: reference
 ---
 
 # NEXT

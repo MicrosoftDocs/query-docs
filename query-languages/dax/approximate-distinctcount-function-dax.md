@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: APPROXIMATEDISTINCTCOUNT"
 title: "APPROXIMATEDISTINCTCOUNT function (DAX)"
+ms.topic: reference
 ---
 # APPROXIMATEDISTINCTCOUNT
 

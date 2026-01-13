@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: COUPDAYSNC"
 title: "COUPDAYSNC function (DAX)"
+ms.topic: reference
 ---
 
 # COUPDAYSNC

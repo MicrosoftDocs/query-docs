@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Date and time functions"
 title: "Date and time functions (DAX)"
+ms.topic: concept-article
 ---
 # Date and time functions
 
