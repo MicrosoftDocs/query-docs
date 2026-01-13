@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SEARCH"
 title: "SEARCH function (DAX)"
+ms.topic: reference
 ---
 # SEARCH
 

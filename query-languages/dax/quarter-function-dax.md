@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: QUARTER"
 title: "QUARTER function (DAX)"
+ms.topic: reference
 ---
 
 # QUARTER

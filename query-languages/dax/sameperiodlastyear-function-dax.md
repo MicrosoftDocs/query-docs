@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SAMEPERIODLASTYEAR"
 title: "SAMEPERIODLASTYEAR function (DAX)"
+ms.topic: reference
 ---
 # SAMEPERIODLASTYEAR
 

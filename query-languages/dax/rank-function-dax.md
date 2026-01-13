@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: RANK"
 title: "RANK function (DAX)"
+ms.topic: reference
 author: rahulten
 ---
 

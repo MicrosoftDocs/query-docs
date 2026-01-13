@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PREVIOUSYEAR"
 title: "PREVIOUSYEAR function (DAX)"
+ms.topic: reference
 ---
 # PREVIOUSYEAR
 
