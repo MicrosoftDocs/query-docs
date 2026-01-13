@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: AccessControlKind.Type"
 title: "AccessControlKind.Type"
+ms.topic: reference
 ms.subservice: m-source
 ---
 # AccessControlKind.Type
