@@ -2,6 +2,7 @@
 description: "Learn more about: DateTime.IsInNextMinute"
 title: "DateTime.IsInNextMinute"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # DateTime.IsInNextMinute
 

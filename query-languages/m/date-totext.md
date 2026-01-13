@@ -2,6 +2,7 @@
 description: "Learn more about: Date.ToText"
 title: "Date.ToText"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Date.ToText
 

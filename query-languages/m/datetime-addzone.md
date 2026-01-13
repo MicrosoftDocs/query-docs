@@ -2,6 +2,7 @@
 description: "Learn more about: DateTime.AddZone"
 title: "DateTime.AddZone"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # DateTime.AddZone
 
