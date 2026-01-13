@@ -2,6 +2,7 @@
 description: "Learn more about: BinaryFormat.UnsignedInteger64"
 title: "BinaryFormat.UnsignedInteger64"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # BinaryFormat.UnsignedInteger64
 

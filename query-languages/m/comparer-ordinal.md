@@ -2,6 +2,7 @@
 description: "Learn more about: Comparer.Ordinal"
 title: "Comparer.Ordinal"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Comparer.Ordinal
 
