@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: COALESCE"
 title: "COALESCE function (DAX)"
+ms.topic: reference
 ---
 # COALESCE
 

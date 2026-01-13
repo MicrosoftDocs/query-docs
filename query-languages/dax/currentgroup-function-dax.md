@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CURRENTGROUP"
 title: "CURRENTGROUP function (DAX)"
+ms.topic: reference
 ---
 # CURRENTGROUP
 

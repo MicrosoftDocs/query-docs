@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CONTAINSROW function"
 title: "CONTAINSROW function"
+ms.topic: reference
 ---
 # CONTAINSROW function
 
