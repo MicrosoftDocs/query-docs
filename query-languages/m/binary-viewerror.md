@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Binary.ViewError"
 title: "Binary.ViewError"
+ms.topic: reference
 ms.subservice: m-source
 ---
 # Binary.ViewError

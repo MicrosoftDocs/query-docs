@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Binary.ToList"
 title: "Binary.ToList"
+ms.topic: reference
 ms.subservice: m-source
 ---
 # Binary.ToList

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Binary.FromText"
 title: "Binary.FromText"
+ms.topic: reference
 ms.subservice: m-source
 ---
 # Binary.FromText
