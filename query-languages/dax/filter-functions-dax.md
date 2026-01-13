@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Filter functions"
 title: "Filter functions (DAX)"
+ms.topic: reference
 ---
 # Filter functions
 

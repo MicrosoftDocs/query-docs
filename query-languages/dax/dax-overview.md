@@ -1,7 +1,7 @@
 ---
 title: "DAX overview"
 description: Describes the Data Analysis Expressions (DAX) language.
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # DAX overview
 

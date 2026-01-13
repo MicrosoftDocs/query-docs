@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DIVIDE"
 title: "DIVIDE function (DAX)"
+ms.topic: reference
 ---
 # DIVIDE
 

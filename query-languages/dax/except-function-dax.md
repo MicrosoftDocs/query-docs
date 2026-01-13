@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: EXCEPT"
 title: "EXCEPT function (DAX)"
+ms.topic: reference
 ---
 # EXCEPT
 

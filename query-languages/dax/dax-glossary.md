@@ -1,7 +1,7 @@
 ---
 title: "DAX glossary"
 description: Describes common terms used in the Data Analysis Expressions (DAX) language.
-ms.topic: conceptual
+ms.topic: glossary
 ---
 # DAX glossary
 
