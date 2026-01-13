@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: GENERATESERIES"
 title: "GENERATESERIES function"
+ms.topic: reference
 ---
 # GENERATESERIES
 

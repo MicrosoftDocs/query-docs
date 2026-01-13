@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: INFO.CALCDEPENDENCY"
 title: "INFO.CALCDEPENDENCY function (DAX)"
+ms.topic: reference
 author: DataZoeMS
 ---
 # INFO.CALCDEPENDENCY

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: FUNCTION"
 title: "FUNCTION keyword (DAX)"
+ms.topic: reference
 ---
 # FUNCTION
 

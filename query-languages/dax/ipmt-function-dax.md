@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: IPMT"
 title: "IPMT function (DAX)"
+ms.topic: reference
 ---
 
 # IPMT

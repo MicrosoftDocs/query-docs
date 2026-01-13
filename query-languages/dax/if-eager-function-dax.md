@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: IF.EAGER"
 title: "IF.EAGER function (DAX)"
+ms.topic: reference
 ---
 # IF.EAGER
 

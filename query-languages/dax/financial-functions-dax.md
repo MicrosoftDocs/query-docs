@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Financial functions"
 title: "Financial functions (DAX)"
+ms.topic: concept-article
 ---
 # Financial functions
 
