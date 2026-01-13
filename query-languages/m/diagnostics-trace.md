@@ -2,6 +2,7 @@
 description: "Learn more about: Diagnostics.Trace"
 title: "Diagnostics.Trace"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Diagnostics.Trace
 

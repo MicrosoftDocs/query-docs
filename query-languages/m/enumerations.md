@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Enumerations"
 title: "Accessing data enumerations"
+ms.topic: concept-article
 ---
 # Enumerations
 

@@ -2,6 +2,7 @@
 description: "Learn more about: Error.Record"
 title: "Error.Record"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Error.Record
 
