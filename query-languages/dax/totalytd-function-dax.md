@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TOTALYTD"
 title: "TOTALYTD function (DAX)"
+ms.topic: reference
 ---
 # TOTALYTD
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: YIELDDISC"
 title: "YIELDDISC function (DAX)"
+ms.topic: reference
 author: jajin7
 ---
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: XNPV"
 title: "XNPV function (DAX)"
+ms.topic: reference
 ---
 # XNPV
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: YEAR"
 title: "YEAR function (DAX)"
+ms.topic: reference
 ---
 # YEAR
 

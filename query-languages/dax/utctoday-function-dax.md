@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: UTCTODAY"
 title: "UTCTODAY function (DAX)"
+ms.topic: reference
 ---
 # UTCTODAY
 
