@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ORDERBY"
 title: "ORDERBY function (DAX)"
+ms.topic: reference
 ---
 
 # ORDERBY

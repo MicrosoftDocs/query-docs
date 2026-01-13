@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: OPENINGBALANCEWEEK"
 title: "OPENINGBALANCEWEEK function (DAX)"
+ms.topic: reference
 ---
 # OPENINGBALANCEWEEK
 

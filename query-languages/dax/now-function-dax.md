@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: NOW"
 title: "NOW function (DAX)"
+ms.topic: reference
 ---
 # NOW
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: OPENINGBALANCEMONTH"
 title: "OPENINGBALANCEMONTH function (DAX)"
+ms.topic: reference
 ---
 # OPENINGBALANCEMONTH
 

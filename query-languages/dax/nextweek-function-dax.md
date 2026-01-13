@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: NEXTWEEK"
 title: "NEXTWEEK function (DAX)"
+ms.topic: reference
 ---
 # NEXTWEEK
 

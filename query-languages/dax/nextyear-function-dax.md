@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: NEXTYEAR"
 title: "NEXTYEAR function (DAX)"
+ms.topic: reference
 ---
 # NEXTYEAR
 
