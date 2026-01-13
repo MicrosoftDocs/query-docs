@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CALENDAR"
 title: "CALENDAR function (DAX)"
+ms.topic: reference
 ---
 # CALENDAR
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table manipulation functions"
 title: "Table manipulation functions (DAX)"
+ms.topic: concept-article
 ---
 # Table manipulation functions
 

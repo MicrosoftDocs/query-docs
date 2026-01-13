@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SIGN"
 title: "SIGN function (DAX)"
+ms.topic: reference
 ---
 # SIGN
 

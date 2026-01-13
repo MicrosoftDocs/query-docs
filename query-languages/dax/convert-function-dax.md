@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CONVERT"
 title: "CONVERT function (DAX)"
+ms.topic: reference
 ms.custom: ExampleTypeAW2020
 ---
 # CONVERT

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: REPLACE"
 title: "REPLACE function (DAX)"
+ms.topic: reference
 ---
 # REPLACE
 

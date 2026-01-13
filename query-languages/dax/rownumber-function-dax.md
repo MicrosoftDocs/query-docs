@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ROWNUMBER"
 title: "ROWNUMBER function (DAX)"
+ms.topic: reference
 author: rahulten
 ---
 # ROWNUMBER

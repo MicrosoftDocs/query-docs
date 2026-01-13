@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PREVIOUSWEEK"
 title: "PREVIOUSWEEK function (DAX)"
+ms.topic: reference
 ---
 # PREVIOUSWEEK
 

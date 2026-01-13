@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: LCM"
 title: "LCM function (DAX)"
+ms.topic: reference
 ---
 # LCM
 

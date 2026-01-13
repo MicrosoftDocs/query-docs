@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DEPENDON"
 title: "DEPENDON function (DAX) | Microsoft Docs"
+ms.topic: reference
 ---
 # DEPENDON
 

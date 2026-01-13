@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Relationship functions"
 title: "Relationship functions (DAX)"
+ms.topic: concept-article
 ---
 # Relationship functions
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CROSSJOIN"
 title: "CROSSJOIN  function (DAX)"
+ms.topic: reference
 ---
 # CROSSJOIN
 

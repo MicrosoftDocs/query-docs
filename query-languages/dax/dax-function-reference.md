@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DAX function reference"
 title: "DAX function reference"
+ms.topic: reference
 ---
 # DAX function reference
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: UPPER"
 title: "UPPER function (DAX)"
+ms.topic: reference
 ---
 # UPPER
 

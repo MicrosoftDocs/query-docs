@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ASINH"
 title: "ASINH function (DAX)"
+ms.topic: reference
 ---
 # ASINH
 

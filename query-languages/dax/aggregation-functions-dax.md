@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Aggregation functions"
 title: "Aggregation functions (DAX)"
+ms.topic: concept-article
 ---
 # Aggregation functions
 

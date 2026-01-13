@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: NONFILTER"
 title: "NONFILTER function (DAX) | Microsoft Docs"
+ms.topic: reference
 ---
 # NONFILTER
 

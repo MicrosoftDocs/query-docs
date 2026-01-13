@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TOTALMTD"
 title: "TOTALMTD function (DAX)"
+ms.topic: reference
 ---
 # TOTALMTD
 

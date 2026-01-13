@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: HOUR"
 title: "HOUR function (DAX)"
+ms.topic: reference
 ---
 # HOUR
 

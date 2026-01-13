@@ -2,7 +2,7 @@
 title: "Use SELECTEDVALUE instead of VALUES in DAX"
 description: Best practices for using the SELECTEDVALUE functions.
 author: peter-myers
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 08/25/2021
 ---
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: FIRST"
 title: "FIRST function (DAX)"
+ms.topic: reference
 ---
 
 # FIRST

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Time intelligence functions"
 title: "Time intelligence functions (DAX)"
+ms.topic: concept-article
 ---
 # Time intelligence functions
 

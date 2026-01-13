@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: LINESTX"
 title: "LINESTX function (DAX)"
+ms.topic: reference
 author: masanto-msft
 ms.author: masanto
 ---

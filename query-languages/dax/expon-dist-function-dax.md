@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: EXPON.DIST"
 title: "EXPON.DIST function (DAX)"
+ms.topic: reference
 ---
 # EXPON.DIST
 

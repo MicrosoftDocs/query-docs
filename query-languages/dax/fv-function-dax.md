@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: FV"
 title: "FV function (DAX)"
+ms.topic: reference
 author: jajin7
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "DAX Queries"
 description: Describes Data Analysis Expressions (DAX) language queries.
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # DAX queries
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: EVEN"
 title: "EVEN function (DAX)"
+ms.topic: reference
 ---
 # EVEN
 

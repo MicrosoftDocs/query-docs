@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ORDER BY"
 title: "ORDER BY keyword (DAX)"
+ms.topic: reference
 ---
 # ORDER BY
 

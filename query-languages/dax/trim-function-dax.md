@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TRIM"
 title: "TRIM function (DAX)"
+ms.topic: reference
 ---
 # TRIM
 

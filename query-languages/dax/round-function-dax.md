@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ROUND"
 title: "ROUND function (DAX)"
+ms.topic: reference
 ---
 # ROUND
 

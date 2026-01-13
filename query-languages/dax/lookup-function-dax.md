@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: LOOKUP"
 title: "LOOKUP function (DAX) | Microsoft Docs"
+ms.topic: reference
 ---
 # LOOKUP
 

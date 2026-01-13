@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISINTEGER"
 title: "ISINTEGER function (DAX)"
+ms.topic: reference
 ms.custom: ExampleTypeGeneric
 ---
 # ISINTEGER

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DATATABLE"
 title: "DATATABLE function"
+ms.topic: reference
 ms.custom: ExampleTypeGeneric
 ---
 # DATATABLE

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CHISQ.INV"
 title: "CHISQ.INV function (DAX)"
+ms.topic: reference
 ---
 # CHISQ.INV
 

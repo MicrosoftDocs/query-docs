@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: INTRATE"
 title: "INTRATE function (DAX)"
+ms.topic: reference
 ---
 
 # INTRATE

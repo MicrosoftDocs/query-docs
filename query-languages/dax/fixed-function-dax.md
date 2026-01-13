@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: FIXED"
 title: "FIXED function (DAX)"
+ms.topic: reference
 ---
 # FIXED
 

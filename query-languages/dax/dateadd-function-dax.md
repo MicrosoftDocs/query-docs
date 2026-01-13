@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DATEADD"
 title: "DATEADD function (DAX)"
+ms.topic: reference
 ---
 # DATEADD
 

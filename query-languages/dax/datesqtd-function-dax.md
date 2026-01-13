@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DATESQTD"
 title: "DATESQTD function (DAX)"
+ms.topic: reference
 ---
 # DATESQTD
 

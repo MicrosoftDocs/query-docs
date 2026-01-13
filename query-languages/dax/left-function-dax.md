@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: LEFT"
 title: "LEFT function (DAX)"
+ms.topic: reference
 ---
 # LEFT
 

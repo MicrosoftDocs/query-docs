@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: INFO.ANNOTATIONS"
 title: "INFO.ANNOTATIONS function (DAX)"
+ms.topic: reference
 author: DataZoeMS
 ---
 # INFO.ANNOTATIONS

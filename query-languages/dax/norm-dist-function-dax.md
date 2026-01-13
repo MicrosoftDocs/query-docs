@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: NORM.DIST"
 title: "NORM.DIST function (DAX)"
+ms.topic: reference
 ---
 # NORM.DIST
 

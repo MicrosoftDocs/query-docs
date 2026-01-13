@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CUSTOMDATA"
 title: "CUSTOMDATA function (DAX)"
+ms.topic: reference
 ---
 # CUSTOMDATA
 

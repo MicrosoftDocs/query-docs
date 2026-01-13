@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: COUPDAYBS"
 title: "COUPDAYBS function (DAX)"
+ms.topic: reference
 ---
 
 # COUPDAYBS

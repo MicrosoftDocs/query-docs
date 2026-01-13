@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: INFO.VIEW.RELATIONSHIPS"
 title: "INFO.VIEW.RELATIONSHIPS function (DAX)"
+ms.topic: reference
 author: DataZoeMS
 ---
 # INFO.VIEW.RELATIONSHIPS

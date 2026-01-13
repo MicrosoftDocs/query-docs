@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DATE"
 title: "DATE function (DAX)"
+ms.topic: reference
 ---
 # DATE
 

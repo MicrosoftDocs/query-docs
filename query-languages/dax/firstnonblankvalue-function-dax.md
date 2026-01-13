@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: FIRSTNONBLANKVALUE"
 title: "FIRSTNONBLANKVALUE function (DAX)"
+ms.topic: reference
 ---
 # FIRSTNONBLANKVALUE
 

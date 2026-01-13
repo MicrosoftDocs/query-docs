@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: USEROBJECTID"
 title: "USEROBJECTID function (DAX)"
+ms.topic: reference
 ---
 # USEROBJECTID
 
