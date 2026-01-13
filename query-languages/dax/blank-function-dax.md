@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: BLANK"
 title: "BLANK function (DAX)"
+ms.topic: reference
 ---
 # BLANK
 

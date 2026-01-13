@@ -1,6 +1,8 @@
 ---
 description: "Learn more about: ALLSELECTEDAPPLY"
 title: "ALLSELECTEDAPPLY function (DAX) | Microsoft Docs"
+ms.topic: reference
+
 ---
 # ALLSELECTEDAPPLY
 

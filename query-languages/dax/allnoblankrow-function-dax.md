@@ -1,6 +1,8 @@
 ---
 description: "Learn more about: ALLNOBLANKROW"
 title: "ALLNOBLANKROW function (DAX)"
+ms.topic: reference
+
 ---
 # ALLNOBLANKROW
 

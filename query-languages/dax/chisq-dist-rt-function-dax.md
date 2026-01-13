@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CHISQ.DIST.RT"
 title: "CHISQ.DIST.RT function (DAX)"
+ms.topic: reference
 ---
 # CHISQ.DIST.RT
 

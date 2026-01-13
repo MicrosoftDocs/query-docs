@@ -2,6 +2,8 @@
 description: "Learn more about: AMORLINC"
 title: "AMORLINC function (DAX)"
 author: jajin7
+ms.topic: reference
+
 ---
 
 # AMORLINC
