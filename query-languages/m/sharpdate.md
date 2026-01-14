@@ -2,6 +2,7 @@
 description: "Learn more about: #date"
 title: "#date"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # #date
 

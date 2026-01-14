@@ -2,6 +2,7 @@
 description: "Learn more about: Table.Group"
 title: "Table.Group"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.Group
 

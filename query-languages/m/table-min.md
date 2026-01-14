@@ -2,6 +2,7 @@
 description: "Learn more about: Table.Min"
 title: "Table.Min"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.Min
 

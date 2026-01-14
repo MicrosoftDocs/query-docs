@@ -2,6 +2,7 @@
 description: "Learn more about: SapBusinessWarehouse.Cubes"
 title: "SapBusinessWarehouse.Cubes"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # SapBusinessWarehouse.Cubes
 

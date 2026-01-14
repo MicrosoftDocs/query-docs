@@ -2,6 +2,7 @@
 description: "Learn more about: Table.Buffer"
 title: "Table.Buffer"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.Buffer
 

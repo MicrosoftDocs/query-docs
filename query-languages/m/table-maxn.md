@@ -2,6 +2,7 @@
 description: "Learn more about: Table.MaxN"
 title: "Table.MaxN"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.MaxN
 
