@@ -2,6 +2,7 @@
 description: "Learn more about: Table.Partition"
 title: "Table.Partition"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.Partition
 

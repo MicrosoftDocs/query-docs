@@ -2,6 +2,7 @@
 description: "Learn more about: Table.FromList"
 title: "Table.FromList"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.FromList
 

@@ -2,6 +2,7 @@
 description: "Learn more about: Table.Join"
 title: "Table.Join"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.Join
 
