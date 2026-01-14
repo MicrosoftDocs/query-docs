@@ -2,6 +2,7 @@
 description: "Learn more about: DateTime.From"
 title: "DateTime.From"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # DateTime.From
 

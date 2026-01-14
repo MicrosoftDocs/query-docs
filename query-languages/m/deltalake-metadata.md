@@ -2,6 +2,7 @@
 description: "Learn more about: DeltaLake.Metadata"
 title: "DeltaLake.Metadata"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # DeltaLake.Metadata
 

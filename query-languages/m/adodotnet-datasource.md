@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: AdoDotNet.DataSource"
 title: "AdoDotNet.DataSource"
+ms.topic: reference
 ms.subservice: m-source
 ms.custom: sfi-ropc-nochange
 ---

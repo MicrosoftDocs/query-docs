@@ -2,6 +2,7 @@
 description: "Learn more about: List.Durations"
 title: "List.Durations"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.Durations
 

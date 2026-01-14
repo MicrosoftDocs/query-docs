@@ -2,6 +2,7 @@
 description: "Learn more about: List.Combine"
 title: "List.Combine"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.Combine
 

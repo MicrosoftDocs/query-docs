@@ -2,6 +2,7 @@
 description: "Learn more about: BinaryFormat.Length"
 title: "BinaryFormat.Length"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # BinaryFormat.Length
 

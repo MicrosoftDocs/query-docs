@@ -2,6 +2,7 @@
 description: "Learn more about: CsvStyle.Type"
 title: "CsvStyle.Type"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # CsvStyle.Type
 

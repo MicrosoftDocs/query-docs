@@ -2,6 +2,7 @@
 description: "Learn more about: Guid.From"
 title: "Guid.From"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Guid.From
 

@@ -2,6 +2,7 @@
 description: "Learn more about: Date.WeekOfMonth"
 title: "Date.WeekOfMonth"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Date.WeekOfMonth
 

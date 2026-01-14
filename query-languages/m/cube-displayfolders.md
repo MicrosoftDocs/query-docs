@@ -2,6 +2,7 @@
 description: "Learn more about: Cube.DisplayFolders"
 title: "Cube.DisplayFolders"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Cube.DisplayFolders
 

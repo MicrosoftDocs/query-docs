@@ -2,6 +2,7 @@
 description: "Learn more about: Folder.Contents"
 title: "Folder.Contents"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Folder.Contents
 
