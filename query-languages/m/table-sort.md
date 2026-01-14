@@ -2,6 +2,7 @@
 description: "Learn more about: Table.Sort"
 title: "Table.Sort"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.Sort
 

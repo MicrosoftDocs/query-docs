@@ -2,6 +2,7 @@
 description: "Learn more about: Table.WithErrorContext"
 title: "Table.WithErrorContext"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.WithErrorContext
 

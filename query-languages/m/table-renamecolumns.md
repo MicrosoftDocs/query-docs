@@ -2,6 +2,7 @@
 description: "Learn more about: Table.RenameColumns"
 title: "Table.RenameColumns"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.RenameColumns
 

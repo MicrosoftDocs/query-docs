@@ -2,6 +2,7 @@
 description: "Learn more about: Table.Unpivot"
 title: "Table.Unpivot"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.Unpivot
 
