@@ -2,6 +2,7 @@
 description: "Learn more about: Day.Type"
 title: "Day.Type"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Day.Type
 
