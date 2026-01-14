@@ -2,6 +2,7 @@
 description: "Learn more about: Table.Pivot"
 title: "Table.Pivot"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.Pivot
 
