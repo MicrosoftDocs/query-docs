@@ -2,6 +2,7 @@
 description: "Learn more about: Number.RoundUp"
 title: "Number.RoundUp"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Number.RoundUp
 

@@ -2,6 +2,7 @@
 description: "Learn more about: Number.IntegerDivide"
 title: "Number.IntegerDivide"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Number.IntegerDivide
 
