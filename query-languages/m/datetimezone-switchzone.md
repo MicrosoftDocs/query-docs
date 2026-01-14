@@ -2,6 +2,7 @@
 description: "Learn more about: DateTimeZone.SwitchZone"
 title: "DateTimeZone.SwitchZone"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # DateTimeZone.SwitchZone
 

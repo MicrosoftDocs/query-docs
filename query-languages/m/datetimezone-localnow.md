@@ -2,6 +2,7 @@
 description: "Learn more about: DateTimeZone.LocalNow"
 title: "DateTimeZone.LocalNow"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # DateTimeZone.LocalNow
 

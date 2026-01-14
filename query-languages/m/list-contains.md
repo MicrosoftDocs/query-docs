@@ -2,6 +2,7 @@
 description: "Learn more about: List.Contains"
 title: "List.Contains"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.Contains
 

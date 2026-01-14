@@ -2,6 +2,7 @@
 description: "Learn more about: Cube.ApplyParameter"
 title: "Cube.ApplyParameter"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Cube.ApplyParameter
 

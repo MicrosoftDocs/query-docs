@@ -2,6 +2,7 @@
 description: "Learn more about: Date.AddDays"
 title: "Date.AddDays"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Date.AddDays
 

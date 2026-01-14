@@ -2,6 +2,7 @@
 description: "Learn more about: Comparer.OrdinalIgnoreCase"
 title: "Comparer.OrdinalIgnoreCase"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Comparer.OrdinalIgnoreCase
 

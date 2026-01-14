@@ -2,6 +2,7 @@
 description: "Learn more about: Function.ScalarVector"
 title: "Function.ScalarVector"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Function.ScalarVector
 

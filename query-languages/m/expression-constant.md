@@ -2,6 +2,7 @@
 description: "Learn more about: Expression.Constant"
 title: "Expression.Constant"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Expression.Constant
 
