@@ -2,6 +2,7 @@
 description: "Learn more about: Date.AddQuarters"
 title: "Date.AddQuarters"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Date.AddQuarters
 

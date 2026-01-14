@@ -2,6 +2,7 @@
 description: "Learn more about: Date.IsInPreviousNMonths"
 title: "Date.IsInPreviousNMonths"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Date.IsInPreviousNMonths
 
