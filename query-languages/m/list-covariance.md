@@ -2,6 +2,7 @@
 description: "Learn more about: List.Covariance"
 title: "List.Covariance"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.Covariance
 

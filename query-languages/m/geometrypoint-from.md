@@ -2,6 +2,7 @@
 description: "Learn more about: GeometryPoint.From"
 title: "GeometryPoint.From"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # GeometryPoint.From
 

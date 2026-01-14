@@ -2,6 +2,7 @@
 description: "Learn more about: Date.EndOfYear"
 title: "Date.EndOfYear"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Date.EndOfYear
 

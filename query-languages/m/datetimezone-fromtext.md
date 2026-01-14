@@ -2,6 +2,7 @@
 description: "Learn more about: DateTimeZone.FromText"
 title: "DateTimeZone.FromText"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # DateTimeZone.FromText
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.Choice"
 title: "BinaryFormat.Choice"
+ms.topic: reference
 ms.subservice: m-source
 ---
 # BinaryFormat.Choice

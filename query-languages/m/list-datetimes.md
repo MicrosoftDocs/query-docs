@@ -2,6 +2,7 @@
 description: "Learn more about: List.DateTimes"
 title: "List.DateTimes"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.DateTimes
 

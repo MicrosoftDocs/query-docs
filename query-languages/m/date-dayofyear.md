@@ -2,6 +2,7 @@
 description: "Learn more about: Date.DayOfYear"
 title: "Date.DayOfYear"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Date.DayOfYear
 

@@ -2,6 +2,7 @@
 description: "Learn more about: Lines.ToText"
 title: "Lines.ToText"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Lines.ToText
 

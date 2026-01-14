@@ -2,6 +2,7 @@
 description: "Learn more about: Duration.TotalMinutes"
 title: "Duration.TotalMinutes"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Duration.TotalMinutes
 

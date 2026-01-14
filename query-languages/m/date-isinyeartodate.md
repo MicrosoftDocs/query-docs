@@ -2,6 +2,7 @@
 description: "Learn more about: Date.IsInYearToDate"
 title: "Date.IsInYearToDate"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Date.IsInYearToDate
 

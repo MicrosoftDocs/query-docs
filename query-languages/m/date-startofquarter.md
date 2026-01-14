@@ -2,6 +2,7 @@
 description: "Learn more about: Date.StartOfQuarter"
 title: "Date.StartOfQuarter"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Date.StartOfQuarter
 

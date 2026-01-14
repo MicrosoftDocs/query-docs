@@ -2,6 +2,7 @@
 description: "Learn more about: Graph.Nodes"
 title: "Graph.Nodes"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Graph.Nodes
 
