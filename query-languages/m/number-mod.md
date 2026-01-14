@@ -2,6 +2,7 @@
 description: "Learn more about: Number.Mod"
 title: "Number.Mod"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Number.Mod
 

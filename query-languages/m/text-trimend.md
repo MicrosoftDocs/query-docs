@@ -2,6 +2,7 @@
 description: "Learn more about: Text.TrimEnd"
 title: "Text.TrimEnd"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.TrimEnd
 

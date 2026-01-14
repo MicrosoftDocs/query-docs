@@ -2,6 +2,7 @@
 description: "Learn more about: Table.IsDistinct"
 title: "Table.IsDistinct"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.IsDistinct
 

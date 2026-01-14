@@ -2,6 +2,7 @@
 description: "Learn more about: Text.Length"
 title: "Text.Length"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.Length
 

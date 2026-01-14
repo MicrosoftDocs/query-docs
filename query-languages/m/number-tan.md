@@ -2,6 +2,7 @@
 description: "Learn more about: Number.Tan"
 title: "Number.Tan"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Number.Tan
 

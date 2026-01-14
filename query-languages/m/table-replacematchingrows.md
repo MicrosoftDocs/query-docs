@@ -2,6 +2,7 @@
 description: "Learn more about: Table.ReplaceMatchingRows"
 title: "Table.ReplaceMatchingRows"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.ReplaceMatchingRows
 

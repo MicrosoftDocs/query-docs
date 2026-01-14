@@ -2,6 +2,7 @@
 description: "Learn more about: Logical.FromText"
 title: "Logical.FromText"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Logical.FromText
 

@@ -2,6 +2,7 @@
 description: "Learn more about: Text.FromBinary"
 title: "Text.FromBinary"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.FromBinary
 

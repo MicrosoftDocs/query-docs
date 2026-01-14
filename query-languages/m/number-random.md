@@ -2,6 +2,7 @@
 description: "Learn more about: Number.Random"
 title: "Number.Random"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Number.Random
 

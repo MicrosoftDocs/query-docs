@@ -2,6 +2,7 @@
 description: "Learn more about: Table.FromRecords"
 title: "Table.FromRecords"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.FromRecords
 

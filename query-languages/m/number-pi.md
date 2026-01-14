@@ -2,6 +2,7 @@
 description: "Learn more about: Number.PI"
 title: "Number.PI"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Number.PI
 

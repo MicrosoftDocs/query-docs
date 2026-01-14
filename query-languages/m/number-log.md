@@ -2,6 +2,7 @@
 description: "Learn more about: Number.Log"
 title: "Number.Log"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Number.Log
 

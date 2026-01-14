@@ -2,6 +2,7 @@
 description: "Learn more about: SqlExpression.ToExpression"
 title: "SqlExpression.ToExpression"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # SqlExpression.ToExpression
 

@@ -2,6 +2,7 @@
 description: "Learn more about: Number.Cos"
 title: "Number.Cos"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Number.Cos
 
