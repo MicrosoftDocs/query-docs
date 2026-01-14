@@ -2,6 +2,7 @@
 description: "Learn more about: Text.PadStart"
 title: "Text.PadStart"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.PadStart
 

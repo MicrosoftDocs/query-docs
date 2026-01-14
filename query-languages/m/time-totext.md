@@ -2,6 +2,7 @@
 description: "Learn more about: Time.ToText"
 title: "Time.ToText"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Time.ToText
 

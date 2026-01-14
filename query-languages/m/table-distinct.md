@@ -2,6 +2,7 @@
 description: "Learn more about: Table.Distinct"
 title: "Table.Distinct"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.Distinct
 

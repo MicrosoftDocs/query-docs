@@ -2,6 +2,7 @@
 description: "Learn more about: Text.BeforeDelimiter"
 title: "Text.BeforeDelimiter"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.BeforeDelimiter
 

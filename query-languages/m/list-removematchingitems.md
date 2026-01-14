@@ -2,6 +2,7 @@
 description: "Learn more about: List.RemoveMatchingItems"
 title: "List.RemoveMatchingItems"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.RemoveMatchingItems
 

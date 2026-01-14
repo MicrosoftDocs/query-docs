@@ -2,6 +2,7 @@
 description: "Learn more about: Table.UnpivotOtherColumns"
 title: "Table.UnpivotOtherColumns"
 ms.subservice: m-source
+ms.topic: reference
 ---
 
 # Table.UnpivotOtherColumns

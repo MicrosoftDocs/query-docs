@@ -2,6 +2,7 @@
 description: "Learn more about: Number.Factorial"
 title: "Number.Factorial"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Number.Factorial
 

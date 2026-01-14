@@ -2,6 +2,7 @@
 description: "Learn more about: Percentage.From"
 title: "Percentage.From"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Percentage.From
 

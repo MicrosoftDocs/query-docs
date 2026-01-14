@@ -2,6 +2,7 @@
 description: "Learn more about: Record.HasFields"
 title: "Record.HasFields"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Record.HasFields
 

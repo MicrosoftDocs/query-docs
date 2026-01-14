@@ -2,6 +2,7 @@
 description: "Learn more about: Table.FirstValue"
 title: "Table.FirstValue"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.FirstValue
 

@@ -2,6 +2,7 @@
 description: "Learn more about: Table.ToList"
 title: "Table.ToList"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.ToList
 

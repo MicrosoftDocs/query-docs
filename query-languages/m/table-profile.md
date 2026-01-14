@@ -2,6 +2,7 @@
 description: "Learn more about: Table.Profile"
 title: "Table.Profile"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.Profile
 

@@ -2,6 +2,7 @@
 description: "Learn more about: Table.FuzzyGroup"
 title: "Table.FuzzyGroup"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.FuzzyGroup
   

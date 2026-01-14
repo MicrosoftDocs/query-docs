@@ -2,6 +2,7 @@
 description: "Learn more about: Table.ViewError"
 title: "Table.ViewError"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.ViewError
 

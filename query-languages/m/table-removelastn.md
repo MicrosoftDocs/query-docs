@@ -2,6 +2,7 @@
 description: "Learn more about: Table.RemoveLastN"
 title: "Table.RemoveLastN"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.RemoveLastN
 

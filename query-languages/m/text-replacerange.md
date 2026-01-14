@@ -2,6 +2,7 @@
 description: "Learn more about: Text.ReplaceRange"
 title: "Text.ReplaceRange"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.ReplaceRange
 

@@ -2,6 +2,7 @@
 description: "Learn more about: List.Range"
 title: "List.Range"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.Range
 

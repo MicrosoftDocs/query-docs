@@ -2,6 +2,7 @@
 description: "Learn more about: Table.AddJoinColumn"
 title: "Table.AddJoinColumn"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.AddJoinColumn
 
