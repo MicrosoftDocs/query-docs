@@ -2,6 +2,7 @@
 description: "Learn more about: Type.FunctionParameters"
 title: "Type.FunctionParameters"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Type.FunctionParameters
 

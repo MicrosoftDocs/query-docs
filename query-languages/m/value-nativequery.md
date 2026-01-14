@@ -2,6 +2,7 @@
 description: "Learn more about: Value.NativeQuery"
 title: "Value.NativeQuery"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Value.NativeQuery
 
