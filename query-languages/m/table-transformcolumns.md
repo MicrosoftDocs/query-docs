@@ -2,6 +2,7 @@
 description: "Learn more about: Table.TransformColumns"
 title: "Table.TransformColumns"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.TransformColumns
 

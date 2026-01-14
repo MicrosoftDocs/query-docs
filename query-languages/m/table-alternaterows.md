@@ -2,6 +2,7 @@
 description: "Learn more about: Table.AlternateRows"
 title: "Table.AlternateRows"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.AlternateRows
 

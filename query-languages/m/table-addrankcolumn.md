@@ -2,6 +2,7 @@
 description: "Learn more about: Table.AddRankColumn"
 title: "Table.AddRankColumn"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.AddRankColumn
 

@@ -2,6 +2,7 @@
 description: "Learn more about: Table.SelectColumns"
 title: "Table.SelectColumns"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.SelectColumns
 

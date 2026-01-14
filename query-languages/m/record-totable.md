@@ -2,6 +2,7 @@
 description: "Learn more about: Record.ToTable"
 title: "Record.ToTable"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Record.ToTable
 

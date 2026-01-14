@@ -2,6 +2,7 @@
 description: "Learn more about: RData.FromBinary"
 title: "RData.FromBinary"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # RData.FromBinary
 

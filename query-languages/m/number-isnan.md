@@ -2,6 +2,7 @@
 description: "Learn more about: Number.IsNaN"
 title: "Number.IsNaN"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Number.IsNaN
 

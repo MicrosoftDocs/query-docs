@@ -2,6 +2,7 @@
 description: "Learn more about: List.PositionOfAny"
 title: "List.PositionOfAny"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.PositionOfAny
 

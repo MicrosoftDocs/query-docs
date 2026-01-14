@@ -2,6 +2,7 @@
 description: "Learn more about: Table.ToColumns"
 title: "Table.ToColumns"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.ToColumns
 

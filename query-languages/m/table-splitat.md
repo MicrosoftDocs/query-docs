@@ -2,6 +2,7 @@
 description: "Learn more about: Table.SplitAt"
 title: "Table.SplitAt"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.SplitAt
 

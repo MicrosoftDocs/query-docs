@@ -2,6 +2,7 @@
 description: "Learn more about: Record.RemoveFields"
 title: "Record.RemoveFields"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Record.RemoveFields
 

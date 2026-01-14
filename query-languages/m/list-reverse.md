@@ -2,6 +2,7 @@
 description: "Learn more about: List.Reverse"
 title: "List.Reverse"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.Reverse
 

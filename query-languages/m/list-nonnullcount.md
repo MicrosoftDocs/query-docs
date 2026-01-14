@@ -2,6 +2,7 @@
 description: "Learn more about: List.NonNullCount"
 title: "List.NonNullCount"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.NonNullCount
 

@@ -2,6 +2,7 @@
 description: "Learn more about: List.SingleOrDefault"
 title: "List.SingleOrDefault"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.SingleOrDefault
 

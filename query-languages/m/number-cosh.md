@@ -2,6 +2,7 @@
 description: "Learn more about: Number.Cosh"
 title: "Number.Cosh"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Number.Cosh
 

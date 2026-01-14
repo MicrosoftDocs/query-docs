@@ -2,6 +2,7 @@
 description: "Learn more about: List.MatchesAny"
 title: "List.MatchesAny"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.MatchesAny
 

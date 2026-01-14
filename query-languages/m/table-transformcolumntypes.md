@@ -2,6 +2,7 @@
 description: "Learn more about: Table.TransformColumnTypes"
 title: "Table.TransformColumnTypes"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.TransformColumnTypes
 
