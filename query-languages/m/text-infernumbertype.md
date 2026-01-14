@@ -2,6 +2,7 @@
 description: "Learn more about: Text.InferNumberType"
 title: "Text.InferNumberType"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.InferNumberType
 

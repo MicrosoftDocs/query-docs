@@ -2,6 +2,7 @@
 description: "Learn more about: Text.Split"
 title: "Text.Split"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.Split
 
