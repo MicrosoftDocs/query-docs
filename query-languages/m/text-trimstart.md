@@ -2,6 +2,7 @@
 description: "Learn more about: Text.TrimStart"
 title: "Text.TrimStart"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.TrimStart
 

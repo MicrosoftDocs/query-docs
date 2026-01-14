@@ -2,6 +2,7 @@
 description: "Learn more about: Text.Format"
 title: "Text.Format"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.Format
 

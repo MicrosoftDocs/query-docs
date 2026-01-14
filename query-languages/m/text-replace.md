@@ -2,6 +2,7 @@
 description: "Learn more about: Text.Replace"
 title: "Text.Replace"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.Replace
 
