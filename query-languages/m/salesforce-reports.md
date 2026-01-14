@@ -2,6 +2,7 @@
 description: "Learn more about: Salesforce.Reports"
 title: "Salesforce.Reports"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Salesforce.Reports
 
