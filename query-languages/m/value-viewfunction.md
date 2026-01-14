@@ -2,6 +2,7 @@
 description: "Learn more about: Value.ViewFunction"
 title: "Value.ViewFunction"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Value.ViewFunction
 

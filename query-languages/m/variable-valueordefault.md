@@ -2,6 +2,7 @@
 description: "Learn more about: Variable.ValueOrDefault"
 title: "Variable.ValueOrDefault"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Variable.ValueOrDefault
 
