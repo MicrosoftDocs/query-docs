@@ -2,6 +2,7 @@
 description: "Learn more about: List.Select"
 title: "List.Select"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.Select
 
