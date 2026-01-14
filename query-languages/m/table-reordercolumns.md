@@ -2,6 +2,7 @@
 description: "Learn more about: Table.ReorderColumns"
 title: "Table.ReorderColumns"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.ReorderColumns
 

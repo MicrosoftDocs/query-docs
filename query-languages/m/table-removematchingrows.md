@@ -2,6 +2,7 @@
 description: "Learn more about: Table.RemoveMatchingRows"
 title: "Table.RemoveMatchingRows"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.RemoveMatchingRows
 
