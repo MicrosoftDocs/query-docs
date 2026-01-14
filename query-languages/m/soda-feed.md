@@ -2,6 +2,7 @@
 description: "Learn more about: Soda.Feed"
 title: "Soda.Feed"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Soda.Feed
 

@@ -2,6 +2,7 @@
 description: "Learn more about: Table.ApproximateRowCount"
 title: "Table.ApproximateRowCount"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.ApproximateRowCount
 

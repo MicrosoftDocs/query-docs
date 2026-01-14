@@ -2,6 +2,7 @@
 description: "Learn more about: Splitter.SplitTextByRepeatedLengths"
 title: "Splitter.SplitTextByRepeatedLengths"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Splitter.SplitTextByRepeatedLengths
 

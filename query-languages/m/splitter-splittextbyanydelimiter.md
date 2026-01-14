@@ -2,6 +2,7 @@
 description: "Learn more about: Splitter.SplitTextByAnyDelimiter"
 title: "Splitter.SplitTextByAnyDelimiter"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Splitter.SplitTextByAnyDelimiter
 
