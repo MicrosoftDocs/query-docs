@@ -2,6 +2,7 @@
 description: "Learn more about: Number.BitwiseXor"
 title: "Number.BitwiseXor"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Number.BitwiseXor
 

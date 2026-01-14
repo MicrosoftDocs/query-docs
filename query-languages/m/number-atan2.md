@@ -2,6 +2,7 @@
 description: "Learn more about: Number.Atan2"
 title: "Number.Atan2"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Number.Atan2
 
