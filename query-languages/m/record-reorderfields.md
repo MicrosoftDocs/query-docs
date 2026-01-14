@@ -2,6 +2,7 @@
 description: "Learn more about: Record.ReorderFields"
 title: "Record.ReorderFields"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Record.ReorderFields
 

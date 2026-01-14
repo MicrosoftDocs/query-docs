@@ -2,6 +2,7 @@
 description: "Learn more about: Record.FromList"
 title: "Record.FromList"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Record.FromList
 

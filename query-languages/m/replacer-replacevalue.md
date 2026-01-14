@@ -2,6 +2,7 @@
 description: "Learn more about: Replacer.ReplaceValue"
 title: "Replacer.ReplaceValue"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Replacer.ReplaceValue
 
