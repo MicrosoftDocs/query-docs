@@ -2,6 +2,7 @@
 description: "Learn more about: Value.Subtract"
 title: "Value.Subtract"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Value.Subtract
 

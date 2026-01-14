@@ -2,6 +2,7 @@
 description: "Learn more about: Type.IsNullable"
 title: "Type.IsNullable"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Type.IsNullable
 
