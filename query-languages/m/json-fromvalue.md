@@ -2,6 +2,7 @@
 description: "Learn more about: Json.FromValue"
 title: "Json.FromValue"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Json.FromValue
 

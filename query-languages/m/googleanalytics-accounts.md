@@ -2,6 +2,7 @@
 description: "Learn more about: GoogleAnalytics.Accounts"
 title: "GoogleAnalytics.Accounts"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # GoogleAnalytics.Accounts
 
