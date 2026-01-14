@@ -2,6 +2,7 @@
 description: "Learn more about: Function.InvokeWithErrorContext"
 title: "Function.InvokeWithErrorContext"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Function.InvokeWithErrorContext
 

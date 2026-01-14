@@ -2,6 +2,7 @@
 description: "Learn more about: Duration.ToText"
 title: "Duration.ToText"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Duration.ToText
 

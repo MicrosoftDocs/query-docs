@@ -2,6 +2,7 @@
 description: "Learn more about: Folder.Files"
 title: "Folder.Files"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Folder.Files
 
