@@ -2,6 +2,7 @@
 description: "Learn more about: List.Single"
 title: "List.Single"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.Single
 
