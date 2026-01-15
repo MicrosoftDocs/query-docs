@@ -2,6 +2,7 @@
 description: "Learn more about: Value.Versions"
 title: "Value.Versions"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Value.Versions
 
