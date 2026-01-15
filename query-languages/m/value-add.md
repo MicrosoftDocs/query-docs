@@ -2,6 +2,7 @@
 description: "Learn more about: Value.Add"
 title: "Value.Add"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Value.Add
 

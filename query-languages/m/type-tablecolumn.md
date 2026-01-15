@@ -2,6 +2,7 @@
 description: "Learn more about: Type.TableColumn"
 title: "Type.TableColumn"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Type.TableColumn
 

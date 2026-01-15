@@ -2,6 +2,7 @@
 description: "Learn more about: Type.TableRow"
 title: "Type.TableRow"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Type.TableRow
 
