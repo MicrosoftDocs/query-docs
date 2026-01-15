@@ -2,6 +2,7 @@
 description: "Learn more about: Web.Headers"
 title: "Web.Headers"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Web.Headers
 

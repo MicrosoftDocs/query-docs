@@ -2,6 +2,7 @@
 description: "Learn more about: Type.ReplaceTablePartitionKey"
 title: "Type.ReplaceTablePartitionKey"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Type.ReplaceTablePartitionKey
 

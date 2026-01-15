@@ -2,6 +2,7 @@
 description: "Learn more about: Value.Type"
 title: "Value.Type"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Value.Type
 
