@@ -13,7 +13,7 @@ List.StandardDeviation(<b>numbersList</b> as list) as nullable number
   
 ## About
 
-Returns a sample based estimate of the standard deviation of the values in the list, `numbersList`. If `numbersList` is a list of numbers, a number is returned. An exception is thrown on an empty list or a list of items that is not type `number`.
+Returns a sample based estimate of the standard deviation of the values in the list, `numbersList`. If `numbersList` is a list of numbers, a number is returned. An error is raised on an empty list or a list of items that is not type `number`.
 
 ## Example 1
 

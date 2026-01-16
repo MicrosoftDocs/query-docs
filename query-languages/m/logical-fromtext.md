@@ -13,7 +13,7 @@ Logical.FromText(<b>text</b> as nullable text) as nullable logical
   
 ## About
 
-Creates a logical value from the text value `text`, either "true" or "false". If `text` contains a different string, an exception is thrown. The text value `text` is case insensitive.
+Creates a logical value from the text value `text`, either "true" or "false". If `text` contains a different string, an error is raised. The text value `text` is case insensitive.
 
 ## Example 1
 

@@ -13,7 +13,7 @@ Table.TransformColumns(<b>table</b> as table, <b>transformOperations</b> as list
   
 ## About
 
-Transforms `table` by applying each column operation listed in `transformOperations` (where the format is { column name, transformation } or { column name, transformation, new column type }). If a `defaultTransformation` is specified, it will be applied to all columns not listed in `transformOperations`. If a column listed in `transformOperations` doesn't exist, an exception is thrown unless the optional parameter `missingField` specifies an alternative (for example, [MissingField.UseNull](missingfield-type.md) or [MissingField.Ignore](missingfield-type.md)).
+Transforms `table` by applying each column operation listed in `transformOperations` (where the format is { column name, transformation } or { column name, transformation, new column type }). If a `defaultTransformation` is specified, it will be applied to all columns not listed in `transformOperations`. If a column listed in `transformOperations` doesn't exist, an error is raised unless the optional parameter `missingField` specifies an alternative (for example, [MissingField.UseNull](missingfield-type.md) or [MissingField.Ignore](missingfield-type.md)).
 
 ## Example 1
 

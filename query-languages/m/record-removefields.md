@@ -13,7 +13,7 @@ Record.RemoveFields(<b>record</b> as record, <b>fields</b> as any, optional <b>m
   
 ## About
 
-Returns a record that removes all the fields specified in list `fields` from the input `record`. If the field specified does not exist, an exception is thrown.
+Returns a record that removes all the fields specified in list `fields` from the input `record`. If the field specified does not exist, an error is raised.
 
 ## Example 1
 

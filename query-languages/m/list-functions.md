@@ -35,7 +35,7 @@ These functions create and manipulate list values.
 |[List.Positions](list-positions.md)|Returns a list of offsets for the input.|
 |[List.Range](list-range.md)|Returns a subset of the list beginning at an offset.|
 |[List.Select](list-select.md)|Returns a list of values that match the condition.|
-|[List.Single](list-single.md)|Returns the one list item for a list of length one, otherwise throws an exception.|
+|[List.Single](list-single.md)|Returns the one list item for a list of length one, otherwise raises an error.|
 |[List.SingleOrDefault](list-singleordefault.md)|Returns the one list item for a list of length one and the default value for an empty list.|
 |[List.Skip](list-skip.md)|Returns a list that skips the specified number of elements at the beginning of the list.|
 
