@@ -5,6 +5,8 @@ author: hsteffens30
 ms.author: jterh
 ms.topic: best-practice
 ms.date: 09/15/2025
+ms.service: powerbi
+ms.subservice: dax
 ---
 
 # DAX user-defined functions (preview)
