@@ -1229,7 +1229,7 @@ There are two ways to indicate that characters are to be interpreted as literal 
 
 ### Using single custom format specifiers
 
-A custom date and time format string consists of two or more characters. Date and time formatting methods interpret any single-character string as a standard date and time format string. If they don't recognize the character as a valid format specifier, they throw an expression error. For example, a format string that consists only of the specifier "h" is interpreted as a standard date and time format string. However, in this particular case, an error is raised because there is no "h" standard date and time format specifier.
+A custom date and time format string consists of two or more characters. Date and time formatting methods interpret any single-character string as a standard date and time format string. If they don't recognize the character as a valid format specifier, they raise an error. For example, a format string that consists only of the specifier "h" is interpreted as a standard date and time format string. However, in this particular case, an error is raised because there is no "h" standard date and time format specifier.
 
 To use any of the custom date and time format specifiers as the only specifier in a format string (that is, to use the "d", "f", "F", "g", "h", "H", "K", "m", "M", "s", "t", "y", "z", ":", or "/" custom format specifier by itself), include a space before or after the specifier, or include a percent ("%") format specifier before the single custom date and time specifier.
 
