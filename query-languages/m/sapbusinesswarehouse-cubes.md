@@ -2,13 +2,20 @@
 description: "Learn more about: SapBusinessWarehouse.Cubes"
 title: "SapBusinessWarehouse.Cubes"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # SapBusinessWarehouse.Cubes
 
 ## Syntax
 
 <pre>
-SapBusinessWarehouse.Cubes(<b>server</b> as text, <b>systemNumberOrSystemId</b> as text, <b>clientId</b> as text, optional <b>optionsOrLogonGroup</b> as any, optional <b>options</b> as nullable record) as table
+SapBusinessWarehouse.Cubes(
+    <b>server</b> as text,
+    <b>systemNumberOrSystemId</b> as text,
+    <b>clientId</b> as text,
+    optional <b>optionsOrLogonGroup</b> as any,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
 
 ## About

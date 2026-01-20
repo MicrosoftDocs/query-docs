@@ -2,13 +2,18 @@
 description: "Learn more about: Cube.ApplyParameter"
 title: "Cube.ApplyParameter"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Cube.ApplyParameter
 
 ## Syntax
 
 <pre>
-Cube.ApplyParameter(cube as table, parameter as any, optional arguments as nullable list) as table
+Cube.ApplyParameter(
+    <b>cube</b> as table,
+    <b>parameter</b> as any,
+    optional <b>arguments</b> as nullable list
+) as table
 </pre>
 
 ## About

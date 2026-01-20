@@ -2,6 +2,7 @@
 description: "Learn more about: Logical.ToText"
 title: "Logical.ToText"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Logical.ToText
 

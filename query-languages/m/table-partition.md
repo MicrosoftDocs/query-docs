@@ -2,13 +2,19 @@
 description: "Learn more about: Table.Partition"
 title: "Table.Partition"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.Partition
 
 ## Syntax
 
 <pre>  
-Table.Partition(<b>table</b> as table, <b>column</b> as text, <b>groups</b> as number, <b>hash</b> as function) as list
+Table.Partition(
+    <b>table</b> as table,
+    <b>column</b> as text,
+    <b>groups</b> as number,
+    <b>hash</b> as function
+) as list
 </pre>
   
 ## About

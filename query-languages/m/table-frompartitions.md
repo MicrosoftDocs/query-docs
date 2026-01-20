@@ -2,13 +2,18 @@
 description: "Learn more about: Table.FromPartitions"
 title: "Table.FromPartitions"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.FromPartitions
 
 ## Syntax
 
 <pre>
-Table.FromPartitions(<b>partitionColumn</b> as text, <b>partitions</b> as list, optional <b>partitionColumnType</b> as nullable type) as table
+Table.FromPartitions(
+    <b>partitionColumn</b> as text,
+    <b>partitions</b> as list,
+    optional <b>partitionColumnType</b> as nullable type
+) as table
 </pre>
   
 ## About

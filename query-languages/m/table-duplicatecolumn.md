@@ -2,13 +2,19 @@
 description: "Learn more about: Table.DuplicateColumn"
 title: "Table.DuplicateColumn"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.DuplicateColumn
 
 ## Syntax
 
 <pre>
-Table.DuplicateColumn(<b>table</b> as table, <b>columnName</b> as text, <b>newColumnName</b> as text, optional <b>columnType</b> as nullable type) as table
+Table.DuplicateColumn(
+    <b>table</b> as table,
+    <b>columnName</b> as text,
+    <b>newColumnName</b> as text,
+    optional <b>columnType</b> as nullable type
+) as table
 </pre>
 
 ## About

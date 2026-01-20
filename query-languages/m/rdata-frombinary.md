@@ -2,13 +2,14 @@
 description: "Learn more about: RData.FromBinary"
 title: "RData.FromBinary"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # RData.FromBinary
 
 ## Syntax
 
 <pre>
-RData.FromBinary(stream as binary) as any
+RData.FromBinary(<b>stream</b> as binary) as any
 </pre>
 
 ## About

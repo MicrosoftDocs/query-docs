@@ -2,13 +2,18 @@
 description: "Learn more about: Table.ReorderColumns"
 title: "Table.ReorderColumns"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.ReorderColumns
 
 ## Syntax
 
 <pre>
-Table.ReorderColumns(<b>table</b> as table, <b>columnOrder</b> as list, optional <b>missingField</b> as nullable number) as table
+Table.ReorderColumns(
+    <b>table</b> as table,
+    <b>columnOrder</b> as list,
+    optional <b>missingField</b> as nullable number
+) as table
 </pre>
   
 ## About

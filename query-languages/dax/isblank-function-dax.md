@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISBLANK"
 title: "ISBLANK function (DAX)"
+ms.topic: reference
 ---
 # ISBLANK
 

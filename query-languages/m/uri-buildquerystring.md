@@ -2,6 +2,7 @@
 description: "Learn more about: Uri.BuildQueryString"
 title: "Uri.BuildQueryString"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Uri.BuildQueryString
 

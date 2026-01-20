@@ -2,13 +2,18 @@
 description: "Learn more about: Html.Table"
 title: "Html.Table"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Html.Table
 
 ## Syntax
 
 <pre>
-Html.Table(<b>html</b> as any, <b>columnNameSelectorPairs</b> as list, optional <b>options</b> as nullable record) as table
+Html.Table(
+    <b>html</b> as any,
+    <b>columnNameSelectorPairs</b> as list,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
 
 ## About

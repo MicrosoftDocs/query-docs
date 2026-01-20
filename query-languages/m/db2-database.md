@@ -2,13 +2,18 @@
 description: "Learn more about: DB2.Database"
 title: "DB2.Database"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # DB2.Database
 
 ## Syntax
 
 <pre>
-DB2.Database(<b>server</b> as text, <b>database</b> as text, optional <b>options</b> as nullable record) as table
+DB2.Database(
+    <b>server</b> as text,
+    <b>database</b> as text,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
 
 ## About

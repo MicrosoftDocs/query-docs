@@ -2,13 +2,18 @@
 description: "Learn more about: Table.AggregateTableColumn"
 title: "Table.AggregateTableColumn"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.AggregateTableColumn
 
 ## Syntax
 
 <pre>
-Table.AggregateTableColumn(<b>table</b> as table, <b>column</b> as text, <b>aggregations</b> as list) as table
+Table.AggregateTableColumn(
+    <b>table</b> as table,
+    <b>column</b> as text,
+    <b>aggregations</b> as list
+) as table
 </pre>
   
 ## About

@@ -2,13 +2,18 @@
 description: "Learn more about: Int32.From"
 title: "Int32.From"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Int32.From
 
 ## Syntax
 
 <pre>
-Int32.From(<b>value</b> as any, optional <b>culture</b> as nullable text, optional <b>roundingMode</b> as nullable number) as nullable number
+Int32.From(
+    <b>value</b> as any,
+    optional <b>culture</b> as nullable text,
+    optional <b>roundingMode</b> as nullable number
+) as nullable number
 </pre>
 
 ## About

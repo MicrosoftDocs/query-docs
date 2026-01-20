@@ -2,13 +2,18 @@
 description: "Learn more about: Splitter.SplitTextByAnyDelimiter"
 title: "Splitter.SplitTextByAnyDelimiter"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Splitter.SplitTextByAnyDelimiter
 
 ## Syntax
 
 <pre>
-Splitter.SplitTextByAnyDelimiter(<b>delimiters</b> as list, optional <b>quoteStyle</b> as nullable number, optional <b>startAtEnd</b> as nullable logical) as function
+Splitter.SplitTextByAnyDelimiter(
+    <b>delimiters</b> as list,
+    optional <b>quoteStyle</b> as nullable number,
+    optional <b>startAtEnd</b> as nullable logical
+) as function
 </pre>
   
 ## About

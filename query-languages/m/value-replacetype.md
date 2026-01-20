@@ -2,6 +2,7 @@
 description: "Learn more about: Value.ReplaceType"
 title: "Value.ReplaceType"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Value.ReplaceType
 

@@ -2,13 +2,18 @@
 description: "Learn more about: Number.Round"
 title: "Number.Round"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Number.Round
 
 ## Syntax
 
 <pre>
-Number.Round(<b>number</b> as nullable number, optional <b>digits</b> as nullable number, optional <b>roundingMode</b> as nullable number) as nullable number
+Number.Round(
+    <b>number</b> as nullable number,
+    optional <b>digits</b> as nullable number,
+    optional <b>roundingMode</b> as nullable number
+) as nullable number
 </pre>
 
 ## About

@@ -2,13 +2,19 @@
 description: "Learn more about: Table.FuzzyGroup"
 title: "Table.FuzzyGroup"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.FuzzyGroup
   
 ## Syntax
 
 <pre>
-Table.FuzzyGroup(<b>table</b> as table, <b>key</b> as any, <b>aggregatedColumns</b> as list, optional <b>options</b> as nullable record) as table
+Table.FuzzyGroup(
+    <b>table</b> as table,
+    <b>key</b> as any,
+    <b>aggregatedColumns</b> as list,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
   
 ## About

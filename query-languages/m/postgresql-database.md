@@ -2,13 +2,18 @@
 description: "Learn more about: PostgreSQL.Database"
 title: "PostgreSQL.Database"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # PostgreSQL.Database
 
 ## Syntax
 
 <pre>
-PostgreSQL.Database(<b>server</b> as text, <b>database</b> as text, optional <b>options</b> as nullable record) as table
+PostgreSQL.Database(
+    <b>server</b> as text,
+    <b>database</b> as text,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
 
 ## About

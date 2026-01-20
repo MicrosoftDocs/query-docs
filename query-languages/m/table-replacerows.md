@@ -2,13 +2,19 @@
 description: "Learn more about: Table.ReplaceRows"
 title: "Table.ReplaceRows"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.ReplaceRows
 
 ## Syntax
 
 <pre>
-Table.ReplaceRows(<b>table</b> as table, <b>offset</b> as number, <b>count</b> as number, <b>rows</b> as list) as table
+Table.ReplaceRows(
+    <b>table</b> as table,
+    <b>offset</b> as number,
+    <b>count</b> as number,
+    <b>rows</b> as list
+) as table
 </pre>
   
 ## About

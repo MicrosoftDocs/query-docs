@@ -2,13 +2,18 @@
 description: "Learn more about: Table.ContainsAny"
 title: "Table.ContainsAny"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.ContainsAny
 
 ## Syntax
 
 <pre>
-Table.ContainsAny(<b>table</b> as table, <b>rows</b> as list, optional <b>equationCriteria</b> as any) as logical
+Table.ContainsAny(
+    <b>table</b> as table,
+    <b>rows</b> as list,
+    optional <b>equationCriteria</b> as any
+) as logical
 </pre>
   
 ## About

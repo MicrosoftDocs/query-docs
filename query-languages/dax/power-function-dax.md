@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: POWER"
 title: "POWER function (DAX)"
+ms.topic: reference
 ---
 # POWER
 

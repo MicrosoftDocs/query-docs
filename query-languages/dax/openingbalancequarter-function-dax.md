@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: OPENINGBALANCEQUARTER"
 title: "OPENINGBALANCEQUARTER function (DAX)"
+ms.topic: reference
 ---
 # OPENINGBALANCEQUARTER
 
@@ -10,8 +11,8 @@ Evaluates the `expression` at the date corresponding to the end of the previous 
 
 ## Syntax
 
-```dax
-OPENINGBALANCEQUARTER(<expression>,<dates>[,<filter>])
+```
+OPENINGBALANCEQUARTER(<expression>,<dates> or <calendar>[,<filter>])
 ```
 
 ### Parameters
@@ -19,12 +20,12 @@ OPENINGBALANCEQUARTER(<expression>,<dates>[,<filter>])
 |Term|Definition|
 |--------|--------------|
 |`expression`|An expression that returns a scalar value.|
-|`dates`|A column that contains dates.|
+|`dates or calendar`|A column that contains dates or a calendar reference.|
 |`filter`|(optional) An expression that specifies a filter to apply to the current context.|
 
 ## Return value
 
-A scalar value that represents the `expression` evaluated at the first date of the quarter in the current context.
+A scalar value that represents the `expression` at the end of the previous quarter in the current context.
 
 ## Remarks
 
@@ -44,11 +45,34 @@ A scalar value that represents the `expression` evaluated at the first date of t
 The following sample formula creates a measure that calculates the 'Quarter Start Inventory Value' of the product inventory.
 
 ```dax
-= OPENINGBALANCEQUARTER(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])
+=
+OPENINGBALANCEQUARTER (
+    SUMX (
+        ProductInventory,
+        ProductInventory[UnitCost] * ProductInventory[UnitsBalance]
+    ),
+    DateTime[DateKey]
+)
+```
+
+## Example for calendar based time intelligence
+
+The following sample formula creates a measure that calculates the 'Quarter Start Inventory Value' of the product inventory in terms of fiscal calendar.
+
+```dax
+=
+OPENINGBALANCEQUARTER (
+    SUMX (
+        ProductInventory,
+        ProductInventory[UnitCost] * ProductInventory[UnitsBalance]
+    ),
+    FiscalCalendar
+)
 ```
 
 ## Related content
 
+[OPENINGBALANCEWEEK function](openingbalanceweek-function-dax.md)
 [OPENINGBALANCEYEAR function](openingbalanceyear-function-dax.md)
 [OPENINGBALANCEMONTH function](openingbalancemonth-function-dax.md)
 [Time intelligence functions](time-intelligence-functions-dax.md)

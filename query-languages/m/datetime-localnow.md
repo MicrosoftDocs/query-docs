@@ -2,6 +2,7 @@
 description: "Learn more about: DateTime.LocalNow"
 title: "DateTime.LocalNow"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # DateTime.LocalNow
 
@@ -44,3 +45,7 @@ DateTime.LocalNow()
 **Output**
 
 The current online (UTC) date and time.
+
+## Related content
+
+[Local, fixed, and UTC variants of current time functions](m-local-fixed-utc-variants.md)

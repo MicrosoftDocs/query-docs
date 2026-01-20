@@ -1,12 +1,14 @@
 ---
 description: "Learn more about: ALLSELECTED"
 title: "ALLSELECTED function (DAX)"
+ms.topic: reference
+
 ---
 # ALLSELECTED
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Removes context filters from columns and rows in the current query, while retaining all other context filters or explicit filters.
+Returns all rows in a table, or all the values in a columns, ignoring any filters that might have been applied inside the query, but keeping filters that come from outside.
 
 The ALLSELECTED function gets the context that represents all rows and columns in the query, while keeping explicit filters and contexts other than row and column filters. This function can be used to obtain visual totals in queries.
 

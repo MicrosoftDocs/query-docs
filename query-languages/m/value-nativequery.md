@@ -2,12 +2,18 @@
 description: "Learn more about: Value.NativeQuery"
 title: "Value.NativeQuery"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Value.NativeQuery
 
 ## Syntax
 
-<pre>Value.NativeQuery(<b>target</b> as any, <b>query</b> as text, optional <b>parameters</b> as any, optional <b>options</b> as nullable record) as any
+<pre>Value.NativeQuery(
+    <b>target</b> as any,
+    <b>query</b> as text,
+    optional <b>parameters</b> as any,
+    optional <b>options</b> as nullable record
+) as any
 </pre>
 
 ## About

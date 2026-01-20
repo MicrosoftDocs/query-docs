@@ -2,13 +2,18 @@
 description: "Learn more about: Excel.Workbook"
 title: "Excel.Workbook"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Excel.Workbook
 
 ## Syntax
 
 <pre>
-Excel.Workbook(<b>workbook</b> as binary, optional <b>useHeaders</b> as any, optional <b>delayTypes</b> as nullable logical) as table
+Excel.Workbook(
+    <b>workbook</b> as binary,
+    optional <b>useHeaders</b> as any,
+    optional <b>delayTypes</b> as nullable logical
+) as table
 </pre>
 
 ## About

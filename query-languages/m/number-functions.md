@@ -1,7 +1,8 @@
 ---
 description: "Learn more about: Number functions"
 title: "Number functions"
-ms.date: 7/18/2023
+ms.date: 8/11/2025
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
 # Number functions
@@ -12,9 +13,9 @@ These functions create and manipulate number values.
 
 |Name|Description|  
 |------------|---------------|  
-|[Number.IsEven](number-iseven.md)|Returns true if a value is an even number.|
-|[Number.IsNaN](number-isnan.md)|Returns true if a value is Number.NaN.|  
-|[Number.IsOdd](number-isodd.md)|Returns true if a value is an odd number.|  
+|[Number.IsEven](number-iseven.md)|Returns `true` if a value is an even number.|
+|[Number.IsNaN](number-isnan.md)|Returns `true` if a value is [Number.NaN](number-nan.md).|  
+|[Number.IsOdd](number-isodd.md)|Returns `true` if a value is an odd number.|  
 
 ## Conversion and formatting  
 
@@ -39,9 +40,9 @@ These functions create and manipulate number values.
 |Name|Description|
 |------------|---------------|
 |[Number.Round](number-round.md)|Returns a nullable number (n) if value is an integer.|
-|[Number.RoundAwayFromZero](number-roundawayfromzero.md)|Returns Number.RoundUp(value) when value &gt;= 0 and Number.RoundDown(value) when value &lt; 0.|
+|[Number.RoundAwayFromZero](number-roundawayfromzero.md)|Returns [Number.RoundUp(value)](number-roundup.md) when value &gt;= 0 and [Number.RoundDown(value)](number-rounddown.md) when value &lt; 0.|
 |[Number.RoundDown](number-rounddown.md)|Returns the largest integer less than or equal to a number value.|
-|[Number.RoundTowardZero](number-roundtowardzero.md)|Returns Number.RoundDown(x) when x &gt;= 0 and Number.RoundUp(x) when x &lt; 0.|
+|[Number.RoundTowardZero](number-roundtowardzero.md)|Returns [Number.RoundDown(x)](number-rounddown.md) when x &gt;= 0 and [Number.RoundUp(x)](number-roundup.md) when x &lt; 0.|
 |[Number.RoundUp](number-roundup.md)|Returns the larger integer greater than or equal to a number value.|  
 
 ## Operations
@@ -59,7 +60,7 @@ These functions create and manipulate number values.
 |[Number.Mod](number-mod.md)|Divides two numbers and returns the remainder of the resulting number.|
 |[Number.Permutations](number-permutations.md)|Returns the number of total permutations of a given number of items for the optional permutation size.|
 |[Number.Power](number-power.md)|Returns a number raised by a power.|
-|[Number.Sign](number-sign.md)|Returns 1 for positive numbers, -1 for negative numbers or 0 for zero.|
+|[Number.Sign](number-sign.md)|Returns 1 for positive numbers, -1 for negative numbers, or 0 for zero.|
 |[Number.Sqrt](number-sqrt.md)|Returns the square root of a number.|
 
 ## Random

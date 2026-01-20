@@ -2,13 +2,18 @@
 description: "Learn more about: Sybase.Database"
 title: "Sybase.Database"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Sybase.Database
 
 ## Syntax
 
 <pre>
-Sybase.Database(<b>server</b> as text, <b>database</b> as text, optional <b>options</b> as nullable record) as table
+Sybase.Database(
+    <b>server</b> as text,
+    <b>database</b> as text,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
 
 ## About

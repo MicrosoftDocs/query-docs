@@ -2,13 +2,19 @@
 description: "Learn more about: Table.AddRankColumn"
 title: "Table.AddRankColumn"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.AddRankColumn
 
 ## Syntax
 
 <pre>
-Table.AddRankColumn(<b>table</b> as table, <b>newColumnName</b> as text, <b>comparisonCriteria</b> as any, optional <b>options</b> as nullable record) as table
+Table.AddRankColumn(
+    <b>table</b> as table,
+    <b>newColumnName</b> as text,
+    <b>comparisonCriteria</b> as any,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
   
 ## About

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Logical functions"
 title: "Logical functions (DAX)"
+ms.topic: reference
 ---
 # Logical functions
 

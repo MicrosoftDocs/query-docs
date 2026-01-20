@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: MEDIAN"
 title: "MEDIAN function (DAX)"
+ms.topic: reference
 ---
 # MEDIAN
 

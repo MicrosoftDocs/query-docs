@@ -2,13 +2,18 @@
 description: "Learn more about: Sql.Database"
 title: "Sql.Database"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Sql.Database
 
 ## Syntax
 
 <pre>
-Sql.Database(<b>server</b> as text, <b>database</b> as text, optional <b>options</b> as nullable record) as table
+Sql.Database(
+    <b>server</b> as text,
+    <b>database</b> as text,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
 
 ## About

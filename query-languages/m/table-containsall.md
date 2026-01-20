@@ -2,13 +2,18 @@
 description: "Learn more about: Table.ContainsAll"
 title: "Table.ContainsAll"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.ContainsAll
 
 ## Syntax
 
 <pre>
-Table.ContainsAll(<b>table</b> as table, <b>rows</b> as list, optional <b>equationCriteria</b> as any) as logical
+Table.ContainsAll(
+    <b>table</b> as table,
+    <b>rows</b> as list,
+    optional <b>equationCriteria</b> as any
+) as logical
 </pre>
   
 ## About

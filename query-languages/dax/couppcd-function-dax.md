@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: COUPPCD"
 title: "COUPPCD function (DAX)"
+ms.topic: reference
 ---
 
 # COUPPCD

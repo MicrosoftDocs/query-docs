@@ -2,13 +2,21 @@
 description: "Learn more about: #datetime"
 title: "#datetime"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # #datetime
 
 ## Syntax
 
 <pre>
-#datetime(<b>year</b> as number, <b>month</b> as number, <b>day</b> as number, <b>hour</b> as number, <b>minute</b> as number, <b>second</b> as number) as datetime
+#datetime(
+    <b>year</b> as number,
+    <b>month</b> as number,
+    <b>day</b> as number,
+    <b>hour</b> as number,
+    <b>minute</b> as number,
+    <b>second</b> as number
+) as datetime
 </pre>
 
 ## About

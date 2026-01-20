@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SUMMARIZECOLUMNS"
 title: "SUMMARIZECOLUMNS function (DAX)"
+ms.topic: reference
 ---
 # SUMMARIZECOLUMNS
 
@@ -354,6 +355,11 @@ Evaluate CalculateTable(
 In the above expression, there are two filters on the 'Geography' table: one with KeepFilters specified and one without. These filters overlap with external filters on different columns. Currently, this configuration is not allowed because internally, the two filters are clustered into one, and the system cannot determine the correct filter overriding behavior for the clustered filter overall in such cases.
 
 Please note that this restriction is temporary. We are actively developing solutions to remove this limitation in future updates. If you encounter this error, we advise adjusting the filters within SummarizeColumns by adding or removing KeepFilters as necessary to ensure consistent overriding behavior on each table.
+
+### ValueFilterBehavior ###
+
+ValueFilterBehavior is a model property that controls how value filter is applied to filter context. Please check out details in [Work with value filter behavior](/power-bi/transform-model/value-filter-behavior).
+
 
 ## Related content
 

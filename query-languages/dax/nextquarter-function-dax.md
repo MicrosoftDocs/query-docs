@@ -1,32 +1,36 @@
 ---
 description: "Learn more about: NEXTQUARTER"
 title: "NEXTQUARTER function (DAX)"
+ms.topic: reference
 ---
 # NEXTQUARTER
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns a table that contains a column of all dates in the next quarter, based on the first date specified in the `dates` column, in the current context.
+For date column input, returns a table that contains a column of all dates in the next quarter, based on the last date specified in the `dates` column, in the current context.
+
+For calendar input, returns a table of all dates from the next quarter, based on the last date in the current context. The table contains all primary tagged columns and all time related columns.
 
 ## Syntax
 
-```dax
-NEXTQUARTER(<dates>)
+```
+NEXTQUARTER(<dates> or <calendar>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates`|A column containing dates.|
+|`dates or calendar`|A column that contains dates or a calendar reference|
 
 ## Return value
 
-A table containing a single column of date values.
+For date column input, a table containing a single column of date values.  
+For calendar input, a table for next quarter, in the current context. The table contains all primary tagged columns and all time related columns.
 
 ## Remarks
 
-- This function returns all dates in the next quarter, based on the first date in the input parameter. For example, if the first date in the `dates` column refers to June 10, 2009, this function returns all dates for the quarter July to September, 2009.
+- This function returns all dates in the next quarter, based on the last date in the input parameter. For example, if the last date in the `dates` column refers to June 10, 2009, this function returns all dates for the quarter July to September, 2009.
 
 - The `dates` argument can be any of the following:
   - A reference to a date/time column.
@@ -42,7 +46,22 @@ A table containing a single column of date values.
 The following sample formula creates a measure that calculates the 'next quarter sales' for Internet sales.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), NEXTQUARTER('DateTime'[DateKey]))
+= CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    NEXTQUARTER ( 'DateTime'[DateKey] )
+)
+```
+
+## Example for calendar based time intelligence
+
+The following sample formula creates a measure that calculates the 'next quarter sales' for Internet sales.
+
+```dax
+=
+CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    NEXTQUARTER ( FiscalCalendar )
+)
 ```
 
 ## Related content
@@ -50,5 +69,6 @@ The following sample formula creates a measure that calculates the 'next quarter
 [Time intelligence functions](time-intelligence-functions-dax.md)
 [Date and time functions](date-and-time-functions-dax.md)
 [NEXTDAY function](nextday-function-dax.md)
+[NEXTWEEK function](nextweek-function-dax.md)
 [NEXTMONTH function](nextmonth-function-dax.md)
 [NEXTYEAR function](nextyear-function-dax.md)

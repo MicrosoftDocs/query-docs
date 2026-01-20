@@ -2,13 +2,18 @@
 description: "Learn more about: Time.ToText"
 title: "Time.ToText"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Time.ToText
 
 ## Syntax
 
 <pre>
-Time.ToText(<b>time</b> as nullable time, optional <b>options</b> as any, optional <b>culture</b> as nullable text) as nullable text
+Time.ToText(
+    <b>time</b> as nullable time,
+    optional <b>options</b> as any,
+    optional <b>culture</b> as nullable text
+) as nullable text
 </pre>
 
 ## About

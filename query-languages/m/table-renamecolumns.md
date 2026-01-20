@@ -2,13 +2,18 @@
 description: "Learn more about: Table.RenameColumns"
 title: "Table.RenameColumns"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.RenameColumns
 
 ## Syntax
 
 <pre>
-Table.RenameColumns(<b>table</b> as table, <b>renames</b> as list, optional <b>missingField</b> as nullable number) as table
+Table.RenameColumns(
+    <b>table</b> as table,
+    <b>renames</b> as list,
+    optional <b>missingField</b> as nullable number
+) as table
 </pre>
   
 ## About

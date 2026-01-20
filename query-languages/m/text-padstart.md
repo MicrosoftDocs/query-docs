@@ -2,13 +2,18 @@
 description: "Learn more about: Text.PadStart"
 title: "Text.PadStart"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.PadStart
 
 ## Syntax
 
 <pre>
-Text.PadStart(<b>text</b> as nullable text, <b>count</b> as number, optional <b>character</b> as nullable text) as nullable text
+Text.PadStart(
+    <b>text</b> as nullable text,
+    <b>count</b> as number,
+    optional <b>character</b> as nullable text
+) as nullable text
 </pre>
   
 ## About

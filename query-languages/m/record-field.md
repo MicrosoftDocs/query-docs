@@ -2,6 +2,7 @@
 description: "Learn more about: Record.Field"
 title: "Record.Field"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Record.Field
 

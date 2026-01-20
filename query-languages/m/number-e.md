@@ -2,6 +2,7 @@
 description: "Learn more about: Number.E"
 title: "Number.E"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Number.E
 

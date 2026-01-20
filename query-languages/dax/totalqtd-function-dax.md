@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TOTALQTD"
 title: "TOTALQTD function (DAX)"
+ms.topic: reference
 ---
 # TOTALQTD
 
@@ -10,8 +11,8 @@ Evaluates the value of the `expression` for the dates in the quarter to date, in
 
 ## Syntax
 
-```dax
-TOTALQTD(<expression>,<dates>[,<filter>])
+```
+TOTALQTD(<expression>,<dates> or <calendar>[,<filter>])
 ```
 
 ### Parameters
@@ -19,12 +20,12 @@ TOTALQTD(<expression>,<dates>[,<filter>])
 |Parameter|Definition|
 |-------------|--------------|
 |`expression`|An expression that returns a scalar value.|
-|`dates`|A column that contains dates.|
+|`dates or calendar`|A column that contains dates or a calendar reference.|
 |`filter`|(optional) An expression that specifies a filter to apply to the current context.|
 
 ## Return value
 
-A scalar value that represents the `expression` evaluated for all dates in the current quarter to date, given the dates in `dates`.
+A scalar value that represents the `expression` evaluated for all dates in the current quarter to date, given the dates in `dates` or `calendar`.
 
 ## Remarks
 
@@ -47,9 +48,18 @@ The following sample formula creates a measure that calculates the 'quarter runn
 = TOTALQTD(SUM(InternetSales_USD[SalesAmount_USD]),DateTime[DateKey])
 ```
 
+## Example for calendar based time intelligence
+
+The following sample formula creates a measure that calculates the 'quarter running total' or 'quarter running sum' for Internet sales in terms of fiscal calendar.
+
+```dax
+= TOTALQTD(SUM(InternetSales_USD[SalesAmount_USD]), FiscalCalendar)
+```
+
 ## Related content
 
 [ALL](all-function-dax.md)
 [CALCULATE](calculate-function-dax.md)
 [TOTALYTD](totalytd-function-dax.md)
 [TOTALMTD](totalmtd-function-dax.md)
+[TOTALWTD](totalwtd-function-dax.md)

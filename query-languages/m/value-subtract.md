@@ -2,13 +2,18 @@
 description: "Learn more about: Value.Subtract"
 title: "Value.Subtract"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Value.Subtract
 
 ## Syntax
 
 <pre>
-Value.Subtract(<b>value1</b> as any, <b>value2</b> as any, optional <b>precision</b> as nullable number) as any
+Value.Subtract(
+    <b>value1</b> as any,
+    <b>value2</b> as any,
+    optional <b>precision</b> as nullable number
+) as any
 </pre>
 
 ## About

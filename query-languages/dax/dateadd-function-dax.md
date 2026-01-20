@@ -1,30 +1,35 @@
 ---
 description: "Learn more about: DATEADD"
 title: "DATEADD function (DAX)"
+ms.topic: reference
 ---
 # DATEADD
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns a table that contains a column of dates, shifted either forward or backward in time by the specified number of intervals from the dates in the current context.
+If input is a date column, returns a table that contains a column of dates, shifted either forward or backward in time by the specified number of intervals from the dates in the current context.  
+If the input is a calendar, the function returns dates shifted forward or backward in time by the specified number of intervals, based on the current context. The output includes the primary tagged columns as well as time-related columns.
 
 ## Syntax
 
-```dax
-DATEADD(<dates>,<number_of_intervals>,<interval>)
+```
+DATEADD(<dates> or <calendar>, <number_of_intervals>, <interval>[,<Extension>],[,<Truncation>])
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates`|A column that contains dates.|
+|`dates or calendar`|A column that contains dates or a calendar reference.|
 |`number_of_intervals`|An integer that specifies the number of intervals to add to or subtract from the dates.|
-|`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`, `day`|
+|`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`, `week`, `day`. The week enum is only applicable when a calendar reference is provided.|
+|`extension`|Only applicable when a calendar reference is provided. Define behavior when the original time period has fewer dates than the resulting time period. Valid values are: EXTENDING (Default), PRECISE, ENDALIGNED. |
+|`truncation`|Only applicable when a calendar reference is provided. Define behavior when the original time period has more dates than the resulting time period. Valid values are: BLANKS (Default), ANCHORED.|
 
 ## Return value
 
-A table containing a single column of date values.
+For date column input, a table containing a single column of date values.  
+For calendar input, a table that contains all primary tagged columns and time related columns for the shifted periods, in the current context.
 
 ## Remarks
 
@@ -45,7 +50,7 @@ The `dates` argument can be any of the following:
 
 - The result table includes only dates that exist in the `dates` column.
 
-- If the dates in the current context do not form a contiguous interval, the function returns an error.
+- If the date column syntax is used and the dates in the current context do not form a contiguous interval, the function returns an error.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
@@ -54,18 +59,70 @@ The `dates` argument can be any of the following:
 The following formula calculates dates that are one year before the dates in the current context.
 
 ```dax
-= DATEADD(DateTime[DateKey],-1,year)
+= DATEADD ( DateTime[DateKey], -1, YEAR )
 ```
 
-## Special behavior
+## Example for calendar based time intelligence
+The following formula returns a table of dates shifted one year back from the dates in the current context.
 
-When the selection includes the last two days of month, DATEADD will use "extension" semantics and will include the days till the end of month. For example, when Feb 27 and 28 of 2013 are included in the selection and a month is added, DATEADD will return March 27 to 31.
+```dax
+DATEADD ( FiscalCalendar, -1, YEAR )
+```
+
+## Special behavior when input is a date column
+
+When the selection includes the last two days of month, DATEADD will use "extension" semantics and will include the days until the end of month. For example, when Feb 27 and 28 of 2013 are included in the selection and a month is added, DATEADD will return March 27 to 31.
 
 This behavior only happens when last two days of month are included in the selection. If only Feb 27 is selected, it will go to March 27.
 
 ```dax
 = DATEADD(DateTime[DateKey], 1, month)
 ```
+
+Calendar based time intelligence provides more control via two optional parameters: "Extension" and "Truncation". Please see the above parameter descriptions for details.
+
+## Behavior for calendar based DateAdd when selection is at a finer grain than the shift level
+
+When calendar reference is used and the selection is at a finer grain than the shift level, an index-based approach is taken. To illustrate this behavior, let's consider the scenario where the selection is at the date level and DATEADD() is shifting by month. Here is what DateAdd will do:
+
+- Determine the positions of the current selection within the month.  
+For example, if the current selection spans March 3–10, the positions are from the 3rd to the 10th day of the month.
+
+- Shift the month
+Apply the month shift — e.g., a shift of +1 changes March to April.
+
+- Return the same relative positions in the shifted month
+Retrieve the 3rd to the 10th of the new month (e.g., April 3–10).
+
+## Parameters for calendar based DateAdd when selection is at a finer grain than the shift level
+
+When the selection granularity is **finer** than the shift unit (e.g., selecting individual dates while shifting by month), the **index-based behavior** can lead to **ambiguities**, especially across months of varying lengths. To handle these edge cases, two parameters are introduced:
+
+### Extension parameter (for small → large period shifts):
+
+Controls how the function behaves when the destination period is **longer** than the current one. Use moving forward one month as example:
+
+- **`Precise`**: Keeps the original date range strictly.  
+  → `Feb 25–28` → `March 25–28`
+
+- **`Extending`**: Allows the window to expand toward the **end of the period** if needed.  
+  → `Feb 25–28` → `March 25–31`
+
+- **`EndAligned`**: Aligns the end date with the end of the destination period when the selection reaches the end of its period; otherwise preserves relative positions.  
+  → `Feb 28` → `March 31`, while `Feb 27` → `March 27`
+
+### Truncation Parameter (for large → small period shifts)
+
+Controls how the function behaves when the destination month is **shorter** than the current one. Use moving backward one month as example:
+
+- **`Anchored`**: Anchors the result to the **last valid date** of the smaller period.  
+  → `March 31` → `Feb 28`
+
+- **`Blanks`**: Returns **blank** when the shifted date doesn't exist.  
+  → `March 31` → _(blank)_ (since February doesn't have 31st)
+  
+## Differences in behavior between classic and calendar time intelligence
+Some scenarios may yield different results when comparing classic and calendar time intelligence. For example, in a lunar year, SamePeriodLastYear will produce different results at the date granularity. In calendar-based time intelligence, shifting Feb 29 2008 back one year results in Mar 1 2007, because it is treated as the 60th day of the year. In classic time intelligence, the same shift returns Feb 28 2007. The workaround is to use DATEADD(Calendar, -<number of a year>, month). For example, if a year has 13 months in calendar, use DATEADD(Calendar, -13, month). This approach will shift by month so Feb 2008 will go to Feb 2007.
 
 ## Related content
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SUMMARIZE"
 title: "SUMMARIZE function (DAX)"
+ms.topic: reference
 ---
 # SUMMARIZE
 

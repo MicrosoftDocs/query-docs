@@ -1,28 +1,32 @@
 ---
 description: "Learn more about: PREVIOUSDAY"
 title: "PREVIOUSDAY function (DAX)"
+ms.topic: reference
 ---
 # PREVIOUSDAY
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns a table that contains a column of all dates representing the day that is previous to the first date in the `dates` column, in the current context.
+For date column input, returns a table that contains a column of all dates representing the day that is previous to the first date in the `dates` column, in the current context.
+
+For calendar input, returns a table that is previous to the first date in the calendar, in the current context. The table contains all primary tagged columns and all time related columns.
 
 ## Syntax
 
-```dax
-PREVIOUSDAY(<dates>)
+```
+PREVIOUSDAY(<dates> or <calendar>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates`|A column containing dates.|
+|`dates or calendar`|A column that contains dates or a calendar reference|
 
 ## Return value
 
-A table containing a single column of date values.
+For date column input, a table containing a single column of date values.  
+For calendar input, a table that contains all primary tagged columns and all time related columns.
 
 ## Remarks
 
@@ -42,13 +46,28 @@ A table containing a single column of date values.
 The following sample formula creates a measure that calculates the 'previous day sales' for Internet sales.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSDAY('DateTime'[DateKey]))
+= CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    PREVIOUSDAY ( 'DateTime'[DateKey] )
+)
+```
+
+## Example for calendar
+
+The following sample formula creates a measure that calculates the 'previous day sales' for Internet sales in terms of fiscal calendar.
+
+```dax
+= CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    PREVIOUSDAY ( FiscalCalendar )
+)
 ```
 
 ## Related content
 
 [Time intelligence functions](time-intelligence-functions-dax.md)
 [Date and time functions](date-and-time-functions-dax.md)
+[PREVIOUSWEEK](previousweek-function-dax.md)
 [PREVIOUSMONTH function](previousmonth-function-dax.md)
 [PREVIOUSQUARTER function](previousquarter-function-dax.md)
 [PREVIOUSYEAR function](previousyear-function-dax.md)

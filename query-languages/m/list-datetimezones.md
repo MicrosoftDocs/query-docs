@@ -2,13 +2,18 @@
 description: "Learn more about: List.DateTimeZones"
 title: "List.DateTimeZones"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.DateTimeZones
 
 ## Syntax
 
 <pre>
-List.DateTimeZones(<b>start</b> as datetimezone, <b>count</b> as number, <b>step</b> as duration) as list 
+List.DateTimeZones(
+    <b>start</b> as datetimezone,
+    <b>count</b> as number,
+    <b>step</b> as duration
+) as list
 </pre>
 
 ## About

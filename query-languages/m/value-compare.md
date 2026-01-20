@@ -2,13 +2,18 @@
 description: "Learn more about: Value.Compare"
 title: "Value.Compare"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Value.Compare
 
 ## Syntax
 
 <pre>
-Value.Compare(<b>value1</b> as any, <b>value2</b> as any, optional <b>precision</b> as nullable number) as number
+Value.Compare(
+    <b>value1</b> as any,
+    <b>value2</b> as any,
+    optional <b>precision</b> as nullable number
+) as number
 </pre>
 
 ## About

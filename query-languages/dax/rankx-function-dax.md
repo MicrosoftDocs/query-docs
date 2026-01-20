@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: RANKX"
 title: "RANKX function (DAX)"
+ms.topic: reference
 ---
 # RANKX
 

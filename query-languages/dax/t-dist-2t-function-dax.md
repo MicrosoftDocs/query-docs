@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: T.DIST.2T"
 title: "T.DIST.2T function (DAX)"
+ms.topic: reference
 ---
 # T.DIST.2T
 

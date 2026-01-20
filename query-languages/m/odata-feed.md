@@ -2,13 +2,18 @@
 description: "Learn more about: OData.Feed"
 title: "OData.Feed"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # OData.Feed
 
 ## Syntax
 
 <pre>
-OData.Feed(<b>serviceUri</b> as text, optional <b>headers</b> as nullable record, optional <b>options</b> as any) as any
+OData.Feed(
+    <b>serviceUri</b> as text,
+    optional <b>headers</b> as nullable record,
+    optional <b>options</b> as any
+) as any
 </pre>
 
 ## About

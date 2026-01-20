@@ -2,13 +2,19 @@
 description: "Learn more about: OleDb.Query"
 title: "OleDb.Query"
 ms.subservice: m-source
+ms.custom: sfi-ropc-nochange
+ms.topic: reference
 ---
 # OleDb.Query
 
 ## Syntax
 
 <pre>
-OleDb.Query(<b>connectionString</b> as any, <b>query</b> as text, optional <b>options</b> as nullable record) as table
+OleDb.Query(
+    <b>connectionString</b> as any,
+    <b>query</b> as text,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
 
 ## About

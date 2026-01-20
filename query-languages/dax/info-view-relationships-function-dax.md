@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: INFO.VIEW.RELATIONSHIPS"
 title: "INFO.VIEW.RELATIONSHIPS function (DAX)"
+ms.topic: reference
 author: DataZoeMS
 ---
 # INFO.VIEW.RELATIONSHIPS
@@ -113,3 +114,10 @@ EVALUATE
 ```
 
 :::image type="content" source="media/info-view-relationships-function-dax/measure-example-4-dax-query.png" alt-text="Screenshot showing the output of INFO.VIEW.RELATIONSHIPS() with a measure then used in a DAX query in DAX query view." lightbox="media/info-view-relationships-function-dax/measure-example-4-dax-query.png":::
+## See also
+
+[INFO.VIEW.TABLES](info-view-tables-function-dax.md)
+[INFO.VIEW.COLUMNS](info-view-columns-function-dax.md)
+[INFO.VIEW.MEASURES](info-view-measures-function-dax.md)
+[INFO.TABLES](info-tables-function-dax.md)
+[INFO.COLUMNS](info-columns-function-dax.md)

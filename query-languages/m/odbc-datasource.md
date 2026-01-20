@@ -2,6 +2,8 @@
 description: "Learn more about: Odbc.DataSource"
 title: "Odbc.DataSource"
 ms.subservice: m-source
+ms.custom: sfi-ropc-nochange
+ms.topic: reference
 ---
 # Odbc.DataSource
 

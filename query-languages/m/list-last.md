@@ -2,6 +2,7 @@
 description: "Learn more about: List.Last"
 title: "List.Last"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.Last
 
@@ -13,7 +14,10 @@ List.Last(<b>list</b> as list, optional <b>defaultValue</b> as any) as any
 
 ## About
 
-Returns the last item in the list `list`, or the optional default value, `defaultValue`, if the list is empty. If the list is empty and a default value is not specified, the function returns `null`.
+Returns the last item in the specified list, or the optional default value if the list is empty.
+
+* `list`: The list to examine.
+* `defaultValue`: (Optional) The default value to return if the list is empty. If the list is empty and a default value isn't specified, the function returns `null`.
 
 ## Example 1
 

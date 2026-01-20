@@ -2,6 +2,7 @@
 description: "Learn more about: Cube.CollapseAndRemoveColumns"
 title: "Cube.CollapseAndRemoveColumns"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Cube.CollapseAndRemoveColumns
 

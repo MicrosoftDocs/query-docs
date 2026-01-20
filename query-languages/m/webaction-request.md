@@ -2,13 +2,18 @@
 description: "Learn more about: WebAction.Request"
 title: "WebAction.Request"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # WebAction.Request
 
 ## Syntax
 
 <pre>
-WebAction.Request(<b>method</b> as text, <b>url</b> as text, optional <b>options</b> as nullable record) as action
+WebAction.Request(
+    <b>method</b> as text,
+    <b>url</b> as text,
+    optional <b>options</b> as nullable record
+) as action
 </pre>
   
 ## About

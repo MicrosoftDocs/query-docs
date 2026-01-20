@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: MINUTE"
 title: "MINUTE function (DAX)"
+ms.topic: reference
 ---
 # MINUTE
 

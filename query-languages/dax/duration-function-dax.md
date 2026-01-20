@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DURATION"
 title: "DURATION function (DAX)"
+ms.topic: reference
 author: jajin7
 ---
 

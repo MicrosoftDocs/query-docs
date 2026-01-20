@@ -1,10 +1,9 @@
 ---
+description: "Learn more about: Standard date and time format strings"
 title: "Standard date and time format strings"
-description: Learn how to use a standard date and time format string to define the text representation of a date and time value in Power Query M.
-author: DougKlopfenstein
-ms-author: dougklo
 ms.date: 10/11/2024
-ms.topic: reference
+ms.topic: language-reference
+ms.custom: "nonautomated-date"
 ms.subservice: m-background
 ---
 # Standard date and time format strings

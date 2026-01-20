@@ -2,18 +2,31 @@
 description: "Learn more about: Table.ReplaceValue"
 title: "Table.ReplaceValue"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.ReplaceValue
 
 ## Syntax
 
 <pre>
-Table.ReplaceValue(<b>table</b> as table, <b>oldValue</b> as any, <b>newValue</b> as any, <b>replacer</b> as function, <b>columnsToSearch</b> as list) as table
+Table.ReplaceValue(
+    <b>table</b> as table,
+    <b>oldValue</b> as any,
+    <b>newValue</b> as any,
+    <b>replacer</b> as function,
+    <b>columnsToSearch</b> as list
+) as table
 </pre>
   
 ## About
 
-Replaces `oldValue` with `newValue` in the specified columns of the `table`.
+Replaces a value with a new value in the specified columns of a table.
+
+* `table`: The table to search.
+* `oldValue`: The value to be replaced.
+* `newValue`: The replacement value.
+* `replacer`: The replacer function to use. The function can be either [Replacer.ReplaceText](replacer-replacetext.md) to replace the original text with new text, [Replacer.ReplaceValue](replacer-replacevalue.md) to replace the original value with a new value, or a custom replacer.
+* `columnsToSearch`: A list containing the specific column or columns in the table to search for the value to replace.
 
 ## Example 1
 

@@ -2,13 +2,18 @@
 description: "Learn more about: Table.MinN"
 title: "Table.MinN"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.MinN
 
 ## Syntax
 
 <pre>
-Table.MinN(<b>table</b> as table, <b>comparisonCriteria</b> as any, <b>countOrCondition</b> as any) as table
+Table.MinN(
+    <b>table</b> as table,
+    <b>comparisonCriteria</b> as any,
+    <b>countOrCondition</b> as any
+) as table
 </pre>
   
 ## About

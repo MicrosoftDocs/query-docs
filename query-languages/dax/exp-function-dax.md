@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: EXP"
 title: "EXP function (DAX)"
+ms.topic: reference
 ---
 # EXP
 

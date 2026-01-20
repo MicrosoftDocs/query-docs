@@ -2,13 +2,19 @@
 description: "Learn more about: Record.AddField"
 title: "Record.AddField"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Record.AddField
 
 ## Syntax
 
 <pre>
-Record.AddField(<b>record</b> as record, <b>fieldName</b> as text, <b>value</b> as any, optional <b>delayed</b> as nullable logical) as record
+Record.AddField(
+    <b>record</b> as record,
+    <b>fieldName</b> as text,
+    <b>value</b> as any,
+    optional <b>delayed</b> as nullable logical
+) as record
 </pre>
   
 ## About

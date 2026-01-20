@@ -2,6 +2,8 @@
 description: "Learn more about: AMORDEGRC"
 title: "AMORDEGRC function (DAX)"
 author: jajin7
+ms.topic: reference
+
 ---
 
 # AMORDEGRC

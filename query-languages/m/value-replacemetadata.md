@@ -2,6 +2,7 @@
 description: "Learn more about: Value.ReplaceMetadata"
 title: "Value.ReplaceMetadata"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Value.ReplaceMetadata
 

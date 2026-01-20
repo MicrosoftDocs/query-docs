@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.Double"
 title: "BinaryFormat.Double"
+ms.topic: reference
 ms.subservice: m-source
 ---
 # BinaryFormat.Double

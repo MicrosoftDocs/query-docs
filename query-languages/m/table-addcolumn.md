@@ -2,13 +2,19 @@
 description: "Learn more about: Table.AddColumn"
 title: "Table.AddColumn"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.AddColumn
 
 ## Syntax
 
 <pre>
-Table.AddColumn(<b>table</b> as table, <b>newColumnName</b> as text, <b>columnGenerator</b> as function, optional <b>columnType</b> as nullable type) as table
+Table.AddColumn(
+    <b>table</b> as table,
+    <b>newColumnName</b> as text,
+    <b>columnGenerator</b> as function,
+    optional <b>columnType</b> as nullable type
+) as table
 </pre>
   
 ## About

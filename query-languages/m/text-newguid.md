@@ -2,6 +2,7 @@
 description: "Learn more about: Text.NewGuid"
 title: "Text.NewGuid"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.NewGuid
 

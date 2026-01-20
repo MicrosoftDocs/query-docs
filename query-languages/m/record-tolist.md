@@ -2,6 +2,7 @@
 description: "Learn more about: Record.ToList"
 title: "Record.ToList"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Record.ToList
 

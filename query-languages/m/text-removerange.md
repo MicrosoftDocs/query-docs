@@ -2,13 +2,18 @@
 description: "Learn more about: Text.RemoveRange"
 title: "Text.RemoveRange"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.RemoveRange
 
 ## Syntax
 
 <pre>
-Text.RemoveRange(<b>text</b> as nullable text, <b>offset</b> as number, optional <b>count</b> as nullable number) as nullable text
+Text.RemoveRange(
+    <b>text</b> as nullable text,
+    <b>offset</b> as number,
+    optional <b>count</b> as nullable number
+) as nullable text
 </pre>
   
 ## About

@@ -2,6 +2,7 @@
 description: "Learn more about: DateTimeZone.ToUtc"
 title: "DateTimeZone.ToUtc"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # DateTimeZone.ToUtc
 

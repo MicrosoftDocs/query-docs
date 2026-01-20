@@ -2,13 +2,19 @@
 description: "Learn more about: Text.ReplaceRange"
 title: "Text.ReplaceRange"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.ReplaceRange
 
 ## Syntax
 
 <pre>
-Text.ReplaceRange(<b>text</b> as nullable text, <b>offset</b> as number, <b>count</b> as number, <b>newText</b> as text) as nullable text
+Text.ReplaceRange(
+    <b>text</b> as nullable text,
+    <b>offset</b> as number,
+    <b>count</b> as number,
+    <b>newText</b> as text
+) as nullable text
 </pre>
   
 ## About

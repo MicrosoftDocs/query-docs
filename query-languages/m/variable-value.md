@@ -2,6 +2,7 @@
 description: "Learn more about: Variable.Value"
 title: "Variable.Value"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Variable.Value
 
@@ -13,4 +14,4 @@ Variable.Value(<b>identifier</b> as text) as any
 
 ## About
 
-This function is intended for internal use only.
+Returns the value of the specified variable `identifier` defined by the current evaluation environment. If the variable is not defined, an error is raised.

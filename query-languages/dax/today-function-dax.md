@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TODAY"
 title: "TODAY function (DAX)"
+ms.topic: reference
 ---
 # TODAY
 

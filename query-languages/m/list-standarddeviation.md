@@ -2,6 +2,7 @@
 description: "Learn more about: List.StandardDeviation"
 title: "List.StandardDeviation"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.StandardDeviation
 

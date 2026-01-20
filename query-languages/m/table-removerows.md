@@ -2,13 +2,18 @@
 description: "Learn more about: Table.RemoveRows"
 title: "Table.RemoveRows"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.RemoveRows
 
 ## Syntax
 
 <pre>
-Table.RemoveRows(<b>table</b> as table, <b>offset</b> as number, optional <b>count</b> as nullable number) as table
+Table.RemoveRows(
+    <b>table</b> as table,
+    <b>offset</b> as number,
+    optional <b>count</b> as nullable number
+) as table
 </pre>
   
 ## About

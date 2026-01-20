@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: INFO.CALCDEPENDENCY"
 title: "INFO.CALCDEPENDENCY function (DAX)"
+ms.topic: reference
 author: DataZoeMS
 ---
 # INFO.CALCDEPENDENCY
@@ -12,7 +13,7 @@ Returns a table with information about each calculation dependency in the semant
 ## Syntax
 
 ```dax
-INFO.CALCDEPENDENCY([<Restriction name>, <Restriction value>], ...)
+INFO.CALCDEPENDENCY ( [<Restriction name>, <Restriction value>], ... )
 ```
 
 [!INCLUDE[parameters-for-info-dax-functions](includes/parameters-for-info-dax-functions.md)]
@@ -53,16 +54,14 @@ This DAX query returns a table with all of the columns of this DAX function.
 
 ## Example 2 - DAX query with restriction
 
-The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view): 
+The following DAX query can be run in [DAX query view](/power-bi/transform-model/dax-query-view) and limits the results to the Total Sales measure:
 
 ```dax
 EVALUATE
-	INFO.CALCDEPENDENCY("Query", "EVALUATE { [Orders] }")
+	INFO.CALCDEPENDENCY("Query", "EVALUATE { [Total Sales] }")
 ```
 
-This DAX query returns a table showing the objects in the semantic model needed to run this specified DAX query. The restriction name of "query" is used with the value of a DAX query. This DAX query is getting the output of the measure named Orders. 
-
-If a query has double-quotes they can be escaped with another double-quote and you can optionally use a VAR to hold the value.
+If a restriction has double-quotes they can be escaped with another double-quote and you can optionally use a VAR to hold the value.
 
 ```dax
 EVALUATE
@@ -78,3 +77,10 @@ EVALUATE
 			_query
 		)
 ```
+## See also
+
+[INFO.DEPENDENCIES](info-dependencies-function-dax.md)
+[INFO.RELATEDCOLUMNDETAILS](info-relatedcolumndetails-function-dax.md)
+[INFO.TABLES](info-tables-function-dax.md)
+[INFO.COLUMNS](info-columns-function-dax.md)
+[INFO.MEASURES](info-measures-function-dax.md)

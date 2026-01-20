@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: MINX"
 title: "MINX function (DAX)"
+ms.topic: reference
 ---
 # MINX
 

@@ -2,13 +2,18 @@
 description: "Learn more about: Xml.Tables"
 title: "Xml.Tables"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Xml.Tables
 
 ## Syntax
 
 <pre>
-Xml.Tables(<b>contents</b> as any, optional <b>options</b> as nullable record, optional <b>encoding</b> as nullable number) as table
+Xml.Tables(
+    <b>contents</b> as any,
+    optional <b>options</b> as nullable record,
+    optional <b>encoding</b> as nullable number
+) as table
 </pre>
 
 ## About

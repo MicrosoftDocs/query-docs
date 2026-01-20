@@ -2,13 +2,19 @@
 description: "Learn more about: Table.Unpivot"
 title: "Table.Unpivot"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.Unpivot
 
 ## Syntax
 
 <pre>
-Table.Unpivot(<b>table</b> as table, <b>pivotColumns</b> as list, <b>attributeColumn</b> as text, <b>valueColumn</b> as text) as table
+Table.Unpivot(
+    <b>table</b> as table,
+    <b>pivotColumns</b> as list,
+    <b>attributeColumn</b> as text,
+    <b>valueColumn</b> as text
+) as table
 </pre>
   
 ## About

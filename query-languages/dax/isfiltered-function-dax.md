@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISFILTERED"
 title: "ISFILTERED function (DAX)"
+ms.topic: reference
 ---
 # ISFILTERED
 

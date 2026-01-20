@@ -2,13 +2,22 @@
 description: "Learn more about: Table.NestedJoin"
 title: "Table.NestedJoin"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.NestedJoin
 
 ## Syntax
 
 <pre>
-Table.NestedJoin(<b>table1</b> as table, <b>key1</b> as any, <b>table2</b> as any, <b>key2</b> as any, <b>newColumnName</b> as text, optional <b>joinKind</b> as nullable number, optional <b>keyEqualityComparers</b> as nullable list) as table
+Table.NestedJoin(
+    <b>table1</b> as table,
+    <b>key1</b> as any,
+    <b>table2</b> as any,
+    <b>key2</b> as any,
+    <b>newColumnName</b> as text,
+    optional <b>joinKind</b> as nullable number,
+    optional <b>keyEqualityComparers</b> as nullable list
+) as table
 </pre>
 
 ## About

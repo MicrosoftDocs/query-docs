@@ -2,13 +2,19 @@
 description: "Learn more about: Cube.AddAndExpandDimensionColumn"
 title: "Cube.AddAndExpandDimensionColumn"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Cube.AddAndExpandDimensionColumn
 
 ## Syntax
 
 <pre>
-Cube.AddAndExpandDimensionColumn(<b>cube</b> as table, <b>dimensionSelector</b> as any, <b>attributeNames</b> as list, optional <b>newColumnNames</b> as any) as table
+Cube.AddAndExpandDimensionColumn(
+    <b>cube</b> as table,
+    <b>dimensionSelector</b> as any,
+    <b>attributeNames</b> as list,
+    optional <b>newColumnNames</b> as any
+) as table
 </pre>
 
 ## About

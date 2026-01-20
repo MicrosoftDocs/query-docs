@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PI"
 title: "PI function (DAX)"
+ms.topic: reference
 ---
 # PI
 

@@ -1,7 +1,8 @@
 ---
 description: "Learn more about: Power Query M function reference"
 title: "Power Query M function reference"
-ms.date: 03/29/2024
+ms.date: 6/9/2025
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
 # Power Query M function reference

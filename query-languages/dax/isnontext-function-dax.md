@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISNONTEXT"
 title: "ISNONTEXT function (DAX)"
+ms.topic: reference
 ---
 # ISNONTEXT
 
@@ -32,17 +33,14 @@ ISNONTEXT(<value>)
 
 ## Example
 
-The following examples show the behavior of the ISNONTEXT function.
+The following DAX query shows the behavior of the ISNONTEXT function.
 
 ```dax
-//RETURNS: Is Non-Text
-= IF(ISNONTEXT(1), "Is Non-Text", "Is Text")
-
-//RETURNS: Is Non-Text
-= IF(ISNONTEXT(BLANK()), "Is Non-Text", "Is Text")
-
-//RETURNS: Is Text
-= IF(ISNONTEXT(""), "Is Non-Text", "Is Text")
+EVALUATE {
+    IF( ISNONTEXT( 1 ), "Is Non-Text", "Is Text" ), // RETURNS: Is Non-Text
+    IF( ISNONTEXT( BLANK ( ) ), "Is Non-Text", "Is Text" ), // RETURNS: Is Non-Text
+    IF( ISNONTEXT( ""), "Is Non-Text", "Is Text" ) // RETURNS: Is Text
+}
 ```
 
 ## Related content

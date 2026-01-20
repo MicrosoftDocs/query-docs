@@ -2,6 +2,7 @@
 description: "Learn more about: List.ConformToPageReader"
 title: "List.ConformToPageReader"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.ConformToPageReader
 

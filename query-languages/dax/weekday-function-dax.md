@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: WEEKDAY"
 title: "WEEKDAY function (DAX)"
+ms.topic: reference
 ---
 # WEEKDAY
 

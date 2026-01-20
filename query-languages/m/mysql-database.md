@@ -2,13 +2,18 @@
 description: "Learn more about: MySQL.Database"
 title: "MySQL.Database"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # MySQL.Database
 
 ## Syntax
 
 <pre>
-MySQL.Database(<b>server</b> as text, <b>database</b> as text, optional <b>options</b> as nullable record) as table
+MySQL.Database(
+    <b>server</b> as text,
+    <b>database</b> as text,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
 
 ## About

@@ -2,13 +2,20 @@
 description: "Learn more about: GeometryPoint.From"
 title: "GeometryPoint.From"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # GeometryPoint.From
 
 ## Syntax
 
 <pre>
-GeometryPoint.From(<b>x</b> as number, <b>y</b> as number, optional <b>z</b> as nullable number, optional <b>m</b> as nullable number, optional <b>srid</b> as nullable number) as record
+GeometryPoint.From(
+    <b>x</b> as number,
+    <b>y</b> as number,
+    optional <b>z</b> as nullable number,
+    optional <b>m</b> as nullable number,
+    optional <b>srid</b> as nullable number
+) as record
 </pre>
 
 ## About

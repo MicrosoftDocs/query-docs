@@ -1,34 +1,38 @@
 ---
 description: "Learn more about: PARALLELPERIOD"
 title: "PARALLELPERIOD function (DAX)"
+ms.topic: reference
 ---
 # PARALLELPERIOD
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns a table that contains a column of dates that represents a period parallel to the dates in the specified `dates` column, in the current context, with the dates shifted a number of intervals either forward in time or back in time.
+For date column input, returns a table that contains a column of dates that represents a period parallel to the dates in the specified `dates` column, in the current context, with the dates shifted a number of intervals either forward in time or back in time.
+
+For calendar input, returns a table that represents a period parallel to the dates in the current context, based on the calendar, with the dates shifted a number of intervals either forward in time or back in time. The table contains all primary tagged columns and all time related columns.
 
 ## Syntax
 
-```dax
-PARALLELPERIOD(<dates>,<number_of_intervals>,<interval>)
+```
+PARALLELPERIOD(<dates> or <calendar>,<number_of_intervals>,<interval>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates`|A column that contains dates.|
+|`dates or calendar`|A column that contains dates or a calendar reference|
 |`number_of_intervals`|An integer that specifies the number of intervals to add to or subtract from the dates.|
-|`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`.|
+|`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `year`, `quarter`, `month`, `week`. The week value is only applicable when calendar syntax is used.|
 
 ## Return value
 
-A table containing a single column of date values.
+For date column input, a table containing a single column of date values.  
+For calendar input, a table that contains all primary tagged columns and all time related columns.
 
 ## Remarks
 
-- This function takes the current set of dates in the column specified by `dates`, shifts the first date and the last date the specified number of intervals, and then returns all contiguous dates between the two shifted dates. If the interval is a partial range of month, quarter, or year then any partial months in the result are also filled out to complete the entire interval.
+- For date column input, this function takes the current set of dates in the column specified by `dates`, shifts the first date and the last date the specified number of intervals, and then returns all contiguous dates between the two shifted dates. If the interval is a partial range of month, quarter, or year then any partial months in the result are also filled out to complete the entire interval.
 
 - The `dates` argument can be any of the following:
   - A reference to a date/time column,
@@ -52,7 +56,21 @@ A table containing a single column of date values.
 The following sample formula creates a measure that calculates the previous year sales for Internet sales.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PARALLELPERIOD(DateTime[DateKey],-1,year))
+= CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    PARALLELPERIOD ( DateTime[DateKey], -1, YEAR )
+)
+```
+
+## Example for calendar based time intelligence
+
+The following sample formula creates a measure that calculates the previous year sales for Internet sales using fiscal calendar.
+
+```dax
+= CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    PARALLELPERIOD ( FiscalCalendar, -1, YEAR )
+)
 ```
 
 ## Related content

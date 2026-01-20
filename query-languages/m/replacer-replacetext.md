@@ -2,13 +2,18 @@
 description: "Learn more about: Replacer.ReplaceText"
 title: "Replacer.ReplaceText"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Replacer.ReplaceText
 
 ## Syntax
 
 <pre>
-Replacer.ReplaceText(<b>text</b> as nullable text, <b>old</b> as text, <b>new</b> as text) as nullable text
+Replacer.ReplaceText(
+    <b>text</b> as nullable text,
+    <b>old</b> as text,
+    <b>new</b> as text
+) as nullable text
 </pre>
   
 ## About

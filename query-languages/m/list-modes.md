@@ -2,6 +2,7 @@
 description: "Learn more about: List.Modes"
 title: "List.Modes"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.Modes
 

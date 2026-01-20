@@ -2,13 +2,20 @@
 description: "Learn more about: Table.UnpivotOtherColumns"
 title: "Table.UnpivotOtherColumns"
 ms.subservice: m-source
+ms.topic: reference
 ---
+
 # Table.UnpivotOtherColumns
 
 ## Syntax
 
 <pre>
-Table.UnpivotOtherColumns(<b>table</b> as table, <b>pivotColumns</b> as list, <b>attributeColumn</b> as text, <b>valueColumn</b> as text) as table
+Table.UnpivotOtherColumns(
+    <b>table</b> as table,
+    <b>pivotColumns</b> as list,
+    <b>attributeColumn</b> as text,
+    <b>valueColumn</b> as text
+) as table
 </pre>
   
 ## About

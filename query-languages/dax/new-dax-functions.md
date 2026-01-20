@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: New DAX functions"
 title: "New DAX functions"
+ms.topic: whats-new
 ---
 # New DAX functions
 
@@ -15,6 +16,15 @@ While functions and functionality are being updated all the time, only those upd
 
 |Function  |Month  | Description |
 |---------|---------|---------|
+|[TOTALWTD](totalwtd-function-dax.md)|September, 2025|Calculates the running total of a measure to the current week in the filter context.|
+|[CLOSINGBALANCEWEEK](closingbalanceweek-function-dax.md)|September, 2025|Returns the closing balance for the week in the current context.|
+|[ENDOFWEEK](endofweek-function-dax.md)|September, 2025|Returns the last date of the current week in the calendar.|
+|[NEXTWEEK](nextweek-function-dax.md)|September, 2025|Returns a table that contains a column of dates for the next week.|
+|[OPENINGBALANCEWEEK](openingbalanceweek-function-dax.md)|September, 2025|Returns the opening balance for the week in the current context.|
+|[PREVIOUSWEEK](previousweek-function-dax.md)|September, 2025|Returns a table that contains a column of dates for the previous week.|
+|[STARTOFWEEK](startofweek-function-dax.md)|September, 2025|Returns the first date of the current week in the calendar.|
+|[LOOKUPWITHTOTALS](lookupwithtotals-function-dax.md)|June, 2025| Used in visual calculations only. Look up the value when filters are applied. Filters not specified would not be inferred.|
+|[LOOKUP](lookup-function-dax.md)|June, 2025| Used in visual calculations only. Look up the value when filters are applied. |
 |[FIRST](first-function-dax.md)|January, 2024|Used in visual calculations only. Retrieves a value in the visual matrix from the first row of an axis.|
 |[LAST](last-function-dax.md)|January, 2024|Used in visual calculations only. Retrieves a value in the visual matrix from the last row of an axis.|
 |[NEXT](next-function-dax.md)|January, 2024|Used in visual calculations only. Retrieves a value in the next row of an axis in the visual matrix.|

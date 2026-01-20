@@ -1,28 +1,31 @@
 ---
 description: "Learn more about: ENDOFMONTH"
 title: "ENDOFMONTH function (DAX)"
+ms.topic: reference
 ---
 # ENDOFMONTH
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns the last date of the month in the current context for the specified column of dates.
+For date column input, returns the last date of the month in the current context for the specified column of dates.  
+For calendar input, returns a table for the last date of the month, in the current context. The table contains all primary tagged columns and all time related columns.
 
 ## Syntax
 
-```dax
-ENDOFMONTH(<dates>)
+```
+ENDOFMONTH(<dates> or <calendar>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates`|A column that contains dates.|
+|`dates or calendar`|A column that contains dates or a calendar reference|
 
 ## Return value
 
-A table containing a single column and single row with a date value.
+For date column input, a table containing a single column and single row with a date value.  
+For calendar input, a table with a single row that contains all primary tagged columns and all time related columns.
 
 ## Remarks
 
@@ -43,10 +46,19 @@ The following sample formula creates a measure that returns the end of the month
 = ENDOFMONTH(DateTime[DateKey])
 ```
 
+## Example for calendar based time intelligence
+
+The following sample formula returns tagged primary columns that corresponds to the end of the month, for the fiscal calendar.
+
+```dax
+= ENDOFMONTH(FiscalCalendar)
+```
+
 ## Related content
 
 [Date and time functions](date-and-time-functions-dax.md)
 [Time intelligence functions](time-intelligence-functions-dax.md)
 [ENDOFYEAR function](endofyear-function-dax.md)
 [ENDOFQUARTER function](endofquarter-function-dax.md)
+[ENDOFWEEK function](endofweek-function-dax.md)
 

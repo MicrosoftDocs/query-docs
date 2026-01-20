@@ -1,28 +1,31 @@
 ---
 description: "Learn more about: DATESQTD"
 title: "DATESQTD function (DAX)"
+ms.topic: reference
 ---
 # DATESQTD
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns a table that contains a column of the dates for the quarter to date, in the current context.
+For date column input, returns a table that contains a column of the dates for quarter to date, in the current context.    
+For calendar input, returns a table for quarter to date, in the current context. The table contains all primary tagged columns and all time related columns.
 
 ## Syntax
 
-```dax
-DATESQTD(<dates>)
+```
+DATESQTD(<dates> or <calendar>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates`|A column that contains dates.|
+|`dates or calendar`|A column that contains dates or a calendar reference.|
 
 ## Return value
 
-A table containing a single column of date values.
+For date column input, a table containing a single column of date values.
+For calendar input, a table that contains all primary tagged columns and all time related columns.
 
 ## Remarks
 
@@ -44,12 +47,27 @@ The `dates` argument can be any of the following:
 The following sample formula creates a measure that calculates the 'Quarterly Running Total' of Internet Sales.
 
 ```dax
-= CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESQTD(DateTime[DateKey]))
+= CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    DATESQTD ( DateTime[DateKey] )
+)
+```
+
+## Example for calendar based time intelligence
+
+The following sample formula creates a measure that calculates the 'Quarterly Running Total' for Internet sales uing fiscal calendar.
+
+```dax
+= CALCULATE (
+    SUM ( InternetSales_USD[SalesAmount_USD] ),
+    DATESQTD ( FiscalCalendar )
+)
 ```
 
 ## Related content
 
 [Time intelligence functions](time-intelligence-functions-dax.md)
 [Date and time functions](date-and-time-functions-dax.md)
-[DATESYTD function](datesytd-function-dax.md)
+[DATESWTD function](dateswtd-function-dax.md)
 [DATESMTD function](datesmtd-function-dax.md)
+[DATESYTD function](datesytd-function-dax.md)

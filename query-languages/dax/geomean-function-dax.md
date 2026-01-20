@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: GEOMEAN"
 title: "GEOMEAN function (DAX)"
+ms.topic: reference
 ---
 # GEOMEAN
 

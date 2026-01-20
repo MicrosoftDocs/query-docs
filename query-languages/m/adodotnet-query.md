@@ -1,14 +1,21 @@
 ---
 description: "Learn more about: AdoDotNet.Query"
 title: "AdoDotNet.Query"
+ms.topic: reference
 ms.subservice: m-source
+ms.custom: sfi-ropc-nochange
 ---
 # AdoDotNet.Query
 
 ## Syntax
 
 <pre>
-AdoDotNet.Query(<b>providerName</b> as text, <b>connectionString</b> as any, <b>query</b> as text, optional <b>options</b> as nullable record) as table
+AdoDotNet.Query(
+    <b>providerName</b> as text,
+    <b>connectionString</b> as any,
+    <b>query</b> as text,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
 
 ## About

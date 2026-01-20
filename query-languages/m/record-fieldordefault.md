@@ -2,13 +2,18 @@
 description: "Learn more about: Record.FieldOrDefault"
 title: "Record.FieldOrDefault"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Record.FieldOrDefault
 
 ## Syntax
 
 <pre>
-Record.FieldOrDefault(<b>record</b> as nullable record, <b>field</b> as text, optional <b>defaultValue</b> as any) as any
+Record.FieldOrDefault(
+    <b>record</b> as nullable record,
+    <b>field</b> as text,
+    optional <b>defaultValue</b> as any
+) as any
 </pre>
 
 ## About

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CLOSINGBALANCEYEAR"
 title: "CLOSINGBALANCEYEAR function (DAX)"
+ms.topic: reference
 ---
 # CLOSINGBALANCEYEAR
 
@@ -10,8 +11,8 @@ Evaluates the `expression` at the last date of the year in the current context.
 
 ## Syntax
 
-```dax
-CLOSINGBALANCEYEAR(<expression>,<dates>[,<filter>][,<year_end_date>])
+```
+CLOSINGBALANCEYEAR(<expression>,<dates> or <calendar>[,<filter>][,<year_end_date>])
 ```
 
 ### Parameters
@@ -19,9 +20,9 @@ CLOSINGBALANCEYEAR(<expression>,<dates>[,<filter>][,<year_end_date>])
 |Term|Definition|
 |--------|--------------|
 |`expression`|An expression that returns a scalar value.|
-|`dates`|A column that contains dates.|
+|`dates or calendar`|A column that contains dates or a calendar reference.|
 |`filter`|(optional) An expression that specifies a filter to apply to the current context.|
-|`year_end_date`|(optional) A literal string with a date that defines the year-end date. The default is December 31.|
+|`year_end_date`|(optional) A literal string with a date that defines the year-end date. The default is December 31. This parameter is permitted only when the date column syntax is used.|
 
 ## Return value
 
@@ -45,6 +46,8 @@ A scalar value that represents the `expression` evaluated at the last date of th
     > [!NOTE]
     > The `filter` expression has restrictions described in [CALCULATE function](calculate-function-dax.md).
 
+- The `year_end_date` parameter is permitted only when the date column syntax is used.
+
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example
@@ -52,12 +55,32 @@ A scalar value that represents the `expression` evaluated at the last date of th
 The following sample formula creates a measure that calculates the 'Year End Inventory Value' of the product inventory.
 
 ```dax
-= CLOSINGBALANCEYEAR(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])
+= CLOSINGBALANCEYEAR (
+    SUMX (
+        ProductInventory,
+        ProductInventory[UnitCost] * ProductInventory[UnitsBalance]
+    ),
+    DateTime[DateKey]
+)
+```
+
+## Example for calendar based time intelligence
+
+The following sample formula creates a measure that calculates the 'Year End Inventory Value' of the product inventory using a fiscal calendar.
+
+```dax
+= CLOSINGBALANCEYEAR (
+    SUMX (
+        ProductInventory,
+        ProductInventory[UnitCost] * ProductInventory[UnitsBalance]
+    ),
+    FiscalCalendar
+)
 ```
 
 ## Related content
 
 [Time intelligence functions](time-intelligence-functions-dax.md)
-[CLOSINGBALANCEYEAR function](closingbalanceyear-function-dax.md)
 [CLOSINGBALANCEQUARTER function](closingbalancequarter-function-dax.md)
 [CLOSINGBALANCEMONTH function](closingbalancemonth-function-dax.md)
+[CLOSINGBALANCEWEEK function](closingbalanceweek-function-dax.md)

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: AnalysisServices.Database"
 title: "AnalysisServices.Database"
+ms.topic: reference
 ms.subservice: m-source
 ---
 # AnalysisServices.Database
@@ -8,7 +9,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-AnalysisServices.Database(<b>server</b> as text, <b>database</b> as text, optional <b>options</b> as nullable record) as table
+AnalysisServices.Database(
+    <b>server</b> as text,
+    <b>database</b> as text,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
 
 ## About

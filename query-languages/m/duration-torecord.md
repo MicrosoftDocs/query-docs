@@ -2,6 +2,7 @@
 description: "Learn more about: Duration.ToRecord"
 title: "Duration.ToRecord"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Duration.ToRecord
 

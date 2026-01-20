@@ -2,6 +2,7 @@
 description: "Learn more about: ACCRINTM"
 title: "ACCRINTM function (DAX) "
 author: jajin7
+ms.topic: reference
 ---
 
 # ACCRINTM

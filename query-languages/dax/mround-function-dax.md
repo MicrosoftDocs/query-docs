@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: MROUND"
 title: "MROUND function (DAX)"
+ms.topic: reference
 ---
 # MROUND
 

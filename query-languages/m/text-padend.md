@@ -2,13 +2,18 @@
 description: "Learn more about: Text.PadEnd"
 title: "Text.PadEnd"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.PadEnd
 
 ## Syntax
 
 <pre>
-Text.PadEnd(<b>text</b> as nullable text, <b>count</b> as number, optional <b>character</b> as nullable text) as nullable text
+Text.PadEnd(
+    <b>text</b> as nullable text,
+    <b>count</b> as number,
+    optional <b>character</b> as nullable text
+) as nullable text
 </pre>
   
 ## About

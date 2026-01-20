@@ -2,13 +2,18 @@
 description: "Learn more about: DateTime.ToText"
 title: "DateTime.ToText"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # DateTime.ToText
 
 ## Syntax
 
 <pre>
-DateTime.ToText(<b>dateTime</b> as nullable datetime, optional <b>options</b> as any, optional <b>culture</b> as nullable text) as nullable text
+DateTime.ToText(
+    <b>dateTime</b> as nullable datetime,
+    optional <b>options</b> as any,
+    optional <b>culture</b> as nullable text
+) as nullable text
 </pre>
 
 ## About

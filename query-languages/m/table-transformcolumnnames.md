@@ -2,13 +2,18 @@
 description: "Learn more about: Table.TransformColumnNames"
 title: "Table.TransformColumnNames"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.TransformColumnNames
 
 ## Syntax
 
 <pre>
-Table.TransformColumnNames(<b>table</b> as table, <b>nameGenerator</b> as function, optional <b>options</b> as nullable record) as table
+Table.TransformColumnNames(
+    <b>table</b> as table,
+    <b>nameGenerator</b> as function,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
   
 ## About

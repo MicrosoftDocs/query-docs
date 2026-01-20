@@ -2,13 +2,18 @@
 description: "Learn more about: Text.BeforeDelimiter"
 title: "Text.BeforeDelimiter"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.BeforeDelimiter
 
 ## Syntax
 
 <pre>
-Text.BeforeDelimiter(<b>text</b> as nullable text, <b>delimiter</b> as text, optional <b>index</b> as any) as any
+Text.BeforeDelimiter(
+    <b>text</b> as nullable text,
+    <b>delimiter</b> as text,
+    optional <b>index</b> as any
+) as any
 </pre>
 
 ## About

@@ -2,13 +2,18 @@
 description: "Learn more about: Table.Max"
 title: "Table.Max"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.Max
 
 ## Syntax
 
 <pre> 
-Table.Max(<b>table</b> as table, <b>comparisonCriteria</b> as any, optional <b>default</b> as any) as any
+Table.Max(
+    <b>table</b> as table,
+    <b>comparisonCriteria</b> as any,
+    optional <b>default</b> as any
+) as any
 </pre>
   
 ## About

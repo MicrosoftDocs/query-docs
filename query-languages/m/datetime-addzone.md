@@ -2,13 +2,18 @@
 description: "Learn more about: DateTime.AddZone"
 title: "DateTime.AddZone"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # DateTime.AddZone
 
 ## Syntax
 
 <pre>
-DateTime.AddZone(<b>dateTime</b> as nullable datetime, <b>timezoneHours</b> as number, optional <b>timezoneMinutes</b> as nullable number) as nullable datetimezone
+DateTime.AddZone(
+    <b>dateTime</b> as nullable datetime,
+    <b>timezoneHours</b> as number,
+    optional <b>timezoneMinutes</b> as nullable number
+) as nullable datetimezone
 </pre>
   
 ## About

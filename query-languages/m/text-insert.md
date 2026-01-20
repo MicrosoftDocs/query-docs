@@ -2,13 +2,18 @@
 description: "Learn more about: Text.Insert"
 title: "Text.Insert"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.Insert
 
 ## Syntax
 
 <pre>
-Text.Insert(<b>text</b> as nullable text, <b>offset</b> as number, <b>newText</b> as text) as nullable text
+Text.Insert(
+    <b>text</b> as nullable text,
+    <b>offset</b> as number,
+    <b>newText</b> as text
+) as nullable text
 </pre>
   
 ## About

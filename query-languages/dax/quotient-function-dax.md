@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: QUOTIENT"
 title: "QUOTIENT function (DAX)"
+ms.topic: reference
 ---
 # QUOTIENT
 

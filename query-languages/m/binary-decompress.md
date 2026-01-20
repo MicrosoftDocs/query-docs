@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Binary.Decompress"
 title: "Binary.Decompress"
+ms.topic: reference
 ms.subservice: m-source
 ---
 # Binary.Decompress

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CLOSINGBALANCEQUARTER"
 title: "CLOSINGBALANCEQUARTER function (DAX)"
+ms.topic: reference
 ---
 # CLOSINGBALANCEQUARTER
 
@@ -10,8 +11,8 @@ Evaluates the `expression` at the last date of the quarter in the current contex
 
 ## Syntax
 
-```dax
-CLOSINGBALANCEQUARTER(<expression>,<dates>[,<filter>])
+```
+CLOSINGBALANCEQUARTER(<expression>,<dates> or <calendar>[,<filter>])
 ```
 
 ### Parameters
@@ -19,7 +20,7 @@ CLOSINGBALANCEQUARTER(<expression>,<dates>[,<filter>])
 |Term|Definition|
 |--------|--------------|
 |`expression`|An expression that returns a scalar value.|
-|`dates`|A column that contains dates.|
+|`dates or calendar`|A column that contains dates or a calendar reference.|
 |`filter`|(optional) An expression that specifies a filter to apply to the current context.|
 
 ## Return value
@@ -49,7 +50,27 @@ A scalar value that represents the `expression` evaluated at the last date of th
 The following sample formula creates a measure that calculates the 'Quarter End Inventory Value' of the product inventory.
 
 ```dax
-= CLOSINGBALANCEQUARTER(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])
+= CLOSINGBALANCEQUARTER (
+    SUMX (
+        ProductInventory,
+        ProductInventory[UnitCost] * ProductInventory[UnitsBalance]
+    ),
+    DateTime[DateKey]
+)
+```
+
+## Example for calendar based time intelligence
+
+The following sample formula creates a measure that calculates the 'Quarter End Inventory Value' of the product inventory using a fiscal calendar.
+
+```dax
+= CLOSINGBALANCEQUARTER (
+    SUMX (
+        ProductInventory,
+        ProductInventory[UnitCost] * ProductInventory[UnitsBalance]
+    ),
+    FiscalCalendar
+)
 ```
 
 ## Related content
@@ -57,3 +78,4 @@ The following sample formula creates a measure that calculates the 'Quarter End 
 [Time intelligence functions](time-intelligence-functions-dax.md)
 [CLOSINGBALANCEYEAR function](closingbalanceyear-function-dax.md)
 [CLOSINGBALANCEMONTH function](closingbalancemonth-function-dax.md)
+[CLOSINGBALANCEWEEK function](closingbalanceweek-function-dax.md)

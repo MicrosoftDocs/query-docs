@@ -1,12 +1,13 @@
 ---
 description: "Learn more about: SEARCH"
 title: "SEARCH function (DAX)"
+ms.topic: reference
 ---
 # SEARCH
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Returns the number of the character at which a specific character or text string is first found, reading left to right. Search is case-insensitive and accent sensitive.
+Returns the number of the character at which a specific character or text string is first found, reading left to right. Search is case-insensitive, kanatype-insensitive, width-insensitive, and accent sensitive.
 
 ## Syntax
 
@@ -30,6 +31,8 @@ The number of the starting position of the first text string from the first char
 ## Remarks
 
 - The search function is case insensitive. Searching for "N" will find the first occurrence of 'N' or 'n'.
+
+- The search function is kanatype-insensitive, width-insensitive. Searching for "か" will find the first occurrence of 「か」 (hiragana), 「カ」 (katakana), or 「ｶ」 (half-width katakana).
 
 - The search function is accent sensitive. Searching for "á" will find the first occurrence of 'á' but no occurrences of 'a', 'à', or the capitalized versions 'A', 'Á'.
 

@@ -2,13 +2,18 @@
 description: "Learn more about: Value.Multiply"
 title: "Value.Multiply"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Value.Multiply
 
 ## Syntax
 
 <pre>
-Value.Multiply(<b>value1</b> as any, <b>value2</b> as any, optional <b>precision</b> as nullable number) as any
+Value.Multiply(
+    <b>value1</b> as any,
+    <b>value2</b> as any,
+    optional <b>precision</b> as nullable number
+) as any
 </pre>
 
 ## About

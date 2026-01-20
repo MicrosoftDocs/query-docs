@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: FIND"
 title: "FIND function (DAX)"
+ms.topic: reference
 ---
 # FIND
 

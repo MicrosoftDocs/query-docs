@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SIN"
 title: "SIN function (DAX)"
+ms.topic: reference
 ---
 # SIN
 

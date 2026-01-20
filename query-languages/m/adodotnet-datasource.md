@@ -1,14 +1,20 @@
 ---
 description: "Learn more about: AdoDotNet.DataSource"
 title: "AdoDotNet.DataSource"
+ms.topic: reference
 ms.subservice: m-source
+ms.custom: sfi-ropc-nochange
 ---
 # AdoDotNet.DataSource
 
 ## Syntax
 
 <pre>
-AdoDotNet.DataSource(<b>providerName</b> as text, <b>connectionString</b> as any, optional <b>options</b> as nullable record) as table
+AdoDotNet.DataSource(
+    <b>providerName</b> as text,
+    <b>connectionString</b> as any,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
 
 ## About

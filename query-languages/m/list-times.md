@@ -2,13 +2,18 @@
 description: "Learn more about: List.Times"
 title: "List.Times"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.Times
 
 ## Syntax
 
 <pre>
-List.Times(<b>start</b> as time, <b>count</b> as number, <b>step</b> as duration) as list
+List.Times(
+    <b>start</b> as time,
+    <b>count</b> as number,
+    <b>step</b> as duration
+) as list
 </pre>
 
 ## About

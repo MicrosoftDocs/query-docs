@@ -1,1 +1,5 @@
+---
+ms.topic: include
+---
+
 _Examples in this article can be used with the sample Adventure Works DW 2020 Power BI Desktop model. To get the model, see [DAX sample model](https://aka.ms/dax-docs-samples)._

@@ -2,13 +2,20 @@
 description: "Learn more about: Text.BetweenDelimiters"
 title: "Text.BetweenDelimiters"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.BetweenDelimiters
 
 ## Syntax
 
 <pre>
-Text.BetweenDelimiters(<b>text</b> as nullable text, <b>startDelimiter</b> as text, <b>endDelimiter</b> as text, optional <b>startIndex</b> as any, optional <b>endIndex</b> as any) as any
+Text.BetweenDelimiters(
+    <b>text</b> as nullable text,
+    <b>startDelimiter</b> as text,
+    <b>endDelimiter</b> as text,
+    optional <b>startIndex</b> as any,
+    optional <b>endIndex</b> as any
+) as any
 </pre>
 
 ## About

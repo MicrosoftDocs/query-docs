@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: STDEVX.P"
 title: "STDEVX.P function (DAX)"
+ms.topic: reference
 ---
 # STDEVX.P
 

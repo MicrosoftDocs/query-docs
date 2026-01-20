@@ -1,7 +1,8 @@
 ---
 description: "Learn more about: List functions"
 title: "List functions"
-ms.date: 1/28/2025
+ms.date: 8/13/2025
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
 # List functions
@@ -29,7 +30,7 @@ These functions create and manipulate list values.
 |[List.InsertRange](list-insertrange.md)|Inserts values into a list at the given index.|
 |[List.IsDistinct](list-isdistinct.md)|Indicates whether there are duplicates in the list.|
 |[List.Last](list-last.md)|Returns the last value of the list or the specified default if empty.|
-|[List.LastN](list-lastn.md)|Returns the last value in the list. Can optionally specify how many values to return or a qualifying condition.|
+|[List.LastN](list-lastn.md)|Returns a list of the last item or items in the specified list. Can optionally specify how many values to return or a qualifying condition.|
 |[List.MatchesAll](list-matchesall.md)|Returns `true` if the condition function is satisfied by all values in the list.|
 |[List.MatchesAny](list-matchesany.md)|Returns `true` if the condition function is satisfied by any value.|
 |[List.Positions](list-positions.md)|Returns a list of offsets for the input.|
@@ -100,10 +101,10 @@ Comparable data types include:
 |Name|Description|
 |------------|---------------|
 |[List.Max](list-max.md)|Returns the maximum value or the default value for an empty list.|
-|[List.MaxN](list-maxn.md)|Returns the maximum value(s) in the list. The number of values to return or a filtering condition must be specified.|
+|[List.MaxN](list-maxn.md)|Returns the maximum value(s) in the list. The number of values to return or a filter condition must be specified.|
 |[List.Median](list-median.md)|Returns the median value in the list.|
 |[List.Min](list-min.md)|Returns the minimum value or the default value for an empty list.|
-|[List.MinN](list-minn.md)|Returns the minimum value(s) in the list. The number of values to return or a filtering condition may be specified.|
+|[List.MinN](list-minn.md)|Returns the minimum value(s) in the list. The number of values to return or a filter condition may be specified.|
 |[List.Sort](list-sort.md)|Sorts a list of data according to the criteria specified.|
 |[List.Percentile](list-percentile.md)|Returns one or more sample percentiles corresponding to the given probabilities.|
 
@@ -165,17 +166,25 @@ These functions generate list of values.
 
 ### Equation criteria
 
-Equation criteria for list values can be specified as either:
+In many of the list functions, the `equationCriteria` parameter indicates how equality is determined between list elements. Equation criteria for list values can be specified as either:
 
 - A function value that is either:
   - A key selector that determines the value in the list to apply the equality criteria.
-  - A comparer function that is used to specify the kind of comparison to apply. Built in comparer functions can be specified&mdash;go to [Comparer functions](comparer-functions.md).
+  - A comparer function that is used to specify the kind of comparison to apply. Built-in comparer functions can be specified&mdash;go to [Comparer functions](comparer-functions.md).
 - A list value that has:
   - Exactly two items.
   - The first element is the key selector as specified above.
   - The second element is a comparer as specified above.
 
-For more information and examples, go to [List.Distinct](list-distinct.md).
+In most list functions, the comparer function used in the `equationCriteria` parameter must be one of the built-in [comparer functions](comparer-functions.md). In those list functions, using a custom comparer results in an error. However, the following list functions allow you to use a custom comparer:
+
+- [List.Contains](list-contains.md)
+- [List.ContainsAll](list-containsall.md)
+- [List.ContainsAny](list-containsany.md)
+- [List.PositionOf](list-positionof.md)
+- [List.PositionOfAny](list-positionofany.md)
+
+For more information and examples, go to [List.Distinct](list-distinct.md) and [List.PositionOf](list-positionof.md).
 
 ### Comparison criteria
 

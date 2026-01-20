@@ -2,13 +2,19 @@
 description: "Learn more about: List.Min"
 title: "List.Min"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.Min
 
 ## Syntax
 
 <pre>
-List.Min(<b>list</b> as list, optional <b>default</b> as any, optional <b>comparisonCriteria</b> as any, optional <b>includeNulls</b> as nullable logical) as any
+List.Min(
+    <b>list</b> as list,
+    optional <b>default</b> as any,
+    optional <b>comparisonCriteria</b> as any,
+    optional <b>includeNulls</b> as nullable logical
+) as any
 </pre>
   
 ## About

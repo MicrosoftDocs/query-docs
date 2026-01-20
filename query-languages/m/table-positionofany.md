@@ -2,13 +2,19 @@
 description: "Learn more about: Table.PositionOfAny"
 title: "Table.PositionOfAny"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.PositionOfAny
 
 ## Syntax
 
 <pre> 
-Table.PositionOfAny(<b>table</b> as table, <b>rows</b> as list, optional <b>occurrence</b> as nullable number, optional <b>equationCriteria</b> as any) as any
+Table.PositionOfAny(
+    <b>table</b> as table,
+    <b>rows</b> as list,
+    optional <b>occurrence</b> as nullable number,
+    optional <b>equationCriteria</b> as any
+) as any
 </pre>
   
 ## About
@@ -17,8 +23,8 @@ Returns the row(s) position(s) from the `table` of the first occurrence of the l
 
 * `table`: The input table.
 * `rows`: The list of rows in the table to find the positions of.
-* `occurrence`: _[Optional]_ Specifies which occurrences of the row to return.
-* `equationCriteria: _[Optional]_ Controls the comparison between the table rows.
+* `occurrence`: (Optional) Specifies which occurrences of the row to return.
+* `equationCriteria`: (Optional) Controls the comparison between the table rows.
 
 ## Example 1
 
@@ -73,4 +79,5 @@ Table.PositionOfAny(
 
 ## Related content
 
-[Equation criteria](table-functions.md#equation-criteria)
+* [Occurrence](occurrence-type.md)
+* [Equation criteria](table-functions.md#equation-criteria)

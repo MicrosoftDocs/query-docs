@@ -1,7 +1,8 @@
 ---
 description: "Learn more about: Value functions"
 title: "Value functions"
-ms.date: 4/24/2024
+ms.date: 9/3/2025
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
 # Value functions
@@ -51,7 +52,8 @@ These functions evaluate and perform operations on values.
 |[Value.Firewall](value-firewall.md) | This function is intended for internal use only.|
 |[Value.ViewError](value-viewerror.md) | This function is intended for internal use only.|
 |[Value.ViewFunction](value-viewfunction.md) | This function is intended for internal use only.|
-|[Variable.Value](variable-value.md) | This function is intended for internal use only.|
+|[Variable.Value](variable-value.md) | Returns the value of the specified variable.|
+|[Variable.ValueOrDefault](variable-valueordefault.md) | Returns the value of the specified variable or the default value if the variable is not defined.|
 
 ## Metadata
 

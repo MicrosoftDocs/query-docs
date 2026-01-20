@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Statements"
 title: "Statements(DAX)"
+ms.topic: concept-article
 ---
 # Statements
 

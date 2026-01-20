@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: NETWORKDAYS"
 title: "NETWORKDAYS function (DAX)"
+ms.topic: reference
 ---
 
 # NETWORKDAYS

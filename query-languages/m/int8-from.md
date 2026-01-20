@@ -2,13 +2,18 @@
 description: "Learn more about: Int8.From"
 title: "Int8.From"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Int8.From
 
 ## Syntax
 
 <pre>
-Int8.From(<b>value</b> as any, optional <b>culture</b> as nullable text, optional <b>roundingMode</b> as nullable number) as nullable number
+Int8.From(
+    <b>value</b> as any,
+    optional <b>culture</b> as nullable text,
+    optional <b>roundingMode</b> as nullable number
+) as nullable number
 </pre>
 
 ## About

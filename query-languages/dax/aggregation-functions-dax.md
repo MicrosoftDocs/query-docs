@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Aggregation functions"
 title: "Aggregation functions (DAX)"
+ms.topic: concept-article
 ---
 # Aggregation functions
 
@@ -14,8 +15,8 @@ Aggregation functions calculate a (scalar) value such as count, sum, average, mi
 |[AVERAGE](average-function-dax.md)     |   Returns the average (arithmetic mean) of all the numbers in a column.       |
 |[AVERAGEA](averagea-function-dax.md)     | Returns the average (arithmetic mean) of the values in a column.         |
 |[AVERAGEX](averagex-function-dax.md)    | Calculates the average (arithmetic mean) of a set of expressions evaluated over a table.          |
-|[COUNT](count-function-dax.md)      |  Counts the number of rows in the specified column that contain non-blank values.       |
-|[COUNTA](counta-function-dax.md)     |  Counts the number of rows in the specified column that contain non-blank values.       |
+|[COUNT](count-function-dax.md)      |  Counts the number of rows in the specified column that contain non-blank values. Does not support Boolean values.      |
+|[COUNTA](counta-function-dax.md)     |  Counts the number of rows in the specified column that contain non-blank values. Supports Boolean values.      |
 |[COUNTAX](countax-function-dax.md)     |  Counts non-blank results when evaluating the result of an expression over a table.        |
 |[COUNTBLANK](countblank-function-dax.md)     |  Counts the number of blank cells in a column.        |
 |[COUNTROWS](countrows-function-dax.md)      |  Counts the number of rows in the specified table, or in a table defined by an expression.        |

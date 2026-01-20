@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Binary.Range"
 title: "Binary.Range"
+ms.topic: reference
 ms.subservice: m-source
 ---
 # Binary.Range
@@ -8,7 +9,11 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-Binary.Range(<b>binary</b> as binary, <b>offset</b> as number, optional <b>count</b> as nullable number) as binary
+Binary.Range(
+    <b>binary</b> as binary,
+    <b>offset</b> as number,
+    optional <b>count</b> as nullable number
+) as binary
 </pre>
 
 ## About

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISSELECTEDMEASURE"
 title: "ISSELECTEDMEASURE function (DAX)"
+ms.topic: reference
 ---
 # ISSELECTEDMEASURE
 

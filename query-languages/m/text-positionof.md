@@ -2,13 +2,19 @@
 description: "Learn more about: Text.PositionOf"
 title: "Text.PositionOf"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.PositionOf
 
 ## Syntax
 
 <pre>
-Text.PositionOf(<b>text</b> as text, <b>substring</b> as text, optional <b>occurrence</b> as nullable number, optional <b>comparer</b> as nullable function) as any
+Text.PositionOf(
+    <b>text</b> as text,
+    <b>substring</b> as text,
+    optional <b>occurrence</b> as nullable number,
+    optional <b>comparer</b> as nullable function
+) as any
 </pre>
 
 ## About

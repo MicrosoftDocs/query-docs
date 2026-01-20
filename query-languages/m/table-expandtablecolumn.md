@@ -2,13 +2,19 @@
 description: "Learn more about: Table.ExpandTableColumn"
 title: "Table.ExpandTableColumn"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.ExpandTableColumn
 
 ## Syntax
 
 <pre>
-Table.ExpandTableColumn(<b>table</b> as table, <b>column</b> as text, <b>columnNames</b> as list, optional <b>newColumnNames</b> as nullable list) as table
+Table.ExpandTableColumn(
+    <b>table</b> as table,
+    <b>column</b> as text,
+    <b>columnNames</b> as list,
+    optional <b>newColumnNames</b> as nullable list
+) as table
 </pre>
   
 ## About

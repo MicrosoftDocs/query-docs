@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.Choice"
 title: "BinaryFormat.Choice"
+ms.topic: reference
 ms.subservice: m-source
 ---
 # BinaryFormat.Choice
@@ -8,7 +9,12 @@ ms.subservice: m-source
 ## Syntax
 
 <pre>
-BinaryFormat.Choice(<b>binaryFormat</b> as function, <b>chooseFunction</b> as function, optional <b>type</b> as nullable type, optional <b>combineFunction</b> as nullable function) as function
+BinaryFormat.Choice(
+    <b>binaryFormat</b> as function,
+    <b>chooseFunction</b> as function,
+    optional <b>type</b> as nullable type,
+    optional <b>combineFunction</b> as nullable function
+) as function
 </pre>
 
 ## About

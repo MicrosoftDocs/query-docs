@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TOTALYTD"
 title: "TOTALYTD function (DAX)"
+ms.topic: reference
 ---
 # TOTALYTD
 
@@ -10,8 +11,8 @@ Evaluates the year-to-date value of the `expression` in the current context.
 
 ## Syntax
 
-```dax
-TOTALYTD(<expression>,<dates>[,<filter>][,<year_end_date>])
+```
+TOTALYTD(<expression>,<dates> or <calendar>[,<filter>][,<year_end_date>])
 ```
 
 ### Parameters
@@ -19,13 +20,13 @@ TOTALYTD(<expression>,<dates>[,<filter>][,<year_end_date>])
 |Parameter|Definition|
 |-------------|--------------|
 |`expression`|An expression that returns a scalar value.|
-|`dates`|A column that contains dates.|
+|`dates or calendar`|A column that contains dates or a calendar reference|
 |`filter`|(optional) An expression that specifies a filter to apply to the current context.|
 |`year_end_date`|(optional) A literal string with a date that defines the year-end date. The default is December 31.|
 
 ## Return value
 
-A scalar value that represents the `expression` evaluated for the current year-to-date `dates`.
+A scalar value that represents the `expression` evaluated for the current year-to-date `dates` or `calendar`.
 
 ## Remarks
 
@@ -46,6 +47,8 @@ A scalar value that represents the `expression` evaluated for the current year-t
 
     In this example, year_end_date can be specified as "6/30", "Jun 30", "30 June", or any string that resolves to a month/day. However, it is recommended you specify year_end_date using "month/day" (as shown) to ensure the string resolves to a date.
 
+- The `year_end_date` parameter must not be specified when a calendar is used.
+
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example
@@ -56,6 +59,14 @@ The following sample formula creates a measure that calculates the 'year running
 = TOTALYTD(SUM(InternetSales_USD[SalesAmount_USD]),DateTime[DateKey])
 ```
 
+## Example for calendar based time intelligence
+
+The following sample formula creates a measure that calculates the 'year running total' or 'year running sum' for Internet sales in terms of fiscal calendar.
+
+```dax
+= TOTALYTD(SUM(InternetSales_USD[SalesAmount_USD]), FiscalCalendar)
+```
+
 ## Related content
 
 [ALL](all-function-dax.md)
@@ -63,3 +74,4 @@ The following sample formula creates a measure that calculates the 'year running
 [DATESYTD](datesytd-function-dax.md)
 [TOTALMTD](totalmtd-function-dax.md)
 [TOTALQTD](totalqtd-function-dax.md)
+[TOTALWTD](totalwtd-function-dax.md)

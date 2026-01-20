@@ -2,6 +2,7 @@
 description: "Learn more about: Type.TableSchema"
 title: "Type.TableSchema"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Type.TableSchema
 

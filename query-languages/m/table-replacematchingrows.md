@@ -2,13 +2,18 @@
 description: "Learn more about: Table.ReplaceMatchingRows"
 title: "Table.ReplaceMatchingRows"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.ReplaceMatchingRows
 
 ## Syntax
 
 <pre>
-Table.ReplaceMatchingRows(<b>table</b> as table, <b>replacements</b> as list, optional <b>equationCriteria</b> as any) as table
+Table.ReplaceMatchingRows(
+    <b>table</b> as table,
+    <b>replacements</b> as list,
+    optional <b>equationCriteria</b> as any
+) as table
 </pre>
   
 ## About

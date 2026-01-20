@@ -2,13 +2,18 @@
 description: "Learn more about: #date"
 title: "#date"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # #date
 
 ## Syntax
 
 <pre>
-#date(<b>year</b> as number, <b>month</b> as number, <b>day</b> as number) as date
+#date(
+    <b>year</b> as number,
+    <b>month</b> as number,
+    <b>day</b> as number
+) as date
 </pre>
 
 ## About

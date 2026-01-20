@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: COUPDAYS"
 title: "COUPDAYS function (DAX)"
+ms.topic: reference
 ---
 
 # COUPDAYS

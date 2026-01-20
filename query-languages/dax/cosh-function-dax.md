@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: COSH"
 title: "COSH function (DAX)"
+ms.topic: reference
 ---
 # COSH
 

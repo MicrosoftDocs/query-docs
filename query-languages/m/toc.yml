@@ -48,6 +48,12 @@ items:
     href: metadata.md
   - name: Errors
     href: errors.md
+  - name: Date and time
+    items:
+    - name: Local, fixed, and UTC variants
+      href: m-local-fixed-utc-variants.md
+    - name: Durations in Power Query M
+      href: durations.md
   - name: Text formatting
     items:
     - name: Standard numeric format strings
@@ -60,6 +66,8 @@ items:
       href: custom-date-and-time-format-strings.md
     - name: How culture affects text formatting
       href: how-culture-affects-text-formatting.md
+    - name: Capitalization in Power Query M
+      href: m-working-with-case.md
   - name: Functions
     items:
     - name: Functions overview
@@ -146,6 +154,8 @@ items:
         href: excel-workbook.md
       - name: Exchange.Contents
         href: exchange-contents.md
+      - name: FabricAI.Prompt
+        href: fabricai-prompt.md
       - name: File.Contents
         href: file-contents.md
       - name: Folder.Contents
@@ -990,14 +1000,10 @@ items:
         href: table-functions.md
       - name: ItemExpression.From
         href: itemexpression-from.md
-      - name: ItemExpression.Item
-        href: itemexpression-item.md
       - name: RowExpression.Column
         href: rowexpression-column.md
       - name: RowExpression.From
         href: rowexpression-from.md
-      - name: RowExpression.Row
-        href: rowexpression-row.md
       - name: Table.AddColumn
         href: table-addcolumn.md
       - name: Table.AddFuzzyClusterColumn
@@ -1118,6 +1124,8 @@ items:
         href: table-nestedjoin.md
       - name: Table.Partition
         href: table-partition.md
+      - name: Table.PartionKey
+        href: table-partitionkey.md
       - name: Table.PartitionValues
         href: table-partitionvalues.md
       - name: Table.Pivot
@@ -1158,6 +1166,8 @@ items:
         href: table-replacekeys.md
       - name: Table.ReplaceMatchingRows
         href: table-replacematchingrows.md
+      - name: Table.ReplacePartitionKey
+        href: table-replacepartitionkey.md
       - name: Table.ReplaceRelationshipIdentity
         href: table-replacerelationshipidentity.md
       - name: Table.ReplaceRows
@@ -1380,10 +1390,14 @@ items:
         href: type-replacefacets.md
       - name: Type.ReplaceTableKeys
         href: type-replacetablekeys.md
+      - name: Type.ReplaceTablePartitionKey
+        href: type-replacetablepartitionkey.md
       - name: Type.TableColumn
         href: type-tablecolumn.md
       - name: Type.TableKeys
         href: type-tablekeys.md
+      - name: Type.TablePartitionKey
+        href: type-tablepartitionkey.md
       - name: Type.TableRow
         href: type-tablerow.md
       - name: Type.TableSchema
@@ -1478,6 +1492,8 @@ items:
         href: value-viewfunction.md
       - name: Variable.Value
         href: variable-value.md
+      - name: Variable.ValueOrDefault
+        href: variable-valueordefault.md  
   - name: Enumerations
     items:
     - name: Enumerations
@@ -1546,6 +1562,8 @@ items:
     items:
     - name: Constants
       href: constants.md
+    - name: ItemExpression.Item
+      href: itemexpression-item.md
     - name: Number.E
       href: number-e.md
     - name: Number.Epsilon
@@ -1558,6 +1576,8 @@ items:
       href: number-pi.md
     - name: Number.PositiveInfinity
       href: number-positiveinfinity.md
+    - name: RowExpression.Row
+      href: rowexpression-row.md
   - name: Dynamic values
     items:
     - name: Dynamic values

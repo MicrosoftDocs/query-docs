@@ -3,7 +3,7 @@ description: "Learn more about: Quick tour of the Power Query M formula language
 title: "Quick tour"
 ms.date: 1/27/2025
 ms.custom: nonautomated-date, intro-internal
-ms.topic: conceptual
+ms.topic: language-reference
 ms.subservice: m-background
 ---
 # Quick tour of the Power Query M formula language

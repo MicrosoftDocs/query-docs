@@ -2,13 +2,18 @@
 description: "Learn more about: List.ReplaceMatchingItems"
 title: "List.ReplaceMatchingItems"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.ReplaceMatchingItems
 
 ## Syntax
 
 <pre>
-List.ReplaceMatchingItems(<b>list</b> as list, <b>replacements</b> as list, optional <b>equationCriteria</b> as any) as list
+List.ReplaceMatchingItems(
+    <b>list</b> as list,
+    <b>replacements</b> as list,
+    optional <b>equationCriteria</b> as any
+) as list
 </pre>
   
 ## About

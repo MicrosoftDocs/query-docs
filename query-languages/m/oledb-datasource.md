@@ -2,6 +2,8 @@
 description: "Learn more about: OleDb.DataSource"
 title: "OleDb.DataSource"
 ms.subservice: m-source
+ms.custom: sfi-ropc-nochange
+ms.topic: reference
 ---
 # OleDb.DataSource
 

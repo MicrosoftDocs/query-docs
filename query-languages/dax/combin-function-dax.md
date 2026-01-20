@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: COMBIN"
 title: "COMBIN function (DAX)"
+ms.topic: reference
 ---
 
 # COMBIN

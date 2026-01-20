@@ -2,13 +2,17 @@
 description: "Learn more about: Replacer.ReplaceValue"
 title: "Replacer.ReplaceValue"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Replacer.ReplaceValue
 
 ## Syntax
 
 <pre>
-Replacer.ReplaceValue(<b>value</b> as any, <b>old</b> as any, <b>new</b> as any) as any
+Replacer.ReplaceValue(
+    <b>value</b> as any,
+    <b>old</b> as any,
+    <b>new</b> as any) as any
 </pre>
   
 ## About

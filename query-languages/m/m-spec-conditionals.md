@@ -1,8 +1,8 @@
 ---
 title: M Language Conditionals 
 description: Describes using conditionals in the Power Query M formula language
-ms.topic: conceptual
-ms.date: 03/29/2024
+ms.topic: language-reference
+ms.date: 6/13/2025
 ms.custom: "nonautomated-date"
 ms.subservice: m-specification
 ---
@@ -30,7 +30,7 @@ if 1 = 1 then "yes" else "no"   // "yes"
 
 The following holds when evaluating an _if-expression_:
 
-* If the value produced by evaluating the _if-condition_ is not a logical value, then an error with reason code `"Expression.Error"` is raised.
+* If the value produced by evaluating the _if-condition_ isn't a logical value, then an error with reason code `"Expression.Error"` is raised.
 
 * The _true-expression_ is only evaluated if the _if-condition_ evaluates to the value `true`.
 

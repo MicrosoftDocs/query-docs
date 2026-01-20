@@ -2,13 +2,19 @@
 description: "Learn more about: Table.CombineColumns"
 title: "Table.CombineColumns"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.CombineColumns
 
 ## Syntax
 
 <pre>
-Table.CombineColumns(<b>table</b> as table, <b>sourceColumns</b> as list, <b>combiner</b> as function, <b>column</b> as text) as table
+Table.CombineColumns(
+    <b>table</b> as table,
+    <b>sourceColumns</b> as list,
+    <b>combiner</b> as function,
+    <b>column</b> as text
+) as table
 </pre>
   
 ## About

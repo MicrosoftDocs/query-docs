@@ -2,13 +2,18 @@
 description: "Learn more about: Cube.AddMeasureColumn"
 title: "Cube.AddMeasureColumn"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Cube.AddMeasureColumn
 
 ## Syntax
 
 <pre>
-Cube.AddMeasureColumn(<b>cube</b> as table, <b>column</b> as text, <b>measureSelector</b> as any) as table
+Cube.AddMeasureColumn(
+    <b>cube</b> as table,
+    <b>column</b> as text,
+    <b>measureSelector</b> as any
+) as table
 </pre>
 
 ## About

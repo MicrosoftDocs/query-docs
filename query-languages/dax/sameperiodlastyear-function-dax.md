@@ -1,28 +1,32 @@
 ---
 description: "Learn more about: SAMEPERIODLASTYEAR"
 title: "SAMEPERIODLASTYEAR function (DAX)"
+ms.topic: reference
 ---
 # SAMEPERIODLASTYEAR
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-Returns a table that contains a column of dates shifted one year back in time from the dates in the specified `dates` column, in the current context.
+For date column input, returns a table that contains a column of dates shifted one year back in time from the dates in the specified `dates` column, in the current context.
+
+For calendar input, returns a table that is shifted one year back in time from the dates in the current context, based on the calendar. The table contains all primary tagged columns and all time related columns.
 
 ## Syntax
 
-```dax
-SAMEPERIODLASTYEAR(<dates>)
+```
+SAMEPERIODLASTYEAR(<dates> or <calendar>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates`|A column containing dates.|
+|`dates or calendar`|A column that contains dates or a calendar reference|
 
 ## Return value
 
-A single-column table of date values.
+For date column input, return a single-column table of date values.  
+For calendar input, return a table that contains all primary tagged columns and all time related columns.
 
 ## Remarks
 
@@ -54,6 +58,17 @@ This behavior only happens when last two days of month are included in the selec
 ```dax
 = SAMEPERIODLASTYEAR(DateTime[DateKey])
 ```
+
+## Example for calendar based time intelligence
+
+The following sample formula creates a measure that calculates the previous year sales of Reseller sales.
+
+```dax
+= CALCULATE(SUM(ResellerSales_USD[SalesAmount_USD]), SAMEPERIODLASTYEAR(FiscalCalendar))
+```
+
+## Differences in behavior between classic and calendar time intelligence
+Some scenarios may yield different results when comparing classic and calendar time intelligence. For example, in a lunar year, SamePeriodLastYear will produce different results at the date granularity. In calendar-based time intelligence, shifting Feb 29 2008 back one year results in Mar 1 2007, because it is treated as the 60th day of the year. In classic time intelligence, the same shift returns Feb 28 2007. The workaround is to use DATEADD(Calendar, -<number of a year>, month). For example, if a year has 13 months in calendar, use DATEADD(Calendar, -13, month). This approach will shift by month so Feb 2008 will go to Feb 2007.
 
 ## Related content
 

@@ -2,13 +2,19 @@
 description: "Learn more about: Lines.FromBinary"
 title: "Lines.FromBinary"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Lines.FromBinary
 
 ## Syntax
 
 <pre>
-Lines.FromBinary(<b>binary</b> as binary, optional <b>quoteStyle</b> as any, optional <b>includeLineSeparators</b> as nullable logical, optional <b>encoding</b> as nullable number) as list
+Lines.FromBinary(
+    <b>binary</b> as binary,
+    optional <b>quoteStyle</b> as any,
+    optional <b>includeLineSeparators</b> as nullable logical,
+    optional <b>encoding</b> as nullable number
+) as list
 </pre>
 
 ## About

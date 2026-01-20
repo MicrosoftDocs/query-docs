@@ -2,13 +2,18 @@
 description: "Learn more about: Text.Range"
 title: "Text.Range"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.Range
 
 ## Syntax
 
 <pre>
-Text.Range(<b>text</b> as nullable text, <b>offset</b> as number, optional <b>count</b> as nullable number) as nullable text
+Text.Range(
+    <b>text</b> as nullable text,
+    <b>offset</b> as number,
+    optional <b>count</b> as nullable number
+) as nullable text
 </pre>
   
 ## About

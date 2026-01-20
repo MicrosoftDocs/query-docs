@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: DATE"
 title: "DATE function (DAX)"
+ms.topic: reference
 ---
 # DATE
 
@@ -18,7 +19,7 @@ DATE(<year>, <month>, <day>)
 
 |Term|Definition|
 |--------|--------------|
-|`year`|A number representing the year.<br /><br />The value of the `year` argument can include one to four digits. The `year` argument is interpreted according to the date system used by your computer.<br /><br />Dates beginning with March 1, 1900 are supported.<br /><br />If you enter a number that has decimal places, the number is rounded.<br /><br />For values greater than 9999 or less than zero (negative values), the function returns a `#VALUE!` error.<br /><br />If the `year` value is between 0 and 1899, the value is added to 1900 to produce the final value. See the examples below. **Note:** You should use four digits for the `year` argument whenever possible to prevent unwanted results. For example, using 07 returns 1907 as the year value.|
+|`year`|A number representing the year.<br /><br />The value of the `year` argument can include one to four digits. The `year` argument is interpreted according to the date system used by your computer.<br /><br />Dates beginning with March 1, 1900 are supported.<br /><br />If you enter a number that has decimal places, the number is rounded.<br /><br />For values greater than 9999 or less than zero (negative values), the function returns a `#VALUE!` error.<br /><br />If the `year` value is between 0 and 49, the value is added to 2000 to produce the final value. If it is between 50 and 99, the value is added to 1900 to produce the final value. See the examples below. **Note:** You should use four digits for the `year` argument whenever possible to prevent unwanted results. For example, using 07 returns 2007 as the year value.|
 |`month`|A number representing the month or a calculation according to the following rules:<br /><br />Negative integers are not supported. Valid values are 1-12. <br /><br />If `month` is a number from 1 to 12, then it represents a month of the year. 1 represents January, 2 represents February, and so on until 12 that represents December.<br /><br />If you enter an integer larger than 12, the following computation occurs: the date is calculated by adding the value of `month` to the `year`. For example, if you have DATE( 2008, 18, 1), the function returns a datetime value equivalent to June 1st of 2009, because 18 months are added to the beginning of 2008 yielding a value of June 2009. See examples below.|
 |`day`|A number representing the day or a calculation according to the following rules:<br /><br />Negative integers are not supported. Valid values are 1-31. <br /><br />If `day` is a number from 1 to the last day of the given month then it represents a day of the month.<br /><br />If you enter an integer larger than last day of the given month, the following computation occurs: the date is calculated by adding the value of `day` to `month`. For example, in the formula `DATE( 2008, 3, 32)`, the DATE function returns a `datetime` value equivalent to April 1st of 2008, because 32 days are added to the beginning of March yielding a value of April 1st.<br /><br />If `day` contains a decimal portion, it is rounded to the nearest integer value.|
 
@@ -46,17 +47,27 @@ The following formula returns the date July 8, 2009:
 = DATE(2009,7,8)
 ```
 
-### Years before 1899
+### Years before 100
 
-If the value that you enter for the `year` argument is between 0 (zero) and 1899 (inclusive), that value is added to 1900 to calculate the year. The following formula returns January 2, 1908: (1900+08).
+If the value that you enter for the `year` argument is between 0 (zero) and 49 (inclusive), that value is added to 2000 to calculate the year. 
+
+The following formula returns January 2, 2008: (2000+08).
 
 ```dax
 = DATE(08,1,2)
 ```
 
-### Years after 1899
+If the value that you enter for the `year` argument is between 50 and 99 (inclusive), that value is added to 1900 to calculate the year. 
 
-If `year` is between 1900 and 9999 (inclusive), that value is used as the year. The following formula returns January 2, 2008:
+The following formula returns January 2, 1950: (1900+50).
+
+```dax
+= DATE(50,1,2)
+```
+
+### Years after 100
+
+If `year` is between 100 and 9999 (inclusive), that value is used as the year. The following formula returns January 2, 2008:
 
 ```dax
 = DATE(2008,1,2)

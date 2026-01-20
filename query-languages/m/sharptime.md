@@ -2,13 +2,18 @@
 description: "Learn more about: #time"
 title: "#time"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # #time
 
 ## Syntax
 
 <pre>
-#time(<b>hour</b> as number, <b>minute</b> as number, <b>second</b> as number) as time
+#time(
+    <b>hour</b> as number,
+    <b>minute</b> as number,
+    <b>second</b> as number
+) as time
 </pre>
 
 ## About

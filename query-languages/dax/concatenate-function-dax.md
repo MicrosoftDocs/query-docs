@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CONCATENATE"
 title: "CONCATENATE function (DAX)"
+ms.topic: reference
 ---
 # CONCATENATE
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ISERROR"
 title: "ISERROR function (DAX)"
+ms.topic: reference
 ---
 # ISERROR
 

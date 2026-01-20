@@ -2,13 +2,18 @@
 description: "Learn more about: List.Percentile"
 title: "List.Percentile"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.Percentile
 
 ## Syntax
 
 <pre>
-List.Percentile(<b>list</b> as list, <b>percentiles</b> as any, optional <b>options</b> as nullable record) as any
+List.Percentile(
+    <b>list</b> as list,
+    <b>percentiles</b> as any,
+    optional <b>options</b> as nullable record
+) as any
 </pre>
   
 ## About

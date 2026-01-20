@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: BITOR"
 title: "BITOR function (DAX)"
+ms.topic: reference
 ---
 # BITOR
 

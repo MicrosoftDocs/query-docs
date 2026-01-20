@@ -2,6 +2,7 @@
 description: "Learn more about: Table.FromRows"
 title: "Table.FromRows"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.FromRows
 
@@ -28,7 +29,7 @@ Table.FromRows(
         {2, "Jim", "987-6543"}
     },
     {"CustomerID", "Name", "Phone"}
-
+)
 ```
 
 **Output**

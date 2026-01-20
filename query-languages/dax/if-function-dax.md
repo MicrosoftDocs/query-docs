@@ -1,6 +1,8 @@
 ---
 description: "Learn more about: IF"
 title: "IF function (DAX)"
+ms.topic: reference
+ms.custom: ExampleTypeAW2020
 ---
 # IF
 

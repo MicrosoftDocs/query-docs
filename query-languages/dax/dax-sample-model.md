@@ -2,7 +2,7 @@
 title: "DAX sample model"
 description: DAX sample model to support reference articles.
 author: peter-myers
-ms.topic: conceptual
+ms.topic: sample
 ---
 
 # DAX sample model

@@ -2,13 +2,18 @@
 description: "Learn more about: Comparer.Equals"
 title: "Comparer.Equals"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Comparer.Equals
 
 ## Syntax
 
 <pre>
-Comparer.Equals(comparer as function, x as any, y as any) as logical
+Comparer.Equals(
+    <b>comparer</b> as function,
+    <b>x</b> as any,
+    <b>y</b> as any
+) as logical
 </pre>
 
 ## About

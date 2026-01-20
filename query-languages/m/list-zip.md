@@ -2,6 +2,7 @@
 description: "Learn more about: List.Zip"
 title: "List.Zip"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.Zip
 

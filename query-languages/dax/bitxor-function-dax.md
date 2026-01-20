@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: BITXOR"
 title: "BITXOR function (DAX)"
+ms.topic: reference
 ---
 # BITXOR
 

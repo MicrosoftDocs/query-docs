@@ -2,13 +2,19 @@
 description: "Learn more about: Table.ExpandRecordColumn"
 title: "Table.ExpandRecordColumn"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.ExpandRecordColumn
 
 ## Syntax
 
 <pre>
-Table.ExpandRecordColumn(<b>table</b> as table, <b>column</b> as text, <b>fieldNames</b> as list, optional <b>newColumnNames</b> as nullable list) as table
+Table.ExpandRecordColumn(
+    <b>table</b> as table,
+    <b>column</b> as text,
+    <b>fieldNames</b> as list,
+    optional <b>newColumnNames</b> as nullable list
+) as table
 </pre>
   
 ## About

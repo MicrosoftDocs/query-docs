@@ -2,6 +2,7 @@
 description: "Learn more about: Table.FirstN"
 title: "Table.FirstN"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.FirstN
 

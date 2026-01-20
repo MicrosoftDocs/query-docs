@@ -1,6 +1,8 @@
 ---
 description: "Learn more about: ALL"
 title: "ALL function (DAX)"
+ms.topic: reference
+
 ---
 # ALL
 

@@ -1,10 +1,9 @@
 ---
+description: "Learn more about: Custom date and time format strings"
 title: "Custom date and time format strings"
-description: Learn to use custom date and time format strings to convert date and time values into text representations, or to parse strings for dates and times.
-author: DougKlopfenstein
-ms.author: dougklo
 ms.date: 10/7/2024
-ms.topic: reference
+ms.topic: language-reference
+ms.custom: "nonautomated-date"
 ms.subservice: m-background
 ---
 

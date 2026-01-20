@@ -2,13 +2,18 @@
 description: "Learn more about: Informix.Database"
 title: "Informix.Database"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Informix.Database
 
 ## Syntax
 
 <pre>
-Informix.Database(<b>server</b> as text, <b>database</b> as text, optional <b>options</b> as nullable record) as table
+Informix.Database(
+    <b>server</b> as text,
+    <b>database</b> as text,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
 
 ## About

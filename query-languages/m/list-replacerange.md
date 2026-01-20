@@ -2,13 +2,19 @@
 description: "Learn more about: List.ReplaceRange"
 title: "List.ReplaceRange"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.ReplaceRange
 
 ## Syntax
 
 <pre>
-List.ReplaceRange(<b>list</b> as list, <b>index</b> as number, <b>count</b> as number, <b>replaceWith</b> as list) as list
+List.ReplaceRange(
+    <b>list</b> as list,
+    <b>index</b> as number,
+    <b>count</b> as number,
+    <b>replaceWith</b> as list
+) as list
 </pre>
   
 ## About

@@ -2,13 +2,19 @@
 description: "Learn more about: Diagnostics.Trace"
 title: "Diagnostics.Trace"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Diagnostics.Trace
 
 ## Syntax
 
 <pre>
-Diagnostics.Trace(<b>traceLevel</b> as number, <b>message</b> as anynonnull, <b>value</b> as any, optional <b>delayed</b> as nullable logical) as any
+Diagnostics.Trace(
+    <b>traceLevel</b> as number,
+    <b>message</b> as anynonnull,
+    <b>value</b> as any,
+    optional <b>delayed</b> as nullable logical
+) as any
 </pre>
 
 ## About

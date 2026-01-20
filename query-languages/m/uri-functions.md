@@ -2,6 +2,7 @@
 description: "Learn more about: Uri functions"
 title: "Uri functions"
 ms.date: 5/16/2022
+ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
 # Uri functions

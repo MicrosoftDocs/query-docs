@@ -35,6 +35,8 @@ items:
             href: best-practices/dax-countrows.md
           - name: "Use variables to improve formulas"
             href: best-practices/dax-variables.md
+          - name: "Use DAX user-defined functions (preview)"
+            href: best-practices/dax-user-defined-functions.md
     - name: DAX functions
       expanded: true
       items: 
@@ -178,8 +180,12 @@ items:
               href: lastnonblank-function-dax.md
             - name: LASTNONBLANKVALUE
               href: lastnonblankvalue-function-dax.md
+            - name: LOOKUP
+              href: lookup-function-dax.md
             - name: LOOKUPVALUE
               href: lookupvalue-function-dax.md
+            - name: LOOKUPWITHTOTALS
+              href: lookupwithtotals-function-dax.md
             - name: MATCHBY
               href: matchby-function-dax.md
             - name: MOVINGAVERAGE
@@ -322,10 +328,134 @@ items:
               href: info-view-relationships-function-dax.md
             - name: INFO.VIEW.TABLES
               href: info-view-tables-function-dax.md
+            - name: INFO.ALTERNATEOFDEFINITIONS
+              href: info-alternateofdefinitions-function-dax.md
             - name: INFO.ANNOTATIONS
               href: info-annotations-function-dax.md
+            - name: INFO.ATTRIBUTEHIERARCHIES
+              href: info-attributehierarchies-function-dax.md
+            - name: INFO.ATTRIBUTEHIERARCHYSTORAGES
+              href: info-attributehierarchystorages-function-dax.md
             - name: INFO.CALCDEPENDENCY
               href: info-calcdependency-function-dax.md
+            - name: INFO.CALCULATIONGROUPS
+              href: info-calculationgroups-function-dax.md
+            - name: INFO.CALCULATIONITEMS
+              href: info-calculationitems-function-dax.md
+            - name: INFO.CATALOGS
+              href: info-catalogs-function-dax.md
+            - name: INFO.CHANGEDPROPERTIES
+              href: info-changedproperties-function-dax.md
+            - name: INFO.COLUMNPARTITIONSTORAGES
+              href: info-columnpartitionstorages-function-dax.md
+            - name: INFO.COLUMNPERMISSIONS
+              href: info-columnpermissions-function-dax.md
+            - name: INFO.COLUMNS
+              href: info-columns-function-dax.md
+            - name: INFO.COLUMNSTORAGES
+              href: info-columnstorages-function-dax.md
+            - name: INFO.CSDLMETADATA
+              href: info-csdlmetadata-function-dax.md
+            - name: INFO.CULTURES
+              href: info-cultures-function-dax.md
+            - name: INFO.DATACOVERAGEDEFINITIONS
+              href: info-datacoveragedefinitions-function-dax.md
+            - name: INFO.DATASOURCES
+              href: info-datasources-function-dax.md
+            - name: INFO.DELTATABLEMETADATASTORAGES
+              href: info-deltatablemetadatastorages-function-dax.md
+            - name: INFO.DEPENDENCIES
+              href: info-dependencies-function-dax.md
+            - name: INFO.DETAILROWSDEFINITIONS
+              href: info-detailrowsdefinitions-function-dax.md
+            - name: INFO.DICTIONARYSTORAGES
+              href: info-dictionarystorages-function-dax.md
+            - name: INFO.EXCLUDEDARTIFACTS
+              href: info-excludedartifacts-function-dax.md
+            - name: INFO.EXPRESSIONS
+              href: info-expressions-function-dax.md
+            - name: INFO.EXTENDEDPROPERTIES
+              href: info-extendedproperties-function-dax.md
+            - name: INFO.FORMATSTRINGDEFINITIONS
+              href: info-formatstringdefinitions-function-dax.md
+            - name: INFO.FUNCTIONS
+              href: info-functions-function-dax.md
+            - name: INFO.GENERALSEGMENTMAPSEGMENTMETADATASTORAGES
+              href: info-generalsegmentmapsegmentmetadatastorages-function-dax.md
+            - name: INFO.GROUPBYCOLUMNS
+              href: info-groupbycolumns-function-dax.md
+            - name: INFO.HIERARCHIES
+              href: info-hierarchies-function-dax.md
+            - name: INFO.HIERARCHYSTORAGES
+              href: info-hierarchystorages-function-dax.md
+            - name: INFO.KPIS
+              href: info-kpis-function-dax.md
+            - name: INFO.LEVELS
+              href: info-levels-function-dax.md
+            - name: INFO.LINGUISTICMETADATA
+              href: info-linguisticmetadata-function-dax.md
+            - name: INFO.MEASURES
+              href: info-measures-function-dax.md
+            - name: INFO.MODEL
+              href: info-model-function-dax.md
+            - name: INFO.OBJECTTRANSLATIONS
+              href: info-objecttranslations-function-dax.md
+            - name: INFO.PARQUETFILESTORAGES
+              href: info-parquetfilestorages-function-dax.md
+            - name: INFO.PARTITIONS
+              href: info-partitions-function-dax.md
+            - name: INFO.PARTITIONSTORAGES
+              href: info-partitionstorages-function-dax.md
+            - name: INFO.PERSPECTIVECOLUMNS
+              href: info-perspectivecolumns-function-dax.md
+            - name: INFO.PERSPECTIVEHIERARCHIES
+              href: info-perspectivehierarchies-function-dax.md
+            - name: INFO.PERSPECTIVEMEASURES
+              href: info-perspectivemeasures-function-dax.md
+            - name: INFO.PERSPECTIVES
+              href: info-perspectives-function-dax.md
+            - name: INFO.PERSPECTIVETABLES
+              href: info-perspectivetables-function-dax.md
+            - name: INFO.PROPERTIES
+              href: info-properties-function-dax.md
+            - name: INFO.QUERYGROUPS
+              href: info-querygroups-function-dax.md
+            - name: INFO.REFRESHPOLICIES
+              href: info-refreshpolicies-function-dax.md
+            - name: INFO.RELATEDCOLUMNDETAILS
+              href: info-relatedcolumndetails-function-dax.md
+            - name: INFO.RELATIONSHIPINDEXSTORAGES
+              href: info-relationshipindexstorages-function-dax.md
+            - name: INFO.RELATIONSHIPS
+              href: info-relationships-function-dax.md
+            - name: INFO.RELATIONSHIPSTORAGES
+              href: info-relationshipstorages-function-dax.md
+            - name: INFO.ROLEMEMBERSHIPS
+              href: info-rolememberships-function-dax.md
+            - name: INFO.ROLES
+              href: info-roles-function-dax.md
+            - name: INFO.SEGMENTMAPSTORAGES
+              href: info-segmentmapstorages-function-dax.md
+            - name: INFO.SEGMENTSTORAGES
+              href: info-segmentstorages-function-dax.md
+            - name: INFO.STORAGEFILES
+              href: info-storagefiles-function-dax.md
+            - name: INFO.STORAGEFOLDERS
+              href: info-storagefolders-function-dax.md
+            - name: INFO.STORAGETABLECOLUMNS
+              href: info-storagetablecolumns-function-dax.md
+            - name: INFO.STORAGETABLECOLUMNSEGMENTS
+              href: info-storagetablecolumnsegments-function-dax.md
+            - name: INFO.STORAGETABLES
+              href: info-storagetables-function-dax.md
+            - name: INFO.TABLEPERMISSIONS
+              href: info-tablepermissions-function-dax.md
+            - name: INFO.TABLES
+              href: info-tables-function-dax.md
+            - name: INFO.TABLESTORAGES
+              href: info-tablestorages-function-dax.md
+            - name: INFO.VARIATIONS
+              href: info-variations-function-dax.md
         - name: Information functions
           items: 
             - name: Information functions overview
@@ -350,8 +480,18 @@ items:
               href: isafter-function-dax.md
             - name: ISBLANK
               href: isblank-function-dax.md
+            - name: ISBOOLEAN
+              href: isboolean-function-dax.md
             - name: ISCROSSFILTERED
               href: iscrossfiltered-function-dax.md
+            - name: ISCURRENCY
+              href: iscurrency-function-dax.md
+            - name: ISDATETIME
+              href: isdatetime-function-dax.md
+            - name: ISDECIMAL
+              href: isdecimal-function-dax.md
+            - name: ISDOUBLE
+              href: isdouble-function-dax.md
             - name: ISEMPTY
               href: isempty-function-dax.md
             - name: ISERROR
@@ -362,18 +502,26 @@ items:
               href: isfiltered-function-dax.md
             - name: ISINSCOPE
               href: isinscope-function-dax.md
+            - name: ISINT64
+              href: isint64-function-dax.md
+            - name: ISINTEGER
+              href: isinteger-function-dax.md
             - name: ISLOGICAL
               href: islogical-function-dax.md
             - name: ISNONTEXT
               href: isnontext-function-dax.md
             - name: ISNUMBER
               href: isnumber-function-dax.md
+            - name: ISNUMERIC
+              href: isnumeric-function-dax.md
             - name: ISODD
               href: isodd-function-dax.md
             - name: ISONORAFTER
               href: isonorafter-function-dax.md
             - name: ISSELECTEDMEASURE
               href: isselectedmeasure-function-dax.md
+            - name: ISSTRING
+              href: isstring-function-dax.md
             - name: ISSUBTOTAL
               href: issubtotal-function-dax.md
             - name: ISTEXT
@@ -540,6 +688,8 @@ items:
               href: error-function-dax.md
             - name: EVALUATEANDLOG
               href: evaluateandlog-function-dax.md
+            - name: EXTERNALMEASURE
+              href: externalmeasure-function-dax.md
             - name: TOCSV
               href: tocsv-function-dax.md
             - name: TOJSON
@@ -782,6 +932,8 @@ items:
           items: 
             - name: Time intelligence functions overview
               href: time-intelligence-functions-dax.md
+            - name: CLOSINGBALANCEWEEK
+              href: closingbalanceweek-function-dax.md
             - name: CLOSINGBALANCEMONTH
               href: closingbalancemonth-function-dax.md
             - name: CLOSINGBALANCEQUARTER
@@ -794,12 +946,16 @@ items:
               href: datesbetween-function-dax.md
             - name: DATESINPERIOD
               href: datesinperiod-function-dax.md
+            - name: DATESWTD
+              href: dateswtd-function-dax.md
             - name: DATESMTD
               href: datesmtd-function-dax.md
             - name: DATESQTD
               href: datesqtd-function-dax.md
             - name: DATESYTD
               href: datesytd-function-dax.md
+            - name: ENDOFWEEK
+              href: endofweek-function-dax.md
             - name: ENDOFMONTH
               href: endofmonth-function-dax.md
             - name: ENDOFQUARTER
@@ -812,12 +968,16 @@ items:
               href: lastdate-function-dax.md
             - name: NEXTDAY
               href: nextday-function-dax.md
+            - name: NEXTWEEK
+              href: nextweek-function-dax.md
             - name: NEXTMONTH
               href: nextmonth-function-dax.md
             - name: NEXTQUARTER
               href: nextquarter-function-dax.md
             - name: NEXTYEAR
               href: nextyear-function-dax.md
+            - name: OPENINGBALANCEWEEK
+              href: openingbalanceweek-function-dax.md
             - name: OPENINGBALANCEMONTH
               href: openingbalancemonth-function-dax.md
             - name: OPENINGBALANCEQUARTER
@@ -828,6 +988,8 @@ items:
               href: parallelperiod-function-dax.md
             - name: PREVIOUSDAY
               href: previousday-function-dax.md
+            - name: PREVIOUSWEEK
+              href: previousweek-function-dax.md
             - name: PREVIOUSMONTH
               href: previousmonth-function-dax.md
             - name: PREVIOUSQUARTER
@@ -836,12 +998,16 @@ items:
               href: previousyear-function-dax.md
             - name: SAMEPERIODLASTYEAR
               href: sameperiodlastyear-function-dax.md
+            - name: STARTOFWEEK
+              href: startofweek-function-dax.md
             - name: STARTOFMONTH
               href: startofmonth-function-dax.md
             - name: STARTOFQUARTER
               href: startofquarter-function-dax.md
             - name: STARTOFYEAR
               href: startofyear-function-dax.md
+            - name: TOTALWTD
+              href: totalwtd-function-dax.md
             - name: TOTALMTD
               href: totalmtd-function-dax.md
             - name: TOTALQTD
@@ -856,6 +1022,8 @@ items:
         href: define-statement-dax.md
       - name: EVALUATE
         href: evaluate-statement-dax.md
+      - name: FUNCTION
+        href: function-statement-dax.md
       - name: MEASURE
         href: measure-statement-dax.md
       - name: ORDER BY

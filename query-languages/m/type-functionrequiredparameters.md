@@ -2,6 +2,7 @@
 description: "Learn more about: Type.FunctionRequiredParameters"
 title: "Type.FunctionRequiredParameters"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Type.FunctionRequiredParameters
 

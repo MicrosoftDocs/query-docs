@@ -2,13 +2,18 @@
 description: "Learn more about: Table.AddKey"
 title: "Table.AddKey"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.AddKey
 
 ## Syntax
 
 <pre>
-Table.AddKey(<b>table</b> as table, <b>columns</b> as list, <b>isPrimary</b> as logical) as table
+Table.AddKey(
+    <b>table</b> as table,
+    <b>columns</b> as list,
+    <b>isPrimary</b> as logical
+) as table
 </pre>
   
 ## About

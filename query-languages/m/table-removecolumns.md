@@ -2,13 +2,18 @@
 description: "Learn more about: Table.RemoveColumns"
 title: "Table.RemoveColumns"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.RemoveColumns
 
 ## Syntax
 
 <pre>
-Table.RemoveColumns(<b>table</b> as table, <b>columns</b> as any, optional <b>missingField</b> as nullable number) as table
+Table.RemoveColumns(
+    <b>table</b> as table,
+    <b>columns</b> as any,
+    optional <b>missingField</b> as nullable number
+) as table
 </pre>
   
 ## About

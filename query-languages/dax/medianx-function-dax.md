@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: MEDIANX"
 title: "MEDIANX function (DAX)"
+ms.topic: reference
 ---
 # MEDIANX
 

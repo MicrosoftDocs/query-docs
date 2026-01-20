@@ -2,13 +2,18 @@
 description: "Learn more about: DateTimeZone.ToText"
 title: "DateTimeZone.ToText"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # DateTimeZone.ToText
 
 ## Syntax
 
 <pre>
-DateTimeZone.ToText(<b>dateTimeZone</b> as nullable datetimezone, optional <b>options</b> as any, optional <b>culture</b> as nullable text) as nullable text
+DateTimeZone.ToText(
+    <b>dateTimeZone</b> as nullable datetimezone,
+    optional <b>options</b> as any,
+    optional <b>culture</b> as nullable text
+) as nullable text
 </pre>
   
 ## About

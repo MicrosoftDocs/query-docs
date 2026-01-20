@@ -2,11 +2,16 @@
 description: "Learn more about: List.Difference"
 title: "List.Difference"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.Difference
 
 <pre>
-List.Difference(<b>list1</b> as list, <b>list2</b> as list, optional <b>equationCriteria</b> as any) as list
+List.Difference(
+    <b>list1</b> as list,
+    <b>list2</b> as list,
+    optional <b>equationCriteria</b> as any
+) as list
 </pre>
 
 ## About

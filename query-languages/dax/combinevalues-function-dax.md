@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: COMBINEVALUES"
 title: "COMBINEVALUES function (DAX)"
+ms.topic: reference
 ---
 
 # COMBINEVALUES

@@ -2,13 +2,18 @@
 description: "Learn more about: Int64.From"
 title: "Int64.From"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Int64.From
 
 ## Syntax
 
 <pre>
-Int64.From(<b>value</b> as any, optional <b>culture</b> as nullable text, optional <b>roundingMode</b> as nullable number) as nullable number
+Int64.From(
+    <b>value</b> as any,
+    optional <b>culture</b> as nullable text,
+    optional <b>roundingMode</b> as nullable number
+) as nullable number
 </pre>
 
 ## About

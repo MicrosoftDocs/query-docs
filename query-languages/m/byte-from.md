@@ -2,13 +2,18 @@
 description: "Learn more about: Byte.From"
 title: "Byte.From"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Byte.From
 
 ## Syntax
 
 <pre>
-Byte.From(<b>value</b> as any, optional <b>culture</b> as nullable text, optional <b>roundingMode</b> as nullable number) as nullable number
+Byte.From(
+    <b>value</b> as any,
+    optional <b>culture</b> as nullable text,
+    optional <b>roundingMode</b> as nullable number
+) as nullable number
 </pre>
 
 ## About

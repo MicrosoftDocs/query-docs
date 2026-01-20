@@ -2,13 +2,18 @@
 description: "Learn more about: DateTimeZone.SwitchZone"
 title: "DateTimeZone.SwitchZone"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # DateTimeZone.SwitchZone
 
 ## Syntax
 
 <pre>
-DateTimeZone.SwitchZone(<b>dateTimeZone</b> as nullable datetimezone, <b>timezoneHours</b> as number, optional <b>timezoneMinutes</b> as nullable number) as nullable datetimezone
+DateTimeZone.SwitchZone(
+    <b>dateTimeZone</b> as nullable datetimezone,
+    <b>timezoneHours</b> as number,
+    optional <b>timezoneMinutes</b> as nullable number
+) as nullable datetimezone
 </pre>
   
 ## About

@@ -2,13 +2,18 @@
 description: "Learn more about: Text.AfterDelimiter"
 title: "Text.AfterDelimiter"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.AfterDelimiter
 
 ## Syntax
 
 <pre>
-Text.AfterDelimiter(<b>text</b> as nullable text, <b>delimiter</b> as text, optional <b>index</b> as any) as any
+Text.AfterDelimiter(
+    <b>text</b> as nullable text,
+    <b>delimiter</b> as text,
+    optional <b>index</b> as any
+) as any
 </pre>
 
 ## About

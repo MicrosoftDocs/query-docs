@@ -2,13 +2,18 @@
 description: "Learn more about: Table.MaxN"
 title: "Table.MaxN"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.MaxN
 
 ## Syntax
 
 <pre>
-Table.MaxN(<b>table</b> as table, <b>comparisonCriteria</b> as any, <b>countOrCondition</b> as any) as table
+Table.MaxN(
+    <b>table</b> as table,
+    <b>comparisonCriteria</b> as any,
+    <b>countOrCondition</b> as any
+) as table
 </pre>
   
 ## About

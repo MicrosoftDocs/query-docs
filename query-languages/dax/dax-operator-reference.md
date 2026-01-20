@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: DAX operators"
 title: "DAX operators"
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # DAX operators
 

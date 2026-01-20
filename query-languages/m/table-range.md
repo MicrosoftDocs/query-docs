@@ -2,13 +2,18 @@
 description: "Learn more about: Table.Range"
 title: "Table.Range"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.Range
 
 ## Syntax
 
 <pre>
-Table.Range(<b>table</b> as table, <b>offset</b> as number, optional <b>count</b> as nullable number) as table
+Table.Range(
+    <b>table</b> as table,
+    <b>offset</b> as number,
+    optional <b>count</b> as nullable number
+) as table
 </pre>
   
 ## About

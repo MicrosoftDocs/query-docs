@@ -2,13 +2,19 @@
 description: "Learn more about: Odbc.Query"
 title: "Odbc.Query"
 ms.subservice: m-source
+ms.custom: sfi-ropc-nochange
+ms.topic: reference
 ---
 # Odbc.Query
 
 ## Syntax
 
 <pre>
-Odbc.Query(<b>connectionString</b> as any, <b>query</b> as text, optional <b>options</b> as nullable record) as table
+Odbc.Query(
+    <b>connectionString</b> as any,
+    <b>query</b> as text,
+    optional <b>options</b> as nullable record
+) as table
 </pre>
 
 ## About

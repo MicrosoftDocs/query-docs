@@ -2,13 +2,18 @@
 description: "Learn more about: List.TransformMany"
 title: "List.TransformMany"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.TransformMany
 
 ## Syntax
 
 <pre>
-List.TransformMany(<b>list</b> as list, <b>collectionTransform</b> as function, <b>resultTransform</b> as function) as list
+List.TransformMany(
+    <b>list</b> as list,
+    <b>collectionTransform</b> as function,
+    <b>resultTransform</b> as function
+) as list
 </pre>
 
 ## About

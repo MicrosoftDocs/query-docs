@@ -2,6 +2,7 @@
 description: "Learn more about: TextEncoding.Type"
 title: "TextEncoding.Type"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # TextEncoding.Type
 
@@ -19,6 +20,9 @@ Specifies the text encoding type.
 |**TextEncoding.Windows**|1252| Use to choose the Windows binary form.|
 |**TextEncoding.Ascii**|20127| Use to choose the ASCII binary form.|
 |**TextEncoding.Utf8**|65001| Use to choose the UTF8 binary form.|
+
+> [!NOTE]
+>Any text encoding parameter should accept any of the Windows code pages by number. You don’t need an M enumeration for it.
 
 ## Applies to
 

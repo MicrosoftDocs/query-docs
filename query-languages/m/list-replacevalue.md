@@ -2,13 +2,19 @@
 description: "Learn more about: List.ReplaceValue"
 title: "List.ReplaceValue"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.ReplaceValue
 
 ## Syntax
 
 <pre>
-List.ReplaceValue(<b>list</b> as list, <b>oldValue</b> as any, <b>newValue</b> as any, <b>replacer</b> as function) as list
+List.ReplaceValue(
+    <b>list</b> as list,
+    <b>oldValue</b> as any,
+    <b>newValue</b> as any,
+    <b>replacer</b> as function
+) as list
 </pre>
   
 ## About

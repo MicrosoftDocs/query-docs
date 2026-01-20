@@ -2,13 +2,19 @@
 description: "Learn more about: Table.AlternateRows"
 title: "Table.AlternateRows"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.AlternateRows
 
 ## Syntax
 
 <pre>
-Table.AlternateRows(<b>table</b> as table, <b>offset</b> as number, <b>skip</b> as number, <b>take</b> as number) as table
+Table.AlternateRows(
+    <b>table</b> as table,
+    <b>offset</b> as number,
+    <b>skip</b> as number,
+    <b>take</b> as number
+) as table
 </pre>
   
 ## About

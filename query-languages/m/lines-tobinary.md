@@ -2,13 +2,19 @@
 description: "Learn more about: Lines.ToBinary"
 title: "Lines.ToBinary"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Lines.ToBinary
 
 ## Syntax
 
 <pre>
-Lines.ToBinary(<b>lines</b> as list, optional <b>lineSeparator</b> as nullable text, optional <b>encoding</b> as nullable number, optional <b>includeByteOrderMark</b> as nullable logical) as binary
+Lines.ToBinary(
+    <b>lines</b> as list,
+    optional <b>lineSeparator</b> as nullable text,
+    optional <b>encoding</b> as nullable number,
+    optional <b>includeByteOrderMark</b> as nullable logical
+) as binary
 </pre>
 
 ## About

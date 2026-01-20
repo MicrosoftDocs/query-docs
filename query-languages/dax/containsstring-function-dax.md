@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: CONTAINSSTRING"
 title: "CONTAINSSTRING function (DAX)"
+ms.topic: reference
 ---
 # CONTAINSSTRING
 
@@ -27,7 +28,7 @@ CONTAINSSTRING(<within_text>, <find_text>)
 
 ## Remarks
 
-- CONTAINSSTRING is not case-sensitive.
+- CONTAINSSTRING is case-insensitive, kanatype-insensitive, width-insensitive and accent sensitive.
 
 - You can use `?` and `*` wildcard characters. Use `~` to escape wildcard characters.
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: MAXA"
 title: "MAXA function (DAX)"
+ms.topic: reference
 ---
 # MAXA
 

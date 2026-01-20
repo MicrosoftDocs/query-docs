@@ -2,13 +2,18 @@
 description: "Learn more about: List.DateTimes"
 title: "List.DateTimes"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.DateTimes
 
 ## Syntax
 
 <pre>
-List.DateTimes(<b>start</b> as datetime, <b>count</b> as number, <b>step</b> as duration) as list
+List.DateTimes(
+    <b>start</b> as datetime,
+    <b>count</b> as number,
+    <b>step</b> as duration
+) as list
 </pre>
 
 ## About

@@ -1,7 +1,7 @@
 ---
 title: "DAX glossary"
 description: Describes common terms used in the Data Analysis Expressions (DAX) language.
-ms.topic: conceptual
+ms.topic: glossary
 ---
 # DAX glossary
 
@@ -109,6 +109,10 @@ Time intelligence relates to calculations over time, like year-to-date (YTD).
 ## Time intelligence function
 
 DAX includes many time intelligence functions. Each time intelligence function achieves its result by modifying the filter context for date filters. Example functions: TOTALYTD and SAMEPERIODLASTYEAR.
+
+## User-defined function
+
+A user-created DAX function. Provides the ability to define named functions with parameters for use in any DAX expression. UDFs promote code reuse and simply model maintenance by centralizing logic. Functions are defined in DAX Query View or TMDL View and can include parameter types for validation. This is currently in preview. To learn more, see [DAX user-defined functions (preview)](best-practices/dax-user-defined-functions.md).
 
 ## Value, values
 

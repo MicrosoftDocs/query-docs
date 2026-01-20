@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TIMEVALUE"
 title: "TIMEVALUE function (DAX)"
+ms.topic: reference
 ---
 # TIMEVALUE
 

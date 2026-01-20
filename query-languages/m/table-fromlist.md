@@ -2,13 +2,20 @@
 description: "Learn more about: Table.FromList"
 title: "Table.FromList"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.FromList
 
 ## Syntax
 
 <pre>
-Table.FromList(<b>list</b> as list, optional <b>splitter</b> as nullable function, optional <b>columns</b> as any, optional <b>default</b> as any, optional <b>extraValues</b> as nullable number) as table
+Table.FromList(
+    <b>list</b> as list,
+    optional <b>splitter</b> as nullable function,
+    optional <b>columns</b> as any,
+    optional <b>default</b> as any,
+    optional <b>extraValues</b> as nullable number
+) as table
 </pre>
   
 ## About

@@ -2,13 +2,18 @@
 description: "Learn more about: List.InsertRange"
 title: "List.InsertRange"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.InsertRange
 
 ## Syntax
 
 <pre>
-List.InsertRange(<b>list</b> as list, <b>index</b> as number, <b>values</b> as list) as list
+List.InsertRange(
+    <b>list</b> as list,
+    <b>index</b> as number,
+    <b>values</b> as list
+) as list
 </pre>
 
 ## About

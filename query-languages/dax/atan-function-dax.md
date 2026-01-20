@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ATAN"
 title: "ATAN function (DAX)"
+ms.topic: reference
 ---
 # ATAN
 
@@ -22,7 +23,7 @@ ATAN(number)
 
 ## Return value
 
-Returns the inverse hyperbolic tangent of a number.
+Returns the inverse tangent of a number.
 
 ## Remarks
 
