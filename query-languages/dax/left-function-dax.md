@@ -32,6 +32,8 @@ A text string.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
+- [!INCLUDE [function-unicodecharacterbehavior](includes/function-unicodecharacterbehavior.md)]
+
 ## Example
 
 The following example returns the first five characters of the company city in the column [City] and the first five letters of the reseller key in the column [ResellerKey] and concatenates them, to create an identifier.

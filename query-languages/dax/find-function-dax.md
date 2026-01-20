@@ -36,6 +36,8 @@ Number that shows the starting point of the text string you want to find.
 
 - FIND does not support wildcards. To use wildcards, use [SEARCH](search-function-dax.md).
 
+- [!INCLUDE [function-unicodecharacterbehavior](includes/function-unicodecharacterbehavior.md)]
+
 ## Example
 
 The following DAX query finds the position of the first letter of "Bike", in the string that contains the reseller name. If not found, Blank is returned.
