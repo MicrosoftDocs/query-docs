@@ -31,8 +31,8 @@ To learn more about how ORDER BY statements are used, see [DAX queries](dax-quer
 
 ## Related content
 
-[START AT](startat-statement-dax.md)
-[EVALUATE](evaluate-statement-dax.md)
-[VAR](var-dax.md)
-[DEFINE](define-statement-dax.md)
-[DAX queries](dax-queries.md)
+- [START AT](startat-statement-dax.md)
+- [EVALUATE](evaluate-statement-dax.md)
+- [VAR](var-dax.md)
+- [DEFINE](define-statement-dax.md)
+- [DAX queries](dax-queries.md)
