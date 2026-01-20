@@ -5,6 +5,8 @@ author: jterh
 ms.author: jterh
 ms.topic: article
 ms.date: 01/05/2026
+ms.service: powerbi
+ms.subservice: dax
 ---
 
 # Chinese coded character set (GB18030-2022) support
@@ -65,7 +67,7 @@ Here’s a before and after comparison of the result of StringLength on a column
 
 |`UnicodeCharacterBehavior = CodeUnits` (default)|`UnicodeCharacterBehavior = CodePoints`|
 |---|---|
-|:::image type="content" source="media/dax-unicode-character-behavior/unicodecharacterbehavior-codeunits.png" alt-text="Screenshot of a table showing Column 1 and StringLength. StringLength values are 1, 3 and 4" lightbox="media/dax-unicode-character-behavior/unicodecharacterbehavior-codeunits.png":::|:::image type="content" source="media/dax-unicode-character-behavior/unicodecharacterbehavior-codepoints.png" alt-text="Screenshot of a table showing Column 1 and StringLength. StringLength values are 1, 2 and 2." lightbox="media/dax-unicode-character-behavior/unicodecharacterbehavior-codepoints.png":::|
+|:::image type="content" source="media/dax-unicode-character-behavior/unicodecharacterbehavior-codeunits.png" alt-text="Screenshot of a table showing Column 1 and StringLength. StringLength values are 1, 3 and 4." lightbox="media/dax-unicode-character-behavior/unicodecharacterbehavior-codeunits.png":::|:::image type="content" source="media/dax-unicode-character-behavior/unicodecharacterbehavior-codepoints.png" alt-text="Screenshot of a table showing Column 1 and StringLength. StringLength values are 1, 2 and 2." lightbox="media/dax-unicode-character-behavior/unicodecharacterbehavior-codepoints.png":::|
  	 
 Notice how on the left each Unicode character has length 2, where on the right, each Unicode character has length 1.
 

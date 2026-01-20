@@ -27,6 +27,8 @@ items:
             href: best-practices/dax-avoid-avoid-filter-as-filter-argument.md 
           - name: "Column and measure references"
             href: best-practices/dax-column-measure-references.md 
+          - name: "Configure Chinese coded character set (GB18030-2022) support"
+            href: best-practices/dax-unicode-character-behavior.md
           - name: "DIVIDE function vs divide operator (/)"
             href: best-practices/dax-divide-function-operator.md
           - name: "Use SELECTEDVALUE instead of VALUES"
