@@ -30,7 +30,7 @@ A text string containing the specified right-most characters.
 
 ## Remarks
 
-- RIGHT always counts each character, whether single-byte or double-byte, as 1, no matter what the default language setting is.
+- [!INCLUDE [function-unicodecharacterbehavior](includes/function-unicodecharacterbehavior.md)]
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
