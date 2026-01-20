@@ -28,8 +28,8 @@ Introduces a statement that defines the starting value at which the query result
 
 ## Related content
 
-[ORDER BY](orderby-statement-dax.md)
-[EVALUATE](evaluate-statement-dax.md)
-[VAR](var-dax.md)
-[DEFINE](define-statement-dax.md)
-[DAX queries](dax-queries.md)
+- [ORDER BY](orderby-statement-dax.md)
+- [EVALUATE](evaluate-statement-dax.md)
+- [VAR](var-dax.md)
+- [DEFINE](define-statement-dax.md)
+- [DAX queries](dax-queries.md)
