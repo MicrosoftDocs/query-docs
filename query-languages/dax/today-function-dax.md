@@ -20,11 +20,11 @@ A date (`datetime`).
 
 ## Remarks
 
-- The TODAY function is useful when you need to have the current date displayed on a worksheet, regardless of when you open the workbook. It is also useful for calculating intervals.
+- The TODAY function is useful when you need to have the current date displayed in a report, regardless of when you open it. It is also useful for calculating intervals.
 
-- If the TODAY function does not update the date when you expect it to, you might need to change the settings that control when the column or workbook is refreshed..
+- If the TODAY function does not update the date when you expect it to, you might need to change the settings that control when the report or semantic model is refreshed.
 
-- The NOW function is similar but returns the exact time, whereas TODAY returns the time value 12:00:00 PM for all dates.
+- The NOW function is similar but returns the exact time, whereas TODAY returns the time value 12:00:00 AM (midnight) for all dates.
 
 ## Example
 
