@@ -27,11 +27,11 @@ Data Analysis Expressions (DAX) includes time-intelligence functions that enable
 |[ENDOFYEAR](endofyear-function-dax.md)     | Returns the last date of the year in the current context for the specified column of dates.        |
 |[FIRSTDATE](firstdate-function-dax.md)     | Returns the first date in the current context for the specified column of dates.         |
 |[LASTDATE](lastdate-function-dax.md)      |  Returns the last date in the current context for the specified column of dates.       |
-|[NEXTDAY](nextday-function-dax.md)      |  Returns a table that contains a column of all dates from the next day, based on the first date specified in the dates column in the current context.       |
-|[NEXTWEEK](nextweek-function-dax.md)     |  Returns a table that contains a column of all dates from the next week, based on the first date in the dates column in the current context.  |
-|[NEXTMONTH](nextmonth-function-dax.md)     |  Returns a table that contains a column of all dates from the next month, based on the first date in the dates column in the current context.       |
-|[NEXTQUARTER](nextquarter-function-dax.md)     |  Returns a table that contains a column of all dates in the next quarter, based on the first date specified in the dates column, in the current context.        |
-|[NEXTYEAR](nextyear-function-dax.md)      | Returns a table that contains a column of all dates in the next year, based on the first date in the dates column, in the current context.          |
+|[NEXTDAY](nextday-function-dax.md)      |  Returns a table that contains a column of all dates from the next day, based on the last date specified in the dates column in the current context.       |
+|[NEXTWEEK](nextweek-function-dax.md)     |  Returns a table that contains a column of all dates from the next week, based on the last date in the dates column in the current context.  |
+|[NEXTMONTH](nextmonth-function-dax.md)     |  Returns a table that contains a column of all dates from the next month, based on the last date in the dates column in the current context.       |
+|[NEXTQUARTER](nextquarter-function-dax.md)     |  Returns a table that contains a column of all dates in the next quarter, based on the last date specified in the dates column, in the current context.        |
+|[NEXTYEAR](nextyear-function-dax.md)      | Returns a table that contains a column of all dates in the next year, based on the last date in the dates column, in the current context.          |
 |[OPENINGBALANCEWEEK](openingbalanceweek-function-dax.md)     | Evaluates the expression at the first date of the week in the current context.         |
 |[OPENINGBALANCEMONTH](openingbalancemonth-function-dax.md)     | Evaluates the expression at the first date of the month in the current context.         |
 |[OPENINGBALANCEQUARTER](openingbalancequarter-function-dax.md)     | Evaluates the expression at the first date of the quarter, in the current context.         |
@@ -41,7 +41,7 @@ Data Analysis Expressions (DAX) includes time-intelligence functions that enable
 |[PREVIOUSWEEK](previousweek-function-dax.md)      | Returns a table that contains a column of all dates representing the week that is previous to the first date in the dates column, in the current context.        |
 |[PREVIOUSMONTH](previousmonth-function-dax.md)     |  Returns a table that contains a column of all dates from the previous month, based on the first date in the dates column, in the current context.       |
 |[PREVIOUSQUARTER](previousquarter-function-dax.md)      |  Returns a table that contains a column of all dates from the previous quarter, based on the first date in the dates column, in the current context.       |
-|[PREVIOUSYEAR](previousyear-function-dax.md)       |  Returns a table that contains a column of all dates from the previous year, given the last date in the dates column, in the current context.        |
+|[PREVIOUSYEAR](previousyear-function-dax.md)       |  Returns a table that contains a column of all dates from the previous year, based on the first date in the dates column, in the current context.        |
 |[SAMEPERIODLASTYEAR](sameperiodlastyear-function-dax.md)     |  Returns a table that contains a column of dates shifted one year back in time from the dates in the specified dates column, in the current context.       |
 |[STARTOFWEEK](startofweek-function-dax.md)     | Returns the first date of the week in the current context for the specified column of dates.          |
 |[STARTOFMONTH](startofmonth-function-dax.md)     | Returns the first date of the month in the current context for the specified column of dates.          |
