@@ -11,7 +11,7 @@ Applies the result of a table expression as filters to columns from an unrelated
 ## Syntax
 
 ```dax
-TREATAS(table_expression, <column>[, <column>[, <column>[,…]]]} )
+TREATAS(table_expression, <column>[, <column>[, <column>[,…]]])
 ```
 
 ### Parameters
