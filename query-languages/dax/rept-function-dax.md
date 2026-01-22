@@ -58,4 +58,4 @@ The following example returns the string in the column, [MyText], repeated for t
 
 ## Related content
 
-[Text functions](text-functions-dax.md)
+- [Text functions](text-functions-dax.md)

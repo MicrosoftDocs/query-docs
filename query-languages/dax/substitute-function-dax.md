@@ -46,5 +46,5 @@ The following formula creates a copy of the column [Product Code] that substitut
 
 ## Related content
 
-[Text functions](text-functions-dax.md)
-[REPLACE](replace-function-dax.md)
+- [Text functions](text-functions-dax.md)
+- [REPLACE](replace-function-dax.md)

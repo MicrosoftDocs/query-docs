@@ -42,4 +42,4 @@ Total Sales Remote = EXTERNALMEASURE("Total Sales", CURRENCY, "DirectQuery to AS
 
 ## Related content
 
-[Composite models](/power-bi/transform-model/desktop-composite-models)
+- [Composite models](/power-bi/transform-model/desktop-composite-models)

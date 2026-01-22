@@ -51,5 +51,5 @@ See [IF Examples](if-function-dax.md#examples).
 
 ## Related content
 
-[IF function](if-function-dax.md)
-[Logical functions](logical-functions-dax.md)
+- [IF function](if-function-dax.md)
+- [Logical functions](logical-functions-dax.md)

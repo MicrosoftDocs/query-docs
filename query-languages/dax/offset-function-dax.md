@@ -151,10 +151,10 @@ The screenshot below shows the visual matrix and the visual calculation expressi
 
 ## Related content
 
-[INDEX](index-function-dax.md)
-[ORDERBY](orderby-function-dax.md)
-[PARTITIONBY](partitionby-function-dax.md)
-[MATCHBY](matchby-function-dax.md)
-[WINDOW](window-function-dax.md)
-[RANK](rank-function-dax.md)
-[ROWNUMBER](rownumber-function-dax.md)
+- [INDEX](index-function-dax.md)
+- [ORDERBY](orderby-function-dax.md)
+- [PARTITIONBY](partitionby-function-dax.md)
+- [MATCHBY](matchby-function-dax.md)
+- [WINDOW](window-function-dax.md)
+- [RANK](rank-function-dax.md)
+- [ROWNUMBER](rownumber-function-dax.md)

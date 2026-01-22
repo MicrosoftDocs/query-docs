@@ -79,5 +79,5 @@ Geography[Country],
 
 ## Related content
 
-[SUMMARIZE function](summarize-function-dax.md)
-[SUMMARIZECOLUMNS function](summarizecolumns-function-dax.md)
+- [SUMMARIZE function](summarize-function-dax.md)
+- [SUMMARIZECOLUMNS function](summarizecolumns-function-dax.md)

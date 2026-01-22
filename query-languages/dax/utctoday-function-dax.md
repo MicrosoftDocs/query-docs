@@ -41,5 +41,5 @@ Returns:
 
 ## Related content
 
-[NOW function](now-function-dax.md)
-[UTCNOW function](utcnow-function-dax.md)
+- [NOW function](now-function-dax.md)
+- [UTCNOW function](utcnow-function-dax.md)

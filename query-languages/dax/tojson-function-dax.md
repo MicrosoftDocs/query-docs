@@ -58,5 +58,5 @@ Returns:
 
 ## Related content
 
-[TOCSV](tocsv-function-dax.md)
-[EVALUATEANDLOG](evaluateandlog-function-dax.md)
+- [TOCSV](tocsv-function-dax.md)
+- [EVALUATEANDLOG](evaluateandlog-function-dax.md)

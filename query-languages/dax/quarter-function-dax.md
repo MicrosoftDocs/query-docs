@@ -70,6 +70,6 @@ Returns:
 
 ## Related content
 
-[YEAR](year-function-dax.md)
-[MONTH](month-function-dax.md)
-[DAY](day-function-dax.md)
+- [YEAR](year-function-dax.md)
+- [MONTH](month-function-dax.md)
+- [DAY](day-function-dax.md)

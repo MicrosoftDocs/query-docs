@@ -56,5 +56,5 @@ Returns:
 
 ## Related content
 
-[TOJSON](tojson-function-dax.md)
-[EVALUATEANDLOG](evaluateandlog-function-dax.md)
+- [TOJSON](tojson-function-dax.md)
+- [EVALUATEANDLOG](evaluateandlog-function-dax.md)

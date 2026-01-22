@@ -52,7 +52,7 @@ The following formula returns a variable number of digits from the product code 
 
 ## Related content
 
-[Text functions](text-functions-dax.md)
-[LEFT](left-function-dax.md)
-[MID](mid-function-dax.md)
+- [Text functions](text-functions-dax.md)
+- [LEFT](left-function-dax.md)
+- [MID](mid-function-dax.md)
 

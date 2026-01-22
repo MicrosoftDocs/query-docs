@@ -50,5 +50,5 @@ SELECTEDMEASURE() < 1000000, "$#,##0,.0 K",   //Values between 1000 and 1000000 
 
 ## Related content
 
-[SELECTEDMEASURENAME](selectedmeasurename-function-dax.md)
-[ISSELECTEDMEASURE](isselectedmeasure-function-dax.md) 
+- [SELECTEDMEASURENAME](selectedmeasurename-function-dax.md)
+- [ISSELECTEDMEASURE](isselectedmeasure-function-dax.md) 

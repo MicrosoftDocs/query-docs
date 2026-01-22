@@ -33,4 +33,4 @@ The following formula calculates the area of a circle given the radius in the co
 
 ## Related content
 
-[Math and Trig functions](math-and-trig-functions-dax.md)
+- [Math and Trig functions](math-and-trig-functions-dax.md)

@@ -61,8 +61,8 @@ The following sample formula returns tagged primary columns that corresponds to 
 
 ## Related content
 
-[Date and time functions](date-and-time-functions-dax.md)
-[Time intelligence functions](time-intelligence-functions-dax.md)
-[ENDOFWEEK function](endofweek-function-dax.md)
-[ENDOFMONTH function](endofmonth-function-dax.md)
-[ENDOFQUARTER function](endofquarter-function-dax.md)
+- [Date and time functions](date-and-time-functions-dax.md)
+- [Time intelligence functions](time-intelligence-functions-dax.md)
+- [ENDOFWEEK function](endofweek-function-dax.md)
+- [ENDOFMONTH function](endofmonth-function-dax.md)
+- [ENDOFQUARTER function](endofquarter-function-dax.md)

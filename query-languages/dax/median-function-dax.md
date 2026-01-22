@@ -45,4 +45,4 @@ The following computes the median of a column named Age in a table named Custome
 
 ## Related content
 
-[MEDIANX function](medianx-function-dax.md)
+- [MEDIANX function](medianx-function-dax.md)

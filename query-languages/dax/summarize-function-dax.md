@@ -202,4 +202,4 @@ Returns the following table,
 
 ## Related content
 
-[SUMMARIZECOLUMNS](summarizecolumns-function-dax.md)
+- [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md)

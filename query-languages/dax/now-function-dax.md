@@ -39,5 +39,5 @@ The following example returns the current date and time plus 3.5 days:
 
 ## Related content
 
-[UTCNOW function](utcnow-function-dax.md)
-[TODAY function](today-function-dax.md)
+- [UTCNOW function](utcnow-function-dax.md)
+- [TODAY function](today-function-dax.md)

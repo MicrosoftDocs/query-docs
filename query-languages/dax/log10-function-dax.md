@@ -41,8 +41,8 @@ The following formulas return the same result, 2:
 
 ## Related content
 
-[Math and Trig functions](math-and-trig-functions-dax.md)
-[EXP function](exp-function-dax.md)
-[LOG function](log-function-dax.md)
-[LOG function](log-function-dax.md)
+- [Math and Trig functions](math-and-trig-functions-dax.md)
+- [EXP function](exp-function-dax.md)
+- [LOG function](log-function-dax.md)
+- [LOG function](log-function-dax.md)
 

@@ -60,6 +60,6 @@ The following formula first filters the InternetSales table by using a FILTER ex
 
 ## Related content
 
-[MAX function](max-function-dax.md)
-[MAXA function](maxa-function-dax.md)
-[Statistical functions](statistical-functions-dax.md)
+- [MAX function](max-function-dax.md)
+- [MAXA function](maxa-function-dax.md)
+- [Statistical functions](statistical-functions-dax.md)

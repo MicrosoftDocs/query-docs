@@ -44,8 +44,8 @@ The following sample formula returns primary tagged columns for the first date o
 
 ## Related content
 
-[Date and time functions](date-and-time-functions-dax.md)
-[Time intelligence functions](time-intelligence-functions-dax.md)
-[STARTOFYEAR](startofyear-function-dax.md)
-[STARTOFQUARTER](startofquarter-function-dax.md)
-[STARTOFMONTH](startofmonth-function-dax.md)
+- [Date and time functions](date-and-time-functions-dax.md)
+- [Time intelligence functions](time-intelligence-functions-dax.md)
+- [STARTOFYEAR](startofyear-function-dax.md)
+- [STARTOFQUARTER](startofquarter-function-dax.md)
+- [STARTOFMONTH](startofmonth-function-dax.md)

@@ -59,8 +59,8 @@ The following sample formula creates a table that returns tagged columns that co
 
 ## Related content
 
-[Date and time functions](date-and-time-functions-dax.md)
-[Time intelligence functions](time-intelligence-functions-dax.md)
-[STARTOFQUARTER](startofquarter-function-dax.md)
-[STARTOFMONTH](startofmonth-function-dax.md)
-[STARTOFWEEK](startofweek-function-dax.md)
+- [Date and time functions](date-and-time-functions-dax.md)
+- [Time intelligence functions](time-intelligence-functions-dax.md)
+- [STARTOFQUARTER](startofquarter-function-dax.md)
+- [STARTOFMONTH](startofmonth-function-dax.md)
+- [STARTOFWEEK](startofweek-function-dax.md)

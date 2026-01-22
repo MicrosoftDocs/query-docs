@@ -148,9 +148,9 @@ The screenshot below shows the visual matrix and the first visual calculation ex
 
 ## Related content
 
-[OFFSET](offset-function-dax.md)
-[ORDERBY](orderby-function-dax.md)
-[PARTITIONBY](partitionby-function-dax.md)
-[WINDOW](window-function-dax.md)
-[RANK](rank-function-dax.md)
-[ROWNUMBER](rownumber-function-dax.md)
+- [OFFSET](offset-function-dax.md)
+- [ORDERBY](orderby-function-dax.md)
+- [PARTITIONBY](partitionby-function-dax.md)
+- [WINDOW](window-function-dax.md)
+- [RANK](rank-function-dax.md)
+- [ROWNUMBER](rownumber-function-dax.md)

@@ -70,8 +70,8 @@ If you need totals that add up, consider using [COUNT](count-function-dax.md) or
 
 ## Related content
 
-[COUNT function](count-function-dax.md)
-[COUNTA function](counta-function-dax.md)
-[COUNTAX function](countax-function-dax.md)
-[COUNTX function](countx-function-dax.md)
-[Statistical functions](statistical-functions-dax.md)
+- [COUNT function](count-function-dax.md)
+- [COUNTA function](counta-function-dax.md)
+- [COUNTAX function](countax-function-dax.md)
+- [COUNTX function](countx-function-dax.md)
+- [Statistical functions](statistical-functions-dax.md)

@@ -48,6 +48,6 @@ If you use multiple operations in the expression used as the second argument, yo
 
 ## Related content
 
-[AVERAGE function](average-function-dax.md)
-[AVERAGEA function](averagea-function-dax.md)
-[Statistical functions](statistical-functions-dax.md)
+- [AVERAGE function](average-function-dax.md)
+- [AVERAGEA function](averagea-function-dax.md)
+- [Statistical functions](statistical-functions-dax.md)

@@ -78,6 +78,6 @@ Returns,
 
 ## Related content
 
-[FIND](find-function-dax.md)
-[REPLACE](replace-function-dax.md)
-[Text functions](text-functions-dax.md)
+- [FIND](find-function-dax.md)
+- [REPLACE](replace-function-dax.md)
+- [Text functions](text-functions-dax.md)

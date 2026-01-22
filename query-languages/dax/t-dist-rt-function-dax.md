@@ -44,7 +44,7 @@ Returns
 
 ## Related content
 
-[T.DIST](t-dist-function-dax.md)
-[T.DIST.2T](t-dist-2t-function-dax.md)
-[T.INV](t-inv-function-dax.md)
-[T.INV.2t](t-inv-2t-function-dax.md)
+- [T.DIST](t-dist-function-dax.md)
+- [T.DIST.2T](t-dist-2t-function-dax.md)
+- [T.INV](t-inv-function-dax.md)
+- [T.INV.2t](t-inv-2t-function-dax.md)

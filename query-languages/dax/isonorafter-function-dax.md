@@ -68,4 +68,4 @@ Returns:
 
 ## Related content
 
-[ISAFTER](isafter-function-dax.md)
+- [ISAFTER](isafter-function-dax.md)

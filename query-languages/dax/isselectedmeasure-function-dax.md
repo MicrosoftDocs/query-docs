@@ -46,5 +46,5 @@ IF (
 
 ## Related content
 
-[SELECTEDMEASURE](selectedmeasure-function-dax.md)
-[SELECTEDMEASURENAME](selectedmeasurename-function-dax.md)
+- [SELECTEDMEASURE](selectedmeasure-function-dax.md)
+- [SELECTEDMEASURENAME](selectedmeasurename-function-dax.md)
