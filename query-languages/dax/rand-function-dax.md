@@ -61,6 +61,6 @@ INT(RAND()*100)
 
 ## Related content
 
-[Math and Trig functions](math-and-trig-functions-dax.md)
-[Statistical functions](statistical-functions-dax.md)
+- [Math and Trig functions](math-and-trig-functions-dax.md)
+- [Statistical functions](statistical-functions-dax.md)
 

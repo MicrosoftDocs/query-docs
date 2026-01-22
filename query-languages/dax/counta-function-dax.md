@@ -42,7 +42,7 @@ The following example returns the number of all rows in the `Reseller` table tha
 
 ## Related content
 
-[COUNT function](count-function-dax.md)
-[COUNTAX function](countax-function-dax.md)
-[COUNTX function](countx-function-dax.md)
-[Statistical functions](statistical-functions-dax.md)
+- [COUNT function](count-function-dax.md)
+- [COUNTAX function](countax-function-dax.md)
+- [COUNTX function](countx-function-dax.md)
+- [Statistical functions](statistical-functions-dax.md)

@@ -39,5 +39,5 @@ This formula uses the TODAY function as an argument for the YEAR function to obt
 
 ## Related content
 
-[Date and time functions](date-and-time-functions-dax.md)
-[NOW](now-function-dax.md)
+- [Date and time functions](date-and-time-functions-dax.md)
+- [NOW](now-function-dax.md)

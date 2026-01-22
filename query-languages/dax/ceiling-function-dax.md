@@ -59,8 +59,8 @@ The following formula returns similar results as the previous example, but uses 
 
 ## Related content
 
-[Math and Trig functions](math-and-trig-functions-dax.md)
-[FLOOR function](floor-function-dax.md)
-[ISO.CEILING function](iso-ceiling-function-dax.md)
-[ROUNDUP function](roundup-function-dax.md)
+- [Math and Trig functions](math-and-trig-functions-dax.md)
+- [FLOOR function](floor-function-dax.md)
+- [ISO.CEILING function](iso-ceiling-function-dax.md)
+- [ROUNDUP function](roundup-function-dax.md)
 

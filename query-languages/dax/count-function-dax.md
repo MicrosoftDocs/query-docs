@@ -55,7 +55,7 @@ To count logical values or text, use the COUNTA or COUNTAX functions.
 
 ## Related content
 
-[COUNTA function](counta-function-dax.md)
-[COUNTAX function](countax-function-dax.md)
-[COUNTX function](countx-function-dax.md)
-[Statistical functions](statistical-functions-dax.md)
+- [COUNTA function](counta-function-dax.md)
+- [COUNTAX function](countax-function-dax.md)
+- [COUNTX function](countx-function-dax.md)
+- [Statistical functions](statistical-functions-dax.md)

@@ -483,11 +483,11 @@ And this expression does indeed return the results we're after:
 
 ## Related content
 
-[ORDERBY](../orderby-function-dax.md)
-[PARTITIONBY](../partitionby-function-dax.md)
-[MATCHBY](../matchby-function-dax.md)
-[INDEX](../index-function-dax.md)
-[OFFSET](../offset-function-dax.md)
-[WINDOW](../window-function-dax.md)
-[RANK](../rank-function-dax.md)
-[ROWNUMBER](../rownumber-function-dax.md)
+- [ORDERBY](../orderby-function-dax.md)
+- [PARTITIONBY](../partitionby-function-dax.md)
+- [MATCHBY](../matchby-function-dax.md)
+- [INDEX](../index-function-dax.md)
+- [OFFSET](../offset-function-dax.md)
+- [WINDOW](../window-function-dax.md)
+- [RANK](../rank-function-dax.md)
+- [ROWNUMBER](../rownumber-function-dax.md)

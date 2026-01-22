@@ -74,5 +74,5 @@ Returns,
 
 ## Related content
 
-[SEARCH](search-function-dax.md)
-[Text functions](text-functions-dax.md)
+- [SEARCH](search-function-dax.md)
+- [Text functions](text-functions-dax.md)

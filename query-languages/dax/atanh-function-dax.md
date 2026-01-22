@@ -38,4 +38,4 @@ Returns the inverse hyperbolic tangent of a number.
 
 ## Related content
 
-[ATAN function](atan-function-dax.md)
+- [ATAN function](atan-function-dax.md)

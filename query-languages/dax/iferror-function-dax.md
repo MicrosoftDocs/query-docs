@@ -52,4 +52,4 @@ The following example returns 9999 if the expression 25/0 evaluates to an error.
 
 ## Related content
 
-[Logical functions](logical-functions-dax.md)
+- [Logical functions](logical-functions-dax.md)

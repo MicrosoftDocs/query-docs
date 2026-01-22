@@ -50,4 +50,4 @@ The following computes the median age of customers who live in the USA.
 
 ## Related content
 
-[MEDIAN function](median-function-dax.md)
+- [MEDIAN function](median-function-dax.md)

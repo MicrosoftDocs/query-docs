@@ -68,5 +68,5 @@ The following example returns the week number of the date stored in the column, 
 
 ## Related content
 
-[YEARFRAC function](yearfrac-function-dax.md)
-[WEEKDAY function](weekday-function-dax.md)
+- [YEARFRAC function](yearfrac-function-dax.md)
+- [WEEKDAY function](weekday-function-dax.md)

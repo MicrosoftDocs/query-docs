@@ -92,6 +92,6 @@ If `day` is greater than the number of days in the month specified, `day` adds t
 
 ## Related content
 
-[Date and time functions](date-and-time-functions-dax.md)
-[DAY function](day-function-dax.md)
-[TODAY function](today-function-dax.md)
+- [Date and time functions](date-and-time-functions-dax.md)
+- [DAY function](day-function-dax.md)
+- [TODAY function](today-function-dax.md)

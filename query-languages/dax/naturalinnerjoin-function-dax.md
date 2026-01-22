@@ -42,4 +42,4 @@ A table which includes only rows for which the values in the common columns spec
 
 ## Related content
 
-[NATURALLEFTOUTERJOIN](naturalleftouterjoin-function-dax.md)
+- [NATURALLEFTOUTERJOIN](naturalleftouterjoin-function-dax.md)

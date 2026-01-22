@@ -44,6 +44,6 @@ The following table shows the results when the example formula is used in a repo
 
 ## Related content
 
-[FALSE](false-function-dax.md)
-[NOT](not-function-dax.md)
-[IF](if-function-dax.md)
+- [FALSE](false-function-dax.md)
+- [NOT](not-function-dax.md)
+- [IF](if-function-dax.md)

@@ -50,5 +50,5 @@ If you do not need to filter the column, use the SUM function. The SUM function 
 
 ## Related content
 
-[SUM](sum-function-dax.md)
-[Statistical functions](statistical-functions-dax.md)
+- [SUM](sum-function-dax.md)
+- [Statistical functions](statistical-functions-dax.md)

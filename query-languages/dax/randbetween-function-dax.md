@@ -40,5 +40,5 @@ The following formula returns a random number between 1 and 10.
 
 ## Related content
 
-[Math and Trig functions](math-and-trig-functions-dax.md)
-[Statistical functions](statistical-functions-dax.md)
+- [Math and Trig functions](math-and-trig-functions-dax.md)
+- [Statistical functions](statistical-functions-dax.md)

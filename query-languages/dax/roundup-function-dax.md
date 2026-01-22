@@ -72,8 +72,8 @@ When `num_digits` is less than zero, the number of places to the left of the dec
 
 ## Related content
 
-[Math and Trig functions](math-and-trig-functions-dax.md)
-[ROUND](round-function-dax.md)
-[ROUNDDOWN](rounddown-function-dax.md)
-[MROUND](mround-function-dax.md)
-[INT](int-function-dax.md)
+- [Math and Trig functions](math-and-trig-functions-dax.md)
+- [ROUND](round-function-dax.md)
+- [ROUNDDOWN](rounddown-function-dax.md)
+- [MROUND](mround-function-dax.md)
+- [INT](int-function-dax.md)

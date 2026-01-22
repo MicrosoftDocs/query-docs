@@ -55,8 +55,8 @@ The following sample formula creates a table that returns tagged primary columns
 
 ## Related content
 
-[Date and time functions](date-and-time-functions-dax.md)
-[Time intelligence functions](time-intelligence-functions-dax.md)
-[STARTOFYEAR](startofyear-function-dax.md)
-[STARTOFQUARTER](startofquarter-function-dax.md)
-[STARTOFWEEK](startofweek-function-dax.md)
+- [Date and time functions](date-and-time-functions-dax.md)
+- [Time intelligence functions](time-intelligence-functions-dax.md)
+- [STARTOFYEAR](startofyear-function-dax.md)
+- [STARTOFQUARTER](startofquarter-function-dax.md)
+- [STARTOFWEEK](startofweek-function-dax.md)
