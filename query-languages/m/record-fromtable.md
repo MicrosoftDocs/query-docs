@@ -14,7 +14,7 @@ Record.FromTable(<b>table</b> as table) as record
   
 ## About
 
-Returns a record from a table of records `table` containing field names and value names `{[Name = name, Value = value]}`. An exception is thrown if the field names are not unique.
+Returns a record from a table of records `table` containing field names and value names `{[Name = name, Value = value]}`. An error is raised if the field names are not unique.
 
 ## Example 1
 

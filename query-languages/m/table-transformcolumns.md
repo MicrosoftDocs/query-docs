@@ -24,7 +24,7 @@ Transforms the specified table by applying each column operation in a list.
 * `table`: The table to transform.
 * `transformOperations`: The transformations to make to the table. The format of this parameter is either { column name, transformation } or { column name, transformation, new column type }.
 * `defaultTransformation`: (Optional) The default transformation applied to all columns not listed in `transformOperations`.
-* `missingField`: (Optional) Specifies the expected action for missing values. If a column listed in `transformOperations` doesn't exist, an exception is thrown (`MissingField.Error`) unless this parameter specifies an alternative. Use one of the following values:
+* `missingField`: (Optional) Specifies the expected action for missing values. If a column listed in `transformOperations` doesn't exist, an error is raised (`MissingField.Error`) unless this parameter specifies an alternative. Use one of the following values:
   * `MissingField.UseNull`: Any missing fields are included as `null` values.
   * `MissingField.Ignore`: Any missing fields are ignored.
 

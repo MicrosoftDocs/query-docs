@@ -18,7 +18,7 @@ DateTimeZone.SwitchZone(
   
 ## About
 
-Changes timezone information to on the datetimezone value `dateTimeZone` to the new timezone information provided by `timezoneHours` and optionally `timezoneMinutes`. If `dateTimeZone` does not have a timezone component, an exception is thrown.
+Changes timezone information to on the datetimezone value `dateTimeZone` to the new timezone information provided by `timezoneHours` and optionally `timezoneMinutes`. If `dateTimeZone` does not have a timezone component, an error is raised.
 
 ## Example 1
 

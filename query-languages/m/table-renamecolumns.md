@@ -18,7 +18,7 @@ Table.RenameColumns(
   
 ## About
 
-Performs the given renames to the columns in table `table`. A replacement operation `renames` consists of a list of two values, the old column name and new column name, provided in a list. If the column doesn't exist, an exception is thrown unless the optional parameter `missingField` specifies an alternative (eg. [MissingField.UseNull](missingfield-type.md) or [MissingField.Ignore](missingfield-type.md)).
+Performs the given renames to the columns in table `table`. A replacement operation `renames` consists of a list of two values, the old column name and new column name, provided in a list. If the column doesn't exist, an error is raised unless the optional parameter `missingField` specifies an alternative (eg. [MissingField.UseNull](missingfield-type.md) or [MissingField.Ignore](missingfield-type.md)).
 
 ## Example 1
 
