@@ -52,7 +52,21 @@ Using the above measure in a table with calendar year in the side and product ca
 ||||||1|1|
 |**Grand Total**|**1315**|**3153**|**2410**|**2646**|**1**|**3797**|
 
-In the above example, note that the rows Grand Total numbers do not add up, this happens because the same order might contain line items, in the same order, from different product categories.
+### Understanding distinct count totals
+
+Distinct count totals are not additive. The Grand Total is not the sum of the values in each category.
+
+In the table above, you might expect the Grand Total for 2005 (366) to equal the sum of Accessories (135) + Bikes (345) + Clothing (242) + Components (205) = 927. However, the actual Grand Total is 366, which is much lower.
+
+This happens because the same order can appear in multiple categories. For example, if order #1001 contains both a bike and an accessory, that order is counted once in the Bikes column and once in the Accessories column. But when calculating the Grand Total for the row, order #1001 is only counted once because it's still just one distinct order.
+
+This is the correct and expected behavior of distinct counts:
+
+- **Category values**: Count distinct orders within that specific category only.
+- **Row totals**: Count distinct orders across all categories for that year - each order is counted only once, regardless of how many categories it appears in.
+- **Grand Total**: Count distinct orders across the entire dataset.
+
+If you need totals that add up, consider using [COUNT](count-function-dax.md) or [COUNTROWS](countrows-function-dax.md) instead. However, be aware that these functions count rows, not distinct values, and will give different results.
 
 ## Related content
 
