@@ -35,7 +35,7 @@ ISCROSSFILTERED(<TableNameOrColumnName>)
 
 ## Related content
 
-[ISFILTERED function](isfiltered-function-dax.md)
-[FILTERS function](filters-function-dax.md)
-[HASONEFILTER function](hasonefilter-function-dax.md)
-[HASONEVALUE function](hasonevalue-function-dax.md)
+- [ISFILTERED function](isfiltered-function-dax.md)
+- [FILTERS function](filters-function-dax.md)
+- [HASONEFILTER function](hasonefilter-function-dax.md)
+- [HASONEVALUE function](hasonevalue-function-dax.md)

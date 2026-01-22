@@ -46,4 +46,4 @@ If the `num_chars` argument is a number that is larger than the number of charac
 
 ## Related content
 
-[Text functions](text-functions-dax.md)
+- [Text functions](text-functions-dax.md)

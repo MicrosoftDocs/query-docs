@@ -59,5 +59,5 @@ The following example returns 1.
 
 ## Related content
 
-[QUOTIENT function](quotient-function-dax.md)
-[Math and Trig functions](math-and-trig-functions-dax.md)
+- [QUOTIENT function](quotient-function-dax.md)
+- [Math and Trig functions](math-and-trig-functions-dax.md)

@@ -41,5 +41,5 @@ A table containing a single column and single row with the computed last value.
 
 ## Related content
 
-[FIRSTNONBLANK function](firstnonblank-function-dax.md)
-[Statistical functions](statistical-functions-dax.md)
+- [FIRSTNONBLANK function](firstnonblank-function-dax.md)
+- [Statistical functions](statistical-functions-dax.md)

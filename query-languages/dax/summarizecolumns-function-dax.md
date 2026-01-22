@@ -363,4 +363,4 @@ ValueFilterBehavior is a model property that controls how value filter is applie
 
 ## Related content
 
-[SUMMARIZE](summarize-function-dax.md)
+- [SUMMARIZE](summarize-function-dax.md)

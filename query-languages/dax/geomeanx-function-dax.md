@@ -46,4 +46,4 @@ The following computes the geometric mean of the ReturnPct column in the Investm
 
 ## Related content
 
-[GEOMEAN function](geomean-function-dax.md)
+- [GEOMEAN function](geomean-function-dax.md)

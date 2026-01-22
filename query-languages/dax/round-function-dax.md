@@ -63,10 +63,10 @@ The following formula rounds 21.5 to one decimal place to the left of the decima
 ```
 
 ## Related content
-[Math and Trig functions](math-and-trig-functions-dax.md)
-[ROUND](round-function-dax.md)
-[ROUNDDOWN](rounddown-function-dax.md)
-[MROUND](mround-function-dax.md)
-[INT](int-function-dax.md)
-[TRUNC](trunc-function-dax.md)
+- [Math and Trig functions](math-and-trig-functions-dax.md)
+- [ROUND](round-function-dax.md)
+- [ROUNDDOWN](rounddown-function-dax.md)
+- [MROUND](mround-function-dax.md)
+- [INT](int-function-dax.md)
+- [TRUNC](trunc-function-dax.md)
 

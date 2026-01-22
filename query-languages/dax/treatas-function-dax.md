@@ -52,6 +52,6 @@ CALCULATE(
 
 ## Related content
 
-[INTERSECT](intersect-function-dax.md)
-[FILTER](filter-function-dax.md)
-[USERELATIONSHIP](userelationship-function-dax.md)
+- [INTERSECT](intersect-function-dax.md)
+- [FILTER](filter-function-dax.md)
+- [USERELATIONSHIP](userelationship-function-dax.md)

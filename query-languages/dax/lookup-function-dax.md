@@ -58,4 +58,4 @@ LookupExample3 = LOOKUP([Sales Amount], [Fiscal Year], "FY2018", [Fiscal Quarter
 
 ## Related content
 
-[LOOKUPWITHTOTALS](lookupwithtotals-function-dax.md)
+- [LOOKUPWITHTOTALS](lookupwithtotals-function-dax.md)

@@ -108,6 +108,6 @@ Next, examine the expression, `[$$ in WA !!]`. You might wonder how this formula
 
 ## Related content
 
-[Filter functions](filter-functions-dax.md)
-[CALCULATE function](calculate-function-dax.md)
-[CALCULATETABLE function](calculatetable-function-dax.md)
+- [Filter functions](filter-functions-dax.md)
+- [CALCULATE function](calculate-function-dax.md)
+- [CALCULATETABLE function](calculatetable-function-dax.md)

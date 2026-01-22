@@ -65,5 +65,5 @@ Returns a table with statistics regarding all columns from all tables in the mod
 
 ## Related content
 
-[Filter context](dax-overview.md#filter-context)
-[CALCULATETABLE function](calculatetable-function-dax.md)
+- [Filter context](dax-overview.md#filter-context)
+- [CALCULATETABLE function](calculatetable-function-dax.md)

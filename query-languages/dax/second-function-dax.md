@@ -53,7 +53,7 @@ The following formula returns 3, which is the number of seconds in the time repr
 
 ## Related content
 
-[Date and time functions](date-and-time-functions-dax.md)
-[HOUR](hour-function-dax.md)
-[MINUTE](minute-function-dax.md)
-[YEAR](year-function-dax.md)
+- [Date and time functions](date-and-time-functions-dax.md)
+- [HOUR](hour-function-dax.md)
+- [MINUTE](minute-function-dax.md)
+- [YEAR](year-function-dax.md)

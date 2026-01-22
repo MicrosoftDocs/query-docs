@@ -57,4 +57,4 @@ LookupWithTotalExample2 = lookupWithTotals([Sales Amount], [Category], "Bikes")
 
 ## Related content
 
-[Lookup](lookup-function-dax.md)
+- [Lookup](lookup-function-dax.md)

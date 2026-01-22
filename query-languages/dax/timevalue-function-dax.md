@@ -41,4 +41,4 @@ A date (`datetime`).
 
 ## Related content
 
-[Date and time functions](date-and-time-functions-dax.md)
+- [Date and time functions](date-and-time-functions-dax.md)

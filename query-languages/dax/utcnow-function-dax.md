@@ -39,5 +39,5 @@ Returns:
 
 ## Related content
 
-[NOW function](now-function-dax.md)
-[UTCTODAY function](utctoday-function-dax.md)
+- [NOW function](now-function-dax.md)
+- [UTCTODAY function](utctoday-function-dax.md)

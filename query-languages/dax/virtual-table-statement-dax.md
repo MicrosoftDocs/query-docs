@@ -80,8 +80,8 @@ The returned result is
 
 ## Related content
 
-[DEFINE](define-statement-dax.md)  
-[EVALUATE](evaluate-statement-dax.md)  
-[VAR](var-dax.md)  
-[Virtual Column](virtual-column-statement-dax.md)
-[DAX queries](dax-queries.md)  
+- [DEFINE](define-statement-dax.md)  
+- [EVALUATE](evaluate-statement-dax.md)  
+- [VAR](var-dax.md)  
+- [Virtual Column](virtual-column-statement-dax.md)
+- [DAX queries](dax-queries.md)  

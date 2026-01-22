@@ -159,5 +159,5 @@ Therefore, whenever you copy and paste formulas from Excel, be sure to review th
 
 ## Related content
 
-[DAX syntax](dax-syntax-reference.md)
-[DAX parameter-naming](dax-parameter-naming-conventions.md)
+- [DAX syntax](dax-syntax-reference.md)
+- [DAX parameter-naming](dax-parameter-naming-conventions.md)

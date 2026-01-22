@@ -91,5 +91,5 @@ The following shows what that you might get if you used this measure in a report
 
 ## Related content
 
-[RELATEDTABLE](relatedtable-function-dax.md)
-[Filter functions](filter-functions-dax.md)
+- [RELATEDTABLE](relatedtable-function-dax.md)
+- [Filter functions](filter-functions-dax.md)

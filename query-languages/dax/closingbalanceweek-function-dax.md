@@ -51,7 +51,7 @@ The following sample formula creates a measure that calculates the 'Week End Inv
 
 ## Related content
 
-[Time intelligence functions](time-intelligence-functions-dax.md)
-[CLOSINGBALANCEYEAR function](closingbalanceyear-function-dax.md)
-[CLOSINGBALANCEQUARTER function](closingbalancequarter-function-dax.md)
-[CLOSINGBALANCEMONTH function](closingbalancemonth-function-dax.md)
+- [Time intelligence functions](time-intelligence-functions-dax.md)
+- [CLOSINGBALANCEYEAR function](closingbalanceyear-function-dax.md)
+- [CLOSINGBALANCEQUARTER function](closingbalancequarter-function-dax.md)
+- [CLOSINGBALANCEMONTH function](closingbalancemonth-function-dax.md)

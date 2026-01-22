@@ -73,5 +73,5 @@ The following example creates a time based on the values in the columns, `intHou
 
 ## Related content
 
-[DATE](date-function-dax.md)
-[Date and time functions](date-and-time-functions-dax.md)
+- [DATE](date-function-dax.md)
+- [Date and time functions](date-and-time-functions-dax.md)

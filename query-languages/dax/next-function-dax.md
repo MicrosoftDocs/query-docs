@@ -51,6 +51,6 @@ The screenshot below shows the visual matrix and the visual calculation expressi
 
 ## Related content
 
-[FIRST](first-function-dax.md)
-[LAST](last-function-dax.md)
-[PREVIOUS](PREVIOUS-function-dax.md)
+- [FIRST](first-function-dax.md)
+- [LAST](last-function-dax.md)
+- [PREVIOUS](PREVIOUS-function-dax.md)

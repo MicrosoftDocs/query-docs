@@ -49,8 +49,8 @@ The following sample formula creates a measure that calculates the 'week running
 
 ## Related content
 
-[ALL](all-function-dax.md)
-[CALCULATE](calculate-function-dax.md)
-[TOTALYTD](totalytd-function-dax.md)
-[TOTALQTD](totalqtd-function-dax.md)
-[TOTALMTD](totalmtd-function-dax.md)
+- [ALL](all-function-dax.md)
+- [CALCULATE](calculate-function-dax.md)
+- [TOTALYTD](totalytd-function-dax.md)
+- [TOTALQTD](totalqtd-function-dax.md)
+- [TOTALMTD](totalmtd-function-dax.md)

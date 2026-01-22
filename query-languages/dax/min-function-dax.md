@@ -68,6 +68,6 @@ The following example returns the smallest value from the result of two scalar e
 
 ## Related content
 
-[MINA function](mina-function-dax.md)
-[MINX function](minx-function-dax.md)
-[Statistical functions](statistical-functions-dax.md)
+- [MINA function](mina-function-dax.md)
+- [MINX function](minx-function-dax.md)
+- [Statistical functions](statistical-functions-dax.md)

@@ -60,7 +60,7 @@ Depending on the language setting for the current user, :::no-loc text="USERCULT
 
 ## Related content
 
-[Expression-based titles in Power BI](/power-bi/create-reports/desktop-conditional-format-visual-titles)
-[USERNAME](username-function-dax.md)
-[USERPRINCIPALNAME](userprincipalname-function-dax.md)
-[USEROBJECTID](userobjectid-function-dax.md)
+- [Expression-based titles in Power BI](/power-bi/create-reports/desktop-conditional-format-visual-titles)
+- [USERNAME](username-function-dax.md)
+- [USERPRINCIPALNAME](userprincipalname-function-dax.md)
+- [USEROBJECTID](userobjectid-function-dax.md)

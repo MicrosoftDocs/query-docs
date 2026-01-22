@@ -54,9 +54,9 @@ The following example rounds the value of 31415.92654 down to 2 decimal places t
 
 ## Related content
 
-[Math and Trig functions](math-and-trig-functions-dax.md)
-[ROUND](round-function-dax.md)
-[ROUNDUP](roundup-function-dax.md)
-[ROUNDDOWN](rounddown-function-dax.md)
-[MROUND](mround-function-dax.md)
-[INT](int-function-dax.md)
+- [Math and Trig functions](math-and-trig-functions-dax.md)
+- [ROUND](round-function-dax.md)
+- [ROUNDUP](roundup-function-dax.md)
+- [ROUNDDOWN](rounddown-function-dax.md)
+- [MROUND](mround-function-dax.md)
+- [INT](int-function-dax.md)

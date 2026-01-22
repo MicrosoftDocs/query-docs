@@ -46,4 +46,4 @@ The following computes the future value of an investment:
 
 ## Related content
 
-[PRODUCT](product-function-dax.md)
+- [PRODUCT](product-function-dax.md)
