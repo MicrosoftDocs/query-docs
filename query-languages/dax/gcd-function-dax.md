@@ -12,14 +12,14 @@ Returns the greatest common divisor of two or more integers. The greatest common
 ## Syntax
 
 ```dax
-GCD(number1, [number2], ...)
+GCD(number1, number2)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`number1, number2, ...`|Number1 is required, subsequent numbers are optional. 1 to 255 values. If any value is not an integer, it is truncated.|
+|`number1, number2`|The two integers for which you want the greatest common divisor. If a value is not an integer, it is truncated.|
 
 ## Return value
 

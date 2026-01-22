@@ -7,9 +7,9 @@ ms.topic: reference
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations-discouraged](includes/applies-to-measures-columns-tables-visual-calculations-discouraged.md)]
 
-For date column input, Returns a table that contains a column of all dates from the previous year, given the last date in the `dates` column, in the current context.
+For date column input, returns a table that contains a column of all dates from the previous year, based on the first date in the `dates` column, in the current context.
 
-For calendar input, returns all dates from the previous year, based on the first date in the current context. The table contains all primary tagged columns and all time related columns
+For calendar input, returns all dates from the previous year, based on the first date in the current context. The table contains all primary tagged columns and all time related columns.
 
 ## Syntax
 
@@ -31,7 +31,7 @@ For calendar input, a table that contains all primary tagged columns and all tim
 
 ## Remarks
 
-- This function returns all dates from the previous year given the latest date in the input parameter. For example, if the latest date in the `dates` argument refers to the year 2009, then this function returns all dates for the year of 2008, up to the specified `year_end_date`.
+- This function returns all dates from the previous year based on the first date in the input parameter. For example, if the first date in the `dates` argument refers to the year 2009, then this function returns all dates for the year of 2008, up to the specified `year_end_date`.
 
 - The `dates` argument can be any of the following:
   - A reference to a date/time column.
