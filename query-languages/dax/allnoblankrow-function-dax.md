@@ -123,6 +123,6 @@ Now the two measures have the same results. That is because the ALLNOBLANKROW fu
 
 ## Related content
 
-[Filter functions](filter-functions-dax.md)
-[ALL function](all-function-dax.md)
-[FILTER function](filter-function-dax.md)
+- [Filter functions](filter-functions-dax.md)
+- [ALL function](all-function-dax.md)
+- [FILTER function](filter-function-dax.md)

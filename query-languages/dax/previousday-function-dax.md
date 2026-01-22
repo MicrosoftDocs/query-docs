@@ -65,10 +65,10 @@ The following sample formula creates a measure that calculates the 'previous day
 
 ## Related content
 
-[Time intelligence functions](time-intelligence-functions-dax.md)
-[Date and time functions](date-and-time-functions-dax.md)
-[PREVIOUSWEEK](previousweek-function-dax.md)
-[PREVIOUSMONTH function](previousmonth-function-dax.md)
-[PREVIOUSQUARTER function](previousquarter-function-dax.md)
-[PREVIOUSYEAR function](previousyear-function-dax.md)
+- [Time intelligence functions](time-intelligence-functions-dax.md)
+- [Date and time functions](date-and-time-functions-dax.md)
+- [PREVIOUSWEEK](previousweek-function-dax.md)
+- [PREVIOUSMONTH function](previousmonth-function-dax.md)
+- [PREVIOUSQUARTER function](previousquarter-function-dax.md)
+- [PREVIOUSYEAR function](previousyear-function-dax.md)
 

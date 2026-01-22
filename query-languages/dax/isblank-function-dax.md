@@ -54,4 +54,4 @@ Result,
 
 ## Related content
 
-[Information functions](information-functions-dax.md)
+- [Information functions](information-functions-dax.md)

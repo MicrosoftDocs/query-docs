@@ -43,4 +43,4 @@ The percentile number of an expression evaluated for each row in a table.
 
 ## Related content
 
-[PERCENTILE.EXC](percentile-exc-function-dax.md)
+- [PERCENTILE.EXC](percentile-exc-function-dax.md)

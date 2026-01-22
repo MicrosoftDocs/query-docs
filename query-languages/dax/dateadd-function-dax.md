@@ -126,5 +126,5 @@ Some scenarios may yield different results when comparing classic and calendar t
 
 ## Related content
 
-[Time intelligence functions](time-intelligence-functions-dax.md)
-[Date and time functions](date-and-time-functions-dax.md)
+- [Time intelligence functions](time-intelligence-functions-dax.md)
+- [Date and time functions](date-and-time-functions-dax.md)

@@ -42,7 +42,7 @@ Returns 11.
 
 ## Related content
 
-[BITAND](bitand-function-dax.md)
-[BITXOR](bitxor-function-dax.md)
-[BITLSHIFT](bitlshift-function-dax.md)
-[BITRSHIFT](bitrshift-function-dax.md)
+- [BITAND](bitand-function-dax.md)
+- [BITXOR](bitxor-function-dax.md)
+- [BITLSHIFT](bitlshift-function-dax.md)
+- [BITRSHIFT](bitrshift-function-dax.md)

@@ -39,5 +39,5 @@ SELECTEDVALUE( DimCurrency[FormatString], SELECTEDMEASUREFORMATSTRING() )
 
 ## Related content
 
-[SELECTEDMEASURE](selectedmeasure-function-dax.md)
-[ISSELECTEDMEASURE](isselectedmeasure-function-dax.md) 
+- [SELECTEDMEASURE](selectedmeasure-function-dax.md)
+- [ISSELECTEDMEASURE](isselectedmeasure-function-dax.md) 

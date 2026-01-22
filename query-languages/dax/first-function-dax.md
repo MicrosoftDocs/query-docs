@@ -50,6 +50,6 @@ The screenshot below shows the visual matrix and the visual calculation expressi
 
 ## Related content
 
-[LAST](last-function-dax.md)
-[PREVIOUS](previous-function-dax.md)
-[NEXT](next-function-dax.md)
+- [LAST](last-function-dax.md)
+- [PREVIOUS](previous-function-dax.md)
+- [NEXT](next-function-dax.md)

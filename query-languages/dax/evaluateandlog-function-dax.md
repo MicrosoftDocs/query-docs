@@ -143,5 +143,5 @@ Returns the following DAX Evaluation Log event:
 
 ## Related content
 
-[TOCSV](tocsv-function-dax.md)
-[TOJSON](tojson-function-dax.md)
+- [TOCSV](tocsv-function-dax.md)
+- [TOJSON](tojson-function-dax.md)

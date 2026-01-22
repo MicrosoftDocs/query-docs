@@ -41,6 +41,6 @@ For each row in **Calculated Column1**, the values "true" and "false" are interp
 
 ## Related content
 
-[TRUE function](true-function-dax.md)
-[FALSE function](false-function-dax.md)
-[IF function](if-function-dax.md)
+- [TRUE function](true-function-dax.md)
+- [FALSE function](false-function-dax.md)
+- [IF function](if-function-dax.md)

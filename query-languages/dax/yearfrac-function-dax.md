@@ -57,7 +57,7 @@ The second argument, `basis`, has also been omitted. Therefore, the year fractio
 
 ## Related content
 
-[Date and time functions](date-and-time-functions-dax.md)
-[WEEKNUM function](weeknum-function-dax.md)
-[YEARFRAC function](yearfrac-function-dax.md)
-[WEEKDAY function](weekday-function-dax.md)
+- [Date and time functions](date-and-time-functions-dax.md)
+- [WEEKNUM function](weeknum-function-dax.md)
+- [YEARFRAC function](yearfrac-function-dax.md)
+- [WEEKDAY function](weekday-function-dax.md)

@@ -54,7 +54,7 @@ The following formula illustrates how to pass a filtered table to COUNTX for the
 
 ## Related content
 
-[COUNT function](count-function-dax.md)
-[COUNTA function](counta-function-dax.md)
-[COUNTAX function](countax-function-dax.md)
-[Statistical functions](statistical-functions-dax.md)
+- [COUNT function](count-function-dax.md)
+- [COUNTA function](counta-function-dax.md)
+- [COUNTAX function](countax-function-dax.md)
+- [Statistical functions](statistical-functions-dax.md)

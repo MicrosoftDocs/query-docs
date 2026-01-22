@@ -44,6 +44,6 @@ The following example gets the date from the [HireDate] column, adds 1, and disp
 
 ## Related content
 
-[Date and time functions](date-and-time-functions-dax.md)
-[WEEKNUM function](weeknum-function-dax.md)
-[YEARFRAC function](yearfrac-function-dax.md)
+- [Date and time functions](date-and-time-functions-dax.md)
+- [WEEKNUM function](weeknum-function-dax.md)
+- [YEARFRAC function](yearfrac-function-dax.md)

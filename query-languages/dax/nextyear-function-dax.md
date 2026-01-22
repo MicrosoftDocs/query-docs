@@ -70,8 +70,8 @@ The following sample formula creates a measure that calculates the 'next year sa
 
 ## Related content
 
-[Time intelligence functions](time-intelligence-functions-dax.md)
-[Date and time functions](date-and-time-functions-dax.md)
-[NEXTDAY function](nextday-function-dax.md)
-[NEXTQUARTER function](nextquarter-function-dax.md)
-[NEXTMONTH function](nextmonth-function-dax.md)
+- [Time intelligence functions](time-intelligence-functions-dax.md)
+- [Date and time functions](date-and-time-functions-dax.md)
+- [NEXTDAY function](nextday-function-dax.md)
+- [NEXTQUARTER function](nextquarter-function-dax.md)
+- [NEXTMONTH function](nextmonth-function-dax.md)

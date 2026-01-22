@@ -119,5 +119,5 @@ The `EARLIER` function will always get the value of the column prior to the curr
 
 ## Related content
 
-[EARLIEST function](earliest-function-dax.md)
-[Filter functions](filter-functions-dax.md)
+- [EARLIEST function](earliest-function-dax.md)
+- [Filter functions](filter-functions-dax.md)

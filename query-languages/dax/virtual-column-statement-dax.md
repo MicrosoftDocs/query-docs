@@ -41,8 +41,8 @@ A virtual column is defined
 
 ## Related content
 
-[DEFINE](define-statement-dax.md)  
-[EVALUATE](evaluate-statement-dax.md)  
-[VAR](var-dax.md)  
-[Virtual Table](virtual-table-statement-dax.md)
-[DAX queries](dax-queries.md)  
+- [DEFINE](define-statement-dax.md)  
+- [EVALUATE](evaluate-statement-dax.md)  
+- [VAR](var-dax.md)  
+- [Virtual Table](virtual-table-statement-dax.md)
+- [DAX queries](dax-queries.md)  

@@ -55,6 +55,6 @@ Because the formula uses ALLEXCEPT, whenever any column but CalendarYear from th
 
 ## Related content
 
-[Filter functions](filter-functions-dax.md)
-[ALL function](all-function-dax.md)
-[FILTER function](filter-function-dax.md)
+- [Filter functions](filter-functions-dax.md)
+- [ALL function](all-function-dax.md)
+- [FILTER function](filter-function-dax.md)

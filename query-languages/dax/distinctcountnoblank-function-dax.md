@@ -55,4 +55,4 @@ EVALUATE
 
 ## Related content
 
-[DISTINCTCOUNT](distinctcount-function-dax.md)
+- [DISTINCTCOUNT](distinctcount-function-dax.md)

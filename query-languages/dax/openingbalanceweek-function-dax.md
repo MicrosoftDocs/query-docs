@@ -56,8 +56,8 @@ OPENINGBALANCEWEEK (
 
 ## Related content
 
-[OPENINGBALANCEYEAR function](openingbalanceyear-function-dax.md)
-[OPENINGBALANCEQUARTER function](openingbalancequarter-function-dax.md)
-[OPENINGBALANCEMONTH function](openingbalancemonth-function-dax.md)
-[Time intelligence functions](time-intelligence-functions-dax.md)
-[CLOSINGBALANCEWEEK function](closingbalanceweek-function-dax.md)
+- [OPENINGBALANCEYEAR function](openingbalanceyear-function-dax.md)
+- [OPENINGBALANCEQUARTER function](openingbalancequarter-function-dax.md)
+- [OPENINGBALANCEMONTH function](openingbalancemonth-function-dax.md)
+- [Time intelligence functions](time-intelligence-functions-dax.md)
+- [CLOSINGBALANCEWEEK function](closingbalanceweek-function-dax.md)

@@ -62,7 +62,7 @@ The following sample formula creates a measure that obtains the last date, for t
 
 ## Related content
 
-[Date and time functions](date-and-time-functions-dax.md)
-[Time intelligence functions](time-intelligence-functions-dax.md)
-[FIRSTDATE function](firstdate-function-dax.md)
-[LASTNONBLANK function](lastnonblank-function-dax.md)
+- [Date and time functions](date-and-time-functions-dax.md)
+- [Time intelligence functions](time-intelligence-functions-dax.md)
+- [FIRSTDATE function](firstdate-function-dax.md)
+- [LASTNONBLANK function](lastnonblank-function-dax.md)

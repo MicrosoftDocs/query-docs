@@ -70,9 +70,9 @@ The following sample formula creates a measure that calculates the 'previous qua
 
 ## Related content
 
-[Time intelligence functions](time-intelligence-functions-dax.md)
-[Date and time functions](date-and-time-functions-dax.md)
-[PREVIOUSDAY](previousday-function-dax.md)
-[PREVIOUSWEEK](previousweek-function-dax.md)
-[PREVIOUSMONTH](previousmonth-function-dax.md)
-[PREVIOUSQUARTER](previousquarter-function-dax.md)
+- [Time intelligence functions](time-intelligence-functions-dax.md)
+- [Date and time functions](date-and-time-functions-dax.md)
+- [PREVIOUSDAY](previousday-function-dax.md)
+- [PREVIOUSWEEK](previousweek-function-dax.md)
+- [PREVIOUSMONTH](previousmonth-function-dax.md)
+- [PREVIOUSQUARTER](previousquarter-function-dax.md)

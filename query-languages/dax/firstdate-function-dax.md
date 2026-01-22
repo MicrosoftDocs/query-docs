@@ -62,7 +62,7 @@ The following sample formula creates a measure that obtains the first date when 
 
 ## Related content
 
-[Date and time functions](date-and-time-functions-dax.md)
-[Time intelligence functions](time-intelligence-functions-dax.md)
-[LASTDATE function](lastdate-function-dax.md)
-[FIRSTNONBLANK function](firstnonblank-function-dax.md)
+- [Date and time functions](date-and-time-functions-dax.md)
+- [Time intelligence functions](time-intelligence-functions-dax.md)
+- [LASTDATE function](lastdate-function-dax.md)
+- [FIRSTNONBLANK function](firstnonblank-function-dax.md)
