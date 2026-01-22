@@ -29,7 +29,7 @@ An integer number from 1 to 4.
 
 - If the input value is BLANK, the output value is also BLANK.
 
-- This function is not supported for use in Power Pivot in Excel.
+- This function isn't available in Power Pivot in Excel.
 
 ## Example 1
 
