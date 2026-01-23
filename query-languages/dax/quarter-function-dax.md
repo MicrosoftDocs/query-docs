@@ -28,7 +28,9 @@ An integer number from 1 to 4.
 
 ## Remarks
 
-If the input value is BLANK, the output value is also BLANK.
+- If the input value is BLANK, the output value is also BLANK.
+
+- This function isn't available in Power Pivot in Excel.
 
 ## Example 1
 
