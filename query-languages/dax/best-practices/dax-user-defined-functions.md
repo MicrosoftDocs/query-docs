@@ -557,6 +557,7 @@ General:
 - Cannot combine UDFs with translations.
 - UDFs are not supported in models without tables.
 - No 'define with references' quick query in DAX query view.
+- UDFs in a live-connected model will not appear in the model explorer view
 - [Object-Level Security (OLS)](/fabric/security/service-admin-object-level-security) does not transfer to functions or vise versa. For example, consider the following function `F` that refers to secured measure `MyMeasure`:
     ```dax
     function F = () => [MyMeasure] + 42
