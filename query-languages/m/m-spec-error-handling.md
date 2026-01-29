@@ -2,7 +2,7 @@
 title: M Language Error Handling 
 description: Describes error handling in the Power Query M formula language
 ms.topic: language-reference
-ms.date: 1/29/26
+ms.date: 01/29/2026
 ms.custom: "nonautomated-date"
 ms.subservice: m-specification
 ---
