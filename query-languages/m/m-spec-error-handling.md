@@ -41,7 +41,7 @@ In canonical form, an _error value_ is a record with the following structure, ha
 
 All of the above record fields are optional, and so may be omitted. Any additional fields included in the record will be ignored, and so not included in the error that is raised.
 
-_Message.Format_ may contain string interpolation placeholders in the form of `#{x}`, where `x` is a zero-based index. When an error is raised with a non-null _Message.Foramt_, interpolation will be performed using _Message.Format_ as the format string and _Message.Parameters_ as the values to be positionally applied. The resulting output will become the raised error's _Message_.
+_Message.Format_ may contain string interpolation placeholders in the form of `#{x}`, where `x` is a zero-based index. When an error is raised with a non-null _Message.Format_, interpolation will be performed using _Message.Format_ as the format string and _Message.Parameters_ as the values to be positionally applied. The resulting output will become the raised error's _Message_.
 
 For example:
 
