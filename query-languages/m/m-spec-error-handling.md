@@ -26,22 +26,20 @@ _error-raising-expression:_<br/>
 
 The _expression_ being raised must evaluate to an _error value_.
 
-In canonical form, an _error value_ is a record with the following structure:
+In canonical form, an _error value_ is a record with the following structure, having field values compatible with the indicated types:
 
 ```powerquery-m
 [
-    ErrorCode = ...,
-    Reason = ...,
-    Message = ...,
-    Detail = ...,
-    Message.Format = ...,
-    Message.Parameters = ...
+    Reason = ..., // nullable text
+    Message = ..., // nullable text
+    Detail = ..., // any
+    Message.Format = ..., // nullable text
+    Message.Parameters = ..., // nullable list
+    ErrorCode = ... // any
 ]
 ```
 
-All of the above record fields are optional, and so may be omitted or set to null. When not null, _Reason_, _Message_, and _Message.Format_ must be text, and _Message.Parameters_ must be a list. 
-
-Any additional fields included in the record will be ignored and so not included in the error that is raised.
+All of the above record fields are optional, and so may be omitted. Any additional fields included in the record will be ignored, and so not included in the error that is raised.
 
 _Message.Format_ may contain string interpolation placeholders in the form of `#{x}`, where `x` is a zero-based index. When an error is raised with a non-null _Message.Foramt_, interpolation will be performed using _Message.Format_ as the format string and _Message.Parameters_ as the values to be positionally applied. The resulting output will become the raised error's _Message_.
 
