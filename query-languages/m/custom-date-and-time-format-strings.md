@@ -436,7 +436,7 @@ in
 
 The "h" custom format specifier represents the hour as a number from 1 to 12; that is, the hour is represented by a 12-hour clock that counts the whole hours since midnight or noon. A particular hour after midnight is indistinguishable from the same hour after noon. The hour isn't rounded, and a single-digit hour is formatted without a leading zero. For example, given a time of 5:43 in the morning or afternoon, this custom format specifier displays "5".
 
-If the "h" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and throws an expression error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
+If the "h" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and raises an error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
 
 The following example includes the "h" custom format specifier in a custom format string.
 
@@ -496,7 +496,7 @@ in
 
 The "H" custom format specifier represents the hour as a number from 0 to 23; that is, the hour is represented by a zero-based 24-hour clock that counts the hours since midnight. A single-digit hour is formatted without a leading zero.
 
-If the "H" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and throws an expression error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
+If the "H" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and raises an error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
 
 The following example includes the "H" custom format specifier in a custom format string.
 
@@ -544,7 +544,7 @@ The "K" custom format specifier represents the time zone information of a date a
 
 - For a time from an unspecified time zone, the result is empty.
 
-If the "K" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and throws an expression error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
+If the "K" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and raises an error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
 
 The following example displays the string that results from using the "K" custom format specifier with various values on a system in the U.S. Pacific Time zone.
 
@@ -1002,7 +1002,7 @@ The following table shows how the offset value changes depending on the **DateTi
 | [DateTimeZone.LocalNow](datetimezone-localnow.md) | On Power Query Desktop, the signed offset of the local operating system's time zone from UTC. On Power Query Online, returns `+00`. |
 | [DateTimeZone.UtcNow](datetimezone-utcnow.md) | Returns `+0`. |
 
-If the "z" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and throws an expression error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
+If the "z" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and raises an error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
 
 The following example includes the "z" custom format specifier in a custom format string on a system in the U.S. Pacific Time zone.
 
@@ -1119,7 +1119,7 @@ The ":" custom format specifier represents the time separator, which is used to 
 > [!NOTE]
 > To change the time separator for a particular date and time string, specify the separator character within a literal string delimiter. For example, the custom format string `hh_dd_ss` produces a result string in which "_" (an underscore) is always used as the time separator.
 
-If the ":" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and throws an expression error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
+If the ":" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and raises an error error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
 
 [Back to table](#table)
 
@@ -1130,7 +1130,7 @@ The "/" custom format specifier represents the date separator, which is used to 
 > [!NOTE]
 > To change the date separator for a particular date and time string, specify the separator character within a literal string delimiter. For example, the custom format string `mm/dd/yyyy` produces a result string in which "/" is always used as the date separator.
 
-If the "/" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and throws an expression error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
+If the "/" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and raises an error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
 
 [Back to table](#table)
 
