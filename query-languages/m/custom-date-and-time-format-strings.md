@@ -1119,7 +1119,7 @@ The ":" custom format specifier represents the time separator, which is used to 
 > [!NOTE]
 > To change the time separator for a particular date and time string, specify the separator character within a literal string delimiter. For example, the custom format string `hh_dd_ss` produces a result string in which "_" (an underscore) is always used as the time separator.
 
-If the ":" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and raises an error error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
+If the ":" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and raises an error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
 
 [Back to table](#table)
 
