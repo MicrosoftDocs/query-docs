@@ -169,15 +169,6 @@ identifier-part-character:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;connecting-character<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;combining-character<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;formatting-character<br/>
-generalized-identifier:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier-part<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier_ separated only by blanks (`U+0020`) _generalized-identifier-part<br/>
-generalized-identifier-part:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier-segment<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digit-character generalized-identifier-segment<br/>
-generalized-identifier-segment:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;keyword-or-identifier<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;keyword-or-identifier dot-character  keyword-or-identifier<br/>
 dot-character:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`.`  (`U+002E`)<br/>
 _underscore-character:_<br/>
@@ -385,8 +376,13 @@ _field-list:<br/>
 field:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-name_  `=`  _expression<br/>
 field-name:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quoted-identifier<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quoted-identifier_<br/>
+generalized-identifier:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The range of text spanned by a sequence of one or more tokens, other than `=`, `,` or `]`,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;but only if that text complies with the generalized identifier grammar.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(This grammar token is contextual; it is only relevant in the context of when a `field-name` is expected.)
 
 #### Item access expression
 
@@ -607,3 +603,34 @@ any-literal:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number-literal<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;null-literal_
+
+
+## Generalized identifer grammar
+
+Compliance with this grammar can be validated using the following regular expression:
+````
+(?x)^
+# generalized-identifier-always-valid-character
+[(\p{L})|(\p{Nl})|(\p{Nd})|(\p{Mn})|(\p{Mc})|(\p{Pc})(\p{Cf})]
+
+# (generalized-identifier-inner-valid-segment* period? generalized-identifier-always-valid-character)?
+(?:
+    # generalized-identifier-inner-valid-segment
+    (?:.?[(\p{L})|(\p{Nl})|(\p{Nd})|(\p{Mn})|(\p{Mc})|(\p{Pc})(\p{Cf})\s])*
+
+    # period? generalized-identifier-always-valid-character
+    .?[(\p{L})|(\p{Nl})|(\p{Nd})|(\p{Mn})|(\p{Mc})|(\p{Pc})(\p{Cf})]
+)?
+$
+````
+
+_space:_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Space character (`U+0020`)<br/>
+_period:_<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Period character (`U+002E`))<br/>
+_generalized-identifier-always-valid-character_:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any character in the following Unicode classes: Lu (Uppercase Letter), Ll (Lowercase Letter), Lt (Titlecase Letter), Lm (Modifier Letter), Lo (Other Letter), Nl (Letter Number), Nd (Decimal Number), Mn (Nonspacing Mark), Mc (Spacing Mark), Pc (Connector Punctuation),  Cf (Format)<br/>
+_generalized-identifier-inner-valid-segment:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period? (generalized-identifier-always-valid-character | space)<br/>
+generalized-identifier-syntax:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier-always-valid-character (generalized-identifier-inner-valid-segment* period? generalized-identifier-always-valid-character)?_
