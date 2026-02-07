@@ -87,7 +87,7 @@ Since all values can be tested for equality, these functions can operate over he
 
 ## Ordering
 
-Ordering functions perform comparisons. All values that are compared must be comparable with each other. This means they must all come from the same datatype (or include null, which always compares smallest). Otherwise, an `Expression.Error` is thrown.
+Ordering functions perform comparisons. All values that are compared must be comparable with each other. This means they must all come from the same datatype (or include null, which always compares smallest). Otherwise, an `Expression.Error` is raised.
 
 Comparable data types include:
 
