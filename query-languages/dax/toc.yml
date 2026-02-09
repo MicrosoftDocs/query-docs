@@ -526,6 +526,8 @@ items:
               href: issubtotal-function-dax.md
             - name: ISTEXT
               href: istext-function-dax.md
+            - name: NAMEOF
+              href: nameof-function-dax.md
             - name: NONVISUAL
               href: nonvisual-function-dax.md
             - name: SELECTEDMEASURE
