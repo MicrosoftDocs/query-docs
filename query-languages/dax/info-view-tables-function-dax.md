@@ -38,8 +38,6 @@ A table with the following columns:
 
 ## Remarks
 
-Can only be ran by users with write permission on the semantic model and not when live connected to the semantic model in Power BI Desktop. This function can be used in calculated tables, columns, and measures of a semantic model and will update when the model is refreshed.
-
 Only shows the `TableStorage` and `Expression` values when ran by users with write permission on the semantic model and not when live connected to the semantic model in Power BI Desktop.
 Unlike [INFO.TABLES](info-tables-function-dax.md), this function can be used in calculated tables, columns, and measures of a semantic model, including as part of a model refresh.
 
