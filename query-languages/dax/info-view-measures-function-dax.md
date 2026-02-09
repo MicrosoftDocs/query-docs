@@ -126,6 +126,6 @@ EVALUATE
 - [INFO.VIEW.TABLES](info-view-tables-function-dax.md)
 - [INFO.VIEW.COLUMNS](info-view-columns-function-dax.md)
 - [INFO.VIEW.RELATIONSHIPS](info-view-relationships-function-dax.md)
-- [INFO.MEASRUES](info-measures-function-dax.md)
+- [INFO.MEASURES](info-measures-function-dax.md)
 - [INFO.TABLES](info-tables-function-dax.md)
 - [INFO.COLUMNS](info-columns-function-dax.md)
