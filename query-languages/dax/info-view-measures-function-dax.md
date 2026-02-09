@@ -41,7 +41,8 @@ A table with the following columns:
 
 ## Remarks
 
-Only shows the Expression value when ran by users with write permission on the semantic model and not when live connected to the semantic model in Power BI Desktop. This function can be used in calculated tables, columns, and measures of a semantic model and updates when the model is refreshed.
+Only shows the `Expression`, `DetailRowsDefinition`, `FormatStringDefinition` values when ran by users with write permission on the semantic model and not when live connected to the semantic model in Power BI Desktop.
+Unlike [INFO.MEASURES](), this function can be used in calculated tables, columns, and measures of a semantic model, including as part of a model refresh.
 
 ## Example 1 - DAX query
 
@@ -122,8 +123,9 @@ EVALUATE
 :::image type="content" source="media/info-view-measures-function-dax/measure-example-4-dax-query.png" alt-text="Screenshot showing the output of INFO.VIEW.MEASURES() with a measure then used in a DAX query in DAX query view." lightbox="media/info-view-measures-function-dax/measure-example-4-dax-query.png":::
 ## See also
 
-[INFO.VIEW.TABLES](info-view-tables-function-dax.md)
-[INFO.VIEW.COLUMNS](info-view-columns-function-dax.md)
-[INFO.VIEW.RELATIONSHIPS](info-view-relationships-function-dax.md)
-[INFO.TABLES](info-tables-function-dax.md)
-[INFO.COLUMNS](info-columns-function-dax.md)
+- [INFO.VIEW.TABLES](info-view-tables-function-dax.md)
+- [INFO.VIEW.COLUMNS](info-view-columns-function-dax.md)
+- [INFO.VIEW.RELATIONSHIPS](info-view-relationships-function-dax.md)
+- [INFO.MEASRUES](info-measures-function-dax.md)
+- [INFO.TABLES](info-tables-function-dax.md)
+- [INFO.COLUMNS](info-columns-function-dax.md)
