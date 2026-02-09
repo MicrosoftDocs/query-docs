@@ -41,8 +41,8 @@ A table with the following columns:
 
 ## Remarks
 
-Only shows the `Expression`, `DetailRowsDefinition`, `FormatStringDefinition` values when ran by users with write permission on the semantic model and not when live connected to the semantic model in Power BI Desktop.
-Unlike [INFO.MEASURES](), this function can be used in calculated tables, columns, and measures of a semantic model, including as part of a model refresh.
+Only shows the `Expression`, `DetailRowsDefinition` and `FormatStringDefinition` values when ran by users with write permission on the semantic model and not when live connected to the semantic model in Power BI Desktop.
+Unlike [INFO.MEASURES](info-measures-function-dax.md), this function can be used in calculated tables, columns, and measures of a semantic model, including as part of a model refresh.
 
 ## Example 1 - DAX query
 
