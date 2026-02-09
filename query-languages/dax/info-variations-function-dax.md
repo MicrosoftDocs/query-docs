@@ -121,7 +121,7 @@ EVALUATE
 This DAX query returns a table with only the specified columns and joining to other INFO DAX functions and the variations table.
 ## See also
 
-[INFO.TABLES](info-tables-function-dax.md)
-[INFO.COLUMNS](info-columns-function-dax.md)
-[INFO.MEASURES](info-measures-function-dax.md)
-[INFO functions overview](info-functions-dax.md)
+- [INFO.TABLES](info-tables-function-dax.md)
+- [INFO.COLUMNS](info-columns-function-dax.md)
+- [INFO.MEASURES](info-measures-function-dax.md)
+- [INFO functions overview](info-functions-dax.md)

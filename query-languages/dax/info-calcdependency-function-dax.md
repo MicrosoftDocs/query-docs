@@ -79,8 +79,8 @@ EVALUATE
 ```
 ## See also
 
-[INFO.DEPENDENCIES](info-dependencies-function-dax.md)
-[INFO.RELATEDCOLUMNDETAILS](info-relatedcolumndetails-function-dax.md)
-[INFO.TABLES](info-tables-function-dax.md)
-[INFO.COLUMNS](info-columns-function-dax.md)
-[INFO.MEASURES](info-measures-function-dax.md)
+- [INFO.DEPENDENCIES](info-dependencies-function-dax.md)
+- [INFO.RELATEDCOLUMNDETAILS](info-relatedcolumndetails-function-dax.md)
+- [INFO.TABLES](info-tables-function-dax.md)
+- [INFO.COLUMNS](info-columns-function-dax.md)
+- [INFO.MEASURES](info-measures-function-dax.md)
