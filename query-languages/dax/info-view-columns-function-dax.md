@@ -157,6 +157,7 @@ EVALUATE
 		"Number of text columns", [Number of text columns]
 	)
 ```
+
 ## See also
 
 - [INFO.VIEW.TABLES](info-view-tables-function-dax.md)

@@ -114,6 +114,7 @@ EVALUATE
 ```
 
 :::image type="content" source="media/info-view-relationships-function-dax/measure-example-4-dax-query.png" alt-text="Screenshot showing the output of INFO.VIEW.RELATIONSHIPS() with a measure then used in a DAX query in DAX query view." lightbox="media/info-view-relationships-function-dax/measure-example-4-dax-query.png":::
+
 ## See also
 
 - [INFO.VIEW.TABLES](info-view-tables-function-dax.md)
