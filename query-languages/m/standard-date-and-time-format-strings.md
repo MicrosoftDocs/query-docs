@@ -30,7 +30,7 @@ A standard date and time format string uses a single character as the format spe
 |"T"|Long time pattern.<br /><br /> More information: [The long time ("T") format specifier](#LongTime).|2009-06-15T13:45:30 -> 1:45:30 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 13:45:30 (hr-HR)<br /><br /> 2009-06-15T13:45:30 -> 01:45:30 م (ar-EG)|
 |"u"|Universal sortable date/time pattern.<br /><br /> More information: [The universal sortable ("u") format specifier](#UniversalSortable).|2009-06-15T13:45:30 -> 2009-06-15 13:45:30Z|
 |"Y", "y"|Year month pattern.<br /><br /> More information: [The year month ("Y") format specifier](#YearMonth).|2009-06-15T13:45:30 -> June 2009 (en-US)<br /><br /> 2009-06-15T13:45:30 -> juni 2009 (da-DK)<br /><br /> 2009-06-15T13:45:30 -> Juni 2009 (id-ID)|
-|Any other single character|Unknown specifier.|Throws a run-time expression error.|
+|Any other single character|Unknown specifier.|Raises a run-time expression error.|
 
 ## How standard format strings work
 

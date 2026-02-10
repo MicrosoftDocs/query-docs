@@ -14,7 +14,7 @@ Record.FromList(<b>list</b> as list, <b>fields</b> as any) as record
   
 ## About
 
-Returns a record given a `list` of field values and a set of fields. The `fields` can be specified either by a list of text values, or a record type. An error is thrown if the fields are not unique.
+Returns a record given a `list` of field values and a set of fields. The `fields` can be specified either by a list of text values, or a record type. An error is raised if the fields are not unique.
 
 ## Example 1
 

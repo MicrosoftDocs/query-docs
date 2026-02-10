@@ -18,7 +18,7 @@ Text.Range(
   
 ## About
 
-Returns the substring from the text `text` found at the offset `offset`. An optional parameter, `count`, can be included to specify how many characters to return. Throws an error if there aren't enough characters.
+Returns the substring from the text `text` found at the offset `offset`. An optional parameter, `count`, can be included to specify how many characters to return. Raises an error if there aren't enough characters.
 
 ## Example 1
 

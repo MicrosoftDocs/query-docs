@@ -17,7 +17,7 @@ Duration.ToText(<b>duration</b> as nullable duration, optional <b>format</b> as 
 Returns a textual representation in the form "day.hour:mins:sec" of the given duration value, `duration`.
 
 * `duration`: A `duration` from which the textual representation is calculated.
-* `format`: *[Optional]* Deprecated, will throw an error if not null.
+* `format`: *[Optional]* Deprecated, will raise an error if not null.
 
 ## Example 1
 
