@@ -16,6 +16,7 @@ While functions and functionality are being updated all the time, only those upd
 
 |Function  |Month  | Description |
 |---------|---------|---------|
+|[TABLEOF](tableof-function-dax.md)|February, 2026|Returns a reference to the table associated with a specified column, measure, or calendar.|
 |[TOTALWTD](totalwtd-function-dax.md)|September, 2025|Calculates the running total of a measure to the current week in the filter context.|
 |[CLOSINGBALANCEWEEK](closingbalanceweek-function-dax.md)|September, 2025|Returns the closing balance for the week in the current context.|
 |[ENDOFWEEK](endofweek-function-dax.md)|September, 2025|Returns the last date of the current week in the calendar.|
