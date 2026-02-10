@@ -528,6 +528,8 @@ items:
               href: issubtotal-function-dax.md
             - name: ISTEXT
               href: istext-function-dax.md
+            - name: NAMEOF
+              href: nameof-function-dax.md
             - name: NONVISUAL
               href: nonvisual-function-dax.md
             - name: SELECTEDMEASURE
@@ -536,6 +538,8 @@ items:
               href: selectedmeasureformatstring-function-dax.md
             - name: SELECTEDMEASURENAME
               href: selectedmeasurename-function-dax.md
+            - name: TABLEOF
+              href: tableof-function-dax.md
             - name: USERCULTURE
               href: userculture-function-dax.md
             - name: USERNAME
