@@ -84,8 +84,8 @@ ORDER BY [Folder Name], [File Name]
 
 ## See also
 
-[INFO.COLUMNSTORAGES](info-columnstorages-function-dax.md)
-[INFO.COLUMNPARTITIONSTORAGES](info-columnpartitionstorages-function-dax.md)
-[INFO.DICTIONARYSTORAGES](info-dictionarystorages-function-dax.md)
-[INFO.SEGMENTSTORAGES](info-segmentstorages-function-dax.md)
-[INFO.TABLESTORAGES](info-tablestorages-function-dax.md)
+- [INFO.COLUMNSTORAGES](info-columnstorages-function-dax.md)
+- [INFO.COLUMNPARTITIONSTORAGES](info-columnpartitionstorages-function-dax.md)
+- [INFO.DICTIONARYSTORAGES](info-dictionarystorages-function-dax.md)
+- [INFO.SEGMENTSTORAGES](info-segmentstorages-function-dax.md)
+- [INFO.TABLESTORAGES](info-tablestorages-function-dax.md)

@@ -117,7 +117,7 @@ ORDER BY [Table Name]
 
 ## See also
 
-[INFO.COLUMNS](info-columns-function-dax.md)
-[INFO.PARTITIONS](info-partitions-function-dax.md)
-[INFO.RELATIONSHIPS](info-relationships-function-dax.md)
-[INFO functions overview](info-functions-dax.md)
+- [INFO.COLUMNS](info-columns-function-dax.md)
+- [INFO.PARTITIONS](info-partitions-function-dax.md)
+- [INFO.RELATIONSHIPS](info-relationships-function-dax.md)
+- [INFO functions overview](info-functions-dax.md)

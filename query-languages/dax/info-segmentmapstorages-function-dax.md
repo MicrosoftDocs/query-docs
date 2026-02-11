@@ -116,7 +116,7 @@ ORDER BY [Table Name], [Partition Name]
 
 ## See also
 
-[INFO.TABLES](info-tables-function-dax.md)
-[INFO.COLUMNS](info-columns-function-dax.md)
-[INFO.MEASURES](info-measures-function-dax.md)
-[INFO functions overview](info-functions-dax.md)
+- [INFO.TABLES](info-tables-function-dax.md)
+- [INFO.COLUMNS](info-columns-function-dax.md)
+- [INFO.MEASURES](info-measures-function-dax.md)
+- [INFO functions overview](info-functions-dax.md)
