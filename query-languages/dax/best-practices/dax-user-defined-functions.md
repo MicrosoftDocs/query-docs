@@ -229,7 +229,7 @@ EVALUATE
 ## Parameters
 
 DAX UDFs can accept zero or more parameters. When you define parameters for a UDF, you can optionally specify type hints for each parameter:
-- **Type**: what type of value the parameter accepts (`AnyVal`, `Scalar`, `Table`, or `AnyRef`).
+- **Type**: what type of value the parameter accepts (`AnyVal`, `Scalar`, `Table`, `AnyRef`, `CalendarRef`, `ColumnRef`, `MeasureRef` or `TableRef`).
 - **Subtype** (only for scalar type): the specific scalar data type (`Variant`, `Int64`, `Decimal`, `Double`, `String`, `DateTime`, `Boolean`, or `Numeric`). 
 - **ParameterMode**: when the argument is evaluated (`val` or `expr`).
 
@@ -249,7 +249,10 @@ There are two type families in DAX UDF parameters: **value types** and **express
     - **`Table`**: Accepts a table.
 - **Expression types**: this argument passes an **unevaluated expression** (lazy evaluation). The function decides when and in what context to evaluate it. This is required for reference parameters and useful when you need to control filter context (e.g. inside [CALCULATE](../calculate-function-dax.md)). `expr` types can be references to a column, table, calendar, or measure.
     - **`AnyRef`**: Accepts a reference (a column, table, calendar, or measure).
-
+    - **`CalendarRef`**: Accepts a reference to a calendar.
+    - **`ColumnRef`**: Accepts a reference to a column.
+    - **`MeasureRef`**: Accepts a reference to a measure.
+    - **`TableRef`**: Accepts a reference to a table.
 
 ### Subtype
 
@@ -274,7 +277,7 @@ ParameterMode controls when and where the parameter expression is evaluated. The
 
 The `Scalar` type can use either `val` or `expr`. Use `val` when you want the scalar evaluated once in the caller's context. Use `expr` when you want to defer evaluation and possibly apply context inside the function. See [Example: Table parameter](#example-table-parameter-value-vs-expression) as an example.
 
-The `AnyRef` type must be `expr` as its references (columns, tables, measures, etc.) need to be evaluated in the function's context.
+The expression types (`AnyRef`, `ColumnRef`, etc) type must be `expr` as its references (columns, tables, measures, etc.) need to be evaluated in the function's context.
 
 
 ### Example: Type casting
@@ -583,7 +586,6 @@ IntelliSense Support:
 ### Known bugs
 
 The following issues are currently known and may impact functionality:
-- References to a tabular model object (e.g. measure, table, column) in a UDF are not automatically updated when those objects are renamed. If you rename an object that a UDF depends on, the function body will still contain the old name. You must manually edit the UDF expression to update all references to the renamed object.
 - Certain advanced scenarios involving UDFs can result in parser inconsistencies. For example, users may see red underlines or validation errors when passing columns as `expr` parameters or using unqualified column references.
 
 
