@@ -57,7 +57,7 @@ DEFINE
     /// Optional description above the function
     /// @param {ParameterType} ParameterName - ParameterDescription
     /// ...
-    /// @returns {ReturnType} ReturnDescription
+    /// @returns ReturnDescription
     FUNCTION <FunctionName> = ( [ParameterName]: [ParameterType], ... ) => <FunctionBody>
 ```
 
