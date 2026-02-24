@@ -30,7 +30,7 @@ To try UDFs in Desktop:
 There are several locations to define and manage functions:
 - [DAX query view](#using-dax-query-view) (DQV). Define and modify functions in DQV. DQV also includes context-menu **Quick queries** (Evaluate, Define and evaluate, and Define all functions in this model) to help you test and manage UDFs fast.
 - [TMDL view](#using-tmdl-view). UDFs can also be authored and edited in TMDL. TMDL view also includes context-menu **Script TMDL to**.
-- [Model explorer](#using-model-explorer). Existing functions can be viewed under the *Functions* node in Model explorer.
+- [Model explorer](#using-model-explorer). New functions can be created and existing functions can be modified usign the formular bar. Existing functions can be viewed under the *Functions* node in Model explorer.
 
 When defining a UDF, please follow these naming requirements:
 
@@ -55,12 +55,14 @@ You can define, update, and evaluate user-defined functions in DAX query view. F
 ```dax
 DEFINE
     /// Optional description above the function
+    /// @param {ParameterType} ParameterName - ParameterDescription
+    /// ...
+    /// @returns {ReturnType} ReturnDescription
     FUNCTION <FunctionName> = ( [ParameterName]: [ParameterType], ... ) => <FunctionBody>
 ```
 
 > [!TIP]
-> Use `///` for function descriptions. Single-line (`//`) or multi-line (`/* */`) comments will not appear in IntelliSense function descriptions.
-
+> Document your functions with descriptions, parameters and return types to make them easier to consume. Note the `///` for function descriptions. Single-line (`//`) or multi-line (`/* */`) comments will not appear in IntelliSense function descriptions.
 
 #### Example: Simple tax function
 
@@ -143,10 +145,10 @@ In [TMDL view](#using-tmdl-view), you can **drag and drop** functions into the c
 
 You can inspect UDFs in your model using [Dynamic Management Views](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services?) (DMVs). These views allow you to query information about functions, including UDFs.
 
-You can use the [INFO.FUNCTIONS](..\info-functions-dax.md) function to inspect the UDFs in the model. To restrict the result to UDFs only, specify the `ORIGIN` parameter as `2`.
+You can use the [INFO.USERDEFINEDFUNCTIONS](..\info-userdefinedfunctions-dax.md) function to inspect the UDFs in the model.
 
 ```dax
-EVALUATE INFO.FUNCTIONS("ORIGIN", "2")
+EVALUATE INFO.USERDEFINEDFUNCTIONS()
 ```
 
 This query returns a table of all UDFs currently in the model, including their name, description, and associated metadata.
@@ -248,7 +250,7 @@ There are two type families in DAX UDF parameters: **value types** and **express
     - **`Scalar`**: Accepts a scalar value (can additionally add a subtype).
     - **`Table`**: Accepts a table.
 - **Expression types**: this argument passes an **unevaluated expression** (lazy evaluation). The function decides when and in what context to evaluate it. This is required for reference parameters and useful when you need to control filter context (e.g. inside [CALCULATE](../calculate-function-dax.md)). `expr` types can be references to a column, table, calendar, or measure.
-    - **`AnyRef`**: Accepts a reference (a column, table, calendar, or measure).
+    - **`AnyRef`**: Accepts any reference. It's the equivalent to not specifying a expression type.
     - **`CalendarRef`**: Accepts a reference to a calendar.
     - **`ColumnRef`**: Accepts a reference to a column.
     - **`MeasureRef`**: Accepts a reference to a measure.
@@ -559,13 +561,16 @@ General:
 - No 'create function' button in the ribbon.
 - Cannot combine UDFs with translations.
 - UDFs are not supported in models without tables.
-- No 'define with references' quick query in DAX query view.
 - [Object-Level Security (OLS)](/fabric/security/service-admin-object-level-security) does not transfer to functions or vise versa. For example, consider the following function `F` that refers to secured measure `MyMeasure`:
     ```dax
     function F = () => [MyMeasure] + 42
     ```
 
     when the `MyMeasure` is secured using object-level security, function F is not secured automatically. If `F` runs under an identity without access to `MyMeasure`, it acts as if `MyMeasure` doesn’t exist. We recommend to avoid revealing secure objects in function names and descriptions.
+- Limited formula fix-up and limited dependency calculation is supported.
+- Unqualified names are treated as measure references and are not fully supported if used as column references.
+- `ColumnRef`, `TableRef`, `CalendarRef` and `MeasureRef` are not accepted everywhere while we are in preview.
+- There is no implicit type casting for `ColumnRef`, `TableRef`, `CalendarRef` and `MeasureRef`.
 
 Defining a UDF:
 - Recursion or mutual recursion is not supported.
@@ -587,7 +592,6 @@ IntelliSense Support:
 
 The following issues are currently known and may impact functionality:
 - Certain advanced scenarios involving UDFs can result in parser inconsistencies. For example, users may see red underlines or validation errors when passing columns as `expr` parameters or using unqualified column references.
-
 
 ## Related content
 
