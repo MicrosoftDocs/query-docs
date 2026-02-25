@@ -567,8 +567,7 @@ General:
     ```
 
     when the `MyMeasure` is secured using object-level security, function F is not secured automatically. If `F` runs under an identity without access to `MyMeasure`, it acts as if `MyMeasure` doesn’t exist. We recommend to avoid revealing secure objects in function names and descriptions.
-- Limited formula fix-up and limited dependency calculation is supported.
-- Unqualified names are treated as measure references and are not fully supported if used as column references.
+- Limited formula fix-up and limited dependency calculation is supported. Note that unqualified names are treated as measure references and are not fully supported if used as column references.
 - `ColumnRef`, `TableRef`, `CalendarRef` and `MeasureRef` are not accepted everywhere while we are in preview.
 - There is no implicit type casting for `ColumnRef`, `TableRef`, `CalendarRef` and `MeasureRef`.
 
