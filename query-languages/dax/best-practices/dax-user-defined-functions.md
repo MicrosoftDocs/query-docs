@@ -261,7 +261,7 @@ There are two type families in DAX UDF parameters: **value types** and **express
     - **`MeasureRef`**: Accepts a reference to a measure.
     - **`TableRef`**: Accepts a reference to a table.
 
-Value types (`AnyVal`, `Scalar`, `Table`) support implicit type casting. Expression types (`AnyRef`, `CalendarRef`, `ColumnRef`, `MeasureRef`, `TableRef`) and  do not.
+Value types (`AnyVal`, `Scalar`, `Table`) support implicit type casting. Expression types (`AnyRef`, `CalendarRef`, `ColumnRef`, `MeasureRef`, `TableRef`) do not.
 
 ### Subtype
 
