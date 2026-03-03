@@ -288,7 +288,7 @@ The `Scalar` type can use either `val` or `expr`. Use `val` when you want the sc
 
 The expression types (`AnyRef`, `ColumnRef`, etc) type must be `expr` as its references (columns, tables, measures, etc.) need to be evaluated in the function's context.
 
-The following table shows the effective/allowed parameterMode:
+The following table summarizes the effective/allowed parameterMode:
 
 | Type | ParameterMode not specified | ParameterMode: `val` | ParameterMode: `expr` |
 |------|------------------------------|--------------------|---------------------|

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.USERDEFINEDFUNCTIONS"
 title: "INFO.USERDEFINEDFUNCTIONS function (DAX)"
-author: jeroenterheerdt
+author: minghan
 ---
 # INFO.USERDEFINEDFUNCTIONS
 
