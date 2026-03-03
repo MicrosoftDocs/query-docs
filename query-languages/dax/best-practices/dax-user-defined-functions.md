@@ -261,6 +261,8 @@ There are two type families in DAX UDF parameters: **value types** and **express
     - **`MeasureRef`**: Accepts a reference to a measure.
     - **`TableRef`**: Accepts a reference to a table.
 
+Value types (`AnyVal`, `Scalar`, `Table`) support implicit type casting. Expression types (`AnyRef`, `CalendarRef`, `ColumnRef`, `MeasureRef`, `TableRef`) and  do not.
+
 ### Subtype
 
 Subtype lets you define a specific `Scalar` data type. If you define a subtype, you do not need to explicitly define the parameter as a `Scalar` type, this is automatically assumed.
@@ -286,6 +288,14 @@ The `Scalar` type can use either `val` or `expr`. Use `val` when you want the sc
 
 The expression types (`AnyRef`, `ColumnRef`, etc) type must be `expr` as its references (columns, tables, measures, etc.) need to be evaluated in the function's context.
 
+The following table shows the effective/allowed parameterMode:
+
+| Type | ParameterMode not specified | ParameterMode: `val` | ParameterMode: `expr` |
+|------|------------------------------|--------------------|---------------------|
+| (Not Specified) / `AnyVal` | `val` | `val` | `expr` |
+| `Scalar`, `Table` | `val` | `val` | `expr` |
+| `AnyRef` | `expr` | Not allowed | `expr` |
+| `CalendarRef`, `ColumnRef`, `MeasureRef`, `TableRef` | `expr` | Not allowed | `expr` |
 
 ### Example: Type casting
 
@@ -573,8 +583,7 @@ General:
 
     when the `MyMeasure` is secured using object-level security, function F is not secured automatically. If `F` runs under an identity without access to `MyMeasure`, it acts as if `MyMeasure` doesn’t exist. We recommend to avoid revealing secure objects in function names and descriptions.
 - Limited formula fix-up and limited dependency calculation is supported. Note that unqualified names are treated as measure references and are not fully supported if used as column references.
-- `ColumnRef`, `TableRef`, `CalendarRef` and `MeasureRef` are not accepted everywhere while we are in preview.
-- There is no implicit type casting for `ColumnRef`, `TableRef`, `CalendarRef` and `MeasureRef`.
+- `CalendarRef`, `ColumnRef`, `MeasureRef` and `TableRef` type hints may not be accepted at all function callsites while we are in preview. User can fallback to `AnyRef`.
 
 Defining a UDF:
 - Recursion or mutual recursion is not supported.
@@ -590,7 +599,7 @@ UDF parameters:
 IntelliSense Support:
 - Although UDFs can be used in live connect or composite models, there is no IntelliSense support.
 - Although UDFs can be used in visual calculations, the visual calculations formula bar does not have IntelliSense support for UDFs.
-- TMDL view does not have proper IntelliSense support for UDFs.
+- TMDL View has limited IntelliSense support for UDFs.
 
 ### Known bugs
 
