@@ -432,6 +432,35 @@ EVALUATE
 
 This example shows how to use type checking in UDFs to safely accept multiple input types and return a single, predictable result. `GetCurrencyName` takes one argument, `currency`, which can be either a whole-number currency key or a text currency code. The function checks the argument type with `ISINT64`. If the input is an integer, it calls the helper `GetCurrencyNameByKey` that looks up the currency name based on the currency key. If the input is not an integer, it calls the helper `GetCurrencyNameByCode` that looks up the currency name based on the currency code.
 
+## Useful information functions
+
+The following information functions are useful when authoring UDFs:
+* [TABLEOF](../tableof-function-dax.md): Returns the full table associated with a given column, measure, or calendar.
+* [NAMEOF](../nameof-function-dax.md): Returns the name of a table, column, measure, or calendar as a text string
+
+### Example: A MODEX function
+
+The following example shows a basic implementation of a MODEX function that returns the most frequently occurring value(s) of an expression evaluated over a table. It uses `TABLEOF` to automatically resolve the correct table from the given reference.
+
+```dax
+DEFINE
+    FUNCTION MODEX = (
+            e : ANYREF
+        ) =>
+        VAR newTable =
+            ADDCOLUMNS ( TABLEOF ( e ), "expr", e )
+        VAR freqTable =
+            GROUPBY ( newTable, [expr], "count", SUMX ( CURRENTGROUP (), 1 ) )
+        VAR maxCount =
+            MAXX ( freqTable, [count] )
+        VAR topResults =
+            FILTER ( freqTable, [count] = maxCount )
+        RETURN
+            SELECTCOLUMNS ( topResults, "expr", [expr] )
+
+EVALUATE
+MODEX ( [Total Sales] )
+```
 
 ## Define multiple functions at once
 
@@ -611,3 +640,4 @@ The following issues are currently known and may impact functionality:
 - [DAX query view](/power-bi/transform-model/dax-query-view)
 - [TMDL view](/power-bi/transform-model/desktop-tmdl-view)
 - [Model explorer](/power-bi/transform-model/model-explorer)
+- [INFO.USERDEFINEDFUNCTIONS](../info-userdefinedfunctions-function-dax.md)
