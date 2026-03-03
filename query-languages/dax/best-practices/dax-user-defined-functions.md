@@ -30,7 +30,7 @@ To try UDFs in Desktop:
 There are several locations to define and manage functions:
 - [DAX query view](#using-dax-query-view) (DQV). Define and modify functions in DQV. DQV also includes context-menu **Quick queries** (Evaluate, Define and evaluate, and Define all functions in this model) to help you test and manage UDFs fast.
 - [TMDL view](#using-tmdl-view). UDFs can also be authored and edited in TMDL. TMDL view also includes context-menu **Script TMDL to**.
-- [Model explorer](#using-model-explorer). New functions can be created and existing functions can be modified usign the formular bar. Existing functions can be viewed under the *Functions* node in Model explorer.
+- [Model explorer](#using-model-explorer). New functions can be created and existing functions can be modified using the formula bar. Existing functions can be viewed under the *Functions* node in Model explorer.
 
 When defining a UDF, please follow these naming requirements:
 
@@ -62,13 +62,15 @@ DEFINE
 ```
 
 > [!TIP]
-> Document your functions with descriptions, parameters and return types to make them easier to consume. Note the `///` for function descriptions. Single-line (`//`) or multi-line (`/* */`) comments will not appear in IntelliSense function descriptions.
+> Using [JSDoc block tags](https://jsdoc.app/#block-tags), document your functions with descriptions, parameter names and types, and return information to make them easier to consume. Note the `///` for function descriptions. Single-line (`//`) or multi-line (`/* */`) comments will not appear in IntelliSense function descriptions.
 
 #### Example: Simple tax function
 
 ```dax
 DEFINE
     /// AddTax takes in amount and returns amount including tax
+    /// @param {NUMERIC} amount - The pre-tax value to which tax will be applied
+    /// @returns The amount including 10% tax
     FUNCTION AddTax = 
         ( amount : NUMERIC ) =>
             amount * 1.1
@@ -145,14 +147,17 @@ In [TMDL view](#using-tmdl-view), you can **drag and drop** functions into the c
 
 You can inspect UDFs in your model using [Dynamic Management Views](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services?) (DMVs). These views allow you to query information about functions, including UDFs.
 
-You can use the [INFO.USERDEFINEDFUNCTIONS](..\info-userdefinedfunctions-dax.md) function to inspect the UDFs in the model.
+You can use the [INFO.USERDEFINEDFUNCTIONS](..\info-userdefinedfunctions-function-dax.md) function to inspect the UDFs in the model. This function returns full metadata and requires write permission.
 
 ```dax
 EVALUATE INFO.USERDEFINEDFUNCTIONS()
 ```
 
-This query returns a table of all UDFs currently in the model, including their name, description, and associated metadata.
+Alternatively, you can the [INFO.FUNCTIONS](..\info-functions-function-dax.md) function to return UDF names and limited metadata. 
 
+```dax
+EVALUATE INFO.FUNCTIONS("ORIGIN", "2")
+```
 
 ## Using a user-defined function
 
