@@ -153,7 +153,7 @@ You can use the [INFO.USERDEFINEDFUNCTIONS](..\info-userdefinedfunctions-functio
 EVALUATE INFO.USERDEFINEDFUNCTIONS()
 ```
 
-Alternatively, you can the [INFO.FUNCTIONS](..\info-functions-function-dax.md) function to return UDF names and limited metadata. 
+Alternatively, you can use the [INFO.FUNCTIONS](..\info-functions-function-dax.md) function to return UDF names and limited metadata. 
 
 ```dax
 EVALUATE INFO.FUNCTIONS("ORIGIN", "2")
