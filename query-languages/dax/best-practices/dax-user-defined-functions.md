@@ -611,7 +611,7 @@ General:
     ```
 
     when the `MyMeasure` is secured using object-level security, function F is not secured automatically. If `F` runs under an identity without access to `MyMeasure`, it acts as if `MyMeasure` doesn’t exist. We recommend to avoid revealing secure objects in function names and descriptions.
-- Limited formula fix-up and limited dependency calculation is supported. Note that unqualified names are treated as measure references and are not fully supported if used as column references.
+- Formula fix-up and dependency calculation are supported, with a known limitation around unqualified names. Because unqualified names are interpreted as measure references, they cannot be reliably fixed or included in dependency tracking when they are intended to refer to columns. An unqualified name is an object reference that does not include a table prefix.
 - `CalendarRef`, `ColumnRef`, `MeasureRef` and `TableRef` type hints may not be accepted at all function callsites while we are in preview. User can fallback to `AnyRef`.
 
 Defining a UDF:
