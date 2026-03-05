@@ -342,6 +342,12 @@ items:
               href: info-calculationgroups-function-dax.md
             - name: INFO.CALCULATIONITEMS
               href: info-calculationitems-function-dax.md
+            - name: INFO.CALENDARCOLUMNGROUPS
+              href: info-calendarcolumngroups-function-dax.md
+            - name: INFO.CALENDARCOLUMNREFERENCES
+              href: info-calendarcolumnreferences-function-dax.md
+            - name: INFO.CALENDARS
+              href: info-calendars-function-dax.md
             - name: INFO.CATALOGS
               href: info-catalogs-function-dax.md
             - name: INFO.CHANGEDPROPERTIES
