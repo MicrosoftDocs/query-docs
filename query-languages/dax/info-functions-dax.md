@@ -158,4 +158,5 @@ Here is the list of INFO functions. Some work only on specific compat levels and
 | INFO.TABLEPERMISSIONS                         | Returns a list of all table permissions in the current model with columns matching the schema rowset for table permissions objects.             |
 | INFO.TABLES                                   | Returns a list of all tables in the current model with columns matching the schema rowset for table objects.                                    |
 | INFO.TABLESTORAGES                            | Returns a list of all table storages in the current model with columns matching the schema rowset for table storage objects.                    |
+| INFO.USERDEFINEDFUNCTIONS                     | Returns a list of all user-defined functions in the current model with columns matching the schema rowset for user-defined function objects.    |
 | INFO.VARIATIONS                               | Returns a list of all variations in the current model with columns matching the schema rowset for variations objects.                           |
