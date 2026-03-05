@@ -2,6 +2,7 @@
 description: "Learn more about: Number.Tanh"
 title: "Number.Tanh"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Number.Tanh
 

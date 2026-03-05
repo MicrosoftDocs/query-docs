@@ -2,6 +2,7 @@
 description: "Learn more about: RowExpression.From"
 title: "RowExpression.From"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # RowExpression.From
 

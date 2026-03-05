@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ROLLUP"
 title: "ROLLUP function (DAX)"
+ms.topic: reference
 ---
 # ROLLUP
 

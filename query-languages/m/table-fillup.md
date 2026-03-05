@@ -2,6 +2,7 @@
 description: "Learn more about: Table.FillUp"
 title: "Table.FillUp"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.FillUp
 

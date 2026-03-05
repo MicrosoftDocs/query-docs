@@ -63,6 +63,6 @@ These functions create and manipulate binary data.
 |[Binary.ToList](binary-tolist.md)|Converts a binary value into a list of numbers|
 |[Binary.ToText](binary-totext.md)|Encodes binary data into a text form.|
 |[Binary.View](binary-view.md) | Creates or extends a binary with user-defined handlers for query and action operations.|
-|[Binary.ViewError](binary-viewerror.md) | Creates a modified error record which won't trigger a fallback when thrown by a handler defined on a view (via [Binary.View](binary-view.md)).|
+|[Binary.ViewError](binary-viewerror.md) | Creates a modified error record which won't trigger a fallback when raised by a handler defined on a view (via [Binary.View](binary-view.md)).|
 |[Binary.ViewFunction](binary-viewfunction.md) | Creates a function that can be intercepted by a handler defined on a view (via `Binary.View`).|
 |[#binary](sharpbinary.md) | Creates a binary value from numbers or text.|

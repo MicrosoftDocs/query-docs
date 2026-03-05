@@ -50,11 +50,11 @@ A table which includes combinations of values from the supplied columns based on
 
 ## Related content
 
-[ALLSELECTEDAPPLY function](allselectedapply-function-dax.md)
-[ALLSELECTEDREMOVE function](allselectedremove-function-dax.md)
-[ALWAYSAPPLY function](alwaysapply-function-dax.md)
-[KEEPFILTERS function](keepfilters-function-dax.md)
-[SHADOWCLUSTER function](shadowcluster-function-dax.md)
-[NONFILTER function](nonfilter-function-dax.md)
-[FILTERCLUSTER function](filtercluster-function-dax.md)
-[GROUPCROSSAPPLY function](groupcrossapply-function-dax.md)  
+- [ALLSELECTEDAPPLY function](allselectedapply-function-dax.md)
+- [ALLSELECTEDREMOVE function](allselectedremove-function-dax.md)
+- [ALWAYSAPPLY function](alwaysapply-function-dax.md)
+- [KEEPFILTERS function](keepfilters-function-dax.md)
+- [SHADOWCLUSTER function](shadowcluster-function-dax.md)
+- [NONFILTER function](nonfilter-function-dax.md)
+- [FILTERCLUSTER function](filtercluster-function-dax.md)
+- [GROUPCROSSAPPLY function](groupcrossapply-function-dax.md)  

@@ -2,6 +2,7 @@
 description: "Learn more about: List.Product"
 title: "List.Product"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.Product
 

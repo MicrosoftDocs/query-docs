@@ -2,6 +2,7 @@
 description: "Learn more about: Lines.FromBinary"
 title: "Lines.FromBinary"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Lines.FromBinary
 

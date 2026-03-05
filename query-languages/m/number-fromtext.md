@@ -2,6 +2,7 @@
 description: "Learn more about: Number.FromText"
 title: "Number.FromText"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Number.FromText
 

@@ -44,7 +44,7 @@ The following example counts the number of nonblank rows in the column, Phone, u
 
 ## Related content
 
-[COUNT function](count-function-dax.md)
-[COUNTA function](counta-function-dax.md)
-[COUNTX function](countx-function-dax.md)
-[Statistical functions](statistical-functions-dax.md)
+- [COUNT function](count-function-dax.md)
+- [COUNTA function](counta-function-dax.md)
+- [COUNTX function](countx-function-dax.md)
+- [Statistical functions](statistical-functions-dax.md)

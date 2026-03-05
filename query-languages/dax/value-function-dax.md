@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: VALUE"
 title: "VALUE function (DAX)"
+ms.topic: reference
 ---
 # VALUE
 
@@ -42,4 +43,4 @@ The following formula converts the typed string, "3", into the numeric value 3.
 
 ## Related content
 
-[Text functions](text-functions-dax.md)
+- [Text functions](text-functions-dax.md)

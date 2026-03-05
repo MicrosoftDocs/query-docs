@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: NORM.DIST"
 title: "NORM.DIST function (DAX)"
+ms.topic: reference
 ---
 # NORM.DIST
 
@@ -45,6 +46,6 @@ Returns
 
 ## Related content
 
-[NORM.S.DIST function](norm-s-dist-function-dax.md)
-[NORM.INV function](norm-inv-function-dax.md)
-[NORM.S.INV](norm-s-inv-function-dax.md)
+- [NORM.S.DIST function](norm-s-dist-function-dax.md)
+- [NORM.INV function](norm-inv-function-dax.md)
+- [NORM.S.INV](norm-s-inv-function-dax.md)

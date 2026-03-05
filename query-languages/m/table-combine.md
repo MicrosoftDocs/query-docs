@@ -2,6 +2,7 @@
 description: "Learn more about: Table.Combine"
 title: "Table.Combine"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.Combine
 

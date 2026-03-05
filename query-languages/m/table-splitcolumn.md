@@ -2,6 +2,7 @@
 description: "Learn more about: Table.SplitColumn"
 title: "Table.SplitColumn"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.SplitColumn
 

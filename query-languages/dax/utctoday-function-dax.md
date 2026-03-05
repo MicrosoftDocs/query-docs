@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: UTCTODAY"
 title: "UTCTODAY function (DAX)"
+ms.topic: reference
 ---
 # UTCTODAY
 
@@ -40,5 +41,5 @@ Returns:
 
 ## Related content
 
-[NOW function](now-function-dax.md)
-[UTCNOW function](utcnow-function-dax.md)
+- [NOW function](now-function-dax.md)
+- [UTCNOW function](utcnow-function-dax.md)

@@ -2,6 +2,7 @@
 description: "Learn more about: Date.IsInNextMonth"
 title: "Date.IsInNextMonth"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Date.IsInNextMonth
 

@@ -2,6 +2,7 @@
 description: "Learn more about: SapHanaDistribution.Type"
 title: "SapHanaDistribution.Type"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # SapHanaDistribution.Type
 

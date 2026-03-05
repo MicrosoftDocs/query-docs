@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: USERELATIONSHIP"
 title: "USERELATIONSHIP function (DAX)"
+ms.topic: reference
 ---
 # USERELATIONSHIP
 

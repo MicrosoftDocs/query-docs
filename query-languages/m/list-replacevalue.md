@@ -2,6 +2,7 @@
 description: "Learn more about: List.ReplaceValue"
 title: "List.ReplaceValue"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.ReplaceValue
 

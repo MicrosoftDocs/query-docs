@@ -57,6 +57,6 @@ In the first example, the names of the columns are unqualified. In the second ex
 
 ## Related content
 
-[MIN function](min-function-dax.md)
-[MINA function](mina-function-dax.md)
-[Statistical functions](statistical-functions-dax.md)
+- [MIN function](min-function-dax.md)
+- [MINA function](mina-function-dax.md)
+- [Statistical functions](statistical-functions-dax.md)

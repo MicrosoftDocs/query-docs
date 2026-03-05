@@ -2,6 +2,7 @@
 description: "Learn more about: Combiner.CombineTextByDelimiter"
 title: "Combiner.CombineTextByDelimiter"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Combiner.CombineTextByDelimiter
 

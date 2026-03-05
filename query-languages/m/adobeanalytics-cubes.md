@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: AdobeAnalytics.Cubes"
 title: "AdobeAnalytics.Cubes"
+ms.topic: reference
 ms.subservice: m-source
 ---
 # AdobeAnalytics.Cubes

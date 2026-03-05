@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: T.INV"
 title: "T.INV function (DAX)"
+ms.topic: reference
 ---
 # T.INV
 
@@ -43,7 +44,7 @@ Returns
 
 ## Related content
 
-[T.INV.2T](t-inv-2t-function-dax.md)
-[T.DIST](t-dist-function-dax.md)
-[T.DIST.2T](t-dist-2t-function-dax.md)
-[T.DIST.RT](t-dist-rt-function-dax.md)
+- [T.INV.2T](t-inv-2t-function-dax.md)
+- [T.DIST](t-dist-function-dax.md)
+- [T.DIST.2T](t-dist-2t-function-dax.md)
+- [T.DIST.RT](t-dist-rt-function-dax.md)

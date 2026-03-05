@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: RIGHT"
 title: "RIGHT function (DAX)"
+ms.topic: reference
 ---
 # RIGHT
 
@@ -29,7 +30,7 @@ A text string containing the specified right-most characters.
 
 ## Remarks
 
-- RIGHT always counts each character, whether single-byte or double-byte, as 1, no matter what the default language setting is.
+- [!INCLUDE [function-unicodecharacterbehavior](includes/function-unicodecharacterbehavior.md)]
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
@@ -51,7 +52,7 @@ The following formula returns a variable number of digits from the product code 
 
 ## Related content
 
-[Text functions](text-functions-dax.md)
-[LEFT](left-function-dax.md)
-[MID](mid-function-dax.md)
+- [Text functions](text-functions-dax.md)
+- [LEFT](left-function-dax.md)
+- [MID](mid-function-dax.md)
 

@@ -51,10 +51,10 @@ The following formula used in a calculated column gets the numeric value for the
 
 ## Related content
 
-[CEILING](ceiling-function-dax.md)
-[FLOOR](floor-function-dax.md)
-[ISO.CEILING](iso-ceiling-function-dax.md)
-[MROUND](mround-function-dax.md)
-[ROUND](round-function-dax.md)
-[ROUNDDOWN](rounddown-function-dax.md)
-[ROUNDUP](roundup-function-dax.md)
+- [CEILING](ceiling-function-dax.md)
+- [FLOOR](floor-function-dax.md)
+- [ISO.CEILING](iso-ceiling-function-dax.md)
+- [MROUND](mround-function-dax.md)
+- [ROUND](round-function-dax.md)
+- [ROUNDDOWN](rounddown-function-dax.md)
+- [ROUNDUP](roundup-function-dax.md)

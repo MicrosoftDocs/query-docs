@@ -2,6 +2,7 @@
 description: "Learn more about: DateTimeZone.UtcNow"
 title: "DateTimeZone.UtcNow"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # DateTimeZone.UtcNow
 

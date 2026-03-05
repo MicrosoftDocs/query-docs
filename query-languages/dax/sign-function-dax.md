@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SIGN"
 title: "SIGN function (DAX)"
+ms.topic: reference
 ---
 # SIGN
 
@@ -40,4 +41,4 @@ The following formula returns the sign of the result of the expression that calc
 
 ## Related content
 
-[Math and Trig functions](math-and-trig-functions-dax.md)
+- [Math and Trig functions](math-and-trig-functions-dax.md)

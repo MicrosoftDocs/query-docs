@@ -2,6 +2,7 @@
 description: "Learn more about: DateTimeZone.FixedUtcNow"
 title: "DateTimeZone.FixedUtcNow"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # DateTimeZone.FixedUtcNow
 

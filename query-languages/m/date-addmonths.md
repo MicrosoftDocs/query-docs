@@ -2,6 +2,7 @@
 description: "Learn more about: Date.AddMonths"
 title: "Date.AddMonths"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Date.AddMonths
 

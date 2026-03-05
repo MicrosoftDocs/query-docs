@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: AzureStorage.DataLake"
 title: "AzureStorage.DataLake"
+ms.topic: reference
 ms.subservice: m-source
 ---
 # AzureStorage.DataLake

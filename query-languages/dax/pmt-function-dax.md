@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PMT"
 title: "PMT function (DAX)"
+ms.topic: reference
 author: jajin7
 ---
 

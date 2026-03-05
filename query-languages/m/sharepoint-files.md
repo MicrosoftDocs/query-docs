@@ -2,6 +2,7 @@
 description: "Learn more about: SharePoint.Files"
 title: "SharePoint.Files"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # SharePoint.Files
 

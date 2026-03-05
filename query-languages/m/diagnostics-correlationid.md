@@ -2,6 +2,7 @@
 description: "Learn more about: Diagnostics.CorrelationId"
 title: "Diagnostics.CorrelationId"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Diagnostics.CorrelationId
 

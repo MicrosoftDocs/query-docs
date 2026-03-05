@@ -77,7 +77,7 @@ Shifts left each sales amount with 3 bits and returns the bit-shifted sales amou
 
 ## Related content
 
-[BITRSHIFT](bitrshift-function-dax.md)
-[BITAND](bitand-function-dax.md)
-[BITOR](bitor-function-dax.md)
-[BITXOR](bitxor-function-dax.md)
+- [BITRSHIFT](bitrshift-function-dax.md)
+- [BITAND](bitand-function-dax.md)
+- [BITOR](bitor-function-dax.md)
+- [BITXOR](bitxor-function-dax.md)

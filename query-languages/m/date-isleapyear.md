@@ -2,6 +2,7 @@
 description: "Learn more about: Date.IsLeapYear"
 title: "Date.IsLeapYear"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Date.IsLeapYear
 

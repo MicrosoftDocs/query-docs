@@ -134,8 +134,8 @@ The formula is constructed as follows:
 
 ## Related content
 
-[Filter functions](filter-functions-dax.md)
-[ALL function](all-function-dax.md)
-[ALLEXCEPT function](allexcept-function-dax.md)
-[FILTER function](filter-function-dax.md)
+- [Filter functions](filter-functions-dax.md)
+- [ALL function](all-function-dax.md)
+- [ALLEXCEPT function](allexcept-function-dax.md)
+- [FILTER function](filter-function-dax.md)
 

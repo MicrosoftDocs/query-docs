@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Binary.Length"
 title: "Binary.Length"
+ms.topic: reference
 ms.subservice: m-source
 ---
 # Binary.Length

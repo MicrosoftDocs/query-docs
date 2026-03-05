@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PERCENTILE.EXC"
 title: "PERCENTILE.EXC function (DAX)"
+ms.topic: reference
 ---
 # PERCENTILE.EXC
 
@@ -43,4 +44,4 @@ The k-th percentile of values in a range, where k is in the range 0..1, exclusiv
 
 ## Related content
 
-[PERCENTILEX.EXC](percentilex-exc-function-dax.md)
+- [PERCENTILEX.EXC](percentilex-exc-function-dax.md)

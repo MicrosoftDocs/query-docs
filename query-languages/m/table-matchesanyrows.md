@@ -2,6 +2,7 @@
 description: "Learn more about: Table.MatchesAnyRows"
 title: "Table.MatchesAnyRows"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.MatchesAnyRows
 

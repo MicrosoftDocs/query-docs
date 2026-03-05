@@ -2,6 +2,7 @@
 description: "Learn more about: BinaryFormat.Record"
 title: "BinaryFormat.Record"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # BinaryFormat.Record
 

@@ -2,6 +2,7 @@
 description: "Learn more about: WebAction.Request"
 title: "WebAction.Request"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # WebAction.Request
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SQRT"
 title: "SQRT function (DAX)"
+ms.topic: reference
 ---
 # SQRT
 
@@ -38,4 +39,4 @@ The following formula,
 
 ## Related content
 
-[Math and Trig functions](math-and-trig-functions-dax.md)
+- [Math and Trig functions](math-and-trig-functions-dax.md)

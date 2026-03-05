@@ -2,6 +2,7 @@
 description: "Learn more about: JoinKind.Type"
 title: "JoinKind.Type"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # JoinKind.Type
 

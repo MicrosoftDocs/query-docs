@@ -2,6 +2,7 @@
 description: "Learn more about: Record.AddField"
 title: "Record.AddField"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Record.AddField
 

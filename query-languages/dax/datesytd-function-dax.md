@@ -83,8 +83,8 @@ The following sample formula creates a measure that calculates the 'Running Tota
 
 ## Related content
 
-[Time intelligence functions](time-intelligence-functions-dax.md)
-[Date and time functions](date-and-time-functions-dax.md)
-[DATESWTD function](dateswtd-function-dax.md)
-[DATESMTD function](datesmtd-function-dax.md)
-[DATESQTD function](datesqtd-function-dax.md)
+- [Time intelligence functions](time-intelligence-functions-dax.md)
+- [Date and time functions](date-and-time-functions-dax.md)
+- [DATESWTD function](dateswtd-function-dax.md)
+- [DATESMTD function](datesmtd-function-dax.md)
+- [DATESQTD function](datesqtd-function-dax.md)

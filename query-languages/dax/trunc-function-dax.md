@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TRUNC"
 title: "TRUNC function (DAX)"
+ms.topic: reference
 ---
 # TRUNC
 
@@ -47,9 +48,9 @@ The following formula returns -8, the integer part of -8.9.
 
 ## Related content
 
-[Math and Trig functions](math-and-trig-functions-dax.md)
-[ROUND](round-function-dax.md)
-[ROUNDUP](roundup-function-dax.md)
-[ROUNDDOWN](rounddown-function-dax.md)
-[MROUND](mround-function-dax.md)
-[INT](int-function-dax.md)
+- [Math and Trig functions](math-and-trig-functions-dax.md)
+- [ROUND](round-function-dax.md)
+- [ROUNDUP](roundup-function-dax.md)
+- [ROUNDDOWN](rounddown-function-dax.md)
+- [MROUND](mround-function-dax.md)
+- [INT](int-function-dax.md)

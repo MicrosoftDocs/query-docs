@@ -2,6 +2,7 @@
 description: "Learn more about: List.Single"
 title: "List.Single"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.Single
 
@@ -13,7 +14,7 @@ List.Single(<b>list</b> as list) as any
   
 ## About
 
-If there is only one item in the list `list`, returns that item. If there is more than one item or the list is empty, the function throws an exception.
+If there is only one item in the list `list`, returns that item. If there is more than one item or the list is empty, the function raises an error.
 
 ## Example 1
 

@@ -2,6 +2,7 @@
 description: "Learn more about: Table.AddIndexColumn"
 title: "Table.AddIndexColumn"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.AddIndexColumn
 

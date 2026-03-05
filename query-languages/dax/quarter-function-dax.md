@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: QUARTER"
 title: "QUARTER function (DAX)"
+ms.topic: reference
 ---
 
 # QUARTER
@@ -27,7 +28,9 @@ An integer number from 1 to 4.
 
 ## Remarks
 
-If the input value is BLANK, the output value is also BLANK.
+- If the input value is BLANK, the output value is also BLANK.
+
+- This function isn't available in Power Pivot in Excel.
 
 ## Example 1
 
@@ -69,6 +72,6 @@ Returns:
 
 ## Related content
 
-[YEAR](year-function-dax.md)
-[MONTH](month-function-dax.md)
-[DAY](day-function-dax.md)
+- [YEAR](year-function-dax.md)
+- [MONTH](month-function-dax.md)
+- [DAY](day-function-dax.md)

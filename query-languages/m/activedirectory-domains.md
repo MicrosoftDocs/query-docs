@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ActiveDirectory.Domains"
 title: "ActiveDirectory.Domains"
+ms.topic: reference
 ms.subservice: m-source
 ---
 # ActiveDirectory.Domains

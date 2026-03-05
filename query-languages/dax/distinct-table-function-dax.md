@@ -46,8 +46,8 @@ Returns table:
 
 ## Related content
 
-[Filter functions](filter-functions-dax.md)
-[DISTINCT (column)](distinct-function-dax.md)
-[FILTER function](filter-function-dax.md)
-[RELATED function](related-function-dax.md)
-[VALUES function](values-function-dax.md)
+- [Filter functions](filter-functions-dax.md)
+- [DISTINCT (column)](distinct-function-dax.md)
+- [FILTER function](filter-function-dax.md)
+- [RELATED function](related-function-dax.md)
+- [VALUES function](values-function-dax.md)

@@ -2,6 +2,7 @@
 description: "Learn more about: Number.Permutations"
 title: "Number.Permutations"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Number.Permutations
 

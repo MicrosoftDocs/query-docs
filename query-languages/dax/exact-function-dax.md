@@ -38,4 +38,4 @@ The following formula used in a calculated column in the Product table checks th
 
 ## Related content
 
-[Text functions](text-functions-dax.md)
+- [Text functions](text-functions-dax.md)

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SUM"
 title: "SUM function (DAX)"
+ms.topic: reference
 ---
 # SUM
 
@@ -38,4 +39,4 @@ The following example adds all the numbers that are contained in the column, Amt
 
 ## Related content
 
-[SUMX](sumx-function-dax.md)
+- [SUMX](sumx-function-dax.md)

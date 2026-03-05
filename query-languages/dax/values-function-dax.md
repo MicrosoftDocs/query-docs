@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: VALUES"
 title: "VALUES function (DAX)"
+ms.topic: reference
 ---
 # VALUES
 
@@ -73,6 +74,6 @@ Returns
 
 ## Related content
 
-[FILTER function](filter-function-dax.md)
-[COUNTROWS function](countrows-function-dax.md)
-[Filter functions](filter-functions-dax.md)
+- [FILTER function](filter-function-dax.md)
+- [COUNTROWS function](countrows-function-dax.md)
+- [Filter functions](filter-functions-dax.md)

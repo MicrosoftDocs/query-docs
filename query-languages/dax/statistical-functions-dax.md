@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Statistical functions"
 title: "Statistical functions (DAX)"
+ms.topic: concept-article
 ---
 # Statistical functions
 

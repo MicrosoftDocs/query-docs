@@ -2,6 +2,7 @@
 description: "Learn more about: Date.IsInCurrentWeek"
 title: "Date.IsInCurrentWeek"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Date.IsInCurrentWeek
 

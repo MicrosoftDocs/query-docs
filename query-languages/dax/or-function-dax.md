@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: OR"
 title: "OR function (DAX)"
+ms.topic: reference
 ---
 
 # OR
@@ -69,4 +70,4 @@ Returns
 
 ## Related content
 
-[Logical functions](logical-functions-dax.md)
+- [Logical functions](logical-functions-dax.md)

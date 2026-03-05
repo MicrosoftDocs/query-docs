@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PRODUCT"
 title: "PRODUCT function (DAX)"
+ms.topic: reference
 ---
 # PRODUCT
 
@@ -44,4 +45,4 @@ The following computes the product of the AdjustedRates column in an Annuity tab
 
 ## Related content
 
-[PRODUCTX](productx-function-dax.md)
+- [PRODUCTX](productx-function-dax.md)

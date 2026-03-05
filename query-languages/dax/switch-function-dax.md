@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SWITCH"
 title: "SWITCH function (DAX)"
+ms.topic: reference
 ---
 # SWITCH
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: RATE"
 title: "RATE function (DAX)"
+ms.topic: reference
 author: jajin7
 ---
 

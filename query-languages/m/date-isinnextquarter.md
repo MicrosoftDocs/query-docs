@@ -2,6 +2,7 @@
 description: "Learn more about: Date.IsInNextQuarter"
 title: "Date.IsInNextQuarter"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Date.IsInNextQuarter
 

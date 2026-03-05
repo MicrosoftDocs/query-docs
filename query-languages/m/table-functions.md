@@ -25,7 +25,7 @@ These functions create and manipulate table values.
 |[Table.FromValue](table-fromvalue.md)|Creates a table with a column from the provided value or values.|
 |[Table.WithErrorContext](table-witherrorcontext.md) | This function is intended for internal use only.|
 |[Table.View](table-view.md)|Creates or extends a table with user-defined handlers for query and action operations.|
-|[Table.ViewError](table-viewerror.md) | Creates a modified error record that won't trigger a fallback when thrown by a handler defined on a view (via [Table.View](table-view.md)).|
+|[Table.ViewError](table-viewerror.md) | Creates a modified error record that won't trigger a fallback when raised by a handler defined on a view (via [Table.View](table-view.md)).|
 |[Table.ViewFunction](table-viewfunction.md) | Creates a function that can be intercepted by a handler defined on a view (via [Table.View](table-view.md)).|
 
 ## Conversions

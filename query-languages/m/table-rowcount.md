@@ -2,6 +2,7 @@
 description: "Learn more about: Table.RowCount"
 title: "Table.RowCount"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.RowCount
 

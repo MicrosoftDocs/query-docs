@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PARALLELPERIOD"
 title: "PARALLELPERIOD function (DAX)"
+ms.topic: reference
 ---
 # PARALLELPERIOD
 
@@ -74,6 +75,6 @@ The following sample formula creates a measure that calculates the previous year
 
 ## Related content
 
-[Time intelligence functions](time-intelligence-functions-dax.md)
-[Date and time functions](date-and-time-functions-dax.md)
-[DATEADD function](dateadd-function-dax.md)
+- [Time intelligence functions](time-intelligence-functions-dax.md)
+- [Date and time functions](date-and-time-functions-dax.md)
+- [DATEADD function](dateadd-function-dax.md)

@@ -2,6 +2,7 @@
 description: "Learn more about: BinaryFormat.SignedInteger64"
 title: "BinaryFormat.SignedInteger64"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # BinaryFormat.SignedInteger64
 

@@ -2,6 +2,7 @@
 description: "Learn more about: Table.LastN"
 title: "Table.LastN"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.LastN
 

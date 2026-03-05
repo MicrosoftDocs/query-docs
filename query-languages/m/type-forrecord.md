@@ -2,6 +2,7 @@
 description: "Learn more about: Type.ForRecord"
 title: "Type.ForRecord"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Type.ForRecord
 

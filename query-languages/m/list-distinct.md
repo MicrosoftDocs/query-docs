@@ -2,6 +2,7 @@
 description: "Learn more about: List.Distinct"
 title: "List.Distinct"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.Distinct
 

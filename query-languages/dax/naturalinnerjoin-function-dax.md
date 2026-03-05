@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: NATURALINNERJOIN"
 title: "NATURALINNERJOIN function (DAX)"
+ms.topic: reference
 ---
 # NATURALINNERJOIN
 
@@ -41,4 +42,4 @@ A table which includes only rows for which the values in the common columns spec
 
 ## Related content
 
-[NATURALLEFTOUTERJOIN](naturalleftouterjoin-function-dax.md)
+- [NATURALLEFTOUTERJOIN](naturalleftouterjoin-function-dax.md)

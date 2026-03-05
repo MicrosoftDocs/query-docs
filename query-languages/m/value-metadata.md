@@ -2,6 +2,7 @@
 description: "Learn more about: Value.Metadata"
 title: "Value.Metadata"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Value.Metadata
 

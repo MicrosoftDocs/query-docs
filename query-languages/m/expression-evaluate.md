@@ -2,6 +2,7 @@
 description: "Learn more about: Expression.Evaluate"
 title: "Expression.Evaluate"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Expression.Evaluate
 

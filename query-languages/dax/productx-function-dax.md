@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PRODUCTX"
 title: "PRODUCTX function (DAX)"
+ms.topic: reference
 ---
 # PRODUCTX
 
@@ -45,4 +46,4 @@ The following computes the future value of an investment:
 
 ## Related content
 
-[PRODUCT](product-function-dax.md)
+- [PRODUCT](product-function-dax.md)

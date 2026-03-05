@@ -2,6 +2,7 @@
 description: "Learn more about: Table.ViewFunction"
 title: "Table.ViewFunction"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.ViewFunction
 

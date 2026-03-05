@@ -2,6 +2,7 @@
 description: "Learn more about: SapBusinessWarehouseExecutionMode.Type"
 title: "SapBusinessWarehouseExecutionMode.Type"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # SapBusinessWarehouseExecutionMode.Type
 

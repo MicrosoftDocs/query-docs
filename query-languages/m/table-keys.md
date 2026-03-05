@@ -2,6 +2,7 @@
 description: "Learn more about: Table.Keys"
 title: "Table.Keys"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.Keys
 

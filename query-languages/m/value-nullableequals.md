@@ -2,6 +2,7 @@
 description: "Learn more about: Value.NullableEquals"
 title: "Value.NullableEquals"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Value.NullableEquals
 

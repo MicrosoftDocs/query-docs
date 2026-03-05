@@ -2,6 +2,7 @@
 description: "Learn more about: DateTime.Date"
 title: "DateTime.Date"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # DateTime.Date
 

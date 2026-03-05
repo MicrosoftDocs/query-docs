@@ -114,5 +114,5 @@ TotalSalesAmount = Slope1 * YearlyIncome + Slope2 * TotalChildren + Slope3 * Bir
 
 ## Related content
 
-[LINESTX](linestx-function-dax.md)
-[Statistical functions](statistical-functions-dax.md)
+- [LINESTX](linestx-function-dax.md)
+- [Statistical functions](statistical-functions-dax.md)

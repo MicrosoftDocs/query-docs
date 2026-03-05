@@ -2,6 +2,7 @@
 description: "Learn more about: Table.ContainsAny"
 title: "Table.ContainsAny"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.ContainsAny
 

@@ -2,6 +2,7 @@
 description: "Learn more about: Excel.ShapeTable"
 title: "Excel.ShapeTable"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Excel.ShapeTable
 

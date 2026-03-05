@@ -2,6 +2,7 @@
 description: "Learn more about: ItemExpression.From"
 title: "ItemExpression.From"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # ItemExpression.From
 

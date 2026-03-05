@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SAMPLE"
 title: "SAMPLE function (DAX)"
+ms.topic: reference
 ---
 # SAMPLE
 

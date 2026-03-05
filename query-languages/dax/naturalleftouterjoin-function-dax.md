@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: NATURALLEFTOUTERJOIN"
 title: "NATURALLEFTOUTERJOIN function (DAX)"
+ms.topic: reference
 ---
 # NATURALLEFTOUTERJOIN
 
@@ -41,4 +42,4 @@ A table which includes only rows from RightTable for which the values in the com
 
 ## Related content
 
-[NATURALINNERJOIN](naturalinnerjoin-function-dax.md)
+- [NATURALINNERJOIN](naturalinnerjoin-function-dax.md)

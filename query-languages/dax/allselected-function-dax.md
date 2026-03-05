@@ -22,8 +22,8 @@ ALLSELECTED([<tableName> | <columnName>[, <columnName>[, <columnName>[,…]]]] )
 
 |Term|Definition|
 |--------|--------------|
-|`tableName`|The name of an existing table, using standard DAX syntax. This parameter cannot be an expression. This parameter is optional.  |
-|`columnName`|The name of an existing column using standard DAX syntax, usually fully qualified. It cannot be an expression. This parameter is optional.    |
+|`tableName`|The name of an existing table using DAX syntax. This parameter cannot be an expression. This parameter is optional.  |
+|`columnName`|The name of an existing column using DAX syntax, usually fully qualified. It cannot be an expression. This parameter is optional.    |
 
 ## Return value
 

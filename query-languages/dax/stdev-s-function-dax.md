@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: STDEV.S"
 title: "STDEV.S function (DAX)"
+ms.topic: reference
 ---
 # STDEV.S
 

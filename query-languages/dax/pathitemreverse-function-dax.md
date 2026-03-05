@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PATHITEMREVERSE"
 title: "PATHITEMREVERSE function (DAX)"
+ms.topic: reference
 ---
 # PATHITEMREVERSE
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: USERPRINCIPALNAME"
 title: "USERPRINCIPALNAME function (DAX)"
+ms.topic: reference
 ---
 # USERPRINCIPALNAME
 

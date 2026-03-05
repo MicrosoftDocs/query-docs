@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: AzureStorage.Blobs"
 title: "AzureStorage.Blobs"
+ms.topic: reference
 ms.subservice: m-source
 ---
 # AzureStorage.Blobs

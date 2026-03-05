@@ -2,7 +2,7 @@
 title: "DIVIDE function vs divide operator (/) in DAX"
 description: Best practices for using the DAX DIVIDE function.
 author: peter-myers
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 08/25/2021
 ---
 

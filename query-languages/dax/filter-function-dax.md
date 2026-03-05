@@ -83,6 +83,6 @@ SUMX(FILTER('InternetSales_USD', RELATED('SalesTerritory'[SalesTerritoryCountry]
 
 ## Related content
 
-[Filter functions](filter-functions-dax.md)
-[ALL function](all-function-dax.md)
-[ALLEXCEPT function](allexcept-function-dax.md)
+- [Filter functions](filter-functions-dax.md)
+- [ALL function](all-function-dax.md)
+- [ALLEXCEPT function](allexcept-function-dax.md)

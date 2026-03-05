@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: RADIANS"
 title: "RADIANS function (DAX)"
+ms.topic: reference
 ---
 # RADIANS
 

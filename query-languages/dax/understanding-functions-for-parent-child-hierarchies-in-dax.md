@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Understanding functions for parent-child hierarchies in DAX"
 title: "Understanding functions for parent-child hierarchies in DAX"
+ms.topic: concept-article
 ---
 # Understanding functions for parent-child hierarchies in DAX
 

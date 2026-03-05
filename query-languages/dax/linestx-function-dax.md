@@ -120,5 +120,5 @@ Total Sales = Slope1 * Age + Slope2 * NumOfChildren + Intercept
 
 ## Related content
 
-[LINEST](linest-function-dax.md)
-[Statistical functions](statistical-functions-dax.md)
+- [LINEST](linest-function-dax.md)
+- [Statistical functions](statistical-functions-dax.md)

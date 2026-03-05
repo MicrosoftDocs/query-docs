@@ -2,6 +2,7 @@
 description: "Learn more about: Text.End"
 title: "Text.End"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.End
 

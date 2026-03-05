@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: BinaryEncoding.Type"
 title: "BinaryEncoding.Type"
+ms.topic: reference
 ms.subservice: m-source
 ---
 # BinaryEncoding.Type

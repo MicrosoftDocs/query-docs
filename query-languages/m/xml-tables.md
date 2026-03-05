@@ -2,6 +2,7 @@
 description: "Learn more about: Xml.Tables"
 title: "Xml.Tables"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Xml.Tables
 

@@ -19,7 +19,17 @@ INFO.DATACOVERAGEDEFINITIONS ( [<Restriction name>, <Restriction value>], ... )
 
 ## Return value
 
-A table whose columns match the schema rowset for data coverage definitions in the current semantic model.
+A table with the following columns:
+
+| Column | Description |
+|--------|-------------|
+| [ID] | Unique identifier for the data coverage definition |
+| [PartitionID] | Identifier of the partition associated with the data coverage definition |
+| [Description] | Description of the data coverage definition |
+| [Expression] | DAX expression that is evaluated for the data coverage definition. |
+| [ModifiedTime] | Timestamp of when the data coverage definition was last modified |
+| [State] | Current state of the data coverage definition (e.g., Ready, Error) |
+| [ErrorMessage] | Error message if the data coverage definition is in an error state |
 
 ## Remarks
 
@@ -35,21 +45,9 @@ EVALUATE
 	INFO.DATACOVERAGEDEFINITIONS()
 ```
 
-## Example 2 - DAX query with SELECTCOLUMNS
-
-```dax
-EVALUATE
-    SELECTCOLUMNS(
-        INFO.DATACOVERAGEDEFINITIONS(),
-        "Name", [Name],
-        "Expression", [Expression],
-        "ObjectType", [ObjectType]
-    )
-```
-
 ## See also
 
-[INFO.TABLES](info-tables-function-dax.md)
-[INFO.COLUMNS](info-columns-function-dax.md)
-[INFO.MEASURES](info-measures-function-dax.md)
-[INFO functions overview](info-functions-dax.md)
+- [INFO.TABLES](info-tables-function-dax.md)
+- [INFO.COLUMNS](info-columns-function-dax.md)
+- [INFO.MEASURES](info-measures-function-dax.md)
+- [INFO functions overview](info-functions-dax.md)

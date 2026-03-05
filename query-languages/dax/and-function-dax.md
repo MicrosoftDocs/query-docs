@@ -100,4 +100,4 @@ Returns
 
 ## Related content
 
-[Logical functions](logical-functions-dax.md)
+- [Logical functions](logical-functions-dax.md)

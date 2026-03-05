@@ -44,6 +44,6 @@ The following table shows the results when the example formula is used with 'Pro
 
 ## Related content
 
-[TRUE function](true-function-dax.md)
-[NOT function](not-function-dax.md)
-[IF function](if-function-dax.md)
+- [TRUE function](true-function-dax.md)
+- [NOT function](not-function-dax.md)
+- [IF function](if-function-dax.md)

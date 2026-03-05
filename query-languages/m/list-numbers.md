@@ -2,6 +2,7 @@
 description: "Learn more about: List.Numbers"
 title: "List.Numbers"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.Numbers
 

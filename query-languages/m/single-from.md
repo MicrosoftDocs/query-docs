@@ -2,6 +2,7 @@
 description: "Learn more about: Single.From"
 title: "Single.From"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Single.From
 

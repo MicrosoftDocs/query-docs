@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: REMOVEFILTERS"
 title: "REMOVEFILTERS function (DAX)"
+ms.topic: reference
 ---
 # REMOVEFILTERS
 

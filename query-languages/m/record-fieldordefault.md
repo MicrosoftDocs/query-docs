@@ -2,6 +2,7 @@
 description: "Learn more about: Record.FieldOrDefault"
 title: "Record.FieldOrDefault"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Record.FieldOrDefault
 

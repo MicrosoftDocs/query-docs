@@ -2,6 +2,7 @@
 description: "Learn more about: Table.ExpandRecordColumn"
 title: "Table.ExpandRecordColumn"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.ExpandRecordColumn
 

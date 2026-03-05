@@ -34,7 +34,7 @@ A table with the following columns:
 
 ## Remarks
 
-Can only be ran by users with write permission on the semantic model and not when live connected to the semantic model in Power BI Desktop. This function can be used in [DAX queries](/dax/dax-queries), and can't be used in calculations.
+Can only be run by users with write permission on the semantic model and not when live connected to the semantic model in Power BI Desktop. This function can be used in [DAX queries](/dax/dax-queries), and can't be used in calculations.
 
 ## Example 1 - DAX query
 
@@ -121,7 +121,7 @@ EVALUATE
 This DAX query returns a table with only the specified columns and joining to other INFO DAX functions and the variations table.
 ## See also
 
-[INFO.TABLES](info-tables-function-dax.md)
-[INFO.COLUMNS](info-columns-function-dax.md)
-[INFO.MEASURES](info-measures-function-dax.md)
-[INFO functions overview](info-functions-dax.md)
+- [INFO.TABLES](info-tables-function-dax.md)
+- [INFO.COLUMNS](info-columns-function-dax.md)
+- [INFO.MEASURES](info-measures-function-dax.md)
+- [INFO functions overview](info-functions-dax.md)

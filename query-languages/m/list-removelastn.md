@@ -2,6 +2,7 @@
 description: "Learn more about: List.RemoveLastN"
 title: "List.RemoveLastN"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.RemoveLastN
 

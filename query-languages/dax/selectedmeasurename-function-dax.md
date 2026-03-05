@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SELECTEDMEASURENAME"
 title: "SELECTEDMEASURENAME function (DAX)"
+ms.topic: reference
 ---
 # SELECTEDMEASURENAME
 
@@ -42,5 +43,5 @@ IF (
 
 ## Related content
 
-[SELECTEDMEASURE](selectedmeasure-function-dax.md)
-[ISSELECTEDMEASURE](isselectedmeasure-function-dax.md) 
+- [SELECTEDMEASURE](selectedmeasure-function-dax.md)
+- [ISSELECTEDMEASURE](isselectedmeasure-function-dax.md) 

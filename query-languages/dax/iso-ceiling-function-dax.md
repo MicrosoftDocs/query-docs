@@ -64,7 +64,7 @@ The following formula returns the ISO ceiling value of -4.40.
 
 ## Related content
 
-[Math and Trig functions](math-and-trig-functions-dax.md)
-[FLOOR function](floor-function-dax.md)
-[CEILING function](ceiling-function-dax.md)
-[ROUNDUP function](roundup-function-dax.md)
+- [Math and Trig functions](math-and-trig-functions-dax.md)
+- [FLOOR function](floor-function-dax.md)
+- [CEILING function](ceiling-function-dax.md)
+- [ROUNDUP function](roundup-function-dax.md)

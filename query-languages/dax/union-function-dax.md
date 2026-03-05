@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: UNION"
 title: "UNION function (DAX)"
+ms.topic: reference
 ---
 # UNION
 

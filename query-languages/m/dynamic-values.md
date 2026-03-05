@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Dynamic values"
 title: "Dynamic values"
+ms.topic: reference
 ---
 # Dynamic values
 

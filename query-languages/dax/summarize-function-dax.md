@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SUMMARIZE"
 title: "SUMMARIZE function (DAX)"
+ms.topic: reference
 ---
 # SUMMARIZE
 
@@ -201,4 +202,4 @@ Returns the following table,
 
 ## Related content
 
-[SUMMARIZECOLUMNS](summarizecolumns-function-dax.md)
+- [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md)

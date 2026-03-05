@@ -2,6 +2,7 @@
 description: "Learn more about: Value.Is"
 title: "Value.Is"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Value.Is
 

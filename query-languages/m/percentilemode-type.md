@@ -2,6 +2,7 @@
 description: "Learn more about: PercentileMode.Type"
 title: "PercentileMode.Type"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # PercentileMode.Type
 

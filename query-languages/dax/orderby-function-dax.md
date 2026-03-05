@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ORDERBY"
 title: "ORDERBY function (DAX)"
+ms.topic: reference
 ---
 
 # ORDERBY
@@ -36,12 +37,12 @@ See [OFFSET](offset-function-dax.md).
 
 ## Related content
 
-[Understanding ORDERBY, PARTITIONBY, and MATCHBY functions](../dax/best-practices/dax-understand-orderby.md)
-[INDEX](index-function-dax.md)
-[OFFSET](offset-function-dax.md)
-[PARTITIONBY](partitionby-function-dax.md)
-[MATCHBY](matchby-function-dax.md)
-[WINDOW](window-function-dax.md)
-[RANK](rank-function-dax.md)
-[ROWNUMBER](rownumber-function-dax.md)
+- [Understanding ORDERBY, PARTITIONBY, and MATCHBY functions](../dax/best-practices/dax-understand-orderby.md)
+- [INDEX](index-function-dax.md)
+- [OFFSET](offset-function-dax.md)
+- [PARTITIONBY](partitionby-function-dax.md)
+- [MATCHBY](matchby-function-dax.md)
+- [WINDOW](window-function-dax.md)
+- [RANK](rank-function-dax.md)
+- [ROWNUMBER](rownumber-function-dax.md)
 

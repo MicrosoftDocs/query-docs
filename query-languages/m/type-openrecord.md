@@ -2,6 +2,7 @@
 description: "Learn more about: Type.OpenRecord"
 title: "Type.OpenRecord"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Type.OpenRecord
 

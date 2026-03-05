@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Access.Database"
 title: "Access.Database"
+ms.topic: reference
 ms.subservice: m-source
 ---
 # Access.Database

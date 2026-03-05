@@ -2,6 +2,7 @@
 description: "Learn more about: BinaryFormat.Single"
 title: "BinaryFormat.Single"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # BinaryFormat.Single
 

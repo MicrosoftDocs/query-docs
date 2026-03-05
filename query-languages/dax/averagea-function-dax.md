@@ -58,6 +58,6 @@ The following example returns the average of non-blank cells in the referenced c
 
 ## Related content
 
-[AVERAGE function](average-function-dax.md)
-[AVERAGEX function](averagex-function-dax.md)
-[Statistical functions](statistical-functions-dax.md)
+- [AVERAGE function](average-function-dax.md)
+- [AVERAGEX function](averagex-function-dax.md)
+- [Statistical functions](statistical-functions-dax.md)

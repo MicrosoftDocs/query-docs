@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: RANK"
 title: "RANK function (DAX)"
+ms.topic: reference
 author: rahulten
 ---
 
@@ -89,8 +90,8 @@ The screenshot below shows the visual matrix and the first visual calculation ex
 
 ## Related content
 
-[INDEX](index-function-dax.md)
-[ORDERBY](orderby-function-dax.md)
-[PARTITIONBY](partitionby-function-dax.md)
-[WINDOW](window-function-dax.md)
-[ROWNUMBER](rownumber-function-dax.md)
+- [INDEX](index-function-dax.md)
+- [ORDERBY](orderby-function-dax.md)
+- [PARTITIONBY](partitionby-function-dax.md)
+- [WINDOW](window-function-dax.md)
+- [ROWNUMBER](rownumber-function-dax.md)

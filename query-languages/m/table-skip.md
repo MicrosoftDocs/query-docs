@@ -2,6 +2,7 @@
 description: "Learn more about: Table.Skip"
 title: "Table.Skip"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.Skip
 

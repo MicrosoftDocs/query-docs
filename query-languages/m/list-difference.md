@@ -2,6 +2,7 @@
 description: "Learn more about: List.Difference"
 title: "List.Difference"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.Difference
 

@@ -85,5 +85,5 @@ Returns,
 
 ## Related content
 
-[SUMMARIZECOLUMNS function](summarizecolumns-function-dax.md)
-[CALCULATE function](calculate-function-dax.md)
+- [SUMMARIZECOLUMNS function](summarizecolumns-function-dax.md)
+- [CALCULATE function](calculate-function-dax.md)

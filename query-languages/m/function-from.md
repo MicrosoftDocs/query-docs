@@ -2,6 +2,7 @@
 description: "Learn more about: Function.From"
 title: "Function.From"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Function.From
 

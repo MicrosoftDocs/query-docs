@@ -2,6 +2,7 @@
 description: "Learn more about: DateTime.IsInPreviousHour"
 title: "DateTime.IsInPreviousHour"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # DateTime.IsInPreviousHour
 

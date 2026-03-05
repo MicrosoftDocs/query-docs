@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SUBSTITUTEWITHINDEX"
 title: "SUBSTITUTEWITHINDEX function (DAX)"
+ms.topic: reference
 ---
 # SUBSTITUTEWITHINDEX
 

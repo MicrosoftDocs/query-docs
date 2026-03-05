@@ -2,6 +2,7 @@
 description: "Learn more about: Informix.Database"
 title: "Informix.Database"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Informix.Database
 

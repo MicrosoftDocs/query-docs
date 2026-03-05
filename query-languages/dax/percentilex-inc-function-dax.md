@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PERCENTILEX.INC"
 title: "PERCENTILEX.INC function (DAX)"
+ms.topic: reference
 ---
 # PERCENTILEX.INC
 
@@ -42,4 +43,4 @@ The percentile number of an expression evaluated for each row in a table.
 
 ## Related content
 
-[PERCENTILE.INC](percentile-inc-function-dax.md)
+- [PERCENTILE.INC](percentile-inc-function-dax.md)

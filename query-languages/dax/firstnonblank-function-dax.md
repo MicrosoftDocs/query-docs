@@ -42,5 +42,5 @@ A table containing a single column and single row with the computed first value.
 
 ## Related content
 
-[LASTNONBLANK function](lastnonblank-function-dax.md)
-[Statistical functions](statistical-functions-dax.md)
+- [LASTNONBLANK function](lastnonblank-function-dax.md)
+- [Statistical functions](statistical-functions-dax.md)

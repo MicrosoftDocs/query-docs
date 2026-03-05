@@ -2,6 +2,7 @@
 description: "Learn more about: Diagnostics.ActivityId"
 title: "Diagnostics.ActivityId"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Diagnostics.ActivityId
 

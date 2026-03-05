@@ -41,7 +41,7 @@ Returns 3.
 
 ## Related content
 
-[BITOR](bitor-function-dax.md)
-[BITAND](bitand-function-dax.md)
-[BITLSHIFT](bitlshift-function-dax.md)
-[BITRSHIFT](bitrshift-function-dax.md)
+- [BITOR](bitor-function-dax.md)
+- [BITAND](bitand-function-dax.md)
+- [BITLSHIFT](bitlshift-function-dax.md)
+- [BITRSHIFT](bitrshift-function-dax.md)

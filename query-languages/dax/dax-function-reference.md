@@ -46,6 +46,6 @@ The DAX function reference provides detailed information including syntax, param
 
 ## Related content
 
-[DAX Syntax Reference](dax-syntax-reference.md)
-[DAX Operator Reference](dax-operator-reference.md)
-[DAX Parameter-Naming Conventions](dax-parameter-naming-conventions.md)
+- [DAX Syntax Reference](dax-syntax-reference.md)
+- [DAX Operator Reference](dax-operator-reference.md)
+- [DAX Parameter-Naming Conventions](dax-parameter-naming-conventions.md)

@@ -2,6 +2,7 @@
 description: "Learn more about: Value.Equals"
 title: "Value.Equals"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Value.Equals
 

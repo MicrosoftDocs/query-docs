@@ -80,7 +80,7 @@ The following sample formula creates a measure that calculates the 'Year End Inv
 
 ## Related content
 
-[Time intelligence functions](time-intelligence-functions-dax.md)
-[CLOSINGBALANCEQUARTER function](closingbalancequarter-function-dax.md)
-[CLOSINGBALANCEMONTH function](closingbalancemonth-function-dax.md)
-[CLOSINGBALANCEWEEK function](closingbalanceweek-function-dax.md)
+- [Time intelligence functions](time-intelligence-functions-dax.md)
+- [CLOSINGBALANCEQUARTER function](closingbalancequarter-function-dax.md)
+- [CLOSINGBALANCEMONTH function](closingbalancemonth-function-dax.md)
+- [CLOSINGBALANCEWEEK function](closingbalanceweek-function-dax.md)

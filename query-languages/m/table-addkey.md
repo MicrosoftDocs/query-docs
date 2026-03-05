@@ -2,6 +2,7 @@
 description: "Learn more about: Table.AddKey"
 title: "Table.AddKey"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.AddKey
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: NEXT"
 title: "NEXT function (DAX)"
+ms.topic: reference
 ---
 
 # NEXT
@@ -50,6 +51,6 @@ The screenshot below shows the visual matrix and the visual calculation expressi
 
 ## Related content
 
-[FIRST](first-function-dax.md)
-[LAST](last-function-dax.md)
-[PREVIOUS](PREVIOUS-function-dax.md)
+- [FIRST](first-function-dax.md)
+- [LAST](last-function-dax.md)
+- [PREVIOUS](PREVIOUS-function-dax.md)

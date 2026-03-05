@@ -2,7 +2,7 @@
 title: "Use variables to improve your DAX formulas"
 description: Best practices for using variables in DAX expressions.
 author: peter-myers
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 08/25/2021
 ---
 

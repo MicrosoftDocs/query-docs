@@ -2,6 +2,7 @@
 description: "Learn more about: Value.Divide"
 title: "Value.Divide"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Value.Divide
 

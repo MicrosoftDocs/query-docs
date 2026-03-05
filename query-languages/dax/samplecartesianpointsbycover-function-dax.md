@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SAMPLECARTESIANPOINTSBYCOVER"
 title: "SAMPLECARTESIANPOINTSBYCOVER function (DAX) | Microsoft Docs"
+ms.topic: reference
 author: jajin7
 ---
 

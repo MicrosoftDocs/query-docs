@@ -2,6 +2,7 @@
 description: "Learn more about: Date.ToRecord"
 title: "Date.ToRecord"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Date.ToRecord
 

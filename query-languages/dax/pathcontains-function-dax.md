@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PATHCONTAINS"
 title: "PATHCONTAINS function (DAX)"
+ms.topic: reference
 ---
 # PATHCONTAINS
 

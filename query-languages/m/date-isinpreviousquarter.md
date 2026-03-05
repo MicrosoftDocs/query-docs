@@ -2,6 +2,7 @@
 description: "Learn more about: Date.IsInPreviousQuarter"
 title: "Date.IsInPreviousQuarter"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Date.IsInPreviousQuarter
 

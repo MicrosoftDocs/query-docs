@@ -2,6 +2,7 @@
 description: "Learn more about: Geography.FromWellKnownText"
 title: "Geography.FromWellKnownText"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Geography.FromWellKnownText
 

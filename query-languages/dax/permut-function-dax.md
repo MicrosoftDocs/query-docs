@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PERMUT"
 title: "PERMUT function (DAX)"
+ms.topic: reference
 ---
 # PERMUT
 

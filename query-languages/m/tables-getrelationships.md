@@ -2,6 +2,7 @@
 description: "Learn more about: Tables.GetRelationships"
 title: "Tables.GetRelationships"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Tables.GetRelationships
 

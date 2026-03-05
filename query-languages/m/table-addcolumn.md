@@ -2,6 +2,7 @@
 description: "Learn more about: Table.AddColumn"
 title: "Table.AddColumn"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.AddColumn
 

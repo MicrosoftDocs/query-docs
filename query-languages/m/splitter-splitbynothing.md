@@ -2,6 +2,7 @@
 description: "Learn more about: Splitter.SplitByNothing"
 title: "Splitter.SplitByNothing"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Splitter.SplitByNothing
 

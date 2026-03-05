@@ -67,4 +67,4 @@ Returns:
 
 ## Related content
 
-[ISONORAFTER](isonorafter-function-dax.md)
+- [ISONORAFTER](isonorafter-function-dax.md)

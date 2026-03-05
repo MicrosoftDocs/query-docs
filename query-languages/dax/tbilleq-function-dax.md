@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TBILLEQ"
 title: "TBILLEQ function (DAX)"
+ms.topic: reference
 author: jajin7
 ---
 

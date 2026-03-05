@@ -2,6 +2,7 @@
 description: "Learn more about: TimeZone.Current"
 title: "TimeZone.Current"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # TimeZone.Current
 

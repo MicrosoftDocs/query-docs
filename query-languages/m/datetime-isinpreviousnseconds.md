@@ -2,6 +2,7 @@
 description: "Learn more about: DateTime.IsInPreviousNSeconds"
 title: "DateTime.IsInPreviousNSeconds"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # DateTime.IsInPreviousNSeconds
 

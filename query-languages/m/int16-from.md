@@ -2,6 +2,7 @@
 description: "Learn more about: Int16.From"
 title: "Int16.From"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Int16.From
 

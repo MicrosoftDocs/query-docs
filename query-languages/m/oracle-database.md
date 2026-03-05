@@ -2,6 +2,7 @@
 description: "Learn more about: Oracle.Database"
 title: "Oracle.Database"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Oracle.Database
 

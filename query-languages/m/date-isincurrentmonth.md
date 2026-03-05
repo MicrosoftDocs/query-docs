@@ -2,6 +2,7 @@
 description: "Learn more about: Date.IsInCurrentMonth"
 title: "Date.IsInCurrentMonth"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Date.IsInCurrentMonth
 

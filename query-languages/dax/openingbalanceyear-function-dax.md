@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: OPENINGBALANCEYEAR"
 title: "OPENINGBALANCEYEAR function (DAX)"
+ms.topic: reference
 ---
 # OPENINGBALANCEYEAR
 
@@ -76,8 +77,8 @@ OPENINGBALANCEYEAR (
 
 ## Related content
 
-[OPENINGBALANCEWEEK function](openingbalanceweek-function-dax.md)
-[OPENINGBALANCEQUARTER function](openingbalancequarter-function-dax.md)
-[OPENINGBALANCEMONTH function](openingbalancemonth-function-dax.md)
-[Time intelligence functions](time-intelligence-functions-dax.md)
-[CLOSINGBALANCEYEAR function](closingbalanceyear-function-dax.md)
+- [OPENINGBALANCEWEEK function](openingbalanceweek-function-dax.md)
+- [OPENINGBALANCEQUARTER function](openingbalancequarter-function-dax.md)
+- [OPENINGBALANCEMONTH function](openingbalancemonth-function-dax.md)
+- [Time intelligence functions](time-intelligence-functions-dax.md)
+- [CLOSINGBALANCEYEAR function](closingbalanceyear-function-dax.md)

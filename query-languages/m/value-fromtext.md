@@ -2,6 +2,7 @@
 description: "Learn more about: Value.FromText"
 title: "Value.FromText"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Value.FromText
 

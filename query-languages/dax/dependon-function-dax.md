@@ -45,6 +45,6 @@ This DEPENDON makes the first column depend on outer VTable[Country]. So the res
 
 ## Related content
 
-[Filter functions](filter-functions-dax.md)  
-[GROUPCROSSAPPLY function](groupcrossapply-function-dax.md)  
-[GROUPCROSSAPPLYTABLE function](groupcrossapplytable-function-dax.md)  
+- [Filter functions](filter-functions-dax.md)  
+- [GROUPCROSSAPPLY function](groupcrossapply-function-dax.md)  
+- [GROUPCROSSAPPLYTABLE function](groupcrossapplytable-function-dax.md)  

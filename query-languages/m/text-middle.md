@@ -2,6 +2,7 @@
 description: "Learn more about: Text.Middle"
 title: "Text.Middle"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.Middle
 

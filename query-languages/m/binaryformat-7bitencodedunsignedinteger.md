@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.7BitEncodedUnsignedInteger"
 title: "BinaryFormat.7BitEncodedUnsignedInteger"
+ms.topic: reference
 ms.subservice: m-source
 ---
 # BinaryFormat.7BitEncodedUnsignedInteger

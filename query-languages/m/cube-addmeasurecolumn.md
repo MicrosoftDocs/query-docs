@@ -2,6 +2,7 @@
 description: "Learn more about: Cube.AddMeasureColumn"
 title: "Cube.AddMeasureColumn"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Cube.AddMeasureColumn
 

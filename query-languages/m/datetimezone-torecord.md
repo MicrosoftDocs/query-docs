@@ -2,6 +2,7 @@
 description: "Learn more about: DateTimeZone.ToRecord"
 title: "DateTimeZone.ToRecord"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # DateTimeZone.ToRecord
 

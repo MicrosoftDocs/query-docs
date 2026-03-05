@@ -149,7 +149,7 @@ In this example, row context is converted to the filter context. It's known as _
 
 ## Related content
 
-[Filter context](dax-overview.md#filter-context)
-[Row context](dax-overview.md#row-context)
-[CALCULATETABLE function](calculatetable-function-dax.md)
-[Filter functions](filter-functions-dax.md)
+- [Filter context](dax-overview.md#filter-context)
+- [Row context](dax-overview.md#row-context)
+- [CALCULATETABLE function](calculatetable-function-dax.md)
+- [Filter functions](filter-functions-dax.md)

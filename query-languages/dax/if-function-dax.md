@@ -83,6 +83,6 @@ IF(
 
 ## Related content
 
-[IF.EAGER function](if-eager-function-dax.md) 
-[SWITCH function (DAX)](switch-function-dax.md)
-[Logical functions](logical-functions-dax.md)
+- [IF.EAGER function](if-eager-function-dax.md) 
+- [SWITCH function (DAX)](switch-function-dax.md)
+- [Logical functions](logical-functions-dax.md)

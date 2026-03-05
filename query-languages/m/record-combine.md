@@ -2,6 +2,7 @@
 description: "Learn more about: Record.Combine"
 title: "Record.Combine"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Record.Combine
 

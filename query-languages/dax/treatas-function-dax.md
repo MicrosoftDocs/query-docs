@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TREATAS"
 title: "TREATAS function"
+ms.topic: reference
 ---
 # TREATAS
 
@@ -11,7 +12,7 @@ Applies the result of a table expression as filters to columns from an unrelated
 ## Syntax
 
 ```dax
-TREATAS(table_expression, <column>[, <column>[, <column>[,…]]]} )
+TREATAS(table_expression, <column>[, <column>[, <column>[,…]]])
 ```
 
 ### Parameters
@@ -51,6 +52,6 @@ CALCULATE(
 
 ## Related content
 
-[INTERSECT](intersect-function-dax.md)
-[FILTER](filter-function-dax.md)
-[USERELATIONSHIP](userelationship-function-dax.md)
+- [INTERSECT](intersect-function-dax.md)
+- [FILTER](filter-function-dax.md)
+- [USERELATIONSHIP](userelationship-function-dax.md)

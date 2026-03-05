@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: QUOTIENT"
 title: "QUOTIENT function (DAX)"
+ms.topic: reference
 ---
 # QUOTIENT
 
@@ -45,4 +46,4 @@ The following formulas return the same result, 2.
 
 ## Related content
 
-[Math and Trig functions](math-and-trig-functions-dax.md)
+- [Math and Trig functions](math-and-trig-functions-dax.md)

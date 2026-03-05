@@ -2,6 +2,7 @@
 description: "Learn more about: Html.Table"
 title: "Html.Table"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Html.Table
 

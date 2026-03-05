@@ -146,7 +146,7 @@ ORDER BY [Relationship Name]
 
 ## See also
 
-[INFO.TABLES](info-tables-function-dax.md)
-[INFO.COLUMNS](info-columns-function-dax.md)
-[INFO.PARTITIONS](info-partitions-function-dax.md)
-[INFO functions overview](info-functions-dax.md)
+- [INFO.TABLES](info-tables-function-dax.md)
+- [INFO.COLUMNS](info-columns-function-dax.md)
+- [INFO.PARTITIONS](info-partitions-function-dax.md)
+- [INFO functions overview](info-functions-dax.md)

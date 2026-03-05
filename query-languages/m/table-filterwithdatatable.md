@@ -2,6 +2,7 @@
 description: "Learn more about: Table.FilterWithDataTable"
 title: "Table.FilterWithDataTable"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.FilterWithDataTable
 

@@ -138,5 +138,5 @@ White |
 
 ## Related content
 
-[IN operator](dax-operator-reference.md#logical-operators)
-[DAX queries](dax-queries.md)
+- [IN operator](dax-operator-reference.md#logical-operators)
+- [DAX queries](dax-queries.md)

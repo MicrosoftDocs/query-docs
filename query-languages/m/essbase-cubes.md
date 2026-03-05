@@ -2,6 +2,7 @@
 description: "Learn more about: Essbase.Cubes"
 title: "Essbase.Cubes"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Essbase.Cubes
 

@@ -39,4 +39,4 @@ The following formula gets each row in the column, [ProductCode], and converts t
 
 ## Related content
 
-[Text functions](text-functions-dax.md)
+- [Text functions](text-functions-dax.md)

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TOCSV"
 title: "TOCSV function (DAX)"
+ms.topic: reference
 ---
 # TOCSV
 
@@ -55,5 +56,5 @@ Returns:
 
 ## Related content
 
-[TOJSON](tojson-function-dax.md)
-[EVALUATEANDLOG](evaluateandlog-function-dax.md)
+- [TOJSON](tojson-function-dax.md)
+- [EVALUATEANDLOG](evaluateandlog-function-dax.md)

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ROLLUPADDISSUBTOTAL"
 title: "ROLLUPADDISSUBTOTAL function (DAX)"
+ms.topic: reference
 ---
 # ROLLUPADDISSUBTOTAL
 

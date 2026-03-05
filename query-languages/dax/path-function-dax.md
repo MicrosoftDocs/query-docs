@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PATH"
 title: "PATH function (DAX)"
+ms.topic: reference
 ---
 # PATH
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: VAR"
 title: "VAR keyword (DAX)"
+ms.topic: reference
 ---
 # VAR
 
@@ -82,6 +83,5 @@ By using a variable, you can get the same outcome, but in a more readable way. A
 
 ## Related content
 
-[Use variables to improve your DAX formulas](best-practices/dax-variables.md)
-
-[DAX queries](dax-queries.md)
+- [Use variables to improve your DAX formulas](best-practices/dax-variables.md)
+- [DAX queries](dax-queries.md)

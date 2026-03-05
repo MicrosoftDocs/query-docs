@@ -2,6 +2,7 @@
 description: "Learn more about: Type.Is"
 title: "Type.Is"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Type.Is
 

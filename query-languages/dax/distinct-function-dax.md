@@ -62,7 +62,7 @@ Also, note that the results are not additive. That is to say, the total number o
 
 ## Related content
 
-[Filter functions](filter-functions-dax.md)
-[FILTER function](filter-function-dax.md)
-[RELATED function](related-function-dax.md)
-[VALUES function](values-function-dax.md)
+- [Filter functions](filter-functions-dax.md)
+- [FILTER function](filter-function-dax.md)
+- [RELATED function](related-function-dax.md)
+- [VALUES function](values-function-dax.md)

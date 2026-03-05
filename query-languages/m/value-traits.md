@@ -2,6 +2,7 @@
 description: "Learn more about: Value.Traits"
 title: "Value.Traits"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Value.Traits
 

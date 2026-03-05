@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TIMEVALUE"
 title: "TIMEVALUE function (DAX)"
+ms.topic: reference
 ---
 # TIMEVALUE
 
@@ -40,4 +41,4 @@ A date (`datetime`).
 
 ## Related content
 
-[Date and time functions](date-and-time-functions-dax.md)
+- [Date and time functions](date-and-time-functions-dax.md)

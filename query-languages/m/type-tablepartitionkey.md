@@ -2,6 +2,7 @@
 description: "Learn more about: Type.TablePartitionKey"
 title: "Type.TablePartitionKey"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Type.TablePartitionKey
 

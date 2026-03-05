@@ -2,6 +2,7 @@
 description: "Learn more about: Text.Contains"
 title: "Text.Contains"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.Contains
 

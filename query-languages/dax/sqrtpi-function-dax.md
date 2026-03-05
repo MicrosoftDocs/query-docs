@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SQRTPI"
 title: "SQRTPI function (DAX)"
+ms.topic: reference
 ---
 # SQRTPI
 

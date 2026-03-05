@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: NONFILTER"
 title: "NONFILTER function (DAX) | Microsoft Docs"
+ms.topic: reference
 ---
 # NONFILTER
 
@@ -32,6 +33,6 @@ A table of values.
 
 ## Related content
 
-[Filter functions](filter-functions-dax.md)  
-[GROUPCROSSAPPLY function](groupcrossapply-function-dax.md)  
-[GROUPCROSSAPPLYTABLE function](groupcrossapplytable-function-dax.md)  
+- [Filter functions](filter-functions-dax.md)  
+- [GROUPCROSSAPPLY function](groupcrossapply-function-dax.md)  
+- [GROUPCROSSAPPLYTABLE function](groupcrossapplytable-function-dax.md)  

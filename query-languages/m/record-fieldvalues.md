@@ -2,6 +2,7 @@
 description: "Learn more about: Record.FieldValues"
 title: "Record.FieldValues"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Record.FieldValues
 

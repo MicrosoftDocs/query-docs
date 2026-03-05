@@ -2,6 +2,7 @@
 description: "Learn more about: Number.Power"
 title: "Number.Power"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Number.Power
 

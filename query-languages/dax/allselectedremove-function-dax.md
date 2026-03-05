@@ -37,6 +37,6 @@ A table of values.
 
 ## Related content
 
-[Filter functions](filter-functions-dax.md)  
-[GROUPCROSSAPPLY function](groupcrossapply-function-dax.md)  
-[GROUPCROSSAPPLYTABLE function](groupcrossapplytable-function-dax.md)  
+- [Filter functions](filter-functions-dax.md)  
+- [GROUPCROSSAPPLY function](groupcrossapply-function-dax.md)  
+- [GROUPCROSSAPPLYTABLE function](groupcrossapplytable-function-dax.md)  

@@ -2,6 +2,7 @@
 description: "Learn more about: Table.DuplicateColumn"
 title: "Table.DuplicateColumn"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.DuplicateColumn
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: YIELD"
 title: "YIELD function (DAX)"
+ms.topic: reference
 author: jajin7
 ---
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: VARX.S"
 title: "VARX.S function (DAX)"
+ms.topic: reference
 ---
 # VARX.S
 

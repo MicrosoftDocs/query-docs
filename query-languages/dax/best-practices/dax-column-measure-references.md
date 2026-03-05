@@ -2,7 +2,7 @@
 title: "Column and measure references in DAX"
 description: Best practices when referring to columns in measures in your DAX expressions.
 author: peter-myers
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 08/25/2021
 ---
 

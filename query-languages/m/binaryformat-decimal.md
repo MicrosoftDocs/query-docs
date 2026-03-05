@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: BinaryFormat.Decimal"
 title: "BinaryFormat.Decimal"
+ms.topic: reference
 ms.subservice: m-source
 ---
 # BinaryFormat.Decimal

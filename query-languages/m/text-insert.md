@@ -2,6 +2,7 @@
 description: "Learn more about: Text.Insert"
 title: "Text.Insert"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.Insert
 

@@ -29,9 +29,9 @@ A whole number indicating the number of characters in the text string.
 
 - Whereas Microsoft Excel has different functions for working with single-byte and double-byte character languages, DAX uses Unicode and stores all characters with the same length.
 
-- LEN always counts each character as 1, no matter what the default language setting is.
-
 - If you use LEN with a column that contains non-text values, such as dates or Booleans, the function implicitly casts the value to text, using the current column format.
+
+- [!INCLUDE [function-unicodecharacterbehavior](includes/function-unicodecharacterbehavior.md)]
 
 ## Example
 

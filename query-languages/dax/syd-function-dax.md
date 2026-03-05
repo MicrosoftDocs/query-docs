@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SYD"
 title: "SYD function (DAX)"
+ms.topic: reference
 author: jajin7
 ---
 

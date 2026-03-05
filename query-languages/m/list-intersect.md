@@ -2,6 +2,7 @@
 description: "Learn more about: List.Intersect"
 title: "List.Intersect"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.Intersect
 

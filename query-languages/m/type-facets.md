@@ -2,6 +2,7 @@
 description: "Learn more about: Type.Facets"
 title: "Type.Facets"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Type.Facets
 

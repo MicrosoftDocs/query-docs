@@ -2,6 +2,7 @@
 description: "Learn more about: Value.ViewError"
 title: "Value.ViewError"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Value.ViewError
 

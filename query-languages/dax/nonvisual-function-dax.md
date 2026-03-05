@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: NONVISUAL"
 title: "NONVISUAL function (DAX)"
+ms.topic: reference
 ---
 # NONVISUAL
 

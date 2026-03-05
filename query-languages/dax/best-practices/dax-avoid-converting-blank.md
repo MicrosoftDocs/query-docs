@@ -2,7 +2,7 @@
 title: "Avoid converting BLANKs to values in DAX"
 description: Best practices for converting BLANKs to values.
 author: peter-myers
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 08/25/2021
 
 ---

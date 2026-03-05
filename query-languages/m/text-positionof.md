@@ -2,6 +2,7 @@
 description: "Learn more about: Text.PositionOf"
 title: "Text.PositionOf"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.PositionOf
 

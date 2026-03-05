@@ -2,6 +2,7 @@
 description: "Learn more about: Table.MinN"
 title: "Table.MinN"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.MinN
 

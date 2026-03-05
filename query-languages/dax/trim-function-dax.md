@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TRIM"
 title: "TRIM function (DAX)"
+ms.topic: reference
 ---
 # TRIM
 
@@ -48,4 +49,4 @@ You can verify that the formula produces the correct result by checking the leng
 
 ## Related content
 
-[Text functions](text-functions-dax.md)
+- [Text functions](text-functions-dax.md)

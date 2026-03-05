@@ -3,6 +3,7 @@ description: "Learn more about: Odbc.Query"
 title: "Odbc.Query"
 ms.subservice: m-source
 ms.custom: sfi-ropc-nochange
+ms.topic: reference
 ---
 # Odbc.Query
 

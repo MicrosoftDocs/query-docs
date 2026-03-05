@@ -95,8 +95,8 @@ ORDER BY [Table Name], [Column Name]
 
 ## See also
 
-[INFO.DEPENDENCIES](info-dependencies-function-dax.md)
-[INFO.CALCDEPENDENCY](info-calcdependency-function-dax.md)
-[INFO.TABLES](info-tables-function-dax.md)
-[INFO.COLUMNS](info-columns-function-dax.md)
-[INFO.MEASURES](info-measures-function-dax.md)
+- [INFO.DEPENDENCIES](info-dependencies-function-dax.md)
+- [INFO.CALCDEPENDENCY](info-calcdependency-function-dax.md)
+- [INFO.TABLES](info-tables-function-dax.md)
+- [INFO.COLUMNS](info-columns-function-dax.md)
+- [INFO.MEASURES](info-measures-function-dax.md)

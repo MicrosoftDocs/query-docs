@@ -2,6 +2,7 @@
 description: "Learn more about: List.AllTrue"
 title: "List.AllTrue"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.AllTrue
 

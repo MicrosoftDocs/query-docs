@@ -2,6 +2,7 @@
 description: "Learn more about: Date.From"
 title: "Date.From"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Date.From
 

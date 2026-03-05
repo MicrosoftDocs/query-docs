@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SELECTEDMEASUREFORMATSTRING"
 title: "SELECTEDMEASUREFORMATSTRING function (DAX)"
+ms.topic: reference
 ---
 # SELECTEDMEASUREFORMATSTRING
 
@@ -38,5 +39,5 @@ SELECTEDVALUE( DimCurrency[FormatString], SELECTEDMEASUREFORMATSTRING() )
 
 ## Related content
 
-[SELECTEDMEASURE](selectedmeasure-function-dax.md)
-[ISSELECTEDMEASURE](isselectedmeasure-function-dax.md) 
+- [SELECTEDMEASURE](selectedmeasure-function-dax.md)
+- [ISSELECTEDMEASURE](isselectedmeasure-function-dax.md) 

@@ -2,6 +2,7 @@
 description: "Learn more about: List.FindText"
 title: "List.FindText"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.FindText
 

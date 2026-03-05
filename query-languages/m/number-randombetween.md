@@ -2,6 +2,7 @@
 description: "Learn more about: Number.RandomBetween"
 title: "Number.RandomBetween"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Number.RandomBetween
 

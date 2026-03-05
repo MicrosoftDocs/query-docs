@@ -2,6 +2,7 @@
 description: "Learn more about: Table.ConformToPageReader"
 title: "Table.ConformToPageReader"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.ConformToPageReader
 

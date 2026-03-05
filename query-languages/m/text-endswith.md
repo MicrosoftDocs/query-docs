@@ -2,6 +2,7 @@
 description: "Learn more about: Text.EndsWith"
 title: "Text.EndsWith"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Text.EndsWith
 

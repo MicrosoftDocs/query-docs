@@ -3,6 +3,7 @@ description: "Learn more about: Odbc.InferOptions"
 title: "Odbc.InferOptions"
 ms.subservice: m-source
 ms.custom: sfi-ropc-nochange
+ms.topic: reference
 ---
 # Odbc.InferOptions
 

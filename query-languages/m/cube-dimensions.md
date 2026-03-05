@@ -2,6 +2,7 @@
 description: "Learn more about: Cube.Dimensions"
 title: "Cube.Dimensions"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Cube.Dimensions
 

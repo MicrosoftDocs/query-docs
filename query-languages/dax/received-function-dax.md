@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: RECEIVED"
 title: "RECEIVED function (DAX)"
+ms.topic: reference
 author: jajin7
 ---
 

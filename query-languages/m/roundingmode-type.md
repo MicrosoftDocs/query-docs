@@ -2,6 +2,7 @@
 description: "Learn more about: RoundingMode.Type"
 title: "RoundingMode.Type"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # RoundingMode.Type
 

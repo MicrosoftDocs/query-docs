@@ -45,4 +45,4 @@ The following computes the geometric mean of the Return column in the Investment
 
 ## Related content
 
-[GEOMEANX function](geomeanx-function-dax.md)
+- [GEOMEANX function](geomeanx-function-dax.md)

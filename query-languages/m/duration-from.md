@@ -2,6 +2,7 @@
 description: "Learn more about: Duration.From"
 title: "Duration.From"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Duration.From
 

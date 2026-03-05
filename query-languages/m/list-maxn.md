@@ -2,6 +2,7 @@
 description: "Learn more about: List.MaxN"
 title: "List.MaxN"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.MaxN
 

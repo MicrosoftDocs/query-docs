@@ -2,6 +2,7 @@
 description: "Learn more about: List.Last"
 title: "List.Last"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # List.Last
 

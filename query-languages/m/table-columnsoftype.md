@@ -2,6 +2,7 @@
 description: "Learn more about: Table.ColumnsOfType"
 title: "Table.ColumnsOfType"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.ColumnsOfType
 

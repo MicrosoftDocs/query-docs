@@ -12,14 +12,14 @@ Returns the least common multiple of integers. The least common multiple is the 
 ## Syntax
 
 ```dax
-LCM(number1, [number2], ...)
+LCM(number1, number2)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`number1, number2,...`|Number1 is required, subsequent numbers are optional. 1 to 255 values for which you want the least common multiple. If value is not an integer, it is truncated.|
+|`number1, number2`|The two integers for which you want the least common multiple. If a value is not an integer, it is truncated.|
 
 ## Return value
 

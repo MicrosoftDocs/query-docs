@@ -2,7 +2,7 @@
 title: "Understanding ORDERBY, PARTITIONBY, and MATCHBY functions in DAX"
 description: Best practices for using ORDERBY, PARTITIONBY, and MATCHBY functions.
 author: jeroenterheerdt
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 07/07/2023
 ---
 
@@ -483,11 +483,11 @@ And this expression does indeed return the results we're after:
 
 ## Related content
 
-[ORDERBY](../orderby-function-dax.md)
-[PARTITIONBY](../partitionby-function-dax.md)
-[MATCHBY](../matchby-function-dax.md)
-[INDEX](../index-function-dax.md)
-[OFFSET](../offset-function-dax.md)
-[WINDOW](../window-function-dax.md)
-[RANK](../rank-function-dax.md)
-[ROWNUMBER](../rownumber-function-dax.md)
+- [ORDERBY](../orderby-function-dax.md)
+- [PARTITIONBY](../partitionby-function-dax.md)
+- [MATCHBY](../matchby-function-dax.md)
+- [INDEX](../index-function-dax.md)
+- [OFFSET](../offset-function-dax.md)
+- [WINDOW](../window-function-dax.md)
+- [RANK](../rank-function-dax.md)
+- [ROWNUMBER](../rownumber-function-dax.md)

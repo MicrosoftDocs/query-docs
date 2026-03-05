@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: AccessControlEntry.ConditionToIdentities"
 title: "AccessControlEntry.ConditionToIdentities"
+ms.topic: reference
 ms.subservice: m-source
 ---
 

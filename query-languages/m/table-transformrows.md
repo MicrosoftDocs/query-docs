@@ -2,6 +2,7 @@
 description: "Learn more about: Table.TransformRows"
 title: "Table.TransformRows"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.TransformRows
 

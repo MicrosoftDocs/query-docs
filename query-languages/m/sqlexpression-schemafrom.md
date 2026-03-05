@@ -2,6 +2,7 @@
 description: "Learn more about: SqlExpression.SchemaFrom"
 title: "SqlExpression.SchemaFrom"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # SqlExpression.SchemaFrom
 

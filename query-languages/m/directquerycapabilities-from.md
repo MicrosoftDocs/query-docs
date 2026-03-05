@@ -2,6 +2,7 @@
 description: "Learn more about: DirectQueryCapabilities.From"
 title: "DirectQueryCapabilities.From"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # DirectQueryCapabilities.From
 

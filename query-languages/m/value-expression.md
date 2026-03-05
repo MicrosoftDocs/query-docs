@@ -2,6 +2,7 @@
 description: "Learn more about: Value.Expression"
 title: "Value.Expression"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Value.Expression
 

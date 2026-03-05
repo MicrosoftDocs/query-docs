@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: MROUND"
 title: "MROUND function (DAX)"
+ms.topic: reference
 ---
 # MROUND
 
@@ -55,9 +56,9 @@ The following expression returns an error, because the numbers have different si
 
 ## Related content
 
-[Math and Trig functions](math-and-trig-functions-dax.md)
-[ROUND function](round-function-dax.md)
-[ROUNDUP function](roundup-function-dax.md)
-[ROUNDDOWN function](rounddown-function-dax.md)
-[MROUND function](mround-function-dax.md)
-[INT function](int-function-dax.md)
+- [Math and Trig functions](math-and-trig-functions-dax.md)
+- [ROUND function](round-function-dax.md)
+- [ROUNDUP function](roundup-function-dax.md)
+- [ROUNDDOWN function](rounddown-function-dax.md)
+- [MROUND function](mround-function-dax.md)
+- [INT function](int-function-dax.md)

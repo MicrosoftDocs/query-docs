@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TAN"
 title: "TAN function (DAX)"
+ms.topic: reference
 ---
 # TAN
 

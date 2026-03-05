@@ -50,5 +50,5 @@ The following expression returns May 31, 2008, because the `months` argument is 
 
 ## Related content
 
-[EDATE function](edate-function-dax.md)
-[Date and time functions](date-and-time-functions-dax.md)
+- [EDATE function](edate-function-dax.md)
+- [Date and time functions](date-and-time-functions-dax.md)

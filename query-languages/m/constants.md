@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Constants"
 title: "Constants"
+ms.topic: reference
 ---
 # Constants
 

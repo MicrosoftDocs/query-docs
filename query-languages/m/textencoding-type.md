@@ -2,6 +2,7 @@
 description: "Learn more about: TextEncoding.Type"
 title: "TextEncoding.Type"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # TextEncoding.Type
 

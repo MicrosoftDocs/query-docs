@@ -2,6 +2,7 @@
 description: "Learn more about: Date.DaysInMonth"
 title: "Date.DaysInMonth"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Date.DaysInMonth
 

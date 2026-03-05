@@ -97,5 +97,5 @@ CHANNEL = RELATED('Sales Order'[Channel])
 
 ## Related content
 
-[RELATED function (DAX)](related-function-dax.md)
-[Information functions](information-functions-dax.md)
+- [RELATED function (DAX)](related-function-dax.md)
+- [Information functions](information-functions-dax.md)

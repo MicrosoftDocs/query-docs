@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: YEAR"
 title: "YEAR function (DAX)"
+ms.topic: reference
 ---
 # YEAR
 
@@ -54,8 +55,8 @@ The following example returns the year for today's date.
 
 ## Related content
 
-[Date and time functions](date-and-time-functions-dax.md)
-[HOUR function](hour-function-dax.md)
-[MINUTE function](minute-function-dax.md)
-[YEAR function](year-function-dax.md)
-[SECOND function](second-function-dax.md)
+- [Date and time functions](date-and-time-functions-dax.md)
+- [HOUR function](hour-function-dax.md)
+- [MINUTE function](minute-function-dax.md)
+- [YEAR function](year-function-dax.md)
+- [SECOND function](second-function-dax.md)

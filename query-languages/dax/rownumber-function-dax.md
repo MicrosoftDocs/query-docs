@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: ROWNUMBER"
 title: "ROWNUMBER function (DAX)"
+ms.topic: reference
 author: rahulten
 ---
 # ROWNUMBER
@@ -94,8 +95,8 @@ The screenshot below shows the visual matrix and the first visual calculation ex
 
 ## Related content
 
-[INDEX](index-function-dax.md)
-[ORDERBY](orderby-function-dax.md)
-[PARTITIONBY](partitionby-function-dax.md)
-[WINDOW](window-function-dax.md)
-[RANK](rank-function-dax.md)
+- [INDEX](index-function-dax.md)
+- [ORDERBY](orderby-function-dax.md)
+- [PARTITIONBY](partitionby-function-dax.md)
+- [WINDOW](window-function-dax.md)
+- [RANK](rank-function-dax.md)

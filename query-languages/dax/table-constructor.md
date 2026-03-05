@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Table constructor"
 title: "Table constructor"
+ms.topic: reference
 ---
 # Table constructor
 

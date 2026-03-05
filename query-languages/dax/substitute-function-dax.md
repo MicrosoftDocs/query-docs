@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SUBSTITUTE"
 title: "SUBSTITUTE function (DAX)"
+ms.topic: reference
 ---
 # SUBSTITUTE
 
@@ -45,5 +46,5 @@ The following formula creates a copy of the column [Product Code] that substitut
 
 ## Related content
 
-[Text functions](text-functions-dax.md)
-[REPLACE](replace-function-dax.md)
+- [Text functions](text-functions-dax.md)
+- [REPLACE](replace-function-dax.md)

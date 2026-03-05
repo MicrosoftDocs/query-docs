@@ -2,6 +2,7 @@
 description: "Learn more about: Uri.Parts"
 title: "Uri.Parts"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Uri.Parts
 

@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: SAMEPERIODLASTYEAR"
 title: "SAMEPERIODLASTYEAR function (DAX)"
+ms.topic: reference
 ---
 # SAMEPERIODLASTYEAR
 
@@ -71,8 +72,8 @@ Some scenarios may yield different results when comparing classic and calendar t
 
 ## Related content
 
-[Time intelligence functions](time-intelligence-functions-dax.md)
-[Date and time functions ](date-and-time-functions-dax.md)
-[PREVIOUSYEAR](previousyear-function-dax.md)
-[PARALLELPERIOD](parallelperiod-function-dax.md)
+- [Time intelligence functions](time-intelligence-functions-dax.md)
+- [Date and time functions ](date-and-time-functions-dax.md)
+- [PREVIOUSYEAR](previousyear-function-dax.md)
+- [PARALLELPERIOD](parallelperiod-function-dax.md)
 

@@ -2,6 +2,7 @@
 description: "Learn more about: BinaryFormat.Transform"
 title: "BinaryFormat.Transform"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # BinaryFormat.Transform
 

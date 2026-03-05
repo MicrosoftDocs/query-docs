@@ -2,6 +2,7 @@
 description: "Learn more about: Table.PrefixColumns"
 title: "Table.PrefixColumns"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.PrefixColumns
 

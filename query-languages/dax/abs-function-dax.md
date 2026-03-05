@@ -40,5 +40,5 @@ The following example returns the absolute value of the difference between the l
 
 ## Related content
 
-[Math and Trig functions](math-and-trig-functions-dax.md)
-[SIGN function](sign-function-dax.md)
+- [Math and Trig functions](math-and-trig-functions-dax.md)
+- [SIGN function](sign-function-dax.md)

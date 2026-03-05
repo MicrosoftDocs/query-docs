@@ -2,6 +2,7 @@
 description: "Learn more about: BufferMode.Type"
 title: "BufferMode.Type"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # BufferMode.Type
 

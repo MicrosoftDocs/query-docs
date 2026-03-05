@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: POWER"
 title: "POWER function (DAX)"
+ms.topic: reference
 ---
 # POWER
 
@@ -35,4 +36,4 @@ The following example returns 25.
 
 ## Related content
 
-[Math and Trig functions](math-and-trig-functions-dax.md)
+- [Math and Trig functions](math-and-trig-functions-dax.md)

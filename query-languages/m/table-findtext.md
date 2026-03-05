@@ -2,6 +2,7 @@
 description: "Learn more about: Table.FindText"
 title: "Table.FindText"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Table.FindText
 

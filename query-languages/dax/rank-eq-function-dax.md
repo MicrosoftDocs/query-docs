@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: RANK.EQ"
 title: "RANK.EQ  function (DAX)"
+ms.topic: reference
 ---
 # RANK.EQ
 

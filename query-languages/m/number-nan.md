@@ -2,6 +2,7 @@
 description: "Learn more about: Number.NaN"
 title: "Number.NaN"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Number.NaN
 

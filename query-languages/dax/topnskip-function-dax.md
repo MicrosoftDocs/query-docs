@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: TOPNSKIP"
 title: "TOPNSKIP function (DAX) | Microsoft Docs"
+ms.topic: reference
 ---
 # TOPNSKIP
 

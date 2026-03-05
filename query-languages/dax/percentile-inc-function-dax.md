@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: PERCENTILE.INC"
 title: "PERCENTILE.INC function (DAX)"
+ms.topic: reference
 ---
 # PERCENTILE.INC
 
@@ -43,4 +44,4 @@ The k-th percentile of values in a range, where k is in the range 0..1, inclusiv
 
 ## Related content
 
-[PERCENTILEX.INC](percentilex-inc-function-dax.md)
+- [PERCENTILEX.INC](percentilex-inc-function-dax.md)

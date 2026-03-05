@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: REPLACE"
 title: "REPLACE function (DAX)"
+ms.topic: reference
 ---
 # REPLACE
 
@@ -33,6 +34,8 @@ A text string.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
+- [!INCLUDE [function-unicodecharacterbehavior](includes/function-unicodecharacterbehavior.md)]
+
 ## Example
 
 The following formula creates a new calculated column that replaces the first two characters of the product code in column, [ProductCode], with a new two-letter code, OB.
@@ -43,5 +46,5 @@ The following formula creates a new calculated column that replaces the first tw
 
 ## Related content
 
-[Text functions](text-functions-dax.md)
-[SUBSTITUTE function](substitute-function-dax.md)
+- [Text functions](text-functions-dax.md)
+- [SUBSTITUTE function](substitute-function-dax.md)

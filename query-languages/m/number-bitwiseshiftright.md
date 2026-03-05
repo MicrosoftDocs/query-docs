@@ -2,6 +2,7 @@
 description: "Learn more about: Number.BitwiseShiftRight"
 title: "Number.BitwiseShiftRight"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Number.BitwiseShiftRight
 

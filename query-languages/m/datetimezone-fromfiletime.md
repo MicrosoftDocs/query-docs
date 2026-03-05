@@ -2,6 +2,7 @@
 description: "Learn more about: DateTimeZone.FromFileTime"
 title: "DateTimeZone.FromFileTime"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # DateTimeZone.FromFileTime
 

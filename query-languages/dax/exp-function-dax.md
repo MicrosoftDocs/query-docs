@@ -43,8 +43,8 @@ The following formula calculates e raised to the power of the number contained i
 
 ## Related content
 
-[Math and Trig functions](math-and-trig-functions-dax.md)
-[LN function](ln-function-dax.md)
-[EXP function](exp-function-dax.md)
-[LOG function](log-function-dax.md)
-[LOG function](log-function-dax.md)
+- [Math and Trig functions](math-and-trig-functions-dax.md)
+- [LN function](ln-function-dax.md)
+- [EXP function](exp-function-dax.md)
+- [LOG function](log-function-dax.md)
+- [LOG function](log-function-dax.md)

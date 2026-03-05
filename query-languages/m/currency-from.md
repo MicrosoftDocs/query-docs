@@ -2,6 +2,7 @@
 description: "Learn more about: Currency.From"
 title: "Currency.From"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Currency.From
 

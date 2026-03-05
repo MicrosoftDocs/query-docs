@@ -2,6 +2,7 @@
 description: "Learn more about: Module.Versions"
 title: "Module.Versions"
 ms.subservice: m-source
+ms.topic: reference
 ---
 # Module.Versions
 
