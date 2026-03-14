@@ -53,12 +53,12 @@ A text string with the requested name, formatted based on the component and esca
 
 ## Remarks
 
-- When called with only the `object` argument, NAMEOF behaves the same as in previous versions, returning a fully qualified, escaped name.
-- For tables, the default return format is `'TableName'`.
-- For columns, the default return format is `'TableName'[ColumnName]`.
-- For measures, the default return format is `'TableName'[MeasureName]`.
-- For calendars, the default return format is `'CalendarName'`.
-- For variation columns, the default return format is `'TableName'[ColumnName].[VariationName]`.
+- When called with only the `object` argument, NAMEOF behaves the same as in previous versions, returning a fully qualified, escaped name. Because `component` defaults to `FULL` and `escaped` defaults to `ESCAPED`, the return formats are:
+  - For tables: `'TableName'`.
+  - For columns: `'TableName'[ColumnName]`.
+  - For measures: `'TableName'[MeasureName]`.
+  - For calendars: `'CalendarName'`.
+  - For variation columns: `'TableName'[ColumnName].[VariationName]`.
 - Variables and dynamic expressions are not supported as arguments to NAMEOF.
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
