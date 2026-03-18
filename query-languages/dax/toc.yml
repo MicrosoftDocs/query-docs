@@ -456,6 +456,8 @@ items:
               href: info-tables-function-dax.md
             - name: INFO.TABLESTORAGES
               href: info-tablestorages-function-dax.md
+            - name: INFO.USERDEFINEDFUNCTIONS
+              href: info-userdefinedfunctions-function-dax.md
             - name: INFO.VARIATIONS
               href: info-variations-function-dax.md
         - name: Information functions
