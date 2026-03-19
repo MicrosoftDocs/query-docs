@@ -4,6 +4,7 @@ title: "AdobeAnalytics.Cubes"
 ms.topic: reference
 ms.subservice: m-source
 ---
+
 # AdobeAnalytics.Cubes
 
 ## Syntax

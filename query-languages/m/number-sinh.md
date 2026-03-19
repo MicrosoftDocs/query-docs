@@ -4,6 +4,7 @@ title: "Number.Sinh"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.Sinh
 
 ## Syntax

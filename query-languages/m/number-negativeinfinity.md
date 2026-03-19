@@ -4,6 +4,7 @@ title: "Number.NegativeInfinity"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.NegativeInfinity
 
 ## About

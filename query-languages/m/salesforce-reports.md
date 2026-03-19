@@ -4,6 +4,7 @@ title: "Salesforce.Reports"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Salesforce.Reports
 
 ## Syntax

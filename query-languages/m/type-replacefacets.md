@@ -4,6 +4,7 @@ title: "Type.ReplaceFacets"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.ReplaceFacets
 
 ## Syntax

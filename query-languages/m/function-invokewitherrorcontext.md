@@ -4,6 +4,7 @@ title: "Function.InvokeWithErrorContext"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Function.InvokeWithErrorContext
 
 ## Syntax
