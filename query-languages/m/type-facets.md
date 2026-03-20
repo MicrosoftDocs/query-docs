@@ -4,6 +4,7 @@ title: "Type.Facets"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.Facets
 
 ## Syntax

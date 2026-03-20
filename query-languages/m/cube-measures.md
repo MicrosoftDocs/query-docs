@@ -4,6 +4,7 @@ title: "Cube.Measures"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Cube.Measures
 
 ## Syntax

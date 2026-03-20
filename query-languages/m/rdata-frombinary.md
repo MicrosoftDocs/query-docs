@@ -4,6 +4,7 @@ title: "RData.FromBinary"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # RData.FromBinary
 
 ## Syntax

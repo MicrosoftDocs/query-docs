@@ -4,6 +4,7 @@ title: "DateTime.IsInPreviousMinute"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTime.IsInPreviousMinute
 
 ## Syntax

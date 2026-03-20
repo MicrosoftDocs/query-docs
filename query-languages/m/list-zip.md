@@ -4,6 +4,7 @@ title: "List.Zip"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Zip
 
 ## Syntax

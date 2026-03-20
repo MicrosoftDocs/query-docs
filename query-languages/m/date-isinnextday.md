@@ -4,6 +4,7 @@ title: "Date.IsInNextDay"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.IsInNextDay
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Value.Compare"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Value.Compare
 
 ## Syntax

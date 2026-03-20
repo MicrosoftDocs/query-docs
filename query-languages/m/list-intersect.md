@@ -4,6 +4,7 @@ title: "List.Intersect"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Intersect
 
 ## Syntax

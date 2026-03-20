@@ -4,6 +4,7 @@ title: "Geometry.FromWellKnownText"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Geometry.FromWellKnownText
 
 ## Syntax

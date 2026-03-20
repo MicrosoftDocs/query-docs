@@ -4,6 +4,7 @@ title: "Type.Is"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.Is
 
 ## Syntax
