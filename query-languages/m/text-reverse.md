@@ -4,6 +4,7 @@ title: "Text.Reverse"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Reverse
 
 ## Syntax

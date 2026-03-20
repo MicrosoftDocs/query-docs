@@ -4,6 +4,7 @@ title: "AnalysisServices.Database"
 ms.topic: reference
 ms.subservice: m-source
 ---
+
 # AnalysisServices.Database
 
 ## Syntax

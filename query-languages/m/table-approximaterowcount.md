@@ -4,6 +4,7 @@ title: "Table.ApproximateRowCount"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ApproximateRowCount
 
 ## Syntax

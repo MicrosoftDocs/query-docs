@@ -4,6 +4,7 @@ title: "DeltaLake.Metadata"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DeltaLake.Metadata
 
 ## Syntax

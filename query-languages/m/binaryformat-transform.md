@@ -4,6 +4,7 @@ title: "BinaryFormat.Transform"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # BinaryFormat.Transform
 
 ## Syntax

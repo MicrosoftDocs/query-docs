@@ -4,6 +4,7 @@ title: "Number.NaN"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.NaN
 
 ## About

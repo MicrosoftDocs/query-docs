@@ -4,6 +4,7 @@ title: "Splitter.SplitTextByCharacterTransition"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Splitter.SplitTextByCharacterTransition
 
 ## Syntax

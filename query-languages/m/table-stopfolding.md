@@ -4,6 +4,7 @@ title: "Table.StopFolding"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.StopFolding
 
 ## Syntax

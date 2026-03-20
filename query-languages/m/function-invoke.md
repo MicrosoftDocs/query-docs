@@ -4,6 +4,7 @@ title: "Function.Invoke"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Function.Invoke
 
 ## Syntax

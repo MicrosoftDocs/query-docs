@@ -4,6 +4,7 @@ title: "Soda.Feed"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Soda.Feed
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Cube.CollapseAndRemoveColumns"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Cube.CollapseAndRemoveColumns
 
 ## Syntax

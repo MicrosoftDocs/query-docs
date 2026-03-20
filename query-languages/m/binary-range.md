@@ -4,6 +4,7 @@ title: "Binary.Range"
 ms.topic: reference
 ms.subservice: m-source
 ---
+
 # Binary.Range
 
 ## Syntax

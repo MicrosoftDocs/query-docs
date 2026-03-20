@@ -4,6 +4,7 @@ title: "Variable.Value"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Variable.Value
 
 ## Syntax

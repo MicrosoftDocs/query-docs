@@ -4,6 +4,7 @@ title: "Salesforce.Data"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Salesforce.Data
 
 ## Syntax

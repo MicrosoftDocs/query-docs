@@ -4,6 +4,7 @@ title: "Uri.EscapeDataString"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Uri.EscapeDataString
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Binary.ViewError"
 ms.topic: reference
 ms.subservice: m-source
 ---
+
 # Binary.ViewError
 
 ## Syntax

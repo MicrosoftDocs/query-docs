@@ -4,6 +4,7 @@ title: "DateTime.IsInPreviousSecond"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTime.IsInPreviousSecond
 
 ## Syntax

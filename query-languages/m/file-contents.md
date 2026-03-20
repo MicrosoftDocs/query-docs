@@ -4,6 +4,7 @@ title: "File.Contents"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # File.Contents
 
 ## Syntax
