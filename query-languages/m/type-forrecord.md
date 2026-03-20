@@ -4,6 +4,7 @@ title: "Type.ForRecord"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.ForRecord
 
 ## Syntax

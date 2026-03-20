@@ -4,6 +4,7 @@ title: "List.Distinct"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Distinct
 
 ## Syntax

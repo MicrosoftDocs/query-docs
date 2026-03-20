@@ -4,6 +4,7 @@ title: "BinaryFormat.Null"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # BinaryFormat.Null
 
 ## Syntax

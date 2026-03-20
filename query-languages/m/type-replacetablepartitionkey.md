@@ -4,6 +4,7 @@ title: "Type.ReplaceTablePartitionKey"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.ReplaceTablePartitionKey
 
 ## Syntax

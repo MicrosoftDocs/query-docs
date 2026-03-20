@@ -4,6 +4,7 @@ title: "List.AnyTrue"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.AnyTrue
 
 ## Syntax

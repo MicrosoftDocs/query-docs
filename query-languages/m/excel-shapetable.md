@@ -4,6 +4,7 @@ title: "Excel.ShapeTable"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Excel.ShapeTable
 
 ## Syntax

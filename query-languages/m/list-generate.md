@@ -4,6 +4,7 @@ title: "List.Generate"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Generate
 
 ## Syntax

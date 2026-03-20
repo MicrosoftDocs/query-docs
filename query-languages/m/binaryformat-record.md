@@ -4,6 +4,7 @@ title: "BinaryFormat.Record"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # BinaryFormat.Record
 
 ## Syntax

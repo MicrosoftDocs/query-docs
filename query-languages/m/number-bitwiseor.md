@@ -4,6 +4,7 @@ title: "Number.BitwiseOr"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.BitwiseOr
 
 ## Syntax

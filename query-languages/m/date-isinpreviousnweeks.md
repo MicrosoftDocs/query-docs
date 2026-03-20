@@ -4,6 +4,7 @@ title: "Date.IsInPreviousNWeeks"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.IsInPreviousNWeeks
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Cube.DisplayFolders"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Cube.DisplayFolders
 
 ## Syntax
