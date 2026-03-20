@@ -4,6 +4,7 @@ title: "DateTimeZone.FixedUtcNow"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTimeZone.FixedUtcNow
 
 ## Syntax

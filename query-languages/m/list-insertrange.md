@@ -4,6 +4,7 @@ title: "List.InsertRange"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.InsertRange
 
 ## Syntax

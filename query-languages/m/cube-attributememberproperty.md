@@ -4,6 +4,7 @@ title: "Cube.AttributeMemberProperty"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Cube.AttributeMemberProperty
 
 ## Syntax

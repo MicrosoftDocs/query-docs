@@ -4,6 +4,7 @@ title: "Number.BitwiseNot"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.BitwiseNot
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Combiner.CombineTextByDelimiter"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Combiner.CombineTextByDelimiter
 
 ## Syntax

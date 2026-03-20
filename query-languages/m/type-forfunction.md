@@ -4,6 +4,7 @@ title: "Type.ForFunction"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.ForFunction
 
 ## Syntax

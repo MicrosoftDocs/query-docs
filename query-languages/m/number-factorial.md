@@ -4,6 +4,7 @@ title: "Number.Factorial"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.Factorial
 
 ## Syntax

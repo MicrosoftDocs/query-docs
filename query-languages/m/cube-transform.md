@@ -4,6 +4,7 @@ title: "Cube.Transform"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Cube.Transform
 
 ## Syntax

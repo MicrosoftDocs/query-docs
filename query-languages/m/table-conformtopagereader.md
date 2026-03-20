@@ -4,6 +4,7 @@ title: "Table.ConformToPageReader"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ConformToPageReader
 
 ## Syntax

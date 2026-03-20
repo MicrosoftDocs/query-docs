@@ -4,6 +4,7 @@ title: "Value.Equals"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Value.Equals
 
 ## Syntax

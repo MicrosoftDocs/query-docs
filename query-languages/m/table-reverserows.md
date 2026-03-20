@@ -4,6 +4,7 @@ title: "Table.ReverseRows"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ReverseRows
 
 ## Syntax

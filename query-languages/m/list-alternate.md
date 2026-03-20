@@ -4,6 +4,7 @@ title: "List.Alternate"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Alternate
 
 ## Syntax

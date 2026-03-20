@@ -4,6 +4,7 @@ title: "Number.BitwiseShiftLeft"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.BitwiseShiftLeft
 
 ## Syntax

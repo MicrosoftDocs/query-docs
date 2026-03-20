@@ -4,6 +4,7 @@ title: "Text.BetweenDelimiters"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.BetweenDelimiters
 
 ## Syntax

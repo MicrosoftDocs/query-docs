@@ -4,6 +4,7 @@ title: "GeographyPoint.From"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # GeographyPoint.From
 
 ## Syntax
