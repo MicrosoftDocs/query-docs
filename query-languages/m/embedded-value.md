@@ -4,6 +4,7 @@ title: "Embedded.Value"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Embedded.Value
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "List.ConformToPageReader"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.ConformToPageReader
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "BinaryFormat.Decimal"
 ms.topic: reference
 ms.subservice: m-source
 ---
+
 # BinaryFormat.Decimal
 
 ## Syntax

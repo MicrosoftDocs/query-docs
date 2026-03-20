@@ -4,6 +4,7 @@ title: "Table.Schema"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Schema
 
 ## Syntax

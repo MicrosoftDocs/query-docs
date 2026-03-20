@@ -4,6 +4,7 @@ title: "Culture.Current"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Culture.Current
 
 ## About

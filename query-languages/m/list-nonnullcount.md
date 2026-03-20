@@ -4,6 +4,7 @@ title: "List.NonNullCount"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.NonNullCount
 
 ## Syntax

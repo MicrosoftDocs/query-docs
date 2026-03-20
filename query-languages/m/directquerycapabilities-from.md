@@ -4,6 +4,7 @@ title: "DirectQueryCapabilities.From"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DirectQueryCapabilities.From
 
 ## Syntax

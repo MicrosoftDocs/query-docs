@@ -4,6 +4,7 @@ title: "Variable.ValueOrDefault"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Variable.ValueOrDefault
 
 ## Syntax

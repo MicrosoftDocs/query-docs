@@ -4,6 +4,7 @@ title: "Table.ReplaceRelationshipIdentity"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ReplaceRelationshipIdentity
 
 ## Syntax
