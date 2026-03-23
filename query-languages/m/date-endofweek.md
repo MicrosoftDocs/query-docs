@@ -17,7 +17,7 @@ Date.EndOfWeek(<b>dateTime</b> as any, optional <b>firstDayOfWeek</b> as nullabl
 Returns the end of the week that contains `dateTime`. This function takes an optional `Day`, `firstDayOfWeek`, to set as the first day of the week for this relative calculation. The default value is [Day.Sunday](/powerquery-m/day-type).
 
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value from which the last day of the week is calculated
-* `firstDayOfWeek`: _[Optional]_ A [Day.Type](/powerquery-m/day-type) value representing the first day of the week. Possible values are `Day.Sunday`, `Day.Monday`, `Day.Tuesday`, `Day.Wednesday`, `Day.Thursday`, `Day.Friday` and `Day.Saturday`. The default value is `Day.Sunday`.
+* `firstDayOfWeek`: *[Optional]* A [Day.Type](/powerquery-m/day-type) value representing the first day of the week. Possible values are `Day.Sunday`, `Day.Monday`, `Day.Tuesday`, `Day.Wednesday`, `Day.Thursday`, `Day.Friday` and `Day.Saturday`. The default value is `Day.Sunday`.
 
 ## Example 1
 
