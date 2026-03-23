@@ -4,6 +4,7 @@ title: "Table.FuzzyNestedJoin"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.FuzzyNestedJoin
   
 ## Syntax

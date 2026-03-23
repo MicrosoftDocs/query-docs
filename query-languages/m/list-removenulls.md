@@ -4,6 +4,7 @@ title: "List.RemoveNulls"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.RemoveNulls
 
 ## Syntax

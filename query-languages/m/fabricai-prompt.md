@@ -4,6 +4,7 @@ title: "FabricAI.Prompt"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # FabricAI.Prompt
 
 ## Syntax

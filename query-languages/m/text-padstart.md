@@ -4,6 +4,7 @@ title: "Text.PadStart"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.PadStart
 
 ## Syntax

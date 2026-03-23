@@ -4,6 +4,7 @@ title: "Lines.FromBinary"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Lines.FromBinary
 
 ## Syntax

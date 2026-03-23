@@ -4,6 +4,7 @@ title: "Value.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Value.Type
 
 ## Syntax

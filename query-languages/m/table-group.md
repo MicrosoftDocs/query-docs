@@ -4,6 +4,7 @@ title: "Table.Group"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Group
 
 ## Syntax

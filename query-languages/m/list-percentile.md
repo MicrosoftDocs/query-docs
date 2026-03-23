@@ -4,6 +4,7 @@ title: "List.Percentile"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Percentile
 
 ## Syntax

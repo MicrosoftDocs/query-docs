@@ -4,6 +4,7 @@ title: "DateTimeZone.ZoneMinutes"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTimeZone.ZoneMinutes
 
 ## Syntax

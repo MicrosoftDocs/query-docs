@@ -4,6 +4,7 @@ title: "SapBusinessWarehouseExecutionMode.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # SapBusinessWarehouseExecutionMode.Type
 
 ## Definition

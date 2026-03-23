@@ -4,6 +4,7 @@ title: "Table.RemoveRowsWithErrors"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.RemoveRowsWithErrors
 
 ## Syntax

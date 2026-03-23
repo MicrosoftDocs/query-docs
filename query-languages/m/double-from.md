@@ -4,6 +4,7 @@ title: "Double.From"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Double.From
 
 ## Syntax

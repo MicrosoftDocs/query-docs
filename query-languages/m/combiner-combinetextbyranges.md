@@ -4,6 +4,7 @@ title: "Combiner.CombineTextByRanges"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Combiner.CombineTextByRanges
 
 ## Syntax

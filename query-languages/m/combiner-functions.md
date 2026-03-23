@@ -5,6 +5,7 @@ ms.date: 11/14/2024
 ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
+
 # Combiner functions
 
 These functions are used by other library functions that merge values. For example, [Table.ToList](table-tolist.md) and [Table.CombineColumns](table-combinecolumns.md) apply a combiner function to each row in a table to produce a single value for each row.

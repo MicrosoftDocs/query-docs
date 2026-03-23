@@ -4,6 +4,7 @@ title: "Table.ReplaceMatchingRows"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ReplaceMatchingRows
 
 ## Syntax

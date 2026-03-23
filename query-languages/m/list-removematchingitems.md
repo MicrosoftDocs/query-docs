@@ -4,6 +4,7 @@ title: "List.RemoveMatchingItems"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.RemoveMatchingItems
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Value.Is"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Value.Is
 
 ## Syntax

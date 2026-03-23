@@ -4,6 +4,7 @@ title: "Duration.Minutes"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Duration.Minutes
 
 ## Syntax

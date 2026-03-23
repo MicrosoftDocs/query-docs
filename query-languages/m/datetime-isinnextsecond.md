@@ -4,6 +4,7 @@ title: "DateTime.IsInNextSecond"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTime.IsInNextSecond
 
 ## Syntax

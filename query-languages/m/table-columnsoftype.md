@@ -4,6 +4,7 @@ title: "Table.ColumnsOfType"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ColumnsOfType
 
 ## Syntax

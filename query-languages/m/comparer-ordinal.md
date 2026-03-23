@@ -4,6 +4,7 @@ title: "Comparer.Ordinal"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Comparer.Ordinal
 
 ## Syntax

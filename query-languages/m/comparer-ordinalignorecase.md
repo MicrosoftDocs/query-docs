@@ -4,6 +4,7 @@ title: "Comparer.OrdinalIgnoreCase"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Comparer.OrdinalIgnoreCase
 
 ## Syntax

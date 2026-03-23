@@ -4,6 +4,7 @@ title: "Table.AddJoinColumn"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.AddJoinColumn
 
 ## Syntax

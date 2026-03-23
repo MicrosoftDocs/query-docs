@@ -4,6 +4,7 @@ title: "Table.AggregateTableColumn"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.AggregateTableColumn
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Text.Proper"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Proper
 
 ## Syntax

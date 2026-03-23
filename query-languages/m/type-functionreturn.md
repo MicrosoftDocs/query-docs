@@ -4,6 +4,7 @@ title: "Type.FunctionReturn"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.FunctionReturn
 
 ## Syntax

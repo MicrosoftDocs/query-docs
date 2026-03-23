@@ -6,6 +6,7 @@ ms.custom: nonautomated-date, intro-internal
 ms.topic: language-reference
 ms.subservice: m-background
 ---
+
 # Quick tour of the Power Query M formula language
 
 This quick tour describes creating Power Query M formula language queries.

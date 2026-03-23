@@ -4,6 +4,7 @@ title: "Replacer.ReplaceText"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Replacer.ReplaceText
 
 ## Syntax

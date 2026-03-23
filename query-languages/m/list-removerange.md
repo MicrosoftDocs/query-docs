@@ -4,6 +4,7 @@ title: "List.RemoveRange"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.RemoveRange
 
 ## Syntax

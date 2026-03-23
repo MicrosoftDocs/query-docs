@@ -4,6 +4,7 @@ title: "Table.SelectRowsWithErrors"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.SelectRowsWithErrors
 
 ## Syntax

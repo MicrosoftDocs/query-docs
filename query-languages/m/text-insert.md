@@ -4,6 +4,7 @@ title: "Text.Insert"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Insert
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Number.Power"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.Power
 
 ## Syntax

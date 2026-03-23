@@ -4,6 +4,7 @@ title: "Type.ClosedRecord"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.ClosedRecord
 
 ## Syntax

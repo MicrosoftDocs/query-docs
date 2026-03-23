@@ -4,6 +4,7 @@ title: "Date.DaysInMonth"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.DaysInMonth
 
 ## Syntax

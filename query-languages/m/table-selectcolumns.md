@@ -4,6 +4,7 @@ title: "Table.SelectColumns"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.SelectColumns
 
 ## Syntax

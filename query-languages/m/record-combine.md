@@ -4,6 +4,7 @@ title: "Record.Combine"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Record.Combine
 
 ## Syntax

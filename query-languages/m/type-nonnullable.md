@@ -4,6 +4,7 @@ title: "Type.NonNullable"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.NonNullable
 
 ## Syntax

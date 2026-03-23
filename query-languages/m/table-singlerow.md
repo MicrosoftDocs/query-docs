@@ -4,6 +4,7 @@ title: "Table.SingleRow"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.SingleRow
 
 ## Syntax

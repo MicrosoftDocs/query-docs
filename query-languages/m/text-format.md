@@ -4,6 +4,7 @@ title: "Text.Format"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Format
 
 ## Syntax

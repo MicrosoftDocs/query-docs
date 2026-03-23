@@ -4,6 +4,7 @@ title: "Precision.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Precision.Type
 
 ## Definition

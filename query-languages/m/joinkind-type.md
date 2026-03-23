@@ -4,6 +4,7 @@ title: "JoinKind.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # JoinKind.Type
 
 ## Definition

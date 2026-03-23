@@ -4,6 +4,7 @@ title: "List.StandardDeviation"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.StandardDeviation
 
 ## Syntax

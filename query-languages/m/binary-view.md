@@ -4,6 +4,7 @@ title: "Binary.View"
 ms.topic: reference
 ms.subservice: m-source
 ---
+
 # Binary.View
 
 ## Syntax

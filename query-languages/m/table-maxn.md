@@ -4,6 +4,7 @@ title: "Table.MaxN"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.MaxN
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Date.EndOfDay"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.EndOfDay
 
 ## Syntax

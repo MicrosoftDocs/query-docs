@@ -4,6 +4,7 @@ title: "Table.AddColumn"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.AddColumn
 
 ## Syntax

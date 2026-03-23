@@ -4,6 +4,7 @@ title: "Function.From"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Function.From
 
 ## Syntax

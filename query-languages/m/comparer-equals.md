@@ -4,6 +4,7 @@ title: "Comparer.Equals"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Comparer.Equals
 
 ## Syntax

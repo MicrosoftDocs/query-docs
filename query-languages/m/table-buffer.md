@@ -4,6 +4,7 @@ title: "Table.Buffer"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Buffer
 
 ## Syntax

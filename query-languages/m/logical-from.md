@@ -4,6 +4,7 @@ title: "Logical.From"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Logical.From
 
 ## Syntax
