@@ -44,7 +44,7 @@ A *primitive* value is single-part value, such as a `number`, `logical`, `text`,
 
 ## Function value
 
-A *Function* is a value that, when invoked with arguments, produces a new value. Functions are written by listing the function's *parameters* in parentheses, followed by the goes-to symbol =&gt;, followed by the expression defining the function. For example, to create a function called **MyFunction** that has two parameters and performs a calculation on parameter1 and parameter2:
+A *Function* is a value that, when invoked with arguments, produces a new value. Functions are written by listing the function's *parameters* in parentheses, followed by the goes-to symbol =>, followed by the expression defining the function. For example, to create a function called **MyFunction** that has two parameters and performs a calculation on parameter1 and parameter2:
 
 ```powerquery-m
 let
@@ -92,10 +92,10 @@ The following are some List examples.
 |---------|--------|
 |{123, true, "A"}|List containing a number, a logical, and text.|
 |{1, 2, 3}|List of numbers|
-|{<br />&nbsp;&nbsp;&nbsp;&nbsp;{1, 2, 3},<br />&nbsp;&nbsp;&nbsp;&nbsp;{4, 5, 6}<br />}|List of List of numbers|
-|{<br />&nbsp;&nbsp;&nbsp;&nbsp;[CustomerID = 1, Name = "Bob", Phone = "123-4567"],<br />&nbsp;&nbsp;&nbsp;&nbsp;[CustomerID = 2, Name = "Jim", Phone = "987-6543"]<br />}|List of Records|
+|{<br />    {1, 2, 3},<br />    {4, 5, 6}<br />}|List of List of numbers|
+|{<br />    [CustomerID = 1, Name = "Bob", Phone = "123-4567"],<br />    [CustomerID = 2, Name = "Jim", Phone = "987-6543"]<br />}|List of Records|
 |{123, true, "A"}{0}|Get the value of the first item in a List. This expression returns the value 123.|
-|{<br />&nbsp;&nbsp;&nbsp;&nbsp;{1, 2, 3},<br />&nbsp;&nbsp;&nbsp;&nbsp;{4, 5, 6}<br />}{0}{1}|Get the value of the second item from the first List element. This expression returns the value 2.|
+|{<br />    {1, 2, 3},<br />    {4, 5, 6}<br />}{0}{1}|Get the value of the second item from the first List element. This expression returns the value 2.|
 
 ### Record
 
@@ -257,4 +257,4 @@ else
     1 + 1
 ```
 
-The first expression (2 + 2) is selected if the logical expression (2 &gt; 1) is true, and the second expression (1 + 1) is selected if it's false. The selected expression (in this case 2 + 2) is evaluated and becomes the result of the **if** expression (4).
+The first expression (2 + 2) is selected if the logical expression (2 > 1) is true, and the second expression (1 + 1) is selected if it's false. The selected expression (in this case 2 + 2) is evaluated and becomes the result of the **if** expression (4).

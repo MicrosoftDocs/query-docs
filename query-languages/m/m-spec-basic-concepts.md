@@ -144,22 +144,22 @@ Merging variables with an environment may introduce a conflict between variables
 An _identifier-reference_ is used to refer to a variable within an environment.
 
 _identifier-expression:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier-reference<br/> 
+      identifier-reference<br/> 
 identifier-reference:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exclusive-identifier-reference<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inclusive-identifier-reference_
+      exclusive-identifier-reference<br/>
+      inclusive-identifier-reference_
 
 The simplest form of identifier reference is an _exclusive-identifier-reference_:
 
 _exclusive-identifier-reference:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier_
+      identifier_
 
 It is an error for an _exclusive-identifier-reference_ to refer to a variable that is not part of the environment of the expression that the identifier appears within. 
 
 It is an error for an _exclusive-identifier-reference_ to refer to an identifier that is currently being initialized if the referenced identifier is defined inside a _record-initializer-expression_ or _let-expression_. Instead, an _inclusive-identifier-reference_ can be used to gain access to the environment that includes the identifier being initialized. If an _inclusive-identifier-reference_ is used in any other situation, then it is equivalent to an _exclusive-identifier-reference_.
 
 _inclusive-identifier-reference:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`@`  _identifier_
+      `@`  _identifier_
 
 This is useful when defining recursive functions since the name of the function would normally not be in scope.
 
@@ -217,8 +217,8 @@ C = A + B
 
 Or, since `A` and `B` do not depend on each other, they can be computed concurrently:
 
-&nbsp;&nbsp;&nbsp;&nbsp;`B = 2 + 2`   _concurrently with_   `A = 1 + 1`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;`C = A + B`
+    `B = 2 + 2`   _concurrently with_   `A = 1 + 1`<br/>
+    `C = A + B`
 
 ## Side effects
 

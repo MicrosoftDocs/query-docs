@@ -32,8 +32,8 @@ Each row in the table describes the properties of a column of `table`:
 | `DateTimePrecision` | The maximum number of fractional digits supported in the seconds portion of a date or time value. |
 | `MaxLength` | The maximum number of characters permitted in a `text` column, or the maximum number of bytes permitted in a `binary` column. |
 | `IsVariableLength` | Indicates whether this column can vary in length (up to `MaxLength`) or if it is of fixed size. |
-| &nbsp; | &nbsp; |
+|   |   |
 | `NativeTypeName` | The name of the type of the column in the native type system of the source (for example, `nvarchar` for SQL Server). |
 | `NativeDefaultExpression` | The default expression for a value of this column in the native expression language of the source (for example, `42` or `newid()` for SQL Server). |
-| &nbsp; | &nbsp; |
+|   |   |
 | `Description` | The description of the column. |

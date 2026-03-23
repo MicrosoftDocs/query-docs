@@ -41,9 +41,9 @@ These functions create and manipulate number values.
 |Name|Description|
 |------------|---------------|
 |[Number.Round](number-round.md)|Returns a nullable number (n) if value is an integer.|
-|[Number.RoundAwayFromZero](number-roundawayfromzero.md)|Returns [Number.RoundUp(value)](number-roundup.md) when value &gt;= 0 and [Number.RoundDown(value)](number-rounddown.md) when value &lt; 0.|
+|[Number.RoundAwayFromZero](number-roundawayfromzero.md)|Returns [Number.RoundUp(value)](number-roundup.md) when value >= 0 and [Number.RoundDown(value)](number-rounddown.md) when value < 0.|
 |[Number.RoundDown](number-rounddown.md)|Returns the largest integer less than or equal to a number value.|
-|[Number.RoundTowardZero](number-roundtowardzero.md)|Returns [Number.RoundDown(x)](number-rounddown.md) when x &gt;= 0 and [Number.RoundUp(x)](number-roundup.md) when x &lt; 0.|
+|[Number.RoundTowardZero](number-roundtowardzero.md)|Returns [Number.RoundDown(x)](number-rounddown.md) when x >= 0 and [Number.RoundUp(x)](number-roundup.md) when x < 0.|
 |[Number.RoundUp](number-roundup.md)|Returns the larger integer greater than or equal to a number value.|  
 
 ## Operations

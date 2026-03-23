@@ -18,7 +18,7 @@ When an expression contains multiple operators, the _precedence_ of the operator
 The _parenthesized-expression_ production can be used to change the default precedence ordering.
 
 _parenthesized-expression:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(`  _expression_  `)`
+      `(`  _expression_  `)`
 
 For example:
 
@@ -222,14 +222,14 @@ The selection and projection operators allow data to be extracted from list and 
 A value may be selected from a list or table based on its zero-based position within that list or table using an _item-access-expression_.
 
 _item-access-expression:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item-selection<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-item-selection<br/>
+      item-selection<br/>
+      optional-item-selection<br/>
 item-selection:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_  `{`  _item-selector_  `}`<br/>
+      primary-expression_  `{`  _item-selector_  `}`<br/>
 _optional-item-selection:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_ `{`  _item-selector_  `} ?`<br/>
+      primary-expression_ `{`  _item-selector_  `} ?`<br/>
 _item-selector:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression_
+      expression_
 
 The _item-access-expression_ `x{y}` returns:
 
@@ -295,36 +295,36 @@ No items in `x` other than that at position `y` is evaluated during the process 
 The _field-access-expression_ is used to _select_ a value from a record or to _project_ a record or table to one with fewer fields or columns, respectively.
 
 _field-access-expression:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-selection<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;implicit-target-field-selection<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;projection<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;implicit-target-projection<br/> 
+      field-selection<br/>
+      implicit-target-field-selection<br/>
+      projection<br/>
+      implicit-target-projection<br/> 
 field-selection:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression field-selector<br/>
+      primary-expression field-selector<br/>
 field-selector:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-field-selector<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-field-selector<br/>
+      required-field-selector<br/>
+      optional-field-selector<br/>
 required-field-selector:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-name_  `]`<br/>
+      `[`   _field-name_  `]`<br/>
 _optional-field-selector:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`   _field-name_  `] ?`<br/>
+      `[`   _field-name_  `] ?`<br/>
 _field-name:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quoted-identifier<br/>
+      generalized-identifier<br/>
+      quoted-identifier<br/>
 implicit-target-field-selection:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-selector<br/> 
+      field-selector<br/> 
 projection:<br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression required-projection<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression optional-projection<br/>
+      primary-expression required-projection<br/>
+      primary-expression optional-projection<br/>
 required-projection:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[` _required-selector-list_ `]`<br/>
+      `[` _required-selector-list_ `]`<br/>
 _optional-projection:_<br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[` _required-selector-list_ `] ?`<br/> _required-selector-list:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-field-selector<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-selector-list_ `,` _required-field-selector<br/> 
+      `[` _required-selector-list_ `] ?`<br/> _required-selector-list:<br/>
+      required-field-selector<br/>
+      required-selector-list_ `,` _required-field-selector<br/> 
 implicit-target-projection:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-projection<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-projection_
+      required-projection<br/>
+      optional-projection_
 
 The simplest form of field access is _required field selection_. It uses the operator `x[y]` to look up a field in a record by field name. If the field `y` does not exist in `x`, an error is raised. The form `x[y]?` is used to perform _optional_ field selection, and returns `null` if the requested field does not exist in the record.
 
@@ -403,8 +403,8 @@ No fields of `x` other than that named by `y` is evaluated during the process of
 The metadata record for a value is amended using the _meta operator_ (`x meta y`).
 
 _metadata-expression:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unary-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unary-expression_  `meta`  _unary-expression_
+      unary-expression<br/>
+      unary-expression_  `meta`  _unary-expression_
 
 The following example constructs a text value with a metadata record using the `meta` operator and then accesses the metadata record of the resulting value using `Value.Metadata`:
 
@@ -438,9 +438,9 @@ Value.RemoveMetadata(x) meta (Value.Metadata(x) & y)
 The _equality operator_ `=` is used to determine if two values are equal. The _inequality operator_ `<>` is used to determine if two values are not equal.
 
 _equality-expression:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;relational-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;relational-expression_  `=`  _equality-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;relational-expression_  `<>`  _equality-expression_
+      relational-expression<br/>
+      relational-expression_  `=`  _equality-expression<br/>
+      relational-expression_  `<>`  _equality-expression_
 
 For example:
 
@@ -591,11 +591,11 @@ The equality operators are defined for the following types:
 The `<`, `>`, `<=`, and `>=` operators are called the _relational operators_.
 
 _relational-expression:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression_  `<`  _relational-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression_  `>`  _relational-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression_  `<=`  _relational-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression_  `>=`  _relational-expression_
+      additive-expression<br/>
+      additive-expression_  `<`  _relational-expression<br/>
+      additive-expression_  `>`  _relational-expression<br/>
+      additive-expression_  `<=`  _relational-expression<br/>
+      additive-expression_  `>=`  _relational-expression_
 
 These operators are used to determine the relative ordering relationship between two values, as shown in the following table:
 
@@ -662,11 +662,11 @@ The following holds when evaluating an expression containing the relational oper
 The `and` and `or` operators are called the conditional logical operators.
 
 _logical-or-expression:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logical-and-expression</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logical-and-expression_  `or`  _logical-or-expression<br/>
+      logical-and-expression</br>
+      logical-and-expression_  `or`  _logical-or-expression<br/>
 logical-and-expression:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is-expression<br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is-expression_  `and`  _logical-and-expression_
+      is-expression<br/> 
+      is-expression_  `and`  _logical-and-expression_
 
 The `or` operator returns `true` when at least one of its operands is `true`. The right operand is evaluated if and only if the left operand is not `true`.
 
@@ -712,13 +712,13 @@ d <> 0 and n/d > 1 if d <> 0 then n/d > 1 else false
 The `+`, `-`, `*` and `/` operators are the _arithmetic operators_.
 
 _additive-expression:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;multiplicative-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression_  `+`  _multiplicative-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive-expression_  `-`  _multiplicative-expression<br/>
+      multiplicative-expression<br/>
+      additive-expression_  `+`  _multiplicative-expression<br/>
+      additive-expression_  `-`  _multiplicative-expression<br/>
 multiplicative-expression:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;metadata- expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;multiplicative-expression_  `*`  _metadata-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;multiplicative-expression_  `/`  _metadata-expression_
+      metadata- expression<br/>
+      multiplicative-expression_  `*`  _metadata-expression<br/>
+      multiplicative-expression_  `/`  _metadata-expression_
 
 ### Precision
 
@@ -1156,10 +1156,10 @@ The following holds when merging two records using `x + y`:
 The `+`, `-`, and `not` operators are unary operators.
 
 _unary-expression:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type-expression_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`+` _unary expression_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`-` _unary expression_<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`not` _unary expression_
+      type-expression_<br/>
+      `+` _unary expression_<br/>
+      `-` _unary expression_<br>
+      `not` _unary expression_
 
 ### Unary plus operator
 
@@ -1258,10 +1258,10 @@ The type compatibility operator `x is y`  is defined for the following types of 
 The expression `x is y` returns `true` if the ascribed type of `x` is compatible with `y`, and returns `false` if it is not compatible. `y` must be a primitive type or a nullable primitive type.
 
 _is-expression:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is-expression_ `is`  _primitive-or-nullable-primitive-type<br /> 
+      as-expression<br/>
+      is-expression_ `is`  _primitive-or-nullable-primitive-type<br /> 
 primitive-or-nullable-primitive-type:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`_<sub>opt</sub> primitive-type_<br />
+      `nullable`_<sub>opt</sub> primitive-type_<br />
 
 Type compatibility, as supported by the `is` operator, is a subset of [general type compatibility](m-spec-types.md) and is defined using the following rules:
 
@@ -1284,10 +1284,10 @@ The type assertion operator `x as y` is defined for the following types of value
 The expression `x as y` asserts that the value `x` is compatible with `y` as per the `is` operator. If it is not compatible, an error is raised. `y` must be a primitive type or a nullable primitive type.
 
 _as-expression:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;equality-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as-expression_  `as`  _primitive-or-nullable-primitive-type<br />
+      equality-expression<br/>
+      as-expression_  `as`  _primitive-or-nullable-primitive-type<br />
 primitive-or-nullable-primitive-type:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`_<sub>opt</sub>  primitive-type_
+      `nullable`_<sub>opt</sub>  primitive-type_
 
 The expression `x as y` is evaluated as follows:
 
