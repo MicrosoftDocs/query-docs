@@ -184,13 +184,13 @@ This parameter is a list of text values specifying the column names of the resul
 
 Comparison criterion can be provided as either of the following values:
 
-- A number value to specify a sort order. More information: [Sort order](#sort-order)
+* A number value to specify a sort order. More information: [Sort order](#sort-order)
 
-- To compute a key to be used for sorting, a function of one argument can be used.
+* To compute a key to be used for sorting, a function of one argument can be used.
 
-- To both select a key and control order, comparison criterion can be a list containing the key and order.
+* To both select a key and control order, comparison criterion can be a list containing the key and order.
 
-- To completely control the comparison, a function of two arguments can be used that returns -1, 0, or 1 given the relationship between the left and right inputs. [Value.Compare](value-compare.md) can be used to delegate this logic.
+* To completely control the comparison, a function of two arguments can be used that returns -1, 0, or 1 given the relationship between the left and right inputs. [Value.Compare](value-compare.md) can be used to delegate this logic.
 
 For examples, go to the description of [Table.Sort](table-sort.md).
 
@@ -198,9 +198,9 @@ For examples, go to the description of [Table.Sort](table-sort.md).
 
 This criteria is generally used in ordering or row operations. It determines the number of rows returned in the table and can take two forms, a number or a condition.
 
-- A number indicates how many values to return inline with the appropriate function.
+* A number indicates how many values to return inline with the appropriate function.
 
-- If a condition is specified, the rows containing values that initially meet the condition is returned. Once a value fails the condition, no further values are considered.
+* If a condition is specified, the rows containing values that initially meet the condition is returned. Once a value fails the condition, no further values are considered.
 
 More information: [Table.FirstN](table-firstn.md), [Table.MaxN](table-maxn.md)
 
@@ -237,12 +237,12 @@ More information: [Order.Type](order-type.md)
 
 Equation criteria for tables can be specified as either:
 
-- A function value that is either:
+* A function value that is either:
   
-  - A key selector that determines the column in the table to apply the equality criteria.
+  * A key selector that determines the column in the table to apply the equality criteria.
 
-  - A comparer function that is used to specify the kind of comparison to apply. Built-in comparer functions can be specified. More information: [Comparer functions](comparer-functions.md)
+  * A comparer function that is used to specify the kind of comparison to apply. Built-in comparer functions can be specified. More information: [Comparer functions](comparer-functions.md)
 
-- A list of the columns in the table to apply the equality criteria.
+* A list of the columns in the table to apply the equality criteria.
 
 For examples, go to the description of [Table.Distinct](table-distinct.md).  
