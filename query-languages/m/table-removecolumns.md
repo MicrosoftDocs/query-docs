@@ -37,7 +37,7 @@ Table.RemoveColumns(
 
 `Table.FromRecords({[CustomerID = 1, Name = "Bob"]})`
 
-### Example 2
+## Example 2
 
 Try to remove a non-existent column from the table.
 
