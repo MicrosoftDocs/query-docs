@@ -17,7 +17,7 @@ Combiner.CombineTextByRanges(<b>ranges</b> as list, optional <b>template</b> as 
 
 Returns a function that combines a list of text values into a single text value using the specified output positions and lengths. A null length indicates that the entire text value should be included.
 
-## Example 1
+## Example
 
 Combine a list of text values using the specified output positions and lengths.
 

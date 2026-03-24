@@ -27,7 +27,7 @@ If a handler function raises an error, the default behavior of the operation is 
 
 Refer to the published [Power Query custom connector documentation](/power-query/samples/trippin/10-tableview1/readme#using-tableview) for a more complete description of **Table.View**.
 
-## Example 1
+## Example
 
 Create a basic view that doesn't require accessing the rows in order to determine the type or the row count.
 

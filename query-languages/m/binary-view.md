@@ -27,7 +27,7 @@ If a handler function raises an error, the default behavior of the operation is 
 
 Refer to the published Power Query custom connector documentation for a more complete description of **Binary.View**.
 
-## Example 1
+## Example
 
 Create a basic view that doesn't require accessing the data in order to determine the length.
 

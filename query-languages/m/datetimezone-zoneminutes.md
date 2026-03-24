@@ -19,7 +19,7 @@ Returns the time zone minutes component of a `datetimezone` value.
 
 * `dateTimeZone`: a `datetimezone` value from which the time zone minutes component is extracted. If `dateTimeZone` is `null`, the function returns `null`.
 
-## Example 1
+## Example
 
 Get the time zone minutes component of the specified `datetimezone` value.
 

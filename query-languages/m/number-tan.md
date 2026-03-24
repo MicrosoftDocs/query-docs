@@ -17,7 +17,7 @@ Number.Tan(<b>number</b> as nullable number) as nullable number
 
 Returns the tangent of `number`.
 
-## Example 1
+## Example
 
 Find the tangent of the angle 1.
 

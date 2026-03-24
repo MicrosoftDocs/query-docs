@@ -17,7 +17,7 @@ Text.Reverse(<b>text</b> as nullable text) as nullable text
 
 Reverses the provided `text`.
 
-## Example 1
+## Example
 
 Reverse the text "123".
 

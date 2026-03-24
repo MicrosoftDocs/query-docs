@@ -17,7 +17,7 @@ Table.SplitAt(<b>table</b> as table, <b>count</b> as number) as list
 
 Returns a list containing two tables: a table with the first N rows of `table` (as specified by `count`) and a table containing the remaining rows of `table`. If the tables of the resulting list are enumerated exactly once and in order, the function will enumerate `table` only once.
 
-## Example 1
+## Example
 
 Return the first two rows of the table and the remaining rows of the table.
 

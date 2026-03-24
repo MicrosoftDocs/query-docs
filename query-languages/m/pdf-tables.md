@@ -23,7 +23,7 @@ Returns any tables found in `pdf`. An optional record parameter, `options`, may 
 * `MultiPageTables`: Controls whether similar tables on consecutive pages will be automatically combined into a single table. Default: true.
 * `EnforceBorderLines`: Controls whether border lines are always enforced as cell boundaries (when true), or simply used as one hint among many for determining cell boundaries (when false). Default: false.
 
-## Example 1
+## Example
 
 Returns the tables contained in sample.pdf.
 

@@ -17,7 +17,7 @@ Type.NonNullable(<b>type</b> as type) as type
 
 Returns the non `nullable` type from the `type`.
 
-## Example 1
+## Example
 
 Return the non nullable type of `type nullable number`.
 

@@ -225,7 +225,7 @@ Evaluating this expression can be visualized as:
 
 :::image type="content" source="media/list-example-1.png" alt-text="Diagram of a table that visualizes the expression with a primitive value, a function, and a record.":::
 
-## Example 2 - Record containing primitive values and nested records
+## Example - Record containing primitive values and nested records
 
 ```powerquery-m
 let

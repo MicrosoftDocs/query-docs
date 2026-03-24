@@ -17,7 +17,7 @@ Type.FunctionParameters(<b>type</b> as type) as record
 
 Returns a record with field values set to the name of the parameters of `type`, and their values set to their corresponding types.
 
-## Example 1
+## Example
 
 Find the types of the parameters to the function `(x as number, y as text)`.
 

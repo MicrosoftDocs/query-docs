@@ -18,7 +18,7 @@ Indicates whether the given datetime value `dateTime` occurs during the current 
 
 * `dateTime`: A `datetime`, or `datetimezone` value to be evaluated.
 
-## Example 1
+## Example
 
 Determine if the current system time is in the current minute.
 

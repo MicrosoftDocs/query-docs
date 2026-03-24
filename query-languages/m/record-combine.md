@@ -17,7 +17,7 @@ Record.Combine(<b>records</b> as list) as record
 
 Combines the records in the given `records`. If the `records` contains non-record values, an error is returned.
 
-## Example 1
+## Example
 
 Create a combined record from the records.
 

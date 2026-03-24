@@ -18,7 +18,7 @@ List.FirstN(<b>list</b> as list, <b>countOrCondition</b> as any) as any
 * If a number is specified, up to that many items are returned.
 * If a condition is specified, all items are returned that initially meet the condition. Once an item fails the condition, no further items are considered.
 
-## Example 1
+## Example
 
 Find the intial values in the list {3, 4, 5, -1, 7, 8, 2} that are greater than 0.
 

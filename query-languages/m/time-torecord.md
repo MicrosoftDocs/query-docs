@@ -19,7 +19,7 @@ Returns a record containing the parts of the given Time value, `time`.
 
 * `time`: A `time` value for from which the record of its parts is to be calculated.
 
-## Example 1
+## Example
 
 Convert the `#time(11, 56, 2)` value into a record containing Time values.
 

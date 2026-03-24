@@ -17,7 +17,7 @@ Table.ColumnsOfType(<b>table</b> as table, <b>listOfTypes</b> as list) as list
 
 Returns a list with the names of the columns from table `table` that match the types specified in `listOfTypes`.
 
-## Example 1
+## Example
 
 Return the names of columns of type Number.Type from the table.
 

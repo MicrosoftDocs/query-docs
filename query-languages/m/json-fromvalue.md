@@ -26,7 +26,7 @@ Produces a JSON representation of a given value `value` with a text encoding spe
 * Binary values are represented as base-64 encoded text
 * Types and functions produce an error
 
-## Example 1
+## Example
 
 Convert a complex value to JSON.
 

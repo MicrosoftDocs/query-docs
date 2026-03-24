@@ -24,7 +24,7 @@ Values of the following types can be converted to a `logical` value:
 
 If `value` is of any other type, an error is returned.
 
-## Example 1
+## Example
 
 Convert `2` to a `logical` value.
 

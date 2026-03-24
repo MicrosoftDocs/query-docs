@@ -32,7 +32,7 @@ An error is raised if a row expression AST cannot be returned for the body of `f
 
 This function is identical to [`ItemExpression.From`](itemexpression-from.md).
   
-## Example 1
+## Example
 
 Returns the AST for the body of the function `each [CustomerID] = "ALFKI"`.
 

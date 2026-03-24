@@ -27,7 +27,7 @@ Replaces a specified number of rows, `count`, in the input `table` with the spec
 * `count`: The number of rows to replace.
 * `rows`: The list of row records to insert into the `table` at the location specified by the `offset`.
 
-## Example 1
+## Example
 
 Starting at position 1, replace 3 rows.
 

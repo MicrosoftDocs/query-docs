@@ -17,7 +17,7 @@ Percentage.From(<b>value</b> as any, optional <b>culture</b> as nullable text) a
 
 Returns a `percentage` value from the given `value`. If the given `value` is `null`, **Percentage.From** returns `null`. If the given `value` is `text` with a trailing percent symbol, then the converted decimal number will be returned. Otherwise, the value will be converted to a `number` using [Number.From](/powerquery-m/number-from). An optional `culture` may also be provided (for example, "en-US").
 
-## Example 1
+## Example
 
 Get the `percentage` value of `"12.3%"`.
 

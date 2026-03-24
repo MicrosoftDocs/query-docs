@@ -17,7 +17,7 @@ Table.RowCount(<b>table</b> as table) as number
 
 Returns the number of rows in the `table`.
 
-## Example 1
+## Example
 
 Find the number of rows in the table.
 

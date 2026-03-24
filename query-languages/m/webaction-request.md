@@ -33,7 +33,7 @@ Creates an action that, when executed, will return the results of performing a `
 
 Note that this function is disabled in most contexts. Consider using [Web.Contents](/powerquery-m/web-contents) or [Web.Headers](/powerquery-m/web-headers) instead.
 
-## Example 1
+## Example
 
 Perform a GET request against Bing.
 

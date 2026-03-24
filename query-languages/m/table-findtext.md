@@ -17,7 +17,7 @@ Table.FindText(<b>table</b> as table, <b>text</b> as text) as table
 
 Returns the rows in the table `table` that contain the text `text`. If the text is not found, an empty table is returned.
 
-## Example 1
+## Example
 
 Find the rows in the table that contain "Bob".
 

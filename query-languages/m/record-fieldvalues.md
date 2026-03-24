@@ -17,7 +17,7 @@ Record.FieldValues(<b>record</b> as record) as list
 
 Returns a list of the field values in record `record`.
 
-## Example 1
+## Example
 
 Find the field values in the record.
 

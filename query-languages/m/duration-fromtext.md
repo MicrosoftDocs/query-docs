@@ -28,7 +28,7 @@ Returns a duration value from the specified text, `text`. The following formats 
 * ss: Number of seconds, between 0 and 59.
 * ff: Fraction of seconds, between 0 and 9999999.
 
-## Example 1
+## Example
 
 Convert `"2.05:55:20"` into a `duration` value.
 

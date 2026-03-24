@@ -17,7 +17,7 @@ Type.FunctionRequiredParameters(<b>type</b> as type) as number
 
 Returns a number indicating the minimum number of parameters required to invoke the input `type` of function.
 
-## Example 1
+## Example
 
 Find the number of required parameters to the function `(x as number, optional y as text)`.
 

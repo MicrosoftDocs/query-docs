@@ -17,7 +17,7 @@ Text.Length(<b>text</b> as nullable text) as nullable number
 
 Returns the number of characters in the text `text`.
 
-## Example 1
+## Example
 
 Find how many characters are in the text "Hello World".
 

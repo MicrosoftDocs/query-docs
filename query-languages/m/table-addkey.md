@@ -21,7 +21,7 @@ Table.AddKey(
 
 Adds a key to `table`, where `columns` is the list of column names that define the key, and `isPrimary` specifies whether the key is primary.
 
-## Example 1
+## Example
 
 Add a single-column primary key to a table.
 

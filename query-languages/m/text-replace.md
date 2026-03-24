@@ -21,7 +21,7 @@ Text.Replace(
 
 Returns the result of replacing all occurrences of text value `old` in text value `text` with text value `new`. This function is case sensitive.
 
-## Example 1
+## Example
 
 Replace every occurrence of "the" in a sentence with "a".
 

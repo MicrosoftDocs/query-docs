@@ -17,7 +17,7 @@ Table.ToRecords(<b>table</b> as table) as list
 
 Converts a table, `table`, to a list of records.
 
-## Example 1
+## Example
   
 Convert the table to a list of records.
 

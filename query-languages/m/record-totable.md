@@ -17,7 +17,7 @@ Record.ToTable(<b>record</b> as record) as table
 
 Returns a table containing the columns `Name` and `Value` with a row for each field in `record`.
 
-## Example 1
+## Example
 
 Return the table from the record.
 
