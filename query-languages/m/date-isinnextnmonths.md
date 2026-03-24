@@ -6,6 +6,8 @@ ms.topic: reference
 ---
 # Date.IsInNextNMonths
 
+## Syntax
+
 <pre>
 Date.IsInNextNMonths(<b>dateTime</b> as any, <b>months</b> as number) as nullable logical
 </pre>

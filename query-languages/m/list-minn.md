@@ -23,7 +23,7 @@ Returns the minimum value(s) in the list, `list`. The parameter, `countOrConditi
 
 * `list`: The list of values.
 * `countOrCondition`: If a number is specified, a list of up to `countOrCondition` items in ascending order is returned. If a condition is specified, a list of items that initially meet the condition is returned. Once an item fails the condition, no further items are considered. If this parameter is null, the single smallest value in the list is returned.
-* `comparisonCriteria`: _[Optional]_ An optional `comparisonCriteria` value can be specified to determine how to compare the items in the list. If this parameter is null, the default comparer is used.
+* `comparisonCriteria`: *[Optional]* An optional `comparisonCriteria` value can be specified to determine how to compare the items in the list. If this parameter is null, the default comparer is used.
 
 ## Example 1
 

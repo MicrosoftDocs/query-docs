@@ -6,6 +6,8 @@ ms.topic: reference
 ---
 # Date.EndOfDay
 
+## Syntax
+
 <pre>
 Date.EndOfDay(<b>dateTime</b> as any) as any
 </pre>

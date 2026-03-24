@@ -6,6 +6,8 @@ ms.topic: reference
 ---
 # Table.SplitAt
 
+## Syntax
+
 <pre>
 Table.SplitAt(<b>table</b> as table, <b>count</b> as number) as list
 </pre>

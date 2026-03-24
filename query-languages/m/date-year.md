@@ -6,6 +6,8 @@ ms.topic: reference
 ---
 # Date.Year
 
+## Syntax
+
 <pre>
 Date.Year(<b>dateTime</b> as any) as nullable number
 </pre>

@@ -6,6 +6,8 @@ ms.topic: reference
 ---
 # List.Difference
 
+## Syntax
+
 <pre>
 List.Difference(
     <b>list1</b> as list,
