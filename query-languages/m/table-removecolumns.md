@@ -4,6 +4,7 @@ title: "Table.RemoveColumns"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.RemoveColumns
 
 ## Syntax

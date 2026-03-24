@@ -4,6 +4,7 @@ title: "Table.AddRankColumn"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.AddRankColumn
 
 ## Syntax
@@ -21,7 +22,7 @@ Table.AddRankColumn(
 
 Appends a column named `newColumnName` to the `table` with the ranking of one or more other columns described by `comparisonCriteria`. The `RankKind` option in `options` can be used by advanced users to pick a more-specific ranking method.
 
-## Example 1
+## Example
 
 Add a column named **RevenueRank** to the table which ranks the **Revenue** column from highest to lowest.
 

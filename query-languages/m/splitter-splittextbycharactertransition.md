@@ -17,7 +17,7 @@ Splitter.SplitTextByCharacterTransition(<b>before</b> as anynonnull, <b>after</b
 
 Returns a function that splits text into a list of text according to a transition from one kind of character to another. The `before` and `after` parameters can either be a list of characters, or a function that takes a character and returns true/false.
 
-## Example 1
+## Example
 
 Split the input whenever an upper or lowercase letter is followed by a digit.
 

@@ -4,6 +4,7 @@ title: "Table.ExpandRecordColumn"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ExpandRecordColumn
 
 ## Syntax
@@ -26,7 +27,7 @@ Given the `column` of records in the input `table`, creates a table with a colum
 * `fieldNames`: The list of fields to expand into columns in the table.
 * `newColumnNames`: The list of column names to give the new columns. The new column names cannot duplicate any column in the new table.
 
-## Example 1
+## Example
 
 Expand column [a] in the table `({[a = [aa = 1, bb = 2, cc = 3], b = 2]})` into 3 columns "aa", "bb" and "cc".
 

@@ -6,6 +6,7 @@ ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ms.subservice: m-background
 ---
+
 # Standard date and time format strings
 
 A standard date and time format string uses a single character as the format specifier to define the text representation of a time and date value. Any date and time format string that contains more than one character, including white space, is interpreted as a [custom date and time format string](custom-date-and-time-format-strings.md). A standard or custom format string can be used to define the text representation that results from a formatting operation.

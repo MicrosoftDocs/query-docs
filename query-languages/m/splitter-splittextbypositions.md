@@ -4,6 +4,7 @@ title: "Splitter.SplitTextByPositions"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Splitter.SplitTextByPositions
 
 ## Syntax

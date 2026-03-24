@@ -17,7 +17,7 @@ Duration.TotalDays(<b>duration</b> as nullable duration) as nullable number
 
 Returns the total days spanned by `duration`.
 
-## Example 1
+## Example
 
 Find the total days spanned by a duration value.
 

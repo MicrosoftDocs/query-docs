@@ -20,7 +20,7 @@ Indicates whether the given datetime value `dateTime` occurs during the previous
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
 * `years`: The number of years.
 
-## Example 1
+## Example
 
 Determine if the year before the current system time is in the previous two years.
 

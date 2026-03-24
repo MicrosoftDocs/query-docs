@@ -4,6 +4,7 @@ title: "Character.ToNumber"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Character.ToNumber
 
 ## Syntax

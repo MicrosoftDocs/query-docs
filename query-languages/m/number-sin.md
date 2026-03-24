@@ -4,6 +4,7 @@ title: "Number.Sin"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.Sin
 
 ## Syntax
@@ -16,7 +17,7 @@ Number.Sin(<b>number</b> as nullable number) as nullable number
 
 Returns the sine of `number`.
 
-## Example 1
+## Example
 
 Find the sine of the angle 0.
 

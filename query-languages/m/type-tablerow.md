@@ -4,6 +4,7 @@ title: "Type.TableRow"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.TableRow
 
 ## Syntax
@@ -16,7 +17,7 @@ Type.TableRow(<b>table</b> as type) as type
 
 Returns the row type of the specified table type. The result will always be a record type.
 
-## Example 1
+## Example
 
 Return the row type information for a simple table.
 

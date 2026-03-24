@@ -4,6 +4,7 @@ title: "Table.Column"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Column
 
 ## Syntax
@@ -16,7 +17,7 @@ Table.Column(<b>table</b> as table, <b>column</b> as text) as list
 
 Returns the column of data specified by `column` from the table `table` as a list.
 
-## Example 1
+## Example
 
 Returns the values from the [Name] column in the table.
 

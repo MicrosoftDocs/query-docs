@@ -4,6 +4,7 @@ title: "Record.RemoveFields"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Record.RemoveFields
 
 ## Syntax

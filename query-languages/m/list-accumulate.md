@@ -4,6 +4,7 @@ title: "List.Accumulate"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Accumulate
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Table.AddIndexColumn"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.AddIndexColumn
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Comparer.Ordinal"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Comparer.Ordinal
 
 ## Syntax
@@ -16,7 +17,7 @@ Comparer.Ordinal(<b>x</b> as any, <b>y</b> as any) as number
 
 Returns a comparer function which uses Ordinal rules to compare the provided values `x` and `y`.
 
-## Example 1
+## Example
 
 Using Ordinal rules, compare if "encyclopædia" and "encyclopaedia" are equivalent. Note these are equivalent using `Comparer.FromCulture("en-US")`.
 

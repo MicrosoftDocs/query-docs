@@ -4,6 +4,7 @@ title: "List.RemoveFirstN"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.RemoveFirstN
 
 ## Syntax

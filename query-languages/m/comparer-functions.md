@@ -5,6 +5,7 @@ ms.date: 11/20/2024
 ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
+
 # Comparer functions
 
 These functions test equality and determine ordering.

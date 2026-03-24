@@ -4,6 +4,7 @@ title: "Text.TrimStart"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.TrimStart
 
 ## Syntax
@@ -31,9 +32,7 @@ Text.TrimStart("   a b c d    ")
 
 **Output**
 
-<pre>
-"a b c d    "
-</pre>
+`"a b c d    "`
 
 ## Example 2
 

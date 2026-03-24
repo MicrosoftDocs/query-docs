@@ -4,6 +4,7 @@ title: "Text.StartsWith"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.StartsWith
 
 ## Syntax

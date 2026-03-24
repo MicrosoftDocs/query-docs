@@ -5,6 +5,7 @@ ms.date: 2/17/2023
 ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
+
 # Binary functions
 
 These functions create and manipulate binary data.

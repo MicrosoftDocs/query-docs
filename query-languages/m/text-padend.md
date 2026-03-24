@@ -4,6 +4,7 @@ title: "Text.PadEnd"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.PadEnd
 
 ## Syntax
@@ -32,7 +33,7 @@ Text.PadEnd("Name", 10)
 
 **Output**
 
-<pre>"Name      "</pre>
+`"Name      "`
 
 ## Example 2
 
@@ -46,4 +47,4 @@ Text.PadEnd("Name", 10, "|")
 
 **Output**
 
-<pre>"Name||||||"</pre>
+`"Name||||||"`

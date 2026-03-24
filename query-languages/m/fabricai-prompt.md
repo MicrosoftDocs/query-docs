@@ -4,6 +4,7 @@ title: "FabricAI.Prompt"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # FabricAI.Prompt
 
 ## Syntax
@@ -16,7 +17,7 @@ FabricAI.Prompt(<b>input</b> as text, optional <b>context</b> as any) as text
 
 Returns the result of passing the specified `input` to an AI model. An optional `context` value can be provided in order to specify additional data that's relevant to the request.
 
-## Example 1
+## Example
 
 Use an AI model to categorize a product review.
 

@@ -5,6 +5,7 @@ ms.date: 6/9/2025
 ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
+
 # Power Query M function reference
 
 The Power Query M function reference includes articles for each of the over 700 functions. These reference articles are auto-generated from in-product help. To learn more about functions and how they work in an expression, go to [Understanding Power Query M functions](understanding-power-query-m-functions.md).

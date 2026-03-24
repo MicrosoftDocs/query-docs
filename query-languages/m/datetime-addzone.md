@@ -4,6 +4,7 @@ title: "DateTime.AddZone"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTime.AddZone
 
 ## Syntax
@@ -20,7 +21,7 @@ DateTime.AddZone(
 
 Adds timezone information to the `dateTime` value. The timezone information includes `timezoneHours` and optionally `timezoneMinutes`, which specify the desired offset from UTC time.
 
-## Example 1
+## Example
 
 Set the timezone to UTC+7:30 (7 hours and 30 minutes past UTC).
 

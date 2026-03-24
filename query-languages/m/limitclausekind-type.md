@@ -4,6 +4,7 @@ title: "LimitClauseKind.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # LimitClauseKind.Type
 
 ## Definition

@@ -4,6 +4,7 @@ title: "Table.ReorderColumns"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ReorderColumns
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "List.Difference"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Difference
 
 ## Syntax

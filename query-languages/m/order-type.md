@@ -4,6 +4,7 @@ title: "Order.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Order.Type
 
 ## Definition

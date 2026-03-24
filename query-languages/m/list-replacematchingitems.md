@@ -4,6 +4,7 @@ title: "List.ReplaceMatchingItems"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.ReplaceMatchingItems
 
 ## Syntax
@@ -20,7 +21,7 @@ List.ReplaceMatchingItems(
 
 Performs the given replacements to the list `list`. A replacement operation `replacements` consists of a list of two values, the old value and new value, provided in a list. An optional equation criteria value, `equationCriteria`, can be specified to control equality testing.
 
-## Example 1
+## Example
 
 Create a list from {1, 2, 3, 4, 5} replacing the value 5 with -5, and the value 1 with -1.
 

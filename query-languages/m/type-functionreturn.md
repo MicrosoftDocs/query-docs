@@ -4,6 +4,7 @@ title: "Type.FunctionReturn"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.FunctionReturn
 
 ## Syntax
@@ -16,7 +17,7 @@ Type.FunctionReturn(<b>type</b> as type) as type
 
 Returns a type returned by a function `type`.
 
-## Example 1
+## Example
 
 Find the return type of `() as any)`.
 

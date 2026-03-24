@@ -4,6 +4,7 @@ title: "Table.RenameColumns"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.RenameColumns
 
 ## Syntax

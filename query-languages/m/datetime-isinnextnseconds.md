@@ -20,7 +20,7 @@ Indicates whether the given datetime value `dateTime` occurs during the next num
 * `dateTime`: A `datetime`, or `datetimezone` value to be evaluated.
 * `seconds`: The number of seconds.
 
-## Example 1
+## Example
 
 Determine if the second after the current system time is in the next two seconds.
 
