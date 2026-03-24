@@ -4,6 +4,7 @@ title: "Table.ReplaceMatchingRows"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ReplaceMatchingRows
 
 ## Syntax
@@ -20,7 +21,7 @@ Table.ReplaceMatchingRows(
 
 Replaces all the specified rows in the `table` with the provided ones. The rows to replace and the replacements are specified in `replacements`, using {old, new} formatting. An optional `equationCriteria` parameter may be specified to control comparison between the rows of the table.
 
-## Example 1
+## Example
 
 Replace the rows [a = 1, b = 2] and [a = 2, b = 3] with [a = -1, b = -2],[a = -2, b = -3] in the table.
 

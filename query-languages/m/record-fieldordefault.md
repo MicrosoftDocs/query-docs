@@ -4,6 +4,7 @@ title: "Record.FieldOrDefault"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Record.FieldOrDefault
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Table.ExpandTableColumn"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ExpandTableColumn
 
 ## Syntax
@@ -21,7 +22,7 @@ Table.ExpandTableColumn(
 
 Expands tables in `table`[`column`] into multiple rows and columns. `columnNames` is used to select the columns to expand from the inner table. Specify `newColumnNames` to avoid conflicts between existing columns and new columns.
 
-## Example 1
+## Example
 
 Expand table columns in `[a]` in the table `({[t = {[a=1, b=2, c=3], [a=2,b=4,c=6]}, b = 2]})` into 3 columns `[t.a]`, `[t.b]` and `[t.c]`.
 

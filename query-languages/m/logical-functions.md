@@ -5,6 +5,7 @@ ms.date: 11/21/2024
 ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
+
 # Logical functions
 
 These functions create and manipulate logical (that is, `true` or `false`) values.

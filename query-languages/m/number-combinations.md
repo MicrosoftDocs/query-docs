@@ -20,7 +20,7 @@ Returns the number of unique combinations from a list of items, `setSize` with s
 * `setSize`: The number of items in the list.
 * `combinationSize`: The number of items in each combination.
 
-## Example 1
+## Example
 
 Find the number of combinations from a total of 5 items when each combination is a group of 3.
 

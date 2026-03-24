@@ -4,6 +4,7 @@ title: "DateTime.Time"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTime.Time
 
 ## Syntax
@@ -16,7 +17,7 @@ DateTime.Time(<b>dateTime</b> as any) as nullable time
 
 Returns the time part of the given datetime value, `dateTime`.
 
-## Example 1
+## Example
 
 Find the time value of #datetime(2010, 12, 31, 11, 56, 02).
 

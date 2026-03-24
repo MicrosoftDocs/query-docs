@@ -4,6 +4,7 @@ title: "Value.Divide"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Value.Divide
 
 ## Syntax

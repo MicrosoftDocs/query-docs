@@ -4,6 +4,7 @@ title: "Day.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Day.Type
 
 ## Definition

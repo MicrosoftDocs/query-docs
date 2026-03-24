@@ -5,6 +5,7 @@ ms.date: 5/16/2022
 ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
+
 # Replacer functions
 
 These functions are used by other functions in the library to replace a given value.  

@@ -4,6 +4,7 @@ title: "Text.ReplaceRange"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.ReplaceRange
 
 ## Syntax
@@ -21,7 +22,7 @@ Text.ReplaceRange(
 
 Returns the result of removing a number of characters, `count`, from text value `text` beginning at position `offset` and then inserting the text value `newText` at the same position in `text`.
 
-## Example 1
+## Example
 
 Replace a single character at position 2 in text value "ABGF" with new text value "CDE".
 

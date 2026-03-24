@@ -17,7 +17,7 @@ BinaryFormat.Record(<b>record</b> as record) as function
 
 Returns a binary format that reads a record. The `record` parameter specifies the format of the record. Each field in the record can have a different binary format. If a field contains a value that is not a binary format value, then no data is read for that field, and the field value is echoed to the result.
 
-## Example 1
+## Example
 
 Read a record containing one 16-bit integer and one 32-bit integer.
 

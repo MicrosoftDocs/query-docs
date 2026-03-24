@@ -4,6 +4,7 @@ title: "Type.IsOpenRecord"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.IsOpenRecord
 
 ## Syntax
@@ -16,7 +17,7 @@ Type.IsOpenRecord(<b>type</b> as type) as logical
 
 Returns a `logical` indicating whether a record `type` is open.
 
-## Example 1
+## Example
 
 Determine if the record `type [ A = number, ...]` is open.
 

@@ -4,6 +4,7 @@ title: "Text.RemoveRange"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.RemoveRange
 
 ## Syntax

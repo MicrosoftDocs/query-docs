@@ -17,7 +17,7 @@ Binary.ApproximateLength(<b>binary</b> as nullable binary) as nullable number
 
 Returns the approximate length of `binary`, or an error if the data source doesn't support an approximate length.
 
-## Example 1
+## Example
 
 Get the approximate length of the binary value.
 

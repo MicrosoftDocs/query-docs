@@ -3,6 +3,7 @@ description: "Learn more about: Dynamic values"
 title: "Dynamic values"
 ms.topic: reference
 ---
+
 # Dynamic values
 
 The Power Query M formula language includes these dynamic values.

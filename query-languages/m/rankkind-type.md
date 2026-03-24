@@ -4,6 +4,7 @@ title: "RankKind.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # RankKind.Type
 
 ## Definition

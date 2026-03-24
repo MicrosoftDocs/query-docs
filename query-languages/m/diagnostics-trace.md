@@ -4,6 +4,7 @@ title: "Diagnostics.Trace"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Diagnostics.Trace
 
 ## Syntax
@@ -27,7 +28,7 @@ Writes a trace `message`, if tracing is enabled, and returns `value`. An optiona
 - [TraceLevel.Information](tracelevel-type.md)
 - [TraceLevel.Verbose](tracelevel-type.md)
 
-## Example 1
+## Example
 
 Trace the message before invoking Text.From function and return the result.
 

@@ -4,6 +4,7 @@ title: "SapHana.Database"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # SapHana.Database
 
 ## Syntax

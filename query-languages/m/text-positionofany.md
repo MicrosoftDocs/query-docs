@@ -4,6 +4,7 @@ title: "Text.PositionOfAny"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.PositionOfAny
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "RowExpression.Column"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # RowExpression.Column
 
 ## Syntax
@@ -16,7 +17,7 @@ RowExpression.Column(<b>columnName</b> as text) as record
 
 Returns an abstract syntax tree (AST) that represents access to column `columnName` of the row within a row expression.  
   
-## Example 1
+## Example
 
 Creates an AST representing access of column "CustomerName".
 

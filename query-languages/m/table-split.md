@@ -17,7 +17,7 @@ Table.Split(<b>table</b> as table, <b>pageSize</b> as number) as list
 
 Splits `table` into a list of tables where the first element of the list is a table containing the first `pageSize` rows from the source table, the next element of the list is a table containing the next `pageSize` rows from the source table, and so on.
 
-## Example 1
+## Example
 
 Split a table of five records into tables with two records each.
 

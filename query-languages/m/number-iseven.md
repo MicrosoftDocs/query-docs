@@ -4,6 +4,7 @@ title: "Number.IsEven"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.IsEven
 
 ## Syntax

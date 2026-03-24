@@ -4,6 +4,7 @@ title: "Int32.From"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Int32.From
 
 ## Syntax

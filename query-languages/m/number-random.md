@@ -4,6 +4,7 @@ title: "Number.Random"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.Random
 
 ## Syntax
@@ -16,7 +17,7 @@ Number.Random() as number
 
 Returns a random number between 0 and 1.
 
-## Example 1
+## Example
 
 Get a random number.
 

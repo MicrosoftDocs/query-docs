@@ -5,6 +5,7 @@ ms.date: 5/16/2022
 ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
+
 # Lines functions
 
 These functions convert lists of text to and from binary and single text values.

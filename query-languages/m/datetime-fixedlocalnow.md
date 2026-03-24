@@ -4,6 +4,7 @@ title: "DateTime.FixedLocalNow"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTime.FixedLocalNow
 
 ## Syntax

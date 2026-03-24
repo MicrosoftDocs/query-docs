@@ -5,6 +5,7 @@ ms.date: 5/16/2022
 ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
+
 # Uri functions
 
 These functions create and manipulate URI query strings.

@@ -17,7 +17,7 @@ Time.Second(<b>dateTime</b> as any) as nullable number
 
 Returns the second component of the provided `time`, `datetime`, or `datetimezone` value, `dateTime`.
 
-## Example 1
+## Example
 
 Find the second value from a datetime value.
 

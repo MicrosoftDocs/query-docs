@@ -5,6 +5,7 @@ ms.date: 11/21/2024
 ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
+
 # DateTime functions
 
 These functions create and manipulate datetime and datetimezone values.

@@ -4,6 +4,7 @@ title: "Text.Proper"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Proper
 
 ## Syntax
@@ -16,7 +17,7 @@ Text.Proper(<b>text</b> as nullable text, optional <b>culture</b> as nullable te
 
 Returns the result of capitalizing only the first letter of each word in text value `text`. All other letters are returned in lowercase. An optional `culture` may also be provided (for example, "en-US").
 
-## Example 1
+## Example
 
 Use `Text.Proper` on a simple sentence.
 

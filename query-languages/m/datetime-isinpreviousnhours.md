@@ -4,6 +4,7 @@ title: "DateTime.IsInPreviousNHours"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTime.IsInPreviousNHours
 
 ## Syntax
@@ -19,7 +20,7 @@ Indicates whether the given datetime value `dateTime` occurs during the previous
 * `dateTime`: A `datetime`, or `datetimezone` value to be evaluated.
 * `hours`: The number of hours.
 
-## Example 1
+## Example
 
 Determine if the hour before the current system time is in the previous two hours.
 

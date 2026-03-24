@@ -4,6 +4,7 @@ title: "Number.IsOdd"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.IsOdd
 
 ## Syntax
