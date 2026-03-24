@@ -33,7 +33,7 @@ Text.PadStart("Name", 10)
 
 **Output**
 
-<pre>"      Name"</pre>
+`"      Name"`
 
 ## Example 2
 
@@ -47,4 +47,4 @@ Text.PadStart("Name", 10, "|")
 
 **Output**
 
-<pre>"||||||Name"</pre>
+`"||||||Name"`

@@ -32,9 +32,7 @@ Text.TrimEnd("     a b c d    ")
 
 **Output**
 
-<pre>
-"     a b c d"
-</pre>
+`"     a b c d"`
 
 ## Example 2
 
