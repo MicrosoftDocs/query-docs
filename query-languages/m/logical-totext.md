@@ -4,6 +4,7 @@ title: "Logical.ToText"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Logical.ToText
 
 ## Syntax

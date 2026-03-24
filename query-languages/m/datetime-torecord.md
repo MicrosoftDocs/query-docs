@@ -4,6 +4,7 @@ title: "DateTime.ToRecord"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTime.ToRecord
 
 ## Syntax

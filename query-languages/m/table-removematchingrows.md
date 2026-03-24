@@ -4,6 +4,7 @@ title: "Table.RemoveMatchingRows"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.RemoveMatchingRows
 
 ## Syntax

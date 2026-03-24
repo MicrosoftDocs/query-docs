@@ -4,6 +4,7 @@ title: "CsvStyle.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # CsvStyle.Type
 
 ## Definition

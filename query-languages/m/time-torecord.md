@@ -4,6 +4,7 @@ title: "Time.ToRecord"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Time.ToRecord
 
 ## Syntax

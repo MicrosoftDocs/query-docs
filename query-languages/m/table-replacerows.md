@@ -4,6 +4,7 @@ title: "Table.ReplaceRows"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ReplaceRows
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Type.RecordFields"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.RecordFields
 
 ## Syntax

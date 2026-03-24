@@ -4,6 +4,7 @@ title: "Binary.Buffer"
 ms.topic: reference
 ms.subservice: m-source
 ---
+
 # Binary.Buffer
 
 ## Syntax

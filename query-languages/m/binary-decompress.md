@@ -4,6 +4,7 @@ title: "Binary.Decompress"
 ms.topic: reference
 ms.subservice: m-source
 ---
+
 # Binary.Decompress
 
 ## Syntax

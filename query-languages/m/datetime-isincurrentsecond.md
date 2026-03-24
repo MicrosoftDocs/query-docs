@@ -4,6 +4,7 @@ title: "DateTime.IsInCurrentSecond"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTime.IsInCurrentSecond
 
 ## Syntax

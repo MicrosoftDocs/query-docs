@@ -4,6 +4,7 @@ title: "ItemExpression.From"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # ItemExpression.From
 
 ## Syntax

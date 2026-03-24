@@ -4,6 +4,7 @@ title: "Record.ToTable"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Record.ToTable
 
 ## Syntax

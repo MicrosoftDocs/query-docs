@@ -4,6 +4,7 @@ title: "Type.TableRow"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.TableRow
 
 ## Syntax

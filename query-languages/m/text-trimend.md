@@ -4,6 +4,7 @@ title: "Text.TrimEnd"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.TrimEnd
 
 ## Syntax

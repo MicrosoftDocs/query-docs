@@ -4,6 +4,7 @@ title: "Table.NestedJoin"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.NestedJoin
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Date.Year"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.Year
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Table.Last"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Last
 
 ## Syntax

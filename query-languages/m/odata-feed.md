@@ -4,6 +4,7 @@ title: "OData.Feed"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # OData.Feed
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "PostgreSQL.Database"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # PostgreSQL.Database
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Text.Lower"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Lower
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Table.FindText"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.FindText
 
 ## Syntax

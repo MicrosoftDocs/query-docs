@@ -4,6 +4,7 @@ title: "Table.RemoveRows"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.RemoveRows
 
 ## Syntax

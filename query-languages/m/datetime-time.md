@@ -4,6 +4,7 @@ title: "DateTime.Time"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTime.Time
 
 ## Syntax

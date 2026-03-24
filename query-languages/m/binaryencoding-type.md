@@ -4,6 +4,7 @@ title: "BinaryEncoding.Type"
 ms.topic: reference
 ms.subservice: m-source
 ---
+
 # BinaryEncoding.Type
 
 ## Definition

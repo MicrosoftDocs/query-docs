@@ -4,6 +4,7 @@ title: "Text.InferNumberType"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.InferNumberType
 
 ## Syntax

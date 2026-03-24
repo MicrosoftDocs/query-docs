@@ -4,6 +4,7 @@ title: "Compression.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Compression.Type
 
 ## Definition

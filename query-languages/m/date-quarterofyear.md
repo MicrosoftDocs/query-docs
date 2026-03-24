@@ -4,6 +4,7 @@ title: "Date.QuarterOfYear"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.QuarterOfYear
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Table.Sort"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Sort
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Combiner.CombineTextByPositions"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Combiner.CombineTextByPositions
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "DateTime.IsInCurrentMinute"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTime.IsInCurrentMinute
 
 ## Syntax

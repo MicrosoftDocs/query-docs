@@ -5,6 +5,7 @@ ms.date: 6/19/2025
 ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
+
 # Record functions
 
 These functions create and manipulate record values.

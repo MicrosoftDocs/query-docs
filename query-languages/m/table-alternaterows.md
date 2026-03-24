@@ -4,6 +4,7 @@ title: "Table.AlternateRows"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.AlternateRows
 
 ## Syntax

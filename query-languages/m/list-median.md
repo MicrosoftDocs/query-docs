@@ -4,6 +4,7 @@ title: "List.Median"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Median
 
 ## Syntax

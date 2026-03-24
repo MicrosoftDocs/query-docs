@@ -4,6 +4,7 @@ title: "Table.Transpose"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Transpose
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Value.Subtract"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Value.Subtract
 
 ## Syntax

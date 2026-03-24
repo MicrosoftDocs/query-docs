@@ -4,6 +4,7 @@ title: "Splitter.SplitTextByDelimiter"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Splitter.SplitTextByDelimiter
 
 ## Syntax

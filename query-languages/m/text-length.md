@@ -4,6 +4,7 @@ title: "Text.Length"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Length
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Occurrence.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Occurrence.Type
 
 ## Definition

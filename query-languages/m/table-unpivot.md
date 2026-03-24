@@ -4,6 +4,7 @@ title: "Table.Unpivot"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Unpivot
 
 ## Syntax

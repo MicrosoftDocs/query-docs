@@ -4,6 +4,7 @@ title: "Binary.ToText"
 ms.topic: reference
 ms.subservice: m-source
 ---
+
 # Binary.ToText
 
 ## Syntax

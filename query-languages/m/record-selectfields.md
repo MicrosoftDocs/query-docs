@@ -4,6 +4,7 @@ title: "Record.SelectFields"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Record.SelectFields
 
 ## Syntax

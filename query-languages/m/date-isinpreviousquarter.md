@@ -4,6 +4,7 @@ title: "Date.IsInPreviousQuarter"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.IsInPreviousQuarter
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Value.Alternates"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Value.Alternates
 
 ## Syntax

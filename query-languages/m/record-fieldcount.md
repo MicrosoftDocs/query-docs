@@ -4,6 +4,7 @@ title: "Record.FieldCount"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Record.FieldCount
 
 ## Syntax

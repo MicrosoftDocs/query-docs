@@ -4,6 +4,7 @@ title: "Number.Random"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.Random
 
 ## Syntax

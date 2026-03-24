@@ -4,6 +4,7 @@ title: "Table.CombineColumns"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.CombineColumns
 
 ## Syntax

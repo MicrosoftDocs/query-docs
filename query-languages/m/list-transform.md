@@ -4,6 +4,7 @@ title: "List.Transform"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Transform
 
 ## Syntax

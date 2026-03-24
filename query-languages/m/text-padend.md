@@ -4,6 +4,7 @@ title: "Text.PadEnd"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.PadEnd
 
 ## Syntax

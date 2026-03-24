@@ -4,6 +4,7 @@ title: "Type.ListItem"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.ListItem
 
 ## Syntax

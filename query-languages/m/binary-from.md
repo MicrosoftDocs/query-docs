@@ -4,6 +4,7 @@ title: "Binary.From"
 ms.topic: reference
 ms.subservice: m-source
 ---
+
 # Binary.From
 
 ## Syntax

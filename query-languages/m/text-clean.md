@@ -4,6 +4,7 @@ title: "Text.Clean"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Clean
 
 ## Syntax

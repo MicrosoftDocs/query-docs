@@ -4,6 +4,7 @@ title: "Table.ColumnCount"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ColumnCount
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Table.DemoteHeaders"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.DemoteHeaders
 
 ## Syntax

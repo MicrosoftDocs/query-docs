@@ -4,6 +4,7 @@ title: "Table.View"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.View
 
 ## Syntax

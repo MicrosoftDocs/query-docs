@@ -4,6 +4,7 @@ title: "Type.OpenRecord"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.OpenRecord
 
 ## Syntax

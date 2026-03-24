@@ -4,6 +4,7 @@ title: "Text.Remove"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Remove
 
 ## Syntax

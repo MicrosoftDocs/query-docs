@@ -4,6 +4,7 @@ title: "Number.IsNaN"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.IsNaN
 
 ## Syntax

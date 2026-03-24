@@ -4,6 +4,7 @@ title: "Table.PrefixColumns"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.PrefixColumns
 
 ## Syntax

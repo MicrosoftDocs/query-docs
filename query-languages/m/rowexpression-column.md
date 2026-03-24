@@ -4,6 +4,7 @@ title: "RowExpression.Column"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # RowExpression.Column
 
 ## Syntax

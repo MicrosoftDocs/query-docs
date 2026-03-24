@@ -4,6 +4,7 @@ title: "Function.ScalarVector"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Function.ScalarVector
 
 ## Syntax

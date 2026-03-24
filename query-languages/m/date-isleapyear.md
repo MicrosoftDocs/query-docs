@@ -4,6 +4,7 @@ title: "Date.IsLeapYear"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.IsLeapYear
 
 ## Syntax

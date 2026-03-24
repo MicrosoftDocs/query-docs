@@ -4,6 +4,7 @@ title: "Duration.ToText"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Duration.ToText
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "BinaryFormat.Group"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # BinaryFormat.Group
 
 ## Syntax
