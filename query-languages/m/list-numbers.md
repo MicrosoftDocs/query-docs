@@ -22,7 +22,7 @@ Returns a list of numbers given an initial value, count, and optional increment 
 
 * `start`: The initial value in the list.
 * `count`: The number of values to create.
-* `increment`: _[Optional]_ The value to increment by. If omitted values are incremented by 1.
+* `increment`: *[Optional]* The value to increment by. If omitted values are incremented by 1.
 
 ## Example 1
 
