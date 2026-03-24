@@ -17,7 +17,7 @@ Duration.Seconds(<b>duration</b> as nullable duration) as nullable number
 
 Returns the seconds portion of `duration`.
 
-## Example 1
+## Example
 
 Extract the seconds from a duration value.
 

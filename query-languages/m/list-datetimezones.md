@@ -21,7 +21,7 @@ List.DateTimeZones(
 
 Returns a list of `datetimezone` values of size `count`, starting at `start`. The given increment, `step`, is a `duration` value that is added to every value.
 
-## Example 1
+## Example
 
 Create a list of 10 values starting from 5 minutes before New Year's Day (#datetimezone(2011, 12, 31, 23, 55, 0, -8, 0)) incrementing by 1 minute (#duration(0, 0, 1, 0)).
 

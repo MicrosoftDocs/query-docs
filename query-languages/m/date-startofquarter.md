@@ -17,7 +17,7 @@ Date.StartOfQuarter(<b>dateTime</b> as any) as any
 
 Returns the start of the quarter that contains `dateTime`. `dateTime` must be a `date`, `datetime`, or `datetimezone` value.
 
-## Example 1
+## Example
 
 Find the start of the quarter for October 10th, 2011, 8:00AM.
 

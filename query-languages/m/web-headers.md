@@ -28,7 +28,7 @@ Returns the headers downloaded from `url` as a record. An optional record parame
 
 The HTTP request is made with the HEAD method. Outside of a custom data connector context, only a subset of response headers is available (for security reasons).
 
-## Example 1
+## Example
 
 Retrieve the HTTP headers for `"https://bing.com/search?q=Power+Query"` using the RelativePath and Query options.
 

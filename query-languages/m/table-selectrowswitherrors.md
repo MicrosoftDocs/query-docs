@@ -17,7 +17,7 @@ Table.SelectRowsWithErrors(<b>table</b> as table, optional <b>columns</b> as nul
 
 Returns a table with only those rows of the input table that contain an error in at least one of the cells. If a columns list is specified, then only the cells in the specified columns are inspected for errors.
 
-## Example 1
+## Example
 
 Select names of customers with errors in their rows.
 

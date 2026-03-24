@@ -17,7 +17,7 @@ Text.Upper(<b>text</b> as nullable text, optional <b>culture</b> as nullable tex
 
 Returns the result of converting all characters in `text` to uppercase. An optional `culture` may also be provided (for example, "en-US").
 
-## Example 1
+## Example
 
 Get the uppercase version of "aBcD".
 

@@ -17,7 +17,7 @@ List.Union(<b>lists</b> as list, optional <b>equationCriteria</b> as any) as lis
 
 Takes a list of lists `lists`, unions the items in the individual lists and returns them in the output list. As a result, the returned list contains all items in any input lists. This operation maintains traditional bag semantics, so duplicate values are matched as part of the Union. An optional equation criteria value, `equationCriteria`, can be specified to control equality testing.
 
-## Example 1
+## Example
 
 Create a union of the list {1..5}, {2..6}, {3..7}.
 

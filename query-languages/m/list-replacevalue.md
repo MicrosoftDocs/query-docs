@@ -22,7 +22,7 @@ List.ReplaceValue(
 
 Searches a list of values, `list`, for the value `oldValue` and replaces each occurrence with the replacement value `newValue`.
 
-## Example 1
+## Example
 
 Replace all the "a" values in the list {"a", "B", "a", "a"} with "A".
 

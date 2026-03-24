@@ -20,7 +20,7 @@ Compresses a binary value using the given compression type. The result of this c
 * [Compression.GZip](compression-type.md)
 * [Compression.Deflate](compression-type.md)
 
-## Example 1
+## Example
 
 Compress the binary value.
 

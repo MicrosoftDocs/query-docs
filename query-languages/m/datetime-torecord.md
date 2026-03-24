@@ -19,7 +19,7 @@ Returns a record containing the parts of the given datetime value, `dateTime`.
 
 * `dateTime`: A `datetime` value for from which the record of its parts is to be calculated.
 
-## Example 1
+## Example
 
 Convert the `#datetime(2011, 12, 31, 11, 56, 2)` value into a record containing Date and Time values.
 

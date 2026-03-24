@@ -21,7 +21,7 @@ List.Durations(
 
 Returns a list of `count` `duration` values, starting at `start` and incremented by the given `duration` `step`.
 
-## Example 1
+## Example
 
 Create a list of 5 values starting 1 hour and incrementing by an hour.
 

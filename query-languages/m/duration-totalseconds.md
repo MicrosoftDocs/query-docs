@@ -17,7 +17,7 @@ Duration.TotalSeconds(<b>duration</b> as nullable duration) as nullable number
 
 Returns the total seconds spanned by `duration`.
 
-## Example 1
+## Example
 
 Find the total seconds spanned by a duration value.
 

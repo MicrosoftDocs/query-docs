@@ -22,7 +22,7 @@ Table.Unpivot(
 
 Translates a set of columns in a table into attribute-value pairs, combined with the rest of the values in each row.
 
-## Example 1
+## Example
 
 Take the columns "a", "b", and "c" in the table `({[ key = "x", a = 1, b = null, c = 3 ], [ key = "y", a = 2, b = 4, c = null ]})` and unpivot them into attribute-value pairs.
 

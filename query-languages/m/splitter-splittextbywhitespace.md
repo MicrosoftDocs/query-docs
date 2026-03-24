@@ -17,7 +17,7 @@ Splitter.SplitTextByWhitespace(optional <b>quoteStyle</b> as nullable number) as
 
 Returns a function that splits text into a list of text at whitespace.
 
-## Example 1
+## Example
 
 Split the input by whitespace characters, treating quotes like any other character.
 

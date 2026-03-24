@@ -17,7 +17,7 @@ Combiner.CombineTextByPositions(<b>positions</b> as list, optional <b>template</
 
 Returns a function that combines a list of text values into a single text value using the specified output positions.
 
-## Example 1
+## Example
 
 Combine a list of text values by placing them in the output at the specified positions.
 

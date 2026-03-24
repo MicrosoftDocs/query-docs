@@ -21,7 +21,7 @@ Table.FromPartitions(
 
 Returns a table that is the result of combining a set of partitioned tables, `partitions`. `partitionColumn` is the name of the column to add. The type of the column defaults to `any`, but can be specified by `partitionColumnType`.
 
-## Example 1
+## Example
 
 Find item type from the list `{number}`.
 

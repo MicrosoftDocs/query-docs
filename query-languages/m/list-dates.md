@@ -21,7 +21,7 @@ List.Dates(
 
 Returns a list of `date` values of size `count`, starting at `start`. The given increment, `step`, is a `duration` value that is added to every value.
 
-## Example 1
+## Example
 
 Create a list of 5 values starting from New Year's Eve (#date(2011, 12, 31)) incrementing by 1 day (#duration(1, 0, 0, 0)).
 

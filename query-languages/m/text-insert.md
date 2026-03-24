@@ -21,7 +21,7 @@ Text.Insert(
 
 Returns the result of inserting text value `newText` into the text value `text` at position `offset`. Positions start at number 0.
 
-## Example 1
+## Example
 
 Insert "C" between "B" and "D" in "ABD".
 

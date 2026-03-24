@@ -17,7 +17,7 @@ List.Transform(<b>list</b> as list, <b>transform</b> as function) as list
 
 Returns a new list of values by applying the transform function `transform` to the list, `list`.
 
-## Example 1
+## Example
 
 Add 1 to each value in the list {1, 2}.
 

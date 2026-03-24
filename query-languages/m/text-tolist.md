@@ -17,7 +17,7 @@ Text.ToList(<b>text</b> as text) as list
 
 Returns a list of character values from the given text value `text`.
 
-## Example 1
+## Example
 
 Create a list of character values from the text "Hello World".
 

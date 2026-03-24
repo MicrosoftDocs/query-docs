@@ -22,7 +22,7 @@ Table.AddColumn(
 
 Adds a column named `newColumnName` to the table `table`. The values for the column are computed using the specified selection function `columnGenerator` with each row taken as an input.
 
-## Example 1
+## Example
 
 Add a number column named "TotalPrice" to the table, with each value being the sum of the [Price] and [Shipping] columns.
 

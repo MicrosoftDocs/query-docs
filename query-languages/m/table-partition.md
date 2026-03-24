@@ -27,7 +27,7 @@ Partitions the `table` into a list of `groups` number of tables, based on the va
 * `groups`: The number of tables the input table will be partitioned into.
 * `hash`: The function applied to obtain a hash value.  
   
-## Example 1
+## Example
 
 Partition the table `({[a = 2, b = 4], [a = 6, b = 8], [a = 2, b = 4], [a = 1, b = 4]})` into 2 tables on column [a], using the value of the columns as the hash function.
 

@@ -17,7 +17,7 @@ Value.Is(<b>value</b> as any, <b>type</b> as type) as logical
 
 Determines whether a value is compatible with the specified type. This is equivalent to the "is" operator in M, with the exception that it can accept identifier type references such as Number.Type.
 
-## Example 1
+## Example
 
 Compare two ways of determining if a number is compatible with type number.
 

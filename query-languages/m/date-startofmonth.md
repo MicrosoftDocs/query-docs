@@ -17,7 +17,7 @@ Date.StartOfMonth(<b>dateTime</b> as any) as any
 
 Returns the start of the month that contains `dateTime`. `dateTime` must be a `date` or `datetime` value.
 
-## Example 1
+## Example
 
 Find the start of the month for October 10th, 2011, 8:10:32AM.
 

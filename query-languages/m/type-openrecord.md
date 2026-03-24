@@ -17,7 +17,7 @@ Type.OpenRecord(<b>type</b> as type) as type
 
 Returns an opened version of the given `record` `type` (or the same type, if it is already opened).
 
-## Example 1
+## Example
 
 Create an opened version of `type [ A = number]`.
 

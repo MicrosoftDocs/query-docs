@@ -23,7 +23,7 @@ Buffers a table in memory, isolating it from external changes during evaluation.
 
 Using this function might or might not make your queries run faster. In some cases, it can make your queries run more slowly due to the added cost of reading all the data and storing it in memory, as well as the fact that buffering prevents downstream folding. If the data doesn't need to be buffered but you just want to prevent downstream folding, use [Table.StopFolding](/powerquery-m/table-stopfolding) instead.
 
-## Example 1
+## Example
 
 Load all the rows of a SQL table into memory, so that any downstream operations are no longer able to query the SQL server.
 

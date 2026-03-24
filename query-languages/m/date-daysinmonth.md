@@ -19,7 +19,7 @@ Returns the number of days in the month in the `date`, `datetime`, or `datetimez
 
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value for which the number of days in the month is returned.
 
-## Example 1
+## Example
 
 Number of days in the month December as represented by `#date(2011, 12, 01)`.
 

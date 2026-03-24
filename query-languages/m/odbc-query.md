@@ -26,7 +26,7 @@ Returns the result of running `query` with the connection string `connectionStri
 * `CommandTimeout`: A duration that controls how long the server-side query is allowed to run before it is canceled. The default value is ten minutes.
 * `SqlCompatibleWindowsAuth`: A logical (true/false) that determines whether to produce SQL Server-compatible connection string options for Windows authentication. The default value is true.
 
-## Example 1
+## Example
 
 Return the result of running a simple query against the provided connection string.
 
