@@ -5,6 +5,7 @@ ms.date: 7/16/2025
 ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
+
 # Type functions
 
 These functions create and manipulate type values.

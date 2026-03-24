@@ -4,6 +4,7 @@ title: "QuoteStyle.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # QuoteStyle.Type
 
 ## Definition

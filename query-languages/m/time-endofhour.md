@@ -4,6 +4,7 @@ title: "Time.EndOfHour"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Time.EndOfHour
 
 ## Syntax

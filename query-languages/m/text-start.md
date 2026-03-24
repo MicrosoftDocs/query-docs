@@ -4,6 +4,7 @@ title: "Text.Start"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Start
 
 ## Syntax

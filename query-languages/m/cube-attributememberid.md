@@ -4,6 +4,7 @@ title: "Cube.AttributeMemberId"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Cube.AttributeMemberId
 
 ## Syntax

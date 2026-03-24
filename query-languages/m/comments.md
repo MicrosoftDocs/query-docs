@@ -6,6 +6,7 @@ ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ms.subservice: m-background
 ---
+
 # Comments
 
 You can add comments to your code with single-line comments `//` or multi-line comments that begin with `/*` and end with `*/`.

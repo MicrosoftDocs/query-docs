@@ -4,6 +4,7 @@ title: "DateTime.IsInPreviousNMinutes"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTime.IsInPreviousNMinutes
 
 ## Syntax
@@ -17,9 +18,9 @@ DateTime.IsInPreviousNMinutes(<b>dateTime</b> as any, <b>minutes</b> as number) 
 Indicates whether the given datetime value `dateTime` occurs during the previous number of minutes, as determined by the current date and time on the system. Note that this function will return false when passed a value that occurs within the current minute.
 
 * `dateTime`: A `datetime`, or `datetimezone` value to be evaluated.
-* `minutes: The number of minutes.
+* `minutes`: The number of minutes.
 
-## Example 1
+## Example
 
 Determine if the minute before the current system time is in the previous two minutes.
 

@@ -6,6 +6,7 @@ ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ms.subservice: m-background
 ---
+
 # Custom numeric format strings
 
 You can create a custom numeric format string, which consists of one or more custom numeric specifiers, to define how to format numeric data. A custom numeric format string is any format string that isn't a [standard numeric format string](standard-numeric-format-strings.md).

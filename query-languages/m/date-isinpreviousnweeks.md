@@ -20,7 +20,7 @@ Indicates whether the given datetime value `dateTime` occurs during the previous
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
 * `weeks`: The number of weeks.
 
-## Example 1
+## Example
 
 Determine if the week before the current system time is in the previous two weeks.
 

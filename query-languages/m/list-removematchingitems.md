@@ -4,6 +4,7 @@ title: "List.RemoveMatchingItems"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.RemoveMatchingItems
 
 ## Syntax
@@ -20,7 +21,7 @@ List.RemoveMatchingItems(
 
 Removes all occurrences of the given values in `list2` from the list `list1`. If the values in `list2` don't exist in `list1`, the original list is returned. An optional equation criteria value, `equationCriteria`, can be specified to control equality testing.
 
-## Example 1
+## Example
 
 Create a list from {1, 2, 3, 4, 5, 5} without {1, 5}.
 

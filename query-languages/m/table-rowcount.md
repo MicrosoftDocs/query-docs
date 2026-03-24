@@ -4,6 +4,7 @@ title: "Table.RowCount"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.RowCount
 
 ## Syntax
@@ -16,7 +17,7 @@ Table.RowCount(<b>table</b> as table) as number
 
 Returns the number of rows in the `table`.
 
-## Example 1
+## Example
 
 Find the number of rows in the table.
 

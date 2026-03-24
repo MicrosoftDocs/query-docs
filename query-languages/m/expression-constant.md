@@ -4,6 +4,7 @@ title: "Expression.Constant"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Expression.Constant
 
 ## Syntax

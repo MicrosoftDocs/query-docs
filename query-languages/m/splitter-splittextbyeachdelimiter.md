@@ -4,6 +4,7 @@ title: "Splitter.SplitTextByEachDelimiter"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Splitter.SplitTextByEachDelimiter
 
 ## Syntax

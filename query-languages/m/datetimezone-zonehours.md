@@ -19,7 +19,7 @@ Returns the time zone hour component of a `datetimezone` value.
 
 * `dateTimeZone`: A `datetimezone` value from which the time zone hour component is extracted. If `dateTimeZone` is `null`, the function returns `null`.
 
-## Example 1
+## Example
 
 Get the time zone hours component of the specified `datetimezone` value.
 

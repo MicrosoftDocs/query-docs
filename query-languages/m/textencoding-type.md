@@ -4,6 +4,7 @@ title: "TextEncoding.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # TextEncoding.Type
 
 ## Definition

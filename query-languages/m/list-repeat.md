@@ -4,6 +4,7 @@ title: "List.Repeat"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Repeat
 
 ## Syntax
@@ -16,7 +17,7 @@ List.Repeat(<b>list</b> as list, <b>count</b> as number) as list
 
 Returns a list that is `count` repetitions of the original list, `list`.
 
-## Example 1
+## Example
 
 Create a list that has {1, 2} repeated 3 times.
 

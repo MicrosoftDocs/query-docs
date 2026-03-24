@@ -4,6 +4,7 @@ title: "Table.ExpandListColumn"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ExpandListColumn
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Record.AddField"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Record.AddField
 
 ## Syntax
@@ -21,7 +22,7 @@ Record.AddField(
 
 Adds a field to a record `record`, given the name of the field `fieldName` and the value `value`.
 
-## Example 1
+## Example
 
 Add the field Address to the record.
 

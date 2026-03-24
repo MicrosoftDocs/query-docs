@@ -5,6 +5,7 @@ ms.date: 10/24/2023
 ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
+
 # Function values
 
 These functions create and invoke other M functions.

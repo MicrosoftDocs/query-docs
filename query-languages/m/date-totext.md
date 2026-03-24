@@ -4,6 +4,7 @@ title: "Date.ToText"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.ToText
 
 ## Syntax

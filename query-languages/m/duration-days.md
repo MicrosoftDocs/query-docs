@@ -17,7 +17,7 @@ Duration.Days(<b>duration</b> as nullable duration) as nullable number
 
 Returns the days portion of `duration`.
 
-## Example 1
+## Example
 
 Extract the number of days between two dates.
 

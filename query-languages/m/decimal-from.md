@@ -4,6 +4,7 @@ title: "Decimal.From"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Decimal.From
 
 ## Syntax
@@ -16,7 +17,7 @@ Decimal.From(<b>value</b> as any, optional <b>culture</b> as nullable text) as n
 
 Returns a Decimal `number` value from the given `value`. If the given `value` is `null`, **Decimal.From** returns `null`. If the given `value` is `number` within the range of Decimal, `value` is returned, otherwise an error is returned. If `value` is of any other type, it will first be converted to a `number` using [Number.FromText](number-fromtext.md). An optional `culture` may also be provided (for example, "en-US").
 
-## Example 1
+## Example
 
 Get the Decimal `number` value of `"4.5"`.
 

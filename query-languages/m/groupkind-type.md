@@ -4,6 +4,7 @@ title: "GroupKind.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # GroupKind.Type
 
 ## Definition

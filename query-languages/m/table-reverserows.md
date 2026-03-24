@@ -17,7 +17,7 @@ Table.ReverseRows(<b>table</b> as table) as table
 
 Returns a table with the rows from the input `table` in reverse order.
 
-## Example 1
+## Example
 
 Reverse the rows in the table.
 

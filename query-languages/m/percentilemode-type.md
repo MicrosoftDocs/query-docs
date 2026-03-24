@@ -4,6 +4,7 @@ title: "PercentileMode.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # PercentileMode.Type
 
 ## Definition

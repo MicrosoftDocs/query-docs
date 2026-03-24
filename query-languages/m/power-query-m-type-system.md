@@ -105,7 +105,7 @@ As defined elsewhere, an M type is compatable with another M type if and only if
 
 Here is defined a compatibility relation that does not depend on conforming values, and is based on the properties of the types themselves. It is anticipated that this relation, as defined in this document, is completely equivalent to the original semantic definition.
 
-The "is compatible with" relation : &#8804; : *B* &#8592; *T* &#215; *T*<br/>
+The "is compatible with" relation: &#8804; : *B* &#8592; *T* &#215; *T*<br/>
 In the below section, a lowercase *t* will always represent an M Type, an element of *T*.
 
 A *&#934;* will represent a subset of *F*<sup>\*</sup>, or of *C*<sup>\*</sup>.

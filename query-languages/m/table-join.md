@@ -4,6 +4,7 @@ title: "Table.Join"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Join
 
 ## Syntax

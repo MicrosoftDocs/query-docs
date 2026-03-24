@@ -4,6 +4,7 @@ title: "DateTime.IsInPreviousNSeconds"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTime.IsInPreviousNSeconds
 
 ## Syntax
@@ -19,7 +20,7 @@ Indicates whether the given datetime value `dateTime` occurs during the previous
 * `dateTime`: A `datetime`>, or `datetimezone` value to be evaluated.
 * `seconds`: The number of seconds.
 
-## Example 1
+## Example
 
 Determine if the second before the current system time is in the previous two seconds.
 

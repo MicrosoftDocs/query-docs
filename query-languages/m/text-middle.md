@@ -4,6 +4,7 @@ title: "Text.Middle"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Middle
 
 ## Syntax

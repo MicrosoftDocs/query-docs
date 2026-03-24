@@ -4,6 +4,7 @@ title: "BinaryFormat.Length"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # BinaryFormat.Length
 
 ## Syntax

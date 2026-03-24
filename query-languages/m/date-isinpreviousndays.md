@@ -4,6 +4,7 @@ title: "Date.IsInPreviousNDays"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.IsInPreviousNDays
 
 ## Syntax
@@ -17,9 +18,9 @@ Date.IsInPreviousNDays(<b>dateTime</b> as any, <b>days</b> as number) as nullabl
 Indicates whether the given datetime value `dateTime` occurs during the previous number of days, as determined by the current date and time on the system. Note that this function will return false when passed a value that occurs within the current day.
 
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
-* `days: The number of days.
+* `days`: The number of days.
 
-## Example 1
+## Example
 
 Determine if the day before the current system time is in the previous two days.
 

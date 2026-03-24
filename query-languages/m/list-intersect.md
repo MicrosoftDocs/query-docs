@@ -17,7 +17,7 @@ List.Intersect(<b>lists</b> as list, optional <b>equationCriteria</b> as any) as
 
 Returns the intersection of the list values found in the input list `lists`. An optional parameter, `equationCriteria`, can be specified.
 
-## Example 1
+## Example
 
 Find the intersection of the lists {1..5}, {2..6}, {3..7}.
 
