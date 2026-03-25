@@ -92,10 +92,10 @@ The following are some List examples.
 |---------|--------|
 |{123, true, "A"}|List containing a number, a logical, and text.|
 |{1, 2, 3}|List of numbers|
-|{<br />    {1, 2, 3},<br />    {4, 5, 6}<br />}|List of List of numbers|
-|{<br />    [CustomerID = 1, Name = "Bob", Phone = "123-4567"],<br />    [CustomerID = 2, Name = "Jim", Phone = "987-6543"]<br />}|List of Records|
+|{<br />&nbsp;&nbsp;&nbsp;&nbsp;{1, 2, 3},<br />&nbsp;&nbsp;&nbsp;&nbsp;{4, 5, 6}<br />}|List of List of numbers|
+|{<br />&nbsp;&nbsp;&nbsp;&nbsp;[CustomerID = 1, Name = "Bob", Phone = "123-4567"],<br />&nbsp;&nbsp;&nbsp;&nbsp;[CustomerID = 2, Name = "Jim", Phone = "987-6543"]<br />}|List of Records|
 |{123, true, "A"}{0}|Get the value of the first item in a List. This expression returns the value 123.|
-|{<br />    {1, 2, 3},<br />    {4, 5, 6}<br />}{0}{1}|Get the value of the second item from the first List element. This expression returns the value 2.|
+|{<br />&nbsp;&nbsp;&nbsp;&nbsp;{1, 2, 3},<br />&nbsp;&nbsp;&nbsp;&nbsp;{4, 5, 6}<br />}{0}{1}|Get the value of the second item from the first List element. This expression returns the value 2.|
 
 ### Record
 

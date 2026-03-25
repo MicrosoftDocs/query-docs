@@ -15,14 +15,14 @@ ms.subservice: m-specification
 A let expression can be used to capture a value from an intermediate calculation in a variable.
 
 _let-expression:_<br/>
-      `let` _variable-list_ `in` _expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`let` _variable-list_ `in` _expression<br/>
 variable-list:<br/>
-      variable<br/>
-      variable_ `,` _variable-list<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable_ `,` _variable-list<br/> 
 variable:<br/>
-      variable-name_ `=` _expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable-name_ `=` _expression<br/>
 variable-name:<br/>
-      identifier_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier_
 
 The following example shows intermediate results being calculated and stored in variables `x`, `y`, and `z` which are then used in a subsequent calculation `x + y + z`:
 

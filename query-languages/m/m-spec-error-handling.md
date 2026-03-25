@@ -22,7 +22,7 @@ Errors can be raised from within an expression, and can be handled from within a
 The syntax for raising an error is as follows:
 
 _error-raising-expression:_<br/>
-      `error`  _expression_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`error`  _expression_
 
 Text values can be used as shorthand for error values. For example:
 
@@ -60,21 +60,21 @@ Raising an error will cause the current expression evaluation to stop, and the e
 An _error-handling-expression_ (informally known as a "try expression") is used to handle an error:
 
 _error-handling-expression:_<br/>
-      `try` _protected-expression 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`try` _protected-expression 
 error-handler<sub>opt</sub><br/>
 protected-expression:<br/>
-      expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
 _error-handler:_<br/>
-      otherwise-clause<br/>
-      catch-clause<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;otherwise-clause<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;catch-clause<br/>
 otherwise-clause:_<br/>
-      `otherwise` _default-expression_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`otherwise` _default-expression_<br/>
 _default-expression_:<br/>
-      _expression_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_expression_<br/>
 _catch-clause:_<br/>
-      `catch` _catch-function_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`catch` _catch-function_<br/>
 _catch-function:_<br/>
-      `(`_parameter-name_<sub>opt</sub>`)` `=>` _function-body_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(`_parameter-name_<sub>opt</sub>`)` `=>` _function-body_<br/>
 
 The following holds when evaluating an _error-handling-expression_ without an _error-handler_:
 
@@ -219,7 +219,7 @@ While an expression is being developed, an author may want to leave out the impl
 The ellipsis symbol (`...`) can be used as a shortcut for `error`.
 
 _not-implemented-expression:_<br/>
-      `...`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`...`
 
 For example, the following is equivalent to the previous example:
 

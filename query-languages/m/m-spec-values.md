@@ -14,8 +14,8 @@ A value is data produced by evaluating an expression. This section describes the
 | Kind | Literal |
 | ---- | ------- |
 | _Null_ |  `null` |
-| _Logical_ | `true`    `false` |
-| _Number_ | `0`    `1`    `-1`    `1.5`    `2.3e-5` |
+| _Logical_ | `true`&nbsp;&nbsp;&nbsp;&nbsp;`false` |
+| _Number_ | `0`&nbsp;&nbsp;&nbsp;&nbsp;`1`&nbsp;&nbsp;&nbsp;&nbsp;`-1`&nbsp;&nbsp;&nbsp;&nbsp;`1.5`&nbsp;&nbsp;&nbsp;&nbsp;`2.3e-5` |
 | _Time_ | `#time(09,15,00)` |
 | _Date_ | `#date(2013,02,26)` |
 | _DateTime_ | `#datetime(2013,02,26, 09,15,00)` |
@@ -27,7 +27,7 @@ A value is data produced by evaluating an expression. This section describes the
 | _Record_ | `[ A = 1, B = 2 ]` |
 | _Table_ | `#table({"X","Y"},{{0,1},{1,0}})` |
 | _Function_ | `(x) => x + 1` |
-| _Type_ | `type { number }`    `type table [ A = any, B = text ]` |
+| _Type_ | `type { number }`&nbsp;&nbsp;&nbsp;&nbsp;`type table [ A = any, B = text ]` |
 
 The following sections cover each value kind in detail. Types and type ascription are defined formally in [Types](m-spec-types.md). Function values are defined in [Functions](m-spec-functions.md). The following sections list the operators defined for each value kind and give examples. The full definition of operator semantics follows in [Operators](m-spec-operators.md).
 
@@ -344,17 +344,17 @@ The native type of duration values is the intrinsic type `duration`.
 A _text_ value represents a sequence of Unicode characters. Text values have a literal form conformant to the following grammar:
 
 _text-literal:<br/> 
-      `"` text-literal-characters<sub>opt</sub>  `"`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"` text-literal-characters<sub>opt</sub>  `"`<br/>
 _text-literal-characters:<br/>
-      text-literal-character text-literal-characters<sub>opt</sub><br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal-character text-literal-characters<sub>opt</sub><br/> 
 text-literal-character:<br/>
-      single-text-character<br/>
-      character-escape-sequence<br/>
-      double-quote-escape-sequence<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-text-character<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;character-escape-sequence<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;double-quote-escape-sequence<br/>
 single-text-character:_<br/>
-      Any character except `"` (`U+0022`) or `#` (`U+0023`) followed by `(` (`U+0028`)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any character except `"` (`U+0022`) or `#` (`U+0023`) followed by `(` (`U+0028`)<br/>
 _double-quote-escape-sequence:_<br/>
-      `""` (`U+0022`, `U+0022`)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`""` (`U+0022`, `U+0022`)
 
 The following is an example of a _text_ value:
 
@@ -408,13 +408,13 @@ The native type of binary values is the intrinsic type _binary_.
 A _list value_ is a value which produces a sequence of values when enumerated. A value produced by a list can contain any kind of value, including a list. Lists can be constructed using the initialization syntax, as follows:
 
 _list-expression:_<br/>
-      { _item-list<sub>opt</sub>_  }<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ _item-list<sub>opt</sub>_  }<br/>
 _item-list:<br/>
-      item<br/>
-      item_ `,`  _item-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item_ `,`  _item-list<br/>
 item:<br/>
-      expression<br/>
-      expression_  `..` _expression_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression_  `..` _expression_
 
 The following is an example  of a _list-expression_ that defines a list with three text values: `"A"`, `"B"`, and `"C"`.
 
@@ -472,14 +472,14 @@ The native type of list values is the intrinsic type `list`, which specifies an 
 A _record value_ is an ordered sequence of fields. A _field_ consists of a _field name_, which is a text value that uniquely identifies the field within the record, and a _field value_. The field value can be any kind of value, including record. Records can be constructed using initialization syntax, as follows:
 
 _record-expression:_<br/>
-      `[`  _field-list<sub>opt</sub>_  `]`<br/> _field-list:<br/>
-      field<br/>
-      field_  `,`  _field-list<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`  _field-list<sub>opt</sub>_  `]`<br/> _field-list:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field_  `,`  _field-list<br/> 
 field:<br/>
-      field-name_  `=`  _expression<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-name_  `=`  _expression<br/> 
 field-name:<br/>
-      generalized-identifier<br/>
-      quoted-identifier_<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quoted-identifier_<br/>
 
 The following example constructs a record with a field named `x` with value `1`, and a field named `y` with value `2`.
 

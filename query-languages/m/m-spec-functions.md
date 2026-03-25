@@ -17,33 +17,33 @@ A _function_ is a value that represents a mapping from a set of argument values 
 Functions are written using a _function-expression_:
 
 _function-expression:_<br/>
-      `(`  _parameter-list<sub>opt</sub>_  `)`  _return-type<sub>opt</sub>_  `=>`  _function-body<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(`  _parameter-list<sub>opt</sub>_  `)`  _return-type<sub>opt</sub>_  `=>`  _function-body<br/>
 function-body:<br/>
-      expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
 parameter-list:<br/>
-      fixed-parameter-list<br/>
-      fixed-parameter-list_  `,`  _optional-parameter-list<br/>
-      optional-parameter-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fixed-parameter-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fixed-parameter-list_  `,`  _optional-parameter-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter-list<br/>
 fixed-parameter-list:<br/>
-      parameter<br/>
-      parameter_  `,`  _fixed-parameter-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter_  `,`  _fixed-parameter-list<br/>
 parameter:<br/>
-      parameter-name parameter-type<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-name parameter-type<sub>opt</sub><br/>
 parameter-name:<br/>
-      identifier<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier<br/>
 parameter-type:<br/>
-      primitive-or-nullable-primitive-type-assertion<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primitive-or-nullable-primitive-type-assertion<br/>
 return-type:<br/>
-      primitive-or-nullable-primitive-type-assertion<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primitive-or-nullable-primitive-type-assertion<br/>
 primitive-or-nullable-primitive-type-assertion:_<br/>
-      `as`  _primitive-or-nullable-primitive-type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`as`  _primitive-or-nullable-primitive-type<br/>
 optional-parameter-list:<br/>
-      optional-parameter<br/>
-      optional-parameter_  `,`  _optional-parameter-list<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter_  `,`  _optional-parameter-list<br/>
 optional-parameter:_<br/>
-      `optional`  _parameter_<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional`  _parameter_<br />
 _primitive-or-nullable-primitive-type:_<br/>
-      `nullable`_<sub>opt</sub>  primitive-type_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`_<sub>opt</sub>  primitive-type_
 
 The following is an example of a function that requires exactly two values `x` and `y`, and produces the result of applying the `+` operator to those values. The `x` and `y` are _parameters_ that are part of the _parameter-list_ of the function, and the `x + y` is the _function-body_:
 
@@ -71,9 +71,9 @@ The native type of function values is a custom function type (derived from the i
 The _function-body_ of a function is executed by _invoking_ the function value using an _invoke-expression_. Invoking a function value means the _function-body_ of the function value is evaluated and a value is returned or an error is raised.
 
 _invoke-expression:<br/>
-      primary-expression_  `(`  _argument-list<sub>opt</sub>_  `)`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression_  `(`  _argument-list<sub>opt</sub>_  `)`<br/>
 _argument-list:<br/>
-      expression-list_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression-list_
 
 Each time a function value is invoked, a set of values are specified as an _argument-list_, called the _arguments_ to the function.
 
@@ -216,9 +216,9 @@ When `MyFunction` is invoked, it accesses the value of the variable `C`, even th
 The _each-expression_ is a syntactic shorthand for declaring untyped functions taking a single parameter named `_` (underscore).
 
 _each-expression:_<br/>
-      `each` _each-expression-body<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`each` _each-expression-body<br/>
 each-expression-body:<br/>
-      function-body_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function-body_
 
 Simplified declarations are commonly used to improve the readability of higher-order function invocation.
 

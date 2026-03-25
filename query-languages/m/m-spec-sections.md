@@ -12,17 +12,17 @@ ms.subservice: m-specification
 A _section-document_ is an M program that consists of multiple named expressions.
 
 _section-document:<br/>
-      section<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;section<br/>
 section:<br/>
-      literal-attributes<sub>opt</sub>_  `section`  _section-name_  `;`  _section-members<sub>opt</sub><br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;literal-attributes<sub>opt</sub>_  `section`  _section-name_  `;`  _section-members<sub>opt</sub><br/> 
 section-name:<br/>
-      identifier<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier<br/>
 section-members:<br/>
-      section-member section-members<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;section-member section-members<sub>opt</sub><br/>
 section-member:<br/>
-      literal-attributes<sub>opt</sub>_  `shared`_<sub>opt</sub> section-member-name_  `=`  _expression_  `;`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;literal-attributes<sub>opt</sub>_  `shared`_<sub>opt</sub> section-member-name_  `=`  _expression_  `;`<br/>
 _section-member-name:<br/>
-      identifier_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier_
 
 In M, a section is an organizational concept that allows related expressions to be named and grouped within a document. Each section has a _section-name_, which identifies the section and qualifies the names of the _section-members_ declared within the section. A _section-member_ consists of a _member-name_ and an _expression_. Section member expressions may refer to other section members within the same section directly by member name.
 
@@ -39,7 +39,7 @@ C = A + B;                      //3
 Section member expressions may refer to section members located in other sections by means of a _section-access-expression_, which qualifies a section member name with the name of the containing section.
 
 _section-access-expression:<br/>
-      identifier_ `!` _identifier_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier_ `!` _identifier_
 
 The following example shows a set of two documents containing sections that are mutually referential:
 

@@ -13,13 +13,13 @@ ms.subservice: m-specification
 The _if-expression_ selects from two expressions based on the value of a logical input value and evaluates only the selected expression.
 
 _if-expression:_<br/>
-       `if`  _if-condition_  `then`  _true-expression_  `else`  _false-expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `if`  _if-condition_  `then`  _true-expression_  `else`  _false-expression<br/>
 if-condition:<br/>
-      expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
 true-expression:<br/>
-      expression<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
 false-expression:<br/>
-      expression_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression_
 
 The following are examples of _if-expressions_:
 
