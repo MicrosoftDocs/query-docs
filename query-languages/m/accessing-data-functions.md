@@ -45,7 +45,7 @@ These functions access data and return table values. Most of these functions ret
 |[`Cube.PropertyKey`](cube-propertykey.md) | Returns the key of a property.|
 |[`Cube.ReplaceDimensions`](cube-replacedimensions.md)|Replaces the set of dimensions returned by [`Cube.Dimensions`](cube-dimensions.md).|
 |[`Cube.Transform`](cube-transform.md)|Applies a list of cube functions.|
-|[DB2.Database](db2-database.md)|Returns a table of SQL tables and views available in a Db2 database.|
+|[`DB2.Database`](db2-database.md)|Returns a table of SQL tables and views available in a Db2 database.|
 |[`DeltaLake.Metadata`](deltalake-metadata.md)|Given a Delta Lake table, returns the log entries for that table.|
 |[`DeltaLake.Table`](deltalake-table.md)|Returns the contents of the Delta Lake table.|
 |[`Essbase.Cubes`](essbase-cubes.md)|Returns the cubes in an Essbase instance grouped by Essbase server.|
