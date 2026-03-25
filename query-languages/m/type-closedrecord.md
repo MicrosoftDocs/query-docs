@@ -19,7 +19,7 @@ Returns a closed version of the given `record` `type` (or the same type, if it i
 
 ## Example
 
-Create a closed version of `type [ A = number,…]`.
+Create a closed version of `type [ A = number,...]`.
 
 **Usage**
 

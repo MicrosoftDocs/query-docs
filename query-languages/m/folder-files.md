@@ -34,4 +34,4 @@ Folder.Files("C:\test-examples\example-folder")
 
 **Output**
 
-A table containing the files, their properties, and a link to their content.
+`A table containing the files, their properties, and a link to their content.`
