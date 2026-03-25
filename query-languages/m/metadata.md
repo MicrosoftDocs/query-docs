@@ -9,7 +9,7 @@ ms.subservice: m-background
 
 # Metadata
 
-**Metadata** is information about a value that is associated with a value. **Metadata** is represented as a record value, called a metadata record. The fields of a **metadata record** can be used to store the metadata for a value. Every value has a metadata record. If the value of the metadata record hasn't been specified, then the metadata record is empty (has no fields). Associating a metadata record with a value doesn't change the value’s behavior in evaluations except for those that explicitly inspect metadata records.
+**Metadata** is information about a value that is associated with a value. **Metadata** is represented as a record value, called a metadata record. The fields of a **metadata record** can be used to store the metadata for a value. Every value has a metadata record. If the value of the metadata record hasn't been specified, then the metadata record is empty (has no fields). Associating a metadata record with a value doesn't change the value's behavior in evaluations except for those that explicitly inspect metadata records.
 
 ## Metadata records
 
@@ -29,7 +29,7 @@ A metadata record can be accessed for a value using the [Value.Metadata](value-m
 ]  
 ```
 
-Metadata records aren't preserved when a value is used with an operator or function that constructs a new value. For example, if two text values are concatenated using the &amp; operator, the metadata of the resulting text value is an empty record [].
+Metadata records aren't preserved when a value is used with an operator or function that constructs a new value. For example, if two text values are concatenated using the & operator, the metadata of the resulting text value is an empty record [].
 
 The standard library functions [Value.RemoveMetadata](value-removemetadata.md) and [Value.ReplaceMetadata](value-replacemetadata.md) can be used to remove all metadata from a value and to replace a value's metadata.
 

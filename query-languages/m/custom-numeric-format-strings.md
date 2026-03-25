@@ -170,11 +170,11 @@ in
 
 The "," character serves as both a group separator and a number scaling specifier.
 
-- Group separator: If one or more commas are specified between two digit placeholders (0 or #) that format the integral digits of a number, a group separator character is inserted between each number group in the integral part of the output.
+* Group separator: If one or more commas are specified between two digit placeholders (0 or #) that format the integral digits of a number, a group separator character is inserted between each number group in the integral part of the output.
 
   The culture determines the character used as the number group separator and the size of each number group. For example, if the string "#,#" and the invariant culture are used to format the number 1000, the output is "1,000".
 
-- Number scaling specifier: If one or more commas are specified immediately to the left of the explicit or implicit decimal point, the number to be formatted is divided by 1000 for each comma. For example, if the string "0,," is used to format the number 100 million, the output is "100".
+* Number scaling specifier: If one or more commas are specified immediately to the left of the explicit or implicit decimal point, the number to be formatted is divided by 1000 for each comma. For example, if the string "0,," is used to format the number 100 million, the output is "100".
 
 You can use group separator and number scaling specifiers in the same format string. For example, if the string "#,0,," and the invariant culture are used to format the number one billion, the output is "1,000".
 
@@ -286,9 +286,9 @@ The "#", "0", ".", ",", "%", and "‰" symbols in a format string are interprete
 
 To prevent a character from being interpreted as a format specifier, you can:
 
-- Precede it with a backslash.
-- Surround it with a single quote.
-- Surround it with two double quotes.
+* Precede it with a backslash.
+* Surround it with a single quote.
+* Surround it with two double quotes.
 
 Each of these characters acts as escape characters. The escape character signifies that the following character is a character literal that should be included in the result string unchanged.
 
@@ -367,16 +367,16 @@ in
 
 Format specifiers that appear in a custom numeric format string are always interpreted as formatting characters and never as literal characters. This includes the following characters:
 
-- [0](#Specifier0)
-- [\#](#SpecifierD)
-- [%](#SpecifierPct)
-- [‰](#SpecifierPerMille)
-- '
-- [\\](#SpecifierEscape)
-- [\""](#SpecifierEscape)
-- [.](#SpecifierPt)
-- [,](#SpecifierTh)
-- [E or e](#SpecifierExponent), depending on its position in the format string.
+* [0](#Specifier0)
+* [\#](#SpecifierD)
+* [%](#SpecifierPct)
+* [‰](#SpecifierPerMille)
+* '
+* [\\](#SpecifierEscape)
+* [\""](#SpecifierEscape)
+* [.](#SpecifierPt)
+* [,](#SpecifierTh)
+* [E or e](#SpecifierExponent), depending on its position in the format string.
 
 All other characters are always interpreted as character literals and, in a formatting operation, are included in the result string unchanged. In a parsing operation, they must match the characters in the input string exactly; the comparison is case-sensitive.
 
@@ -392,9 +392,9 @@ in
 
 There are two ways to indicate that characters are to be interpreted as literal characters and not as formatting characters, so that they can be included in a result string or successfully parsed in an input string:
 
-- By escaping a formatting character. For more information, go to [Escape characters](#SpecifierEscape).
+* By escaping a formatting character. For more information, go to [Escape characters](#SpecifierEscape).
 
-- By enclosing the entire literal string in quotation apostrophes.
+* By enclosing the entire literal string in quotation apostrophes.
 
 The following example uses both approaches to include reserved characters in a custom numeric format string.
 
@@ -465,7 +465,7 @@ in
 
 ## Related content
 
-- [How culture affects text formatting](how-culture-affects-text-formatting.md)
-- [Number type conversion](type-conversion.md#number)
-- [Data Types in Power Query](/power-query/data-types)
-- [Standard Numeric Format Strings](standard-numeric-format-strings.md)
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)
+* [Number type conversion](type-conversion.md#number)
+* [Data Types in Power Query](/power-query/data-types)
+* [Standard Numeric Format Strings](standard-numeric-format-strings.md)

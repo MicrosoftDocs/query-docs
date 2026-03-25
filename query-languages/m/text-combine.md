@@ -61,9 +61,9 @@ Text.Combine({"Seattle", null, "WA"}, ", ")
 
 ## Example 4
 
-**Usage**
+Combine the first name, middle initial (if present), and last name into the individual's full name.
 
-Combine the first name, middle initial (if present), and last name into the individual’s full name.
+**Usage**
 
 ```powerquery-m
 let
