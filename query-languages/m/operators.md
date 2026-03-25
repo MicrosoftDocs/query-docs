@@ -20,7 +20,7 @@ The meaning of an operator can vary depending on the type of operand values. The
 |`1 + 2`|Numeric addition: `3`|  
 |`#time(12,23,0) + #duration(0,0,2,0)`|Time arithmetic: `#time(12,25,0)`|  
   
-### Combination operator (&amp;)  
+### Combination operator (&)  
   
 |Function|Equals|  
 |------------|----------|  
