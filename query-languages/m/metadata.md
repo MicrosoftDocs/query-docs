@@ -9,7 +9,7 @@ ms.subservice: m-background
 
 # Metadata
 
-**Metadata** is information about a value that is associated with a value. **Metadata** is represented as a record value, called a metadata record. The fields of a **metadata record** can be used to store the metadata for a value. Every value has a metadata record. If the value of the metadata record hasn't been specified, then the metadata record is empty (has no fields). Associating a metadata record with a value doesn't change the value’s behavior in evaluations except for those that explicitly inspect metadata records.
+**Metadata** is information about a value that is associated with a value. **Metadata** is represented as a record value, called a metadata record. The fields of a **metadata record** can be used to store the metadata for a value. Every value has a metadata record. If the value of the metadata record hasn't been specified, then the metadata record is empty (has no fields). Associating a metadata record with a value doesn't change the value's behavior in evaluations except for those that explicitly inspect metadata records.
 
 ## Metadata records
 
