@@ -54,7 +54,7 @@ Date.From(43910)
 
 **Output**
 
-#date(2020, 3, 20)
+`#date(2020, 3, 20)`
 
 ## Example 3
 

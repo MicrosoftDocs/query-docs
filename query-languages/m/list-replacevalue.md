@@ -34,4 +34,4 @@ List.ReplaceValue({"a", "B", "a", "a"}, "a", "A", Replacer.ReplaceText)
 
 **Output**
 
-{"A", "B", "A", "A"}
+`{"A", "B", "A", "A"}`

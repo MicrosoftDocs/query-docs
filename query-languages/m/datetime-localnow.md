@@ -31,7 +31,7 @@ DateTime.LocalNow()
 
 **Output**
 
-The current local date and time.
+`The current local date and time.`
 
 ## Example 2
 
@@ -45,7 +45,7 @@ DateTime.LocalNow()
 
 **Output**
 
-The current online (UTC) date and time.
+`The current online (UTC) date and time.`
 
 ## Related content
 

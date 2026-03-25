@@ -29,7 +29,7 @@ A metadata record can be accessed for a value using the [Value.Metadata](value-m
 ]  
 ```
 
-Metadata records aren't preserved when a value is used with an operator or function that constructs a new value. For example, if two text values are concatenated using the &amp; operator, the metadata of the resulting text value is an empty record [].
+Metadata records aren't preserved when a value is used with an operator or function that constructs a new value. For example, if two text values are concatenated using the & operator, the metadata of the resulting text value is an empty record [].
 
 The standard library functions [Value.RemoveMetadata](value-removemetadata.md) and [Value.ReplaceMetadata](value-replacemetadata.md) can be used to remove all metadata from a value and to replace a value's metadata.
 
