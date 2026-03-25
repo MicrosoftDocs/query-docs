@@ -4,6 +4,7 @@ title: "Table.TransformColumns"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.TransformColumns
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Table.NestedJoin"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.NestedJoin
 
 ## Syntax
@@ -28,7 +29,7 @@ The optional `joinKind` specifies the kind of join to perform. By default, a lef
 
 An optional set of `keyEqualityComparers` may be included to specify how to compare the key columns. This `keyEqualityComparers` feature is currently intended for internal use only.
 
-## Example 1
+## Example
 
 Join two tables using a single key column.
 

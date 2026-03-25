@@ -4,6 +4,7 @@ title: "Logical.ToText"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Logical.ToText
 
 ## Syntax
@@ -16,7 +17,7 @@ Logical.ToText(<b>logicalValue</b> as nullable logical) as nullable text
 
 Creates a text value from the logical value `logicalValue`, either `true` or `false`. If `logicalValue` is not a logical value, an error is raised.
 
-## Example 1
+## Example
 
 Create a text value from the logical `true`.
 

@@ -4,6 +4,7 @@ title: "Table.Min"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Min
 
 ## Syntax

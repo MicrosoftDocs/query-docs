@@ -4,6 +4,7 @@ title: "Duration.ToText"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Duration.ToText
 
 ## Syntax
@@ -19,7 +20,7 @@ Returns a textual representation in the form "day.hour:mins:sec" of the given du
 * `duration`: A `duration` from which the textual representation is calculated.
 * `format`: *[Optional]* Deprecated, will raise an error if not null.
 
-## Example 1
+## Example
 
 Convert `#duration(2, 5, 55, 20)` into a text value.
 

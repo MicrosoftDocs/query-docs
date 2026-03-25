@@ -21,7 +21,7 @@ List.Times(
 
 Returns a list of `time` values of size `count`, starting at `start`. The given increment, `step`, is a `duration` value that is added to every value.
 
-## Example 1
+## Example
 
 Create a list of 4 values starting from noon (#time(12, 0, 0)) incrementing by one hour (#duration(0, 1, 0, 0)).
 

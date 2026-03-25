@@ -4,6 +4,7 @@ title: "Record.HasFields"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Record.HasFields
 
 ## Syntax

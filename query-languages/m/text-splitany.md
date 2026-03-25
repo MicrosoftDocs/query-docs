@@ -4,6 +4,7 @@ title: "Text.SplitAny"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.SplitAny
 
 ## Syntax
@@ -19,7 +20,7 @@ Returns a list of text values resulting from the splitting of a text value based
 * `text`: The text value to split.
 * `separator`: The delimiter characters used to split the text.
 
-## Example 1
+## Example
 
 Create a list from the given text using the specified delimiter characters.
 

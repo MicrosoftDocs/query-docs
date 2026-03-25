@@ -4,6 +4,7 @@ title: "Number.Sqrt"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.Sqrt
 
 ## Syntax

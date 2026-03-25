@@ -4,6 +4,7 @@ title: "Text.EndsWith"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.EndsWith
 
 ## Syntax

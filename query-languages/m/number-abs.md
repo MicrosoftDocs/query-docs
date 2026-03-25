@@ -4,6 +4,7 @@ title: "Number.Abs"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.Abs
 
 ## Syntax
@@ -18,7 +19,7 @@ Returns the absolute value of `number`. If `number` is null, **Number.Abs** retu
 
 * `number`: A `number` for which the absolute value is to be calculated.
 
-## Example 1
+## Example
 
 Absolute value of -3.
 

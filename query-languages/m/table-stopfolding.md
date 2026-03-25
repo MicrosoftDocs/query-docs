@@ -17,7 +17,7 @@ Table.StopFolding(<b>table</b> as table) as table
 
 Prevents any downstream operations from being run against the original source of the data in `table`.
 
-## Example 1
+## Example
 
 Fetches data from a SQL table in a way that prevents any downstream operations from running as a query on the SQL server.
 

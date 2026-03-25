@@ -4,6 +4,7 @@ title: "Informix.Database"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Informix.Database
 
 ## Syntax

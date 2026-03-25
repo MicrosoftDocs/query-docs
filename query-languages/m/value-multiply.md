@@ -4,6 +4,7 @@ title: "Value.Multiply"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Value.Multiply
 
 ## Syntax

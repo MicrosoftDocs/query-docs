@@ -5,6 +5,7 @@ ms.date: 11/14/2022
 ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
+
 # Time functions
 
 These functions create and manipulate time values.

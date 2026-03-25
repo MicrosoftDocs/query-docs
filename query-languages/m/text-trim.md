@@ -4,6 +4,7 @@ title: "Text.Trim"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Trim
 
 ## Syntax

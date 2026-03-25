@@ -4,6 +4,7 @@ title: "Date.QuarterOfYear"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.QuarterOfYear
 
 ## Syntax
@@ -16,7 +17,7 @@ Date.QuarterOfYear(<b>dateTime</b> as any) as nullable number
 
 Returns a number from 1 to 4 indicating which quarter of the year the date `dateTime` falls in. `dateTime` can be a `date`, `datetime`, or `datetimezone` value.
 
-## Example 1
+## Example
 
 Find which quarter of the year the date #date(2011, 12, 31) falls in.
 

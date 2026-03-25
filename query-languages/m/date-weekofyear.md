@@ -4,6 +4,7 @@ title: "Date.WeekOfYear"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.WeekOfYear
 
 ## Syntax

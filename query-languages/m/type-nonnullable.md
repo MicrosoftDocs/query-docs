@@ -4,6 +4,7 @@ title: "Type.NonNullable"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.NonNullable
 
 ## Syntax
@@ -16,7 +17,7 @@ Type.NonNullable(<b>type</b> as type) as type
 
 Returns the non `nullable` type from the `type`.
 
-## Example 1
+## Example
 
 Return the non nullable type of `type nullable number`.
 

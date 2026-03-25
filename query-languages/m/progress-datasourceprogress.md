@@ -4,6 +4,7 @@ title: "Progress.DataSourceProgress"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Progress.DataSourceProgress
 
 ## Syntax

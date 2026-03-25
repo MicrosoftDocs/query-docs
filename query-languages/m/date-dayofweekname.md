@@ -4,6 +4,7 @@ title: "Date.DayOfWeekName"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.DayOfWeekName
 
 ## Syntax
@@ -17,7 +18,7 @@ Date.DayOfWeekName(<b>date</b> as any, optional <b>culture</b> as nullable text)
 
 Returns the day of the week name for the provided `date`. An optional `culture` may also be provided (for example, "en-US").
 
-## Example 1
+## Example
 
 Get the day of the week name.
 

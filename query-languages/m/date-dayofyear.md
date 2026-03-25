@@ -4,6 +4,7 @@ title: "Date.DayOfYear"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.DayOfYear
 
 ## Syntax
@@ -16,7 +17,7 @@ Date.DayOfYear(<b>dateTime</b> as any) as nullable number
 
 Returns a number representing the day of the year in the provided `date`, `datetime`, or `datetimezone` value, `dateTime`.
 
-## Example 1
+## Example
 
 The day of the year for March 1st, 2011.
 

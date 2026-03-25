@@ -4,6 +4,7 @@ title: "Excel.CurrentWorkbook"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Excel.CurrentWorkbook
 
 ## Syntax

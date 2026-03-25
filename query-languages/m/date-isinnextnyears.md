@@ -4,6 +4,7 @@ title: "Date.IsInNextNYears"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.IsInNextNYears
 
 ## Syntax
@@ -19,7 +20,7 @@ Indicates whether the given datetime value `dateTime` occurs during the next num
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
  * `years`: The number of years.
 
-## Example 1
+## Example
 
 Determine if the year after the current system time is in the next two years.
 

@@ -4,6 +4,7 @@ title: "OData.Feed"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # OData.Feed
 
 ## Syntax
@@ -37,7 +38,7 @@ Returns a table of OData feeds offered by an OData service from a uri `serviceUr
   * `ODataOmitValues.Nulls`: Allows the OData service to omit null values.
 * `Implementation`: Specifies the implementation of the OData connector to use. Valid values are "2.0" or null.
 
-## Example 1
+## Example
 
 Connect to the TripPin OData service.
 

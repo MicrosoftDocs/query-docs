@@ -4,6 +4,7 @@ title: "Text.Range"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Range
 
 ## Syntax

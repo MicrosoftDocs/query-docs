@@ -4,6 +4,7 @@ title: "List.Positions"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Positions
 
 ## Syntax

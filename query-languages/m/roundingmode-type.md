@@ -4,6 +4,7 @@ title: "RoundingMode.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # RoundingMode.Type
 
 ## Definition

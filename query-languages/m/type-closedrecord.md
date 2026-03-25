@@ -4,6 +4,7 @@ title: "Type.ClosedRecord"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.ClosedRecord
 
 ## Syntax
@@ -16,7 +17,7 @@ Type.ClosedRecord(<b>type</b> as type) as type
 
 Returns a closed version of the given `record` `type` (or the same type, if it is already closed).
 
-## Example 1
+## Example
 
 Create a closed version of `type [ A = number,…]`.
 

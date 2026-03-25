@@ -4,6 +4,7 @@ title: "Record.ReorderFields"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Record.ReorderFields
 
 ## Syntax

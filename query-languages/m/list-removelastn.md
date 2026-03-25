@@ -4,6 +4,7 @@ title: "List.RemoveLastN"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.RemoveLastN
 
 ## Syntax

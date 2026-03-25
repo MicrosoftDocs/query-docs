@@ -4,6 +4,7 @@ title: "Duration.TotalHours"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Duration.TotalHours
 
 ## Syntax
@@ -16,7 +17,7 @@ Duration.TotalHours(<b>duration</b> as nullable duration) as nullable number
 
 Returns the total hours spanned by `duration`.
 
-## Example 1
+## Example
 
 Find the total hours spanned by a duration value.
 

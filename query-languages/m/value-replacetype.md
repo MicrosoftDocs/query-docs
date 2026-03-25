@@ -4,6 +4,7 @@ title: "Value.ReplaceType"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Value.ReplaceType
 
 ## Syntax
@@ -16,7 +17,7 @@ Value.ReplaceType(<b>value</b> as any, <b>type</b> as type) as any
 
 Replaces the `value`'s type with the provided `type`.
 
-## Example 1
+## Example
 
 Replace the default type of a record with a more specific type.
 

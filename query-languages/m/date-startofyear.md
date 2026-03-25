@@ -4,6 +4,7 @@ title: "Date.StartOfYear"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.StartOfYear
 
 ## Syntax
@@ -16,7 +17,7 @@ Date.StartOfYear(<b>dateTime</b> as any) as any
 
 Returns the start of the year that contains `dateTime`. `dateTime` must be a `date`, `datetime`, or `datetimezone` value.
 
-## Example 1
+## Example
 
 Find the start of the year for October 10th, 2011, 8:10:32AM.
 

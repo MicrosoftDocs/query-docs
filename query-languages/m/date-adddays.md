@@ -20,7 +20,7 @@ Returns the `date`, `datetime`, or `datetimezone` result from adding `numberOfDa
 * `dateTime`: The `date`, `datetime`, or `datetimezone` value to which days are being added.
 * `numberOfDays`: The number of days to add.
 
-## Example 1
+## Example
 
 Add 5 days to the `date`, `datetime`, or `datetimezone` value representing the date 5/14/2011.
 

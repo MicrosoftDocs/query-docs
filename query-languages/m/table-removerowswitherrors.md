@@ -4,6 +4,7 @@ title: "Table.RemoveRowsWithErrors"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.RemoveRowsWithErrors
 
 ## Syntax
@@ -16,7 +17,7 @@ Table.RemoveRowsWithErrors(<b>table</b> as table, optional <b>columns</b> as nul
 
 Returns a table with the rows removed from the input table that contain an error in at least one of the cells. If a columns list is specified, then only the cells in the specified columns are inspected for errors.
 
-## Example 1
+## Example
 
 Remove error value from first row.
 

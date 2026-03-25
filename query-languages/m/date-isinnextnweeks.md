@@ -20,7 +20,7 @@ Indicates whether the given datetime value `dateTime` occurs during the next num
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
 * `weeks`: The number of weeks.
 
-## Example 1
+## Example
 
 Determine if the week after the current system time is in the next two weeks.
 

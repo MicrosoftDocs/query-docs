@@ -4,6 +4,7 @@ title: "WebMethod.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # WebMethod.Type
 
 ## Definition

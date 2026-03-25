@@ -4,6 +4,7 @@ title: "Comparer.Equals"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Comparer.Equals
 
 ## Syntax
@@ -28,7 +29,7 @@ The following built-in comparers are available in the formula language:
 * [Comparer.OrdinalIgnoreCase](comparer-ordinalignorecase.md): Used to perform an exact ordinal case-insensitive comparison
 * [Comparer.FromCulture](comparer-fromculture.md): Used to perform a culture-aware comparison
 
-## Example 1
+## Example
 
 Compare "1" and "A" using "en-US" locale to determine if the values are equal.
 

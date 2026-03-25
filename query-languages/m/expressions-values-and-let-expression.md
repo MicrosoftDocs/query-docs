@@ -7,6 +7,7 @@ ms.custom: "nonautomated-date"
 ms.subservice: m-background
 
 ---
+
 # Expressions, values, and let expression
 
 A Power Query M formula language query is composed of formula **expression** steps that create a mashup query. A formula expression can be evaluated (computed), yielding a value. The **let** expression encapsulates a set of values to be computed, assigned names, and then used in a subsequent expression that follows the **in** statement. For example, a let expression could contain a **Source** variable that equals the value of [Text.Proper](text-proper.md) and yields a text value in proper case.
@@ -224,7 +225,7 @@ Evaluating this expression can be visualized as:
 
 :::image type="content" source="media/list-example-1.png" alt-text="Diagram of a table that visualizes the expression with a primitive value, a function, and a record.":::
 
-## Example 2 - Record containing primitive values and nested records
+## Example - Record containing primitive values and nested records
 
 ```powerquery-m
 let

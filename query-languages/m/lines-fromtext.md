@@ -4,6 +4,7 @@ title: "Lines.FromText"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Lines.FromText
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "ItemExpression.From"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # ItemExpression.From
 
 ## Syntax
@@ -30,7 +31,7 @@ An error is raised if an item expression AST cannot be returned for the body of 
 
 This function is identical to [`RowExpression.From`](rowexpression-from.md).
 
-## Example 1
+## Example
 
 Returns the AST for the body of the function `each _ <> null`.
 

@@ -4,6 +4,7 @@ title: "Table.ContainsAny"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ContainsAny
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "List.StandardDeviation"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.StandardDeviation
 
 ## Syntax
@@ -16,7 +17,7 @@ List.StandardDeviation(<b>numbersList</b> as list) as nullable number
 
 Returns a sample based estimate of the standard deviation of the values in the list, `numbersList`. If `numbersList` is a list of numbers, a number is returned. An error is raised on an empty list or a list of items that is not type `number`.
 
-## Example 1
+## Example
 
 Find the standard deviation of the numbers 1 through 5.
 

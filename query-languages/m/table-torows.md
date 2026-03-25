@@ -4,6 +4,7 @@ title: "Table.ToRows"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ToRows
 
 ## Syntax
@@ -16,7 +17,7 @@ Table.ToRows(<b>table</b> as table) as list
 
 Creates a list of nested lists from the table, `table`. Each list item is an inner list that contains the row values.  
 
-## Example 1
+## Example
 
 Create a list of the row values from the table.
 

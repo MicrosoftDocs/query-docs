@@ -4,6 +4,7 @@ title: "Number.Exp"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.Exp
 
 ## Syntax
@@ -18,7 +19,7 @@ Returns the result of raising e to the power of `number` (exponential function).
 
 * `number`: A `number` for which the exponential function is to be calculated. If `number` is null, **Number.Exp** returns null.
 
-## Example 1
+## Example
 
 Raise e to the power of 3.
 

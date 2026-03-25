@@ -4,6 +4,7 @@ title: "List.Select"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Select
 
 ## Syntax

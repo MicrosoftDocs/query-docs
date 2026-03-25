@@ -4,6 +4,7 @@ title: "Table.SelectRows"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.SelectRows
 
 ## Syntax

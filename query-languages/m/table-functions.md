@@ -6,6 +6,7 @@ ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ms.subservice: m-source
 ---
+
 # Table functions
 
 These functions create and manipulate table values.

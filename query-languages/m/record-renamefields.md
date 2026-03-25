@@ -4,6 +4,7 @@ title: "Record.RenameFields"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Record.RenameFields
 
 ## Syntax

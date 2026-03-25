@@ -4,6 +4,7 @@ title: "Table.ViewFunction"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ViewFunction
 
 ## Syntax

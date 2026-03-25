@@ -4,6 +4,7 @@ title: "Table.FuzzyJoin"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.FuzzyJoin
   
 ## Syntax
@@ -47,7 +48,7 @@ An optional set of `joinOptions` may be included to specify how to compare the k
 * `Threshold`: A number between 0.00 and 1.00 that specifies the similarity score at which two values will be matched. For example, "Grapes" and "Graes" (missing the "p") are matched only if this option is set to less than 0.90. A threshold of 1.00 only allows exact matches. (Note that a fuzzy "exact match" might ignore differences like casing, word order, and punctuation.) The default value is 0.80.
 * `TransformationTable`: A table that allows matching records based on custom value mappings. It should contain "From" and "To" columns. For example, "Grapes" is matched with "Raisins" if a transformation table is provided with the "From" column containing "Grapes" and the "To" column containing "Raisins". Note that the transformation will be applied to all occurrences of the text in the transformation table. With the above transformation table, "Grapes are sweet" will also be matched with "Raisins are sweet".
 
-## Example 1
+## Example
 
 Left inner fuzzy join of two tables based on [FirstName]
 

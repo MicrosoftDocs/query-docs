@@ -4,6 +4,7 @@ title: "Cube.ReplaceDimensions"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Cube.ReplaceDimensions
 
 ## Syntax

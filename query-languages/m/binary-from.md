@@ -4,6 +4,7 @@ title: "Binary.From"
 ms.topic: reference
 ms.subservice: m-source
 ---
+
 # Binary.From
 
 ## Syntax
@@ -20,7 +21,7 @@ Returns a `binary` value from the given `value`. If the given `value` is `null`,
 
 If `value` is of any other type, an error is returned.
 
-## Example 1
+## Example
 
 Get the `binary` value of `"1011"`.
 

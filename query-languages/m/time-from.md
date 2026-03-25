@@ -4,6 +4,7 @@ title: "Time.From"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Time.From
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Byte.From"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Byte.From
 
 ## Syntax

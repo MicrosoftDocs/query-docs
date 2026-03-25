@@ -4,6 +4,7 @@ title: "Folder.Files"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Folder.Files
 
 ## Syntax
@@ -21,7 +22,7 @@ Returns a table containing a row for each file found in the specified folder and
 
 Each row of the returned table contains properties of the file and a link to its content.
 
-## Example 1
+## Example
 
 Return a table containing all of the files found in C:\test-examples\example-folder and all of its subfolders.
 

@@ -4,6 +4,7 @@ title: "Table.RemoveLastN"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.RemoveLastN
 
 ## Syntax

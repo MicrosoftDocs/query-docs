@@ -4,6 +4,7 @@ title: "Table.Profile"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Profile
 
 ## Syntax

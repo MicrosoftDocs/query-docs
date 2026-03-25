@@ -22,7 +22,7 @@ Table.UnpivotOtherColumns(
 
 Translates all columns other than a specified set into attribute-value pairs, combined with the rest of the values in each row.
 
-## Example 1
+## Example
 
 Translates all columns other than a specified set into attribute-value pairs, combined with the rest of the values in each row.
 

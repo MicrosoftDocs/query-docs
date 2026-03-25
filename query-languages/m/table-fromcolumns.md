@@ -4,6 +4,7 @@ title: "Table.FromColumns"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.FromColumns
 
 ## Syntax

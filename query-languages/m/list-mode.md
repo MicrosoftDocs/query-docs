@@ -4,6 +4,7 @@ title: "List.Mode"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Mode
 
 ## Syntax

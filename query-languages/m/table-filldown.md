@@ -17,7 +17,7 @@ Table.FillDown(<b>table</b> as table, <b>columns</b> as list) as table
 
 Returns a table from the `table` specified where the value of a previous cell is propagated to the null-valued cells below in the `columns` specified.
 
-## Example 1
+## Example
 
 Return a table with the null values in column [Place] filled with the value above them from the table.
 

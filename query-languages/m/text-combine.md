@@ -4,6 +4,7 @@ title: "Text.Combine"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Combine
 
 ## Syntax

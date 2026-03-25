@@ -20,7 +20,7 @@ Indicates whether the given datetime value `dateTime` occurs during the next num
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
 * `quarters`: The number of quarters.
 
-## Example 1
+## Example
 
 Determine if the quarter after the current system time is in the next two quarters.
 

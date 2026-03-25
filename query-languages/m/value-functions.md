@@ -5,6 +5,7 @@ ms.date: 9/3/2025
 ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
+
 # Value functions
 
 These functions evaluate and perform operations on values.

@@ -4,6 +4,7 @@ title: "Date.IsInPreviousNDays"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.IsInPreviousNDays
 
 ## Syntax
@@ -19,7 +20,7 @@ Indicates whether the given datetime value `dateTime` occurs during the previous
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
 * `days`: The number of days.
 
-## Example 1
+## Example
 
 Determine if the day before the current system time is in the previous two days.
 

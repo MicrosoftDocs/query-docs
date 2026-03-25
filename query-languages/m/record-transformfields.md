@@ -4,6 +4,7 @@ title: "Record.TransformFields"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Record.TransformFields
 
 ## Syntax

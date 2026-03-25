@@ -4,6 +4,7 @@ title: "BinaryFormat.Choice"
 ms.topic: reference
 ms.subservice: m-source
 ---
+
 # BinaryFormat.Choice
 
 ## Syntax

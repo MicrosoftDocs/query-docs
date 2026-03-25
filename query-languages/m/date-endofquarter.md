@@ -4,6 +4,7 @@ title: "Date.EndOfQuarter"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.EndOfQuarter
 
 ## Syntax
@@ -18,7 +19,7 @@ Returns the end of the quarter that contains `dateTime`. Time zone information i
 
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value from which the end of the quarter is calculated.
 
-## Example 1
+## Example
 
 Find the end of the quarter for October 10th, 2011, 8:00AM.
 

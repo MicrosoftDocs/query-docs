@@ -4,6 +4,7 @@ title: "DateTime.IsInNextSecond"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTime.IsInNextSecond
 
 ## Syntax
@@ -18,7 +19,7 @@ Indicates whether the given datetime value `dateTime` occurs during the next sec
 
 * `dateTime`: A `datetime`, or `datetimezone` value to be evaluated.
 
-## Example 1
+## Example
 
 Determine if the second after the current system time is in the next second.
 

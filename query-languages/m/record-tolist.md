@@ -17,7 +17,7 @@ Record.ToList(<b>record</b> as record) as list
 
 Returns a list of values containing the field values from the input `record`.
 
-## Example 1
+## Example
 
 Extract the field values from a record.
 

@@ -4,6 +4,7 @@ title: "Table.PositionOf"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.PositionOf
 
 ## Syntax

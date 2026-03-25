@@ -4,6 +4,7 @@ title: "Text.TrimEnd"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.TrimEnd
 
 ## Syntax
@@ -31,9 +32,7 @@ Text.TrimEnd("     a b c d    ")
 
 **Output**
 
-<pre>
-"     a b c d"
-</pre>
+`"     a b c d"`
 
 ## Example 2
 

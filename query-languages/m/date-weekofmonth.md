@@ -4,6 +4,7 @@ title: "Date.WeekOfMonth"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.WeekOfMonth
 
 ## Syntax
@@ -18,7 +19,7 @@ Returns a number from 1 to 6 indicating which week of the month the date `dateTi
 
 * `dateTime`: A `datetime` value for which the week-of-the-month is determined.
 
-## Example 1
+## Example
 
 Determine which week of March the 15th falls on in 2011.
 

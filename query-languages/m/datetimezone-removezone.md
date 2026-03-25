@@ -4,6 +4,7 @@ title: "DateTimeZone.RemoveZone"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTimeZone.RemoveZone
 
 ## Syntax
@@ -16,7 +17,7 @@ DateTimeZone.RemoveZone(<b>dateTimeZone</b> as nullable datetimezone) as nullabl
 
 Returns a #datetime value from `dateTimeZone` with timezone information removed.
 
-## Example 1
+## Example
 
 Remove timezone information from the value #datetimezone(2011, 12, 31, 9, 15, 36, -7, 0).
 

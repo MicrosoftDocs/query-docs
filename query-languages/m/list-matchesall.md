@@ -4,6 +4,7 @@ title: "List.MatchesAll"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.MatchesAll
 
 ## Syntax

@@ -17,7 +17,7 @@ List.Buffer(<b>list</b> as list) as list
 
 Buffers the list `list` in memory. The result of this call is a stable list.
 
-## Example 1
+## Example
 
 Create a stable copy of the list {1..10}.
 

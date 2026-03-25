@@ -4,6 +4,7 @@ title: "Table.Group"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Group
 
 ## Syntax
@@ -28,7 +29,7 @@ When passing a `comparer`, note that if it treats differing keys as equal, a row
 
 This function does not guarantee the ordering of the rows it returns.
 
-## Example 1
+## Example
 
 Group the table adding an aggregate column [total] which contains the sum of prices ("each List.Sum([price])").
 

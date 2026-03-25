@@ -4,6 +4,7 @@ title: "Table.MatchesAllRows"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.MatchesAllRows
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Record.Field"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Record.Field
 
 ## Syntax
@@ -16,7 +17,7 @@ Record.Field(<b>record</b> as record, <b>field</b> as text) as any
 
 Returns the value of the specified `field` in the `record`. If the field is not found, an error is raised.
 
-## Example 1
+## Example
 
 Find the value of field "CustomerID" in the record.
 

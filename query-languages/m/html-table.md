@@ -4,6 +4,7 @@ title: "Html.Table"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Html.Table
 
 ## Syntax

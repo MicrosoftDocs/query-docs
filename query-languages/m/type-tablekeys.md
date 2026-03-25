@@ -4,6 +4,7 @@ title: "Type.TableKeys"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.TableKeys
 
 ## Syntax
@@ -21,7 +22,7 @@ Each key is described by a record in the following form:
 * `Columns`: a list of the column names that define the key
 * `Primary`: `true` if the key is the table's primary key; otherwise, `false`
 
-## Example 1
+## Example
 
 Return the key information for a table type.
 

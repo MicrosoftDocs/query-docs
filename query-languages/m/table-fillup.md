@@ -17,7 +17,7 @@ Table.FillUp(<b>table</b> as table, <b>columns</b> as list) as table
 
 Returns a table from the `table` specified where the value of the next cell is propagated to the null-valued cells above in the `columns` specified.
 
-## Example 1
+## Example
 
 Return a table with the null values in column [Column2] filled with the value below them from the table.
 

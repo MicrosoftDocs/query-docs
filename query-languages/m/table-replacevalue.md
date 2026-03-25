@@ -4,6 +4,7 @@ title: "Table.ReplaceValue"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ReplaceValue
 
 ## Syntax

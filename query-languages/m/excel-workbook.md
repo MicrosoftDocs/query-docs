@@ -4,6 +4,7 @@ title: "Excel.Workbook"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Excel.Workbook
 
 ## Syntax
@@ -32,7 +33,7 @@ If a record is specified for `useHeaders` (and `delayTypes` is null), the follow
 > [!NOTE]
 > The `useHeaders` parameter or the `UseHeaders` record field converts numbers and dates to text using the current culture, and thus behaves differently when run in environments with different operating system cultures set. We recommend using [Table.PromoteHeaders](table-promoteheaders.md) instead. For example, instead of using `Excel.Workbook(File.Contents("C:\myfile.xlsx", true, true))` or `Excel.Workbook(File.Contents("C:\myfile.xlsx", [UseHeaders = true], null))`, use `Table.PromoteHeaders(Excel.Workbook(File.Contents("C:\myfile.xlsx", null, true), [PromoteAllScalars = true]))` instead.
 
-## Example 1
+## Example
 
 Return the contents of Sheet1 from an Excel workbook.
 

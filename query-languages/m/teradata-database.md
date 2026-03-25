@@ -4,6 +4,7 @@ title: "Teradata.Database"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Teradata.Database
 
 ## Syntax

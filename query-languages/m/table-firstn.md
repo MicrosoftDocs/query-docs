@@ -4,6 +4,7 @@ title: "Table.FirstN"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.FirstN
 
 ## Syntax

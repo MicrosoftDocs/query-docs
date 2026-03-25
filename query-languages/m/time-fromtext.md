@@ -4,6 +4,7 @@ title: "Time.FromText"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Time.FromText
 
 ## Syntax

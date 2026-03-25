@@ -4,6 +4,7 @@ title: "Number.Power"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.Power
 
 ## Syntax
@@ -19,7 +20,7 @@ Returns the result of raising `number` to the power of `power`. If `number` or `
 * `number`: The base.
 * `power`: The exponent.
 
-## Example 1
+## Example
 
 Find the value of 5 raised to the power of 3 (5 cubed).
 

@@ -4,6 +4,7 @@ title: "Table.FromRecords"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.FromRecords
 
 ## Syntax

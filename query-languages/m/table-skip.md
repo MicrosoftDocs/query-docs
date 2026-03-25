@@ -4,6 +4,7 @@ title: "Table.Skip"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Skip
 
 ## Syntax

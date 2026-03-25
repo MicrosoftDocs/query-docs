@@ -4,6 +4,7 @@ title: "Sql.Database"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Sql.Database
 
 ## Syntax

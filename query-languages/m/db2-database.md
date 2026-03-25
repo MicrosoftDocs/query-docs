@@ -4,6 +4,7 @@ title: "DB2.Database"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DB2.Database
 
 ## Syntax

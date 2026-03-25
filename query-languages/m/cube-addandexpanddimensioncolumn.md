@@ -4,6 +4,7 @@ title: "Cube.AddAndExpandDimensionColumn"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Cube.AddAndExpandDimensionColumn
 
 ## Syntax

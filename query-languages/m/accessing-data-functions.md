@@ -7,6 +7,7 @@ ms.custom:
   - "nonautomated-date"
   - sfi-ropc-nochange
 ---
+
 # Accessing data functions
 
 These functions access data and return table values. Most of these functions return a table value called a **navigation table**. Navigation tables are primarily used by the Power Query user interface to provide a navigation experience over the potentially large hierarchical data sets returned.

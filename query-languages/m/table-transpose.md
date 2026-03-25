@@ -4,6 +4,7 @@ title: "Table.Transpose"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Transpose
 
 ## Syntax
@@ -16,7 +17,7 @@ Table.Transpose(<b>table</b> as table, optional <b>columns</b> as any) as table
 
 Makes columns into rows and rows into columns.
 
-## Example 1
+## Example
 
 Make the rows of the table of name-value pairs into columns.
 

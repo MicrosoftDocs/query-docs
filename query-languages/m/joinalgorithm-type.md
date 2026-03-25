@@ -4,6 +4,7 @@ title: "JoinAlgorithm.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # JoinAlgorithm.Type
 
 ## Definition

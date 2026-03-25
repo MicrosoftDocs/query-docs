@@ -4,6 +4,7 @@ title: "Text.Repeat"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Repeat
 
 ## Syntax

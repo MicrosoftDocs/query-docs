@@ -4,6 +4,7 @@ title: "Replacer.ReplaceText"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Replacer.ReplaceText
 
 ## Syntax
@@ -20,7 +21,7 @@ Replacer.ReplaceText(
 
 Replaces the `old` text in the original `text` with the `new` text. This replacer function can be used in `List.ReplaceValue` and `Table.ReplaceValue`.
 
-## Example 1
+## Example
 
 Replace the text "hE" with "He" in the string "hEllo world".
 

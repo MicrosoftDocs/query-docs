@@ -4,6 +4,7 @@ title: "Number.RoundTowardZero"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.RoundTowardZero
 
 ## Syntax

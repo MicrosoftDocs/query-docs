@@ -4,6 +4,7 @@ title: "Record.FieldCount"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Record.FieldCount
 
 ## Syntax
@@ -16,7 +17,7 @@ Record.FieldCount(<b>record</b> as record) as number
 
 Returns the number of fields in the record `record`.
 
-## Example 1
+## Example
 
 Find the number of fields in the record.
 

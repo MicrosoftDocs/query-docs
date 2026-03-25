@@ -4,6 +4,7 @@ title: "Error.Record"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Error.Record
 
 ## Syntax

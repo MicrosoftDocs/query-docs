@@ -17,7 +17,7 @@ List.FindText(<b>list</b> as list, <b>text</b> as text) as list
 
 Returns a list of the values from the list `list` which contained the value `text`.
 
-## Example 1
+## Example
 
 Find the text values in the list {"a", "b", "ab"} that match "a".
 

@@ -4,6 +4,7 @@ title: "Currency.From"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Currency.From
 
 ## Syntax

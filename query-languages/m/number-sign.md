@@ -4,6 +4,7 @@ title: "Number.Sign"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.Sign
 
 ## Syntax

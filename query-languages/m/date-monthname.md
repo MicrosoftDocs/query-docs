@@ -17,7 +17,7 @@ Date.MonthName(<b>date</b> as any, optional <b>culture</b> as nullable text) as 
 
 Returns the name of the month component for the provided `date`. An optional `culture` may also be provided (for example, "en-US").
 
-## Example 1
+## Example
 
 Get the month name.
 

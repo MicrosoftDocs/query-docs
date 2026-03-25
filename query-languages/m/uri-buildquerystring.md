@@ -17,7 +17,7 @@ Uri.BuildQueryString(<b>query</b> as record) as text
 
 Assemble the record `query` into a URI query string, escaping characters as necessary.
 
-## Example 1
+## Example
 
 Encode a query string which contains some special characters.
 

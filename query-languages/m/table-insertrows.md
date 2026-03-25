@@ -4,6 +4,7 @@ title: "Table.InsertRows"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.InsertRows
 
 ## Syntax

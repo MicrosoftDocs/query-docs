@@ -5,6 +5,7 @@ ms.date: 8/11/2025
 ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
+
 # Number functions
 
 These functions create and manipulate number values.

@@ -4,6 +4,7 @@ title: "Table.Keys"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Keys
 
 ## Syntax
@@ -16,7 +17,7 @@ Table.Keys(<b>table</b> as table) as list
 
 Returns the keys of the specified table.
 
-## Example 1
+## Example
 
 Get the list of keys for a table.
 

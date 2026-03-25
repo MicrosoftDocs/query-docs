@@ -4,6 +4,7 @@ title: "List.Sum"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Sum
 
 ## Syntax
@@ -16,7 +17,7 @@ List.Sum(<b>list</b> as list, optional <b>precision</b> as nullable number) as a
 
 Returns the sum of the non-null values in the list, `list`. Returns null if there are no non-null values in the list.
 
-## Example 1
+## Example
 
 Find the sum of the numbers in the list `{1, 2, 3}`.
 

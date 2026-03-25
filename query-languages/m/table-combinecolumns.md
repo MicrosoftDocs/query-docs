@@ -4,6 +4,7 @@ title: "Table.CombineColumns"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.CombineColumns
 
 ## Syntax
@@ -21,7 +22,7 @@ Table.CombineColumns(
 
 Combines the specified columns into a new column using the specified combiner function.
 
-## Example 1
+## Example
 
 Combine the last and first names into a new column, separated by a comma.
 

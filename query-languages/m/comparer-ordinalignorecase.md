@@ -4,6 +4,7 @@ title: "Comparer.OrdinalIgnoreCase"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Comparer.OrdinalIgnoreCase
 
 ## Syntax
@@ -18,7 +19,7 @@ Returns a case-insensitive comparer function which uses Ordinal rules to compare
 
 A comparer function accepts two arguments and returns -1, 0, or 1 based on whether the first value is less than, equal to, or greater than the second.
 
-## Example 1
+## Example
 
 Using case-insensitive Ordinal rules, compare "Abc" with "abc". Note "Abc" is less than "abc" using `Comparer.Ordinal`.
 

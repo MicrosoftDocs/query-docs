@@ -4,6 +4,7 @@ title: "SapHanaDistribution.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # SapHanaDistribution.Type
 
 ## Definition
