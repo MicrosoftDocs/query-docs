@@ -23,7 +23,7 @@ Specifies the text encoding type.
 |**TextEncoding.Utf8**|65001| Use to choose the UTF8 binary form.|
 
 > [!NOTE]
->Any text encoding parameter should accept any of the Windows code pages by number. You don’t need an M enumeration for it.
+>Any text encoding parameter should accept any of the Windows code pages by number. You don't need an M enumeration for it.
 
 ## Applies to
 

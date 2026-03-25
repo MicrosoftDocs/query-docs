@@ -3,7 +3,7 @@ description: "Learn more about: Accessing data functions"
 title: "Accessing data functions"
 ms.date: 7/16/2025
 ms.topic: language-reference
-ms.custom:
+ms.custom: 
   - "nonautomated-date"
   - sfi-ropc-nochange
 ---
@@ -29,7 +29,7 @@ These functions access data and return table values. Most of these functions ret
 |[AzureStorage.Tables](azurestorage-tables.md)|Returns a navigational table containing the tables found in the specified account from an Azure storage vault. Each row contains a link to the azure table.|
 |[Cdm.Contents](cdm-contents.md)|This function is unavailable because it requires .NET 4.5.|
 |[Csv.Document](csv-document.md)|Returns the contents of the CSV document as a table using the specified encoding.|
-|[Cube.AddAndExpandDimensionColumn](cube-addandexpanddimensioncolumn.md)|Merges the specified dimension table into the cube’s filter context and changes the dimensional granularity of the filter context by expanding the specified set of dimension attributes.|
+|[Cube.AddAndExpandDimensionColumn](cube-addandexpanddimensioncolumn.md)|Merges the specified dimension table into the cube's filter context and changes the dimensional granularity of the filter context by expanding the specified set of dimension attributes.|
 |[Cube.AddMeasureColumn](cube-addmeasurecolumn.md)|AAdds a column to the cube that contains the results of the measure applied in the row context of each row.|
 |[Cube.ApplyParameter](cube-applyparameter.md)|Returns a cube after applying a parameter to it.|
 |[Cube.AttributeMemberId](cube-attributememberid.md)|Returns the unique member identifier from members property value.|

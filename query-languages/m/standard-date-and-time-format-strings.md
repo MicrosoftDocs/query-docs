@@ -39,7 +39,7 @@ In a formatting operation, a standard format string is simply an alias for a cus
 
 If a standard format string in a formatting operation maps to a particular culture's custom format string, your application can define the specific culture whose custom format strings are used in one of these ways:
 
-- You can use the default (or current) culture. The following example displays a date using the current culture's short date format. In this case, the current culture is en-US.
+* You can use the default (or current) culture. The following example displays a date using the current culture's short date format. In this case, the current culture is en-US.
 
   ```powerquery -m
   let
@@ -52,7 +52,7 @@ If a standard format string in a formatting operation maps to a particular cultu
       Source
   ```
 
-- You can pass a culture used to format the date according to the rules of that specific culture. The following example displays a date using the short date format of the pt-BR culture.
+* You can pass a culture used to format the date according to the rules of that specific culture. The following example displays a date using the short date format of the pt-BR culture.
 
   ```powerquery-m
   let
@@ -82,8 +82,8 @@ The following sections describe the standard format specifiers for [Date](date-f
 
 This group includes the following formats:
 
-- [The short date ("d") format specifier](#the-short-date-d-format-specifier)
-- [The long date ("D") format specifier](#the-long-date-d-format-specifier)
+* [The short date ("d") format specifier](#the-short-date-d-format-specifier)
+* [The long date ("D") format specifier](#the-long-date-d-format-specifier)
 
 <a name="ShortDate"></a>
 
@@ -149,14 +149,14 @@ in
 
 This group includes the following formats:
 
-- [The full date short time ("f") format specifier](#the-full-date-short-time-f-format-specifier)
-- [The full date long time ("F") format specifier](#the-full-date-long-time-f-format-specifier)
-- [The general date short time ("g") format specifier](#the-general-date-short-time-g-format-specifier)
-- [The general date long time ("G") format specifier](#the-general-date-long-time-g-format-specifier)
-- [The round-trip ("O", "o") format specifier](#the-round-trip-o-o-format-specifier)
-- [The RFC1123 ("R", "r") format specifier](#the-rfc1123-r-r-format-specifier)
-- [The sortable ("s") format specifier](#the-sortable-s-format-specifier)
-- [The universal sortable ("u") format specifier](#the-universal-sortable-u-format-specifier)
+* [The full date short time ("f") format specifier](#the-full-date-short-time-f-format-specifier)
+* [The full date long time ("F") format specifier](#the-full-date-long-time-f-format-specifier)
+* [The general date short time ("g") format specifier](#the-general-date-short-time-g-format-specifier)
+* [The general date long time ("G") format specifier](#the-general-date-long-time-g-format-specifier)
+* [The round-trip ("O", "o") format specifier](#the-round-trip-o-o-format-specifier)
+* [The RFC1123 ("R", "r") format specifier](#the-rfc1123-r-r-format-specifier)
+* [The sortable ("s") format specifier](#the-sortable-s-format-specifier)
+* [The universal sortable ("u") format specifier](#the-universal-sortable-u-format-specifier)
 
 <a name="FullDateShortTime"></a>
 
@@ -281,9 +281,9 @@ The "O" or "o" standard format specifier corresponds to the "yyyy'-'MM'-'dd'T'HH
 
 The "O" or "o" standard format specifier (and the "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'fffffffxxx"  custom format) takes advantage of the ways that ISO 8601 represents time zone information to preserve the **DateTimeZone** values:
 
-- The time zone component of [DateTimeZone.ToLocal](datetimezone-tolocal.md) date and time values is an offset from UTC (for example, +01:00, -07:00).
+* The time zone component of [DateTimeZone.ToLocal](datetimezone-tolocal.md) date and time values is an offset from UTC (for example, +01:00, -07:00).
 
-- The time zone component of [DateTimeZone.ToUtc](datetimezone-toutc.md) date and time values uses +00.00 to represent UTC.
+* The time zone component of [DateTimeZone.ToUtc](datetimezone-toutc.md) date and time values uses +00.00 to represent UTC.
 
 Because the "O" or "o" standard format specifier conforms to an international standard, the formatting or parsing operation that uses the specifier always uses the invariant culture and the Gregorian calendar.
 
@@ -461,8 +461,8 @@ in
 
 This group includes the following formats:
 
-- [The short time ("t") format specifier](#the-short-time-t-format-specifier)
-- [The long time ("T") format specifier](#the-long-time-t-format-specifier)
+* [The short time ("t") format specifier](#the-short-time-t-format-specifier)
+* [The long time ("T") format specifier](#the-long-time-t-format-specifier)
 
 <a name="ShortTime"></a>
 
@@ -523,8 +523,8 @@ in
 
 This group includes the following formats:
 
-- [The month ("M", "m") format specifier](#the-month-m-m-format-specifier)
-- [The year month ("Y", "y") format specifier](#the-year-month-y-y-format-specifier)
+* [The month ("M", "m") format specifier](#the-month-m-m-format-specifier)
+* [The year month ("Y", "y") format specifier](#the-year-month-y-y-format-specifier)
 
 <a name="MonthDay"></a>
 
@@ -582,10 +582,10 @@ in
 
 ## Related content
 
-- [How culture affects text formatting](how-culture-affects-text-formatting.md)
-- [Date, Time, DateTime, and DateTimeZone type conversion](type-conversion.md#date-time-datetime-and-datetimezone)
-- [Date functions](date-functions.md)
-- [DateTime functions](datetime-functions.md)
-- [DateTimeZone functions](datetimezone-functions.md)
-- [Time functions](time-functions.md)
-- [Custom Date and Time Format Strings](custom-date-and-time-format-strings.md)
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)
+* [Date, Time, DateTime, and DateTimeZone type conversion](type-conversion.md#date-time-datetime-and-datetimezone)
+* [Date functions](date-functions.md)
+* [DateTime functions](datetime-functions.md)
+* [DateTimeZone functions](datetimezone-functions.md)
+* [Time functions](time-functions.md)
+* [Custom Date and Time Format Strings](custom-date-and-time-format-strings.md)

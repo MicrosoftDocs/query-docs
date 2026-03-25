@@ -44,4 +44,6 @@ in
     Splitter.SplitTextByLengths({5, 2}, startAtEnd)("RedmondWA98052")
 ```
 
+**Output**
+
 `{"WA", "98052"}`

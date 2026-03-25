@@ -92,12 +92,12 @@ Ordering functions perform comparisons. All values that are compared must be com
 
 Comparable data types include:
 
-- Number
-- Duration
-- DateTime
-- Text
-- Logical
-- Null
+* Number
+* Duration
+* DateTime
+* Text
+* Logical
+* Null
 
 |Name|Description|
 |------------|---------------|
@@ -156,34 +156,34 @@ These functions generate list of values.
 
 ### Occurrence specification
 
-- [Occurrence.First](occurrence-type.md) = 0;
-- [Occurrence.Last](occurrence-type.md) = 1;
-- [Occurrence.All](occurrence-type.md) = 2;
+* [Occurrence.First](occurrence-type.md) = 0;
+* [Occurrence.Last](occurrence-type.md) = 1;
+* [Occurrence.All](occurrence-type.md) = 2;
 
 ### Sort order
 
-- [Order.Ascending](order-type.md) = 0;
-- [Order.Descending](order-type.md) = 1;
+* [Order.Ascending](order-type.md) = 0;
+* [Order.Descending](order-type.md) = 1;
 
 ### Equation criteria
 
 In many of the list functions, the `equationCriteria` parameter indicates how equality is determined between list elements. Equation criteria for list values can be specified as either:
 
-- A function value that is either:
-  - A key selector that determines the value in the list to apply the equality criteria.
-  - A comparer function that is used to specify the kind of comparison to apply. Built-in comparer functions can be specified&mdash;go to [Comparer functions](comparer-functions.md).
-- A list value that has:
-  - Exactly two items.
-  - The first element is the key selector as specified above.
-  - The second element is a comparer as specified above.
+* A function value that is either:
+  * A key selector that determines the value in the list to apply the equality criteria.
+  * A comparer function that is used to specify the kind of comparison to apply. Built-in comparer functions can be specified&mdash;go to [Comparer functions](comparer-functions.md).
+* A list value that has:
+  * Exactly two items.
+  * The first element is the key selector as specified above.
+  * The second element is a comparer as specified above.
 
 In most list functions, the comparer function used in the `equationCriteria` parameter must be one of the built-in [comparer functions](comparer-functions.md). In those list functions, using a custom comparer results in an error. However, the following list functions allow you to use a custom comparer:
 
-- [List.Contains](list-contains.md)
-- [List.ContainsAll](list-containsall.md)
-- [List.ContainsAny](list-containsany.md)
-- [List.PositionOf](list-positionof.md)
-- [List.PositionOfAny](list-positionofany.md)
+* [List.Contains](list-contains.md)
+* [List.ContainsAll](list-containsall.md)
+* [List.ContainsAny](list-containsany.md)
+* [List.PositionOf](list-positionof.md)
+* [List.PositionOfAny](list-positionofany.md)
 
 For more information and examples, go to [List.Distinct](list-distinct.md) and [List.PositionOf](list-positionof.md).
 
@@ -191,10 +191,10 @@ For more information and examples, go to [List.Distinct](list-distinct.md) and [
 
 Comparison criterion can be provided as either of the following values:
 
-- A number value to specify a sort order. For more information, go to [Sort order](#sort-order).
-- To compute a key to be used for sorting, a function of one argument can be used.
-- To both select a key and control order, comparison criterion can be a list containing the key and order.
-- To completely control the comparison, a function of two arguments can be used that returns -1, 0, or 1 given the relationship between the left and right inputs. [Value.Compare](value-compare.md) is a method that can be used to delegate this logic.
+* A number value to specify a sort order. For more information, go to [Sort order](#sort-order).
+* To compute a key to be used for sorting, a function of one argument can be used.
+* To both select a key and control order, comparison criterion can be a list containing the key and order.
+* To completely control the comparison, a function of two arguments can be used that returns -1, 0, or 1 given the relationship between the left and right inputs. [Value.Compare](value-compare.md) is a method that can be used to delegate this logic.
 
 For more information and examples, go to [List.Sort](list-sort.md).
 
@@ -202,6 +202,6 @@ For more information and examples, go to [List.Sort](list-sort.md).
 
 Replacement operations are specified by a list value. Each item of this list must be:
 
-- A list value of exactly two items.
-- First item is the old value in the list, to be replaced.
-- Second item is the new value, which should replace all occurrences of the old value in the list.
+* A list value of exactly two items.
+* First item is the old value in the list, to be replaced.
+* Second item is the new value, which should replace all occurrences of the old value in the list.

@@ -11,9 +11,9 @@ ms.subservice: m-background
 
 Standard numeric format strings are used to format common numeric types. A standard numeric format string takes the form *`[format specifier][precision specifier]`*, where:
 
-- *Format specifier* is a single alphabetic character that specifies the type of number format, for example, currency or percent. Any numeric format string that contains more than one alphabetic character, including white space, is interpreted as a custom numeric format string. For more information, go to [Custom numeric format strings](custom-numeric-format-strings.md).
+* *Format specifier* is a single alphabetic character that specifies the type of number format, for example, currency or percent. Any numeric format string that contains more than one alphabetic character, including white space, is interpreted as a custom numeric format string. For more information, go to [Custom numeric format strings](custom-numeric-format-strings.md).
 
-- *Precision specifier* is an optional integer that affects the number of digits in the resulting string. The precision specifier controls the number of digits in the string representation of a number.
+* *Precision specifier* is an optional integer that affects the number of digits in the resulting string. The precision specifier controls the number of digits in the string representation of a number.
 
   When the precision specifier controls the number of fractional digits in the result string, the result string reflects a number that is rounded to a representable result nearest to the infinitely precise result.
 
@@ -137,7 +137,7 @@ in
 
 ## Exponential format specifier (E)
 
-The exponential ("E") format specifier converts a number to a string of the form "-d.ddd…E+ddd" or "-d.ddd…e+ddd", where each "d" indicates a digit (0-9). The string starts with a minus sign if the number is negative. Exactly one digit always precedes the decimal point.
+The exponential ("E") format specifier converts a number to a string of the form "-d.ddd...E+ddd" or "-d.ddd...e+ddd", where each "d" indicates a digit (0-9). The string starts with a minus sign if the number is negative. Exactly one digit always precedes the decimal point.
 
 The precision specifier indicates the desired number of digits after the decimal point. If the precision specifier is omitted, a default of six digits after the decimal point is used.
 
@@ -174,7 +174,7 @@ in
 
 ## Fixed-point format specifier (F)
 
-The fixed-point ("F") format specifier converts a number to a string of the form "-ddd.ddd…" where each "d" indicates a digit (0-9). The string starts with a minus sign if the number is negative.
+The fixed-point ("F") format specifier converts a number to a string of the form "-ddd.ddd..." where each "d" indicates a digit (0-9). The string starts with a minus sign if the number is negative.
 
 The precision specifier indicates the desired number of decimal places. If the precision specifier is omitted, the default number of decimal places to use in numeric values is 2.
 
@@ -270,7 +270,7 @@ in
 
 ## Numeric format specifier (N)
 
-The numeric ("N") format specifier converts a number to a string of the form "-d,ddd,ddd.ddd…", where "-" indicates a negative number symbol if required, "d" indicates a digit (0-9), "," indicates a group separator, and "." indicates a decimal point symbol. The precision specifier indicates the desired number of digits after the decimal point. If the precision specifier is omitted, the number of decimal places is defined by the current culture.
+The numeric ("N") format specifier converts a number to a string of the form "-d,ddd,ddd.ddd...", where "-" indicates a negative number symbol if required, "d" indicates a digit (0-9), "," indicates a group separator, and "." indicates a decimal point symbol. The precision specifier indicates the desired number of digits after the decimal point. If the precision specifier is omitted, the number of decimal places is defined by the current culture.
 
 The result string is affected by the formatting information of the current culture.
 
@@ -407,7 +407,7 @@ in
 
 ## Related content
 
-- [How culture affects text formatting](how-culture-affects-text-formatting.md)
-- [Number type conversion](type-conversion.md#number)
-- [Data Types in Power Query](/power-query/data-types)
-- [Custom Numeric Format Strings](custom-numeric-format-strings.md)
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)
+* [Number type conversion](type-conversion.md#number)
+* [Data Types in Power Query](/power-query/data-types)
+* [Custom Numeric Format Strings](custom-numeric-format-strings.md)

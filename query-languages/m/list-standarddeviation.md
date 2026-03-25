@@ -27,6 +27,6 @@ Find the standard deviation of the numbers 1 through 5.
 List.StandardDeviation({1..5})
 ```
 
-**Outut**
+**Output**
 
 `1.5811388300841898`

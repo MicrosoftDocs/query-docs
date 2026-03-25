@@ -1203,13 +1203,13 @@ For other values, an error with reason code `"Expression.Error"` is raised.
 The unary minus operator is used to change the sign of a number or duration. For example:
 
 ```powerquery-m
-- (1 + 1)       // -2 
-- - 1           // 1 
-- - - 1         // -1 
-- #nan          // #nan 
-- #infinity     // -#infinity 
-- #duration(1,0,0,0)  // #duration(-1,0,0,0) 
-- #duration(0,1,30,0) // #duration(0,-1,-30,0)
+* (1 + 1)       // -2 
+* - 1           // 1 
+* - - 1         // -1 
+* #nan          // #nan 
+* #infinity     // -#infinity 
+* #duration(1,0,0,0)  // #duration(-1,0,0,0) 
+* #duration(0,1,30,0) // #duration(0,-1,-30,0)
 ```
 
 The following holds when evaluating the unary minus operator `-x`:

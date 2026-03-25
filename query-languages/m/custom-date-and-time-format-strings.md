@@ -538,11 +538,11 @@ in
 
 The "K" custom format specifier represents the time zone information of a date and time value. When this format specifier is used with **DateTimeZone** values, the result string is defined as:
 
-- For the local time zone, this specifier produces a result string containing the local offset from Coordinated Universal Time (UTC), for example, "-07:00", if your query runs in Power Query Desktop. If your query runs in Power Query Online, the result string produces no offset from UTC time, that is, "+00:00".
+* For the local time zone, this specifier produces a result string containing the local offset from Coordinated Universal Time (UTC), for example, "-07:00", if your query runs in Power Query Desktop. If your query runs in Power Query Online, the result string produces no offset from UTC time, that is, "+00:00".
 
-- For a UTC time, the result string produces no offset from UTC time; that is, "+00:00 to represent a UTC date.
+* For a UTC time, the result string produces no offset from UTC time; that is, "+00:00 to represent a UTC date.
 
-- For a time from an unspecified time zone, the result is empty.
+* For a time from an unspecified time zone, the result is empty.
 
 If the "K" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and raises an expression error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
 
@@ -1138,25 +1138,25 @@ If the "/" format specifier is used without other custom format specifiers, it's
 
 The following characters in a custom date and time format string are reserved and are always interpreted as formatting characters or, in the case of `"`, `'`, `/`, and `\`, as special characters.
 
-- `F`
-- `H`
-- `K`
-- `M`
-- `d`
-- `f`
-- `g`
-- `h`
-- `m`
-- `s`
-- `t`
-- `y`
-- `z`
-- `%`
-- `:`
-- `/`
-- `"`
-- `'`
-- `\`
+* `F`
+* `H`
+* `K`
+* `M`
+* `d`
+* `f`
+* `g`
+* `h`
+* `m`
+* `s`
+* `t`
+* `y`
+* `z`
+* `%`
+* `:`
+* `/`
+* `"`
+* `'`
+* `\`
 
 All other characters are always interpreted as character literals and, in a formatting operation, are included in the result string unchanged.  In a parsing operation, they must match the characters in the input string exactly; the comparison is case-sensitive.
 
@@ -1182,7 +1182,7 @@ in
 
 There are two ways to indicate that characters are to be interpreted as literal characters and not as reserve characters, so that they can be included in a result string or successfully parsed in an input string:
 
-- By escaping each reserved character. For more information, go to [Using the escape sequences](#escape).
+* By escaping each reserved character. For more information, go to [Using the escape sequences](#escape).
 
   The following example includes the literal characters "pst" (for Pacific Standard time) to represent the local time zone in a format string. Because both "s" and "t" are custom format strings, both characters must be escaped to be interpreted as character literals.
 
@@ -1204,7 +1204,7 @@ There are two ways to indicate that characters are to be interpreted as literal 
   //       12/25/2016 12:00:00 PM
   ```
 
-- By enclosing the entire literal string in apostrophes. The following example is like the previous one, except that "pst" is enclosed in apostrophes to indicate that the entire delimited string should be interpreted as character literals.
+* By enclosing the entire literal string in apostrophes. The following example is like the previous one, except that "pst" is enclosed in apostrophes to indicate that the entire delimited string should be interpreted as character literals.
 
   ```powerquery-m
   let
@@ -1259,9 +1259,9 @@ The "d", "f", "F", "g", "h", "H", "K", "m", "M", "s", "t", "y", "z", ":", or "/"
 
 To prevent a character from being interpreted as a format specifier, you can:
 
-- Precede it with a backslash.
-- Surround it with a single quote.
-- Surround it with two double quotes.
+* Precede it with a backslash.
+* Surround it with a single quote.
+* Surround it with two double quotes.
 
 Each of these characters acts as an escape sequence. The escape sequence signifies that the following character or surrounded character is a text literal that should be included in the result string unchanged.
 
@@ -1292,10 +1292,10 @@ in
 
 ## Related content
 
-- [How culture affects text formatting](how-culture-affects-text-formatting.md)
-- [Date, Time, DateTime, and DateTimeZone type conversion](type-conversion.md#date-time-datetime-and-datetimezone)
-- [Date functions](date-functions.md)
-- [DateTime functions](datetime-functions.md)
-- [DateTimeZone functions](datetimezone-functions.md)
-- [Time functions](time-functions.md)
-- [Standard Date and Time format strings](standard-date-and-time-format-strings.md)
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)
+* [Date, Time, DateTime, and DateTimeZone type conversion](type-conversion.md#date-time-datetime-and-datetimezone)
+* [Date functions](date-functions.md)
+* [DateTime functions](datetime-functions.md)
+* [DateTimeZone functions](datetimezone-functions.md)
+* [Time functions](time-functions.md)
+* [Standard Date and Time format strings](standard-date-and-time-format-strings.md)
