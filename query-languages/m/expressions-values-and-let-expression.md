@@ -68,13 +68,13 @@ This code produces the value of 3.
 
 The M language supports the following structured data values:
 
-- [List](#list)
+* [List](#list)
 
-- [Record](#record)
+* [Record](#record)
 
-- [Table](#table)
+* [Table](#table)
 
-- [Additional structured data examples](#additional-structured-data-examples)
+* [Additional structured data examples](#additional-structured-data-examples)
 
 > [!NOTE]
 > Structured data can contain any M value. To see a couple of examples, go to [Additional structured data examples](#additional-structured-data-examples).
@@ -101,9 +101,9 @@ The following are some List examples.
 
 A *Record* is a set of fields. A *field* is a name/value pair where the name is a text value that's unique within the field's record. The syntax for record values allows the names to be written without quotes, a form also referred to as *identifiers*. An identifier can take the following two forms:
 
-- identifier_name such as OrderID.
+* identifier_name such as OrderID.
 
-- \#"identifier name" such as #"Today's data is: ".
+* \#"identifier name" such as #"Today's data is: ".
 
 The following is a record containing fields named "OrderID", "CustomerID", "Item", and "Price" with values 1, 1, "Fishing rod", and 100.00. Square brace characters [ ] denote the beginning and end of a record expression, and are used to get a field value from a record. The following examples show a record and how to get the Item field value.
 

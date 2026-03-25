@@ -11,9 +11,9 @@ ms.subservice: m-background
 
 Standard numeric format strings are used to format common numeric types. A standard numeric format string takes the form *`[format specifier][precision specifier]`*, where:
 
-- *Format specifier* is a single alphabetic character that specifies the type of number format, for example, currency or percent. Any numeric format string that contains more than one alphabetic character, including white space, is interpreted as a custom numeric format string. For more information, go to [Custom numeric format strings](custom-numeric-format-strings.md).
+* *Format specifier* is a single alphabetic character that specifies the type of number format, for example, currency or percent. Any numeric format string that contains more than one alphabetic character, including white space, is interpreted as a custom numeric format string. For more information, go to [Custom numeric format strings](custom-numeric-format-strings.md).
 
-- *Precision specifier* is an optional integer that affects the number of digits in the resulting string. The precision specifier controls the number of digits in the string representation of a number.
+* *Precision specifier* is an optional integer that affects the number of digits in the resulting string. The precision specifier controls the number of digits in the string representation of a number.
 
   When the precision specifier controls the number of fractional digits in the result string, the result string reflects a number that is rounded to a representable result nearest to the infinitely precise result.
 
@@ -407,7 +407,7 @@ in
 
 ## Related content
 
-- [How culture affects text formatting](how-culture-affects-text-formatting.md)
-- [Number type conversion](type-conversion.md#number)
-- [Data Types in Power Query](/power-query/data-types)
-- [Custom Numeric Format Strings](custom-numeric-format-strings.md)
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)
+* [Number type conversion](type-conversion.md#number)
+* [Data Types in Power Query](/power-query/data-types)
+* [Custom Numeric Format Strings](custom-numeric-format-strings.md)

@@ -4,8 +4,8 @@ title: "Accessing data functions"
 ms.date: 7/16/2025
 ms.topic: language-reference
 ms.custom:
-  - "nonautomated-date"
-  - sfi-ropc-nochange
+  * "nonautomated-date"
+  * sfi-ropc-nochange
 ---
 
 # Accessing data functions
