@@ -19,7 +19,7 @@ Returns a `logical` value from the given `value`. If the given `value` is `null`
 
 Values of the following types can be converted to a `logical` value:
 
-* `text`: A `logical` value from the text value, either `"true"` or `"false"`. Refer to [Logical.FromText](/powerquery-m/logical-fromtext) for details.
+* `text`: A `logical` value from the text value, either `"true"` or `"false"`. Refer to [`Logical.FromText`](logical-fromtext.md) for details.
 * `number`: `false` if `value` equals `0`, `true` otherwise.
 
 If `value` is of any other type, an error is returned.
