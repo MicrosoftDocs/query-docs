@@ -17,7 +17,7 @@ Type.TableSchema(<b>tableType</b> as type) as table
 
 Returns a table describing the columns of `tableType`.
 
-Refer to the documentation for [Table.Schema](/powerquery-m/table-schema) for a description of the resulting table.
+Refer to the documentation for [`Table.Schema`](table-schema.md) for a description of the resulting table.
 
 ## Related content
 

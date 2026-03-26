@@ -23,9 +23,9 @@ Detects whether `text` contains the value `substring`. Returns true if the value
 
 The optional argument `comparer` can be used to specify case-insensitive or culture and locale-aware comparisons. The following built-in comparers are available in the formula language:
 
-* [Comparer.Ordinal](/powerquery-m/comparer-ordinal): Used to perform a case-sensitive ordinal comparison
-* [Comparer.OrdinalIgnoreCase](/powerquery-m/comparer-ordinalignorecase): Used to perform a case-insensitive ordinal comparison
-* [Comparer.FromCulture](/powerquery-m/comparer-fromculture): Used to perform a culture-aware comparison
+* [`Comparer.Ordinal`](comparer-ordinal.md): Used to perform a case-sensitive ordinal comparison
+* [`Comparer.OrdinalIgnoreCase`](comparer-ordinalignorecase.md): Used to perform a case-insensitive ordinal comparison
+* [`Comparer.FromCulture`](comparer-fromculture.md): Used to perform a culture-aware comparison
 
 If the first argument is null, this function returns null.
 

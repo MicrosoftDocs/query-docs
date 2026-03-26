@@ -30,7 +30,7 @@ The `group` parameter specifies a list of item definitions. Each item definition
 
 * Key value. The value of the key that corresponds to the item. This must be unique within the set of items.
 * Item format. The binary format corresponding to the value of the item. This allows each item to have a different format.
-* Item occurrence. The [BinaryOccurrence.Type](binaryoccurrence-type.md) value for how many times the item is expected to appear in the group. Required items that are not present cause an error. Required or optional duplicate items are handled like unexpected key values.
+* Item occurrence. The [`BinaryOccurrence.Type`](binaryoccurrence-type.md) value for how many times the item is expected to appear in the group. Required items that are not present cause an error. Required or optional duplicate items are handled like unexpected key values.
 * Default item value (optional). If the default item value appears in the item definition list and is not null, then it will be used instead of the default. The default for repeating or optional items is null, and the default for repeating values is an empty list { }.
 * Item value transform (optional). If the item value transform function is present in the item definition list and is not null, then it will be called to transform the item value before it is returned. The transform function is only called if the item appears in the input (it will never be called with the default value).
 
@@ -42,7 +42,7 @@ The following assumes a key value that is a single byte, with 4 expected items i
 * Key 2 repeats, and appears twice with value 22, and results in a value of { 22, 22 }.
 * Key 3 is optional, and does not appear, and results in a value of null.
 * Key 4 repeats, but does not appear, and results in a value of { }.
-* Key 5 is not part of the group, but appears once with value 55. The extra function is called with the key value 5, and returns the format corresponding to that value ([BinaryFormat.Byte](/powerquery-m/binaryformat-byte)). The value 55 is read and discarded.
+* Key 5 is not part of the group, but appears once with value 55. The extra function is called with the key value 5, and returns the format corresponding to that value ([`BinaryFormat.Byte`](binaryformat-byte.md)). The value 55 is read and discarded.
 
 **Usage**
 
@@ -75,7 +75,7 @@ in
 
 ## Example 2
 
-The following example illustrates the item value transform and default item value. The repeating item with key 1 sums the list of values read using [List.Sum](/powerquery-m/list-sum). The optional item with key 2 has a default value of 123 instead of null.
+The following example illustrates the item value transform and default item value. The repeating item with key 1 sums the list of values read using [`List.Sum`](list-sum.md). The optional item with key 2 has a default value of 123 instead of null.
 
 **Usage**
 
