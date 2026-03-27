@@ -19,7 +19,7 @@ Changes timezone information of the datetimezone value `dateTimeZone` to the loc
 
 ## Example
 
-Change timezone information for #datetimezone(2010, 12, 31, 11, 56, 02, 7, 30) to local timezone (assuming PST).
+Change timezone information for [#datetimezone](sharpdatetimezone.md)(2010, 12, 31, 11, 56, 02, 7, 30) to local timezone (assuming PST).
 
 **Usage**
 
