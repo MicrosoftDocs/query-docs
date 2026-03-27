@@ -19,7 +19,7 @@ Returns the time part of the given datetime value, `dateTime`.
 
 ## Example
 
-Find the time value of #datetime(2010, 12, 31, 11, 56, 02).
+Find the time value of [#datetime](sharpdatetime.md)(2010, 12, 31, 11, 56, 02).
 
 **Usage**
 

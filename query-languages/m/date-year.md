@@ -19,7 +19,7 @@ Returns the year component of the provided `datetime` value, `dateTime`.
 
 ## Example
 
-Find the year in #datetime(2011, 12, 31, 9, 15, 36).
+Find the year in [#datetime](sharpdatetime.md)(2011, 12, 31, 9, 15, 36).
 
 **Usage**
 

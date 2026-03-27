@@ -19,7 +19,7 @@ Returns the hour component of the provided `time`, `datetime`, or `datetimezone`
 
 ## Example
 
-Find the hour in #datetime(2011, 12, 31, 9, 15, 36).
+Find the hour in [#datetime](sharpdatetime.md)(2011, 12, 31, 9, 15, 36).
 
 **Usage**
 

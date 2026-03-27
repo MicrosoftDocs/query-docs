@@ -23,7 +23,7 @@ Returns a list of `datetime` values of size `count`, starting at `start`. The gi
 
 ## Example
 
-Create a list of 10 values starting from 5 minutes before New Year's Day (#datetime(2011, 12, 31, 23, 55, 0)) incrementing by 1 minute (#duration(0, 0, 1, 0)).
+Create a list of 10 values starting from 5 minutes before New Year's Day ([#datetime](sharpdatetime.md)(2011, 12, 31, 23, 55, 0)) incrementing by 1 minute ([#duration](sharpduration.md)(0, 0, 1, 0)).
 
 **Usage**
 

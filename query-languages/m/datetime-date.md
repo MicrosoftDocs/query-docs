@@ -19,7 +19,7 @@ Returns the date component of the `dateTime` parameter if the parameter is a `da
 
 ## Example
 
-Find date value of #datetime(2010, 12, 31, 11, 56, 02).
+Find date value of [#datetime](sharpdatetime.md)(2010, 12, 31, 11, 56, 02).
 
 **Usage**
 

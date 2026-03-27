@@ -19,7 +19,7 @@ Returns the minute component of the provided `time`, `datetime`, or `datetimezon
 
 ## Example
 
-Find the minute in #datetime(2011, 12, 31, 9, 15, 36).
+Find the minute in [#datetime](sharpdatetime.md)(2011, 12, 31, 9, 15, 36).
 
 **Usage**
 
