@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.ColumnNames(<b>table</b> as table) as list
 </pre>
-  
+
 ## About
 
 Returns the column names in the table `table` as a list of text.

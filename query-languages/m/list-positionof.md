@@ -17,7 +17,7 @@ List.PositionOf(
     optional <b>equationCriteria</b> as any
 ) as any
 </pre>
-  
+
 ## About
 
 Returns the offset at which the specified value appears in a list. Returns -1 if the value doesn't appear.
@@ -77,9 +77,9 @@ Find the position in the list of the last occurrence of the word dog, ignoring c
 ```powerquery-m
 let
     Source = List.PositionOf(
-        {"dog", "cat", "DOG", "pony", "bat", "rabbit", "dOG"}, 
-        "dog", 
-        Occurrence.Last, 
+        {"dog", "cat", "DOG", "pony", "bat", "rabbit", "dOG"},
+        "dog",
+        Occurrence.Last,
         Comparer.OrdinalIgnoreCase
     )
 in
@@ -100,9 +100,9 @@ Find the position in the list that's within two units of the number 28.
 let
     Source = { 10, 15, 20, 25, 30 },
     Position = List.PositionOf(
-        Source, 
+        Source,
         28,
-        Occurrence.First, 
+        Occurrence.First,
         (x, y) => Number.Abs(x - y) <= 2
     )
 in

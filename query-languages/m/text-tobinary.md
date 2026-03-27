@@ -100,9 +100,9 @@ in
 
 ```powerquery-m
 [
-    OriginalText = "Testing 1-2-3", 
+    OriginalText = "Testing 1-2-3",
     DecodedText = "fffe540065007300740069006e006700200031002d0032002d003300",
-    DecodedText = "Testing 1-2-3", 
-    IsIdentical = true 
+    DecodedText = "Testing 1-2-3",
+    IsIdentical = true
 ]
 ```

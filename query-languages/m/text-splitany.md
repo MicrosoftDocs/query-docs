@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Text.SplitAny(<b>text</b> as text, <b>separators</b> as text) as list
 </pre>
-  
+
 ## About
 
 Returns a list of text values resulting from the splitting of a text value based on any character specified in the delimiter.

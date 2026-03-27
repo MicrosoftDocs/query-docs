@@ -75,7 +75,7 @@ Build a list of process completion times from a start date and a list of process
 
 ```powerquery-m
 let
-    #"Process Duration" = 
+    #"Process Duration" =
     {
         #duration(0,1,0,0),
         #duration(0,2,0,0),
@@ -85,7 +85,7 @@ let
     #"Process Timeline" = List.Accumulate(
         #"Process Duration",
         {#"Start Time"},
-        (accumulatedTimes, nextDuration) => 
+        (accumulatedTimes, nextDuration) =>
             accumulatedTimes & {List.Last(accumulatedTimes) + nextDuration}
     )
 in

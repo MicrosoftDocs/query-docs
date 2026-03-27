@@ -10,9 +10,9 @@ ms.topic: reference
 ## Syntax
 
 <pre>
-Date.EndOfWeek(<b>dateTime</b> as any, optional <b>firstDayOfWeek</b> as nullable number) as any  
+Date.EndOfWeek(<b>dateTime</b> as any, optional <b>firstDayOfWeek</b> as nullable number) as any
 </pre>
-  
+
 ## About
 
 Returns the end of the week that contains `dateTime`. This function takes an optional `Day`, `firstDayOfWeek`, to set as the first day of the week for this relative calculation. The default value is [`Day.Sunday`](day-type.md).

@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 List.Random(<b>count</b> as number, optional <b>seed</b> as nullable number) as list
 </pre>
-  
+
 ## About
 
 Returns a list of random numbers between 0 and 1, given the number of values to generate and an optional seed value.

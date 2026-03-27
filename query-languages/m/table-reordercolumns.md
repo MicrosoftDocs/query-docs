@@ -16,7 +16,7 @@ Table.ReorderColumns(
     optional <b>missingField</b> as nullable number
 ) as table
 </pre>
-  
+
 ## About
 
 Returns a table from the input `table`, with the columns in the order specified by `columnOrder`. Columns that are not specified in the list will not be reordered. If the column doesn't exist, an error is raised unless the optional parameter `missingField` specifies an alternative (eg. [MissingField.UseNull](missingfield-type.md) or [MissingField.Ignore](missingfield-type.md)).

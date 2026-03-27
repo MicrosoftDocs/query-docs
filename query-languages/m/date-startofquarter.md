@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Date.StartOfQuarter(<b>dateTime</b> as any) as any
 </pre>
-  
+
 ## About
 
 Returns the start of the quarter that contains `dateTime`. `dateTime` must be a `date`, `datetime`, or `datetimezone` value.

@@ -9,7 +9,7 @@ ms.topic: reference
 
 ## Syntax
 
-<pre> 
+<pre>
 Currency.From(
     <b>value</b> as any,
     optional <b>culture</b> as nullable text,

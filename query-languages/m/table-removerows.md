@@ -16,7 +16,7 @@ Table.RemoveRows(
     optional <b>count</b> as nullable number
 ) as table
 </pre>
-  
+
 ## About
 
 Removes `count` of rows from the beginning of the `table`, starting at the `offset` specified. A default count of 1 is used if the `count` parameter isn't provided.

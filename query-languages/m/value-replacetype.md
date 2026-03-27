@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Value.ReplaceType(<b>value</b> as any, <b>type</b> as type) as any
 </pre>
-  
+
 ## About
 
 Replaces the `value`'s type with the provided `type`.

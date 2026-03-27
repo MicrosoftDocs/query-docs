@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 List.Transform(<b>list</b> as list, <b>transform</b> as function) as list
 </pre>
-  
+
 ## About
 
 Returns a new list of values by applying the transform function `transform` to the list, `list`.

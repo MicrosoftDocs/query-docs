@@ -16,7 +16,7 @@ Text.Contains(
     optional <b>comparer</b> as nullable function
 ) as nullable logical
 </pre>
-  
+
 ## About
 
 Detects whether `text` contains the value `substring`. Returns true if the value is found. This function doesn't support wildcards or regular expressions.
@@ -91,7 +91,7 @@ let
         {"PTY-507", #date(2023,6,4), 110}
     }),
     #"Filtered rows" = Table.SelectRows(
-        Source, 
+        Source,
         each Text.Contains([Account Code], "A-") or
             Text.Contains([Account Code], "7"))
 in

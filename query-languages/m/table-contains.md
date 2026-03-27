@@ -16,7 +16,7 @@ Table.Contains(
     optional <b>equationCriteria</b> as any
 ) as logical
 </pre>
-  
+
 ## About
 
 Indicates whether the specified record, `row`, appears as a row in the `table`. An optional parameter `equationCriteria` may be specified to control comparison between the rows of the table.

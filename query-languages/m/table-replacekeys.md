@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.ReplaceKeys(<b>table</b> as table, <b>keys</b> as list) as table
 </pre>
-  
+
 ## About
 
 Replaces the keys of the specified table.

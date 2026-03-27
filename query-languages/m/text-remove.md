@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Text.Remove(<b>text</b> as nullable text, <b>removeChars</b> as any) as nullable text
 </pre>
-  
+
 ## About
 
 Returns a copy of the text value `text` with all the characters from `removeChars` removed.

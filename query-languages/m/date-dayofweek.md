@@ -9,7 +9,7 @@ ms.topic: reference
 
 ## Syntax
 
-<pre> 
+<pre>
 Date.DayOfWeek(<b>dateTime</b> as any, optional <b>firstDayOfWeek</b> as nullable number) as nullable number
 </pre>
 

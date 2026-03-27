@@ -16,7 +16,7 @@ Table.TransformColumnNames(
     optional <b>options</b> as nullable record
 ) as table
 </pre>
-  
+
 ## About
 
 Transforms column names by using the given `nameGenerator` function. Valid options:

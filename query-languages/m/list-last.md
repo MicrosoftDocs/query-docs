@@ -10,7 +10,7 @@ ms.topic: reference
 ## Syntax
 
 <pre>
-List.Last(<b>list</b> as list, optional <b>defaultValue</b> as any) as any 
+List.Last(<b>list</b> as list, optional <b>defaultValue</b> as any) as any
 </pre>
 
 ## About

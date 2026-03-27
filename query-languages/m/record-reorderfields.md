@@ -16,7 +16,7 @@ Record.ReorderFields(
     optional <b>missingField</b> as nullable number
 ) as record
 </pre>
-  
+
 ## About
 
 Reorders the fields of a record to match the order of a list of field names.
@@ -55,8 +55,8 @@ Reorder some of the fields in the record and include `null` for any missing fiel
 let
     Source = [CustomerID = 3, First Name = "Paul", Phone = "543-7890", Purchase = "Fishing Rod"],
     reorderedRecord = Record.ReorderFields(
-        Source, 
-        {"Purchase", "Last Name", "First Name"}, 
+        Source,
+        {"Purchase", "Last Name", "First Name"},
         MissingField.UseNull
     )
 in

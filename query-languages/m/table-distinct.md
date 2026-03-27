@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.Distinct(<b>table</b> as table, optional <b>equationCriteria</b> as any) as table
 </pre>
-  
+
 ## About
 
 Removes duplicate rows from the table. An optional parameter, `equationCriteria`, specifies which columns of the table are tested for duplication. If `equationCriteria` is not specified, all columns are tested.

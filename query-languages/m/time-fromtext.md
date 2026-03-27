@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Time.FromText(<b>text</b> as nullable text, optional <b>options</b> as any) as nullable time
 </pre>
-  
+
 ## About
 
 Creates a `time` value from a textual representation, `text`. An optional `record` parameter, `options`, may be provided to specify additional properties. The `record` can contain the following fields:

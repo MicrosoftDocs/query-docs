@@ -16,7 +16,7 @@ Table.ReplaceMatchingRows(
     optional <b>equationCriteria</b> as any
 ) as table
 </pre>
-  
+
 ## About
 
 Replaces all the specified rows in the `table` with the provided ones. The rows to replace and the replacements are specified in `replacements`, using {old, new} formatting. An optional `equationCriteria` parameter may be specified to control comparison between the rows of the table.

@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Number.Sin(<b>number</b> as nullable number) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the sine of `number`.

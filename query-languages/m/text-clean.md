@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Text.Clean(<b>text</b> as nullable text) as nullable text
 </pre>
-  
+
 ## About
 
 Returns a text value with all control characters of `text` removed.
