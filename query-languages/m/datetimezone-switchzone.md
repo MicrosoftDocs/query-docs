@@ -23,7 +23,7 @@ Changes timezone information to on the datetimezone value `dateTimeZone` to the 
 
 ## Example 1
 
-Change timezone information for #datetimezone(2010, 12, 31, 11, 56, 02, 7, 30) to 8 hours.
+Change timezone information for [#datetimezone](sharpdatetimezone.md)(2010, 12, 31, 11, 56, 02, 7, 30) to 8 hours.
 
 **Usage**
 
@@ -37,7 +37,7 @@ DateTimeZone.SwitchZone(#datetimezone(2010, 12, 31, 11, 56, 02, 7, 30), 8)
 
 ## Example 2
 
-Change timezone information for #datetimezone(2010, 12, 31, 11, 56, 02, 7, 30) to -30 minutes.
+Change timezone information for [#datetimezone](sharpdatetimezone.md)(2010, 12, 31, 11, 56, 02, 7, 30) to -30 minutes.
 
 **Usage**
 

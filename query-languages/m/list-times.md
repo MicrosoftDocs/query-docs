@@ -23,7 +23,7 @@ Returns a list of `time` values of size `count`, starting at `start`. The given 
 
 ## Example
 
-Create a list of 4 values starting from noon (#time(12, 0, 0)) incrementing by one hour (#duration(0, 1, 0, 0)).
+Create a list of 4 values starting from noon ([#time](sharptime.md)(12, 0, 0)) incrementing by one hour ([#duration](sharpduration.md)(0, 1, 0, 0)).
 
 **Usage**
 
