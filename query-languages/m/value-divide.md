@@ -19,4 +19,4 @@ Value.Divide(
 
 ## About
 
-Returns the result of dividing `value1` by `value2`. An optional `precision` parameter may be specified, by default `Precision.Double` is used.
+Returns the result of dividing `value1` by `value2`. An optional `precision` parameter may be specified, by default [`Precision.Double`](precision-type.md) is used.

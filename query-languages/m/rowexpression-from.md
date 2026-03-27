@@ -19,7 +19,7 @@ Returns the abstract syntax tree (AST) for the body of `function`, normalized in
 
 * The function must be a 1-argument lambda.
 * All references to the function parameter are replaced with [`RowExpression.Row`](rowexpression-row.md).
-* All references to columns are replaced with [`RowExpression.Column(columnName)`](rowexpression-column.md).
+* All references to columns are replaced with `RowExpression.Column(*columnName*)`.
 * The AST will be simplified to contain only nodes of the kinds:
   * `Constant`
   * `Invocation`
@@ -29,8 +29,6 @@ Returns the abstract syntax tree (AST) for the body of `function`, normalized in
   * `FieldAccess`
 
 An error is raised if a row expression AST cannot be returned for the body of `function`.
-
-This function is identical to [`ItemExpression.From`](itemexpression-from.md).
 
 ## Example
 

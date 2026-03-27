@@ -21,9 +21,9 @@ Record.TransformFields(
 
 Returns a record after applying transformations specified in list `transformOperations` to `record`. One or more fields may be transformed at a given time.
 
-In the case of a single field being transformed, `transformOperations` is expected to be a list with two items. The first item in `transformOperations` specifies a field name, and the second item in `transformOperations` specifies the function to be used for transformation. For example, `{"Quantity", Number.FromText}`
+In the case of a single field being transformed, `transformOperations` is expected to be a list with two items. The first item in `transformOperations` specifies a field name, and the second item in `transformOperations` specifies the function to be used for transformation. For example, `{"Quantity", [`Number.FromText`](number-fromtext.md)}`
 
-In the case of a multiple fields being transformed, `transformOperations` is expected to be a list of lists, where each inner list is a pair of field name and transformation operation. For example, `{{"Quantity",Number.FromText},{"UnitPrice", Number.FromText}}`
+In the case of a multiple fields being transformed, `transformOperations` is expected to be a list of lists, where each inner list is a pair of field name and transformation operation. For example, `{{"Quantity",[`Number.FromText`](number-fromtext.md)},{"UnitPrice", [`Number.FromText`](number-fromtext.md)}}`
 
 ## Example 1
 

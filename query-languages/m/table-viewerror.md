@@ -15,4 +15,4 @@ Table.ViewError(<b>errorRecord</b> as record) as record
 
 ## About
 
-Creates a modified error record from `errorRecord` which won't trigger a fallback when raised by a handler defined on a view (via [`Table.View`](table-view.md)).
+Creates a modified error record from [`errorRecord`](error-record.md) which won't trigger a fallback when raised by a handler defined on a view (via [`Table.View`](table-view.md)).

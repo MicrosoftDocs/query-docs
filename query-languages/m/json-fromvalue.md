@@ -22,7 +22,7 @@ Produces a JSON representation of a given value `value` with a text encoding spe
 * Lists are represented as JSON arrays
 * Records are represented as JSON objects
 * Tables are represented as an array of objects
-* Dates, times, datetimes, datetimezones, and durations are represented as ISO-8601 text
+* Dates, times, datetimes, datetimezones, and [durations](durations.md) are represented as ISO-8601 text
 * Binary values are represented as base-64 encoded text
 * Types and functions produce an error
 

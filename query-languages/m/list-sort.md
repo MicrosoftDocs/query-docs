@@ -17,16 +17,16 @@ List.Sort(<b>list</b> as list, optional <b>comparisonCriteria</b> as any) as lis
 
 Sorts a list of data, `list`, according to the optional criteria specified. An optional parameter, `comparisonCriteria`, can be specified as the comparison criterion. This can take the following values:
 
-* To control the order, the comparison criterion can be an Order enum value. ([Order.Descending](order-type.md), [Order.Ascending](order-type.md)).
+* To control the order, the comparison criterion can be an Order enum value. ([`Order.Descending`](order-type.md), [`Order.Ascending`](order-type.md)).
 * To compute a key to be used for sorting, a function of 1 argument can be used.
-* To both select a key and control order, comparison criterion can be a list containing the key and order (`{each 1 / _, Order.Descending}`).
+* To both select a key and control order, comparison criterion can be a list containing the key and order (`{each 1 / _, [`Order.Descending`](order-type.md)}`).
 * To completely control the comparison, a function of 2 arguments can be used. This function will be passed two items from the list (any two items, in any order). The function should return one of the following values:
 
   * `-1`: The first item is less than the second item.
   * `0`: The items are equal.
   * `1`: The first item is greater than the second item.
 
-  [Value.Compare](value-compare.md) is a method that can be used to delegate this logic.
+  [`Value.Compare`](value-compare.md) is a method that can be used to delegate this logic.
 
 ## Example 1
 
@@ -58,7 +58,7 @@ List.Sort({2, 3, 1}, Order.Descending)
 
 ## Example 3
 
-Sort the list {2, 3, 1} in descending order using the **Value.Compare** method.
+Sort the list {2, 3, 1} in descending order using the [`Value.Compare`](value-compare.md) method.
 
 **Usage**
 

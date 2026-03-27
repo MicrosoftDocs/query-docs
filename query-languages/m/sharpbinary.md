@@ -42,4 +42,4 @@ Create a binary value from a base 64 encoded text value.
 
 **Output**
 
-`Binary.FromText("1011", BinaryEncoding.Base64)`
+`Binary.FromText("1011", [`BinaryEncoding.Base64`](binaryencoding-type.md))`

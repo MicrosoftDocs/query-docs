@@ -33,4 +33,4 @@ Binary.From("1011")
 
 **Output**
 
-`Binary.FromText("1011", BinaryEncoding.Base64)`
+`Binary.FromText("1011", [`BinaryEncoding.Base64`](binaryencoding-type.md))`
