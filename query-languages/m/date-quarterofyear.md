@@ -19,7 +19,7 @@ Returns a number from 1 to 4 indicating which quarter of the year the date `date
 
 ## Example
 
-Find which quarter of the year the date #date(2011, 12, 31) falls in.
+Find which quarter of the year the date [#date](sharpdate.md)(2011, 12, 31) falls in.
 
 **Usage**
 
