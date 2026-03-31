@@ -16,7 +16,7 @@ Text.StartsWith(
     optional <b>comparer</b> as nullable function
 ) as nullable logical
 </pre>
-  
+
 ## About
 
 Returns true if text value `text` starts with text value `substring`.

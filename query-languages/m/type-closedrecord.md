@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Type.ClosedRecord(<b>type</b> as type) as type
 </pre>
-  
+
 ## About
 
 Returns a closed version of the given `record` `type` (or the same type, if it is already closed).

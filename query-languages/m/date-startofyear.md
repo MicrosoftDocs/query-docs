@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Date.StartOfYear(<b>dateTime</b> as any) as any
 </pre>
-  
+
 ## About
 
 Returns the start of the year that contains `dateTime`. `dateTime` must be a `date`, `datetime`, or `datetimezone` value.

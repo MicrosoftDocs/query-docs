@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Text.Combine(<b>texts</b> as list, optional <b>separator</b> as nullable text) as text
 </pre>
-  
+
 ## About
 
 Returns the result of combining the list of text values, `texts`, into a single text value. Any `null` values present in `texts` are ignored. An optional `separator` used in the final combined text can be specified.

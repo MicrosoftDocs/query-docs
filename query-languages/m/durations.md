@@ -33,7 +33,7 @@ Durations can also be created by subtracting one date and time value from anothe
 
 ```powerquery-m
 let
-    Source = 
+    Source =
     {
         #date(2025, 7, 24) - #date(2025, 7, 23),
         // Result: #duration(1, 0, 0, 0)
@@ -137,7 +137,7 @@ Durations are compatible with date and time values in arithmetic expressions but
 
 ```powerquery-m
 let
-    Source = 
+    Source =
     {
         #datetime(2025, 7, 24, 12, 0, 0) - #datetime(2025, 7, 23, 12, 0, 0),
         // Result: #duration(1, 0, 0, 0)
@@ -195,9 +195,9 @@ let
     TextFormat = Text.Format(
         "Duration = #{0} days, #{1} hours, #{2} minutes, and #{3} seconds.",
         {
-            Duration.Days(Source), 
-            Duration.Hours(Source), 
-            Duration.Minutes(Source), 
+            Duration.Days(Source),
+            Duration.Hours(Source),
+            Duration.Minutes(Source),
             Duration.Seconds(Source)
         }
     )
@@ -217,7 +217,7 @@ These functions return the total value of a duration in a single unit, including
 
 ```powerquery-m
 let
-    Source = 
+    Source =
     {
         Duration.TotalDays(#duration(1, 12, 0, 0)),    // 1.5 days
         Duration.TotalHours(#duration(1, 12, 0, 0)),   // 36 hours
@@ -247,9 +247,9 @@ let
         {#datetime(2025, 7, 24, 22, 30, 0), 172800}
     }),
     AddSeconds = Table.AddColumn(
-        Source, 
-        "EndTime", 
-        each [StartTime] + #duration(0, 0, 0, [Seconds]), 
+        Source,
+        "EndTime",
+        each [StartTime] + #duration(0, 0, 0, [Seconds]),
         type datetime
     )
 in

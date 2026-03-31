@@ -16,7 +16,7 @@ DateTime.AddZone(
     optional <b>timezoneMinutes</b> as nullable number
 ) as nullable datetimezone
 </pre>
-  
+
 ## About
 
 Adds timezone information to the `dateTime` value. The timezone information includes `timezoneHours` and optionally `timezoneMinutes`, which specify the desired offset from UTC time.

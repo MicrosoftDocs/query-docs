@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.ColumnCount(<b>table</b> as table) as number
 </pre>
-  
+
 ## About
 
 Returns the number of columns in the table `table`.

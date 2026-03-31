@@ -15,7 +15,7 @@ Logical.From(<b>value</b> as any) as nullable logical
 
 ## About
 
-Returns a `logical` value from the given `value`. If the given `value` is `null`, **Logical.From** returns `null`. If the given `value` is `logical`, `value` is returned. 
+Returns a `logical` value from the given `value`. If the given `value` is `null`, **Logical.From** returns `null`. If the given `value` is `logical`, `value` is returned.
 
 Values of the following types can be converted to a `logical` value:
 

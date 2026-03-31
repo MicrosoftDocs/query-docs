@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Type.TableRow(<b>table</b> as type) as type
 </pre>
-  
+
 ## About
 
 Returns the row type of the specified table type. The result will always be a record type.

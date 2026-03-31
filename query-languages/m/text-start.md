@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Text.Start(<b>text</b> as nullable text, <b>count</b> as number) as nullable text
 </pre>
-  
+
 ## About
 
 Returns the first `count` characters of `text` as a text value.
@@ -47,7 +47,7 @@ let
     }),
     EmailAddress = Table.AddColumn(
         Source,
-        "Email Address", 
+        "Email Address",
         each Text.Combine({
             Text.Start([First Name], 4),
             Text.Start([Last Name], 3),

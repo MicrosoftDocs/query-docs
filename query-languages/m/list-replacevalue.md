@@ -17,7 +17,7 @@ List.ReplaceValue(
     <b>replacer</b> as function
 ) as list
 </pre>
-  
+
 ## About
 
 Searches a list of values, `list`, for the value `oldValue` and replaces each occurrence with the replacement value `newValue`.

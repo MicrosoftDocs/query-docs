@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 
 # Table.FuzzyGroup
-  
+
 ## Syntax
 
 <pre>
@@ -17,7 +17,7 @@ Table.FuzzyGroup(
     optional <b>options</b> as nullable record
 ) as table
 </pre>
-  
+
 ## About
 
 Groups the rows of `table` by fuzzily matching values in the specified column, `key`, for each row. For each group, a record is constructed containing the key columns (and their values) along with any aggregated columns specified by `aggregatedColumns`. This function cannot guarantee to return a fixed order of rows.

@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Date.DaysInMonth(<b>dateTime</b> as any) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the number of days in the month in the `date`, `datetime`, or `datetimezone` value `dateTime`.

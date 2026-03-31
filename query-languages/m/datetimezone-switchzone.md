@@ -16,7 +16,7 @@ DateTimeZone.SwitchZone(
     optional <b>timezoneMinutes</b> as nullable number
 ) as nullable datetimezone
 </pre>
-  
+
 ## About
 
 Changes timezone information to on the datetimezone value `dateTimeZone` to the new timezone information provided by `timezoneHours` and optionally `timezoneMinutes`. If `dateTimeZone` does not have a timezone component, an error is raised.

@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.MatchesAllRows(<b>table</b> as table, <b>condition</b> as function) as logical
 </pre>
-  
+
 ## About
 
 Indicates whether all the rows in the `table` match the given `condition`. Returns `true` if all of the rows match, `false` otherwise.

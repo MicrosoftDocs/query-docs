@@ -16,7 +16,7 @@ Table.FromPartitions(
     optional <b>partitionColumnType</b> as nullable type
 ) as table
 </pre>
-  
+
 ## About
 
 Returns a table that is the result of combining a set of partitioned tables, `partitions`. `partitionColumn` is the name of the column to add. The type of the column defaults to `any`, but can be specified by `partitionColumnType`.

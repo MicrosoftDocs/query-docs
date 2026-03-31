@@ -17,7 +17,7 @@ List.MinN(
     optional <b>includeNulls</b> as nullable logical
 ) as list
 </pre>
-  
+
 ## About
 
 Returns the minimum value(s) in the list, `list`. The parameter, `countOrCondition`, specifies the number of values to return or a filtering condition. The optional parameter, `comparisonCriteria`, specifies how to compare values in the list.
