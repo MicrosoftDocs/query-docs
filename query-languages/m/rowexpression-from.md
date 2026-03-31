@@ -11,7 +11,7 @@ ms.topic: reference
 
 <pre>
 RowExpression.From(<b>function</b> as function) as record
-</pre>  
+</pre>
 
 ## About
 
@@ -31,16 +31,16 @@ Returns the abstract syntax tree (AST) for the body of `function`, normalized in
 An error is raised if a row expression AST cannot be returned for the body of `function`.
 
 This function is identical to [`ItemExpression.From`](itemexpression-from.md).
-  
+
 ## Example
 
 Returns the AST for the body of the function `each [CustomerID] = "ALFKI"`.
 
 **Usage**
-  
+
 ```powerquery-m
-RowExpression.From(each [CustomerName] = "ALFKI")  
-```  
+RowExpression.From(each [CustomerName] = "ALFKI")
+```
 
 **Output**
 

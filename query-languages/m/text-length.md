@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Text.Length(<b>text</b> as nullable text) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the number of characters in the text `text`.

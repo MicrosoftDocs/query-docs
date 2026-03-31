@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Number.Tan(<b>number</b> as nullable number) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the tangent of `number`.

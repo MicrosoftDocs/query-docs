@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Date.EndOfQuarter(<b>dateTime</b> as any) as any
 </pre>
-  
+
 ## About
 
 Returns the end of the quarter that contains `dateTime`. Time zone information is preserved.

@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 List.Select(<b>list</b> as list, <b>selection</b> as function) as list
 </pre>
-  
+
 ## About
 
 Returns the values from the specified list that match the selection condition.

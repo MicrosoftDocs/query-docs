@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Text.At(<b>text</b> as nullable text, <b>index</b> as number) as nullable text
 </pre>
-  
+
 ## About
 
 Returns the character in the text value, `text` at position `index`. The first character in the text is at position 0.

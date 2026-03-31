@@ -40,7 +40,7 @@ let
       in
         List.Combine(List.Transform(chunks, scoreChunk)),
     Compute.Score = Function.ScalarVector(
-        type function (left as number, right as number) as number, 
+        type function (left as number, right as number) as number,
         Compute.ScoreVector
     ),
     Final = Table.AddColumn(

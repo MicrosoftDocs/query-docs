@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Time.Hour(<b>dateTime</b> as any) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the hour component of the provided `time`, `datetime`, or `datetimezone` value, `dateTime`.

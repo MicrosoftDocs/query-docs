@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 DateTime.From(<b>value</b> as any, optional <b>culture</b> as nullable text) as nullable datetime
 </pre>
-  
+
 ## About
 
 Returns a `datetime` value from the given `value`. An optional `culture` may also be provided (for example, "en-US"). If the given `value` is `null`, **DateTime.From** returns `null`. If the given `value` is `datetime`, `value` is returned. Values of the following types can be converted to a `datetime` value:

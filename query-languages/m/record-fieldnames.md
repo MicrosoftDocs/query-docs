@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Record.FieldNames(<b>record</b> as record) as list
 </pre>
-  
+
 ## About
 
 Returns the names of the fields in the record `record` as text.

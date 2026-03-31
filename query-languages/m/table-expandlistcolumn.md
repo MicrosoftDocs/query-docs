@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.ExpandListColumn(<b>table</b> as table, <b>column</b> as text) as table
 </pre>
-  
+
 ## About
 
 Given a `table` where `column` contains a list of values, splits the list into a row for each value. Values in the other columns are duplicated in each new row created. This function can also expand nested tables by treating them as lists of records.

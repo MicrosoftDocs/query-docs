@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Number.Sqrt(<b>number</b> as nullable number) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the square root of `number`. If `number` is null, **Number.Sqrt** returns null. If it is a negative value, [`Number.NaN`](number-nan.md) is returned (Not a number).

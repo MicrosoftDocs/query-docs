@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Duration.Hours(<b>duration</b> as nullable duration) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the hours portion of `duration`.

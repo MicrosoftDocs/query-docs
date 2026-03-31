@@ -9,7 +9,7 @@ ms.topic: reference
 
 ## Syntax
 
-<pre> 
+<pre>
 Value.Versions(<b>value</b> as any) as table
 </pre>
 

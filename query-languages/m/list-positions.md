@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 List.Positions(<b>list</b> as list) as list
 </pre>
-  
+
 ## About
 
 Returns a list of offsets for the specified input list.

@@ -16,7 +16,7 @@ List.RemoveRange(
     optional <b>count</b> as nullable number
 ) as list
 </pre>
-  
+
 ## About
 
 Removes `count` values in the `list` starting at the specified position, `index`.

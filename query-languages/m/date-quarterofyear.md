@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Date.QuarterOfYear(<b>dateTime</b> as any) as nullable number
 </pre>
-  
+
 ## About
 
 Returns a number from 1 to 4 indicating which quarter of the year the date `dateTime` falls in. `dateTime` can be a `date`, `datetime`, or `datetimezone` value.

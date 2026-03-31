@@ -16,7 +16,7 @@ Table.AggregateTableColumn(
     <b>aggregations</b> as list
 ) as table
 </pre>
-  
+
 ## About
 
 Aggregates tables in `table`[`column`] into multiple columns containing aggregate values for the tables. `aggregations` is used to specify the columns containing the tables to aggregate, the aggregation functions to apply to the tables to generate their values, and the names of the aggregate columns to create.

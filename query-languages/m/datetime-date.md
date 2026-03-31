@@ -10,9 +10,9 @@ ms.topic: reference
 ## Syntax
 
 <pre>
-DateTime.Date(<b>dateTime</b> as any) as nullable date 
+DateTime.Date(<b>dateTime</b> as any) as nullable date
 </pre>
-  
+
 ## About
 
 Returns the date component of the `dateTime` parameter if the parameter is a `date`, `datetime`, or `datetimezone` value, or `null` if the parameter is `null`.

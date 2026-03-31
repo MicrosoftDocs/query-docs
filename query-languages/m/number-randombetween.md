@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Number.RandomBetween(<b>bottom</b> as number, <b>top</b> as number) as number
 </pre>
-  
+
 ## About
 
 Returns a random number between `bottom` and `top`.

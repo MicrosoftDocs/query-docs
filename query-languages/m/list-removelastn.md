@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 List.RemoveLastN(<b>list</b> as list, optional <b>countOrCondition</b> as any) as list
 </pre>
-  
+
 ## About
 
 Returns a list that removes the last `countOrCondition` elements from the end of list `list`. If `list` has less than `countOrCondition` elements, an empty list is returned.

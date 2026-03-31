@@ -17,7 +17,7 @@ Table.AddColumn(
     optional <b>columnType</b> as nullable type
 ) as table
 </pre>
-  
+
 ## About
 
 Adds a column named `newColumnName` to the table `table`. The values for the column are computed using the specified selection function `columnGenerator` with each row taken as an input.

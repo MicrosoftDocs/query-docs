@@ -9,4 +9,4 @@ ms.topic: reference
 
 ## About
 
-A constant value that represents 1 divided by 0.  
+A constant value that represents 1 divided by 0.

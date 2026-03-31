@@ -17,7 +17,7 @@ Table.AlternateRows(
     <b>take</b> as number
 ) as table
 </pre>
-  
+
 ## About
 
 Keeps the initial offset then alternates taking and skipping the following rows.

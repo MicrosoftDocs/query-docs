@@ -41,7 +41,7 @@ let
     divisor = 0,
     result = try if divisor = 0 then
         error Error.Record(
-            "DivideByZero", 
+            "DivideByZero",
             "You attempted to divide by zero."
         )
     else
@@ -97,7 +97,7 @@ in
 ```powerquery-m
 [
     HasError = true,
-    Error = [ 
+    Error = [
         Reason = "CustomerNotFound",
         Message = "Customer ID 12345 wasn't found.",
         Detail = "Customer doesn't exist.",

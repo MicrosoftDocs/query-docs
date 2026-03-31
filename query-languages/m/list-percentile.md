@@ -16,7 +16,7 @@ List.Percentile(
     optional <b>options</b> as nullable record
 ) as any
 </pre>
-  
+
 ## About
 
 Returns one or more sample percentiles of the list `list`. If the value `percentiles` is a number between 0.0 and 1.0, it will be treated as a percentile and the result will be a single value corresponding to that probability. If the value `percentiles` is a list of numbers with values between 0.0 and 1.0, the result will be a list of percentiles corresponding to the input probability.
