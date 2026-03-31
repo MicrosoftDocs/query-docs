@@ -2,7 +2,6 @@
 title: "Use DAX user-defined functions (preview)"
 description: Best practices for using DAX user-defined functions.
 author: hsteffens30
-ms.author: jterh
 ms.topic: best-practice
 ms.date: 09/15/2025
 ms.service: powerbi
