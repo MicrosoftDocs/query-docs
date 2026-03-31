@@ -1,8 +1,6 @@
 ---
 title: "Configure Chinese coded character set (GB18030-2022) support"
 description: Use set UnicodeCharacterBehavior setting to support encoded characters according to GB18030-2022.
-author: jterh
-ms.author: jterh
 ms.topic: article
 ms.date: 01/05/2026
 ms.service: powerbi

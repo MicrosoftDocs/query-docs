@@ -2,7 +2,6 @@
 description: "Learn more about: SAMPLEAXISWITHLOCALMINMAX"
 title: "SAMPLEAXISWITHLOCALMINMAX function (DAX)"
 ms.topic: reference
-author: jterh
 ---
 
 # SAMPLEAXISWITHLOCALMINMAX
