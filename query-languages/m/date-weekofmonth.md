@@ -10,12 +10,12 @@ ms.topic: reference
 ## Syntax
 
 <pre>
-Date.WeekOfMonth(<b>dateTime</b> as any, optional <b>firstDayOfWeek</b> as nullable number) as nullable number  
+Date.WeekOfMonth(<b>dateTime</b> as any, optional <b>firstDayOfWeek</b> as nullable number) as nullable number
 </pre>
-  
+
 ## About
 
-Returns a number from 1 to 6 indicating which week of the month the date `dateTime` falls in. 
+Returns a number from 1 to 6 indicating which week of the month the date `dateTime` falls in.
 
 * `dateTime`: A `datetime` value for which the week-of-the-month is determined.
 

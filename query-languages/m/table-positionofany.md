@@ -9,7 +9,7 @@ ms.topic: reference
 
 ## Syntax
 
-<pre> 
+<pre>
 Table.PositionOfAny(
     <b>table</b> as table,
     <b>rows</b> as list,
@@ -17,7 +17,7 @@ Table.PositionOfAny(
     optional <b>equationCriteria</b> as any
 ) as any
 </pre>
-  
+
 ## About
 
 Returns the row(s) position(s) from the `table` of the first occurrence of the list of `rows`. Returns -1 if no occurrence is found.

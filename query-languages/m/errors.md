@@ -27,7 +27,7 @@ This expression evaluates to the following nested record value, explaining the `
 [
     HasError = true,
     Error =
-        [  
+        [
             Reason = "Expression.Error",
             Message = "negative unit count",
             Detail = null

@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Progress.DataSourceProgress() as any
 </pre>
-  
+
 ## About
 
 This function is intended for internal use only.

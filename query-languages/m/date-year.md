@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Date.Year(<b>dateTime</b> as any) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the year component of the provided `datetime` value, `dateTime`.

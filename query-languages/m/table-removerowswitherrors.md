@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.RemoveRowsWithErrors(<b>table</b> as table, optional <b>columns</b> as nullable list) as table
 </pre>
-  
+
 ## About
 
 Returns a table with the rows removed from the input table that contain an error in at least one of the cells. If a columns list is specified, then only the cells in the specified columns are inspected for errors.

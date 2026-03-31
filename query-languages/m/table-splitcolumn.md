@@ -19,7 +19,7 @@ Table.SplitColumn(
     optional <b>extraColumns</b> as any
 ) as table
 </pre>
-  
+
 ## About
 
 Splits the specified column into a set of additional columns using the specified splitter function.

@@ -6,13 +6,13 @@ ms.topic: reference
 ---
 
 # Table.RemoveFirstN
-  
+
 ## Syntax
 
 <pre>
 Table.RemoveFirstN(<b>table</b> as table, optional <b>countOrCondition</b> as any) as table
 </pre>
-  
+
 ## About
 
 Returns a table that does not contain the first specified number of rows, `countOrCondition`, of the table `table`. The number of rows removed depends on the optional parameter `countOrCondition`.
@@ -85,11 +85,11 @@ Remove the first rows where [CustomerID] <=2 of the table.
 ```powerquery-m
 Table.RemoveFirstN(
     Table.FromRecords({
-        [CustomerID = 1, Name = "Bob", Phone = "123-4567"], 
-        [CustomerID = 2, Name = "Jim", Phone = "987-6543"] , 
-        [CustomerID = 3, Name = "Paul", Phone = "543-7890"] , 
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"] ,
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"] ,
         [CustomerID = 4, Name = "Ringo", Phone = "232-1550"]
-    }), 
+    }),
     each [CustomerID] <= 2
 )
 ```

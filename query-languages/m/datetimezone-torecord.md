@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 DateTimeZone.ToRecord(<b>dateTimeZone</b> as datetimezone) as record
 </pre>
-  
+
 ## About
 
 Returns a record containing the parts of the given datetimezone value, `dateTimeZone`.

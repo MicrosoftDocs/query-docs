@@ -10,9 +10,9 @@ ms.topic: reference
 ## Syntax
 
 <pre>
-Type.FunctionReturn(<b>type</b> as type) as type  
+Type.FunctionReturn(<b>type</b> as type) as type
 </pre>
-  
+
 ## About
 
 Returns a type returned by a function `type`.

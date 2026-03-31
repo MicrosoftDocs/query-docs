@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Type.IsOpenRecord(<b>type</b> as type) as logical
 </pre>
-  
+
 ## About
 
 Returns a `logical` indicating whether a record `type` is open.

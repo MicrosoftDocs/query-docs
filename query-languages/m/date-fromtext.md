@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Date.FromText(<b>text</b> as nullable text, optional <b>options</b> as any) as nullable date
 </pre>
-  
+
 ## About
 
 Creates a date value from a textual representation.
@@ -86,7 +86,7 @@ let
         {"PTY-507", "4 giu. 2024", 110}
     }),
     #"Converted Date" = Table.TransformColumns(
-        Source, 
+        Source,
         {"Posted Date", each Date.FromText(_, [Culture = "it-IT"]), type date}
     )
 in

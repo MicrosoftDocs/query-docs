@@ -10,9 +10,9 @@ ms.topic: reference
 ## Syntax
 
 <pre>
-Date.IsInCurrentQuarter(<b>dateTime</b> as any) as nullable logical 
+Date.IsInCurrentQuarter(<b>dateTime</b> as any) as nullable logical
 </pre>
-  
+
 ## About
 
 Indicates whether the given datetime value `dateTime` occurs during the current quarter, as determined by the current date and time on the system.

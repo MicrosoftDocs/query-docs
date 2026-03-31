@@ -9,10 +9,10 @@ ms.topic: reference
 
 ## Syntax
 
-<pre> 
+<pre>
 Time.From(<b>value</b> as any, optional <b>culture</b> as nullable text) as nullable time
 </pre>
-  
+
 ## About
 
 Returns a `time` value from the given `value`. An optional `culture` may also be provided (for example, "en-US"). If the given `value` is `null`, **Time.From** returns `null`. If the given `value` is `time`, `value` is returned. Values of the following types can be converted to a `time` value:

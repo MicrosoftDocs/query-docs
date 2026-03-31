@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Time.ToRecord(<b>time</b> as time) as record
 </pre>
-  
+
 ## About
 
 Returns a record containing the parts of the given Time value, `time`.

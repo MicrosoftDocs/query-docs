@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.Buffer(<b>table</b> as table, optional <b>options</b> as nullable record) as table
 </pre>
-  
+
 ## About
 
 Buffers a table in memory, isolating it from external changes during evaluation. Buffering is shallow. It forces the evaluation of any scalar cell values, but leaves non-scalar values (records, lists, tables, and so on) as-is.

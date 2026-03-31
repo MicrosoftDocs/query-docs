@@ -9,10 +9,10 @@ ms.topic: reference
 
 ## Syntax
 
-<pre> 
+<pre>
 Table.Keys(<b>table</b> as table) as list
 </pre>
-  
+
 ## About
 
 Returns the keys of the specified table.

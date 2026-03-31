@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 List.Sum(<b>list</b> as list, optional <b>precision</b> as nullable number) as any
 </pre>
-  
+
 ## About
 
 Returns the sum of the non-null values in the list, `list`. Returns null if there are no non-null values in the list.

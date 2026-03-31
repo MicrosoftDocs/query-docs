@@ -16,7 +16,7 @@ Number.Mod(
     optional <b>precision</b> as nullable number
 ) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the remainder resulting from the integer division of `number` by `divisor`. If `number` or `divisor` are `null`, this function returns `null`.
@@ -56,7 +56,7 @@ let
     // Convert to text to inspect precision
     #"Double To Text" = Number.ToText(#"Use Double Precision", "G"),
     #"Decimal To Text" = Number.ToText(#"Use Decimal Precision", "G"),
-    
+
     #"Display Result" = [
         DoublePrecision = #"Double To Text",
         DecimalPrecision = #"Decimal To Text"

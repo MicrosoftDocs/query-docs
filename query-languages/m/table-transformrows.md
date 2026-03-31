@@ -17,7 +17,7 @@ Table.TransformRows(<b>table</b> as table, <b>transform</b> as function) as list
 
 Creates a `list` by applying the `transform` operation to each row in `table`.
 
-## Example 1  
+## Example 1
 
 Transform the rows of a table into a list of numbers.
 

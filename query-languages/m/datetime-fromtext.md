@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 DateTime.FromText(<b>text</b> as nullable text, optional <b>options</b> as any) as nullable datetime
 </pre>
-  
+
 ## About
 
 Creates a `datetime` value from a textual representation, `text`. An optional `record` parameter, `options`, may be provided to specify additional properties. The `record` can contain the following fields:

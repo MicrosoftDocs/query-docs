@@ -10,9 +10,9 @@ ms.topic: reference
 ## Syntax
 
 <pre>
-Date.IsInCurrentYear(<b>dateTime</b> as any) as nullable logical  
+Date.IsInCurrentYear(<b>dateTime</b> as any) as nullable logical
 </pre>
-  
+
 ## About
 
 Indicates whether the given datetime value `dateTime` occurs during the current year, as determined by the current date and time on the system.

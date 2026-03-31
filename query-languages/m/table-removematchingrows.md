@@ -16,7 +16,7 @@ Table.RemoveMatchingRows(
     optional <b>equationCriteria</b> as any
 ) as table
 </pre>
-  
+
 ## About
 
 Removes all occurrences of the specified rows from the table.

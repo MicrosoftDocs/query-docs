@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.RemoveLastN(<b>table</b> as table, optional <b>countOrCondition</b> as any) as table
 </pre>
-  
+
 ## About
 
 Returns a table that does not contain the last `countOrCondition` rows of the table `table`. The number of rows removed depends on the optional parameter `countOrCondition`.

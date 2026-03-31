@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 List.Reverse(<b>list</b> as list) as list
 </pre>
-  
+
 ## About
 
 Returns a list with the values in the list `list` in reversed order.

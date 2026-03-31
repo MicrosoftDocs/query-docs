@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Text.Proper(<b>text</b> as nullable text, optional <b>culture</b> as nullable text) as nullable text
 </pre>
-  
+
 ## About
 
 Returns the result of capitalizing only the first letter of each word in text value `text`. All other letters are returned in lowercase. An optional `culture` may also be provided (for example, "en-US").

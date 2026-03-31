@@ -9,10 +9,10 @@ ms.topic: reference
 
 ## Syntax
 
-<pre> 
+<pre>
 Time.Minute(<b>dateTime</b> as any) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the minute component of the provided `time`, `datetime`, or `datetimezone` value, `dateTime`.

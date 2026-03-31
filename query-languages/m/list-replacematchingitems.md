@@ -16,7 +16,7 @@ List.ReplaceMatchingItems(
     optional <b>equationCriteria</b> as any
 ) as list
 </pre>
-  
+
 ## About
 
 Performs the given replacements to the list `list`. A replacement operation `replacements` consists of a list of two values, the old value and new value, provided in a list. An optional equation criteria value, `equationCriteria`, can be specified to control equality testing.

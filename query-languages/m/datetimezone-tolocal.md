@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 DateTimeZone.ToLocal(<b>dateTimeZone</b> as nullable datetimezone) as nullable datetimezone
 </pre>
-  
+
 ## About
 
 Changes timezone information of the datetimezone value `dateTimeZone` to the local timezone information. If `dateTimeZone` does not have a timezone component, the local timezone information is added.

@@ -17,7 +17,7 @@ Record.AddField(
     optional <b>delayed</b> as nullable logical
 ) as record
 </pre>
-  
+
 ## About
 
 Adds a field to a record `record`, given the name of the field `fieldName` and the value `value`.

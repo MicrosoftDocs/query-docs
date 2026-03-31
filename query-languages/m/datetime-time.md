@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 DateTime.Time(<b>dateTime</b> as any) as nullable time
 </pre>
-  
+
 ## About
 
 Returns the time part of the given datetime value, `dateTime`.

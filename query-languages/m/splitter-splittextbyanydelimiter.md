@@ -16,7 +16,7 @@ Splitter.SplitTextByAnyDelimiter(
     optional <b>startAtEnd</b> as nullable logical
 ) as function
 </pre>
-  
+
 ## About
 
 Returns a function that splits text into a list of text at any of the specified delimiters.

@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Splitter.SplitTextByLengths(<b>lengths</b> as list, optional <b>startAtEnd</b> as nullable logical) as function
 </pre>
-  
+
 ## About
 
 Returns a function that splits text into a list of text by each specified length.

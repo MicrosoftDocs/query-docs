@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Value.As(<b>value</b> as any, <b>type</b> as type) as any
 </pre>
-  
+
 ## About
 
 Returns the value if it's compatible with the specified type. This is equivalent to the "as" operator in M, with the exception that it can accept identifier type references such as Number.Type.
@@ -43,4 +43,4 @@ Value.As("abc", type number)
 
 **Output**
 
-`[Expression.Error] We cannot convert the value "abc" to type Number.`  
+`[Expression.Error] We cannot convert the value "abc" to type Number.`

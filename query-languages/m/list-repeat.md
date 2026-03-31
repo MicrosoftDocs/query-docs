@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 List.Repeat(<b>list</b> as list, <b>count</b> as number) as list
 </pre>
-  
+
 ## About
 
 Returns a list that is `count` repetitions of the original list, `list`.

@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.ColumnsOfType(<b>table</b> as table, <b>listOfTypes</b> as list) as list
 </pre>
-  
+
 ## About
 
 Returns a list with the names of the columns from table `table` that match the types specified in `listOfTypes`.

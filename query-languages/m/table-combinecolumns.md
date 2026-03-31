@@ -17,7 +17,7 @@ Table.CombineColumns(
     <b>column</b> as text
 ) as table
 </pre>
-  
+
 ## About
 
 Combines the specified columns into a new column using the specified combiner function.

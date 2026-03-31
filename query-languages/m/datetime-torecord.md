@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 DateTime.ToRecord(<b>dateTime</b> as datetime) as record
 </pre>
-  
+
 ## About
 
 Returns a record containing the parts of the given datetime value, `dateTime`.

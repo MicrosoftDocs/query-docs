@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Number.Permutations(<b>setSize</b> as nullable number, <b>permutationSize</b> as nullable number) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the number of permutations that can be generated from a number of items, `setSize`, with a specified permutation size, `permutationSize`.

@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Text.TrimStart(<b>text</b> as nullable text, optional <b>trim</b> as any) as nullable text
 </pre>
-  
+
 ## About
 
 Returns the result of removing all leadling characters from the specified `text`. By default, all the leading whitespace characters are removed.

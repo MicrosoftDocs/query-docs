@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Duration.FromText(<b>text</b> as nullable text) as nullable duration
 </pre>
-  
+
 ## About
 
 Returns a duration value from the specified text, `text`. The following formats can be parsed by this function:

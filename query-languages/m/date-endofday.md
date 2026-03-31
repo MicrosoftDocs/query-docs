@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Date.EndOfDay(<b>dateTime</b> as any) as any
 </pre>
-  
+
 ## About
 
 Returns the end of the day represented by `dateTime`. Time zone information is preserved.

@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Number.Ln(<b>number</b> as nullable number) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the natural logarithm of a number, `number`. If `number` is null `Number.Ln` returns null.

@@ -17,7 +17,7 @@ Table.ExpandTableColumn(
     optional <b>newColumnNames</b> as nullable list
 ) as table
 </pre>
-  
+
 ## About
 
 Expands tables in `table`[`column`] into multiple rows and columns. `columnNames` is used to select the columns to expand from the inner table. Specify `newColumnNames` to avoid conflicts between existing columns and new columns.

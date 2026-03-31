@@ -29,7 +29,7 @@ powerquery-mList.Median({5, 3, 1, 7, 9})
 
 **Output**
 
-`5`  
+`5`
 
 ## Related content
 

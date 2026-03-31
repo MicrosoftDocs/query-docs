@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.PrefixColumns(<b>table</b> as table, <b>prefix</b> as text) as table
 </pre>
-  
+
 ## About
 
 Returns a table where all the column names from the `table` provided are prefixed with the given text, `prefix`, plus a period in the form `prefix` `.ColumnName`.

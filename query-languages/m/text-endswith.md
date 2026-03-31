@@ -16,7 +16,7 @@ Text.EndsWith(
     optional <b>comparer</b> as nullable function
 ) as nullable logical
 </pre>
-  
+
 ## About
 
 Indicates whether the given text, `text`, ends with the specified value, `substring`. The indication is case sensitive.

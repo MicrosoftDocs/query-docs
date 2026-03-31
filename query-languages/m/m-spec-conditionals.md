@@ -1,5 +1,5 @@
 ---
-title: M Language Conditionals 
+title: M Language Conditionals
 description: Describes using conditionals in the Power Query M formula language
 ms.topic: language-reference
 ms.date: 6/13/2025

@@ -13,8 +13,8 @@ Specifies an HTTP method.
 
 ## Allowed values
 
-|Name|Value|Description|  
-|------------|---|---------------|  
+|Name|Value|Description|
+|------------|---|---------------|
 |**WebMethod.Delete**|"DELETE"|Specifies the DELETE method for HTTP.|
 |**WebMethod.Get**|"GET"|Specifies the GET method for HTTP.|
 |**WebMethod.Head**|"HEAD"|Specifies the HEAD method for HTTP.|

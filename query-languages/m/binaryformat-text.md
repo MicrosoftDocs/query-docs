@@ -10,7 +10,7 @@ ms.topic: reference
 ## Syntax
 
 <pre>
-BinaryFormat.Text(<b>length</b> as any, optional <b>encoding</b> as nullable number) as function 
+BinaryFormat.Text(<b>length</b> as any, optional <b>encoding</b> as nullable number) as function
 </pre>
 
 ## About

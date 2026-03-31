@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Date.StartOfWeek(<b>dateTime</b> as any, optional <b>firstDayOfWeek</b> as nullable number) as any
 </pre>
-  
+
 ## About
 
 Returns the start of the week that contains `dateTime`. `dateTime` must be a `date`, `datetime`, or `datetimezone` value.

@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.Column(<b>table</b> as table, <b>column</b> as text) as list
 </pre>
-  
+
 ## About
 
 Returns the column of data specified by `column` from the table `table` as a list.

@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Number.Random() as number
 </pre>
-  
+
 ## About
 
 Returns a random number between 0 and 1.

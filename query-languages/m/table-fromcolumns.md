@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.FromColumns(<b>lists</b> as list, optional <b>columns</b> as any) as table
 </pre>
-  
+
 ## About
 
 Creates a table of type `columns` from a list `lists` containing nested lists with the column names and values. If some columns have more values then others, the missing values will be filled with the default value, 'null', if the columns are nullable.

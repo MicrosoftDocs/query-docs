@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 DateTimeZone.RemoveZone(<b>dateTimeZone</b> as nullable datetimezone) as nullable datetime
 </pre>
-  
+
 ## About
 
 Returns a [#datetime](sharpdatetime.md) value from `dateTimeZone` with timezone information removed.

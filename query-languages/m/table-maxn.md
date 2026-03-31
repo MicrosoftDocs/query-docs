@@ -16,7 +16,7 @@ Table.MaxN(
     <b>countOrCondition</b> as any
 ) as table
 </pre>
-  
+
 ## About
 
 Returns the largest row(s) in the `table`, given the `comparisonCriteria`. After the rows are sorted, the `countOrCondition` parameter must be specified to further filter the result. Note the sorting algorithm cannot guarantee a fixed sorted result. The `countOrCondition` parameter can take multiple forms:

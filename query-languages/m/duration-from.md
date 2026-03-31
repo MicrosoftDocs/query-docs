@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Duration.From(<b>value</b> as any) as nullable duration
 </pre>
-  
+
 ## About
 
 Returns the duration value from the given value.

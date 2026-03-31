@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 List.Union(<b>lists</b> as list, optional <b>equationCriteria</b> as any) as list
 </pre>
-  
+
 ## About
 
 Takes a list of lists `lists`, unions the items in the individual lists and returns them in the output list. As a result, the returned list contains all items in any input lists. This operation maintains traditional bag semantics, so duplicate values are matched as part of the Union. An optional equation criteria value, `equationCriteria`, can be specified to control equality testing.

@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Date.DayOfYear(<b>dateTime</b> as any) as nullable number
 </pre>
-  
+
 ## About
 
 Returns a number representing the day of the year in the provided `date`, `datetime`, or `datetimezone` value, `dateTime`.

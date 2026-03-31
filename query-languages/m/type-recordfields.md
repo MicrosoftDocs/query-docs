@@ -16,7 +16,7 @@ Type.RecordFields(<b>type</b> as type) as record
 ## About
 
 Returns a record describing the fields of a record `type`. Each field of the returned record type has a corresponding name and a value, in the form of a record `[ Type = type, Optional = logical ]`.
-  
+
 ## Example
 
 Find the name and value of the record `[ A = number, optional B = any]`.

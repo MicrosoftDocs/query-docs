@@ -11,7 +11,7 @@ ms.topic: reference
 
 <pre>
 Date.IsInNextQuarter(<b>dateTime</b> as any) as nullable logical
-</pre>  
+</pre>
 
 ## About
 

@@ -324,9 +324,9 @@ let
     ),
     #"New Local Date" = DateTimeZone.FromText(#"Local Date Text"),
     #"Local Round Trip" = Text.Format(
-        "Round-tripped #{0} Local to #{1} Local.", 
+        "Round-tripped #{0} Local to #{1} Local.",
         {
-            DateTimeZone.ToText(#"Origin Local Date"), 
+            DateTimeZone.ToText(#"Origin Local Date"),
             DateTimeZone.ToText(#"New Local Date")
         }
     ),
@@ -340,9 +340,9 @@ let
     ),
     #"New UTC Date" = DateTimeZone.FromText(#"UTC Date Text"),
     #"UTC Round Trip" = Text.Format(
-        "Round-tripped #{0} UTC to #{1} UTC.", 
+        "Round-tripped #{0} UTC to #{1} UTC.",
         {
-            DateTimeZone.ToText(#"Origin UTC Date"), 
+            DateTimeZone.ToText(#"Origin UTC Date"),
             DateTimeZone.ToText(#"New UTC Date")
         }
     ),
@@ -356,14 +356,14 @@ let
     ),
     #"New Offset Date" = DateTimeZone.FromText(#"Offset Date Text"),
     #"Offset Round Trip" = Text.Format(
-        "Round-tripped #{0} to #{1}.", 
+        "Round-tripped #{0} to #{1}.",
         {
-            DateTimeZone.ToText(#"Origin Offset Date"), 
+            DateTimeZone.ToText(#"Origin Offset Date"),
             DateTimeZone.ToText(#"New Offset Date")
         }
     ),
 
-    #"Round Trip Results" = 
+    #"Round Trip Results" =
         {#"Local Round Trip", #"UTC Round Trip", #"Offset Round Trip"}
 in
     #"Round Trip Results"
@@ -395,7 +395,7 @@ The following example uses the "r" format specifier to display a time and date v
 let
     date1 = #datetimezone(2024, 4, 10, 6, 30, 0, -7, 0),
     dateOffset = DateTimeZone.ToUtc(date1),
-    Source = 
+    Source =
     {
         DateTimeZone.ToText(date1, [Format = "r"]),
         // Displays Wed, 10 Apr 2024 13:30:00 GMT
@@ -480,7 +480,7 @@ let
     {
         DateTime.ToText(#datetime(2024, 4, 10, 6, 30, 0), [Format = "t", Culture = ""]),
         // Displays 06:30
-        
+
         DateTime.ToText(#datetime(2024, 4, 10, 6, 30, 0), [Format = "t", Culture = "en-US"]),
         // Displays 6:30 AM
 
@@ -507,7 +507,7 @@ let
     {
         DateTime.ToText(#datetime(2024, 4, 10, 6, 30, 0), [Format = "T", Culture = ""]),
         // Displays 06:30:00
-        
+
         DateTime.ToText(#datetime(2024, 4, 10, 6, 30, 0), [Format = "T", Culture = "en-US"]),
         // Displays 6:30:00 AM
 
@@ -540,7 +540,7 @@ let
     {
         DateTime.ToText(#datetime(2024, 4, 10, 6, 30, 0), [Format = "m", Culture = ""]),
         // Displays April 10
-        
+
         DateTime.ToText(#datetime(2024, 4, 10, 6, 30, 0), [Format = "m", Culture = "en-US"]),
         // Displays April 10
 
@@ -567,7 +567,7 @@ let
     {
         DateTime.ToText(#datetime(2024, 4, 10, 6, 30, 0), [Format = "Y", Culture = ""]),
         // Displays 2024 April
-        
+
         DateTime.ToText(#datetime(2024, 4, 10, 6, 30, 0), [Format = "Y", Culture = "en-US"]),
         // Displays April 2024
 

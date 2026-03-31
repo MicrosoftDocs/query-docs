@@ -16,7 +16,7 @@ Text.Replace(
     <b>new</b> as text
 ) as nullable text
 </pre>
-  
+
 ## About
 
 Returns the result of replacing all occurrences of text value `old` in text value `text` with text value `new`. This function is case sensitive.

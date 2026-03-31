@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 DateTimeZone.From(<b>value</b> as any, optional <b>culture</b> as nullable text) as nullable datetimezone
 </pre>
-  
+
 ## About
 
 Creates a `datetimezone` from the given value.

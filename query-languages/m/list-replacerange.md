@@ -17,7 +17,7 @@ List.ReplaceRange(
     <b>replaceWith</b> as list
 ) as list
 </pre>
-  
+
 ## About
 
 Replaces `count` values in the `list` with the list `replaceWith`, starting at specified position, `index`.

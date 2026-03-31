@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.FirstN(<b>table</b> as table, <b>countOrCondition</b> as any) as table
 </pre>
-  
+
 ## About
 
 Returns the first row(s) of the table `table`, depending on the value of `countOrCondition`:

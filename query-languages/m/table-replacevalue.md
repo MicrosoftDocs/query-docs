@@ -18,7 +18,7 @@ Table.ReplaceValue(
     <b>columnsToSearch</b> as list
 ) as table
 </pre>
-  
+
 ## About
 
 Replaces a value with a new value in the specified columns of a table.

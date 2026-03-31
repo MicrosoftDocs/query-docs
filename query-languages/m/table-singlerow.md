@@ -10,9 +10,9 @@ ms.topic: reference
 ## Syntax
 
 <pre>
-Table.SingleRow(<b>table</b> as table) as record  
+Table.SingleRow(<b>table</b> as table) as record
 </pre>
-  
+
 ## About
 
 Returns the single row in the one row `table`. If the `table` does not contain exactly one row, an error is raised.

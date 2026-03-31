@@ -16,7 +16,7 @@ Text.PadEnd(
     optional <b>character</b> as nullable text
 ) as nullable text
 </pre>
-  
+
 ## About
 
 Returns a `text` value padded to length `count` by inserting spaces at the end of the text value `text`. An optional character `character` can be used to specify the character used for padding. The default pad character is a space.

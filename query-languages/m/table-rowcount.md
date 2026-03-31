@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.RowCount(<b>table</b> as table) as number
 </pre>
-  
+
 ## About
 
 Returns the number of rows in the `table`.

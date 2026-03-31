@@ -9,7 +9,7 @@ ms.topic: reference
 
 ## Syntax
 
-<pre> 
+<pre>
 Csv.Document(
     <b>source</b> as any,
     optional <b>columns</b> as any,

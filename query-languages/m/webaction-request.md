@@ -16,7 +16,7 @@ WebAction.Request(
     optional <b>options</b> as nullable record
 ) as action
 </pre>
-  
+
 ## About
 
 Creates an action that, when executed, will return the results of performing a `method` request against `url` using HTTP as a binary value. An optional record parameter, `options`, may be provided to specify additional properties. The record can contain the following fields:

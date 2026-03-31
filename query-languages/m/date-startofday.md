@@ -9,7 +9,7 @@ ms.topic: reference
 
 ## Syntax
 
-<pre> 
+<pre>
 Date.StartOfDay(<b>dateTime</b> as any) as any
 </pre>
 

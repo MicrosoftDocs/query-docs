@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Pdf.Tables(<b>pdf</b> as binary, optional <b>options</b> as nullable record) as table
 </pre>
-  
+
 ## About
 
 Returns any tables found in `pdf`. An optional record parameter, `options`, may be provided to specify additional properties. The record can contain the following fields:

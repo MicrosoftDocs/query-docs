@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 DateTime.IsInPreviousNHours(<b>dateTime</b> as any, <b>hours</b> as number) as nullable logical
 </pre>
-  
+
 ## About
 
 Indicates whether the given datetime value `dateTime` occurs during the previous number of hours, as determined by the current date and time on the system. Note that this function will return false when passed a value that occurs within the current hour.

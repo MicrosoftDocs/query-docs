@@ -15,7 +15,7 @@ Replacer.ReplaceValue(
     <b>old</b> as any,
     <b>new</b> as any) as any
 </pre>
-  
+
 ## About
 
 Replaces the `old` value in the original `value` with the `new` value. This replacer function can be used in `List.ReplaceValue` and `Table.ReplaceValue`.

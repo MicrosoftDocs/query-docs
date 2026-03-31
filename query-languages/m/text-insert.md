@@ -16,7 +16,7 @@ Text.Insert(
     <b>newText</b> as text
 ) as nullable text
 </pre>
-  
+
 ## About
 
 Returns the result of inserting text value `newText` into the text value `text` at position `offset`. Positions start at number 0.

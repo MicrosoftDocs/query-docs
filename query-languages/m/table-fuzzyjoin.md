@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 
 # Table.FuzzyJoin
-  
+
 ## Syntax
 
 <pre>
@@ -19,9 +19,9 @@ Table.FuzzyJoin(
     optional <b>joinOptions</b> as nullable record
 ) as table
 </pre>
-  
+
 ## About
-  
+
 Joins the rows of `table1` with the rows of `table2` based on a fuzzy matching of the values of the key columns selected by `key1` (for `table1`) and `key2` (for `table2`).
 
 Fuzzy matching is a comparison based on similarity of text rather than equality of text.

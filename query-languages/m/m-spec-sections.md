@@ -1,5 +1,5 @@
 ---
-title: M Language Sections 
+title: M Language Sections
 description: Describes using sections in the Power Query M formula language
 ms.topic: language-reference
 ms.date: 10/7/2022
@@ -14,7 +14,7 @@ A _section-document_ is an M program that consists of multiple named expressions
 _section-document:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;section<br/>
 section:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;literal-attributes<sub>opt</sub>_  `section`  _section-name_  `;`  _section-members<sub>opt</sub><br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;literal-attributes<sub>opt</sub>_  `section`  _section-name_  `;`  _section-members<sub>opt</sub><br/>
 section-name:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier<br/>
 section-members:<br/>
@@ -29,10 +29,10 @@ In M, a section is an organizational concept that allows related expressions to 
 The following example shows a section-document:
 
 ```powerquery-m
-section Section1; 
+section Section1;
 
 A = 1;                          //1
-B = 2;                          //2 
+B = 2;                          //2
 C = A + B;                      //3
 ```
 
@@ -44,12 +44,12 @@ _section-access-expression:<br/>
 The following example shows a set of two documents containing sections that are mutually referential:
 
 ```powerquery-m
-section Section1; 
-A = "Hello";                    //"Hello" 
+section Section1;
+A = "Hello";                    //"Hello"
 B = 1 + Section2!A;             //3
 
-section Section2; 
-A = 2;                          //2 
+section Section2;
+A = 2;                          //2
 B = Section1!A & " world!";     //"Hello, world"
 ```
 
@@ -58,28 +58,28 @@ Section members may optionally be declared as `shared`, which omits the requirem
 The following example illustrates the behavior of shared members when used across sections within the same set of documents:
 
 ```powerquery-m
-section Section1;  
-shared A = 1;        // 1 
+section Section1;
+shared A = 1;        // 1
 
-section Section2; 
-B = A + 2;           // 3 (refers to shared A from Section1) 
+section Section2;
+B = A + 2;           // 3 (refers to shared A from Section1)
 
-section Section3; 
-A = "Hello";         // "Hello" 
-B = A + " world";    // "Hello world" (refers to local A) 
+section Section3;
+A = "Hello";         // "Hello"
+B = A + " world";    // "Hello world" (refers to local A)
 C = Section1!A + 2;  // 3
 ```
 
 Defining a shared member with the same name in different sections will produce a valid global environment, however accessing the shared member will raise an error when accessed.
 
 ```powerquery-m
-section Section1; 
-shared A = 1; 
+section Section1;
+shared A = 1;
 
-section Section2; 
-shared A = "Hello"; 
- 
-section Section3; 
+section Section2;
+shared A = "Hello";
+
+section Section3;
 B = A;    //Error: shared member A has multiple definitions
 ```
 
@@ -114,19 +114,19 @@ The `#sections` intrinsic variable returns all sections within the global enviro
 The following example shows a document consisting of two sections and the record produced by evaluating the `#sections` intrinsic variable within the context of that document:
 
 ```powerquery-m
-section Section1; 
-A = 1; 
-B = 2;  
+section Section1;
+A = 1;
+B = 2;
 
 section Section2;
-C = "Hello"; 
-D = "world"; 
- 
-#sections 
-//[ 
-//  Section1 = [ A = 1, B = 2], 
-//  Section2 = [ C = "Hello", D = "world" ] 
-//] 
+C = "Hello";
+D = "world";
+
+#sections
+//[
+//  Section1 = [ A = 1, B = 2],
+//  Section2 = [ C = "Hello", D = "world" ]
+//]
 ```
 
 The following holds when evaluating `#sections`:
@@ -142,17 +142,17 @@ The following example shows a document with two shared members and the correspon
 
 ```powerquery-m
 section Section1;
-shared A = 1; 
-B = 2; 
- 
+shared A = 1;
+B = 2;
+
 Section Section2;
 C = "Hello";
-shared D = "world"; 
- 
-//[ 
-//  A = 1, 
-//  D = "world" 
-//] 
+shared D = "world";
+
+//[
+//  A = 1,
+//  D = "world"
+//]
 ```
 
 The following holds when evaluating `#shared`:

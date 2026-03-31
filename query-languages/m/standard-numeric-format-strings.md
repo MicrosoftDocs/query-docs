@@ -57,7 +57,7 @@ let
     amounts = {16305.32, 18794.16},
     result = Text.Format("    Beginning Balance           Ending Balance#(cr,lf)    #{0}#{1}",
     {
-        Text.PadEnd(Number.ToText(amounts{0}, "C2"), 28), 
+        Text.PadEnd(Number.ToText(amounts{0}, "C2"), 28),
         Text.PadStart(Number.ToText(amounts{1}, "C2"), 14)
     })
 in
@@ -85,14 +85,14 @@ The following example formats a value with the currency format specifier:
 
 ```powerquery-m
 let
-    Source = 
+    Source =
     {
         Number.ToText(12345.6789, "C"),
         Number.ToText(12345.6789, "C3"),
         Number.ToText(12345.6789, "C3", "da-DK")
     }
 in
-    Source 
+    Source
 
 // The example displays the following list on a system whose
 // current culture is English (United States):
@@ -115,8 +115,8 @@ The following example formats a value with the decimal format specifier.
 
 ```powerquery-m
 let
-    Source = 
-    { 
+    Source =
+    {
         Number.ToText(12345, "D"),
         // Displays 12345
 
@@ -130,7 +130,7 @@ let
         // Displays -00012345
     }
 in
-    Source 
+    Source
 ```
 
 <a name="EFormatString"></a>
@@ -149,8 +149,8 @@ The following example formats a value with the exponential format specifier:
 
 ```powerquery-m
 let
-    Source = 
-    { 
+    Source =
+    {
         Number.ToText(12345.6789, "E", ""),
         // Displays 1.234568E+004
 
@@ -164,7 +164,7 @@ let
         // Displays 1,234568E+004
     }
 in
-    Source 
+    Source
 ```
 
 > [!NOTE]
@@ -376,7 +376,7 @@ let
 
     // Output floating point values
     floating = Double.From(10761.937554),
-    #"Floating results" = 
+    #"Floating results" =
     {
         Text.Format("C: #{0}", {Number.ToText(floating, "C", culture)}),         // Displays "C: $10,761.94"
         Text.Format("E: #{0}", {Number.ToText(floating, "E03", culture)}),       // Displays "E: 1.076E+004"
@@ -385,7 +385,7 @@ let
         Text.Format("N: #{0}", {Number.ToText(floating, "N03", culture)}),       // Displays "N: 10,761.938"
         Text.Format("P: #{0}", {Number.ToText(floating/10000, "P02", culture)})  // Displays "P: 107.62%"
     },
-    
+
     // Output integral values
     integral = Int32.From(8395),
     #"Integral results" =

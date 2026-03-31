@@ -17,7 +17,7 @@ List.MaxN(
     optional <b>includeNulls</b> as nullable logical
 ) as list
 </pre>
-  
+
 ## About
 
 Returns the maximum value(s) in the specified list. After the rows are sorted, optional parameters can be specified to further filter the result.

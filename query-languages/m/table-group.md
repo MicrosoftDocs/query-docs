@@ -18,7 +18,7 @@ Table.Group(
     optional <b>comparer</b> as nullable function
 ) as table
 </pre>
-  
+
 ## About
 
 Groups the rows of `table` by the key columns defined by `key`. The `key` can either be a single column name, or a list of column names. For each group, a record is constructed containing the key columns (and their values), along with any aggregated columns specified by `aggregatedColumns`. Optionally, `groupKind` and `comparer` may also be specified.

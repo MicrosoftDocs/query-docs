@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Date.Month(<b>dateTime</b> as any) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the month component of the provided `datetime` value, `dateTime`.

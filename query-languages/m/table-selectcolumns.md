@@ -16,7 +16,7 @@ Table.SelectColumns(
     optional <b>missingField</b> as nullable number
 ) as table
 </pre>
-  
+
 ## About
 
 Returns the `table` with only the specified `columns`.

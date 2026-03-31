@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 List.Mode(<b>list</b> as list, optional <b>equationCriteria</b> as any) as any
 </pre>
-  
+
 ## About
 
 Returns the item that appears most frequently in `list`. If the list is empty an error is raised. If multiple items appear with the same maximum frequency, the last one is chosen. An optional comparison criteria value, `equationCriteria`, can be specified to control equality testing.

@@ -12,10 +12,10 @@ ms.topic: reference
 <pre>
 Table.ToRows(<b>table</b> as table) as list
 </pre>
-  
+
 ## About
 
-Creates a list of nested lists from the table, `table`. Each list item is an inner list that contains the row values.  
+Creates a list of nested lists from the table, `table`. Each list item is an inner list that contains the row values.
 
 ## Example
 

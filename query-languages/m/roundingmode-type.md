@@ -12,7 +12,7 @@ ms.topic: reference
 Specifies rounding direction when there is a tie between the possible numbers to round to.
 
 ## Allowed values
-  
+
 |Name|Value|Description|
 | ---------------- | --- | ----------- |
 |**RoundingMode.Up**|0|Round up when there is a tie between the possible numbers to round to.|

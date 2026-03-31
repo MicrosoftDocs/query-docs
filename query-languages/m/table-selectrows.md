@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.SelectRows(<b>table</b> as table, <b>condition</b> as function) as table
 </pre>
-  
+
 ## About
 
 Returns a table of rows from the `table`, that matches the selection `condition`.

@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 List.StandardDeviation(<b>numbersList</b> as list) as nullable number
 </pre>
-  
+
 ## About
 
 Returns a sample based estimate of the standard deviation of the values in the list, `numbersList`. If `numbersList` is a list of numbers, a number is returned. An error is raised on an empty list or a list of items that is not type `number`.

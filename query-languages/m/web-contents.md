@@ -9,10 +9,10 @@ ms.topic: reference
 
 ## Syntax
 
-<pre> 
+<pre>
 Web.Contents(<b>url</b> as text, optional <b>options</b> as nullable record) as binary
 </pre>
-  
+
 ## About
 
 Returns the contents downloaded from `url` as binary. An optional record parameter, `options`, may be provided to specify additional properties. The record can contain the following fields:

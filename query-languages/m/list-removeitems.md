@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 List.RemoveItems(<b>list1</b> as list, <b>list2</b> as list) as list
 </pre>
-  
+
 ## About
 
 Removes all occurrences of the given values in the `list2` from `list1`. If the values in `list2` don't exist in `list1`, the original list is returned.

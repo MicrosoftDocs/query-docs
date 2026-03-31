@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Splitter.SplitTextByWhitespace(optional <b>quoteStyle</b> as nullable number) as function
 </pre>
-  
+
 ## About
 
 Returns a function that splits text into a list of text at whitespace.

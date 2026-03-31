@@ -18,7 +18,7 @@ Table.AddIndexColumn(
     optional <b>columnType</b> as nullable type
 ) as table
 </pre>
-  
+
 ## About
 
 Appends a column named `newColumnName` to the `table` with explicit position values. An optional value, `initialValue`, the initial index value. An optional value, `increment`, specifies how much to increment each index value.

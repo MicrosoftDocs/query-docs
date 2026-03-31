@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.FindText(<b>table</b> as table, <b>text</b> as text) as table
 </pre>
-  
+
 ## About
 
 Returns the rows in the table `table` that contain the text `text`. If the text is not found, an empty table is returned.

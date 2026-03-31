@@ -14,9 +14,9 @@ Record.RenameFields(
     <b>record</b> as record,
     <b>renames</b> as list,
     optional <b>missingField</b> as nullable number
-) as record  
+) as record
 </pre>
-  
+
 ## About
 
 Returns a record after renaming fields in the input `record` to the new field names specified in list `renames`. For multiple renames, a nested list can be used ({ {old1, new1}, {old2, new2} }).

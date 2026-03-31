@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Number.RoundAwayFromZero(<b>number</b> as nullable number, optional <b>digits</b> as nullable number) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the result of rounding `number` based on the sign of the number. This function will round positive numbers up and negative numbers down. If `digits` is specified, `number` is rounded to the `digits` number of decimal digits.

@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 DateTime.IsInCurrentHour(<b>dateTime</b> as any) as nullable logical
 </pre>
-  
+
 ## About
 
 Indicates whether the given datetime value `dateTime` occurs during the current hour, as determined by the current date and time on the system.

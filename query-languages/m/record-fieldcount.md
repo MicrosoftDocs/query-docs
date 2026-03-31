@@ -10,9 +10,9 @@ ms.topic: reference
 ## Syntax
 
 <pre>
-Record.FieldCount(<b>record</b> as record) as number 
+Record.FieldCount(<b>record</b> as record) as number
 </pre>
-  
+
 ## About
 
 Returns the number of fields in the record `record`.

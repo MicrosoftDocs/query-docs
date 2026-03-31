@@ -17,7 +17,7 @@ Text.ReplaceRange(
     <b>newText</b> as text
 ) as nullable text
 </pre>
-  
+
 ## About
 
 Returns the result of removing a number of characters, `count`, from text value `text` beginning at position `offset` and then inserting the text value `newText` at the same position in `text`.

@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Type.FunctionParameters(<b>type</b> as type) as record
 </pre>
-  
+
 ## About
 
 Returns a record with field values set to the name of the parameters of `type`, and their values set to their corresponding types.

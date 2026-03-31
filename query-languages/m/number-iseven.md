@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Number.IsEven(<b>number</b> as number) as logical
 </pre>
-  
+
 ## About
 
 Indicates if the value, `number`, is even by returning `true` if it is even, `false` otherwise.

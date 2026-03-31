@@ -17,7 +17,7 @@ Table.TransformColumns(
     optional <b>missingField</b> as nullable number
 ) as table
 </pre>
-  
+
 ## About
 
 Transforms the specified table by applying each column operation in a list.
@@ -137,7 +137,7 @@ let
         {{"Date", each if List.Contains(USHolidays, _) then
             if Date.DayOfWeek(_, Day.Sunday) = 5 then
                 Date.AddDays(_, 3)     // Friday to Monday
-            else 
+            else
                 Date.AddDays(_, 1)     // Other to next day
         else _, type date}}
     )
