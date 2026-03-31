@@ -16,7 +16,7 @@ List.RemoveMatchingItems(
     optional <b>equationCriteria</b> as any
 ) as list
 </pre>
-  
+
 ## About
 
 Removes all occurrences of the given values in `list2` from the list `list1`. If the values in `list2` don't exist in `list1`, the original list is returned. An optional equation criteria value, `equationCriteria`, can be specified to control equality testing.

@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.ReplaceErrorValues(<b>table</b> as table, <b>errorReplacement</b> as list) as table
 </pre>
-  
+
 ## About
 
 Replaces the error values in the specified columns of the `table` with the new values in the `errorReplacement` list. The format of the list is {{column1, value1}, ...}. There may only be one replacement value per column, specifying the column more than once will result in an error.

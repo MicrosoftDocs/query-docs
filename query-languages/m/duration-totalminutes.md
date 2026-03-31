@@ -10,9 +10,9 @@ ms.topic: reference
 ## Syntax
 
 <pre>
-Duration.TotalMinutes(<b>duration</b> as nullable duration) as nullable number 
+Duration.TotalMinutes(<b>duration</b> as nullable duration) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the total minutes spanned by `duration`.

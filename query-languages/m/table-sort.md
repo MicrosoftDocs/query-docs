@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.Sort(<b>table</b> as table, <b>comparisonCriteria</b> as any) as table
 </pre>
-  
+
 ## About
 
 Sorts the `table` using the list of one or more column names and optional `comparisonCriteria` in the form { { col1, comparisonCriteria }, {col2} }.

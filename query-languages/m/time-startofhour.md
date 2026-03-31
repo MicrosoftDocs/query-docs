@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Time.StartOfHour(<b>dateTime</b> as any) as any
 </pre>
-  
+
 ## About
 
 Returns the start of the hour represented by `dateTime`. `dateTime` must be a `time`, `datetime` or `datetimezone` value.

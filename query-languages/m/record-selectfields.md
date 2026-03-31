@@ -16,7 +16,7 @@ Record.SelectFields(
     optional <b>missingField</b> as nullable number
 ) as record
 </pre>
-  
+
 ## About
 
 Returns a record which includes only the fields specified in list `fields` from the input `record`.

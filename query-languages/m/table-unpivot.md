@@ -17,7 +17,7 @@ Table.Unpivot(
     <b>valueColumn</b> as text
 ) as table
 </pre>
-  
+
 ## About
 
 Translates a set of columns in a table into attribute-value pairs, combined with the rest of the values in each row.

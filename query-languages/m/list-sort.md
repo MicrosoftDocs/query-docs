@@ -10,7 +10,7 @@ ms.topic: reference
 ## Syntax
 
 <pre>
-List.Sort(<b>list</b> as list, optional <b>comparisonCriteria</b> as any) as list  
+List.Sort(<b>list</b> as list, optional <b>comparisonCriteria</b> as any) as list
 </pre>
 
 ## About

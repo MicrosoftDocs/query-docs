@@ -17,7 +17,7 @@ List.Min(
     optional <b>includeNulls</b> as nullable logical
 ) as any
 </pre>
-  
+
 ## About
 
 Returns the minimum item in the list `list`, or the optional default value `default` if the list is empty. An optional comparisonCriteria value, `comparisonCriteria`, may be specified to determine how to compare the items in the list. If this parameter is null, the default comparer is used.

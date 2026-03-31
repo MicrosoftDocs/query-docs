@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Type.ListItem(<b>type</b> as type) as type
 </pre>
-  
+
 ## About
 
 Returns an item type from a list `type`.

@@ -53,7 +53,7 @@ To demonstrate the difference, the following example generates a table with mult
 
 ```powerquery-m
 let
-    // Create a table with LocalNow and FixedLocalNow columns 
+    // Create a table with LocalNow and FixedLocalNow columns
     TableWithTimes = Table.FromList(
         {1..5},
         each {
@@ -65,13 +65,13 @@ let
     ),
 
     // Format both datetime columns
-    FormatLocalNow = Table.TransformColumns(TableWithTimes, 
+    FormatLocalNow = Table.TransformColumns(TableWithTimes,
         {{"LocalNow", each DateTime.ToText(_, "yyyy-MM-ddThh:mm:ss.fff")}}),
-    FormatFixedNow = Table.TransformColumns(FormatLocalNow, 
+    FormatFixedNow = Table.TransformColumns(FormatLocalNow,
         {{"FixedLocalNow", each DateTime.ToText(_, "yyyy-MM-ddThh:mm:ss.fff")}}),
 
     // Change the table types
-    FinalTable =  Table.TransformColumnTypes(FormatFixedNow, {{"Index", Int64.Type}, 
+    FinalTable =  Table.TransformColumnTypes(FormatFixedNow, {{"Index", Int64.Type},
         {"LocalNow", type text}, {"FixedLocalNow", type text}})
 
 in
@@ -88,7 +88,7 @@ The following example shows how to produce similar results using `DateTimeZone.L
 
 ```powerquery-m
 let
-    // Create a table with LocalNow and FixedLocalNow columns 
+    // Create a table with LocalNow and FixedLocalNow columns
     TableWithTimes = Table.FromList(
         {1..5},
         each {
@@ -100,13 +100,13 @@ let
     ),
 
     // Format both datetimezone columns
-    FormatLocalNow = Table.TransformColumns(TableWithTimes, 
+    FormatLocalNow = Table.TransformColumns(TableWithTimes,
         {{"LocalNow", each DateTimeZone.ToText(_, "yyyy-MM-ddThh:mm:ss.fff:zzz")}}),
-    FormatFixedNow = Table.TransformColumns(FormatLocalNow, 
+    FormatFixedNow = Table.TransformColumns(FormatLocalNow,
         {{"FixedLocalNow", each DateTimeZone.ToText(_, "yyyy-MM-ddThh:mm:ss.fff:zzz")}}),
 
     //  Change the table types
-    FinalTable =  Table.TransformColumnTypes(FormatFixedNow, 
+    FinalTable =  Table.TransformColumnTypes(FormatFixedNow,
         {{"Index", Int64.Type}, {"LocalNow", type text}, {"FixedLocalNow", type text}})
 in
     FinalTable
@@ -130,7 +130,7 @@ The differences between these two functions are similar to the `LocalNow` and `F
 
 ```powerquery-m
 let
-    // Create a table with UtcNow and FixedUtcNow columns 
+    // Create a table with UtcNow and FixedUtcNow columns
     TableWithTimes = Table.FromList(
         {1..5},
         each {
@@ -142,13 +142,13 @@ let
     ),
 
     // Format both datetimezone columns
-    FormatLocalNow = Table.TransformColumns(TableWithTimes, 
+    FormatLocalNow = Table.TransformColumns(TableWithTimes,
         {{"UtcNow", each DateTimeZone.ToText(_, "yyyy-MM-ddThh:mm:ss.fff:zzz")}}),
-    FormatFixedNow = Table.TransformColumns(FormatLocalNow, 
+    FormatFixedNow = Table.TransformColumns(FormatLocalNow,
         {{"FixedUtcNow", each DateTimeZone.ToText(_, "yyyy-MM-ddThh:mm:ss.fff:zzz")}}),
 
     //  Change the table types
-    FinalTable =  Table.TransformColumnTypes(FormatFixedNow, 
+    FinalTable =  Table.TransformColumnTypes(FormatFixedNow,
         {{"Index", Int64.Type}, {"UtcNow", type text}, {"FixedUtcNow", type text}})
 in
     FinalTable

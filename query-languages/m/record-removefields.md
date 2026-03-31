@@ -16,7 +16,7 @@ Record.RemoveFields(
     optional <b>missingField</b> as nullable number
 ) as record
 </pre>
-  
+
 ## About
 
 Returns a record that removes all the fields specified in list `fields` from the input `record`. If the field specified does not exist, an error is raised.

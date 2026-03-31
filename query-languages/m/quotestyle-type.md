@@ -12,7 +12,7 @@ ms.topic: reference
 Specifies the quote style.
 
 ## Allowed values
-  
+
 |Name|Value|Description|
 | ------- | --- | ----------- |
 |**QuoteStyle.None**|0|Quote characters have no significance.|

@@ -16,7 +16,7 @@ DateTimeZone.ToText(
     optional <b>culture</b> as nullable text
 ) as nullable text
 </pre>
-  
+
 ## About
 
 Returns a textual representation of `dateTimeZone`. An optional `record` parameter, `options`, may be provided to specify additional properties. `culture` is only used for legacy workflows. The `record` can contain the following fields:

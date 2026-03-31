@@ -10,7 +10,7 @@ ms.topic: reference
 ## Syntax
 
 <pre>
-List.Average(<b>list</b> as list, optional <b>precision</b> as nullable number) as any 
+List.Average(<b>list</b> as list, optional <b>precision</b> as nullable number) as any
 </pre>
 
 ## About

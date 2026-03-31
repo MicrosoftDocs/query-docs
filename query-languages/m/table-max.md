@@ -9,14 +9,14 @@ ms.topic: reference
 
 ## Syntax
 
-<pre> 
+<pre>
 Table.Max(
     <b>table</b> as table,
     <b>comparisonCriteria</b> as any,
     optional <b>default</b> as any
 ) as any
 </pre>
-  
+
 ## About
 
 Returns the largest row in the `table`, given the `comparisonCriteria`. If the table is empty, the optional `default` value is returned.

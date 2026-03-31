@@ -10,9 +10,9 @@ ms.topic: reference
 ## Syntax
 
 <pre>
-Table.IsEmpty(<b>table</b> as table) as logical 
+Table.IsEmpty(<b>table</b> as table) as logical
 </pre>
-  
+
 ## About
 
 Indicates whether the `table` contains any rows. Returns `true` if there are no rows (i.e. the table is empty), `false` otherwise.

@@ -17,10 +17,10 @@ Table.ReplaceRows(
     <b>rows</b> as list
 ) as table
 </pre>
-  
+
 ## About
 
-Replaces a specified number of rows, `count`, in the input `table` with the specified `rows`, beginning after the `offset`. The `rows` parameter is a list of records. 
+Replaces a specified number of rows, `count`, in the input `table` with the specified `rows`, beginning after the `offset`. The `rows` parameter is a list of records.
 
 * `table`: The table where the replacement is performed.
 * `offset`: The number of rows to skip before making the replacement.

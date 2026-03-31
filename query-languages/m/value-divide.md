@@ -16,7 +16,7 @@ Value.Divide(
     optional <b>precision</b> as nullable number
 ) as any
 </pre>
-  
+
 ## About
 
 Returns the result of dividing `value1` by `value2`. An optional `precision` parameter may be specified, by default `Precision.Double` is used.

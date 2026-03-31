@@ -1,5 +1,5 @@
 ---
-title: M Language Operators 
+title: M Language Operators
 description: Describes using operators in the Power Query M formula language
 ms.topic: language-reference
 ms.date: 2/13/2025
@@ -23,7 +23,7 @@ _parenthesized-expression:_<br/>
 For example:
 
 ```powerquery-m
-1 + 2 * 3       // 7 
+1 + 2 * 3       // 7
 (1 + 2) * 3     // 9
 ```
 
@@ -177,7 +177,7 @@ Value.Metadata( "Mozart" )   // []
 Metadata records are generally _not preserved_ when a value is used with an operator or function that constructs a new value. For example, if two text values are concatenated using the `&` operator, the metadata of the resulting text value is the empty record `[]`. The following expressions are equivalent:
 
 ```powerquery-m
-"Amadeus " & ("Mozart" meta [ Rating = 5 ])  
+"Amadeus " & ("Mozart" meta [ Rating = 5 ])
 "Amadeus " & "Mozart"
 ```
 
@@ -199,11 +199,11 @@ let l = {0, @l} in l
 M handles cyclic values by keeping construction of records, lists, and tables lazy. An attempt to construct a cyclic value that does not benefit from interjected lazy structured values yields an error:
 
 ```powerquery-m
-[A=B, B=A] 
-// [A = Error.Record("Expression.Error", 
-//         "A cyclic reference was encountered during evaluation"), 
-//  B = Error.Record("Expression.Error", 
-//         "A cyclic reference was encountered during evaluation"), 
+[A=B, B=A]
+// [A = Error.Record("Expression.Error",
+//         "A cyclic reference was encountered during evaluation"),
+//  B = Error.Record("Expression.Error",
+//         "A cyclic reference was encountered during evaluation"),
 // ]
 ```
 
@@ -242,12 +242,12 @@ The _item-access-expression_ `x{y}` returns:
 For example:
 
 ```powerquery-m
-{"a","b","c"}{0}                        // "a" 
-{1, [A=2], 3}{1}                        // [A=2] 
-{true, false}{2}                        // error 
-#table({"A","B"},{{0,1},{2,1}}){0}      // [A=0,B=1] 
-#table({"A","B"},{{0,1},{2,1}}){[A=2]}  // [A=2,B=1]  
-#table({"A","B"},{{0,1},{2,1}}){[B=3]}  // error 
+{"a","b","c"}{0}                        // "a"
+{1, [A=2], 3}{1}                        // [A=2]
+{true, false}{2}                        // error
+#table({"A","B"},{{0,1},{2,1}}){0}      // [A=0,B=1]
+#table({"A","B"},{{0,1},{2,1}}){[A=2]}  // [A=2,B=1]
+#table({"A","B"},{{0,1},{2,1}}){[B=3]}  // error
 #table({"A","B"},{{0,1},{2,1}}){[B=1]}  // error
 ```
 
@@ -256,19 +256,19 @@ The _item-access-expression_ also supports the form `x{y}?`, which returns `null
 For example:
 
 ```powerquery-m
-{"a","b","c"}{0}?                       // "a" 
-{1, [A=2], 3}{1}?                       // [A=2] 
-{true, false}{2}?                       // null 
-#table({"A","B"},{{0,1},{2,1}}){0}?     // [A=0,B=1] 
-#table({"A","B"},{{0,1},{2,1}}){[A=2]}? // [A=2,B=1]  
-#table({"A","B"},{{0,1},{2,1}}){[B=3]}? // null 
+{"a","b","c"}{0}?                       // "a"
+{1, [A=2], 3}{1}?                       // [A=2]
+{true, false}{2}?                       // null
+#table({"A","B"},{{0,1},{2,1}}){0}?     // [A=0,B=1]
+#table({"A","B"},{{0,1},{2,1}}){[A=2]}? // [A=2,B=1]
+#table({"A","B"},{{0,1},{2,1}}){[B=3]}? // null
 #table({"A","B"},{{0,1},{2,1}}){[B=1]}? // error
 ```
 
 Item access does not force the evaluation of list or table items other than the one being accessed. For example:
 
 ```powerquery-m
-{ error "a", 1, error "c"}{1}  // 1 
+{ error "a", 1, error "c"}{1}  // 1
 { error "a", error "b"}{1}     // error "b"
 ```
 
@@ -298,7 +298,7 @@ _field-access-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-selection<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;implicit-target-field-selection<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;projection<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;implicit-target-projection<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;implicit-target-projection<br/>
 field-selection:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression field-selector<br/>
 field-selector:<br/>
@@ -312,16 +312,16 @@ _field-name:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quoted-identifier<br/>
 implicit-target-field-selection:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-selector<br/> 
-projection:<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-selector<br/>
+projection:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression required-projection<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primary-expression optional-projection<br/>
 required-projection:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[` _required-selector-list_ `]`<br/>
-_optional-projection:_<br/> 
+_optional-projection:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[` _required-selector-list_ `] ?`<br/> _required-selector-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-field-selector<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-selector-list_ `,` _required-field-selector<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-selector-list_ `,` _required-field-selector<br/>
 implicit-target-projection:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required-projection<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-projection_
@@ -331,24 +331,24 @@ The simplest form of field access is _required field selection_. It uses the ope
 For example:
 
 ```powerquery-m
-[A=1,B=2][B]       // 2 
-[A=1,B=2][C]       // error 
+[A=1,B=2][B]       // 2
+[A=1,B=2][C]       // error
 [A=1,B=2][C]?      // null
 ```
 
-Collective access of multiple fields is supported by the operators for _required record projection_ and _optional record projection_. The operator `x[[y1],[y2],...]` projects the record to a new record with fewer fields (selected by `y1`, `y2`, `...`). If a selected field does not exist, an error is raised. The operator `x[[y1],[y2],...]?` projects the record to a new record with the fields selected by `y1`, `y2`, `...`; if a field is missing, `null` is used instead. 
+Collective access of multiple fields is supported by the operators for _required record projection_ and _optional record projection_. The operator `x[[y1],[y2],...]` projects the record to a new record with fewer fields (selected by `y1`, `y2`, `...`). If a selected field does not exist, an error is raised. The operator `x[[y1],[y2],...]?` projects the record to a new record with the fields selected by `y1`, `y2`, `...`; if a field is missing, `null` is used instead.
 For example:
 
 ```powerquery-m
-[A=1,B=2][[B]]           // [B=2] 
-[A=1,B=2][[C]]           // error 
+[A=1,B=2][[B]]           // [B=2]
+[A=1,B=2][[C]]           // error
 [A=1,B=2][[B],[C]]?      // [B=2,C=null]
 ```
 
 The forms `[y]` and `[y]?` are supported as a _shorthand_ reference to the identifier `_` (underscore). The following two expressions are equivalent:
 
 ```powerquery-m
-[A]                 
+[A]
 _[A]
 ```
 
@@ -361,28 +361,28 @@ let _ = [A=1,B=2] in [A] //1
 The form `[[y1],[y2],...]` and `[[y1],[y2],...]?` are also supported as a shorthand and the following two expressions are likewise equivalent:
 
 ```powerquery-m
-[[A],[B]]                 
+[[A],[B]]
 _[[A],[B]]
 ```
 
 The shorthand form is particularly useful in combination with the `each` shorthand, a way to introduce a function of a single parameter named `_` (for details, see [Simplified declarations](m-spec-functions.md#simplified-declarations)). Together, the two shorthands simplify common higher-order functional expressions:
 
 ```powerquery-m
-List.Select( {[a=1, b=1], [a=2, b=4]}, each [a] = [b]) 
+List.Select( {[a=1, b=1], [a=2, b=4]}, each [a] = [b])
 // {[a=1, b=1]}
 ```
 
 The above expression is equivalent to the following more cryptic looking longhand:
 
 ```powerquery-m
-List.Select( {[a=1, b=1], [a=2, b=4]}, (_) => _[a] = _[b]) 
+List.Select( {[a=1, b=1], [a=2, b=4]}, (_) => _[a] = _[b])
 // {[a=1, b=1]}
 ```
 
 Field access does not force the evaluation of fields other than the one(s) being accessed. For example:
 
 ```powerquery-m
-[A=error "a", B=1, C=error "c"][B]  // 1 
+[A=error "a", B=1, C=error "c"][B]  // 1
 [A=error "a", B=error "b"][B]       // error "b"
 ```
 
@@ -409,9 +409,9 @@ _metadata-expression:<br/>
 The following example constructs a text value with a metadata record using the `meta` operator and then accesses the metadata record of the resulting value using `Value.Metadata`:
 
 ```powerquery-m
-Value.Metadata( "Mozart" meta [ Rating = 5 ] ) 
+Value.Metadata( "Mozart" meta [ Rating = 5 ] )
 // [Rating = 5 ]
-Value.Metadata( "Mozart" meta [ Rating = 5 ] )[Rating] 
+Value.Metadata( "Mozart" meta [ Rating = 5 ] )[Rating]
 // 5
 ```
 
@@ -428,8 +428,8 @@ The following holds when applying the metadata combining operator `x meta y`:
 The standard library functions `Value.RemoveMetadata` and `Value.ReplaceMetadata` can be used to remove all metadata from a value and to replace a value's metadata (rather than merge metadata into possibly existing metadata). The following expressions are equivalent:
 
 ```powerquery-m
-x meta y  
-Value.ReplaceMetadata(x, Value.Metadata(x) & y) 
+x meta y
+Value.ReplaceMetadata(x, Value.Metadata(x) & y)
 Value.RemoveMetadata(x) meta (Value.Metadata(x) & y)
 ```
 
@@ -445,18 +445,18 @@ _equality-expression:<br/>
 For example:
 
 ```powerquery-m
-1 = 1            // true 
-1 = 2            // false 
-1 <> 1           // false 
-1 <> 2           // true 
-null = true      // false 
+1 = 1            // true
+1 = 2            // false
+1 <> 1           // false
+1 <> 2           // true
+null = true      // false
 null = null      // true
 ```
 
 Metadata is not part of equality or inequality comparison. For example:
 
 ```powerquery-m
-(1 meta [ a = 1 ]) = (1 meta [ a = 2 ]) // true 
+(1 meta [ a = 1 ]) = (1 meta [ a = 2 ]) // true
 (1 meta [ a = 1 ]) = 1                  // true
 ```
 
@@ -485,17 +485,17 @@ The equality operators are defined for the following types:
 * The `null` value is only equal to itself.
 
 ```powerquery-m
-    null = null    // true 
-    null = true    // false 
+    null = null    // true
+    null = true    // false
     null = false   // false
 ```
 
 * The logical values `true` and `false` are only equal to themselves. For example:
 
 ```powerquery-m
-    true = true      // true 
-    false = false    // true 
-    true = false     // false 
+    true = true      // true
+    false = false    // true
+    true = false     // false
     true = 1         // false
 ```
 
@@ -510,10 +510,10 @@ The equality operators are defined for the following types:
        For example:
 
 ```powerquery-m
-        1 = 1,              // true 
-        1.0 = 1             // true 
-        2 = 1               // false 
-        #nan = #nan         // false 
+        1 = 1,              // true
+        1.0 = 1             // true
+        2 = 1               // false
+        #nan = #nan         // false
         #nan <> #nan        // true
 ```
 
@@ -538,8 +538,8 @@ The equality operators are defined for the following types:
       For example:
 
       ```powerquery-m
-        {1, 2} = {1, 2}     // true 
-        {2, 1} = {1, 2}     // false 
+        {1, 2} = {1, 2}     // true
+        {2, 1} = {1, 2}     // false
         {1, 2, 3} = {1, 2}  // false
       ```
 
@@ -554,9 +554,9 @@ The equality operators are defined for the following types:
       For example:
 
       ```powerquery-m
-        [ A = 1, B = 2 ] = [ A = 1, B = 2 ]        // true 
-        [ B = 2, A = 1 ] = [ A = 1, B = 2 ]        // true 
-        [ A = 1, B = 2, C = 3 ] = [ A = 1, B = 2 ] // false 
+        [ A = 1, B = 2 ] = [ A = 1, B = 2 ]        // true
+        [ B = 2, A = 1 ] = [ A = 1, B = 2 ]        // true
+        [ A = 1, B = 2, C = 3 ] = [ A = 1, B = 2 ] // false
         [ A = 1 ] = [ A = 1, B = 2 ]               // false
       ```
 
@@ -573,8 +573,8 @@ The equality operators are defined for the following types:
       For example:
 
       ```powerquery-m
-        #table({"A","B"},{{1,2}}) = #table({"A","B"},{{1,2}}) // true 
-        #table({"A","B"},{{1,2}}) = #table({"X","Y"},{{1,2}}) // false 
+        #table({"A","B"},{{1,2}}) = #table({"A","B"},{{1,2}}) // true
+        #table({"A","B"},{{1,2}}) = #table({"X","Y"},{{1,2}}) // false
         #table({"A","B"},{{1,2}}) = #table({"B","A"},{{2,1}}) // true
       ```
 
@@ -609,11 +609,11 @@ These operators are used to determine the relative ordering relationship between
 For example:
 
 ```powerquery-m
-0 <= 1            // true 
-null < 1          // null 
-null <= null      // null 
-"ab" < "abc"      // true 
-#nan >= #nan      // false  
+0 <= 1            // true
+null < 1          // null
+null <= null      // null
+"ab" < "abc"      // true
+#nan >= #nan      // false
 #nan <= #nan      // false
 ```
 
@@ -665,7 +665,7 @@ _logical-or-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logical-and-expression</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logical-and-expression_  `or`  _logical-or-expression<br/>
 logical-and-expression:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is-expression<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is-expression<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is-expression_  `and`  _logical-and-expression_
 
 The `or` operator returns `true` when at least one of its operands is `true`. The right operand is evaluated if and only if the left operand is not `true`.
@@ -773,7 +773,7 @@ The sum of two numbers is computed using the _addition operator_, producing a nu
 For example:
 
 ```powerquery-m
-1 + 1             // 2 
+1 + 1             // 2
 #nan + #infinity  // #nan
 ```
 
@@ -797,7 +797,7 @@ The addition operator `+` over numbers uses Double Precision; the standard libra
 The sum of two durations is the duration representing the sum of the number of 100nanosecond ticks represented by the durations. For example:
 
 ```powerquery-m
-#duration(2,1,0,15.1) + #duration(0,1,30,45.3) 
+#duration(2,1,0,15.1) + #duration(0,1,30,45.3)
 // #duration(2, 2, 31, 0.4)
 ```
 
@@ -822,28 +822,28 @@ A _datetime_ `x` and a duration `y` may be added using `x + y` to compute a new 
 The following examples show calculating the absolute temporal sum when the datetime specifies the _days since epoch_:
 
 ```powerquery-m
-#date(2010,05,20) + #duration(0,8,0,0) 
-    //#datetime( 2010, 5, 20, 8, 0, 0 ) 
-    //2010-05-20T08:00:00 
- 
-#date(2010,01,31) + #duration(30,08,0,0) 
-    //#datetime(2010, 3, 2, 8, 0, 0) 
-    //2010-03-02T08:00:00 
- 
-#datetime(2010,05,20,12,00,00,-08) + #duration(0,04,30,00) 
-    //#datetime(2010, 5, 20, 16, 30, 0, -8, 0) 
-    //2010-05-20T16:30:00-08:00 
- 
-#datetime(2010,10,10,0,0,0,0) + #duration(1,0,0,0) 
-   //#datetime(2010, 10, 11, 0, 0, 0, 0, 0) 
+#date(2010,05,20) + #duration(0,8,0,0)
+    //#datetime( 2010, 5, 20, 8, 0, 0 )
+    //2010-05-20T08:00:00
+
+#date(2010,01,31) + #duration(30,08,0,0)
+    //#datetime(2010, 3, 2, 8, 0, 0)
+    //2010-03-02T08:00:00
+
+#datetime(2010,05,20,12,00,00,-08) + #duration(0,04,30,00)
+    //#datetime(2010, 5, 20, 16, 30, 0, -8, 0)
+    //2010-05-20T16:30:00-08:00
+
+#datetime(2010,10,10,0,0,0,0) + #duration(1,0,0,0)
+   //#datetime(2010, 10, 11, 0, 0, 0, 0, 0)
    //2010-10-11T00:00:00+00:00
 ```
 
 The following example shows calculating the datetime offset by duration for a given time:
 
 ```powerquery-m
-#time(8,0,0) + #duration(30,5,0,0) 
-   //#time(13, 0, 0) 
+#time(8,0,0) + #duration(30,5,0,0)
+   //#time(13, 0, 0)
    //13:00:00
 ```
 
@@ -875,7 +875,7 @@ Errors raised when evaluating either operand are propagated.
 The difference between two numbers is computed using the _subtraction operator_, producing a number. For example:
 
 ```powerquery-m
-1 - 1                // 0 
+1 - 1                // 0
 #nan - #infinity     // #nan
 ```
 
@@ -899,7 +899,7 @@ The subtraction operator `-` over numbers uses Double Precision; the standard li
 The difference of two durations is the duration representing the difference between the number of 100-nanosecond ticks represented by each duration. For example:
 
 ```powerquery-m
-#duration(1,2,30,0) - #duration(0,0,0,30.45) 
+#duration(1,2,30,0) - #duration(0,0,0,30.45)
 // #duration(1, 2, 29, 29.55)
 ```
 
@@ -908,11 +908,11 @@ The difference of two durations is the duration representing the difference betw
 A _datetime_ `x` and a duration `y` may be subtracted using `x - y` to compute a new _datetime_. Here, _datetime_ stands for any of `date`, `datetime`, `datetimezone`, or `time`. The resulting _datetime_ has a distance from `x` on a linear timeline that is exactly the magnitude of `y`, in the direction opposite the sign of `y`. Subtracting positive durations yields results that are backwards in time relative to `x`, while subtracting negative values yields results that are forwards in time.
 
 ```powerquery-m
-#date(2010,05,20) - #duration(00,08,00,00) 
-   //#datetime(2010, 5, 19, 16, 0, 0) 
-   //2010-05-19T16:00:00 
-#date(2010,01,31) - #duration( 30,08,00,00) 
-   //#datetime(2009, 12, 31, 16, 0, 0) 
+#date(2010,05,20) - #duration(00,08,00,00)
+   //#datetime(2010, 5, 19, 16, 0, 0)
+   //2010-05-19T16:00:00
+#date(2010,01,31) - #duration( 30,08,00,00)
+   //#datetime(2009, 12, 31, 16, 0, 0)
    //2009-12-31T16:00:00
 ```
 
@@ -921,16 +921,16 @@ A _datetime_ `x` and a duration `y` may be subtracted using `x - y` to compute a
 Two _datetimes_ `t` and `u` may be subtracted using `t - u` to compute the duration between them. Here, _datetime_ stands for any of `date`, `datetime`, `datetimezone`, or `time`. The duration produced by subtracting `u` from `t` must yield `t` when added to `u`.
 
 ```powerquery-m
-#date(2010,01,31) - #date(2010,01,15) 
-// #duration(16,00,00,00) 
-// 16.00:00:00 
- 
-#date(2010,01,15)- #date(2010,01,31) 
-// #duration(-16,00,00,00) 
-// -16.00:00:00 
- 
-#datetime(2010,05,20,16,06,00,-08,00) - 
-#datetime(2008,12,15,04,19,19,03,00) 
+#date(2010,01,31) - #date(2010,01,15)
+// #duration(16,00,00,00)
+// 16.00:00:00
+
+#date(2010,01,15)- #date(2010,01,31)
+// #duration(-16,00,00,00)
+// -16.00:00:00
+
+#datetime(2010,05,20,16,06,00,-08,00) -
+#datetime(2008,12,15,04,19,19,03,00)
 // #duration(521,22,46,41)
 // 521.22:46:41
 ```
@@ -938,7 +938,7 @@ Two _datetimes_ `t` and `u` may be subtracted using `t - u` to compute the durat
 Subtracting `t - u` when `u > t` results in a negative duration:
 
 ```powerquery-m
-#time(01,30,00) - #time(08,00,00) 
+#time(01,30,00) - #time(08,00,00)
 // #duration(0, -6, -30, 0)
 ```
 
@@ -969,14 +969,14 @@ Errors raised when evaluating either operand are propagated.
 The product of two numbers is computed using the _multiplication operator_, producing a number. For example:
 
 ```powerquery-m
-2 * 4                // 8 
-6 * null             // null 
+2 * 4                // 8
+6 * null             // null
 #nan * #infinity     // #nan
 ```
 
 The multiplication operator `*` over numbers uses Double Precision; the standard library function `Value.Multiply` can be used to specify Decimal Precision. The following holds when computing a product of numbers:
 
-* The product in Double Precision is computed according to the rules of 64-bit binary double-precision IEEE 754 arithmetic [IEEE 754-2008](https://ieeexplore.ieee.org/servlet/opac?punumber=4610933). The following table lists the results of all possible combinations of nonzero finite values, zeros, infinities, and NaN's. In the table, `x` and `y` are positive finite values. `z` is the result of `x * y`. If the result is too large for the destination type, `z` is infinity. If the result is too small for the destination type, `z` is zero. 
+* The product in Double Precision is computed according to the rules of 64-bit binary double-precision IEEE 754 arithmetic [IEEE 754-2008](https://ieeexplore.ieee.org/servlet/opac?punumber=4610933). The following table lists the results of all possible combinations of nonzero finite values, zeros, infinities, and NaN's. In the table, `x` and `y` are positive finite values. `z` is the result of `x * y`. If the result is too large for the destination type, `z` is infinity. If the result is too small for the destination type, `z` is zero.
 
    | * | +y | -y | +0 | -0 | +&#8734; | -&#8734; | NaN |
    | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -995,13 +995,13 @@ The multiplication operator `*` over numbers uses Double Precision; the standard
 The product of a duration and a number is the duration representing the number of 100nanosecond ticks represented by the duration operand times the number operand. For example:
 
 ```powerquery-m
-#duration(2,1,0,15.1) * 2 
+#duration(2,1,0,15.1) * 2
 // #duration(4, 2, 0, 30.2)
 ```
 
 ### Division operator
 
-The interpretation of the division operator (`x / y`) is dependent on the kind of value of the evaluated expressions `x` and `y`, as follows: 
+The interpretation of the division operator (`x / y`) is dependent on the kind of value of the evaluated expressions `x` and `y`, as follows:
 
 | X | Y | Result | Interpretation |
 | --- | --- | --- | --- |
@@ -1022,10 +1022,10 @@ Errors raised when evaluating either operand are propagated.
 The quotient of two numbers is computed using the _division operator_, producing a number. For example:
 
 ```powerquery-m
-8 / 2               // 4 
-8 / 0               // #infinity 
-0 / 0               // #nan 
-0 / null            // null 
+8 / 2               // 4
+8 / 0               // #infinity
+0 / 0               // #nan
+0 / null            // null
 #nan / #infinity    // #nan
 ```
 
@@ -1050,7 +1050,7 @@ The division operator `/` over numbers uses Double Precision; the standard libra
 The quotient of two durations is the number representing the quotient of the number of 100nanosecond ticks represented by the durations. For example:
 
 ```powerquery-m
-#duration(2,0,0,0) / #duration(0,1,30,0) 
+#duration(2,0,0,0) / #duration(0,1,30,0)
 // 32
 ```
 
@@ -1059,7 +1059,7 @@ The quotient of two durations is the number representing the quotient of the num
 The quotient of a duration `x` and a number `y` is the duration representing the quotient of the number of 100-nanosecond ticks represented by the duration `x` and the number `y`. For example:
 
 ```powerquery-m
-#duration(2,0,0,0) / 32 
+#duration(2,0,0,0) / 32
 // #duration(0,1,30,0)
 ```
 
@@ -1116,7 +1116,7 @@ Two records can be merged using `x & y`, producing a record that includes fields
 The following examples illustrate merging records:
 
 ```powerquery-m
-[ x = 1 ] & [ y = 2 ]                // [ x = 1, y = 2 ] 
+[ x = 1 ] & [ y = 2 ]                // [ x = 1, y = 2 ]
 [ x = 1, y = 2 ] & [ x = 3, z = 4 ]  // [ x = 3, y = 2, z = 4 ]
 ```
 
@@ -1141,7 +1141,7 @@ A date `x` can be merged with a time `y` using `x & y`, producing a datetime tha
 The following example illustrates merging a date and a time:
 
 ```powerquery-m
-#date(2013,02,26) & #time(09,17,00) 
+#date(2013,02,26) & #time(09,17,00)
 // #datetime(2013,02,26,09,17,00)
 ```
 
@@ -1176,9 +1176,9 @@ For other values, an error with reason code `"Expression.Error"` is raised.
 The unary plus operator allows a `+` sign to be applied to a number, datetime, or null value. The result is that same value. For example:
 
 ```powerquery-m
-+ - 1                 // -1 
-+ + 1                 // 1 
-+ #nan                // #nan 
++ - 1                 // -1
++ + 1                 // 1
++ #nan                // #nan
 + #duration(0,1,30,0) // #duration(0,1,30,0)
 ```
 
@@ -1203,12 +1203,12 @@ For other values, an error with reason code `"Expression.Error"` is raised.
 The unary minus operator is used to change the sign of a number or duration. For example:
 
 ```powerquery-m
-* (1 + 1)       // -2 
-* - 1           // 1 
-* - - 1         // -1 
-* #nan          // #nan 
-* #infinity     // -#infinity 
-* #duration(1,0,0,0)  // #duration(-1,0,0,0) 
+* (1 + 1)       // -2
+* - 1           // 1
+* - - 1         // -1
+* #nan          // #nan
+* #infinity     // -#infinity
+* #duration(1,0,0,0)  // #duration(-1,0,0,0)
 * #duration(0,1,30,0) // #duration(0,-1,-30,0)
 ```
 
@@ -1230,8 +1230,8 @@ The logical negation operator (`not`) is defined for the following kinds of valu
 This operator computes the logical `not` operation on a given logical value. For example:
 
 ```powerquery-m
-not true             // false 
-not false            // true 
+not true             // false
+not false            // true
 not (true and true)  // false
 ```
 
@@ -1259,7 +1259,7 @@ The expression `x is y` returns `true` if the ascribed type of `x` is compatible
 
 _is-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as-expression<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is-expression_ `is`  _primitive-or-nullable-primitive-type<br /> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is-expression_ `is`  _primitive-or-nullable-primitive-type<br />
 primitive-or-nullable-primitive-type:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`nullable`_<sub>opt</sub> primitive-type_<br />
 
@@ -1298,8 +1298,8 @@ The expression `x as y` is evaluated as follows:
 Examples:
 
 ```powerquery-m
-1 as number               // 1 
-"A" as number             // error 
+1 as number               // 1
+"A" as number             // error
 null as nullable number   // null
 ```
 

@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Date.EndOfMonth(<b>dateTime</b> as any) as any
 </pre>
-  
+
 ## About
 
 Returns the end of the month that contains `dateTime`.
