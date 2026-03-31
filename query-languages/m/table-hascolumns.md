@@ -10,9 +10,9 @@ ms.topic: reference
 ## Syntax
 
 <pre>
-Table.HasColumns(<b>table</b> as table, <b>columns</b> as any) as logical 
+Table.HasColumns(<b>table</b> as table, <b>columns</b> as any) as logical
 </pre>
-  
+
 ## About
 
 Indicates whether the `table` contains the specified column(s), `columns`. Returns `true` if the table contains the column(s), `false` otherwise.

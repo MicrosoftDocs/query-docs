@@ -17,7 +17,7 @@ Table.ExpandRecordColumn(
     optional <b>newColumnNames</b> as nullable list
 ) as table
 </pre>
-  
+
 ## About
 
 Given the `column` of records in the input `table`, creates a table with a column for each field in the record. Optionally, `newColumnNames` may be specified to ensure unique names for the columns in the new table.

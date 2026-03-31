@@ -10,9 +10,9 @@ ms.topic: reference
 ## Syntax
 
 <pre>
-Record.FromTable(<b>table</b> as table) as record  
+Record.FromTable(<b>table</b> as table) as record
 </pre>
-  
+
 ## About
 
 Returns a record from a table of records `table` containing field names and value names `{[Name = name, Value = value]}`. An error is raised if the field names are not unique.

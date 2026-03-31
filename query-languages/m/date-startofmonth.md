@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Date.StartOfMonth(<b>dateTime</b> as any) as any
 </pre>
-  
+
 ## About
 
 Returns the start of the month that contains `dateTime`. `dateTime` must be a `date` or `datetime` value.

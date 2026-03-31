@@ -16,7 +16,7 @@ Text.Format(
     optional <b>culture</b> as nullable text
 ) as text
 </pre>
-  
+
 ## About
 
 Returns formatted text that is created by applying `arguments` from a list or record to a format string `formatString`. An optional `culture` may also be provided (for example, "en-US").

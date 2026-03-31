@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 DateTime.IsInPreviousNSeconds(<b>dateTime</b> as any, <b>seconds</b> as number) as nullable logical
 </pre>
-  
+
 ## About
 
 Indicates whether the given datetime value `dateTime` occurs during the previous number of seconds, as determined by the current date and time on the system. Note that this function will return false when passed a value that occurs within the current second.

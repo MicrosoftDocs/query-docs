@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Record.Combine(<b>records</b> as list) as record
 </pre>
-  
+
 ## About
 
 Combines the records in the given `records`. If the `records` contains non-record values, an error is returned.

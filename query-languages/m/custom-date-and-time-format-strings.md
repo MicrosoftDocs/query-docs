@@ -15,7 +15,7 @@ In formatting operations, custom date and time format strings can be used with t
 
 ```powerquery-m
 let
-    Source = 
+    Source =
     {
         Text.From("Today is " & Date.ToText(#date(2011, 6, 10), [Format = "MMMM dd yyyy"]) & "."),
         Text.Format("The current date and time: #{0}", {DateTimeZone.ToText(
@@ -36,8 +36,8 @@ In parsing operations, custom date and time format strings can be used with the 
 let
     dateValues = { "30-12-2011", "12-30-2011", "30-12-11", "12-30-11"},
     pattern = "MM-dd-yy",
-    convertedDates = List.Transform(dateValues, (dateValue) => 
-        try Text.Format("Converted '#{0}' to #{1}.", {dateValue, DateTime.FromText(dateValue, [Format=pattern])}) 
+    convertedDates = List.Transform(dateValues, (dateValue) =>
+        try Text.Format("Converted '#{0}' to #{1}.", {dateValue, DateTime.FromText(dateValue, [Format=pattern])})
         otherwise Text.Format("Unable to convert '#{0}' to a date and time.", {dateValue}))
 in
     convertedDates
@@ -119,7 +119,7 @@ let
     Source =
     {
         DateTime.ToText(#datetime(2024, 8, 29, 19, 27, 15), [Format = "d, M", Culture = ""]),
-        // Displays 29, 8 
+        // Displays 29, 8
 
         DateTime.ToText(#datetime(2024, 8, 29, 19, 27, 15), [Format = "d, MMMM", Culture = "en-US"]),
         // Displays 29, August
@@ -144,7 +144,7 @@ let
     Source =
     {
         DateTime.ToText(#datetime(2024, 1, 2, 6, 30, 15), [Format = "dd, MM", Culture = ""])
-        // Displays 02, 01 
+        // Displays 02, 01
     }
 in
     Source
@@ -1008,7 +1008,7 @@ The following example includes the "z" custom format specifier in a custom forma
 
 ```powerquery-m
 let
-    Source = 
+    Source =
     {
         DateTimeZone.ToText(DateTimeZone.LocalNow(), [Format="{0:%z}"]),
         // Displays {0:-7} on Power Query Desktop
@@ -1018,7 +1018,7 @@ let
         // Displays {0:+0}
 
         DateTimeZone.ToText(DateTimeZone.SwitchZone(
-            #datetimezone(2024, 8, 1, 0, 0, 0, 0, 0), 6), 
+            #datetimezone(2024, 8, 1, 0, 0, 0, 0, 0), 6),
             [Format = "{0:%z}"]
         )
         // Displays {0:+6}
@@ -1047,7 +1047,7 @@ The following example includes the "zz" custom format specifier in a custom form
 
 ```powerquery-m
 let
-    Source = 
+    Source =
     {
         DateTimeZone.ToText(DateTimeZone.LocalNow(), [Format="{0:zz}"]),
         // Displays {0:-07} on Power Query Desktop
@@ -1057,7 +1057,7 @@ let
         // Displays {0:+00}
 
         DateTimeZone.ToText(DateTimeZone.SwitchZone(
-            #datetimezone(2024, 8, 1, 0, 0, 0, 0, 0), 6), 
+            #datetimezone(2024, 8, 1, 0, 0, 0, 0, 0), 6),
             [Format = "{0:zz}"]
         )
         // Displays {0:+06}
@@ -1086,7 +1086,7 @@ The following example includes the "zzz" custom format specifier in a custom for
 
 ```powerquery-m
 let
-    Source = 
+    Source =
     {
         DateTimeZone.ToText(DateTimeZone.LocalNow(), [Format="{0:zzz}"]),
         // Displays {0:-07:00} on Power Query Desktop
@@ -1096,7 +1096,7 @@ let
         // Displays {0:+00:00}
 
         DateTimeZone.ToText(DateTimeZone.SwitchZone(
-            #datetimezone(2024, 8, 1, 0, 0, 0, 0, 0), 6), 
+            #datetimezone(2024, 8, 1, 0, 0, 0, 0, 0), 6),
             [Format = "{0:zzz}"]
         )
         // Displays {0:+06:00}
@@ -1165,11 +1165,11 @@ The following example includes the literal characters "PST" (for Pacific Standar
 ```powerquery-m
 let
     #"Date Formats" = {"dd MMM yyyy hh:mm tt PST", "dd MMM yyyy hh:mm tt PDT"},
-    Source = 
+    Source =
     {
         DateTime.ToText(#datetime(2024, 8, 18, 16, 50, 0), [Format = #"Date Formats"{1}]),
         try DateTime.ToText(DateTime.FromText(
-            "25 Dec 2023 12:00 pm PST", [Format = #"Date Formats"{0}])) 
+            "25 Dec 2023 12:00 pm PST", [Format = #"Date Formats"{0}]))
             otherwise "Unable to parse '" & "25 Dec 2023 12:00 pm PST" & "'"
     }
 in
@@ -1189,7 +1189,7 @@ There are two ways to indicate that characters are to be interpreted as literal 
   ```powerquery-m
   let
         #"Date Format" = "dd MMM yyyy hh:mm tt p's''t'",
-        Source = 
+        Source =
         {
             DateTime.ToText(#datetime(2024, 8, 18, 16, 50, 0), [Format = #"Date Format"]),
             try DateTime.ToText(DateTime.FromText(
@@ -1209,7 +1209,7 @@ There are two ways to indicate that characters are to be interpreted as literal 
   ```powerquery-m
   let
         #"Date Format" = "dd MMM yyyy hh:mm tt 'pst'",
-        Source = 
+        Source =
         {
             DateTime.ToText(#datetime(2024, 8, 18, 16, 50, 0), [Format = #"Date Format"]),
             try DateTime.ToText(DateTime.FromText(
@@ -1246,11 +1246,11 @@ let
 in
     Source
 
-// The example displays a list with the following output text, 
+// The example displays a list with the following output text,
 //   with <sp> representing a space:
 //       '1'
 //       ' 1'
-//       '1 ' 
+//       '1 '
 ```
 
 #### <a name="escape"></a> Using the escape sequences
@@ -1275,7 +1275,7 @@ let
     format1 = "h \h m \m",
     format2 = "h ""h"" m ""m""",
     format3 = "h 'h' m 'm'",
-    Source = 
+    Source =
     {
         Text.Format("#{0} (#{1}) -> #{2}", {DateTime.ToText(date), format1, DateTime.ToText(date, format1)}),
         Text.Format("#{0} (#{1}) -> #{2}", {DateTime.ToText(date), format2, DateTime.ToText(date, format2)}),

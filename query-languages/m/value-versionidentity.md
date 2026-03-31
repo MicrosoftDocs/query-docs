@@ -9,7 +9,7 @@ ms.topic: reference
 
 ## Syntax
 
-<pre> 
+<pre>
 Value.VersionIdentity(<b>value</b> as any) as any
 </pre>
 

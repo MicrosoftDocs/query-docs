@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Duration.TotalHours(<b>duration</b> as nullable duration) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the total hours spanned by `duration`.

@@ -16,7 +16,7 @@ Number.IntegerDivide(
     optional <b>precision</b> as nullable number
 ) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the integer portion of the result from dividing a number, `number1`, by another number, `number2`. If `number1` or `number2` are null, **Number.IntegerDivide** returns null.

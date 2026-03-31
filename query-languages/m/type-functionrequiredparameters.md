@@ -10,9 +10,9 @@ ms.topic: reference
 ## Syntax
 
 <pre>
-Type.FunctionRequiredParameters(<b>type</b> as type) as number  
+Type.FunctionRequiredParameters(<b>type</b> as type) as number
 </pre>
-  
+
 ## About
 
 Returns a number indicating the minimum number of parameters required to invoke the input `type` of function.

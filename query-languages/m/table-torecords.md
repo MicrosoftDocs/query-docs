@@ -10,15 +10,15 @@ ms.topic: reference
 ## Syntax
 
 <pre>
-Table.ToRecords(<b>table</b> as table) as list  
+Table.ToRecords(<b>table</b> as table) as list
 </pre>
-  
+
 ## About
 
 Converts a table, `table`, to a list of records.
 
 ## Example
-  
+
 Convert the table to a list of records.
 
 **Usage**

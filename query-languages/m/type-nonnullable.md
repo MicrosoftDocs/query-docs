@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Type.NonNullable(<b>type</b> as type) as type
 </pre>
-  
+
 ## About
 
 Returns the non `nullable` type from the `type`.

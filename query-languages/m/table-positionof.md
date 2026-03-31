@@ -17,7 +17,7 @@ Table.PositionOf(
     optional <b>equationCriteria</b> as any
 ) as any
 </pre>
-  
+
 ## About
 
 Returns the row position of the first occurrence of the `row` in the `table` specified. Returns -1 if no occurrence is found.

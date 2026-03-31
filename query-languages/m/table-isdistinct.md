@@ -10,9 +10,9 @@ ms.topic: reference
 ## Syntax
 
 <pre>
-Table.IsDistinct(<b>table</b> as table, optional <b>comparisonCriteria</b> as any) as logical  
+Table.IsDistinct(<b>table</b> as table, optional <b>comparisonCriteria</b> as any) as logical
 </pre>
-  
+
 ## About
 
 Indicates whether the `table` contains only distinct rows (no duplicates). Returns `true` if the rows are distinct, `false` otherwise. An optional parameter, `comparisonCriteria`, specifies which columns of the table are tested for duplication. If `comparisonCriteria` is not specified, all columns are tested.

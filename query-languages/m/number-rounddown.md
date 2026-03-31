@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Number.RoundDown(<b>number</b> as nullable number, optional <b>digits</b> as nullable number) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the result of rounding `number` down to the previous highest integer. If `number` is null, this function returns null. If `digits` is provided, `number` is rounded to the specified number of decimal digits.

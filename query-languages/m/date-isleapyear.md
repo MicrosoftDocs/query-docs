@@ -9,10 +9,10 @@ ms.topic: reference
 
 ## Syntax
 
-<pre>  
-Date.IsLeapYear(<b>dateTime</b> as any) as nullable logical 
+<pre>
+Date.IsLeapYear(<b>dateTime</b> as any) as nullable logical
 </pre>
-  
+
 ## About
 
 Indicates whether the given datetime value `dateTime` falls in is a leap year.

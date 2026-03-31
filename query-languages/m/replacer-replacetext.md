@@ -16,7 +16,7 @@ Replacer.ReplaceText(
     <b>new</b> as text
 ) as nullable text
 </pre>
-  
+
 ## About
 
 Replaces the `old` text in the original `text` with the `new` text. This replacer function can be used in `List.ReplaceValue` and `Table.ReplaceValue`.

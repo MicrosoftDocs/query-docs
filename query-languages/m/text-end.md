@@ -11,8 +11,8 @@ ms.topic: reference
 
 <pre>
 Text.End(<b>text</b> as nullable text, <b>count</b> as number) as nullable text
-</pre> 
-  
+</pre>
+
 ## About
 
 Returns a `text` value that is the last `count` characters of the `text` value `text`.

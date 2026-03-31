@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Text.ToList(<b>text</b> as text) as list
 </pre>
-  
+
 ## About
 
 Returns a list of character values from the given text value `text`.
