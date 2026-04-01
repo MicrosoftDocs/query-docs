@@ -17,7 +17,7 @@ Json.Document(<b>jsonText</b> as any, optional <b>encoding</b> as nullable numbe
 
 Returns the content of the JSON document.
 
-* `jsonText`: The content of the JSON document. The value of this parameter can be text or a binary value returned by a function like [`File.Content`](file-contents.md).
+* `jsonText`: The content of the JSON document. The value of this parameter can be text or a binary value returned by a function like [`File.Contents`](file-contents.md).
 * `encoding`: A [`TextEncoding.Type`](textencoding-type.md) that specifies the encoding used in the JSON document. If `encoding` is omitted, UTF8 is used.
 
 ## Example 1
