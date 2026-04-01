@@ -52,7 +52,6 @@ List.MaxN(
         {"boy", "dog", "pony", "cat", "rabbit", "bat"},
         each Text.Length(_) > 3
     )
-
 ```
 
 **Output**
