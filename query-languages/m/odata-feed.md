@@ -35,7 +35,7 @@ Returns a table of OData feeds offered by an OData service from a uri `serviceUr
 * `IncludeAnnotations`: A comma separated list of namespace qualified term names or patterns to include with "\*" as a wildcard. By default, none of the annotations are included.
 * `IncludeMetadataAnnotations`: A comma separated list of namespace qualified term names or patterns to include on metadata document requests, with "\*" as a wildcard. By default, includes the same annotations as IncludeAnnotations.
 * `OmitValues`: Allows the OData service to avoid writing out certain values in responses. If acknowledged by the service, we will infer those values from the omitted fields. Options include:
-  * `ODataOmitValues.Nulls`: Allows the OData service to omit null values.
+  * [`ODataOmitValues.Nulls`](odataomitvalues-type.md): Allows the OData service to omit null values.
 * `Implementation`: Specifies the implementation of the OData connector to use. Valid values are "2.0" or null.
 
 ## Example
