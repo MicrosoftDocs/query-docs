@@ -22,7 +22,7 @@ Text.ToBinary(
 Encodes a text value into a binary value using the specified encoding.
 
 * `text`: The text to be encoded.
-* `encoding`: (Optional) The encoding used to convert the text to binary. Use [`BinaryEncoding.Type`](binaryencoding-type.md) to specify the type of encoding. If this value isn't specified, the default value is `BinaryEncoding.Utf8`.
+* `encoding`: (Optional) The encoding used to convert the text to binary. Use [BinaryEncoding.Type](binaryencoding-type.md) to specify the type of encoding. If this value isn't specified, the default value is `BinaryEncoding.Utf8`.
 * `includeByteOrderMark`: (Optional) Determines if a Byte Order Mark (BOM) should be included at the beginning of the binary output. Set to `true` to automatically include the BOM, otherwise `false`. If this value isn't specified, the default value is `false`.
 
 ## Example 1

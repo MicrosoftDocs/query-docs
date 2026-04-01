@@ -18,7 +18,7 @@ ItemExpression.From(<b>function</b> as function) as record
 Returns the abstract syntax tree (AST) for the body of `function`, normalized into an *item expression*:
 
 * The function must be a 1-argument lambda.
-* All references to the function parameter are replaced with [`ItemExpression.Item`](itemexpression-item.md).
+* All references to the function parameter are replaced with [ItemExpression.Item](itemexpression-item.md).
 * The AST will be simplified to contain only nodes of the kinds:
   * `Constant`
   * `Invocation`

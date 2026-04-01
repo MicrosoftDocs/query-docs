@@ -19,7 +19,7 @@ Returns a date value from the given value.
 
 * `value`: The value to covert to a date. If the given value is `null`, this function returns `null`. If the given value is `date`, `value` is returned. Values of the following types can be converted to a `date` value:
 
-  * `text`: A `date` value from textual representation. Refer to [`Date.FromText`](date-fromtext.md) for details.
+  * `text`: A `date` value from textual representation. Refer to [Date.FromText](date-fromtext.md) for details.
   * `datetime`: The date component of the `value`.
   * `datetimezone`: The date component of the local datetime equivalent of `value`.
   * `number`: The date component of the datetime equivalent of a floating-point number whose integral component is the number of days before or after midnight, 30 December 1899, and whose fractional component represents the time on that day divided by 24. For example, midnight, 31 December 1899 is represented by 1.0; 6 A.M., 1 January 1900 is represented by 2.25; midnight, 29 December 1899 is represented by -1.0; and 6 A.M., 29 December 1899 is represented by -1.25. The base value is midnight, 30 December 1899. The minimum value is midnight, 1 January 0100. The maximum value is the last moment of 31 December 9999.

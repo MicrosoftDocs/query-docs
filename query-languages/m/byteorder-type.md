@@ -20,7 +20,7 @@ Specifies the byte order.
 
 ## Remarks
 
-The allowed values for this enumeration are possible values for the `byteOrder` parameter in [`BinaryFormat.ByteOrder`](binaryformat-byteorder.md).
+The allowed values for this enumeration are possible values for the `byteOrder` parameter in [BinaryFormat.ByteOrder](binaryformat-byteorder.md).
 
 ## Applies to
 

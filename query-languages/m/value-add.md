@@ -19,4 +19,4 @@ Value.Add(
 
 ## About
 
-Returns the sum of `value1` and `value2`. An optional `precision` parameter may be specified, by default [`Precision.Double`](precision-type.md) is used.
+Returns the sum of `value1` and `value2`. An optional `precision` parameter may be specified, by default `Precision.Double` is used.

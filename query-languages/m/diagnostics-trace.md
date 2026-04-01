@@ -22,15 +22,15 @@ Diagnostics.Trace(
 
 Writes a trace `message`, if tracing is enabled, and returns `value`. An optional parameter `delayed` specifies whether to delay the evaluation of `value` until the message is traced. `traceLevel` can take one of the following values:
 
-* [`TraceLevel.Critical`](tracelevel-type.md)
-* [`TraceLevel.Error`](tracelevel-type.md)
-* [`TraceLevel.Warning`](tracelevel-type.md)
-* [`TraceLevel.Information`](tracelevel-type.md)
-* [`TraceLevel.Verbose`](tracelevel-type.md)
+* [TraceLevel.Critical](tracelevel-type.md)
+* [TraceLevel.Error](tracelevel-type.md)
+* [TraceLevel.Warning](tracelevel-type.md)
+* [TraceLevel.Information](tracelevel-type.md)
+* [TraceLevel.Verbose](tracelevel-type.md)
 
 ## Example
 
-Trace the message before invoking [`Text.From`](text-from.md) function and return the result.
+Trace the message before invoking Text.From function and return the result.
 
 **Usage**
 

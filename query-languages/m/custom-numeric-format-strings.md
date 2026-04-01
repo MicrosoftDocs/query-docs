@@ -75,7 +75,7 @@ in
 ```
 
 > [!NOTE]
-> The blank text value ("") in the last parameter of [`Number.ToText`](number-totext.md) in the previous sample refers to the invariant culture.
+> The blank text value ("") in the last parameter of [Number.ToText](number-totext.md) in the previous sample refers to the invariant culture.
 
 [Back to table](#table)
 
@@ -114,7 +114,7 @@ in
     Source
 ```
 
-To return a result string in which absent digits or leading zeroes are replaced by spaces, use the [`Text.PadStart`](text-padstart.md) and specify a field width, as the following example illustrates.
+To return a result string in which absent digits or leading zeroes are replaced by spaces, use the [Text.PadStart](text-padstart.md) and specify a field width, as the following example illustrates.
 
 ```powerquery-m
 let
@@ -433,7 +433,7 @@ in
 
 ### Floating-Point infinities and NaN
 
-Regardless of the format string, if the value of a `Decimal.Type`, `Single.Type` or `Double.Type` floating-point type is positive infinity, negative infinity, or not a number (NaN), the formatted string is the value of the respective [`Number.PositiveInfinity`](number-positiveinfinity.md), [`Number.NegativeInfinity`](number-negativeinfinity.md), or [`Number.NaN`](number-nan.md) constants specified by the currently applicable culture.
+Regardless of the format string, if the value of a `Decimal.Type`, `Single.Type` or `Double.Type` floating-point type is positive infinity, negative infinity, or not a number (NaN), the formatted string is the value of the respective [Number.PositiveInfinity](number-positiveinfinity.md), [Number.NegativeInfinity](number-negativeinfinity.md), or [Number.NaN](number-nan.md) constants specified by the currently applicable culture.
 
 ### Rounding and fixed-point format strings
 

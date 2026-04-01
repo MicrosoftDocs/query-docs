@@ -18,9 +18,9 @@ Standard numeric format strings are used to format common numeric types. A stand
   When the precision specifier controls the number of fractional digits in the result string, the result string reflects a number that is rounded to a representable result nearest to the infinitely precise result.
 
   > [!NOTE]
-  > The precision specifier determines the number of digits in the result string. To pad a result string with leading or trailing spaces or other characters (such a 0), use the [`Text.PadStart`](text-padstart.md) and [`Text.PadEnd`](text-padend.md) functions and use the overall length `count` in these functions to pad the result string.
+  > The precision specifier determines the number of digits in the result string. To pad a result string with leading or trailing spaces or other characters (such a 0), use the [Text.PadStart](text-padstart.md) and [Text.PadEnd](text-padend.md) functions and use the overall length `count` in these functions to pad the result string.
 
-Standard numeric format strings are supported by the [`Number.ToText`](number-totext.md) function.
+Standard numeric format strings are supported by the [Number.ToText](number-totext.md) function.
 
 ## Standard format specifiers
 
@@ -43,14 +43,14 @@ The following table describes the standard numeric format specifiers and display
 
 ## Use standard numeric format strings
 
-A standard numeric format string can be used to define the formatting of a numeric value. It can be passed to the [`Number.ToText`](number-totext.md) `format` parameter. The following example formats a numeric value as a currency string in the current culture (in this case, the en-US culture).
+A standard numeric format string can be used to define the formatting of a numeric value. It can be passed to the [Number.ToText](number-totext.md) `format` parameter. The following example formats a numeric value as a currency string in the current culture (in this case, the en-US culture).
 
 ```powerquery-m
 Number.ToText(123.456, "C2")
 // Displays $123.46
 ```
 
-Optionally, you can supply a `count` argument in the [`Text.PadStart`](text-padstart.md) and [`Text.PadEnd`](text-padend.md) functions to specify the width of the numeric field and whether its value is right- or left-aligned. For example, the following sample left-aligns a currency value in a 28-character field, and it right-aligns a currency value in a 14-character field (when using a monospaced font).
+Optionally, you can supply a `count` argument in the [Text.PadStart](text-padstart.md) and [Text.PadEnd](text-padend.md) functions to specify the width of the numeric field and whether its value is right- or left-aligned. For example, the following sample left-aligns a currency value in a 28-character field, and it right-aligns a currency value in a 14-character field (when using a monospaced font).
 
 ```powerquery-m
 let
@@ -168,7 +168,7 @@ in
 ```
 
 > [!NOTE]
-> The blank text value ("") in the last parameter of [`Number.ToText`](number-totext.md) in the previous sample refers to the invariant culture.
+> The blank text value ("") in the last parameter of [Number.ToText](number-totext.md) in the previous sample refers to the invariant culture.
 
 <a name="FFormatString"></a>
 
@@ -363,7 +363,7 @@ Some descriptions of standard numeric format specifiers refer to integral or flo
 
 ### Floating-point infinities and NaN
 
-Regardless of the format string, if the value of a `Decimal.Type`, `Single.Type` or `Double.Type` floating-point type is positive infinity, negative infinity, or not a number (NaN), the formatted string is the value of the respective [`Number.PositiveInfinity`](number-positiveinfinity.md), [`Number.NegativeInfinity`](number-negativeinfinity.md), or [`Number.NaN`](number-nan.md) constants specified by the currently applicable culture.
+Regardless of the format string, if the value of a `Decimal.Type`, `Single.Type` or `Double.Type` floating-point type is positive infinity, negative infinity, or not a number (NaN), the formatted string is the value of the respective [Number.PositiveInfinity](number-positiveinfinity.md), [Number.NegativeInfinity](number-negativeinfinity.md), or [Number.NaN](number-nan.md) constants specified by the currently applicable culture.
 
 ## Code example
 

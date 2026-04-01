@@ -23,7 +23,7 @@ Returns the remainder resulting from the integer division of `number` by `diviso
 
 * `number`: The dividend.
 * `divisor`: The divisor.
-* `precision`: (Optional) The precision of the integer division. This parameter can be either [`Precision.Double`](precision-type.md) for `Double` precision or [`Precision.Decimal`](precision-type.md) for `Decimal` precision. The default value is [`Precision.Double`](precision-type.md).
+* `precision`: (Optional) The precision of the integer division. This parameter can be either [Precision.Double](precision-type.md) for `Double` precision or [Precision.Decimal](precision-type.md) for `Decimal` precision. The default value is `Precision.Double`.
 
 ## Example 1
 

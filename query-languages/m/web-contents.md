@@ -28,7 +28,8 @@ Returns the contents downloaded from `url` as binary. An optional record paramet
 * `Content`: Specifying this value changes the web request from a GET to a POST, using the value of the option as the content of the POST.
 
 The HTTP request is made as either a GET (when no Content is specified) or a POST (when there is Content). POST requests may only be made anonymously.
-The headers of the HTTP response are available as [metadata](metadata.md) on the binary result. Outside of a custom data connector context, only a subset of response headers is available (for security reasons).
+
+The headers of the HTTP response are available as metadata on the binary result. Outside of a custom data connector context, only a subset of response headers is available (for security reasons).
 
 ## Example 1
 

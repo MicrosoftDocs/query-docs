@@ -22,7 +22,7 @@ Creates a `datetimezone` from the given value.
 
 Values of the following types can be converted to a `datetimezone` value:
 
-* `text`: Returns a `datetimezone` value from textual representation. Refer to [`DateTimeZone.FromText`](datetimezone-fromtext.md) for details.
+* `text`: Returns a `datetimezone` value from textual representation. Refer to [DateTimeZone.FromText](datetimezone-fromtext.md) for details.
 * `date`: Returns a `datetimezone` with `value` as the date component, `12:00:00 AM` as the time component, and the offset corresponding the local time zone.
 * `datetime`: Returns a `datetimezone` with `value` as the datetime and the offset corresponding the local time zone.
 * `datetimezone`: Returns `value`.
@@ -82,4 +82,4 @@ DateTimeZone.From(45658.5)
 * [Local, fixed, and UTC variants of current time functions](m-local-fixed-utc-variants.md)
 * [Standard date and time format strings](standard-date-and-time-format-strings.md)
 * [Custom date and time format strings](custom-date-and-time-format-strings.md)
-* [`Number.From`](number-from.md)
+* [Number.From](number-from.md)

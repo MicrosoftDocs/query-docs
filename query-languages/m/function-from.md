@@ -19,7 +19,7 @@ Takes a unary function `function` and creates a new function with the type `func
 
 ## Example 1
 
-Converts [`List.Sum`](list-sum.md) into a two-argument function whose arguments are added together.
+Converts List.Sum into a two-argument function whose arguments are added together.
 
 **Usage**
 

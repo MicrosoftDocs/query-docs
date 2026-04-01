@@ -25,7 +25,7 @@ If a handler function raises an error, the default behavior of the operation is 
 
 **Table.View** can be used to implement folding to a data source&mdash;the translation of M queries into source-specific queries (for example, to create T-SQL statements from M queries).
 
-Refer to the published Power Query custom connector documentation for a more complete description of `Table.View`.
+Refer to the published [Power Query custom connector documentation](/power-query/samples/trippin/10-tableview1/readme#using-tableview) for a more complete description of **Table.View**.
 
 ## Example
 

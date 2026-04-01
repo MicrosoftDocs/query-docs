@@ -18,7 +18,7 @@ Date.DayOfWeek(<b>dateTime</b> as any, optional <b>firstDayOfWeek</b> as nullabl
 Returns a number (from 0 to 6) indicating the day of the week of the provided `dateTime`.
 
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value.
-* `firstDayOfWeek`: A `Day` value indicating which day should be considered the first day of the week. Allowed values are [`Day.Sunday`](day-type.md), [`Day.Monday`](day-type.md), [`Day.Tuesday`](day-type.md), [`Day.Wednesday`](day-type.md), [`Day.Thursday`](day-type.md), [`Day.Friday`](day-type.md), or [`Day.Saturday`](day-type.md). If unspecified, a culture-dependent default is used.
+* `firstDayOfWeek`: A `Day` value indicating which day should be considered the first day of the week. Allowed values are [Day.Sunday](day-type.md), [Day.Monday](day-type.md), [Day.Tuesday](day-type.md), [Day.Wednesday](day-type.md), [Day.Thursday](day-type.md), [Day.Friday](day-type.md), or [Day.Saturday](day-type.md). If unspecified, a culture-dependent default is used.
 
 ## Example 1
 

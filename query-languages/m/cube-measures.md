@@ -15,4 +15,4 @@ Cube.Measures(<b>cube</b> as any) as table
 
 ## About
 
-Returns a table containing the set of available measures within the `cube`. Each measure is represented as a function. Measures can be applied to the cube using [`Cube.AddMeasureColumn`](cube-addmeasurecolumn.md).
+Returns a table containing the set of available measures within the `cube`. Each measure is represented as a function. Measures can be applied to the cube using Cube.AddMeasureColumn.

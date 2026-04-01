@@ -18,7 +18,7 @@ Replacer.ReplaceValue(
 
 ## About
 
-Replaces the `old` value in the original `value` with the `new` value. This replacer function can be used in [`List.ReplaceValue`](list-replacevalue.md) and [`Table.ReplaceValue`](table-replacevalue.md).
+Replaces the `old` value in the original `value` with the `new` value. This replacer function can be used in `List.ReplaceValue` and `Table.ReplaceValue`.
 
 ## Example
 

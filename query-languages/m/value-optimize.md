@@ -15,4 +15,4 @@ Value.Optimize(<b>value</b> as any) as any
 
 ## About
 
-When used within [`Value.Expression`](value-expression.md), if `value` represents a query that can be optimized, this function indicates that the optimized expression should be returned. Otherwise, `value` will be passed through with no effect.
+When used within Value.Expression, if `value` represents a query that can be optimized, this function indicates that the optimized expression should be returned. Otherwise, `value` will be passed through with no effect.

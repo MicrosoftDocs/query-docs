@@ -51,11 +51,11 @@ in
 ```
 
 > [!NOTE]
-> Subtracting one date and time type from a different date and time type (for example, subtracting a `date` value from a `datetime` value) results in an error. If you must use different date and time types to determine a duration, use the [`Date.From`](date-from.md), [`DateTime.From`](datetime-from.md), [`DateTimeZone.From`](datetimezone-from.md), or [`Time.From`](time-from.md) functions to explicitly change one of the date and time types.
+> Subtracting one date and time type from a different date and time type (for example, subtracting a `date` value from a `datetime` value) results in an error. If you must use different date and time types to determine a duration, use the [Date.From](date-from.md), [DateTime.From](datetime-from.md), [DateTimeZone.From](datetimezone-from.md), or [Time.From](time-from.md) functions to explicitly change one of the date and time types.
 
 ### Convert from compatible values
 
-The [`Duration.From`](duration-from.md) function can convert compatible values into durations. For more information, go to [Duration.From(value)](#durationfromvalue).
+The [Duration.From](duration-from.md) function can convert compatible values into durations. For more information, go to [Duration.From(value)](#durationfromvalue).
 
 ## Work with durations
 
@@ -154,7 +154,7 @@ Power Query M includes a set of built-in functions for working with durations. T
 
 ### Duration.From(value)
 
-The [`Duration.From`](duration-from.md) function converts a compatible value into a duration. Compatible values consist of either a number that's interpreted as a fraction of a day or a textual representation of a duration. Go to [`Duration.FromText`](duration-fromtext.md) for information about the textual representation formats.
+The [Duration.From](duration-from.md) function converts a compatible value into a duration. Compatible values consist of either a number that's interpreted as a fraction of a day or a textual representation of a duration. Go to [Duration.FromText](duration-fromtext.md) for information about the textual representation formats.
 
 ```powerquery-m
 let

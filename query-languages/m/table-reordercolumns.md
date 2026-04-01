@@ -19,7 +19,7 @@ Table.ReorderColumns(
 
 ## About
 
-Returns a table from the input `table`, with the columns in the order specified by `columnOrder`. Columns that are not specified in the list will not be reordered. If the column doesn't exist, an error is raised unless the optional parameter `missingField` specifies an alternative (eg. [`MissingField.UseNull`](missingfield-type.md) or [`MissingField.Ignore`](missingfield-type.md)).
+Returns a table from the input `table`, with the columns in the order specified by `columnOrder`. Columns that are not specified in the list will not be reordered. If the column doesn't exist, an error is raised unless the optional parameter `missingField` specifies an alternative (eg. [MissingField.UseNull](missingfield-type.md) or [MissingField.Ignore](missingfield-type.md)).
 
 ## Example 1
 
@@ -40,7 +40,7 @@ Table.ReorderColumns(
 
 ## Example 2
 
-Switch the order of the columns [Phone] and [Address] or use "[`MissingField.Ignore`](missingfield-type.md)" in the table. It doesn't change the table because column [Address] doesn't exist.
+Switch the order of the columns [Phone] and [Address] or use "MissingField.Ignore" in the table. It doesn't change the table because column [Address] doesn't exist.
 
 **Usage**
 
