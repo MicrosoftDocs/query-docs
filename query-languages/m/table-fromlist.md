@@ -75,7 +75,7 @@ Table.FromRecords({
 
 ## Example 3
 
-Create a table from the list using the [Record.FieldValues](record-fieldvalues.md) splitter.
+Create a table from the list using the [`Record.FieldValues`](record-fieldvalues.md) splitter.
 
 **Usage**
 

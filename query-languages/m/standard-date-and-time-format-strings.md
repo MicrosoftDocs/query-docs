@@ -281,9 +281,9 @@ The "O" or "o" standard format specifier corresponds to the "yyyy'-'MM'-'dd'T'HH
 
 The "O" or "o" standard format specifier (and the "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'fffffffxxx"  custom format) takes advantage of the ways that ISO 8601 represents time zone information to preserve the **DateTimeZone** values:
 
-* The time zone component of [DateTimeZone.ToLocal](datetimezone-tolocal.md) date and time values is an offset from UTC (for example, +01:00, -07:00).
+* The time zone component of [`DateTimeZone.ToLocal`](datetimezone-tolocal.md) date and time values is an offset from UTC (for example, +01:00, -07:00).
 
-* The time zone component of [DateTimeZone.ToUtc](datetimezone-toutc.md) date and time values uses +00.00 to represent UTC.
+* The time zone component of [`DateTimeZone.ToUtc`](datetimezone-toutc.md) date and time values uses +00.00 to represent UTC.
 
 Because the "O" or "o" standard format specifier conforms to an international standard, the formatting or parsing operation that uses the specifier always uses the invariant culture and the Gregorian calendar.
 
@@ -309,7 +309,7 @@ in
 ```
 
 > [!NOTE]
->The value returned by [DateTimeZone.ToLocal](datetimezone-tolocal.md) depends on whether you're running Power Query on a local machine or online. For example, in the sample above on a system in the U.S. Pacific Time zone, Power Query Desktop returns `-07:00` for the **Local** time because it's reading the time set on your local machine. However, Power Query Online returns `+00:00` because it's reading the time set on the cloud virtual machines, which are set to UTC.
+>The value returned by [`DateTimeZone.ToLocal`](datetimezone-tolocal.md) depends on whether you're running Power Query on a local machine or online. For example, in the sample above on a system in the U.S. Pacific Time zone, Power Query Desktop returns `-07:00` for the **Local** time because it's reading the time set on your local machine. However, Power Query Online returns `+00:00` because it's reading the time set on the cloud virtual machines, which are set to UTC.
 
 The following example uses the "o" format specifier to create a formatted string, and then restores the original date and time value by calling a date and time parsing routine.
 
@@ -387,7 +387,7 @@ in
 
 The "R" or "r" standard format specifier represents a custom date and time format string that's not defined by a specific culture. It is always the same, regardless of the culture used or the format provider supplied. The custom format string is "ddd, dd MMM yyyy HH':'mm':'ss 'GMT'". When this standard format specifier is used, the formatting or parsing operation always uses the invariant culture.
 
-Although the RFC 1123 standard expresses a time as Coordinated Universal Time (UTC), the formatting operation doesn't modify the value of the date and time that's being formatted. Therefore, you must convert the DateTime value to UTC by calling the [DateTimeZone.ToUtc](datetimezone-toutc.md) function method before you perform the formatting operation.
+Although the RFC 1123 standard expresses a time as Coordinated Universal Time (UTC), the formatting operation doesn't modify the value of the date and time that's being formatted. Therefore, you must convert the DateTime value to UTC by calling the [`DateTimeZone.ToUtc`](datetimezone-toutc.md) function method before you perform the formatting operation.
 
 The following example uses the "r" format specifier to display a time and date value on a system in the U.S. Pacific Time zone (seven hours behind UTC).
 
@@ -438,7 +438,7 @@ in
 
 The "u" standard format specifier represents a custom date and time format string that is always the same, regardless of the culture used or the format provider supplied. The custom format string is "yyyy'-'MM'-'dd HH':'mm':'ss'Z'".  The pattern reflects a defined standard, and the property is read-only. When this standard format specifier is used, the formatting or parsing operation always uses the invariant culture.
 
-Although the result string should express a time as Coordinated Universal Time (UTC), no conversion of the original **DateTimeZone** value is performed during the formatting operation. Therefore, you must convert a **DateTimeZone** value to UTC by calling the [DateTimeZone.ToUtc](datetimezone-toutc.md) function before formatting it.
+Although the result string should express a time as Coordinated Universal Time (UTC), no conversion of the original **DateTimeZone** value is performed during the formatting operation. Therefore, you must convert a **DateTimeZone** value to UTC by calling the [`DateTimeZone.ToUtc`](datetimezone-toutc.md) function before formatting it.
 
 The following example uses the "u" format specifier to display a date and time value.
 
