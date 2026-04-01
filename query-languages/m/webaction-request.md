@@ -31,7 +31,6 @@ Creates an action that, when executed, will return the results of performing a `
 * `RelativePath`: Specifying this value as text appends it to the base URL before making the request.
 * `Content`: Specifying this value will cause its contents to become the body of the HTTP request.
 
-
 Note that this function is disabled in most contexts. Consider using [`Web.Contents`](web-contents.md) or [`Web.Headers`](web-headers.md) instead.
 
 ## Example
