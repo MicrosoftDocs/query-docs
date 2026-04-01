@@ -30,7 +30,7 @@ in
 //    The current date and time: 06/10/11 15:24:16 +00:00
 ```
 
-In parsing operations, custom date and time format strings can be used with the **Date**, **DateTime**, **Time**, and **DateTimeZone** functions. These functions require that an input string conforms exactly to a particular pattern for the parse operation to succeed. The following example illustrates a call to the [DateTime.FromText](datetime-fromtext.md) function to parse a date that must include a month, a day, and a two-digit year.
+In parsing operations, custom date and time format strings can be used with the **Date**, **DateTime**, **Time**, and **DateTimeZone** functions. These functions require that an input string conforms exactly to a particular pattern for the parse operation to succeed. The following example illustrates a call to the [`DateTime.FromText`](datetime-fromtext.md) function to parse a date that must include a month, a day, and a two-digit year.
 
 ```powerquery-m
 let
@@ -566,7 +566,7 @@ in
 ```
 
 > [!NOTE]
->The value returned by [DateTimeZone.LocalNow](datetimezone-localnow.md) depends on whether you're running Power Query on a local machine or online. For example, in the sample above on a system in the U.S. Pacific Time zone, Power Query Desktop returns `-07:00` because it's reading the time set on your local machine. However, Power Query Online returns `+00:00` because it's reading the time set on the cloud virtual machines, which are set to UTC.
+>The value returned by [`DateTimeZone.LocalNow`](datetimezone-localnow.md) depends on whether you're running Power Query on a local machine or online. For example, in the sample above on a system in the U.S. Pacific Time zone, Power Query Desktop returns `-07:00` because it's reading the time set on your local machine. However, Power Query Online returns `+00:00` because it's reading the time set on the cloud virtual machines, which are set to UTC.
 
 [Back to table](#table)
 
@@ -999,8 +999,8 @@ The following table shows how the offset value changes depending on the **DateTi
 
 | DateTimeZone value | Offset value |
 | --- | --- |
-| [DateTimeZone.LocalNow](datetimezone-localnow.md) | On Power Query Desktop, the signed offset of the local operating system's time zone from UTC. On Power Query Online, returns `+00`. |
-| [DateTimeZone.UtcNow](datetimezone-utcnow.md) | Returns `+0`. |
+| [`DateTimeZone.LocalNow`](datetimezone-localnow.md) | On Power Query Desktop, the signed offset of the local operating system's time zone from UTC. On Power Query Online, returns `+00`. |
+| [`DateTimeZone.UtcNow`](datetimezone-utcnow.md) | Returns `+0`. |
 
 If the "z" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and raises an expression error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
 
@@ -1028,7 +1028,7 @@ in
 ```
 
 > [!NOTE]
->The value returned by [DateTimeZone.LocalNow](datetimezone-localnow.md) depends on whether you're running Power Query on a local machine or online. For example, in the sample above on a system in the U.S. Pacific Time zone, Power Query Desktop returns `{0:-7}` because it's reading the time set on your local machine. However, Power Query Online returns `{0:+0}` because it's reading the time set on the cloud virtual machines, which are set to UTC.
+>The value returned by [`DateTimeZone.LocalNow`](datetimezone-localnow.md) depends on whether you're running Power Query on a local machine or online. For example, in the sample above on a system in the U.S. Pacific Time zone, Power Query Desktop returns `{0:-7}` because it's reading the time set on your local machine. However, Power Query Online returns `{0:+0}` because it's reading the time set on the cloud virtual machines, which are set to UTC.
 
 [Back to table](#table)
 
@@ -1040,8 +1040,8 @@ The following table shows how the offset value changes depending on the **DateTi
 
 | DateTimeZone value | Offset value |
 | --- | --- |
-| [DateTimeZone.LocalNow](datetimezone-localnow.md) | On Power Query Desktop, the signed offset of the local operating system's time zone from UTC. On Power Query Online, returns `+00`. |
-| [DateTimeZone.UtcNow](datetimezone-utcnow.md) | Returns `+00`. |
+| [`DateTimeZone.LocalNow`](datetimezone-localnow.md) | On Power Query Desktop, the signed offset of the local operating system's time zone from UTC. On Power Query Online, returns `+00`. |
+| [`DateTimeZone.UtcNow`](datetimezone-utcnow.md) | Returns `+00`. |
 
 The following example includes the "zz" custom format specifier in a custom format string on a system in the U.S. Pacific Time zone.
 
@@ -1067,7 +1067,7 @@ in
 ```
 
 > [!NOTE]
->The value returned by [DateTimeZone.LocalNow](datetimezone-localnow.md) depends on whether you're running Power Query on a local machine or online. For example, in the sample above on a system in the U.S. Pacific Time zone, Power Query Desktop returns `{0:-07}` because it's reading the time set on your local machine. However, Power Query Online returns `{0:+00}` because it's reading the time set on the cloud virtual machines, which are set to UTC.
+>The value returned by [`DateTimeZone.LocalNow`](datetimezone-localnow.md) depends on whether you're running Power Query on a local machine or online. For example, in the sample above on a system in the U.S. Pacific Time zone, Power Query Desktop returns `{0:-07}` because it's reading the time set on your local machine. However, Power Query Online returns `{0:+00}` because it's reading the time set on the cloud virtual machines, which are set to UTC.
 
 [Back to table](#table)
 
@@ -1079,8 +1079,8 @@ The following table shows how the offset value changes depending on the **DateTi
 
 | DateTimeZoneValue value | Offset value |
 | --- | --- |
-| [DateTimeZone.LocalNow](datetimezone-localnow.md) | On Power Query Desktop, the signed offset of the local operating system's time zone from UTC. On Power Query Online, returns `+00`.|
-| [DateTimeZone.UtcNow](datetimezone-utcnow.md) | Returns `+00:00`. |
+| [`DateTimeZone.LocalNow`](datetimezone-localnow.md) | On Power Query Desktop, the signed offset of the local operating system's time zone from UTC. On Power Query Online, returns `+00`.|
+| [`DateTimeZone.UtcNow`](datetimezone-utcnow.md) | Returns `+00:00`. |
 
 The following example includes the "zzz" custom format specifier in a custom format string on a system in the U.S. Pacific Time zone.
 
@@ -1106,7 +1106,7 @@ in
 ```
 
 > [!NOTE]
->The value returned by [DateTimeZone.LocalNow](datetimezone-localnow.md) depends on whether you're running Power Query on a local machine or online. For example, in the sample above on a system in the U.S. Pacific Time zone, Power Query Desktop returns `{0:-07:00}` because it's reading the time set on your local machine. However, Power Query Online returns `{0:+00:00}` because it's reading the time set on the cloud virtual machines, which are set to UTC.
+>The value returned by [`DateTimeZone.LocalNow`](datetimezone-localnow.md) depends on whether you're running Power Query on a local machine or online. For example, in the sample above on a system in the U.S. Pacific Time zone, Power Query Desktop returns `{0:-07:00}` because it's reading the time set on your local machine. However, Power Query Online returns `{0:+00:00}` because it's reading the time set on the cloud virtual machines, which are set to UTC.
 
 [Back to table](#table)
 

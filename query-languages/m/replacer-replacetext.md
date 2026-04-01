@@ -19,7 +19,7 @@ Replacer.ReplaceText(
 
 ## About
 
-Replaces the `old` text in the original `text` with the `new` text. This replacer function can be used in `List.ReplaceValue` and `Table.ReplaceValue`.
+Replaces the `old` text in the original `text` with the `new` text. This replacer function can be used in [`List.ReplaceValue`](list-replacevalue.md) and [`Table.ReplaceValue`](table-replacevalue.md).
 
 ## Example
 
