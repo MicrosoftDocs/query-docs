@@ -19,7 +19,7 @@ Invokes the given function using the specified list of arguments and returns the
 
 ## Example
 
-Invokes [Record.FieldNames](record-fieldnames.md) with one argument [A=1,B=2]
+Invokes [`Record.FieldNames`](record-fieldnames.md) with one argument [A=1,B=2]
 
 **Usage**
 

@@ -19,7 +19,7 @@ Int32.From(
 
 ## About
 
-Returns a 32-bit integer `number` value from the given `value`. If the given `value` is `null`, **Int32.From** returns `null`. If the given `value` is `number` within the range of 32-bit integer without a fractional part, `value` is returned. If it has fractional part, then the number is rounded with the rounding mode specified. The default rounding mode is [RoundingMode.ToEven](roundingmode-type.md). If `value` is of any other type, it will first be converted to a `number` using [Number.FromText](number-fromtext.md). Refer to [Number.Round](number-round.md) for the available rounding modes. An optional `culture` may also be provided (for example, "en-US").
+Returns a 32-bit integer `number` value from the given `value`. If the given `value` is `null`, **Int32.From** returns `null`. If the given `value` is `number` within the range of 32-bit integer without a fractional part, `value` is returned. If it has fractional part, then the number is rounded with the rounding mode specified. The default rounding mode is [`RoundingMode.ToEven`](roundingmode-type.md). If `value` is of any other type, it will first be converted to a `number` using [`Number.FromText`](number-fromtext.md). Refer to [`Number.Round`](number-round.md) for the available rounding modes. An optional `culture` may also be provided (for example, "en-US").
 
 ## Example 1
 
@@ -37,7 +37,7 @@ Int32.From("4")
 
 ## Example 2
 
-Get the 32-bit integer `number` value of `"4.5"` using `RoundingMode.AwayFromZero`.
+Get the 32-bit integer `number` value of `"4.5"` using [`RoundingMode.AwayFromZero`](roundingmode-type.md).
 
 **Usage**
 

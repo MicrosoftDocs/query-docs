@@ -18,7 +18,7 @@ Text.FromBinary(<b>binary</b> as nullable binary, optional <b>encoding</b> as nu
 Decodes data from a binary value to a text value using the specified encoding type.
 
 * `binary`: The binary data to be decoded.
-* `encoding`: (Optional) The encoding used to convert the binary to text. Use [BinaryEncoding.Type](binaryencoding-type.md) to specify the type of encoding. If this value isn't specified, the default value is `BinaryEncoding.Utf8`.
+* `encoding`: (Optional) The encoding used to convert the binary to text. Use [`BinaryEncoding.Type`](binaryencoding-type.md) to specify the type of encoding. If this value isn't specified, the default value is `BinaryEncoding.Utf8`.
 
 ## Example 1
 

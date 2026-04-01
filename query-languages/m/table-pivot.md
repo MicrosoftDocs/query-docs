@@ -54,7 +54,7 @@ Table.FromRecords({
 
 ## Example 2
 
-Take the values "a", "b", and "c" in the attribute column of table `({ [ key = "x", attribute = "a", value = 1 ], [ key = "x", attribute = "c", value = 3 ], [ key = "x", attribute = "c", value = 5 ], [ key = "y", attribute = "a", value = 2 ], [ key = "y", attribute = "b", value = 4 ] })` and pivot them into their own column. The attribute "c" for key "x" has multiple values associated with it, so use the function List.Max to resolve the conflict.
+Take the values "a", "b", and "c" in the attribute column of table `({ [ key = "x", attribute = "a", value = 1 ], [ key = "x", attribute = "c", value = 3 ], [ key = "x", attribute = "c", value = 5 ], [ key = "y", attribute = "a", value = 2 ], [ key = "y", attribute = "b", value = 4 ] })` and pivot them into their own column. The attribute "c" for key "x" has multiple values associated with it, so use the function [`List.Max`](list-max.md) to resolve the conflict.
 
 **Usage**
 

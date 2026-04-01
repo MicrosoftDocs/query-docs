@@ -17,7 +17,7 @@ DateTime.From(<b>value</b> as any, optional <b>culture</b> as nullable text) as 
 
 Returns a `datetime` value from the given `value`. An optional `culture` may also be provided (for example, "en-US"). If the given `value` is `null`, **DateTime.From** returns `null`. If the given `value` is `datetime`, `value` is returned. Values of the following types can be converted to a `datetime` value:
 
-* `text`: A `datetime` value from textual representation. Refer to [DateTime.FromText](datetime-fromtext.md) for details.
+* `text`: A `datetime` value from textual representation. Refer to [`DateTime.FromText`](datetime-fromtext.md) for details.
 * `date`: A `datetime` with `value` as the date component and `12:00:00 AM` as the time component.
 * `datetimezone`: The local `datetime` equivalent of `value`.
 * `time`: A `datetime` with the date equivalent of the OLE Automation Date of `0` as the date component and `value` as the time component.

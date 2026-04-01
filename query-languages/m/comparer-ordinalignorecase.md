@@ -21,7 +21,7 @@ A comparer function accepts two arguments and returns -1, 0, or 1 based on wheth
 
 ## Example
 
-Using case-insensitive Ordinal rules, compare "Abc" with "abc". Note "Abc" is less than "abc" using `Comparer.Ordinal`.
+Using case-insensitive Ordinal rules, compare "Abc" with "abc". Note "Abc" is less than "abc" using [`Comparer.Ordinal`](comparer-ordinal.md).
 
 **Usage**
 

@@ -20,7 +20,7 @@ A metadata record value is associated with a value x using the syntax value meta
 Tags = {"Classical"} ]
 ```
 
-A metadata record can be accessed for a value using the [Value.Metadata](value-metadata.md) function. In the following example, the expression in the ComposerRating field accesses the metadata record of the value in the Composer field, and then accesses the Rating field of the metadata record.
+A metadata record can be accessed for a value using the [`Value.Metadata`](value-metadata.md) function. In the following example, the expression in the ComposerRating field accesses the metadata record of the value in the Composer field, and then accesses the Rating field of the metadata record.
 
 ```powerquery-m
 [  
@@ -31,7 +31,7 @@ A metadata record can be accessed for a value using the [Value.Metadata](value-m
 
 Metadata records aren't preserved when a value is used with an operator or function that constructs a new value. For example, if two text values are concatenated using the & operator, the metadata of the resulting text value is an empty record [].
 
-The standard library functions [Value.RemoveMetadata](value-removemetadata.md) and [Value.ReplaceMetadata](value-replacemetadata.md) can be used to remove all metadata from a value and to replace a value's metadata.
+The standard library functions [`Value.RemoveMetadata`](value-removemetadata.md) and [`Value.ReplaceMetadata`](value-replacemetadata.md) can be used to remove all metadata from a value and to replace a value's metadata.
 
 ## Limitations
 

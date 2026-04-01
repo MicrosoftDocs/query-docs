@@ -19,7 +19,7 @@ Table.RemoveColumns(
 
 ## About
 
-Removes the specified `columns` from the `table` provided. If the specified column doesn't exist, an error is raised unless the optional parameter `missingField` specifies an alternative behavior (for example, [MissingField.UseNull](missingfield-type.md) or [MissingField.Ignore](missingfield-type.md)).
+Removes the specified `columns` from the `table` provided. If the specified column doesn't exist, an error is raised unless the optional parameter `missingField` specifies an alternative behavior (for example, [`MissingField.UseNull`](missingfield-type.md) or [`MissingField.Ignore`](missingfield-type.md)).
 
 ## Example 1
 

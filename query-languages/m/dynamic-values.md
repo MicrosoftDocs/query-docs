@@ -12,10 +12,10 @@ The Power Query M formula language includes these dynamic values.
 
 |Name|Description|
 |------------|---------------|
-|[Culture.Current](culture-current.md)|Returns the name of the current culture for the application.|
-|[TimeZone.Current](timezone-current.md)|Returns the name of the current time zone for the application.|
+|[`Culture.Current`](culture-current.md)|Returns the name of the current culture for the application.|
+|[`TimeZone.Current`](timezone-current.md)|Returns the name of the current time zone for the application.|
 
 ## See also
 
-* [Comparer functions](comparer-functions.md)
-* [DateTimeZone functions](datetimezone-functions.md)
+* [`Comparer functions`](comparer-functions.md)
+* [`DateTimeZone functions`](datetimezone-functions.md)

@@ -24,9 +24,9 @@ Reorders the fields of a record to match the order of a list of field names.
 * `record`: The record containing the fields to reorder.
 * `fieldOrder`: A list containing the new order of the fields to apply to the record. Field values are maintained and fields not listed in this parameter are left in their original positions.
 * `missingField`: Specifies the expected action for missing values in a row that contains fewer fields than expected. The following values are valid:
-  * `MissingField.Error`: (Default) Indicates that missing fields should result in an error. If no value is entered for the `missingField` parameter, this value is used.
-  * `MissingField.Ignore`: Indicates that missing fields should be ignored.
-  * `MissingField.UseNull`: Indicates that missing fields should be included as `null` values.
+  * [`MissingField.Error`](missingfield-type.md): (Default) Indicates that missing fields should result in an error. If no value is entered for the `missingField` parameter, this value is used.
+  * [`MissingField.Ignore`](missingfield-type.md): Indicates that missing fields should be ignored.
+  * [`MissingField.UseNull`](missingfield-type.md): Indicates that missing fields should be included as `null` values.
 
 ## Example 1
 
