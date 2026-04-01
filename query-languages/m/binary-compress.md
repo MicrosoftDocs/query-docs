@@ -17,8 +17,8 @@ Binary.Compress(<b>binary</b> as nullable binary, <b>compressionType</b> as numb
 
 Compresses a binary value using the given compression type. The result of this call is a compressed copy of the input. Compression types include:
 
-* [Compression.GZip](compression-type.md)
-* [Compression.Deflate](compression-type.md)
+* [`Compression.GZip`](compression-type.md)
+* [`Compression.Deflate`](compression-type.md)
 
 ## Example
 

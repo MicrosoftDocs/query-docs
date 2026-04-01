@@ -17,5 +17,5 @@ Binary.ToText(<b>binary</b> as nullable binary, optional <b>encoding</b> as null
 
 Returns the result of converting a binary list of numbers `binary` into a text value. Optionally, `encoding` may be specified to indicate the encoding to be used in the text value produced The following `BinaryEncoding` values may be used for `encoding`.
 
-* `BinaryEncoding.Base64`: Base 64 encoding
-* `BinaryEncoding.Hex`: Hex encoding
+* [`BinaryEncoding.Base64`](binaryencoding-type.md): Base 64 encoding
+* [`BinaryEncoding.Hex`](binaryencoding-type.md): Hex encoding

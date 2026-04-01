@@ -25,9 +25,9 @@ Returns a `logical` value based on the equality check over the two given values,
 
 The following built-in comparers are available in the formula language:
 
-* [Comparer.Ordinal](comparer-ordinal.md): Used to perform an exact ordinal comparison
-* [Comparer.OrdinalIgnoreCase](comparer-ordinalignorecase.md): Used to perform an exact ordinal case-insensitive comparison
-* [Comparer.FromCulture](comparer-fromculture.md): Used to perform a culture-aware comparison
+* [`Comparer.Ordinal`](comparer-ordinal.md): Used to perform an exact ordinal comparison
+* [`Comparer.OrdinalIgnoreCase`](comparer-ordinalignorecase.md): Used to perform an exact ordinal case-insensitive comparison
+* [`Comparer.FromCulture`](comparer-fromculture.md): Used to perform a culture-aware comparison
 
 ## Example
 
