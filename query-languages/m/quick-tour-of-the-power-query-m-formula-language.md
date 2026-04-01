@@ -80,7 +80,7 @@ Let's review each formula step.
 
 1. **Orders**: Create a table with data for Orders.
 
-2. **#"Capitalized Each Word"**: To capitalize each word, you use [Table.TransformColumns](table-transformcolumns.md).
+2. **#"Capitalized Each Word"**: To capitalize each word, you use [`Table.TransformColumns`](table-transformcolumns.md).
 
 3. **in #"Capitalized Each Word"**: Output the table with the first letter of each word capitalized.
 
