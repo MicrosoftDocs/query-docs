@@ -33,7 +33,7 @@ If a record is specified for `quoteStyle` (and `includeLineSeparators` and `enco
   * [`QuoteStyle.Csv`](quotestyle-type.md): Quoted line breaks are treated as part of the data, not as the end of the current row.
   * [`QuoteStyle.None`](quotestyle-type.md): All line breaks are treated as the end of the current row, even when they occur inside a quoted value. This value is the default if the `CsvStyle` option isn't specified.
 * `CsvStyle`: Specifies how quotes are handled. Should not be used with [`QuoteStyle.None`](quotestyle-type.md).
-  * [`CsvStyle.QuoteAfterDelimiter`](csvstyle-type.md): Quotes in a field are only significant immediately following the `Delimiter.
+  * [`CsvStyle.QuoteAfterDelimiter`](csvstyle-type.md): Quotes in a field are only significant immediately following the `Delimiter`.
   * [`CsvStyle.QuoteAlways`](csvstyle-type.md): Quotes in a field are always significant, regardless of where they appear.
 * `Delimiter`: A single character delimiter. Should be used only with [`CsvStyle.QuoteAfterDelimiter`](csvstyle-type.md).
 * `IncludeLineSeparators`: Specifies whether to include the line break characters in the text. The default value is `false`.

@@ -24,10 +24,11 @@ Converts a specified list of records into a table.
 * `records`: The list of records to convert to a table.
 * `columns`: (Optional) A list of the table's column names, or the table's type.
 * `missingField`: (Optional) Specifies how to handle missing fields in a row. Use one of the following values:
+
   * [`MissingField.Error`](missingfield-type.md): Any missing fields produce an error (default).
   * [`MissingField.UseNull`](missingfield-type.md): Any missing fields are included as `null` values.
 
-  Using [`MissingField.Ignore`](missingfield-type.md) in this parameter produces an error.
+Using [`MissingField.Ignore`](missingfield-type.md) in this parameter produces an error.
 
 ## Example 1
 

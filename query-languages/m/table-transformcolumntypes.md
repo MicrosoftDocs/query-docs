@@ -16,7 +16,7 @@ Table.TransformColumnTypes(
     optional <b>culture</b> as nullable text
 ) as table
 </pre>
-
+  
 ## About
 
 Returns a table by applying the transform operations to the specified columns using an optional culture.
@@ -29,7 +29,7 @@ Returns a table by applying the transform operations to the specified columns us
 
 The type value in the `typeTransformations` parameter can be `any`, all of the `number` types, `text`, all of the `date`, `time`, `datetime`, `datetimezone`, and `duration` types, `logical`, or `binary`. The `list`, `record`, `table`, or `function` types aren't valid for this parameter.
 
-For each column listed in `typeTransformations`, the ".From" method corresponding to the specified type value is normally used to perform the transformation. For example, if a [`Currency.Type`](type-conversion.md#commonly-used-types) type value is given for a column, the transformation function [`Currency.From`](currency-from.md) is applied to each value in that column.
+For each column listed in `typeTransformations`, the ".From" method corresponding to the specified type value is normally used to perform the transformation. For example, if a `Currency.Type` type value is given for a column, the transformation function [`Currency.From`](currency-from.md) is applied to each value in that column.
 
 ## Example 1
 
@@ -45,7 +45,7 @@ let
         {3, 4}
     }),
     #"Transform Column" = Table.TransformColumnTypes(
-        Source,
+        Source, 
         {"a", type text}
     )
 in
@@ -117,9 +117,9 @@ let
         {#date(2023, 12, 14), "22", .3834}
     }),
     #"Transform Columns" = Table.TransformColumnTypes(
-        Source,
+        Source, 
         {{"Date", type text}, {"Value", Percentage.Type}},
-        "de-DE")
+        "de-DE") 
 in
     #"Transform Columns"
 ```
@@ -134,7 +134,7 @@ in
     {"14.12.2023", "22", .3834}
 })
 ```
-
+   
 ## Related content
 
 * [Types and type conversion](type-conversion.md)

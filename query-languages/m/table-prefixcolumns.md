@@ -15,7 +15,7 @@ Table.PrefixColumns(<b>table</b> as table, <b>prefix</b> as text) as table
 
 ## About
 
-Returns a table where all the column names from the `table` provided are prefixed with the given text, `prefix`, plus a period in the form `prefix` `.ColumnName`.
+Returns a table where all the column names from the `table` provided are prefixed with the given text, `prefix`, plus a period in the form `prefix``.ColumnName`.
 
 ## Example
 

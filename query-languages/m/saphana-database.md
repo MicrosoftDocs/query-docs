@@ -18,7 +18,7 @@ SapHana.Database(<b>server</b> as text, optional <b>options</b> as nullable reco
 Returns a table of multidimensional packages from the SAP HANA database `server`. An optional record parameter, `options`, may be specified to control the following options:
 
 * `Query`: A native SQL query used to retrieve data. If the query produces multiple result sets, only the first will be returned.
-* `Distribution`: A [`SapHanaDistribution`](saphanadistribution-type.md) that sets the value of the "Distribution" property in the connection string. Statement routing is the method of evaluating the correct server node of a distributed system before statement execution. The default value is [`SapHanaDistribution.All`](saphanadistribution-type.md).
+* `Distribution`: A SapHanaDistribution that sets the value of the "Distribution" property in the connection string. Statement routing is the method of evaluating the correct server node of a distributed system before statement execution. The default value is [`SapHanaDistribution.All`](saphanadistribution-type.md).
 * `Implementation`: Specifies the implementation of the SAP HANA connector to use.
 * `EnableColumnBinding`: Binds variables to the columns of a SAP HANA result set when fetching data. May potentially improve performance at the cost of slightly higher memory utilization. The default value is false.
 * `ConnectionTimeout`: A duration that controls how long to wait before abandoning an attempt to make a connection to the server. The default value is 15 seconds.

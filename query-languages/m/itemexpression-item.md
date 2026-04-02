@@ -9,6 +9,6 @@ ms.topic: reference
 
 ## About
 
-An abstract syntax tree (AST) node representing the item in an item expression.
+ An abstract syntax tree (AST) node representing the item in an item expression.
 
 This value is identical to [`RowExpression.Row`](rowexpression-row.md).

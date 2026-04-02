@@ -21,4 +21,4 @@ The `OnInvoke` handler of [`Table.View`](table-view.md) can be used to define a 
 
 As with the handlers for built-in operations, if no `OnInvoke` handler is specified, or if it does not handle the view function, or if an error is raised by the handler, `function` is applied on top of the view.
 
-Refer to the published [Power Query custom connector documentation](/power-query/samples/trippin/10-tableview1/readme#using-tableview) for a more complete description of [`Table.View`](table-view.md) and custom view functions.
+Refer to the published Power Query custom connector documentation for a more complete description of [`Table.View`](table-view.md) and custom view functions.

@@ -16,7 +16,7 @@ Text.Contains(
     optional <b>comparer</b> as nullable function
 ) as nullable logical
 </pre>
-
+  
 ## About
 
 Detects whether `text` contains the value `substring`. Returns true if the value is found. This function doesn't support wildcards or regular expressions.
@@ -26,6 +26,8 @@ The optional argument `comparer` can be used to specify case-insensitive or cult
 * [`Comparer.Ordinal`](comparer-ordinal.md): Used to perform a case-sensitive ordinal comparison
 * [`Comparer.OrdinalIgnoreCase`](comparer-ordinalignorecase.md): Used to perform a case-insensitive ordinal comparison
 * [`Comparer.FromCulture`](comparer-fromculture.md): Used to perform a culture-aware comparison
+
+
 
 If the first argument is null, this function returns null.
 
@@ -91,7 +93,7 @@ let
         {"PTY-507", #date(2023,6,4), 110}
     }),
     #"Filtered rows" = Table.SelectRows(
-        Source,
+        Source, 
         each Text.Contains([Account Code], "A-") or
             Text.Contains([Account Code], "7"))
 in

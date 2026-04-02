@@ -12,10 +12,10 @@ ms.topic: reference
 <pre>
 Table.SelectRowsWithErrors(<b>table</b> as table, optional <b>columns</b> as nullable list) as table
 </pre>
-
+  
 ## About
 
-Returns a table with only those rows of the input table that contain an error in at least one of the cells. If a columns list is specified, then only the cells in the specified columns are inspected for errors.
+Returns a table with only those rows of the input table that contain an error in at least one of the cells. If a columns list is specified, then only the cells in the specified columns are inspected for [errors](errors.md).
 
 ## Example
 
