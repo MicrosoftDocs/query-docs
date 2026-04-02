@@ -56,7 +56,7 @@ let
     // Convert to text to inspect precision
     #"Double To Text" = Number.ToText(#"Use Double Precision", "G"),
     #"Decimal To Text" = Number.ToText(#"Use Decimal Precision", "G"),
-
+    
     #"Display Result" = [
         DoublePrecision = #"Double To Text",
         DecimalPrecision = #"Decimal To Text"
