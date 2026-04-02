@@ -15,4 +15,4 @@ Value.ReplaceMetadata(<b>value</b> as any, <b>metaValue</b> as any) as any
 
 ## About
 
-Replaces the input's [metadata](metadata.md) information.
+Replaces the input's metadata information.
