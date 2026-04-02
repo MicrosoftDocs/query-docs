@@ -36,6 +36,4 @@ Odbc.DataSource("dsn=your_dsn")
 
 **Output**
 
-```powerquery-m
-table
-```
+`table`

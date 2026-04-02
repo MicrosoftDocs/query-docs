@@ -39,6 +39,4 @@ Table.CombineColumns(
 
 **Output**
 
-```powerquery-m
-Table.FromRecords({[FullName = "Smith,Bob"]})
-```
+`Table.FromRecords({[FullName = "Smith,Bob"]})`

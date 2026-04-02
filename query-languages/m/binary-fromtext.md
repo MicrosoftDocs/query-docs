@@ -22,7 +22,7 @@ Returns the result of converting text value `text` to a binary (list of `number`
 
 ## Example 1
 
-Decode `"1011"` into binary.
+Decode "1011" into binary.
 
 **Usage**
 
@@ -32,13 +32,11 @@ Binary.FromText("1011")
 
 **Output**
 
-```powerquery-m
-Binary.FromText("1011", BinaryEncoding.Base64)
-```
+`Binary.FromText("1011", BinaryEncoding.Base64)`
 
 ## Example 2
 
-Decode `"1011"` into binary with Hex encoding.
+Decode "1011" into binary with Hex encoding.
 
 **Usage**
 
@@ -48,6 +46,4 @@ Binary.FromText("1011", BinaryEncoding.Hex)
 
 **Output**
 
-```powerquery-m
-Binary.FromText("EBE=", BinaryEncoding.Base64)
-```
+`Binary.FromText("EBE=", BinaryEncoding.Base64)`
