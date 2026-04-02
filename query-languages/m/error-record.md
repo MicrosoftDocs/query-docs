@@ -21,7 +21,7 @@ Error.Record(
 
 ## About
 
-Returns an error record from the provided text values for reason, mesage, detail, and error code.
+Returns an error record from the provided text values for reason, message, detail, and error code.
 
 * `reason`: The high-level cause of the error.
 * `message`: (Optional) A description of the error.
@@ -41,7 +41,7 @@ let
     divisor = 0,
     result = try if divisor = 0 then
         error Error.Record(
-            "DivideByZero",
+            "DivideByZero", 
             "You attempted to divide by zero."
         )
     else
@@ -65,7 +65,7 @@ in
         ErrorCode = null
     ]
 ]
-````
+```
 
 ## Example 2
 
@@ -88,6 +88,7 @@ let
             "ERR404"
         )
     else CustomerId
+
 in
     result
 ```
@@ -97,7 +98,7 @@ in
 ```powerquery-m
 [
     HasError = true,
-    Error = [
+    Error = [ 
         Reason = "CustomerNotFound",
         Message = "Customer ID 12345 wasn't found.",
         Detail = "Customer doesn't exist.",

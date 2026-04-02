@@ -34,7 +34,7 @@ Replace the key information on a table type.
 let
     BaseType = type table [ID = number, FirstName = text, LastName = text],
     KeysAdded = Type.ReplaceTableKeys(
-        BaseType,
+        BaseType, 
         {
             [Columns = {"ID"}, Primary = true],
             [Columns = {"FirstName", "LastName"}, Primary = false]
@@ -71,6 +71,4 @@ in
 
 **Output**
 
-```powerquery-m
-{}
-```
+`{}`
