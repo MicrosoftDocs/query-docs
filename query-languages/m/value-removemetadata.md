@@ -15,7 +15,7 @@ Value.RemoveMetadata(<b>value</b> as any, optional <b>metaValue</b> as any) as a
 
 ## About
 
-Strips the input of [metadata](metadata.md).
+Strips the input of metadata.
 
 ## Example 1
 
