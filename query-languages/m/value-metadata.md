@@ -15,4 +15,4 @@ Value.Metadata(<b>value</b> as any) as any
 
 ## About
 
-Returns a record containing the input's [metadata](metadata.md).
+Returns a record containing the input's metadata.
