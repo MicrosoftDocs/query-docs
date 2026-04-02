@@ -29,6 +29,4 @@ Combiner.CombineTextByRanges({{0, 1}, {3, 2}, {6, null}})({"abc", "def", "ghijkl
 
 **Output**
 
-```powerquery-m
-"a  de ghijkl"
-```
+`"a  de ghijkl"`

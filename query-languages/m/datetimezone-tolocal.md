@@ -30,4 +30,3 @@ DateTimeZone.ToLocal(#datetimezone(2010, 12, 31, 11, 56, 02, 7, 30))
 **Output**
 
 `#datetimezone(2010, 12, 31, 12, 26, 2, -8, 0)`
-

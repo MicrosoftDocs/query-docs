@@ -15,7 +15,7 @@ Number.IsNaN(<b>number</b> as number) as logical
 
 ## About
 
-Indicates if the value is NaN (Not a number). Returns `true` if `number` is equivalent to **Number.IsNaN**, `false` otherwise.
+Indicates if the value is NaN (Not a number). Returns `true` if `number` is equivalent to `Number.NaN`, `false` otherwise.
 
 ## Example 1
 

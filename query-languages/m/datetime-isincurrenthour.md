@@ -32,4 +32,3 @@ DateTime.IsInCurrentHour(DateTime.FixedLocalNow())
 **Output**
 
 `true`
-

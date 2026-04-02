@@ -18,6 +18,7 @@ Record.FieldOrDefault(
 </pre>
 
 ## About
+
 Returns the value of the specified field `field` in the record `record`. If the field is not found, the optional `defaultValue` is returned.
 
 ## Example 1

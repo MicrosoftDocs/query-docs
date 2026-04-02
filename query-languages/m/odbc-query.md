@@ -38,6 +38,4 @@ Odbc.Query("dsn=your_dsn", "select * from Customers")
 
 **Output**
 
-```powerquery-m
-table
-```
+`table`

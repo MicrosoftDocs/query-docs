@@ -35,6 +35,4 @@ Pdf.Tables(File.Contents("c:\sample.pdf"))
 
 **Output**
 
-```powerquery-m
-#table({"Name", "Kind", "Data"}, ...)
-```
+`#table({"Name", "Kind", "Data"}, ...)`

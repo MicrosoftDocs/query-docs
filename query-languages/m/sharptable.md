@@ -29,9 +29,7 @@ Create an empty table.
 
 **Output**
 
-```powerquery-m
-#table({}, {})
-```
+`#table({}, {})`
 
 ## Example 2
 
@@ -45,9 +43,7 @@ Create a table by inferring the number of columns from the first row.
 
 **Output**
 
-```powerquery-m
-#table({"Column1", "Column2"}, {{"Betty", 90.3}, {"Carl", 89.5}})
-```
+`#table({"Column1", "Column2"}, {{"Betty", 90.3}, {"Carl", 89.5}})`
 
 ## Example 3
 
@@ -61,9 +57,7 @@ Create a table by specifying the number of columns.
 
 **Output**
 
-```powerquery-m
-#table({"Column1", "Column2"}, {{"Betty", 90.3}, {"Carl", 89.5}})
-```
+`#table({"Column1", "Column2"}, {{"Betty", 90.3}, {"Carl", 89.5}})`
 
 ## Example 4
 
@@ -77,9 +71,7 @@ Create a table by providing a list of column names.
 
 **Output**
 
-```powerquery-m
-#table({"Name", "Score"}, {{"Betty", 90.3}, {"Carl", 89.5}})
-```
+`#table({"Name", "Score"}, {{"Betty", 90.3}, {"Carl", 89.5}})`
 
 ## Example 5
 
@@ -93,9 +85,7 @@ Create a table with an explicit type.
 
 **Output**
 
-```powerquery-m
-#table(type table [Name = text, Score = number], {{"Betty", 90.3}, {"Carl", 89.5}})
-```
+`#table(type table [Name = text, Score = number], {{"Betty", 90.3}, {"Carl", 89.5}})`
 
 ## Related content
 

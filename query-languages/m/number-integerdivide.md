@@ -19,7 +19,7 @@ Number.IntegerDivide(
 
 ## About
 
-Returns the integer portion of the result from dividing a number, `number1`, by another number, `number2`. If `number1` or `number2` are null, **Number.IntegerDivide** returns null.
+Returns the integer portion of the result from dividing a number, `number1`, by another number, `number2`. If `number1` or `number2` are null, `Number.IntegerDivide` returns null.
 
 * `number1`: The dividend.
 * `number2`: The divisor.

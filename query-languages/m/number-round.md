@@ -19,7 +19,7 @@ Number.Round(
 
 ## About
 
-Returns the result of rounding `number` to the nearest number. If `number` is null, **Number.Round** returns null.
+Returns the result of rounding `number` to the nearest number. If `number` is null, `Number.Round` returns null.
 
 By default, `number` is rounded to the nearest integer, and ties are broken by rounding to the nearest even number (using [`RoundingMode.ToEven`](roundingmode-type.md), also known as "banker's rounding").
 

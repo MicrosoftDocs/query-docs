@@ -30,6 +30,4 @@ Odbc.InferOptions("dsn=your_dsn")
 
 **Output**
 
-```powerquery-m
-record
-```
+`record`

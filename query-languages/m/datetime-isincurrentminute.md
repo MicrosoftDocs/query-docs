@@ -14,6 +14,7 @@ DateTime.IsInCurrentMinute(<b>dateTime</b> as any) as nullable logical
 </pre>
 
 ## About
+
 Indicates whether the given datetime value `dateTime` occurs during the current minute, as determined by the current date and time on the system.
 
 * `dateTime`: A `datetime`, or `datetimezone` value to be evaluated.

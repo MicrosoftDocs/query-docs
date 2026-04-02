@@ -31,7 +31,6 @@ Table.Repeat(
     }),
     2
 )
-
 ```
 
 **Output**

@@ -52,6 +52,7 @@ Table.FromRecords({
 ```
 
 ## Example 2
+
 Find the row with the smallest value in column [a] with the condition [b] < 0, in the table. The rows are sorted before the filter is applied.
 
 **Usage**
