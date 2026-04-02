@@ -6,6 +6,7 @@ ms.topic: reference
 ---
 
 # #binary
+
 ## Syntax
 
 <pre>
