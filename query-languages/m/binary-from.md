@@ -15,7 +15,7 @@ Binary.From(<b>value</b> as any, optional <b>encoding</b> as nullable number) as
 
 ## About
 
-Returns a `binary` value from the given `value`. If the given `value` is `null`, **Binary.From** returns `null`. If the given `value` is `binary`, `value` is returned. Values of the following types can be converted to a `binary` value:
+Returns a `binary` value from the given `value`. If the given `value` is `null`, `Binary.From` returns `null`. If the given `value` is `binary`, `value` is returned. Values of the following types can be converted to a `binary` value:
 
 * `text`: A `binary` value from the text representation. Refer to [`Binary.FromText`](binary-fromtext.md) for details.
 
