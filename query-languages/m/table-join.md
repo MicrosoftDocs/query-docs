@@ -106,6 +106,7 @@ in
 ```
 
 **Output**
+
 ```powerquery-m
 Table.FromRecords({
     [TenantID = 1, CustomerID = 1, Name = "Bob", Phone = "123-4567", Order.TenantID = 1, Order.OrderID = 1, Order.CustomerID = 1, Order.Name = "Fishing rod", Order.Price = 100],
