@@ -15,7 +15,7 @@ Number.Log(<b>number</b> as nullable number, optional <b>base</b> as nullable nu
 
 ## About
 
-Returns the logarithm of a number, `number`, to the specified `base` base. If `base` is not specified, the default value is [`Number.E`](number-e.md). If `number` is null **Number.Log** returns null.
+Returns the logarithm of a number, `number`, to the specified `base` base. If `base` is not specified, the default value is [`Number.E`](number-e.md). If `number` is null `Number.Log` returns null.
 
 ## Example 1
 

@@ -21,7 +21,7 @@ Error.Record(
 
 ## About
 
-Returns an error record from the provided text values for reason, mesage, detail, and error code.
+Returns an error record from the provided text values for reason, message, detail, and error code.
 
 * `reason`: The high-level cause of the error.
 * `message`: (Optional) A description of the error.
@@ -65,7 +65,7 @@ in
         ErrorCode = null
     ]
 ]
-````
+```
 
 ## Example 2
 

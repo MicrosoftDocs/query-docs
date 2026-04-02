@@ -17,7 +17,7 @@ Number.Exp(<b>number</b> as nullable number) as nullable number
 
 Returns the result of raising e to the power of `number` (exponential function).
 
-* `number`: A `number` for which the exponential function is to be calculated. If `number` is null, **Number.Exp** returns null.
+* `number`: A `number` for which the exponential function is to be calculated. If `number` is null, `Number.Exp` returns null.
 
 ## Example
 
