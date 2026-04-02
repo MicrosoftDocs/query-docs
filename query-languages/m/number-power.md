@@ -15,7 +15,7 @@ Number.Power(<b>number</b> as nullable number, <b>power</b> as nullable number) 
 
 ## About
 
-Returns the result of raising `number` to the power of `power`. If `number` or `power` are null, **Number.Power** returns null.
+Returns the result of raising `number` to the power of `power`. If `number` or `power` are null, `Number.Power` returns null.
 
 * `number`: The base.
 * `power`: The exponent.
