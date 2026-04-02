@@ -29,7 +29,8 @@ Text.ToList("Hello World")
 
 **Output**
 
-```powerquery-m{
+```powerquery-m
+{
     "H",
     "e",
     "l",

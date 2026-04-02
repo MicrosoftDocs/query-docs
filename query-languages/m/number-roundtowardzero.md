@@ -23,7 +23,7 @@ Round the number -1.2 toward zero.
 
 **Usage**
 
-``` powerquery-m
+```powerquery-m
 Number.RoundTowardZero(-1.2)
 ```
 
@@ -37,7 +37,7 @@ Round the number 1.2 toward zero.
 
 **Usage**
 
-``` powerquery-m
+```powerquery-m
 Number.RoundTowardZero(1.2)
 ```
 
@@ -51,7 +51,7 @@ Round the number -1.234 to two decimal places toward zero.
 
 **Usage**
 
-``` powerquery-m
+```powerquery-m
 Number.RoundTowardZero(-1.234, 2)
 ```
 

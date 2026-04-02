@@ -71,6 +71,4 @@ in
 
 **Output**
 
-```powerquery-m
-{}
-```
+`{}`
