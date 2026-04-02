@@ -33,7 +33,7 @@ Returns a table of OData feeds offered by an OData service from a uri `serviceUr
 * `FunctionOverloads`: A logical (true/false) when set to true, function import overloads will be listed in the navigator as separate entries, when set to false, function import overloads will be listed as one union function in the navigator. Default value for V3: false. Default value for V4: true.
 * `MoreColumns`: A logical (true/false) when set to true, adds a "More Columns" column to each entity feed containing open types and polymorphic types. This will contain the fields not declared in the base type. When false, this field is not present. Defaults to false.
 * `IncludeAnnotations`: A comma separated list of namespace qualified term names or patterns to include with "*" as a wildcard. By default, none of the annotations are included.
-* `IncludeMetadataAnnotations`: A comma separated list of namespace qualified term names or patterns to include on [metadata](metadata.md) document requests, with "*" as a wildcard. By default, includes the same annotations as IncludeAnnotations.
+* `IncludeMetadataAnnotations`: A comma separated list of namespace qualified term names or patterns to include on metadata document requests, with "*" as a wildcard. By default, includes the same annotations as IncludeAnnotations.
 * `OmitValues`: Allows the OData service to avoid writing out certain values in responses. If acknowledged by the service, we will infer those values from the omitted fields. Options include:
   * [`ODataOmitValues.Nulls`](odataomitvalues-type.md): Allows the OData service to omit null values.
 * `Implementation`: Specifies the implementation of the OData connector to use. Valid values are "2.0" or null.
