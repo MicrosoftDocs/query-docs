@@ -93,7 +93,7 @@ let
         {"PTY-507", #date(2023,6,4), 110}
     }),
     #"Filtered rows" = Table.SelectRows(
-        Source, 
+        Source,
         each Text.Contains([Account Code], "A-") or
             Text.Contains([Account Code], "7"))
 in
