@@ -35,10 +35,10 @@ An error is raised if a row expression AST cannot be returned for the body of `f
 Returns the AST for the body of the function `each [CustomerID] = "ALFKI"`.
 
 **Usage**
-  
+
 ```powerquery-m
 RowExpression.From(each [CustomerName] = "ALFKI")  
-```  
+```
 
 **Output**
 
