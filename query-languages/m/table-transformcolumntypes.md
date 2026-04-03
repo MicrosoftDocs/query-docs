@@ -137,7 +137,7 @@ in
 
 ## Example 4
 
-Apply transformations with a record value for ``culture``.
+Apply transformations with a record value for `culture`.
 
 **Usage**
 
