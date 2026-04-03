@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Date.FromText(<b>text</b> as nullable text, optional <b>options</b> as any) as nullable date
 </pre>
-  
+
 ## About
 
 Creates a date value from a textual representation.
