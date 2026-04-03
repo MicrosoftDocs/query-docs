@@ -11,7 +11,7 @@ ms.topic: reference
 
 <pre>
 RowExpression.From(<b>function</b> as function) as record
-</pre>  
+</pre>
 
 ## About
 
