@@ -21,12 +21,10 @@ Sorts a list of data, `list`, according to the optional criteria specified. An o
 * To compute a key to be used for sorting, a function of 1 argument can be used.
 * To both select a key and control order, comparison criterion can be a list containing the key and order (`{each 1 / _, Order.Descending}`).
 * To completely control the comparison, a function of 2 arguments can be used. This function will be passed two items from the list (any two items, in any order). The function should return one of the following values:
-
   * `-1`: The first item is less than the second item.
   * `0`: The items are equal.
   * `1`: The first item is greater than the second item.
-
-  [`Value.Compare`](value-compare.md) is a method that can be used to delegate this logic.
+[`Value.Compare`](value-compare.md) is a method that can be used to delegate this logic.
 
 ## Example 1
 

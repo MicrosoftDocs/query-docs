@@ -10,7 +10,7 @@ ms.topic: reference
 ## Syntax
 
 <pre>
-Cube.ReplaceDimensions(<b>cube</b> as table, <b>dimensions</b> as table) as table
+Cube.ReplaceDimensions(<b>cube</b> as table, <b>dimensions</b> as any) as table
 </pre>
 
 ## About

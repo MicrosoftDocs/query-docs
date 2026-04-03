@@ -49,7 +49,7 @@ let
             List.Transform(
                 List.Positions(customers),
                 each [
-                    IDNumber = _ + 1,    // Make it 1-based
+                    IDNumber = _ + 1,   // Make it 1-based
                     CustomerName = customers{_}
                 ]
             ),
