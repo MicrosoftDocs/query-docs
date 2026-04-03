@@ -33,7 +33,7 @@ The headers of the HTTP response are available as metadata on the binary result.
 
 ## Example 1
 
-Retrieve the contents of `"https://bing.com/search?q=Power+Query"` using the `RelativePath` and `Query` options. These options can be used to dynamically query a static base URL.
+Retrieve the contents of `"https://bing.com/search?q=Power+Query"` using the RelativePath and Query options. These options can be used to dynamically query a static base URL.
 
 **Usage**
 
@@ -87,7 +87,7 @@ Connect to a secure URL that accepts an authentication key as part of its query 
 
 **Usage**
 
-``` powerquery-m
+```powerquery-m
 Web.Contents("https://contoso.com/api/customers/get", [ApiKeyName="api_key"])
 ```
 

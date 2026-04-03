@@ -24,7 +24,7 @@ Find the median of the list `{5, 3, 1, 7, 9}`.
 **Usage**
 
 ```powerquery-m
-powerquery-mList.Median({5, 3, 1, 7, 9})
+List.Median({5, 3, 1, 7, 9})
 ```
 
 **Output**

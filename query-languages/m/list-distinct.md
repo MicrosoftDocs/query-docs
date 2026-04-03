@@ -102,12 +102,11 @@ in
 
 ```powerquery-m
 #table(type table[Country = text, Date = date, Value = Int64.Type],
-    {
-        {"USA", #date(2023, 8, 1), 567},
-        {"canada", #date(2023, 8, 1), 254},
-        {"Panama", #date(2023, 6, 2), 20}
-    }
-)
+{
+    {"USA", #date(2023, 8, 1), 567},
+    {"canada", #date(2023, 8, 1), 254},
+    {"Panama", #date(2023, 6, 2), 20}
+})
 ```
 
 ## Related content

@@ -54,8 +54,8 @@ Text.Split("Name, the Customer, the Purchase Date", ", the ")
 
 ```powerquery-m
 {
-    Name,
-    Customer,
-    Purchase Date
+    "Name",
+    "Customer",
+    "Purchase Date"
 }
 ```

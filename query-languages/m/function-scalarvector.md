@@ -58,7 +58,6 @@ in
 **Output**
 
 ```powerquery-m
-
 Table.FromRecords({
     [a = 1, b = 2, Result = 2],
     [a = 3, b = 4, Result = 12]

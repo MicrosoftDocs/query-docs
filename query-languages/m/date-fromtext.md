@@ -18,9 +18,7 @@ Date.FromText(<b>text</b> as nullable text, optional <b>options</b> as any) as n
 Creates a date value from a textual representation.
 
 * `text`: A text value to covert to a date.
-
 * `options`: An optional `record` that can be provided to specify additional properties. The `record` can contain the following fields:
-
   * `Format`: A `text` value indicating the format to use. For more details, go to [Standard date and time format strings](standard-date-and-time-format-strings.md) and [Custom date and time format strings](custom-date-and-time-format-strings.md). Omitting this field or providing `null` results in parsing the date using a best effort.
   * `Culture`: When `Format` isn't null, `Culture` controls some format specifiers. For example, in `"en-US"` `"MMM"` is `"Jan", "Feb", "Mar", ...`, while in `"ru-RU"` `"MMM"` is `"янв", "фев", "мар", ...`. When `Format` is `null`, `Culture` controls the default format to use. When `Culture` is `null` or omitted, [`Culture.Current`](culture-current.md) is used.
 

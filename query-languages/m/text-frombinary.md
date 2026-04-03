@@ -53,7 +53,7 @@ in
 ```powerquery-m
 [
     OriginalText = "Testing 1-2-3",
-    BinaryEncoded = "VGVzdGluZyAxLTItMw==",
+    BinaryBase64 = "VGVzdGluZyAxLTItMw==",
     DecodedText = "Testing 1-2-3"
 ]
 ```
@@ -63,7 +63,6 @@ in
 Encode text to binary with a Byte Order Mark (BOM), produce a viewable hexadecimal string, then decode it back to text.
 
 **Usage**
-
 
 ```powerquery-m
 let
@@ -96,7 +95,7 @@ in
 ```powerquery-m
 [
     OriginalText = "Testing 1-2-3",
-    DecodedText = "fffe540065007300740069006e006700200031002d0032002d003300",
+    BinaryHex = "fffe540065007300740069006e006700200031002d0032002d003300",
     DecodedText = "Testing 1-2-3",
     IsIdentical = true
 ]

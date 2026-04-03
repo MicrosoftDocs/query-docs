@@ -27,7 +27,7 @@ Converts a specified list of records into a table.
   * [`MissingField.Error`](missingfield-type.md): Any missing fields produce an error (default).
   * [`MissingField.UseNull`](missingfield-type.md): Any missing fields are included as `null` values.
 
-  Using [`MissingField.Ignore`](missingfield-type.md) in this parameter produces an error.
+Using [`MissingField.Ignore`](missingfield-type.md) in this parameter produces an error.
 
 ## Example 1
 

@@ -26,4 +26,4 @@ Returns a table of SQL tables and views from the OLE DB data source specified by
 * `CommandTimeout`: A duration that controls how long the server-side query is allowed to run before it is canceled. The default value is ten minutes.
 * `SqlCompatibleWindowsAuth`: A logical (true/false) that determines whether to produce SQL Server-compatible connection string options for Windows authentication. The default value is true.
 
-The record parameter is specified as [option1 = value1, option2 = value2...] or [Query = "select ..."] for example.
+The record parameter is specified as [option1 = value1, option2 = value2...] or [Query = "select ..."], for example.

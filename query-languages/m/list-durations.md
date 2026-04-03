@@ -23,7 +23,7 @@ Returns a list of `count` `duration` values, starting at `start` and incremented
 
 ## Example
 
-Create a list of 5 values starting 1 hour and incrementing by an hour.
+Create a list of 5 values starting with 1 hour and incrementing by an hour.
 
 **Usage**
 

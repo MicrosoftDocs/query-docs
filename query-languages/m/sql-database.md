@@ -34,4 +34,4 @@ Returns a table of SQL tables, views, and stored functions from the SQL Server d
 * `OmitSRID`: A logical (true/false) that, if true, omits the SRID when producing Well-Known Text from geometry and geography types.
 * `EnableCrossDatabaseFolding`: A logical (true/false) value that, if true, allows query folding across databases on the same server. The default value is false.
 
-The record parameter is specified as [option1 = value1, option2 = value2...] or [Query = "select ..."] for example.
+The record parameter is specified as [option1 = value1, option2 = value2...] or [Query = "select ..."], for example.

@@ -18,7 +18,7 @@ Value.FromText(<b>text</b> as any, optional <b>culture</b> as nullable text) as 
 Decodes a value from a textual representation and interprets it as a value with an appropriate type.
 
 * `text`: The text to interpret.
-* `culture` (Optional) A specific culture used to interpret the text (for example, "en-US").
+* `culture`: (Optional) A specific culture used to interpret the text (for example, "en-US").
 
 This function takes a text value and returns a value of type `number`, `logical`, `null`, `datetime`, `duration`, or `text`. An empty text value is interpreted as a `null` value.
 
@@ -49,7 +49,6 @@ Value.FromText("25.4%")
 **Output**
 
 `0.254`
-
 
 ## Example 3
 

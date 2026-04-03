@@ -15,7 +15,7 @@ List.MatchesAll(<b>list</b> as list, <b>condition</b> as function) as logical
 
 ## About
 
-Returns `true` if the condition function is satisfied by all of the values in the list, otherwise returns `false`.
+Returns `true` if the condition function is satisfied by all values in the list, otherwise returns `false`.
 
 * `list`: The list containing the values to check.
 * `condition`: The condition to check against the values in the list.

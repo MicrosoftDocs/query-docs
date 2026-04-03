@@ -15,4 +15,4 @@ Value.Versions(<b>value</b> as any) as table
 
 ## About
 
-Returns a navigation table containing the available versions of `value`.
+Returns a navigation table containing the available versions of the `value`.

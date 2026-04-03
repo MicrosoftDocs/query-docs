@@ -89,10 +89,10 @@ Remove any maintenance tasks that fall on US holidays.
 let
     MaintenanceSchedule = #table(type table [Task = text, Date = date],
     {
-        {"HVAC Check", #date(2025, 7, 10)},             // Not a holiday
-        {"Window Washing", #date(2025, 9, 1)},          // Labor Day
-        {"Fire Drill", #date(2025, 9, 17)},             // Not a holiday
-        {"Light Bulb Replacement", #date(2025, 11, 27)} // Thanksgiving
+        {"HVAC Check", #date(2025, 7, 10)},              // Not a holiday
+        {"Window Washing", #date(2025, 9, 1)},           // Labor Day
+        {"Fire Drill", #date(2025, 9, 17)},              // Not a holiday
+        {"Light Bulb Replacement", #date(2025, 11, 27)}  // Thanksgiving
     }),
 
     USHolidays = {

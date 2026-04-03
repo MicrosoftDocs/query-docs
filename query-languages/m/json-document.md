@@ -65,7 +65,7 @@ Returns the content of a local JSON file.
 
 ```powerquery-m
 let
-    Source = (Json.Document(
+    Source = Json.Document(
         File.Contents("C:\test-examples\JSON\Contosoware.json")
     )
 in
@@ -74,7 +74,7 @@ in
 
 **Output**
 
-A record, list, or primitive value representing the JSON data contained in the file
+`A record, list, or primitive value representing the JSON data contained in the file`
 
 ## Example 3
 
@@ -88,8 +88,10 @@ let
         Web.Contents("htts://contoso.com/products/Contosoware.json"),
         TextEncoding.Utf16)
     )
+in
+    Source
 ```
 
 **Output**
 
-A record, list, or primitive value representing the JSON UTF16 data contained in the file
+`A record, list, or primitive value representing the JSON UTF16 data contained in the file`

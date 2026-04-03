@@ -59,7 +59,7 @@ Table.FromRecords({
 
 ## Example 2
 
-Convert the number values in missing column [X] to text values, defaulting to `null` on columns that don't exist.
+Convert the number values in missing column [X] to text values, defaulting to `null` for columns that don't exist.
 
 **Usage**
 

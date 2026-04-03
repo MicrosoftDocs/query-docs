@@ -89,22 +89,22 @@ Table.FromRecords({
         Phone = "555-1234",
         NestedTable = Table.FromRecords({
             [
-                CustomerStateID = 1,
-                FirstName2 = "Bob",
-                State = "TX"
+              CustomerStateID = 1,
+              FirstName2 = "Bob",
+              State = "TX"
             ],
             [
-                CustomerStateID = 2,
-                FirstName2 = "bOB",
-                State = "CA"
+              CustomerStateID = 2,
+              FirstName2 = "bOB",
+              State = "CA"
             ]
         })
     ],
     [
-        CustomerID = 2,
-        FirstName1 = "Robert",
-        Phone = "555-4567",
-        NestedTable = Table.FromRecords({})
+      CustomerID = 2,
+      FirstName1 = "Robert",
+      Phone = "555-4567",
+      NestedTable = Table.FromRecords({})
     ]
 })
 ```

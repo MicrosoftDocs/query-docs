@@ -49,9 +49,9 @@ Find the words with more than 3 characters.
 
 ```powerquery-m
 List.MaxN(
-        {"boy", "dog", "pony", "cat", "rabbit", "bat"},
-        each Text.Length(_) > 3
-    )
+    {"boy", "dog", "pony", "cat", "rabbit", "bat"},
+    each Text.Length(_) > 3
+)
 ```
 
 **Output**

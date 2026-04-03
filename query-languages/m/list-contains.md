@@ -23,7 +23,7 @@ Indicates whether the list contains the specified value. Returns `true` if the v
 
 * `list`: The list to search.
 * `value`: The value to search for in the list.
-* `equationCriteria`: (Optional) The comparer used to determine if the two values are equal.
+* `equationCriteria`: (Optional) The comparer used to determine if two values are equal.
 
 ## Example 1
 

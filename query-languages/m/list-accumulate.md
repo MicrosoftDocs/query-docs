@@ -65,6 +65,7 @@ in
 ```
 
 **Output**
+
 `"The quick brown fox jumps over the lazy dog."`
 
 ## Example 3

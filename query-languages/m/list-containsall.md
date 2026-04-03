@@ -23,7 +23,7 @@ Indicates whether the list includes all the values from another list. Returns `t
 
 * `list`: The list to search.
 * `values`: The list of values to search for in the first list.
-* `equationCriteria`: (Optional) The comparer used to determine if the two values are equal.
+* `equationCriteria`: (Optional) The comparer used to determine if two values are equal.
 
 ## Example 1
 
