@@ -46,7 +46,7 @@ Text.PositionOf("Hello, World! Hello, World!", "World")
 
 ## Example 2
 
-Get the position of last occurrence of "World" in "Hello, World! Hello, World!".
+Get the position of the last occurrence of "World" in "Hello, World! Hello, World!".
 
 **Usage**
 

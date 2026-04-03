@@ -18,7 +18,7 @@ Folder.Files(<b>path</b> as text, optional <b>options</b> as nullable record) as
 Returns a table containing a row for each file found in the specified folder and all its subfolders.
 
 * `path`: The path to the folder you want to retrieve the files from. The supplied folder path must be a valid absolute path.
-* `options`: This parameter is currently intended for internal use only.
+* `options`: (Optional) This parameter is currently intended for internal use only.
 
 Each row of the returned table contains properties of the file and a link to its content.
 

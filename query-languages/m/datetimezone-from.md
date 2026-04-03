@@ -27,7 +27,7 @@ Values of the following types can be converted to a `datetimezone` value:
 * `datetime`: Returns a `datetimezone` with `value` as the datetime and the offset corresponding the local time zone.
 * `datetimezone`: Returns `value`.
 * `time`: Returns a `datetimezone` with the date equivalent of the OLE Automation Date of `0` as the date component, `value` as the time component, and the offset corresponding the local time zone. The OLE Automation Date consists of a floating-point number whose integral component is the number of days before or after midnight, 30 December 1899, and whose fractional component represents the time on that day divided by 24. For example, midnight, 31 December 1899 is represented by 1.0; 6 A.M., 1 January 1900 is represented by 2.25; midnight, 29 December 1899 is represented by -1.0; and 6 A.M., 29 December 1899 is represented by -1.25. The base value is midnight, 30 December 1899. The minimum value is midnight, 1 January 0100. The maximum value is the last moment of 31 December 9999.
-* `number`: Returns a `datetimezone` with the datetime equivalent to the OLE Automation Date expressed by `value` and the offset corresponding the local time zone.
+* `number`: Returns a `datetimezone` with the datetime equivalent of the OLE Automation Date expressed by `value` and the offset corresponding the local time zone.
 * `null`: Returns `null`.
 
 If `value` is of any other type, an error is returned.

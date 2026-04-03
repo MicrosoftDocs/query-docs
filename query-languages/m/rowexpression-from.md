@@ -15,7 +15,7 @@ RowExpression.From(<b>function</b> as function) as record
 
 ## About
 
-Returns the abstract syntax tree (AST) for the body of `function`, normalized into a _row expression_:
+Returns the abstract syntax tree (AST) for the body of `function`, normalized into a *row expression*:
 
 * The function must be a 1-argument lambda.
 * All references to the function parameter are replaced with [`RowExpression.Row`](rowexpression-row.md).

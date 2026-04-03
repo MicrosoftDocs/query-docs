@@ -60,7 +60,7 @@ Table.LastN(
         [a = 5, b = 6]
     }),
     each _ [a] > 0
-
+)
 ```
 
 **Output**
