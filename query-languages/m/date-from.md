@@ -12,7 +12,7 @@ ms.topic: reference
 <pre>
 Date.From(<b>value</b> as any, optional <b>culture</b> as nullable text) as nullable date
 </pre>
-  
+
 ## About
 
 Returns a date value from the given value.
