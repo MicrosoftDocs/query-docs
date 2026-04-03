@@ -40,6 +40,4 @@ in
 
 **Output**
 
-```powerquery-m
-table
-```
+`table`

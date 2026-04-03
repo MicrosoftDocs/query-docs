@@ -24,7 +24,7 @@ Appends a column named `newColumnName` to the `table` with the ranking of one or
 
 ## Example
 
-Add a column named **RevenueRank** to the table which ranks the **Revenue** column from highest to lowest.
+Add a column named "RevenueRank" to the table which ranks the "Revenue" column from highest to lowest.
 
 **Usage**
 

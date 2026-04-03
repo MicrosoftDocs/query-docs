@@ -92,14 +92,14 @@ in
 
 ```powerquery-m
 #table(type table [Company ID = text, Country = text, Date = text],
-    {
-        {"JS-464", "USA", "24/03/2024"},
-        {"LT-331", "France", "05/10/2024"},
-        {"XE-100", "USA", "21/05/2024"},
-        {"RT-430", "Germany", "18/01/2024"},
-        {"LS-005", "France", "31/12/2023"},
-        {"UW-220", "Germany", "25/02/2024"}
-    })
+{
+    {"JS-464", "USA", "24/03/2024"},
+    {"LT-331", "France", "05/10/2024"},
+    {"XE-100", "USA", "21/05/2024"},
+    {"RT-430", "Germany", "18/01/2024"},
+    {"LS-005", "France", "31/12/2023"},
+    {"UW-220", "Germany", "25/02/2024"}
+})
 ```
 
 ## Example 3
@@ -132,6 +132,46 @@ in
     {"12.03.2024", "134282", .24368},
     {"30.05.2024", "44343", .03556},
     {"14.12.2023", "22", .3834}
+})
+```
+
+## Example 4
+
+Apply transformations with a record value for ``culture``.
+
+**Usage**
+
+```powerquery-m
+let
+    Source = #table(type table [Company ID = text, Country = text, Date = date],
+    {
+        {"JS-464", "USA", #date(2024, 3, 24)},
+        {"LT-331", "France", #date(2024, 10, 5)},
+        {"XE-100", "USA", #date(2024, 5, 21)},
+        {"RT-430", "Germany", #date(2024, 1,18)},
+        {"LS-005", "France", #date(2023, 12, 31)},
+        {"UW-220", "Germany", #date(2024, 2, 25)}
+    }),
+    #"Transform Column" = Table.TransformColumnTypes(
+        Source,
+        {{"Date", type text}, {"NewColumn", type number}},
+        [Culture="fr-FR", MissingField=MissingField.UseNull]
+    )
+in
+    #"Transform Column"
+```
+
+**Output**
+
+```powerquery-m
+#table(type table [Company ID = text, Country = text, Date = text, NewColumn = number],
+{
+    {"JS-464", "USA", "24/03/2024", null},
+    {"LT-331", "France", "05/10/2024", null},
+    {"XE-100", "USA", "21/05/2024", null},
+    {"RT-430", "Germany", "18/01/2024", null},
+    {"LS-005", "France", "31/12/2023", null},
+    {"UW-220", "Germany", "25/02/2024", null}
 })
 ```
 
