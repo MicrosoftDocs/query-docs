@@ -17,7 +17,7 @@ DateTimeZone.ZoneMinutes(<b>dateTimeZone</b> as nullable datetimezone) as nullab
 
 Returns the time zone minutes component of a `datetimezone` value.
 
-* `dateTimeZone`: A `datetimezone` value from which the time zone minute component is extracted. If `dateTimeZone` is `null`, the function returns `null`.
+* `dateTimeZone`: A `datetimezone` value from which the time zone minutes component is extracted. If `dateTimeZone` is `null`, the function returns `null`.
 
 ## Example
 

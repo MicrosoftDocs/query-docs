@@ -21,8 +21,8 @@ Text.StartsWith(
 
 Returns true if text value `text` starts with text value `substring`.
 
-* `text`: ** A `text` value which is to be searched.
-* `substring`: ** A `text` value which is the substring to be searched for in `text`.
+* `text`: A `text` value which is to be searched.
+* `substring`: A `text` value which is the substring to be searched for in `text`.
 * `comparer`: *(Optional)* A `Comparer` used for controlling the comparison. For example, [`Comparer.OrdinalIgnoreCase`](comparer-ordinalignorecase.md) may be used to perform case-insensitive searches.
 
 `comparer` is a `Comparer` which is used to control the comparison. Comparers can be used to provide case-insensitive or culture and locale-aware comparisons.

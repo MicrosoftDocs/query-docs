@@ -27,8 +27,6 @@ The optional argument `comparer` can be used to specify case-insensitive or cult
 * [`Comparer.OrdinalIgnoreCase`](comparer-ordinalignorecase.md): Used to perform a case-insensitive ordinal comparison
 * [`Comparer.FromCulture`](comparer-fromculture.md): Used to perform a culture-aware comparison
 
-
-
 If the first argument is null, this function returns null.
 
 All characters are treated literally. For example, "DR", " DR", "DR ", and " DR " aren't considered equal to each other.
