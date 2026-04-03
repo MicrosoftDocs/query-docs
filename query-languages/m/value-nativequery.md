@@ -9,7 +9,8 @@ ms.topic: reference
 
 ## Syntax
 
-<pre>Value.NativeQuery(
+<pre>
+Value.NativeQuery(
     <b>target</b> as any,
     <b>query</b> as text,
     optional <b>parameters</b> as any,
