@@ -84,7 +84,7 @@ let
         {"PTY-507", "4 giu. 2024", 110}
     }),
     #"Converted Date" = Table.TransformColumns(
-        Source, 
+        Source,
         {"Posted Date", each Date.FromText(_, [Culture = "it-IT"]), type date}
     )
 in
