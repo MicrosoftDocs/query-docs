@@ -17,7 +17,7 @@ DateTime.IsInPreviousNSeconds(<b>dateTime</b> as any, <b>seconds</b> as number) 
 
 Indicates whether the given datetime value `dateTime` occurs during the previous number of seconds, as determined by the current date and time on the system. Note that this function will return false when passed a value that occurs within the current second.
 
-* `dateTime`: A `datetime`>, or `datetimezone` value to be evaluated.
+* `dateTime`: A `datetime`, or `datetimezone` value to be evaluated.
 * `seconds`: The number of seconds.
 
 ## Example

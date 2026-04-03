@@ -32,4 +32,4 @@ Returns a table of SQL tables and views available in a Db2 database on server `s
 * `PackageCollection`: Specifies a string value for package collection (default is "NULLID") to enable use of shared packages required to process SQL statements. Applies to Implementation = "Microsoft".
 * `UseDb2ConnectGateway`: Specifies whether the connection is being made through a Db2 Connect gateway. Applies to Implementation = "Microsoft".
 
-The record parameter is specified as [option1 = value1, option2 = value2...] or [Query = "select ..."] for example.
+The record parameter is specified as [option1 = value1, option2 = value2...] or [Query = "select ..."], for example.

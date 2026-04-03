@@ -18,7 +18,7 @@ Text.SplitAny(<b>text</b> as text, <b>separators</b> as text) as list
 Returns a list of text values resulting from the splitting of a text value based on any character specified in the delimiter.
 
 * `text`: The text value to split.
-* `separator`: The delimiter characters used to split the text.
+* `separators`: The delimiter characters used to split the text.
 
 ## Example
 

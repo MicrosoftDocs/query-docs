@@ -20,7 +20,7 @@ Table.AddRankColumn(
 
 ## About
 
-Appends a column named `newColumnName` to the `table` with the ranking of one or more other columns described by `comparisonCriteria`. The `RankKind` option in `options` can be used by advanced users to pick a more-specific ranking method.
+Appends a column named `newColumnName` to the `table` with the ranking of one or more other columns described by `comparisonCriteria`. The RankKind option in `options` can be used by advanced users to pick a more-specific ranking method.
 
 ## Example
 

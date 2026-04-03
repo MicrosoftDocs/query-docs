@@ -15,7 +15,7 @@ Character.ToNumber(<b>character</b> as nullable text) as nullable number
 
 ## About
 
-Returns the number equivalent of the character, `character`.
+Returns the number equivalent of the `character`.
 
 The result will be the 21-bit Unicode code point represented by the provided character or surrogate pair.
 
