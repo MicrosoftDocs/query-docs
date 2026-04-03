@@ -71,7 +71,7 @@ let
         {"PTY-507", "4 Juni, 2023", 110}
     }),
     #"Filtered rows" = Table.TransformColumns(
-        Source, 
+        Source,
         {"Posted Date", each Date.From(_, "de-DE"), type date}
     )
 in
