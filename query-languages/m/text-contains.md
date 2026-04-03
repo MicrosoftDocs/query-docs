@@ -16,7 +16,7 @@ Text.Contains(
     optional <b>comparer</b> as nullable function
 ) as nullable logical
 </pre>
-  
+
 ## About
 
 Detects whether `text` contains the value `substring`. Returns true if the value is found. This function doesn't support wildcards or regular expressions.
