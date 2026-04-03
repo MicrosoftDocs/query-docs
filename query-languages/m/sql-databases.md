@@ -29,6 +29,6 @@ Returns a table of databases on the specified SQL server, `server`. An optional 
 * `OmitSRID`: A logical (true/false) that, if true, omits the SRID when producing Well-Known Text from geometry and geography types.
 * `EnableCrossDatabaseFolding`: A logical (true/false) value that, if true, allows query folding across databases on the same server. The default value is false.
 
-The record parameter is specified as [option1 = value1, option2 = value2...] for example.
+The record parameter is specified as [option1 = value1, option2 = value2...], for example.
 
 Does not support setting a SQL query to run on the server. [`Sql.Database`](sql-database.md) should be used instead to run a SQL query.

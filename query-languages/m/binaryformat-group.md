@@ -36,8 +36,7 @@ The `group` parameter specifies a list of item definitions. Each item definition
 
 ## Example 1
 
-The following assumes a key value that is a single byte, with 4 expected items in the group, all of which have a byte of data following the key. The items appear in the input as follows:
-
+The following assumes a key value that is a single byte, with 4 expected items in the group, all of which have a byte of data following the key. The items appear in the input as follows: 
 * Key 1 is required, and does appear with value 11.
 * Key 2 repeats, and appears twice with value 22, and results in a value of { 22, 22 }.
 * Key 3 is optional, and does not appear, and results in a value of null.

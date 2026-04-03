@@ -13,7 +13,7 @@ ms.topic: reference
 Table.AddJoinColumn(
     <b>table1</b> as table,
     <b>key1</b> as any,
-    <b>table2</b> as function,
+    <b>table2</b> as any,
     <b>key2</b> as any,
     <b>newColumnName</b> as text
 ) as table
