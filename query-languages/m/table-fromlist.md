@@ -21,7 +21,7 @@ Table.FromList(
 
 ## About
 
-Converts a list, `list` into a table by applying the optional splitting function, `splitter`, to each item in the list. By default, the list is assumed to be a list of text values that is split by commas. Optional `columns` may be the number of columns, a list of columns or a TableType. Optional `default` and `extraValues` may also be specified.
+Converts a list, `list` into a table by applying the optional [splitting function](splitter-functions.md), `splitter`, to each item in the list. By default, the list is assumed to be a list of text values that is split by commas. Optional `columns` may be the number of columns, a list of columns or a TableType. Optional `default` and `extraValues` may also be specified.
 
 ## Example 1
 
