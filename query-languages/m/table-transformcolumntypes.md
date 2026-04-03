@@ -45,7 +45,7 @@ let
         {3, 4}
     }),
     #"Transform Column" = Table.TransformColumnTypes(
-        Source, 
+        Source,
         {"a", type text}
     )
 in
@@ -117,9 +117,9 @@ let
         {#date(2023, 12, 14), "22", .3834}
     }),
     #"Transform Columns" = Table.TransformColumnTypes(
-        Source, 
+        Source,
         {{"Date", type text}, {"Value", Percentage.Type}},
-        "de-DE") 
+        "de-DE")
 in
     #"Transform Columns"
 ```
@@ -134,7 +134,7 @@ in
     {"14.12.2023", "22", .3834}
 })
 ```
-   
+
 ## Related content
 
 * [Types and type conversion](type-conversion.md)
