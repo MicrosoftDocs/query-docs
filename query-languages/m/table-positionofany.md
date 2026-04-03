@@ -24,8 +24,8 @@ Returns the row(s) position(s) from the `table` of the first occurrence of the l
 
 * `table`: The input table.
 * `rows`: The list of rows in the table to find the positions of.
-* `occurrence`: (Optional) Specifies which occurrences of the row to return.
-* `equationCriteria`: (Optional) Controls the comparison between the table rows.
+* `occurrence`: *(Optional)* Specifies which occurrences of the row to return.
+* `equationCriteria`: *(Optional)* Controls the comparison between the table rows.
 
 ## Example 1
 

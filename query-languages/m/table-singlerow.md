@@ -15,7 +15,7 @@ Table.SingleRow(<b>table</b> as table) as record
 
 ## About
 
-Returns the single row in the one row `table`. If the `table` does not contain exactly one row, an error is raised.
+Returns the single row in the one row `table`. If the `table` has more than one row, an error is raised.
 
 ## Example
 
