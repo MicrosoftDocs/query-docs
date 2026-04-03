@@ -16,7 +16,7 @@ Table.TransformColumnTypes(
     optional <b>culture</b> as nullable text
 ) as table
 </pre>
-  
+
 ## About
 
 Returns a table by applying the transform operations to the specified columns using an optional culture.
