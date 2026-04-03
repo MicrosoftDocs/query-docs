@@ -85,9 +85,9 @@ in
 
 ```powerquery-m
 #table(type table [Home Sale = text, Sales Date = date, Sales Status = text],
-    {
-        {"1620 Ferris Way", #date(2024, 8, 22), "Pending"},
-        {"757 1st Ave. S.", #date(2024, 3, 15), "Sold"},
-        {"22303 Fillmore", #date(2024, 10, 2), "Pending"}
-    })
+{
+    {"1620 Ferris Way", #date(2024, 8, 22), "Pending"},
+    {"757 1st Ave. S.", #date(2024, 3, 15), "Sold"},
+    {"22303 Fillmore", #date(2024, 10, 2), "Pending"}
+})
 ```

@@ -50,7 +50,6 @@ Value.FromText("25.4%")
 
 `0.254`
 
-
 ## Example 3
 
 Convert text representing a French Euro value to its corresponding number value.

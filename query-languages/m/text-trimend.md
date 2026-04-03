@@ -62,7 +62,7 @@ let
         {"Leslie", "FR-4648****@**", 3.8392},
         {"Ringo", "DE-2046790@***", 12.6600}
     }),
-    #"Trimmed Account" = Table.TransformColumns(Source, {"Account Name", each Text.TrimEnd(_, {"*", "@"})})
+    #"Trimmed Account" = Table.TransformColumns(Source, {{"Account Name", each Text.TrimEnd(_, {"*", "@"})}})
 in
     #"Trimmed Account"
 ```
@@ -71,10 +71,9 @@ in
 
 ```powerquery-m
 #table(type table [Name = text, Account Name = text, Interest = number],
-    {
-        {"Bob", "US-847263", 2.841},
-        {"Leslie", "FR-4648", 3.8392},
-        {"Ringo", "DE-2046790", 12.66}
-    }),
-
+{
+    {"Bob", "US-847263", 2.841},
+    {"Leslie", "FR-4648", 3.8392},
+    {"Ringo", "DE-2046790", 12.66}
+})
 ```
