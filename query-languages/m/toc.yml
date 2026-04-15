@@ -274,6 +274,8 @@ items:
         href: binary-length.md
       - name: Binary.Range
         href: binary-range.md
+      - name: Binary.Split
+        href: binary-split.md
       - name: Binary.ToList
         href: binary-tolist.md
       - name: Binary.ToText
