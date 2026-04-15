@@ -13,7 +13,7 @@ ms.topic: reference
 Table.TransformColumnTypes(
     <b>table</b> as table,
     <b>typeTransformations</b> as list,
-    optional <b>culture</b> as nullable text
+    optional <b>culture</b> as any
 ) as table
 </pre>
 

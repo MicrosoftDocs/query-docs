@@ -21,7 +21,7 @@ A comparer function accepts two arguments and returns -1, 0, or 1 based on wheth
 
 ## Example
 
-Using Ordinal rules, compare if "encyclopædia" and "encyclopaedia" are equivalent. Note these are equivalent using `Comparer.FromCulture("en-US")`. 
+Using Ordinal rules, compare if "encyclopædia" and "encyclopaedia" are equivalent. Note these are equivalent using `Comparer.FromCulture("en-US")`.
 
 **Usage**
 
