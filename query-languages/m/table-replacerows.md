@@ -4,6 +4,7 @@ title: "Table.ReplaceRows"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ReplaceRows
 
 ## Syntax
@@ -16,17 +17,17 @@ Table.ReplaceRows(
     <b>rows</b> as list
 ) as table
 </pre>
-  
+
 ## About
 
-Replaces a specified number of rows, `count`, in the input `table` with the specified `rows`, beginning after the `offset`. The `rows` parameter is a list of records. 
+Replaces a specified number of rows, `count`, in the input `table` with the specified `rows`, beginning after the `offset`. The `rows` parameter is a list of records.
 
 * `table`: The table where the replacement is performed.
 * `offset`: The number of rows to skip before making the replacement.
 * `count`: The number of rows to replace.
 * `rows`: The list of row records to insert into the `table` at the location specified by the `offset`.
 
-## Example 1
+## Example
 
 Starting at position 1, replace 3 rows.
 

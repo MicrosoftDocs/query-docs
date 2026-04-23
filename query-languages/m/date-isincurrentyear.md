@@ -4,21 +4,22 @@ title: "Date.IsInCurrentYear"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.IsInCurrentYear
 
 ## Syntax
 
 <pre>
-Date.IsInCurrentYear(<b>dateTime</b> as any) as nullable logical  
+Date.IsInCurrentYear(<b>dateTime</b> as any) as nullable logical
 </pre>
-  
+
 ## About
 
 Indicates whether the given datetime value `dateTime` occurs during the current year, as determined by the current date and time on the system.
 
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
 
-## Example 1
+## Example
 
 Determine if the current system time is in the current year.
 

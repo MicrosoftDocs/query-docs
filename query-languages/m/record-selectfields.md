@@ -4,6 +4,7 @@ title: "Record.SelectFields"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Record.SelectFields
 
 ## Syntax
@@ -15,12 +16,12 @@ Record.SelectFields(
     optional <b>missingField</b> as nullable number
 ) as record
 </pre>
-  
+
 ## About
 
 Returns a record which includes only the fields specified in list `fields` from the input `record`.
 
-## Example 1
+## Example
 
 Select the fields "Item" and "Price" in the record.
 

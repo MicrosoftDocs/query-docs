@@ -4,6 +4,7 @@ title: "Number.Sign"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.Sign
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Number.Sign(<b>number</b> as nullable number) as nullable number
 </pre>
-  
+
 ## About
 
 Returns 1 for if `number` is a positive number, -1 if it is a negative number, and 0 if it is zero. If `number` is null, `Number.Sign` returns null.

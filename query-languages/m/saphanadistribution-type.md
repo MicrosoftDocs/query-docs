@@ -4,6 +4,7 @@ title: "SapHanaDistribution.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # SapHanaDistribution.Type
 
 ## Definition
@@ -12,8 +13,8 @@ Specifies valid options for SAP HANA distribution option.
 
 ## Allowed values
 
-|Name|Value|Description|  
-|------------|--|-------------|  
+|Name|Value|Description|
+|------------|--|-------------|
 |**SapHanaDistribution.Off**|0|'Off' distribution option for SAP HANA.|
 |**SapHanaDistribution.Connection**|1|'Connection' distribution option for SAP HANA.|
 |**SapHanaDistribution.Statement**|2|'Statement' distribution option for SAP HANA.|

@@ -4,6 +4,7 @@ title: "Date.IsInNextDay"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.IsInNextDay
 
 ## Syntax
@@ -18,7 +19,7 @@ Indicates whether the given datetime value `dateTime` occurs during the next day
 
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
 
-## Example 1
+## Example
 
 Determine if the day after the current system time is in the next day.
 

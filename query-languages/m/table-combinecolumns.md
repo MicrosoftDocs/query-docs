@@ -4,6 +4,7 @@ title: "Table.CombineColumns"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.CombineColumns
 
 ## Syntax
@@ -16,12 +17,12 @@ Table.CombineColumns(
     <b>column</b> as text
 ) as table
 </pre>
-  
+
 ## About
 
 Combines the specified columns into a new column using the specified combiner function.
 
-## Example 1
+## Example
 
 Combine the last and first names into a new column, separated by a comma.
 
@@ -38,6 +39,4 @@ Table.CombineColumns(
 
 **Output**
 
-```powerquery-m
-Table.FromRecords({[FullName = "Smith,Bob"]})
-```
+`Table.FromRecords({[FullName = "Smith,Bob"]})`

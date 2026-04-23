@@ -33,7 +33,7 @@ Durations can also be created by subtracting one date and time value from anothe
 
 ```powerquery-m
 let
-    Source = 
+    Source =
     {
         #date(2025, 7, 24) - #date(2025, 7, 23),
         // Result: #duration(1, 0, 0, 0)
@@ -51,11 +51,11 @@ in
 ```
 
 > [!NOTE]
-> Subtracting one date and time type from a different date and time type (for example, subtracting a `date` value from a `datetime` value) results in an error. If you must use different date and time types to determine a duration, use the [Date.From](date-from.md), [DateTime.From](datetime-from.md), [DateTimeZone.From](datetimezone-from.md), or [Time.From](time-from.md) functions to explicitly change one of the date and time types.
+> Subtracting one date and time type from a different date and time type (for example, subtracting a `date` value from a `datetime` value) results in an error. If you must use different date and time types to determine a duration, use the [`Date.From`](date-from.md), [`DateTime.From`](datetime-from.md), [`DateTimeZone.From`](datetimezone-from.md), or [`Time.From`](time-from.md) functions to explicitly change one of the date and time types.
 
 ### Convert from compatible values
 
-The [Duration.From](duration-from.md) function can convert compatible values into durations. For more information, go to [Duration.From(value)](#durationfromvalue).
+The [`Duration.From`](duration-from.md) function can convert compatible values into durations. For more information, go to [Duration.From(value)](#durationfromvalue).
 
 ## Work with durations
 
@@ -137,7 +137,7 @@ Durations are compatible with date and time values in arithmetic expressions but
 
 ```powerquery-m
 let
-    Source = 
+    Source =
     {
         #datetime(2025, 7, 24, 12, 0, 0) - #datetime(2025, 7, 23, 12, 0, 0),
         // Result: #duration(1, 0, 0, 0)
@@ -154,7 +154,7 @@ Power Query M includes a set of built-in functions for working with durations. T
 
 ### Duration.From(value)
 
-The [Duration.From](duration-from.md) function converts a compatible value into a duration. Compatible values consist of either a number that's interpreted as a fraction of a day or a textual representation of a duration. Go to [Duration.FromText](duration-fromtext.md) for information about the textual representation formats.
+The [`Duration.From`](duration-from.md) function converts a compatible value into a duration. Compatible values consist of either a number that's interpreted as a fraction of a day or a textual representation of a duration. Go to [`Duration.FromText`](duration-fromtext.md) for information about the textual representation formats.
 
 ```powerquery-m
 let
@@ -195,9 +195,9 @@ let
     TextFormat = Text.Format(
         "Duration = #{0} days, #{1} hours, #{2} minutes, and #{3} seconds.",
         {
-            Duration.Days(Source), 
-            Duration.Hours(Source), 
-            Duration.Minutes(Source), 
+            Duration.Days(Source),
+            Duration.Hours(Source),
+            Duration.Minutes(Source),
             Duration.Seconds(Source)
         }
     )
@@ -217,7 +217,7 @@ These functions return the total value of a duration in a single unit, including
 
 ```powerquery-m
 let
-    Source = 
+    Source =
     {
         Duration.TotalDays(#duration(1, 12, 0, 0)),    // 1.5 days
         Duration.TotalHours(#duration(1, 12, 0, 0)),   // 36 hours
@@ -247,9 +247,9 @@ let
         {#datetime(2025, 7, 24, 22, 30, 0), 172800}
     }),
     AddSeconds = Table.AddColumn(
-        Source, 
-        "EndTime", 
-        each [StartTime] + #duration(0, 0, 0, [Seconds]), 
+        Source,
+        "EndTime",
+        each [StartTime] + #duration(0, 0, 0, [Seconds]),
         type datetime
     )
 in
@@ -264,4 +264,4 @@ So, even though you only had the number of seconds that a process took place, Po
 
 ## Represent weeks, months, and years
 
-Since durations are based on fixed units (days, hours, minutes, seconds), there's no native concept of weeks, months, or years, which vary in length. A `duration` type in Power Query M is a fixed structure that doesn’t account for calendar rules. For accurate duration spans over months or years, subtract one date and time from another instead of using fixed durations. This approach correctly handles leap years, varying month lengths, and daylight savings time (DST). However, also note that some date and time behavior might differ depending on whether the query runs locally (on Power Query Desktop) or online (on Power Query Online). For details, go to [Local, fixed, and UTC variants of current date and time](m-local-fixed-utc-variants.md). In general, avoid relying on fixed durations for long-term calculations.
+Since durations are based on fixed units (days, hours, minutes, seconds), there's no native concept of weeks, months, or years, which vary in length. A `duration` type in Power Query M is a fixed structure that doesn't account for calendar rules. For accurate duration spans over months or years, subtract one date and time from another instead of using fixed durations. This approach correctly handles leap years, varying month lengths, and daylight savings time (DST). However, also note that some date and time behavior might differ depending on whether the query runs locally (on Power Query Desktop) or online (on Power Query Online). For details, go to [Local, fixed, and UTC variants of current date and time](m-local-fixed-utc-variants.md). In general, avoid relying on fixed durations for long-term calculations.

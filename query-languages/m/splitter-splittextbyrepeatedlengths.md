@@ -4,6 +4,7 @@ title: "Splitter.SplitTextByRepeatedLengths"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Splitter.SplitTextByRepeatedLengths
 
 ## Syntax

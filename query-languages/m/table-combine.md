@@ -4,6 +4,7 @@ title: "Table.Combine"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Combine
 
 ## Syntax
@@ -89,4 +90,4 @@ Table.FromRecords({
     [CustomerID = null, Name = null],
     [CustomerID = null, Name = null]
 })
-  ```
+```

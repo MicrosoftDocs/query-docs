@@ -4,6 +4,7 @@ title: "Number.RoundUp"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.RoundUp
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Number.RoundUp(<b>number</b> as nullable number, optional <b>digits</b> as nullable number) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the result of rounding `number` up to the next highest integer. If `number` is null, this function returns null. If `digits` is provided, `number` is rounded to the specified number of decimal digits.

@@ -4,6 +4,7 @@ title: "Table.AddJoinColumn"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.AddJoinColumn
 
 ## Syntax
@@ -12,7 +13,7 @@ ms.topic: reference
 Table.AddJoinColumn(
     <b>table1</b> as table,
     <b>key1</b> as any,
-    <b>table2</b> as function,
+    <b>table2</b> as any,
     <b>key2</b> as any,
     <b>newColumnName</b> as text
 ) as table
@@ -20,9 +21,9 @@ Table.AddJoinColumn(
 
 ## About
 
-Joins the rows of `table1` with the rows of `table2` based on the equality of the values of the key columns selected by `key1` (for `table1`) and `key2` (for `table2`). The results are entered into the column named `newColumnName`. This function behaves similarly to [Table.Join](/powerquery-m/table-join) with a JoinKind of LeftOuter except that the join results are presented in a nested rather than flattened fashion.
+Joins the rows of `table1` with the rows of `table2` based on the equality of the values of the key columns selected by `key1` (for `table1`) and `key2` (for `table2`). The results are entered into the column named `newColumnName`. This function behaves similarly to [`Table.Join`](table-join.md) with a JoinKind of LeftOuter except that the join results are presented in a nested rather than flattened fashion.
 
-## Example 1
+## Example
 
 Add a join column to ({[saleID = 1, item = "Shirt"], [saleID = 2, item = "Hat"]}) named "price/stock" from the table ({[saleID = 1, price = 20], [saleID = 2, price = 10]}) joined on [saleID].
 

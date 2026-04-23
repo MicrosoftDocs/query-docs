@@ -4,6 +4,7 @@ title: "Html.Table"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Html.Table
 
 ## Syntax
@@ -29,7 +30,7 @@ Returns a table from a sample html text value.
 **Usage**
 
 ```powerquery-m
-Html.Table("<div class=""name"">Jo</div><span>Manager</span>", {{"Name", ".name"}, {"Title", "span"}}, [RowSelector=".name"])\
+Html.Table("<div class=""name"">Jo</div><span>Manager</span>", {{"Name", ".name"}, {"Title", "span"}}, [RowSelector=".name"])
 ```
 
 **Output**

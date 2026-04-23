@@ -4,6 +4,7 @@ title: "List.Split"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Split
 
 ## Syntax

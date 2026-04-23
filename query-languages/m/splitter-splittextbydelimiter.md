@@ -4,6 +4,7 @@ title: "Splitter.SplitTextByDelimiter"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Splitter.SplitTextByDelimiter
 
 ## Syntax
@@ -15,12 +16,12 @@ Splitter.SplitTextByDelimiter(
     optional <b>csvStyle</b> as nullable number
 ) as function
 </pre>
-  
+
 ## About
 
 Returns a function that splits text into a list of text according to the specified delimiter.
 
-## Example 1
+## Example
 
 Split the input by comma, ignoring quoted commas.
 

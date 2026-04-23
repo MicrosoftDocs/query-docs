@@ -4,6 +4,7 @@ title: "Tables.GetRelationships"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Tables.GetRelationships
 
 ## Syntax

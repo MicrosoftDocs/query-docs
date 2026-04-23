@@ -4,6 +4,7 @@ title: "Text.Trim"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Trim
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Text.Trim(<b>text</b> as nullable text, optional <b>trim</b> as any) as nullable text
 </pre>
-  
+
 ## About
 
 Returns the result of removing all leading and trailing characters from the specified `text`. By default, all the leading and trailing whitespace characters are removed.
@@ -84,9 +85,9 @@ in
 
 ```powerquery-m
 #table(type table [Home Sale = text, Sales Date = date, Sales Status = text],
-    {
-        {"1620 Ferris Way", #date(2024, 8, 22), "Pending"},
-        {"757 1st Ave. S.", #date(2024, 3, 15), "Sold"},
-        {"22303 Fillmore", #date(2024, 10, 2), "Pending"}
-    })
+{
+    {"1620 Ferris Way", #date(2024, 8, 22), "Pending"},
+    {"757 1st Ave. S.", #date(2024, 3, 15), "Sold"},
+    {"22303 Fillmore", #date(2024, 10, 2), "Pending"}
+})
 ```

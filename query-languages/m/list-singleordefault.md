@@ -4,14 +4,15 @@ title: "List.SingleOrDefault"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.SingleOrDefault
 
 ## Syntax
 
 <pre>
-List.SingleOrDefault(<b>list</b> as list, optional <b>default</b> as any) as any 
+List.SingleOrDefault(<b>list</b> as list, optional <b>default</b> as any) as any
 </pre>
-  
+
 ## About
 
 If there is only one item in the list `list`, returns that item. If the list is empty, the function returns null unless an optional `default` is specified. If there is more than one item in the list, the function returns an error.

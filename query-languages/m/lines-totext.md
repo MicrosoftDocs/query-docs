@@ -4,6 +4,7 @@ title: "Lines.ToText"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Lines.ToText
 
 ## Syntax

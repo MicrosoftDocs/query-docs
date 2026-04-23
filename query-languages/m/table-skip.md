@@ -4,6 +4,7 @@ title: "Table.Skip"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Skip
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.Skip(<b>table</b> as table, optional <b>countOrCondition</b> as any) as table
 </pre>
-  
+
 ## About
 
 Returns a table that does not contain the first specified number of rows, `countOrCondition`, of the table `table`. The number of rows skipped depends on the optional parameter `countOrCondition`.

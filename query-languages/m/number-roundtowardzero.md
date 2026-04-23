@@ -4,6 +4,7 @@ title: "Number.RoundTowardZero"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.RoundTowardZero
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Number.RoundTowardZero(<b>number</b> as nullable number, optional <b>digits</b> as nullable number) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the result of rounding `number` based on the sign of the number. This function will round positive numbers down and negative numbers up. If `digits` is specified, `number` is rounded to the `digits` number of decimal digits.
@@ -22,7 +23,7 @@ Round the number -1.2 toward zero.
 
 **Usage**
 
-``` powerquery-m
+```powerquery-m
 Number.RoundTowardZero(-1.2)
 ```
 
@@ -36,7 +37,7 @@ Round the number 1.2 toward zero.
 
 **Usage**
 
-``` powerquery-m
+```powerquery-m
 Number.RoundTowardZero(1.2)
 ```
 
@@ -50,7 +51,7 @@ Round the number -1.234 to two decimal places toward zero.
 
 **Usage**
 
-``` powerquery-m
+```powerquery-m
 Number.RoundTowardZero(-1.234, 2)
 ```
 

@@ -4,6 +4,7 @@ title: "Table.DemoteHeaders"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.DemoteHeaders
 
 ## Syntax
@@ -11,12 +12,12 @@ ms.topic: reference
 <pre>
 Table.DemoteHeaders(<b>table</b> as table) as table
 </pre>
-  
+
 ## About
 
 Demotes the column headers (i.e. column names) to the first row of values. The default column names are "Column1", "Column2" and so on.
 
-## Example 1
+## Example
 
 Demote the first row of values in the table.
 

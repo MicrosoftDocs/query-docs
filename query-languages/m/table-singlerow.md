@@ -4,19 +4,20 @@ title: "Table.SingleRow"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.SingleRow
 
 ## Syntax
 
 <pre>
-Table.SingleRow(<b>table</b> as table) as record  
+Table.SingleRow(<b>table</b> as table) as record
 </pre>
-  
+
 ## About
 
-Returns the single row in the one row `table`. If the `table` does not contain exactly one row, an error is raised.
+Returns the single row in the one row `table`. If the `table` has more than one row, an error is raised.
 
-## Example 1
+## Example
 
 Return the single row in the table.
 

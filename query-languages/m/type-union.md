@@ -4,6 +4,7 @@ title: "Type.Union"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.Union
 
 ## Syntax

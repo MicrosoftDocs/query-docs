@@ -102,6 +102,9 @@ Here is the list of INFO functions. Some work only on specific compat levels and
 | INFO.CALCDEPENDENCY                           | Returns information about the calculation dependency for a DAX query.                                                                           |
 | INFO.CALCULATIONGROUPS                        | Returns a table with information about each calculation group in the semantic model with metadata about calculation groups and their properties. |
 | INFO.CALCULATIONITEMS                         | Returns a table with information about each calculation item in the semantic model with metadata about calculation items within calculation groups. |
+| INFO.CALENDARCOLUMNGROUPS                     | Returns a list of all calendar column groups in the current model with columns matching the schema rowset for calendar column group objects.    |
+| INFO.CALENDARCOLUMNREFERENCES                 | Returns a list of all calendar column references in the current model with columns matching the schema rowset for calendar column reference objects. |
+| INFO.CALENDARS                                | Returns a list of all calendars in the current model with columns matching the schema rowset for calendar objects. 							  |
 | INFO.CATALOGS                                 | Represents the DBSCHEMA_CATALOGS DMV query function.                                                                                            |
 | INFO.CHANGEDPROPERTIES                        | Represents the TMSCHEMA_CHANGED_PROPERTIES DMV query function.                                                                                  |
 | INFO.COLUMNPARTITIONSTORAGES                  | Returns a table with information about each column partition storage in the semantic model with metadata about how column partitions are stored. |
@@ -158,4 +161,5 @@ Here is the list of INFO functions. Some work only on specific compat levels and
 | INFO.TABLEPERMISSIONS                         | Returns a list of all table permissions in the current model with columns matching the schema rowset for table permissions objects.             |
 | INFO.TABLES                                   | Returns a list of all tables in the current model with columns matching the schema rowset for table objects.                                    |
 | INFO.TABLESTORAGES                            | Returns a list of all table storages in the current model with columns matching the schema rowset for table storage objects.                    |
+| INFO.USERDEFINEDFUNCTIONS                     | Returns a list of all user-defined functions in the current model with columns matching the schema rowset for user-defined function objects.    |
 | INFO.VARIATIONS                               | Returns a list of all variations in the current model with columns matching the schema rowset for variations objects.                           |

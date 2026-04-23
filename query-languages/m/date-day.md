@@ -4,6 +4,7 @@ title: "Date.Day"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.Day
 
 ## Syntax
@@ -18,7 +19,7 @@ Returns the day component of a `date`, `datetime`, or `datetimezone` value.
 
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value from which the day component is extracted.
 
-## Example 1
+## Example
 
 Get the day component of a `date`, `datetime`, or `datetimezone` value representing the date and time of 5/14/2011 05:00:00 PM.
 

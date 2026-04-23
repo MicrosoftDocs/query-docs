@@ -116,8 +116,8 @@ EVALUATE
 ```
 ## See also
 
-[INFO.COLUMNSTORAGES](info-columnstorages-function-dax.md)
-[INFO.COLUMNPARTITIONSTORAGES](info-columnpartitionstorages-function-dax.md)
-[INFO.SEGMENTSTORAGES](info-segmentstorages-function-dax.md)
-[INFO.STORAGEFILES](info-storagefiles-function-dax.md)
-[INFO.TABLESTORAGES](info-tablestorages-function-dax.md)
+- [INFO.COLUMNSTORAGES](info-columnstorages-function-dax.md)
+- [INFO.COLUMNPARTITIONSTORAGES](info-columnpartitionstorages-function-dax.md)
+- [INFO.SEGMENTSTORAGES](info-segmentstorages-function-dax.md)
+- [INFO.STORAGEFILES](info-storagefiles-function-dax.md)
+- [INFO.TABLESTORAGES](info-tablestorages-function-dax.md)

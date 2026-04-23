@@ -4,6 +4,7 @@ title: "DateTimeZone.LocalNow"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTimeZone.LocalNow
 
 ## Syntax

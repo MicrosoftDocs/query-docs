@@ -4,19 +4,20 @@ title: "Table.Repeat"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Repeat
 
 ## Syntax
 
 <pre>
-Table.Repeat(<b>table</b> as table, <b>count</b> as number) as table  
+Table.Repeat(<b>table</b> as table, <b>count</b> as number) as table
 </pre>
-  
+
 ## About
 
 Returns a table with the rows from the input `table` repeated the specified `count` times.
 
-## Example 1
+## Example
 
 Repeat the rows in the table two times.
 
@@ -30,7 +31,6 @@ Table.Repeat(
     }),
     2
 )
-
 ```
 
 **Output**

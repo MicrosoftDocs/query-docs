@@ -4,6 +4,7 @@ title: "Splitter.SplitTextByLengths"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Splitter.SplitTextByLengths
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Splitter.SplitTextByLengths(<b>lengths</b> as list, optional <b>startAtEnd</b> as nullable logical) as function
 </pre>
-  
+
 ## About
 
 Returns a function that splits text into a list of text by each specified length.
@@ -42,5 +43,7 @@ let
 in
     Splitter.SplitTextByLengths({5, 2}, startAtEnd)("RedmondWA98052")
 ```
+
+**Output**
 
 `{"WA", "98052"}`

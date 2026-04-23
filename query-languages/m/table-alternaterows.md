@@ -4,6 +4,7 @@ title: "Table.AlternateRows"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.AlternateRows
 
 ## Syntax
@@ -16,7 +17,7 @@ Table.AlternateRows(
     <b>take</b> as number
 ) as table
 </pre>
-  
+
 ## About
 
 Keeps the initial offset then alternates taking and skipping the following rows.
@@ -26,7 +27,7 @@ Keeps the initial offset then alternates taking and skipping the following rows.
 * `skip`: The number of rows to remove in each iteration.
 * `take`: The number of rows to keep in each iteration.
 
-## Example 1
+## Example
 
 Return a table from the table that, starting at the first row, skips 1 value and then keeps 1 value.
 

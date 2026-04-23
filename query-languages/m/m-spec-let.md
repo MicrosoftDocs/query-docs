@@ -1,5 +1,5 @@
 ---
-title: M Language Let 
+title: M Language Let
 description: Describes using the let expression in the Power Query M formula language
 ms.topic: language-reference
 ms.date: 10/7/2022
@@ -18,7 +18,7 @@ _let-expression:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`let` _variable-list_ `in` _expression<br/>
 variable-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable_ `,` _variable-list<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable_ `,` _variable-list<br/>
 variable:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable-name_ `=` _expression<br/>
 variable-name:<br/>
@@ -29,7 +29,7 @@ The following example shows intermediate results being calculated and stored in 
 ```powerquery-m
 let     x = 1 + 1,
         y = 2 + 2,
-        z = y + 1 
+        z = y + 1
 in
         x + y + z
 ```
@@ -56,6 +56,6 @@ A let expression can be seen as syntactic sugar over an implicit record expressi
 [     x = 1 + 1,
       y = 2 + 2,
       z = y + 1,
-      result = x + y + z 
+      result = x + y + z
 ][result]
 ```

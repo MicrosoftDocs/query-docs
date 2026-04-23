@@ -4,6 +4,7 @@ title: "Type.ListItem"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.ListItem
 
 ## Syntax
@@ -11,12 +12,12 @@ ms.topic: reference
 <pre>
 Type.ListItem(<b>type</b> as type) as type
 </pre>
-  
+
 ## About
 
 Returns an item type from a list `type`.
 
-## Example 1
+## Example
 
 Find item type from the list `{number}`.
 

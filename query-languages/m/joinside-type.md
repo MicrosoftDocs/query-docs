@@ -4,6 +4,7 @@ title: "JoinSide.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # JoinSide.Type
 
 ## Definition

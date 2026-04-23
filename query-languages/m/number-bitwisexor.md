@@ -4,6 +4,7 @@ title: "Number.BitwiseXor"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.BitwiseXor
 
 ## Syntax

@@ -3,6 +3,7 @@ description: "Learn more about: Enumerations"
 title: "Accessing data enumerations"
 ms.topic: concept-article
 ---
+
 # Enumerations
 
 The Power Query M formula language includes these enumerations.

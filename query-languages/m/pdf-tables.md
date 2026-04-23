@@ -4,6 +4,7 @@ title: "Pdf.Tables"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Pdf.Tables
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Pdf.Tables(<b>pdf</b> as binary, optional <b>options</b> as nullable record) as table
 </pre>
-  
+
 ## About
 
 Returns any tables found in `pdf`. An optional record parameter, `options`, may be provided to specify additional properties. The record can contain the following fields:
@@ -22,7 +23,7 @@ Returns any tables found in `pdf`. An optional record parameter, `options`, may 
 * `MultiPageTables`: Controls whether similar tables on consecutive pages will be automatically combined into a single table. Default: true.
 * `EnforceBorderLines`: Controls whether border lines are always enforced as cell boundaries (when true), or simply used as one hint among many for determining cell boundaries (when false). Default: false.
 
-## Example 1
+## Example
 
 Returns the tables contained in sample.pdf.
 
@@ -34,6 +35,4 @@ Pdf.Tables(File.Contents("c:\sample.pdf"))
 
 **Output**
 
-```powerquery-m
-#table({"Name", "Kind", "Data"}, ...)
-```
+`#table({"Name", "Kind", "Data"}, ...)`

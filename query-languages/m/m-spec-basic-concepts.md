@@ -1,5 +1,5 @@
 ---
-title: M Language basic concepts 
+title: M Language basic concepts
 description: Discusses basic concepts that appear throughout the subsequent sections
 ms.topic: language-reference
 ms.date: 8/2/2022
@@ -17,16 +17,16 @@ This section discusses basic concepts that appear throughout the subsequent sect
 A single piece of data is called a _value_. Broadly speaking, there are two general categories of values: _primitive values_, which are atomic, and _structured values_, which are constructed out of primitive values and other structured values. For example, the values
 
 ```powerquery-m
-1 
+1
 true
-3.14159 
+3.14159
 "abc"
 ```
 
 are primitive in that they are not made up of other values. On the other hand, the values
 
 ```powerquery-m
-{1, 2, 3} 
+{1, 2, 3}
 [ A = {1}, B = {2}, C = {3} ]
 ```
 
@@ -37,15 +37,15 @@ are constructed using primitive values and, in the case of the record, other str
 An _expression_ is a formula used to construct values. An expression can be formed using a variety of syntactic constructs. The following are some examples of expressions. Each line is a separate expression.
 
 ```powerquery-m
-"Hello World"             // a text value 
-123                       // a number 
-1 + 2                     // sum of two numbers 
-{1, 2, 3}                 // a list of three numbers 
-[ x = 1, y = 2 + 3 ]      // a record containing two fields: 
-                          //        x and y 
-(x, y) => x + y           // a function that computes a sum 
-if 2 > 1 then 2 else 1    // a conditional expression 
-let x = 1 + 1  in x * 2   // a let expression 
+"Hello World"             // a text value
+123                       // a number
+1 + 2                     // sum of two numbers
+{1, 2, 3}                 // a list of three numbers
+[ x = 1, y = 2 + 3 ]      // a record containing two fields:
+                          //        x and y
+(x, y) => x + y           // a function that computes a sum
+if 2 > 1 then 2 else 1    // a conditional expression
+let x = 1 + 1  in x * 2   // a let expression
 error "A"                 // error with message "A"
 ```
 
@@ -72,20 +72,20 @@ The environment used to evaluate a sub-expression is determined by the parent ex
 For example, the _record-initializer-expression_ evaluates the sub-expression for each field with a modified environment. The modified environment includes a variable for each of the fields of the record, except the one being initialized. Including the other fields of the record allows the fields to depend upon the values of the fields. For example:
 
 ```powerquery-m
-[  
-    x = 1,          // environment: y, z 
-    y = 2,          // environment: x, z 
+[
+    x = 1,          // environment: y, z
+    y = 2,          // environment: x, z
     z = x + y       // environment: x, y
-] 
+]
 ```
 
 Similarly, the _let-expression_ evaluates the sub-expression for each variable with an environment containing each of the variables of the let except the one being initialized. The _let-expression_ evaluates the expression following the in with an environment containing all the variables:
 
 ```powerquery-m
-let 
+let
 
-    x = 1,          // environment: y, z 
-    y = 2,          // environment: x, z 
+    x = 1,          // environment: y, z
+    y = 2,          // environment: x, z
     z = x + y       // environment: x, y
 in
     x + y + z       // environment: x, y, z
@@ -97,15 +97,15 @@ To form the environments for the sub-expressions, the new variables are "merged"
 
 ```powerquery-m
 [
-    a = 
-    [ 
+    a =
+    [
 
-        x = 1,      // environment: b, y, z 
-        y = 2,      // environment: b, x, z 
-        z = x + y   // environment: b, x, y 
-    ], 
+        x = 1,      // environment: b, y, z
+        y = 2,      // environment: b, x, z
+        z = x + y   // environment: b, x, y
+    ],
     b = 3           // environment: a
-]  
+]
 ```
 
 The following example shows the environments for a record nested within a let:
@@ -114,12 +114,12 @@ The following example shows the environments for a record nested within a let:
 Let
     a =
     [
-        x = 1,       // environment: b, y, z 
-        y = 2,       // environment: b, x, z 
-        z = x + y    // environment: b, x, y 
-    ], 
-    b = 3            // environment: a 
-in 
+        x = 1,       // environment: b, y, z
+        y = 2,       // environment: b, x, z
+        z = x + y    // environment: b, x, y
+    ],
+    b = 3            // environment: a
+in
     a[z] + b         // environment: a, b
 ```
 
@@ -128,14 +128,14 @@ Merging variables with an environment may introduce a conflict between variables
 ```powerquery-m
 [
     a =
-    [ 
-        x = 1,       // environment: b, x (outer), y, z 
-        y = 2,       // environment: b, x (inner), z 
-        z = x + y    // environment: b, x (inner), y 
-    ], 
-    b = 3,           // environment: a, x (outer) 
+    [
+        x = 1,       // environment: b, x (outer), y, z
+        y = 2,       // environment: b, x (inner), z
+        z = x + y    // environment: b, x (inner), y
+    ],
+    b = 3,           // environment: a, x (outer)
     x = 4            // environment: a, b
-]  
+]
 
 ```
 
@@ -144,7 +144,7 @@ Merging variables with an environment may introduce a conflict between variables
 An _identifier-reference_ is used to refer to a variable within an environment.
 
 _identifier-expression:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier-reference<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier-reference<br/>
 identifier-reference:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exclusive-identifier-reference<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inclusive-identifier-reference_
@@ -154,7 +154,7 @@ The simplest form of identifier reference is an _exclusive-identifier-reference_
 _exclusive-identifier-reference:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier_
 
-It is an error for an _exclusive-identifier-reference_ to refer to a variable that is not part of the environment of the expression that the identifier appears within. 
+It is an error for an _exclusive-identifier-reference_ to refer to a variable that is not part of the environment of the expression that the identifier appears within.
 
 It is an error for an _exclusive-identifier-reference_ to refer to an identifier that is currently being initialized if the referenced identifier is defined inside a _record-initializer-expression_ or _let-expression_. Instead, an _inclusive-identifier-reference_ can be used to gain access to the environment that includes the identifier being initialized. If an _inclusive-identifier-reference_ is used in any other situation, then it is equivalent to an _exclusive-identifier-reference_.
 
@@ -164,14 +164,14 @@ _inclusive-identifier-reference:_<br/>
 This is useful when defining recursive functions since the name of the function would normally not be in scope.
 
 ```powerquery-m
-[ 
+[
     Factorial = (n) =>
         if n <= 1 then
             1
         else
             n * @Factorial(n - 1),  // @ is scoping operator
 
-    x = Factorial(5) 
+    x = Factorial(5)
 ]
 ```
 
@@ -182,36 +182,36 @@ As with a _record-initializer-expression_, an _inclusive-identifier-reference_ c
 Consider the following expression which initializes a record:
 
 ```powerquery-m
-[ 
-    C = A + B, 
-    A = 1 + 1, 
-    B = 2 + 2 
+[
+    C = A + B,
+    A = 1 + 1,
+    B = 2 + 2
 ]
 ```
 
 When evaluated, this expression produces the following record value:
 
 ```powerquery-m
-[ 
-    C = 6, 
-    A = 2, 
-    B = 4 
+[
+    C = 6,
+    A = 2,
+    B = 4
 ]
 ```
 
 The expression states that in order to perform the `A + B` calculation for field `C`, the values of both field `A` and field `B` must be known. This is an example of a _dependency ordering_ of calculations that is provided by an expression. The M evaluator abides by the dependency ordering provided by expressions, but is free to perform the remaining calculations in any order it chooses. For example, the computation order could be:
 
 ```powerquery-m
-A = 1 + 1 
-B = 2 + 2 
+A = 1 + 1
+B = 2 + 2
 C = A + B
 ```
 
 Or it could be:
 
 ```powerquery-m
-B = 2 + 2 
-A = 1 + 1 
+B = 2 + 2
+A = 1 + 1
 C = A + B
 ```
 

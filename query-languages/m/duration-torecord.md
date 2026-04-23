@@ -4,6 +4,7 @@ title: "Duration.ToRecord"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Duration.ToRecord
 
 ## Syntax
@@ -18,7 +19,7 @@ Returns a record containing the parts the duration value, `duration`.
 
 * `duration`: A `duration` from which the record is created.
 
-## Example 1
+## Example
 
 Convert `#duration(2, 5, 55, 20)` into a record of its parts including days, hours, minutes, and seconds if applicable.
 

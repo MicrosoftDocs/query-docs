@@ -4,6 +4,7 @@ title: "Table.DuplicateColumn"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.DuplicateColumn
 
 ## Syntax

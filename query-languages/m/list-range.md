@@ -4,6 +4,7 @@ title: "List.Range"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Range
 
 ## Syntax
@@ -15,7 +16,7 @@ List.Range(
     optional <b>count</b> as nullable number
 ) as list
 </pre>
-  
+
 ## About
 
 Returns a subset of `list` beginning at `offset`. An optional parameter, `count`, sets the maximum number of items in the subset.

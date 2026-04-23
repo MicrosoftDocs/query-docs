@@ -4,12 +4,15 @@ title: "Date.EndOfDay"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.EndOfDay
+
+## Syntax
 
 <pre>
 Date.EndOfDay(<b>dateTime</b> as any) as any
 </pre>
-  
+
 ## About
 
 Returns the end of the day represented by `dateTime`. Time zone information is preserved.

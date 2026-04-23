@@ -4,6 +4,7 @@ title: "Combiner.CombineTextByEachDelimiter"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Combiner.CombineTextByEachDelimiter
 
 ## Syntax
@@ -16,7 +17,7 @@ Combiner.CombineTextByEachDelimiter(<b>delimiters</b> as list, optional <b>quote
 
 Returns a function that combines a list of text values into a single text value using a sequence of delimiters.
 
-## Example 1
+## Example
 
 Combine a list of text values using a sequence of delimiters.
 

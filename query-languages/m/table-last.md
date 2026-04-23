@@ -4,6 +4,7 @@ title: "Table.Last"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Last
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.Last(<b>table</b> as table, optional <b>default</b> as any) as any
 </pre>
-  
+
 ## About
 
 Returns the last row of the `table` or an optional default value, `default`, if the table is empty.

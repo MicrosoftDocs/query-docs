@@ -6,6 +6,7 @@ ms.date: 11/14/2024
 ms.custom: "nonautomated-date"
 ms.subservice: m-specification
 ---
+
 # Power Query M language specification
 
 The specification describes the values, expressions, environments and variables, identifiers, and the evaluation model that form the Power Query M language's basic concepts.

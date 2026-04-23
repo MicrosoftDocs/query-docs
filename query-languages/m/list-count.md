@@ -4,6 +4,7 @@ title: "List.Count"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Count
 
 ## Syntax

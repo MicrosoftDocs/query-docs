@@ -4,6 +4,7 @@ title: "Number.RandomBetween"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.RandomBetween
 
 ## Syntax
@@ -11,12 +12,12 @@ ms.topic: reference
 <pre>
 Number.RandomBetween(<b>bottom</b> as number, <b>top</b> as number) as number
 </pre>
-  
+
 ## About
 
 Returns a random number between `bottom` and `top`.
 
-## Example 1
+## Example
 
 Get a random number between 1 and 5.
 

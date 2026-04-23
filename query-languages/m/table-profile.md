@@ -4,6 +4,7 @@ title: "Table.Profile"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Profile
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.Profile(<b>table</b> as table, optional <b>additionalAggregates</b> as nullable list) as table
 </pre>
-  
+
 ## About
 
 Returns a profile for the columns in `table`.

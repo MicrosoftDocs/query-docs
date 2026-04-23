@@ -4,6 +4,7 @@ title: "IdentityProvider.Default"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # IdentityProvider.Default
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Table.First"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.First
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.First(<b>table</b> as table, optional <b>default</b> as any) as any
 </pre>
-  
+
 ## About
 
 Returns the first row of the `table` or an optional default value, `default`, if the table is empty.

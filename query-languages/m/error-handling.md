@@ -5,6 +5,7 @@ ms.date: 7/15/2024
 ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
+
 # Error handling functions
 
 These functions can be used to trace or construct errors.

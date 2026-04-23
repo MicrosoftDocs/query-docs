@@ -4,6 +4,7 @@ title: "Table.TransformColumnTypes"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.TransformColumnTypes
 
 ## Syntax
@@ -12,10 +13,10 @@ ms.topic: reference
 Table.TransformColumnTypes(
     <b>table</b> as table,
     <b>typeTransformations</b> as list,
-    optional <b>culture</b> as nullable text
+    optional <b>culture</b> as any
 ) as table
 </pre>
-  
+
 ## About
 
 Returns a table by applying the transform operations to the specified columns using an optional culture.
@@ -24,11 +25,11 @@ Returns a table by applying the transform operations to the specified columns us
 * `typeTransformations`: The type transformations to apply. The format for a single transformation is { column name, type value }. A list of transformations can be used to change the types of more than one column at a time. If a column doesn't exist, an error is raised.
 * `culture`: (Optional) The culture to use when transforming the column types (for example, "en-US"). If a record is specified for `culture`, it can contain the following fields:
   * `Culture`: The culture to use when transforming the column types (for example, "en-US").
-  * `MissingField`: If a column doesn't exist, an error is raised unless this field provides an alternative behavior (for example, [MissingField.UseNull](missingfield-type.md) or [MissingField.Ignore](missingfield-type.md)).
+  * `MissingField`: If a column doesn't exist, an error is raised unless this field provides an alternative behavior (for example, [`MissingField.UseNull`](missingfield-type.md) or [`MissingField.Ignore`](missingfield-type.md)).
 
 The type value in the `typeTransformations` parameter can be `any`, all of the `number` types, `text`, all of the `date`, `time`, `datetime`, `datetimezone`, and `duration` types, `logical`, or `binary`. The `list`, `record`, `table`, or `function` types aren't valid for this parameter.
 
-For each column listed in `typeTransformations`, the ".From" method corresponding to the specified type value is normally used to perform the transformation. For example, if a [Currency.Type](type-conversion.md#commonly-used-types) type value is given for a column, the transformation function [Currency.From](currency-from.md) is applied to each value in that column.
+For each column listed in `typeTransformations`, the ".From" method corresponding to the specified type value is normally used to perform the transformation. For example, if a [`Currency.Type`](type-conversion.md#commonly-used-types) type value is given for a column, the transformation function [`Currency.From`](currency-from.md) is applied to each value in that column.
 
 ## Example 1
 
@@ -44,7 +45,7 @@ let
         {3, 4}
     }),
     #"Transform Column" = Table.TransformColumnTypes(
-        Source, 
+        Source,
         {"a", type text}
     )
 in
@@ -91,14 +92,14 @@ in
 
 ```powerquery-m
 #table(type table [Company ID = text, Country = text, Date = text],
-    {
-        {"JS-464", "USA", "24/03/2024"},
-        {"LT-331", "France", "05/10/2024"},
-        {"XE-100", "USA", "21/05/2024"},
-        {"RT-430", "Germany", "18/01/2024"},
-        {"LS-005", "France", "31/12/2023"},
-        {"UW-220", "Germany", "25/02/2024"}
-    })
+{
+    {"JS-464", "USA", "24/03/2024"},
+    {"LT-331", "France", "05/10/2024"},
+    {"XE-100", "USA", "21/05/2024"},
+    {"RT-430", "Germany", "18/01/2024"},
+    {"LS-005", "France", "31/12/2023"},
+    {"UW-220", "Germany", "25/02/2024"}
+})
 ```
 
 ## Example 3
@@ -116,9 +117,9 @@ let
         {#date(2023, 12, 14), "22", .3834}
     }),
     #"Transform Columns" = Table.TransformColumnTypes(
-        Source, 
+        Source,
         {{"Date", type text}, {"Value", Percentage.Type}},
-        "de-DE") 
+        "de-DE")
 in
     #"Transform Columns"
 ```
@@ -133,7 +134,47 @@ in
     {"14.12.2023", "22", .3834}
 })
 ```
-   
+
+## Example 4
+
+Apply transformations with a record value for `culture`.
+
+**Usage**
+
+```powerquery-m
+let
+    Source = #table(type table [Company ID = text, Country = text, Date = date],
+    {
+        {"JS-464", "USA", #date(2024, 3, 24)},
+        {"LT-331", "France", #date(2024, 10, 5)},
+        {"XE-100", "USA", #date(2024, 5, 21)},
+        {"RT-430", "Germany", #date(2024, 1,18)},
+        {"LS-005", "France", #date(2023, 12, 31)},
+        {"UW-220", "Germany", #date(2024, 2, 25)}
+    }),
+    #"Transform Column" = Table.TransformColumnTypes(
+        Source,
+        {{"Date", type text}, {"NewColumn", type number}},
+        [Culture="fr-FR", MissingField=MissingField.UseNull]
+    )
+in
+    #"Transform Column"
+```
+
+**Output**
+
+```powerquery-m
+#table(type table [Company ID = text, Country = text, Date = text, NewColumn = number],
+{
+    {"JS-464", "USA", "24/03/2024", null},
+    {"LT-331", "France", "05/10/2024", null},
+    {"XE-100", "USA", "21/05/2024", null},
+    {"RT-430", "Germany", "18/01/2024", null},
+    {"LS-005", "France", "31/12/2023", null},
+    {"UW-220", "Germany", "25/02/2024", null}
+})
+```
+
 ## Related content
 
 * [Types and type conversion](type-conversion.md)

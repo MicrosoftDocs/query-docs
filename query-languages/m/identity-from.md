@@ -4,6 +4,7 @@ title: "Identity.From"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Identity.From
 
 ## Syntax

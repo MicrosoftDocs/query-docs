@@ -4,6 +4,7 @@ title: "Table.ReplaceKeys"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ReplaceKeys
 
 ## Syntax
@@ -11,12 +12,12 @@ ms.topic: reference
 <pre>
 Table.ReplaceKeys(<b>table</b> as table, <b>keys</b> as list) as table
 </pre>
-  
+
 ## About
 
 Replaces the keys of the specified table.
 
-## Example 1
+## Example
 
 Replace the existing keys of a table.
 

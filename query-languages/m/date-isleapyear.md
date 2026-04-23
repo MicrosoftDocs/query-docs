@@ -4,21 +4,22 @@ title: "Date.IsLeapYear"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.IsLeapYear
 
 ## Syntax
 
-<pre>  
-Date.IsLeapYear(<b>dateTime</b> as any) as nullable logical 
+<pre>
+Date.IsLeapYear(<b>dateTime</b> as any) as nullable logical
 </pre>
-  
+
 ## About
 
 Indicates whether the given datetime value `dateTime` falls in is a leap year.
 
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
 
-## Example 1
+## Example
 
 Determine if the year 2012, as represented by `#date(2012, 01, 01)` is a leap year.
 

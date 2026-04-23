@@ -4,6 +4,7 @@ title: "Table.TransformColumnNames"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.TransformColumnNames
 
 ## Syntax
@@ -15,7 +16,7 @@ Table.TransformColumnNames(
     optional <b>options</b> as nullable record
 ) as table
 </pre>
-  
+
 ## About
 
 Transforms column names by using the given `nameGenerator` function. Valid options:
@@ -26,9 +27,9 @@ Transforms column names by using the given `nameGenerator` function. Valid optio
 
 The following built-in comparers are available in the formula language:
 
-* `Comparer.Ordinal`: Used to perform an exact ordinal comparison
-* `Comparer.OrdinalIgnoreCase`: Used to perform an exact ordinal case-insensitive comparison
-* `Comparer.FromCulture`: Used to perform a culture-aware comparison
+* [`Comparer.Ordinal`](comparer-ordinal.md): Used to perform an exact ordinal comparison
+* [`Comparer.OrdinalIgnoreCase`](comparer-ordinalignorecase.md): Used to perform an exact ordinal case-insensitive comparison
+* [`Comparer.FromCulture`](comparer-fromculture.md): Used to perform a culture-aware comparison
 
 ## Example 1
 

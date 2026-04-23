@@ -4,6 +4,7 @@ title: "Number.Factorial"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.Factorial
 
 ## Syntax
@@ -16,7 +17,7 @@ Number.Factorial(<b>number</b> as nullable number) as nullable number
 
 Returns the factorial of the number `number`.
 
-## Example 1
+## Example
 
 Find the factorial of 10.
 

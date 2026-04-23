@@ -4,6 +4,7 @@ title: "Table.ColumnCount"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ColumnCount
 
 ## Syntax
@@ -11,12 +12,12 @@ ms.topic: reference
 <pre>
 Table.ColumnCount(<b>table</b> as table) as number
 </pre>
-  
+
 ## About
 
 Returns the number of columns in the table `table`.
 
-## Example 1
+## Example
 
 Find the number of columns in the table.
 

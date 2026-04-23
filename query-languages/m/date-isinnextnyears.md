@@ -4,6 +4,7 @@ title: "Date.IsInNextNYears"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.IsInNextNYears
 
 ## Syntax
@@ -17,9 +18,9 @@ Date.IsInNextNYears(<b>dateTime</b> as any, <b>years</b> as number) as nullable 
 Indicates whether the given datetime value `dateTime` occurs during the next number of years, as determined by the current date and time on the system. Note that this function will return false when passed a value that occurs within the current year.
 
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
- * `years`: The number of years.
+* `years`: The number of years.
 
-## Example 1
+## Example
 
 Determine if the year after the current system time is in the next two years.
 

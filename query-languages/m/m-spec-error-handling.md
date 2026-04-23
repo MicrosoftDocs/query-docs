@@ -1,5 +1,5 @@
 ---
-title: M Language Error Handling 
+title: M Language Error Handling
 description: Describes error handling in the Power Query M formula language
 ms.topic: language-reference
 ms.date: 8/2/2022
@@ -40,10 +40,10 @@ error Error.Record("FileNotFound", "File my.txt not found",
 The above expression is equivalent to:
 
 ```powerquery-m
-error [ 
-    Reason = "FileNotFound", 
-    Message = "File my.txt not found", 
-    Detail = "my.txt" 
+error [
+    Reason = "FileNotFound",
+    Message = "File my.txt not found",
+    Detail = "my.txt"
 ]
 ```
 
@@ -60,7 +60,7 @@ Raising an error will cause the current expression evaluation to stop, and the e
 An _error-handling-expression_ (informally known as a "try expression") is used to handle an error:
 
 _error-handling-expression:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`try` _protected-expression 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`try` _protected-expression
 error-handler<sub>opt</sub><br/>
 protected-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
@@ -100,7 +100,7 @@ The following holds when evaluating an _error-handling-expression_ with an _erro
 
 * Errors raised during the evaluation of the _error-handler_ are propagated.
 
-* When the _error-handler_ being evaluated is a _catch-clause_, the  _catch-function_ is invoked. If that function accepts a parameter, the error value will be passed as its value. 
+* When the _error-handler_ being evaluated is a _catch-clause_, the  _catch-function_ is invoked. If that function accepts a parameter, the error value will be passed as its value.
 
 The following example illustrates an _error-handling-expression_ in a case where no error is raised:
 
@@ -108,7 +108,7 @@ The following example illustrates an _error-handling-expression_ in a case where
 let
     x = try "A"
 in
-    if x[HasError] then x[Error] else x[Value] 
+    if x[HasError] then x[Error] else x[Value]
 // "A"
 ```
 
@@ -116,9 +116,9 @@ The following example shows raising an error and then handling it:
 
 ```powerquery-m
 let
-    x = try error "A" 
+    x = try error "A"
 in
-    if x[HasError] then x[Error] else x[Value] 
+    if x[HasError] then x[Error] else x[Value]
 // [ Reason = "Expression.Error", Message = "A", Detail = null ]
 ```
 
@@ -134,31 +134,31 @@ in
 An _otherwise-clause_ can be used to replace errors handled by a try expression with an alternative value:
 
 ```powerquery-m
-try error "A" otherwise 1 
+try error "A" otherwise 1
 // 1
 ```
 
 A _catch-clause_ with a zero-parameter _catch-function_ is effectively a longer, alternative syntax for an _otherwise-clause_:
 
 ```powerquery-m
-try error "A" catch () => 1 
+try error "A" catch () => 1
 // 1
 ```
 
 If the _error-handler_ also raises an error, then so does the entire try expression:
 
 ```powerquery-m
-try error "A" otherwise error "B" 
+try error "A" otherwise error "B"
 // error with message "B"
 ```
 
 ```powerquery-m
-try error "A" catch () => error "B" 
+try error "A" catch () => error "B"
 // error with message "B"
 ```
 
 ```powerquery-m
-try error "A" catch (e) => error "B" 
+try error "A" catch (e) => error "B"
 // error with message "B"
 ```
 
@@ -169,25 +169,25 @@ try error "A" catch (e) => error "B"
 The following example shows a record initializer with a field `A` that raises an error and is accessed by two other fields `B` and `C`. Field `B` does not handle the error that is raised by `A`, but `C` does. The final field `D` does not access `A` and so it is not affected by the error in `A`.
 
 ```powerquery-m
-[ 
-    A = error "A", 
+[
+    A = error "A",
     B = A + 1,
     C = let x =
             try A in
                 if not x[HasError] then x[Value]
-                else x[Error], 
-    D = 1 + 1 
+                else x[Error],
+    D = 1 + 1
 ]
 ```
 
 The result of evaluating the above expression is:
 
 ```powerquery-m
-[ 
-    A = // error with message "A" 
-    B = // error with message "A" 
-    C = "A", 
-    D = 2 
+[
+    A = // error with message "A"
+    B = // error with message "A"
+    C = "A",
+    D = 2
 ]
 ```
 
@@ -197,7 +197,7 @@ Error handling in M should be performed close to the cause of errors to deal wit
 let
     f = (x) => [ a = error "bad", b = x ],
     g = try f(42) otherwise 123
-in 
+in
     g[a]  // error "bad"
 ```
 
@@ -212,7 +212,7 @@ While an expression is being developed, an author may want to leave out the impl
      if x > y then
          x - y
      else
-         error Error.Record("Expression.Error", 
+         error Error.Record("Expression.Error",
             "Not Implemented")
 ```
 

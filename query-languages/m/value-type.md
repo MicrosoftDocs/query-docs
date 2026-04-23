@@ -4,6 +4,7 @@ title: "Value.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Value.Type
 
 ## Syntax
@@ -39,7 +40,7 @@ Return the type of the specified date.
 **Usage**
 
 ```powerquery-m
-Value.Type(#datetime(2010, 12, 31))
+Value.Type(#date(2010, 12, 31))
 ```
 
 **Output**

@@ -4,6 +4,7 @@ title: "List.Positions"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Positions
 
 ## Syntax
@@ -11,14 +12,14 @@ ms.topic: reference
 <pre>
 List.Positions(<b>list</b> as list) as list
 </pre>
-  
+
 ## About
 
 Returns a list of offsets for the specified input list.
 
 * `list`: The input list.
 
-When using [List.Transform](list-transform.md) to change a list, the list of positions can be used to give the transform access to the position.
+When using [`List.Transform`](list-transform.md) to change a list, the list of positions can be used to give the transform access to the position.
 
 ## Example 1
 
@@ -48,7 +49,7 @@ let
             List.Transform(
                 List.Positions(customers),
                 each [
-                    IDNumber = _ + 1,    // Make it 1-based
+                    IDNumber = _ + 1,   // Make it 1-based
                     CustomerName = customers{_}
                 ]
             ),

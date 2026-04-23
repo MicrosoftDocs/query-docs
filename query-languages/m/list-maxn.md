@@ -4,6 +4,7 @@ title: "List.MaxN"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.MaxN
 
 ## Syntax
@@ -16,7 +17,7 @@ List.MaxN(
     optional <b>includeNulls</b> as nullable logical
 ) as list
 </pre>
-  
+
 ## About
 
 Returns the maximum value(s) in the specified list. After the rows are sorted, optional parameters can be specified to further filter the result.
@@ -48,9 +49,9 @@ Find the words with more than 3 characters.
 
 ```powerquery-m
 List.MaxN(
-        {"boy", "dog", "pony", "cat", "rabbit", "bat"},
-        each Text.Length(_) > 3
-    )
+    {"boy", "dog", "pony", "cat", "rabbit", "bat"},
+    each Text.Length(_) > 3
+)
 ```
 
 **Output**

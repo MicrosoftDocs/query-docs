@@ -55,8 +55,8 @@ EVALUATE
 ```
 ## See also
 
-[INFO.MODEL](info-model-function-dax.md)
-[INFO.PROPERTIES](info-properties-function-dax.md)
-[INFO.EXPRESSIONS](info-expressions-function-dax.md)
-[INFO.TABLES](info-tables-function-dax.md)
-[INFO.COLUMNS](info-columns-function-dax.md)
+- [INFO.MODEL](info-model-function-dax.md)
+- [INFO.PROPERTIES](info-properties-function-dax.md)
+- [INFO.EXPRESSIONS](info-expressions-function-dax.md)
+- [INFO.TABLES](info-tables-function-dax.md)
+- [INFO.COLUMNS](info-columns-function-dax.md)

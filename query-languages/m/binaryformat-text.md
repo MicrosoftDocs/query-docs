@@ -4,17 +4,18 @@ title: "BinaryFormat.Text"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # BinaryFormat.Text
 
 ## Syntax
 
 <pre>
-BinaryFormat.Text(<b>length</b> as any, optional <b>encoding</b> as nullable number) as function 
+BinaryFormat.Text(<b>length</b> as any, optional <b>encoding</b> as nullable number) as function
 </pre>
 
 ## About
 
-Returns a binary format that reads a text value. The `length` specifies the number of bytes to decode, or the binary format of the length that precedes the text. The optional `encoding` value specifies the encoding of the text. If the `encoding` is not specified, then the encoding is determined from the Unicode byte order marks. If no byte order marks are present, then `TextEncoding.Utf8` is used.
+Returns a binary format that reads a text value. The `length` specifies the number of bytes to decode, or the binary format of the length that precedes the text. The optional `encoding` value specifies the encoding of the text. If the `encoding` is not specified, then the encoding is determined from the Unicode byte order marks. If no byte order marks are present, then [`TextEncoding.Utf8`](textencoding-type.md) is used.
 
 ## Example 1
 

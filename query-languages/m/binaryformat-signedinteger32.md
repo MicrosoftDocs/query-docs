@@ -4,6 +4,7 @@ title: "BinaryFormat.SignedInteger32"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # BinaryFormat.SignedInteger32
 
 ## Syntax

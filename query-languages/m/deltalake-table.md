@@ -4,6 +4,7 @@ title: "DeltaLake.Table"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DeltaLake.Table
 
 ## Syntax

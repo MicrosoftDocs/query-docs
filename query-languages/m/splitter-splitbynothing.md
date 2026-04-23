@@ -4,6 +4,7 @@ title: "Splitter.SplitByNothing"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Splitter.SplitByNothing
 
 ## Syntax

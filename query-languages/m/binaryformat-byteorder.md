@@ -4,6 +4,7 @@ title: "BinaryFormat.ByteOrder"
 ms.topic: reference
 ms.subservice: m-source
 ---
+
 # BinaryFormat.ByteOrder
 
 ## Syntax
@@ -14,4 +15,4 @@ BinaryFormat.ByteOrder(<b>binaryFormat</b> as function, <b>byteOrder</b> as numb
 
 ## About
 
-Returns a binary format with the byte order specified by `binaryFormat`. The default byte order is `ByteOrder.BigEndian`.
+Returns a binary format with the byte order specified by `binaryFormat`. The default byte order is [`ByteOrder.BigEndian`](byteorder-type.md).

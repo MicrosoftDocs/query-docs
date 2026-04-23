@@ -4,6 +4,7 @@ title: "Date.IsInNextWeek"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.IsInNextWeek
 
 ## Syntax
@@ -18,7 +19,7 @@ Indicates whether the given datetime value `dateTime` occurs during the next wee
 
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
 
-## Example 1
+## Example
 
 Determine if the week after the current system time is in the next week.
 

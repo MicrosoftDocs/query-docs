@@ -1,5 +1,5 @@
 ---
-title: M Language values 
+title: M Language values
 description: Describes using values in the Power Query M formula language
 ms.topic: language-reference
 ms.date: 8/21/2025
@@ -33,7 +33,7 @@ The following sections cover each value kind in detail. Types and type ascriptio
 
 ## Null
 
-A _null value_ is used to represent the absence of a value, or a value of indeterminate or unknown state. A null value is written using the literal `null`. The following operators are defined for null values: 
+A _null value_ is used to represent the absence of a value, or a value of indeterminate or unknown state. A null value is written using the literal `null`. The following operators are defined for null values:
 
 | Operator | Result |
 | -------- | ------ |
@@ -71,11 +71,11 @@ The native type of both logical values (`true` and `false`) is the intrinsic typ
 A _number value_ is used for numeric and arithmetic operations. The following are examples of number literals:
 
 ```powerquery-m
-3.14  // Fractional number 
--1.5  // Fractional number 
+3.14  // Fractional number
+-1.5  // Fractional number
 1.0e3 // Fractional number with exponent
-123   // Whole number 
-1e3   // Whole number with exponent 
+123   // Whole number
+1e3   // Whole number with exponent
 0xff  // Whole number in hex (255)
 ```
 
@@ -213,7 +213,7 @@ Although there is no literal syntax for datetimes, several standard library func
 #datetime(year, month, day, hour, minute, second)
 ```
 
-The following must hold or an error with reason code Expression.Error is raised: 
+The following must hold or an error with reason code Expression.Error is raised:
 1 &le; year &le; 9999<br/>
 1 &le; month &le; 12<br/>
 1 &le; day &le; 31<br/>
@@ -302,11 +302,11 @@ A _duration value_ stores an opaque representation of the distance between two p
 Although there is no literal syntax for durations, several standard library functions are provided to construct them. Durations may also be constructed using the intrinsic function `#duration`:
 
 ```powerquery-m
-#duration(0, 0, 0, 5.5)          // 5.5 seconds 
-#duration(0, 0, 0, -5.5)         // -5.5 seconds 
-#duration(0, 0, 5, 30)           // 5.5 minutes 
-#duration(0, 0, 5, -30)          // 4.5 minutes 
-#duration(0, 24, 0, 0)           // 1 day 
+#duration(0, 0, 0, 5.5)          // 5.5 seconds
+#duration(0, 0, 0, -5.5)         // -5.5 seconds
+#duration(0, 0, 5, 30)           // 5.5 minutes
+#duration(0, 0, 5, -30)          // 4.5 minutes
+#duration(0, 24, 0, 0)           // 1 day
 #duration(1, 0, 0, 0)            // 1 day
 ```
 
@@ -343,10 +343,10 @@ The native type of duration values is the intrinsic type `duration`.
 
 A _text_ value represents a sequence of Unicode characters. Text values have a literal form conformant to the following grammar:
 
-_text-literal:<br/> 
+_text-literal:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"` text-literal-characters<sub>opt</sub>  `"`<br/>
 _text-literal-characters:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal-character text-literal-characters<sub>opt</sub><br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal-character text-literal-characters<sub>opt</sub><br/>
 text-literal-character:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-text-character<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;character-escape-sequence<br/>
@@ -363,7 +363,7 @@ The following is an example of a _text_ value:
 ```
 
 The following operators are defined on _text_ values:
- 
+
 | Operator | Result |
 | -------- | ------ |
 | `x = y` | Equal |
@@ -379,7 +379,7 @@ The native type of text values is the intrinsic type `text`.
 
 ## Binary
 
-A _binary value_ represents a sequence of bytes. 
+A _binary value_ represents a sequence of bytes.
 
 Although there is no literal syntax for binary values, several standard library functions are provided to construct them. Binary values may also be constructed using the intrinsic function `#binary`.
 
@@ -436,7 +436,7 @@ To include a sequence of whole number in a list, the `a..b` form can be used:
 The number of items in a list, known as the _list count_, can be determined using the `List.Count` function.
 
 ```powerquery-m
-List.Count({true, false})  // 2 
+List.Count({true, false})  // 2
 List.Count({})             // 0
 ```
 
@@ -460,8 +460,8 @@ The following operators are defined for lists:
 For example:
 
 ```powerquery-m
-{1, 2} & {3, 4, 5}   // {1, 2, 3, 4, 5} 
-{1, 2} = {1, 2}      // true 
+{1, 2} & {3, 4, 5}   // {1, 2, 3, 4, 5}
+{1, 2} = {1, 2}      // true
 {2, 1} <> {1, 2}     // true
 ```
 
@@ -474,9 +474,9 @@ A _record value_ is an ordered sequence of fields. A _field_ consists of a _fiel
 _record-expression:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[`  _field-list<sub>opt</sub>_  `]`<br/> _field-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field_  `,`  _field-list<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field_  `,`  _field-list<br/>
 field:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-name_  `=`  _expression<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field-name_  `=`  _expression<br/>
 field-name:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quoted-identifier_<br/>
@@ -514,7 +514,7 @@ The following holds when evaluating a record expression:
 * Every field name that is specified must be unique within the record, or it is an error. Names are compared using an ordinal comparison.
 
 ```powerquery-m
-    [ x = 1, x = 2 ] // error: field names must be unique 
+    [ x = 1, x = 2 ] // error: field names must be unique
     [ X = 1, x = 2 ] // OK
 ```
 A record with no fields is called an _empty record_, and is written as follows:
@@ -528,14 +528,14 @@ Although the order of the fields of a record is not significant when accessing a
 The same two records produce different results when the fields are obtained:
 
 ```powerquery-m
-Record.FieldNames([ x = 1, y = 2 ]) // [ "x", "y" ] 
+Record.FieldNames([ x = 1, y = 2 ]) // [ "x", "y" ]
 Record.FieldNames([ y = 1, x = 2 ]) // [ "y", "x" ]
 ```
 
 The number of fields in a record can be determined using the `Record.FieldCount` function. For example:
 
 ```powerquery-m
-Record.FieldCount([ x = 1, y = 2 ])  // 2 
+Record.FieldCount([ x = 1, y = 2 ])  // 2
 Record.FieldCount([])                // 0
 ```
 
@@ -563,9 +563,9 @@ The following operators are defined for record values:
 The following examples illustrate the above operators. Note that record merge uses the fields from the right operand to override fields from the left operand, should there be an overlap in field names.
 
 ```powerquery-m
-[ a = 1, b = 2 ] & [ c = 3 ]    // [ a = 1, b = 2, c = 3 ] 
-[ a = 1, b = 2 ] & [ a = 3 ]    // [ a = 3, b = 2 ] 
-[ a = 1, b = 2 ] = [ b = 2, a = 1 ]         // true 
+[ a = 1, b = 2 ] & [ c = 3 ]    // [ a = 1, b = 2, c = 3 ]
+[ a = 1, b = 2 ] & [ a = 3 ]    // [ a = 3, b = 2 ]
+[ a = 1, b = 2 ] = [ b = 2, a = 1 ]         // true
 [ a = 1, b = 2, c = 3 ] <> [ a = 1, b = 2 ] // true
 ```
 
@@ -587,8 +587,8 @@ The following example constructs a table from a list of column names and a list 
 
 ```powerquery-m
 #table(
-    type table [Digit = number, Name = text],  
-    {{1,"one"}, {2,"two"}, {3,"three"}} 
+    type table [Digit = number, Name = text],
+    {{1,"one"}, {2,"two"}, {3,"three"}}
     )
 ```
 
@@ -606,7 +606,7 @@ The following operators are defined for table values:
 Table concatenation aligns like-named columns and fills in `null` for columns appearing in only one of the operand tables. The following example illustrates table concatenation:
 
 ```powerquery-m
-  #table({"A","B"}, {{1,2}}) 
+  #table({"A","B"}, {{1,2}})
 & #table({"B","C"}, {{3,4}})
 ```
 

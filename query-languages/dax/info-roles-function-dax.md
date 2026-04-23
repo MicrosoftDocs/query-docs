@@ -89,8 +89,8 @@ ORDER BY [Role Name], [Member Name]
 
 ## See also
 
-[INFO.ROLEMEMBERSHIPS](info-rolememberships-function-dax.md)
-[INFO.COLUMNPERMISSIONS](info-columnpermissions-function-dax.md)
-[INFO.TABLEPERMISSIONS](info-tablepermissions-function-dax.md)
-[INFO.TABLES](info-tables-function-dax.md)
-[INFO.COLUMNS](info-columns-function-dax.md)
+- [INFO.ROLEMEMBERSHIPS](info-rolememberships-function-dax.md)
+- [INFO.COLUMNPERMISSIONS](info-columnpermissions-function-dax.md)
+- [INFO.TABLEPERMISSIONS](info-tablepermissions-function-dax.md)
+- [INFO.TABLES](info-tables-function-dax.md)
+- [INFO.COLUMNS](info-columns-function-dax.md)

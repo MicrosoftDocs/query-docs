@@ -4,6 +4,7 @@ title: "Function.Invoke"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Function.Invoke
 
 ## Syntax
@@ -16,9 +17,9 @@ Function.Invoke(<b>function</b> as function, <b>args</b> as list) as any
 
 Invokes the given function using the specified list of arguments and returns the result.
 
-## Example 1
+## Example
 
-Invokes [Record.FieldNames](record-fieldnames.md) with one argument [A=1,B=2]
+Invokes [`Record.FieldNames`](record-fieldnames.md) with one argument [A=1,B=2].
 
 **Usage**
 

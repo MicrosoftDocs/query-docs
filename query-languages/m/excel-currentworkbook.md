@@ -4,6 +4,7 @@ title: "Excel.CurrentWorkbook"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Excel.CurrentWorkbook
 
 ## Syntax
@@ -14,4 +15,4 @@ Excel.CurrentWorkbook() as table
 
 ## About
 
-Returns the contents of the current Excel workbook. It returns tables, named ranges, and dynamic arrays. Unlike [Excel.Workbook](excel-workbook.md), it does not return sheets.
+Returns the contents of the current Excel workbook. It returns tables, named ranges, and dynamic arrays. Unlike [`Excel.Workbook`](excel-workbook.md), it does not return sheets.

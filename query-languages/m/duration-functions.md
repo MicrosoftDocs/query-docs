@@ -5,6 +5,7 @@ ms.date: 1/28/2025
 ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ---
+
 # Duration functions
 
 These functions create and manipulate duration values.

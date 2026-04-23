@@ -4,6 +4,7 @@ title: "RelativePosition.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # RelativePosition.Type
 
 ## Definition

@@ -6,6 +6,7 @@ ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ms.subservice: m-background
 ---
+
 # Standard date and time format strings
 
 A standard date and time format string uses a single character as the format specifier to define the text representation of a time and date value. Any date and time format string that contains more than one character, including white space, is interpreted as a [custom date and time format string](custom-date-and-time-format-strings.md). A standard or custom format string can be used to define the text representation that results from a formatting operation.
@@ -30,7 +31,7 @@ A standard date and time format string uses a single character as the format spe
 |"T"|Long time pattern.<br /><br /> More information: [The long time ("T") format specifier](#LongTime).|2009-06-15T13:45:30 -> 1:45:30 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 13:45:30 (hr-HR)<br /><br /> 2009-06-15T13:45:30 -> 01:45:30 م (ar-EG)|
 |"u"|Universal sortable date/time pattern.<br /><br /> More information: [The universal sortable ("u") format specifier](#UniversalSortable).|2009-06-15T13:45:30 -> 2009-06-15 13:45:30Z|
 |"Y", "y"|Year month pattern.<br /><br /> More information: [The year month ("Y") format specifier](#YearMonth).|2009-06-15T13:45:30 -> June 2009 (en-US)<br /><br /> 2009-06-15T13:45:30 -> juni 2009 (da-DK)<br /><br /> 2009-06-15T13:45:30 -> Juni 2009 (id-ID)|
-|Any other single character|Unknown specifier.|Throws a run-time expression error.|
+|Any other single character|Unknown specifier.|Raises a run-time expression error.|
 
 ## How standard format strings work
 
@@ -38,7 +39,7 @@ In a formatting operation, a standard format string is simply an alias for a cus
 
 If a standard format string in a formatting operation maps to a particular culture's custom format string, your application can define the specific culture whose custom format strings are used in one of these ways:
 
-- You can use the default (or current) culture. The following example displays a date using the current culture's short date format. In this case, the current culture is en-US.
+* You can use the default (or current) culture. The following example displays a date using the current culture's short date format. In this case, the current culture is en-US.
 
   ```powerquery -m
   let
@@ -51,7 +52,7 @@ If a standard format string in a formatting operation maps to a particular cultu
       Source
   ```
 
-- You can pass a culture used to format the date according to the rules of that specific culture. The following example displays a date using the short date format of the pt-BR culture.
+* You can pass a culture used to format the date according to the rules of that specific culture. The following example displays a date using the short date format of the pt-BR culture.
 
   ```powerquery-m
   let
@@ -81,8 +82,8 @@ The following sections describe the standard format specifiers for [Date](date-f
 
 This group includes the following formats:
 
-- [The short date ("d") format specifier](#the-short-date-d-format-specifier)
-- [The long date ("D") format specifier](#the-long-date-d-format-specifier)
+* [The short date ("d") format specifier](#the-short-date-d-format-specifier)
+* [The long date ("D") format specifier](#the-long-date-d-format-specifier)
 
 <a name="ShortDate"></a>
 
@@ -148,14 +149,14 @@ in
 
 This group includes the following formats:
 
-- [The full date short time ("f") format specifier](#the-full-date-short-time-f-format-specifier)
-- [The full date long time ("F") format specifier](#the-full-date-long-time-f-format-specifier)
-- [The general date short time ("g") format specifier](#the-general-date-short-time-g-format-specifier)
-- [The general date long time ("G") format specifier](#the-general-date-long-time-g-format-specifier)
-- [The round-trip ("O", "o") format specifier](#the-round-trip-o-o-format-specifier)
-- [The RFC1123 ("R", "r") format specifier](#the-rfc1123-r-r-format-specifier)
-- [The sortable ("s") format specifier](#the-sortable-s-format-specifier)
-- [The universal sortable ("u") format specifier](#the-universal-sortable-u-format-specifier)
+* [The full date short time ("f") format specifier](#the-full-date-short-time-f-format-specifier)
+* [The full date long time ("F") format specifier](#the-full-date-long-time-f-format-specifier)
+* [The general date short time ("g") format specifier](#the-general-date-short-time-g-format-specifier)
+* [The general date long time ("G") format specifier](#the-general-date-long-time-g-format-specifier)
+* [The round-trip ("O", "o") format specifier](#the-round-trip-o-o-format-specifier)
+* [The RFC1123 ("R", "r") format specifier](#the-rfc1123-r-r-format-specifier)
+* [The sortable ("s") format specifier](#the-sortable-s-format-specifier)
+* [The universal sortable ("u") format specifier](#the-universal-sortable-u-format-specifier)
 
 <a name="FullDateShortTime"></a>
 
@@ -280,9 +281,9 @@ The "O" or "o" standard format specifier corresponds to the "yyyy'-'MM'-'dd'T'HH
 
 The "O" or "o" standard format specifier (and the "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'fffffffxxx"  custom format) takes advantage of the ways that ISO 8601 represents time zone information to preserve the **DateTimeZone** values:
 
-- The time zone component of [DateTimeZone.ToLocal](datetimezone-tolocal.md) date and time values is an offset from UTC (for example, +01:00, -07:00).
+* The time zone component of [`DateTimeZone.ToLocal`](datetimezone-tolocal.md) date and time values is an offset from UTC (for example, +01:00, -07:00).
 
-- The time zone component of [DateTimeZone.ToUtc](datetimezone-toutc.md) date and time values uses +00.00 to represent UTC.
+* The time zone component of [`DateTimeZone.ToUtc`](datetimezone-toutc.md) date and time values uses +00.00 to represent UTC.
 
 Because the "O" or "o" standard format specifier conforms to an international standard, the formatting or parsing operation that uses the specifier always uses the invariant culture and the Gregorian calendar.
 
@@ -308,7 +309,7 @@ in
 ```
 
 > [!NOTE]
->The value returned by [DateTimeZone.ToLocal](datetimezone-tolocal.md) depends on whether you're running Power Query on a local machine or online. For example, in the sample above on a system in the U.S. Pacific Time zone, Power Query Desktop returns `-07:00` for the **Local** time because it's reading the time set on your local machine. However, Power Query Online returns `+00:00` because it's reading the time set on the cloud virtual machines, which are set to UTC.
+>The value returned by [`DateTimeZone.ToLocal`](datetimezone-tolocal.md) depends on whether you're running Power Query on a local machine or online. For example, in the sample above on a system in the U.S. Pacific Time zone, Power Query Desktop returns `-07:00` for the **Local** time because it's reading the time set on your local machine. However, Power Query Online returns `+00:00` because it's reading the time set on the cloud virtual machines, which are set to UTC.
 
 The following example uses the "o" format specifier to create a formatted string, and then restores the original date and time value by calling a date and time parsing routine.
 
@@ -323,9 +324,9 @@ let
     ),
     #"New Local Date" = DateTimeZone.FromText(#"Local Date Text"),
     #"Local Round Trip" = Text.Format(
-        "Round-tripped #{0} Local to #{1} Local.", 
+        "Round-tripped #{0} Local to #{1} Local.",
         {
-            DateTimeZone.ToText(#"Origin Local Date"), 
+            DateTimeZone.ToText(#"Origin Local Date"),
             DateTimeZone.ToText(#"New Local Date")
         }
     ),
@@ -339,9 +340,9 @@ let
     ),
     #"New UTC Date" = DateTimeZone.FromText(#"UTC Date Text"),
     #"UTC Round Trip" = Text.Format(
-        "Round-tripped #{0} UTC to #{1} UTC.", 
+        "Round-tripped #{0} UTC to #{1} UTC.",
         {
-            DateTimeZone.ToText(#"Origin UTC Date"), 
+            DateTimeZone.ToText(#"Origin UTC Date"),
             DateTimeZone.ToText(#"New UTC Date")
         }
     ),
@@ -355,14 +356,14 @@ let
     ),
     #"New Offset Date" = DateTimeZone.FromText(#"Offset Date Text"),
     #"Offset Round Trip" = Text.Format(
-        "Round-tripped #{0} to #{1}.", 
+        "Round-tripped #{0} to #{1}.",
         {
-            DateTimeZone.ToText(#"Origin Offset Date"), 
+            DateTimeZone.ToText(#"Origin Offset Date"),
             DateTimeZone.ToText(#"New Offset Date")
         }
     ),
 
-    #"Round Trip Results" = 
+    #"Round Trip Results" =
         {#"Local Round Trip", #"UTC Round Trip", #"Offset Round Trip"}
 in
     #"Round Trip Results"
@@ -386,7 +387,7 @@ in
 
 The "R" or "r" standard format specifier represents a custom date and time format string that's not defined by a specific culture. It is always the same, regardless of the culture used or the format provider supplied. The custom format string is "ddd, dd MMM yyyy HH':'mm':'ss 'GMT'". When this standard format specifier is used, the formatting or parsing operation always uses the invariant culture.
 
-Although the RFC 1123 standard expresses a time as Coordinated Universal Time (UTC), the formatting operation doesn't modify the value of the date and time that's being formatted. Therefore, you must convert the DateTime value to UTC by calling the [DateTimeZone.ToUtc](datetimezone-toutc.md) function method before you perform the formatting operation.
+Although the RFC 1123 standard expresses a time as Coordinated Universal Time (UTC), the formatting operation doesn't modify the value of the date and time that's being formatted. Therefore, you must convert the DateTime value to UTC by calling the [`DateTimeZone.ToUtc`](datetimezone-toutc.md) function method before you perform the formatting operation.
 
 The following example uses the "r" format specifier to display a time and date value on a system in the U.S. Pacific Time zone (seven hours behind UTC).
 
@@ -394,7 +395,7 @@ The following example uses the "r" format specifier to display a time and date v
 let
     date1 = #datetimezone(2024, 4, 10, 6, 30, 0, -7, 0),
     dateOffset = DateTimeZone.ToUtc(date1),
-    Source = 
+    Source =
     {
         DateTimeZone.ToText(date1, [Format = "r"]),
         // Displays Wed, 10 Apr 2024 13:30:00 GMT
@@ -437,7 +438,7 @@ in
 
 The "u" standard format specifier represents a custom date and time format string that is always the same, regardless of the culture used or the format provider supplied. The custom format string is "yyyy'-'MM'-'dd HH':'mm':'ss'Z'".  The pattern reflects a defined standard, and the property is read-only. When this standard format specifier is used, the formatting or parsing operation always uses the invariant culture.
 
-Although the result string should express a time as Coordinated Universal Time (UTC), no conversion of the original **DateTimeZone** value is performed during the formatting operation. Therefore, you must convert a **DateTimeZone** value to UTC by calling the [DateTimeZone.ToUtc](datetimezone-toutc.md) function before formatting it.
+Although the result string should express a time as Coordinated Universal Time (UTC), no conversion of the original **DateTimeZone** value is performed during the formatting operation. Therefore, you must convert a **DateTimeZone** value to UTC by calling the [`DateTimeZone.ToUtc`](datetimezone-toutc.md) function before formatting it.
 
 The following example uses the "u" format specifier to display a date and time value.
 
@@ -460,8 +461,8 @@ in
 
 This group includes the following formats:
 
-- [The short time ("t") format specifier](#the-short-time-t-format-specifier)
-- [The long time ("T") format specifier](#the-long-time-t-format-specifier)
+* [The short time ("t") format specifier](#the-short-time-t-format-specifier)
+* [The long time ("T") format specifier](#the-long-time-t-format-specifier)
 
 <a name="ShortTime"></a>
 
@@ -479,7 +480,7 @@ let
     {
         DateTime.ToText(#datetime(2024, 4, 10, 6, 30, 0), [Format = "t", Culture = ""]),
         // Displays 06:30
-        
+
         DateTime.ToText(#datetime(2024, 4, 10, 6, 30, 0), [Format = "t", Culture = "en-US"]),
         // Displays 6:30 AM
 
@@ -506,7 +507,7 @@ let
     {
         DateTime.ToText(#datetime(2024, 4, 10, 6, 30, 0), [Format = "T", Culture = ""]),
         // Displays 06:30:00
-        
+
         DateTime.ToText(#datetime(2024, 4, 10, 6, 30, 0), [Format = "T", Culture = "en-US"]),
         // Displays 6:30:00 AM
 
@@ -522,8 +523,8 @@ in
 
 This group includes the following formats:
 
-- [The month ("M", "m") format specifier](#the-month-m-m-format-specifier)
-- [The year month ("Y", "y") format specifier](#the-year-month-y-y-format-specifier)
+* [The month ("M", "m") format specifier](#the-month-m-m-format-specifier)
+* [The year month ("Y", "y") format specifier](#the-year-month-y-y-format-specifier)
 
 <a name="MonthDay"></a>
 
@@ -539,7 +540,7 @@ let
     {
         DateTime.ToText(#datetime(2024, 4, 10, 6, 30, 0), [Format = "m", Culture = ""]),
         // Displays April 10
-        
+
         DateTime.ToText(#datetime(2024, 4, 10, 6, 30, 0), [Format = "m", Culture = "en-US"]),
         // Displays April 10
 
@@ -566,7 +567,7 @@ let
     {
         DateTime.ToText(#datetime(2024, 4, 10, 6, 30, 0), [Format = "Y", Culture = ""]),
         // Displays 2024 April
-        
+
         DateTime.ToText(#datetime(2024, 4, 10, 6, 30, 0), [Format = "Y", Culture = "en-US"]),
         // Displays April 2024
 
@@ -581,10 +582,10 @@ in
 
 ## Related content
 
-- [How culture affects text formatting](how-culture-affects-text-formatting.md)
-- [Date, Time, DateTime, and DateTimeZone type conversion](type-conversion.md#date-time-datetime-and-datetimezone)
-- [Date functions](date-functions.md)
-- [DateTime functions](datetime-functions.md)
-- [DateTimeZone functions](datetimezone-functions.md)
-- [Time functions](time-functions.md)
-- [Custom Date and Time Format Strings](custom-date-and-time-format-strings.md)
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)
+* [Date, Time, DateTime, and DateTimeZone type conversion](type-conversion.md#date-time-datetime-and-datetimezone)
+* [Date functions](date-functions.md)
+* [DateTime functions](datetime-functions.md)
+* [DateTimeZone functions](datetimezone-functions.md)
+* [Time functions](time-functions.md)
+* [Custom Date and Time Format Strings](custom-date-and-time-format-strings.md)

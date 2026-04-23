@@ -1,5 +1,5 @@
 ---
-title: Power Query M formula language introduction 
+title: Power Query M formula language introduction
 description: Provides an overview of the Power Query M formula language
 ms.topic: language-reference
 ms.date: 8/25/2025
@@ -59,18 +59,18 @@ The following examples illustrate the different kinds of values available in M. 
 * A _list_ value is an ordered sequence of values. M supports infinite lists, but if written as a literal, lists have a fixed length. The curly brace characters `{` and `}` denote the beginning and end of a list.
 
    ```powerquery-m
-   {123, true, "A"}     // list containing a number, a logical, and 
-                        //     a text 
-   {1, 2, 3}            // list of three numbers 
+   {123, true, "A"}     // list containing a number, a logical, and
+                        //     a text
+   {1, 2, 3}            // list of three numbers
    ```
 
 * A _record_ is a set of _fields_. A field is a name/value pair where the name is a text value that's unique within the field's record. The literal syntax for record values allows the names to be written without quotes, a form also referred to as _identifiers_. The following shows a record containing three fields named "`A`", "`B`", and "`C`", which have values `1`, `2`, and `3`.
 
    ```powerquery-m
-   [ 
-        A = 1,  
-        B = 2,  
-        C = 3 
+   [
+        A = 1,
+        B = 2,
+        C = 3
    ]
    ```
 
@@ -79,7 +79,7 @@ The following examples illustrate the different kinds of values available in M. 
    For example:
 
    ```powerquery-m
-   #table( {"A", "B"}, { {1, 2}, {3, 4} } ) 
+   #table( {"A", "B"}, { {1, 2}, {3, 4} } )
    ```
 
    This creates a table of the following shape:
@@ -105,61 +105,61 @@ In M, parts of an expression can reference other parts of the expression by name
 You can use a record to produce an expression that's equivalent to the previous spreadsheet example. When initializing the value of a field, you can refer to other fields within the record by using the name of the field, as shown in the following example:
 
 ```powerquery-m
-[  
-    A1 = A2 * 2,  
-    A2 = A3 + 1,  
-    A3 = 1  
+[
+    A1 = A2 * 2,
+    A2 = A3 + 1,
+    A3 = 1
 ]
 ```
 
 The previous expression is equivalent to the following example (in that both evaluate to equal values):
 
 ```powerquery-m
-[  
-    A1 = 4,  
-    A2 = 2,  
-    A3 = 1  
+[
+    A1 = 4,
+    A2 = 2,
+    A3 = 1
 ]
 ```
 
 Records can be contained within, or _nest_, within other records. You can use the _lookup operator_ (`[]`) to access the fields of a record by name. For example, the following record has a field named `Sales` containing a record, and a field named `Total` that accesses the `FirstHalf` and `SecondHalf` fields of the `Sales` record:
 
 ```powerquery-m
-[  
-    Sales = [ FirstHalf = 1000, SecondHalf = 1100 ], 
-    Total = Sales[FirstHalf] + Sales[SecondHalf] 
+[
+    Sales = [ FirstHalf = 1000, SecondHalf = 1100 ],
+    Total = Sales[FirstHalf] + Sales[SecondHalf]
 ]
 ```
 
 The previous expression is equivalent to the following example when it's evaluated:
 
 ```powerquery-m
-[  
-    Sales = [ FirstHalf = 1000, SecondHalf = 1100 ], 
-    Total = 2100 
+[
+    Sales = [ FirstHalf = 1000, SecondHalf = 1100 ],
+    Total = 2100
 ]
 ```
 
 Records can also be contained within lists. You can use the _positional index operator_ (`{}`) to access an item in a list by its numeric index. The values within a list are referred to using a zero-based index from the beginning of the list. For example, the indexes `0` and `1` are used to reference the first and second items in the following list:
 
 ```powerquery-m
-[ 
-    Sales =  
-        {  
-            [  
-                Year = 2007,  
-                FirstHalf = 1000,  
-                SecondHalf = 1100, 
-                Total = FirstHalf + SecondHalf // 2100 
-            ], 
-            [  
-                Year = 2008,  
-                FirstHalf = 1200,  
-                SecondHalf = 1300, 
-                Total = FirstHalf + SecondHalf // 2500 
-            ]  
-        }, 
-    TotalSales = Sales{0}[Total] + Sales{1}[Total] // 4600 
+[
+    Sales =
+        {
+            [
+                Year = 2007,
+                FirstHalf = 1000,
+                SecondHalf = 1100,
+                Total = FirstHalf + SecondHalf // 2100
+            ],
+            [
+                Year = 2008,
+                FirstHalf = 1200,
+                SecondHalf = 1300,
+                Total = FirstHalf + SecondHalf // 2500
+            ]
+        },
+    TotalSales = Sales{0}[Total] + Sales{1}[Total] // 4600
 ]
 ```
 
@@ -170,16 +170,16 @@ List and record member expressions (as well as [let expressions](#let-expression
 In M, a _function_ is a mapping from a set of input values to a single output value. A function is written by first naming the required set of input values (the parameters to the function) and then providing an expression that computes the result of the function using those input values (the body of the function) following the goes-to (`=>`) symbol. For example:
 
 ```powerquery-m
-(x) => x + 1                    // function that adds one to a value 
+(x) => x + 1                    // function that adds one to a value
 (x, y) =>  x + y                // function that adds two values
 ```
 
 A function is a value just like a number or a text value. The following example shows a function that's the value of an Add field, which is then _invoked_, or executed, from several other fields. When a function is invoked, a set of values are specified that are logically substituted for the required set of input values within the function body expression.
 
 ```powerquery-m
-[ 
+[
     Add = (x, y) => x + y,
-    OnePlusOne = Add(1, 1),     // 2 
+    OnePlusOne = Add(1, 1),     // 2
     OnePlusTwo = Add(1, 2)      // 3
 ]
 ```
@@ -189,7 +189,7 @@ A function is a value just like a number or a text value. The following example 
 M includes a common set of definitions available for use from an expression called the _standard library_, or just _library_ for short. These definitions consist of a set of named values. The names of values provided by a library are available for use within an expression without having been defined explicitly by the expression. For example:
 
 ```powerquery-m
-Number.E                        // Euler's number e (2.7182...) 
+Number.E                        // Euler's number e (2.7182...)
 Text.PositionOf("Hello", "ll")  // 2
 ```
 
@@ -200,16 +200,16 @@ M includes a set of operators that can be used in expressions. _Operators_ are a
 The meaning of an operator can vary depending on what kind of values its operands are. For example, the plus operator can be used with other kinds of values besides numbers:
 
 ```powerquery-m
-1 + 2                   // numeric addition: 3 
-#time(12,23,0) + #duration(0,0,2,0) 
+1 + 2                   // numeric addition: 3
+#time(12,23,0) + #duration(0,0,2,0)
                         // time arithmetic: #time(12,25,0)
 ```
 
 Another example of an operator with operand-depending meaning is the combination operator (`&`):
 
 ```powerquery-m
-"A" & "BC"              // text concatenation: "ABC" 
-{1} & {2, 3}            // list concatenation: {1, 2, 3} 
+"A" & "BC"              // text concatenation: "ABC"
+{1} & {2, 3}            // list concatenation: {1, 2, 3}
 [ a = 1 ] & [ b = 2 ]   // record merge: [ a = 1, b = 2 ]
 ```
 
@@ -238,15 +238,15 @@ A metadata record value `y` is associated with an existing value `x` using the s
 For values that already carry a non-empty metadata record, the result of applying meta is that of computing the record merge of the existing and the new metadata record. For example, the following two expressions are equivalent to each other and to the previous expression:
 
 ```powerquery-m
-("Mozart" meta [ Rating = 5 ]) meta [ Tags = {"Classical"} ] 
+("Mozart" meta [ Rating = 5 ]) meta [ Tags = {"Classical"} ]
 "Mozart" meta ([ Rating = 5 ] & [ Tags = {"Classical"} ])
 ```
 
 A metadata record can be accessed for a given value using the [Value.Metadata](value-metadata.md) function. In the following example, the expression in the `ComposerRating` field accesses the metadata record of the value in the `Composer` field, and then accesses the `Rating` field of the metadata record.
 
 ```powerquery-m
-[ 
-    Composer = "Mozart" meta [ Rating = 5, Tags = {"Classical"} ], 
+[
+    Composer = "Mozart" meta [ Rating = 5, Tags = {"Classical"} ],
     ComposerRating = Value.Metadata(Composer)[Rating] // 5
 ]
 ```
@@ -256,20 +256,20 @@ A metadata record can be accessed for a given value using the [Value.Metadata](v
 Many of the examples shown so far have included all the literal values of the expression in the result of the expression. The `let` expression allows a set of values to be computed, assigned names, and then used in a subsequent expression that precedes the `in`. For example, in our sales data example, you could do:
 
 ```powerquery-m
-let 
-    Sales2007 =  
-        [  
-            Year = 2007,  
-            FirstHalf = 1000,  
-            SecondHalf = 1100, 
-            Total = FirstHalf + SecondHalf // 2100 
-        ], 
-    Sales2008 =  
-        [  
-            Year = 2008,  
-            FirstHalf = 1200,  
-            SecondHalf = 1300, 
-            Total = FirstHalf + SecondHalf // 2500 
+let
+    Sales2007 =
+        [
+            Year = 2007,
+            FirstHalf = 1000,
+            SecondHalf = 1100,
+            Total = FirstHalf + SecondHalf // 2100
+        ],
+    Sales2008 =
+        [
+            Year = 2008,
+            FirstHalf = 1200,
+            SecondHalf = 1300,
+            Total = FirstHalf + SecondHalf // 2500
         ],
     TotalSales = Sales2007[Total] + Sales2008[Total]
 in
@@ -285,7 +285,7 @@ The `if` expression selects between two expressions based on a logical condition
 ```powerquery-m
 if 2 > 1 then
     2 + 2
-else  
+else
     1 + 1
 ```
 
@@ -298,15 +298,15 @@ An _error_ is an indication that the process of evaluating an expression couldn'
 Errors are raised by operators and functions encountering error conditions or by using the error expression. Errors are handled using the `try` expression. When an error is raised, a value is specified that can be used to indicate why the error occurred.
 
 ```powerquery-m
-let Sales = 
-    [ 
-        Revenue = 2000, 
-        Units = 1000, 
+let Sales =
+    [
+        Revenue = 2000,
+        Units = 1000,
         UnitPrice = if Units = 0 then error "No Units"
-                    else Revenue / Units 
-    ], 
+                    else Revenue / Units
+    ],
     UnitPrice = try Number.ToText(Sales[UnitPrice]),
-    Result = "Unit Price: " & 
+    Result = "Unit Price: " &
         (if UnitPrice[HasError] then UnitPrice[Error][Message]
         else UnitPrice[Value])
 in
@@ -334,20 +334,20 @@ try error "negative unit count"
 This expression evaluates to the following nested record value, explaining the `[HasError]`, `[Error]`, and `[Message]` field lookups in the previous unit-price example.
 
 ```powerquery-m
-[ 
-    HasError = true, 
-    Error = 
-        [ 
-            Reason = "Expression.Error", 
-            Message = "negative unit count", 
-            Detail = null 
-        ] 
+[
+    HasError = true,
+    Error =
+        [
+            Reason = "Expression.Error",
+            Message = "negative unit count",
+            Detail = null
+        ]
 ]
 ```
 
 A common case is to replace errors with default values. The `try` expression can be used with an optional `otherwise` clause to achieve just that in a compact form:
 
 ```powerquery-m
-try error "negative unit count" otherwise 42 
+try error "negative unit count" otherwise 42
 // 42
 ```

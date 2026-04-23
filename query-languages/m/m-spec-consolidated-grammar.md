@@ -1,5 +1,5 @@
 ---
-title: M Language Consolidated Grammar 
+title: M Language Consolidated Grammar
 description: Describes all of the grammar associated with the Power Query M formula language
 ms.topic: language-reference
 ms.date: 01/29/2025
@@ -40,11 +40,11 @@ new-line-character:_<br/>
 
 _comment:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-line-comment<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delimited-comment</em><br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delimited-comment</em><br/>
 single-line-comment:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`//`  _single-line-comment-characters<sub>opt</sub><br/>
 single-line-comment-characters:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-line-comment-character  single-line-comment-characters<sub>opt</sub><br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-line-comment-character  single-line-comment-characters<sub>opt</sub><br/>
 single-line-comment-character:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any Unicode character except a _new-line-character<br/>
 delimited-comment:_<br/>
@@ -53,9 +53,9 @@ _delimited-comment-text:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delimited-comment-section delimited-comment-text<sub>opt</sub><br/>
 delimited-comment-section:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`/`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_asterisks<sub>opt</sub>  not-slash-or-asterisk<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_asterisks<sub>opt</sub>  not-slash-or-asterisk<br/>
 asterisks:_ <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`*` _asterisks<sub>opt</sub><br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`*` _asterisks<sub>opt</sub><br/>
 not-slash-or-asterisk:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any Unicode character except `*` or `/`
 
@@ -117,15 +117,15 @@ hex-digits:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hex-digit hex-digits<sub>opt</sub><br/>
 hex-digit:_  one of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  a  b  c  d e  f`<br/>
-_decimal-number-literal:<br/> 
+_decimal-number-literal:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digits_  `.`  _decimal-digits  exponent-part<sub>opt</sub>_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`.`  _decimal-digits  exponent-part<sub>opt</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digits  exponent-part<sub>opt</sub><br/>
 exponent-part:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`e`  _sign<sub>opt</sub>  decimal-digits_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`E`  _sign<sub>opt</sub>  decimal-digits<br/> sign:_  one of<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`E`  _sign<sub>opt</sub>  decimal-digits<br/> sign:_  one of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`+  -`<br/>
-_text-literal:_<br/> 
+_text-literal:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"`  _text-literal-characters<sub>opt</sub>_  `"`<br/>
 _text-literal-characters:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal-character  text-literal-characters<sub>opt</sub><br/>
@@ -155,7 +155,7 @@ available-identifier:_<br/>
 keyword-or-identifier:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;letter-character<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;underscore-character<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier-start-character 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier-start-character
 identifier-part-characters<br/>
 identifier-start-character:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;letter-character<br/>
@@ -335,10 +335,10 @@ _identifier-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier-reference<br/>
 identifier-reference:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exclusive-identifier-reference<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inclusive-identifier-reference<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inclusive-identifier-reference<br/>
 exclusive-identifier-reference:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier<br/>
-inclusive-identifier-reference:_<br/> 
+inclusive-identifier-reference:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`@`  _identifier_
 
 #### Section-access expression
@@ -485,7 +485,7 @@ variable-name:<br/>
 _if-expression:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`if` _if-condition_  `then`  _true-expression_  `else`  _false-expression<br/>
 if-condition:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
 true-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>
 false-expression:<br/>
@@ -546,7 +546,7 @@ optional-parameter-specification-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter-specification<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optional-parameter-specification_  `,`  _optional-parameter-specification-list<br/>
 optional-parameter-specification:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional` _parameter-specification<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`optional` _parameter-specification<br/>
 parameter-specification:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter-name parameter-type<br/>
 parameter-type:<br/>
@@ -568,7 +568,7 @@ _error-raising-expression:_<br/>
 #### Error handling expression
 
 _error-handling-expression:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`try` _protected-expression 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`try` _protected-expression
 error-handler<sub>opt</sub><br/>
 protected-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expression<br/>

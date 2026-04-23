@@ -4,6 +4,7 @@ title: "Type.ForFunction"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.ForFunction
 
 ## Syntax
@@ -16,7 +17,7 @@ Type.ForFunction(<b>signature</b> as record, <b>min</b> as number) as type
 
 Creates a `function type` from `signature`, a record of `ReturnType` and `Parameters`, and `min`, the minimum number of arguments required to invoke the function.
 
-## Example 1
+## Example
 
 Creates the type for a function that takes a number parameter named X and returns a number.
 

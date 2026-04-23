@@ -4,6 +4,7 @@ title: "Value.ViewFunction"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Value.ViewFunction
 
 ## Syntax
