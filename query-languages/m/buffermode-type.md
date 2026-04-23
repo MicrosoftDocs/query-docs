@@ -4,6 +4,7 @@ title: "BufferMode.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # BufferMode.Type
 
 ## Definition

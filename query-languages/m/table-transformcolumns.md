@@ -4,6 +4,7 @@ title: "Table.TransformColumns"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.TransformColumns
 
 ## Syntax
@@ -16,7 +17,7 @@ Table.TransformColumns(
     optional <b>missingField</b> as nullable number
 ) as table
 </pre>
-  
+
 ## About
 
 Transforms the specified table by applying each column operation in a list.
@@ -24,9 +25,9 @@ Transforms the specified table by applying each column operation in a list.
 * `table`: The table to transform.
 * `transformOperations`: The transformations to make to the table. The format of this parameter is either { column name, transformation } or { column name, transformation, new column type }.
 * `defaultTransformation`: (Optional) The default transformation applied to all columns not listed in `transformOperations`.
-* `missingField`: (Optional) Specifies the expected action for missing values. If a column listed in `transformOperations` doesn't exist, an error is raised (`MissingField.Error`) unless this parameter specifies an alternative. Use one of the following values:
-  * `MissingField.UseNull`: Any missing fields are included as `null` values.
-  * `MissingField.Ignore`: Any missing fields are ignored.
+* `missingField`: (Optional) Specifies the expected action for missing values. If a column listed in `transformOperations` doesn't exist, an error is raised ([`MissingField.Error`](missingfield-type.md)) unless this parameter specifies an alternative. Use one of the following values:
+  * [`MissingField.UseNull`](missingfield-type.md): Any missing fields are included as `null` values.
+  * [`MissingField.Ignore`](missingfield-type.md): Any missing fields are ignored.
 
 ## Example 1
 
@@ -58,7 +59,7 @@ Table.FromRecords({
 
 ## Example 2
 
-Convert the number values in missing column [X] to text values, defaulting to `null` on columns that don't exist.
+Convert the number values in missing column [X] to text values, defaulting to `null` for columns that don't exist.
 
 **Usage**
 
@@ -136,7 +137,7 @@ let
         {{"Date", each if List.Contains(USHolidays, _) then
             if Date.DayOfWeek(_, Day.Sunday) = 5 then
                 Date.AddDays(_, 3)     // Friday to Monday
-            else 
+            else
                 Date.AddDays(_, 1)     // Other to next day
         else _, type date}}
     )

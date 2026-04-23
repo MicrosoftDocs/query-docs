@@ -4,6 +4,7 @@ title: "Text.Split"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Split
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Text.Split(<b>text</b> as text, <b>separator</b> as text) as list
 </pre>
-  
+
 ## About
 
 Returns a list of text values resulting from the splitting of a text value based on the specified delimiter.
@@ -53,8 +54,8 @@ Text.Split("Name, the Customer, the Purchase Date", ", the ")
 
 ```powerquery-m
 {
-    Name,
-    Customer,
-    Purchase Date
+    "Name",
+    "Customer",
+    "Purchase Date"
 }
 ```

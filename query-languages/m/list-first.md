@@ -4,6 +4,7 @@ title: "List.First"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.First
 
 ## Syntax

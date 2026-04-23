@@ -3,6 +3,7 @@ description: "Learn more about: Constants"
 title: "Constants"
 ms.topic: reference
 ---
+
 # Constants
 
 The Power Query M formula language includes these constant values.

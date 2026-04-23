@@ -4,6 +4,7 @@ title: "Value.NullableEquals"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Value.NullableEquals
 
 ## Syntax
@@ -18,4 +19,4 @@ Value.NullableEquals(
 
 ## About
 
-Returns null if either argument `value1`, `value2` is null, otherwise equivalent to [Value.Equals](value-equals.md).
+Returns null if either argument `value1` or `value2` is null, otherwise equivalent to [`Value.Equals`](value-equals.md).

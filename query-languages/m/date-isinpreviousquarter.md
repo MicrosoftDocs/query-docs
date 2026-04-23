@@ -4,6 +4,7 @@ title: "Date.IsInPreviousQuarter"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.IsInPreviousQuarter
 
 ## Syntax
@@ -11,14 +12,14 @@ ms.topic: reference
 <pre>
 Date.IsInPreviousQuarter(<b>dateTime</b> as any) as nullable logical
 </pre>
-  
+
 ## About
 
 Indicates whether the given datetime value `dateTime` occurs during the previous quarter, as determined by the current date and time on the system. Note that this function will return false when passed a value that occurs within the current quarter.
 
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
 
-## Example 1
+## Example
 
 Determine if the quarter before the current system time is in the previous quarter.
 

@@ -4,6 +4,7 @@ title: "Uri.EscapeDataString"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Uri.EscapeDataString
 
 ## Syntax
@@ -16,7 +17,7 @@ Uri.EscapeDataString(<b>data</b> as text) as text
 
 Encodes special characters in the input `data` according to the rules of RFC 3986.
 
-## Example 1
+## Example
 
 Encode the special characters in "+money$".
 

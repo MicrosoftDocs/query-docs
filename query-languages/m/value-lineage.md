@@ -4,6 +4,7 @@ title: "Value.Lineage"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Value.Lineage
 
 ## Syntax

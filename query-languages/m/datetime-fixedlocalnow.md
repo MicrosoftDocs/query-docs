@@ -4,6 +4,7 @@ title: "DateTime.FixedLocalNow"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTime.FixedLocalNow
 
 ## Syntax
@@ -11,10 +12,10 @@ ms.topic: reference
 <pre>
 DateTime.FixedLocalNow() as datetime
 </pre>
-  
+
 ## About
 
-Returns a `datetime` value set to the current date and time on the system. This value is fixed and will not change with successive calls, unlike [DateTime.LocalNow](datetime-localnow.md), which may return different values over the course of execution of an expression.
+Returns a `datetime` value set to the current date and time on the system. This value is fixed and will not change with successive calls, unlike [`DateTime.LocalNow`](datetime-localnow.md), which may return different values over the course of execution of an expression.
 
 ## Related content
 

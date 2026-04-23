@@ -4,6 +4,7 @@ title: "Date.EndOfYear"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.EndOfYear
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Date.EndOfYear(<b>dateTime</b> as any) as any
 </pre>
-  
+
 ## About
 
 Returns the end of the year that contains `dateTime`, including fractional seconds. Time zone information is preserved.

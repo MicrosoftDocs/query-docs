@@ -4,6 +4,7 @@ title: "Table.WithErrorContext"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.WithErrorContext
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.WithErrorContext(<b>value</b> as any, <b>context</b> as text) as any
 </pre>
-  
+
 ## About
 
 This function is intended for internal use only.

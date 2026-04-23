@@ -4,14 +4,15 @@ title: "Splitter.SplitTextByPositions"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Splitter.SplitTextByPositions
 
 ## Syntax
 
-<pre> 
+<pre>
 Splitter.SplitTextByPositions(<b>positions</b> as list, optional <b>startAtEnd</b> as nullable logical) as function
 </pre>
-  
+
 ## About
 
 Returns a function that splits text into a list of text at each specified position.

@@ -4,6 +4,7 @@ title: "Table.SelectRows"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.SelectRows
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.SelectRows(<b>table</b> as table, <b>condition</b> as function) as table
 </pre>
-  
+
 ## About
 
 Returns a table of rows from the `table`, that matches the selection `condition`.

@@ -4,6 +4,7 @@ title: "Date.DaysInMonth"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.DaysInMonth
 
 ## Syntax
@@ -11,14 +12,14 @@ ms.topic: reference
 <pre>
 Date.DaysInMonth(<b>dateTime</b> as any) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the number of days in the month in the `date`, `datetime`, or `datetimezone` value `dateTime`.
 
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value for which the number of days in the month is returned.
 
-## Example 1
+## Example
 
 Number of days in the month December as represented by `#date(2011, 12, 01)`.
 

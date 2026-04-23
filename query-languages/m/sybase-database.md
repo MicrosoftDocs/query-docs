@@ -4,6 +4,7 @@ title: "Sybase.Database"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Sybase.Database
 
 ## Syntax
@@ -27,4 +28,4 @@ Returns a table of SQL tables and views available in a Sybase database on server
 * `ConnectionTimeout`: A duration that controls how long to wait before abandoning an attempt to make a connection to the server. The default value is driver-dependent.
 * `HierarchicalNavigation`: A logical (true/false) that sets whether to view the tables grouped by their schema names (default is false).
 
-The record parameter is specified as [option1 = value1, option2 = value2...] or [Query = "select ..."] for example.
+The record parameter is specified as [option1 = value1, option2 = value2...] or [Query = "select ..."], for example.

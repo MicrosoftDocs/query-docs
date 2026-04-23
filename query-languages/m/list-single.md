@@ -4,14 +4,15 @@ title: "List.Single"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Single
 
 ## Syntax
 
 <pre>
-List.Single(<b>list</b> as list) as any  
+List.Single(<b>list</b> as list) as any
 </pre>
-  
+
 ## About
 
 If there is only one item in the list `list`, returns that item. If there is more than one item or the list is empty, the function raises an error.

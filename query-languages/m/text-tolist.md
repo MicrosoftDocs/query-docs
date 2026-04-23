@@ -4,6 +4,7 @@ title: "Text.ToList"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.ToList
 
 ## Syntax
@@ -11,12 +12,12 @@ ms.topic: reference
 <pre>
 Text.ToList(<b>text</b> as text) as list
 </pre>
-  
+
 ## About
 
 Returns a list of character values from the given text value `text`.
 
-## Example 1
+## Example
 
 Create a list of character values from the text "Hello World".
 
@@ -28,7 +29,8 @@ Text.ToList("Hello World")
 
 **Output**
 
-```powerquery-m{
+```powerquery-m
+{
     "H",
     "e",
     "l",

@@ -4,6 +4,7 @@ title: "Table.PositionOf"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.PositionOf
 
 ## Syntax
@@ -16,15 +17,15 @@ Table.PositionOf(
     optional <b>equationCriteria</b> as any
 ) as any
 </pre>
-  
+
 ## About
 
 Returns the row position of the first occurrence of the `row` in the `table` specified. Returns -1 if no occurrence is found.
 
 * `table`: The input table.
 * `row`: The row in the table to find the position of.
-* `occurrence`: (Optional) Specifies which occurrences of the row to return.
-* `equationCriteria`: (Optional) Controls the comparison between the table rows.
+* `occurrence`: *(Optional)* Specifies which occurrences of the row to return.
+* `equationCriteria`: *(Optional)* Controls the comparison between the table rows.
 
 ## Example 1
 

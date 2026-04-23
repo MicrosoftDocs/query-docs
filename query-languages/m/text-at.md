@@ -4,6 +4,7 @@ title: "Text.At"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.At
 
 ## Syntax
@@ -11,12 +12,12 @@ ms.topic: reference
 <pre>
 Text.At(<b>text</b> as nullable text, <b>index</b> as number) as nullable text
 </pre>
-  
+
 ## About
 
 Returns the character in the text value, `text` at position `index`. The first character in the text is at position 0.
 
-## Example 1
+## Example
 
 Find the character at position 4 in string "Hello, World".
 

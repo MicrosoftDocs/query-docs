@@ -4,6 +4,7 @@ title: "JoinKind.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # JoinKind.Type
 
 ## Definition
@@ -25,7 +26,7 @@ Specifies the kind of join operation.
 
 ## Remarks
 
-The fields of this enumeration are possible values for the optional `JoinKind` parameter in [Table.Join](table-join.md).
+The fields of this enumeration are possible values for the optional `JoinKind` parameter in [`Table.Join`](table-join.md).
 
 ## Applies to
 

@@ -4,20 +4,21 @@ title: "Table.ToRecords"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ToRecords
 
 ## Syntax
 
 <pre>
-Table.ToRecords(<b>table</b> as table) as list  
+Table.ToRecords(<b>table</b> as table) as list
 </pre>
-  
+
 ## About
 
 Converts a table, `table`, to a list of records.
 
-## Example 1
-  
+## Example
+
 Convert the table to a list of records.
 
 **Usage**

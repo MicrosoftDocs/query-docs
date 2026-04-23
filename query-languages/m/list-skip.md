@@ -4,6 +4,7 @@ title: "List.Skip"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Skip
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 List.Skip(<b>list</b> as list, optional <b>countOrCondition</b> as any) as list
 </pre>
-  
+
 ## About
 
 Returns a list that skips the first element of list `list`. If `list` is an empty list an empty list is returned. This function takes an optional parameter, `countOrCondition`, to support skipping multiple values as listed below.

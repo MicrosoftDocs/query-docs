@@ -4,6 +4,7 @@ title: "Record.FieldNames"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Record.FieldNames
 
 ## Syntax
@@ -11,12 +12,12 @@ ms.topic: reference
 <pre>
 Record.FieldNames(<b>record</b> as record) as list
 </pre>
-  
+
 ## About
 
 Returns the names of the fields in the record `record` as text.
 
-## Example 1
+## Example
 
 Find the names of the fields in the record.
 

@@ -4,6 +4,7 @@ title: "Date.IsInCurrentDay"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.IsInCurrentDay
 
 ## Syntax
@@ -16,7 +17,7 @@ Date.IsInCurrentDay(<b>dateTime</b> as any) as nullable logical
 
 Indicates whether the given datetime value `dateTime` occurs during the current day, as determined by the current date and time on the system.
 
-- `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
+* `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
 
 ## Example
 

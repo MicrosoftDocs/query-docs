@@ -4,6 +4,7 @@ title: "Binary.Decompress"
 ms.topic: reference
 ms.subservice: m-source
 ---
+
 # Binary.Decompress
 
 ## Syntax
@@ -16,10 +17,10 @@ Binary.Decompress(<b>binary</b> as nullable binary, <b>compressionType</b> as nu
 
 Decompresses a binary value using the given compression type. The result of this call is a decompressed copy of the input. Compression types include:
 
-* [Compression.GZip](compression-type.md)
-* [Compression.Deflate](compression-type.md)
+* [`Compression.GZip`](compression-type.md)
+* [`Compression.Deflate`](compression-type.md)
 
-## Example 1
+## Example
 
 Decompress the binary value.
 

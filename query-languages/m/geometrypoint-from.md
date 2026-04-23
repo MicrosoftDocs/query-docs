@@ -4,6 +4,7 @@ title: "GeometryPoint.From"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # GeometryPoint.From
 
 ## Syntax

@@ -41,7 +41,7 @@ A table with the following columns:
 
 ## Remarks
 
-Can only be ran by users with write permission on the semantic model and not when live connected to the semantic model in Power BI Desktop. This function can be used in calculated tables, columns, and measures of a semantic model and will update when the model is refreshed.
+Unlike [INFO.RELATIONSHIPS](info-relationships-function-dax.md), this function can be used in calculated tables, columns, and measures of a semantic model, including as part of a model refresh.
 
 ## Example 1 - DAX query
 
@@ -114,10 +114,12 @@ EVALUATE
 ```
 
 :::image type="content" source="media/info-view-relationships-function-dax/measure-example-4-dax-query.png" alt-text="Screenshot showing the output of INFO.VIEW.RELATIONSHIPS() with a measure then used in a DAX query in DAX query view." lightbox="media/info-view-relationships-function-dax/measure-example-4-dax-query.png":::
+
 ## See also
 
-[INFO.VIEW.TABLES](info-view-tables-function-dax.md)
-[INFO.VIEW.COLUMNS](info-view-columns-function-dax.md)
-[INFO.VIEW.MEASURES](info-view-measures-function-dax.md)
-[INFO.TABLES](info-tables-function-dax.md)
-[INFO.COLUMNS](info-columns-function-dax.md)
+- [INFO.VIEW.TABLES](info-view-tables-function-dax.md)
+- [INFO.VIEW.COLUMNS](info-view-columns-function-dax.md)
+- [INFO.VIEW.MEASURES](info-view-measures-function-dax.md)
+- [INFO.RELATIONSHIPS](info-relationships-function-dax.md)
+- [INFO.TABLES](info-tables-function-dax.md)
+- [INFO.COLUMNS](info-columns-function-dax.md)

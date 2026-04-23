@@ -1,5 +1,5 @@
 ---
-title: M Language lexical structure 
+title: M Language lexical structure
 description: Describes the lexical structure of the Power Query M formula language
 ms.topic: language-reference
 ms.date: 8/2/2022
@@ -56,7 +56,7 @@ and defines a _field-specification_ to optionally begin with the terminal symbol
 
 Alternatives are normally listed on separate lines, though in cases where there are many alternatives, the phrase "one of" may precede a list of expansions given on a single line. This is simply shorthand for listing each of the alternatives on a separate line. For example, the production:
 
-_decimal-digit:_  one of<br/> 
+_decimal-digit:_  one of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`0  1  2  3  4  5  6  7  8  9`
 
 is shorthand for:
@@ -82,7 +82,7 @@ _lexical-unit:<br/>
 lexical-elements:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lexical-element<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lexical-element<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lexical-elements<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lexical-elements<br/>
 lexical-element:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;whitespace<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;token comment_
@@ -95,15 +95,15 @@ Whitespace is used to separate comments and tokens within an M document. Whitesp
 
 _whitespace_:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any character with Unicode class Zs<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Horizontal tab character (`U+0009`)<br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vertical tab character (`U+000B`)<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Horizontal tab character (`U+0009`)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vertical tab character (`U+000B`)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Form feed character (`U+000C`)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Carriage return character (`U+000D`) followed by line feed character (`U+000A`)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_new-line-character_<br/>
 _new-line-character_:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Carriage return character (`U+000D`)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Line feed character (`U+000A`)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next line character (`U+0085`)<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next line character (`U+0085`)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Line separator character (`U+2028`)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paragraph separator character (`U+2029`)
 
@@ -126,27 +126,27 @@ single-line-comment:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`//` _single-line-comment-characters<sub>opt</sub><br/>
 single-line-comment-characters:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-line-comment-character single-line-comment-characters<sub>opt</sub><br/>
-single-line-comment-character:_<br/> 
+single-line-comment-character:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any Unicode character except a _new-line-character<br/>
 delimited-comment:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`/*` _delimited-comment-text<sub>opt</sub>  asterisks_  `/`<br/>
 _delimited-comment-text:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delimited-comment-section delimited-comment-text<sub>opt</sub></br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delimited-comment-section delimited-comment-text<sub>opt</sub></br>
 delimited-comment-section:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`/`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_asterisks<sub>opt</sub>  not-slash-or-asterisk<br/>
-asterisks:_<br/> 
+asterisks:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`*` _asterisks<sub>opt</sub><br/>
 not-slash-or-asterisk:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any Unicode character except `*` or `/` 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any Unicode character except `*` or `/`
 
 Comments do not nest. The character sequences `/*` and `*/` have no special meaning within a single-line comment, and the character sequences `//` and `/*` have no special meaning within a delimited comment.
 
 Comments are not processed within text literals. The example
 
 ```powerquery-m
-/* Hello, world 
-*/ 
+/* Hello, world
+*/
     "Hello, world"
 ```
 
@@ -155,8 +155,8 @@ includes a delimited comment.
 The example
 
 ```powerquery-m
-// Hello, world 
-// 
+// Hello, world
+//
 "Hello, world" // This is an example of a text literal
 ```
 
@@ -183,15 +183,15 @@ M text values can contain arbitrary Unicode characters. Text literals, however, 
 Escape sequences can also contain short (four hex digits) or long (eight hex digits) Unicode code-point values. The following three escape sequences are therefore equivalent:
 
 ```powerquery-m
-#(000D)     // short Unicode hexadecimal value 
-#(0000000D) // long Unicode hexadecimal value 
+#(000D)     // short Unicode hexadecimal value
+#(0000000D) // long Unicode hexadecimal value
 #(cr)       // compact escape shorthand for carriage return
 ```
 
 Multiple escape codes can be included in a single escape sequence, separated by commas; the following two sequences are thus equivalent:
 
 ```powerquery-m
-#(cr,lf) 
+#(cr,lf)
 #(cr)#(lf)
 ```
 
@@ -201,22 +201,22 @@ _character-escape-sequence:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`#(`  _escape-sequence-list_  `)`<br/> _escape-sequence-list:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-escape-sequence<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-escape-sequence_  `,`  _escape-sequence-list<br/>
-single-escape-sequence:<br/> 
+single-escape-sequence:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;long-unicode-escape-sequence<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;short-unicode-escape-sequence<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;control-character-escape-sequence<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;escape-escape<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;escape-escape<br/>
 long-unicode-escape-sequence:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hex-digit  hex-digit  hex-digit  hex-digit  hex-digit  hex-digit  hex-digit  hex-digit<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hex-digit  hex-digit  hex-digit  hex-digit  hex-digit  hex-digit  hex-digit  hex-digit<br/>
 short-unicode-escape-sequence:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hex-digit  hex-digit  hex-digit  hex-digit<br/>
-control-character-escape-sequence:<br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;control-character<br/> 
+control-character-escape-sequence:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;control-character<br/>
 control-character:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`cr`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`lf`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`tab`<br/> 
-_escape-escape:_<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`tab`<br/>
+_escape-escape:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`#`
 
 ### Literals
@@ -257,15 +257,15 @@ decimal-number-literal:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`.`  _decimal-digits  exponent-part<sub>opt</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digits  exponent-part<sub>opt</sub><br/>
 decimal-digits:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digit decimal-digits<sub>opt</sub><br/> 
-decimal-digit:_  one of<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digit decimal-digits<sub>opt</sub><br/>
+decimal-digit:_  one of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`0  1  2  3  4  5  6  7  8  9`<br/>
 _exponent-part:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`e` _sign<sub>opt</sub>  decimal-digits_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`E` _sign<sub>opt</sub>  decimal-digits<br/> sign:_ one of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`+  -`<br/>
 _hexadecimal-number-literal:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`0x` _hex-digits_<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`0x` _hex-digits_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`0X` _hex-digits<br/>
 hex-digits:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hex-digit hex-digits<sub>opt</sub><br/>
@@ -284,17 +284,17 @@ Note that if a decimal point is included in a number literal, then it must have 
 
 A text literal is used to write a sequence of Unicode characters and produces a text value.
 
-_text-literal:_<br/> 
+_text-literal:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"`  _text-literal-characters<sub>opt</sub>_  `"`<br/>
-_text-literal-characters:<br/> 
+_text-literal-characters:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-literal-character text-literal-characters<sub>opt</sub><br/>
 text-literal-character:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;single-text-character<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;character-escape-sequence<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;double-quote-escape-sequence<br/> 
-single-text-character:_<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;double-quote-escape-sequence<br/>
+single-text-character:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any character except `"` (`U+0022`) or `#` (`U+0023`) followed by `(` (`U+0028`)<br/>
-_double-quote-escape-sequence:_<br/> 
+_double-quote-escape-sequence:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`""` (`U+0022`, `U+0022`)
 
 To include quotes in a text value, the quote mark is repeated, as follows:
@@ -323,13 +323,13 @@ An _identifier_ is a name used to refer to a value. Identifiers can either be re
 _identifier:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;regular-identifier<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quoted-identifier<br/>
-regular-identifier:<br/> 
+regular-identifier:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;available-identifier<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;available-identifier  dot-character  regular-identifier<br/>
-available-identifier:_<br/> 
+available-identifier:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A _keyword-or-identifier_ that is not a _keyword<br/>
 keyword-or-identifier:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier-start-character  identifier-part-characters<sub>opt</sub><br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier-start-character  identifier-part-characters<sub>opt</sub><br/>
 identifier-start-character:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;letter-character<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;underscore-character<br/>
@@ -341,25 +341,25 @@ identifier-part-character:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;underscore-character<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;connecting-character<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;combining-character<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;formatting-character<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;formatting-character<br/>
 dot-character:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`.`  (`U+002E`)<br/>
-_underscore-character:_<br/> 
+_underscore-character:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`_`  (`U+005F`)<br/>
 _letter-character:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Unicode character of classes Lu, Ll, Lt, Lm, Lo, or Nl<br/>
-_combining-character:_<br/> 
+_combining-character:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Unicode character of classes Mn or Mc<br/>
 _decimal-digit-character:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Unicode character of the class Nd<br/>
 _connecting-character:_<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Unicode character of the class Pc<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Unicode character of the class Pc<br/>
 _formatting-character:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Unicode character of the class Cf
 
 A _quoted-identifier_ can be used to allow any sequence of zero or more Unicode characters to be used as an identifier, including keywords, whitespace, comments, operators and punctuators.
 
-_quoted-identifier:_<br/> 
+_quoted-identifier:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`#"`   _text-literal-characters<sub>opt</sub>_   `"`
 
 Note that escape sequences and double-quotes to escape quotes can be used in a _quoted identifier_, just as in a _text-literal_.
@@ -367,9 +367,9 @@ Note that escape sequences and double-quotes to escape quotes can be used in a _
 The following example uses identifier quoting for names containing a space character:
 
 ```powerquery-m
-[ 
-    #"1998 Sales" = 1000, 
-    #"1999 Sales" = 1100, 
+[
+    #"1998 Sales" = 1000,
+    #"1999 Sales" = 1100,
     #"Total Sales" = #"1998 Sales" + #"1999 Sales"
 ]
 ```
@@ -377,10 +377,10 @@ The following example uses identifier quoting for names containing a space chara
 The following example uses identifier quoting to include the `+` operator in an identifier:
 
 ```powerquery-m
-[ 
-    #"A + B" = A + B, 
-    A = 1, 
-    B = 2 
+[
+    #"A + B" = A + B,
+    A = 1,
+    B = 2
 ]
 ```
 
@@ -389,8 +389,8 @@ The following example uses identifier quoting to include the `+` operator in an 
 There are two places in M where no ambiguities are introduced by identifiers that contain blanks or that are otherwise keywords or number literals. These places are the names of record fields in a record literal and in a field access operator (`[ ]`) There, M allows such identifiers without having to use quoted identifiers.
 
 ```powerquery-m
-[ 
-    Data = [ Base Line = 100, Rate = 1.8 ], 
+[
+    Data = [ Base Line = 100, Rate = 1.8 ],
     Progression = Data[Base Line] * Data[Rate]
 ]
 ```
@@ -400,7 +400,7 @@ The identifiers used to name and access fields are referred to as _generalized i
 _generalized-identifier:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier-part<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier_ separated only by blanks (`U+0020`)<br/> _generalized-identifier-part<br/>
-generalized-identifier-part:<br/> 
+generalized-identifier-part:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generalized-identifier-segment<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decimal-digit-character generalized-identifier-segment<br/>
 generalized-identifier-segment:<br/>
@@ -413,7 +413,7 @@ A _keyword_ is an identifier-like sequence of characters that is reserved, and c
 
 _keyword:_ one of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `and as each else error false if in is let meta not null or otherwise`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;` section shared then true try type #binary #date #datetime`<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;` section shared then true try type #binary #date #datetime`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;` #datetimezone #duration #infinity #nan #sections #shared #table #time`
 
 ### Operators and punctuators

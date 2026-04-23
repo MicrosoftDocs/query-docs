@@ -4,6 +4,7 @@ title: "Number.Tan"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.Tan
 
 ## Syntax
@@ -11,12 +12,12 @@ ms.topic: reference
 <pre>
 Number.Tan(<b>number</b> as nullable number) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the tangent of `number`.
 
-## Example 1
+## Example
 
 Find the tangent of the angle 1.
 

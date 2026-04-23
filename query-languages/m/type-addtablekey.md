@@ -4,6 +4,7 @@ title: "Type.AddTableKey"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.AddTableKey
 
 ## Syntax

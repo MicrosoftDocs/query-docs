@@ -4,6 +4,7 @@ title: "DateTimeZone.ToRecord"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTimeZone.ToRecord
 
 ## Syntax
@@ -11,14 +12,14 @@ ms.topic: reference
 <pre>
 DateTimeZone.ToRecord(<b>dateTimeZone</b> as datetimezone) as record
 </pre>
-  
+
 ## About
 
 Returns a record containing the parts of the given datetimezone value, `dateTimeZone`.
 
 * `dateTimeZone`: A `datetimezone` value for from which the record of its parts is to be calculated.
 
-## Example 1
+## Example
 
 Convert the `#datetimezone(2011, 12, 31, 11, 56, 2, 8, 0)` value into a record containing Date, Time, and Zone values.
 

@@ -4,6 +4,7 @@ title: "#date"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # #date
 
 ## Syntax
@@ -70,7 +71,7 @@ Source = #table(type table [Account Code = text, Posted Date = date, Sales = num
         {"PTY-507", #date(2023,6,4), 110}
     }),
     #"Filtered rows" = Table.SelectRows(
-        Source, 
+        Source,
         each Date.Year([Posted Date]) = 2023
     )
 in

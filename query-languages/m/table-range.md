@@ -4,6 +4,7 @@ title: "Table.Range"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Range
 
 ## Syntax
@@ -15,7 +16,7 @@ Table.Range(
     optional <b>count</b> as nullable number
 ) as table
 </pre>
-  
+
 ## About
 
 Returns the rows from the `table` starting at the specified `offset`. An optional parameter, `count`, specifies how many rows to return. By default, all the rows after the offset are returned.

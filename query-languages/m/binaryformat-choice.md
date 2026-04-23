@@ -4,6 +4,7 @@ title: "BinaryFormat.Choice"
 ms.topic: reference
 ms.subservice: m-source
 ---
+
 # BinaryFormat.Choice
 
 ## Syntax
@@ -50,7 +51,7 @@ in
 
 **Output**
 
-`{3,4}`
+`{3, 4}`
 
 ## Example 2
 

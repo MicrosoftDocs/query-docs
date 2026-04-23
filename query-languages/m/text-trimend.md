@@ -4,6 +4,7 @@ title: "Text.TrimEnd"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.TrimEnd
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Text.TrimEnd(<b>text</b> as nullable text, optional <b>trim</b> as any) as nullable text
 </pre>
-  
+
 ## About
 
 Returns the result of removing all trailing characters from the specified `text`. By default, all the trailing whitespace characters are removed.
@@ -31,9 +32,7 @@ Text.TrimEnd("     a b c d    ")
 
 **Output**
 
-<pre>
-"     a b c d"
-</pre>
+`"     a b c d"`
 
 ## Example 2
 
@@ -63,7 +62,7 @@ let
         {"Leslie", "FR-4648****@**", 3.8392},
         {"Ringo", "DE-2046790@***", 12.6600}
     }),
-    #"Trimmed Account" = Table.TransformColumns(Source, {"Account Name", each Text.TrimEnd(_, {"*", "@"})})
+    #"Trimmed Account" = Table.TransformColumns(Source, {{"Account Name", each Text.TrimEnd(_, {"*", "@"})}})
 in
     #"Trimmed Account"
 ```
@@ -72,10 +71,9 @@ in
 
 ```powerquery-m
 #table(type table [Name = text, Account Name = text, Interest = number],
-    {
-        {"Bob", "US-847263", 2.841},
-        {"Leslie", "FR-4648", 3.8392},
-        {"Ringo", "DE-2046790", 12.66}
-    }),
-
+{
+    {"Bob", "US-847263", 2.841},
+    {"Leslie", "FR-4648", 3.8392},
+    {"Ringo", "DE-2046790", 12.66}
+})
 ```

@@ -4,12 +4,13 @@ title: "Number.IsOdd"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.IsOdd
 
 ## Syntax
 
 <pre>
-Number.IsOdd(<b>number</b> as number) as logical  
+Number.IsOdd(<b>number</b> as number) as logical
 </pre>
 
 ## About

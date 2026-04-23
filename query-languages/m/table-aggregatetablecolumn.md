@@ -4,6 +4,7 @@ title: "Table.AggregateTableColumn"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.AggregateTableColumn
 
 ## Syntax
@@ -15,12 +16,12 @@ Table.AggregateTableColumn(
     <b>aggregations</b> as list
 ) as table
 </pre>
-  
+
 ## About
 
 Aggregates tables in `table`[`column`] into multiple columns containing aggregate values for the tables. `aggregations` is used to specify the columns containing the tables to aggregate, the aggregation functions to apply to the tables to generate their values, and the names of the aggregate columns to create.
 
-## Example 1
+## Example
 
 Aggregate table columns in `[t]` in the table `{[t = {[a=1, b=2, c=3], [a=2,b=4,c=6]}, b = 2]}` into the sum of `[t.a]`, the min and max of `[t.b]`, and the count of values in `[t.a]`.
 

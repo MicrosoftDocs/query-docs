@@ -4,6 +4,7 @@ title: "DateTimeZone.UtcNow"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTimeZone.UtcNow
 
 ## Syntax
@@ -16,7 +17,7 @@ DateTimeZone.UtcNow() as datetimezone
 
 Returns the current date and time in UTC (the GMT timezone).
 
-## Example 1
+## Example
 
 Get the current date & time in UTC.
 

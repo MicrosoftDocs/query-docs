@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Custom date and time format strings"
 title: "Custom date and time format strings"
-ms.date: 10/7/2024
+ms.date: 01/30/2026
 ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ms.subservice: m-background
@@ -15,7 +15,7 @@ In formatting operations, custom date and time format strings can be used with t
 
 ```powerquery-m
 let
-    Source = 
+    Source =
     {
         Text.From("Today is " & Date.ToText(#date(2011, 6, 10), [Format = "MMMM dd yyyy"]) & "."),
         Text.Format("The current date and time: #{0}", {DateTimeZone.ToText(
@@ -30,14 +30,14 @@ in
 //    The current date and time: 06/10/11 15:24:16 +00:00
 ```
 
-In parsing operations, custom date and time format strings can be used with the **Date**, **DateTime**, **Time**, and **DateTimeZone** functions. These functions require that an input string conforms exactly to a particular pattern for the parse operation to succeed. The following example illustrates a call to the [DateTime.FromText](datetime-fromtext.md) function to parse a date that must include a month, a day, and a two-digit year.
+In parsing operations, custom date and time format strings can be used with the **Date**, **DateTime**, **Time**, and **DateTimeZone** functions. These functions require that an input string conforms exactly to a particular pattern for the parse operation to succeed. The following example illustrates a call to the [`DateTime.FromText`](datetime-fromtext.md) function to parse a date that must include a month, a day, and a two-digit year.
 
 ```powerquery-m
 let
     dateValues = { "30-12-2011", "12-30-2011", "30-12-11", "12-30-11"},
     pattern = "MM-dd-yy",
-    convertedDates = List.Transform(dateValues, (dateValue) => 
-        try Text.Format("Converted '#{0}' to #{1}.", {dateValue, DateTime.FromText(dateValue, [Format=pattern])}) 
+    convertedDates = List.Transform(dateValues, (dateValue) =>
+        try Text.Format("Converted '#{0}' to #{1}.", {dateValue, DateTime.FromText(dateValue, [Format=pattern])})
         otherwise Text.Format("Unable to convert '#{0}' to a date and time.", {dateValue}))
 in
     convertedDates
@@ -119,7 +119,7 @@ let
     Source =
     {
         DateTime.ToText(#datetime(2024, 8, 29, 19, 27, 15), [Format = "d, M", Culture = ""]),
-        // Displays 29, 8 
+        // Displays 29, 8
 
         DateTime.ToText(#datetime(2024, 8, 29, 19, 27, 15), [Format = "d, MMMM", Culture = "en-US"]),
         // Displays 29, August
@@ -144,7 +144,7 @@ let
     Source =
     {
         DateTime.ToText(#datetime(2024, 1, 2, 6, 30, 15), [Format = "dd, MM", Culture = ""])
-        // Displays 02, 01 
+        // Displays 02, 01
     }
 in
     Source
@@ -436,7 +436,7 @@ in
 
 The "h" custom format specifier represents the hour as a number from 1 to 12; that is, the hour is represented by a 12-hour clock that counts the whole hours since midnight or noon. A particular hour after midnight is indistinguishable from the same hour after noon. The hour isn't rounded, and a single-digit hour is formatted without a leading zero. For example, given a time of 5:43 in the morning or afternoon, this custom format specifier displays "5".
 
-If the "h" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and throws an expression error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
+If the "h" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and raises an expression error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
 
 The following example includes the "h" custom format specifier in a custom format string.
 
@@ -496,7 +496,7 @@ in
 
 The "H" custom format specifier represents the hour as a number from 0 to 23; that is, the hour is represented by a zero-based 24-hour clock that counts the hours since midnight. A single-digit hour is formatted without a leading zero.
 
-If the "H" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and throws an expression error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
+If the "H" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and raises an expression error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
 
 The following example includes the "H" custom format specifier in a custom format string.
 
@@ -538,13 +538,13 @@ in
 
 The "K" custom format specifier represents the time zone information of a date and time value. When this format specifier is used with **DateTimeZone** values, the result string is defined as:
 
-- For the local time zone, this specifier produces a result string containing the local offset from Coordinated Universal Time (UTC), for example, "-07:00", if your query runs in Power Query Desktop. If your query runs in Power Query Online, the result string produces no offset from UTC time, that is, "+00:00".
+* For the local time zone, this specifier produces a result string containing the local offset from Coordinated Universal Time (UTC), for example, "-07:00", if your query runs in Power Query Desktop. If your query runs in Power Query Online, the result string produces no offset from UTC time, that is, "+00:00".
 
-- For a UTC time, the result string produces no offset from UTC time; that is, "+00:00 to represent a UTC date.
+* For a UTC time, the result string produces no offset from UTC time; that is, "+00:00 to represent a UTC date.
 
-- For a time from an unspecified time zone, the result is empty.
+* For a time from an unspecified time zone, the result is empty.
 
-If the "K" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and throws an expression error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
+If the "K" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and raises an expression error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
 
 The following example displays the string that results from using the "K" custom format specifier with various values on a system in the U.S. Pacific Time zone.
 
@@ -566,7 +566,7 @@ in
 ```
 
 > [!NOTE]
->The value returned by [DateTimeZone.LocalNow](datetimezone-localnow.md) depends on whether you're running Power Query on a local machine or online. For example, in the sample above on a system in the U.S. Pacific Time zone, Power Query Desktop returns `-07:00` because it's reading the time set on your local machine. However, Power Query Online returns `+00:00` because it's reading the time set on the cloud virtual machines, which are set to UTC.
+>The value returned by [`DateTimeZone.LocalNow`](datetimezone-localnow.md) depends on whether you're running Power Query on a local machine or online. For example, in the sample above on a system in the U.S. Pacific Time zone, Power Query Desktop returns `-07:00` because it's reading the time set on your local machine. However, Power Query Online returns `+00:00` because it's reading the time set on the cloud virtual machines, which are set to UTC.
 
 [Back to table](#table)
 
@@ -999,16 +999,16 @@ The following table shows how the offset value changes depending on the **DateTi
 
 | DateTimeZone value | Offset value |
 | --- | --- |
-| [DateTimeZone.LocalNow](datetimezone-localnow.md) | On Power Query Desktop, the signed offset of the local operating system's time zone from UTC. On Power Query Online, returns `+00`. |
-| [DateTimeZone.UtcNow](datetimezone-utcnow.md) | Returns `+0`. |
+| [`DateTimeZone.LocalNow`](datetimezone-localnow.md) | On Power Query Desktop, the signed offset of the local operating system's time zone from UTC. On Power Query Online, returns `+00`. |
+| [`DateTimeZone.UtcNow`](datetimezone-utcnow.md) | Returns `+0`. |
 
-If the "z" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and throws an expression error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
+If the "z" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and raises an expression error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
 
 The following example includes the "z" custom format specifier in a custom format string on a system in the U.S. Pacific Time zone.
 
 ```powerquery-m
 let
-    Source = 
+    Source =
     {
         DateTimeZone.ToText(DateTimeZone.LocalNow(), [Format="{0:%z}"]),
         // Displays {0:-7} on Power Query Desktop
@@ -1018,7 +1018,7 @@ let
         // Displays {0:+0}
 
         DateTimeZone.ToText(DateTimeZone.SwitchZone(
-            #datetimezone(2024, 8, 1, 0, 0, 0, 0, 0), 6), 
+            #datetimezone(2024, 8, 1, 0, 0, 0, 0, 0), 6),
             [Format = "{0:%z}"]
         )
         // Displays {0:+6}
@@ -1028,7 +1028,7 @@ in
 ```
 
 > [!NOTE]
->The value returned by [DateTimeZone.LocalNow](datetimezone-localnow.md) depends on whether you're running Power Query on a local machine or online. For example, in the sample above on a system in the U.S. Pacific Time zone, Power Query Desktop returns `{0:-7}` because it's reading the time set on your local machine. However, Power Query Online returns `{0:+0}` because it's reading the time set on the cloud virtual machines, which are set to UTC.
+>The value returned by [`DateTimeZone.LocalNow`](datetimezone-localnow.md) depends on whether you're running Power Query on a local machine or online. For example, in the sample above on a system in the U.S. Pacific Time zone, Power Query Desktop returns `{0:-7}` because it's reading the time set on your local machine. However, Power Query Online returns `{0:+0}` because it's reading the time set on the cloud virtual machines, which are set to UTC.
 
 [Back to table](#table)
 
@@ -1040,14 +1040,14 @@ The following table shows how the offset value changes depending on the **DateTi
 
 | DateTimeZone value | Offset value |
 | --- | --- |
-| [DateTimeZone.LocalNow](datetimezone-localnow.md) | On Power Query Desktop, the signed offset of the local operating system's time zone from UTC. On Power Query Online, returns `+00`. |
-| [DateTimeZone.UtcNow](datetimezone-utcnow.md) | Returns `+00`. |
+| [`DateTimeZone.LocalNow`](datetimezone-localnow.md) | On Power Query Desktop, the signed offset of the local operating system's time zone from UTC. On Power Query Online, returns `+00`. |
+| [`DateTimeZone.UtcNow`](datetimezone-utcnow.md) | Returns `+00`. |
 
 The following example includes the "zz" custom format specifier in a custom format string on a system in the U.S. Pacific Time zone.
 
 ```powerquery-m
 let
-    Source = 
+    Source =
     {
         DateTimeZone.ToText(DateTimeZone.LocalNow(), [Format="{0:zz}"]),
         // Displays {0:-07} on Power Query Desktop
@@ -1057,7 +1057,7 @@ let
         // Displays {0:+00}
 
         DateTimeZone.ToText(DateTimeZone.SwitchZone(
-            #datetimezone(2024, 8, 1, 0, 0, 0, 0, 0), 6), 
+            #datetimezone(2024, 8, 1, 0, 0, 0, 0, 0), 6),
             [Format = "{0:zz}"]
         )
         // Displays {0:+06}
@@ -1067,7 +1067,7 @@ in
 ```
 
 > [!NOTE]
->The value returned by [DateTimeZone.LocalNow](datetimezone-localnow.md) depends on whether you're running Power Query on a local machine or online. For example, in the sample above on a system in the U.S. Pacific Time zone, Power Query Desktop returns `{0:-07}` because it's reading the time set on your local machine. However, Power Query Online returns `{0:+00}` because it's reading the time set on the cloud virtual machines, which are set to UTC.
+>The value returned by [`DateTimeZone.LocalNow`](datetimezone-localnow.md) depends on whether you're running Power Query on a local machine or online. For example, in the sample above on a system in the U.S. Pacific Time zone, Power Query Desktop returns `{0:-07}` because it's reading the time set on your local machine. However, Power Query Online returns `{0:+00}` because it's reading the time set on the cloud virtual machines, which are set to UTC.
 
 [Back to table](#table)
 
@@ -1079,14 +1079,14 @@ The following table shows how the offset value changes depending on the **DateTi
 
 | DateTimeZoneValue value | Offset value |
 | --- | --- |
-| [DateTimeZone.LocalNow](datetimezone-localnow.md) | On Power Query Desktop, the signed offset of the local operating system's time zone from UTC. On Power Query Online, returns `+00`.|
-| [DateTimeZone.UtcNow](datetimezone-utcnow.md) | Returns `+00:00`. |
+| [`DateTimeZone.LocalNow`](datetimezone-localnow.md) | On Power Query Desktop, the signed offset of the local operating system's time zone from UTC. On Power Query Online, returns `+00`.|
+| [`DateTimeZone.UtcNow`](datetimezone-utcnow.md) | Returns `+00:00`. |
 
 The following example includes the "zzz" custom format specifier in a custom format string on a system in the U.S. Pacific Time zone.
 
 ```powerquery-m
 let
-    Source = 
+    Source =
     {
         DateTimeZone.ToText(DateTimeZone.LocalNow(), [Format="{0:zzz}"]),
         // Displays {0:-07:00} on Power Query Desktop
@@ -1096,7 +1096,7 @@ let
         // Displays {0:+00:00}
 
         DateTimeZone.ToText(DateTimeZone.SwitchZone(
-            #datetimezone(2024, 8, 1, 0, 0, 0, 0, 0), 6), 
+            #datetimezone(2024, 8, 1, 0, 0, 0, 0, 0), 6),
             [Format = "{0:zzz}"]
         )
         // Displays {0:+06:00}
@@ -1106,7 +1106,7 @@ in
 ```
 
 > [!NOTE]
->The value returned by [DateTimeZone.LocalNow](datetimezone-localnow.md) depends on whether you're running Power Query on a local machine or online. For example, in the sample above on a system in the U.S. Pacific Time zone, Power Query Desktop returns `{0:-07:00}` because it's reading the time set on your local machine. However, Power Query Online returns `{0:+00:00}` because it's reading the time set on the cloud virtual machines, which are set to UTC.
+>The value returned by [`DateTimeZone.LocalNow`](datetimezone-localnow.md) depends on whether you're running Power Query on a local machine or online. For example, in the sample above on a system in the U.S. Pacific Time zone, Power Query Desktop returns `{0:-07:00}` because it's reading the time set on your local machine. However, Power Query Online returns `{0:+00:00}` because it's reading the time set on the cloud virtual machines, which are set to UTC.
 
 [Back to table](#table)
 
@@ -1119,7 +1119,7 @@ The ":" custom format specifier represents the time separator, which is used to 
 > [!NOTE]
 > To change the time separator for a particular date and time string, specify the separator character within a literal string delimiter. For example, the custom format string `hh_dd_ss` produces a result string in which "_" (an underscore) is always used as the time separator.
 
-If the ":" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and throws an expression error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
+If the ":" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and raises an expression error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
 
 [Back to table](#table)
 
@@ -1130,7 +1130,7 @@ The "/" custom format specifier represents the date separator, which is used to 
 > [!NOTE]
 > To change the date separator for a particular date and time string, specify the separator character within a literal string delimiter. For example, the custom format string `mm/dd/yyyy` produces a result string in which "/" is always used as the date separator.
 
-If the "/" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and throws an expression error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
+If the "/" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and raises an expression error. For more information about using a single format specifier, go to [Using Single Custom Format Specifiers](#using-single-custom-format-specifiers) later in this article.
 
 [Back to table](#table)
 
@@ -1138,25 +1138,25 @@ If the "/" format specifier is used without other custom format specifiers, it's
 
 The following characters in a custom date and time format string are reserved and are always interpreted as formatting characters or, in the case of `"`, `'`, `/`, and `\`, as special characters.
 
-- `F`
-- `H`
-- `K`
-- `M`
-- `d`
-- `f`
-- `g`
-- `h`
-- `m`
-- `s`
-- `t`
-- `y`
-- `z`
-- `%`
-- `:`
-- `/`
-- `"`
-- `'`
-- `\`
+* `F`
+* `H`
+* `K`
+* `M`
+* `d`
+* `f`
+* `g`
+* `h`
+* `m`
+* `s`
+* `t`
+* `y`
+* `z`
+* `%`
+* `:`
+* `/`
+* `"`
+* `'`
+* `\`
 
 All other characters are always interpreted as character literals and, in a formatting operation, are included in the result string unchanged.  In a parsing operation, they must match the characters in the input string exactly; the comparison is case-sensitive.
 
@@ -1165,11 +1165,11 @@ The following example includes the literal characters "PST" (for Pacific Standar
 ```powerquery-m
 let
     #"Date Formats" = {"dd MMM yyyy hh:mm tt PST", "dd MMM yyyy hh:mm tt PDT"},
-    Source = 
+    Source =
     {
         DateTime.ToText(#datetime(2024, 8, 18, 16, 50, 0), [Format = #"Date Formats"{1}]),
         try DateTime.ToText(DateTime.FromText(
-            "25 Dec 2023 12:00 pm PST", [Format = #"Date Formats"{0}])) 
+            "25 Dec 2023 12:00 pm PST", [Format = #"Date Formats"{0}]))
             otherwise "Unable to parse '" & "25 Dec 2023 12:00 pm PST" & "'"
     }
 in
@@ -1182,14 +1182,14 @@ in
 
 There are two ways to indicate that characters are to be interpreted as literal characters and not as reserve characters, so that they can be included in a result string or successfully parsed in an input string:
 
-- By escaping each reserved character. For more information, go to [Using the escape sequences](#escape).
+* By escaping each reserved character. For more information, go to [Using the escape sequences](#escape).
 
   The following example includes the literal characters "pst" (for Pacific Standard time) to represent the local time zone in a format string. Because both "s" and "t" are custom format strings, both characters must be escaped to be interpreted as character literals.
 
   ```powerquery-m
   let
         #"Date Format" = "dd MMM yyyy hh:mm tt p's''t'",
-        Source = 
+        Source =
         {
             DateTime.ToText(#datetime(2024, 8, 18, 16, 50, 0), [Format = #"Date Format"]),
             try DateTime.ToText(DateTime.FromText(
@@ -1204,12 +1204,12 @@ There are two ways to indicate that characters are to be interpreted as literal 
   //       12/25/2016 12:00:00 PM
   ```
 
-- By enclosing the entire literal string in apostrophes. The following example is like the previous one, except that "pst" is enclosed in apostrophes to indicate that the entire delimited string should be interpreted as character literals.
+* By enclosing the entire literal string in apostrophes. The following example is like the previous one, except that "pst" is enclosed in apostrophes to indicate that the entire delimited string should be interpreted as character literals.
 
   ```powerquery-m
   let
         #"Date Format" = "dd MMM yyyy hh:mm tt 'pst'",
-        Source = 
+        Source =
         {
             DateTime.ToText(#datetime(2024, 8, 18, 16, 50, 0), [Format = #"Date Format"]),
             try DateTime.ToText(DateTime.FromText(
@@ -1246,11 +1246,11 @@ let
 in
     Source
 
-// The example displays a list with the following output text, 
+// The example displays a list with the following output text,
 //   with <sp> representing a space:
 //       '1'
 //       ' 1'
-//       '1 ' 
+//       '1 '
 ```
 
 #### <a name="escape"></a> Using the escape sequences
@@ -1259,9 +1259,9 @@ The "d", "f", "F", "g", "h", "H", "K", "m", "M", "s", "t", "y", "z", ":", or "/"
 
 To prevent a character from being interpreted as a format specifier, you can:
 
-- Precede it with a backslash.
-- Surround it with a single quote.
-- Surround it with two double quotes.
+* Precede it with a backslash.
+* Surround it with a single quote.
+* Surround it with two double quotes.
 
 Each of these characters acts as an escape sequence. The escape sequence signifies that the following character or surrounded character is a text literal that should be included in the result string unchanged.
 
@@ -1275,7 +1275,7 @@ let
     format1 = "h \h m \m",
     format2 = "h ""h"" m ""m""",
     format3 = "h 'h' m 'm'",
-    Source = 
+    Source =
     {
         Text.Format("#{0} (#{1}) -> #{2}", {DateTime.ToText(date), format1, DateTime.ToText(date, format1)}),
         Text.Format("#{0} (#{1}) -> #{2}", {DateTime.ToText(date), format2, DateTime.ToText(date, format2)}),
@@ -1292,10 +1292,10 @@ in
 
 ## Related content
 
-- [How culture affects text formatting](how-culture-affects-text-formatting.md)
-- [Date, Time, DateTime, and DateTimeZone type conversion](type-conversion.md#date-time-datetime-and-datetimezone)
-- [Date functions](date-functions.md)
-- [DateTime functions](datetime-functions.md)
-- [DateTimeZone functions](datetimezone-functions.md)
-- [Time functions](time-functions.md)
-- [Standard Date and Time format strings](standard-date-and-time-format-strings.md)
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)
+* [Date, Time, DateTime, and DateTimeZone type conversion](type-conversion.md#date-time-datetime-and-datetimezone)
+* [Date functions](date-functions.md)
+* [DateTime functions](datetime-functions.md)
+* [DateTimeZone functions](datetimezone-functions.md)
+* [Time functions](time-functions.md)
+* [Standard Date and Time format strings](standard-date-and-time-format-strings.md)

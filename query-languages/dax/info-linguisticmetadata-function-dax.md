@@ -78,9 +78,9 @@ EVALUATE
 
 ## See also
 
-[INFO.CULTURES](info-cultures-function-dax.md)
-[INFO.OBJECTTRANSLATIONS](info-objecttranslations-function-dax.md)
-[INFO.TABLES](info-tables-function-dax.md)
-[INFO.COLUMNS](info-columns-function-dax.md)
-[INFO.MEASURES](info-measures-function-dax.md)
+- [INFO.CULTURES](info-cultures-function-dax.md)
+- [INFO.OBJECTTRANSLATIONS](info-objecttranslations-function-dax.md)
+- [INFO.TABLES](info-tables-function-dax.md)
+- [INFO.COLUMNS](info-columns-function-dax.md)
+- [INFO.MEASURES](info-measures-function-dax.md)
 

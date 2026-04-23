@@ -4,6 +4,7 @@ title: "Date.ToRecord"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.ToRecord
 
 ## Syntax
@@ -18,7 +19,7 @@ Returns a record containing the parts of the given date value, `date`.
 
 * `date`: A `date` value for from which the record of its parts is to be calculated.
 
-## Example 1
+## Example
 
 Convert the `#date(2011, 12, 31)` value into a record containing parts from the date value.
 

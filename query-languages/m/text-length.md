@@ -4,6 +4,7 @@ title: "Text.Length"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Length
 
 ## Syntax
@@ -11,12 +12,12 @@ ms.topic: reference
 <pre>
 Text.Length(<b>text</b> as nullable text) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the number of characters in the text `text`.
 
-## Example 1
+## Example
 
 Find how many characters are in the text "Hello World".
 

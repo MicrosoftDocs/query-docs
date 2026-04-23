@@ -4,6 +4,7 @@ title: "Number.Abs"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.Abs
 
 ## Syntax
@@ -14,11 +15,11 @@ Number.Abs(<b>number</b> as nullable number) as nullable number
 
 ## About
 
-Returns the absolute value of `number`. If `number` is null, **Number.Abs** returns null.
+Returns the absolute value of `number`. If `number` is null, `Number.Abs` returns null.
 
 * `number`: A `number` for which the absolute value is to be calculated.
 
-## Example 1
+## Example
 
 Absolute value of -3.
 

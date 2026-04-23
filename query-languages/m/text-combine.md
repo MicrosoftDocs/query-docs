@@ -4,6 +4,7 @@ title: "Text.Combine"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Combine
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Text.Combine(<b>texts</b> as list, optional <b>separator</b> as nullable text) as text
 </pre>
-  
+
 ## About
 
 Returns the result of combining the list of text values, `texts`, into a single text value. Any `null` values present in `texts` are ignored. An optional `separator` used in the final combined text can be specified.
@@ -60,9 +61,9 @@ Text.Combine({"Seattle", null, "WA"}, ", ")
 
 ## Example 4
 
-**Usage**
+Combine the first name, middle initial (if present), and last name into the individual's full name.
 
-Combine the first name, middle initial (if present), and last name into the individual’s full name.
+**Usage**
 
 ```powerquery-m
 let

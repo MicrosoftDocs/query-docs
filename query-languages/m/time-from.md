@@ -4,19 +4,20 @@ title: "Time.From"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Time.From
 
 ## Syntax
 
-<pre> 
+<pre>
 Time.From(<b>value</b> as any, optional <b>culture</b> as nullable text) as nullable time
 </pre>
-  
+
 ## About
 
-Returns a `time` value from the given `value`. An optional `culture` may also be provided (for example, "en-US"). If the given `value` is `null`, **Time.From** returns `null`. If the given `value` is `time`, `value` is returned. Values of the following types can be converted to a `time` value:
+Returns a `time` value from the given `value`. An optional `culture` may also be provided (for example, "en-US"). If the given `value` is `null`, `Time.From` returns `null`. If the given `value` is `time`, `value` is returned. Values of the following types can be converted to a `time` value:
 
-* `text`: A `time` value from textual representation. Refer to [Time.FromText](time-fromtext.md) for details.
+* `text`: A `time` value from textual representation. Refer to [`Time.FromText`](time-fromtext.md) for details.
 * `datetime`: The time component of the `value`.
 * `datetimezone`: The time component of the local datetime equivalent of `value`.
 * `number`: A `time` equivalent to the number of fractional days expressed by `value`. If `value` is negative or greater or equal to 1, an error is returned.

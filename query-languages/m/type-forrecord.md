@@ -4,6 +4,7 @@ title: "Type.ForRecord"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.ForRecord
 
 ## Syntax
@@ -16,7 +17,7 @@ Type.ForRecord(<b>fields</b> as record, <b>open</b> as logical) as type
 
 Returns a type that represents records with specific type constraints on fields.
 
-## Example 1
+## Example
 
 Dynamically generate a table type.
 

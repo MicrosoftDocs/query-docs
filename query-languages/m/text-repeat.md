@@ -4,6 +4,7 @@ title: "Text.Repeat"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Repeat
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Text.Repeat(<b>text</b> as nullable text, <b>count</b> as number) as nullable text
 </pre>
-  
+
 ## About
 
 Returns a text value composed of the input text `text` repeated `count` times.

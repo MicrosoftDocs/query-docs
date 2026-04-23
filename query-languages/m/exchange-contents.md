@@ -4,12 +4,13 @@ title: "Exchange.Contents"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Exchange.Contents
 
 ## Syntax
 
 <pre>
-Exchange.Contents (optional <b>mailboxAddress</b> as nullable text) as table
+Exchange.Contents(optional <b>mailboxAddress</b> as nullable text) as table
 </pre>
 
 ## About

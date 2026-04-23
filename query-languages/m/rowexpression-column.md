@@ -4,6 +4,7 @@ title: "RowExpression.Column"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # RowExpression.Column
 
 ## Syntax
@@ -11,19 +12,19 @@ ms.topic: reference
 <pre>
 RowExpression.Column(<b>columnName</b> as text) as record
 </pre>
-  
+
 ## About
 
-Returns an abstract syntax tree (AST) that represents access to column `columnName` of the row within a row expression.  
-  
-## Example 1
+Returns an abstract syntax tree (AST) that represents access to column `columnName` of the row within a row expression.
+
+## Example
 
 Creates an AST representing access of column "CustomerName".
 
 **Usage**
-  
+
 ```powerquery-m
-RowExpression.Column("CustomerName")  
+RowExpression.Column("CustomerName")
 ```
 
 **Output**

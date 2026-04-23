@@ -4,7 +4,10 @@ title: "Date.IsInNextNMonths"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.IsInNextNMonths
+
+## Syntax
 
 <pre>
 Date.IsInNextNMonths(<b>dateTime</b> as any, <b>months</b> as number) as nullable logical
@@ -17,7 +20,7 @@ Indicates whether the given datetime value `dateTime` occurs during the next num
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
 * `months`: The number of months.
 
-## Example 1
+## Example
 
 Determine if the month after the current system time is in the next two months.
 

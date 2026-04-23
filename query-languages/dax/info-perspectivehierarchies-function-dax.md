@@ -109,8 +109,8 @@ ORDER BY [Perspective Name], [Hierarchy Name]
 
 ## See also
 
-[INFO.PERSPECTIVES](info-perspectives-function-dax.md)
-[INFO.PERSPECTIVECOLUMNS](info-perspectivecolumns-function-dax.md)
-[INFO.PERSPECTIVEMEASURES](info-perspectivemeasures-function-dax.md)
-[INFO.PERSPECTIVETABLES](info-perspectivetables-function-dax.md)
-[INFO.TABLES](info-tables-function-dax.md)
+- [INFO.PERSPECTIVES](info-perspectives-function-dax.md)
+- [INFO.PERSPECTIVECOLUMNS](info-perspectivecolumns-function-dax.md)
+- [INFO.PERSPECTIVEMEASURES](info-perspectivemeasures-function-dax.md)
+- [INFO.PERSPECTIVETABLES](info-perspectivetables-function-dax.md)
+- [INFO.TABLES](info-tables-function-dax.md)

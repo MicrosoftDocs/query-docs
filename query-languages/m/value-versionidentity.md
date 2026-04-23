@@ -4,11 +4,12 @@ title: "Value.VersionIdentity"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Value.VersionIdentity
 
 ## Syntax
 
-<pre> 
+<pre>
 Value.VersionIdentity(<b>value</b> as any) as any
 </pre>
 

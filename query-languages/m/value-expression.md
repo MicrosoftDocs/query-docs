@@ -4,6 +4,7 @@ title: "Value.Expression"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Value.Expression
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Value.Expression(<b>value</b> as any) as nullable record
 </pre>
-  
+
 ## About
 
 Returns an abstract syntax tree (AST) that represents the value's expression.

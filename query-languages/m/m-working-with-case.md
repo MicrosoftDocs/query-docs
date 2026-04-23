@@ -130,13 +130,13 @@ The following example demonstrates how to change all items in a table column to 
 let
     Source = #table(type table [CUSTOMER = text, FRUIT = text],
     {
-        {"Tulga", "Squash"}, 
-        {"suSanna", "Pumpkin"}, 
-        {"LESLIE", "ApPlE"}, 
-        {"Willis", "pear"}, 
-        {"Dilbar", "orange"}, 
-        {"ClaudiA", "APPLE"}, 
-        {"afonso", "Pear"}, 
+        {"Tulga", "Squash"},
+        {"suSanna", "Pumpkin"},
+        {"LESLIE", "ApPlE"},
+        {"Willis", "pear"},
+        {"Dilbar", "orange"},
+        {"ClaudiA", "APPLE"},
+        {"afonso", "Pear"},
         {"SErgio", "pear"}
     }),
     #"Lower Case" = Table.TransformColumns(Source, {"CUSTOMER", Text.Lower})
@@ -154,15 +154,15 @@ The following example demonstrates how to change all items in a table column to 
 
 ```powerquery-m
 let
-    Source = #table(type table [CUSTOMER = text, FRUIT = text], 
+    Source = #table(type table [CUSTOMER = text, FRUIT = text],
     {
-        {"Tulga", "Squash"}, 
-        {"suSanna", "Pumpkin"}, 
-        {"LESLIE", "ApPlE"}, 
-        {"Willis", "pear"}, 
-        {"Dilbar", "orange"}, 
-        {"ClaudiA", "APPLE"}, 
-        {"afonso", "Pear"}, 
+        {"Tulga", "Squash"},
+        {"suSanna", "Pumpkin"},
+        {"LESLIE", "ApPlE"},
+        {"Willis", "pear"},
+        {"Dilbar", "orange"},
+        {"ClaudiA", "APPLE"},
+        {"afonso", "Pear"},
         {"SErgio", "pear"}
     }),
     #"Upper Case" = Table.TransformColumns(Source, {"FRUIT", Text.Upper})
@@ -180,15 +180,15 @@ The following example demonstrates how to change all items in both of the table 
 
 ```powerquery-m
 let
-    Source = #table(type table [CUSTOMER = text, FRUIT = text], 
+    Source = #table(type table [CUSTOMER = text, FRUIT = text],
     {
-        {"Tulga", "Squash"}, 
-        {"suSanna", "Pumpkin"}, 
-        {"LESLIE", "ApPlE"}, 
-        {"Willis", "pear"}, 
-        {"Dilbar", "orange"}, 
-        {"ClaudiA", "APPLE"}, 
-        {"afonso", "Pear"}, 
+        {"Tulga", "Squash"},
+        {"suSanna", "Pumpkin"},
+        {"LESLIE", "ApPlE"},
+        {"Willis", "pear"},
+        {"Dilbar", "orange"},
+        {"ClaudiA", "APPLE"},
+        {"afonso", "Pear"},
         {"SErgio", "pear"}
     }),
     #"Customer Case" = Table.TransformColumns(Source, {"CUSTOMER", Text.Proper}),
@@ -214,8 +214,8 @@ The following example shows how to ignore case when determining if a sentence co
 ```powerquery-m
 let
     Source = Text.Contains(
-        "The rain in spain falls mainly on the plain.", 
-        "Spain", 
+        "The rain in spain falls mainly on the plain.",
+        "Spain",
         Comparer.OrdinalIgnoreCase
     )
 in
@@ -231,9 +231,9 @@ The following example shows how to retrieve the initial position of the last occ
 ```powerquery-m
 let
     Source = Text.PositionOf(
-        "THE RAIN IN SPAIN FALLS MAINLY ON THE PLAIN.", 
-        "the", 
-        Occurrence.Last, 
+        "THE RAIN IN SPAIN FALLS MAINLY ON THE PLAIN.",
+        "the",
+        Occurrence.Last,
         Comparer.OrdinalIgnoreCase
     )
 in
@@ -359,13 +359,13 @@ The following example demonstrates how to select specific rows that contain the 
 let
     Source = #table(type table[CUSTOMER = text, FRUIT = text],
     {
-        {"Tulga", "Squash"}, 
-        {"suSanna", "Pumpkin"}, 
-        {"LESLIE", "ApPlE"}, 
-        {"Willis", "pear"}, 
-        {"Dilbar", "orange"}, 
-        {"ClaudiA", "APPLE"}, 
-        {"afonso", "Pear"}, 
+        {"Tulga", "Squash"},
+        {"suSanna", "Pumpkin"},
+        {"LESLIE", "ApPlE"},
+        {"Willis", "pear"},
+        {"Dilbar", "orange"},
+        {"ClaudiA", "APPLE"},
+        {"afonso", "Pear"},
         {"SErgio", "pear"}
     }),
     #"Select Rows" = Table.SelectRows(
@@ -382,15 +382,15 @@ The following sample shows how to determine if any of the rows in a table contai
 
 ```powerquery-m
 let
-    Source = #table(type table [CUSTOMER = text, FRUIT = text], 
+    Source = #table(type table [CUSTOMER = text, FRUIT = text],
     {
-        {"Tulga", "Squash"}, 
-        {"suSanna", "Pumpkin"}, 
-        {"LESLIE", "ApPlE"}, 
-        {"Willis", "PEAR"}, 
-        {"Dilbar", "orange"}, 
-        {"ClaudiA", "APPLE"}, 
-        {"afonso", "Pear"}, 
+        {"Tulga", "Squash"},
+        {"suSanna", "Pumpkin"},
+        {"LESLIE", "ApPlE"},
+        {"Willis", "PEAR"},
+        {"Dilbar", "orange"},
+        {"ClaudiA", "APPLE"},
+        {"afonso", "Pear"},
         {"SErgio", "peAR"}
         }),
     #"Select Rows" = Table.MatchesAnyRows(Source,
@@ -408,19 +408,19 @@ The following example demonstrates how to take a table with values entered by us
 ```powerquery-m
 let
     // Load a table of user's favorite fruits into Source
-    Source = #table(type table [Fruit = text], {{"blueberries"}, 
-        {"Blue berries are simply the best"}, {"strawberries"}, {"Strawberries = <3"}, 
-        {"Apples"}, {"'sples"}, {"4ppl3s"}, {"Bananas"}, {"fav fruit is bananas"}, 
+    Source = #table(type table [Fruit = text], {{"blueberries"},
+        {"Blue berries are simply the best"}, {"strawberries"}, {"Strawberries = <3"},
+        {"Apples"}, {"'sples"}, {"4ppl3s"}, {"Bananas"}, {"fav fruit is bananas"},
         {"Banas"}, {"My favorite fruit, by far, is Apples. I simply love them!"}}
     ),
     // Create a Cluster column and fuzzy match the fruits into that column
     #"Cluster fuzzy match" = Table.AddFuzzyClusterColumn(
-        Source, "Fruit", "Cluster", 
+        Source, "Fruit", "Cluster",
         [IgnoreCase = true, IgnoreSpace = true, Threshold = 0.5]
     ),
     // Find the distinct fruits from the Cluster column
     #"Ignore cluster case" = Table.Distinct(
-        Table.SelectColumns(#"Cluster fuzzy match", "Cluster"), 
+        Table.SelectColumns(#"Cluster fuzzy match", "Cluster"),
         Comparer.OrdinalIgnoreCase
     ),
     // Set all of the distinct fruit names to lower case
@@ -451,7 +451,7 @@ For example, the following sample has a mixture of all lower case, all upper cas
 
 ```powerquery-m
 let
-    Source = { "Alpha", "Beta", "Zulu", "ALPHA", "gamma", "alpha", 
+    Source = { "Alpha", "Beta", "Zulu", "ALPHA", "gamma", "alpha",
         "beta", "Gamma", "Sierra", "zulu", "GAMMA", "ZULU" },
     SortedList = List.Sort(Source, Order.Ascending)
 in

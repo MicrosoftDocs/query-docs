@@ -6,6 +6,7 @@ ms.custom: nonautomated-date, intro-internal
 ms.topic: language-reference
 ms.subservice: m-background
 ---
+
 # Quick tour of the Power Query M formula language
 
 This quick tour describes creating Power Query M formula language queries.
@@ -25,7 +26,7 @@ let
    #"Variable name" = expression2
 in
    Variablename
-```  
+```
 
 To create an M query in the advanced editor, you follow this basic process:
 
@@ -79,10 +80,10 @@ Let's review each formula step.
 
 1. **Orders**: Create a table with data for Orders.
 
-2. **#"Capitalized Each Word"**: To capitalize each word, you use [Table.TransformColumns](table-transformcolumns.md).
+2. **#"Capitalized Each Word"**: To capitalize each word, you use [`Table.TransformColumns`](table-transformcolumns.md).
 
-3. **in #"Capitalized Each Word"**: Output the table with the first letter of each word capitalized.  
-  
+3. **in #"Capitalized Each Word"**: Output the table with the first letter of each word capitalized.
+
 ## Related content
 
 * [Expressions, values, and let expression](expressions-values-and-let-expression.md)

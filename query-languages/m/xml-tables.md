@@ -4,6 +4,7 @@ title: "Xml.Tables"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Xml.Tables
 
 ## Syntax
@@ -20,7 +21,7 @@ Xml.Tables(
 
 Returns the contents of the XML document as a nested collection of flattened tables.
 
-## Example 1
+## Example
 
 Retrieve the contents of a local XML file.
 

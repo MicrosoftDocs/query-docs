@@ -4,6 +4,7 @@ title: "Date.IsInNextMonth"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.IsInNextMonth
 
 ## Syntax
@@ -11,14 +12,14 @@ ms.topic: reference
 <pre>
 Date.IsInNextMonth(<b>dateTime</b> as any) as nullable logical
 </pre>
-  
+
 ## About
 
 Indicates whether the given datetime value `dateTime` occurs during the next month, as determined by the current date and time on the system. Note that this function will return false when passed a value that occurs within the current month.
 
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
 
-## Example 1
+## Example
 
 Determine if the month after the current system time is in the next month.
 

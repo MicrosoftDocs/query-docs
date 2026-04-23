@@ -4,6 +4,7 @@ title: "Replacer.ReplaceText"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Replacer.ReplaceText
 
 ## Syntax
@@ -15,12 +16,12 @@ Replacer.ReplaceText(
     <b>new</b> as text
 ) as nullable text
 </pre>
-  
+
 ## About
 
-Replaces the `old` text in the original `text` with the `new` text. This replacer function can be used in `List.ReplaceValue` and `Table.ReplaceValue`.
+Replaces the `old` text in the original `text` with the `new` text. This replacer function can be used in [`List.ReplaceValue`](list-replacevalue.md) and [`Table.ReplaceValue`](table-replacevalue.md).
 
-## Example 1
+## Example
 
 Replace the text "hE" with "He" in the string "hEllo world".
 

@@ -4,6 +4,7 @@ title: "BinaryFormat.Double"
 ms.topic: reference
 ms.subservice: m-source
 ---
+
 # BinaryFormat.Double
 
 ## Syntax

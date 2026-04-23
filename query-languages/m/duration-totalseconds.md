@@ -4,6 +4,7 @@ title: "Duration.TotalSeconds"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Duration.TotalSeconds
 
 ## Syntax
@@ -11,12 +12,12 @@ ms.topic: reference
 <pre>
 Duration.TotalSeconds(<b>duration</b> as nullable duration) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the total seconds spanned by `duration`.
 
-## Example 1
+## Example
 
 Find the total seconds spanned by a duration value.
 

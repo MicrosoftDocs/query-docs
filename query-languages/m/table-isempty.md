@@ -4,14 +4,15 @@ title: "Table.IsEmpty"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.IsEmpty
 
 ## Syntax
 
 <pre>
-Table.IsEmpty(<b>table</b> as table) as logical 
+Table.IsEmpty(<b>table</b> as table) as logical
 </pre>
-  
+
 ## About
 
 Indicates whether the `table` contains any rows. Returns `true` if there are no rows (i.e. the table is empty), `false` otherwise.

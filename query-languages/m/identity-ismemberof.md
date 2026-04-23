@@ -4,6 +4,7 @@ title: "Identity.IsMemberOf"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Identity.IsMemberOf
 
 ## Syntax

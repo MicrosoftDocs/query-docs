@@ -4,6 +4,7 @@ title: "Date.EndOfMonth"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.EndOfMonth
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Date.EndOfMonth(<b>dateTime</b> as any) as any
 </pre>
-  
+
 ## About
 
 Returns the end of the month that contains `dateTime`.

@@ -5,6 +5,7 @@ ms.topic: reference
 ms.subservice: m-source
 ms.custom: sfi-ropc-nochange
 ---
+
 # AdoDotNet.DataSource
 
 ## Syntax

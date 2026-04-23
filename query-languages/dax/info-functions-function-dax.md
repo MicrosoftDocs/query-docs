@@ -7,7 +7,7 @@ author: jeroenterheerdt
 
 [!INCLUDE[applies-to-query-only](includes/applies-to-query-only.md)]
 
-Returns information about the functions currently available for use in DAX. This corresponds to the MDSCHEMA_FUNCTIONS schema rowset.
+Returns information about the functions currently available for use in DAX. This corresponds to the MDSCHEMA_FUNCTIONS schema rowset, but returns only DAX (and not MDX) functions by default.
 
 ## Syntax
 
@@ -43,6 +43,8 @@ A table with the following columns:
 
 - The result can vary by engine version and compatibility level.
 - Permissions required depend on the host. Querying full metadata may require model admin permissions.
+- Possible values for [ORIGIN] are 1 (MSOLAP), 2 (UDF), 3 (RELATIONAL), 4 (SCALAR).
+- If the [ORIGIN] restriction is not specified, it defaults to 3 (RELATIONAL) or 4 (SCALAR).
 
 ## Example
 
@@ -72,7 +74,7 @@ ORDER BY [Function Name]
 ```
 ## See also
 
-[INFO.TABLES](info-tables-function-dax.md)
-[INFO.COLUMNS](info-columns-function-dax.md)
-[INFO.MEASURES](info-measures-function-dax.md)
-[INFO functions overview](info-functions-dax.md)
+- [INFO.TABLES](info-tables-function-dax.md)
+- [INFO.COLUMNS](info-columns-function-dax.md)
+- [INFO.MEASURES](info-measures-function-dax.md)
+- [INFO functions overview](info-functions-dax.md)

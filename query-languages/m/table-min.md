@@ -4,6 +4,7 @@ title: "Table.Min"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Min
 
 ## Syntax
@@ -15,7 +16,7 @@ Table.Min(
     optional <b>default</b> as any
 ) as any
 </pre>
-  
+
 ## About
 
 Returns the smallest row in the `table`, given the `comparisonCriteria`. If the table is empty, the optional `default` value is returned.

@@ -4,6 +4,7 @@ title: "Table.ContainsAll"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ContainsAll
 
 ## Syntax
@@ -15,7 +16,7 @@ Table.ContainsAll(
     optional <b>equationCriteria</b> as any
 ) as logical
 </pre>
-  
+
 ## About
 
 Indicates whether all the specified records in the list of records `rows`, appear as rows in the `table`. An optional parameter `equationCriteria` may be specified to control comparison between the rows of the table.

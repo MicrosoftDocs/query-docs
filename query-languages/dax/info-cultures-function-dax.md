@@ -78,8 +78,8 @@ EVALUATE
 ```
 ## See also
 
-[INFO.OBJECTTRANSLATIONS](info-objecttranslations-function-dax.md)
-[INFO.LINGUISTICMETADATA](info-linguisticmetadata-function-dax.md)
-[INFO.TABLES](info-tables-function-dax.md)
-[INFO.COLUMNS](info-columns-function-dax.md)
-[INFO.MEASURES](info-measures-function-dax.md)
+- [INFO.OBJECTTRANSLATIONS](info-objecttranslations-function-dax.md)
+- [INFO.LINGUISTICMETADATA](info-linguisticmetadata-function-dax.md)
+- [INFO.TABLES](info-tables-function-dax.md)
+- [INFO.COLUMNS](info-columns-function-dax.md)
+- [INFO.MEASURES](info-measures-function-dax.md)

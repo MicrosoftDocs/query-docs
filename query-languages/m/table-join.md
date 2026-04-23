@@ -4,6 +4,7 @@ title: "Table.Join"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.Join
 
 ## Syntax
@@ -26,14 +27,14 @@ Joins the rows of `table1` with the rows of `table2` based on the equality of th
 
 By default, an inner join is performed, however an optional `joinKind` may be included to specify the type of join. Options include:
 
-* [JoinKind.Inner](joinkind-type.md)
-* [JoinKind.LeftOuter](joinkind-type.md)
-* [JoinKind.RightOuter](joinkind-type.md)
-* [JoinKind.FullOuter](joinkind-type.md)
-* [JoinKind.LeftAnti](joinkind-type.md)
-* [JoinKind.RightAnti](joinkind-type.md)
-* [JoinKind.LeftSemi](joinkind-type.md)
-* [JoinKind.RightSemi](joinkind-type.md)
+* [`JoinKind.Inner`](joinkind-type.md)
+* [`JoinKind.LeftOuter`](joinkind-type.md)
+* [`JoinKind.RightOuter`](joinkind-type.md)
+* [`JoinKind.FullOuter`](joinkind-type.md)
+* [`JoinKind.LeftAnti`](joinkind-type.md)
+* [`JoinKind.RightAnti`](joinkind-type.md)
+* [`JoinKind.LeftSemi`](joinkind-type.md)
+* [`JoinKind.RightSemi`](joinkind-type.md)
 
 An optional set of `keyEqualityComparers` may be included to specify how to compare the key columns. This parameter is currently intended for internal use only.
 
@@ -82,7 +83,7 @@ Table.FromRecords({
 
 Join two tables that have conflicting column names, using multiple key columns.
 
-**Usage** 
+**Usage**
 
 ```powerquery-m
 let
@@ -103,6 +104,8 @@ in
         {"Order.TenantID", "Order.CustomerID"}
     )
 ```
+
+**Output**
 
 ```powerquery-m
 Table.FromRecords({
