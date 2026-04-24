@@ -21,7 +21,7 @@ Table.AddJoinColumn(
 
 ## About
 
-Joins the rows of `table1` with the rows of `table2` based on the equality of the values of the key columns selected by `key1` (for `table1`) and `key2` (for `table2`). The results are entered into the column named `newColumnName`. 
+Joins the rows of `table1` with the rows of `table2` based on the equality of the values of the key columns selected by `key1` (for `table1`) and `key2` (for `table2`). The results are stored in a column named `newColumnName`.
 
 This function behaves identically to [`Table.NestedJoin`](table-nestedjoin.md) with a JoinKind of LeftOuter.
 
