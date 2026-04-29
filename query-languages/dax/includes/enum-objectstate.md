@@ -1,6 +1,6 @@
 ---
-author: jeroenterheerdt
-ms.author: Jeroen ter Heerdt
+author: DataZoeMS
+ms.author: zoedouglas
 ms.date: 03/17/2025
 ms.topic: include
 ms.service: powerbi
