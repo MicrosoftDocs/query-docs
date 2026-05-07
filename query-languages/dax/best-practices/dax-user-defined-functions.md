@@ -628,7 +628,7 @@ IntelliSense Support:
 - Although UDFs can be used in live connect or composite models, there is no IntelliSense support.
 - Although UDFs can be used in visual calculations, the visual calculations formula bar does not have IntelliSense support for UDFs.
 - TMDL View has limited IntelliSense support for UDFs.
-- [SQL Server Management Studio](https://learn.microsoft.com/en-us/ssms/sql-server-management-studio-ssms) does not have IntelliSense support for UDFs.
+- [SQL Server Management Studio](/ssms/sql-server-management-studio-ssms) does not have IntelliSense support for UDFs.
 
 ### Known bugs
 
