@@ -272,7 +272,7 @@ Subtypes are:
 
 ### ParameterMode
 
-ParameterMode controls when and where the parameter expression is evaluated. These are:
+ParameterMode (also called **parameter passing mode** or simply **parameter mode**) controls when and where the parameter expression is evaluated. These are:
 - **`val` (eager evaluation)**: The expression is evaluated once before invoking the function. The resulting value is then passed into the function. This is common for simple scalar or table inputs. This is the default if you omit parameterMode for a parameter.
 - **`expr` (lazy evaluation)**: The expression is evaluated inside the function, potentially in a different context (e.g. row context or filter context) and possibly multiple times if referenced multiple times or inside iterations. This is required for reference parameters and useful when you need to control evaluation context.
 
@@ -289,16 +289,16 @@ The following table summarizes the effective/allowed parameterMode:
 | `AnyRef` | `expr` | Not allowed | `expr` |
 | `CalendarRef`, `ColumnRef`, `MeasureRef`, `TableRef` | `expr` | Not allowed | `expr` |
 
+An `expr` parameter is evaluated lazily within the function body, so it inherits only the filter context. In contrast, a `val` parameter is evaluated eagerly before entering the function body, and therefore inherits both the row context and the filter context of the caller.
 
 ### Default expression
 
 When you assign a default expression to a parameter using `= <DefaultExpression>`, that parameter becomes optional. The caller can omit the argument, and the default expression is used as the argument value. The following behaviors apply:
 
 - **Position**: Optional parameters can appear in any position. Required parameters can come after optional ones because callers can leave an argument empty to use the default expression (e.g., `MyFunc(1,,3)` omits the second argument). However, the minimum number of arguments (arity) of the function is determined by the position of the rightmost required parameter. For example, if a function has three parameters and only the second is optional, callers must still supply at least three arguments.
-- **Context**: Like the function expression body, a default expression inherits the filter context of the caller but does not inherit the row context.
+- **Context**: Whether the filter context and row context are inherited is determined by the parameter mode of the parameter associated with the default expression.
 - **Scope**: A default expression can only refer to names (columns, tables, measures, variables, functions, etc.) that are visible at the point where the UDF is defined, not where it is called. It cannot refer to another optional parameter in the UDF.
 - **Type**: Type checking against the parameter's type hint is only enforced when the default expression is used. If a caller provides an explicit argument, the type hint is applied against that argument instead.
-
 
 ### Example: Type casting
 
