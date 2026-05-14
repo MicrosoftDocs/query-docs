@@ -225,7 +225,7 @@ EVALUATE
 
 ## Parameters
 
-DAX UDFs can accept zero or more parameters. When you define parameters for a UDF, you can optionally specify type hints for each parameter:
+DAX UDFs support between 0 and 256 parameters. When you define parameters for a UDF, you can optionally specify type hints for each parameter:
 - **Type**: what type of value the parameter accepts (`AnyVal`, `Scalar`, `Table`, `AnyRef`, `CalendarRef`, `ColumnRef`, `MeasureRef` or `TableRef`).
 - **Subtype** (only for scalar type): the specific scalar data type (`Variant`, `Int64`, `Decimal`, `Double`, `String`, `DateTime`, `Boolean`, or `Numeric`). 
 - **ParameterMode**: when the argument is evaluated (`val` or `expr`).
@@ -630,6 +630,7 @@ IntelliSense Support:
 - Although UDFs can be used in live connect or composite models, there is no IntelliSense support.
 - Although UDFs can be used in visual calculations, the visual calculations formula bar does not have IntelliSense support for UDFs.
 - TMDL View has limited IntelliSense support for UDFs.
+- [SQL Server Management Studio](/ssms/sql-server-management-studio-ssms) does not have IntelliSense support for UDFs.
 
 ### Known bugs
 
