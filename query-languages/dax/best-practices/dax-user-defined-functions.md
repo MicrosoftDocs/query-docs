@@ -234,7 +234,7 @@ EVALUATE
 
 ## Parameters
 
-DAX UDFs can accept zero or up to 256 parameters. When you define parameters for a UDF, you can optionally specify type hints for each parameter:
+DAX UDFs support between 0 and 256 parameters. When you define parameters for a UDF, you can optionally specify type hints for each parameter:
 - **Type**: what type of value the parameter accepts (`AnyVal`, `Scalar`, `Table`, `AnyRef`, `CalendarRef`, `ColumnRef`, `MeasureRef` or `TableRef`).
 - **Subtype** (only for scalar type): the specific scalar data type (`Variant`, `Int64`, `Decimal`, `Double`, `String`, `DateTime`, `Boolean`, or `Numeric`). 
 - **ParameterMode**: when the argument is evaluated (`val` or `expr`).
