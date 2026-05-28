@@ -7,16 +7,12 @@ ms.topic: reference
 
 # ODataOmitValues.Type
 
-## Definition
+## About
 
 Specifies the kinds of values an OData service can omit.
 
 ## Allowed values
 
 |Name|Value|Description|
-| ------- | --- | ----------- |
-|**ODataOmitValues.Nulls**|"nulls"|Allows the OData service to omit null values.|
-
-## Applies to
-
-* [Accessing data functions](accessing-data-functions.md)
+|---|---|---|
+|`ODataOmitValues.Nulls`|"nulls"|Allows the OData service to omit null values.|

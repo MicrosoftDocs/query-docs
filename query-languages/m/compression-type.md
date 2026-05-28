@@ -7,22 +7,18 @@ ms.topic: reference
 
 # Compression.Type
 
-## Definition
+## About
 
 Specifies the type of compression.
 
 ## Allowed values
 
 |Name|Value|Description|
-| ------- | -- | --------- |
-|**Compression.None**|-1|The data is uncompressed.|
-|**Compression.GZip**|0|The compressed data is in the 'GZip' format.|
-|**Compression.Deflate**|1|The compressed data is in the 'Deflate' format.|
-|**Compression.Snappy**|2|The compressed data is in the 'Snappy' format.|
-|**Compression.Brotli**|3|The compressed data is in the 'Brotli' format.|
-|**Compression.LZ4**|4|The compressed data is in the 'LZ4' format.|
-|**Compression.Zstandard**|5|The compressed data is in the 'Zstandard' format.|
-
-## Applies to
-
-* [Binary functions](binary-functions.md)
+|---|---|---|
+|`Compression.None`|-1|The data is uncompressed.|
+|`Compression.GZip`|0|The compressed data is in the 'GZip' format.|
+|`Compression.Deflate`|1|The compressed data is in the 'Deflate' format.|
+|`Compression.Snappy`|2|The compressed data is in the 'Snappy' format.|
+|`Compression.Brotli`|3|The compressed data is in the 'Brotli' format.|
+|`Compression.LZ4`|4|The compressed data is in the 'LZ4' format.|
+|`Compression.Zstandard`|5|The compressed data is in the 'Zstandard' format.|
