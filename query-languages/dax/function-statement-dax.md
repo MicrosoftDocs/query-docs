@@ -12,7 +12,7 @@ Introduces a function definition in a DEFINE statement of a [DAX query](dax-quer
 ```dax
 [DEFINE 
     (
-      FUNCTION <function name> = ([parameter name] : [parameter type] [parameter subtype] [parameter passing mode], ...) => <function body>
+      FUNCTION <function name> = ([<parameter name> [: [<type>] [<subtype>] [<passing mode>]] [= <default expression>], ...]) => <function body>
     ) + 
 ]
 
@@ -23,11 +23,12 @@ Introduces a function definition in a DEFINE statement of a [DAX query](dax-quer
 
 |Term|Definition|
 |---------|---------|
-|`function name`|The name of a function.|
-|`parameter name`|The name of the parameter. This cannot be a reserved keyword such as `measure`.|
-|`parameter type`|`anyval`, `scalar`, `table` or `anyref`. `Anyval` is an abstract type for `scalar` or `table`. `Anyref` is an abstract type for all references.| 
-|`parameter subtype`|applies only to `parameter type` = `scalar`. Can be one of the following: `boolean`, `datetime`, `decimal`, `double`, `int64`, `numeric`, `string`, `variant`.|
-|`parameter passing mode`|`val` (eargerly evaluated) or `expr` (lazily evaluated).|
+|`function name`| The name of a function.|
+|`parameter name`| The name of the parameter. This cannot be a reserved keyword such as `measure`.|
+|`type`| The parameter type. Can be one of the following: `ANYVAL`, `SCALAR`, `TABLE`, `ANYREF`, `CALENDARREF`, `COLUMNREF`, `MEASUREREF`, `TABLEREF`. `ANYVAL` is an abstract type for `SCALAR` or `TABLE`. `ANYREF` is an abstract type for all references.|
+|`subtype`| The parameter subtype. Applies only to `parameter type` = `SCALAR`. Can be one of the following: `BOOLEAN`, `DATETIME`, `DECIMAL`, `DOUBLE`, `INT64`, `NUMERIC`, `STRING`, `VARIANT`.|
+|`passing mode`| The parameter passing mode. Can be `VAL` (eagerly evaluated) or `EXPR` (lazily evaluated).|
+|`default expression`| A DAX expression used when the argument is omitted by the caller. Makes the parameter optional.|
 |`function body`| A DAX expression for the function.  |
 
 ## Return value
