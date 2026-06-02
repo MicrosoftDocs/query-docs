@@ -8,21 +8,11 @@ ms.service: powerbi
 ms.subservice: dax
 ---
 
-# DAX user-defined functions (preview)
+# DAX user-defined functions
 
-> [!NOTE]
-> DAX user-defined functions are currently in **preview**.
+DAX user-defined functions (UDFs) let you package DAX logic and reuse it like any other DAX function. UDFs introduce a new `FUNCTION` keyword, support [parameters](#parameters) (scalar, table, and references) with optional default expressions, and include [type checking](#type-checking) helpers that make authoring safer and clearer. After you [define a UDF](#define-and-manage-user-defined-functions), you can use it in a [measure](#calling-a-udf-in-a-measure), [calculated column](#calling-a-udf-in-a-calculated-column), [visual calculation](#calling-a-udf-in-a-visual-calculation), or even other [user-defined functions](#calling-a-udf-in-another-udf). Users can centralize business rules, improve maintainability, and evolve calculations safely over time. Functions are first-class model objects you can create and manage in [DAX query view](/power-bi/transform-model/dax-query-view) and [TMDL view](/power-bi/transform-model/desktop-tmdl-view), and they can be viewed in [Model explorer](/power-bi/transform-model/model-explorer) under the *Functions* node.
 
-DAX user-defined functions (UDFs) let you package DAX logic and reuse it like any other DAX function. UDFs introduce a new `FUNCTION` keyword, optional [parameters](#parameters) (scalar, table, and references), and [type checking](#type-checking) helpers that make authoring safer and clearer. After you [define a UDF](#define-and-manage-user-defined-functions), you can use it in a [measure](#calling-a-udf-in-a-measure), [calculated column](#calling-a-udf-in-a-calculated-column), [visual calculation](#calling-a-udf-in-a-visual-calculation), or even other [user-defined functions](#calling-a-udf-in-another-udf). Users can centralize business rules, improve maintainability, and evolve calculations safely over time. Functions are first-class model objects you can create and manage in [DAX query view](/power-bi/transform-model/dax-query-view) and [TMDL view](/power-bi/transform-model/desktop-tmdl-view), and they can be viewed in [Model explorer](/power-bi/transform-model/model-explorer) under the *Functions* node.
-
-
-## Enable user-defined functions
-
-To try UDFs in Desktop:
-1. Go to **File > Options and settings > Options**.
-2. Select **Preview features** and check **DAX user-defined functions**.
-3. Select **OK** and **restart** Power BI Desktop.
-
+DAX UDFs require database compatibility level 1702 or higher and the feature is generally available in Power BI Desktop and Power BI Service as of the June 2026 release.
 
 ## Define and manage user-defined functions
 
@@ -56,8 +46,8 @@ DEFINE
     /// Optional description above the function
     /// @param {ParameterType} ParameterName - ParameterDescription
     /// ...
-    /// @returns ReturnDescription
-    FUNCTION <FunctionName> = ( [ParameterName]: [ParameterType], ... ) => <FunctionBody>
+    /// @returns Return description
+    FUNCTION <FunctionName> = ( [<ParameterName> [: [<ParameterType>] [<ParameterSubtype>] [<ParameterPassingMode>]] [= <DefaultExpression>], ...] ) => <FunctionBody>
 ```
 
 > [!TIP]
@@ -69,10 +59,11 @@ DEFINE
 DEFINE
     /// AddTax takes in amount and returns amount including tax
     /// @param {NUMERIC} amount - The pre-tax value to which tax will be applied
+    /// @param {NUMERIC} [taxRate] - Optional tax rate to apply, default is 0.1 (10%)
     /// @returns The amount including 10% tax
     FUNCTION AddTax = 
-        ( amount : NUMERIC ) =>
-            amount * 1.1
+        ( amount : NUMERIC, taxRate : NUMERIC = 0.1 ) =>
+            amount * ( 1 + taxRate )
 
 EVALUATE
 { AddTax ( 10 ) }
@@ -99,7 +90,7 @@ You can define and/or update user-defined functions in TMDL view. For additional
 ```tmdl
 createOrReplace
     /// Optional description above the function
-    function <FunctionName> = ( [ParameterName]: [ParameterType], ... ) => <FunctionBody>
+    function <FunctionName> = ( [<ParameterName> [: <ParameterType>] [= <DefaultExpression>], ...] ) => <FunctionBody>
 ```
 
 
@@ -243,17 +234,19 @@ Type hints are in the form: `[type] [subtype] [parameterMode]`
 
 You can include all, some, or none of these type hints for each parameter to make your functions safer and more predictable at call sites. If you omit everything and just write the parameter name it behaves as `AnyVal val`, meaning the argument is evaluated immediately at call time. This is useful for simple functions.
 
+You can also make the parameter an optional parameter by including a default expression using `= <DefaultExpression>`. This means the caller can choose to omit the argument, and if they do, the default expression will be used as the argument value.
+
 
 ### Type
 
 Type defines the category of argument your parameter accepts and whether it is passed as a **value** or an **expression**.
 
 There are two type families in DAX UDF parameters: **value types** and **expression types**:
-- **Value types**: this argument is **evaluated immediately** (eager evaluation) when the function is called and the resulting value is passed into the function.
+- **Value types**: This argument is **evaluated immediately** (eager evaluation) when the function is called and the resulting value is passed into the function.
     - **`AnyVal`**: Accepts a scalar or a table. This is the default if you omit type for a parameter.
     - **`Scalar`**: Accepts a scalar value (can additionally add a subtype).
     - **`Table`**: Accepts a table.
-- **Expression types**: this argument passes an **unevaluated expression** (lazy evaluation). The function decides when and in what context to evaluate it. This is required for reference parameters and useful when you need to control filter context (e.g. inside [CALCULATE](../calculate-function-dax.md)). `expr` types can be references to a column, table, calendar, or measure.
+- **Expression types**: This argument passes an **unevaluated expression** (lazy evaluation). The function decides when and in what context to evaluate it. This is required for reference parameters and useful when you need to control filter context (e.g. inside [CALCULATE](../calculate-function-dax.md)). `expr` types can be references to a column, table, calendar, or measure.
     - **`AnyRef`**: Accepts any reference. It's the equivalent to not specifying an expression type.
     - **`CalendarRef`**: Accepts a reference to a calendar.
     - **`ColumnRef`**: Accepts a reference to a column.
@@ -268,7 +261,7 @@ Subtype lets you define a specific `Scalar` data type. If you define a subtype, 
 
 Subtypes are:
 - **`Variant`**: Accepts any scalar.
-- **`Int64`**: Accepts a whole numner.
+- **`Int64`**: Accepts a whole number.
 - **`Decimal`**: Accepts a fixed-precision decimal (such as Currency or Money).
 - **`Double`**: Accepts a floating-point decimal.
 - **`String`**: Accepts text.
@@ -279,7 +272,7 @@ Subtypes are:
 
 ### ParameterMode
 
-ParameterMode controls when and where the parameter expression is evaluated. These are:
+ParameterMode (also called **parameter passing mode** or simply **parameter mode**) controls when and where the parameter expression is evaluated. These are:
 - **`val` (eager evaluation)**: The expression is evaluated once before invoking the function. The resulting value is then passed into the function. This is common for simple scalar or table inputs. This is the default if you omit parameterMode for a parameter.
 - **`expr` (lazy evaluation)**: The expression is evaluated inside the function, potentially in a different context (e.g. row context or filter context) and possibly multiple times if referenced multiple times or inside iterations. This is required for reference parameters and useful when you need to control evaluation context.
 
@@ -295,6 +288,17 @@ The following table summarizes the effective/allowed parameterMode:
 | `Scalar`, `Table` | `val` | `val` | `expr` |
 | `AnyRef` | `expr` | Not allowed | `expr` |
 | `CalendarRef`, `ColumnRef`, `MeasureRef`, `TableRef` | `expr` | Not allowed | `expr` |
+
+An `expr` parameter is evaluated lazily within the function body, so it inherits only the filter context. In contrast, a `val` parameter is evaluated eagerly before entering the function body, and therefore inherits both the row context and the filter context of the caller.
+
+### Default expression
+
+When you assign a default expression to a parameter using `= <DefaultExpression>`, that parameter becomes optional. The caller can omit the argument, and the default expression is used as the argument value. The following behaviors apply:
+
+- **Position**: Optional parameters can appear in any position. Required parameters can come after optional ones because callers can leave an argument empty to use the default expression (e.g., `MyFunc(1,,3)` omits the second argument). However, the minimum number of arguments (arity) of the function is determined by the position of the rightmost required parameter. For example, if a function has three parameters and only the second is optional, callers must still supply at least three arguments.
+- **Context**: Whether the filter context and row context are inherited is determined by the parameter mode of the parameter associated with the default expression.
+- **Scope**: A default expression can only refer to names (columns, tables, measures, variables, functions, etc.) that are visible at the point where the UDF is defined, not where it is called. It cannot refer to another optional parameter in the UDF.
+- **Type**: Type checking against the parameter's type hint is only enforced when the default expression is used. If a caller provides an explicit argument, the type hint is applied against that argument instead.
 
 ### Example: Type casting
 
@@ -595,7 +599,7 @@ An example result can be seen in the screenshot below.
 
 ## Considerations and limitations
 
-User-defined functions are currently in preview, and during preview, please be aware of the following considerations and limitations:
+User-defined functions have the following limitations:
 
 General:
 - Cannot author or model DAX UDFs in Service.
@@ -604,22 +608,20 @@ General:
 - No 'create function' button in the ribbon.
 - Cannot combine UDFs with translations.
 - UDFs are not supported in models without tables.
-- [Object-Level Security (OLS)](/fabric/security/service-admin-object-level-security) does not transfer to functions or vise versa. For example, consider the following function `F` that refers to secured measure `MyMeasure`:
+- [Object-Level Security (OLS)](/fabric/security/service-admin-object-level-security) does not transfer to functions or vice versa. For example, consider the following function `F` that refers to secured measure `MyMeasure`:
     ```dax
     function F = () => [MyMeasure] + 42
     ```
 
     when the `MyMeasure` is secured using object-level security, function F is not secured automatically. If `F` runs under an identity without access to `MyMeasure`, it acts as if `MyMeasure` doesn’t exist. We recommend to avoid revealing secure objects in function names and descriptions.
 - Formula fix-up and dependency calculation are supported, with a known limitation around unqualified names. Because unqualified names are interpreted as measure references, they cannot be reliably fixed or included in dependency tracking when they are intended to refer to columns. An unqualified name is an object reference that does not include a table prefix.
-- `CalendarRef`, `ColumnRef`, `MeasureRef` and `TableRef` type hints may not be accepted at all function callsites while we are in preview. User can fallback to `AnyRef`.
 
 Defining a UDF:
 - Recursion or mutual recursion is not supported.
 - Function overloading is not supported.
-- Explicit return types not supported.
+- Explicit return type is not supported.
 
 UDF parameters:
-- Optional parameters are not supported.
 - Parameter descriptions are not supported.
 - UDFs cannot return an `enum` value. Built-in functions that accept `enum` values as their function parameters will not be able to use UDFs in that context.
 - Unbound parameters of type hint `expr` are not evaluated.
@@ -634,6 +636,7 @@ IntelliSense Support:
 
 The following issues are currently known and may impact functionality:
 - Certain advanced scenarios involving UDFs can result in parser inconsistencies. For example, users may see red underlines or validation errors when passing columns as `expr` parameters or using unqualified column references.
+- `CalendarRef`, `ColumnRef`, `MeasureRef` and `TableRef` type hints may not be accepted at all function call sites. Users can fallback to `AnyRef`.
 
 ## Related content
 
