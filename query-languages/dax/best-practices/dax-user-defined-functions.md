@@ -1,5 +1,5 @@
 ---
-title: "Use DAX user-defined functions (preview)"
+title: "Use DAX user-defined functions"
 description: Best practices for using DAX user-defined functions.
 author: hsteffens30
 ms.topic: best-practice
