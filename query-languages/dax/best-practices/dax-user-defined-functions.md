@@ -605,7 +605,6 @@ General:
 - Cannot author or model DAX UDFs in Service.
 - Cannot hide/unhide a UDF in the model.
 - Cannot put UDFs in display folders.
-- No 'create function' button in the ribbon.
 - Cannot combine UDFs with translations.
 - UDFs are not supported in models without tables.
 - [Object-Level Security (OLS)](/fabric/security/service-admin-object-level-security) does not transfer to functions or vice versa. For example, consider the following function `F` that refers to secured measure `MyMeasure`:
