@@ -30,6 +30,10 @@ N/A. See remarks.
 
 - REMOVEFILTERS can only be used to clear filters but not to return a table.
 
+- If multiple columns are specified, they must be from the same column.
+
+- If a single solumn is specified, and the target column is sorted by another column, both columns must be included as arguments. This is because DAX includes both columns in the underlying query, so the inclusion of the sort by column adds the filters back in, as described in [this article](https://www.sqlbi.com/blog/marco/2018/05/04/removing-column-filter-in-power-bi-when-sort-by-column-is-active/) on :::no-loc text="sql.bi.com":::.
+
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example 1
