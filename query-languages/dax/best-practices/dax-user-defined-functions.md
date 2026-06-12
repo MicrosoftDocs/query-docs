@@ -602,7 +602,6 @@ An example result can be seen in the screenshot below.
 User-defined functions have the following limitations:
 
 General:
-- Cannot author or model DAX UDFs in Service.
 - Cannot hide/unhide a UDF in the model.
 - Cannot put UDFs in display folders.
 - Cannot combine UDFs with translations.
@@ -628,14 +627,9 @@ UDF parameters:
 IntelliSense Support:
 - Although report-based measures in a live connect report can refer to UDFs declared in the source model, there is no IntelliSense support. Model-based measures in a composite model cannot refer to UDFs declared in the source model.
 - Although UDFs can be used in visual calculations, the visual calculations formula bar does not have IntelliSense support for UDFs.
-- TMDL View has limited IntelliSense support for UDFs.
+- TMDL Extension for Visual Studio Code has limited IntelliSense support for UDFs.
 - [SQL Server Management Studio](/ssms/sql-server-management-studio-ssms) does not have IntelliSense support for UDFs.
-
-### Known bugs
-
-The following issues are currently known and may impact functionality:
-- Certain advanced scenarios involving UDFs can result in parser inconsistencies. For example, users may see red underlines or validation errors when passing columns as `expr` parameters or using unqualified column references.
-- `CalendarRef`, `ColumnRef`, `MeasureRef` and `TableRef` type hints may not be accepted at all function call sites. Users can fallback to `AnyRef`.
+- Certain advanced usages of UDFs can result in parser inconsistencies. For example, users may see red underlines or validation errors when passing columns as `expr` parameters or using unqualified column references.
 
 ## Related content
 
