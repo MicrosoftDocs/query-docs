@@ -602,7 +602,6 @@ An example result can be seen in the screenshot below.
 User-defined functions have the following limitations:
 
 General:
-- Cannot author or model DAX UDFs in Service.
 - Cannot hide/unhide a UDF in the model.
 - Cannot put UDFs in display folders.
 - Cannot combine UDFs with translations.
