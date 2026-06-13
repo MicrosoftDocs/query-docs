@@ -238,7 +238,7 @@ These functions return a table or manipulate existing tables. For example, by us
 
 ### User-defined functions
 
-DAX user-defined functions (UDFs) are a powerful feature that lets you define reusable logic with parameters, just like functions in traditional programming languages. With UDFs, you can write a function once and reuse it across measures, calculated columns, visual calculations, and even other UDFs. This makes your DAX code easier to maintain, debug, and share. To learn more, see [DAX user-defined functions (preview)](best-practices/dax-user-defined-functions.md).
+DAX user-defined functions (UDFs) are a powerful feature that lets you define reusable logic with parameters, just like functions in traditional programming languages. With UDFs, you can write a function once and reuse it across measures, calculated columns, visual calculations, and even other UDFs. This makes your DAX code easier to maintain, debug, and share. To learn more, see [DAX user-defined functions](best-practices/dax-user-defined-functions.md).
 
 ## Variables
 
