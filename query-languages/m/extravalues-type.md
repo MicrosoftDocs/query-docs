@@ -7,19 +7,19 @@ ms.topic: reference
 
 # ExtraValues.Type
 
-## Definition
+## About
 
-Specifies the expected action for extra values in a row that contains columns less than expected.
+Specifies the expected action for extra values in a row that contains columns more than expected.
 
 ## Allowed values
 
 |Name|Value|Description|
-| ------- | --- | ----------- |
-|**ExtraValues.List**|0|If the splitter function returns more columns than the table expects, they should be collected into a list.|
-|**ExtraValues.Error**|1| If the splitter function returns more columns than the table expects, an error should be raised.|
-|**ExtraValues.Ignore**|2|If the splitter function returns more columns than the table expects, they should be ignored.|
+|---|---|---|
+|`ExtraValues.List`|0|If the splitter function returns more columns than the table expects, they should be collected into a list.|
+|`ExtraValues.Error`|1|If the splitter function returns more columns than the table expects, an error should be raised.|
+|`ExtraValues.Ignore`|2|If the splitter function returns more columns than the table expects, they should be ignored.|
 
-## Applies to
+## Related content
 
 * [Accessing data functions](accessing-data-functions.md)
 * [Table functions](table-functions.md)
