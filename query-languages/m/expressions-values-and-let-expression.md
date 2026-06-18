@@ -10,7 +10,7 @@ ms.subservice: m-background
 
 # Expressions, values, and let expression
 
-A Power Query M formula language query is composed of formula **expression** steps that create a mashup query. A formula expression can be evaluated (computed), yielding a value. The **let** expression encapsulates a set of values to be computed, assigned names, and then used in a subsequent expression that follows the **in** statement. For example, a let expression could contain a **Source** variable that equals the value of [Text.Proper](text-proper.md) and yields a text value in proper case.
+A Power Query M formula language query is composed of formula **expression** steps that create a mashup query. A formula expression can be evaluated (computed), yielding a value. The **let** expression encapsulates a set of values to be computed, assigned names, and then used in a subsequent expression that follows the **in** statement. For example, a let expression could contain a **Source** variable that equals the value of [`Text.Proper`](text-proper.md) and yields a text value in proper case.
 
 ## Let expression
 
@@ -139,7 +139,7 @@ in
 
 ### Table
 
-A *Table* is a set of values organized into named columns and rows. The column type can be implicit or explicit. You can use [#table](sharptable.md) to create a list of column names and list of rows. A Table of values is a List in a [List](#list). The curly brace characters { } are also used to retrieve a row from a Table by index position (go to [Example 3 - Get a row from a table by index position](#example-3---get-a-row-from-a-table-by-index-position)).
+A *Table* is a set of values organized into named columns and rows. The column type can be implicit or explicit. You can use [`#table`](sharptable.md) to create a list of column names and list of rows. A Table of values is a List in a [List](#list). The curly brace characters { } are also used to retrieve a row from a Table by index position (go to [Example 3 - Get a row from a table by index position](#example-3---get-a-row-from-a-table-by-index-position)).
 
 #### Example 1 - Create a table with implicit column types
 

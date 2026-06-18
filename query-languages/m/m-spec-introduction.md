@@ -242,7 +242,7 @@ For values that already carry a non-empty metadata record, the result of applyin
 "Mozart" meta ([ Rating = 5 ] & [ Tags = {"Classical"} ])
 ```
 
-A metadata record can be accessed for a given value using the [Value.Metadata](value-metadata.md) function. In the following example, the expression in the `ComposerRating` field accesses the metadata record of the value in the `Composer` field, and then accesses the `Rating` field of the metadata record.
+A metadata record can be accessed for a given value using the [`Value.Metadata`](value-metadata.md) function. In the following example, the expression in the `ComposerRating` field accesses the metadata record of the value in the `Composer` field, and then accesses the `Rating` field of the metadata record.
 
 ```powerquery-m
 [
