@@ -433,14 +433,14 @@ To include a sequence of whole number in a list, the `a..b` form can be used:
 { 1, 5..9, 11 }     // { 1, 5, 6, 7, 8, 9, 11 }
 ```
 
-The number of items in a list, known as the _list count_, can be determined using the `List.Count` function.
+The number of items in a list, known as the _list count_, can be determined using the [`List.Count`](list-count.md) function.
 
 ```powerquery-m
 List.Count({true, false})  // 2
 List.Count({})             // 0
 ```
 
-A list may effectively have an infinite number of items; `List.Count` for such lists is undefined and may either raise an error or not terminate.
+A list may effectively have an infinite number of items; [`List.Count`](list-count.md) for such lists is undefined and may either raise an error or not terminate.
 
 If a list contains no items, it is called an _empty list_. An empty list is written as:
 
@@ -532,7 +532,7 @@ Record.FieldNames([ x = 1, y = 2 ]) // [ "x", "y" ]
 Record.FieldNames([ y = 1, x = 2 ]) // [ "y", "x" ]
 ```
 
-The number of fields in a record can be determined using the `Record.FieldCount` function. For example:
+The number of fields in a record can be determined using the [`Record.FieldCount`](record-fieldcount.md) function. For example:
 
 ```powerquery-m
 Record.FieldCount([ x = 1, y = 2 ])  // 2

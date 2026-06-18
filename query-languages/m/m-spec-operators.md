@@ -168,7 +168,7 @@ Every value has an associated record value that can carry additional information
 
 A metadata record is just a regular record and can contain any fields and values that a regular record can, and itself has a metadata record. Associating a metadata record with a value is "non-intrusive". It does not change the value's behavior in evaluations except for those that explicitly inspect metadata records.
 
-Every value has a default metadata record, even if one has not been specified. The default metadata record is empty. The following examples show accessing the metadata record of a text value using the `Value.Metadata` standard library function:
+Every value has a default metadata record, even if one has not been specified. The default metadata record is empty. The following examples show accessing the metadata record of a text value using the [`Value.Metadata`](value-metadata.md) standard library function:
 
 ```powerquery-m
 Value.Metadata( "Mozart" )   // []
@@ -181,7 +181,7 @@ Metadata records are generally _not preserved_ when a value is used with an oper
 "Amadeus " & "Mozart"
 ```
 
-The standard library functions `Value.RemoveMetadata` and `Value.ReplaceMetadata` can be used to remove all metadata from a value and to replace a value's metadata (rather than merge metadata into possibly existing metadata).
+The standard library functions [`Value.RemoveMetadata`](value-removemetadata.md) and [`Value.ReplaceMetadata`](value-replacemetadata.md) can be used to remove all metadata from a value and to replace a value's metadata (rather than merge metadata into possibly existing metadata).
 
 The only operator that returns results that carry metadata is the [meta operator](#metadata-operator).
 
@@ -406,7 +406,7 @@ _metadata-expression:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unary-expression<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unary-expression_  `meta`  _unary-expression_
 
-The following example constructs a text value with a metadata record using the `meta` operator and then accesses the metadata record of the resulting value using `Value.Metadata`:
+The following example constructs a text value with a metadata record using the `meta` operator and then accesses the metadata record of the resulting value using [`Value.Metadata`](value-metadata.md):
 
 ```powerquery-m
 Value.Metadata( "Mozart" meta [ Rating = 5 ] )
@@ -425,7 +425,7 @@ The following holds when applying the metadata combining operator `x meta y`:
 
 * The resulting value is the value from the `x` expression, without its metadata, with the newly computed metadata record attached.
 
-The standard library functions `Value.RemoveMetadata` and `Value.ReplaceMetadata` can be used to remove all metadata from a value and to replace a value's metadata (rather than merge metadata into possibly existing metadata). The following expressions are equivalent:
+The standard library functions [`Value.RemoveMetadata`](value-removemetadata.md) and [`Value.ReplaceMetadata`](value-replacemetadata.md) can be used to remove all metadata from a value and to replace a value's metadata (rather than merge metadata into possibly existing metadata). The following expressions are equivalent:
 
 ```powerquery-m
 x meta y
@@ -726,12 +726,12 @@ Numbers in M are stored using a variety of representations to retain as much inf
 
 | Precision | Semantics |
 | --------- | --------- |
-| `Precision.Decimal` | 128-bit decimal representation with a range of &#177;1.0 x 10-28 to &#177;7.9 x 1028 and 28-29 significant digits. |
-| `Precision.Double` | Scientific representation using mantissa and exponent; conforms to the 64-bit binary double-precision IEEE 754 arithmetic standard [IEEE 754-2008](https://ieeexplore.ieee.org/servlet/opac?punumber=4610933). |
+| [`Precision.Decimal`](precision-type.md) | 128-bit decimal representation with a range of &#177;1.0 x 10-28 to &#177;7.9 x 1028 and 28-29 significant digits. |
+| [`Precision.Double`](precision-type.md) | Scientific representation using mantissa and exponent; conforms to the 64-bit binary double-precision IEEE 754 arithmetic standard [IEEE 754-2008](https://ieeexplore.ieee.org/servlet/opac?punumber=4610933). |
 
 Arithmetic operations are performed by choosing a precision, converting both operands to that precision (if necessary), then performing the actual operation, and finally returning a number in the chosen precision.
 
-The built-in arithmetic operators (`+`, `-`, `*`, `/`) use Double Precision. Standard library functions (`Value.Add`, `Value.Subtract`, `Value.Multiply`, `Value.Divide`) can be used to request these operations using a specific precision model.
+The built-in arithmetic operators (`+`, `-`, `*`, `/`) use Double Precision. Standard library functions ([`Value.Add`](value-add.md), [`Value.Subtract`](value-subtract.md), [`Value.Multiply`](value-multiply.md), [`Value.Divide`](value-divide.md)) can be used to request these operations using a specific precision model.
 
 * No numeric overflow is possible: `#infinity` or `-#infinity` represent values of magnitudes too large to be represented.
 
@@ -777,7 +777,7 @@ For example:
 #nan + #infinity  // #nan
 ```
 
-The addition operator `+` over numbers uses Double Precision; the standard library function `Value.Add` can be used to specify Decimal Precision. The following holds when computing a sum of numbers:
+The addition operator `+` over numbers uses Double Precision; the standard library function [`Value.Add`](value-add.md) can be used to specify Decimal Precision. The following holds when computing a sum of numbers:
 
 * The sum in Double Precision is computed according to the rules of 64-bit binary doubleprecision IEEE 754 arithmetic [IEEE 754-2008](https://ieeexplore.ieee.org/servlet/opac?punumber=4610933). The following table lists the results of all possible combinations of nonzero finite values, zeros, infinities, and NaN's. In the table, `x` and `y` are nonzero finite values, and `z` is the result of `x + y`. If `x` and `y` have the same magnitude but opposite signs, `z` is positive zero. If `x + y` is too large to be represented in the destination type, `z` is an infinity with the same sign as `x + y`.
 
@@ -879,7 +879,7 @@ The difference between two numbers is computed using the _subtraction operator_,
 #nan - #infinity     // #nan
 ```
 
-The subtraction operator `-` over numbers uses Double Precision; the standard library function `Value.Subtract` can be used to specify Decimal Precision. The following holds when computing a difference of numbers:
+The subtraction operator `-` over numbers uses Double Precision; the standard library function [`Value.Subtract`](value-subtract.md) can be used to specify Decimal Precision. The following holds when computing a difference of numbers:
 
 * The difference in Double Precision is computed according to the rules of 64-bit binary double-precision IEEE 754 arithmetic [IEEE 754-2008](https://ieeexplore.ieee.org/servlet/opac?punumber=4610933). The following table lists the results of all possible combinations of nonzero finite values, zeros, infinities, and NaN's. In the table, `x` and `y` are nonzero finite values, and `z` is the result of `x - y`. If `x` and `y` are equal, `z` is positive zero. If `x - y` is too large to be represented in the destination type, `z` is an infinity with the same sign as `x - y`.
 
@@ -974,7 +974,7 @@ The product of two numbers is computed using the _multiplication operator_, prod
 #nan * #infinity     // #nan
 ```
 
-The multiplication operator `*` over numbers uses Double Precision; the standard library function `Value.Multiply` can be used to specify Decimal Precision. The following holds when computing a product of numbers:
+The multiplication operator `*` over numbers uses Double Precision; the standard library function [`Value.Multiply`](value-multiply.md) can be used to specify Decimal Precision. The following holds when computing a product of numbers:
 
 * The product in Double Precision is computed according to the rules of 64-bit binary double-precision IEEE 754 arithmetic [IEEE 754-2008](https://ieeexplore.ieee.org/servlet/opac?punumber=4610933). The following table lists the results of all possible combinations of nonzero finite values, zeros, infinities, and NaN's. In the table, `x` and `y` are positive finite values. `z` is the result of `x * y`. If the result is too large for the destination type, `z` is infinity. If the result is too small for the destination type, `z` is zero.
 
@@ -1029,7 +1029,7 @@ The quotient of two numbers is computed using the _division operator_, producing
 #nan / #infinity    // #nan
 ```
 
-The division operator `/` over numbers uses Double Precision; the standard library function `Value.Divide` can be used to specify Decimal Precision. The following holds when computing a quotient of numbers:
+The division operator `/` over numbers uses Double Precision; the standard library function [`Value.Divide`](value-divide.md) can be used to specify Decimal Precision. The following holds when computing a quotient of numbers:
 
 * The quotient in Double Precision is computed according to the rules of 64-bit binary double-precision IEEE 754 arithmetic [IEEE 754-2008](https://ieeexplore.ieee.org/servlet/opac?punumber=4610933). The following table lists the results of all possible combinations of nonzero finite values, zeros, infinities, and NaN's. In the table, `x` and `y` are positive finite values. `z` is the result of `x / y`. If the result is too large for the destination type, `z` is infinity. If the result is too small for the destination type, `z` is zero.
 

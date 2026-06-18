@@ -101,7 +101,7 @@ A set of M section documents can be linked into an opaque record value that has 
 
 The resulting record value fully closes over the global environment in which the link process was performed. Such records are, therefore, suitable components to compose M documents from other (linked) sets of M documents. There are no opportunities for naming conflicts.
 
-The standard library functions `Embedded.Value` can be used to retrieve such "embedded" record values that correspond to reused M components.
+The standard library functions [`Embedded.Value`](embedded-value.md) can be used to retrieve such "embedded" record values that correspond to reused M components.
 
 ## Document Introspection
 

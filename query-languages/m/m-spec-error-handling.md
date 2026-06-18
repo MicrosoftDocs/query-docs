@@ -30,7 +30,7 @@ Text values can be used as shorthand for error values. For example:
 error "Hello, world" // error with message "Hello, world"
 ```
 
-Full error values are records and can be constructed using the `Error.Record` function:
+Full error values are records and can be constructed using the [`Error.Record`](error-record.md) function:
 
 ```powerquery-m
 error Error.Record("FileNotFound", "File my.txt not found",
