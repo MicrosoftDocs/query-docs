@@ -7,17 +7,17 @@ ms.topic: reference
 
 # JoinSide.Type
 
-## Definition
+## About
 
 Specifies the left or right table of a join.
 
 ## Allowed values
 
 |Name|Value|Description|
-| ------- | --- | ----------- |
-|**JoinSide.Left**|0| Specifies the left table of a join.|
-|**JoinSide.Right**|1| Specifies the right table of a join.|
+|---|---|---|
+|`JoinSide.Left`|0|Specifies the left table of a join.|
+|`JoinSide.Right`|1|Specifies the right table of a join.|
 
-## Applies to
+## Related content
 
 * [Table functions](table-functions.md)

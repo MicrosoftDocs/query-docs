@@ -71,6 +71,22 @@ Text values can be used as shorthand for error values. For example:
 error "Hello, world" // error with message "Hello, world"
 ```
 
+Full error values are records and can be constructed using the [`Error.Record`](error-record.md) function:
+
+```powerquery-m
+error Error.Record("FileNotFound", "File my.txt not found",
+     "my.txt")
+```
+
+The above expression is equivalent to:
+
+```powerquery-m
+error [
+    Reason = "FileNotFound",
+    Message = "File my.txt not found",
+    Detail = "my.txt"
+]
+```
 
 Raising an error will cause the current expression evaluation to stop, and the expression evaluation stack will unwind until one of the following occurs:
 

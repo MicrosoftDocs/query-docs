@@ -71,7 +71,7 @@ Similarly, the following example defines a custom type that classifies records w
 type [ X = number, Y = number ]
 ```
 
-The ascribed type of a value is obtained using the standard library function [Value.Type](value-type.md), as shown in the following examples:
+The ascribed type of a value is obtained using the standard library function [`Value.Type`](value-type.md), as shown in the following examples:
 
 ```powerquery-m
 Value.Type( 2 )                 // type number 
@@ -273,7 +273,7 @@ type table [A = text, B = number, C = binary]
 
 A table-type value also carries the definition of a table value's _keys_. A key is a set of column names. At most one key can be designated as the table's _primary key_. (Within M, table keys have no semantic meaning. However, it is common for external data sources, such as databases or OData feeds, to define keys over tables. Power Query uses key information to improve performance of advanced functionality, such as cross-source join operations.)
 
-The standard library functions `Type.TableKeys`, `Type.AddTableKey`, and `Type.ReplaceTableKeys` can be used to obtain the keys of a table type, add a key to a table type, and replace all keys of a table type, respectively.
+The standard library functions [`Type.TableKeys`](type-tablekeys.md), [`Type.AddTableKey`](type-addtablekey.md), and [`Type.ReplaceTableKeys`](type-replacetablekeys.md) can be used to obtain the keys of a table type, add a key to a table type, and replace all keys of a table type, respectively.
 
 ```powerquery-m
 Type.AddTableKey(tableType, {"A", "B"}, false) 
@@ -303,7 +303,7 @@ Value.Type(42 as nullable number)       // type number
 Value.Type(null as nullable number)     // type null
 ```
 
-The standard library functions `Type.IsNullable` and `Type.NonNullable` can be used to test a type for nullability and to remove nullability from a type.
+The standard library functions [`Type.IsNullable`](type-isnullable.md) and [`Type.NonNullable`](type-nonnullable.md) can be used to test a type for nullability and to remove nullability from a type.
 
 The following hold (for any <code>type <em>T</em></code>):
 
@@ -340,7 +340,7 @@ The following are pairwise equivalent (for any <code>type <em>T</em></code>):
 
 A value's _ascribed type_ is the type to which a value is _declared_ to conform. 
 
-A value may be ascribed a type using the library function `Value.ReplaceType`. This function either returns a new value with the type ascribed or raises an error if the new type is incompatible with the value.
+A value may be ascribed a type using the library function [`Value.ReplaceType`](value-replacetype.md). This function either returns a new value with the type ascribed or raises an error if the new type is incompatible with the value.
 
 When a value is ascribed a type, only a limited conformance check occurs:
 * The type being ascribed must be non-abstract, non-nullable, and compatible with the value's intrinsic (native) _primitive-type_.
@@ -352,7 +352,7 @@ When a value is ascribed a type, only a limited conformance check occurs:
 
 Library functions may choose to compute and ascribe complex types to results based on the ascribed types of the input values.
 
-The ascribed type of a value may be obtained using the library function `Value.Type`. For example:
+The ascribed type of a value may be obtained using the library function [`Value.Type`](value-type.md). For example:
 
 ```powerquery-m
 Value.Type( Value.ReplaceType( {1}, type {number} ) 
@@ -363,7 +363,7 @@ Value.Type( Value.ReplaceType( {1}, type {number} )
 
 Type equivalence is not defined in M. An M implementation may optionally choose to use its own rules to perform equality comparisons between type values. Comparing two type values for equality should evaluate to `true` if they are considered identical by the implementation, and `false` otherwise. In either case, the response returned must be consistent if the same two values are repeatedly compared. Note that within a given implementation, comparing some identical type values (such as `(type text) = (type text)`) may return `true`, while comparing others (such as `(type [a = text]) = (type [a = text])`) may not.
 
-Compatibility between a given type and either a primitive type or a nullable primitive type can be determined using the library function `Type.Is`, which accepts an arbitrary type value as its first argument and a primitive or nullable primitive type value as its second argument:
+Compatibility between a given type and either a primitive type or a nullable primitive type can be determined using the library function [`Type.Is`](type-is.md), which accepts an arbitrary type value as its first argument and a primitive or nullable primitive type value as its second argument:
 
 ```powerquery-m
 Type.Is(type text, type nullable text)  // true 

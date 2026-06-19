@@ -36,6 +36,6 @@ Date.AddDays(#date(2011, 5, 14), 5)
 
 ## Related content
 
-* [#date](sharpdate.md)
-* [#datetime](sharpdatetime.md)
-* [#datetimezone](sharpdatetimezone.md)
+* [`#date`](sharpdate.md)
+* [`#datetime`](sharpdatetime.md)
+* [`#datetimezone`](sharpdatetimezone.md)

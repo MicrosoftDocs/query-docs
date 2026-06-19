@@ -50,6 +50,6 @@ Date.AddYears(#datetime(2011, 5, 14, 8, 15, 22), 10)
 
 ## Related content
 
-* [#date](sharpdate.md)
-* [#datetime](sharpdatetime.md)
-* [#datetimezone](sharpdatetimezone.md)
+* [`#date`](sharpdate.md)
+* [`#datetime`](sharpdatetime.md)
+* [`#datetimezone`](sharpdatetimezone.md)
