@@ -4,6 +4,7 @@ title: "Embedded.Value"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Embedded.Value
 
 ## Syntax
@@ -14,4 +15,4 @@ Embedded.Value(<b>value</b> as any, <b>path</b> as text) as any
 
 ## About
 
-Accesses a value by name in an embedded mashup.
+This function is intended for internal use only.

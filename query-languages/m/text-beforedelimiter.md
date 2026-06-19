@@ -4,6 +4,7 @@ title: "Text.BeforeDelimiter"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.BeforeDelimiter
 
 ## Syntax

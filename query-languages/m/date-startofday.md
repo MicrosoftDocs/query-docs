@@ -4,11 +4,12 @@ title: "Date.StartOfDay"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.StartOfDay
 
 ## Syntax
 
-<pre> 
+<pre>
 Date.StartOfDay(<b>dateTime</b> as any) as any
 </pre>
 
@@ -16,7 +17,7 @@ Date.StartOfDay(<b>dateTime</b> as any) as any
 
 Returns the start of the day represented by `dateTime`. `dateTime` must be a `date`, `datetime`, or `datetimezone` value.
 
-## Example 1
+## Example
 
 Find the start of the day for October 10th, 2011, 8:00AM.
 

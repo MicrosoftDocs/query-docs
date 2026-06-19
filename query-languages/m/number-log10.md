@@ -4,6 +4,7 @@ title: "Number.Log10"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.Log10
 
 ## Syntax
@@ -14,9 +15,9 @@ Number.Log10(<b>number</b> as nullable number) as nullable number
 
 ## About
 
-Returns the base 10 logarithm of a number, `number`. If `number` is null **Number.Log10** returns null.
+Returns the base 10 logarithm of a number, `number`. If `number` is null `Number.Log10` returns null.
 
-## Example 1
+## Example
 
 Get the base 10 logarithm of 2.
 

@@ -4,6 +4,7 @@ title: "Text.EndsWith"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.EndsWith
 
 ## Syntax
@@ -15,7 +16,7 @@ Text.EndsWith(
     optional <b>comparer</b> as nullable function
 ) as nullable logical
 </pre>
-  
+
 ## About
 
 Indicates whether the given text, `text`, ends with the specified value, `substring`. The indication is case sensitive.
@@ -24,9 +25,9 @@ Indicates whether the given text, `text`, ends with the specified value, `substr
 
 The following built-in comparers are available in the formula language:
 
-* [Comparer.Ordinal](/powerquery-m/comparer-ordinal): Used to perform an exact ordinal comparison
-* [Comparer.OrdinalIgnoreCase](/powerquery-m/comparer-ordinalignorecase): Used to perform an exact ordinal case-insensitive comparison
-* [Comparer.FromCulture](/powerquery-m/comparer-fromculture): Used to perform a culture-aware comparison
+* [`Comparer.Ordinal`](comparer-ordinal.md): Used to perform an exact ordinal comparison
+* [`Comparer.OrdinalIgnoreCase`](comparer-ordinalignorecase.md): Used to perform an exact ordinal case-insensitive comparison
+* [`Comparer.FromCulture`](comparer-fromculture.md): Used to perform a culture-aware comparison
 
 ## Example 1
 

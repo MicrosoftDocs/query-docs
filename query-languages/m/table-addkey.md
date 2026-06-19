@@ -4,6 +4,7 @@ title: "Table.AddKey"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.AddKey
 
 ## Syntax
@@ -15,12 +16,12 @@ Table.AddKey(
     <b>isPrimary</b> as logical
 ) as table
 </pre>
-  
+
 ## About
 
 Adds a key to `table`, where `columns` is the list of column names that define the key, and `isPrimary` specifies whether the key is primary.
 
-## Example 1
+## Example
 
 Add a single-column primary key to a table.
 

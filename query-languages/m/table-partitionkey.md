@@ -4,6 +4,7 @@ title: "Table.PartitionKey"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.PartitionKey
 
 ## Syntax

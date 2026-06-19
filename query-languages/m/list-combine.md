@@ -4,6 +4,7 @@ title: "List.Combine"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Combine
 
 ## Syntax
@@ -26,7 +27,7 @@ Combine the two simple lists {1, 2} and {3, 4}.
 List.Combine({{1, 2}, {3, 4}})
 ```
 
-**Output** 
+**Output**
 
 ```powerquery-m
 {

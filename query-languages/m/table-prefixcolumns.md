@@ -4,6 +4,7 @@ title: "Table.PrefixColumns"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.PrefixColumns
 
 ## Syntax
@@ -11,12 +12,12 @@ ms.topic: reference
 <pre>
 Table.PrefixColumns(<b>table</b> as table, <b>prefix</b> as text) as table
 </pre>
-  
+
 ## About
 
-Returns a table where all the column names from the `table` provided are prefixed with the given text, `prefix`, plus a period in the form `prefix` `.ColumnName`.
+Returns a table where all the column names from the `table` provided are prefixed with the given text, `prefix`, plus a period in the form `prefix.ColumnName`.
 
-## Example 1
+## Example
 
 Prefix the columns with "MyTable" in the table.
 

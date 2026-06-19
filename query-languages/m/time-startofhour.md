@@ -4,6 +4,7 @@ title: "Time.StartOfHour"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Time.StartOfHour
 
 ## Syntax
@@ -11,12 +12,12 @@ ms.topic: reference
 <pre>
 Time.StartOfHour(<b>dateTime</b> as any) as any
 </pre>
-  
+
 ## About
 
 Returns the start of the hour represented by `dateTime`. `dateTime` must be a `time`, `datetime` or `datetimezone` value.
 
-## Example 1
+## Example
 
 Find the start of the hour for October 10th, 2011, 8:10:32AM.
 

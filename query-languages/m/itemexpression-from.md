@@ -4,6 +4,7 @@ title: "ItemExpression.From"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # ItemExpression.From
 
 ## Syntax
@@ -17,7 +18,7 @@ ItemExpression.From(<b>function</b> as function) as record
 Returns the abstract syntax tree (AST) for the body of `function`, normalized into an *item expression*:
 
 * The function must be a 1-argument lambda.
-* All references to the function parameter are replaced with [ItemExpression.Item](itemexpression-item.md).
+* All references to the function parameter are replaced with [`ItemExpression.Item`](itemexpression-item.md).
 * The AST will be simplified to contain only nodes of the kinds:
   * `Constant`
   * `Invocation`
@@ -30,7 +31,7 @@ An error is raised if an item expression AST cannot be returned for the body of 
 
 This function is identical to [`RowExpression.From`](rowexpression-from.md).
 
-## Example 1
+## Example
 
 Returns the AST for the body of the function `each _ <> null`.
 

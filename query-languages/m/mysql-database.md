@@ -4,6 +4,7 @@ title: "MySQL.Database"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # MySQL.Database
 
 ## Syntax
@@ -31,4 +32,4 @@ Returns a table of SQL tables, views, and stored scalar functions available in a
 * `ReturnSingleDatabase`: A logical (true/false) that sets whether to return all tables of all databases (if false) or to return tables and views of the specified database (if true). The default value is false.
 * `HierarchicalNavigation`: A logical (true/false) that sets whether to view the tables grouped by their schema names (default is false).
 
-The record parameter is specified as [option1 = value1, option2 = value2...] or [Query = "select ..."] for example.
+The record parameter is specified as [option1 = value1, option2 = value2...] or [Query = "select ..."], for example.

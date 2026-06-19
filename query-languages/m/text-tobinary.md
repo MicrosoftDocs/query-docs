@@ -4,6 +4,7 @@ title: "Text.ToBinary"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.ToBinary
 
 ## Syntax
@@ -21,7 +22,7 @@ Text.ToBinary(
 Encodes a text value into a binary value using the specified encoding.
 
 * `text`: The text to be encoded.
-* `encoding`: (Optional) The encoding used to convert the text to binary. Use [BinaryEncoding.Type](binaryencoding-type.md) to specify the type of encoding. If this value isn't specified, the default value is `BinaryEncoding.Utf8`.
+* `encoding`: (Optional) The encoding used to convert the text to binary. Use [`TextEncoding.Type`](textencoding-type.md) to specify the type of encoding. If this value isn't specified, the default value is [`TextEncoding.Utf8`](textencoding-type.md).
 * `includeByteOrderMark`: (Optional) Determines if a Byte Order Mark (BOM) should be included at the beginning of the binary output. Set to `true` to automatically include the BOM, otherwise `false`. If this value isn't specified, the default value is `false`.
 
 ## Example 1
@@ -57,7 +58,7 @@ in
 ```powerquery-m
 [
     OriginalText = "Testing 1-2-3",
-    BinaryEncoded = "VGVzdGluZyAxLTItMw==",
+    BinaryBase64 = "VGVzdGluZyAxLTItMw==",
     DecodedText = "Testing 1-2-3"
 ]
 ```
@@ -67,7 +68,6 @@ in
 Encode text to binary with a Byte Order Mark (BOM), produce a viewable hexadecimal string, then decode it back to text.
 
 **Usage**
-
 
 ```powerquery-m
 let
@@ -99,9 +99,9 @@ in
 
 ```powerquery-m
 [
-    OriginalText = "Testing 1-2-3", 
-    DecodedText = "fffe540065007300740069006e006700200031002d0032002d003300",
-    DecodedText = "Testing 1-2-3", 
-    IsIdentical = true 
+    OriginalText = "Testing 1-2-3",
+    BinaryHex = "fffe540065007300740069006e006700200031002d0032002d003300",
+    DecodedText = "Testing 1-2-3",
+    IsIdentical = true
 ]
 ```

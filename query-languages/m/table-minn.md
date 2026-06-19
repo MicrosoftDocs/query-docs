@@ -4,6 +4,7 @@ title: "Table.MinN"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.MinN
 
 ## Syntax
@@ -15,7 +16,7 @@ Table.MinN(
     <b>countOrCondition</b> as any
 ) as table
 </pre>
-  
+
 ## About
 
 Returns the smallest row(s) in the `table`, given the `comparisonCriteria`. After the rows are sorted, the `countOrCondition` parameter must be specified to further filter the result. Note the sorting algorithm cannot guarantee a fixed sorted result. The `countOrCondition` parameter can take multiple forms:
@@ -30,14 +31,14 @@ Find the row with the smallest value in column [a] with the condition [a] < 3, i
 **Usage**
 
 ```powerquery-m
-Table.MinN( 
-    Table.FromRecords({ 
+Table.MinN(
+    Table.FromRecords({
         [a = 2, b = 4],
         [a = 0, b = 0],
         [a = 6, b = 4]
-    }), 
-    "a", 
-    each [a] < 3 
+    }),
+    "a",
+    each [a] < 3
 )
 ```
 
@@ -51,6 +52,7 @@ Table.FromRecords({
 ```
 
 ## Example 2
+
 Find the row with the smallest value in column [a] with the condition [b] < 0, in the table. The rows are sorted before the filter is applied.
 
 **Usage**

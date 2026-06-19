@@ -5,6 +5,7 @@ ms.subservice: m-source
 ms.custom: sfi-ropc-nochange
 ms.topic: reference
 ---
+
 # Odbc.DataSource
 
 ## Syntax
@@ -22,8 +23,9 @@ Returns a table of SQL tables and views from the ODBC data source specified by t
 * `ConnectionTimeout`: A duration that controls how long to wait before abandoning an attempt to make a connection to the server. The default value is 15 seconds.
 * `CommandTimeout`: A duration that controls how long the server-side query is allowed to run before it is canceled. The default value is ten minutes.
 * `SqlCompatibleWindowsAuth`: A logical (true/false) that determines whether to produce SQL Server-compatible connection string options for Windows authentication. The default value is true.
+* `TableTypes`
 
-## Example 1
+## Example
 
 Return the SQL tables and views from the provided connection string.
 
@@ -35,6 +37,4 @@ Odbc.DataSource("dsn=your_dsn")
 
 **Output**
 
-```powerquery-m
-table
-```
+`table`

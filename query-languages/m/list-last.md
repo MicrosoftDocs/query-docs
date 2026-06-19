@@ -4,12 +4,13 @@ title: "List.Last"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Last
 
 ## Syntax
 
 <pre>
-List.Last(<b>list</b> as list, optional <b>defaultValue</b> as any) as any 
+List.Last(<b>list</b> as list, optional <b>defaultValue</b> as any) as any
 </pre>
 
 ## About

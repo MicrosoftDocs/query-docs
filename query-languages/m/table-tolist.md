@@ -4,19 +4,20 @@ title: "Table.ToList"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ToList
 
 ## Syntax
 
-<pre> 
+<pre>
 Table.ToList(<b>table</b> as table, optional <b>combiner</b> as nullable function) as list
 </pre>
-  
+
 ## About
 
 Converts a table into a list by applying the specified combining function to each row of values in the table.
 
-## Example 1
+## Example
 
 Combine the text of each row with a comma.
 

@@ -4,6 +4,7 @@ title: "List.Max"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Max
 
 ## Syntax
@@ -16,7 +17,7 @@ List.Max(
     optional <b>includeNulls</b> as nullable logical
 ) as any
 </pre>
-  
+
 ## About
 
 Returns the maximum item in the list or the optional default value if the list is empty.

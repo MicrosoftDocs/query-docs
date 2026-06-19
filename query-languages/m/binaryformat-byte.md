@@ -4,6 +4,7 @@ title: "BinaryFormat.Byte"
 ms.topic: reference
 ms.subservice: m-source
 ---
+
 # BinaryFormat.Byte
 
 ## Syntax

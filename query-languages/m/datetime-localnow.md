@@ -4,14 +4,15 @@ title: "DateTime.LocalNow"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTime.LocalNow
 
 ## Syntax
 
 <pre>
-DateTime.LocalNow() as datetime  
+DateTime.LocalNow() as datetime
 </pre>
-  
+
 ## About
 
 Returns a `datetime` value set to the current date and time on the system.
@@ -30,7 +31,7 @@ DateTime.LocalNow()
 
 **Output**
 
-The current local date and time.
+`The current local date and time.`
 
 ## Example 2
 
@@ -44,7 +45,7 @@ DateTime.LocalNow()
 
 **Output**
 
-The current online (UTC) date and time.
+`The current online (UTC) date and time.`
 
 ## Related content
 

@@ -4,6 +4,7 @@ title: "Date.IsInPreviousDay"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.IsInPreviousDay
 
 ## Syntax
@@ -18,7 +19,7 @@ Indicates whether the given datetime value `dateTime` occurs during the previous
 
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
 
-## Example 1
+## Example
 
 Determine if the day before the current system time is in the previous day.
 

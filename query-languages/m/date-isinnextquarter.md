@@ -4,13 +4,14 @@ title: "Date.IsInNextQuarter"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.IsInNextQuarter
 
 ## Syntax
 
 <pre>
 Date.IsInNextQuarter(<b>dateTime</b> as any) as nullable logical
-</pre>  
+</pre>
 
 ## About
 
@@ -18,7 +19,7 @@ Indicates whether the given datetime value `dateTime` occurs during the next qua
 
 * `dateTime`: A `date`, `datetime`, or `datetimezone` value to be evaluated.
 
-## Example 1
+## Example
 
 Determine if the quarter after the current system time is in the next quarter.
 

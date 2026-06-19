@@ -4,6 +4,7 @@ title: "Text.InferNumberType"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.InferNumberType
 
 ## Syntax
@@ -14,7 +15,7 @@ Text.InferNumberType(<b>text</b> as text, optional <b>culture</b> as nullable te
 
 ## About
 
-Infers the granular number type (`Int64.Type`, `Double.Type`, and so on) of `text`. An error is raised if `text` is not a number. An optional `culture` may also be provided (for example, "en-US").
+Infers the granular number type (Int64.Type, Double.Type, and so on) of `text`. An error is raised if `text` is not a number. An optional `culture` may also be provided (for example, "en-US").
 
 ## Related content
 

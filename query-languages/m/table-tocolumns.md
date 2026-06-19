@@ -4,6 +4,7 @@ title: "Table.ToColumns"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ToColumns
 
 ## Syntax
@@ -11,12 +12,12 @@ ms.topic: reference
 <pre>
 Table.ToColumns(<b>table</b> as table) as list
 </pre>
-  
+
 ## About
 
-Creates a list of nested lists from the table, `table`. Each list item is an inner list that contains the column values.  
-  
-## Example 1
+Creates a list of nested lists from the table, `table`. Each list item is an inner list that contains the column values.
+
+## Example
 
 Create a list of the column values from the table.
 
@@ -28,7 +29,7 @@ Table.ToColumns(
         [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
         [CustomerID = 2, Name = "Jim", Phone = "987-6543"]
     })
-) 
+)
 ```
 
 **Output**

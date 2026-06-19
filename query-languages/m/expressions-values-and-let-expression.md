@@ -7,9 +7,10 @@ ms.custom: "nonautomated-date"
 ms.subservice: m-background
 
 ---
+
 # Expressions, values, and let expression
 
-A Power Query M formula language query is composed of formula **expression** steps that create a mashup query. A formula expression can be evaluated (computed), yielding a value. The **let** expression encapsulates a set of values to be computed, assigned names, and then used in a subsequent expression that follows the **in** statement. For example, a let expression could contain a **Source** variable that equals the value of [Text.Proper](text-proper.md) and yields a text value in proper case.
+A Power Query M formula language query is composed of formula **expression** steps that create a mashup query. A formula expression can be evaluated (computed), yielding a value. The **let** expression encapsulates a set of values to be computed, assigned names, and then used in a subsequent expression that follows the **in** statement. For example, a let expression could contain a **Source** variable that equals the value of [`Text.Proper`](text-proper.md) and yields a text value in proper case.
 
 ## Let expression
 
@@ -43,7 +44,7 @@ A *primitive* value is single-part value, such as a `number`, `logical`, `text`,
 
 ## Function value
 
-A *Function* is a value that, when invoked with arguments, produces a new value. Functions are written by listing the function's *parameters* in parentheses, followed by the goes-to symbol =&gt;, followed by the expression defining the function. For example, to create a function called **MyFunction** that has two parameters and performs a calculation on parameter1 and parameter2:
+A *Function* is a value that, when invoked with arguments, produces a new value. Functions are written by listing the function's *parameters* in parentheses, followed by the goes-to symbol =>, followed by the expression defining the function. For example, to create a function called **MyFunction** that has two parameters and performs a calculation on parameter1 and parameter2:
 
 ```powerquery-m
 let
@@ -67,13 +68,13 @@ This code produces the value of 3.
 
 The M language supports the following structured data values:
 
-- [List](#list)
+* [List](#list)
 
-- [Record](#record)
+* [Record](#record)
 
-- [Table](#table)
+* [Table](#table)
 
-- [Additional structured data examples](#additional-structured-data-examples)
+* [Additional structured data examples](#additional-structured-data-examples)
 
 > [!NOTE]
 > Structured data can contain any M value. To see a couple of examples, go to [Additional structured data examples](#additional-structured-data-examples).
@@ -100,9 +101,9 @@ The following are some List examples.
 
 A *Record* is a set of fields. A *field* is a name/value pair where the name is a text value that's unique within the field's record. The syntax for record values allows the names to be written without quotes, a form also referred to as *identifiers*. An identifier can take the following two forms:
 
-- identifier_name such as OrderID.
+* identifier_name such as OrderID.
 
-- \#"identifier name" such as #"Today's data is: ".
+* \#"identifier name" such as #"Today's data is: ".
 
 The following is a record containing fields named "OrderID", "CustomerID", "Item", and "Price" with values 1, 1, "Fishing rod", and 100.00. Square brace characters [ ] denote the beginning and end of a record expression, and are used to get a field value from a record. The following examples show a record and how to get the Item field value.
 
@@ -138,7 +139,7 @@ in
 
 ### Table
 
-A *Table* is a set of values organized into named columns and rows. The column type can be implicit or explicit. You can use [#table](sharptable.md) to create a list of column names and list of rows. A Table of values is a List in a [List](#list). The curly brace characters { } are also used to retrieve a row from a Table by index position (go to [Example 3 - Get a row from a table by index position](#example-3---get-a-row-from-a-table-by-index-position)).
+A *Table* is a set of values organized into named columns and rows. The column type can be implicit or explicit. You can use [`#table`](sharptable.md) to create a list of column names and list of rows. A Table of values is a List in a [List](#list). The curly brace characters { } are also used to retrieve a row from a Table by index position (go to [Example 3 - Get a row from a table by index position](#example-3---get-a-row-from-a-table-by-index-position)).
 
 #### Example 1 - Create a table with implicit column types
 
@@ -224,7 +225,7 @@ Evaluating this expression can be visualized as:
 
 :::image type="content" source="media/list-example-1.png" alt-text="Diagram of a table that visualizes the expression with a primitive value, a function, and a record.":::
 
-### Example 2 - Record containing primitive values and nested records
+## Example - Record containing primitive values and nested records
 
 ```powerquery-m
 let
@@ -256,4 +257,4 @@ else
     1 + 1
 ```
 
-The first expression (2 + 2) is selected if the logical expression (2 &gt; 1) is true, and the second expression (1 + 1) is selected if it's false. The selected expression (in this case 2 + 2) is evaluated and becomes the result of the **if** expression (4).
+The first expression (2 + 2) is selected if the logical expression (2 > 1) is true, and the second expression (1 + 1) is selected if it's false. The selected expression (in this case 2 + 2) is evaluated and becomes the result of the **if** expression (4).

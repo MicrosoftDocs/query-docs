@@ -4,19 +4,20 @@ title: "Precision.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Precision.Type
 
-## Definition
+## About
 
 Specifies the precision of comparison.
 
 ## Allowed values
 
 |Name|Value|Description|
-| ------- | --- | ----------- |
-|**Precision.Double**|0|An optional parameter for the built-in arithmetic operators to specify double precision.|
-|**Precision.Decimal**|1|An optional parameter for the built-in arithmetic operators to specify decimal precision.|
+|---|---|---|
+|`Precision.Double`|0|An optional parameter for the built-in arithmetic [operators](operators.md) to specify double precision.|
+|`Precision.Decimal`|1|An optional parameter for the built-in arithmetic [operators](operators.md) to specify decimal precision.|
 
-## Applies to
+## Related content
 
 * [Value functions](value-functions.md)

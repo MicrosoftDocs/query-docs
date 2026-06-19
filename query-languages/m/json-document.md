@@ -4,6 +4,7 @@ title: "Json.Document"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Json.Document
 
 ## Syntax
@@ -16,8 +17,8 @@ Json.Document(<b>jsonText</b> as any, optional <b>encoding</b> as nullable numbe
 
 Returns the content of the JSON document.
 
-* `jsonText`: The content of the JSON document. The value of this parameter can be text or a binary value returned by a function like [File.Content](file-contents.md).
-* `encoding`: A [TextEncoding.Type](textencoding-type.md) that specifies the encoding used in the JSON document. If `encoding` is omitted, UTF8 is used.
+* `jsonText`: The content of the JSON document. The value of this parameter can be text or a binary value returned by a function like [`File.Contents`](file-contents.md).
+* `encoding`: A [`TextEncoding.Type`](textencoding-type.md) that specifies the encoding used in the JSON document. If `encoding` is omitted, UTF8 is used.
 
 ## Example 1
 
@@ -64,7 +65,7 @@ Returns the content of a local JSON file.
 
 ```powerquery-m
 let
-    Source = (Json.Document(
+    Source = Json.Document(
         File.Contents("C:\test-examples\JSON\Contosoware.json")
     )
 in
@@ -73,7 +74,7 @@ in
 
 **Output**
 
-A record, list, or primitive value representing the JSON data contained in the file
+`A record, list, or primitive value representing the JSON data contained in the file`
 
 ## Example 3
 
@@ -87,8 +88,10 @@ let
         Web.Contents("htts://contoso.com/products/Contosoware.json"),
         TextEncoding.Utf16)
     )
+in
+    Source
 ```
 
 **Output**
 
-A record, list, or primitive value representing the JSON UTF16 data contained in the file
+`A record, list, or primitive value representing the JSON UTF16 data contained in the file`

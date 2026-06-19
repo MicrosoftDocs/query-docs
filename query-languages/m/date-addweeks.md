@@ -4,6 +4,7 @@ title: "Date.AddWeeks"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.AddWeeks
 
 ## Syntax
@@ -19,7 +20,7 @@ Returns the `date`, `datetime`, or `datetimezone` result from adding `numberOfWe
 * `dateTime`: The `date`, `datetime`, or `datetimezone` value to which weeks are being added.
 * `numberOfWeeks`: The number of weeks to add.
 
-## Example 1
+## Example
 
 Add 2 weeks to the `date`, `datetime`, or `datetimezone` value representing the date 5/14/2011.
 
@@ -35,6 +36,6 @@ Date.AddWeeks(#date(2011, 5, 14), 2)
 
 ## Related content
 
-* [#date](sharpdate.md)
-* [#datetime](sharpdatetime.md)
-* [#datetimezone](sharpdatetimezone.md)
+* [`#date`](sharpdate.md)
+* [`#datetime`](sharpdatetime.md)
+* [`#datetimezone`](sharpdatetimezone.md)

@@ -6,6 +6,7 @@ ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ms.subservice: m-background
 ---
+
 # Comments
 
 You can add comments to your code with single-line comments `//` or multi-line comments that begin with `/*` and end with `*/`.
@@ -30,7 +31,7 @@ let
         [OrderID = 1, CustomerID = 1, Item = "fishing rod", Price = 100.0],
           [OrderID = 2, CustomerID = 1, Item = "1 lb. worms", Price = 5.0],
           [OrderID = 3, CustomerID = 2, Item = "fishing net", Price = 25.0]}),
-        #"Capitalized Each Word" = Table.TransformColumns(Orders, {"Item", Text.Proper}) 
+        #"Capitalized Each Word" = Table.TransformColumns(Orders, {"Item", Text.Proper})
 in
         #"Capitalized Each Word"
 ```

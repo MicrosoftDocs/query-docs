@@ -4,6 +4,7 @@ title: "HdInsight.Contents"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # HdInsight.Contents
 
 ## Syntax

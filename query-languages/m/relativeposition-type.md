@@ -4,6 +4,7 @@ title: "RelativePosition.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # RelativePosition.Type
 
 ## Definition
@@ -17,6 +18,6 @@ Indicates whether indexing should be done from the start or end of the input.
 |**RelativePosition.FromStart**|0| Indicates indexing should be done from the start of the input.|
 |**RelativePosition.FromEnd**|1| Indicates indexing should be done from the end of the input.|
 
-## Applies to
+## Related content
 
 * [Text functions](text-functions.md)

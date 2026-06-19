@@ -11,16 +11,16 @@ ms.subservice: m-background
 
 Standard numeric format strings are used to format common numeric types. A standard numeric format string takes the form *`[format specifier][precision specifier]`*, where:
 
-- *Format specifier* is a single alphabetic character that specifies the type of number format, for example, currency or percent. Any numeric format string that contains more than one alphabetic character, including white space, is interpreted as a custom numeric format string. For more information, go to [Custom numeric format strings](custom-numeric-format-strings.md).
+* *Format specifier* is a single alphabetic character that specifies the type of number format, for example, currency or percent. Any numeric format string that contains more than one alphabetic character, including white space, is interpreted as a custom numeric format string. For more information, go to [Custom numeric format strings](custom-numeric-format-strings.md).
 
-- *Precision specifier* is an optional integer that affects the number of digits in the resulting string. The precision specifier controls the number of digits in the string representation of a number.
+* *Precision specifier* is an optional integer that affects the number of digits in the resulting string. The precision specifier controls the number of digits in the string representation of a number.
 
   When the precision specifier controls the number of fractional digits in the result string, the result string reflects a number that is rounded to a representable result nearest to the infinitely precise result.
 
   > [!NOTE]
-  > The precision specifier determines the number of digits in the result string. To pad a result string with leading or trailing spaces or other characters (such a 0), use the [Text.PadStart](text-padstart.md) and [Text.PadEnd](text-padend.md) functions and use the overall length `count` in these functions to pad the result string.
+  > The precision specifier determines the number of digits in the result string. To pad a result string with leading or trailing spaces or other characters (such a 0), use the [`Text.PadStart`](text-padstart.md) and [`Text.PadEnd`](text-padend.md) functions and use the overall length `count` in these functions to pad the result string.
 
-Standard numeric format strings are supported by the [Number.ToText](number-totext.md) function.
+Standard numeric format strings are supported by the [`Number.ToText`](number-totext.md) function.
 
 ## Standard format specifiers
 
@@ -39,25 +39,25 @@ The following table describes the standard numeric format specifiers and display
 | "N" or "n" | Number | Result: Integral and decimal digits, group separators, and a decimal separator with optional negative sign.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Desired number of decimal places.<br /><br /> Default precision specifier: Defined by the culture.<br /><br /> More information: [The Numeric ("N") Format Specifier](#NFormatString). | 1234.567 ("N", en-US)<br />-> 1,234.57<br /><br /> 1234.567 ("N", ru-RU)<br />-> 1 234,57<br /><br /> 1234 ("N1", en-US)<br />-> 1,234.0<br /><br /> 1234 ("N1", ru-RU)<br />-> 1 234,0<br /><br /> -1234.56 ("N3", en-US)<br />-> -1,234.560<br /><br /> -1234.56 ("N3", ru-RU)<br />-> -1 234,560 |
 | "P" or "p" | Percent | Result: Number multiplied by 100 and displayed with a percent symbol.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Desired number of decimal places.<br /><br /> Default precision specifier: Defined by the culture.<br /><br /> More information: [The Percent ("P") Format Specifier](#PFormatString). | 1 ("P", en-US)<br />-> 100.00 %<br /><br /> 1 ("P", fr-FR)<br />-> 100,00 %<br /><br /> -0.39678 ("P1", en-US)<br />-> -39.7 %<br /><br /> -0.39678 ("P1", fr-FR)<br />-> -39,7 % |
 | "X" or "x" | Hexadecimal | Result: A hexadecimal string.<br /><br /> Supported by: Integral types only.<br /><br /> Precision specifier: Number of digits in the result string.<br /><br /> More information: [The Hexadecimal ("X") Format Specifier](#XFormatString). | 255 ("X")<br />-> FF<br /><br /> -1 ("x")<br />-> ff<br /><br /> 255 ("x4")<br />-> 00ff<br /><br /> -1 ("X4")<br />-> 00FF |
-| Any other single character | Unknown specifier | Result: Throws an Expression error at run time. |  |
+| Any other single character | Unknown specifier | Result: Raises an Expression error at run time. |  |
 
 ## Use standard numeric format strings
 
-A standard numeric format string can be used to define the formatting of a numeric value. It can be passed to the [Number.ToText](number-totext.md) `format` parameter. The following example formats a numeric value as a currency string in the current culture (in this case, the en-US culture).
+A standard numeric format string can be used to define the formatting of a numeric value. It can be passed to the [`Number.ToText`](number-totext.md) `format` parameter. The following example formats a numeric value as a currency string in the current culture (in this case, the en-US culture).
 
 ```powerquery-m
 Number.ToText(123.456, "C2")
 // Displays $123.46
 ```
 
-Optionally, you can supply a `count` argument in the [Text.PadStart](text-padstart.md) and [Text.PadEnd](text-padend.md) functions to specify the width of the numeric field and whether its value is right- or left-aligned. For example, the following sample left-aligns a currency value in a 28-character field, and it right-aligns a currency value in a 14-character field (when using a monospaced font).
+Optionally, you can supply a `count` argument in the [`Text.PadStart`](text-padstart.md) and [`Text.PadEnd`](text-padend.md) functions to specify the width of the numeric field and whether its value is right- or left-aligned. For example, the following sample left-aligns a currency value in a 28-character field, and it right-aligns a currency value in a 14-character field (when using a monospaced font).
 
 ```powerquery-m
 let
     amounts = {16305.32, 18794.16},
     result = Text.Format("    Beginning Balance           Ending Balance#(cr,lf)    #{0}#{1}",
     {
-        Text.PadEnd(Number.ToText(amounts{0}, "C2"), 28), 
+        Text.PadEnd(Number.ToText(amounts{0}, "C2"), 28),
         Text.PadStart(Number.ToText(amounts{1}, "C2"), 14)
     })
 in
@@ -85,14 +85,14 @@ The following example formats a value with the currency format specifier:
 
 ```powerquery-m
 let
-    Source = 
+    Source =
     {
         Number.ToText(12345.6789, "C"),
         Number.ToText(12345.6789, "C3"),
         Number.ToText(12345.6789, "C3", "da-DK")
     }
 in
-    Source 
+    Source
 
 // The example displays the following list on a system whose
 // current culture is English (United States):
@@ -115,8 +115,8 @@ The following example formats a value with the decimal format specifier.
 
 ```powerquery-m
 let
-    Source = 
-    { 
+    Source =
+    {
         Number.ToText(12345, "D"),
         // Displays 12345
 
@@ -130,14 +130,14 @@ let
         // Displays -00012345
     }
 in
-    Source 
+    Source
 ```
 
 <a name="EFormatString"></a>
 
 ## Exponential format specifier (E)
 
-The exponential ("E") format specifier converts a number to a string of the form "-d.ddd…E+ddd" or "-d.ddd…e+ddd", where each "d" indicates a digit (0-9). The string starts with a minus sign if the number is negative. Exactly one digit always precedes the decimal point.
+The exponential ("E") format specifier converts a number to a string of the form "-d.ddd...E+ddd" or "-d.ddd...e+ddd", where each "d" indicates a digit (0-9). The string starts with a minus sign if the number is negative. Exactly one digit always precedes the decimal point.
 
 The precision specifier indicates the desired number of digits after the decimal point. If the precision specifier is omitted, a default of six digits after the decimal point is used.
 
@@ -149,8 +149,8 @@ The following example formats a value with the exponential format specifier:
 
 ```powerquery-m
 let
-    Source = 
-    { 
+    Source =
+    {
         Number.ToText(12345.6789, "E", ""),
         // Displays 1.234568E+004
 
@@ -164,17 +164,17 @@ let
         // Displays 1,234568E+004
     }
 in
-    Source 
+    Source
 ```
 
 > [!NOTE]
-> The blank text value ("") in the last parameter of [Number.ToText](number-totext.md) in the previous sample refers to the invariant culture.
+> The blank text value ("") in the last parameter of [`Number.ToText`](number-totext.md) in the previous sample refers to the invariant culture.
 
 <a name="FFormatString"></a>
 
 ## Fixed-point format specifier (F)
 
-The fixed-point ("F") format specifier converts a number to a string of the form "-ddd.ddd…" where each "d" indicates a digit (0-9). The string starts with a minus sign if the number is negative.
+The fixed-point ("F") format specifier converts a number to a string of the form "-ddd.ddd..." where each "d" indicates a digit (0-9). The string starts with a minus sign if the number is negative.
 
 The precision specifier indicates the desired number of decimal places. If the precision specifier is omitted, the default number of decimal places to use in numeric values is 2.
 
@@ -270,7 +270,7 @@ in
 
 ## Numeric format specifier (N)
 
-The numeric ("N") format specifier converts a number to a string of the form "-d,ddd,ddd.ddd…", where "-" indicates a negative number symbol if required, "d" indicates a digit (0-9), "," indicates a group separator, and "." indicates a decimal point symbol. The precision specifier indicates the desired number of digits after the decimal point. If the precision specifier is omitted, the number of decimal places is defined by the current culture.
+The numeric ("N") format specifier converts a number to a string of the form "-d,ddd,ddd.ddd...", where "-" indicates a negative number symbol if required, "d" indicates a digit (0-9), "," indicates a group separator, and "." indicates a decimal point symbol. The precision specifier indicates the desired number of digits after the decimal point. If the precision specifier is omitted, the number of decimal places is defined by the current culture.
 
 The result string is affected by the formatting information of the current culture.
 
@@ -363,7 +363,7 @@ Some descriptions of standard numeric format specifiers refer to integral or flo
 
 ### Floating-point infinities and NaN
 
-Regardless of the format string, if the value of a `Decimal.Type`, `Single.Type` or `Double.Type` floating-point type is positive infinity, negative infinity, or not a number (NaN), the formatted string is the value of the respective [Number.PositiveInfinity](number-positiveinfinity.md), [Number.NegativeInfinity](number-negativeinfinity.md), or [Number.NaN](number-nan.md) constants specified by the currently applicable culture.
+Regardless of the format string, if the value of a `Decimal.Type`, `Single.Type` or `Double.Type` floating-point type is positive infinity, negative infinity, or not a number (NaN), the formatted string is the value of the respective [`Number.PositiveInfinity`](number-positiveinfinity.md), [`Number.NegativeInfinity`](number-negativeinfinity.md), or [`Number.NaN`](number-nan.md) constants specified by the currently applicable culture.
 
 ## Code example
 
@@ -376,7 +376,7 @@ let
 
     // Output floating point values
     floating = Double.From(10761.937554),
-    #"Floating results" = 
+    #"Floating results" =
     {
         Text.Format("C: #{0}", {Number.ToText(floating, "C", culture)}),         // Displays "C: $10,761.94"
         Text.Format("E: #{0}", {Number.ToText(floating, "E03", culture)}),       // Displays "E: 1.076E+004"
@@ -385,7 +385,7 @@ let
         Text.Format("N: #{0}", {Number.ToText(floating, "N03", culture)}),       // Displays "N: 10,761.938"
         Text.Format("P: #{0}", {Number.ToText(floating/10000, "P02", culture)})  // Displays "P: 107.62%"
     },
-    
+
     // Output integral values
     integral = Int32.From(8395),
     #"Integral results" =
@@ -407,7 +407,7 @@ in
 
 ## Related content
 
-- [How culture affects text formatting](how-culture-affects-text-formatting.md)
-- [Number type conversion](type-conversion.md#number)
-- [Data Types in Power Query](/power-query/data-types)
-- [Custom Numeric Format Strings](custom-numeric-format-strings.md)
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)
+* [Number type conversion](type-conversion.md#number)
+* [Data Types in Power Query](/power-query/data-types)
+* [Custom Numeric Format Strings](custom-numeric-format-strings.md)

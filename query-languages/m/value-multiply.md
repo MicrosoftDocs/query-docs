@@ -4,6 +4,7 @@ title: "Value.Multiply"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Value.Multiply
 
 ## Syntax
@@ -18,4 +19,4 @@ Value.Multiply(
 
 ## About
 
-Returns the product of multiplying `value1` by `value2`. An optional `precision` parameter may be specified, by default [Precision.Double](precision-type.md) is used.
+Returns the product of multiplying `value1` by `value2`. An optional `precision` parameter may be specified, by default [`Precision.Double`](precision-type.md) is used.

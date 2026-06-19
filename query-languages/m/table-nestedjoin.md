@@ -4,6 +4,7 @@ title: "Table.NestedJoin"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.NestedJoin
 
 ## Syntax
@@ -26,9 +27,9 @@ Joins the rows of `table1` with the rows of `table2` based on the equality of th
 
 The optional `joinKind` specifies the kind of join to perform. By default, a left outer join is performed if a `joinKind` is not specified.
 
-An optional set of `keyEqualityComparers` may be included to specify how to compare the key columns. This `keyEqualityComparers` feature is currently intended for internal use only.
+An optional set of `keyEqualityComparers` may be included to specify how to compare the key columns. This feature is currently intended for internal use only.
 
-## Example 1
+## Example
 
 Join two tables using a single key column.
 

@@ -4,6 +4,7 @@ title: "DateTimeZone.ZoneMinutes"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTimeZone.ZoneMinutes
 
 ## Syntax
@@ -16,9 +17,9 @@ DateTimeZone.ZoneMinutes(<b>dateTimeZone</b> as nullable datetimezone) as nullab
 
 Returns the time zone minutes component of a `datetimezone` value.
 
-* `dateTimeZone`: a `datetimezone` value from which the time zone minutes component is extracted. If `dateTimeZone` is `null`, the function returns `null`.
+* `dateTimeZone`: A `datetimezone` value from which the time zone minutes component is extracted. If `dateTimeZone` is `null`, the function returns `null`.
 
-## Example 1
+## Example
 
 Get the time zone minutes component of the specified `datetimezone` value.
 

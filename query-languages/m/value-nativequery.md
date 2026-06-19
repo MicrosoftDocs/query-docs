@@ -4,11 +4,13 @@ title: "Value.NativeQuery"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Value.NativeQuery
 
 ## Syntax
 
-<pre>Value.NativeQuery(
+<pre>
+Value.NativeQuery(
     <b>target</b> as any,
     <b>query</b> as text,
     optional <b>parameters</b> as any,

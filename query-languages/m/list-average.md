@@ -4,12 +4,13 @@ title: "List.Average"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Average
 
 ## Syntax
 
 <pre>
-List.Average(<b>list</b> as list, optional <b>precision</b> as nullable number) as any 
+List.Average(<b>list</b> as list, optional <b>precision</b> as nullable number) as any
 </pre>
 
 ## About

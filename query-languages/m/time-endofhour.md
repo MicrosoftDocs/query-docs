@@ -4,6 +4,7 @@ title: "Time.EndOfHour"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Time.EndOfHour
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Time.EndOfHour(<b>dateTime</b> as any) as any
 </pre>
-  
+
 ## About
 
 Returns the end of the hour represented by `dateTime`, including fractional seconds. Time zone information is preserved.

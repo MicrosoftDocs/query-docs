@@ -4,6 +4,7 @@ title: "Splitter.SplitTextByRanges"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Splitter.SplitTextByRanges
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Splitter.SplitTextByRanges(<b>ranges</b> as list, optional <b>startAtEnd</b> as nullable logical) as function
 </pre>
-  
+
 ## About
 
 Returns a function that splits text into a list of text according to the specified offsets and lengths. A null length indicates that all remaining input should be included.
@@ -46,3 +47,17 @@ in
 **Output**
 
 `{"WA", "98052"}`
+
+## Example 3
+
+Split the input into a fixed-length postal code followed by a variable-length city name.
+
+**Usage**
+
+```powerquery-m
+Splitter.SplitTextByRanges({{0, 5}, {5, null}})("98052Redmond")
+```
+
+**Output**
+
+`{"98052", "Redmond"}`

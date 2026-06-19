@@ -4,6 +4,7 @@ title: "Table.LastN"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.LastN
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Table.LastN(<b>table</b> as table, <b>countOrCondition</b> as any) as table
 </pre>
-  
+
 ## About
 
 Returns the last row(s) from the table, `table`, depending on the value of `countOrCondition`:
@@ -59,7 +60,7 @@ Table.LastN(
         [a = 5, b = 6]
     }),
     each _ [a] > 0
-
+)
 ```
 
 **Output**

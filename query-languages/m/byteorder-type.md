@@ -4,23 +4,24 @@ title: "ByteOrder.Type"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # ByteOrder.Type
 
-## Definition
+## About
 
 Specifies the byte order.
 
 ## Allowed values
 
 |Name|Value|Description|
-| ------- | -- | --------- |
-|**ByteOrder.LittleEndian**|0|The least significant byte appears first in Little Endian byte order.|
-|**ByteOrder.BigEndian**|1|The most significant byte appears first in Big Endian byte order.|
+|---|---|---|
+|`ByteOrder.LittleEndian`|0|A possible value for the `byteOrder` parameter in [`BinaryFormat.ByteOrder`](binaryformat-byteorder.md). The least significant byte appears first in Little Endian byte order.|
+|`ByteOrder.BigEndian`|1|A possible value for the `byteOrder` parameter in [`BinaryFormat.ByteOrder`](binaryformat-byteorder.md). The most significant byte appears first in Big Endian byte order.|
 
-## Remarks
+## More information
 
-The allowed values for this enumeration are possible values for the `byteOrder` parameter in [BinaryFormat.ByteOrder](binaryformat-byteorder.md).
+The allowed values for this enumeration are possible values for the `byteOrder` parameter in [`BinaryFormat.ByteOrder`](binaryformat-byteorder.md).
 
-## Applies to
+## Related content
 
 * [Binary functions](binary-functions.md)

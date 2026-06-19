@@ -4,6 +4,7 @@ title: "Date.AddMonths"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.AddMonths
 
 ## Syntax
@@ -49,6 +50,6 @@ Date.AddMonths(#datetime(2011, 5, 14, 8, 15, 22), 18)
 
 ## Related content
 
-* [#date](sharpdate.md)
-* [#datetime](sharpdatetime.md)
-* [#datetimezone](sharpdatetimezone.md)
+* [`#date`](sharpdate.md)
+* [`#datetime`](sharpdatetime.md)
+* [`#datetimezone`](sharpdatetimezone.md)

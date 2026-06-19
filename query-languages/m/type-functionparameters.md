@@ -4,6 +4,7 @@ title: "Type.FunctionParameters"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Type.FunctionParameters
 
 ## Syntax
@@ -11,12 +12,12 @@ ms.topic: reference
 <pre>
 Type.FunctionParameters(<b>type</b> as type) as record
 </pre>
-  
+
 ## About
 
 Returns a record with field values set to the name of the parameters of `type`, and their values set to their corresponding types.
 
-## Example 1
+## Example
 
 Find the types of the parameters to the function `(x as number, y as text)`.
 

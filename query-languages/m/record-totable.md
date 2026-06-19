@@ -4,6 +4,7 @@ title: "Record.ToTable"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Record.ToTable
 
 ## Syntax
@@ -11,12 +12,12 @@ ms.topic: reference
 <pre>
 Record.ToTable(<b>record</b> as record) as table
 </pre>
-  
+
 ## About
 
 Returns a table containing the columns `Name` and `Value` with a row for each field in `record`.
 
-## Example 1
+## Example
 
 Return the table from the record.
 

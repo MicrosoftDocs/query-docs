@@ -4,6 +4,7 @@ title: "Table.InsertRows"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.InsertRows
 
 ## Syntax
@@ -15,7 +16,7 @@ Table.InsertRows(
     <b>rows</b> as list
 ) as table
 </pre>
-  
+
 ## About
 
 Returns a table with the list of rows, `rows`, inserted into the `table` at the given position, `offset`. Each column in the row to insert must match the column types of the table.

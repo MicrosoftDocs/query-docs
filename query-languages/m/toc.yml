@@ -274,6 +274,8 @@ items:
         href: binary-length.md
       - name: Binary.Range
         href: binary-range.md
+      - name: Binary.Split
+        href: binary-split.md
       - name: Binary.ToList
         href: binary-tolist.md
       - name: Binary.ToText
@@ -1244,8 +1246,6 @@ items:
         href: character-tonumber.md
       - name: Guid.From
         href: guid-from.md
-      - name: Json.FromValue
-        href: json-fromvalue.md
       - name: Text.AfterDelimiter
         href: text-afterdelimiter.md
       - name: Text.At
@@ -1528,6 +1528,12 @@ items:
       href: limitclausekind-type.md
     - name: MissingField.Type
       href: missingfield-type.md
+    - name: Occurrence.Optional
+      href: occurrence-optional.md
+    - name: Occurrence.Repeating
+      href: occurrence-repeating.md
+    - name: Occurrence.Required
+      href: occurrence-required.md
     - name: Occurrence.Type
       href: occurrence-type.md
     - name: ODataOmitValues.Type

@@ -4,6 +4,7 @@ title: "Text.Middle"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Middle
 
 ## Syntax
@@ -15,7 +16,7 @@ Text.Middle(
     optional <b>count</b> as nullable number
 ) as nullable text
 </pre>
-  
+
 ## About
 
 Returns `count` characters, or through the end of `text`; at the offset `start`.

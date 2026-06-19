@@ -4,6 +4,7 @@ title: "Date.WeekOfYear"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Date.WeekOfYear
 
 ## Syntax
@@ -16,9 +17,8 @@ Date.WeekOfYear(<b>dateTime</b> as any, optional <b>firstDayOfWeek</b> as nullab
 
 Returns a number from 1 to 54 indicating which week of the year the date, `dateTime`, falls in.
 
-- `dateTime`: A `datetime` value for which the week-of-the-year is determined.
-
-- `firstDayOfWeek`: An optional [Day.Type](day-type.md) value that indicates which day is considered the start of a new week (for example, `Day.Sunday`). If unspecified, a culture-dependent default is used.
+* `dateTime`: A `datetime` value for which the week-of-the-year is determined.
+* `firstDayOfWeek`: An optional [`Day.Type`](day-type.md) value that indicates which day is considered the start of a new week (for example, [`Day.Sunday`](day-type.md)). If unspecified, a culture-dependent default is used.
 
 ## Example 1
 
@@ -50,4 +50,4 @@ Date.WeekOfYear(#date(2011, 03, 27), Day.Monday)
 
 ## Related content
 
-- [How culture affects text formatting](how-culture-affects-text-formatting.md)
+* [How culture affects text formatting](how-culture-affects-text-formatting.md)

@@ -4,6 +4,7 @@ title: "Table.PromoteHeaders"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.PromoteHeaders
 
 ## Syntax

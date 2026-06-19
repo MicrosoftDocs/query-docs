@@ -4,6 +4,7 @@ title: "Text.Select"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Select
 
 ## Syntax
@@ -16,7 +17,7 @@ Text.Select(<b>text</b> as nullable text, <b>selectChars</b> as any) as nullable
 
 Returns a copy of the text value `text` with all the characters not in `selectChars` removed.
 
-## Example 1
+## Example
 
 Select all characters in the range of 'a' to 'z' from the text value.
 

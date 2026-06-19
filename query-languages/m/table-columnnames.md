@@ -4,6 +4,7 @@ title: "Table.ColumnNames"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.ColumnNames
 
 ## Syntax
@@ -11,12 +12,12 @@ ms.topic: reference
 <pre>
 Table.ColumnNames(<b>table</b> as table) as list
 </pre>
-  
+
 ## About
 
 Returns the column names in the table `table` as a list of text.
 
-## Example 1
+## Example
 
 Find the column names of the table.
 

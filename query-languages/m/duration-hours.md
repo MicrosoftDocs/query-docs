@@ -4,6 +4,7 @@ title: "Duration.Hours"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Duration.Hours
 
 ## Syntax
@@ -11,12 +12,12 @@ ms.topic: reference
 <pre>
 Duration.Hours(<b>duration</b> as nullable duration) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the hours portion of `duration`.
 
-## Example 1
+## Example
 
 Extract the hours from a duration value.
 

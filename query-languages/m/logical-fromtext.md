@@ -4,14 +4,15 @@ title: "Logical.FromText"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Logical.FromText
 
 ## Syntax
 
-<pre> 
+<pre>
 Logical.FromText(<b>text</b> as nullable text) as nullable logical
 </pre>
-  
+
 ## About
 
 Creates a logical value from the text value `text`, either "true" or "false". If `text` contains a different string, an error is raised. The text value `text` is case insensitive.

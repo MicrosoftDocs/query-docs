@@ -4,6 +4,7 @@ title: "Binary.InferContentType"
 ms.topic: reference
 ms.subservice: m-source
 ---
+
 # Binary.InferContentType
 
 ## Syntax

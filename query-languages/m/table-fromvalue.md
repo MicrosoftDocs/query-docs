@@ -4,14 +4,15 @@ title: "Table.FromValue"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.FromValue
 
 ## Syntax
 
 <pre>
-Table.FromValue(<b>value</b> as any, optional <b>options</b> as nullable record) as table  
+Table.FromValue(<b>value</b> as any, optional <b>options</b> as nullable record) as table
 </pre>
-  
+
 ## About
 
 Creates a table with a column containing the provided value or list of values, `value`. An optional record parameter, `options`, may be specified to control the following options:

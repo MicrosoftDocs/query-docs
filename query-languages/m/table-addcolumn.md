@@ -4,6 +4,7 @@ title: "Table.AddColumn"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.AddColumn
 
 ## Syntax
@@ -16,12 +17,12 @@ Table.AddColumn(
     optional <b>columnType</b> as nullable type
 ) as table
 </pre>
-  
+
 ## About
 
 Adds a column named `newColumnName` to the table `table`. The values for the column are computed using the specified selection function `columnGenerator` with each row taken as an input.
 
-## Example 1
+## Example
 
 Add a number column named "TotalPrice" to the table, with each value being the sum of the [Price] and [Shipping] columns.
 

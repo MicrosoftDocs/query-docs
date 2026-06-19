@@ -4,6 +4,7 @@ title: "Table.SelectColumns"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.SelectColumns
 
 ## Syntax
@@ -15,14 +16,14 @@ Table.SelectColumns(
     optional <b>missingField</b> as nullable number
 ) as table
 </pre>
-  
+
 ## About
 
 Returns the `table` with only the specified `columns`.
 
 * `table`: The provided table.
 * `columns`: The list of columns from the table `table` to return. Columns in the returned table are in the order listed in `columns`.
-* `missingField`: *(Optional)* What to do if the column does not exist. Example: [MissingField.UseNull](missingfield-type.md) or [MissingField.Ignore](missingfield-type.md).
+* `missingField`: *(Optional)* What to do if the column does not exist. Example: [`MissingField.UseNull`](missingfield-type.md) or [`MissingField.Ignore`](missingfield-type.md).
 
 ## Example 1
 
@@ -89,7 +90,7 @@ Table.SelectColumns(
 
 ## Example 4
 
-If the included column does not exist, option `MissingField.UseNull` creates a column of null values.
+If the included column does not exist, option [`MissingField.UseNull`](missingfield-type.md) creates a column of null values.
 
 **Usage**
 

@@ -4,6 +4,7 @@ title: "DateTimeZone.ToUtc"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTimeZone.ToUtc
 
 ## Syntax
@@ -11,14 +12,14 @@ ms.topic: reference
 <pre>
 DateTimeZone.ToUtc(<b>dateTimeZone</b> as nullable datetimezone) as nullable datetimezone
 </pre>
-  
+
 ## About
 
 Changes timezone information of the datetime value `dateTimeZone` to the UTC or Universal Time timezone information. If `dateTimeZone` does not have a timezone component, the UTC timezone information is added.
 
-## Example 1
+## Example
 
-Change timezone information for #datetimezone(2010, 12, 31, 11, 56, 02, 7, 30) to UTC timezone.
+Change timezone information for `#datetimezone(2010, 12, 31, 11, 56, 02, 7, 30)` to UTC timezone.
 
 **Usage**
 

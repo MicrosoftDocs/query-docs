@@ -4,6 +4,7 @@ title: "WebAction.Request"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # WebAction.Request
 
 ## Syntax
@@ -15,7 +16,7 @@ WebAction.Request(
     optional <b>options</b> as nullable record
 ) as action
 </pre>
-  
+
 ## About
 
 Creates an action that, when executed, will return the results of performing a `method` request against `url` using HTTP as a binary value. An optional record parameter, `options`, may be provided to specify additional properties. The record can contain the following fields:
@@ -30,9 +31,9 @@ Creates an action that, when executed, will return the results of performing a `
 * `RelativePath`: Specifying this value as text appends it to the base URL before making the request.
 * `Content`: Specifying this value will cause its contents to become the body of the HTTP request.
 
-Note that this function is disabled in most contexts. Consider using [Web.Contents](/powerquery-m/web-contents) or [Web.Headers](/powerquery-m/web-headers) instead.
+Note that this function is disabled in most contexts. Consider using [`Web.Contents`](web-contents.md) or [`Web.Headers`](web-headers.md) instead.
 
-## Example 1
+## Example
 
 Perform a GET request against Bing.
 

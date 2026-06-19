@@ -4,6 +4,7 @@ title: "Text.From"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.From
 
 ## Syntax
@@ -11,7 +12,7 @@ ms.topic: reference
 <pre>
 Text.From(<b>value</b> as any, optional <b>culture</b> as nullable text) as nullable text
 </pre>
-  
+
 ## About
 
 Returns the text representation of a specified value.

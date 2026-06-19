@@ -37,7 +37,7 @@ items:
             href: best-practices/dax-countrows.md
           - name: "Use variables to improve formulas"
             href: best-practices/dax-variables.md
-          - name: "Use DAX user-defined functions (preview)"
+          - name: "Use DAX user-defined functions"
             href: best-practices/dax-user-defined-functions.md
     - name: DAX functions
       expanded: true
@@ -344,6 +344,12 @@ items:
               href: info-calculationgroups-function-dax.md
             - name: INFO.CALCULATIONITEMS
               href: info-calculationitems-function-dax.md
+            - name: INFO.CALENDARCOLUMNGROUPS
+              href: info-calendarcolumngroups-function-dax.md
+            - name: INFO.CALENDARCOLUMNREFERENCES
+              href: info-calendarcolumnreferences-function-dax.md
+            - name: INFO.CALENDARS
+              href: info-calendars-function-dax.md
             - name: INFO.CATALOGS
               href: info-catalogs-function-dax.md
             - name: INFO.CHANGEDPROPERTIES
@@ -456,6 +462,8 @@ items:
               href: info-tables-function-dax.md
             - name: INFO.TABLESTORAGES
               href: info-tablestorages-function-dax.md
+            - name: INFO.USERDEFINEDFUNCTIONS
+              href: info-userdefinedfunctions-function-dax.md
             - name: INFO.VARIATIONS
               href: info-variations-function-dax.md
         - name: Information functions
@@ -528,6 +536,8 @@ items:
               href: issubtotal-function-dax.md
             - name: ISTEXT
               href: istext-function-dax.md
+            - name: NAMEOF
+              href: nameof-function-dax.md
             - name: NONVISUAL
               href: nonvisual-function-dax.md
             - name: SELECTEDMEASURE
@@ -536,6 +546,8 @@ items:
               href: selectedmeasureformatstring-function-dax.md
             - name: SELECTEDMEASURENAME
               href: selectedmeasurename-function-dax.md
+            - name: TABLEOF
+              href: tableof-function-dax.md
             - name: USERCULTURE
               href: userculture-function-dax.md
             - name: USERNAME

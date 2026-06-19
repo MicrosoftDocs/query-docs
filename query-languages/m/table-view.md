@@ -4,6 +4,7 @@ title: "Table.View"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.View
 
 ## Syntax
@@ -22,17 +23,17 @@ Handler functions must return a value that is semantically equivalent to the res
 
 If a handler function raises an error, the default behavior of the operation is applied to the view.
 
-**Table.View** can be used to implement folding to a data source&mdash;the translation of M queries into source-specific queries (for example, to create T-SQL statements from M queries).
+`Table.View` can be used to implement folding to a data source – the translation of M queries into source-specific queries (for example, to create T-SQL statements from M queries).
 
-Refer to the published [Power Query custom connector documentation](/power-query/samples/trippin/10-tableview1/readme#using-tableview) for a more complete description of **Table.View**.
+Refer to the published [Power Query custom connector documentation](/power-query/samples/trippin/10-tableview1/readme#using-tableview) for a more complete description of `Table.View`.
 
-## Example 1
+## Example
 
 Create a basic view that doesn't require accessing the rows in order to determine the type or the row count.
 
 **Usage**
 
-``` powerquery-m
+```powerquery-m
 Table.View(
     null,
     [

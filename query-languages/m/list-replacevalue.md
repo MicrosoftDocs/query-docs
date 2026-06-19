@@ -4,6 +4,7 @@ title: "List.ReplaceValue"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.ReplaceValue
 
 ## Syntax
@@ -16,12 +17,12 @@ List.ReplaceValue(
     <b>replacer</b> as function
 ) as list
 </pre>
-  
+
 ## About
 
 Searches a list of values, `list`, for the value `oldValue` and replaces each occurrence with the replacement value `newValue`.
 
-## Example 1
+## Example
 
 Replace all the "a" values in the list {"a", "B", "a", "a"} with "A".
 
@@ -33,4 +34,4 @@ List.ReplaceValue({"a", "B", "a", "a"}, "a", "A", Replacer.ReplaceText)
 
 **Output**
 
-{"A", "B", "A", "A"}
+`{"A", "B", "A", "A"}`

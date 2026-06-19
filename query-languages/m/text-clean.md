@@ -4,6 +4,7 @@ title: "Text.Clean"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.Clean
 
 ## Syntax
@@ -11,12 +12,12 @@ ms.topic: reference
 <pre>
 Text.Clean(<b>text</b> as nullable text) as nullable text
 </pre>
-  
+
 ## About
 
 Returns a text value with all control characters of `text` removed.
 
-## Example 1
+## Example
 
 Remove line feeds and other control characters from a text value.
 

@@ -4,14 +4,15 @@ title: "Record.HasFields"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Record.HasFields
 
 ## Syntax
 
 <pre>
-Record.HasFields(<b>record</b> as record, <b>fields</b> as any) as logical 
+Record.HasFields(<b>record</b> as record, <b>fields</b> as any) as logical
 </pre>
-  
+
 ## About
 
 Indicates whether the record `record` has the fields specified in `fields`, by returning a logical value (true or false). Multiple field values can be specified using a list.

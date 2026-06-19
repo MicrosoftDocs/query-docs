@@ -4,6 +4,7 @@ title: "Xml.Document"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Xml.Document
 
 ## Syntax

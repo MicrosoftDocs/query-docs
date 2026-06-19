@@ -4,19 +4,20 @@ title: "Duration.TotalMinutes"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Duration.TotalMinutes
 
 ## Syntax
 
 <pre>
-Duration.TotalMinutes(<b>duration</b> as nullable duration) as nullable number 
+Duration.TotalMinutes(<b>duration</b> as nullable duration) as nullable number
 </pre>
-  
+
 ## About
 
 Returns the total minutes spanned by `duration`.
 
-## Example 1
+## Example
 
 Find the total minutes spanned by a duration value.
 

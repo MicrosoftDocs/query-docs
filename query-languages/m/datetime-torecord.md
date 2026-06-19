@@ -4,6 +4,7 @@ title: "DateTime.ToRecord"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # DateTime.ToRecord
 
 ## Syntax
@@ -11,14 +12,14 @@ ms.topic: reference
 <pre>
 DateTime.ToRecord(<b>dateTime</b> as datetime) as record
 </pre>
-  
+
 ## About
 
 Returns a record containing the parts of the given datetime value, `dateTime`.
 
 * `dateTime`: A `datetime` value for from which the record of its parts is to be calculated.
 
-## Example 1
+## Example
 
 Convert the `#datetime(2011, 12, 31, 11, 56, 2)` value into a record containing Date and Time values.
 

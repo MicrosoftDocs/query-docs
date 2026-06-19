@@ -4,6 +4,7 @@ title: "Number.ToText"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.ToText
 
 ## Syntax
@@ -15,7 +16,7 @@ Number.ToText(
     optional <b>culture</b> as nullable text
 ) as nullable text
 </pre>
-  
+
 ## About
 
 Converts the numeric value `number` to a text value according to the format specified by `format`.

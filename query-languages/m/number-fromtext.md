@@ -4,6 +4,7 @@ title: "Number.FromText"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Number.FromText
 
 ## Syntax

@@ -4,6 +4,7 @@ title: "Text.PositionOfAny"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Text.PositionOfAny
 
 ## Syntax
@@ -15,7 +16,7 @@ Text.PositionOfAny(
     optional <b>occurrence</b> as nullable number
 ) as any
 </pre>
-  
+
 ## About
 
 Returns the first position of any character in the list `characters` that is found in `text`. An optional parameter `occurrence` may be used to specify which occurrence position to return.
@@ -46,4 +47,4 @@ Text.PositionOfAny("Hello, World!", {"H", "W"}, Occurrence.All)
 
 **Output**
 
-{0, 7}
+`{0, 7}`

@@ -4,6 +4,7 @@ title: "List.PositionOf"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.PositionOf
 
 ## Syntax
@@ -16,14 +17,14 @@ List.PositionOf(
     optional <b>equationCriteria</b> as any
 ) as any
 </pre>
-  
+
 ## About
 
 Returns the offset at which the specified value appears in a list. Returns -1 if the value doesn't appear.
 
 * `list`: The list to search.
 * `value`: The value to find in the list.
-* `occurrence`: (Optional) The specific occurrence to report. This value can be [Occurrence.First](occurrence-type.md), [Occurrence.Last](occurrence-type.md), or [Occurrence.All](occurrence-type.md). If no `occurrence` is specified, `Occurrence.First` is used.
+* `occurrence`: (Optional) The specific occurrence to report. This value can be [`Occurrence.First`](occurrence-type.md), [`Occurrence.Last`](occurrence-type.md), or [`Occurrence.All`](occurrence-type.md). If no `occurrence` is specified, [`Occurrence.First`](occurrence-type.md) is used.
 * `equationCriteria`: (Optional) Specifies how equality is determined when comparing values. This parameter can be a key selector function, a comparer function, or a list containing both a key selector and a comparer.
 
 ## Example 1
@@ -76,9 +77,9 @@ Find the position in the list of the last occurrence of the word dog, ignoring c
 ```powerquery-m
 let
     Source = List.PositionOf(
-        {"dog", "cat", "DOG", "pony", "bat", "rabbit", "dOG"}, 
-        "dog", 
-        Occurrence.Last, 
+        {"dog", "cat", "DOG", "pony", "bat", "rabbit", "dOG"},
+        "dog",
+        Occurrence.Last,
         Comparer.OrdinalIgnoreCase
     )
 in
@@ -99,9 +100,9 @@ Find the position in the list that's within two units of the number 28.
 let
     Source = { 10, 15, 20, 25, 30 },
     Position = List.PositionOf(
-        Source, 
+        Source,
         28,
-        Occurrence.First, 
+        Occurrence.First,
         (x, y) => Number.Abs(x - y) <= 2
     )
 in

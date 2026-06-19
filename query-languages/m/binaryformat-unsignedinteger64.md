@@ -4,6 +4,7 @@ title: "BinaryFormat.UnsignedInteger64"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # BinaryFormat.UnsignedInteger64
 
 ## Syntax

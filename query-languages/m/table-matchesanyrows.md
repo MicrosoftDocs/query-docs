@@ -4,14 +4,15 @@ title: "Table.MatchesAnyRows"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Table.MatchesAnyRows
 
 ## Syntax
 
 <pre>
-Table.MatchesAnyRows(<b>table</b> as table, <b>condition</b> as function) as logical 
+Table.MatchesAnyRows(<b>table</b> as table, <b>condition</b> as function) as logical
 </pre>
-  
+
 ## About
 
 Indicates whether any the rows in the `table` match the given `condition`. Returns `true` if any of the rows match, `false` otherwise.

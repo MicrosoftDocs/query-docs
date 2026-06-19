@@ -4,6 +4,7 @@ title: "List.Reverse"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Reverse
 
 ## Syntax
@@ -11,12 +12,12 @@ ms.topic: reference
 <pre>
 List.Reverse(<b>list</b> as list) as list
 </pre>
-  
+
 ## About
 
 Returns a list with the values in the list `list` in reversed order.
 
-## Example 1
+## Example
 
 Create a list from {1..10} in reverse order.
 

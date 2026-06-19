@@ -4,6 +4,7 @@ title: "Binary.Combine"
 ms.topic: reference
 ms.subservice: m-source
 ---
+
 # Binary.Combine
 
 ## Syntax

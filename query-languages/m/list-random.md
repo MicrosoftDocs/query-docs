@@ -4,6 +4,7 @@ title: "List.Random"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # List.Random
 
 ## Syntax
@@ -11,13 +12,13 @@ ms.topic: reference
 <pre>
 List.Random(<b>count</b> as number, optional <b>seed</b> as nullable number) as list
 </pre>
-  
+
 ## About
 
 Returns a list of random numbers between 0 and 1, given the number of values to generate and an optional seed value.
 
 * `count`: The number of random values to generate.
-* `seed`: _[Optional]_ A numeric value used to seed the random number generator. If omitted a unique list of random numbers is generated each time you call the function. If you specify the seed value with a number every call to the function generates the same list of random numbers.
+* `seed`: *(Optional)* A numeric value used to seed the random number generator. If omitted a unique list of random numbers is generated each time you call the function. If you specify the seed value with a number every call to the function generates the same list of random numbers.
 
 ## Example 1
 

@@ -4,6 +4,7 @@ title: "Replacer.ReplaceValue"
 ms.subservice: m-source
 ms.topic: reference
 ---
+
 # Replacer.ReplaceValue
 
 ## Syntax
@@ -12,14 +13,15 @@ ms.topic: reference
 Replacer.ReplaceValue(
     <b>value</b> as any,
     <b>old</b> as any,
-    <b>new</b> as any) as any
+    <b>new</b> as any
+) as any
 </pre>
-  
+
 ## About
 
-Replaces the `old` value in the original `value` with the `new` value. This replacer function can be used in `List.ReplaceValue` and `Table.ReplaceValue`.
+Replaces the `old` value in the original `value` with the `new` value. This replacer function can be used in [`List.ReplaceValue`](list-replacevalue.md) and [`Table.ReplaceValue`](table-replacevalue.md).
 
-## Example 1
+## Example
 
 Replace the value 11 with the value 10.
 
