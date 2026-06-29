@@ -3,6 +3,8 @@ title: "Write DAX queries with Copilot"
 description: Use Copilot to create a DAX queries query. Type in a prompt to describe what DAX query you would like generated, and Copilot can create it.
 ms.service: powerbi 
 ms.date: 10/21/2024
+ms.collection: ce-skilling-ai-copilot
+ms.update-cycle: 180-days
 ms.reviewer: 
 ms.topic: how-to
 author: DataZoeMS
