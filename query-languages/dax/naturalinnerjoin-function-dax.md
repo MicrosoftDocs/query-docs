@@ -28,7 +28,7 @@ A table which includes only rows for which the values in the common columns spec
 
 ## Remarks
 
-- Tables are joined on common columns (by name) in the two tables. If the two tables have no common column names, an error is returned.
+- Tables are joined based on an existing relationship existing between them in the model. For the join to work, the names of the columns used for the joining need to be distinct, otherwise an error is returned.
 
 - There is no sort order guarantee for the results.
 
