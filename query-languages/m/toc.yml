@@ -1026,6 +1026,8 @@ items:
         href: table-approximaterowcount.md
       - name: Table.Buffer
         href: table-buffer.md
+      - name: Table.ClearDown
+        href: table-cleardown.md
       - name: Table.Column
         href: table-column.md
       - name: Table.ColumnCount
