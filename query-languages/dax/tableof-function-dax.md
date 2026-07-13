@@ -4,7 +4,7 @@ title: "TABLEOF function (DAX)"
 ---
 # TABLEOF
 
-[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
 
 Returns a reference to the table associated with a specified column, measure, or calendar.
 
