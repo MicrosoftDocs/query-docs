@@ -5,7 +5,7 @@ ms.topic: reference
 ---
 # LOOKUPVALUE
 
-[!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
+[!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
 
 Returns the value for the row that meets all criteria specified by one or more search conditions.
 
