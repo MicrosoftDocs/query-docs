@@ -8,9 +8,6 @@ metadata:
   description: Data Analysis Expressions (DAX) is a library of functions and operators that can be combined to build calculation formula expressions. 
   ms.service: powerbi 
   ms.topic: landing-page
-  ms.collection: 
-  author: kfollis
-  ms.author: kfollis 
   ms.date: 03/04/2026
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
