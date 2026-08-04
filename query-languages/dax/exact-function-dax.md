@@ -2,12 +2,14 @@
 description: "Learn more about: EXACT"
 title: "EXACT function (DAX)"
 ms.topic: reference
+ms.date: 06/29/2026
+ms.custom: ExampleTypeAW2020
 ---
 # EXACT
 
 [!INCLUDE[applies-to-measures-columns-tables-visual-calculations](includes/applies-to-measures-columns-tables-visual-calculations.md)]
 
-Compares two text strings and returns `TRUE` if they are exactly the same, otherwise returns `FALSE`. EXACT is case-sensitive but ignores formatting differences. EXACT is case-sensitive
+Compares two text strings and returns `TRUE` if they're exactly the same, otherwise returns `FALSE`. EXACT is case-sensitive but ignores formatting differences.
 
 ## Syntax
 
@@ -28,12 +30,13 @@ True or False. (Boolean)
 
 ## Example
 
-The following formula used in a calculated column in the Product table checks the value of Product for the current row against the value of Model for the current row, and returns True if they are the same, and returns False if they are different.
+The following formula in a calculated column in the Product table checks the value of Product for the current row against the value of Model for the current row. It returns True if they're the same, and False if they're different.
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
 
 ```dax
-= EXACT([Product], [Model])
+=
+EXACT ( [Product], [Model] )
 ```
 
 ## Related content

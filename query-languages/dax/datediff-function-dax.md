@@ -2,6 +2,8 @@
 description: "Learn more about: DATEDIFF"
 title: "DATEDIFF function (DAX)"
 ms.topic: reference
+ms.date: 06/29/2026
+ms.custom: ExampleTypeAW2020
 ---
 # DATEDIFF
 
@@ -29,8 +31,7 @@ The count of interval boundaries between two dates.
 
 ## Remarks
 
-A positive result is returned if Date2 is larger than Date1.
-A negative result is returned if Date1 is larger than Date2.
+DATEDIFF returns a positive result if Date2 is larger than Date1. It returns a negative result if Date1 is larger than Date2.
 
 ## Example
 
@@ -40,16 +41,18 @@ The following DAX query:
 
 ```dax
 EVALUATE
-VAR StartDate =  DATE ( 2019, 07, 01 )
-VAR EndDate =    DATE ( 2021, 12, 31 )
+VAR StartDate =
+    DATE ( 2019, 07, 01 )
+VAR EndDate =
+    DATE ( 2021, 12, 31 )
 RETURN
     {
-        ( "Year",     DATEDIFF ( StartDate, EndDate, YEAR ) ),
-        ( "Quarter",  DATEDIFF ( StartDate, EndDate, QUARTER ) ),
-        ( "Month",    DATEDIFF ( StartDate, EndDate, MONTH ) ),
-        ( "Week",     DATEDIFF ( StartDate, EndDate, WEEK ) ),
-        ( "Day",      DATEDIFF ( StartDate, EndDate, DAY ) )
-    } 
+        ( "Year", DATEDIFF ( StartDate, EndDate, YEAR ) ),
+        ( "Quarter", DATEDIFF ( StartDate, EndDate, QUARTER ) ),
+        ( "Month", DATEDIFF ( StartDate, EndDate, MONTH ) ),
+        ( "Week", DATEDIFF ( StartDate, EndDate, WEEK ) ),
+        ( "Day", DATEDIFF ( StartDate, EndDate, DAY ) )
+    }
 ```
 
 Returns the following:
