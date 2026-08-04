@@ -2,6 +2,8 @@
 description: "Learn more about: LEFT"
 title: "LEFT function (DAX)"
 ms.topic: reference
+ms.date: 07/08/2026
+ms.custom: ExampleTypeAW2020
 ---
 # LEFT
 
@@ -36,13 +38,19 @@ A text string.
 
 ## Example
 
+[!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
+
 The following example returns the first five characters of the company city in the column [City] and the first five letters of the reseller key in the column [ResellerKey] and concatenates them, to create an identifier.
 
 ```dax
-= CONCATENATE ( LEFT ( 'Reseller'[City], 5 ), LEFT ( 'Reseller'[ResellerKey], 5 ) )
+=
+CONCATENATE (
+    LEFT ( 'Reseller'[City], 5 ),
+    LEFT ( 'Reseller'[ResellerKey], 5 )
+)
 ```
 
-If the `num_chars` argument is a number that is larger than the number of characters available, the function returns the maximum characters available and does not raise an error. For example, the column [ResellerKey] contains numbers such as 5, 24 and 312; therefore the result also has variable length.
+If the `num_chars` argument is larger than the number of characters available, the function returns the maximum characters available and doesn't raise an error. For example, the column [ResellerKey] contains numbers such as 5, 24, and 312, so the result also has variable length.
 
 ## Related content
 

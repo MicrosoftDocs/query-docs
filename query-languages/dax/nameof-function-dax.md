@@ -1,6 +1,8 @@
 ---
 description: "Learn more about: NAMEOF"
 title: "NAMEOF function (DAX)"
+ms.date: 07/08/2026
+ms.custom: ExampleTypeAW2020
 ---
 
 # NAMEOF
@@ -29,10 +31,10 @@ The `component` parameter accepts the following values:
 
 |Value|Description|
 |--------|--------------|
-|`TABLE`|Returns the table name. Returns an error if the object is not associated with a table (e.g., a calendar).|
-|`COLUMN`|Returns the column name. Returns an error if the object is not a column.|
-|`MEASURE`|Returns the measure name. Returns an error if the object is not a measure.|
-|`CALENDAR`|Returns the calendar name. Returns an error if the object is not a calendar.|
+|`TABLE`|Returns the table name. Returns an error if the object isn't associated with a table (for example, a calendar).|
+|`COLUMN`|Returns the column name. Returns an error if the object isn't a column.|
+|`MEASURE`|Returns the measure name. Returns an error if the object isn't a measure.|
+|`CALENDAR`|Returns the calendar name. Returns an error if the object isn't a calendar.|
 |`FULL`|(Default) Returns the fully qualified name of the object.|
 |`SELF`|Returns the name of the object itself: the column or measure name for columns and measures, or the table/calendar name for tables and calendars.|
 |`PARENT`|Returns the parent table name for columns and measures. Returns an error for tables and calendars.|
@@ -59,7 +61,7 @@ A text string with the requested name, formatted based on the component and esca
   - For measures: `'TableName'[MeasureName]`.
   - For calendars: `'CalendarName'`.
   - For variation columns: `'TableName'[ColumnName].[VariationName]`.
-- Variables and dynamic expressions are not supported as arguments to NAMEOF.
+- Variables and dynamic expressions aren't supported as arguments to NAMEOF.
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ### Component behavior by input type
@@ -88,20 +90,22 @@ The `escaped` parameter controls how the name produced by the `component` step i
 | `[Order Quantity]` | `[Order Quantity]` | `Order Quantity` | `[Order Quantity]` |
 
 > [!NOTE]
-> `UNESCAPED` returns an error for fully qualified names (names that include both a table and column/measure component), because the result would be ambiguous without delimiters.
+> `UNESCAPED` returns an error for fully qualified names (names that include both a table and column/measure component), because the result is ambiguous without delimiters.
 
 #### Special character escaping rules
 
 The following escaping rules apply within DAX name delimiters:
 
 - **Table names (single-quote delimited):** A literal single quote (`'`) in a table name is escaped as two single quotes (`''`).
-- **Column and measure names (bracket delimited):** A literal closing bracket (`]`) in a column or measure name is escaped as `]]`. An opening bracket (`[`) does not require escaping.
+- **Column and measure names (bracket delimited):** A literal closing bracket (`]`) in a column or measure name is escaped as `]]`. An opening bracket (`[`) doesn't require escaping.
 
 
 | Fully escaped name | `ESCAPED` | `UNESCAPED` | `MINIMALLYESCAPED` |
 |---|---|---|---|
 | `'Ta''''ble'` (table with `'` in name) | `'Ta''''ble'` | `Ta''ble` | `Ta''ble` |
 | `[colu[]]mn]` (column with `]` in name) | `[colu[]]mn]` | `colu[]mn` | `[colu[]]mn]` |
+
+[!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
 
 ## Example 1
 
