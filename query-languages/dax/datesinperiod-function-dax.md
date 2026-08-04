@@ -2,6 +2,8 @@
 description: "Learn more about: DATESINPERIOD"
 title: "DATESINPERIOD function (DAX)"
 ms.topic: reference
+ms.date: 06/29/2026
+ms.custom: ExampleTypeAW2020
 ---
 # DATESINPERIOD
 
@@ -15,19 +17,19 @@ This function is suited to pass as a filter to the [CALCULATE](calculate-functio
 
 ## Syntax
 
-```
-DATESINPERIOD(<dates> or <calendar>, <start_date>, <number_of_intervals>, <interval>[, <endbehavior>])
+```dax
+DATESINPERIOD(<dates or calendar>, <start_date>, <number_of_intervals>, <interval>[, <endbehavior>])
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`dates or calendar`|A column that contains dates or a calendar reference|
+|`dates or calendar`|A column that contains either dates or a calendar reference|
 |`start_date`|A date expression. If calendar syntax is used, please use the same data type as the primary column tagged to the Day category.|
 |`number_of_intervals`|An integer that specifies the number of intervals to add to, or subtract from, the dates.|
-|`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `DAY`, `WEEK`, `MONTH`, `QUARTER`, and `YEAR`. Week could only be used with calendar.|
-|`endbehavior`| Only applicable when a calendar reference is provided. Optional. Controls how the end date is aligned when the destination interval is longer than the source span. Valid values are: PRECISE (default) and ENDALIGNED.|
+|`interval`|The interval by which to shift the dates. The value for interval can be one of the following: `DAY`, `WEEK`, `MONTH`, `QUARTER`, and `YEAR`. You can only use `WEEK` with a calendar reference.|
+|`endbehavior`| Only applicable when you provide a calendar reference. Optional. Controls how the end date aligns when the destination interval is longer than the source span. Valid values are: `PRECISE` (default) and `ENDALIGNED`.|
 
 ## Return value
 
@@ -44,9 +46,9 @@ For calendar input, a table that contains all primary tagged columns and all tim
 
 - When `endbehavior` is provided (calendar time intelligence only), DATESINPERIOD forwards the value to DATEADD's `Extension` parameter. See [Understanding endbehavior](#understanding-endbehavior-parameter-for-calendar-time-intelligence) for detailed examples.
 
-- For date column input, the returned table can only contain dates stored in the `dates` column. So, for example, if the `dates` column starts from July 1, 2017, and the `start_date` value is July 1, 2016, the returned table will start from July 1, 2017.
+- For date column input, the returned table can only contain dates stored in the `dates` column. So, for example, if the `dates` column starts from July 1, 2017, and the `start_date` value is July 1, 2016, the returned table starts from July 1, 2017.
 
-- For calendar input, if the input date is not found in tagged day column, the result will be undefined. Please provide valid date input.
+- For calendar input, if the input date isn't found in the tagged day column, the result is undefined.
 
 - For calendar input, use the same data type and format as the tagged day column for the start date. For example, if the column uses the format YYYY-Sn-Qn-Mnn-Wnn-Dnn (e.g., "2014-S2-Q4-M11-W45-D03"), the start date must follow the same format (e.g., "2015-S2-Q4-M11-W45-D03"). Otherwise, the behavior is undefined.
 
@@ -56,7 +58,7 @@ For calendar input, a table that contains all primary tagged columns and all tim
 
 The following **Sales** table measure definition uses the DATESINPERIOD function to calculate revenue for the prior year (PY).
 
-Notice the formula uses the [MAX](max-function-dax.md) function. This function returns the latest date that's in the filter context. So, the DATESINPERIOD function returns a table of dates beginning from the latest date for the last year.
+The formula uses the [MAX](max-function-dax.md) function. This function returns the latest date that's in the filter context. So, the DATESINPERIOD function returns a table of dates beginning from the latest date for the last year.
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
 
@@ -68,13 +70,13 @@ CALCULATE (
 )
 ```
 
-Consider that the report is filtered by the month of June 2020. The MAX function returns June 30, 2020. The DATESINPERIOD function then returns a date range from July 1, 2019 until June 30, 2020. It's a year of date values starting from June 30, 2020 for the last year.
+The report is filtered by the month of June 2020. The MAX function returns June 30, 2020. The DATESINPERIOD function then returns a date range from July 1, 2019 until June 30, 2020. It's a year of date values starting from June 30, 2020 for the last year.
 
 ## Example for calendar based time intelligence
 
 The following **Sales** table measure definition uses the DATESINPERIOD function to calculate revenue for the prior year (PY).
 
-Notice the formula uses the [MAX](max-function-dax.md) function. This function returns the latest date that's in the filter context. So, the DATESINPERIOD function returns primary columns beginning from latest date for the last year. DateKey is used as an example to show that the "Day" category can be tagged with a column that is not date-typed.
+The formula uses the [MAX](max-function-dax.md) function. This function returns the latest date that's in the filter context. So, the DATESINPERIOD function returns primary columns beginning from latest date for the last year. We use DateKey as an example to show that the "Day" category can be tagged with a column that isn't date-typed.
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
 
@@ -86,7 +88,7 @@ CALCULATE (
 )
 ```
 
-Consider that the report is filtered by the month of June 2020. The MAX function returns June 30, 2020. The DATESINPERIOD function then returns a range from July 1, 2019 until June 30, 2020. It's a year  starting from June 30, 2020 for the last year.
+The report is filtered by the month of June 2020. The MAX function returns June 30, 2020. The DATESINPERIOD function then returns a range from July 1, 2019 until June 30, 2020. It's a year  starting from June 30, 2020 for the last year.
 
 ## Understanding endbehavior parameter for calendar time intelligence
 
@@ -115,7 +117,7 @@ The following comparison assumes the current filter context ends on **February&n
 | `EndAligned`| 2022-08-31        | `(2022-08-31, 2023-02-28]` → Sep&nbsp;1&nbsp;2022 – Feb&nbsp;28&nbsp;2023 | Sep, Oct, Nov, Dec, Jan, Feb (6) |
 
 ## Differences in behavior between classic and calendar time intelligence
-Internally, DATESINPERIOD uses the same logic as DATEADD to determine the end date from the start date, and then calculates the range. Some scenarios may yield different results when comparing classic and calendar time intelligence. For example, in a lunar year, DATEADD produces different results at the date granularity, so the result of DATESINPERIOD will differ as well. In calendar-based time intelligence, shifting Feb 29 2008 back one year results in Mar 1 2007, because it is treated as the 60th day of the year. In classic time intelligence, the same shift returns Feb 28 2007. Because the end date differs, the output of DATESINPERIOD will also differ. The workaround is to use DATEADD(Calendar, -<number of a year>, month) to calculate end date. For example, if a year has 13 months in calendar, use DATEADD(Calendar, -13, month). This approach will shift by month so Feb 2008 will go to Feb 2007. Then, write a custom datesInPeriod based on the new end date.
+Internally, DATESINPERIOD uses the same logic as DATEADD to determine the end date from the start date, and then calculates the range. Some scenarios can yield different results when comparing classic and calendar time intelligence. For example, in a lunar year, DATEADD produces different results at the date granularity, so the result of DATESINPERIOD differs as well. In calendar-based time intelligence, shifting Feb 29 2008 back one year results in Mar 1 2007, because it's treated as the 60th day of the year. In classic time intelligence, the same shift returns Feb 28 2007. Because the end date differs, the output of DATESINPERIOD also differs. The workaround is to use DATEADD(Calendar, -<number of a year>, month) to calculate end date. For example, if a year has 13 months in calendar, use DATEADD(Calendar, -13, month). This approach shifts by month so Feb 2008 goes to Feb 2007. Then, write a custom datesInPeriod based on the new end date.
 
 ## Related content
 

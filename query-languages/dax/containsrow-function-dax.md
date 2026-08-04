@@ -2,6 +2,8 @@
 description: "Learn more about: CONTAINSROW function"
 title: "CONTAINSROW function"
 ms.topic: reference
+ms.date: 06/29/2026
+ms.custom: ExampleTypeAW2020
 ---
 # CONTAINSROW function
 
@@ -28,7 +30,7 @@ CONTAINSROW(<Table>, <Value> [, <Value> [, …] ] )
 
 ## Remarks
 
-- Except syntax, the `IN` operator and CONTAINSROW function are functionally equivalent.
+- Other than syntax, the `IN` operator and CONTAINSROW function are functionally equivalent.
 
     ```dax
     <scalarExpr> IN <tableExpr> 
@@ -36,9 +38,9 @@ CONTAINSROW(<Table>, <Value> [, <Value> [, …] ] )
     ```
 
   - The number of scalarExprN must match the number of columns in tableExpr.
-  - NOT IN is not an operator in DAX. To perform the logical negation of the IN operator, put NOT in front of the entire expression. For example, NOT [Color] IN { "Red", "Yellow", "Blue" }.
+  - NOT IN isn't an operator in DAX. To perform the logical negation of the IN operator, put NOT in front of the entire expression. For example, NOT [Color] IN { "Red", "Yellow", "Blue" }.
 
-- Unlike the = operator, the IN operator and the CONTAINSROW function perform strict comparison. For example, the BLANK value does not match 0.
+- Unlike the = operator, the IN operator and the CONTAINSROW function perform strict comparison. For example, the BLANK value doesn't match 0.
 
 ## Examples
 
@@ -50,15 +52,7 @@ The following DAX queries:
 
 ```dax
 EVALUATE
-FILTER (
-    ALL ( Product[Color] ),
-    ( [Color] )
-        IN {
-        "Red",
-        "Yellow",
-        "Blue"
-    }
-)
+FILTER ( ALL ( Product[Color] ), ( [Color] ) IN { "Red", "Yellow", "Blue" } )
 ORDER BY [Color]
 ```
 
@@ -68,14 +62,7 @@ and
 EVALUATE
 FILTER (
     ALL ( Product[Color] ),
-    CONTAINSROW (
-        {
-            "Red",
-            "Yellow",
-            "Blue"
-        },
-        [Color]
-    )
+    CONTAINSROW ( { "Red", "Yellow", "Blue" }, [Color] )
 )
 ORDER BY [Color]
 ```
@@ -94,15 +81,7 @@ The following equivalent DAX queries:
 
 ```dax
 EVALUATE
-FILTER (
-    ALL ( Product[Color] ),
-    NOT [Color]
-        IN {
-        "Red",
-        "Yellow",
-        "Blue"
-    }
-)
+FILTER ( ALL ( Product[Color] ), NOT [Color] IN { "Red", "Yellow", "Blue" } )
 ORDER BY [Color]
 ```
 
@@ -112,14 +91,7 @@ and
 EVALUATE
 FILTER (
     ALL ( Product[Color] ),
-    NOT CONTAINSROW (
-        {
-            "Red",
-            "Yellow",
-            "Blue"
-        },
-        [Color]
-    )
+    NOT CONTAINSROW ( { "Red", "Yellow", "Blue" }, [Color] )
 )
 ORDER BY [Color]
 ```
@@ -133,7 +105,7 @@ Grey     |
 Multi  |
 NA   |
 Silver  |
-Silver\Black  |
+Silver/Black  |
 White |
 
 ## Related content

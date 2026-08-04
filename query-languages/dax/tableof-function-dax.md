@@ -1,12 +1,17 @@
 ---
 description: "Learn more about: TABLEOF"
 title: "TABLEOF function (DAX)"
+ms.topic: reference
+ms.date: 06/29/2026
+ms.custom: ExampleTypeAW2020
 ---
 # TABLEOF
 
 [!INCLUDE[applies-to-measures-columns-tables](includes/applies-to-measures-columns-tables.md)]
 
 Returns a reference to the table associated with a specified column, measure, or calendar.
+
+[!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
 
 ## Syntax
 
@@ -29,11 +34,11 @@ A table reference.
 ## Remarks
 
 - The `TABLEOF` function returns a table reference, not the table data itself.
-- When passed a column name, it returns the table that contains that column.
-- When passed a measure name, it returns the table where that measure is defined.
-- When passed a calendar reference, it returns the table associated with that calendar.
+- When you pass a column name, it returns the table that contains that column.
+- When you pass a measure name, it returns the table where that measure is defined.
+- When you pass a calendar reference, it returns the table associated with that calendar.
 - This function is useful in scenarios where you need to dynamically determine which table a column or measure belongs to.
-- `TABLEOF` does not resolve columns from row context; it only resolves columns from the current filter context (base table).
+- `TABLEOF` doesn't resolve columns from row context; it only resolves columns from the current filter context (base table).
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
 ## Example 1 - Using TABLEOF with a column

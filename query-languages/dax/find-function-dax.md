@@ -2,6 +2,8 @@
 description: "Learn more about: FIND"
 title: "FIND function (DAX)"
 ms.topic: reference
+ms.date: 06/29/2026
+ms.custom: ExampleTypeAW2020
 ---
 # FIND
 
@@ -22,7 +24,7 @@ FIND(<find_text>, <within_text>[, [<start_num>][, <NotFoundValue>]])
 |`find_text`|The text you want to find. Use double quotes (empty text) to match the first character in `within_text`. |
 |`within_text`|The text containing the text you want to find.|
 |`start_num`|(optional) The character at which to start the search; if omitted, `start_num` = 1. The first character in `within_text` is character number 1.|
-|`NotFoundValue`|(optional, but strongly recommended) The value that should be returned when the operation does not find a matching substring, typically 0, -1, or BLANK(). If not specified, an error is returned.|
+|`NotFoundValue`|(optional, but strongly recommended) The value to return when the operation doesn't find a matching substring, typically 0, -1, or BLANK(). If you don't specify it, the function returns an error.|
 
 ## Return value
 
@@ -30,19 +32,19 @@ Number that shows the starting point of the text string you want to find.
 
 ## Remarks
 
-- Whereas Microsoft Excel has multiple versions of the FIND function to accommodate single-byte character set (SBCS) and double-byte character set (DBCS) languages, DAX uses Unicode and counts each character the same way; therefore, you do not need to use a different version depending on the character type.
+- Whereas Microsoft Excel has multiple versions of the FIND function to accommodate single-byte character set (SBCS) and double-byte character set (DBCS) languages, DAX uses Unicode and counts each character the same way; therefore, you don't need to use a different version depending on the character type.
 
 - [!INCLUDE [function-not-supported-in-directquery-mode](includes/function-not-supported-in-directquery-mode.md)]
 
-- FIND does not support wildcards. To use wildcards, use [SEARCH](search-function-dax.md).
+- FIND doesn't support wildcards. To use wildcards, use [SEARCH](search-function-dax.md).
 
 - [!INCLUDE [function-unicodecharacterbehavior](includes/function-unicodecharacterbehavior.md)]
 
 ## Example
 
-The following DAX query finds the position of the first letter of "Bike", in the string that contains the reseller name. If not found, Blank is returned.
+The following DAX query finds the position of the first letter of "Bike", in the string that contains the reseller name. If not found, FIND returns Blank.
 
-Keep in mind, FIND is case-sensitive. In this example, if "bike" were used in the `find_text` argument, no results would be returned. Use [SEARCH](search-function-dax.md) for case-insensitive.
+FIND is case-sensitive. In this example, if you used "bike" in the `find_text` argument, the query returns no results. Use [SEARCH](search-function-dax.md) for case-insensitive.
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
 
@@ -50,10 +52,11 @@ Keep in mind, FIND is case-sensitive. In this example, if "bike" were used in th
 EVALUATE
 CALCULATETABLE (
     ADDCOLUMNS (
-        TOPN ( 10, SUMMARIZE('Reseller', [Reseller], [Business Type])),
+        TOPN ( 10, SUMMARIZE ( 'Reseller', [Reseller], [Business Type] ) ),
         "Position of Bike", FIND ( "Bike", 'Reseller'[Reseller], 1, BLANK () )
     ),
-    'Reseller'[Business Type] IN { "Specialty Bike Shop", "Value Added Reseller", "Warehouse"}
+    'Reseller'[Business Type]
+        IN { "Specialty Bike Shop", "Value Added Reseller", "Warehouse" }
 )
 ```
 

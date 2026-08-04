@@ -2,6 +2,7 @@
 description: "Learn more about: IF"
 title: "IF function (DAX)"
 ms.topic: reference
+ms.date: 06/29/2026
 ms.custom: ExampleTypeAW2020
 ---
 # IF
@@ -30,7 +31,7 @@ Either `value_if_true`, `value_if_false`, or `BLANK`.
 
 ## Remarks
 
-- The IF function can return a variant data type if `value_if_true` and `value_if_false` are of different data types, but the function attempts to return a single data type if both `value_if_true` and `value_if_false` are of numeric data types. In the latter case, the IF function will implicitly convert data types to accommodate both values.
+- The IF function can return a variant data type if `value_if_true` and `value_if_false` are of different data types, but the function attempts to return a single data type if both `value_if_true` and `value_if_false` are of numeric data types. In the latter case, the IF function implicitly converts data types to accommodate both values.
 
     For example, the formula `IF(<condition>, TRUE(), 0)` returns `TRUE` or 0, but the formula `IF(<condition>, 1.0, 0)` returns only decimal values even though `value_if_false` is of the whole number data type. To learn more about implicit data type conversion, see [Data types](dax-overview.md#data-types).
 
@@ -40,41 +41,30 @@ Either `value_if_true`, `value_if_false`, or `BLANK`.
 
 The following **Product** table calculated column definitions use the IF function in different ways to classify each product based on its list price.
 
-The first example tests whether the **List Price** column value is less than 500. When this condition is true, the value **Low** is returned. Because there's no `value_if_false` value, BLANK is returned.
+The first example tests whether the **List Price** column value is less than 500. When this condition is true, the function returns **Low**. Because there's no `value_if_false` value, the function returns BLANK.
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
 
 ```dax
 Price Group =
-IF(
-    'Product'[List Price] < 500,
-    "Low"
-)
+IF ( 'Product'[List Price] < 500, "Low" )
 ```
 
 The second example uses the same test, but this time includes a `value_if_false` value. So, the formula classifies each product as either `Low` or `High`.
 
 ```dax
 Price Group =
-IF(
-    'Product'[List Price] < 500,
-    "Low",
-    "High"
-)
+IF ( 'Product'[List Price] < 500, "Low", "High" )
 ```
 
 The third example uses the same test, but this time nests an IF function to perform an additional test. So, the formula classifies each product as either `Low`, `Medium`, or `High`.
 
 ```dax
 Price Group =
-IF(
+IF (
     'Product'[List Price] < 500,
     "Low",
-    IF(
-        'Product'[List Price] < 1500,
-        "Medium",
-        "High"
-    )
+    IF ( 'Product'[List Price] < 1500, "Medium", "High" )
 )
 ```
 
