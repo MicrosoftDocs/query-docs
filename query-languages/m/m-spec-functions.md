@@ -116,7 +116,7 @@ There are two kinds of parameters that may be present in a _parameter-list_:
   ```powerquery-m
     [ 
         MyFunction = (x, optional y) =>
-                          if (y = null) x else x + y, 
+                          if (y = null) then x else x + y, 
         Result1 = MyFunction(1),        // 1 
         Result2 = MyFunction(1, null),  // 1 
         Result3 = MyFunction(2, 2),     // 4
