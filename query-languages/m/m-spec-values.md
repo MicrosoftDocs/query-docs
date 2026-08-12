@@ -133,7 +133,7 @@ The following must hold or an error with reason code `Expression.Error` is raise
 
 0 &le; hour &le; 24<br/>
 0 &le; minute &le; 59<br/>
-0 &le; second &le; 59
+0 &le; second &le; 59.9999999
 
 In addition, if hour = 24, then minute and second must be zero.
 
