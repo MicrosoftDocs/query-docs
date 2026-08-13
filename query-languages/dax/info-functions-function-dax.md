@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.FUNCTIONS"
 title: "INFO.FUNCTIONS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.FUNCTIONS
 

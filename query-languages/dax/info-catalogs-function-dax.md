@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.CATALOGS"
 title: "INFO.CATALOGS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.CATALOGS
 

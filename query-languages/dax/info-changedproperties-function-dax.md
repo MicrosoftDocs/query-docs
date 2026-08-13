@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.CHANGEDPROPERTIES"
 title: "INFO.CHANGEDPROPERTIES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.CHANGEDPROPERTIES
 

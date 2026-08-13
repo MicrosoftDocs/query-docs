@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.CSDLMETADATA"
 title: "INFO.CSDLMETADATA function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.CSDLMETADATA
 

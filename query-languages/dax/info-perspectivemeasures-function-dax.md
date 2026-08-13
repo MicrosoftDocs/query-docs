@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.PERSPECTIVEMEASURES"
 title: "INFO.PERSPECTIVEMEASURES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.PERSPECTIVEMEASURES
 

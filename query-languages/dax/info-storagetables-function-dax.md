@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.STORAGETABLES"
 title: "INFO.STORAGETABLES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.STORAGETABLES
 

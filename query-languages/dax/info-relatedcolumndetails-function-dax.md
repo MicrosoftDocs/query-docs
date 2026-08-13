@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.RELATEDCOLUMNDETAILS"
 title: "INFO.RELATEDCOLUMNDETAILS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.RELATEDCOLUMNDETAILS
 

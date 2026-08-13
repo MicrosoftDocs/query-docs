@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.COLUMNS"
 title: "INFO.COLUMNS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.COLUMNS
 

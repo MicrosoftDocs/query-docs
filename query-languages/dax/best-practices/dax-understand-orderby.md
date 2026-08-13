@@ -1,7 +1,7 @@
 ---
 title: "Understanding ORDERBY, PARTITIONBY, and MATCHBY functions in DAX"
 description: Best practices for using ORDERBY, PARTITIONBY, and MATCHBY functions.
-author: jeroenterheerdt
+
 ms.topic: concept-article
 ms.date: 07/07/2023
 ---

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.PERSPECTIVES"
 title: "INFO.PERSPECTIVES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.PERSPECTIVES
 

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.KPIS"
 title: "INFO.KPIS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.KPIS
 

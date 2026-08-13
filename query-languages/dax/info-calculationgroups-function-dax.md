@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.CALCULATIONGROUPS"
 title: "INFO.CALCULATIONGROUPS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.CALCULATIONGROUPS
 
