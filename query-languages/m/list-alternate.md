@@ -20,15 +20,15 @@ List.Alternate(
 
 ## About
 
-Returns a list comprised of all the odd numbered offset elements in a list. Alternates between taking and skipping values from the list `list` depending on the parameters.
+Returns a new list by alternatively keeping and skipping the items in `list`. The function keeps `offset` initial items, then repeatedly skips `count` items and keeps `repeatInterval` items.
 
-* `count`: Specifies number of values that are skipped each time.
-* `repeatInterval`: An optional repeat interval to indicate how many values are added in between the skipped values.
-* `offset`: An option offset parameter to begin skipping the values at the initial offset.
+* `count`: The number of items to skip each time.
+* `repeatInterval`: An optional number of items to keep after each skip. If this value isn't provided, then all of the items after the initial skip are kept.
+* `offset`: An optional number of items to keep before the repeating skip/keep pattern begins. Defaults to zero.
 
 ## Example 1
 
-Create a list from {1..10} that skips the first number.
+Create a list that skips the first number.
 
 **Usage**
 
@@ -42,7 +42,7 @@ List.Alternate({1..10}, 1)
 
 ## Example 2
 
-Create a list from {1..10} that skips every other number.
+Create a list that skips every other number.
 
 **Usage**
 
@@ -56,7 +56,7 @@ List.Alternate({1..10}, 1, 1)
 
 ## Example 3
 
-Create a list from {1..10} that starts at 1 and skips every other number.
+Create a list that starts at 1 and skips every other number.
 
 **Usage**
 
@@ -70,7 +70,7 @@ List.Alternate({1..10}, 1, 1, 1)
 
 ## Example 4
 
-Create a list from {1..10} that starts at 1, skips one value, keeps two values, and so on.
+Create a list that starts at 1, skips one value, keeps two values, and so on.
 
 **Usage**
 

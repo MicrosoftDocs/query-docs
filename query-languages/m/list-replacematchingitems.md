@@ -23,7 +23,7 @@ Performs the given replacements to the list `list`. A replacement operation `rep
 
 ## Example
 
-Create a list from {1, 2, 3, 4, 5} replacing the value 5 with -5, and the value 1 with -1.
+Replace the numbers 5 and 1 in the list with their negative equivalents.
 
 **Usage**
 

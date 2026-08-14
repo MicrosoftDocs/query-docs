@@ -15,19 +15,19 @@ Table.FromColumns(<b>lists</b> as list, optional <b>columns</b> as any) as table
 
 ## About
 
-Creates a table of type `columns` from a list `lists` containing nested lists with the column names and values. If some columns have more values then others, the missing values will be filled with the default value, 'null', if the columns are nullable.
+Creates a table of type `columns` from a list `lists` containing nested lists with the column names and values. If some columns have more values than others, the missing values will be filled with the default value, 'null', if the columns are nullable.
 
 ## Example 1
 
-Return a table from a list of customer names in a list. Each value in the customer list item becomes a row value, and each list becomes a column.
+Return a table from a list of customer columns.
 
 **Usage**
 
 ```powerquery-m
 Table.FromColumns({
-    {1, "Bob", "123-4567"},
-    {2, "Jim", "987-6543"},
-    {3, "Paul", "543-7890"}
+    {1, 2, 3},
+    {"Bob", "Jim", "Paul"},
+    {"123-4567", "987-6543", "543-7890"}
 })
 ```
 
@@ -35,24 +35,24 @@ Table.FromColumns({
 
 ```powerquery-m
 Table.FromRecords({
-    [Column1 = 1, Column2 = 2, Column3 = 3],
-    [Column1 = "Bob", Column2 = "Jim", Column3 = "Paul"],
-    [Column1 = "123-4567", Column2 = "987-6543", Column3 = "543-7890"]
+    [Column1 = 1, Column2 = "Bob", Column3 = "123-4567"],
+    [Column1 = 2, Column2 = "Jim", Column3 = "987-6543"],
+    [Column1 = 3, Column2 = "Paul", Column3 = "543-7890"]
 })
 ```
 
 ## Example 2
 
-Create a table from a given list of columns and a list of column names.
+Create a table from a list of customer columns and a list of column names.
 
 **Usage**
 
 ```powerquery-m
 Table.FromColumns(
     {
-        {1, "Bob", "123-4567"},
-        {2, "Jim", "987-6543"},
-        {3, "Paul", "543-7890"}
+      {1, 2, 3},
+      {"Bob", "Jim", "Paul"},
+      {"123-4567", "987-6543", "543-7890"}
     },
     {"CustomerID", "Name", "Phone"}
 )
@@ -62,9 +62,9 @@ Table.FromColumns(
 
 ```powerquery-m
 Table.FromRecords({
-    [CustomerID = 1, Name = 2, Phone = 3],
-    [CustomerID = "Bob", Name = "Jim", Phone = "Paul"],
-    [CustomerID = "123-4567", Name = "987-6543", Phone = "543-7890"]
+    [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+    [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+    [CustomerID = 3, Name = "Paul", Phone = "543-7890"]
 })
 ```
 

@@ -33,7 +33,7 @@ Expression.Evaluate("1 + 1")
 
 ## Example 2
 
-Evaluate a more complex sum.
+Evaluate a more complex sum using a function that's defined via the environment record.
 
 **Usage**
 
@@ -47,7 +47,7 @@ Expression.Evaluate("List.Sum({1, 2, 3})", [List.Sum = List.Sum])
 
 ## Example 3
 
-Evaluate the concatenation of a text value with an identifier.
+Evaluate the concatenation of a text value with a custom identifier that's defined via the environment record.
 
 **Usage**
 
