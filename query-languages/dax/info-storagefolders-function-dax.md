@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.STORAGEFOLDERS"
 title: "INFO.STORAGEFOLDERS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.STORAGEFOLDERS
 

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.TABLESTORAGES"
 title: "INFO.TABLESTORAGES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.TABLESTORAGES
 

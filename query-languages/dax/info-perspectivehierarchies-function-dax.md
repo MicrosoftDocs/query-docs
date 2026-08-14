@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.PERSPECTIVEHIERARCHIES"
 title: "INFO.PERSPECTIVEHIERARCHIES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.PERSPECTIVEHIERARCHIES
 

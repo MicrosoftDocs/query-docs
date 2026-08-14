@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.MEASURES"
 title: "INFO.MEASURES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.MEASURES
 

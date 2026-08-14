@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.PERSPECTIVECOLUMNS"
 title: "INFO.PERSPECTIVECOLUMNS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.PERSPECTIVECOLUMNS
 

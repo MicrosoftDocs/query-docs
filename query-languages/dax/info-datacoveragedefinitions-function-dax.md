@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.DATACOVERAGEDEFINITIONS"
 title: "INFO.DATACOVERAGEDEFINITIONS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.DATACOVERAGEDEFINITIONS
 

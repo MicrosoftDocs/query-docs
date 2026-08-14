@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.QUERYGROUPS"
 title: "INFO.QUERYGROUPS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.QUERYGROUPS
 

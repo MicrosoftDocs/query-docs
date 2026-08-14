@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.LINGUISTICMETADATA"
 title: "INFO.LINGUISTICMETADATA function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.LINGUISTICMETADATA
 

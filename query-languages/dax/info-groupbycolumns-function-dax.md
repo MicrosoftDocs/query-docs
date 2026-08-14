@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.GROUPBYCOLUMNS"
 title: "INFO.GROUPBYCOLUMNS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.GROUPBYCOLUMNS
 

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.ATTRIBUTEHIERARCHIES"
 title: "INFO.ATTRIBUTEHIERARCHIES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.ATTRIBUTEHIERARCHIES
 

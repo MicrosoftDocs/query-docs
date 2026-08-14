@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.COLUMNPERMISSIONS"
 title: "INFO.COLUMNPERMISSIONS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.COLUMNPERMISSIONS
 

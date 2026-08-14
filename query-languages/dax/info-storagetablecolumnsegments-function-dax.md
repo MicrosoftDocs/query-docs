@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.STORAGETABLECOLUMNSEGMENTS"
 title: "INFO.STORAGETABLECOLUMNSEGMENTS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.STORAGETABLECOLUMNSEGMENTS
 

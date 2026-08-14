@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.EXPRESSIONS"
 title: "INFO.EXPRESSIONS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.EXPRESSIONS
 

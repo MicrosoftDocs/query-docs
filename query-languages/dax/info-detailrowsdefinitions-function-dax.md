@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.DETAILROWSDEFINITIONS"
 title: "INFO.DETAILROWSDEFINITIONS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.DETAILROWSDEFINITIONS
 

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.PARTITIONS"
 title: "INFO.PARTITIONS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.PARTITIONS
 

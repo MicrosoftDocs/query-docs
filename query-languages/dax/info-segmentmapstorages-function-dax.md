@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.SEGMENTMAPSTORAGES"
 title: "INFO.SEGMENTMAPSTORAGES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.SEGMENTMAPSTORAGES
 

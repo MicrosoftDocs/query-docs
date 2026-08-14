@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.VARIATIONS"
 title: "INFO.VARIATIONS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.VARIATIONS
 

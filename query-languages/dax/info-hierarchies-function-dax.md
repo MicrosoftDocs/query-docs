@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.HIERARCHIES"
 title: "INFO.HIERARCHIES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.HIERARCHIES
 

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.HIERARCHYSTORAGES"
 title: "INFO.HIERARCHYSTORAGES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.HIERARCHYSTORAGES
 

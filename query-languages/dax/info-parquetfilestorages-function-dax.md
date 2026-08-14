@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.PARQUETFILESTORAGES"
 title: "INFO.PARQUETFILESTORAGES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.PARQUETFILESTORAGES
 

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.ROLEMEMBERSHIPS"
 title: "INFO.ROLEMEMBERSHIPS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.ROLEMEMBERSHIPS
 

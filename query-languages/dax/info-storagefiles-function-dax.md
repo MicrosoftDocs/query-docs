@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.STORAGEFILES"
 title: "INFO.STORAGEFILES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.STORAGEFILES
 

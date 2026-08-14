@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.DICTIONARYSTORAGES"
 title: "INFO.DICTIONARYSTORAGES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.DICTIONARYSTORAGES
 
