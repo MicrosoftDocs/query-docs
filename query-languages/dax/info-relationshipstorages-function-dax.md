@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.RELATIONSHIPSTORAGES"
 title: "INFO.RELATIONSHIPSTORAGES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.RELATIONSHIPSTORAGES
 

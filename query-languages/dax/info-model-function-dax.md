@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.MODEL"
 title: "INFO.MODEL function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.MODEL
 

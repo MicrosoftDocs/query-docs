@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.OBJECTTRANSLATIONS"
 title: "INFO.OBJECTTRANSLATIONS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.OBJECTTRANSLATIONS
 

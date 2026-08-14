@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.DATASOURCES"
 title: "INFO.DATASOURCES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.DATASOURCES
 

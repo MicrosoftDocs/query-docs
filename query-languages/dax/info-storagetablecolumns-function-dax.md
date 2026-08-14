@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.STORAGETABLECOLUMNS"
 title: "INFO.STORAGETABLECOLUMNS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.STORAGETABLECOLUMNS
 

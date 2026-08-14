@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.RELATIONSHIPINDEXSTORAGES"
 title: "INFO.RELATIONSHIPINDEXSTORAGES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.RELATIONSHIPINDEXSTORAGES
 

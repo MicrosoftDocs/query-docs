@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.SEGMENTSTORAGES"
 title: "INFO.SEGMENTSTORAGES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.SEGMENTSTORAGES
 

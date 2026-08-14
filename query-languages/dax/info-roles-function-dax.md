@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.ROLES"
 title: "INFO.ROLES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.ROLES
 

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.PROPERTIES"
 title: "INFO.PROPERTIES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.PROPERTIES
 

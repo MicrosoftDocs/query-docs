@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.CULTURES"
 title: "INFO.CULTURES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.CULTURES
 

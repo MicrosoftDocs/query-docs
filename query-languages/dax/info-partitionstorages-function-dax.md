@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.PARTITIONSTORAGES"
 title: "INFO.PARTITIONSTORAGES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.PARTITIONSTORAGES
 

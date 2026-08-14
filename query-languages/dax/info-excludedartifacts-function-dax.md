@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.EXCLUDEDARTIFACTS"
 title: "INFO.EXCLUDEDARTIFACTS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.EXCLUDEDARTIFACTS
 

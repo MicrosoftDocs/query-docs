@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.COLUMNSTORAGES"
 title: "INFO.COLUMNSTORAGES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.COLUMNSTORAGES
 

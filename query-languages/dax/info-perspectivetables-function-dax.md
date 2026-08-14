@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.PERSPECTIVETABLES"
 title: "INFO.PERSPECTIVETABLES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.PERSPECTIVETABLES
 
