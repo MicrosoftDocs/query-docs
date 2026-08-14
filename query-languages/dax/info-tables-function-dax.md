@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.TABLES"
 title: "INFO.TABLES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.TABLES
 

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.TABLEPERMISSIONS"
 title: "INFO.TABLEPERMISSIONS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.TABLEPERMISSIONS
 

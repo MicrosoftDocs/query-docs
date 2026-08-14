@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.FORMATSTRINGDEFINITIONS"
 title: "INFO.FORMATSTRINGDEFINITIONS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.FORMATSTRINGDEFINITIONS
 

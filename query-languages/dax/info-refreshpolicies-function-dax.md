@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.REFRESHPOLICIES"
 title: "INFO.REFRESHPOLICIES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.REFRESHPOLICIES
 

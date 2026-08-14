@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.CALCULATIONITEMS"
 title: "INFO.CALCULATIONITEMS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.CALCULATIONITEMS
 

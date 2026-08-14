@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.DELTATABLEMETADATASTORAGES"
 title: "INFO.DELTATABLEMETADATASTORAGES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.DELTATABLEMETADATASTORAGES
 

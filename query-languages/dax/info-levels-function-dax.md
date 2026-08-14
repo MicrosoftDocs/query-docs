@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.LEVELS"
 title: "INFO.LEVELS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.LEVELS
 

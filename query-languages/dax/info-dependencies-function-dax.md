@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.DEPENDENCIES"
 title: "INFO.DEPENDENCIES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.DEPENDENCIES
 

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.COLUMNPARTITIONSTORAGES"
 title: "INFO.COLUMNPARTITIONSTORAGES function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.COLUMNPARTITIONSTORAGES
 

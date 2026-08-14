@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: INFO.ALTERNATEOFDEFINITIONS"
 title: "INFO.ALTERNATEOFDEFINITIONS function (DAX)"
-author: jeroenterheerdt
+
 ---
 # INFO.ALTERNATEOFDEFINITIONS
 
