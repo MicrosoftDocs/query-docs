@@ -23,7 +23,7 @@ Removes all occurrences of the given values in `list2` from the list `list1`. If
 
 ## Example
 
-Create a list from {1, 2, 3, 4, 5, 5} without {1, 5}.
+Remove the numbers 1 and 5 from the list.
 
 **Usage**
 

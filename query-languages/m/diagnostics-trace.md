@@ -28,6 +28,8 @@ Writes a trace `message`, if tracing is enabled, and returns `value`. An optiona
 * [`TraceLevel.Information`](tracelevel-type.md)
 * [`TraceLevel.Verbose`](tracelevel-type.md)
 
+Note that the location of the traces varies depending on the host product.
+
 ## Example
 
 Trace the message before invoking [`Text.From`](text-from.md) function and return the result.

@@ -23,7 +23,7 @@ Returns a list that skips the first element of list `list`. If `list` is an empt
 
 ## Example 1
 
-Create a list from {1, 2, 3, 4, 5} without the first 3 numbers.
+Skip the first three numbers in the list.
 
 **Usage**
 
@@ -37,7 +37,7 @@ List.Skip({1, 2, 3, 4, 5}, 3)
 
 ## Example 2
 
-Create a list from {5, 4, 2, 6, 1} that starts with a number less than 3.
+Skip the leading numbers in the list as long as they're greater than 3.
 
 **Usage**
 
