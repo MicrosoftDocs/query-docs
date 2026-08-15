@@ -23,7 +23,7 @@ Returns a list that removes the last `countOrCondition` elements from the end of
 
 ## Example 1
 
-Create a list from {1, 2, 3, 4, 5} without the last 3 numbers.
+Remove the last three numbers from the list.
 
 **Usage**
 
@@ -37,7 +37,7 @@ List.RemoveLastN({1, 2, 3, 4, 5}, 3)
 
 ## Example 2
 
-Create a list from {5, 4, 2, 6, 4} that ends with a number less than 3.
+Remove the trailing numbers from the list as long as they're greater than 3.
 
 **Usage**
 

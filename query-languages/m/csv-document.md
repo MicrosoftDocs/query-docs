@@ -85,3 +85,54 @@ Table.FromRecords({
     [OrderID = "2", Color = "Blue"]
 })
 ```
+
+## Example 3
+
+Process CSV text with a custom delimiter and a fixed number of columns.
+
+**Usage**
+
+```powerquery-m
+Csv.Document(
+    "1|Barb#(cr)#(lf)2|Cal",
+    [
+        Delimiter = "|",
+        Columns = 3
+    ]
+)
+```
+
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [Column1 = "1", Column2 = "Barb", Column3 = ""],
+    [Column1 = "2", Column2 = "Cal", Column3 = ""]
+})
+```
+
+## Example 4
+
+Process CSV text with a custom delimiter and a set of custom column names, while treating line breaks embedded inside quotes as the end of the current row.
+
+**Usage**
+
+```powerquery-m
+Csv.Document(
+    "1|Barb|""Smith#(cr)#(lf)2|Cal|Fisher",
+    [
+        Delimiter = "|",
+        Columns = type table [ID = text, First Name = text, Last Name = text],
+        QuoteStyle = QuoteStyle.None
+    ]
+)
+```
+
+**Output**
+
+```powerquery-m
+Table.FromRecords({
+    [ID = "1", First Name = "Barb", Last Name = "Smith"],
+    [ID = "2", First Name = "Cal", Last Name = "Fisher"]
+})
+```

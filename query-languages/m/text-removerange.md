@@ -23,28 +23,28 @@ Returns a copy of the text value `text` with all the characters from position `o
 
 ## Example 1
 
-Remove 1 character from the text value "ABEFC" at position 2.
+Remove one character from the text value starting at position 2.
 
 **Usage**
 
 ```powerquery-m
-Text.RemoveRange("ABEFC", 2)
+Text.RemoveRange("ABCDE", 2)
 ```
 
 **Output**
 
-`"ABFC"`
+`"ABDE"`
 
 ## Example 2
 
-Remove two characters from the text value "ABEFC" starting at position 2.
+Remove two characters from the text value starting at position 1.
 
 **Usage**
 
 ```powerquery-m
-Text.RemoveRange("ABEFC", 2, 2)
+Text.RemoveRange("ABCDE", 1, 2)
 ```
 
 **Output**
 
-`"ABC"`
+`"ADE"`
