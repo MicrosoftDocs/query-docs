@@ -23,6 +23,8 @@ Returns a table containing the results of running the specified CSS selectors ag
 
 * `RowSelector`
 
+To generate the CSS selectors automatically, try using the *Get Data from Web by example* feature.
+
 ## Example 1
 
 Returns a table from a sample html text value.

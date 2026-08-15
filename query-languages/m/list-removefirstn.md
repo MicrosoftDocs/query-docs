@@ -23,7 +23,7 @@ Returns a list that removes the first element of list `list`. If `list` is an em
 
 ## Example 1
 
-Create a list from {1, 2, 3, 4, 5} without the first 3 numbers.
+Remove the first three numbers from the list.
 
 **Usage**
 
@@ -37,7 +37,7 @@ List.RemoveFirstN({1, 2, 3, 4, 5}, 3)
 
 ## Example 2
 
-Create a list from {5, 4, 2, 6, 1} that starts with a number less than 3.
+Remove the leading numbers from the list as long as they're greater than 3.
 
 **Usage**
 

@@ -15,11 +15,11 @@ Table.Combine(<b>tables</b> as list, optional <b>columns</b> as any) as table
 
 ## About
 
-Returns a table that is the result of merging a list of tables, `tables`. The resulting table will have a row type structure defined by `columns` or by a union of the input types if `columns` is not specified.
+Returns a table that is the result of appending a list of tables, `tables`. The resulting table will have a row type structure defined by `columns` or by a union of the input types if `columns` is not specified.
 
 ## Example 1
 
-Merge the three tables together.
+Append three tables together.
 
 **Usage**
 
@@ -43,7 +43,7 @@ Table.FromRecords({
 
 ## Example 2
 
-Merge three tables with different structures.
+Append three tables with different structures.
 
 **Usage**
 
@@ -67,7 +67,7 @@ Table.FromRecords({
 
 ## Example 3
 
-Merge two tables and project onto the given type.
+Append two tables and project onto the given type.
 
 **Usage**
 
@@ -78,7 +78,7 @@ Table.Combine(
         Table.FromRecords({[Fax = "987-6543", Phone = "838-7171"]}),
         Table.FromRecords({[Cell = "543-7890"]})
     },
-    {"CustomerID", "Name"}
+    type table [CustomerID = text, Name = text]
 )
 ```
 

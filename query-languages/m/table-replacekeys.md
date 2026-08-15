@@ -30,16 +30,12 @@ let
         [Id = 2, Name = "Good Bye"]
     }),
     tableWithKeys = Table.AddKey(table, {"Id"}, true),
-    resultTable = Table.ReplaceKeys(tableWithKeys, {[Columns = {"Id"}, Primary = false]})
+    resultTable = Table.ReplaceKeys(tableWithKeys, {[Columns = {"Id"}, Primary = false]}),
+    newKeys = Table.Keys(resultTable)
 in
-    resultTable
+    newKeys
 ```
 
 **Output**
 
-```powerquery-m
-Table.FromRecords({
-    [Id = 1, Name = "Hello There"],
-    [Id = 2, Name = "Good Bye"]
-})
-```
+`{[Columns = {"Id"}, Primary = false]}`
