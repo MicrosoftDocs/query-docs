@@ -12,19 +12,19 @@ Applies the result of a table expression as filters to columns from an unrelated
 ## Syntax
 
 ```dax
-TREATAS(table_expression, <column>[, <column>[, <column>[,…]]])
+TREATAS(tableExpression, <column>[, <column>[, <column>[,…]]])
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`table_expression`|An expression that results in a table.|
+|`tableExpression`|An expression that results in a table.|
 |`column`|One or more existing columns. It cannot be an expression. |
 
 ## Return value
 
-A table that contains all the rows in column(s) that are also in table_expression.
+A table that contains all the rows in column(s) that are also in tableExpression.
 
 ## Remarks
 

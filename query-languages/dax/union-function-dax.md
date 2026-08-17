@@ -12,14 +12,14 @@ Creates a union (join) table from a pair of tables.
 ## Syntax
 
 ```dax
-UNION(<table_expression1>, <table_expression2> [,<table_expression>]…)
+UNION(<tableExpression1>, <tableExpression2> [,<tableExpression>]…)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`table_expression`|Any DAX expression that returns a table.|
+|`tableExpression`|Any DAX expression that returns a table.|
 
 ## Return value
 
@@ -31,11 +31,11 @@ A table that contains all the rows from each of the two table expressions.
 
 - Columns are combined by position in their respective tables.
 
-- The column names in the return table will match the column names in table_expression1.
+- The column names in the return table will match the column names in tableExpression1.
 
 - Duplicate rows are retained.
 
-- The returned table has lineage where possible. For example, if the first column of each table_expression has lineage to the same base column C1 in the model, the first column in the UNION result will have lineage to C1. However, if combined columns have lineage to different base columns, or if there is an extension column, the resulting column in UNION will have no lineage.
+- The returned table has lineage where possible. For example, if the first column of each tableExpression has lineage to the same base column C1 in the model, the first column in the UNION result will have lineage to C1. However, if combined columns have lineage to different base columns, or if there is an extension column, the resulting column in UNION will have no lineage.
 
 - When data types differ, the resulting data type is determined based on the rules for data type coercion.
 
