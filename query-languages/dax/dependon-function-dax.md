@@ -12,15 +12,15 @@ Change the table expression to be dependent on outer columns, based on the table
 ## Syntax  
   
 ```dax
-DEPENDON(<table expression>[, <column>[, <column>[,…]]])
+DEPENDON(<tableExpression>[, <column>[, <column>[,…]]])
 ```
   
 ### Parameters  
   
 |Term|Definition|
 |--------|--------------|
-|table expression|Any table expression.|  
-|column|Column in the table expression.|
+|`tableExpression`|Any table expression.|  
+|`column`|Column in the table expression.|
   
 ## Return value
 

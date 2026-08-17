@@ -13,14 +13,14 @@ Modifies how filters are applied while evaluating a GROUPCROSSAPPLY or GROUPCROS
 ## Syntax
   
 ```dax
-ALWAYSAPPLY(<table expression>)  
+ALWAYSAPPLY(<tableExpression>)  
 ```
   
 ### Parameters
   
 |Term|Definition|
 |--------|--------------|
-|table expression|Any table expression.|
+|`tableExpression`|Any table expression.|
   
 ## Return value
 

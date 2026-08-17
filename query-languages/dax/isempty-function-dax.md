@@ -12,14 +12,14 @@ Checks if a table is empty.
 ## Syntax
 
 ```dax
-ISEMPTY(<table_expression>)
+ISEMPTY(<tableExpression>)
 ```
 
 ### Parameters
 
 |Term|Definition|
 |--------|--------------|
-|`table_expression`|A table reference or a DAX expression that returns a table.|
+|`tableExpression`|A table reference or a DAX expression that returns a table.|
 
 ## Return value
 

@@ -19,7 +19,7 @@ ROLLUPGROUP ( <groupBy_columnName> [, <groupBy_columnName> [, … ] ] )
 
 |Term|Definition|
 |--------|--------------|
-| groupBy_columnName | The qualified name of an existing column or ROLLUPGROUP function to be used to create summary groups based on the values found in it. This parameter cannot be an expression.  |
+| `groupBy_columnName` | The qualified name of an existing column or ROLLUPGROUP function to be used to create summary groups based on the values found in it. This parameter cannot be an expression.  |
 
 ## Return value
 
