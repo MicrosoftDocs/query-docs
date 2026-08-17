@@ -13,15 +13,15 @@ Modifies how filters are applied while evaluating a GROUPCROSSAPPLY or GROUPCROS
 ## Syntax  
   
 ```dax
-ALLSELECTEDREMOVE(<table expression>[, <column>[, <column>[,…]]])
+ALLSELECTEDREMOVE(<tableExpression>[, <column>[, <column>[,…]]])
 ```
   
 ### Parameters  
   
 |Term|Definition|  
 |--------|--------------|  
-|table expression|Any table expression.|  
-|column|Column in the table expression.|
+|`tableExpression`|Any table expression.|  
+|`column`|Column in the table expression.|
   
 ## Return value
 

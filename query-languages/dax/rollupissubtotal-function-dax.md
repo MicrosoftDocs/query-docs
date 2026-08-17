@@ -21,7 +21,7 @@ ROLLUPISSUBTOTAL ( [<grandTotalFilter>], <groupBy_columnName>, <isSubtotal_colum
 |--------|--------------|
 |`grandTotalFilter`|(Optional) Filter to be applied to the grandtotal level.|
 |`groupBy_columnName`|Name of an existing column used to create summary groups based on the values found in it. Cannot be an expression.|
-|isSubtotal_columnName |Name of an ISSUBTOTAL column. The values of the column are calculated using the ISSUBTOTAL function. |
+|`isSubtotal_columnName` |Name of an ISSUBTOTAL column. The values of the column are calculated using the ISSUBTOTAL function. |
 |`groupLevelFilter`|(Optional) Filter to be applied to the current level.|
 
 ## Return value

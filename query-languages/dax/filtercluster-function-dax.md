@@ -19,10 +19,10 @@ FILTERCLUSTER( <groupBy_columnName> [, < groupBy_columnName >]…, [<filterTable
   
 |Term|Definition|  
 |--------|--------------|  
-|groupBy_columnName|A fully qualified column reference (Table[Column]) to a base table for which the distinct values are included in the returned table. Each groupBy_columnName column is cross-joined (different tables) or auto-existed (same table) with the subsequent specified columns.|  
-|filterTable|A table expression participating in the join.|  
-|separator|A string literal which serves no purpose other than separating filterTable parameter with tableScan parameter|  
-|tableScan|A table scan that joins with filterTable parameters, applying autoexist semantics, and returns columns specified in groupBy_columnName|
+|`groupBy_columnName`|A fully qualified column reference (Table[Column]) to a base table for which the distinct values are included in the returned table. Each groupBy_columnName column is cross-joined (different tables) or auto-existed (same table) with the subsequent specified columns.|  
+|`filterTable`|A table expression participating in the join.|  
+|`separator`|A string literal which serves no purpose other than separating filterTable parameter with tableScan parameter|  
+|`tableScan`|A table scan that joins with filterTable parameters, applying autoexist semantics, and returns columns specified in groupBy_columnName|
   
 ## Return value
 

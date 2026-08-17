@@ -19,10 +19,10 @@ GROUPCROSSAPPLY( <groupBy_columnName> [, < groupBy_columnName >]…, [<filterTab
   
 |Term|Definition|  
 |--------|--------------|  
-|groupBy_columnName|A fully qualified column reference (Table[Column]) to a base table for which the distinct values are included in the returned table.|  
-|filterTable|A table expression which is added to the filter context of all columns specified as groupBy_columnName arguments.|  
-|name|A string representing the column name to use for the subsequent expression specified.|  
-|expression|Any DAX expression that returns a single value (not a table).|  
+|`groupBy_columnName`|A fully qualified column reference (Table[Column]) to a base table for which the distinct values are included in the returned table.|  
+|`filterTable`|A table expression which is added to the filter context of all columns specified as groupBy_columnName arguments.|  
+|`name`|A string representing the column name to use for the subsequent expression specified.|  
+|`expression`|Any DAX expression that returns a single value (not a table).|  
   
 ## Return value
 

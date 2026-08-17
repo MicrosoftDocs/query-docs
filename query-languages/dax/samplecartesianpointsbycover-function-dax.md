@@ -21,13 +21,13 @@ SAMPLECARTESIANPOINTSBYCOVER(<Size>, <Table>, <XAxis>, <YAxis>[, <Radius>] [, <M
 
 |Term|Definition|  
 |--------|--------------|  
-|Size|Number of rows in the sample to return|
-|Table|Any DAX expression that returns a table of data from where to return a sample subset from.|
-|XAxis|The numerical XAxis column from the Table.|
-|YAxis|The numerical YAxis column from the Table.|
-|Radius|(Optional) The numerical Radius column from the Table.|
-|MaxMinRatio|(Optional) When Radius is specified, MaxMinRatio has to be specified and defines the ratio between the maximum and the minimum radiuses of drawn points. See remarks for more details.|
-|MaxBlankRatio|(Optional) When Radius is specified, MaxBlankRatio has to be specified and defines the ratio between the maximum and blank radiuses of the drawn points. See remarks for more details. |
+|`Size`|Number of rows in the sample to return|
+|`Table`|Any DAX expression that returns a table of data from where to return a sample subset from.|
+|`XAxis`|The numerical XAxis column from the Table.|
+|`YAxis`|The numerical YAxis column from the Table.|
+|`Radius`|(Optional) The numerical Radius column from the Table.|
+|`MaxMinRatio`|(Optional) When Radius is specified, MaxMinRatio has to be specified and defines the ratio between the maximum and the minimum radiuses of drawn points. See remarks for more details.|
+|`MaxBlankRatio`|(Optional) When Radius is specified, MaxBlankRatio has to be specified and defines the ratio between the maximum and blank radiuses of the drawn points. See remarks for more details. |
 
 ## Return Value
 
