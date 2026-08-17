@@ -19,8 +19,8 @@ REMOVEFILTERS([<table> | <column>[, <column>[, <column>[,…]]]])
 
 |Term|Definition|
 |--------|--------------|
-|table|The table that you want to clear filters on. |
-|column|The column that you want to clear filters on.|
+|`table`|The table that you want to clear filters on. |
+|`column`|The column that you want to clear filters on.|
 
 ## Return value
 

@@ -19,9 +19,9 @@ LOOKUPWITHTOTALS(<expression>, <colref>, <expression>[, <colref>, <expression>].
 
 |Term|Definition|
 |--------|--------------|
-|expression| The expression to evaluate |
-|colref|(Optional) The column to be filtered.|
-|expression|(Optional) The value to filter.|
+|`expression`| The expression to evaluate |
+|`colref`|(Optional) The column to be filtered.|
+|`expression`|(Optional) The value to filter.|
 
 ## Return value
 
