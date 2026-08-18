@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Custom date and time format strings"
 title: "Custom date and time format strings"
-ms.date: 10/7/2024
+ms.date: 01/30/2026
 ms.topic: language-reference
 ms.custom: "nonautomated-date"
 ms.subservice: m-background
