@@ -2,7 +2,7 @@
 title: M Language Error Handling
 description: Describes error handling in the Power Query M formula language
 ms.topic: language-reference
-ms.date: 8/2/2022
+ms.date: 01/29/2026
 ms.custom: "nonautomated-date"
 ms.subservice: m-specification
 ---
@@ -23,6 +23,47 @@ The syntax for raising an error is as follows:
 
 _error-raising-expression:_<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`error`  _expression_
+
+The _expression_ being raised must evaluate to an _error value_.
+
+In canonical form, an _error value_ is a record with the following structure, having field values compatible with the indicated types:
+
+```powerquery-m
+[
+    Reason = ..., // nullable text
+    Message = ..., // nullable text
+    Detail = ..., // any
+    Message.Format = ..., // nullable text
+    Message.Parameters = ..., // nullable list
+    ErrorCode = ... // any
+]
+```
+
+All of the above record fields are optional, and so may be omitted. Any additional fields included in the record will be ignored, and so not included in the error that is raised.
+
+_Message.Format_ may contain string interpolation placeholders in the form of `#{x}`, where `x` is a zero-based index. When an error is raised with a non-null _Message.Format_, interpolation will be performed using _Message.Format_ as the format string and _Message.Parameters_ as the values to be positionally applied. The resulting output will become the raised error's _Message_.
+
+For example:
+
+```powerquery-m
+error [
+    Message.Format = "Unexpected value '#{0}' in field #{1}", 
+    Message.Parameters = {"???", "Customer"}
+]
+```
+
+Will result in the following error being raised:
+
+```powerquery-m
+[
+    ErrorCode = null,
+    Reason = null,
+    Message = "Unexpected value '???' in field Customer",
+    Detail = null,
+    Message.Format = "Unexpected value '#{0}' in field #{1}",
+    Message.Parameters = {"???", "Customer"}
+]
+```
 
 Text values can be used as shorthand for error values. For example:
 
